@@ -1,0 +1,77 @@
+termes:
+  - id: "orthros"
+    grec: "ὄρθρος"
+    transliteracio: "orthros"
+    traduccio: "alba, matinada"
+    definicio: >
+      El moment just abans de sortir el sol, la part més fosca de la matinada.
+      Critó arriba a la presó en aquest moment per tenir temps de convèncer
+      Sòcrates de fugir abans que els guardes estiguin en plena activitat.
+    usos: [1]
+
+  - id: "ploion"
+    grec: "πλοῖον"
+    transliteracio: "ploion"
+    traduccio: "vaixell"
+    definicio: >
+      El vaixell sagrat enviat a Delos per commemorar el viatge de Teseu. Durant
+      el seu viatge cap execució podia tenir lloc a Atenes per motius de puresa
+      religiosa. El retorn del vaixell significava la mort imminent de Sòcrates.
+    usos: [2]
+
+  - id: "logos"
+    grec: "λόγος"
+    transliteracio: "logos"
+    traduccio: "raonament, argument, paraula"
+    definicio: >
+      Terme central de la filosofia grega amb múltiples significats: paraula,
+      discurs, raonament, proporció, raó. Per a Sòcrates, el logos és el criteri
+      últim de veritat: només cal seguir l'argument que, en examinar-lo, sembli
+      millor. Aquesta primacia del raonament sobre l'emoció és fonamental en
+      l'ètica socràtica.
+    usos: [4]
+
+  - id: "eu-zen"
+    grec: "εὖ ζῆν"
+    transliteracio: "eu zen"
+    traduccio: "viure bé"
+    definicio: >
+      No simplement viure, sinó viure bé, bellament i justament. Per als
+      socràtics, la vida només té valor si és virtuosa. Aquest principi
+      justifica que Sòcrates prefereixi morir justament que viure injustament.
+      L'equació de Sòcrates és: viure bé = viure bellament = viure justament.
+    usos: [5]
+
+  - id: "nomoi"
+    grec: "νόμοι"
+    transliteracio: "nomoi"
+    traduccio: "lleis"
+    definicio: >
+      Les lleis de la polis, personificades en el diàleg com a éssers que
+      parlen en primera persona. Els nomoi són més que simples lleis escrites:
+      inclouen tot el sistema legal, educatiu i moral de la ciutat. La seva
+      autoritat prové del fet que han format el ciutadà des del naixement.
+    usos: [8]
+
+  - id: "patris"
+    grec: "πατρίς"
+    transliteracio: "patris"
+    traduccio: "pàtria"
+    definicio: >
+      La terra dels pares, la ciutat natal. En el pensament grec, la pàtria és
+      més sagrada que els pares mateixos perquè és l'origen últim de l'educació
+      i la identitat del ciutadà. Desobeir les lleis de la pàtria és com
+      agredir els propis pares.
+    usos: [9]
+
+  - id: "korybantiantes"
+    grec: "κορυβαντιῶντες"
+    transliteracio: "korybantiantes"
+    traduccio: "els qui celebren els ritus coribàntics"
+    definicio: >
+      Els coribants eren sacerdots de la deessa Cíbele que entraven en estats
+      d'èxtasi mistic acompanyats de música de flautes i tambors. Sòcrates
+      compara la força irresistible dels arguments de les Lleis amb aquesta
+      possessió religiosa: els raonaments ressonen dins seu de manera tan
+      potent que no pot escoltar res més.
+    usos: [12]
