@@ -1,0 +1,23 @@
+obra:
+  titol: "Enchiridion"
+  titol_original: "Ἐγχειρίδιον"
+  autor: "Epictetus"
+  autor_original: "Ἐπίκτητος"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 125 dC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  descripcio: "Manual pràctic de filosofia estoica que presenta els principis fonamentals per viure amb serenitat: la distinció entre el que depèn de nosaltres i el que no, el control de les nostres opinions i desitjos."
+
+seccions: 5
+
+estadistiques:
+  paraules_original: 487
+  paraules_traduccio: 512
+  notes: 8
+  termes_glossari: 5
+
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-01-25"

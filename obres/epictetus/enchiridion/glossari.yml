@@ -1,0 +1,59 @@
+termes:
+  - id: "eph-hemin"
+    grec: "ἐφ' ἡμῖν"
+    transliteracio: "eph' hēmîn"
+    traduccio: "el que depèn de nosaltres"
+    definicio: >
+      Concepte central de l'ètica estoica que designa tot allò que està sota el nostre
+      control: les nostres opinions, desitjos, aversions i accions. Oposat a «τὰ οὐκ ἐφ' ἡμῖν»
+      (el que no depèn de nosaltres): cos, propietat, reputació, circumstàncies externes.
+    usos: [1, 3, 5]
+
+  - id: "hypolepsis"
+    grec: "ὑπόληψις"
+    transliteracio: "hypólēpsis"
+    traduccio: "opinió, suposició"
+    definicio: >
+      Opinió o creença que formem sobre les coses. En l'estoïcisme, les nostres opinions
+      són responsables de les nostres emocions: no són les coses en si les que ens afecten,
+      sinó el que pensem sobre elles.
+    usos: [1]
+
+  - id: "phantasia"
+    grec: "φαντασία"
+    transliteracio: "phantasía"
+    traduccio: "representació, impressió mental"
+    definicio: >
+      Impressió o imatge mental que rebem del món exterior. Els estoics distingeixen entre
+      la impressió inicial (involuntària) i l'assentiment que li donem (voluntari). El control
+      d'aquest assentiment és clau per a la pràctica estoica.
+    usos: [5]
+
+  - id: "orexis"
+    grec: "ὄρεξις"
+    transliteracio: "órexis"
+    traduccio: "desig, apetència"
+    definicio: >
+      Moviment de l'ànima cap a quelcom percebut com a bo. Juntament amb l'aversió (ἔκκλισις),
+      constitueix un dels impulsos bàsics que cal disciplinar segons la filosofia estoica.
+    usos: [1, 6]
+
+  - id: "prohairesis"
+    grec: "προαίρεσις"
+    transliteracio: "prohaíresis"
+    traduccio: "decisió moral, voluntat"
+    definicio: >
+      Terme clau en Epictetus que designa la capacitat de decisió racional i elecció moral.
+      És allò que ens fa veritablement humans i l'única cosa completament nostra. La seu
+      de la nostra llibertat interior i el que ens permet mantenir la serenitat.
+    usos: [12]
+
+  - id: "dogma"
+    grec: "δόγμα"
+    transliteracio: "dógma"
+    traduccio: "opinió, principi, creença"
+    definicio: >
+      Principi o creença acceptada. No en sentit religiós sinó filosòfic: les nostres
+      opinions sobre les coses. Segons els estoics, el patiment ve de les nostres creences,
+      no de les coses mateixes. Canviar les creences canvia l'experiència.
+    usos: [14, 15]
