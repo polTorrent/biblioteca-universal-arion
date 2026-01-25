@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block title %}Catàleg d'Obres | Editorial Clàssica{% endblock %}
+{% block description %}Catàleg complet de traduccions de textos clàssics grecollatins al català. Filosofia, literatura, història i retòrica.{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <h1>Editorial Clàssica</h1>
+        <p class="hero-subtitle">
+            Traduccions de textos grecollatins al català, amb rigor filològic i sensibilitat literària
+        </p>
+    </div>
+</section>
+
+<section class="page-content">
+    <div class="container">
+        {% if stats %}
+        <div class="stats-bar mb-2xl">
+            <p class="text-center">
+                <strong>{{ stats.total_obres }}</strong> {% if stats.total_obres == 1 %}obra{% else %}obres{% endif %} ·
+                <strong>{{ stats.total_autors }}</strong> {% if stats.total_autors == 1 %}autor{% else %}autors{% endif %} ·
+                <strong>{{ stats.total_paraules|default(0) }}</strong> paraules traduïdes
+            </p>
+        </div>
+        {% endif %}
+
+        <h2 class="text-center mb-xl">Obres disponibles</h2>
+
+        {% if obres %}
+        <div class="works-grid">
+            {% for obra in obres %}
+            <article class="work-card">
+                <h3 class="work-card-title">
+                    <a href="{{ base_url }}{{ obra.slug }}.html">{{ obra.titol }}</a>
+                </h3>
+                <p class="work-card-author">{{ obra.autor }}</p>
+
+                {% if obra.descripcio %}
+                <p class="work-card-description">{{ obra.descripcio }}</p>
+                {% endif %}
+
+                <div class="work-card-meta">
+                    {% if obra.llengua_original %}
+                    <span>📜 {{ obra.llengua_original|capitalize }}</span>
+                    {% endif %}
+
+                    {% if obra.any_original %}
+                    <span>📅 {{ obra.any_original }}</span>
+                    {% endif %}
+
+                    {% if obra.estat %}
+                    <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                    {% endif %}
+
+                    {% if obra.qualitat %}
+                    <span>⭐ {{ obra.qualitat }}/10</span>
+                    {% endif %}
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+        {% else %}
+        <div class="text-center mt-2xl mb-2xl">
+            <p>Pròximament nous textos traduïts.</p>
+            <p class="mt-md"><small>El catàleg s'anirà ampliant amb traduccions de textos grecs i llatins.</small></p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<section class="page-content" style="background-color: var(--color-bg-secondary);">
+    <div class="container">
+        <h2 class="text-center mb-xl">Sobre el projecte</h2>
+        <div style="max-width: 700px; margin: 0 auto;">
+            <p>
+                <strong>Editorial Clàssica</strong> és un projecte de traducció de textos grecollatins al català.
+                Cada traducció inclou:
+            </p>
+            <ul style="margin: var(--spacing-lg) 0; padding-left: var(--spacing-xl);">
+                <li><strong>Text bilingüe</strong> — Original i traducció en paral·lel</li>
+                <li><strong>Notes explicatives</strong> — Context històric i filosòfic</li>
+                <li><strong>Glossari terminològic</strong> — Termes clau amb definicions</li>
+                <li><strong>Aparell crític</strong> — Referències a edicions i estudis</li>
+            </ul>
+            <p>
+                Les traduccions busquen l'equilibri entre fidelitat filològica i qualitat literària en català.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock %}

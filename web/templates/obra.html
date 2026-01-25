@@ -1,0 +1,188 @@
+{% extends "base.html" %}
+
+{% block title %}{{ obra.titol }} - {{ obra.autor }} | Editorial Clàssica{% endblock %}
+{% block description %}{{ obra.descripcio|default('Traducció al català de ' ~ obra.titol ~ ' de ' ~ obra.autor) }}{% endblock %}
+
+{% block og_title %}{{ obra.titol }} - {{ obra.autor }}{% endblock %}
+{% block og_description %}{{ obra.descripcio|default('Traducció al català') }}{% endblock %}
+{% block og_type %}article{% endblock %}
+{% block og_url %}/{{ obra.slug }}.html{% endblock %}
+
+{% block head_extra %}
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "{{ obra.titol }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ obra.autor }}"
+    },
+    "translator": {
+        "@type": "Organization",
+        "name": "{{ obra.traductor|default('Editorial Clàssica') }}"
+    },
+    "inLanguage": "ca",
+    "workTranslation": {
+        "@type": "Book",
+        "name": "{{ obra.titol_original }}",
+        "author": {
+            "@type": "Person",
+            "name": "{{ obra.autor_original|default(obra.autor) }}"
+        },
+        "inLanguage": "{{ obra.llengua_original }}"
+    },
+    "datePublished": "{{ obra.any_traduccio }}"
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<article class="page-content">
+    <div class="container">
+        <!-- Capçalera de l'obra -->
+        <header class="work-header">
+            <h1 class="work-title">{{ obra.titol }}</h1>
+            {% if obra.titol_original %}
+            <p class="work-title-original">{{ obra.titol_original }}</p>
+            {% endif %}
+
+            <div class="work-meta-grid">
+                <div class="work-meta-item">
+                    <strong>Autor</strong>
+                    {{ obra.autor }}
+                    {% if obra.autor_original and obra.autor_original != obra.autor %}
+                    <br><small>({{ obra.autor_original }})</small>
+                    {% endif %}
+                </div>
+
+                <div class="work-meta-item">
+                    <strong>Traducció</strong>
+                    {{ obra.traductor|default('Editorial Clàssica') }}
+                </div>
+
+                <div class="work-meta-item">
+                    <strong>Llengua original</strong>
+                    {{ obra.llengua_original|capitalize }}
+                </div>
+
+                {% if obra.any_original %}
+                <div class="work-meta-item">
+                    <strong>Data original</strong>
+                    {{ obra.any_original }}
+                </div>
+                {% endif %}
+
+                {% if obra.estat %}
+                <div class="work-meta-item">
+                    <strong>Estat</strong>
+                    <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                </div>
+                {% endif %}
+
+                {% if obra.qualitat %}
+                <div class="work-meta-item">
+                    <strong>Qualitat</strong>
+                    {{ obra.qualitat }}/10
+                </div>
+                {% endif %}
+            </div>
+
+            {% if obra.descripcio %}
+            <p class="work-description">{{ obra.descripcio }}</p>
+            {% endif %}
+        </header>
+
+        <!-- Controls de vista -->
+        <div class="text-container" data-mode="bilingue">
+            <div class="view-controls">
+                <button class="view-btn" data-mode="original">Original</button>
+                <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
+                <button class="view-btn" data-mode="traduccio">Traducció</button>
+            </div>
+
+            <!-- Grid bilingüe -->
+            <div class="bilingue-grid">
+                <!-- Columna original -->
+                <section class="original-column">
+                    <div class="column-header">Text original ({{ obra.llengua_original }})</div>
+                    {{ contingut_original }}
+                </section>
+
+                <!-- Columna traducció -->
+                <section class="translation-column">
+                    <div class="column-header">Traducció (català)</div>
+                    {{ contingut_traduccio }}
+                </section>
+            </div>
+        </div>
+
+        <!-- Notes -->
+        {% if notes %}
+        <section class="notes-section" id="notes">
+            <h2>Notes</h2>
+            {% for nota in notes %}
+            <div class="note" id="nota-{{ nota.id }}">
+                <div class="note-header">
+                    <span class="note-number">[{{ nota.id }}]</span>
+                    {% if nota.titol %}
+                    <h4>{{ nota.titol }}</h4>
+                    {% endif %}
+                </div>
+                {{ nota.contingut }}
+                {% if nota.refs %}
+                <p class="note-refs">{{ nota.refs }}</p>
+                {% endif %}
+                <a href="#ref-{{ nota.id }}" class="back-to-text">↩ Tornar al text</a>
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        <!-- Glossari -->
+        {% if glossari %}
+        <section class="glossary-section" id="glossari">
+            <h2>Glossari</h2>
+            <dl class="glossary">
+                {% for terme in glossari %}
+                <div class="glossary-entry" id="term-{{ terme.id }}">
+                    <dt>
+                        <span class="term-greek">{{ terme.grec }}</span>
+                        <span class="term-transliteration">({{ terme.transliteracio }})</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> {{ terme.traduccio }}</p>
+                        <p class="term-definition">{{ terme.definicio }}</p>
+                        {% if terme.usos %}
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            {% for us in terme.usos %}
+                            <a href="#trad-{{ us }}">[{{ us }}]</a>{% if not loop.last %}, {% endif %}
+                            {% endfor %}
+                        </p>
+                        {% endif %}
+                    </dd>
+                </div>
+                {% endfor %}
+            </dl>
+        </section>
+        {% endif %}
+
+        <!-- Bibliografia -->
+        {% if bibliografia %}
+        <section class="bibliography-section mt-2xl">
+            <h2>Bibliografia</h2>
+            {{ bibliografia }}
+        </section>
+        {% endif %}
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="{{ base_url }}index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</article>
+{% endblock %}

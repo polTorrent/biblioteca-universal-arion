@@ -1,0 +1,13 @@
+# Editorial Classica - Dependencies
+
+# Build system
+Jinja2>=3.1.0
+PyYAML>=6.0
+markdown>=3.5
+
+# Translation pipeline (optional - only needed for new translations)
+anthropic>=0.18.0
+pydantic>=2.0.0
+
+# Development (optional)
+pytest>=7.0.0

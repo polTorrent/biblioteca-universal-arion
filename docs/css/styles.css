@@ -1,0 +1,1161 @@
+/*
+ * ═══════════════════════════════════════════════════════════════════
+ * EDITORIAL CLÀSSICA - STYLES
+ * Sistema web per a traduccions de textos grecollatins
+ * ═══════════════════════════════════════════════════════════════════
+ */
+
+/* ─────────────────────────────────────────────────────────────────────
+   1. VARIABLES I CONFIGURACIÓ GLOBAL
+   ───────────────────────────────────────────────────────────────────── */
+
+:root {
+    /* Paleta de colors */
+    --color-bg-primary: #faf9f6;
+    --color-bg-secondary: #f5f1eb;
+    --color-bg-tertiary: #f0ebe3;
+    --color-bg-notes: #f5f1eb;
+    --color-bg-glossary: #f0ebe3;
+
+    --color-text-primary: #2c2c2c;
+    --color-text-secondary: #4a4a4a;
+    --color-text-muted: #6b6b6b;
+    --color-text-light: #8a8a8a;
+
+    --color-accent: #8b4513;
+    --color-accent-hover: #a0522d;
+    --color-accent-light: #c4956a;
+
+    --color-border: #d4c5b5;
+    --color-border-light: #e5ddd2;
+
+    /* Tipografia */
+    --font-titles: 'Cormorant Garamond', Georgia, serif;
+    --font-body: 'Source Serif Pro', 'Palatino Linotype', Palatino, Georgia, serif;
+    --font-greek: 'GFS Didot', 'Gentium Plus', 'Times New Roman', serif;
+    --font-ui: 'Lato', -apple-system, BlinkMacSystemFont, sans-serif;
+
+    --font-size-base: 18px;
+    --font-size-sm: 0.875rem;
+    --font-size-xs: 0.75rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2rem;
+    --font-size-4xl: 2.5rem;
+
+    --line-height-base: 1.7;
+    --line-height-tight: 1.4;
+    --line-height-loose: 1.9;
+
+    /* Espaiats */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+
+    /* Layout */
+    --max-width-content: 900px;
+    --max-width-wide: 1200px;
+    --sidebar-width: 280px;
+
+    /* Transicions */
+    --transition-fast: 150ms ease;
+    --transition-normal: 250ms ease;
+    --transition-slow: 400ms ease;
+
+    /* Ombres */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+    --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+    /* Radis */
+    --radius-sm: 3px;
+    --radius-md: 6px;
+    --radius-lg: 12px;
+}
+
+/* Mode fosc */
+[data-theme="dark"] {
+    --color-bg-primary: #1a1a1a;
+    --color-bg-secondary: #242424;
+    --color-bg-tertiary: #2d2d2d;
+    --color-bg-notes: #2a2520;
+    --color-bg-glossary: #252220;
+
+    --color-text-primary: #e8e6e3;
+    --color-text-secondary: #c5c3c0;
+    --color-text-muted: #9a9895;
+    --color-text-light: #6b6965;
+
+    --color-accent: #c4956a;
+    --color-accent-hover: #d4a57a;
+    --color-accent-light: #8b4513;
+
+    --color-border: #3d3d3d;
+    --color-border-light: #333333;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   2. RESET I BASE
+   ───────────────────────────────────────────────────────────────────── */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: var(--font-size-base);
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: var(--line-height-base);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+    flex: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: var(--color-accent);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+a:hover {
+    color: var(--color-accent-hover);
+}
+
+::selection {
+    background-color: var(--color-accent);
+    color: white;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   3. TIPOGRAFIA
+   ───────────────────────────────────────────────────────────────────── */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-titles);
+    font-weight: 600;
+    line-height: var(--line-height-tight);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-md);
+}
+
+h1 {
+    font-size: var(--font-size-4xl);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+    font-size: var(--font-size-3xl);
+    margin-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+h3 {
+    font-size: var(--font-size-2xl);
+    margin-top: var(--spacing-xl);
+}
+
+h4 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-lg);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+}
+
+strong {
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+}
+
+small {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+/* Text grec */
+.greek,
+[lang="grc"] {
+    font-family: var(--font-greek);
+    font-size: 1.05em;
+    line-height: var(--line-height-loose);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   4. LAYOUT I CONTENIDORS
+   ───────────────────────────────────────────────────────────────────── */
+
+.container {
+    width: 100%;
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+}
+
+.container-wide {
+    max-width: var(--max-width-wide);
+}
+
+.page-content {
+    padding: var(--spacing-2xl) 0;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   5. CAPÇALERA (HEADER)
+   ───────────────────────────────────────────────────────────────────── */
+
+.site-header {
+    background-color: var(--color-bg-primary);
+    border-bottom: 1px solid var(--color-border-light);
+    padding: var(--spacing-lg) 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--spacing-lg);
+}
+
+.site-logo {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.site-title {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-2xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    text-decoration: none;
+    letter-spacing: -0.01em;
+}
+
+.site-title:hover {
+    color: var(--color-accent);
+}
+
+.site-tagline {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.main-nav ul {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+    align-items: center;
+}
+
+.main-nav a {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    color: var(--color-text-secondary);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 2px solid transparent;
+    transition: all var(--transition-fast);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
+
+.theme-toggle {
+    background: none;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-sm);
+    cursor: pointer;
+    font-size: var(--font-size-lg);
+    line-height: 1;
+    transition: all var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    background-color: var(--color-bg-secondary);
+    border-color: var(--color-accent);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   6. PEU DE PÀGINA (FOOTER)
+   ───────────────────────────────────────────────────────────────────── */
+
+.site-footer {
+    background-color: var(--color-bg-secondary);
+    border-top: 1px solid var(--color-border-light);
+    padding: var(--spacing-2xl) 0 var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-xl);
+}
+
+.footer-section h4 {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.footer-section p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section li {
+    margin-bottom: var(--spacing-sm);
+}
+
+.footer-section a {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+
+.footer-section a:hover {
+    color: var(--color-accent);
+}
+
+.footer-bottom {
+    margin-top: var(--spacing-xl);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--color-border-light);
+    text-align: center;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   7. PÀGINA D'ÍNDEX (CATÀLEG)
+   ───────────────────────────────────────────────────────────────────── */
+
+.hero {
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+    background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+}
+
+.hero h1 {
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-subtitle {
+    font-size: var(--font-size-xl);
+    color: var(--color-text-secondary);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.works-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-xl);
+    padding: var(--spacing-2xl) 0;
+}
+
+.work-card {
+    background-color: var(--color-bg-primary);
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    transition: all var(--transition-normal);
+}
+
+.work-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.work-card-title {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+}
+
+.work-card-title a {
+    color: var(--color-text-primary);
+}
+
+.work-card-title a:hover {
+    color: var(--color-accent);
+}
+
+.work-card-author {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.work-card-description {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-md);
+}
+
+.work-card-meta {
+    display: flex;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+    font-size: var(--font-size-xs);
+    color: var(--color-text-light);
+}
+
+.work-card-meta span {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+}
+
+.badge {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    font-weight: 500;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-tertiary);
+    color: var(--color-text-secondary);
+}
+
+.badge-status-revisat {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.badge-status-esborrany {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   8. PÀGINA D'OBRA - CAPÇALERA
+   ───────────────────────────────────────────────────────────────────── */
+
+.work-header {
+    padding: var(--spacing-2xl) 0;
+    border-bottom: 1px solid var(--color-border-light);
+    margin-bottom: var(--spacing-xl);
+}
+
+.work-title {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.work-title-original {
+    font-family: var(--font-greek);
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-muted);
+    font-weight: 400;
+    margin-bottom: var(--spacing-lg);
+}
+
+.work-meta-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.work-meta-item {
+    font-size: var(--font-size-sm);
+}
+
+.work-meta-item strong {
+    display: block;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xs);
+}
+
+.work-description {
+    font-size: var(--font-size-lg);
+    font-style: italic;
+    color: var(--color-text-secondary);
+    max-width: 700px;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   9. MODE BILINGÜE - CONTROLS
+   ───────────────────────────────────────────────────────────────────── */
+
+.text-container {
+    margin: var(--spacing-xl) 0;
+}
+
+.view-controls {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    margin-bottom: var(--spacing-xl);
+}
+
+.view-btn {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 500;
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.view-btn:hover {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.view-btn.active {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   10. MODE BILINGÜE - GRID
+   ───────────────────────────────────────────────────────────────────── */
+
+.bilingue-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+}
+
+.original-column,
+.translation-column {
+    padding: var(--spacing-lg);
+}
+
+.original-column {
+    border-right: 1px solid var(--color-border-light);
+}
+
+.column-header {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--color-text-muted);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-accent);
+    margin-bottom: var(--spacing-lg);
+}
+
+/* Modes de visualització */
+[data-mode="original"] .translation-column {
+    display: none;
+}
+
+[data-mode="original"] .original-column {
+    border-right: none;
+}
+
+[data-mode="original"] .bilingue-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+[data-mode="traduccio"] .original-column {
+    display: none;
+}
+
+[data-mode="traduccio"] .bilingue-grid {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   11. SECCIONS DE TEXT
+   ───────────────────────────────────────────────────────────────────── */
+
+.section {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-number {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-text-light);
+    margin-right: var(--spacing-sm);
+    user-select: none;
+}
+
+.section-title {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-xl);
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-md);
+}
+
+.section p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* Scroll sincronitzat - highlight */
+.section.highlight {
+    background-color: var(--color-bg-secondary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    margin-left: calc(-1 * var(--spacing-md));
+    margin-right: calc(-1 * var(--spacing-md));
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   12. TERMES DEL GLOSSARI (INLINE)
+   ───────────────────────────────────────────────────────────────────── */
+
+.term {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-decoration-color: var(--color-accent-light);
+    text-underline-offset: 3px;
+    cursor: help;
+    position: relative;
+}
+
+.term:hover {
+    text-decoration-style: solid;
+}
+
+/* Tooltip */
+.term-tooltip {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-text-primary);
+    color: var(--color-bg-primary);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-sm);
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all var(--transition-fast);
+    z-index: 100;
+    box-shadow: var(--shadow-lg);
+}
+
+.term-tooltip::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: var(--color-text-primary);
+}
+
+.term:hover .term-tooltip,
+.term-tooltip.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.term-tooltip-greek {
+    font-family: var(--font-greek);
+    font-weight: 600;
+}
+
+.term-tooltip-trans {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   13. NOTES (INLINE I SECCIÓ)
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Referències inline */
+.note-ref {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--color-accent);
+    vertical-align: super;
+    margin-left: 1px;
+    text-decoration: none;
+}
+
+.note-ref:hover {
+    text-decoration: underline;
+}
+
+/* Secció de notes */
+.notes-section {
+    margin-top: var(--spacing-3xl);
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-border);
+}
+
+.notes-section h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xl);
+}
+
+.note {
+    background-color: var(--color-bg-notes);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.note:target {
+    animation: highlight-note 2s ease;
+}
+
+@keyframes highlight-note {
+    0%, 100% { background-color: var(--color-bg-notes); }
+    30% { background-color: #fff3cd; }
+}
+
+.note-header {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.note-number {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: var(--color-accent);
+}
+
+.note h4 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 0;
+}
+
+.note p {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.note p:last-of-type {
+    margin-bottom: 0;
+}
+
+.note-refs {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    font-style: italic;
+}
+
+.back-to-text {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    color: var(--color-accent);
+    margin-top: var(--spacing-sm);
+}
+
+.back-to-text:hover {
+    text-decoration: underline;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   14. GLOSSARI (SECCIÓ)
+   ───────────────────────────────────────────────────────────────────── */
+
+.glossary-section {
+    margin-top: var(--spacing-3xl);
+    padding-top: var(--spacing-xl);
+    border-top: 2px solid var(--color-border);
+}
+
+.glossary-section h2 {
+    font-size: var(--font-size-2xl);
+    color: var(--color-accent);
+    margin-bottom: var(--spacing-xl);
+}
+
+.glossary {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+
+.glossary-entry {
+    background-color: var(--color-bg-glossary);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-lg);
+}
+
+.glossary-entry:target {
+    animation: highlight-note 2s ease;
+}
+
+.glossary-entry dt {
+    margin-bottom: var(--spacing-md);
+}
+
+.term-greek {
+    font-family: var(--font-greek);
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}
+
+.term-transliteration {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin-left: var(--spacing-sm);
+}
+
+.glossary-entry dd {
+    margin-left: 0;
+}
+
+.term-translation {
+    font-size: var(--font-size-sm);
+    margin-bottom: var(--spacing-sm);
+}
+
+.term-definition {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+    line-height: var(--line-height-base);
+}
+
+.term-usage {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-sm);
+}
+
+.term-usage a {
+    font-weight: 500;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   15. BLOCKQUOTES I CITES
+   ───────────────────────────────────────────────────────────────────── */
+
+blockquote {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border-left: 4px solid var(--color-accent);
+    background-color: var(--color-bg-secondary);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    font-style: italic;
+}
+
+blockquote p:last-child {
+    margin-bottom: 0;
+}
+
+blockquote cite {
+    display: block;
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-sm);
+    font-style: normal;
+}
+
+blockquote cite::before {
+    content: '— ';
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   16. DIÀLEGS (PERSONATGES)
+   ───────────────────────────────────────────────────────────────────── */
+
+.dialogue {
+    margin: var(--spacing-lg) 0;
+}
+
+.dialogue-line {
+    margin-bottom: var(--spacing-md);
+    padding-left: var(--spacing-lg);
+    position: relative;
+}
+
+.speaker {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    margin-right: var(--spacing-sm);
+}
+
+.speaker::after {
+    content: ' —';
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   17. RESPONSIVE
+   ───────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 992px) {
+    :root {
+        --font-size-base: 17px;
+    }
+
+    .bilingue-grid {
+        gap: var(--spacing-lg);
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 16px;
+    }
+
+    .header-inner {
+        flex-direction: column;
+        gap: var(--spacing-md);
+    }
+
+    .main-nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Bilingüe a una columna en mòbil */
+    .bilingue-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .original-column {
+        border-right: none;
+        border-bottom: 1px solid var(--color-border-light);
+        padding-bottom: var(--spacing-xl);
+        margin-bottom: var(--spacing-lg);
+    }
+
+    .view-controls {
+        flex-direction: column;
+    }
+
+    .work-meta-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        padding: var(--spacing-2xl) 0;
+    }
+
+    .hero h1 {
+        font-size: var(--font-size-3xl);
+    }
+
+    .works-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 var(--spacing-md);
+    }
+
+    .work-title {
+        font-size: var(--font-size-3xl);
+    }
+
+    .work-meta-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .note,
+    .glossary-entry {
+        padding: var(--spacing-md);
+    }
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   18. UTILITATS
+   ───────────────────────────────────────────────────────────────────── */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-sm { margin-top: var(--spacing-sm); }
+.mt-md { margin-top: var(--spacing-md); }
+.mt-lg { margin-top: var(--spacing-lg); }
+.mt-xl { margin-top: var(--spacing-xl); }
+.mt-2xl { margin-top: var(--spacing-2xl); }
+
+.mb-sm { margin-bottom: var(--spacing-sm); }
+.mb-md { margin-bottom: var(--spacing-md); }
+.mb-lg { margin-bottom: var(--spacing-lg); }
+.mb-xl { margin-bottom: var(--spacing-xl); }
+.mb-2xl { margin-bottom: var(--spacing-2xl); }
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   19. ANIMACIONS
+   ───────────────────────────────────────────────────────────────────── */
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn var(--transition-normal) ease forwards;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   20. IMPRESSIÓ
+   ───────────────────────────────────────────────────────────────────── */
+
+@media print {
+    .site-header,
+    .site-footer,
+    .view-controls,
+    .theme-toggle,
+    .back-to-text {
+        display: none;
+    }
+
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: black;
+        background: white;
+    }
+
+    .bilingue-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .original-column {
+        border: none;
+        page-break-after: always;
+    }
+
+    a {
+        color: black;
+        text-decoration: underline;
+    }
+
+    .note,
+    .glossary-entry {
+        break-inside: avoid;
+        background: #f5f5f5;
+    }
+}
