@@ -1,0 +1,23 @@
+obra:
+  titol: "Critó: Sobre el deure"
+  titol_original: "Κρίτων"
+  autor: "Plató"
+  autor_original: "Πλάτων"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 399 aC"
+  llengua_original: "grec antic"
+  descripcio: >
+    Diàleg platònic ambientat a la presó d'Atenes, on Sòcrates espera l'execució.
+    El seu amic Critó li proposa fugir, però Sòcrates refusa, argumentant que
+    cal obeir les lleis de la ciutat fins i tot quan ens perjudiquen. És un
+    text fonamental sobre l'ètica del deure, el contracte social i la relació
+    entre l'individu i l'Estat. El diàleg presenta la cèlebre prosopopeia de
+    les Lleis d'Atenes, que parlen en primera persona per defensar l'autoritat
+    de la polis.
+  temes:
+    - filosofia política
+    - ètica
+    - obediència a la llei
+    - contracte social
+    - justícia
+  referencia_stephanus: "43a-54e"
