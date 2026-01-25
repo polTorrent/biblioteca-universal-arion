@@ -1,0 +1,23 @@
+obra:
+  titol: "Carta 1: Sobre el valor del temps"
+  titol_original: "Epistula I: De tempore"
+  autor: "Sèneca"
+  autor_original: "Lucius Annaeus Seneca"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 64 dC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  descripcio: "Primera carta de les Epístoles morals a Lucili. Sèneca exhorta el seu amic a recuperar el control del seu temps, el bé més preciós i l'únic veritablement nostre."
+
+seccions: 7
+
+estadistiques:
+  paraules_original: 312
+  paraules_traduccio: 340
+  notes: 6
+  termes_glossari: 5
+
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-01-25"

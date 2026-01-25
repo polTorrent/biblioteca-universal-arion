@@ -1,0 +1,51 @@
+termes:
+  - id: "vindica-te"
+    grec: "vindica te tibi"
+    transliteracio: "vindica te tibi"
+    traduccio: "reivindica't a tu mateix"
+    definicio: >
+      Expressió jurídica romana aplicada a la filosofia. Vindicare significa reclamar
+      legalment una propietat; aquí Sèneca exhorta a reclamar la propietat sobre un
+      mateix i el propi temps, alliberant-se de les obligacions externes que ens
+      esclavitzen.
+    usos: [1]
+
+  - id: "tempus"
+    grec: "tempus"
+    transliteracio: "tempus"
+    traduccio: "temps"
+    definicio: >
+      Per als estoics, el temps és l'únic bé veritablement nostre. A diferència dels
+      béns materials (cos, propietat, reputació), el temps no es pot recuperar ni
+      restituir un cop perdut. Gestionar-lo bé és fonamental per a la vida filosòfica.
+    usos: [1, 5]
+
+  - id: "dum-differtur"
+    grec: "Dum differtur vita transcurrit"
+    transliteracio: "Dum differtur vita transcurrit"
+    traduccio: "Mentre s'ajorna, la vida transcorre"
+    definicio: >
+      Sentència cèlebre que expressa la paradoxa de l'ajornament: mentre posposem
+      viure plenament, la vida se'ns escapa. Advertència contra la procrastinació
+      existencial i la il·lusió que sempre tindrem temps després.
+    usos: [4]
+
+  - id: "stultitia"
+    grec: "stultitia"
+    transliteracio: "stultitia"
+    traduccio: "niciesa, insensatesa"
+    definicio: >
+      En el vocabulari estoic, la stultitia és l'estat de qui no viu segons la raó.
+      El stultus (neci) és l'oposat del sapiens (savi): algú que no comprèn el valor
+      real de les coses i malgasta el que és més preciós.
+    usos: [5]
+
+  - id: "parsimonia"
+    grec: "parsimonia"
+    transliteracio: "parsimonia"
+    traduccio: "estalvi, frugalitat"
+    definicio: >
+      Virtut romana tradicional consistent a administrar bé els recursos i evitar
+      el malbaratament. Sèneca l'aplica al temps: cal ser parsimoniós amb les hores,
+      no malgastar-les en coses sense valor.
+    usos: [7]
