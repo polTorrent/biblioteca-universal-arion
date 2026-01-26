@@ -1,0 +1,143 @@
+termes:
+  - id: "logos"
+    grec: "λόγος"
+    transliteracio: "logos"
+    traduccio: "raó / paraula / discurs"
+    definicio: |
+      Concepte central en Heràclit que designa el principi racional ordenador
+      de l'univers. El Logos és la llei còsmica que governa tot canvi i manté
+      la unitat subjacent dels contraris. És alhora el discurs veritable que
+      expressa aquesta llei i la capacitat racional humana per comprendre-la.
+    categoria: "metafísica"
+    usos: [1, 2, 50]
+    termes_relacionats: ["physis", "xynon"]
+    notes: "Arrel del terme 'lògica' i present en molts compostos (-logia)"
+
+  - id: "physis"
+    grec: "φύσις"
+    transliteracio: "physis"
+    traduccio: "natura / naturalesa"
+    definicio: |
+      El procés dinàmic pel qual les coses arriben a ser i es manifesten.
+      Per Heràclit, la physis no és estàtica sinó un flux constant regit
+      pel Logos. "La natura estima amagar-se" (DK 123) indica el seu
+      caràcter profund i no evident.
+    categoria: "cosmologia"
+    usos: [123, 112]
+    termes_relacionats: ["logos", "pyr"]
+    notes: "Origen del terme 'física'"
+
+  - id: "pyr"
+    grec: "πῦρ"
+    transliteracio: "pyr"
+    traduccio: "foc"
+    definicio: |
+      Element primordial i principi (arkhé) de totes les coses segons Heràclit.
+      El foc representa el canvi perpetu, la transformació constant, i la
+      mesura del cosmos. No és simplement matèria física sinó símbol del
+      dinamisme universal i del Logos en acció.
+    categoria: "cosmologia"
+    usos: [30, 36, 90]
+    termes_relacionats: ["logos", "kosmos"]
+    notes: "Foc etern, sempre viu (aeizōon)"
+
+  - id: "kosmos"
+    grec: "κόσμος"
+    transliteracio: "kosmos"
+    traduccio: "món ordenat / univers"
+    definicio: |
+      L'ordre bell i harmoniós del món. Per Heràclit, el kosmos no ha estat
+      creat per cap déu ni home, sinó que existeix eternament com a foc
+      sempre viu que s'encén i s'apaga segons mesures.
+    categoria: "cosmologia"
+    usos: [30]
+    termes_relacionats: ["pyr", "logos", "metra"]
+
+  - id: "polemos"
+    grec: "πόλεμος"
+    transliteracio: "polemos"
+    traduccio: "guerra / conflicte"
+    definicio: |
+      El conflicte com a principi creador i governant de totes les coses.
+      "La guerra és pare de tot, rei de tot" (DK 53). No és violència
+      destructiva sinó la tensió dinàmica entre oposats que genera i
+      manté l'ordre còsmic.
+    categoria: "metafísica"
+    usos: [53, 67, 80]
+    termes_relacionats: ["eris", "harmonia"]
+
+  - id: "harmonia"
+    grec: "ἁρμονίη"
+    transliteracio: "harmonia"
+    traduccio: "harmonia / ajustament"
+    definicio: |
+      La tensió que uneix els contraris, com en un arc o una lira.
+      L'harmonia heraclitiana no és absència de conflicte sinó la
+      unitat dinàmica que emergeix de la tensió entre oposats.
+      És "palintropo" (que retorna sobre si mateixa).
+    categoria: "metafísica"
+    usos: [51]
+    termes_relacionats: ["polemos", "logos"]
+
+  - id: "psyche"
+    grec: "ψυχή"
+    transliteracio: "psyche"
+    traduccio: "ànima"
+    definicio: |
+      El principi vital i racional de l'ésser humà. Per Heràclit,
+      l'ànima seca és la més sàvia i excel·lent (DK 118), mentre
+      que la humitat l'embriaga i debilita. L'ànima participa del
+      Logos còsmic i pot comprendre l'ordre universal.
+    categoria: "antropologia"
+    usos: [36, 118]
+    termes_relacionats: ["logos", "sophos"]
+
+  - id: "xynon"
+    grec: "ξυνόν"
+    transliteracio: "xynon"
+    traduccio: "comú / compartit"
+    definicio: |
+      Allò que és comú a tots, en contraposició a l'opinió privada
+      (idia phronesis). El Logos és xynon: una veritat universal
+      accessible a qui s'hi obri, però que la majoria ignora
+      vivint en el seu propi món particular.
+    categoria: "epistemologia"
+    usos: [2, 114]
+    termes_relacionats: ["logos", "sophos"]
+
+  - id: "ethos"
+    grec: "ἦθος"
+    transliteracio: "ethos"
+    traduccio: "caràcter / manera de ser"
+    definicio: |
+      El caràcter propi d'una persona. En el cèlebre fragment DK 119,
+      "ἦθος ἀνθρώπῳ δαίμων" (el caràcter és el destí de l'home),
+      Heràclit afirma que som nosaltres mateixos, no forces exteriors,
+      qui determinem el nostre destí.
+    categoria: "ètica"
+    usos: [119]
+    termes_relacionats: ["daimon", "psyche"]
+
+  - id: "daimon"
+    grec: "δαίμων"
+    transliteracio: "daimon"
+    traduccio: "destí / esperit guardià"
+    definicio: |
+      Força divina o sobrenatural que guia la vida d'un individu.
+      En Heràclit, el daimon no és extern sinó identificat amb
+      l'ethos: el nostre caràcter és el nostre destí.
+    categoria: "teologia"
+    usos: [119]
+    termes_relacionats: ["ethos", "theos"]
+
+  - id: "metra"
+    grec: "μέτρα"
+    transliteracio: "metra"
+    traduccio: "mesures"
+    definicio: |
+      Les proporcions o límits segons els quals el foc còsmic
+      s'encén i s'apaga. El canvi no és caòtic sinó regulat
+      per mesures precises que mantenen l'equilibri del tot.
+    categoria: "cosmologia"
+    usos: [30]
+    termes_relacionats: ["pyr", "logos", "kosmos"]
