@@ -3,15 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Fragments del filòsof presocràtic Heràclit d'Efes. Aforismes sobre el canvi, el logos, la unitat dels contraris i el foc com a principi.">
+    <meta name="description" content="Heràclit d&#39;Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com
+&#34;l&#39;Obscur&#34; per l&#39;estil enigmàtic dels seus aforismes. De la seva obra
+&#34;Sobre la natura&#34; (Περὶ φύσεως) només ens han arribat uns 130 fragments
+preservats en citacions d&#39;autors posteriors.
+
+El seu pensament gira al voltant del canvi perpetu (πάντα ῥεῖ, &#34;tot flueix&#34;),
+la unitat dels contraris, i el Logos com a principi ordenador de l&#39;univers.
+La seva influència s&#39;estén des d&#39;Aristòtil fins a Hegel i Nietzsche.
+">
     <meta name="author" content="Biblioteca Arion">
-    <meta name="keywords" content="traduccions, clàssics, grec, català, filosofia, presocràtics, Heràclit">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="Fragments - Heràclit d'Efes">
-    <meta property="og:description" content="Fragments del filòsof presocràtic Heràclit d'Efes. Aforismes sobre el canvi, el logos, la unitat dels contraris i el foc com a principi.">
+    <meta property="og:title" content="Fragments - Heràclit d&#39;Efes">
+    <meta property="og:description" content="Heràclit d&#39;Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com
+&#34;l&#39;Obscur&#34; per l&#39;estil enigmàtic dels seus aforismes. De la seva obra
+&#34;Sobre la natura&#34; (Περὶ φύσεως) només ens han arribat uns 130 fragments
+preservats en citacions d&#39;autors posteriors.
+
+El seu pensament gira al voltant del canvi perpetu (πάντα ῥεῖ, &#34;tot flueix&#34;),
+la unitat dels contraris, i el Logos com a principi ordenador de l&#39;univers.
+La seva influència s&#39;estén des d&#39;Aristòtil fins a Hegel i Nietzsche.
+">
     <meta property="og:type" content="article">
-    <meta property="og:url" content="https://biblioteca-arion.github.io/biblioteca-universal-arion/heraclit-fragments.html">
+    <meta property="og:url" content="https://biblioteca-arion.github.io/biblioteca-universal-arion//heraclit-fragments.html">
     <meta property="og:site_name" content="Biblioteca Arion">
     <meta property="og:locale" content="ca_ES">
 
@@ -20,7 +36,7 @@
     <meta name="twitter:title" content="Biblioteca Arion">
     <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
 
-    <title>Fragments - Heràclit d'Efes | Biblioteca Arion</title>
+    <title>Fragments - Heràclit d&#39;Efes | Editorial Clàssica</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,6 +46,186 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 
+    
+<!-- Estils per índex i navegació de capítols -->
+<style>
+    /* Separador en controls */
+    .view-separator {
+        color: var(--text-muted, #999);
+        margin: 0 0.5rem;
+    }
+
+    /* Botó índex */
+    .toc-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    .toc-icon {
+        font-size: 1.1em;
+    }
+
+    /* Panell índex */
+    .chapter-toc {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 320px;
+        max-width: 90vw;
+        max-height: calc(100vh - 100px);
+        background: var(--bg-primary, #fff);
+        border: 1px solid var(--border-color, #e0e0e0);
+        border-radius: 0 8px 8px 0;
+        box-shadow: 4px 4px 20px rgba(0,0,0,0.15);
+        z-index: 1000;
+        overflow: hidden;
+    }
+    .chapter-toc.open {
+        display: block;
+        animation: slideIn 0.2s ease-out;
+    }
+    @keyframes slideIn {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    .toc-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid var(--border-color, #e0e0e0);
+        background: var(--bg-secondary, #f8f8f8);
+    }
+    .toc-header h3 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .toc-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+        color: var(--text-muted, #666);
+    }
+    .toc-close:hover {
+        color: var(--text-primary, #333);
+    }
+    .toc-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-height: calc(100vh - 180px);
+        overflow-y: auto;
+    }
+    .toc-list li {
+        border-bottom: 1px solid var(--border-light, #f0f0f0);
+    }
+    .toc-list li:last-child {
+        border-bottom: none;
+    }
+    .toc-list a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: var(--text-primary, #333);
+        text-decoration: none;
+        transition: background 0.15s;
+    }
+    .toc-list a:hover {
+        background: var(--bg-hover, #f5f5f5);
+    }
+    .toc-list a.active {
+        background: var(--accent-light, #fff8e1);
+        border-left: 3px solid var(--accent, #D4AF37);
+        font-weight: 500;
+    }
+    .toc-chapter-num {
+        color: var(--text-muted, #888);
+        margin-right: 0.5rem;
+    }
+
+    /* Navegació entre capítols */
+    .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+        gap: 1rem;
+    }
+    .chapter-nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s;
+    }
+    .chapter-nav-btn:hover:not(:disabled) {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .chapter-nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+    .nav-arrow {
+        font-size: 1.2em;
+    }
+    .chapter-indicator {
+        font-size: 0.9rem;
+        color: var(--text-muted, #666);
+        text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .chapter-toc {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+        }
+        .chapter-nav {
+            flex-wrap: wrap;
+        }
+        .chapter-nav-btn .nav-text {
+            display: none;
+        }
+        .chapter-indicator {
+            order: -1;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    /* Mode fosc */
+    [data-theme="dark"] .chapter-toc {
+        background: #1e1e1e;
+        border-color: #333;
+    }
+    [data-theme="dark"] .toc-header {
+        background: #252525;
+        border-color: #333;
+    }
+    [data-theme="dark"] .toc-list a.active {
+        background: #2a2a1e;
+    }
+    [data-theme="dark"] .chapter-nav-btn {
+        background: #252525;
+        border-color: #444;
+    }
+</style>
+
 <!-- Schema.org -->
 <script type="application/ld+json">
 {
@@ -38,11 +234,11 @@
     "name": "Fragments",
     "author": {
         "@type": "Person",
-        "name": "Heràclit d'Efes"
+        "name": "Heràclit d&#39;Efes"
     },
     "translator": {
         "@type": "Organization",
-        "name": "Biblioteca Arion"
+        "name": "Claude (Anthropic) amb supervisió editorial"
     },
     "inLanguage": "ca",
     "workTranslation": {
@@ -85,34 +281,32 @@
 
     <!-- Main Content -->
     <main>
-
+        
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
         <header class="work-header">
             <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
-
-                <div class="work-cover" style="flex-shrink: 0;">
-                    <img src="assets/portades/fragments_portada.png"
-                         alt="Portada de Fragments"
-                         style="max-width: 200px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-                </div>
+                
 
                 <div class="work-info" style="flex: 1; min-width: 300px;">
                     <h1 class="work-title">Fragments</h1>
-
+                    
                     <p class="work-title-original">Περὶ φύσεως (fragments)</p>
+                    
 
                     <div class="work-meta-grid">
                         <div class="work-meta-item">
                             <strong>Autor</strong>
-                            Heràclit d'Efes
+                            Heràclit d&#39;Efes
+                            
                             <br><small>(Ἡράκλειτος ὁ Ἐφέσιος)</small>
+                            
                         </div>
 
                         <div class="work-meta-item">
                             <strong>Traducció</strong>
-                            Claude (Anthropic)
+                            Claude (Anthropic) amb supervisió editorial
                         </div>
 
                         <div class="work-meta-item">
@@ -120,23 +314,34 @@
                             Grec antic
                         </div>
 
+                        
                         <div class="work-meta-item">
                             <strong>Data original</strong>
-                            c. 500 aC
+                            -500
                         </div>
+                        
 
+                        
                         <div class="work-meta-item">
                             <strong>Estat</strong>
-                            <span class="badge badge-status-revisat">revisat</span>
+                            <span class="badge badge-status-esborrany">esborrany</span>
                         </div>
+                        
 
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            8/10
-                        </div>
+                        
                     </div>
 
-                    <p class="work-description">Heràclit d'Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com "l'Obscur" per l'estil enigmàtic dels seus aforismes. El seu pensament gira al voltant del canvi perpetu, la unitat dels contraris, i el Logos com a principi ordenador de l'univers.</p>
+                    
+                    <p class="work-description">Heràclit d&#39;Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com
+&#34;l&#39;Obscur&#34; per l&#39;estil enigmàtic dels seus aforismes. De la seva obra
+&#34;Sobre la natura&#34; (Περὶ φύσεως) només ens han arribat uns 130 fragments
+preservats en citacions d&#39;autors posteriors.
+
+El seu pensament gira al voltant del canvi perpetu (πάντα ῥεῖ, &#34;tot flueix&#34;),
+la unitat dels contraris, i el Logos com a principi ordenador de l&#39;univers.
+La seva influència s&#39;estén des d&#39;Aristòtil fins a Hegel i Nietzsche.
+</p>
+                    
                 </div>
             </div>
         </header>
@@ -144,283 +349,878 @@
         <!-- Controls de vista -->
         <div class="text-container" data-mode="bilingue">
             <div class="view-controls">
+                <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
+                    <span class="toc-icon">☰</span> Índex
+                </button>
+                <span class="view-separator">|</span>
                 <button class="view-btn" data-mode="original">Original</button>
                 <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
                 <button class="view-btn" data-mode="traduccio">Traducció</button>
             </div>
+
+            <!-- Índex de capítols (amagat per defecte) -->
+            <nav class="chapter-toc" id="chapter-toc" aria-label="Índex de capítols">
+                <div class="toc-header">
+                    <h3>Índex de capítols</h3>
+                    <button class="toc-close" id="toc-close" aria-label="Tancar índex">&times;</button>
+                </div>
+                <ol class="toc-list" id="toc-list">
+                    <!-- Omplert dinàmicament per JS -->
+                </ol>
+            </nav>
 
             <!-- Grid bilingüe -->
             <div class="bilingue-grid">
                 <!-- Columna original -->
                 <section class="original-column">
                     <div class="column-header">Text original (grec antic)</div>
-
-<h2 id="dk-1">DK 1</h2>
-<p>τοῦ δὲ λόγου τοῦδ᾽ ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι καὶ πρόσθεν ἢ ἀκοῦσαι καὶ ἀκούσαντες τὸ πρῶτον.</p>
+                    <h1 id="fragments">Περὶ φύσεως (Fragments)</h1>
+<p><strong>Ἡράκλειτος ὁ Ἐφέσιος</strong> (c. 535-475 π.Χ.)</p>
+<p><em>Numeració segons Diels-Kranz (DK)</em></p>
 <hr>
-
+<h2 id="dk-1">DK 1</h2>
+<p>τοῦ δὲ λόγου τοῦδ᾽ ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι καὶ πρόσθεν ἢ ἀκοῦσαι καὶ ἀκούσαντες τὸ πρῶτον· γινομένων γὰρ πάντων κατὰ τὸν λόγον τόνδε ἀπείροισιν ἐοίκασι, πειρώμενοι καὶ ἐπέων καὶ ἔργων τοιούτων, ὁκοίων ἐγὼ διηγεῦμαι.</p>
 <h2 id="dk-2">DK 2</h2>
 <p>διὸ δεῖ ἕπεσθαι τῷ ξυνῷ· τοῦ λόγου δ᾽ ἐόντος ξυνοῦ ζώουσιν οἱ πολλοὶ ὡς ἰδίαν ἔχοντες φρόνησιν.</p>
-<hr>
-
 <h2 id="dk-12">DK 12</h2>
 <p>ποταμοῖσι τοῖσιν αὐτοῖσιν ἐμβαίνουσιν ἕτερα καὶ ἕτερα ὕδατα ἐπιρρεῖ.</p>
-<hr>
-
 <h2 id="dk-30">DK 30</h2>
 <p>κόσμον τόνδε, τὸν αὐτὸν ἁπάντων, οὔτε τις θεῶν οὔτε ἀνθρώπων ἐποίησεν, ἀλλ᾽ ἦν ἀεὶ καὶ ἔστιν καὶ ἔσται πῦρ ἀείζωον, ἁπτόμενον μέτρα καὶ ἀποσβεννύμενον μέτρα.</p>
-<hr>
-
 <h2 id="dk-36">DK 36</h2>
 <p>ψυχῇσι θάνατος ὕδωρ γενέσθαι, ὕδατι δὲ θάνατος γῆν γενέσθαι· ἐκ γῆς δὲ ὕδωρ γίνεται, ἐξ ὕδατος δὲ ψυχή.</p>
-<hr>
-
 <h2 id="dk-49a">DK 49a</h2>
 <p>ποταμοῖς τοῖς αὐτοῖς ἐμβαίνομέν τε καὶ οὐκ ἐμβαίνομεν, εἶμέν τε καὶ οὐκ εἶμεν.</p>
-<hr>
-
 <h2 id="dk-50">DK 50</h2>
 <p>οὐκ ἐμοῦ, ἀλλὰ τοῦ λόγου ἀκούσαντας ὁμολογεῖν σοφόν ἐστιν ἓν πάντα εἶναι.</p>
-<hr>
-
 <h2 id="dk-51">DK 51</h2>
 <p>οὐ ξυνιᾶσιν ὅκως διαφερόμενον ἑωυτῷ ὁμολογέει· παλίντροπος ἁρμονίη ὅκωσπερ τόξου καὶ λύρης.</p>
-<hr>
-
 <h2 id="dk-53">DK 53</h2>
-<p>πόλεμος πάντων μὲν πατήρ ἐστι, πάντων δὲ βασιλεύς.</p>
-<hr>
-
+<p>πόλεμος πάντων μὲν πατήρ ἐστι, πάντων δὲ βασιλεύς, καὶ τοὺς μὲν θεοὺς ἔδειξε τοὺς δὲ ἀνθρώπους, τοὺς μὲν δούλους ἐποίησε τοὺς δὲ ἐλευθέρους.</p>
 <h2 id="dk-60">DK 60</h2>
 <p>ὁδὸς ἄνω κάτω μία καὶ ὡυτή.</p>
-<hr>
-
 <h2 id="dk-62">DK 62</h2>
 <p>ἀθάνατοι θνητοί, θνητοὶ ἀθάνατοι, ζῶντες τὸν ἐκείνων θάνατον, τὸν δὲ ἐκείνων βίον τεθνεῶτες.</p>
-<hr>
-
 <h2 id="dk-67">DK 67</h2>
 <p>ὁ θεὸς ἡμέρη εὐφρόνη, χειμὼν θέρος, πόλεμος εἰρήνη, κόρος λιμός.</p>
-<hr>
-
+<h2 id="dk-80">DK 80</h2>
+<p>εἰδέναι δὲ χρὴ τὸν πόλεμον ἐόντα ξυνόν, καὶ δίκην ἔριν, καὶ γινόμενα πάντα κατ᾽ ἔριν καὶ χρεώμενα.</p>
 <h2 id="dk-88">DK 88</h2>
-<p>ταὐτό τ᾽ ἔνι ζῶν καὶ τεθνηκὸς καὶ τὸ ἐγρηγορὸς καὶ τὸ καθεῦδον καὶ νέον καὶ γηραιόν.</p>
-<hr>
-
+<p>ταὐτό τ᾽ ἔνι ζῶν καὶ τεθνηκὸς καὶ τὸ ἐγρηγορὸς καὶ τὸ καθεῦδον καὶ νέον καὶ γηραιόν· τάδε γὰρ μεταπεσόντα ἐκεῖνά ἐστι κἀκεῖνα πάλιν μεταπεσόντα ταῦτα.</p>
 <h2 id="dk-90">DK 90</h2>
 <p>πυρὸς ἀνταμοιβὴ τὰ πάντα καὶ πῦρ ἁπάντων ὅκωσπερ χρυσοῦ χρήματα καὶ χρημάτων χρυσός.</p>
-<hr>
-
 <h2 id="dk-91">DK 91</h2>
 <p>ποταμῷ γὰρ οὐκ ἔστιν ἐμβῆναι δὶς τῷ αὐτῷ.</p>
-<hr>
-
 <h2 id="dk-101">DK 101</h2>
 <p>ἐδιζησάμην ἐμεωυτόν.</p>
-<hr>
-
+<h2 id="dk-112">DK 112</h2>
+<p>σωφρονεῖν ἀρετὴ μεγίστη, καὶ σοφίη ἀληθέα λέγειν καὶ ποιεῖν κατὰ φύσιν ἐπαΐοντας.</p>
+<h2 id="dk-114">DK 114</h2>
+<p>ξὺν νόῳ λέγοντας ἰσχυρίζεσθαι χρὴ τῷ ξυνῷ πάντων, ὅκωσπερ νόμῳ πόλις, καὶ πολὺ ἰσχυροτέρως.</p>
 <h2 id="dk-118">DK 118</h2>
 <p>αὔη ψυχὴ σοφωτάτη καὶ ἀρίστη.</p>
-<hr>
-
 <h2 id="dk-119">DK 119</h2>
 <p>ἦθος ἀνθρώπῳ δαίμων.</p>
-<hr>
-
+<h2 id="dk-121">DK 121</h2>
+<p>ἄξιον Ἐφεσίοις ἡβηδὸν ἀπάγξασθαι πᾶσι καὶ τοῖς ἀνήβοις τὴν πόλιν καταλιπεῖν.</p>
 <h2 id="dk-123">DK 123</h2>
 <p>φύσις κρύπτεσθαι φιλεῖ.</p>
-<hr>
-
+<h2 id="dk-125a">DK 125a</h2>
+<p>κυκεὼν διίσταται μὴ κινούμενος.</p>
 <h2 id="dk-126">DK 126</h2>
 <p>τὰ ψυχρὰ θέρεται, θερμὸν ψύχεται, ὑγρὸν αὐαίνεται, καρφαλέον νοτίζεται.</p>
-
                 </section>
 
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-
-<h2>DK 1</h2>
-<p>D'aquest <span class="term" data-term="logos">Logos</span> que és sempre, els homes esdevenen incomprensors, tant abans d'escoltar-lo com després d'haver-lo escoltat per primera vegada.</p>
+                    <h1 id="fragments">Fragments</h1>
+<p><strong>Heràclit d'Efes</strong> (c. 535-475 aC)
+<strong>Traductor:</strong> Claude (Anthropic) amb supervisió editorial
+<strong>Any de traducció:</strong> 2026</p>
+<p><em>Numeració segons Diels-Kranz (DK)</em></p>
 <hr>
-
-<h2>DK 2</h2>
+<h2 id="dk-1">DK 1</h2>
+<p>D'aquest <span class="term" data-term="logos">Logos</span><sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> que és sempre, els homes esdevenen incomprensors, tant abans d'escoltar-lo com després d'haver-lo escoltat per primera vegada. Car tot i que totes les coses succeeixen segons aquest Logos, semblen inexperts quan proven paraules i actes com els que jo exposo.</p>
+<h2 id="dk-2">DK 2</h2>
 <p>Per això cal seguir allò <span class="term" data-term="xynon">comú</span>; però, tot i que el Logos és comú, la majoria viuen com si tinguessin una intel·ligència pròpia.</p>
-<hr>
-
-<h2>DK 12</h2>
-<p>Als qui entren als mateixos rius, els flueixen aigües diferents i diferents.</p>
-<hr>
-
-<h2>DK 30</h2>
-<p>Aquest <span class="term" data-term="kosmos">món</span>, el mateix per a tots, no l'ha fet cap dels déus ni cap dels homes, sinó que sempre era, és i serà: <span class="term" data-term="pyr">foc</span> eternament viu, que s'encén segons <span class="term" data-term="metra">mesures</span> i s'apaga segons mesures.</p>
-<hr>
-
-<h2>DK 36</h2>
-<p>Per a les <span class="term" data-term="psyche">ànimes</span>, morir és esdevenir aigua; per a l'aigua, morir és esdevenir terra. Però de la terra neix l'aigua, i de l'aigua, l'ànima.</p>
-<hr>
-
-<h2>DK 49a</h2>
+<h2 id="dk-12">DK 12</h2>
+<p>Als qui entren als mateixos rius, els flueixen aigües diferents i diferents.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></p>
+<h2 id="dk-30">DK 30</h2>
+<p>Aquest <span class="term" data-term="kosmos">món</span>, el mateix per a tots, no l'ha fet cap dels déus ni cap dels homes, sinó que sempre era, és i serà: <span class="term" data-term="pyr">foc</span> eternament viu, que s'encén segons <span class="term" data-term="metra">mesures</span> i s'apaga segons mesures.<sup id="fnref:3"><a class="footnote-ref" href="#fn:3">3</a></sup></p>
+<h2 id="dk-36">DK 36</h2>
+<p>Per a les <span class="term" data-term="psyche">ànimes</span>, morir és esdevenir aigua; per a l'aigua, morir és esdevenir terra. Però de la terra neix l'aigua, i de l'aigua, l'ànima.<sup id="fnref:4"><a class="footnote-ref" href="#fn:4">4</a></sup></p>
+<h2 id="dk-49a">DK 49a</h2>
 <p>Als mateixos rius entrem i no entrem; som i no som.</p>
-<hr>
-
-<h2>DK 50</h2>
-<p>No a mi, sinó al <span class="term" data-term="logos">Logos</span> havent escoltat, és savi convenir que tot és u.</p>
-<hr>
-
-<h2>DK 51</h2>
-<p>No comprenen com, tot diferenciant-se de si mateix, concorda amb si mateix: <span class="term" data-term="harmonia">harmonia</span> de tensions contràries, com la de l'arc i la lira.</p>
-<hr>
-
-<h2>DK 53</h2>
-<p>La <span class="term" data-term="polemos">guerra</span> és pare de tot, rei de tot.</p>
-<hr>
-
-<h2>DK 60</h2>
-<p>El camí amunt i avall és un i el mateix.</p>
-<hr>
-
-<h2>DK 62</h2>
-<p>Immortals mortals, mortals immortals: vivint la mort d'aquells, morint la vida d'aquells.</p>
-<hr>
-
-<h2>DK 67</h2>
-<p>El déu és dia nit, hivern estiu, guerra pau, sacietat fam.</p>
-<hr>
-
-<h2>DK 88</h2>
-<p>És el mateix: viu i mort, despert i adormit, jove i vell.</p>
-<hr>
-
-<h2>DK 90</h2>
-<p>Totes les coses són intercanvi del foc, i el foc de totes les coses, com les mercaderies de l'or i l'or de les mercaderies.</p>
-<hr>
-
-<h2>DK 91</h2>
-<p>No és possible entrar dues vegades al mateix riu.</p>
-<hr>
-
-<h2>DK 101</h2>
-<p>Em vaig cercar a mi mateix.</p>
-<hr>
-
-<h2>DK 118</h2>
-<p>L'<span class="term" data-term="psyche">ànima</span> seca és la més sàvia i excel·lent.</p>
-<hr>
-
-<h2>DK 119</h2>
-<p>El <span class="term" data-term="ethos">caràcter</span> és el <span class="term" data-term="daimon">destí</span> de l'home.</p>
-<hr>
-
-<h2>DK 123</h2>
-<p>La <span class="term" data-term="physis">natura</span> estima amagar-se.</p>
-<hr>
-
-<h2>DK 126</h2>
+<h2 id="dk-50">DK 50</h2>
+<p>No a mi, sinó al <span class="term" data-term="logos">Logos</span> havent escoltat, és savi convenir que tot és u.<sup id="fnref:5"><a class="footnote-ref" href="#fn:5">5</a></sup></p>
+<h2 id="dk-51">DK 51</h2>
+<p>No comprenen com, tot diferenciant-se de si mateix, concorda amb si mateix: <span class="term" data-term="harmonia">harmonia</span> de tensions contràries, com la de l'arc i la lira.<sup id="fnref:6"><a class="footnote-ref" href="#fn:6">6</a></sup></p>
+<h2 id="dk-53">DK 53</h2>
+<p>La <span class="term" data-term="polemos">guerra</span> és pare de tot, rei de tot: a uns els ha revelat com a déus, a altres com a homes; a uns els ha fet esclaus, a altres lliures.<sup id="fnref:7"><a class="footnote-ref" href="#fn:7">7</a></sup></p>
+<h2 id="dk-60">DK 60</h2>
+<p>El camí amunt i avall és un i el mateix.<sup id="fnref:8"><a class="footnote-ref" href="#fn:8">8</a></sup></p>
+<h2 id="dk-62">DK 62</h2>
+<p>Immortals mortals, mortals immortals: vivint la mort d'aquells, morint la vida d'aquells.<sup id="fnref:9"><a class="footnote-ref" href="#fn:9">9</a></sup></p>
+<h2 id="dk-67">DK 67</h2>
+<p>El déu és dia nit, hivern estiu, guerra pau, sacietat fam.<sup id="fnref:10"><a class="footnote-ref" href="#fn:10">10</a></sup></p>
+<h2 id="dk-80">DK 80</h2>
+<p>Cal saber que la guerra és comuna, i la justícia és discòrdia, i totes les coses neixen i s'usen per discòrdia.</p>
+<h2 id="dk-88">DK 88</h2>
+<p>És el mateix: viu i mort, despert i adormit, jove i vell. Car aquestes coses, en transformar-se, són aquelles, i aquelles, en transformar-se de nou, són aquestes.</p>
+<h2 id="dk-90">DK 90</h2>
+<p>Totes les coses són intercanvi del foc, i el foc de totes les coses, com les mercaderies de l'or i l'or de les mercaderies.<sup id="fnref:11"><a class="footnote-ref" href="#fn:11">11</a></sup></p>
+<h2 id="dk-91">DK 91</h2>
+<p>No és possible entrar dues vegades al mateix riu.<sup id="fnref:12"><a class="footnote-ref" href="#fn:12">12</a></sup></p>
+<h2 id="dk-101">DK 101</h2>
+<p>Em vaig cercar a mi mateix.<sup id="fnref:13"><a class="footnote-ref" href="#fn:13">13</a></sup></p>
+<h2 id="dk-112">DK 112</h2>
+<p>La prudència és la virtut més gran, i la saviesa és dir la veritat i actuar segons la <span class="term" data-term="physis">natura</span> escoltant-la.</p>
+<h2 id="dk-114">DK 114</h2>
+<p>Els qui parlen amb intel·ligència cal que s'enforteixen amb allò <span class="term" data-term="xynon">comú</span> a tots, com la ciutat amb la llei, i molt més fortament encara.</p>
+<h2 id="dk-118">DK 118</h2>
+<p>L'<span class="term" data-term="psyche">ànima</span> seca és la més sàvia i excel·lent.<sup id="fnref:14"><a class="footnote-ref" href="#fn:14">14</a></sup></p>
+<h2 id="dk-119">DK 119</h2>
+<p>El <span class="term" data-term="ethos">caràcter</span> és el <span class="term" data-term="daimon">destí</span> de l'home.<sup id="fnref:15"><a class="footnote-ref" href="#fn:15">15</a></sup></p>
+<h2 id="dk-121">DK 121</h2>
+<p>Mereixerien els efesis adults penjar-se tots i deixar la ciutat als infants.</p>
+<h2 id="dk-123">DK 123</h2>
+<p>La <span class="term" data-term="physis">natura</span> estima amagar-se.<sup id="fnref:16"><a class="footnote-ref" href="#fn:16">16</a></sup></p>
+<h2 id="dk-125a">DK 125a</h2>
+<p>El kykeón es disgrega si no es remena.<sup id="fnref:17"><a class="footnote-ref" href="#fn:17">17</a></sup></p>
+<h2 id="dk-126">DK 126</h2>
 <p>Les coses fredes s'escalfen, el calent es refreda, l'humit s'asseca, l'àrid s'humiteja.</p>
-
+<hr>
+<h2 id="notes">Notes</h2>
+<div class="footnote">
+<hr>
+<ol>
+<li id="fn:1">
+<p><strong>Logos</strong> (λόγος): Concepte central d'Heràclit que designa la raó còsmica, la llei universal que ordena tots els canvis. També significa "paraula" o "discurs", suggerint que el Logos pot ser expressat i comprès pels qui escolten.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>Fragment fundacional de la doctrina del flux. Variant del més conegut "no pots entrar dues vegades al mateix riu" (DK 91).&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+<li id="fn:3">
+<p>L'afirmació més clara del foc com a principi (arkhé). El cosmos no és creat sinó etern, i el foc és alhora literal i simbòlic: representa el canvi perpetu i la mesura.&#160;<a class="footnote-backref" href="#fnref:3" title="Jump back to footnote 3 in the text">&#8617;</a></p>
+</li>
+<li id="fn:4">
+<p>Cicle còsmic de transformacions. L'ànima (psyche) és afí al foc; l'aigua i la terra representen estats més densos i menys nobles.&#160;<a class="footnote-backref" href="#fnref:4" title="Jump back to footnote 4 in the text">&#8617;</a></p>
+</li>
+<li id="fn:5">
+<p>El Logos no és propietat d'Heràclit sinó veritat universal. "Tot és u" resumeix la doctrina de la unitat dels contraris.&#160;<a class="footnote-backref" href="#fnref:5" title="Jump back to footnote 5 in the text">&#8617;</a></p>
+</li>
+<li id="fn:6">
+<p>La imatge de l'arc i la lira: ambdós funcionen per tensió oposada. L'arc dispara gràcies a la tensió; la lira sona per la tensió de les cordes.&#160;<a class="footnote-backref" href="#fnref:6" title="Jump back to footnote 6 in the text">&#8617;</a></p>
+</li>
+<li id="fn:7">
+<p>Polemos (guerra/conflicte) com a força creadora i ordenadora. No és violència gratuïta sinó la tensió que genera i manté l'ordre.&#160;<a class="footnote-backref" href="#fnref:7" title="Jump back to footnote 7 in the text">&#8617;</a></p>
+</li>
+<li id="fn:8">
+<p>Identitat dels contraris: pujar i baixar són el mateix camí vist des de perspectives diferents.&#160;<a class="footnote-backref" href="#fnref:8" title="Jump back to footnote 8 in the text">&#8617;</a></p>
+</li>
+<li id="fn:9">
+<p>Interdependència radical entre mortals i immortals. La vida dels uns depèn de la mort dels altres.&#160;<a class="footnote-backref" href="#fnref:9" title="Jump back to footnote 9 in the text">&#8617;</a></p>
+</li>
+<li id="fn:10">
+<p>El diví no és unilateral sinó que abraça tots els oposats. El déu d'Heràclit és el cosmos mateix en la seva totalitat.&#160;<a class="footnote-backref" href="#fnref:10" title="Jump back to footnote 10 in the text">&#8617;</a></p>
+</li>
+<li id="fn:11">
+<p>El foc com a equivalent universal, com l'or és equivalent de totes les mercaderies. Metàfora econòmica per explicar les transformacions còsmiques.&#160;<a class="footnote-backref" href="#fnref:11" title="Jump back to footnote 11 in the text">&#8617;</a></p>
+</li>
+<li id="fn:12">
+<p>La formulació més cèlebre del flux. Tanmateix, Heràclit no nega la identitat del riu: és el mateix riu precisament perquè flueix.&#160;<a class="footnote-backref" href="#fnref:12" title="Jump back to footnote 12 in the text">&#8617;</a></p>
+</li>
+<li id="fn:13">
+<p>Fragment autobiogràfic excepcional. Heràclit no segueix mestres sinó que es cerca a si mateix, anticipant el "coneix-te a tu mateix" socràtic.&#160;<a class="footnote-backref" href="#fnref:13" title="Jump back to footnote 13 in the text">&#8617;</a></p>
+</li>
+<li id="fn:14">
+<p>L'ànima "seca" és la més propera al foc, element noble. La humitat (vi, passions) l'embriaga i l'allunya de la saviesa.&#160;<a class="footnote-backref" href="#fnref:14" title="Jump back to footnote 14 in the text">&#8617;</a></p>
+</li>
+<li id="fn:15">
+<p>Un dels fragments més citats. El daimon no és una força externa sinó el nostre propi caràcter: som els autors del nostre destí.&#160;<a class="footnote-backref" href="#fnref:15" title="Jump back to footnote 15 in the text">&#8617;</a></p>
+</li>
+<li id="fn:16">
+<p>La natura no es mostra obertament; cal esforç i intel·ligència per penetrar-la. Justifica l'estil "obscur" d'Heràclit.&#160;<a class="footnote-backref" href="#fnref:16" title="Jump back to footnote 16 in the text">&#8617;</a></p>
+</li>
+<li id="fn:17">
+<p>El kykeón era una beguda ritual grega. Sense moviment, es separa: imatge de la necessitat del canvi per mantenir la unitat.&#160;<a class="footnote-backref" href="#fnref:17" title="Jump back to footnote 17 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
                 </section>
             </div>
+
+            <!-- Navegació entre capítols -->
+            <nav class="chapter-nav" id="chapter-nav" aria-label="Navegació entre capítols">
+                <button class="chapter-nav-btn" id="prev-chapter" disabled>
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-text">Capítol anterior</span>
+                </button>
+                <span class="chapter-indicator" id="chapter-indicator">Capítol 1 de 1</span>
+                <button class="chapter-nav-btn" id="next-chapter" disabled>
+                    <span class="nav-text">Capítol següent</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </nav>
         </div>
 
-        <!-- Glossari -->
-        <section class="notes-section" id="glossari">
-            <h2>Glossari de termes</h2>
-
-            <div class="note" id="logos">
+        <!-- Notes -->
+        
+        <section class="notes-section" id="notes">
+            <h2>Notes</h2>
+            
+            <div class="note" id="nota-1">
                 <div class="note-header">
-                    <span class="note-number">λόγος</span>
-                    <h4>logos — raó / paraula / discurs</h4>
+                    <span class="note-number">[1]</span>
+                    
+                    <h4>Notes</h4>
+                    
                 </div>
-                <p>Concepte central en Heràclit que designa el principi racional ordenador de l'univers. El Logos és la llei còsmica que governa tot canvi i manté la unitat subjacent dels contraris. És alhora el discurs veritable que expressa aquesta llei i la capacitat racional humana per comprendre-la.</p>
+                <h1 id="notes-del-traductor">Notes del traductor</h1>
+<h2 id="introduccio-a-heraclit">Introducció a Heràclit</h2>
+<p>Heràclit d'Efes (c. 535-475 aC) és un dels filòsofs més enigmàtics i influents de l'antiguitat. Conegut ja en l'antiguitat com "l'Obscur" (ὁ Σκοτεινός), el seu estil aforístic i oracular ha generat interpretacions múltiples i sovint contradictòries.</p>
+<p>De la seva obra, probablement titulada <em>Sobre la natura</em> (Περὶ φύσεως), només conservem uns 130 fragments preservats en citacions d'autors posteriors: Aristòtil, Plató, els estoics, Diògenes Laerci, Hipòlit de Roma, i altres.</p>
+<h2 id="context-historic-i-cultural">Context històric i cultural</h2>
+<p>Efes era una de les polis més riques de Jònia, a la costa occidental d'Anatòlia. Heràclit pertanyia a una família aristocràtica que tenia drets hereditaris sobre el sacerdoci del temple d'Àrtemis. Segons la tradició, va renunciar a aquests privilegis en favor del seu germà.</p>
+<p>La seva filosofia sorgeix en el context de la recerca presocràtica d'un principi (arkhé) que expliqui la realitat. Mentre Tales proposava l'aigua i Anaximenes l'aire, Heràclit identifica el foc com a element fonamental.</p>
+<h2 id="doctrines-principals">Doctrines principals</h2>
+<h3 id="1-el-logos">1. El Logos</h3>
+<p>El concepte més important d'Heràclit és el Logos (λόγος). Aquesta paraula grega té múltiples significats: raó, paraula, discurs, proporció, compte. Per Heràclit, el Logos és:</p>
+<ul>
+<li>La llei còsmica que ordena l'univers</li>
+<li>El principi racional que governa tots els canvis</li>
+<li>La veritat que pot ser expressada i compresa</li>
+<li>Allò "comú" (xynon) a tots, però ignorat per la majoria</li>
+</ul>
+<h3 id="2-el-flux">2. El flux (πάντα ῥεῖ)</h3>
+<p>La doctrina del flux perpetu és la més coneguda, sintetitzada en la frase "tot flueix" (πάντα ῥεῖ), que no apareix literalment als fragments però resumeix el seu pensament. La imatge del riu il·lustra que la realitat és canvi constant.</p>
+<p>Tanmateix, Heràclit no és un relativista: el canvi segueix mesures i proporcions regulars (metra). El Logos garanteix l'ordre dins del flux.</p>
+<h3 id="3-la-unitat-dels-contraris">3. La unitat dels contraris</h3>
+<p>Per Heràclit, els oposats no són simplement contraris sinó aspectes complementaris d'una mateixa realitat:</p>
+<ul>
+<li>Dia i nit</li>
+<li>Vida i mort</li>
+<li>Amunt i avall</li>
+<li>Guerra i pau</li>
+</ul>
+<p>La tensió entre contraris (l'"harmonia de tensions contràries") és el que manté l'ordre del cosmos, com la tensió de l'arc o les cordes de la lira.</p>
+<h3 id="4-el-foc-com-a-principi">4. El foc com a principi</h3>
+<p>El foc és el símbol i potser també la substància primordial:</p>
+<ul>
+<li>Representa el canvi constant (sempre consumint i renovant-se)</li>
+<li>Encarna les transformacions còsmiques</li>
+<li>Manté les "mesures" que regulen l'univers</li>
+<li>És l'equivalent universal (com l'or en el comerç)</li>
+</ul>
+<h2 id="criteris-de-traduccio">Criteris de traducció</h2>
+<h3 id="fidelitat-i-claredat">Fidelitat i claredat</h3>
+<p>He intentat mantenir la concisió i densitat de l'original grec, evitant paràfrasis explicatives dins del text. Les notes aclareixen el sentit sense diluir la força aforística.</p>
+<h3 id="termes-tecnics">Termes tècnics</h3>
+<ul>
+<li><strong>Logos</strong>: Mantinc el terme grec quan té sentit tècnic, traduint-lo només quan el context ho permet</li>
+<li><strong>Physis</strong>: "Natura" captura millor el sentit dinàmic que "naturalesa"</li>
+<li><strong>Kosmos</strong>: "Món" en sentit d'ordre bell i harmoniós</li>
+<li><strong>Polemos</strong>: "Guerra" entesa com a conflicte creatiu</li>
+</ul>
+<h3 id="estil-oracular">Estil oracular</h3>
+<p>He preservat les estructures paral·leles, les antítesis i el ritme sentenciós que caracteritzen Heràclit. Alguns fragments semblen deliberadament ambigus, i he mantingut aquesta ambigüitat.</p>
+<h2 id="influencia-posterior">Influència posterior</h2>
+<p>El pensament d'Heràclit ha tingut una influència enorme:</p>
+<ul>
+<li><strong>Plató</strong> el critica però n'adopta idees</li>
+<li><strong>Els estoics</strong> fan del Logos un concepte central</li>
+<li><strong>Hegel</strong> hi veu un precursor de la dialèctica</li>
+<li><strong>Nietzsche</strong> l'admira com a pensador tràgic</li>
+<li><strong>Heidegger</strong> hi dedica seminaris sencers</li>
+</ul>
+<h2 id="bibliografia-recomanada">Bibliografia recomanada</h2>
+<ul>
+<li>Kirk, G.S., Raven, J.E., Schofield, M. <em>Els filòsofs presocràtics</em></li>
+<li>Marcovich, M. <em>Heraclitus: Greek Text with a Short Commentary</em></li>
+<li>Kahn, Charles H. <em>The Art and Thought of Heraclitus</em></li>
+</ul>
+                
+                <a href="#ref-1" class="back-to-text">↩ Tornar al text</a>
             </div>
-
-            <div class="note" id="physis">
-                <div class="note-header">
-                    <span class="note-number">φύσις</span>
-                    <h4>physis — natura / naturalesa</h4>
-                </div>
-                <p>El procés dinàmic pel qual les coses arriben a ser i es manifesten. Per Heràclit, la physis no és estàtica sinó un flux constant regit pel Logos. "La natura estima amagar-se" (DK 123) indica el seu caràcter profund i no evident.</p>
-            </div>
-
-            <div class="note" id="pyr">
-                <div class="note-header">
-                    <span class="note-number">πῦρ</span>
-                    <h4>pyr — foc</h4>
-                </div>
-                <p>Element primordial i principi (arkhé) de totes les coses segons Heràclit. El foc representa el canvi perpetu, la transformació constant, i la mesura del cosmos. No és simplement matèria física sinó símbol del dinamisme universal.</p>
-            </div>
-
-            <div class="note" id="kosmos">
-                <div class="note-header">
-                    <span class="note-number">κόσμος</span>
-                    <h4>kosmos — món ordenat / univers</h4>
-                </div>
-                <p>L'ordre bell i harmoniós del món. Per Heràclit, el kosmos no ha estat creat per cap déu ni home, sinó que existeix eternament com a foc sempre viu que s'encén i s'apaga segons mesures.</p>
-            </div>
-
-            <div class="note" id="polemos">
-                <div class="note-header">
-                    <span class="note-number">πόλεμος</span>
-                    <h4>polemos — guerra / conflicte</h4>
-                </div>
-                <p>El conflicte com a principi creador i governant de totes les coses. "La guerra és pare de tot, rei de tot" (DK 53). No és violència destructiva sinó la tensió dinàmica entre oposats que genera i manté l'ordre còsmic.</p>
-            </div>
-
-            <div class="note" id="harmonia">
-                <div class="note-header">
-                    <span class="note-number">ἁρμονίη</span>
-                    <h4>harmonia — harmonia / ajustament</h4>
-                </div>
-                <p>La tensió que uneix els contraris, com en un arc o una lira. L'harmonia heraclitiana no és absència de conflicte sinó la unitat dinàmica que emergeix de la tensió entre oposats.</p>
-            </div>
-
-            <div class="note" id="psyche">
-                <div class="note-header">
-                    <span class="note-number">ψυχή</span>
-                    <h4>psyche — ànima</h4>
-                </div>
-                <p>El principi vital i racional de l'ésser humà. Per Heràclit, l'ànima seca és la més sàvia i excel·lent (DK 118), mentre que la humitat l'embriaga i debilita.</p>
-            </div>
-
-            <div class="note" id="ethos">
-                <div class="note-header">
-                    <span class="note-number">ἦθος</span>
-                    <h4>ethos — caràcter / manera de ser</h4>
-                </div>
-                <p>El caràcter propi d'una persona. En el cèlebre fragment DK 119, Heràclit afirma que som nosaltres mateixos, no forces exteriors, qui determinem el nostre destí.</p>
-            </div>
-
-            <div class="note" id="daimon">
-                <div class="note-header">
-                    <span class="note-number">δαίμων</span>
-                    <h4>daimon — destí / esperit guardià</h4>
-                </div>
-                <p>Força divina o sobrenatural que guia la vida d'un individu. En Heràclit, el daimon no és extern sinó identificat amb l'ethos: el nostre caràcter és el nostre destí.</p>
-            </div>
+            
         </section>
+        
 
-        <!-- GitHub link -->
-        <footer class="work-footer">
-            <p>
-                <a href="https://github.com/biblioteca-arion/biblioteca-universal-arion/tree/main/obres/filosofia/heraclit/fragments" target="_blank" rel="noopener">
-                    Veure codi font a GitHub
-                </a>
-            </p>
-        </footer>
+        <!-- Glossari -->
+        
+        <section class="glossary-section" id="glossari">
+            <h2>Glossari</h2>
+            <dl class="glossary">
+                
+                <div class="glossary-entry" id="term-logos">
+                    <dt>
+                        <span class="term-greek">λόγος</span>
+                        <span class="term-transliteration">(logos)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> raó / paraula / discurs</p>
+                        <p class="term-definition">Concepte central en Heràclit que designa el principi racional ordenador
+de l&#39;univers. El Logos és la llei còsmica que governa tot canvi i manté
+la unitat subjacent dels contraris. És alhora el discurs veritable que
+expressa aquesta llei i la capacitat racional humana per comprendre-la.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-1">[1]</a>, 
+                            
+                            <a href="#trad-2">[2]</a>, 
+                            
+                            <a href="#trad-50">[50]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-physis">
+                    <dt>
+                        <span class="term-greek">φύσις</span>
+                        <span class="term-transliteration">(physis)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> natura / naturalesa</p>
+                        <p class="term-definition">El procés dinàmic pel qual les coses arriben a ser i es manifesten.
+Per Heràclit, la physis no és estàtica sinó un flux constant regit
+pel Logos. &#34;La natura estima amagar-se&#34; (DK 123) indica el seu
+caràcter profund i no evident.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-123">[123]</a>, 
+                            
+                            <a href="#trad-112">[112]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-pyr">
+                    <dt>
+                        <span class="term-greek">πῦρ</span>
+                        <span class="term-transliteration">(pyr)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> foc</p>
+                        <p class="term-definition">Element primordial i principi (arkhé) de totes les coses segons Heràclit.
+El foc representa el canvi perpetu, la transformació constant, i la
+mesura del cosmos. No és simplement matèria física sinó símbol del
+dinamisme universal i del Logos en acció.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-30">[30]</a>, 
+                            
+                            <a href="#trad-36">[36]</a>, 
+                            
+                            <a href="#trad-90">[90]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-kosmos">
+                    <dt>
+                        <span class="term-greek">κόσμος</span>
+                        <span class="term-transliteration">(kosmos)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> món ordenat / univers</p>
+                        <p class="term-definition">L&#39;ordre bell i harmoniós del món. Per Heràclit, el kosmos no ha estat
+creat per cap déu ni home, sinó que existeix eternament com a foc
+sempre viu que s&#39;encén i s&#39;apaga segons mesures.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-30">[30]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-polemos">
+                    <dt>
+                        <span class="term-greek">πόλεμος</span>
+                        <span class="term-transliteration">(polemos)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> guerra / conflicte</p>
+                        <p class="term-definition">El conflicte com a principi creador i governant de totes les coses.
+&#34;La guerra és pare de tot, rei de tot&#34; (DK 53). No és violència
+destructiva sinó la tensió dinàmica entre oposats que genera i
+manté l&#39;ordre còsmic.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-53">[53]</a>, 
+                            
+                            <a href="#trad-67">[67]</a>, 
+                            
+                            <a href="#trad-80">[80]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-harmonia">
+                    <dt>
+                        <span class="term-greek">ἁρμονίη</span>
+                        <span class="term-transliteration">(harmonia)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> harmonia / ajustament</p>
+                        <p class="term-definition">La tensió que uneix els contraris, com en un arc o una lira.
+L&#39;harmonia heraclitiana no és absència de conflicte sinó la
+unitat dinàmica que emergeix de la tensió entre oposats.
+És &#34;palintropo&#34; (que retorna sobre si mateixa).
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-51">[51]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-psyche">
+                    <dt>
+                        <span class="term-greek">ψυχή</span>
+                        <span class="term-transliteration">(psyche)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> ànima</p>
+                        <p class="term-definition">El principi vital i racional de l&#39;ésser humà. Per Heràclit,
+l&#39;ànima seca és la més sàvia i excel·lent (DK 118), mentre
+que la humitat l&#39;embriaga i debilita. L&#39;ànima participa del
+Logos còsmic i pot comprendre l&#39;ordre universal.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-36">[36]</a>, 
+                            
+                            <a href="#trad-118">[118]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-xynon">
+                    <dt>
+                        <span class="term-greek">ξυνόν</span>
+                        <span class="term-transliteration">(xynon)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> comú / compartit</p>
+                        <p class="term-definition">Allò que és comú a tots, en contraposició a l&#39;opinió privada
+(idia phronesis). El Logos és xynon: una veritat universal
+accessible a qui s&#39;hi obri, però que la majoria ignora
+vivint en el seu propi món particular.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-2">[2]</a>, 
+                            
+                            <a href="#trad-114">[114]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-ethos">
+                    <dt>
+                        <span class="term-greek">ἦθος</span>
+                        <span class="term-transliteration">(ethos)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> caràcter / manera de ser</p>
+                        <p class="term-definition">El caràcter propi d&#39;una persona. En el cèlebre fragment DK 119,
+&#34;ἦθος ἀνθρώπῳ δαίμων&#34; (el caràcter és el destí de l&#39;home),
+Heràclit afirma que som nosaltres mateixos, no forces exteriors,
+qui determinem el nostre destí.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-119">[119]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-daimon">
+                    <dt>
+                        <span class="term-greek">δαίμων</span>
+                        <span class="term-transliteration">(daimon)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> destí / esperit guardià</p>
+                        <p class="term-definition">Força divina o sobrenatural que guia la vida d&#39;un individu.
+En Heràclit, el daimon no és extern sinó identificat amb
+l&#39;ethos: el nostre caràcter és el nostre destí.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-119">[119]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+                <div class="glossary-entry" id="term-metra">
+                    <dt>
+                        <span class="term-greek">μέτρα</span>
+                        <span class="term-transliteration">(metra)</span>
+                    </dt>
+                    <dd>
+                        <p class="term-translation"><strong>Traducció:</strong> mesures</p>
+                        <p class="term-definition">Les proporcions o límits segons els quals el foc còsmic
+s&#39;encén i s&#39;apaga. El canvi no és caòtic sinó regulat
+per mesures precises que mantenen l&#39;equilibri del tot.
+</p>
+                        
+                        <p class="term-usage">
+                            <strong>Aparicions:</strong>
+                            
+                            <a href="#trad-30">[30]</a>
+                            
+                        </p>
+                        
+                    </dd>
+                </div>
+                
+            </dl>
+        </section>
+        
+
+        <!-- Bibliografia -->
+        
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
     </div>
 </article>
+
+<!-- Script per índex i navegació de capítols (paginació) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Elements
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocPanel = document.getElementById('chapter-toc');
+    const tocClose = document.getElementById('toc-close');
+    const tocList = document.getElementById('toc-list');
+    const prevBtn = document.getElementById('prev-chapter');
+    const nextBtn = document.getElementById('next-chapter');
+    const indicator = document.getElementById('chapter-indicator');
+
+    if (!tocToggle || !tocPanel) return;
+
+    // Processar ambdues columnes (original i traducció)
+    const columns = [
+        document.querySelector('.original-column'),
+        document.querySelector('.translation-column')
+    ].filter(c => c);
+
+    if (columns.length === 0) return;
+
+    // Detectar capítols a la columna de traducció (o la primera disponible)
+    const mainColumn = document.querySelector('.translation-column') || columns[0];
+    const h2Elements = mainColumn.querySelectorAll('h2');
+
+    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
+    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+        const text = h2.textContent.trim();
+        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+    });
+
+    if (chapterH2s.length <= 1) {
+        // Poques o cap capítol, amagar navegació
+        const nav = document.getElementById('chapter-nav');
+        if (nav) nav.style.display = 'none';
+        if (tocToggle) tocToggle.style.display = 'none';
+        return;
+    }
+
+    // Crear contenidors per cada capítol a cada columna
+    const chapterContainers = [];
+
+    columns.forEach(column => {
+        const columnH2s = column.querySelectorAll('h2');
+        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
+            const text = h2.textContent.trim();
+            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        });
+
+        if (chapterHeaders.length === 0) return;
+
+        // Agrupar elements per capítol
+        chapterHeaders.forEach((h2, idx) => {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            // Recollir tots els elements fins al proper h2 capítol
+            let node = h2;
+            const nodesToMove = [h2];
+
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                // Parar si trobem el proper capítol h2
+                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            // Inserir contenidor abans del primer node
+            h2.parentNode.insertBefore(container, h2);
+
+            // Moure nodes al contenidor
+            nodesToMove.forEach(n => container.appendChild(n));
+
+            // Guardar referència (només de la columna principal)
+            if (column === mainColumn) {
+                chapterContainers.push({
+                    index: idx,
+                    title: h2.textContent.trim(),
+                    containers: []
+                });
+            }
+        });
+
+        // Guardar referència dels contenidors d'aquesta columna
+        const containers = column.querySelectorAll('.chapter-content');
+        containers.forEach((c, i) => {
+            if (chapterContainers[i]) {
+                chapterContainers[i].containers.push(c);
+            }
+        });
+    });
+
+    if (chapterContainers.length === 0) return;
+
+    // Omplir índex
+    chapterContainers.forEach((ch, i) => {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = '<span class="toc-chapter-num">' + (i + 1) + '.</span> Capítol ' + ch.title;
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            showChapter(i);
+            closeToc();
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    let currentChapter = 0;
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapterContainers.length) return;
+
+        // Amagar tots els capítols
+        document.querySelectorAll('.chapter-content').forEach(c => {
+            c.style.display = 'none';
+        });
+
+        // Mostrar el capítol seleccionat a totes les columnes
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+            c.style.display = 'block';
+        });
+
+        currentChapter = index;
+        updateNavigation();
+
+        // Scroll al principi del contingut
+        const textContainer = document.querySelector('.text-container');
+        if (textContainer) {
+            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+    }
+
+    function updateNavigation() {
+        prevBtn.disabled = currentChapter === 0;
+        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
+
+        // Actualitzar classe activa a l'índex
+        const links = tocList.querySelectorAll('a');
+        links.forEach((a, i) => {
+            a.classList.toggle('active', i === currentChapter);
+        });
+    }
+
+    function openToc() {
+        tocPanel.classList.add('open');
+        tocToggle.setAttribute('aria-expanded', 'true');
+    }
+
+    function closeToc() {
+        tocPanel.classList.remove('open');
+        tocToggle.setAttribute('aria-expanded', 'false');
+    }
+
+    function toggleToc() {
+        tocPanel.classList.contains('open') ? closeToc() : openToc();
+    }
+
+    // Events
+    tocToggle.addEventListener('click', toggleToc);
+    tocClose.addEventListener('click', closeToc);
+
+    prevBtn.addEventListener('click', function() {
+        showChapter(currentChapter - 1);
+    });
+
+    nextBtn.addEventListener('click', function() {
+        showChapter(currentChapter + 1);
+    });
+
+    // Tancar índex quan es clica fora
+    document.addEventListener('click', function(e) {
+        if (tocPanel.classList.contains('open') &&
+            !tocPanel.contains(e.target) &&
+            !tocToggle.contains(e.target)) {
+            closeToc();
+        }
+    });
+
+    // Tecles de navegació
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
+            closeToc();
+        }
+        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
+                showChapter(currentChapter - 1);
+            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
+                showChapter(currentChapter + 1);
+            }
+        }
+    });
+
+    // Funció per trobar en quin capítol està un element
+    function findChapterForElement(element) {
+        if (!element) return -1;
+        const container = element.closest('.chapter-content');
+        if (container && container.dataset.chapter) {
+            return parseInt(container.dataset.chapter, 10);
+        }
+        return -1;
+    }
+
+    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+
+        const targetId = link.getAttribute('href').substring(1);
+        if (!targetId) return;
+
+        const targetElement = document.getElementById(targetId);
+        if (!targetElement) return;
+
+        // Trobar en quin capítol està l'element
+        const chapterIndex = findChapterForElement(targetElement);
+
+        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
+            // Mostrar el capítol correcte primer
+            e.preventDefault();
+            showChapter(chapterIndex);
+
+            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
+            setTimeout(function() {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+        // Si l'element no està dins d'un capítol (glossari, notes al final),
+        // deixar que el navegador gestioni l'enllaç normalment
+    });
+
+    // Inicialitzar
+    updateNavigation();
+});
+</script>
 
     </main>
 
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2026 Biblioteca Arion. Contingut sota llicència <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca" target="_blank">CC BY-SA 4.0</a></p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Biblioteca Arion</h4>
+                    <p>Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegació</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="autors.html">Autors</a></li>
+                        <li><a href="glossari.html">Glossari general</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="metodologia.html">Metodologia</a></li>
+                        <li><a href="collaborar.html">Col·laborar</a></li>
+                        <li><a href="contacte.html">Contacte</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Llicència</h4>
+                    <p><small>Textos originals de domini públic. Traduccions sota llicència oberta CC BY-SA 4.0.</small></p>
+                    <p><small>© 2026 Biblioteca Arion</small></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Fet amb dedicació per a la cultura catalana</p>
+            </div>
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="js/app.js"></script>
+    
 </body>
 </html>

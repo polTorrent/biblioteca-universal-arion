@@ -3,122 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Autors de la Biblioteca Arion - Traduccions de clàssics universals al català">
     <title>Autors | Biblioteca Arion</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        .autors-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 2.5rem;
-            margin-top: 3rem;
-        }
-
-        .autor-card {
-            background: var(--card-bg, #fff);
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .autor-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
-        }
-
-        .autor-retrat {
-            width: 100%;
-            aspect-ratio: 1;
-            object-fit: cover;
-            border-bottom: 3px solid var(--accent, #D4AF37);
-        }
-
-        .autor-info {
-            padding: 1.5rem;
-        }
-
-        .autor-nom {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 1.6rem;
-            font-weight: 600;
-            margin: 0 0 0.25rem 0;
-            color: var(--text-primary, #1a1a1a);
-        }
-
-        .autor-nom-original {
-            font-family: 'Cormorant Garamond', serif;
-            font-style: italic;
-            color: var(--text-secondary, #666);
-            margin: 0 0 0.75rem 0;
-            font-size: 1rem;
-        }
-
-        .autor-epoca {
-            font-size: 0.85rem;
-            color: var(--text-muted, #888);
-            margin-bottom: 0.75rem;
-        }
-
-        .autor-bio {
-            font-size: 0.9rem;
-            color: var(--text-secondary, #555);
-            line-height: 1.6;
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border, #eee);
-        }
-
-        .autor-bio em {
-            color: var(--accent, #D4AF37);
-        }
-
-        .autor-obres {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        .autor-obres li {
-            padding: 0.5rem 0;
-        }
-
-        .autor-obres a {
-            color: var(--accent, #D4AF37);
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.2s;
-        }
-
-        .autor-obres a:hover {
-            color: var(--accent-dark, #B8960F);
-            text-decoration: underline;
-        }
-
-        .page-intro {
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto 2rem;
-            color: var(--text-secondary, #666);
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-
-        [data-theme="dark"] .autor-card {
-            background: #1e1e1e;
-        }
-
-        [data-theme="dark"] .autor-nom {
-            color: #f5f5f5;
-        }
-
-        [data-theme="dark"] .autor-epoca {
-            border-color: #333;
-        }
-    </style>
 </head>
 <body>
     <header class="site-header">
@@ -126,155 +12,89 @@
             <div class="header-inner">
                 <div class="site-logo">
                     <a href="index.html" class="site-title">Biblioteca Arion</a>
-                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
+                    <p class="site-tagline">Traduccions de clàssics universals al català</p>
                 </div>
                 <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Catàleg</a></li>
                         <li><a href="autors.html" class="active">Autors</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-                        <li><button class="theme-toggle" aria-label="Canviar tema">🌙</button></li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
     <main>
         <section class="page-content">
             <div class="container">
-                <h1 class="text-center" style="font-family: 'Cormorant Garamond', serif; font-size: 2.5rem; margin-bottom: 1rem;">Autors</h1>
-                <p class="page-intro">
-                    Grans pensadors i escriptors de la història universal, les obres dels quals hem traduït al català.
-                    Cada retrat captura l'essència de l'autor en estil neo-clàssic digital.
-                </p>
-
-                <div class="autors-grid">
+                <h1 class="text-center">Autors</h1>
+                <div class="autors-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
 
                     <article class="autor-card">
-                        <img src="assets/autors/akutagawa.png" alt="Retrat d'Akutagawa Ryūnosuke" class="autor-retrat">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Akutagawa Ryūnosuke</h2>
-                            <p class="autor-nom-original">芥川龍之介</p>
-                            <p class="autor-epoca">Japó, 1892-1927 · Era Taishō</p>
-                            <p class="autor-bio">Considerat el «pare del conte japonès modern», Akutagawa va escriure més de 150 relats breus abans de suïcidar-se als 35 anys. Les seves obres exploren la psicologia humana, l'obsessió artística i la tensió entre tradició i modernitat. El prestigiós Premi Akutagawa porta el seu nom.</p>
-                            <ul class="autor-obres">
-                                <li><a href="akutagawa-jigokuhen.html">El biombo de l'infern (地獄変)</a></li>
-                            </ul>
-                        </div>
+                        <h2>Akutagawa Ryūnosuke</h2>
+                        <p><em>芥川龍之介</em></p>
+                        <ul>
+                            <li><a href="akutagawa-jigokuhen.html">El biombo de l'infern</a></li>
+                        </ul>
                     </article>
 
                     <article class="autor-card">
-                        <img src="assets/autors/budisme.png" alt="Avalokiteśvara, bodhisattva de la compassió" class="autor-retrat">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Tradició Budista</h2>
-                            <p class="autor-nom-original">बौद्ध धर्म · 佛教</p>
-                            <p class="autor-epoca">Índia antiga, s. I-II EC · Mahāyāna</p>
-                            <p class="autor-bio">El budisme Mahāyāna va florir a l'Índia i es va estendre per tota l'Àsia. Els <em>Sutres de la Perfecció de la Saviesa</em> (Prajñāpāramitā) ensenyen la vacuïtat (śūnyatā) de tots els fenòmens. El <em>Sutra del Cor</em>, recitat diàriament per milions de persones, condensa aquesta saviesa en menys de 300 paraules.</p>
-                            <ul class="autor-obres">
-                                <li><a href="sanscrit-sutra-cor.html">El Sutra del Cor (प्रज्ञापारमिताहृदय)</a></li>
-                            </ul>
-                        </div>
+                        <h2>Anònim (tradició budista)</h2>
+                        
+                        <ul>
+                            <li><a href="sanscrit-sutra-cor.html">El Sutra del Cor de la Perfecció de la Saviesa</a></li>
+                        </ul>
                     </article>
 
                     <article class="autor-card">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Heràclit d'Efes</h2>
-                            <p class="autor-nom-original">Ἡράκλειτος ὁ Ἐφέσιος</p>
-                            <p class="autor-epoca">Grècia clàssica, c. 535-475 aC · Filòsof presocràtic</p>
-                            <p class="autor-bio">Conegut com «l'Obscur» pel seu estil enigmàtic i aforístic. El seu pensament gira al voltant del <em>Logos</em> (raó còsmica), el flux perpetu («tot flueix») i la unitat dels contraris. El foc és el seu principi fonamental. Va influir en Plató, els estoics, Hegel i Nietzsche.</p>
-                            <ul class="autor-obres">
-                                <li><a href="heraclit-fragments.html">Fragments (Περὶ φύσεως)</a></li>
-                            </ul>
-                        </div>
+                        <h2>Arthur Schopenhauer</h2>
+                        <p><em>Arthur Schopenhauer</em></p>
+                        <ul>
+                            <li><a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a></li>
+                        </ul>
                     </article>
 
                     <article class="autor-card">
-                        <img src="assets/autors/epictetus.png" alt="Retrat d'Epictetus" class="autor-retrat">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Epictetus</h2>
-                            <p class="autor-nom-original">Ἐπίκτητος</p>
-                            <p class="autor-epoca">Roma Imperial, s. I-II dC · Filòsof estoic</p>
-                            <p class="autor-bio">Nascut esclau a Hieràpolis, Epictetus va obtenir la llibertat i es va convertir en un dels grans mestres de l'estoïcisme. No va escriure res: les seves ensenyances ens han arribat a través del seu deixeble Arrià. El seu <em>Enchiridion</em> és un manual pràctic de saviesa estoica.</p>
-                            <ul class="autor-obres">
-                                <li><a href="epictetus-enchiridion.html">Enchiridion (Ἐγχειρίδιον)</a></li>
-                            </ul>
-                        </div>
+                        <h2>Epictetus</h2>
+                        <p><em>Ἐπίκτητος</em></p>
+                        <ul>
+                            <li><a href="epictetus-enchiridion.html">Enchiridion</a></li>
+                        </ul>
                     </article>
 
                     <article class="autor-card">
-                        <img src="assets/autors/plato.png" alt="Retrat de Plató" class="autor-retrat">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Plató</h2>
-                            <p class="autor-nom-original">Πλάτων</p>
-                            <p class="autor-epoca">Grècia clàssica, 428-348 aC · Filòsof</p>
-                            <p class="autor-bio">Deixeble de Sòcrates i mestre d'Aristòtil, Plató va fundar l'Acadèmia d'Atenes, la primera institució d'educació superior d'Occident. Els seus diàlegs han definit la filosofia occidental durant més de dos mil·lennis, explorant la justícia, la bellesa, la veritat i l'ànima.</p>
-                            <ul class="autor-obres">
-                                <li><a href="plato-criton.html">Critó: Sobre el deure (Κρίτων)</a></li>
-                            </ul>
-                        </div>
+                        <h2>Heràclit d'Efes</h2>
+                        <p><em>Ἡράκλειτος ὁ Ἐφέσιος</em></p>
+                        <ul>
+                            <li><a href="heraclit-fragments.html">Fragments</a></li>
+                        </ul>
                     </article>
 
                     <article class="autor-card">
-                        <img src="assets/autors/schopenhauer.png" alt="Retrat d'Arthur Schopenhauer" class="autor-retrat">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Arthur Schopenhauer</h2>
-                            <p class="autor-nom-original">Arthur Schopenhauer</p>
-                            <p class="autor-epoca">Alemanya, 1788-1860 · Filòsof</p>
-                            <p class="autor-bio">Filòsof alemany conegut pel seu pessimisme i la seva obra mestra <em>El món com a voluntat i representació</em>. Va ser un dels primers pensadors occidentals a integrar idees del budisme i l'hinduisme. Va influir profundament en Nietzsche, Wagner, Freud i Wittgenstein.</p>
-                            <ul class="autor-obres">
-                                <li><a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a></li>
-                            </ul>
-                        </div>
+                        <h2>Plató</h2>
+                        <p><em>Πλάτων</em></p>
+                        <ul>
+                            <li><a href="plato-criton.html">Critó: Sobre el deure</a></li>
+                        </ul>
                     </article>
 
                     <article class="autor-card">
-                        <img src="assets/autors/seneca.png" alt="Retrat de Sèneca" class="autor-retrat">
-                        <div class="autor-info">
-                            <h2 class="autor-nom">Sèneca</h2>
-                            <p class="autor-nom-original">Lucius Annaeus Seneca</p>
-                            <p class="autor-epoca">Roma Imperial, 4 aC - 65 dC · Filòsof estoic</p>
-                            <p class="autor-bio">Filòsof estoic, dramaturg i tutor de l'emperador Neró. Les seves <em>Epístoles morals a Lucili</em> són una guia pràctica per a la vida virtuosa. Condemnat a mort per Neró, es va suïcidar amb serenitat estoica, esdevenint símbol de coherència entre pensament i acció.</p>
-                            <ul class="autor-obres">
-                                <li><a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a></li>
-                            </ul>
-                        </div>
+                        <h2>Sèneca</h2>
+                        <p><em>Lucius Annaeus Seneca</em></p>
+                        <ul>
+                            <li><a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a></li>
+                        </ul>
                     </article>
 
                 </div>
             </div>
         </section>
     </main>
-
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <p class="text-center">&copy; 2026 Biblioteca Arion · Traduccions obertes de clàssics universals</p>
-            </div>
+            <p class="text-center">Biblioteca Arion - Traduccions obertes de clàssics universals</p>
         </div>
     </footer>
-
-    <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-        function setTheme(dark) {
-            document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-            themeToggle.textContent = dark ? '☀️' : '🌙';
-            localStorage.setItem('theme', dark ? 'dark' : 'light');
-        }
-
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme === 'dark');
-        } else {
-            setTheme(prefersDark.matches);
-        }
-
-        themeToggle.addEventListener('click', () => {
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            setTheme(!isDark);
-        });
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>

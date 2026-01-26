@@ -231,8 +231,8 @@ class WebPublisher(BaseAgent):
             for i, terme in enumerate(termes):
                 if isinstance(terme, dict):
                     glossari.append({
-                        "id": i + 1,
-                        "grec": terme.get("original", terme.get("grec", "")),
+                        "id": terme.get("id", str(i + 1)),
+                        "grec": terme.get("original", terme.get("grec", terme.get("sanscrit", ""))),
                         "transliteracio": terme.get("transliteracio", ""),
                         "traduccio": terme.get("traduccio", terme.get("catala", "")),
                         "definicio": terme.get("definicio", terme.get("nota", "")),
@@ -404,7 +404,7 @@ class WebPublisher(BaseAgent):
             return None
 
     def _descobrir_obres(self) -> list[Path]:
-        """Descobreix totes les obres disponibles."""
+        """Descobreix totes les obres disponibles a qualsevol nivell."""
         obres_dir = self.publisher_config.obres_dir
         obres = []
 
@@ -412,17 +412,12 @@ class WebPublisher(BaseAgent):
             self.log_warning(f"Directori d'obres no trobat: {obres_dir}")
             return obres
 
-        for autor_dir in obres_dir.iterdir():
-            if not autor_dir.is_dir() or autor_dir.name.startswith("."):
-                continue
-
-            for obra_dir in autor_dir.iterdir():
-                if not obra_dir.is_dir() or obra_dir.name.startswith("."):
-                    continue
-
-                # Verificar que té metadata.yml
-                if (obra_dir / "metadata.yml").exists():
-                    obres.append(obra_dir)
+        # Buscar recursivament tots els directoris amb metadata.yml
+        for metadata_file in obres_dir.rglob("metadata.yml"):
+            obra_dir = metadata_file.parent
+            # Excloure directoris ocults
+            if not any(part.startswith(".") for part in obra_dir.parts):
+                obres.append(obra_dir)
 
         return sorted(obres)
 
