@@ -1,0 +1,71 @@
+obra:
+  titol: "El Sutra del Cor de la Perfecció de la Saviesa"
+  titol_original: "प्रज्ञापारमिताहृदयसूत्र"
+  titol_romanitzat: "Prajñāpāramitā Hṛdaya Sūtra"
+  autor: "Anònim (tradició budista)"
+  traductor: "Biblioteca Universal Arion (IA + revisió humana)"
+  any_original: "c. segle I-II EC"
+  llengua_original: "sànscrit"
+  genere: "filosòfic-espiritual"
+  descripcio: >
+    El text més breu i recitat del budisme Mahāyāna. En menys de tres-centes
+    paraules condensa l'essència dels Sutres de la Perfecció de la Saviesa:
+    la comprensió de la vacuïtat (śūnyatā) com a naturalesa última de tots
+    els fenòmens, incloent-hi les pròpies categories budistes. El bodhisattva
+    Avalokiteśvara exposa a Śāriputra que forma i vacuïtat són inseparables,
+    transcendint dualitats i dissolent tot apego, fins i tot a l'ensenyament
+    mateix. Culmina amb el mantra «Gate gate pāragate pārasaṃgate bodhi svāhā».
+  temes:
+    - vacuïtat (śūnyatā)
+    - no-dualitat
+    - filosofia budista Mahāyāna
+    - prajñāpāramitā
+    - transcendència
+    - naturalesa de la realitat
+
+tradicio_textual:
+  versions_principals:
+    - llengua: "sànscrit"
+      tipus: "versió curta (hṛdaya)"
+      nota: "Versió més antiga conservada, base d'aquesta traducció"
+    - llengua: "xinès"
+      traductor: "Kumārajīva"
+      any: "402 EC"
+      nota: "Primera traducció xinesa coneguda"
+    - llengua: "xinès"
+      traductor: "Xuánzàng"
+      any: "649 EC"
+      nota: "Versió més influent a l'Àsia Oriental"
+    - llengua: "tibetà"
+      nota: "Versió canònica del budisme tibetà"
+  edicio_base: "Edward Conze (1948), edició crítica del sànscrit"
+
+seccions: 1
+
+estadistiques:
+  paraules_original: 260
+  paraules_traduccio: 420
+  notes: 2
+  termes_glossari: 14
+
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-01-26"
+  notes_revisio: >
+    Traducció directa del sànscrit amb atenció especial a la precisió
+    terminològica filosòfica. S'han mantingut alguns termes en sànscrit
+    quan no tenen equivalent exacte en català (mantra, nirvāṇa).
+    El mantra final s'ofereix en sànscrit original amb traducció explicativa.
+
+llicencia:
+  tipus: "CC BY-SA 4.0"
+  nota: "Text original de domini públic"
+
+context_historic: >
+  El Sutra del Cor forma part de la literatura Prajñāpāramitā, que va florir
+  a l'Índia entre els segles I i VI EC. Tot i la seva brevetat, és considerat
+  una síntesi perfecta dels ensenyaments sobre la vacuïtat. La seva popularitat
+  s'estén per tot l'arc budista: es recita diàriament a monestirs zen del
+  Japó, temples Chan de la Xina, i centres vajrayāna del Tibet i Mongòlia.
+  El mantra final és un dels més coneguts del budisme.

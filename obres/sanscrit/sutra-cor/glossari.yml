@@ -1,0 +1,170 @@
+# Glossari del Sutra del Cor (Prajñāpāramitā Hṛdaya)
+# Termes sànscrits fonamentals del budisme Mahāyāna
+
+termes:
+  - id: "prajnaparamita"
+    sanscrit: "प्रज्ञापारमिता"
+    transliteracio: "prajñāpāramitā"
+    traduccio: "perfecció de la saviesa"
+    definicio: >
+      Compost de prajñā (saviesa transcendent) i pāramitā (perfecció, arribar
+      a l'altra riba). Representa la comprensió directa de la naturalesa última
+      de la realitat, més enllà del pensament conceptual. És la sisena i suprema
+      de les sis perfeccions (pāramitās) del camí del bodhisattva.
+    usos: [1, 2, 3]
+
+  - id: "sunyata"
+    sanscrit: "शून्यता"
+    transliteracio: "śūnyatā"
+    traduccio: "vacuïtat"
+    definicio: >
+      Concepte central del budisme Mahāyāna. No significa 'res' o 'no-existència',
+      sinó l'absència de naturalesa pròpia independent (svabhāva) en tots els
+      fenòmens. Tots els fenòmens existeixen de manera interdependent i relacional,
+      sense essència fixa. La vacuïtat és la naturalesa última de la realitat.
+    usos: [1, 2]
+
+  - id: "avalokitesvara"
+    sanscrit: "अवलोकितेश्वर"
+    transliteracio: "Avalokiteśvara"
+    traduccio: "El Senyor que observa [els mons]"
+    definicio: >
+      Bodhisattva de la compassió, una de les figures més venerades del budisme
+      Mahāyāna. El seu nom significa 'el que contempla els sons del món' o
+      'el senyor que mira avall [amb compassió]'. Conegut com Guānyīn en xinès
+      i Kannon en japonès. És qui exposa l'ensenyament en aquest sutra.
+    usos: [1]
+
+  - id: "bodhisattva"
+    sanscrit: "बोधिसत्त्व"
+    transliteracio: "bodhisattva"
+    traduccio: "ésser de despertar"
+    definicio: >
+      Literalment 'ésser (sattva) de il·luminació (bodhi)'. En el Mahāyāna,
+      és aquell que, mogut per la compassió, aspira a assolir la il·luminació
+      completa (samyak-saṃbodhi) per al bé de tots els éssers sensibles,
+      renunciant a entrar definitivament al nirvāṇa fins que tots siguin alliberats.
+    usos: [1, 2]
+
+  - id: "skandha"
+    sanscrit: "स्कन्ध"
+    transliteracio: "skandha"
+    traduccio: "agregat"
+    definicio: >
+      Els cinc agregats o components que constitueixen l'experiència humana:
+      1) rūpa (forma/cos), 2) vedanā (sensació), 3) saṃjñā (percepció),
+      4) saṃskāra (formacions mentals), 5) vijñāna (consciència).
+      El Buda va ensenyar que no hi ha un 'jo' permanent més enllà d'aquests
+      agregats, que són transitoris i interdependents.
+    usos: [1]
+
+  - id: "sariputra"
+    sanscrit: "शारिपुत्र"
+    transliteracio: "Śāriputra"
+    traduccio: "Fill de Śārī"
+    definicio: >
+      Un dels principals deixebles del Buda Śākyamuni, considerat el més
+      eminent en saviesa (prajñā). El seu nom significa 'fill de Śārī'
+      (el nom de la seva mare). En aquest sutra, és l'interlocutor a qui
+      Avalokiteśvara adreça l'ensenyament sobre la vacuïtat.
+    usos: [1, 2, 3]
+
+  - id: "dharma"
+    sanscrit: "धर्म"
+    transliteracio: "dharma"
+    traduccio: "fenomen, llei, ensenyament"
+    definicio: >
+      Terme polisèmic central. Pot significar: 1) l'ensenyament del Buda,
+      2) la llei còsmica o ordre natural, 3) qualsevol fenomen o element
+      de l'existència. En el context d'aquest sutra, sovint es refereix
+      als fenòmens en general (sarva-dharmāḥ = tots els fenòmens).
+    usos: [1, 2]
+
+  - id: "nirvana"
+    sanscrit: "निर्वाण"
+    transliteracio: "nirvāṇa"
+    traduccio: "cessació, alliberament"
+    definicio: >
+      Literalment 'extinció' o 'bufar [la flama del desig]'. L'estat
+      d'alliberament del cicle de renaixements (saṃsāra) i del sofriment.
+      En el Mahāyāna, el nirvāṇa últim no és diferent del saṃsāra quan
+      es comprèn la vacuïtat: ambdós són manifestacions de la mateixa realitat.
+    usos: [2]
+
+  - id: "mantra"
+    sanscrit: "मन्त्र"
+    transliteracio: "mantra"
+    traduccio: "fórmula sagrada"
+    definicio: >
+      Fórmula sonora de poder espiritual. De la rel 'man-' (pensar) i
+      el sufix '-tra' (instrument). El mantra final del sutra (gate gate...)
+      és considerat l'essència concentrada de tot l'ensenyament de la
+      Perfecció de la Saviesa.
+    usos: [3]
+
+  - id: "bodhi"
+    sanscrit: "बोधि"
+    transliteracio: "bodhi"
+    traduccio: "despertar, il·luminació"
+    definicio: >
+      L'estat de despertar espiritual complet, la comprensió directa de la
+      naturalesa de la realitat. Etimològicament relacionat amb 'budh'
+      (despertar, conèixer). 'Buddha' significa 'el despert', aquell que
+      ha realitzat el bodhi.
+    usos: [3]
+
+  - id: "gate"
+    sanscrit: "गते"
+    transliteracio: "gate"
+    traduccio: "anat/anada"
+    definicio: >
+      Participi passat femení de la rel 'gam' (anar). En el mantra final,
+      representa el viatge espiritual cap a l'altra riba (l'alliberament).
+      La repetició 'gate gate' indica el moviment continu i decidit
+      cap a la transcendència.
+    usos: [3]
+
+  - id: "paragate"
+    sanscrit: "पारगते"
+    transliteracio: "pāragate"
+    traduccio: "anada a l'altra riba"
+    definicio: >
+      Compost de pāra (l'altra riba, la transcendència) i gate (anada).
+      Simbolitza haver creuat l'oceà del saṃsāra i arribat a la riba
+      de l'alliberament. És una imatge clàssica del budisme: el dharma
+      com una barca que porta de la riba del sofriment a la de la llibertat.
+    usos: [3]
+
+  - id: "svaha"
+    sanscrit: "स्वाहा"
+    transliteracio: "svāhā"
+    traduccio: "així sigui, que així es compleixi"
+    definicio: >
+      Exclamació ritual d'origen vèdic, utilitzada per tancar mantres i
+      invocacions. Originalment s'usava en ofrenes al foc sacrificial.
+      En el context budista, sella i activa el poder del mantra.
+      Comparable a 'amén' en les tradicions abrahamiques.
+    usos: [3]
+
+  - id: "samyak-sambodhi"
+    sanscrit: "सम्यक्संबोधि"
+    transliteracio: "samyak-saṃbodhi"
+    traduccio: "il·luminació perfecta i completa"
+    definicio: >
+      L'estat d'il·luminació suprema assolit pels Budes. Samyak significa
+      'complet, perfecte, correcte'; saṃbodhi és el despertar ple.
+      És l'objectiu últim del camí del bodhisattva, diferent de
+      l'il·luminació parcial dels arhats.
+    usos: [2]
+
+  - id: "avidya"
+    sanscrit: "अविद्या"
+    transliteracio: "avidyā"
+    traduccio: "ignorància"
+    definicio: >
+      La ignorància fonamental sobre la naturalesa de la realitat.
+      És el primer nus de la cadena de l'origen condicionat
+      (pratītyasamutpāda) i l'arrel de tot sofriment. No és simplement
+      falta de coneixement, sinó una percepció errònia activa que
+      pren el transitori per permanent i el 'no-jo' per 'jo'.
+    usos: [2]
