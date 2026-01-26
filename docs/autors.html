@@ -33,11 +33,13 @@
     <style>
         .autors-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            grid-template-columns: 1fr;
             gap: var(--spacing-xl);
         }
 
         .autor-card {
+            display: flex;
+            gap: var(--spacing-xl);
             background-color: var(--color-bg-primary);
             border: 1px solid var(--color-border-light);
             border-radius: var(--radius-lg);
@@ -50,9 +52,26 @@
             box-shadow: var(--shadow-md);
         }
 
-        .autor-card h2 {
+        .autor-retrat {
+            flex-shrink: 0;
+        }
+
+        .autor-retrat img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--color-border-light);
+            box-shadow: var(--shadow-md);
+        }
+
+        .autor-info {
+            flex: 1;
+        }
+
+        .autor-info h2 {
             font-family: var(--font-titles);
-            font-size: var(--font-size-xl);
+            font-size: var(--font-size-2xl);
             font-weight: 600;
             margin-bottom: var(--spacing-xs);
             margin-top: 0;
@@ -60,25 +79,57 @@
             border-bottom: none;
         }
 
-        .autor-card > p {
+        .autor-nom-original {
             font-size: var(--font-size-sm);
             color: var(--color-text-muted);
-            margin-bottom: var(--spacing-md);
+            margin-bottom: var(--spacing-sm);
             font-style: italic;
         }
 
-        .autor-card ul {
+        .autor-bio {
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            line-height: var(--line-height-base);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .autor-obres {
             list-style: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
         }
 
-        .autor-card li {
-            padding: var(--spacing-xs) 0;
+        .autor-obres li {
+            padding: 0;
         }
 
-        .autor-card a {
+        .autor-obres a {
+            display: inline-block;
             font-size: var(--font-size-sm);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            background-color: var(--color-bg-secondary);
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+        }
+
+        .autor-obres a:hover {
+            background-color: var(--color-accent);
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .autor-card {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .autor-obres {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -112,63 +163,106 @@
             <div class="container">
                 <header class="page-header text-center">
                     <h1>Autors</h1>
+                    <p style="color: var(--color-text-muted); margin-top: var(--spacing-sm);">7 autors traduïts</p>
                 </header>
 
                 <div class="autors-grid">
 
                     <article class="autor-card">
-                        <h2>Akutagawa Ryūnosuke</h2>
-                        <p>芥川龍之介</p>
-                        <ul>
-                            <li><a href="akutagawa-jigokuhen.html">El biombo de l'infern</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/akutagawa.png" alt="Retrat d'Akutagawa Ryūnosuke">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Akutagawa Ryūnosuke</h2>
+                            <p class="autor-nom-original">芥川龍之介</p>
+                            <p class="autor-bio">Escriptor japonès (1892-1927), mestre del conte curt i figura cabdal de la literatura Taishō. Conegut per la seva prosa elegant i els seus relats psicològics, va influir profundament en la literatura japonesa moderna. El premi Akutagawa, el més prestigiós del Japó, porta el seu nom.</p>
+                            <ul class="autor-obres">
+                                <li><a href="akutagawa-jigokuhen.html">El biombo de l'infern</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article class="autor-card">
-                        <h2>Anònim (tradició budista)</h2>
-                        <ul>
-                            <li><a href="sanscrit-sutra-cor.html">El Sutra del Cor de la Perfecció de la Saviesa</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/budisme.png" alt="Símbol del budisme">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Anònim (tradició budista)</h2>
+                            <p class="autor-bio">Els textos de la tradició Prajñāpāramitā van ser compilats entre els segles I aC i VI dC per mestres anònims de diverses escoles budistes. Representen l'essència del budisme Mahāyāna i la doctrina de la vacuïtat (śūnyatā).</p>
+                            <ul class="autor-obres">
+                                <li><a href="sanscrit-sutra-cor.html">El Sutra del Cor de la Perfecció de la Saviesa</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article class="autor-card">
-                        <h2>Arthur Schopenhauer</h2>
-                        <p>Arthur Schopenhauer</p>
-                        <ul>
-                            <li><a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/schopenhauer.png" alt="Retrat d'Arthur Schopenhauer">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Arthur Schopenhauer</h2>
+                            <p class="autor-nom-original">Arthur Schopenhauer</p>
+                            <p class="autor-bio">Filòsof alemany (1788-1860), autor de 'El món com a voluntat i representació'. El seu pessimisme metafísic i la seva filosofia de la voluntat van influir en Nietzsche, Wagner, Freud i Wittgenstein. Fou un dels primers pensadors occidentals a integrar idees del budisme.</p>
+                            <ul class="autor-obres">
+                                <li><a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article class="autor-card">
-                        <h2>Epictetus</h2>
-                        <p>Ἐπίκτητος</p>
-                        <ul>
-                            <li><a href="epictetus-enchiridion.html">Enchiridion</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/epictetus.png" alt="Retrat d'Epictetus">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Epictetus</h2>
+                            <p class="autor-nom-original">Ἐπίκτητος</p>
+                            <p class="autor-bio">Filòsof estoic grec (c. 50-135 dC), nascut esclau a Hieràpolis. Després de ser alliberat, va ensenyar filosofia a Roma i Nicòpolis. Les seves ensenyances, recollides pel seu deixeble Arrià, han inspirat pensadors des de Marc Aureli fins al estoïcisme modern.</p>
+                            <ul class="autor-obres">
+                                <li><a href="epictetus-enchiridion.html">Enchiridion</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article class="autor-card">
-                        <h2>Heràclit d'Efes</h2>
-                        <p>Ἡράκλειτος ὁ Ἐφέσιος</p>
-                        <ul>
-                            <li><a href="heraclit-fragments.html">Fragments</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/heraclit.png" alt="Retrat d'Heràclit d'Efes">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Heràclit d'Efes</h2>
+                            <p class="autor-nom-original">Ἡράκλειτος ὁ Ἐφέσιος</p>
+                            <p class="autor-bio">Filòsof presocràtic grec (c. 535-475 aC), conegut com 'l'Obscur' pel seu estil enigmàtic. La seva doctrina del flux perpetu ('tot flueix'), la unitat dels contraris i el Logos com a principi còsmic el converteixen en un dels pensadors més influents de l'antiguitat.</p>
+                            <ul class="autor-obres">
+                                <li><a href="heraclit-fragments.html">Fragments</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article class="autor-card">
-                        <h2>Plató</h2>
-                        <p>Πλάτων</p>
-                        <ul>
-                            <li><a href="plato-criton.html">Critó: Sobre el deure</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/plato.png" alt="Retrat de Plató">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Plató</h2>
+                            <p class="autor-nom-original">Πλάτων</p>
+                            <p class="autor-bio">Filòsof atenenc (c. 428-348 aC), deixeble de Sòcrates i mestre d'Aristòtil. Fundador de l'Acadèmia, la primera institució d'educació superior d'Occident. Els seus diàlegs han definit la filosofia occidental durant més de dos mil·lennis.</p>
+                            <ul class="autor-obres">
+                                <li><a href="plato-criton.html">Critó: Sobre el deure</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                     <article class="autor-card">
-                        <h2>Sèneca</h2>
-                        <p>Lucius Annaeus Seneca</p>
-                        <ul>
-                            <li><a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a></li>
-                        </ul>
+                        <div class="autor-retrat">
+                            <img src="assets/autors/seneca.png" alt="Retrat de Sèneca">
+                        </div>
+                        <div class="autor-info">
+                            <h2>Sèneca</h2>
+                            <p class="autor-nom-original">Lucius Annaeus Seneca</p>
+                            <p class="autor-bio">Filòsof estoic, dramaturg i home d'estat romà (c. 4 aC-65 dC). Tutor i conseller de Neró, les seves cartes i tractats morals són obres mestres de la prosa llatina i guies pràctiques per a la vida virtuosa que continuen inspirant lectors avui.</p>
+                            <ul class="autor-obres">
+                                <li><a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a></li>
+                            </ul>
+                        </div>
                     </article>
 
                 </div>
@@ -227,7 +321,6 @@
             localStorage.setItem('theme', dark ? 'dark' : 'light');
         }
 
-        // Initialize
         const savedTheme = localStorage.getItem('theme');
         if (savedTheme) {
             setTheme(savedTheme === 'dark');
