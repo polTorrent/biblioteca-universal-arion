@@ -63,7 +63,7 @@ class ChunkingRequest(BaseModel):
     min_tokens: int = Field(default=500, ge=100, le=2000)
     overlap_tokens: int = Field(default=100, ge=0, le=500)
     preserve_structure: bool = True
-    source_language: Literal["llatí", "grec"] = "grec"
+    source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"] = "grec"
 
 
 class ChunkingResult(BaseModel):
