@@ -115,7 +115,7 @@ Respon en JSON amb aquesta estructura:
         self.registre = request.registre
 
         prompt_parts = [
-            f"Poleix l'estil del següent text traduït d'un clàssic grecollatí.",
+            f"Poleix l'estil del següent text traduït d'un clàssic universal.",
             f"Registre desitjat: {request.registre}",
         ]
 

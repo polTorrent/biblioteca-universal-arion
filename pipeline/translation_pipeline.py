@@ -1,11 +1,46 @@
 """Pipeline editorial per orquestrar la traducció i revisió de textos clàssics."""
 
 import json
+import re
 import time
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
 from typing import Callable, Literal
+
+
+def parse_json_response(content: str) -> dict | None:
+    """Parseja una resposta JSON que pot estar dins de blocs de codi markdown.
+
+    Args:
+        content: Contingut de la resposta de l'agent.
+
+    Returns:
+        Diccionari amb les dades parseades o None si falla.
+    """
+    # Primer intent: parsing directe
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        pass
+
+    # Segon intent: extreure JSON de blocs de codi markdown
+    json_match = re.search(r'```(?:json)?\s*([\s\S]*?)```', content)
+    if json_match:
+        try:
+            return json.loads(json_match.group(1).strip())
+        except json.JSONDecodeError:
+            pass
+
+    # Tercer intent: buscar objecte JSON directament
+    json_match = re.search(r'\{[\s\S]*\}', content)
+    if json_match:
+        try:
+            return json.loads(json_match.group())
+        except json.JSONDecodeError:
+            pass
+
+    return None
 
 from pydantic import BaseModel, Field
 from rich.console import Console
@@ -33,10 +68,13 @@ from agents import (
     TextChunk,
     TranslationRequest,
     TranslatorAgent,
+    SupportedLanguage,
     CorrectorAgent,
     CorrectionRequest,
     GlossaristaAgent,
     GlossaryRequest,
+    EstilAgent,
+    StyleRequest,
 )
 from utils.logger import AgentLogger, VerbosityLevel, get_logger
 from utils.dashboard import Dashboard, ProgressTracker, print_agent_activity
@@ -53,6 +91,7 @@ class PipelineStage(str, Enum):
     REVIEWING = "revisant"
     REFINING = "refinant"
     CORRECTING = "corregint"
+    STYLING = "estilitzant"
     MERGING = "fusionant"
     COMPLETED = "completat"
     FAILED = "fallat"
@@ -88,6 +127,8 @@ class PipelineConfig(BaseModel):
     enable_glossary: bool = Field(default=True)
     enable_correction: bool = Field(default=True)
     correction_level: str = Field(default="normal")  # relaxat, normal, estricte
+    enable_styling: bool = Field(default=True)
+    style_register: str = Field(default="literari")  # acadèmic, divulgatiu, literari
 
     # Configuració del translation logger
     use_translation_logger: bool = Field(default=True)
@@ -138,7 +179,7 @@ class PipelineResult(BaseModel):
     """Resultat final del pipeline."""
 
     original_text: str
-    source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"]
+    source_language: SupportedLanguage
     final_translation: str
     quality_score: float | None = None
     revision_rounds: int = 0
@@ -202,6 +243,7 @@ class TranslationPipeline:
         self.translator = TranslatorAgent(config=self.config.agent_config, logger=self.logger)
         self.reviewer = ReviewerAgent(config=self.config.agent_config, logger=self.logger)
         self.corrector = CorrectorAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_correction else None
+        self.estil_agent = EstilAgent(config=self.config.agent_config, registre=self.config.style_register) if self.config.enable_styling else None
 
         self.config.output_dir.mkdir(parents=True, exist_ok=True)
         if self.config.enable_cache:
@@ -263,7 +305,7 @@ class TranslationPipeline:
     def run(
         self,
         text: str,
-        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"] = "llatí",
+        source_language: SupportedLanguage = "llatí",
         author: str | None = None,
         work_title: str | None = None,
         resume_from: PipelineState | None = None,
@@ -345,7 +387,7 @@ class TranslationPipeline:
     def _run_single(
         self,
         text: str,
-        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
+        source_language: SupportedLanguage,
         author: str | None,
         work_title: str | None,
     ) -> PipelineResult:
@@ -435,9 +477,8 @@ class TranslationPipeline:
                     self._update_stats(tokens, correction_response.cost_eur)
 
                     # Parsejar resposta JSON
-                    try:
-                        import json
-                        correction_data = json.loads(correction_response.content)
+                    correction_data = parse_json_response(correction_response.content)
+                    if correction_data:
                         corrected_text = correction_data.get("text_corregit")
                         corrections_list = correction_data.get("correccions", [])
 
@@ -460,12 +501,63 @@ class TranslationPipeline:
                                     "Corrector",
                                     f"Aplicades {len(corrections_list)} correccions"
                                 )
-
-                    except json.JSONDecodeError:
+                    else:
                         self.logger.log_warning("Corrector", "No s'ha pogut parsejar la resposta de correcció")
 
                 except Exception as e:
                     self.logger.log_error("Corrector", e)
+
+                progress.remove_task(task)
+
+            # Etapa 4: Estilització (si està habilitada)
+            if self.config.enable_styling and self.estil_agent and current_translation:
+                task = progress.add_task("[blue]Polint estil literari...", total=None)
+
+                try:
+                    style_request = StyleRequest(
+                        text=current_translation,
+                        registre=self.config.style_register,
+                        preservar_veu=True,
+                        autor_original=author,
+                    )
+                    style_response = self.estil_agent.polish(style_request)
+
+                    # Actualitzar estadístiques
+                    tokens = style_response.usage.get("input_tokens", 0) + style_response.usage.get("output_tokens", 0)
+                    self._update_stats(tokens, style_response.cost_eur)
+
+                    # Parsejar resposta JSON
+                    style_data = parse_json_response(style_response.content)
+                    if style_data:
+                        styled_text = style_data.get("text_polit")
+                        style_notes = style_data.get("notes_edicio", [])
+                        improvements = style_data.get("millores_aplicades", {})
+
+                        if styled_text:
+                            current_translation = styled_text
+
+                            result.stages.append(
+                                StageResult(
+                                    stage=PipelineStage.STYLING,
+                                    content=styled_text,
+                                    metadata={
+                                        "improvements": improvements,
+                                        "notes_count": len(style_notes),
+                                    },
+                                )
+                            )
+
+                            total_improvements = sum(improvements.values()) if isinstance(improvements, dict) else 0
+                            if total_improvements > 0:
+                                self.logger.log_info(
+                                    "Estil",
+                                    f"Aplicades {total_improvements} millores d'estil"
+                                )
+                    else:
+                        self.logger.log_warning("Estil", "No s'ha pogut parsejar la resposta d'estil")
+
+                except Exception as e:
+                    self.logger.log_error("Estil", e)
 
                 progress.remove_task(task)
 
@@ -486,7 +578,7 @@ class TranslationPipeline:
     def _run_chunked(
         self,
         text: str,
-        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
+        source_language: SupportedLanguage,
         author: str | None,
         work_title: str | None,
         resume_from: PipelineState | None = None,
@@ -554,42 +646,40 @@ class TranslationPipeline:
                 glossary_response = self.glossarist.create_glossary(glossary_request)
 
                 # Intentar parsejar el glossari
-                import json
-                try:
-                    glossary_data = json.loads(glossary_response.content)
-                    if "glossari" in glossary_data:
-                        for entry in glossary_data["glossari"]:
-                            term_key = entry.get("terme_original", "")
-                            if term_key:
-                                initial_glossary[term_key] = GlossaryEntry(
-                                    term_original=term_key,
-                                    term_translated=entry.get("traduccio_catalana", ""),
-                                    context=entry.get("context_us", ""),
-                                    first_occurrence_chunk=1,
-                                    frequency=1,
-                                )
-
-                        self.logger.log_info(
-                            "Glossarista",
-                            f"Glossari creat amb {len(initial_glossary)} termes"
-                        )
-
-                        # Log al translation logger
-                        if self._translation_logger:
-                            self._translation_logger.log_glossary(len(initial_glossary))
-
-                        # Actualitzar estadístiques
-                        tokens = glossary_response.usage.get("input_tokens", 0) + glossary_response.usage.get("output_tokens", 0)
-                        self._update_stats(tokens, glossary_response.cost_eur)
-
-                        result.stages.append(
-                            StageResult(
-                                stage=PipelineStage.GLOSSARY,
-                                content=f"Glossari generat amb {len(initial_glossary)} termes",
-                                metadata={"terms_count": len(initial_glossary)},
+                glossary_data = parse_json_response(glossary_response.content)
+                if glossary_data and "glossari" in glossary_data:
+                    for entry in glossary_data["glossari"]:
+                        term_key = entry.get("terme_original", "")
+                        if term_key:
+                            initial_glossary[term_key] = GlossaryEntry(
+                                term_original=term_key,
+                                term_translated=entry.get("traduccio_catalana", ""),
+                                context=entry.get("context_us", ""),
+                                first_occurrence_chunk=1,
+                                frequency=1,
                             )
+
+                    self.logger.log_info(
+                        "Glossarista",
+                        f"Glossari creat amb {len(initial_glossary)} termes"
+                    )
+
+                    # Log al translation logger
+                    if self._translation_logger:
+                        self._translation_logger.log_glossary(len(initial_glossary))
+
+                    # Actualitzar estadístiques
+                    tokens = glossary_response.usage.get("input_tokens", 0) + glossary_response.usage.get("output_tokens", 0)
+                    self._update_stats(tokens, glossary_response.cost_eur)
+
+                    result.stages.append(
+                        StageResult(
+                            stage=PipelineStage.GLOSSARY,
+                            content=f"Glossari generat amb {len(initial_glossary)} termes",
+                            metadata={"terms_count": len(initial_glossary)},
                         )
-                except json.JSONDecodeError:
+                    )
+                elif glossary_data is None:
                     self.logger.log_warning("Glossarista", "No s'ha pogut parsejar el glossari")
             except Exception as e:
                 self.logger.log_error("Glossarista", e)
@@ -800,7 +890,7 @@ class TranslationPipeline:
     def _process_chunk(
         self,
         chunk: TextChunk,
-        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
+        source_language: SupportedLanguage,
         author: str | None,
         work_title: str | None,
         context: AccumulatedContext,
@@ -888,8 +978,8 @@ class TranslationPipeline:
                 self._update_stats(tokens, review_response.cost_eur)
 
                 # Parsejar resposta JSON
-                try:
-                    review_data = json.loads(review_response.content)
+                review_data = parse_json_response(review_response.content)
+                if review_data:
                     score = review_data.get("puntuació_global", 0)
                     chunk_result.quality_score = score
                     issues = review_data.get("problemes", [])
@@ -912,8 +1002,7 @@ class TranslationPipeline:
                     revised_text = review_data.get("text_revisat")
                     if revised_text and revised_text != current_translation:
                         current_translation = revised_text
-
-                except json.JSONDecodeError:
+                else:
                     chunk_result.metadata["review_parse_error"] = True
                     self.logger.log_warning("Revisor", "No s'ha pogut parsejar la resposta JSON")
                     break
@@ -944,8 +1033,8 @@ class TranslationPipeline:
                 self._update_stats(tokens, correction_response.cost_eur)
 
                 # Parsejar resposta JSON
-                try:
-                    correction_data = json.loads(correction_response.content)
+                correction_data = parse_json_response(correction_response.content)
+                if correction_data:
                     corrected_text = correction_data.get("text_corregit")
                     corrections_list = correction_data.get("correccions", [])
 
@@ -965,8 +1054,7 @@ class TranslationPipeline:
                                     chunk_num=chunk.chunk_id,
                                     corrections=len(corrections_list)
                                 )
-
-                except json.JSONDecodeError:
+                else:
                     chunk_result.metadata["correction_parse_error"] = True
                     self.logger.log_warning("Corrector", "No s'ha pogut parsejar la resposta de correcció")
 
@@ -975,6 +1063,74 @@ class TranslationPipeline:
                 self.logger.log_error("Corrector", e)
                 if self._dashboard:
                     self._dashboard.add_error(f"Correcció chunk {chunk.chunk_id}: {str(e)}")
+
+        # Estilització si està habilitada
+        if self.config.enable_styling and self.estil_agent and current_translation:
+            try:
+                if self._dashboard:
+                    self._dashboard.set_active_agent("Estil", "Polint estil literari")
+
+                # Construir context per l'agent d'estil
+                estil_context = None
+                if context.glossary or context.speakers_encountered or context.current_section:
+                    context_parts = []
+                    if context.current_section:
+                        context_parts.append(f"Secció: {context.current_section}")
+                    if context.speakers_encountered:
+                        context_parts.append(f"Parlants: {', '.join(context.speakers_encountered[:5])}")
+                    if context.previous_summaries:
+                        context_parts.append(f"Context anterior: {context.previous_summaries[-1][:100]}...")
+                    estil_context = " | ".join(context_parts)
+
+                style_request = StyleRequest(
+                    text=current_translation,
+                    registre=self.config.style_register,
+                    preservar_veu=True,
+                    autor_original=author,
+                    context=estil_context,
+                )
+                style_response = self.estil_agent.polish(style_request)
+
+                # Actualitzar estadístiques
+                tokens = style_response.usage.get("input_tokens", 0) + style_response.usage.get("output_tokens", 0)
+                chunk_tokens += tokens
+                chunk_cost += style_response.cost_eur
+                self._update_stats(tokens, style_response.cost_eur)
+
+                # Parsejar resposta JSON
+                style_data = parse_json_response(style_response.content)
+                if style_data:
+                    styled_text = style_data.get("text_polit")
+                    style_notes = style_data.get("notes_edicio", [])
+                    improvements = style_data.get("millores_aplicades", {})
+
+                    if styled_text:
+                        current_translation = styled_text
+                        chunk_result.metadata["styling_applied"] = True
+                        chunk_result.metadata["style_improvements"] = improvements
+                        chunk_result.metadata["style_notes_count"] = len(style_notes)
+
+                        total_improvements = sum(improvements.values()) if isinstance(improvements, dict) else 0
+                        if total_improvements > 0:
+                            self.logger.log_info(
+                                "Estil",
+                                f"Aplicades {total_improvements} millores d'estil al chunk {chunk.chunk_id}"
+                            )
+                            # Log al translation logger
+                            if self._translation_logger:
+                                self._translation_logger.log_event(
+                                    "styling",
+                                    f"Chunk {chunk.chunk_id}: {total_improvements} millores d'estil"
+                                )
+                else:
+                    chunk_result.metadata["style_parse_error"] = True
+                    self.logger.log_warning("Estil", "No s'ha pogut parsejar la resposta d'estil")
+
+            except Exception as e:
+                chunk_result.metadata["style_error"] = str(e)
+                self.logger.log_error("Estil", e)
+                if self._dashboard:
+                    self._dashboard.add_error(f"Estil chunk {chunk.chunk_id}: {str(e)}")
 
         chunk_result.translated_text = current_translation
 
@@ -1093,7 +1249,7 @@ class TranslationPipeline:
     def _translate(
         self,
         text: str,
-        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
+        source_language: SupportedLanguage,
         author: str | None,
         work_title: str | None,
     ) -> StageResult:
@@ -1133,7 +1289,7 @@ class TranslationPipeline:
         self,
         original_text: str,
         translated_text: str,
-        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
+        source_language: SupportedLanguage,
         author: str | None,
         work_title: str | None,
     ) -> StageResult:
@@ -1158,13 +1314,13 @@ class TranslationPipeline:
                 "duration": response.duration_seconds,
                 "cost_eur": response.cost_eur,
             }
-            try:
-                review_data = json.loads(response.content)
+            review_data = parse_json_response(response.content)
+            if review_data:
                 metadata["quality_score"] = review_data.get("puntuació_global", 0)
                 metadata["summary"] = review_data.get("resum", "")
                 metadata["issues"] = review_data.get("problemes", [])
                 metadata["revised_text"] = review_data.get("text_revisat", "")
-            except json.JSONDecodeError:
+            else:
                 metadata["quality_score"] = 0
                 metadata["parse_error"] = "No s'ha pogut parsejar la resposta JSON"
 

@@ -68,7 +68,7 @@ class DissenyGraficAgent(BaseAgent):
         return f"""Ets un dissenyador editorial expert en publicacions de textos clàssics.
 
 OBJECTIU:
-Crear especificacions de disseny elegants i llegibles per a edicions de clàssics grecollatins en català.
+Crear especificacions de disseny elegants i llegibles per a edicions de clàssics universals en català.
 
 ESTIL DE LA COL·LECCIÓ: {self.estil.upper()}
 
@@ -80,6 +80,8 @@ PRINCIPIS DE DISSENY EDITORIAL:
    - Notes: Mida més petita, possible sans-serif
    - Text grec: Suport Unicode complet (GFS Didot, Gentium)
    - Text llatí: El mateix que el cos
+   - Text japonès: Noto Serif JP, Hiragino Mincho, Yu Mincho
+   - Text xinès: Noto Serif SC, Source Han Serif
 
 2. PALETA DE COLORS (segons estil)
    - CLÀSSIC: Tons ocres, bordeus, or vell
@@ -185,7 +187,7 @@ Inclou CSS complet per a EPUB i instruccions per a la portada."""
         Returns:
             AgentResponse amb el CSS.
         """
-        prompt = f"""Genera CSS complet i professional per a un EPUB de clàssics grecollatins.
+        prompt = f"""Genera CSS complet i professional per a un EPUB de clàssics universals.
 
 ESTIL: {estil}
 BILINGÜE: {"Sí, amb text original i traducció" if bilingue else "No, només traducció"}

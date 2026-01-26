@@ -5,6 +5,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 
 class EditorialBrief(BaseModel):
@@ -29,7 +30,7 @@ class EvaluationRequest(BaseModel):
 
     titol: str
     autor: str
-    llengua_original: Literal["llatí", "grec"]
+    llengua_original: SupportedLanguage
     descripcio: str
     extensio_aproximada: str
     motiu_publicacio: str | None = None
@@ -57,7 +58,7 @@ class ConsellEditorialAgent(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return """Ets el Consell Editorial d'una col·lecció de clàssics grecollatins traduïts al català.
+        return """Ets el Consell Editorial d'una col·lecció de clàssics universals traduïts al català.
 
 OBJECTIU:
 Dirigir el procés editorial assegurant qualitat, coherència i adequació al públic objectiu.
@@ -78,7 +79,7 @@ FUNCIONS PRINCIPALS:
 
 3. CRITERIS DE LA COL·LECCIÓ
    - Prioritzar obres fonamentals del cànon
-   - Equilibrar autors grecs i llatins
+   - Equilibrar diferents tradicions literàries (occidental, oriental)
    - Incloure gèneres diversos (filosofia, història, poesia, teatre)
    - Mantenir coherència estilística
 

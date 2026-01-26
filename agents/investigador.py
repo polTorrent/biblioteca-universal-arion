@@ -5,6 +5,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 
 class PersonReference(BaseModel):
@@ -31,7 +32,7 @@ class ResearchRequest(BaseModel):
     text: str
     autor: str
     titol: str
-    llengua_original: Literal["llatí", "grec"]
+    llengua_original: SupportedLanguage
     focus: list[str] = Field(
         default_factory=lambda: ["històric", "cultural", "biografic", "literari"]
     )
@@ -49,7 +50,7 @@ class InvestigadorAgent(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return """Ets un investigador expert en antiguitat clàssica grecollatina.
+        return """Ets un investigador expert en literatura clàssica universal (grecollatina, oriental i altres tradicions).
 
 OBJECTIU:
 Proporcionar context històric, cultural i biogràfic per enriquir traduccions de textos clàssics.

@@ -11,6 +11,7 @@ from pydantic import BaseModel, Field
 from typing import TYPE_CHECKING
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger
@@ -63,7 +64,7 @@ class ChunkingRequest(BaseModel):
     min_tokens: int = Field(default=500, ge=100, le=2000)
     overlap_tokens: int = Field(default=100, ge=0, le=500)
     preserve_structure: bool = True
-    source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"] = "grec"
+    source_language: SupportedLanguage = "grec"
 
 
 class ChunkingResult(BaseModel):
@@ -97,6 +98,8 @@ class ChunkerAgent(BaseAgent):
         super().__init__(config, logger)
         self._speaker_pattern = re.compile(r'\b([A-ZÀÁÈÉÍÒÓÚÜ][A-ZÀÁÈÉÍÒÓÚÜ]+)\.\s')
         self._greek_speaker_pattern = re.compile(r'\b([Α-Ω]+)\.\s')
+        # Patró per parlants japonesos (en kanji o hiragana/katakana)
+        self._japanese_speaker_pattern = re.compile(r'【([^】]+)】|「([^」]+)」\s*と\s*(\S+)')  # 【Nom】 o citació amb parlant
 
     @property
     def system_prompt(self) -> str:

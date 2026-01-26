@@ -1,6 +1,6 @@
 # Format de Traduccions Editorial Clàssica
 
-Especificació del format Markdown per a traduccions de textos clàssics grecollatins.
+Especificació del format Markdown per a traduccions de textos clàssics universals.
 
 ## Estructura General
 

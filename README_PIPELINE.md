@@ -1,6 +1,6 @@
 # 🏛️ Pipeline de Traducció de Textos Clàssics
 
-Sistema complet de traducció automàtica de textos grecollatins al català amb control de qualitat.
+Sistema complet de traducció automàtica de textos universals al català amb control de qualitat.
 
 ## 🎯 Característiques
 
