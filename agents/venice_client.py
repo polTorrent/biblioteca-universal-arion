@@ -32,8 +32,8 @@ class ImageGenerationRequest(BaseModel):
 
     prompt: str
     negative_prompt: str = ""
-    width: int = Field(default=1024, ge=512, le=2048)
-    height: int = Field(default=1536, ge=512, le=2048)
+    width: int = Field(default=1024, ge=512, le=1280)   # Venice API limit: 1280
+    height: int = Field(default=1280, ge=512, le=1280)  # Venice API limit: 1280
     model: str = "flux-2-max"
     steps: int = Field(default=30, ge=10, le=50)
     cfg_scale: float = Field(default=7.5, ge=1.0, le=20.0)
@@ -143,13 +143,17 @@ class VeniceClient:
         )
 
         payload = {
+            "model": request.model,
             "prompt": request.prompt,
             "negative_prompt": request.negative_prompt,
+            "aspect_ratio": "2:3",  # Format vertical per portades
             "width": request.width,
             "height": request.height,
-            "model": request.model,
             "steps": request.steps,
             "cfg_scale": request.cfg_scale,
+            "hide_watermark": True,   # Amaga watermark
+            "safe_mode": False,       # No difumina contingut
+            "format": "png",          # Millor qualitat
         }
 
         if request.seed is not None:
