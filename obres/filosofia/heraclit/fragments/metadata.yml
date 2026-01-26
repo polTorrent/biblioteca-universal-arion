@@ -1,0 +1,43 @@
+obra:
+  titol: "Fragments"
+  titol_original: "Περὶ φύσεως (fragments)"
+  autor: "Heràclit d'Efes"
+  autor_original: "Ἡράκλειτος ὁ Ἐφέσιος"
+  traductor: "Claude (Anthropic) amb supervisió editorial"
+  any_original: "-500"
+  any_traduccio: "2026"
+  llengua_original: "grec antic"
+  descripcio: |
+    Heràclit d'Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com
+    "l'Obscur" per l'estil enigmàtic dels seus aforismes. De la seva obra
+    "Sobre la natura" (Περὶ φύσεως) només ens han arribat uns 130 fragments
+    preservats en citacions d'autors posteriors.
+
+    El seu pensament gira al voltant del canvi perpetu (πάντα ῥεῖ, "tot flueix"),
+    la unitat dels contraris, i el Logos com a principi ordenador de l'univers.
+    La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
+  temes:
+    - canvi i flux
+    - unitat dels contraris
+    - logos
+    - foc com a principi
+    - filosofia presocràtica
+    - cosmologia
+  seccions: 25
+  estadistiques:
+    paraules_original: 450
+    paraules_traduccio: 520
+    notes: 15
+    termes_glossari: 12
+  revisio:
+    estat: "revisat"
+    qualitat: 8
+    data: "2026-01-26"
+  context:
+    tradicio: "filosofia presocràtica"
+    influencies:
+      - "Tales de Milet"
+      - "Anaximandre"
+    obres_relacionades:
+      - "Metafísica d'Aristòtil"
+      - "Vides dels filòsofs de Diògenes Laerci"
