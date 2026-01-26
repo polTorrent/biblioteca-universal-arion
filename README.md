@@ -1,92 +1,62 @@
-# Editorial Classica
+# 📚 Biblioteca Universal Arion
 
-**Traduccions obertes de textos classics grecollatins al catala**
+Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.
 
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-sa/4.0/)
+## 🎯 Missió
 
----
+Traduir obres mestres de la literatura i filosofia universal al català, amb edició crítica bilingüe, de forma oberta i col·laborativa.
 
-## Que es?
+## 📖 Catàleg actual
 
-Editorial Classica es un projecte obert per traduir textos classics
-grecollatins al catala, combinant intelligencia artificial amb revisio
-humana experta.
+| Autor | Obra | Idioma | Estat |
+|-------|------|--------|-------|
+| Epictetus | Enchiridion | Grec | ✅ Completat |
+| Plató | Critó | Grec | 🔄 En procés |
+| Sèneca | Epístola 1 | Llatí | 🔄 En procés |
+| Schopenhauer | La quàdruple arrel | Alemany | 🔄 En procés |
 
----
+## 🤝 Com contribuir
 
-## Traduccions Disponibles
+Totes les traduccions es poden millorar! Pots:
 
-| Obra | Autor | Estat | Llengua |
-|------|-------|-------|---------|
-| Enchiridion (caps. 1-5) | Epictetus | Completa | Grec |
-| *Mes properament...* | | | |
+- 🔤 Corregir errors ortogràfics o gramaticals
+- 📝 Proposar millores de traducció
+- 💬 Obrir discussions sobre interpretacions
+- 📚 Afegir notes crítiques o context
 
----
+Consulta [CONTRIBUTING.md](community/CONTRIBUTING.md) per més detalls.
 
-## Caracteristiques
-
-- **Bilingue** - Text original i traduccio en parallel
-- **Notes hiperlinkades** - Context i explicacions accessibles
-- **Glossari interactiu** - Termes tecnics explicats
-- **Disseny elegant** - Tipografia i colors classics
-- **Responsive** - Funciona en mobil i desktop
-- **Obert** - Tot el contingut es lliure (CC BY-SA 4.0)
-
----
-
-## Com Contribuir
-
-Busquem collaboradors per:
-
-- Revisar traduccions - Correccions i millores
-- Proposar obres - Suggerir nous textos a traduir
-- Reportar errors - Issues amb problemes detectats
-- Millorar el codi - Frontend, pipeline, agents
-
-Consulta [CONTRIBUTING.md](CONTRIBUTING.md) per mes detalls.
-
----
-
-## Tecnologia
-
-- **Pipeline de traduccio:** Python + Claude API (Anthropic)
-- **Agents:** Chunker, Glossari, Traductor, Corrector, Formatter
-- **Web:** HTML5 + CSS3 + JavaScript vanilla
-- **Publicacio:** GitHub Pages
-
----
-
-## Desenvolupament Local
-
-```bash
-# Clonar repositori
-git clone https://github.com/USUARI/editorial-classica.git
-cd editorial-classica
-
-# Installar dependencies
-pip install -r requirements.txt
-
-# Generar web
-python scripts/build.py
-
-# Veure localment
-cd docs && python -m http.server 8000
-# Obre http://localhost:8000
+## 📁 Estructura del projecte
+```
+obres/[autor]/[obra]/
+├── fragments/        # Fragments editables per col·laboració
+├── discussions/      # Discussions crítiques
+├── metadata.yml      # Metadades de l'obra
+├── original.md       # Text original
+├── traduccio.md      # Traducció consolidada
+└── glossari.yml      # Glossari de termes
 ```
 
+## 🛠️ Tecnologia
+
+- **Traducció inicial**: Claude (Anthropic)
+- **Col·laboració**: GitHub
+- **Comunitat**: Discord
+- **Web**: GitHub Pages
+
+## 📜 Llicència
+
+- **Traduccions**: CC BY-SA 4.0
+- **Codi**: MIT
+- **Originals**: Domini públic
+
+## 🔗 Enllaços
+
+- [Web](https://poltorrent.github.io/editorial-classica/)
+- [Discord](#) *(properament)*
+
 ---
 
-## Llicencia
+*"Clàssics universals, en català, creats per tothom"*
 
-- **Traduccions:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- **Codi:** [MIT License](LICENSE)
-
----
-
-## Credits
-
-Projecte creat amb dedicacio per la difusio de la cultura classica en catala.
-
----
-
-*Aei aristeuein - Sempre excellir*
+**Biblioteca Universal Arion © 2026**
