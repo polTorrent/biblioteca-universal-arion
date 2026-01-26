@@ -1292,6 +1292,44 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
+    // Funció per trobar en quin capítol està un element
+    function findChapterForElement(element) {
+        if (!element) return -1;
+        const container = element.closest('.chapter-content');
+        if (container && container.dataset.chapter) {
+            return parseInt(container.dataset.chapter, 10);
+        }
+        return -1;
+    }
+
+    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
+    document.addEventListener('click', function(e) {
+        const link = e.target.closest('a[href^="#"]');
+        if (!link) return;
+
+        const targetId = link.getAttribute('href').substring(1);
+        if (!targetId) return;
+
+        const targetElement = document.getElementById(targetId);
+        if (!targetElement) return;
+
+        // Trobar en quin capítol està l'element
+        const chapterIndex = findChapterForElement(targetElement);
+
+        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
+            // Mostrar el capítol correcte primer
+            e.preventDefault();
+            showChapter(chapterIndex);
+
+            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
+            setTimeout(function() {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
+        }
+        // Si l'element no està dins d'un capítol (glossari, notes al final),
+        // deixar que el navegador gestioni l'enllaç normalment
+    });
+
     // Inicialitzar
     updateNavigation();
 });
