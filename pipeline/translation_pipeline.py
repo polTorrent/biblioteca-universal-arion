@@ -75,6 +75,8 @@ from agents import (
     GlossaryRequest,
     EstilAgent,
     StyleRequest,
+    AgentPortadista,
+    PortadistaConfig,
 )
 from utils.logger import AgentLogger, VerbosityLevel, get_logger
 from utils.dashboard import Dashboard, ProgressTracker, print_agent_activity
@@ -93,6 +95,7 @@ class PipelineStage(str, Enum):
     CORRECTING = "corregint"
     STYLING = "estilitzant"
     MERGING = "fusionant"
+    COVER = "portadant"
     COMPLETED = "completat"
     FAILED = "fallat"
     PAUSED = "pausat"
@@ -129,6 +132,11 @@ class PipelineConfig(BaseModel):
     correction_level: str = Field(default="normal")  # relaxat, normal, estricte
     enable_styling: bool = Field(default=True)
     style_register: str = Field(default="literari")  # acadèmic, divulgatiu, literari
+
+    # Configuració de portada
+    enable_cover: bool = Field(default=True)
+    cover_genere: str = Field(default="NOV")  # FIL, POE, TEA, NOV, SAG, ORI, EPO
+    cover_output_dir: Path | None = Field(default=None)
 
     # Configuració del translation logger
     use_translation_logger: bool = Field(default=True)
@@ -192,6 +200,9 @@ class PipelineResult(BaseModel):
     chunking_info: dict = Field(default_factory=dict)
     accumulated_context: AccumulatedContext = Field(default_factory=AccumulatedContext)
 
+    # Portada generada
+    cover_path: Path | None = None
+
     # Estadístiques
     total_tokens: int = 0
     total_cost_eur: float = 0.0
@@ -244,6 +255,7 @@ class TranslationPipeline:
         self.reviewer = ReviewerAgent(config=self.config.agent_config, logger=self.logger)
         self.corrector = CorrectorAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_correction else None
         self.estil_agent = EstilAgent(config=self.config.agent_config, registre=self.config.style_register) if self.config.enable_styling else None
+        self.portadista = AgentPortadista(config=self.config.agent_config) if self.config.enable_cover else None
 
         self.config.output_dir.mkdir(parents=True, exist_ok=True)
         if self.config.enable_cache:
@@ -562,11 +574,33 @@ class TranslationPipeline:
                 progress.remove_task(task)
 
         result.final_translation = current_translation
+
+        # Generar portada si està habilitada
+        if self.config.enable_cover and self.portadista:
+            self.logger.log_info("Pipeline", "Generant portada...")
+            result.cover_path = self._generate_cover(
+                work_title=work_title,
+                author=author,
+                source_language=source_language,
+                result=result,
+            )
+            if result.cover_path:
+                result.stages.append(
+                    StageResult(
+                        stage=PipelineStage.COVER,
+                        content=f"Portada generada: {result.cover_path}",
+                        metadata={"cover_path": str(result.cover_path)},
+                    )
+                )
+
         result.stages.append(
             StageResult(
                 stage=PipelineStage.COMPLETED,
                 content=current_translation,
-                metadata={"quality_score": result.quality_score},
+                metadata={
+                    "quality_score": result.quality_score,
+                    "cover_path": str(result.cover_path) if result.cover_path else None,
+                },
             )
         )
 
@@ -868,6 +902,24 @@ class TranslationPipeline:
 
         result.revision_rounds = sum(cr.revision_rounds for cr in result.chunk_results)
 
+        # Fase 4: Generar portada si està habilitada
+        if self.config.enable_cover and self.portadista:
+            self.logger.log_info("Pipeline", "Fase 4: Generant portada...")
+            result.cover_path = self._generate_cover(
+                work_title=work_title,
+                author=author,
+                source_language=source_language,
+                result=result,
+            )
+            if result.cover_path:
+                result.stages.append(
+                    StageResult(
+                        stage=PipelineStage.COVER,
+                        content=f"Portada generada: {result.cover_path}",
+                        metadata={"cover_path": str(result.cover_path)},
+                    )
+                )
+
         result.stages.append(
             StageResult(
                 stage=PipelineStage.COMPLETED,
@@ -878,6 +930,7 @@ class TranslationPipeline:
                     "total_revisions": result.revision_rounds,
                     "total_tokens": self._total_tokens,
                     "total_cost_eur": self._total_cost,
+                    "cover_path": str(result.cover_path) if result.cover_path else None,
                 },
             )
         )
@@ -1335,6 +1388,88 @@ class TranslationPipeline:
                 content="",
                 metadata={"error": str(e)},
             )
+
+    def _generate_cover(
+        self,
+        work_title: str | None,
+        author: str | None,
+        source_language: SupportedLanguage,
+        result: PipelineResult,
+    ) -> Path | None:
+        """Genera la portada del llibre amb l'AgentPortadista.
+
+        Args:
+            work_title: Títol de l'obra.
+            author: Autor del text original.
+            source_language: Llengua d'origen per determinar el gènere.
+            result: Resultat del pipeline per extreure temes.
+
+        Returns:
+            Path a la imatge generada o None si falla.
+        """
+        if not self.portadista or not self.portadista.venice:
+            self.logger.log_warning("Portadista", "Venice client no disponible, saltant generació de portada")
+            return None
+
+        try:
+            # Determinar gènere basat en la llengua d'origen
+            genere_map = {
+                "japonès": "ORI",
+                "xinès": "ORI",
+                "sànscrit": "SAG",
+                "grec": "FIL",
+                "llatí": "FIL",
+                "hebreu": "SAG",
+                "alemany": "FIL",
+                "anglès": "NOV",
+                "francès": "NOV",
+                "italià": "POE",
+                "rus": "NOV",
+                "àrab": "SAG",
+                "persa": "POE",
+            }
+            genere = genere_map.get(source_language, self.config.cover_genere)
+
+            # Extreure temes del glossari si n'hi ha
+            temes = []
+            if result.accumulated_context.glossary:
+                # Agafar els primers termes com a temes
+                temes = list(result.accumulated_context.glossary.keys())[:5]
+
+            # Preparar metadata per la portada (incloent gènere)
+            metadata = {
+                "titol": work_title or "Sense títol",
+                "autor": author or "Anònim",
+                "genere": genere,
+                "temes": temes,
+                "descripcio": result.final_translation[:500] if result.final_translation else "",
+            }
+
+            # Directori de sortida
+            output_dir = self.config.cover_output_dir or self.config.output_dir
+            output_dir.mkdir(parents=True, exist_ok=True)
+
+            # Generar nom del fitxer
+            safe_title = "".join(c if c.isalnum() or c in " -_" else "_" for c in (work_title or "portada"))
+            safe_title = safe_title.replace(" ", "_").lower()[:50]
+            timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+            cover_filename = f"portada_{safe_title}_{timestamp}.png"
+            cover_path = output_dir / cover_filename
+
+            # Generar portada
+            self.logger.log_info("Portadista", f"Generant portada per '{work_title}' (gènere: {genere})")
+
+            cover_bytes = self.portadista.generar_portada(metadata=metadata)
+
+            # Guardar la imatge
+            cover_path.write_bytes(cover_bytes)
+
+            self.logger.log_info("Portadista", f"Portada generada: {cover_path}")
+            return cover_path
+
+        except Exception as e:
+            self.logger.log_error("Portadista", e)
+            return None
 
     def _save_result(self, result: PipelineResult) -> Path:
         """Desa el resultat en un fitxer JSON."""
