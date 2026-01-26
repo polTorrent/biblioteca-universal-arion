@@ -37,7 +37,7 @@ class GlossaryRequest(BaseModel):
 
     text: str
     text_original: str | None = None
-    llengua_original: Literal["llatí", "grec"] = "llatí"
+    llengua_original: Literal["llatí", "grec", "anglès", "alemany", "francès"] = "llatí"
     categories: list[str] = Field(
         default_factory=lambda: ["filosofia", "política", "militar", "religió", "vida quotidiana"]
     )
