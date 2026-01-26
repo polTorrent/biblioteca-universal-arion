@@ -262,8 +262,26 @@ class WebPublisher(BaseAgent):
             self.log_warning(f"Error llegint notes de {obra_path}: {e}")
             return []
 
-    def _generar_portada(self, metadata: ObraMetadata, output_path: Path) -> str | None:
-        """Genera la portada d'una obra."""
+    def _generar_portada(
+        self, metadata: ObraMetadata, output_path: Path, obra_path: Path | None = None
+    ) -> str | None:
+        """Genera o copia la portada d'una obra.
+
+        Primer busca si existeix portada.png a la carpeta de l'obra.
+        Si no existeix i el portadista està disponible, en genera una de nova.
+        """
+        portada_filename = f"{metadata.slug}-portada.png"
+        portada_dest = output_path / portada_filename
+
+        # 1. Buscar portada existent a la carpeta de l'obra
+        if obra_path:
+            portada_existent = obra_path / "portada.png"
+            if portada_existent.exists():
+                shutil.copy(portada_existent, portada_dest)
+                self.log_info(f"Portada copiada: {portada_existent.name} -> {portada_dest.name}")
+                return f"assets/portades/{portada_filename}"
+
+        # 2. Si no existeix, generar amb Venice.ai
         if not self.portadista:
             return None
 
@@ -279,11 +297,9 @@ class WebPublisher(BaseAgent):
             portada_bytes = self.portadista.generar_portada(portada_data)
 
             # Guardar
-            portada_filename = f"{metadata.slug}-portada.png"
-            portada_path = output_path / portada_filename
-            portada_path.write_bytes(portada_bytes)
+            portada_dest.write_bytes(portada_bytes)
 
-            self.log_info(f"Portada guardada: {portada_path}")
+            self.log_info(f"Portada guardada: {portada_dest}")
             return f"assets/portades/{portada_filename}"
         except Exception as e:
             self.log_warning(f"Error generant portada: {e}")
@@ -293,7 +309,7 @@ class WebPublisher(BaseAgent):
         self,
         obra_path: Path,
         generar_portada: bool | None = None,
-    ) -> Path | None:
+    ) -> tuple[Path, ObraMetadata] | None:
         """Publica una obra individual a HTML.
 
         Args:
@@ -301,7 +317,7 @@ class WebPublisher(BaseAgent):
             generar_portada: Si True, genera portada nova. None usa config.
 
         Returns:
-            Ruta al fitxer HTML generat o None si error.
+            Tupla (path HTML, metadades actualitzades) o None si error.
         """
         # Llegir metadata
         metadata = self._llegir_metadata(obra_path)
@@ -322,7 +338,7 @@ class WebPublisher(BaseAgent):
             generar_portada = self.publisher_config.generar_portades
 
         if generar_portada:
-            metadata.portada_url = self._generar_portada(metadata, portades_dir)
+            metadata.portada_url = self._generar_portada(metadata, portades_dir, obra_path)
 
         # Llegir continguts
         contingut_original = self._llegir_contingut(obra_path, "original.md")
@@ -350,7 +366,7 @@ class WebPublisher(BaseAgent):
             output_file.write_text(html, encoding="utf-8")
 
             self.log_info(f"HTML generat: {output_file}")
-            return output_file
+            return (output_file, metadata)
 
         except Exception as e:
             self.log_warning(f"Error renderitzant template: {e}")
@@ -535,15 +551,10 @@ class WebPublisher(BaseAgent):
                 if slug not in obres_filtrades:
                     continue
 
-            # Llegir metadata primer
-            metadata = self._llegir_metadata(obra_path)
-            if not metadata:
-                errors.append(f"Error llegint metadata: {obra_path}")
-                continue
-
-            # Publicar
+            # Publicar (retorna metadades amb portada_url actualitzat)
             result = self.publicar_obra(obra_path, generar_portada=generar_portades)
             if result:
+                _, metadata = result
                 obres_publicades.append(metadata)
             else:
                 errors.append(f"Error publicant: {obra_path}")

@@ -3,139 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Autors traduïts a la Biblioteca Arion - Clàssics de la filosofia i literatura universal en català">
-    <meta name="author" content="Biblioteca Arion">
-    <meta name="keywords" content="traduccions, clàssics, autors, filosofia, literatura, català">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Autors | Biblioteca Arion">
-    <meta property="og:description" content="Autors traduïts - Clàssics de la filosofia i literatura universal en català">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Biblioteca Arion">
-    <meta property="og:locale" content="ca_ES">
-
     <title>Autors | Biblioteca Arion</title>
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <div class="header-inner">
                 <div class="site-logo">
                     <a href="index.html" class="site-title">Biblioteca Arion</a>
-                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
+                    <p class="site-tagline">Traduccions de clàssics universals al català</p>
                 </div>
-
-                <nav class="main-nav" aria-label="Navegació principal">
+                <nav class="main-nav">
                     <ul>
                         <li><a href="index.html">Catàleg</a></li>
                         <li><a href="autors.html" class="active">Autors</a></li>
                         <li><a href="sobre.html">Sobre</a></li>
-                        <li>
-                            <button class="theme-toggle" aria-label="Canviar tema">🌙</button>
-                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
-
-    <!-- Main Content -->
     <main>
         <section class="page-content">
             <div class="container">
-                <h1 class="text-center mb-xl">Autors</h1>
-                <p class="text-center mb-2xl" style="max-width: 700px; margin-left: auto; margin-right: auto;">
-                    Escriptors i filòsofs clàssics les obres dels quals hem traduït al català.
-                    Cada autor representa una veu fonamental de la tradició intel·lectual universal.
-                </p>
+                <h1 class="text-center">Autors</h1>
+                <div class="autors-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
 
-                <div class="authors-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
-
-                    <!-- Akutagawa -->
-                    <article class="author-card" style="background: var(--color-bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                        <h2 style="margin-bottom: 0.5rem;">Akutagawa Ryūnosuke</h2>
-                        <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem;"><em>芥川龍之介</em></p>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1rem;">1892 - 1927 · Japó</p>
-                        <p style="margin-bottom: 1rem;">
-                            Considerat el pare del conte japonès modern. La seva obra explora la psicologia humana,
-                            l'obsessió artística i la fragilitat de la percepció. Va influir profundament en la literatura japonesa
-                            del segle XX abans del seu tràgic suïcidi als 35 anys.
-                        </p>
-                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Obres traduïdes:</h4>
-                        <ul style="margin: 0; padding-left: 1.5rem;">
-                            <li><a href="akutagawa-jigokuhen.html">El biombo de l'infern</a> (1918)</li>
+                    <article class="autor-card">
+                        <h2>Arthur Schopenhauer</h2>
+                        <p><em>Arthur Schopenhauer</em></p>
+                        <ul>
+                            <li><a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a></li>
                         </ul>
                     </article>
 
-                    <!-- Epictetus -->
-                    <article class="author-card" style="background: var(--color-bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                        <h2 style="margin-bottom: 0.5rem;">Epictet</h2>
-                        <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem;"><em>Ἐπίκτητος</em></p>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1rem;">c. 50 - 135 dC · Grècia / Roma</p>
-                        <p style="margin-bottom: 1rem;">
-                            Filòsof estoic nascut esclau a Hieràpolis (Frígia). Alliberat, va fundar una escola filosòfica
-                            a Nicòpolis. El seu deixeble Arrià va recollir els seus ensenyaments a les <em>Diatribai</em> i
-                            l'<em>Enchiridion</em>, manual pràctic d'ètica estoica.
-                        </p>
-                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Obres traduïdes:</h4>
-                        <ul style="margin: 0; padding-left: 1.5rem;">
-                            <li><a href="epictetus-enchiridion.html">Enchiridion</a> (c. 125 dC)</li>
+                    <article class="autor-card">
+                        <h2>Epictetus</h2>
+                        <p><em>Ἐπίκτητος</em></p>
+                        <ul>
+                            <li><a href="epictetus-enchiridion.html">Enchiridion</a></li>
                         </ul>
                     </article>
 
-                    <!-- Plató -->
-                    <article class="author-card" style="background: var(--color-bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                        <h2 style="margin-bottom: 0.5rem;">Plató</h2>
-                        <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem;"><em>Πλάτων</em></p>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1rem;">c. 428 - 348 aC · Atenes</p>
-                        <p style="margin-bottom: 1rem;">
-                            Filòsof atenenc, deixeble de Sòcrates i mestre d'Aristòtil. Fundador de l'Acadèmia,
-                            la primera institució d'educació superior del món occidental. Els seus diàlegs exploren
-                            la justícia, la bellesa, la igualtat i la naturalesa de la realitat.
-                        </p>
-                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Obres traduïdes:</h4>
-                        <ul style="margin: 0; padding-left: 1.5rem;">
-                            <li><a href="plato-criton.html">Critó: Sobre el deure</a> (c. 399 aC)</li>
+                    <article class="autor-card">
+                        <h2>Plató</h2>
+                        <p><em>Πλάτων</em></p>
+                        <ul>
+                            <li><a href="plato-criton.html">Critó: Sobre el deure</a></li>
                         </ul>
                     </article>
 
-                    <!-- Schopenhauer -->
-                    <article class="author-card" style="background: var(--color-bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                        <h2 style="margin-bottom: 0.5rem;">Arthur Schopenhauer</h2>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1rem;">1788 - 1860 · Alemanya</p>
-                        <p style="margin-bottom: 1rem;">
-                            Filòsof alemany, conegut pel seu pessimisme filosòfic i la influència del pensament oriental.
-                            La seva obra principal, <em>El món com a voluntat i representació</em>, va influir en Nietzsche,
-                            Wagner, Freud i molts altres pensadors.
-                        </p>
-                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Obres traduïdes:</h4>
-                        <ul style="margin: 0; padding-left: 1.5rem;">
-                            <li><a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a> (1813)</li>
-                        </ul>
-                    </article>
-
-                    <!-- Sèneca -->
-                    <article class="author-card" style="background: var(--color-bg-secondary); padding: 1.5rem; border-radius: 8px;">
-                        <h2 style="margin-bottom: 0.5rem;">Sèneca</h2>
-                        <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem;"><em>Lucius Annaeus Seneca</em></p>
-                        <p style="font-size: 0.9rem; color: var(--color-text-secondary); margin-bottom: 1rem;">c. 4 aC - 65 dC · Còrdova / Roma</p>
-                        <p style="margin-bottom: 1rem;">
-                            Filòsof estoic, dramaturg i polític romà nascut a Còrdova. Tutor i conseller de Neró,
-                            va acabar forçat al suïcidi per ordre de l'emperador. Les seves <em>Epístoles a Lucili</em>
-                            són una guia pràctica de vida filosòfica.
-                        </p>
-                        <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem;">Obres traduïdes:</h4>
-                        <ul style="margin: 0; padding-left: 1.5rem;">
-                            <li><a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a> (c. 64 dC)</li>
+                    <article class="autor-card">
+                        <h2>Sèneca</h2>
+                        <p><em>Lucius Annaeus Seneca</em></p>
+                        <ul>
+                            <li><a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a></li>
                         </ul>
                     </article>
 
@@ -143,47 +66,11 @@
             </div>
         </section>
     </main>
-
-    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Biblioteca Arion</h4>
-                    <p>Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.</p>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Navegació</h4>
-                    <ul>
-                        <li><a href="index.html">Catàleg d'obres</a></li>
-                        <li><a href="autors.html">Autors</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Col·labora</h4>
-                    <ul>
-                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion">GitHub</a></li>
-                        <li><a href="https://discord.gg/biblioteca-arion">Discord</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Llicència</h4>
-                    <p><small>Textos originals de domini públic. Traduccions sota llicència oberta CC BY-SA 4.0.</small></p>
-                    <p><small>© 2026 Biblioteca Arion</small></p>
-                </div>
-            </div>
-
-            <div class="footer-bottom">
-                <p>Fet amb dedicació per a la cultura catalana</p>
-            </div>
+            <p class="text-center">Biblioteca Arion - Traduccions obertes de clàssics universals</p>
         </div>
     </footer>
-
-    <!-- Scripts -->
     <script src="js/app.js"></script>
 </body>
 </html>
