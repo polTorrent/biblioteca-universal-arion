@@ -1,0 +1,470 @@
+# Glossari crític filosòfic
+# Schopenhauer - Sobre la quàdruple arrel del principi de raó suficient
+# Terminologia kantiana i schopenhaueriana
+
+termes:
+  # ══════════════════════════════════════════════════════════════
+  # TERMES CENTRALS DE L'OBRA
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "satz-vom-grunde"
+    original: "Satz vom zureichenden Grunde"
+    traduccio: "principi de raó suficient"
+    categoria: "principis fonamentals"
+    definicio: >
+      Principi lògic-metafísic segons el qual res no existeix sense una raó
+      o fonament que expliqui la seva existència. Schopenhauer demostra que
+      aquest principi té quatre arrels diferents segons la classe d'objectes
+      a què s'aplica: raó del devenir (causalitat), raó del conèixer (lògica),
+      raó del ser (matemàtiques) i raó de l'actuar (motivació).
+    notes: >
+      Leibniz formulà el principi com "nihil est sine ratione". Schopenhauer
+      critica que els filòsofs anteriors no han distingit les quatre formes.
+    referencies_obra: ["§1", "§5", "§16"]
+    termes_relacionats: ["Grund", "Wurzel", "Kausalität"]
+
+  - id: "wurzel"
+    original: "Wurzel"
+    traduccio: "arrel"
+    categoria: "metàfora central"
+    definicio: >
+      Metàfora que indica l'origen o fonament comú de les quatre formes
+      del principi de raó suficient. Així com un arbre té arrels que
+      nodreixen branques diferents, el principi de raó té quatre "arrels"
+      que corresponen a quatre classes d'objectes per al subjecte.
+    notes: >
+      La metàfora vegetal és deliberada: suggereix unitat d'origen però
+      diversitat de manifestacions.
+    referencies_obra: ["títol", "§16"]
+
+  - id: "grund"
+    original: "Grund"
+    traduccio: "raó, fonament"
+    categoria: "principis fonamentals"
+    definicio: >
+      Allò que fa comprensible o necessari alguna cosa. Schopenhauer
+      distingeix quatre tipus: Grund des Werdens (raó del devenir = causa),
+      Grund des Erkennens (raó del conèixer = premissa), Grund des Seins
+      (raó del ser = relació espaciotemporal) i Grund des Handelns (raó
+      de l'actuar = motiu).
+    notes: >
+      No confondre Grund (raó/fonament) amb Ursache (causa). La causa
+      és només una de les quatre formes de Grund.
+    traduccions_alternatives:
+      - "fonament" (quan s'emfatitza l'aspecte ontològic)
+      - "raó" (quan s'emfatitza l'aspecte lògic)
+    referencies_obra: ["§16", "§20", "§29", "§35", "§43"]
+
+  # ══════════════════════════════════════════════════════════════
+  # LES QUATRE CLASSES DE RAONS
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "grund-des-werdens"
+    original: "Grund des Werdens"
+    traduccio: "raó del devenir"
+    categoria: "les quatre arrels"
+    definicio: >
+      Primera forma del principi de raó suficient. Regeix els canvis en
+      el món material: tot canvi té una causa que el precedeix i el
+      determina necessàriament. És el principi de causalitat aplicat
+      als objectes de la intuïció empírica.
+    notes: >
+      "Werdens" (del verb "werden", esdevenir) indica canvi, no existència
+      estàtica. La causalitat només regeix canvis d'estat, no l'existència
+      de substàncies.
+    referencies_obra: ["§20", "Capítol IV"]
+    termes_relacionats: ["Kausalität", "Ursache", "Wirkung"]
+
+  - id: "grund-des-erkennens"
+    original: "Grund des Erkennens"
+    traduccio: "raó del conèixer"
+    categoria: "les quatre arrels"
+    definicio: >
+      Segona forma del principi. Regeix les relacions entre judicis:
+      perquè un judici sigui veritable, ha de tenir un fonament o raó
+      (premissa, evidència empírica, forma lògica o condicions de
+      possibilitat). És el principi de raó en l'àmbit lògic.
+    referencies_obra: ["§29", "Capítol V"]
+    termes_relacionats: ["Urteil", "Wahrheit", "Vernunft"]
+
+  - id: "grund-des-seins"
+    original: "Grund des Seins"
+    traduccio: "raó del ser"
+    categoria: "les quatre arrels"
+    definicio: >
+      Tercera forma del principi. Regeix les relacions en l'espai i el
+      temps: la posició d'una cosa determina necessàriament les seves
+      relacions amb altres posicions. És el fonament de les matemàtiques
+      (geometria i aritmètica).
+    notes: >
+      "Sein" aquí no és l'existència en general, sinó la determinació
+      espaciotemporal. La posició d'un punt en l'espai implica totes
+      les seves relacions geomètriques.
+    referencies_obra: ["§35-39", "Capítol VI"]
+    termes_relacionats: ["Raum", "Zeit", "Mathematik"]
+
+  - id: "grund-des-handelns"
+    original: "Grund des Handelns"
+    traduccio: "raó de l'actuar"
+    categoria: "les quatre arrels"
+    definicio: >
+      Quarta forma del principi. Regeix les accions dels éssers amb
+      voluntat: tot acte de voluntat té un motiu que el determina
+      necessàriament. És el principi de motivació, la causalitat vista
+      des de dins, com a subjecte volent.
+    notes: >
+      Aquesta és la forma més íntimament coneguda del principi, perquè
+      la coneixem directament en nosaltres mateixos com a voluntat.
+    referencies_obra: ["§43", "Capítol VII"]
+    termes_relacionats: ["Wille", "Motiv", "Motivation"]
+
+  # ══════════════════════════════════════════════════════════════
+  # TERMINOLOGIA KANTIANA
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "vorstellung"
+    original: "Vorstellung"
+    traduccio: "representació"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      Tot contingut de la consciència; allò que es presenta al subjecte
+      cognoscent. Per a Schopenhauer, el món com l'experimentem és
+      representació: "Die Welt ist meine Vorstellung" (El món és la meva
+      representació). Inclou tant intuïcions com conceptes.
+    notes: >
+      Etimològicament: "vor-stellen" = posar davant. No confondre amb
+      "idea" platònica (Idee) ni amb "imaginació". Schopenhauer segueix
+      Kant però amplia el concepte.
+    traduccions_alternatives:
+      - "idea" (rebutjada - confusió amb Plató)
+      - "presentació" (possible però menys establerta)
+    referencies_obra: ["§1", "§16", "§17"]
+    termes_relacionats: ["Objekt", "Subjekt", "Anschauung"]
+
+  - id: "ding-an-sich"
+    original: "Ding an sich"
+    traduccio: "cosa en si"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      La realitat tal com és independentment de la nostra percepció i
+      coneixement. Per a Kant, és incognoscible; per a Schopenhauer,
+      és la Voluntat (Wille), accessible a través de l'experiència
+      interna del propi cos.
+    notes: >
+      En aquesta obra primerenca, Schopenhauer encara no ha desenvolupat
+      completament la seva identificació de la cosa en si amb la Voluntat.
+    referencies_obra: ["§21"]
+    termes_relacionats: ["Erscheinung", "Wille"]
+
+  - id: "erscheinung"
+    original: "Erscheinung"
+    traduccio: "fenomen, aparença"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      La realitat tal com se'ns apareix, condicionada per les formes
+      a priori de l'espai, el temps i la causalitat. Tot objecte de
+      l'experiència és fenomen, no cosa en si.
+    notes: >
+      "Erscheinung" pot traduir-se com "fenomen" (tècnic) o "aparença"
+      (més literal). Preferim "fenomen" en contextos tècnics.
+    traduccions_alternatives:
+      - "aparença" (quan s'oposa a "realitat")
+      - "fenomen" (context tècnic kantià)
+    referencies_obra: ["§17", "§21"]
+
+  - id: "anschauung"
+    original: "Anschauung"
+    traduccio: "intuïció"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      Coneixement immediat i directe d'un objecte singular, en oposició
+      al concepte (Begriff), que és mediador i general. Hi ha intuïció
+      empírica (dels sentits) i intuïció pura (espai i temps).
+    notes: >
+      Etimològicament: "an-schauen" = mirar. No és "intuïció" en el
+      sentit popular de "pressentiment", sinó percepció directa.
+    referencies_obra: ["§17", "§21", "§35"]
+    termes_relacionats: ["Begriff", "Empfindung", "Wahrnehmung"]
+
+  - id: "verstand"
+    original: "Verstand"
+    traduccio: "enteniment"
+    categoria: "facultats del coneixement"
+    definicio: >
+      Facultat de conèixer mitjançant conceptes i regles. Per a Kant,
+      l'enteniment aplica les categories a les intuïcions. Per a
+      Schopenhauer, la funció principal de l'enteniment és aplicar
+      la causalitat per construir la representació del món objectiu.
+    notes: >
+      Distingir de Vernunft (raó). L'enteniment opera amb intuïcions
+      i produeix coneixement empíric; la raó opera amb conceptes i
+      produeix raonaments.
+    referencies_obra: ["§21"]
+    termes_relacionats: ["Vernunft", "Kategorie", "Kausalität"]
+
+  - id: "vernunft"
+    original: "Vernunft"
+    traduccio: "raó"
+    categoria: "facultats del coneixement"
+    definicio: >
+      Facultat superior del coneixement que opera amb conceptes abstractes
+      i produeix raonaments. Per a Schopenhauer, la raó és la capacitat
+      de formar conceptes i de raonar mitjançant judicis i sil·logismes.
+    notes: >
+      La distinció Verstand/Vernunft és crucial. Schopenhauer critica
+      Kant per confondre-les. La raó (Vernunft) és exclusivament humana.
+    referencies_obra: ["§26", "§34"]
+    termes_relacionats: ["Verstand", "Begriff", "Urteil"]
+
+  - id: "begriff"
+    original: "Begriff"
+    traduccio: "concepte"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      Representació general i abstracta que unifica múltiples intuïcions
+      sota una nota comuna. Els conceptes són el material del pensament
+      i s'expressen en paraules.
+    notes: >
+      Etimològicament: "be-greifen" = agafar, comprendre. El concepte
+      "agafa" la realitat de manera abstracta.
+    referencies_obra: ["§26", "§27"]
+    termes_relacionats: ["Anschauung", "Urteil", "Abstraktion"]
+
+  - id: "urteil"
+    original: "Urteil"
+    traduccio: "judici"
+    categoria: "lògica"
+    definicio: >
+      Acte de l'enteniment que uneix o separa conceptes, afirmant o
+      negant una relació entre ells. El judici s'expressa en la
+      proposició i pot ser vertader o fals.
+    referencies_obra: ["§29", "§30"]
+    termes_relacionats: ["Begriff", "Wahrheit", "Vernunft"]
+
+  - id: "a-priori"
+    original: "a priori"
+    traduccio: "a priori"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      Coneixement independent de l'experiència, que la precedeix i la
+      fa possible. Per a Kant i Schopenhauer, l'espai, el temps i la
+      causalitat són formes a priori de la sensibilitat i l'enteniment.
+    notes: >
+      Mantenim el llatí seguint la convenció filosòfica.
+    referencies_obra: ["§21", "§35"]
+
+  - id: "a-posteriori"
+    original: "a posteriori"
+    traduccio: "a posteriori"
+    categoria: "epistemologia kantiana"
+    definicio: >
+      Coneixement derivat de l'experiència, que depèn de dades empíriques.
+    notes: >
+      Mantenim el llatí seguint la convenció filosòfica.
+    referencies_obra: ["§21"]
+
+  # ══════════════════════════════════════════════════════════════
+  # TERMINOLOGIA ESPECÍFICA DE SCHOPENHAUER
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "wille"
+    original: "Wille"
+    traduccio: "voluntat"
+    categoria: "metafísica schopenhaueriana"
+    definicio: >
+      Per a Schopenhauer, la voluntat és l'essència íntima de totes les
+      coses, la cosa en si. En aquesta obra primerenca, apareix com la
+      quarta classe d'objectes per al subjecte: l'objecte immediat de
+      l'autoconeixement.
+    notes: >
+      En "El món com a voluntat i representació" (1818), Schopenhauer
+      desenvoluparà plenament aquesta noció com a principi metafísic
+      universal.
+    referencies_obra: ["§40", "§41", "§43"]
+    termes_relacionats: ["Motiv", "Motivation", "Leib"]
+
+  - id: "kausalitaet"
+    original: "Kausalität"
+    traduccio: "causalitat"
+    categoria: "principis"
+    definicio: >
+      Relació necessària entre causa i efecte. Per a Schopenhauer, la
+      causalitat és la forma del principi de raó suficient que regeix
+      els canvis en el món material (Grund des Werdens).
+    notes: >
+      Schopenhauer distingeix tres formes de causalitat: causa (en
+      matèria inorgànica), estímul (en plantes) i motiu (en animals).
+    referencies_obra: ["§20"]
+    termes_relacionats: ["Ursache", "Wirkung", "Grund des Werdens"]
+
+  - id: "ursache"
+    original: "Ursache"
+    traduccio: "causa"
+    categoria: "causalitat"
+    definicio: >
+      Allò que produeix un canvi d'estat en un objecte material. La
+      causa es distingeix del motiu (en éssers amb voluntat) i de
+      l'estímul (en éssers vius sense representació).
+    referencies_obra: ["§20"]
+    termes_relacionats: ["Wirkung", "Kausalität"]
+
+  - id: "wirkung"
+    original: "Wirkung"
+    traduccio: "efecte"
+    categoria: "causalitat"
+    definicio: >
+      El canvi d'estat produït per una causa. La relació causa-efecte
+      és necessària i regida pel principi de raó del devenir.
+    referencies_obra: ["§20"]
+
+  - id: "motiv"
+    original: "Motiv"
+    traduccio: "motiu"
+    categoria: "voluntat"
+    definicio: >
+      La causa dels actes de voluntat en éssers dotats de representació.
+      El motiu és la causalitat vista des de dins, com a determinació
+      de la voluntat per representacions.
+    notes: >
+      El motiu és a la voluntat el que la causa és a la matèria.
+    referencies_obra: ["§43", "§44"]
+    termes_relacionats: ["Wille", "Motivation"]
+
+  - id: "motivation"
+    original: "Motivation"
+    traduccio: "motivació"
+    categoria: "voluntat"
+    definicio: >
+      La forma de causalitat que regeix les accions dels éssers amb
+      voluntat i representació. La llei de motivació és: donat el
+      caràcter i el motiu, l'acció segueix necessàriament.
+    referencies_obra: ["§43"]
+
+  - id: "leib"
+    original: "Leib"
+    traduccio: "cos (viscut)"
+    categoria: "subjecte"
+    definicio: >
+      El cos propi com a objecte immediat de la voluntat. Schopenhauer
+      distingeix el cos com a representació (objecte entre objectes)
+      i el cos com a voluntat (accés immediat a la cosa en si).
+    notes: >
+      "Leib" es distingeix de "Körper" (cos físic). Leib és el cos
+      viscut, experimentat des de dins.
+    traduccions_alternatives:
+      - "cos viscut" (per emfatitzar la dimensió experiencial)
+      - "cos propi" (quan s'oposa al cos objectiu)
+    referencies_obra: ["§18", "§40"]
+
+  # ══════════════════════════════════════════════════════════════
+  # TERMES LÒGICS
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "wahrheit"
+    original: "Wahrheit"
+    traduccio: "veritat"
+    categoria: "lògica"
+    definicio: >
+      Conformitat d'un judici amb el seu fonament. Schopenhauer
+      distingeix quatre tipus de veritat segons el tipus de fonament:
+      lògica, empírica, transcendental i metalògica.
+    referencies_obra: ["§30", "§31", "§32", "§33"]
+    termes_relacionats: ["Urteil", "Grund des Erkennens"]
+
+  - id: "erkenntnis"
+    original: "Erkenntnis"
+    traduccio: "coneixement"
+    categoria: "epistemologia"
+    definicio: >
+      Acte o resultat de conèixer. Schopenhauer distingeix el coneixement
+      intuitiu (intuïció empírica) del coneixement abstracte (conceptes).
+    referencies_obra: ["§1", "§2"]
+
+  # ══════════════════════════════════════════════════════════════
+  # TERMES ESPACIOTEMPORALS
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "raum"
+    original: "Raum"
+    traduccio: "espai"
+    categoria: "formes a priori"
+    definicio: >
+      Forma a priori de la sensibilitat externa. L'espai és la condició
+      de possibilitat de tota intuïció d'objectes externs i el fonament
+      de la geometria.
+    referencies_obra: ["§35", "§36", "§37"]
+    termes_relacionats: ["Zeit", "Grund des Seins"]
+
+  - id: "zeit"
+    original: "Zeit"
+    traduccio: "temps"
+    categoria: "formes a priori"
+    definicio: >
+      Forma a priori de la sensibilitat interna i externa. El temps és
+      la condició de possibilitat de tot canvi i successió, i el
+      fonament de l'aritmètica.
+    referencies_obra: ["§35", "§38"]
+    termes_relacionats: ["Raum", "Grund des Seins"]
+
+  # ══════════════════════════════════════════════════════════════
+  # ALTRES TERMES IMPORTANTS
+  # ══════════════════════════════════════════════════════════════
+
+  - id: "subjekt"
+    original: "Subjekt"
+    traduccio: "subjecte"
+    categoria: "metafísica"
+    definicio: >
+      Allò que coneix però mai no és conegut com a objecte. El subjecte
+      és el correlat necessari de tot objecte; sense subjecte, no hi
+      ha representació.
+    referencies_obra: ["§16", "§17", "§40"]
+    termes_relacionats: ["Objekt", "Vorstellung"]
+
+  - id: "objekt"
+    original: "Objekt"
+    traduccio: "objecte"
+    categoria: "metafísica"
+    definicio: >
+      Allò que és conegut pel subjecte. Tot objecte és representació
+      i existeix només per a un subjecte. Schopenhauer classifica
+      els objectes en quatre classes segons la forma del principi
+      de raó que els regeix.
+    referencies_obra: ["§16", "§17"]
+    termes_relacionats: ["Subjekt", "Vorstellung"]
+
+  - id: "notwendigkeit"
+    original: "Notwendigkeit"
+    traduccio: "necessitat"
+    categoria: "modalitat"
+    definicio: >
+      El que no pot ser d'altra manera. Per a Schopenhauer, tota
+      necessitat prové del principi de raó suficient: necessari és
+      allò que segueix d'un fonament donat.
+    notes: >
+      Hi ha quatre tipus de necessitat corresponents a les quatre
+      formes del principi de raó.
+    referencies_obra: ["§49", "§50"]
+
+  - id: "homogeneitaet"
+    original: "Homogeneität"
+    traduccio: "homogeneïtat"
+    categoria: "metodologia"
+    definicio: >
+      Principi metodològic (de Plató i Kant) que ens indica buscar
+      les semblances i unificacions entre les coses, pujant dels
+      individus a espècies, gèneres i categories superiors.
+    referencies_obra: ["§1"]
+    termes_relacionats: ["Spezifikation"]
+
+  - id: "spezifikation"
+    original: "Spezifikation"
+    traduccio: "especificació"
+    categoria: "metodologia"
+    definicio: >
+      Principi metodològic que ens indica distingir les diferències
+      i evitar unificar precipitadament coses de naturalesa diversa.
+      Schopenhauer aplica aquest principi al principi de raó suficient,
+      mostrant les seves quatre arrels distintes.
+    referencies_obra: ["§1", "§2"]
+    termes_relacionats: ["Homogeneität"]

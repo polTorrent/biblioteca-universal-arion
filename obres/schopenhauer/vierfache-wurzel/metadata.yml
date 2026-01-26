@@ -1,0 +1,91 @@
+obra:
+  titol: "Sobre la quàdruple arrel del principi de raó suficient"
+  titol_original: "Über die vierfache Wurzel des Satzes vom zureichenden Grunde"
+  autor: "Arthur Schopenhauer"
+  autor_original: "Arthur Schopenhauer"
+  traductor: "Editorial Clàssica"
+  any_original: 1813
+  any_revisio: 1847
+  any_edicio_base: 1864
+  llengua_original: "alemany"
+  tipus: "tractat filosòfic"
+  descripcio: >
+    Tesi doctoral de Schopenhauer que estableix les bases del seu sistema
+    filosòfic. Demostra que el principi de raó suficient ("res no existeix
+    sense raó") té quatre formes irreductibles: raó del devenir (causalitat),
+    raó del conèixer (lògica), raó del ser (matemàtiques) i raó de l'actuar
+    (motivació). L'obra critica les confusions dels filòsofs anteriors
+    (Descartes, Spinoza, Leibniz, Wolff, Kant) i posa els fonaments per a
+    "El món com a voluntat i representació".
+
+edicio:
+  tipus: "crítica bilingüe"
+  base: "Tercera edició (1864), editada per Julius Frauenstädt"
+  font: "Internet Archive (domini públic)"
+  notes_tipus:
+    - "T: Nota del traductor"
+    - "F: Nota filosòfica"
+    - "R: Referència bibliogràfica"
+
+estructura:
+  prefacis:
+    - "Prefaci a la segona edició (1847)"
+    - "Prefaci de l'editor a la tercera edició (1864)"
+  capitols:
+    - numero: 1
+      titol: "Introducció"
+      seccions: "§1-§5"
+      contingut: "Mètode, aplicació, utilitat, importància del principi"
+    - numero: 2
+      titol: "Visió general del principi de raó suficient"
+      seccions: "§6-§14"
+      contingut: "Història: Descartes, Spinoza, Leibniz, Wolff, Hume, Kant"
+    - numero: 3
+      titol: "Insuficiència de les exposicions anteriors"
+      seccions: "§15-§16"
+      contingut: "Proposta de l'arrel quàdruple"
+    - numero: 4
+      titol: "Primera classe d'objectes: representacions empíriques"
+      seccions: "§17-§25"
+      contingut: "Principi de causalitat, intel·lectualitat de la intuïció"
+    - numero: 5
+      titol: "Segona classe d'objectes: conceptes"
+      seccions: "§26-§34"
+      contingut: "Principi de raó del conèixer, tipus de veritat"
+    - numero: 6
+      titol: "Tercera classe d'objectes: intuïcions pures"
+      seccions: "§35-§39"
+      contingut: "Principi de raó del ser, geometria i aritmètica"
+    - numero: 7
+      titol: "Quarta classe d'objectes: el subjecte del voler"
+      seccions: "§40-§45"
+      contingut: "Principi de motivació, voluntat, memòria"
+    - numero: 8
+      titol: "Observacions generals i resultats"
+      seccions: "§46-§52"
+      contingut: "Ordre sistemàtic, necessitat, conclusions"
+
+context:
+  tradicio: "Idealisme alemany / Filosofia transcendental"
+  influencies:
+    - "Immanuel Kant (Crítica de la raó pura)"
+    - "Plató (teoria de les Idees)"
+    - "Gottfried Wilhelm Leibniz (principi de raó suficient)"
+    - "Filosofia índia (Upanixads)"
+  obres_relacionades:
+    - "El món com a voluntat i representació (1818)"
+    - "Sobre la voluntat en la natura (1836)"
+    - "Sobre la llibertat de la voluntat (1839)"
+
+estadistiques:
+  paraules_original: 56000
+  seccions: 52
+  capitols: 8
+
+temes:
+  - epistemologia
+  - metafísica
+  - lògica
+  - filosofia de la ciència
+  - causalitat
+  - idealisme transcendental
