@@ -113,11 +113,21 @@
                     <p class="work-description">Dissertació doctoral de Schopenhauer que estableix les bases del seu sistema filosòfic. Demostra que el principi de raó suficient té quatre formes irreductibles: raó del devenir (causalitat), raó del conèixer (lògica), raó del ser (matemàtiques) i raó de l'actuar (motivació).</p>
                 </header>
 
+                <!-- Controls de vista -->
+                <div class="view-controls">
+                    <button class="view-btn" id="toggle-index">Amagar índex</button>
+                    <button class="view-btn active" data-mode="amb-notes">Amb notes</button>
+                    <button class="view-btn" data-mode="sense-notes">Sense notes</button>
+                </div>
+
                 <div class="work-layout">
-                    <aside class="chapter-nav-sticky">
+                    <aside class="chapter-nav-sticky" id="chapter-nav-aside">
                         <nav class="chapter-nav" aria-label="Índex de capítols">
-                            <h2 class="chapter-nav-title">Índex</h2>
-                            <ul class="chapter-nav-list">
+                            <h2 class="chapter-nav-title">
+                                Índex
+                                <button class="chapter-nav-collapse" id="collapse-nav" aria-label="Plegar índex">−</button>
+                            </h2>
+                            <ul class="chapter-nav-list" id="chapter-nav-list">
                                 <li class="chapter-item"><a href="#prefaci" class="chapter-link">Prefaci (1847)</a></li>
                                 <li class="chapter-item">
                                     <a href="#cap1" class="chapter-link">I. Introducció</a>
