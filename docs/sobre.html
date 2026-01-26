@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sobre la Biblioteca Arion - Projecte col·laboratiu de traduccions obertes de clàssics universals al català">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Sobre - Biblioteca Arion">
+    <meta property="og:description" content="Projecte col·laboratiu de traduccions obertes de clàssics universals al català">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biblioteca-arion.github.io/biblioteca-universal-arion/sobre.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Sobre | Biblioteca Arion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="site-logo">
+                    <a href="index.html" class="site-title">Biblioteca Arion</a>
+                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
+                </div>
+
+                <nav class="main-nav" aria-label="Navegació principal">
+                    <ul>
+                        <li><a href="index.html">Catàleg</a></li>
+                        <li><a href="autors.html">Autors</a></li>
+                        <li><a href="sobre.html" class="active">Sobre</a></li>
+                        <li>
+                            <button class="theme-toggle" aria-label="Canviar tema">🌙</button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <article class="page-content">
+            <div class="container">
+                <header class="page-header text-center">
+                    <h1>Sobre la Biblioteca Arion</h1>
+                </header>
+
+                <div class="content-section" style="max-width: 800px; margin: 0 auto;">
+                    <h2>El projecte</h2>
+                    <p>La <strong>Biblioteca Arion</strong> és un projecte col·laboratiu i obert que té com a objectiu posar a l'abast del públic català traduccions de qualitat d'obres clàssiques universals.</p>
+
+                    <p>Combinem la potència de la intel·ligència artificial amb la revisió humana per crear traduccions que respectin tant el text original com la riquesa de la llengua catalana.</p>
+
+                    <h2>Metodologia</h2>
+                    <p>El nostre pipeline de traducció inclou:</p>
+                    <ul>
+                        <li><strong>Glossari terminològic</strong> - Establim un vocabulari consistent abans de traduir</li>
+                        <li><strong>Traducció inicial</strong> - Generada amb models d'IA especialitzats</li>
+                        <li><strong>Revisió de qualitat</strong> - Múltiples rondes de revisió automàtica</li>
+                        <li><strong>Correcció lingüística</strong> - Seguint la normativa de l'IEC</li>
+                        <li><strong>Estilització</strong> - Adaptació al registre literari adequat</li>
+                    </ul>
+
+                    <h2>Col·laboració</h2>
+                    <p>Totes les traduccions són obertes i estan disponibles a <a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank">GitHub</a>. T'animem a:</p>
+                    <ul>
+                        <li>Proposar correccions i millores</li>
+                        <li>Obrir discussions sobre interpretacions</li>
+                        <li>Suggerir noves obres per traduir</li>
+                    </ul>
+
+                    <h2>Contacte</h2>
+                    <p>Pots contactar-nos a través de les <a href="https://github.com/biblioteca-arion/biblioteca-universal-arion/issues" target="_blank">Issues de GitHub</a> o unir-te al nostre servidor de Discord.</p>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Biblioteca Arion</h3>
+                    <p>Traduccions obertes de clàssics universals al català.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Enllaços</h3>
+                    <ul>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion">GitHub</a></li>
+                        <li><a href="index.html">Catàleg</a></li>
+                        <li><a href="autors.html">Autors</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Llicència</h3>
+                    <p>Contingut sota <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca">CC BY-SA 4.0</a></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Biblioteca Arion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function setTheme(dark) {
+            document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+            themeToggle.textContent = dark ? '☀️' : '🌙';
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }
+
+        // Initialize
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            setTheme(savedTheme === 'dark');
+        } else {
+            setTheme(prefersDark.matches);
+        }
+
+        themeToggle.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            setTheme(!isDark);
+        });
+    </script>
+</body>
+</html>

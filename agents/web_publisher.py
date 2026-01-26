@@ -176,6 +176,27 @@ class WebPublisher(BaseAgent):
 
     def _convertir_markdown(self, contingut: str) -> str:
         """Converteix Markdown a HTML."""
+        # Preprocessar sintaxi Pandoc-style a HTML
+        # Convertir [text]{.class data-attr="val"} a <span class="class" data-attr="val">text</span>
+        import re
+
+        def pandoc_to_html(match):
+            text = match.group(1)
+            attrs = match.group(2)
+
+            # Extreure classe
+            class_match = re.search(r'\.(\w+)', attrs)
+            class_attr = f' class="{class_match.group(1)}"' if class_match else ''
+
+            # Extreure data-term
+            data_match = re.search(r'data-term="([^"]+)"', attrs)
+            data_attr = f' data-term="{data_match.group(1)}"' if data_match else ''
+
+            return f'<span{class_attr}{data_attr}>{text}</span>'
+
+        # Pattern per [text]{.class data-term="value"}
+        contingut = re.sub(r'\[([^\]]+)\]\{([^}]+)\}', pandoc_to_html, contingut)
+
         self.md.reset()
         return self.md.convert(contingut)
 
