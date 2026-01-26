@@ -78,6 +78,7 @@ from agents import (
     AgentPortadista,
     PortadistaConfig,
 )
+from agents.agents_retratista import AgentRetratista, generar_retrat_autor
 from utils.logger import AgentLogger, VerbosityLevel, get_logger
 from utils.dashboard import Dashboard, ProgressTracker, print_agent_activity
 from utils.translation_logger import TranslationLogger, LogLevel
@@ -137,6 +138,10 @@ class PipelineConfig(BaseModel):
     enable_cover: bool = Field(default=True)
     cover_genere: str = Field(default="NOV")  # FIL, POE, TEA, NOV, SAG, ORI, EPO
     cover_output_dir: Path | None = Field(default=None)
+
+    # Configuració de retrat d'autor
+    enable_author_portrait: bool = Field(default=True)
+    author_portraits_dir: Path = Field(default=Path("docs/assets/autors"))
 
     # Configuració del translation logger
     use_translation_logger: bool = Field(default=True)
@@ -203,6 +208,9 @@ class PipelineResult(BaseModel):
     # Portada generada
     cover_path: Path | None = None
 
+    # Retrat d'autor generat
+    author_portrait_path: Path | None = None
+
     # Estadístiques
     total_tokens: int = 0
     total_cost_eur: float = 0.0
@@ -256,6 +264,7 @@ class TranslationPipeline:
         self.corrector = CorrectorAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_correction else None
         self.estil_agent = EstilAgent(config=self.config.agent_config, registre=self.config.style_register) if self.config.enable_styling else None
         self.portadista = AgentPortadista(config=self.config.agent_config) if self.config.enable_cover else None
+        self.retratista = AgentRetratista() if self.config.enable_author_portrait else None
 
         self.config.output_dir.mkdir(parents=True, exist_ok=True)
         if self.config.enable_cache:
@@ -593,6 +602,14 @@ class TranslationPipeline:
                     )
                 )
 
+        # Generar retrat d'autor si no existeix
+        if self.config.enable_author_portrait and self.retratista and author:
+            self.logger.log_info("Pipeline", "Verificant retrat d'autor...")
+            result.author_portrait_path = self._generate_author_portrait(
+                author=author,
+                source_language=source_language,
+            )
+
         result.stages.append(
             StageResult(
                 stage=PipelineStage.COMPLETED,
@@ -919,6 +936,14 @@ class TranslationPipeline:
                         metadata={"cover_path": str(result.cover_path)},
                     )
                 )
+
+        # Fase 5: Generar retrat d'autor si no existeix
+        if self.config.enable_author_portrait and self.retratista and author:
+            self.logger.log_info("Pipeline", "Fase 5: Verificant retrat d'autor...")
+            result.author_portrait_path = self._generate_author_portrait(
+                author=author,
+                source_language=source_language,
+            )
 
         result.stages.append(
             StageResult(
@@ -1469,6 +1494,88 @@ class TranslationPipeline:
 
         except Exception as e:
             self.logger.log_error("Portadista", e)
+            return None
+
+    def _generate_author_portrait(
+        self,
+        author: str | None,
+        source_language: SupportedLanguage,
+    ) -> Path | None:
+        """Genera el retrat de l'autor si no existeix.
+
+        Args:
+            author: Nom de l'autor.
+            source_language: Llengua d'origen per determinar l'estil.
+
+        Returns:
+            Path a la imatge generada o None si ja existeix o falla.
+        """
+        if not author or not self.retratista or not self.retratista.venice:
+            return None
+
+        # Crear nom de fitxer segur
+        author_slug = author.lower().replace(" ", "_").replace("'", "")
+        for char, repl in [("à", "a"), ("è", "e"), ("é", "e"), ("í", "i"),
+                           ("ò", "o"), ("ó", "o"), ("ú", "u"), ("ü", "u"), ("ç", "c")]:
+            author_slug = author_slug.replace(char, repl)
+        author_slug = "".join(c for c in author_slug if c.isalnum() or c == "_")[:30]
+
+        # Directori de retrats
+        portraits_dir = self.config.author_portraits_dir
+        portraits_dir.mkdir(parents=True, exist_ok=True)
+        portrait_path = portraits_dir / f"{author_slug}.png"
+
+        # Si ja existeix, no regenerar
+        if portrait_path.exists():
+            self.logger.log_info("Retratista", f"Retrat d'autor ja existeix: {portrait_path}")
+            return portrait_path
+
+        try:
+            # Determinar gènere/estil segons llengua
+            genere_map = {
+                "japonès": "ORI",
+                "xinès": "ORI",
+                "sànscrit": "SAG",
+                "grec": "FIL",
+                "llatí": "FIL",
+                "hebreu": "SAG",
+                "alemany": "FIL",
+                "anglès": "NOV",
+                "francès": "NOV",
+                "italià": "POE",
+                "rus": "NOV",
+                "àrab": "SAG",
+                "persa": "POE",
+            }
+            genere = genere_map.get(source_language, "FIL")
+
+            # Determinar època aproximada
+            epoca_map = {
+                "grec": "Grècia clàssica",
+                "llatí": "Roma antiga",
+                "japonès": "Japó modern",
+                "xinès": "Xina clàssica",
+                "alemany": "Alemanya, s. XVIII-XIX",
+                "francès": "França, s. XVII-XIX",
+                "anglès": "Anglaterra, s. XVI-XIX",
+                "rus": "Rússia, s. XIX",
+            }
+            epoca = epoca_map.get(source_language, "Antiguitat clàssica")
+
+            self.logger.log_info("Retratista", f"Generant retrat per '{author}'...")
+
+            portrait_bytes = generar_retrat_autor(
+                nom=author,
+                epoca=epoca,
+                genere=genere,
+                output_path=portrait_path,
+            )
+
+            self.logger.log_info("Retratista", f"Retrat generat: {portrait_path}")
+            return portrait_path
+
+        except Exception as e:
+            self.logger.log_error("Retratista", e)
             return None
 
     def _save_result(self, result: PipelineResult) -> Path:
