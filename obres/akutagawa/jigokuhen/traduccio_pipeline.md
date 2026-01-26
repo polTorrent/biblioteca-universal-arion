@@ -342,7 +342,7 @@ A més, el carruatge de crina de palmera col·locat al jardí, amb la capota alt
 
 El mateix Yoshihide estava una mica apartat, agenollat just davant de la galeria, amb el kariginu del color de sempre tenyit d'encens i el momi eboshi murri, i semblava encara més petit i miserable que de costum, com si l'hagués oprimit el pes del cel estrellat. Darrere seu hi havia un altre home encorbat amb el mateix eboshi i kariginu, que devia ser probablement un dels seus deixebles. Com que tots dos estaven ajupits en la llunyania fosca, des de sota la galeria on jo era no es podia distingir ni tan sols el color del kariginu.
 
-XVII
+## Disset
 
 L'hora devia ser prop de mitjanit. La foscor que embolicava el jardí semblava contenir l'alè, com si espiés la respiració de tots els presents, i només se sentia el lleu murmuri del vent nocturn que, de tant en tant, portava l'olor de sutge del fum de les torxes. El Gran Senyor va romandre en silenci una estona, contemplant fixament aquest estrany espectacle, però aviat va avançar els genolls i va cridar amb veu tallant:
 
@@ -368,7 +368,7 @@ En sentir l'ordre, un dels servidors va apropar-se ràpidament al carro amb una 
 
 Va ser aleshores. El samurai que tenia davant meu es va aixecar precipitadament, i mentre subjectava l'empunyadura de l'espasa amb una mà, va mirar fixament cap a Yoshihide. Sorprès, vaig mirar-lo, i aquell home devia haver perdut mig seny davant aquest espectacle. El que fins aleshores havia estat ajupit a terra, de sobte es va aixecar d'un salt i, amb els dos braços estesos cap endavant, va córrer instintivament cap al carro. Malauradament, com ja he dit abans, es trobava lluny, entre les ombres, de manera que no podia veure clarament les seves faccions. Però aquesta impressió va durar només un instant, car el rostre pàl·lid de Yoshihide —no, més aviat la figura de Yoshihide, com si alguna força invisible l'hagués aixecat pels aires— va emergir de sobte de la penombra i va aparèixer clarament davant els meus ulls. El carro de binrōge amb la filla a dins va començar a cremar violentament en aquell moment, quan els servidors hi van llançar les torxes enceses seguint l'ordre del Gran Senyor: «Feu-hi foc!»
 
-XVIII
+## Divuit
 
 El foc va embolicar la coberta del carro en un instant. Quan les borles porpres dels ràfecs van onejar com si les hagués bufat el vent, des de sota va sortir un fum blanc que girava en espirals fins i tot en la foscor de la nit, i les espurnes van volar com la pluja —les cortines, les mànigues, els ornaments metàl·lics del sostre— com si tot s'hagués fet miques alhora. La ferocitat d'aquell espectacle era indescriptible! No, més que això, el color de les flames ardents que s'alçaven fins a mig cel, enroscant-se com llengües al voltant de les gelosies de les mànigues, era com si el sol hagués caigut a terra i el foc celestial hagués esclatat. Jo, que abans gairebé havia estat a punt de cridar, ara havia perdut completament l'ànima i només podia romandre bocabadat, contemplant estupefacte aquesta escena terrible. Però el pare, Yoshihide...
 
