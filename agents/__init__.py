@@ -14,13 +14,14 @@ from agents.reviewer_agent import (
     ReviewIssue,
     ReviewRequest,
 )
-from agents.translator_agent import TranslationRequest, TranslatorAgent
+from agents.translator_agent import TranslationRequest, TranslatorAgent, SupportedLanguage
 from agents.corrector import CorrectorAgent, CorrectionRequest
 from agents.glossarista import (
     GlossaristaAgent,
     GlossaryRequest,
     GlossaryEntry as GlossaryEntryModel,
     OnomasticEntry,
+    DEFAULT_CATEGORIES,
 )
 from agents.formatter import (
     FormatterAgent,
@@ -43,6 +44,17 @@ from agents.portadista import (
     PALETES,
     generar_portada_obra,
 )
+from agents.web_publisher import (
+    WebPublisher,
+    WebPublisherConfig,
+    ObraMetadata,
+    publicar_biblioteca,
+)
+from agents.agent_estil import (
+    EstilAgent,
+    StyleRequest,
+    StyleNote,
+)
 
 __all__ = [
     "BaseAgent",
@@ -56,6 +68,7 @@ __all__ = [
     "TextChunk",
     "TranslatorAgent",
     "TranslationRequest",
+    "SupportedLanguage",
     "ReviewerAgent",
     "ReviewRequest",
     "ReviewIssue",
@@ -66,6 +79,7 @@ __all__ = [
     "GlossaryRequest",
     "GlossaryEntryModel",
     "OnomasticEntry",
+    "DEFAULT_CATEGORIES",
     "FormatterAgent",
     "FormattingRequest",
     "WorkMetadata",
@@ -81,4 +95,11 @@ __all__ = [
     "PortadistaConfig",
     "PALETES",
     "generar_portada_obra",
+    "WebPublisher",
+    "WebPublisherConfig",
+    "ObraMetadata",
+    "publicar_biblioteca",
+    "EstilAgent",
+    "StyleRequest",
+    "StyleNote",
 ]

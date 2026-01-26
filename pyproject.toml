@@ -1,7 +1,7 @@
 [project]
 name = "editorial-classica"
 version = "0.1.0"
-description = "Pipeline editorial per traduir clàssics grecollatins al català"
+description = "Pipeline editorial per traduir clàssics universals al català"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }

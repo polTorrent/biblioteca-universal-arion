@@ -21,7 +21,7 @@ class TextMetadata(BaseModel):
 
     titol: str
     autor: str
-    llengua_original: Literal["llatí", "grec", "altres"]
+    llengua_original: Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "altres"]
     font: TextSource
     edicio: str | None = None
     any_publicacio: int | None = None
@@ -34,7 +34,7 @@ class SearchRequest(BaseModel):
 
     autor: str | None = None
     titol: str | None = None
-    llengua: Literal["llatí", "grec", "qualsevol"] = "qualsevol"
+    llengua: Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"] = "qualsevol"
     preferencies_font: list[str] = Field(default_factory=lambda: ["perseus", "latin_library"])
 
 
@@ -50,7 +50,7 @@ class PescadorTextosAgent(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return """Ets un expert en biblioteques digitals de textos clàssics grecollatins.
+        return """Ets un expert en biblioteques digitals de textos clàssics universals.
 
 OBJECTIU:
 Ajudar a localitzar, identificar i obtenir textos clàssics de domini públic en les millors edicions disponibles.
@@ -76,6 +76,19 @@ FONTS PRINCIPALS:
 4. WIKISOURCE (la.wikisource.org, el.wikisource.org)
    - Textos llatins i grecs col·laboratius
    - Qualitat variable, verificar edició
+
+5. AOZORA BUNKO (aozora.gr.jp)
+   - La millor font per a textos japonesos clàssics i moderns
+   - Inclou obres de Meiji, Taisho i principis de Showa
+   - Format: HTML o TXT, codificació Shift_JIS (convertir a UTF-8)
+   - Autors: Akutagawa, Natsume Soseki, Mori Ogai, etc.
+
+6. CHINESE TEXT PROJECT (ctext.org)
+   - Textos clàssics xinesos amb versions paral·leles
+   - Confuci, Laozi, poesia Tang i altres
+
+7. CCEL / INTERNET ARCHIVE
+   - Textos en anglès, alemany, francès clàssics
 
 CRITERIS DE SELECCIÓ:
 - Preferir edicions crítiques (Teubner, OCT, Loeb)

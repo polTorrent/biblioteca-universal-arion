@@ -41,57 +41,69 @@
 {% block content %}
 <article class="page-content">
     <div class="container">
-        <!-- Capçalera de l'obra -->
+        <!-- Capçalera de l'obra amb portada -->
         <header class="work-header">
-            <h1 class="work-title">{{ obra.titol }}</h1>
-            {% if obra.titol_original %}
-            <p class="work-title-original">{{ obra.titol_original }}</p>
-            {% endif %}
+            <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                {% if obra.portada_url %}
+                <div class="work-cover" style="flex-shrink: 0;">
+                    <img src="{{ base_url }}{{ obra.portada_url }}"
+                         alt="Portada de {{ obra.titol }}"
+                         style="max-width: 200px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                </div>
+                {% endif %}
 
-            <div class="work-meta-grid">
-                <div class="work-meta-item">
-                    <strong>Autor</strong>
-                    {{ obra.autor }}
-                    {% if obra.autor_original and obra.autor_original != obra.autor %}
-                    <br><small>({{ obra.autor_original }})</small>
+                <div class="work-info" style="flex: 1; min-width: 300px;">
+                    <h1 class="work-title">{{ obra.titol }}</h1>
+                    {% if obra.titol_original %}
+                    <p class="work-title-original">{{ obra.titol_original }}</p>
+                    {% endif %}
+
+                    <div class="work-meta-grid">
+                        <div class="work-meta-item">
+                            <strong>Autor</strong>
+                            {{ obra.autor }}
+                            {% if obra.autor_original and obra.autor_original != obra.autor %}
+                            <br><small>({{ obra.autor_original }})</small>
+                            {% endif %}
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Traducció</strong>
+                            {{ obra.traductor|default('Biblioteca Arion') }}
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Llengua original</strong>
+                            {{ obra.llengua_original|capitalize }}
+                        </div>
+
+                        {% if obra.any_original %}
+                        <div class="work-meta-item">
+                            <strong>Data original</strong>
+                            {{ obra.any_original }}
+                        </div>
+                        {% endif %}
+
+                        {% if obra.estat %}
+                        <div class="work-meta-item">
+                            <strong>Estat</strong>
+                            <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                        </div>
+                        {% endif %}
+
+                        {% if obra.qualitat %}
+                        <div class="work-meta-item">
+                            <strong>Qualitat</strong>
+                            {{ obra.qualitat }}/10
+                        </div>
+                        {% endif %}
+                    </div>
+
+                    {% if obra.descripcio %}
+                    <p class="work-description">{{ obra.descripcio }}</p>
                     {% endif %}
                 </div>
-
-                <div class="work-meta-item">
-                    <strong>Traducció</strong>
-                    {{ obra.traductor|default('Editorial Clàssica') }}
-                </div>
-
-                <div class="work-meta-item">
-                    <strong>Llengua original</strong>
-                    {{ obra.llengua_original|capitalize }}
-                </div>
-
-                {% if obra.any_original %}
-                <div class="work-meta-item">
-                    <strong>Data original</strong>
-                    {{ obra.any_original }}
-                </div>
-                {% endif %}
-
-                {% if obra.estat %}
-                <div class="work-meta-item">
-                    <strong>Estat</strong>
-                    <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
-                </div>
-                {% endif %}
-
-                {% if obra.qualitat %}
-                <div class="work-meta-item">
-                    <strong>Qualitat</strong>
-                    {{ obra.qualitat }}/10
-                </div>
-                {% endif %}
             </div>
-
-            {% if obra.descripcio %}
-            <p class="work-description">{{ obra.descripcio }}</p>
-            {% endif %}
         </header>
 
         <!-- Controls de vista -->

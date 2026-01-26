@@ -51,8 +51,8 @@ termes:
       No confondre Grund (raó/fonament) amb Ursache (causa). La causa
       és només una de les quatre formes de Grund.
     traduccions_alternatives:
-      - "fonament" (quan s'emfatitza l'aspecte ontològic)
-      - "raó" (quan s'emfatitza l'aspecte lògic)
+      - "fonament (quan s'emfatitza l'aspecte ontològic)"
+      - "raó (quan s'emfatitza l'aspecte lògic)"
     referencies_obra: ["§16", "§20", "§29", "§35", "§43"]
 
   # ══════════════════════════════════════════════════════════════
@@ -136,8 +136,8 @@ termes:
       "idea" platònica (Idee) ni amb "imaginació". Schopenhauer segueix
       Kant però amplia el concepte.
     traduccions_alternatives:
-      - "idea" (rebutjada - confusió amb Plató)
-      - "presentació" (possible però menys establerta)
+      - "idea (rebutjada - confusió amb Plató)"
+      - "presentació (possible però menys establerta)"
     referencies_obra: ["§1", "§16", "§17"]
     termes_relacionats: ["Objekt", "Subjekt", "Anschauung"]
 
@@ -168,8 +168,8 @@ termes:
       "Erscheinung" pot traduir-se com "fenomen" (tècnic) o "aparença"
       (més literal). Preferim "fenomen" en contextos tècnics.
     traduccions_alternatives:
-      - "aparença" (quan s'oposa a "realitat")
-      - "fenomen" (context tècnic kantià)
+      - "aparença (quan s'oposa a realitat)"
+      - "fenomen (context tècnic kantià)"
     referencies_obra: ["§17", "§21"]
 
   - id: "anschauung"
@@ -352,8 +352,8 @@ termes:
       "Leib" es distingeix de "Körper" (cos físic). Leib és el cos
       viscut, experimentat des de dins.
     traduccions_alternatives:
-      - "cos viscut" (per emfatitzar la dimensió experiencial)
-      - "cos propi" (quan s'oposa al cos objectiu)
+      - "cos viscut (per emfatitzar la dimensió experiencial)"
+      - "cos propi (quan s'oposa al cos objectiu)"
     referencies_obra: ["§18", "§40"]
 
   # ══════════════════════════════════════════════════════════════

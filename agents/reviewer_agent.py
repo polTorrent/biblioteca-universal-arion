@@ -8,6 +8,7 @@ from pydantic import BaseModel, Field
 from typing import TYPE_CHECKING
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger
@@ -37,7 +38,7 @@ class ReviewRequest(BaseModel):
 
     original_text: str
     translated_text: str
-    source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"] = "llatí"
+    source_language: SupportedLanguage = "llatí"
     author: str | None = None
     work_title: str | None = None
 
@@ -60,7 +61,7 @@ class ReviewerAgent(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return """Ets un revisor expert de traduccions de textos clàssics grecollatins al català.
+        return """Ets un revisor expert de traduccions de textos clàssics universals al català.
 
 OBJECTIU:
 Avaluar i millorar traduccions garantint fidelitat, correcció i qualitat literària.
@@ -143,7 +144,7 @@ Respon en format JSON amb l'estructura següent:
         Returns:
             AgentResponse amb correccions bàsiques.
         """
-        prompt = f"""Revisa aquest text català traduït d'un clàssic grecollatí.
+        prompt = f"""Revisa aquest text català traduït d'un clàssic universal.
 Centra't només en correcció lingüística i qualitat literària.
 
 TEXT:

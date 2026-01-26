@@ -5,6 +5,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 
 class IntroductionSection(BaseModel):
@@ -20,7 +21,7 @@ class IntroductionRequest(BaseModel):
 
     titol: str
     autor: str
-    llengua_original: Literal["llatí", "grec"]
+    llengua_original: SupportedLanguage
     resum_obra: str
     context_historic: str
     public_objectiu: str
@@ -46,7 +47,7 @@ class IntroduccioAgent(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return f"""Ets un especialista en literatura clàssica expert en redactar introduccions per a edicions de textos grecollatins.
+        return f"""Ets un especialista en literatura clàssica universal expert en redactar introduccions per a edicions de textos de diverses tradicions.
 
 OBJECTIU:
 Escriure introduccions que contextualitzin l'obra per al lector modern i facilitin la seva comprensió i gaudi.

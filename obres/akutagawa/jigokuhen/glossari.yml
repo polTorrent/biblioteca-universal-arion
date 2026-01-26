@@ -1,0 +1,158 @@
+# Glossari - Jigokuhen (地獄変) - El biombo de l'infern
+# Akutagawa Ryūnosuke (1918)
+
+termes:
+  # Personatges i títols
+  - id: "otono-sama"
+    grec: "大殿様"
+    transliteracio: "Ōtono-sama"
+    traduccio: "el Gran Senyor"
+    definicio: >
+      Tracte honorífic per al senyor de la mansió Horikawa. Literalment "Gran Senyor
+      de la mansió". Manté distància respectuosa entre el narrador (un servent) i el
+      seu amo. El personatge representa el poder absolut de l'aristocràcia Heian.
+    usos: [1, 2, 3]
+
+  - id: "yoshihide"
+    grec: "良秀"
+    transliteracio: "Yoshihide"
+    traduccio: "Yoshihide"
+    definicio: >
+      Nom del pintor protagonista. Pronunciació: Yo-shi-hi-de. Segons algunes
+      interpretacions, podria estar basat en el pintor històric Kudara no Kawanari.
+      El seu nom és usat també per al mico de la mansió, com a burla cruel.
+    usos: [1, 2, 3]
+
+  - id: "ko-nyobo"
+    grec: "小女房"
+    transliteracio: "ko-nyōbō"
+    traduccio: "dama de companyia menor"
+    definicio: >
+      Rang inferior de serventa a la cort Heian. La filla de Yoshihide serveix en
+      aquest rang a la mansió del Gran Senyor. Posició que donava accés als cercles
+      aristocràtics però amb estatus modest.
+    usos: [2, 3]
+
+  # Vestimenta
+  - id: "kariginu"
+    grec: "狩衣"
+    transliteracio: "kariginu"
+    traduccio: "kariginu"
+    definicio: >
+      Vestit informal de caça usat per nobles i samurais. Túnica àmplia amb mànigues
+      obertes, originalment dissenyada per a la caça. El fet que Yoshihide en porti
+      un de "tenyit de clau d'olor" indica certa pretensió malgrat la seva humil aparença.
+    usos: [2]
+
+  - id: "eboshi"
+    grec: "烏帽子"
+    transliteracio: "eboshi"
+    traduccio: "eboshi"
+    definicio: >
+      Barret negre lacat usat per homes de classe alta al Japó medieval. Forma cònica
+      o cilíndrica. El d'en Yoshihide és "arrugat", detall que indica el seu caràcter
+      descurat i excèntric.
+    usos: [2]
+
+  - id: "uchigi"
+    grec: "袿"
+    transliteracio: "uchigi"
+    traduccio: "uchigi"
+    definicio: >
+      Túnica interior elegant portada per dones de la cort. Part del vestit formal
+      jūnihitoe (les dotze capes). L'uchigi color porpra de la filla de Yoshihide
+      indica el seu estatus a la cort del Gran Senyor.
+    usos: [2]
+
+  - id: "akome"
+    grec: "袙"
+    transliteracio: "akome"
+    traduccio: "akome"
+    definicio: >
+      Túnica curta portada sota l'uchigi. El Gran Senyor regala un akome vermell a
+      la filla de Yoshihide com a recompensa per la seva pietat filial, un regal
+      d'alt valor simbòlic.
+    usos: [3]
+
+  # Termes religiosos i sobrenaturals
+  - id: "jigoku-hen"
+    grec: "地獄変"
+    transliteracio: "jigoku-hen"
+    traduccio: "biombo de l'infern"
+    definicio: >
+      Biombo pintat amb escenes dels inferns budistes. "Jigoku" (地獄) significa infern,
+      i "hen" (変) indica transformació o metamorfosi. El títol suggereix les
+      transformacions que pateixen els condemnats a l'infern, però també la transformació
+      que l'obra d'art provoca en el seu creador.
+    usos: [1]
+
+  - id: "goka"
+    grec: "業火"
+    transliteracio: "gōka"
+    traduccio: "foc càrmic / flames del karma"
+    definicio: >
+      Foc de l'infern budista que crema els pecadors segons el seu karma. Literalment
+      "foc de les accions (karma)". Les flames que purifiquen però també destrueixen,
+      símbol central de l'obra.
+    usos: [6]
+
+  - id: "hyakki-yako"
+    grec: "百鬼夜行"
+    transliteracio: "hyakki yakō"
+    traduccio: "processó nocturna dels cent dimonis"
+    definicio: >
+      Creença popular japonesa segons la qual, en certes nits, els esperits i dimonis
+      surten en processó pels carrers. Trobar-s'hi porta desgràcia o mort. El Gran
+      Senyor hi sobreviu per la seva autoritat sobrenatural.
+    usos: [1]
+
+  - id: "goryo"
+    grec: "御霊"
+    transliteracio: "goryō"
+    traduccio: "esperit vengatiu"
+    definicio: >
+      Esperit d'un mort que pot causar calamitats si no és apaivagat amb rituals.
+      Culte molt important al Japó del període Heian, on les epidèmies i desastres
+      s'atribuïen a esperits ressentits.
+    usos: [4]
+
+  # Llocs
+  - id: "horikawa"
+    grec: "堀川"
+    transliteracio: "Horikawa"
+    traduccio: "Horikawa"
+    definicio: >
+      Districte de l'antiga Kyoto on es troba la mansió del Gran Senyor. Literalment
+      "riu del canal". Zona aristocràtica de la capital durant el període Heian.
+    usos: [1]
+
+  # Rang social i oficis
+  - id: "eshi"
+    grec: "絵師"
+    transliteracio: "eshi"
+    traduccio: "mestre pintor"
+    definicio: >
+      Artista professional de pintura al Japó. Durant el període Heian, els pintors
+      de renom tenien un estatus social respectat, encara que mai al nivell de
+      l'aristocràcia que servien. Yoshihide n'és el més famós del seu temps.
+    usos: [1, 2]
+
+  - id: "gozu-mezu"
+    grec: "牛頭馬頭"
+    transliteracio: "gozu mezu"
+    traduccio: "Gozu i Mezu"
+    definicio: >
+      Guardians de l'infern budista amb caps de bou (Gozu) i cavall (Mezu). Torturen
+      els condemnats i apareixen freqüentment a l'art religiós budista. Yoshihide
+      els ha de pintar al biombo de l'infern.
+    usos: [6]
+
+  - id: "naraku"
+    grec: "奈落"
+    transliteracio: "naraku"
+    traduccio: "naraka / abisme infernal"
+    definicio: >
+      Del sànscrit "naraka". Els inferns budistes, lloc de turment per als pecadors.
+      Yoshihide diu que en somnis ha estat cridat a aquest abisme, experiència que
+      el marca profundament com a artista.
+    usos: [8]

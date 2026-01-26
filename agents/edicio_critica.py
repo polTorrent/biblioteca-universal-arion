@@ -5,6 +5,7 @@ from typing import Literal
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 
 class FootNote(BaseModel):
@@ -22,7 +23,7 @@ class AnnotationRequest(BaseModel):
 
     text_original: str
     text_traduit: str
-    llengua_original: Literal["llatí", "grec"] = "llatí"
+    llengua_original: SupportedLanguage = "llatí"
     autor: str
     titol: str
     context_investigador: str | None = None
@@ -46,7 +47,7 @@ class EdicioCriticaAgent(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return f"""Ets un filòleg clàssic expert en edicions crítiques de textos grecollatins.
+        return f"""Ets un filòleg expert en edicions crítiques de textos clàssics universals.
 
 OBJECTIU:
 Crear un aparat crític professional amb notes a peu de pàgina que enriqueixin la lectura.

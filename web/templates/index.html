@@ -1,14 +1,14 @@
 {% extends "base.html" %}
 
-{% block title %}Catàleg d'Obres | Editorial Clàssica{% endblock %}
-{% block description %}Catàleg complet de traduccions de textos clàssics grecollatins al català. Filosofia, literatura, història i retòrica.{% endblock %}
+{% block title %}Catàleg d'Obres | Biblioteca Arion{% endblock %}
+{% block description %}Catàleg de traduccions obertes de clàssics universals al català. Filosofia, literatura, teatre i poesia.{% endblock %}
 
 {% block content %}
 <section class="hero">
     <div class="container">
-        <h1>Editorial Clàssica</h1>
+        <h1>Biblioteca Arion</h1>
         <p class="hero-subtitle">
-            Traduccions de textos grecollatins al català, amb rigor filològic i sensibilitat literària
+            Traduccions obertes i col·laboratives de clàssics universals al català
         </p>
     </div>
 </section>
@@ -30,32 +30,39 @@
         {% if obres %}
         <div class="works-grid">
             {% for obra in obres %}
-            <article class="work-card">
-                <h3 class="work-card-title">
-                    <a href="{{ base_url }}{{ obra.slug }}.html">{{ obra.titol }}</a>
-                </h3>
-                <p class="work-card-author">{{ obra.autor }}</p>
-
-                {% if obra.descripcio %}
-                <p class="work-card-description">{{ obra.descripcio }}</p>
+            <article class="work-card" style="display: flex; gap: 1rem;">
+                {% if obra.portada_url %}
+                <div class="work-card-cover" style="flex-shrink: 0;">
+                    <a href="{{ base_url }}{{ obra.slug }}.html">
+                        <img src="{{ base_url }}{{ obra.portada_url }}"
+                             alt="Portada"
+                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+                    </a>
+                </div>
                 {% endif %}
+                <div class="work-card-content" style="flex: 1;">
+                    <h3 class="work-card-title">
+                        <a href="{{ base_url }}{{ obra.slug }}.html">{{ obra.titol }}</a>
+                    </h3>
+                    <p class="work-card-author">{{ obra.autor }}</p>
 
-                <div class="work-card-meta">
-                    {% if obra.llengua_original %}
-                    <span>📜 {{ obra.llengua_original|capitalize }}</span>
+                    {% if obra.descripcio %}
+                    <p class="work-card-description">{{ obra.descripcio|truncate(150) }}</p>
                     {% endif %}
 
-                    {% if obra.any_original %}
-                    <span>📅 {{ obra.any_original }}</span>
-                    {% endif %}
+                    <div class="work-card-meta">
+                        {% if obra.llengua_original %}
+                        <span>{{ obra.llengua_original|capitalize }}</span>
+                        {% endif %}
 
-                    {% if obra.estat %}
-                    <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
-                    {% endif %}
+                        {% if obra.any_original %}
+                        <span>{{ obra.any_original }}</span>
+                        {% endif %}
 
-                    {% if obra.qualitat %}
-                    <span>⭐ {{ obra.qualitat }}/10</span>
-                    {% endif %}
+                        {% if obra.estat %}
+                        <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                        {% endif %}
+                    </div>
                 </div>
             </article>
             {% endfor %}
@@ -74,17 +81,18 @@
         <h2 class="text-center mb-xl">Sobre el projecte</h2>
         <div style="max-width: 700px; margin: 0 auto;">
             <p>
-                <strong>Editorial Clàssica</strong> és un projecte de traducció de textos grecollatins al català.
-                Cada traducció inclou:
+                La <strong>Biblioteca Arion</strong> és una biblioteca oberta i col·laborativa de traduccions
+                al català d'obres clàssiques universals. Cada traducció inclou:
             </p>
             <ul style="margin: var(--spacing-lg) 0; padding-left: var(--spacing-xl);">
                 <li><strong>Text bilingüe</strong> — Original i traducció en paral·lel</li>
                 <li><strong>Notes explicatives</strong> — Context històric i filosòfic</li>
                 <li><strong>Glossari terminològic</strong> — Termes clau amb definicions</li>
-                <li><strong>Aparell crític</strong> — Referències a edicions i estudis</li>
+                <li><strong>Llicència oberta</strong> — CC BY-SA 4.0</li>
             </ul>
             <p>
-                Les traduccions busquen l'equilibri entre fidelitat filològica i qualitat literària en català.
+                Busquem l'equilibri entre fidelitat filològica i qualitat literària.
+                <a href="https://github.com/biblioteca-arion/biblioteca-universal-arion">Col·labora a GitHub</a>
             </p>
         </div>
     </div>

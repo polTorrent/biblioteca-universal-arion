@@ -10,6 +10,7 @@ from typing import Literal, TYPE_CHECKING
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.translator_agent import SupportedLanguage
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger
@@ -21,7 +22,7 @@ class WorkMetadata(BaseModel):
     title: str
     author: str
     translator: str = "Editorial Clàssica"
-    source_language: Literal["grec", "llatí", "anglès", "alemany", "francès"] = "grec"
+    source_language: SupportedLanguage = "grec"
     original_author: str | None = None
     original_title: str | None = None
     period: str | None = None
