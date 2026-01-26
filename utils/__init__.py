@@ -16,6 +16,12 @@ from utils.dashboard import (
     create_summary_table,
     print_agent_activity,
 )
+from utils.translation_logger import (
+    TranslationLogger,
+    LogLevel,
+    LogColors,
+    LiveDashboard,
+)
 
 __all__ = [
     # Logger
@@ -32,4 +38,9 @@ __all__ = [
     "AgentStatus",
     "create_summary_table",
     "print_agent_activity",
+    # Translation Logger
+    "TranslationLogger",
+    "LogLevel",
+    "LogColors",
+    "LiveDashboard",
 ]
