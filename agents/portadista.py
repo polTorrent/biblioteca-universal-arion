@@ -1,4 +1,9 @@
-"""Agent per a la generació de portades de llibres minimalistes i simbòliques."""
+"""Agent per a la generació de portades de llibres minimalistes i simbòliques.
+
+Utilitza Claude per crear prompts artístics i Venice.ai per generar imatges.
+Estil visual: ULTRA-MINIMALISTA, ABSTRACTE, un sol element simbòlic, 70%+ espai buit.
+Format: Vertical 2:3 per a llibres.
+"""
 
 import io
 import json
@@ -8,140 +13,123 @@ from typing import Literal
 from PIL import Image, ImageDraw, ImageFont
 from pydantic import BaseModel, Field
 
-from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
-from agents.venice_client import VeniceClient, VeniceError
+try:
+    from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+    from agents.venice_client import VeniceClient, VeniceError
+except ImportError:
+    from base_agent import AgentConfig, AgentResponse, BaseAgent
+    from venice_client import VeniceClient, VeniceError
 
 
-# Tipus de gènere literari
 GenreLiterari = Literal["FIL", "POE", "TEA", "NOV", "SAG", "ORI", "EPO"]
 
 
 class PaletaGenere(BaseModel):
     """Paleta de colors i estil per a un gènere literari."""
-
     colors: list[str]
     estil: str
     descripcio: str
-    background: str  # Color de fons dominant
-    accent: str      # Color d'accent principal
+    background: str
+    accent: str
+    text_color: str = "#1A1A1A"
 
 
-# Paletes de colors per gènere
 PALETES: dict[str, PaletaGenere] = {
     "FIL": PaletaGenere(
-        colors=["blanc", "gris", "negre", "or"],
-        estil="geomètric, filosòfic, abstracte",
-        descripcio="Formes geomètriques pures, línies netes, espai contemplatiu",
-        background="#F5F5F5",
-        accent="#1A1A1A",
+        colors=["pure white", "soft gray", "deep black", "subtle gold"],
+        estil="geometric abstract minimalist",
+        descripcio="Pure geometric forms, single shape, vast emptiness",
+        background="#F8F8F8",
+        accent="#2C2C2C",
+        text_color="#1A1A1A",
     ),
     "POE": PaletaGenere(
-        colors=["pastels suaus", "rosa pàl·lid", "blau cel", "accent intens"],
-        estil="líric, eteri, delicat",
-        descripcio="Atmosfera onírica, formes fluides, llum suau difusa",
-        background="#F8F4F9",
-        accent="#8B4B6E",
+        colors=["pale pink", "soft lavender", "pearl white", "muted blue"],
+        estil="ethereal abstract delicate",
+        descripcio="Single floating abstract form, dreamlike, soft gradient",
+        background="#FAF5F7",
+        accent="#6B4C5A",
+        text_color="#3D2E35",
     ),
     "TEA": PaletaGenere(
-        colors=["negre profund", "vermell intens", "or"],
-        estil="dramàtic, alt contrast, teatral",
-        descripcio="Clarobscur intens, màscares, cortines, escenari",
+        colors=["deep black", "rich crimson", "antique gold"],
+        estil="dramatic high contrast abstract",
+        descripcio="Bold abstract shape, dramatic shadows, theatrical",
         background="#1A1A1A",
-        accent="#C41E3A",
+        accent="#B8860B",
+        text_color="#F5F5F5",
     ),
     "NOV": PaletaGenere(
-        colors=["tons atmosfèrics", "sèpia", "blau grisós"],
-        estil="narratiu, atmosfèric, evocador",
-        descripcio="Paisatges difuminats, siluetes, profunditat atmosfèrica",
-        background="#E8E4DF",
+        colors=["sepia", "gray blue", "olive", "cream"],
+        estil="atmospheric abstract silhouette",
+        descripcio="Single misty silhouette, atmospheric depth, muted",
+        background="#F5F0E8",
         accent="#4A5568",
+        text_color="#2D3748",
     ),
     "SAG": PaletaGenere(
-        colors=["blau profund", "or", "blanc lluminós"],
-        estil="místic, lluminós, transcendent",
-        descripcio="Llum celestial, símbols sagrats, aura mística",
-        background="#0A1628",
+        colors=["deep blue", "luminous gold", "pure white"],
+        estil="mystical abstract luminous",
+        descripcio="Single sacred geometric form, ethereal glow, transcendent",
+        background="#0D1B2A",
         accent="#D4AF37",
+        text_color="#F0E6D3",
     ),
     "ORI": PaletaGenere(
-        colors=["tinta negra", "vermell xinès", "or", "blanc pergamí"],
-        estil="cal·ligràfic, zen, minimalista oriental",
-        descripcio="Pinzellada única, espai buit significatiu, equilibri asimètric",
+        colors=["black ink", "rice paper white", "vermillion accent"],
+        estil="zen brushstroke minimal",
+        descripcio="Single ink brushstroke, ensō inspired, vast empty space",
         background="#FAF8F5",
-        accent="#B22222",
+        accent="#8B0000",
+        text_color="#2C1810",
     ),
     "EPO": PaletaGenere(
-        colors=["tons terra", "bronze", "cel blau profund", "or antic"],
-        estil="heroic, monumental, antic",
-        descripcio="Figures heroiques, arquitectura monumental, llum daurada",
-        background="#2C1810",
-        accent="#CD7F32",
+        colors=["earth brown", "ancient bronze", "deep blue", "aged gold"],
+        estil="monumental abstract ancient",
+        descripcio="Single monolithic abstract form, ancient feeling, weathered",
+        background="#1C1410",
+        accent="#CD853F",
+        text_color="#E8DCC8",
     ),
 }
 
 
 class PromptResult(BaseModel):
     """Resultat de la generació de prompt."""
-
     prompt: str
     negative_prompt: str
     simbol: str
     raonament: str
-    paleta: str
+    paleta: dict
     genere: str
 
 
 class PortadistaConfig(BaseModel):
     """Configuració de l'agent portadista."""
-
-    width: int = Field(default=832, ge=512, le=1280)   # Venice limit: 1280
-    height: int = Field(default=1216, ge=512, le=1280)  # Ratio ~2:3 vertical
+    # FORMAT VERTICAL 2:3 per a llibres
+    width: int = Field(default=896, ge=512, le=1280)
+    height: int = Field(default=1152, ge=512, le=1280)  # Portrait 896x1152 recomanat Venice
     model_imatge: str = "flux-2-max"
     steps: int = Field(default=30, ge=15, le=50)
-    font_titol: str = "DejaVuSerif-Bold"
-    font_autor: str = "DejaVuSerif"
-    font_editorial: str = "DejaVuSans"
+    logo_size: int = 65  # Logo més gran
 
 
 class AgentPortadista(BaseAgent):
-    """Agent especialitzat en generar portades de llibres minimalistes.
-
-    Utilitza Claude per crear prompts artístics basats en les metadades
-    de l'obra, i Venice.ai per generar les imatges.
-
-    Estil visual:
-    - MINIMALISTA i SIMBÒLIC
-    - Un sol element visual central
-    - Mai text a la imatge (s'afegeix després)
-    - Molt espai negatiu
-
-    Exemple d'ús:
-        ```python
-        agent = AgentPortadista()
-
-        metadata = {
-            "titol": "L'Epopeia de Gilgamesh",
-            "autor": "Anònim mesopotàmic",
-            "genere": "EPO",
-            "temes": ["heroisme", "amistat", "mortalitat"],
-            "descripcio": "L'epopeia més antiga...",
-        }
-
-        # Generar prompt
-        prompt_result = agent.crear_prompt(metadata)
-        print(f"Símbol: {prompt_result['simbol']}")
-        print(f"Prompt: {prompt_result['prompt']}")
-
-        # Generar portada completa
-        imatge_bytes = agent.generar_portada(metadata)
-        Path("portada.png").write_bytes(imatge_bytes)
-        ```
-    """
+    """Agent per generar portades ULTRA-MINIMALISTES per a llibres."""
 
     agent_name = "Portadista"
 
-    # Logo del dofí Arion (SVG path simplificat o es carrega extern)
-    LOGO_ARION_PATH = Path(__file__).parent.parent / "assets" / "arion_logo.png"
+    LOGO_PATH = Path(__file__).parent.parent / "assets" / "logo" / "arion_logo.png"
+    LOGO_PATH_ALT = Path(__file__).parent.parent / "assets" / "logo" / "logo_arion_v1.png"
+
+    # Negative prompt MOLT restrictiu per forçar minimalisme
+    NEGATIVE_PROMPT_BASE = (
+        "text, letters, words, title, signature, watermark, Venice, logo, "
+        "realistic, photographic, detailed, complex, busy, cluttered, "
+        "multiple objects, multiple elements, scene, landscape, person, face, "
+        "hands, animals, buildings, furniture, decorative, ornate, "
+        "border, frame, pattern, texture heavy, noise, grain"
+    )
 
     def __init__(
         self,
@@ -149,17 +137,8 @@ class AgentPortadista(BaseAgent):
         portadista_config: PortadistaConfig | None = None,
         venice_client: VeniceClient | None = None,
     ) -> None:
-        """Inicialitza l'agent portadista.
-
-        Args:
-            config: Configuració de l'agent Claude.
-            portadista_config: Configuració específica del portadista.
-            venice_client: Client Venice.ai (es crea automàticament si no es proporciona).
-        """
         super().__init__(config)
         self.portadista_config = portadista_config or PortadistaConfig()
-
-        # Inicialitzar Venice client (pot fallar si no hi ha API key)
         try:
             self.venice = venice_client or VeniceClient()
         except VeniceError as e:
@@ -168,181 +147,280 @@ class AgentPortadista(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        """System prompt per a la generació de prompts artístics."""
-        return """Ets un director artístic expert en disseny de portades de llibres MINIMALISTES i SIMBÒLIQUES per a una editorial de clàssics.
+        return """Ets un director artístic ULTRA-MINIMALISTA per a portades de llibres clàssics.
 
-FILOSOFIA DE DISSENY:
-- UN SOL element visual central que capturi l'ESSÈNCIA de l'obra
-- MAI text dins la imatge (s'afegeix després digitalment)
-- Espai negatiu abundant (60-70% de la composició)
-- Símbols universals i atemporals
-- Elegància a través de la simplicitat
+REGLES ABSOLUTES:
+1. UN SOL element visual abstracte/simbòlic al centre
+2. 70-80% de la imatge ha de ser ESPAI BUIT (fons net)
+3. MAI objectes realistes - només formes abstractes, siluetes, símbols geomètrics
+4. MAI text, lletres, paraules
+5. Colors molt limitats (2-3 màxim)
+6. Inspiració: disseny japonès, escandinau, Rothko, Malevich
 
-PALETES DE COLORS PER GÈNERE:
-- FIL (Filosofia): blanc/gris/negre/or - geomètric, abstracte
-- POE (Poesia): pastels suaus amb accent intens - líric, eteri
-- TEA (Teatre): negre/vermell/or - dramàtic, alt contrast
-- NOV (Novel·la): tons atmosfèrics - narratiu, evocador
-- SAG (Sagrat): blau profund/or/blanc - místic, lluminós
-- ORI (Oriental): tinta negra/vermell/or - cal·ligràfic, zen
-- EPO (Epopeia): tons terra/bronze/cel - heroic, monumental
+EXEMPLES DE BONS SÍMBOLS:
+- Filosofia: cercle perfecte, quadrat, línia vertical
+- Poesia: taca de color difusa, forma flotant abstracta
+- Teatre: mitja lluna, ombra geomètrica
+- Novel·la: silueta abstracta, forma atmosfèrica
+- Sagrat: triangle lluminós, cercle daurat
+- Oriental: ensō (cercle zen), pinzellada única
+- Epopeia: forma monolítica, arc abstracte
 
-RESPOSTA EN FORMAT JSON:
+RESPOSTA JSON:
 {
-    "simbol": "Descripció breu del símbol central escollit",
-    "raonament": "Per què aquest símbol representa l'essència de l'obra",
-    "prompt": "Prompt complet per a generació d'imatge (en anglès, molt detallat)",
-    "negative_prompt": "Elements a evitar (en anglès)"
-}
+  "simbol": "descripció del símbol abstracte",
+  "raonament": "per què representa l'essència",
+  "prompt": "prompt en anglès, MOLT MINIMALISTA",
+  "negative_prompt": "elements a evitar"
+}"""
 
-REGLES PER AL PROMPT:
-1. Sempre en anglès
-2. Començar amb l'estil: "Minimalist book cover illustration, single symbolic element..."
-3. Especificar colors de la paleta del gènere
-4. Incloure: "vast negative space, clean composition, no text, no letters, no title"
-5. Afegir qualitat: "editorial quality, sophisticated, timeless design"
-6. El símbol ha de ser SIMPLE però EVOCADOR"""
+    def _obtenir_paleta(self, genere: str) -> PaletaGenere:
+        return PALETES.get(genere, PALETES["NOV"])
 
-    def _detectar_genere(self, metadata: dict) -> GenreLiterari:
-        """Detecta el gènere literari a partir de les metadades.
-
-        Args:
-            metadata: Diccionari amb metadades de l'obra.
-
-        Returns:
-            Codi de gènere (FIL, POE, TEA, NOV, SAG, ORI, EPO).
-        """
-        # Si ja ve especificat
-        if "genere" in metadata:
-            genere = metadata["genere"].upper()
-            if genere in PALETES:
-                return genere
-
-        # Detectar per temes o descripció
-        temes = metadata.get("temes", [])
-        descripcio = metadata.get("descripcio", "").lower()
-        titol = metadata.get("titol", "").lower()
-
-        temes_lower = [t.lower() for t in temes]
-
-        # Heurístiques simples
-        if any(t in temes_lower for t in ["filosofia", "ètica", "metafísica", "lògica"]):
-            return "FIL"
-        if any(t in temes_lower for t in ["poesia", "lírica", "vers", "oda"]):
-            return "POE"
-        if any(t in temes_lower for t in ["teatre", "drama", "tragèdia", "comèdia"]):
-            return "TEA"
-        if any(t in temes_lower for t in ["sagrat", "religiós", "mística", "espiritual", "bíblia"]):
-            return "SAG"
-        if any(t in temes_lower for t in ["oriental", "zen", "tao", "confuci", "xinès", "japonès"]):
-            return "ORI"
-        if any(t in temes_lower for t in ["epopeia", "heroisme", "mite", "llegenda", "heroi"]):
-            return "EPO"
-
-        # Detectar per paraules clau a la descripció
-        if "epopeia" in descripcio or "heroi" in descripcio or "èpic" in descripcio:
-            return "EPO"
-        if "filosofia" in descripcio or "diàleg" in descripcio:
-            return "FIL"
-        if "poema" in descripcio or "vers" in descripcio:
-            return "POE"
-
-        # Per defecte, novel·la
-        return "NOV"
-
-    def crear_prompt(self, metadata: dict) -> dict:
-        """Genera un prompt artístic basat en les metadades de l'obra.
-
-        Args:
-            metadata: Diccionari amb:
-                - titol: Títol de l'obra
-                - autor: Autor
-                - genere (opcional): FIL, POE, TEA, NOV, SAG, ORI, EPO
-                - temes (opcional): Llista de temes
-                - descripcio (opcional): Descripció de l'obra
-
-        Returns:
-            dict amb prompt, negative_prompt, simbol, raonament, paleta, genere
-        """
-        genere = self._detectar_genere(metadata)
-        paleta = PALETES[genere]
-
-        # Construir petició per a Claude
-        request_text = f"""Genera un prompt per a la portada d'aquest llibre:
-
-TÍTOL: {metadata.get('titol', 'Sense títol')}
-AUTOR: {metadata.get('autor', 'Anònim')}
-GÈNERE: {genere} ({paleta.descripcio})
-COLORS: {', '.join(paleta.colors)}
-ESTIL: {paleta.estil}
-
-TEMES: {', '.join(metadata.get('temes', ['general']))}
-
-DESCRIPCIÓ: {metadata.get('descripcio', 'No disponible')}
-
-Recorda:
-- UN SOL símbol central
-- Molt espai negatiu
-- Colors de la paleta {genere}
-- Prompt en anglès
-- Mai text a la imatge"""
-
-        # Obtenir resposta de Claude
-        response = self.process(request_text)
-
-        # Parsejar JSON de la resposta
-        try:
-            # Buscar JSON a la resposta
-            content = response.content
-            json_start = content.find("{")
-            json_end = content.rfind("}") + 1
-
-            if json_start >= 0 and json_end > json_start:
-                json_str = content[json_start:json_end]
-                data = json.loads(json_str)
-            else:
-                raise ValueError("No s'ha trobat JSON a la resposta")
-
-            return {
-                "prompt": data.get("prompt", ""),
-                "negative_prompt": data.get("negative_prompt", "text, letters, title, words, watermark"),
-                "simbol": data.get("simbol", ""),
-                "raonament": data.get("raonament", ""),
-                "paleta": paleta.model_dump(),
-                "genere": genere,
-            }
-
-        except (json.JSONDecodeError, ValueError) as e:
-            self.log_warning(f"Error parsejant resposta: {e}")
-            # Fallback: generar prompt bàsic
-            return self._generar_prompt_fallback(metadata, genere, paleta)
-
-    def _generar_prompt_fallback(
-        self,
-        metadata: dict,
-        genere: str,
-        paleta: PaletaGenere,
-    ) -> dict:
-        """Genera un prompt de fallback si Claude falla."""
+    def _generar_prompt_automatic(self, metadata: dict, paleta: PaletaGenere, genere: str) -> dict:
+        """Genera prompt ULTRA-MINIMALISTA sense Claude."""
         titol = metadata.get("titol", "")
-        colors_str = ", ".join(paleta.colors)
-
+        
+        # Símbols abstractes per gènere
+        simbols = {
+            "FIL": "single perfect golden circle floating in center, pure geometric form",
+            "POE": "single soft abstract color gradient blob, floating ethereal form",
+            "TEA": "single dramatic abstract shadow shape, high contrast geometric",
+            "NOV": "single abstract misty silhouette form, atmospheric minimal shape",
+            "SAG": "single luminous golden triangle, sacred geometry, ethereal glow",
+            "ORI": "single black ink brushstroke enso circle, zen minimal, rice paper",
+            "EPO": "single abstract monolithic bronze form, ancient weathered geometric",
+        }
+        
+        simbol = simbols.get(genere, simbols["NOV"])
+        
         prompt = (
-            f"Minimalist book cover illustration, single symbolic element, "
-            f"{paleta.estil} style, {colors_str} color palette, "
-            f"vast negative space, clean composition, no text, no letters, no title, "
-            f"editorial quality, sophisticated, timeless design, "
-            f"inspired by '{titol}'"
+            f"Ultra minimalist book cover art, {simbol}, "
+            f"{paleta.estil} style, {' and '.join(paleta.colors[:2])} only, "
+            f"70 percent empty space, solid clean background, "
+            f"single centered element, extreme negative space, "
+            f"no detail, no texture, flat design, vector style, "
+            f"editorial elegance, timeless, museum quality"
         )
 
         return {
             "prompt": prompt,
-            "negative_prompt": "text, letters, title, words, watermark, busy, cluttered, multiple elements",
-            "simbol": "Element simbòlic abstracte",
-            "raonament": "Prompt generat automàticament",
+            "negative_prompt": self.NEGATIVE_PROMPT_BASE,
+            "simbol": simbol.split(",")[0],
+            "raonament": "Símbol abstracte minimalista per al gènere",
             "paleta": paleta.model_dump(),
             "genere": genere,
         }
+
+    def crear_prompt(self, metadata: dict) -> dict:
+        """Genera prompt artístic ULTRA-MINIMALISTA."""
+        genere = metadata.get("genere", "NOV")
+        paleta = self._obtenir_paleta(genere)
+
+        # Usar sempre el generador automàtic per consistència minimalista
+        return self._generar_prompt_automatic(metadata, paleta, genere)
+
+    def _carregar_fonts(self, mida_titol_override: int | None = None) -> tuple:
+        """Carrega fonts elegants pel text.
+
+        Args:
+            mida_titol_override: Si es proporciona, usa aquesta mida pel títol
+                                (per títols llargs que necessiten font més petita)
+        """
+        height = self.portadista_config.height
+
+        # Mides base (més grans i professionals)
+        mida_titol = mida_titol_override or int(height * 0.055)
+        mida_autor = int(height * 0.042)  # Encara més gran
+        mida_editorial = int(height * 0.018)
+
+        # Fonts per ordre de preferència
+        fonts_serif = [
+            "/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf",
+            "/usr/share/fonts/truetype/freefont/FreeSerifBold.ttf",
+        ]
+        fonts_serif_regular = [
+            "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+            "/usr/share/fonts/truetype/freefont/FreeSerif.ttf",
+        ]
+        fonts_sans = [
+            "/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf",
+            "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+            "/usr/share/fonts/truetype/freefont/FreeSans.ttf",
+        ]
+
+        def carregar_font(llista_fonts, mida):
+            for font_path in llista_fonts:
+                try:
+                    return ImageFont.truetype(font_path, mida)
+                except OSError:
+                    continue
+            return ImageFont.load_default()
+
+        font_titol = carregar_font(fonts_serif, mida_titol)
+        font_autor = carregar_font(fonts_serif_regular, mida_autor)
+        font_editorial = carregar_font(fonts_sans, mida_editorial)
+
+        return font_titol, font_autor, font_editorial
+
+    def _eliminar_fons_blanc(self, img: Image.Image, threshold: int = 250) -> Image.Image:
+        """Converteix píxels blancs a transparents."""
+        data = img.getdata()
+        new_data = []
+        for item in data:
+            if item[0] > threshold and item[1] > threshold and item[2] > threshold:
+                new_data.append((255, 255, 255, 0))
+            else:
+                new_data.append(item)
+        img.putdata(new_data)
+        return img
+
+    def _crear_logo_cercle(self, logo_path: Path, size: int) -> Image.Image | None:
+        """Crea el logo dins un cercle blanc amb vora negra, renderitzat a alta resolució."""
+        try:
+            logo_original = Image.open(logo_path).convert("RGBA")
+            logo_original = self._eliminar_fons_blanc(logo_original)
+            
+            # Renderitzar a 4x per antialiasing
+            scale = 4
+            big_size = size * scale
+            
+            circle_img = Image.new("RGBA", (big_size, big_size), (0, 0, 0, 0))
+            draw = ImageDraw.Draw(circle_img)
+            
+            # Cercle blanc amb vora negra fina
+            border = max(4, int(big_size * 0.025))
+            draw.ellipse(
+                [border, border, big_size - border - 1, big_size - border - 1],
+                fill="#FFFFFF",
+                outline="#1A1A1A",
+                width=border
+            )
+            
+            # Logo al 78% del cercle
+            inner = int(big_size * 0.78)
+            aspect = logo_original.width / logo_original.height
+            if aspect > 1:
+                w, h = inner, int(inner / aspect)
+            else:
+                h, w = inner, int(inner * aspect)
+            
+            logo_resized = logo_original.resize((w, h), Image.Resampling.LANCZOS)
+            x, y = (big_size - w) // 2, (big_size - h) // 2
+            circle_img.paste(logo_resized, (x, y), logo_resized)
+            
+            # Reduir amb antialiasing
+            return circle_img.resize((size, size), Image.Resampling.LANCZOS)
+            
+        except Exception as e:
+            self.log_warning(f"Error carregant logo: {e}")
+            return None
+
+    def _afegir_text_portada(
+        self,
+        imatge: Image.Image,
+        titol: str,
+        autor: str,
+        editorial: str,
+        paleta: PaletaGenere,
+    ) -> Image.Image:
+        """Afegeix text i logo a la portada amb layout professional."""
+        draw = ImageDraw.Draw(imatge)
+        width, height = imatge.size
+        text_color = paleta.text_color
+        margin = int(width * 0.08)
+        max_text_width = width - 2 * margin
+
+        # === CALCULAR MIDA ÒPTIMA DEL TÍTOL ===
+        titol_text = titol.upper()
+        height_ratio = self.portadista_config.height
+
+        # Començar amb mida gran i reduir si cal
+        mida_base = int(height_ratio * 0.055)
+        mida_minima = int(height_ratio * 0.032)
+        mida_titol_final = mida_base
+
+        # Provar mides fins trobar una que càpiga en màxim 3 línies
+        for mida in range(mida_base, mida_minima, -2):
+            font_test, _, _ = self._carregar_fonts(mida_titol_override=mida)
+            linies_test = self._dividir_titol(titol_text, font_test, max_text_width, draw)
+            if len(linies_test) <= 3:
+                mida_titol_final = mida
+                break
+
+        # Carregar fonts amb la mida òptima
+        font_titol, font_autor, font_editorial = self._carregar_fonts(mida_titol_override=mida_titol_final)
+
+        # === TÍTOL (a dalt, centrat, possiblement multilínia) ===
+        titol_y = int(height * 0.05)
+        linies_titol = self._dividir_titol(titol_text, font_titol, max_text_width, draw)
+
+        line_height = int(mida_titol_final * 1.3)  # Espaiat entre línies
+        for i, linia in enumerate(linies_titol):
+            bbox = draw.textbbox((0, 0), linia, font=font_titol)
+            linia_width = bbox[2] - bbox[0]
+            x = (width - linia_width) // 2
+            draw.text((x, titol_y + i * line_height), linia, font=font_titol, fill=text_color)
+
+        # === AUTOR (a baix, centrat) ===
+        autor_y = int(height * 0.83)  # Més amunt per separar del logo
+        autor_bbox = draw.textbbox((0, 0), autor, font=font_autor)
+        autor_x = (width - (autor_bbox[2] - autor_bbox[0])) // 2
+        draw.text((autor_x, autor_y), autor, font=font_autor, fill=text_color)
+
+        # === LOGO + EDITORIAL (centrat a baix) ===
+        editorial_y = int(height * 0.92)
+        logo_size = self.portadista_config.logo_size
+
+        # Carregar logo
+        logo_path = self.LOGO_PATH if self.LOGO_PATH.exists() else self.LOGO_PATH_ALT
+        logo = None
+        if logo_path.exists():
+            logo = self._crear_logo_cercle(logo_path, logo_size)
+
+        # Calcular posicions
+        editorial_bbox = draw.textbbox((0, 0), editorial, font=font_editorial)
+        editorial_width = editorial_bbox[2] - editorial_bbox[0]
+        editorial_height = editorial_bbox[3] - editorial_bbox[1]
+
+        gap = 10
+        if logo:
+            total_width = logo_size + gap + editorial_width
+            start_x = (width - total_width) // 2
+            logo_y = editorial_y - (logo_size - editorial_height) // 2
+            imatge.paste(logo, (start_x, logo_y), logo)
+            text_x = start_x + logo_size + gap
+            draw.text((text_x, editorial_y), editorial, font=font_editorial, fill=text_color)
+        else:
+            text_x = (width - editorial_width) // 2
+            draw.text((text_x, editorial_y), editorial, font=font_editorial, fill=text_color)
+
+        return imatge
+
+    def _dividir_titol(self, titol: str, font: ImageFont, max_width: int, draw: ImageDraw) -> list[str]:
+        """Divideix el títol en línies que càpiguen dins l'amplada màxima."""
+        paraules = titol.split()
+        linies = []
+        linia_actual = ""
+
+        for paraula in paraules:
+            test_linia = f"{linia_actual} {paraula}".strip()
+            bbox = draw.textbbox((0, 0), test_linia, font=font)
+            test_width = bbox[2] - bbox[0]
+
+            if test_width <= max_width:
+                linia_actual = test_linia
+            else:
+                if linia_actual:
+                    linies.append(linia_actual)
+                linia_actual = paraula
+
+        if linia_actual:
+            linies.append(linia_actual)
+
+        return linies
 
     def generar_portada(
         self,
@@ -350,32 +428,16 @@ Recorda:
         afegir_text: bool = True,
         editorial: str = "Biblioteca Arion",
     ) -> bytes:
-        """Genera una portada completa per a un llibre.
-
-        Args:
-            metadata: Metadades de l'obra (titol, autor, genere, temes, descripcio).
-            afegir_text: Si True, afegeix títol, autor i editorial a la imatge.
-            editorial: Nom de l'editorial.
-
-        Returns:
-            bytes: Imatge PNG de la portada.
-
-        Raises:
-            VeniceError: Si la generació d'imatge falla.
-            RuntimeError: Si Venice client no està disponible.
-        """
+        """Genera una portada ULTRA-MINIMALISTA completa."""
         if not self.venice:
-            raise RuntimeError(
-                "Venice client no disponible. "
-                "Comprova que VENICE_API_KEY està configurada a .env"
-            )
+            raise RuntimeError("Venice client no disponible. Configura VENICE_API_KEY a .env")
 
-        # 1. Generar prompt
-        self.log_info("Generant prompt artístic...")
+        # 1. Generar prompt minimalista
+        self.log_info("Generant prompt ultra-minimalista...")
         prompt_result = self.crear_prompt(metadata)
-        self.log_info(f"Símbol escollit: {prompt_result['simbol']}")
+        self.log_info(f"Símbol: {prompt_result['simbol']}")
 
-        # 2. Generar imatge amb Venice
+        # 2. Generar imatge amb Venice (FORMAT VERTICAL)
         self.log_info("Generant imatge amb Venice.ai...")
         image_bytes = self.venice.generar_imatge_sync(
             prompt=prompt_result["prompt"],
@@ -386,320 +448,68 @@ Recorda:
             steps=self.portadista_config.steps,
         )
 
-        # 3. Afegir text si cal
+        # 3. Afegir text i logo
         if afegir_text:
-            self.log_info("Afegint text a la portada...")
-            image_bytes = self.afegir_text_portada(
-                imatge=image_bytes,
-                titol=metadata.get("titol", ""),
-                autor=metadata.get("autor", ""),
-                editorial=editorial,
-                genere=prompt_result["genere"],
+            self.log_info("Afegint text i logo...")
+            imatge = Image.open(io.BytesIO(image_bytes))
+            paleta = self._obtenir_paleta(prompt_result["genere"])
+            imatge = self._afegir_text_portada(
+                imatge,
+                metadata.get("titol", "Sense títol"),
+                metadata.get("autor", "Autor desconegut"),
+                editorial,
+                paleta,
             )
+            output = io.BytesIO()
+            imatge.save(output, format="PNG", quality=95)
+            image_bytes = output.getvalue()
 
-        self.log_info("Portada generada correctament")
+        self.log_info("Portada generada!")
         return image_bytes
-
-    def afegir_text_portada(
-        self,
-        imatge: bytes,
-        titol: str,
-        autor: str,
-        editorial: str = "Biblioteca Arion",
-        genere: str = "NOV",
-    ) -> bytes:
-        """Afegeix text (títol, autor, editorial) a una imatge de portada.
-
-        Args:
-            imatge: Imatge PNG en bytes.
-            titol: Títol del llibre.
-            autor: Nom de l'autor.
-            editorial: Nom de l'editorial.
-            genere: Gènere per determinar colors del text.
-
-        Returns:
-            bytes: Imatge PNG amb text afegit.
-        """
-        # Obrir imatge
-        img = Image.open(io.BytesIO(imatge))
-        draw = ImageDraw.Draw(img)
-
-        width, height = img.size
-        paleta = PALETES.get(genere, PALETES["NOV"])
-
-        # Determinar color del text segons el fons
-        # Si el fons és fosc, text clar; si és clar, text fosc
-        bg_hex = paleta.background.lstrip("#")
-        bg_rgb = tuple(int(bg_hex[i:i+2], 16) for i in (0, 2, 4))
-        bg_luminance = (0.299 * bg_rgb[0] + 0.587 * bg_rgb[1] + 0.114 * bg_rgb[2]) / 255
-
-        if bg_luminance < 0.5:
-            # Fons fosc -> text clar
-            color_titol = "#FFFFFF"
-            color_autor = "#E0E0E0"
-            color_editorial = "#A0A0A0"
-        else:
-            # Fons clar -> text fosc
-            color_titol = "#1A1A1A"
-            color_autor = "#3A3A3A"
-            color_editorial = "#5A5A5A"
-
-        # Carregar fonts (amb fallback a default)
-        try:
-            font_titol = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif-Bold.ttf", size=int(width * 0.06))
-            font_autor = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf", size=int(width * 0.035))
-            font_editorial = ImageFont.truetype("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf", size=int(width * 0.025))
-        except OSError:
-            # Fallback a font per defecte
-            try:
-                font_titol = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSerif-Bold.ttf", size=int(width * 0.06))
-                font_autor = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf", size=int(width * 0.035))
-                font_editorial = ImageFont.truetype("/usr/share/fonts/truetype/liberation/LiberationSans-Regular.ttf", size=int(width * 0.025))
-            except OSError:
-                font_titol = ImageFont.load_default()
-                font_autor = ImageFont.load_default()
-                font_editorial = ImageFont.load_default()
-
-        # Posicions
-        margin = int(width * 0.08)
-        titol_y = int(height * 0.08)
-        autor_y = int(height * 0.88)
-        editorial_y = int(height * 0.94)
-
-        # Dibuixar títol (centrat a dalt)
-        if titol:
-            titol_upper = titol.upper()
-            bbox = draw.textbbox((0, 0), titol_upper, font=font_titol)
-            titol_width = bbox[2] - bbox[0]
-
-            # Si el títol és massa llarg, dividir en línies
-            if titol_width > width - 2 * margin:
-                lines = self._dividir_text(titol_upper, font_titol, width - 2 * margin, draw)
-                current_y = titol_y
-                for line in lines:
-                    bbox = draw.textbbox((0, 0), line, font=font_titol)
-                    line_width = bbox[2] - bbox[0]
-                    x = (width - line_width) // 2
-                    draw.text((x, current_y), line, fill=color_titol, font=font_titol)
-                    current_y += int(font_titol.size * 1.3)
-            else:
-                x = (width - titol_width) // 2
-                draw.text((x, titol_y), titol_upper, fill=color_titol, font=font_titol)
-
-        # Dibuixar autor (centrat a baix)
-        if autor:
-            bbox = draw.textbbox((0, 0), autor, font=font_autor)
-            autor_width = bbox[2] - bbox[0]
-            x = (width - autor_width) // 2
-            draw.text((x, autor_y), autor, fill=color_autor, font=font_autor)
-
-        # Dibuixar editorial (centrat al fons)
-        if editorial:
-            bbox = draw.textbbox((0, 0), editorial, font=font_editorial)
-            editorial_width = bbox[2] - bbox[0]
-            x = (width - editorial_width) // 2
-            draw.text((x, editorial_y), editorial, fill=color_editorial, font=font_editorial)
-
-        # Afegir logo Arion si existeix
-        self._afegir_logo(img, genere)
-
-        # Guardar a bytes
-        output = io.BytesIO()
-        img.save(output, format="PNG", quality=95)
-        return output.getvalue()
-
-    def _dividir_text(
-        self,
-        text: str,
-        font: ImageFont.FreeTypeFont,
-        max_width: int,
-        draw: ImageDraw.ImageDraw,
-    ) -> list[str]:
-        """Divideix text en línies que càpiguen dins l'amplada màxima."""
-        words = text.split()
-        lines = []
-        current_line = []
-
-        for word in words:
-            test_line = " ".join(current_line + [word])
-            bbox = draw.textbbox((0, 0), test_line, font=font)
-            if bbox[2] - bbox[0] <= max_width:
-                current_line.append(word)
-            else:
-                if current_line:
-                    lines.append(" ".join(current_line))
-                current_line = [word]
-
-        if current_line:
-            lines.append(" ".join(current_line))
-
-        return lines
-
-    def _afegir_logo(self, img: Image.Image, genere: str) -> None:
-        """Afegeix el logo del dofí Arion a la part inferior de la imatge.
-
-        El logo es mostra modest i semi-transparent.
-        """
-        if not self.LOGO_ARION_PATH.exists():
-            # Si no hi ha logo, dibuixar un símbol simple
-            self._dibuixar_logo_simple(img, genere)
-            return
-
-        try:
-            logo = Image.open(self.LOGO_ARION_PATH).convert("RGBA")
-
-            # Redimensionar logo (5% de l'amplada)
-            logo_width = int(img.width * 0.05)
-            ratio = logo_width / logo.width
-            logo_height = int(logo.height * ratio)
-            logo = logo.resize((logo_width, logo_height), Image.Resampling.LANCZOS)
-
-            # Aplicar transparència
-            alpha = logo.split()[3]
-            alpha = alpha.point(lambda p: int(p * 0.5))  # 50% transparent
-            logo.putalpha(alpha)
-
-            # Posició: centrat a baix
-            x = (img.width - logo_width) // 2
-            y = img.height - logo_height - int(img.height * 0.02)
-
-            img.paste(logo, (x, y), logo)
-
-        except Exception as e:
-            self.log_warning(f"No s'ha pogut afegir el logo: {e}")
-
-    def _dibuixar_logo_simple(self, img: Image.Image, genere: str) -> None:
-        """Dibuixa un logo simple (ona estilitzada) si no hi ha fitxer de logo."""
-        draw = ImageDraw.Draw(img)
-
-        # Determinar color segons paleta
-        paleta = PALETES.get(genere, PALETES["NOV"])
-        bg_hex = paleta.background.lstrip("#")
-        bg_rgb = tuple(int(bg_hex[i:i+2], 16) for i in (0, 2, 4))
-        bg_luminance = (0.299 * bg_rgb[0] + 0.587 * bg_rgb[1] + 0.114 * bg_rgb[2]) / 255
-
-        # Color del logo amb transparència
-        if bg_luminance < 0.5:
-            color = (255, 255, 255, 80)  # Blanc semi-transparent
-        else:
-            color = (0, 0, 0, 80)  # Negre semi-transparent
-
-        # Dibuixar una petita ona estilitzada (símbol d'Arion, el dofí)
-        center_x = img.width // 2
-        y = img.height - int(img.height * 0.035)
-        size = int(img.width * 0.03)
-
-        # Ona simple amb tres arcs
-        points = [
-            (center_x - size, y),
-            (center_x - size//2, y - size//3),
-            (center_x, y),
-            (center_x + size//2, y - size//3),
-            (center_x + size, y),
-        ]
-
-        # Crear una imatge temporal amb alpha per la transparència
-        overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
-        overlay_draw = ImageDraw.Draw(overlay)
-        overlay_draw.line(points, fill=color, width=2)
-
-        # Composar
-        img.paste(Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB"))
 
 
 def generar_portada_obra(
-    metadata_path: str | Path,
-    output_path: str | Path | None = None,
-    editorial: str = "Biblioteca Arion",
-) -> Path:
-    """Funció d'ajuda per generar la portada d'una obra des del seu metadata.yml.
-
-    Args:
-        metadata_path: Ruta al fitxer metadata.yml de l'obra.
-        output_path: Ruta de sortida (per defecte: mateix directori, portada.png).
-        editorial: Nom de l'editorial.
-
-    Returns:
-        Path al fitxer de portada generat.
-
-    Exemple:
-        ```python
-        portada = generar_portada_obra("obres/mesopotamia/gilgamesh/metadata.yml")
-        print(f"Portada generada: {portada}")
-        ```
-    """
-    import yaml
-
-    metadata_path = Path(metadata_path)
-
-    # Llegir metadata
-    with open(metadata_path) as f:
-        data = yaml.safe_load(f)
-
-    # Extreure dades de l'obra
-    obra = data.get("obra", data)
-    metadata = {
-        "titol": obra.get("titol", ""),
-        "autor": obra.get("autor", ""),
-        "genere": obra.get("genere", ""),
-        "temes": obra.get("temes", []),
-        "descripcio": obra.get("descripcio", ""),
-    }
-
-    # Determinar ruta de sortida
-    if output_path is None:
-        output_path = metadata_path.parent / "portada.png"
-    else:
-        output_path = Path(output_path)
-
-    # Generar portada
+    titol: str,
+    autor: str,
+    genere: str = "NOV",
+    temes: list[str] | None = None,
+    descripcio: str = "",
+    output_path: Path | str | None = None,
+) -> bytes:
+    """Funció ràpida per generar una portada."""
     agent = AgentPortadista()
-    portada_bytes = agent.generar_portada(metadata, editorial=editorial)
-
-    # Guardar
-    output_path.write_bytes(portada_bytes)
-
-    return output_path
+    metadata = {
+        "titol": titol,
+        "autor": autor,
+        "genere": genere,
+        "temes": temes or [],
+        "descripcio": descripcio,
+    }
+    portada_bytes = agent.generar_portada(metadata)
+    
+    if output_path:
+        path = Path(output_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_bytes(portada_bytes)
+        print(f"✅ Portada: {path}")
+    
+    return portada_bytes
 
 
 if __name__ == "__main__":
     import sys
-
-    print("Test de l'Agent Portadista")
+    
     print("=" * 50)
-
-    # Metadades d'exemple (Gilgamesh)
-    metadata_gilgamesh = {
-        "titol": "L'Epopeia de Gilgamesh",
-        "autor": "Anònim mesopotàmic",
-        "genere": "EPO",
-        "temes": ["heroisme", "amistat", "mortalitat", "cerca de la immortalitat"],
-        "descripcio": "L'epopeia més antiga coneguda de la humanitat. Narra les aventures del rei Gilgamesh d'Uruk.",
-    }
-
+    print("TEST PORTADISTA ULTRA-MINIMALISTA")
+    print("=" * 50)
+    
     agent = AgentPortadista()
-
-    # Test 1: Crear prompt
-    print("\n1. Generant prompt artístic...")
-    try:
-        prompt_result = agent.crear_prompt(metadata_gilgamesh)
-        print(f"   Gènere detectat: {prompt_result['genere']}")
-        print(f"   Símbol: {prompt_result['simbol']}")
-        print(f"   Raonament: {prompt_result['raonament'][:100]}...")
-        print(f"   Prompt: {prompt_result['prompt'][:150]}...")
-    except Exception as e:
-        print(f"   Error: {e}")
-
-    # Test 2: Generar portada (si s'especifica --generate)
-    if len(sys.argv) > 1 and sys.argv[1] == "--generate":
-        print("\n2. Generant portada completa...")
-        try:
-            portada_bytes = agent.generar_portada(metadata_gilgamesh)
-            output_path = Path("portada_gilgamesh_test.png")
-            output_path.write_bytes(portada_bytes)
-            print(f"   ✅ Portada guardada a {output_path}")
-        except Exception as e:
-            print(f"   ❌ Error: {e}")
-    else:
-        print("\n2. Per generar la portada completa, executa:")
-        print("   python agents/portadista.py --generate")
+    print(f"✅ Agent creat")
+    print(f"   Venice: {'✅' if agent.venice else '❌'}")
+    print(f"   Format: {agent.portadista_config.width}x{agent.portadista_config.height}")
+    
+    if agent.venice and "--generate" in sys.argv:
+        test = {"titol": "Meditacions", "autor": "Marc Aureli", "genere": "FIL"}
+        portada = agent.generar_portada(test)
+        Path("test_portada.png").write_bytes(portada)
+        print("✅ test_portada.png generada")

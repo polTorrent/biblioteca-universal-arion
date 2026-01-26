@@ -10,6 +10,11 @@ from pipeline.translation_pipeline import (
     StageResult,
     TranslationPipeline,
 )
+from pipeline.portada_integration import (
+    PortadaIntegration,
+    afegir_portada_a_resultat,
+    detectar_genere,
+)
 
 __all__ = [
     "AccumulatedContext",
@@ -21,4 +26,7 @@ __all__ = [
     "PipelineState",
     "StageResult",
     "TranslationPipeline",
+    "PortadaIntegration",
+    "afegir_portada_a_resultat",
+    "detectar_genere",
 ]
