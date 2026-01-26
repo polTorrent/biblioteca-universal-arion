@@ -40,6 +40,7 @@ from agents import (
 )
 from utils.logger import AgentLogger, VerbosityLevel, get_logger
 from utils.dashboard import Dashboard, ProgressTracker, print_agent_activity
+from utils.translation_logger import TranslationLogger, LogLevel
 
 
 class PipelineStage(str, Enum):
@@ -88,6 +89,10 @@ class PipelineConfig(BaseModel):
     enable_correction: bool = Field(default=True)
     correction_level: str = Field(default="normal")  # relaxat, normal, estricte
 
+    # Configuració del translation logger
+    use_translation_logger: bool = Field(default=True)
+    project_name: str = Field(default="Traducció")
+
 
 class StageResult(BaseModel):
     """Resultat d'una etapa del pipeline."""
@@ -133,7 +138,7 @@ class PipelineResult(BaseModel):
     """Resultat final del pipeline."""
 
     original_text: str
-    source_language: Literal["llatí", "grec"]
+    source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"]
     final_translation: str
     quality_score: float | None = None
     revision_rounds: int = 0
@@ -211,6 +216,16 @@ class TranslationPipeline:
         self._total_cost = 0.0
         self._start_time: float | None = None
 
+        # Translation logger (nou sistema de logging)
+        self._translation_logger: TranslationLogger | None = None
+        if self.config.use_translation_logger:
+            log_level = LogLevel.DEBUG if self.config.verbosity == VerbosityLevel.VERBOSE else LogLevel.INFO
+            self._translation_logger = TranslationLogger(
+                log_dir=self.config.output_dir / "logs",
+                project_name=self.config.project_name,
+                min_level=log_level,
+            )
+
     def set_progress_callback(self, callback: Callable[[int, int, str], None]) -> None:
         """Estableix callback per actualitzar progrés extern."""
         self._progress_callback = callback
@@ -248,7 +263,7 @@ class TranslationPipeline:
     def run(
         self,
         text: str,
-        source_language: Literal["llatí", "grec"] = "llatí",
+        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"] = "llatí",
         author: str | None = None,
         work_title: str | None = None,
         resume_from: PipelineState | None = None,
@@ -299,6 +314,15 @@ class TranslationPipeline:
             estimated_tokens > self.config.max_tokens_per_chunk
         )
 
+        # Iniciar translation logger si està actiu
+        if self._translation_logger:
+            # Estimar chunks
+            estimated_chunks = max(1, estimated_tokens // self.config.max_tokens_per_chunk) if needs_chunking else 1
+            self._translation_logger.start_pipeline(
+                total_chunks=estimated_chunks,
+                source_file=work_title or "text"
+            )
+
         try:
             if needs_chunking:
                 result = self._run_chunked(text, source_language, author, work_title, resume_from)
@@ -312,12 +336,16 @@ class TranslationPipeline:
             result.total_duration_seconds = elapsed
             self.logger.log_session_end()
 
+            # Completar translation logger
+            if self._translation_logger:
+                self._translation_logger.complete_pipeline()
+
         return result
 
     def _run_single(
         self,
         text: str,
-        source_language: Literal["llatí", "grec"],
+        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
         author: str | None,
         work_title: str | None,
     ) -> PipelineResult:
@@ -458,7 +486,7 @@ class TranslationPipeline:
     def _run_chunked(
         self,
         text: str,
-        source_language: Literal["llatí", "grec"],
+        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
         author: str | None,
         work_title: str | None,
         resume_from: PipelineState | None = None,
@@ -545,6 +573,10 @@ class TranslationPipeline:
                             "Glossarista",
                             f"Glossari creat amb {len(initial_glossary)} termes"
                         )
+
+                        # Log al translation logger
+                        if self._translation_logger:
+                            self._translation_logger.log_glossary(len(initial_glossary))
 
                         # Actualitzar estadístiques
                         tokens = glossary_response.usage.get("input_tokens", 0) + glossary_response.usage.get("output_tokens", 0)
@@ -655,6 +687,11 @@ class TranslationPipeline:
                         f"Processant chunk"
                     )
 
+                    # Iniciar chunk al translation logger
+                    chunk_start_time = time.time()
+                    if self._translation_logger:
+                        self._translation_logger.start_chunk(i + 1, len(chunk.text))
+
                     # Generar context per aquest chunk
                     context_summary = self.chunker.generate_summary(chunking_result.chunks, i)
 
@@ -669,6 +706,20 @@ class TranslationPipeline:
                     )
 
                     result.chunk_results.append(chunk_result)
+
+                    # Completar chunk al translation logger
+                    if self._translation_logger:
+                        chunk_duration = time.time() - chunk_start_time
+                        chunk_tokens = chunk_result.metadata.get("tokens", 0)
+                        chunk_cost = chunk_result.metadata.get("cost", 0.0)
+                        chunk_quality = chunk_result.quality_score or 7.0
+                        self._translation_logger.complete_chunk(
+                            chunk_num=i + 1,
+                            tokens=chunk_tokens,
+                            cost=chunk_cost,
+                            quality=chunk_quality,
+                            duration=chunk_duration,
+                        )
 
                     # Actualitzar context acumulat
                     self._update_accumulated_context(accumulated_context, chunk, chunk_result)
@@ -749,7 +800,7 @@ class TranslationPipeline:
     def _process_chunk(
         self,
         chunk: TextChunk,
-        source_language: Literal["llatí", "grec"],
+        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
         author: str | None,
         work_title: str | None,
         context: AccumulatedContext,
@@ -761,6 +812,10 @@ class TranslationPipeline:
             original_text=chunk.text,
             translated_text="",
         )
+
+        # Tracking de tokens i cost per aquest chunk
+        chunk_tokens = 0
+        chunk_cost = 0.0
 
         # Construir notes amb context
         notes_parts = []
@@ -793,6 +848,8 @@ class TranslationPipeline:
 
             # Actualitzar estadístiques
             tokens = response.usage.get("input_tokens", 0) + response.usage.get("output_tokens", 0)
+            chunk_tokens += tokens
+            chunk_cost += response.cost_eur
             self._update_stats(tokens, response.cost_eur)
 
         except Exception as e:
@@ -826,6 +883,8 @@ class TranslationPipeline:
 
                 # Actualitzar estadístiques
                 tokens = review_response.usage.get("input_tokens", 0) + review_response.usage.get("output_tokens", 0)
+                chunk_tokens += tokens
+                chunk_cost += review_response.cost_eur
                 self._update_stats(tokens, review_response.cost_eur)
 
                 # Parsejar resposta JSON
@@ -833,6 +892,16 @@ class TranslationPipeline:
                     review_data = json.loads(review_response.content)
                     score = review_data.get("puntuació_global", 0)
                     chunk_result.quality_score = score
+                    issues = review_data.get("problemes", [])
+
+                    # Log de revisió al translation logger
+                    if self._translation_logger:
+                        self._translation_logger.log_review(
+                            chunk_num=chunk.chunk_id,
+                            round_num=round_num + 1,
+                            score=score,
+                            issues=len(issues) if isinstance(issues, list) else 0
+                        )
 
                     if score >= self.config.min_quality_score:
                         revised_text = review_data.get("text_revisat")
@@ -870,6 +939,8 @@ class TranslationPipeline:
 
                 # Actualitzar estadístiques
                 tokens = correction_response.usage.get("input_tokens", 0) + correction_response.usage.get("output_tokens", 0)
+                chunk_tokens += tokens
+                chunk_cost += correction_response.cost_eur
                 self._update_stats(tokens, correction_response.cost_eur)
 
                 # Parsejar resposta JSON
@@ -888,6 +959,12 @@ class TranslationPipeline:
                                 "Corrector",
                                 f"Aplicades {len(corrections_list)} correccions al chunk {chunk.chunk_id}"
                             )
+                            # Log al translation logger
+                            if self._translation_logger:
+                                self._translation_logger.log_correction(
+                                    chunk_num=chunk.chunk_id,
+                                    corrections=len(corrections_list)
+                                )
 
                 except json.JSONDecodeError:
                     chunk_result.metadata["correction_parse_error"] = True
@@ -900,6 +977,11 @@ class TranslationPipeline:
                     self._dashboard.add_error(f"Correcció chunk {chunk.chunk_id}: {str(e)}")
 
         chunk_result.translated_text = current_translation
+
+        # Guardar estadístiques del chunk al metadata
+        chunk_result.metadata["tokens"] = chunk_tokens
+        chunk_result.metadata["cost"] = chunk_cost
+
         return chunk_result
 
     def _update_accumulated_context(
@@ -1011,7 +1093,7 @@ class TranslationPipeline:
     def _translate(
         self,
         text: str,
-        source_language: Literal["llatí", "grec"],
+        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
         author: str | None,
         work_title: str | None,
     ) -> StageResult:
@@ -1051,7 +1133,7 @@ class TranslationPipeline:
         self,
         original_text: str,
         translated_text: str,
-        source_language: Literal["llatí", "grec"],
+        source_language: Literal["llatí", "grec", "anglès", "alemany", "francès"],
         author: str | None,
         work_title: str | None,
     ) -> StageResult:
