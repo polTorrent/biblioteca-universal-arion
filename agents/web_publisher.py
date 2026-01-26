@@ -333,11 +333,21 @@ class WebPublisher(BaseAgent):
         portades_dir = output_dir / "assets" / "portades"
         portades_dir.mkdir(parents=True, exist_ok=True)
 
-        # Generar portada si cal
+        # Buscar o generar portada
         if generar_portada is None:
             generar_portada = self.publisher_config.generar_portades
 
-        if generar_portada:
+        # Sempre buscar portada existent a la carpeta de l'obra
+        portada_existent = obra_path / "portada.png" if obra_path else None
+        if portada_existent and portada_existent.exists():
+            portada_filename = f"{metadata.slug}-portada.png"
+            portada_dest = portades_dir / portada_filename
+            if not portada_dest.exists():
+                import shutil
+                shutil.copy(portada_existent, portada_dest)
+                self.log_info(f"Portada copiada: {portada_existent.name} -> {portada_dest.name}")
+            metadata.portada_url = f"assets/portades/{portada_filename}"
+        elif generar_portada:
             metadata.portada_url = self._generar_portada(metadata, portades_dir, obra_path)
 
         # Llegir continguts
