@@ -459,80 +459,327 @@ class WebPublisher(BaseAgent):
             self.log_warning(f"Error generant índex: {e}")
             return self.publisher_config.output_dir / "index.html"
 
+    # Biografies dels autors
+    BIOGRAFIES_AUTORS: dict[str, dict] = {
+        "Akutagawa Ryūnosuke": {
+            "bio": "Escriptor japonès (1892-1927), mestre del conte curt i figura cabdal de la literatura Taishō. Conegut per la seva prosa elegant i els seus relats psicològics, va influir profundament en la literatura japonesa moderna. El premi Akutagawa, el més prestigiós del Japó, porta el seu nom.",
+            "imatge": "akutagawa.png",
+        },
+        "Anònim (tradició budista)": {
+            "bio": "Els textos de la tradició Prajñāpāramitā van ser compilats entre els segles I aC i VI dC per mestres anònims de diverses escoles budistes. Representen l'essència del budisme Mahāyāna i la doctrina de la vacuïtat (śūnyatā).",
+            "imatge": "budisme.png",
+        },
+        "Arthur Schopenhauer": {
+            "bio": "Filòsof alemany (1788-1860), autor de 'El món com a voluntat i representació'. El seu pessimisme metafísic i la seva filosofia de la voluntat van influir en Nietzsche, Wagner, Freud i Wittgenstein. Fou un dels primers pensadors occidentals a integrar idees del budisme.",
+            "imatge": "schopenhauer.png",
+        },
+        "Epictetus": {
+            "bio": "Filòsof estoic grec (c. 50-135 dC), nascut esclau a Hieràpolis. Després de ser alliberat, va ensenyar filosofia a Roma i Nicòpolis. Les seves ensenyances, recollides pel seu deixeble Arrià, han inspirat pensadors des de Marc Aureli fins al estoïcisme modern.",
+            "imatge": "epictetus.png",
+        },
+        "Heràclit d'Efes": {
+            "bio": "Filòsof presocràtic grec (c. 535-475 aC), conegut com 'l'Obscur' pel seu estil enigmàtic. La seva doctrina del flux perpetu ('tot flueix'), la unitat dels contraris i el Logos com a principi còsmic el converteixen en un dels pensadors més influents de l'antiguitat.",
+            "imatge": "heraclit.png",
+        },
+        "Plató": {
+            "bio": "Filòsof atenenc (c. 428-348 aC), deixeble de Sòcrates i mestre d'Aristòtil. Fundador de l'Acadèmia, la primera institució d'educació superior d'Occident. Els seus diàlegs han definit la filosofia occidental durant més de dos mil·lennis.",
+            "imatge": "plato.png",
+        },
+        "Sèneca": {
+            "bio": "Filòsof estoic, dramaturg i home d'estat romà (c. 4 aC-65 dC). Tutor i conseller de Neró, les seves cartes i tractats morals són obres mestres de la prosa llatina i guies pràctiques per a la vida virtuosa que continuen inspirant lectors avui.",
+            "imatge": "seneca.png",
+        },
+    }
+
     def _generar_autors(self, obres_metadata: list[ObraMetadata]) -> Path:
-        """Genera la pàgina d'autors."""
+        """Genera la pàgina d'autors amb retrats i biografies."""
         # Agrupar obres per autor
         autors: dict[str, dict] = {}
         for obra in obres_metadata:
             if obra.autor not in autors:
+                # Buscar biografia i imatge
+                info_autor = self.BIOGRAFIES_AUTORS.get(obra.autor, {})
                 autors[obra.autor] = {
                     "nom": obra.autor,
                     "nom_original": obra.autor_original,
+                    "bio": info_autor.get("bio", ""),
+                    "imatge": info_autor.get("imatge", ""),
                     "obres": [],
                 }
             autors[obra.autor]["obres"].append(obra.model_dump())
 
         autors_list = sorted(autors.values(), key=lambda x: x["nom"])
+        base = self.publisher_config.base_url
 
         try:
-            # Template senzill per autors
             html = f"""<!DOCTYPE html>
 <html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Autors de la Biblioteca Arion - Traduccions obertes de clàssics universals al català">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura, autors">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Autors - Biblioteca Arion">
+    <meta property="og:description" content="Autors de les traduccions obertes de clàssics universals al català">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{self.publisher_config.site_url}autors.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Autors - Biblioteca Arion">
+    <meta name="twitter:description" content="Autors de les traduccions obertes de clàssics universals al català">
+
     <title>Autors | Biblioteca Arion</title>
-    <link rel="stylesheet" href="{self.publisher_config.base_url}css/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="{base}css/styles.css">
+
+    <style>
+        .autors-grid {{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: var(--spacing-xl);
+        }}
+
+        .autor-card {{
+            display: flex;
+            gap: var(--spacing-xl);
+            background-color: var(--color-bg-primary);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-xl);
+            transition: all var(--transition-normal);
+        }}
+
+        .autor-card:hover {{
+            border-color: var(--color-accent);
+            box-shadow: var(--shadow-md);
+        }}
+
+        .autor-retrat {{
+            flex-shrink: 0;
+        }}
+
+        .autor-retrat img {{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--color-border-light);
+            box-shadow: var(--shadow-md);
+        }}
+
+        .autor-info {{
+            flex: 1;
+        }}
+
+        .autor-info h2 {{
+            font-family: var(--font-titles);
+            font-size: var(--font-size-2xl);
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            margin-top: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }}
+
+        .autor-nom-original {{
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            margin-bottom: var(--spacing-sm);
+            font-style: italic;
+        }}
+
+        .autor-bio {{
+            font-size: var(--font-size-sm);
+            color: var(--color-text-secondary);
+            line-height: var(--line-height-base);
+            margin-bottom: var(--spacing-md);
+        }}
+
+        .autor-obres {{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-sm);
+        }}
+
+        .autor-obres li {{
+            padding: 0;
+        }}
+
+        .autor-obres a {{
+            display: inline-block;
+            font-size: var(--font-size-sm);
+            padding: var(--spacing-xs) var(--spacing-sm);
+            background-color: var(--color-bg-secondary);
+            border-radius: var(--radius-sm);
+            transition: all var(--transition-fast);
+        }}
+
+        .autor-obres a:hover {{
+            background-color: var(--color-accent);
+            color: white;
+        }}
+
+        @media (max-width: 768px) {{
+            .autor-card {{
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }}
+
+            .autor-obres {{
+                justify-content: center;
+            }}
+        }}
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <div class="header-inner">
                 <div class="site-logo">
-                    <a href="{self.publisher_config.base_url}index.html" class="site-title">Biblioteca Arion</a>
-                    <p class="site-tagline">Traduccions de clàssics universals al català</p>
+                    <a href="{base}index.html" class="site-title">Biblioteca Arion</a>
+                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
                 </div>
-                <nav class="main-nav">
+
+                <nav class="main-nav" aria-label="Navegació principal">
                     <ul>
-                        <li><a href="{self.publisher_config.base_url}index.html">Catàleg</a></li>
-                        <li><a href="{self.publisher_config.base_url}autors.html" class="active">Autors</a></li>
-                        <li><a href="{self.publisher_config.base_url}sobre.html">Sobre</a></li>
+                        <li><a href="{base}index.html">Catàleg</a></li>
+                        <li><a href="{base}autors.html" class="active">Autors</a></li>
+                        <li><a href="{base}sobre.html">Sobre</a></li>
+                        <li>
+                            <button class="theme-toggle" aria-label="Canviar tema">🌙</button>
+                        </li>
                     </ul>
                 </nav>
             </div>
         </div>
     </header>
+
+    <!-- Main Content -->
     <main>
         <section class="page-content">
             <div class="container">
-                <h1 class="text-center">Autors</h1>
-                <div class="autors-grid" style="display: grid; gap: 2rem; margin-top: 2rem;">
+                <header class="page-header text-center">
+                    <h1>Autors</h1>
+                    <p style="color: var(--color-text-muted); margin-top: var(--spacing-sm);">{len(autors_list)} autors traduïts</p>
+                </header>
+
+                <div class="autors-grid">
 """
             for autor in autors_list:
+                imatge_html = ""
+                if autor['imatge']:
+                    imatge_path = self.publisher_config.output_dir / "assets" / "autors" / autor['imatge']
+                    if imatge_path.exists():
+                        imatge_html = f'''
+                    <div class="autor-retrat">
+                        <img src="{base}assets/autors/{autor['imatge']}" alt="Retrat de {autor['nom']}">
+                    </div>'''
+
                 html += f"""
                     <article class="autor-card">
-                        <h2>{autor['nom']}</h2>
-                        {"<p><em>" + autor['nom_original'] + "</em></p>" if autor['nom_original'] else ""}
-                        <ul>
+                        {imatge_html}
+                        <div class="autor-info">
+                            <h2>{autor['nom']}</h2>
+                            {f'<p class="autor-nom-original">{autor["nom_original"]}</p>' if autor['nom_original'] else ''}
+                            {f'<p class="autor-bio">{autor["bio"]}</p>' if autor['bio'] else ''}
+                            <ul class="autor-obres">
 """
                 for obra in autor['obres']:
-                    html += f"""                            <li><a href="{self.publisher_config.base_url}{obra['slug']}.html">{obra['titol']}</a></li>
+                    html += f"""                                <li><a href="{base}{obra['slug']}.html">{obra['titol']}</a></li>
 """
-                html += """                        </ul>
+                html += """                            </ul>
+                        </div>
                     </article>
 """
 
-            html += """
+            html += f"""
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p class="text-center">Biblioteca Arion - Traduccions obertes de clàssics universals</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Biblioteca Arion</h4>
+                    <p>Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Navegació</h4>
+                    <ul>
+                        <li><a href="{base}index.html">Catàleg d'obres</a></li>
+                        <li><a href="{base}autors.html">Autors</a></li>
+                        <li><a href="{base}glossari.html">Glossari general</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="{base}metodologia.html">Metodologia</a></li>
+                        <li><a href="{base}collaborar.html">Col·laborar</a></li>
+                        <li><a href="{base}contacte.html">Contacte</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Llicència</h4>
+                    <p><small>Textos originals de domini públic. Traduccions sota llicència oberta CC BY-SA 4.0.</small></p>
+                    <p><small>© 2026 Biblioteca Arion</small></p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>Fet amb dedicació per a la cultura catalana</p>
+            </div>
         </div>
     </footer>
-    <script src="js/app.js"></script>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.querySelector('.theme-toggle');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+
+        function setTheme(dark) {{
+            document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+            themeToggle.textContent = dark ? '☀️' : '🌙';
+            localStorage.setItem('theme', dark ? 'dark' : 'light');
+        }}
+
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {{
+            setTheme(savedTheme === 'dark');
+        }} else {{
+            setTheme(prefersDark.matches);
+        }}
+
+        themeToggle.addEventListener('click', () => {{
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            setTheme(!isDark);
+        }});
+    </script>
+
+    <script src="{base}js/app.js"></script>
 </body>
 </html>
 """
