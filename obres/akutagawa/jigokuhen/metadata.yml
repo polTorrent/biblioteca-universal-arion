@@ -12,8 +12,8 @@ obra:
 seccions: 20
 
 estadistiques:
-  paraules_original: ~8500
-  paraules_traduccio: ~9000
+  paraules_original: 8500
+  paraules_traduccio: 9000
   notes: 14
   termes_glossari: 20
 
