@@ -29,6 +29,20 @@ from agents.formatter import (
     Section,
     GlossaryEntry as FormatterGlossaryEntry,
 )
+from agents.venice_client import (
+    VeniceClient,
+    VeniceError,
+    VeniceAPIKeyError,
+    VeniceRequestError,
+    ImageGenerationRequest,
+    generar_portada_llibre,
+)
+from agents.portadista import (
+    AgentPortadista,
+    PortadistaConfig,
+    PALETES,
+    generar_portada_obra,
+)
 
 __all__ = [
     "BaseAgent",
@@ -57,4 +71,14 @@ __all__ = [
     "WorkMetadata",
     "Section",
     "FormatterGlossaryEntry",
+    "VeniceClient",
+    "VeniceError",
+    "VeniceAPIKeyError",
+    "VeniceRequestError",
+    "ImageGenerationRequest",
+    "generar_portada_llibre",
+    "AgentPortadista",
+    "PortadistaConfig",
+    "PALETES",
+    "generar_portada_obra",
 ]
