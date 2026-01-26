@@ -1,7 +1,7 @@
 """Agent per a la generació de portades de llibres minimalistes i simbòliques.
 
-Utilitza Claude per crear prompts artístics i Venice.ai per generar imatges.
-Estil visual: ULTRA-MINIMALISTA, ABSTRACTE, un sol element simbòlic, 70%+ espai buit.
+Utilitza Venice.ai per generar imatges.
+Estil visual: MINIMALISTA FIGURATIU - siluetes i objectes simplificats, 60%+ espai buit.
 Format: Vertical 2:3 per a llibres.
 """
 
@@ -36,61 +36,110 @@ class PaletaGenere(BaseModel):
 
 PALETES: dict[str, PaletaGenere] = {
     "FIL": PaletaGenere(
-        colors=["pure white", "soft gray", "deep black", "subtle gold"],
-        estil="geometric abstract minimalist",
-        descripcio="Pure geometric forms, single shape, vast emptiness",
-        background="#F8F8F8",
-        accent="#2C2C2C",
+        colors=["warm cream", "charcoal gray", "terracotta", "aged paper"],
+        estil="minimalist figurative silhouette",
+        descripcio="Simple symbolic object silhouette, classical, elegant",
+        background="#F5F1E8",
+        accent="#3D3D3D",
         text_color="#1A1A1A",
     ),
     "POE": PaletaGenere(
-        colors=["pale pink", "soft lavender", "pearl white", "muted blue"],
-        estil="ethereal abstract delicate",
-        descripcio="Single floating abstract form, dreamlike, soft gradient",
-        background="#FAF5F7",
-        accent="#6B4C5A",
+        colors=["soft blue", "dusty rose", "pearl white", "sage green"],
+        estil="delicate figurative watercolor",
+        descripcio="Single poetic object, soft edges, dreamlike atmosphere",
+        background="#F8F6F4",
+        accent="#6B5B73",
         text_color="#3D2E35",
     ),
     "TEA": PaletaGenere(
-        colors=["deep black", "rich crimson", "antique gold"],
-        estil="dramatic high contrast abstract",
-        descripcio="Bold abstract shape, dramatic shadows, theatrical",
+        colors=["deep black", "rich crimson", "antique gold", "burgundy"],
+        estil="dramatic figurative theatrical",
+        descripcio="Bold theatrical symbol, dramatic lighting, stage presence",
         background="#1A1A1A",
         accent="#B8860B",
         text_color="#F5F5F5",
     ),
     "NOV": PaletaGenere(
-        colors=["sepia", "gray blue", "olive", "cream"],
-        estil="atmospheric abstract silhouette",
-        descripcio="Single misty silhouette, atmospheric depth, muted",
+        colors=["sepia", "misty blue", "forest green", "cream"],
+        estil="atmospheric figurative narrative",
+        descripcio="Evocative object silhouette, storytelling mood, nostalgic",
         background="#F5F0E8",
         accent="#4A5568",
         text_color="#2D3748",
     ),
     "SAG": PaletaGenere(
-        colors=["deep blue", "luminous gold", "pure white"],
-        estil="mystical abstract luminous",
-        descripcio="Single sacred geometric form, ethereal glow, transcendent",
+        colors=["deep blue", "luminous gold", "pure white", "celestial"],
+        estil="sacred figurative iconic",
+        descripcio="Sacred symbol, luminous presence, transcendent simplicity",
         background="#0D1B2A",
         accent="#D4AF37",
         text_color="#F0E6D3",
     ),
     "ORI": PaletaGenere(
-        colors=["black ink", "rice paper white", "vermillion accent"],
-        estil="zen brushstroke minimal",
-        descripcio="Single ink brushstroke, ensō inspired, vast empty space",
+        colors=["sumi ink black", "rice paper white", "vermillion red"],
+        estil="zen ink wash sumi-e",
+        descripcio="Single brushstroke object, Japanese aesthetic, ma space",
         background="#FAF8F5",
         accent="#8B0000",
         text_color="#2C1810",
     ),
     "EPO": PaletaGenere(
-        colors=["earth brown", "ancient bronze", "deep blue", "aged gold"],
-        estil="monumental abstract ancient",
-        descripcio="Single monolithic abstract form, ancient feeling, weathered",
+        colors=["bronze", "sandstone", "deep ocean blue", "aged gold"],
+        estil="heroic figurative monumental",
+        descripcio="Epic symbol, ancient grandeur, timeless heroism",
         background="#1C1410",
         accent="#CD853F",
         text_color="#E8DCC8",
     ),
+}
+
+# Símbols figuratius per temes específics
+SIMBOLS_TEMATICS: dict[str, str] = {
+    # Filosofia
+    "estoïcisme": "a single ancient Greek column fragment",
+    "temps": "a minimalist hourglass with falling sand",
+    "mort": "a single wilting flower stem",
+    "virtut": "a simple laurel branch",
+    "ànima": "a delicate feather floating",
+    "raó": "a single candle flame illuminating",
+    "llibertat": "broken chain links",
+    "deure": "an old iron key",
+    "presó": "vertical iron bars with light between",
+    "diàleg": "two facing silhouette profiles",
+    "coneixement": "an open ancient book",
+    "veritat": "a simple mirror reflection",
+    "saviesa": "an owl silhouette",
+    "natura": "a single gnarled tree",
+    "voluntat": "a clenched fist silhouette",
+    "representació": "a window frame with landscape",
+    "causalitat": "falling dominoes in sequence",
+    "lògica": "interlocking geometric shapes",
+    "metafísica": "a door slightly ajar with light",
+    "epistemologia": "an eye looking through keyhole",
+    # Poesia
+    "amor": "two intertwined roses",
+    "natura": "a single bird on a branch",
+    "melangia": "rain drops on window",
+    # Teatre
+    "tragèdia": "a cracked theatrical mask",
+    "comèdia": "a smiling mask with shadow",
+    # Novel·la
+    "viatge": "a sailing ship silhouette",
+    "guerra": "a broken sword",
+    "família": "an empty chair by window",
+    # Oriental
+    "zen": "a single lotus flower",
+    "bushido": "a katana blade reflection",
+    "natura": "bamboo stalks in mist",
+    "art": "ink brush and stone",
+    "foc": "dancing flames",
+    "infern": "flames rising from below",
+    "sacrifici": "hands releasing a bird",
+    "obsessió": "an eye in shadow",
+    # Epopeia
+    "heroi": "a shield and spear crossed",
+    "déus": "lightning bolt from clouds",
+    "batalla": "a single warrior helmet",
 }
 
 
@@ -115,20 +164,20 @@ class PortadistaConfig(BaseModel):
 
 
 class AgentPortadista(BaseAgent):
-    """Agent per generar portades ULTRA-MINIMALISTES per a llibres."""
+    """Agent per generar portades MINIMALISTES FIGURATIVES per a llibres."""
 
     agent_name = "Portadista"
 
     LOGO_PATH = Path(__file__).parent.parent / "assets" / "logo" / "arion_logo.png"
     LOGO_PATH_ALT = Path(__file__).parent.parent / "assets" / "logo" / "logo_arion_v1.png"
 
-    # Negative prompt MOLT restrictiu per forçar minimalisme
+    # Negative prompt per mantenir minimalisme figuratiu
     NEGATIVE_PROMPT_BASE = (
         "text, letters, words, title, signature, watermark, Venice, logo, "
-        "realistic, photographic, detailed, complex, busy, cluttered, "
-        "multiple objects, multiple elements, scene, landscape, person, face, "
-        "hands, animals, buildings, furniture, decorative, ornate, "
-        "border, frame, pattern, texture heavy, noise, grain"
+        "photorealistic, hyper detailed, complex scene, busy composition, cluttered, "
+        "multiple main objects, crowded, chaotic, person, human figure, portrait, "
+        "full body, hands, decorative border, ornate frame, heavy pattern, "
+        "noise, grain, blurry, low quality, amateur"
     )
 
     def __init__(
@@ -147,67 +196,90 @@ class AgentPortadista(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return """Ets un director artístic ULTRA-MINIMALISTA per a portades de llibres clàssics.
+        return """Ets un director artístic MINIMALISTA FIGURATIU per a portades de llibres clàssics.
 
-REGLES ABSOLUTES:
-1. UN SOL element visual abstracte/simbòlic al centre
-2. 70-80% de la imatge ha de ser ESPAI BUIT (fons net)
-3. MAI objectes realistes - només formes abstractes, siluetes, símbols geomètrics
-4. MAI text, lletres, paraules
-5. Colors molt limitats (2-3 màxim)
-6. Inspiració: disseny japonès, escandinau, Rothko, Malevich
+ESTIL:
+- Objectes recognoscibles però simplificats (siluetes, formes essencials)
+- Un sol element visual central que representi l'essència de l'obra
+- 60% espai buit (fons net)
+- Colors limitats (2-3 màxim)
+- Inspiració: pòsters de pel·lícules minimalistes, il·lustració editorial, art japonès
 
-EXEMPLES DE BONS SÍMBOLS:
-- Filosofia: cercle perfecte, quadrat, línia vertical
-- Poesia: taca de color difusa, forma flotant abstracta
-- Teatre: mitja lluna, ombra geomètrica
-- Novel·la: silueta abstracta, forma atmosfèrica
-- Sagrat: triangle lluminós, cercle daurat
-- Oriental: ensō (cercle zen), pinzellada única
-- Epopeia: forma monolítica, arc abstracte
+EXEMPLES DE BONS SÍMBOLS FIGURATIUS:
+- Filosofia del temps: rellotge de sorra, espelma consumint-se
+- Estoïcisme: columna grega, cadenes trencades
+- Presó/deure: clau antiga, barrots amb llum
+- Poesia: ploma amb tinta, flor delicada
+- Teatre: màscara, focus de llum
+- Novel·la: llibre obert, finestra
+- Oriental: flor de cirerer, pinzell de tinta
+- Epopeia: casc antic, espasa
 
-RESPOSTA JSON:
-{
-  "simbol": "descripció del símbol abstracte",
-  "raonament": "per què representa l'essència",
-  "prompt": "prompt en anglès, MOLT MINIMALISTA",
-  "negative_prompt": "elements a evitar"
-}"""
+MAI:
+- Text o lletres
+- Persones completes o cares
+- Escenes complexes
+- Múltiples objectes principals"""
 
     def _obtenir_paleta(self, genere: str) -> PaletaGenere:
         return PALETES.get(genere, PALETES["NOV"])
 
     def _generar_prompt_automatic(self, metadata: dict, paleta: PaletaGenere, genere: str) -> dict:
-        """Genera prompt ULTRA-MINIMALISTA sense Claude."""
-        titol = metadata.get("titol", "")
-        
-        # Símbols abstractes per gènere
-        simbols = {
-            "FIL": "single perfect golden circle floating in center, pure geometric form",
-            "POE": "single soft abstract color gradient blob, floating ethereal form",
-            "TEA": "single dramatic abstract shadow shape, high contrast geometric",
-            "NOV": "single abstract misty silhouette form, atmospheric minimal shape",
-            "SAG": "single luminous golden triangle, sacred geometry, ethereal glow",
-            "ORI": "single black ink brushstroke enso circle, zen minimal, rice paper",
-            "EPO": "single abstract monolithic bronze form, ancient weathered geometric",
+        """Genera prompt FIGURATIU MINIMALISTA basat en el contingut de l'obra."""
+        titol = metadata.get("titol", "").lower()
+        temes = metadata.get("temes", [])
+        descripcio = metadata.get("descripcio", "").lower()
+
+        # 1. Buscar símbol específic pels temes
+        simbol = None
+        tema_trobat = None
+        for tema in temes:
+            tema_lower = tema.lower()
+            if tema_lower in SIMBOLS_TEMATICS:
+                simbol = SIMBOLS_TEMATICS[tema_lower]
+                tema_trobat = tema
+                break
+
+        # 2. Si no hi ha tema, buscar paraules clau al títol o descripció
+        if not simbol:
+            text_cerca = f"{titol} {descripcio}"
+            for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
+                if clau in text_cerca:
+                    simbol = simbol_candidat
+                    tema_trobat = clau
+                    break
+
+        # 3. Símbols per defecte segons gènere (més figuratius)
+        simbols_defecte = {
+            "FIL": "a single ancient oil lamp glowing softly",
+            "POE": "a quill pen with ink drop",
+            "TEA": "a spotlight beam on empty stage",
+            "NOV": "an old leather-bound book slightly open",
+            "SAG": "rays of light through stained glass",
+            "ORI": "a single cherry blossom branch",
+            "EPO": "an ancient bronze helmet in profile",
         }
-        
-        simbol = simbols.get(genere, simbols["NOV"])
-        
+
+        if not simbol:
+            simbol = simbols_defecte.get(genere, simbols_defecte["NOV"])
+            tema_trobat = "gènere"
+
+        # Construir prompt figuratiu minimalista
         prompt = (
-            f"Ultra minimalist book cover art, {simbol}, "
-            f"{paleta.estil} style, {' and '.join(paleta.colors[:2])} only, "
-            f"70 percent empty space, solid clean background, "
-            f"single centered element, extreme negative space, "
-            f"no detail, no texture, flat design, vector style, "
-            f"editorial elegance, timeless, museum quality"
+            f"Minimalist book cover illustration, {simbol}, "
+            f"centered composition, {paleta.estil} style, "
+            f"{' and '.join(paleta.colors[:2])} color palette, "
+            f"60 percent negative space, clean solid background, "
+            f"single object focus, elegant simplicity, "
+            f"fine art quality, editorial design, subtle shadows, "
+            f"no text, sophisticated, museum poster aesthetic"
         )
 
         return {
             "prompt": prompt,
             "negative_prompt": self.NEGATIVE_PROMPT_BASE,
-            "simbol": simbol.split(",")[0],
-            "raonament": "Símbol abstracte minimalista per al gènere",
+            "simbol": simbol,
+            "raonament": f"Símbol figuratiu basat en: {tema_trobat}",
             "paleta": paleta.model_dump(),
             "genere": genere,
         }
@@ -428,14 +500,15 @@ RESPOSTA JSON:
         afegir_text: bool = True,
         editorial: str = "Biblioteca Arion",
     ) -> bytes:
-        """Genera una portada ULTRA-MINIMALISTA completa."""
+        """Genera una portada MINIMALISTA FIGURATIVA completa."""
         if not self.venice:
             raise RuntimeError("Venice client no disponible. Configura VENICE_API_KEY a .env")
 
-        # 1. Generar prompt minimalista
-        self.log_info("Generant prompt ultra-minimalista...")
+        # 1. Generar prompt figuratiu
+        self.log_info("Generant prompt figuratiu minimalista...")
         prompt_result = self.crear_prompt(metadata)
         self.log_info(f"Símbol: {prompt_result['simbol']}")
+        self.log_info(f"Raonament: {prompt_result['raonament']}")
 
         # 2. Generar imatge amb Venice (FORMAT VERTICAL)
         self.log_info("Generant imatge amb Venice.ai...")
@@ -498,18 +571,24 @@ def generar_portada_obra(
 
 if __name__ == "__main__":
     import sys
-    
+
     print("=" * 50)
-    print("TEST PORTADISTA ULTRA-MINIMALISTA")
+    print("TEST PORTADISTA FIGURATIU MINIMALISTA")
     print("=" * 50)
-    
+
     agent = AgentPortadista()
     print(f"✅ Agent creat")
     print(f"   Venice: {'✅' if agent.venice else '❌'}")
     print(f"   Format: {agent.portadista_config.width}x{agent.portadista_config.height}")
-    
+
     if agent.venice and "--generate" in sys.argv:
-        test = {"titol": "Meditacions", "autor": "Marc Aureli", "genere": "FIL"}
+        test = {
+            "titol": "Meditacions",
+            "autor": "Marc Aureli",
+            "genere": "FIL",
+            "temes": ["estoïcisme", "virtut"],
+            "descripcio": "Reflexions filosòfiques sobre la vida i la mort",
+        }
         portada = agent.generar_portada(test)
         Path("test_portada.png").write_bytes(portada)
         print("✅ test_portada.png generada")
