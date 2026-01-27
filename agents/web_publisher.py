@@ -1010,9 +1010,13 @@ class WebPublisher(BaseAgent):
                 errors.append(f"Error publicant: {obra_path}")
 
         # Generar índex i pàgines auxiliars
-        if obres_publicades:
+        # IMPORTANT: Només regenerar índex si NO hi ha filtre d'obres
+        # Si hi ha filtre, només es publiquen les obres individuals sense tocar l'índex
+        if obres_publicades and not obres_filtrades:
             self._generar_index(obres_publicades)
             self._generar_autors(obres_publicades)
+        elif obres_filtrades:
+            self.log_info("Obres filtrades: índex i autors NO regenerats (usar sense --obra per actualitzar)")
 
         # Copiar assets estàtics si no existeixen
         self._copiar_assets_estatics()
