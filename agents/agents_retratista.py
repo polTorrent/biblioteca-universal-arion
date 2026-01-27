@@ -203,7 +203,7 @@ class RetratistaConfig(BaseModel):
     width: int = Field(default=1024, ge=512, le=1280)
     height: int = Field(default=1024, ge=512, le=1280)
     format_ratio: Literal["1:1", "3:4"] = "1:1"
-    model_imatge: str = "flux-2-max"
+    model_imatge: str = "z-image-turbo"
     steps: int = Field(default=35, ge=20, le=50)
     cfg_scale: float = Field(default=7.5, ge=5.0, le=12.0)
     afegir_marc: bool = False
