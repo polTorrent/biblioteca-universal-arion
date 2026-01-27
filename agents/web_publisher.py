@@ -492,6 +492,10 @@ class WebPublisher(BaseAgent):
             "bio": "Filòsof estoic, dramaturg i home d'estat romà (c. 4 aC-65 dC). Tutor i conseller de Neró, les seves cartes i tractats morals són obres mestres de la prosa llatina i guies pràctiques per a la vida virtuosa que continuen inspirant lectors avui.",
             "imatge": "seneca.png",
         },
+        "Vsévolod Garxin": {
+            "bio": "Escriptor rus (1855-1888), pioner del realisme psicològic i el flux de consciència. Soldat voluntari a la Guerra russo-turca (1877), les seves experiències bèl·liques van inspirar contes antibel·licistes d'una intensitat emocional extraordinària. Admirat per Txèkhov i Turguénev.",
+            "imatge": "garxin.png",
+        },
     }
 
     def _generar_autors(self, obres_metadata: list[ObraMetadata]) -> Path:
