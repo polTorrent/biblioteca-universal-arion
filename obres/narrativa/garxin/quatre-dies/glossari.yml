@@ -1,0 +1,154 @@
+termes:
+  - id: "versta"
+    rus: "верста"
+    transliteracio: "versta"
+    traduccio: "versta"
+    definicio: >
+      Antiga unitat de distància russa equivalent a 1,0668 km.
+      Cinquanta verstes equivalen a uns 53 km, una marxa forçada considerable
+      per a soldats d'infanteria carregats amb equipament.
+    usos: [4]
+
+  - id: "cosac"
+    rus: "казак"
+    transliteracio: "kazak"
+    traduccio: "cosac"
+    definicio: >
+      Guerrers de cavalleria lleugera de les estepes russes i ucraïneses.
+      A la Guerra russo-turca (1877-78), els cosacs formaven unitats d'elit
+      de l'exèrcit imperial rus, reconeixibles pels seus uniformes blaus amb
+      franges vermelles i les llances característiques.
+    usos: [8]
+
+  - id: "bashi-bazuk"
+    rus: "башибузук"
+    transliteracio: "bashibuzuk"
+    traduccio: "baixibuzuc"
+    definicio: >
+      Soldat irregular de l'exèrcit otomà, sovint mercenari. Eren famosos
+      per la seva crueltat amb els presoners i civils. El terme prové del
+      turc başıbozuk ("cap boig"). Les atrocitats dels baixibuzucs a Bulgària
+      van escandalitzar Europa i van contribuir a justificar la intervenció russa.
+    usos: [8]
+
+  - id: "fellah"
+    rus: "феллах"
+    transliteracio: "fellakh"
+    traduccio: "fel·là"
+    definicio: >
+      Camperol egipci. L'exèrcit otomà reclutava soldats de tot l'imperi,
+      incloent-hi Egipte. El protagonista s'adona que el turc que ha matat
+      porta uniforme egipci: era un pobre fel·là arrencat de la seva terra
+      i enviat a morir en una guerra que no entenia.
+    usos: [4]
+
+  - id: "paixà"
+    rus: "паша"
+    transliteracio: "paixà"
+    traduccio: "paixà"
+    definicio: >
+      Alt rang militar i civil de l'Imperi Otomà. Els paixàs tenien poder
+      absolut sobre els soldats sota el seu comandament, incloent-hi el
+      dret de vida i mort.
+    usos: [4]
+
+  - id: "peabody-martini"
+    rus: "Пибоди, Мартини"
+    transliteracio: "Pibodi, Martini"
+    traduccio: "Peabody, Martini"
+    definicio: >
+      Fusells anglesos de precisió utilitzats per l'exèrcit otomà.
+      El Peabody-Martini era un fusell de retrocàrrega molt superior
+      als mosquets russos. La superioritat tecnològica turca va causar
+      grans baixes a l'exèrcit rus durant la guerra.
+    usos: [4]
+
+  - id: "kixinev"
+    rus: "Кишинёв"
+    transliteracio: "Kixiniov"
+    traduccio: "Kixinev"
+    definicio: >
+      Ciutat de Bessaràbia (actual Moldàvia), punt de concentració de
+      l'exèrcit rus abans d'envair Bulgària otomana. Avui capital de Moldàvia,
+      amb el nom de Chișinău.
+    usos: [6]
+
+  - id: "rushchuk"
+    rus: "Рущук"
+    transliteracio: "Ruixtxuk"
+    traduccio: "Ruixtxuk"
+    definicio: >
+      Ciutat búlgara a la riba del Danubi, fortalesa otomana important.
+      Avui es diu Ruse. Era un punt estratègic clau a la línia de defensa turca.
+    usos: [4]
+
+  - id: "stambul"
+    rus: "Стамбул"
+    transliteracio: "Stambul"
+    traduccio: "Stambul"
+    definicio: >
+      Nom otomà de Constantinoble (Istanbul). Capital de l'Imperi Otomà
+      i punt d'embarcament de les tropes cap als fronts de guerra.
+    usos: [4]
+
+  - id: "barin"
+    rus: "барин"
+    transliteracio: "bàrin"
+    traduccio: "senyor"
+    definicio: >
+      Tractament respectuós utilitzat pels soldats russos per adreçar-se
+      als voluntaris de classe mitjana o noble. El protagonista, Ivànov,
+      és un voluntari (no un soldat reclutat), probablement un estudiant
+      o jove professional que es va allistar per idealisme patriòtic.
+    usos: [8]
+
+  - id: "ivanov"
+    rus: "Иванов"
+    transliteracio: "Ivànov"
+    traduccio: "Ivànov"
+    definicio: >
+      Cognom rus molt comú (equivalent a "García" o "Smith"). El protagonista
+      és un voluntari anomenat Ivànov. Garxin va basar el personatge en la
+      seva pròpia experiència: ell també es va allistar voluntàriament i
+      va ser ferit a la batalla.
+    usos: [4, 8]
+
+  - id: "masha"
+    rus: "Маша"
+    transliteracio: "Màixa"
+    traduccio: "Masha"
+    definicio: >
+      Diminutiu afectuós de Maria en rus. La promesa del protagonista,
+      que l'espera a casa. Representa tot allò que ha deixat enrere
+      per anar a la guerra.
+    usos: [5, 6, 8]
+
+  - id: "yakovlev"
+    rus: "Яковлев"
+    transliteracio: "Iàkovlev"
+    traduccio: "Iàkovlev"
+    definicio: >
+      Cognom del caporal que finalment troba el protagonista. Deriva de
+      Iàkov (Jacob). El seu rol és clau: arriba quan el protagonista ja
+      no pot cridar i el confonen amb un mort.
+    usos: [8]
+
+  - id: "germanes-caritat"
+    rus: "сестры милосердия"
+    transliteracio: "siostry milosèrdia"
+    traduccio: "germanes de la caritat"
+    definicio: >
+      Infermeres voluntàries, sovint de classe alta, que servien als
+      hospitals de campanya. La Guerra russo-turca va veure una gran
+      mobilització de dones russes en tasques sanitàries.
+    usos: [8]
+
+  - id: "cantimplora"
+    rus: "фляга"
+    transliteracio: "fliaga"
+    traduccio: "cantimplora"
+    definicio: >
+      Recipient per portar aigua, essencial per als soldats. La cantimplora
+      del turc mort és l'única font d'aigua del protagonista i simbolitza
+      la paradoxa de dependre del mort per sobreviure.
+    usos: [4, 5, 8]

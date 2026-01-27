@@ -1,0 +1,69 @@
+obra:
+  titol: "Quatre dies"
+  titol_original: "Четыре дня (Chetyre dnya)"
+  autor: "Vsévolod Garxin"
+  autor_original: "Всеволод Михайлович Гаршин"
+  traductor: "Biblioteca Arion"
+  any_original: 1877
+  any_traduccio: 2026
+  llengua_original: "rus"
+  descripcio: "Primer conte de Garxin, basat en la seva experiència com a soldat ferit a la Guerra russo-turca. Un soldat jau quatre dies al camp de batalla al costat del cadàver de l'enemic que ell mateix va matar. Obra pionera del flux de consciència i el realisme psicològic antibel·licista."
+
+seccions: 8
+
+estadistiques:
+  paraules_original: 4200
+  paraules_traduccio: 4500
+  notes: 12
+  termes_glossari: 15
+
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-01-27"
+  notes_revisio: "22 correccions aplicades: anglicismes, expressions no catalanes, redundàncies i errors gramaticals"
+
+metadata_original:
+  edicio_base:
+    titol: "The Signal and Other Stories (1912)"
+    url: https://www.gutenberg.org/ebooks/author/1552
+    format: "text digital (domini públic)"
+  traduccio_pont:
+    usada: true
+    llengua: "anglès"
+    justificacio: "Traducció anglesa de domini públic, verificada amb text rus original"
+  traduccions_existents_catala:
+    existeixen: false
+    detalls: |
+      Cercat a CCUC, Traces, BNC, ISBN català i catàlegs editorials (2026-01-27).
+      No existeix cap traducció catalana de Vsévolod Garxin.
+      L'autor és pràcticament desconegut al món catalanoparlant malgrat
+      ser admirat per Txèkhov i Turguénev.
+    justificacio_nova_traduccio: |
+      Primera traducció catalana d'un autor rus de primera línia.
+      Text antibel·licista d'extraordinària intensitat emocional.
+      Obra pionera del flux de consciència (anterior a Joyce).
+  dificultat: 3
+  temps_estimat: "2-3 hores"
+  tags:
+    - Rússia
+    - guerra
+    - antibel·licisme
+    - flux de consciència
+    - realisme psicològic
+    - Guerra russo-turca
+    - mort
+    - culpa
+
+temes:
+  - guerra i violència
+  - culpa i remordiment
+  - humanisme
+  - sofriment
+  - mortalitat
+  - crítica social
+
+contribuidors:
+  - rol: traducció IA inicial
+    nom: Claude (Anthropic)
+    data: 2026-01-27
