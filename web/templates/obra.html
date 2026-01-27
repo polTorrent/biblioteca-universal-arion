@@ -240,7 +240,8 @@
                     <div class="work-meta-grid">
                         <div class="work-meta-item">
                             <strong>Autor</strong>
-                            {{ obra.autor }}
+                            {% set autor_slug = obra.autor|lower|replace("'", "")|replace(' ', '-')|replace('(', '')|replace(')', '') %}
+                            <a href="{{ base_url }}autor-{{ autor_slug }}.html" class="author-link">{{ obra.autor }}</a>
                             {% if obra.autor_original and obra.autor_original != obra.autor %}
                             <br><small>({{ obra.autor_original }})</small>
                             {% endif %}

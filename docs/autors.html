@@ -139,20 +139,18 @@
         <div class="container">
             <div class="header-inner">
                 <div class="site-logo">
-                    <a href="index.html" class="site-title">Biblioteca Arion</a>
-                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
                 </div>
 
-                <nav class="main-nav" aria-label="Navegació principal">
-                    <ul>
-                        <li><a href="index.html">Catàleg</a></li>
-                        <li><a href="autors.html" class="active">Autors</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li>
-                            <button class="theme-toggle" aria-label="Canviar tema">🌙</button>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header-actions">
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="index.html" class="btn-secondary" style="padding: 0.5rem 1rem;">Catàleg</a>
+                </div>
             </div>
         </div>
     </header>
@@ -168,13 +166,13 @@
 
                 <div class="autors-grid">
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="akutagawa-ryūnosuke">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/akutagawa.png" alt="Retrat de Akutagawa Ryūnosuke">
                     </div>
                         <div class="autor-info">
-                            <h2>Akutagawa Ryūnosuke</h2>
+                            <h2><a href="autor-akutagawa-ryūnosuke.html">Akutagawa Ryūnosuke</a></h2>
                             <p class="autor-nom-original">芥川龍之介</p>
                             <p class="autor-bio">Escriptor japonès (1892-1927), mestre del conte curt i figura cabdal de la literatura Taishō. Conegut per la seva prosa elegant i els seus relats psicològics, va influir profundament en la literatura japonesa moderna. El premi Akutagawa, el més prestigiós del Japó, porta el seu nom.</p>
                             <ul class="autor-obres">
@@ -183,13 +181,13 @@
                         </div>
                     </article>
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="anònim-tradició-budista">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/budisme.png" alt="Retrat de Anònim (tradició budista)">
                     </div>
                         <div class="autor-info">
-                            <h2>Anònim (tradició budista)</h2>
+                            <h2><a href="autor-anònim-tradició-budista.html">Anònim (tradició budista)</a></h2>
                             
                             <p class="autor-bio">Els textos de la tradició Prajñāpāramitā van ser compilats entre els segles I aC i VI dC per mestres anònims de diverses escoles budistes. Representen l'essència del budisme Mahāyāna i la doctrina de la vacuïtat (śūnyatā).</p>
                             <ul class="autor-obres">
@@ -198,13 +196,13 @@
                         </div>
                     </article>
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="arthur-schopenhauer">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/schopenhauer.png" alt="Retrat de Arthur Schopenhauer">
                     </div>
                         <div class="autor-info">
-                            <h2>Arthur Schopenhauer</h2>
+                            <h2><a href="autor-arthur-schopenhauer.html">Arthur Schopenhauer</a></h2>
                             <p class="autor-nom-original">Arthur Schopenhauer</p>
                             <p class="autor-bio">Filòsof alemany (1788-1860), autor de 'El món com a voluntat i representació'. El seu pessimisme metafísic i la seva filosofia de la voluntat van influir en Nietzsche, Wagner, Freud i Wittgenstein. Fou un dels primers pensadors occidentals a integrar idees del budisme.</p>
                             <ul class="autor-obres">
@@ -213,13 +211,13 @@
                         </div>
                     </article>
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="epictetus">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/epictetus.png" alt="Retrat de Epictetus">
                     </div>
                         <div class="autor-info">
-                            <h2>Epictetus</h2>
+                            <h2><a href="autor-epictetus.html">Epictetus</a></h2>
                             <p class="autor-nom-original">Ἐπίκτητος</p>
                             <p class="autor-bio">Filòsof estoic grec (c. 50-135 dC), nascut esclau a Hieràpolis. Després de ser alliberat, va ensenyar filosofia a Roma i Nicòpolis. Les seves ensenyances, recollides pel seu deixeble Arrià, han inspirat pensadors des de Marc Aureli fins al estoïcisme modern.</p>
                             <ul class="autor-obres">
@@ -228,13 +226,13 @@
                         </div>
                     </article>
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="heràclit-defes">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/heraclit.png" alt="Retrat de Heràclit d'Efes">
                     </div>
                         <div class="autor-info">
-                            <h2>Heràclit d'Efes</h2>
+                            <h2><a href="autor-heràclit-defes.html">Heràclit d'Efes</a></h2>
                             <p class="autor-nom-original">Ἡράκλειτος ὁ Ἐφέσιος</p>
                             <p class="autor-bio">Filòsof presocràtic grec (c. 535-475 aC), conegut com 'l'Obscur' pel seu estil enigmàtic. La seva doctrina del flux perpetu ('tot flueix'), la unitat dels contraris i el Logos com a principi còsmic el converteixen en un dels pensadors més influents de l'antiguitat.</p>
                             <ul class="autor-obres">
@@ -243,13 +241,13 @@
                         </div>
                     </article>
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="plató">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/plato.png" alt="Retrat de Plató">
                     </div>
                         <div class="autor-info">
-                            <h2>Plató</h2>
+                            <h2><a href="autor-plató.html">Plató</a></h2>
                             <p class="autor-nom-original">Πλάτων</p>
                             <p class="autor-bio">Filòsof atenenc (c. 428-348 aC), deixeble de Sòcrates i mestre d'Aristòtil. Fundador de l'Acadèmia, la primera institució d'educació superior d'Occident. Els seus diàlegs han definit la filosofia occidental durant més de dos mil·lennis.</p>
                             <ul class="autor-obres">
@@ -258,13 +256,13 @@
                         </div>
                     </article>
 
-                    <article class="autor-card">
+                    <article class="autor-card" id="sèneca">
                         
                     <div class="autor-retrat">
                         <img src="assets/autors/seneca.png" alt="Retrat de Sèneca">
                     </div>
                         <div class="autor-info">
-                            <h2>Sèneca</h2>
+                            <h2><a href="autor-sèneca.html">Sèneca</a></h2>
                             <p class="autor-nom-original">Lucius Annaeus Seneca</p>
                             <p class="autor-bio">Filòsof estoic, dramaturg i home d'estat romà (c. 4 aC-65 dC). Tutor i conseller de Neró, les seves cartes i tractats morals són obres mestres de la prosa llatina i guies pràctiques per a la vida virtuosa que continuen inspirant lectors avui.</p>
                             <ul class="autor-obres">

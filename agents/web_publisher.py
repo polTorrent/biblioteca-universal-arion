@@ -653,20 +653,18 @@ class WebPublisher(BaseAgent):
         <div class="container">
             <div class="header-inner">
                 <div class="site-logo">
-                    <a href="{base}index.html" class="site-title">Biblioteca Arion</a>
-                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
+                    <a href="{base}index.html" class="site-brand">
+                        <img src="{base}assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
                 </div>
 
-                <nav class="main-nav" aria-label="Navegació principal">
-                    <ul>
-                        <li><a href="{base}index.html">Catàleg</a></li>
-                        <li><a href="{base}autors.html" class="active">Autors</a></li>
-                        <li><a href="{base}sobre.html">Sobre</a></li>
-                        <li>
-                            <button class="theme-toggle" aria-label="Canviar tema">🌙</button>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="header-actions">
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="{base}index.html" class="btn-secondary" style="padding: 0.5rem 1rem;">Catàleg</a>
+                </div>
             </div>
         </div>
     </header>
@@ -692,11 +690,15 @@ class WebPublisher(BaseAgent):
                         <img src="{base}assets/autors/{autor['imatge']}" alt="Retrat de {autor['nom']}">
                     </div>'''
 
+                # Crear slug i generar fitxa individual
+                autor_slug = autor['nom'].lower().replace(' ', '-').replace('(', '').replace(')', '').replace("'", '')
+                self._generar_fitxa_autor(autor, base)
+
                 html += f"""
-                    <article class="autor-card">
+                    <article class="autor-card" id="{autor_slug}">
                         {imatge_html}
                         <div class="autor-info">
-                            <h2>{autor['nom']}</h2>
+                            <h2><a href="{base}autor-{autor_slug}.html">{autor['nom']}</a></h2>
                             {f'<p class="autor-nom-original">{autor["nom_original"]}</p>' if autor['nom_original'] else ''}
                             {f'<p class="autor-bio">{autor["bio"]}</p>' if autor['bio'] else ''}
                             <ul class="autor-obres">
@@ -792,6 +794,181 @@ class WebPublisher(BaseAgent):
         except Exception as e:
             self.log_warning(f"Error generant pàgina d'autors: {e}")
             return self.publisher_config.output_dir / "autors.html"
+
+    def _generar_fitxa_autor(self, autor: dict, base: str) -> Path:
+        """Genera una fitxa individual per a un autor."""
+        autor_slug = autor['nom'].lower().replace(' ', '-').replace('(', '').replace(')', '').replace("'", '')
+
+        # Imatge de l'autor
+        imatge_html = ""
+        if autor['imatge']:
+            imatge_path = self.publisher_config.output_dir / "assets" / "autors" / autor['imatge']
+            if imatge_path.exists():
+                imatge_html = f'<img src="{base}assets/autors/{autor["imatge"]}" alt="Retrat de {autor["nom"]}" class="autor-retrat-gran">'
+
+        # Llista d'obres
+        obres_html = ""
+        for obra in autor['obres']:
+            portada_html = ""
+            if obra.get('portada_url'):
+                portada_html = f'<img src="{base}{obra["portada_url"]}" alt="Portada de {obra["titol"]}" class="obra-mini-portada">'
+            obres_html += f'''
+                <a href="{base}{obra['slug']}.html" class="autor-obra-card">
+                    {portada_html}
+                    <div class="autor-obra-info">
+                        <h3>{obra['titol']}</h3>
+                        <p>{obra.get('llengua_original', '').capitalize()} · {obra.get('any_original', '')}</p>
+                    </div>
+                </a>'''
+
+        html = f'''<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{autor['nom']} - Autor a la Biblioteca Arion">
+    <title>{autor['nom']} | Biblioteca Arion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{base}css/styles.css">
+    <style>
+        .autor-header {{
+            text-align: center;
+            padding: var(--spacing-3xl) 0;
+            background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+        }}
+        .autor-retrat-gran {{
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--color-border-light);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: var(--spacing-lg);
+        }}
+        .autor-header h1 {{
+            font-family: var(--font-titles);
+            font-size: var(--font-size-3xl);
+            margin: 0 0 var(--spacing-xs);
+        }}
+        .autor-nom-original {{
+            font-size: var(--font-size-lg);
+            color: var(--color-text-muted);
+            font-style: italic;
+            margin: 0 0 var(--spacing-lg);
+        }}
+        .autor-bio {{
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: var(--font-size-base);
+            line-height: var(--line-height-relaxed);
+            color: var(--color-text-secondary);
+        }}
+        .autor-obres-section {{
+            padding: var(--spacing-2xl) 0;
+        }}
+        .autor-obres-section h2 {{
+            text-align: center;
+            margin-bottom: var(--spacing-xl);
+        }}
+        .autor-obres-grid {{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 900px;
+            margin: 0 auto;
+        }}
+        .autor-obra-card {{
+            display: flex;
+            gap: var(--spacing-md);
+            padding: var(--spacing-md);
+            background: var(--color-bg-primary);
+            border: 1px solid var(--color-border-light);
+            border-radius: var(--radius-md);
+            text-decoration: none;
+            color: inherit;
+            transition: all var(--transition-fast);
+        }}
+        .autor-obra-card:hover {{
+            border-color: var(--color-accent);
+            box-shadow: var(--shadow-md);
+        }}
+        .obra-mini-portada {{
+            width: 60px;
+            height: 90px;
+            object-fit: cover;
+            border-radius: var(--radius-sm);
+            flex-shrink: 0;
+        }}
+        .autor-obra-info h3 {{
+            font-family: var(--font-titles);
+            font-size: var(--font-size-base);
+            margin: 0 0 var(--spacing-xs);
+        }}
+        .autor-obra-info p {{
+            font-size: var(--font-size-sm);
+            color: var(--color-text-muted);
+            margin: 0;
+        }}
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <div class="site-logo">
+                    <a href="{base}index.html" class="site-brand">
+                        <img src="{base}assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="{base}autors.html" class="btn-secondary" style="padding: 0.5rem 1rem;">Autors</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="autor-header">
+            <div class="container">
+                {imatge_html}
+                <h1>{autor['nom']}</h1>
+                {f'<p class="autor-nom-original">{autor["nom_original"]}</p>' if autor['nom_original'] else ''}
+                {f'<p class="autor-bio">{autor["bio"]}</p>' if autor['bio'] else ''}
+            </div>
+        </section>
+
+        <section class="autor-obres-section">
+            <div class="container">
+                <h2>Obres traduïdes</h2>
+                <div class="autor-obres-grid">
+                    {obres_html}
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{base}js/app.js"></script>
+</body>
+</html>'''
+
+        output_file = self.publisher_config.output_dir / f"autor-{autor_slug}.html"
+        output_file.write_text(html, encoding="utf-8")
+        self.log_info(f"Fitxa d'autor generada: {output_file}")
+        return output_file
 
     def publicar_tot(
         self,

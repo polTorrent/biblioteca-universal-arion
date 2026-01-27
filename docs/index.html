@@ -33,42 +33,42 @@
     
 </head>
 <body>
-    <!-- Header - Simplificat v2 -->
+    <!-- Header -->
     <header class="site-header">
         <div class="container">
             <div class="header-inner">
                 <!-- Logo -->
                 <div class="site-logo">
-                    <a href="index.html" class="site-title">Arion</a>
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
                 </div>
 
-                <!-- Cercador -->
-                <div class="search-container">
-                    <button class="search-toggle" aria-label="Cercar" title="Cercar obres">
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="11" cy="11" r="8"></circle>
                             <path d="M21 21l-4.35-4.35"></path>
                         </svg>
                     </button>
-                    <form class="search-form" action="cerca.html" method="GET">
-                        <input type="search" name="q" placeholder="Cercar obres, autors..." autocomplete="off">
-                        <button type="submit" aria-label="Cercar">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <path d="M21 21l-4.35-4.35"></path>
-                            </svg>
-                        </button>
-                    </form>
-                </div>
-
-                <!-- Controls -->
-                <div class="header-controls">
-                    <button class="theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
-                        <span class="theme-icon-light">☀️</span>
-                        <span class="theme-icon-dark">🌙</span>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
                     </button>
                     <a href="login.html" class="btn-auth">Entrar</a>
                 </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
             </div>
         </div>
     </header>
@@ -76,62 +76,49 @@
     <!-- Main Content -->
     <main>
         
-<!-- Hero Section - Reduïda -->
-<section class="hero hero-compact">
+<!-- Hero Section - Simple i elegant -->
+<section class="hero">
     <div class="container">
-        <h1>Biblioteca Arion</h1>
+        <div class="hero-brand">
+            <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="hero-logo">
+            <h1>Biblioteca Arion</h1>
+        </div>
         <p class="hero-subtitle">
             Traduccions obertes de clàssics universals al català
         </p>
-
-        <!-- Cercador prominent -->
-        <form class="hero-search" action="cerca.html" method="GET">
-            <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off">
-            <button type="submit">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="M21 21l-4.35-4.35"></path>
-                </svg>
-                Cercar
-            </button>
-        </form>
-
-        <!-- Stats -->
         
         <div class="hero-stats">
             <span><strong>7</strong> obres</span>
-            <span class="stats-separator">·</span>
+            <span class="stats-dot">·</span>
             <span><strong>7</strong> autors</span>
-            <span class="stats-separator">·</span>
+            <span class="stats-dot">·</span>
             <span><strong>10272</strong> paraules</span>
         </div>
         
     </div>
 </section>
 
-<!-- Últimes Obres - Carrousel -->
+<!-- Últims títols publicats -->
 <section class="latest-works">
     <div class="container">
         <div class="section-header">
-            <h2>📚 Últimes obres</h2>
-            
-            <div class="carousel-nav">
+            <h2>Últims títols publicats</h2>
+            <div class="carousel-nav" data-carousel="published">
                 <button class="nav-arrow prev" aria-label="Anterior" disabled>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M15 18l-6-6 6-6"/>
                     </svg>
                 </button>
                 <button class="nav-arrow next" aria-label="Següent">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M9 18l6-6-6-6"/>
                     </svg>
                 </button>
             </div>
-            
         </div>
 
         
-        <div class="works-carousel">
+        <div class="works-carousel" data-carousel="published">
             <div class="carousel-track">
                 
                 <article class="work-card-carousel">
@@ -143,15 +130,12 @@
                                  loading="lazy">
                             
                             
-                            <span class="badge badge-status-esborrany">esborrany</span>
+                            <span class="badge badge-esborrany">esborrany</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">El biombo de l&#39;infern</h3>
                             <p class="work-author">Akutagawa Ryūnosuke</p>
-                            
-                            <p class="work-meta">Japonès · 1918</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -165,15 +149,12 @@
                                  loading="lazy">
                             
                             
-                            <span class="badge badge-status-revisat">revisat</span>
+                            <span class="badge badge-revisat">revisat</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">El Sutra del Cor de la Perfecció de la Saviesa</h3>
                             <p class="work-author">Anònim (tradició budista)</p>
-                            
-                            <p class="work-meta">Sànscrit · c. segle I-II EC</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -187,15 +168,12 @@
                                  loading="lazy">
                             
                             
-                            <span class="badge badge-status-esborrany">esborrany</span>
+                            <span class="badge badge-esborrany">esborrany</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Sobre la quàdruple arrel del principi de raó suficient</h3>
                             <p class="work-author">Arthur Schopenhauer</p>
-                            
-                            <p class="work-meta">Alemany · 1813</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -209,15 +187,12 @@
                                  loading="lazy">
                             
                             
-                            <span class="badge badge-status-revisat">revisat</span>
+                            <span class="badge badge-revisat">revisat</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Enchiridion</h3>
                             <p class="work-author">Epictetus</p>
-                            
-                            <p class="work-meta">Grec · c. 125 dC</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -227,19 +202,16 @@
                         <div class="work-cover">
                             
                             <div class="work-cover-placeholder">
-                                <span>F</span>
+                                F
                             </div>
                             
                             
-                            <span class="badge badge-status-esborrany">esborrany</span>
+                            <span class="badge badge-esborrany">esborrany</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Fragments</h3>
                             <p class="work-author">Heràclit d&#39;Efes</p>
-                            
-                            <p class="work-meta">Grec antic · -500</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -253,15 +225,12 @@
                                  loading="lazy">
                             
                             
-                            <span class="badge badge-status-esborrany">esborrany</span>
+                            <span class="badge badge-esborrany">esborrany</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Critó: Sobre el deure</h3>
                             <p class="work-author">Plató</p>
-                            
-                            <p class="work-meta">Grec antic · c. 399 aC</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -275,15 +244,12 @@
                                  loading="lazy">
                             
                             
-                            <span class="badge badge-status-revisat">revisat</span>
+                            <span class="badge badge-revisat">revisat</span>
                             
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Carta 1: Sobre el valor del temps</h3>
                             <p class="work-author">Sèneca</p>
-                            
-                            <p class="work-meta">Llatí · c. 64 dC</p>
-                            
                         </div>
                     </a>
                 </article>
@@ -292,35 +258,187 @@
         </div>
 
         
-
         
     </div>
 </section>
 
-<!-- Features -->
-<section class="features">
+<!-- Projectes de micromecenatge -->
+<section class="crowdfunding-section">
     <div class="container">
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">📖</div>
-                <h3>Text bilingüe</h3>
-                <p>Original i traducció en paral·lel per a una lectura comparada</p>
+        <div class="section-header">
+            <h2>Projectes de micromecenatge, participa-hi!</h2>
+            <div class="carousel-nav" data-carousel="crowdfunding">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
-            <div class="feature">
-                <div class="feature-icon">📝</div>
-                <h3>Notes explicatives</h3>
-                <p>Context històric, filosòfic i cultural per cada obra</p>
+        </div>
+
+        <div class="works-carousel" data-carousel="crowdfunding">
+            <div class="carousel-track">
+                <!-- Projecte 1 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Metafísica</h3>
+                            <p class="work-author">Aristòtil</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 20%"></div>
+                                </div>
+                                <span class="progress-text">1€ de 5€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 2 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">L'Odissea</h3>
+                            <p class="work-author">Homer</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-text">30€ de 50€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 3 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Meditacions</h3>
+                            <p class="work-author">Marc Aureli</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-text">17€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 4 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Confessions</h3>
+                            <p class="work-author">Sant Agustí</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 10%"></div>
+                                </div>
+                                <span class="progress-text">3€ de 30€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 5 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Eneida</h3>
+                            <p class="work-author">Virgili</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45€ de 100€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 6 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Fedó</h3>
+                            <p class="work-author">Plató</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="progress-text">7€ de 10€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 7 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Així parlà Zaratustra</h3>
+                            <p class="work-author">Nietzsche</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%"></div>
+                                </div>
+                                <span class="progress-text">10€ de 40€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 8 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Tao Te Ching</h3>
+                            <p class="work-author">Lao Tse</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="progress-text">19€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             </div>
-            <div class="feature">
-                <div class="feature-icon">📚</div>
-                <h3>Glossari</h3>
-                <p>Termes clau amb definicions i etimologies</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🔓</div>
-                <h3>Llicència oberta</h3>
-                <p>CC BY-SA 4.0 - Lliure per usar i compartir</p>
-            </div>
+        </div>
+
+        <div class="see-all">
+            <a href="micromecenatge.html" class="btn-secondary">Veure tots els projectes →</a>
         </div>
     </div>
 </section>

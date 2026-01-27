@@ -4,62 +4,49 @@
 {% block description %}Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.{% endblock %}
 
 {% block content %}
-<!-- Hero Section - Reduïda -->
-<section class="hero hero-compact">
+<!-- Hero Section - Simple i elegant -->
+<section class="hero">
     <div class="container">
-        <h1>Biblioteca Arion</h1>
+        <div class="hero-brand">
+            <img src="{{ base_url }}assets/logo/logo_arion_v1.png" alt="Logo Arion" class="hero-logo">
+            <h1>Biblioteca Arion</h1>
+        </div>
         <p class="hero-subtitle">
             Traduccions obertes de clàssics universals al català
         </p>
-
-        <!-- Cercador prominent -->
-        <form class="hero-search" action="{{ base_url }}cerca.html" method="GET">
-            <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off">
-            <button type="submit">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <circle cx="11" cy="11" r="8"></circle>
-                    <path d="M21 21l-4.35-4.35"></path>
-                </svg>
-                Cercar
-            </button>
-        </form>
-
-        <!-- Stats -->
         {% if stats %}
         <div class="hero-stats">
             <span><strong>{{ stats.total_obres }}</strong> {% if stats.total_obres == 1 %}obra{% else %}obres{% endif %}</span>
-            <span class="stats-separator">·</span>
+            <span class="stats-dot">·</span>
             <span><strong>{{ stats.total_autors }}</strong> {% if stats.total_autors == 1 %}autor{% else %}autors{% endif %}</span>
-            <span class="stats-separator">·</span>
+            <span class="stats-dot">·</span>
             <span><strong>{{ stats.total_paraules|default(0)|int }}</strong> paraules</span>
         </div>
         {% endif %}
     </div>
 </section>
 
-<!-- Últimes Obres - Carrousel -->
+<!-- Últims títols publicats -->
 <section class="latest-works">
     <div class="container">
         <div class="section-header">
-            <h2>📚 Últimes obres</h2>
-            {% if obres|length > 5 %}
-            <div class="carousel-nav">
+            <h2>Últims títols publicats</h2>
+            <div class="carousel-nav" data-carousel="published">
                 <button class="nav-arrow prev" aria-label="Anterior" disabled>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M15 18l-6-6 6-6"/>
                     </svg>
                 </button>
                 <button class="nav-arrow next" aria-label="Següent">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M9 18l6-6-6-6"/>
                     </svg>
                 </button>
             </div>
-            {% endif %}
         </div>
 
         {% if obres %}
-        <div class="works-carousel">
+        <div class="works-carousel" data-carousel="published">
             <div class="carousel-track">
                 {% for obra in obres[:10] %}
                 <article class="work-card-carousel">
@@ -71,19 +58,16 @@
                                  loading="lazy">
                             {% else %}
                             <div class="work-cover-placeholder">
-                                <span>{{ obra.titol[:1] }}</span>
+                                {{ obra.titol[0] }}
                             </div>
                             {% endif %}
                             {% if obra.estat %}
-                            <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                            <span class="badge badge-{{ obra.estat }}">{{ obra.estat }}</span>
                             {% endif %}
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">{{ obra.titol }}</h3>
                             <p class="work-author">{{ obra.autor }}</p>
-                            {% if obra.llengua_original %}
-                            <p class="work-meta">{{ obra.llengua_original|capitalize }}{% if obra.any_original %} · {{ obra.any_original }}{% endif %}</p>
-                            {% endif %}
                         </div>
                     </a>
                 </article>
@@ -96,7 +80,6 @@
             <a href="{{ base_url }}cataleg.html" class="btn-secondary">Veure totes les obres →</a>
         </div>
         {% endif %}
-
         {% else %}
         <div class="empty-state">
             <p>Pròximament nous textos traduïts.</p>
@@ -106,30 +89,183 @@
     </div>
 </section>
 
-<!-- Features -->
-<section class="features">
+<!-- Projectes de micromecenatge -->
+<section class="crowdfunding-section">
     <div class="container">
-        <div class="features-grid">
-            <div class="feature">
-                <div class="feature-icon">📖</div>
-                <h3>Text bilingüe</h3>
-                <p>Original i traducció en paral·lel per a una lectura comparada</p>
+        <div class="section-header">
+            <h2>Projectes de micromecenatge, participa-hi!</h2>
+            <div class="carousel-nav" data-carousel="crowdfunding">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
             </div>
-            <div class="feature">
-                <div class="feature-icon">📝</div>
-                <h3>Notes explicatives</h3>
-                <p>Context històric, filosòfic i cultural per cada obra</p>
+        </div>
+
+        <div class="works-carousel" data-carousel="crowdfunding">
+            <div class="carousel-track">
+                <!-- Projecte 1 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Metafísica</h3>
+                            <p class="work-author">Aristòtil</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 20%"></div>
+                                </div>
+                                <span class="progress-text">1€ de 5€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 2 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">L'Odissea</h3>
+                            <p class="work-author">Homer</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-text">30€ de 50€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 3 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Meditacions</h3>
+                            <p class="work-author">Marc Aureli</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-text">17€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 4 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Confessions</h3>
+                            <p class="work-author">Sant Agustí</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 10%"></div>
+                                </div>
+                                <span class="progress-text">3€ de 30€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 5 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Eneida</h3>
+                            <p class="work-author">Virgili</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45€ de 100€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 6 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Fedó</h3>
+                            <p class="work-author">Plató</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="progress-text">7€ de 10€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 7 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Així parlà Zaratustra</h3>
+                            <p class="work-author">Nietzsche</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%"></div>
+                                </div>
+                                <span class="progress-text">10€ de 40€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 8 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="#" class="work-card-link">
+                        <div class="work-cover work-cover-gray">
+                            <div class="work-cover-placeholder gray">?</div>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Tao Te Ching</h3>
+                            <p class="work-author">Lao Tse</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="progress-text">19€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
             </div>
-            <div class="feature">
-                <div class="feature-icon">📚</div>
-                <h3>Glossari</h3>
-                <p>Termes clau amb definicions i etimologies</p>
-            </div>
-            <div class="feature">
-                <div class="feature-icon">🔓</div>
-                <h3>Llicència oberta</h3>
-                <p>CC BY-SA 4.0 - Lliure per usar i compartir</p>
-            </div>
+        </div>
+
+        <div class="see-all">
+            <a href="{{ base_url }}micromecenatge.html" class="btn-secondary">Veure tots els projectes →</a>
         </div>
     </div>
 </section>

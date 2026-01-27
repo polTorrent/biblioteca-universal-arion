@@ -397,126 +397,222 @@ function generateTOC() {
 document.addEventListener('DOMContentLoaded', generateTOC);
 
 /* ═══════════════════════════════════════════════════════════════════
-   REDISSENY v2 - Carrousel i Cercador
+   REDISSENY v2 - Carrusel i Cerca
    ═══════════════════════════════════════════════════════════════════ */
 
 /**
- * Gestió del carrousel d'obres
+ * Gestió del carrusel d'obres (suporta múltiples carrusels)
  */
 class CarouselManager {
-    constructor() {
-        this.track = document.querySelector('.carousel-track');
-        this.prevBtn = document.querySelector('.nav-arrow.prev');
-        this.nextBtn = document.querySelector('.nav-arrow.next');
-        this.cards = document.querySelectorAll('.work-card-carousel');
+    constructor(carouselEl, navEl) {
+        if (!carouselEl) return;
+
+        this.carousel = carouselEl;
+        this.track = carouselEl.querySelector('.carousel-track');
+        this.cards = carouselEl.querySelectorAll('.work-card-carousel');
 
         if (!this.track || this.cards.length === 0) return;
 
-        this.currentIndex = 0;
-        this.itemsPerView = this.getItemsPerView();
-        this.maxIndex = Math.max(0, this.cards.length - this.itemsPerView);
+        this.prevBtn = navEl ? navEl.querySelector('.nav-arrow.prev') : null;
+        this.nextBtn = navEl ? navEl.querySelector('.nav-arrow.next') : null;
+        this.currentOffset = 0;
 
-        this.init();
-    }
-
-    init() {
-        if (this.prevBtn) {
-            this.prevBtn.addEventListener('click', () => this.slide(-1));
-        }
-        if (this.nextBtn) {
-            this.nextBtn.addEventListener('click', () => this.slide(1));
-        }
-
-        // Recalcular en resize
-        window.addEventListener('resize', () => {
-            this.itemsPerView = this.getItemsPerView();
-            this.maxIndex = Math.max(0, this.cards.length - this.itemsPerView);
-            this.currentIndex = Math.min(this.currentIndex, this.maxIndex);
-            this.updatePosition();
-            this.updateButtons();
-        });
-
+        this.bindEvents();
         this.updateButtons();
     }
 
-    getItemsPerView() {
-        const width = window.innerWidth;
-        if (width > 1200) return 5;
-        if (width > 1024) return 4;
-        if (width > 768) return 3;
-        if (width > 480) return 2;
-        return 1;
+    bindEvents() {
+        const self = this;
+
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', function() {
+                self.slide(-1);
+            });
+        }
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', function() {
+                self.slide(1);
+            });
+        }
+
+        window.addEventListener('resize', function() {
+            self.currentOffset = Math.min(self.currentOffset, self.getMaxOffset());
+            self.updatePosition();
+            self.updateButtons();
+        });
+    }
+
+    getCardStep() {
+        if (!this.cards[0]) return 200;
+        const cardWidth = this.cards[0].offsetWidth;
+        const style = window.getComputedStyle(this.track);
+        const gap = parseInt(style.gap) || parseInt(style.columnGap) || 24;
+        return cardWidth + gap;
+    }
+
+    getMaxOffset() {
+        const trackWidth = this.track.scrollWidth;
+        const visibleWidth = this.carousel.offsetWidth;
+        return Math.max(0, trackWidth - visibleWidth);
     }
 
     slide(direction) {
-        this.currentIndex = Math.max(0, Math.min(this.maxIndex, this.currentIndex + direction));
+        const step = this.getCardStep();
+        const maxOffset = this.getMaxOffset();
+
+        this.currentOffset = this.currentOffset + (direction * step);
+        this.currentOffset = Math.max(0, Math.min(maxOffset, this.currentOffset));
+
         this.updatePosition();
         this.updateButtons();
     }
 
     updatePosition() {
-        if (!this.cards[0]) return;
-
-        const cardWidth = this.cards[0].offsetWidth;
-        const gap = parseInt(getComputedStyle(this.track).gap) || 24;
-        const offset = -this.currentIndex * (cardWidth + gap);
-
-        this.track.style.transform = `translateX(${offset}px)`;
+        this.track.style.transform = 'translateX(-' + this.currentOffset + 'px)';
     }
 
     updateButtons() {
         if (this.prevBtn) {
-            this.prevBtn.disabled = this.currentIndex === 0;
+            this.prevBtn.disabled = this.currentOffset <= 0;
         }
         if (this.nextBtn) {
-            this.nextBtn.disabled = this.currentIndex >= this.maxIndex;
+            this.nextBtn.disabled = this.currentOffset >= this.getMaxOffset();
         }
     }
 }
 
 /**
- * Gestió del cercador expandible
+ * Inicialitza tots els carrusels de la pàgina
  */
-class SearchManager {
-    constructor() {
-        this.container = document.querySelector('.search-container');
-        this.toggle = document.querySelector('.search-toggle');
-        this.form = document.querySelector('.search-form');
-        this.input = document.querySelector('.search-form input');
+function initAllCarousels() {
+    // Trobar totes les seccions amb carrusels
+    var sections = document.querySelectorAll('.latest-works, .crowdfunding-section');
 
-        if (!this.container || !this.toggle) return;
+    sections.forEach(function(section) {
+        var carousel = section.querySelector('.works-carousel');
+        var prevBtn = section.querySelector('.nav-arrow.prev');
+        var nextBtn = section.querySelector('.nav-arrow.next');
+
+        if (!carousel) return;
+
+        var track = carousel.querySelector('.carousel-track');
+        var cards = carousel.querySelectorAll('.work-card-carousel');
+
+        if (!track || cards.length === 0) return;
+
+        var currentOffset = 0;
+
+        function getCardStep() {
+            if (!cards[0]) return 200;
+            var cardWidth = cards[0].offsetWidth;
+            var style = window.getComputedStyle(track);
+            var gap = parseInt(style.gap) || parseInt(style.columnGap) || 24;
+            return cardWidth + gap;
+        }
+
+        function getMaxOffset() {
+            return Math.max(0, track.scrollWidth - carousel.offsetWidth);
+        }
+
+        function updatePosition() {
+            track.style.transform = 'translateX(-' + currentOffset + 'px)';
+        }
+
+        function updateButtons() {
+            if (prevBtn) prevBtn.disabled = currentOffset <= 0;
+            if (nextBtn) nextBtn.disabled = currentOffset >= getMaxOffset();
+        }
+
+        function slide(direction) {
+            var step = getCardStep();
+            var maxOffset = getMaxOffset();
+            currentOffset = currentOffset + (direction * step);
+            currentOffset = Math.max(0, Math.min(maxOffset, currentOffset));
+            updatePosition();
+            updateButtons();
+        }
+
+        if (prevBtn) {
+            prevBtn.addEventListener('click', function() { slide(-1); });
+        }
+        if (nextBtn) {
+            nextBtn.addEventListener('click', function() { slide(1); });
+        }
+
+        window.addEventListener('resize', function() {
+            currentOffset = Math.min(currentOffset, getMaxOffset());
+            updatePosition();
+            updateButtons();
+        });
+
+        updateButtons();
+    });
+}
+
+/**
+ * Gestió del panell de cerca desplegable
+ */
+class SearchPanelManager {
+    constructor() {
+        this.searchBtn = document.querySelector('.search-btn');
+        this.searchPanel = document.querySelector('.search-panel');
+        this.closeBtn = document.querySelector('.search-close');
+        this.input = this.searchPanel?.querySelector('input');
+
+        if (!this.searchBtn || !this.searchPanel) return;
 
         this.init();
     }
 
     init() {
-        // Toggle cercador en mòbil
-        this.toggle.addEventListener('click', (e) => {
+        // Obrir panell amb botó de cerca
+        this.searchBtn.addEventListener('click', (e) => {
             e.preventDefault();
-            this.container.classList.toggle('active');
-            if (this.container.classList.contains('active') && this.input) {
-                this.input.focus();
-            }
+            this.toggle();
         });
+
+        // Tancar amb botó X
+        if (this.closeBtn) {
+            this.closeBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.close();
+            });
+        }
 
         // Tancar amb Escape
         document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && this.container.classList.contains('active')) {
-                this.container.classList.remove('active');
+            if (e.key === 'Escape' && this.isOpen()) {
+                this.close();
             }
         });
+    }
 
-        // Tancar si es clica fora
-        document.addEventListener('click', (e) => {
-            if (!this.container.contains(e.target) && this.container.classList.contains('active')) {
-                this.container.classList.remove('active');
-            }
-        });
+    isOpen() {
+        return !this.searchPanel.hasAttribute('hidden');
+    }
+
+    toggle() {
+        if (this.isOpen()) {
+            this.close();
+        } else {
+            this.open();
+        }
+    }
+
+    open() {
+        this.searchPanel.removeAttribute('hidden');
+        if (this.input) {
+            this.input.focus();
+        }
+    }
+
+    close() {
+        this.searchPanel.setAttribute('hidden', '');
     }
 }
 
 // Inicialitzar components v2
 document.addEventListener('DOMContentLoaded', () => {
-    new CarouselManager();
-    new SearchManager();
+    initAllCarousels();
+    new SearchPanelManager();
 });
