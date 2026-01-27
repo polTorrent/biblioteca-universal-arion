@@ -1558,6 +1558,118 @@ blockquote cite::before {
 }
 
 /* ─────────────────────────────────────────────────────────────────────
+   SECCIÓ COM FUNCIONA
+   ───────────────────────────────────────────────────────────────────── */
+
+.how-it-works {
+    padding: var(--spacing-2xl) 0;
+    background: var(--color-bg-primary);
+    text-align: center;
+    border-top: 1px solid var(--color-border-light);
+}
+
+.how-it-works h2 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-xl);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-xl);
+    font-weight: 500;
+}
+
+.steps-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: var(--spacing-lg);
+    max-width: 800px;
+    margin: 0 auto var(--spacing-lg);
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--spacing-xs);
+    flex: 1;
+    max-width: 160px;
+    position: relative;
+}
+
+.step:not(:last-child)::after {
+    content: '→';
+    position: absolute;
+    right: -20px;
+    top: 12px;
+    color: var(--color-border);
+    font-size: 1.2rem;
+}
+
+.step-num {
+    width: 32px;
+    height: 32px;
+    background: var(--color-bg-secondary);
+    border: 2px solid var(--color-border);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    transition: all 0.2s ease;
+}
+
+.step:hover .step-num {
+    border-color: var(--color-accent);
+    color: var(--color-accent);
+}
+
+.step.accent .step-num {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.step strong {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-primary);
+}
+
+.step small {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+}
+
+.how-link {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    text-decoration: none;
+}
+
+.how-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .steps-row {
+        flex-wrap: wrap;
+        gap: var(--spacing-md);
+    }
+
+    .step {
+        flex: 0 0 45%;
+    }
+
+    .step::after {
+        display: none;
+    }
+}
+
+/* ─────────────────────────────────────────────────────────────────────
    SECCIÓ MICROMECENATGE
    ───────────────────────────────────────────────────────────────────── */
 
