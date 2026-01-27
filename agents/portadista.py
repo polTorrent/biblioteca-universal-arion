@@ -158,7 +158,7 @@ class PortadistaConfig(BaseModel):
     # FORMAT VERTICAL 2:3 per a llibres
     width: int = Field(default=896, ge=512, le=1280)
     height: int = Field(default=1152, ge=512, le=1280)  # Portrait 896x1152 recomanat Venice
-    model_imatge: str = "flux-2-max"
+    model_imatge: str = "z-image-turbo"
     steps: int = Field(default=30, ge=15, le=50)
     logo_size: int = 65  # Logo més gran
 
