@@ -39,6 +39,7 @@ class ObraMetadata(BaseModel):
     # Dates i idioma
     any_original: str | None = None
     any_traduccio: int = Field(default_factory=lambda: datetime.now().year)
+    data_revisio: str | None = None  # Format: "YYYY-MM-DD"
     llengua_original: str = "grec"
 
     # Descripció i estat
@@ -162,6 +163,7 @@ class WebPublisher(BaseAgent):
                 traductor=obra_data.get("traductor", "Biblioteca Arion"),
                 any_original=str(obra_data.get("any_original", "")),
                 any_traduccio=obra_data.get("any_traduccio", datetime.now().year),
+                data_revisio=revisio.get("data_revisio"),
                 llengua_original=obra_data.get("llengua_original", "grec"),
                 descripcio=obra_data.get("descripcio", ""),
                 estat=revisio.get("estat", "esborrany"),
@@ -433,13 +435,13 @@ class WebPublisher(BaseAgent):
             "total_paraules": sum(o.paraules_traduccio for o in obres_metadata),
         }
 
-        # Preparar dades per al template
+        # Preparar dades per al template (més recents primer, per data_revisio)
         obres_data = [
             {
                 **o.model_dump(),
                 "url": f"{o.slug}.html",
             }
-            for o in sorted(obres_metadata, key=lambda x: (x.autor, x.titol))
+            for o in sorted(obres_metadata, key=lambda x: x.data_revisio or "0000-00-00", reverse=True)
         ]
 
         try:
