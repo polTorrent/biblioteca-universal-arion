@@ -358,16 +358,19 @@ class WebPublisher(BaseAgent):
         if generar_portada is None:
             generar_portada = self.publisher_config.generar_portades
 
-        # Sempre buscar portada existent a la carpeta de l'obra
-        portada_existent = obra_path / "portada.png" if obra_path else None
-        if portada_existent and portada_existent.exists():
-            portada_filename = f"{metadata.slug}-portada.png"
-            portada_dest = portades_dir / portada_filename
-            if not portada_dest.exists():
-                import shutil
-                shutil.copy(portada_existent, portada_dest)
-                self.log_info(f"Portada copiada: {portada_existent.name} -> {portada_dest.name}")
+        portada_filename = f"{metadata.slug}-portada.png"
+        portada_dest = portades_dir / portada_filename
+
+        # 1. Si ja existeix al directori de sortida, usar-la
+        if portada_dest.exists():
             metadata.portada_url = f"assets/portades/{portada_filename}"
+        # 2. Buscar portada a la carpeta de l'obra i copiar-la
+        elif obra_path and (obra_path / "portada.png").exists():
+            import shutil
+            shutil.copy(obra_path / "portada.png", portada_dest)
+            self.log_info(f"Portada copiada: portada.png -> {portada_dest.name}")
+            metadata.portada_url = f"assets/portades/{portada_filename}"
+        # 3. Generar nova portada si està activat
         elif generar_portada:
             metadata.portada_url = self._generar_portada(metadata, portades_dir, obra_path)
 
