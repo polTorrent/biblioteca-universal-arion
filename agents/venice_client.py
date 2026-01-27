@@ -34,7 +34,7 @@ class ImageGenerationRequest(BaseModel):
     negative_prompt: str = ""
     width: int = Field(default=1024, ge=512, le=1280)   # Venice API limit: 1280
     height: int = Field(default=1280, ge=512, le=1280)  # Venice API limit: 1280
-    model: str = "flux-2-max"
+    model: str = "z-image-turbo"
     steps: int = Field(default=30, ge=10, le=50)
     cfg_scale: float = Field(default=7.5, ge=1.0, le=20.0)
     seed: int | None = None
@@ -74,9 +74,8 @@ class VeniceClient:
 
     # Models recomanats per imatges (actualitzat gener 2026)
     MODELS_IMATGE = [
-        "flux-2-max",       # Alta qualitat, recomanat
-        "lustify-sdxl",     # SDXL variant
-        "lustify-v7",       # Versió 7
+        "z-image-turbo",    # Ràpid i alta qualitat, recomanat
+        "nano-banana-pro",  # Suporta resolucions 2K/4K
     ]
 
     def __init__(self, api_key: str | None = None) -> None:
@@ -108,7 +107,7 @@ class VeniceClient:
         negative_prompt: str = "",
         width: int = 1024,
         height: int = 1536,
-        model: str = "flux-2-max",
+        model: str = "z-image-turbo",
         steps: int = 30,
         cfg_scale: float = 7.5,
         seed: int | None = None,
@@ -261,7 +260,7 @@ class VeniceClient:
         negative_prompt: str = "",
         width: int = 1024,
         height: int = 1536,
-        model: str = "flux-2-max",
+        model: str = "z-image-turbo",
         steps: int = 30,
         cfg_scale: float = 7.5,
         seed: int | None = None,
