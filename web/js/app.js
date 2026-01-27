@@ -395,3 +395,128 @@ function generateTOC() {
 
 // Generar TOC quan el document estigui llest
 document.addEventListener('DOMContentLoaded', generateTOC);
+
+/* ═══════════════════════════════════════════════════════════════════
+   REDISSENY v2 - Carrousel i Cercador
+   ═══════════════════════════════════════════════════════════════════ */
+
+/**
+ * Gestió del carrousel d'obres
+ */
+class CarouselManager {
+    constructor() {
+        this.track = document.querySelector('.carousel-track');
+        this.prevBtn = document.querySelector('.nav-arrow.prev');
+        this.nextBtn = document.querySelector('.nav-arrow.next');
+        this.cards = document.querySelectorAll('.work-card-carousel');
+
+        if (!this.track || this.cards.length === 0) return;
+
+        this.currentIndex = 0;
+        this.itemsPerView = this.getItemsPerView();
+        this.maxIndex = Math.max(0, this.cards.length - this.itemsPerView);
+
+        this.init();
+    }
+
+    init() {
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', () => this.slide(-1));
+        }
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', () => this.slide(1));
+        }
+
+        // Recalcular en resize
+        window.addEventListener('resize', () => {
+            this.itemsPerView = this.getItemsPerView();
+            this.maxIndex = Math.max(0, this.cards.length - this.itemsPerView);
+            this.currentIndex = Math.min(this.currentIndex, this.maxIndex);
+            this.updatePosition();
+            this.updateButtons();
+        });
+
+        this.updateButtons();
+    }
+
+    getItemsPerView() {
+        const width = window.innerWidth;
+        if (width > 1200) return 5;
+        if (width > 1024) return 4;
+        if (width > 768) return 3;
+        if (width > 480) return 2;
+        return 1;
+    }
+
+    slide(direction) {
+        this.currentIndex = Math.max(0, Math.min(this.maxIndex, this.currentIndex + direction));
+        this.updatePosition();
+        this.updateButtons();
+    }
+
+    updatePosition() {
+        if (!this.cards[0]) return;
+
+        const cardWidth = this.cards[0].offsetWidth;
+        const gap = parseInt(getComputedStyle(this.track).gap) || 24;
+        const offset = -this.currentIndex * (cardWidth + gap);
+
+        this.track.style.transform = `translateX(${offset}px)`;
+    }
+
+    updateButtons() {
+        if (this.prevBtn) {
+            this.prevBtn.disabled = this.currentIndex === 0;
+        }
+        if (this.nextBtn) {
+            this.nextBtn.disabled = this.currentIndex >= this.maxIndex;
+        }
+    }
+}
+
+/**
+ * Gestió del cercador expandible
+ */
+class SearchManager {
+    constructor() {
+        this.container = document.querySelector('.search-container');
+        this.toggle = document.querySelector('.search-toggle');
+        this.form = document.querySelector('.search-form');
+        this.input = document.querySelector('.search-form input');
+
+        if (!this.container || !this.toggle) return;
+
+        this.init();
+    }
+
+    init() {
+        // Toggle cercador en mòbil
+        this.toggle.addEventListener('click', (e) => {
+            e.preventDefault();
+            this.container.classList.toggle('active');
+            if (this.container.classList.contains('active') && this.input) {
+                this.input.focus();
+            }
+        });
+
+        // Tancar amb Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && this.container.classList.contains('active')) {
+                this.container.classList.remove('active');
+            }
+        });
+
+        // Tancar si es clica fora
+        document.addEventListener('click', (e) => {
+            if (!this.container.contains(e.target) && this.container.classList.contains('active')) {
+                this.container.classList.remove('active');
+            }
+        });
+    }
+}
+
+// Inicialitzar components v2
+document.addEventListener('DOMContentLoaded', () => {
+    new CarouselManager();
+    new SearchManager();
+});

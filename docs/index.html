@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Catàleg de traduccions obertes de clàssics universals al català. Filosofia, literatura, teatre i poesia.">
+    <meta name="description" content="Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.">
     <meta name="author" content="Biblioteca Arion">
     <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
 
@@ -20,7 +20,7 @@
     <meta name="twitter:title" content="Biblioteca Arion">
     <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
 
-    <title>Catàleg d'Obres | Biblioteca Arion</title>
+    <title>Biblioteca Arion - Traduccions de clàssics al català</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,25 +33,42 @@
     
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header - Simplificat v2 -->
     <header class="site-header">
         <div class="container">
             <div class="header-inner">
+                <!-- Logo -->
                 <div class="site-logo">
-                    <a href="index.html" class="site-title">Biblioteca Arion</a>
-                    <p class="site-tagline">Traduccions obertes de clàssics universals al català</p>
+                    <a href="index.html" class="site-title">Arion</a>
                 </div>
 
-                <nav class="main-nav" aria-label="Navegació principal">
-                    <ul>
-                        <li><a href="index.html" class="active">Catàleg</a></li>
-                        <li><a href="autors.html" >Autors</a></li>
-                        <li><a href="sobre.html" >Sobre</a></li>
-                        <li>
-                            <button class="theme-toggle" aria-label="Canviar tema">🌙</button>
-                        </li>
-                    </ul>
-                </nav>
+                <!-- Cercador -->
+                <div class="search-container">
+                    <button class="search-toggle" aria-label="Cercar" title="Cercar obres">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <form class="search-form" action="cerca.html" method="GET">
+                        <input type="search" name="q" placeholder="Cercar obres, autors..." autocomplete="off">
+                        <button type="submit" aria-label="Cercar">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <path d="M21 21l-4.35-4.35"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Controls -->
+                <div class="header-controls">
+                    <button class="theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon-light">☀️</span>
+                        <span class="theme-icon-dark">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
             </div>
         </div>
     </header>
@@ -59,342 +76,311 @@
     <!-- Main Content -->
     <main>
         
-<section class="hero">
+<!-- Hero Section - Reduïda -->
+<section class="hero hero-compact">
     <div class="container">
         <h1>Biblioteca Arion</h1>
         <p class="hero-subtitle">
-            Traduccions obertes i col·laboratives de clàssics universals al català
+            Traduccions obertes de clàssics universals al català
         </p>
-    </div>
-</section>
 
-<section class="page-content">
-    <div class="container">
+        <!-- Cercador prominent -->
+        <form class="hero-search" action="cerca.html" method="GET">
+            <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off">
+            <button type="submit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="M21 21l-4.35-4.35"></path>
+                </svg>
+                Cercar
+            </button>
+        </form>
+
+        <!-- Stats -->
         
-        <div class="stats-bar mb-2xl">
-            <p class="text-center">
-                <strong>7</strong> obres ·
-                <strong>7</strong> autors ·
-                <strong>10272</strong> paraules traduïdes
-            </p>
-        </div>
-        
-
-        <h2 class="text-center mb-xl">Obres disponibles</h2>
-
-        
-        <div class="works-grid">
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="akutagawa-jigokuhen.html">
-                        <img src="assets/portades/akutagawa-jigokuhen-portada.png"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    </a>
-                </div>
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="akutagawa-jigokuhen.html">El biombo de l&#39;infern</a>
-                    </h3>
-                    <p class="work-card-author">Akutagawa Ryūnosuke</p>
-
-                    
-                    <p class="work-card-description">Obra mestra d&#39;Akutagawa sobre l&#39;obsessió artística i el preu de la perfecció. Un pintor de la cort rep l&#39;encàrrec de pintar un biombo amb escenes...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Japonès</span>
-                        
-
-                        
-                        <span>1918</span>
-                        
-
-                        
-                        <span class="badge badge-status-esborrany">esborrany</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="sanscrit-sutra-cor.html">
-                        <img src="assets/portades/sanscrit-sutra-cor-portada.png"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    </a>
-                </div>
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="sanscrit-sutra-cor.html">El Sutra del Cor de la Perfecció de la Saviesa</a>
-                    </h3>
-                    <p class="work-card-author">Anònim (tradició budista)</p>
-
-                    
-                    <p class="work-card-description">El text més breu i recitat del budisme Mahāyāna. En menys de tres-centes paraules condensa l&#39;essència dels Sutres de la Perfecció de la Saviesa:...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Sànscrit</span>
-                        
-
-                        
-                        <span>c. segle I-II EC</span>
-                        
-
-                        
-                        <span class="badge badge-status-revisat">revisat</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="schopenhauer-vierfache-wurzel.html">
-                        <img src="assets/portades/schopenhauer-vierfache-wurzel-portada.png"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    </a>
-                </div>
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="schopenhauer-vierfache-wurzel.html">Sobre la quàdruple arrel del principi de raó suficient</a>
-                    </h3>
-                    <p class="work-card-author">Arthur Schopenhauer</p>
-
-                    
-                    <p class="work-card-description">Tesi doctoral de Schopenhauer que estableix les bases del seu sistema filosòfic. Demostra que el principi de raó suficient (&#34;res no existeix sense...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Alemany</span>
-                        
-
-                        
-                        <span>1813</span>
-                        
-
-                        
-                        <span class="badge badge-status-esborrany">esborrany</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="epictetus-enchiridion.html">
-                        <img src="assets/portades/epictetus-enchiridion-portada.png"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    </a>
-                </div>
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="epictetus-enchiridion.html">Enchiridion</a>
-                    </h3>
-                    <p class="work-card-author">Epictetus</p>
-
-                    
-                    <p class="work-card-description">Manual pràctic de filosofia estoica que presenta els principis fonamentals per viure amb serenitat: la distinció entre el que depèn de nosaltres i...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Grec</span>
-                        
-
-                        
-                        <span>c. 125 dC</span>
-                        
-
-                        
-                        <span class="badge badge-status-revisat">revisat</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="heraclit-fragments.html">Fragments</a>
-                    </h3>
-                    <p class="work-card-author">Heràclit d&#39;Efes</p>
-
-                    
-                    <p class="work-card-description">Heràclit d&#39;Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com
-&#34;l&#39;Obscur&#34; per l&#39;estil enigmàtic dels seus aforismes. De la seva...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Grec antic</span>
-                        
-
-                        
-                        <span>-500</span>
-                        
-
-                        
-                        <span class="badge badge-status-esborrany">esborrany</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="plato-criton.html">
-                        <img src="assets/portades/plato-criton-portada.png"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    </a>
-                </div>
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="plato-criton.html">Critó: Sobre el deure</a>
-                    </h3>
-                    <p class="work-card-author">Plató</p>
-
-                    
-                    <p class="work-card-description">Diàleg platònic ambientat a la presó d&#39;Atenes, on Sòcrates espera l&#39;execució. El seu amic Critó li proposa fugir, però Sòcrates refusa,...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Grec antic</span>
-                        
-
-                        
-                        <span>c. 399 aC</span>
-                        
-
-                        
-                        <span class="badge badge-status-esborrany">esborrany</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="seneca-epistola-1.html">
-                        <img src="assets/portades/seneca-epistola-1-portada.png"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-                    </a>
-                </div>
-                
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="seneca-epistola-1.html">Carta 1: Sobre el valor del temps</a>
-                    </h3>
-                    <p class="work-card-author">Sèneca</p>
-
-                    
-                    <p class="work-card-description">Primera carta de les Epístoles morals a Lucili. Sèneca exhorta el seu amic a recuperar el control del seu temps, el bé més preciós i l&#39;únic...</p>
-                    
-
-                    <div class="work-card-meta">
-                        
-                        <span>Llatí</span>
-                        
-
-                        
-                        <span>c. 64 dC</span>
-                        
-
-                        
-                        <span class="badge badge-status-revisat">revisat</span>
-                        
-                    </div>
-                </div>
-            </article>
-            
+        <div class="hero-stats">
+            <span><strong>7</strong> obres</span>
+            <span class="stats-separator">·</span>
+            <span><strong>7</strong> autors</span>
+            <span class="stats-separator">·</span>
+            <span><strong>10272</strong> paraules</span>
         </div>
         
     </div>
 </section>
 
-<section class="page-content" style="background-color: var(--color-bg-secondary);">
+<!-- Últimes Obres - Carrousel -->
+<section class="latest-works">
     <div class="container">
-        <h2 class="text-center mb-xl">Sobre el projecte</h2>
-        <div style="max-width: 700px; margin: 0 auto;">
-            <p>
-                La <strong>Biblioteca Arion</strong> és una biblioteca oberta i col·laborativa de traduccions
-                al català d'obres clàssiques universals. Cada traducció inclou:
-            </p>
-            <ul style="margin: var(--spacing-lg) 0; padding-left: var(--spacing-xl);">
-                <li><strong>Text bilingüe</strong> — Original i traducció en paral·lel</li>
-                <li><strong>Notes explicatives</strong> — Context històric i filosòfic</li>
-                <li><strong>Glossari terminològic</strong> — Termes clau amb definicions</li>
-                <li><strong>Llicència oberta</strong> — CC BY-SA 4.0</li>
-            </ul>
-            <p>
-                Busquem l'equilibri entre fidelitat filològica i qualitat literària.
-                <a href="https://github.com/biblioteca-arion/biblioteca-universal-arion">Col·labora a GitHub</a>
-            </p>
+        <div class="section-header">
+            <h2>📚 Últimes obres</h2>
+            
+            <div class="carousel-nav">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            
+        </div>
+
+        
+        <div class="works-carousel">
+            <div class="carousel-track">
+                
+                <article class="work-card-carousel">
+                    <a href="akutagawa-jigokuhen.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/akutagawa-jigokuhen-portada.png"
+                                 alt="Portada de El biombo de l&#39;infern"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-status-esborrany">esborrany</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">El biombo de l&#39;infern</h3>
+                            <p class="work-author">Akutagawa Ryūnosuke</p>
+                            
+                            <p class="work-meta">Japonès · 1918</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="sanscrit-sutra-cor.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/sanscrit-sutra-cor-portada.png"
+                                 alt="Portada de El Sutra del Cor de la Perfecció de la Saviesa"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-status-revisat">revisat</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">El Sutra del Cor de la Perfecció de la Saviesa</h3>
+                            <p class="work-author">Anònim (tradició budista)</p>
+                            
+                            <p class="work-meta">Sànscrit · c. segle I-II EC</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="schopenhauer-vierfache-wurzel.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/schopenhauer-vierfache-wurzel-portada.png"
+                                 alt="Portada de Sobre la quàdruple arrel del principi de raó suficient"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-status-esborrany">esborrany</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Sobre la quàdruple arrel del principi de raó suficient</h3>
+                            <p class="work-author">Arthur Schopenhauer</p>
+                            
+                            <p class="work-meta">Alemany · 1813</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="epictetus-enchiridion.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/epictetus-enchiridion-portada.png"
+                                 alt="Portada de Enchiridion"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-status-revisat">revisat</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Enchiridion</h3>
+                            <p class="work-author">Epictetus</p>
+                            
+                            <p class="work-meta">Grec · c. 125 dC</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="heraclit-fragments.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <div class="work-cover-placeholder">
+                                <span>F</span>
+                            </div>
+                            
+                            
+                            <span class="badge badge-status-esborrany">esborrany</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Fragments</h3>
+                            <p class="work-author">Heràclit d&#39;Efes</p>
+                            
+                            <p class="work-meta">Grec antic · -500</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="plato-criton.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/plato-criton-portada.png"
+                                 alt="Portada de Critó: Sobre el deure"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-status-esborrany">esborrany</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Critó: Sobre el deure</h3>
+                            <p class="work-author">Plató</p>
+                            
+                            <p class="work-meta">Grec antic · c. 399 aC</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="seneca-epistola-1.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/seneca-epistola-1-portada.png"
+                                 alt="Portada de Carta 1: Sobre el valor del temps"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-status-revisat">revisat</span>
+                            
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Carta 1: Sobre el valor del temps</h3>
+                            <p class="work-author">Sèneca</p>
+                            
+                            <p class="work-meta">Llatí · c. 64 dC</p>
+                            
+                        </div>
+                    </a>
+                </article>
+                
+            </div>
+        </div>
+
+        
+
+        
+    </div>
+</section>
+
+<!-- Features -->
+<section class="features">
+    <div class="container">
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">📖</div>
+                <h3>Text bilingüe</h3>
+                <p>Original i traducció en paral·lel per a una lectura comparada</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📝</div>
+                <h3>Notes explicatives</h3>
+                <p>Context històric, filosòfic i cultural per cada obra</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Glossari</h3>
+                <p>Termes clau amb definicions i etimologies</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔓</div>
+                <h3>Llicència oberta</h3>
+                <p>CC BY-SA 4.0 - Lliure per usar i compartir</p>
+            </div>
         </div>
     </div>
 </section>
 
     </main>
 
-    <!-- Footer -->
+    <!-- Footer - Ampliat v2 -->
     <footer class="site-footer">
         <div class="container">
-            <div class="footer-content">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
                 <div class="footer-section">
-                    <h4>Biblioteca Arion</h4>
-                    <p>Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.</p>
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
                 </div>
 
-                <div class="footer-section">
-                    <h4>Navegació</h4>
-                    <ul>
-                        <li><a href="index.html">Catàleg d'obres</a></li>
-                        <li><a href="autors.html">Autors</a></li>
-                        <li><a href="glossari.html">Glossari general</a></li>
-                    </ul>
-                </div>
-
+                <!-- Columna 2: Recursos -->
                 <div class="footer-section">
                     <h4>Recursos</h4>
                     <ul>
-                        <li><a href="metodologia.html">Metodologia</a></li>
-                        <li><a href="collaborar.html">Col·laborar</a></li>
-                        <li><a href="contacte.html">Contacte</a></li>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
                     </ul>
                 </div>
 
+                <!-- Columna 3: Legal -->
                 <div class="footer-section">
-                    <h4>Llicència</h4>
-                    <p><small>Textos originals de domini públic. Traduccions sota llicència oberta CC BY-SA 4.0.</small></p>
-                    <p><small>© 2026 Biblioteca Arion</small></p>
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>Fet amb dedicació per a la cultura catalana</p>
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
             </div>
         </div>
     </footer>

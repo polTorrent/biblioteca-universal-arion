@@ -1,99 +1,135 @@
 {% extends "base.html" %}
 
-{% block title %}Catàleg d'Obres | Biblioteca Arion{% endblock %}
-{% block description %}Catàleg de traduccions obertes de clàssics universals al català. Filosofia, literatura, teatre i poesia.{% endblock %}
+{% block title %}Biblioteca Arion - Traduccions de clàssics al català{% endblock %}
+{% block description %}Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.{% endblock %}
 
 {% block content %}
-<section class="hero">
+<!-- Hero Section - Reduïda -->
+<section class="hero hero-compact">
     <div class="container">
         <h1>Biblioteca Arion</h1>
         <p class="hero-subtitle">
-            Traduccions obertes i col·laboratives de clàssics universals al català
+            Traduccions obertes de clàssics universals al català
         </p>
+
+        <!-- Cercador prominent -->
+        <form class="hero-search" action="{{ base_url }}cerca.html" method="GET">
+            <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off">
+            <button type="submit">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="M21 21l-4.35-4.35"></path>
+                </svg>
+                Cercar
+            </button>
+        </form>
+
+        <!-- Stats -->
+        {% if stats %}
+        <div class="hero-stats">
+            <span><strong>{{ stats.total_obres }}</strong> {% if stats.total_obres == 1 %}obra{% else %}obres{% endif %}</span>
+            <span class="stats-separator">·</span>
+            <span><strong>{{ stats.total_autors }}</strong> {% if stats.total_autors == 1 %}autor{% else %}autors{% endif %}</span>
+            <span class="stats-separator">·</span>
+            <span><strong>{{ stats.total_paraules|default(0)|int }}</strong> paraules</span>
+        </div>
+        {% endif %}
     </div>
 </section>
 
-<section class="page-content">
+<!-- Últimes Obres - Carrousel -->
+<section class="latest-works">
     <div class="container">
-        {% if stats %}
-        <div class="stats-bar mb-2xl">
-            <p class="text-center">
-                <strong>{{ stats.total_obres }}</strong> {% if stats.total_obres == 1 %}obra{% else %}obres{% endif %} ·
-                <strong>{{ stats.total_autors }}</strong> {% if stats.total_autors == 1 %}autor{% else %}autors{% endif %} ·
-                <strong>{{ stats.total_paraules|default(0) }}</strong> paraules traduïdes
-            </p>
+        <div class="section-header">
+            <h2>📚 Últimes obres</h2>
+            {% if obres|length > 5 %}
+            <div class="carousel-nav">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+            {% endif %}
         </div>
-        {% endif %}
-
-        <h2 class="text-center mb-xl">Obres disponibles</h2>
 
         {% if obres %}
-        <div class="works-grid">
-            {% for obra in obres %}
-            <article class="work-card" style="display: flex; gap: 1rem;">
-                {% if obra.portada_url %}
-                <div class="work-card-cover" style="flex-shrink: 0;">
-                    <a href="{{ base_url }}{{ obra.slug }}.html">
-                        <img src="{{ base_url }}{{ obra.portada_url }}"
-                             alt="Portada"
-                             style="width: 80px; height: auto; border-radius: 3px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
+        <div class="works-carousel">
+            <div class="carousel-track">
+                {% for obra in obres[:10] %}
+                <article class="work-card-carousel">
+                    <a href="{{ base_url }}{{ obra.slug }}.html" class="work-card-link">
+                        <div class="work-cover">
+                            {% if obra.portada_url %}
+                            <img src="{{ base_url }}{{ obra.portada_url }}"
+                                 alt="Portada de {{ obra.titol }}"
+                                 loading="lazy">
+                            {% else %}
+                            <div class="work-cover-placeholder">
+                                <span>{{ obra.titol[:1] }}</span>
+                            </div>
+                            {% endif %}
+                            {% if obra.estat %}
+                            <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                            {% endif %}
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">{{ obra.titol }}</h3>
+                            <p class="work-author">{{ obra.autor }}</p>
+                            {% if obra.llengua_original %}
+                            <p class="work-meta">{{ obra.llengua_original|capitalize }}{% if obra.any_original %} · {{ obra.any_original }}{% endif %}</p>
+                            {% endif %}
+                        </div>
                     </a>
-                </div>
-                {% endif %}
-                <div class="work-card-content" style="flex: 1;">
-                    <h3 class="work-card-title">
-                        <a href="{{ base_url }}{{ obra.slug }}.html">{{ obra.titol }}</a>
-                    </h3>
-                    <p class="work-card-author">{{ obra.autor }}</p>
-
-                    {% if obra.descripcio %}
-                    <p class="work-card-description">{{ obra.descripcio|truncate(150) }}</p>
-                    {% endif %}
-
-                    <div class="work-card-meta">
-                        {% if obra.llengua_original %}
-                        <span>{{ obra.llengua_original|capitalize }}</span>
-                        {% endif %}
-
-                        {% if obra.any_original %}
-                        <span>{{ obra.any_original }}</span>
-                        {% endif %}
-
-                        {% if obra.estat %}
-                        <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
-                        {% endif %}
-                    </div>
-                </div>
-            </article>
-            {% endfor %}
+                </article>
+                {% endfor %}
+            </div>
         </div>
+
+        {% if obres|length > 10 %}
+        <div class="see-all">
+            <a href="{{ base_url }}cataleg.html" class="btn-secondary">Veure totes les obres →</a>
+        </div>
+        {% endif %}
+
         {% else %}
-        <div class="text-center mt-2xl mb-2xl">
+        <div class="empty-state">
             <p>Pròximament nous textos traduïts.</p>
-            <p class="mt-md"><small>El catàleg s'anirà ampliant amb traduccions de textos grecs i llatins.</small></p>
+            <p><small>El catàleg s'anirà ampliant amb traduccions de textos clàssics.</small></p>
         </div>
         {% endif %}
     </div>
 </section>
 
-<section class="page-content" style="background-color: var(--color-bg-secondary);">
+<!-- Features -->
+<section class="features">
     <div class="container">
-        <h2 class="text-center mb-xl">Sobre el projecte</h2>
-        <div style="max-width: 700px; margin: 0 auto;">
-            <p>
-                La <strong>Biblioteca Arion</strong> és una biblioteca oberta i col·laborativa de traduccions
-                al català d'obres clàssiques universals. Cada traducció inclou:
-            </p>
-            <ul style="margin: var(--spacing-lg) 0; padding-left: var(--spacing-xl);">
-                <li><strong>Text bilingüe</strong> — Original i traducció en paral·lel</li>
-                <li><strong>Notes explicatives</strong> — Context històric i filosòfic</li>
-                <li><strong>Glossari terminològic</strong> — Termes clau amb definicions</li>
-                <li><strong>Llicència oberta</strong> — CC BY-SA 4.0</li>
-            </ul>
-            <p>
-                Busquem l'equilibri entre fidelitat filològica i qualitat literària.
-                <a href="https://github.com/biblioteca-arion/biblioteca-universal-arion">Col·labora a GitHub</a>
-            </p>
+        <div class="features-grid">
+            <div class="feature">
+                <div class="feature-icon">📖</div>
+                <h3>Text bilingüe</h3>
+                <p>Original i traducció en paral·lel per a una lectura comparada</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📝</div>
+                <h3>Notes explicatives</h3>
+                <p>Context històric, filosòfic i cultural per cada obra</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">📚</div>
+                <h3>Glossari</h3>
+                <p>Termes clau amb definicions i etimologies</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔓</div>
+                <h3>Llicència oberta</h3>
+                <p>CC BY-SA 4.0 - Lliure per usar i compartir</p>
+            </div>
         </div>
     </div>
 </section>
