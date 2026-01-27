@@ -996,7 +996,172 @@ blockquote cite::before {
 
 
 /* ─────────────────────────────────────────────────────────────────────
-   17. RESPONSIVE
+   17. COM FUNCIONA - AMB EMOJIS
+   ───────────────────────────────────────────────────────────────────── */
+
+.how-it-works {
+    padding: var(--spacing-3xl) 0;
+    background: var(--color-bg-primary);
+    border-top: 1px solid var(--color-border-light);
+}
+
+.how-it-works h2 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-primary);
+    text-align: center;
+    margin: 0 0 var(--spacing-sm);
+    font-weight: 500;
+}
+
+.how-it-works .section-intro {
+    font-family: var(--font-body);
+    font-size: var(--font-size-base);
+    color: var(--color-text-secondary);
+    text-align: center;
+    margin: 0 0 var(--spacing-2xl);
+    font-style: italic;
+}
+
+/* Timeline horitzontal (desktop) */
+.process-timeline {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-xl);
+    padding: 0 var(--spacing-xl);
+}
+
+/* Línia de connexió */
+.timeline-line {
+    position: absolute;
+    top: 28px;
+    left: 100px;
+    right: 100px;
+    height: 2px;
+    background: var(--color-border);
+    z-index: 0;
+}
+
+.timeline-progress {
+    height: 100%;
+    width: 0%;
+    background: var(--color-accent);
+    transition: width 0.4s ease;
+}
+
+.timeline-step {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.step-marker {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--color-bg-primary);
+    border: 2px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: var(--spacing-sm);
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.timeline-step:hover .step-marker {
+    border-color: var(--color-accent);
+    transform: scale(1.1);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.step-icon {
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.step-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-label {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin-bottom: 4px;
+}
+
+.step-desc {
+    font-family: var(--font-body);
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    margin: 0;
+    line-height: 1.4;
+}
+
+.how-cta {
+    display: block;
+    text-align: center;
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-accent);
+    text-decoration: none;
+    margin-top: var(--spacing-lg);
+}
+
+.how-cta:hover {
+    text-decoration: underline;
+}
+
+/* Mòbil: 2x2 grid compacte */
+@media (max-width: 600px) {
+    .process-timeline {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-lg);
+        padding: 0 var(--spacing-lg);
+    }
+
+    .timeline-line {
+        display: none;
+    }
+
+    .timeline-step {
+        max-width: 100%;
+    }
+
+    .step-marker {
+        width: 48px;
+        height: 48px;
+    }
+
+    .step-icon {
+        font-size: 1.3rem;
+    }
+
+    .step-label {
+        font-size: var(--font-size-sm);
+    }
+
+    .step-desc {
+        font-size: 11px;
+    }
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   18. RESPONSIVE
    ───────────────────────────────────────────────────────────────────── */
 
 @media (max-width: 992px) {

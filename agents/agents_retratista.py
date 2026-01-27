@@ -1,194 +1,107 @@
-"""Agent per a la generació de retrats d'autors amb estil Neo-Clàssic Digital.
+"""Agent per a la generació de retrats d'autors amb estil Rotoscòpia Sepia.
 
-Utilitza Claude per crear prompts artístics i Venice.ai per generar imatges.
-Estil visual: Bust de marbre clàssic amb subtils elements digitals.
-Format: Quadrat 1:1 per avatars, o 3:4 per fitxes.
+Utilitza imatges reals de Wikimedia Commons i Venice.ai /image/edit per
+aplicar un estil artístic elegant i recogneixible.
+
+Estil visual: Rotoscòpia sepia - fotos reals estilitzades amb tons càlids.
+Format: Quadrat per avatars (512x512).
 
 Exemple d'ús:
     ```python
-    from agents.retratista import AgentRetratista, generar_retrat_autor
-    
+    from agents.agents_retratista import AgentRetratista, generar_retrat_autor
+
     # Ús ràpid
     retrat = generar_retrat_autor(
-        nom="Plató",
-        epoca="Grècia clàssica, s. V-IV aC",
-        genere="FIL",
-        output_path="autors/plato.png",
+        nom="Vsévolod Garxin",
+        nom_wikimedia="Vsevolod Garshin",
+        output_path="autors/garxin.png",
     )
-    
+
     # Ús amb agent
     agent = AgentRetratista()
     retrat = agent.generar_retrat({
-        "nom": "Homer",
-        "epoca": "Grècia arcaica, s. VIII aC",
-        "genere": "EPO",
-        "descripcio": "Poeta cec llegendari",
+        "nom": "Sèneca",
+        "nom_wikimedia": "Seneca",
     })
     ```
 """
 
 import io
-import json
 import os
+import requests
 from pathlib import Path
 from typing import Literal
 
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image
 from pydantic import BaseModel, Field
 
-# Imports relatius per quan s'integri al projecte
 try:
-    from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+    from agents.base_agent import AgentConfig, BaseAgent
     from agents.venice_client import VeniceClient, VeniceError
 except ImportError:
-    # Stubs per desenvolupament independent
     from abc import ABC, abstractmethod
-    
+
     class AgentConfig(BaseModel):
         model: str = "claude-sonnet-4-20250514"
         max_tokens: int = 2048
         temperature: float = 0.7
-    
-    class AgentResponse(BaseModel):
-        content: str
-        model: str = ""
-        usage: dict = {}
-        duration_seconds: float = 0.0
-        cost_eur: float = 0.0
-    
+
     class BaseAgent(ABC):
         agent_name: str = "BaseAgent"
-        
+
         def __init__(self, config: AgentConfig | None = None):
             self.config = config or AgentConfig()
-            self._logger = None
-        
+
         @property
         @abstractmethod
         def system_prompt(self) -> str:
             ...
-        
+
         def log_info(self, msg: str) -> None:
             print(f"ℹ️  {msg}")
-        
+
+        def log_warning(self, msg: str) -> None:
+            print(f"⚠️  {msg}")
+
         def log_error(self, msg: str) -> None:
             print(f"❌ {msg}")
-        
-        def process(self, prompt: str) -> AgentResponse:
-            # Placeholder - en producció usa Claude
-            return AgentResponse(content="{}")
-    
+
     class VeniceClient:
         def __init__(self, api_key: str | None = None):
             self.api_key = api_key or os.getenv("VENICE_API_KEY")
-        
-        def generar_imatge_sync(self, **kwargs) -> bytes:
-            raise NotImplementedError("Venice client stub")
-    
+
     class VeniceError(Exception):
         pass
 
 
 # ═══════════════════════════════════════════════════════════════════════════
-# CONFIGURACIÓ D'ESTILS PER GÈNERE
+# PROMPT D'ESTIL ROTOSCÒPIA SEPIA
 # ═══════════════════════════════════════════════════════════════════════════
 
-GenreLiterari = Literal["FIL", "POE", "TEA", "NOV", "SAG", "ORI", "EPO", "HIS", "CIE"]
+PROMPT_ROTOSCOPIA_SEPIA = (
+    "Transform into elegant rotoscope illustration style, "
+    "sepia warm tones, vintage editorial portrait, "
+    "artistic posterized effect, classic book illustration aesthetic, "
+    "no text, no letters, no words, no watermarks"
+)
 
-
-class EstilRetrat(BaseModel):
-    """Configuració d'estil per a un gènere literari."""
-    
-    marbre: str  # Tipus de marbre
-    il_luminacio: str  # Estil d'il·luminació
-    accent_digital: str  # Element digital subtil
-    accent_color: str  # Color d'accent (hex)
-    fons: str  # Descripció del fons
-    expressio: str  # Expressió facial
-    detalls: str  # Detalls addicionals
-
-
-ESTILS_GENERE: dict[str, EstilRetrat] = {
-    "FIL": EstilRetrat(
-        marbre="pure white Carrara marble",
-        il_luminacio="dramatic side lighting from left, chiaroscuro",
-        accent_digital="subtle golden geometric shapes floating nearby, thin horizontal scan lines",
-        accent_color="#D4AF37",
-        fons="dark gradient background from charcoal (#36454F) to black",
-        expressio="serene contemplative expression, wise gaze",
-        detalls="classical Greek beard, noble brow",
+# Prompts alternatius per si es volen afegir més estils
+PROMPTS_ESTIL = {
+    "rotoscopia_sepia": PROMPT_ROTOSCOPIA_SEPIA,
+    "gravat_antic": (
+        "Transform into antique engraving illustration, "
+        "19th century encyclopedia style, fine crosshatching, "
+        "black ink on cream paper, classical portrait etching"
     ),
-    "POE": EstilRetrat(
-        marbre="soft cream Parian marble with subtle pink veins",
-        il_luminacio="ethereal soft lighting, gentle shadows",
-        accent_digital="delicate floating particles like stardust, faint digital aurora",
-        accent_color="#B8A9C9",
-        fons="deep indigo gradient fading to black",
-        expressio="dreamy introspective expression, eyes slightly upward",
-        detalls="flowing hair suggested in marble, refined features",
+    "sketch_llapis": (
+        "Transform into elegant pencil sketch portrait, "
+        "realistic graphite drawing, soft shading, "
+        "artistic portrait on white paper, fine art quality"
     ),
-    "TEA": EstilRetrat(
-        marbre="dramatic white marble with bold shadows",
-        il_luminacio="theatrical spotlight from above, high contrast",
-        accent_digital="crimson light fragments at edges, subtle stage light flares",
-        accent_color="#8B0000",
-        fons="pure black void, dramatic emptiness",
-        expressio="intense passionate expression, theatrical gravitas",
-        detalls="expressive features, strong jaw line",
-    ),
-    "NOV": EstilRetrat(
-        marbre="warm ivory marble, slightly weathered",
-        il_luminacio="natural diffused light, storyteller's warmth",
-        accent_digital="sepia-toned digital grain, vintage scan artifacts",
-        accent_color="#8B7355",
-        fons="rich brown gradient suggesting old parchment",
-        expressio="knowing half-smile, observant eyes",
-        detalls="character lines suggesting life experience",
-    ),
-    "SAG": EstilRetrat(
-        marbre="luminous white marble with ethereal glow",
-        il_luminacio="divine light from above, halo effect",
-        accent_digital="golden sacred geometry patterns, subtle mandala fragments",
-        accent_color="#FFD700",
-        fons="deep celestial blue transitioning to cosmic black",
-        expressio="transcendent peaceful expression, inner light",
-        detalls="serene features, slight upward gaze",
-    ),
-    "ORI": EstilRetrat(
-        marbre="pale grey-white marble, zen simplicity",
-        il_luminacio="soft balanced light, no harsh shadows",
-        accent_digital="single red ink brushstroke accent, minimal interference",
-        accent_color="#8B0000",
-        fons="misty gradient from warm grey to soft white",
-        expressio="profound stillness, enigmatic calm",
-        detalls="simplified features, suggestion of Asian influence if appropriate",
-    ),
-    "EPO": EstilRetrat(
-        marbre="ancient weathered marble, heroic presence",
-        il_luminacio="epic golden hour lighting, mythic atmosphere",
-        accent_digital="bronze-gold digital particles, ancient patina effect",
-        accent_color="#CD853F",
-        fons="stormy gradient suggesting Aegean skies",
-        expressio="heroic determination, far-seeing gaze",
-        detalls="strong classical features, possibly blind eyes for Homer",
-    ),
-    "HIS": EstilRetrat(
-        marbre="dignified grey-veined marble",
-        il_luminacio="scholarly lamplight, warm and focused",
-        accent_digital="faint text fragments floating, document scan lines",
-        accent_color="#4A5568",
-        fons="deep library green to black gradient",
-        expressio="analytical scrutiny, intellectual intensity",
-        detalls="prominent brow, scholarly bearing",
-    ),
-    "CIE": EstilRetrat(
-        marbre="cool blue-white marble, precision carved",
-        il_luminacio="clean clinical light, revealing detail",
-        accent_digital="geometric grid overlay, measurement marks",
-        accent_color="#4682B4",
-        fons="deep space blue to black, suggesting cosmos",
-        expressio="curious wonder, analytical focus",
-        detalls="alert eyes, inquiring posture",
+    "duotone_editorial": (
+        "Transform into modern duotone portrait, "
+        "two-color editorial style, sepia and dark brown only, "
+        "minimalist high contrast, magazine cover aesthetic"
     ),
 }
 
@@ -199,24 +112,10 @@ ESTILS_GENERE: dict[str, EstilRetrat] = {
 
 class RetratistaConfig(BaseModel):
     """Configuració de l'agent retratista."""
-    
-    width: int = Field(default=1024, ge=512, le=1280)
-    height: int = Field(default=1024, ge=512, le=1280)
-    format_ratio: Literal["1:1", "3:4"] = "1:1"
-    model_imatge: str = "z-image-turbo"
-    steps: int = Field(default=35, ge=20, le=50)
-    cfg_scale: float = Field(default=7.5, ge=5.0, le=12.0)
-    afegir_marc: bool = False
-    afegir_nom: bool = False
 
-
-class PromptResult(BaseModel):
-    """Resultat de la generació de prompt."""
-    
-    prompt: str
-    negative_prompt: str
-    estil: dict
-    raonament: str
+    output_size: int = Field(default=512, ge=256, le=1024)
+    estil: str = "rotoscopia_sepia"
+    fallback_local: bool = True  # Usar PIL si Venice falla
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -224,250 +123,289 @@ class PromptResult(BaseModel):
 # ═══════════════════════════════════════════════════════════════════════════
 
 class AgentRetratista(BaseAgent):
-    """Agent per generar retrats d'autors amb estil Neo-Clàssic Digital.
-    
-    Combina l'estètica dels bustos clàssics de marbre amb subtils
-    elements digitals contemporanis, creant una fusió entre l'antic i el modern.
+    """Agent per generar retrats d'autors amb estil Rotoscòpia Sepia.
+
+    Flux:
+    1. Buscar imatge real a Wikimedia Commons
+    2. Aplicar estil amb Venice /image/edit
+    3. Redimensionar i guardar
     """
-    
+
     agent_name: str = "Retratista"
-    
+
+    WIKIMEDIA_API = "https://commons.wikimedia.org/w/api.php"
+    VENICE_EDIT_API = "https://api.venice.ai/api/v1/image/edit"
+
     def __init__(
         self,
         config: AgentConfig | None = None,
         retratista_config: RetratistaConfig | None = None,
     ) -> None:
-        """Inicialitza l'agent retratista.
-        
-        Args:
-            config: Configuració de l'agent base (Claude).
-            retratista_config: Configuració específica per retrats.
-        """
         super().__init__(config)
         self.retratista_config = retratista_config or RetratistaConfig()
-        
-        # Ajustar dimensions segons format
-        if self.retratista_config.format_ratio == "3:4":
-            self.retratista_config.width = 1024
-            self.retratista_config.height = 1280
-        
-        # Inicialitzar client Venice
-        try:
-            self.venice = VeniceClient()
-            self.log_info("Client Venice inicialitzat correctament")
-        except Exception as e:
-            self.venice = None
-            self.log_error(f"Venice no disponible: {e}")
-    
+
+        # API key de Venice
+        self.venice_api_key = os.getenv("VENICE_API_KEY")
+        if self.venice_api_key:
+            self.log_info("Venice API configurada")
+        else:
+            self.log_warning("VENICE_API_KEY no configurada")
+
+        # Headers per Wikimedia (requereix User-Agent)
+        self.wikimedia_headers = {
+            "User-Agent": "BibliotecaArion/1.0 (https://github.com/biblioteca-arion; contact@arion.cat)"
+        }
+
+    def log_error(self, message: str) -> None:
+        """Log d'error."""
+        self.logger.log_error(self.agent_name, Exception(message))
+
     @property
     def system_prompt(self) -> str:
-        return """Ets un expert en iconografia clàssica i art digital contemporani.
+        return "Agent per generar retrats d'autors amb estil rotoscòpia sepia."
 
-La teva tasca és crear prompts per generar retrats d'autors clàssics amb l'estil
-"Neo-Clàssic Digital": bustos de marbre amb subtils elements digitals.
+    def _buscar_imatge_wikimedia(self, nom_autor: str) -> str | None:
+        """Busca una imatge de l'autor a Wikimedia Commons.
 
-PRINCIPIS DE L'ESTIL NEO-CLÀSSIC DIGITAL:
-
-1. BASE CLÀSSICA (70% de l'impacte visual)
-   - Bust de marbre blanc/crema estil hel·lenístic o romà
-   - Talla detallada amb textura de marbre realista
-   - Il·luminació dramàtica tipus museu
-   - Expressió que reflecteixi l'esperit de l'autor
-
-2. ELEMENTS DIGITALS (30% de l'impacte visual)
-   - SUBTILS, mai dominants
-   - Línies d'escaneig horitzontals molt fines
-   - Petits glitchs als contorns (opcionals)
-   - Geometria daurada flotant a prop (no tocant)
-   - Partícules de llum digital
-
-3. COMPOSICIÓ
-   - Fons fosc amb gradient (no blanc mai)
-   - Bust centrat, des del pit fins sobre el cap
-   - Espai negatiu respectat
-   - Format retratat clàssic
-
-EVITAR SEMPRE:
-- Estètica cyberpunk o massa futurista
-- Colors brillants o neó
-- Text o lletres
-- Cossos complets o mans
-- Fons blancs o clars
-- Estil cartoon o anime
-- Elements moderns (roba actual, tecnologia visible)
-
-FORMAT DE RESPOSTA (JSON):
-{
-    "prompt": "descripció completa per Venice/FLUX",
-    "negative_prompt": "elements a evitar",
-    "raonament": "per què aquest enfocament per a aquest autor"
-}"""
-    
-    def _obtenir_estil(self, genere: str) -> EstilRetrat:
-        """Obté l'estil per un gènere, amb fallback a FIL."""
-        return ESTILS_GENERE.get(genere.upper(), ESTILS_GENERE["FIL"])
-    
-    def _construir_prompt_base(
-        self,
-        nom: str,
-        epoca: str,
-        genere: str,
-        descripcio: str = "",
-    ) -> str:
-        """Construeix el prompt base sense usar Claude."""
-        estil = self._obtenir_estil(genere)
-        
-        prompt_parts = [
-            f"Portrait bust sculpture of {nom}",
-            f"ancient {epoca} figure",
-            f"{estil.marbre} sculpture style",
-            "classical Hellenistic period aesthetic",
-            f"{estil.il_luminacio}",
-            f"{estil.accent_digital}",
-            f"{estil.fons}",
-            f"{estil.expressio}",
-            f"{estil.detalls}",
-            "hyper-detailed marble texture with subtle veins",
-            "museum quality sculpture photography",
-            "8k resolution",
-            "photorealistic marble rendering",
-        ]
-        
-        if descripcio:
-            prompt_parts.insert(2, descripcio)
-        
-        return ", ".join(prompt_parts)
-    
-    def _construir_negative_prompt(self) -> str:
-        """Construeix el negative prompt estàndard."""
-        return (
-            "cartoon, anime, illustration, painting, drawing, sketch, "
-            "colorful, vibrant colors, neon, cyberpunk, futuristic, "
-            "modern clothing, contemporary, text, letters, watermark, signature, "
-            "low quality, blurry, distorted face, deformed, "
-            "full body, hands, fingers, multiple people, "
-            "bright background, white background, plain background, "
-            "excessive glitch, too digital, heavy artifacts, "
-            "realistic human skin, photograph of person, "
-            "3d render plastic, wax figure"
-        )
-    
-    def generar_prompt(self, metadata: dict) -> dict:
-        """Genera el prompt per a un retrat d'autor.
-        
         Args:
-            metadata: Diccionari amb:
-                - nom: Nom de l'autor (obligatori)
-                - epoca: Època/context històric (obligatori)
-                - genere: Gènere literari (FIL, POE, etc.)
-                - descripcio: Descripció adicional (opcional)
-                - trets: Característiques físiques conegudes (opcional)
-        
+            nom_autor: Nom de l'autor per cercar (en anglès preferiblement)
+
         Returns:
-            Diccionari amb prompt, negative_prompt, estil i raonament.
+            URL de la imatge o None si no es troba
         """
-        nom = metadata.get("nom", "Unknown Author")
-        epoca = metadata.get("epoca", "ancient classical period")
-        genere = metadata.get("genere", "FIL")
-        descripcio = metadata.get("descripcio", "")
-        trets = metadata.get("trets", "")
-        
-        # Combinar descripció i trets si existeixen
-        desc_completa = " ".join(filter(None, [descripcio, trets]))
-        
-        estil = self._obtenir_estil(genere)
-        
-        prompt = self._construir_prompt_base(nom, epoca, genere, desc_completa)
-        negative = self._construir_negative_prompt()
-        
-        return {
-            "prompt": prompt,
-            "negative_prompt": negative,
-            "estil": estil.model_dump(),
-            "genere": genere,
-            "raonament": f"Estil {genere} aplicat a {nom}: {estil.expressio}",
+        self.log_info(f"Cercant imatge de '{nom_autor}' a Wikimedia...")
+
+        # Cercar fitxers relacionats
+        params = {
+            "action": "query",
+            "list": "search",
+            "srsearch": f"{nom_autor} portrait",
+            "srnamespace": "6",  # Namespace de fitxers
+            "format": "json",
+            "srlimit": "5",
         }
-    
+
+        try:
+            resp = requests.get(self.WIKIMEDIA_API, params=params, headers=self.wikimedia_headers, timeout=10)
+            resp.raise_for_status()
+            data = resp.json()
+
+            results = data.get("query", {}).get("search", [])
+            if not results:
+                self.log_warning(f"No s'han trobat imatges per '{nom_autor}'")
+                return None
+
+            # Agafar el primer resultat
+            file_title = results[0]["title"]
+            self.log_info(f"Trobat: {file_title}")
+
+            # Obtenir URL directa de la imatge
+            params_url = {
+                "action": "query",
+                "titles": file_title,
+                "prop": "imageinfo",
+                "iiprop": "url",
+                "format": "json",
+            }
+
+            resp_url = requests.get(self.WIKIMEDIA_API, params=params_url, headers=self.wikimedia_headers, timeout=10)
+            resp_url.raise_for_status()
+            data_url = resp_url.json()
+
+            pages = data_url.get("query", {}).get("pages", {})
+            for page in pages.values():
+                imageinfo = page.get("imageinfo", [{}])[0]
+                url = imageinfo.get("url")
+                if url:
+                    self.log_info(f"URL imatge: {url[:80]}...")
+                    return url
+
+            return None
+
+        except Exception as e:
+            self.log_error(f"Error cercant a Wikimedia: {e}")
+            return None
+
+    def _aplicar_estil_venice(self, image_url: str, estil: str = "rotoscopia_sepia") -> bytes | None:
+        """Aplica estil artístic amb Venice /image/edit.
+
+        Args:
+            image_url: URL de la imatge original
+            estil: Clau de l'estil a aplicar
+
+        Returns:
+            bytes de la imatge editada o None si falla
+        """
+        if not self.venice_api_key:
+            self.log_error("Venice API key no configurada")
+            return None
+
+        prompt = PROMPTS_ESTIL.get(estil, PROMPT_ROTOSCOPIA_SEPIA)
+        self.log_info(f"Aplicant estil '{estil}' amb Venice...")
+
+        headers = {
+            "Authorization": f"Bearer {self.venice_api_key}",
+            "Content-Type": "application/json",
+        }
+
+        payload = {
+            "prompt": prompt,
+            "image": image_url,
+        }
+
+        try:
+            resp = requests.post(
+                self.VENICE_EDIT_API,
+                headers=headers,
+                json=payload,
+                timeout=120,
+            )
+
+            if resp.status_code == 200:
+                self.log_info("Estil aplicat correctament!")
+                return resp.content
+            else:
+                self.log_error(f"Error Venice: {resp.status_code} - {resp.text[:200]}")
+                return None
+
+        except Exception as e:
+            self.log_error(f"Error aplicant estil: {e}")
+            return None
+
+    def _fallback_sepia_local(self, image_url: str) -> bytes | None:
+        """Aplica efecte sepia localment amb PIL (fallback).
+
+        Args:
+            image_url: URL de la imatge original
+
+        Returns:
+            bytes de la imatge processada o None si falla
+        """
+        self.log_info("Usant fallback local (PIL)...")
+
+        try:
+            # Descarregar imatge
+            resp = requests.get(image_url, timeout=30)
+            resp.raise_for_status()
+
+            img = Image.open(io.BytesIO(resp.content))
+            img.thumbnail((512, 512), Image.Resampling.LANCZOS)
+
+            # Convertir a escala de grisos
+            from PIL import ImageOps, ImageEnhance, ImageFilter
+
+            gray = ImageOps.grayscale(img)
+
+            # Augmentar contrast
+            enhancer = ImageEnhance.Contrast(gray)
+            high_contrast = enhancer.enhance(1.4)
+
+            # Posteritzar
+            posterized = ImageOps.posterize(high_contrast, 4)
+
+            # Aplicar to sepia
+            sepia = Image.new('RGB', posterized.size)
+            pixels_gray = posterized.load()
+            pixels_sepia = sepia.load()
+
+            for y in range(posterized.height):
+                for x in range(posterized.width):
+                    gray_val = pixels_gray[x, y]
+                    r = min(255, int(gray_val * 1.05))
+                    g = min(255, int(gray_val * 0.88))
+                    b = min(255, int(gray_val * 0.68))
+                    pixels_sepia[x, y] = (r, g, b)
+
+            # Suavitzar i enfocar
+            final = sepia.filter(ImageFilter.SMOOTH_MORE)
+            sharpener = ImageEnhance.Sharpness(final)
+            final = sharpener.enhance(1.3)
+
+            # Convertir a bytes
+            buffer = io.BytesIO()
+            final.save(buffer, format="PNG")
+            return buffer.getvalue()
+
+        except Exception as e:
+            self.log_error(f"Error en fallback local: {e}")
+            return None
+
     def generar_retrat(
         self,
         metadata: dict,
-        usar_claude: bool = False,
     ) -> bytes:
-        """Genera un retrat complet d'autor.
-        
+        """Genera un retrat d'autor.
+
         Args:
-            metadata: Metadades de l'autor (nom, epoca, genere, etc.)
-            usar_claude: Si True, usa Claude per refinar el prompt.
-        
+            metadata: Diccionari amb:
+                - nom: Nom de l'autor (obligatori)
+                - nom_wikimedia: Nom per cercar a Wikimedia (opcional)
+                - imatge_url: URL directa de la imatge (opcional)
+                - estil: Estil a aplicar (opcional)
+
         Returns:
             bytes: Imatge PNG del retrat.
-        
+
         Raises:
-            VeniceError: Si falla la generació d'imatge.
-            ValueError: Si Venice no està disponible.
+            ValueError: Si no es pot obtenir cap imatge.
         """
-        if not self.venice:
-            raise ValueError(
-                "Client Venice no disponible. "
-                "Configura VENICE_API_KEY a l'entorn."
-            )
-        
-        # 1. Generar prompt
-        self.log_info(f"Generant prompt per: {metadata.get('nom', 'desconegut')}")
-        prompt_result = self.generar_prompt(metadata)
-        
-        # 2. Opcional: Refinar amb Claude
-        if usar_claude:
-            self.log_info("Refinant prompt amb Claude...")
-            # Aquí es podria cridar self.process() per refinar
-            pass
-        
-        # 3. Generar imatge amb Venice
-        self.log_info("Generant imatge amb Venice.ai...")
-        image_bytes = self.venice.generar_imatge_sync(
-            prompt=prompt_result["prompt"],
-            negative_prompt=prompt_result["negative_prompt"],
-            width=self.retratista_config.width,
-            height=self.retratista_config.height,
-            model=self.retratista_config.model_imatge,
-            steps=self.retratista_config.steps,
-            cfg_scale=self.retratista_config.cfg_scale,
+        nom = metadata.get("nom", "Autor desconegut")
+        nom_wikimedia = metadata.get("nom_wikimedia", nom)
+        imatge_url = metadata.get("imatge_url")
+        estil = metadata.get("estil", self.retratista_config.estil)
+
+        self.log_info(f"Generant retrat de: {nom}")
+
+        # 1. Obtenir URL de la imatge
+        if not imatge_url:
+            imatge_url = self._buscar_imatge_wikimedia(nom_wikimedia)
+
+        if not imatge_url:
+            raise ValueError(f"No s'ha trobat cap imatge per a '{nom}'")
+
+        # 2. Aplicar estil amb Venice
+        image_bytes = self._aplicar_estil_venice(imatge_url, estil)
+
+        # 3. Fallback a PIL si Venice falla
+        if not image_bytes and self.retratista_config.fallback_local:
+            image_bytes = self._fallback_sepia_local(imatge_url)
+
+        if not image_bytes:
+            raise ValueError(f"No s'ha pogut processar la imatge de '{nom}'")
+
+        # 4. Redimensionar al tamany final
+        img = Image.open(io.BytesIO(image_bytes))
+        img.thumbnail(
+            (self.retratista_config.output_size, self.retratista_config.output_size),
+            Image.Resampling.LANCZOS
         )
-        
-        self.log_info("Retrat generat correctament!")
-        return image_bytes
-    
+
+        buffer = io.BytesIO()
+        img.save(buffer, format="PNG")
+
+        self.log_info(f"Retrat generat: {img.size}")
+        return buffer.getvalue()
+
     def generar_i_guardar(
         self,
         metadata: dict,
-        output_dir: Path | str = "output/autors",
+        output_path: Path | str,
     ) -> Path:
         """Genera un retrat i el guarda a disc.
-        
+
         Args:
             metadata: Metadades de l'autor.
-            output_dir: Directori de sortida.
-        
+            output_path: Ruta on guardar la imatge.
+
         Returns:
             Path al fitxer generat.
         """
-        output_dir = Path(output_dir)
-        output_dir.mkdir(parents=True, exist_ok=True)
-        
-        # Nom de fitxer segur
-        nom = metadata.get("nom", "autor_desconegut")
-        nom_segur = nom.lower().replace(" ", "_").replace("'", "")
-        for char in "àèéíòóúïüç":
-            repl = {"à": "a", "è": "e", "é": "e", "í": "i", "ò": "o", 
-                    "ó": "o", "ú": "u", "ï": "i", "ü": "u", "ç": "c"}
-            nom_segur = nom_segur.replace(char, repl.get(char, char))
-        
-        output_path = output_dir / f"{nom_segur}.png"
-        
-        # Generar i guardar
+        output_path = Path(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
         image_bytes = self.generar_retrat(metadata)
         output_path.write_bytes(image_bytes)
-        
+
         self.log_info(f"Retrat guardat: {output_path}")
         return output_path
 
@@ -478,179 +416,112 @@ FORMAT DE RESPOSTA (JSON):
 
 def generar_retrat_autor(
     nom: str,
-    epoca: str,
-    genere: str = "FIL",
-    descripcio: str = "",
-    trets: str = "",
+    nom_wikimedia: str | None = None,
+    imatge_url: str | None = None,
+    estil: str = "rotoscopia_sepia",
     output_path: Path | str | None = None,
 ) -> bytes:
     """Funció ràpida per generar un retrat d'autor.
-    
+
     Args:
         nom: Nom de l'autor.
-        epoca: Època històrica.
-        genere: Gènere literari (FIL, POE, TEA, NOV, SAG, ORI, EPO, HIS, CIE).
-        descripcio: Descripció adicional.
-        trets: Característiques físiques conegudes.
+        nom_wikimedia: Nom per cercar a Wikimedia (si diferent).
+        imatge_url: URL directa de la imatge (opcional).
+        estil: Estil a aplicar (rotoscopia_sepia, gravat_antic, etc.).
         output_path: Ruta on guardar la imatge (opcional).
-    
+
     Returns:
         bytes: Imatge PNG del retrat.
-    
+
     Exemple:
         ```python
         retrat = generar_retrat_autor(
-            nom="Marc Aureli",
-            epoca="Roma Imperial, s. II dC",
-            genere="FIL",
-            descripcio="Emperador filòsof estoic",
-            output_path="autors/marc_aureli.png",
+            nom="Vsévolod Garxin",
+            nom_wikimedia="Vsevolod Garshin",
+            output_path="autors/garxin.png",
         )
         ```
     """
     agent = AgentRetratista()
-    
+
     metadata = {
         "nom": nom,
-        "epoca": epoca,
-        "genere": genere,
-        "descripcio": descripcio,
-        "trets": trets,
+        "nom_wikimedia": nom_wikimedia or nom,
+        "imatge_url": imatge_url,
+        "estil": estil,
     }
-    
+
     image_bytes = agent.generar_retrat(metadata)
-    
+
     if output_path:
         path = Path(output_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(image_bytes)
         print(f"✅ Retrat guardat: {path}")
-    
+
     return image_bytes
 
 
-def previsualitzar_prompt(
-    nom: str,
-    epoca: str,
-    genere: str = "FIL",
-    descripcio: str = "",
-) -> dict:
-    """Previsualitza el prompt sense generar imatge.
-    
-    Útil per revisar el prompt abans de gastar crèdits de Venice.
-    
-    Returns:
-        dict amb prompt, negative_prompt, estil i raonament.
-    """
-    agent = AgentRetratista()
-    return agent.generar_prompt({
-        "nom": nom,
-        "epoca": epoca,
-        "genere": genere,
-        "descripcio": descripcio,
-    })
-
-
 # ═══════════════════════════════════════════════════════════════════════════
-# AUTORS PREDEFINITS (per comoditat)
+# AUTORS AMB IMATGES CONEGUDES
 # ═══════════════════════════════════════════════════════════════════════════
 
-AUTORS_CLASSICS = {
+AUTORS_IMATGES = {
     "plato": {
         "nom": "Plató",
-        "epoca": "Grècia clàssica, s. V-IV aC",
-        "genere": "FIL",
-        "descripcio": "Filòsof atenès, deixeble de Sòcrates",
-        "trets": "barba grega clàssica, front ample, nas recte",
+        "nom_wikimedia": "Plato",
     },
     "aristotil": {
         "nom": "Aristòtil",
-        "epoca": "Grècia clàssica, s. IV aC",
-        "genere": "FIL",
-        "descripcio": "Filòsof i científic, deixeble de Plató",
-        "trets": "barba curta i ben retallada, mirada penetrant",
-    },
-    "homer": {
-        "nom": "Homer",
-        "epoca": "Grècia arcaica, s. VIII aC",
-        "genere": "EPO",
-        "descripcio": "Poeta èpic llegendari, autor de la Ilíada i l'Odissea",
-        "trets": "ancià cec amb ulls tancats o buits, barba llarga fluent",
-    },
-    "safo": {
-        "nom": "Safo",
-        "epoca": "Grècia arcaica, s. VII-VI aC",
-        "genere": "POE",
-        "descripcio": "Poetessa de Lesbos, la desena musa",
-        "trets": "faccions femenines delicades, cabell recollit estil grec",
-    },
-    "sofocles": {
-        "nom": "Sòfocles",
-        "epoca": "Grècia clàssica, s. V aC",
-        "genere": "TEA",
-        "descripcio": "Dramaturg tràgic atenès",
-        "trets": "barba digna, expressió tràgica noble",
-    },
-    "marc_aureli": {
-        "nom": "Marc Aureli",
-        "epoca": "Roma Imperial, s. II dC",
-        "genere": "FIL",
-        "descripcio": "Emperador filòsof estoic",
-        "trets": "barba rissada romana, corona de llorer suggerida",
+        "nom_wikimedia": "Aristotle",
     },
     "seneca": {
         "nom": "Sèneca",
-        "epoca": "Roma Imperial, s. I dC",
-        "genere": "FIL",
-        "descripcio": "Filòsof estoic i dramaturg",
-        "trets": "calb o amb poc cabell, expressió severa però sàvia",
+        "nom_wikimedia": "Seneca",
     },
-    "virgili": {
-        "nom": "Virgili",
-        "epoca": "Roma Augusta, s. I aC",
-        "genere": "EPO",
-        "descripcio": "Poeta de l'Eneida",
-        "trets": "faccions fines, expressió melancòlica",
+    "epictetus": {
+        "nom": "Epictetus",
+        "nom_wikimedia": "Epictetus",
     },
-    "ovidi": {
-        "nom": "Ovidi",
-        "epoca": "Roma Augusta, s. I aC - I dC",
-        "genere": "POE",
-        "descripcio": "Poeta de les Metamorfosis",
-        "trets": "rostre juvenil, somriure subtil",
+    "heraclit": {
+        "nom": "Heràclit d'Efes",
+        "nom_wikimedia": "Heraclitus",
     },
-    "herodot": {
-        "nom": "Heròdot",
-        "epoca": "Grècia clàssica, s. V aC",
-        "genere": "HIS",
-        "descripcio": "Pare de la història",
-        "trets": "barba plena, mirada curiosa i observadora",
+    "schopenhauer": {
+        "nom": "Arthur Schopenhauer",
+        "nom_wikimedia": "Arthur Schopenhauer",
+    },
+    "akutagawa": {
+        "nom": "Akutagawa Ryūnosuke",
+        "nom_wikimedia": "Ryunosuke Akutagawa",
+    },
+    "garxin": {
+        "nom": "Vsévolod Garxin",
+        "nom_wikimedia": "Vsevolod Garshin",
     },
 }
 
 
-def generar_autor_classic(clau: str, output_dir: str = "output/autors") -> Path:
-    """Genera retrat d'un autor predefinit.
-    
+def generar_autor_conegut(clau: str, output_dir: str = "docs/assets/autors") -> Path:
+    """Genera retrat d'un autor amb imatge coneguda.
+
     Args:
-        clau: Clau de l'autor (plato, homer, etc.)
+        clau: Clau de l'autor (plato, seneca, garxin, etc.)
         output_dir: Directori de sortida.
-    
+
     Returns:
         Path al fitxer generat.
-    
-    Exemple:
-        ```python
-        generar_autor_classic("plato")
-        generar_autor_classic("homer", "web/img/autors")
-        ```
     """
-    if clau not in AUTORS_CLASSICS:
-        claus_disponibles = ", ".join(AUTORS_CLASSICS.keys())
+    if clau not in AUTORS_IMATGES:
+        claus_disponibles = ", ".join(AUTORS_IMATGES.keys())
         raise ValueError(f"Autor '{clau}' no trobat. Disponibles: {claus_disponibles}")
-    
+
+    autor = AUTORS_IMATGES[clau]
+    nom_fitxer = clau.lower().replace(" ", "_") + ".png"
+    output_path = Path(output_dir) / nom_fitxer
+
     agent = AgentRetratista()
-    return agent.generar_i_guardar(AUTORS_CLASSICS[clau], output_dir)
+    return agent.generar_i_guardar(autor, output_path)
 
 
 # ═══════════════════════════════════════════════════════════════════════════
@@ -659,40 +530,36 @@ def generar_autor_classic(clau: str, output_dir: str = "output/autors") -> Path:
 
 if __name__ == "__main__":
     import sys
-    
+
     print("=" * 60)
-    print("AGENT RETRATISTA - Neo-Clàssic Digital")
+    print("AGENT RETRATISTA - Rotoscòpia Sepia")
     print("=" * 60)
-    
+
     agent = AgentRetratista()
     print(f"✅ Agent creat")
-    print(f"   Venice: {'✅ Disponible' if agent.venice else '❌ No disponible'}")
-    print(f"   Format: {agent.retratista_config.width}x{agent.retratista_config.height}")
+    print(f"   Venice: {'✅ Configurada' if agent.venice_api_key else '❌ No configurada'}")
+    print(f"   Estil: {agent.retratista_config.estil}")
     print()
-    
+
     # Mostrar autors disponibles
-    print("📚 Autors predefinits:")
-    for clau, autor in AUTORS_CLASSICS.items():
-        print(f"   - {clau}: {autor['nom']} ({autor['genere']})")
+    print("📚 Autors amb imatges conegudes:")
+    for clau, autor in AUTORS_IMATGES.items():
+        print(f"   - {clau}: {autor['nom']}")
     print()
-    
-    # Previsualitzar prompt de prova
-    print("🎨 Exemple de prompt (Plató):")
-    print("-" * 40)
-    prompt_info = previsualitzar_prompt(
-        nom="Plató",
-        epoca="Grècia clàssica, s. V-IV aC",
-        genere="FIL",
-    )
-    print(f"PROMPT:\n{prompt_info['prompt']}\n")
-    print(f"NEGATIVE:\n{prompt_info['negative_prompt']}\n")
-    
+
+    # Mostrar estils disponibles
+    print("🎨 Estils disponibles:")
+    for estil in PROMPTS_ESTIL.keys():
+        print(f"   - {estil}")
+    print()
+
     # Generar si es demana
-    if "--generate" in sys.argv and agent.venice:
-        autor = sys.argv[sys.argv.index("--generate") + 1] if len(sys.argv) > sys.argv.index("--generate") + 1 else "plato"
+    if "--generate" in sys.argv:
+        idx = sys.argv.index("--generate")
+        autor = sys.argv[idx + 1] if len(sys.argv) > idx + 1 else "garxin"
         print(f"\n🖼️  Generant retrat de '{autor}'...")
         try:
-            path = generar_autor_classic(autor, "output/autors")
+            path = generar_autor_conegut(autor)
             print(f"✅ Retrat guardat: {path}")
         except Exception as e:
             print(f"❌ Error: {e}")

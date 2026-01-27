@@ -611,8 +611,33 @@ class SearchPanelManager {
     }
 }
 
+/**
+ * Efecte dinàmic del timeline "Com funciona"
+ */
+function initProcessTimeline() {
+    const steps = document.querySelectorAll('.timeline-step');
+    const progressBar = document.querySelector('.timeline-progress');
+
+    if (!steps.length || !progressBar) return;
+
+    steps.forEach((step, index) => {
+        step.addEventListener('mouseenter', () => {
+            const progress = ((index + 1) / steps.length) * 100;
+            progressBar.style.width = progress + '%';
+        });
+    });
+
+    const timeline = document.querySelector('.process-timeline');
+    if (timeline) {
+        timeline.addEventListener('mouseleave', () => {
+            progressBar.style.width = '0%';
+        });
+    }
+}
+
 // Inicialitzar components v2
 document.addEventListener('DOMContentLoaded', () => {
     initAllCarousels();
     new SearchPanelManager();
+    initProcessTimeline();
 });
