@@ -1,5 +1,8 @@
 """Classe base abstracta per als agents de traducció."""
 
+import json
+import os
+import subprocess
 import time
 from abc import ABC, abstractmethod
 from typing import Any
@@ -26,6 +29,7 @@ class AgentConfig(BaseModel):
     model: str = Field(default="claude-sonnet-4-20250514")
     max_tokens: int = Field(default=4096)
     temperature: float = Field(default=0.3)
+    use_api: bool = Field(default=False)  # False = subscripció, True = API
 
 
 class AgentResponse(BaseModel):
@@ -60,7 +64,22 @@ class BaseAgent(ABC):
             logger: Logger per al seguiment. Si no es proporciona, s'usa el global.
         """
         self.config = config or AgentConfig()
-        self.client = anthropic.Anthropic()
+
+        # Detectar context: Claude Code (subscripció) vs Web (API)
+        is_claude_code = os.getenv("CLAUDECODE") == "1"
+
+        # Si estem en Claude Code i no s'ha especificat use_api, usar subscripció
+        if is_claude_code and not self.config.use_api:
+            # Mode subscripció: Claude Code utilitza la subscripció Pro/Max
+            # IMPORTANT: Cal utilitzar claude CLI o mètode similar
+            # Per ara, marcar que NO s'usa API
+            self.use_subscription = True
+            self.client = None  # No usar SDK d'Anthropic directament
+        else:
+            # Mode API: Usuaris web amb pagament
+            self.use_subscription = False
+            self.client = anthropic.Anthropic()
+
         self._logger = logger
 
     @property
@@ -104,8 +123,64 @@ class BaseAgent(ABC):
         total_usd = input_cost + output_cost
         return total_usd * USD_TO_EUR
 
+    def _call_claude_cli(
+        self,
+        prompt: str,
+        system_prompt: str,
+    ) -> dict[str, Any]:
+        """Crida al CLI de claude amb subscripció.
+
+        Args:
+            prompt: Prompt de l'usuari.
+            system_prompt: System prompt de l'agent.
+
+        Returns:
+            Dict amb la resposta parseada del CLI.
+
+        Raises:
+            subprocess.CalledProcessError: Si el CLI falla.
+            json.JSONDecodeError: Si la resposta no és JSON vàlid.
+        """
+        # Construir comanda
+        cmd = [
+            "claude",
+            "--print",  # Mode no interactiu
+            "--output-format", "json",  # Resposta en JSON
+            "--system-prompt", system_prompt,
+            "--model", self.config.model,
+            "--no-session-persistence",  # No desar sessió
+            prompt,
+        ]
+
+        # Executar comanda
+        result = subprocess.run(
+            cmd,
+            capture_output=True,
+            text=True,
+            timeout=300,  # 5 minuts màxim
+        )
+
+        # Verificar èxit
+        if result.returncode != 0:
+            error_msg = result.stderr or result.stdout
+            raise RuntimeError(
+                f"Claude CLI ha fallat (exit code {result.returncode}): {error_msg}"
+            )
+
+        # Parsejar JSON
+        try:
+            response_data = json.loads(result.stdout)
+            return response_data
+        except json.JSONDecodeError as e:
+            # Si falla el parsing, mostrar sortida per debug
+            self.logger.log_warning(
+                self.agent_name,
+                f"No s'ha pogut parsejar resposta JSON del CLI. Sortida: {result.stdout[:500]}"
+            )
+            raise
+
     def process(self, text: str, **kwargs: Any) -> AgentResponse:
-        """Envia text a l'API i retorna la resposta.
+        """Envia text a Claude i retorna la resposta.
 
         Args:
             text: El text a processar.
@@ -120,40 +195,96 @@ class BaseAgent(ABC):
         start_time = time.time()
 
         try:
-            message = self.client.messages.create(
-                model=self.config.model,
-                max_tokens=self.config.max_tokens,
-                temperature=self.config.temperature,
-                system=self.system_prompt,
-                messages=[
-                    {"role": "user", "content": text}
-                ],
-            )
+            # MODE SUBSCRIPCIÓ: Usar claude CLI
+            if self.use_subscription:
+                self.logger.log_info(
+                    self.agent_name,
+                    "✅ Mode subscripció actiu - usant claude CLI"
+                )
 
-            duration = time.time() - start_time
-            input_tokens = message.usage.input_tokens
-            output_tokens = message.usage.output_tokens
-            cost = self._calculate_cost(input_tokens, output_tokens)
+                response_data = self._call_claude_cli(
+                    prompt=text,
+                    system_prompt=self.system_prompt,
+                )
 
-            # Log de completat
-            self.logger.log_complete(
-                self.agent_name,
-                duration_seconds=duration,
-                input_tokens=input_tokens,
-                output_tokens=output_tokens,
-                cost_eur=cost,
-            )
+                duration = time.time() - start_time
 
-            return AgentResponse(
-                content=message.content[0].text,
-                model=message.model,
-                usage={
-                    "input_tokens": input_tokens,
-                    "output_tokens": output_tokens,
-                },
-                duration_seconds=duration,
-                cost_eur=cost,
-            )
+                # Extreure contingut de la resposta del CLI
+                # Format: {"type": "result", "result": "...", "usage": {...}, ...}
+                content = response_data.get("result", "")
+
+                # Determinar model utilitzat
+                model_usage = response_data.get("modelUsage", {})
+                if model_usage:
+                    # Agafar primer model de la llista
+                    model_used = list(model_usage.keys())[0] if model_usage else self.config.model
+                else:
+                    model_used = self.config.model
+
+                # Extreure usage
+                usage = response_data.get("usage", {})
+                input_tokens = usage.get("input_tokens", 0)
+                output_tokens = usage.get("output_tokens", 0)
+
+                # Cost = 0 (inclòs en subscripció)
+                cost = 0.0
+
+                # Log de completat
+                self.logger.log_complete(
+                    self.agent_name,
+                    duration_seconds=duration,
+                    input_tokens=input_tokens,
+                    output_tokens=output_tokens,
+                    cost_eur=cost,
+                )
+
+                return AgentResponse(
+                    content=content,
+                    model=model_used,
+                    usage={
+                        "input_tokens": input_tokens,
+                        "output_tokens": output_tokens,
+                    },
+                    duration_seconds=duration,
+                    cost_eur=cost,
+                )
+
+            # MODE API: Usar SDK d'Anthropic
+            else:
+                message = self.client.messages.create(
+                    model=self.config.model,
+                    max_tokens=self.config.max_tokens,
+                    temperature=self.config.temperature,
+                    system=self.system_prompt,
+                    messages=[
+                        {"role": "user", "content": text}
+                    ],
+                )
+
+                duration = time.time() - start_time
+                input_tokens = message.usage.input_tokens
+                output_tokens = message.usage.output_tokens
+                cost = self._calculate_cost(input_tokens, output_tokens)
+
+                # Log de completat
+                self.logger.log_complete(
+                    self.agent_name,
+                    duration_seconds=duration,
+                    input_tokens=input_tokens,
+                    output_tokens=output_tokens,
+                    cost_eur=cost,
+                )
+
+                return AgentResponse(
+                    content=message.content[0].text,
+                    model=message.model,
+                    usage={
+                        "input_tokens": input_tokens,
+                        "output_tokens": output_tokens,
+                    },
+                    duration_seconds=duration,
+                    cost_eur=cost,
+                )
 
         except Exception as e:
             duration = time.time() - start_time
