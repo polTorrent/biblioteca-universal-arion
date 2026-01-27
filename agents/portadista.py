@@ -84,12 +84,12 @@ PALETES: dict[str, PaletaGenere] = {
         text_color="#2C1810",
     ),
     "EPO": PaletaGenere(
-        colors=["bronze", "sandstone", "deep ocean blue", "aged gold"],
-        estil="heroic figurative monumental",
-        descripcio="Epic symbol, ancient grandeur, timeless heroism",
-        background="#1C1410",
-        accent="#CD853F",
-        text_color="#E8DCC8",
+        colors=["warm sepia", "terracotta", "muted teal", "sand"],
+        estil="minimalist watercolor illustration",
+        descripcio="Simple elegant watercolor silhouette, ancient symbol",
+        background="#F5F0E6",
+        accent="#8B6914",
+        text_color="#3D2B1F",
     ),
 }
 
@@ -116,6 +116,22 @@ SIMBOLS_TEMATICS: dict[str, str] = {
     "lògica": "interlocking geometric shapes",
     "metafísica": "a door slightly ajar with light",
     "epistemologia": "an eye looking through keyhole",
+    # Obres específiques
+    "conversió": "a heart with flames rising",
+    "confessions": "a heart with flames rising",
+    "pecat": "a ripe pear on a branch",
+    "cicuta": "an ancient greek cup or kylix",
+    "sòcrates": "an ancient greek cup or kylix",
+    "immortalitat": "a butterfly emerging from cocoon",
+    "superhome": "an eagle soaring over mountain peak",
+    "zaratustra": "an eagle soaring over mountain peak",
+    "àguila": "an eagle soaring over mountain peak",
+    "tao": "yin yang symbol in brushstroke style",
+    "yin": "water flowing around stones",
+    "equilibri": "balanced stones stacked",
+    "camí": "a winding mountain path",
+    "emperador": "a roman laurel wreath crown",
+    "roma": "a roman eagle standard aquila",
     # Poesia
     "amor": "two intertwined roses",
     "natura": "a single bird on a branch",
@@ -140,6 +156,14 @@ SIMBOLS_TEMATICS: dict[str, str] = {
     "heroi": "a shield and spear crossed",
     "déus": "lightning bolt from clouds",
     "batalla": "a single warrior helmet",
+    # Obres clàssiques específiques
+    "odissea": "an ancient Greek trireme ship with single sail on waves",
+    "ulisses": "an ancient Greek trireme ship with single sail on waves",
+    "odisseu": "an ancient Greek trireme ship with single sail on waves",
+    "ítaca": "an ancient Greek trireme ship with single sail on waves",
+    "eneida": "the wooden Trojan horse silhouette",
+    "enees": "the wooden Trojan horse silhouette",
+    "troia": "the wooden Trojan horse silhouette",
 }
 
 
