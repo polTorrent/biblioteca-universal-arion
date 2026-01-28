@@ -1542,43 +1542,55 @@ blockquote cite::before {
 }
 
 /* Botó favorit (cor) */
+.btn-favorit,
 .btn-favorite {
     background: rgba(255, 255, 255, 0.95);
-    color: #e74c3c;
+    color: #333;
     box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    font-size: 1.1rem;
 }
 
+.btn-favorit:hover,
 .btn-favorite:hover {
-    background: #e74c3c;
-    color: white;
+    background: #fff0f0;
+    transform: scale(1.15);
 }
 
+.btn-favorit.active,
 .btn-favorite.is-favorite {
-    background: #e74c3c;
-    color: white;
+    background: #fff0f0;
+    color: #e74c3c;
     opacity: 1;
     transform: scale(1);
 }
 
 /* Botó favorit centrat sota la portada */
+.btn-favorit-below,
 .btn-favorite-below {
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
     margin: var(--spacing-sm) auto 0;
-    background: transparent;
-    border: none;
-    font-size: 1.4rem;
-    color: #ccc;
+    background: var(--color-surface, #f8f8f8);
+    border: 1px solid var(--color-border, #ddd);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--color-text, #333);
     cursor: pointer;
     transition: all 0.2s ease;
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 1rem;
 }
 
+.btn-favorit-below:hover,
 .btn-favorite-below:hover {
-    color: #e74c3c;
-    transform: scale(1.2);
+    background: #fff0f0;
+    border-color: #e74c3c;
 }
 
+.btn-favorit-below.active,
 .btn-favorite-below.is-favorite {
+    background: #fff0f0;
+    border-color: #e74c3c;
     color: #e74c3c;
 }
 

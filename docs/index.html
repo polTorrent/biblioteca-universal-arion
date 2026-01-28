@@ -132,7 +132,13 @@
                             
                             <span class="badge badge-revisat">revisat</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="garxin-quatre-dies"
+                                    data-obra-titol="Quatre dies"
+                                    data-obra-autor="Vsévolod Garxin"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Quatre dies</h3>
@@ -152,7 +158,13 @@
                             
                             <span class="badge badge-revisat">revisat</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="heraclit-fragments"
+                                    data-obra-titol="Fragments"
+                                    data-obra-autor="Heràclit d'Efes"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Fragments</h3>
@@ -172,7 +184,13 @@
                             
                             <span class="badge badge-esborrany">esborrany</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="akutagawa-jigokuhen"
+                                    data-obra-titol="El biombo de l'infern"
+                                    data-obra-autor="Akutagawa Ryūnosuke"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">El biombo de l'infern</h3>
@@ -192,7 +210,13 @@
                             
                             <span class="badge badge-revisat">revisat</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="sanscrit-sutra-cor"
+                                    data-obra-titol="El Sutra del Cor de la Perfecció de la Saviesa"
+                                    data-obra-autor="Anònim (tradició budista)"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">El Sutra del Cor de la Perfecció de la Saviesa</h3>
@@ -212,7 +236,13 @@
                             
                             <span class="badge badge-revisat">revisat</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="epictetus-enchiridion"
+                                    data-obra-titol="Enchiridion"
+                                    data-obra-autor="Epictetus"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Enchiridion</h3>
@@ -232,7 +262,13 @@
                             
                             <span class="badge badge-revisat">revisat</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="seneca-epistola-1"
+                                    data-obra-titol="Carta 1: Sobre el valor del temps"
+                                    data-obra-autor="Sèneca"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Carta 1: Sobre el valor del temps</h3>
@@ -252,7 +288,13 @@
                             
                             <span class="badge badge-esborrany">esborrany</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="schopenhauer-vierfache-wurzel"
+                                    data-obra-titol="Sobre la quàdruple arrel del principi de raó suficient"
+                                    data-obra-autor="Arthur Schopenhauer"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Sobre la quàdruple arrel del principi de raó suficient</h3>
@@ -272,7 +314,13 @@
                             
                             <span class="badge badge-esborrany">esborrany</span>
                             
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="plato-criton"
+                                    data-obra-titol="Critó: Sobre el deure"
+                                    data-obra-autor="Plató"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Critó: Sobre el deure</h3>
@@ -562,6 +610,30 @@
         </div>
     </div>
 </section>
+
+<!-- Script per inicialitzar favorits -->
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    // Esperar que ArionFavorits estigui llest
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    if (!window.ArionFavorits || !window.ArionAuth?.isLoggedIn()) return;
+
+    // Obtenir tots els favorits
+    const favorits = await window.ArionFavorits.getAll();
+    const favoritIds = favorits.map(f => f.obra_id);
+
+    // Actualitzar botons
+    document.querySelectorAll('.btn-favorit').forEach(btn => {
+        const obraId = btn.dataset.obraId;
+        if (favoritIds.includes(obraId)) {
+            btn.classList.add('active');
+            const icon = btn.querySelector('.favorit-icon');
+            if (icon) icon.textContent = '❤️';
+        }
+    });
+});
+</script>
 
     </main>
 

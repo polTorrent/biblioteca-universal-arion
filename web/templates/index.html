@@ -64,7 +64,13 @@
                             {% if obra.estat %}
                             <span class="badge badge-{{ obra.estat }}">{{ obra.estat }}</span>
                             {% endif %}
-                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="{{ obra.slug }}"
+                                    data-obra-titol="{{ obra.titol }}"
+                                    data-obra-autor="{{ obra.autor }}"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">{{ obra.titol }}</h3>
@@ -363,4 +369,28 @@
         </div>
     </div>
 </section>
+
+<!-- Script per inicialitzar favorits -->
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    // Esperar que ArionFavorits estigui llest
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    if (!window.ArionFavorits || !window.ArionAuth?.isLoggedIn()) return;
+
+    // Obtenir tots els favorits
+    const favorits = await window.ArionFavorits.getAll();
+    const favoritIds = favorits.map(f => f.obra_id);
+
+    // Actualitzar botons
+    document.querySelectorAll('.btn-favorit').forEach(btn => {
+        const obraId = btn.dataset.obraId;
+        if (favoritIds.includes(obraId)) {
+            btn.classList.add('active');
+            const icon = btn.querySelector('.favorit-icon');
+            if (icon) icon.textContent = '❤️';
+        }
+    });
+});
+</script>
 {% endblock %}
