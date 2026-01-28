@@ -52,7 +52,26 @@
     // ─────────────────────────────────────────────────────────────────
 
     async function loadProfileData() {
+        // Esperar que el perfil estigui carregat
+        let attempts = 0;
+        while (!window.ArionAuth.getProfile() && attempts < 20) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+            attempts++;
+        }
+
         currentProfile = window.ArionAuth.getProfile();
+
+        // Si encara no hi ha perfil, intentar carregar-lo directament
+        if (!currentProfile && window.ArionSupabase?.isAvailable()) {
+            const user = window.ArionAuth.getCurrentUser();
+            if (user) {
+                const { data } = await window.ArionSupabase.query('profiles', {
+                    eq: { id: user.id },
+                    single: true
+                });
+                currentProfile = data;
+            }
+        }
 
         if (window.ArionSupabase?.isAvailable()) {
             const user = window.ArionAuth.getCurrentUser();

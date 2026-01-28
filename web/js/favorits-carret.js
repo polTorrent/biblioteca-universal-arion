@@ -39,7 +39,6 @@
                     return this._cache;
                 }
             }
-
             // Fallback localStorage
             return this._getFromLocalStorage();
         },
@@ -57,7 +56,7 @@
          */
         async add(obra) {
             if (!window.ArionAuth?.isLoggedIn()) {
-                window.ArionMecenatge?.Toast.show('Has d\'iniciar sessió per guardar favorits', 'info');
+                alert('Has d\'iniciar sessió per guardar favorits');
                 return { error: { message: 'No autenticat' } };
             }
 
@@ -643,6 +642,8 @@
             const favBtn = e.target.closest('.btn-favorit');
             if (favBtn) {
                 e.preventDefault();
+                e.stopPropagation(); // Evitar que el clic arribi al link pare
+
                 const obra = {
                     id: favBtn.dataset.obraId,
                     titol: favBtn.dataset.obraTitol,
@@ -832,6 +833,7 @@
 
     window.ArionFavorits = FavoritsManager;
     window.ArionCarret = CarretManager;
+    window.ArionFavoritsCarretUI = FavoritsCarretUI;
     window.ArionFavoritsCarretUI = FavoritsCarretUI;
 
 })();
