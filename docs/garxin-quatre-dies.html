@@ -31,8 +31,41 @@
     <link rel="stylesheet" href="css/styles.css">
 
     
-<!-- Estils per índex i navegació de capítols -->
+<!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó favorit */
+    .btn-favorit-below {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: var(--color-surface, #f8f8f8);
+        border: 1px solid var(--color-border, #ddd);
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--color-text, #333);
+        transition: all 0.2s ease;
+    }
+    .btn-favorit-below:hover {
+        background: #fff0f0;
+        border-color: #e74c3c;
+    }
+    .btn-favorit-below.active {
+        background: #fff0f0;
+        border-color: #e74c3c;
+        color: #e74c3c;
+    }
+    .btn-favorit-below.active .favorit-text {
+        display: none;
+    }
+    .btn-favorit-below.active::after {
+        content: 'Als teus favorits';
+    }
+    .favorit-icon {
+        font-size: 1.2rem;
+    }
     /* Separador en controls */
     .view-separator {
         color: var(--text-muted, #999);
@@ -293,7 +326,14 @@
                     <img src="assets/portades/garxin-quatre-dies-portada.png"
                          alt="Portada de Quatre dies"
                          style="max-width: 200px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-                    <button class="btn-favorite-below" title="Afegir a favorits" onclick="this.classList.toggle('is-favorite');">♡</button>
+                    <button class="btn-favorit btn-favorit-below"
+                            data-obra-id="garxin-quatre-dies"
+                            data-obra-titol="Quatre dies"
+                            data-obra-autor="Vsévolod Garxin"
+                            title="Afegir a favorits">
+                        <span class="favorit-icon">🤍</span>
+                        <span class="favorit-text">Afegir a favorits</span>
+                    </button>
                 </div>
                 
 
@@ -1367,6 +1407,23 @@ document.addEventListener('DOMContentLoaded', function() {
     // Inicialitzar
     updateNavigation();
 });
+
+// Inicialitzar estat del botó de favorits
+document.addEventListener('DOMContentLoaded', async function() {
+    const favBtn = document.querySelector('.btn-favorit-below');
+    if (!favBtn || !window.ArionFavorits) return;
+
+    // Esperar que l'auth estigui llest
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const obraId = favBtn.dataset.obraId;
+    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
+
+    if (isFavorit) {
+        favBtn.classList.add('active');
+        favBtn.querySelector('.favorit-icon').textContent = '❤️';
+    }
+});
 </script>
 
     </main>
@@ -1433,6 +1490,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="js/supabase-client.js"></script>
     <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
     <script src="js/app.js"></script>
     
 </body>
