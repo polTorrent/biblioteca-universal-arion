@@ -1,5 +1,10 @@
-"""Agent Corrector IEC per a correcció ortogràfica i gramatical."""
+"""Agent Corrector IEC per a correcció ortogràfica i gramatical.
 
+DEPRECATED: Aquest agent està deprecat. Utilitzeu PerfeccionamentAgent en el seu lloc.
+El PerfeccionamentAgent ofereix una fusió holística de naturalització, correcció i estil.
+"""
+
+import warnings
 from typing import Literal, TYPE_CHECKING
 
 from pydantic import BaseModel, Field
@@ -31,6 +36,10 @@ class CorrectorAgent(BaseAgent):
 
     Especialitzat en correcció ortogràfica, gramatical i de puntuació
     seguint les normes de l'Institut d'Estudis Catalans.
+
+    .. deprecated::
+        Utilitzeu :class:`PerfeccionamentAgent` en el seu lloc.
+        Aquest agent es manté per compatibilitat amb pipelines antics.
     """
 
     agent_name: str = "Corrector"
@@ -40,6 +49,11 @@ class CorrectorAgent(BaseAgent):
         config: AgentConfig | None = None,
         logger: "AgentLogger | None" = None,
     ) -> None:
+        warnings.warn(
+            "CorrectorAgent està deprecat. Utilitzeu PerfeccionamentAgent en el seu lloc.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
         super().__init__(config, logger)
 
     @property

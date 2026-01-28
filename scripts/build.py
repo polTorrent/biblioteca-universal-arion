@@ -295,16 +295,10 @@ class BuildSystem:
             print(f"   ⚠️  Directori obres/ no existeix")
             return
 
-        # Trobar totes les obres (estructura: obres/autor/obra/)
-        for autor_dir in self.obres_dir.iterdir():
-            if not autor_dir.is_dir():
-                continue
-
-            for obra_dir in autor_dir.iterdir():
-                if not obra_dir.is_dir():
-                    continue
-
-                self.build_obra(obra_dir)
+        # Trobar totes les obres buscant metadata.yml recursivament
+        for metadata_file in self.obres_dir.rglob('metadata.yml'):
+            obra_dir = metadata_file.parent
+            self.build_obra(obra_dir)
 
     def build_obra(self, obra_path: Path):
         """Construeix una obra individual."""
@@ -330,6 +324,23 @@ class BuildSystem:
 
         # Preparar dades de l'obra
         obra_data = loader.metadata.get('obra', {})
+
+        # Buscar portada (diferents patrons de nom)
+        portada_url = None
+        # Extreure nom autor i obra per a patrons alternatius
+        autor_nom = obra_data.get('autor', '').split()[0].lower() if obra_data.get('autor') else obra_path.parent.name
+        obra_nom = obra_path.name
+        portada_patterns = [
+            f"assets/portades/{slug}-portada.png",
+            f"assets/portades/{obra_path.parent.name}-{obra_path.name}-portada.png",
+            f"assets/portades/{obra_path.name}-portada.png",
+            f"assets/portades/{autor_nom}-{obra_nom}-portada.png",
+        ]
+        for pattern in portada_patterns:
+            if (self.docs_dir / pattern).exists():
+                portada_url = pattern
+                break
+
         obra = {
             'slug': slug,
             'titol': obra_data.get('titol', obra_path.name.title()),
@@ -341,8 +352,10 @@ class BuildSystem:
             'any_original': obra_data.get('any_original'),
             'any_traduccio': obra_data.get('any_traduccio', datetime.now().year),
             'descripcio': obra_data.get('descripcio'),
-            'estat': loader.metadata.get('revisio', {}).get('estat', 'esborrany'),
-            'qualitat': loader.metadata.get('revisio', {}).get('qualitat'),
+            'estat': (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('estat', 'esborrany'),
+            'qualitat': (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('qualitat'),
+            'data_revisio': (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('data_revisio') or (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('data', '1900-01-01'),
+            'portada_url': portada_url,
         }
 
         # Renderitzar template
@@ -370,11 +383,14 @@ class BuildSystem:
         print()
         print("📑 Construint índex...")
 
+        # Ordenar obres per data de revisió (més recent primer)
+        self.obres.sort(key=lambda o: o.get('data_revisio', '1900-01-01'), reverse=True)
+
         # Estadístiques
         stats = {
             'total_obres': len(self.obres),
             'total_autors': len(set(o['autor'] for o in self.obres)),
-            'total_paraules': sum(len(o.get('descripcio', '').split()) * 100 for o in self.obres),
+            'total_paraules': sum(len((o.get('descripcio') or '').split()) * 100 for o in self.obres),
         }
 
         # Renderitzar

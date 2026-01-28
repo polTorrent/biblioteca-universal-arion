@@ -77,11 +77,17 @@ from agents import (
     StyleRequest,
     AgentPortadista,
     PortadistaConfig,
+    # Nous agents
+    PerfeccionamentAgent,
+    PerfeccionamentRequest,
+    AnotadorCriticAgent,
+    AnotacioRequest,
 )
 from agents.agents_retratista import AgentRetratista, generar_retrat_autor
 from utils.logger import AgentLogger, VerbosityLevel, get_logger
 from utils.dashboard import Dashboard, ProgressTracker, print_agent_activity
 from utils.translation_logger import TranslationLogger, LogLevel
+from utils.checkpointer import Checkpointer
 
 
 class PipelineStage(str, Enum):
@@ -93,8 +99,10 @@ class PipelineStage(str, Enum):
     TRANSLATING = "traduint"
     REVIEWING = "revisant"
     REFINING = "refinant"
-    CORRECTING = "corregint"
-    STYLING = "estilitzant"
+    CORRECTING = "corregint"  # DEPRECATED - usar PERFECTING
+    STYLING = "estilitzant"  # DEPRECATED - usar PERFECTING
+    PERFECTING = "perfeccionant"  # NOU: fusió de correcció + estil
+    ANNOTATING = "anotant"  # NOU: anotació crítica
     MERGING = "fusionant"
     COVER = "portadant"
     COMPLETED = "completat"
@@ -129,9 +137,23 @@ class PipelineConfig(BaseModel):
 
     # Configuració d'agents opcionals
     enable_glossary: bool = Field(default=True)
-    enable_correction: bool = Field(default=True)
+
+    # Perfeccionament (NOU - reemplaça correction + styling)
+    enable_perfeccionament: bool = Field(default=True)
+    perfeccionament_level: Literal["lleuger", "normal", "intensiu"] = Field(default="normal")
+    max_perfeccionament_iterations: int = Field(default=3, ge=1, le=5)
+
+    # Anotació crítica (NOU)
+    enable_critical_notes: bool = Field(default=False)
+    notes_density: Literal["minima", "normal", "exhaustiva"] = Field(default="normal")
+
+    # Checkpointing (NOU)
+    enable_checkpointing: bool = Field(default=True)
+
+    # DEPRECATED: usar enable_perfeccionament en lloc d'aquests
+    enable_correction: bool = Field(default=False)
     correction_level: str = Field(default="normal")  # relaxat, normal, estricte
-    enable_styling: bool = Field(default=True)
+    enable_styling: bool = Field(default=False)
     style_register: str = Field(default="literari")  # acadèmic, divulgatiu, literari
 
     # Configuració de portada
@@ -261,10 +283,23 @@ class TranslationPipeline:
         self.glossarist = GlossaristaAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_glossary else None
         self.translator = TranslatorAgent(config=self.config.agent_config, logger=self.logger)
         self.reviewer = ReviewerAgent(config=self.config.agent_config, logger=self.logger)
-        self.corrector = CorrectorAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_correction else None
-        self.estil_agent = EstilAgent(config=self.config.agent_config, registre=self.config.style_register) if self.config.enable_styling else None
+
+        # Nous agents (Perfeccionament i Anotador)
+        self.perfeccionament_agent = PerfeccionamentAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_perfeccionament else None
+        self.anotador_agent = AnotadorCriticAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_critical_notes else None
+
+        # Agents deprecats (mantenir per compatibilitat)
+        import warnings
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", DeprecationWarning)
+            self.corrector = CorrectorAgent(config=self.config.agent_config, logger=self.logger) if self.config.enable_correction else None
+            self.estil_agent = EstilAgent(config=self.config.agent_config, registre=self.config.style_register) if self.config.enable_styling else None
+
         self.portadista = AgentPortadista(config=self.config.agent_config) if self.config.enable_cover else None
         self.retratista = AgentRetratista() if self.config.enable_author_portrait else None
+
+        # Checkpointer
+        self.checkpointer = Checkpointer(checkpoint_dir=self.config.cache_dir / "checkpoints") if self.config.enable_checkpointing else None
 
         self.config.output_dir.mkdir(parents=True, exist_ok=True)
         if self.config.enable_cache:
@@ -482,7 +517,113 @@ class TranslationPipeline:
                     )
                     progress.remove_task(task)
 
-            # Etapa 3: Correcció ortogràfica/gramatical (si està habilitada)
+            # Etapa 3: Perfeccionament holístic (NOU - reemplaça correcció + estil)
+            if self.config.enable_perfeccionament and self.perfeccionament_agent and current_translation:
+                task = progress.add_task("[green]Perfeccionant traducció...", total=None)
+
+                try:
+                    perfeccionament_request = PerfeccionamentRequest(
+                        text=current_translation,
+                        text_original=text,
+                        llengua_origen=source_language,
+                        genere="narrativa",  # Podria inferir-se del contingut
+                        nivell=self.config.perfeccionament_level,
+                    )
+                    perfeccionament_response = self.perfeccionament_agent.perfect(perfeccionament_request)
+
+                    # Actualitzar estadístiques
+                    tokens = perfeccionament_response.usage.get("input_tokens", 0) + perfeccionament_response.usage.get("output_tokens", 0)
+                    self._update_stats(tokens, perfeccionament_response.cost_eur)
+
+                    # Parsejar resposta JSON
+                    perfeccionament_data = parse_json_response(perfeccionament_response.content)
+                    if perfeccionament_data:
+                        perfected_text = perfeccionament_data.get("text_perfeccionat")
+                        canvis = perfeccionament_data.get("canvis", [])
+                        qualitat_sortida = perfeccionament_data.get("qualitat_sortida")
+
+                        if perfected_text:
+                            current_translation = perfected_text
+
+                            result.stages.append(
+                                StageResult(
+                                    stage=PipelineStage.PERFECTING,
+                                    content=perfected_text,
+                                    metadata={
+                                        "canvis_count": len(canvis),
+                                        "qualitat_sortida": qualitat_sortida,
+                                        "resum": perfeccionament_data.get("resum", ""),
+                                    },
+                                )
+                            )
+
+                            if canvis:
+                                self.logger.log_info(
+                                    "Perfeccionament",
+                                    f"Aplicats {len(canvis)} canvis, qualitat: {qualitat_sortida}/10"
+                                )
+                    else:
+                        self.logger.log_warning("Perfeccionament", "No s'ha pogut parsejar la resposta")
+
+                except Exception as e:
+                    self.logger.log_error("Perfeccionament", e)
+
+                progress.remove_task(task)
+
+            # Etapa 3b: Anotació crítica (NOU - opcional)
+            if self.config.enable_critical_notes and self.anotador_agent and current_translation:
+                task = progress.add_task("[cyan]Afegint notes crítiques...", total=None)
+
+                try:
+                    anotacio_request = AnotacioRequest(
+                        text=current_translation,
+                        text_original=text,
+                        llengua_origen=source_language,
+                        genere="narrativa",
+                        densitat_notes=self.config.notes_density,
+                    )
+                    anotacio_response = self.anotador_agent.annotate(anotacio_request)
+
+                    # Actualitzar estadístiques
+                    tokens = anotacio_response.usage.get("input_tokens", 0) + anotacio_response.usage.get("output_tokens", 0)
+                    self._update_stats(tokens, anotacio_response.cost_eur)
+
+                    # Parsejar resposta JSON
+                    anotacio_data = parse_json_response(anotacio_response.content)
+                    if anotacio_data:
+                        text_anotat = anotacio_data.get("text_anotat")
+                        notes = anotacio_data.get("notes", [])
+
+                        if text_anotat:
+                            current_translation = text_anotat
+
+                            result.stages.append(
+                                StageResult(
+                                    stage=PipelineStage.ANNOTATING,
+                                    content=text_anotat,
+                                    metadata={
+                                        "notes_count": len(notes),
+                                        "notes": notes[:5],  # Primeres 5 notes
+                                        "estadistiques": anotacio_data.get("estadistiques", {}),
+                                    },
+                                )
+                            )
+
+                            if notes:
+                                self.logger.log_info(
+                                    "AnotadorCritic",
+                                    f"Afegides {len(notes)} notes crítiques"
+                                )
+                    else:
+                        self.logger.log_warning("AnotadorCritic", "No s'ha pogut parsejar la resposta")
+
+                except Exception as e:
+                    self.logger.log_error("AnotadorCritic", e)
+
+                progress.remove_task(task)
+
+            # Etapa 4: Correcció ortogràfica/gramatical (DEPRECATED - usar Perfeccionament)
+            # Mantingut per compatibilitat amb pipelines antics
             if self.config.enable_correction and self.corrector and current_translation:
                 task = progress.add_task("[green]Corregint ortografia i gramàtica...", total=None)
 
@@ -530,7 +671,8 @@ class TranslationPipeline:
 
                 progress.remove_task(task)
 
-            # Etapa 4: Estilització (si està habilitada)
+            # Etapa 5: Estilització (DEPRECATED - usar Perfeccionament)
+            # Mantingut per compatibilitat amb pipelines antics
             if self.config.enable_styling and self.estil_agent and current_translation:
                 task = progress.add_task("[blue]Polint estil literari...", total=None)
 
