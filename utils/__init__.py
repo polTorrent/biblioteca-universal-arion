@@ -22,6 +22,11 @@ from utils.translation_logger import (
     LogColors,
     LiveDashboard,
 )
+from utils.checkpointer import (
+    Checkpointer,
+    ChunkCheckpoint,
+    PipelineCheckpoint,
+)
 
 __all__ = [
     # Logger
@@ -43,4 +48,8 @@ __all__ = [
     "LogLevel",
     "LogColors",
     "LiveDashboard",
+    # Checkpointer
+    "Checkpointer",
+    "ChunkCheckpoint",
+    "PipelineCheckpoint",
 ]

@@ -1,5 +1,10 @@
-"""Agent d'Estil Literari per millorar la fluïdesa i naturalitat del català."""
+"""Agent d'Estil Literari per millorar la fluïdesa i naturalitat del català.
 
+DEPRECATED: Aquest agent està deprecat. Utilitzeu PerfeccionamentAgent en el seu lloc.
+El PerfeccionamentAgent ofereix una fusió holística de naturalització, correcció i estil.
+"""
+
+import warnings
 from typing import Literal
 
 from pydantic import BaseModel
@@ -30,6 +35,10 @@ class EstilAgent(BaseAgent):
 
     Millora la fluïdesa i naturalitat del català mentre
     preserva la veu i el to de l'autor original.
+
+    .. deprecated::
+        Utilitzeu :class:`PerfeccionamentAgent` en el seu lloc.
+        Aquest agent es manté per compatibilitat amb pipelines antics.
     """
 
     def __init__(
@@ -37,6 +46,11 @@ class EstilAgent(BaseAgent):
         config: AgentConfig | None = None,
         registre: Literal["acadèmic", "divulgatiu", "literari"] = "literari",
     ) -> None:
+        warnings.warn(
+            "EstilAgent està deprecat. Utilitzeu PerfeccionamentAgent en el seu lloc.",
+            DeprecationWarning,
+            stacklevel=2,
+        )
         super().__init__(config)
         self.registre = registre
 

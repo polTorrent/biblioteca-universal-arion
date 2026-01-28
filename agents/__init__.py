@@ -15,7 +15,7 @@ from agents.reviewer_agent import (
     ReviewRequest,
 )
 from agents.translator_agent import TranslationRequest, TranslatorAgent, SupportedLanguage
-from agents.corrector import CorrectorAgent, CorrectionRequest
+from agents.corrector import CorrectorAgent, CorrectionRequest  # DEPRECATED
 from agents.glossarista import (
     GlossaristaAgent,
     GlossaryRequest,
@@ -50,56 +50,84 @@ from agents.web_publisher import (
     ObraMetadata,
     publicar_biblioteca,
 )
-from agents.agent_estil import (
+from agents.agent_estil import (  # DEPRECATED
     EstilAgent,
     StyleRequest,
     StyleNote,
 )
+# Nous agents
+from agents.perfeccionament_agent import (
+    PerfeccionamentAgent,
+    PerfeccionamentRequest,
+)
+from agents.anotador_critic import (
+    AnotadorCriticAgent,
+    AnotacioRequest,
+    NotaCritica,
+)
 
 __all__ = [
+    # Base
     "BaseAgent",
     "AgentConfig",
     "AgentResponse",
+    # Chunker
     "ChunkerAgent",
     "ChunkingRequest",
     "ChunkingResult",
     "ChunkingStrategy",
     "ChunkMetadata",
     "TextChunk",
+    # Translator
     "TranslatorAgent",
     "TranslationRequest",
     "SupportedLanguage",
+    # Reviewer
     "ReviewerAgent",
     "ReviewRequest",
     "ReviewIssue",
     "IssueSeverity",
+    # Perfeccionament (NOU - reemplaça Corrector i Estil)
+    "PerfeccionamentAgent",
+    "PerfeccionamentRequest",
+    # Anotador Crític (NOU)
+    "AnotadorCriticAgent",
+    "AnotacioRequest",
+    "NotaCritica",
+    # Corrector (DEPRECATED)
     "CorrectorAgent",
     "CorrectionRequest",
+    # Estil (DEPRECATED)
+    "EstilAgent",
+    "StyleRequest",
+    "StyleNote",
+    # Glossarista
     "GlossaristaAgent",
     "GlossaryRequest",
     "GlossaryEntryModel",
     "OnomasticEntry",
     "DEFAULT_CATEGORIES",
+    # Formatter
     "FormatterAgent",
     "FormattingRequest",
     "WorkMetadata",
     "Section",
     "FormatterGlossaryEntry",
+    # Venice Client
     "VeniceClient",
     "VeniceError",
     "VeniceAPIKeyError",
     "VeniceRequestError",
     "ImageGenerationRequest",
     "generar_portada_llibre",
+    # Portadista
     "AgentPortadista",
     "PortadistaConfig",
     "PALETES",
     "generar_portada_obra",
+    # Web Publisher
     "WebPublisher",
     "WebPublisherConfig",
     "ObraMetadata",
     "publicar_biblioteca",
-    "EstilAgent",
-    "StyleRequest",
-    "StyleNote",
 ]
