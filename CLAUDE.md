@@ -67,8 +67,41 @@ obres/[categoria]/[autor]/[obra]/
 ├── metadata.yml
 ├── original.md
 ├── traduccio.md
-└── glossari.yml
+├── glossari.yml
+└── portada.png       # IMPORTANT: Cada obra ha de tenir portada!
 ```
+
+## Sistema de Portades (IMPORTANT)
+
+**Cada obra NECESSITA una portada.** El build genera placeholders automàticament, però són temporals.
+
+### Fitxers de portada
+- Nom: `portada.png` (o `.jpg`)
+- Ubicació: directori de l'obra (`obres/autor/obra/portada.png`)
+- Format: PNG/JPG, proporció 2:3 (ex: 400x600px)
+
+### Generar portades
+```bash
+# Veure obres sense portada real
+python scripts/generar_portades.py --list
+
+# Generar portades amb IA (requereix Venice.ai)
+python scripts/generar_portades.py
+
+# Regenerar totes
+python scripts/generar_portades.py --all
+```
+
+### Build i portades
+El `build.py` fa:
+1. Copia `portada.png` de cada obra a `docs/assets/portades/{autor}-{obra}-portada.png`
+2. Si no existeix portada, **genera un placeholder automàtic**
+3. Mai desapareixeran portades - sempre hi haurà almenys un placeholder
+
+### Agent Portadista
+- Ubicació: `agents/portadista.py`
+- Genera portades minimalistes amb Venice.ai
+- Paletes per gènere: FIL, POE, TEA, NOV, SAG, ORI, EPO
 
 ## Notes
 [T] Traducció | [L] Literària | [F] Filosòfica | [H] Històrica | [R] Referència | [C] Cultural | [B] Biogràfica

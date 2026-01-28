@@ -1,0 +1,15 @@
+============================================================
+RESUM DE SESSIÓ: 20260127_085705
+============================================================
+
+Temps total: 91.4s
+Crides totals: 4
+Tokens processats: 21,556
+Cost total: €0.1312
+
+Crides per agent:
+  - Traductor: 1 crides, 3,574 tokens, €0.0248
+  - Revisor: 2 crides, 10,539 tokens, €0.0730
+  - Perfeccionament: 1 crides, 7,443 tokens, €0.0334
+
+============================================================

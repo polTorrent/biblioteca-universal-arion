@@ -160,6 +160,7 @@ class PipelineConfig(BaseModel):
     enable_cover: bool = Field(default=True)
     cover_genere: str = Field(default="NOV")  # FIL, POE, TEA, NOV, SAG, ORI, EPO
     cover_output_dir: Path | None = Field(default=None)
+    obra_dir: Path | None = Field(default=None)  # Directori de l'obra per copiar portada
 
     # Configuració de retrat d'autor
     enable_author_portrait: bool = Field(default=True)
@@ -1632,11 +1633,63 @@ class TranslationPipeline:
             cover_path.write_bytes(cover_bytes)
 
             self.logger.log_info("Portadista", f"Portada generada: {cover_path}")
+
+            # IMPORTANT: Copiar portada al directori de l'obra si existeix
+            if self.config.obra_dir:
+                self._copy_cover_to_obra(cover_path, self.config.obra_dir)
+
             return cover_path
 
         except Exception as e:
             self.logger.log_error("Portadista", e)
             return None
+
+    def _copy_cover_to_obra(self, cover_path: Path, obra_dir: Path) -> bool:
+        """Copia la portada al directori de l'obra de forma segura.
+
+        Utilitza escriptura atòmica per evitar conflictes amb processos paral·lels.
+
+        Args:
+            cover_path: Path de la portada generada.
+            obra_dir: Directori de l'obra (obres/autor/obra/).
+
+        Returns:
+            True si s'ha copiat correctament.
+        """
+        import shutil
+        import tempfile
+
+        try:
+            obra_dir = Path(obra_dir)
+            if not obra_dir.exists():
+                self.logger.log_warning("Portadista", f"Directori d'obra no existeix: {obra_dir}")
+                return False
+
+            dest_path = obra_dir / "portada.png"
+
+            # Escriptura atòmica: escriure a fitxer temporal i després moure
+            # Això evita conflictes amb processos paral·lels
+            with tempfile.NamedTemporaryFile(
+                mode='wb',
+                suffix='.png',
+                dir=obra_dir,
+                delete=False
+            ) as tmp_file:
+                tmp_path = Path(tmp_file.name)
+                shutil.copy2(cover_path, tmp_path)
+
+            # Moure atòmicament (rename és atòmic en el mateix filesystem)
+            tmp_path.replace(dest_path)
+
+            self.logger.log_info("Portadista", f"Portada copiada a: {dest_path}")
+            return True
+
+        except Exception as e:
+            self.logger.log_error("Portadista", f"Error copiant portada: {e}")
+            # Netejar fitxer temporal si existeix
+            if 'tmp_path' in locals() and tmp_path.exists():
+                tmp_path.unlink()
+            return False
 
     def _generate_author_portrait(
         self,
