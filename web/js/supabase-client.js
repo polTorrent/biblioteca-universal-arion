@@ -15,10 +15,10 @@
 
     const SUPABASE_CONFIG = {
         // Substitueix per la teva URL de Supabase (Project Settings > API > URL)
-        url: https://rhiulagwcchtaizlckam.supabase.co,
+        url: 'https://rhiulagwcchtaizlckam.supabase.co',
 
         // Substitueix per la teva anon key (Project Settings > API > anon public)
-        anonKey: sb_publishable_IfAT9TMHv9vzoUs1oADVxA_C4h0P4A-,
+        anonKey: 'sb_publishable_IfAT9TMHv9vzoUs1oADVxA_C4h0P4A-',
 
         // Opcions del client
         options: {
