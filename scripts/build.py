@@ -251,6 +251,9 @@ class BuildSystem:
         # Construir índex
         self.build_index()
 
+        # Construir pàgines de mecenatge
+        self.build_mecenatge()
+
         print()
         print("═" * 60)
         print(f"✅ Construcció completada!")
@@ -273,16 +276,84 @@ class BuildSystem:
         # CSS
         css_dest = self.docs_dir / 'css'
         css_dest.mkdir(exist_ok=True)
-        if (self.css_dir / 'styles.css').exists():
-            shutil.copy(self.css_dir / 'styles.css', css_dest / 'styles.css')
-            print("   ✅ CSS copiat")
+
+        # Fitxers CSS a copiar
+        css_files = [
+            'styles.css',
+            'mecenatge.css',
+            'perfil.css',
+            'usuari-public.css',
+            'favorits-carret.css'
+        ]
+
+        for css_file in css_files:
+            if (self.css_dir / css_file).exists():
+                shutil.copy(self.css_dir / css_file, css_dest / css_file)
+                print(f"   ✅ {css_file} copiat")
 
         # JS
         js_dest = self.docs_dir / 'js'
         js_dest.mkdir(exist_ok=True)
-        if (self.js_dir / 'app.js').exists():
-            shutil.copy(self.js_dir / 'app.js', js_dest / 'app.js')
-            print("   ✅ JS copiat")
+
+        # Fitxers JS a copiar
+        js_files = [
+            'app.js',
+            'mecenatge.js',
+            'supabase-client.js',
+            'auth-manager.js',
+            'gamification.js',
+            'profile-manager.js',
+            'usuari-public.js',
+            'favorits-carret.js'
+        ]
+
+        for js_file in js_files:
+            if (self.js_dir / js_file).exists():
+                shutil.copy(self.js_dir / js_file, js_dest / js_file)
+                print(f"   ✅ {js_file} copiat")
+
+        # Copiar dades JSON
+        data_src = self.root / 'data'
+        data_dest = self.docs_dir / 'data'
+        data_dest.mkdir(exist_ok=True)
+        for json_file in data_src.glob('*.json'):
+            shutil.copy(json_file, data_dest / json_file.name)
+        print("   ✅ Dades JSON copiades")
+
+        # Copiar assets (logo, etc.)
+        assets_src = self.root / 'assets'
+        assets_dest = self.docs_dir / 'assets'
+        if assets_src.exists():
+            if assets_dest.exists():
+                shutil.rmtree(assets_dest)
+            shutil.copytree(assets_src, assets_dest)
+            print("   ✅ Assets copiats")
+
+        # Copiar portades des de web/assets/portades/ (ÚNICA FONT)
+        portades_src = self.root / 'web' / 'assets' / 'portades'
+        portades_dest = self.docs_dir / 'assets' / 'portades'
+        portades_dest.mkdir(parents=True, exist_ok=True)
+
+        if portades_src.exists():
+            count = 0
+            for portada in portades_src.glob('*.png'):
+                shutil.copy(portada, portades_dest / portada.name)
+                count += 1
+            for portada in portades_src.glob('*.jpg'):
+                shutil.copy(portada, portades_dest / portada.name)
+                count += 1
+            print(f"   ✅ {count} portades copiades")
+
+        # Copiar retrats d'autors
+        autors_dest = self.docs_dir / 'assets' / 'autors'
+        autors_dest.mkdir(parents=True, exist_ok=True)
+        for obra_dir in self.obres_dir.rglob('*'):
+            if obra_dir.is_dir():
+                for retrat in obra_dir.glob('retrat_*.png'):
+                    shutil.copy(retrat, autors_dest / retrat.name)
+                for retrat in obra_dir.glob('retrat_*.jpg'):
+                    shutil.copy(retrat, autors_dest / retrat.name)
+        print("   ✅ Retrats d'autors copiats")
 
         print()
 
@@ -408,6 +479,87 @@ class BuildSystem:
         output_file.write_text(html, encoding='utf-8')
 
         print("   ✅ Índex generat")
+
+    def build_mecenatge(self):
+        """Construeix les pàgines de mecenatge."""
+        print()
+        print("💝 Construint pàgines de mecenatge...")
+
+        # Pàgines simples
+        simple_pages = ['mecenatge', 'login', 'registre', 'pagament', 'proposta-traduccio', 'perfil', 'usuari']
+
+        for page in simple_pages:
+            template_file = f"{page}.html"
+            if not (self.templates_dir / template_file).exists():
+                print(f"   ⚠️  Template {template_file} no trobat")
+                continue
+
+            template = self.env.get_template(template_file)
+            html = template.render(
+                base_url='',
+                site_url='https://biblioteca-arion.cat',
+            )
+
+            output_file = self.docs_dir / f"{page}.html"
+            output_file.write_text(html, encoding='utf-8')
+            print(f"   ✅ {page}.html generat")
+
+        # Generar fitxes de micromecenatge per obres en crowdfunding
+        self.build_micromecenatge_pages()
+
+    def build_micromecenatge_pages(self):
+        """Genera pàgines individuals per cada projecte de micromecenatge."""
+        import json
+
+        cataleg_file = self.root / 'data' / 'cataleg-traduccions.json'
+        mecenatges_file = self.root / 'data' / 'mecenatges.json'
+
+        if not cataleg_file.exists():
+            print("   ⚠️  cataleg-traduccions.json no trobat")
+            return
+
+        with open(cataleg_file, 'r', encoding='utf-8') as f:
+            cataleg = json.load(f)
+
+        mecenatges = {}
+        if mecenatges_file.exists():
+            with open(mecenatges_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                for m in data.get('mecenatges', []):
+                    mecenatges[m['obra_id']] = m
+
+        # Template de detall
+        template_file = 'micromecenatge-detall.html'
+        if not (self.templates_dir / template_file).exists():
+            print(f"   ⚠️  Template {template_file} no trobat")
+            return
+
+        template = self.env.get_template(template_file)
+
+        count = 0
+        for obra in cataleg.get('obres', []):
+            if obra.get('estat') == 'crowdfunding':
+                mecenatge = mecenatges.get(obra['id'])
+                recaptat = mecenatge.get('total', 0) if mecenatge else obra.get('recaptat', 0)
+                objectiu = obra.get('cost_traduccio', 100)
+                percentatge = min(round((recaptat / objectiu) * 100), 100)
+
+                # Actualitzar obra amb valors de recaptat
+                obra['recaptat'] = recaptat
+
+                html = template.render(
+                    base_url='',
+                    site_url='https://biblioteca-arion.cat',
+                    obra=obra,
+                    mecenatge=mecenatge,
+                    percentatge=percentatge,
+                )
+
+                output_file = self.docs_dir / f"micromecenatge-{obra['id']}.html"
+                output_file.write_text(html, encoding='utf-8')
+                count += 1
+
+        print(f"   ✅ {count} fitxes de micromecenatge generades")
 
 
 def main():
