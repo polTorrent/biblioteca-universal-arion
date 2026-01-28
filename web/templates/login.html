@@ -136,6 +136,45 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }, 200);
 
+    // Form submit handler
+    const form = document.getElementById('form-login');
+    form?.addEventListener('submit', async function(e) {
+        e.preventDefault();
+
+        const email = document.getElementById('email').value.trim();
+        const password = document.getElementById('password').value;
+
+        if (!email || !password) {
+            alert('Si us plau, omple tots els camps');
+            return;
+        }
+
+        // Desactivar botó mentre es processa
+        const submitBtn = form.querySelector('button[type="submit"]');
+        const originalText = submitBtn.textContent;
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Entrant...';
+
+        try {
+            const result = await window.ArionAuth.login(email, password);
+
+            if (result.error) {
+                alert('Error: ' + result.error.message);
+                submitBtn.disabled = false;
+                submitBtn.textContent = originalText;
+                return;
+            }
+
+            // Login correcte - redirigir al perfil
+            window.location.href = 'perfil.html';
+
+        } catch (err) {
+            alert('Error inesperat: ' + err.message);
+            submitBtn.disabled = false;
+            submitBtn.textContent = originalText;
+        }
+    });
+
     // OAuth buttons
     document.querySelectorAll('.btn-oauth').forEach(function(btn) {
         btn.addEventListener('click', async function() {
@@ -143,7 +182,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (window.ArionAuth) {
                 const result = await window.ArionAuth.loginWithOAuth(provider);
                 if (result.error) {
-                    window.ArionMecenatge?.Toast.show('Error: ' + result.error.message, 'error');
+                    alert('Error: ' + result.error.message);
                 }
             }
         });
@@ -154,19 +193,19 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         const email = document.getElementById('email').value;
         if (!email) {
-            window.ArionMecenatge?.Toast.show('Introdueix el teu email', 'error');
+            alert('Introdueix el teu email primer');
             return;
         }
 
         if (window.ArionAuth) {
             const result = await window.ArionAuth.resetPassword(email);
             if (result.error) {
-                window.ArionMecenatge?.Toast.show(result.error.message, 'error');
+                alert(result.error.message);
             } else {
-                window.ArionMecenatge?.Toast.show('Hem enviat un email per recuperar la contrasenya', 'success');
+                alert('Hem enviat un email per recuperar la contrasenya');
             }
         } else {
-            window.ArionMecenatge?.Toast.show('Funció no disponible en mode demo', 'info');
+            alert('Funció no disponible en mode demo');
         }
     });
 });
