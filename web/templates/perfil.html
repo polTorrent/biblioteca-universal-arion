@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+
+{% block title %}El meu perfil - Biblioteca Arion{% endblock %}
+{% block description %}Gestiona el teu perfil, consulta les teves medalles i segueix el teu progrés com a mecenes de la cultura catalana.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+<link rel="stylesheet" href="{{ base_url }}css/perfil.css">
+<link rel="stylesheet" href="{{ base_url }}css/favorits-carret.css">
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+{% endblock %}
+
+{% block content %}
+<div class="profile-page">
+    <!-- Capçalera del perfil -->
+    <section class="profile-header-section">
+        <div class="container">
+            <div id="profile-header" class="profile-header">
+                <!-- Renderitzat per JavaScript -->
+                <div class="loading-placeholder">
+                    <div class="loading-avatar"></div>
+                    <div class="loading-text"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estadístiques -->
+    <section class="profile-stats-section">
+        <div class="container">
+            <div id="profile-stats" class="profile-stats">
+                <!-- Renderitzat per JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Barra de progrés -->
+    <section class="profile-progress-section">
+        <div class="container">
+            <div id="profile-progress" class="profile-progress">
+                <!-- Renderitzat per JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pestanyes -->
+    <section class="profile-tabs-section">
+        <div class="container">
+            <!-- Navegació de pestanyes -->
+            <div class="profile-tabs-nav">
+                <button class="profile-tab-btn active" data-tab="favorits">
+                    <span class="tab-icon">❤️</span>
+                    <span class="tab-label">Favorits</span>
+                </button>
+                <button class="profile-tab-btn" data-tab="medalles">
+                    <span class="tab-icon">🏅</span>
+                    <span class="tab-label">Medalles</span>
+                </button>
+                <button class="profile-tab-btn" data-tab="historial">
+                    <span class="tab-icon">📜</span>
+                    <span class="tab-label">Historial</span>
+                </button>
+                <button class="profile-tab-btn" data-tab="propostes">
+                    <span class="tab-icon">💡</span>
+                    <span class="tab-label">Propostes</span>
+                </button>
+                <button class="profile-tab-btn" data-tab="ranking">
+                    <span class="tab-icon">🏆</span>
+                    <span class="tab-label">Rànking</span>
+                </button>
+            </div>
+
+            <!-- Contingut de pestanyes -->
+            <div class="profile-tabs-content">
+                <div id="tab-favorits" class="profile-tab-content active">
+                    <!-- Renderitzat per JavaScript -->
+                </div>
+                <div id="tab-medalles" class="profile-tab-content">
+                    <!-- Renderitzat per JavaScript -->
+                </div>
+                <div id="tab-historial" class="profile-tab-content">
+                    <!-- Renderitzat per JavaScript -->
+                </div>
+                <div id="tab-propostes" class="profile-tab-content">
+                    <!-- Renderitzat per JavaScript -->
+                </div>
+                <div id="tab-ranking" class="profile-tab-content">
+                    <!-- Renderitzat per JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accions -->
+    <section class="profile-actions-section">
+        <div class="container">
+            <div class="profile-actions">
+                <a href="mecenatge.html" class="btn-action btn-primary">
+                    <span class="btn-icon">💝</span>
+                    Fer una aportació
+                </a>
+                <a href="proposta-traduccio.html" class="btn-action btn-secondary">
+                    <span class="btn-icon">💡</span>
+                    Proposar traducció
+                </a>
+                <button id="btn-logout" class="btn-action btn-outline">
+                    <span class="btn-icon">🚪</span>
+                    Tancar sessió
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/supabase-client.js"></script>
+<script src="{{ base_url }}js/auth-manager.js"></script>
+<script src="{{ base_url }}js/gamification.js"></script>
+<script src="{{ base_url }}js/favorits-carret.js"></script>
+<script src="{{ base_url }}js/profile-manager.js"></script>
+<script src="{{ base_url }}js/mecenatge.js"></script>
+{% endblock %}

@@ -123,7 +123,7 @@
     };
 
     // ─────────────────────────────────────────────────────────────────
-    // GESTIÓ D'USUARIS
+    // GESTIÓ D'USUARIS (Delegat a ArionAuth si disponible)
     // ─────────────────────────────────────────────────────────────────
 
     const UserManager = {
@@ -131,6 +131,12 @@
          * Obté l'usuari actual
          */
         getCurrentUser() {
+            // Usar ArionAuth si està disponible
+            if (window.ArionAuth?.isLoggedIn()) {
+                return window.ArionAuth.getProfile();
+            }
+
+            // Fallback a localStorage
             const userData = localStorage.getItem(CONFIG.STORAGE_KEYS.USER);
             if (userData) {
                 try {
@@ -146,13 +152,26 @@
          * Verifica si l'usuari està autenticat
          */
         isLoggedIn() {
+            if (window.ArionAuth) {
+                return window.ArionAuth.isLoggedIn();
+            }
             return this.getCurrentUser() !== null;
         },
 
         /**
          * Registra un nou usuari
          */
-        register(nom, cognom, email, password) {
+        async register(nom, cognom, email, password, newsletter = false) {
+            // Usar ArionAuth si està disponible
+            if (window.ArionAuth) {
+                return await window.ArionAuth.register(email, password, {
+                    nom,
+                    cognom,
+                    newsletter
+                });
+            }
+
+            // Fallback a localStorage
             const user = {
                 id: 'usr_' + Date.now(),
                 nom,
@@ -161,32 +180,38 @@
                 creat: new Date().toISOString().split('T')[0],
                 mecenatges: [],
                 total_aportat: 0,
+                punts_totals: 10,
+                nivell: 1,
+                titol: 'Lector Curiós',
                 rol: 'usuari'
             };
 
-            // En producció, mai guardar passwords en text pla
-            // Aquí és una simulació
             localStorage.setItem(CONFIG.STORAGE_KEYS.USER, JSON.stringify(user));
             localStorage.setItem('arion_user_email', email);
-            localStorage.setItem('arion_user_pass', btoa(password)); // Base64 només per demo
+            localStorage.setItem('arion_user_pass', btoa(password));
 
-            return user;
+            return { user, error: null };
         },
 
         /**
          * Inicia sessió
          */
-        login(email, password) {
+        async login(email, password) {
+            // Usar ArionAuth si està disponible
+            if (window.ArionAuth) {
+                return await window.ArionAuth.login(email, password);
+            }
+
+            // Fallback a localStorage
             const savedEmail = localStorage.getItem('arion_user_email');
             const savedPass = localStorage.getItem('arion_user_pass');
 
             if (savedEmail === email && savedPass === btoa(password)) {
                 const userData = localStorage.getItem(CONFIG.STORAGE_KEYS.USER);
-                return userData ? JSON.parse(userData) : null;
+                return { user: userData ? JSON.parse(userData) : null, error: null };
             }
 
             // Demo: permet login amb qualsevol email/password
-            // i crea un usuari temporal
             const user = {
                 id: 'usr_demo_' + Date.now(),
                 nom: email.split('@')[0],
@@ -195,32 +220,88 @@
                 creat: new Date().toISOString().split('T')[0],
                 mecenatges: [],
                 total_aportat: 0,
+                punts_totals: 10,
+                nivell: 1,
+                titol: 'Lector Curiós',
                 rol: 'usuari'
             };
 
             localStorage.setItem(CONFIG.STORAGE_KEYS.USER, JSON.stringify(user));
-            return user;
+            return { user, error: null };
         },
 
         /**
          * Tanca sessió
          */
-        logout() {
-            localStorage.removeItem(CONFIG.STORAGE_KEYS.USER);
+        async logout() {
+            if (window.ArionAuth) {
+                await window.ArionAuth.logout();
+            } else {
+                localStorage.removeItem(CONFIG.STORAGE_KEYS.USER);
+            }
         },
 
         /**
          * Actualitza l'usuari amb una nova aportació
          */
-        addMecenatge(obraId, importValue) {
+        async addMecenatge(obraId, obraTitol, importValue) {
+            // Usar ArionAuth si està disponible
+            if (window.ArionAuth) {
+                const result = await window.ArionAuth.addMecenatge(obraId, obraTitol, importValue);
+
+                // Verificar medalles i mostrar animacions
+                if (window.ArionGamification && !result.error) {
+                    const profile = window.ArionAuth.getProfile();
+                    const novesMedalles = window.ArionGamification.Badge.verificarMedalles(profile);
+
+                    for (const medalla of novesMedalles) {
+                        const medallaCompleta = window.ArionGamification.MEDALLES[medalla.id];
+                        if (medallaCompleta) {
+                            setTimeout(() => {
+                                window.ArionGamification.Animation.showNovaMedalla(medallaCompleta);
+                            }, 500);
+                        }
+                    }
+                }
+
+                return result.data;
+            }
+
+            // Fallback a localStorage
             const user = this.getCurrentUser();
             if (user) {
+                user.mecenatges = user.mecenatges || [];
                 user.mecenatges.push({
                     obra_id: obraId,
+                    obra_titol: obraTitol,
                     import: importValue,
                     data: new Date().toISOString().split('T')[0]
                 });
-                user.total_aportat += importValue;
+                user.total_aportat = (user.total_aportat || 0) + importValue;
+
+                // Calcular punts
+                const esPrimeraAportacio = user.mecenatges.length === 1;
+                let puntsNous = Math.floor(importValue * 10);
+                if (esPrimeraAportacio) puntsNous += 25;
+                user.punts_totals = (user.punts_totals || 10) + puntsNous;
+
+                // Actualitzar nivell
+                const nivells = [
+                    { nivell: 7, punts: 2500 },
+                    { nivell: 6, punts: 1000 },
+                    { nivell: 5, punts: 500 },
+                    { nivell: 4, punts: 300 },
+                    { nivell: 3, punts: 150 },
+                    { nivell: 2, punts: 50 },
+                    { nivell: 1, punts: 0 }
+                ];
+
+                for (const n of nivells) {
+                    if (user.punts_totals >= n.punts) {
+                        user.nivell = n.nivell;
+                        break;
+                    }
+                }
 
                 if (user.total_aportat >= 20) {
                     user.rol = 'mecenes';
@@ -229,6 +310,23 @@
                 }
 
                 localStorage.setItem(CONFIG.STORAGE_KEYS.USER, JSON.stringify(user));
+
+                // Verificar medalles
+                if (window.ArionGamification) {
+                    const novesMedalles = window.ArionGamification.Badge.verificarMedalles(user);
+                    user.medalles = user.medalles || [];
+                    for (const medalla of novesMedalles) {
+                        user.medalles.push(medalla);
+                        const medallaCompleta = window.ArionGamification.MEDALLES[medalla.id];
+                        if (medallaCompleta) {
+                            setTimeout(() => {
+                                window.ArionGamification.Animation.showNovaMedalla(medallaCompleta);
+                            }, 500);
+                        }
+                    }
+                    localStorage.setItem(CONFIG.STORAGE_KEYS.USER, JSON.stringify(user));
+                }
+
                 return user;
             }
             return null;
@@ -691,24 +789,32 @@
             // Esperar una mica per simular el pagament
             await new Promise(resolve => setTimeout(resolve, 1500));
 
-            // Actualitzar l'usuari
-            UserManager.addMecenatge(obra.id, importValue);
+            // Actualitzar l'usuari (amb el nou mètode que suporta Supabase)
+            const obraTitol = obra.titol || obra.id;
+            await UserManager.addMecenatge(obra.id, obraTitol, importValue);
 
-            // Actualitzar el mecenatge
+            // Actualitzar el mecenatge local (per demo/localStorage)
             const mecenatges = await DataManager.getMecenatges();
             let mecenatge = mecenatges.find(m => m.obra_id === obra.id);
 
             if (mecenatge) {
                 const user = UserManager.getCurrentUser();
+                mecenatge.aportacions = mecenatge.aportacions || [];
                 mecenatge.aportacions.push({
                     usuari_id: user.id,
-                    usuari_nom: user.nom + ' ' + user.cognom.charAt(0) + '.',
+                    usuari_nom: user.nom + ' ' + (user.cognom ? user.cognom.charAt(0) + '.' : ''),
                     import: importValue,
                     data: new Date().toISOString().split('T')[0]
                 });
-                mecenatge.total += importValue;
+                mecenatge.total = (mecenatge.total || 0) + importValue;
 
                 await DataManager.updateMecenatge(mecenatge);
+            }
+
+            // Mostrar toast de punts si el sistema de gamificació està disponible
+            if (window.ArionGamification) {
+                const punts = Math.floor(importValue * 10);
+                window.ArionGamification.Animation.showPuntsToast(punts, 'per la teva aportació');
             }
 
             // Mostrar confirmació
@@ -762,7 +868,7 @@
             const form = document.getElementById('form-registre');
             if (!form) return;
 
-            form.addEventListener('submit', (e) => {
+            form.addEventListener('submit', async (e) => {
                 e.preventDefault();
 
                 const nom = form.querySelector('[name="nom"]').value;
@@ -771,6 +877,7 @@
                 const password = form.querySelector('[name="password"]').value;
                 const password2 = form.querySelector('[name="password2"]').value;
                 const termes = form.querySelector('[name="termes"]').checked;
+                const newsletter = form.querySelector('[name="newsletter"]')?.checked || false;
 
                 // Validacions
                 if (password !== password2) {
@@ -783,17 +890,36 @@
                     return;
                 }
 
+                // Desactivar botó
+                const submitBtn = form.querySelector('[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Creant compte...';
+                }
+
                 // Registrar
-                const user = UserManager.register(nom, cognom, email, password);
+                const result = await UserManager.register(nom, cognom, email, password, newsletter);
+
+                if (result.error) {
+                    Toast.show('Error: ' + result.error.message, 'error');
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Crear compte';
+                    }
+                    return;
+                }
+
                 Toast.show('Compte creat correctament!', 'success');
 
                 // Redirigir
                 const redirect = new URLSearchParams(window.location.search).get('redirect');
-                if (redirect === 'mecenatge') {
-                    window.location.href = 'pagament.html';
-                } else {
-                    window.location.href = 'mecenatge.html';
-                }
+                setTimeout(() => {
+                    if (redirect === 'mecenatge') {
+                        window.location.href = 'pagament.html';
+                    } else {
+                        window.location.href = 'mecenatge.html';
+                    }
+                }, 1000);
             });
         },
 
@@ -804,26 +930,51 @@
             const form = document.getElementById('form-login');
             if (!form) return;
 
-            form.addEventListener('submit', (e) => {
+            form.addEventListener('submit', async (e) => {
                 e.preventDefault();
 
                 const email = form.querySelector('[name="email"]').value;
                 const password = form.querySelector('[name="password"]').value;
 
-                const user = UserManager.login(email, password);
+                // Desactivar botó
+                const submitBtn = form.querySelector('[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.disabled = true;
+                    submitBtn.textContent = 'Entrant...';
+                }
 
-                if (user) {
-                    Toast.show('Benvingut/da, ' + user.nom + '!', 'success');
+                const result = await UserManager.login(email, password);
+
+                if (result.error) {
+                    Toast.show('Credencials incorrectes: ' + result.error.message, 'error');
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Entrar';
+                    }
+                    return;
+                }
+
+                if (result.user) {
+                    const nom = result.user.nom || result.user.email?.split('@')[0] || 'Usuari';
+                    Toast.show('Benvingut/da, ' + nom + '!', 'success');
 
                     // Redirigir
                     const redirect = new URLSearchParams(window.location.search).get('redirect');
-                    if (redirect === 'mecenatge') {
-                        window.location.href = 'pagament.html';
-                    } else {
-                        window.location.href = 'mecenatge.html';
-                    }
+                    setTimeout(() => {
+                        if (redirect === 'mecenatge') {
+                            window.location.href = 'pagament.html';
+                        } else if (redirect === 'perfil') {
+                            window.location.href = 'perfil.html';
+                        } else {
+                            window.location.href = 'mecenatge.html';
+                        }
+                    }, 1000);
                 } else {
-                    Toast.show('Credencials incorrectes', 'error');
+                    Toast.show('Error desconegut', 'error');
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.textContent = 'Entrar';
+                    }
                 }
             });
         },

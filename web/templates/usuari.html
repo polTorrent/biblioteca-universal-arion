@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Perfil d'usuari - Biblioteca Arion{% endblock %}
+{% block description %}Perfil públic d'un mecenes de la Biblioteca Arion.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+<link rel="stylesheet" href="{{ base_url }}css/perfil.css">
+<link rel="stylesheet" href="{{ base_url }}css/usuari-public.css">
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+{% endblock %}
+
+{% block content %}
+<div class="usuari-page">
+    <!-- Loading state -->
+    <div id="usuari-loading" class="usuari-loading">
+        <div class="loading-spinner"></div>
+        <p>Carregant perfil...</p>
+    </div>
+
+    <!-- Error state -->
+    <div id="usuari-error" class="usuari-error" style="display: none;">
+        <div class="error-icon">🔒</div>
+        <h2 id="error-title">Perfil no disponible</h2>
+        <p id="error-message">Aquest perfil és privat o no existeix.</p>
+        <a href="index.html" class="btn-submit">Tornar a l'inici</a>
+    </div>
+
+    <!-- Profile content -->
+    <div id="usuari-content" class="usuari-content" style="display: none;">
+        <!-- Capçalera del perfil públic -->
+        <section class="usuari-header-section">
+            <div class="container">
+                <div class="usuari-header">
+                    <div class="usuari-avatar-wrapper">
+                        <div id="usuari-avatar" class="usuari-avatar">
+                            <!-- Avatar renderitzat per JS -->
+                        </div>
+                        <div id="usuari-level-badge" class="usuari-level-badge">
+                            <!-- Nivell renderitzat per JS -->
+                        </div>
+                    </div>
+
+                    <div class="usuari-info">
+                        <h1 id="usuari-nom" class="usuari-nom">Usuari</h1>
+                        <p id="usuari-titol" class="usuari-titol">Lector Curiós</p>
+                        <p id="usuari-bio" class="usuari-bio"></p>
+                        <p id="usuari-membre" class="usuari-membre">
+                            <span class="membre-icon">📅</span>
+                            <span class="membre-text">Membre des de...</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadístiques públiques -->
+        <section class="usuari-stats-section">
+            <div class="container">
+                <div id="usuari-stats" class="usuari-stats">
+                    <!-- Stats renderitzades per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra de progrés de nivell -->
+        <section class="usuari-progress-section">
+            <div class="container">
+                <div id="usuari-progress" class="usuari-progress">
+                    <!-- Progrés renderitzat per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Medalles públiques -->
+        <section class="usuari-medalles-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">🏅</span>
+                    Medalles obtingudes
+                </h2>
+                <div id="usuari-medalles" class="usuari-medalles">
+                    <!-- Medalles renderitzades per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Obres mecenades (si públic) -->
+        <section id="usuari-obres-section" class="usuari-obres-section" style="display: none;">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">📚</span>
+                    Obres patrocinades
+                </h2>
+                <div id="usuari-obres" class="usuari-obres">
+                    <!-- Obres renderitzades per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Rànking -->
+        <section class="usuari-ranking-section">
+            <div class="container">
+                <div id="usuari-ranking" class="usuari-ranking-card">
+                    <!-- Posició al rànking -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="usuari-cta-section">
+            <div class="container">
+                <div class="usuari-cta">
+                    <h3>Vols formar part de la comunitat?</h3>
+                    <p>Uneix-te als mecenes de la cultura catalana i ajuda a traduir els clàssics universals.</p>
+                    <div class="cta-buttons">
+                        <a href="registre.html" class="btn-cta btn-primary">Crear compte</a>
+                        <a href="mecenatge.html" class="btn-cta btn-secondary">Veure projectes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/supabase-client.js"></script>
+<script src="{{ base_url }}js/auth-manager.js"></script>
+<script src="{{ base_url }}js/gamification.js"></script>
+<script src="{{ base_url }}js/usuari-public.js"></script>
+{% endblock %}

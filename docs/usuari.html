@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{% block description %}Biblioteca Arion - Traduccions obertes de clàssics universals al català{% endblock %}">
+    <meta name="description" content="Perfil públic d'un mecenes de la Biblioteca Arion.">
     <meta name="author" content="Biblioteca Arion">
     <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="{% block og_title %}Biblioteca Arion{% endblock %}">
-    <meta property="og:description" content="{% block og_description %}Traduccions obertes de clàssics universals al català{% endblock %}">
-    <meta property="og:type" content="{% block og_type %}website{% endblock %}">
-    <meta property="og:url" content="{{ site_url }}{% block og_url %}{% endblock %}">
+    <meta property="og:title" content="Biblioteca Arion">
+    <meta property="og:description" content="Traduccions obertes de clàssics universals al català">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biblioteca-arion.cat">
     <meta property="og:site_name" content="Biblioteca Arion">
     <meta property="og:locale" content="ca_ES">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{% block twitter_title %}Biblioteca Arion{% endblock %}">
-    <meta name="twitter:description" content="{% block twitter_description %}Traduccions obertes de clàssics universals al català{% endblock %}">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
 
-    <title>{% block title %}Biblioteca Arion{% endblock %}</title>
+    <title>Perfil d'usuari - Biblioteca Arion</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,9 +28,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="{{ base_url }}css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 
-    {% block head_extra %}{% endblock %}
+    
+<link rel="stylesheet" href="css/mecenatge.css">
+<link rel="stylesheet" href="css/perfil.css">
+<link rel="stylesheet" href="css/usuari-public.css">
+<!-- Supabase SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
 </head>
 <body>
     <!-- Header -->
@@ -39,15 +45,15 @@
             <div class="header-inner">
                 <!-- Logo -->
                 <div class="site-logo">
-                    <a href="{{ base_url }}index.html" class="site-brand">
-                        <img src="{{ base_url }}assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
                         <span class="site-title">Biblioteca Arion</span>
                     </a>
                 </div>
 
                 <!-- Navegació i controls -->
                 <div class="header-actions">
-                    <a href="{{ base_url }}mecenatge.html" class="header-link" title="Mecenatge">
+                    <a href="mecenatge.html" class="header-link" title="Mecenatge">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
                         </svg>
@@ -70,7 +76,7 @@
                             <div class="carret-items" id="carret-items">
                                 <div class="carret-empty">
                                     <span>El carret és buit</span>
-                                    <a href="{{ base_url }}mecenatge.html">Veure projectes</a>
+                                    <a href="mecenatge.html">Veure projectes</a>
                                 </div>
                             </div>
                             <div class="carret-footer" id="carret-footer"></div>
@@ -85,7 +91,7 @@
                     <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
                         <span class="theme-icon">🌙</span>
                     </button>
-                    <a href="{{ base_url }}login.html" class="btn-auth">Entrar</a>
+                    <a href="login.html" class="btn-auth">Entrar</a>
                 </div>
             </div>
         </div>
@@ -93,7 +99,7 @@
         <!-- Cercador desplegable -->
         <div class="search-panel" hidden>
             <div class="container">
-                <form class="search-form" action="{{ base_url }}cerca.html" method="GET">
+                <form class="search-form" action="cerca.html" method="GET">
                     <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
                     <button type="submit">Cercar</button>
                     <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
@@ -104,7 +110,119 @@
 
     <!-- Main Content -->
     <main>
-        {% block content %}{% endblock %}
+        
+<div class="usuari-page">
+    <!-- Loading state -->
+    <div id="usuari-loading" class="usuari-loading">
+        <div class="loading-spinner"></div>
+        <p>Carregant perfil...</p>
+    </div>
+
+    <!-- Error state -->
+    <div id="usuari-error" class="usuari-error" style="display: none;">
+        <div class="error-icon">🔒</div>
+        <h2 id="error-title">Perfil no disponible</h2>
+        <p id="error-message">Aquest perfil és privat o no existeix.</p>
+        <a href="index.html" class="btn-submit">Tornar a l'inici</a>
+    </div>
+
+    <!-- Profile content -->
+    <div id="usuari-content" class="usuari-content" style="display: none;">
+        <!-- Capçalera del perfil públic -->
+        <section class="usuari-header-section">
+            <div class="container">
+                <div class="usuari-header">
+                    <div class="usuari-avatar-wrapper">
+                        <div id="usuari-avatar" class="usuari-avatar">
+                            <!-- Avatar renderitzat per JS -->
+                        </div>
+                        <div id="usuari-level-badge" class="usuari-level-badge">
+                            <!-- Nivell renderitzat per JS -->
+                        </div>
+                    </div>
+
+                    <div class="usuari-info">
+                        <h1 id="usuari-nom" class="usuari-nom">Usuari</h1>
+                        <p id="usuari-titol" class="usuari-titol">Lector Curiós</p>
+                        <p id="usuari-bio" class="usuari-bio"></p>
+                        <p id="usuari-membre" class="usuari-membre">
+                            <span class="membre-icon">📅</span>
+                            <span class="membre-text">Membre des de...</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estadístiques públiques -->
+        <section class="usuari-stats-section">
+            <div class="container">
+                <div id="usuari-stats" class="usuari-stats">
+                    <!-- Stats renderitzades per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra de progrés de nivell -->
+        <section class="usuari-progress-section">
+            <div class="container">
+                <div id="usuari-progress" class="usuari-progress">
+                    <!-- Progrés renderitzat per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Medalles públiques -->
+        <section class="usuari-medalles-section">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">🏅</span>
+                    Medalles obtingudes
+                </h2>
+                <div id="usuari-medalles" class="usuari-medalles">
+                    <!-- Medalles renderitzades per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Obres mecenades (si públic) -->
+        <section id="usuari-obres-section" class="usuari-obres-section" style="display: none;">
+            <div class="container">
+                <h2 class="section-title">
+                    <span class="title-icon">📚</span>
+                    Obres patrocinades
+                </h2>
+                <div id="usuari-obres" class="usuari-obres">
+                    <!-- Obres renderitzades per JS -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Rànking -->
+        <section class="usuari-ranking-section">
+            <div class="container">
+                <div id="usuari-ranking" class="usuari-ranking-card">
+                    <!-- Posició al rànking -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="usuari-cta-section">
+            <div class="container">
+                <div class="usuari-cta">
+                    <h3>Vols formar part de la comunitat?</h3>
+                    <p>Uneix-te als mecenes de la cultura catalana i ajuda a traduir els clàssics universals.</p>
+                    <div class="cta-buttons">
+                        <a href="registre.html" class="btn-cta btn-primary">Crear compte</a>
+                        <a href="mecenatge.html" class="btn-cta btn-secondary">Veure projectes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
     </main>
 
     <!-- Footer - Ampliat v2 -->
@@ -115,16 +233,16 @@
                 <div class="footer-section">
                     <h4>Sobre Arion</h4>
                     <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
-                    <a href="{{ base_url }}sobre.html" class="footer-link">Més informació →</a>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
                 </div>
 
                 <!-- Columna 2: Recursos -->
                 <div class="footer-section">
                     <h4>Recursos</h4>
                     <ul>
-                        <li><a href="{{ base_url }}index.html">Catàleg d'obres</a></li>
-                        <li><a href="{{ base_url }}faq.html">Preguntes freqüents</a></li>
-                        <li><a href="{{ base_url }}contribuir.html">Com contribuir</a></li>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
                         <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
                     </ul>
                 </div>
@@ -133,9 +251,9 @@
                 <div class="footer-section">
                     <h4>Legal</h4>
                     <ul>
-                        <li><a href="{{ base_url }}termes.html">Termes d'ús</a></li>
-                        <li><a href="{{ base_url }}privacitat.html">Política de privacitat</a></li>
-                        <li><a href="{{ base_url }}llicencies.html">Llicències</a></li>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
                     </ul>
                     <p class="footer-license"><small>CC BY-SA 4.0</small></p>
                 </div>
@@ -166,7 +284,12 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="{{ base_url }}js/app.js"></script>
-    {% block scripts_extra %}{% endblock %}
+    <script src="js/app.js"></script>
+    
+<script src="js/supabase-client.js"></script>
+<script src="js/auth-manager.js"></script>
+<script src="js/gamification.js"></script>
+<script src="js/usuari-public.js"></script>
+
 </body>
 </html>
