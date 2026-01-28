@@ -611,8 +611,49 @@ class SearchPanelManager {
     }
 }
 
+/**
+ * How Section - Accordion/Timeline
+ */
+function initHowSteps() {
+    var steps = document.querySelectorAll('.how-step');
+    if (!steps.length) return;
+
+    function closeAll() {
+        for (var i = 0; i < steps.length; i++) {
+            steps[i].classList.remove('is-open');
+            var btn = steps[i].querySelector('.how-step-header');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    for (var i = 0; i < steps.length; i++) {
+        (function(step) {
+            var btn = step.querySelector('.how-step-header');
+            if (!btn) return;
+
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var wasOpen = step.classList.contains('is-open');
+                closeAll();
+                if (!wasOpen) {
+                    step.classList.add('is-open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        })(steps[i]);
+    }
+
+    // Tancar al clicar fora (només desktop)
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth >= 768 && !e.target.closest('.how-step')) {
+            closeAll();
+        }
+    });
+}
+
 // Inicialitzar components v2
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     initAllCarousels();
     new SearchPanelManager();
+    initHowSteps();
 });

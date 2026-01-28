@@ -1558,55 +1558,76 @@ blockquote cite::before {
 }
 
 /* ─────────────────────────────────────────────────────────────────────
-   SECCIÓ COM FUNCIONA
+   COM FUNCIONA - NOU DISSENY NET
    ───────────────────────────────────────────────────────────────────── */
 
-.how-it-works {
-    padding: var(--spacing-2xl) 0;
-    background: var(--color-bg-primary);
-    text-align: center;
+.how-section {
+    padding: 3rem 0;
+    background: var(--color-bg-secondary);
     border-top: 1px solid var(--color-border-light);
 }
 
-.how-it-works h2 {
+.how-title {
     font-family: var(--font-titles);
-    font-size: var(--font-size-xl);
-    color: var(--color-text-primary);
-    margin: 0 0 var(--spacing-xl);
+    font-size: 1.75rem;
     font-weight: 500;
+    color: var(--color-text-primary);
+    text-align: center;
+    margin: 0 0 0.25rem;
 }
 
-.steps-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: var(--spacing-lg);
-    max-width: 800px;
-    margin: 0 auto var(--spacing-lg);
+.how-intro {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--color-text-muted);
+    text-align: center;
+    font-style: italic;
+    margin: 0 0 2rem;
 }
 
-.step {
+/* Contenidor dels passos */
+.how-steps {
     display: flex;
     flex-direction: column;
+    gap: 0.75rem;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Cada pas individual */
+.how-step {
+    background: var(--color-bg-primary);
+    border-radius: 8px;
+    border: 1px solid var(--color-border-light);
+}
+
+.how-step.is-open {
+    border-color: var(--color-accent);
+}
+
+/* Capçalera clicable */
+.how-step-header {
+    width: 100%;
+    display: flex;
     align-items: center;
-    gap: var(--spacing-xs);
-    flex: 1;
-    max-width: 160px;
-    position: relative;
+    gap: 1rem;
+    padding: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    font-family: inherit;
 }
 
-.step:not(:last-child)::after {
-    content: '→';
-    position: absolute;
-    right: -20px;
-    top: 12px;
-    color: var(--color-border);
-    font-size: 1.2rem;
+.how-step-header:hover {
+    background: rgba(0,0,0,0.02);
 }
 
-.step-num {
-    width: 32px;
-    height: 32px;
+/* Número rodó */
+.how-step-num {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
     background: var(--color-bg-secondary);
     border: 2px solid var(--color-border);
     border-radius: 50%;
@@ -1614,58 +1635,308 @@ blockquote cite::before {
     align-items: center;
     justify-content: center;
     font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
-    font-weight: 600;
+    font-size: 1rem;
+    font-weight: 700;
     color: var(--color-text-secondary);
-    transition: all 0.2s ease;
 }
 
-.step:hover .step-num {
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-}
-
-.step.accent .step-num {
+.how-step.is-open .how-step-num,
+.how-step-final .how-step-num {
     background: var(--color-accent);
     border-color: var(--color-accent);
     color: white;
 }
 
-.step strong {
+/* Text del pas */
+.how-step-text {
+    flex: 1;
+}
+
+.how-step-name {
+    display: block;
     font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
+    font-size: 1rem;
+    font-weight: 600;
     color: var(--color-text-primary);
 }
 
-.step small {
+.how-step-sub {
+    display: block;
     font-family: var(--font-ui);
-    font-size: var(--font-size-xs);
+    font-size: 0.8rem;
     color: var(--color-text-muted);
+    margin-top: 2px;
 }
 
-.how-link {
+/* Icona fletxa */
+.how-step-icon {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    transition: transform 0.2s ease;
+}
+
+.how-step.is-open .how-step-icon {
+    transform: rotate(180deg);
+    color: var(--color-accent);
+}
+
+/* Contingut desplegable */
+.how-step-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.how-step.is-open .how-step-content {
+    max-height: 150px;
+}
+
+.how-step-body {
+    padding: 0 1rem 1rem;
+    padding-left: calc(40px + 2rem);
+}
+
+.how-step-body p {
+    font-family: var(--font-body);
+    font-size: 0.9rem;
+    color: var(--color-text-secondary);
+    line-height: 1.5;
+    margin: 0 0 0.5rem;
+}
+
+.how-step-body a {
     font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
+    font-size: 0.85rem;
     color: var(--color-accent);
     text-decoration: none;
+    font-weight: 500;
 }
 
-.how-link:hover {
+.how-step-body a:hover {
     text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-    .steps-row {
-        flex-wrap: wrap;
-        gap: var(--spacing-md);
+/* Línia connector (amagat en mòbil) */
+.how-step-line {
+    display: none;
+}
+
+/* CTA final */
+.how-cta {
+    display: block;
+    text-align: center;
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    color: var(--color-accent);
+    text-decoration: none;
+    margin-top: 2rem;
+}
+
+.how-cta:hover {
+    text-decoration: underline;
+}
+
+/* ─── DESKTOP: Timeline horitzontal ─── */
+@media (min-width: 768px) {
+    .how-section {
+        padding: 4rem 0;
     }
 
-    .step {
-        flex: 0 0 45%;
+    .how-title {
+        font-size: 2rem;
     }
 
-    .step::after {
+    .how-intro {
+        margin-bottom: 3rem;
+    }
+
+    .how-steps {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0;
+        max-width: 900px;
+        padding-bottom: 180px; /* Espai pel tooltip */
+    }
+
+    .how-step {
+        flex: 1;
+        max-width: 200px;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        position: relative;
+        overflow: visible; /* IMPORTANT: permet veure el tooltip */
+    }
+
+    .how-step.is-open {
+        border: none;
+    }
+
+    .how-step-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .how-step-header:hover {
+        background: transparent;
+    }
+
+    .how-step-header:hover .how-step-num {
+        transform: scale(1.1);
+        box-shadow: 0 4px 12px rgba(139,69,19,0.2);
+    }
+
+    .how-step-num {
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        font-size: 1.2rem;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .how-step-text {
+        text-align: center;
+    }
+
+    .how-step-name {
+        font-size: 1rem;
+    }
+
+    .how-step-sub {
+        font-size: 0.8rem;
+    }
+
+    /* Amagar fletxa en desktop */
+    .how-step-icon {
         display: none;
+    }
+
+    /* Línia connector entre passos */
+    .how-step-line {
+        display: block;
+        position: absolute;
+        top: 28px;
+        left: calc(50% + 34px);
+        width: calc(100% - 68px);
+        height: 2px;
+        background: var(--color-border);
+    }
+
+    .how-step-line::after {
+        content: '→';
+        position: absolute;
+        right: -12px;
+        top: -10px;
+        color: var(--color-accent-light);
+        font-size: 1rem;
+    }
+
+    .how-step-final .how-step-line,
+    .how-step:last-child .how-step-line {
+        display: none;
+    }
+
+    /* Tooltip flotant */
+    .how-step-content {
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 260px;
+        max-height: none;
+        overflow: visible;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity 0.25s ease, visibility 0.25s ease;
+        padding-top: 12px;
+        z-index: 100;
+    }
+
+    .how-step:hover .how-step-content,
+    .how-step.is-open .how-step-content {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .how-step-body {
+        position: relative;
+        background: #fff;
+        border: 1px solid var(--color-border-light);
+        border-radius: 10px;
+        padding: 1.25rem;
+        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    }
+
+    /* Fletxa del tooltip */
+    .how-step-body::before {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 10px solid transparent;
+        border-bottom-color: var(--color-border-light);
+    }
+
+    .how-step-body::after {
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        border: 9px solid transparent;
+        border-bottom-color: #fff;
+    }
+
+    .how-step-body p {
+        margin: 0 0 0.75rem;
+    }
+}
+
+/* ─── DESKTOP GRAN ─── */
+@media (min-width: 1024px) {
+    .how-steps {
+        max-width: 1000px;
+    }
+
+    .how-step {
+        max-width: 220px;
+    }
+
+    .how-step-content {
+        width: 280px;
+    }
+}
+
+/* ─── Dark Mode ─── */
+[data-theme="dark"] .how-step {
+    background: var(--color-bg-tertiary);
+    border-color: var(--color-border);
+}
+
+[data-theme="dark"] .how-step.is-open {
+    border-color: var(--color-accent);
+}
+
+@media (min-width: 768px) {
+    [data-theme="dark"] .how-step {
+        background: transparent;
+        border: none;
+    }
+
+    [data-theme="dark"] .how-step-body {
+        background: var(--color-bg-tertiary);
+        border-color: var(--color-border);
+    }
+
+    [data-theme="dark"] .how-step-body::after {
+        border-bottom-color: var(--color-bg-tertiary);
     }
 }
 

@@ -612,32 +612,48 @@ class SearchPanelManager {
 }
 
 /**
- * Efecte dinàmic del timeline "Com funciona"
+ * How Section - Accordion/Timeline
  */
-function initProcessTimeline() {
-    const steps = document.querySelectorAll('.timeline-step');
-    const progressBar = document.querySelector('.timeline-progress');
+function initHowSteps() {
+    var steps = document.querySelectorAll('.how-step');
+    if (!steps.length) return;
 
-    if (!steps.length || !progressBar) return;
-
-    steps.forEach((step, index) => {
-        step.addEventListener('mouseenter', () => {
-            const progress = ((index + 1) / steps.length) * 100;
-            progressBar.style.width = progress + '%';
-        });
-    });
-
-    const timeline = document.querySelector('.process-timeline');
-    if (timeline) {
-        timeline.addEventListener('mouseleave', () => {
-            progressBar.style.width = '0%';
-        });
+    function closeAll() {
+        for (var i = 0; i < steps.length; i++) {
+            steps[i].classList.remove('is-open');
+            var btn = steps[i].querySelector('.how-step-header');
+            if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
     }
+
+    for (var i = 0; i < steps.length; i++) {
+        (function(step) {
+            var btn = step.querySelector('.how-step-header');
+            if (!btn) return;
+
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                var wasOpen = step.classList.contains('is-open');
+                closeAll();
+                if (!wasOpen) {
+                    step.classList.add('is-open');
+                    btn.setAttribute('aria-expanded', 'true');
+                }
+            });
+        })(steps[i]);
+    }
+
+    // Tancar al clicar fora (només desktop)
+    document.addEventListener('click', function(e) {
+        if (window.innerWidth >= 768 && !e.target.closest('.how-step')) {
+            closeAll();
+        }
+    });
 }
 
 // Inicialitzar components v2
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', function() {
     initAllCarousels();
     new SearchPanelManager();
-    initProcessTimeline();
+    initHowSteps();
 });
