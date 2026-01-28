@@ -63,7 +63,28 @@ ehthumbs.db
 # Secrets (IMPORTANT!)
 .env.local
 .env.*.local
+.env.save*
 secrets.yml
 api_keys.txt
 *.key
 *.pem
+
+# Backup files
+*.save
+*_backup.py
+*_backup.js
+
+# Windows junk
+*:Zone.Identifier
+
+# Test files
+test_*.png
+portada_*_final.png
+
+# Translation pipeline outputs
+obres/*/logs/
+obres/*/output/
+
+# Data files (generated)
+data/propostes.json
+data/usuaris.json

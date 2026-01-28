@@ -1,2 +1,0 @@
-{"timestamp": "2026-01-27T08:57:05.629388", "level": "info", "stage": "PIPELINE", "message": "Iniciant traducció amb 1 chunks", "data": null}
-{"timestamp": "2026-01-27T08:58:37.093829", "level": "success", "stage": "PIPELINE", "message": "Pipeline completat en 1.5 min | Qualitat: 0.0/10 | Cost: €0.0000", "data": null}
