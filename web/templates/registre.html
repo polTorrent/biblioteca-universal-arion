@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+
+{% block title %}Registre - Biblioteca Arion{% endblock %}
+{% block description %}Crea el teu compte a la Biblioteca Arion i converteix-te en mecenes de la cultura catalana.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+{% endblock %}
+
+{% block content %}
+<div class="form-page">
+    <h1>Crea el teu compte</h1>
+
+    <div class="form-container">
+        <form id="form-registre">
+            <div class="form-group">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required placeholder="El teu nom">
+            </div>
+
+            <div class="form-group">
+                <label for="cognom">Cognoms</label>
+                <input type="text" id="cognom" name="cognom" required placeholder="Els teus cognoms">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required placeholder="el-teu-email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contrasenya</label>
+                <input type="password" id="password" name="password" required minlength="8" placeholder="Mínim 8 caràcters">
+            </div>
+
+            <div class="form-group">
+                <label for="password2">Repeteix la contrasenya</label>
+                <input type="password" id="password2" name="password2" required placeholder="Repeteix la contrasenya">
+            </div>
+
+            <div class="form-group form-checkbox">
+                <input type="checkbox" id="termes" name="termes" required>
+                <label for="termes">
+                    Accepto els <a href="termes.html" target="_blank">termes i condicions</a> i la
+                    <a href="privacitat.html" target="_blank">política de privacitat</a>
+                </label>
+            </div>
+
+            <div class="form-group form-checkbox">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">
+                    Vull rebre novetats i informació sobre noves traduccions (màxim 1 cop al mes)
+                </label>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Crear compte
+            </button>
+        </form>
+
+        <div class="form-footer">
+            <p>Ja tens compte?</p>
+            <a href="login.html">Entra aquí</a>
+        </div>
+    </div>
+
+    <p style="text-align: center; margin-top: var(--spacing-xl); color: var(--color-text-muted); font-size: var(--font-size-sm);">
+        ⚠️ Això és una simulació. Les dades es guarden només al teu navegador.
+    </p>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/mecenatge.js"></script>
+{% endblock %}

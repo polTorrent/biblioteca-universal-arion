@@ -1,0 +1,186 @@
+{% extends "base.html" %}
+
+{% block title %}Pagament - Biblioteca Arion{% endblock %}
+{% block description %}Confirma el teu mecenatge i ajuda a fer possible una nova traducció.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+{% endblock %}
+
+{% block content %}
+<div class="form-page" style="max-width: 600px;">
+    <h1>💳 Confirma el teu mecenatge</h1>
+
+    <div class="form-container">
+        <form id="form-pagament">
+            <!-- Resum -->
+            <div class="pagament-resum">
+                <p style="margin-bottom: var(--spacing-sm);">Estàs aportant</p>
+                <p class="import">--€</p>
+                <p class="obra-titol" style="color: var(--color-text-secondary);">Carregant...</p>
+            </div>
+
+            <!-- Nivells (per micromecenatge) -->
+            <div class="recompenses-section" id="nivells-section">
+                <h3 style="margin-bottom: var(--spacing-md);">Tria la teva aportació</h3>
+                <div class="nivells-grid">
+                    <div class="nivell-card" data-import="1">
+                        <div class="nivell-preu">1€</div>
+                        <div class="nivell-nom">Micromecenes</div>
+                        <div class="nivell-descripcio">Nom als crèdits</div>
+                    </div>
+                    <div class="nivell-card destacat selected" data-import="5">
+                        <div class="nivell-preu">5€</div>
+                        <div class="nivell-nom">Mecenes</div>
+                        <div class="nivell-descripcio">Crèdits + distintiu Discord</div>
+                    </div>
+                    <div class="nivell-card" data-import="10">
+                        <div class="nivell-preu">10€</div>
+                        <div class="nivell-nom">Mecenes Plus</div>
+                        <div class="nivell-descripcio">Tot + 1 mes Pro</div>
+                    </div>
+                    <div class="nivell-card" data-import="20">
+                        <div class="nivell-preu">20€</div>
+                        <div class="nivell-nom">Gran Mecenes</div>
+                        <div class="nivell-descripcio">Tot + 3 mesos Pro</div>
+                    </div>
+                </div>
+
+                <!-- Import personalitzat -->
+                <div style="margin-top: var(--spacing-lg);">
+                    <label style="display: flex; align-items: center; gap: var(--spacing-sm); cursor: pointer;">
+                        <input type="checkbox" id="import-custom-check" style="width: auto;">
+                        <span>Altra quantitat</span>
+                    </label>
+                    <div id="import-custom-container" style="display: none; margin-top: var(--spacing-sm);">
+                        <input type="number" id="import-custom" min="1" placeholder="Import en €" style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--radius-md);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mètode de pagament -->
+            <h3 style="margin-top: var(--spacing-xl); margin-bottom: var(--spacing-md);">Mètode de pagament</h3>
+
+            <div class="metodes-pagament">
+                <label class="metode-option selected">
+                    <input type="radio" name="metode" value="targeta" checked>
+                    <span class="metode-icon">💳</span>
+                    <span>Targeta de crèdit/dèbit</span>
+                </label>
+
+                <label class="metode-option">
+                    <input type="radio" name="metode" value="paypal">
+                    <span class="metode-icon">🅿️</span>
+                    <span>PayPal</span>
+                </label>
+
+                <label class="metode-option">
+                    <input type="radio" name="metode" value="bizum">
+                    <span class="metode-icon">📱</span>
+                    <span>Bizum</span>
+                </label>
+            </div>
+
+            <!-- Camps de targeta (simulats) -->
+            <div class="camps-targeta" id="camps-targeta">
+                <div class="form-group" style="margin-bottom: 0;">
+                    <label>Número de targeta</label>
+                    <input type="text" value="4242 4242 4242 4242" readonly style="background: var(--color-bg-secondary);">
+                </div>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--spacing-md);">
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>Caducitat</label>
+                        <input type="text" value="12/28" readonly style="background: var(--color-bg-secondary);">
+                    </div>
+                    <div class="form-group" style="margin-bottom: 0;">
+                        <label>CVC</label>
+                        <input type="text" value="123" readonly style="background: var(--color-bg-secondary);">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Avís simulació -->
+            <div class="avis-simulacio">
+                ⚠️ Això és una <strong>simulació</strong>. No es processarà cap pagament real.
+            </div>
+
+            <!-- Botó pagar -->
+            <button type="submit" class="btn-pagar">
+                ✨ Confirmar pagament de 5€
+            </button>
+        </form>
+
+        <div class="form-footer" style="border-top: none;">
+            <p style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                🔒 Pagament segur. Les teves dades estan protegides.
+            </p>
+        </div>
+    </div>
+
+    <p style="text-align: center; margin-top: var(--spacing-lg);">
+        <a href="mecenatge.html" style="color: var(--color-text-muted);">← Tornar al mecenatge</a>
+    </p>
+</div>
+
+<script>
+// Script addicional per a la pàgina de pagament
+document.addEventListener('DOMContentLoaded', function() {
+    // Gestionar import personalitzat
+    const customCheck = document.getElementById('import-custom-check');
+    const customContainer = document.getElementById('import-custom-container');
+    const customInput = document.getElementById('import-custom');
+
+    if (customCheck) {
+        customCheck.addEventListener('change', function() {
+            customContainer.style.display = this.checked ? 'block' : 'none';
+            if (this.checked) {
+                document.querySelectorAll('.nivell-card').forEach(c => c.classList.remove('selected'));
+            }
+        });
+    }
+
+    if (customInput) {
+        customInput.addEventListener('input', function() {
+            const value = parseInt(this.value) || 0;
+            if (value > 0) {
+                document.querySelector('.pagament-resum .import').textContent = value + '€';
+                document.querySelector('.btn-pagar').textContent = '✨ Confirmar pagament de ' + value + '€';
+                window.ArionMecenatge.MecenatgeManager.currentImport = value;
+            }
+        });
+    }
+
+    // Amagar camps targeta si no és targeta
+    document.querySelectorAll('input[name="metode"]').forEach(input => {
+        input.addEventListener('change', function() {
+            const campsTar = document.getElementById('camps-targeta');
+            campsTar.style.display = this.value === 'targeta' ? 'grid' : 'none';
+        });
+    });
+
+    // Gestionar selecció de nivells
+    document.querySelectorAll('.nivell-card').forEach(card => {
+        card.addEventListener('click', function() {
+            document.querySelectorAll('.nivell-card').forEach(c => c.classList.remove('selected'));
+            this.classList.add('selected');
+
+            const importValue = parseInt(this.dataset.import);
+            document.querySelector('.pagament-resum .import').textContent = importValue + '€';
+            document.querySelector('.btn-pagar').textContent = '✨ Confirmar pagament de ' + importValue + '€';
+
+            // Desmarcar import personalitzat
+            if (customCheck) customCheck.checked = false;
+            if (customContainer) customContainer.style.display = 'none';
+
+            if (window.ArionMecenatge) {
+                window.ArionMecenatge.MecenatgeManager.currentImport = importValue;
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/mecenatge.js"></script>
+{% endblock %}

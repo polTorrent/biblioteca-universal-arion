@@ -64,6 +64,7 @@
                             {% if obra.estat %}
                             <span class="badge badge-{{ obra.estat }}">{{ obra.estat }}</span>
                             {% endif %}
+                            <button class="btn-action btn-favorite" title="Afegir a favorits" onclick="event.preventDefault(); this.classList.toggle('is-favorite');">♥</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">{{ obra.titol }}</h3>
@@ -112,9 +113,10 @@
             <div class="carousel-track">
                 <!-- Projecte 1 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-metafisica.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/aristotil-metafisica-portada.png" alt="Portada Metafísica">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Metafísica</h3>
@@ -131,9 +133,10 @@
 
                 <!-- Projecte 2 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-odissea.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/homer-odissea-portada.png" alt="Portada L'Odissea">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">L'Odissea</h3>
@@ -150,9 +153,10 @@
 
                 <!-- Projecte 3 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-meditacions.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/marc-aureli-meditacions-portada.png" alt="Portada Meditacions">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Meditacions</h3>
@@ -169,9 +173,10 @@
 
                 <!-- Projecte 4 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-confessions.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/sant-agusti-confessions-portada.png" alt="Portada Confessions">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Confessions</h3>
@@ -188,9 +193,10 @@
 
                 <!-- Projecte 5 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-eneida.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/virgili-eneida-portada.png" alt="Portada Eneida">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Eneida</h3>
@@ -207,9 +213,10 @@
 
                 <!-- Projecte 6 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-fedo.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/plato-fedo-portada.png" alt="Portada Fedó">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Fedó</h3>
@@ -226,9 +233,10 @@
 
                 <!-- Projecte 7 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-zaratustra.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/nietzsche-zaratustra-portada.png" alt="Portada Així parlà Zaratustra">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Així parlà Zaratustra</h3>
@@ -245,9 +253,10 @@
 
                 <!-- Projecte 8 -->
                 <article class="work-card-carousel crowdfunding-card">
-                    <a href="#" class="work-card-link">
+                    <a href="{{ base_url }}micromecenatge-tao-te-ching.html" class="work-card-link">
                         <div class="work-cover">
                             <img src="{{ base_url }}assets/portades/lao-tse-tao-te-ching-portada.png" alt="Portada Tao Te Ching">
+                            <button class="btn-action btn-cart" title="Participar al micromecenatge" onclick="event.preventDefault();">🛒</button>
                         </div>
                         <div class="work-info">
                             <h3 class="work-title">Tao Te Ching</h3>
@@ -349,7 +358,9 @@
             </article>
         </div>
 
-        <a href="{{ base_url }}mecenatge.html" class="how-cta">Més informació sobre el mecenatge →</a>
+        <div style="text-align: center; margin-top: 0.25rem;">
+            <a href="{{ base_url }}mecenatge.html" class="btn-mecenatge">💝 Mecenatge</a>
+        </div>
     </div>
 </section>
 {% endblock %}

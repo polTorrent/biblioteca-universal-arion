@@ -1,0 +1,131 @@
+{
+  "mecenatges": [
+    {
+      "id": "mec_001",
+      "tipus": "col·lectiu",
+      "obra_id": "metafisica",
+      "titol": "Metafísica",
+      "autor": "Aristòtil",
+      "portada": "aristotil-metafisica-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo01", "usuari_nom": "Maria G.", "import": 1, "data": "2026-01-27" }
+      ],
+      "total": 1,
+      "objectiu": 5,
+      "estat": "actiu",
+      "data_creacio": "2026-01-25"
+    },
+    {
+      "id": "mec_002",
+      "tipus": "col·lectiu",
+      "obra_id": "odissea",
+      "titol": "L'Odissea",
+      "autor": "Homer",
+      "portada": "homer-odissea-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo02", "usuari_nom": "Joan P.", "import": 20, "data": "2026-01-20" },
+        { "usuari_id": "usr_demo03", "usuari_nom": "Pere S.", "import": 10, "data": "2026-01-22" }
+      ],
+      "total": 30,
+      "objectiu": 50,
+      "estat": "actiu",
+      "data_creacio": "2026-01-18"
+    },
+    {
+      "id": "mec_003",
+      "tipus": "col·lectiu",
+      "obra_id": "meditacions",
+      "titol": "Meditacions",
+      "autor": "Marc Aureli",
+      "portada": "marc-aureli-meditacions-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo04", "usuari_nom": "Anna M.", "import": 10, "data": "2026-01-15" },
+        { "usuari_id": "usr_demo05", "usuari_nom": "Carles R.", "import": 5, "data": "2026-01-18" },
+        { "usuari_id": "usr_demo06", "usuari_nom": "Laura F.", "import": 2, "data": "2026-01-22" }
+      ],
+      "total": 17,
+      "objectiu": 20,
+      "estat": "actiu",
+      "data_creacio": "2026-01-10"
+    },
+    {
+      "id": "mec_004",
+      "tipus": "col·lectiu",
+      "obra_id": "confessions",
+      "titol": "Confessions",
+      "autor": "Sant Agustí",
+      "portada": "sant-agusti-confessions-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo07", "usuari_nom": "Marc T.", "import": 3, "data": "2026-01-26" }
+      ],
+      "total": 3,
+      "objectiu": 30,
+      "estat": "actiu",
+      "data_creacio": "2026-01-24"
+    },
+    {
+      "id": "mec_005",
+      "tipus": "col·lectiu",
+      "obra_id": "eneida",
+      "titol": "Eneida",
+      "autor": "Virgili",
+      "portada": "virgili-eneida-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo08", "usuari_nom": "Núria V.", "import": 15, "data": "2026-01-20" },
+        { "usuari_id": "usr_demo09", "usuari_nom": "Jordi B.", "import": 10, "data": "2026-01-23" }
+      ],
+      "total": 25,
+      "objectiu": 40,
+      "estat": "actiu",
+      "data_creacio": "2026-01-15"
+    },
+    {
+      "id": "mec_006",
+      "tipus": "col·lectiu",
+      "obra_id": "fedo",
+      "titol": "Fedó",
+      "autor": "Plató",
+      "portada": "plato-fedo-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo10", "usuari_nom": "Montse C.", "import": 5, "data": "2026-01-25" }
+      ],
+      "total": 5,
+      "objectiu": 25,
+      "estat": "actiu",
+      "data_creacio": "2026-01-22"
+    },
+    {
+      "id": "mec_007",
+      "tipus": "col·lectiu",
+      "obra_id": "zaratustra",
+      "titol": "Així parlà Zaratustra",
+      "autor": "Nietzsche",
+      "portada": "nietzsche-zaratustra-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo11", "usuari_nom": "Ferran D.", "import": 5, "data": "2026-01-18" },
+        { "usuari_id": "usr_demo12", "usuari_nom": "Elena G.", "import": 5, "data": "2026-01-21" }
+      ],
+      "total": 10,
+      "objectiu": 40,
+      "estat": "actiu",
+      "data_creacio": "2026-01-12"
+    },
+    {
+      "id": "mec_008",
+      "tipus": "col·lectiu",
+      "obra_id": "tao-te-ching",
+      "titol": "Tao Te Ching",
+      "autor": "Lao Tse",
+      "portada": "lao-tse-tao-te-ching-portada.png",
+      "aportacions": [
+        { "usuari_id": "usr_demo13", "usuari_nom": "Oriol H.", "import": 10, "data": "2026-01-15" },
+        { "usuari_id": "usr_demo14", "usuari_nom": "Sílvia I.", "import": 5, "data": "2026-01-20" },
+        { "usuari_id": "usr_demo15", "usuari_nom": "Pau J.", "import": 4, "data": "2026-01-25" }
+      ],
+      "total": 19,
+      "objectiu": 20,
+      "estat": "actiu",
+      "data_creacio": "2026-01-08"
+    }
+  ]
+}

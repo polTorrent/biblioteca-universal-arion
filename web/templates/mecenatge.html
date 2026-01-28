@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block title %}Mecenatge - Biblioteca Arion{% endblock %}
+{% block description %}Fes possible una traducció. Ajuda a traduir els clàssics universals al català amb el teu suport.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+{% endblock %}
+
+{% block content %}
+<!-- Tipus de Mecenatge -->
+<section class="mecenatge-tipus" id="tipus-mecenatge">
+    <h2>Tria el teu tipus de mecenatge</h2>
+
+    <div class="tipus-grid">
+        <!-- Mecenatge Individual -->
+        <div class="tipus-card">
+            <div class="tipus-card-header">
+                <span class="tipus-icon">💎</span>
+                <h3>Mecenatge Individual</h3>
+            </div>
+            <p class="tipus-card-description">
+                Finança tu sol/a una traducció completa i converteix-te en el mecenes principal de l'obra.
+            </p>
+            <ul class="tipus-beneficis">
+                <li>Tria l'obra que vols veure traduïda</li>
+                <li>Crèdits com a mecenes principal</li>
+                <li>Accés anticipat a la traducció</li>
+                <li>Subscripció Pro vitalícia</li>
+                <li>Nom a la pàgina de crèdits de l'obra</li>
+                <li>Agraïment personalitzat</li>
+            </ul>
+            <div class="tipus-preu">
+                Cost: <strong>40€ - 250€</strong> (segons extensió)
+            </div>
+            <div class="tipus-buttons">
+                <a href="#buscador" class="btn-tipus btn-tipus-primary">🔍 Buscar obra</a>
+                <a href="proposta-traduccio.html" class="btn-tipus btn-tipus-secondary">📝 Proposar nova</a>
+            </div>
+        </div>
+
+        <!-- Micromecenatge Col·lectiu -->
+        <div class="tipus-card destacat">
+            <div class="tipus-card-header">
+                <span class="tipus-icon">👥</span>
+                <h3>Micromecenatge</h3>
+            </div>
+            <p class="tipus-card-description">
+                Uneix-te a altres lectors per fer possible una traducció entre tots. Cada euro compta.
+            </p>
+            <ul class="tipus-beneficis">
+                <li>Aporta des d'1€</li>
+                <li>Progrés visible en temps real</li>
+                <li>Crèdits com a micromecenes</li>
+                <li>Accés a la comunitat (Discord)</li>
+                <li>Distintiu especial al perfil</li>
+                <li>Votacions sobre futures traduccions</li>
+            </ul>
+            <div class="tipus-preu">
+                Aporta des de <strong>1€</strong>
+            </div>
+            <div class="tipus-buttons">
+                <a href="#projectes-actius" class="btn-tipus btn-tipus-primary">👀 Veure projectes</a>
+                <a href="proposta-traduccio.html" class="btn-tipus btn-tipus-secondary">➕ Crear projecte</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Buscador d'Obres -->
+<section class="buscador-section" id="buscador">
+    <div class="buscador-container">
+        <h2>🔍 Busca una obra</h2>
+        <p style="text-align: center; color: var(--color-text-secondary); margin-bottom: var(--spacing-lg);">
+            Cerca entre el nostre catàleg d'obres disponibles per a mecenatge
+        </p>
+
+        <form class="buscador-form">
+            <input type="text" id="cerca-obra" placeholder="Títol, autor o tema..." autocomplete="off">
+            <button type="submit" aria-label="Cercar">🔍</button>
+        </form>
+
+        <div id="resultats-cerca" style="display: none;"></div>
+
+        <div class="no-resultats" hidden>
+            <p>No hem trobat aquesta obra al catàleg.</p>
+            <p style="color: var(--color-text-secondary); font-size: var(--font-size-sm);">
+                Vols que la traduïm? Proposa-la i altres usuaris podran votar-la.
+            </p>
+            <a href="proposta-traduccio.html" class="btn-tipus btn-tipus-primary" style="display: inline-block; margin-top: var(--spacing-md);">
+                📝 Proposa la traducció
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Projectes Actius -->
+<section class="projectes-section" id="projectes-actius">
+    <h2>Projectes de micromecenatge actius</h2>
+    <p class="section-intro">
+        Aquestes obres estan esperant el suport de la comunitat. Uneix-te i fes possible la traducció.
+    </p>
+
+    <div class="projectes-grid" id="projectes-actius">
+        <!-- Es carrega dinàmicament amb JavaScript -->
+        <p style="text-align: center; grid-column: 1/-1; color: var(--color-text-muted);">
+            Carregant projectes...
+        </p>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section" id="faq">
+    <div class="faq-container">
+        <h2>Preguntes freqüents</h2>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Què és el mecenatge?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>El mecenatge és una forma de suport econòmic a projectes culturals. A la Biblioteca Arion, els mecenes financen la traducció d'obres clàssiques universals al català.</p>
+                    <p>Hi ha dues modalitats: el mecenatge individual (finances tota l'obra tu sol/a) i el micromecenatge col·lectiu (moltes persones aporten petites quantitats per finançar una obra entre tots).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Com funciona el micromecenatge?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Cada obra té un objectiu de finançament (el cost de la traducció). Qualsevol persona pot aportar des d'1€. Quan s'arriba al 100% de l'objectiu, es comença la traducció.</p>
+                    <p>Pots seguir el progrés en temps real i veure quants mecenes hi han participat. Si el projecte no s'acompleix en 3 mesos, es retornen les aportacions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Quins beneficis tinc com a mecenes?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Segons el tipus i la quantitat aportada:</p>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li><strong>1€+:</strong> Nom als crèdits de l'obra</li>
+                        <li><strong>5€+:</strong> Distintiu Discord + accés a la comunitat</li>
+                        <li><strong>10€+:</strong> 1 mes de subscripció Pro</li>
+                        <li><strong>20€+:</strong> 3 mesos de subscripció Pro</li>
+                        <li><strong>Mecenes principal:</strong> Subscripció Pro vitalícia + agraïment personalitzat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Quan es publica l'obra traduïda?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Un cop finançada, la traducció comença immediatament. El temps depèn de l'extensió de l'obra:</p>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li><strong>Obres curtes (40-60€):</strong> 2-4 setmanes</li>
+                        <li><strong>Obres mitjanes (80-120€):</strong> 1-2 mesos</li>
+                        <li><strong>Obres llargues (150€+):</strong> 2-4 mesos</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">Els mecenes reben accés anticipat durant el procés de revisió.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Puc recuperar els diners si canvio d'opinió?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>En el micromecenatge col·lectiu, si el projecte no arriba al 100% en 3 mesos, es retornen automàticament totes les aportacions.</p>
+                    <p>En el mecenatge individual, un cop iniciada la traducció no es poden retornar els diners, ja que el treball ja s'ha començat.</p>
+                    <p>Si tens algun problema, contacta'ns a <a href="mailto:biblioteca@arion.cat">biblioteca@arion.cat</a> i ho solucionarem.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">
+                <span>Com puc proposar una obra nova?</span>
+                <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+                <div class="faq-answer-content">
+                    <p>Utilitza el formulari de <a href="proposta-traduccio.html">proposta de traducció</a>. Només cal que ens diguis:</p>
+                    <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                        <li>Títol i autor de l'obra</li>
+                        <li>Idioma original</li>
+                        <li>Per què creus que és important traduir-la</li>
+                    </ul>
+                    <p style="margin-top: 0.5rem;">Revisarem la proposta i, si és viable, la publicarem perquè altres usuaris puguin votar-la i finançar-la.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Final -->
+<section style="text-align: center; padding: var(--spacing-3xl) var(--spacing-lg); background: var(--color-bg-tertiary);">
+    <h2 style="border: none; margin-bottom: var(--spacing-md);">Vols ajudar però no saps per on començar?</h2>
+    <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl); max-width: 500px; margin-left: auto; margin-right: auto;">
+        Envia'ns un correu i t'ajudarem a trobar l'obra perfecta per a tu. O uneix-te a la nostra comunitat de Discord.
+    </p>
+    <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+        <a href="mailto:biblioteca@arion.cat" class="btn-hero btn-hero-secondary" style="padding: var(--spacing-md) var(--spacing-xl);">
+            ✉️ Contacta'ns
+        </a>
+        <a href="https://discord.gg/arion" target="_blank" rel="noopener" class="btn-hero btn-hero-primary" style="padding: var(--spacing-md) var(--spacing-xl);">
+            💬 Uneix-te a Discord
+        </a>
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/mecenatge.js"></script>
+{% endblock %}

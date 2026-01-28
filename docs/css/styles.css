@@ -1511,6 +1511,88 @@ blockquote cite::before {
     font-size: var(--font-size-xs);
 }
 
+/* Botons d'acció a les portades */
+.work-cover .btn-action {
+    position: absolute;
+    bottom: var(--spacing-sm);
+    right: var(--spacing-sm);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.work-card-link:hover .btn-action,
+.work-card-carousel:hover .btn-action {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.btn-action:hover {
+    transform: scale(1.15) !important;
+}
+
+/* Botó favorit (cor) */
+.btn-favorite {
+    background: rgba(255, 255, 255, 0.95);
+    color: #e74c3c;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.btn-favorite:hover {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-favorite.is-favorite {
+    background: #e74c3c;
+    color: white;
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Botó favorit centrat sota la portada */
+.btn-favorite-below {
+    display: block;
+    margin: var(--spacing-sm) auto 0;
+    background: transparent;
+    border: none;
+    font-size: 1.4rem;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 0.25rem 0.5rem;
+}
+
+.btn-favorite-below:hover {
+    color: #e74c3c;
+    transform: scale(1.2);
+}
+
+.btn-favorite-below.is-favorite {
+    color: #e74c3c;
+}
+
+/* Botó carret (micromecenatge) */
+.btn-cart {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8960C 100%);
+    color: white;
+    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+.btn-cart:hover {
+    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5);
+}
+
 .work-info {
     text-align: center;
 }
@@ -1721,19 +1803,24 @@ blockquote cite::before {
     display: none;
 }
 
-/* CTA final */
-.how-cta {
-    display: block;
-    text-align: center;
+/* Botó Mecenatge destacat */
+.btn-mecenatge {
+    display: inline-block;
+    padding: 1rem 2.5rem;
     font-family: var(--font-ui);
-    font-size: 0.9rem;
-    color: var(--color-accent);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(135deg, #D4AF37 0%, #B8960C 100%);
+    border-radius: 50px;
     text-decoration: none;
-    margin-top: 2rem;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    transition: all 0.3s ease;
 }
 
-.how-cta:hover {
-    text-decoration: underline;
+.btn-mecenatge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
 /* ─── DESKTOP: Timeline horitzontal ─── */
@@ -1756,7 +1843,7 @@ blockquote cite::before {
         align-items: flex-start;
         gap: 0;
         max-width: 900px;
-        padding-bottom: 180px; /* Espai pel tooltip */
+        padding-bottom: 80px; /* Espai pel tooltip */
     }
 
     .how-step {
@@ -1820,19 +1907,10 @@ blockquote cite::before {
         display: block;
         position: absolute;
         top: 28px;
-        left: calc(50% + 34px);
-        width: calc(100% - 68px);
+        left: calc(50% + 28px);
+        width: calc(100% - 56px);
         height: 2px;
         background: var(--color-border);
-    }
-
-    .how-step-line::after {
-        content: '→';
-        position: absolute;
-        right: -12px;
-        top: -10px;
-        color: var(--color-accent-light);
-        font-size: 1rem;
     }
 
     .how-step-final .how-step-line,

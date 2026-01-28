@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ajuda a finançar la traducció de La Divina Comèdia de Dante Alighieri. 82€ de 200€ recaptats.">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biblioteca Arion">
+    <meta property="og:description" content="Traduccions obertes de clàssics universals al català">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biblioteca-arion.cat">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>La Divina Comèdia - Micromecenatge - Biblioteca Arion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<link rel="stylesheet" href="css/mecenatge.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<article class="detall-micromecenatge">
+    <!-- Header amb portada i info -->
+    <header class="detall-header">
+        <div class="detall-portada">
+            
+            <div class="fitxa-portada" style="height: 400px; display: flex; align-items: center; justify-content: center; background: var(--color-bg-tertiary); border-radius: var(--radius-lg);">
+                <span class="fitxa-placeholder" style="font-size: 6rem;">L</span>
+            </div>
+            
+        </div>
+
+        <div class="detall-info">
+            <h1>La Divina Comèdia</h1>
+            
+            <p class="detall-titol-original">La Divina Commedia</p>
+            
+
+            <div class="detall-meta">
+                <span class="detall-meta-item">
+                    <strong>📖</strong> Dante Alighieri
+                </span>
+                <span class="detall-meta-item">
+                    <strong>🌍</strong> Italià
+                </span>
+                <span class="detall-meta-item">
+                    <strong>📅</strong> 1321
+                </span>
+                <span class="detall-meta-item">
+                    <strong>🏷️</strong> Poesia
+                </span>
+            </div>
+
+            <!-- Barra de progrés gran -->
+            <div class="detall-progres">
+                <div class="barra-progres">
+                    <div class="progres-fill" style="width: 41%"></div>
+                </div>
+                <div class="progres-stats">
+                    <span>
+                        <span class="progres-recaptat">82€</span>
+                        <span class="progres-objectiu">de 200€</span>
+                    </span>
+                    <span class="progres-percentatge">41%</span>
+                </div>
+                <p class="mecenes-count" style="margin-top: var(--spacing-sm); margin-bottom: 0;">
+                    👥 15 mecenes
+                </p>
+            </div>
+
+            <a href="pagament.html?obra=divina-comedia" class="btn-aportar" style="display: block; text-align: center; margin-top: var(--spacing-lg);"
+               onclick="sessionStorage.setItem('mecenatge_obra', JSON.stringify({"any": 1321, "autor": "Dante Alighieri", "cost_traduccio": 200, "descripcio": "El gran poema \u00e9pic de Dante que narra el viatge per l\u0027Infern, el Purgatori i el Parad\u00eds. Una de les obres fonamentals de la literatura universal.", "estat": "crowdfunding", "extensio": "molt-llarga", "genere": "poesia", "id": "divina-comedia", "idioma": "itali\u00e0", "mecenes": 15, "recaptat": 82, "titol": "La Divina Com\u00e8dia", "titol_original": "La Divina Commedia"}))">
+                💝 Aportar a aquest projecte
+            </a>
+        </div>
+    </header>
+
+    <!-- Descripció -->
+    <section style="margin-bottom: var(--spacing-2xl);">
+        <h2 style="border: none;">Sobre l'obra</h2>
+        <p style="font-size: var(--font-size-lg); line-height: 1.8; color: var(--color-text-secondary);">
+            El gran poema épic de Dante que narra el viatge per l'Infern, el Purgatori i el Paradís. Una de les obres fonamentals de la literatura universal.
+        </p>
+    </section>
+
+    <!-- Nivells de recompensa -->
+    <section class="recompenses-section">
+        <h2>Tria la teva aportació</h2>
+        <div class="nivells-grid">
+            <div class="nivell-card" data-import="1">
+                <div class="nivell-preu">1€</div>
+                <div class="nivell-nom">Micromecenes</div>
+                <div class="nivell-descripcio">
+                    El teu nom apareixerà als crèdits de la traducció com a micromecenes.
+                </div>
+            </div>
+
+            <div class="nivell-card destacat" data-import="5">
+                <div class="nivell-preu">5€</div>
+                <div class="nivell-nom">Mecenes</div>
+                <div class="nivell-descripcio">
+                    Crèdits + distintiu especial al Discord de la comunitat Arion.
+                </div>
+            </div>
+
+            <div class="nivell-card" data-import="10">
+                <div class="nivell-preu">10€</div>
+                <div class="nivell-nom">Mecenes Plus</div>
+                <div class="nivell-descripcio">
+                    Tot l'anterior + 1 mes de subscripció Pro amb accés a totes les funcions.
+                </div>
+            </div>
+
+            <div class="nivell-card" data-import="20">
+                <div class="nivell-preu">20€</div>
+                <div class="nivell-nom">Gran Mecenes</div>
+                <div class="nivell-descripcio">
+                    Tot l'anterior + 3 mesos de subscripció Pro + accés anticipat a la traducció.
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--spacing-xl);">
+            <a href="pagament.html?obra=divina-comedia" class="btn-aportar" style="display: inline-block; padding: var(--spacing-lg) var(--spacing-2xl);"
+               onclick="sessionStorage.setItem('mecenatge_obra', JSON.stringify({"any": 1321, "autor": "Dante Alighieri", "cost_traduccio": 200, "descripcio": "El gran poema \u00e9pic de Dante que narra el viatge per l\u0027Infern, el Purgatori i el Parad\u00eds. Una de les obres fonamentals de la literatura universal.", "estat": "crowdfunding", "extensio": "molt-llarga", "genere": "poesia", "id": "divina-comedia", "idioma": "itali\u00e0", "mecenes": 15, "recaptat": 82, "titol": "La Divina Com\u00e8dia", "titol_original": "La Divina Commedia"}))">
+                💝 Aportar ara
+            </a>
+        </div>
+    </section>
+
+    <!-- Llista de mecenes -->
+    
+
+    <!-- Com funciona -->
+    <section style="background: var(--color-bg-secondary); padding: var(--spacing-xl); border-radius: var(--radius-lg); margin-bottom: var(--spacing-2xl);">
+        <h2 style="border: none; margin-top: 0;">Com funciona?</h2>
+        <ol style="list-style: none; counter-reset: step;">
+            <li style="margin-bottom: var(--spacing-md); display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">1</span>
+                <div>
+                    <strong>Tria la teva aportació</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">Des d'1€, cada euro ens apropa a l'objectiu.</p>
+                </div>
+            </li>
+            <li style="margin-bottom: var(--spacing-md); display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">2</span>
+                <div>
+                    <strong>El progrés es mostra en temps real</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">Pots veure com s'apropa l'objectiu gràcies a tots els mecenes.</p>
+                </div>
+            </li>
+            <li style="margin-bottom: var(--spacing-md); display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">3</span>
+                <div>
+                    <strong>Quan s'arriba al 100%, comencem</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">La traducció s'inicia immediatament i rebràs notificacions del progrés.</p>
+                </div>
+            </li>
+            <li style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">4</span>
+                <div>
+                    <strong>Es publica l'obra</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">Els mecenes reben accés anticipat i apareixen als crèdits.</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Compartir -->
+    <section style="text-align: center; padding: var(--spacing-xl) 0;">
+        <h2 style="border: none;">Comparteix aquest projecte</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-lg);">
+            Com més gent el conegui, més ràpid arribarem a l'objectiu!
+        </p>
+        <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+            <a href="https://twitter.com/intent/tweet?text=Ajuda a traduir La Divina Comèdia al català!&url=https://biblioteca-arion.catmicromecenatge-divina-comedia.html"
+               target="_blank" rel="noopener" class="btn-tipus btn-tipus-secondary">
+                🐦 Twitter
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://biblioteca-arion.catmicromecenatge-divina-comedia.html"
+               target="_blank" rel="noopener" class="btn-tipus btn-tipus-secondary">
+                📘 Facebook
+            </a>
+            <button onclick="navigator.clipboard.writeText(window.location.href); alert('Enllaç copiat!');" class="btn-tipus btn-tipus-secondary">
+                🔗 Copiar enllaç
+            </button>
+        </div>
+    </section>
+
+    <!-- Tornar -->
+    <p style="text-align: center; margin-top: var(--spacing-xl);">
+        <a href="mecenatge.html" style="color: var(--color-text-muted);">← Tornar al mecenatge</a>
+    </p>
+</article>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+    
+<script src="js/mecenatge.js"></script>
+<script>
+// Guardar obra al sessionStorage per al pagament
+document.querySelectorAll('.nivell-card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelectorAll('.nivell-card').forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+
+        const obra = {"any": 1321, "autor": "Dante Alighieri", "cost_traduccio": 200, "descripcio": "El gran poema \u00e9pic de Dante que narra el viatge per l\u0027Infern, el Purgatori i el Parad\u00eds. Una de les obres fonamentals de la literatura universal.", "estat": "crowdfunding", "extensio": "molt-llarga", "genere": "poesia", "id": "divina-comedia", "idioma": "itali\u00e0", "mecenes": 15, "recaptat": 82, "titol": "La Divina Com\u00e8dia", "titol_original": "La Divina Commedia"};
+        obra.selectedImport = parseInt(this.dataset.import);
+        sessionStorage.setItem('mecenatge_obra', JSON.stringify(obra));
+
+        if (window.ArionMecenatge) {
+            window.ArionMecenatge.MecenatgeManager.currentImport = parseInt(this.dataset.import);
+        }
+    });
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Entrar - Biblioteca Arion{% endblock %}
+{% block description %}Inicia sessió al teu compte de la Biblioteca Arion.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+{% endblock %}
+
+{% block content %}
+<div class="form-page">
+    <h1>Entrar al teu compte</h1>
+
+    <div class="form-container">
+        <form id="form-login">
+            <div class="form-group">
+                <label for="email">Correu electrònic</label>
+                <input type="email" id="email" name="email" required placeholder="el-teu-email@example.com">
+            </div>
+
+            <div class="form-group">
+                <label for="password">Contrasenya</label>
+                <input type="password" id="password" name="password" required placeholder="La teva contrasenya">
+            </div>
+
+            <div class="form-group">
+                <a href="#" style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                    He oblidat la contrasenya
+                </a>
+            </div>
+
+            <button type="submit" class="btn-submit">
+                Entrar
+            </button>
+        </form>
+
+        <div class="form-footer">
+            <p>Encara no tens compte?</p>
+            <a href="registre.html">Crea'n un de nou</a>
+        </div>
+    </div>
+
+    <p style="text-align: center; margin-top: var(--spacing-xl); color: var(--color-text-muted); font-size: var(--font-size-sm);">
+        ⚠️ Això és una simulació. Les dades es guarden només al teu navegador.
+    </p>
+</div>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/mecenatge.js"></script>
+{% endblock %}
