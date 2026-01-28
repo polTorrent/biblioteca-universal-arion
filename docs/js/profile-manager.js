@@ -22,7 +22,16 @@
     // ─────────────────────────────────────────────────────────────────
 
     async function init() {
-        // Verificar autenticació
+        // Esperar que ArionAuth estigui inicialitzat
+        let attempts = 0;
+        const maxAttempts = 20; // Màxim 2 segons (20 x 100ms)
+
+        while (!window.ArionAuth?.isLoggedIn() && attempts < maxAttempts) {
+            await new Promise(resolve => setTimeout(resolve, 100));
+            attempts++;
+        }
+
+        // Verificar autenticació després d'esperar
         if (!window.ArionAuth?.isLoggedIn()) {
             window.location.href = 'login.html?redirect=perfil';
             return;
