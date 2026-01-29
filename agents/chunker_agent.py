@@ -4,14 +4,14 @@ import re
 import xml.etree.ElementTree as ET
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Literal
+from typing import Literal, TYPE_CHECKING
 
 from pydantic import BaseModel, Field
 
-from typing import TYPE_CHECKING
-
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
-from agents.translator_agent import SupportedLanguage
+
+# Llengües suportades
+SupportedLanguage = Literal["llatí", "grec", "anglès", "alemany", "francès", "japonès", "xinès"]
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger

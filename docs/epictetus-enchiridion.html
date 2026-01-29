@@ -33,6 +33,48 @@
     
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -241,6 +283,130 @@
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -316,6 +482,9 @@
     <!-- Main Content -->
     <main>
         
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -370,23 +539,74 @@
                         </div>
                         
 
-                        
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-revisat">revisat</span>
-                        </div>
-                        
-
-                        
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            8.5/10
-                        </div>
-                        
                     </div>
 
                     
                     <p class="work-description">Manual pràctic de filosofia estoica que presenta els principis fonamentals per viure amb serenitat: la distinció entre el que depèn de nosaltres i el que no, el control de les nostres opinions i desitjos.</p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                8.5/10
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Capítols</strong>
+                                5
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules original</strong>
+                                487
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules traducció</strong>
+                                512
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-25
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -423,95 +643,80 @@
                     <h2 class="section-title">Κεφάλαιον 1</h2>
 
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <span class="section-number">[1]</span>
                     <p>Τῶν ὄντων τὰ μέν ἐστιν ἐφ&rsquo; ἡμῖν, τὰ δὲ οὐκ ἐφ&rsquo; ἡμῖν. ἐφ&rsquo; ἡμῖν μὲν ὑπόληψις, ὁρμή, ὄρεξις, ἔκκλισις καὶ ἑνὶ λόγῳ ὅσα ἡμέτερα ἔργα· οὐκ ἐφ&rsquo; ἡμῖν δὲ τὸ σῶμα, ἡ κτῆσις, δόξαι, ἀρχαὶ καὶ ἑνὶ λόγῳ ὅσα οὐχ ἡμέτερα ἔργα.</p>
                 </div>
                 
 
                 <div class="section" id="orig-2" data-parallel="trad-2">
-                    <span class="section-number">[2]</span>
                     <p>καὶ τὰ μὲν ἐφ&rsquo; ἡμῖν ἐστι φύσει ἐλεύθερα, ἀκώλυτα, ἀπαραπόδιστα· τὰ δὲ οὐκ ἐφ&rsquo; ἡμῖν ἀσθενῆ, δοῦλα, κωλυτά, ἀλλότρια.</p>
                 </div>
                 
 
                 <div class="section" id="orig-3" data-parallel="trad-3">
-                    <span class="section-number">[3]</span>
                     <p>μέμνησο οὖν ὅτι, ἐὰν τὰ φύσει δοῦλα ἐλεύθερα οἴῃ καὶ τὰ ἀλλότρια ἴδια, ἐμποδισθήσῃ, πενθήσεις, ταραχθήσῃ, μέμψῃ θεούς τε καὶ ἀνθρώπους· ἐὰν δὲ τὸ σὸν μόνον οἴῃ σόν, τὸ δὲ ἀλλότριον, ὥσπερ ἐστίν, ἀλλότριον, οὐδείς σε ἀναγκάσει οὐδέποτε, οὐδεὶς κωλύσει, οὐ μέμψῃ οὐδένα, οὐκ ἐγκαλέσεις τινί, οὐδὲν ἄκων πράξεις, οὐδείς σε βλάψει, ἐχθρὸν οὐχ ἕξεις, οὐδὲ γὰρ βλαβερόν τι πείσῃ.</p>
                 </div>
                 
 
                 <div class="section" id="orig-4" data-parallel="trad-4">
-                    <span class="section-number">[4]</span>
                     <p>τηλικούτων οὖν ἐφιέμενος μέμνησο ὅτι δεῖ σε οὐ μετρίως αὐτῶν ἀντέχεσθαι, ἀλλὰ τὰ μὲν ἀφιέναι παντελῶς, τὰ δὲ ὑπερτίθεσθαι πρὸς τὸ νῦν.</p>
                 </div>
                 
 
                 <div class="section" id="orig-5" data-parallel="trad-5">
-                    <span class="section-number">[5]</span>
                     <p>εὐθὺς οὖν πρὸς πᾶσαν φαντασίαν τραχεῖαν ἔθιζε λέγειν ὅτι φαντασία εἶ καὶ οὐ πάντως τὸ φαινόμενον· εἶτα ἐξέταζε αὐτὴν καὶ δοκίμαζε τοῖς κανόσιν οἷς ἔχεις, πρώτῳ δὲ τούτῳ καὶ μάλιστα, πότερον περὶ τὰ ἐφ&rsquo; ἡμῖν ἐστιν ἢ περὶ τὰ οὐκ ἐφ&rsquo; ἡμῖν· καὶ ἐὰν περὶ τῶν οὐκ ἐφ&rsquo; ἡμῖν, πρόχειρόν σοι ἔστω ὅτι οὐδὲν πρὸς ἐμέ.</p>
                 </div>
                 
 <h2 class="section-title">Κεφάλαιον 2</h2>
 
                 <div class="section" id="orig-6" data-parallel="trad-6">
-                    <span class="section-number">[6]</span>
                     <p>Μέμνησο ὅτι ὀρέξεως μὲν ἐπαγγελία ἐπιτυχία οὗ ὀρέγῃ, ἐκκλίσεως δὲ τὸ μὴ περιπεσεῖν ᾧ ἐκκλίνεις· καὶ ὁ μὲν ἀποτυγχάνων ὀρέξεως ἀτυχής, ὁ δὲ περιπίπτων ἐκκλίσεως δυστυχής.</p>
                 </div>
                 
 
                 <div class="section" id="orig-7" data-parallel="trad-7">
-                    <span class="section-number">[7]</span>
                     <p>ἂν μὲν οὖν μόνα ἐκκλίνῃς τὰ παρὰ φύσιν τῶν ἐπὶ σοί, οὐδενὶ περιπεσῇ ποτε ὧν ἐκκλίνεις· ἐὰν δὲ νόσον ἐκκλίνῃς ἢ θάνατον ἢ πενίαν, δυστυχήσεις.</p>
                 </div>
                 
 
                 <div class="section" id="orig-8" data-parallel="trad-8">
-                    <span class="section-number">[8]</span>
                     <p>ἆρον οὖν τὴν ἔκκλισιν ἀπὸ πάντων τῶν οὐκ ἐφ&rsquo; ἡμῖν καὶ μετάθες ἐπὶ τὰ παρὰ φύσιν τῶν ἐφ&rsquo; ἡμῖν.</p>
                 </div>
                 
 <h2 class="section-title">Κεφάλαιον 3</h2>
 
                 <div class="section" id="orig-9" data-parallel="trad-9">
-                    <span class="section-number">[9]</span>
                     <p>Ἐπὶ παντὸς τῶν ψυχαγωγούντων ἢ χρείαν παρεχόντων ἢ στεργομένων μέμνησο ἐπιλέγειν, ὁποῖόν ἐστιν, ἀρχόμενος ἀπὸ τῶν σμικροτάτων. ἐὰν χύτραν φιλῇς, εἰπὲ ὅτι χύτραν φιλῶ· συντριβείσης γὰρ αὐτῆς οὐ ταραχθήσῃ.</p>
                 </div>
                 
 
                 <div class="section" id="orig-10" data-parallel="trad-10">
-                    <span class="section-number">[10]</span>
                     <p>τέκνον καταφιλῶν ἢ γυναῖκα, εἰπὲ ὅτι ἄνθρωπον καταφιλῶ· ἀποθανόντος γὰρ αὐτοῦ οὐ ταραχθήσῃ.</p>
                 </div>
                 
 <h2 class="section-title">Κεφάλαιον 4</h2>
 
                 <div class="section" id="orig-11" data-parallel="trad-11">
-                    <span class="section-number">[11]</span>
                     <p>Ὅταν ἐπιχειρῇς πράξει τινί, ὑπομίμνῃσκε σεαυτὸν ὁποία ἐστὶν ἡ πράξις. ἐὰν λουσόμενος ἀπίῃς, πρόβαλλε σεαυτῷ τὰ γινόμενα ἐν βαλανείῳ, τοὺς ἀποράντους, τοὺς ἐπωθοῦντας, τοὺς λοιδοροῦντας, τοὺς κλέπτοντας.</p>
                 </div>
                 
 
                 <div class="section" id="orig-12" data-parallel="trad-12">
-                    <span class="section-number">[12]</span>
                     <p>καὶ οὕτως ἀσφαλέστερον ἐπιχειρήσεις τῷ πράγματι, ἐὰν εὐθὺς εἴπῃς ὅτι λούσασθαι θέλω καὶ τὴν ἐμαυτοῦ προαίρεσιν κατὰ φύσιν ἔχουσαν διατηρῆσαι.</p>
                 </div>
                 
 <h2 class="section-title">Κεφάλαιον 5</h2>
 
                 <div class="section" id="orig-13" data-parallel="trad-13">
-                    <span class="section-number">[13]</span>
                     <p>Ταράσσει τοὺς ἀνθρώπους οὐ τὰ πράγματα, ἀλλὰ τὰ περὶ τῶν πραγμάτων δόγματα. οἷον ὁ θάνατος οὐδὲν δεινόν· ἐπεὶ καὶ Σωκράτει ἂν ἐφαίνετο· ἀλλὰ τὸ δόγμα τὸ περὶ τοῦ θανάτου, ὅτι δεινόν, ἐκεῖνο τὸ δεινόν ἐστιν.</p>
                 </div>
                 
 
                 <div class="section" id="orig-14" data-parallel="trad-14">
-                    <span class="section-number">[14]</span>
                     <p>ὅταν οὖν ἐμποδιζώμεθα ἢ ταρασσώμεθα ἢ λυπώμεθα, μηδέποτε ἄλλον αἰτιώμεθα ἀλλ&rsquo; ἑαυτούς, τουτέστι τὰ ἑαυτῶν δόγματα.</p>
                 </div>
                 
 
                 <div class="section" id="orig-15" data-parallel="trad-15">
-                    <span class="section-number">[15]</span>
                     <p>ἀπαιδεύτου ἔργον τὸ ἄλλοις ἐγκαλεῖν ἐφ&rsquo; οἷς αὐτὸς πράττει κακῶς· ἀρχομένου παιδεύεσθαι τὸ ἑαυτῷ· πεπαιδευμένου τὸ μήτε ἄλλῳ μήτε ἑαυτῷ.</p>
                 </div>
                 
@@ -520,98 +725,77 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">Capítol 1</h2>
-
+                    
                 <div class="section" id="trad-1" data-parallel="orig-1">
-                    <span class="section-number">[1]</span>
-                    <p>De les coses que existeixen, unes <a href="#term-eph-hemin" class="term" data-term="eph-hemin">depenen de nosaltres</a><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> i altres no depenen de nosaltres. Depenen de nosaltres l&rsquo;<a href="#term-hypolepsis" class="term" data-term="hypolepsis">opinió</a>, l&rsquo;impuls, el desig, l&rsquo;aversió i, en una paraula, tot allò que és obra nostra; no depenen de nosaltres el cos, la propietat, la reputació, els càrrecs i, en una paraula, tot allò que no és obra nostra.</p>
-                </div>
-                
-
-                <div class="section" id="trad-2" data-parallel="orig-2">
-                    <span class="section-number">[2]</span>
                     <p>I les coses que depenen de nosaltres són per natura lliures, sense obstacles, sense impediments; però les que no depenen de nosaltres són febles, esclaves, plenes d&rsquo;obstacles, alienes.</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
-                    <span class="section-number">[3]</span>
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>Recorda, doncs, que si consideres lliures les coses que per natura són esclaves, i pròpies les que són alienes, trobaràs obstacles, et lamentaràs, et trastornaràs, culparàs déus i homes; però si consideres teu només allò que és teu, i alié allò que, tal com és, és alié, ningú mai no et forçarà, ningú no t&rsquo;impedirà res, no culparàs ningú, no acusaràs ningú, no faràs res contra la teva voluntat, ningú no et farà mal, no tindràs enemics, perquè no patiràs cap dany.<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup></p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
-                    <span class="section-number">[4]</span>
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p>Aspirant, doncs, a coses tan grans, recorda que cal que no te n&rsquo;apropïs amb mesura, sinó que abandonis completament unes coses i en deixis altres per a més endavant.</p>
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
-                    <span class="section-number">[5]</span>
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <p>Així doncs, davant de tota <a href="#term-phantasia" class="term" data-term="phantasia">representació</a><sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> penosa acostuma&rsquo;t a dir: «Ets una representació i no pas exactament allò que sembla»; després examina-la i posa-la a prova amb les regles que tens, i primer amb aquesta i principalment: si es refereix a les coses que depenen de nosaltres o a les que no en depenen; i si es refereix a les que no depenen de nosaltres, tingues a punt dir: «No és res que em concerneixi».</p>
                 </div>
                 
 <h2 class="section-title">Capítol 2</h2>
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
-                    <span class="section-number">[6]</span>
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <p>Recorda que el <a href="#term-orexis" class="term" data-term="orexis">desig</a> promet aconseguir allò que desitges, i l&rsquo;aversió promet no caure en allò que rebutges; i qui fracassa en el seu desig és desgraciat, i qui cau en allò que rebutja és infortunat.</p>
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
-                    <span class="section-number">[7]</span>
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <p>Si, doncs, només rebutges les coses contràries a la natura d&rsquo;entre les que depenen de tu, mai no cauràs en res del que rebutges; però si rebutges la malaltia o la mort o la pobresa, seràs infortunat.</p>
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
-                    <span class="section-number">[8]</span>
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <p>Retira, doncs, l&rsquo;aversió de totes les coses que no depenen de nosaltres i trasllada-la a les coses contràries a la natura d&rsquo;entre les que depenen de nosaltres.</p>
                 </div>
                 
 <h2 class="section-title">Capítol 3</h2>
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
-                    <span class="section-number">[9]</span>
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <p>Respecte a tot allò que t&rsquo;agrada o et serveix o estimes, recorda dir quin tipus de cosa és, començant per les més petites. Si estimes una gerra, digues: «Estimo una gerra»; perquè si es trenca, no et trastornaràs.<sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup></p>
                 </div>
                 
 
-                <div class="section" id="trad-10" data-parallel="orig-10">
-                    <span class="section-number">[10]</span>
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <p>Quan beses un fill o la dona, digues que beses un ésser humà; perquè si mor, no et trastornaràs.</p>
                 </div>
                 
 <h2 class="section-title">Capítol 4</h2>
 
-                <div class="section" id="trad-11" data-parallel="orig-11">
-                    <span class="section-number">[11]</span>
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <p>Quan t&rsquo;apropis a fer alguna acció, recorda&rsquo;t a tu mateix quin tipus d&rsquo;acció és. Si vas a banyar-te, representa&rsquo;t les coses que passen als banys: els que esquitxen, els que empenten, els que insulten, els que roben.</p>
                 </div>
                 
 
-                <div class="section" id="trad-12" data-parallel="orig-12">
-                    <span class="section-number">[12]</span>
+                <div class="section" id="trad-11" data-parallel="orig-11">
                     <p>I així t&rsquo;aproparàs més segurament a l&rsquo;assumpte si dius immediatament: «Vull banyar-me i mantenir la meva <a href="#term-prohairesis" class="term" data-term="prohairesis">decisió</a><sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> d&rsquo;acord amb la natura».</p>
                 </div>
                 
 <h2 class="section-title">Capítol 5</h2>
 
-                <div class="section" id="trad-13" data-parallel="orig-13">
-                    <span class="section-number">[13]</span>
+                <div class="section" id="trad-12" data-parallel="orig-12">
                     <p>El que trastorna els homes no són les coses, sinó les <a href="#term-dogma" class="term" data-term="dogma">opinions</a><sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> sobre les coses. Per exemple, la mort no és res de terrible, perquè si ho fos, també li hauria semblat terrible a Sòcrates; sinó que l&rsquo;opinió sobre la mort, que és terrible, això és el que és terrible.<sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup></p>
                 </div>
                 
 
-                <div class="section" id="trad-14" data-parallel="orig-14">
-                    <span class="section-number">[14]</span>
+                <div class="section" id="trad-13" data-parallel="orig-13">
                     <p>Quan, doncs, trobem obstacles o ens trastornem o ens entristim, no culpem mai un altre sinó nosaltres mateixos, és a dir, les nostres pròpies opinions.</p>
                 </div>
                 
 
-                <div class="section" id="trad-15" data-parallel="orig-15">
-                    <span class="section-number">[15]</span>
+                <div class="section" id="trad-14" data-parallel="orig-14">
                     <p>És propi de l&rsquo;ignorant culpar els altres per allò en què ell mateix actua malament; propi del qui comença a educar-se, culpar-se a si mateix; propi de l&rsquo;educat, no culpar ni l&rsquo;altre ni ell mateix.<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup></p>
                 </div>
                 
@@ -630,11 +814,29 @@
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari (6)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+                
+                <button class="section-toggle" id="notes-toggle" data-target="notes-section">
+                    <span>Notes (8)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+            </div>
+            
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         
-        <section class="notes-section" id="notes">
+        <section class="notes-section collapsible-section" id="notes-section">
             <h2>Notes</h2>
             
             <div class="note" id="nota-1">
@@ -648,7 +850,7 @@
                 
                 <p class="note-refs">Marc Aureli, *Meditacions* II.14; Sèneca, *Epístoles* 77.15</p>
                 
-                <a href="#ref-1" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-2">
@@ -660,7 +862,7 @@
                 </div>
                 <p>La llista de conseqüències negatives (obstacles, lament, trastorn, culpar déus i homes) contrasta amb les positives (ningú et forçarà, no tindràs enemics). És una estructura retòrica típica de les diatribes estoiques.</p>
                 
-                <a href="#ref-2" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-3">
@@ -674,7 +876,7 @@
                 
                 <p class="note-refs">Ciceró, *Academica* II.145; Diògenes Laerci VII.49-51</p>
                 
-                <a href="#ref-3" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-4">
@@ -686,7 +888,7 @@
                 </div>
                 <p>Exemple típic de la pedagogia estoica: començar amb objectes trivials per entrenar-se abans d&rsquo;aplicar els mateixos principis a situacions més difícils (com la pèrdua d&rsquo;éssers estimats).</p>
                 
-                <a href="#ref-4" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-5">
@@ -700,7 +902,7 @@
                 
                 <p class="note-refs">Long, A. A. (2002). *Epictetus: A Stoic and Socratic Guide to Life*. Oxford: Clarendon Press.</p>
                 
-                <a href="#ref-5" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-6">
@@ -712,7 +914,7 @@
                 </div>
                 <p>No en el sentit religiós modern, sinó com a «principi acceptat» o «creença». Els estoics sostenen que el patiment no ve de les coses sinó de les nostres creences sobre elles. Canviar les nostres creences ens permet canviar la nostra experiència.</p>
                 
-                <a href="#ref-6" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-7">
@@ -726,7 +928,7 @@
                 
                 <p class="note-refs">Plató, *Fedó* 117a-118a</p>
                 
-                <a href="#ref-7" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-8">
@@ -738,15 +940,15 @@
                 </div>
                 <p>Estructura tripartita típica: l&rsquo;ignorant, el principiant i l&rsquo;educat. Representa el progrés moral estoic: de culpar els altres (projecció), a culpar-se a si mateix (autoconeixement), a no culpar ningú (saviesa).</p>
                 
-                <a href="#ref-8" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
         </section>
         
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 
@@ -759,18 +961,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> el que depèn de nosaltres</p>
                         <p class="term-definition">Concepte central de l'ètica estoica que designa tot allò que està sota el nostre control: les nostres opinions, desitjos, aversions i accions. Oposat a «τὰ οὐκ ἐφ' ἡμῖν» (el que no depèn de nosaltres): cos, propietat, reputació, circumstàncies externes.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-3">[3]</a>, 
-                            
-                            <a href="#trad-5">[5]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -783,14 +974,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> opinió, suposició</p>
                         <p class="term-definition">Opinió o creença que formem sobre les coses. En l'estoïcisme, les nostres opinions són responsables de les nostres emocions: no són les coses en si les que ens afecten, sinó el que pensem sobre elles.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -803,14 +987,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> representació, impressió mental</p>
                         <p class="term-definition">Impressió o imatge mental que rebem del món exterior. Els estoics distingeixen entre la impressió inicial (involuntària) i l'assentiment que li donem (voluntari). El control d'aquest assentiment és clau per a la pràctica estoica.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-5">[5]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -823,16 +1000,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> desig, apetència</p>
                         <p class="term-definition">Moviment de l'ànima cap a quelcom percebut com a bo. Juntament amb l'aversió (ἔκκλισις), constitueix un dels impulsos bàsics que cal disciplinar segons la filosofia estoica.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-6">[6]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -845,14 +1013,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> decisió moral, voluntat</p>
                         <p class="term-definition">Terme clau en Epictetus que designa la capacitat de decisió racional i elecció moral. És allò que ens fa veritablement humans i l'única cosa completament nostra. La seu de la nostra llibertat interior i el que ens permet mantenir la serenitat.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-12">[12]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -865,16 +1026,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> opinió, principi, creença</p>
                         <p class="term-definition">Principi o creença acceptada. No en sentit religiós sinó filosòfic: les nostres opinions sobre les coses. Segons els estoics, el patiment ve de les nostres creences, no de les coses mateixes. Canviar les creences canvia l'experiència.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-14">[14]</a>, 
-                            
-                            <a href="#trad-15">[15]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -897,7 +1049,6 @@
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -906,93 +1057,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -1008,130 +1122,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -1149,6 +1377,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 

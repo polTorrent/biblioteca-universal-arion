@@ -357,44 +357,8 @@ window.editorialClassica = new EditorialClassica();
  * ═══════════════════════════════════════════════════════════════════
  */
 
-/**
- * Generar TOC automàtica
- */
-function generateTOC() {
-    const content = document.querySelector('.work-content, .text-container');
-    const tocContainer = document.querySelector('.toc-list');
-
-    if (!content || !tocContainer) return;
-
-    const headings = content.querySelectorAll('h2, h3, .section-title');
-
-    if (headings.length === 0) return;
-
-    const toc = document.createElement('ul');
-    toc.className = 'toc-items';
-
-    headings.forEach((heading, index) => {
-        // Assegurar que té ID
-        if (!heading.id) {
-            heading.id = `section-${index + 1}`;
-        }
-
-        const li = document.createElement('li');
-        li.className = heading.tagName === 'H3' ? 'toc-item-sub' : 'toc-item';
-
-        const a = document.createElement('a');
-        a.href = `#${heading.id}`;
-        a.textContent = heading.textContent;
-
-        li.appendChild(a);
-        toc.appendChild(li);
-    });
-
-    tocContainer.appendChild(toc);
-}
-
-// Generar TOC quan el document estigui llest
-document.addEventListener('DOMContentLoaded', generateTOC);
+// NOTA: La TOC per a les pàgines d'obres es genera al template obra.html
+// Aquesta funció s'ha eliminat per evitar duplicats
 
 /* ═══════════════════════════════════════════════════════════════════
    REDISSENY v2 - Carrusel i Cerca

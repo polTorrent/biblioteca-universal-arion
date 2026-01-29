@@ -33,6 +33,48 @@
     
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -241,6 +283,130 @@
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -316,6 +482,9 @@
     <!-- Main Content -->
     <main>
         
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -370,23 +539,90 @@
                         </div>
                         
 
-                        
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-revisat">revisat</span>
-                        </div>
-                        
-
-                        
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            8.5/10
-                        </div>
-                        
                     </div>
 
                     
                     <p class="work-description">Primer conte de Garxin, basat en la seva experiència com a soldat ferit a la Guerra russo-turca. Un soldat jau quatre dies al camp de batalla al costat del cadàver de l'enemic que ell mateix va matar. Obra pionera del flux de consciència i el realisme psicològic antibel·licista.</p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                8.5/10
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Capítols</strong>
+                                8
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules original</strong>
+                                4200
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules traducció</strong>
+                                4500
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-27
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Font original</strong>
+                                
+                                <a href="https://www.gutenberg.org/ebooks/author/1552" target="_blank" rel="noopener">The Signal and Other Stories (1912)</a>
+                                
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item" style="grid-column: 1 / -1;">
+                                <strong>Contribuïdors</strong>
+                                <ul style="margin: 0.5rem 0 0 1rem; padding: 0;">
+                                
+                                    <li>traducció IA inicial: Claude (Anthropic) (2026-01-27)</li>
+                                
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -420,16 +656,8 @@
                 <!-- Columna original -->
                 <section class="original-column">
                     <div class="column-header">Text original (rus)</div>
-                    <h2 class="section-title">Four Days</h2>
-
+                    
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <span class="section-number">[1]</span>
-                    <p><em>Vsevolod Garshin (1877)</em></p>
-                </div>
-                
-
-                <div class="section" id="orig-2" data-parallel="trad-2">
-                    <span class="section-number">[2]</span>
                     <h2>I</h2>
 <p>I recollect how we went at double-quick through the forest; how the bullets hummed; how the branches nipped off by them kept falling around us; how we tore through the hawthorn bushes. The firing became more rapid. As we came to the outskirt of the woods, something red, flashing here and there, appeared. Siderof, a little young soldier of Company I.—it occurred to me, &ldquo;how did he happen to be in our line?&rdquo;—suddenly sat down on the ground and gazed at me with great startled eyes. A stream of blood gushed from his mouth.</p>
 <p>Yes, I recollect that distinctly. I recollect also how, just as we reached the outskirt of the woods, I saw him in the thick bushes.</p>
@@ -440,8 +668,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-3" data-parallel="trad-3">
-                    <span class="section-number">[3]</span>
+                <div class="section" id="orig-2" data-parallel="trad-2">
                     <h2>II</h2>
 <p>Never had I found myself in such a strange situation. There I was lying on my belly with nothing but a little mound of earth before me. A few scattered blades of grass, some ants crawling down one of them, a scattered heap of dust from the mouldered grass of by-gone years,—that constituted my whole world. And I surveyed it with only one eye, the other being held shut by some firm pressure, which must have been from the branch on which my head was resting.</p>
 <p>It was fearfully awkward, and I tried but absolutely failed to understand why I could not move. Thus passed some little time. I heard the creaking of the grasshoppers, the buzzing of a bee. Nothing else. Finally I made an effort, freed my right arm from under me; and by dint of persistent effort with both hands I tried to get to my knees.</p>
@@ -449,8 +676,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-4" data-parallel="trad-4">
-                    <span class="section-number">[4]</span>
+                <div class="section" id="orig-3" data-parallel="trad-3">
                     <h2>III</h2>
 <p>I came to my senses. Why did I see stars shining so brilliantly in the black-blue Bulgarian sky? But why am I not in my tent? Why should I have left it? I make a movement and experience exquisite pain in my legs.</p>
 <p>Yes, I was wounded in the battle. Dangerously or not? I of my legs where the pain was. And in truth both my right leg and my left were covered with coagulated blood. When I touch them with my hands, the pain is sharper. The pain is like the tooth-ache: steady, searching the very soul. There is a ringing in my ears; my head has grown heavy. I have a dim, confused consciousness that I am wounded in both legs.</p>
@@ -476,8 +702,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-5" data-parallel="trad-5">
-                    <span class="section-number">[5]</span>
+                <div class="section" id="orig-4" data-parallel="trad-4">
                     <h2>IV</h2>
 <p>I am lying with eyes shut though it is some time since I woke.</p>
 <p>I have no desire to open my eyes because I feel through the closed lids the sunlight. If I open my eyes the light will pain them. Besides, it is better not to move. . . . Yesterday (let me see, was it yesterday?) I was wounded; four and twenty hours have passed; in another day and night I shall be dead. Very well. It is best not to move. Let my body be motionless. How good it would be to cease, also, all brain-work; but there is no means of stopping it. Thoughts, recollections crowd through my head. However, all this is not for long; it will soon be over.</p>
@@ -500,8 +725,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-6" data-parallel="trad-6">
-                    <span class="section-number">[6]</span>
+                <div class="section" id="orig-5" data-parallel="trad-5">
                     <h2>V</h2>
 <p>I tasted the water. It was warm but not spoiled, and besides there was plenty of it. I should live for several days yet. I remember what I used to read in the &ldquo;Physiology of Every-Day Life.&rdquo; It said that a man could live for more than a week without food provided he had water to drink. Yes, and there was a story in it of a suicide who determined to starve himself to death. He lived for a long time because he drank water.</p>
 <p>Well, what of it? Suppose I live five or six days longer, what will happen? Our troops have gone, the Bulgarians have dispersed. There is no highway near. It is all the same,—death. Except that instead of a death agony lasting three days, I shall have made it last a week.</p>
@@ -517,8 +741,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-7" data-parallel="trad-7">
-                    <span class="section-number">[7]</span>
+                <div class="section" id="orig-6" data-parallel="trad-6">
                     <h2>VI</h2>
 <p>I must have slept long, because when I awoke it was already night. No change; my wounds still smart as before; my neighbor lay just as huge and motionless as ever.</p>
 <p>I cannot help thinking of him. Can it be that I have thrown away all that was sweet and dear, have travelled a thousand miles from home, have suffered from hunger and cold, have been scorched with the sun; can it be that I lie here in all this anguish simply in order that this unhappy wretch might cease to live? And have I done anything at all advantageous for the ends of war beside this murder?</p>
@@ -533,8 +756,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-8" data-parallel="trad-8">
-                    <span class="section-number">[8]</span>
+                <div class="section" id="orig-7" data-parallel="trad-7">
                     <h2>VII</h2>
 <p>The sun has risen. His huge disk, crossed and intersected by the dark branches of the bushes, is as red as blood. It promises to be hot to-day. Neighbor, how is it with thee? Thou art dreadful by this time.</p>
 <p>Yes, he was dreadful. His hair had begun to fall off. His skin, naturally dark, had turned wan and yellowish; his face was so swollen and distended that it was cracked even to the ear. It was already a mass of loathsome worms. His whole body was puffed out into a festering mass. What will become of him in the hot sun to-day?</p>
@@ -545,8 +767,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-9" data-parallel="trad-9">
-                    <span class="section-number">[9]</span>
+                <div class="section" id="orig-8" data-parallel="trad-8">
                     <h2>VIII</h2>
 <p>Perfectly exhausted, crazy with despair, I lay almost unconscious. Suddenly . . . was it not the delusion of a disordered imagination? I think not.</p>
 <p>Yes, it was the sound of voices. The trampling of horses&rsquo; hoofs, the voices of men. I almost cried out, but restrained myself. Well, supposing it were Turks? What then? To the torments already experienced others still more horrible would be added, such as makes the hair stand on end even when you read about them in the papers. They skin their prisoners alive; they hold wounded limbs over slow fires! . . . All right if that were all; but they are so inventive! Were it not better to end my life even at their hands than perish here? And perhaps it may be our men? Oh, cursed bushes! Why have you thrown about me such a thick hedge. There is no seeing through them! only in one place something like a little window among the branches gives me a view out into the hollow. There I think is the brook from which we got a drink just before the battle. Yes, there was a huge slab of sandstone laid across the brook like a bridge.</p>
@@ -573,8 +794,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-10" data-parallel="trad-10">
-                    <span class="section-number">[10]</span>
+                <div class="section" id="orig-9" data-parallel="trad-9">
                     <h2>Epíleg</h2>
 <p>In half a minute they are pouring water into my mouth, brandy and something else. Then there comes a blank!</p>
 <p>Swinging along in step, the bearers carry the stretcher. This measured motion lulls me. Sometimes I sleep, then I wake again. My bandaged wounds no longer pain me. An unspeakably comfortable sensation pervades my whole body. . . .</p>
@@ -596,8 +816,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-11" data-parallel="trad-11">
-                    <span class="section-number">[11]</span>
+                <div class="section" id="orig-10" data-parallel="trad-10">
                     <p><em>Text de domini públic. Traducció anglesa de &ldquo;The Signal and Other Stories&rdquo; (1912).</em></p>
                 </div>
                 
@@ -606,17 +825,8 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">Quatre dies</h2>
-
+                    
                 <div class="section" id="trad-1" data-parallel="orig-1">
-                    <span class="section-number">[1]</span>
-                    <p><em>Vsévolod Garxin</em></p>
-<p>Traducció al català de Biblioteca Arion (2026)</p>
-                </div>
-                
-
-                <div class="section" id="trad-2" data-parallel="orig-2">
-                    <span class="section-number">[2]</span>
                     <h2>I</h2>
 <p>Recordo com travessàvem el bosc a pas lleuger, com brunzien les bales, com les branques tallades per elles queien al nostre voltant, com ens obríem pas entre els arços. El tiroteig s&rsquo;intensificà. En arribar al límit del bosc, aparegué quelcom vermell que centellava aquí i allà. Síderov, un soldat jove i menut de la Companyia I —em vaig preguntar: &ldquo;com ha vingut a parar a la nostra línia?&rdquo;—, de sobte s&rsquo;assegué a terra i em mirà amb uns ulls grans i espantats. Un rajolí de sang li brollà de la boca.</p>
 <p>Sí, això ho recordo amb claredat. Recordo també com, just en arribar a la vora del bosc, el vaig veure entre la malesa espessa.</p>
@@ -627,8 +837,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
-                    <span class="section-number">[3]</span>
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>II</h2>
 <p>Mai no m&rsquo;havia trobat en una situació tan estranya. Jeia de bocaterrossa amb només un petit monticle de terra davant meu. Uns pocs brins d&rsquo;herba escampats, unes formigues baixant per una d&rsquo;elles, un munt de pols de l&rsquo;herba podrida d&rsquo;anys passats —això era tot el meu món. I l&rsquo;observava amb un sol ull, perquè l&rsquo;altre estava tancat per una pressió ferma, segurament de la branca on reposava el meu cap.</p>
 <p>Era terriblement incòmode, i vaig intentar entendre per què no podia moure&rsquo;m, però no ho vaig aconseguir. Així passà una mica de temps. Vaig sentir el cric-cric dels saltamartins, el brunzit d&rsquo;una abella. Res més. Finalment vaig fer un esforç, vaig alliberar el braç dret de sota meu; i a força de persistir amb ambdues mans vaig intentar posar-me de genolls.</p>
@@ -636,8 +845,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
-                    <span class="section-number">[4]</span>
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>III</h2>
 <p>Vaig recobrar els sentits. Per què veia les estrelles brillant tan esplèndidament en el cel blau-negre de Bulgària? Però per què no sóc a la meva tenda? Per què n&rsquo;hauria sortit? Faig un moviment i experimento un dolor agudíssim a les cames.</p>
 <p>Sí, em van ferir a la batalla. Greument o no? Palpo les cames on em fa mal. I certament, tant la cama dreta com l&rsquo;esquerra estan cobertes de sang coagulada. Quan les toco amb les mans, el dolor és més agut. El dolor és com el mal de queixal: constant, que escorcolla l&rsquo;ànima mateixa. Tinc un brunzit a les orelles; el cap se m&rsquo;ha tornat pesat. Tinc una consciència confusa i vaga que estic ferit a les dues cames.</p>
@@ -663,8 +871,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
-                    <span class="section-number">[5]</span>
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>IV</h2>
 <p>Jec amb els ulls tancats encara que fa una estona que m&rsquo;he despertat.</p>
 <p>No tinc cap desig d&rsquo;obrir els ulls perquè sento a través de les parpelles tancades la llum del sol. Si obro els ulls, la llum em farà mal. A més, és millor no moure&rsquo;s&hellip; Ahir (a veure, va ser ahir?) em van ferir; han passat vint-i-quatre hores; d&rsquo;aquí a un altre dia i nit seré mort. Molt bé. És millor no moure&rsquo;s. Que el meu cos romangui immòbil. Que bé estaria si el cervell també pogués aturar-se; però no hi ha manera d&rsquo;aturar-lo. Pensaments, records s&rsquo;amunteguen al meu cap. Tanmateix, tot això no és per gaire temps; aviat s&rsquo;acabarà.</p>
@@ -687,8 +894,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
-                    <span class="section-number">[6]</span>
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>V</h2>
 <p>Vaig tastar l&rsquo;aigua. Era tèbia però no feta malbé, i a més n&rsquo;hi havia molta. Podria viure encara uns quants dies. Recordo el que solia llegir a la &ldquo;Fisiologia de la Vida Quotidiana&rdquo;. Deia que un home podia viure més d&rsquo;una setmana sense menjar mentre tingués aigua per beure. Sí, i hi havia una història d&rsquo;un suïcida que va decidir deixar-se morir de fam. Va viure molt de temps perquè bevia aigua.</p>
 <p>Bé, i què? Suposem que visqui cinc o sis dies més, què passarà? Les nostres tropes han marxat, els búlgars s&rsquo;han dispersat. No hi ha cap carretera a prop. Tant fa —la mort. Excepte que en comptes d&rsquo;una agonia de tres dies, l&rsquo;hauré allargada una setmana.</p>
@@ -704,8 +910,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
-                    <span class="section-number">[7]</span>
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>VI</h2>
 <p>Deu fer molt que dormia, perquè quan em vaig despertar ja era de nit. Cap canvi; les ferides encara em fan mal com abans; el meu veí jau igual d&rsquo;enorme i immòbil que sempre.</p>
 <p>No puc deixar de pensar en ell. Pot ser que hagi llençat tot el que era dolç i estimat, hagi viatjat mil quilòmetres des de casa, hagi patit fam i fred, m&rsquo;hagi cremat al sol; pot ser que jegui aquí amb tota aquesta angoixa simplement perquè aquest pobre desgraciat deixés de viure? I he fet res de profitós per als objectius de la guerra a part d&rsquo;aquest assassinat?</p>
@@ -720,8 +925,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
-                    <span class="section-number">[8]</span>
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>VII</h2>
 <p>El sol ha sortit. El seu disc enorme, creuat per les branques fosques de les mates, és vermell com la sang. Promet fer calor avui. Veí, com et va? Ja fas por.</p>
 <p>Sí, feia por. Els cabells havien començat a caure-li. La pell, naturalment fosca, s&rsquo;havia tornat pàl·lida i groguenca; la cara estava tan inflada i distesa que s&rsquo;havia esquerdat fins a l&rsquo;orella. Ja era una massa repugnant de cucs. Tot el cos s&rsquo;havia inflat en una massa purulenta. Què serà d&rsquo;ell sota el sol abrasador d&rsquo;avui?</p>
@@ -732,8 +936,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
-                    <span class="section-number">[9]</span>
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>VIII</h2>
 <p>Completament esgotat, boig de desesperació, jeia gairebé inconscient. De sobte&hellip; no era una il·lusió d&rsquo;una imaginació trastornada? Crec que no.</p>
 <p>Sí, era un so de veus. El trepig de cascos de cavalls, veus d&rsquo;homes. Gairebé vaig cridar, però em vaig contenir. Bé, suposem que fossin turcs? I què? Als turments ja experimentats se n&rsquo;afegirien d&rsquo;altres encara més horribles, d&rsquo;aquells que fan posar els cabells de punta fins i tot quan els llegeixes als diaris. Escorxen vius els seus presoners; mantenen els membres ferits sobre focs lents!&hellip; Bé, si això fos tot; però són tan inventius! No seria millor acabar la meva vida fins i tot a les seves mans que morir aquí? I potser són els nostres? Oh, mates maleïdes! Per què heu teixit al meu voltant una tanca tan espessa? No s&rsquo;hi pot veure a través! Només en un lloc hi ha quelcom com una finestreta entre les branques que em dóna una vista cap a la fondalada. Allà crec que hi ha el rierol d&rsquo;on vam beure just abans de la batalla. Sí, hi havia una gran llosa de gres posada a través del rierol com un pont.</p>
@@ -760,8 +963,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-10" data-parallel="orig-10">
-                    <span class="section-number">[10]</span>
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <h2>Epíleg</h2>
 <p>En mig minut m&rsquo;aboquen aigua a la boca, aiguardent i alguna cosa més. Després tot és un buit!</p>
 <p>Gronxant-se al compàs, els portadors porten la llitera. Aquest moviment rítmic m&rsquo;adorm. De vegades dormo, després em desperto de nou. Les ferides embenades ja no em fan mal. Una sensació inefablement confortable impregna tot el meu cos&hellip;</p>
@@ -783,14 +985,12 @@
                 </div>
                 
 
-                <div class="section" id="trad-11" data-parallel="orig-11">
-                    <span class="section-number">[11]</span>
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <p><em>Vsévolod Garxin, 1877</em></p>
                 </div>
                 
 
-                <div class="section" id="trad-12" data-parallel="orig-12">
-                    <span class="section-number">[12]</span>
+                <div class="section" id="trad-11" data-parallel="orig-11">
                     <h2>Notes</h2>
 <p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>: <strong>Ivànov</strong>: Cognom rus molt comú. El protagonista és un voluntari, no un soldat reclutat, probablement un estudiant o professional que es va allistar per idealisme patriòtic.</p>
 <p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>: <strong>Fel·là</strong>: Camperol egipci. L&rsquo;exèrcit otomà reclutava soldats de tot l&rsquo;imperi. El protagonista s&rsquo;adona que el &ldquo;turc&rdquo; que ha matat era un pobre fel·là arrencat de la seva terra.</p>
@@ -810,8 +1010,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-13" data-parallel="orig-13">
-                    <span class="section-number">[13]</span>
+                <div class="section" id="trad-12" data-parallel="orig-12">
                     <p><em>Primera traducció catalana. Text original de domini públic.</em>
 <em>Traducció: Biblioteca Arion, 2026</em></p>
                 </div>
@@ -831,14 +1030,27 @@
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari (15)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+                
+            </div>
+            
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 
@@ -851,14 +1063,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> versta</p>
                         <p class="term-definition">Antiga unitat de distància russa equivalent a 1,0668 km. Cinquanta verstes equivalen a uns 53 km, una marxa forçada considerable per a soldats d'infanteria carregats amb equipament.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -871,14 +1076,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> cosac</p>
                         <p class="term-definition">Guerrers de cavalleria lleugera de les estepes russes i ucraïneses. A la Guerra russo-turca (1877-78), els cosacs formaven unitats d'elit de l'exèrcit imperial rus, reconeixibles pels seus uniformes blaus amb franges vermelles i les llances característiques.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -891,14 +1089,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> baixibuzuc</p>
                         <p class="term-definition">Soldat irregular de l'exèrcit otomà, sovint mercenari. Eren famosos per la seva crueltat amb els presoners i civils. El terme prové del turc başıbozuk ("cap boig"). Les atrocitats dels baixibuzucs a Bulgària van escandalitzar Europa i van contribuir a justificar la intervenció russa.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -911,14 +1102,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> fel·là</p>
                         <p class="term-definition">Camperol egipci. L'exèrcit otomà reclutava soldats de tot l'imperi, incloent-hi Egipte. El protagonista s'adona que el turc que ha matat porta uniforme egipci: era un pobre fel·là arrencat de la seva terra i enviat a morir en una guerra que no entenia.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -931,14 +1115,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> paixà</p>
                         <p class="term-definition">Alt rang militar i civil de l'Imperi Otomà. Els paixàs tenien poder absolut sobre els soldats sota el seu comandament, incloent-hi el dret de vida i mort.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -951,14 +1128,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Peabody, Martini</p>
                         <p class="term-definition">Fusells anglesos de precisió utilitzats per l'exèrcit otomà. El Peabody-Martini era un fusell de retrocàrrega molt superior als mosquets russos. La superioritat tecnològica turca va causar grans baixes a l'exèrcit rus durant la guerra.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -971,14 +1141,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Kixinev</p>
                         <p class="term-definition">Ciutat de Bessaràbia (actual Moldàvia), punt de concentració de l'exèrcit rus abans d'envair Bulgària otomana. Avui capital de Moldàvia, amb el nom de Chișinău.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-6">[6]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -991,14 +1154,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Ruixtxuk</p>
                         <p class="term-definition">Ciutat búlgara a la riba del Danubi, fortalesa otomana important. Avui es diu Ruse. Era un punt estratègic clau a la línia de defensa turca.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1011,14 +1167,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Stambul</p>
                         <p class="term-definition">Nom otomà de Constantinoble (Istanbul). Capital de l'Imperi Otomà i punt d'embarcament de les tropes cap als fronts de guerra.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1031,14 +1180,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> senyor</p>
                         <p class="term-definition">Tractament respectuós utilitzat pels soldats russos per adreçar-se als voluntaris de classe mitjana o noble. El protagonista, Ivànov, és un voluntari (no un soldat reclutat), probablement un estudiant o jove professional que es va allistar per idealisme patriòtic.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1051,16 +1193,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Ivànov</p>
                         <p class="term-definition">Cognom rus molt comú (equivalent a "García" o "Smith"). El protagonista és un voluntari anomenat Ivànov. Garxin va basar el personatge en la seva pròpia experiència: ell també es va allistar voluntàriament i va ser ferit a la batalla.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>, 
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1073,18 +1206,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Masha</p>
                         <p class="term-definition">Diminutiu afectuós de Maria en rus. La promesa del protagonista, que l'espera a casa. Representa tot allò que ha deixat enrere per anar a la guerra.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-5">[5]</a>, 
-                            
-                            <a href="#trad-6">[6]</a>, 
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1097,14 +1219,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Iàkovlev</p>
                         <p class="term-definition">Cognom del caporal que finalment troba el protagonista. Deriva de Iàkov (Jacob). El seu rol és clau: arriba quan el protagonista ja no pot cridar i el confonen amb un mort.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1117,14 +1232,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> germanes de la caritat</p>
                         <p class="term-definition">Infermeres voluntàries, sovint de classe alta, que servien als hospitals de campanya. La Guerra russo-turca va veure una gran mobilització de dones russes en tasques sanitàries.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1137,18 +1245,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> cantimplora</p>
                         <p class="term-definition">Recipient per portar aigua, essencial per als soldats. La cantimplora del turc mort és l'única font d'aigua del protagonista i simbolitza la paradoxa de dependre del mort per sobreviure.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>, 
-                            
-                            <a href="#trad-5">[5]</a>, 
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1171,7 +1268,6 @@
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -1180,93 +1276,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -1282,130 +1341,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -1423,6 +1596,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 

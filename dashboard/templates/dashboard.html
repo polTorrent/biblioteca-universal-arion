@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Traducció - Biblioteca Arion</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --bg-primary: #1a1a2e;
+            --bg-secondary: #16213e;
+            --bg-card: #1f2937;
+            --text-primary: #e5e7eb;
+            --text-secondary: #9ca3af;
+            --accent: #D4AF37;
+            --accent-light: #f0d060;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+            --info: #3b82f6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+        }
+
+        .header {
+            background: var(--bg-secondary);
+            padding: 1rem 2rem;
+            border-bottom: 2px solid var(--accent);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .header-info {
+            display: flex;
+            gap: 2rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .header-info span {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .header-info strong {
+            color: var(--text-primary);
+        }
+
+        .status-badge {
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-executant { background: var(--info); color: white; }
+        .status-completat { background: var(--success); color: white; }
+        .status-error { background: var(--error); color: white; }
+        .status-pendent { background: var(--text-secondary); color: var(--bg-primary); }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto 1fr;
+            gap: 1rem;
+            padding: 1rem;
+            height: calc(100vh - 70px);
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 1rem;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .card-header h2 {
+            font-size: 1rem;
+            color: var(--accent);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Mètriques */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+
+        .metric {
+            background: rgba(255,255,255,0.05);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent);
+        }
+
+        .metric-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            margin-top: 0.25rem;
+        }
+
+        /* Progrés */
+        .progress-section {
+            grid-column: span 2;
+        }
+
+        .stage-indicator {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .stage-name {
+            font-size: 1.1rem;
+            color: var(--accent-light);
+            text-transform: capitalize;
+        }
+
+        .progress-bar-container {
+            flex: 1;
+            height: 24px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, var(--accent), var(--accent-light));
+            border-radius: 12px;
+            transition: width 0.5s ease;
+            position: relative;
+        }
+
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+
+        .progress-text {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--bg-primary);
+        }
+
+        /* Chunks */
+        .chunks-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .chunk {
+            width: 40px;
+            height: 40px;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+
+        .chunk-pendent { background: rgba(255,255,255,0.1); color: var(--text-secondary); }
+        .chunk-analitzant { background: var(--info); color: white; animation: pulse 1s infinite; }
+        .chunk-traduint { background: var(--warning); color: var(--bg-primary); animation: pulse 1s infinite; }
+        .chunk-avaluant { background: #8b5cf6; color: white; animation: pulse 1s infinite; }
+        .chunk-refinant { background: #ec4899; color: white; animation: pulse 1s infinite; }
+        .chunk-completat { background: var(--success); color: white; }
+        .chunk-error { background: var(--error); color: white; }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        /* Logs */
+        .logs-container {
+            flex: 1;
+            overflow-y: auto;
+            font-family: 'Consolas', 'Monaco', monospace;
+            font-size: 0.85rem;
+            background: rgba(0,0,0,0.3);
+            border-radius: 6px;
+            padding: 0.5rem;
+        }
+
+        .log-entry {
+            padding: 0.35rem 0.5rem;
+            border-radius: 4px;
+            margin-bottom: 2px;
+            display: flex;
+            gap: 0.75rem;
+            align-items: flex-start;
+        }
+
+        .log-entry:hover {
+            background: rgba(255,255,255,0.05);
+        }
+
+        .log-time {
+            color: var(--text-secondary);
+            flex-shrink: 0;
+        }
+
+        .log-agent {
+            color: var(--accent);
+            flex-shrink: 0;
+            min-width: 100px;
+        }
+
+        .log-message {
+            flex: 1;
+        }
+
+        .log-info .log-message { color: var(--text-primary); }
+        .log-success .log-message { color: var(--success); }
+        .log-warning .log-message { color: var(--warning); }
+        .log-error .log-message { color: var(--error); }
+        .log-debug .log-message { color: var(--text-secondary); }
+
+        /* Gràfica */
+        .chart-container {
+            flex: 1;
+            min-height: 200px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+            .progress-section {
+                grid-column: span 1;
+            }
+            .metrics-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Biblioteca Arion - Dashboard de Traducció</h1>
+        <div class="header-info">
+            <span><strong>Obra:</strong> <span id="obra-name">-</span></span>
+            <span><strong>Autor:</strong> <span id="autor-name">-</span></span>
+            <span><strong>Llengua:</strong> <span id="llengua-name">-</span></span>
+            <span class="status-badge status-pendent" id="status-badge">Pendent</span>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Mètriques -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Mètriques</h2>
+                <span id="elapsed-time">00:00:00</span>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric">
+                    <div class="metric-value" id="chunks-completed">0</div>
+                    <div class="metric-label">Chunks completats</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="avg-quality">-</div>
+                    <div class="metric-label">Qualitat mitjana</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="tokens-used">0</div>
+                    <div class="metric-label">Tokens usats</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-value" id="iterations">0</div>
+                    <div class="metric-label">Iteracions</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gràfica -->
+        <div class="card">
+            <div class="card-header">
+                <h2>Qualitat per Chunk</h2>
+            </div>
+            <div class="chart-container">
+                <canvas id="quality-chart"></canvas>
+            </div>
+        </div>
+
+        <!-- Progrés -->
+        <div class="card progress-section">
+            <div class="card-header">
+                <h2>Progrés</h2>
+            </div>
+            <div class="stage-indicator">
+                <span class="stage-name" id="current-stage">Iniciant...</span>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progress-bar" style="width: 0%">
+                        <span class="progress-text" id="progress-text">0%</span>
+                    </div>
+                </div>
+            </div>
+            <div class="chunks-grid" id="chunks-grid">
+                <!-- Chunks dinàmics -->
+            </div>
+        </div>
+
+        <!-- Logs -->
+        <div class="card" style="grid-column: span 2;">
+            <div class="card-header">
+                <h2>Logs</h2>
+                <span id="log-count">0 entrades</span>
+            </div>
+            <div class="logs-container" id="logs-container">
+                <!-- Logs dinàmics -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Estat
+        let state = {
+            chunks: [],
+            qualityHistory: [],
+            totalIterations: 0,
+            startTime: Date.now()
+        };
+
+        // Elements
+        const elements = {
+            obraName: document.getElementById('obra-name'),
+            autorName: document.getElementById('autor-name'),
+            llenguaName: document.getElementById('llengua-name'),
+            statusBadge: document.getElementById('status-badge'),
+            elapsedTime: document.getElementById('elapsed-time'),
+            chunksCompleted: document.getElementById('chunks-completed'),
+            avgQuality: document.getElementById('avg-quality'),
+            tokensUsed: document.getElementById('tokens-used'),
+            iterations: document.getElementById('iterations'),
+            currentStage: document.getElementById('current-stage'),
+            progressBar: document.getElementById('progress-bar'),
+            progressText: document.getElementById('progress-text'),
+            chunksGrid: document.getElementById('chunks-grid'),
+            logsContainer: document.getElementById('logs-container'),
+            logCount: document.getElementById('log-count')
+        };
+
+        // Gràfica
+        const ctx = document.getElementById('quality-chart').getContext('2d');
+        const qualityChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: [],
+                datasets: [{
+                    label: 'Qualitat',
+                    data: [],
+                    borderColor: '#D4AF37',
+                    backgroundColor: 'rgba(212, 175, 55, 0.1)',
+                    fill: true,
+                    tension: 0.3
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        min: 0,
+                        max: 10,
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        ticks: { color: '#9ca3af' }
+                    },
+                    x: {
+                        grid: { color: 'rgba(255,255,255,0.1)' },
+                        ticks: { color: '#9ca3af' }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+
+        // Actualitzar temps
+        setInterval(() => {
+            const elapsed = Math.floor((Date.now() - state.startTime) / 1000);
+            const hours = Math.floor(elapsed / 3600);
+            const mins = Math.floor((elapsed % 3600) / 60);
+            const secs = elapsed % 60;
+            elements.elapsedTime.textContent =
+                `${hours.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
+        }, 1000);
+
+        // Carregar estat inicial
+        fetch('/api/state')
+            .then(r => r.json())
+            .then(data => {
+                updateFullState(data);
+                state.startTime = new Date(data.metrics.start_time).getTime();
+            });
+
+        // SSE per actualitzacions en temps real
+        const eventSource = new EventSource('/api/events');
+
+        eventSource.onmessage = (event) => {
+            const data = JSON.parse(event.data);
+            handleEvent(data);
+        };
+
+        function handleEvent(data) {
+            switch (data.type) {
+                case 'log':
+                    addLog(data);
+                    break;
+                case 'stage':
+                    elements.currentStage.textContent = data.stage;
+                    break;
+                case 'chunks_init':
+                    initChunks(data.total);
+                    break;
+                case 'chunk_update':
+                    updateChunk(data);
+                    break;
+                case 'tokens':
+                    elements.tokensUsed.textContent = formatNumber(data.input + data.output);
+                    break;
+                case 'status':
+                    updateStatus(data.status);
+                    break;
+                case 'heartbeat':
+                    // Ignorar
+                    break;
+            }
+        }
+
+        function updateFullState(data) {
+            elements.obraName.textContent = data.obra || '-';
+            elements.autorName.textContent = data.autor || '-';
+            elements.llenguaName.textContent = data.llengua || '-';
+            updateStatus(data.status);
+            elements.currentStage.textContent = data.metrics.current_stage;
+
+            if (data.chunks.length > 0) {
+                initChunks(data.chunks.length);
+                data.chunks.forEach((chunk, i) => {
+                    updateChunkElement(i, chunk.stage, chunk.quality);
+                });
+            }
+
+            data.logs.forEach(log => addLog(log, false));
+            elements.logCount.textContent = `${data.logs.length} entrades`;
+
+            // Mètriques
+            elements.chunksCompleted.textContent = `${data.metrics.chunks_completed}/${data.metrics.chunks_total}`;
+            elements.avgQuality.textContent = data.metrics.avg_quality > 0 ? data.metrics.avg_quality.toFixed(1) : '-';
+            elements.tokensUsed.textContent = formatNumber(data.metrics.tokens_input + data.metrics.tokens_output);
+
+            // Progrés
+            const progress = data.metrics.chunks_total > 0
+                ? (data.metrics.chunks_completed / data.metrics.chunks_total) * 100
+                : 0;
+            elements.progressBar.style.width = `${progress}%`;
+            elements.progressText.textContent = `${Math.round(progress)}%`;
+        }
+
+        function updateStatus(status) {
+            elements.statusBadge.textContent = status;
+            elements.statusBadge.className = `status-badge status-${status}`;
+        }
+
+        function initChunks(total) {
+            elements.chunksGrid.innerHTML = '';
+            state.chunks = [];
+            for (let i = 0; i < total; i++) {
+                const chunk = document.createElement('div');
+                chunk.className = 'chunk chunk-pendent';
+                chunk.textContent = i + 1;
+                chunk.id = `chunk-${i}`;
+                elements.chunksGrid.appendChild(chunk);
+                state.chunks.push('pendent');
+            }
+        }
+
+        function updateChunk(data) {
+            updateChunkElement(data.chunk_id, data.stage, data.quality);
+
+            // Actualitzar mètriques
+            elements.chunksCompleted.textContent = `${data.completed}/${data.total}`;
+            if (data.avg_quality > 0) {
+                elements.avgQuality.textContent = data.avg_quality.toFixed(1);
+            }
+
+            // Actualitzar progrés
+            const progress = (data.completed / data.total) * 100;
+            elements.progressBar.style.width = `${progress}%`;
+            elements.progressText.textContent = `${Math.round(progress)}%`;
+
+            // Actualitzar gràfica
+            if (data.quality && data.stage === 'completat') {
+                state.qualityHistory.push(data.quality);
+                qualityChart.data.labels.push(`Chunk ${data.chunk_id + 1}`);
+                qualityChart.data.datasets[0].data.push(data.quality);
+                qualityChart.update();
+            }
+
+            // Comptar iteracions
+            if (data.iterations) {
+                state.totalIterations += data.iterations;
+                elements.iterations.textContent = state.totalIterations;
+            }
+        }
+
+        function updateChunkElement(id, stage, quality) {
+            const chunk = document.getElementById(`chunk-${id}`);
+            if (chunk) {
+                chunk.className = `chunk chunk-${stage}`;
+                if (quality) {
+                    chunk.title = `Qualitat: ${quality.toFixed(1)}`;
+                }
+            }
+        }
+
+        function addLog(log, scroll = true) {
+            const entry = document.createElement('div');
+            entry.className = `log-entry log-${log.level}`;
+            entry.innerHTML = `
+                <span class="log-time">${log.timestamp}</span>
+                <span class="log-agent">[${log.agent}]</span>
+                <span class="log-message">${log.message}</span>
+            `;
+            elements.logsContainer.appendChild(entry);
+
+            if (scroll) {
+                elements.logsContainer.scrollTop = elements.logsContainer.scrollHeight;
+                const count = elements.logsContainer.children.length;
+                elements.logCount.textContent = `${count} entrades`;
+            }
+        }
+
+        function formatNumber(num) {
+            if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+            if (num >= 1000) return (num / 1000).toFixed(1) + 'K';
+            return num.toString();
+        }
+    </script>
+</body>
+</html>

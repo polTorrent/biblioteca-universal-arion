@@ -35,6 +35,48 @@
     
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -243,6 +285,130 @@
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -318,6 +484,9 @@
     <!-- Main Content -->
     <main>
         
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -370,24 +539,65 @@
                         </div>
                         
 
-                        
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-esborrany">esborrany</span>
-                        </div>
-                        
-
-                        
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            7/10
-                        </div>
-                        
                     </div>
 
                     
                     <p class="work-description">Tesi doctoral de Schopenhauer que estableix les bases del seu sistema filosòfic. Demostra que el principi de raó suficient ("res no existeix sense raó") té quatre formes irreductibles: raó del devenir (causalitat), raó del conèixer (lògica), raó del ser (matemàtiques) i raó de l'actuar (motivació). L'obra critica les confusions dels filòsofs anteriors (Descartes, Spinoza, Leibniz, Wolff, Kant) i posa els fonaments per a "El món com a voluntat i representació".
 </p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-esborrany">esborrany</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                7/10
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules original</strong>
+                                56000
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-22
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -424,7 +634,6 @@
                     <h2 class="section-title">Über die vierfache Wurzel des Satzes vom zureichenden Grunde</h2>
 
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <span class="section-number">[1]</span>
                     <p>Eine philosophische Abhandlung</p>
 <p><em>Ναὶ μὰ τὸν ἁμετέρᾳ ψυχᾷ παραδόντα τετρακτύν,</em>
 <em>Παγὰν ἀενάου φύσεως ῥιζώματ&rsquo; ἔχουσαν.</em></p>
@@ -432,7 +641,6 @@
                 
 
                 <div class="section" id="orig-2" data-parallel="trad-2">
-                    <span class="section-number">[2]</span>
                     <h2>Vorrede zur zweiten Ausgabe (1847)</h2>
 <p>Diese elementarphilosophische Abhandlung, welche zuerst im Jahre 1813 erschien, als ich mir die Doktorwürde damit erworben hatte, ist nachmals der Unterbau meines ganzen Systems geworden. Dieserhalb darf sie im Buchhandel nicht fehlen; wie Dies, ohne daß ich es wußte, seit vier Jahren der Fall gewesen ist.</p>
 <p>Nun aber eine solche Jugendarbeit nochmals mit allen ihren Fehlern und Mängeln in die Welt zu schicken schien mir unverantwortlich. Denn ich bedenke, daß die Zeit, da ich nichts mehr werde emendiren können, nicht mehr sehr ferne seyn kann, mit ihr aber erst die Periode meiner eigentlichen Wirksamkeit eintritt, von der ich mir tröste, daß sie eine lange seyn wird, im festen Vertrauen auf die Verheißung des Seneca: <em>etiamsi omnibus tecum viventibus silentium livor indixerit; venient qui sine offensa, sine gratia judicent</em> (ep. 79).</p>
@@ -442,7 +650,6 @@
                 
 
                 <div class="section" id="orig-3" data-parallel="trad-3">
-                    <span class="section-number">[3]</span>
                     <h2>Erstes Kapitel: Einleitung</h2>
 <h3>§ 1. Die Methode</h3>
 <p>Plato der göttliche und der erstaunliche Kant vereinigen ihre nachdrucksvollen Stimmen in der Anempfehlung einer Regel zur Methode alles Philosophirens, ja alles Wissens überhaupt. Man soll, sagen sie, zweien Gesetzen, dem der Homogeneität und dem der Specifikation, auf gleiche Weise, nicht aber dem einen, zum Nachtheil des andern, Genüge leisten.</p>
@@ -453,7 +660,6 @@
                 
 
                 <div class="section" id="orig-4" data-parallel="trad-4">
-                    <span class="section-number">[4]</span>
                     <h3>§ 2. Ihre Anwendung im gegenwärtigen Fall</h3>
 <p>Das letztere dieser Gesetze finde ich, so mächtiger Empfehlung ungeachtet, zu wenig angewendet auf einen Hauptgrundsatz in aller Erkenntniß, den Satz vom zureichenden Grunde. Obgleich man nämlich längst und oft ihn allgemein aufgestellt hat, so hat man dennoch seine höchst verschiedenen Anwendungen, in deren jeder er eine andre Bedeutung erhält, und welche daher seinen Ursprung aus verschiedenen Erkenntnißkräften verrathen, gehörig zu sondern vernachlässigt.</p>
 <p>Daß aber gerade bei Betrachtung unsrer Geisteskräfte die Anwendung des Princips der Homogeneität, mit Vernachlässigung des ihm entgegengesetzten, viele und langdauernde Irrthümer erzeugt und dagegen die Anwendung des Gesetzes der Specification die größten und wichtigsten Fortschritte bewirkt hat, — dies lehrt die Vergleichung der Kantischen Philosophie mit allen früheren.</p>
@@ -465,7 +671,6 @@
                 
 
                 <div class="section" id="orig-5" data-parallel="trad-5">
-                    <span class="section-number">[5]</span>
                     <h3>§ 3. Nutzen dieser Untersuchung</h3>
 <p>Wenn dem Verfasser der Nachweis gelingen sollte, daß der uns beschäftigende Grundsatz nicht unmittelbar aus einer einzigen Grunderkenntniß unsers Geistes fließt, sondern zunächst aus verschiedenen; so wird daraus folgen, daß auch die Nothwendigkeit, die er als Grundsatz bei sich führt, nicht eine einzige und überall gleiche, sondern eine so mannigfaltige, wie die Quellen des Grundsatzes selbst ist.</p>
 <p>Wer daher einen Schluß auf diesen Grundsatz gründet, wird verbunden seyn, genau zu bestimmen, auf welche der im Grundsatze liegenden Nothwendigkeiten sein Schluß sich stütze, und solche durch einen eigenen Namen (wie ich deren vorschlagen werde) zu bezeichnen. Ich hoffe, daß dies zu größerer Klarheit und Bestimmtheit im Philosophiren beitragen wird.</p>
@@ -473,7 +678,6 @@
                 
 
                 <div class="section" id="orig-6" data-parallel="trad-6">
-                    <span class="section-number">[6]</span>
                     <p><em>[Text fortgesetzt — §4-§52 folgen]</em></p>
                 </div>
                 
@@ -482,27 +686,8 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">Sobre la quàdruple arrel del principi de raó suficient</h2>
-
+                    
                 <div class="section" id="trad-1" data-parallel="orig-1">
-                    <span class="section-number">[1]</span>
-                    <p>Una dissertació filosòfica</p>
-<p><em>Ναὶ μὰ τὸν ἁμετέρᾳ ψυχᾷ παραδόντα τετρακτύν,</em>
-<em>Παγὰν ἀενάου φύσεως ῥιζώματ&rsquo; ἔχουσαν.</em>
-— Versos pitagòrics<sup id="fnref:epigraf"><a class="footnote-ref" href="#fn:epigraf">1</a></sup></p>
-<div class="footnote">
-<hr>
-<ol>
-<li id="fn:epigraf">
-<p>[R] «Sí, per aquell que va transmetre a la nostra ànima la tetractys, / que conté la font de la natura eternament fluent.» Citació dels <em>Versos d&rsquo;or</em> (<em>Χρυσᾶ Ἔπη</em>) pitagòrics, vv. 47-48. Schopenhauer escull aquest epígraf per al·ludir al número quatre (les quatre arrels del principi) i a la tradició pitagòrica de cercar estructures fonamentals. La <em>tetractys</em> (τετρακτύς) era el número sagrat dels pitagòrics: 1+2+3+4=10, representat com un triangle de deu punts.&#160;<a class="footnote-backref" href="#fnref:epigraf" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-</ol>
-</div>
-                </div>
-                
-
-                <div class="section" id="trad-2" data-parallel="orig-2">
-                    <span class="section-number">[2]</span>
                     <h2>Prefaci a la segona edició (1847)</h2>
 <p>Aquesta dissertació filosòfica elemental, que va aparèixer per primer cop l&rsquo;any 1813, quan vaig obtenir amb ella el grau de doctor, s&rsquo;ha convertit després en el fonament de tot el meu sistema. Per això no pot mancar al comerç del llibre, com ha estat el cas, sense que jo ho sabés, durant els darrers quatre anys.</p>
 <p>Ara bé, tornar a publicar una obra de joventut amb totes les seves mancances i errors em semblava irresponsable. Considero, en efecte, que el temps en què ja no podré esmenar res no pot estar gaire lluny; però amb ell comença precisament el període de la meva veritable eficàcia, del qual espero que sigui llarg, confiant fermament en la promesa de Sèneca: <em>etiamsi omnibus tecum viventibus silentium livor indixerit; venient qui sine offensa, sine gratia judicent</em><sup id="fnref:seneca"><a class="footnote-ref" href="#fn:seneca">1</a></sup> (ep. 79).</p>
@@ -519,8 +704,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
-                    <span class="section-number">[3]</span>
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Capítol primer: Introducció</h2>
 <h3>§ 1. El mètode</h3>
 <p><a href="#term-subjekt" class="term" data-term="subjekt">Plató</a> el diví i el sorprenent Kant uneixen les seves veus emfàtiques per recomanar una regla per al mètode de tot filosofar, més encara, de tot saber en general.<sup id="fnref:plato-kant"><a class="footnote-ref" href="#fn:plato-kant">1</a></sup> Cal, diuen, satisfer igualment dues lleis, la de l&rsquo;<a href="#term-homogeneitaet" class="term" data-term="homogeneitaet">homogeneïtat</a> i la de l&rsquo;<a href="#term-spezifikation" class="term" data-term="spezifikation">especificació</a>, sense sacrificar l&rsquo;una a l&rsquo;altra.</p>
@@ -547,8 +731,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
-                    <span class="section-number">[4]</span>
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h3>§ 2. La seva aplicació insuficient fins ara</h3>
 <p>Malgrat tan poderosa recomanació, trobo que la darrera d&rsquo;aquestes lleis no s&rsquo;ha aplicat prou a un principi fonamental de tot coneixement: el <a href="#term-satz-vom-grunde" class="term" data-term="satz-vom-grunde">principi de raó suficient</a>. Perquè, tot i que fa temps que se l&rsquo;ha enunciat en general, no s&rsquo;han distingit prou les seves aplicacions molt diverses, en cadascuna de les quals adquireix un significat diferent i que, per tant, delaten el seu origen en diferents facultats de coneixement.</p>
 <p>Que precisament en la consideració de les nostres facultats espirituals l&rsquo;aplicació del principi d&rsquo;homogeneïtat, amb menysteniment del que se li oposa, ha engendrat molts i duradors errors, i en canvi l&rsquo;aplicació de la llei d&rsquo;especificació ha produït els progressos més grans i importants, ho ensenya la comparació de la filosofia kantiana amb totes les anteriors.</p>
@@ -567,8 +750,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
-                    <span class="section-number">[5]</span>
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h3>§ 3. Utilitat d&rsquo;aquesta investigació</h3>
 <p>Si l&rsquo;autor aconsegueix demostrar que el principi que ens ocupa no brolla immediatament d&rsquo;un únic <a href="#term-erkenntnis" class="term" data-term="erkenntnis">coneixement</a> fonamental del nostre esperit, sinó primerament de diversos, llavors se seguirà que tampoc la <a href="#term-notwendigkeit" class="term" data-term="notwendigkeit">necessitat</a> que aporta com a principi és única i idèntica arreu, sinó tan múltiple com les fonts del principi mateix.</p>
 <p>Per tant, qui fonamenti una conclusió sobre aquest principi estarà obligat a determinar amb precisió sobre quina de les necessitats contingudes en el principi recolza la seva conclusió, i a designar-la amb un nom propi (com els que jo proposaré). Espero que això contribueixi a una major claredat i precisió en el filosofar.<sup id="fnref:metode"><a class="footnote-ref" href="#fn:metode">1</a></sup></p>
@@ -583,8 +765,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
-                    <span class="section-number">[6]</span>
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h3>§ 4. Importància del principi de raó suficient</h3>
 <p>La seva importància és veritablement gran, ja que pot ser anomenat amb raó el fonament de tota ciència. Car per <a href="#term-wissenschaft" class="term" data-term="wissenschaft">ciència</a> entenem un <em>sistema</em> de nocions, és a dir, una totalitat de nocions connectades, per oposició a un simple agregat de nocions desconnectades. Però què és el que lliga els membres d&rsquo;un sistema, si no el principi de raó suficient? El que distingeix tota ciència d&rsquo;un mer agregat és precisament que les seves nocions deriven les unes de les altres com de la seva raó.</p>
 <p>Així ho va observar ja fa temps Plató: καὶ γὰρ αἱ δόξαι αἱ ἀληθεῖς οὐ πολλοῦ ἄξιαί εἰσιν, ἕως ἄν τις αὐτὰς δήσῃ αἰτίας λογισμῷ<sup id="fnref:plato-meno"><a class="footnote-ref" href="#fn:plato-meno">1</a></sup> (<em>etiam opiniones verae non multi pretii sunt, donec quis illas ratiocinatione a causis ducta liget</em>). A més, gairebé tota ciència conté nocions de causes de les quals es poden deduir els efectes, i igualment altres nocions de la necessitat de conclusions a partir de raons, com es veurà al llarg d&rsquo;aquesta investigació.</p>
@@ -603,8 +784,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
-                    <span class="section-number">[7]</span>
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h3>§ 5. El principi mateix</h3>
 <p>Demostrarem més endavant que el principi de raó suficient és una expressió comuna a diverses nocions <em>a priori</em>. Mentrestant, cal enunciar-lo sota alguna fórmula. Escullo la de Wolff per ser la més comprensiva: <em>Nihil est sine ratione cur potius sit, quam non sit</em>.<sup id="fnref:wolff"><a class="footnote-ref" href="#fn:wolff">1</a></sup> Res no existeix sense una raó per la qual sigui, més que no sigui.</p>
 <div class="footnote">
@@ -618,8 +798,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
-                    <span class="section-number">[8]</span>
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>Capítol segon: Visió general de les concepcions més importants mantingudes fins ara sobre el principi de raó suficient</h2>
 <h3>§ 6. Primera enunciació del principi i distinció entre dues de les seves significacions</h3>
 <p>Una expressió abstracta més o menys acurada per a un principi tan fonamental de tot coneixement ha de haver-se trobat molt aviat; seria, doncs, difícil, i a més de poc interès, determinar on va aparèixer per primer cop. Ni Plató ni Aristòtil l&rsquo;han enunciat formalment com a principi fonamental rector, tot i que ambdós en parlen sovint com d&rsquo;una veritat evident per si mateixa.</p>
@@ -658,8 +837,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
-                    <span class="section-number">[9]</span>
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h3>§ 7. Descartes</h3>
 <p>Car trobem fins i tot l&rsquo;excel·lent Descartes, que va donar el primer impuls a la reflexió subjectiva i es va convertir així en el pare de la filosofia moderna, encara embolicat en confusions difícils d&rsquo;explicar; i aviat veurem a quines conseqüències greus i deplorables han conduït aquestes confusions respecte a la metafísica.</p>
 <p>A la <em>Responsio ad secundas objectiones in meditationes de prima philosophia</em>, axioma 1, diu: <em>Nulla res existit, de qua non possit quaeri, quaenam sit causa, cur existat. Hoc enim de ipso Deo quaeri potest, non quod indigeat ulla causa ut existat, sed quia ipsa ejus naturae immensitas est</em> CAUSA, SIVE RATIO, <em>propter quam nulla causa indiget ad existendum</em>.<sup id="fnref:descartes-causa"><a class="footnote-ref" href="#fn:descartes-causa">1</a></sup></p>
@@ -685,8 +863,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-10" data-parallel="orig-10">
-                    <span class="section-number">[10]</span>
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <h3>§ 8. Spinoza</h3>
 <p>Tot i que la filosofia de Spinoza consisteix principalment en la negació del doble dualisme entre Déu i el món i entre ànima i cos, que el seu mestre Descartes havia establert, romangué tanmateix fidel al seu mestre en confondre i intercanviar la relació entre raó i conseqüència amb la relació entre causa i efecte; fins i tot va procurar treure&rsquo;n un avantatge encara més gran per a la seva pròpia metafísica que Descartes per a la seva, car va fer d&rsquo;aquesta confusió el fonament de tot el seu <a href="#term-pantheismus" class="term" data-term="pantheismus">panteisme</a>.</p>
 <p>Un concepte conté <em>implicite</em> tots els seus predicats essencials, de manera que es poden desenvolupar <em>explicite</em> mitjançant mers judicis analítics: la suma de tots ells és la seva definició. Ara bé, aquesta relació entre un concepte i els judicis fundats en ell i susceptibles de ser desenvolupats a partir d&rsquo;ell per anàlisi, és precisament la relació entre l&rsquo;anomenat Déu de Spinoza i el món, o més aviat entre l&rsquo;única substància i els seus innombrables accidents (<em>Deus, sive substantia constans infinitis attributis</em><sup id="fnref:spinoza-deus"><a class="footnote-ref" href="#fn:spinoza-deus">1</a></sup> — <em>Deus, sive omnia Dei attributa</em>).</p>
@@ -735,8 +912,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-11" data-parallel="orig-11">
-                    <span class="section-number">[11]</span>
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <h3>§ 9. Leibniz</h3>
 <p>Va ser Leibniz qui va enunciar formalment per primer cop el principi de raó suficient com a principi fonamental de tot coneixement i de tota ciència. El proclama molt pomposament en diversos passatges de les seves obres, donant-se molta importància com si hagués estat el primer a inventar-lo; però tot el que troba a dir és que tota cosa ha de tenir una raó suficient per ser com és i no d&rsquo;una altra manera: i això probablement el món ja ho sabia abans que ell.</p>
 <p>Certament, fa al·lusions casuals a la distinció entre les seves dues significacions principals, sense, però, posar-hi cap èmfasi especial ni explicar-ho clarament enlloc. La referència principal es troba als seus <em>Principia Philosophiae</em>, § 32, i una mica més satisfactòriament a la versió francesa, titulada <em>Monadologie</em>: <em>En vertu du principe de la raison suffisante, nous considérons qu&rsquo;aucun fait ne sauroit se trouver vrai ou existant, aucune énonciation véritable, sans qu&rsquo;il y ait une raison suffisante, pourquoi il en soit ainsi et non pas autrement</em>.<sup id="fnref:leibniz-monad"><a class="footnote-ref" href="#fn:leibniz-monad">1</a></sup></p>
@@ -751,8 +927,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-12" data-parallel="orig-12">
-                    <span class="section-number">[12]</span>
+                <div class="section" id="trad-11" data-parallel="orig-11">
                     <h3>§ 10. Wolff</h3>
 <p>El primer escriptor que va separar explícitament les dues significacions principals del nostre principi i va exposar la diferència entre elles en detall, va ser Wolff. Wolff, però, no col·loca el principi de raó suficient a la Lògica, com és ara el costum, sinó a l&rsquo;Ontologia. Certament, al § 71 insisteix en la necessitat de no confondre el principi de raó suficient del conèixer amb el de causa i efecte; tanmateix, no determina clarament aquí en què consisteix la diferència.</p>
 <p><em>Principium</em>, continua, <em>dicitur id, quod in se continet rationem alterius</em>;<sup id="fnref:wolff-princ"><a class="footnote-ref" href="#fn:wolff-princ">1</a></sup> i distingeix <em>tres</em> classes:</p>
@@ -787,8 +962,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-13" data-parallel="orig-13">
-                    <span class="section-number">[13]</span>
+                <div class="section" id="trad-12" data-parallel="orig-12">
                     <h3>§ 11. Filòsofs entre Wolff i Kant</h3>
 <p>Baumgarten repeteix les distincions wolffianes a la seva <em>Metaphysica</em>, §§ 20-24 i §§ 306-313.</p>
 <p>Reimarus, a la seva <em>Vernunftlehre</em>,<sup id="fnref:reimarus"><a class="footnote-ref" href="#fn:reimarus">1</a></sup> § 81, distingeix: 1. <em>Raó interna</em>, l&rsquo;explicació de la qual coincideix amb la <em>ratio essendi</em> de Wolff; 2. <em>Raó externa</em>, és a dir, <em>causa</em>.</p>
@@ -808,8 +982,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-14" data-parallel="orig-14">
-                    <span class="section-number">[14]</span>
+                <div class="section" id="trad-13" data-parallel="orig-13">
                     <h3>§ 12. Hume</h3>
 <p>Ningú abans d&rsquo;aquest pensador seriós no havia mai dubtat del que segueix. En primer lloc, i abans de totes les coses del cel i de la terra, hi ha el principi de raó suficient en la forma de la llei de causalitat. Car és una <em>veritas aeterna</em>:<sup id="fnref:veritas"><a class="footnote-ref" href="#fn:veritas">1</a></sup> és a dir, és en si i per si per sobre dels déus i del destí; mentre que tota la resta —l&rsquo;enteniment, per exemple, que pensa aquest principi, i no menys tot el món i el que sigui la seva causa: àtoms, moviment, un Creador, <em>et cetera</em>— és el que és només d&rsquo;acord amb, i en virtut de, aquest principi.</p>
 <p>Hume va ser el primer a qui se li va ocórrer preguntar d&rsquo;on deriva la seva autoritat aquesta llei de causalitat, i exigir les seves credencials. Tothom sap el resultat al qual arriba: que la causalitat no és res més que la successió de coses i estats en el temps percebuda empíricament, amb la qual l&rsquo;hàbit ens ha familiaritzat. La fal·làcia d&rsquo;aquest resultat es percep de seguida, i no és difícil refutar-la. El mèrit rau en la pregunta mateixa; car va esdevenir l&rsquo;impuls i el punt de partida per a les profundes investigacions de Kant, i mitjançant elles va conduir a una visió de l&rsquo;idealisme incomparablement més profunda i exhaustiva que la que existia fins llavors —que era principalment la de Berkeley. Va conduir a l&rsquo;<a href="#term-idealismus" class="term" data-term="idealismus">idealisme transcendental</a>, del qual sorgeix la convicció que el món depèn de nosaltres en el seu conjunt tant com nosaltres depenem d&rsquo;ell en particular.</p>
@@ -824,8 +997,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-15" data-parallel="orig-15">
-                    <span class="section-number">[15]</span>
+                <div class="section" id="trad-14" data-parallel="orig-14">
                     <h3>§ 13. Kant i la seva escola</h3>
 <p>El passatge principal de Kant sobre el principi de raó suficient es troba en un petit opuscle titulat <em>Sobre un descobriment que ha de permetre&rsquo;ns prescindir de tota Crítica de la raó pura</em>.<sup id="fnref:kant-entdeckung"><a class="footnote-ref" href="#fn:kant-entdeckung">1</a></sup> Aquí insisteix amb força en la distinció entre «el principi lògic (formal) del coneixement &ldquo;tota proposició ha de tenir la seva raó&rdquo; i el principi transcendental (material) &ldquo;tota cosa ha de tenir la seva causa&rdquo;», en la seva controvèrsia amb Eberhard, que els havia identificat com un sol i mateix principi.</p>
 <p>Amb aquests precedents per guiar-los, els diversos escriptors sobre lògica pertanyents a l&rsquo;escola de Kant —Hofbauer, Maass, Jakob, Kiesewetter i altres— han definit força acuradament la distinció entre raó i causa. Kiesewetter, especialment, la dóna així de manera força satisfactòria:<sup id="fnref:kiesewetter"><a class="footnote-ref" href="#fn:kiesewetter">2</a></sup> «La raó del coneixement no s&rsquo;ha de confondre amb la raó del fet (causa). El principi de raó suficient pertany a la Lògica, el de causalitat a la Metafísica. El primer és el principi fonamental del pensament; el segon, el de l&rsquo;experiència. La causa es refereix a coses reals, la raó lògica només té a veure amb representacions.»</p>
@@ -843,8 +1015,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-16" data-parallel="orig-16">
-                    <span class="section-number">[16]</span>
+                <div class="section" id="trad-15" data-parallel="orig-15">
                     <h3>§ 14. Sobre les proves del principi</h3>
 <p>Hem de registrar encara diversos intents infructuosos que s&rsquo;han fet per provar el principi de raó suficient, gairebé sempre sense definir clarament en quin sentit es prenia: el de Wolff, per exemple, a la seva <em>Ontologia</em>, § 70, repetit per Baumgarten a la seva <em>Metafísica</em>, § 20. És inútil repetir-lo i refutar-lo aquí, car òbviament descansa sobre un joc de paraules.</p>
 <p>Com que espero, en el curs d&rsquo;aquest tractat, assenyalar les diferents lleis de les nostres facultats cognitives, de les quals el principi de raó suficient és l&rsquo;expressió comuna, resultarà per si sol que aquest principi no pot ser provat, i que, per contra, l&rsquo;observació d&rsquo;Aristòtil: λόγον ζητοῦσι ὧν οὐκ ἔστι λόγος. ἀποδείξεως γὰρ ἀρχὴ οὐκ ἀπόδειξίς ἐστι<sup id="fnref:arist-logos"><a class="footnote-ref" href="#fn:arist-logos">1</a></sup> (<em>rationem eorum quaerant, quorum non est ratio: demonstrationis enim principium non est demonstratio</em>), pot ser aplicada amb igual propietat a totes aquestes proves.</p>
@@ -861,8 +1032,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-17" data-parallel="orig-17">
-                    <span class="section-number">[17]</span>
+                <div class="section" id="trad-16" data-parallel="orig-16">
                     <h2>Capítol tercer: Insuficiència de les exposicions anteriors i esquema d&rsquo;una de nova</h2>
 <h3>§ 15. Casos que no estan compresos en les significacions antigues establertes del principi</h3>
 <p>Del resum donat en el capítol precedent es desprèn que dues aplicacions diferents del principi de raó suficient han estat reconegudes, tot i que molt gradualment, molt tardanament, i no sense freqüents recaigudes en l&rsquo;error i la confusió: l&rsquo;una és la seva aplicació als judicis, que, per ser vertaders, han de tenir una raó; l&rsquo;altra, la seva aplicació als canvis en els objectes materials, que han de tenir sempre una causa. En ambdós casos trobem el principi de raó suficient autoritzant-nos a preguntar <em>per què?</em>, una qualitat que li és essencial.</p>
@@ -882,8 +1052,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-18" data-parallel="orig-18">
-                    <span class="section-number">[18]</span>
+                <div class="section" id="trad-17" data-parallel="orig-17">
                     <h3>§ 16. Les arrels del principi de raó suficient</h3>
 <p><em>La nostra consciència cognoscent, que es manifesta com a sensibilitat externa i interna (o receptivitat) i com a enteniment i raó, es subdivideix en <a href="#term-subjekt" class="term" data-term="subjekt">subjecte</a> i <a href="#term-objekt" class="term" data-term="objekt">objecte</a> i no conté res més. Ser objecte per al subjecte i ser la nostra representació, són la mateixa cosa.</em></p>
 <p><em>Totes les nostres representacions estan les unes amb les altres en una connexió regulada, que pot ser determinada</em> a priori, <em>i en virtut de la qual res que existeixi separadament i independentment, res d&rsquo;aïllat o de solt, pot esdevenir un objecte per a nosaltres.</em> Aquesta connexió és la que expressa el principi de raó suficient en la seva generalitat. Ara bé, tot i que, com es pot deduir del que precedeix, aquesta connexió assumeix formes diferents segons les diferents classes d&rsquo;objectes, la connexió reté el que és comú a totes aquestes formes, i això és el que s&rsquo;expressa de manera general i abstracta pel nostre principi.</p>
@@ -892,8 +1061,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-19" data-parallel="orig-19">
-                    <span class="section-number">[19]</span>
+                <div class="section" id="trad-18" data-parallel="orig-18">
                     <h2>Capítol quart: Sobre la primera classe d&rsquo;objectes per al subjecte i la forma del principi de raó suficient que predomina en ella</h2>
 <h3>§ 17. Exposició general d&rsquo;aquesta classe d&rsquo;objectes</h3>
 <p>La primera classe d&rsquo;objectes possibles per a la nostra facultat representativa és la de les <a href="#term-vorstellung" class="term" data-term="vorstellung">representacions</a> <em>intuïtives, completes, empíriques</em>. Són <em>intuïtives</em> per oposició als mers pensaments, és a dir, als conceptes abstractes; són <em>completes</em>, ja que, segons la distinció de Kant, no contenen només la part formal, sinó també la part material dels fenòmens; i són <em>empíriques</em>, en part perquè procedeixen, no d&rsquo;una mera connexió de pensaments, sinó d&rsquo;una excitació de la sensació en el nostre organisme sensitiu, com el seu origen, al qual es refereixen constantment com a evidència de la seva realitat: en part també perquè estan lligades entre si, segons les lleis unides de l&rsquo;espai, el temps i la causalitat, en aquell complex sense principi ni fi que forma la nostra <em>realitat empírica</em>.</p>
@@ -901,8 +1069,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-20" data-parallel="orig-20">
-                    <span class="section-number">[20]</span>
+                <div class="section" id="trad-19" data-parallel="orig-19">
                     <h3>§ 18. Esbós d&rsquo;una anàlisi transcendental de la realitat empírica</h3>
 <p>Les formes d&rsquo;aquestes representacions són les del sentit intern i extern; a saber, el <em>temps</em> i l&rsquo;<em>espai</em>. Però aquests només són <em>perceptibles</em> quan estan <em>plens</em>. La seva <em>perceptibilitat</em> és la <a href="#term-materie" class="term" data-term="materie">matèria</a>.</p>
 <p><em>Si el temps fos l&rsquo;única forma</em> d&rsquo;aquestes representacions, no hi podria haver <em>coexistència</em>, per tant res de <em>permanent</em> i cap <em>duració</em>. Car el <em>temps</em> només es percep quan està ple, i el seu curs només es percep pels <em>canvis</em> que tenen lloc en allò que l&rsquo;omple. La <em>permanència</em> d&rsquo;un objecte, per tant, només es reconeix per contrast amb els <em>canvis</em> que s&rsquo;esdevenen en altres objectes <em>coexistents</em> amb ell. Però la representació de la <em>coexistència</em> és impossible només en el temps; depèn, per al seu completament, de la representació de l&rsquo;<em>espai</em>; perquè, en el mer temps, totes les coses se <em>succeeixen les unes a les altres</em>, i en el mer espai totes les coses estan <em>les unes al costat de les altres</em>; per tant, és només per la combinació del temps i l&rsquo;espai que sorgeix la representació de la coexistència.</p>
@@ -911,8 +1078,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-21" data-parallel="orig-21">
-                    <span class="section-number">[21]</span>
+                <div class="section" id="trad-20" data-parallel="orig-20">
                     <h3>§ 19. Presència immediata de les representacions</h3>
 <p>Ara bé, com que tota coneixença <em>immediata</em> és adquirida pel subjecte només a través del <em>sentit intern</em> — el sentit extern essent al seu torn objecte per a l&rsquo;intern, que percep les percepcions de l&rsquo;extern — i com que, per tant, respecte a la <em>presència immediata</em> de les representacions en la seva consciència, el subjecte roman sota el domini del <em>temps</em> sols, com a forma del <em>sentit intern</em>: se segueix que només una representació pot estar-li present (al subjecte) al mateix temps, tot i que aquesta pugui ser molt complicada.</p>
 <p>Quan parlem de representacions com a <em>immediatament presents</em>, volem dir que no són només conegudes en la unió del temps i l&rsquo;espai efectuada per l&rsquo;enteniment — una facultat intuïtiva, com veurem aviat — per la qual sorgeix la representació col·lectiva de la realitat empírica, sinó que són conegudes en el mer temps sol, com a representacions del sentit intern, i justament en el punt neutre on els seus dos corrents se separen, anomenat el <em>present</em>.</p>
@@ -929,8 +1095,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-22" data-parallel="orig-22">
-                    <span class="section-number">[22]</span>
+                <div class="section" id="trad-21" data-parallel="orig-21">
                     <h3>§ 20. Principi de raó suficient del devenir</h3>
 <p>En la classe d&rsquo;objectes per al subjecte acabada de descriure, el principi de raó suficient figura com a <em>llei de causalitat</em>, i com a tal l&rsquo;anomeno <em>principi de raó suficient del devenir</em>, <em>principium rationis sufficientis fiendi</em>.<sup id="fnref:fiendi"><a class="footnote-ref" href="#fn:fiendi">1</a></sup> Per ell, tots els objectes que es presenten dins tot l&rsquo;abast de la nostra representació estan lligats entre si, pel que fa a l&rsquo;aparició i desaparició dels seus estats, és a dir, en el moviment del corrent del temps, per formar el complex de la realitat empírica.</p>
 <p>La llei de causalitat és la següent: quan un o diversos objectes reals passen a qualsevol estat nou, algun altre estat ha d&rsquo;haver precedit aquest, al qual el nou estat segueix regularment, és a dir, tan sovint com aquell estat precedent s&rsquo;esdevé. Aquesta mena de seguir l&rsquo;anomenem <em>resultar</em>; el primer dels estats rep el nom de <em>causa</em>, el segon el d&rsquo;<em>efecte</em>.</p>
@@ -967,8 +1132,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-23" data-parallel="orig-23">
-                    <span class="section-number">[23]</span>
+                <div class="section" id="trad-22" data-parallel="orig-22">
                     <h3>§ 21. Caràcter <em>a priori</em> del concepte de causalitat — Caràcter intel·lectual de la percepció empírica — L&rsquo;enteniment</h3>
 <p>A la filosofia de càtedra dels nostres professors de filosofia encara se&rsquo;ns ensenya avui dia que la percepció del món exterior és una cosa dels sentits, i llavors segueix una llarga dissertació sobre cadascun dels cinc sentits: mentre que no es fa cap menció del caràcter intel·lectual de la percepció: és a dir, del fet que és principalment l&rsquo;obra de l&rsquo;<a href="#term-verstand" class="term" data-term="verstand">enteniment</a>, el qual, mitjançant la seva pròpia forma peculiar de causalitat, juntament amb les formes de la sensibilitat pura, el temps i l&rsquo;espai, que són postulades per la causalitat, crea i produeix primerament el món extern objectiu a partir de la matèria bruta d&rsquo;unes poques sensacions.</p>
 <p>Cal estar, en efecte, abandonat per tots els déus per imaginar que el món exterior perceptible, omplint l&rsquo;espai en les seves tres dimensions i movent-se en el flux inexorable del temps, governat a cada pas per les lleis de la causalitat, que és sense excepció, i en tot això simplement obeint lleis que podem indicar abans de tota experiència — que un món com aquest, diem, pugui tenir una existència real, objectiva fora de nosaltres, sense cap agència nostra, i que llavors pugui haver trobat el seu camí cap als nostres caps a través de la pura sensació i així tenir una segona existència dins nostre com la de fora.</p>
@@ -987,16 +1151,14 @@
                 </div>
                 
 
-                <div class="section" id="trad-24" data-parallel="orig-24">
-                    <span class="section-number">[24]</span>
+                <div class="section" id="trad-23" data-parallel="orig-23">
                     <h3>§ 22. De l&rsquo;objecte immediat</h3>
 <p>Així, de les sensacions del nostre cos rebem les dades per a la primríssima aplicació de la llei causal, i és precisament per aquella aplicació que sorgeix la percepció d&rsquo;aquesta classe d&rsquo;objectes. Tenen, doncs, la seva essència i existència únicament en virtut de la funció intel·lectual que entra així en joc i del seu exercici.</p>
 <p>Ara bé, en la mesura que és el punt de partida, és a dir, el mediador, per a la nostra percepció de tots els altres objectes, he anomenat l&rsquo;organisme corporal, en la primera edició del present treball, l&rsquo;<em>objecte immediat</em>; això, tanmateix, no s&rsquo;ha de prendre en un sentit estrictament literal. Car tot i que totes les sensacions corporals són apreheses directament, aquesta aprehensió immediata no fa encara el nostre propi cos perceptible per a nosaltres com a objecte; per contra, fins a aquest punt tot roman subjectiu, és a dir, sensació. D&rsquo;aquesta sensació certament procedeix la percepció de tots els altres objectes com a causes de tals sensacions, i aquestes causes es presenten llavors a nosaltres com a objectes; però no és així amb el cos mateix, que només subministra sensacions a la consciència. Només <em>indirectament</em> coneixem fins i tot aquest cos objectivament, és a dir, com a objecte, en presentar-se, com tots els altres objectes, com la causa reconeguda d&rsquo;un efecte subjectivament donat — i precisament per això <em>objectivament</em> — en el nostre enteniment o cervell (que és el mateix).</p>
                 </div>
                 
 
-                <div class="section" id="trad-25" data-parallel="orig-25">
-                    <span class="section-number">[25]</span>
+                <div class="section" id="trad-24" data-parallel="orig-24">
                     <h3>§ 23. Arguments contra la prova kantiana de l&rsquo;<em>a priori</em> del concepte de causalitat</h3>
 <p>Un dels principals objectius de la <em>Crítica de la raó pura</em> és mostrar la validesa universal, per a tota experiència, de la llei causal, el seu caràcter <em>a priori</em>, i, com a conseqüència necessària d&rsquo;això, la seva restricció a l&rsquo;experiència possible. No obstant això, no puc assentir a la prova allà donada de l&rsquo;<em>a priori</em> del principi.</p>
 <p>Kant diu que la <em>síntesi</em> del múltiple per la imaginació, que és necessària per a tot coneixement empíric, dóna successió, però no encara successió determinada: és a dir, deixa indeterminat quin dels dos estats percebuts era el primer. L&rsquo;ordre definit en aquesta successió és introduït primer per la concepció purament intel·lectual de causa i efecte. Per tant, el principi de relació causal és la condició que fa possible l&rsquo;experiència, i com a tal ens és donat <em>a priori</em>.</p>
@@ -1013,8 +1175,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-26" data-parallel="orig-26">
-                    <span class="section-number">[26]</span>
+                <div class="section" id="trad-25" data-parallel="orig-25">
                     <h3>§ 24. De la mala aplicació de la llei de causalitat</h3>
 <p>De l&rsquo;exposició anterior es segueix que l&rsquo;aplicació de la llei causal a qualsevol cosa que no siguin <em>canvis</em> en el món material empíricament donat, és un abús d&rsquo;ella. Per exemple, és una mala aplicació fer-ne ús respecte a les forces físiques, sense les quals no podrien tenir lloc cap canvi; o a la matèria, <em>sobre</em> la qual tenen lloc; o al món, al qual hauríem d&rsquo;atribuir en aquest cas una existència absolutament objectiva independent del nostre intel·lecte; i en molts altres casos a més.</p>
 <p>Tals males aplicacions sorgeixen sempre, en part, perquè prenem el concepte de causa, com molts altres conceptes metafísics i ètics, en un sentit <em>massa ampli</em>; en part, perquè oblidem que la llei causal és certament una pressuposició que portem amb nosaltres al món, per la qual la percepció de les coses fora de nosaltres esdevé possible; però que, precisament per això, no estem autoritzats a estendre més enllà de l&rsquo;abast i independentment de la nostra facultat cognitiva un principi que té el seu origen en l&rsquo;equipament d&rsquo;aquesta facultat, ni a assumir que és vàlid com l&rsquo;ordre etern de l&rsquo;univers i de tot el que existeix.<sup id="fnref:mala-aplic"><a class="footnote-ref" href="#fn:mala-aplic">1</a></sup></p>
@@ -1029,8 +1190,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-27" data-parallel="orig-27">
-                    <span class="section-number">[27]</span>
+                <div class="section" id="trad-26" data-parallel="orig-26">
                     <h3>§ 25. El temps en què té lloc un canvi</h3>
 <p>Com que el principi de raó suficient del devenir és exclusivament aplicable als <em>canvis</em>, no hem d&rsquo;ometre mencionar aquí que els antics filòsofs ja havien plantejat la qüestió de quin és el temps en què té lloc un canvi, ja que no hi ha possibilitat que tingui lloc durant l&rsquo;existència de l&rsquo;estat precedent ni després que el nou hagi sobrevingut. Tanmateix, si li assignem un temps especial entre ambdós estats, un cos estaria, durant aquest temps, ni en el primer ni en el segon estat: un moribund, per exemple, no estaria ni viu ni mort; un cos ni en repòs ni en moviment: cosa que seria absurda.</p>
 <p>Plató<sup id="fnref:plato-exaifnes"><a class="footnote-ref" href="#fn:plato-exaifnes">1</a></sup> s&rsquo;havia desentès una mica lleugerament d&rsquo;aquest punt difícil, mantenint que els canvis tenen lloc <em>sobtadament</em> i no ocupen <em>cap temps</em>; ocorren, diu, en l&rsquo;ἐξαίφνης (<em>in repentino</em>), que anomena una ἄτοπος φύσις, ἐν χρόνῳ οὐδὲν οὖσα: una existència estranya i sense temps (que tanmateix cau dins del temps).</p>
@@ -1050,8 +1210,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-28" data-parallel="orig-28">
-                    <span class="section-number">[28]</span>
+                <div class="section" id="trad-27" data-parallel="orig-27">
                     <h2>Capítol cinquè: Sobre la segona classe d&rsquo;objectes per al subjecte i la forma del principi de raó suficient que predomina en ella</h2>
 <h3>§ 26. Explicació d&rsquo;aquesta classe d&rsquo;objectes</h3>
 <p>L&rsquo;única distinció essencial entre la raça humana i els animals, que des de temps immemorial ha estat atribuïda a una facultat cognitiva especial peculiar de la humanitat, anomenada <a href="#term-vernunft" class="term" data-term="vernunft">raó</a>, es basa en el fet que l&rsquo;home posseeix una classe de representacions que no comparteix cap animal. Aquestes són els <em>conceptes</em>, per tant representacions <em>abstractes</em>, per oposició a les <em>intuïtives</em>, de les quals tanmateix es deriven.</p>
@@ -1071,8 +1230,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-29" data-parallel="orig-29">
-                    <span class="section-number">[29]</span>
+                <div class="section" id="trad-28" data-parallel="orig-28">
                     <h3>§ 27. La utilitat dels conceptes</h3>
 <p>L&rsquo;essència fonamental de la nostra raó o facultat pensant és, com hem vist, el poder d&rsquo;abstracció, o la facultat de formar <em>conceptes</em>: és, doncs, la presència d&rsquo;aquests en la nostra consciència la que produeix resultats tan sorprenents.</p>
 <p>És precisament perquè contenen menys que les representacions de les quals es deriven, que els conceptes són més fàcils de manejar que les representacions; són, de fet, respecte a aquestes gairebé com la fórmula de l&rsquo;aritmètica superior respecte a les operacions mentals que les originen i que elles representen, o com un logaritme respecte al seu número.</p>
@@ -1092,8 +1250,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-30" data-parallel="orig-30">
-                    <span class="section-number">[30]</span>
+                <div class="section" id="trad-29" data-parallel="orig-29">
                     <h3>§ 28. Representants dels conceptes. La facultat de judicar</h3>
 <p>Els conceptes no s&rsquo;han de confondre amb les imatges de la imaginació, les quals són representacions intuïtives i completes, per tant individuals, tot i que no són evocades per impressions sensorials i per tant no pertanyen al complex de l&rsquo;experiència. Fins i tot quan s&rsquo;empren per <em>representar un concepte</em>, una imatge de la imaginació (fantasma) ha de ser distingida d&rsquo;un concepte.</p>
 <p>Usem els fantasmes com a <em>representants dels conceptes</em> quan intentem captar la representació intuïtiva mateixa que ha donat lloc al concepte i fer-la coincidir amb aquell concepte, cosa que és en tots els casos impossible; car no hi ha cap representació, per exemple, de gos en general, color en general, triangle en general, número en general, ni hi ha cap imatge de la imaginació que correspongui a aquests conceptes.</p>
@@ -1101,8 +1258,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-31" data-parallel="orig-31">
-                    <span class="section-number">[31]</span>
+                <div class="section" id="trad-30" data-parallel="orig-30">
                     <h3>§ 29. Principi de raó suficient del conèixer</h3>
 <p>Pensar, en un sentit més estret, no consisteix en la mera presència de conceptes abstractes en la nostra consciència, sinó més aviat en connectar o separar dos o més d&rsquo;aquests conceptes sota diverses restriccions i modificacions que la lògica indica en la teoria dels judicis. Una relació d&rsquo;aquesta mena entre conceptes clarament pensada i expressada l&rsquo;anomenem un <em>judici</em>.</p>
 <p>Ara bé, respecte a aquests judicis, el principi de raó suficient una vegada més és vàlid, però en una forma molt diferent de la que ha estat explicada en el capítol precedent; car aquí apareix com el <em>principi de raó suficient del conèixer</em>, <em>principium rationis sufficientis cognoscendi</em>.<sup id="fnref:cognoscendi"><a class="footnote-ref" href="#fn:cognoscendi">1</a></sup> Com a tal, afirma que si un <em>judici</em> ha d&rsquo;expressar <em>coneixement</em> de qualsevol mena, ha de tenir una raó suficient: en virtut de la qual qualitat rep llavors el predicat <em>vertader</em>.</p>
@@ -1118,32 +1274,28 @@
                 </div>
                 
 
-                <div class="section" id="trad-32" data-parallel="orig-32">
-                    <span class="section-number">[32]</span>
+                <div class="section" id="trad-31" data-parallel="orig-31">
                     <h3>§ 30. Veritat lògica</h3>
 <p>Un judici pot tenir per fonament un altre judici; en aquest cas té veritat <em>lògica</em> o <em>formal</em>. Si té veritat material també, roman com a qüestió oberta i depèn de si el judici sobre el qual descansa té veritat material, o de si la sèrie de judicis sobre la qual es funda condueix a un judici que té veritat material, o no.</p>
 <p>Tota la ciència sil·logística, de fet, no és més que la suma de les regles per aplicar el principi de raó suficient a les relacions mútues dels judicis; conseqüentment és el cànon de la <em>veritat lògica</em>.</p>
                 </div>
                 
 
-                <div class="section" id="trad-33" data-parallel="orig-33">
-                    <span class="section-number">[33]</span>
+                <div class="section" id="trad-32" data-parallel="orig-32">
                     <h3>§ 31. Veritat empírica</h3>
 <p>Un judici pot ser fonamentat sobre una representació de la primera classe, és a dir, una percepció mitjançant els sentits, conseqüentment sobre l&rsquo;experiència. En aquest cas té veritat <em>material</em>, i a més, si el judici es funda <em>immediatament</em> sobre l&rsquo;experiència, aquesta veritat és <em>veritat empírica</em>.</p>
 <p>Quan diem que «un judici té <em>veritat material</em>», volem dir en general que els seus conceptes estan connectats, separats, limitats, d&rsquo;acord amb els requeriments de les representacions intuïtives a través de les quals s&rsquo;infereix.</p>
                 </div>
                 
 
-                <div class="section" id="trad-34" data-parallel="orig-34">
-                    <span class="section-number">[34]</span>
+                <div class="section" id="trad-33" data-parallel="orig-33">
                     <h3>§ 32. Veritat transcendental</h3>
 <p>Les <em>formes</em> del coneixement empíric intuïtiu que jauen dins l&rsquo;enteniment i la sensibilitat pura poden, com a condicions de tota experiència possible, ser els fonaments d&rsquo;un judici, que és en aquest cas sintètic <em>a priori</em>. Com que tanmateix aquesta mena de judici té veritat material, la seva veritat és <em>transcendental</em>; perquè el judici es basa no només en l&rsquo;experiència, sinó en les condicions de tota experiència possible jacents dins nostre.</p>
 <p>Proposicions com: dues línies rectes no tanquen un espai; res no s&rsquo;esdevé sense una causa; la matèria no pot ni venir a l&rsquo;existència ni perir; 3 × 7 = 21, són exemples d&rsquo;aquesta mena de judici. Tota la matemàtica pura pot, pròpiament parlant, ser adduïda en corroboració d&rsquo;aquesta mena de veritat.</p>
                 </div>
                 
 
-                <div class="section" id="trad-35" data-parallel="orig-35">
-                    <span class="section-number">[35]</span>
+                <div class="section" id="trad-34" data-parallel="orig-34">
                     <h3>§ 33. Veritat metalògica</h3>
 <p>Finalment, un judici pot ser fonamentat sobre les condicions formals de tot pensar, que estan contingudes en la raó; i en aquest cas la seva veritat és d&rsquo;una mena que em sembla millor definida com <em>veritat metalògica</em>. Només hi ha quatre judicis metalògicament vertaders d&rsquo;aquesta mena, que van ser descoberts fa temps per inducció, i anomenats les lleis de tot pensar. Són els següents:</p>
 <ol>
@@ -1164,16 +1316,14 @@
                 </div>
                 
 
-                <div class="section" id="trad-36" data-parallel="orig-36">
-                    <span class="section-number">[36]</span>
+                <div class="section" id="trad-35" data-parallel="orig-35">
                     <h3>§ 34. La raó</h3>
 <p>Com que la classe de representacions de què he tractat en aquest capítol pertany exclusivament a l&rsquo;home, i com que tot el que distingeix tan forçosament la vida humana de la dels animals i confereix a l&rsquo;home una superioritat tan gran, es basa, com hem mostrat, en la seva facultat per a aquestes representacions, aquesta facultat constitueix evidentment i indiscutiblement el que anomenem <em>raó</em> (<em>Vernunft</em>).</p>
 <p>El que pròpiament s&rsquo;entén per raó sempre és quelcom secundari, derivat de les representacions primàries intuïtives: a saber, la classe de representacions abstractes. Per tant, d&rsquo;acord amb tot el que hem dit, la raó és la facultat de formar conceptes abstractes.</p>
                 </div>
                 
 
-                <div class="section" id="trad-37" data-parallel="orig-37">
-                    <span class="section-number">[37]</span>
+                <div class="section" id="trad-36" data-parallel="orig-36">
                     <h2>Capítol sisè: Sobre la tercera classe d&rsquo;objectes per al subjecte i la forma del principi de raó suficient que predomina en ella</h2>
 <h3>§ 35. Explicació d&rsquo;aquesta classe d&rsquo;objectes</h3>
 <p>És la part formal de les representacions completes — és a dir, les <a href="#term-anschauung" class="term" data-term="anschauung">intuïcions</a> que ens són donades <em>a priori</em> de les formes del sentit extern i intern, és a dir, de l&rsquo;espai i del temps — la que constitueix la tercera classe d&rsquo;objectes per a la nostra facultat representativa.</p>
@@ -1182,8 +1332,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-38" data-parallel="orig-38">
-                    <span class="section-number">[38]</span>
+                <div class="section" id="trad-37" data-parallel="orig-37">
                     <h3>§ 36. Principi de raó suficient del ser</h3>
 <p>L&rsquo;espai i el temps estan constituïts de tal manera que totes les seves parts estan en relació mútua, de manera que cadascuna d&rsquo;elles condiciona i és condicionada per una altra. Anomenem aquesta relació en l&rsquo;espai, <em>posició</em>; en el temps, <em>successió</em>. Aquestes relacions són peculiars, diferint enterament de totes les altres relacions possibles de les nostres representacions; per tant, ni l&rsquo;enteniment ni la raó són capaços de captar-les mitjançant mers conceptes, i només la intuïció pura <em>a priori</em> ens les fa intel·ligibles; car és impossible mitjançant mers conceptes explicar clarament què s&rsquo;entén per a dalt i a baix, dreta i esquerra, darrere i davant, abans i després.</p>
 <p>Kant confirma això correctament amb l&rsquo;afirmació que la distinció entre el nostre guant dret i l&rsquo;esquerre no pot fer-se intel·ligible de cap altra manera que per la intuïció.<sup id="fnref:guant"><a class="footnote-ref" href="#fn:guant">1</a></sup></p>
@@ -1203,8 +1352,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-39" data-parallel="orig-39">
-                    <span class="section-number">[39]</span>
+                <div class="section" id="trad-38" data-parallel="orig-38">
                     <h3>§ 37. Raó del ser en l&rsquo;espai</h3>
 <p>La posició de cada divisió de l&rsquo;espai respecte a qualsevol altra, posem per cas d&rsquo;una línia donada — i això és igualment aplicable a plans, cossos i punts — determina també absolutament la seva posició totalment diferent respecte a qualsevol altra línia possible; de manera que la darrera posició està respecte a la primera en la relació del conseqüent a la seva raó.</p>
 <p>Com que en l&rsquo;espai no hi ha successió, un anàleg de l&rsquo;anomenada reciprocitat regna pertot arreu en la raó del ser en l&rsquo;espai. Com que cada línia és determinada per totes les altres exactament igual que les determina a elles, és arbitrari considerar qualsevol línia com a merament determinant i no com a determinada.</p>
@@ -1212,8 +1360,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-40" data-parallel="orig-40">
-                    <span class="section-number">[40]</span>
+                <div class="section" id="trad-39" data-parallel="orig-39">
                     <h3>§ 38. Raó del ser en el temps. Aritmètica</h3>
 <p>Cada instant en el temps és condicionat pel precedent. La raó suficient del ser, com a llei de la conseqüència, és tan simple aquí, perquè el temps només té una dimensió, per tant no admet cap multiplicitat de relacions. Cada instant és condicionat pel seu predecessor; només podem arribar a ell a través d&rsquo;aquell predecessor: només en tant que aquest <em>era</em> i ha passat, existeix el present.</p>
 <p>Tot comptar descansa sobre aquest nexe de les divisions del temps, els nombres servint només per marcar els passos individuals en la successió; sobre ell descansa, per tant, tota l&rsquo;aritmètica igualment, que no ensenya absolutament res més que abreviatures metòdiques del numerar. Cada nombre pressuposa els seus predecessors com les raons del seu ésser: només podem arribar al nombre <em>deu</em> passant per tots els nombres precedents, i és només en virtut d&rsquo;aquesta comprensió que sé que on hi ha deu, també hi ha vuit, sis, quatre.<sup id="fnref:aritmetica"><a class="footnote-ref" href="#fn:aritmetica">1</a></sup></p>
@@ -1228,8 +1375,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-41" data-parallel="orig-41">
-                    <span class="section-number">[41]</span>
+                <div class="section" id="trad-40" data-parallel="orig-40">
                     <h3>§ 39. Geometria</h3>
 <p>Tota la ciència de la geometria descansa igualment sobre el nexe de la posició de les divisions de l&rsquo;espai. Seria, per consegüent, una comprensió d&rsquo;aquell nexe; només que essent tal comprensió, com ja hem dit, impossible mitjançant mers conceptes, o de fet de cap altra manera que per la intuïció, cada proposició geomètrica hauria de ser reportada a la intuïció sensorial, i la prova consistiria simplement a fer clar el nexe particular en qüestió; res més podria fer-se.</p>
 <p>Tanmateix, trobem la geometria tractada d&rsquo;una manera completament diferent. Només els dotze axiomes d&rsquo;Euclides es consideren basats en la mera intuïció. El que Plató diu de les seves Idees seria vàlid, fins i tot en geometria, d&rsquo;aquestes intuïcions normals, exactament igual que dels conceptes, és a dir, que dues no poden ser exactament semblants, car llavors serien només una.<sup id="fnref:plato-id"><a class="footnote-ref" href="#fn:plato-id">1</a></sup> Plató ja havia observat això fa temps, com ens diu Aristòtil: ἔτι δὲ, παρὰ τὰ αἰσθητὰ καὶ τὰ εἴδη, τὰ μαθηματικὰ τῶν πραγμάτων εἶναί φησι μεταξύ<sup id="fnref:arist-math"><a class="footnote-ref" href="#fn:arist-math">2</a></sup> («a més, diu que, a part de les coses sensibles i les idees, hi ha les coses matemàtiques enmig, que difereixen de les sensibles perquè són eternes i immòbils, i de les idees perquè d&rsquo;aquelles n&rsquo;hi ha moltes de semblants, mentre que la idea mateixa és cadascuna una sola»).</p>
@@ -1248,16 +1394,14 @@
                 </div>
                 
 
-                <div class="section" id="trad-42" data-parallel="orig-42">
-                    <span class="section-number">[42]</span>
+                <div class="section" id="trad-41" data-parallel="orig-41">
                     <h2>Capítol setè: Sobre la quarta classe d&rsquo;objectes per al subjecte i la forma del principi de raó suficient que predomina en ella</h2>
 <h3>§ 40. Explicació general</h3>
 <p>L&rsquo;última classe d&rsquo;objectes per a la nostra facultat representativa que queda per examinar és peculiar però molt important. Comprèn només <em>un</em> objecte per a cada individu: és a dir, l&rsquo;objecte immediat del sentit intern, el <em>subjecte en la volició</em>, que és objecte per al subjecte cognoscent; per la qual cosa es manifesta només en el temps, mai en l&rsquo;espai, i com veurem, fins i tot en el temps sota una restricció important.</p>
                 </div>
                 
 
-                <div class="section" id="trad-43" data-parallel="orig-43">
-                    <span class="section-number">[43]</span>
+                <div class="section" id="trad-42" data-parallel="orig-42">
                     <h3>§ 41. Subjecte del coneixement i objecte</h3>
 <p>Tot coneixement pressuposa subjecte i objecte. Fins i tot l&rsquo;<a href="#term-selbstbewusstsein" class="term" data-term="selbstbewusstsein">autoconsciència</a> (<em>Selbstbewußtsein</em>), per tant, no és absolutament simple, sinó que, com la nostra consciència de totes les altres coses (és a dir, la facultat de percepció), es subdivideix en allò que és conegut i allò que coneix. Ara bé, el que és conegut es manifesta absolutament i exclusivament com a <em>voluntat</em>.</p>
 <p>El subjecte, per consegüent, es coneix a si mateix exclusivament com a <em>volent</em>, però no com a <em>cognoscent</em>. Car l&rsquo;<em>ego</em> que representa mai no pot ell mateix esdevenir representació o objecte, ja que condiciona totes les representacions com el seu correlat necessari; més aviat pot aplicar-se-li el bell passatge dels sagrats Upanixads: <em>Id videndum non est: omnia videt; et id audiendum non est: omnia audit; sciendum non est: omnia scit: et intelligendum non est: omnia intelligit. Præter id, videns, et sciens, et audiens, et intelligens ens aliud non est.</em><sup id="fnref:upanishad"><a class="footnote-ref" href="#fn:upanishad">1</a></sup></p>
@@ -1273,8 +1417,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-44" data-parallel="orig-44">
-                    <span class="section-number">[44]</span>
+                <div class="section" id="trad-43" data-parallel="orig-43">
                     <h3>§ 42. El subjecte de la volició</h3>
 <p>Segons el que precedeix, el subjecte del coneixement mai no pot ser conegut; mai no pot esdevenir objecte o representació. Tanmateix, com que no tenim només un autoconeixement extern (en la percepció sensorial), sinó també un d&rsquo;intern; i com que, d&rsquo;altra banda, tot coneixement, per la seva pròpia naturalesa, pressuposa un cognoscent i un conegut, el que és conegut dins nostre com a tal no és el cognoscent, sinó el volent, el subjecte de la volició: la <a href="#term-wille" class="term" data-term="wille">voluntat</a>.</p>
 <p>Partint del coneixement, podem afirmar que «Jo conec» és una proposició analítica, «Jo vull», en canvi, una proposició sintètica, i a més <em>a posteriori</em>, és a dir, donada per l&rsquo;experiència — en aquest cas per l&rsquo;experiència interna (és a dir, només en el temps).</p>
@@ -1290,8 +1433,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-45" data-parallel="orig-45">
-                    <span class="section-number">[45]</span>
+                <div class="section" id="trad-44" data-parallel="orig-44">
                     <h3>§ 43. El voler. La llei dels motius (Motivació)</h3>
 <p>És precisament perquè el subjecte volent és donat immediatament en l&rsquo;autoconsciència que no podem definir ni descriure més el que és el voler; pròpiament parlant, és el coneixement més directe que tenim.</p>
 <p>A cada resolució que nosaltres prenem, o que veiem prendre a altres, ens creiem justificats a preguntar: per què? És a dir, assumim que quelcom ha d&rsquo;haver ocorregut prèviament, del qual ha resultat aquesta resolució, i a això l&rsquo;anomenem la seva raó, o, més correctament, el <em>motiu</em> de l&rsquo;acció que ara segueix.</p>
@@ -1308,23 +1450,20 @@
                 </div>
                 
 
-                <div class="section" id="trad-46" data-parallel="orig-46">
-                    <span class="section-number">[46]</span>
+                <div class="section" id="trad-45" data-parallel="orig-45">
                     <h3>§ 44. Influència de la voluntat sobre l&rsquo;intel·lecte</h3>
 <p>No és sobre la causalitat pròpia, sinó sobre la identitat del subjecte cognoscent amb el volent, que es basa la influència que la voluntat exerceix sobre l&rsquo;intel·lecte, quan l&rsquo;obliga a repetir representacions que una vegada li han estat presents.</p>
                 </div>
                 
 
-                <div class="section" id="trad-47" data-parallel="orig-47">
-                    <span class="section-number">[47]</span>
+                <div class="section" id="trad-46" data-parallel="orig-46">
                     <h3>§ 45. Memòria</h3>
 <p>Aquella facultat peculiar del subjecte cognoscent que li permet obeir la voluntat més fàcilment en repetir representacions, com més sovint hagin estat ja presents — en altres paraules, la seva capacitat de ser exercitada — és el que anomenem <em>memòria</em>.</p>
 <p>Si haguéssim de buscar una metàfora per a aquesta qualitat característica de la nostra facultat representativa, penso que la millor seria la d&rsquo;un tros de drap que, després d&rsquo;haver estat plegat repetidament en els mateixos plecs, finalment cau en ells, per dir-ho així, de motu proprio.</p>
                 </div>
                 
 
-                <div class="section" id="trad-48" data-parallel="orig-48">
-                    <span class="section-number">[48]</span>
+                <div class="section" id="trad-47" data-parallel="orig-47">
                     <h2>Capítol vuitè: Observacions generals i resultats</h2>
 <h3>§ 46. L&rsquo;ordre sistemàtic</h3>
 <p>L&rsquo;ordre de successió en què he exposat les diverses formes del principi de raó suficient en aquest tractat no és sistemàtic; ha estat escollit per mor d&rsquo;una major claredat. L&rsquo;ordre sistemàtic en què les diferents classes de raons haurien de seguir-se les unes a les altres és el següent:</p>
@@ -1332,22 +1471,19 @@
                 </div>
                 
 
-                <div class="section" id="trad-49" data-parallel="orig-49">
-                    <span class="section-number">[49]</span>
+                <div class="section" id="trad-48" data-parallel="orig-48">
                     <h3>§ 47. Relació en el temps entre raó i conseqüència</h3>
 <p>Segons les lleis de causalitat i de motivació, una raó ha de precedir la seva conseqüència en el temps. D&rsquo;altra banda, el principi de raó suficient del conèixer no comporta cap relació en el temps, sinó només una relació per a la nostra raó.</p>
                 </div>
                 
 
-                <div class="section" id="trad-50" data-parallel="orig-50">
-                    <span class="section-number">[50]</span>
+                <div class="section" id="trad-49" data-parallel="orig-49">
                     <h3>§ 48. Reciprocitat de raons</h3>
 <p>Al § 20 ja s&rsquo;ha mostrat que la llei de causalitat no admet reciprocitat, ja que l&rsquo;efecte mai no pot ser la causa de la seva causa; per tant, el concepte de reciprocitat és, en el seu sentit correcte, inadmissible.</p>
                 </div>
                 
 
-                <div class="section" id="trad-51" data-parallel="orig-51">
-                    <span class="section-number">[51]</span>
+                <div class="section" id="trad-50" data-parallel="orig-50">
                     <h3>§ 49. Necessitat</h3>
 <p>El principi de raó suficient en totes les seves formes és l&rsquo;únic principi i l&rsquo;únic suport de tota <a href="#term-notwendigkeit" class="term" data-term="notwendigkeit">necessitat</a>. Car <em>necessitat</em> no té cap altre significat vertader i distint que el de la infal·libilitat de la conseqüència quan la raó és posada. Per consegüent, tota necessitat és <em>condicionada</em>: la necessitat absoluta, és a dir, incondicionada, és per tant una <em>contradictio in adjecto</em>.<sup id="fnref:necessitat"><a class="footnote-ref" href="#fn:necessitat">1</a></sup></p>
 <p>Hi ha, per consegüent, una necessitat <em>quàdruple</em>, de conformitat amb les <em>quatre</em> formes del principi de raó suficient:</p>
@@ -1368,23 +1504,20 @@
                 </div>
                 
 
-                <div class="section" id="trad-52" data-parallel="orig-52">
-                    <span class="section-number">[52]</span>
+                <div class="section" id="trad-51" data-parallel="orig-51">
                     <h3>§ 50. Sèrie de raons i conseqüències</h3>
 <p>Segons la llei de causalitat, la condició és ella mateixa sempre condicionada; per tant, sorgeix una sèrie <em>in infinitum a parte ante</em>. El principi de raó suficient és el <em>principi de tota explicació</em>: explicar una cosa significa reduir la seva existència o connexió donada a alguna forma del principi de raó suficient. El principi de raó suficient mateix, per tant, no pot ser explicat més; car no existeix cap principi pel qual explicar la font de tota explicació: exactament com l&rsquo;ull és incapaç de veure&rsquo;s a si mateix, tot i que veu tota la resta.</p>
                 </div>
                 
 
-                <div class="section" id="trad-53" data-parallel="orig-53">
-                    <span class="section-number">[53]</span>
+                <div class="section" id="trad-52" data-parallel="orig-52">
                     <h3>§ 51. Cada ciència té per fil conductor una de les formes del principi de raó suficient</h3>
 <p>Com que la pregunta <em>per què</em> sempre demana una raó suficient, i com que és la connexió de les seves nocions segons el principi de raó suficient el que distingeix la ciència d&rsquo;un mer agregat de nocions, hem anomenat aquell <em>per què</em> el pare de tota ciència (§ 4).</p>
 <p>Així, en la matemàtica pura la raó del ser és el principal fil conductor; en la física, la llei de causalitat predomina. El principi de raó suficient en el conèixer troba aplicació vigorosa a través de totes les ciències. La llei dels motius és la guia principal en la història i la psicologia.</p>
                 </div>
                 
 
-                <div class="section" id="trad-54" data-parallel="orig-54">
-                    <span class="section-number">[54]</span>
+                <div class="section" id="trad-53" data-parallel="orig-53">
                     <h3>§ 52. Dos resultats principals</h3>
 <p>M&rsquo;he esforçat en aquest tractat a mostrar que el principi de raó suficient és una expressió comuna per a quatre relacions completament diferents, cadascuna de les quals es funda sobre una llei particular donada <em>a priori</em>. Ara bé, segons el principi d&rsquo;<em>homogeneïtat</em>, estem obligats a assumir que aquestes quatre lleis han de brollar necessàriament d&rsquo;una sola i mateixa qualitat original de tota la nostra facultat cognitiva com la seva arrel comuna — que hauríem de considerar com el germen més íntim de tota dependència, relativitat, inestabilitat i limitació dels objectes de la nostra consciència — o d&rsquo;aquell món, que el diví Plató repetidament degrada a l&rsquo;ἀεὶ γιγνόμενον μὲν καὶ ἀπολλύμενον, ὄντως δὲ οὐδέποτε ὄν<sup id="fnref:plato-final"><a class="footnote-ref" href="#fn:plato-final">1</a></sup> («sempre sorgint i perint, però en realitat mai existent»).</p>
 <p>El significat general del principi de raó suficient pot, en el fons, ser reduït a això: que tota cosa existent, no importa quan o on, existeix <em>per raó d&rsquo;alguna altra cosa</em>. Ara bé, el principi de raó suficient és tanmateix <em>a priori</em> en totes les seves formes: és a dir, té la seva arrel en el nostre intel·lecte; per tant, no ha de ser aplicat a la totalitat de les coses existents, l&rsquo;univers, incloent aquell intel·lecte en el qual es presenta. Car un món com aquest, que es presenta en virtut de formes <em>a priori</em>, és precisament per això mer fenomen; conseqüentment, el que és vàlid respecte a ell com a resultat d&rsquo;aquestes formes no pot ser aplicat al món mateix, és a dir, a la cosa en si. Per tant, no podem dir «el món i totes les coses en ell existeixen per raó d&rsquo;alguna altra cosa»; i aquesta proposició és precisament la prova cosmològica.<sup id="fnref:cosmologica"><a class="footnote-ref" href="#fn:cosmologica">2</a></sup></p>
@@ -1402,14 +1535,12 @@
                 </div>
                 
 
-                <div class="section" id="trad-55" data-parallel="orig-55">
-                    <span class="section-number">[55]</span>
+                <div class="section" id="trad-54" data-parallel="orig-54">
                     <p><em>Fi de la traducció</em></p>
                 </div>
                 
 
-                <div class="section" id="trad-56" data-parallel="orig-56">
-                    <span class="section-number">[56]</span>
+                <div class="section" id="trad-55" data-parallel="orig-55">
                     <h2>Notes metodològiques sobre la traducció</h2>
 <h3>Fonts textuals</h3>
 <ul>
@@ -1456,7 +1587,7 @@
 </table>
 <h3>Abreviatures de les notes</h3>
 <ul>
-<li><strong>[T]</strong> Nota del traductor</li>
+<li>**** Nota del traductor</li>
 <li><strong>[F]</strong> Nota filosòfica (context, explicació)</li>
 <li><strong>[R]</strong> Referència bibliogràfica</li>
 </ul>
@@ -1477,14 +1608,27 @@
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari (33)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+                
+            </div>
+            
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 
@@ -1497,7 +1641,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> principi de raó suficient</p>
                         <p class="term-definition">Principi lògic-metafísic segons el qual res no existeix sense una raó o fonament que expliqui la seva existència. Schopenhauer demostra que aquest principi té quatre arrels diferents segons la classe d'objectes a què s'aplica: raó del devenir (causalitat), raó del conèixer (lògica), raó del ser (matemàtiques) i raó de l'actuar (motivació).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1510,7 +1654,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> arrel</p>
                         <p class="term-definition">Metàfora que indica l'origen o fonament comú de les quatre formes del principi de raó suficient. Així com un arbre té arrels que nodreixen branques diferents, el principi de raó té quatre "arrels" que corresponen a quatre classes d'objectes per al subjecte.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1523,7 +1667,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raó, fonament</p>
                         <p class="term-definition">Allò que fa comprensible o necessari alguna cosa. Schopenhauer distingeix quatre tipus: Grund des Werdens (raó del devenir = causa), Grund des Erkennens (raó del conèixer = premissa), Grund des Seins (raó del ser = relació espaciotemporal) i Grund des Handelns (raó de l'actuar = motiu).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1536,7 +1680,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raó del devenir</p>
                         <p class="term-definition">Primera forma del principi de raó suficient. Regeix els canvis en el món material: tot canvi té una causa que el precedeix i el determina necessàriament. És el principi de causalitat aplicat als objectes de la intuïció empírica.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1549,7 +1693,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raó del conèixer</p>
                         <p class="term-definition">Segona forma del principi. Regeix les relacions entre judicis: perquè un judici sigui veritable, ha de tenir un fonament o raó (premissa, evidència empírica, forma lògica o condicions de possibilitat). És el principi de raó en l'àmbit lògic.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1562,7 +1706,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raó del ser</p>
                         <p class="term-definition">Tercera forma del principi. Regeix les relacions en l'espai i el temps: la posició d'una cosa determina necessàriament les seves relacions amb altres posicions. És el fonament de les matemàtiques (geometria i aritmètica).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1575,7 +1719,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raó de l'actuar</p>
                         <p class="term-definition">Quarta forma del principi. Regeix les accions dels éssers amb voluntat: tot acte de voluntat té un motiu que el determina necessàriament. És el principi de motivació, la causalitat vista des de dins, com a subjecte volent.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1588,7 +1732,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> representació</p>
                         <p class="term-definition">Tot contingut de la consciència; allò que es presenta al subjecte cognoscent. Per a Schopenhauer, el món com l'experimentem és representació: "Die Welt ist meine Vorstellung" (El món és la meva representació). Inclou tant intuïcions com conceptes.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1601,7 +1745,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> cosa en si</p>
                         <p class="term-definition">La realitat tal com és independentment de la nostra percepció i coneixement. Per a Kant, és incognoscible; per a Schopenhauer, és la Voluntat (Wille), accessible a través de l'experiència interna del propi cos.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1614,7 +1758,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> fenomen, aparença</p>
                         <p class="term-definition">La realitat tal com se'ns apareix, condicionada per les formes a priori de l'espai, el temps i la causalitat. Tot objecte de l'experiència és fenomen, no cosa en si.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1627,7 +1771,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> intuïció</p>
                         <p class="term-definition">Coneixement immediat i directe d'un objecte singular, en oposició al concepte (Begriff), que és mediador i general. Hi ha intuïció empírica (dels sentits) i intuïció pura (espai i temps).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1640,7 +1784,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> enteniment</p>
                         <p class="term-definition">Facultat de conèixer mitjançant conceptes i regles. Per a Kant, l'enteniment aplica les categories a les intuïcions. Per a Schopenhauer, la funció principal de l'enteniment és aplicar la causalitat per construir la representació del món objectiu.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1653,7 +1797,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raó</p>
                         <p class="term-definition">Facultat superior del coneixement que opera amb conceptes abstractes i produeix raonaments. Per a Schopenhauer, la raó és la capacitat de formar conceptes i de raonar mitjançant judicis i sil·logismes.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1666,7 +1810,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> concepte</p>
                         <p class="term-definition">Representació general i abstracta que unifica múltiples intuïcions sota una nota comuna. Els conceptes són el material del pensament i s'expressen en paraules.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1679,7 +1823,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> judici</p>
                         <p class="term-definition">Acte de l'enteniment que uneix o separa conceptes, afirmant o negant una relació entre ells. El judici s'expressa en la proposició i pot ser vertader o fals.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1692,7 +1836,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> a priori</p>
                         <p class="term-definition">Coneixement independent de l'experiència, que la precedeix i la fa possible. Per a Kant i Schopenhauer, l'espai, el temps i la causalitat són formes a priori de la sensibilitat i l'enteniment.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1705,7 +1849,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> a posteriori</p>
                         <p class="term-definition">Coneixement derivat de l'experiència, que depèn de dades empíriques.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1718,7 +1862,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> voluntat</p>
                         <p class="term-definition">Per a Schopenhauer, la voluntat és l'essència íntima de totes les coses, la cosa en si. En aquesta obra primerenca, apareix com la quarta classe d'objectes per al subjecte: l'objecte immediat de l'autoconeixement.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1731,7 +1875,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> causalitat</p>
                         <p class="term-definition">Relació necessària entre causa i efecte. Per a Schopenhauer, la causalitat és la forma del principi de raó suficient que regeix els canvis en el món material (Grund des Werdens).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1744,7 +1888,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> causa</p>
                         <p class="term-definition">Allò que produeix un canvi d'estat en un objecte material. La causa es distingeix del motiu (en éssers amb voluntat) i de l'estímul (en éssers vius sense representació).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1757,7 +1901,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> efecte</p>
                         <p class="term-definition">El canvi d'estat produït per una causa. La relació causa-efecte és necessària i regida pel principi de raó del devenir.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1770,7 +1914,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> motiu</p>
                         <p class="term-definition">La causa dels actes de voluntat en éssers dotats de representació. El motiu és la causalitat vista des de dins, com a determinació de la voluntat per representacions.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1783,7 +1927,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> motivació</p>
                         <p class="term-definition">La forma de causalitat que regeix les accions dels éssers amb voluntat i representació. La llei de motivació és: donat el caràcter i el motiu, l'acció segueix necessàriament.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1796,7 +1940,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> cos (viscut)</p>
                         <p class="term-definition">El cos propi com a objecte immediat de la voluntat. Schopenhauer distingeix el cos com a representació (objecte entre objectes) i el cos com a voluntat (accés immediat a la cosa en si).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1809,7 +1953,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> veritat</p>
                         <p class="term-definition">Conformitat d'un judici amb el seu fonament. Schopenhauer distingeix quatre tipus de veritat segons el tipus de fonament: lògica, empírica, transcendental i metalògica.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1822,7 +1966,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> coneixement</p>
                         <p class="term-definition">Acte o resultat de conèixer. Schopenhauer distingeix el coneixement intuitiu (intuïció empírica) del coneixement abstracte (conceptes).
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1835,7 +1979,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> espai</p>
                         <p class="term-definition">Forma a priori de la sensibilitat externa. L'espai és la condició de possibilitat de tota intuïció d'objectes externs i el fonament de la geometria.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1848,7 +1992,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> temps</p>
                         <p class="term-definition">Forma a priori de la sensibilitat interna i externa. El temps és la condició de possibilitat de tot canvi i successió, i el fonament de l'aritmètica.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1861,7 +2005,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> subjecte</p>
                         <p class="term-definition">Allò que coneix però mai no és conegut com a objecte. El subjecte és el correlat necessari de tot objecte; sense subjecte, no hi ha representació.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1874,7 +2018,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> objecte</p>
                         <p class="term-definition">Allò que és conegut pel subjecte. Tot objecte és representació i existeix només per a un subjecte. Schopenhauer classifica els objectes en quatre classes segons la forma del principi de raó que els regeix.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1887,7 +2031,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> necessitat</p>
                         <p class="term-definition">El que no pot ser d'altra manera. Per a Schopenhauer, tota necessitat prové del principi de raó suficient: necessari és allò que segueix d'un fonament donat.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1900,7 +2044,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> homogeneïtat</p>
                         <p class="term-definition">Principi metodològic (de Plató i Kant) que ens indica buscar les semblances i unificacions entre les coses, pujant dels individus a espècies, gèneres i categories superiors.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1913,7 +2057,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> especificació</p>
                         <p class="term-definition">Principi metodològic que ens indica distingir les diferències i evitar unificar precipitadament coses de naturalesa diversa. Schopenhauer aplica aquest principi al principi de raó suficient, mostrant les seves quatre arrels distintes.
 </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1936,7 +2080,6 @@
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -1945,93 +2088,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -2047,130 +2153,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -2188,6 +2408,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 

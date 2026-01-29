@@ -61,7 +61,7 @@ class MarkdownProcessor:
         html = self.md.convert(text)
         return html
 
-    def process_sections(self, text: str, lang: str = 'ca') -> str:
+    def process_sections(self, text: str, lang: str = 'ca', glossari: list = None) -> str:
         """Processa text amb seccions numerades."""
         # Dividir per seccions (marcades amb ---)
         sections = re.split(r'\n---\s*\n', text)
@@ -87,8 +87,8 @@ class MarkdownProcessor:
                 section_id = f"{'orig' if lang == 'grc' else 'trad'}-{section_num}"
                 parallel_id = f"{'trad' if lang == 'grc' else 'orig'}-{section_num}"
 
-                # Processar termes del glossari
-                section = self.process_terms(section)
+                # Processar termes del glossari (suporta V1 i V2)
+                section = self.process_terms(section, glossari)
 
                 # Processar notes
                 section = self.process_notes(section, section_num)
@@ -97,18 +97,63 @@ class MarkdownProcessor:
 
                 html_parts.append(f'''
                 <div class="section" id="{section_id}" data-parallel="{parallel_id}">
-                    <span class="section-number">[{section_num}]</span>
                     {html_content}
                 </div>
                 ''')
 
         return '\n'.join(html_parts)
 
-    def process_terms(self, text: str) -> str:
-        """Converteix [text]{.term data-term="id"} a HTML."""
-        pattern = r'\[([^\]]+)\]\{\.term\s+data-term="([^"]+)"\}'
-        replacement = r'<a href="#term-\2" class="term" data-term="\2">\1</a>'
-        return re.sub(pattern, replacement, text)
+    def process_terms(self, text: str, glossari: list = None) -> str:
+        """Converteix termes del glossari a HTML.
+
+        Suporta dos formats:
+        1. Format V1: [text]{.term data-term="id"}
+        2. Format V2: terme[T]
+        """
+        # Format V1: [text]{.term data-term="id"}
+        pattern_v1 = r'\[([^\]]+)\]\{\.term\s+data-term="([^"]+)"\}'
+        replacement_v1 = r'<a href="#term-\2" class="term" data-term="\2">\1</a>'
+        text = re.sub(pattern_v1, replacement_v1, text)
+
+        # Format V2: terme[T] - requereix glossari per buscar l'id
+        if glossari:
+            text = self.process_term_markers(text, glossari)
+
+        return text
+
+    def process_term_markers(self, text: str, glossari: list) -> str:
+        """Converteix terme[T] a enllaços del glossari (format V2)."""
+        if not glossari:
+            return text
+
+        # Crear diccionari de termes coneguts
+        termes_coneguts = {}
+        for terme in glossari:
+            term_id = terme.get('id', '')
+            # Afegir variants: transliteracio, traduccio
+            trans = terme.get('transliteracio', '').lower()
+            trad = terme.get('traduccio', '').lower()
+            if trans:
+                termes_coneguts[trans] = term_id
+            if trad:
+                termes_coneguts[trad] = term_id
+            # Afegir també l'id com a clau
+            if term_id:
+                termes_coneguts[term_id.lower()] = term_id
+
+        # Patró simple: paraula[T]
+        pattern = r'(\S+)\[T\]'
+
+        def replacer(match):
+            terme = match.group(1)
+            terme_lower = terme.lower()
+            if terme_lower in termes_coneguts:
+                term_id = termes_coneguts[terme_lower]
+                return f'<a href="#term-{term_id}" class="term" data-term="{term_id}">{terme}</a>'
+            # Si no trobat, retornar el terme sense marca [T]
+            return terme
+
+        return re.sub(pattern, replacer, text)
 
     def process_notes(self, text: str, section_num: int) -> str:
         """Converteix [^n] a referències de notes."""
@@ -131,6 +176,90 @@ class ContentLoader:
         self.glossari = []
         self.bibliografia = ""
 
+    def _strip_v2_header(self, text: str) -> str:
+        """Elimina la capçalera de metadades V2 del text de traducció.
+
+        La capçalera V2 té el format:
+        # Títol
+        ## Subtítol
+        **Autor:** ...
+        **Metadades de qualitat:**
+        - ...
+        ---
+        # Títol repetit (opcional)
+        Autor repetit (opcional)
+
+        ## I (primer capítol real)
+        """
+        if not text:
+            return text
+
+        lines = text.split('\n')
+        content_start = 0
+
+        # Buscar el primer separador --- que indica fi de capçalera
+        for i, line in enumerate(lines):
+            if line.strip() == '---':
+                content_start = i + 1
+                break
+
+        if content_start > 0:
+            # Ara buscar el primer capítol real (## seguit de número romà o català)
+            remaining_lines = lines[content_start:]
+            chapter_start = 0
+
+            for i, line in enumerate(remaining_lines):
+                stripped = line.strip()
+                # Detectar inici de capítol: ## I, ## II, ## 1, ## Capítol, etc.
+                if stripped.startswith('## '):
+                    chapter_title = stripped[3:].strip()
+                    # Si és un número romà, número aràbic, o paraula de capítol
+                    if (self._is_chapter_marker(chapter_title)):
+                        chapter_start = i
+                        break
+
+            return '\n'.join(remaining_lines[chapter_start:]).strip()
+
+        return text
+
+    def _is_chapter_marker(self, text: str) -> bool:
+        """Detecta si el text és un marcador de capítol vàlid."""
+        text = text.strip()
+        # Números romans
+        if re.match(r'^[IVXLCDM]+$', text, re.IGNORECASE):
+            return True
+        # Números aràbics
+        if re.match(r'^\d+$', text):
+            return True
+        # Paraules catalanes de números
+        catalan_numbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                          'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                          'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                          'dinou', 'vint']
+        if text.lower() in catalan_numbers:
+            return True
+        return False
+
+    def _strip_title_author(self, text: str) -> str:
+        """Elimina títol i autor del principi del text original.
+
+        Busca el primer capítol (## I, ## 1, etc.) i retorna tot a partir d'allà.
+        """
+        if not text:
+            return text
+
+        lines = text.split('\n')
+
+        for i, line in enumerate(lines):
+            stripped = line.strip()
+            # Detectar inici de capítol: ## seguit de número
+            if stripped.startswith('## '):
+                chapter_title = stripped[3:].strip()
+                if self._is_chapter_marker(chapter_title):
+                    return '\n'.join(lines[i:]).strip()
+
+        return text
+
     def load(self) -> bool:
         """Carrega tots els fitxers de l'obra."""
         if not self.path.exists():
@@ -146,12 +275,16 @@ class ContentLoader:
         # Text original
         original_file = self.path / 'original.md'
         if original_file.exists():
-            self.original = original_file.read_text(encoding='utf-8')
+            raw_original = original_file.read_text(encoding='utf-8')
+            # Eliminar títol/autor del principi (començar des del primer capítol)
+            self.original = self._strip_title_author(raw_original)
 
         # Traducció
         traduccio_file = self.path / 'traduccio.md'
         if traduccio_file.exists():
-            self.traduccio = traduccio_file.read_text(encoding='utf-8')
+            raw_traduccio = traduccio_file.read_text(encoding='utf-8')
+            # Eliminar capçalera V2 amb metadades si existeix
+            self.traduccio = self._strip_v2_header(raw_traduccio)
 
         # Notes
         notes_file = self.path / 'notes.md'
@@ -382,12 +515,12 @@ class BuildSystem:
             print("❌")
             return
 
-        # Processar contingut
+        # Processar contingut (passant glossari per suportar marques [T])
         contingut_original = Markup(
-            self.md.process_sections(loader.original, lang='grc')
+            self.md.process_sections(loader.original, lang='grc', glossari=loader.glossari)
         )
         contingut_traduccio = Markup(
-            self.md.process_sections(loader.traduccio, lang='ca')
+            self.md.process_sections(loader.traduccio, lang='ca', glossari=loader.glossari)
         )
 
         # Bibliografia
@@ -412,6 +545,13 @@ class BuildSystem:
                 portada_url = pattern
                 break
 
+        # Extreure estadístiques
+        estadistiques = loader.metadata.get('estadistiques', {})
+
+        # Extreure font original
+        metadata_original = loader.metadata.get('metadata_original', {})
+        edicio_base = metadata_original.get('edicio_base', {})
+
         obra = {
             'slug': slug,
             'titol': obra_data.get('titol', obra_path.name.title()),
@@ -424,9 +564,16 @@ class BuildSystem:
             'any_traduccio': obra_data.get('any_traduccio', datetime.now().year),
             'descripcio': obra_data.get('descripcio'),
             'estat': (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('estat', 'esborrany'),
-            'qualitat': (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('qualitat'),
+            'qualitat': self._extract_quality(loader),
             'data_revisio': (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('data_revisio') or (loader.metadata.get('revisio') or obra_data.get('revisio') or {}).get('data', '1900-01-01'),
             'portada_url': portada_url,
+            # Camps addicionals
+            'seccions': loader.metadata.get('seccions'),
+            'paraules_original': estadistiques.get('paraules_original'),
+            'paraules_traduccio': estadistiques.get('paraules_traduccio'),
+            'font_original': edicio_base.get('titol'),
+            'font_url': edicio_base.get('url'),
+            'contribuidors': loader.metadata.get('contribuidors', []),
         }
 
         # Renderitzar template
@@ -448,6 +595,31 @@ class BuildSystem:
 
         self.obres.append(obra)
         print("✅")
+
+    def _extract_quality(self, loader: ContentLoader) -> Optional[float]:
+        """Extreu la qualitat de la traducció.
+
+        Busca en ordre:
+        1. metadata.yml (revisio.qualitat)
+        2. Capçalera del traduccio.md (format V2: "Puntuació mitjana: X.X/10")
+        """
+        # Primer intentar metadata
+        revisio = loader.metadata.get('revisio') or loader.metadata.get('obra', {}).get('revisio') or {}
+        if revisio.get('qualitat'):
+            return revisio['qualitat']
+
+        # Fallback: extreure de capçalera traduccio.md (format V2)
+        if loader.traduccio:
+            # Buscar en les primeres 800 línies (capçalera)
+            header = loader.traduccio[:2000]
+            match = re.search(r'Puntuació mitjana:\s*([\d.]+)/10', header)
+            if match:
+                try:
+                    return float(match.group(1))
+                except ValueError:
+                    pass
+
+        return None
 
     def build_index(self):
         """Construeix pàgina índex."""

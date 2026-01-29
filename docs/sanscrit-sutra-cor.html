@@ -35,6 +35,48 @@
     
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -243,6 +285,130 @@
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -318,6 +484,9 @@
     <!-- Main Content -->
     <main>
         
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -370,24 +539,75 @@
                         </div>
                         
 
-                        
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-revisat">revisat</span>
-                        </div>
-                        
-
-                        
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            8.5/10
-                        </div>
-                        
                     </div>
 
                     
                     <p class="work-description">El text més breu i recitat del budisme Mahāyāna. En menys de tres-centes paraules condensa l'essència dels Sutres de la Perfecció de la Saviesa: la comprensió de la vacuïtat (śūnyatā) com a naturalesa última de tots els fenòmens, incloent-hi les pròpies categories budistes. El bodhisattva Avalokiteśvara exposa a Śāriputra que forma i vacuïtat són inseparables, transcendint dualitats i dissolent tot apego, fins i tot a l'ensenyament mateix. Culmina amb el mantra «Gate gate pāragate pārasaṃgate bodhi svāhā».
 </p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                8.5/10
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Capítols</strong>
+                                1
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules original</strong>
+                                260
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules traducció</strong>
+                                420
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-26
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -424,14 +644,12 @@
                     <h2 class="section-title">Prajñāpāramitā Hṛdaya Sūtra</h2>
 
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <span class="section-number">[1]</span>
                     <h2>प्रज्ञापारमिताहृदयसूत्र</h2>
 <p><em>Text en sànscrit romanitzat segons l&rsquo;edició crítica de Edward Conze (1948)</em></p>
                 </div>
                 
 
                 <div class="section" id="orig-2" data-parallel="trad-2">
-                    <span class="section-number">[2]</span>
                     <p>Ārya-avalokiteśvaro bodhisattvo gambhīrāṃ prajñāpāramitā-caryāṃ caramāṇo vyavalokayati sma: pañca-skandhās tāṃś ca svabhāva-śūnyān paśyati sma.</p>
 <p>Iha Śāriputra rūpaṃ śūnyatā śūnyataiva rūpam, rūpān na pṛthak śūnyatā śūnyatāyā na pṛthag rūpam, yad rūpaṃ sā śūnyatā yā śūnyatā tad rūpam; evam eva vedanā-saṃjñā-saṃskāra-vijñānāni.</p>
 <p>Iha Śāriputra sarva-dharmāḥ śūnyatā-lakṣaṇā, anutpannā aniruddhā, amalā avimalā, anūnā aparipūrṇāḥ.</p>
@@ -446,7 +664,6 @@
                 
 
                 <div class="section" id="orig-3" data-parallel="trad-3">
-                    <span class="section-number">[3]</span>
                     <p><em>Nota: El text sànscrit representa la versió curta (hṛdaya) del Sutra de la Perfecció de la Saviesa. Existeixen versions més llargues en xinès (玄奘, Xuánzàng, 649 EC) i tibetà.</em></p>
                 </div>
                 
@@ -455,17 +672,8 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">El Sutra del Cor de la Perfecció de la Saviesa</h2>
-
+                    
                 <div class="section" id="trad-1" data-parallel="orig-1">
-                    <span class="section-number">[1]</span>
-                    <p><strong>Prajñāpāramitā Hṛdaya Sūtra</strong> · प्रज्ञापारमिताहृदयसूत्र</p>
-<p><em>Traducció del sànscrit al català</em></p>
-                </div>
-                
-
-                <div class="section" id="trad-2" data-parallel="orig-2">
-                    <span class="section-number">[2]</span>
                     <p>El noble <a href="#term-avalokitesvara" class="term" data-term="avalokitesvara">Avalokiteśvara</a>, el <a href="#term-bodhisattva" class="term" data-term="bodhisattva">bodhisattva</a>, mentre practicava la profunda <a href="#term-prajnaparamita" class="term" data-term="prajnaparamita">perfecció de la saviesa</a>, va contemplar clarament: els cinc <a href="#term-skandha" class="term" data-term="skandha">agregats</a> són buits de naturalesa pròpia.</p>
 <p>«Aquí, <a href="#term-sariputra" class="term" data-term="sariputra">Śāriputra</a>, la forma és <a href="#term-sunyata" class="term" data-term="sunyata">vacuïtat</a> i la vacuïtat mateixa és forma. La forma no és diferent de la vacuïtat, la vacuïtat no és diferent de la forma. Allò que és forma, això és vacuïtat; allò que és vacuïtat, això és forma. Igualment amb la sensació, la percepció, les formacions mentals i la consciència.</p>
 <p>»Aquí, Śāriputra, tots els <a href="#term-dharma" class="term" data-term="dharma">fenòmens</a> tenen el caràcter de la vacuïtat: no són originats ni destruïts, ni impurs ni immaculats, ni deficients ni complets.</p>
@@ -482,16 +690,14 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
-                    <span class="section-number">[3]</span>
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Notes del traductor</h2>
 <p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>: Les Quatre Nobles Veritats del budisme: el sofriment (<em>duḥkha</em>), el seu origen (<em>samudaya</em>), la seva cessació (<em>nirodha</em>) i el camí cap a la cessació (<em>mārga</em>). El sutra nega la seva existència última per mostrar que fins i tot les veritats més sagrades són buides de naturalesa pròpia.</p>
 <p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>: Els tres temps són passat, present i futur. L&rsquo;expressió indica que tots els Budes —els que han estat, els que són i els que seran— segueixen aquest mateix ensenyament.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
-                    <span class="section-number">[4]</span>
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Sobre la traducció</h2>
 <p>El <em>Prajñāpāramitā Hṛdaya Sūtra</em> és possiblement el text més recitat de tot el budisme Mahāyāna. La seva brevetat (menys de tres-centes paraules en sànscrit) contrasta amb la immensitat del seu contingut filosòfic: condensa en poques línies l&rsquo;essència dels voluminosos <em>Sutres de la Perfecció de la Saviesa</em>, que en la seva forma completa arriben als cent mil versos.</p>
 <p>El concepte central és <em>śūnyatā</em>, traduït aquí com «vacuïtat». Aquesta traducció, tot i ser la més establerta, pot induir a error: no es tracta del buit com a absència o negació nihilista, sinó de la comprensió que cap fenomen —incloent-hi el jo— posseeix una existència independent i permanent. Tot el que existeix ho fa de manera relacional i condicionada.</p>
@@ -514,14 +720,27 @@
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari (15)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+                
+            </div>
+            
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 
@@ -534,18 +753,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> perfecció de la saviesa</p>
                         <p class="term-definition">Compost de prajñā (saviesa transcendent) i pāramitā (perfecció, arribar a l'altra riba). Representa la comprensió directa de la naturalesa última de la realitat, més enllà del pensament conceptual. És la sisena i suprema de les sis perfeccions (pāramitās) del camí del bodhisattva.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-2">[2]</a>, 
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -558,16 +766,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> vacuïtat</p>
                         <p class="term-definition">Concepte central del budisme Mahāyāna. No significa 'res' o 'no-existència', sinó l'absència de naturalesa pròpia independent (svabhāva) en tots els fenòmens. Tots els fenòmens existeixen de manera interdependent i relacional, sense essència fixa. La vacuïtat és la naturalesa última de la realitat.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -580,14 +779,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> El Senyor que observa [els mons]</p>
                         <p class="term-definition">Bodhisattva de la compassió, una de les figures més venerades del budisme Mahāyāna. El seu nom significa 'el que contempla els sons del món' o 'el senyor que mira avall [amb compassió]'. Conegut com Guānyīn en xinès i Kannon en japonès. És qui exposa l'ensenyament en aquest sutra.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -600,16 +792,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> ésser de despertar</p>
                         <p class="term-definition">Literalment 'ésser (sattva) de il·luminació (bodhi)'. En el Mahāyāna, és aquell que, mogut per la compassió, aspira a assolir la il·luminació completa (samyak-saṃbodhi) per al bé de tots els éssers sensibles, renunciant a entrar definitivament al nirvāṇa fins que tots siguin alliberats.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -622,14 +805,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> agregat</p>
                         <p class="term-definition">Els cinc agregats o components que constitueixen l'experiència humana: 1) rūpa (forma/cos), 2) vedanā (sensació), 3) saṃjñā (percepció), 4) saṃskāra (formacions mentals), 5) vijñāna (consciència). El Buda va ensenyar que no hi ha un 'jo' permanent més enllà d'aquests agregats, que són transitoris i interdependents.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -642,18 +818,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> Fill de Śārī</p>
                         <p class="term-definition">Un dels principals deixebles del Buda Śākyamuni, considerat el més eminent en saviesa (prajñā). El seu nom significa 'fill de Śārī' (el nom de la seva mare). En aquest sutra, és l'interlocutor a qui Avalokiteśvara adreça l'ensenyament sobre la vacuïtat.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-2">[2]</a>, 
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -666,16 +831,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> fenomen, llei, ensenyament</p>
                         <p class="term-definition">Terme polisèmic central. Pot significar: 1) l'ensenyament del Buda, 2) la llei còsmica o ordre natural, 3) qualsevol fenomen o element de l'existència. En el context d'aquest sutra, sovint es refereix als fenòmens en general (sarva-dharmāḥ = tots els fenòmens).
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -688,14 +844,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> cessació, alliberament</p>
                         <p class="term-definition">Literalment 'extinció' o 'bufar [la flama del desig]'. L'estat d'alliberament del cicle de renaixements (saṃsāra) i del sofriment. En el Mahāyāna, el nirvāṇa últim no és diferent del saṃsāra quan es comprèn la vacuïtat: ambdós són manifestacions de la mateixa realitat.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -708,14 +857,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> fórmula sagrada</p>
                         <p class="term-definition">Fórmula sonora de poder espiritual. De la rel 'man-' (pensar) i el sufix '-tra' (instrument). El mantra final del sutra (gate gate...) és considerat l'essència concentrada de tot l'ensenyament de la Perfecció de la Saviesa.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -728,14 +870,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> despertar, il·luminació</p>
                         <p class="term-definition">L'estat de despertar espiritual complet, la comprensió directa de la naturalesa de la realitat. Etimològicament relacionat amb 'budh' (despertar, conèixer). 'Buddha' significa 'el despert', aquell que ha realitzat el bodhi.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -748,14 +883,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> anat/anada</p>
                         <p class="term-definition">Participi passat femení de la rel 'gam' (anar). En el mantra final, representa el viatge espiritual cap a l'altra riba (l'alliberament). La repetició 'gate gate' indica el moviment continu i decidit cap a la transcendència.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -768,14 +896,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> anada a l'altra riba</p>
                         <p class="term-definition">Compost de pāra (l'altra riba, la transcendència) i gate (anada). Simbolitza haver creuat l'oceà del saṃsāra i arribat a la riba de l'alliberament. És una imatge clàssica del budisme: el dharma com una barca que porta de la riba del sofriment a la de la llibertat.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -788,14 +909,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> així sigui, que així es compleixi</p>
                         <p class="term-definition">Exclamació ritual d'origen vèdic, utilitzada per tancar mantres i invocacions. Originalment s'usava en ofrenes al foc sacrificial. En el context budista, sella i activa el poder del mantra. Comparable a 'amén' en les tradicions abrahamiques.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-3">[3]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -808,14 +922,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> il·luminació perfecta i completa</p>
                         <p class="term-definition">L'estat d'il·luminació suprema assolit pels Budes. Samyak significa 'complet, perfecte, correcte'; saṃbodhi és el despertar ple. És l'objectiu últim del camí del bodhisattva, diferent de l'il·luminació parcial dels arhats.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -828,14 +935,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> ignorància</p>
                         <p class="term-definition">La ignorància fonamental sobre la naturalesa de la realitat. És el primer nus de la cadena de l'origen condicionat (pratītyasamutpāda) i l'arrel de tot sofriment. No és simplement falta de coneixement, sinó una percepció errònia activa que pren el transitori per permanent i el 'no-jo' per 'jo'.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -858,7 +958,6 @@
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -867,93 +966,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -969,130 +1031,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -1110,6 +1286,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 

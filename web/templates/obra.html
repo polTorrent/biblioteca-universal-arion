@@ -11,6 +11,48 @@
 {% block head_extra %}
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -219,6 +261,130 @@
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -251,6 +417,9 @@
 {% endblock %}
 
 {% block content %}
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -305,23 +474,92 @@
                         </div>
                         {% endif %}
 
-                        {% if obra.estat %}
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
-                        </div>
-                        {% endif %}
-
-                        {% if obra.qualitat %}
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            {{ obra.qualitat }}/10
-                        </div>
-                        {% endif %}
                     </div>
 
                     {% if obra.descripcio %}
                     <p class="work-description">{{ obra.descripcio }}</p>
+                    {% endif %}
+
+                    {% if obra.estat or obra.qualitat %}
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            {% if obra.estat %}
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-{{ obra.estat }}">{{ obra.estat }}</span>
+                            </div>
+                            {% endif %}
+
+                            {% if obra.qualitat %}
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                {{ obra.qualitat }}/10
+                            </div>
+                            {% endif %}
+
+                            {% if obra.seccions %}
+                            <div class="work-meta-item">
+                                <strong>Capítols</strong>
+                                {{ obra.seccions }}
+                            </div>
+                            {% endif %}
+
+                            {% if obra.any_traduccio %}
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                {{ obra.any_traduccio }}
+                            </div>
+                            {% endif %}
+
+                            {% if obra.paraules_original %}
+                            <div class="work-meta-item">
+                                <strong>Paraules original</strong>
+                                {{ obra.paraules_original|default('—') }}
+                            </div>
+                            {% endif %}
+
+                            {% if obra.paraules_traduccio %}
+                            <div class="work-meta-item">
+                                <strong>Paraules traducció</strong>
+                                {{ obra.paraules_traduccio|default('—') }}
+                            </div>
+                            {% endif %}
+
+                            {% if obra.data_revisio %}
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                {{ obra.data_revisio }}
+                            </div>
+                            {% endif %}
+
+                            {% if obra.font_original %}
+                            <div class="work-meta-item">
+                                <strong>Font original</strong>
+                                {% if obra.font_url %}
+                                <a href="{{ obra.font_url }}" target="_blank" rel="noopener">{{ obra.font_original }}</a>
+                                {% else %}
+                                {{ obra.font_original }}
+                                {% endif %}
+                            </div>
+                            {% endif %}
+
+                            {% if obra.contribuidors %}
+                            <div class="work-meta-item" style="grid-column: 1 / -1;">
+                                <strong>Contribuïdors</strong>
+                                <ul style="margin: 0.5rem 0 0 1rem; padding: 0;">
+                                {% for contrib in obra.contribuidors %}
+                                    <li>{{ contrib.rol }}: {{ contrib.nom }} ({{ contrib.data }})</li>
+                                {% endfor %}
+                                </ul>
+                            </div>
+                            {% endif %}
+                        </div>
+                    </div>
                     {% endif %}
                 </div>
             </div>
@@ -377,11 +615,29 @@
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            {% if notes or glossari %}
+            <div class="section-toggle-container">
+                {% if glossari %}
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari ({{ glossari|length }})</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                {% endif %}
+                {% if notes %}
+                <button class="section-toggle" id="notes-toggle" data-target="notes-section">
+                    <span>Notes ({{ notes|length }})</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                {% endif %}
+            </div>
+            {% endif %}
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         {% if notes %}
-        <section class="notes-section" id="notes">
+        <section class="notes-section collapsible-section" id="notes-section">
             <h2>Notes</h2>
             {% for nota in notes %}
             <div class="note" id="nota-{{ nota.id }}">
@@ -395,15 +651,15 @@
                 {% if nota.refs %}
                 <p class="note-refs">{{ nota.refs }}</p>
                 {% endif %}
-                <a href="#ref-{{ nota.id }}" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             {% endfor %}
         </section>
         {% endif %}
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         {% if glossari %}
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 {% for terme in glossari %}
@@ -415,14 +671,7 @@
                     <dd>
                         <p class="term-translation"><strong>Traducció:</strong> {{ terme.traduccio }}</p>
                         <p class="term-definition">{{ terme.definicio }}</p>
-                        {% if terme.usos %}
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            {% for us in terme.usos %}
-                            <a href="#trad-{{ us }}">[{{ us }}]</a>{% if not loop.last %}, {% endif %}
-                            {% endfor %}
-                        </p>
-                        {% endif %}
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 {% endfor %}
@@ -450,7 +699,6 @@
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -459,93 +707,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -561,130 +772,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -702,6 +1027,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 {% endblock %}

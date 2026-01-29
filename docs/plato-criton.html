@@ -35,6 +35,48 @@
     
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -243,6 +285,130 @@
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -318,6 +484,9 @@
     <!-- Main Content -->
     <main>
         
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -372,24 +541,60 @@
                         </div>
                         
 
-                        
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-esborrany">esborrany</span>
-                        </div>
-                        
-
-                        
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            7/10
-                        </div>
-                        
                     </div>
 
                     
                     <p class="work-description">Diàleg platònic ambientat a la presó d'Atenes, on Sòcrates espera l'execució. El seu amic Critó li proposa fugir, però Sòcrates refusa, argumentant que cal obeir les lleis de la ciutat fins i tot quan ens perjudiquen. És un text fonamental sobre l'ètica del deure, el contracte social i la relació entre l'individu i l'Estat. El diàleg presenta la cèlebre prosopopeia de les Lleis d'Atenes, que parlen en primera persona per defensar l'autoritat de la polis.
 </p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-esborrany">esborrany</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                7/10
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-20
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -426,7 +631,6 @@
                     <h2 class="section-title">Κρίτων</h2>
 
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <span class="section-number">[1]</span>
                     <h2>[43a-43b] Pròleg: L&rsquo;arribada de Critó</h2>
 <p>ΣΩΚΡΑΤΗΣ. Τί τηνικάδε ἀφῖξαι, ὦ Κρίτων; ἢ οὐ πρῲ ἔτι ἐστίν;</p>
 <p>ΚΡΙΤΩΝ. Πάνυ μὲν οὖν.</p>
@@ -443,7 +647,6 @@
                 
 
                 <div class="section" id="orig-2" data-parallel="trad-2">
-                    <span class="section-number">[2]</span>
                     <h2>[43c-44b] La notícia i el somni</h2>
 <p>ΚΡΙΤΩΝ. Καὶ ἄλλοι, ὦ Σώκρατες, τηλικοῦτοι ἐν τοιαύταις συμφοραῖς ἁλίσκονται, ἀλλ᾽ οὐδὲν αὐτοὺς ἐπιλύεται ἡ ἡλικία τὸ μὴ οὐχὶ ἀγανακτεῖν τῇ παρούσῃ τύχῃ.</p>
 <p>ΣΩΚΡΑΤΗΣ. Ἔστι ταῦτα. Ἀλλὰ τί δὴ οὕτω πρῲ ἀφῖξαι;</p>
@@ -463,7 +666,6 @@
                 
 
                 <div class="section" id="orig-3" data-parallel="trad-3">
-                    <span class="section-number">[3]</span>
                     <h2>[44b-46a] La proposta de fugida</h2>
 <p>ΚΡΙΤΩΝ. Λίαν γε, ὡς ἔοικεν. Ἀλλ᾽ ὦ δαιμόνιε Σώκρατες, ἔτι καὶ νῦν ἐμοὶ πιθοῦ καὶ σώθητι· ὡς ἐμοί, ἐὰν σὺ ἀποθάνῃς, οὐ μία συμφορά ἐστιν, ἀλλὰ χωρὶς μὲν τοῦ ἐστερῆσθαι τοιούτου ἐπιτηδείου οἷον ἐγὼ οὐδένα μή ποτε εὑρήσω, ἔτι δὲ καὶ πολλοῖς δόξω, οἳ ἐμὲ καὶ σὲ μὴ σαφῶς ἴσασιν, ὡς οἷός τ᾽ ὤν σε σῴζειν εἰ ἤθελον ἀναλίσκειν χρήματα, ἀμελῆσαι.</p>
 <p>ΣΩΚΡΑΤΗΣ. Ἀλλὰ τί ἡμῖν, ὦ μακάριε Κρίτων, οὕτω τῆς τῶν πολλῶν δόξης μέλει; Οἱ γὰρ ἐπιεικέστατοι, ὧν μᾶλλον ἄξιον φροντίζειν, ἡγήσονται αὐτὰ οὕτω πεπρᾶχθαι ὥσπερ ἂν πραχθῇ.</p>
@@ -474,7 +676,6 @@
                 
 
                 <div class="section" id="orig-4" data-parallel="trad-4">
-                    <span class="section-number">[4]</span>
                     <h2>[46b-48a] El mètode filosòfic</h2>
 <p>ΣΩΚΡΑΤΗΣ. Ὦ φίλε Κρίτων, ἡ προθυμία σου πολλοῦ ἀξία εἰ μετά τινος ὀρθότητος εἴη· εἰ δὲ μή, ὅσῳ μείζων τοσούτῳ χαλεπωτέρα. Σκοπεῖσθαι οὖν χρὴ ἡμᾶς εἴτε ταῦτα πρακτέον εἴτε μή· ὡς ἐγὼ οὐ νῦν πρῶτον ἀλλὰ καὶ ἀεὶ τοιοῦτος οἷος τῶν ἐμῶν μηδενὶ ἄλλῳ πείθεσθαι ἢ τῷ λόγῳ ὃς ἄν μοι λογιζομένῳ βέλτιστος φαίνηται.</p>
 <p>ΚΡΙΤΩΝ. Καλῶς.</p>
@@ -487,7 +688,6 @@
                 
 
                 <div class="section" id="orig-5" data-parallel="trad-5">
-                    <span class="section-number">[5]</span>
                     <h2>[48b-49e] El principi fonamental: mai no és just fer el mal</h2>
 <p>ΣΩΚΡΑΤΗΣ. Ἀλλ᾽, ὦ θαυμάσιε, οὗτός τε ὁ λόγος ὃν διεληλύθαμεν ἔμοιγε δοκεῖ ἔτι ὅμοιος εἶναι καὶ πρότερον· καὶ τόνδε δὲ αὖ σκόπει εἰ ἔτι μένει ἡμῖν ἢ οὔ, ὅτι οὐ τὸ ζῆν περὶ πλείστου ποιητέον ἀλλὰ τὸ εὖ ζῆν.</p>
 <p>ΚΡΙΤΩΝ. Ἀλλὰ μένει.</p>
@@ -508,7 +708,6 @@
                 
 
                 <div class="section" id="orig-6" data-parallel="trad-6">
-                    <span class="section-number">[6]</span>
                     <h2>[50a-51c] La prosopopeia de les Lleis</h2>
 <p>ΣΩΚΡΑΤΗΣ. Ἀλλ᾽ ὧδε σκόπει. Εἰ μέλλουσιν ἡμῖν ἐνθένδε εἴτε ἀποδιδράσκειν, εἴθ᾽ ὅπως δεῖ ὀνομάσαι τοῦτο, ἐλθόντες οἱ νόμοι καὶ τὸ κοινὸν τῆς πόλεως ἐπιστάντες ἔροιντο· «Εἰπέ μοι, ὦ Σώκρατες, τί ἐν νῷ ἔχεις ποιεῖν; Ἄλλο τι ἢ τούτῳ τῷ ἔργῳ ᾧ ἐπιχειρεῖς διανοῇ τούς τε νόμους ἡμᾶς ἀπολέσαι καὶ σύμπασαν τὴν πόλιν τὸ σὸν μέρος;»</p>
 <p>Τί ἐροῦμεν, ὦ Κρίτων, πρὸς ταῦτα καὶ ἄλλα τοιαῦτα;</p>
@@ -519,7 +718,6 @@
                 
 
                 <div class="section" id="orig-7" data-parallel="trad-7">
-                    <span class="section-number">[7]</span>
                     <h2>[51d-53a] L&rsquo;acord tàcit amb les Lleis</h2>
 <p>«Ὅμως προαγορεύομεν τῷ ἐξουσίαν πεποιηκέναι Ἀθηναίων τῷ βουλομένῳ, ἐπειδὰν δοκιμασθῇ καὶ ἴδῃ τὰ ἐν τῇ πόλει πράγματα καὶ ἡμᾶς τοὺς νόμους, ᾧ ἂν μὴ ἀρέσκωμεν ἡμεῖς, ἐξεῖναι λαβόντα τὰ αὑτοῦ ἀπιέναι ὅποι ἂν βούληται.»</p>
 <p>«Ὃς δ᾽ ἂν ὑμῶν παραμείνῃ, ὁρῶν ὃν τρόπον ἡμεῖς τάς τε δίκας δικάζομεν καὶ τἆλλα τὴν πόλιν διοικοῦμεν, ἤδη φαμὲν τοῦτον ὡμολογηκέναι ἔργῳ ἡμῖν ἃ ἂν ἡμεῖς κελεύωμεν ποιήσειν ταῦτα.»</p>
@@ -528,7 +726,6 @@
                 
 
                 <div class="section" id="orig-8" data-parallel="trad-8">
-                    <span class="section-number">[8]</span>
                     <h2>[53b-54c] Les conseqüències de la fugida</h2>
 <p>«Αὐτὸς δὲ πρῶτον μὲν ἐὰν εἰς τῶν ἐγγύτατά τινα πόλεων ἔλθῃς, ἢ Θήβαζε ἢ Μέγαράδε—εὐνομοῦνται γὰρ ἀμφότεραι—πολέμιος ἥξεις, ὦ Σώκρατες, τῇ τούτων πολιτείᾳ, καὶ ὅσοιπερ κήδονται τῶν αὑτῶν πόλεων ὑποβλέψονταί σε διαφθορέα ἡγούμενοι τῶν νόμων.»</p>
 <p>«Ἀλλ᾽ ὦ Σώκρατες, πειθόμενος ἡμῖν τοῖς σοῖς τροφεῦσι μήτε παῖδας περὶ πλείονος ποιοῦ μήτε τὸ ζῆν μήτε ἄλλο μηδὲν πρὸ τοῦ δικαίου, ἵνα εἰς Ἅιδου ἐλθὼν ἔχῃς πάντα ταῦτα ἀπολογήσασθαι τοῖς ἐκεῖ ἄρχουσιν.»</p>
@@ -537,7 +734,6 @@
                 
 
                 <div class="section" id="orig-9" data-parallel="trad-9">
-                    <span class="section-number">[9]</span>
                     <h2>[54d-54e] Epíleg</h2>
 <p>ΣΩΚΡΑΤΗΣ. Ταῦτα, ὦ φίλε ἑταῖρε Κρίτων, εὖ ἴσθι ὅτι ἐγὼ δοκῶ ἀκούειν, ὥσπερ οἱ κορυβαντιῶντες τῶν αὐλῶν δοκοῦσιν ἀκούειν, καὶ ἐν ἐμοὶ αὕτη ἡ ἠχὴ τούτων τῶν λόγων βομβεῖ καὶ ποιεῖ μὴ δύνασθαι τῶν ἄλλων ἀκούειν.</p>
 <p>ΚΡΙΤΩΝ. Ἀλλ᾽, ὦ Σώκρατες, οὐκ ἔχω λέγειν.</p>
@@ -549,27 +745,8 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">Critó: Sobre el deure</h2>
-
+                    
                 <div class="section" id="trad-1" data-parallel="orig-1">
-                    <span class="section-number">[1]</span>
-                    <h2>[43a-43b] Pròleg: L&rsquo;arribada de Critó</h2>
-<p>SÒCRATES. —Per què has vingut a aquesta hora, Critó? No és encara molt d&rsquo;hora?</p>
-<p>CRITÓ. —Certament que sí.</p>
-<p>SÒCRATES. —Quina hora és, més o menys?</p>
-<p>CRITÓ. —L&rsquo;<a href="#term-orthros" class="term" data-term="orthros">alba</a> profunda.</p>
-<p>SÒCRATES. —M&rsquo;estranya que el guarda de la presó t&rsquo;hagi volgut obrir.</p>
-<p>CRITÓ. —Ja em coneix bé, Sòcrates, perquè vinc aquí sovint, i a més he fet algun favor a ell.</p>
-<p>SÒCRATES. —Acabes d&rsquo;arribar o fa estona?</p>
-<p>CRITÓ. —Força estona.</p>
-<p>SÒCRATES. —I per què no m&rsquo;has despertat de seguida, en lloc de seure en silenci al meu costat?</p>
-<p>CRITÓ. —Per Zeus, Sòcrates, jo mateix no hauria volgut estar en una vigília tan angoixant. Però fa estona que m&rsquo;admiro veient com dorms plàcidament; expressament no t&rsquo;he despertat perquè passessis l&rsquo;estona tan agradablement com fos possible. Moltes vegades abans, al llarg de tota la teva vida, t&rsquo;he considerat feliç pel teu caràcter, però molt més encara en la desgràcia present, veient com la suportes amb facilitat i serenor.</p>
-<p>SÒCRATES. —És que seria una incongruència, Critó, indignar-se a la meva edat si ja em toca morir.<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup></p>
-                </div>
-                
-
-                <div class="section" id="trad-2" data-parallel="orig-2">
-                    <span class="section-number">[2]</span>
                     <h2>[43c-44b] La notícia i el somni</h2>
 <p>CRITÓ. —També altres, Sòcrates, de la teva edat es troben en semblants desgràcies, però l&rsquo;edat no els allibera d&rsquo;indignar-se per la sort present.</p>
 <p>SÒCRATES. —És veritat. Però per què has vingut tan d&rsquo;hora?</p>
@@ -588,8 +765,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
-                    <span class="section-number">[3]</span>
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>[44b-46a] La proposta de fugida</h2>
 <p>CRITÓ. —Massa clar, pel que sembla. Però, diví Sòcrates, encara ara fes-me cas i salva&rsquo;t. Perquè si tu mors, per a mi no serà una sola desgràcia: a més de veure&rsquo;m privat d&rsquo;un amic com no en trobaré mai cap altre, molts que no ens coneixen bé a tu i a mi pensaran que, podent-te salvar si hagués volgut gastar diners, me n&rsquo;he despreocupat. I quina opinió seria més vergonyosa que la de semblar que valoro més els diners que els amics? Perquè la majoria no es creurà que tu mateix no has volgut marxar d&rsquo;aquí malgrat que nosaltres t&rsquo;hi empenyíem.</p>
 <p>SÒCRATES. —Però per què ens ha d&rsquo;importar tant, benaurat Critó, l&rsquo;opinió de la majoria? Els més assenyats, que són els que val més tenir en compte, pensaran que les coses s&rsquo;han fet tal com realment s&rsquo;hagin fet.</p>
@@ -599,8 +775,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
-                    <span class="section-number">[4]</span>
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>[46b-48a] El mètode filosòfic</h2>
 <p>SÒCRATES. —Estimat Critó, el teu afany valdria molt si anés acompanyat de rectitud; però si no, com més gran és, més difícil resulta. Cal, doncs, que examinem si hem de fer això o no. Perquè jo sóc, no ara per primera vegada sinó sempre, de mena tal que no em deixo convèncer per cap altra cosa meva que no sigui el <a href="#term-logos" class="term" data-term="logos">raonament</a> que, en reflexionar-hi, em sembli millor.<sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup></p>
 <p>CRITÓ. —Bé.</p>
@@ -612,8 +787,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
-                    <span class="section-number">[5]</span>
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>[48b-49e] El principi fonamental: mai no és just fer el mal</h2>
 <p>SÒCRATES. —Doncs, admirat amic, aquest argument que hem exposat em sembla encara igual que abans; i examina si aquest altre també es manté o no: que no s&rsquo;ha de valorar més el viure sinó el <a href="#term-eu-zen" class="term" data-term="eu-zen">viure bé</a>.</p>
 <p>CRITÓ. —Es manté.</p>
@@ -633,8 +807,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
-                    <span class="section-number">[6]</span>
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>[50a-51c] La prosopopeia de les Lleis</h2>
 <p>SÒCRATES. —Considera-ho així. Si quan nosaltres estem a punt de fugir d&rsquo;aquí —o com s&rsquo;hagi de dir—, vinguessin les <a href="#term-nomoi" class="term" data-term="nomoi">Lleis</a> i la comunitat de la ciutat i, posant-se davant nostre, diguessin: «Digues-nos, Sòcrates, què tens intenció de fer? Amb aquesta acció que intentes, no penses destruir-nos a nosaltres, les Lleis, i tota la ciutat, en la mesura que depèn de tu?»<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup></p>
 <p>Què direm, Critó, a això i a altres coses semblants?</p>
@@ -644,8 +817,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
-                    <span class="section-number">[7]</span>
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>[51d-53a] L&rsquo;acord tàcit amb les Lleis</h2>
 <p>«Proclamem públicament que qualsevol atenès que vulgui, després del seu examen i d&rsquo;haver vist els afers de la ciutat i a nosaltres les Lleis, si no li plaguem, té permís de marxar on vulgui emportant-se els seus béns.»</p>
 <p>«Però qui de vosaltres es quedi, veient de quina manera administrem la justícia i les altres coses de la ciutat, afirmem que ja ha acordat amb fets fer el que nosaltres manem.»</p>
@@ -653,8 +825,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
-                    <span class="section-number">[8]</span>
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>[53b-54c] Les conseqüències de la fugida</h2>
 <p>«Si vas a alguna de les ciutats properes, a Tebes o a Mègara —perquè totes dues estan ben governades—, hi arribaràs, Sòcrates, com a enemic de la seva constitució, i tots els que es preocupen per les seves ciutats et miraran amb recel, considerant-te un corruptor de les lleis.»</p>
 <p>«Però, Sòcrates, fent-nos cas a nosaltres, els teus criadors, no valoris més ni els fills ni la vida ni cap altra cosa que la justícia, perquè quan arribis a l&rsquo;Hades puguis dir tot això en la teva defensa davant dels governants d&rsquo;allà.»</p>
@@ -662,8 +833,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
-                    <span class="section-number">[9]</span>
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>[54d-54e] Epíleg</h2>
 <p>SÒCRATES. —Aquestes coses, estimat amic Critó, sàpigues que em sembla sentir-les, com els <a href="#term-korybantiantes" class="term" data-term="korybantiantes">coribants</a> els sembla sentir les flautes, i dins meu ressona el brunzit d&rsquo;aquestes paraules i em fa impossible escoltar cap altra cosa.<sup><a href="#nota-12" class="note-ref" id="ref-12">[12]</a></sup></p>
 <p>CRITÓ. —Però, Sòcrates, no tinc res a dir.</p>
@@ -685,11 +855,29 @@
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari (7)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+                
+                <button class="section-toggle" id="notes-toggle" data-target="notes-section">
+                    <span>Notes (12)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+            </div>
+            
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         
-        <section class="notes-section" id="notes">
+        <section class="notes-section collapsible-section" id="notes-section">
             <h2>Notes</h2>
             
             <div class="note" id="nota-1">
@@ -701,7 +889,7 @@
                 </div>
                 <p>Sòcrates tenia setanta anys quan va ser condemnat a mort (399 aC). La seva tranquil·litat davant la mort és un tema recurrent en els diàlegs platònics, especialment al <em>Fedó</em>, on desenvolupa arguments sobre la immortalitat de l&rsquo;ànima. Aquí, la serenitat és presentada com a fruit del seu caràcter filosòfic.</p>
                 
-                <a href="#ref-1" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-2">
@@ -715,7 +903,7 @@
                 
                 <p class="note-refs">Plató, *Fedó* 58a-c</p>
                 
-                <a href="#ref-2" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-3">
@@ -727,7 +915,7 @@
                 </div>
                 <p>Citació d&rsquo;Homer, <em>Ilíada</em> IX.363. Aquil·les amenaça de tornar a Ftia (la seva terra natal a Tessàlia) si no rep el que li correspon. Sòcrates interpreta el somni com un presagi: «Ftia» representa la seva pàtria celestial, el lloc on anirà l&rsquo;ànima després de la mort.</p>
                 
-                <a href="#ref-3" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-4">
@@ -739,7 +927,7 @@
                 </div>
                 <p>Sòcrates estableix el seu mètode: només seguir el raonament (<em>logos</em>) que, en examinar-lo, sembli millor. Aquest és el fonament de l&rsquo;ètica socràtica: no actuar per emoció, por o opinió de la majoria, sinó per convicció racional.</p>
                 
-                <a href="#ref-4" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-5">
@@ -751,7 +939,7 @@
                 </div>
                 <p>Analogia recurrent en Plató: així com en medicina o gimnàstica seguim l&rsquo;expert i no la majoria, en qüestions de justícia hem de seguir qui realment sap, no l&rsquo;opinió popular. L&rsquo;«únic» expert aquí és implícitament la raó filosòfica o, potser, la divinitat.</p>
                 
-                <a href="#ref-5" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-6">
@@ -765,7 +953,7 @@
                 
                 <p class="note-refs">*República* 335d-e, on Sòcrates argumenta que mai no és just perjudicar ningú</p>
                 
-                <a href="#ref-6" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-7">
@@ -777,7 +965,7 @@
                 </div>
                 <p>La conclusió de l&rsquo;argument: ni respondre a la injustícia amb injustícia, ni fer mal a ningú sota cap circumstància. Aquest principi és la base per rebutjar la fugida: fugir seria fer mal a les Lleis i a la ciutat.</p>
                 
-                <a href="#ref-7" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-8">
@@ -792,7 +980,7 @@
 2. Hi ha un acord tàcit (en quedar-se, ha acceptat obeir-les)
 3. La desobediència individual destrueix l&rsquo;ordre social</p>
                 
-                <a href="#ref-8" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-9">
@@ -804,7 +992,7 @@
                 </div>
                 <p>Idea central del pensament polític grec: la <em>polis</em> és anterior i superior a l&rsquo;individu i a la família. El ciutadà deu la seva existència i educació a les lleis de la ciutat. Aquesta noció influirà en tot el pensament polític occidental.</p>
                 
-                <a href="#ref-9" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-10">
@@ -818,7 +1006,7 @@
                 
                 <p class="note-refs">Locke, *Segon tractat sobre el govern civil*, que reprèn aquesta teoria</p>
                 
-                <a href="#ref-10" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-11">
@@ -830,7 +1018,7 @@
                 </div>
                 <p>Les Lleis adverteixen que si Sòcrates fuig, les lleis divines de l&rsquo;Hades (el món dels morts) tampoc no el rebran bé. La justícia no és només terrenal sinó còsmica. Aquesta idea connecta amb el mite escatològic del <em>Fedó</em> i de la <em>República</em>.</p>
                 
-                <a href="#ref-11" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
             <div class="note" id="nota-12">
@@ -842,15 +1030,15 @@
                 </div>
                 <p>Els coribants eren sacerdots de Cíbele que entraven en èxtasi ritual al so de les flautes. Sòcrates compara la força dels arguments de les Lleis amb aquesta possessió divina: els seus raonaments «ressonen» dins seu de manera tan potent que no pot escoltar cap altra cosa. És una imatge irònica: el filòsof més racional d&rsquo;Atenes es descriu «posseït» per la raó.</p>
                 
-                <a href="#ref-12" class="back-to-text">↩ Tornar al text</a>
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
             
         </section>
         
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 
@@ -863,14 +1051,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> alba, matinada</p>
                         <p class="term-definition">El moment just abans de sortir el sol, la part més fosca de la matinada. Critó arriba a la presó en aquest moment per tenir temps de convèncer Sòcrates de fugir abans que els guardes estiguin en plena activitat.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -883,14 +1064,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> vaixell</p>
                         <p class="term-definition">El vaixell sagrat enviat a Delos per commemorar el viatge de Teseu. Durant el seu viatge cap execució podia tenir lloc a Atenes per motius de puresa religiosa. El retorn del vaixell significava la mort imminent de Sòcrates.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-2">[2]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -903,14 +1077,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> raonament, argument, paraula</p>
                         <p class="term-definition">Terme central de la filosofia grega amb múltiples significats: paraula, discurs, raonament, proporció, raó. Per a Sòcrates, el logos és el criteri últim de veritat: només cal seguir l'argument que, en examinar-lo, sembli millor. Aquesta primacia del raonament sobre l'emoció és fonamental en l'ètica socràtica.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-4">[4]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -923,14 +1090,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> viure bé</p>
                         <p class="term-definition">No simplement viure, sinó viure bé, bellament i justament. Per als socràtics, la vida només té valor si és virtuosa. Aquest principi justifica que Sòcrates prefereixi morir justament que viure injustament. L'equació de Sòcrates és: viure bé = viure bellament = viure justament.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-5">[5]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -943,14 +1103,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> lleis</p>
                         <p class="term-definition">Les lleis de la polis, personificades en el diàleg com a éssers que parlen en primera persona. Els nomoi són més que simples lleis escrites: inclouen tot el sistema legal, educatiu i moral de la ciutat. La seva autoritat prové del fet que han format el ciutadà des del naixement.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-8">[8]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -963,14 +1116,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> pàtria</p>
                         <p class="term-definition">La terra dels pares, la ciutat natal. En el pensament grec, la pàtria és més sagrada que els pares mateixos perquè és l'origen últim de l'educació i la identitat del ciutadà. Desobeir les lleis de la pàtria és com agredir els propis pares.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-9">[9]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -983,14 +1129,7 @@
                         <p class="term-translation"><strong>Traducció:</strong> els qui celebren els ritus coribàntics</p>
                         <p class="term-definition">Els coribants eren sacerdots de la deessa Cíbele que entraven en estats d'èxtasi mistic acompanyats de música de flautes i tambors. Sòcrates compara la força irresistible dels arguments de les Lleis amb aquesta possessió religiosa: els raonaments ressonen dins seu de manera tan potent que no pot escoltar res més.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-12">[12]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -1013,7 +1152,6 @@
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -1022,93 +1160,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -1124,130 +1225,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -1265,6 +1480,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 

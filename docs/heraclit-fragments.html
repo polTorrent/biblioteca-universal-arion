@@ -49,6 +49,48 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
     
 <!-- Estils per índex, navegació i favorits -->
 <style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
     /* Botó favorit */
     .btn-favorit-below {
         display: inline-flex;
@@ -257,6 +299,130 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
         background: #252525;
         border-color: #444;
     }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
 </style>
 
 <!-- Schema.org -->
@@ -332,6 +498,9 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
     <!-- Main Content -->
     <main>
         
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
 <article class="page-content">
     <div class="container">
         <!-- Capçalera de l'obra amb portada -->
@@ -386,19 +555,6 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
                         </div>
                         
 
-                        
-                        <div class="work-meta-item">
-                            <strong>Estat</strong>
-                            <span class="badge badge-status-revisat">revisat</span>
-                        </div>
-                        
-
-                        
-                        <div class="work-meta-item">
-                            <strong>Qualitat</strong>
-                            8/10
-                        </div>
-                        
                     </div>
 
                     
@@ -411,6 +567,55 @@ El seu pensament gira al voltant del canvi perpetu (πάντα ῥεῖ, "tot fl
 la unitat dels contraris, i el Logos com a principi ordenador de l'univers.
 La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
 </p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                8/10
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-26
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -447,14 +652,12 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
                     <h2 class="section-title">Περὶ φύσεως (Fragments)</h2>
 
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <span class="section-number">[1]</span>
                     <p><strong>Ἡράκλειτος ὁ Ἐφέσιος</strong> (c. 535-475 π.Χ.)</p>
 <p><em>Numeració segons Diels-Kranz (DK)</em></p>
                 </div>
                 
 
                 <div class="section" id="orig-2" data-parallel="trad-2">
-                    <span class="section-number">[2]</span>
                     <h2>DK 1</h2>
 <p>τοῦ δὲ λόγου τοῦδ᾽ ἐόντος ἀεὶ ἀξύνετοι γίνονται ἄνθρωποι καὶ πρόσθεν ἢ ἀκοῦσαι καὶ ἀκούσαντες τὸ πρῶτον· γινομένων γὰρ πάντων κατὰ τὸν λόγον τόνδε ἀπείροισιν ἐοίκασι, πειρώμενοι καὶ ἐπέων καὶ ἔργων τοιούτων, ὁκοίων ἐγὼ διηγεῦμαι.</p>
 <h2>DK 2</h2>
@@ -512,92 +715,65 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">Fragments</h2>
+                    <h2 class="section-title">Sobre la Natura (Fragments)</h2>
 
                 <div class="section" id="trad-1" data-parallel="orig-1">
-                    <span class="section-number">[1]</span>
-                    <p><strong>Heràclit d&rsquo;Efes</strong> (c. 535-475 aC)
-<strong>Traductor:</strong> Claude (Anthropic) amb supervisió editorial
-<strong>Any de traducció:</strong> 2026</p>
+                    <p><strong>Heràclit d&rsquo;Efes</strong> (c. 535-475 aC)</p>
 <p><em>Numeració segons Diels-Kranz (DK)</em></p>
                 </div>
                 
 
                 <div class="section" id="trad-2" data-parallel="orig-2">
-                    <span class="section-number">[2]</span>
                     <h2>DK 1</h2>
-<p>D&rsquo;aquest <a href="#term-logos" class="term" data-term="logos">Logos</a><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> que és sempre, els homes esdevenen incomprensors, tant abans d&rsquo;escoltar-lo com després d&rsquo;haver-lo escoltat per primera vegada. Car tot i que totes les coses succeeixen segons aquest Logos, semblen inexperts quan proven paraules i actes com els que jo exposo.</p>
+<p>D&rsquo;aquest Lògos que és sempre, els homes es mostren sense comprensió tant abans d&rsquo;escoltar-lo com després d&rsquo;haver-lo escoltat per primera vegada; car tot succeint segons aquest Lògos, semblen inexperimentats quan proven paraules i obres d&rsquo;aquesta mena, com les que jo exposo.</p>
 <h2>DK 2</h2>
-<p>Per això cal seguir allò <a href="#term-xynon" class="term" data-term="xynon">comú</a>; però, tot i que el Logos és comú, la majoria viuen com si tinguessin una intel·ligència pròpia.</p>
+<p>Per això cal seguir el Comú; car tot i ser el Lògos comú, els molts viuen com si tinguessin una saviesa pròpia.</p>
 <h2>DK 12</h2>
-<p>Als qui entren als mateixos rius, els flueixen aigües diferents i diferents.<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup></p>
+<p>En els mateixos rius entren, altres i altres aigües flueixen.</p>
 <h2>DK 30</h2>
-<p>Aquest <a href="#term-kosmos" class="term" data-term="kosmos">món</a>, el mateix per a tots, no l&rsquo;ha fet cap dels déus ni cap dels homes, sinó que sempre era, és i serà: <a href="#term-pyr" class="term" data-term="pyr">foc</a> eternament viu, que s&rsquo;encén segons <a href="#term-metra" class="term" data-term="metra">mesures</a> i s&rsquo;apaga segons mesures.<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup></p>
+<p>Aquest món, el mateix per a tots, no el va fer cap déu ni cap home, sinó que sempre va ser, és i serà: Foc etern-viu, que s&rsquo;encén amb mesura i s&rsquo;apaga amb mesura.</p>
 <h2>DK 36</h2>
-<p>Per a les <a href="#term-psyche" class="term" data-term="psyche">ànimes</a>, morir és esdevenir aigua; per a l&rsquo;aigua, morir és esdevenir terra. Però de la terra neix l&rsquo;aigua, i de l&rsquo;aigua, l&rsquo;ànima.<sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup></p>
+<p>Per a les ànimes, mort és esdevenir aigua; per a l&rsquo;aigua, mort és esdevenir terra. De la terra neix l&rsquo;aigua, de l&rsquo;aigua l&rsquo;ànima.</p>
 <h2>DK 49a</h2>
-<p>Als mateixos rius entrem i no entrem; som i no som.</p>
+<p>En els mateixos rius entrem i no entrem, som i no som.</p>
 <h2>DK 50</h2>
-<p>No a mi, sinó al <a href="#term-logos" class="term" data-term="logos">Logos</a> havent escoltat, és savi convenir que tot és u.<sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup></p>
+<p>No a mi escoltant, sinó al Lògos, és savi convenir que totes les coses són Una.</p>
 <h2>DK 51</h2>
-<p>No comprenen com, tot diferenciant-se de si mateix, concorda amb si mateix: <a href="#term-harmonia" class="term" data-term="harmonia">harmonia</a> de tensions contràries, com la de l&rsquo;arc i la lira.<sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup></p>
+<p>No comprenen com allò que divergeix amb si mateix concorda: harmonia de tensió inversa, com la de l&rsquo;arc i la lira.</p>
 <h2>DK 53</h2>
-<p>La <a href="#term-polemos" class="term" data-term="polemos">guerra</a> és pare de tot, rei de tot: a uns els ha revelat com a déus, a altres com a homes; a uns els ha fet esclaus, a altres lliures.<sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup></p>
+<p>La Guerra és pare de tots i rei de tots: als uns els mostra déus, als altres homes; als uns els fa esclaus, als altres lliures.</p>
 <h2>DK 60</h2>
-<p>El camí amunt i avall és un i el mateix.<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup></p>
+<p>El camí amunt i avall: un i el mateix.</p>
 <h2>DK 62</h2>
-<p>Immortals mortals, mortals immortals: vivint la mort d&rsquo;aquells, morint la vida d&rsquo;aquells.<sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup></p>
+<p>Immortals mortals, mortals immortals: vivint la mort d&rsquo;aquells, morint la vida d&rsquo;aquells.</p>
 <h2>DK 67</h2>
-<p>El déu és dia nit, hivern estiu, guerra pau, sacietat fam.<sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup></p>
+<p>La divinitat: dia nit, hivern estiu, guerra pau, sacietat fam.</p>
 <h2>DK 80</h2>
-<p>Cal saber que la guerra és comuna, i la justícia és discòrdia, i totes les coses neixen i s&rsquo;usen per discòrdia.</p>
+<p>Cal saber que la guerra és comú, i la justícia contesa, i tot esdevé per contesa i necessitat.</p>
 <h2>DK 88</h2>
-<p>És el mateix: viu i mort, despert i adormit, jove i vell. Car aquestes coses, en transformar-se, són aquelles, i aquelles, en transformar-se de nou, són aquestes.</p>
+<p>El mateix hi ha en el vivent i el mort, el despert i l&rsquo;adormit, el jove i l&rsquo;ancià; aquests, transmutant-se, són aquells, i aquells, transmutant-se altra vegada, aquests.</p>
 <h2>DK 90</h2>
-<p>Totes les coses són intercanvi del foc, i el foc de totes les coses, com les mercaderies de l&rsquo;or i l&rsquo;or de les mercaderies.<sup><a href="#nota-11" class="note-ref" id="ref-11">[11]</a></sup></p>
+<p>Intercanvi del Foc són totes les coses, i Foc de totes, tal com les mercaderies de l&rsquo;or i de les mercaderies l&rsquo;or.</p>
 <h2>DK 91</h2>
-<p>No és possible entrar dues vegades al mateix riu.<sup><a href="#nota-12" class="note-ref" id="ref-12">[12]</a></sup></p>
+<p>No és possible entrar dues vegades al mateix riu.</p>
 <h2>DK 101</h2>
-<p>Em vaig cercar a mi mateix.<sup><a href="#nota-13" class="note-ref" id="ref-13">[13]</a></sup></p>
+<p>M&rsquo;he cercat a mi mateix.</p>
 <h2>DK 112</h2>
-<p>La prudència és la virtut més gran, i la saviesa és dir la veritat i actuar segons la <a href="#term-physis" class="term" data-term="physis">natura</a> escoltant-la.</p>
+<p>Tenir seny és la virtut més gran, i saviesa és dir veritats i obrar segons la Natura, escoltant-la.</p>
 <h2>DK 114</h2>
-<p>Els qui parlen amb intel·ligència cal que s&rsquo;enforteixen amb allò <a href="#term-xynon" class="term" data-term="xynon">comú</a> a tots, com la ciutat amb la llei, i molt més fortament encara.</p>
+<p>Cal que qui parla amb enteniment s&rsquo;enforteixi amb el Comú de tots, tal com la ciutat amb la llei, i molt més fortament.</p>
 <h2>DK 118</h2>
-<p>L&rsquo;<a href="#term-psyche" class="term" data-term="psyche">ànima</a> seca és la més sàvia i excel·lent.<sup><a href="#nota-14" class="note-ref" id="ref-14">[14]</a></sup></p>
+<p>Ànima seca: la més sàvia i excel·lent.</p>
 <h2>DK 119</h2>
-<p>El <a href="#term-ethos" class="term" data-term="ethos">caràcter</a> és el <a href="#term-daimon" class="term" data-term="daimon">destí</a> de l&rsquo;home.<sup><a href="#nota-15" class="note-ref" id="ref-15">[15]</a></sup></p>
+<p>L&rsquo;ètos és per a l&rsquo;home el seu geni.</p>
 <h2>DK 121</h2>
-<p>Mereixerien els efesis adults penjar-se tots i deixar la ciutat als infants.</p>
+<p>Valdria que tots els efesis en edat de servei es pengessin i deixessin la ciutat als impúbers.</p>
 <h2>DK 123</h2>
-<p>La <a href="#term-physis" class="term" data-term="physis">natura</a> estima amagar-se.<sup><a href="#nota-16" class="note-ref" id="ref-16">[16]</a></sup></p>
+<p>La Natura estima amagar-se.</p>
 <h2>DK 125a</h2>
-<p>El kykeón es disgrega si no es remena.<sup><a href="#nota-17" class="note-ref" id="ref-17">[17]</a></sup></p>
+<p>El ciceu se separa si no es remena.</p>
 <h2>DK 126</h2>
-<p>Les coses fredes s&rsquo;escalfen, el calent es refreda, l&rsquo;humit s&rsquo;asseca, l&rsquo;àrid s&rsquo;humiteja.</p>
-                </div>
-                
-
-                <div class="section" id="trad-3" data-parallel="orig-3">
-                    <span class="section-number">[3]</span>
-                    <h2>Notes</h2>
-<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>: <strong>Logos</strong> (λόγος): Concepte central d&rsquo;Heràclit que designa la raó còsmica, la llei universal que ordena tots els canvis. També significa &ldquo;paraula&rdquo; o &ldquo;discurs&rdquo;, suggerint que el Logos pot ser expressat i comprès pels qui escolten.</p>
-<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>: Fragment fundacional de la doctrina del flux. Variant del més conegut &ldquo;no pots entrar dues vegades al mateix riu&rdquo; (DK 91).</p>
-<p><sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup>: L&rsquo;afirmació més clara del foc com a principi (arkhé). El cosmos no és creat sinó etern, i el foc és alhora literal i simbòlic: representa el canvi perpetu i la mesura.</p>
-<p><sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup>: Cicle còsmic de transformacions. L&rsquo;ànima (psyche) és afí al foc; l&rsquo;aigua i la terra representen estats més densos i menys nobles.</p>
-<p><sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup>: El Logos no és propietat d&rsquo;Heràclit sinó veritat universal. &ldquo;Tot és u&rdquo; resumeix la doctrina de la unitat dels contraris.</p>
-<p><sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup>: La imatge de l&rsquo;arc i la lira: ambdós funcionen per tensió oposada. L&rsquo;arc dispara gràcies a la tensió; la lira sona per la tensió de les cordes.</p>
-<p><sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup>: Polemos (guerra/conflicte) com a força creadora i ordenadora. No és violència gratuïta sinó la tensió que genera i manté l&rsquo;ordre.</p>
-<p><sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup>: Identitat dels contraris: pujar i baixar són el mateix camí vist des de perspectives diferents.</p>
-<p><sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup>: Interdependència radical entre mortals i immortals. La vida dels uns depèn de la mort dels altres.</p>
-<p><sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup>: El diví no és unilateral sinó que abraça tots els oposats. El déu d&rsquo;Heràclit és el cosmos mateix en la seva totalitat.</p>
-<p><sup><a href="#nota-11" class="note-ref" id="ref-11">[11]</a></sup>: El foc com a equivalent universal, com l&rsquo;or és equivalent de totes les mercaderies. Metàfora econòmica per explicar les transformacions còsmiques.</p>
-<p><sup><a href="#nota-12" class="note-ref" id="ref-12">[12]</a></sup>: La formulació més cèlebre del flux. Tanmateix, Heràclit no nega la identitat del riu: és el mateix riu precisament perquè flueix.</p>
-<p><sup><a href="#nota-13" class="note-ref" id="ref-13">[13]</a></sup>: Fragment autobiogràfic excepcional. Heràclit no segueix mestres sinó que es cerca a si mateix, anticipant el &ldquo;coneix-te a tu mateix&rdquo; socràtic.</p>
-<p><sup><a href="#nota-14" class="note-ref" id="ref-14">[14]</a></sup>: L&rsquo;ànima &ldquo;seca&rdquo; és la més propera al foc, element noble. La humitat (vi, passions) l&rsquo;embriaga i l&rsquo;allunya de la saviesa.</p>
-<p><sup><a href="#nota-15" class="note-ref" id="ref-15">[15]</a></sup>: Un dels fragments més citats. El daimon no és una força externa sinó el nostre propi caràcter: som els autors del nostre destí.</p>
-<p><sup><a href="#nota-16" class="note-ref" id="ref-16">[16]</a></sup>: La natura no es mostra obertament; cal esforç i intel·ligència per penetrar-la. Justifica l&rsquo;estil &ldquo;obscur&rdquo; d&rsquo;Heràclit.</p>
-<p><sup><a href="#nota-17" class="note-ref" id="ref-17">[17]</a></sup>: El kykeón era una beguda ritual grega. Sense moviment, es separa: imatge de la necessitat del canvi per mantenir la unitat.</p>
+<p>El fred s&rsquo;escalfa, el calent es refreda, l&rsquo;humit s&rsquo;asseca, l&rsquo;eixut s&rsquo;humiteja.</p>
                 </div>
                 
                 </section>
@@ -615,14 +791,27 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
                     <span class="nav-arrow">→</span>
                 </button>
             </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                <button class="section-toggle" id="glossari-toggle" data-target="glossari-section">
+                    <span>Glossari (11)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+                
+            </div>
+            
         </div>
 
-        <!-- Notes -->
+        <!-- Notes (amagat per defecte) -->
         
 
-        <!-- Glossari -->
+        <!-- Glossari (amagat per defecte) -->
         
-        <section class="glossary-section" id="glossari">
+        <section class="glossary-section collapsible-section" id="glossari-section">
             <h2>Glossari</h2>
             <dl class="glossary">
                 
@@ -638,18 +827,7 @@ de l'univers. El Logos és la llei còsmica que governa tot canvi i manté
 la unitat subjacent dels contraris. És alhora el discurs veritable que
 expressa aquesta llei i la capacitat racional humana per comprendre-la.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-1">[1]</a>, 
-                            
-                            <a href="#trad-2">[2]</a>, 
-                            
-                            <a href="#trad-50">[50]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -665,16 +843,7 @@ Per Heràclit, la physis no és estàtica sinó un flux constant regit
 pel Logos. "La natura estima amagar-se" (DK 123) indica el seu
 caràcter profund i no evident.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-123">[123]</a>, 
-                            
-                            <a href="#trad-112">[112]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -690,18 +859,7 @@ El foc representa el canvi perpetu, la transformació constant, i la
 mesura del cosmos. No és simplement matèria física sinó símbol del
 dinamisme universal i del Logos en acció.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-30">[30]</a>, 
-                            
-                            <a href="#trad-36">[36]</a>, 
-                            
-                            <a href="#trad-90">[90]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -716,14 +874,7 @@ dinamisme universal i del Logos en acció.
 creat per cap déu ni home, sinó que existeix eternament com a foc
 sempre viu que s'encén i s'apaga segons mesures.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-30">[30]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -739,18 +890,7 @@ sempre viu que s'encén i s'apaga segons mesures.
 destructiva sinó la tensió dinàmica entre oposats que genera i
 manté l'ordre còsmic.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-53">[53]</a>, 
-                            
-                            <a href="#trad-67">[67]</a>, 
-                            
-                            <a href="#trad-80">[80]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -766,14 +906,7 @@ L'harmonia heraclitiana no és absència de conflicte sinó la
 unitat dinàmica que emergeix de la tensió entre oposats.
 És "palintropo" (que retorna sobre si mateixa).
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-51">[51]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -789,16 +922,7 @@ l'ànima seca és la més sàvia i excel·lent (DK 118), mentre
 que la humitat l'embriaga i debilita. L'ànima participa del
 Logos còsmic i pot comprendre l'ordre universal.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-36">[36]</a>, 
-                            
-                            <a href="#trad-118">[118]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -814,16 +938,7 @@ Logos còsmic i pot comprendre l'ordre universal.
 accessible a qui s'hi obri, però que la majoria ignora
 vivint en el seu propi món particular.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-2">[2]</a>, 
-                            
-                            <a href="#trad-114">[114]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -839,14 +954,7 @@ vivint en el seu propi món particular.
 Heràclit afirma que som nosaltres mateixos, no forces exteriors,
 qui determinem el nostre destí.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-119">[119]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -861,14 +969,7 @@ qui determinem el nostre destí.
 En Heràclit, el daimon no és extern sinó identificat amb
 l'ethos: el nostre caràcter és el nostre destí.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-119">[119]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -883,14 +984,7 @@ l'ethos: el nostre caràcter és el nostre destí.
 s'encén i s'apaga. El canvi no és caòtic sinó regulat
 per mesures precises que mantenen l'equilibri del tot.
 </p>
-                        
-                        <p class="term-usage">
-                            <strong>Aparicions:</strong>
-                            
-                            <a href="#trad-30">[30]</a>
-                            
-                        </p>
-                        
+                        <a href="#" class="back-to-text glossary-back">↩ Tornar al text</a>
                     </dd>
                 </div>
                 
@@ -913,7 +1007,6 @@ per mesures precises que mantenen l'equilibri del tot.
 <!-- Script per índex i navegació de capítols (paginació) -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Elements
     const tocToggle = document.getElementById('toc-toggle');
     const tocPanel = document.getElementById('chapter-toc');
     const tocClose = document.getElementById('toc-close');
@@ -922,93 +1015,56 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextBtn = document.getElementById('next-chapter');
     const indicator = document.getElementById('chapter-indicator');
 
-    if (!tocToggle || !tocPanel) return;
+    if (!tocToggle || !tocPanel || !tocList) return;
 
-    // Processar ambdues columnes (original i traducció)
-    const columns = [
-        document.querySelector('.original-column'),
-        document.querySelector('.translation-column')
-    ].filter(c => c);
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
 
-    if (columns.length === 0) return;
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
 
-    // Detectar capítols a la columna de traducció (o la primera disponible)
-    const mainColumn = document.querySelector('.translation-column') || columns[0];
-    const h2Elements = mainColumn.querySelectorAll('h2');
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
 
-    // Filtrar només h2 que semblin capítols (no "Glossari", "Notes", etc.)
-    const chapterH2s = Array.from(h2Elements).filter(h2 => {
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
         const text = h2.textContent.trim();
-        return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
     });
 
-    if (chapterH2s.length <= 1) {
-        // Poques o cap capítol, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        if (tocToggle) tocToggle.style.display = 'none';
+        tocToggle.style.display = 'none';
         return;
     }
 
-    // Crear contenidors per cada capítol a cada columna
-    const chapterContainers = [];
-
-    columns.forEach(column => {
-        const columnH2s = column.querySelectorAll('h2');
-        const chapterHeaders = Array.from(columnH2s).filter(h2 => {
-            const text = h2.textContent.trim();
-            return /^(I{1,3}|IV|V|VI{0,3}|IX|X{1,3}|XI{0,3}|XIV|XV|XVI{0,3}|XIX|XX|Capítol|Cap\.|Un|Dos|Tres|Quatre|Cinc|Sis|Set|Vuit|Nou|Deu|Onze|Dotze|Tretze|Catorze|Quinze|Setze|Disset|Divuit|Dinou|Vint|\d+)\.?$/i.test(text);
-        });
-
-        if (chapterHeaders.length === 0) return;
-
-        // Agrupar elements per capítol
-        chapterHeaders.forEach((h2, idx) => {
-            const container = document.createElement('div');
-            container.className = 'chapter-content';
-            container.dataset.chapter = idx;
-            if (idx > 0) container.style.display = 'none';
-
-            // Recollir tots els elements fins al proper h2 capítol
-            let node = h2;
-            const nodesToMove = [h2];
-
-            while (node.nextElementSibling) {
-                node = node.nextElementSibling;
-                // Parar si trobem el proper capítol h2
-                if (node.tagName === 'H2' && chapterHeaders.includes(node)) break;
-                nodesToMove.push(node);
-            }
-
-            // Inserir contenidor abans del primer node
-            h2.parentNode.insertBefore(container, h2);
-
-            // Moure nodes al contenidor
-            nodesToMove.forEach(n => container.appendChild(n));
-
-            // Guardar referència (només de la columna principal)
-            if (column === mainColumn) {
-                chapterContainers.push({
-                    index: idx,
-                    title: h2.textContent.trim(),
-                    containers: []
-                });
-            }
-        });
-
-        // Guardar referència dels contenidors d'aquesta columna
-        const containers = column.querySelectorAll('.chapter-content');
-        containers.forEach((c, i) => {
-            if (chapterContainers[i]) {
-                chapterContainers[i].containers.push(c);
-            }
-        });
-    });
-
-    if (chapterContainers.length === 0) return;
-
-    // Omplir índex
-    chapterContainers.forEach((ch, i) => {
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
         const li = document.createElement('li');
         const a = document.createElement('a');
         a.href = '#';
@@ -1024,130 +1080,244 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let currentChapter = 0;
 
-    function showChapter(index) {
-        if (index < 0 || index >= chapterContainers.length) return;
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
 
-        // Amagar tots els capítols
-        document.querySelectorAll('.chapter-content').forEach(c => {
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
             c.style.display = 'none';
         });
-
-        // Mostrar el capítol seleccionat a totes les columnes
-        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(c => {
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
             c.style.display = 'block';
         });
-
         currentChapter = index;
         updateNavigation();
-
-        // Scroll al principi del contingut
-        const textContainer = document.querySelector('.text-container');
-        if (textContainer) {
-            textContainer.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
 
     function updateNavigation() {
         prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapterContainers.length - 1;
-        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapterContainers.length;
-
-        // Actualitzar classe activa a l'índex
-        const links = tocList.querySelectorAll('a');
-        links.forEach((a, i) => {
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
         });
     }
 
-    function openToc() {
-        tocPanel.classList.add('open');
-        tocToggle.setAttribute('aria-expanded', 'true');
-    }
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
 
-    function closeToc() {
-        tocPanel.classList.remove('open');
-        tocToggle.setAttribute('aria-expanded', 'false');
-    }
-
-    function toggleToc() {
+    tocToggle.addEventListener('click', function() {
         tocPanel.classList.contains('open') ? closeToc() : openToc();
-    }
-
-    // Events
-    tocToggle.addEventListener('click', toggleToc);
+    });
     tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
-    prevBtn.addEventListener('click', function() {
-        showChapter(currentChapter - 1);
-    });
-
-    nextBtn.addEventListener('click', function() {
-        showChapter(currentChapter + 1);
-    });
-
-    // Tancar índex quan es clica fora
     document.addEventListener('click', function(e) {
-        if (tocPanel.classList.contains('open') &&
-            !tocPanel.contains(e.target) &&
-            !tocToggle.contains(e.target)) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
             closeToc();
         }
     });
 
-    // Tecles de navegació
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && tocPanel.classList.contains('open')) {
-            closeToc();
-        }
-        if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-            if (e.key === 'ArrowLeft' && !prevBtn.disabled) {
-                showChapter(currentChapter - 1);
-            } else if (e.key === 'ArrowRight' && !nextBtn.disabled) {
-                showChapter(currentChapter + 1);
-            }
-        }
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
     });
 
-    // Funció per trobar en quin capítol està un element
-    function findChapterForElement(element) {
-        if (!element) return -1;
-        const container = element.closest('.chapter-content');
-        if (container && container.dataset.chapter) {
-            return parseInt(container.dataset.chapter, 10);
-        }
-        return -1;
-    }
-
-    // Interceptar clics a enllaços interns (footnotes, glossari, etc.)
-    document.addEventListener('click', function(e) {
-        const link = e.target.closest('a[href^="#"]');
-        if (!link) return;
-
-        const targetId = link.getAttribute('href').substring(1);
-        if (!targetId) return;
-
-        const targetElement = document.getElementById(targetId);
-        if (!targetElement) return;
-
-        // Trobar en quin capítol està l'element
-        const chapterIndex = findChapterForElement(targetElement);
-
-        if (chapterIndex >= 0 && chapterIndex !== currentChapter) {
-            // Mostrar el capítol correcte primer
-            e.preventDefault();
-            showChapter(chapterIndex);
-
-            // Després fer scroll a l'element (amb petit delay per assegurar que es mostra)
-            setTimeout(function() {
-                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }, 100);
-        }
-        // Si l'element no està dins d'un capítol (glossari, notes al final),
-        // deixar que el navegador gestioni l'enllaç normalment
-    });
-
-    // Inicialitzar
     updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
 });
 
 // Inicialitzar estat del botó de favorits
@@ -1165,6 +1335,27 @@ document.addEventListener('DOMContentLoaded', async function() {
         favBtn.classList.add('active');
         favBtn.querySelector('.favorit-icon').textContent = '❤️';
     }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
 </script>
 

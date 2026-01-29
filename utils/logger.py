@@ -16,8 +16,8 @@ class VerbosityLevel(str, Enum):
     """Nivells de verbositat del sistema."""
 
     QUIET = "quiet"      # Només errors
-    NORMAL = "normal"    # Progrés bàsic (default)
-    VERBOSE = "verbose"  # Detall complet + logs
+    NORMAL = "normal"    # Progrés bàsic
+    VERBOSE = "verbose"  # Detall complet + logs (default)
     DEBUG = "debug"      # Tot + temps d'execució + tokens
 
 
@@ -30,17 +30,57 @@ VERBOSITY_TO_LOG_LEVEL = {
 }
 
 
-# Icones per cada tipus d'agent
+# Icones per cada tipus d'agent i fase
 AGENT_ICONS = {
+    # Selecció editorial
     "ConsellEditorial": "🏛️",
-    "ChunkerAgent": "✂️",
+    "SeleccioEditorial": "📚",
+
+    # Cerca i preparació
+    "CercaWeb": "🌐",
     "Investigador": "🔍",
+    "DescarregaOriginal": "📥",
+
+    # Preprocessament
+    "ChunkerAgent": "✂️",
+    "GlossaristaAgent": "📖",
+
+    # Anàlisi v2
+    "AnalitzadorPreTraduccio": "🔬",
+    "SelectorExemplesFewShot": "📋",
+
+    # Traducció v2
+    "TraductorEnriquit": "✨",
     "Traductor": "🌍",
     "TranslatorAgent": "🌍",
+
+    # Avaluació v2
+    "AvaluadorDimensional": "📊",
+    "AvaluadorFidelitat": "🎯",
+    "AvaluadorVeuAutor": "🎭",
+    "AvaluadorFluidesa": "💫",
+    "FusionadorFeedback": "⚖️",
+
+    # Refinament v2
+    "RefinadorIteratiu": "🔄",
+    "AgentRefinador": "✍️",
+    "RefinadorPerDimensio": "🎨",
+
+    # Revisió
     "Corrector": "📝",
     "ReviewerAgent": "📝",
+    "AnotadorCritic": "💭",
+
+    # Pipeline i publicació
+    "PipelineV2": "🚀",
     "Pipeline": "🚀",
+    "BuildWeb": "🌐",
+    "GeneradorEPUB": "📚",
+    "Portadista": "🖼️",
+
+    # Sistema
     "Dashboard": "📊",
+    "Logger": "📝",
     "default": "🤖",
 }
 
@@ -72,14 +112,14 @@ class AgentLogger:
 
     def __init__(
         self,
-        verbosity: VerbosityLevel = VerbosityLevel.NORMAL,
+        verbosity: VerbosityLevel = VerbosityLevel.VERBOSE,
         log_dir: Path | None = None,
         session_name: str | None = None,
     ) -> None:
         """Inicialitza el logger.
 
         Args:
-            verbosity: Nivell de verbositat.
+            verbosity: Nivell de verbositat (default: VERBOSE).
             log_dir: Directori on desar els logs.
             session_name: Nom de la sessió per al fitxer de log.
         """
@@ -295,17 +335,45 @@ class AgentLogger:
     ) -> None:
         """Log d'inici de sessió de traducció."""
         self.console.print()
-        self.console.print(f"🚀 [bold green]Iniciant traducció:[/bold green] {work_title}")
+        self.console.print("╔" + "═" * 68 + "╗")
+        self.console.print(f"║ 🚀 [bold green]NOVA TRADUCCIÓ - PIPELINE V2[/bold green]" + " " * 30 + "║")
+        self.console.print("╠" + "═" * 68 + "╣")
+        self.console.print(f"║ 📖 Obra: [bold cyan]{work_title}[/bold cyan]" + " " * (59 - len(work_title)) + "║")
 
         if author:
-            self.console.print(f"📚 [bold]Autor:[/bold] {author}")
+            author_line = f"║ ✍️  Autor: [bold]{author}[/bold]"
+            padding = 68 - len(author) - 14
+            self.console.print(author_line + " " * padding + "║")
 
         if estimated_cost is not None:
-            self.console.print(f"💰 [bold]Cost estimat:[/bold] €{estimated_cost:.2f}")
+            self.console.print(f"║ 💰 Cost estimat: €{estimated_cost:.2f}" + " " * 43 + "║")
 
+        self.console.print("╚" + "═" * 68 + "╝")
         self.console.print()
 
         self._logger.info(f"SESSION START: {work_title} by {author}, estimated_cost=€{estimated_cost or 0:.2f}")
+
+    def log_phase_start(self, phase_name: str, description: str = "") -> None:
+        """Log d'inici d'una fase del pipeline."""
+        if self.verbosity == VerbosityLevel.QUIET:
+            return
+
+        self.console.print()
+        self.console.print(f"┏━━ [bold magenta]{phase_name.upper()}[/bold magenta] " + "━" * (60 - len(phase_name)))
+        if description:
+            self.console.print(f"┃ {description}")
+        self._logger.info(f"PHASE START: {phase_name} - {description}")
+
+    def log_phase_end(self, phase_name: str, success: bool = True) -> None:
+        """Log de fi d'una fase del pipeline."""
+        if self.verbosity == VerbosityLevel.QUIET:
+            return
+
+        status = "✅ COMPLETADA" if success else "❌ FALLIDA"
+        color = "green" if success else "red"
+        self.console.print(f"┗━━ [bold {color}]{phase_name.upper()} {status}[/bold {color}]")
+        self.console.print()
+        self._logger.info(f"PHASE END: {phase_name} - success={success}")
 
     def log_session_end(self) -> None:
         """Log de fi de sessió amb resum."""
@@ -439,14 +507,14 @@ class SessionStats:
 
 # Funció de conveniència per obtenir el logger
 def get_logger(
-    verbosity: VerbosityLevel = VerbosityLevel.NORMAL,
+    verbosity: VerbosityLevel = VerbosityLevel.VERBOSE,
     log_dir: Path | None = None,
     session_name: str | None = None,
 ) -> AgentLogger:
     """Obté o crea el logger singleton.
 
     Args:
-        verbosity: Nivell de verbositat.
+        verbosity: Nivell de verbositat (default: VERBOSE).
         log_dir: Directori on desar els logs.
         session_name: Nom de la sessió.
 
