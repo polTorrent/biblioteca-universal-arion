@@ -77,7 +77,23 @@ Català sempre per documentació, codi i comunicació.
 0. VERIFICAR AUTENTICACIÓ (subscripció, no API!)
    ↓
 1. glossari → 2. traducció → 3. perfeccionament → 4. anotació → 5. format web
+   ↓
+6. POST-PROCESSAMENT AUTOMÀTIC:
+   - Formatar capítols (original i traducció) amb ## I, ## II, etc.
+   - Validar/corregir glossari YAML
+   - Generar portada si no existeix
+   - Actualitzar metadata.yml
+   - Executar build per publicar a la web
 ```
+
+### Script Template per Noves Traduccions
+
+Usa `scripts/traduir_template.py` com a base per noves traduccions:
+1. Copia el fitxer amb un nom descriptiu
+2. Modifica les variables de configuració
+3. Executa l'script
+
+El post-processament és automàtic i inclou publicació a la web.
 
 **Agents V2 (traducció):**
 - `AnalitzadorPreTraduccio` - Anàlisi del text abans de traduir

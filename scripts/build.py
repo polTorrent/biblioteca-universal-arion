@@ -462,20 +462,47 @@ class BuildSystem:
             shutil.copytree(assets_src, assets_dest)
             print("   ✅ Assets copiats")
 
-        # Copiar portades des de web/assets/portades/ (ÚNICA FONT)
+        # Copiar portades des de múltiples fonts
         portades_src = self.root / 'web' / 'assets' / 'portades'
         portades_dest = self.docs_dir / 'assets' / 'portades'
         portades_dest.mkdir(parents=True, exist_ok=True)
 
+        count = 0
+
+        # 1. Copiar des de web/assets/portades/
         if portades_src.exists():
-            count = 0
             for portada in portades_src.glob('*.png'):
                 shutil.copy(portada, portades_dest / portada.name)
                 count += 1
             for portada in portades_src.glob('*.jpg'):
                 shutil.copy(portada, portades_dest / portada.name)
                 count += 1
-            print(f"   ✅ {count} portades copiades")
+
+        # 2. Copiar des de carpetes d'obres (obres/.../portada.png)
+        # i també sincronitzar a web/assets/portades/ per futures builds
+        for metadata_file in self.obres_dir.rglob('metadata.yml'):
+            obra_dir = metadata_file.parent
+            slug = f"{obra_dir.parent.name}-{obra_dir.name}"
+
+            for ext in ['png', 'jpg']:
+                portada_obra = obra_dir / f'portada.{ext}'
+                if portada_obra.exists():
+                    dest_name = f"{slug}-portada.{ext}"
+                    dest_path = portades_dest / dest_name
+                    web_path = portades_src / dest_name
+
+                    # Copiar a docs/
+                    if not dest_path.exists():
+                        shutil.copy(portada_obra, dest_path)
+                        count += 1
+
+                    # Sincronitzar a web/assets/portades/ per futures builds
+                    if not web_path.exists():
+                        portades_src.mkdir(parents=True, exist_ok=True)
+                        shutil.copy(portada_obra, web_path)
+                    break
+
+        print(f"   ✅ {count} portades copiades")
 
         # Copiar retrats d'autors
         autors_dest = self.docs_dir / 'assets' / 'autors'
