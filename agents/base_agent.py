@@ -2,6 +2,7 @@
 
 import json
 import os
+import re
 import subprocess
 import time
 from abc import ABC, abstractmethod
@@ -15,6 +16,57 @@ from utils.logger import AgentLogger, VerbosityLevel, get_logger
 
 
 load_dotenv()
+
+
+def extract_json_from_text(text: str) -> dict[str, Any] | None:
+    """Extreu un objecte JSON d'un text que pot contenir text addicional.
+
+    Útil quan el model retorna JSON incrustat en una explicació.
+
+    Args:
+        text: Text que pot contenir JSON.
+
+    Returns:
+        Dict parsejar si es troba JSON vàlid, None si no.
+    """
+    if not text:
+        return None
+
+    # Primer intentar parsejar directament
+    try:
+        return json.loads(text.strip())
+    except json.JSONDecodeError:
+        pass
+
+    # Buscar JSON entre claus
+    # Patró per trobar objectes JSON (amb nesting)
+    brace_count = 0
+    start_idx = None
+
+    for i, char in enumerate(text):
+        if char == '{':
+            if brace_count == 0:
+                start_idx = i
+            brace_count += 1
+        elif char == '}':
+            brace_count -= 1
+            if brace_count == 0 and start_idx is not None:
+                candidate = text[start_idx:i+1]
+                try:
+                    return json.loads(candidate)
+                except json.JSONDecodeError:
+                    start_idx = None
+                    continue
+
+    # Intentar amb regex per blocs de codi
+    code_block_match = re.search(r'```(?:json)?\s*(\{[\s\S]*?\})\s*```', text)
+    if code_block_match:
+        try:
+            return json.loads(code_block_match.group(1))
+        except json.JSONDecodeError:
+            pass
+
+    return None
 
 
 # Preus per milió de tokens (Claude Sonnet 4)
@@ -146,6 +198,7 @@ class BaseAgent(ABC):
             "claude",
             "--print",  # Mode no interactiu
             "--output-format", "json",  # Resposta en JSON
+            "--max-turns", "1",  # Limitar a una sola resposta
             "--system-prompt", system_prompt,
             "--model", self.config.model,
             "--no-session-persistence",  # No desar sessió

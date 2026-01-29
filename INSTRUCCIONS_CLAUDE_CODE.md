@@ -219,25 +219,6 @@ pipeline = TranslationPipeline(config)
 
 ---
 
-## Agents Deprecats
-
-Els següents agents estan **deprecats** i generaran warnings:
-
-| Agent | Reemplaçat per |
-|-------|---------------|
-| `CorrectorAgent` | `PerfeccionamentAgent` |
-| `EstilAgent` | `PerfeccionamentAgent` |
-
-```python
-# Això generarà un DeprecationWarning:
-from agents import CorrectorAgent
-agent = CorrectorAgent()  # ⚠️ DEPRECATED
-
-# Usar en lloc seu:
-from agents import PerfeccionamentAgent
-agent = PerfeccionamentAgent()
-```
-
 ---
 
 ## Estructura de Fitxers
@@ -246,24 +227,32 @@ agent = PerfeccionamentAgent()
 biblioteca-universal-arion/
 ├── agents/
 │   ├── base_agent.py              # Classe base ABC
-│   ├── perfeccionament_agent.py   # NOU: Agent holístic
-│   ├── anotador_critic.py         # NOU: Notes erudites
+│   ├── perfeccionament_agent.py   # Agent holístic (correcció + estil)
+│   ├── anotador_critic.py         # Notes erudites
 │   ├── translator_agent.py        # Traductor principal
 │   ├── reviewer_agent.py          # Revisor de qualitat
 │   ├── glossarista.py             # Glossaris terminològics
-│   ├── corrector.py               # DEPRECATED
-│   ├── agent_estil.py             # DEPRECATED
-│   └── ...
+│   ├── portadista.py              # Generació portades
+│   └── v2/                        # Pipeline V2
+│       ├── pipeline_v2.py         # Orquestrador principal
+│       ├── analitzador_pre.py     # Anàlisi pre-traducció
+│       ├── traductor_enriquit.py  # Traductor amb context ric
+│       ├── avaluador_dimensional.py # Avaluació 3D
+│       ├── refinador_iteratiu.py  # Millora iterativa
+│       └── models.py              # Models de dades
 ├── pipeline/
-│   └── translation_pipeline.py    # Pipeline principal
+│   └── translation_pipeline.py    # Pipeline V1 (compatible)
 ├── utils/
 │   ├── logger.py                  # Sistema de logging
-│   ├── checkpointer.py            # NOU: Persistència
+│   ├── checkpointer.py            # Persistència sessions
 │   └── dashboard.py               # Visualització
-├── tests/
-│   ├── test_perfeccionament.py    # NOU
-│   ├── test_anotador_critic.py    # NOU
-│   └── test_checkpointer.py       # NOU
+├── scripts/
+│   └── build.py                   # Generador HTML
+├── web/
+│   ├── templates/                 # Templates Jinja2
+│   ├── css/                       # Estils
+│   └── js/                        # JavaScript
+├── docs/                          # Web generada
 └── obres/
     └── [categoria]/[autor]/[obra]/
 ```
@@ -311,18 +300,6 @@ result = agent.perfect(PerfeccionamentRequest(
 
 ---
 
-## Tests
-
-```bash
-# Executar tots els tests
-python -m pytest tests/ -v
-
-# Tests específics dels nous components
-python -m pytest tests/test_perfeccionament.py -v
-python -m pytest tests/test_anotador_critic.py -v
-python -m pytest tests/test_checkpointer.py -v
-```
-
 ---
 
 ## Notes
@@ -348,3 +325,311 @@ python -m pytest tests/test_checkpointer.py -v
 - **Teatre:** oralitat natural
 - **Assaig:** claredat argumentativa
 - **Textos sagrats:** registre elevat però accessible
+
+---
+
+## Sistema d'Avaluació Dimensional (v2)
+
+### Concepte
+
+El sistema v2 separa l'avaluació de traduccions en **tres dimensions ortogonals**, cada una amb el seu avaluador especialitzat:
+
+| Dimensió | Pes | Pregunta clau |
+|----------|-----|---------------|
+| **Fidelitat** | 25% | El significat es preserva? |
+| **Veu de l'Autor** | 40% | El to i estil es mantenen? |
+| **Fluïdesa** | 35% | Sona natural en català? |
+
+### Per què és millor?
+
+1. **Feedback específic**: Cada dimensió dona instruccions accionables
+2. **Prioritats clares**: VEU > FIDELITAT > FLUÏDESA
+3. **Refinament iteratiu**: Bucle fins a puntuació ≥ 8/10
+
+### Ús bàsic
+
+```python
+from agents.v2 import AvaluadorDimensional, ContextAvaluacio
+
+avaluador = AvaluadorDimensional()
+context = ContextAvaluacio(
+    text_original="Cogito, ergo sum.",
+    text_traduit="Penso, per tant existeixo.",
+    llengua_origen="llatí",
+    autor="Descartes",
+    genere="filosofia",
+)
+
+resultat = avaluador.avaluar(context)
+
+print(f"Puntuació global: {resultat.puntuacio_global}/10")
+print(f"Aprovat: {resultat.aprovat}")
+print(resultat.instruccions_refinament)
+```
+
+### Mètode ràpid
+
+```python
+resultat = avaluador.avaluar_rapid(
+    text_original="...",
+    text_traduit="...",
+    llengua_origen="japonès",
+    autor="Akutagawa",
+    genere="narrativa",
+)
+```
+
+### Llindars d'aprovació
+
+```python
+from agents.v2.models import LlindarsAvaluacio
+
+llindars = LlindarsAvaluacio(
+    global_minim=8.0,        # Puntuació global mínima
+    veu_autor_minim=7.5,     # Veu de l'autor mínima
+    fidelitat_minim=7.0,     # Fidelitat mínima
+    fluidesa_minim=7.0,      # Fluïdesa mínima
+    max_iteracions=3,        # Màx refinaments
+)
+```
+
+## Analitzador Pre-Traducció (v2)
+
+### Concepte
+
+Segons la recerca (MAPS - Multi-Aspect Prompting), analitzar el text ABANS de traduir millora significativament la qualitat, reduint la literalitat i preservant la veu de l'autor.
+
+### Què identifica
+
+1. **Paraules clau**: Termes crítics amb recomanacions de traducció
+2. **To de l'autor**: Ironia, solemnitat, humor, registre...
+3. **Recursos literaris**: Metàfores, anàfores, ritme...
+4. **Reptes anticipats**: Estructures difícils, culturemes, jocs de paraules...
+5. **Recomanacions**: Què prioritzar i què evitar
+
+### Ús bàsic
+
+```python
+from agents.v2 import AnalitzadorPreTraduccio
+
+analitzador = AnalitzadorPreTraduccio()
+analisi = analitzador.analitzar(
+    text="Quaeris quid sit libertas?...",
+    llengua_origen="llatí",
+    autor="Sèneca",
+    genere="filosofia",
+)
+
+print(analisi.resum())  # Resum llegible
+print(analisi.to_context_traduccio())  # Per passar al traductor
+```
+
+### Context enriquit complet
+
+```python
+from agents.v2 import AnalitzadorPreTraduccio, SelectorExemplesFewShot
+
+analitzador = AnalitzadorPreTraduccio()
+selector = SelectorExemplesFewShot()
+
+# Preparar tot el context d'un cop
+context = analitzador.preparar_context(
+    text="Text original...",
+    llengua_origen="japonès",
+    autor="Akutagawa",
+    glossari={"愚か": "estúpid"},
+    exemples_fewshot=selector.seleccionar("japonès", "narrativa"),
+)
+
+# Generar prompt per al traductor
+prompt_context = context.to_prompt_context()
+```
+
+---
+
+## Traductor Enriquit (v2)
+
+### Concepte
+
+El TraductorEnriquit utilitza el context de l'AnalitzadorPreTraduccio per produir traduccions menys literals i més literàries. Prioritza VEU > FLUÏDESA > LITERALITAT.
+
+### Diferències amb v1
+
+| Aspecte | Traductor v1 | Traductor v2 |
+|---------|--------------|--------------|
+| Context | Mínim (autor, obra) | Ric (anàlisi, exemples, glossari) |
+| Instruccions | Genèriques | Específiques per text |
+| Sortida | Només text | Text + decisions + avisos |
+| Literalitat | Tendència literal | Anti-literalitat explícita |
+
+### Ús bàsic
+
+```python
+from agents.v2 import TraductorEnriquit, ContextTraduccioEnriquit
+
+traductor = TraductorEnriquit()
+resultat = traductor.traduir_simple(
+    text="Cogito ergo sum",
+    llengua_origen="llatí",
+    autor="Descartes",
+    genere="filosofia",
+)
+
+print(resultat.traduccio)
+print(resultat.decisions_clau)
+print(resultat.confianca)
+```
+
+### Flux complet amb anàlisi
+
+```python
+from agents.v2 import TraductorAmbAnalisi
+
+traductor = TraductorAmbAnalisi()
+
+resultat, analisi = traductor.traduir(
+    text="Text original...",
+    llengua_origen="japonès",
+    autor="Akutagawa",
+    genere="narrativa",
+)
+
+# analisi conté: to_autor, recursos_literaris, reptes...
+# resultat conté: traduccio, decisions_clau, avisos...
+```
+
+### Model de resultat
+
+```python
+ResultatTraduccio:
+    traduccio: str           # Text traduït
+    decisions_clau: list     # Justificacions de decisions
+    termes_preservats: dict  # Com s'han traduït termes clau
+    recursos_adaptats: list  # Com s'han adaptat recursos
+    notes_traductor: list    # Notes [N.T.] generades
+    confianca: float         # 0-1
+    avisos: list             # Aspectes a revisar
+```
+
+### Flux recomanat
+
+```
+Text Original
+     │
+     ▼
+AnalitzadorPreTraduccio ──► Anàlisi (to, recursos, reptes)
+     │
+     ▼
+SelectorExemplesFewShot ──► Exemples similars
+     │
+     ▼
+ContextTraduccioEnriquit ──► Context complet
+     │
+     ▼
+TraductorEnriquit ──► Traducció + decisions
+     │
+     ▼
+AvaluadorDimensional ──► Puntuació + feedback
+     │
+     ▼
+(Si no aprovat) ──► Refinament iteratiu
+```
+
+---
+
+## Refinador Iteratiu (v2)
+
+### Concepte
+
+El RefinadorIteratiu millora una traducció en un bucle:
+1. Avalua amb AvaluadorDimensional
+2. Si no aprovat, refina segons feedback prioritzat
+3. Re-avalua
+4. Repeteix fins a aprovació o màx iteracions
+
+### Flux
+
+```
+Traducció inicial
+       │
+       ▼
+   Avaluació ◄─────────────────┐
+       │                       │
+       ▼                       │
+   Aprovat? ──► SÍ ──► FI     │
+       │                       │
+       NO                      │
+       │                       │
+       ▼                       │
+   Refinament ─────────────────┘
+   (max 3 iteracions)
+```
+
+### Ús bàsic
+
+```python
+from agents.v2 import RefinadorIteratiu
+
+refinador = RefinadorIteratiu()
+
+# Mètode simple: només retorna la traducció final
+traduccio_final = refinador.refinar_fins_aprovacio(
+    traduccio="Traducció literal...",
+    text_original="Text original...",
+    llengua_origen="japonès",
+    genere="narrativa",
+)
+```
+
+### Ús amb historial complet
+
+```python
+resultat = refinador.refinar(
+    traduccio="Traducció inicial",
+    text_original="Original",
+    llengua_origen="llatí",
+    autor="Sèneca",
+    genere="filosofia",
+)
+
+print(resultat.traduccio_final)
+print(resultat.aprovat)                # True/False
+print(resultat.iteracions_realitzades) # 0, 1, 2, 3
+print(resultat.millora_aconseguida)    # +1.5 punts
+print(resultat.resum())                # Resum llegible
+
+# Historial de cada iteració
+for it in resultat.historial:
+    print(f"Iteració {it.numero}: {it.dimensio_prioritzada}")
+    print(f"  Canvis: {it.canvis_aplicats}")
+```
+
+### Llindars personalitzats
+
+```python
+from agents.v2.models import LlindarsAvaluacio
+
+llindars = LlindarsAvaluacio(
+    global_minim=7.5,          # Més permissiu
+    veu_autor_minim=7.0,
+    max_iteracions=5,          # Més iteracions
+    llindar_revisio_humana=7.0,
+)
+
+refinador = RefinadorIteratiu(llindars=llindars)
+```
+
+### Refinador per dimensió
+
+Per control més fi, refinar una dimensió específica:
+
+```python
+from agents.v2 import RefinadorPerDimensio
+
+refinador_veu = RefinadorPerDimensio("veu_autor")
+traduccio, canvis = refinador_veu.refinar(
+    traduccio="Text...",
+    text_original="Original...",
+    feedback_dimensio="Recuperar el to irònic...",
+)
+```

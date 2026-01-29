@@ -32,6 +32,33 @@ Els agents detecten automàticament el context:
 - ✅ Parsing correcte de resposta JSON del CLI
 - ✅ Fallback a API quan es requereix
 
+### 🚨 REGLA OBLIGATÒRIA PER SCRIPTS DE TRADUCCIÓ
+
+**TOTS els scripts que cridin agents de traducció HAN d'establir `CLAUDECODE=1` al principi del fitxer, ABANS d'importar els agents.**
+
+```python
+#!/usr/bin/env python3
+"""Descripció de l'script..."""
+
+import os
+import sys
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
+# Això ha d'anar ABANS d'importar els agents
+# ═══════════════════════════════════════════════════════════════════════════════
+os.environ["CLAUDECODE"] = "1"
+
+# Ara ja es poden importar els agents
+from agents.v2 import PipelineV2
+# ...
+```
+
+**Per què és important:**
+- Sense `CLAUDECODE=1`, els agents usen l'API i consumeixen crèdits ($$$)
+- Amb `CLAUDECODE=1`, els agents usen el CLI amb subscripció (cost €0)
+- **Mai oblidar aquesta línia en scripts nous de traducció!**
+
 ## Projecte
 Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.
 
@@ -52,24 +79,27 @@ Català sempre per documentació, codi i comunicació.
 1. glossari → 2. traducció → 3. perfeccionament → 4. anotació → 5. format web
 ```
 
-**Agents principals:**
-- `PerfeccionamentAgent` - Fusió holística (naturalització + correcció + estil)
-- `AnotadorCriticAgent` - Notes erudites opcionals
-- `Checkpointer` - Persistència per recuperar pipelines interromputs
+**Agents V2 (traducció):**
+- `AnalitzadorPreTraduccio` - Anàlisi del text abans de traduir
+- `TraductorEnriquit` - Traducció amb context ric
+- `AvaluadorDimensional` - Avaluació en 3 dimensions (fidelitat, veu, fluïdesa)
+- `RefinadorIteratiu` - Millora iterativa fins aprovació
 
-**Agents deprecats:** `CorrectorAgent`, `EstilAgent` (usar `PerfeccionamentAgent`)
+**Agents auxiliars:**
+- `GlossaristaAgent` - Crear glossaris terminològics
+- `ChunkerAgent` - Dividir textos llargs en fragments
+- `AnotadorCriticAgent` - Notes erudites
+- `CercadorFontsAgent` - Cercar textos de domini públic
+- `AgentRetratista` - Generar retrats d'autors
+- `AgentPortadista` - Generar portades d'obres
+- `WebPublisher` - Publicar la biblioteca web
 
-## Estructura traduccions
-```
-obres/[categoria]/[autor]/[obra]/
-├── fragments/        # Per col·laboració GitHub
-├── discussions/      # Discussions crítiques
-├── metadata.yml
-├── original.md
-├── traduccio.md
-├── glossari.yml
-└── portada.png       # IMPORTANT: Cada obra ha de tenir portada!
-```
+**Pipeline V2:** `agents/v2/pipeline_v2.py` - Orquestració completa
+
+**Dashboard de monitorització:** `dashboard/`
+- S'obre automàticament al navegador quan comença una traducció
+- Mostra progrés en temps real, logs, mètriques i gràfiques
+- Ús: `from dashboard import start_dashboard, dashboard`
 
 ## Sistema de Portades (IMPORTANT)
 
@@ -103,8 +133,55 @@ El `build.py` fa:
 - Genera portades minimalistes amb Venice.ai
 - Paletes per gènere: FIL, POE, TEA, NOV, SAG, ORI, EPO
 
-## Notes
+## Estructura traduccions
+```
+obres/[categoria]/[autor]/[obra]/
+├── fragments/        # Per col·laboració GitHub
+├── discussions/      # Discussions crítiques
+├── metadata.yml      # Metadades de l'obra
+├── original.md       # Text original
+├── traduccio.md      # Traducció amb marques [^N] per notes i [T] per glossari
+├── notes.md          # Notes erudites (format ## [N] Títol)
+├── glossari.yml      # Termes amb definicions
+└── portada.png       # Portada de l'obra
+```
+
+## Sistema de Notes i Glossari
+
+### Notes (`notes.md`)
+- Format: `## [N] Títol de la nota` seguit del contingut
+- Referències al text: `[^1]`, `[^2]`, etc. a `traduccio.md`
+- El build converteix `[^N]` a hipervincles `<sup><a href="#nota-N">[N]</a></sup>`
+
+### Glossari (`glossari.yml`)
+- Format YAML amb camps: `id`, `grec`, `transliteracio`, `traduccio`, `definicio`
+- Referències al text: `terme[T]` a `traduccio.md`
+- El build converteix `terme[T]` a `<a href="#term-id" class="term">terme</a>`
+
+### Tipus de notes
 [T] Traducció | [L] Literària | [F] Filosòfica | [H] Històrica | [R] Referència | [C] Cultural | [B] Biogràfica
+
+## Fitxa d'Obra (UI Web)
+
+### Capçalera
+- Portada, títol, autor, traductor, llengua original, any
+
+### Detalls de traducció (col·lapsable)
+- Estat, qualitat, capítols, paraules, data revisió, font original, contribuïdors
+
+### Contingut bilingüe
+- Vista: Original | Bilingüe | Traducció
+- Índex de capítols amb navegació
+- Paginació per capítols (← →)
+
+### Notes i Glossari (col·lapsables)
+- Clicar nota/terme → obre secció → scroll → ressaltat
+- "↩ Tornar al text" → col·lapsa → torna a posició de lectura
+
+### Altres funcionalitats
+- Botó "Tornar a dalt" (apareix després de 300px scroll)
+- Sistema de favorits
+- Mode fosc compatible
 
 ## Criteris per gènere
 - Filosofia: precisió terminològica
