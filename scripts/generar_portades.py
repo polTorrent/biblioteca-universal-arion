@@ -96,26 +96,33 @@ def generate_portada(obra_dir: Path, force: bool = False) -> bool:
     print(f"   📕 Generant portada per: {titol} ({genere})")
 
     try:
-        from agents.portadista import AgentPortadista, PortadaInput
+        from agents.portadista import generar_portada_obra
+        import shutil
 
-        agent = AgentPortadista()
-        input_data = PortadaInput(
+        # Obtenir temes del metadata
+        temes = metadata.get('metadata_original', {}).get('tags', [])
+        descripcio = metadata.get('obra', {}).get('descripcio', '')
+
+        # Generar portada
+        generar_portada_obra(
             titol=titol,
             autor=autor,
             genere=genere,
+            temes=temes[:5] if temes else [],
+            descripcio=descripcio,
+            output_path=portada_path,
         )
 
-        result = agent.run(input_data)
+        # Copiar també a web/assets/portades/ per al build
+        web_portades = ROOT / 'web' / 'assets' / 'portades'
+        web_portades.mkdir(parents=True, exist_ok=True)
+        slug = f"{obra_dir.parent.name}-{obra_dir.name}"
+        web_path = web_portades / f"{slug}-portada.png"
+        shutil.copy(portada_path, web_path)
 
-        if result.success and result.output_path:
-            # Moure la portada al directori de l'obra
-            import shutil
-            shutil.copy(result.output_path, portada_path)
-            print(f"   ✅ Portada generada: {portada_path}")
-            return True
-        else:
-            print(f"   ❌ Error generant portada: {result.error}")
-            return False
+        print(f"   ✅ Portada generada: {portada_path}")
+        print(f"   ✅ Copiada a: {web_path}")
+        return True
 
     except ImportError as e:
         print(f"   ❌ No es pot importar l'agent portadista: {e}")
@@ -123,6 +130,8 @@ def generate_portada(obra_dir: Path, force: bool = False) -> bool:
         return False
     except Exception as e:
         print(f"   ❌ Error: {e}")
+        import traceback
+        traceback.print_exc()
         return False
 
 
