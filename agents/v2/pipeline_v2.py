@@ -3,9 +3,12 @@
 Orquestra el flux complet de traducció utilitzant:
 - Agents V2: Anàlisi, Traducció, Avaluació, Refinament
 - Agents V1: Glossari, Chunker, Portades, EPUB (reutilitzats)
+- Investigador: Context històric i cultural
 - Dashboard: Monitorització en temps real al navegador
+- Core: Persistència d'estat, memòria contextual, validació
 
 Flux:
+0. Investigació - Recollir context sobre autor i obra
 1. Glossari (v1) - Crear terminologia consistent
 2. Chunking (v1) - Dividir text en fragments manejables
 3. Per cada chunk:
@@ -14,10 +17,14 @@ Flux:
    c. Avaluació Dimensional (v2)
    d. Refinament Iteratiu (v2) si cal
 4. Fusió de chunks
-5. Post-processament (portades, EPUB, etc.)
+5. Validació final (core)
+6. Post-processament (portades, EPUB, etc.)
 """
 
+import re
 import time
+import unicodedata
+from pathlib import Path
 from typing import Optional as Opt
 from dataclasses import dataclass, field
 from enum import Enum
@@ -26,6 +33,9 @@ from typing import TYPE_CHECKING, Callable
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, ContentFilterError
+
+# Core (persistència i validació)
+from core import EstatPipeline, MemoriaContextual, ValidadorFinal, ContextInvestigacio
 
 # Agents V2 (nous)
 from agents.v2.analitzador_pre import AnalitzadorPreTraduccio, SelectorExemplesFewShot
@@ -44,6 +54,7 @@ from agents.v2.models import (
 # Agents V1 (reutilitzats)
 from agents.glossarista import GlossaristaAgent, GlossaryRequest
 from agents.chunker_agent import ChunkerAgent, ChunkingRequest, ChunkingStrategy
+from agents.investigador import InvestigadorAgent
 
 # Dashboard (opcional)
 try:
@@ -61,8 +72,8 @@ if TYPE_CHECKING:
 # MODELS
 # =============================================================================
 
-class EstatPipeline(str, Enum):
-    """Estats del pipeline."""
+class FasePipeline(str, Enum):
+    """Fases del pipeline (per al resultat)."""
     PENDENT = "pendent"
     GLOSSARI = "creant_glossari"
     CHUNKING = "dividint"
@@ -71,12 +82,16 @@ class EstatPipeline(str, Enum):
     AVALUANT = "avaluant"
     REFINANT = "refinant"
     FUSIONANT = "fusionant"
+    VALIDANT = "validant"
     COMPLETAT = "completat"
     ERROR = "error"
 
 
 class ConfiguracioPipelineV2(BaseModel):
     """Configuració del pipeline v2."""
+
+    # Investigació
+    fer_investigacio: bool = Field(default=True, description="Investigar autor i obra abans de traduir")
 
     # Anàlisi
     fer_analisi_previa: bool = Field(default=True, description="Analitzar text abans de traduir")
@@ -103,6 +118,14 @@ class ConfiguracioPipelineV2(BaseModel):
     # Dashboard
     mostrar_dashboard: bool = Field(default=True, description="Obrir dashboard al navegador")
     dashboard_port: int = Field(default=5050, description="Port del servidor dashboard")
+
+    # Persistència (core)
+    habilitar_persistencia: bool = Field(default=True, description="Guardar estat per poder reprendre")
+    directori_obra: Path | None = Field(default=None, description="Directori de l'obra (si None, es dedueix)")
+
+    # Validació final (core)
+    habilitar_validacio_final: bool = Field(default=True, description="Validar obra abans de publicar")
+    bloquejar_si_invalid: bool = Field(default=True, description="No marcar com completat si no passa validació")
 
 
 class ResultatChunk(BaseModel):
@@ -152,7 +175,7 @@ class ResultatPipelineV2(BaseModel):
     temps_per_fase: dict[str, float] = Field(default_factory=dict)
 
     # Estat
-    estat: EstatPipeline = EstatPipeline.COMPLETAT
+    fase: FasePipeline = FasePipeline.COMPLETAT
     errors: list[str] = Field(default_factory=list)
     avisos: list[str] = Field(default_factory=list)
 
@@ -164,7 +187,7 @@ class ResultatPipelineV2(BaseModel):
             "═══════════════════════════════════════════════════════════════",
             f"Obra: {self.obra or 'N/A'} ({self.autor or 'Anònim'})",
             f"Llengua: {self.llengua_origen} → català",
-            f"Estat: {self.estat.value}",
+            f"Fase: {self.fase.value}",
             "",
             f"Chunks: {self.chunks_aprovats}/{self.num_chunks} aprovats",
             f"Refinats: {self.chunks_refinats}",
@@ -247,6 +270,132 @@ class PipelineV2:
         if DASHBOARD_AVAILABLE and self.config.mostrar_dashboard:
             self.dashboard = global_dashboard
 
+        # Core: Persistència i memòria contextual
+        self.estat: EstatPipeline | None = None
+        self.memoria: MemoriaContextual = MemoriaContextual()
+
+    # =========================================================================
+    # MÈTODES AUXILIARS CORE
+    # =========================================================================
+
+    @staticmethod
+    def _crear_slug(text: str) -> str:
+        """Converteix text a slug per noms de carpeta."""
+        text = unicodedata.normalize("NFKD", text.lower())
+        text = re.sub(r"[^\w\s-]", "", text)
+        text = re.sub(r"[-\s]+", "-", text).strip("-")
+        return text[:50]  # Limitar longitud
+
+    def _inicialitzar_estat(self, autor: str, titol: str, llengua: str) -> bool:
+        """Inicialitza o carrega estat existent.
+
+        Args:
+            autor: Nom de l'autor.
+            titol: Títol de l'obra.
+            llengua: Llengua original.
+
+        Returns:
+            True si és una represa de sessió anterior, False si és nova.
+        """
+        if not self.config.habilitar_persistencia:
+            return False
+
+        # Determinar directori obra
+        if self.config.directori_obra:
+            obra_dir = Path(self.config.directori_obra)
+        else:
+            # Crear slug i deduir path
+            slug_autor = self._crear_slug(autor or "desconegut")
+            slug_titol = self._crear_slug(titol or "sense-titol")
+            obra_dir = Path("obres") / slug_autor / slug_titol
+
+        obra_dir.mkdir(parents=True, exist_ok=True)
+
+        self.estat = EstatPipeline(obra_dir, autor or "Desconegut", titol or "Sense títol", llengua)
+
+        # Intentar carregar estat existent
+        if self.estat.existeix():
+            if self.estat.carregar():
+                print(f"[Pipeline] Reprenent sessió: {self.estat.sessio_id}")
+                print(f"[Pipeline] Fases completades: {self.estat.fases_completades}")
+                return True
+
+        return False
+
+    def _guardar_estat_amb_memoria(self) -> None:
+        """Guarda l'estat incloent la memòria contextual."""
+        if self.estat:
+            # La memòria es guarda per separat al fitxer .memoria_contextual.json
+            memoria_path = self.estat.obra_dir / ".memoria_contextual.json"
+            import json
+            memoria_path.write_text(
+                json.dumps(self.memoria.exportar(), indent=2, ensure_ascii=False),
+                encoding="utf-8"
+            )
+            self.estat.guardar()
+
+    def _carregar_memoria(self) -> None:
+        """Carrega la memòria contextual si existeix."""
+        if not self.estat:
+            return
+
+        memoria_path = self.estat.obra_dir / ".memoria_contextual.json"
+        if memoria_path.exists():
+            try:
+                import json
+                dades = json.loads(memoria_path.read_text(encoding="utf-8"))
+                self.memoria.importar(dades)
+                print(f"[Pipeline] Memòria contextual carregada: {self.memoria.num_traduccions} traduccions")
+            except Exception as e:
+                print(f"[Pipeline] Error carregant memòria: {e}")
+
+    def _validar_final(self) -> bool:
+        """Executa validació final.
+
+        Returns:
+            True si pot publicar, False altrament.
+        """
+        if not self.config.habilitar_validacio_final:
+            return True
+
+        if not self.estat or not self.estat.obra_dir:
+            print("[Pipeline] No es pot validar sense directori d'obra")
+            return True  # No bloquejar si no hi ha persistència
+
+        print("[Pipeline] Executant validació final...")
+        validador = ValidadorFinal(self.estat.obra_dir)
+        resultat = validador.validar(self.memoria)
+
+        # Mostrar informe breu
+        print(f"[Pipeline] Validació: {resultat.puntuacio:.1f}% - ", end="")
+        if resultat.pot_publicar:
+            print("✓ Pot publicar")
+        else:
+            print(f"✗ {resultat.errors_critics} errors crítics")
+            if self.config.bloquejar_si_invalid:
+                print("[Pipeline] ⚠️ Publicació bloquejada - corregeix els errors primer")
+                print(validador.generar_informe(resultat))
+
+        return resultat.pot_publicar
+
+    @classmethod
+    def reprendre(cls, obra_dir: Path, config: ConfiguracioPipelineV2 | None = None) -> "PipelineV2":
+        """Crea un pipeline i prepara per carregar l'estat existent.
+
+        Args:
+            obra_dir: Directori de l'obra a reprendre.
+            config: Configuració opcional.
+
+        Returns:
+            Instància de PipelineV2 preparada per reprendre.
+        """
+        config = config or ConfiguracioPipelineV2()
+        config.directori_obra = obra_dir
+        config.habilitar_persistencia = True
+
+        pipeline = cls(config)
+        return pipeline
+
     def _reportar_progres(self, fase: str, percentatge: float) -> None:
         """Reporta el progrés si hi ha callback."""
         if self.on_progress:
@@ -280,6 +429,19 @@ class PipelineV2:
         avisos: list[str] = []
 
         # ═══════════════════════════════════════════════════════════════
+        # INICIALITZAR ESTAT PERSISTENT (CORE)
+        # ═══════════════════════════════════════════════════════════════
+        es_represa = self._inicialitzar_estat(
+            autor=autor or "Desconegut",
+            titol=obra or "Sense títol",
+            llengua=llengua_origen
+        )
+
+        if es_represa:
+            self._carregar_memoria()
+            avisos.append(f"Reprenent sessió anterior: {self.estat.sessio_id}")
+
+        # ═══════════════════════════════════════════════════════════════
         # INICIAR DASHBOARD
         # ═══════════════════════════════════════════════════════════════
         if self.dashboard and self.config.mostrar_dashboard:
@@ -294,46 +456,154 @@ class PipelineV2:
 
         try:
             # ═══════════════════════════════════════════════════════════════
-            # FASE 1: GLOSSARI
+            # FASE 0: INVESTIGACIÓ
             # ═══════════════════════════════════════════════════════════════
-            self._reportar_progres("Glossari", 0.0)
-            if self.dashboard:
-                self.dashboard.set_stage("glossari")
-                self.dashboard.log_info("Glossarista", "Creant glossari terminològic...")
+            fase_investigacio_completada = (
+                self.estat and "investigacio" in self.estat.fases_completades
+            )
 
-            glossari = glossari_existent or {}
+            if fase_investigacio_completada:
+                print("[Pipeline] Fase investigació ja completada, saltant...")
+                if self.dashboard:
+                    self.dashboard.log_info("Pipeline", "Investigació ja completada (represa)")
+            elif self.config.fer_investigacio:
+                self._reportar_progres("Investigació", 0.0)
+                if self.dashboard:
+                    self.dashboard.set_stage("investigant")
+                    self.dashboard.log_info("Investigador", "Investigant autor i obra...")
 
-            if self.config.crear_glossari and not glossari_existent:
+                if self.estat:
+                    self.estat.iniciar_fase("investigacio")
+
                 temps_fase = time.time()
                 try:
-                    glossari = self._crear_glossari(text, llengua_origen, genere)
-                    temps_fases["glossari"] = time.time() - temps_fase
+                    investigador = InvestigadorAgent()
+                    informe = investigador.investigar(
+                        autor=autor or "Desconegut",
+                        obra=obra or "Sense títol",
+                        llengua_origen=llengua_origen,
+                        text_mostra=text[:500],  # Primers 500 chars com a mostra
+                        memoria=self.memoria,
+                    )
+                    temps_fases["investigacio"] = time.time() - temps_fase
+
                     if self.dashboard:
-                        self.dashboard.log_success("Glossarista", f"Glossari creat amb {len(glossari)} termes")
+                        self.dashboard.log_success(
+                            "Investigador",
+                            f"Investigació completada - Fiabilitat: {informe.fiabilitat}/10"
+                        )
+
                 except Exception as e:
-                    avisos.append(f"Error creant glossari: {e}")
-                    temps_fases["glossari"] = time.time() - temps_fase
+                    avisos.append(f"Error en investigació: {e}")
+                    temps_fases["investigacio"] = time.time() - temps_fase
                     if self.dashboard:
-                        self.dashboard.log_warning("Glossarista", f"Error creant glossari: {e}")
+                        self.dashboard.log_warning("Investigador", f"Error: {e}")
+                    if self.estat:
+                        self.estat.registrar_warning(f"Error investigació: {e}")
+
+                # Marcar fase completada
+                if self.estat:
+                    self.estat.completar_fase("investigacio")
+                    self._guardar_estat_amb_memoria()
+
+            self._reportar_progres("Investigació", 1.0)
+
+            # ═══════════════════════════════════════════════════════════════
+            # FASE 1: GLOSSARI
+            # ═══════════════════════════════════════════════════════════════
+            glossari = glossari_existent or {}
+
+            # Comprovar si ja està completada (represa)
+            fase_glossari_completada = (
+                self.estat and "glossari" in self.estat.fases_completades
+            )
+
+            if fase_glossari_completada:
+                print("[Pipeline] Fase glossari ja completada, saltant...")
+                if self.dashboard:
+                    self.dashboard.log_info("Pipeline", "Glossari ja completat (represa)")
+            else:
+                self._reportar_progres("Glossari", 0.0)
+                if self.dashboard:
+                    self.dashboard.set_stage("glossari")
+                    self.dashboard.log_info("Glossarista", "Creant glossari terminològic...")
+
+                if self.estat:
+                    self.estat.iniciar_fase("glossari")
+
+                if self.config.crear_glossari and not glossari_existent:
+                    temps_fase = time.time()
+                    try:
+                        glossari = self._crear_glossari(text, llengua_origen, genere)
+                        temps_fases["glossari"] = time.time() - temps_fase
+                        if self.dashboard:
+                            self.dashboard.log_success("Glossarista", f"Glossari creat amb {len(glossari)} termes")
+
+                        # Registrar termes a la memòria contextual
+                        for terme, traduccio in glossari.items():
+                            self.memoria.registrar_traduccio(
+                                original=terme,
+                                traduccio=traduccio,
+                                justificacio="Glossari inicial",
+                                chunk_id="glossari"
+                            )
+
+                    except Exception as e:
+                        avisos.append(f"Error creant glossari: {e}")
+                        temps_fases["glossari"] = time.time() - temps_fase
+                        if self.dashboard:
+                            self.dashboard.log_warning("Glossarista", f"Error creant glossari: {e}")
+                        if self.estat:
+                            self.estat.registrar_warning(f"Error glossari: {e}")
+
+                # Marcar fase completada i guardar
+                if self.estat:
+                    self.estat.completar_fase("glossari")
+                    self._guardar_estat_amb_memoria()
 
             self._reportar_progres("Glossari", 1.0)
 
             # ═══════════════════════════════════════════════════════════════
             # FASE 2: CHUNKING
             # ═══════════════════════════════════════════════════════════════
-            self._reportar_progres("Chunking", 0.0)
-            if self.dashboard:
-                self.dashboard.set_stage("chunking")
-                self.dashboard.log_info("Chunker", "Dividint text en fragments...")
+            fase_chunking_completada = (
+                self.estat and "chunking" in self.estat.fases_completades
+            )
 
-            temps_fase = time.time()
-
-            if self.config.fer_chunking and len(text) > self.config.max_chars_chunk:
-                chunks = self._dividir_en_chunks(text, llengua_origen)
+            if fase_chunking_completada:
+                print("[Pipeline] Fase chunking ja completada, saltant...")
+                # Recalcular chunks per tenir-los disponibles
+                if self.config.fer_chunking and len(text) > self.config.max_chars_chunk:
+                    chunks = self._dividir_en_chunks(text, llengua_origen)
+                else:
+                    chunks = [text]
+                if self.dashboard:
+                    self.dashboard.log_info("Pipeline", "Chunking ja completat (represa)")
             else:
-                chunks = [text]
+                self._reportar_progres("Chunking", 0.0)
+                if self.dashboard:
+                    self.dashboard.set_stage("chunking")
+                    self.dashboard.log_info("Chunker", "Dividint text en fragments...")
 
-            temps_fases["chunking"] = time.time() - temps_fase
+                if self.estat:
+                    self.estat.iniciar_fase("chunking")
+
+                temps_fase = time.time()
+
+                if self.config.fer_chunking and len(text) > self.config.max_chars_chunk:
+                    chunks = self._dividir_en_chunks(text, llengua_origen)
+                else:
+                    chunks = [text]
+
+                temps_fases["chunking"] = time.time() - temps_fase
+
+                # Registrar chunks a l'estat
+                if self.estat:
+                    chunk_ids = [f"chunk_{i+1}" for i in range(len(chunks))]
+                    self.estat.registrar_chunks(chunk_ids)
+                    self.estat.completar_fase("chunking")
+                    self._guardar_estat_amb_memoria()
+
             self._reportar_progres("Chunking", 1.0)
 
             if self.dashboard:
@@ -343,12 +613,38 @@ class PipelineV2:
             # ═══════════════════════════════════════════════════════════════
             # FASE 3: TRADUCCIÓ DE CHUNKS
             # ═══════════════════════════════════════════════════════════════
+            if self.estat:
+                self.estat.iniciar_fase("traduccio")
+
             resultats_chunks: list[ResultatChunk] = []
             puntuacions: list[float] = []
 
+            # Obtenir chunks pendents (per represes)
+            chunks_pendents = set()
+            if self.estat:
+                chunks_pendents = set(self.estat.obtenir_chunks_pendents())
+
             for i, chunk in enumerate(chunks):
+                chunk_id = f"chunk_{i+1}"
+
+                # Saltar chunks ja completats (represa)
+                if self.estat and chunk_id not in chunks_pendents and self.estat.chunks_completats > 0:
+                    print(f"[Pipeline] Chunk {i+1} ja completat, saltant...")
+                    # Crear resultat placeholder per mantenir ordre
+                    resultats_chunks.append(ResultatChunk(
+                        chunk_id=i + 1,
+                        text_original=chunk,
+                        traduccio_final="[CARREGAT DE SESSIÓ ANTERIOR]",
+                        aprovat=True,
+                    ))
+                    continue
+
                 progres_chunk = i / len(chunks)
                 self._reportar_progres(f"Traduint chunk {i+1}/{len(chunks)}", progres_chunk)
+
+                # Marcar chunk en curs
+                if self.estat:
+                    self.estat.iniciar_chunk(chunk_id)
 
                 temps_chunk = time.time()
 
@@ -385,10 +681,21 @@ class PipelineV2:
                                 "Pipeline",
                                 f"Chunk {i+1} completat - Qualitat: {puntuacio:.1f}/10"
                             )
+
+                        # Guardar estat després de cada chunk
+                        if self.estat:
+                            self.estat.completar_chunk(chunk_id, qualitat=puntuacio)
+                            self._guardar_estat_amb_memoria()
+
                     elif self.dashboard:
                         # Chunk sense avaluació
                         self.dashboard.update_chunk(i, "completat", quality=7.5, iterations=0)
                         self.dashboard.log_success("Pipeline", f"Chunk {i+1} completat")
+
+                        # Guardar estat sense puntuació
+                        if self.estat:
+                            self.estat.completar_chunk(chunk_id, qualitat=7.5)
+                            self._guardar_estat_amb_memoria()
 
                 except ContentFilterError as e:
                     # Error de filtratge de contingut: suggerir chunks més petits
@@ -411,6 +718,12 @@ class PipelineV2:
                         aprovat=False,
                     ))
 
+                    # Registrar error a l'estat
+                    if self.estat:
+                        self.estat.registrar_error(error_msg)
+                        self.estat.completar_chunk(chunk_id, qualitat=0.0)
+                        self._guardar_estat_amb_memoria()
+
                 except Exception as e:
                     errors.append(f"Error en chunk {i+1}: {e}")
                     if self.dashboard:
@@ -423,6 +736,17 @@ class PipelineV2:
                         traduccio_final=f"[ERROR: {e}]",
                         aprovat=False,
                     ))
+
+                    # Registrar error a l'estat
+                    if self.estat:
+                        self.estat.registrar_error(f"Error chunk {i+1}: {e}")
+                        self.estat.completar_chunk(chunk_id, qualitat=0.0)
+                        self._guardar_estat_amb_memoria()
+
+            # Marcar fase traducció completada
+            if self.estat:
+                self.estat.completar_fase("traduccio")
+                self._guardar_estat_amb_memoria()
 
             temps_fases["traduccio"] = sum(r.temps_processament for r in resultats_chunks)
 
@@ -459,6 +783,29 @@ class PipelineV2:
                 avisos.append("Es recomana revisió humana")
 
             # ═══════════════════════════════════════════════════════════════
+            # VALIDACIÓ FINAL (CORE)
+            # ═══════════════════════════════════════════════════════════════
+            pot_publicar = True
+            if self.config.habilitar_validacio_final and self.estat:
+                if self.dashboard:
+                    self.dashboard.set_stage("validant")
+                    self.dashboard.log_info("Pipeline", "Executant validació final...")
+
+                pot_publicar = self._validar_final()
+
+                if not pot_publicar:
+                    avisos.append("Validació final no superada - revisar errors")
+
+            # ═══════════════════════════════════════════════════════════════
+            # ACTUALITZAR ESTAT FINAL
+            # ═══════════════════════════════════════════════════════════════
+            if self.estat:
+                self.estat.completar_fase("fusio")
+                self.estat.actualitzar_temps((time.time() - temps_inici) / 60.0)
+                self._guardar_estat_amb_memoria()
+                print(f"[Pipeline] Estat final guardat: {self.estat.resum()}")
+
+            # ═══════════════════════════════════════════════════════════════
             # DASHBOARD: COMPLETAT
             # ═══════════════════════════════════════════════════════════════
             if self.dashboard:
@@ -475,6 +822,8 @@ class PipelineV2:
                     "Pipeline",
                     f"Chunks: {chunks_aprovats}/{len(chunks)} aprovats | Temps: {temps_total:.1f}s"
                 )
+                if not pot_publicar:
+                    self.dashboard.log_warning("Pipeline", "⚠️ Validació no superada - revisar errors")
                 self.dashboard.log_success("Pipeline", "═" * 40)
 
             return ResultatPipelineV2(
@@ -493,7 +842,7 @@ class PipelineV2:
                 requereix_revisio_humana=requereix_revisio,
                 temps_total=round(time.time() - temps_inici, 2),
                 temps_per_fase=temps_fases,
-                estat=EstatPipeline.COMPLETAT,
+                fase=FasePipeline.COMPLETAT,
                 errors=errors,
                 avisos=avisos,
             )
@@ -504,6 +853,12 @@ class PipelineV2:
                 self.dashboard.set_stage("error")
                 self.dashboard.log_error("Pipeline", f"Error fatal: {e}")
 
+            # Guardar estat amb error
+            if self.estat:
+                self.estat.registrar_error(f"Error fatal: {e}")
+                self._guardar_estat_amb_memoria()
+                print(f"[Pipeline] Estat guardat amb error - es pot reprendre")
+
             return ResultatPipelineV2(
                 text_original=text,
                 traduccio_final="",
@@ -512,7 +867,7 @@ class PipelineV2:
                 obra=obra,
                 genere=genere,
                 temps_total=round(time.time() - temps_inici, 2),
-                estat=EstatPipeline.ERROR,
+                fase=FasePipeline.ERROR,
                 errors=[str(e)],
             )
 
@@ -653,7 +1008,7 @@ class PipelineV2:
             glossari=glossari,
         )
 
-        resultat_traduccio = self.traductor.traduir(context)
+        resultat_traduccio = self.traductor.traduir(context, self.memoria)
         traduccio_actual = resultat_traduccio.traduccio
 
         # ─────────────────────────────────────────────────────────────

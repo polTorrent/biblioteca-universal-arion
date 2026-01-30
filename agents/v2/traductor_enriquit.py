@@ -21,6 +21,7 @@ from agents.v2.models import (
     AnalisiPreTraduccio,
     ContextTraduccioEnriquit,
 )
+from core import MemoriaContextual
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger
@@ -221,16 +222,18 @@ IMPORTANT
     def traduir(
         self,
         context: ContextTraduccioEnriquit,
+        memoria: MemoriaContextual | None = None,
     ) -> ResultatTraduccio:
         """Tradueix un text utilitzant el context enriquit.
 
         Args:
             context: Context complet amb anàlisi, exemples i glossari.
+            memoria: Memòria contextual per coherència (opcional).
 
         Returns:
             ResultatTraduccio amb la traducció i metadades.
         """
-        prompt = self._construir_prompt(context)
+        prompt = self._construir_prompt(context, memoria)
         response = self.process(prompt)
 
         # Parsejar resposta (robust)
@@ -254,7 +257,11 @@ IMPORTANT
             avisos=["Resposta no estructurada"],
         )
 
-    def _construir_prompt(self, context: ContextTraduccioEnriquit) -> str:
+    def _construir_prompt(
+        self,
+        context: ContextTraduccioEnriquit,
+        memoria: MemoriaContextual | None = None,
+    ) -> str:
         """Construeix el prompt complet per a la traducció."""
         seccions = []
 
@@ -267,6 +274,20 @@ IMPORTANT
             seccions.append(f"Obra: {context.obra}")
         if context.genere:
             seccions.append(f"Gènere: {context.genere}")
+
+        # ═══════════════════════════════════════════════════════════════════
+        # CONTEXT DE LA MEMÒRIA (investigació, traduccions prèvies, etc.)
+        # ═══════════════════════════════════════════════════════════════════
+        if memoria:
+            context_memoria = memoria.generar_context_per_traductor()
+            if context_memoria and context_memoria.strip():
+                # Limitar a màx 1500 chars per no saturar el prompt
+                if len(context_memoria) > 1500:
+                    context_memoria = context_memoria[:1500] + "\n[...context truncat...]"
+                seccions.append("\n" + "="*60)
+                seccions.append("CONTEXT DE MEMÒRIA (usa-ho per coherència)")
+                seccions.append("="*60)
+                seccions.append(context_memoria)
 
         # Context enriquit (anàlisi + exemples + glossari)
         prompt_context = context.to_prompt_context()
@@ -336,6 +357,7 @@ IMPORTANT
         obra: str | None = None,
         genere: str = "narrativa",
         glossari: dict[str, str] | None = None,
+        memoria: MemoriaContextual | None = None,
     ) -> ResultatTraduccio:
         """Mètode de conveniència per traduccions sense anàlisi prèvia.
 
@@ -349,6 +371,7 @@ IMPORTANT
             obra: Obra (opcional).
             genere: Gènere literari.
             glossari: Glossari de termes (opcional).
+            memoria: Memòria contextual per coherència (opcional).
 
         Returns:
             ResultatTraduccio amb la traducció.
@@ -361,7 +384,7 @@ IMPORTANT
             genere=genere,
             glossari=glossari,
         )
-        return self.traduir(context)
+        return self.traduir(context, memoria)
 
 
 class TraductorAmbAnalisi:
@@ -405,6 +428,7 @@ class TraductorAmbAnalisi:
         glossari: dict[str, str] | None = None,
         max_exemples_fewshot: int = 5,
         saltar_analisi: bool = False,
+        memoria: MemoriaContextual | None = None,
     ) -> tuple[ResultatTraduccio, AnalisiPreTraduccio | None]:
         """Tradueix un text amb anàlisi prèvia i exemples few-shot.
 
@@ -417,6 +441,7 @@ class TraductorAmbAnalisi:
             glossari: Glossari de termes (opcional).
             max_exemples_fewshot: Màxim d'exemples a usar.
             saltar_analisi: Si True, no fa anàlisi prèvia (més ràpid).
+            memoria: Memòria contextual per coherència (opcional).
 
         Returns:
             Tupla amb (ResultatTraduccio, AnalisiPreTraduccio o None).
@@ -458,8 +483,8 @@ class TraductorAmbAnalisi:
             glossari=glossari,
         )
 
-        # Fase 4: Traduir
-        resultat = self.traductor.traduir(context)
+        # Fase 4: Traduir (amb memòria si disponible)
+        resultat = self.traductor.traduir(context, memoria)
 
         return resultat, analisi
 

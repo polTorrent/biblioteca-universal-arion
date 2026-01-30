@@ -44,6 +44,49 @@ obres/[autor]/[obra]/
 - **Comunitat**: Discord
 - **Web**: GitHub Pages
 
+## 🚀 Pipeline de Traducció V2
+
+El sistema utilitza una arquitectura d'agents especialitzats:
+
+```
+Investigador → Glossarista → Chunker → Traductor → Avaluador → Refinador → Validador
+```
+
+### Característiques principals
+
+- **Investigació automàtica**: Context històric i cultural de l'autor i obra
+- **Memòria contextual**: Coherència entre chunks de traducció
+- **Avaluació dimensional**: Fidelitat + Veu de l'autor + Fluïdesa
+- **Detector de calcs**: Identificació automàtica de construccions no naturals
+- **Persistència**: Reprendre traduccions interrompudes
+- **Dashboard**: Monitorització en temps real al navegador
+
+### Ús bàsic
+
+```python
+import os
+os.environ["CLAUDECODE"] = "1"  # Usar subscripció
+
+from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+
+config = ConfiguracioPipelineV2(
+    fer_investigacio=True,
+    habilitar_persistencia=True,
+)
+pipeline = PipelineV2(config=config)
+
+resultat = pipeline.traduir(
+    text=text_original,
+    llengua_origen="grec",
+    autor="Plató",
+    obra="Apologia de Sòcrates",
+)
+```
+
+### Documentació tècnica
+
+Consulta [docs/ARQUITECTURA.md](docs/ARQUITECTURA.md) per documentació completa del sistema.
+
 ## 📜 Llicència
 
 - **Traduccions**: CC BY-SA 4.0

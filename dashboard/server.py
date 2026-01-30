@@ -235,6 +235,11 @@ class TranslationDashboard:
         self.state.metrics.current_stage = stage
         self._send_event("stage", {"stage": stage})
 
+        # Aturar automàticament quan es completa o hi ha error
+        if stage in ("completat", "error"):
+            self.state.status = stage
+            self._send_event("status", {"status": stage})
+
     def set_chunks(self, total: int):
         """Inicialitza els chunks."""
         self.state.metrics.chunks_total = total

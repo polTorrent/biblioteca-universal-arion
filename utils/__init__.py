@@ -27,6 +27,13 @@ from utils.checkpointer import (
     ChunkCheckpoint,
     PipelineCheckpoint,
 )
+from utils.detector_calcs import (
+    DetectorCalcs,
+    detectar_calcs,
+    ResultatDeteccio,
+    CalcDetectat,
+    TipusCalc,
+)
 
 __all__ = [
     # Logger
@@ -52,4 +59,10 @@ __all__ = [
     "Checkpointer",
     "ChunkCheckpoint",
     "PipelineCheckpoint",
+    # Detector de calcs
+    "DetectorCalcs",
+    "detectar_calcs",
+    "ResultatDeteccio",
+    "CalcDetectat",
+    "TipusCalc",
 ]

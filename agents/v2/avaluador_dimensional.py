@@ -12,6 +12,7 @@ from typing import TYPE_CHECKING
 from pydantic import BaseModel
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
+from utils.detector_calcs import detectar_calcs, ResultatDeteccio
 from agents.v2.models import (
     AvaluacioFidelitat,
     AvaluacioVeuAutor,
@@ -450,10 +451,33 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
         Returns:
             AvaluacioFluidesa amb puntuacions i problemes detectats.
         """
+        # ═══════════════════════════════════════════════════════════════════
+        # FASE 1: DETECCIÓ AUTOMÀTICA DE CALCS (sense LLM)
+        # ═══════════════════════════════════════════════════════════════════
+        resultat_detector = detectar_calcs(
+            text=context.text_traduit,
+            llengua_origen=context.llengua_origen
+        )
+
+        calcs_automatics = [
+            f"{c.tipus.value}: \"{c.text_original}\" → {c.suggeriment}"
+            for c in resultat_detector.calcs
+        ]
+
+        # ═══════════════════════════════════════════════════════════════════
+        # FASE 2: AVALUACIÓ AMB LLM
+        # ═══════════════════════════════════════════════════════════════════
         prompt_parts = [
             f"Avalua la FLUÏDESA en català d'aquesta traducció (original en {context.llengua_origen}).",
             "\nNOTA: L'original s'inclou només per identificar possibles calcs de la llengua origen.",
         ]
+
+        # Informar el LLM dels calcs ja detectats automàticament
+        if calcs_automatics:
+            prompt_parts.append(f"\n⚠️ CALCS JA DETECTATS AUTOMÀTICAMENT ({len(calcs_automatics)}):")
+            for calc in calcs_automatics[:10]:  # Màxim 10 per no saturar
+                prompt_parts.append(f"  • {calc}")
+            prompt_parts.append("\nBusca ALTRES problemes de fluïdesa no llistats aquí.")
 
         if context.genere:
             prompt_parts.append(f"\nGènere: {context.genere}")
@@ -467,7 +491,9 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
 
         response = self.process("\n".join(prompt_parts))
 
-        # Parsejar resposta JSON (robust)
+        # ═══════════════════════════════════════════════════════════════════
+        # FASE 3: COMBINAR RESULTATS
+        # ═══════════════════════════════════════════════════════════════════
         data = extract_json_from_text(response.content)
         if data:
             try:
@@ -485,24 +511,47 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                     except Exception:
                         pass
 
+                # Combinar calcs del LLM amb els automàtics (sense duplicats)
+                calcs_llm = data.get("calcs_detectats", [])
+                calcs_combinats = calcs_automatics + [
+                    c for c in calcs_llm
+                    if not any(auto in c or c in auto for auto in calcs_automatics)
+                ]
+
+                # Ajustar puntuació si el detector automàtic ha trobat molts calcs
+                puntuacio_llm = data.get("puntuacio", 5)
+                puntuacio_detector = resultat_detector.puntuacio_fluidesa
+
+                # Ponderar: 70% LLM, 30% detector automàtic
+                puntuacio_final = (puntuacio_llm * 0.7) + (puntuacio_detector * 0.3)
+
+                # Generar feedback ampliat
+                feedback_llm = data.get("feedback_refinament", "")
+                feedback_detector = ""
+                if resultat_detector.calcs:
+                    feedback_detector = "\n\n[CALCS DETECTATS AUTOMÀTICAMENT]\n"
+                    for calc in resultat_detector.calcs[:5]:
+                        feedback_detector += f"• {calc.text_original}: {calc.suggeriment}\n"
+
                 return AvaluacioFluidesa(
-                    puntuacio=data.get("puntuacio", 5),
+                    puntuacio=round(puntuacio_final, 1),
                     sintaxi=parse_subavaluacio("sintaxi"),
                     lexic=parse_subavaluacio("lexic"),
                     normativa=parse_subavaluacio("normativa"),
                     llegibilitat=parse_subavaluacio("llegibilitat"),
                     errors_normatius=errors,
-                    calcs_detectats=data.get("calcs_detectats", []),
-                    feedback_refinament=data.get("feedback_refinament", ""),
+                    calcs_detectats=calcs_combinats,
+                    feedback_refinament=feedback_llm + feedback_detector,
                 )
             except (KeyError, TypeError) as e:
                 self.log_warning(f"Error construint avaluació: {e}")
 
-        # Retornar avaluació per defecte amb puntuació alta per no bloquejar
-        self.log_warning("No s'ha pogut parsejar JSON, assumint traducció acceptable")
+        # Si falla el LLM, retornar almenys els resultats del detector automàtic
+        self.log_warning("No s'ha pogut parsejar JSON del LLM, usant només detector automàtic")
         return AvaluacioFluidesa(
-            puntuacio=7.5,
-            feedback_refinament="",
+            puntuacio=resultat_detector.puntuacio_fluidesa,
+            calcs_detectats=calcs_automatics,
+            feedback_refinament=resultat_detector.resum if resultat_detector.calcs else "",
         )
 
 
