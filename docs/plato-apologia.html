@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discurs de defensa de Sòcrates davant el tribunal atenenc que l'acusava de corrompre la joventut i no creure en els déus de la ciutat. És un dels textos més importants de la filosofia occidental, on Sòcrates exposa la seva missió filosòfica, el seu mètode d'examen i la seva acceptació serena de la mort. Conté la famosa afirmació "només sé que no sé res" i reflexions profundes sobre la virtut, la justícia i el sentit de la vida.
+">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Apologia de Sòcrates - Plató">
+    <meta property="og:description" content="Discurs de defensa de Sòcrates davant el tribunal atenenc que l'acusava de corrompre la joventut i no creure en els déus de la ciutat. És un dels textos més importants de la filosofia occidental, on Sòcrates exposa la seva missió filosòfica, el seu mètode d'examen i la seva acceptació serena de la mort. Conté la famosa afirmació "només sé que no sé res" i reflexions profundes sobre la virtut, la justícia i el sentit de la vida.
+">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://editorial-classica.cat/plato-apologia.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Apologia de Sòcrates - Plató | Editorial Clàssica</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<!-- Estils per índex, navegació i favorits -->
+<style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    /* Botó favorit */
+    .btn-favorit-below {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: var(--color-surface, #f8f8f8);
+        border: 1px solid var(--color-border, #ddd);
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--color-text, #333);
+        transition: all 0.2s ease;
+    }
+    .btn-favorit-below:hover {
+        background: #fff0f0;
+        border-color: #e74c3c;
+    }
+    .btn-favorit-below.active {
+        background: #fff0f0;
+        border-color: #e74c3c;
+        color: #e74c3c;
+    }
+    .btn-favorit-below.active .favorit-text {
+        display: none;
+    }
+    .btn-favorit-below.active::after {
+        content: 'Als teus favorits';
+    }
+    .favorit-icon {
+        font-size: 1.2rem;
+    }
+    /* Separador en controls */
+    .view-separator {
+        color: var(--text-muted, #999);
+        margin: 0 0.5rem;
+    }
+
+    /* Botó índex */
+    .toc-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    .toc-icon {
+        font-size: 1.1em;
+    }
+
+    /* Panell índex */
+    .chapter-toc {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 320px;
+        max-width: 90vw;
+        max-height: calc(100vh - 100px);
+        background: var(--bg-primary, #fff);
+        border: 1px solid var(--border-color, #e0e0e0);
+        border-radius: 0 8px 8px 0;
+        box-shadow: 4px 4px 20px rgba(0,0,0,0.15);
+        z-index: 1000;
+        overflow: hidden;
+    }
+    .chapter-toc.open {
+        display: block;
+        animation: slideIn 0.2s ease-out;
+    }
+    @keyframes slideIn {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    .toc-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid var(--border-color, #e0e0e0);
+        background: var(--bg-secondary, #f8f8f8);
+    }
+    .toc-header h3 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .toc-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+        color: var(--text-muted, #666);
+    }
+    .toc-close:hover {
+        color: var(--text-primary, #333);
+    }
+    .toc-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-height: calc(100vh - 180px);
+        overflow-y: auto;
+    }
+    .toc-list li {
+        border-bottom: 1px solid var(--border-light, #f0f0f0);
+    }
+    .toc-list li:last-child {
+        border-bottom: none;
+    }
+    .toc-list a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: var(--text-primary, #333);
+        text-decoration: none;
+        transition: background 0.15s;
+    }
+    .toc-list a:hover {
+        background: var(--bg-hover, #f5f5f5);
+    }
+    .toc-list a.active {
+        background: var(--accent-light, #fff8e1);
+        border-left: 3px solid var(--accent, #D4AF37);
+        font-weight: 500;
+    }
+    .toc-chapter-num {
+        color: var(--text-muted, #888);
+        margin-right: 0.5rem;
+    }
+
+    /* Navegació entre capítols */
+    .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+        gap: 1rem;
+    }
+    .chapter-nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s;
+    }
+    .chapter-nav-btn:hover:not(:disabled) {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .chapter-nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+    .nav-arrow {
+        font-size: 1.2em;
+    }
+    .chapter-indicator {
+        font-size: 0.9rem;
+        color: var(--text-muted, #666);
+        text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .chapter-toc {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+        }
+        .chapter-nav {
+            flex-wrap: wrap;
+        }
+        .chapter-nav-btn .nav-text {
+            display: none;
+        }
+        .chapter-indicator {
+            order: -1;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    /* Mode fosc */
+    [data-theme="dark"] .chapter-toc {
+        background: #1e1e1e;
+        border-color: #333;
+    }
+    [data-theme="dark"] .toc-header {
+        background: #252525;
+        border-color: #333;
+    }
+    [data-theme="dark"] .toc-list a.active {
+        background: #2a2a1e;
+    }
+    [data-theme="dark"] .chapter-nav-btn {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Botons collapsibles per seccions */
+    .section-toggle-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1.5rem 0;
+        margin-top: 1rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+    }
+    .section-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.5rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        color: var(--text-primary, #333);
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    .section-toggle:hover {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle.active {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .section-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .section-toggle.active .toggle-icon {
+        transform: rotate(180deg);
+    }
+    [data-theme="dark"] .section-toggle {
+        background: #252525;
+        border-color: #444;
+        color: #e0e0e0;
+    }
+    [data-theme="dark"] .section-toggle:hover,
+    [data-theme="dark"] .section-toggle.active {
+        background: #D4AF37;
+        color: #1e1e1e;
+    }
+
+    /* Seccions collapsibles */
+    .collapsible-section {
+        display: none;
+        animation: fadeIn 0.3s ease;
+    }
+    .collapsible-section.open {
+        display: block;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Enllaç tornar al text (notes i glossari) */
+    .back-to-text {
+        display: inline-block;
+        margin-top: 0.75rem;
+        font-size: 0.85rem;
+        color: var(--accent, #D4AF37);
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+    .back-to-text:hover {
+        color: var(--accent-dark, #b8962e);
+        text-decoration: underline;
+    }
+    [data-theme="dark"] .back-to-text {
+        color: #e8c860;
+    }
+    [data-theme="dark"] .back-to-text:hover {
+        color: #f0d878;
+    }
+</style>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Apologia de Sòcrates",
+    "author": {
+        "@type": "Person",
+        "name": "Plató"
+    },
+    "translator": {
+        "@type": "Organization",
+        "name": "Biblioteca Arion"
+    },
+    "inLanguage": "ca",
+    "workTranslation": {
+        "@type": "Book",
+        "name": "Ἀπολογία Σωκράτους",
+        "author": {
+            "@type": "Person",
+            "name": "Πλάτων"
+        },
+        "inLanguage": "grec antic"
+    },
+    "datePublished": "2026"
+}
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
+<article class="page-content">
+    <div class="container">
+        <!-- Capçalera de l'obra amb portada -->
+        <header class="work-header">
+            <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                
+                <div style="flex-shrink: 0; text-align: center;">
+                    <img src="assets/portades/plato-apologia-portada.png"
+                         alt="Portada de Apologia de Sòcrates"
+                         style="max-width: 200px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <button class="btn-favorit btn-favorit-below"
+                            data-obra-id="plato-apologia"
+                            data-obra-titol="Apologia de Sòcrates"
+                            data-obra-autor="Plató"
+                            title="Afegir a favorits">
+                        <span class="favorit-icon">🤍</span>
+                        <span class="favorit-text">Afegir a favorits</span>
+                    </button>
+                </div>
+                
+
+                <div class="work-info" style="flex: 1; min-width: 300px;">
+                    <h1 class="work-title">Apologia de Sòcrates</h1>
+                    
+                    <p class="work-title-original">Ἀπολογία Σωκράτους</p>
+                    
+
+                    <div class="work-meta-grid">
+                        <div class="work-meta-item">
+                            <strong>Autor</strong>
+                            
+                            <a href="autor-plató.html" class="author-link">Plató</a>
+                            
+                            <br><small>(Πλάτων)</small>
+                            
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Traducció</strong>
+                            Biblioteca Arion
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Llengua original</strong>
+                            Grec antic
+                        </div>
+
+                        
+                        <div class="work-meta-item">
+                            <strong>Data original</strong>
+                            c. 399 aC
+                        </div>
+                        
+
+                    </div>
+
+                    
+                    <p class="work-description">Discurs de defensa de Sòcrates davant el tribunal atenenc que l'acusava de corrompre la joventut i no creure en els déus de la ciutat. És un dels textos més importants de la filosofia occidental, on Sòcrates exposa la seva missió filosòfica, el seu mètode d'examen i la seva acceptació serena de la mort. Conté la famosa afirmació "només sé que no sé res" i reflexions profundes sobre la virtut, la justícia i el sentit de la vida.
+</p>
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-esborrany">esborrany</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                7.5/10
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Paraules traducció</strong>
+                                4058
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-01-30
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls de vista -->
+        <div class="text-container" data-mode="bilingue">
+            <div class="view-controls">
+                <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
+                    <span class="toc-icon">☰</span> Índex
+                </button>
+                <span class="view-separator">|</span>
+                <button class="view-btn" data-mode="original">Original</button>
+                <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
+                <button class="view-btn" data-mode="traduccio">Traducció</button>
+            </div>
+
+            <!-- Índex de capítols (amagat per defecte) -->
+            <nav class="chapter-toc" id="chapter-toc" aria-label="Índex de capítols">
+                <div class="toc-header">
+                    <h3>Índex de capítols</h3>
+                    <button class="toc-close" id="toc-close" aria-label="Tancar índex">&times;</button>
+                </div>
+                <ol class="toc-list" id="toc-list">
+                    <!-- Omplert dinàmicament per JS -->
+                </ol>
+            </nav>
+
+            <!-- Grid bilingüe -->
+            <div class="bilingue-grid">
+                <!-- Columna original -->
+                <section class="original-column">
+                    <div class="column-header">Text original (grec antic)</div>
+                    <h2 class="section-title">Ἀπολογία Σωκράτους</h2>
+
+                <div class="section" id="orig-1" data-parallel="trad-1">
+                    <p>How you, O Athenians, have been affected by my accusers, I cannot tell;
+but I know that they almost made me forget who I was—so persuasively
+did they speak; and yet they have hardly uttered a word of truth. But
+of the many falsehoods told by them, there was one which quite amazed
+me;—I mean when they said that you should be upon your guard and not
+allow yourselves to be deceived by the force of my eloquence. To say
+this, when they were certain to be detected as soon as I opened my lips
+and proved myself to be anything but a great speaker, did indeed appear
+to me most shameless—unless by the force of eloquence they mean the
+force of truth; for if such is their meaning, I admit that I am
+eloquent. But in how different a way from theirs! Well, as I was
+saying, they have scarcely spoken the truth at all; but from me you
+shall hear the whole truth: not, however, delivered after their manner
+in a set oration duly ornamented with words and phrases. No, by heaven!
+but I shall use the words and arguments which occur to me at the
+moment; for I am confident in the justice of my cause (Or, I am certain
+that I am right in taking this course.): at my time of life I ought not
+to be appearing before you, O men of Athens, in the character of a
+juvenile orator—let no one expect it of me. And I must beg of you to
+grant me a favour:—If I defend myself in my accustomed manner, and you
+hear me using the words which I have been in the habit of using in the
+agora, at the tables of the money-changers, or anywhere else, I would
+ask you not to be surprised, and not to interrupt me on this account.
+For I am more than seventy years of age, and appearing now for the
+first time in a court of law, I am quite a stranger to the language of
+the place; and therefore I would have you regard me as if I were really
+a stranger, whom you would excuse if he spoke in his native tongue, and
+after the fashion of his country:—Am I making an unfair request of you?
+Never mind the manner, which may or may not be good; but think only of
+the truth of my words, and give heed to that: let the speaker speak
+truly and the judge decide justly.</p>
+<p>And first, I have to reply to the older charges and to my first
+accusers, and then I will go on to the later ones. For of old I have
+had many accusers, who have accused me falsely to you during many
+years; and I am more afraid of them than of Anytus and his associates,
+who are dangerous, too, in their own way. But far more dangerous are
+the others, who began when you were children, and took possession of
+your minds with their falsehoods, telling of one Socrates, a wise man,
+who speculated about the heaven above, and searched into the earth
+beneath, and made the worse appear the better cause. The disseminators
+of this tale are the accusers whom I dread; for their hearers are apt
+to fancy that such enquirers do not believe in the existence of the
+gods. And they are many, and their charges against me are of ancient
+date, and they were made by them in the days when you were more
+impressible than you are now—in childhood, or it may have been in
+youth—and the cause when heard went by default, for there was none to
+answer. And hardest of all, I do not know and cannot tell the names of
+my accusers; unless in the chance case of a Comic poet. All who from
+envy and malice have persuaded you—some of them having first convinced
+themselves—all this class of men are most difficult to deal with; for I
+cannot have them up here, and cross-examine them, and therefore I must
+simply fight with shadows in my own defence, and argue when there is no
+one who answers. I will ask you then to assume with me, as I was
+saying, that my opponents are of two kinds; one recent, the other
+ancient: and I hope that you will see the propriety of my answering the
+latter first, for these accusations you heard long before the others,
+and much oftener.</p>
+<p>Well, then, I must make my defence, and endeavour to clear away in a
+short time, a slander which has lasted a long time. May I succeed, if
+to succeed be for my good and yours, or likely to avail me in my cause!
+The task is not an easy one; I quite understand the nature of it. And
+so leaving the event with God, in obedience to the law I will now make
+my defence.</p>
+<p>I will begin at the beginning, and ask what is the accusation which has
+given rise to the slander of me, and in fact has encouraged Meletus to
+proof this charge against me. Well, what do the slanderers say? They
+shall be my prosecutors, and I will sum up their words in an affidavit:
+“Socrates is an evil-doer, and a curious person, who searches into
+things under the earth and in heaven, and he makes the worse appear the
+better cause; and he teaches the aforesaid doctrines to others.” Such
+is the nature of the accusation: it is just what you have yourselves
+seen in the comedy of Aristophanes (Aristoph., Clouds.), who has
+introduced a man whom he calls Socrates, going about and saying that he
+walks in air, and talking a deal of nonsense concerning matters of
+which I do not pretend to know either much or little—not that I mean to
+speak disparagingly of any one who is a student of natural philosophy.
+I should be very sorry if Meletus could bring so grave a charge against
+me. But the simple truth is, O Athenians, that I have nothing to do
+with physical speculations. Very many of those here present are
+witnesses to the truth of this, and to them I appeal. Speak then, you
+who have heard me, and tell your neighbours whether any of you have
+ever known me hold forth in few words or in many upon such
+matters&hellip;You hear their answer. And from what they say of this part of
+the charge you will be able to judge of the truth of the rest.</p>
+<p>As little foundation is there for the report that I am a teacher, and
+take money; this accusation has no more truth in it than the other.
+Although, if a man were really able to instruct mankind, to receive
+money for giving instruction would, in my opinion, be an honour to him.
+There is Gorgias of Leontium, and Prodicus of Ceos, and Hippias of
+Elis, who go the round of the cities, and are able to persuade the
+young men to leave their own citizens by whom they might be taught for
+nothing, and come to them whom they not only pay, but are thankful if
+they may be allowed to pay them. There is at this time a Parian
+philosopher residing in Athens, of whom I have heard; and I came to
+hear of him in this way:—I came across a man who has spent a world of
+money on the Sophists, Callias, the son of Hipponicus, and knowing that
+he had sons, I asked him: “Callias,” I said, “if your two sons were
+foals or calves, there would be no difficulty in finding some one to
+put over them; we should hire a trainer of horses, or a farmer
+probably, who would improve and perfect them in their own proper virtue
+and excellence; but as they are human beings, whom are you thinking of
+placing over them? Is there any one who understands human and political
+virtue? You must have thought about the matter, for you have sons; is
+there any one?” “There is,” he said. “Who is he?” said I; “and of what
+country? and what does he charge?” “Evenus the Parian,” he replied; “he
+is the man, and his charge is five minæ.” Happy is Evenus, I said to
+myself, if he really has this wisdom, and teaches at such a moderate
+charge. Had I the same, I should have been very proud and conceited;
+but the truth is that I have no knowledge of the kind.</p>
+<p>I dare say, Athenians, that some one among you will reply, “Yes,
+Socrates, but what is the origin of these accusations which are brought
+against you; there must have been something strange which you have been
+doing? All these rumours and this talk about you would never have
+arisen if you had been like other men: tell us, then, what is the cause
+of them, for we should be sorry to judge hastily of you.” Now I regard
+this as a fair challenge, and I will endeavour to explain to you the
+reason why I am called wise and have such an evil fame. Please to
+attend then. And although some of you may think that I am joking, I
+declare that I will tell you the entire truth. Men of Athens, this
+reputation of mine has come of a certain sort of wisdom which I
+possess. If you ask me what kind of wisdom, I reply, wisdom such as may
+perhaps be attained by man, for to that extent I am inclined to believe
+that I am wise; whereas the persons of whom I was speaking have a
+superhuman wisdom which I may fail to describe, because I have it not
+myself; and he who says that I have, speaks falsely, and is taking away
+my character. And here, O men of Athens, I must beg you not to
+interrupt me, even if I seem to say something extravagant. For the word
+which I will speak is not mine. I will refer you to a witness who is
+worthy of credit; that witness shall be the God of Delphi—he will tell
+you about my wisdom, if I have any, and of what sort it is. You must
+have known Chaerephon; he was early a friend of mine, and also a friend
+of yours, for he shared in the recent exile of the people, and returned
+with you. Well, Chaerephon, as you know, was very impetuous in all his
+doings, and he went to Delphi and boldly asked the oracle to tell him
+whether—as I was saying, I must beg you not to interrupt—he asked the
+oracle to tell him whether anyone was wiser than I was, and the Pythian
+prophetess answered, that there was no man wiser. Chaerephon is dead
+himself; but his brother, who is in court, will confirm the truth of
+what I am saying.</p>
+<p>Why do I mention this? Because I am going to explain to you why I have
+such an evil name. When I heard the answer, I said to myself, What can
+the god mean? and what is the interpretation of his riddle? for I know
+that I have no wisdom, small or great. What then can he mean when he
+says that I am the wisest of men? And yet he is a god, and cannot lie;
+that would be against his nature. After long consideration, I thought
+of a method of trying the question. I reflected that if I could only
+find a man wiser than myself, then I might go to the god with a
+refutation in my hand. I should say to him, “Here is a man who is wiser
+than I am; but you said that I was the wisest.” Accordingly I went to
+one who had the reputation of wisdom, and observed him—his name I need
+not mention; he was a politician whom I selected for examination—and
+the result was as follows: When I began to talk with him, I could not
+help thinking that he was not really wise, although he was thought wise
+by many, and still wiser by himself; and thereupon I tried to explain
+to him that he thought himself wise, but was not really wise; and the
+consequence was that he hated me, and his enmity was shared by several
+who were present and heard me. So I left him, saying to myself, as I
+went away: Well, although I do not suppose that either of us knows
+anything really beautiful and good, I am better off than he is,—for he
+knows nothing, and thinks that he knows; I neither know nor think that
+I know. In this latter particular, then, I seem to have slightly the
+advantage of him. Then I went to another who had still higher
+pretensions to wisdom, and my conclusion was exactly the same.
+Whereupon I made another enemy of him, and of many others besides him.</p>
+<p>Then I went to one man after another, being not unconscious of the
+enmity which I provoked, and I lamented and feared this: but necessity
+was laid upon me,—the word of God, I thought, ought to be considered
+first. And I said to myself, Go I must to all who appear to know, and
+find out the meaning of the oracle. And I swear to you, Athenians, by
+the dog I swear!—for I must tell you the truth—the result of my mission
+was just this: I found that the men most in repute were all but the
+most foolish; and that others less esteemed were really wiser and
+better. I will tell you the tale of my wanderings and of the
+“Herculean” labours, as I may call them, which I endured only to find
+at last the oracle irrefutable. After the politicians, I went to the
+poets; tragic, dithyrambic, and all sorts. And there, I said to myself,
+you will be instantly detected; now you will find out that you are more
+ignorant than they are. Accordingly, I took them some of the most
+elaborate passages in their own writings, and asked what was the
+meaning of them—thinking that they would teach me something. Will you
+believe me? I am almost ashamed to confess the truth, but I must say
+that there is hardly a person present who would not have talked better
+about their poetry than they did themselves. Then I knew that not by
+wisdom do poets write poetry, but by a sort of genius and inspiration;
+they are like diviners or soothsayers who also say many fine things,
+but do not understand the meaning of them. The poets appeared to me to
+be much in the same case; and I further observed that upon the strength
+of their poetry they believed themselves to be the wisest of men in
+other things in which they were not wise. So I departed, conceiving
+myself to be superior to them for the same reason that I was superior
+to the politicians.</p>
+<p>At last I went to the artisans. I was conscious that I knew nothing at
+all, as I may say, and I was sure that they knew many fine things; and
+here I was not mistaken, for they did know many things of which I was
+ignorant, and in this they certainly were wiser than I was. But I
+observed that even the good artisans fell into the same error as the
+poets;—because they were good workmen they thought that they also knew
+all sorts of high matters, and this defect in them overshadowed their
+wisdom; and therefore I asked myself on behalf of the oracle, whether I
+would like to be as I was, neither having their knowledge nor their
+ignorance, or like them in both; and I made answer to myself and to the
+oracle that I was better off as I was.</p>
+<p>This inquisition has led to my having many enemies of the worst and
+most dangerous kind, and has given occasion also to many calumnies. And
+I am called wise, for my hearers always imagine that I myself possess
+the wisdom which I find wanting in others: but the truth is, O men of
+Athens, that God only is wise; and by his answer he intends to show
+that the wisdom of men is worth little or nothing; he is not speaking
+of Socrates, he is only using my name by way of illustration, as if he
+said, He, O men, is the wisest, who, like Socrates, knows that his
+wisdom is in truth worth nothing. And so I go about the world, obedient
+to the god, and search and make enquiry into the wisdom of any one,
+whether citizen or stranger, who appears to be wise; and if he is not
+wise, then in vindication of the oracle I show him that he is not wise;
+and my occupation quite absorbs me, and I have no time to give either
+to any public matter of interest or to any concern of my own, but I am
+in utter poverty by reason of my devotion to the god.</p>
+<p>There is another thing:—young men of the richer classes, who have not
+much to do, come about me of their own accord; they like to hear the
+pretenders examined, and they often imitate me, and proceed to examine
+others; there are plenty of persons, as they quickly discover, who
+think that they know something, but really know little or nothing; and
+then those who are examined by them instead of being angry with
+themselves are angry with me: This confounded Socrates, they say; this
+villainous misleader of youth!—and then if somebody asks them, Why,
+what evil does he practise or teach? they do not know, and cannot tell;
+but in order that they may not appear to be at a loss, they repeat the
+ready-made charges which are used against all philosophers about
+teaching things up in the clouds and under the earth, and having no
+gods, and making the worse appear the better cause; for they do not
+like to confess that their pretence of knowledge has been
+detected—which is the truth; and as they are numerous and ambitious and
+energetic, and are drawn up in battle array and have persuasive
+tongues, they have filled your ears with their loud and inveterate
+calumnies. And this is the reason why my three accusers, Meletus and
+Anytus and Lycon, have set upon me; Meletus, who has a quarrel with me
+on behalf of the poets; Anytus, on behalf of the craftsmen and
+politicians; Lycon, on behalf of the rhetoricians: and as I said at the
+beginning, I cannot expect to get rid of such a mass of calumny all in
+a moment. And this, O men of Athens, is the truth and the whole truth;
+I have concealed nothing, I have dissembled nothing. And yet, I know
+that my plainness of speech makes them hate me, and what is their
+hatred but a proof that I am speaking the truth?—Hence has arisen the
+prejudice against me; and this is the reason of it, as you will find
+out either in this or in any future enquiry.</p>
+<p>I have said enough in my defence against the first class of my
+accusers; I turn to the second class. They are headed by Meletus, that
+good man and true lover of his country, as he calls himself. Against
+these, too, I must try to make a defence:—Let their affidavit be read:
+it contains something of this kind: It says that Socrates is a doer of
+evil, who corrupts the youth; and who does not believe in the gods of
+the state, but has other new divinities of his own. Such is the charge;
+and now let us examine the particular counts. He says that I am a doer
+of evil, and corrupt the youth; but I say, O men of Athens, that
+Meletus is a doer of evil, in that he pretends to be in earnest when he
+is only in jest, and is so eager to bring men to trial from a pretended
+zeal and interest about matters in which he really never had the
+smallest interest. And the truth of this I will endeavour to prove to
+you.</p>
+<p>Come hither, Meletus, and let me ask a question of you. You think a
+great deal about the improvement of youth?</p>
+<p>Yes, I do.</p>
+<p>Tell the judges, then, who is their improver; for you must know, as you
+have taken the pains to discover their corrupter, and are citing and
+accusing me before them. Speak, then, and tell the judges who their
+improver is.—Observe, Meletus, that you are silent, and have nothing to
+say. But is not this rather disgraceful, and a very considerable proof
+of what I was saying, that you have no interest in the matter? Speak
+up, friend, and tell us who their improver is.</p>
+<p>The laws.</p>
+<p>But that, my good sir, is not my meaning. I want to know who the person
+is, who, in the first place, knows the laws.</p>
+<p>The judges, Socrates, who are present in court.</p>
+<p>What, do you mean to say, Meletus, that they are able to instruct and
+improve youth?</p>
+<p>Certainly they are.</p>
+<p>What, all of them, or some only and not others?</p>
+<p>All of them.</p>
+<p>By the goddess Here, that is good news! There are plenty of improvers,
+then. And what do you say of the audience,—do they improve them?</p>
+<p>Yes, they do.</p>
+<p>And the senators?</p>
+<p>Yes, the senators improve them.</p>
+<p>But perhaps the members of the assembly corrupt them?—or do they too
+improve them?</p>
+<p>They improve them.</p>
+<p>Then every Athenian improves and elevates them; all with the exception
+of myself; and I alone am their corrupter? Is that what you affirm?</p>
+<p>That is what I stoutly affirm.</p>
+<p>I am very unfortunate if you are right. But suppose I ask you a
+question: How about horses? Does one man do them harm and all the world
+good? Is not the exact opposite the truth? One man is able to do them
+good, or at least not many;—the trainer of horses, that is to say, does
+them good, and others who have to do with them rather injure them? Is
+not that true, Meletus, of horses, or of any other animals? Most
+assuredly it is; whether you and Anytus say yes or no. Happy indeed
+would be the condition of youth if they had one corrupter only, and all
+the rest of the world were their improvers. But you, Meletus, have
+sufficiently shown that you never had a thought about the young: your
+carelessness is seen in your not caring about the very things which you
+bring against me.</p>
+<p>And now, Meletus, I will ask you another question—by Zeus I will: Which
+is better, to live among bad citizens, or among good ones? Answer,
+friend, I say; the question is one which may be easily answered. Do not
+the good do their neighbours good, and the bad do them evil?</p>
+<p>Certainly.</p>
+<p>And is there anyone who would rather be injured than benefited by those
+who live with him? Answer, my good friend, the law requires you to
+answer—does any one like to be injured?</p>
+<p>Certainly not.</p>
+<p>And when you accuse me of corrupting and deteriorating the youth, do
+you allege that I corrupt them intentionally or unintentionally?</p>
+<p>Intentionally, I say.</p>
+<p>But you have just admitted that the good do their neighbours good, and
+the evil do them evil. Now, is that a truth which your superior wisdom
+has recognized thus early in life, and am I, at my age, in such
+darkness and ignorance as not to know that if a man with whom I have to
+live is corrupted by me, I am very likely to be harmed by him; and yet
+I corrupt him, and intentionally, too—so you say, although neither I
+nor any other human being is ever likely to be convinced by you. But
+either I do not corrupt them, or I corrupt them unintentionally; and on
+either view of the case you lie. If my offence is unintentional, the
+law has no cognizance of unintentional offences: you ought to have
+taken me privately, and warned and admonished me; for if I had been
+better advised, I should have left off doing what I only did
+unintentionally—no doubt I should; but you would have nothing to say to
+me and refused to teach me. And now you bring me up in this court,
+which is a place not of instruction, but of punishment.</p>
+<p>It will be very clear to you, Athenians, as I was saying, that Meletus
+has no care at all, great or small, about the matter. But still I
+should like to know, Meletus, in what I am affirmed to corrupt the
+young. I suppose you mean, as I infer from your indictment, that I
+teach them not to acknowledge the gods which the state acknowledges,
+but some other new divinities or spiritual agencies in their stead.
+These are the lessons by which I corrupt the youth, as you say.</p>
+<p>Yes, that I say emphatically.</p>
+<p>Then, by the gods, Meletus, of whom we are speaking, tell me and the
+court, in somewhat plainer terms, what you mean! for I do not as yet
+understand whether you affirm that I teach other men to acknowledge
+some gods, and therefore that I do believe in gods, and am not an
+entire atheist—this you do not lay to my charge,—but only you say that
+they are not the same gods which the city recognizes—the charge is that
+they are different gods. Or, do you mean that I am an atheist simply,
+and a teacher of atheism?</p>
+<p>I mean the latter—that you are a complete atheist.</p>
+<p>What an extraordinary statement! Why do you think so, Meletus? Do you
+mean that I do not believe in the godhead of the sun or moon, like
+other men?</p>
+<p>I assure you, judges, that he does not: for he says that the sun is
+stone, and the moon earth.</p>
+<p>Friend Meletus, you think that you are accusing Anaxagoras: and you
+have but a bad opinion of the judges, if you fancy them illiterate to
+such a degree as not to know that these doctrines are found in the
+books of Anaxagoras the Clazomenian, which are full of them. And so,
+forsooth, the youth are said to be taught them by Socrates, when there
+are not unfrequently exhibitions of them at the theatre (Probably in
+allusion to Aristophanes who caricatured, and to Euripides who borrowed
+the notions of Anaxagoras, as well as to other dramatic poets.) (price
+of admission one drachma at the most); and they might pay their money,
+and laugh at Socrates if he pretends to father these extraordinary
+views. And so, Meletus, you really think that I do not believe in any
+god?</p>
+<p>I swear by Zeus that you believe absolutely in none at all.</p>
+<p>Nobody will believe you, Meletus, and I am pretty sure that you do not
+believe yourself. I cannot help thinking, men of Athens, that Meletus
+is reckless and impudent, and that he has written this indictment in a
+spirit of mere wantonness and youthful bravado. Has he not compounded a
+riddle, thinking to try me? He said to himself:—I shall see whether the
+wise Socrates will discover my facetious contradiction, or whether I
+shall be able to deceive him and the rest of them. For he certainly
+does appear to me to contradict himself in the indictment as much as if
+he said that Socrates is guilty of not believing in the gods, and yet
+of believing in them—but this is not like a person who is in earnest.</p>
+<p>I should like you, O men of Athens, to join me in examining what I
+conceive to be his inconsistency; and do you, Meletus, answer. And I
+must remind the audience of my request that they would not make a
+disturbance if I speak in my accustomed manner:</p>
+<p>Did ever man, Meletus, believe in the existence of human things, and
+not of human beings?&hellip;I wish, men of Athens, that he would answer, and
+not be always trying to get up an interruption. Did ever any man
+believe in horsemanship, and not in horses? or in flute-playing, and
+not in flute-players? No, my friend; I will answer to you and to the
+court, as you refuse to answer for yourself. There is no man who ever
+did. But now please to answer the next question: Can a man believe in
+spiritual and divine agencies, and not in spirits or demigods?</p>
+<p>He cannot.</p>
+<p>How lucky I am to have extracted that answer, by the assistance of the
+court! But then you swear in the indictment that I teach and believe in
+divine or spiritual agencies (new or old, no matter for that); at any
+rate, I believe in spiritual agencies,—so you say and swear in the
+affidavit; and yet if I believe in divine beings, how can I help
+believing in spirits or demigods;—must I not? To be sure I must; and
+therefore I may assume that your silence gives consent. Now what are
+spirits or demigods? Are they not either gods or the sons of gods?</p>
+<p>Certainly they are.</p>
+<p>But this is what I call the facetious riddle invented by you: the
+demigods or spirits are gods, and you say first that I do not believe
+in gods, and then again that I do believe in gods; that is, if I
+believe in demigods. For if the demigods are the illegitimate sons of
+gods, whether by the nymphs or by any other mothers, of whom they are
+said to be the sons—what human being will ever believe that there are
+no gods if they are the sons of gods? You might as well affirm the
+existence of mules, and deny that of horses and asses. Such nonsense,
+Meletus, could only have been intended by you to make trial of me. You
+have put this into the indictment because you had nothing real of which
+to accuse me. But no one who has a particle of understanding will ever
+be convinced by you that the same men can believe in divine and
+superhuman things, and yet not believe that there are gods and demigods
+and heroes.</p>
+<p>I have said enough in answer to the charge of Meletus: any elaborate
+defence is unnecessary, but I know only too well how many are the
+enmities which I have incurred, and this is what will be my destruction
+if I am destroyed;—not Meletus, nor yet Anytus, but the envy and
+detraction of the world, which has been the death of many good men, and
+will probably be the death of many more; there is no danger of my being
+the last of them.</p>
+<p>Some one will say: And are you not ashamed, Socrates, of a course of
+life which is likely to bring you to an untimely end? To him I may
+fairly answer: There you are mistaken: a man who is good for anything
+ought not to calculate the chance of living or dying; he ought only to
+consider whether in doing anything he is doing right or wrong—acting
+the part of a good man or of a bad. Whereas, upon your view, the heroes
+who fell at Troy were not good for much, and the son of Thetis above
+all, who altogether despised danger in comparison with disgrace; and
+when he was so eager to slay Hector, his goddess mother said to him,
+that if he avenged his companion Patroclus, and slew Hector, he would
+die himself—“Fate,” she said, in these or the like words, “waits for
+you next after Hector;” he, receiving this warning, utterly despised
+danger and death, and instead of fearing them, feared rather to live in
+dishonour, and not to avenge his friend. “Let me die forthwith,” he
+replies, “and be avenged of my enemy, rather than abide here by the
+beaked ships, a laughing-stock and a burden of the earth.” Had Achilles
+any thought of death and danger? For wherever a man’s place is, whether
+the place which he has chosen or that in which he has been placed by a
+commander, there he ought to remain in the hour of danger; he should
+not think of death or of anything but of disgrace. And this, O men of
+Athens, is a true saying.</p>
+<p>Strange, indeed, would be my conduct, O men of Athens, if I who, when I
+was ordered by the generals whom you chose to command me at Potidaea
+and Amphipolis and Delium, remained where they placed me, like any
+other man, facing death—if now, when, as I conceive and imagine, God
+orders me to fulfil the philosopher’s mission of searching into myself
+and other men, I were to desert my post through fear of death, or any
+other fear; that would indeed be strange, and I might justly be
+arraigned in court for denying the existence of the gods, if I
+disobeyed the oracle because I was afraid of death, fancying that I was
+wise when I was not wise. For the fear of death is indeed the pretence
+of wisdom, and not real wisdom, being a pretence of knowing the
+unknown; and no one knows whether death, which men in their fear
+apprehend to be the greatest evil, may not be the greatest good. Is not
+this ignorance of a disgraceful sort, the ignorance which is the
+conceit that a man knows what he does not know? And in this respect
+only I believe myself to differ from men in general, and may perhaps
+claim to be wiser than they are:—that whereas I know but little of the
+world below, I do not suppose that I know: but I do know that injustice
+and disobedience to a better, whether God or man, is evil and
+dishonourable, and I will never fear or avoid a possible good rather
+than a certain evil. And therefore if you let me go now, and are not
+convinced by Anytus, who said that since I had been prosecuted I must
+be put to death; (or if not that I ought never to have been prosecuted
+at all); and that if I escape now, your sons will all be utterly ruined
+by listening to my words—if you say to me, Socrates, this time we will
+not mind Anytus, and you shall be let off, but upon one condition, that
+you are not to enquire and speculate in this way any more, and that if
+you are caught doing so again you shall die;—if this was the condition
+on which you let me go, I should reply: Men of Athens, I honour and
+love you; but I shall obey God rather than you, and while I have life
+and strength I shall never cease from the practice and teaching of
+philosophy, exhorting any one whom I meet and saying to him after my
+manner: You, my friend,—a citizen of the great and mighty and wise city
+of Athens,—are you not ashamed of heaping up the greatest amount of
+money and honour and reputation, and caring so little about wisdom and
+truth and the greatest improvement of the soul, which you never regard
+or heed at all? And if the person with whom I am arguing, says: Yes,
+but I do care; then I do not leave him or let him go at once; but I
+proceed to interrogate and examine and cross-examine him, and if I
+think that he has no virtue in him, but only says that he has, I
+reproach him with undervaluing the greater, and overvaluing the less.
+And I shall repeat the same words to every one whom I meet, young and
+old, citizen and alien, but especially to the citizens, inasmuch as
+they are my brethren. For know that this is the command of God; and I
+believe that no greater good has ever happened in the state than my
+service to the God. For I do nothing but go about persuading you all,
+old and young alike, not to take thought for your persons or your
+properties, but first and chiefly to care about the greatest
+improvement of the soul. I tell you that virtue is not given by money,
+but that from virtue comes money and every other good of man, public as
+well as private. This is my teaching, and if this is the doctrine which
+corrupts the youth, I am a mischievous person. But if any one says that
+this is not my teaching, he is speaking an untruth. Wherefore, O men of
+Athens, I say to you, do as Anytus bids or not as Anytus bids, and
+either acquit me or not; but whichever you do, understand that I shall
+never alter my ways, not even if I have to die many times.</p>
+<p>Men of Athens, do not interrupt, but hear me; there was an
+understanding between us that you should hear me to the end: I have
+something more to say, at which you may be inclined to cry out; but I
+believe that to hear me will be good for you, and therefore I beg that
+you will not cry out. I would have you know, that if you kill such an
+one as I am, you will injure yourselves more than you will injure me.
+Nothing will injure me, not Meletus nor yet Anytus—they cannot, for a
+bad man is not permitted to injure a better than himself. I do not deny
+that Anytus may, perhaps, kill him, or drive him into exile, or deprive
+him of civil rights; and he may imagine, and others may imagine, that
+he is inflicting a great injury upon him: but there I do not agree. For
+the evil of doing as he is doing—the evil of unjustly taking away the
+life of another—is greater far.</p>
+<p>And now, Athenians, I am not going to argue for my own sake, as you may
+think, but for yours, that you may not sin against the God by
+condemning me, who am his gift to you. For if you kill me you will not
+easily find a successor to me, who, if I may use such a ludicrous
+figure of speech, am a sort of gadfly, given to the state by God; and
+the state is a great and noble steed who is tardy in his motions owing
+to his very size, and requires to be stirred into life. I am that
+gadfly which God has attached to the state, and all day long and in all
+places am always fastening upon you, arousing and persuading and
+reproaching you. You will not easily find another like me, and
+therefore I would advise you to spare me. I dare say that you may feel
+out of temper (like a person who is suddenly awakened from sleep), and
+you think that you might easily strike me dead as Anytus advises, and
+then you would sleep on for the remainder of your lives, unless God in
+his care of you sent you another gadfly. When I say that I am given to
+you by God, the proof of my mission is this:—if I had been like other
+men, I should not have neglected all my own concerns or patiently seen
+the neglect of them during all these years, and have been doing yours,
+coming to you individually like a father or elder brother, exhorting
+you to regard virtue; such conduct, I say, would be unlike human
+nature. If I had gained anything, or if my exhortations had been paid,
+there would have been some sense in my doing so; but now, as you will
+perceive, not even the impudence of my accusers dares to say that I
+have ever exacted or sought pay of any one; of that they have no
+witness. And I have a sufficient witness to the truth of what I say—my
+poverty.</p>
+<p>Some one may wonder why I go about in private giving advice and busying
+myself with the concerns of others, but do not venture to come forward
+in public and advise the state. I will tell you why. You have heard me
+speak at sundry times and in divers places of an oracle or sign which
+comes to me, and is the divinity which Meletus ridicules in the
+indictment. This sign, which is a kind of voice, first began to come to
+me when I was a child; it always forbids but never commands me to do
+anything which I am going to do. This is what deters me from being a
+politician. And rightly, as I think. For I am certain, O men of Athens,
+that if I had engaged in politics, I should have perished long ago, and
+done no good either to you or to myself. And do not be offended at my
+telling you the truth: for the truth is, that no man who goes to war
+with you or any other multitude, honestly striving against the many
+lawless and unrighteous deeds which are done in a state, will save his
+life; he who will fight for the right, if he would live even for a
+brief space, must have a private station and not a public one.</p>
+<p>I can give you convincing evidence of what I say, not words only, but
+what you value far more—actions. Let me relate to you a passage of my
+own life which will prove to you that I should never have yielded to
+injustice from any fear of death, and that “as I should have refused to
+yield” I must have died at once. I will tell you a tale of the courts,
+not very interesting perhaps, but nevertheless true. The only office of
+state which I ever held, O men of Athens, was that of senator: the
+tribe Antiochis, which is my tribe, had the presidency at the trial of
+the generals who had not taken up the bodies of the slain after the
+battle of Arginusae; and you proposed to try them in a body, contrary
+to law, as you all thought afterwards; but at the time I was the only
+one of the Prytanes who was opposed to the illegality, and I gave my
+vote against you; and when the orators threatened to impeach and arrest
+me, and you called and shouted, I made up my mind that I would run the
+risk, having law and justice with me, rather than take part in your
+injustice because I feared imprisonment and death. This happened in the
+days of the democracy. But when the oligarchy of the Thirty was in
+power, they sent for me and four others into the rotunda, and bade us
+bring Leon the Salaminian from Salamis, as they wanted to put him to
+death. This was a specimen of the sort of commands which they were
+always giving with the view of implicating as many as possible in their
+crimes; and then I showed, not in word only but in deed, that, if I may
+be allowed to use such an expression, I cared not a straw for death,
+and that my great and only care was lest I should do an unrighteous or
+unholy thing. For the strong arm of that oppressive power did not
+frighten me into doing wrong; and when we came out of the rotunda the
+other four went to Salamis and fetched Leon, but I went quietly home.
+For which I might have lost my life, had not the power of the Thirty
+shortly afterwards come to an end. And many will witness to my words.</p>
+<p>Now do you really imagine that I could have survived all these years,
+if I had led a public life, supposing that like a good man I had always
+maintained the right and had made justice, as I ought, the first thing?
+No indeed, men of Athens, neither I nor any other man. But I have been
+always the same in all my actions, public as well as private, and never
+have I yielded any base compliance to those who are slanderously termed
+my disciples, or to any other. Not that I have any regular disciples.
+But if any one likes to come and hear me while I am pursuing my
+mission, whether he be young or old, he is not excluded. Nor do I
+converse only with those who pay; but any one, whether he be rich or
+poor, may ask and answer me and listen to my words; and whether he
+turns out to be a bad man or a good one, neither result can be justly
+imputed to me; for I never taught or professed to teach him anything.
+And if any one says that he has ever learned or heard anything from me
+in private which all the world has not heard, let me tell you that he
+is lying.</p>
+<p>But I shall be asked, Why do people delight in continually conversing
+with you? I have told you already, Athenians, the whole truth about
+this matter: they like to hear the cross-examination of the pretenders
+to wisdom; there is amusement in it. Now this duty of cross-examining
+other men has been imposed upon me by God; and has been signified to me
+by oracles, visions, and in every way in which the will of divine power
+was ever intimated to any one. This is true, O Athenians, or, if not
+true, would be soon refuted. If I am or have been corrupting the youth,
+those of them who are now grown up and have become sensible that I gave
+them bad advice in the days of their youth should come forward as
+accusers, and take their revenge; or if they do not like to come
+themselves, some of their relatives, fathers, brothers, or other
+kinsmen, should say what evil their families have suffered at my hands.
+Now is their time. Many of them I see in the court. There is Crito, who
+is of the same age and of the same deme with myself, and there is
+Critobulus his son, whom I also see. Then again there is Lysanias of
+Sphettus, who is the father of Aeschines—he is present; and also there
+is Antiphon of Cephisus, who is the father of Epigenes; and there are
+the brothers of several who have associated with me. There is
+Nicostratus the son of Theosdotides, and the brother of Theodotus (now
+Theodotus himself is dead, and therefore he, at any rate, will not seek
+to stop him); and there is Paralus the son of Demodocus, who had a
+brother Theages; and Adeimantus the son of Ariston, whose brother Plato
+is present; and Aeantodorus, who is the brother of Apollodorus, whom I
+also see. I might mention a great many others, some of whom Meletus
+should have produced as witnesses in the course of his speech; and let
+him still produce them, if he has forgotten—I will make way for him.
+And let him say, if he has any testimony of the sort which he can
+produce. Nay, Athenians, the very opposite is the truth. For all these
+are ready to witness on behalf of the corrupter, of the injurer of
+their kindred, as Meletus and Anytus call me; not the corrupted youth
+only—there might have been a motive for that—but their uncorrupted
+elder relatives. Why should they too support me with their testimony?
+Why, indeed, except for the sake of truth and justice, and because they
+know that I am speaking the truth, and that Meletus is a liar.</p>
+<p>Well, Athenians, this and the like of this is all the defence which I
+have to offer. Yet a word more. Perhaps there may be some one who is
+offended at me, when he calls to mind how he himself on a similar, or
+even a less serious occasion, prayed and entreated the judges with many
+tears, and how he produced his children in court, which was a moving
+spectacle, together with a host of relations and friends; whereas I,
+who am probably in danger of my life, will do none of these things. The
+contrast may occur to his mind, and he may be set against me, and vote
+in anger because he is displeased at me on this account. Now if there
+be such a person among you,—mind, I do not say that there is,—to him I
+may fairly reply: My friend, I am a man, and like other men, a creature
+of flesh and blood, and not “of wood or stone,” as Homer says; and I
+have a family, yes, and sons, O Athenians, three in number, one almost
+a man, and two others who are still young; and yet I will not bring any
+of them hither in order to petition you for an acquittal. And why not?
+Not from any self-assertion or want of respect for you. Whether I am or
+am not afraid of death is another question, of which I will not now
+speak. But, having regard to public opinion, I feel that such conduct
+would be discreditable to myself, and to you, and to the whole state.
+One who has reached my years, and who has a name for wisdom, ought not
+to demean himself. Whether this opinion of me be deserved or not, at
+any rate the world has decided that Socrates is in some way superior to
+other men. And if those among you who are said to be superior in wisdom
+and courage, and any other virtue, demean themselves in this way, how
+shameful is their conduct! I have seen men of reputation, when they
+have been condemned, behaving in the strangest manner: they seemed to
+fancy that they were going to suffer something dreadful if they died,
+and that they could be immortal if you only allowed them to live; and I
+think that such are a dishonour to the state, and that any stranger
+coming in would have said of them that the most eminent men of Athens,
+to whom the Athenians themselves give honour and command, are no better
+than women. And I say that these things ought not to be done by those
+of us who have a reputation; and if they are done, you ought not to
+permit them; you ought rather to show that you are far more disposed to
+condemn the man who gets up a doleful scene and makes the city
+ridiculous, than him who holds his peace.</p>
+<p>But, setting aside the question of public opinion, there seems to be
+something wrong in asking a favour of a judge, and thus procuring an
+acquittal, instead of informing and convincing him. For his duty is,
+not to make a present of justice, but to give judgment; and he has
+sworn that he will judge according to the laws, and not according to
+his own good pleasure; and we ought not to encourage you, nor should
+you allow yourselves to be encouraged, in this habit of perjury—there
+can be no piety in that. Do not then require me to do what I consider
+dishonourable and impious and wrong, especially now, when I am being
+tried for impiety on the indictment of Meletus. For if, O men of
+Athens, by force of persuasion and entreaty I could overpower your
+oaths, then I should be teaching you to believe that there are no gods,
+and in defending should simply convict myself of the charge of not
+believing in them. But that is not so—far otherwise. For I do believe
+that there are gods, and in a sense higher than that in which any of my
+accusers believe in them. And to you and to God I commit my cause, to
+be determined by you as is best for you and me.</p>
+<p>There are many reasons why I am not grieved, O men of Athens, at the
+vote of condemnation. I expected it, and am only surprised that the
+votes are so nearly equal; for I had thought that the majority against
+me would have been far larger; but now, had thirty votes gone over to
+the other side, I should have been acquitted. And I may say, I think,
+that I have escaped Meletus. I may say more; for without the assistance
+of Anytus and Lycon, any one may see that he would not have had a fifth
+part of the votes, as the law requires, in which case he would have
+incurred a fine of a thousand drachmae.</p>
+<p>And so he proposes death as the penalty. And what shall I propose on my
+part, O men of Athens? Clearly that which is my due. And what is my
+due? What return shall be made to the man who has never had the wit to
+be idle during his whole life; but has been careless of what the many
+care for—wealth, and family interests, and military offices, and
+speaking in the assembly, and magistracies, and plots, and parties.
+Reflecting that I was really too honest a man to be a politician and
+live, I did not go where I could do no good to you or to myself; but
+where I could do the greatest good privately to every one of you,
+thither I went, and sought to persuade every man among you that he must
+look to himself, and seek virtue and wisdom before he looks to his
+private interests, and look to the state before he looks to the
+interests of the state; and that this should be the order which he
+observes in all his actions. What shall be done to such an one?
+Doubtless some good thing, O men of Athens, if he has his reward; and
+the good should be of a kind suitable to him. What would be a reward
+suitable to a poor man who is your benefactor, and who desires leisure
+that he may instruct you? There can be no reward so fitting as
+maintenance in the Prytaneum, O men of Athens, a reward which he
+deserves far more than the citizen who has won the prize at Olympia in
+the horse or chariot race, whether the chariots were drawn by two
+horses or by many. For I am in want, and he has enough; and he only
+gives you the appearance of happiness, and I give you the reality. And
+if I am to estimate the penalty fairly, I should say that maintenance
+in the Prytaneum is the just return.</p>
+<p>Perhaps you think that I am braving you in what I am saying now, as in
+what I said before about the tears and prayers. But this is not so. I
+speak rather because I am convinced that I never intentionally wronged
+any one, although I cannot convince you—the time has been too short; if
+there were a law at Athens, as there is in other cities, that a capital
+cause should not be decided in one day, then I believe that I should
+have convinced you. But I cannot in a moment refute great slanders;
+and, as I am convinced that I never wronged another, I will assuredly
+not wrong myself. I will not say of myself that I deserve any evil, or
+propose any penalty. Why should I? because I am afraid of the penalty
+of death which Meletus proposes? When I do not know whether death is a
+good or an evil, why should I propose a penalty which would certainly
+be an evil? Shall I say imprisonment? And why should I live in prison,
+and be the slave of the magistrates of the year—of the Eleven? Or shall
+the penalty be a fine, and imprisonment until the fine is paid? There
+is the same objection. I should have to lie in prison, for money I have
+none, and cannot pay. And if I say exile (and this may possibly be the
+penalty which you will affix), I must indeed be blinded by the love of
+life, if I am so irrational as to expect that when you, who are my own
+citizens, cannot endure my discourses and words, and have found them so
+grievous and odious that you will have no more of them, others are
+likely to endure me. No indeed, men of Athens, that is not very likely.
+And what a life should I lead, at my age, wandering from city to city,
+ever changing my place of exile, and always being driven out! For I am
+quite sure that wherever I go, there, as here, the young men will flock
+to me; and if I drive them away, their elders will drive me out at
+their request; and if I let them come, their fathers and friends will
+drive me out for their sakes.</p>
+<p>Some one will say: Yes, Socrates, but cannot you hold your tongue, and
+then you may go into a foreign city, and no one will interfere with
+you? Now I have great difficulty in making you understand my answer to
+this. For if I tell you that to do as you say would be a disobedience
+to the God, and therefore that I cannot hold my tongue, you will not
+believe that I am serious; and if I say again that daily to discourse
+about virtue, and of those other things about which you hear me
+examining myself and others, is the greatest good of man, and that the
+unexamined life is not worth living, you are still less likely to
+believe me. Yet I say what is true, although a thing of which it is
+hard for me to persuade you. Also, I have never been accustomed to
+think that I deserve to suffer any harm. Had I money I might have
+estimated the offence at what I was able to pay, and not have been much
+the worse. But I have none, and therefore I must ask you to proportion
+the fine to my means. Well, perhaps I could afford a mina, and
+therefore I propose that penalty: Plato, Crito, Critobulus, and
+Apollodorus, my friends here, bid me say thirty minæ, and they will be
+the sureties. Let thirty minæ be the penalty; for which sum they will
+be ample security to you.</p>
+<p>Not much time will be gained, O Athenians, in return for the evil name
+which you will get from the detractors of the city, who will say that
+you killed Socrates, a wise man; for they will call me wise, even
+although I am not wise, when they want to reproach you. If you had
+waited a little while, your desire would have been fulfilled in the
+course of nature. For I am far advanced in years, as you may perceive,
+and not far from death. I am speaking now not to all of you, but only
+to those who have condemned me to death. And I have another thing to
+say to them: you think that I was convicted because I had no words of
+the sort which would have procured my acquittal—I mean, if I had
+thought fit to leave nothing undone or unsaid. Not so; the deficiency
+which led to my conviction was not of words—certainly not. But I had
+not the boldness or impudence or inclination to address you as you
+would have liked me to do, weeping and wailing and lamenting, and
+saying and doing many things which you have been accustomed to hear
+from others, and which, as I maintain, are unworthy of me. I thought at
+the time that I ought not to do anything common or mean when in danger:
+nor do I now repent of the style of my defence; I would rather die
+having spoken after my manner, than speak in your manner and live. For
+neither in war nor yet at law ought I or any man to use every way of
+escaping death. Often in battle there can be no doubt that if a man
+will throw away his arms, and fall on his knees before his pursuers, he
+may escape death; and in other dangers there are other ways of escaping
+death, if a man is willing to say and do anything. The difficulty, my
+friends, is not to avoid death, but to avoid unrighteousness; for that
+runs faster than death. I am old and move slowly, and the slower runner
+has overtaken me, and my accusers are keen and quick, and the faster
+runner, who is unrighteousness, has overtaken them. And now I depart
+hence condemned by you to suffer the penalty of death,—they too go
+their ways condemned by the truth to suffer the penalty of villainy and
+wrong; and I must abide by my award—let them abide by theirs. I suppose
+that these things may be regarded as fated,—and I think that they are
+well.</p>
+<p>And now, O men who have condemned me, I would fain prophesy to you; for
+I am about to die, and in the hour of death men are gifted with
+prophetic power. And I prophesy to you who are my murderers, that
+immediately after my departure punishment far heavier than you have
+inflicted on me will surely await you. Me you have killed because you
+wanted to escape the accuser, and not to give an account of your lives.
+But that will not be as you suppose: far otherwise. For I say that
+there will be more accusers of you than there are now; accusers whom
+hitherto I have restrained: and as they are younger they will be more
+inconsiderate with you, and you will be more offended at them. If you
+think that by killing men you can prevent some one from censuring your
+evil lives, you are mistaken; that is not a way of escape which is
+either possible or honourable; the easiest and the noblest way is not
+to be disabling others, but to be improving yourselves. This is the
+prophecy which I utter before my departure to the judges who have
+condemned me.</p>
+<p>Friends, who would have acquitted me, I would like also to talk with
+you about the thing which has come to pass, while the magistrates are
+busy, and before I go to the place at which I must die. Stay then a
+little, for we may as well talk with one another while there is time.
+You are my friends, and I should like to show you the meaning of this
+event which has happened to me. O my judges—for you I may truly call
+judges—I should like to tell you of a wonderful circumstance. Hitherto
+the divine faculty of which the internal oracle is the source has
+constantly been in the habit of opposing me even about trifles, if I
+was going to make a slip or error in any matter; and now as you see
+there has come upon me that which may be thought, and is generally
+believed to be, the last and worst evil. But the oracle made no sign of
+opposition, either when I was leaving my house in the morning, or when
+I was on my way to the court, or while I was speaking, at anything
+which I was going to say; and yet I have often been stopped in the
+middle of a speech, but now in nothing I either said or did touching
+the matter in hand has the oracle opposed me. What do I take to be the
+explanation of this silence? I will tell you. It is an intimation that
+what has happened to me is a good, and that those of us who think that
+death is an evil are in error. For the customary sign would surely have
+opposed me had I been going to evil and not to good.</p>
+<p>Let us reflect in another way, and we shall see that there is great
+reason to hope that death is a good; for one of two things—either death
+is a state of nothingness and utter unconsciousness, or, as men say,
+there is a change and migration of the soul from this world to another.
+Now if you suppose that there is no consciousness, but a sleep like the
+sleep of him who is undisturbed even by dreams, death will be an
+unspeakable gain. For if a person were to select the night in which his
+sleep was undisturbed even by dreams, and were to compare with this the
+other days and nights of his life, and then were to tell us how many
+days and nights he had passed in the course of his life better and more
+pleasantly than this one, I think that any man, I will not say a
+private man, but even the great king will not find many such days or
+nights, when compared with the others. Now if death be of such a
+nature, I say that to die is gain; for eternity is then only a single
+night. But if death is the journey to another place, and there, as men
+say, all the dead abide, what good, O my friends and judges, can be
+greater than this? If indeed when the pilgrim arrives in the world
+below, he is delivered from the professors of justice in this world,
+and finds the true judges who are said to give judgment there, Minos
+and Rhadamanthus and Aeacus and Triptolemus, and other sons of God who
+were righteous in their own life, that pilgrimage will be worth making.
+What would not a man give if he might converse with Orpheus and Musaeus
+and Hesiod and Homer? Nay, if this be true, let me die again and again.
+I myself, too, shall have a wonderful interest in there meeting and
+conversing with Palamedes, and Ajax the son of Telamon, and any other
+ancient hero who has suffered death through an unjust judgment; and
+there will be no small pleasure, as I think, in comparing my own
+sufferings with theirs. Above all, I shall then be able to continue my
+search into true and false knowledge; as in this world, so also in the
+next; and I shall find out who is wise, and who pretends to be wise,
+and is not. What would not a man give, O judges, to be able to examine
+the leader of the great Trojan expedition; or Odysseus or Sisyphus, or
+numberless others, men and women too! What infinite delight would there
+be in conversing with them and asking them questions! In another world
+they do not put a man to death for asking questions: assuredly not. For
+besides being happier than we are, they will be immortal, if what is
+said is true.</p>
+<p>Wherefore, O judges, be of good cheer about death, and know of a
+certainty, that no evil can happen to a good man, either in life or
+after death. He and his are not neglected by the gods; nor has my own
+approaching end happened by mere chance. But I see clearly that the
+time had arrived when it was better for me to die and be released from
+trouble; wherefore the oracle gave no sign. For which reason, also, I
+am not angry with my condemners, or with my accusers; they have done me
+no harm, although they did not mean to do me any good; and for this I
+may gently blame them.</p>
+<p>Still I have a favour to ask of them. When my sons are grown up, I
+would ask you, O my friends, to punish them; and I would have you
+trouble them, as I have troubled you, if they seem to care about
+riches, or anything, more than about virtue; or if they pretend to be
+something when they are really nothing,—then reprove them, as I have
+reproved you, for not caring about that for which they ought to care,
+and thinking that they are something when they are really nothing. And
+if you do this, both I and my sons will have received justice at your
+hands.</p>
+<p>The hour of departure has arrived, and we go our ways—I to die, and you
+to live. Which is better God only knows.</p>
+                </div>
+                
+
+                <div class="section" id="orig-2" data-parallel="trad-2">
+                    <p><em>Text de domini públic.</em></p>
+                </div>
+                
+                </section>
+
+                <!-- Columna traducció -->
+                <section class="translation-column">
+                    <div class="column-header">Traducció (català)</div>
+                    <h2 class="section-title">Apologia de Sòcrates</h2>
+
+                <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p>Com us han afectat, atenesos, els meus acusadors, no ho puc saber; però sé que gairebé m&rsquo;han fet oblidar qui era —tan persuasivament han parlat; i tanmateix, a penes han dit ni una sola paraula de veritat. Però de les moltes falsedats que han dit, n&rsquo;hi ha una que m&rsquo;ha deixat del tot sorprès: em refereixo a quan han dit que us heu de posar en guàrdia i no us heu de deixar enganyar per la força de la meva eloquència. Dir això, quan era segur que serien descoberts tan bon punt obrís la boca i demostrés que soc tot l&rsquo;inrevés d&rsquo;un gran orador, em va semblar, en veritat, la més descarada de les coses —tret que per força d&rsquo;eloquència entenguin la força de la veritat; perquè si aquest és el seu sentit, admeto que soc eloquent. Però d&rsquo;una manera ben diferent de la seva! Bé, com deia, a penes han dit la veritat; però de mi escoltareu tota la veritat: no pas, però, exposada a la seva manera, en un discurs preparat i degudament ornat amb paraules i frases. No, pel cel! sinó que faré servir les paraules i els arguments que em vinguin a la ment en aquest moment; perquè confio en la justícia de la meva causa: a la meva edat no hauria d&rsquo;estar compareixent davant vostre, homes d&rsquo;Atenes, en el paper d&rsquo;un orador juvenil —que ningú no ho esperi de mi. I he de demanar-vos un favor: si em defenso a la meva manera acostumada, i em sentiu emprar les paraules que tinc per costum d&rsquo;emprar a l&rsquo;àgora, a les taules dels canvistes, o a qualsevol altre lloc, us demano que no us sorprengueu, i que no m&rsquo;interrompeu per això. Perquè tinc més de setanta anys, i compareixent ara per primera vegada en un tribunal de justícia, soc del tot un foraster al llenguatge d&rsquo;aquest lloc; i per tant voldria que em consideréssiu com si fos realment un foraster, a qui excusaríeu si parlés en la seva llengua nadiua, i a la manera del seu país: us faig una petició injusta? No us fixeu en la manera, que pot ser bona o dolenta; penseu només en la veritat de les meves paraules, i pareu-hi atenció: que l&rsquo;orador parli amb veritat i que el jutge decideixi amb justícia.</p>
+<p>I primer de tot, he de respondre a les acusacions més antigues i als meus primers acusadors, i després passaré a les més recents. Perquè ja fa temps que tinc molts acusadors, que m&rsquo;han acusat falsament davant de vosaltres durant molts anys; i em causen major inquietud que no pas Ànytos i els seus companys, que també són perillosos a la seva manera. Però molt més perillosos són els altres, que van començar quan éreu nens, i es van apoderar de les vostres ments amb les seves falsedats, parlant d&rsquo;un tal Sòcrates, home savi, que filosofava sobre el cel de dalt i explorava la terra de sota, i feia que la causa pitjor semblés la millor. Els difusors d&rsquo;aquesta història són els acusadors que més temo; perquè els seus oïdors tendeixen a imaginar que aquests investigadors no creuen en l&rsquo;existència dels déus. I són molts, i les seves acusacions contra mi són molt antigues, i les van fer en els temps en què éreu més impressionables del que sou ara —en la infància, o potser en la joventut— i la causa, quan va ser escoltada, va quedar sense oposició, perquè no hi havia ningú per respondre. I el més difícil de tot és que no conec ni puc dir els noms dels meus acusadors; llevat del cas fortuït d&rsquo;algun poeta còmic. Tots els que per enveja i malícia us han persuadit —alguns d&rsquo;ells havent-se convençut primer a si mateixos— tota aquesta classe d&rsquo;homes són els més difícils de tractar; perquè no els puc fer comparèixer aquí i interrogar públicament, i per tant he de lluitar simplement contra ombres en la meva defensa, i argumentar quan no hi ha ningú que respongui. Us demano doncs que assumiu amb mi, com deia, que els meus oponents són de dues classes: una recent, l&rsquo;altra antiga; i espero que veureu la conveniència que respongui primer als antics, perquè aquestes acusacions les vau sentir molt abans que les altres, i molt més sovint.</p>
+<p>Doncs bé, he de fer la meva defensa i esforçar-me per dissipar en poc temps una calúmnia que ha perdurat molt de temps. Que reeixi, si reeixir és bo per a mi i per a vosaltres, o si em pot ser d&rsquo;utilitat en la meva causa! La tasca no és gens fàcil; comprenc perfectament la seva naturalesa. I així, deixant el resultat en mans de Déu, en obediència a la llei faré ara la meva defensa.</p>
+<p>Començaré pel principi i preguntaré quina és l&rsquo;acusació que ha donat lloc a la calúmnia contra mi i que, de fet, ha encoratjat Melet a presentar aquesta denúncia. Doncs bé, què diuen els calumniadors? Seran els meus acusadors, i resumiré les seves paraules en una declaració jurada: «Sòcrates és un malfactor i una persona curiosa que investiga les coses sota terra i al cel, i fa que la causa pitjor sembli la millor; i ensenya aquestes mateixes doctrines a altres.» Aquesta és la naturalesa de l&rsquo;acusació: és exactament el que vosaltres mateixos heu vist a la comèdia d&rsquo;Aristòfanes, qui ha introduït un home al qual anomena Sòcrates, que va per aquí dient que camina per l&rsquo;aire i parlant un munt de bajanades sobre assumptes dels quals no pretenc saber ni molt ni poc —no és que vulgui parlar despectivament de ningú que sigui estudiós de la filosofia natural. M&rsquo;apenaria molt si Melet pogués portar una acusació tan greu contra mi. Però la simple veritat és, oh atenesos, que no tinc res a veure amb les especulacions físiques. Molts dels aquí presents són testimonis de la veritat d&rsquo;això, i a ells apel·lo. Parleu, doncs, vosaltres que m&rsquo;heu escoltat, i digueu als vostres veïns si mai cap de vosaltres m&rsquo;ha conegut dissertant, amb poques paraules o amb moltes, sobre aquests assumptes&hellip; Sentiu la seva resposta. I per allò que diuen d&rsquo;aquesta part de l&rsquo;acusació podreu jutjar la veritat de la resta.</p>
+<p>Igualment poc fonament té el rumor que sóc un mestre i que cobro diners; aquesta acusació no té més veritat que les altres. Tot i que, si un home fos realment capaç d&rsquo;instruir la humanitat, rebre diners per donar ensenyament seria, al meu parer, un honor per a ell. Hi ha Gòrgias de Leontins, i Pròdic de Ceos, i Hípies d&rsquo;Èlida, que van de ciutat en ciutat i persuadeixen els joves a abandonar els seus propis ciutadans, que els podrien ensenyar gratuïtament, i vinguin a ells, als quals no només paguen, sinó que estan agraïts si se&rsquo;ls permet pagar-los. En aquest moment hi ha un filòsof de Paros que resideix a Atenes, del qual he sentit a parlar; i vaig saber d&rsquo;ell d&rsquo;aquesta manera: em vaig trobar amb un home que ha gastat un món de diners en sofistes, Cal·lies, fill d&rsquo;Hipònic. Sabent que tenia fills, li vaig preguntar: «Cal·lies», li vaig dir, «si els teus dos fills fossin polins o vedells, no hi hauria cap dificultat a trobar algú per confiar-los-hi. Llogaríem un domador de cavalls, o probablement un pagès, que els milloraria i els perfeccionaria en la seva pròpia virtut i excel·lència. Però com que són éssers humans, en qui penses confiar-los? Hi ha algú que entengui la virtut humana i política? Has d&rsquo;haver pensat en l&rsquo;assumpte, perquè tens fills. Hi ha algú?» «N&rsquo;hi ha», va dir. «Qui és?», vaig dir jo; «i de quin país? i quin preu demana?» «Èven el de Paros», va respondre; «ell és l&rsquo;home, i cobra cinc mines.» Feliç és Èven, vaig pensar, si realment té aquesta saviesa i ensenya a un preu tan moderat. Si jo tingués el mateix, hauria estat molt orgullós i presumptuós; però la veritat és que no tinc cap coneixement d&rsquo;aquesta mena.</p>
+<p>M&rsquo;atreveixo a dir, atenesos, que algun de vosaltres em replicarà: &ldquo;Sí, Sòcrates, però quin és l&rsquo;origen d&rsquo;aquestes acusacions que es fan contra tu? Ha d&rsquo;haver-hi alguna cosa estranya que has estat fent. Tots aquests rumors i aquesta xerrameca sobre tu mai no haurien sorgit si haguessis estat com els altres homes. Explica&rsquo;ns, doncs, quina n&rsquo;és la causa, perquè lamentaríem jutjar-te precipitadament.&rdquo; Ara bé, considero que això és un repte just, i m&rsquo;esforçaré a explicar-vos per què em diuen savi i tinc aquesta mala fama. Us prego que m&rsquo;escolteu atentament. I encara que alguns de vosaltres penseu que estic bromejant, declaro que us diré tota la veritat. Homes d&rsquo;Atenes, aquesta reputació meva prové d&rsquo;un cert tipus de saviesa que posseeixo. Si em pregunteu quin tipus de saviesa, us respondo: una saviesa que potser pot ser assolida per l&rsquo;home, perquè fins a aquest punt em veig inclinat a creure que sóc savi; mentre que les persones de qui parlava tenen una saviesa sobrehumana que potser no sabré descriure, perquè no la tinc jo mateix; i qui diu que la tinc, menteix i em difama. I aquí, oh homes d&rsquo;Atenes, us he de pregar que no m&rsquo;interrompeu, encara que sembli que dic alguna cosa extravagant. Perquè la paraula que pronunciaré no és meva. Us remetré a un testimoni digne de crèdit; aquest testimoni serà el Déu de Delfos: ell us parlarà de la meva saviesa, si en tinc, i de quin tipus és. Heu de conèixer Querefont; va ser amic meu des de jove, i també amic vostre, perquè va compartir el recent exili del poble i va tornar amb vosaltres. Doncs bé, Querefont, com sabeu, era molt impulsiu en tot el que feia, i va anar a Delfos i va demanar audaçment a l&rsquo;oracle que li digués si —com deia, us he de pregar que no m&rsquo;interrompeu— va demanar a l&rsquo;oracle que li digués si hi havia algú més savi que jo, i la profetessa pítia va respondre que no hi havia cap home més savi. El mateix Querefont ja és mort; però el seu germà, que és al tribunal, confirmarà la veritat del que estic dient.</p>
+<p>Per què menciono això? Perquè us explicaré per què tinc un nom tan infame. Quan vaig sentir la resposta, em vaig dir a mi mateix: Què vol dir el déu? I quina és la interpretació del seu enigma? Perquè sé que no tinc saviesa, ni petita ni gran. Doncs què vol dir quan afirma que soc el més savi dels homes? I tanmateix és un déu, i no pot mentir; això aniria contra la seva naturalesa. Després de llarga reflexió, vaig pensar en un mètode per esclarir el dubte. Vaig reflexionar que si pogués trobar un home més savi que jo, aleshores podria anar al déu amb una refutació a la mà. Li diria: «Aquí tens un home que és més savi que jo; però tu vas dir que jo era el més savi.» En conseqüència, vaig anar a veure un que tenia reputació de savi, i el vaig observar —no cal que en digui el nom; era un polític que vaig triar per examinar—, i el resultat va ser el següent: Quan vaig començar a parlar amb ell, no vaig poder evitar pensar que en realitat no era savi, malgrat que molts el consideraven savi, i ell mateix encara més savi; i aleshores vaig intentar explicar-li que es creia savi, però que en realitat no ho era. La conseqüència va ser que em va odiar, i la seva enemistat va ser compartida per diversos dels qui eren presents i em van sentir. Així que el vaig deixar, dient-me a mi mateix, mentre me n&rsquo;anava: Bé, encara que no suposo que cap de nosaltres dos sàpiga res veritablement bell i bo, resulto més afortunat que ell, perquè ell no sap res i creu que sap; jo ni sé ni crec que sé. Pel que fa a això, doncs, em sembla que tinc un lleuger avantatge sobre ell. Després vaig anar a veure un altre que tenia pretensions encara més grans de saviesa, i la meva conclusió va ser exactament la mateixa. Amb això em vaig fer enemic seu, i de molts altres a més d&rsquo;ell.</p>
+<p>Llavors vaig anar d&rsquo;un home a l&rsquo;altre, no sense adonar-me de l&rsquo;enemistat que provocava, i ho lamentava i ho temia: però la necessitat m&rsquo;ho imposava —la paraula de Déu, pensava, havia de considerar-se primer. I em vaig dir a mi mateix: he d&rsquo;anar a tots els que semblen saber, i descobrir el significat de l&rsquo;oracle. I us juro, atenesos, pel gos us juro! —perquè he de dir-vos la veritat— el resultat de la meva missió va ser exactament aquest: vaig descobrir que els homes de més renom eren gairebé els més ximples; i que d&rsquo;altres menys estimats eren realment més savis i millors. Us explicaré la història de les meves peregrinacions i dels treballs «herculis», com els puc anomenar, que vaig suportar només per descobrir al final que l&rsquo;oracle era irrefutable. Després dels polítics, vaig anar als poetes; tràgics, ditiràmbics i de totes menes. I allí em vaig dir: ara et descobriran a l&rsquo;instant; ara t&rsquo;adonaràs que ets més ignorant que ells. Per això, vaig agafar alguns dels passatges més elaborats dels seus propis escrits, i vaig preguntar què volien dir —pensant que m&rsquo;ensenyarien alguna cosa. M&rsquo;ho creureu? Gairebé em fa vergonya confessar la veritat, però he de dir que gairebé no hi ha persona present que no hagués parlat millor de la seva poesia que ells mateixos. Llavors vaig saber que els poetes no escriuen poesia per saviesa, sinó per una mena de geni i inspiració; són com els endevins o els profetes, que també diuen moltes coses nobles, però no comprenen el significat. Els poetes em van semblar que es trobaven en el mateix cas; i vaig observar a més que, basant-se en la seva poesia, es creien els més savis dels homes en altres coses en què no eren savis. Així doncs, me&rsquo;n vaig anar, considerant-me superior a ells per la mateixa raó que em considerava superior als polítics.</p>
+<p>Finalment vaig anar a trobar els artesans. Era conscient que no sabia res de res, per dir-ho així, i estava segur que ells coneixien moltes coses valuoses; i aquí no em vaig equivocar, perquè efectivament sabien moltes coses de les quals jo era ignorant, i en això certament eren més savis que jo. Però vaig observar que fins i tot els bons artesans queien en el mateix error que els poetes: com que eren bons treballadors, creien que també coneixien tota mena de qüestions elevades, i aquest defecte en ells eclipsava la seva saviesa; i per això em vaig preguntar, en nom de l&rsquo;oracle, si voldria ser com era, sense tenir ni el seu coneixement ni la seva ignorància, o com ells en ambdues coses; i em vaig respondre a mi mateix i a l&rsquo;oracle que estava millor tal com era.</p>
+<p>Aquesta indagació m&rsquo;ha comportat tenir molts enemics de la mena més dolenta i perillosa, i ha donat lloc també a moltes calúmnies. I se&rsquo;m diu savi, perquè els qui m&rsquo;escolten sempre s&rsquo;imaginen que jo mateix posseeixo la saviesa que trobo a faltar en els altres; però la veritat és, oh atenesos, que només Déu és savi; i amb la seva resposta vol mostrar que la saviesa dels homes val poc o res; no parla de Sòcrates, només usa el meu nom com a il·lustració, com si digués: Aquell, oh homes, és el més savi, qui, com Sòcrates, sap que la seva saviesa en veritat no val res. I així vaig pel món, obedient al déu, i cerco i faig indagació sobre la saviesa de qualsevol persona, sigui ciutadà o foraster, que sembli sàvia; i si no és sàvia, aleshores, en vindicació de l&rsquo;oracle, li mostro que no és sàvia; i aquesta ocupació m&rsquo;absorbeix completament, i no tinc temps per dedicar-me ni a cap afer públic d&rsquo;interès ni a cap preocupació pròpia, sinó que visc en la pobresa més absoluta a causa de la meva devoció al déu.</p>
+<p>Hi ha una altra cosa: els joves de les classes més benestants, que no tenen gaire feina, s&rsquo;acosten a mi per pròpia voluntat; els agrada escoltar com interrogo aquests pretesos savis, i sovint m&rsquo;imiten i es posen també a examinar els altres. Descobreixen de seguida que hi ha molta gent que creu saber alguna cosa, però en realitat en sap ben poca o gens; i aleshores, aquells que ells examinen, en lloc d&rsquo;emprenyar-se amb si mateixos, s&rsquo;emprenyuen amb mi: «Aquest maleït Sòcrates —diuen—, aquest perversor malvat de la joventut!» I si algú els pregunta: «Però, quins mals ensenya o practica?», no ho saben dir, no poden respondre; però per no semblar que es queden sense paraules, repeteixen les acusacions de sempre que es fan servir contra tots els filòsofs: que ensenyem coses dels núvols i de sota terra, que no tenim déus i que fem que la causa pitjor sembli la millor. Perquè no volen confessar que els han descobert en la seva pretensió de saviesa —que això és la veritat—; i com que són nombrosos, ambiciosos i enèrgics, i van disposats en ordre de batalla amb llengües persuasives, us han omplert les orelles amb les seves calúmnies sorolloses i inveteerades. I per això els meus tres acusadors, Meletos, Ànitos i Licó, m&rsquo;han atacat: Meletos, que té pica amb mi per defensar els poetes; Ànitos, per defensar els artesans i els polítics; Licó, per defensar els rètors. I com vaig dir al principi, no puc esperar desfer-me d&rsquo;un moment a l&rsquo;altre d&rsquo;una munió tan gran de calúmnies. I això, atenesos, és la veritat, tota la veritat; no he amagat res, no he disfressat res. I tanmateix, sé que la meva manera franca de parlar els fa odiar-me, i què és el seu odi sinó una prova que dic la veritat? D&rsquo;aquí ha nascut el prejudici contra mi; i aquesta n&rsquo;és la causa, com ho descobrireu en aquesta investigació o en qualsevol altra de futura.</p>
+<p>He dit prou en la meva defensa contra la primera classe dels meus acusadors; ara em dirigeixo a la segona classe. Són encapçalats per Meletos, aquest excel·lent home i vertader amant de la seva pàtria, com ell mateix es qualifica. Contra aquests també he d&rsquo;intentar fer una defensa: —Que es llegeixi la seva declaració jurada: conté alguna cosa d&rsquo;aquesta mena: Diu que Sòcrates és un malfeitor que corromp la joventut; i que no creu en els déus de l&rsquo;Estat, sinó que té altres noves divinitats seves pròpies. Tal és l&rsquo;acusació; i ara examinem els càrrecs particulars. Diu que soc un malfeitor i que corrompo la joventut; però jo dic, oh homes d&rsquo;Atenes, que Meletos és un malfeitor, ja que fingeix ser seriós quan només es burla, i és tan desitjós de portar homes a judici per un zel i interès fingits sobre qüestions en les quals realment mai ha tingut el més mínim interès. Intentaré demostrar-vos aquesta veritat.</p>
+<p>Apropa&rsquo;t, Meletos, i deixa&rsquo;m fer-te una pregunta. Penses molt en la millora de la joventut?</p>
+<p>Sí, ho faig.</p>
+<p>Diu als jutges, doncs, qui és el seu millorador; perquè has de saber-ho, ja que t&rsquo;has pres la feina de descobrir el seu corruptor, i m&rsquo;estàs citant i acusant davant d&rsquo;ells. Parla més fort, doncs, i diu als jutges qui és el seu millorador. —Observa, Meletos, que guardes silenci i no tens res a dir. Però no és això més aviat vergonyós, i una prova molt gran del que estava dient, que no tens cap interès en l&rsquo;assumpte? Parla més fort, amic, i diu-nos qui és el seu millorador.</p>
+<p>Les lleis.</p>
+<p>Però això, bon home, no és el que vull dir. Vull saber qui és la persona que, en primer lloc, coneix les lleis.</p>
+<p>Els jutges, Sòcrates, que són presents al tribunal.</p>
+<p>Com? Vols dir, Meletos, que ells són capaços d&rsquo;instruir i millorar la joventut?</p>
+<p>Certament que sí.</p>
+<p>Com? Tots ells, o només alguns i no pas altres?</p>
+<p>Tots ells.</p>
+<p>Per la deessa Hera, quina bona nova! Hi ha milloradors de sobres, doncs. I què dius de l&rsquo;audiència? També els milloren?</p>
+<p>Sí, els milloren.</p>
+<p>I els senadors?</p>
+<p>Sí, els senadors els milloren.</p>
+<p>Però potser els membres de l&rsquo;assemblea els corrompen? O també els milloren?</p>
+<p>Els milloren.</p>
+<p>Aleshores tots els atenesos els milloren i els eleven; tots excepte jo; i jo sol sóc el seu corruptor? És això el que afirmes?</p>
+<p>És el que afirmo rotundament.</p>
+<p>Seria una desgràcia per a mi si tens raó. Però suposem que et faig una pregunta: I els cavalls? Un sol home els fa mal i tot el món els fa bé? No és exactament el contrari la veritat? Un sol home és capaç de fer-los bé, o almenys no gaires; —l&rsquo;ensinistrador de cavalls, és a dir, els fa bé, i els altres que hi tenen a veure més aviat els fan mal? No és això cert, Melet, dels cavalls, o de qualsevol altres animals? Absolutament cert; tant si tu i Ànytos ho afirmeu com si ho negueu. La condició dels joves seria feliç si tinguessin un sol corruptor, i la resta del món fossin els seus educadors! Però tu, Melet, has demostrat prou que mai has tingut ni un pensament sobre els joves: la teva negligència es veu en el fet que no et preocupes de les mateixes coses de què m&rsquo;acuses.</p>
+<p>I ara, Melet, et faré una altra pregunta —per Zeus!: Què és millor, viure entre ciutadans dolents, o entre de bons? Respon, estimat amic, dic; la pregunta és de les que es poden respondre fàcilment. No és cert que els bons fan bé als seus veïns, i els dolents els fan mal?</p>
+<p>Certament.</p>
+<p>I hi ha algú que prefereixi ser perjudicat que no beneficiat per aquells amb qui viu? Respon, estimat amic, la llei t&rsquo;obliga a respondre: hi ha algú que li agradi ser perjudicat?</p>
+<p>Certament no.</p>
+<p>I quan m&rsquo;acuses de corrompre i degradar els joves, sostens que els corrompo intencionadament o no intencionadament?</p>
+<p>Intencionadament, dic.</p>
+<p>Però acabeu d&rsquo;admetre que els bons fan bé als seus veïns, i els dolents els fan mal. Ara bé, és aquesta una veritat que aquesta vostra saviesa superior ha reconegut tan aviat en la vida, i que jo, a la meva edat, sigui tan ignorant que no sé que si un home amb qui he de conviure és corromput per mi, és molt probable que en rebi dany; i tanmateix el corrompo, i intencionadament, a més —segons dieu—, encara que ni jo ni cap altre ésser humà mai serà convençut per la vostra argumentació? Però o bé no els corrompo, o bé els corrompo involuntàriament; i des de qualsevol dels dos punts de vista, mentiu. Si la meva falta és involuntària, la llei no té jurisdicció sobre les faltes involuntàries: hauríeu d&rsquo;haver-me pres en privat, i advertit i admonit; perquè si m&rsquo;haguessin aconsellat millor, hauria deixat de fer el que només feia involuntàriament —sens dubte que sí; però no tindríeu res a dir-me i us negaríeu a ensenyar-me. I ara em porteu davant aquest tribunal, que és un lloc no d&rsquo;instrucció, sinó de càstig.</p>
+<p>Us serà molt clar, atenesos, tal com deia, que Meletos no té cap mena de preocupació, gran o petita, per aquest assumpte. Però encara així m&rsquo;agradaria saber, Meletos, en què s&rsquo;afirma que corrompo els joves. Suposo que voleu dir, tal com dedueixo de la vostra acusació, que els ensenyo a no reconèixer els déus que reconeix l&rsquo;estat, sinó unes altres divinitats noves o esperits en el seu lloc. Aquestes són les lliçons amb què corrompo la joventut, segons dieu.</p>
+<p>Sí, això ho dic categòricament.</p>
+<p>Doncs, pels déus, Meletos, de qui estem parlant, digues-me a mi i al tribunal, en termes una mica més clars, què vols dir! Perquè encara no entenc si afirmes que jo ensenyo altres homes a reconèixer alguns déus, i que per tant sí que crec en els déus i no sóc pas un ateu absolut —això no m&rsquo;ho retreus—, sinó que només dius que no són els mateixos déus que reconeix la ciutat —l&rsquo;acusació és que són déus diferents. O vols dir que simplement sóc un ateu, i mestre d&rsquo;ateisme?</p>
+<p>Vull dir això últim: que ets un ateu complet.</p>
+<p>Quina afirmació tan extraordinària! Per què ho creus, Meletos? Vols dir que no crec en la divinitat del sol o de la lluna, com els altres homes?</p>
+<p>Us asseguro, jutges, que no hi creu: perquè diu que el sol és pedra, i la lluna terra.</p>
+                </div>
+                
+                </section>
+            </div>
+
+            <!-- Navegació entre capítols -->
+            <nav class="chapter-nav" id="chapter-nav" aria-label="Navegació entre capítols">
+                <button class="chapter-nav-btn" id="prev-chapter" disabled>
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-text">Capítol anterior</span>
+                </button>
+                <span class="chapter-indicator" id="chapter-indicator">Capítol 1 de 1</span>
+                <button class="chapter-nav-btn" id="next-chapter" disabled>
+                    <span class="nav-text">Capítol següent</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+        </div>
+
+        <!-- Notes (amagat per defecte) -->
+        
+
+        <!-- Glossari (amagat per defecte) -->
+        
+
+        <!-- Bibliografia -->
+        
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</article>
+
+<!-- Script per índex i navegació de capítols (paginació) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocPanel = document.getElementById('chapter-toc');
+    const tocClose = document.getElementById('toc-close');
+    const tocList = document.getElementById('toc-list');
+    const prevBtn = document.getElementById('prev-chapter');
+    const nextBtn = document.getElementById('next-chapter');
+    const indicator = document.getElementById('chapter-indicator');
+
+    if (!tocToggle || !tocPanel || !tocList) return;
+
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
+
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
+
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
+
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
+        const text = h2.textContent.trim();
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
+    });
+
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
+        const nav = document.getElementById('chapter-nav');
+        if (nav) nav.style.display = 'none';
+        tocToggle.style.display = 'none';
+        return;
+    }
+
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = '<span class="toc-chapter-num">' + (i + 1) + '.</span> Capítol ' + ch.title;
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            showChapter(i);
+            closeToc();
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    let currentChapter = 0;
+
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
+
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
+            c.style.display = 'none';
+        });
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
+            c.style.display = 'block';
+        });
+        currentChapter = index;
+        updateNavigation();
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateNavigation() {
+        prevBtn.disabled = currentChapter === 0;
+        nextBtn.disabled = currentChapter === chapters.length - 1;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
+            a.classList.toggle('active', i === currentChapter);
+        });
+    }
+
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
+
+    tocToggle.addEventListener('click', function() {
+        tocPanel.classList.contains('open') ? closeToc() : openToc();
+    });
+    tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
+
+    document.addEventListener('click', function(e) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+            closeToc();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
+    });
+
+    updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment
+                    targetElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        targetElement.style.backgroundColor = '';
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem
+                if (savedTermElement) {
+                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    setTimeout(function() {
+                        savedTermElement.style.backgroundColor = '';
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
+});
+
+// Inicialitzar estat del botó de favorits
+document.addEventListener('DOMContentLoaded', async function() {
+    const favBtn = document.querySelector('.btn-favorit-below');
+    if (!favBtn || !window.ArionFavorits) return;
+
+    // Esperar que l'auth estigui llest
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const obraId = favBtn.dataset.obraId;
+    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
+
+    if (isFavorit) {
+        favBtn.classList.add('active');
+        favBtn.querySelector('.favorit-icon').textContent = '❤️';
+    }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
