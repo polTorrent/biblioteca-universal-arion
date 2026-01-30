@@ -35,6 +35,21 @@ from utils.detector_calcs import (
     TipusCalc,
 )
 
+# Corrector lingüístic (LanguageTool)
+try:
+    from utils.corrector_linguistic import (
+        CorrectorLinguistic,
+        corregir_text,
+        obtenir_puntuacio_normativa,
+        es_languagetool_disponible,
+        ResultatCorreccio,
+        ErrorLinguistic,
+        CategoriaError,
+        LANGUAGETOOL_DISPONIBLE,
+    )
+except ImportError:
+    LANGUAGETOOL_DISPONIBLE = False
+
 __all__ = [
     # Logger
     "AgentLogger",
@@ -65,4 +80,13 @@ __all__ = [
     "ResultatDeteccio",
     "CalcDetectat",
     "TipusCalc",
+    # Corrector lingüístic
+    "CorrectorLinguistic",
+    "corregir_text",
+    "obtenir_puntuacio_normativa",
+    "es_languagetool_disponible",
+    "ResultatCorreccio",
+    "ErrorLinguistic",
+    "CategoriaError",
+    "LANGUAGETOOL_DISPONIBLE",
 ]

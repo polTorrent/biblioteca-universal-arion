@@ -13,6 +13,12 @@ from pydantic import BaseModel
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
 from utils.detector_calcs import detectar_calcs, ResultatDeteccio
+
+# LanguageTool per correcció normativa
+try:
+    from utils.corrector_linguistic import corregir_text as lt_corregir, LANGUAGETOOL_DISPONIBLE
+except ImportError:
+    LANGUAGETOOL_DISPONIBLE = False
 from agents.v2.models import (
     AvaluacioFidelitat,
     AvaluacioVeuAutor,
@@ -465,6 +471,25 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
         ]
 
         # ═══════════════════════════════════════════════════════════════════
+        # FASE 1.5: CORRECCIÓ LINGÜÍSTICA (LanguageTool)
+        # ═══════════════════════════════════════════════════════════════════
+        errors_lt = []
+        puntuacio_lt = 10.0
+
+        if LANGUAGETOOL_DISPONIBLE:
+            try:
+                resultat_lt = lt_corregir(context.text_traduit)
+                puntuacio_lt = resultat_lt.puntuacio_normativa
+                errors_lt = [
+                    f"{e.categoria.value}: \"{e.text_original}\" → {', '.join(e.suggeriments[:2])}"
+                    for e in resultat_lt.errors[:10]
+                ]
+                if errors_lt:
+                    self.log_info(f"LanguageTool: {len(errors_lt)} errors, puntuació {puntuacio_lt}/10")
+            except Exception as e:
+                self.log_warning(f"LanguageTool error: {e}")
+
+        # ═══════════════════════════════════════════════════════════════════
         # FASE 2: AVALUACIÓ AMB LLM
         # ═══════════════════════════════════════════════════════════════════
         prompt_parts = [
@@ -522,8 +547,8 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                 puntuacio_llm = data.get("puntuacio", 5)
                 puntuacio_detector = resultat_detector.puntuacio_fluidesa
 
-                # Ponderar: 70% LLM, 30% detector automàtic
-                puntuacio_final = (puntuacio_llm * 0.7) + (puntuacio_detector * 0.3)
+                # Ponderar: 55% LLM, 25% detector calcs, 20% LanguageTool
+                puntuacio_final = (puntuacio_llm * 0.55) + (puntuacio_detector * 0.25) + (puntuacio_lt * 0.20)
 
                 # Generar feedback ampliat
                 feedback_llm = data.get("feedback_refinament", "")
@@ -533,6 +558,13 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                     for calc in resultat_detector.calcs[:5]:
                         feedback_detector += f"• {calc.text_original}: {calc.suggeriment}\n"
 
+                # Afegir errors de LanguageTool
+                feedback_lt = ""
+                if errors_lt:
+                    feedback_lt = "\n\n[ERRORS NORMATIUS (LanguageTool)]\n"
+                    for error in errors_lt[:5]:
+                        feedback_lt += f"• {error}\n"
+
                 return AvaluacioFluidesa(
                     puntuacio=round(puntuacio_final, 1),
                     sintaxi=parse_subavaluacio("sintaxi"),
@@ -541,7 +573,7 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                     llegibilitat=parse_subavaluacio("llegibilitat"),
                     errors_normatius=errors,
                     calcs_detectats=calcs_combinats,
-                    feedback_refinament=feedback_llm + feedback_detector,
+                    feedback_refinament=feedback_llm + feedback_detector + feedback_lt,
                 )
             except (KeyError, TypeError) as e:
                 self.log_warning(f"Error construint avaluació: {e}")
