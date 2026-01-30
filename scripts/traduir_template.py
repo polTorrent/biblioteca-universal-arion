@@ -29,9 +29,69 @@ os.environ["CLAUDECODE"] = "1"
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pathlib import Path
+from datetime import datetime
+import yaml
+
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
 from agents.v2.models import LlindarsAvaluacio
-from scripts.post_traduccio import post_processar_traduccio
+from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
+
+
+def crear_metadata_yml(obra_dir: Path, titol: str, autor: str, llengua: str, genere: str) -> None:
+    """Crea o actualitza metadata.yml amb el format correcte (clau 'obra:' a l'arrel)."""
+    metadata_path = obra_dir / "metadata.yml"
+
+    # Si existeix, verificar format
+    if metadata_path.exists():
+        with open(metadata_path, 'r', encoding='utf-8') as f:
+            existing = yaml.safe_load(f) or {}
+
+        # Si ja té la clau 'obra:', no cal fer res
+        if 'obra' in existing:
+            return
+
+        # Si té dades però sense 'obra:', migrar al nou format
+        if 'titol' in existing:
+            new_metadata = {
+                'obra': {
+                    'titol': existing.get('titol', titol),
+                    'titol_original': existing.get('titol_original'),
+                    'autor': existing.get('autor', autor),
+                    'autor_original': existing.get('autor_original'),
+                    'traductor': existing.get('traductor', 'Biblioteca Arion (IA + comunitat)'),
+                    'any_original': existing.get('any_original'),
+                    'any_traduccio': datetime.now().year,
+                    'llengua_original': existing.get('llengua_origen') or existing.get('llengua_original') or llengua,
+                    'genere': existing.get('genere', genere),
+                    'descripcio': existing.get('descripcio', ''),
+                }
+            }
+            # Preservar altres camps
+            if 'revisio' in existing:
+                new_metadata['revisio'] = existing['revisio']
+            if 'estadistiques' in existing:
+                new_metadata['obra']['estadistiques'] = existing['estadistiques']
+
+            with open(metadata_path, 'w', encoding='utf-8') as f:
+                yaml.dump(new_metadata, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
+            return
+
+    # Crear nou metadata
+    metadata = {
+        'obra': {
+            'titol': titol,
+            'autor': autor,
+            'traductor': 'Biblioteca Arion (IA + comunitat)',
+            'any_traduccio': datetime.now().year,
+            'llengua_original': llengua,
+            'genere': genere,
+            'descripcio': '',
+        }
+    }
+
+    obra_dir.mkdir(parents=True, exist_ok=True)
+    with open(metadata_path, 'w', encoding='utf-8') as f:
+        yaml.dump(metadata, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # CONFIGURACIÓ - MODIFICA AQUESTES VARIABLES
@@ -75,6 +135,9 @@ def main():
     original_path = obra_dir / "original.md"
     traduccio_path = obra_dir / "traduccio.md"
 
+    # Crear/verificar metadata.yml amb format correcte
+    crear_metadata_yml(obra_dir, TITOL, AUTOR, LLENGUA_ORIGEN, GENERE)
+
     # Verificar que existeix l'original
     if not original_path.exists():
         print(f"❌ Error: No existeix {original_path}")
@@ -91,6 +154,9 @@ def main():
 
     with open(original_path, "r", encoding="utf-8") as f:
         text_original = f.read()
+
+    # Netejar metadades de fonts digitals (Aozora Bunko, Project Gutenberg, etc.)
+    text_original = netejar_metadades_font(text_original)
 
     # Netejar capçalera si existeix (buscar primer capítol)
     text_narratiu = text_original
