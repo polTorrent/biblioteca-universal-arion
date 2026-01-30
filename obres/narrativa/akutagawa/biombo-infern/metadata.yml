@@ -1,73 +1,28 @@
 obra:
   titol: "El Biombo de l'Infern"
-  titol_original: "地獄変 (Jigokuhen)"
-  autor: "Akutagawa Ryūnosuke"
+  titol_original: "地獄変"
+  autor: "Akutagawa Ryunosuke"
   autor_original: "芥川龍之介"
-  traductor: "Biblioteca Arion"
+  traductor: "Biblioteca Arion (IA + comunitat)"
   any_original: 1918
   any_traduccio: 2026
   llengua_original: "japonès"
   descripcio: |
-    Obra mestra de la literatura japonesa moderna. Un senyor feudal encarrega
-    al pintor Yoshihide un biombo representant l'infern budista. El pintor,
-    obsessionat amb el realisme, només pot pintar allò que ha vist amb els
-    propis ulls. Quan demana veure cremar una dona dins d'un carruatge, el
-    senyor accedeix... amb la filla del pintor dins. Una meditació sobre l'art,
-    el sacrifici i els límits de la creació artística.
-
-seccions: 20
-
-estadistiques:
-  paraules_original: 8200
-  paraules_traduccio: 12500
-  notes: 6
-  termes_glossari: 24
-
+    Obra mestra d'Akutagawa sobre l'artista Yoshihide, encarregat de pintar
+    un biombo amb escenes de l'infern budista. Una reflexió sobre l'art,
+    l'obsessió creativa i el sacrifici.
+  genere: "narrativa"
+  subgenere: "conte"
+  font_original: "https://www.aozora.gr.jp/cards/000879/files/60_15129.html"
+  domini_public: true
+  temes:
+    - art i obsessió
+    - sacrifici
+    - bellesa i horror
+    - Japó medieval
+  estadistiques:
+    paraules_traduccio: 11956
 revisio:
   estat: "revisat"
-  qualitat: 7.8
-  data_revisio: "2026-01-29"
-  notes_revisio: "Traducció directa del japonès amb pipeline V2. Alguns chunks refinats."
-
-metadata_original:
-  edicio_base:
-    titol: "Aozora Bunko (青空文庫)"
-    url: https://www.aozora.gr.jp/cards/000879/card60.html
-    format: "text digital (domini públic)"
-  traduccio_pont:
-    usada: false
-    llengua: ~
-    justificacio: "Traducció directa del japonès original"
-  traduccions_existents_catala:
-    existeixen: false
-    detalls: |
-      No existeix cap traducció catalana publicada de "Jigokuhen".
-      L'obra ha estat traduïda a l'anglès, castellà, francès i altres llengües.
-    justificacio_nova_traduccio: |
-      Primera traducció catalana d'una de les obres mestres d'Akutagawa.
-      Text fonamental per entendre la literatura japonesa moderna.
-  dificultat: 4
-  temps_estimat: "3-4 hores"
-  tags:
-    - Japó
-    - període Heian
-    - art
-    - obsessió
-    - sacrifici
-    - budisme
-    - horror
-    - tragèdia
-    - relació pare-filla
-
-temes:
-  - art i sacrifici
-  - obsessió creativa
-  - poder i crueltat
-  - amor paternal
-  - límits de la representació
-  - karma i destí
-
-contribuidors:
-  - rol: traducció IA inicial
-    nom: Claude (Anthropic)
-    data: 2026-01-29
+  data_revisio: "2026-01-30"
+  qualitat: 7.78

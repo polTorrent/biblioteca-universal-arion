@@ -1,159 +1,86 @@
-# Glossari de termes - El Biombo de l'Infern (地獄変)
-# Akutagawa Ryūnosuke, 1918
+termes:
+  - id: "daiitoku-myoo"
+    japones: "大威徳明王"
+    romanitzacio: "Daiitoku Myōō"
+    traduccio: "Daiitoku Myōō"
+    definicio: |
+      Un dels cinc Reis de la Saviesa (Myōō) del budisme esotèric japonès.
+      És la manifestació irada del buda Amida i es representa muntat sobre
+      un bou amb sis caps, sis braços i sis cames. Simbolitza la victòria
+      sobre la mort i els obstacles.
 
-glossari:
-  - id: horikawa
-    japones: 堀川
-    romanitzacio: Horikawa
-    traduccio: Horikawa
-    definicio: Nom d'un districte de Kyoto. El "Gran Senyor de Horikawa" (堀川の大殿様) és el noble que encarrega el biombo.
+  - id: "kariginu"
+    japones: "狩衣"
+    romanitzacio: "kariginu"
+    traduccio: "kariginu"
+    definicio: |
+      Vestimenta informal de la noblesa japonesa del període Heian.
+      Originalment usada per a la caça, va esdevenir roba de diari
+      per als nobles. Consisteix en una túnica àmplia amb mànigues
+      amples i obertes.
 
-  - id: yoshihide
-    japones: 良秀
-    romanitzacio: Yoshihide
-    traduccio: Yoshihide
-    definicio: El pintor protagonista. El seu nom significa literalment "bona excel·lència".
+  - id: "momi-eboshi"
+    japones: "揉烏帽子"
+    romanitzacio: "momi-eboshi"
+    traduccio: "momi-eboshi"
+    definicio: |
+      Tipus de barret negre laccat portat pels homes de classe alta
+      durant el període Heian. El "momi" indica que el material era
+      arrugat o tractat de manera especial. Era part essencial de
+      la vestimenta formal masculina.
 
-  - id: jigokuhen
-    japones: 地獄変
-    romanitzacio: Jigokuhen
-    traduccio: Biombo de l'Infern / Transformació de l'Infern
-    definicio: "Títol de l'obra. 地獄 (jigoku) significa 'infern' i 変 (hen) pot significar 'transformació' o 'escena'."
+  - id: "sozu"
+    japones: "僧都"
+    romanitzacio: "sōzu"
+    traduccio: "sōzu"
+    definicio: |
+      Alt rang monàstic budista al Japó, equivalent aproximadament
+      a bisbe o abat superior. El sōzu de Yokawa era un dignatari
+      important del complex monàstic del Mont Hiei.
 
-  - id: byobu
-    japones: 屏風
-    romanitzacio: byōbu
-    traduccio: biombo
-    definicio: Mampara plegable japonesa, sovint decorada amb pintures. Usada com a divisor d'espais i com a suport artístic.
+  - id: "uchigi"
+    japones: "袿"
+    romanitzacio: "uchigi"
+    traduccio: "uchigi"
+    definicio: |
+      Túnica de seda portada per les dones nobles del període Heian,
+      normalment com a capa interior del vestit formal jūnihitoe
+      (vestit de dotze capes). Podia ser perfumada amb incens.
 
-  - id: daiitoku
-    japones: 大威徳明王
-    romanitzacio: Daiitoku Myōō
-    traduccio: Rei de la Saviesa Daiitoku
-    definicio: Deïtat budista protectora, una de les Cinc Reis de la Saviesa. Apareix en somnis de la mare del Gran Senyor.
+  - id: "akome"
+    japones: "袙"
+    romanitzacio: "akome"
+    traduccio: "akome"
+    definicio: |
+      Peça de vestir interior portada per les dones nobles sota
+      l'uchigi durant el període Heian. Era part del complex sistema
+      de capes que constituïa la moda femenina aristocràtica.
 
-  - id: hyakki
-    japones: 百鬼夜行
-    romanitzacio: Hyakki Yagyō
-    traduccio: Processó nocturna dels cent dimonis
-    definicio: Llegenda japonesa on esperits i monstres (yōkai) desfilen per les nits. Veure-la sol comportar mort o bogeria.
+  - id: "zoshi"
+    japones: "曹司"
+    romanitzacio: "zōshi"
+    traduccio: "zōshi"
+    definicio: |
+      Habitació o cambra privada dins d'una residència aristocràtica
+      japonesa. També pot referir-se a les dependències on vivien
+      les dames de companyia o els servents de rang inferior.
 
-  - id: toru
-    japones: 融
-    romanitzacio: Tōru
-    traduccio: Tōru
-    definicio: Minamoto no Tōru (822-895), ministre de l'esquerra famós per la seva riquesa i el seu jardí al Palau de Kawara.
+  - id: "yaritodo"
+    japones: "遣戸"
+    romanitzacio: "yaritodo"
+    traduccio: "yaritodo"
+    definicio: |
+      Porta corredissa de fusta utilitzada en l'arquitectura
+      tradicional japonesa del període Heian. Es desplaçava
+      horitzontalment sobre rails per obrir o tancar espais.
 
-  - id: kariginu
-    japones: 狩衣
-    romanitzacio: kariginu
-    traduccio: casaca de caça
-    definicio: Vestit informal portat per nobles i samurais durant el període Heian.
-
-  - id: eboshi
-    japones: 烏帽子
-    romanitzacio: eboshi
-    traduccio: barret negre
-    definicio: Barret de tela negra portat per homes adults durant el període Heian.
-
-  - id: saruhide
-    japones: 猿秀
-    romanitzacio: Saruhide
-    traduccio: Mico-hide
-    definicio: Sobrenom burleta donat a Yoshihide, combinant "saru" (mico) amb part del seu nom.
-
-  - id: kisshoten
-    japones: 吉祥天
-    romanitzacio: Kisshōten
-    traduccio: Kisshōten
-    definicio: Deïtat budista de la bellesa, fertilitat i prosperitat. Equivalent a Lakshmi hindú.
-
-  - id: fudo
-    japones: 不動明王
-    romanitzacio: Fudō Myōō
-    traduccio: Fudō Myōō
-    definicio: El més important dels Cinc Reis de la Saviesa, representa la determinació inamovible.
-
-  - id: chiraju
-    japones: 智羅永寿
-    romanitzacio: Chirajū
-    traduccio: Chirajū
-    definicio: Nom d'un tengu (dimoni alat) llegendari que va venir de la Xina. Sobrenom secret que els deixebles donaven a Yoshihide per la seva arrogància.
-
-  - id: tengu
-    japones: 天狗
-    romanitzacio: tengu
-    traduccio: tengu
-    definicio: Criatura sobrenatural del folklore japonès, sovint representada amb nas llarg i ales.
-
-  - id: goshiki
-    japones: 五趣生死
-    romanitzacio: Goshu Shōji
-    traduccio: Cinc Mons d'Existència
-    definicio: "Els cinc regnes del renaixement budista: déus, humans, animals, fantasmes famolencs i éssers infernals."
-
-  - id: gozu-mezu
-    japones: 牛頭馬頭
-    romanitzacio: Gozu Mezu
-    traduccio: Cap de bou i cap de cavall
-    definicio: Guardians de l'infern budista, dimonis amb caps d'animals que turmenten els pecadors.
-
-  - id: juou
-    japones: 十王
-    romanitzacio: Jūō
-    traduccio: Deu Reis
-    definicio: Els deu jutges de l'infern en la cosmologia budista, que decideixen el destí dels morts.
-
-  - id: guren
-    japones: 紅蓮
-    romanitzacio: guren
-    traduccio: lotus roig
-    definicio: Un dels vuit inferns freds del budisme, on el fred fa que la pell es torni vermella com un lotus.
-
-  - id: daiguren
-    japones: 大紅蓮
-    romanitzacio: daiguren
-    traduccio: gran lotus roig
-    definicio: Infern encara més fred que el guren, on el cos es trenca com els pètals d'un lotus.
-
-  - id: binroge
-    japones: 檳榔毛
-    romanitzacio: binrōge
-    traduccio: carruatge de palmera
-    definicio: Carruatge de bous luxós cobert amb fibres de palmera arecà, usat per nobles.
-
-  - id: mimizuku
-    japones: 耳木兎
-    romanitzacio: mimizuku
-    traduccio: mussol reial
-    definicio: Espècie de mussol amb plomes que semblen orelles. Yoshihide en tenia un per retratar-lo.
-
-  - id: yukige
-    japones: 雪解
-    romanitzacio: Yukige
-    traduccio: Desglaç
-    definicio: "'Palau del Desglaç', vila de muntanya als afores de Kyoto on el Gran Senyor crema el carruatge."
-
-  - id: kinu
-    japones: 袿
-    romanitzacio: kinu/uchigi
-    traduccio: túnica
-    definicio: Túnica interior del vestit formal de les dones de la cort durant el període Heian.
-
-  - id: hakama
-    japones: 袴
-    romanitzacio: hakama
-    traduccio: faldons
-    definicio: Pantalons amples tradicionals japonesos, portats sobre el quimono.
-
-  - id: ken
-    japones: 間
-    romanitzacio: ken
-    traduccio: ken
-    definicio: Unitat tradicional de longitud japonesa, aproximadament 1,82 metres.
-
-  - id: heian
-    japones: 平安
-    romanitzacio: Heian
-    traduccio: Heian
-    definicio: Període de la història japonesa (794-1185) en què transcorre la història, caracteritzat per la cultura aristocràtica de Kyoto.
+  - id: "biombo"
+    japones: "屏風"
+    romanitzacio: "byōbu"
+    traduccio: "biombo"
+    definicio: |
+      Panell plegable decoratiu usat al Japó per dividir espais
+      interiors. Els biombos podien tenir entre dos i vuit plafons
+      i sovint estaven decorats amb pintures elaborades.
+      El biombo de l'infern del títol representa escenes de
+      l'infern budista.

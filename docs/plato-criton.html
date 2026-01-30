@@ -327,88 +327,6 @@
         background: #252525;
         border-color: #444;
     }
-
-    /* Botons collapsibles per seccions */
-    .section-toggle-container {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        padding: 1.5rem 0;
-        margin-top: 1rem;
-        border-top: 1px solid var(--border-color, #e0e0e0);
-    }
-    .section-toggle {
-        display: inline-flex;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.75rem 1.5rem;
-        background: var(--bg-secondary, #f5f5f5);
-        border: 1px solid var(--border-color, #ddd);
-        border-radius: 6px;
-        color: var(--text-primary, #333);
-        font-size: 0.95rem;
-        cursor: pointer;
-        transition: all 0.2s ease;
-    }
-    .section-toggle:hover {
-        background: var(--accent, #D4AF37);
-        color: white;
-        border-color: var(--accent, #D4AF37);
-    }
-    .section-toggle.active {
-        background: var(--accent, #D4AF37);
-        color: white;
-        border-color: var(--accent, #D4AF37);
-    }
-    .section-toggle .toggle-icon {
-        transition: transform 0.2s ease;
-    }
-    .section-toggle.active .toggle-icon {
-        transform: rotate(180deg);
-    }
-    [data-theme="dark"] .section-toggle {
-        background: #252525;
-        border-color: #444;
-        color: #e0e0e0;
-    }
-    [data-theme="dark"] .section-toggle:hover,
-    [data-theme="dark"] .section-toggle.active {
-        background: #D4AF37;
-        color: #1e1e1e;
-    }
-
-    /* Seccions collapsibles */
-    .collapsible-section {
-        display: none;
-        animation: fadeIn 0.3s ease;
-    }
-    .collapsible-section.open {
-        display: block;
-    }
-    @keyframes fadeIn {
-        from { opacity: 0; transform: translateY(-10px); }
-        to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Enllaç tornar al text (notes i glossari) */
-    .back-to-text {
-        display: inline-block;
-        margin-top: 0.75rem;
-        font-size: 0.85rem;
-        color: var(--accent, #D4AF37);
-        text-decoration: none;
-        transition: color 0.2s;
-    }
-    .back-to-text:hover {
-        color: var(--accent-dark, #b8962e);
-        text-decoration: underline;
-    }
-    [data-theme="dark"] .back-to-text {
-        color: #e8c860;
-    }
-    [data-theme="dark"] .back-to-text:hover {
-        color: #f0d878;
-    }
 </style>
 
 <!-- Schema.org -->
@@ -603,6 +521,9 @@
         <!-- Controls de vista -->
         <div class="text-container" data-mode="bilingue">
             <div class="view-controls">
+                <!-- Navegació capítols esquerra -->
+                <button class="chapter-nav-top-btn" id="prev-chapter-top" title="Capítol anterior" disabled>←</button>
+
                 <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
                     <span class="toc-icon">☰</span> Índex
                 </button>
@@ -610,6 +531,9 @@
                 <button class="view-btn" data-mode="original">Original</button>
                 <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
                 <button class="view-btn" data-mode="traduccio">Traducció</button>
+
+                <!-- Navegació capítols dreta -->
+                <button class="chapter-nav-top-btn" id="next-chapter-top" title="Capítol següent" disabled>→</button>
             </div>
 
             <!-- Índex de capítols (amagat per defecte) -->
@@ -901,7 +825,7 @@
                 </div>
                 <p>Cada any Atenes enviava un vaixell sagrat a Delos per commemorar el viatge de Teseu a Creta. Durant aquest període (theoria), cap execució podia tenir lloc a la ciutat. El judici de Sòcrates va coincidir amb la sortida del vaixell, i per això va haver d&rsquo;esperar el seu retorn per ser executat.</p>
                 
-                <p class="note-refs">Plató, *Fedó* 58a-c</p>
+                <p class="note-refs">Plató, <em>Fedó</em> 58a-c</p>
                 
                 <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
@@ -951,7 +875,7 @@
                 </div>
                 <p>Principi ètic fonamental del socratisme, revolucionari en el seu context. Contrastava amb l&rsquo;ètica grega tradicional (ajudar els amics, perjudicar els enemics) i amb la llei del talió. Anticipava en certs aspectes l&rsquo;ètica cristiana del perdó.</p>
                 
-                <p class="note-refs">*República* 335d-e, on Sòcrates argumenta que mai no és just perjudicar ningú</p>
+                <p class="note-refs"><em>República</em> 335d-e, on Sòcrates argumenta que mai no és just perjudicar ningú</p>
                 
                 <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
@@ -1004,7 +928,7 @@
                 </div>
                 <p>L&rsquo;acord entre ciutadà i lleis no és explícit sinó tàcit: residir a la ciutat, participar en les seves institucions, tenir-hi fills, tot això implica acceptació de les lleis. Sòcrates, que mai no va sortir d&rsquo;Atenes excepte per campanyes militars, és l&rsquo;exemple perfecte d&rsquo;aquest consentiment.</p>
                 
-                <p class="note-refs">Locke, *Segon tractat sobre el govern civil*, que reprèn aquesta teoria</p>
+                <p class="note-refs">Locke, <em>Segon tractat sobre el govern civil</em>, que reprèn aquesta teoria</p>
                 
                 <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
             </div>
@@ -1158,6 +1082,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const tocList = document.getElementById('toc-list');
     const prevBtn = document.getElementById('prev-chapter');
     const nextBtn = document.getElementById('next-chapter');
+    const prevBtnTop = document.getElementById('prev-chapter-top');
+    const nextBtnTop = document.getElementById('next-chapter-top');
     const indicator = document.getElementById('chapter-indicator');
 
     if (!tocToggle || !tocPanel || !tocList) return;
@@ -1268,8 +1194,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function updateNavigation() {
-        prevBtn.disabled = currentChapter === 0;
-        nextBtn.disabled = currentChapter === chapters.length - 1;
+        const atStart = currentChapter === 0;
+        const atEnd = currentChapter === chapters.length - 1;
+        prevBtn.disabled = atStart;
+        nextBtn.disabled = atEnd;
+        if (prevBtnTop) prevBtnTop.disabled = atStart;
+        if (nextBtnTop) nextBtnTop.disabled = atEnd;
         indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
         tocList.querySelectorAll('a').forEach(function(a, i) {
             a.classList.toggle('active', i === currentChapter);
@@ -1285,6 +1215,8 @@ document.addEventListener('DOMContentLoaded', function() {
     tocClose.addEventListener('click', closeToc);
     prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
     nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
+    if (prevBtnTop) prevBtnTop.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    if (nextBtnTop) nextBtnTop.addEventListener('click', function() { showChapter(currentChapter + 1); });
 
     document.addEventListener('click', function(e) {
         if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
@@ -1311,6 +1243,54 @@ document.addEventListener('DOMContentLoaded', function() {
             const isOpen = workDetails.style.display !== 'none';
             workDetails.style.display = isOpen ? 'none' : 'block';
             detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Botons d'accés ràpid a seccions
+document.addEventListener('DOMContentLoaded', function() {
+    // Botó Capítols - obre l'índex de capítols
+    const quickChapters = document.getElementById('quick-chapters');
+    if (quickChapters) {
+        quickChapters.addEventListener('click', function() {
+            const tocBtn = document.getElementById('toc-toggle');
+            if (tocBtn) tocBtn.click();
+        });
+    }
+
+    // Botó Glossari - scroll a la secció i obre-la
+    const quickGlossari = document.getElementById('quick-glossari');
+    if (quickGlossari) {
+        quickGlossari.addEventListener('click', function() {
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            if (glossariSection) {
+                if (!glossariSection.classList.contains('open')) {
+                    glossariSection.classList.add('open');
+                    if (glossariToggle) glossariToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    glossariSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+
+    // Botó Notes - scroll a la secció i obre-la
+    const quickNotes = document.getElementById('quick-notes');
+    if (quickNotes) {
+        quickNotes.addEventListener('click', function() {
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            if (notesSection) {
+                if (!notesSection.classList.contains('open')) {
+                    notesSection.classList.add('open');
+                    if (notesToggle) notesToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    notesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
         });
     }
 });
@@ -1366,10 +1346,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetElement) {
                 setTimeout(function() {
                     targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    // Ressaltar la nota temporalment
-                    targetElement.style.backgroundColor = '#fff8e1';
+                    // Ressaltar la nota temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
                     setTimeout(function() {
-                        targetElement.style.backgroundColor = '';
+                        targetElement.classList.remove('highlight-temp');
                     }, 2000);
                 }, 150);
             }
@@ -1399,10 +1379,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (targetElement) {
                 setTimeout(function() {
                     targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    // Ressaltar el terme temporalment
-                    targetElement.style.backgroundColor = '#fff8e1';
+                    // Ressaltar el terme temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
                     setTimeout(function() {
-                        targetElement.style.backgroundColor = '';
+                        targetElement.classList.remove('highlight-temp');
                     }, 2000);
                 }, 150);
             }
@@ -1427,11 +1407,11 @@ document.addEventListener('DOMContentLoaded', function() {
             // Tornar a la posició guardada
             setTimeout(function() {
                 window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
-                // Ressaltar breument el terme on estàvem
+                // Ressaltar breument el terme on estàvem (usant classe CSS)
                 if (savedTermElement) {
-                    savedTermElement.style.backgroundColor = '#fff8e1';
+                    savedTermElement.classList.add('highlight-temp');
                     setTimeout(function() {
-                        savedTermElement.style.backgroundColor = '';
+                        savedTermElement.classList.remove('highlight-temp');
                     }, 1500);
                 }
             }, 100);

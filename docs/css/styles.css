@@ -28,6 +28,8 @@
 
     --color-border: #d4c5b5;
     --color-border-light: #e5ddd2;
+    --color-highlight: #fff8e1;
+    --color-highlight-strong: #fff3cd;
 
     /* Tipografia */
     --font-titles: 'Cormorant Garamond', Georgia, serif;
@@ -97,6 +99,8 @@
 
     --color-border: #3d3d3d;
     --color-border-light: #333333;
+    --color-highlight: #3d3525;
+    --color-highlight-strong: #4a4030;
 }
 
 
@@ -593,6 +597,70 @@ small {
     color: white;
 }
 
+/* Botons navegació capítols a la barra superior */
+.chapter-nav-top-btn {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-lg);
+    font-weight: 600;
+    width: 36px;
+    height: 36px;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chapter-nav-top-btn:hover:not(:disabled) {
+    background-color: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.chapter-nav-top-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Barra d'accés ràpid a seccions */
+.quick-nav-bar {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-lg);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.quick-nav-btn {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    padding: 0.4rem 0.8rem;
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-sm);
+    background: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.quick-nav-btn:hover {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.quick-nav-icon {
+    font-size: 0.9em;
+}
+
 
 /* ─────────────────────────────────────────────────────────────────────
    10. MODE BILINGÜE - GRID
@@ -933,6 +1001,84 @@ small {
 
 .term-usage a {
     font-weight: 500;
+}
+
+
+/* ─────────────────────────────────────────────────────────────────────
+   14b. SECCIONS COL·LAPSABLES (NOTES I GLOSSARI)
+   ───────────────────────────────────────────────────────────────────── */
+
+/* Contenidor de botons toggle */
+.section-toggle-container {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    padding: var(--spacing-lg) 0;
+    margin-top: var(--spacing-md);
+    border-top: 1px solid var(--color-border-light);
+}
+
+/* Botons de toggle */
+.section-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    color: var(--color-text-primary);
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.section-toggle:hover {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+}
+
+.section-toggle.active {
+    background: var(--color-accent);
+    color: white;
+    border-color: var(--color-accent);
+}
+
+.section-toggle .toggle-icon {
+    transition: transform 0.2s ease;
+}
+
+.section-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+/* Seccions col·lapsables */
+.collapsible-section {
+    display: none;
+    animation: fadeInSection 0.3s ease;
+}
+
+.collapsible-section.open {
+    display: block;
+}
+
+@keyframes fadeInSection {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Ressaltat temporal per notes/termes */
+.highlight-temp {
+    background-color: var(--color-highlight) !important;
+    transition: background-color 0.3s ease;
 }
 
 

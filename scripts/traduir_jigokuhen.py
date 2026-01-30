@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Script per traduir 'El Biombo de l'Infern' (地獄変) d'Akutagawa Ryūnosuke."""
+"""Traducció de 地獄変 (El Biombo de l'Infern) d'Akutagawa Ryunosuke.
+
+Del japonès original (Aozora Bunko) al català.
+"""
 
 import os
 import sys
@@ -16,77 +19,110 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from pathlib import Path
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
 from agents.v2.models import LlindarsAvaluacio
+from scripts.post_traduccio import post_processar_traduccio
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# CONFIGURACIÓ
+# ═══════════════════════════════════════════════════════════════════════════════
+
+OBRA_PATH = "narrativa/akutagawa/biombo-infern"
+TITOL = "El Biombo de l'Infern"
+AUTOR = "Akutagawa Ryunosuke"
+LLENGUA_ORIGEN = "japonès"
+GENERE = "narrativa"
+
+CONFIG = {
+    "fer_analisi_previa": True,
+    "crear_glossari": True,
+    "fer_chunking": True,
+    "max_chars_chunk": 2000,  # Chunks més petits per text japonès
+    "fer_avaluacio": True,
+    "fer_refinament": True,
+    "llindar_qualitat": 7.5,
+    "max_iteracions_refinament": 2,
+    "mostrar_dashboard": True,
+    "dashboard_port": 5050,
+}
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# EXECUCIÓ
+# ═══════════════════════════════════════════════════════════════════════════════
+
 
 def main():
-    """Executa la traducció de Jigokuhen."""
+    """Executa la traducció."""
 
-    # Rutes
     base_dir = Path(__file__).parent.parent
-    obra_dir = base_dir / "obres" / "narrativa" / "akutagawa" / "biombo-infern"
+    obra_dir = base_dir / "obres" / OBRA_PATH
     original_path = obra_dir / "original.md"
     traduccio_path = obra_dir / "traduccio.md"
 
-    # Llegir text original
+    if not original_path.exists():
+        print(f"❌ Error: No existeix {original_path}")
+        sys.exit(1)
+
     print("═" * 60)
-    print("  TRADUCCIÓ: El Biombo de l'Infern (地獄変)")
-    print("  Autor: Akutagawa Ryūnosuke")
+    print(f"  TRADUCCIÓ: {TITOL}")
+    print(f"  Autor: {AUTOR}")
+    print(f"  Llengua: {LLENGUA_ORIGEN} → català")
     print("═" * 60)
     print()
 
     with open(original_path, "r", encoding="utf-8") as f:
         text_original = f.read()
 
-    # Extreure només el text narratiu (sense capçalera markdown)
-    # Buscar des del primer capítol
-    if "一\n" in text_original:
-        idx = text_original.index("一\n")
-        text_narratiu = text_original[idx:]
-        # Treure el peu
-        if "*Text de domini públic" in text_narratiu:
-            text_narratiu = text_narratiu.split("*Text de domini públic")[0].strip()
+    # Netejar capçalera
+    import re
+    match = re.search(r'^##\s+一', text_original, re.MULTILINE)
+    if match:
+        text_narratiu = text_original[match.start():]
     else:
         text_narratiu = text_original
+
+    # Treure peu de pàgina
+    for footer in ['*Text de domini públic', '---\n\n*']:
+        if footer in text_narratiu:
+            text_narratiu = text_narratiu.split(footer)[0].strip()
 
     print(f"Text original: {len(text_narratiu)} caràcters")
     print()
 
     # Configurar pipeline
     config = ConfiguracioPipelineV2(
-        fer_analisi_previa=True,
-        crear_glossari=True,
-        fer_chunking=True,
-        max_chars_chunk=2500,  # Chunks més petits per millor qualitat
-        fer_avaluacio=True,
-        fer_refinament=True,
+        fer_analisi_previa=CONFIG["fer_analisi_previa"],
+        crear_glossari=CONFIG["crear_glossari"],
+        fer_chunking=CONFIG["fer_chunking"],
+        max_chars_chunk=CONFIG["max_chars_chunk"],
+        fer_avaluacio=CONFIG["fer_avaluacio"],
+        fer_refinament=CONFIG["fer_refinament"],
         llindars=LlindarsAvaluacio(
-            global_minim=7.5,
-            veu_autor_minim=7.0,
-            max_iteracions=2,
+            global_minim=CONFIG["llindar_qualitat"],
+            max_iteracions=CONFIG["max_iteracions_refinament"],
         ),
-        mostrar_dashboard=True,
-        dashboard_port=5050,
+        mostrar_dashboard=CONFIG["mostrar_dashboard"],
+        dashboard_port=CONFIG["dashboard_port"],
     )
 
-    # Crear i executar pipeline
     pipeline = PipelineV2(config=config)
 
     print("Iniciant traducció amb Pipeline V2...")
-    print("(El dashboard s'obrirà al navegador)")
+    if CONFIG["mostrar_dashboard"]:
+        print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
     resultat = pipeline.traduir(
         text=text_narratiu,
-        llengua_origen="japonès",
-        autor="Akutagawa Ryūnosuke",
-        obra="El Biombo de l'Infern",
-        genere="narrativa",
+        llengua_origen=LLENGUA_ORIGEN,
+        autor=AUTOR,
+        obra=TITOL,
+        genere=GENERE,
     )
 
     # Guardar traducció
-    traduccio_final = f"""# El Biombo de l'Infern
-*Akutagawa Ryūnosuke (1918)*
+    traduccio_final = f"""# {TITOL}
+*{AUTOR}*
 
-Traduït del japonès per Biblioteca Arion
+Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion
 
 ---
 
@@ -94,23 +130,18 @@ Traduït del japonès per Biblioteca Arion
 
 ---
 
-*Traducció de domini públic. Font original: Aozora Bunko (青空文庫).*
+*Traducció de domini públic.*
 """
 
     with open(traduccio_path, "w", encoding="utf-8") as f:
         f.write(traduccio_final)
 
-    # Mostrar resum
     print()
     print(resultat.resum())
     print()
     print(f"Traducció guardada a: {traduccio_path}")
 
-    # ═══════════════════════════════════════════════════════════════════════════════
-    # POST-PROCESSAMENT AUTOMÀTIC
-    # ═══════════════════════════════════════════════════════════════════════════════
-    from scripts.post_traduccio import post_processar_traduccio
-
+    # Post-processament
     post_processar_traduccio(
         obra_dir=obra_dir,
         resultat=resultat,
@@ -118,7 +149,13 @@ Traduït del japonès per Biblioteca Arion
         executar_build_auto=True,
     )
 
+    print()
+    print("═" * 60)
+    print("  ✅ TRADUCCIÓ COMPLETADA I PUBLICADA")
+    print("═" * 60)
+
     return resultat
+
 
 if __name__ == "__main__":
     main()

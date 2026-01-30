@@ -327,9 +327,14 @@ class ContentLoader:
                     'refs': None
                 }
             elif current_note:
-                # Referències
+                # Referències - processar markdown per cursives, etc.
                 if line.startswith('> Vegeu:'):
-                    current_note['refs'] = line[9:].strip()
+                    refs_text = line[9:].strip()
+                    # Convertir markdown inline (cursives, negreta)
+                    refs_html = md.convert(refs_text)
+                    # Eliminar <p> tags que markdown afegeix
+                    refs_html = re.sub(r'^<p>(.*)</p>$', r'\1', refs_html.strip())
+                    current_note['refs'] = Markup(refs_html)
                 else:
                     current_note['lines'].append(line)
 
@@ -586,7 +591,7 @@ class BuildSystem:
             'autor': obra_data.get('autor', obra_path.parent.name.title()),
             'autor_original': obra_data.get('autor_original'),
             'traductor': obra_data.get('traductor', 'Editorial Clàssica'),
-            'llengua_original': obra_data.get('llengua_original', 'grec'),
+            'llengua_original': obra_data.get('llengua_original') or obra_data.get('llengua_origen', 'grec'),
             'any_original': obra_data.get('any_original'),
             'any_traduccio': obra_data.get('any_traduccio', datetime.now().year),
             'descripcio': obra_data.get('descripcio'),
