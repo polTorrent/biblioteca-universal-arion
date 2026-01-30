@@ -1,0 +1,134 @@
+{
+  "traduccions": {
+    "natura": {
+      "original": "natura",
+      "traduccio": "naturalesa",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "malignitas": {
+      "original": "malignitas",
+      "traduccio": "malignitat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "mortales": {
+      "original": "mortales",
+      "traduccio": "mortals",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "aevum": {
+      "original": "aevum",
+      "traduccio": "temps de vida / durada",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "spatium": {
+      "original": "spatium",
+      "traduccio": "espai (de temps)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "apparatus": {
+      "original": "apparatus",
+      "traduccio": "preparació / preparatius",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "vulgus": {
+      "original": "vulgus",
+      "traduccio": "vulgar / multitud",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "turba": {
+      "original": "turba",
+      "traduccio": "turba / multitud",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "clari viri": {
+      "original": "clari viri",
+      "traduccio": "homes il·lustres",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "affectus": {
+      "original": "affectus",
+      "traduccio": "emoció / passió",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "querela": {
+      "original": "querela",
+      "traduccio": "queixa / lament",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "publicum malum": {
+      "original": "publicum malum",
+      "traduccio": "mal públic / desgràcia comuna",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Lucius Annaeus Seneca (Sèneca el Jove) (4 a.C. - 65 d.C.), Corduba (Còrdova), Bètica, Hispània. Filòsof estoic, dramaturg i estadista romà, preceptor i conseller de l'emperador Neró. Fill de Sèneca el Vell, va combinar una brillant carrera política amb una extensa obra filosòfica i literària. Va ser forçat al suïcidi per ordre de Neró l'any 65 d.C. acusat de conspiració.",
+    "context_historic": "Període julio-claudi de l'Imperi Romà (Auguste, Tiberi, Calígula, Claudi, Neró). Època de consolidació imperial, tensions políticas entre senat i emperador, i efervescència cultural. Sèneca va viure la transició de la república tardana a l'imperi consolidat.",
+    "context_obra": "De Brevitate Vitae (49-62 d.C. (probablement cap al 55 d.C.)) - tractat filosòfic moral estoic. Dedicada a Paulí (possiblement Pompeu Paulí, sogre de Sèneca). Escrita durant el període de màxima influència política de Sèneca com a conseller de Neró. Reflecteix les seves reflexions sobre l'ús del temps en una època d'intensa activitat política.",
+    "influencies": [
+      "Crisip d'Assos",
+      "Marc Aureli Antoní",
+      "Epitet",
+      "Plató",
+      "Aristòtil",
+      "Ciceró",
+      "filosofia estoica"
+    ],
+    "temes_principals": [
+      "la percepció subjectiva del temps",
+      "l'ús adequat del temps",
+      "crítica a l'avarícia i l'ambició",
+      "el retir filosòfic vs. vida activa",
+      "la mortalitat humana i l'acceptació de la mort"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Paulí (destinatari)",
+    "[H] Personatge històric: August",
+    "[H] Personatge històric: Tiberi",
+    "[H] Personatge històric: Calígula",
+    "[H] Personatge històric: Ciceró",
+    "[H] Personatge històric: Fabià",
+    "[H] Personatge històric: Galió",
+    "[C] Referència cultural: costums romans de l'època imperial",
+    "[C] Referència cultural: institucions polítiques romanes",
+    "[C] Referència cultural: pràctiques religioses i funeràries",
+    "[C] Referència cultural: vida quotidiana de les classes altes romanes",
+    "[C] Referència cultural: referències a la literatura grega clàssica",
+    "[T] Terme tècnic: otium",
+    "[T] Terme tècnic: negotium",
+    "[T] Terme tècnic: brevitas",
+    "[T] Terme tècnic: vita",
+    "[T] Terme tècnic: tempus",
+    "[T] Terme tècnic: sapientia",
+    "[T] Terme tècnic: philosophia",
+    "[T] Terme tècnic: virtus",
+    "[T] Terme tècnic: tranquillitas"
+  ]
+}

@@ -283,6 +283,18 @@
             min-height: 200px;
         }
 
+        /* Estat finalitzat */
+        body.finished .progress-bar::after {
+            animation: none;  /* Aturar animació shimmer */
+        }
+
+        body.finished .chunk-analitzant,
+        body.finished .chunk-traduint,
+        body.finished .chunk-avaluant,
+        body.finished .chunk-refinant {
+            animation: none;  /* Aturar animació pulse */
+        }
+
         /* Responsive */
         @media (max-width: 1200px) {
             .container {
@@ -381,7 +393,9 @@
             chunks: [],
             qualityHistory: [],
             totalIterations: 0,
-            startTime: Date.now()
+            startTime: Date.now(),
+            isRunning: true,  // Per controlar si el comptador està actiu
+            timerInterval: null  // Referència al interval del comptador
         };
 
         // Elements
@@ -439,8 +453,9 @@
             }
         });
 
-        // Actualitzar temps
-        setInterval(() => {
+        // Actualitzar temps (només si està actiu)
+        state.timerInterval = setInterval(() => {
+            if (!state.isRunning) return;  // No actualitzar si s'ha aturat
             const elapsed = Math.floor((Date.now() - state.startTime) / 1000);
             const hours = Math.floor(elapsed / 3600);
             const mins = Math.floor((elapsed % 3600) / 60);
@@ -448,6 +463,15 @@
             elements.elapsedTime.textContent =
                 `${hours.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
         }, 1000);
+
+        // Funció per aturar el comptador
+        function stopTimer() {
+            state.isRunning = false;
+            if (state.timerInterval) {
+                clearInterval(state.timerInterval);
+                state.timerInterval = null;
+            }
+        }
 
         // Carregar estat inicial
         fetch('/api/state')
@@ -524,6 +548,13 @@
         function updateStatus(status) {
             elements.statusBadge.textContent = status;
             elements.statusBadge.className = `status-badge status-${status}`;
+
+            // Aturar comptador i logging quan es completa o hi ha error
+            if (status === 'completat' || status === 'error') {
+                stopTimer();
+                // Afegir classe visual per indicar que s'ha acabat
+                document.body.classList.add('finished');
+            }
         }
 
         function initChunks(total) {

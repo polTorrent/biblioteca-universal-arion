@@ -219,11 +219,14 @@ class BaseAgent(ABC):
             json.JSONDecodeError: Si la resposta no és JSON vàlid.
         """
         # Construir comanda
+        # NOTA: Desactivem eines (--tools "") perquè els agents necessiten resposta directa,
+        # no cridar a altres eines com web search que consumeixen turns addicionals.
         cmd = [
             "claude",
             "--print",  # Mode no interactiu
             "--output-format", "json",  # Resposta en JSON
-            "--max-turns", "1",  # Limitar a una sola resposta
+            "--max-turns", "1",  # Una sola resposta (sense eines no cal més)
+            "--tools", "",  # Desactivar eines per evitar web search, etc.
             "--system-prompt", system_prompt,
             "--model", self.config.model,
             "--no-session-persistence",  # No desar sessió

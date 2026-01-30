@@ -1,0 +1,34 @@
+{
+  "sessio_id": "sèneca-de-brevitate-vitae-(-2026-01-30",
+  "obra": {
+    "autor": "Sèneca",
+    "titol": "De Brevitate Vitae (test)",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-01-30T11:57:31.447673",
+    "ultima_activitat": "2026-01-30T12:00:35.457064"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 1,
+    "completats": [
+      "chunk_1"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 7.32,
+    "temps_total_min": 3.07
+  },
+  "errors": [],
+  "warnings": []
+}

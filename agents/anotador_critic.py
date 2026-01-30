@@ -5,6 +5,7 @@ from typing import Literal, TYPE_CHECKING
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from core import MemoriaContextual
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger
@@ -207,11 +208,16 @@ Retorna JSON:
 }
 """
 
-    def annotate(self, request: AnotacioRequest) -> AgentResponse:
+    def annotate(
+        self,
+        request: AnotacioRequest,
+        memoria: MemoriaContextual | None = None,
+    ) -> AgentResponse:
         """Afegeix notes crítiques a un text.
 
         Args:
             request: Sol·licitud amb el text i paràmetres d'anotació.
+            memoria: Memòria contextual amb notes de l'investigador (opcional).
 
         Returns:
             AgentResponse amb el text anotat i llista de notes.
@@ -224,6 +230,42 @@ Retorna JSON:
         if request.text_original:
             original_str = f"\nTEXT ORIGINAL:\n{request.text_original[:2000]}"
 
+        # ═══════════════════════════════════════════════════════════════════
+        # NOTES DE L'INVESTIGADOR (de la MemoriaContextual)
+        # ═══════════════════════════════════════════════════════════════════
+        notes_investigador_str = ""
+        if memoria:
+            notes_pendents = memoria.obtenir_notes_pendents()
+            if notes_pendents:
+                notes_investigador_str = "\n\nNOTES DE L'INVESTIGADOR (usa-les per les anotacions):"
+                # Classificar per tipus
+                notes_h = [n for n in notes_pendents if n.startswith("[H]")]
+                notes_c = [n for n in notes_pendents if n.startswith("[C]")]
+                notes_t = [n for n in notes_pendents if n.startswith("[T]")]
+                altres = [n for n in notes_pendents if not any(n.startswith(p) for p in ["[H]", "[C]", "[T]"])]
+
+                if notes_h:
+                    notes_investigador_str += "\n  Personatges històrics:"
+                    for nota in notes_h[:10]:
+                        notes_investigador_str += f"\n    • {nota[4:]}"  # Eliminar "[H] "
+
+                if notes_c:
+                    notes_investigador_str += "\n  Referències culturals:"
+                    for nota in notes_c[:10]:
+                        notes_investigador_str += f"\n    • {nota[4:]}"  # Eliminar "[C] "
+
+                if notes_t:
+                    notes_investigador_str += "\n  Termes tècnics:"
+                    for nota in notes_t[:10]:
+                        notes_investigador_str += f"\n    • {nota[4:]}"  # Eliminar "[T] "
+
+                if altres:
+                    notes_investigador_str += "\n  Altres notes:"
+                    for nota in altres[:5]:
+                        notes_investigador_str += f"\n    • {nota}"
+
+                notes_investigador_str += "\n\nPRIORITZA anotar els elements que apareixen en aquesta llista."
+
         densitat_descripcio = {
             "minima": "Només notes essencials. Màxim 2-3 per pàgina.",
             "normal": "Notes per a context important. 4-6 per pàgina.",
@@ -235,19 +277,27 @@ Retorna JSON:
 LLENGUA ORIGEN: {request.llengua_origen}
 GÈNERE: {request.genere}
 DENSITAT DESITJADA: {request.densitat_notes} - {densitat_descripcio.get(request.densitat_notes, "")}
-{context_str}
+{context_str}{notes_investigador_str}
 
 TEXT A ANOTAR:
 {request.text}
 {original_str}
 """
-        return self.process(prompt)
+        response = self.process(prompt)
+
+        # Buidar notes pendents processades
+        if memoria and notes_pendents:
+            memoria.buidar_notes_pendents()
+            self.log_info(f"Processades {len(notes_pendents)} notes de l'investigador")
+
+        return response
 
     def annotate_specific(
         self,
         text: str,
         tipus_notes: list[str],
         llengua_origen: str = "llati",
+        memoria: MemoriaContextual | None = None,
     ) -> AgentResponse:
         """Afegeix només notes d'un tipus específic.
 
@@ -255,14 +305,37 @@ TEXT A ANOTAR:
             text: Text a anotar.
             tipus_notes: Llista de tipus de notes a afegir.
             llengua_origen: Llengua d'origen del text.
+            memoria: Memòria contextual amb notes de l'investigador (opcional).
 
         Returns:
             AgentResponse amb les notes del tipus especificat.
         """
+        # Notes de l'investigador filtrades per tipus
+        notes_str = ""
+        if memoria:
+            notes_pendents = memoria.obtenir_notes_pendents()
+            if notes_pendents:
+                # Mapatge de tipus a prefixos
+                tipus_a_prefix = {
+                    "historic": "[H]",
+                    "prosopografic": "[H]",
+                    "cultural": "[C]",
+                    "terminologic": "[T]",
+                }
+                prefixos_rellevants = [tipus_a_prefix.get(t, "") for t in tipus_notes if t in tipus_a_prefix]
+
+                if prefixos_rellevants:
+                    notes_filtrades = [n for n in notes_pendents if any(n.startswith(p) for p in prefixos_rellevants)]
+                    if notes_filtrades:
+                        notes_str = "\n\nNOTES DE L'INVESTIGADOR (rellevants per als tipus sol·licitats):"
+                        for nota in notes_filtrades[:15]:
+                            notes_str += f"\n  • {nota}"
+
         tipus_str = ", ".join(tipus_notes)
         prompt = f"""Afegeix NOMÉS notes dels tipus següents: {tipus_str}
 
 LLENGUA ORIGEN: {llengua_origen}
+{notes_str}
 
 TEXT:
 {text}
