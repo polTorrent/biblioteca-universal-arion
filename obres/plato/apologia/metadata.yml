@@ -1,0 +1,32 @@
+obra:
+  titol: Apologia de Sòcrates
+  titol_original: Ἀπολογία Σωκράτους
+  autor: Plató
+  autor_original: Πλάτων
+  traductor: Biblioteca Arion
+  any_original: c. 399 aC
+  llengua_original: grec antic
+  descripcio: >
+    Discurs de defensa de Sòcrates davant el tribunal atenenc que l'acusava
+    de corrompre la joventut i no creure en els déus de la ciutat. És un dels
+    textos més importants de la filosofia occidental, on Sòcrates exposa la
+    seva missió filosòfica, el seu mètode d'examen i la seva acceptació
+    serena de la mort. Conté la famosa afirmació "només sé que no sé res"
+    i reflexions profundes sobre la virtut, la justícia i el sentit de la vida.
+  temes:
+    - filosofia
+    - ètica
+    - justícia
+    - mort
+    - coneixement
+    - virtut
+  referencia_stephanus: 17a-42a
+
+revisio:
+  estat: esborrany
+  qualitat: 7.5
+  data_revisio: '2026-01-30'
+  notes: "Primera part traduïda (fins a l'interrogatori de Meletos). Pendent completar."
+
+estadistiques:
+  paraules_traduccio: 4058

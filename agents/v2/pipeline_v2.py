@@ -25,7 +25,7 @@ from typing import TYPE_CHECKING, Callable
 
 from pydantic import BaseModel, Field
 
-from agents.base_agent import AgentConfig
+from agents.base_agent import AgentConfig, ContentFilterError
 
 # Agents V2 (nous)
 from agents.v2.analitzador_pre import AnalitzadorPreTraduccio, SelectorExemplesFewShot
@@ -389,6 +389,27 @@ class PipelineV2:
                         # Chunk sense avaluació
                         self.dashboard.update_chunk(i, "completat", quality=7.5, iterations=0)
                         self.dashboard.log_success("Pipeline", f"Chunk {i+1} completat")
+
+                except ContentFilterError as e:
+                    # Error de filtratge de contingut: suggerir chunks més petits
+                    error_msg = (
+                        f"Chunk {i+1} bloquejat per filtratge de contingut. "
+                        f"Prova amb max_chars_chunk més petit (actual: {self.config.max_chars_chunk})"
+                    )
+                    errors.append(error_msg)
+                    avisos.append(
+                        "El text conté contingut que activa filtres de seguretat. "
+                        "Considereu dividir-lo en fragments més petits o revisar el text."
+                    )
+                    if self.dashboard:
+                        self.dashboard.update_chunk(i, "completat", quality=0, iterations=0)
+                        self.dashboard.log_error("Pipeline", error_msg)
+                    resultats_chunks.append(ResultatChunk(
+                        chunk_id=i + 1,
+                        text_original=chunk,
+                        traduccio_final=f"[FILTRE DE CONTINGUT: Fragment massa sensible]",
+                        aprovat=False,
+                    ))
 
                 except Exception as e:
                     errors.append(f"Error en chunk {i+1}: {e}")
