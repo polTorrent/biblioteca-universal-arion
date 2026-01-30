@@ -1,0 +1,62 @@
+# Glossari terminològic - De l'amistat (Montaigne)
+
+termes:
+  - id: amitie
+    original: amitié
+    traduccio: amistat
+    definicio: "Concepte central de l'assaig. Montaigne distingeix l'amistat perfecta (com la que tenia amb La Boétie) de les amistats ordinàries basades en utilitat o plaer."
+
+  - id: accointance
+    original: accointance
+    traduccio: coneixença, encontre
+    definicio: "Terme del francès mitjà que designa una relació o familiaritat. Montaigne l'usa per distingir les relacions superficials de l'amistat veritable."
+
+  - id: crotesques
+    original: crotesques
+    traduccio: grotescos
+    definicio: "Pintures fantàstiques i decoratives sense forma definida. Montaigne compara els seus assaigs amb aquestes pintures ornamentals."
+
+  - id: servitude-volontaire
+    original: La Servitude Volontaire
+    traduccio: La Servitud Voluntària
+    definicio: "Tractat polític d'Étienne de La Boétie (escrit c. 1548) sobre la submissió dels pobles a la tirania. També conegut com 'Le Contre-un' (El Contra-u)."
+
+  - id: contre-un
+    original: le Contre-un
+    traduccio: el Contra-u
+    definicio: "Nom popular del tractat de La Boétie contra la tirania, que critica la submissió voluntària dels pobles als tirans."
+
+  - id: essay
+    original: essay
+    traduccio: assaig
+    definicio: "Terme que Montaigne popularitza per designar una forma d'escriptura personal i exploratòria. Del francès 'essayer' (intentar, provar)."
+
+  - id: cousture
+    original: cousture
+    traduccio: costura, lligam
+    definicio: "Metàfora que Montaigne utilitza per descriure els vincles entre ànimes. En l'amistat perfecta, la costura desapareix i les ànimes es fonen."
+
+  - id: suffisance
+    original: suffisance
+    traduccio: capacitat, aptitud
+    definicio: "Terme que indica competència o habilitat. Montaigne l'utilitza amb modèstia per referir-se a les seves pròpies limitacions."
+
+  - id: fantasies
+    original: fantasies
+    traduccio: fantasies
+    definicio: "Els pensaments i reflexions personals de Montaigne, que ell mateix considera irregulars i sense forma definida."
+
+  - id: communication
+    original: communication
+    traduccio: comunicació
+    definicio: "Element essencial de l'amistat segons Montaigne: l'intercanvi franc i total de pensaments entre amics."
+
+  - id: liberté-volontaire
+    original: liberté volontaire
+    traduccio: llibertat voluntària
+    definicio: "La capacitat de triar lliurement, que segons Montaigne troba la seva expressió més pura en l'amistat."
+
+  - id: quinte-essence
+    original: quinte-essence
+    traduccio: quinta essència
+    definicio: "Terme alquímic que designa l'element més pur i essencial. Montaigne l'usa per descriure la natura inexplicable de l'amistat perfecta."
