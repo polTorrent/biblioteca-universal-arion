@@ -1,0 +1,18 @@
+obra:
+  titol: De l'amistat
+  titol_original: De l'Amitié
+  autor: Michel de Montaigne
+  autor_original: Michel de Montaigne
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: 1580
+  any_traduccio: 2026
+  llengua_original: francès
+  genere: filosofia
+  descripcio: Assaig sobre l'amistat perfecta, escrit en record d'Étienne de La Boétie.
+    Capítol XXVII del Llibre I dels Essais.
+  estadistiques:
+    paraules_traduccio: 4640
+revisio:
+  estat: revisat
+  data_revisio: '2026-01-30'
+  qualitat: 7.79
