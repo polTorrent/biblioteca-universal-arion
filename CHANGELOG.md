@@ -2,6 +2,19 @@
 
 Tots els canvis notables del projecte.
 
+## [2.3.0] - 2026-01-30
+
+### Afegit
+- **LanguageTool integrat**: Correcció ortogràfica i gramatical automàtica
+- `utils/corrector_linguistic.py`: Mòdul de correcció amb barbarismes extra
+- Detecció de 40+ barbarismes castellans i anglesos
+- Integració amb AvaluadorFluidesa (55% LLM + 25% calcs + 20% LanguageTool)
+- Funció `corregir_traduccio_languagetool()` al post-processament
+
+### Millorat
+- Puntuació de fluïdesa ara inclou errors normatius
+- Feedback més detallat amb suggeriments de correcció
+
 ## [2.2.0] - 2026-01-30
 
 ### Afegit

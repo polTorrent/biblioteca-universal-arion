@@ -432,6 +432,45 @@ def actualitzar_metadata(obra_dir: Path, resultat) -> bool:
         return False
 
 
+def corregir_traduccio_languagetool(traduccio_path: Path, auto_corregir: bool = False) -> bool:
+    """Passa LanguageTool per la traducció i mostra/corregeix errors."""
+    try:
+        from utils.corrector_linguistic import corregir_text, CorrectorLinguistic, LANGUAGETOOL_DISPONIBLE
+    except ImportError:
+        print("   ⚠️ LanguageTool no disponible")
+        return False
+
+    if not LANGUAGETOOL_DISPONIBLE:
+        print("   ⚠️ LanguageTool no disponible")
+        return False
+
+    if not traduccio_path.exists():
+        print("   ⚠️ Fitxer de traducció no trobat")
+        return False
+
+    with open(traduccio_path, 'r', encoding='utf-8') as f:
+        contingut = f.read()
+
+    corrector = CorrectorLinguistic()
+    resultat = corrector.corregir(contingut, auto_corregir=auto_corregir)
+
+    print(f"   📝 LanguageTool: {resultat.num_errors} errors, puntuació {resultat.puntuacio_normativa}/10")
+
+    if resultat.errors:
+        print("   Errors principals:")
+        for error in resultat.errors[:10]:
+            print(f"      • [{error.categoria.value}] \"{error.text_original}\"")
+            if error.suggeriments:
+                print(f"        → {', '.join(error.suggeriments[:2])}")
+
+    if auto_corregir and resultat.text_corregit != contingut:
+        with open(traduccio_path, 'w', encoding='utf-8') as f:
+            f.write(resultat.text_corregit)
+        print(f"   ✅ Aplicades {resultat.num_correccions} correccions automàtiques")
+
+    return True
+
+
 def executar_build() -> bool:
     """Executa el build per publicar a la web."""
     try:
@@ -488,6 +527,7 @@ def post_processar_traduccio(
         'glossari_valid': False,
         'portada': False,
         'metadata': False,
+        'languagetool': False,
         'build': False,
     }
 
@@ -536,9 +576,13 @@ def post_processar_traduccio(
         if resultats['metadata']:
             print("   ✅ Metadata actualitzat")
 
-    # 6. Executar build
+    # 6. Verificació lingüística (LanguageTool)
+    print("6. Verificació lingüística...")
+    resultats['languagetool'] = corregir_traduccio_languagetool(traduccio_path, auto_corregir=False)
+
+    # 7. Executar build
     if executar_build_auto:
-        print("6. Publicant a la web...")
+        print("7. Publicant a la web...")
         resultats['build'] = executar_build()
 
     print()
