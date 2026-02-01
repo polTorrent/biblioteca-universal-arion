@@ -1,0 +1,85 @@
+termes:
+  - id: "ungeziefer"
+    alemany: "Ungeziefer"
+    traduccio: "insecte"
+    definicio: |
+      Kafka usa deliberadament el terme ambigu "Ungeziefer" (literalment
+      "animal immunde" o "bestiola") sense especificar mai quin tipus
+      d'insecte és Gregor. La paraula evoca fàstic i rebuig social més
+      que una espècie concreta. Traduccions com "escarabat" o "panerola"
+      són interpretacions, no traduccions literals.
+
+  - id: "prokurist"
+    alemany: "Prokurist"
+    traduccio: "apoderat / procurador"
+    definicio: |
+      Càrrec comercial important a l'Alemanya i Àustria de principis
+      del segle XX. El Prokurist tenia poder de signatura i representava
+      legalment l'empresa. Que vingui personalment a casa de Gregor
+      demostra tant la severitat de l'empresa com la importància
+      que Gregor tenia com a treballador.
+
+  - id: "reisender"
+    alemany: "Reisender"
+    traduccio: "viatjant de comerç"
+    definicio: |
+      Representant comercial que viatjava constantment per visitar
+      clients i prendre comandes. Era una feina esgotadora i poc
+      valorada socialment, malgrat ser essencial per al comerç.
+      La queixa de Gregor sobre els viatges reflecteix l'experiència
+      del mateix Kafka treballant en una companyia d'assegurances.
+
+  - id: "kanapee"
+    alemany: "Kanapee"
+    traduccio: "canapè"
+    definicio: |
+      Sofà o divan típic de les cases burgeses de l'època. El canapè
+      de l'habitació de Gregor esdevé el seu refugi, on s'amaga de
+      la família. Simbolitza la seva regressió a un estat més primitiu
+      i la seva necessitat de protecció.
+
+  - id: "pult"
+    alemany: "Pult"
+    traduccio: "faristol"
+    definicio: |
+      Escriptori alt des del qual el cap de Gregor dirigeix l'empresa.
+      Que el cap s'assegui en un faristol elevat mentre els empleats
+      han d'apropar-se per la seva "duresa d'orella" simbolitza la
+      jerarquia opressiva del món laboral.
+
+  - id: "musterkollektion"
+    alemany: "Musterkollektion"
+    traduccio: "col·lecció de mostres"
+    definicio: |
+      Conjunt de mostres de teixits que els viatjants de comerç
+      portaven per mostrar als clients. Que Gregor tingui la
+      col·lecció desembalada a l'habitació indica que el treball
+      envaeix fins i tot el seu espai privat.
+
+  - id: "pelz"
+    alemany: "Pelz"
+    traduccio: "pell (de pelleteria)"
+    definicio: |
+      El retrat de la dama amb barret, boa i manguito de pell que
+      Gregor ha retallat d'una revista és l'únic element decoratiu
+      personal de la seva habitació. S'ha interpretat com a símbol
+      de desig eròtic reprimit o de l'anhel d'una vida més càlida.
+
+  - id: "zimmerherren"
+    alemany: "Zimmerherren"
+    traduccio: "senyors inquilins"
+    definicio: |
+      Els tres llogaters que la família Samsa acull per guanyar
+      diners després de la transformació de Gregor. Representen
+      la invasió de l'espai familiar i la degradació social de
+      la família. Kafka els descriu com figures gairebé idèntiques
+      i mecàniques.
+
+  - id: "dienstmadchen"
+    alemany: "Dienstmädchen"
+    traduccio: "minyona / criada"
+    definicio: |
+      La família Samsa té una criada, símbol del seu estatus de
+      classe mitjana. Després de la transformació, la criada marxa
+      i és substituïda per una dona de fer feines més vella i menys
+      refinada, marcant el declivi econòmic familiar.
