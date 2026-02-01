@@ -28,7 +28,7 @@ from pathlib import Path
 from typing import Optional as Opt
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import TYPE_CHECKING, Callable
+from typing import TYPE_CHECKING, Callable, Literal
 
 from pydantic import BaseModel, Field
 
@@ -55,6 +55,7 @@ from agents.v2.models import (
 from agents.glossarista import GlossaristaAgent, GlossaryRequest
 from agents.chunker_agent import ChunkerAgent, ChunkingRequest, ChunkingStrategy
 from agents.investigador import InvestigadorAgent
+from agents.anotador_critic import AnotadorCriticAgent, AnotacioRequest
 
 # Dashboard (opcional)
 try:
@@ -82,6 +83,7 @@ class FasePipeline(str, Enum):
     AVALUANT = "avaluant"
     REFINANT = "refinant"
     FUSIONANT = "fusionant"
+    ANOTANT = "anotant"
     VALIDANT = "validant"
     COMPLETAT = "completat"
     ERROR = "error"
@@ -110,6 +112,13 @@ class ConfiguracioPipelineV2(BaseModel):
     fer_avaluacio: bool = Field(default=True, description="Avaluar traduccions")
     fer_refinament: bool = Field(default=True, description="Refinar si no aprovat")
     llindars: LlindarsAvaluacio = Field(default_factory=lambda: LLINDARS_DEFAULT)
+
+    # Anotació crítica
+    generar_anotacions: bool = Field(default=True, description="Generar notes crítiques automàticament")
+    densitat_notes: Literal["minima", "normal", "exhaustiva"] = Field(
+        default="normal",
+        description="Densitat de notes: minima (2-3/pàg), normal (4-6/pàg), exhaustiva (8-12/pàg)"
+    )
 
     # Sortida
     incloure_analisi: bool = Field(default=False, description="Incloure anàlisi a la sortida")
@@ -160,6 +169,10 @@ class ResultatPipelineV2(BaseModel):
     # Glossari
     glossari: dict[str, str] = Field(default_factory=dict)
 
+    # Notes crítiques
+    notes: list[dict] = Field(default_factory=list, description="Llista de notes crítiques generades")
+    text_anotat: str | None = Field(default=None, description="Traducció amb marques [^n] inserides")
+
     # Chunks
     num_chunks: int = 0
     chunks_aprovats: int = 0
@@ -195,6 +208,9 @@ class ResultatPipelineV2(BaseModel):
             "",
             f"Temps total: {self.temps_total:.1f}s",
         ]
+
+        if self.notes:
+            linies.append(f"\nNotes crítiques: {len(self.notes)} generades")
 
         if self.temps_per_fase:
             linies.append("\nTemps per fase:")
@@ -264,6 +280,7 @@ class PipelineV2:
         # Agents V1 (reutilitzats)
         self.glossarista = GlossaristaAgent(agent_config, logger)
         self.chunker = ChunkerAgent(agent_config, logger)
+        self.anotador = AnotadorCriticAgent(agent_config, logger)
 
         # Dashboard
         self.dashboard: Opt[TranslationDashboard] = None
@@ -766,6 +783,68 @@ class PipelineV2:
             self._reportar_progres("Fusionant", 1.0)
 
             # ═══════════════════════════════════════════════════════════════
+            # FASE 5: ANOTACIÓ CRÍTICA
+            # ═══════════════════════════════════════════════════════════════
+            notes_generades: list[dict] = []
+            text_anotat: str | None = None
+
+            fase_anotacio_completada = (
+                self.estat and "anotacio" in self.estat.fases_completades
+            )
+
+            if fase_anotacio_completada:
+                print("[Pipeline] Fase anotació ja completada, saltant...")
+                if self.dashboard:
+                    self.dashboard.log_info("Pipeline", "Anotació ja completada (represa)")
+            elif self.config.generar_anotacions:
+                self._reportar_progres("Anotant", 0.0)
+                if self.dashboard:
+                    self.dashboard.set_stage("anotant")
+                    self.dashboard.log_info("Anotador", "Generant notes crítiques...")
+
+                if self.estat:
+                    self.estat.iniciar_fase("anotacio")
+
+                temps_fase = time.time()
+                try:
+                    notes_generades, text_anotat = self._generar_anotacions(
+                        traduccio=traduccio_final,
+                        text_original=text,
+                        llengua_origen=llengua_origen,
+                        genere=genere,
+                    )
+                    temps_fases["anotacio"] = time.time() - temps_fase
+
+                    if self.dashboard:
+                        self.dashboard.log_success(
+                            "Anotador",
+                            f"Generades {len(notes_generades)} notes crítiques"
+                        )
+
+                    # Guardar notes.md si hi ha persistència
+                    if self.estat and notes_generades:
+                        self._guardar_notes_md(notes_generades)
+
+                except Exception as e:
+                    avisos.append(f"Error generant anotacions: {e}")
+                    temps_fases["anotacio"] = time.time() - temps_fase
+                    if self.dashboard:
+                        self.dashboard.log_warning("Anotador", f"Error: {e}")
+                    if self.estat:
+                        self.estat.registrar_warning(f"Error anotació: {e}")
+
+                # Marcar fase completada
+                if self.estat:
+                    self.estat.completar_fase("anotacio")
+                    self._guardar_estat_amb_memoria()
+
+                self._reportar_progres("Anotant", 1.0)
+
+            # Actualitzar traducció final amb marques si s'han generat notes
+            if text_anotat:
+                traduccio_final = text_anotat
+
+            # ═══════════════════════════════════════════════════════════════
             # RESULTAT FINAL
             # ═══════════════════════════════════════════════════════════════
             chunks_aprovats = sum(1 for r in resultats_chunks if r.aprovat)
@@ -834,6 +913,8 @@ class PipelineV2:
                 obra=obra,
                 genere=genere,
                 glossari=glossari,
+                notes=notes_generades,
+                text_anotat=text_anotat,
                 num_chunks=len(chunks),
                 chunks_aprovats=chunks_aprovats,
                 chunks_refinats=chunks_refinats,
@@ -1070,6 +1151,157 @@ class PipelineV2:
         """Fusiona les traduccions dels chunks."""
         traduccions = [r.traduccio_final for r in resultats]
         return "\n\n".join(traduccions)
+
+    def _generar_anotacions(
+        self,
+        traduccio: str,
+        text_original: str,
+        llengua_origen: str,
+        genere: str | None,
+    ) -> tuple[list[dict], str | None]:
+        """Genera notes crítiques per a la traducció.
+
+        Args:
+            traduccio: Text traduït.
+            text_original: Text original.
+            llengua_origen: Llengua d'origen.
+            genere: Gènere literari.
+
+        Returns:
+            Tupla (llista de notes, text amb marques [^n]).
+        """
+        import json
+        import re
+
+        # Obtenir context històric com a string
+        context_historic_str: str | None = None
+        if self.memoria:
+            ctx_inv = self.memoria.obtenir_context_investigacio()
+            if ctx_inv:
+                parts = []
+                if ctx_inv.context_historic:
+                    parts.append(ctx_inv.context_historic)
+                if ctx_inv.context_obra:
+                    parts.append(ctx_inv.context_obra)
+                if ctx_inv.autor_bio:
+                    parts.append(ctx_inv.autor_bio)
+                context_historic_str = "\n\n".join(parts) if parts else None
+
+        request = AnotacioRequest(
+            text=traduccio,
+            text_original=text_original,
+            llengua_origen=llengua_origen,
+            genere=genere or "narrativa",
+            context_historic=context_historic_str,
+            densitat_notes=self.config.densitat_notes,
+        )
+
+        response = self.anotador.annotate(request, self.memoria)
+
+        # Parsejar resposta JSON
+        notes: list[dict] = []
+        text_anotat: str | None = None
+
+        try:
+            content = response.content
+
+            # Buscar JSON a la resposta
+            json_match = re.search(r'\{[\s\S]*\}', content)
+            if json_match:
+                data = json.loads(json_match.group())
+
+                # Extreure text anotat
+                text_anotat = data.get("text_anotat")
+
+                # Extreure notes
+                for nota in data.get("notes", []):
+                    if isinstance(nota, dict):
+                        notes.append({
+                            "numero": nota.get("numero", len(notes) + 1),
+                            "tipus": nota.get("tipus", "cultural"),
+                            "text_referit": nota.get("text_referit", ""),
+                            "nota": nota.get("nota", ""),
+                        })
+
+                # Log estadístiques
+                stats = data.get("estadistiques", {})
+                if stats:
+                    print(f"[Anotador] Estadístiques: {stats.get('total_notes', len(notes))} notes")
+                    per_tipus = stats.get("per_tipus", {})
+                    for tipus, count in per_tipus.items():
+                        if count > 0:
+                            print(f"  • {tipus}: {count}")
+
+        except json.JSONDecodeError as e:
+            print(f"[Anotador] Error parsejant JSON: {e}")
+            # Intentar extreure notes manualment si falla el JSON
+            pass
+
+        return notes, text_anotat
+
+    def _guardar_notes_md(self, notes: list[dict]) -> None:
+        """Guarda les notes al fitxer notes.md.
+
+        Args:
+            notes: Llista de notes a guardar.
+        """
+        if not self.estat or not self.estat.obra_dir:
+            return
+
+        notes_path = self.estat.obra_dir / "notes.md"
+
+        # Generar contingut markdown
+        linies = [
+            "# Notes crítiques",
+            "",
+            "*Notes generades automàticament per l'Agent Anotador Crític.*",
+            "",
+            "---",
+            "",
+        ]
+
+        # Agrupar notes per tipus per a millor organització
+        tipus_ordre = [
+            "historic",
+            "prosopografic",
+            "cultural",
+            "terminologic",
+            "intertextual",
+            "geographic",
+            "textual",
+        ]
+
+        tipus_noms = {
+            "historic": "Context Històric",
+            "prosopografic": "Personatges",
+            "cultural": "Context Cultural",
+            "terminologic": "Terminologia",
+            "intertextual": "Intertextualitat",
+            "geographic": "Geografia",
+            "textual": "Variants Textuals",
+        }
+
+        for nota in sorted(notes, key=lambda n: n.get("numero", 0)):
+            numero = nota.get("numero", "?")
+            tipus = nota.get("tipus", "cultural")
+            text_referit = nota.get("text_referit", "")
+            contingut = nota.get("nota", "")
+
+            tipus_tag = tipus_noms.get(tipus, tipus.capitalize())
+
+            linies.append(f"## [{numero}] {text_referit[:50]}{'...' if len(text_referit) > 50 else ''}")
+            linies.append("")
+            linies.append(f"**Tipus:** {tipus_tag}")
+            linies.append("")
+            if text_referit:
+                linies.append(f"> «{text_referit}»")
+                linies.append("")
+            linies.append(contingut)
+            linies.append("")
+
+        # Guardar fitxer
+        notes_path.write_text("\n".join(linies), encoding="utf-8")
+        print(f"[Pipeline] Notes guardades a: {notes_path}")
 
     # =========================================================================
     # MÈTODES DE CONVENIÈNCIA

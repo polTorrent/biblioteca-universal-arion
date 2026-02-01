@@ -76,15 +76,23 @@ Català sempre per documentació, codi i comunicació.
 ```
 0. VERIFICAR AUTENTICACIÓ (subscripció, no API!)
    ↓
-1. glossari → 2. traducció → 3. perfeccionament → 4. anotació → 5. format web
+1. investigació → 2. glossari → 3. chunking → 4. traducció → 5. anotació → 6. format web
    ↓
-6. POST-PROCESSAMENT AUTOMÀTIC:
+7. POST-PROCESSAMENT AUTOMÀTIC:
    - Formatar capítols (original i traducció) amb ## I, ## II, etc.
    - Validar/corregir glossari YAML
    - Generar portada si no existeix
    - Actualitzar metadata.yml
    - Executar build per publicar a la web
 ```
+
+### Anotació Crítica Automàtica
+
+El pipeline ara genera automàticament notes crítiques amb l'`AnotadorCriticAgent`:
+- **Configurable:** `generar_anotacions=True/False` a `ConfiguracioPipelineV2`
+- **Densitat ajustable:** `densitat_notes="minima"/"normal"/"exhaustiva"`
+- **Tipus de notes:** històriques, culturals, intertextuals, terminològiques, geogràfiques, prosopogràfiques
+- **Sortida:** Fitxer `notes.md` generat automàticament al directori de l'obra
 
 ### Script Template per Noves Traduccions
 
@@ -104,7 +112,7 @@ El post-processament és automàtic i inclou publicació a la web.
 **Agents auxiliars:**
 - `GlossaristaAgent` - Crear glossaris terminològics
 - `ChunkerAgent` - Dividir textos llargs en fragments
-- `AnotadorCriticAgent` - Notes erudites
+- `AnotadorCriticAgent` - Notes erudites (ara integrat automàticament al pipeline)
 - `CercadorFontsAgent` - Cercar textos de domini públic
 - `AgentRetratista` - Generar retrats d'autors
 - `AgentPortadista` - Generar portades d'obres
