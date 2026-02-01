@@ -1,0 +1,26 @@
+obra:
+  titol: La Transformació
+  titol_original: Die Verwandlung
+  autor: Franz Kafka
+  autor_original: Franz Kafka
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: 1915
+  any_traduccio: 2026
+  llengua_original: alemany
+  genere: narrativa
+  descripcio: 'Una de les obres més cèlebres de la literatura del segle XX. Gregor
+    Samsa, un viatjant de comerç, es desperta un matí transformat en un insecte monstruós.
+    La narració explora l''alienació, la identitat i les dinàmiques familiars amb
+    una prosa neta i despullada d''ornaments.
+
+    '
+  font: Project Gutenberg (EBook
+  estadistiques:
+    paraules_original: ~22000
+    capitols: 3
+    paraules_traduccio: 20696
+revisio:
+  estat: revisat
+  data_inici: '2026-01-31'
+  data_revisio: '2026-01-31'
+  qualitat: 7.98
