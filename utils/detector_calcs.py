@@ -350,12 +350,144 @@ class DetectorCalcs:
         return calcs
 
     def _detectar_calcs_angles(self, text: str) -> list[CalcDetectat]:
-        """Patrons específics de l'anglès."""
+        """Patrons específics de l'anglès - AMPLIATS significativament."""
         calcs = []
 
-        # Gerundi com a subjecte excessiu
+        # ═══════════════════════════════════════════════════════════════════
+        # 1. EXPRESSIONS IDIOMÀTIQUES CALCADES
+        # ═══════════════════════════════════════════════════════════════════
+        expressions_calcades = [
+            # "By all appearances" → "Tot indicava que" / "A primer cop d'ull"
+            (r'\b[Pp]er totes les aparences\b',
+             "«Per totes les aparences» (By all appearances)",
+             "Usar «Tot indicava que», «A primer cop d'ull», «Segons sembla»",
+             7.0),
+            # "Rather than" → "en lloc de", "per no"
+            (r'\bmés aviat que no pas\b',
+             "«més aviat que no pas» (rather than)",
+             "Usar «en lloc de», «per no», «abans que»",
+             6.0),
+            # "In order to" → "per"
+            (r'\ba fi de\b',
+             "«a fi de» (in order to)",
+             "Simplificar a «per» o «per tal de»",
+             4.0),
+            # "As a matter of fact"
+            (r'\bcom a qüestió de fet\b',
+             "«com a qüestió de fet» (as a matter of fact)",
+             "Usar «de fet», «en realitat»",
+             6.0),
+            # "At the same time"
+            (r'\bal mateix temps que\b',
+             "«al mateix temps que» calc literal",
+             "Valorar «alhora que», «mentre»",
+             4.0),
+            # "To take place"
+            (r'\b(va |van )?(prendre|tenir) lloc\b',
+             "«prendre/tenir lloc» (to take place)",
+             "Usar «passar», «ocórrer», «esdevenir-se»",
+             5.0),
+            # "To make sense"
+            (r'\b(fer|feia|fa) sentit\b',
+             "«fer sentit» (to make sense)",
+             "Usar «tenir sentit», «ser lògic»",
+             6.0),
+            # "It turns out that"
+            (r'\bresulta que\b',
+             "«resulta que» (it turns out)",
+             "Valorar «s'esdevé que», «passa que», «és el cas que»",
+             3.0),
+        ]
+
+        for patro, explicacio, suggeriment, severitat in expressions_calcades:
+            for match in re.finditer(patro, text, re.IGNORECASE):
+                calcs.append(CalcDetectat(
+                    tipus=TipusCalc.CALC_SINTACTIC,
+                    text_original=match.group(),
+                    posicio=(match.start(), match.end()),
+                    explicacio=explicacio,
+                    suggeriment=suggeriment,
+                    severitat=severitat,
+                    llengua_origen="anglès",
+                ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 2. VERBS AMB MATISOS ANGLESOS
+        # ═══════════════════════════════════════════════════════════════════
+        # "manar" (to bid/command) quan hauria de ser "demanar" (to ask)
+        manar_patterns = re.finditer(
+            r'\b(vaig |va |van )?(manar|ordenar)\s+(a\s+)?\w+\s+que\b',
+            text, re.IGNORECASE
+        )
+        for match in manar_patterns:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.CALC_SINTACTIC,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="«manar» (to bid) - to formal/comandant",
+                suggeriment="Valorar «demanar», «dir», «indicar» segons context",
+                severitat=5.0,
+                llengua_origen="anglès",
+            ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 3. REPETICIONS D'ADVERBIS (Long—long, far—far)
+        # ═══════════════════════════════════════════════════════════════════
+        repeticions = re.finditer(
+            r'\b(\w+ment)\s*[—–-]\s*\1\b',
+            text, re.IGNORECASE
+        )
+        for match in repeticions:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.CALC_SINTACTIC,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="Repetició d'adverbi amb guió (calc de l'anglès)",
+                suggeriment="Reformular: «llargament» → «durant llarga estona»",
+                severitat=6.0,
+                llengua_origen="anglès",
+            ))
+
+        # Repetició de paraules seguides per efecte (very very, so so)
+        repeticions_consecutives = re.finditer(
+            r'\b(molt|tan|ben|poc|massa)\s*,?\s*\1\b',
+            text, re.IGNORECASE
+        )
+        for match in repeticions_consecutives:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.CALC_SINTACTIC,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="Repetició per èmfasi (patró anglès)",
+                suggeriment="Usar superlatiu o intensificador català",
+                severitat=5.0,
+                llengua_origen="anglès",
+            ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 4. "JUST" + VERB (just becoming, just arrived)
+        # ═══════════════════════════════════════════════════════════════════
+        just_verb = re.finditer(
+            r'\bjust\s+(esdeveni|arriba|comença|acaba|entra|sorti)\w*\b',
+            text, re.IGNORECASE
+        )
+        for match in just_verb:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.CALC_SINTACTIC,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="«just» + verb (just becoming)",
+                suggeriment="Usar «acabar de», «tot just», o reformular",
+                severitat=5.0,
+                llengua_origen="anglès",
+            ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 5. GERUNDIS EXCESSIUS
+        # ═══════════════════════════════════════════════════════════════════
+        # Gerundi com a subjecte
         gerundi_subjecte = re.finditer(
-            r'\b(El|La)\s+(nedar|córrer|llegir|escriure|caminar|menjar)\s+(és|resulta)\b',
+            r'\b(El|La)\s+\w+ar\s+(és|era|fou|resulta|sembla)\b',
             text, re.IGNORECASE
         )
         for match in gerundi_subjecte:
@@ -363,9 +495,108 @@ class DetectorCalcs:
                 tipus=TipusCalc.GERUNDI_ANGLES,
                 text_original=match.group(),
                 posicio=(match.start(), match.end()),
-                explicacio="Gerundi com a subjecte (calc de l'anglès)",
-                suggeriment="Considerar infinitiu o reformular",
+                explicacio="Gerundi/infinitiu substantivat com a subjecte",
+                suggeriment="Considerar reformular amb substantiu o oració",
                 severitat=4.0,
+                llengua_origen="anglès",
+            ))
+
+        # Gerundi progressiu anglès
+        progressiu = re.finditer(
+            r'\b(estava|estaven|estic|estàs|està|estem|esteu|estan)\s+\w+(ant|ent|int)\b',
+            text, re.IGNORECASE
+        )
+        for match in progressiu:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.GERUNDI_ANGLES,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="Perífrasi progressiva (I am doing)",
+                suggeriment="Valorar imperfet simple o altra construcció",
+                severitat=4.0,
+                llengua_origen="anglès",
+            ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 6. PASSIVA AMB AGENT (was done by)
+        # ═══════════════════════════════════════════════════════════════════
+        passiva_agent = re.finditer(
+            r'\b(va ser|fou|ha estat|havia estat|serà)\s+\w+(at|it|ut|ada|ida|uda)\s+per\s+',
+            text, re.IGNORECASE
+        )
+        for match in passiva_agent:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.PASSIVA_EXCESSIVA,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="Passiva amb agent explícit",
+                suggeriment="Preferir veu activa o passiva reflexa",
+                severitat=6.0,
+                llengua_origen="anglès",
+            ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 7. PHRASAL VERBS TRADUÏTS LITERALMENT
+        # ═══════════════════════════════════════════════════════════════════
+        phrasal_verbs = [
+            (r'\bportar a terme\b', "portar a terme (to carry out)", "dur a terme, realitzar, executar", 4.0),
+            (r'\bdonar suport\b', "donar suport (to give support)", "recolzar, secundar, ajudar", 3.0),
+            (r'\bprendre cura\b', "prendre cura (to take care)", "tenir cura, cuidar", 5.0),
+            (r'\bfer-se càrrec\b', "fer-se càrrec (to take charge)", "encarregar-se, assumir", 3.0),
+            (r'\bpagar per\b', "pagar per (to pay for)", "pagar, compensar", 3.0),
+            (r'\bmirar cap a\b', "mirar cap a (to look towards)", "mirar, girar-se vers", 4.0),
+            (r'\bcaure en\s+\w+\b', "caure en (to fall into)", "reformular segons context", 4.0),
+        ]
+
+        for patro, explicacio, suggeriment, severitat in phrasal_verbs:
+            for match in re.finditer(patro, text, re.IGNORECASE):
+                calcs.append(CalcDetectat(
+                    tipus=TipusCalc.CALC_SINTACTIC,
+                    text_original=match.group(),
+                    posicio=(match.start(), match.end()),
+                    explicacio=explicacio,
+                    suggeriment=suggeriment,
+                    severitat=severitat,
+                    llengua_origen="anglès",
+                ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 8. LÈXIC FORÇAT/ARCAIC (interferències de l'anglès)
+        # ═══════════════════════════════════════════════════════════════════
+        lexic_forcat = [
+            (r'\besquinçad[ae]s?\b', "«esquinçades» per desgastades", "malmeses, desgastades, velles", 4.0),
+            (r'\bvivaces\b', "«vivaces» per vibrant", "vibrants, vives, expressives", 4.0),
+            (r'\bfornícula\b', "«fornícula» (massa tècnic)", "nínxol, racó, cavitat", 5.0),
+            (r'\brostro\b', "«rostro» (possible castellanisme)", "rostre, cara, fesomia", 3.0),
+        ]
+
+        for patro, explicacio, suggeriment, severitat in lexic_forcat:
+            for match in re.finditer(patro, text, re.IGNORECASE):
+                calcs.append(CalcDetectat(
+                    tipus=TipusCalc.FALS_AMIC,
+                    text_original=match.group(),
+                    posicio=(match.start(), match.end()),
+                    explicacio=explicacio,
+                    suggeriment=suggeriment,
+                    severitat=severitat,
+                    llengua_origen="anglès",
+                ))
+
+        # ═══════════════════════════════════════════════════════════════════
+        # 9. CONSTRUCCIONS RELATIVES PESADES (which/that)
+        # ═══════════════════════════════════════════════════════════════════
+        relatives_pesades = re.finditer(
+            r'\b(el qual|la qual|els quals|les quals)\s+\w+\s+\w+\s+\w+\s+(havia|va|és|era)\b',
+            text, re.IGNORECASE
+        )
+        for match in relatives_pesades:
+            calcs.append(CalcDetectat(
+                tipus=TipusCalc.CALC_SINTACTIC,
+                text_original=match.group(),
+                posicio=(match.start(), match.end()),
+                explicacio="Relatiu pesat (which + long clause)",
+                suggeriment="Simplificar amb «que» o dividir la frase",
+                severitat=5.0,
                 llengua_origen="anglès",
             ))
 
@@ -659,19 +890,53 @@ class DetectorCalcs:
         return severitats.get(tipus, 5.0)
 
     def _calcular_puntuacio(self, text: str, calcs: list[CalcDetectat]) -> float:
-        """Calcula puntuació de fluïdesa (10 = perfecte)."""
+        """Calcula puntuació de fluïdesa (10 = perfecte).
+
+        CALIBRACIÓ: Textos més llargs toleren més calcs (densitat).
+        Un calc greu cada 200 paraules és acceptable.
+        """
         if not calcs:
             return 10.0
 
-        # Penalitzar segons nombre i severitat
-        penalitzacio = sum(c.severitat * 0.1 for c in calcs)
-
-        # Ajustar per longitud del text (més text = més tolerància)
         paraules = len(text.split())
-        factor_longitud = min(1.0, paraules / 100)  # Normalitzar
 
-        puntuacio = 10.0 - (penalitzacio * factor_longitud)
-        return max(0.0, min(10.0, puntuacio))
+        # Calcular DENSITAT de calcs (calcs per 100 paraules)
+        densitat = (len(calcs) / max(paraules, 1)) * 100
+
+        # Calcular severitat mitjana
+        severitat_mitjana = sum(c.severitat for c in calcs) / len(calcs)
+
+        # Penalització per densitat (escala logarítmica per evitar penalitzacions extremes)
+        # - 0 calcs/100p = 10 punts
+        # - 1 calc/100p = ~9 punts (acceptable)
+        # - 2 calcs/100p = ~7.5 punts (notar)
+        # - 5 calcs/100p = ~5 punts (problemàtic)
+        # - 10+ calcs/100p = <3 punts (crític)
+        import math
+        penalitzacio_densitat = min(7.0, densitat * 1.2 + math.log1p(densitat) * 0.5)
+
+        # Factor de severitat (multiplicador 0.8-1.2)
+        factor_severitat = 0.8 + (severitat_mitjana / 10) * 0.4
+
+        # Penalització total
+        penalitzacio_total = penalitzacio_densitat * factor_severitat
+
+        # Calcular puntuació base
+        puntuacio = 10.0 - penalitzacio_total
+
+        # Caps durs per NOMBRE ABSOLUT de calcs (independent de densitat)
+        # Perquè fins i tot en textos llargs, massa calcs és problemàtic
+        num_calcs = len(calcs)
+        if num_calcs >= 10:
+            puntuacio = min(puntuacio, 4.5)  # Massa calcs
+        elif num_calcs >= 8:
+            puntuacio = min(puntuacio, 5.5)
+        elif num_calcs >= 5:
+            puntuacio = min(puntuacio, 6.5)
+        elif num_calcs >= 3:
+            puntuacio = min(puntuacio, 7.5)
+
+        return max(0.0, min(10.0, round(puntuacio, 1)))
 
     def _generar_resum(self, calcs: list[CalcDetectat]) -> str:
         """Genera un resum dels calcs detectats."""
