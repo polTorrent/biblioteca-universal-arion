@@ -2,6 +2,38 @@
 
 Tots els canvis notables del projecte.
 
+## [2.4.0] - 2026-02-02
+
+### Afegit
+- **Correcció Normativa Automàtica**: LanguageTool ara aplica correccions dins del pipeline
+- `agents/corrector_normatiu.py`: Nou agent de correcció normativa
+- Configuració granular: `categories_auto` vs `categories_informe`
+- Límit de seguretat per correccions per chunk (`max_correccions_chunk`)
+- Tests complets per al corrector normatiu
+
+### Millorat
+- Pipeline V2 ara inclou pas de correcció normativa després del perfeccionament
+- Avisos de gramàtica/estil per revisió humana (no corregits automàticament)
+- `ResultatChunk` ara inclou `correccio_normativa` amb estadístiques detallades
+- Nova fase `CORREGINT` a l'enum `FasePipeline`
+
+### Flux actualitzat
+```
+Traductor → Revisor → Perfeccionament → Corrector Normatiu → Anotador
+```
+
+### Configuració
+```python
+ConfiguracioPipelineV2(
+    fer_correccio_normativa=True,  # Activar/desactivar
+    config_corrector=ConfiguracioCorrector(
+        categories_auto=["ortografia", "tipografia", "puntuacio"],
+        categories_informe=["gramatica", "estil", "barbarisme"],
+        max_correccions_chunk=50,
+    )
+)
+```
+
 ## [2.3.0] - 2026-01-30
 
 ### Afegit
