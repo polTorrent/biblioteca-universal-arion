@@ -365,89 +365,111 @@ class AvaluadorFluidesa(BaseAgent):
 
     @property
     def system_prompt(self) -> str:
-        return """Ets un avaluador expert de FLUÏDESA en català.
+        return """Ets un avaluador expert de FLUÏDESA en català per a traduccions literàries.
 
-EL TEU ÚNIC OBJECTIU és determinar si el text sona NATURAL per a un lector català actual.
-
-══════════════════════════════════════════════════════════════════════════════
-IGNORA COMPLETAMENT (NO ÉS LA TEVA FEINA):
-══════════════════════════════════════════════════════════════════════════════
-- Si el significat és exacte respecte l'original
-- Si preserva el to de l'autor
-- Qüestions de contingut o interpretació
-- Si la terminologia és precisa
+EL TEU ÚNIC OBJECTIU és determinar si el text sona NATURAL per a un lector català culte.
 
 ══════════════════════════════════════════════════════════════════════════════
-AVALUA AQUESTES 4 SUBCATEGORIES:
+FORA DEL TEU ÀMBIT (NO AVALUIS):
 ══════════════════════════════════════════════════════════════════════════════
-
-1. SINTAXI (puntuació 1-10)
-   - L'ordre de les paraules és natural en català?
-   - Les subordinades flueixen bé o són forçades?
-   - Hi ha estructures calcades d'altres llengües?
-   - Problemes típics: inversions estranyes, complements mal col·locats
-
-2. LÈXIC (puntuació 1-10)
-   - Les paraules són les que un català usaria naturalment?
-   - Les expressions són genuïnes o són calcs?
-   - Hi ha falsos amics o interferències?
-   - El registre lèxic és consistent?
-
-3. NORMATIVA IEC (puntuació 1-10)
-   - Ortografia correcta (accents, apòstrofs, dièresi, guionets)
-   - Gramàtica correcta (concordances, règims verbals, pronoms febles)
-   - Puntuació adequada (comes, punt i coma, guions llargs)
-   - Lèxic normatiu (evitar castellanismes i barbarismes)
-
-4. LLEGIBILITAT (puntuació 1-10)
-   - Es llegeix sense esforç?
-   - Cal rellegir per entendre?
-   - El text "flueix" o s'encalla?
+- Fidelitat al significat original
+- Preservació del to o veu de l'autor
+- Qüestions d'interpretació o contingut
 
 ══════════════════════════════════════════════════════════════════════════════
-CALCS A DETECTAR (segons llengua origen):
+RÚBRICA D'AVALUACIÓ (4 DIMENSIONS)
 ══════════════════════════════════════════════════════════════════════════════
-- Anglès: gerundis excessius, passives, phrasal verbs literals
-- Francès: "c'est...qui/que" → "és...que", falsos amics (attendre)
-- Castellà: "o sigui", "pues", "mientras que" literal
-- Llatí: hipèrbatons innecessaris, ablatius mal resolts
-- Japonès: ordre SOV residual, subjectes omesos que calen
+
+1. SINTAXI (ordre i estructura de frases)
+   ├─ 9-10: Cap construcció forçada. Ordre natural en tots els casos.
+   ├─ 7-8:  1-2 girs lleugerament forçats que no afecten comprensió.
+   ├─ 5-6:  3-5 construccions que sonen a "traducció".
+   ├─ 3-4:  Múltiples inversions estranyes, subordinades forçades.
+   └─ 1-2:  Estructura incomprensible sense l'original.
+
+2. LÈXIC (vocabulari i expressions)
+   ├─ 9-10: Vocabulari genuí. Col·locacions naturals. Cap interferència.
+   ├─ 7-8:  1-2 expressions millorables però no incorrectes.
+   ├─ 5-6:  3-5 casos de lèxic no idiomàtic o col·locacions forçades.
+   ├─ 3-4:  Interferències constants. Expressions calcades.
+   └─ 1-2:  Lèxic majoritàriament improcedent.
+
+3. NORMATIVA IEC (correcció lingüística)
+   ├─ 9-10: Cap error normatiu (o màxim 1 tipogràfic).
+   ├─ 7-8:  1-3 errors menors (accents, puntuació).
+   ├─ 5-6:  4-6 errors o 1-2 errors sistemàtics.
+   ├─ 3-4:  Múltiples errors que requereixen correcció professional.
+   └─ 1-2:  Errors greus i constants. No publicable.
+
+4. LLEGIBILITAT (fluïdesa de lectura)
+   ├─ 9-10: Es llegeix sense cap esforç. Podria ser prosa original.
+   ├─ 7-8:  Lectura fluida amb algun passatge que demana atenció.
+   ├─ 5-6:  Cal rellegir 2-4 frases per paràgraf.
+   ├─ 3-4:  Lectura feixuga. S'encalla sovint.
+   └─ 1-2:  Comprensió molt difícil sense l'original.
 
 ══════════════════════════════════════════════════════════════════════════════
-PREGUNTA CLAU:
+CÀLCUL DE LA PUNTUACIÓ GLOBAL
 ══════════════════════════════════════════════════════════════════════════════
-Si no sabéssiu que és una traducció, semblaria escrit ORIGINALMENT en català?
+
+GLOBAL = (SINTAXI × 0.25) + (LÈXIC × 0.25) + (NORMATIVA × 0.25) + (LLEGIBILITAT × 0.25)
+
+PENALITZACIONS OBLIGATÒRIES:
+- Si NORMATIVA < 5 → GLOBAL = GLOBAL × 0.9
+- Si calcs ≥ 5 → GLOBAL = min(GLOBAL, 6.0)
+- Si qualsevol dimensió < 3 → GLOBAL = min(GLOBAL, 4.0)
 
 ══════════════════════════════════════════════════════════════════════════════
-ESCALA DE PUNTUACIÓ GLOBAL:
+EXEMPLES DE CALCS PER LLENGUA (ATENCIÓ ESPECIAL!)
 ══════════════════════════════════════════════════════════════════════════════
-9-10: Sembla escrit originalment en català, perfectament natural
-7-8:  Natural amb petites rigideses ocasionals
-5-6:  Es nota que és traducció, però llegible sense esforç
-3-4:  Força rígid, calcs evidents, requereix esforç
-1-2:  Clarament "traduït", difícil de llegir
+
+ANGLÈS (CRÍTICS - molt comuns i sovint subtils):
+├─ Expressions: "per totes les aparences" → "tot indicava"
+│              "més aviat que no pas" → "en lloc de", "per no"
+│              "fer sentit" → "tenir sentit"
+│              "prendre lloc" → "passar", "ocórrer"
+├─ Verbs: "vaig manar" (bade) → "vaig demanar", "vaig dir"
+│         "realitzar" (realize) → "adonar-se"
+├─ Repeticions: "Llargament—llargament" → "durant llarga estona"
+├─ Gerundis progressius: "estava fent" → imperfet simple
+├─ Passives: "fou fet per ell" → veu activa o reflexa
+├─ Phrasal verbs: "portar a terme" → "dur a terme", "fer"
+├─ "just + verb": "just esdevenia" → "tot just", "acabava de"
+└─ Lèxic: "vivaces" → "vives", "fornícula" → "nínxol"
+
+CASTELLÀ: "o sigui", "des de ja", "per suposat", "a nivell de"
+FRANCÈS: estructura "és...que" forçada, falsos amics (atendre→esperar)
+LLATÍ: hipèrbatons extrems, ablatius absoluts sense resoldre
 
 ══════════════════════════════════════════════════════════════════════════════
-FORMAT DE RESPOSTA (JSON ESTRICTE):
+FORMAT DE RESPOSTA (JSON ESTRICTE)
 ══════════════════════════════════════════════════════════════════════════════
 {
-    "puntuacio": <número 1-10>,
-    "sintaxi": {"puntuacio": <1-10>, "problemes": ["problema 1", "problema 2"]},
-    "lexic": {"puntuacio": <1-10>, "problemes": ["problema 1", "problema 2"]},
-    "normativa": {"puntuacio": <1-10>, "problemes": ["problema 1", "problema 2"]},
-    "llegibilitat": {"puntuacio": <1-10>, "problemes": ["problema 1"]},
+    "puntuacio": <1.0-10.0, 1 decimal>,
+    "sintaxi": {"puntuacio": <1-10>, "problemes": ["problema concret 1"]},
+    "lexic": {"puntuacio": <1-10>, "problemes": ["problema concret 1"]},
+    "normativa": {"puntuacio": <1-10>, "problemes": ["problema concret 1"]},
+    "llegibilitat": {"puntuacio": <1-10>, "problemes": ["problema concret 1"]},
     "errors_normatius": [
         {
             "tipus": "<ortografia|gramatica|puntuacio|lexic>",
             "fragment": "<text incorrecte>",
-            "correccio": "<text correcte>",
-            "explicacio": "<per què és incorrecte>"
+            "correccio": "<correcció>",
+            "explicacio": "<norma IEC violada>"
         }
     ],
-    "calcs_detectats": ["calc 1: explicació", "calc 2: explicació"],
-    "feedback_refinament": "<instruccions ESPECÍFIQUES per millorar la fluïdesa.
-                            No diguis 'millorar la sintaxi', sinó 'canviar X per Y'>"
-}"""
+    "calcs_detectats": ["<tipus>: «fragment» → <alternativa>"],
+    "feedback_refinament": "<INSTRUCCIONS CONCRETES: 'Canviar X per Y'. Màx 200 paraules>"
+}
+
+══════════════════════════════════════════════════════════════════════════════
+RESTRICCIONS DEL FEEDBACK
+══════════════════════════════════════════════════════════════════════════════
+✗ MAI: "millorar la sintaxi", "fer més natural", "revisar el lèxic"
+✓ SEMPRE: "Canviar «més aviat que» per «en lloc de»"
+✓ SEMPRE: "Reordenar «al qual el meu criat» → «on el meu criat»"
+
+Cada instrucció ha de ser EXECUTABLE sense interpretació."""
 
     def avaluar(self, context: ContextAvaluacio) -> AvaluacioFluidesa:
         """Avalua la fluïdesa del text català.
@@ -544,12 +566,57 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                     if not any(auto in c or c in auto for auto in calcs_automatics)
                 ]
 
-                # Ajustar puntuació si el detector automàtic ha trobat molts calcs
-                puntuacio_llm = safe_float(data, "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0)
-                puntuacio_detector = resultat_detector.puntuacio_fluidesa
+                # ═══════════════════════════════════════════════════════════════
+                # VALIDACIÓ DE COHERÈNCIA (Nova rúbrica calibrada)
+                # ═══════════════════════════════════════════════════════════════
+                subpuntuacions = {
+                    "sintaxi": safe_float(data.get("sintaxi", {}), "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0),
+                    "lexic": safe_float(data.get("lexic", {}), "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0),
+                    "normativa": safe_float(data.get("normativa", {}), "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0),
+                    "llegibilitat": safe_float(data.get("llegibilitat", {}), "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0),
+                }
 
-                # Ponderar: 55% LLM, 25% detector calcs, 20% LanguageTool
-                puntuacio_final = (puntuacio_llm * 0.55) + (puntuacio_detector * 0.25) + (puntuacio_lt * 0.20)
+                # Calcular puntuació global segons la fórmula del prompt
+                puntuacio_calculada = sum(subpuntuacions.values()) / 4
+
+                # Aplicar penalitzacions obligatòries (CALIBRADES MÉS ESTRICTES)
+                if subpuntuacions["normativa"] < 5:
+                    puntuacio_calculada *= 0.9
+                    self.log_info("Penalització normativa aplicada (×0.9)")
+
+                # PENALITZACIÓ GRADUAL PER CALCS (més estricta)
+                num_calcs = len(calcs_combinats)
+                if num_calcs >= 8:
+                    puntuacio_calculada = min(puntuacio_calculada, 5.0)
+                    self.log_info(f"Penalització SEVERA per calcs (≥8 calcs: {num_calcs})")
+                elif num_calcs >= 5:
+                    puntuacio_calculada = min(puntuacio_calculada, 6.0)
+                    self.log_info(f"Penalització per calcs (≥5 calcs: {num_calcs})")
+                elif num_calcs >= 3:
+                    puntuacio_calculada = min(puntuacio_calculada, 7.0)
+                    self.log_info(f"Penalització lleu per calcs (≥3 calcs: {num_calcs})")
+
+                if any(p < 3 for p in subpuntuacions.values()):
+                    puntuacio_calculada = min(puntuacio_calculada, 4.0)
+                    dim_baixa = [k for k, v in subpuntuacions.items() if v < 3]
+                    self.log_info(f"Penalització per dimensió crítica: {dim_baixa}")
+
+                # Validar coherència amb puntuació del LLM
+                puntuacio_llm = safe_float(data, "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0)
+                if abs(puntuacio_llm - puntuacio_calculada) > 1.0:
+                    self.log_warning(
+                        f"Puntuació inconsistent: LLM={puntuacio_llm}, calculada={puntuacio_calculada:.1f}"
+                    )
+                    # Usar la calculada per garantir coherència
+                    puntuacio_base = puntuacio_calculada
+                else:
+                    # Usar mitjana ponderada si són coherents
+                    puntuacio_base = (puntuacio_llm * 0.6) + (puntuacio_calculada * 0.4)
+
+                # Integrar amb detector automàtic i LanguageTool
+                puntuacio_detector = resultat_detector.puntuacio_fluidesa
+                # Ponderar: 55% base (LLM+càlcul), 25% detector calcs, 20% LanguageTool
+                puntuacio_final = (puntuacio_base * 0.55) + (puntuacio_detector * 0.25) + (puntuacio_lt * 0.20)
 
                 # Generar feedback ampliat
                 feedback_llm = safe_str(data, "feedback_refinament")
