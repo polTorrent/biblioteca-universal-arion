@@ -1,20 +1,5 @@
 #!/usr/bin/env python3
-"""Template per traduir una obra nova.
-
-INSTRUCCIONS:
-1. Copia aquest fitxer amb un nom descriptiu (ex: traduir_nom_obra.py)
-2. Modifica les variables de configuració a la secció CONFIGURACIÓ
-3. Executa: python scripts/traduir_nom_obra.py
-
-El procés farà:
-1. Llegir el text original
-2. Crear glossari terminològic
-3. Traduir amb avaluació i refinament
-4. Formatar capítols (original i traducció)
-5. Generar portada
-6. Actualitzar metadata
-7. Publicar a la web (build)
-"""
+"""Traducció de 'The Oval Portrait' d'Edgar Allan Poe al català."""
 
 import os
 import sys
@@ -36,28 +21,27 @@ from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_f
 from scripts.utils import crear_metadata_yml
 
 # ═══════════════════════════════════════════════════════════════════════════════
-# CONFIGURACIÓ - MODIFICA AQUESTES VARIABLES
+# CONFIGURACIÓ
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # Ruta a l'obra (relatiu a la carpeta obres/)
-# Ex: "narrativa/akutagawa/biombo-infern", "filosofia/plato/criton"
-OBRA_PATH = "narrativa/AUTOR/NOM_OBRA"
+OBRA_PATH = "narrativa/edgar-allan-poe/el-retrat-oval"
 
 # Metadades de l'obra
-TITOL = "Títol de l'Obra"
-AUTOR = "Nom de l'Autor"
-LLENGUA_ORIGEN = "anglès"  # japonès, grec, alemany, llatí, etc.
-GENERE = "narrativa"  # narrativa, filosofia, poesia, teatre
+TITOL = "El retrat oval"
+AUTOR = "Edgar Allan Poe"
+LLENGUA_ORIGEN = "anglès"
+GENERE = "narrativa"
 
 # Configuració del pipeline
 CONFIG = {
     "fer_analisi_previa": True,
     "crear_glossari": True,
-    "fer_chunking": True,
-    "max_chars_chunk": 2500,  # Chunks més petits = millor qualitat però més lent
+    "fer_chunking": False,  # Text curt, no cal chunking
+    "max_chars_chunk": 2500,
     "fer_avaluacio": True,
     "fer_refinament": True,
-    "llindar_qualitat": 7.5,  # Puntuació mínima per aprovar
+    "llindar_qualitat": 7.5,
     "max_iteracions_refinament": 2,
     "mostrar_dashboard": True,
     "dashboard_port": 5050,
@@ -97,17 +81,17 @@ def main():
     with open(original_path, "r", encoding="utf-8") as f:
         text_original = f.read()
 
-    # Netejar metadades de fonts digitals (Aozora Bunko, Project Gutenberg, etc.)
+    # Netejar metadades de fonts digitals
     text_original = netejar_metadades_font(text_original)
 
-    # Netejar capçalera si existeix (buscar primer capítol)
+    # Netejar capçalera si existeix
     text_narratiu = text_original
 
-    # Detectar inici del contingut (primer ## o primer capítol numerat)
+    # Detectar inici del contingut (primer paràgraf després de ---)
     import re
-    match = re.search(r'^(##\s+|[一二三四五六七八九十]+\s*$|[IVXLCDM]+\s*$)', text_original, re.MULTILINE)
+    match = re.search(r'^---\s*\n+(.+)', text_original, re.MULTILINE | re.DOTALL)
     if match:
-        text_narratiu = text_original[match.start():]
+        text_narratiu = match.group(1).strip()
 
     # Treure peu de pàgina si existeix
     for footer in ['*Text de domini públic', '*Traducció de domini públic', '---\n\n*']:
@@ -118,9 +102,8 @@ def main():
     print()
 
     # Configurar pipeline
-    # IMPORTANT: directori_obra assegura que les notes i estat es guarden al lloc correcte
     config = ConfiguracioPipelineV2(
-        directori_obra=obra_dir,
+        directori_obra=obra_dir,  # IMPORTANT: assegurar que les notes es guarden al lloc correcte
         fer_analisi_previa=CONFIG["fer_analisi_previa"],
         crear_glossari=CONFIG["crear_glossari"],
         fer_chunking=CONFIG["fer_chunking"],
@@ -155,7 +138,7 @@ def main():
     traduccio_final = f"""# {TITOL}
 *{AUTOR}*
 
-Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion
+Traduït de l'{LLENGUA_ORIGEN} per Biblioteca Arion
 
 ---
 

@@ -730,11 +730,18 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Si no hi ha prou capítols, amagar navegació i sortir
+    // Si no hi ha prou capítols, amagar TOTA la navegació i sortir
     if (chapters.length <= 1) {
+        // Amagar navegació inferior
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        // tocToggle ja està ocult per CSS per defecte
+        // Amagar botó índex
+        if (tocToggle) tocToggle.style.display = 'none';
+        // Amagar panell índex
+        if (tocPanel) tocPanel.style.display = 'none';
+        // Amagar botons navegació superior
+        if (prevBtnTop) prevBtnTop.style.display = 'none';
+        if (nextBtnTop) nextBtnTop.style.display = 'none';
         return;
     }
 
