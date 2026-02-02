@@ -11,7 +11,6 @@ Diferències amb el traductor v1:
 - Genera traducció + justificació de decisions
 """
 
-import json
 from typing import TYPE_CHECKING
 
 from pydantic import BaseModel, Field

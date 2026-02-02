@@ -8,8 +8,6 @@ S'executa abans de la traducció per proporcionar:
 - Notes per a l'anotador crític
 """
 
-import json
-import re
 from typing import Any
 
 from pydantic import BaseModel, Field

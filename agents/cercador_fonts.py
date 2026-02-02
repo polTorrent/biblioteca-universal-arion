@@ -1,10 +1,32 @@
-"""Agent Pescador de Textos per buscar i descarregar clàssics de domini públic."""
+"""Agent Pescador de Textos per buscar i descarregar clàssics de domini públic.
 
+Inclou fallback amb Gemini AI per cercar textos a internet quan les fonts
+tradicionals no estan disponibles.
+"""
+
+import os
+import time
 from typing import Literal
 
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+
+# Intentar importar Gemini (nou SDK)
+try:
+    from google import genai
+    from google.genai import types
+    GEMINI_AVAILABLE = True
+except ImportError:
+    try:
+        # Fallback a SDK antic (deprecated)
+        import google.generativeai as genai
+        types = None
+        GEMINI_AVAILABLE = True
+    except ImportError:
+        GEMINI_AVAILABLE = False
+        genai = None
+        types = None
 
 
 class TextSource(BaseModel):
@@ -184,3 +206,161 @@ Inclou:
 4. Com codificar correctament els caràcters grecs/llatins"""
 
         return self.process(prompt)
+
+    def search_with_gemini(
+        self,
+        autor: str,
+        titol: str,
+        llengua: str = "francès",
+        obtenir_text_complet: bool = True,
+    ) -> dict:
+        """Cerca un text amb Gemini AI usant Google Search grounding.
+
+        Gemini pot buscar a internet i retornar text de fonts de domini públic.
+
+        Args:
+            autor: Nom de l'autor.
+            titol: Títol de l'obra.
+            llengua: Llengua original del text.
+            obtenir_text_complet: Si True, intenta obtenir el text complet.
+
+        Returns:
+            Dict amb 'text' (si s'ha trobat), 'font', 'notes'.
+
+        Raises:
+            RuntimeError: Si Gemini no està disponible o falla.
+        """
+        if not GEMINI_AVAILABLE:
+            raise RuntimeError(
+                "Gemini no està disponible. Instal·la amb: pip install google-generativeai"
+            )
+
+        # Configurar Gemini
+        api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+        if not api_key:
+            raise RuntimeError(
+                "Cal configurar GOOGLE_API_KEY o GEMINI_API_KEY per usar Gemini"
+            )
+
+        # Crear client Gemini amb el nou SDK
+        client = genai.Client(api_key=api_key)
+
+        # Configurar Google Search tool per grounding
+        google_search_tool = types.Tool(google_search=types.GoogleSearch())
+
+        start_time = time.time()
+
+        if obtenir_text_complet:
+            prompt = f"""Busca el text COMPLET en {llengua} de l'obra "{titol}" de {autor}.
+
+Aquesta obra és de DOMINI PÚBLIC (l'autor va morir fa més de 70 anys).
+
+INSTRUCCIONS:
+1. Busca el text original complet a Wikisource, Project Gutenberg, Internet Archive, o altres fonts de domini públic
+2. Retorna el TEXT NARRATIU COMPLET de l'obra, no només un resum
+3. Inclou TOTS els capítols/seccions de l'obra
+4. Indica la font d'on has obtingut el text
+
+FORMAT DE RESPOSTA:
+---FONT---
+[URL o nom de la font]
+---TEXT---
+[Text complet de l'obra en {llengua}]
+---FI---
+
+IMPORTANT: Necessito el TEXT COMPLET per poder-lo traduir al català. No escurçis ni resumeixis."""
+        else:
+            prompt = f"""Busca informació sobre on trobar el text complet en {llengua} de "{titol}" de {autor}.
+
+Indica:
+1. Les millors fonts de domini públic (Wikisource, Gutenberg, etc.)
+2. URLs directes al text
+3. Edició recomanada
+4. Notes sobre la disponibilitat"""
+
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.0-flash",
+                contents=prompt,
+                config=types.GenerateContentConfig(
+                    tools=[google_search_tool],
+                    temperature=0.2,
+                ),
+            )
+            duration = time.time() - start_time
+
+            text_response = response.text
+
+            # Parsejar resposta
+            result = {
+                "autor": autor,
+                "titol": titol,
+                "llengua": llengua,
+                "duration_seconds": duration,
+            }
+
+            if "---TEXT---" in text_response and "---FI---" in text_response:
+                # Extreure text i font
+                parts = text_response.split("---TEXT---")
+                font_part = parts[0].replace("---FONT---", "").strip()
+                text_part = parts[1].split("---FI---")[0].strip()
+
+                result["text"] = text_part
+                result["font"] = font_part
+                result["success"] = True
+            else:
+                # Resposta informativa sense text complet
+                result["info"] = text_response
+                result["success"] = False
+
+            return result
+
+        except Exception as e:
+            raise RuntimeError(f"Error en cerca Gemini: {e}") from e
+
+    def obtenir_text_domini_public(
+        self,
+        autor: str,
+        titol: str,
+        llengua: str = "francès",
+    ) -> str | None:
+        """Intenta obtenir un text de domini públic usant múltiples fonts.
+
+        Primer intenta fonts tradicionals (Gutenberg, Wikisource),
+        i si fallen, usa Gemini com a fallback.
+
+        Args:
+            autor: Nom de l'autor.
+            titol: Títol de l'obra.
+            llengua: Llengua original.
+
+        Returns:
+            Text complet si s'ha trobat, None si no.
+        """
+        # Primer intentar amb Claude (fonts tradicionals)
+        search_result = self.search(
+            SearchRequest(
+                autor=autor,
+                titol=titol,
+                llengua=llengua if llengua in ["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès"] else "qualsevol",
+            )
+        )
+
+        # Si Claude ha trobat fonts, retornar la info
+        # (caldria implementar descàrrega automàtica)
+
+        # Fallback a Gemini
+        if GEMINI_AVAILABLE and (os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")):
+            try:
+                gemini_result = self.search_with_gemini(
+                    autor=autor,
+                    titol=titol,
+                    llengua=llengua,
+                    obtenir_text_complet=True,
+                )
+                if gemini_result.get("success") and gemini_result.get("text"):
+                    return gemini_result["text"]
+            except Exception as e:
+                self.log_warning(f"Fallback Gemini ha fallat: {e}")
+
+        return None

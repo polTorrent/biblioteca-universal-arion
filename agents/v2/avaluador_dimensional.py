@@ -6,7 +6,6 @@ té el seu propi avaluador especialitzat, i el FusionadorFeedback combina
 els resultats en un feedback accionable per al refinador.
 """
 
-import json
 from typing import TYPE_CHECKING
 
 from pydantic import BaseModel
@@ -166,12 +165,17 @@ sinó "restaurar la frase X que s'ha omès" o "el terme Y hauria de ser Z"."""
         data = extract_json_from_text(response.content)
         if data:
             try:
+                # Gestionar puntuació null/None
+                puntuacio = data.get("puntuacio")
+                if puntuacio is None:
+                    puntuacio = 5.0
+
                 return AvaluacioFidelitat(
-                    puntuacio=data.get("puntuacio", 5),
+                    puntuacio=float(puntuacio),
                     problemes=[
-                        ProblemaFidelitat(**p) for p in data.get("problemes", [])
+                        ProblemaFidelitat(**p) for p in data.get("problemes") or []
                     ],
-                    feedback_refinament=data.get("feedback_refinament", ""),
+                    feedback_refinament=data.get("feedback_refinament") or "",
                 )
             except (KeyError, TypeError) as e:
                 self.log_warning(f"Error construint avaluació: {e}")
@@ -318,19 +322,28 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
             try:
                 def parse_subavaluacio(key: str) -> SubavaluacioVeu:
                     sub = data.get(key, {})
+                    # Gestionar null/None explícitament
+                    puntuacio = sub.get("puntuacio")
+                    if puntuacio is None:
+                        puntuacio = 5.0
                     return SubavaluacioVeu(
-                        puntuacio=sub.get("puntuacio", 5),
-                        observacions=sub.get("observacions", ""),
+                        puntuacio=float(puntuacio),
+                        observacions=sub.get("observacions") or "",
                     )
 
+                # Gestionar puntuació principal null/None
+                puntuacio_principal = data.get("puntuacio")
+                if puntuacio_principal is None:
+                    puntuacio_principal = 5.0
+
                 return AvaluacioVeuAutor(
-                    puntuacio=data.get("puntuacio", 5),
+                    puntuacio=float(puntuacio_principal),
                     registre=parse_subavaluacio("registre"),
                     to_emocional=parse_subavaluacio("to_emocional"),
                     ritme=parse_subavaluacio("ritme"),
                     idiosincrasies=parse_subavaluacio("idiosincrasies"),
                     recursos_retorics=parse_subavaluacio("recursos_retorics"),
-                    feedback_refinament=data.get("feedback_refinament", ""),
+                    feedback_refinament=data.get("feedback_refinament") or "",
                 )
             except (KeyError, TypeError) as e:
                 self.log_warning(f"Error construint avaluació: {e}")
@@ -524,9 +537,13 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
             try:
                 def parse_subavaluacio(key: str) -> SubavaluacioFluidesa:
                     sub = data.get(key, {})
+                    # Gestionar null/None explícitament
+                    puntuacio = sub.get("puntuacio")
+                    if puntuacio is None:
+                        puntuacio = 5.0
                     return SubavaluacioFluidesa(
-                        puntuacio=sub.get("puntuacio", 5),
-                        problemes=sub.get("problemes", []),
+                        puntuacio=float(puntuacio),
+                        problemes=sub.get("problemes") or [],
                     )
 
                 errors = []
@@ -544,7 +561,10 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                 ]
 
                 # Ajustar puntuació si el detector automàtic ha trobat molts calcs
-                puntuacio_llm = data.get("puntuacio", 5)
+                puntuacio_llm = data.get("puntuacio")
+                if puntuacio_llm is None:
+                    puntuacio_llm = 5.0
+                puntuacio_llm = float(puntuacio_llm)
                 puntuacio_detector = resultat_detector.puntuacio_fluidesa
 
                 # Ponderar: 55% LLM, 25% detector calcs, 20% LanguageTool

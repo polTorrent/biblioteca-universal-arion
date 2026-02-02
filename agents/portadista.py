@@ -6,7 +6,6 @@ Format: Vertical 2:3 per a llibres.
 """
 
 import io
-import json
 from pathlib import Path
 from typing import Literal
 

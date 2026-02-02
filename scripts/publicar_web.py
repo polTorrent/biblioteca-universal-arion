@@ -8,8 +8,15 @@
 """
 
 import argparse
+import os
 import sys
 from pathlib import Path
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
+# Això ha d'anar ABANS d'importar els agents
+# ═══════════════════════════════════════════════════════════════════════════════
+os.environ["CLAUDECODE"] = "1"
 
 # Afegir el directori arrel al path
 sys.path.insert(0, str(Path(__file__).parent.parent))

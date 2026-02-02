@@ -30,48 +30,10 @@ import io
 import os
 import requests
 from pathlib import Path
-from typing import Literal
-
 from PIL import Image
 from pydantic import BaseModel, Field
 
-try:
-    from agents.base_agent import AgentConfig, BaseAgent
-    from agents.venice_client import VeniceClient, VeniceError
-except ImportError:
-    from abc import ABC, abstractmethod
-
-    class AgentConfig(BaseModel):
-        model: str = "claude-sonnet-4-20250514"
-        max_tokens: int = 2048
-        temperature: float = 0.7
-
-    class BaseAgent(ABC):
-        agent_name: str = "BaseAgent"
-
-        def __init__(self, config: AgentConfig | None = None):
-            self.config = config or AgentConfig()
-
-        @property
-        @abstractmethod
-        def system_prompt(self) -> str:
-            ...
-
-        def log_info(self, msg: str) -> None:
-            print(f"ℹ️  {msg}")
-
-        def log_warning(self, msg: str) -> None:
-            print(f"⚠️  {msg}")
-
-        def log_error(self, msg: str) -> None:
-            print(f"❌ {msg}")
-
-    class VeniceClient:
-        def __init__(self, api_key: str | None = None):
-            self.api_key = api_key or os.getenv("VENICE_API_KEY")
-
-    class VeniceError(Exception):
-        pass
+from agents.base_agent import AgentConfig, BaseAgent
 
 
 # ═══════════════════════════════════════════════════════════════════════════

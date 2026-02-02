@@ -308,7 +308,7 @@ class ProblemaFidelitat(BaseModel):
     segment_original: str | None = Field(default=None, description="Fragment de l'original afectat")
     segment_traduit: str | None = Field(default=None, description="Fragment de la traducció")
     explicacio: str = Field(..., description="Explicació del problema")
-    gravetat: int = Field(ge=1, le=3, default=1, description="Gravetat: 1=menor, 2=mitjà, 3=greu")
+    gravetat: int = Field(ge=0, le=3, default=1, description="Gravetat: 0=cap, 1=menor, 2=mitjà, 3=greu")
 
 
 class AvaluacioFidelitat(BaseModel):

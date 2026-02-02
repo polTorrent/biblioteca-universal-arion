@@ -80,6 +80,7 @@ api_keys.txt
 # Test files
 test_*.png
 portada_*_final.png
+*-test/
 
 # Translation pipeline outputs
 obres/*/logs/
