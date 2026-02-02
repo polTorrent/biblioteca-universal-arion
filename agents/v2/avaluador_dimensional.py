@@ -11,6 +11,7 @@ from typing import TYPE_CHECKING
 from pydantic import BaseModel
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
+from agents.utils import safe_float, safe_str, safe_list, DEFAULT_PUNTUACIO
 from utils.detector_calcs import detectar_calcs, ResultatDeteccio
 
 # LanguageTool per correcció normativa
@@ -165,25 +166,21 @@ sinó "restaurar la frase X que s'ha omès" o "el terme Y hauria de ser Z"."""
         data = extract_json_from_text(response.content)
         if data:
             try:
-                # Gestionar puntuació null/None
-                puntuacio = data.get("puntuacio")
-                if puntuacio is None:
-                    puntuacio = 5.0
-
                 return AvaluacioFidelitat(
-                    puntuacio=float(puntuacio),
-                    problemes=[
-                        ProblemaFidelitat(**p) for p in data.get("problemes") or []
-                    ],
-                    feedback_refinament=data.get("feedback_refinament") or "",
+                    puntuacio=safe_float(data, "puntuacio", DEFAULT_PUNTUACIO, min_val=0, max_val=10),
+                    problemes=safe_list(
+                        data, "problemes",
+                        item_parser=lambda p: ProblemaFidelitat(**p) if isinstance(p, dict) else None
+                    ),
+                    feedback_refinament=safe_str(data, "feedback_refinament"),
                 )
             except (KeyError, TypeError) as e:
                 self.log_warning(f"Error construint avaluació: {e}")
 
-        # Retornar avaluació per defecte amb puntuació alta per no bloquejar
-        self.log_warning("No s'ha pogut parsejar JSON, assumint traducció acceptable")
+        # Retornar avaluació per defecte
+        self.log_warning("No s'ha pogut parsejar JSON, usant valors per defecte")
         return AvaluacioFidelitat(
-            puntuacio=7.5,
+            puntuacio=DEFAULT_PUNTUACIO,
             problemes=[],
             feedback_refinament="",
         )
@@ -321,37 +318,28 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
         if data:
             try:
                 def parse_subavaluacio(key: str) -> SubavaluacioVeu:
-                    sub = data.get(key, {})
-                    # Gestionar null/None explícitament
-                    puntuacio = sub.get("puntuacio")
-                    if puntuacio is None:
-                        puntuacio = 5.0
+                    sub = data.get(key, {}) or {}
                     return SubavaluacioVeu(
-                        puntuacio=float(puntuacio),
-                        observacions=sub.get("observacions") or "",
+                        puntuacio=safe_float(sub, "puntuacio", DEFAULT_PUNTUACIO, min_val=0, max_val=10),
+                        observacions=safe_str(sub, "observacions"),
                     )
 
-                # Gestionar puntuació principal null/None
-                puntuacio_principal = data.get("puntuacio")
-                if puntuacio_principal is None:
-                    puntuacio_principal = 5.0
-
                 return AvaluacioVeuAutor(
-                    puntuacio=float(puntuacio_principal),
+                    puntuacio=safe_float(data, "puntuacio", DEFAULT_PUNTUACIO, min_val=0, max_val=10),
                     registre=parse_subavaluacio("registre"),
                     to_emocional=parse_subavaluacio("to_emocional"),
                     ritme=parse_subavaluacio("ritme"),
                     idiosincrasies=parse_subavaluacio("idiosincrasies"),
                     recursos_retorics=parse_subavaluacio("recursos_retorics"),
-                    feedback_refinament=data.get("feedback_refinament") or "",
+                    feedback_refinament=safe_str(data, "feedback_refinament"),
                 )
             except (KeyError, TypeError) as e:
                 self.log_warning(f"Error construint avaluació: {e}")
 
-        # Retornar avaluació per defecte amb puntuació alta per no bloquejar
-        self.log_warning("No s'ha pogut parsejar JSON, assumint traducció acceptable")
+        # Retornar avaluació per defecte
+        self.log_warning("No s'ha pogut parsejar JSON, usant valors per defecte")
         return AvaluacioVeuAutor(
-            puntuacio=7.5,
+            puntuacio=DEFAULT_PUNTUACIO,
             feedback_refinament="",
         )
 
@@ -537,13 +525,9 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
             try:
                 def parse_subavaluacio(key: str) -> SubavaluacioFluidesa:
                     sub = data.get(key, {})
-                    # Gestionar null/None explícitament
-                    puntuacio = sub.get("puntuacio")
-                    if puntuacio is None:
-                        puntuacio = 5.0
                     return SubavaluacioFluidesa(
-                        puntuacio=float(puntuacio),
-                        problemes=sub.get("problemes") or [],
+                        puntuacio=safe_float(sub, "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0),
+                        problemes=safe_list(sub, "problemes"),
                     )
 
                 errors = []
@@ -554,24 +538,21 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                         self.log_warning(f"Error parsejant ErrorNormatiu: {err}")
 
                 # Combinar calcs del LLM amb els automàtics (sense duplicats)
-                calcs_llm = data.get("calcs_detectats", [])
+                calcs_llm = safe_list(data, "calcs_detectats")
                 calcs_combinats = calcs_automatics + [
                     c for c in calcs_llm
                     if not any(auto in c or c in auto for auto in calcs_automatics)
                 ]
 
                 # Ajustar puntuació si el detector automàtic ha trobat molts calcs
-                puntuacio_llm = data.get("puntuacio")
-                if puntuacio_llm is None:
-                    puntuacio_llm = 5.0
-                puntuacio_llm = float(puntuacio_llm)
+                puntuacio_llm = safe_float(data, "puntuacio", DEFAULT_PUNTUACIO, 0.0, 10.0)
                 puntuacio_detector = resultat_detector.puntuacio_fluidesa
 
                 # Ponderar: 55% LLM, 25% detector calcs, 20% LanguageTool
                 puntuacio_final = (puntuacio_llm * 0.55) + (puntuacio_detector * 0.25) + (puntuacio_lt * 0.20)
 
                 # Generar feedback ampliat
-                feedback_llm = data.get("feedback_refinament", "")
+                feedback_llm = safe_str(data, "feedback_refinament")
                 feedback_detector = ""
                 if resultat_detector.calcs:
                     feedback_detector = "\n\n[CALCS DETECTATS AUTOMÀTICAMENT]\n"
