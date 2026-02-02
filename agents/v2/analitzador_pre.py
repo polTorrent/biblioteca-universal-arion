@@ -10,7 +10,6 @@ Analitza el text original ABANS de traduir per identificar:
 Aquest context enriquit millora significativament la qualitat de la traducció.
 """
 
-import json
 from typing import TYPE_CHECKING
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text

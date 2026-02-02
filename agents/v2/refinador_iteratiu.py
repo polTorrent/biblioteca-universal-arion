@@ -10,7 +10,6 @@ El flux és:
 4. Retornar millor versió + historial
 """
 
-import json
 from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 

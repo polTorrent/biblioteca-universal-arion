@@ -12,7 +12,7 @@ import anthropic
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 
-from utils.logger import AgentLogger, VerbosityLevel, get_logger
+from utils.logger import AgentLogger, get_logger
 
 
 load_dotenv()
@@ -238,7 +238,7 @@ class BaseAgent(ABC):
             cmd,
             capture_output=True,
             text=True,
-            timeout=300,  # 5 minuts màxim
+            timeout=600,  # 10 minuts màxim per traduccions llargues
         )
 
         # Verificar èxit
@@ -461,56 +461,6 @@ La traducció ha de ser fidel al text original per mantenir el seu valor acadèm
 
 """
         return reinforced_prefix + self.system_prompt
-
-    async def process_async(self, text: str, **kwargs: Any) -> AgentResponse:
-        """Versió asíncrona de process."""
-        # Log d'inici
-        self.logger.log_start(self.agent_name, "Processant (async)...")
-
-        start_time = time.time()
-
-        try:
-            async_client = anthropic.AsyncAnthropic()
-
-            message = await async_client.messages.create(
-                model=self.config.model,
-                max_tokens=self.config.max_tokens,
-                temperature=self.config.temperature,
-                system=self.system_prompt,
-                messages=[
-                    {"role": "user", "content": text}
-                ],
-            )
-
-            duration = time.time() - start_time
-            input_tokens = message.usage.input_tokens
-            output_tokens = message.usage.output_tokens
-            cost = self._calculate_cost(input_tokens, output_tokens)
-
-            # Log de completat
-            self.logger.log_complete(
-                self.agent_name,
-                duration_seconds=duration,
-                input_tokens=input_tokens,
-                output_tokens=output_tokens,
-                cost_eur=cost,
-            )
-
-            return AgentResponse(
-                content=message.content[0].text,
-                model=message.model,
-                usage={
-                    "input_tokens": input_tokens,
-                    "output_tokens": output_tokens,
-                },
-                duration_seconds=duration,
-                cost_eur=cost,
-            )
-
-        except Exception as e:
-            duration = time.time() - start_time
-            self.logger.log_error(self.agent_name, e)
-            raise
 
     def log_debug(self, message: str) -> None:
         """Log de depuració."""

@@ -19,43 +19,11 @@ os.environ["CLAUDECODE"] = "1"
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pathlib import Path
-from datetime import datetime
-import yaml
 
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
 from agents.v2.models import LlindarsAvaluacio
 from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
-
-
-def crear_metadata_yml(obra_dir: Path, titol: str, autor: str, llengua: str, genere: str) -> None:
-    """Crea o actualitza metadata.yml amb el format correcte."""
-    metadata_path = obra_dir / "metadata.yml"
-
-    if metadata_path.exists():
-        with open(metadata_path, 'r', encoding='utf-8') as f:
-            existing = yaml.safe_load(f) or {}
-        if 'obra' in existing:
-            return
-
-    metadata = {
-        'obra': {
-            'titol': titol,
-            'titol_original': 'Justine, ou les Malheurs de la vertu',
-            'autor': autor,
-            'autor_original': 'Donatien Alphonse François de Sade',
-            'traductor': 'Biblioteca Arion (IA + comunitat)',
-            'any_original': 1791,
-            'any_traduccio': datetime.now().year,
-            'llengua_original': llengua,
-            'genere': genere,
-            'descripcio': "Primera novel·la publicada del Marquès de Sade, escrita durant el seu empresonament a la Bastilla. Una reflexió filosòfica sobre la virtut, el vici i la injustícia del destí, a través de les desgràcies de la virtuosa Justine.",
-            'font': 'Wikisource (domini públic)',
-        }
-    }
-
-    obra_dir.mkdir(parents=True, exist_ok=True)
-    with open(metadata_path, 'w', encoding='utf-8') as f:
-        yaml.dump(metadata, f, allow_unicode=True, default_flow_style=False, sort_keys=False)
+from scripts.utils import crear_metadata_yml
 
 
 # ═══════════════════════════════════════════════════════════════════════════════

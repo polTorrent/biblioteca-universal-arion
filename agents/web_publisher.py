@@ -1043,14 +1043,14 @@ class WebPublisher(BaseAgent):
         output_dir = self.publisher_config.output_dir
 
         # CSS
-        css_source = Path("web/static/css")
+        css_source = Path("web/css")
         css_dest = output_dir / "css"
         if css_source.exists() and not css_dest.exists():
             shutil.copytree(css_source, css_dest)
             self.log_info("CSS copiat")
 
         # JS
-        js_source = Path("web/static/js")
+        js_source = Path("web/js")
         js_dest = output_dir / "js"
         if js_source.exists() and not js_dest.exists():
             shutil.copytree(js_source, js_dest)
