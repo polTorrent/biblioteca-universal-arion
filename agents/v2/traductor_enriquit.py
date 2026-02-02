@@ -222,17 +222,19 @@ IMPORTANT
         self,
         context: ContextTraduccioEnriquit,
         memoria: MemoriaContextual | None = None,
+        max_chars_context_memoria: int = 1500,
     ) -> ResultatTraduccio:
         """Tradueix un text utilitzant el context enriquit.
 
         Args:
             context: Context complet amb anàlisi, exemples i glossari.
             memoria: Memòria contextual per coherència (opcional).
+            max_chars_context_memoria: Límit de caràcters per al context de memòria.
 
         Returns:
             ResultatTraduccio amb la traducció i metadades.
         """
-        prompt = self._construir_prompt(context, memoria)
+        prompt = self._construir_prompt(context, memoria, max_chars_context_memoria)
         response = self.process(prompt)
 
         # Parsejar resposta (robust)
@@ -260,6 +262,7 @@ IMPORTANT
         self,
         context: ContextTraduccioEnriquit,
         memoria: MemoriaContextual | None = None,
+        max_chars_context_memoria: int = 1500,
     ) -> str:
         """Construeix el prompt complet per a la traducció."""
         seccions = []
@@ -280,9 +283,9 @@ IMPORTANT
         if memoria:
             context_memoria = memoria.generar_context_per_traductor()
             if context_memoria and context_memoria.strip():
-                # Limitar a màx 1500 chars per no saturar el prompt
-                if len(context_memoria) > 1500:
-                    context_memoria = context_memoria[:1500] + "\n[...context truncat...]"
+                # Limitar per no saturar el prompt
+                if len(context_memoria) > max_chars_context_memoria:
+                    context_memoria = context_memoria[:max_chars_context_memoria] + "\n[...context truncat...]"
                 seccions.append("\n" + "="*60)
                 seccions.append("CONTEXT DE MEMÒRIA (usa-ho per coherència)")
                 seccions.append("="*60)

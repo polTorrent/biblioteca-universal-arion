@@ -196,6 +196,7 @@ IMPORTANT
         autor: str | None = None,
         obra: str | None = None,
         genere: str | None = None,
+        max_chars: int = 10000,
     ) -> AnalisiPreTraduccio:
         """Analitza un text abans de traduir-lo.
 
@@ -205,6 +206,7 @@ IMPORTANT
             autor: Autor de l'obra (opcional).
             obra: Títol de l'obra (opcional).
             genere: Gènere literari (opcional, es detectarà automàticament).
+            max_chars: Límit de caràcters per evitar excés de tokens.
 
         Returns:
             AnalisiPreTraduccio amb tota la informació identificada.
@@ -222,7 +224,7 @@ IMPORTANT
 
         prompt_parts.extend([
             f"\n\n═══ TEXT A ANALITZAR ({llengua_origen.upper()}) ═══",
-            text[:10000],  # Límit per evitar excés de tokens
+            text[:max_chars],
         ])
 
         response = self.process("\n".join(prompt_parts))
@@ -259,7 +261,8 @@ IMPORTANT
                     context=p.get("context", ""),
                     recomanacio_traduccio=p.get("recomanacio_traduccio", ""),
                 ))
-            except Exception:
+            except Exception as e:
+                self.log_warning(f"Error parsejant ParaulaClau: {e}")
                 continue
 
         # Parsejar recursos literaris
@@ -272,7 +275,8 @@ IMPORTANT
                     exemple=r.get("exemple", ""),
                     estrategia_traduccio=r.get("estrategia_traduccio", ""),
                 ))
-            except Exception:
+            except Exception as e:
+                self.log_warning(f"Error parsejant RecursLiterari: {e}")
                 continue
 
         # Parsejar reptes
@@ -286,7 +290,8 @@ IMPORTANT
                     dificultat=r.get("dificultat", "mitjana"),
                     estrategia_suggerida=r.get("estrategia_suggerida", ""),
                 ))
-            except Exception:
+            except Exception as e:
+                self.log_warning(f"Error parsejant RepteTraduccio: {e}")
                 continue
 
         return AnalisiPreTraduccio(
@@ -393,7 +398,8 @@ class SelectorExemplesFewShot:
                 exemples = data.get("exemples", [])
                 self._cache[fitxer] = exemples
                 return exemples
-        except Exception:
+        except Exception as e:
+            print(f"[SelectorFewShot] Error carregant corpus {fitxer}: {e}")
             return []
 
     def seleccionar(
@@ -490,5 +496,6 @@ class SelectorExemplesFewShot:
             if fitxer in self._cache:
                 del self._cache[fitxer]
             return True
-        except Exception:
+        except Exception as e:
+            print(f"[SelectorFewShot] Error guardant exemple a {fitxer}: {e}")
             return False
