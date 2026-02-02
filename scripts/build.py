@@ -156,12 +156,18 @@ class MarkdownProcessor:
         return re.sub(pattern, replacer, text)
 
     def process_notes(self, text: str, section_num: int) -> str:
-        """Converteix [^n] a referències de notes."""
+        """Converteix [^n] o [n] a referències de notes.
+
+        Accepta dos formats:
+        - [^1] format estàndard markdown footnotes
+        - [1] format simplificat usat per alguns traductors
+        """
         def note_replacer(match):
             note_id = match.group(1)
             return f'<sup><a href="#nota-{note_id}" class="note-ref" id="ref-{note_id}">[{note_id}]</a></sup>'
 
-        return re.sub(r'\[\^(\d+)\]', note_replacer, text)
+        # Acceptar tant [^1] com [1] (però no [text] genèric - només números)
+        return re.sub(r'\[\^?(\d+)\]', note_replacer, text)
 
 
 class ContentLoader:

@@ -380,13 +380,16 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Si no hi ha prou capítols, amagar navegació
+    // Si no hi ha prou capítols, amagar navegació i sortir
     if (chapters.length <= 1) {
         const nav = document.getElementById('chapter-nav');
         if (nav) nav.style.display = 'none';
-        tocToggle.style.display = 'none';
+        // tocToggle ja està ocult per CSS per defecte
         return;
     }
+
+    // Hi ha capítols: mostrar el botó d'índex
+    tocToggle.classList.add('visible');
 
     // Crear entrades de TOC (NOMÉS una vegada per capítol)
     chapters.forEach(function(ch, i) {
