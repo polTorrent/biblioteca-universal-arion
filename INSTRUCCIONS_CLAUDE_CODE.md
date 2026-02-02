@@ -78,6 +78,9 @@ Revisor Coherència                │ Iteració
 Perfeccionament ──────────────────┘
     │
     ▼
+Corrector Normatiu ──► Ortografia, tipografia, puntuació (LanguageTool)
+    │
+    ▼
 Anotador Crític ──► Notes erudites
     │
     ▼
@@ -118,6 +121,7 @@ Checkpointer (TANCA SESSIÓ) ──► Resum final
 | Agent | Fitxer | Descripció |
 |-------|--------|------------|
 | **PerfeccionamentAgent** | `agents/perfeccionament_agent.py` | Fusió holística de naturalització + correcció IEC + estil. Reemplaça CorrectorAgent i EstilAgent. |
+| **CorrectorNormatiuAgent** | `agents/corrector_normatiu.py` | Correcció automàtica amb LanguageTool (ortografia, tipografia, puntuació). Informa gramàtica/estil per revisió humana. |
 | **AnotadorCriticAgent** | `agents/anotador_critic.py` | Afegeix notes erudites (històriques, culturals, intertextuals, terminològiques). |
 
 ### Agent de Perfeccionament

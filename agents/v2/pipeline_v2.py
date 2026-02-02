@@ -60,6 +60,11 @@ from agents.glossarista import GlossaristaAgent, GlossaryRequest
 from agents.chunker_agent import ChunkerAgent, ChunkingRequest, ChunkingStrategy
 from agents.investigador import InvestigadorAgent
 from agents.anotador_critic import AnotadorCriticAgent, AnotacioRequest
+from agents.corrector_normatiu import (
+    CorrectorNormatiuAgent,
+    ConfiguracioCorrector,
+    ResultatCorreccioNormativa,
+)
 
 # Dashboard (opcional)
 try:
@@ -86,6 +91,7 @@ class FasePipeline(str, Enum):
     TRADUINT = "traduint"
     AVALUANT = "avaluant"
     REFINANT = "refinant"
+    CORREGINT = "corregint"
     FUSIONANT = "fusionant"
     ANOTANT = "anotant"
     VALIDANT = "validant"
@@ -129,6 +135,13 @@ class ConfiguracioPipelineV2(BaseModel):
         description="Densitat de notes: minima (2-3/pàg), normal (4-6/pàg), exhaustiva (8-12/pàg)"
     )
 
+    # Correcció normativa (LanguageTool)
+    fer_correccio_normativa: bool = Field(default=True, description="Aplicar correcció normativa amb LanguageTool")
+    config_corrector: ConfiguracioCorrector = Field(
+        default_factory=ConfiguracioCorrector,
+        description="Configuració del corrector normatiu"
+    )
+
     # Sortida
     incloure_analisi: bool = Field(default=False, description="Incloure anàlisi a la sortida")
     incloure_historial: bool = Field(default=False, description="Incloure historial de refinament")
@@ -158,6 +171,9 @@ class ResultatChunk(BaseModel):
     avaluacio_final: FeedbackFusionat | None = None
     iteracions_refinament: int = 0
     aprovat: bool = True
+
+    # Correcció normativa
+    correccio_normativa: ResultatCorreccioNormativa | None = None
 
     temps_processament: float = 0.0
 
@@ -290,6 +306,15 @@ class PipelineV2:
         self.glossarista = GlossaristaAgent(agent_config, logger)
         self.chunker = ChunkerAgent(agent_config, logger)
         self.anotador = AnotadorCriticAgent(agent_config, logger)
+
+        # Corrector normatiu (LanguageTool)
+        self.corrector_normatiu: CorrectorNormatiuAgent | None = None
+        if self.config.fer_correccio_normativa:
+            self.corrector_normatiu = CorrectorNormatiuAgent(
+                config=agent_config,
+                configuracio=self.config.config_corrector,
+                logger=logger,
+            )
 
         # Dashboard
         self.dashboard: Opt[TranslationDashboard] = None
@@ -1180,6 +1205,36 @@ class PipelineV2:
                 iteracions = resultat_refinament.iteracions_realitzades
                 aprovat = resultat_refinament.aprovat
 
+        # ─────────────────────────────────────────────────────────────
+        # CORRECCIÓ NORMATIVA (LanguageTool)
+        # ─────────────────────────────────────────────────────────────
+        resultat_correccio: ResultatCorreccioNormativa | None = None
+
+        if self.corrector_normatiu and self.config.fer_correccio_normativa:
+            if self.dashboard:
+                self.dashboard.update_chunk(chunk_index, "corregint")
+                self.dashboard.log_info("Corrector", f"Aplicant correcció normativa chunk {chunk_id}...")
+
+            resultat_correccio = self.corrector_normatiu.corregir(traduccio_actual)
+
+            if resultat_correccio.correccions_aplicades > 0:
+                traduccio_actual = resultat_correccio.text_corregit
+
+                if self.dashboard:
+                    self.dashboard.log_success(
+                        "Corrector",
+                        f"Aplicades {resultat_correccio.correccions_aplicades} correccions "
+                        f"(puntuació: {resultat_correccio.puntuacio_inicial:.1f} → "
+                        f"{resultat_correccio.puntuacio_final:.1f})"
+                    )
+
+            # Registrar avisos per revisió humana
+            if resultat_correccio.avisos and self.dashboard:
+                self.dashboard.log_warning(
+                    "Corrector",
+                    f"{len(resultat_correccio.avisos)} avisos de gramàtica/estil pendents de revisió"
+                )
+
         return ResultatChunk(
             chunk_id=chunk_id,
             text_original=text_chunk,
@@ -1188,6 +1243,7 @@ class PipelineV2:
             avaluacio_final=avaluacio,
             iteracions_refinament=iteracions,
             aprovat=aprovat,
+            correccio_normativa=resultat_correccio,
         )
 
     def _fusionar_chunks(self, resultats: list[ResultatChunk]) -> str:
