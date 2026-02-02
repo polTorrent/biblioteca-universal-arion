@@ -1,6 +1,7 @@
 """Classe base abstracta per als agents de traducció."""
 
 import json
+import logging
 import os
 import re
 import subprocess
@@ -11,8 +12,19 @@ from typing import Any
 import anthropic
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
+from tenacity import (
+    retry,
+    stop_after_attempt,
+    wait_exponential,
+    retry_if_exception_type,
+    before_sleep_log,
+    RetryError,
+)
 
 from utils.logger import AgentLogger, get_logger
+
+# Logger per tenacity
+_tenacity_logger = logging.getLogger("tenacity.retry")
 
 
 load_dotenv()
@@ -260,6 +272,87 @@ class BaseAgent(ABC):
             )
             raise
 
+    def _call_claude_cli_with_retry(
+        self,
+        prompt: str,
+        system_prompt: str,
+    ) -> dict[str, Any]:
+        """Crida al CLI de claude amb retry automàtic per errors transitoris.
+
+        Implementa exponential backoff per gestionar errors de xarxa,
+        timeouts i altres errors transitoris de l'API.
+
+        Args:
+            prompt: Prompt de l'usuari.
+            system_prompt: System prompt de l'agent.
+
+        Returns:
+            Dict amb la resposta parseada del CLI.
+
+        Raises:
+            RetryError: Si s'exhaureixen tots els intents.
+            RuntimeError: Si l'error no és recuperable.
+        """
+        @retry(
+            stop=stop_after_attempt(3),
+            wait=wait_exponential(multiplier=2, min=4, max=60),
+            retry=retry_if_exception_type((
+                TimeoutError,
+                ConnectionError,
+                subprocess.TimeoutExpired,
+            )),
+            before_sleep=before_sleep_log(_tenacity_logger, logging.WARNING),
+            reraise=True,
+        )
+        def _call_with_retry() -> dict[str, Any]:
+            return self._call_claude_cli(prompt, system_prompt)
+
+        return _call_with_retry()
+
+    def _call_api_with_retry(
+        self,
+        text: str,
+        system_prompt: str,
+    ) -> anthropic.types.Message:
+        """Crida a l'API d'Anthropic amb retry automàtic per errors transitoris.
+
+        Args:
+            text: Text a processar.
+            system_prompt: System prompt de l'agent.
+
+        Returns:
+            Resposta de l'API d'Anthropic.
+
+        Raises:
+            RetryError: Si s'exhaureixen tots els intents.
+            anthropic.APIError: Si l'error no és recuperable.
+        """
+        @retry(
+            stop=stop_after_attempt(3),
+            wait=wait_exponential(multiplier=2, min=4, max=60),
+            retry=retry_if_exception_type((
+                anthropic.APIConnectionError,
+                anthropic.RateLimitError,
+                anthropic.InternalServerError,
+                TimeoutError,
+                ConnectionError,
+            )),
+            before_sleep=before_sleep_log(_tenacity_logger, logging.WARNING),
+            reraise=True,
+        )
+        def _call_with_retry() -> anthropic.types.Message:
+            return self.client.messages.create(
+                model=self.config.model,
+                max_tokens=self.config.max_tokens,
+                temperature=self.config.temperature,
+                system=system_prompt,
+                messages=[
+                    {"role": "user", "content": text}
+                ],
+            )
+
+        return _call_with_retry()
+
     def _get_effective_system_prompt(self) -> str:
         """Retorna el system prompt amb context acadèmic si està configurat."""
         if self.config.add_academic_context:
@@ -314,7 +407,7 @@ class BaseAgent(ABC):
                             f"🔄 Reintent {attempt}/{self.config.max_retries_on_filter} amb context reforçat"
                         )
 
-                    response_data = self._call_claude_cli(
+                    response_data = self._call_claude_cli_with_retry(
                         prompt=text,
                         system_prompt=effective_system_prompt,
                     )
@@ -369,14 +462,9 @@ class BaseAgent(ABC):
                             f"🔄 Reintent {attempt}/{self.config.max_retries_on_filter} amb context reforçat"
                         )
 
-                    message = self.client.messages.create(
-                        model=self.config.model,
-                        max_tokens=self.config.max_tokens,
-                        temperature=self.config.temperature,
-                        system=effective_system_prompt,
-                        messages=[
-                            {"role": "user", "content": text}
-                        ],
+                    message = self._call_api_with_retry(
+                        text=text,
+                        system_prompt=effective_system_prompt,
                     )
 
                     duration = time.time() - start_time

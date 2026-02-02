@@ -1,11 +1,14 @@
 """Sistema de checkpointing per recuperació d'errors del pipeline."""
 
 import json
+import shutil
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Literal
 
 from pydantic import BaseModel, Field
+
+from utils.logger import get_logger
 
 
 class ChunkCheckpoint(BaseModel):
@@ -113,6 +116,14 @@ class Checkpointer:
             self.checkpoint_dir = Path(checkpoint_dir)
         self.checkpoint_dir.mkdir(parents=True, exist_ok=True)
         self.checkpoint: PipelineCheckpoint | None = None
+        self._logger = None
+
+    @property
+    def logger(self):
+        """Retorna el logger (lazy initialization)."""
+        if self._logger is None:
+            self._logger = get_logger()
+        return self._logger
 
     def _get_filepath(self, sessio_id: str) -> Path:
         """Retorna el path del fitxer de checkpoint."""
@@ -238,6 +249,149 @@ class Checkpointer:
 
         with open(filepath, "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2, default=str)
+
+    def _save_with_backup(self) -> None:
+        """Guarda el checkpoint amb còpia de seguretat.
+
+        Crea una còpia de seguretat del fitxer existent abans de
+        guardar el nou checkpoint. Si falla el guardat, restaura
+        el backup.
+        """
+        if not self.checkpoint:
+            return
+
+        filepath = self._get_filepath(self.checkpoint.sessio_id)
+        backup_path = filepath.with_suffix('.backup.json')
+
+        # Crear backup si existeix l'original
+        if filepath.exists():
+            shutil.copy2(filepath, backup_path)
+
+        # Guardar nou checkpoint
+        try:
+            self._save()
+        except Exception as e:
+            # Si falla, restaurar backup
+            if backup_path.exists():
+                shutil.copy2(backup_path, filepath)
+            raise RuntimeError(f"Error guardant checkpoint: {e}") from e
+
+    def carregar_amb_recuperacio(self, sessio_id: str) -> PipelineCheckpoint | None:
+        """Carrega checkpoint amb recuperació automàtica de corrupció.
+
+        Si el fitxer principal està corrupte, intenta carregar el backup.
+
+        Args:
+            sessio_id: Identificador de la sessió a carregar.
+
+        Returns:
+            PipelineCheckpoint carregat o None si no es pot recuperar.
+        """
+        filepath = self._get_filepath(sessio_id)
+        backup_path = filepath.with_suffix('.backup.json')
+
+        # Intentar carregar principal
+        try:
+            return self.carregar(sessio_id)
+        except (json.JSONDecodeError, KeyError, TypeError) as e:
+            self.logger.log_warning(
+                "Checkpointer",
+                f"Checkpoint corrupte, intentant backup: {e}"
+            )
+
+        # Intentar backup
+        if backup_path.exists():
+            try:
+                shutil.copy2(backup_path, filepath)
+                return self.carregar(sessio_id)
+            except Exception as e2:
+                self.logger.log_error(
+                    "Checkpointer",
+                    f"Backup també corrupte: {e2}"
+                )
+
+        return None
+
+    def llistar_sessions_detallat(self) -> list[dict[str, Any]]:
+        """Llista totes les sessions guardades amb el seu estat detallat.
+
+        Returns:
+            Llista de diccionaris amb informació detallada de cada sessió.
+        """
+        sessions = []
+        for filepath in self.checkpoint_dir.glob("*.checkpoint.json"):
+            sessio_id = filepath.stem.replace(".checkpoint", "")
+            try:
+                checkpoint = self.carregar(sessio_id)
+                if checkpoint:
+                    sessions.append({
+                        "sessio_id": sessio_id,
+                        "obra": checkpoint.obra,
+                        "autor": checkpoint.autor,
+                        "fase": checkpoint.fase_actual,
+                        "updated_at": checkpoint.updated_at,
+                        "created_at": checkpoint.created_at,
+                        "chunks_completats": sum(
+                            1 for c in checkpoint.chunks if c.estat == "completat"
+                        ),
+                        "chunks_total": len(checkpoint.chunks),
+                        "chunks_error": sum(
+                            1 for c in checkpoint.chunks if c.estat == "error"
+                        ),
+                        "qualitat_mitjana": self._calcular_qualitat_mitjana(checkpoint),
+                        "total_cost_eur": checkpoint.total_cost_eur,
+                        "total_temps_segons": checkpoint.total_temps_segons,
+                        "errors_count": checkpoint.errors_count,
+                    })
+            except Exception:
+                sessions.append({
+                    "sessio_id": sessio_id,
+                    "error": "Checkpoint corrupte",
+                    "updated_at": datetime.min,
+                })
+
+        return sorted(sessions, key=lambda x: x.get("updated_at", datetime.min), reverse=True)
+
+    def _calcular_qualitat_mitjana(self, checkpoint: PipelineCheckpoint) -> float | None:
+        """Calcula la qualitat mitjana dels chunks completats.
+
+        Args:
+            checkpoint: Checkpoint del qual calcular la qualitat.
+
+        Returns:
+            Qualitat mitjana o None si no hi ha dades.
+        """
+        qualitats = [
+            c.qualitat for c in checkpoint.chunks
+            if c.qualitat is not None and c.estat == "completat"
+        ]
+        if not qualitats:
+            return None
+        return sum(qualitats) / len(qualitats)
+
+    def netejar_backups(self, dies_antics: int = 7) -> int:
+        """Elimina backups antics.
+
+        Args:
+            dies_antics: Eliminar backups més antics que aquest nombre de dies.
+
+        Returns:
+            Nombre de backups eliminats.
+        """
+        eliminats = 0
+        ara = datetime.now()
+
+        for backup_path in self.checkpoint_dir.glob("*.backup.json"):
+            try:
+                # Obtenir temps de modificació
+                mtime = datetime.fromtimestamp(backup_path.stat().st_mtime)
+                if (ara - mtime).days > dies_antics:
+                    backup_path.unlink()
+                    eliminats += 1
+            except Exception:
+                continue
+
+        return eliminats
 
     # === Mètodes de fase inicial ===
 

@@ -35,6 +35,9 @@ from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, ContentFilterError
 
+# Validadors
+from utils.validators import validar_text_entrada, netejar_text, SeverityLevel
+
 # Core (persistència i validació)
 from core import EstatPipeline, MemoriaContextual, ValidadorFinal, ContextInvestigacio
 
@@ -448,6 +451,37 @@ class PipelineV2:
         temps_fases: dict[str, float] = {}
         errors: list[str] = []
         avisos: list[str] = []
+
+        # ═══════════════════════════════════════════════════════════════
+        # VALIDACIÓ PRE-TRADUCCIÓ
+        # ═══════════════════════════════════════════════════════════════
+        validacio = validar_text_entrada(text, llengua_origen)
+
+        # Processar missatges de validació
+        for severity, msg in validacio.messages:
+            if severity == SeverityLevel.ERROR:
+                errors.append(msg)
+            elif severity == SeverityLevel.WARNING:
+                avisos.append(msg)
+
+        # Si hi ha errors crítics, retornar immediatament
+        if validacio.has_errors():
+            return ResultatPipelineV2(
+                text_original=text,
+                traduccio_final="",
+                llengua_origen=llengua_origen,
+                autor=autor,
+                obra=obra,
+                genere=genere,
+                temps_total=round(time.time() - temps_inici, 2),
+                fase=FasePipeline.ERROR,
+                errors=errors,
+                avisos=avisos,
+            )
+
+        # Netejar text si hi ha warnings de caràcters problemàtics
+        if validacio.has_warnings():
+            text = netejar_text(text)
 
         # ═══════════════════════════════════════════════════════════════
         # INICIALITZAR ESTAT PERSISTENT (CORE)
