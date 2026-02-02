@@ -21,6 +21,7 @@ Flux:
 6. Post-processament (portades, EPUB, etc.)
 """
 
+import json
 import re
 import time
 import unicodedata
@@ -107,6 +108,11 @@ class ConfiguracioPipelineV2(BaseModel):
     fer_chunking: bool = Field(default=True, description="Dividir text en fragments")
     max_chars_chunk: int = Field(default=3000, description="Mida màxima de cada chunk")
     chunk_strategy: str = Field(default="paragraph", description="Estratègia de chunking")
+
+    # Límits de truncat per evitar excés de tokens
+    max_chars_analisi: int = Field(default=10000, description="Límit de caràcters per anàlisi prèvia")
+    max_chars_avaluacio: int = Field(default=8000, description="Límit de caràcters per avaluació")
+    max_chars_context_memoria: int = Field(default=1500, description="Límit de caràcters per context de memòria")
 
     # Avaluació i refinament
     fer_avaluacio: bool = Field(default=True, description="Avaluar traduccions")
@@ -344,7 +350,6 @@ class PipelineV2:
         if self.estat:
             # La memòria es guarda per separat al fitxer .memoria_contextual.json
             memoria_path = self.estat.obra_dir / ".memoria_contextual.json"
-            import json
             memoria_path.write_text(
                 json.dumps(self.memoria.exportar(), indent=2, ensure_ascii=False),
                 encoding="utf-8"
@@ -359,7 +364,6 @@ class PipelineV2:
         memoria_path = self.estat.obra_dir / ".memoria_contextual.json"
         if memoria_path.exists():
             try:
-                import json
                 dades = json.loads(memoria_path.read_text(encoding="utf-8"))
                 self.memoria.importar(dades)
                 print(f"[Pipeline] Memòria contextual carregada: {self.memoria.num_traduccions} traduccions")
@@ -968,8 +972,6 @@ class PipelineV2:
 
         # Parsejar resposta per extreure glossari
         try:
-            import json
-            import re
             content = response.content
 
             # Buscar JSON a la resposta
@@ -985,8 +987,8 @@ class PipelineV2:
                         if terme and traduccio:
                             glossari[terme] = traduccio
                 return glossari
-        except Exception:
-            pass
+        except Exception as e:
+            print(f"[Pipeline] Error parsejant glossari JSON: {e}")
 
         return {}
 
@@ -1005,8 +1007,9 @@ class PipelineV2:
             )
             result = self.chunker.chunk(request)
             return [chunk.content for chunk in result.chunks]
-        except Exception:
+        except Exception as e:
             # Fallback: divisió simple per paràgrafs
+            print(f"[Pipeline] Error en chunking agent, usant fallback: {e}")
             paragraphs = text.split("\n\n")
             chunks = []
             current_chunk = ""
@@ -1054,6 +1057,7 @@ class PipelineV2:
                 autor=autor,
                 obra=obra,
                 genere=genere,
+                max_chars=self.config.max_chars_analisi,
             )
             # Usar gènere detectat si no s'ha especificat
             if genere is None and analisi:
@@ -1089,7 +1093,11 @@ class PipelineV2:
             glossari=glossari,
         )
 
-        resultat_traduccio = self.traductor.traduir(context, self.memoria)
+        resultat_traduccio = self.traductor.traduir(
+            context,
+            self.memoria,
+            max_chars_context_memoria=self.config.max_chars_context_memoria,
+        )
         traduccio_actual = resultat_traduccio.traduccio
 
         # ─────────────────────────────────────────────────────────────
@@ -1109,6 +1117,7 @@ class PipelineV2:
                 genere=genere or "narrativa",
                 descripcio_estil_autor=analisi.to_autor if analisi else None,
                 glossari=glossari,
+                max_chars=self.config.max_chars_avaluacio,
             )
             avaluacio = self.avaluador.avaluar(context_avaluacio)
             aprovat = avaluacio.aprovat
@@ -1170,9 +1179,6 @@ class PipelineV2:
         Returns:
             Tupla (llista de notes, text amb marques [^n]).
         """
-        import json
-        import re
-
         # Obtenir context històric com a string
         context_historic_str: str | None = None
         if self.memoria:

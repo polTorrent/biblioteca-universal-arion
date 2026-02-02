@@ -295,6 +295,10 @@ class ContextAvaluacio(BaseModel):
         default=None,
         description="Glossari de termes clau i les seves traduccions"
     )
+    max_chars: int = Field(
+        default=8000,
+        description="Límit de caràcters per a truncat de text en avaluacions"
+    )
 
 
 # =============================================================================

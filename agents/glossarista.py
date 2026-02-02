@@ -1,5 +1,6 @@
 """Agent Glossarista per crear glossaris i índexs."""
 
+import json
 from typing import Literal, TYPE_CHECKING
 
 from pydantic import BaseModel, Field
@@ -309,8 +310,6 @@ Retorna JSON amb:
         Returns:
             AgentResponse amb les inconsistències detectades.
         """
-        import json
-
         prompt = f"""Verifica que aquest text segueix el glossari de manera consistent.
 
 GLOSSARI:

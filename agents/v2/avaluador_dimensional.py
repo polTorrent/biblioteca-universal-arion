@@ -154,9 +154,9 @@ sinó "restaurar la frase X que s'ha omès" o "el terme Y hauria de ser Z"."""
 
         prompt_parts.extend([
             f"\n\n═══ TEXT ORIGINAL ({context.llengua_origen.upper()}) ═══",
-            context.text_original[:8000],
+            context.text_original[:context.max_chars],
             "\n═══ TRADUCCIÓ A AVALUAR ═══",
-            context.text_traduit[:8000],
+            context.text_traduit[:context.max_chars],
         ])
 
         response = self.process("\n".join(prompt_parts))
@@ -309,9 +309,9 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
 
         prompt_parts.extend([
             f"\n\n═══ TEXT ORIGINAL ({context.llengua_origen.upper()}) ═══",
-            context.text_original[:8000],
+            context.text_original[:context.max_chars],
             "\n═══ TRADUCCIÓ A AVALUAR ═══",
-            context.text_traduit[:8000],
+            context.text_traduit[:context.max_chars],
         ])
 
         response = self.process("\n".join(prompt_parts))
@@ -522,9 +522,9 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
 
         prompt_parts.extend([
             f"\n\n═══ TEXT ORIGINAL ({context.llengua_origen.upper()}) - PER REFERÈNCIA ═══",
-            context.text_original[:4000],  # Menys text original, més focus en català
+            context.text_original[:context.max_chars // 2],  # Menys text original, més focus en català
             "\n═══ TEXT CATALÀ A AVALUAR ═══",
-            context.text_traduit[:8000],
+            context.text_traduit[:context.max_chars],
         ])
 
         response = self.process("\n".join(prompt_parts))
@@ -550,8 +550,8 @@ FORMAT DE RESPOSTA (JSON ESTRICTE):
                 for e in data.get("errors_normatius", []):
                     try:
                         errors.append(ErrorNormatiu(**e))
-                    except Exception:
-                        pass
+                    except Exception as err:
+                        self.log_warning(f"Error parsejant ErrorNormatiu: {err}")
 
                 # Combinar calcs del LLM amb els automàtics (sense duplicats)
                 calcs_llm = data.get("calcs_detectats", [])
