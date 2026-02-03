@@ -1,69 +1,53 @@
 # Notes crítiques
 
-*Notes generades automàticament per l'Agent Anotador Crític.*
+*Notes a la traducció de "El retrat oval" d'Edgar Allan Poe.*
 
 ---
 
-## [1] castell
-
-**Tipus:** Terminologia
-
-> «castell»
-
-Del francès 'château', palau o residència aristocràtica. En l'original anglès Poe usa 'chateau', mantenint el terme francès per evocar l'ambientació europea i aristocràtica típica de la literatura gòtica.
-
-## [2] Apenins
+## [1] Apenins
 
 **Tipus:** Geografia
 
 > «Apenins»
 
-Cadena muntanyosa que travessa la península italiana de nord a sud. Els Apenins eren l'escenari típic de les novel·les gòtiques, especialment les d'Ann Radcliffe, per la seva natura selvàtica i la presència de castells medievals abandonats.
+Cadena muntanyosa que recorre la península italiana de nord a sud. En la literatura gòtica del segle XVIII i XIX, els Apenins i els Alps es convertiren en escenaris predilectes per ambientar històries de terror i misteri, amb els seus castells abandonats i paisatges salvatges. Poe, com a mestre del gòtic americà, adopta conscientment aquesta convenció europea.
 
-## [3] senyora Radcliffe
+## [2] senyora Radcliffe
+
+**Tipus:** Intertextualitat
+
+> «la senyora Radcliffe»
+
+Ann Radcliffe (1764-1823), escriptora anglesa considerada la gran mestra de la novel·la gòtica. Les seves obres, especialment *Els misteris d'Udolfo* (1794) i *L'italià* (1797), establiren els convencionalismes del gènere: castells italians misteriosos, donzelles en perill, atmosferes opressives. La referència explícita de Poe és un homenatge i una declaració d'intencions: el lector sap que entra en territori gòtic.
+
+## [3] trofeus heràldics
 
 **Tipus:** Context Cultural
 
-> «senyora Radcliffe»
+> «trofeus heràldics»
 
-Ann Radcliffe (1764-1823), novel·lista anglesa considerada la mestra del gènere gòtic. Les seves obres, com 'Els misteris d'Udolpho' (1794), popularitzaren l'ambientació de castells sinistres als Apenins italians i establiren moltes de les convencions del gènere.
+Escuts d'armes, armadures, estendards i altres objectes que exhibien els blastons i símbols del llinatge aristocràtic. Aquests elements decoratius, habituals als castells de la noblesa europea, reforcaven el prestigi familiar i evocaven un passat medieval i cavalleresc. En el context gòtic, suggereixen decadència i la presència fantasmal dels avantpassats.
 
-## [4] arabescs daurats
+## [4] manera de vinyeta
 
-**Tipus:** Context Cultural
-
-> «arabescs daurats»
-
-Decoració ornamental d'origen àrab caracteritzada per motius geomètrics i vegetals entrellaçats. L'ús del daurat en marcs de pintures era símbol d'opulència aristocràtica i contrastava amb la decadència del castell abandonat.
-
-## [5] manera de vinyeta
-
-**Tipus:** Terminologia
+**Tipus:** Art
 
 > «manera de vinyeta»
 
-Tècnica pictòrica on la figura es va esvaint gradualment cap als marges sense contorns definits, fusionant-se amb el fons. Era popular en el retrat del segle XVIII i principis del XIX per crear efectes de suavitat i idealització.
+Tècnica pictòrica en què els contorns de la figura es difuminen gradualment cap als marges, sense un límit definit, fonent-se amb el fons. El terme prové originalment de les decoracions de fulles de vinya als marges dels manuscrits. Aquesta tècnica crea un efecte eteri i misteriós, particularment adequat per a retrats que volen capturar quelcom més que la mera aparença física.
 
-## [6] Sully
+## [5] Sully
 
-**Tipus:** Personatges
+**Tipus:** Art
 
 > «Sully»
 
-Thomas Sully (1783-1872), pintor de retrats angloamericà famós pels seus retrats romàntics de dames de la societat. Els seus 'caps favorits' eren retrats idealitzats que combinaven realisme amb una certa idealització poètica.
+Thomas Sully (1783-1872), pintor anglo-americà nascut a Anglaterra però establert a Filadèlfia, contemporani de Poe. Era especialment reconegut pels seus retrats elegants i idealitzats, caracteritzats per una tècnica suau i una llum càlida. La referència situa el retrat del conte dins una tradició pictòrica real i reconeixible per als lectors americans de l'època.
 
-## [7] semblança vital
+## [6] a la morisca
 
-**Tipus:** Terminologia
+**Tipus:** Art
 
-> «semblança vital»
+> «filigranat a la morisca» (en l'original: «Moresque»)
 
-Concepte estètic que es refereix a la capacitat de l'art de capturar no només l'aparença física sinó l'essència viva del subjecte. En el context del relat, aquesta 'vida' del retrat contrasta tràgicament amb la mort de la model.
-
-## [8] com la flama dins del mig del llum
-
-**Tipus:** Context Cultural
-
-> «com la flama dins del mig del llum»
-
-Metàfora que al·ludeix a l'últim espurneig de vida abans de la mort, com la flama d'una espelma que s'intensifica just abans d'extingir-se. Imatge recurrent en la literatura romàntica per simbolitzar la fragilitat i fugacitat de la vida.
+Estil decoratiu que imita els motius ornamentals de l'art islàmic, especialment els arabescs geomètrics i vegetals de l'Alhambra i altres monuments andalusins. Aquest estil, molt popular a Europa durant el segle XIX per l'interès romàntic per l'Orient, aporta al marc del retrat una aura d'exotisme i antiguitat.

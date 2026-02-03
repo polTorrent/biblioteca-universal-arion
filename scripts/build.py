@@ -479,18 +479,10 @@ class BuildSystem:
         portades_dest.mkdir(parents=True, exist_ok=True)
 
         count = 0
+        portades_processades = set()
 
-        # 1. Copiar des de web/assets/portades/
-        if portades_src.exists():
-            for portada in portades_src.glob('*.png'):
-                shutil.copy(portada, portades_dest / portada.name)
-                count += 1
-            for portada in portades_src.glob('*.jpg'):
-                shutil.copy(portada, portades_dest / portada.name)
-                count += 1
-
-        # 2. Copiar des de carpetes d'obres (obres/.../portada.png)
-        # i també sincronitzar a web/assets/portades/ per futures builds
+        # 1. PRIORITAT: Copiar des de carpetes d'obres (obres/.../portada.png)
+        # Aquestes són les portades "oficials" i tenen prioritat
         for metadata_file in self.obres_dir.rglob('metadata.yml'):
             obra_dir = metadata_file.parent
             slug = f"{obra_dir.parent.name}-{obra_dir.name}"
@@ -502,16 +494,26 @@ class BuildSystem:
                     dest_path = portades_dest / dest_name
                     web_path = portades_src / dest_name
 
-                    # Copiar a docs/
-                    if not dest_path.exists():
-                        shutil.copy(portada_obra, dest_path)
-                        count += 1
+                    # Sempre copiar des d'obres/ (font principal)
+                    shutil.copy(portada_obra, dest_path)
+                    portades_processades.add(dest_name)
+                    count += 1
 
                     # Sincronitzar a web/assets/portades/ per futures builds
-                    if not web_path.exists():
-                        portades_src.mkdir(parents=True, exist_ok=True)
-                        shutil.copy(portada_obra, web_path)
+                    portades_src.mkdir(parents=True, exist_ok=True)
+                    shutil.copy(portada_obra, web_path)
                     break
+
+        # 2. Copiar des de web/assets/portades/ NOMÉS les que no existeixen a obres/
+        if portades_src.exists():
+            for portada in portades_src.glob('*.png'):
+                if portada.name not in portades_processades:
+                    shutil.copy(portada, portades_dest / portada.name)
+                    count += 1
+            for portada in portades_src.glob('*.jpg'):
+                if portada.name not in portades_processades:
+                    shutil.copy(portada, portades_dest / portada.name)
+                    count += 1
 
         print(f"   ✅ {count} portades copiades")
 

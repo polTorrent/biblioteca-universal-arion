@@ -509,18 +509,20 @@ class FeedbackFusionat(BaseModel):
 class LlindarsAvaluacio(BaseModel):
     """Llindars per a l'aprovació de traduccions."""
 
-    # Per aprovar directament
+    # Llindar principal (SIMPLIFICAT)
     global_minim: float = Field(default=8.0)
+
+    # Mantenim aquests per compatibilitat però ja no s'usen activament
     veu_autor_minim: float = Field(default=7.5)
     fidelitat_minim: float = Field(default=7.0)
     fluidesa_minim: float = Field(default=7.0)
 
-    # Per forçar refinament obligatori
+    # Per forçar refinament obligatori (compatibilitat)
     veu_autor_critic: float = Field(default=6.0)
     fidelitat_critic: float = Field(default=5.0)
 
-    # Iteracions
-    max_iteracions: int = Field(default=3)
+    # CANVI CLAU: màxim 1 iteració (era 3)
+    max_iteracions: int = Field(default=1)
     llindar_revisio_humana: float = Field(default=7.5)
 
 
@@ -533,3 +535,28 @@ PESOS_DIMENSIONS = {
     "veu_autor": 0.40,
     "fluidesa": 0.35,
 }
+
+
+# =============================================================================
+# AVALUACIÓ SIMPLIFICADA (NOU)
+# =============================================================================
+
+class AvaluacioSimple(BaseModel):
+    """Avaluació simplificada - un sol criteri: sona natural?"""
+
+    puntuacio: float = Field(ge=0, le=10, description="Puntuació 1-10")
+    es_acceptable: bool = Field(default=False, description="Si passa el llindar")
+    sona_a_traduccio: bool = Field(default=True, description="Si es nota que és traducció")
+    problemes: list[str] = Field(default_factory=list, description="Problemes detectats")
+    suggeriments: list[str] = Field(default_factory=list, description="Suggeriments de millora")
+
+    def to_feedback_fusionat(self) -> "FeedbackFusionat":
+        """Converteix a FeedbackFusionat per compatibilitat amb el pipeline."""
+        return FeedbackFusionat(
+            puntuacio_global=self.puntuacio,
+            puntuacio_fidelitat=self.puntuacio,
+            puntuacio_veu_autor=self.puntuacio,
+            puntuacio_fluidesa=self.puntuacio,
+            aprovat=self.es_acceptable,
+            instruccions_refinament="\n".join(self.suggeriments),
+        )

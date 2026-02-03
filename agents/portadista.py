@@ -133,24 +133,40 @@ SIMBOLS_TEMATICS: dict[str, str] = {
     "roma": "a roman eagle standard aquila",
     # Poesia
     "amor": "two intertwined roses",
-    "natura": "a single bird on a branch",
     "melangia": "rain drops on window",
     # Teatre
     "tragèdia": "a cracked theatrical mask",
     "comèdia": "a smiling mask with shadow",
-    # Novel·la
+    # Novel·la / Terror gòtic
     "viatge": "a sailing ship silhouette",
     "guerra": "a broken sword",
     "família": "an empty chair by window",
+    "gòtic": "a gothic castle silhouette against moonlight",
+    "terror": "a single human eye in darkness",
+    "misteri": "an ornate keyhole with light behind",
+    "castell": "a gothic castle tower silhouette",
+    "fantasma": "a translucent veil floating",
+    "boira": "mist rising from water",
+    "nit": "a crescent moon behind clouds",
+    "ombra": "a long shadow cast by candlelight",
+    # Art i pintura
+    "retrat": "an ornate oval picture frame, empty, gilded",
+    "oval": "an ornate oval picture frame, empty, gilded",
+    "pintura": "a painter's palette with brushes",
+    "pintor": "a single paintbrush with wet tip",
+    "art": "an artist easel with blank canvas",
+    "artista": "a painter's palette with brushes",
+    "quadre": "an ornate picture frame casting shadow",
+    "tela": "a stretched canvas on wooden frame",
+    "cavallet": "an artist easel silhouette",
     # Oriental
     "zen": "a single lotus flower",
     "bushido": "a katana blade reflection",
-    "natura": "bamboo stalks in mist",
-    "art": "ink brush and stone",
+    "bambú": "bamboo stalks in mist",
     "foc": "dancing flames",
     "infern": "flames rising from below",
     "sacrifici": "hands releasing a bird",
-    "obsessió": "an eye in shadow",
+    "obsessió": "an eye in shadow staring",
     # Epopeia
     "heroi": "a shield and spear crossed",
     "déus": "lightning bolt from clouds",
@@ -163,6 +179,22 @@ SIMBOLS_TEMATICS: dict[str, str] = {
     "eneida": "the wooden Trojan horse silhouette",
     "enees": "the wooden Trojan horse silhouette",
     "troia": "the wooden Trojan horse silhouette",
+    # Poe i terror americà
+    "poe": "a black raven perched on skull",
+    "corb": "a black raven silhouette",
+    "enterrat": "a coffin lid slightly open",
+    "cor": "an anatomical heart silhouette",
+    "pèndol": "a swinging pendulum blade",
+    "pou": "a dark circular pit from above",
+    "usher": "a crumbling mansion facade",
+    "gat": "a black cat silhouette with glowing eye",
+    # Kafka
+    "transformació": "a beetle silhouette from above",
+    "metamorfosi": "a beetle silhouette from above",
+    "insecte": "a beetle silhouette from above",
+    "kafka": "a beetle silhouette from above",
+    "procés": "a maze of doors in perspective",
+    "burocràcia": "towering filing cabinets",
 }
 
 
@@ -247,32 +279,111 @@ MAI:
     def _obtenir_paleta(self, genere: str) -> PaletaGenere:
         return PALETES.get(genere, PALETES["NOV"])
 
+    def _interpretar_obra_amb_claude(self, metadata: dict) -> str | None:
+        """Usa Claude per interpretar l'obra i suggerir un símbol visual apropiat."""
+        import subprocess
+        import json
+
+        titol = metadata.get("titol", "")
+        autor = metadata.get("autor", "")
+        descripcio = metadata.get("descripcio", "")
+
+        if not titol:
+            return None
+
+        prompt = f"""Ets un director artístic. Per a una portada de llibre MINIMALISTA FIGURATIVA,
+suggereix UN SOL objecte visual que representi l'essència d'aquesta obra:
+
+Títol: {titol}
+Autor: {autor}
+Descripció: {descripcio}
+
+REGLES:
+- Un sol objecte físic, tangible, recognoscible
+- Res de persones, cares o figures humanes completes
+- Ha de ser un objecte que es pugui dibuixar com a silueta elegant
+- Màxim 8 paraules en anglès
+
+EXEMPLES BONS:
+- Per "El retrat oval" de Poe: "an ornate oval gilded picture frame"
+- Per "La metamorfosi" de Kafka: "a beetle silhouette from above"
+- Per "El cor delator" de Poe: "an anatomical heart under floorboards"
+
+Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
+
+        try:
+            result = subprocess.run(
+                ["claude", "-p", prompt, "--output-format", "json"],
+                capture_output=True,
+                text=True,
+                timeout=30,
+            )
+            if result.returncode == 0:
+                try:
+                    data = json.loads(result.stdout)
+                    simbol = data.get("result", "").strip()
+                except json.JSONDecodeError:
+                    simbol = result.stdout.strip()
+
+                # Validar que no sigui massa llarg
+                if simbol and len(simbol.split()) <= 12:
+                    self.log_info(f"Claude suggereix: {simbol}")
+                    return simbol
+        except Exception as e:
+            self.log_warning(f"Error interpretant obra amb Claude: {e}")
+
+        return None
+
     def _generar_prompt_automatic(self, metadata: dict, paleta: PaletaGenere, genere: str) -> dict:
         """Genera prompt FIGURATIU MINIMALISTA basat en el contingut de l'obra."""
         titol = metadata.get("titol", "").lower()
         temes = metadata.get("temes", [])
         descripcio = metadata.get("descripcio", "").lower()
+        autor = metadata.get("autor", "").lower()
 
-        # 1. Buscar símbol específic pels temes
         simbol = None
         tema_trobat = None
-        for tema in temes:
-            tema_lower = tema.lower()
-            if tema_lower in SIMBOLS_TEMATICS:
-                simbol = SIMBOLS_TEMATICS[tema_lower]
-                tema_trobat = tema
+
+        # 1. PRIORITAT MÀXIMA: Buscar paraules clau al TÍTOL (més específic)
+        for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
+            if clau in titol:
+                simbol = simbol_candidat
+                tema_trobat = f"títol ({clau})"
                 break
 
-        # 2. Si no hi ha tema, buscar paraules clau al títol o descripció
+        # 2. Si no, buscar a la DESCRIPCIÓ (context de l'obra)
         if not simbol:
-            text_cerca = f"{titol} {descripcio}"
             for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
-                if clau in text_cerca:
+                if clau in descripcio:
                     simbol = simbol_candidat
-                    tema_trobat = clau
+                    tema_trobat = f"descripció ({clau})"
                     break
 
-        # 3. Símbols per defecte segons gènere (més figuratius)
+        # 3. Si no, buscar pels TEMES explícits
+        if not simbol:
+            for tema in temes:
+                tema_lower = tema.lower()
+                if tema_lower in SIMBOLS_TEMATICS:
+                    simbol = SIMBOLS_TEMATICS[tema_lower]
+                    tema_trobat = f"tema ({tema})"
+                    break
+
+        # 4. Si no, buscar per l'AUTOR (per estils característics)
+        if not simbol:
+            for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
+                if clau in autor:
+                    simbol = simbol_candidat
+                    tema_trobat = f"autor ({clau})"
+                    break
+
+        # 5. Si encara no hi ha símbol, usar Claude per interpretar l'obra
+        if not simbol:
+            simbol_claude = self._interpretar_obra_amb_claude(metadata)
+            if simbol_claude:
+                simbol = simbol_claude
+                tema_trobat = "interpretació IA"
+
+        # 6. Símbols per defecte segons gènere (només si res més funciona)
         simbols_defecte = {
             "FIL": "a single ancient oil lamp glowing softly",
             "POE": "a quill pen with ink drop",
@@ -285,7 +396,7 @@ MAI:
 
         if not simbol:
             simbol = simbols_defecte.get(genere, simbols_defecte["NOV"])
-            tema_trobat = "gènere"
+            tema_trobat = "gènere per defecte"
 
         # Construir prompt figuratiu minimalista
         prompt = (

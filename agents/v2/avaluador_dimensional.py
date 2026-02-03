@@ -23,6 +23,7 @@ from agents.v2.models import (
     AvaluacioFidelitat,
     AvaluacioVeuAutor,
     AvaluacioFluidesa,
+    AvaluacioSimple,
     FeedbackFusionat,
     ContextAvaluacio,
     ProblemaFidelitat,
@@ -919,3 +920,108 @@ class AvaluadorDimensional:
             genere=genere,
         )
         return self.avaluar(context)
+
+
+# =============================================================================
+# AVALUADOR SIMPLE (NOU - SIMPLIFICAT)
+# =============================================================================
+
+class AvaluadorSimple(BaseAgent):
+    """Avaluador simplificat amb un sol criteri: sona natural en català?
+
+    Substitueix els 3 avaluadors dimensionals per un de sol més eficient.
+    """
+
+    agent_name: str = "AvaluadorSimple"
+
+    def __init__(
+        self,
+        config: AgentConfig | None = None,
+        logger: "AgentLogger | None" = None,
+    ) -> None:
+        super().__init__(config, logger)
+
+    @property
+    def system_prompt(self) -> str:
+        return """Avalua si aquesta traducció SONA NATURAL en català.
+
+PREGUNTA CLAU: Un lector català notaria que això és una traducció?
+- Si SÍ que ho notaria → suspès
+- Si NO ho notaria → aprovat
+
+INDICADORS DE "SONA A TRADUCCIÓ":
+- Frases massa llargues o embolicades
+- Ordre de paraules estrany
+- Expressions que "no es diuen" en català
+- Calcs de la llengua original
+- Registre inconsistent
+
+ESCALA:
+9-10: Excel·lent, no es nota que és traducció
+7-8: Bé, detalls menors
+5-6: Regular, es nota en alguns punts
+3-4: Malament, sona clarament a traducció
+1-2: Molt malament, inintel·ligible
+
+Retorna JSON:
+{
+    "puntuacio": <1-10>,
+    "es_acceptable": <true si >= 8>,
+    "sona_a_traduccio": <true/false>,
+    "problemes": ["problema concret 1", "problema concret 2"],
+    "suggeriments": ["canviar X per Y", "reordenar la frase Z"]
+}"""
+
+    def avaluar(
+        self,
+        text_original: str,
+        traduccio: str,
+        llengua_origen: str = "llatí",
+        llindar: float = 8.0,
+    ) -> AvaluacioSimple:
+        """Avalua una traducció amb criteri simple.
+
+        Args:
+            text_original: Text en llengua origen.
+            traduccio: Traducció a avaluar.
+            llengua_origen: Llengua del text original.
+            llindar: Llindar mínim per aprovar.
+
+        Returns:
+            AvaluacioSimple amb la puntuació i feedback.
+        """
+        prompt = f"""Avalua aquesta traducció del {llengua_origen} al català.
+
+ORIGINAL:
+{text_original[:1500]}
+
+TRADUCCIÓ:
+{traduccio[:1500]}
+
+Sona natural en català o sona a traducció?"""
+
+        response = self.process(prompt)
+        data = extract_json_from_text(response.content)
+
+        if data:
+            puntuacio = float(data.get("puntuacio", 5.0))
+            # Assegurar límits
+            puntuacio = max(0.0, min(10.0, puntuacio))
+
+            return AvaluacioSimple(
+                puntuacio=puntuacio,
+                es_acceptable=puntuacio >= llindar,
+                sona_a_traduccio=data.get("sona_a_traduccio", True),
+                problemes=data.get("problemes", []) or [],
+                suggeriments=data.get("suggeriments", []) or [],
+            )
+
+        # Retornar avaluació per defecte si falla parsing
+        self.log_warning("No s'ha pogut parsejar JSON, usant valors per defecte")
+        return AvaluacioSimple(
+            puntuacio=5.0,
+            es_acceptable=False,
+            sona_a_traduccio=True,
+            problemes=["No s'ha pogut avaluar correctament"],
+            suggeriments=[],
+        )
