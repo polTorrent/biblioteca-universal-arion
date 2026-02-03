@@ -1110,14 +1110,19 @@ class PipelineV2:
     ) -> list[str]:
         """Divideix el text en chunks utilitzant l'agent v1."""
         try:
+            # Convertir caràcters a tokens (aprox 3.5 chars per token)
+            max_tokens = int(self.config.max_chars_chunk / 3.5)
+            min_tokens = max(100, int(max_tokens * 0.3))  # Mínim 30% del màxim
+
             request = ChunkingRequest(
                 text=text,
                 source_language=llengua_origen,
-                max_chunk_size=self.config.max_chars_chunk,
+                max_tokens=max_tokens,
+                min_tokens=min_tokens,
                 strategy=ChunkingStrategy.PARAGRAPH,
             )
             result = self.chunker.chunk(request)
-            return [chunk.content for chunk in result.chunks]
+            return [chunk.text for chunk in result.chunks]
         except Exception as e:
             # Fallback: divisió simple per paràgrafs
             print(f"[Pipeline] Error en chunking agent, usant fallback: {e}")

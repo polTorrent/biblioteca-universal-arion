@@ -5,10 +5,27 @@ obra:
   any_traduccio: 2026
   llengua_original: anglès
   genere: narrativa
-  descripcio: ''
+  descripcio: Conte curt de terror gòtic sobre un pintor obsessionat que absorbeix
+    la vida de la seva esposa mentre pinta el seu retrat.
   estadistiques:
-    paraules_traduccio: 1283
+    paraules_traduccio: 1450
 revisio:
-  estat: revisat
+  estat: publicat
   data_revisio: '2026-02-02'
-  qualitat: 7.57
+  qualitat: 8.5
+avaluacio_final:
+  data: '2026-02-02T20:08:53.298189'
+  puntuacions:
+    fidelitat: 9.0
+    veu_autor: 8.0
+    fluidesa: 8.0
+    correccio_linguistica: 7.0
+    coherencia: 8.0
+    global: 8.1
+  total_errors: 16
+  errors_critics: 0
+  errors_alts: 1
+  aprovat: true
+  requereix_revisio_humana: false
+  correccions_aplicades: 0
+  correccions_pendents: 6

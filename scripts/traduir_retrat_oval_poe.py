@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Traducció de 'The Oval Portrait' d'Edgar Allan Poe al català."""
+"""Traducció de "El retrat oval" d'Edgar Allan Poe.
+
+Conte curt de terror gòtic publicat el 1842, sobre un pintor
+que absorbeix la vida de la seva esposa mentre pinta el seu retrat.
+"""
 
 import os
 import sys
@@ -24,16 +28,14 @@ from scripts.utils import crear_metadata_yml
 # CONFIGURACIÓ
 # ═══════════════════════════════════════════════════════════════════════════════
 
-# Ruta a l'obra (relatiu a la carpeta obres/)
 OBRA_PATH = "narrativa/edgar-allan-poe/el-retrat-oval"
 
-# Metadades de l'obra
 TITOL = "El retrat oval"
 AUTOR = "Edgar Allan Poe"
 LLENGUA_ORIGEN = "anglès"
 GENERE = "narrativa"
 
-# Configuració del pipeline
+# Conte curt: chunks petits, avaluació exhaustiva
 CONFIG = {
     "fer_analisi_previa": True,
     "crear_glossari": True,
@@ -84,17 +86,17 @@ def main():
     # Netejar metadades de fonts digitals
     text_original = netejar_metadades_font(text_original)
 
-    # Netejar capçalera si existeix
-    text_narratiu = text_original
-
-    # Detectar inici del contingut (primer paràgraf després de ---)
+    # Extreure el text narratiu (entre els dos ---)
     import re
-    match = re.search(r'^---\s*\n+(.+)', text_original, re.MULTILINE | re.DOTALL)
-    if match:
-        text_narratiu = match.group(1).strip()
+    parts = re.split(r'^---\s*$', text_original, flags=re.MULTILINE)
+    if len(parts) >= 2:
+        # El text està a la segona part (entre primer i segon ---)
+        text_narratiu = parts[1].strip()
+    else:
+        text_narratiu = text_original
 
     # Treure peu de pàgina si existeix
-    for footer in ['*Text de domini públic', '*Traducció de domini públic', '---\n\n*']:
+    for footer in ['*Text de domini públic', '*Traducció de domini públic']:
         if footer in text_narratiu:
             text_narratiu = text_narratiu.split(footer)[0].strip()
 
@@ -103,7 +105,7 @@ def main():
 
     # Configurar pipeline
     config = ConfiguracioPipelineV2(
-        directori_obra=obra_dir,  # IMPORTANT: assegurar que les notes es guarden al lloc correcte
+        directori_obra=obra_dir,
         fer_analisi_previa=CONFIG["fer_analisi_previa"],
         crear_glossari=CONFIG["crear_glossari"],
         fer_chunking=CONFIG["fer_chunking"],
@@ -138,7 +140,7 @@ def main():
     traduccio_final = f"""# {TITOL}
 *{AUTOR}*
 
-Traduït de l'{LLENGUA_ORIGEN} per Biblioteca Arion
+Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion
 
 ---
 

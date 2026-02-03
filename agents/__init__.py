@@ -50,6 +50,18 @@ from agents.agents_retratista import (
     AgentRetratista,
     generar_retrat_autor,
 )
+from agents.evaluador_final import (
+    EvaluadorFinalAgent,
+    ConfiguracioEvaluador,
+    SolicitutEvaluacio,
+    InformeEvaluacio,
+    ErrorDetectat,
+    TipusError,
+    SeveritatError,
+    PuntuacioAvaluacio,
+    avaluar_obra,
+    avaluar_cataleg,
+)
 
 __all__ = [
     # Base
@@ -98,4 +110,15 @@ __all__ = [
     "WebPublisherConfig",
     "ObraMetadata",
     "publicar_biblioteca",
+    # Evaluador Final
+    "EvaluadorFinalAgent",
+    "ConfiguracioEvaluador",
+    "SolicitutEvaluacio",
+    "InformeEvaluacio",
+    "ErrorDetectat",
+    "TipusError",
+    "SeveritatError",
+    "PuntuacioAvaluacio",
+    "avaluar_obra",
+    "avaluar_cataleg",
 ]
