@@ -67,6 +67,31 @@ def netejar_metadades_font(text: str) -> str:
     clean_lines = []
     skip_mode = False
 
+    # Detectar capçaleres de metadades al principi (títol, autor, subtítol)
+    i = 0
+    while i < len(lines) and i < 10:  # Només mirar les primeres 10 línies
+        line = lines[i].strip()
+        
+        # Saltar línies buides al principi
+        if not line:
+            i += 1
+            continue
+            
+        # Si és títol (# Títol), autor (*Autor*), subtítol descriptiu o separador, saltar
+        if (line.startswith('# ') or
+            line == '---' or
+            (line.startswith('*') and line.endswith('*') and len(line) > 2) or
+            (i > 0 and not line.startswith('#') and not line.startswith('*') and len(line) < 100 and
+             any(words in line.lower() for words in ['story', 'tale', 'novel', 'poem', 'història', 'conte', '(1']))):
+            i += 1
+            continue
+            
+        # Si arribem aquí, hem trobat contingut real
+        break
+        
+    # Començar des de la primera línia de contingut real
+    lines = lines[i:]
+
     for line in lines:
         # Comprovar si la línia conté algun marcador de metadades
         is_metadata = False
@@ -90,8 +115,8 @@ def netejar_metadades_font(text: str) -> str:
         if not is_metadata:
             clean_lines.append(line)
 
-    # Netejar línies buides excessives al final
-    result = '\n'.join(clean_lines).rstrip()
+    # Netejar línies buides excessives al principi i final
+    result = '\n'.join(clean_lines).strip()
 
     return result
 
@@ -471,6 +496,56 @@ def corregir_traduccio_languagetool(traduccio_path: Path, auto_corregir: bool = 
     return True
 
 
+def executar_avaluacio_final(obra_dir: Path) -> dict:
+    """Executa l'avaluador final per verificar qualitat abans de publicar.
+
+    Returns:
+        Dict amb resultats de l'avaluació: aprovat, puntuacio, errors, etc.
+    """
+    try:
+        from agents.evaluador_final import EvaluadorFinalAgent, SolicitutEvaluacio, ConfiguracioEvaluador
+
+        config = ConfiguracioEvaluador(
+            aplicar_correccions_automatiques=False,  # No corregir automàticament, només detectar
+            llindar_global=7.0,
+        )
+
+        sol = SolicitutEvaluacio(ruta_obra=str(obra_dir), config=config)
+        agent = EvaluadorFinalAgent()
+        informe = agent.avaluar(sol)
+
+        # Mostrar resum
+        status = "✅ APROVAT" if informe.aprovat else "❌ NO APROVAT"
+        print(f"   {status} - Puntuació: {informe.puntuacions.global_:.1f}/10")
+        print(f"   Errors: {informe.total_errors} (crítics: {informe.errors_critics}, alts: {informe.errors_alts})")
+
+        if informe.requereix_revisio_humana:
+            print("   ⚠️  Requereix revisió humana")
+
+        # Mostrar primers errors si n'hi ha de crítics o alts
+        errors_greus = [e for e in informe.errors if e.severitat.value in ('critica', 'alta')]
+        if errors_greus:
+            print("   Errors principals:")
+            for e in errors_greus[:3]:
+                print(f"      • [{e.severitat.value.upper()}] {e.explicacio[:60]}...")
+
+        return {
+            'aprovat': informe.aprovat,
+            'puntuacio': informe.puntuacions.global_,
+            'errors_total': informe.total_errors,
+            'errors_critics': informe.errors_critics,
+            'errors_alts': informe.errors_alts,
+            'requereix_revisio': informe.requereix_revisio_humana,
+        }
+
+    except ImportError:
+        print("   ⚠️  Avaluador final no disponible")
+        return {'aprovat': True, 'error': 'import_error'}
+    except Exception as e:
+        print(f"   ⚠️  Error en avaluació: {e}")
+        return {'aprovat': True, 'error': str(e)}
+
+
 def executar_build() -> bool:
     """Executa el build per publicar a la web."""
     try:
@@ -528,6 +603,7 @@ def post_processar_traduccio(
         'portada': False,
         'metadata': False,
         'languagetool': False,
+        'avaluacio_final': {},
         'build': False,
     }
 
@@ -580,10 +656,19 @@ def post_processar_traduccio(
     print("6. Verificació lingüística...")
     resultats['languagetool'] = corregir_traduccio_languagetool(traduccio_path, auto_corregir=False)
 
-    # 7. Executar build
+    # 7. Avaluació final (verificació de qualitat abans de publicar)
+    print("7. Avaluació final...")
+    resultats['avaluacio_final'] = executar_avaluacio_final(obra_dir)
+
+    # 8. Executar build (només si l'avaluació no detecta errors crítics)
     if executar_build_auto:
-        print("7. Publicant a la web...")
-        resultats['build'] = executar_build()
+        if resultats.get('avaluacio_final', {}).get('aprovat', True):
+            print("8. Publicant a la web...")
+            resultats['build'] = executar_build()
+        else:
+            print("8. ⚠️  Build pausat - l'avaluació ha detectat problemes")
+            print("   Revisa els errors i executa el build manualment quan estigui llest")
+            resultats['build'] = False
 
     print()
     print("═" * 60)

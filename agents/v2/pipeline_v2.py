@@ -44,7 +44,7 @@ from core import EstatPipeline, MemoriaContextual, ValidadorFinal, ContextInvest
 # Agents V2 (nous)
 from agents.v2.analitzador_pre import AnalitzadorPreTraduccio, SelectorExemplesFewShot
 from agents.v2.traductor_enriquit import TraductorEnriquit, ResultatTraduccio
-from agents.v2.avaluador_dimensional import AvaluadorDimensional
+from agents.v2.avaluador_dimensional import AvaluadorDimensional, AvaluadorSimple
 from agents.v2.refinador_iteratiu import RefinadorIteratiu, ResultatRefinament
 from agents.v2.models import (
     AnalisiPreTraduccio,
@@ -115,7 +115,7 @@ class ConfiguracioPipelineV2(BaseModel):
 
     # Chunking
     fer_chunking: bool = Field(default=True, description="Dividir text en fragments")
-    max_chars_chunk: int = Field(default=3000, description="Mida màxima de cada chunk")
+    max_chars_chunk: int = Field(default=800, description="Mida màxima de cada chunk (era 3000, ara 800)")
     chunk_strategy: str = Field(default="paragraph", description="Estratègia de chunking")
 
     # Límits de truncat per evitar excés de tokens
@@ -127,6 +127,8 @@ class ConfiguracioPipelineV2(BaseModel):
     fer_avaluacio: bool = Field(default=True, description="Avaluar traduccions")
     fer_refinament: bool = Field(default=True, description="Refinar si no aprovat")
     llindars: LlindarsAvaluacio = Field(default_factory=lambda: LLINDARS_DEFAULT)
+    usar_avaluador_simple: bool = Field(default=True, description="Usar avaluador simplificat (1 criteri) en lloc de 3")
+    llindar_qualitat: float = Field(default=8.0, description="Llindar mínim per aprovar amb avaluador simple")
 
     # Anotació crítica
     generar_anotacions: bool = Field(default=True, description="Generar notes crítiques automàticament")
@@ -383,6 +385,48 @@ class PipelineV2:
                 encoding="utf-8"
             )
             self.estat.guardar()
+
+    def _guardar_traduccio_chunk(self, chunk_id: str, traduccio: str) -> None:
+        """Guarda la traducció d'un chunk per poder reprendre sessions."""
+        if not self.estat:
+            return
+        chunks_path = self.estat.obra_dir / ".chunks_traduïts.json"
+        chunks_data = {}
+        if chunks_path.exists():
+            try:
+                chunks_data = json.loads(chunks_path.read_text(encoding="utf-8"))
+            except Exception:
+                pass
+        
+        # Extreure només el text de traducció si el contingut és JSON
+        text_a_guardar = traduccio
+        try:
+            # Intentar parsejar com JSON
+            json_data = json.loads(traduccio)
+            if isinstance(json_data, dict) and "traduccio" in json_data:
+                text_a_guardar = json_data["traduccio"]
+        except (json.JSONDecodeError, TypeError):
+            # No és JSON o no té la clau 'traduccio', guardar tal com està
+            pass
+        
+        chunks_data[chunk_id] = text_a_guardar
+        chunks_path.write_text(
+            json.dumps(chunks_data, indent=2, ensure_ascii=False),
+            encoding="utf-8"
+        )
+
+    def _carregar_traduccio_chunk(self, chunk_id: str) -> str | None:
+        """Carrega la traducció d'un chunk guardat prèviament."""
+        if not self.estat:
+            return None
+        chunks_path = self.estat.obra_dir / ".chunks_traduïts.json"
+        if not chunks_path.exists():
+            return None
+        try:
+            chunks_data = json.loads(chunks_path.read_text(encoding="utf-8"))
+            return chunks_data.get(chunk_id)
+        except Exception:
+            return None
 
     def _carregar_memoria(self) -> None:
         """Carrega la memòria contextual si existeix."""
@@ -709,15 +753,20 @@ class PipelineV2:
 
                 # Saltar chunks ja completats (represa)
                 if self.estat and chunk_id not in chunks_pendents and self.estat.chunks_completats > 0:
-                    print(f"[Pipeline] Chunk {i+1} ja completat, saltant...")
-                    # Crear resultat placeholder per mantenir ordre
-                    resultats_chunks.append(ResultatChunk(
-                        chunk_id=i + 1,
-                        text_original=chunk,
-                        traduccio_final="[CARREGAT DE SESSIÓ ANTERIOR]",
-                        aprovat=True,
-                    ))
-                    continue
+                    # Intentar carregar la traducció guardada
+                    traduccio_guardada = self._carregar_traduccio_chunk(chunk_id)
+                    if traduccio_guardada:
+                        print(f"[Pipeline] Chunk {i+1} recuperat de sessió anterior")
+                        resultats_chunks.append(ResultatChunk(
+                            chunk_id=i + 1,
+                            text_original=chunk,
+                            traduccio_final=traduccio_guardada,
+                            aprovat=True,
+                        ))
+                        continue
+                    else:
+                        # No es pot recuperar la traducció, re-traduir
+                        print(f"[Pipeline] Chunk {i+1} marcat com completat però sense traducció guardada, re-traduint...")
 
                 progres_chunk = i / len(chunks)
                 self._reportar_progres(f"Traduint chunk {i+1}/{len(chunks)}", progres_chunk)
@@ -746,6 +795,9 @@ class PipelineV2:
                     )
                     resultat_chunk.temps_processament = time.time() - temps_chunk
                     resultats_chunks.append(resultat_chunk)
+
+                    # Guardar traducció del chunk per poder reprendre sessions
+                    self._guardar_traduccio_chunk(chunk_id, resultat_chunk.traduccio_final)
 
                     if resultat_chunk.avaluacio_final:
                         puntuacio = resultat_chunk.avaluacio_final.puntuacio_global
@@ -1160,50 +1212,80 @@ class PipelineV2:
         traduccio_actual = resultat_traduccio.traduccio
 
         # ─────────────────────────────────────────────────────────────
-        # AVALUACIÓ
+        # AVALUACIÓ (SIMPLIFICADA o DIMENSIONAL)
         # ─────────────────────────────────────────────────────────────
         aprovat = True
+        avaluacio: FeedbackFusionat | None = None
+        avaluacio_simple = None
 
         if self.config.fer_avaluacio:
             if self.dashboard:
                 self.dashboard.update_chunk(chunk_index, "avaluant")
                 self.dashboard.log_info("Avaluador", f"Avaluant qualitat chunk {chunk_id}...")
-            context_avaluacio = ContextAvaluacio(
-                text_original=text_chunk,
-                text_traduit=traduccio_actual,
-                llengua_origen=llengua_origen,
-                autor=autor,
-                genere=genere or "narrativa",
-                descripcio_estil_autor=analisi.to_autor if analisi else None,
-                glossari=glossari,
-                max_chars=self.config.max_chars_avaluacio,
-            )
-            avaluacio = self.avaluador.avaluar(context_avaluacio)
-            aprovat = avaluacio.aprovat
+
+            if self.config.usar_avaluador_simple:
+                # AVALUACIÓ SIMPLIFICADA (1 criteri: "sona a traducció?")
+                avaluador_simple = AvaluadorSimple(self.agent_config, self.logger)
+                avaluacio_simple = avaluador_simple.avaluar(
+                    text_original=text_chunk,
+                    traduccio=traduccio_actual,
+                    llengua_origen=llengua_origen,
+                    llindar=self.config.llindar_qualitat,
+                )
+                avaluacio = avaluacio_simple.to_feedback_fusionat()
+                aprovat = avaluacio_simple.es_acceptable
+            else:
+                # AVALUACIÓ DIMENSIONAL ORIGINAL (3 avaluadors - compatibilitat)
+                context_avaluacio = ContextAvaluacio(
+                    text_original=text_chunk,
+                    text_traduit=traduccio_actual,
+                    llengua_origen=llengua_origen,
+                    autor=autor,
+                    genere=genere or "narrativa",
+                    descripcio_estil_autor=analisi.to_autor if analisi else None,
+                    glossari=glossari,
+                    max_chars=self.config.max_chars_avaluacio,
+                )
+                avaluacio = self.avaluador.avaluar(context_avaluacio)
+                aprovat = avaluacio.aprovat
 
             # ─────────────────────────────────────────────────────────
-            # REFINAMENT (si cal)
+            # REFINAMENT SIMPLIFICAT (màxim 1 iteració)
             # ─────────────────────────────────────────────────────────
             if not aprovat and self.config.fer_refinament:
                 if self.dashboard:
                     self.dashboard.update_chunk(chunk_index, "refinant")
+                    puntuacio_actual = avaluacio.puntuacio_global if avaluacio else 0.0
                     self.dashboard.log_warning(
                         "Refinador",
-                        f"Qualitat {avaluacio.puntuacio_global:.1f} < llindar, refinant chunk {chunk_id}..."
+                        f"Qualitat {puntuacio_actual:.1f} < llindar, refinant chunk {chunk_id}..."
                     )
-                resultat_refinament = self.refinador.refinar(
-                    traduccio=traduccio_actual,
+
+                # Refinament simple amb problemes/suggeriments
+                problemes = avaluacio_simple.problemes if avaluacio_simple else []
+                suggeriments = avaluacio_simple.suggeriments if avaluacio_simple else []
+
+                traduccio_refinada = self._refinar_simple(
                     text_original=text_chunk,
-                    llengua_origen=llengua_origen,
-                    autor=autor,
-                    genere=genere or "narrativa",
-                    descripcio_estil=analisi.to_autor if analisi else None,
-                    glossari=glossari,
+                    traduccio=traduccio_actual,
+                    problemes=problemes,
+                    suggeriments=suggeriments,
                 )
-                traduccio_actual = resultat_refinament.traduccio_final
-                avaluacio = resultat_refinament.avaluacio_final
-                iteracions = resultat_refinament.iteracions_realitzades
-                aprovat = resultat_refinament.aprovat
+
+                if traduccio_refinada and traduccio_refinada != traduccio_actual:
+                    traduccio_actual = traduccio_refinada
+                    iteracions = 1
+
+                    # Re-avaluar després del refinament
+                    if self.config.usar_avaluador_simple and avaluacio_simple:
+                        avaluacio_simple = avaluador_simple.avaluar(
+                            text_original=text_chunk,
+                            traduccio=traduccio_actual,
+                            llengua_origen=llengua_origen,
+                            llindar=self.config.llindar_qualitat,
+                        )
+                        avaluacio = avaluacio_simple.to_feedback_fusionat()
+                        aprovat = avaluacio_simple.es_acceptable
 
         # ─────────────────────────────────────────────────────────────
         # CORRECCIÓ NORMATIVA (LanguageTool)
@@ -1245,6 +1327,53 @@ class PipelineV2:
             aprovat=aprovat,
             correccio_normativa=resultat_correccio,
         )
+
+    def _refinar_simple(
+        self,
+        text_original: str,
+        traduccio: str,
+        problemes: list[str],
+        suggeriments: list[str],
+    ) -> str:
+        """Refinament simple en una sola passada.
+
+        Args:
+            text_original: Text original.
+            traduccio: Traducció actual.
+            problemes: Problemes detectats.
+            suggeriments: Suggeriments de millora.
+
+        Returns:
+            Traducció refinada.
+        """
+        prompt = f"""Millora aquesta traducció.
+
+PROBLEMES: {', '.join(problemes) if problemes else 'Cap detectat'}
+SUGGERIMENTS: {', '.join(suggeriments) if suggeriments else 'Cap'}
+
+ORIGINAL:
+{text_original[:1500]}
+
+TRADUCCIÓ:
+{traduccio[:1500]}
+
+Retorna NOMÉS la traducció millorada. Ha de sonar natural en català."""
+
+        try:
+            response = self.traductor.process(prompt)
+            traduccio_refinada = response.content.strip()
+
+            # Netejar possibles prefixos de la resposta
+            if traduccio_refinada.startswith("TRADUCCIÓ:"):
+                traduccio_refinada = traduccio_refinada[10:].strip()
+            if traduccio_refinada.startswith("Traducció millorada:"):
+                traduccio_refinada = traduccio_refinada[20:].strip()
+
+            return traduccio_refinada if traduccio_refinada else traduccio
+        except Exception as e:
+            if self.logger:
+                self.logger.warning(f"Error en refinament simple: {e}")
+            return traduccio
 
     def _fusionar_chunks(self, resultats: list[ResultatChunk]) -> str:
         """Fusiona les traduccions dels chunks."""

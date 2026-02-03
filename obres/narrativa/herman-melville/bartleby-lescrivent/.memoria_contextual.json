@@ -1,0 +1,117 @@
+{
+  "traduccions": {
+    "scrivener": {
+      "original": "scrivener",
+      "traduccio": "copista legal",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "law-copyist": {
+      "original": "law-copyist",
+      "traduccio": "copista jurídic",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "master in chancery": {
+      "original": "Master in Chancery",
+      "traduccio": "Mestre de la Cancelleria",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "chancery": {
+      "original": "Chancery",
+      "traduccio": "Cancelleria",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "bonds": {
+      "original": "bonds",
+      "traduccio": "obligacions",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "mortgages": {
+      "original": "mortgages",
+      "traduccio": "hipoteques",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "title-deeds": {
+      "original": "title-deeds",
+      "traduccio": "escriptures de propietat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "constitution": {
+      "original": "Constitution",
+      "traduccio": "Constitució",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "abrogation": {
+      "original": "abrogation",
+      "traduccio": "abolició",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "prudence": {
+      "original": "prudence",
+      "traduccio": "prudència",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "method": {
+      "original": "method",
+      "traduccio": "mètode",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "wall-street": {
+      "original": "Wall-street",
+      "traduccio": "Wall Street",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "chambers": {
+      "original": "chambers",
+      "traduccio": "despatx",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Herman Melville (1819 - 1891), Nova York, Estats Units. Escriptor americà del segle XIX, conegut principalment per 'Moby Dick'. Va servir com a mariner en la seva joventut, experiència que va influir profundament en la seva obra. Va experimentar el fracàs comercial durant la seva vida però va ser redescubert al segle XX com un dels grans mestres de la literatura americana.",
+    "context_historic": "Període pre-Guerra Civil americana (1840-1860), era d'expansió industrial i comercial, creixement de Wall Street i del capitalisme americà, tensions sobre l'esclavitud",
+    "context_obra": "Bartleby, the Scrivener: A Story of Wall Street (1853) - Conte/relat curt, ficció realista amb elements simbòlics. Publicat inicialment a 'Putnam's Monthly Magazine', escrit durant un període de dificultats econòmiques de Melville, reflecteix la seva experiència amb el món comercial de Nova York",
+    "influencies": [
+      "Nathaniel Hawthorne",
+      "William Shakespeare",
+      "literatura bíblica",
+      "filosofia transcendentalista",
+      "Ralph Waldo Emerson"
+    ],
+    "temes_principals": [
+      "alienació del treball modern",
+      "resistència passiva",
+      "deshumanització del capitalisme",
+      "incomunicació humana",
+      "compassió versus eficiència"
+    ]
+  },
+  "notes_pendents": []
+}
