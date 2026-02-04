@@ -1,0 +1,146 @@
+{
+  "traduccions": {
+    "lodge": {
+      "original": "lodge",
+      "traduccio": "pavelló",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ward": {
+      "original": "ward",
+      "traduccio": "sala/pavelló",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "lunatics": {
+      "original": "lunatics",
+      "traduccio": "malalts mentals",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "porter": {
+      "original": "porter",
+      "traduccio": "porter/vigilant",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "good-conduct stripes": {
+      "original": "good-conduct stripes",
+      "traduccio": "galons per bon comportament",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "dressing-gowns": {
+      "original": "dressing-gowns",
+      "traduccio": "bates",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "artisans": {
+      "original": "artisans",
+      "traduccio": "artesans",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "upper class": {
+      "original": "upper class",
+      "traduccio": "classe alta",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "consumption": {
+      "original": "consumption",
+      "traduccio": "tuberculosi",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "imbecile": {
+      "original": "imbecile",
+      "traduccio": "imbècil",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "hat factory": {
+      "original": "hat factory",
+      "traduccio": "fàbrica de barrets",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "discipline": {
+      "original": "discipline",
+      "traduccio": "disciplina",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "order": {
+      "original": "order",
+      "traduccio": "ordre",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "menagerie": {
+      "original": "menagerie",
+      "traduccio": "menagerie/zoològic",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "privilege": {
+      "original": "privilege",
+      "traduccio": "privilegi",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Anton Pavlovitx Txèkhov (1860 - 1904), Taganrog, Imperi Rus (actualment Rússia). Metge i escriptor rus considerat un dels mestres del relat curt i del teatre modern. Va revolucionar el gènere dramàtic amb obres com 'El jardí dels cirerers' i 'Oncle Vània', i va crear una nova forma narrativa basada en la subtilesa psicològica i l'atmosfera més que en l'acció. La seva obra reflecteix la decadència de l'aristocràcia russa i l'emergència de la burgesia a finals del segle XIX.",
+    "context_historic": "Rússia de finals del segle XIX sota el regnat d'Alexandre III i Nicolau II, període de transformacions socials amb l'abolició de la servitud (1861), industrialització incipient i creixement de la intelligentsia. Context de censura tsarista, moviments revolucionaris clandestins i canvis en l'estructura social tradicional.",
+    "context_obra": "Палата № 6 (Palata nómer 6) (1892) - Relat llarg o novel·la curta. Escrita després del viatge de Txèkhov a l'illa de Sakhalin (1890) per estudiar les condicions del sistema penitenciari rus. L'obra reflecteix la seva preocupació per les institucions mèdiques i penitenciàries de Rússia, així com la seva experiència com a metge.",
+    "influencies": [
+      "Ivan Turguénev",
+      "Fiódor Dostoievski",
+      "Henrik Ibsen",
+      "Guy de Maupassant",
+      "Literatura realista francesa"
+    ],
+    "temes_principals": [
+      "La institucionalització de la bogeria",
+      "La corrupció del sistema sanitari rus",
+      "El nihilisme filosòfic vs. l'acció social",
+      "La condició humana i l'alienació",
+      "La decadència moral de la societat russa"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Diògenes de Sinope",
+    "[H] Personatge històric: Marco Aureli",
+    "[H] Personatge històric: Epíctet",
+    "[C] Referència cultural: Filosofia estoica",
+    "[C] Referència cultural: Sistema sanitari de la Rússia tsarista",
+    "[C] Referència cultural: Condicions dels hospitals provincials russos",
+    "[C] Referència cultural: Sistema de classes socials de l'Imperi Rus",
+    "[C] Referència cultural: Moviments nihilistes russos",
+    "[T] Terme tècnic: Nihilisme",
+    "[T] Terme tècnic: Estoïcisme",
+    "[T] Terme tècnic: Atàraxia",
+    "[T] Terme tècnic: Melancolia",
+    "[T] Terme tècnic: Alienació mental",
+    "[T] Terme tècnic: Sistema zemstvo"
+  ]
+}

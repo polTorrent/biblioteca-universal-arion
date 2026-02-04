@@ -1,0 +1,93 @@
+# Glossari - La Sala número 6
+# Anton Txèkhov
+
+termes:
+  - id: lodge
+    original: lodge
+    transliteracio: null
+    traduccio: pavelló
+    definicio: Edifici annex d'un hospital, sovint destinat a funcions específiques o a pacients de categories particulars.
+
+  - id: ward
+    original: ward
+    transliteracio: null
+    traduccio: sala
+    definicio: Sala d'hospital destinada a un tipus particular de pacients; en aquest cas, la sala de malalts mentals.
+
+  - id: lunatics
+    original: lunatics
+    transliteracio: null
+    traduccio: malalts mentals
+    definicio: Terme de l'època per referir-se a persones amb trastorns psiquiàtrics. Del llatí "lunaticus", relacionat amb la creença que la lluna influïa en la bogeria.
+
+  - id: porter
+    original: porter
+    transliteracio: null
+    traduccio: porter
+    definicio: En el context d'un hospital psiquiàtric rus del segle XIX, el porter sovint exercia funcions de vigilant i de control dels pacients.
+
+  - id: good-conduct-stripes
+    original: good-conduct stripes
+    transliteracio: null
+    traduccio: galons per bon comportament
+    definicio: Distintius militars russos que indicaven anys de servei sense incidents disciplinaris.
+
+  - id: consumption
+    original: consumption
+    transliteracio: null
+    traduccio: tuberculosi
+    definicio: Nom popular de la tuberculosi pulmonar al segle XIX, anomenada així pel "consum" progressiu del cos del malalt.
+
+  - id: menagerie
+    original: menagerie
+    transliteracio: null
+    traduccio: menagèrie
+    definicio: Col·lecció d'animals salvatges o exòtics exhibits al públic. En el context, usat metafòricament per descriure la sala de malalts.
+
+  - id: zemstvo
+    original: zemstvo
+    transliteracio: zémstvo
+    traduccio: zemstvo
+    definicio: Sistema d'autogovern local establert a Rússia el 1864 després de l'abolició de la servitud. Els zemstvos administraven serveis com l'educació i la sanitat a les províncies.
+
+  - id: nihilisme
+    original: nihilism
+    transliteracio: null
+    traduccio: nihilisme
+    definicio: Corrent filosòfic i polític rus del segle XIX que rebutjava les institucions tradicionals i l'autoritat establerta. Figures com Pisarev i Txernixevski en foren exponents.
+
+  - id: estoicisme
+    original: stoicism
+    transliteracio: null
+    traduccio: estoïcisme
+    definicio: Escola filosòfica grega fundada per Zenó de Cítion (s. III aC). Promou la virtut, la raó i l'acceptació del destí com a camí cap a la tranquil·litat de l'ànima.
+
+  - id: ataraxia
+    original: ataraxia
+    transliteracio: ἀταραξία (ataraxía)
+    traduccio: ataraxia
+    definicio: Concepte estoic i epicuri que designa l'estat d'impertorbabilitat de l'ànima, lliure de passions i pertorbacions.
+
+  - id: melancolia
+    original: melancholia
+    transliteracio: null
+    traduccio: melancolia
+    definicio: En la medicina del segle XIX, terme per a un estat depressiu caracteritzat per tristesa profunda i apatia. Derivat de la teoria humoral grega (bilis negra).
+
+  - id: intelligentsia
+    original: intelligentsia
+    transliteracio: intelligéntsiya
+    traduccio: intel·ligèntsia
+    definicio: Classe social russa formada per intel·lectuals, professionals i artistes, sovint crítics amb el règim tsarista i compromesos amb reformes socials.
+
+  - id: kopek
+    original: kopeck
+    transliteracio: kopéyka
+    traduccio: copec
+    definicio: Unitat monetària russa equivalent a una centèsima part del ruble. Al segle XIX, el poder adquisitiu era molt superior a l'actual.
+
+  - id: versta
+    original: verst
+    transliteracio: verstá
+    traduccio: versta
+    definicio: Unitat de mesura russa de distància equivalent a aproximadament 1,067 km.
