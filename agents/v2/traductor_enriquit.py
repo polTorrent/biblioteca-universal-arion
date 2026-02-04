@@ -11,6 +11,8 @@ Diferències amb el traductor v1:
 - Genera traducció + justificació de decisions
 """
 
+import json
+import re
 from typing import TYPE_CHECKING
 
 from pydantic import BaseModel, Field
@@ -216,23 +218,68 @@ FORMAT RESPOSTA (JSON):
         return "\n".join(seccions)
 
     def _extreure_traduccio(self, text: str) -> str:
-        """Intenta extreure la traducció d'una resposta no estructurada."""
-        # Buscar patrons comuns
-        import re
+        """Intenta extreure la traducció d'una resposta no estructurada.
 
-        # Buscar bloc de traducció
+        Aquesta funció és el fallback quan el parsing JSON falla.
+        Ha de ser molt robusta per evitar que JSON acabi a la traducció.
+        """
+        if not text:
+            return ""
+
+        # 1. Intentar parsejar JSON i extreure camp "traduccio"
+        try:
+            # Buscar JSON al text
+            json_match = re.search(r'\{[\s\S]*"traduccio"[\s\S]*\}', text)
+            if json_match:
+                try:
+                    data = json.loads(json_match.group())
+                    if "traduccio" in data:
+                        traduccio = data["traduccio"]
+                        # Desescapar
+                        return traduccio.replace("\\n", "\n").replace('\\"', '"').strip()
+                except json.JSONDecodeError:
+                    pass
+        except Exception:
+            pass
+
+        # 2. Buscar patró "traduccio": "contingut" amb regex
         patterns = [
-            r'"traduccio":\s*"([^"]+)"',
-            r'TRADUCCIÓ:?\s*\n(.+?)(?:\n\n|\Z)',
-            r'Text traduït:?\s*\n(.+?)(?:\n\n|\Z)',
+            # JSON amb escapes
+            r'"traduccio":\s*"((?:[^"\\]|\\.)*)"',
+            # Blocs de text explícits
+            r'TRADUCCIÓ:?\s*\n(.+?)(?:\n\n|\n"|\Z)',
+            r'Text traduït:?\s*\n(.+?)(?:\n\n|\n"|\Z)',
         ]
 
         for pattern in patterns:
             match = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
             if match:
-                return match.group(1).strip()
+                traduccio = match.group(1).strip()
+                # Desescapar si cal
+                traduccio = traduccio.replace("\\n", "\n").replace('\\"', '"')
+                return traduccio
 
-        # Si no trobem res, retornar el text sencer (pot ser la traducció directa)
+        # 3. Si el text conté JSON, eliminar-lo i retornar la resta
+        # Eliminar blocs JSON
+        cleaned = text
+        json_patterns = [
+            r'\{[^}]*"traduccio"[^}]*\}',
+            r'"decisions_clau":\s*\[[^\]]*\]',
+            r'"termes_preservats":\s*\{[^}]*\}',
+            r'"confianca":\s*[\d.]+',
+            r'"avisos":\s*\[[^\]]*\]',
+        ]
+        for pattern in json_patterns:
+            cleaned = re.sub(pattern, '', cleaned, flags=re.DOTALL)
+
+        cleaned = re.sub(r'\n{3,}', '\n\n', cleaned).strip()
+
+        # Si queda contingut substancial, retornar-lo
+        if len(cleaned) > 50:
+            return cleaned
+
+        # 4. Últim recurs: retornar el text original però amb warning
+        self.log_warning("No s'ha pogut netejar el text de JSON residual")
         return text.strip()
 
     def traduir_simple(

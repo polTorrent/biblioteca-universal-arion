@@ -1,0 +1,30 @@
+obra:
+  titol: La Sala número 6
+  autor: Anton Txèkhov
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_traduccio: 2026
+  llengua_original: anglès
+  genere: narrativa
+  descripcio: ''
+  estadistiques:
+    paraules_traduccio: 24661
+revisio:
+  estat: revisat
+  data_revisio: '2026-02-03'
+  qualitat: 7.94
+avaluacio_final:
+  data: '2026-02-03T14:53:03.575826'
+  puntuacions:
+    fidelitat: 9.0
+    veu_autor: 9.0
+    fluidesa: 8.0
+    correccio_linguistica: 7.0
+    coherencia: 9.0
+    global: 8.5
+  total_errors: 271
+  errors_critics: 0
+  errors_alts: 3
+  aprovat: true
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 246

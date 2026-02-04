@@ -131,8 +131,8 @@ class MarkdownProcessor:
         for terme in glossari:
             term_id = terme.get('id', '')
             # Afegir variants: transliteracio, traduccio
-            trans = terme.get('transliteracio', '').lower()
-            trad = terme.get('traduccio', '').lower()
+            trans = (terme.get('transliteracio') or '').lower()
+            trad = (terme.get('traduccio') or '').lower()
             if trans:
                 termes_coneguts[trans] = term_id
             if trad:
@@ -424,6 +424,7 @@ class BuildSystem:
         # Fitxers CSS a copiar
         css_files = [
             'styles.css',
+            'obra.css',  # IMPORTANT: CSS per índex i navegació de capítols
             'mecenatge.css',
             'perfil.css',
             'usuari-public.css',

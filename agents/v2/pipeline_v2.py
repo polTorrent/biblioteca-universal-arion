@@ -119,6 +119,7 @@ class ConfiguracioPipelineV2(BaseModel):
     chunk_strategy: str = Field(default="paragraph", description="Estratègia de chunking")
 
     # Límits de truncat per evitar excés de tokens
+    max_chars_text: int = Field(default=150000, description="Límit de caràcters del text d'entrada (per defecte 150KB)")
     max_chars_analisi: int = Field(default=10000, description="Límit de caràcters per anàlisi prèvia")
     max_chars_avaluacio: int = Field(default=8000, description="Límit de caràcters per avaluació")
     max_chars_context_memoria: int = Field(default=1500, description="Límit de caràcters per context de memòria")
@@ -386,6 +387,121 @@ class PipelineV2:
             )
             self.estat.guardar()
 
+    def _netejar_json_traduccio(self, text: str) -> str:
+        """Neteja qualsevol JSON residual d'una traducció.
+
+        Aquesta funció és crítica per evitar que JSON malformat
+        acabi a les traduccions finals.
+
+        Args:
+            text: Text que pot contenir JSON residual.
+
+        Returns:
+            Text net sense JSON.
+        """
+        if not text or not isinstance(text, str):
+            return text or ""
+
+        text_net = text
+
+        # 1. Si el text sencer és JSON vàlid amb camp "traduccio", extreure'l
+        try:
+            data = json.loads(text_net.strip())
+            if isinstance(data, dict) and "traduccio" in data:
+                traduccio = data["traduccio"]
+                # Desescapar si cal
+                if isinstance(traduccio, str):
+                    text_net = traduccio.replace("\\n", "\n").replace('\\"', '"')
+        except (json.JSONDecodeError, TypeError):
+            pass
+
+        # 2. Eliminar blocs JSON incrustats (patró: { "traduccio": "...", ... })
+        # Patró per trobar JSON amb camp "traduccio"
+        json_patterns = [
+            # '`'json { ... } '`'
+            r"'`'json\s*\{[^}]*\"traduccio\"[^}]*(?:\{[^}]*\}[^}]*)*\}\s*'`'",
+            # { "traduccio": "...", "decisions_clau": [...], ... }
+            r'\{\s*"traduccio":\s*"(?:[^"\\]|\\.)*"[^}]*(?:"decisions_clau"[^}]*)?(?:"termes_preservats"[^}]*)?(?:"confianca"[^}]*)?(?:"avisos"[^}]*)*\}\.?',
+            # Camp "traduccio" sol (sense claus envolvents) - IMPORTANT per casos parcials
+            r'^\s*"traduccio":\s*"(?:[^"\\]|\\.)*"\s*,?\s*$',
+            # Blocs JSON parcials amb decisions_clau, termes_preservats, etc.
+            r'^\s*"decisions_clau":\s*\[[^\]]*\]\s*,?\s*$',
+            r'^\s*"termes_preservats":\s*\{[^}]*\}\s*,?\s*$',
+            r'^\s*"confianca":\s*[\d.]+\s*,?\s*$',
+            r'^\s*"avisos":\s*\[[^\]]*\]\s*,?\s*$',
+            r'^\s*"recursos_adaptats":\s*\[[^\]]*\]\s*,?\s*$',
+            r'^\s*"notes_traductor":\s*\[[^\]]*\]\s*,?\s*$',
+            # Versions inline (sense ^ i $)
+            r'\s*"decisions_clau":\s*\[[^\]]*\]\s*,?',
+            r'\s*"termes_preservats":\s*\{[^}]*\}\s*,?',
+            r'\s*"confianca":\s*[\d.]+\s*,?',
+            r'\s*"avisos":\s*\[[^\]]*\]\s*,?',
+            r'\s*"recursos_adaptats":\s*\[[^\]]*\]\s*,?',
+            r'\s*"notes_traductor":\s*\[[^\]]*\]\s*,?',
+            # Objectes buits i claus soltes
+            r'\{\s*\}',
+            r'^\s*[\{\}]\.?\s*$',
+        ]
+
+        for pattern in json_patterns:
+            try:
+                matches = list(re.finditer(pattern, text_net, re.DOTALL | re.MULTILINE))
+                for match in reversed(matches):  # Reversed per no afectar índexs
+                    # Intentar extreure la traducció del match si és JSON complet
+                    match_text = match.group()
+                    try:
+                        # Netejar el match
+                        clean_match = match_text.replace("'`'json", "").replace("'`'", "").strip()
+                        if clean_match.endswith("."):
+                            clean_match = clean_match[:-1]
+                        if clean_match.startswith("{") and clean_match.endswith("}"):
+                            match_data = json.loads(clean_match)
+                            if isinstance(match_data, dict) and "traduccio" in match_data:
+                                # Substituir pel contingut de traduccio
+                                traduccio_extraida = match_data["traduccio"]
+                                if isinstance(traduccio_extraida, str):
+                                    traduccio_extraida = traduccio_extraida.replace("\\n", "\n")
+                                    text_net = text_net[:match.start()] + traduccio_extraida + text_net[match.end():]
+                                    continue
+                    except (json.JSONDecodeError, TypeError):
+                        pass
+                    # Si no podem extreure, simplement eliminar
+                    text_net = text_net[:match.start()] + text_net[match.end():]
+            except re.error:
+                continue
+
+        # 3. Netejar línies que només contenen caràcters JSON o camps JSON
+        lines = text_net.split('\n')
+        cleaned_lines = []
+        json_field_pattern = re.compile(
+            r'^\s*"(traduccio|decisions_clau|termes_preservats|confianca|avisos|'
+            r'recursos_adaptats|notes_traductor)":\s*'
+        )
+        for line in lines:
+            stripped = line.strip()
+            # Saltar línies buides o amb només puntuació JSON
+            if stripped in ['', '{', '}', '[', ']', ',', '}.', '{}.', '}.']:
+                continue
+            if re.match(r'^[\s\{\}\[\],:"\.]+$', stripped):
+                continue
+            # Saltar línies que són camps JSON (comencen amb "camp":)
+            if json_field_pattern.match(stripped):
+                continue
+            # Saltar línies que comencen amb claus JSON i acaben amb ,
+            if stripped.startswith('"') and ':' in stripped and (stripped.endswith(',') or stripped.endswith(']') or stripped.endswith('}')):
+                continue
+            # Saltar línies que són només arrays o objectes tancats
+            if re.match(r'^\s*[\[\]{}]+\.?\s*$', stripped):
+                continue
+            cleaned_lines.append(line)
+
+        text_net = '\n'.join(cleaned_lines)
+
+        # 4. Netejar múltiples línies buides
+        text_net = re.sub(r'\n{3,}', '\n\n', text_net)
+
+        return text_net.strip()
+
     def _guardar_traduccio_chunk(self, chunk_id: str, traduccio: str) -> None:
         """Guarda la traducció d'un chunk per poder reprendre sessions."""
         if not self.estat:
@@ -397,18 +513,10 @@ class PipelineV2:
                 chunks_data = json.loads(chunks_path.read_text(encoding="utf-8"))
             except Exception:
                 pass
-        
-        # Extreure només el text de traducció si el contingut és JSON
-        text_a_guardar = traduccio
-        try:
-            # Intentar parsejar com JSON
-            json_data = json.loads(traduccio)
-            if isinstance(json_data, dict) and "traduccio" in json_data:
-                text_a_guardar = json_data["traduccio"]
-        except (json.JSONDecodeError, TypeError):
-            # No és JSON o no té la clau 'traduccio', guardar tal com està
-            pass
-        
+
+        # IMPORTANT: Netejar qualsevol JSON residual abans de guardar
+        text_a_guardar = self._netejar_json_traduccio(traduccio)
+
         chunks_data[chunk_id] = text_a_guardar
         chunks_path.write_text(
             json.dumps(chunks_data, indent=2, ensure_ascii=False),
@@ -424,7 +532,11 @@ class PipelineV2:
             return None
         try:
             chunks_data = json.loads(chunks_path.read_text(encoding="utf-8"))
-            return chunks_data.get(chunk_id)
+            traduccio = chunks_data.get(chunk_id)
+            # IMPORTANT: Netejar per si és un chunk antic amb JSON residual
+            if traduccio:
+                traduccio = self._netejar_json_traduccio(traduccio)
+            return traduccio
         except Exception:
             return None
 
@@ -524,7 +636,7 @@ class PipelineV2:
         # ═══════════════════════════════════════════════════════════════
         # VALIDACIÓ PRE-TRADUCCIÓ
         # ═══════════════════════════════════════════════════════════════
-        validacio = validar_text_entrada(text, llengua_origen)
+        validacio = validar_text_entrada(text, llengua_origen, max_chars=self.config.max_chars_text)
 
         # Processar missatges de validació
         for severity, msg in validacio.messages:
@@ -1381,9 +1493,19 @@ Retorna NOMÉS la traducció millorada. Ha de sonar natural en català."""
             return traduccio
 
     def _fusionar_chunks(self, resultats: list[ResultatChunk]) -> str:
-        """Fusiona les traduccions dels chunks."""
-        traduccions = [r.traduccio_final for r in resultats]
-        return "\n\n".join(traduccions)
+        """Fusiona les traduccions dels chunks.
+
+        IMPORTANT: Aplica neteja de JSON a cada chunk per evitar
+        que JSON residual acabi a la traducció final.
+        """
+        traduccions_netes = []
+        for r in resultats:
+            # Netejar cada traducció abans de fusionar
+            traduccio_neta = self._netejar_json_traduccio(r.traduccio_final)
+            if traduccio_neta:
+                traduccions_netes.append(traduccio_neta)
+
+        return "\n\n".join(traduccions_netes)
 
     def _generar_anotacions(
         self,
