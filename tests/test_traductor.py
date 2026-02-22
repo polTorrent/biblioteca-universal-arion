@@ -17,10 +17,9 @@ def test_traductor_frances_basico():
     
     chunk = TextChunk(
         text="Il y avait une fois un roi qui vivait dans un grand château.",
-        chunk_id="1",
-        mida_tokens=15,
-        inici_char=0,
-        final_char=60
+        chunk_id=1,
+        start_position=0,
+        end_position=60
     )
     
     solicitut = SolicitutTraduccio(
@@ -54,10 +53,9 @@ def test_traductor_llati_amb_glossari_i_calcs():
     
     chunk = TextChunk(
         text="Gallia est omnis divisa in partes tres.",
-        chunk_id="2",
-        mida_tokens=10,
-        inici_char=0,
-        final_char=39
+        chunk_id=2,
+        start_position=0,
+        end_position=39
     )
     
     solicitut = SolicitutTraduccio(

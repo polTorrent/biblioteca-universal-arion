@@ -25,6 +25,31 @@ class DetectorAngles(DetectorPlugin):
             for match in re.finditer(patro, text, re.IGNORECASE):
                 calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio=explicacio, suggeriment=suggeriment, severitat=severitat, llengua_origen=self.llengua))
                 
+        # "manar" com a calc de l'anglès "to bid/command" (hauria de ser "demanar")
+        manar = re.finditer(r'\b(vaig|vas|va|vam|vau|van)\s+manar\b', text, re.IGNORECASE)
+        for match in manar:
+            calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="«manar» calc de l'anglès 'to bid/command'", suggeriment="Usar «demanar», «ordenar»", severitat=6.0, llengua_origen=self.llengua))
+
+        # Repetició d'adverbi amb guió llarg (Long—long, calc de l'anglès)
+        repeticio = re.finditer(r'\b(\w{4,})\s*[—–-]\s*\1\b', text, re.IGNORECASE)
+        for match in repeticio:
+            calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="Repetició d'adverbi amb guió (calc de l'anglès)", suggeriment="Usar «durant molt de temps», «intensament»", severitat=6.0, llengua_origen=self.llengua))
+
+        # "just + verb" calc de l'anglès "just becoming"
+        just_verb = re.finditer(r'\bjust\s+\w+(ia|ava|eix|eix|enia|eva)\b', text, re.IGNORECASE)
+        for match in just_verb:
+            calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="«just + verb» calc de l'anglès", suggeriment="Usar «tot just», «acabava de», «just en aquell moment»", severitat=5.0, llengua_origen=self.llengua))
+
+        # Lèxic forçat / arcaic (paraules poc naturals en català modern)
+        lexic_forcat = [
+            (r'\bvivaces\b', "«vivaces» lèxic forçat/calc", "Usar «vius», «vívids», «animats»", 5.0),
+            (r'\besquinçades\b', "«esquinçades» ús forçat en context decoratiu", "Valorar «esguerrades», «trencades», «malmeses»", 5.0),
+            (r'\bfornícula\b', "«fornícula» mot arcaic/forçat", "Usar «nínxol», «fornícula» només si és tècnic", 5.0),
+        ]
+        for patro, explicacio, suggeriment, severitat in lexic_forcat:
+            for match in re.finditer(patro, text, re.IGNORECASE):
+                calcs.append(CalcDetectat(tipus="fals_amic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio=explicacio, suggeriment=suggeriment, severitat=severitat, llengua_origen=self.llengua))
+
         # Passiva amb agent
         passiva = re.finditer(r'\b(va ser|fou|ha estat|havia estat|serà)\s+\w+(at|it|ut|ada|ida|uda)\s+per\s+', text, re.IGNORECASE)
         for match in passiva:
