@@ -4,7 +4,6 @@ Recull els documents Markdown d'una obra i les seves metadades YAML globals,
 empelta les imatges pregenerades i els processa fins a exportar un llibre digital autònom.
 """
 
-import os
 import yaml
 import markdown
 from pathlib import Path
