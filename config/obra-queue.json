@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "updated_at": "2026-02-22",
+  "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
+  "obres": [
+    {
+      "autor": "Epictetus",
+      "titol": "Enchiridion",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 5000,
+      "fonts": ["perseus", "gutenberg"],
+      "status": "pending",
+      "notes": "Ja tenim coses començades, completar i verificar"
+    },
+    {
+      "autor": "Sèneca",
+      "titol": "Epístola 1",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 2,
+      "paraules_aprox": 2000,
+      "fonts": ["latin_library", "gutenberg"],
+      "status": "pending",
+      "notes": "Breu, ideal per validar el pipeline amb llatí"
+    },
+    {
+      "autor": "Plató",
+      "titol": "Critó",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": ["perseus"],
+      "status": "pending",
+      "notes": "Diàleg curt, bon test per format"
+    },
+    {
+      "autor": "Marc Aureli",
+      "titol": "Meditacions",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 4,
+      "paraules_aprox": 15000,
+      "fonts": ["perseus", "gutenberg"],
+      "status": "pending",
+      "notes": "Obra llarga, bona prova per chunking"
+    },
+    {
+      "autor": "Kafka",
+      "titol": "La metamorfosi",
+      "llengua": "alemany",
+      "categoria": "novel·la",
+      "dificultat": 3,
+      "paraules_aprox": 20000,
+      "fonts": ["gutenberg"],
+      "status": "pending",
+      "notes": "Primera narrativa, validar pipeline per ficció"
+    },
+    {
+      "autor": "Laozi",
+      "titol": "Tao Te King",
+      "llengua": "xinès",
+      "categoria": "oriental",
+      "dificultat": 5,
+      "paraules_aprox": 5000,
+      "fonts": ["ctext"],
+      "status": "pending",
+      "notes": "Xinès clàssic, necessita traducció pont"
+    },
+    {
+      "autor": "Shakespeare",
+      "titol": "10 Sonets",
+      "llengua": "anglès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 2000,
+      "fonts": ["gutenberg"],
+      "status": "pending",
+      "notes": "Poesia, validar pipeline per mètrica"
+    },
+    {
+      "autor": "Dostoievski",
+      "titol": "Notes del subsòl",
+      "llengua": "rus",
+      "categoria": "novel·la",
+      "dificultat": 4,
+      "paraules_aprox": 30000,
+      "fonts": ["gutenberg", "wikisource"],
+      "status": "pending",
+      "notes": "Narrativa russa, gran test"
+    },
+    {
+      "autor": "Baudelaire",
+      "titol": "20 poemes (Les flors del mal)",
+      "llengua": "francès",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 3000,
+      "fonts": ["wikisource", "gutenberg"],
+      "status": "pending",
+      "notes": "Poesia francesa, molt exigent"
+    },
+    {
+      "autor": "Schopenhauer",
+      "titol": "La quàdruple arrel",
+      "llengua": "alemany",
+      "categoria": "filosofia",
+      "dificultat": 5,
+      "paraules_aprox": 50000,
+      "fonts": ["gutenberg"],
+      "status": "pending",
+      "notes": "Filosofia densa, prova extrema"
+    }
+  ]
+}

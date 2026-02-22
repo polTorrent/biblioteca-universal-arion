@@ -1,14 +1,9 @@
 """Agent traductor clàssic per a textos grecollatins i literatura clàssica."""
 
-from typing import TYPE_CHECKING, Optional
-
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
 from agents.chunker_agent import TextChunk
-
-if TYPE_CHECKING:
-    from utils.logger import AgentLogger
 
 
 class SolicitutTraduccio(BaseModel):
@@ -17,8 +12,8 @@ class SolicitutTraduccio(BaseModel):
     idioma_origen: str = "llatí"
     estil: str = "clàssic i literari"
     context_previ: str = ""
-    glossari_vinculat: dict = {}  # Per a futura injecció de regles
-    calcs_a_evitar: list[str] = [] # Per a futura prevenció automàtica
+    glossari_vinculat: dict = Field(default_factory=dict)  # Per a futura injecció de regles
+    calcs_a_evitar: list[str] = Field(default_factory=list)  # Per a futura prevenció automàtica
 
 
 class TraductorClassicAgent(BaseAgent):
@@ -26,13 +21,6 @@ class TraductorClassicAgent(BaseAgent):
 
     agent_name: str = "TraductorClassic"
     fallback_model: str = "venice/zai-org-glm-5" # Si s'estableix un ús més complex
-
-    def __init__(
-        self,
-        config: AgentConfig | None = None,
-        logger: "AgentLogger | None" = None,
-    ) -> None:
-        super().__init__(config, logger)
 
     @property
     def system_prompt(self) -> str:
