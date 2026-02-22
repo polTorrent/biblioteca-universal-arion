@@ -1,5 +1,10 @@
 # Agents per al pipeline de traducció
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.traductor_classic import (
+    TraductorClassicAgent,
+    SolicitutTraduccio,
+)
+
 from agents.chunker_agent import (
     ChunkerAgent,
     ChunkingRequest,
@@ -68,6 +73,10 @@ __all__ = [
     "BaseAgent",
     "AgentConfig",
     "AgentResponse",
+    # Traductor Classic
+    "TraductorClassicAgent",
+    "SolicitutTraduccio",
+
     # Chunker
     "ChunkerAgent",
     "ChunkingRequest",
