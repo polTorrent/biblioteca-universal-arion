@@ -27,7 +27,7 @@ while true; do
     mv "$TASK" "$TASKS_DIR/running/"
     
     # Executar Claude - EXACTAMENT com funciona manualment
-    RESULT=$(cd "$PROJECT_DIR" && claude -p "$INSTRUCTION" --max-turns 10 --output-format text 2>&1)
+    RESULT=$(cd "$PROJECT_DIR" && claude -p "$INSTRUCTION" --max-turns 10 --allowedTools "Edit" "Write" "Bash(cat:*)" "Bash(grep:*)" "Bash(ls:*)" "Bash(find:*)" "Bash(python3:*)" "Bash(python:*)" "Bash(pip:*)" "Bash(pip3:*)" "Bash(git add:*)" "Bash(git commit:*)" "Bash(git push:*)" "Bash(head:*)" "Bash(tail:*)" "Bash(wc:*)" "Bash(mkdir:*)" "Bash(sed:*)" --output-format text 2>&1)
     EXIT=$?
     
     if [ $EXIT -eq 0 ] && [ -n "$RESULT" ]; then
