@@ -20,6 +20,7 @@ try:
     )
 except ImportError:
     LANGUAGETOOL_DISPONIBLE = False
+    CorrectorLinguistic = None
     ResultatCorreccio = None
     CategoriaError = None
 
