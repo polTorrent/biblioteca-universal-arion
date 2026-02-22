@@ -39,12 +39,6 @@ class ConfiguracioCorrector(BaseModel):
         description="Categories a informar però no corregir"
     )
 
-    # Llindar de confiança per aplicar correcció
-    min_confianca: float = Field(
-        default=0.8,
-        description="Confiança mínima per aplicar correcció automàtica"
-    )
-
     # Màxim de correccions per chunk (seguretat)
     max_correccions_chunk: int = Field(
         default=50,

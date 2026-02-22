@@ -25,7 +25,6 @@ class TestConfiguracioCorrector:
         assert "gramatica" in config.categories_informe
         assert "estil" in config.categories_informe
         assert config.max_correccions_chunk == 50
-        assert config.min_confianca == 0.8
 
     def test_configuracio_personalitzada(self):
         """Es pot personalitzar la configuració."""
