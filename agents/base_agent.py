@@ -18,7 +18,6 @@ from tenacity import (
     wait_exponential,
     retry_if_exception_type,
     before_sleep_log,
-    RetryError,
 )
 
 from utils.logger import AgentLogger, get_logger
