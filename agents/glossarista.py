@@ -1,6 +1,8 @@
 """Agent Glossarista per crear glossaris i índexs."""
 
 import json
+import os
+from pathlib import Path
 from typing import Literal, TYPE_CHECKING
 
 from pydantic import BaseModel, Field
@@ -227,6 +229,39 @@ FORMAT DE RESPOSTA JSON:
     ) -> None:
         super().__init__(config, logger)
         self.llengua = llengua
+        self.cache_path = Path.home() / ".openclaw" / "workspace" / "biblioteca-universal-arion" / "output" / ".cache" / "cache_glossari.json"
+        self._inicialitzar_cache()
+
+    def _inicialitzar_cache(self) -> None:
+        """Inicialitza l'arxiu de caché si no existeix."""
+        if not self.cache_path.parent.exists():
+            self.cache_path.parent.mkdir(parents=True, exist_ok=True)
+            
+        if not self.cache_path.exists():
+            with open(self.cache_path, 'w', encoding='utf-8') as f:
+                json.dump({}, f, ensure_ascii=False, indent=2)
+
+    def _carregar_cache(self) -> dict:
+        """Carrega el glossari de la caché."""
+        try:
+            with open(self.cache_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, FileNotFoundError):
+            return {}
+
+    def _guardar_a_cache(self, nous_termes_glossari: list[dict], llengua: str) -> None:
+        """Desa els nous termes al diccionari de caché per llengua."""
+        cache = self._carregar_cache()
+        if llengua not in cache:
+            cache[llengua] = {}
+            
+        for terme in nous_termes_glossari:
+            original = terme.get("terme_original")
+            if original:
+                cache[llengua][original] = terme
+                
+        with open(self.cache_path, 'w', encoding='utf-8') as f:
+            json.dump(cache, f, ensure_ascii=False, indent=2)
 
     @property
     def system_prompt(self) -> str:
@@ -235,7 +270,7 @@ FORMAT DE RESPOSTA JSON:
         return self._DEFAULT_PROMPT
 
     def create_glossary(self, request: GlossaryRequest) -> AgentResponse:
-        """Crea un glossari per a un text.
+        """Crea un glossari per a un text usant caché per termes coneguts.
 
         Args:
             request: Sol·licitud amb el text i categories.
@@ -245,6 +280,8 @@ FORMAT DE RESPOSTA JSON:
         """
         # Actualitzar la llengua de l'agent
         self.llengua = request.llengua_original
+        cache = self._carregar_cache()
+        llengua_cache = cache.get(self.llengua, {})
 
         # Usar categories per defecte si no s'especifiquen
         categories = request.categories
@@ -259,9 +296,15 @@ FORMAT DE RESPOSTA JSON:
             f"Llengua original: {request.llengua_original}",
             f"Categories a incloure: {', '.join(categories)}",
         ]
+        
+        # Injectar termes prèviament coneguts (caché) perquè el LLM els utilitzi i conservi coherència
+        if llengua_cache:
+            prompt_parts.append("\nTERMES CONEGUTS (Usa aquestes traduccions prèviament validades si apareixen en el text):")
+            for term, dades in llengua_cache.items():
+                prompt_parts.append(f"- {term}: {dades.get('traduccio_catalana', '')} ({dades.get('definicio', '')})")
 
         if request.genre:
-            prompt_parts.append(f"Gènere: {request.genre}")
+            prompt_parts.append(f"\nGènere: {request.genre}")
 
         prompt_parts.extend([
             "",
@@ -276,7 +319,19 @@ FORMAT DE RESPOSTA JSON:
                 request.text_original[:2000] + "..." if len(request.text_original) > 2000 else request.text_original,
             ])
 
-        return self.process("\n".join(prompt_parts))
+        resposta_llm = self.process("\n".join(prompt_parts))
+        
+        # Parsejar el resultat per extraure i guardar termes nous
+        try:
+            resultat_json = json.loads(resposta_llm.content)
+            # Extracció i desat a la caché per posteriors invocacions
+            glossaris_generats = resultat_json.get("glossari", [])
+            if glossaris_generats:
+                self._guardar_a_cache(glossaris_generats, self.llengua)
+        except Exception:
+            pass  # ignorant si el LLM no retorna JSON vàlid pur i té markdown o text de més
+
+        return resposta_llm
 
     def propose_translation(self, terme: str, context: str) -> AgentResponse:
         """Proposa una traducció per a un terme difícil.
