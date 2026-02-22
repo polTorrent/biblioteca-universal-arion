@@ -50,6 +50,9 @@ from agents.cercador_fonts import (
     SearchRequest,
     TextMetadata,
     TextSource,
+    TipusFont,
+    LlenguaOriginal,
+    LlenguaCerca,
 )
 from agents.agents_retratista import (
     AgentRetratista,

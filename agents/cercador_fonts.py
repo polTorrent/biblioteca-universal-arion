@@ -6,13 +6,19 @@ tradicionals no estan disponibles.
 
 import os
 import time
-from typing import Any, Literal
+from typing import Any, Literal, get_args
 
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
-# Llengües vàlides pel Literal de SearchRequest
-_LLENGUES_VALIDES = ("llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès")
+
+# Type aliases per literals reutilitzats
+TipusFont = Literal["perseus", "latin_library", "gutenberg", "wikisource", "aozora", "ctext", "altre"]
+LlenguaOriginal = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "altres"]
+LlenguaCerca = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"]
+
+# Derivat automàticament del Literal (excloent "qualsevol")
+_LLENGUES_VALIDES = tuple(l for l in get_args(LlenguaCerca) if l != "qualsevol")
 
 # Intentar importar Gemini (nou SDK)
 try:
@@ -36,7 +42,7 @@ class TextSource(BaseModel):
 
     nom: str
     url: str
-    tipus: Literal["perseus", "latin_library", "gutenberg", "wikisource", "altre"]
+    tipus: TipusFont
     llicencia: str = "domini públic"
 
 
@@ -45,7 +51,7 @@ class TextMetadata(BaseModel):
 
     titol: str
     autor: str
-    llengua_original: Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "altres"]
+    llengua_original: LlenguaOriginal
     font: TextSource
     edicio: str | None = None
     any_publicacio: int | None = None
@@ -58,7 +64,7 @@ class SearchRequest(BaseModel):
 
     autor: str | None = None
     titol: str | None = None
-    llengua: Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"] = "qualsevol"
+    llengua: LlenguaCerca = "qualsevol"
     preferencies_font: list[str] = Field(default_factory=lambda: ["perseus", "latin_library"])
 
 

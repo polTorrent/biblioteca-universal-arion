@@ -8,7 +8,6 @@ import os
 import yaml
 import markdown
 from pathlib import Path
-from bs4 import BeautifulSoup
 from ebooklib import epub
 
 def generar_epub(dir_obra: str, output_path: str = None) -> str:
