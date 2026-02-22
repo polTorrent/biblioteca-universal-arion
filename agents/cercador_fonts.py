@@ -6,11 +6,12 @@ tradicionals no estan disponibles.
 
 import os
 import time
-from typing import Literal
+from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from utils.logger import AgentLogger
 
 # Intentar importar Gemini (nou SDK)
 try:
@@ -67,8 +68,10 @@ class PescadorTextosAgent(BaseAgent):
     Project Gutenberg i Wikisource.
     """
 
-    def __init__(self, config: AgentConfig | None = None) -> None:
-        super().__init__(config)
+    agent_name: str = "PescadorTextos"
+
+    def __init__(self, config: AgentConfig | None = None, logger: AgentLogger | None = None) -> None:
+        super().__init__(config, logger=logger)
 
     @property
     def system_prompt(self) -> str:
@@ -213,10 +216,11 @@ Inclou:
         titol: str,
         llengua: str = "francès",
         obtenir_text_complet: bool = True,
-    ) -> dict:
+    ) -> dict[str, Any]:
         """Cerca un text amb Gemini AI usant Google Search grounding.
 
         Gemini pot buscar a internet i retornar text de fonts de domini públic.
+        Requereix el nou SDK google-genai (no el deprecated google-generativeai).
 
         Args:
             autor: Nom de l'autor.
@@ -232,7 +236,13 @@ Inclou:
         """
         if not GEMINI_AVAILABLE:
             raise RuntimeError(
-                "Gemini no està disponible. Instal·la amb: pip install google-generativeai"
+                "Gemini no està disponible. Instal·la amb: pip install google-genai"
+            )
+
+        if types is None:
+            raise RuntimeError(
+                "Cal el nou SDK google-genai per a search_with_gemini. "
+                "Instal·la amb: pip install google-genai"
             )
 
         # Configurar Gemini
