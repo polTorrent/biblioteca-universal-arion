@@ -30,7 +30,8 @@ def test_traductor_frances_basico():
 
     respuesta_simulada = AgentResponse(
         content="Hi havia una vegada un rei que vivia en un gran castell.",
-        metadata={"model": "venice/mock-model"}
+        model="venice/mock-model",
+        usage={"input_tokens": 0, "output_tokens": 0}
     )
     
     with patch.object(TraductorClassicAgent, 'process', return_value=respuesta_simulada) as mock_process:
@@ -68,7 +69,8 @@ def test_traductor_llati_amb_glossari_i_calcs():
 
     respuesta_simulada = AgentResponse(
         content="Tota la Gàl·lia està dividida en tres parts.",
-        metadata={"model": "venice/mock-model"}
+        model="venice/mock-model",
+        usage={"input_tokens": 0, "output_tokens": 0}
     )
     
     with patch.object(TraductorClassicAgent, 'process', return_value=respuesta_simulada) as mock_process:
