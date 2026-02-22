@@ -11,7 +11,8 @@ from typing import Any, Literal
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
-from utils.logger import AgentLogger
+# Llengües vàlides pel Literal de SearchRequest
+_LLENGUES_VALIDES = ("llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès")
 
 # Intentar importar Gemini (nou SDK)
 try:
@@ -69,9 +70,6 @@ class PescadorTextosAgent(BaseAgent):
     """
 
     agent_name: str = "PescadorTextos"
-
-    def __init__(self, config: AgentConfig | None = None, logger: AgentLogger | None = None) -> None:
-        super().__init__(config, logger=logger)
 
     @property
     def system_prompt(self) -> str:
@@ -348,7 +346,6 @@ Indica:
             Text complet si s'ha trobat, None si no.
         """
         # Primer intentar amb Claude (fonts tradicionals)
-        _LLENGUES_VALIDES = ("llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès")
         llengua_search = llengua if llengua in _LLENGUES_VALIDES else "qualsevol"
         # TODO: Implementar descàrrega automàtica a partir dels resultats de search()
         # Ara search() retorna info però no descarrega automàticament

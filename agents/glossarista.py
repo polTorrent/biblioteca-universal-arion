@@ -1,7 +1,6 @@
 """Agent Glossarista per crear glossaris i índexs."""
 
 import json
-import os
 from pathlib import Path
 from typing import Literal, TYPE_CHECKING
 
@@ -229,7 +228,7 @@ FORMAT DE RESPOSTA JSON:
     ) -> None:
         super().__init__(config, logger)
         self.llengua = llengua
-        self.cache_path = Path.home() / ".openclaw" / "workspace" / "biblioteca-universal-arion" / "output" / ".cache" / "cache_glossari.json"
+        self.cache_path = Path(__file__).resolve().parent.parent / "output" / ".cache" / "cache_glossari.json"
         self._inicialitzar_cache()
 
     def _inicialitzar_cache(self) -> None:
