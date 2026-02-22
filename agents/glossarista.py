@@ -327,8 +327,8 @@ FORMAT DE RESPOSTA JSON:
             glossaris_generats = resultat_json.get("glossari", [])
             if glossaris_generats:
                 self._guardar_a_cache(glossaris_generats, self.llengua)
-        except Exception:
-            pass  # ignorant si el LLM no retorna JSON vàlid pur i té markdown o text de més
+        except Exception as e:
+            self.logger.log_debug(self.agent_name, f"No s'ha pogut parsejar/guardar glossari a cache: {e}")
 
         return resposta_llm
 
