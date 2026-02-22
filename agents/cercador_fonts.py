@@ -6,7 +6,7 @@ tradicionals no estan disponibles.
 
 import os
 import time
-from typing import Any, Literal, get_args
+from typing import Any, Literal, cast, get_args
 
 from pydantic import BaseModel, Field
 
@@ -303,7 +303,12 @@ Indica:
             )
             duration = time.time() - start_time
 
-            text_response = response.text
+            try:
+                text_response = response.text
+            except (ValueError, AttributeError) as exc:
+                raise RuntimeError(
+                    f"Gemini no ha retornat text per '{titol}' de {autor}: {exc}"
+                ) from exc
 
             # Parsejar resposta
             result = {
@@ -351,17 +356,10 @@ Indica:
         Returns:
             Text complet si s'ha trobat, None si no.
         """
-        # Primer intentar amb Claude (fonts tradicionals)
-        llengua_search = llengua if llengua in _LLENGUES_VALIDES else "qualsevol"
-        # TODO: Implementar descàrrega automàtica a partir dels resultats de search()
-        # Ara search() retorna info però no descarrega automàticament
-        _search_result = self.search(
-            SearchRequest(
-                autor=autor,
-                titol=titol,
-                llengua=llengua_search,
-            )
-        )
+        # TODO: Implementar descàrrega automàtica a partir dels resultats de search().
+        # Quan estigui implementat, search() retornarà fonts estructurades i es
+        # descarregarà el text automàticament. Per ara, anem directament a Gemini
+        # per evitar una crida innecessària a Claude que no s'aprofita.
 
         # Fallback a Gemini
         if GEMINI_AVAILABLE and (os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")):
