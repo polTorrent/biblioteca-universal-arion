@@ -2,13 +2,22 @@
 
 import pytest
 
-# Skip tot el mòdul si LanguageTool no està disponible
-pytest.importorskip("language_tool_python")
-
 from agents.corrector_normatiu import (
     CorrectorNormatiuAgent,
     ConfiguracioCorrector,
     ResultatCorreccioNormativa,
+)
+
+# Detectar si LanguageTool està disponible (per marcar tests que el necessiten)
+try:
+    import language_tool_python
+    _LT_DISPONIBLE = True
+except ImportError:
+    _LT_DISPONIBLE = False
+
+lt_required = pytest.mark.skipif(
+    not _LT_DISPONIBLE,
+    reason="language_tool_python no instal·lat",
 )
 
 
@@ -39,6 +48,7 @@ class TestConfiguracioCorrector:
         assert config.max_correccions_chunk == 10
 
 
+@lt_required
 class TestCorrectorNormatiuAgent:
     """Tests del corrector normatiu."""
 
@@ -178,6 +188,7 @@ class TestCorrectorNormatiuAgent:
         assert response.cost_eur == 0.0
 
 
+@lt_required
 class TestIntegracioLanguageTool:
     """Tests d'integració amb LanguageTool real."""
 
