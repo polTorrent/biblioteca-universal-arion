@@ -348,17 +348,17 @@ Indica:
             Text complet si s'ha trobat, None si no.
         """
         # Primer intentar amb Claude (fonts tradicionals)
-        llengua_search: Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"] = (
-            llengua if llengua in ("llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès") else "qualsevol"
-        )
-        self.search(
+        _LLENGUES_VALIDES = ("llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès")
+        llengua_search = llengua if llengua in _LLENGUES_VALIDES else "qualsevol"
+        # TODO: Implementar descàrrega automàtica a partir dels resultats de search()
+        # Ara search() retorna info però no descarrega automàticament
+        _search_result = self.search(
             SearchRequest(
                 autor=autor,
                 titol=titol,
                 llengua=llengua_search,
             )
         )
-        # TODO: Implementar descàrrega automàtica a partir dels resultats de search()
 
         # Fallback a Gemini
         if GEMINI_AVAILABLE and (os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")):
