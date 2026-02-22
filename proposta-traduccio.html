@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proposa una nova traducció al català.">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biblioteca Arion">
+    <meta property="og:description" content="Traduccions obertes de clàssics universals al català">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://biblioteca-arion.cat">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Nova traducció - Biblioteca Arion</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<link rel="stylesheet" href="css/mecenatge.css">
+<style>
+.proposta-page {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+}
+
+.step { display: none; }
+.step.active { display: block; }
+
+.step-indicator {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-2xl);
+}
+
+.step-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--color-border);
+    transition: all 0.3s;
+}
+
+.step-dot.active { background: var(--color-accent); transform: scale(1.3); }
+.step-dot.done { background: var(--mecenatge-success); }
+
+.cerca-box {
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+}
+
+.cerca-box input {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-lg);
+    font-size: var(--font-size-lg);
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-md);
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    margin-bottom: var(--spacing-lg);
+}
+
+.cerca-box input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+
+.login-box {
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+}
+
+.login-box h3 { margin: 0 0 var(--spacing-lg); text-align: center; border: none; }
+
+.loader {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 3px solid var(--color-border);
+    border-top-color: var(--color-accent);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.analyzing {
+    text-align: center;
+    padding: var(--spacing-2xl);
+}
+
+.analyzing p { margin-top: var(--spacing-md); color: var(--color-text-muted); }
+
+.obra-card {
+    background: var(--color-bg-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+    text-align: center;
+}
+
+.obra-card h3 { margin: 0 0 var(--spacing-xs); font-size: var(--font-size-xl); }
+.obra-card .autor { color: var(--color-text-secondary); margin-bottom: var(--spacing-sm); }
+.obra-card .meta { font-size: var(--font-size-sm); color: var(--color-text-muted); }
+
+.cost-box {
+    background: linear-gradient(135deg, var(--color-bg-tertiary) 0%, var(--color-bg-secondary) 100%);
+    border: 2px solid var(--mecenatge-primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    text-align: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.cost-box .amount {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--mecenatge-primary);
+}
+
+.cost-box .detail {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-xs);
+}
+
+.finançament-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+}
+
+.finançament-opcio {
+    padding: var(--spacing-lg);
+    border: 2px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+}
+
+.finançament-opcio:hover, .finançament-opcio.selected {
+    border-color: var(--mecenatge-primary);
+    background: var(--color-bg-secondary);
+}
+
+.finançament-opcio .icon { font-size: 1.5rem; }
+.finançament-opcio h4 { margin: var(--spacing-sm) 0 0; font-size: 1rem; }
+
+.success-box {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.success-box .icon { font-size: 3rem; margin-bottom: var(--spacing-md); }
+.success-box h2 { color: var(--mecenatge-success); border: none; margin-bottom: var(--spacing-sm); font-size: var(--font-size-2xl); }
+</style>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<div class="proposta-page">
+    <h1 style="text-align: center; margin-bottom: var(--spacing-xs);">Nova traducció</h1>
+    <p style="text-align: center; color: var(--color-text-muted); margin-bottom: var(--spacing-xl);">
+        Escriu el títol i calculem el cost
+    </p>
+
+    <div class="step-indicator">
+        <span class="step-dot active"></span>
+        <span class="step-dot"></span>
+        <span class="step-dot"></span>
+    </div>
+
+    <!-- STEP 1: Títol -->
+    <div class="step active" id="step-1">
+        <div class="cerca-box">
+            <input type="text" id="titol" placeholder="Títol de l'obra..." autofocus>
+            <button class="btn-submit" id="btn-next" disabled>Continuar</button>
+        </div>
+        <p style="text-align: center; margin-top: var(--spacing-md); color: var(--color-text-muted); font-size: var(--font-size-sm);">
+            Ex: La metamorfosi, Faust, Hamlet...
+        </p>
+    </div>
+
+    <!-- STEP 2: Login -->
+    <div class="step" id="step-2">
+        <div id="login-section" class="login-box">
+            <h3>Entra per continuar</h3>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="El teu email">
+            </div>
+            <div class="form-group">
+                <input type="password" id="password" placeholder="Contrasenya">
+            </div>
+            <button class="btn-submit" id="btn-login">Entrar</button>
+            <p style="text-align: center; margin-top: var(--spacing-md); font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                No tens compte? <a href="registre.html">Registra't</a>
+            </p>
+        </div>
+    </div>
+
+    <!-- STEP 3: Resultat -->
+    <div class="step" id="step-3">
+        <div id="analyzing" class="analyzing">
+            <div class="loader"></div>
+            <p>Buscant informació...</p>
+        </div>
+
+        <div id="resultat" style="display: none;">
+            <div class="obra-card">
+                <h3 id="obra-titol"></h3>
+                <p class="autor" id="obra-autor"></p>
+                <p class="meta"><span id="obra-idioma"></span> · <span id="obra-pagines"></span></p>
+            </div>
+
+            <div class="cost-box">
+                <div class="amount" id="cost-total"></div>
+                <div class="detail" id="cost-detail"></div>
+            </div>
+
+            <div class="finançament-grid">
+                <div class="finançament-opcio" data-tipus="individual">
+                    <div class="icon">💎</div>
+                    <h4>Jo sol/a</h4>
+                </div>
+                <div class="finançament-opcio" data-tipus="col·lectiu">
+                    <div class="icon">👥</div>
+                    <h4>Col·lectiu</h4>
+                </div>
+            </div>
+
+            <button class="btn-submit" id="btn-confirmar" disabled>Confirmar</button>
+        </div>
+
+        <div id="success-section" class="success-box" style="display: none;">
+            <div class="icon">✨</div>
+            <h2>Proposta enviada!</h2>
+            <p id="success-text"></p>
+            <a href="mecenatge.html" class="btn-submit" style="display: inline-block; margin-top: var(--spacing-md); text-decoration: none;">
+                Veure projectes
+            </a>
+        </div>
+    </div>
+
+    <p style="text-align: center; margin-top: var(--spacing-xl);">
+        <a href="mecenatge.html" style="color: var(--color-text-muted);">← Tornar</a>
+    </p>
+</div>
+
+<script>
+(function() {
+    const dots = document.querySelectorAll('.step-dot');
+    const titolInput = document.getElementById('titol');
+    let obraData = null, costData = null, tipusFinançament = null, currentUser = null;
+
+    const obresDB = {
+        'metamorfosi': { titol: 'La metamorfosi', autor: 'Franz Kafka', idioma: 'Alemany', pagines: 60 },
+        'princep': { titol: 'El príncep', autor: 'Niccolò Machiavelli', idioma: 'Italià', pagines: 120 },
+        'faust': { titol: 'Faust', autor: 'J.W. von Goethe', idioma: 'Alemany', pagines: 450 },
+        'zaratustra': { titol: 'Així parlà Zaratustra', autor: 'Friedrich Nietzsche', idioma: 'Alemany', pagines: 350 },
+        'guerra': { titol: 'Guerra i pau', autor: 'Lev Tolstoi', idioma: 'Rus', pagines: 1200 },
+        'crim': { titol: 'Crim i càstig', autor: 'Fiódor Dostoievski', idioma: 'Rus', pagines: 550 },
+        'divina': { titol: 'La Divina Comèdia', autor: 'Dante Alighieri', idioma: 'Italià', pagines: 600 },
+        'quixot': { titol: 'Don Quixot', autor: 'Miguel de Cervantes', idioma: 'Castellà', pagines: 900 },
+        'iliada': { titol: 'Ilíada', autor: 'Homer', idioma: 'Grec antic', pagines: 500 },
+        'odissea': { titol: 'Odissea', autor: 'Homer', idioma: 'Grec antic', pagines: 400 },
+        'hamlet': { titol: 'Hamlet', autor: 'William Shakespeare', idioma: 'Anglès', pagines: 150 },
+        'candide': { titol: 'Càndid', autor: 'Voltaire', idioma: 'Francès', pagines: 100 },
+        'proces': { titol: 'El procés', autor: 'Franz Kafka', idioma: 'Alemany', pagines: 250 },
+        'estranger': { titol: "L'estranger", autor: 'Albert Camus', idioma: 'Francès', pagines: 120 },
+        'petit': { titol: 'El petit príncep', autor: 'A. de Saint-Exupéry', idioma: 'Francès', pagines: 80 }
+    };
+
+    function goToStep(n) {
+        document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
+        dots.forEach((d, i) => { d.classList.remove('active'); if (i < n - 1) d.classList.add('done'); });
+        document.getElementById('step-' + n).classList.add('active');
+        dots[n - 1].classList.add('active');
+    }
+
+    // Step 1: Títol
+    titolInput.addEventListener('input', function() {
+        document.getElementById('btn-next').disabled = this.value.trim().length < 2;
+    });
+    titolInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter' && this.value.trim().length >= 2) document.getElementById('btn-next').click();
+    });
+
+    document.getElementById('btn-next').addEventListener('click', function() {
+        const user = localStorage.getItem('arion_user');
+        if (user) {
+            currentUser = JSON.parse(user);
+            goToStep(3);
+            calcularCost();
+        } else {
+            goToStep(2);
+        }
+    });
+
+    // Step 2: Login
+    document.getElementById('btn-login').addEventListener('click', function() {
+        const email = document.getElementById('email').value;
+        if (!email) { alert('Introdueix el teu email'); return; }
+        currentUser = { id: 'usr_' + Date.now(), nom: email.split('@')[0], email: email };
+        localStorage.setItem('arion_user', JSON.stringify(currentUser));
+        goToStep(3);
+        calcularCost();
+    });
+
+    // Step 3: Càlcul
+    function calcularCost() {
+        document.getElementById('analyzing').style.display = 'block';
+        document.getElementById('resultat').style.display = 'none';
+
+        setTimeout(function() {
+            const query = titolInput.value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+            let found = null;
+            for (const [key, obra] of Object.entries(obresDB)) {
+                if (query.includes(key) || obra.titol.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').includes(query)) {
+                    found = obra; break;
+                }
+            }
+            if (!found) {
+                const idiomes = ['Anglès', 'Francès', 'Alemany', 'Italià', 'Rus'];
+                found = { titol: titolInput.value.trim(), autor: 'Autor desconegut', idioma: idiomes[Math.floor(Math.random() * idiomes.length)], pagines: Math.floor(Math.random() * 200) + 80 };
+            }
+            obraData = found;
+
+            const factors = { 'Alemany': 1.2, 'Anglès': 0.9, 'Francès': 1.0, 'Italià': 1.0, 'Rus': 1.3, 'Grec antic': 1.8, 'Castellà': 0.8 };
+            const cost = Math.round(found.pagines * 0.5 * (factors[found.idioma] || 1.2));
+            costData = { total: cost };
+
+            document.getElementById('analyzing').style.display = 'none';
+            document.getElementById('resultat').style.display = 'block';
+            document.getElementById('obra-titol').textContent = found.titol;
+            document.getElementById('obra-autor').textContent = found.autor;
+            document.getElementById('obra-idioma').textContent = found.idioma;
+            document.getElementById('obra-pagines').textContent = '~' + found.pagines + ' pàg.';
+            document.getElementById('cost-total').textContent = cost + '€';
+            document.getElementById('cost-detail').textContent = 'Traducció completa al català';
+        }, 1200);
+    }
+
+    // Finançament
+    document.querySelectorAll('.finançament-opcio').forEach(o => {
+        o.addEventListener('click', function() {
+            document.querySelectorAll('.finançament-opcio').forEach(x => x.classList.remove('selected'));
+            this.classList.add('selected');
+            tipusFinançament = this.dataset.tipus;
+            document.getElementById('btn-confirmar').disabled = false;
+        });
+    });
+
+    // Confirmar
+    document.getElementById('btn-confirmar').addEventListener('click', function() {
+        const proposta = { id: 'prop_' + Date.now(), ...obraData, cost: costData.total, tipus: tipusFinançament, usuari: currentUser.id, data: new Date().toISOString().split('T')[0] };
+        let propostes = JSON.parse(localStorage.getItem('arion_propostes') || '{"propostes":[]}');
+        propostes.propostes.push(proposta);
+        localStorage.setItem('arion_propostes', JSON.stringify(propostes));
+
+        document.getElementById('resultat').style.display = 'none';
+        document.getElementById('success-section').style.display = 'block';
+        document.getElementById('success-text').innerHTML = tipusFinançament === 'individual'
+            ? `Finançaràs <strong>${obraData.titol}</strong> per ${costData.total}€.`
+            : `Projecte creat per <strong>${obraData.titol}</strong> amb objectiu ${costData.total}€.`;
+        dots.forEach(d => d.classList.add('done'));
+    });
+})();
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

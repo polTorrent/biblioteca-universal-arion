@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Biblioteca Arion">
+    <meta property="og:description" content="Traduccions obertes de clàssics universals al català">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://editorial-classica.cat">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Biblioteca Arion - Traduccions de clàssics al català</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- Hero Section - Simple i elegant -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-brand">
+            <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="hero-logo">
+            <h1>Biblioteca Arion</h1>
+        </div>
+        <p class="hero-subtitle">
+            Traduccions obertes de clàssics universals al català
+        </p>
+        
+        <div class="hero-stats">
+            <span><strong>15</strong> obres</span>
+            <span class="stats-dot">·</span>
+            <span><strong>14</strong> autors</span>
+            <span class="stats-dot">·</span>
+            <span><strong>61500</strong> paraules</span>
+        </div>
+        
+    </div>
+</section>
+
+<!-- Últims títols publicats -->
+<section class="latest-works">
+    <div class="container">
+        <div class="section-header">
+            <h2>Últims títols publicats</h2>
+            <div class="carousel-nav" data-carousel="published">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        
+        <div class="works-carousel" data-carousel="published">
+            <div class="carousel-track">
+                
+                <article class="work-card-carousel">
+                    <a href="herman-melville-bartleby-lescrivent.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/herman-melville-bartleby-lescrivent-portada.png"
+                                 alt="Portada de Bartleby, l'escrivent"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="herman-melville-bartleby-lescrivent"
+                                    data-obra-titol="Bartleby, l'escrivent"
+                                    data-obra-autor="Herman Melville"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Bartleby, l'escrivent</h3>
+                            <p class="work-author">Herman Melville</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="txekhov-sala-numero-6.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/txekhov-sala-numero-6-portada.png"
+                                 alt="Portada de La Sala número 6"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="txekhov-sala-numero-6"
+                                    data-obra-titol="La Sala número 6"
+                                    data-obra-autor="Anton Txèkhov"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">La Sala número 6</h3>
+                            <p class="work-author">Anton Txèkhov</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="sade-justine.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/sade-justine-portada.png"
+                                 alt="Portada de Justine o els Infortunis de la Virtut"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-en_curs">en_curs</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="sade-justine"
+                                    data-obra-titol="Justine o els Infortunis de la Virtut"
+                                    data-obra-autor="Marquès de Sade"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Justine o els Infortunis de la Virtut</h3>
+                            <p class="work-author">Marquès de Sade</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="edgar-allan-poe-el-retrat-oval.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/edgar-allan-poe-el-retrat-oval-portada.png"
+                                 alt="Portada de El retrat oval"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-publicat">publicat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="edgar-allan-poe-el-retrat-oval"
+                                    data-obra-titol="El retrat oval"
+                                    data-obra-autor="Edgar Allan Poe"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">El retrat oval</h3>
+                            <p class="work-author">Edgar Allan Poe</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="kafka-la-transformacio.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/kafka-la-transformacio-portada.png"
+                                 alt="Portada de La Transformació"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="kafka-la-transformacio"
+                                    data-obra-titol="La Transformació"
+                                    data-obra-autor="Franz Kafka"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">La Transformació</h3>
+                            <p class="work-author">Franz Kafka</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="plato-apologia.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/plato-apologia-portada.png"
+                                 alt="Portada de Apologia de Sòcrates"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-esborrany">esborrany</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="plato-apologia"
+                                    data-obra-titol="Apologia de Sòcrates"
+                                    data-obra-autor="Plató"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Apologia de Sòcrates</h3>
+                            <p class="work-author">Plató</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="montaigne-de-l-amistat.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/montaigne-de-l-amistat-portada.png"
+                                 alt="Portada de De l'amistat"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="montaigne-de-l-amistat"
+                                    data-obra-titol="De l'amistat"
+                                    data-obra-autor="Michel de Montaigne"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">De l'amistat</h3>
+                            <p class="work-author">Michel de Montaigne</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="akutagawa-biombo-infern.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/akutagawa-biombo-infern-portada.png"
+                                 alt="Portada de El Biombo de l'Infern"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="akutagawa-biombo-infern"
+                                    data-obra-titol="El Biombo de l'Infern"
+                                    data-obra-autor="Akutagawa Ryunosuke"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">El Biombo de l'Infern</h3>
+                            <p class="work-author">Akutagawa Ryunosuke</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="garxin-quatre-dies.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/garxin-quatre-dies-portada.png"
+                                 alt="Portada de Quatre dies"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="garxin-quatre-dies"
+                                    data-obra-titol="Quatre dies"
+                                    data-obra-autor="Vsévolod Garxin"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Quatre dies</h3>
+                            <p class="work-author">Vsévolod Garxin</p>
+                        </div>
+                    </a>
+                </article>
+                
+                <article class="work-card-carousel">
+                    <a href="heraclit-fragments.html" class="work-card-link">
+                        <div class="work-cover">
+                            
+                            <img src="assets/portades/heraclit-fragments-portada.png"
+                                 alt="Portada de Fragments"
+                                 loading="lazy">
+                            
+                            
+                            <span class="badge badge-revisat">revisat</span>
+                            
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="heraclit-fragments"
+                                    data-obra-titol="Fragments"
+                                    data-obra-autor="Heràclit d'Efes"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Fragments</h3>
+                            <p class="work-author">Heràclit d'Efes</p>
+                        </div>
+                    </a>
+                </article>
+                
+            </div>
+        </div>
+
+        
+        <div class="see-all">
+            <a href="cataleg.html" class="btn-secondary">Veure totes les obres →</a>
+        </div>
+        
+        
+    </div>
+</section>
+
+<!-- Projectes de micromecenatge -->
+<section class="crowdfunding-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Projectes de micromecenatge, participa-hi!</h2>
+            <div class="carousel-nav" data-carousel="crowdfunding">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="works-carousel" data-carousel="crowdfunding">
+            <div class="carousel-track">
+                <!-- Projecte 1 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-metafisica.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/aristotil-metafisica-portada.png" alt="Portada Metafísica">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Metafísica</h3>
+                            <p class="work-author">Aristòtil</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 20%"></div>
+                                </div>
+                                <span class="progress-text">1€ de 5€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 2 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-odissea.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/homer-odissea-portada.png" alt="Portada L'Odissea">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">L'Odissea</h3>
+                            <p class="work-author">Homer</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-text">30€ de 50€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 3 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-meditacions.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/marc-aureli-meditacions-portada.png" alt="Portada Meditacions">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Meditacions</h3>
+                            <p class="work-author">Marc Aureli</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-text">17€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 4 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-confessions.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/sant-agusti-confessions-portada.png" alt="Portada Confessions">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Confessions</h3>
+                            <p class="work-author">Sant Agustí</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 10%"></div>
+                                </div>
+                                <span class="progress-text">3€ de 30€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 5 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-eneida.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/virgili-eneida-portada.png" alt="Portada Eneida">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Eneida</h3>
+                            <p class="work-author">Virgili</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45€ de 100€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 6 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-fedo.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/plato-fedo-portada.png" alt="Portada Fedó">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Fedó</h3>
+                            <p class="work-author">Plató</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="progress-text">7€ de 10€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 7 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-zaratustra.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/nietzsche-zaratustra-portada.png" alt="Portada Així parlà Zaratustra">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Així parlà Zaratustra</h3>
+                            <p class="work-author">Nietzsche</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%"></div>
+                                </div>
+                                <span class="progress-text">10€ de 40€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 8 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="micromecenatge-tao-te-ching.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="assets/portades/lao-tse-tao-te-ching-portada.png" alt="Portada Tao Te Ching">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Tao Te Ching</h3>
+                            <p class="work-author">Lao Tse</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="progress-text">19€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+        <div class="see-all">
+            <a href="micromecenatge.html" class="btn-secondary">Veure tots els projectes →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Com funciona - Micromecenatge -->
+<section class="how-section" id="com-funciona">
+    <div class="container">
+        <h2 class="how-title">Fes realitat una traducció</h2>
+        <p class="how-intro">Cada aportació apropa un clàssic al català</p>
+
+        <div class="how-steps" id="howSteps">
+            <article class="how-step" data-step="1">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">1</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Tria</strong>
+                        <span class="how-step-sub">Escull una obra</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>Explora el catàleg d'obres pendents. Des de filosofia grega fins a poesia persa.</p>
+                        <a href="micromecenatge.html">Veure obres →</a>
+                    </div>
+                </div>
+                <div class="how-step-line"></div>
+            </article>
+
+            <article class="how-step" data-step="2">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">2</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Aporta</strong>
+                        <span class="how-step-sub">Des d'1€</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>Contribueix sol o en grup. Cada euro compta per fer possible la traducció.</p>
+                        <a href="mecenatge.html">Com funciona →</a>
+                    </div>
+                </div>
+                <div class="how-step-line"></div>
+            </article>
+
+            <article class="how-step" data-step="3">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">3</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Traducció</strong>
+                        <span class="how-step-sub">Publicació oberta</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>L'obra es tradueix amb rigor i es publica gratuïtament. Per sempre, per a tothom.</p>
+                        <a href="sobre.html">El procés →</a>
+                    </div>
+                </div>
+                <div class="how-step-line"></div>
+            </article>
+
+            <article class="how-step how-step-final" data-step="4">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">4</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Gaudeix</strong>
+                        <span class="how-step-sub">Recompenses</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>El teu nom als crèdits, accés al Discord i descomptes en futures campanyes.</p>
+                        <a href="mecenatge.html#recompenses">Recompenses →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 0.25rem;">
+            <a href="mecenatge.html" class="btn-mecenatge">💝 Mecenatge</a>
+        </div>
+    </div>
+</section>
+
+<!-- Script per inicialitzar favorits -->
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    // Esperar que ArionFavorits estigui llest
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    if (!window.ArionFavorits || !window.ArionAuth?.isLoggedIn()) return;
+
+    // Obtenir tots els favorits
+    const favorits = await window.ArionFavorits.getAll();
+    const favoritIds = favorits.map(f => f.obra_id);
+
+    // Actualitzar botons
+    document.querySelectorAll('.btn-favorit').forEach(btn => {
+        const obraId = btn.dataset.obraId;
+        if (favoritIds.includes(obraId)) {
+            btn.classList.add('active');
+            const icon = btn.querySelector('.favorit-icon');
+            if (icon) icon.textContent = '❤️';
+        }
+    });
+});
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

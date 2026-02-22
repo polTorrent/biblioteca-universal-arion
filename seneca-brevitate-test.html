@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Brevitate-Test - Seneca">
+    <meta property="og:description" content="None">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://editorial-classica.cat/seneca-brevitate-test.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Brevitate-Test - Seneca | Editorial Clàssica</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<!-- Estils per índex, navegació i favorits -->
+<style>
+    /* Botó tornar a dalt */
+    .back-to-top {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: var(--accent, #D4AF37);
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 999;
+    }
+    .back-to-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .back-to-top:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+    }
+    [data-theme="dark"] .back-to-top {
+        background: #D4AF37;
+    }
+    @media (max-width: 768px) {
+        .back-to-top {
+            bottom: 1rem;
+            right: 1rem;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    /* Botó favorit */
+    .btn-favorit-below {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-top: 1rem;
+        padding: 0.5rem 1rem;
+        background: var(--color-surface, #f8f8f8);
+        border: 1px solid var(--color-border, #ddd);
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--color-text, #333);
+        transition: all 0.2s ease;
+    }
+    .btn-favorit-below:hover {
+        background: #fff0f0;
+        border-color: #e74c3c;
+    }
+    .btn-favorit-below.active {
+        background: #fff0f0;
+        border-color: #e74c3c;
+        color: #e74c3c;
+    }
+    .btn-favorit-below.active .favorit-text {
+        display: none;
+    }
+    .btn-favorit-below.active::after {
+        content: 'Als teus favorits';
+    }
+    .favorit-icon {
+        font-size: 1.2rem;
+    }
+    /* Separador en controls */
+    .view-separator {
+        color: var(--text-muted, #999);
+        margin: 0 0.5rem;
+    }
+
+    /* Botó índex */
+    .toc-toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+    }
+    .toc-icon {
+        font-size: 1.1em;
+    }
+
+    /* Panell índex */
+    .chapter-toc {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        width: 320px;
+        max-width: 90vw;
+        max-height: calc(100vh - 100px);
+        background: var(--bg-primary, #fff);
+        border: 1px solid var(--border-color, #e0e0e0);
+        border-radius: 0 8px 8px 0;
+        box-shadow: 4px 4px 20px rgba(0,0,0,0.15);
+        z-index: 1000;
+        overflow: hidden;
+    }
+    .chapter-toc.open {
+        display: block;
+        animation: slideIn 0.2s ease-out;
+    }
+    @keyframes slideIn {
+        from { transform: translateX(-100%); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+    .toc-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.25rem;
+        border-bottom: 1px solid var(--border-color, #e0e0e0);
+        background: var(--bg-secondary, #f8f8f8);
+    }
+    .toc-header h3 {
+        margin: 0;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .toc-close {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 0;
+        line-height: 1;
+        color: var(--text-muted, #666);
+    }
+    .toc-close:hover {
+        color: var(--text-primary, #333);
+    }
+    .toc-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        max-height: calc(100vh - 180px);
+        overflow-y: auto;
+    }
+    .toc-list li {
+        border-bottom: 1px solid var(--border-light, #f0f0f0);
+    }
+    .toc-list li:last-child {
+        border-bottom: none;
+    }
+    .toc-list a {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: var(--text-primary, #333);
+        text-decoration: none;
+        transition: background 0.15s;
+    }
+    .toc-list a:hover {
+        background: var(--bg-hover, #f5f5f5);
+    }
+    .toc-list a.active {
+        background: var(--accent-light, #fff8e1);
+        border-left: 3px solid var(--accent, #D4AF37);
+        font-weight: 500;
+    }
+    .toc-chapter-num {
+        color: var(--text-muted, #888);
+        margin-right: 0.5rem;
+    }
+
+    /* Navegació entre capítols */
+    .chapter-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+        border-top: 1px solid var(--border-color, #e0e0e0);
+        gap: 1rem;
+    }
+    .chapter-nav-btn {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.75rem 1.25rem;
+        background: var(--bg-secondary, #f5f5f5);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.95rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s;
+    }
+    .chapter-nav-btn:hover:not(:disabled) {
+        background: var(--accent, #D4AF37);
+        color: white;
+        border-color: var(--accent, #D4AF37);
+    }
+    .chapter-nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
+    .nav-arrow {
+        font-size: 1.2em;
+    }
+    .chapter-indicator {
+        font-size: 0.9rem;
+        color: var(--text-muted, #666);
+        text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .chapter-toc {
+            width: 100%;
+            max-width: 100%;
+            border-radius: 0;
+        }
+        .chapter-nav {
+            flex-wrap: wrap;
+        }
+        .chapter-nav-btn .nav-text {
+            display: none;
+        }
+        .chapter-indicator {
+            order: -1;
+            width: 100%;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    /* Mode fosc */
+    [data-theme="dark"] .chapter-toc {
+        background: #1e1e1e;
+        border-color: #333;
+    }
+    [data-theme="dark"] .toc-header {
+        background: #252525;
+        border-color: #333;
+    }
+    [data-theme="dark"] .toc-list a.active {
+        background: #2a2a1e;
+    }
+    [data-theme="dark"] .chapter-nav-btn {
+        background: #252525;
+        border-color: #444;
+    }
+
+    /* Acordió per detalls de traducció */
+    .details-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0.75rem 1rem;
+        margin-top: 1rem;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-primary, #333);
+        transition: all 0.2s ease;
+    }
+    .details-toggle:hover {
+        background: var(--bg-hover, #f0f0f0);
+    }
+    .details-toggle .toggle-icon {
+        transition: transform 0.2s ease;
+    }
+    .details-toggle.open .toggle-icon {
+        transform: rotate(180deg);
+    }
+    .work-details {
+        padding: 1rem;
+        margin-top: 0;
+        background: var(--bg-secondary, #f8f8f8);
+        border: 1px solid var(--border-color, #ddd);
+        border-top: none;
+        border-radius: 0 0 6px 6px;
+    }
+    [data-theme="dark"] .details-toggle {
+        background: #252525;
+        border-color: #444;
+    }
+    [data-theme="dark"] .work-details {
+        background: #252525;
+        border-color: #444;
+    }
+</style>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Brevitate-Test",
+    "author": {
+        "@type": "Person",
+        "name": "Seneca"
+    },
+    "translator": {
+        "@type": "Organization",
+        "name": "Editorial Clàssica"
+    },
+    "inLanguage": "ca",
+    "workTranslation": {
+        "@type": "Book",
+        "name": "None",
+        "author": {
+            "@type": "Person",
+            "name": "None"
+        },
+        "inLanguage": "grec"
+    },
+    "datePublished": "2026"
+}
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
+<article class="page-content">
+    <div class="container">
+        <!-- Capçalera de l'obra amb portada -->
+        <header class="work-header">
+            <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                
+                <div style="flex-shrink: 0; text-align: center;">
+                    <img src="assets/portades/seneca-brevitate-test-portada.png"
+                         alt="Portada de Brevitate-Test"
+                         style="max-width: 200px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
+                    <button class="btn-favorit btn-favorit-below"
+                            data-obra-id="seneca-brevitate-test"
+                            data-obra-titol="Brevitate-Test"
+                            data-obra-autor="Seneca"
+                            title="Afegir a favorits">
+                        <span class="favorit-icon">🤍</span>
+                        <span class="favorit-text">Afegir a favorits</span>
+                    </button>
+                </div>
+                
+
+                <div class="work-info" style="flex: 1; min-width: 300px;">
+                    <h1 class="work-title">Brevitate-Test</h1>
+                    
+
+                    <div class="work-meta-grid">
+                        <div class="work-meta-item">
+                            <strong>Autor</strong>
+                            
+                            <a href="autor-seneca.html" class="author-link">Seneca</a>
+                            
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Traducció</strong>
+                            Editorial Clàssica
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Llengua original</strong>
+                            Grec
+                        </div>
+
+                        
+
+                    </div>
+
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-esborrany">esborrany</span>
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                1900-01-01
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls de vista -->
+        <div class="text-container" data-mode="bilingue">
+            <div class="view-controls">
+                <!-- Navegació capítols esquerra -->
+                <button class="chapter-nav-top-btn" id="prev-chapter-top" title="Capítol anterior" disabled>←</button>
+
+                <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
+                    <span class="toc-icon">☰</span> Índex
+                </button>
+                <span class="view-separator">|</span>
+                <button class="view-btn" data-mode="original">Original</button>
+                <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
+                <button class="view-btn" data-mode="traduccio">Traducció</button>
+
+                <!-- Navegació capítols dreta -->
+                <button class="chapter-nav-top-btn" id="next-chapter-top" title="Capítol següent" disabled>→</button>
+            </div>
+
+            <!-- Índex de capítols (amagat per defecte) -->
+            <nav class="chapter-toc" id="chapter-toc" aria-label="Índex de capítols">
+                <div class="toc-header">
+                    <h3>Índex de capítols</h3>
+                    <button class="toc-close" id="toc-close" aria-label="Tancar índex">&times;</button>
+                </div>
+                <ol class="toc-list" id="toc-list">
+                    <!-- Omplert dinàmicament per JS -->
+                </ol>
+            </nav>
+
+            <!-- Grid bilingüe -->
+            <div class="bilingue-grid">
+                <!-- Columna original -->
+                <section class="original-column">
+                    <div class="column-header">Text original (grec)</div>
+                    <h2 class="section-title">De Brevitate Vitae</h2>
+
+                <div class="section" id="orig-1" data-parallel="trad-1">
+                    <p>Maior pars mortalium, Pauline, de naturae malignitate conqueritur,
+quod in exiguum aevi gignimur, quod haec tam velociter, tam rapide
+dati nobis temporis spatia decurrant, adeo ut exceptis admodum paucis
+ceteros in ipso vitae apparatu vita destituat.</p>
+<p>Nec huic publico, ut opinantur, malo turba tantum et imprudens vulgus
+ingemuit: clarorum quoque virorum hic affectus querellas evocavit.</p>
+                </div>
+                
+                </section>
+
+                <!-- Columna traducció -->
+                <section class="translation-column">
+                    <div class="column-header">Traducció (català)</div>
+                    <h2 class="section-title">De Brevitate Vitae</h2>
+
+                <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>Traducció</h2>
+<p>La majoria dels mortals, Paulí, es lamenta de la maldat de la naturalesa: que naixem per a una durada de vida tan breu, que aquests espais de temps que se&rsquo;ns concedeixen transcorren tan veloçment, tan ràpidament, fins al punt que, exceptuant uns pocs escassos, la vida abandona tots els altres en plens preparatius de viure.</p>
+<p>I no només la turba i el vulgar ignorant gemega davant aquest mal públic, com creuen: aquest sentiment ha fet sorgir queixes també entre homes il·lustres.</p>
+                </div>
+                
+                </section>
+            </div>
+
+            <!-- Navegació entre capítols -->
+            <nav class="chapter-nav" id="chapter-nav" aria-label="Navegació entre capítols">
+                <button class="chapter-nav-btn" id="prev-chapter" disabled>
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-text">Capítol anterior</span>
+                </button>
+                <span class="chapter-indicator" id="chapter-indicator">Capítol 1 de 1</span>
+                <button class="chapter-nav-btn" id="next-chapter" disabled>
+                    <span class="nav-text">Capítol següent</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+        </div>
+
+        <!-- Notes (amagat per defecte) -->
+        
+
+        <!-- Glossari (amagat per defecte) -->
+        
+
+        <!-- Bibliografia -->
+        
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</article>
+
+<!-- Script per índex i navegació de capítols (paginació) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocPanel = document.getElementById('chapter-toc');
+    const tocClose = document.getElementById('toc-close');
+    const tocList = document.getElementById('toc-list');
+    const prevBtn = document.getElementById('prev-chapter');
+    const nextBtn = document.getElementById('next-chapter');
+    const prevBtnTop = document.getElementById('prev-chapter-top');
+    const nextBtnTop = document.getElementById('next-chapter-top');
+    const indicator = document.getElementById('chapter-indicator');
+
+    if (!tocToggle || !tocPanel || !tocList) return;
+
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
+
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
+
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
+
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
+        const text = h2.textContent.trim();
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
+    });
+
+    // Si no hi ha prou capítols, amagar navegació
+    if (chapters.length <= 1) {
+        const nav = document.getElementById('chapter-nav');
+        if (nav) nav.style.display = 'none';
+        tocToggle.style.display = 'none';
+        return;
+    }
+
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = '<span class="toc-chapter-num">' + (i + 1) + '.</span> Capítol ' + ch.title;
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            showChapter(i);
+            closeToc();
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    let currentChapter = 0;
+
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
+
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
+            c.style.display = 'none';
+        });
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
+            c.style.display = 'block';
+        });
+        currentChapter = index;
+        updateNavigation();
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateNavigation() {
+        const atStart = currentChapter === 0;
+        const atEnd = currentChapter === chapters.length - 1;
+        prevBtn.disabled = atStart;
+        nextBtn.disabled = atEnd;
+        if (prevBtnTop) prevBtnTop.disabled = atStart;
+        if (nextBtnTop) nextBtnTop.disabled = atEnd;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
+            a.classList.toggle('active', i === currentChapter);
+        });
+    }
+
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
+
+    tocToggle.addEventListener('click', function() {
+        tocPanel.classList.contains('open') ? closeToc() : openToc();
+    });
+    tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
+    if (prevBtnTop) prevBtnTop.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    if (nextBtnTop) nextBtnTop.addEventListener('click', function() { showChapter(currentChapter + 1); });
+
+    document.addEventListener('click', function(e) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+            closeToc();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
+    });
+
+    updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Botons d'accés ràpid a seccions
+document.addEventListener('DOMContentLoaded', function() {
+    // Botó Capítols - obre l'índex de capítols
+    const quickChapters = document.getElementById('quick-chapters');
+    if (quickChapters) {
+        quickChapters.addEventListener('click', function() {
+            const tocBtn = document.getElementById('toc-toggle');
+            if (tocBtn) tocBtn.click();
+        });
+    }
+
+    // Botó Glossari - scroll a la secció i obre-la
+    const quickGlossari = document.getElementById('quick-glossari');
+    if (quickGlossari) {
+        quickGlossari.addEventListener('click', function() {
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            if (glossariSection) {
+                if (!glossariSection.classList.contains('open')) {
+                    glossariSection.classList.add('open');
+                    if (glossariToggle) glossariToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    glossariSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+
+    // Botó Notes - scroll a la secció i obre-la
+    const quickNotes = document.getElementById('quick-notes');
+    if (quickNotes) {
+        quickNotes.addEventListener('click', function() {
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            if (notesSection) {
+                if (!notesSection.classList.contains('open')) {
+                    notesSection.classList.add('open');
+                    if (notesToggle) notesToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    notesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem (usant classe CSS)
+                if (savedTermElement) {
+                    savedTermElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        savedTermElement.classList.remove('highlight-temp');
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
+});
+
+// Inicialitzar estat del botó de favorits
+document.addEventListener('DOMContentLoaded', async function() {
+    const favBtn = document.querySelector('.btn-favorit-below');
+    if (!favBtn || !window.ArionFavorits) return;
+
+    // Esperar que l'auth estigui llest
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const obraId = favBtn.dataset.obraId;
+    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
+
+    if (isFavorit) {
+        favBtn.classList.add('active');
+        favBtn.querySelector('.favorit-icon').textContent = '❤️';
+    }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
