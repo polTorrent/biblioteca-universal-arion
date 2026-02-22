@@ -149,9 +149,10 @@ class WebPublisher(BaseAgent):
             slug = f"{autor_dir}-{obra_dir}"
 
             # Determinar gènere per defecte segons llengua
-            genere = obra_data.get("genere", "FIL")
-            if obra_data.get("llengua_original") == "grec":
+            genere = obra_data.get("genere")
+            if not genere and obra_data.get("llengua_original") == "grec":
                 genere = "FIL"
+            genere = genere or "FIL"
 
             return ObraMetadata(
                 slug=slug,
@@ -762,30 +763,6 @@ class WebPublisher(BaseAgent):
             </div>
         </div>
     </footer>
-
-    <!-- Theme Toggle Script -->
-    <script>
-        const themeToggle = document.querySelector('.theme-toggle');
-        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
-
-        function setTheme(dark) {{
-            document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
-            themeToggle.textContent = dark ? '☀️' : '🌙';
-            localStorage.setItem('theme', dark ? 'dark' : 'light');
-        }}
-
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {{
-            setTheme(savedTheme === 'dark');
-        }} else {{
-            setTheme(prefersDark.matches);
-        }}
-
-        themeToggle.addEventListener('click', () => {{
-            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-            setTheme(!isDark);
-        }});
-    </script>
 
     <script src="{base}js/app.js"></script>
 </body>
