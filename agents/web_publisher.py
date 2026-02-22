@@ -3,6 +3,7 @@
 Genera pàgines HTML a partir de les traduccions i actualitza l'índex.
 """
 
+import re
 import shutil
 from datetime import datetime
 from pathlib import Path
@@ -180,8 +181,6 @@ class WebPublisher(BaseAgent):
         """Converteix Markdown a HTML."""
         # Preprocessar sintaxi Pandoc-style a HTML
         # Convertir [text]{.class data-attr="val"} a <span class="class" data-attr="val">text</span>
-        import re
-
         def pandoc_to_html(match):
             text = match.group(1)
             attrs = match.group(2)
@@ -256,7 +255,6 @@ class WebPublisher(BaseAgent):
 
             # Parsejar notes (format: ## [N] Títol\nContingut)
             notes = []
-            import re
             pattern = r'##\s*\[(\d+)\]\s*(.*?)\n(.*?)(?=\n##\s*\[|\Z)'
             matches = re.finditer(pattern, contingut, re.DOTALL)
 
@@ -368,7 +366,6 @@ class WebPublisher(BaseAgent):
             metadata.portada_url = f"assets/portades/{portada_filename}"
         # 2. Buscar portada a la carpeta de l'obra i copiar-la
         elif obra_path and (obra_path / "portada.png").exists():
-            import shutil
             shutil.copy(obra_path / "portada.png", portada_dest)
             self.log_info(f"Portada copiada: portada.png -> {portada_dest.name}")
             metadata.portada_url = f"assets/portades/{portada_filename}"
