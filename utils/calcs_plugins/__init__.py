@@ -6,6 +6,8 @@ from .plugin_rus import DetectorRus
 from .plugin_japones import DetectorJapones
 from .plugin_arab import DetectorArab
 from .plugin_xines import DetectorXines
+from .plugin_frances import DetectorFrances
+from .plugin_alemany import DetectorAlemany
 
 PLUGINS_DISPONIBLES = {
     "llatí": DetectorLlati,
@@ -24,6 +26,10 @@ PLUGINS_DISPONIBLES = {
     "ar": DetectorArab,
     "xinès": DetectorXines,
     "zh": DetectorXines,
+    "francès": DetectorFrances,
+    "fr": DetectorFrances,
+    "alemany": DetectorAlemany,
+    "de": DetectorAlemany,
 }
 
 def obtenir_plugin(llengua: str):
