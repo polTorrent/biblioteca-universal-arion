@@ -480,8 +480,17 @@ class BaseAgent(ABC):
                         cost_eur=cost,
                     )
 
+                    # Extreure text del primer bloc de contingut
+                    if not message.content:
+                        raise RuntimeError("L'API ha retornat una resposta buida (sense contingut)")
+                    first_block = message.content[0]
+                    if not hasattr(first_block, "text"):
+                        raise RuntimeError(
+                            f"El primer bloc de contingut no és text (tipus: {first_block.type})"
+                        )
+
                     return AgentResponse(
-                        content=message.content[0].text,
+                        content=first_block.text,
                         model=message.model,
                         usage={
                             "input_tokens": input_tokens,
