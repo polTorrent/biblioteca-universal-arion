@@ -7,8 +7,9 @@ obra:
   genere: filosofia
   descripcio: ''
   estadistiques:
-    paraules_traduccio: 897
+    paraules_traduccio: 0
 revisio:
-  estat: revisat
+  estat: error
   data_revisio: '2026-02-23'
   qualitat: 0.0
+  notes_revisio: 'Traducció fallida - error de sessió niuada Claude Code'

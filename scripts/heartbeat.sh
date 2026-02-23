@@ -1,14 +1,12 @@
 #!/bin/bash
 # =============================================================================
-# heartbeat.sh v2 — Generador intel·ligent de tasques
+# heartbeat.sh v3 — Generador intel·ligent de tasques AMB SUPERVISIÓ
 # =============================================================================
-# Analitza l'estat REAL del projecte i genera tasques basant-se en:
-#   1. Obres pendents de traducció (obra-queue.json)
-#   2. Traduccions sense revisar (obres/ sense review)
-#   3. Codi Python sense code-review recent
-#   4. Web desactualitzada (docs/ vs obres/)
-#   5. Tests que fallen o no existeixen
-#   6. Tasques fallides que es poden reintentar
+# Millores v3 sobre v2:
+#   - Tasques de supervisió post-traducció (qualitat, format, web)
+#   - Cicle complet: traducció → supervisió → correcció → publicació
+#   - Detecció d'obres traduïdes sense validar
+#   - Verificació que la web reflecteix les obres
 # =============================================================================
 
 set -uo pipefail
@@ -19,8 +17,8 @@ TASKS_DIR="$HOME/.openclaw/workspace/tasks"
 TASK_MANAGER="$PROJECT/scripts/task-manager.sh"
 QUEUE="$PROJECT/config/obra-queue.json"
 LOG="$HOME/claude-worker.log"
-MAX_PENDING=5          # No afegir més si ja hi ha 5 pendents
-MIN_DIEM_RESERVE=2     # Reserva mínima de DIEM
+MAX_PENDING=5
+MIN_DIEM_RESERVE=2
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [HEARTBEAT] $1" | tee -a "$LOG"; }
@@ -34,7 +32,6 @@ count_running() {
 }
 
 task_exists() {
-    # Comprova si ja existeix una tasca pendent/running amb paraula clau
     local keyword="$1"
     grep -rl "$keyword" "$TASKS_DIR/pending/" "$TASKS_DIR/running/" 2>/dev/null | head -1
 }
@@ -43,11 +40,10 @@ add_task() {
     local type="$1"
     local instruction="$2"
     if [ "$(count_pending)" -ge "$MAX_PENDING" ]; then
-        log "   ⏸️ Cua plena ($MAX_PENDING pendents). No s'afegeix."
         return 1
     fi
     bash "$TASK_MANAGER" add "$type" "$instruction" 2>/dev/null
-    log "   ➕ Tasca afegida [$type]: $(echo "$instruction" | head -c 80)..."
+    log "   ➕ [$type]: $(echo "$instruction" | head -c 80)..."
     return 0
 }
 
@@ -72,7 +68,6 @@ check_worker() {
         log "⚠️ Worker NO actiu. Reiniciant..."
         cd "$PROJECT"
         rm -f "$TASKS_DIR/worker.lock"
-        # Tornar running a pending
         for f in "$TASKS_DIR/running/"*.json; do
             [ -f "$f" ] && mv "$f" "$TASKS_DIR/pending/"
         done
@@ -90,24 +85,19 @@ check_worker() {
 
 # ── 1. Obres pendents de traducció ───────────────────────────────────────────
 check_translations() {
-    log "📚 Analitzant obres pendents de traducció..."
-    local added=0
+    log "📚 Analitzant obres pendents..."
+    
+    [ ! -f "$QUEUE" ] && return 0
 
-    if [ ! -f "$QUEUE" ]; then
-        log "   ⚠️ obra-queue.json no trobat"
-        return 0
-    fi
-
-    # Llegir obres amb status "pending" o "in_progress"
     python3 -c "
-import json, sys, os
+import json, os
 
 queue = json.load(open('$QUEUE'))
 project = '$PROJECT'
 
 for obra in queue.get('obres', []):
     status = obra.get('status', 'pending')
-    if status in ('done', 'skip'):
+    if status in ('done', 'skip', 'validated'):
         continue
     
     autor = obra['autor']
@@ -117,93 +107,134 @@ for obra in queue.get('obres', []):
     slug_autor = autor.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a')
     slug_titol = titol.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a').replace('í', 'i')
     
-    # Comprovar si ja existeix la traducció
     obra_dir = os.path.join(project, 'obres', categoria, slug_autor, slug_titol)
-    has_translation = os.path.isdir(obra_dir) and any(
-        f.endswith('.md') or f.endswith('.txt') 
-        for f in os.listdir(obra_dir) if 'traduccio' in f.lower() or 'traducció' in f.lower() or 'catala' in f.lower()
-    ) if os.path.isdir(obra_dir) else False
     
-    # Comprovar si ja existeix alguna cosa a obres/
+    has_translation = False
     has_dir = os.path.isdir(obra_dir)
-    has_files = len(os.listdir(obra_dir)) > 0 if has_dir else False
+    if has_dir:
+        files = os.listdir(obra_dir)
+        has_translation = any(
+            f.endswith('.md') or f.endswith('.txt')
+            for f in files if any(k in f.lower() for k in ['traduccio', 'traducció', 'catala', 'català'])
+        )
     
-    if has_translation:
-        # Ja traduïda — comprovar si cal review
-        print(f'REVIEW|{autor}|{titol}|{categoria}|{obra_dir}')
-    elif has_files:
-        # Començada però no acabada
-        print(f'CONTINUE|{autor}|{titol}|{llengua}|{categoria}')
-    else:
-        # No començada
+    if not has_dir:
         print(f'NEW|{autor}|{titol}|{llengua}|{categoria}')
+    elif not has_translation:
+        print(f'CONTINUE|{autor}|{titol}|{llengua}|{categoria}')
 " 2>/dev/null | while IFS='|' read -r action autor titol extra1 extra2; do
         [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
         
         case "$action" in
             NEW)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Tradueix '$titol' de $autor del $extra1 al català. Busca el text original a Perseus, Gutenberg o Wikisource. Guarda a obres/$extra2/. Inclou metadata.yml amb autor, títol, llengua original, i data."
-                    added=$((added + 1))
+                    add_task "translate" "Tradueix '$titol' de $autor del $extra1 al català. Busca el text original a Perseus, Gutenberg o Wikisource. Guarda a obres/$extra2/. Inclou metadata.yml. Després executa 'python3 scripts/build.py' per actualitzar la web."
                 fi
                 ;;
             CONTINUE)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Continua la traducció de '$titol' de $autor. Revisa obres/$extra2/ per veure què falta. Completa la traducció i verifica qualitat."
-                    added=$((added + 1))
-                fi
-                ;;
-            REVIEW)
-                if ! task_exists "Revisa.*$titol" > /dev/null 2>&1; then
-                    add_task "review" "Revisa la traducció de '$titol' de $autor a $extra2. Comprova: fidelitat al text original, qualitat del català, consistència del glossari, format correcte. Reporta puntuació i suggeriments."
-                    added=$((added + 1))
+                    add_task "translate" "Continua la traducció de '$titol' de $autor. Revisa obres/$extra2/ per veure què falta. Completa i verifica qualitat."
                 fi
                 ;;
         esac
     done
-
-    log "   📚 $added tasques de traducció generades"
 }
 
-# ── 2. Code reviews pendents ─────────────────────────────────────────────────
-check_code_reviews() {
-    log "🔍 Analitzant codi sense revisar..."
-    local added=0
+# ── 2. ⭐ SUPERVISIÓ: Traduccions sense validar ──────────────────────────────
+check_supervision() {
+    log "🔎 Supervisió de traduccions..."
 
-    # Buscar fitxers Python modificats recentment (últims 7 dies) sense review
-    find "$PROJECT/agents" "$PROJECT/scripts" "$PROJECT/utils" -name "*.py" -mtime -7 -type f 2>/dev/null | while read -r pyfile; do
+    python3 -c "
+import os
+from pathlib import Path
+
+project = Path('$PROJECT')
+obres_dir = project / 'obres'
+tasks_done = Path('$TASKS_DIR') / 'done'
+
+if not obres_dir.exists():
+    exit(0)
+
+for categoria in obres_dir.iterdir():
+    if not categoria.is_dir():
+        continue
+    for autor in categoria.iterdir():
+        if not autor.is_dir():
+            continue
+        for obra in autor.iterdir():
+            if not obra.is_dir():
+                continue
+            
+            files = list(obra.iterdir())
+            filenames = [f.name for f in files]
+            
+            has_translation = any(
+                f.suffix in ('.md', '.txt') and any(k in f.name.lower() for k in ['traduccio', 'traducció', 'catala', 'català', 'chapter', 'capitol'])
+                for f in files
+            )
+            
+            if not has_translation:
+                continue
+            
+            has_metadata = 'metadata.yml' in filenames or 'metadata.json' in filenames
+            has_validated = '.validated' in filenames
+            
+            # Ja supervisada? Skip
+            if has_validated:
+                continue
+            
+            # Ja hi ha una supervisió recent a done?
+            obra_name = obra.name
+            has_recent_review = False
+            if tasks_done.exists():
+                for done_file in tasks_done.glob('*.json'):
+                    try:
+                        content = done_file.read_text()
+                        if 'supervis' in content.lower() and obra_name in content.lower():
+                            has_recent_review = True
+                            break
+                    except:
+                        pass
+            
+            if has_recent_review:
+                continue
+            
+            relpath = str(obra.relative_to(project))
+            
+            if not has_metadata:
+                print(f'MISSING_META|{relpath}|{autor.name}|{obra.name}')
+            else:
+                print(f'NEEDS_REVIEW|{relpath}|{autor.name}|{obra.name}')
+" 2>/dev/null | while IFS='|' read -r action relpath autor_name obra_name; do
         [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
         
-        local relpath="${pyfile#$PROJECT/}"
-        local basename=$(basename "$pyfile")
-        
-        # Comprovar si ja hi ha una review recent (done en últims 7 dies)
-        local recent_review=$(find "$TASKS_DIR/done/" -name "*.json" -mtime -7 -type f 2>/dev/null | \
-            xargs grep -l "$basename" 2>/dev/null | head -1)
-        
-        if [ -z "$recent_review" ] && ! task_exists "$basename" > /dev/null 2>&1; then
-            add_task "code-review" "Revisa $relpath: verifica imports, busca bugs, millora typing i error handling. Si trobes problemes, arregla'ls directament."
-            added=$((added + 1))
-        fi
+        case "$action" in
+            MISSING_META)
+                if ! task_exists "metadata.*$obra_name" > /dev/null 2>&1; then
+                    add_task "supervision" "Falta metadata.yml a $relpath. Crea'l amb: title, author, source_language, category, date, status."
+                fi
+                ;;
+            NEEDS_REVIEW)
+                if ! task_exists "supervis.*$obra_name\|qualitat.*$obra_name" > /dev/null 2>&1; then
+                    add_task "supervision" "SUPERVISIÓ QUALITAT de '$obra_name' a $relpath. Comprova: 1) Qualitat del català (gramàtica, naturalitat, estil). 2) Fidelitat al original (no omissions ni invencions). 3) Glossari consistent. 4) Format correcte (capítols, notes). 5) metadata.yml complet. PUNTUACIÓ: Si qualitat >= 7/10, crea fitxer .validated amb data i puntuació. Si < 7/10, crea fitxer .needs_fix amb llista de problemes concrets."
+                fi
+                ;;
+        esac
     done
-
-    log "   🔍 $added code-reviews generades"
 }
 
-# ── 3. Web desactualitzada ────────────────────────────────────────────────────
-check_web() {
-    log "🌐 Comprovant si la web necessita regenerar..."
+# ── 3. ⭐ SUPERVISIÓ: Web sincronitzada ──────────────────────────────────────
+check_web_sync() {
+    log "🌐 Comprovant web..."
     
     local docs_time=0
     local obres_time=0
     
-    # Última modificació de docs/
     if [ -d "$PROJECT/docs" ]; then
         docs_time=$(find "$PROJECT/docs" -name "*.html" -type f -printf '%T@\n' 2>/dev/null | sort -rn | head -1 | cut -d. -f1)
         docs_time=${docs_time:-0}
     fi
     
-    # Última modificació d'obres/
     if [ -d "$PROJECT/obres" ]; then
         obres_time=$(find "$PROJECT/obres" -type f -printf '%T@\n' 2>/dev/null | sort -rn | head -1 | cut -d. -f1)
         obres_time=${obres_time:-0}
@@ -211,19 +242,37 @@ check_web() {
     
     if [ "$obres_time" -gt "$docs_time" ] 2>/dev/null; then
         if ! task_exists "build.py\|regenera.*web\|actualitza.*web" > /dev/null 2>&1; then
-            add_task "maintenance" "La web està desactualitzada. Executa 'python3 scripts/build.py' per regenerar docs/ amb les últimes traduccions. Fes commit i push."
-            log "   🌐 Tasca de regeneració web afegida"
+            add_task "publish" "Web desactualitzada. Executa 'python3 scripts/build.py' per regenerar docs/. Verifica que les obres amb .validated apareixen. Commit i push."
+            log "   🌐 Publicació web afegida"
         fi
     else
-        log "   🌐 Web actualitzada (OK)"
+        log "   🌐 Web OK"
     fi
 }
 
-# ── 4. Tests ──────────────────────────────────────────────────────────────────
+# ── 4. Code reviews ──────────────────────────────────────────────────────────
+check_code_reviews() {
+    log "🔍 Code reviews..."
+
+    find "$PROJECT/agents" "$PROJECT/scripts" "$PROJECT/utils" -name "*.py" -mtime -7 -type f 2>/dev/null | while read -r pyfile; do
+        [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
+        
+        local relpath="${pyfile#$PROJECT/}"
+        local basename=$(basename "$pyfile")
+        
+        local recent_review=$(find "$TASKS_DIR/done/" -name "*.json" -mtime -7 -type f 2>/dev/null | \
+            xargs grep -l "$basename" 2>/dev/null | head -1)
+        
+        if [ -z "$recent_review" ] && ! task_exists "$basename" > /dev/null 2>&1; then
+            add_task "code-review" "Revisa $relpath: imports, bugs, typing, error handling. Arregla directament si trobes problemes."
+        fi
+    done
+}
+
+# ── 5. Tests ──────────────────────────────────────────────────────────────────
 check_tests() {
-    log "🧪 Comprovant tests..."
+    log "🧪 Tests..."
     
-    # Si fa més de 3 dies que no s'han passat tests
     local last_test=$(find "$TASKS_DIR/done/" -name "*.json" -type f 2>/dev/null | \
         xargs grep -l "pytest\|test" 2>/dev/null | \
         xargs ls -1t 2>/dev/null | head -1)
@@ -237,28 +286,21 @@ check_tests() {
     fi
     
     if $needs_test && ! task_exists "pytest" > /dev/null 2>&1; then
-        add_task "test" "Executa 'python3 -m pytest tests/ -v' i reporta resultats. Si hi ha errors, intenta arreglar-los. Si falten dependències, instal·la-les amb pip3."
-        log "   🧪 Tasca de tests afegida"
-    else
-        log "   🧪 Tests recents (OK)"
+        add_task "test" "Executa 'python3 -m pytest tests/ -v'. Si hi ha errors, arregla'ls."
     fi
 }
 
-# ── 5. Tasques fallides recuperables ──────────────────────────────────────────
+# ── 6. Tasques fallides recuperables ──────────────────────────────────────────
 check_failed() {
-    log "♻️ Comprovant tasques fallides recuperables..."
-    local recovered=0
+    log "♻️ Tasques fallides..."
     
-    # Buscar tasques amb menys de MAX_RETRIES que van fallar fa >1h
     find "$TASKS_DIR/failed/" -name "*.json" -mmin +60 -type f 2>/dev/null | head -3 | while read -r failed; do
         [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
         
         local retries=$(python3 -c "import json; print(json.load(open('$failed')).get('retries',0))" 2>/dev/null)
         retries=${retries:-0}
         
-        # Només recuperar si va fallar menys de 2 vegades (potser era un error temporal)
         if [ "$retries" -lt 2 ]; then
-            # Reset retries i tornar a pending
             python3 -c "
 import json
 f = '$failed'
@@ -269,16 +311,13 @@ with open(f, 'w') as fh: json.dump(d, fh, indent=2)
 " 2>/dev/null
             mv "$failed" "$TASKS_DIR/pending/"
             log "   ♻️ Recuperada: $(basename "$failed")"
-            recovered=$((recovered + 1))
         fi
     done
-    
-    log "   ♻️ $recovered tasques recuperades"
 }
 
-# ── 6. Actualitzar obra-queue.json ────────────────────────────────────────────
+# ── 7. Actualitzar obra-queue.json ────────────────────────────────────────────
 update_queue_status() {
-    log "📋 Actualitzant estat obra-queue.json..."
+    log "📋 Actualitzant obra-queue.json..."
     
     python3 -c "
 import json, os
@@ -303,8 +342,11 @@ for obra in queue.get('obres', []):
         files = os.listdir(obra_dir)
         has_md = any(f.endswith('.md') for f in files)
         has_meta = 'metadata.yml' in files or 'metadata.json' in files
+        has_validated = '.validated' in files
         
-        if has_md and has_meta:
+        if has_validated:
+            new_status = 'validated'
+        elif has_md and has_meta:
             new_status = 'done'
         elif has_md or len(files) > 0:
             new_status = 'in_progress'
@@ -329,57 +371,56 @@ else:
     done
 }
 
-# ── 7. Manteniment setmanal ───────────────────────────────────────────────────
+# ── 8. Manteniment setmanal ───────────────────────────────────────────────────
 check_weekly_maintenance() {
-    local day=$(date +%u)  # 1=dilluns, 7=diumenge
-    
-    # Només diumenges
+    local day=$(date +%u)
     if [ "$day" -eq 7 ]; then
-        if ! task_exists "manteniment.*setmanal\|weekly.*maintenance" > /dev/null 2>&1; then
-            local last_maint=$(find "$TASKS_DIR/done/" -name "*.json" -mtime -7 -type f 2>/dev/null | \
-                xargs grep -l "manteniment\|maintenance" 2>/dev/null | head -1)
-            
-            if [ -z "$last_maint" ]; then
-                add_task "maintenance" "Manteniment setmanal: 1) Neteja fitxers Zone.Identifier. 2) Verifica que tots els imports funcionen: python3 -c 'import agents'. 3) Comprova espai en disc. 4) Git gc. 5) Reporta estat general del projecte."
-                log "   🔧 Manteniment setmanal afegit"
-            fi
+        local last_maint=$(find "$TASKS_DIR/done/" -name "*.json" -mtime -7 -type f 2>/dev/null | \
+            xargs grep -l "manteniment\|maintenance" 2>/dev/null | head -1)
+        if [ -z "$last_maint" ] && ! task_exists "manteniment\|maintenance" > /dev/null 2>&1; then
+            add_task "maintenance" "Manteniment setmanal: 1) Neteja Zone.Identifier. 2) Verifica imports. 3) Git gc. 4) Espai disc. 5) Reporta estat."
         fi
     fi
 }
 
+# ── 9. Rotació done/ ─────────────────────────────────────────────────────────
+rotate_done() {
+    local count=$(find "$TASKS_DIR/done/" -name "*.json" -mtime +7 -type f 2>/dev/null | wc -l)
+    find "$TASKS_DIR/done/" -name "*.json" -mtime +7 -type f -delete 2>/dev/null
+    [ "$count" -gt 0 ] && log "   🧹 $count tasques antigues eliminades"
+}
+
 # =============================================================================
-# MAIN — Executar heartbeat complet
+# MAIN
 # =============================================================================
 log "═══════════════════════════════════════════════════"
-log "💓 HEARTBEAT v2 iniciat"
+log "💓 HEARTBEAT v3 iniciat (amb supervisió)"
 
-# Prerequisits
 check_diem || exit 0
 check_worker
 
-# Estat actual
 PENDING=$(count_pending)
 RUNNING=$(count_running)
 DONE_TODAY=$(find "$TASKS_DIR/done/" -name "*.json" -newermt "$(date '+%Y-%m-%d')" -type f 2>/dev/null | wc -l)
 FAILED=$(ls -1 "$TASKS_DIR/failed/"*.json 2>/dev/null | wc -l)
 
-log "📊 Estat: $PENDING pendents, $RUNNING running, $DONE_TODAY completades avui, $FAILED fallides"
+log "📊 Estat: $PENDING pendents, $RUNNING running, $DONE_TODAY done avui, $FAILED fallides"
 
-# Si la cua ja està plena, només reportar
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
-    log "✅ Cua plena ($PENDING pendents). Res a fer."
+    log "✅ Cua plena ($PENDING). Res a fer."
 else
-    # Analitzar i generar tasques (per prioritat)
-    update_queue_status
-    check_failed           # 1r: recuperar fallides
-    check_translations     # 2n: obres per traduir (core del projecte)
-    check_code_reviews     # 3r: code reviews
-    check_web              # 4t: web actualitzada
-    check_tests            # 5è: tests
-    check_weekly_maintenance  # 6è: manteniment
+    # Per ordre de PRIORITAT:
+    update_queue_status      # 0. Actualitzar estat
+    check_failed             # 1. Recuperar fallides
+    check_supervision        # 2. ⭐ SUPERVISIÓ (NOU!)
+    check_translations       # 3. Noves traduccions
+    check_web_sync           # 4. Web sincronitzada
+    check_code_reviews       # 5. Code reviews
+    check_tests              # 6. Tests
+    check_weekly_maintenance # 7. Manteniment
+    rotate_done              # 8. Neteja
 fi
 
-# Resum final
 PENDING_FINAL=$(count_pending)
-log "💓 HEARTBEAT completat. Cua: $PENDING → $PENDING_FINAL pendents"
+log "💓 HEARTBEAT v3 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"

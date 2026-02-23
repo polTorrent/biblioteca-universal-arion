@@ -1,0 +1,50 @@
+# Supervisió de Qualitat - De Brevitate Vitae (Sèneca)
+# Data: 2026-02-23
+# Puntuació: 0/10 — TRADUCCIÓ FALLIDA COMPLETAMENT
+
+## Problema principal
+La traducció va fallar completament. El fitxer `traduccio.md` no conté cap text
+traduït, només 23 repeticions de l'error:
+  "Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched
+   inside another Claude Code session."
+
+## Causa arrel
+El pipeline de traducció va intentar executar Claude CLI (subprocess) dins d'una
+sessió Claude Code ja activa, cosa que provoca un error de sessió niuada.
+Probablement l'entorn CLAUDECODE=1 estava establert però el script es va executar
+des de dins de Claude Code, no des d'un terminal independent.
+
+## Problemes concrets a corregir
+
+### 1. traduccio.md — CRÍTIC
+- [ ] No conté cap traducció, només missatges d'error repetits
+- [ ] Cal reexecutar la traducció completa (20 capítols del llatí al català)
+- [ ] Assegurar-se d'executar el pipeline des d'un terminal independent, NO des de Claude Code
+
+### 2. glossari.yml — ABSENT
+- [ ] Fitxer inexistent
+- [ ] Cal generar glossari terminològic (termes filosòfics estoics clau: otium, vita, tempus, sapientia, fortuna, etc.)
+
+### 3. notes.md — ABSENT
+- [ ] Fitxer inexistent
+- [ ] Cal generar notes crítiques (context històric, referències a Paulí, August, Ciceró, Drus, etc.)
+
+### 4. portada.png — ABSENT
+- [ ] No hi ha portada de l'obra
+
+### 5. metadata.yml — INCOMPLET/INCORRECTE
+- [ ] `descripcio` està buida — cal afegir descripció de l'obra
+- [ ] `estat: revisat` és fals — hauria de ser `estat: error` o `estat: pendent`
+- [ ] `qualitat: 0.0` és correcte però `estat` contradiu la qualitat
+- [ ] `paraules_traduccio: 897` és fals — les 897 "paraules" són missatges d'error
+
+### 6. Format — NO AVALUABLE
+- [ ] No es pot avaluar el format de capítols perquè no hi ha contingut
+- [ ] L'original.md conté 20 capítols (I-XX) que cal traduir completament
+
+## Instruccions per corregir
+1. Executar la traducció des d'un terminal independent (NO des de Claude Code)
+2. Alternativament, usar `use_api=True` a l'AgentConfig per evitar el CLI
+3. Verificar que CLAUDECODE no causa conflicte de sessions niuades
+4. Després de traduir, regenerar glossari, notes i portada
+5. Actualitzar metadata.yml amb les dades reals
