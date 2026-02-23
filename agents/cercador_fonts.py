@@ -339,7 +339,7 @@ Indica:
 
             if "---TEXT---" in text_response and "---FI---" in text_response:
                 # Extreure text i font
-                parts = text_response.split("---TEXT---")
+                parts = text_response.split("---TEXT---", maxsplit=1)
                 font_part = parts[0].replace("---FONT---", "").strip()
                 text_part = parts[1].split("---FI---")[0].strip()
 
