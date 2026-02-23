@@ -25,7 +25,7 @@ MAX_TASKS_PER_DAY=50         # Límit diari de tasques
 COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60             # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
-TASK_TIMEOUT=1200            # 20 min timeout per tasca (kill si supera)
+TASK_TIMEOUT=900             # 15 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 
@@ -103,18 +103,26 @@ run_task() {
 
     # timeout mata el procés si supera TASK_TIMEOUT
       result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" claude -p "$instruction" \
-        --max-turns 10 \
+        --max-turns 25 \
         --allowedTools "Edit" "Write" \
         "Bash(cat:*)" "Bash(grep:*)" "Bash(ls:*)" "Bash(find:*)" \
         "Bash(python3:*)" "Bash(python:*)" "Bash(pip:*)" "Bash(pip3:*)" \
         "Bash(git add:*)" "Bash(git commit:*)" "Bash(git push:*)" \
         "Bash(head:*)" "Bash(tail:*)" "Bash(wc:*)" "Bash(mkdir:*)" \
         "Bash(sed:*)" "Bash(cp:*)" "Bash(mv:*)" "Bash(rm:*)" \
+        "Bash(touch:*)" "Bash(echo:*)" "Bash(date:*)" "Bash(tee:*)" \
         --output-format text 2>&1) && exit_code=0 || exit_code=$?
 
     # 124 = timeout va matar el procés
     if [ $exit_code -eq 124 ]; then
         log "⏰ TIMEOUT després de ${TASK_TIMEOUT}s"
+    fi
+
+    # Detectar auth error
+    if echo "$result" | grep -qi "authentication_error\|OAuth token has expired\|Failed to authenticate"; then
+        log "🔑 AUTH ERROR: Token caducat! Executa 'claude auth login'"
+        echo "AUTH_ERROR"
+        return 98
     fi
 
     # Detectar rate limit
