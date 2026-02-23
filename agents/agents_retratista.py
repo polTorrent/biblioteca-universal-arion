@@ -31,7 +31,7 @@ import os
 import requests
 from pathlib import Path
 from PIL import Image
-from typing import Any, ClassVar
+from typing import ClassVar
 
 from pydantic import BaseModel, Field
 
@@ -95,7 +95,7 @@ class AgentRetratista(BaseAgent):
     3. Redimensionar i guardar
     """
 
-    agent_name: str = "Retratista"
+    agent_name: ClassVar[str] = "Retratista"
 
     WIKIMEDIA_API = "https://commons.wikimedia.org/w/api.php"
     VENICE_EDIT_API = "https://api.venice.ai/api/v1/image/edit"
