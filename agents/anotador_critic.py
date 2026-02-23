@@ -1,14 +1,11 @@
 """Agent Anotador Crític - afegeix notes erudites i context."""
 
-from typing import ClassVar, Literal, TYPE_CHECKING
+from typing import ClassVar, Literal
 
 from pydantic import BaseModel
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
 from core import MemoriaContextual
-
-if TYPE_CHECKING:
-    from utils.logger import AgentLogger
 
 
 class NotaCritica(BaseModel):
@@ -47,14 +44,7 @@ class AnotadorCriticAgent(BaseAgent):
     intertextual i terminològic per enriquir la comprensió del lector.
     """
 
-    agent_name: str = "AnotadorCritic"
-
-    def __init__(
-        self,
-        config: AgentConfig | None = None,
-        logger: "AgentLogger | None" = None,
-    ) -> None:
-        super().__init__(config, logger)
+    agent_name: ClassVar[str] = "AnotadorCritic"
 
     @property
     def system_prompt(self) -> str:
