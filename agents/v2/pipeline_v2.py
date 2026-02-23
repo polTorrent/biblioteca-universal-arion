@@ -39,7 +39,7 @@ from agents.base_agent import AgentConfig, ContentFilterError
 from utils.validators import validar_text_entrada, netejar_text, SeverityLevel
 
 # Core (persistència i validació)
-from core import EstatPipeline, MemoriaContextual, ValidadorFinal, ContextInvestigacio
+from core import EstatPipeline, MemoriaContextual, ValidadorFinal
 
 # Agents V2 (nous)
 from agents.v2.analitzador_pre import AnalitzadorPreTraduccio, SelectorExemplesFewShot
@@ -713,7 +713,7 @@ class PipelineV2:
 
                 temps_fase = time.time()
                 try:
-                    investigador = InvestigadorAgent()
+                    investigador = InvestigadorAgent(self.agent_config, self.logger)
                     informe = investigador.investigar(
                         autor=autor or "Desconegut",
                         obra=obra or "Sense títol",
@@ -1269,7 +1269,6 @@ class PipelineV2:
         """Processa un chunk individual: anàlisi → traducció → avaluació → refinament."""
 
         analisi: AnalisiPreTraduccio | None = None
-        avaluacio: FeedbackFusionat | None = None
         iteracions = 0
 
         # ─────────────────────────────────────────────────────────────
