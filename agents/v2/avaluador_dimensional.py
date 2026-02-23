@@ -8,11 +8,9 @@ els resultats en un feedback accionable per al refinador.
 
 from typing import TYPE_CHECKING
 
-from pydantic import BaseModel
-
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
 from agents.utils import safe_float, safe_str, safe_list, DEFAULT_PUNTUACIO
-from utils.detector_calcs import detectar_calcs, ResultatDeteccio
+from utils.detector_calcs import detectar_calcs
 
 # LanguageTool per correcció normativa
 try:
