@@ -131,9 +131,30 @@ PERSEUS_URLS: dict[str, dict[str, str]] = {
     "plato": {
         "apologia": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0170",
         "criton": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0170%3Atext%3DCrito",
+        "republic": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0168",
+        "phaedo": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0170%3Atext%3DPhaedo",
+    },
+    "epictetus": {
+        "enchiridion": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0235",
+        "discourses": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0236",
+    },
+    "marcus aurelius": {
+        "meditations": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641",
     },
     "seneca": {
-        "de-brevitate-vitae": "https://www.perseus.tufts.edu/hopper/text?doc=Sen.+Brev.",
+        "de-brevitate-vitae": "https://www.thelatinlibrary.com/sen/sen.brev.shtml",
+        "epistulae": "https://www.thelatinlibrary.com/sen/seneca.ep1.shtml",
+    },
+    "sophocles": {
+        "oedipus": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0191",
+        "antigone": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0185",
+    },
+    "homer": {
+        "iliad": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0133",
+        "odyssey": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0135",
+    },
+    "heraclitus": {
+        "fragments": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0248",
     },
 }
 
@@ -520,6 +541,26 @@ def _html_a_text(html: str) -> str:
     text = text.replace("&nbsp;", " ")
     text = text.replace("&quot;", '"')
     text = text.replace("&#39;", "'")
+    # Netejar residus Perseus
+    for noise in ["All Search Options", "view abbreviations", "Hide browse bar",
+                   "Your current position", "Click anywhere", "Collections/Texts",
+                   "Perseus Catalog", "Open Source", "Home", "Research", "Grants",
+                   "About", "Help", '(Agamemnon', "denarius"]:
+        text = text.replace(noise, "")
+    # Eliminar línies curtes de navegació (< 30 chars i sense lletres gregues/llatines)
+    lines = text.split("\n")
+    cleaned = []
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            cleaned.append("")
+            continue
+        # Mantenir línies amb contingut real
+        if len(stripped) > 30 or any(ord(c) > 880 for c in stripped):
+            cleaned.append(line)
+        elif any(c.isalpha() for c in stripped) and len(stripped) > 5:
+            cleaned.append(line)
+    text = "\n".join(cleaned)
     # Netejar espais
     text = re.sub(r"\n{3,}", "\n\n", text)
     # Netejar residus Wikisource
@@ -596,7 +637,59 @@ class CercadorFontsV2:
 
         self.log(f"Cercant: «{titol}» de {autor} ({llengua})")
 
-        # ── Capa 1a: Mapa intern Gutenberg ──
+        # ── Capa 0: Perseus (prioritat màxima per grec/llatí) ──
+        if llengua.lower() in ["grec", "llatí", "greek", "latin"]:
+            perseus_url = _trobar_obra_mapa(autor, titol, PERSEUS_URLS)
+            if perseus_url:
+                self.log(f"  🏛️ Perseus: {perseus_url[:60]}...")
+                resultat.fonts_provades.append(f"perseus:{perseus_url[:40]}")
+                html = DescarregadorHTTP.descarregar(perseus_url)
+                if html and len(html) > 2000:
+                    text = _html_a_text(html)
+                    if text and len(text) > 500:
+                        self.log(f"  ✅ Perseus: {len(text)} caràcters")
+                        resultat.exit = True
+                        resultat.text = text
+                        resultat.font = FontTrobada(
+                            nom_font="perseus",
+                            url=perseus_url,
+                            titol=titol, autor=autor, llengua=llengua,
+                            text=text, qualitat=9, format="txt",
+                            notes="Text original de Perseus Digital Library",
+                        )
+                        resultat.temps_total = time.time() - inici
+                        self._guardar_si_cal(resultat, obra_dir)
+                        return resultat
+                    else:
+                        resultat.errors.append(f"Perseus: HTML rebut però text extret massa curt ({len(text) if text else 0})")
+                else:
+                    resultat.errors.append(f"Perseus: descàrrega fallida o resposta curta")
+
+        # ── Capa 1a: Wikisource mapa intern (prioritat per originals no-anglesos) ──
+        if llengua.lower() not in ["anglès", "english"]:
+            ws_info = _trobar_obra_mapa(autor, titol, WIKISOURCE_PAGES)
+            if ws_info:
+                ws_lang, ws_page = ws_info
+                if ws_lang != "en":
+                    self.log(f"  📜 Wikisource (original): {ws_lang}.wikisource.org/{ws_page}")
+                    resultat.fonts_provades.append(f"wikisource_map:{ws_lang}/{ws_page}")
+                    text = WikisourceAPI.obtenir_text(ws_lang, ws_page)
+                    if text and len(text) > 500:
+                        self.log(f"  ✅ Wikisource original: {len(text)} caràcters")
+                        resultat.exit = True
+                        resultat.text = text
+                        resultat.font = FontTrobada(
+                            nom_font="wikisource",
+                            url=f"https://{ws_lang}.wikisource.org/wiki/{__import__('urllib.parse', fromlist=['quote']).quote(ws_page)}",
+                            titol=titol, autor=autor, llengua=llengua,
+                            text=text, qualitat=9, format="txt",
+                            notes="Text original via mapa intern",
+                        )
+                        resultat.temps_total = __import__('time').time() - inici
+                        self._guardar_si_cal(resultat, obra_dir)
+                        return resultat
+
+        # ── Capa 1b: Mapa intern Gutenberg ──
         guten_id = _trobar_obra_mapa(autor, titol, GUTENBERG_IDS)
         if guten_id:
             self.log(f"  📖 Gutenberg ID conegut: {guten_id}")
