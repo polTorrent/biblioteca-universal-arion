@@ -1,0 +1,131 @@
+# Supervisio de Qualitat - La Sala numero 6 (Anton Txekhov)
+# Data: 2026-02-23
+# Puntuacio: 4.5/10
+# Veredicte: NO VALIDAT - Requereix correccions majors
+
+## RESUM
+
+La traduccio conte prosa catalana de qualitat acceptable en les seccions netes,
+pero el fitxer traduccio.md esta greument contaminat amb artefactes del pipeline
+(24 blocs JSON incrustats) que el fan impublicable. A mes, hi ha problemes
+significatius de consistencia (noms, registre pronominal, puntuacio de dialeg)
+i una omissio important al Capitol V.
+
+---
+
+## PROBLEMES CRITICS (bloquegen publicacio)
+
+### 1. Artefactes JSON del pipeline (24 blocs)
+- 24 blocs JSON amb camps "traduccio", "decisions_clau", "termes_preservats",
+  "confianca", "avisos" incrustats al text
+- Localitzacions: linies 23-41, 57-73, 75-76, 124-138, 215-231, 239-262,
+  296-315, 317-333, 349-366, 368-385, 453-467, 501-515, 517-534, 536-554,
+  568-571, 699-715, 736-753, 761-782, 824-841, 857-874, 882-947, 929-948,
+  956-974, 1006-1024
+- Part del text traduit esta atrapat dins valors JSON, no com a prosa Markdown
+- 10 blocs amb code fences malformats ('`'json)
+- 6 blocs estructuralment trencats amb {} buits
+
+### 2. Absencia total de marques [T] de glossari
+- Zero instancies de [T] a tota la traduccio
+- El build web no generara cap hipervincle de glossari
+- Cal afegir [T] a la primera aparicio significativa de cada terme
+
+---
+
+## PROBLEMES ALTS
+
+### 3. Inconsistencia en noms de personatges
+- Ivan Dmitritx / Dmitritch / Dmitrikhtx / Dmitrritx (doble r) / Dmitrixtx
+- Andrei Iefimitx / Iefiimitx (doble i) / Efimitx / Iefimixtx
+- Mikhail Averianitx / Averianitch / Averianytx / Averianixtx
+- Dariuixka / Daruixka / Daruxhka
+- Hobotov / Khobotov
+- Serguei Sergueitx / Sergueixtx
+- Cal triar UNA transliteracio per personatge i aplicar-la a tot el text
+
+### 4. Barreja de registre pronominal (tu/vos/voste)
+- Els personatges canvien entre tu, vos i voste dins la mateixa conversa
+- Exemples: linia 445 "vostre" (vos), linia 487 "vols" (tu), linia 556 "prediques" (tu)
+- Cal decidir quin registre usa cada personatge i mantenir-lo
+
+### 5. Omissio important al Capitol V
+- Falta el paragraf sobre Puixkin, Heine i el sofriment (original linies 549-559)
+- Passatge filosoficament central on Raguin justifica la seva inaccio
+- El text salta de "Que es guanya si algun botiguer..." directament a
+  "Oprimit per aquestes reflexions..."
+
+---
+
+## PROBLEMES MITJANS
+
+### 6. Puntuacio de dialeg inconsistent
+- Guions llargs (--Bon dia): la convencio catalana correcta
+- Cometes angles (<<Doncs aixo>>): algunes seccions
+- Cometes dobles ("No, no soc filosof"): altres seccions
+- Cometes simples ('He vingut...'): algunes seccions
+- Cal unificar amb guions llargs (convencio literaria catalana)
+
+### 7. Errades puntuals
+- Linia 556: "prediquesp" (errata, hauria de ser "prediques" o "prediqueu")
+- Linia 89: "la cuina de la cuina" (sense sentit, hauria de ser "l'estufa de la cuina")
+- Linia 454: "evidently" deixat en angles dins el text catala
+- Linia 647: "bojauna" (falta espai o error ortografic)
+- Linia 19: "com un cadernera" (genere incorrecte, hauria de ser "com una cadernera")
+- Linia 212: "la tinc en especial estima" referint-se a l'intel·lecte (masc.), hauria de ser "el tinc"
+
+### 8. Inconsistencia al glossari
+- "kopek" (linies 25, 274) vs "copec" (linia 282): el glossari diu "copec"
+- "milles" usat 4 vegades pero el glossari te "versta" com a terme preservat
+- 4 termes del glossari mai apareixen al text: nihilisme, ataraxia, melancolia, intel·ligentsia
+- Cal decidir: o usar "verstes" al text o treure "versta" del glossari
+
+---
+
+## PROBLEMES MENORS
+
+### 9. metadata.yml incomplet
+- Camp "descripcio" buit (cadena buida '')
+- "llengua_original: angles" es discutible (l'original es rus, traduit de l'angles)
+
+### 10. Calcs de l'angles
+- "alla on li ve de gust" per "on whatever comes first" (canvia violencia indiscriminada per deliberada)
+- "la classe de gent de cor simple" (lleugerament forcat)
+
+---
+
+## ACCIONS REQUERIDES (per ordre de prioritat)
+
+1. ELIMINAR tots els 24 blocs JSON del fitxer traduccio.md
+   - Extreure el text traduit atrapat dins els valors "traduccio" dels JSON
+   - Eliminar tota la metadata del pipeline (decisions_clau, confianca, etc.)
+2. UNIFICAR noms de personatges amb una sola transliteracio
+3. AFEGIR el paragraf omis al Capitol V (Puixkin/Heine)
+4. UNIFICAR registre pronominal (tu/vos/voste) per cada relacio entre personatges
+5. UNIFICAR puntuacio de dialeg amb guions llargs
+6. CORREGIR errades puntuals (prediquesp, cuina de la cuina, evidently, etc.)
+7. AFEGIR marques [T] als termes del glossari
+8. UNIFICAR kopek/copec i milles/verstes
+9. COMPLETAR metadata.yml (descripcio)
+
+---
+
+## PUNTUACIONS PER AREA
+
+| Area                        | Puntuacio |
+|-----------------------------|-----------|
+| Qualitat del catala (prosa) | 6.5/10    |
+| Fidelitat al original       | 7.0/10    |
+| Consistencia del glossari   | 3.0/10    |
+| Format i estructura         | 3.0/10    |
+| metadata.yml                | 6.0/10    |
+| **GLOBAL**                  | **4.5/10**|
+
+## NOTES POSITIVES
+
+- Tots 19 capitols (I-XIX) presents i complets
+- La prosa catalana, alla on esta neta, es de bona qualitat literaria
+- Excellents passatges psicologics (paranoia del Cap. III, debat estoic del Cap. X)
+- Bones tries lexiques: "desgavellat", "com un descosit", "al remat"
+- Notes critiques (notes.md) completes amb 54 notes erudites
+- El capitol final (XIX) esta completament traduit
