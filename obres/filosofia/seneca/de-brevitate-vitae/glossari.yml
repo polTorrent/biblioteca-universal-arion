@@ -1,0 +1,158 @@
+termes:
+  - id: "otium"
+    llati: "otium"
+    traduccio: "lleure, repòs"
+    definicio: >
+      Concepte central en l'obra de Sèneca. L'otium no és simple inactivitat o
+      oci, sinó el temps lliure dedicat a la contemplació filosòfica i al cultiu
+      de l'esperit. Per als estoics, l'otium és l'estat en què l'home pot
+      dedicar-se veritablement a viure, en contraposició al negotium (els afers
+      mundans). Sèneca distingeix entre l'otium autèntic del savi i la desídia
+      dels ociosos, que no és veritable lleure sinó una ocupació inerta.
+    usos: [3, 4, 5, 6, 11, 12, 14, 17, 18, 19, 20]
+
+  - id: "negotium"
+    llati: "negotium"
+    traduccio: "negoci, afer, ocupació"
+    definicio: >
+      Literalment nec-otium (no-lleure), és l'antítesi de l'otium. Designa
+      tota activitat mundana —política, comercial, judicial, social— que
+      consumeix el temps de vida sense aportar veritable profit a l'ànima.
+      Sèneca no condemna el negotium en si, sinó la seva conversió en fi
+      últim de l'existència, quan hauria de ser instrumental.
+    usos: [2, 7, 12, 13, 19]
+
+  - id: "occupati"
+    llati: "occupati"
+    traduccio: "els ocupats"
+    definicio: >
+      Terme tècnic en Sèneca per designar aquells que viuen permanentment
+      absorts en activitats externes —ambició, riquesa, plaers, litigis—
+      sense dedicar mai temps a la pròpia vida interior. L'occupatus és
+      la figura antitètica del sapiens: viu molt de temps però no viu
+      realment, perquè el seu temps pertany sempre a altri.
+    usos: [2, 3, 7, 9, 10, 12, 19, 20]
+
+  - id: "sapiens"
+    llati: "sapiens"
+    traduccio: "el savi"
+    definicio: >
+      Ideal estoic de l'home que ha assolit la saviesa. El sapiens viu
+      plenament perquè sap administrar el seu temps, no tem la mort,
+      no desitja el futur ni lamenta el passat. Segons Sèneca, el savi
+      és l'únic que viu veritablement, perquè tot el seu temps li pertany
+      i sap emprar-lo en la contemplació i la virtut. Conversa amb els
+      grans pensadors de tots els segles, transcendint els límits de la
+      seva pròpia vida mortal.
+    usos: [5, 7, 11, 14, 15]
+
+  - id: "tempus"
+    llati: "tempus"
+    traduccio: "temps"
+    definicio: >
+      Per a Sèneca, el temps és el bé més preuat i alhora el més
+      malgastat. Distingeix tres dimensions temporals: el passat (certum,
+      segur), el present (brevissimum, brevíssim) i el futur (dubium,
+      incert). Només el savi sap habitar les tres dimensions, mentre que
+      els ocupats perden el present per negligència, el passat per oblit
+      i el futur per ansietat.
+    usos: [1, 3, 7, 8, 9, 10, 15, 16]
+
+  - id: "fortuna"
+    llati: "fortuna"
+    traduccio: "fortuna, atzar"
+    definicio: >
+      Força capriciosa i imprevisible que governa els esdeveniments
+      externs. En la filosofia estoica, la fortuna controla tot allò que
+      no depèn de nosaltres —riqueses, fama, salut, poder—, però no pot
+      afectar la virtut ni el temps passat, que ja és nostre per sempre.
+      Sèneca adverteix que fins i tot els béns més grans de la fortuna
+      són font d'ansietat.
+    usos: [2, 4, 5, 10, 15, 17]
+
+  - id: "virtus"
+    llati: "virtus"
+    traduccio: "virtut, valor"
+    definicio: >
+      Qualitat moral fonamental en l'estoïcisme. No es limita al coratge
+      físic (sentit originari del terme llatí, derivat de vir, home), sinó
+      que abraça tota excel·lència moral: saviesa, justícia, temperança i
+      fortalesa. Per a Sèneca, la virtut és l'únic bé veritable i l'exercici
+      que dóna sentit a la vida.
+    usos: [5, 18]
+
+  - id: "ars-longa"
+    llati: "ars longa, vita brevis"
+    traduccio: "l'art és llarg, la vida breu"
+    definicio: >
+      Aforisme atribuït a Hipòcrates (Ἀφορισμοί, I.1) que Sèneca cita
+      al començament de l'obra. Originàriament referit a la medicina, Sèneca
+      el reinterpreta filosòficament: no és que la vida sigui objectivament
+      breu, sinó que la malgastem fins a fer-la insuficient per dominar
+      qualsevol art o saber.
+    usos: [1]
+
+  - id: "voluptas"
+    llati: "voluptas"
+    traduccio: "plaer, voluptat"
+    definicio: >
+      Plaer sensual o material que, segons Sèneca, constitueix una de les
+      principals formes de malbaratament del temps. No cal confondre'l amb
+      el gaudi filosòfic (gaudium), que és una alegria serena compatible
+      amb la virtut. La voluptas, en canvi, és fugaç, insaciable i genera
+      dependència.
+    usos: [2, 7, 12, 16, 19]
+
+  - id: "paulinus"
+    llati: "Paulinus"
+    traduccio: "Paulí"
+    definicio: >
+      Pompeu Paulí, sogre de Sèneca i praefectus annonae (prefecte de
+      l'abastiment de gra) de Roma. Destinatari del tractat, Sèneca
+      l'exhorta a retirar-se dels afers públics per dedicar-se a la
+      filosofia. El càrrec de Paulí era de gran responsabilitat:
+      garantir el subministrament de blat a la població de Roma.
+    usos: [1, 18]
+
+  - id: "cotidie-mori"
+    llati: "cotidie morimur"
+    traduccio: "morim cada dia"
+    definicio: >
+      Concepte estoic fonamental: cada dia que passa és un dia perdut
+      per sempre, una petita mort. Sèneca insisteix que no esperem a la
+      mort final per adonar-nos que el temps se'ns ha escapat. El memento
+      mori estoic no és una invitació a la tristesa, sinó a la urgència
+      de viure plenament ara.
+    usos: [3, 7, 8]
+
+  - id: "divus-augustus"
+    llati: "Divus Augustus"
+    traduccio: "el diví August"
+    definicio: >
+      Gaius Octavius (63 aC – 14 dC), primer emperador romà. Sèneca el
+      presenta com a exemple paradigmàtic de com fins i tot el poder
+      absolut no atorga lleure: August somiava constantment amb retirar-se,
+      però mai no ho va aconseguir. Citat en la seva correspondència amb
+      el Senat, expressa el desig d'un repòs que sempre se li va escapar.
+    usos: [4]
+
+  - id: "cicero"
+    llati: "M. Tullius Cicero"
+    traduccio: "Ciceró"
+    definicio: >
+      Marc Tul·li Ciceró (106-43 aC), orador, filòsof i polític romà.
+      Sèneca el presenta com un altre exemple d'home públic incapaç de
+      trobar lleure autèntic. Ciceró es deia "semilliure" (semiliber) al
+      seu retir de Tusculum, terme que Sèneca rebutja: el savi no pot
+      ser mai "semilliure", perquè la llibertat és absoluta o no és res.
+    usos: [5]
+
+  - id: "fabianus"
+    llati: "Fabianus"
+    traduccio: "Fabià"
+    definicio: >
+      Papiri Fabià (c. 35 aC – c. 30 dC), filòsof estoic i retòric romà,
+      mestre de Sèneca pare. Sèneca el distingeix dels "filòsofs de càtedra"
+      i el presenta com a representant de la filosofia autèntica i antiga.
+      Fabià defensava combatre les passions amb ímpetu, no amb subtilesa.
+    usos: [10, 13]

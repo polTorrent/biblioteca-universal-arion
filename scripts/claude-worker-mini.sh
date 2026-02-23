@@ -25,7 +25,7 @@ MAX_TASKS_PER_DAY=100         # Límit diari de tasques
 COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60             # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
-TASK_TIMEOUT=900             # 15 min timeout per tasca
+TASK_TIMEOUT=1800            # 30 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 
@@ -102,8 +102,8 @@ run_task() {
     local exit_code=1
 
     # timeout mata el procés si supera TASK_TIMEOUT
-      log "🔧 DEBUG: Llançant claude -p (PID $$, timeout=$TASK_TIMEOUT)"
-      log "🔧 DEBUG: Instrucció: ${instruction:0:80}..."
+      echo "[$(date '+%Y-%m-%d %H:%M:%S')] 🔧 DEBUG: Llançant claude (timeout=$TASK_TIMEOUT)" >> "$LOG"
+      echo "[$(date '+%Y-%m-%d %H:%M:%S')] 🔧 DEBUG: Instrucció: ${instruction:0:80}..." >> "$LOG"
       result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" claude -p "$instruction" \
         --max-turns 25 \
         --allowedTools "Edit" "Write" \
