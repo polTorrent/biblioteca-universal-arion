@@ -147,6 +147,10 @@ class BaseAgent(ABC):
     # Nom de l'agent per al logging (sobreescriure a subclasses)
     agent_name: ClassVar[str] = "BaseAgent"
 
+    use_subscription: bool
+    client: "anthropic.Anthropic | None"
+    _logger: AgentLogger | None
+
     def __init__(
         self,
         config: AgentConfig | None = None,
@@ -164,7 +168,6 @@ class BaseAgent(ABC):
         is_claude_code = os.getenv("CLAUDECODE") == "1"
 
         # Si estem en Claude Code i no s'ha especificat use_api, usar subscripció
-        self.client: anthropic.Anthropic | None
         if is_claude_code and not self.config.use_api:
             # Mode subscripció: Claude Code utilitza la subscripció Pro/Max
             self.use_subscription = True
@@ -232,7 +235,7 @@ class BaseAgent(ABC):
             Dict amb la resposta parseada del CLI.
 
         Raises:
-            subprocess.CalledProcessError: Si el CLI falla.
+            RuntimeError: Si el CLI falla (codi de sortida no-zero).
             json.JSONDecodeError: Si la resposta no és JSON vàlid.
         """
         # Construir comanda
@@ -381,8 +384,8 @@ class BaseAgent(ABC):
             "content filtering",
             "output blocked",
             "content_filter",
-            "safety",
-            "policy",
+            "content_policy",
+            "safety_block",
         ]
         return any(indicator in error_str for indicator in filter_indicators)
 
