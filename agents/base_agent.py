@@ -255,12 +255,15 @@ class BaseAgent(ABC):
 
         # Executar comanda passant el prompt via stdin per evitar
         # límits de longitud d'arguments del SO (ARG_MAX)
+        # Netejar CLAUDECODE per evitar error "nested sessions"
+        clean_env = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
         result = subprocess.run(
             cmd,
             input=prompt,
             capture_output=True,
             text=True,
             timeout=600,  # 10 minuts màxim per traduccions llargues
+            env=clean_env,
         )
 
         # Verificar èxit
