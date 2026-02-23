@@ -224,6 +224,65 @@ for categoria in obres_dir.iterdir():
 }
 
 # ── 3. ⭐ SUPERVISIÓ: Web sincronitzada ──────────────────────────────────────
+# ── 2b. ⭐ AUTO-FIX: Detecta .needs_fix i crea tasques correctores ─────────
+check_needs_fix() {
+    log "🔧 Comprovant obres amb .needs_fix..."
+    
+    find "$PROJECT/obres" -name ".needs_fix" 2>/dev/null | while read -r needs_fix_file; do
+        obra_dir=$(dirname "$needs_fix_file")
+        obra_name=$(basename "$obra_dir")
+        relpath=$(python3 -c "import os; print(os.path.relpath('$obra_dir', '$PROJECT'))")
+        
+        # Ja hi ha un .fixing? (tasca en curs)
+        [ -f "$obra_dir/.fixing" ] && continue
+        
+        # Comprovar que no hi ha ja una tasca pending/running per aquesta obra
+        if ls "$TASKS_DIR/pending/"*"$obra_name"* "$TASKS_DIR/running/"*"$obra_name"* 2>/dev/null | grep -q .; then
+            continue
+        fi
+        
+        # Llegir puntuació del .needs_fix
+        score=$(grep -oP '\d+\.?\d*/10' "$needs_fix_file" | head -1 | cut -d/ -f1)
+        score_int=${score%%.*}  # Part entera
+        
+        # Llegir problemes concrets
+        problems=$(grep -A1 "\[.*\]" "$needs_fix_file" | head -20 | tr '\n' ' ' | cut -c1-500)
+        
+        [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
+        
+        if [ "${score_int:-0}" -eq 0 ]; then
+            # PUNTUACIÓ 0 → Traducció corrupta, cal retraduir de zero
+            log "   🔴 $obra_name: puntuació 0/10 — RETRADUCCIÓ"
+            add_task "translation" "RETRADUEIX COMPLETAMENT l'\'obra a $relpath. La traducció anterior va FALLAR (puntuació 0/10). Passos: 1) Llegeix original.md. 2) Tradueix TOTS els capítols al català amb qualitat literària. 3) Afegeix notes [^N] i termes del glossari [T]. 4) Sobreescriu traduccio.md. 5) Crea/actualitza glossari.yml. 6) Actualitza metadata.yml (estat: traduït). 7) ELIMINA el fitxer .needs_fix. 8) Commit+push."
+        else
+            # PUNTUACIÓ 1-6 → Cal corregir problemes específics
+            log "   🟡 $obra_name: puntuació ${score}/10 — CORRECCIONS"
+            add_task "fix" "CORREGEIX l'\'obra a $relpath (puntuació ${score}/10). Llegeix el fitxer .needs_fix per veure els problemes concrets. Corregeix TOTS els problemes llistats a .needs_fix. Quan acabis: 1) Elimina .needs_fix. 2) NO crees .validated (la supervisió ho farà). 3) Commit+push."
+        fi
+        
+        # Marcar com a fixing
+        mv "$needs_fix_file" "$obra_dir/.fixing"
+        log "   📋 Creat tasca per $obra_name, marcat .fixing"
+    done
+    
+    # Comprovar .fixing amb tasca completada → tornar a supervisar
+    find "$PROJECT/obres" -name ".fixing" 2>/dev/null | while read -r fixing_file; do
+        obra_dir=$(dirname "$fixing_file")
+        obra_name=$(basename "$obra_dir")
+        
+        # Si ja no hi ha tasca pending/running → el fix s'ha completat
+        if ! ls "$TASKS_DIR/pending/"*"$obra_name"* "$TASKS_DIR/running/"*"$obra_name"* 2>/dev/null | grep -q .; then
+            # Comprovar que s'ha completat (no fallit)
+            if ls "$TASKS_DIR/done/"*"$obra_name"* 2>/dev/null | grep -q .; then
+                log "   ✅ $obra_name: fix completat, eliminant .fixing per re-supervisar"
+                rm -f "$fixing_file"
+                # El proper heartbeat farà check_supervision i re-avaluarà
+            fi
+        fi
+    done
+}
+
+
 check_web_sync() {
     log "🌐 Comprovant web..."
     
@@ -414,6 +473,7 @@ else
     check_failed             # 1. Recuperar fallides
     bash "$PROJECT/scripts/fix-structure.sh"  # 1.5 Auto-correcció estructura
     check_supervision        # 2. ⭐ SUPERVISIÓ (NOU!)
+    check_needs_fix          # 2b. ⭐ AUTO-FIX (.needs_fix → tasca)
     check_translations       # 3. Noves traduccions
     check_web_sync           # 4. Web sincronitzada
     check_code_reviews       # 5. Code reviews
