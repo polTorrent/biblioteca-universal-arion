@@ -90,7 +90,9 @@ def extract_json_from_text(text: str) -> dict[str, Any] | None:
             if brace_count == 0 and start_idx is not None:
                 candidate = text[start_idx:i+1]
                 try:
-                    return json.loads(candidate)
+                    parsed = json.loads(candidate)
+                    if isinstance(parsed, dict):
+                        return parsed
                 except json.JSONDecodeError:
                     start_idx = None
                     continue
@@ -99,7 +101,9 @@ def extract_json_from_text(text: str) -> dict[str, Any] | None:
     code_block_match = re.search(r'```(?:json)?\s*(\{[\s\S]*?\})\s*```', text)
     if code_block_match:
         try:
-            return json.loads(code_block_match.group(1))
+            parsed = json.loads(code_block_match.group(1))
+            if isinstance(parsed, dict):
+                return parsed
         except json.JSONDecodeError:
             pass
 
