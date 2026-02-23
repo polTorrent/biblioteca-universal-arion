@@ -1,8 +1,8 @@
 """Agent Anotador Crític - afegeix notes erudites i context."""
 
-from typing import Literal, TYPE_CHECKING
+from typing import ClassVar, Literal, TYPE_CHECKING
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
 from core import MemoriaContextual
@@ -234,6 +234,7 @@ Retorna JSON:
         # NOTES DE L'INVESTIGADOR (de la MemoriaContextual)
         # ═══════════════════════════════════════════════════════════════════
         notes_investigador_str = ""
+        notes_pendents: list[str] = []
         if memoria:
             notes_pendents = memoria.obtenir_notes_pendents()
             if notes_pendents:
