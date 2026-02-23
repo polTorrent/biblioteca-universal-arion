@@ -303,6 +303,7 @@ TEXT A ANOTAR:
         """
         # Notes de l'investigador filtrades per tipus
         notes_str = ""
+        notes_pendents: list[str] = []
         if memoria:
             notes_pendents = memoria.obtenir_notes_pendents()
             if notes_pendents:
@@ -333,4 +334,11 @@ TEXT:
 
 Ignora qualsevol altre tipus de nota que podries afegir."""
 
-        return self.process(prompt)
+        response = self.process(prompt)
+
+        # Buidar notes pendents processades (consistent amb annotate)
+        if memoria and notes_pendents:
+            memoria.buidar_notes_pendents()
+            self.log_info(f"Processades {len(notes_pendents)} notes de l'investigador (specific)")
+
+        return response
