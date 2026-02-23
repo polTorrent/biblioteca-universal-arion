@@ -117,6 +117,13 @@ run_task() {
         log "⏰ TIMEOUT després de ${TASK_TIMEOUT}s"
     fi
 
+    # Detectar rate limit
+    if echo "$result" | grep -qi "rate.limit\|too many requests\|usage.limit\|please wait\|capacity\|try again in\|exceeded.*limit\|limit.*exceeded"; then
+        log "⚠️ RATE LIMIT detectat!"
+        echo "RATE_LIMIT_HIT"
+        return 99
+    fi
+    
     echo "$result"
     return $exit_code
 }
@@ -203,6 +210,26 @@ while true; do
     EXIT=$?
     END_TIME=$(date +%s)
     DURATION=$(( END_TIME - START_TIME ))
+
+    # ── Rate limit → pausar, tornar tasca a pending ──────────────────
+    if [ $EXIT -eq 99 ] || echo "$RESULT" | grep -q "RATE_LIMIT_HIT"; then
+        log "🛑 RATE LIMIT — Pausant 30 minuts"
+        mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/" 2>/dev/null
+        sleep 1800
+        log "▶️ Reprenent després de rate limit"
+        continue
+    fi
+
+    # ── Max turns → completar (Claude va fer feina) ──────────────────
+    if echo "$RESULT" | grep -q "Reached max turns"; then
+        log "🔄 Max turns per $TASK_ID (${DURATION}s) — completant"
+        mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
+        auto_commit "$TASK_ID"
+        CONSECUTIVE_FAILS=0
+        TASKS_TODAY=$((TASKS_TODAY + 1))
+        sleep $COOLDOWN_OK
+        continue
+    fi
 
     if [ $EXIT -eq 0 ] && [ -n "$RESULT" ]; then
         # ── ÈXIT ──────────────────────────────────────────────────────
