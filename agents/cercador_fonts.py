@@ -84,7 +84,7 @@ class SearchRequest(BaseModel):
     autor: str | None = None
     titol: str | None = None
     llengua: LlenguaCerca = "qualsevol"
-    preferencies_font: list[str] = Field(default_factory=lambda: ["perseus", "latin_library"])
+    preferencies_font: list[TipusFont] = Field(default_factory=lambda: ["perseus", "latin_library"])
 
 
 class PescadorTextosAgent(BaseAgent):
