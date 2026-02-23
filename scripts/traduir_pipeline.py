@@ -34,6 +34,11 @@ try:
 except ImportError:
     crear_metadata_yml = None
 
+try:
+    from scripts.cercador_fonts_v2 import CercadorFontsV2
+except ImportError:
+    CercadorFontsV2 = None
+
 
 def carregar_metadata(obra_dir: Path) -> dict:
     """Carrega metadata.yml i extreu info necessària."""
@@ -88,11 +93,21 @@ def main():
     llengua = meta["llengua"]
     genere = meta["genere"]
 
-    # Verificar original.md
+    # Verificar original.md — si no existeix, cercar automàticament
     original_path = obra_dir / "original.md"
-    if not original_path.exists():
-        print(f"❌ No existeix original.md a {obra_dir}")
-        sys.exit(1)
+    if not original_path.exists() or original_path.stat().st_size < 500:
+        print(f"📥 original.md no trobat o buit — cercant font automàticament...")
+        if CercadorFontsV2:
+            cercador = CercadorFontsV2(verbose=True)
+            resultat = cercador.obtenir_text(autor, titol, llengua, obra_dir)
+            if resultat.exit and resultat.text:
+                print(f"✅ Font trobada: {resultat.font.nom_font} ({len(resultat.text)} chars)")
+            else:
+                print(f"❌ No s'ha trobat cap font per {titol} de {autor}")
+                sys.exit(1)
+        else:
+            print(f"❌ No existeix original.md i cercador V2 no disponible")
+            sys.exit(1)
 
     # Llegir text
     with open(original_path, "r", encoding="utf-8") as f:
