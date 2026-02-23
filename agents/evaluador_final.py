@@ -14,12 +14,12 @@ Responsabilitats:
 
 from __future__ import annotations
 
-import re
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
-from typing import TYPE_CHECKING, Literal, Any
+from typing import TYPE_CHECKING, Any, ClassVar
 
+import yaml
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
@@ -29,6 +29,7 @@ try:
     from utils.corrector_linguistic import CorrectorLinguistic
     LANGUAGETOOL_DISPONIBLE = True
 except ImportError:
+    CorrectorLinguistic = None  # type: ignore[assignment,misc]
     LANGUAGETOOL_DISPONIBLE = False
 
 # Detector de calcs
@@ -247,7 +248,7 @@ class EvaluadorFinalAgent(BaseAgent):
     8. Actualizar metadata amb puntuacions
     """
 
-    agent_name: str = "EvaluadorFinal"
+    agent_name: ClassVar[str] = "EvaluadorFinal"
 
     def __init__(
         self,
@@ -256,7 +257,7 @@ class EvaluadorFinalAgent(BaseAgent):
     ) -> None:
         """Inicialitza l'agent evaluador final."""
         super().__init__(config, logger)
-        self._corrector: CorrectorLinguistic | None = None
+        self._corrector: Any = None
 
     @property
     def system_prompt(self) -> str:
@@ -346,7 +347,7 @@ APROVAT si:
 - Cap error de severitat CRÍTICA I
 - Menys de 5 errors de severitat ALTA"""
 
-    def _get_corrector(self) -> "CorrectorLinguistic | None":
+    def _get_corrector(self) -> Any:
         """Obté o crea el corrector lingüístic."""
         if self._corrector is None and LANGUAGETOOL_DISPONIBLE:
             try:
