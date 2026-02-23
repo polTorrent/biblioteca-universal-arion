@@ -47,6 +47,8 @@ cmd_add() {
         translate)   priority=3; max_duration=90 ;;
         refactor)    priority=4; max_duration=60 ;;
         maintain)    priority=5; max_duration=20 ;;
+        supervision) priority=2; max_duration=30 ;;
+        design)      priority=4; max_duration=15 ;;
     esac
 
     local task_file="$TASKS_DIR/pending/${task_id}.json"
