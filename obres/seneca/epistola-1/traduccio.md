@@ -1,6 +1,6 @@
 # Carta 1: Sobre el valor del temps
 
-Fes-ho així, estimat Lucili: [reivindica't a tu mateix]{.term data-term="vindica-te"}[^1], i el temps que fins ara t'era arrabassat, o sostret, o se t'escapava, recull-lo i conserva'l. Convenç-te que és tal com t'escric: alguns moments ens són arrabassats, d'altres ens són sostrrets, d'altres se'ns escolen. Tanmateix, la pèrdua més vergonyosa és la que es produeix per negligència.
+Fes-ho així, estimat Lucili: [reivindica't a tu mateix]{.term data-term="vindica-te"}[^1], i el temps que fins ara t'era arrabassat, o sostret, o se t'escapava, recull-lo i conserva'l. Convenç-te que és tal com t'escric: alguns moments ens són arrabassats, d'altres ens són sostrets, d'altres se'ns escolen. Tanmateix, la pèrdua més vergonyosa és la que es produeix per negligència.
 
 ---
 
