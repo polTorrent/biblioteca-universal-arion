@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="De Brevitate Vitae - Sèneca">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://editorial-classica.cat/seneca-de-brevitate-vitae.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>De Brevitate Vitae - Sèneca | Editorial Clàssica</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<!-- Estils per índex, navegació i favorits -->
+<link rel="stylesheet" href="css/obra.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "De Brevitate Vitae",
+    "author": {
+        "@type": "Person",
+        "name": "Sèneca"
+    },
+    "translator": {
+        "@type": "Organization",
+        "name": "Biblioteca Arion (IA + comunitat)"
+    },
+    "inLanguage": "ca",
+    "workTranslation": {
+        "@type": "Book",
+        "name": "None",
+        "author": {
+            "@type": "Person",
+            "name": "None"
+        },
+        "inLanguage": "llatí"
+    },
+    "datePublished": "2026"
+}
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
+<article class="page-content">
+    <div class="container">
+        <!-- Capçalera de l'obra amb portada -->
+        <header class="work-header">
+            <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                
+
+                <div class="work-info" style="flex: 1; min-width: 300px;">
+                    <h1 class="work-title">De Brevitate Vitae</h1>
+                    
+
+                    <div class="work-meta-grid">
+                        <div class="work-meta-item">
+                            <strong>Autor</strong>
+                            
+                            <a href="autor-sèneca.html" class="author-link">Sèneca</a>
+                            
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Traducció</strong>
+                            Biblioteca Arion (IA + comunitat)
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Llengua original</strong>
+                            Llatí
+                        </div>
+
+                        
+
+                    </div>
+
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-02-23
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls de vista -->
+        <div class="text-container" data-mode="bilingue">
+            <div class="view-controls">
+                <!-- Navegació capítols esquerra -->
+                <button class="chapter-nav-top-btn" id="prev-chapter-top" title="Capítol anterior" disabled>←</button>
+
+                <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
+                    <span class="toc-icon">☰</span> Índex
+                </button>
+                <span class="view-separator">|</span>
+                <button class="view-btn" data-mode="original">Original</button>
+                <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
+                <button class="view-btn" data-mode="traduccio">Traducció</button>
+
+                <!-- Navegació capítols dreta -->
+                <button class="chapter-nav-top-btn" id="next-chapter-top" title="Capítol següent" disabled>→</button>
+            </div>
+
+            <!-- Índex de capítols (amagat per defecte) -->
+            <nav class="chapter-toc" id="chapter-toc" aria-label="Índex de capítols">
+                <div class="toc-header">
+                    <h3>Índex de capítols</h3>
+                    <button class="toc-close" id="toc-close" aria-label="Tancar índex">&times;</button>
+                </div>
+                <ol class="toc-list" id="toc-list">
+                    <!-- Omplert dinàmicament per JS -->
+                </ol>
+            </nav>
+
+            <!-- Grid bilingüe -->
+            <div class="bilingue-grid">
+                <!-- Columna original -->
+                <section class="original-column">
+                    <div class="column-header">Text original (llatí)</div>
+                    
+                <div class="section" id="orig-1" data-parallel="trad-1">
+                    <p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Maior pars mortalium, Pauline, de naturae malignitate conqueritur, quod in exiguum aevi gignamur, quod haec tam velociter, tam rapide dati nobis temporis spatia decurrant, adeo ut exceptis admodum paucis ceteros in ipso vitae apparatu vita destituat. Nec huic publico, ut opinantur, malo turba tantum et imprudens volgus ingemuit; clarorum quoque virorum hic affectus querellas evocavit. Inde illa maximi medicorum exclamatio est: &lsquo;vitam brevem esse, longam artem&rsquo;; <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> inde Aristotelis cum rerum natura exigentis minime conveniens sapienti viro lis: &lsquo;aetatis illam animalibus tantum indulsisse, ut quina aut dena saecula educerent, homini in tam multa ac magna genito tanto citeriorem terminum stare.&rsquo; <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Non exiguum temporis habemus, sed multum perdimus. Satis longa vita et in maximarum rerum consummationem large data est, si tota bene collocaretur; sed ubi per luxum ac neglegentiam diffluit, ubi nulli bonae rei impenditur, ultima demum necessitate cogente quam ire non intelleximus transisse sentimus. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Ita est: non accipimus brevem vitam, sed facimus, nec inopes eius sed prodigi sumus. Sicut amplae et regiae opes, ubi ad malum dominum pervenerunt, momento dissipantur, at quamvis modicae, si bono custodi traditae sunt, usu crescunt, ita aetas nostra bene disponenti multum patet.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Quid de rerum natura querimur? Illa se benigne gessit; vita, si uti scias, longa est. At alium insatiabilis tenet avaritia, alium in supervacuis laboribus operosa sedulitas; alius vino madet, alius inertia torpet; alium defatigat ex alienis iudiciis suspensa semper ambitio, alium mercandi praeceps cupiditas circa omnis terras, omnia maria spe lucri ducit; quosdam torquet cupido militiae numquam non aut alienis periculis intentos aut suis anxios; sunt quos ingratus superiorum cultus voluntaria servitute consumat; <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> multos aut affectatio alienae fortunae aut suae querella detinuit; plerosque nihil certum sequentis vaga et inconstans et sibi displicens levitas per nova consilia iactavit; quibusdam nihil, quo cursum derigant, placet, sed marcentis oscitantisque fata deprendunt, adeo ut quod apud maximum poetarum more oraculi dictum est, verum esse non dubitem: &ldquo;Exigua pars est vitae, qua vivimus.&rdquo; Ceterum quidem omne spatium non vita sed tempus est. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Urgent et circumstant vitia undique nec resurgere aut in dispectum veri attollere oculos sinunt, sed immersos et in cupiditatem infixos premunt. Numquam illis recurrere ad se licet; si quando aliqua fortuito quies contigit, velut profundum mare, in quo post ventum quoque volutatio est, fluctuantur nec umquam illis a cupiditatibus suis otium stat. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> De istis me putas dicere, quorum in confesso mala sunt? Aspice illos, ad quorum felicitatem concurritur; bonis suis offocantur. Quam multis divitiae graves sunt! Quam multorum eloquentia et cotidiana ostentandi ingenii sollicitatio sanguinem educit! Quam multi continuis voluptatibus pallent! Quam multis nihil liberi relinquit circumfusus clientium populus! Omnis denique istos ab infimis usque ad summos pererra: hic advocat, hic adest, ille periclitatur, ille defendit, ille iudicat, nemo se sibi vindicat, alius in alium consumitur. Interroga de istis, quorum nomina ediscuntur, his illos dinosci videbis notis: ille illius cultor est, hic illius; suus nemo est. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Deinde dementissima quorundam indignatio est: queruntur de superiorum fastidio, quod ipsis adire volentibus non vacaverint! Audet quisquam de alterius superbia queri, qui sibi ipse numquam vacat? Ille tamen te, quisquis es, insolenti quidem vultu sed aliquando respexit, ille aures suas ad tua verba demisit, ille te ad latus suum recepit; tu non inspicere te umquam, non audire dignatus es. Non est itaque, quod ista officia cuiquam imputes, quoniam quidem, cum illa faceres, non esse cum alio volebas, sed tecum esse non poteras.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Omnia licet, quae umquam ingenia fulserunt, in hoc unum consentiant, numquam satis hanc humanarum mentium caliginem mirabuntur. Praedia sua occupari a nullo patiuntur et, si exigua contentio est de modo finium, ad lapides et arma discurrunt; in vitam suam incedere alios sinunt, immo vero ipsi etiam possessores eius futuros inducunt. Nemo invenitur, qui pecuniam suam dividere velit; vitam unusquisque quam multis distribuit! Adstricti sunt in continendo patrimonio, simul ad iacturam temporis ventum est, profusissimi in eo, cuius unius honesta avaritia est. Libet itaque ex seniorum turba comprendere aliquem: <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> &ldquo;Pervenisse te ad ultimum aetatis humanae videmus, centesimus tibi vel supra premitur annus; agedum, ad computationem aetatem tuam revoca. Duc, quantum ex isto tempore creditor, quantum amica, quantum rex, quantum cliens abstuleris, quantum lis uxoria, quantum servorum coercitio, quantum officiosa per urbem discursatio. Adice morbos, quos manu fecimus, adice et quod sine usu iacuit; videbis te pauciores annos habere quam numeras. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Repete memoria tecum, quando certus consilii fueris, quotus quisque dies ut destinaveras processerit, quando tibi usus tui fuerit, quando in statu suo vultus, quando animus intrepidus, quid tibi in tam longo aevo facti operis sit, quam multi vitam tuam diripuerint te non sentiente quid perderes, quantum vanus dolor, stulta laetitia, avida cupiditas, blanda conversatio abstulerit, quam exiguum tibi de tuo relictum sit; intelleges te immaturum mori.&rdquo; Quid ergo est in causa? <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Tamquam semper victuri vivitis, numquam vobis fragilitas vestra succurrit, non observatis, quantum iam temporis transierit; velut ex pleno et abundanti perditis, eum interim fortasse ille ipse qui alicui vel homini vel rei donatur dies ultimus sit. Omnia concupiscitis. Audies plerosque dicentes: &ldquo;A quinquagesimo anno in otium secedam, sexagesimus me annus ab officiis dimittet.&rdquo; Et quem tandem longioris vitae praedem accipis? Quis ista sicut disponis ire patietur? Non pudet te reliquias vitae tibi reservare et id solum tempus bonae menti destinare, quod in nullam rem conferri possit? Quam serum est tune vivere incipere, eum desinendum est! Quae tam stulta mortalitatis oblivio in quinquagesimum et sexagesimum annum differre sana consilia et inde velle vitam inchoare, quo pauci perduxerunt!</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Potentissimis et in altum sublatis hominibus excidere voces videbis, quibus otium optent, laudent, omnibus bonis suis praeferant. Cupiunt interim ex illo fastigio suo, si tuto liceat, descendere; nam ut nihil extra lacessit aut quatiat, in se ipsa fortuna ruit. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Divus Augustus, cui dii plura quam ulli praestiterunt, non desit quietem sibi precari et vacationem a re publica petere; omnis eius sermo ad hoc semper revolutus est, ut speraret otium. Hoc labores suos, etiam si falso, dulci tamen oblectabat solacio, aliquando se victurum sibi. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> In quadam ad senatum missa epistula, cum requiem suam non vacuam fore dignitatis nec a priore gloria discrepantem pollicitus esset, haec verba inveni: &ldquo;Sed ista fieri speciosius quam promitti possunt. Me tamen cupido temporis optatissimi mihi provexit, ut quoniam rerum laetitia moratur adhuc, praeciperem aliquid voluptatis ex verborum dulcedine.&rdquo; <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Tanta visa est res otium, ut illam, quia usu non poterat, cogitatione praesumeret. Qui omnia videbat ex se uno pendentia, qui hominibus gentibusque fortunam dabat, illum diem laetissimus cogitabat, quo magnitudinem suam exueret. Expertus erat, quantum illa bona per omnis terras fulgentia sudoris exprimerent, quantum occultarum sollicitudinum tegerent. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Cum civibus primum, deinde eum collegis, novissime eum adfinibus coactus armis decernere mari terraque sanguinem fudit. Per Macedoniam, Siciliam, Aegyptum, Syriam Asiamque et omnis prope oras bello circumactus Romana caede lassos exercitus ad externa bella convertit. Dum Alpes pacat immixtosque mediae paci et imperio hostes perdomat, dum vel ultra Rhenum et Euphraten et Danuvium terminos movet, in ipsa urbe Murenae, Caepionis, Lepidi, Egnati, aliorum in eum mucrones acuebantur. Nondum horum effugerat insidias: filia et tot nobiles iuvenes adulterio velut sacramento adacti iam infractam aetatem territabant Paulusque et iterum timenda eum Antonio mulier. Haec ulcera eum ipsis membris absciderat: alia subnascebantur; velut grave multo sanguine corpus parte semper aliqua rumpebatur. Itaque otium optabat, in huius spe et cogitatione labores eius residebant, hoc votum erat eius, qui voti compotes facere poterat.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> M. Cicero inter Catilinas, Clodios iactatus Pompeiosque et Crassos, partim manifestos inimicos, partim dubios amicos, dum fluctuatur cum re publica et illam pessum euntem tenet, novissime abductus, nec secundis rebus quietus nec adversarum patiens, quotiens illum ipsum consulatum suum non sine causa sed sine fine laudatum detestatur! <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Quam flebiles voces exprimit in quadam ad Atticum epistula iam victo patre Pompeio, adhuc filio in Hispania fracta arma refovente! &ldquo;Quid agam,&rdquo; inquit, &ldquo;hic, quaeris? Moror in Tusculano meo semiliber.&rdquo; Alia deinceps adicit, quibus et priorem aetatem complorat et de praesenti queritur et de futura desperat. Semiliberum se dixit Cicero. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> At me hercules numquam sapiens in tam humile nomen procedet, numquam semiliber erit, integrae semper libertatis et solidae, solutus et sui iuris et altior ceteris. Quid enim supra eum potest esse, qui supra fortunam est?</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Livius Drusus, vir acer et vehemens, eum leges novas et mala Gracchana movisset stipatus ingenti totius Italiae coetu, exitum rerum non pervidens, quas nec agere licebat nec iam liberum erat semel incohatas relinquere, execratus inquietam a primordia vitam dicitur dixisse uni sibi ne puero quidem umquam ferias contigisse. Ausus est enim et pupillus adhuc et praetextatus iudicibus reos commendare et gratiam suam foro interponere tam efficaciter quidem, ut quaedam iudicia constet ab illo rapta. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Quo non erumperet tam immatura ambitio? Scires in malum ingens et privatum et publicum evasuram tam praecoquem audaciam. Sero itaque querebatur nullas sibi ferias contigisse a puero seditiosus et foro gravis. Disputatur, an ipse sibi manus attulerit; subito enim vulnere per inguen accepto conlapsus est, aliquo dubitante, an mors eius voluntaria esset, nullo, an tempestiva. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Supervacuum est commemorare plures, qui eum aliis felicissimi viderentur, ipsi in se verum testimonium dixerunt perosi omnem actum annorum suorum; sed his querellis nec alios mutaverunt nec se ipsos. Nam eum verba eruperunt, adfectus ad consuetudinem relabuntur. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Vestra me hercules vita, licet supra mille annos exeat, in artissimum contrahetur; ista vitia nullum non saeculum devorabunt. Hoc vero spatium quod, quamvis natura currit, ratio dilatat, cito vos effugiat necesse est; non enim adprenditis nec retinetis nec velocissimae omnium rei moram facitis, sed abire ut rem supervacuam ac reparabilem sinitis.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> In primis autem et illos numero, qui nulli rei nisi vino ac libidini vacant; nulli enim turpius occupati sunt. Ceteri etiam si vana gloriae imagine teneantur, speciose tamen errant; licet avaros mihi, licet iracundos enumeres vel odia exercentes iniusta vel bella, omnes isti viribus peccant; in ventrem ae libidinem proiectorum inhonesta labes est. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Omnia istorum tempora excute, aspice quam diu computent, quam diu insidientur, quam diu timeant, quam diu colant, quam diu colantur, quantum vadimonia sua atque aliena occupent, quantum convivia, quae iam ipsa officia sunt: videbis, quemadmodum illos respirare non sinant vel mala sua vel bona. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Denique inter omnes convenit nullam rem bene exerceri posse ab homine occupato, non eloquentiam, non liberales disciplinas, quando districtus animus nihil altius recipit, sed omnia velut inculcata respuit. Nihil minus est hominis occupati quam vivere; nullius rei difficilior scientia est. Professores aliarum artium volgo multique sunt, quasdam vero ex his pueri admodum ita percepisse visi sunt, ut etiam praecipere possint. Vivere tota vita discendum est et, quod magis fortasse miraberis, tota vita discendum est mori. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Tot maximi viri relictis omnibus impedimentis, eum divitiis officiis voluptatibus renuntiassent, hoc unum in extremam usque aetatem egerunt, ut vivere scirent; plures tamen ex his nondum se scire confessi vita abierunt, nedum ut isti sciant. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Magni, mihi crede, et supra humanos errores eminentis viri est nihil ex suo tempore delibari sinere, et ideo eius vita longissima est, quia, quantumcumque patuit, totum ipsi vacavit. Nihil inde incultum otiosumque iacuit, nihil sub alio fuit, neque enim quicquam repperit dignum quod cum tempore suo permutaret custos eius parcissimus. Itaque satis illi fuit; iis vero necesse est defuisse, ex quorum vita multum populus tulit. <sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Nec est quod putes non illos aliquando intellegere damnum suum. Plerosque certe audies ex iis, quos magna felicitas gravat, inter clientium greges aut causarum actiones aut ceteras honestas miserias exclamare interdum: &ldquo;Vivere mihi non licet.&rdquo; <sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> Quidni non liceat? Omnes illi, qui te sibi advocant, tibi abducunt. Ille reus quot dies abstulit? Quot ille candidatus? Quot illa anus efferendis heredibus lassa? Quot ille ad irritandam avaritiam captantium simulatus aeger? Quot ille potentior amicus, qui vos non in amicitiam, sed in apparatu habet? Dispunge, inquam, et recense vitae tuae dies; videbis paucos admodum et relicos apud te resedisse. <sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> Adsecutus ille quos optaverat fasces cupit ponere et subinde dicit: &ldquo;Quando hic annus praeteribit?&rdquo; Facit ille ludos, quorum sortem sibi optingere magno aestimavit: &ldquo;Quando,&rdquo; inquit, &ldquo;istos effugiam?&rdquo; Diripitur ille toto foro patronus et magno concursu omnia ultra, quam audiri potest, complet: &ldquo;Quando,&rdquo; inquit, &ldquo;res proferentur?&rdquo; Praecipitat quisque vitam suam et futuri desiderio laborat, praesentium taedio. <sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> At ille qui nullum non tempus in usus suos confert, qui omnem diem tamquam ultimum ordinat, nec optat crastinum nec timet. Quid enim est, quod iam ulla hora novae voluptatis possit adferre? Omnia nota, omnia ad satietatem percepta sunt. De cetero fors fortuna, ut volet, ordinet; vita iam in tuto est. Huic adici potest, detrahi nihil, et adici sic, quemadmodum saturo iam ac pleno aliquid cibi, quod nec desiderat et capit. Non est itaque quod quemquam propter canos aut rugas putes diu vixisse; non ille diu vixit, sed diu fuit. Quid enim si illum multum putes navigasse, quem saeva tempestas a portu exceptum huc et illuc tulit ac vicibus ventorum ex diverso furentium per eadem spatia in orbem egit? Non ille multum navigavit, sed multum iactatus est.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Mirari soleo, eum video aliquos tempus petentes et eos, qui rogantur, facillimos. Illud uterque spectat, propter quod tempus petitum est, ipsum quidem neuter; quasi nihil petitur, quasi nihil datur. Re omnium pretiosissima luditur; fallit autem illos, quia res incorporalis est, quia sub oculos non venit, ideoque vilissima aestimatur, immo paene nullum eius pretium est. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Annua, congiaria homines carissime accipiunt et illis aut laborem aut operam aut diligentiam suam locant. Nemo aestimat tempus; utuntur illo laxius quasi gratuito. At eosdem aegros vide, si mortis periculum propius admotum est, medicorum genua tangentes, si metuunt capitale supplicium, omnia sua, ut vivant, paratos impendere! <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Tanta in illis discordia adfectuum est. Quodsi posset quemadmodum praeteritorum annorum cuiusque numerus proponi, sic futurorum, quomodo illi, qui paucos viderent superesse, trepidarent, quomodo illis parcerent! Atqui facile est quamvis exiguum dispensare, quod certum est; id debet servari diligentius, quod nescias quando deficiat. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Nec est tamen, quod putes illos ignorare, quam cara res sit; dicere solent eis, quos valdissime diligunt, paratos se partem annorum suorum dare. Dant nec intellegunt; dant autem ita, ut sine illorum incremento sibi detrahant. Sed hoc ipsum, an detrahant, nesciunt; ideo tolerabilis est illis iactura detrimenti latentis. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Nemo restituet annos, nemo iterum te tibi reddet. Ibit, qua coepit aetas, nec cursum suum aut revocabit aut supprimet; nihil tumultuabitur, nihil admonebit velocitatis suae. Tacita labetur; non illa se regis imperio, non favore populi longius proferet. Sicut missa est a primo die, curret; nusquam devertetur, nusquam remorabitur. Quid fiet? Tu occupatus es, vita festinat; mors interim aderit, cui, velis nolis, vacandum est.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Potestne quicquam stultius esse quam quorundam sensus, hominum eorum dico qui prudentiam iactant? Operosius occupati sunt, ut melius possint vivere; impendio vitae vitam instruunt! Cogitationes suas in longum ordinant; maxima porro vitae iactura dilatio est; illa primum quemque extrahit diem, illa eripit praesentia, dum ulteriora promittit. Maximum vivendi impedimentum est expectatio, quae pendet ex crastino, perdit hodiernum. Quod in manu fortunae positum est, disponis, quod in tua, dimittis. Quo spectas? Quo te extendis? Omnia quae ventura sunt in incerto iacent; protinus vive! <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Clamat ecce maximus vates et velut divino ore instinctus salutare carmen canit: Optima quaeque dies miseris mortalibus aevi prima fugit. &ldquo;Quid cunctaris?&rdquo; inquit, &ldquo;Quid cessas? Nisi occupas, fugit.&rdquo; Et eum occupaveris, tamen fugiet; itaque cum celeritate temporis utendi velocitate certandum est et velut ex torrenti rapido nec semper ituro cito hauriendum. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Hoc quoque pulcherrime ad exprobrandam infinitam cunctationem, quod non optimam quamque aetatem sed diem dicit. Quid securus et in tanta temporum fuga lentus menses tibi et annos in longam seriem, utcumque aviditati tuae visum est, exporrigis? De die tecum loquitur et de hoc ipso fugiente. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Num dubium est ergo, quin optima quaeque prima dies fugiat mortalibus miseris, id est occupatis? Quorum puerilis adhuc animos senectus opprimit, ad quam imparati inermesque perveniunt, nihil enim provisum est; subito in illam necopinantes inciderunt, accedere eam cotidie non sentiebant. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Quemadmodum aut sermo aut lectio aut aliqua intentior cogitatio iter facientis decipit et pervenisse ante sentiunt quam adpropinquasse, sic hoc iter vitae adsiduum et citatissimum, quod vigilantes dormientesque eodem gradu facimus, occupatis non apparet nisi in fine.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Quod proposui si in partes velim et argumenta diducere, multa mihi occurrent, per quae probem brevissimam esse occupatorum vitam. Solebat dicere Fabianus, non ex his cathedraris philosophis, sed ex veris et antiquis: &lsquo;contra adfectus impetu, non suptilitate pugnandum, nec minutis vulneribus sed incursu avertendam aciem; non probam cavillationem esse, nam contundi debere, non vellicari.&rsquo; Tamen ut illis error exprobretur suus, docendi, non tantum deplorandi sunt. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> In tria tempora vita dividitur: quod fuit, quod est, quod futurum est. Ex iis quod agimus breve est, quod acturi sumus dubium, quod egimus certum. Hoc est enim, in quod fortuna ius perdidit, quod in nullius arbitrium reduci potest. Hoc amittunt occupati; nec enim illis vacat praeterita respicere, et si vacet, iniucunda est paenitendae rei recordatio. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Inviti itaque ad tempora male exacta animum revocant nec audent ea retemptare, quorum vitia, etiam quae aliquo praesentis voluptatis lenocinio surripiebantur, retractando patescunt. Nemo, nisi quoi omnia acta sunt sub censura sua, quae numquam fallitur, libenter se in praeteritum retorquet; <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> ille qui multa ambitiose concupiit, superbe contempsit, impotenter vicit, insidiose decepit, avare rapuit, prodige effudit, necesse est memoriam suam timeat. Atqui haec est pars temporis nostri sacra ac dedicata, omnis humanos casus supergressa, extra regnum fortunae subducta, quam non inopia, non metus, non morborum incursus exagitet; haec nec turbari nec eripi potest: perpetua eius et intrepida possessio est. Singuli tantum dies, et hi per momenta, praesentes sunt; at praeteriti temporis omnes, cum iusseritis, aderunt, ad arbitrium tuum inspici se ac detineri patientur, quod facere occupatis non vacat. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Securae et quietae mentis est in omnes vitae suae partes discurrere; occupatorum animi, velut sub iugo sint, flectere se ac respicere non possunt. Abit igitur vita eorum in profundum; et ut nihil prodest, licet quantumlibet ingeras, si non subest quod excipiat ac servet, sic, nihil refert quantum temporis detur, si non est ubi subsidat, per quassos foratosque animos transmittitur. <sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Praesens tempus brevissimum est, adeo quidem, ut quibusdam nullum videatur; in cursu enim semper est, fluit et praecipitatur; ante desinit esse quam venit, nec magis moram patitur quam mundus aut sidera, quorum inrequieta semper agitatio numquam in eodem vestigio manet. Solum igitur ad occupatos praesens pertinet tempus, quod tam breve est, ut arripi non possit, et id ipsum illis districtis in multa subducitur.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Denique vis scire quam non diu vivant? Vide quam cupiant diu vivere. Decrepiti senes paucorum annorum accessionem votis mendicant; minores natu se ipsos esse fingunt; mendacio sibi blandiuntur et tam libenter se fallunt quam si una fata decipiant. Iam vero cum illos aliqua imbecillitas mortalitatis admonuit, quemadmodum paventes moriuntur, non tamquam exeant de vita, sed tamquam extrahantur. Stultos se fuisse, qui non vixerint, clamitant et, si modo evaserint ex illa valitudine, in otio victuros; tunc quam frustra paraverint, quibus non fruerentur quam in cassum omnis ceciderit labor, cogitant. At quibus vita procul ab omni negotio agitur, quidni spatiosa sit? Nihil ex illa delegatur, nihil alio atque alio spargitur, nihil inde fortunae traditur, nihil neglegentia interit, nihil largitione detrahitur, nihil supervacuum est; tota, ut ita dicam, in reditu est. Quantulacumque itaque abunde sufficit, et ideo, quandoque ultimus dies venerit, non cunctabitur sapiens ire ad mortem certo gradu.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Quaeris fortasse, quos occupatos vocem? Non est quod me solos putes dicere, quos a basilica immissi demum canes eiciunt, quos aut in sua vides turba speciosius elidi aut in aliena contemptius, quos officia domibus suis e vocant, ut alienis foribus inlidant, aut hasta praetoris infami lucro et quandoque suppuraturo exercet. Quorundam otium occupatum est; <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> in villa aut in lecto suo, in media solitudine, quamvis ab omnibus recesserint, sibi ipsi molesti sunt; quorum non otiosa vita dicenda est, sed desidiosa occupatio. Illum tu otiosum vocas qui Corinthia, paucorum furore pretiosa, anxia suptilitate concinnat et maiorem dierum partem in aeruginosis lamellis consumit? Qui in ceromate spectator puerorum rixantium sedet? Qui iumentorum suorum greges in aetatium et colorum paria diducit? Qui athletas novissimos pascit? <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Quid? illos otiosos vocas, quibus apud tonsorem multae horae transmittuntur, dum decerpitur, si quid proxima nocte subcrevit, dum de singulis capillis in consilium itur, dum aut disiecta coma restituitur aut deficiens hinc atque illinc in frontem compellitur? Quomodo irascuntur, si tonsor paulo neglegentior fuit, tamquam virum tonderet! Quomodo excandescunt, si quid ex iuba sua decisum est, si quid extra ordinem iacuit, nisi omnia in anulos suos reciderunt! Quis est istorum qui non malit rem publicam turbari quam comam suam? Qui non sollicitior sit de capitis sui decore quam de salute? Qui non comptior esse malit quam honestior? Hos tu otiosos vocas inter pectinem speculumque occupatos? <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Quid illi, qui in componendis, audiendis, discendis canticis operati sunt, dum vocem, cuius rectum cursum natura et optimum et simplicissimum fecit, in flexus modulationis inertissimae torquent, quorum digiti aliquod intra se carmen metientes semper sonant, quorum, cum ad res serias, etiam saepe tristes adhibiti sunt, exauditur tacita modulatio? Non habent isti otium, sed iners negotium. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Convivia me hercules horum non posuerim inter vacantia tempora, cum videam, quam solliciti argentum ordinent, quam diligenter exoletorum suorum tunicas succingant, quam suspensi sint, quomodo aper a coeo exeat, qua celeritate signo dato glabri ad ministeria discurrant, quanta arte scindantur aves in frusta non enormia, quam curiose infelices pueruli ebriorum sputa detergeant. Ex his elegantiae lautitiaeque fama captatur et usque eo in omnes vitae secessus mala sua illos secuntur, ut nec bibant sine ambitione nec edant. <sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Ne illos quidem inter otiosos numeraverim, qui sella se et lectica huc et illuc ferunt et ad gestationum suarum, quasi deserere illas non liceat, horas occurrunt, quos quando lavari debeant, quando natare, quando cenare, alius admonet; usque eo nimio delicati animi languore solvuntur, ut per se scire non possint, an esuriant! <sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> Audio quendam ex delicatis, cum ex balneo inter manus elatus et in sella positus esset, dixisse interrogando: &ldquo;Iam sedeo?&rdquo; Hunc tu ignorantem, an sedeat, putas scire an vivat, an videat, an otiosus sit? Non facile dixerim, utrum magis miserear, si hoc ignoravit, an si ignorare se finxit. <sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> Multarum quidem rerum oblivionem sentiunt, sed multarum et imitantur. Quaedam vitia illos quasi felicitatis argumenta delectant; nimis humilis et contempti hominis videtur scire quid facias. I nunc et mimos multa mentiri ad exprobrandam luxuriam puta. Plura me hercules praetereunt quam fingunt et tanta incredibilium vitiorum copia ingenioso in hoc unum saeculo processit, ut iam mimorum arguere possimus neglegentiam. Esse aliquem, qui usque eo deliciis interierit ut an sedeat alteri credat! <sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> Non est ergo hic otiosus, aliud illi nomen imponas; aeger est, immo mortuus est; ille otiosus est, cui otii sui et sensus est. Hic vero semivivus, cui ad intellegendos corporis sui habitus indice opus est, quomodo potest hic ullius temporis dominus esse?</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Persequi singulos longum est, quorum aut latrunculi aut pila aut excoquendi in sole corporis cura consumpsere vitam. Non sunt otiosi, quorum voluptates multum negotii habent. Nam de illis nemo dubitabit, quin operose nihil agant, qui litterarum inutilium studiis detinentur, quae iam apud Romanos quoque magna manus est. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Graecorum iste morbus fuit quaerere, quem numerum Ulixes remigum habuisset, prior scripta esset Ilias an Odyssia, praeterea an eiusdem essent auctoris, alia deinceps huius notae, quae sive contineas, nihil tacitam conscientiam iuvant sive proferas, non doctior videaris sed molestior. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Ecce Romanos quoque invasit inane studium supervacua discendi. His diebus audii quendam referentem, quae primus quisque ex Romanis ducibus fecisset; primus navali proelio Duilius vicit, primus Curius Dentatus in triumpho duxit elephantos. Etiamnunc ista, etsi ad veram gloriam non tendunt, circa civilium tamen operum exempla versantur; non est profutura talis scientia, est tamen quae nos speciosa rerum vanitate detineat. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Hoc quoque quaerentibus remittamus, quis Romanis primus persuaserit navem conscendere. Claudius is fuit, Caudex ob hoc ipsum appellatus, quia plurium tabularum contextus caudex apud antiquos vocatur, unde publicae tabulae codices dicuntur et naves nunc quoque ex antiqua consuetudine, quae commeatus per Tiberim subvehunt, codicariae vocantur. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Sane et hoc ad rem pertineat, quod Valerius Corvinus primus Messanam vicit et primus ex familia Valeriorum urbis captae in se translato nomine Messana appellatus est paulatimque vulgo permutante litteras Messala dictus. <sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Num et hoc cuiquam curare permittes, quod primus L. Sulla in circo leones solutos dedit, cum alioquin alligati darentur, ad conficiendos eos missis a rege Bocchio iaculatoribus? Et hoc sane remittatur: num et Pompeium primum in circo elephantorum duodeviginti pugnam edidisse commissis more proeli noxiis hominibus ad ullam rem bonam pertinet? Princeps civitatis et inter antiquos principes, ut fama tradidit, bonitatis eximiae memorabile putavit spectaculi genus novo more perdere homines. Depugnant? Parum est. Laneinantur? Parum est: ingenti mole animalium exterantur! <sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> Satius erat ista in oblivionem ire, ne quis postea potens disceret invideretque rei minime humanae. O quantum caliginis mentibus nostris obicit magna felicitas! Ille se supra rerum naturam esse tune credidit, cum tot miserorum hominum catervas sub alio caelo natis beluis obiceret, cum bellum inter tam disparia animalia committeret, eum in conspectum populi Romani multum sanguinis funderet mox plus ipsum fundere coacturus. At idem postea Alexandrina perfidia deceptus ultimo mancipio transfodiendum se praebuit, tum demum intellecta inani iactatione cognominis sui. <sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> Sed ut illo revertar, unde decessi, et in eadem materia ostendam supervacuam quorundam diligentiam: idem narrabat Metellum victis in Sicilia Poenis triumphantem unum omnium Romanorum ante currum centum et viginti captivos elephantos duxisse; Sullam ultimum Romanorum protulisse pomerium, quod numquam provinciali, sed Italico agro adquisito proferre moris apud antiquos fuit. Hoc scire magis prodest, quam Aventinum montem extra pomerium esse, ut ille adfirmabat, propter alteram ex duabus causis, aut quod plebs eo secessisset, aut quod Remo auspicante illo loco aves non addixissent, alia deinceps innumerabilia, quae aut farta sunt mendaciis aut similia? <sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> Nam ut concedas omnia eos fide bona dicere, ut ad praestationem scribant, tamen cuius ista errores minuent? Cuius cupiditates prement? Quem fortiorem, quem iustiorem, quem liberaliorem facient? Dubitare se interim Fabianus noster aiebat, an satius esset nullis studiis admoveri quam his implicari.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Soli omnium otiosi sunt qui sapientiae vacant, soli vivunt; nec enim suam tantum aetatem bene tuentur. Omne aevum suo adiciunt; quidquid annorum ante illos actum est, illis adquisitum est. Nisi ingratissimi sumus, illi clarissimi sacrarum opinionum conditores nobis nati sunt, nobis vitam praeparaverunt. Ad res pulcherrimas ex tenebris ad lucem erutas alieno labore deducimur; nullo nobis saeculo interdictum est, in omnia admittimur et, si magnitudine animi egredi humanae imbecillitatis angustias libet, multum, per quod spatiemur, temporis est. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Disputare cum Socrate licet, dubitare cum Carneade, quiescere cum Epicuro, hominis naturam vincere cum Stoicis, excedere cum Cynicis. Cum rerum natura in consortium omnis aevi patiitur incedere, quidni ab hoc exiguo et caduco temporis transitu in illa toto nos demus animo, quae immensa, quae aeterna sunt, quae cum melioribus communia? <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Isti, qui per officia discursant, qui se aliosque inquietant, cum bene insanierint, eum omnium limina cotidie perambulaverint nec ullas apertas fores praeterierint, cum per diversissimas domos meritoriam salutationem circumtulerint, quotum quemque ex tam immensa et variis cupiditatibus districta urbe poterunt videre? <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Quam multi erunt, quorum illos aut somnus aut luxuria aut inhumanitas summoveat! Quam multi qui illos, eum diu torserint, simulata festinatione transcurrant! Quam multi per refertum clientibus atrium prodire vitabunt et per obscuros aedium aditus profugient, quasi non inhumanius sit decipere quam excludere! Quam multi hesterna crapula semisomnes et graves illis miseris suum somnum rumpentibus ut alienum expectent, vix adlevatis labris insusurratum mihiens nomen oscitatione superbissima reddent! <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Hos in veris officiis morari licet dicamus, qui Zenonem, qui Pythagoran cotidie et Democritum ceterosque antistites bonarum artium, qui Aristotelen et Theophrastum volent habere quam familiarissimos. Nemo horum non vacabit, nemo non venientem ad se beatiorem, amantiorem sui dimittet, nemo quemquam vacuis a se manibus abire patietur; nocte convenire, interdiu ab omnibus mortalibus possunt.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Horum te mori nemo coget, omnes docebunt; horum nemo annos tuos conteret, suos tibi contribuet; nullius ex his sermo periculosus erit, nullius amicitia capitalis, nullius sumptuosa observatio. Feres ex illis, quidquid voles; per illos non stabit, quominus quantum plurimum cupiens haurias. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Quae illum felicitas, quam pulchra senectus manet, qui se in horum clientelam contulit! Habebit, cum quibus de minimis maximisque rebus deliberet, quos de se cotidie consulat, a quibus audiat verum sine contumelia, laudetur sine adulatione, ad quorum se similitudinem effingat. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Solemus dicere non fuisse in nostra potestate, quos sortiremur parentes, forte hominibus datos; nobis vero ad nostrum arbitrium nasci licet. Nobilissimorum ingeniorum familiae sunt; elige in quam adscisci velis; non in nomen tantum adoptaberis, sed in ipsa bona, quae non erunt sordide nec maligne custodienda; maiora fient, quo illa pluribus diviseris. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Hi tibi dabunt ad aeternitatem iter et te in illum locum, ex quo nemo deicitur, sublevabunt. Haec una ratio est extendendae mortalitatis, immo in immortalitatem vertendae. Honores, monimenta, quidquid aut decretis ambitio iussit aut operibus extruxit, cito subruitur; nihil non longa demolitur vetustas et movet. At iis, quae consecravit sapientia, nocere non potest; nulla abolebit aetas, nulla deminuet; sequens ac deinde semper ulterior aliquid ad venerationem conferet, quoniam quidem in vicino versatur invidia, simplicius longe posita miramur. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Sapientis ergo multum patet vita, non idem illum qui ceteros terminus cludit. Solus generis humani legibus solvitur; omnia illi saecula ut deo serviunt. Transit tempus aliquod? Hoc recordatione comprendit. Instat? Hoc utitur. Venturum est? Hoc praecipit. Longam illi vitam facit omnium temporum in unum conlatio.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Illorum brevissima ac sollicitissima aetas est, qui praeteritorum obliviscuntur, praesentia neglegunt, de futuro timent; eum ad extrema venerunt, sero intellegunt miseri, tam diu se, dum nihil agunt, occupatos fuisse. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Nec est, quod hoc argumento probari putes longam illos agere vitam, quia interdum mortem invocant. Vexat illos imprudentia incertis adfectibus et incurrentibus in ipsa, quae metuunt; mortem saepe ideo optant, quia timent. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Illud quoque argumentum non est quod putes diu viventium, quod saepe illis longus videtur dies, quod, dum veniat condictum tempus cenae, tarde ire horas queruntur; nam si quando illos deseruerunt occupationes, in otio relicti aestuant, nec quomodo id disponant aut extrahant sciunt. Itaque ad occupationem aliquam tendunt et quod interiacet omne tempus grave est; tam me hercules, quam cum dies muneris gladiatorii edictus est, aut cum alicuius alterius vel spectaculi vel voluptatis expectatur constitutum, transilire medios dies volunt. Omnis illis speratae rei longa dilatio est. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> At illud tempus, quod amant, breve est et praeceps breviusque multo suo fit vitio; aliunde enim alio transfugiunt et consistere in una cupiditate non possunt. Non sunt illis longi dies, sed invisi; at contra quam exiguae noctes videntur, quas in complexu scortorum aut vino exigunt! <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Inde etiam poetarum furor fabulis humanos errores alentium, quibus visus est Iuppiter voluptate concubitus delenitus duplicasse noctem. Quid aliud est vitia nostra incendere quam auctores illis inscribere deos et dare morbo exemplo divinitatis excusatam licentiam? Possunt istis non brevissimae videri noctes, quas tam care mereantur? Diem noctis expectatione perdunt, noctem lucis metu.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Ipsae voluptates eorum trepidae et variis terroribus inquietae sunt subitque cum maxime exsultantis sollicita cogitatio: &ldquo;Haec quam diu?&rdquo; Ab hoc affectu reges suam flevere potentiam, nec illos magnitudo fortunae suae delectavit, sed venturus aliquando finis exterruit. Cum per magna camporum spatia porrigeret exercitum nec numerum eius sed mensuram conprenderet Persarum rex insolentissimus, lacrimas profudit, quod intra centum annos nemo ex tanta iuventute superfuturus esset. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> At illis admoturus erat fatum ipse qui flebat perditurusque alios in mari, alios in terra, alios proelio, alios fuga et intra exiguum tempus consumpturus illos, quibus centesimum annum timebat. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Quid, quod gaudia quoque eorum trepida sunt? Non enim solidis causis innituntur, sed eadem qua oriuntur vanitate turbantur. Qualia autem putas esse tempora etiam ipsorum confessione misera, eum haec quoque, quibus se attollunt et super hominem efferunt, parum sincera sint? <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Maxima quaeque bona sollicita sunt nec ulli fortunae minus bene quam optimae creditur; alia felicitate ad tuendam felicitatem opus est et pro ipsis quae successere votis vota facienda sunt. Omne enim quod fortuito obvenit instabile est, quoque altius surrexerit, opportunius est in occasum. Neminem porro casura delectant; miserrimam ergo necesse est, non tantum brevissimam, vitam esse eorum, qui magno parant labore, quod maiore possideant. Operose adsecuntur quae volunt, anxii tenent quae adsecuti sunt; <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> nulla interim numquam amplius redituri temporis ratio est. Novae occupationes veteribus substituuntur, spes spem excitat, ambitionem ambitio. Miseriarum non finis quaeritur, sed materia mutatur. Nostri nos honores torserunt? Plus temporis alieni auferunt. Candidati laborare desimus? Suffragatores incipimus. Accusandi deposimus molestiam? Iudicandi nanciscimur. Iudex desit esse? Quaesitor est. Alienorum bonorum mercennaria procuratione consenuit? Suis opibus distinetur. <sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Marium caliga dimisit? Consulatus exercet. Quintius dictaturam properat pervadere? Ab aratro revocabitur. Ibit in Poenos nondum tantae maturus rei Scipio; victor Hannibalis, victor Antiochi, sui consulatus decus, fraterni sponsor, ni per ipsum mora esset, eum Iove reponeretur; civiles servatorem agitabunt seditiones et post fastiditos a iuvene diis aequos honores iam senem contumacis exili delectabit ambitio. Numquam derunt vel felices vel miserae sollicitudinis causae; per occupationes vita trudetur. Otium numquam agetur, semper optabitur.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Excerpe itaque te volgo, Pauline carissime, et in tranquilliorem portum non pro aetatis spatio iactatus tandem recede. Cogita, quot fluctus subieris, quot tempestates partim privatas sustinueris, partim publicas in te converteris; satis iam per laboriosa et inquieta documenta exhibita virtus est: experire, quid in otio faciat. Maior pars aetatis, certe melior rei publicae data sit; aliquid temporis tui sume etiam tibi. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Nec te ad segnem aut inertem quietem voco, non ut somno et caris turbae voluptatibus quidquid est in te indolis vividae mergas. Non est istud adquiescere; invenies maiora omnibus adhuc strenue tractatis operibus, quae repositus et securus agitas. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Tu quidem orbis terrarum rationes administras tam abstinenter quam alienas, tam diligenter quam tuas, tam religiose quam publicas. In officio amorem consequeris, in quo odium vitare difficile est; sed tamen, mihi crede, satius est vitae suae rationem quam frumenti publici nosse. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Istum animi vigorem rerum maximarum capacissimum a ministerio honorifico quidem sed parum ad beatam vitam apto revoca et cogita non id egisse te ab aetate prima omni cultu studiorum liberalium, ut tibi multa milia frumenti bene committerentur; maius quiddam et altius de te promiseras. Non derunt et frugalitatis exactae homines et laboriosae operae; tanto aptiora portandis oneribus tarda iumenta sunt quam nobiles equi, quorum generosam pernicitatem quis umquam gravi sarcina pressit? <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Cogita praeterea, quantum sollicitudinis sit ad tantam te molem obicere; cum ventre tibi humano negotium est. Nec rationem patitur nec aequitate mitigatur nec ulla prece flectitur populus esuriens. Modo modo intra paucos illos dies, quibus C. Caesar perit, si quis inferis sensus est, hoc gravissime ferens, quod sciebat populo Romano superstiti septem aut octo certe dierum cibaria superesse, dum ille pontes navibus iungit et viribus imperii ludit, aderat ultimum malorum obsessis quoque, alimentorum egestas; exitio paene ac fame constitit et, quae famem sequitur, rerum omnium ruina furiosi et externi et infeliciter superbi regis imitatio. <sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Quem tunc animum habuerunt illi, quibus erat mandata frumenti publici cura, saxa, ferrum, ignes Gaium excepturi? Summa dissimulatione tantum inter viscera latentis mali tegebant, eum ratione scilicet. Quaedam enim ignorantibus aegris curanda sunt; causa multis moriendi fuit morbum suum nosse.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Recipe te ad haec tranquilliora, tutiora, maiora! Simile tu putas esse, utrum cures, ut incorruptum et a fraude advehentium et a neglegentia frumentum transfundatur in horrea, ne concepto umore vitietur et concalescat, ut ad mensuram pondusque respondeat, an ad haec sacra et sublimia accedas sciturus, quae materia sit dei, quae voluptas, quae condicio, quae forma; quis animum tuum casus expectet; ubi nos a corporibus dimissos natura componat; quid sit quod huius mundi gravissima quaeque in medio sustineat, supra levia suspendat, in summum ignem ferat, sidera vicibus suis excitet; cetera deinceps ingentibus plena miraculis? <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Vis tu relicto solo mente ad ista respicere! Nunc, dum calet sanguis, agentibus ad meliora eundum est. Expectat te in hoc genere vitae multum bonarum artium, amor virtutum atque usus, cupiditatium oblivio, vivendi ac moriendi scientia, alta rerum quies. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Omnium quidem occupatorum condicio misera est, eorum tamen miserrima, qui ne suis quidem laborant occupationibus, ad alienum dormiunt somnum, ad alienum ambulant gradum, amare et odisse, res omnium liberrimas, iubentur. Hi si volent scire quam brevis ipsorum vita sit, cogitent ex quota parte sua sit.</p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Cum videris itaque praetextam saepe iam sumptam, cum celebre in foro nomen, ne invideris; ista vitae damno parantur. Ut unus ab illis numeretur annus, omnis annos suos conterent. Quosdam antequam in summum ambitionis eniterentur, inter prima luctantis aetas reliquit; quosdam eum in consummationem dignitatis per mille indignitates erepsissent, misera subit cogitatio laborasse ipsos in titulum sepulcri; quorundam ultima senectus, dum in novas spes ut iuventa disponitur, inter conatus magnos et improbos invalida defecit. <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Foedus ille, quem in iudicio pro ignotissimis litigatoribus grandem natu et imperitae coronae assensiones captantem, spiritum liquit; turpis ille, qui vivendo lassus citius quam laborando inter ipsa officia conlapsus est; turpis, quem accipiendis morientem rationibus diu tractus risit heres. <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Praeterire quod mihi occurrit exemplum non possum. S. Turannius fuit exactae diligentiae senex, qui post annum nonagesimum, cum vacationem procurationis ab C. Caesare ultro accepisset, componi se in lecto et velut exanimem a circumstante familia plangi iussit. Lugebat domus otium domini senis nec finivit ante tristitiam, quam labor illi suus restitutus est. Adeone iuvat occupatum mori? <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Idem plerisque animus est; diutius cupiditas illis laboris quam facultas est; eum imbecillitate corporis pugnant, senectutem ipsam nullo alio nomine gravem iudicant, quam quod illos seponit. Lex a quinquagesimo anno militem non legit, a sexagesimo senatorem non citat; difficilius homines a se otium impetrant quam a lege. <sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Interim dum rapiuntur et rapiunt, dum alter alterius quietem rumpit, dum mutuo miseri sunt, vita est sine fructu, sine voluptate, sine ullo profectu animi. Nemo in conspicuo mortem habet, nemo non procul spes intendit; quidam vero disponunt etiam illa, quae ultra vitam sunt, magnas moles sepulcrorum et operum publicorum dedicationes et ad rogum munera et ambitiosas exequias. At me hercules istorum funera, tamquam minimum vixerint, ad faces et cereos ducenda sunt.</p>
+                </div>
+                
+                </section>
+
+                <!-- Columna traducció -->
+                <section class="translation-column">
+                    <div class="column-header">Traducció (català)</div>
+                    
+                <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+<p>[ERROR: Claude CLI ha fallat (exit code 1): Error: Claude Code cannot be launched inside another Claude Code session.
+Nested sessions share runtime resources and will crash all active sessions.
+To bypass this check, unset the CLAUDECODE environment variable.</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
+                    <p><em>Traducció de domini públic.</em></p>
+                </div>
+                
+                </section>
+            </div>
+
+            <!-- Navegació entre capítols -->
+            <nav class="chapter-nav" id="chapter-nav" aria-label="Navegació entre capítols">
+                <button class="chapter-nav-btn" id="prev-chapter" disabled>
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-text">Capítol anterior</span>
+                </button>
+                <span class="chapter-indicator" id="chapter-indicator">Capítol 1 de 1</span>
+                <button class="chapter-nav-btn" id="next-chapter" disabled>
+                    <span class="nav-text">Capítol següent</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+        </div>
+
+        <!-- Notes (amagat per defecte) -->
+        
+
+        <!-- Glossari (amagat per defecte) -->
+        
+
+        <!-- Bibliografia -->
+        
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</article>
+
+<!-- Script per índex i navegació de capítols (paginació) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocPanel = document.getElementById('chapter-toc');
+    const tocClose = document.getElementById('toc-close');
+    const tocList = document.getElementById('toc-list');
+    const prevBtn = document.getElementById('prev-chapter');
+    const nextBtn = document.getElementById('next-chapter');
+    const prevBtnTop = document.getElementById('prev-chapter-top');
+    const nextBtnTop = document.getElementById('next-chapter-top');
+    const indicator = document.getElementById('chapter-indicator');
+
+    if (!tocToggle || !tocPanel || !tocList) return;
+
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
+
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
+
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
+
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
+        const text = h2.textContent.trim();
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
+    });
+
+    // Si no hi ha prou capítols, amagar TOTA la navegació i sortir
+    if (chapters.length <= 1) {
+        // Amagar navegació inferior
+        const nav = document.getElementById('chapter-nav');
+        if (nav) nav.style.display = 'none';
+        // Amagar botó índex
+        if (tocToggle) tocToggle.style.display = 'none';
+        // Amagar panell índex
+        if (tocPanel) tocPanel.style.display = 'none';
+        // Amagar botons navegació superior
+        if (prevBtnTop) prevBtnTop.style.display = 'none';
+        if (nextBtnTop) nextBtnTop.style.display = 'none';
+        return;
+    }
+
+    // Hi ha capítols: mostrar el botó d'índex
+    tocToggle.classList.add('visible');
+
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = '<span class="toc-chapter-num">' + (i + 1) + '.</span> Capítol ' + ch.title;
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            showChapter(i);
+            closeToc();
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    let currentChapter = 0;
+
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
+
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
+            c.style.display = 'none';
+        });
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
+            c.style.display = 'block';
+        });
+        currentChapter = index;
+        updateNavigation();
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateNavigation() {
+        const atStart = currentChapter === 0;
+        const atEnd = currentChapter === chapters.length - 1;
+        prevBtn.disabled = atStart;
+        nextBtn.disabled = atEnd;
+        if (prevBtnTop) prevBtnTop.disabled = atStart;
+        if (nextBtnTop) nextBtnTop.disabled = atEnd;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
+            a.classList.toggle('active', i === currentChapter);
+        });
+    }
+
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
+
+    tocToggle.addEventListener('click', function() {
+        tocPanel.classList.contains('open') ? closeToc() : openToc();
+    });
+    tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
+    if (prevBtnTop) prevBtnTop.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    if (nextBtnTop) nextBtnTop.addEventListener('click', function() { showChapter(currentChapter + 1); });
+
+    document.addEventListener('click', function(e) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+            closeToc();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
+    });
+
+    updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Botons d'accés ràpid a seccions
+document.addEventListener('DOMContentLoaded', function() {
+    // Botó Capítols - obre l'índex de capítols
+    const quickChapters = document.getElementById('quick-chapters');
+    if (quickChapters) {
+        quickChapters.addEventListener('click', function() {
+            const tocBtn = document.getElementById('toc-toggle');
+            if (tocBtn) tocBtn.click();
+        });
+    }
+
+    // Botó Glossari - scroll a la secció i obre-la
+    const quickGlossari = document.getElementById('quick-glossari');
+    if (quickGlossari) {
+        quickGlossari.addEventListener('click', function() {
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            if (glossariSection) {
+                if (!glossariSection.classList.contains('open')) {
+                    glossariSection.classList.add('open');
+                    if (glossariToggle) glossariToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    glossariSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+
+    // Botó Notes - scroll a la secció i obre-la
+    const quickNotes = document.getElementById('quick-notes');
+    if (quickNotes) {
+        quickNotes.addEventListener('click', function() {
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            if (notesSection) {
+                if (!notesSection.classList.contains('open')) {
+                    notesSection.classList.add('open');
+                    if (notesToggle) notesToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    notesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem (usant classe CSS)
+                if (savedTermElement) {
+                    savedTermElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        savedTermElement.classList.remove('highlight-temp');
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
+});
+
+// Inicialitzar estat del botó de favorits
+document.addEventListener('DOMContentLoaded', async function() {
+    const favBtn = document.querySelector('.btn-favorit-below');
+    if (!favBtn || !window.ArionFavorits) return;
+
+    // Esperar que l'auth estigui llest
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const obraId = favBtn.dataset.obraId;
+    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
+
+    if (isFavorit) {
+        favBtn.classList.add('active');
+        favBtn.querySelector('.favorit-icon').textContent = '❤️';
+    }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="index.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
