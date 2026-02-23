@@ -1,0 +1,21 @@
+termes:
+  - id: "lucili"
+    llati: "Lucilius"
+    traduccio: "Lucili"
+    definicio: >
+      Gaius Lucilius Iunior (c. 15-70 dC), procurador romà de Sicília i amic de Sèneca,
+      destinatari de les 124 Epistulae Morales i de les Naturales Quaestiones. Home culte
+      amb interessos filosòfics i literaris, representa l'estudiant ideal de filosofia
+      estoica: algú que no és filòsof professional però que busca viure millor.
+    usos: [1, 2, 3, 4, 5]
+
+  - id: "stultitia"
+    llati: "stultitia"
+    traduccio: "necietat, insensatesa"
+    definicio: >
+      Terme tècnic de l'estoïcisme romà que designa l'estat mental oposat a la saviesa
+      (sapientia). El stultus no és simplement l'ignorant sinó qui viu sense examinar
+      la seva vida, malgastant el temps en coses sense valor. Per a Sèneca, la stultitia
+      és la condició natural de la humanitat no filosòfica, i la seva superació és
+      l'objectiu de l'educació moral.
+    usos: [5]
