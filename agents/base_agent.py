@@ -587,3 +587,7 @@ La traducció ha de ser fidel al text original per mantenir el seu valor acadèm
     def log_warning(self, message: str) -> None:
         """Log d'avís."""
         self.logger.log_warning(self.agent_name, message)
+
+    def log_error(self, message: str) -> None:
+        """Log d'error."""
+        self.logger.log_error(self.agent_name, message)
