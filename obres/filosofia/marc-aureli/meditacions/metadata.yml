@@ -1,0 +1,45 @@
+obra:
+  titol: "Meditacions"
+  titol_original: "Τὰ εἰς ἑαυτόν"
+  autor: "Marc Aureli"
+  autor_original: "Μᾶρκος Αὐρήλιος Ἀντωνῖνος"
+  traductor: "Biblioteca Arion (IA + comunitat)"
+  any_original: "170-180"
+  any_traduccio: 2026
+  llengua_original: "grec antic"
+  genere: "filosofia"
+  subgenere: "meditació filosòfica"
+  descripcio: |
+    Reflexions personals de l'emperador romà Marc Aureli (121-180 dC),
+    escrites en grec koiné durant les campanyes militars al Danubi.
+    Dotze llibres de pensaments estoics sobre la virtut, el deure,
+    la naturalesa, la mort i la vida examinada. Una de les obres
+    fonamentals de la filosofia estoica i de la literatura universal.
+  font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641"
+  domini_public: true
+  temes:
+    - estoïcisme
+    - virtut i deure
+    - naturalesa i cosmos
+    - impermanència
+    - autoexamen
+    - ètica pràctica
+  context:
+    tradicio: "filosofia estoica"
+    influencies:
+      - "Epictet"
+      - "Crisip"
+      - "Zenó de Citi"
+      - "Sèneca"
+    obres_relacionades:
+      - "Enchiridion d'Epictet"
+      - "Discursos d'Epictet"
+      - "De Brevitate Vitae de Sèneca"
+      - "Epistulae Morales de Sèneca"
+  estadistiques:
+    paraules_original: 30525
+    llibres: 12
+revisio:
+  estat: "en_progres"
+  data_revisio: "2026-02-23"
+  qualitat: 0.0
