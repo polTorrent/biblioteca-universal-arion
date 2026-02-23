@@ -1,0 +1,341 @@
+termes:
+  - id: "logos"
+    grec: "λόγος"
+    transliteracio: "lógos"
+    traduccio: "raó, raó universal"
+    definicio: >
+      Principi racional que governa l'univers segons l'estoïcisme. En Marc Aureli, el logos
+      és alhora la raó còsmica que ordena tot el que existeix i la raó individual que cada
+      ésser humà posseeix com a participació en la intel·ligència universal. Viure segons
+      el logos significa alinear la pròpia conducta amb l'ordre racional de la naturalesa.
+    usos: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+  - id: "hegemonikon"
+    grec: "ἡγεμονικόν"
+    transliteracio: "hēgemonikón"
+    traduccio: "principi rector, facultat directiva"
+    definicio: >
+      La part dominant de l'ànima que governa totes les altres funcions psíquiques. Per a
+      Marc Aureli, l'hegemonikon és la seu de la raó, el judici i la voluntat. Preservar-lo
+      pur i lliure de pertorbacions és l'objectiu central de la pràctica filosòfica. És
+      l'equivalent estoic del jo racional, capaç de donar o negar assentiment a les impressions.
+    usos: [2, 3, 4, 5, 7, 8, 9, 11, 12]
+
+  - id: "phantasia"
+    grec: "φαντασία"
+    transliteracio: "phantasía"
+    traduccio: "representació, impressió"
+    definicio: >
+      Impressió o imatge mental que l'ànima rep del món exterior. En la psicologia estoica,
+      la phantasia és el primer pas del coneixement: una presentació que l'hegemonikon pot
+      acceptar o rebutjar. Marc Aureli insisteix a examinar les representacions amb rigor,
+      despullant-les de valoracions afegides per veure les coses tal com són realment.
+    usos: [2, 3, 4, 5, 6, 7, 8, 9, 11, 12]
+
+  - id: "horme"
+    grec: "ὁρμή"
+    transliteracio: "hormḗ"
+    traduccio: "impuls, tendència"
+    definicio: >
+      Moviment natural de l'ànima cap a l'acció. Juntament amb el desig (orexis) i
+      l'assentiment (synkatathesis), constitueix un dels tres àmbits de la disciplina
+      estoica. Marc Aureli ensenya que cal governar els impulsos amb la raó perquè
+      s'orientin cap al bé comú i no cap a objectius egoistes o irracionals.
+    usos: [2, 5, 6, 8, 9, 11]
+
+  - id: "physis"
+    grec: "φύσις"
+    transliteracio: "phýsis"
+    traduccio: "naturalesa"
+    definicio: >
+      Concepte fonamental que designa tant la naturalesa de cada ésser individual com la
+      Naturalesa universal que tot ho governa. Per a Marc Aureli, viure d'acord amb la
+      naturalesa és el principi suprem de la moral estoica: acceptar el lloc que ens
+      correspon en l'ordre còsmic i actuar conformement a la nostra naturalesa racional.
+    usos: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+  - id: "arete"
+    grec: "ἀρετή"
+    transliteracio: "aretḗ"
+    traduccio: "virtut, excel·lència"
+    definicio: >
+      L'excel·lència o perfecció en l'exercici de la funció pròpia. Per als estoics,
+      la virtut és l'únic bé veritable i es manifesta en quatre formes cardinals:
+      prudència (phronēsis), justícia (dikaiosynē), coratge (andreia) i temperança
+      (sōphrosynē). Marc Aureli la considera inseparable de la vida segons la raó.
+    usos: [1, 2, 3, 5, 6, 7, 8, 9, 10, 11, 12]
+
+  - id: "daimon"
+    grec: "δαίμων"
+    transliteracio: "daímōn"
+    traduccio: "geni interior, esperit diví"
+    definicio: >
+      El geni o esperit diví que habita dins de cada persona. Per a Marc Aureli, el
+      daimon és la porció de divinitat instal·lada en nosaltres, identificable amb la
+      raó i la consciència moral. Honrar el propi daimon significa viure amb coherència
+      interior, sense trair els principis racionals que ens connecten amb el diví.
+    usos: [2, 3, 5, 8, 12]
+
+  - id: "dogma"
+    grec: "δόγμα"
+    transliteracio: "dógma"
+    traduccio: "principi, creença, opinió"
+    definicio: >
+      Principi o creença acceptada que guia la conducta. Marc Aureli repeteix que no
+      són les coses les que ens pertorben sinó els nostres dogmata (judicis) sobre elles.
+      La tasca filosòfica consisteix a examinar i corregir les pròpies creences per
+      alinear-les amb la realitat i la raó.
+    usos: [2, 4, 5, 6, 7, 8, 9, 11, 12]
+
+  - id: "hypolepsis"
+    grec: "ὑπόληψις"
+    transliteracio: "hypólēpsis"
+    traduccio: "opinió, judici"
+    definicio: >
+      Opinió o suposició que formem sobre els esdeveniments. En l'estoïcisme de Marc
+      Aureli, les hypolēpseis són responsables del nostre estat anímic: el dolor, la
+      ira o la por provenen dels judicis que emetem, no de les coses en si mateixes.
+      Eliminar les opinions falses és el camí cap a la serenitat.
+    usos: [2, 4, 6, 8, 9, 11, 12]
+
+  - id: "kosmos"
+    grec: "κόσμος"
+    transliteracio: "kósmos"
+    traduccio: "univers, ordre còsmic"
+    definicio: >
+      L'univers entès com un tot ordenat, racional i bonic. Per a Marc Aureli, el kosmos
+      és un organisme viu governat pel logos diví, on cada part compleix una funció
+      necessària. L'ésser humà és ciutadà d'aquesta polis còsmica i ha d'actuar en
+      harmonia amb el conjunt, acceptant tot el que esdevé com a part del pla universal.
+    usos: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+  - id: "aion"
+    grec: "αἰών"
+    transliteracio: "aiṓn"
+    traduccio: "eternitat, temps infinit"
+    definicio: >
+      El temps infinit o l'eternitat que emmarquen la breu existència humana. Marc Aureli
+      invoca l'aion per relativitzar les preocupacions mundanes: davant l'abisme del temps
+      passat i futur, la vida individual és un instant fugaç. Aquesta perspectiva còsmica
+      ajuda a alliberar-se de l'ambició i la por.
+    usos: [2, 4, 5, 6, 9, 10, 12]
+
+  - id: "metabole"
+    grec: "μεταβολή"
+    transliteracio: "metabolḗ"
+    traduccio: "canvi, transformació"
+    definicio: >
+      El canvi constant que caracteritza tot el que existeix. Marc Aureli medita
+      incansablement sobre la impermanència universal: tot flueix, es transforma i es
+      dissol. Imperis, ciutats, homes il·lustres, tot desapareix. Acceptar la metabolē
+      sense resistència és fonamental per a la serenitat estoica.
+    usos: [2, 4, 5, 6, 7, 8, 9, 10, 11]
+
+  - id: "apatheia"
+    grec: "ἀπάθεια"
+    transliteracio: "apátheia"
+    traduccio: "impassibilitat, serenitat"
+    definicio: >
+      Estat d'ànima lliure de passions irracionals (pathē). No significa insensibilitat
+      sinó llibertat respecte de les emocions destructives com la ira, la por, l'enveja
+      o el desig excessiu. Per a Marc Aureli, l'apatheia s'assoleix mitjançant el control
+      dels judicis i la comprensió de la naturalesa de les coses.
+    usos: [2, 3, 4, 6, 7, 8, 9, 11]
+
+  - id: "proairesis"
+    grec: "προαίρεσις"
+    transliteracio: "proaíresis"
+    traduccio: "elecció moral, voluntat racional"
+    definicio: >
+      La capacitat de decisió moral que constitueix el nucli de la llibertat humana.
+      Herència directa d'Epictetus, Marc Aureli considera que la proairesis és l'únic
+      àmbit on som veritablement sobirans. Cap força externa no pot obligar-nos a jutjar,
+      desitjar o actuar contra la nostra voluntat racional.
+    usos: [3, 5, 6, 8, 11, 12]
+
+  - id: "synkatathesis"
+    grec: "συγκατάθεσις"
+    transliteracio: "synkatáthesis"
+    traduccio: "assentiment"
+    definicio: >
+      L'acte voluntari pel qual l'hegemonikon accepta o rebutja una representació
+      (phantasia) com a vertadera. La disciplina de l'assentiment és una de les tres
+      disciplines estoiques: consisteix a no precipitar-se a acceptar impressions no
+      examinades i a suspendre el judici davant el que és incert.
+    usos: [3, 4, 5, 6, 8, 11]
+
+  - id: "anachoresis"
+    grec: "ἀναχώρησις"
+    transliteracio: "anachṓrēsis"
+    traduccio: "retir interior, recolliment"
+    definicio: >
+      El retir o recolliment interior que hom pot practicar en qualsevol moment i lloc.
+      Marc Aureli, emperador constantment envoltat de gent i assumptes, descobreix que
+      el veritable refugi no és una casa de camp o la platja, sinó la pròpia ànima.
+      L'anachōrēsis és la pràctica de tornar a un mateix per renovar els principis rectors.
+    usos: [4, 6, 8]
+
+  - id: "eudaimonia"
+    grec: "εὐδαιμονία"
+    transliteracio: "eudaimonía"
+    traduccio: "felicitat, plenitud"
+    definicio: >
+      La felicitat entesa no com a plaer sinó com a realització plena de la naturalesa
+      humana. Etimològicament, tenir un bon daimon (eu-daimonia). Per a Marc Aureli,
+      l'eudaimonia consisteix a viure segons la virtut i la raó, en harmonia amb la
+      naturalesa universal, independentment de les circumstàncies externes.
+    usos: [3, 5, 6, 7, 8, 10, 12]
+
+  - id: "pneuma"
+    grec: "πνεῦμα"
+    transliteracio: "pneûma"
+    traduccio: "alè, esperit, força vital"
+    definicio: >
+      En la física estoica, el pneuma és l'alè vital que penetra i cohesiona tota la
+      matèria. És una barreja subtil de foc i aire que dóna forma i vida als cossos.
+      En l'ésser humà, el pneuma racional (hegemonikon) és la manifestació més elevada
+      d'aquesta força còsmica. Marc Aureli hi al·ludeix en les seves reflexions sobre
+      la composició de l'ésser humà.
+    usos: [2, 4, 5, 6, 9, 10, 12]
+
+  - id: "to-hegemonikon"
+    grec: "τὸ ἡγεμονικόν"
+    transliteracio: "tò hēgemonikón"
+    traduccio: "el principi director"
+    definicio: >
+      Forma substantivada amb article que Marc Aureli empra per referir-se a la facultat
+      directiva de l'ànima com a entitat pròpia. La insistència en l'article neutre
+      (τό) subratlla que es tracta d'una realitat objectiva dins nostre, el centre de
+      comandament que cal mantenir inexpugnable davant les pertorbacions exteriors.
+    usos: [2, 3, 4, 5, 7, 8, 9, 11, 12]
+
+  - id: "heimarmene"
+    grec: "εἱμαρμένη"
+    transliteracio: "heimarménē"
+    traduccio: "destí, fat"
+    definicio: >
+      La cadena causal que connecta tots els esdeveniments de l'univers en un ordre
+      necessari. Per a Marc Aureli, la heimarmenē no és un destí cec sinó l'expressió
+      del logos diví que disposa tot amb racionalitat. Acceptar el que el destí porta
+      és un acte de saviesa, no de resignació passiva, perquè equival a consentir
+      l'ordre racional de l'univers.
+    usos: [2, 3, 4, 5, 6, 10, 12]
+
+  - id: "pronoia"
+    grec: "πρόνοια"
+    transliteracio: "prónoia"
+    traduccio: "providència"
+    definicio: >
+      La cura provident que el logos diví exerceix sobre l'univers. Marc Aureli
+      planteja el dilema fonamental: o bé el cosmos és governat per una providència
+      racional, o bé tot és atzar atòmic. En ambdós casos, la resposta ètica és la
+      mateixa: viure segons la virtut. Però l'emperador s'inclina clarament per la
+      providència com a principi organitzador del tot.
+    usos: [2, 4, 6, 9, 12]
+
+  - id: "homologia"
+    grec: "ὁμολογία"
+    transliteracio: "homología"
+    traduccio: "coherència, acord amb la naturalesa"
+    definicio: >
+      L'estat de vida coherent i harmoniosa amb la naturalesa universal i la pròpia
+      naturalesa racional. L'ideal estoic de la homologia implica una unitat perfecta
+      entre pensament, paraula i acció, i entre la voluntat individual i l'ordre còsmic.
+      Marc Aureli aspira a aquesta coherència com a forma suprema de la vida bona.
+    usos: [3, 5, 6, 7, 8, 10, 11]
+
+  - id: "to-koinonikon"
+    grec: "τὸ κοινωνικόν"
+    transliteracio: "tò koinōnikón"
+    traduccio: "el sentit social, el caràcter comunitari"
+    definicio: >
+      La dimensió social i comunitària de la naturalesa humana. Per a Marc Aureli,
+      l'ésser humà és un animal social per naturalesa, fet per a la cooperació, com
+      els peus, les mans, les parpelles o les fileres de dents. Viure per a la
+      comunitat no és un sacrifici sinó la realització de la pròpia naturalesa.
+      L'emperador hi torna constantment com a fonament de l'ètica política.
+    usos: [2, 3, 5, 6, 7, 8, 9, 10, 11]
+
+  - id: "ekklisis"
+    grec: "ἔκκλισις"
+    transliteracio: "ékklisis"
+    traduccio: "aversió, rebuig"
+    definicio: >
+      Moviment de l'ànima que rebutja el que és percebut com a dolent o nociu.
+      Complement de l'orexis (desig), l'ekklisis constitueix un dels impulsos
+      bàsics que cal disciplinar. Segons Marc Aureli, cal limitar l'aversió a
+      allò que depèn de nosaltres i no rebutjar mai el que la naturalesa universal
+      ens assigna, perquè això equival a revoltar-se contra l'ordre còsmic.
+    usos: [2, 5, 6, 8, 11]
+
+  - id: "orexis"
+    grec: "ὄρεξις"
+    transliteracio: "órexis"
+    traduccio: "desig, apetència"
+    definicio: >
+      Moviment de l'ànima cap a quelcom percebut com a bo o desitjable. Juntament
+      amb l'aversió (ekklisis) i l'impuls (hormē), és un dels mecanismes psíquics
+      que la disciplina estoica busca regular. Marc Aureli aconsella dirigir el desig
+      només cap a allò que depèn de nosaltres, especialment la virtut, i no cap a
+      béns externs que poden ser-nos arrabassats.
+    usos: [2, 5, 6, 8, 11]
+
+  - id: "hyle"
+    grec: "ὕλη"
+    transliteracio: "hýlē"
+    traduccio: "matèria"
+    definicio: >
+      El substrat material passiu que, juntament amb el logos actiu, constitueix tot
+      el que existeix. Per a Marc Aureli, la matèria és el riu sempre canviant on
+      tot es dissol i es reforma. La meditació sobre la hylē serveix per relativitzar
+      l'apego als objectes i al propi cos: tot és matèria en transformació perpètua.
+    usos: [2, 4, 5, 6, 7, 9, 10, 12]
+
+  - id: "aitia"
+    grec: "αἰτία"
+    transliteracio: "aitía"
+    traduccio: "causa"
+    definicio: >
+      Principi causal que explica per què les coses són com són. En el marc estoic
+      de Marc Aureli, la causa última de tot és el logos diví, i cada esdeveniment
+      particular s'insereix en una cadena causal universal. Comprendre les causes
+      de les coses allibera de la sorpresa i la indignació davant el que esdevé.
+    usos: [2, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+  - id: "adiaphora"
+    grec: "ἀδιάφορα"
+    transliteracio: "adiáphora"
+    traduccio: "coses indiferents"
+    definicio: >
+      Tot allò que no és ni bo ni dolent en si mateix: salut, malaltia, riquesa,
+      pobresa, fama, obscuritat, vida, mort. Per als estoics, només la virtut és
+      un bé i només el vici és un mal; la resta és indiferent. Marc Aureli recorda
+      constantment que el que pertorba no són les coses indiferents sinó els judicis
+      que hi afegim. Alguns indiferents es consideren «preferibles» (salut) o
+      «rebutjables» (malaltia), però cap no afecta la felicitat del savi.
+    usos: [2, 4, 5, 6, 7, 8, 9, 11, 12]
+
+  - id: "katorthoma"
+    grec: "κατόρθωμα"
+    transliteracio: "katórthōma"
+    traduccio: "acció recta, acció perfecta"
+    definicio: >
+      Acció moralment perfecta, realitzada amb plena conformitat amb la raó i la
+      virtut. En la teoria estoica, només el savi pot realitzar veritables katorthōmata,
+      mentre que la resta de persones fan accions «convenients» (kathēkonta) que poden
+      coincidir externament amb l'acció recta però sense la disposició interior perfecta.
+      Marc Aureli aspira a l'acció recta com a objectiu de cada moment.
+    usos: [3, 5, 6, 9, 11]
+
+  - id: "oikeiosis"
+    grec: "οἰκείωσις"
+    transliteracio: "oikeíōsis"
+    traduccio: "apropiació, afinitat natural"
+    definicio: >
+      Procés natural pel qual cada ésser viu reconeix com a propi el seu organisme
+      i tendeix a conservar-se. En l'estoïcisme, l'oikeiōsis s'expandeix gradualment:
+      de l'amor a un mateix a l'amor als fills, a la família, a la comunitat i
+      finalment a tota la humanitat. Marc Aureli fonamenta en aquest concepte el deure
+      de cura envers els altres i la idea que fer mal a un altre és fer-se mal a un
+      mateix, perquè tots formem part d'un únic organisme racional.
+    usos: [2, 3, 5, 6, 7, 9, 10, 11]
