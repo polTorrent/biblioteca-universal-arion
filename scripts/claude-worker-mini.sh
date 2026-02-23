@@ -21,7 +21,7 @@ LOCKFILE="$TASKS_DIR/worker.lock"
 
 MAX_RETRIES=3                # Intents per tasca abans de marcar com failed
 MAX_CONSECUTIVE_FAILS=5      # Pausa llarga si N tasques seguides fallen
-MAX_TASKS_PER_DAY=50         # Límit diari de tasques
+MAX_TASKS_PER_DAY=100         # Límit diari de tasques
 COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60             # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
@@ -102,6 +102,8 @@ run_task() {
     local exit_code=1
 
     # timeout mata el procés si supera TASK_TIMEOUT
+      log "🔧 DEBUG: Llançant claude -p (PID $$, timeout=$TASK_TIMEOUT)"
+      log "🔧 DEBUG: Instrucció: ${instruction:0:80}..."
       result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" claude -p "$instruction" \
         --max-turns 25 \
         --allowedTools "Edit" "Write" \
