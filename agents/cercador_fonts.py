@@ -6,7 +6,7 @@ tradicionals no estan disponibles.
 
 import os
 import time
-from typing import Any, Literal, cast, get_args
+from typing import Any, Literal
 
 from pydantic import BaseModel, Field
 
@@ -16,9 +16,6 @@ from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
 TipusFont = Literal["perseus", "latin_library", "gutenberg", "wikisource", "aozora", "ctext", "altre"]
 LlenguaOriginal = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "altres"]
 LlenguaCerca = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"]
-
-# Derivat automàticament del Literal (excloent "qualsevol")
-_LLENGUES_VALIDES = tuple(l for l in get_args(LlenguaCerca) if l != "qualsevol")
 
 # Intentar importar Gemini (nou SDK)
 try:
