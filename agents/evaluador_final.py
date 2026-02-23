@@ -508,7 +508,6 @@ APROVAT si:
         # Glossari
         glossari_path = ruta / "glossari.yml"
         if glossari_path.exists():
-            import yaml
             try:
                 glossari = yaml.safe_load(glossari_path.read_text(encoding="utf-8")) or {}
             except Exception:
@@ -517,7 +516,6 @@ APROVAT si:
         # Metadata
         metadata_path = ruta / "metadata.yml"
         if metadata_path.exists():
-            import yaml
             try:
                 metadata = yaml.safe_load(metadata_path.read_text(encoding="utf-8")) or {}
             except Exception:
