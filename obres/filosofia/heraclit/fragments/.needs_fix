@@ -1,0 +1,88 @@
+# Supervisió de Qualitat - Fragments d'Heràclit
+# Data: 2026-02-23
+# Puntuació: 6.8/10 (NECESSITA CORRECCIONS)
+# Supervisor: Claude (Anthropic) - Pipeline de supervisió
+
+## Resum
+
+La traducció dels fragments d'Heràclit és de bona qualitat literària (8/10),
+amb troballes excel·lents com "tenir seny" per σωφρονεῖν o "La Natura estima
+amagar-se". No obstant, presenta problemes greus de format que impedeixen
+la integració correcta amb el sistema web de la Biblioteca.
+
+## Puntuacions per criteri
+
+- Qualitat del català:      8.0/10
+- Fidelitat al original:    8.0/10
+- Glossari consistent:      6.0/10
+- Format correcte:          4.5/10
+- Metadata complet:         7.5/10
+- MITJANA:                  6.8/10
+
+## Problemes concrets a corregir
+
+### CRÍTICS (impedeixen el build web)
+
+1. **[FORMAT] Falten marques [^N] a traduccio.md**
+   - No hi ha cap referència a notes numerades al text de la traducció
+   - Cal afegir [^1], [^2], etc. als fragments on correspongui
+   - Sense això, el build no genera hipervincles a les notes
+
+2. **[FORMAT] Falten marques [T] a traduccio.md**
+   - Cap terme del glossari està marcat al text (ex: Lògos[T], Foc[T], Natura[T])
+   - Cal afegir terme[T] on apareguin termes del glossari
+   - Sense això, el build no genera els enllaços al glossari
+
+3. **[FORMAT] notes.md no segueix el format estàndard**
+   - Format actual: assaig temàtic (Introducció, Context, Doctrines, Criteris)
+   - Format requerit: ## [N] Títol de la nota (notes numerades vinculables)
+   - Cal reestructurar les notes com a notes crítiques numerades vinculades
+     als fragments concrets via [^N]
+
+### IMPORTANTS (afecten qualitat)
+
+4. **[GLOSSARI] Inconsistència DK 119: "geni" vs "destí / esperit guardià"**
+   - La traducció diu "L'ètos és per a l'home el seu geni"
+   - El glossari defineix δαίμων com "destí / esperit guardià"
+   - Cal harmonitzar: o bé canviar la traducció o bé actualitzar el glossari
+
+5. **[METADATA] Estadístiques incorrectes**
+   - termes_glossari: 12 → real: 11
+   - notes: 15 → real: 0 notes numerades (notes.md és un assaig, no notes [N])
+
+6. **[GLOSSARI] Termes relacionats sense definir**
+   - "sophos", "theos", "eris" referenciats com a termes_relacionats
+     però absents del glossari. Cal afegir-los o eliminar les referències.
+
+### MENORS (millores recomanades)
+
+7. **[CATALÀ] DK 125a: "se separa" → "es separa"**
+   - "se" proclític és dialectal/arcaic; la forma estàndard és "es"
+
+8. **[CATALÀ] DK 125a: "ciceu" no és terme estàndard**
+   - Opcions: "cicèon" (adaptació més regular), o mantenir κυκεών amb nota
+
+9. **[CATALÀ] DK 126: "s'humiteja" no és forma normativa**
+   - No figura al DIEC. Alternatives: "s'humidifica", "es mulla"
+
+10. **[CATALÀ] DK 51: "divergeix amb si mateix" → "divergeix de si mateix"**
+    - Règim preposicional correcte de "divergir": divergir DE
+
+11. **[FIDELITAT] DK 67: "ὁ θεός" traduït com "La divinitat"**
+    - L'original diu "el déu" (concret), no "la divinitat" (abstracte)
+    - Suggeriment: "El déu: dia nit, hivern estiu..."
+
+12. **[FORMAT] Manca portada.png**
+    - L'obra no té portada. El build generarà un placeholder automàtic,
+      però caldria generar-ne una amb l'Agent Portadista.
+
+## Accions recomanades (per ordre de prioritat)
+
+1. Reestructurar notes.md amb format ## [N] Títol (notes numerades)
+2. Afegir marques [^N] a traduccio.md vinculant fragments a notes
+3. Afegir marques [T] a traduccio.md per als termes del glossari
+4. Corregir les 4 formes lingüístiques (punts 7-10)
+5. Harmonitzar "geni"/"destí" a DK 119
+6. Actualitzar estadístiques a metadata.yml
+7. Afegir termes mancants al glossari o netejar referències
+8. Generar portada amb Agent Portadista
