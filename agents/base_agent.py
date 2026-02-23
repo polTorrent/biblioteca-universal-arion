@@ -7,7 +7,7 @@ import re
 import subprocess
 import time
 from abc import ABC, abstractmethod
-from typing import Any
+from typing import Any, ClassVar
 
 import anthropic
 from dotenv import load_dotenv
@@ -138,7 +138,7 @@ class BaseAgent(ABC):
     """
 
     # Nom de l'agent per al logging (sobreescriure a subclasses)
-    agent_name: str = "BaseAgent"
+    agent_name: ClassVar[str] = "BaseAgent"
 
     def __init__(
         self,
@@ -157,12 +157,11 @@ class BaseAgent(ABC):
         is_claude_code = os.getenv("CLAUDECODE") == "1"
 
         # Si estem en Claude Code i no s'ha especificat use_api, usar subscripció
+        self.client: anthropic.Anthropic | None
         if is_claude_code and not self.config.use_api:
             # Mode subscripció: Claude Code utilitza la subscripció Pro/Max
-            # IMPORTANT: Cal utilitzar claude CLI o mètode similar
-            # Per ara, marcar que NO s'usa API
             self.use_subscription = True
-            self.client = None  # No usar SDK d'Anthropic directament
+            self.client = None
         else:
             # Mode API: Usuaris web amb pagament
             self.use_subscription = False
@@ -325,7 +324,14 @@ class BaseAgent(ABC):
         Raises:
             RetryError: Si s'exhaureixen tots els intents.
             anthropic.APIError: Si l'error no és recuperable.
+            RuntimeError: Si el client no està inicialitzat.
         """
+        if self.client is None:
+            raise RuntimeError(
+                "El client d'Anthropic no està inicialitzat. "
+                "No es pot cridar l'API en mode subscripció."
+            )
+
         @retry(
             stop=stop_after_attempt(3),
             wait=wait_exponential(multiplier=2, min=4, max=60),
@@ -420,8 +426,7 @@ class BaseAgent(ABC):
                     # Determinar model utilitzat
                     model_usage = response_data.get("modelUsage", {})
                     if model_usage:
-                        # Agafar primer model de la llista
-                        model_used = list(model_usage.keys())[0] if model_usage else self.config.model
+                        model_used = next(iter(model_usage))
                     else:
                         model_used = self.config.model
 
@@ -535,8 +540,8 @@ class BaseAgent(ABC):
                     raise
 
         # Si hem arribat aquí sense retornar, propagar l'últim error
-        if last_error:
-            raise last_error
+        # (en la pràctica, el for sempre retorna o llença excepció)
+        raise last_error if last_error else RuntimeError("Cap resposta generada")
 
     def _get_reinforced_academic_prompt(self, attempt: int) -> str:
         """Genera un system prompt amb context acadèmic reforçat per a reintents."""
