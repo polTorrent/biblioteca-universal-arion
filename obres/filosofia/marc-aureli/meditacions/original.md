@@ -1,9 +1,3 @@
-# Μάρκος Αυρήλιος - Τὰ εἰς ἑαυτόν
-# Marcus Aurelius - Meditations
-# Text source: Perseus Digital Library (Jan Hendrik Leopold, ed., Teubner, 1908)
-# License: CC BY-SA 3.0 US
-
-
 ## Βιβλίον 1
 
 ### 1.1
