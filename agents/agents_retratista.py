@@ -31,6 +31,8 @@ import os
 import requests
 from pathlib import Path
 from PIL import Image
+from typing import Any, ClassVar
+
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, BaseAgent
