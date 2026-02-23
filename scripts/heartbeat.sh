@@ -412,6 +412,7 @@ else
     # Per ordre de PRIORITAT:
     update_queue_status      # 0. Actualitzar estat
     check_failed             # 1. Recuperar fallides
+    bash "$PROJECT/scripts/fix-structure.sh"  # 1.5 Auto-correcció estructura
     check_supervision        # 2. ⭐ SUPERVISIÓ (NOU!)
     check_translations       # 3. Noves traduccions
     check_web_sync           # 4. Web sincronitzada
