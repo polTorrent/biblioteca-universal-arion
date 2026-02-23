@@ -8,12 +8,11 @@ S'executa abans de la traducció per proporcionar:
 - Notes per a l'anotador crític
 """
 
-from typing import Any
-
 from pydantic import BaseModel, Field
 
-from agents.base_agent import BaseAgent, AgentConfig, AgentResponse, extract_json_from_text
+from agents.base_agent import BaseAgent, AgentConfig, extract_json_from_text
 from core import MemoriaContextual, ContextInvestigacio
+from utils.logger import AgentLogger
 
 
 # =============================================================================
@@ -120,7 +119,7 @@ IMPORTANT: Respon NOMÉS amb el JSON, sense text addicional abans o després.
     def __init__(
         self,
         config: AgentConfig | None = None,
-        logger: Any = None,
+        logger: AgentLogger | None = None,
     ) -> None:
         """Inicialitza l'agent investigador.
 
