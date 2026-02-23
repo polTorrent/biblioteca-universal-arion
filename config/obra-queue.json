@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-22",
+  "updated_at": "2026-02-23",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -10,8 +10,11 @@
       "categoria": "filosofia",
       "dificultat": 3,
       "paraules_aprox": 5000,
-      "fonts": ["perseus", "gutenberg"],
-      "status": "pending",
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "done",
       "notes": "Ja tenim coses començades, completar i verificar"
     },
     {
@@ -21,7 +24,10 @@
       "categoria": "filosofia",
       "dificultat": 2,
       "paraules_aprox": 2000,
-      "fonts": ["latin_library", "gutenberg"],
+      "fonts": [
+        "latin_library",
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Breu, ideal per validar el pipeline amb llatí"
     },
@@ -32,7 +38,9 @@
       "categoria": "filosofia",
       "dificultat": 3,
       "paraules_aprox": 8000,
-      "fonts": ["perseus"],
+      "fonts": [
+        "perseus"
+      ],
       "status": "pending",
       "notes": "Diàleg curt, bon test per format"
     },
@@ -43,7 +51,10 @@
       "categoria": "filosofia",
       "dificultat": 4,
       "paraules_aprox": 15000,
-      "fonts": ["perseus", "gutenberg"],
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Obra llarga, bona prova per chunking"
     },
@@ -54,7 +65,9 @@
       "categoria": "novel·la",
       "dificultat": 3,
       "paraules_aprox": 20000,
-      "fonts": ["gutenberg"],
+      "fonts": [
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Primera narrativa, validar pipeline per ficció"
     },
@@ -65,7 +78,9 @@
       "categoria": "oriental",
       "dificultat": 5,
       "paraules_aprox": 5000,
-      "fonts": ["ctext"],
+      "fonts": [
+        "ctext"
+      ],
       "status": "pending",
       "notes": "Xinès clàssic, necessita traducció pont"
     },
@@ -76,7 +91,9 @@
       "categoria": "poesia",
       "dificultat": 4,
       "paraules_aprox": 2000,
-      "fonts": ["gutenberg"],
+      "fonts": [
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Poesia, validar pipeline per mètrica"
     },
@@ -87,7 +104,10 @@
       "categoria": "novel·la",
       "dificultat": 4,
       "paraules_aprox": 30000,
-      "fonts": ["gutenberg", "wikisource"],
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
       "status": "pending",
       "notes": "Narrativa russa, gran test"
     },
@@ -98,7 +118,10 @@
       "categoria": "poesia",
       "dificultat": 5,
       "paraules_aprox": 3000,
-      "fonts": ["wikisource", "gutenberg"],
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Poesia francesa, molt exigent"
     },
@@ -109,7 +132,9 @@
       "categoria": "filosofia",
       "dificultat": 5,
       "paraules_aprox": 50000,
-      "fonts": ["gutenberg"],
+      "fonts": [
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Filosofia densa, prova extrema"
     }

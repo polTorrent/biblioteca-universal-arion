@@ -102,7 +102,7 @@ run_task() {
     local exit_code=1
 
     # timeout mata el procés si supera TASK_TIMEOUT
-    result=$(cd "$PROJECT_DIR" && timeout "$TASK_TIMEOUT" claude -p "$instruction" \
+      result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" claude -p "$instruction" \
         --max-turns 10 \
         --allowedTools "Edit" "Write" \
         "Bash(cat:*)" "Bash(grep:*)" "Bash(ls:*)" "Bash(find:*)" \
