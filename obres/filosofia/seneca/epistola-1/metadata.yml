@@ -1,0 +1,46 @@
+obra:
+  titol: "Epístola I — Sobre la recuperació del temps"
+  titol_original: "Epistula I — De recuperando tempore"
+  autor: Sèneca
+  autor_original: Lucius Annaeus Seneca
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: 62-65
+  any_traduccio: 2026
+  llengua_original: llatí
+  genere: filosofia
+  subgenere: epístola moral
+  descripcio: >
+    Primera de les 124 Epístoles morals a Lucili de Sèneca (c. 4 aC – 65 dC).
+    Tracta sobre el valor del temps i la necessitat de recuperar-lo de les
+    distraccions, la negligència i els altres. Sèneca exhorta Lucili a prendre
+    possessió de cada hora, perquè el temps és l'únic bé veritablement nostre
+    i, tanmateix, l'únic que no podem retornar.
+  font_original: "L. D. Reynolds (ed.), L. Annaei Senecae Ad Lucilium Epistulae Morales, Oxford Classical Texts, 1965"
+  domini_public: true
+  temes:
+    - estoïcisme
+    - temps
+    - memento mori
+    - negligència
+    - parsimònia
+  context:
+    tradicio: filosofia estoica romana
+    influencies:
+      - Zenó de Citi
+      - Crisip
+      - Posidoni
+    obres_relacionades:
+      - De Brevitate Vitae de Sèneca
+      - Meditacions de Marc Aureli
+      - Enchiridion d'Epictet
+  estadistiques:
+    paraules_original: 285
+    paraules_traduccio: 340
+    seccions: 7
+    notes: 7
+    termes_glossari: 2
+revisio:
+  estat: traduït
+  data_revisio: '2026-02-23'
+  qualitat: 7.5
+  requereix_revisio_humana: true
