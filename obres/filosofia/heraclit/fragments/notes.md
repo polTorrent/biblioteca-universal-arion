@@ -1,83 +1,61 @@
-# Notes del traductor
+# Notes crítiques - Fragments d'Heràclit
 
-## Introducció a Heràclit
+## [1] El Logos heraclitià
 
-Heràclit d'Efes (c. 535-475 aC) és un dels filòsofs més enigmàtics i influents de l'antiguitat. Conegut ja en l'antiguitat com "l'Obscur" (ὁ Σκοτεινός), el seu estil aforístic i oracular ha generat interpretacions múltiples i sovint contradictòries.
+El concepte de λόγος (Logos) és el nucli del pensament d'Heràclit. Polisèmic en grec —raó, paraula, discurs, proporció, compte—, en Heràclit designa la llei còsmica que ordena l'univers, el principi racional que governa tots els canvis, i allò "comú" (ξυνόν) a tots però ignorat per la majoria. Mantenim el terme grec quan té sentit tècnic. El fragment DK 1 obre probablement l'obra original *Sobre la natura* i estableix d'entrada la paradoxa: el Logos és etern i accessible, però els humans no el comprenen.
 
-De la seva obra, probablement titulada *Sobre la natura* (Περὶ φύσεως), només conservem uns 130 fragments preservats en citacions d'autors posteriors: Aristòtil, Plató, els estoics, Diògenes Laerci, Hipòlit de Roma, i altres.
+## [2] El Comú (ξυνόν) contra l'opinió privada
 
-## Context històric i cultural
+El terme ξυνόν (xynon, "comú") s'oposa a ἰδία φρόνησις (opinió privada). Per Heràclit, la majoria dels humans viuen tancats en la seva comprensió particular, ignorant el Logos que és comú a tots. El paral·lel amb la llei de la polis (DK 114) revela una dimensió política: com la ciutat necessita la llei, els homes necessiten el Logos.
 
-Efes era una de les polis més riques de Jònia, a la costa occidental d'Anatòlia. Heràclit pertanyia a una família aristocràtica que tenia drets hereditaris sobre el sacerdoci del temple d'Àrtemis. Segons la tradició, va renunciar a aquests privilegis en favor del seu germà.
+## [3] El riu i el flux
 
-La seva filosofia sorgeix en el context de la recerca presocràtica d'un principi (arkhé) que expliqui la realitat. Mentre Tales proposava l'aigua i Anaximenes l'aire, Heràclit identifica el foc com a element fonamental.
+Els fragments del riu (DK 12, 49a, 91) il·lustren la doctrina del flux perpetu, sintetitzada en la frase πάντα ῥεῖ ("tot flueix"), que no apareix literalment als fragments però resumeix el pensament heraclitià. Tanmateix, Heràclit no és un relativista: el canvi segueix mesures i proporcions regulars (μέτρα). La identitat del riu es manté malgrat el canvi constant de les aigües.
 
-## Doctrines principals
+## [4] El foc etern i les mesures còsmiques
 
-### 1. El Logos
+En DK 30, el κόσμος (món ordenat) no ha estat creat per cap déu ni home, sinó que és foc eternament viu (πῦρ ἀείζωον). L'expressió "s'encén amb mesura i s'apaga amb mesura" (ἁπτόμενον μέτρα καὶ ἀποσβεννύμενον μέτρα) indica que el canvi còsmic segueix proporcions regulars, no és caòtic. El foc és alhora principi material i símbol del dinamisme universal.
 
-El concepte més important d'Heràclit és el Logos (λόγος). Aquesta paraula grega té múltiples significats: raó, paraula, discurs, proporció, compte. Per Heràclit, el Logos és:
+## [5] El cicle de les transformacions elementals
 
-- La llei còsmica que ordena l'univers
-- El principi racional que governa tots els canvis
-- La veritat que pot ser expressada i compresa
-- Allò "comú" (xynon) a tots, però ignorat per la majoria
+DK 36 descriu el cicle ànima-aigua-terra i el retorn invers. Aquesta cosmologia de transformacions recíproques connecta amb la doctrina del foc (DK 90): totes les coses són intercanvi del foc, com les mercaderies ho són de l'or. L'ànima (ψυχή) participa d'aquest cicle còsmic.
 
-### 2. El flux (πάντα ῥεῖ)
+## [6] L'harmonia de tensions contràries
 
-La doctrina del flux perpetu és la més coneguda, sintetitzada en la frase "tot flueix" (πάντα ῥεῖ), que no apareix literalment als fragments però resumeix el seu pensament. La imatge del riu il·lustra que la realitat és canvi constant.
+DK 51 presenta la doctrina central de la unitat dels oposats. La παλίντροπος ἁρμονίη ("harmonia de tensió inversa") no és absència de conflicte sinó la unitat dinàmica que emergeix de la tensió entre contraris. La imatge de l'arc i la lira és precisa: ambdós funcionen gràcies a la tensió entre forces oposades. El verb διαφερόμενον significa literalment "portat en direccions oposades".
 
-Tanmateix, Heràclit no és un relativista: el canvi segueix mesures i proporcions regulars (metra). El Logos garanteix l'ordre dins del flux.
+## [7] La guerra com a principi creador
 
-### 3. La unitat dels contraris
+DK 53 proclama πόλεμος (guerra/conflicte) com a pare i rei de totes les coses. No és violència destructiva sinó la tensió dinàmica que genera i manté l'ordre còsmic. El conflicte determina l'estatus ontològic: déus o homes, esclaus o lliures. DK 80 confirma que la guerra és "comú" (ξυνόν) i la justícia és contesa (ἔρις).
 
-Per Heràclit, els oposats no són simplement contraris sinó aspectes complementaris d'una mateixa realitat:
+## [8] La identitat dels contraris
 
-- Dia i nit
-- Vida i mort
-- Amunt i avall
-- Guerra i pau
+DK 60, 62, 67 i 88 il·lustren la doctrina de la unitat dels oposats. El camí amunt i avall és "un i el mateix" (DK 60); immortals i mortals intercanvien els seus estats (DK 62); el déu és simultàniament dia-nit, hivern-estiu, guerra-pau (DK 67). En DK 67, ὁ θεός ("el déu") designa la divinitat en sentit concret —no abstracte—, com a força que conté en si tots els oposats.
 
-La tensió entre contraris (l'"harmonia de tensions contràries") és el que manté l'ordre del cosmos, com la tensió de l'arc o les cordes de la lira.
+## [9] El foc com a equivalent universal
 
-### 4. El foc com a principi
+DK 90 estableix una analogia econòmica: el foc és a les coses el que l'or és a les mercaderies —un equivalent universal d'intercanvi. Aquesta metàfora comercial, notable en un filòsof aristocràtic, reflecteix l'economia monetària emergent a les polis jòniques del segle VI aC.
 
-El foc és el símbol i potser també la substància primordial:
+## [10] Autoconeixement i saviesa
 
-- Representa el canvi constant (sempre consumint i renovant-se)
-- Encarna les transformacions còsmiques
-- Manté les "mesures" que regulen l'univers
-- És l'equivalent universal (com l'or en el comerç)
+DK 101 ("M'he cercat a mi mateix") anticipa el γνῶθι σαυτόν ("coneix-te a tu mateix") dèlfic. DK 112 vincula el seny (σωφρονεῖν) amb dir veritats i obrar segons la natura (κατὰ φύσιν). La traducció "tenir seny" per σωφρονεῖν captura el sentit de moderació i lucidesa pròpi del terme grec.
 
-## Criteris de traducció
+## [11] L'ànima seca
 
-### Fidelitat i claredat
+DK 118 afirma que l'ànima seca (αὔη ψυχή) és la més sàvia. La humitat s'associa a l'embriaguesa i la pèrdua de consciència (cf. DK 117, no inclòs aquí). L'ànima participa del foc còsmic: com més seca, més propera al foc i al Logos.
 
-He intentat mantenir la concisió i densitat de l'original grec, evitant paràfrasis explicatives dins del text. Les notes aclareixen el sentit sense diluir la força aforística.
+## [12] Caràcter i destí
 
-### Termes tècnics
+DK 119, ἦθος ἀνθρώπῳ δαίμων, és un dels fragments més citats. Traduïm δαίμων com "destí", seguint la interpretació que identifica el caràcter (ἦθος) amb la força que determina la vida de cadascú. No són forces exteriors sinó el nostre propi tarannà qui forja el nostre destí.
 
-- **Logos**: Mantinc el terme grec quan té sentit tècnic, traduint-lo només quan el context ho permet
-- **Physis**: "Natura" captura millor el sentit dinàmic que "naturalesa"
-- **Kosmos**: "Món" en sentit d'ordre bell i harmoniós
-- **Polemos**: "Guerra" entesa com a conflicte creatiu
+## [13] La natura s'amaga
 
-### Estil oracular
+DK 123, φύσις κρύπτεσθαι φιλεῖ, és potser l'aforisme heraclitià més celebrat. "La Natura estima amagar-se" expressa que la veritat profunda de les coses no és evident sinó que requereix recerca activa. φύσις aquí té el sentit dinàmic de "procés pel qual les coses es manifesten", i paradoxalment, aquest procés tendeix a ocultar-se.
 
-He preservat les estructures paral·leles, les antítesis i el ritme sentenciós que caracteritzen Heràclit. Alguns fragments semblen deliberadament ambigus, i he mantingut aquesta ambigüitat.
+## [14] El cicèon
 
-## Influència posterior
+DK 125a fa referència al κυκεών (cicèon), una beguda ritual grega feta de farina d'ordi, formatge ratllat, vi i herbes. Era una beguda habitual però també tenia ús ritual als Misteris d'Eleusis. El fragment il·lustra la doctrina del flux: sense moviment (agitació), els components es separen i la barreja perd la seva identitat.
 
-El pensament d'Heràclit ha tingut una influència enorme:
+## [15] La reciprocitat dels contraris
 
-- **Plató** el critica però n'adopta idees
-- **Els estoics** fan del Logos un concepte central
-- **Hegel** hi veu un precursor de la dialèctica
-- **Nietzsche** l'admira com a pensador tràgic
-- **Heidegger** hi dedica seminaris sencers
-
-## Bibliografia recomanada
-
-- Kirk, G.S., Raven, J.E., Schofield, M. *Els filòsofs presocràtics*
-- Marcovich, M. *Heraclitus: Greek Text with a Short Commentary*
-- Kahn, Charles H. *The Art and Thought of Heraclitus*
+DK 126 tanca la selecció amb una enumeració de transformacions recíproques: fred-calor, calent-fred, humit-sec, eixut-humit. Aquesta circularitat de les qualitats reflecteix el principi heraclitià que els oposats són aspectes complementaris d'una mateixa realitat en transformació constant.
