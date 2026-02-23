@@ -275,12 +275,6 @@ Inclou:
                 "Cal configurar GOOGLE_API_KEY o GEMINI_API_KEY per usar Gemini"
             )
 
-        # Crear client Gemini amb el nou SDK
-        client = genai.Client(api_key=api_key)
-
-        # Configurar Google Search tool per grounding
-        google_search_tool = genai_types.Tool(google_search=genai_types.GoogleSearch())
-
         start_time = time.time()
 
         if obtenir_text_complet:
@@ -312,6 +306,12 @@ Indica:
 4. Notes sobre la disponibilitat"""
 
         try:
+            # Crear client Gemini amb el nou SDK
+            client = genai.Client(api_key=api_key)
+
+            # Configurar Google Search tool per grounding
+            google_search_tool = genai_types.Tool(google_search=genai_types.GoogleSearch())
+
             response = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=prompt,
