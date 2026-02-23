@@ -1382,7 +1382,7 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             try:
                 data = json.loads(body)
                 t,instr,dur = data.get('type','translation'), data.get('instruction',''), data.get('duration',30)
-                cmd = f'bash {PROJECT_DIR}/scripts/task-manager.sh add {t} "{instr}" {dur}'
+                cmd = f'bash {PROJECT_DIR}/scripts/task-manager.sh add {t} "{instr}"'
                 result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=10)
                 self.send_response(200); self.send_header('Content-Type','application/json'); self.end_headers()
                 self.wfile.write(json.dumps({"success":result.returncode==0,"output":result.stdout+result.stderr}).encode())
