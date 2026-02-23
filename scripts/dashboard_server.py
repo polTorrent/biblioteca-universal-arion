@@ -310,6 +310,8 @@ def collect_all_data():
         "openclaw": get_openclaw_status(),
         "diem": get_diem_balance(),
         "logs": get_logs(80),
+        "lock_file": (Path.home() / ".openclaw/workspace/tasks/worker.lock").exists(),
+        "last_log_time": None,
     }
 
 
@@ -808,6 +810,32 @@ body::before {
   .stats-row { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* ═══ CONTROL BUTTONS ═══ */
+.ctrl-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.ctrl-btn:hover { transform: translateY(-1px); }
+.ctrl-btn:active { transform: translateY(0); }
+.ctrl-btn.btn-green { border-color: var(--accent-green); color: var(--accent-green); }
+.ctrl-btn.btn-green:hover { background: rgba(16, 185, 129, 0.15); box-shadow: 0 0 15px rgba(16, 185, 129, 0.2); }
+.ctrl-btn.btn-blue { border-color: var(--accent-blue); color: var(--accent-blue); }
+.ctrl-btn.btn-blue:hover { background: rgba(59, 130, 246, 0.15); box-shadow: 0 0 15px rgba(59, 130, 246, 0.2); }
+.ctrl-btn.btn-yellow { border-color: var(--accent-yellow); color: var(--accent-yellow); }
+.ctrl-btn.btn-yellow:hover { background: rgba(245, 158, 11, 0.15); box-shadow: 0 0 15px rgba(245, 158, 11, 0.2); }
+.ctrl-btn.btn-orange { border-color: var(--accent-orange); color: var(--accent-orange); }
+.ctrl-btn.btn-orange:hover { background: rgba(249, 115, 22, 0.15); box-shadow: 0 0 15px rgba(249, 115, 22, 0.2); }
+.ctrl-btn.loading { opacity: 0.5; pointer-events: none; }
+
 /* Animations */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(4px); }
@@ -840,6 +868,21 @@ body::before {
 
 <div class="dashboard" id="dashboard">
   <div class="stats-row" id="stats-row"></div>
+
+  <!-- Control Panel -->
+  <div class="panel" style="border-color:var(--accent-blue)">
+    <div class="panel-header">
+      <div class="panel-title">🎛 Control Panel</div>
+      <span id="action-status" style="font-family:var(--font-mono);font-size:0.75rem;color:var(--accent-green)"></span>
+    </div>
+    <div class="panel-body" style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center">
+      <button onclick="doAction('restart-worker')" class="ctrl-btn btn-green">▶ Restart Worker</button>
+      <button onclick="doAction('heartbeat')" class="ctrl-btn btn-blue">💓 Heartbeat</button>
+      <button onclick="doAction('clear-lock')" class="ctrl-btn btn-yellow">🔓 Clear Lock</button>
+      <button onclick="doAction('clear-running')" class="ctrl-btn btn-orange">♻️ Unstick Tasks</button>
+      <div id="worker-detail" style="margin-left:auto;font-family:var(--font-mono);font-size:0.72rem;color:var(--text-secondary)"></div>
+    </div>
+  </div>
 
   <!-- Pipeline Flow -->
   <div class="panel">
@@ -1132,12 +1175,57 @@ async function refresh() {
     renderLogs(data);
     renderSystem(data);
     renderGit(data);
+    renderWorkerDetail(data);
 
     document.getElementById('live-badge').className = 'status-badge status-live';
   } catch (e) {
     document.getElementById('live-badge').innerHTML = '<span style="color:var(--accent-red)">● OFFLINE</span>';
   }
   countdown = Math.round(REFRESH_INTERVAL/1000);
+}
+
+// ═══ ACTIONS ═══
+async function doAction(action) {
+  const btn = event.target;
+  const statusEl = document.getElementById('action-status');
+  btn.classList.add('loading');
+  btn.textContent += ' ...';
+  statusEl.textContent = '⏳ Executant...';
+  statusEl.style.color = 'var(--accent-yellow)';
+
+  try {
+    const resp = await fetch(`/api/actions/${action}`);
+    const data = await resp.json();
+    statusEl.textContent = data.ok ? `✅ ${data.msg}` : `❌ ${data.msg}`;
+    statusEl.style.color = data.ok ? 'var(--accent-green)' : 'var(--accent-red)';
+    setTimeout(refresh, 2000);
+  } catch (e) {
+    statusEl.textContent = `❌ Error: ${e.message}`;
+    statusEl.style.color = 'var(--accent-red)';
+  }
+
+  btn.classList.remove('loading');
+  btn.textContent = btn.textContent.replace(' ...', '');
+  setTimeout(() => { statusEl.textContent = ''; }, 8000);
+}
+
+// ═══ WORKER DETAIL ═══
+function renderWorkerDetail(d) {
+  const el = document.getElementById('worker-detail');
+  const worker = d.worker;
+  const lock = d.lock_file;
+  const running = d.tasks.running.length;
+  const lastLog = d.logs.length > 0 ? d.logs[d.logs.length - 1].substring(0, 50) : 'cap';
+
+  let html = '';
+  if (!worker.active) {
+    html += '<span style="color:var(--accent-red)">⚠️ WORKER ATURAT</span>';
+    if (lock) html += ' | <span style="color:var(--accent-yellow)">🔒 Lock actiu</span>';
+  } else {
+    html += `<span style="color:var(--accent-green)">PID: ${worker.pid || '?'}</span>`;
+  }
+  if (running > 0) html += ` | ⚡ ${running} running`;
+  el.innerHTML = html;
 }
 
 refresh();
@@ -1161,6 +1249,67 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.end_headers()
             self.wfile.write(DASHBOARD_HTML.encode("utf-8"))
 
+        elif path == "/api/actions/restart-worker":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            try:
+                import subprocess
+                subprocess.run(["rm", "-f", str(Path.home() / ".openclaw/workspace/tasks/worker.lock")], timeout=5)
+                subprocess.run(["tmux", "kill-session", "-t", "worker"], capture_output=True, timeout=5)
+                time.sleep(1)
+                subprocess.Popen(
+                    ["tmux", "new-session", "-d", "-s", "worker",
+                     f"cd {PROJECT_DIR} && bash scripts/claude-worker-mini.sh"],
+                )
+                self.wfile.write(json.dumps({"ok": True, "msg": "Worker reiniciat"}).encode())
+            except Exception as e:
+                self.wfile.write(json.dumps({"ok": False, "msg": str(e)}).encode())
+
+        elif path == "/api/actions/heartbeat":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            try:
+                import subprocess
+                r = subprocess.run(
+                    ["bash", str(PROJECT_DIR / "scripts/heartbeat.sh")],
+                    capture_output=True, text=True, timeout=120
+                )
+                self.wfile.write(json.dumps({"ok": r.returncode == 0, "msg": r.stdout[-500:] if r.stdout else r.stderr[-500:]}).encode())
+            except Exception as e:
+                self.wfile.write(json.dumps({"ok": False, "msg": str(e)}).encode())
+
+        elif path == "/api/actions/clear-lock":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            try:
+                lock = Path.home() / ".openclaw/workspace/tasks/worker.lock"
+                if lock.exists():
+                    lock.unlink()
+                    self.wfile.write(json.dumps({"ok": True, "msg": "Lock eliminat"}).encode())
+                else:
+                    self.wfile.write(json.dumps({"ok": True, "msg": "No hi havia lock"}).encode())
+            except Exception as e:
+                self.wfile.write(json.dumps({"ok": False, "msg": str(e)}).encode())
+
+        elif path == "/api/actions/clear-running":
+            self.send_response(200)
+            self.send_header("Content-Type", "application/json")
+            self.end_headers()
+            try:
+                running_dir = TASKS_DIR / "running"
+                pending_dir = TASKS_DIR / "pending"
+                moved = 0
+                if running_dir.exists():
+                    for f in running_dir.glob("*.json"):
+                        f.rename(pending_dir / f.name)
+                        moved += 1
+                self.wfile.write(json.dumps({"ok": True, "msg": f"{moved} tasques retornades a pending"}).encode())
+            except Exception as e:
+                self.wfile.write(json.dumps({"ok": False, "msg": str(e)}).encode())
+
         elif path == "/api/status":
             self.send_response(200)
             self.send_header("Content-Type", "application/json; charset=utf-8")
@@ -1171,6 +1320,15 @@ class DashboardHandler(SimpleHTTPRequestHandler):
                 self.wfile.write(json.dumps(result, ensure_ascii=False, default=str).encode("utf-8"))
             except Exception as e:
                 self.wfile.write(json.dumps({"error": str(e)}).encode("utf-8"))
+        else:
+            self.send_response(404)
+            self.end_headers()
+
+    def do_POST(self):
+        """Handle POST requests for actions."""
+        path = urlparse(self.path).path
+        if path.startswith("/api/actions/"):
+            self.do_GET()
         else:
             self.send_response(404)
             self.end_headers()
