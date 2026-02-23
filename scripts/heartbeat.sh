@@ -128,7 +128,7 @@ for obra in queue.get('obres', []):
         case "$action" in
             NEW)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Tradueix '$titol' de $autor del $extra1 al català. Busca el text original a Perseus, Gutenberg o Wikisource. Guarda a obres/$extra2/. Inclou metadata.yml. Després executa 'python3 scripts/build.py' per actualitzar la web."
+                    add_task "translate" "Tradueix '$titol' de $autor del $extra1 al català. 1) Busca text original a Perseus/Gutenberg/Wikisource, guarda a obres/$extra2/original.md. 2) Crea metadata.yml. 3) Executa: python3 scripts/traduir_pipeline.py obres/$extra2/. Si el pipeline falla, tradueix manualment amb glossari i notes. 4) Commit+push."
                 fi
                 ;;
             CONTINUE)
@@ -253,7 +253,7 @@ check_needs_fix() {
         if [ "${score_int:-0}" -eq 0 ]; then
             # PUNTUACIÓ 0 → Traducció corrupta, cal retraduir de zero
             log "   🔴 $obra_name: puntuació 0/10 — RETRADUCCIÓ"
-            add_task "translation" "RETRADUEIX COMPLETAMENT l'\'obra a $relpath. La traducció anterior va FALLAR (puntuació 0/10). Passos: 1) Llegeix original.md. 2) Tradueix TOTS els capítols al català amb qualitat literària. 3) Afegeix notes [^N] i termes del glossari [T]. 4) Sobreescriu traduccio.md. 5) Crea/actualitza glossari.yml. 6) Actualitza metadata.yml (estat: traduït). 7) ELIMINA el fitxer .needs_fix. 8) Commit+push."
+            add_task "translation" "Executa el pipeline V2 per retraduir: cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $relpath. Si el pipeline falla, tradueix manualment: 1) Llegeix original.md a $relpath. 2) Tradueix TOTS els capítols al català. 3) Afegeix notes i glossari. 4) Sobreescriu traduccio.md. 5) Elimina .needs_fix/.fixing. 6) Commit+push."
         else
             # PUNTUACIÓ 1-6 → Cal corregir problemes específics
             log "   🟡 $obra_name: puntuació ${score}/10 — CORRECCIONS"
