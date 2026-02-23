@@ -6,11 +6,11 @@ tradicionals no estan disponibles.
 
 import os
 import time
-from typing import Any, Literal
+from typing import Any, ClassVar, Literal
 
 from pydantic import BaseModel, Field
 
-from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.base_agent import AgentResponse, BaseAgent
 
 # Type aliases per literals reutilitzats
 TipusFont = Literal["perseus", "latin_library", "gutenberg", "wikisource", "aozora", "ctext", "altre"]
@@ -72,7 +72,7 @@ class PescadorTextosAgent(BaseAgent):
     Project Gutenberg i Wikisource.
     """
 
-    agent_name: str = "PescadorTextos"
+    agent_name: ClassVar[str] = "PescadorTextos"
 
     @property
     def system_prompt(self) -> str:
@@ -331,6 +331,8 @@ Indica:
 
             return result
 
+        except RuntimeError:
+            raise
         except Exception as e:
             raise RuntimeError(f"Error en cerca Gemini: {e}") from e
 
