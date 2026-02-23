@@ -346,6 +346,7 @@ class BaseAgent(ABC):
             reraise=True,
         )
         def _call_with_retry() -> anthropic.types.Message:
+            assert self.client is not None  # Garantit pel check anterior
             return self.client.messages.create(
                 model=self.config.model,
                 max_tokens=self.config.max_tokens,
