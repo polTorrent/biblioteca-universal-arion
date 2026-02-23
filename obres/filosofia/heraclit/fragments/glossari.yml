@@ -64,7 +64,7 @@ termes:
       manté l'ordre còsmic.
     categoria: "metafísica"
     usos: [53, 67, 80]
-    termes_relacionats: ["eris", "harmonia"]
+    termes_relacionats: ["harmonia"]
 
   - id: "harmonia"
     grec: "ἁρμονίη"
@@ -90,7 +90,7 @@ termes:
       Logos còsmic i pot comprendre l'ordre universal.
     categoria: "antropologia"
     usos: [36, 118]
-    termes_relacionats: ["logos", "sophos"]
+    termes_relacionats: ["logos"]
 
   - id: "xynon"
     grec: "ξυνόν"
@@ -103,7 +103,7 @@ termes:
       vivint en el seu propi món particular.
     categoria: "epistemologia"
     usos: [2, 114]
-    termes_relacionats: ["logos", "sophos"]
+    termes_relacionats: ["logos"]
 
   - id: "ethos"
     grec: "ἦθος"
@@ -128,7 +128,7 @@ termes:
       l'ethos: el nostre caràcter és el nostre destí.
     categoria: "teologia"
     usos: [119]
-    termes_relacionats: ["ethos", "theos"]
+    termes_relacionats: ["ethos"]
 
   - id: "metra"
     grec: "μέτρα"
