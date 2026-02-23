@@ -108,6 +108,10 @@ fons: Corpus Corporum
 
 [1] Cum videris itaque praetextam saepe iam sumptam, cum celebre in foro nomen, ne invideris; ista vitae damno parantur. Ut unus ab illis numeretur annus, omnis annos suos conterent. Quosdam antequam in summum ambitionis eniterentur, inter prima luctantis aetas reliquit; quosdam eum in consummationem dignitatis per mille indignitates erepsissent, misera subit cogitatio laborasse ipsos in titulum sepulcri; quorundam ultima senectus, dum in novas spes ut iuventa disponitur, inter conatus magnos et improbos invalida defecit. [2] Foedus ille, quem in iudicio pro ignotissimis litigatoribus grandem natu et imperitae coronae assensiones captantem, spiritus liquit; turpis ille, qui vivendo lassus citius quam laborando inter ipsa officia conlapsus est; turpis, quem accipiendis immorientem rationibus diu tractus risit heres. [3] Praeterire quod mihi occurrit exemplum non possum. S. Turannius29 fuit exactae diligentiae senex, qui post annum nonagesimum, cum vacationem procurationis ab C. Caesare ultro accepisset, componi se in lecto et velut exanimem a circumstante familia plangi iussit. Lugebat domus otium domini senis nec finivit ante tristitiam, quam labor illi suus restitutus est. Adeone iuvat occupatum mori? [4] Idem plerisque animus est; diutius cupiditas illis laboris quam facultas est; eum imbecillitate corporis pugnant, senectutem ipsam nullo alio nomine gravem iudicant, quam quod illos seponit. Lex a quinquagesimo anno militem non legit, a sexagesimo senatorem non citat; difficilius homines a se otium impetrant quam a lege. [5] Interim dum rapiuntur et rapiunt, dum alter alterius quietem rumpit, dum mutuo miseri sunt, vita est sine fructu, sine voluptate, sine ullo profectu animi. Nemo in conspicuo mortem habet, nemo non procul spes intendit; quidam vero disponunt etiam illa, quae ultra vitam sunt, magnas moles sepulcrorum et operum publicorum dedicationes et ad rogum munera et ambitiosas exequias. At me hercules istorum funera, tamquam minimum vixerint, ad faces et cereos ducenda sunt.
 
+---
+
+*Apparatus criticus*
+
 ↑ imprudens inferior MSS.: impudens A.
 
 ↑ at supplied by Pauly.
