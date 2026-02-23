@@ -535,5 +535,6 @@ else
 fi
 
 PENDING_FINAL=$(count_pending)
-log "💓 HEARTBEAT v3 completat. Cua: $PENDING → $PENDING_FINAL pendents"
+generate_report
+log "💓 HEARTBEAT v4 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"
