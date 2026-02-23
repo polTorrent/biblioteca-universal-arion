@@ -1,0 +1,94 @@
+# Supervisio de Qualitat - vierfache-wurzel
+# Data: 2026-02-23
+# Puntuacio: 6/10 - NECESSITA CORRECCIONS
+
+## Resum
+
+La traducció demostra un nivell excel·lent de català filosòfic i un aparat erudit
+impressionant (glossari, notes, citacions llatines/gregues). Tanmateix, presenta
+problemes estructurals significatius que impedeixen assolir el llindar de qualitat.
+
+## Puntuacions per àrea
+
+- Qualitat del català: 8/10
+- Fidelitat al original: 5/10
+- Glossari: 8/10
+- Format: 6/10
+- metadata.yml: 9/10
+
+## Problemes concrets a corregir
+
+### CRÍTIC: Traducció fortament abreujada
+
+- L'original té ~56.000 paraules (segons metadata.yml), però traduccio.md
+  conté aproximadament 12.000-14.000 paraules (~25% de l'original).
+- Moltes seccions estan condensades o resumides en lloc de traduïdes íntegrament.
+- Això constitueix una omissió significativa de contingut.
+- **Acció:** Completar la traducció íntegra de totes les seccions, o bé
+  marcar explícitament les seccions abreujades amb [abreujat] i planificar
+  la seva expansió.
+
+### CRÍTIC: original.md incomplet
+
+- original.md només conté el prefaci i §1-§3 (5.968 bytes), acabant amb
+  "[Text fortgesetzt — §4-§52 folgen]".
+- traduccio.md cobreix §1-§52 (8 capítols complets).
+- Per a una edició bilingüe, l'original complet és imprescindible.
+- **Acció:** Completar original.md amb el text alemany íntegre de la
+  tercera edició (1864), disponible a domini públic (Internet Archive).
+
+### IMPORTANT: Traducció via anglès, no directament de l'alemany
+
+- Les notes metodològiques (línia 741) reconeixen que el "Text de referència"
+  és la traducció anglesa de Mme. Karl Hillebrand (1907).
+- Una traducció al català des de l'anglès, i no directament de l'alemany,
+  introdueix una capa addicional d'interpretació i possibles desviacions.
+- **Acció:** Verificar la traducció contra el text alemany original, especialment
+  en passatges filosòficament delicats (§16, §20, §21, §43).
+
+### FORMAT: Numeració de capítols no segueix l'estàndard del projecte
+
+- Actual: "## Capítol primer:", "## Capítol segon:", etc.
+- Estàndard del projecte (CLAUDE.md): "## I", "## II", etc.
+- **Acció:** Reformatar els encapçalaments de capítol segons l'estàndard.
+
+### FORMAT: Notes no segueixen el sistema estàndard
+
+- traduccio.md utilitza notes amb noms descriptius ([^seneca], [^plato-kant], etc.)
+  en lloc de notes numerades ([^1], [^2], etc.) que el build espera.
+- notes.md conté assaigs temàtics en lloc de notes individuals amb format
+  "## [N] Títol de la nota".
+- **Acció:** Renumerar les notes a traduccio.md amb [^1], [^2], etc.
+  i reestructurar notes.md amb el format estàndard del projecte.
+
+### MENOR: Error d'etiquetatge al glossari
+
+- Línia 31 de traduccio.md: `[Plató]{.term data-term="subjekt"}` — etiqueta
+  incorrectament "Plató" amb el terme filosòfic "subjecte".
+- **Acció:** Eliminar l'etiqueta de glossari de "Plató" o canviar-la per
+  una de pertinent (p.ex., cap etiqueta, ja que Plató no és un terme tècnic).
+
+### MENOR: Portada
+
+- portada.png existeix (130KB) — verificar que no sigui un placeholder generat
+  automàticament pel build.
+
+## Aspectes positius
+
+- Excel·lent qualitat del català filosòfic: gramàtica impecable, estil natural,
+  terminologia precisa i consistent.
+- Glossari crític molt complet (30+ termes) amb definicions, notes i
+  traduccions alternatives ben justificades.
+- Aparat de notes erudit amb tipologia clara ([T], [F], [R]).
+- Citacions en llatí i grec mantingudes amb traduccions acurades.
+- Introducció editorial de gran qualitat que contextualitza l'obra.
+- Fitxer frases_llatines_gregues.md com a recurs addicional valuós.
+- metadata.yml molt complet i ben estructurat.
+
+## Prioritat de correccions
+
+1. Completar original.md (text alemany íntegre)
+2. Expandir traduccio.md (traducció completa, no abreujada)
+3. Verificar contra l'alemany original (no només via anglès)
+4. Reformatar capítols i notes segons estàndards del projecte
+5. Corregir error d'etiquetatge glossari (línia 31)
