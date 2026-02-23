@@ -9,17 +9,12 @@ obra:
   llengua_original: grec antic
   genere: filosofia
   subgenere: meditació filosòfica
-  descripcio: 'Reflexions personals de l''emperador romà Marc Aureli (121-180 dC),
-
+  descripcio: >
+    Reflexions personals de l'emperador romà Marc Aureli (121-180 dC),
     escrites en grec koiné durant les campanyes militars al Danubi.
-
     Dotze llibres de pensaments estoics sobre la virtut, el deure,
-
     la naturalesa, la mort i la vida examinada. Una de les obres
-
     fonamentals de la filosofia estoica i de la literatura universal.
-
-    '
   font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641
   domini_public: true
   temes:
@@ -36,6 +31,7 @@ obra:
     - Crisip
     - Zenó de Citi
     - Sèneca
+    - Heràclit
     obres_relacionades:
     - Enchiridion d'Epictet
     - Discursos d'Epictet
@@ -43,24 +39,13 @@ obra:
     - Epistulae Morales de Sèneca
   estadistiques:
     paraules_original: 30525
+    paraules_traduccio: 38257
     llibres: 12
+    seccions: 487
+    notes: 38
+    termes_glossari: 30
 revisio:
-  estat: revisat
+  estat: traduït
   data_revisio: '2026-02-23'
-  qualitat: 0.0
-avaluacio_final:
-  data: '2026-02-23T09:46:28.530786'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 0
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
+  qualitat: 7.5
   requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 0
