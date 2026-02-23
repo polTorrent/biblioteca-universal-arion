@@ -10,6 +10,7 @@ from abc import ABC, abstractmethod
 from typing import Any, ClassVar
 
 import anthropic
+from anthropic.types import TextBlock
 from dotenv import load_dotenv
 from pydantic import BaseModel, Field
 from tenacity import (
@@ -84,7 +85,7 @@ def extract_json_from_text(text: str) -> dict[str, Any] | None:
             if brace_count == 0:
                 start_idx = i
             brace_count += 1
-        elif char == '}':
+        elif char == '}' and brace_count > 0:
             brace_count -= 1
             if brace_count == 0 and start_idx is not None:
                 candidate = text[start_idx:i+1]
@@ -426,7 +427,7 @@ class BaseAgent(ABC):
 
                     # Extreure contingut de la resposta del CLI
                     # Format: {"type": "result", "result": "...", "usage": {...}, ...}
-                    content = response_data.get("result", "")
+                    content = response_data.get("result") or ""
 
                     # Determinar model utilitzat
                     model_usage = response_data.get("modelUsage", {})
@@ -494,7 +495,7 @@ class BaseAgent(ABC):
                     if not message.content:
                         raise RuntimeError("L'API ha retornat una resposta buida (sense contingut)")
                     first_block = message.content[0]
-                    if not hasattr(first_block, "text"):
+                    if not isinstance(first_block, TextBlock):
                         raise RuntimeError(
                             f"El primer bloc de contingut no és text (tipus: {first_block.type})"
                         )
