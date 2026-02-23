@@ -46,7 +46,7 @@ from agents.anotador_critic import (
     NotaCritica,
 )
 from agents.cercador_fonts import (
-    PescadorTextosAgent as CercadorFontsAgent,
+    CercadorFontsAgent,
     SearchRequest,
     TextMetadata,
     TextSource,
