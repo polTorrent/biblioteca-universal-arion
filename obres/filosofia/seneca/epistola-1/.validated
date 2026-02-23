@@ -1,0 +1,28 @@
+# Supervisió de Qualitat — VALIDAT
+# Data: 2026-02-23
+# Obra: Epístola I — Sobre la recuperació del temps (Sèneca)
+
+puntuacio_global: 8.0
+
+detall:
+  qualitat_catala: 8.0
+  fidelitat_original: 9.0
+  glossari: 6.5
+  format: 7.5
+  metadata: 9.0
+
+veredicte: APROVAT
+
+observacions_menors:
+  - "traduccio.md l.11: «se'ns escoln» → «se'ns escolen» (falta vocal final, errata)"
+  - "glossari.yml: camp 'usos' de 'lucili' diu [1,2,3,4,5] però Lucili no apareix a les seccions II ni III. Corregir a [1,4,5]"
+  - "traduccio.md: marca [T] per a Lucili només a la secció I; falta a seccions IV i V"
+  - "glossari.yml: considerar afegir termes com 'parsimonia' (sec. VII), 'iactura' (sec. I)"
+  - "Falta portada.png (generar amb scripts/generar_portades.py)"
+
+notes_positives:
+  - "Traducció excel·lent de la tríada retòrica a la secció I"
+  - "«Mentre s'ajorna, la vida passa de llarg» — troballa magnífica per a Dum differtur vita transcurrit"
+  - "Fidelitat completa: cap omissió ni invenció en les 7 seccions"
+  - "Notes erudites de gran qualitat amb referències creuades pertinents"
+  - "Metadata molt complet amb context, influències i estadístiques"
