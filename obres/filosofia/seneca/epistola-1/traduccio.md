@@ -8,7 +8,7 @@ Traduït del llatí per Biblioteca Arion
 
 ## I
 
-Fes-ho així, estimat Lucili[T]: reivindica't a tu mateix, i el temps que fins ara o t'era arrabassat o et robaven furtivament o se t'escapava, recull-lo i conserva'l. Convenç-te que és tal com t'escric: certs moments ens els prenen per força, d'altres ens els sostreuen, d'altres se'ns escoln. La pèrdua més vergonyosa, tanmateix, és la que es produeix per negligència[^1].
+Fes-ho així, estimat Lucili[T]: reivindica't a tu mateix, i el temps que fins ara o t'era arrabassat o et robaven furtivament o se t'escapava, recull-lo i conserva'l. Convenç-te que és tal com t'escric: certs moments ens els prenen per força, d'altres ens els sostreuen, d'altres se'ns escolen. La pèrdua més vergonyosa, tanmateix, és la que es produeix per negligència[^1].
 
 ## II
 
