@@ -257,7 +257,7 @@ Inclou:
         Raises:
             RuntimeError: Si Gemini no està disponible o falla.
         """
-        if not GEMINI_AVAILABLE:
+        if not GEMINI_AVAILABLE or genai is None:
             raise RuntimeError(
                 "Gemini no està disponible. Instal·la amb: pip install google-genai"
             )
@@ -397,3 +397,7 @@ Indica:
                 self.log_warning(f"Fallback Gemini ha fallat: {e}")
 
         return None
+
+
+# Àlies per compatibilitat amb el nom del mòdul
+CercadorFontsAgent = PescadorTextosAgent
