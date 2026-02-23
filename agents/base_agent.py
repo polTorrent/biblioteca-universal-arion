@@ -148,7 +148,7 @@ class BaseAgent(ABC):
     agent_name: ClassVar[str] = "BaseAgent"
 
     use_subscription: bool
-    client: "anthropic.Anthropic | None"
+    client: anthropic.Anthropic | None
     _logger: AgentLogger | None
 
     def __init__(
@@ -588,6 +588,6 @@ La traducció ha de ser fidel al text original per mantenir el seu valor acadèm
         """Log d'avís."""
         self.logger.log_warning(self.agent_name, message)
 
-    def log_error(self, message: str) -> None:
+    def log_error(self, error: str | Exception) -> None:
         """Log d'error."""
-        self.logger.log_error(self.agent_name, message)
+        self.logger.log_error(self.agent_name, error)
