@@ -68,7 +68,9 @@ def extract_json_from_text(text: str) -> dict[str, Any] | None:
 
     # Primer intentar parsejar directament
     try:
-        return json.loads(text.strip())
+        result = json.loads(text.strip())
+        if isinstance(result, dict):
+            return result
     except json.JSONDecodeError:
         pass
 
@@ -240,12 +242,14 @@ class BaseAgent(ABC):
             "--system-prompt", system_prompt,
             "--model", self.config.model,
             "--no-session-persistence",  # No desar sessió
-            prompt,
+            "-",  # Llegir prompt de stdin
         ]
 
-        # Executar comanda
+        # Executar comanda passant el prompt via stdin per evitar
+        # límits de longitud d'arguments del SO (ARG_MAX)
         result = subprocess.run(
             cmd,
+            input=prompt,
             capture_output=True,
             text=True,
             timeout=600,  # 10 minuts màxim per traduccions llargues
@@ -394,7 +398,7 @@ class BaseAgent(ABC):
         self.logger.log_start(self.agent_name, "Processant...")
 
         start_time = time.time()
-        last_error = None
+        last_error: Exception | None = None
         effective_system_prompt = self._get_effective_system_prompt()
 
         # Intentar amb reintents per errors de filtratge
