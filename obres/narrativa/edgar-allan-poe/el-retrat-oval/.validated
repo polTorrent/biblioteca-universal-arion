@@ -1,0 +1,34 @@
+data_validacio: 2026-02-23
+puntuacio_global: 7.5
+validat: true
+
+puntuacions:
+  qualitat_catala: 8.0
+  fidelitat_original: 8.0
+  glossari: 5.0
+  format: 8.5
+  metadata: 7.0
+
+resum: >
+  Traducció de bona qualitat amb registre literari gòtic excel·lent.
+  El to de Poe es manté fidelment i no hi ha omissions ni invencions.
+  Problemes menors de lèxic puntual i absència de glossari.yml.
+
+problemes_menors:
+  - "frangetjades" hauria de ser "franjades" (forma estàndard catalana)
+  - "estupor somort" per "dreamy stupor" — "somort" no captura "dreamy" (millor "somniós")
+  - "dominen els Apenins" per "frowned among the Appennines" — perd la personificació
+  - "cérvol" per "fawn" — hauria de ser "cervatell" (cria de cérvol)
+  - "estranyes" per "quaint" — millor "singulars" o "curioses"
+  - Ambigüitat en "i apartava els ulls de la tela" — no queda clar el sentit negatiu original
+
+manca:
+  - Fitxer glossari.yml (absent completament)
+  - Camp any_original a metadata.yml (1842)
+  - Camp font_original a metadata.yml
+
+recomanacions:
+  - Crear glossari.yml amb termes clau (arabesc, vinyeta, canelobre, heràldic)
+  - Corregir "frangetjades" → "franjades"
+  - Corregir "cérvol" → "cervatell"
+  - Afegir any_original i font_original a metadata.yml
