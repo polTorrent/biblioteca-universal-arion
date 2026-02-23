@@ -465,15 +465,17 @@ FAILED=$(ls -1 "$TASKS_DIR/failed/"*.json 2>/dev/null | wc -l)
 
 log "📊 Estat: $PENDING pendents, $RUNNING running, $DONE_TODAY done avui, $FAILED fallides"
 
+# SEMPRE executar (no depenen de cua):
+update_queue_status          # 0. Actualitzar estat
+check_failed                 # 1. Recuperar fallides
+bash "$PROJECT/scripts/fix-structure.sh"  # 1.5 Auto-correcció estructura
+check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPRE corre
+
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
-    log "✅ Cua plena ($PENDING). Res a fer."
+    log "✅ Cua plena ($PENDING). Saltant tasques noves."
 else
-    # Per ordre de PRIORITAT:
-    update_queue_status      # 0. Actualitzar estat
-    check_failed             # 1. Recuperar fallides
-    bash "$PROJECT/scripts/fix-structure.sh"  # 1.5 Auto-correcció estructura
-    check_supervision        # 2. ⭐ SUPERVISIÓ (NOU!)
-    check_needs_fix          # 2b. ⭐ AUTO-FIX (.needs_fix → tasca)
+    # Només si hi ha espai a la cua:
+    check_supervision        # 2. ⭐ SUPERVISIÓ
     check_translations       # 3. Noves traduccions
     check_web_sync           # 4. Web sincronitzada
     check_code_reviews       # 5. Code reviews

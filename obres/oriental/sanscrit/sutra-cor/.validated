@@ -1,0 +1,25 @@
+data: 2026-02-23
+puntuacio: 8.5/10
+supervisor: Claude Code (supervisió automàtica)
+
+dimensions:
+  catala: 8.5/10
+  fidelitat: 9/10
+  glossari: 9/10
+  format: 7.5/10
+  metadata: 9.5/10
+
+correccions_aplicades:
+  - Creat notes.md separat (el build espera fitxer independent, no inline)
+
+millores_recomanades:
+  - traduccio.md línia 15: "fins a no hi ha" (2 cops) → millorar a "fins que no hi ha" o reestructurar
+  - Considerar migrar format de termes de {.term data-term="id"} a terme[T] (ambdós suportats, però V2 és el recomanat)
+
+observacions:
+  - Traducció excel·lent d'un text breu però filosòficament dens
+  - Prosa catalana natural i fluïda, adequada al registre espiritual
+  - Fidelitat molt alta al sànscrit original (edició Conze 1948)
+  - Glossari complet amb 14 termes ben definits
+  - Metadata excepcionalment complet (tradició textual, context històric)
+  - Secció "Sobre la traducció" amb context valuós per al lector
