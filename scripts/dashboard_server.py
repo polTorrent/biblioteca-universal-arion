@@ -1231,6 +1231,41 @@ function renderWorkerDetail(d) {
 refresh();
 setInterval(refresh, REFRESH_INTERVAL);
 </script>
+<div id="tsec" class="card" style="margin-top:1rem;">
+<div class="card-header" style="display:flex;align-items:center;justify-content:space-between;">
+<h3 style="font-size:0.85rem;">⌨ Terminal</h3>
+<div style="display:flex;gap:6px;"><div style="width:8px;height:8px;border-radius:50%;background:#ef4444"></div><div style="width:8px;height:8px;border-radius:50%;background:#f59e0b"></div><div style="width:8px;height:8px;border-radius:50%;background:#10b981"></div></div></div>
+<div id="to" style="font-family:var(--font-mono);font-size:12px;line-height:1.7;padding:12px 16px;max-height:400px;overflow-y:auto;background:rgba(0,0,0,0.3);"><div style="color:var(--accent-blue)">Arion v4 — 'help' per comandes</div></div>
+<div style="display:flex;align-items:center;gap:8px;padding:8px 16px;border-top:1px solid var(--border);">
+<span style="color:var(--accent-green);font-family:var(--font-mono);font-size:12px;">arion$</span>
+<input id="ti" type="text" placeholder="help..." style="flex:1;background:transparent;border:none;outline:none;color:var(--text-primary);font-family:var(--font-mono);font-size:12px;" autocomplete="off"></div></div>
+<script>
+(function(){var O=document.getElementById('to'),I=document.getElementById('ti'),H=[],hi=-1;
+function ad(t,c){var d=document.createElement('div');d.style.cssText='color:'+(c||'#94a3b8')+';white-space:pre-wrap;word-break:break-word';d.textContent=t;O.appendChild(d);O.scrollTop=O.scrollHeight;}
+function pr(s){var d=document.createElement('div');d.innerHTML='<span style="color:#10b981">arion</span><span style="color:#475569">$</span> <span style="color:#e2e8f0">'+s.replace(/</g,'&lt;')+'</span>';O.appendChild(d);}
+async function ap(p,b){try{var r=await fetch(p,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)});return await r.json();}catch(e){return{error:e.message};}}
+async function ex(cmd){if(!cmd.trim())return;H.unshift(cmd);hi=-1;pr(cmd);var p=cmd.trim().split(/\s+/),c=p[0].toLowerCase(),a=p.slice(1).join(' ');
+if(c==='help'){['═══ ARION COMMANDS ═══','','  tradueix <autor> <obra> [ll]  Traducció','  revisa <obra>                Supervisió','  corregeix <obra>             Correcció','  cerca <autor> <obra>          Cerca font','  portada <obra>               Portada','  estat                        Estat','  worker restart|stop          Worker','  heartbeat                    Heartbeat','  build / publish              Web','  logs [n] / obres / cua       Info','  clear / help                 Terminal'].forEach(function(l){ad(l);});return;}
+if(c==='clear'){O.innerHTML='';ad('Netejat.','#3b82f6');return;}
+if(c==='estat'||c==='status'){ad('📊 Carregant...','#f59e0b');var r=await ap('/api/execute',{command:'cd ~/biblioteca-universal-arion && echo "═══ ESTAT ═══" && (tmux has-session -t worker 2>/dev/null && echo "Worker: ✅ ACTIU" || echo "Worker: ❌ INACTIU") && echo "Obres: $(find obres/ -name traduccio.md|wc -l) | Val: $(find obres/ -name .validated|wc -l) | Fix: $(find obres/ -name .needs_fix|wc -l)" && echo "Pend: $(ls ~/.openclaw/workspace/tasks/pending/*.json 2>/dev/null|wc -l) | Run: $(ls ~/.openclaw/workspace/tasks/running/*.json 2>/dev/null|wc -l) | Done: $(find ~/.openclaw/workspace/tasks/done/ -name \\*.json -newermt $(date +%Y-%m-%d) 2>/dev/null|wc -l)"'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});if(r.error)ad('❌ '+r.error,'#ef4444');return;}
+if(c==='tradueix'||c==='traduir'){if(!a){ad('Ús: tradueix <autor> <obra>','#ef4444');return;}ad('📝 Creant traducció: '+a,'#8b5cf6');var r=await ap('/api/task',{type:'translation',instruction:"Tradueix "+a+". Usa Pipeline V2.",duration:60});ad(r.success?'✅ Tasca creada':'❌ '+(r.error||r.output),r.success?'#10b981':'#ef4444');return;}
+if(c==='revisa'||c==='supervisa'){if(!a){ad('Ús: revisa <obra>','#ef4444');return;}ad('🔎 Supervisió: '+a,'#3b82f6');var r=await ap('/api/task',{type:'supervision',instruction:"Supervisa qualitat de "+a+". Puntua 0-10.",duration:30});ad(r.success?'✅ Tasca creada':'❌ Error',r.success?'#10b981':'#ef4444');return;}
+if(c==='corregeix'||c==='fix'){if(!a){ad('Ús: corregeix <obra>','#ef4444');return;}ad('🔧 Fix: '+a,'#f59e0b');var r=await ap('/api/task',{type:'fix',instruction:"Corregeix "+a+". Llegeix .needs_fix.",duration:45});ad(r.success?'✅ Tasca creada':'❌ Error',r.success?'#10b981':'#ef4444');return;}
+if(c==='cerca'||c==='busca'){if(!a){ad('Ús: cerca <autor> <obra>','#ef4444');return;}ad('🔍 Cercant...','#06b6d4');var r=await ap('/api/execute',{command:'cd ~/biblioteca-universal-arion && python3 scripts/cercador_fonts_v2.py '+a});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+if(c==='portada'){if(!a){ad('Ús: portada <obra>','#ef4444');return;}ad('🎨 Portada: '+a,'#ec4899');var r=await ap('/api/task',{type:'design',instruction:"Genera portada per "+a+" amb Venice AI.",duration:15});ad(r.success?'✅ Creada':'❌ Error',r.success?'#10b981':'#ef4444');return;}
+if(c==='worker'){var s=p[1];if(s==='restart'){ad('🔄 Reiniciant...','#f59e0b');var r=await ap('/api/execute',{command:'tmux kill-session -t worker 2>/dev/null; mv ~/.openclaw/workspace/tasks/running/*.json ~/.openclaw/workspace/tasks/pending/ 2>/dev/null; sleep 2; cd ~/biblioteca-universal-arion && tmux new-session -d -s worker "bash scripts/claude-worker-mini.sh" && sleep 2 && echo "✅ Reiniciat"'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});}else if(s==='stop'){ad('🛑 Aturant...','#ef4444');await ap('/api/execute',{command:'tmux kill-session -t worker 2>/dev/null && echo "Aturat"'});}else ad('worker restart|stop','#94a3b8');return;}
+if(c==='heartbeat'){ad('💓 Executant...','#f59e0b');var r=await ap('/api/execute',{command:'cd ~/biblioteca-universal-arion && bash scripts/heartbeat.sh 2>&1|tail -30'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+if(c==='build'){ad('🏗️ Build...','#06b6d4');var r=await ap('/api/execute',{command:'cd ~/biblioteca-universal-arion && python3 scripts/build.py --clean 2>&1'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+if(c==='publish'){ad('🚀 Publicant...','#10b981');var r=await ap('/api/execute',{command:'cd ~/biblioteca-universal-arion && python3 scripts/build.py --clean 2>&1 && git add -A && git commit -m "build: web" && git push 2>&1'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+if(c==='logs'){var n=parseInt(p[1])||20;var r=await ap('/api/execute',{command:'grep -v HEARTBEAT ~/claude-worker.log|tail -'+n});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+if(c==='obres'){var r=await ap('/api/execute',{command:'cd ~/biblioteca-universal-arion && for d in obres/*/*/*/;do n=$(basename "$d");t="$d/traduccio.md";[ -f "$t" ]||continue;l=$(wc -l<"$t");s="⏳";[ -f "$d/.validated" ]&&s="✅";[ -f "$d/.needs_fix" ]&&s="🔧";echo "$s $n ($l ln)";done|sort'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+if(c==='cua'){var r=await ap('/api/execute',{command:'echo "PENDING:" && ls ~/.openclaw/workspace/tasks/pending/*.json 2>/dev/null|while read f;do echo "  ⏳ $(basename $f .json)";done && echo "RUNNING:" && ls ~/.openclaw/workspace/tasks/running/*.json 2>/dev/null|while read f;do echo "  🔄 $(basename $f .json)";done'});if(r.output)r.output.split('\n').forEach(function(l){ad(l);});return;}
+ad("Desconegut: '"+c+"'. Escriu 'help'.",'#ef4444');}
+I.addEventListener('keydown',function(e){if(e.key==='Enter'){ex(I.value);I.value='';}else if(e.key==='ArrowUp'){e.preventDefault();hi=Math.min(hi+1,H.length-1);if(H[hi])I.value=H[hi];}else if(e.key==='ArrowDown'){e.preventDefault();hi=Math.max(hi-1,-1);I.value=hi>=0?H[hi]:'';}else if(e.key==='Tab'){e.preventDefault();var v=I.value.toLowerCase(),CS=['tradueix','revisa','corregeix','cerca','portada','estat','worker restart','worker stop','heartbeat','build','publish','obres','cua','logs','clear','help'];var m=CS.find(function(c){return c.startsWith(v)});if(m)I.value=m+' ';}});
+document.getElementById('tsec').addEventListener('click',function(){I.focus();});
+})();
+</script>
+
 </body>
 </html>"""
 
@@ -1325,13 +1360,36 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.end_headers()
 
     def do_POST(self):
-        """Handle POST requests for actions."""
-        path = urlparse(self.path).path
-        if path.startswith("/api/actions/"):
-            self.do_GET()
-        else:
-            self.send_response(404)
-            self.end_headers()
+        cl = int(self.headers.get('Content-Length', 0))
+        body = self.rfile.read(cl).decode('utf-8')
+        parsed = urlparse(self.path)
+        if parsed.path == '/api/execute':
+            try:
+                data = json.loads(body)
+                cmd = data.get('command', '')
+                safe = 'biblioteca-universal-arion' in cmd or any(cmd.strip().startswith(p) for p in ['cat ','ls ','grep ','tail ','head ','tmux ','git ','find ','wc ','echo ','mv '])
+                if not safe:
+                    self.send_response(403); self.send_header('Content-Type','application/json'); self.end_headers()
+                    self.wfile.write(json.dumps({"error":"No permes"}).encode()); return
+                result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=120, cwd=str(PROJECT_DIR))
+                self.send_response(200); self.send_header('Content-Type','application/json'); self.end_headers()
+                self.wfile.write(json.dumps({"output":(result.stdout+result.stderr)[-5000:],"returncode":result.returncode}).encode())
+            except Exception as e:
+                self.send_response(500); self.send_header('Content-Type','application/json'); self.end_headers()
+                self.wfile.write(json.dumps({"error":str(e)}).encode())
+            return
+        if parsed.path == '/api/task':
+            try:
+                data = json.loads(body)
+                t,instr,dur = data.get('type','translation'), data.get('instruction',''), data.get('duration',30)
+                cmd = f'bash {PROJECT_DIR}/scripts/task-manager.sh add {t} "{instr}" {dur}'
+                result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=10)
+                self.send_response(200); self.send_header('Content-Type','application/json'); self.end_headers()
+                self.wfile.write(json.dumps({"success":result.returncode==0,"output":result.stdout+result.stderr}).encode())
+            except Exception as e:
+                self.send_response(500); self.send_header('Content-Type','application/json'); self.end_headers()
+                self.wfile.write(json.dumps({"error":str(e)}).encode())
+            return
 
     def log_message(self, format, *args):
         pass  # Silenciar logs del servidor
