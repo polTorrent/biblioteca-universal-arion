@@ -449,11 +449,61 @@ rotate_done() {
     [ "$count" -gt 0 ] && log "   🧹 $count tasques antigues eliminades"
 }
 
+
+# ── 10. Generar report per Discord ────────────────────────────────────────────
+generate_report() {
+    local REPORT_FILE="$HOME/.openclaw/workspace/last_heartbeat_report.md"
+    
+    # Comptar estats
+    local validated=$(find "$PROJECT/obres" -name ".validated" 2>/dev/null | wc -l)
+    local needs_fix=$(find "$PROJECT/obres" -name ".needs_fix" 2>/dev/null | wc -l)
+    local fixing=$(find "$PROJECT/obres" -name ".fixing" 2>/dev/null | wc -l)
+    local total_trad=$(find "$PROJECT/obres" -name "traduccio.md" 2>/dev/null | wc -l)
+    local pending=$(count_pending)
+    local done_today=$(find "$TASKS_DIR/done/" -name "*.json" -newermt "$(date '+%Y-%m-%d')" -type f 2>/dev/null | wc -l)
+    local failed=$(ls -1 "$TASKS_DIR/failed/"*.json 2>/dev/null | wc -l)
+    
+    # Obres validades recents (últimes 24h)
+    local recent_validated=""
+    for vf in $(find "$PROJECT/obres" -name ".validated" -newermt "$(date -d '1 day ago' '+%Y-%m-%d')" 2>/dev/null); do
+        local obra_name=$(basename $(dirname "$vf"))
+        recent_validated="$recent_validated ✅ $obra_name"
+    done
+    
+    # Obres amb problemes
+    local problemes=""
+    for nf in $(find "$PROJECT/obres" -name ".needs_fix" 2>/dev/null); do
+        local obra_name=$(basename $(dirname "$nf"))
+        local score=$(grep -oP "\d+\.?\d*/10" "$nf" | head -1)
+        problemes="$problemes 🔧 $obra_name ($score)"
+    done
+    
+    # Worker status
+    local worker_status="❌ INACTIU"
+    if tmux has-session -t worker 2>/dev/null; then
+        worker_status="✅ ACTIU"
+    fi
+    
+    # Generar report
+    cat > "$REPORT_FILE" << REPORT
+💓 **Heartbeat Arion** — $(date '+%H:%M %d/%m')
+
+📊 **Traduccions:** $total_trad total | $validated validades | $needs_fix pendents fix | $fixing en correcció
+⚙️ **Worker:** $worker_status | $done_today tasques avui | $pending cua | $failed fallides
+$([ -n "$recent_validated" ] && echo "
+🎉 **Noves validacions:**$recent_validated")
+$([ -n "$problemes" ] && echo "
+⚠️ **Pendents correcció:**$problemes")
+REPORT
+    
+    log "📋 Report generat a $REPORT_FILE"
+}
+
 # =============================================================================
 # MAIN
 # =============================================================================
 log "═══════════════════════════════════════════════════"
-log "💓 HEARTBEAT v3 iniciat (amb supervisió)"
+log "💓 HEARTBEAT v4 iniciat (amb supervisió)"
 
 check_diem || exit 0
 check_worker
