@@ -4,34 +4,56 @@ Inclou fallback amb Gemini AI per cercar textos a internet quan les fonts
 tradicionals no estan disponibles.
 """
 
+from __future__ import annotations
+
+import logging
 import os
 import time
-from typing import Any, ClassVar, Literal
+from typing import TYPE_CHECKING, Any, ClassVar, Literal
 
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentResponse, BaseAgent
+
+if TYPE_CHECKING:
+    from types import ModuleType
 
 # Type aliases per literals reutilitzats
 TipusFont = Literal["perseus", "latin_library", "gutenberg", "wikisource", "aozora", "ctext", "altre"]
 LlenguaOriginal = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "altres"]
 LlenguaCerca = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"]
 
+logger = logging.getLogger(__name__)
+
 # Intentar importar Gemini (nou SDK)
+# NOTA: 'genai_types' en comptes de 'types' per evitar eclipsar el mòdul stdlib 'types'.
+genai: ModuleType | None
+genai_types: ModuleType | None
 try:
-    from google import genai
-    from google.genai import types
+    from google import genai  # type: ignore[no-redef]
+    from google.genai import types as genai_types  # type: ignore[no-redef]
     GEMINI_AVAILABLE = True
 except ImportError:
     try:
         # Fallback a SDK antic (deprecated)
-        import google.generativeai as genai
-        types = None
+        import google.generativeai as genai  # type: ignore[no-redef]
+        genai_types = None
         GEMINI_AVAILABLE = True
     except ImportError:
         GEMINI_AVAILABLE = False
         genai = None
-        types = None
+        genai_types = None
+
+__all__ = [
+    "CercadorFontsAgent",
+    "LlenguaCerca",
+    "LlenguaOriginal",
+    "PescadorTextosAgent",
+    "SearchRequest",
+    "TextMetadata",
+    "TextSource",
+    "TipusFont",
+]
 
 
 class TextSource(BaseModel):
@@ -240,7 +262,7 @@ Inclou:
                 "Gemini no està disponible. Instal·la amb: pip install google-genai"
             )
 
-        if types is None:
+        if genai_types is None:
             raise RuntimeError(
                 "Cal el nou SDK google-genai per a search_with_gemini. "
                 "Instal·la amb: pip install google-genai"
@@ -257,7 +279,7 @@ Inclou:
         client = genai.Client(api_key=api_key)
 
         # Configurar Google Search tool per grounding
-        google_search_tool = types.Tool(google_search=types.GoogleSearch())
+        google_search_tool = genai_types.Tool(google_search=genai_types.GoogleSearch())
 
         start_time = time.time()
 
@@ -293,7 +315,7 @@ Indica:
             response = client.models.generate_content(
                 model="gemini-2.0-flash",
                 contents=prompt,
-                config=types.GenerateContentConfig(
+                config=genai_types.GenerateContentConfig(
                     tools=[google_search_tool],
                     temperature=0.2,
                 ),
