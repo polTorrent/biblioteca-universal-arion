@@ -38,9 +38,9 @@ obra:
     paraules_traduccio: 340
     seccions: 7
     notes: 7
-    termes_glossari: 2
+    termes_glossari: 4
 revisio:
-  estat: traduït
-  data_revisio: '2026-02-23'
-  qualitat: 7.5
-  requereix_revisio_humana: true
+  estat: revisat
+  data_revisio: '2026-02-24'
+  qualitat: 8.0
+  requereix_revisio_humana: false

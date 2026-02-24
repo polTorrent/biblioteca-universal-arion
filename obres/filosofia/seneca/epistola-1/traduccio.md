@@ -8,7 +8,7 @@ Traduït del llatí per Biblioteca Arion
 
 ## I
 
-Fes-ho així, estimat Lucili[T]: reivindica't a tu mateix, i el temps que fins ara o t'era arrabassat o et robaven furtivament o se t'escapava, recull-lo i conserva'l. Convenç-te que és tal com t'escric: certs moments ens els prenen per força, d'altres ens els sostreuen, d'altres se'ns escolen. La pèrdua més vergonyosa, tanmateix, és la que es produeix per negligència[^1].
+Fes-ho així, estimat Lucili[T]: reivindica't a tu mateix, i el temps que fins ara o t'era arrabassat o et robaven furtivament o se t'escapava, recull-lo i conserva'l. Convenç-te que és tal com t'escric: certs moments ens els prenen per força, d'altres ens els sostreuen, d'altres se'ns escolen. La pèrdua[T] més vergonyosa, tanmateix, és la que es produeix per negligència[^1].
 
 ## II
 
@@ -20,11 +20,11 @@ Qui em donaràs que assigni algun valor al temps, que apreciï el dia, que compr
 
 ## IV
 
-Fes, doncs, estimat Lucili, el que em dius que fas: abraça totes les hores; així serà que dependràs menys del demà si t'apoderes de l'avui. Mentre s'ajorna, la vida passa de llarg[^4].
+Fes, doncs, estimat Lucili[T], el que em dius que fas: abraça totes les hores; així serà que dependràs menys del demà si t'apoderes de l'avui. Mentre s'ajorna, la vida passa de llarg[^4].
 
 ## V
 
-Tot, Lucili, és aliè a nosaltres; només el temps és nostre. La natura ens ha posat en possessió d'aquesta única cosa fugaç i lliscadissa, de la qual ens expulsa qualsevol que ho vulgui. I és tan gran la necietat[T] dels mortals que, les coses mínimes i de menys valor, certament reemplaçables, toleren que els siguin comptades com a favor quan les han obtingudes, però ningú es considera deutor per haver rebut temps, quan mentrestant aquest és l'únic bé que ni tan sols l'agraït pot retornar[^5].
+Tot, Lucili[T], és aliè a nosaltres; només el temps és nostre. La natura ens ha posat en possessió d'aquesta única cosa fugaç i lliscadissa, de la qual ens expulsa qualsevol que ho vulgui. I és tan gran la necietat[T] dels mortals que, les coses mínimes i de menys valor, certament reemplaçables, toleren que els siguin comptades com a favor quan les han obtingudes, però ningú es considera deutor per haver rebut temps, quan mentrestant aquest és l'únic bé que ni tan sols l'agraït pot retornar[^5].
 
 ## VI
 
@@ -32,7 +32,7 @@ Potser em preguntaràs què faig jo, que et dono aquests preceptes. T'ho confess
 
 ## VII
 
-Què en resulta, doncs? No considero pobre aquell a qui li basta el poc que li resta; tu, tanmateix, prefereixo que conservis el que és teu, i que comencis a bon temps. Perquè, com van considerar els nostres avantpassats, «l'estalvi quan s'arriba al fons és tardà»[^7]; és que al fons no només hi resta el mínim, sinó el pitjor. Passa-ho bé.
+Què en resulta, doncs? No considero pobre aquell a qui li basta el poc que li resta; tu, tanmateix, prefereixo que conservis el que és teu, i que comencis a bon temps. Perquè, com van considerar els nostres avantpassats, «l'estalvi[T] quan s'arriba al fons és tardà»[^7]; és que al fons no només hi resta el mínim, sinó el pitjor. Passa-ho bé.
 
 ---
 

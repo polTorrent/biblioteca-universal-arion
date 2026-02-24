@@ -19,3 +19,25 @@ termes:
       és la condició natural de la humanitat no filosòfica, i la seva superació és
       l'objectiu de l'educació moral.
     usos: [5]
+
+  - id: "iactura"
+    llati: "iactura"
+    traduccio: "pèrdua, malbaratament"
+    definicio: >
+      Del verb iacere (llançar). Originalment terme marítim que designava la càrrega
+      llançada per la borda per salvar el vaixell. Sèneca l'usa metafòricament per a
+      la pèrdua del temps: una pèrdua deliberada o negligent d'allò que té valor.
+      La iactura per neglegentiam (pèrdua per negligència) és la més vergonyosa
+      (turpissima) perquè és voluntària i evitable.
+    usos: [1]
+
+  - id: "parsimonia"
+    llati: "parsimonia"
+    traduccio: "estalvi, frugalitat"
+    definicio: >
+      Virtut estoica de la moderació i l'estalvi, tant material com temporal.
+      Sèneca cita el proverbi antic sera parsimonia in fundo est («l'estalvi al
+      fons és tardà»): quan gairebé no queda res, ja no serveix de res estalviar.
+      La parsimònia aplicada al temps és la disciplina de no malgastar-lo, que
+      constitueix el missatge central de l'epístola.
+    usos: [7]
