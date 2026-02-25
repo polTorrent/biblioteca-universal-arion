@@ -61,6 +61,8 @@ revisio:
     Format de capítols estandarditzat. Errors lingüístics corregits.
     Pendent de revisió humana per millorar qualitat global.
 
+portada: portada.png
+
 llicencia:
   tipus: CC BY-SA 4.0
   nota: Text original de domini públic (Project Gutenberg #768)
