@@ -18,7 +18,7 @@ Quan vam arribar a Cumbres Borrascoses, ell era dret davant la porta principal; 
 
 —I la senyora? —em vaig atrevir a preguntar—; el metge diu que ella...
 
-—Maleït sigui el metge! —va interrompre, enrojolant-se—. La Frances està perfectament bé: estarà del tot recuperada d'aquí a una setmana. Puges dalt? Li vols dir que vindré, si em promet no parlar. L'he deixada perquè no volia callar; i ha de callar... digues-li que el senyor Kenneth diu que ha de fer repòs.
+—Maleït sigui el metge! —va interrompre, enrogint-se—. La Frances està perfectament bé: estarà del tot recuperada d'aquí a una setmana. Puges dalt? Li vols dir que vindré, si em promet no parlar. L'he deixada perquè no volia callar; i ha de callar... digues-li que el senyor Kenneth diu que ha de fer repòs.
 
 Vaig transmetre el missatge a la senyora Earnshaw; semblava d'humor agitat i joiós, i va respondre alegrament: «Amb prou feines he dit una paraula, Ellen, i ja ha sortit dues vegades plorant. Bé, digues-li que prometo no parlar: però això no m'impedeix riure'm d'ell!»
 
