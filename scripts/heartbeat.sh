@@ -506,7 +506,7 @@ log "═════════════════════════
 log "💓 HEARTBEAT v4 iniciat (amb supervisió)"
 
 check_diem || exit 0
-check_worker
+# check_worker  # DESACTIVAT — interfereix amb traduccions llargues
 
 PENDING=$(count_pending)
 RUNNING=$(count_running)
