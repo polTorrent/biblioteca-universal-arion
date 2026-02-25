@@ -1,0 +1,161 @@
+# Supervisió de Qualitat - Cims Borrascosos (Wuthering Heights)
+# Data: 2026-02-25
+# Puntuació global: 6.5/10 (NO VALIDADA - requereix correcció)
+
+## Resum executiu
+
+Traducció completa dels 34 capítols, fidel al text original i amb metadades,
+glossari i notes crítiques ben elaborades. Tanmateix, l'estil excessivament
+literal i la manca d'integració de notes i glossari al cos del text impedeixen
+la validació.
+
+---
+
+## 1. Qualitat del català — 6/10
+
+### Punts forts
+- Vocabulari generalment ben escollit (arçots, llar de foc, erms, landa)
+- Bon ús del registre formal (vós) i col·loquial segons el personatge
+- Topònims ben adaptats (Cims Borrascosos, Granja dels Tords)
+- Diàlegs més naturals que les parts descriptives
+
+### Problemes concrets
+- **Estil excessivament literal/calcat de l'anglès**: moltes frases segueixen
+  l'estructura sintàctica anglesa en lloc de la catalana natural. Frases molt
+  llargues amb subordinades encadenades que en català haurien de ser separades.
+  Exemple (cap. I): "tinc un cordó simpàtic dins meu que em diu que no és res
+  d'això" (calc de "a sympathetic chord within me tells me it is nothing of
+  the sort").
+- **Errors ortogràfics puntuals**: "llençar" en lloc de "llançar" (cap. XVII).
+- **Calcs lèxics**: "tumultuositat atmosfèrica" (cap. I) — tot i que és la
+  veu de Lockwood, podria naturalitzar-se. "Anatomia" referit al sostre.
+- **Frases passives innecessàries**: calcs de la passiva anglesa on el català
+  preferiria activa o impersonal.
+
+### Accions necessàries
+- [ ] Revisar les 50 frases més llargues i reestructurar-les en català natural
+- [ ] Corregir errors ortogràfics sistemàticament (cerca "llençar", etc.)
+- [ ] Reduir calcs sintàctics: passives, gerundis absoluts, possessius anglesos
+
+---
+
+## 2. Fidelitat al original — 8.5/10
+
+### Punts forts
+- Traducció molt fidel, pràcticament sense omissions
+- Tots els diàlegs preservats íntegrament
+- Bona adaptació cultural ("Go to the Deuce" → "vés-te'n a l'infern")
+- Escenes clau (somni Lockwood, declaració Catherine, mort Heathcliff) ben resoltes
+
+### Problemes concrets
+- **Cap omissió significativa detectada**
+- **Cap invenció detectada**
+- L'excés de literalitat de vegades obscureix el sentit (paradoxalment, ser
+  massa literal pot trair el to original)
+
+### Accions necessàries
+- [ ] Cap acció urgent en fidelitat
+
+---
+
+## 3. Glossari — 7/10
+
+### Punts forts
+- 20 termes ben definits amb id, original, traducció, definició i tipus
+- Topònims, noms propis i termes generals coberts
+- Definicions erudites i contextualitzades
+- Format YAML correcte
+
+### Problemes concrets
+- **CRÍTIC: 0 (zero) referències [T] al text de traduccio.md** — el glossari
+  existeix però no està integrat al cos de la traducció. Els lectors no poden
+  accedir als termes des del text.
+- Falten termes potencialment útils: "wuthering" com a terme independent,
+  "beck" (rierol), "kirk" (església), "throstles" (tords).
+
+### Accions necessàries
+- [ ] Inserir marques [T] a traduccio.md per als 20 termes del glossari
+  (almenys a la primera aparició de cada terme)
+- [ ] Afegir 4-5 termes addicionals de vocabulari dialectal de Yorkshire
+
+---
+
+## 4. Format — 6.5/10
+
+### Punts forts
+- 34 capítols correctament numerats amb ## I fins a ## XXXIV
+- Encapçalaments en format correcte (## + numeral romà)
+- traduccio.md assembla correctament tots els chunks
+
+### Problemes concrets
+- **CRÍTIC: 0 (zero) referències [^N] al text de traduccio.md** — les 15
+  notes crítiques existeixen a notes.md però no tenen ancoratge al text.
+  El lector no sap on correspon cada nota.
+- No hi ha directori fragments/ amb contingut (buit)
+- No hi ha portada (portada.png) — cal generar-ne una
+
+### Accions necessàries
+- [ ] Inserir marques [^1] a [^15] als passatges corresponents de traduccio.md
+- [ ] Generar portada amb l'AgentPortadista
+- [ ] Poblar fragments/ per facilitar col·laboració
+
+---
+
+## 5. metadata.yml — 8.5/10
+
+### Punts forts
+- Tots els camps obligatoris presents i correctes
+- Descripció ben redactada
+- Temes complets i pertinents
+- Context literari (influències, obres relacionades) ben documentat
+- Llicència correcta (CC BY-SA 4.0)
+- Font original (Gutenberg #768) indicada
+
+### Problemes concrets
+- `qualitat: 5.4` — cal actualitzar després de la revisió
+- `estat: en_curs` — correcte però cal definir criteri per passar a `completada`
+- `contribuïdors` no inclòs (camp recomanable)
+- `paraules_original: 118000` i `paraules_traduccio: 125000` — verificar
+
+### Accions necessàries
+- [ ] Actualitzar camp qualitat després de correccions
+- [ ] Afegir camp contribuïdors
+
+---
+
+## Notes crítiques (notes.md) — 8/10
+
+### Punts forts
+- 15 notes erudites de gran qualitat
+- Cobreixen context històric, estructura narrativa, simbolisme, recepció
+- Ben documentades (citen C.P. Sanger, referència a Mateu 18:22, etc.)
+- Format correcte (## [N] Títol)
+
+### Problemes concrets
+- Les notes no estan ancorades al text (com ja s'ha indicat)
+- Podrien afegir-se 3-5 notes més sobre: el dialecte de Joseph en detall,
+  la qüestió del narrador no fiable, les interpretacions postcolonials
+
+---
+
+## Puntuació detallada
+
+| Criteri                          | Puntuació |
+|----------------------------------|-----------|
+| Qualitat del català              | 6.0/10    |
+| Fidelitat al original            | 8.5/10    |
+| Glossari (qualitat + integració) | 7.0/10    |
+| Format (capítols + notes + refs) | 6.5/10    |
+| metadata.yml                     | 8.5/10    |
+| Notes crítiques                  | 8.0/10    |
+| **MITJANA PONDERADA**            | **6.5/10**|
+
+(Ponderació: català 30%, fidelitat 25%, glossari 15%, format 15%, metadata 10%, notes 5%)
+
+## Prioritats de correcció (ordenades per impacte)
+
+1. **Integrar notes [^N] i glossari [T] a traduccio.md** — impacte alt, esforç moderat
+2. **Naturalitzar l'estil català** — impacte alt, esforç elevat (revisió global)
+3. **Generar portada** — impacte visual, esforç baix
+4. **Corregir errors ortogràfics** — impacte moderat, esforç baix
+5. **Ampliar glossari i notes** — impacte moderat, esforç moderat
