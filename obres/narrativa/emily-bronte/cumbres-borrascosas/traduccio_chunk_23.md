@@ -66,7 +66,7 @@ Linton va negar que la gent odiés mai les seves esposes; però Cathy va afirmar
 
 —I estimava el meu —va afegir ell.
 
-—Petit mentider! Ara et detesto! —va panteixar ella, i la seva cara es va enrojolar de passió.
+—Petit mentider! Ara et detesto! —va panteixar ella, i la seva cara es va enrogir de passió.
 
 —Sí que l'estimava! Sí que l'estimava! —va cantar Linton, enfonsant-se en el racó de la butaca i reclinant el cap enrere per gaudir de l'agitació de l'altra disputant, que estava dreta al darrere.
 

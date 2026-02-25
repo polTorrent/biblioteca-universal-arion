@@ -66,13 +66,13 @@ Vaig agafar el seu barret i m'hi vaig acostar per tornar-lo-hi a posar; però en
 
 —És del vostre pare, oi? —va dir, girant-se cap a Hareton.
 
-—No —va respondre ell, mirant a terra i enrojolant-se amb timidesa.
+—No —va respondre ell, mirant a terra i enrogint-se amb timidesa.
 
 No podia sostenir la mirada fixa dels ulls d'ella, tot i que eren exactament com els seus.
 
 —De qui, doncs... del vostre amo? —va preguntar.
 
-Ell es va enrojolar més intensament, amb un sentiment diferent, va murmurar una maledicció i es va girar.
+Ell es va enrogir més intensament, amb un sentiment diferent, va murmurar una maledicció i es va girar.
 
 —Qui és el seu amo? —va continuar la noia incansable, adreçant-se a mi—. Parlava de «casa nostra» i de «la nostra gent». Jo pensava que era el fill del propietari. I no m'ha dit mai senyoreta: hauria d'haver-ho fet, no és cert, si és un criat?
 
