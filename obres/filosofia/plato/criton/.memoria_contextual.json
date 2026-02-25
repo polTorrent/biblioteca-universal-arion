@@ -1,0 +1,25 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Plató (Πλάτων) (428/427 a.C. - 348/347 a.C.), Atenes, Àtica. Filòsof grec, deixeble de Sòcrates i mestre d'Aristòtil, fundador de l'Acadèmia d'Atenes. Va desenvolupar la teoria de les Idees i va crear el gènere del diàleg filosòfic. Va influir profundament en el pensament occidental durant més de dos mil·lennis.",
+    "context_historic": "Atenes del segle V-IV a.C., època de crisi després de la Guerra del Peloponès i la mort de Sòcrates. Transició de la democràcia atenenca a l'hegemonia macedònica",
+    "context_obra": "Κρίτων (Kritón) (385-380 a.C. aproximadament) - Diàleg sòcràtic de joventut, diàleg ètic. Escrit com a part del cicle de diàlegs sobre els últims dies de Sòcrates, després de l'Apologia i abans del Fedó",
+    "influencies": [
+      "Sòcrates",
+      "Heràclit",
+      "Parmènides",
+      "Pitàgores",
+      "tradició òrfica"
+    ],
+    "temes_principals": [
+      "obligació moral vers les lleis",
+      "justícia i injustícia",
+      "amistat i lleialtat",
+      "coherència ètica",
+      "obediència civil"
+    ]
+  },
+  "notes_pendents": []
+}
