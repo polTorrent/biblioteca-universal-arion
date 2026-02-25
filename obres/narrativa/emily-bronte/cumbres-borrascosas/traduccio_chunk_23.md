@@ -1,4 +1,4 @@
-# CAPÍTOL XXIII
+## XXIII
 
 La nit plujosa havia donat pas a un matí boirós —mig glaçat, mig plugim— i rierols temporals creuaven el nostre camí, rajant des dels altiplans. Els meus peus estaven completament xops; jo estava irritada i abatuda, exactament l'humor adequat per treure el pitjor de totes aquelles coses desagradables. Vam entrar a la masia per la porta de la cuina, per assegurar-nos que el senyor Heathcliff fos realment absent, perquè jo tenia ben poca fe en les seves pròpies afirmacions.
 

@@ -1,4 +1,4 @@
-# CAPÍTOL XXIV
+## XXIV
 
 Al cap de tres setmanes vaig poder deixar la meva cambra i moure'm per la casa. I la primera vegada que em vaig quedar aixecada al vespre, vaig demanar a Catherine que em llegís, perquè tenia la vista feble. Érem a la biblioteca, ja que l'amo s'havia retirat a dormir: ella hi va accedir, de mala gana, em va semblar; i imaginant-me que la meva mena de llibres no li convenia, li vaig dir que escollís al seu gust el que volgués llegir. Va triar un dels seus preferits, i va avançar amb regularitat durant una hora; després van començar les preguntes freqüents.
 

@@ -1,4 +1,4 @@
-# CAPÍTOL XIX
+## XIX
 
 Una carta, amb la vora negra, anuncià el dia del retorn del meu amo. Isabella havia mort; i ell escrivia per demanar-me que preparés vestits de dol per a la seva filla, i que arranjés una habitació i altres acomodaments per al seu jove nebot. Catherine s'esbravà d'alegria amb la idea de rebre el seu pare; i es lliurà a les anticipacions més optimistes sobre les innombrables excel·lències del seu cosí "de debò". El vespre de la seva esperada arribada va arribar. Des de primera hora del matí ella havia estat ocupada ordenant els seus petits afers; i ara, engalanada amb el seu vestit negre nou —pobreta! la mort de la seva tieta no li havia causat cap dolor definit—, em va obligar, amb les seves constants insistències, a caminar amb ella avall pels jardins per anar-los a rebre.
 

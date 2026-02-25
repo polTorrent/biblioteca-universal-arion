@@ -1,6 +1,6 @@
-# CAPÍTOL XX
+## XX
 
-Per evitar el perill que aquesta amenaça es complís, el senyor Linton em va encarregar que portés el noi a casa d'hora, amb el poni de Catherine; i va dir: «Com que d'ara endavant no tindrem cap influència sobre el seu destí, ni per bé ni per mal, no heu de dir res a la meva filla sobre on ha anat: no podrà relacionar-s'hi d'ara endavant, i és millor que romangui en la ignorància de la seva proximitat, no fos cas que s'inquietés i volgués visitar les Tossals. Simplement digueu-li que el seu pare l'ha enviat a buscar de sobte, i que s'ha vist obligat a deixar-nos.»
+Per evitar el perill que aquesta amenaça es complís, el senyor Linton em va encarregar que portés el noi a casa d'hora, amb el poni de Catherine; i va dir: «Com que d'ara endavant no tindrem cap influència sobre el seu destí, ni per bé ni per mal, no heu de dir res a la meva filla sobre on ha anat: no podrà relacionar-s'hi d'ara endavant, i és millor que romangui en la ignorància de la seva proximitat, no fos cas que s'inquietés i volgués visitar els Cims. Simplement digueu-li que el seu pare l'ha enviat a buscar de sobte, i que s'ha vist obligat a deixar-nos.»
 
 Linton era molt reticent a aixecar-se del llit a les cinc del matí, i es va quedar estupefacte en assabentar-se que havia de preparar-se per a un nou viatge; però vaig suavitzar l'assumpte explicant-li que anava a passar un temps amb el seu pare, el senyor Heathcliff, que desitjava tant veure'l que no volia ajornar el plaer fins que es recuperés del seu darrer viatge.
 
@@ -30,7 +30,7 @@ Linton es va deixar caure sobre el coixí i es va quedar absort en els seus pens
 
 Vaig intentar convèncer-lo de la mala educació de mostrar-se reticent a trobar el seu pare; però es va resistir obstinadament a fer cap progrés cap a vestir-se, i vaig haver de demanar l'ajuda del meu amo per convèncer-lo de sortir del llit. La pobra criatura va ser finalment posada en marxa, amb diverses promeses enganyoses que la seva absència seria breu: que el senyor Edgar i Cathy el visitarien, i altres promeses, igualment infundades, que vaig inventar i repetir a intervals al llarg del camí. L'aire pur perfumat de bruc, el sol brillant i el trot suau de Minny li van alleujar el desànim al cap d'una estona. Va començar a fer preguntes sobre la seva nova llar i els seus habitants, amb més interès i vivacitat.
 
-—Wuthering Heights és un lloc tan agradable com Thrushcross Grange? —va preguntar, girant-se per llançar una darrera mirada a la vall, d'on una boira lleugera s'alçava i formava un núvol llanós als marges del blau.
+—Cims Borrascosos és un lloc tan agradable com la Granja dels Tords? —va preguntar, girant-se per llançar una darrera mirada a la vall, d'on una boira lleugera s'alçava i formava un núvol llanós als marges del blau.
 
 —No és tan enterrada entre arbres —vaig respondre—, i no és tan gran, però podeu veure el paisatge bellament tot al voltant; i l'aire és més saludable per a vós, més fresc i sec. Potser al principi trobareu l'edifici vell i fosc; tot i que és una casa respectable: la segona millor del veïnat. I podreu fer uns passeigs preciosos pels erms. Hareton Earnshaw —és a dir, l'altre cosí de la senyoreta Cathy, i per tant cosí vostre en certa manera— us ensenyarà tots els racons més encisadors; i podreu portar un llibre quan faci bon temps, i fer d'un clot verd el vostre estudi; i, de tant en tant, el vostre oncle potser s'unirà a vós en un passeig: sovint surt a caminar pels turons.
 

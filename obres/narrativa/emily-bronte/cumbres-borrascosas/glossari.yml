@@ -1,0 +1,185 @@
+---
+# Glossari terminològic - Cims Borrascosos (Wuthering Heights)
+# Emily Brontë, 1847 - Traducció al català
+
+termes:
+  - id: cims-borrascosos
+    original: "Wuthering Heights"
+    traduccio: "Cims Borrascosos"
+    definicio: >
+      Nom de la casa solariega dels Earnshaw, situada al cim d'un tossal
+      exposat als vents del nord de Yorkshire. «Wuthering» és un adjectiu
+      dialectal que descriu el tumult atmosfèric dels llocs batuts pel vent.
+    tipus: topònim
+
+  - id: granja-dels-tords
+    original: "Thrushcross Grange"
+    traduccio: "Granja dels Tords"
+    definicio: >
+      Residència senyorial dels Linton, situada a la vall, a dues milles
+      de Cims Borrascosos. Representa la civilització, el refinament i
+      la comoditat, en contrast amb la naturalesa salvatge dels Cims.
+    tipus: topònim
+
+  - id: gimmerton
+    original: "Gimmerton"
+    traduccio: "Gimmerton"
+    definicio: >
+      Poble fictici proper a Cims Borrascosos i la Granja dels Tords.
+      Disposa d'una capella metodista, un metge (Kenneth) i una fira
+      anual. Probablement inspirat en Haworth o pobles del West Riding.
+    tipus: topònim
+
+  - id: heathcliff
+    original: "Heathcliff"
+    traduccio: "Heathcliff"
+    definicio: >
+      Protagonista masculí. Orfe recollit pel senyor Earnshaw a Liverpool.
+      El seu nom és alhora nom de pila i cognom. Evoca «heath» (erm, bruc)
+      i «cliff» (penya-segat), elements del paisatge de Yorkshire.
+    tipus: nom propi
+
+  - id: catherine-earnshaw
+    original: "Catherine Earnshaw"
+    traduccio: "Catherine Earnshaw"
+    definicio: >
+      Protagonista femenina, filla del senyor Earnshaw. Passa a ser
+      Catherine Linton pel matrimoni amb Edgar, i el seu fantasma es
+      presenta com «Catherine Linton» a l'escena del somni de Lockwood.
+    tipus: nom propi
+
+  - id: nelly-dean
+    original: "Ellen «Nelly» Dean"
+    traduccio: "Ellen «Nelly» Dean"
+    definicio: >
+      Narradora principal de la història. Criada de llarg servei, primer
+      a Cims Borrascosos i després a la Granja dels Tords. La seva veu
+      col·loquial i educada estructura el relat dins el marc de Lockwood.
+    tipus: nom propi
+
+  - id: lockwood
+    original: "Mr. Lockwood"
+    traduccio: "el senyor Lockwood"
+    definicio: >
+      Narrador exterior. Llogater urbà de la Granja dels Tords que
+      visita Cims Borrascosos i provoca el relat de Nelly Dean. La seva
+      perspectiva d'estranger emmarca tota la novel·la.
+    tipus: nom propi
+
+  - id: joseph
+    original: "Joseph"
+    traduccio: "Joseph"
+    definicio: >
+      Criat vell i fanàtic religiós de Cims Borrascosos. Parla en dialecte
+      de Yorkshire (West Riding), que en la traducció es reflecteix amb un
+      registre rústic i arcaïtzant. Representa el puritanisme opressiu.
+    tipus: nom propi
+
+  - id: hareton-earnshaw
+    original: "Hareton Earnshaw"
+    traduccio: "Hareton Earnshaw"
+    definicio: >
+      Fill de Hindley Earnshaw i Frances. Degradat per Heathcliff a la
+      condició de criat ignorant com a venjança contra el seu pare.
+      Representa la possibilitat de redempció al final de la novel·la.
+    tipus: nom propi
+
+  - id: hindley-earnshaw
+    original: "Hindley Earnshaw"
+    traduccio: "Hindley Earnshaw"
+    definicio: >
+      Fill gran del senyor Earnshaw, germà de Catherine. Gelós de
+      Heathcliff des de la infantesa, es degrada per l'alcoholisme
+      i el joc després de la mort de la seva esposa Frances.
+    tipus: nom propi
+
+  - id: edgar-linton
+    original: "Edgar Linton"
+    traduccio: "Edgar Linton"
+    definicio: >
+      Marit de Catherine Earnshaw, amo de la Granja dels Tords.
+      Representa la cultura, la delicadesa i l'ordre social,
+      en oposició a la naturalesa salvatge de Heathcliff.
+    tipus: nom propi
+
+  - id: isabella-linton
+    original: "Isabella Linton"
+    traduccio: "Isabella Linton"
+    definicio: >
+      Germana d'Edgar Linton. S'enamora de Heathcliff i s'hi casa,
+      per descobrir la seva verdadera naturalesa cruel. Mare de
+      Linton Heathcliff.
+    tipus: nom propi
+
+  - id: linton-heathcliff
+    original: "Linton Heathcliff"
+    traduccio: "Linton Heathcliff"
+    definicio: >
+      Fill de Heathcliff i Isabella. Noi malaltís i capritxós,
+      instrument del seu pare per apropiar-se de la Granja dels Tords
+      mitjançant el matrimoni forçat amb la jove Catherine.
+    tipus: nom propi
+
+  - id: cathy-linton
+    original: "Catherine Linton (young Cathy)"
+    traduccio: "Catherine Linton (la jove Cathy)"
+    definicio: >
+      Filla d'Edgar Linton i Catherine Earnshaw. Segona generació.
+      El seu caràcter combina la vivacitat de la seva mare amb la
+      dolçor del seu pare. Acaba reconciliant les dues famílies
+      amb el seu amor per Hareton.
+    tipus: nom propi
+
+  - id: zillah
+    original: "Zillah"
+    traduccio: "Zillah"
+    definicio: >
+      Mestressa de claus de Cims Borrascosos durant els darrers anys
+      del domini de Heathcliff. Testimoni distant i una mica insensible
+      del patiment de la jove Catherine.
+    tipus: nom propi
+
+  - id: kenneth
+    original: "Mr. Kenneth"
+    traduccio: "el senyor Kenneth"
+    definicio: >
+      Metge de Gimmerton que atén les malalties i accidents dels
+      habitants de Cims Borrascosos i la Granja dels Tords al llarg
+      de tota la novel·la.
+    tipus: nom propi
+
+  - id: erm
+    original: "moor"
+    traduccio: "erm / landa"
+    definicio: >
+      Paisatge obert de bruc i herba al cim dels turons de Yorkshire.
+      Espai simbòlic central de la novel·la: lloc de llibertat, passió
+      salvatge i comunió entre Heathcliff i Catherine.
+    tipus: terme
+
+  - id: llar
+    original: "hearth"
+    traduccio: "llar de foc / llar"
+    definicio: >
+      La xemeneia gran de Cims Borrascosos, centre de la vida domèstica.
+      Símbol de refugi i poder dins la casa. La lluita pel control
+      de l'espai de la llar reflecteix les dinàmiques de poder.
+    tipus: terme
+
+  - id: pilgrim-staff
+    original: "pilgrim's staff"
+    traduccio: "bastó de pelegrí"
+    definicio: >
+      Objecte simbòlic del somni de Lockwood (cap. III), on Joseph
+      exigeix un bastó de pelegrí per entrar a la casa. Evoca el
+      pelegrinatge religiós i el judici moral purità.
+    tipus: terme
+
+  - id: gimmerden-sough
+    original: "Gimmerden Sough"
+    traduccio: "Gimmerden Sough"
+    definicio: >
+      Capella on predica el reverend Jabez Branderham en el somni
+      de Lockwood. «Sough» és dialecte de Yorkshire per un canal
+      de drenatge o una fondària pantanosa.
+    tipus: topònim
