@@ -200,10 +200,9 @@ run_task() {
     # IMPORTANT: Afegir prefix anti-pla a la instrucció
     local full_instruction="${EXEC_PREFIX}${instruction}"
 
-    # Crida DIRECTA a claude amb setsid per evitar el problema del PTY
-    result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" setsid -w claude -p "$full_instruction" \
+    # Crida DIRECTA a claude (NO usar script -c ni fitxers temporals)
+    result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" claude -p "$full_instruction" \
         --max-turns 25 \
-        --add-dir "$PROJECT_DIR" \
         --allowedTools "Edit" "Write" \
         "Bash(cat:*)" "Bash(grep:*)" "Bash(ls:*)" "Bash(find:*)" \
         "Bash(python3:*)" "Bash(python:*)" "Bash(pip:*)" "Bash(pip3:*)" \
