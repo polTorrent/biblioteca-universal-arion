@@ -1,4 +1,4 @@
-# La Transformació[^11]
+# La Metamorfosi[^11]
 *Franz Kafka*
 
 Traduït de l'alemany per Biblioteca Arion

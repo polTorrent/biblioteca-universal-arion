@@ -42,4 +42,4 @@ L'última imatge de l'obra —Grete estirant "el seu cos jove" al tramvia— s'h
 
 ## [11] El títol original
 
-El títol alemany "Die Verwandlung" significa literalment "La transformació" o "La metamorfosi". Kafka preferia "transformació" perquè implica un canvi des de dins, mentre que "metamorfosi" (del grec) té connotacions més biològiques i externes. La traducció catalana "La Transformació" respecta aquesta preferència de l'autor.
+El títol alemany "Die Verwandlung" significa literalment "La transformació" o "La metamorfosi". Kafka preferia "transformació" perquè implica un canvi des de dins, mentre que "metamorfosi" (del grec μεταμόρφωσις, *metamórphōsis*) té connotacions més biològiques i externes. Tanmateix, "La Metamorfosi" s'ha consolidat com el títol més habitual en les traduccions catalanes i en la tradició literària romànica (cf. castellà "La metamorfosis", francès "La Métamorphose", italià "La metamorfosi").
