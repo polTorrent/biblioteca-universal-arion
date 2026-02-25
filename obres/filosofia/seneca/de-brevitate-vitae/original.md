@@ -1,4 +1,3 @@
-# De brevitate vitae
 **Autor:** Seneca
 **Font:** [wikisource](https://la.wikisource.org/wiki/De%20brevitate%20vitae)
 **Llengua:** llatí
