@@ -22,37 +22,43 @@ Sòcrates estableix el seu mètode: només seguir el raonament (*logos*) que, en
 
 Analogia recurrent en Plató: així com en medicina o gimnàstica seguim l'expert i no la majoria, en qüestions de justícia hem de seguir qui realment sap, no l'opinió popular. L'«únic» expert aquí és implícitament la raó filosòfica o, potser, la divinitat.
 
-## [6] No respondre mai a la injustícia amb injustícia
+## [6] Viure bé (εὖ ζῆν)
+
+Principi fonamental de l'ètica socràtica: no és simplement viure (τὸ ζῆν) el que s'ha de valorar, sinó viure bé (τὸ εὖ ζῆν). Sòcrates estableix una equivalència triple: viure bé = viure bellament (καλῶς) = viure justament (δικαίως). D'aquí es dedueix que una vida injusta no val la pena de ser viscuda, i per tant fugir injustament de la presó seria pitjor que morir.
+
+> Vegeu: Aristòtil, *Ètica Nicomaquea* I.4, on reprèn el concepte d'εὐδαιμονία
+
+## [7] No respondre mai a la injustícia amb injustícia
 
 Principi ètic fonamental del socratisme, revolucionari en el seu context. Contrastava amb l'ètica grega tradicional (ajudar els amics, perjudicar els enemics) i amb la llei del talió. Anticipava en certs aspectes l'ètica cristiana del perdó.
 
 > Vegeu: *República* 335d-e, on Sòcrates argumenta que mai no és just perjudicar ningú
 
-## [7] El principi de no fer mal
+## [8] El principi de no fer mal
 
 La conclusió de l'argument: ni respondre a la injustícia amb injustícia, ni fer mal a ningú sota cap circumstància. Aquest principi és la base per rebutjar la fugida: fugir seria fer mal a les Lleis i a la ciutat.
 
-## [8] La prosopopeia de les Lleis
+## [9] La prosopopeia de les Lleis
 
 Recurs retòric brillant: Sòcrates imagina les Lleis personificades que l'interpel·len. Aquest passatge és considerat un dels primers textos sobre la teoria del contracte social. Les Lleis argumenten tres punts:
 1. Són com pares (han educat Sòcrates)
 2. Hi ha un acord tàcit (en quedar-se, ha acceptat obeir-les)
 3. La desobediència individual destrueix l'ordre social
 
-## [9] La pàtria més sagrada que els pares
+## [10] La pàtria més sagrada que els pares
 
 Idea central del pensament polític grec: la *polis* és anterior i superior a l'individu i a la família. El ciutadà deu la seva existència i educació a les lleis de la ciutat. Aquesta noció influirà en tot el pensament polític occidental.
 
-## [10] L'argument del consentiment tàcit
+## [11] L'argument del consentiment tàcit
 
 L'acord entre ciutadà i lleis no és explícit sinó tàcit: residir a la ciutat, participar en les seves institucions, tenir-hi fills, tot això implica acceptació de les lleis. Sòcrates, que mai no va sortir d'Atenes excepte per campanyes militars, és l'exemple perfecte d'aquest consentiment.
 
 > Vegeu: Locke, *Segon tractat sobre el govern civil*, que reprèn aquesta teoria
 
-## [11] Les Lleis de l'Hades
+## [12] Les Lleis de l'Hades
 
 Les Lleis adverteixen que si Sòcrates fuig, les lleis divines de l'Hades (el món dels morts) tampoc no el rebran bé. La justícia no és només terrenal sinó còsmica. Aquesta idea connecta amb el mite escatològic del *Fedó* i de la *República*.
 
-## [12] Els coribants
+## [13] Els coribants
 
 Els coribants eren sacerdots de Cíbele que entraven en èxtasi ritual al so de les flautes. Sòcrates compara la força dels arguments de les Lleis amb aquesta possessió divina: els seus raonaments «ressonen» dins seu de manera tan potent que no pot escoltar cap altra cosa. És una imatge irònica: el filòsof més racional d'Atenes es descriu «posseït» per la raó.
