@@ -1,4 +1,4 @@
-# CAPÍTOL XXII
+## XXII
 
 L'estiu s'acabava, i la primeria de la tardor també: ja havíem passat Sant Miquel, però la collita anava endarrerida aquell any, i uns quants dels nostres camps encara restaven per segar. El senyor Linton i la seva filla sovint passejaven entre els segadors; el dia que es van endur els últims garbers s'hi van quedar fins al capvespre, i com que el vespre va resultar fred i humit, el meu amo va agafar un mal refredat que se li va instal·lar obstinadament als pulmons i el va tenir reclòs a casa durant tot l'hivern, gairebé sense interrupció.
 

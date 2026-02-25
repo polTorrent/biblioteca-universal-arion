@@ -1,4 +1,4 @@
-# CAPÍTOL XIV
+## XIV
 
 Tan bon punt vaig haver llegit aquella epístola, vaig anar a trobar l'amo i l'informí que la seva germana havia arribat als Cims i m'havia enviat una carta on expressava el seu dolor per la situació de la senyora Linton, així com el seu ardent desig de veure'l; amb el prec que em transmetés, tan aviat com fos possible, algun senyal de perdó per a ella.
 

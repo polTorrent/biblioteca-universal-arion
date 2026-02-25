@@ -1,4 +1,4 @@
-# CAPÍTOL XXI
+## XXI
 
 Vam tenir una feina de déu amb la petita Cathy aquell dia: es va aixecar tota eufòrica, impacient per retrobar-se amb el seu cosí, i unes llàgrimes tan apassionades i unes lamentacions tan grans van seguir la notícia de la seva partença que el mateix Edgar es va veure obligat a consolar-la, assegurant-li que tornaria aviat: va afegir, però, «si puc aconseguir-ho»; i d'això no n'hi havia cap esperança. Aquesta promesa la va apaivagar malament; però el temps va ser més poderós; i tot i que encara de tant en tant preguntava al seu pare quan tornaria Linton, abans que el tornés a veure els seus trets s'havien esborrat tant en la seva memòria que no el va reconèixer.
 
@@ -16,7 +16,7 @@ El temps va passar a la Granja de la manera agradable de sempre fins que la seny
 
 «No, no és lluny», va dir. «Hi he anat ben a prop amb el papa.»
 
-Em vaig posar la capota i vaig sortir, sense pensar-hi més. Ella saltava davant meu, i tornava al meu costat, i se n'anava de nou com un jove llebrer; i, al principi, vaig trobar prou entreteniment escoltant les aloses cantant lluny i a prop, gaudint del sol dolç i càlid, i contemplant-la a ella, la meva estimada i el meu delit, amb els seus rínxols daurats volant solts darrere seu, i la seva galta brillant, tan suau i pura en la seva floridura com una rosa silvestre, i els seus ulls radiant de plaer sense núvols. Era una criatura feliç, i un àngel, en aquells dies. Llàstima que no pogués estar contenta.
+Em vaig posar la capota i vaig sortir, sense pensar-hi més. Ella saltava davant meu, i tornava al meu costat, i se n'anava de nou com un jove llebrer; i, al principi, vaig trobar prou entreteniment escoltant les aloses cantant lluny i a prop, gaudint del sol dolç i càlid, i contemplant-la a ella, la meva estimada i el meu delit, amb els seus rínxols daurats volant solts darrere seu, i la seva galta rosada, tan suau i pura en la seva floridura com una rosa silvestre, i els seus ulls radiant de plaer sense núvols. Era una criatura feliç, i un àngel, en aquells dies. Llàstima que no pogués estar contenta.
 
 «Bé», vaig dir, «on són les vostres perdius de landa, senyoreta Cathy? Ja hi hauríem de ser: la tanca del parc de la Granja queda molt lluny ara.»
 
@@ -30,7 +30,7 @@ Cathy havia estat enxampada en flagrant delicte de saqueig, o almenys d'escorcol
 
 Heathcliff em va llançar un somriure malintencionat, expressant el seu coneixement del grup i, en conseqüència, la seva malvolença envers nosaltres, i va preguntar qui era «el papa».
 
-«El senyor Linton de Thrushcross Grange», va respondre ella. «Pensava que no em coneixíeu, o no hauríeu parlat d'aquesta manera.»
+«El senyor Linton de la Granja dels Tords», va respondre ella. «Pensava que no em coneixíeu, o no hauríeu parlat d'aquesta manera.»
 
 «Suposeu doncs que el papa és altament estimat i respectat?», va dir ell, sarcàsticament.
 

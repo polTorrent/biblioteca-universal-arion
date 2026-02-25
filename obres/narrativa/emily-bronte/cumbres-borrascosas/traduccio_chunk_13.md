@@ -1,4 +1,4 @@
-# CAPÍTOL XIII
+## XIII
 
 Durant dos mesos els fugitius van romandre absents; en aquells dos mesos, la senyora Linton va patir i va superar el pitjor embat del que van denominar una febre cerebral. Cap mare no hauria pogut vetllar un fill únic amb més devoció que Edgar la va atendre a ella. Dia i nit la vigilava, i suportava pacientment totes les molèsties que uns nervis irritables i una raó trastornada podien infligir-li; i, tot i que Kenneth va observar que allò que havia salvat de la tomba només recompensaria les seves cures convertint-se en font d'ansietat constant en el futur —de fet, que la seva salut i les seves forces s'estaven sacrificant per preservar una mera ruïna d'humanitat—, ell no coneixia límits en la gratitud i l'alegria quan la vida de Catherine va ser declarada fora de perill; i hora rere hora seia al seu costat, seguint el retorn gradual a la salut corporal, i afalagant les seves esperances massa optimistes amb la il·lusió que la ment d'ella també retroba-ria el seu equilibri, i que aviat tornaria a ser completament la mateixa de sempre.
 
@@ -18,7 +18,7 @@ Hauria d'esmentar que Isabella va enviar al seu germà, unes sis setmanes despr�
 
 ESTIMADA ELLEN, comença,—Vaig arribar ahir a la nit a Cims de Borrasca, i vaig saber, per primera vegada, que Catherine ha estat, i encara està, molt malalta. No li he d'escriure, suposo, i el meu germà o bé està massa enfadat o massa afligit per respondre al que li vaig enviar. Tot i així, he d'escriure a algú, i l'única opció que em queda sou vós.
 
-Informeu Edgar que donaria el món per veure la seva cara de nou —que el meu cor va tornar a Thrushcross Grange a les vint-i-quatre hores d'haver-lo deixat, i hi és en aquest moment, ple de sentiments càlids per a ell i per a Catherine! _No el puc seguir, però_—(aquestes paraules estan subratllades)—que no m'esperin, i que treguin les conclusions que vulguin; tenint cura, tanmateix, de no atribuir res a la meva voluntat feble ni al meu afecte deficient.
+Informeu Edgar que donaria el món per veure la seva cara de nou —que el meu cor va tornar a la Granja dels Tords a les vint-i-quatre hores d'haver-lo deixat, i hi és en aquest moment, ple de sentiments càlids per a ell i per a Catherine! _No el puc seguir, però_—(aquestes paraules estan subratllades)—que no m'esperin, i que treguin les conclusions que vulguin; tenint cura, tanmateix, de no atribuir res a la meva voluntat feble ni al meu afecte deficient.
 
 La resta de la carta és només per a vós. Vull fer-vos dues preguntes: la primera és—Com vau aconseguir preservar les simpaties comunes de la naturalesa humana quan residíeu aquí? No reconec cap sentiment que aquells que m'envolten comparteixin amb mi.
 

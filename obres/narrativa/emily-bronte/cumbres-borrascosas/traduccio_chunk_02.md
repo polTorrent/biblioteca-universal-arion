@@ -1,6 +1,6 @@
-# CAPÍTOL II
+## II
 
-Ahir a la tarda va arribar boirosa i freda. Tenia mig pensament de passar-la davant del foc del meu estudi, en lloc d'atrapar-me pels erms i pel fang fins a Cumbres Borrascosas. En pujar després de dinar, però (Nota: jo din entre les dotze i la una; la majordoma, una dama matrona que havien pres com a part de la casa, no podia, o no volia, comprendre la meva petició de ser servit a les cinc), en pujar les escales amb aquesta intenció mandrosa, i entrar a l'habitació, vaig veure una criada de genolls, envoltada de raspalls i galledes de carbó, aixecant una pols infernal mentre apagava les flames amb munts de cendra. Aquest espectacle em va fer recular immediatament; vaig agafar el barret i, després d'una caminada de quatre milles, vaig arribar a la portalada del jardí de Heathcliff just a temps d'escapar de les primeres volates d'una nevada.
+Ahir a la tarda va arribar boirosa i freda. Tenia mig pensament de passar-la davant del foc del meu estudi, en lloc d'atrapar-me pels erms i pel fang fins a Cims Borrascosos. En pujar després de dinar, però (Nota: jo din entre les dotze i la una; la majordoma, una dama matrona que havien pres com a part de la casa, no podia, o no volia, comprendre la meva petició de ser servit a les cinc), en pujar les escales amb aquesta intenció mandrosa, i entrar a l'habitació, vaig veure una criada de genolls, envoltada de raspalls i galledes de carbó, aixecant una pols infernal mentre apagava les flames amb munts de cendra. Aquest espectacle em va fer recular immediatament; vaig agafar el barret i, després d'una caminada de quatre milles, vaig arribar a la portalada del jardí de Heathcliff just a temps d'escapar de les primeres volates d'una nevada.
 
 Al capdamunt d'aquell tossal desolat la terra estava endurida per una gelada negra, i l'aire em feia tremolar tots els membres. Com que no podia treure la cadena, vaig saltar per sobre i, corrent per la calçada empedrada vorejada de ribes esquelètiques, vaig picar debades perquè em deixessin entrar, fins que se'm van entumir els artells i els gossos van començar a udolar.
 
@@ -82,7 +82,7 @@ Vaig pensar que, si jo havia causat el núvol, era el meu deure fer un esforç p
 
 —La senyora Heathcliff, la vostra muller, vull dir.
 
-—Bé, sí... oh, voleu insinuar que el seu esperit ha ocupat el lloc d'àngel ministrador, i guarda les fortunes de Cumbres Borrascosas, fins i tot quan el seu cos se n'ha anat. És això?
+—Bé, sí... oh, voleu insinuar que el seu esperit ha ocupat el lloc d'àngel ministrador, i guarda les fortunes de Cims Borrascosos, fins i tot quan el seu cos se n'ha anat. És això?
 
 Adonant-me que havia comès una errada, vaig intentar corregir-la. Hauria pogut veure que hi havia massa disparitat entre les edats de les parts per fer probable que fossin marit i muller. Un tenia uns quaranta anys: una època de vigor mental en què els homes rarament alimenten la il·lusió de ser estimats per noies: aquell somni es reserva per al consol dels nostres anys declinants. L'altre no semblava tenir disset anys.
 

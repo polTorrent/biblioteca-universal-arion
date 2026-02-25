@@ -1,4 +1,4 @@
-# CAPÍTOL XI
+## XI
 
 De vegades, tot meditant sobre aquestes coses en solitud, m'he alçat amb un sobresalt de terror i m'he posat la cofa per anar a veure com anaven les coses a la granja. He convençut la meva consciència que era un deure advertir-lo de com parlava la gent sobre els seus costums; i aleshores he recordat els seus mals hàbits inveterats i, sense cap esperança de fer-li cap bé, he reculat davant la idea de tornar a entrar en aquella casa lúgubre, dubtant si podria suportar que em prenguessin la paraula.
 

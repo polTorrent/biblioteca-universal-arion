@@ -1,4 +1,4 @@
-# CAPÍTOL XXVIII
+## XXVIII
 
 Al cinquè matí, o més aviat a la tarda, uns passos diferents s'hi van acostar —més lleugers i curts; i, aquesta vegada, la persona va entrar a l'habitació. Era Zillah, endiumenjada amb el seu xal escarlata, un barret de seda negra al cap i un cistell de vímet penjat al braç.
 

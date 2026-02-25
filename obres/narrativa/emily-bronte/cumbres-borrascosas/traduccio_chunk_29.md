@@ -1,4 +1,4 @@
-# CAPÍTOL XXIX
+## XXIX
 
 El vespre després del funeral, la meva jove senyora i jo estàvem assegudes a la biblioteca; ara meditant afligidament —una de nosaltres amb desesperació— sobre la nostra pèrdua, ara aventurant conjectures sobre el tenebrós futur.
 

@@ -1,4 +1,4 @@
-# CAPÍTOL XXV
+## XXV
 
 —Aquestes coses van passar l'hivern passat, senyor —digué la senyora Dean—; fa poc més d'un any. L'hivern passat, no hauria pensat que, al cap de dotze mesos, estaria entretenint un desconegut de la família amb el seu relat! Però, qui sap quant de temps sereu un desconegut? Sou massa jove per conformar-vos sempre a viure sol; i d'alguna manera m'imagino que ningú no podria veure Catherine Linton sense estimar-la. Somrieu; però per què teniu aquest aire tan vivaç i interessat quan parlo d'ella? I per què m'heu demanat que pengés el seu retrat sobre la llar de foc? I per què...?
 

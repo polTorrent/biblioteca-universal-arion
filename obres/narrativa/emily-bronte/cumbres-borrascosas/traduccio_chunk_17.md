@@ -1,4 +1,4 @@
-# CAPÍTOL XVII
+## XVII
 
 Aquell divendres fou el darrer dels nostres dies bells durant un mes. Al vespre el temps es va trencar: el vent va girar del sud al nord-est, i va portar primer pluja, i després aiguaneu i neu. L'endemà amb prou feines hom podia imaginar que hi havia hagut tres setmanes d'estiu: les prímules i els safrans estaven amagats sota ventades hivernals; les aloses callaven, les fulles joves dels arbres primerencs, ferides i ennegrides. I lúgubre, i gèlid, i trist, aquell endemà s'arrossegà! El meu amo es va quedar a la seva cambra; jo vaig prendre possessió de la sala solitària, convertint-la en un bressol; i allà estava jo, asseguda amb la nina gemegant d'una criatura posada al meu genoll, gronxant-la amunt i avall, i mirant, mentrestant, com els flocs silenciosos i persistents s'acumulaven a la finestra sense cortines, quan la porta es va obrir i algú va entrar, sense alè i rient! La meva ira va ser més gran que el meu astorament durant un minut. Vaig suposar que era una de les minyones, i vaig cridar: —Ja n'hi ha prou! Com goseu mostrar la vostra frivolitat aquí? Què diria el senyor Linton si us sentís?
 
@@ -20,7 +20,7 @@ Va insistir que complís les seves instruccions, abans de deixar-me tocar-la; i 
 
 —Bé, no parleu tan de pressa, senyoreta! —vaig interrompre—; desfareu el mocador que us he lligat a la cara, i fareu que el tall torni a sagnar. Beveu el vostre te, i preneu alè, i deixeu de riure: el riure és tristament fora de lloc sota aquesta teulada, i en la vostra condició!
 
-—Una veritat innegable —va respondre ella—. Escolteu aquella criatura! Manté un plor constant... traieu-la del meu oïda durant una hora; no em quedaré més estona.
+—Una veritat innegable —va respondre ella—. Escolteu aquella criatura! Manté un plor constant... traieu-la de la meva oïda durant una hora; no em quedaré més estona.
 
 Vaig tocar la campaneta i la vaig confiar a la cura d'una criada; i llavors vaig preguntar què l'havia empès a fugir de Cims Borrascosos d'una manera tan inversemblant, i on pensava anar, ja que refusava quedar-se amb nosaltres.
 
@@ -172,7 +172,7 @@ El vell criat va confirmar aquesta declaració, però va murmurar:
 
 —Jo hauria preferit que ell mateix hagués anat a buscar el metge! Jo n'hauria tingut més cura de l'amo que no pas ell... i no era pas mort quan el vaig deixar, res d'això!
 
-Vaig insistir que el funeral fos respectable. El senyor Heathcliff va dir que podia fer el que volgués; només que desitjava que recordés que els diners de tot l'afer sortien de la seva butxaca. Mantenia una actitud dura i indiferent, indicativa ni d'alegria ni de tristesa: si res, expressava una satisfacció de pedra per una peça de feina difícil executada amb èxit. Vaig observar un cop, en efecte, quelcom semblant a exultació en el seu aspecte: va ser just quan la gent treia el taüt de la casa. Va tenir la hipocresia de representar un dolgut: i abans de seguir el seguici amb el Hareton, va aixecar la desafortunada criatura sobre la taula i va murmurar, amb un gust peculiar: «Ara, bonic meu, ets _meu_! I veurem si un arbre no creix tan tort com un altre, amb el mateix vent per retorçar-lo!» La criatura inconscient estava contenta amb aquest discurs: jugava amb els patilles de Heathcliff, i li acariciava la galta; però jo vaig endevinar el seu significat, i vaig observar àcidament: «Aquell noi ha de tornar amb mi a Thrushcross Grange, senyor. No hi ha res al món menys vostre que ell!»
+Vaig insistir que el funeral fos respectable. El senyor Heathcliff va dir que podia fer el que volgués; només que desitjava que recordés que els diners de tot l'afer sortien de la seva butxaca. Mantenia una actitud dura i indiferent, indicativa ni d'alegria ni de tristesa: si res, expressava una satisfacció de pedra per una peça de feina difícil executada amb èxit. Vaig observar un cop, en efecte, quelcom semblant a exultació en el seu aspecte: va ser just quan la gent treia el taüt de la casa. Va tenir la hipocresia de representar un dolgut: i abans de seguir el seguici amb el Hareton, va aixecar la desafortunada criatura sobre la taula i va murmurar, amb un gust peculiar: «Ara, bonic meu, ets _meu_! I veurem si un arbre no creix tan tort com un altre, amb el mateix vent per retorçar-lo!» La criatura inconscient estava contenta amb aquest discurs: jugava amb els patilles de Heathcliff, i li acariciava la galta; però jo vaig endevinar el seu significat, i vaig observar àcidament: «Aquell noi ha de tornar amb mi a la Granja dels Tords, senyor. No hi ha res al món menys vostre que ell!»
 
 —Ho diu el Linton? —va exigir.
 

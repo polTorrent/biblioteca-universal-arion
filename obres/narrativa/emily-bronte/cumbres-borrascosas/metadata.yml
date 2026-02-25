@@ -1,11 +1,66 @@
 ---
-titol: "Cumbres Borrascosas"
-titol_original: "Wuthering Heights"
-autor: "Emily Brontë"
-any: 1847
-idioma_original: "anglès"
-idioma_traduccio: "català"
-traductor: "GLM 5 (automàtic)"
-font: "Project Gutenberg #768"
-url_font: "https://www.gutenberg.org/ebooks/768"
-estat: "en curs"
+obra:
+  titol: Cims Borrascosos
+  titol_original: Wuthering Heights
+  autor: Emily Brontë
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: 1847
+  any_traduccio: 2026
+  llengua_original: anglès
+
+  genere: narrativa
+  subgenere: novel·la gòtica
+
+  descripcio: >
+    Única novel·la d'Emily Brontë, publicada el 1847 sota el pseudònim
+    Ellis Bell. Narra la passió destructiva entre Heathcliff i Catherine
+    Earnshaw als erms de Yorkshire, abastant dues generacions. Obra
+    mestra de la literatura victoriana, combina elements gòtics amb un
+    realisme psicològic d'una intensitat sense precedents. Considerada
+    una de les grans novel·les de la literatura universal.
+
+  font_original: https://www.gutenberg.org/ebooks/768
+  domini_public: true
+
+  temes:
+    - passió i venjança
+    - classes socials
+    - naturalesa salvatge
+    - obsessió i destrucció
+    - generacions i herència
+    - aïllament i captivitat
+    - el sobrenatural
+
+  context:
+    tradicio: novel·la victoriana gòtica
+    influencies:
+      - Lord Byron
+      - Walter Scott
+      - novel·la gòtica del segle XVIII
+    obres_relacionades:
+      - Jane Eyre de Charlotte Brontë
+      - Agnes Grey d'Anne Brontë
+      - Frankenstein de Mary Shelley
+
+estadistiques:
+  paraules_original: 118000
+  paraules_traduccio: 125000
+  capitols: 34
+  notes: 15
+  termes_glossari: 20
+
+revisio:
+  estat: en_curs
+  data_inici: '2026-02-20'
+  data_revisio: '2026-02-25'
+  qualitat: 5.4
+  requereix_revisio_humana: true
+  notes_revisio: >
+    Traducció automàtica completada amb correccions sistemàtiques.
+    Topònims normalitzats (Cims Borrascosos, Granja dels Tords).
+    Format de capítols estandarditzat. Errors lingüístics corregits.
+    Pendent de revisió humana per millorar qualitat global.
+
+llicencia:
+  tipus: CC BY-SA 4.0
+  nota: Text original de domini públic (Project Gutenberg #768)

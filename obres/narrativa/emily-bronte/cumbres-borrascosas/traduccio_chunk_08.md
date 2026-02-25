@@ -1,4 +1,4 @@
-# CAPÍTOL VIII
+## VIII
 
 El matí d'un bell dia de juny va néixer el meu primer infant escanyolit i formós, l'últim descendent de l'antiga estirp dels Earnshaw. Estàvem atrafegats amb el fenc en un camp llunyà, quan la noia que solia portar-nos l'esmorzar va arribar corrents una hora abans d'hora, travessant el prat i pujant pel camí, cridant-me mentre corria.
 

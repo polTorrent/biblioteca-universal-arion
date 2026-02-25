@@ -1,4 +1,4 @@
-# CAPÍTOL IV
+## IV
 
 Quines penells de vent tan vans que som! Jo, que havia determinat mantenir-me independent de tot tracte social, i que agraïa als meus estels que, per fi, havia topat amb un indret on era gairebé impracticable—jo, pobre miserable, després de mantenir fins al capvespre una lluita contra l'abatiment i la solitud, em vaig veure finalment obligat a arriar la bandera; i, amb el pretext d'obtenir informació sobre les necessitats de la meva llar, vaig demanar a la senyora Dean, quan va portar el sopar, que s'assegués mentre jo menjava; esperant sincerament que resultés ser una xafardera de llei, i que o bé em tornés a la vida o bé em fes adormir amb la seva conversa.
 

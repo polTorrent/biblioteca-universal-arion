@@ -1,4 +1,4 @@
-# CAPÍTOL XXVI
+## XXVI
 
 L'estiu ja havia passat el seu esplendor quan Edgar va accedir a contracor a les seves súpliques, i Catherine i jo vam emprendre la nostra primera cavalcada per trobar-nos amb el seu cosí. Era un dia xafogós i carregat: sense sol, però amb un cel massa clapejat i boirós per amenaçar pluja; i el lloc de trobada s'havia fixat a la fita de pedra, a l'encreuament de camins. En arribar-hi, tanmateix, un pastoret enviat com a missatger ens va dir que: «El jove Linton era just a aquest costat dels Cims, i ens quedaria molt agraït si ens avançàvem una mica més.»
 
