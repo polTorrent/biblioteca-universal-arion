@@ -1,0 +1,112 @@
+# Supervisió de Qualitat - Cumbres Borrascosas (Wuthering Heights)
+# Data: 2026-02-25
+# Puntuació global: 6.6/10 (sota el llindar de 7/10)
+
+## Puntuacions per àrea
+
+| Àrea                      | Puntuació | Pes  |
+|---------------------------|-----------|------|
+| Qualitat lingüística      | 8.2/10    | 40%  |
+| Fidelitat al original     | 8.4/10    | 30%  |
+| Estructura i format       | 3.0/10    | 30%  |
+| **GLOBAL (ponderada)**    | **6.6/10**|      |
+
+---
+
+## PROBLEMES CRÍTICS (bloquejants)
+
+### 1. Traducció incompleta — falten 6 chunks (17.6%)
+- **chunk_03** — falta enmig de la seqüència (entre 02 i 04)
+- **chunks 30, 31, 32, 33, 34** — darrers capítols de l'obra
+
+### 2. No existeix `traduccio.md` (fitxer combinat)
+- Sense aquest fitxer el build de la web no pot funcionar
+- Cal combinar tots els traduccio_chunk_XX.md en un sol traduccio.md
+
+### 3. metadata.yml molt incomplet
+- Format pla en lloc del jeràrquic estàndard (`obra:` / `revisio:`)
+- Falten camps: categoria, genere, qualitat, paraules, capitols, data_traduccio, descripcio, domini_public, temes, revisio
+
+---
+
+## PROBLEMES IMPORTANTS
+
+### 4. No existeix `glossari.yml`
+- Cap glossari terminològic creat
+
+### 5. No existeix `portada.png`
+- L'obra no té portada; el build generarà un placeholder
+
+### 6. `notes.md` és un esquelet buit
+- No conté notes erudites (històriques, culturals, intertextuals)
+- Només conté una breu descripció i una checklist desactualitzada
+- Format esperat: `## [N] Títol de la nota` amb contingut erudit
+
+### 7. Format de capítols inconsistent amb l'estàndard
+- Usen: `# CAPÍTOL I` (nivell 1, amb paraula "CAPÍTOL")
+- Estàndard del projecte: `## I` (nivell 2, només numeral romà)
+
+### 8. Falten directoris `fragments/` i `discussions/`
+- Necessaris per a col·laboració GitHub
+
+---
+
+## PROBLEMES LINGÜÍSTICS (corregibles amb revisió)
+
+### 9. Errors de concordança de gènere (recurrents)
+- "al seu armilla" → "a la seva armilla" (chunk_01, l.3)
+- "un autèntic tempesta" → "una autèntica tempesta" (chunk_01, l.37)
+- "del meu oïda" → "de la meva oïda" (chunk_17, l.23)
+- "una enorme aparador" → "un enorme aparador" (chunk_01, l.25)
+
+### 10. Calcs de l'anglès
+- "pèl-liver" — mot inexistent en català (chunk_01, l.25)
+- "escorcollar una Bíblia" — calc de "ransacked" (chunk_05, l.7)
+- "no tinc poder de sentir" — calc de "I've no power to feel" (chunk_29)
+
+### 11. Formes verbals i lèxiques incorrectes
+- "perfecti" — no existeix; hauria de ser "perfecte" (chunk_01, l.3)
+- "Va abat" — forma verbal incorrecta; "va abatre" (chunk_12, l.27)
+- "enrojolament" — no estàndard; "enrogiment" (chunk_12, l.57)
+
+### 12. Errors puntuals de sentit
+- "gate" traduït com "porta" en lloc de "reixa/barrera" (chunk_01)
+- "fair narrator" traduït com "narradora justa" en lloc de "bona narradora" (chunk_15)
+- "tresses" traduït com "trenes" en lloc de "metxes/cabells" (chunk_15)
+- "bright cheek" traduït com "galta brillant" en lloc de "galta rosada" (chunk_21)
+
+---
+
+## FITXERS A NETEJAR
+
+- `test.md` — fitxer de prova ("Hola món"), eliminar
+- `original.txt` — conté "404: Not Found", eliminar
+- `original_extracted.txt` — fitxer buit (0 bytes), eliminar
+- `original_en.txt` — redundant amb `original.md`, considerar eliminar
+
+---
+
+## PUNTS FORTS (a preservar)
+
+- La qualitat de la prosa catalana és bona-alta (8.2/10) per a traducció IA
+- Zero omissions de paràgrafs o frases en els fragments revisats
+- Zero invencions o contingut afegit
+- El to gòtic-romàntic de Brontë es transmet amb solvència
+- Pronoms febles i subjuntiu generalment correctes
+- Passatges excel·lents: mort d'Earnshaw (cap. V), deliri de Catherine (cap. XII), monòleg de Heathcliff sobre la tomba (cap. XXIX)
+- La qualitat millora progressivament al llarg de l'obra (de 7/10 al cap. I a 9/10 al cap. XXIX)
+
+---
+
+## PLA D'ACCIÓ RECOMANAT (per ordre de prioritat)
+
+1. Traduir chunks 03, 30, 31, 32, 33, 34
+2. Combinar tots els chunks en `traduccio.md`
+3. Completar `metadata.yml` amb format jeràrquic i tots els camps
+4. Crear `glossari.yml` amb termes clau
+5. Generar `portada.png` amb l'agent portadista
+6. Escriure notes erudites a `notes.md`
+7. Crear directoris `fragments/` i `discussions/`
+8. Corregir format capítols: `# CAPÍTOL X` → `## X`
+9. Revisió lingüística: concordances gènere, calcs anglès, formes verbals
+10. Eliminar fitxers brossa (test.md, original.txt, original_extracted.txt)
