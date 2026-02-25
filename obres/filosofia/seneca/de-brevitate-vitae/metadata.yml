@@ -5,27 +5,31 @@ obra:
   any_traduccio: 2026
   llengua_original: llatí
   genere: filosofia
-  descripcio: "Tractat filosòfic estoic on Sèneca exhorta Paulí a abandonar els afers públics i dedicar-se a la filosofia, argumentant que la vida no és breu sinó que la malgastem."
+  descripcio: Tractat filosòfic estoic on Sèneca exhorta Paulí a abandonar els afers
+    públics i dedicar-se a la filosofia, argumentant que la vida no és breu sinó que
+    la malgastem.
   estadistiques:
-    paraules_traduccio: 8756
+    paraules_traduccio: 5770
 revisio:
   estat: revisat
-  data_revisio: '2026-02-23'
-  qualitat: 8.4
-  notes_revisio: "Traducció completa (20 capítols, 101 seccions). Revisada i corregida: 5 errors gramaticals resolts. 17 notes crítiques i glossari de 14 termes. Falta portada."
+  data_revisio: '2026-02-25'
+  qualitat: 0.0
+  notes_revisio: 'Traducció completa (20 capítols, 101 seccions). Revisada i corregida:
+    5 errors gramaticals resolts. 17 notes crítiques i glossari de 14 termes. Falta
+    portada.'
 avaluacio_final:
-  data: '2026-02-23T15:56:00'
+  data: '2026-02-25T13:11:30.541775'
   puntuacions:
-    fidelitat: 8.5
-    veu_autor: 8.0
-    fluidesa: 8.0
-    correccio_linguistica: 8.5
-    coherencia: 9.0
-    global: 8.4
-  total_errors: 5
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 60
   errors_critics: 0
   errors_alts: 0
-  aprovat: true
-  requereix_revisio_humana: false
-  correccions_aplicades: 5
-  correccions_pendents: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 57
