@@ -1,5 +1,3 @@
-# Κρίτων
-
 Plató, *Critó* (ed. John Burnet, 1903, Oxford Classical Texts)
 
 Font: [Greek Wikisource](https://el.wikisource.org/wiki/%CE%9A%CF%81%CE%AF%CF%84%CF%89%CE%BD)
