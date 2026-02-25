@@ -1,0 +1,25 @@
+# Tao Te King
+*Laozi (老子)*
+
+Traduït del xinès clàssic per Biblioteca Arion
+
+---
+
+### Capítol setanta-cinc
+El poble passa fam perquè els de dalt mengen massa impostos. Per això passa fam. El poble és difícil de governar perquè els de dalt actuen massa. Per això és difícil de governar. El poble menysprea la vida perquè els de dalt la valoren excessivament. Per això la menyspreen. Qui no fa de la vida el seu objectiu supera qui l'aprecia.
+### Capítol setanta-sis
+Quan l'home neix és tendre i feble, quan mor és dur i fort. Quan les herbes i els arbres neixen són tendres i fragils, quan moren són secs i rígids. Per tant, el dur i el fort són companys de la mort; el tendre i el feble, companys de la vida. Així, quan l'exèrcit és fort és derrotat, quan l'arbre és fort es trenca. El fort i gran ocupa el lloc de baix, el tendre i feble el de dalt.
+### Capítol setanta-set
+El Dao del cel, no és com tensar un arc? El que és alt ho abaixa, el que és baix ho alça; al que té massa li treu, al que li falta li dona. El Dao del cel treu al que té massa i dona al que li falta. El dao de l'home no és així: treu al que li falta per servir al que té massa. Qui pot oferir el seu excés al món sencer? Només qui té el Dao. Per això el savi actua sense recolzar-se en res, triomfa sense apropiar-se'n, no vol mostrar la seva saviesa.
+### Capítol setanta-vuit
+Al món no hi ha res més tendre i feble que l'aigua, però per atacar el dur i el fort res la pot superar, perquè no hi ha res que la pugui substituir. El feble venç el fort, el tendre venç el dur. Tothom ho sap al món, però ningú ho practica. Per això el savi diu: "Qui assumeix la brutícia del regne és senyor de l'altar; qui assumeix les desgràcies del regne és rei del món." Les paraules rectes semblen al revés.
+### Capítol setanta-nou
+Quan es pacifica un gran ressentiment sempre en queda algun. Com pot això ser bo? Per això el savi guarda la meitat esquerra del contracte i no exigeix res a ningú. Qui té virtut guarda el contracte; qui no en té cobra els deutes. El Dao del cel no té preferències, sempre acompanya l'home bo.
+### Capítol vuitanta
+Petit regne, poca gent. Que tingui estris per a desenes i centenes, però no els usi; que la gent estimi la vida i no emigri lluny. Encara que tingui vaixells i carros, que no hi pugi; encara que tingui armadures i armes, que no les mostri. Que la gent torni a fer nusos en cordes per comptar. Que gaudeixi del seu menjar, que trobi bella la seva roba, que estigui a gust a casa seva, que li agradin les seves costums. Els regnes veïns es veuen l'un a l'altre, s'escolten els galls i els gossos, però la gent arriba a la vellesa i mor sense haver-se visitat mai.
+### Capítol vuitanta-u
+Les paraules sinceres no són belles, les belles no són sinceres. El bo no discuteix, qui discuteix no és bo. El savi no és erudit, l'erudit no és savi. El savi no acumula: com més fa pels altres, més té; com més dona als altres, més li sobra. El Dao del cel beneficia sense fer mal; el dao del savi actua sense competir.
+
+---
+
+*Traducció de domini públic.*

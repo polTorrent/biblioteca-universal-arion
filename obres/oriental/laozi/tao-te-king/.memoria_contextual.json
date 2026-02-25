@@ -1,0 +1,24 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Laozi (老子, també Lao Zi o Lao Tzu) (tradicional: segle VI aC; acadèmic: incert, possiblement llegendari), regne de Chu, Xina antiga (segons tradició). Figura semi-llegendària considerada el fundador del taoisme filosòfic. La tradició el presenta com a savi arxiver de la cort reial que va abandonar la civilització per retirar-se a la natura. L'historicitat del personatge és molt debatuda pels erudits moderns.",
+    "context_historic": "Període dels Estats Combatents (475-221 aC), època de fragmentació política i efervescència intel·lectual a la Xina. Gran competència entre escoles filosòfiques com confucianisme, legalisme, mohisme i taoisme.",
+    "context_obra": "道德經 (Daodejing, literalment 'Clàssic del Tao i la Virtut') (tradicional: segle VI aC; acadèmic: segles IV-III aC) - filosofia aforística, poesia filosòfica, text sapiencial. Text compilatori que recull la saviesa taoista antiga, possiblement obra col·lectiva atribuïda a Laozi. Respon a la necessitat de preservar el pensament taoista davant el predomini confucià",
+    "influencies": [
+      "tradicions xamàniques xineses",
+      "cosmologia del Yijing",
+      "filosofia naturalista preconfuciana",
+      "pensament místic antic xinès"
+    ],
+    "temes_principals": [
+      "el Tao com a principi còsmic",
+      "wu wei (no-acció)",
+      "relativitat dels valors",
+      "govern ideal segons natura",
+      "simplicitat i autenticitat"
+    ]
+  },
+  "notes_pendents": []
+}

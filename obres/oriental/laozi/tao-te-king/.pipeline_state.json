@@ -1,0 +1,39 @@
+{
+  "sessio_id": "laozi-(老子)-tao-te-king-2026-02-25",
+  "obra": {
+    "autor": "Laozi (老子)",
+    "titol": "Tao Te King",
+    "llengua": "xinès clàssic"
+  },
+  "timestamps": {
+    "inici": "2026-02-25T17:47:16.912792",
+    "ultima_activitat": "2026-02-25T18:05:23.188658"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 3,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 5.33,
+    "temps_total_min": 18.1
+  },
+  "errors": [],
+  "warnings": [
+    "[17:47:56] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='xinès clàssic', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
