@@ -1,5 +1,5 @@
 validated: true
-date: 2026-02-23
+date: 2026-02-26
 score: 8
 reviewer: claude-code
-notes: Català literari sòlid. Errors menors: 'Qué' per 'Què' en algunes seccions.
+notes: Català literari sòlid. Correccions aplicades: 'qué' → 'què', eliminades ¿ castellanes, espais corregits.

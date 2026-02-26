@@ -73,7 +73,7 @@ Del meu pare, la mansuetud i la fermesa inamovible en les decisions preses amb m
 
 ### 1.17
 
-Dels déus, tenir bons avis, bons pares, una bona germana, bons mestres, bons familiars, parents i amics, gairebé tots; i que respecte a cap d'ells no vaig caure en cap falta, malgrat tenir un temperament tal que, si s'hagués donat l'ocasió, hauria pogut fer-ne alguna. La benevolència dels déus es manifesta en el fet que no es va produir cap concurrència de circumstàncies que pogués delatar-me; i no haver estat criat massa temps al costat de la concubina del meu avi; i haver conservat la flor de la joventut; i no haver madurat abans d'hora, sinó haver guanyat encara temps. Sotmetre'm a un sobirà i pare que havia d'alliberar-me de tota vanitat i dur-me a comprendre que és possible viure a la cort sense necessitar guàrdies ni vestidures luxoses ni atxes ni estàtues i coses semblants d'ostentació, sinó que és possible recollir-se gairebé com un simple particular, sense per això tenir una actitud més baixa o negligent envers el que el càrrec exigeix fer per al bé comú. Tenir un germà tal, capaç de despertar-me a la cura de mi mateix pel seu caràcter, i que al mateix temps m'alegrava amb el seu honor i el seu afecte. Que els meus fills no hagin nascut incapaços ni amb el cos deforme. Que no hagi avançat massa en la retòrica, la poesia i els altres estudis, en els quals hauria pogut quedar atrapat si hagués sentit que hi progressava fàcilment. Haver posat aviat en un càrrec digne els meus pedagogs, quan creia que ho desitjaven, sense ajornar-ho amb l'esperança de fer-ho més endavant, quan encara eren joves. Conèixer Apol·loni, Rústic i Màxim. Haver-me representat amb claredat i moltes vegades com és la vida conforme a la naturalesa, de manera que, pel que fa als déus i als dons i ajudes i inspiracions que en vénen, res no impedeix que ja visqui conforme a la naturalesa; si me n'allunyava encara, era per culpa meva i per no conservar les admonicions dels déus i gairebé les seves instruccions. El fet que el meu cos hagi resistit tant de temps en tal vida. No haver tocat ni Benedikta ni Teodota i fins i tot més endavant, havent caigut en passions amoroses, haver-me refet. Que, havent-me encolerit moltes vegades amb Rústic, no fes res del que hauria lamentat. Que la meva mare, tot i haver de morir jove, visqués els darrers anys amb mi. Que cada vegada que vaig voler ajudar algú necessitat o en qualsevol altra necessitat, mai no m'hagueren de dir que no tenia diners per fer-ho; i que no em sorgís la necessitat semblant de rebre d'altri. Que la meva dona sigui tal com és: tan dòcil, tan afectuosa, tan senzilla. Que haguès pogut disposar de pedagogs adequats per als meus fills. Que m'hagin estat concedits en somnis remeis, tant el de no escupir sang com el de no tenir vertigen, i el que es va dir a Gaeta com un oracle. Que quan em vaig aficionar a la filosofia no caigués en mans d'algun sofista, ni em quedés assegut escrivint tractats, analitzant sil·logismes o ocupant-me de meteors; perquè tot això necessita "l'ajut dels déus i la sort". Escrit als Quads, prop del Grànua.
+Dels déus, tenir bons avis, bons pares, una bona germana, bons mestres, bons familiars, parents i amics, gairebé tots; i que respecte a cap d'ells no vaig caure en cap falta, malgrat tenir un temperament tal que, si s'hagués donat l'ocasió, hauria pogut fer-ne alguna. La benevolència dels déus es manifesta en el fet que no es va produir cap concurrència de circumstàncies que pogués delatar-me; i no haver estat criat massa temps al costat de la concubina del meu avi; i haver conservat la flor de la joventut; i no haver madurat abans d'hora, sinó haver guanyat encara temps. Sotmetre'm a un sobirà i pare que havia d'alliberar-me de tota vanitat i dur-me a comprendre que és possible viure a la cort sense necessitar guàrdies ni vestidures luxoses ni atxes ni estàtues i coses semblants d'ostentació, sinó que és possible recollir-se gairebé com un simple particular, sense per això tenir una actitud més baixa o negligent envers el que el càrrec exigeix fer per al bé comú. Tenir un germà tal, capaç de despertar-me a la cura de mi mateix pel seu caràcter, i que al mateix temps m'alegrava amb el seu honor i el seu afecte. Que els meus fills no hagin nascut incapaços ni amb el cos deforme. Que no hagi avançat massa en la retòrica, la poesia i els altres estudis, en els quals hauria pogut quedar atrapat si hagués sentit que hi progressava fàcilment. Haver posat aviat en un càrrec digne els meus pedagogs, quan creia que ho desitjaven, sense ajornar-ho amb l'esperança de fer-ho més endavant, quan encara eren joves. Conèixer Apol·loni, Rústic i Màxim. Haver-me representat amb claredat i moltes vegades com és la vida conforme a la naturalesa, de manera que, pel que fa als déus i als dons i ajudes i inspiracions que en vénen, res no impedeix que ja visqui conforme a la naturalesa; si me n'allunyava encara, era per culpa meva i per no conservar les admonicions dels déus i gairebé les seves instruccions. El fet que el meu cos hagi resistit tant de temps en tal vida. No haver tocat ni Benedikta ni Teodota i fins i tot més endavant, havent caigut en passions amoroses, haver-me refet. Que, havent-me encolerit moltes vegades amb Rústic, no fes res del que hauria lamentat. Que la meva mare, tot i haver de morir jove, visquès els darrers anys amb mi. Que cada vegada que vaig voler ajudar algú necessitat o en qualsevol altra necessitat, mai no m'hagueren de dir que no tenia diners per fer-ho; i que no em sorgís la necessitat semblant de rebre d'altri. Que la meva dona sigui tal com és: tan dòcil, tan afectuosa, tan senzilla. Que haguès pogut disposar de pedagogs adequats per als meus fills. Que m'hagin estat concedits en somnis remeis, tant el de no escupir sang com el de no tenir vertigen, i el que es va dir a Gaeta com un oracle. Que quan em vaig aficionar a la filosofia no caigués en mans d'algun sofista, ni em quedés assegut escrivint tractats, analitzant sil·logismes o ocupant-me de meteors; perquè tot això necessita "l'ajut dels déus i la sort". Escrit als Quads, prop del Grànua.
 
 ## Llibre II
 
@@ -149,7 +149,7 @@ Del temps de la vida humana, el temps és un punt; l'essència, un flux; la sens
 
 ### 3.1
 
-No hem de considerar únicament que la vida es va consumint dia rere dia i que n'resta cada vegada una part menor, sinó que hem de reflexionar també sobre aquest altre fet: que si un home visqués més temps, és incert que la seva ment continués essent capaç, amb la mateixa eficàcia, de comprendre les coses i de contemplar allò que pertany al coneixement del diví i de l'humà. Perquè si comença a delirar, les funcions de respirar, de nodrir-se, de tenir representacions, d'actuar per impuls i coses semblants no li faltaran; però la capacitat d'usar-se a si mateix, de comptar amb precisió els deures, d'analitzar les impressions, i fins i tot de preguntar-se si ha de partir d'aquesta vida —totes aquestes coses que requereixen un enteniment ben exercitat— s'apaguen abans. Cal, doncs, apressar-se, no solament perquè ens acostem a la mort a cada moment, sinó també perquè la comprensió de les coses i la capacitat de seguir-les es van esgotant abans de temps.
+No hem de considerar únicament que la vida es va consumint dia rere dia i que n'resta cada vegada una part menor, sinó que hem de reflexionar també sobre aquest altre fet: que si un home visquès més temps, és incert que la seva ment continués essent capaç, amb la mateixa eficàcia, de comprendre les coses i de contemplar allò que pertany al coneixement del diví i de l'humà. Perquè si comença a delirar, les funcions de respirar, de nodrir-se, de tenir representacions, d'actuar per impuls i coses semblants no li faltaran; però la capacitat d'usar-se a si mateix, de comptar amb precisió els deures, d'analitzar les impressions, i fins i tot de preguntar-se si ha de partir d'aquesta vida —totes aquestes coses que requereixen un enteniment ben exercitat— s'apaguen abans. Cal, doncs, apressar-se, no solament perquè ens acostem a la mort a cada moment, sinó també perquè la comprensió de les coses i la capacitat de seguir-les es van esgotant abans de temps.
 
 ### 3.2
 
@@ -421,7 +421,7 @@ Corre sempre per la via curta. La via curta és la que segueix la naturalesa: ac
 
 ### 5.1
 
-Al matí, quan t'aixeques amb desgana, tingues a mà aquest pensament: m'aixeco per fer la tasca d'un ésser humà. ¿Per què em costa si vaig a fer allò per a què he nascut i per a què he estat portat a aquest món? ¿O potser he estat fet per jeure entre flassades i escalfar-me? "Però això és més agradable." ¿Has nascut per al plaer? En general, ¿has nascut per a la passivitat o per a l'acció? No veus les plantes, els ocells, les formigues, les aranyes, les abelles, que fan el que els és propi i contribueixen a l'ordre del món cadascuna al seu nivell? ¿I tu no vols fer les tasques humanes, no corres cap al que és conforme a la teva naturalesa? "Però cal també descansar." Ho admeto. Tanmateix, la naturalesa ha donat mesura per a això, igual que per menjar i beure; i malgrat tot, tu vas més enllà de les mesures, més enllà del suficient. En canvi, en les accions no ho fas, sinó que et mantens dins del que és possible. I és que no t'estimes a tu mateix; si t'estimessis, estimaries la teva naturalesa i el seu desig. Els que estimen la seva art es consumen en els seus treballs, sense banyar-se ni menjar. I tu, en canvi, valores la teva naturalesa menys que el gravador la seva tècnica, el ballarí la seva dansa, l'avar el seu diner, o l'ambiciós la seva glòria. Quan s'hi apassionen, prefereixen les seves coses a menjar i dormir. ¿I a tu les accions en comunitat et semblen menys valuoses i menys dignes d'esforç?
+Al matí, quan t'aixeques amb desgana, tingues a mà aquest pensament: m'aixeco per fer la tasca d'un ésser humà. Per què em costa si vaig a fer allò per a què he nascut i per a què he estat portat a aquest món? O potser he estat fet per jeure entre flassades i escalfar-me? "Però això és més agradable." Has nascut per al plaer? En general, has nascut per a la passivitat o per a l'acció? No veus les plantes, els ocells, les formigues, les aranyes, les abelles, que fan el que els és propi i contribueixen a l'ordre del món cadascuna al seu nivell? I tu no vols fer les tasques humanes, no corres cap al que és conforme a la teva naturalesa? "Però cal també descansar." Ho admeto. Tanmateix, la naturalesa ha donat mesura per a això, igual que per menjar i beure; i malgrat tot, tu vas més enllà de les mesures, més enllà del suficient. En canvi, en les accions no ho fas, sinó que et mantens dins del que és possible. I és que no t'estimes a tu mateix; si t'estimessis, estimaries la teva naturalesa i el seu desig. Els que estimen la seva art es consumen en els seus treballs, sense banyar-se ni menjar. I tu, en canvi, valores la teva naturalesa menys que el gravador la seva tècnica, el ballarí la seva dansa, l'avar el seu diner, o l'ambiciós la seva glòria. Quan s'hi apassionen, prefereixen les seves coses a menjar i dormir. I a tu les accions en comunitat et semblen menys valuoses i menys dignes d'esforç?
 
 ### 5.2
 
@@ -437,7 +437,7 @@ Camino per les vies de la naturalesa fins que caigui i reposi, exhaland l'alè e
 
 ### 5.5
 
-No es poden admirar la teva agudesa: bé. Però hi ha moltes altres coses que no pots dir que no ets capaç de fer per naturalesa. Ofereix, doncs, allò que depèn del tot de tu: la sinceritat, la gravetat, la resistència al treball, el desinterès pel plaer, la manca de resentiment, la frugalitat, la benevolència, la llibertat, la senzillesa, la mesura, la magnanimitat. ¿No t'adones de quantes coses pots ja oferir, per les quals no tens cap excusa d'incapacitat o d'aptitud insuficient? I, tanmateix, restes voluntàriament per sota, ¿o t'obliguen a gemegar, a ser mesquí, a adular, a culpar el teu cos, a complaure els altres, a ser fatxenda i a agitar-te tant en l'ànima per la mala constitució que tens? No, per tots els déus. Fa temps que podries haver-te alliberat de tot això. Sols si has de ser titllat de lent i poc hàbil, treballa-hi, sense desatendre-ho ni delectar-te en la lentitud.
+No es poden admirar la teva agudesa: bé. Però hi ha moltes altres coses que no pots dir que no ets capaç de fer per naturalesa. Ofereix, doncs, allò que depèn del tot de tu: la sinceritat, la gravetat, la resistència al treball, el desinterès pel plaer, la manca de resentiment, la frugalitat, la benevolència, la llibertat, la senzillesa, la mesura, la magnanimitat. No t'adones de quantes coses pots ja oferir, per les quals no tens cap excusa d'incapacitat o d'aptitud insuficient? I, tanmateix, restes voluntàriament per sota, o t'obliguen a gemegar, a ser mesquí, a adular, a culpar el teu cos, a complaure els altres, a ser fatxenda i a agitar-te tant en l'ànima per la mala constitució que tens? No, per tots els déus. Fa temps que podries haver-te alliberat de tot això. Sols si has de ser titllat de lent i poc hàbil, treballa-hi, sense desatendre-ho ni delectar-te en la lentitud.
 
 ### 5.6
 
@@ -453,15 +453,15 @@ Tal com quan es diu: "Asclepi ha prescrit a aquest la cavalleria, o banys freds,
 
 ### 5.9
 
-No has de desanimar-te, abatrir-te ni rendir-te si no sempre aconsegueixes obrar d'acord amb els principis rectes, sinó que, quan recaiguis, torna-hi i alegra't si la majoria de les coses que fas són dignes d'un ésser humà. Estima allò a què tornes, i no tornes a la filosofia com a un pedagog, sinó com els malalts dels ulls tornen al seu bàlsam, a l'ou, al cataplasma o als banys. Perquè d'aquesta manera no mostraràs obediència a la raó, sinó que hi reposaràs. Recorda que la filosofia vol sols allò que vol la teva naturalesa, i que tu volies una altra cosa que no era conforme a la naturalesa. Per tant, ¿quina cosa és més agradable? ¿No és el plaer mateix el que fa caure? Mira si és més agradable: la magnanimitat, la llibertat, la senzillesa, la benignitat, la santedat. I ¿hi ha res més agradable que la prudència mateixa, quan consideres que la capacitat de comprensió i de coneixement en tot és infalible i flueix sense obstacles?
+No has de desanimar-te, abatrir-te ni rendir-te si no sempre aconsegueixes obrar d'acord amb els principis rectes, sinó que, quan recaiguis, torna-hi i alegra't si la majoria de les coses que fas són dignes d'un ésser humà. Estima allò a què tornes, i no tornes a la filosofia com a un pedagog, sinó com els malalts dels ulls tornen al seu bàlsam, a l'ou, al cataplasma o als banys. Perquè d'aquesta manera no mostraràs obediència a la raó, sinó que hi reposaràs. Recorda que la filosofia vol sols allò que vol la teva naturalesa, i que tu volies una altra cosa que no era conforme a la naturalesa. Per tant, quina cosa és més agradable? No és el plaer mateix el que fa caure? Mira si és més agradable: la magnanimitat, la llibertat, la senzillesa, la benignitat, la santedat. I hi ha res més agradable que la prudència mateixa, quan consideres que la capacitat de comprensió i de coneixement en tot és infalible i flueix sense obstacles?
 
 ### 5.10
 
-Les coses es troben en una obscuritat tal que no pocs filòsofs, i no dels corrents, les han considerat completament inaccessibles; i fins als propis estoics els semblen difícils de comprendre, i tot el nostre assentiment és variable. ¿On és l'infal·lible? Volta, doncs, cap a les coses concretes, com de poca durada i sense valor que són, i que podrien estar en possessió d'un libertí, d'una prostituta o d'un bandoler. Passa després als costums dels qui et rodegen, dels quals és difícil tolerar fins i tot el millor, sense parlar del fet que un a penes es suporta a si mateix. En semblant foscor, brutícia i flux de la substància, del temps, del moviment i dels éssers en moviment, ¿qué podria ser digne d'estima o de qualsevol esforç? Jo no en veig cap. Ans al contrari, cal consolar-se i esperar la dissolució natural sense impacientar-se pel retard, sinó reposar únicament en dues coses: la primera, que res no em succeeirà que no sigui conforme a la naturalesa del tot; la segona, que m'és possible no fer res contra el meu déu i el meu geni interior, perquè ningú no m'obligarà a transgredir-lo.
+Les coses es troben en una obscuritat tal que no pocs filòsofs, i no dels corrents, les han considerat completament inaccessibles; i fins als propis estoics els semblen difícils de comprendre, i tot el nostre assentiment és variable. On és l'infal·lible? Volta, doncs, cap a les coses concretes, com de poca durada i sense valor que són, i que podrien estar en possessió d'un libertí, d'una prostituta o d'un bandoler. Passa després als costums dels qui et rodegen, dels quals és difícil tolerar fins i tot el millor, sense parlar del fet que un a penes es suporta a si mateix. En semblant foscor, brutícia i flux de la substància, del temps, del moviment i dels éssers en moviment, què podria ser digne d'estima o de qualsevol esforç? Jo no en veig cap. Ans al contrari, cal consolar-se i esperar la dissolució natural sense impacientar-se pel retard, sinó reposar únicament en dues coses: la primera, que res no em succeeirà que no sigui conforme a la naturalesa del tot; la segona, que m'és possible no fer res contra el meu déu i el meu geni interior, perquè ningú no m'obligarà a transgredir-lo.
 
 ### 5.11
 
-¿Per a què faig servir la meva ànima en cada moment? Preguntar-se i examinar-se en tot moment: ¿qué tinc ara en aquesta part que anomenen principi rector? ¿Quina ànima tinc ara? ¿La d'un nen? ¿La d'un adolescent? ¿La d'una dona feble? ¿La d'un tirà? ¿La d'una bèstia domèstica? ¿La d'una fera?
+Per a què faig servir la meva ànima en cada moment? Preguntar-se i examinar-se en tot moment: què tinc ara en aquesta part que anomenen principi rector? Quina ànima tinc ara? La d'un nen? La d'un adolescent? La d'una dona feble? La d'un tirà? La d'una bèstia domèstica? La d'una fera?
 
 ### 5.12
 
@@ -481,7 +481,7 @@ Res d'allò que no correspon a l'ésser humà en tant que és humà no s'ha de d
 
 ### 5.16
 
-Tal com siguin les representacions que et fas sovint, tal serà el teu pensament; perquè l'ànima es tenyeix de les representacions. Tenyeix-la, doncs, amb la continuïtat d'aquestes representacions: per exemple, que on hi ha vida, allà hi ha la possibilitat de viure bé; que es viu a la cort, per tant és possible viure bé a la cort. I de nou: tot allò per a la finalitat del qual una cosa ha estat feta, s'hi dirigeix; i allà on s'hi dirigeix n'hi ha el fi; i on hi ha el fi, allà hi ha l'utilitat i el bé de cadascú. El bé de l'ésser racional és, doncs, la comunitat, car que hem nascut per a la comunitat ja fa temps que ha estat demostrat. ¿O no era evident que els inferiors existeixen per als superiors, i els superiors entre si? I entre els éssers animats, els animats per sobre dels inanimats; entre els animats, els racionals per sobre dels irracionals.
+Tal com siguin les representacions que et fas sovint, tal serà el teu pensament; perquè l'ànima es tenyeix de les representacions. Tenyeix-la, doncs, amb la continuïtat d'aquestes representacions: per exemple, que on hi ha vida, allà hi ha la possibilitat de viure bé; que es viu a la cort, per tant és possible viure bé a la cort. I de nou: tot allò per a la finalitat del qual una cosa ha estat feta, s'hi dirigeix; i allà on s'hi dirigeix n'hi ha el fi; i on hi ha el fi, allà hi ha l'utilitat i el bé de cadascú. El bé de l'ésser racional és, doncs, la comunitat, car que hem nascut per a la comunitat ja fa temps que ha estat demostrat. O no era evident que els inferiors existeixen per als superiors, i els superiors entre si? I entre els éssers animats, els animats per sobre dels inanimats; entre els animats, els racionals per sobre dels irracionals.
 
 ### 5.17
 
@@ -489,7 +489,7 @@ Perseguir les coses impossibles és bogeria. I és impossible que els malvats no
 
 ### 5.18
 
-Ningú no pateix res que per naturalesa no pugui suportar. A un altre li succeeixen les mateixes coses, i ell es manté estable i il·lès, o bé perquè no sap que li ha succeït, o bé perquè demostra magnanimitat. ¿No és deplorable, doncs, que la ignorància i la vanitat siguin més fortes que la prudència?
+Ningú no pateix res que per naturalesa no pugui suportar. A un altre li succeeixen les mateixes coses, i ell es manté estable i il·lès, o bé perquè no sap que li ha succeït, o bé perquè demostra magnanimitat. No és deplorable, doncs, que la ignorància i la vanitat siguin més fortes que la prudència?
 
 ### 5.19
 
@@ -529,11 +529,11 @@ El principi rector i la part dominant de la teva ànima han de romandre inaltera
 
 ### 5.28
 
-¿T'enfades amb el qui fa pudor d'aixella? ¿T'enfades amb el qui té mal alè? ¿Què li pots fer si té tal boca, tals aixelles? Necessàriament emanarà tal olor de tals coses. "Però l'home té raó, i pot adonar-se, prestant atenció, de qué falla." Bé per a tu. Tu també tens raó; mou la teva disposició racional a la seva disposició racional; mostra-li, recorda-li-ho. Si t'escolta, el curaràs sense que sigui necessària la ira. Ni tragi ni prostituta.
+T'enfades amb el qui fa pudor d'aixella? T'enfades amb el qui té mal alè? Què li pots fer si té tal boca, tals aixelles? Necessàriament emanarà tal olor de tals coses. "Però l'home té raó, i pot adonar-se, prestant atenció, de què falla." Bé per a tu. Tu també tens raó; mou la teva disposició racional a la seva disposició racional; mostra-li, recorda-li-ho. Si t'escolta, el curaràs sense que sigui necessària la ira. Ni tragi ni prostituta.
 
 ### 5.29
 
-Es possible viure aquí tal com penses viure quan te n'hagis anat. I si no te ho permeten, surt de la vida igualment, però com si no patissis cap mal. "Fum, i me'n vaig." ¿Per qué creus que és un gran assumpte? Però mentre res semblant no em faci sortir, em quedo lliure, i ningú no m'impedirà fer el que vull. I vull viure conforme a la naturalesa de l'ésser racional i social.
+Es possible viure aquí tal com penses viure quan te n'hagis anat. I si no te ho permeten, surt de la vida igualment, però com si no patissis cap mal. "Fum, i me'n vaig." Per què creus que és un gran assumpte? Però mentre res semblant no em faci sortir, em quedo lliure, i ningú no m'impedirà fer el que vull. I vull viure conforme a la naturalesa de l'ésser racional i social.
 
 ### 5.30
 
@@ -541,15 +541,15 @@ La intel·ligència del tot és social: ha fet els inferiors en funció dels sup
 
 ### 5.31
 
-Com t'has comportat fins ara amb els déus, els pares, els germans, l'esposa, els fills, els mestres, els tutors, els amics, els familiars, els servents? Si fins ara t'ha regit el principi de no fer ni dir res injust envers cap d'ells, recorda per qué has passat i el que has pogut suportar, i que ja la teva història vital és plena i complerta, i la teva missió acabada; i quantes coses belles has vist i quants plaers i dolors has menyspreat i quantes glòries has ignorat i amb quants ingrats has estat generós.
+Com t'has comportat fins ara amb els déus, els pares, els germans, l'esposa, els fills, els mestres, els tutors, els amics, els familiars, els servents? Si fins ara t'ha regit el principi de no fer ni dir res injust envers cap d'ells, recorda per què has passat i el que has pogut suportar, i que ja la teva història vital és plena i complerta, i la teva missió acabada; i quantes coses belles has vist i quants plaers i dolors has menyspreat i quantes glòries has ignorat i amb quants ingrats has estat generós.
 
 ### 5.32
 
-Per quina raó les ànimes ignorants i no instruïdes pertorben l'ànima instruïda i sapient? ¿Quina és, doncs, l'ànima instruïda i sapient? La que sap el principi i el fi i la raó que travessa tota la substància i que governa l'univers durant tota l'eternitat per cicles ordenats.
+Per quina raó les ànimes ignorants i no instruïdes pertorben l'ànima instruïda i sapient? Quina és, doncs, l'ànima instruïda i sapient? La que sap el principi i el fi i la raó que travessa tota la substància i que governa l'univers durant tota l'eternitat per cicles ordenats.
 
 ### 5.33
 
-Cendra o esquelet d'aquí a poc, i o bé un nom o ni tan sols un nom. I el nom és soroll i ressò. Les coses molt valorades en la vida son buides, podrides, mesquines: cadells que es mosseguen entre si i nens que juguen, que en un moment riuen i l'endemà ploren. La fidelitat, el respecte, la justícia i la veritat han volgut al Olimp des de la terra espaiosa. ¿Què et retén, doncs, aquí, si les coses sensibles canvien i no romanen, els sentits son febles i fàcilment enganyats, la pobre ànima és exhalació de sang, la bona reputació entre tals persones és vanitat? ¿Què esperes, doncs? Extingir-se o canviar de lloc, serena. Fins aleshores, ¿qué és suficient? ¿Què altra cosa si no revereciar els déus i lloar-los, fer bé als homes i suportar-los, i abstenir-se? I pel que fa a tot allò que queda dins dels límits del petit cos i del petit alè, recorda que no és teu ni depèn de tu.
+Cendra o esquelet d'aquí a poc, i o bé un nom o ni tan sols un nom. I el nom és soroll i ressò. Les coses molt valorades en la vida son buides, podrides, mesquines: cadells que es mosseguen entre si i nens que juguen, que en un moment riuen i l'endemà ploren. La fidelitat, el respecte, la justícia i la veritat han volgut al Olimp des de la terra espaiosa. Què et retén, doncs, aquí, si les coses sensibles canvien i no romanen, els sentits son febles i fàcilment enganyats, la pobre ànima és exhalació de sang, la bona reputació entre tals persones és vanitat? Què esperes, doncs? Extingir-se o canviar de lloc, serena. Fins aleshores, què és suficient? Què altra cosa si no revereciar els déus i lloar-los, fer bé als homes i suportar-los, i abstenir-se? I pel que fa a tot allò que queda dins dels límits del petit cos i del petit alè, recorda que no és teu ni depèn de tu.
 
 ### 5.34
 
@@ -557,11 +557,11 @@ Pots sempre fluir bé si fluïres també bé en el camí, és a dir, si jutges i
 
 ### 5.35
 
-Si això no és una maldat meva ni una acció meva viciosa, ni perjudica el comú, ¿per qué em pertorba? ¿I quin perjudici hi ha per al comú?
+Si això no és una maldat meva ni una acció meva viciosa, ni perjudica el comú, per què em pertorba? I quin perjudici hi ha per al comú?
 
 ### 5.36
 
-No deixar-se endur del tot per la representació, sinó ajudar com es pot i com és just, fins i tot si cauen en les coses mitges; però no imaginar-ho com un dany, car és un mal costum. Sinó com el vell que en sortir reclamava el baldufa del seu criat, recordant que era un baldufa: així aquí. Aquí, doncs, t'oblides, home, que ets als ròstres. Sí, però aquestes coses els entusiasmen. ¿Cal, doncs, que tu també siguis boig? "En algun lloc on em vaig trobar vaig ser un home feliç." I feliç vol dir: el qui s'ha assignat a si mateix una bona sort. I la bona sort és: bons girs de l'ànima, bons impulsos, bones accions.
+No deixar-se endur del tot per la representació, sinó ajudar com es pot i com és just, fins i tot si cauen en les coses mitges; però no imaginar-ho com un dany, car és un mal costum. Sinó com el vell que en sortir reclamava el baldufa del seu criat, recordant que era un baldufa: així aquí. Aquí, doncs, t'oblides, home, que ets als ròstres. Sí, però aquestes coses els entusiasmen. Cal, doncs, que tu també siguis boig? "En algun lloc on em vaig trobar vaig ser un home feliç." I feliç vol dir: el qui s'ha assignat a si mateix una bona sort. I la bona sort és: bons girs de l'ànima, bons impulsos, bones accions.
 
 ---
 
@@ -585,7 +585,7 @@ Totes les coses concretes canviaran ràpidament i o bé s'evaporaran si la subst
 
 ### 6.5
 
-La raó que governa sap com es troba i qué fa i sobre quina matèria.
+La raó que governa sap com es troba i què fa i sobre quina matèria.
 
 ### 6.6
 
@@ -605,7 +605,7 @@ Tot s'acompleix d'acord amb la naturalesa del tot: no podria ser d'acord amb cap
 
 ### 6.10
 
-O barreja, entrellaçament i dispersió, o unitat, ordre i providència. Si el primer, ¿per qué desitjo romandre en aquest atzarós agregat i tal confusió? I ¿per qué em preocupa qualsevol altra cosa que no sigui com "tornar-me terra" algun dia? ¿I per qué em pertorbo? Car la dispersió m'arribarà faci el que faci. Però si el segon, el reverencio, m'estabilitzo i confio en el que governa.
+O barreja, entrellaçament i dispersió, o unitat, ordre i providència. Si el primer, per què desitjo romandre en aquest atzarós agregat i tal confusió? I per què em preocupa qualsevol altra cosa que no sigui com "tornar-me terra" algun dia? I per què em pertorbo? Car la dispersió m'arribarà faci el que faci. Però si el segon, el reverencio, m'estabilitzo i confio en el que governa.
 
 ### 6.11
 
@@ -625,11 +625,11 @@ La majoria de les coses que admira el comú es redueixen a les més generals: le
 
 ### 6.15
 
-Unes coses s'afanyen a ser, d'altres a haver estat; i d'allò que està succeint, part ja s'ha apagat. Fluxos i alteracions renoven el cosmos contínuament, de la mateixa manera que el transcurs ininterromput del temps proporciona sempre nova l'eternitat infinita. En aquest riu, ¿qué apreciaria algú d'entre les coses que van passant, en les quals no és possible aturar-se? Com si algú comencés a estimar un dels ocellets que passen volant, quan ja ha desaparegut de la vista. Tal és justament la vida de cadascú: com l'exhalació de la sang i la respiració de l'aire. Car és el mateix inspirar l'aire una sola vegada i tornar-lo, el que fem a cada moment, que tornar allà d'on ho vas treure per primera vegada tota la capacitat respiratòria que vas adquirir en néixer ahir o abans d'ahir.
+Unes coses s'afanyen a ser, d'altres a haver estat; i d'allò que està succeint, part ja s'ha apagat. Fluxos i alteracions renoven el cosmos contínuament, de la mateixa manera que el transcurs ininterromput del temps proporciona sempre nova l'eternitat infinita. En aquest riu, què apreciaria algú d'entre les coses que van passant, en les quals no és possible aturar-se? Com si algú comencés a estimar un dels ocellets que passen volant, quan ja ha desaparegut de la vista. Tal és justament la vida de cadascú: com l'exhalació de la sang i la respiració de l'aire. Car és el mateix inspirar l'aire una sola vegada i tornar-lo, el que fem a cada moment, que tornar allà d'on ho vas treure per primera vegada tota la capacitat respiratòria que vas adquirir en néixer ahir o abans d'ahir.
 
 ### 6.16
 
-No és valuós respirar com les plantes, ni respirar com les bèsties i les feres, ni ser impressionat per les representacions, ni ser mogut per l'impuls com una marioneta, ni agrupar-se en ramat, ni alimentar-se: car això és semblant a eliminar els excrements del menjar. ¿Quèés, doncs, valuós? Ser aplaudit? No. Per tant, tampoc ser aplaudit per les llengues; car les lloances del comú son aplaudiment de llengues. Llavors, si has renunciat a la glorieta, ¿qué queda de valuós? Em sembla que moure's i aturar-se d'acord amb la pròpia constitució: és allà on condueixen els esforços i les arts. Car tota art s'esforça perquè el que ha estat fabricat sigui apte per a la funció per a la qual ha estat fabricat; i el jardinera, el que cuida de la vinya, el domador de cavalls, el que cuida del gos, busca el mateix. I la pedagogia i els ensenyaments, ¿cap on s'afanyen? Aquí, doncs, és el valuós. I si això va bé, no t'esforçaràs a aconseguir-ne d'altres. No deixaràs d'estimar moltes altres coses: no seràs lliure, ni autosuficient, ni sense passions. Perquè de necessitat s'enveja, es té gelosia, es recela dels que poden treure aquelles coses, s'intriga contra els qui posseeixen el que tu valores: d'alguna manera, qui és mancat d'alguna d'elles, de necessitat se'n pertorba, i a més censura molt els déus. Però el respecte i l'honor per la teva pròpia ment et farà agradable a tu mateix, harmoniós amb els companys i concordant amb els déus, és a dir, lloant allò que ells distribueixen i han ordenat.
+No és valuós respirar com les plantes, ni respirar com les bèsties i les feres, ni ser impressionat per les representacions, ni ser mogut per l'impuls com una marioneta, ni agrupar-se en ramat, ni alimentar-se: car això és semblant a eliminar els excrements del menjar. Què és, doncs, valuós? Ser aplaudit? No. Per tant, tampoc ser aplaudit per les llengues; car les lloances del comú son aplaudiment de llengues. Llavors, si has renunciat a la glorieta, què queda de valuós? Em sembla que moure's i aturar-se d'acord amb la pròpia constitució: és allà on condueixen els esforços i les arts. Car tota art s'esforça perquè el que ha estat fabricat sigui apte per a la funció per a la qual ha estat fabricat; i el jardinera, el que cuida de la vinya, el domador de cavalls, el que cuida del gos, busca el mateix. I la pedagogia i els ensenyaments, cap on s'afanyen? Aquí, doncs, és el valuós. I si això va bé, no t'esforçaràs a aconseguir-ne d'altres. No deixaràs d'estimar moltes altres coses: no seràs lliure, ni autosuficient, ni sense passions. Perquè de necessitat s'enveja, es té gelosia, es recela dels que poden treure aquelles coses, s'intriga contra els qui posseeixen el que tu valores: d'alguna manera, qui és mancat d'alguna d'elles, de necessitat se'n pertorba, i a més censura molt els déus. Però el respecte i l'honor per la teva pròpia ment et farà agradable a tu mateix, harmoniós amb els companys i concordant amb els déus, és a dir, lloant allò que ells distribueixen i han ordenat.
 
 ### 6.17
 
@@ -669,7 +669,7 @@ Pensa quantes coses succeeixen al mateix instant en cadascú de nosaltres, simul
 
 ### 6.26
 
-Si algú et proposés com s'escriu el nom d'Antoní, ¿et posaries en tensió per pronunciar cada lletra? ¿I si s'enfadessin? ¿No enumeraries igualment cadascuna de les lletres avançant amb calma? Recorda igualment aquí que tot deure es completa per un cert nombre d'elements. Aquests cal observar-los i, sense pertorbar-te ni enojar-te amb els que s'enutgen, seguir el camí proposat.
+Si algú et proposés com s'escriu el nom d'Antoní, et posaries en tensió per pronunciar cada lletra? I si s'enfadessin? No enumeraries igualment cadascuna de les lletres avançant amb calma? Recorda igualment aquí que tot deure es completa per un cert nombre d'elements. Aquests cal observar-los i, sense pertorbar-te ni enojar-te amb els que s'enutgen, seguir el camí proposat.
 
 ### 6.27
 
@@ -681,7 +681,7 @@ La mort és repòs de la percepció de les resistències sensorials i del maneig
 
 ### 6.29
 
-És vergonyós que en la vida en qué el teu cos no defalleixi, defalleixi l'ànima avant d'ell.
+És vergonyós que en la vida en què el teu cos no defalleixi, defalleixi l'ànima avant d'ell.
 
 ### 6.30
 
@@ -705,7 +705,7 @@ Quins plaers han gaudit els bandolers, els libertins, els parricidas, els tirans
 
 ### 6.35
 
-¿No veus com els artesans s'acomoden fins a cert punt als no iniciats i, tanmateix, s'aferren a la raó de la seva art i no suporten allunyar-se'n? ¿No és deplorable que l'arquitecte i el metge reverenciïn més la raó de la seva art que l'home la seva pròpia, que li és comuna amb els déus?
+No veus com els artesans s'acomoden fins a cert punt als no iniciats i, tanmateix, s'aferren a la raó de la seva art i no suporten allunyar-se'n? No és deplorable que l'arquitecte i el metge reverenciïn més la raó de la seva art que l'home la seva pròpia, que li és comuna amb els déus?
 
 ### 6.36
 
@@ -737,11 +737,11 @@ Tots cooperem per a un sol resultat: els uns amb consciència i de manera reflex
 
 ### 6.43
 
-¿Potser el sol pretén fer les funcions de la pluja? ¿O Asclepi les de la Carpoforai? ¿I no és diferent cadascuna de les estrelles, i tanmateix cooperen per a una sola fi?
+Potser el sol pretén fer les funcions de la pluja? O Asclepi les de la Carpoforai? I no és diferent cadascuna de les estrelles, i tanmateix cooperen per a una sola fi?
 
 ### 6.44
 
-Si els déus han deliberat sobre mi i el que m'havia de succeir, han deliberat bé: és difícil concebir un déu sense deliberació. I per quina raó haurien de decidir perjudicar-me? ¿Quèels guanyaven o al comú del qual son els principals guardes? I si no han deliberat particularment sobre mi, sí que han deliberat sobre les coses comunes, i les que m'arriben per conseqüència les he d'acceptar i estimar. Però si és que no deliberen sobre res —creure-ho no és pietós, o si no, no oferim sacrificis ni preguem ni jurem ni fem res del que fem a cada moment com davant dels déus que son presents i conviuen amb nosaltres—; doncs si tampoc deliberen sobre cap de les coses que ens concerneixen, m'és possible deliberar sobre mi mateix, i em correspon reflexionar sobre el que és profitós; i el que és profitós per a cadascú és el que és d'acord amb la seva pròpia constitució i naturalesa. La meva naturalesa és racional i política. La ciutat i la pàtria: com a Antoní, em pertoca Roma; com a home, el cosmos. El que és profitós per a elles, és l'únic bé per a mi.
+Si els déus han deliberat sobre mi i el que m'havia de succeir, han deliberat bé: és difícil concebir un déu sense deliberació. I per quina raó haurien de decidir perjudicar-me? Quèels guanyaven o al comú del qual son els principals guardes? I si no han deliberat particularment sobre mi, sí que han deliberat sobre les coses comunes, i les que m'arriben per conseqüència les he d'acceptar i estimar. Però si és que no deliberen sobre res —creure-ho no és pietós, o si no, no oferim sacrificis ni preguem ni jurem ni fem res del que fem a cada moment com davant dels déus que son presents i conviuen amb nosaltres—; doncs si tampoc deliberen sobre cap de les coses que ens concerneixen, m'és possible deliberar sobre mi mateix, i em correspon reflexionar sobre el que és profitós; i el que és profitós per a cadascú és el que és d'acord amb la seva pròpia constitució i naturalesa. La meva naturalesa és racional i política. La ciutat i la pàtria: com a Antoní, em pertoca Roma; com a home, el cosmos. El que és profitós per a elles, és l'únic bé per a mi.
 
 ### 6.45
 
@@ -753,7 +753,7 @@ Com et resulta fastiguejant el que veus a l'amfiteatre i en llocs semblants, on 
 
 ### 6.47
 
-Pensa contínuament en homes de tota mena morts, de tota mena d'ocupacions i de tota mena de nacions, de tal manera que baixis fins a Filistió, Febus i Originió. Passa ara a les altres races: allà ens hem de traslladar, on van tants grans oradors, tants venerables filòsofs com Heràclit, Pitàgores, Sòcrates; tants herois d'antuvi, tants generals i tirans després; i a més Eudox, Hiparc, Arquimedes, i d'altres naturaleses agudes, magnànimes, laborioses, astutes, altives, burladores de la pròpia vida efímera i passatgera dels homes, com Menip i tots els semblants. Pensa de tots ells que fa temps que jauen. ¿Quèn'hi ha de terrible per a ells? ¿I per als que no son ni tan sols nomenats? Una sola cosa aquí val molt: viure amb veritat i justícia, benèvol amb els mentiders i els injusts.
+Pensa contínuament en homes de tota mena morts, de tota mena d'ocupacions i de tota mena de nacions, de tal manera que baixis fins a Filistió, Febus i Originió. Passa ara a les altres races: allà ens hem de traslladar, on van tants grans oradors, tants venerables filòsofs com Heràclit, Pitàgores, Sòcrates; tants herois d'antuvi, tants generals i tirans després; i a més Eudox, Hiparc, Arquimedes, i d'altres naturaleses agudes, magnànimes, laborioses, astutes, altives, burladores de la pròpia vida efímera i passatgera dels homes, com Menip i tots els semblants. Pensa de tots ells que fa temps que jauen. Quèn'hi ha de terrible per a ells? I per als que no son ni tan sols nomenats? Una sola cosa aquí val molt: viure amb veritat i justícia, benèvol amb els mentiders i els injusts.
 
 ### 6.48
 
@@ -761,11 +761,11 @@ Quan vulguis alegrar-te, pensa en les qualitats dels qui conviuen amb tu: l'ener
 
 ### 6.49
 
-¿T'afligeix pesar tant i no tres-centes lliures? De la mateixa manera, que has de viure tants anys i no més. Com t'acontentes amb la quantitat de substància que t'ha estat assignada, acontenta't igualment amb el temps.
+T'afligeix pesar tant i no tres-centes lliures? De la mateixa manera, que has de viure tants anys i no més. Com t'acontentes amb la quantitat de substància que t'ha estat assignada, acontenta't igualment amb el temps.
 
 ### 6.50
 
-Procura persuadir-los, però actua fins i tot contra la seva voluntat quan la raó de la justícia ho exigeixi. Si, però, algú s'hi oposa usant la força, passa a l'actitud d'acceptació serena i al dolor, i usa l'obstacle per a una altra virtut, i recorda que amb reserva havies actuat i que no desitjaves coses impossibles. ¿Què desitjaves, doncs? Tal impuls d'aquest tipus. I l'aconsegueixes: és en aquestes coses on hem estat portats a actuar.
+Procura persuadir-los, però actua fins i tot contra la seva voluntat quan la raó de la justícia ho exigeixi. Si, però, algú s'hi oposa usant la força, passa a l'actitud d'acceptació serena i al dolor, i usa l'obstacle per a una altra virtut, i recorda que amb reserva havies actuat i que no desitjaves coses impossibles. Què desitjaves, doncs? Tal impuls d'aquest tipus. I l'aconsegueixes: és en aquestes coses on hem estat portats a actuar.
 
 ### 6.51
 
@@ -785,7 +785,7 @@ El que no és profitós per a l'eixam, tampoc no és profitós per a l'abella.
 
 ### 6.55
 
-Si els mariners parlessin malament del pilot o els malalts del metge, ¿a qui farien cas, o com el pilot treballaria per la salvació dels qui naveguen, o el metge per la salut dels qui tracta?
+Si els mariners parlessin malament del pilot o els malalts del metge, a qui farien cas, o com el pilot treballaria per la salvació dels qui naveguen, o el metge per la salut dels qui tracta?
 
 ### 6.56
 
@@ -793,7 +793,7 @@ Quants dels qui van entrar al món juntament amb mi ja se n'han anat.
 
 ### 6.57
 
-Als ictèrics la mel els sembla amarga, als que han estat mossegats per un gos rabiós l'aigua els espanta, i als nens la pilota és bella. ¿Per qué, doncs, m'enrabio? ¿Et sembla menys poderosa la falsa impressió que la bilis per a l'ictèric, o el verí per al que ha estat mossegat per un gos rabiós?
+Als ictèrics la mel els sembla amarga, als que han estat mossegats per un gos rabiós l'aigua els espanta, i als nens la pilota és bella. Per què, doncs, m'enrabio? Et sembla menys poderosa la falsa impressió que la bilis per a l'ictèric, o el verí per al que ha estat mossegat per un gos rabiós?
 
 ### 6.58
 
@@ -1035,7 +1035,7 @@ Estimar únicament el que et succeeix i s'entrellaça amb el teu destí. Perquè
 
 ### 7.58
 
-Davant de cada circumstància, tenir al davant dels ulls aquells a qui va succeir el mateix, que tot seguit s'indignaen, s'estranyaven, es queixaven. I ara, on són aquells? En cap lloc. Doncs, tu vols fer el mateix? En lloc d'això, ¿no deixes les alteracions alienes als qui s'alteren i s'alteren, i tu et dediques del tot a saber com usar-les? Perquè les usaràs bé i seran material per a tu. Tan sols presta atenció i vull ser bo en tot el que fas. I recorda totes dues coses: que l'acció és important, i quina és la matèria sobre la qual s'actua.
+Davant de cada circumstància, tenir al davant dels ulls aquells a qui va succeir el mateix, que tot seguit s'indignaen, s'estranyaven, es queixaven. I ara, on són aquells? En cap lloc. Doncs, tu vols fer el mateix? En lloc d'això, no deixes les alteracions alienes als qui s'alteren i s'alteren, i tu et dediques del tot a saber com usar-les? Perquè les usaràs bé i seran material per a tu. Tan sols presta atenció i vull ser bo en tot el que fas. I recorda totes dues coses: que l'acció és important, i quina és la matèria sobre la qual s'actua.
 
 ### 7.59
 
@@ -1183,7 +1183,7 @@ El que mor no cau fora del cosmos. Si roman aquí, aquí es transforma i es diss
 
 ### 8.19
 
-Cada cosa ha nascut per a alguna cosa: el cavall, el cep. Per quin motiu t'estranya? El sol mateix dirà: «He nascut per fer una tasca», i els altres déus de la mateixa manera. Tu, doncs, per a qué? Per al plaer? Mira si la noció ho admet.
+Cada cosa ha nascut per a alguna cosa: el cavall, el cep. Per quin motiu t'estranya? El sol mateix dirà: «He nascut per fer una tasca», i els altres déus de la mateixa manera. Tu, doncs, per a què? Per al plaer? Mira si la noció ho admet.
 
 ### 8.20
 
@@ -1255,7 +1255,7 @@ Que no et confongui la representació de tota la vida. No acumulis en la ment qu
 
 ### 8.37
 
-Pàntea o Pèrgam, ara, seurà al costat de la tomba de Ver? I Cabries o Diotim al costat de la d'Adrià? Ridícul. Però si seiessin al costat, ¿haurien de notar-ho? I si ho notessin, haurien de sentir plaer? I si en sentissin, ¿haurien d'ésser immortals? No estava destinat que primer es tornessin vells i velles, i que tot seguit moríssin? Doncs, que havien de fer aquells, quan haguessin mort? Tot, fetidesa, podredura i borumballa en un sac.
+Pàntea o Pèrgam, ara, seurà al costat de la tomba de Ver? I Cabries o Diotim al costat de la d'Adrià? Ridícul. Però si seiessin al costat, haurien de notar-ho? I si ho notessin, haurien de sentir plaer? I si en sentissin, haurien d'ésser immortals? No estava destinat que primer es tornessin vells i velles, i que tot seguit moríssin? Doncs, que havien de fer aquells, quan haguessin mort? Tot, fetidesa, podredura i borumballa en un sac.
 
 ### 8.38
 
@@ -1287,15 +1287,15 @@ Fes-te ara un regal a tu mateix. Aquells que persegueixen més la glòria pòstu
 
 ### 8.45
 
-«Prèn-me i llança'm on vulguis. Perquè allà també tindré el meu geni interior propici»; és a dir, satisfet si pot tenir i actuar d'acord amb el que és conseqüent a la seva pròpia constitució. ¿Val la pena que l'ànima meva estigui mal per a allò i sigui pitjor que ella mateixa, humiliant-se, desitjant, agitant-se, espantant-se? I que trobaràs que valgui la pena?
+«Prèn-me i llança'm on vulguis. Perquè allà també tindré el meu geni interior propici»; és a dir, satisfet si pot tenir i actuar d'acord amb el que és conseqüent a la seva pròpia constitució. Val la pena que l'ànima meva estigui mal per a allò i sigui pitjor que ella mateixa, humiliant-se, desitjant, agitant-se, espantant-se? I que trobaràs que valgui la pena?
 
 ### 8.46
 
-No pot succeir a un home res que no sigui un succés humà, ni a un bou el que no és boví, ni a un cep el que no és de cep, ni a una pedra el que no és propi de la pedra. Si, doncs, a cadascú li succeeix el que és habitual i natural, per qué t'indignes? Perquè la naturalesa comuna no t'ha portat res insuportable.
+No pot succeir a un home res que no sigui un succés humà, ni a un bou el que no és boví, ni a un cep el que no és de cep, ni a una pedra el que no és propi de la pedra. Si, doncs, a cadascú li succeeix el que és habitual i natural, per què t'indignes? Perquè la naturalesa comuna no t'ha portat res insuportable.
 
 ### 8.47
 
-Si t'entristeix alguna cosa de les exteriors, no és allò el que et molesta, sinó el teu judici sobre allò. I esborrar-lo depèn de tu ja. Però si t'entristeix quelcom de la teva pròpia disposició, qui t'impedeix rectificar el principi? Igualment, si t'entristeix de no realitzar alguna acció que et sembla saludable, per qué no actues en lloc d'entristir-te? Però hi ha un obstacle més fort. Doncs, no t'entristeixis, perquè la causa de no actuar no depèn de tu. Però, si no val la pena viure sense que allò es realitzi, surt de la vida amb benevolència, com el qui actua i mor alhora propici als qui s'hi oposen.
+Si t'entristeix alguna cosa de les exteriors, no és allò el que et molesta, sinó el teu judici sobre allò. I esborrar-lo depèn de tu ja. Però si t'entristeix quelcom de la teva pròpia disposició, qui t'impedeix rectificar el principi? Igualment, si t'entristeix de no realitzar alguna acció que et sembla saludable, per què no actues en lloc d'entristir-te? Però hi ha un obstacle més fort. Doncs, no t'entristeixis, perquè la causa de no actuar no depèn de tu. Però, si no val la pena viure sense que allò es realitzi, surt de la vida amb benevolència, com el qui actua i mor alhora propici als qui s'hi oposen.
 
 ### 8.48
 
@@ -1307,7 +1307,7 @@ No et diguis res més del que t'anuncien les representacions inicials. T'han anu
 
 ### 8.50
 
-El cogombre és amarg: deixa'l. Hi ha esbarzers al camí: evita'ls. N'hi ha prou amb això; no afegeixis: «Per qué existeixen aquestes coses al món?» Perquè et ridiculitzaria un naturalista, com et ridiculitzaria un fuster o un sabater si retreiessis que al seu taller hi veus restes i retalls de les obres que construeix. Ells, però, almenys, tenen on llençar-les; la naturalesa del tot no té res fora. Però el que és admirable en aquell art és que, tot i haver delimitat el seu espai, converteix en si mateixa tot el que en son interior sembla corrompre's, envellirose i ser-li inútil, i que de les mateixes coses en fa d'altres de noves, a fi de no necessitar cap substància de l'exterior ni d'on tirar el que és podrit. Així, n'hi ha prou amb el seu propi espai, la seva pròpia matèria i el seu propi art.
+El cogombre és amarg: deixa'l. Hi ha esbarzers al camí: evita'ls. N'hi ha prou amb això; no afegeixis: «Per què existeixen aquestes coses al món?» Perquè et ridiculitzaria un naturalista, com et ridiculitzaria un fuster o un sabater si retreiessis que al seu taller hi veus restes i retalls de les obres que construeix. Ells, però, almenys, tenen on llençar-les; la naturalesa del tot no té res fora. Però el que és admirable en aquell art és que, tot i haver delimitat el seu espai, converteix en si mateixa tot el que en son interior sembla corrompre's, envellirose i ser-li inútil, i que de les mateixes coses en fa d'altres de noves, a fi de no necessitar cap substància de l'exterior ni d'on tirar el que és podrit. Així, n'hi ha prou amb el seu propi espai, la seva pròpia matèria i el seu propi art.
 
 ### 8.51
 
@@ -1437,7 +1437,7 @@ L'error d'un altre cal deixar-lo allí.
 
 ### 9.21
 
-El cessament d'una activitat, la pausa de l'impuls i del judici, quelcom semblant a la mort: res d'això no és cap mal. Ara passa a l'edat de la infància, a la de l'adolescent, a la joventut, a la vellesa: car tots aquells canvis eren mort. ¿Hi havia alguna cosa terrible? Passa ara a la vida sota l'avi, sota la mare, sota el pare, i trobaràs moltes altres dissolucions, canvis i cessaments: pregunta't: hi havia res de terrible? Doncs igualment, ni el fi, la pausa i el canvi de tota la teva vida no ho és.
+El cessament d'una activitat, la pausa de l'impuls i del judici, quelcom semblant a la mort: res d'això no és cap mal. Ara passa a l'edat de la infància, a la de l'adolescent, a la joventut, a la vellesa: car tots aquells canvis eren mort. Hi havia alguna cosa terrible? Passa ara a la vida sota l'avi, sota la mare, sota el pare, i trobaràs moltes altres dissolucions, canvis i cessaments: pregunta't: hi havia res de terrible? Doncs igualment, ni el fi, la pausa i el canvi de tota la teva vida no ho és.
 
 ### 9.22
 
@@ -1469,7 +1469,7 @@ Les coses del cosmos es repeteixen en cicles, de dalt a baix, d'un temps a un al
 
 ### 9.29
 
-El torrent de l'essència de l'univers tot ho arrossega. Quant vils són aquestes activitats polítiques i aquests homes que creuen actuar filosòficament, plens de mocositats. Oh home, ¿què faràs? Fes allò que ara la naturalesa exigeix. Lança't si te n'és donada l'ocasió i no mires al voltant si algú se n'assabentem. No esperis la república de Plató, sinó dona't per satisfet amb el progrés més petit, i considera que el resultat d'això és poca cosa. Car qui els canviarà els principis? I sense canvi de principis, ¿què hi ha sinó esclavitud de gemegants que fingeixen obeir? Ara vés i parla'm d'Alexandre, Filip i Demetri de Falèron. Ells veuran si van veure el que la naturalesa comuna volia i si es van educar a si mateixos. Si van actuar tràgicament, ningú no m'ha condemnat a imitar-los. El treball de la filosofia és senzill i modest; no em portis a la pompa altiva.
+El torrent de l'essència de l'univers tot ho arrossega. Quant vils són aquestes activitats polítiques i aquests homes que creuen actuar filosòficament, plens de mocositats. Oh home, què faràs? Fes allò que ara la naturalesa exigeix. Lança't si te n'és donada l'ocasió i no mires al voltant si algú se n'assabentem. No esperis la república de Plató, sinó dona't per satisfet amb el progrés més petit, i considera que el resultat d'això és poca cosa. Car qui els canviarà els principis? I sense canvi de principis, què hi ha sinó esclavitud de gemegants que fingeixen obeir? Ara vés i parla'm d'Alexandre, Filip i Demetri de Falèron. Ells veuran si van veure el que la naturalesa comuna volia i si es van educar a si mateixos. Si van actuar tràgicament, ningú no m'ha condemnat a imitar-los. El treball de la filosofia és senzill i modest; no em portis a la pompa altiva.
 
 ### 9.30
 
@@ -1493,7 +1493,7 @@ Quins principis rectors regeixen cada un d'ells, per quines coses s'afanen, per 
 
 ### 9.35
 
-La pèrdua no és altra cosa que canvi, i en el canvi s'alegra la naturalesa de l'univers, d'acord amb la qual tot es fa bé i es va fer uniformement des de sempre, i es farà igual indefinidament. ¿Ara diràs que tot va anar sempre malament i anirà sempre malament, i que no es va trobar cap poder entre tants déus que pogués esmenar-ho, sinó que el cosmos ha estat condemnat a ser subjectat per mals sense interrupció?
+La pèrdua no és altra cosa que canvi, i en el canvi s'alegra la naturalesa de l'univers, d'acord amb la qual tot es fa bé i es va fer uniformement des de sempre, i es farà igual indefinidament. Ara diràs que tot va anar sempre malament i anirà sempre malament, i que no es va trobar cap poder entre tants déus que pogués esmenar-ho, sinó que el cosmos ha estat condemnat a ser subjectat per mals sense interrupció?
 
 ### 9.36
 
@@ -1509,11 +1509,11 @@ Si va cometre un error, allà és el mal. Però potser no el va cometre.
 
 ### 9.39
 
-O bé tot prové d'una sola font intel·lectiva i s'esdevé com en un sol cos, i la part no ha de queixar-se del que es fa pel tot; o bé hi ha àtoms i res més que mescla i dispersió. ¿Per tant, per qué t'agites? Di-li al teu principi rector: ja ets mort, ja et corrumps, ja t'has tornat una bèstia, ets un hipòcrita, t'has juntats a un ramat, pastures.
+O bé tot prové d'una sola font intel·lectiva i s'esdevé com en un sol cos, i la part no ha de queixar-se del que es fa pel tot; o bé hi ha àtoms i res més que mescla i dispersió. Per tant, per què t'agites? Di-li al teu principi rector: ja ets mort, ja et corrumps, ja t'has tornat una bèstia, ets un hipòcrita, t'has juntats a un ramat, pastures.
 
 ### 9.40
 
-O bé els déus no poden res o bé sí que poden. Si no poden, per quina raó pregues? Si poden, per quina raó no pregues que et donin la força de no témer cap d'aquestes coses, de no desitjar cap d'elles, de no afligir-te per cap d'elles, en comptes de demanar que tal cosa no hi sigui o que hi sigui? Car si certament poden ajudar els homes, també poden ajudar en aquestes coses. Però potser diràs: els déus han posat aquestes coses en el meu poder. ¿No és millor servir-se lliurement del que és en el teu poder que combatre servilment i humilment contra el que no ho és? I qui t'ha dit que els déus no t'ajuden tampoc en el que depèn de tu? Comença doncs a demanar-los-ho i ho veuràs. Un prega: com dormiré amb aquella? Tu: com no desitjaré dormir-hi. Un altre: com el perdré? Tu: com no tindré necessitat que me'l prenguin. Un altre: com no perdré el meu fill? Tu: com no tindré por de perdre'l? Orienta d'aquesta manera les teves pregàries i observa el que passa.
+O bé els déus no poden res o bé sí que poden. Si no poden, per quina raó pregues? Si poden, per quina raó no pregues que et donin la força de no témer cap d'aquestes coses, de no desitjar cap d'elles, de no afligir-te per cap d'elles, en comptes de demanar que tal cosa no hi sigui o que hi sigui? Car si certament poden ajudar els homes, també poden ajudar en aquestes coses. Però potser diràs: els déus han posat aquestes coses en el meu poder. No és millor servir-se lliurement del que és en el teu poder que combatre servilment i humilment contra el que no ho és? I qui t'ha dit que els déus no t'ajuden tampoc en el que depèn de tu? Comença doncs a demanar-los-ho i ho veuràs. Un prega: com dormiré amb aquella? Tu: com no desitjaré dormir-hi. Un altre: com el perdré? Tu: com no tindré necessitat que me'l prenguin. Un altre: com no perdré el meu fill? Tu: com no tindré por de perdre'l? Orienta d'aquesta manera les teves pregàries i observa el que passa.
 
 ### 9.41
 
@@ -1521,7 +1521,7 @@ Epicur diu que durant la malaltia no tenia converses sobre els patiments del cos
 
 ### 9.42
 
-Quan la desvergonyida conducta d'algú et molesta, pregunta't immediatament: ¿és possible que no hi hagi desvergonyits al món? No és possible. No exigeixis, doncs, l'impossible. Car aquest és un d'aquells desvergonyits que necessàriament han d'existir al món. Fes el mateix amb el maliciós, el deslleial i amb tot el qui comet qualsevol falta. Car tan aviat com et recordis que és impossible que no n'hi hagi de tals, et tornaràs més benvolent envers cadascun. És útil pensar de seguida quina virtut ha donat la naturalesa a l'home contra aquest error. Car ha donat, com a antídot, la mansuetud contra l'ingrat, i contra un altre error una altra força. I en general et és possible d'adoctrinar el qui s'ha errat, car tot el qui peca s'allunya del seu objectiu i s'ha extraviat. A més, ¿en quina cosa t'ha perjudicat? Trobaràs que cap d'aquells que t'exasperen no ha fet res del gènere que pogués empitjorar la teva intel·ligència. Tot el teu mal i el teu perjudici resideixen precisament aquí. ¿Quèhi ha de nou o estrany si l'inculte actua com actua l'inculte? Mira si no hauries de culpar-te a tu mateix per no preveure que fallaria en això. Car tu tenies a la raó arguments per considerar que era probable que fallés en això, i no obstant, oblidant-ho, t'estranya que hagi fallat. Però sobretot quan censures algú com a deslleial o ingrat, volta't cap a tu mateix, car clarament l'error és teu: ja sigui perquè vas creure que una persona de tal disposició guardaria la confiança, ja sigui perquè en fer la gràcia no la vas donar conclusivament, de manera que haguessis rebut immediatament de la mateixa acció tot el seu fruit. Car, ¿qué més vols si has fet un bé a un home? ¿No n'és prou que ho hagis fet d'acord amb la teva naturalesa? ¿O cerques una recompensa per això? Com si l'ull demanés una compensació per veure, o els peus per caminar. Car de la mateixa manera que aquestes parts han estat creades per a tal cosa i obtenen la satisfacció pròpia actuant d'acord amb la seva constitució, així l'home, que ha estat fet per ser benefactor, quan fa alguna cosa beneficiosa o de qualsevol altra manera que coopera al bé comú, ha fet allò per a la qual cosa ha estat creat i obté el que és seu.
+Quan la desvergonyida conducta d'algú et molesta, pregunta't immediatament: és possible que no hi hagi desvergonyits al món? No és possible. No exigeixis, doncs, l'impossible. Car aquest és un d'aquells desvergonyits que necessàriament han d'existir al món. Fes el mateix amb el maliciós, el deslleial i amb tot el qui comet qualsevol falta. Car tan aviat com et recordis que és impossible que no n'hi hagi de tals, et tornaràs més benvolent envers cadascun. És útil pensar de seguida quina virtut ha donat la naturalesa a l'home contra aquest error. Car ha donat, com a antídot, la mansuetud contra l'ingrat, i contra un altre error una altra força. I en general et és possible d'adoctrinar el qui s'ha errat, car tot el qui peca s'allunya del seu objectiu i s'ha extraviat. A més, en quina cosa t'ha perjudicat? Trobaràs que cap d'aquells que t'exasperen no ha fet res del gènere que pogués empitjorar la teva intel·ligència. Tot el teu mal i el teu perjudici resideixen precisament aquí. Quèhi ha de nou o estrany si l'inculte actua com actua l'inculte? Mira si no hauries de culpar-te a tu mateix per no preveure que fallaria en això. Car tu tenies a la raó arguments per considerar que era probable que fallés en això, i no obstant, oblidant-ho, t'estranya que hagi fallat. Però sobretot quan censures algú com a deslleial o ingrat, volta't cap a tu mateix, car clarament l'error és teu: ja sigui perquè vas creure que una persona de tal disposició guardaria la confiança, ja sigui perquè en fer la gràcia no la vas donar conclusivament, de manera que haguessis rebut immediatament de la mateixa acció tot el seu fruit. Car, què més vols si has fet un bé a un home? No n'és prou que ho hagis fet d'acord amb la teva naturalesa? O cerques una recompensa per això? Com si l'ull demanés una compensació per veure, o els peus per caminar. Car de la mateixa manera que aquestes parts han estat creades per a tal cosa i obtenen la satisfacció pròpia actuant d'acord amb la seva constitució, així l'home, que ha estat fet per ser benefactor, quan fa alguna cosa beneficiosa o de qualsevol altra manera que coopera al bé comú, ha fet allò per a la qual cosa ha estat creat i obté el que és seu.
 
 ---
 
@@ -1529,7 +1529,7 @@ Quan la desvergonyida conducta d'algú et molesta, pregunta't immediatament: ¿�
 
 ### 10.1
 
-¿Arribaràs algun dia, oh ànima, a ser bona, senzilla, una i nua, més manifesta que el cos que et cobreix? ¿Tastaràs algun dia la disposició afectuosa i amorosa? ¿Arribaràs algun dia a ser plena i sense necessitat, sense enyorar res ni desitjar res —ni viu ni inanimat— per al gaudi dels plaers, ni temps per gaudir-ne més llargament, ni lloc o país o clima agradable, ni harmonia de gent; sinó que et contentaràs amb la situació present i t'alegraràs de tot allò que és present, i et persuadiràs que tot et ve dels déus, que tot va bé i tot anirà bé, tot allò que els plau i tot allò que es disposen a donar per a la salvació de l'ésser perfecte, bo i just i bell, que engendra tot, conté tot, abraça tot i acull tot allò que es dissol per generar coses semblants? ¿Arribaràs algun dia a ser tal que puguis conviure amb els déus i els homes sense retreure res de res i sense ser censurada per ells?
+Arribaràs algun dia, oh ànima, a ser bona, senzilla, una i nua, més manifesta que el cos que et cobreix? Tastaràs algun dia la disposició afectuosa i amorosa? Arribaràs algun dia a ser plena i sense necessitat, sense enyorar res ni desitjar res —ni viu ni inanimat— per al gaudi dels plaers, ni temps per gaudir-ne més llargament, ni lloc o país o clima agradable, ni harmonia de gent; sinó que et contentaràs amb la situació present i t'alegraràs de tot allò que és present, i et persuadiràs que tot et ve dels déus, que tot va bé i tot anirà bé, tot allò que els plau i tot allò que es disposen a donar per a la salvació de l'ésser perfecte, bo i just i bell, que engendra tot, conté tot, abraça tot i acull tot allò que es dissol per generar coses semblants? Arribaràs algun dia a ser tal que puguis conviure amb els déus i els homes sense retreure res de res i sense ser censurada per ells?
 
 ### 10.2
 
@@ -1553,7 +1553,7 @@ Tant si hi ha àtoms com si hi ha naturalesa, primer cal establir que sóc part 
 
 ### 10.7
 
-Les parts del tot que la naturalesa ha enclos en el cosmos necessàriament es corrompen —entenent-ho en el sentit significatiu d'«alterar-se». Si per naturalesa és dolent i necessari per a elles, el tot no podria conduir-se bé quan les seves parts s'encaminés vers l'alteració i es trobessin disposades de diverses maneres per corrompre's. Car, ¿ha intentat la naturalesa danyar les seves pròpies parts i fer-les vulnerables al mal i caigudes necessàriament en el mal? O potser li ha passat inadvertidament que tals coses succeïen? Totes dues coses són inversemblants. I si algú, deixant de banda la naturalesa, expliqués tot això a partir del que és connaturalment establert, resultaria igualment ridícul afirmar alhora que les parts del tot han estat creades per canviar, i alhora estranyar-se'n o disgustar-se'n com si fos alguna cosa que succeeixi contra la naturalesa; especialment quan la dissolució es produeix en els mateixos elements dels quals es composa cada cosa. Car, o bé és dispersió dels elements dels quals ha estat compost, o bé és una transformació de l'element sòlid en terra i de l'element pneumàtic en aire, de manera que també aquestes coses siguin rebudes en la raó del tot, tant si es consumeix periòdicament en el foc com si es renova en intercanvis eterns. I no imaginis que la matèria sòlida i la pneumàtica són les mateixes del primer origen, car tot allò l'ha rebut ahir i anteahir com a afluència dels aliments i de l'aire respirat. El que ha rebut, doncs, és el que canvia, no allò que va parir la mare. I suposa que t'uneixis estretament a allò que té una qualitat pròpia: crec que no altera en res allò que ara es diu.
+Les parts del tot que la naturalesa ha enclos en el cosmos necessàriament es corrompen —entenent-ho en el sentit significatiu d'«alterar-se». Si per naturalesa és dolent i necessari per a elles, el tot no podria conduir-se bé quan les seves parts s'encaminés vers l'alteració i es trobessin disposades de diverses maneres per corrompre's. Car, ha intentat la naturalesa danyar les seves pròpies parts i fer-les vulnerables al mal i caigudes necessàriament en el mal? O potser li ha passat inadvertidament que tals coses succeïen? Totes dues coses són inversemblants. I si algú, deixant de banda la naturalesa, expliquès tot això a partir del que és connaturalment establert, resultaria igualment ridícul afirmar alhora que les parts del tot han estat creades per canviar, i alhora estranyar-se'n o disgustar-se'n com si fos alguna cosa que succeeixi contra la naturalesa; especialment quan la dissolució es produeix en els mateixos elements dels quals es composa cada cosa. Car, o bé és dispersió dels elements dels quals ha estat compost, o bé és una transformació de l'element sòlid en terra i de l'element pneumàtic en aire, de manera que també aquestes coses siguin rebudes en la raó del tot, tant si es consumeix periòdicament en el foc com si es renova en intercanvis eterns. I no imaginis que la matèria sòlida i la pneumàtica són les mateixes del primer origen, car tot allò l'ha rebut ahir i anteahir com a afluència dels aliments i de l'aire respirat. El que ha rebut, doncs, és el que canvia, no allò que va parir la mare. I suposa que t'uneixis estretament a allò que té una qualitat pròpia: crec que no altera en res allò que ara es diu.
 
 ### 10.8
 
@@ -1561,7 +1561,7 @@ Donant-te a tu mateix aquests noms: bo, modest, veraç, assenyat, coherent i mag
 
 ### 10.9
 
-La farsa, la guerra, el tremolor, la letargia, l'esclavitud: dia a dia s'esborren aquells sants principis que coneixes sense filosofia natural i que passes per alt. Cal mirar i fer tota cosa de manera que alhora es completi l'aspecte pràctic i alhora s'exerciti el teòric, i que es conservi la confiança que prové del coneixement de cada cosa, oculta però no amagada. Car quan gaudiràs de la senzillesa? Quan de la dignitat? Quan del coneixement de cada cosa —qué és en la seva essència, quin lloc ocupa en el cosmos, quant de temps és per naturalesa possible que subsisteixi, de quin elements es compon, en qui pot existir, qui pot donar-la i prendre-la?
+La farsa, la guerra, el tremolor, la letargia, l'esclavitud: dia a dia s'esborren aquells sants principis que coneixes sense filosofia natural i que passes per alt. Cal mirar i fer tota cosa de manera que alhora es completi l'aspecte pràctic i alhora s'exerciti el teòric, i que es conservi la confiança que prové del coneixement de cada cosa, oculta però no amagada. Car quan gaudiràs de la senzillesa? Quan de la dignitat? Quan del coneixement de cada cosa —què és en la seva essència, quin lloc ocupa en el cosmos, quant de temps és per naturalesa possible que subsisteixi, de quin elements es compon, en qui pot existir, qui pot donar-la i prendre-la?
 
 ### 10.10
 
@@ -1573,11 +1573,11 @@ Adquireix un mètode contemplatiu de com totes les coses muden l'una en l'altra 
 
 ### 10.12
 
-¿Per a qué les conjectures si és possible examinar el que cal fer? I si ho veus amb claredat, avança-hi decididament sense girar enrere; si no ho veus, atura't i serveix-te dels millors consellers. Si hi ha altres coses que s'hi oposen, avança d'acord amb els recursos presents, reflexivament, mantenint-te en el que et sembla just. Car és millor arribar a això, ja que la desviació d'això és d'alguna manera relaxada i alhora àgil, alegre i alhora ferma: és el qui segueix la raó en tot.
+Per a què les conjectures si és possible examinar el que cal fer? I si ho veus amb claredat, avança-hi decididament sense girar enrere; si no ho veus, atura't i serveix-te dels millors consellers. Si hi ha altres coses que s'hi oposen, avança d'acord amb els recursos presents, reflexivament, mantenint-te en el que et sembla just. Car és millor arribar a això, ja que la desviació d'això és d'alguna manera relaxada i alhora àgil, alegre i alhora ferma: és el qui segueix la raó en tot.
 
 ### 10.13
 
-En despertar del son, pregunta't de seguida: ¿et farà alguna diferència que coses justes i ben fonamentades siguin censurades per algú altre? No et farà diferència. ¿Potser has oblidat que els qui fan gales en els elogis i vituperis dels altres, com és llur manera de ser al llit, com ho és a la taula, i qué fan i de qué fugen i qué persegueixen i qué roben i qué arrabasssen —no pas amb les mans i els peus sinó amb la part més preciosa d'ells mateixos, la que esdevé, quan vol, fe, modèstia, veritat, llei i bon geni interior?
+En despertar del son, pregunta't de seguida: et farà alguna diferència que coses justes i ben fonamentades siguin censurades per algú altre? No et farà diferència. Potser has oblidat que els qui fan gales en els elogis i vituperis dels altres, com és llur manera de ser al llit, com ho és a la taula, i què fan i de què fugen i què persegueixen i què roben i què arrabasssen —no pas amb les mans i els peus sinó amb la part més preciosa d'ells mateixos, la que esdevé, quan vol, fe, modèstia, veritat, llei i bon geni interior?
 
 ### 10.14
 
@@ -1605,11 +1605,11 @@ Com són menjant, dormint, copulant, defecant i la resta; i llavors com són fen
 
 ### 10.20
 
-Li és útil a cadascú allò que li aporta la naturalesa de l'univers a cadascú, i li és útil en el moment en qué l'hi porta.
+Li és útil a cadascú allò que li aporta la naturalesa de l'univers a cadascú, i li és útil en el moment en què l'hi porta.
 
 ### 10.21
 
-«La terra desitja la pluja i el venerable éter ho desitja.» I el cosmos desitja fer el que ha d'esdevenir. Li dic, doncs, al cosmos: jo desitjo plegat amb tu. ¿I no s'expressa també així allò: ho desitja que succeeixi?
+«La terra desitja la pluja i el venerable éter ho desitja.» I el cosmos desitja fer el que ha d'esdevenir. Li dic, doncs, al cosmos: jo desitjo plegat amb tu. I no s'expressa també així allò: ho desitja que succeeixi?
 
 ### 10.22
 
@@ -1621,7 +1621,7 @@ Tingues sempre present que aquell camp és el que és, i com totes les coses aqu
 
 ### 10.24
 
-¿Quèés per a mi el meu principi rector, i de quina mena el faig ara, i per a qué el faig servir ara? ¿És buit de ment? ¿Està deslligat i separat de la comunitat? ¿Enganxat i fos amb la carneta de manera que es deixa arrossegar per ella?
+Què és per a mi el meu principi rector, i de quina mena el faig ara, i per a què el faig servir ara? És buit de ment? Està deslligat i separat de la comunitat? Enganxat i fos amb la carneta de manera que es deixa arrossegar per ella?
 
 ### 10.25
 
@@ -1645,11 +1645,11 @@ Aturant-te en cada una de les coses que fas, pregunta't si la mort és terrible 
 
 ### 10.30
 
-Quan et molestes per l'error d'algú, passa de seguida a considerar quina falta semblant comets tu: per exemple, considerar que el diner és un bé, o el plaer, o la petita glòria. Fixant-te'n, oblidaràs ràpidament la còlera, afegint-hi la consideració que ell actua forçat: ¿qué farà? O si pots, allibera'l del que el forta.
+Quan et molestes per l'error d'algú, passa de seguida a considerar quina falta semblant comets tu: per exemple, considerar que el diner és un bé, o el plaer, o la petita glòria. Fixant-te'n, oblidaràs ràpidament la còlera, afegint-hi la consideració que ell actua forçat: què farà? O si pots, allibera'l del que el forta.
 
 ### 10.31
 
-Veient Satirió, el socràtic, imagina Eutíquides o Himenes; veient Eufretes, imagina Eutiquió o Silvà; veient Alcifró, imagina Trofimeu; veient Sever, imagina Critó o Xenofont; i mirant-te a tu mateix, imagina un dels Cèsars; i per a cada un, allò corresponent. Llavors que t'assalti de cop: on estan aquells? Enlloc o arreu. Perquè veuràs d'aquesta manera contínuament les coses humanes com a fum i com a no-res; sobretot si recorderdes que allò que un cop ha canviat ja no serà mai en el temps infinit. Llavors, ¿per quina raó t'atenses? ¿No és suficient per a tu travessar dignament aquest breu trànsit? Quina matèria i quin argument fuges! Car, ¿qué és tot això sinó exercicis de la raó que ha vist amb exactitud i de manera conforme a la naturalesa el que hi ha en la vida? Queda't, doncs, fins que hagis assimilat tot això com l'estómac robust que assimila tot, com el foc radiant que fa de tot el que hi poses flama i llum.
+Veient Satirió, el socràtic, imagina Eutíquides o Himenes; veient Eufretes, imagina Eutiquió o Silvà; veient Alcifró, imagina Trofimeu; veient Sever, imagina Critó o Xenofont; i mirant-te a tu mateix, imagina un dels Cèsars; i per a cada un, allò corresponent. Llavors que t'assalti de cop: on estan aquells? Enlloc o arreu. Perquè veuràs d'aquesta manera contínuament les coses humanes com a fum i com a no-res; sobretot si recorderdes que allò que un cop ha canviat ja no serà mai en el temps infinit. Llavors, per quina raó t'atenses? No és suficient per a tu travessar dignament aquest breu trànsit? Quina matèria i quin argument fuges! Car, què és tot això sinó exercicis de la raó que ha vist amb exactitud i de manera conforme a la naturalesa el que hi ha en la vida? Queda't, doncs, fins que hagis assimilat tot això com l'estómac robust que assimila tot, com el foc radiant que fa de tot el que hi poses flama i llum.
 
 ### 10.32
 
@@ -1657,7 +1657,7 @@ Que ningú no pugui dir de tu verídicament que no ets senzill o que no ets bo; 
 
 ### 10.33
 
-¿Quèés el que pot fer-se o dir-se d'una manera el més sana possible donada aquesta matèria? Sigui el que sigui, et és possible de fer-ho o dir-ho, i no al·leguis que se t'impedeix. No deixaràs de gemegar fins que t'arribi el moment de sentir que, tal com els voluptuosos gaudeixen de la molície, tu gaudeixes d'actuar d'acord amb la constitució de l'home en qualsevol matèria que se't presenti i s'oferixi. Car cal considerar gaudi tot allò que et és permès d'actuar d'acord amb la teva naturalesa pròpia. I és permès arreu. Al cilindre no li és concedit arreu rodar el seu moviment propi, ni a l'aigüa, ni al foc ni a les altres coses governades per naturalesa o ànima irracional, car els obstacles i les coses que s'interposen hi són molts. Però la ment i la raó pot avançar per tot allò que s'hi oposa tal com és per naturalesa i com vol. Tenint present aquesta facilitat amb la qual la raó avança per tot com el foc amunt, com la pedra avall, com el cilindre per un pendent, no cerca res més. Car els altres obstacles o pertanyen al cos mort, o bé, sense el judici i la cessió de la pròpia raó, no tritura res, ni fa cap mal ni cap altra cosa. Car el que pateix no es tornaria per si sol dolent; si en totes les altres construccions, el que sigui dolent per a alguna d'elles fa que allò que pateix es torni pitjor, aquí, si cal dir-ho, l'home que utilitza bé les adversitats es torna millor i més digne d'elogi. En general recorda que res no perjudica el ciutadà per naturalesa que no perjudica la polis; tampoc no perjudica la polis el que no perjudica la llei. Cap de les coses que s'anomenen desgràcies no perjudica la llei. Allò que no perjudica la llei no perjudica ni la polis ni el ciutadà.
+Què és el que pot fer-se o dir-se d'una manera el més sana possible donada aquesta matèria? Sigui el que sigui, et és possible de fer-ho o dir-ho, i no al·leguis que se t'impedeix. No deixaràs de gemegar fins que t'arribi el moment de sentir que, tal com els voluptuosos gaudeixen de la molície, tu gaudeixes d'actuar d'acord amb la constitució de l'home en qualsevol matèria que se't presenti i s'oferixi. Car cal considerar gaudi tot allò que et és permès d'actuar d'acord amb la teva naturalesa pròpia. I és permès arreu. Al cilindre no li és concedit arreu rodar el seu moviment propi, ni a l'aigüa, ni al foc ni a les altres coses governades per naturalesa o ànima irracional, car els obstacles i les coses que s'interposen hi són molts. Però la ment i la raó pot avançar per tot allò que s'hi oposa tal com és per naturalesa i com vol. Tenint present aquesta facilitat amb la qual la raó avança per tot com el foc amunt, com la pedra avall, com el cilindre per un pendent, no cerca res més. Car els altres obstacles o pertanyen al cos mort, o bé, sense el judici i la cessió de la pròpia raó, no tritura res, ni fa cap mal ni cap altra cosa. Car el que pateix no es tornaria per si sol dolent; si en totes les altres construccions, el que sigui dolent per a alguna d'elles fa que allò que pateix es torni pitjor, aquí, si cal dir-ho, l'home que utilitza bé les adversitats es torna millor i més digne d'elogi. En general recorda que res no perjudica el ciutadà per naturalesa que no perjudica la polis; tampoc no perjudica la polis el que no perjudica la llei. Cap de les coses que s'anomenen desgràcies no perjudica la llei. Allò que no perjudica la llei no perjudica ni la polis ni el ciutadà.
 
 ### 10.34
 
@@ -1669,11 +1669,11 @@ L'ull sa ha de veure tot el que és visible i no dir: vull les coses verdes —c
 
 ### 10.36
 
-No hi ha ningú tan ben afortunat que en morir no hi hagi alguns al seu voltant que se n'alegrin de l'esdeveniment. Era virtuós i savi: ¿no serà que al final hi haurà algú que dirà per a ell mateix: respirarem finalment d'aquest pedagog? Rude no era amb cap de nosaltres, però notava que en silenci ens jutjava. Doncs bé, això sobre el virtuós; però en el nostre cas, quantes altres raons hi ha per les quals mols voldrien veure'ns partir! Ho consideraràs en morir i en sortiràs més fàcilment, pensant: marxo d'una vida en la qual aquells mateixos companys per qui tant m'he esforçat, pregat i preocupat, ells mateixos volen que me'n vagi, esperant potser algun alleujament d'aquí. Per quina raó, doncs, voldria algú aferra-se a una estada més llarga aquí? No te'n vagis, però, menys benvolent amb ells per això; mantén el teu propi costum: amic, benvolent i serè; i no com si te'n separessin per la força, sinó com en el cas de qui mor bé, que l'animeta surt fàcilment del cos: tal ha de ser la teva separació d'ells. Car la naturalesa et va unir i barrejar amb ells, però ara els dissoleu. Me'n separo com de persones propies, però sense ser retingut ni forçat: car això és també una de les coses d'acord amb la naturalesa.
+No hi ha ningú tan ben afortunat que en morir no hi hagi alguns al seu voltant que se n'alegrin de l'esdeveniment. Era virtuós i savi: no serà que al final hi haurà algú que dirà per a ell mateix: respirarem finalment d'aquest pedagog? Rude no era amb cap de nosaltres, però notava que en silenci ens jutjava. Doncs bé, això sobre el virtuós; però en el nostre cas, quantes altres raons hi ha per les quals mols voldrien veure'ns partir! Ho consideraràs en morir i en sortiràs més fàcilment, pensant: marxo d'una vida en la qual aquells mateixos companys per qui tant m'he esforçat, pregat i preocupat, ells mateixos volen que me'n vagi, esperant potser algun alleujament d'aquí. Per quina raó, doncs, voldria algú aferra-se a una estada més llarga aquí? No te'n vagis, però, menys benvolent amb ells per això; mantén el teu propi costum: amic, benvolent i serè; i no com si te'n separessin per la força, sinó com en el cas de qui mor bé, que l'animeta surt fàcilment del cos: tal ha de ser la teva separació d'ells. Car la naturalesa et va unir i barrejar amb ells, però ara els dissoleu. Me'n separo com de persones propies, però sense ser retingut ni forçat: car això és també una de les coses d'acord amb la naturalesa.
 
 ### 10.37
 
-Acostuma't a preguntar-te per cada acció que fa algú, en la mesura que sigui possible: «a qué refereix això?». Comença per tu mateix i examina't primer a tu.
+Acostuma't a preguntar-te per cada acció que fa algú, en la mesura que sigui possible: «a què refereix això?». Comença per tu mateix i examina't primer a tu.
 
 ### 10.38
 
@@ -1855,7 +1855,7 @@ Deia que cal trobar una art per al judici d'assentiment, i en l'esfera dels impu
 
 ### 11.39
 
-Sòcrates deia: "Què voleu, tenir ànimes racionals o irracionals?" "Racionals." "De quina classe de racionals? Sanes o dolentes?" "Sanes." "Per qué no busqueu, doncs, tenir-les?" "Ja les tenim." "Per qué, doncs, baralles i discutiu?"
+Sòcrates deia: "Què voleu, tenir ànimes racionals o irracionals?" "Racionals." "De quina classe de racionals? Sanes o dolentes?" "Sanes." "Per què no busqueu, doncs, tenir-les?" "Ja les tenim." "Per què, doncs, baralles i discutiu?"
 
 ## Llibre XII
 
@@ -1891,7 +1891,7 @@ En quin estat cal ser sorprès per la mort, tant de cos com d'ànima. La breveta
 
 ### 12.8
 
-Contemplar les causes nues de les seves escorces: les referències de les accions, qué és el sofriment, qué el plaer, qué la mort, qué la fama. Qui és el responsable de la pròpia activitat. Com ningú no és impedit per cap altre. Que tot és opinió.
+Contemplar les causes nues de les seves escorces: les referències de les accions, què és el sofriment, què el plaer, què la mort, què la fama. Qui és el responsable de la pròpia activitat. Com ningú no és impedit per cap altre. Que tot és opinió.
 
 ### 12.9
 
@@ -1915,7 +1915,7 @@ Quant és de ridícul i estrany el qui s'admira de qualsevol cosa de les que suc
 
 ### 12.14
 
-O bé la necessitat del destí i un ordre inamovible, o bé una providència aplacable, o bé un caos sense govern ni director. Si hi ha una necessitat inamovible, per qué resisteixes? Si hi ha una providència susceptible de ser aplacada, fes-te digne de l'ajuda divina. Si hi ha un caos sense govern, alegra't que en mig d'un naufragi tal tu tinguis en tu mateix una ment rectora. I si el naufragi t'arrossega, que arrossegui el cosset, l'hàlit i les altres coses; car la ment no l'arrossegues.
+O bé la necessitat del destí i un ordre inamovible, o bé una providència aplacable, o bé un caos sense govern ni director. Si hi ha una necessitat inamovible, per què resisteixes? Si hi ha una providència susceptible de ser aplacada, fes-te digne de l'ajuda divina. Si hi ha un caos sense govern, alegra't que en mig d'un naufragi tal tu tinguis en tu mateix una ment rectora. I si el naufragi t'arrossega, que arrossegui el cosset, l'hàlit i les altres coses; car la ment no l'arrossegues.
 
 ### 12.15
 
@@ -1935,7 +1935,7 @@ Que el teu impuls sigui sempre a veure què és allò en si mateix que genera la
 
 ### 12.19
 
-Adona't d'una vegada que tens en tu quelcom de millor i de més diví que els que et generen les passions i els que et manegen com una titella. Quèés ara la meva ment? Por? Sospita? Desig? Alguna altra cosa semblant?
+Adona't d'una vegada que tens en tu quelcom de millor i de més diví que els que et generen les passions i els que et manegen com una titella. Què és ara la meva ment? Por? Sospita? Desig? Alguna altra cosa semblant?
 
 ### 12.20
 
@@ -1955,7 +1955,7 @@ Una acció qualsevol que cessa en el moment oportú no pateix cap mal per haver 
 
 ### 12.24
 
-Tres coses cal tenir a mà: en allò que fas, que no ho facis a la lleugera ni d'una altra manera que no sigui com la Justícia mateixa hauria actuat; en les coses exteriors que succeeixen, que o bé és per atzar o bé per providència, i que no cal retreure a l'atzar ni queixar-se de la providència. Segon, qué és cada cosa des de la llavor fins a l'animació i des de l'animació fins al retorn de l'ànima, i de quins elements és la composició i en quins és la dissolució. Tercer, si de sobte t'elevessis i contemplessis les coses humanes i la seva diversitat, que les menysprearies veient al mateix temps quant és gran allò que les envolta, entre éssers de l'aire i de l'èter; i que tantes vegades com t'elevessis, veuràs el mateix: la uniformitat, la curta durada. I sobre tot això, la vanitat.
+Tres coses cal tenir a mà: en allò que fas, que no ho facis a la lleugera ni d'una altra manera que no sigui com la Justícia mateixa hauria actuat; en les coses exteriors que succeeixen, que o bé és per atzar o bé per providència, i que no cal retreure a l'atzar ni queixar-se de la providència. Segon, què és cada cosa des de la llavor fins a l'animació i des de l'animació fins al retorn de l'ànima, i de quins elements és la composició i en quins és la dissolució. Tercer, si de sobte t'elevessis i contemplessis les coses humanes i la seva diversitat, que les menysprearies veient al mateix temps quant és gran allò que les envolta, entre éssers de l'aire i de l'èter; i que tantes vegades com t'elevessis, veuràs el mateix: la uniformitat, la curta durada. I sobre tot això, la vanitat.
 
 ### 12.25
 
@@ -1975,7 +1975,7 @@ Als qui pregunten: "Però on has vist els déus o com has copsat que existeixen 
 
 ### 12.29
 
-La salvació de la vida consisteix a veure a fons cada cosa, qué n'és el material i qué la causa; fer les coses justes amb tota l'ànima i dir la veritat. Què resta sinó gaudir de la vida encadenant bé rere bé, sense deixar cap interval, per petit que sigui?
+La salvació de la vida consisteix a veure a fons cada cosa, què n'és el material i què la causa; fer les coses justes amb tota l'ànima i dir la veritat. Què resta sinó gaudir de la vida encadenant bé rere bé, sense deixar cap interval, per petit que sigui?
 
 ### 12.30
 
@@ -1983,7 +1983,7 @@ Una sola llum de sol, tot i que la separin parets, muntanyes i milers d'altres o
 
 ### 12.31
 
-Quèés allò que desitges? Continuar respirant? Sentir? Tenir impuls? Créixer? Cessar de nou? Fer servir la veu? Pensar? Quin d'aquests et sembla digne de desig? Si cada un d'ells és fàcil de menysprear, avança fins a l'últim: seguir la raó i el déu. Però és contradictori honrar aquestes coses i afligir-se si per causa de la mort algú en serà privat.
+Què és allò que desitges? Continuar respirant? Sentir? Tenir impuls? Créixer? Cessar de nou? Fer servir la veu? Pensar? Quin d'aquests et sembla digne de desig? Si cada un d'ells és fàcil de menysprear, avança fins a l'últim: seguir la raó i el déu. Però és contradictori honrar aquestes coses i afligir-se si per causa de la mort algú en serà privat.
 
 ### 12.32
 
@@ -2003,7 +2003,7 @@ Per al qui solament el que és oportú és bo, i per al qui donar més accions c
 
 ### 12.36
 
-Home, has estat ciutadà d'aquesta gran ciutat. Quèt'importa si ho has estat cinc anys o tres? Perquè el que és conforme a la llei és igual per a cadascun. Quèhi ha, doncs, de terrible si et fa sortir de la ciutat no un tirà ni un jutge injust, sinó la naturalesa que t'hi va introduir? Com si un general alliberés de l'escena un actor còmic. "Però jo no he representat els cinc actes, sinó solament tres." "Molt bé dit; però en la vida, tres actes és el drama sencer." Car el fi el fixa aquell que en el seu moment va ser causa de la composició, i ara de la dissolució. Tu no n'ets la causa de cap dels dos. Marxa, doncs, seré; perquè el qui et fa marxar és seré.
+Home, has estat ciutadà d'aquesta gran ciutat. Què t'importa si ho has estat cinc anys o tres? Perquè el que és conforme a la llei és igual per a cadascun. Quèhi ha, doncs, de terrible si et fa sortir de la ciutat no un tirà ni un jutge injust, sinó la naturalesa que t'hi va introduir? Com si un general alliberés de l'escena un actor còmic. "Però jo no he representat els cinc actes, sinó solament tres." "Molt bé dit; però en la vida, tres actes és el drama sencer." Car el fi el fixa aquell que en el seu moment va ser causa de la composició, i ara de la dissolució. Tu no n'ets la causa de cap dels dos. Marxa, doncs, seré; perquè el qui et fa marxar és seré.
 
 ---
 

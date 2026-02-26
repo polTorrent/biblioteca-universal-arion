@@ -55,8 +55,8 @@
         "perseus",
         "gutenberg"
       ],
-      "status": "pending",
-      "notes": "Obra llarga, bona prova per chunking"
+      "status": "done",
+      "notes": "Traducció completa: 12 llibres, 487 seccions, glossari 30 termes, 38 notes. Qualitat 8/10."
     },
     {
       "autor": "Kafka",
