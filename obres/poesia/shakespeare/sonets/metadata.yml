@@ -9,14 +9,13 @@ obra:
   llengua_original: anglès
   genere: poesia
   subgenere: sonet
-  descripcio: 'Selecció de deu sonets de William Shakespeare, publicats originalment
-    el 1609 en l''edició Quarto. Els 154 sonets exploren temes com l''amor, la bellesa,
+  descripcio: >-
+    Selecció de deu sonets de William Shakespeare, publicats originalment
+    el 1609 en l'edició Quarto. Els 154 sonets exploren temes com l'amor, la bellesa,
     la mortalitat, el pas del temps i el poder immortalitzador de la poesia. Aquesta
     selecció inclou els sonets 18, 29, 30, 55, 73, 116, 130, 138, 141 i 154, que representen
-    la diversitat temàtica i formal del conjunt: des de l''elogi idealitzat del Fair
+    la diversitat temàtica i formal del conjunt: des de l'elogi idealitzat del Fair
     Youth fins a la passió turmentada de la Dark Lady.
-
-    '
   font_original: 'Project Gutenberg, EBook #1041 / Quarto 1609'
   domini_public: true
   temes:
