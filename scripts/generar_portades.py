@@ -1,208 +1,334 @@
 #!/usr/bin/env python3
-"""
-Genera portades per a totes les obres que no en tenen.
-Utilitza l'agent portadista amb Venice.ai.
+"""Genera portades amb Venice AI per a obres validades.
+
+Cerca obres amb fitxer `.validated`, llegeix metadata.yml i genera
+una portada artística amb l'agent portadista si no en té.
 
 Ús:
-    python scripts/generar_portades.py                 # Genera portades per obres sense
-    python scripts/generar_portades.py --all           # Regenera totes les portades
-    python scripts/generar_portades.py --obra plato/criton  # Genera per una obra específica
+    # Generar portades per totes les obres validades sense portada
+    python3 scripts/generar_portades.py
+
+    # Forçar regeneració de totes les portades (obres validades)
+    python3 scripts/generar_portades.py --force
+
+    # Generar portada per una obra concreta
+    python3 scripts/generar_portades.py --obra filosofia/seneca/epistola-1
+
+    # Dry run (mostrar què es generaria)
+    python3 scripts/generar_portades.py --dry-run
+
+    # Llistar obres validades sense portada
+    python3 scripts/generar_portades.py --list
 """
 
 import argparse
 import os
+import shutil
 import sys
 from pathlib import Path
 
-# ═══════════════════════════════════════════════════════════════════════════════
-# OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
-# Això ha d'anar ABANS d'importar els agents
-# ═══════════════════════════════════════════════════════════════════════════════
+# CLAUDECODE=1 per usar subscripció (cost €0)
 os.environ["CLAUDECODE"] = "1"
 
-# Afegir el directori arrel al path
 ROOT = Path(__file__).parent.parent
 sys.path.insert(0, str(ROOT))
 
 try:
     import yaml
 except ImportError:
-    print("❌ PyYAML no instal·lat. Executa: pip install PyYAML")
+    print("PyYAML no instal·lat. Executa: pip install PyYAML")
     sys.exit(1)
 
-
-def get_genere_from_metadata(metadata: dict) -> str:
-    """Determina el gènere literari a partir del metadata."""
-    obra = metadata.get('obra', {})
-    llengua = obra.get('llengua_original', '').lower()
-    descripcio = obra.get('descripcio', '').lower()
-    temes = metadata.get('temes', [])
-
-    # Mapeig per llengua/tema
-    if 'sànscrit' in llengua or 'sanscrit' in llengua:
-        return 'SAG'  # Sagrat
-    if 'grec' in llengua and ('filosof' in descripcio or 'plató' in descripcio.lower()):
-        return 'FIL'  # Filosofia
-    if 'llatí' in llengua or 'estoic' in descripcio:
-        return 'FIL'
-    if 'alemany' in llengua and 'filosof' in descripcio:
-        return 'FIL'
-    if 'japonès' in llengua or 'japó' in descripcio:
-        return 'ORI'  # Oriental
-    if any('poesia' in str(t).lower() or 'poètic' in str(t).lower() for t in temes):
-        return 'POE'  # Poesia
-    if any('teatre' in str(t).lower() or 'drama' in str(t).lower() for t in temes):
-        return 'TEA'  # Teatre
-    if 'narrativa' in str(ROOT / 'obres').lower() or 'conte' in descripcio or 'novel' in descripcio:
-        return 'NOV'  # Novel·la/Narrativa
-
-    return 'FIL'  # Per defecte filosofia
+from agents.portadista import AgentPortadista, PortadistaConfig
+from agents.venice_client import VeniceError
 
 
-def find_obres_without_portada(obres_dir: Path) -> list[Path]:
-    """Troba totes les obres sense portada."""
-    obres_sense_portada = []
+def carregar_metadata(obra_dir: Path) -> dict | None:
+    """Carrega metadata.yml d'una obra.
 
-    for metadata_file in obres_dir.rglob('metadata.yml'):
-        obra_dir = metadata_file.parent
+    Args:
+        obra_dir: Directori de l'obra.
 
-        # Buscar portada existent
-        has_portada = any(
-            (obra_dir / f'portada.{ext}').exists()
-            for ext in ['png', 'jpg', 'jpeg']
-        )
-
-        if not has_portada:
-            obres_sense_portada.append(obra_dir)
-
-    return obres_sense_portada
+    Returns:
+        Dict amb les dades o None si no existeix.
+    """
+    meta_path = obra_dir / "metadata.yml"
+    if not meta_path.exists():
+        return None
+    with open(meta_path, encoding="utf-8") as f:
+        return yaml.safe_load(f)
 
 
-def generate_portada(obra_dir: Path, force: bool = False) -> bool:
-    """Genera una portada per a una obra utilitzant l'agent portadista."""
-    portada_path = obra_dir / 'portada.png'
+def determinar_genere(metadata: dict, obra_dir: Path) -> str:
+    """Determina el gènere literari per al portadista.
 
+    Args:
+        metadata: Dades de metadata.yml.
+        obra_dir: Directori de l'obra (per deduir del path).
+
+    Returns:
+        Codi de gènere (FIL, POE, NOV, SAG, ORI, TEA, EPO).
+    """
+    obra = metadata.get("obra", {})
+    genere_meta = obra.get("genere", "").lower()
+    llengua = obra.get("llengua_original", "").lower()
+
+    # Mapeig directe del camp genere del metadata
+    mapa_genere = {
+        "filosofia": "FIL",
+        "poesia": "POE",
+        "narrativa": "NOV",
+        "teatre": "TEA",
+        "oriental": "ORI",
+        "epopeia": "EPO",
+    }
+
+    if genere_meta in mapa_genere:
+        return mapa_genere[genere_meta]
+
+    # Deduir del path (obres/CATEGORIA/autor/obra)
+    parts = obra_dir.relative_to(ROOT / "obres").parts if obra_dir.is_relative_to(ROOT / "obres") else ()
+    if parts:
+        categoria = parts[0].lower()
+        if categoria in mapa_genere:
+            return mapa_genere[categoria]
+
+    # Deduir de la llengua
+    if "sànscrit" in llengua or "sanscrit" in llengua:
+        return "SAG"
+    if "japonès" in llengua or "xinès" in llengua:
+        return "ORI"
+
+    return "FIL"
+
+
+def preparar_metadata_portadista(metadata: dict, obra_dir: Path) -> dict:
+    """Prepara el diccionari de metadades per l'agent portadista.
+
+    Args:
+        metadata: Dades crues de metadata.yml.
+        obra_dir: Directori de l'obra.
+
+    Returns:
+        Dict amb format esperat per AgentPortadista.crear_prompt().
+    """
+    obra = metadata.get("obra", {})
+    return {
+        "titol": obra.get("titol", obra_dir.name),
+        "autor": obra.get("autor", obra_dir.parent.name),
+        "genere": determinar_genere(metadata, obra_dir),
+        "temes": obra.get("temes", []),
+        "descripcio": obra.get("descripcio", ""),
+    }
+
+
+def trobar_obres_validades(base_dir: Path) -> list[Path]:
+    """Troba totes les obres amb fitxer .validated.
+
+    Args:
+        base_dir: Directori base d'obres (normalment obres/).
+
+    Returns:
+        Llista de directoris d'obres validades, ordenats.
+    """
+    return sorted(p.parent for p in base_dir.rglob(".validated"))
+
+
+def copiar_a_web(portada_path: Path, obra_dir: Path) -> Path | None:
+    """Copia la portada al directori web/assets/portades/.
+
+    Args:
+        portada_path: Camí de la portada generada.
+        obra_dir: Directori de l'obra.
+
+    Returns:
+        Camí de destí o None si falla.
+    """
+    web_portades = ROOT / "web" / "assets" / "portades"
+    web_portades.mkdir(parents=True, exist_ok=True)
+    slug = f"{obra_dir.parent.name}-{obra_dir.name}"
+    web_path = web_portades / f"{slug}-portada.png"
+    try:
+        shutil.copy2(portada_path, web_path)
+        return web_path
+    except OSError:
+        return None
+
+
+def generar_portada(
+    obra_dir: Path,
+    agent: AgentPortadista,
+    force: bool = False,
+    dry_run: bool = False,
+) -> bool:
+    """Genera la portada per una obra validada.
+
+    Args:
+        obra_dir: Directori de l'obra.
+        agent: Agent portadista inicialitzat.
+        force: Regenerar encara que ja existeixi.
+        dry_run: Només mostrar què es faria.
+
+    Returns:
+        True si s'ha generat correctament.
+    """
+    portada_path = obra_dir / "portada.png"
+
+    # Comprovar si ja existeix
     if portada_path.exists() and not force:
-        print(f"   ⏭️  {obra_dir.name}: ja té portada")
+        print(f"  Ja te portada: {obra_dir.relative_to(ROOT)}")
         return False
 
     # Carregar metadata
-    metadata_file = obra_dir / 'metadata.yml'
-    if not metadata_file.exists():
-        print(f"   ❌ {obra_dir.name}: no té metadata.yml")
+    metadata = carregar_metadata(obra_dir)
+    if not metadata:
+        print(f"  Sense metadata.yml: {obra_dir.relative_to(ROOT)}")
         return False
 
-    with open(metadata_file, 'r', encoding='utf-8') as f:
-        metadata = yaml.safe_load(f) or {}
+    meta_portadista = preparar_metadata_portadista(metadata, obra_dir)
+    titol = meta_portadista["titol"]
+    genere = meta_portadista["genere"]
 
-    obra = metadata.get('obra', {})
-    titol = obra.get('titol', obra_dir.name)
-    autor = obra.get('autor', obra_dir.parent.name)
-    genere = get_genere_from_metadata(metadata)
+    if dry_run:
+        prompt_result = agent.crear_prompt(meta_portadista)
+        print(f"  [DRY RUN] {titol} ({genere})")
+        print(f"    Simbol: {prompt_result['simbol']}")
+        print(f"    Raonament: {prompt_result['raonament']}")
+        return False
 
-    print(f"   📕 Generant portada per: {titol} ({genere})")
+    print(f"  Generant portada per: {titol} ({genere})...")
 
     try:
-        from agents.portadista import generar_portada_obra
-        import shutil
+        portada_bytes = agent.generar_portada(meta_portadista)
+        portada_path.write_bytes(portada_bytes)
+        size_kb = len(portada_bytes) / 1024
+        print(f"  Portada guardada: {portada_path.relative_to(ROOT)} ({size_kb:.0f} KB)")
 
-        # Obtenir temes del metadata
-        temes = metadata.get('metadata_original', {}).get('tags', [])
-        descripcio = metadata.get('obra', {}).get('descripcio', '')
+        # Copiar a web/assets/portades/
+        web_path = copiar_a_web(portada_path, obra_dir)
+        if web_path:
+            print(f"  Copiada a: {web_path.relative_to(ROOT)}")
 
-        # Generar portada
-        generar_portada_obra(
-            titol=titol,
-            autor=autor,
-            genere=genere,
-            temes=temes[:5] if temes else [],
-            descripcio=descripcio,
-            output_path=portada_path,
-        )
-
-        # Copiar també a web/assets/portades/ per al build
-        web_portades = ROOT / 'web' / 'assets' / 'portades'
-        web_portades.mkdir(parents=True, exist_ok=True)
-        slug = f"{obra_dir.parent.name}-{obra_dir.name}"
-        web_path = web_portades / f"{slug}-portada.png"
-        shutil.copy(portada_path, web_path)
-
-        print(f"   ✅ Portada generada: {portada_path}")
-        print(f"   ✅ Copiada a: {web_path}")
         return True
 
-    except ImportError as e:
-        print(f"   ❌ No es pot importar l'agent portadista: {e}")
-        print("      Assegura't que tens les dependències instal·lades.")
+    except VeniceError as e:
+        print(f"  Error Venice per {titol}: {e}")
         return False
     except Exception as e:
-        print(f"   ❌ Error: {e}")
-        import traceback
-        traceback.print_exc()
+        print(f"  Error inesperat per {titol}: {e}")
         return False
 
 
-def main():
-    parser = argparse.ArgumentParser(description='Genera portades per a les obres')
-    parser.add_argument('--all', action='store_true', help='Regenera totes les portades')
-    parser.add_argument('--obra', type=str, help='Genera per una obra específica (ex: plato/criton)')
-    parser.add_argument('--list', action='store_true', help='Llista obres sense portada')
+def main() -> None:
+    """Punt d'entrada principal."""
+    parser = argparse.ArgumentParser(
+        description="Genera portades amb Venice AI per a obres validades.",
+    )
+    parser.add_argument(
+        "--obra",
+        type=str,
+        help="Genera per una obra concreta (ex: filosofia/seneca/epistola-1).",
+    )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Regenerar portades encara que ja existeixin.",
+    )
+    parser.add_argument(
+        "--dry-run",
+        action="store_true",
+        help="Mostrar que es generaria sense executar.",
+    )
+    parser.add_argument(
+        "--list",
+        action="store_true",
+        help="Llistar obres validades sense portada.",
+    )
+
     args = parser.parse_args()
 
-    obres_dir = ROOT / 'obres'
+    obres_dir = ROOT / "obres"
 
-    print("═" * 50)
-    print("GENERADOR DE PORTADES")
-    print("═" * 50)
+    print("=" * 55)
+    print("GENERADOR DE PORTADES — Biblioteca Universal Arion")
+    print("=" * 55)
     print()
 
     if args.list:
-        obres = find_obres_without_portada(obres_dir)
-        print(f"Obres sense portada ({len(obres)}):")
-        for obra in obres:
-            print(f"  - {obra.parent.name}/{obra.name}")
+        obres = trobar_obres_validades(obres_dir)
+        sense_portada = [o for o in obres if not (o / "portada.png").exists()]
+        print(f"Obres validades sense portada ({len(sense_portada)}/{len(obres)}):")
+        for obra in sense_portada:
+            meta = carregar_metadata(obra)
+            titol = meta.get("obra", {}).get("titol", obra.name) if meta else obra.name
+            print(f"  - {obra.relative_to(obres_dir)} ({titol})")
+        if not sense_portada:
+            print("  Totes les obres validades tenen portada!")
         return
 
+    # Inicialitzar agent portadista
+    agent: AgentPortadista | None = None
+    if not args.dry_run:
+        try:
+            agent = AgentPortadista(portadista_config=PortadistaConfig())
+            if not agent.venice:
+                print("Error: Venice client no disponible. Configura VENICE_API_KEY a .env")
+                sys.exit(1)
+        except Exception as e:
+            print(f"Error inicialitzant agent portadista: {e}")
+            sys.exit(1)
+    else:
+        # Dry run no necessita Venice
+        try:
+            agent = AgentPortadista(portadista_config=PortadistaConfig())
+        except Exception:
+            # Si falla per manca de Venice, creem amb venice=None (ok per dry run)
+            agent = AgentPortadista.__new__(AgentPortadista)
+            agent.portadista_config = PortadistaConfig()
+            agent.venice = None
+
+    # Determinar obres a processar
     if args.obra:
-        # Generar per una obra específica
         obra_path = obres_dir / args.obra
         if not obra_path.exists():
             # Buscar recursivament
-            for metadata_file in obres_dir.rglob('metadata.yml'):
-                if args.obra in str(metadata_file):
-                    obra_path = metadata_file.parent
+            for meta_file in obres_dir.rglob("metadata.yml"):
+                if args.obra in str(meta_file.relative_to(obres_dir)):
+                    obra_path = meta_file.parent
                     break
-
-        if obra_path.exists():
-            generate_portada(obra_path, force=args.all)
-        else:
-            print(f"❌ Obra no trobada: {args.obra}")
-        return
-
-    # Generar per totes les obres sense portada (o totes si --all)
-    if args.all:
-        obres = list(obres_dir.rglob('metadata.yml'))
-        obres = [m.parent for m in obres]
+        if not obra_path.exists():
+            print(f"Obra no trobada: {args.obra}")
+            sys.exit(1)
+        obres = [obra_path]
     else:
-        obres = find_obres_without_portada(obres_dir)
+        obres = trobar_obres_validades(obres_dir)
 
     if not obres:
-        print("✅ Totes les obres tenen portada!")
+        print("No s'han trobat obres validades.")
         return
 
-    print(f"Generant portades per a {len(obres)} obres...")
-    print()
+    print(f"Obres a processar: {len(obres)}")
+    print("-" * 40)
 
-    success = 0
-    for obra in obres:
-        if generate_portada(obra, force=args.all):
-            success += 1
+    generades = 0
+    errors = 0
 
-    print()
-    print("═" * 50)
-    print(f"✅ Portades generades: {success}/{len(obres)}")
-    print("═" * 50)
+    for obra_dir in obres:
+        rel = obra_dir.relative_to(ROOT)
+        print(f"\n{rel}:")
+        try:
+            if generar_portada(obra_dir, agent, force=args.force, dry_run=args.dry_run):
+                generades += 1
+        except Exception as e:
+            print(f"  Error inesperat: {e}")
+            errors += 1
+
+    print(f"\n{'=' * 40}")
+    print(f"Portades generades: {generades}")
+    if errors:
+        print(f"Errors: {errors}")
+    print("=" * 40)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()
