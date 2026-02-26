@@ -37,6 +37,10 @@
       {
         "timestamp": 1772122811.1274612,
         "result": "created"
+      },
+      {
+        "timestamp": 1772130013.015486,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -57,6 +61,10 @@
       },
       {
         "timestamp": 1772122811.2351806,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772130013.126479,
         "result": "created"
       }
     ],
@@ -87,6 +95,10 @@
       {
         "timestamp": 1772126411.6355853,
         "result": "created"
+      },
+      {
+        "timestamp": 1772130013.2479408,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -111,6 +123,10 @@
       },
       {
         "timestamp": 1772126411.7459388,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772130013.3738956,
         "result": "created"
       }
     ],
@@ -147,6 +163,15 @@
     "events": [
       {
         "timestamp": 1772126411.367177,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_10-sonets": {
+    "events": [
+      {
+        "timestamp": 1772130013.4851809,
         "result": "created"
       }
     ],
