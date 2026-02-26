@@ -27,11 +27,11 @@ quan en versos eterns creixes amb el temps:
 Quan, en desgràcia amb la fortuna i els ulls dels homes,
 tot sol ploro el meu estat de proscrit,
 i pertorbo el cel sord amb els meus crits vans,[T]
-i em miro a mi mateix i malaeïxo la meva sort,
+i em miro a mi mateix i maleeixo la meva sort,
 desitjant assemblar-me a un de més ric en esperança,
 amb les faccions d'aquell, com aquell altre d'amics voltat,
 cobejant l'art d'aquest home i l'abast d'aquell,
-amb allò que més gaudio el menys content;
+amb allò que més gaudeixo el menys content;
 però en aquests pensaments, gairebé menyspreant-me,
 per ventura penso en tu, i aleshores el meu estat,
 com l'alosa a trenc d'alba que s'alça
@@ -144,7 +144,7 @@ i l'edat enamorada no vol que li comptin els anys:
 ## Sonet 141[^10]
 
 De veres, no t'estimo amb els meus ulls,
-perquè ells hi noten mil errors en tu;
+perquè ells hi noten mil errors;
 sinó que és el meu cor qui estima allò que ells menyspreen,
 el qual, contra tot el que veu, s'obstina a adorar.
 Ni les meves orelles es delecten amb el to de la teva veu;

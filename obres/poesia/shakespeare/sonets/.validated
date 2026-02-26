@@ -1,0 +1,41 @@
+data_validacio: 2026-02-26
+puntuacio_global: 8.5
+validador: Claude (supervisió automàtica)
+
+puntuacions:
+  qualitat_catala: 7.5
+  fidelitat_original: 8.5
+  glossari: 9.0
+  format: 9.0
+  metadata: 8.5
+  notes_critiques: 9.5
+
+resum: >
+  Traducció de qualitat notable amb un registre literari elevat i coherent.
+  Notes crítiques excel·lents amb contextualització erudita. Glossari
+  consistent i ben documentat. Tres errors concrets a corregir.
+
+errors_a_corregir:
+  - fitxer: traduccio.md
+    linia: 30
+    actual: "malaeïxo"
+    correcte: "maleeixo"
+    motiu: "Forma incorrecta del verb 'maleir' (incoatiu: maleeixo)"
+
+  - fitxer: traduccio.md
+    linia: 34
+    actual: "gaudio"
+    correcte: "gaudeixo"
+    motiu: "Forma inexistent del verb 'gaudir' (incoatiu: gaudeixo)"
+
+  - fitxer: traduccio.md
+    linia: 147
+    actual: "perquè ells hi noten mil errors en tu"
+    correcte: "perquè ells hi noten mil errors"
+    motiu: "Pleonasme: 'hi' i 'en tu' són redundants"
+
+observacions:
+  - "Pèrdua parcial del joc de paraules 'lie' (mentir/jeure) al Sonet 138 — difícil de mantenir en català"
+  - "Bon registre literari: ús de 'car', 'jec', 'perceps', 'ombrívola'"
+  - "Notes crítiques de molt alta qualitat amb referències a Horaci, Ovidi, Petrarca, Proust"
+  - "Trailing whitespace a la descripció de metadata.yml (menor)"
