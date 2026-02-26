@@ -499,6 +499,42 @@ REPORT
     log "📋 Report generat a $REPORT_FILE"
 }
 
+# ── 9. ⭐ Salut OpenClaw (diari) ──────────────────────────────────────────────
+check_openclaw_health() {
+    log "🔧 Salut OpenClaw..."
+
+    local IMPROVE_SCRIPT="$PROJECT/scripts/improve-openclaw.sh"
+    [ ! -f "$IMPROVE_SCRIPT" ] && { log "   improve-openclaw.sh no trobat"; return; }
+
+    # Guardar timestamp de l'última execució
+    local LAST_RUN_FILE="$TASKS_DIR/.improve-openclaw-last-run"
+
+    # Comprovar si ja s'ha executat avui
+    if [ -f "$LAST_RUN_FILE" ]; then
+        local last_run_date
+        last_run_date=$(cat "$LAST_RUN_FILE" 2>/dev/null)
+        local today
+        today=$(date +%Y-%m-%d)
+        if [ "$last_run_date" = "$today" ]; then
+            log "   Ja executat avui ($today). Saltant."
+            return
+        fi
+    fi
+
+    # Comprovar que no hi hagi ja massa tasques improve-openclaw pendents
+    local improve_pending
+    improve_pending=$(grep -rl "improve-openclaw" "$TASKS_DIR/pending/" "$TASKS_DIR/running/" 2>/dev/null | wc -l)
+    if [ "$improve_pending" -ge 2 ]; then
+        log "   Ja hi ha $improve_pending tasques improve-openclaw pendents. Saltant."
+        return
+    fi
+
+    # Executar l'anàlisi
+    bash "$IMPROVE_SCRIPT" 2>/dev/null
+    date +%Y-%m-%d > "$LAST_RUN_FILE"
+    log "   Anàlisi OpenClaw completada"
+}
+
 # =============================================================================
 # MAIN
 # =============================================================================
@@ -531,7 +567,8 @@ else
     check_code_reviews       # 5. Code reviews
     check_tests              # 6. Tests
     check_weekly_maintenance # 7. Manteniment
-    rotate_done              # 8. Neteja
+    check_openclaw_health    # 8. Salut OpenClaw (diari)
+    rotate_done              # 9. Neteja
 fi
 
 PENDING_FINAL=$(count_pending)
