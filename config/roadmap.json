@@ -1,0 +1,37 @@
+[
+  {
+    "id": "portades",
+    "desc": "Generar portades amb Venice AI per obres validades",
+    "priority": 1,
+    "status": "pending",
+    "created_at": "2026-02-26"
+  },
+  {
+    "id": "epub",
+    "desc": "Generar EPUB descarregable per cada obra validada",
+    "priority": 2,
+    "status": "pending",
+    "created_at": "2026-02-26"
+  },
+  {
+    "id": "search",
+    "desc": "Afegir cercador a la web (cerca per títol, autor, categoria)",
+    "priority": 3,
+    "status": "pending",
+    "created_at": "2026-02-26"
+  },
+  {
+    "id": "retrats",
+    "desc": "Retrats d'autors generats amb Venice AI per la web",
+    "priority": 4,
+    "status": "pending",
+    "created_at": "2026-02-26"
+  },
+  {
+    "id": "rss",
+    "desc": "Feed RSS de noves traduccions publicades",
+    "priority": 5,
+    "status": "pending",
+    "created_at": "2026-02-26"
+  }
+]

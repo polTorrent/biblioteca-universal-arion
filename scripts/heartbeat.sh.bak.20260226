@@ -1,12 +1,8 @@
 #!/bin/bash
 # =============================================================================
-# heartbeat.sh v5 — Generador intel·ligent de tasques AMB SUPERVISIÓ + BRAIN
+# heartbeat.sh v3 — Generador intel·ligent de tasques AMB SUPERVISIÓ
 # =============================================================================
-# Millores v5 sobre v4:
-#   - Integració amb system-brain.sh (cervell intel·ligent)
-#   - Deduplicació de tasques via brain_check_duplicate
-#   - Propostes intel·ligents, evolució, web health, roadmap (diaris)
-# Millores v3-v4:
+# Millores v3 sobre v2:
 #   - Tasques de supervisió post-traducció (qualitat, format, web)
 #   - Cicle complet: traducció → supervisió → correcció → publicació
 #   - Detecció d'obres traduïdes sense validar
@@ -23,17 +19,6 @@ QUEUE="$PROJECT/config/obra-queue.json"
 LOG="$HOME/claude-worker.log"
 MAX_PENDING=5
 MIN_DIEM_RESERVE=2
-
-# ── Carregar System Brain (deduplicació + funcions intel·ligents) ────────────
-BRAIN_SCRIPT="$PROJECT/scripts/system-brain.sh"
-if [ -f "$BRAIN_SCRIPT" ]; then
-    # Exportar variables perquè el brain les hereti
-    export PROJECT TASKS_DIR TASK_MANAGER QUEUE LOG
-    source "$BRAIN_SCRIPT"
-    BRAIN_LOADED=true
-else
-    BRAIN_LOADED=false
-fi
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [HEARTBEAT] $1" | tee -a "$LOG"; }
@@ -56,19 +41,6 @@ add_task() {
     local instruction="$2"
     if [ "$(count_pending)" -ge "$MAX_PENDING" ]; then
         return 1
-    fi
-    # Deduplicació via brain (si disponible)
-    if [ "$BRAIN_LOADED" = true ]; then
-        # Extreure objecte de la instrucció (primer argument significatiu)
-        local object
-        object=$(echo "$instruction" | grep -oP "(?<='|')[^'\"]+(?='|')" | head -1)
-        [ -z "$object" ] && object=$(echo "$instruction" | head -c 60 | tr ' ' '-')
-        if ! brain_check_duplicate "$type" "$object"; then
-            return 1
-        fi
-        local key
-        key=$(_task_key "$type" "$object")
-        _record_task "$key" "created"
     fi
     bash "$TASK_MANAGER" add "$type" "$instruction" 2>/dev/null
     log "   ➕ [$type]: $(echo "$instruction" | head -c 80)..."
@@ -567,8 +539,7 @@ check_openclaw_health() {
 # MAIN
 # =============================================================================
 log "═══════════════════════════════════════════════════"
-log "💓 HEARTBEAT v5 iniciat (amb supervisió + brain)"
-[ "$BRAIN_LOADED" = true ] && log "🧠 System Brain carregat" || log "⚠️ System Brain NO disponible"
+log "💓 HEARTBEAT v4 iniciat (amb supervisió)"
 
 check_diem || exit 0
 # check_worker  # DESACTIVAT — interfereix amb traduccions llargues
@@ -597,14 +568,10 @@ else
     check_tests              # 6. Tests
     check_weekly_maintenance # 7. Manteniment
     check_openclaw_health    # 8. Salut OpenClaw (diari)
-    # 9. System Brain — funcions diàries (propostes, evolució, web, roadmap)
-    if [ "$BRAIN_LOADED" = true ]; then
-        run_daily
-    fi
-    rotate_done              # 10. Neteja
+    rotate_done              # 9. Neteja
 fi
 
 PENDING_FINAL=$(count_pending)
 generate_report
-log "💓 HEARTBEAT v5 completat. Cua: $PENDING → $PENDING_FINAL pendents"
+log "💓 HEARTBEAT v4 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"
