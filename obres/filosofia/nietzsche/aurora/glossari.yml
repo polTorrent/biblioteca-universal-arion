@@ -114,6 +114,36 @@ termes:
     traduccio: "crec perquè és absurd"
     notes: "Atribuïda a Tertul·lià. Mantinguda en llatí al text."
 
+  - original: "Moral"
+    transliteracio: "Moral"
+    traduccio: "moral"
+    notes: "Moral com a fenomen concret. Nietzsche distingeix Moral (la moral) de Sittlichkeit (moralitat com a sistema)."
+
+  - original: "Verführung"
+    transliteracio: "Verführung"
+    traduccio: "seducció"
+    notes: "Seducció, temptació. La moral com a 'gran mestra de la seducció' (Pròleg)."
+
+  - original: "Vernünftigkeit"
+    transliteracio: "Vernünftigkeit"
+    traduccio: "racionalitat"
+    notes: "Racionalitat, raonabilitat. Diferent de Vernunft (raó): Vernünftigkeit és la qualitat de ser racional."
+
+  - original: "Geist"
+    transliteracio: "Geist"
+    traduccio: "esperit"
+    notes: "Esperit, ment. Concepte ampli que abasta intel·lecte, ànima i caràcter."
+
+  - original: "Trieb"
+    transliteracio: "Trieb"
+    traduccio: "instint"
+    notes: "Instint, impuls. Força motriu preconscient. Plural: Triebe."
+
+  - original: "Auszeichnung"
+    transliteracio: "Auszeichnung"
+    traduccio: "distinció"
+    notes: "Distinció, excel·lència. L'impuls de distingir-se com a base de la moralitat (aforisme 30)."
+
   - original: "deus absconditus"
     transliteracio: "deus absconditus"
     traduccio: "Déu amagat"
