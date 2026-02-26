@@ -1,0 +1,48 @@
+{
+  "sessio_id": "william-shakespeare-sonets-(selecció)-2026-02-26",
+  "obra": {
+    "autor": "William Shakespeare",
+    "titol": "Sonets (selecció)",
+    "llengua": "anglès"
+  },
+  "timestamps": {
+    "inici": "2026-02-26T02:08:32.238965",
+    "ultima_activitat": "2026-02-26T02:10:34.581045"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 5,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[02:10:34] Error chunk 1: [Errno 32] Broken pipe",
+    "[02:10:34] Error chunk 2: [Errno 32] Broken pipe",
+    "[02:10:34] Error chunk 3: [Errno 32] Broken pipe",
+    "[02:10:34] Error chunk 4: [Errno 32] Broken pipe",
+    "[02:10:34] Error chunk 5: [Errno 32] Broken pipe",
+    "[02:10:34] Error fatal: [Errno 32] Broken pipe"
+  ],
+  "warnings": [
+    "[02:10:34] Error anotació: [Errno 32] Broken pipe"
+  ]
+}
