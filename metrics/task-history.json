@@ -140,6 +140,10 @@
       {
         "timestamp": 1772131831.3702457,
         "result": "created"
+      },
+      {
+        "timestamp": 1772132403.0816712,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -184,6 +188,10 @@
     "events": [
       {
         "timestamp": 1772130013.4851809,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772132403.1973717,
         "result": "created"
       }
     ],
