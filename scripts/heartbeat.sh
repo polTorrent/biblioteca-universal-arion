@@ -35,6 +35,60 @@ else
     BRAIN_LOADED=false
 fi
 
+# ── Control del bot OpenClaw ─────────────────────────────────────────────────
+# El gateway corre com a systemd user service.
+# Parem abans de tocar ~/.openclaw/, reiniciem després.
+# Si brain està carregat, reutilitzem les seves funcions.
+# Si no, en tenim de pròpies.
+OPENCLAW_SERVICE="openclaw-gateway.service"
+HEARTBEAT_STOPPED_OPENCLAW=false
+
+_heartbeat_stop_openclaw() {
+    # Si el brain ja l'ha parat, no repetir
+    if [ "$BRAIN_LOADED" = true ] && [ "$BRAIN_STOPPED_OPENCLAW" = true ]; then
+        return
+    fi
+    if [ "$HEARTBEAT_STOPPED_OPENCLAW" = true ]; then
+        return
+    fi
+    if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+        log "🛑 Parant OpenClaw abans de tocar ~/.openclaw/..."
+        systemctl --user stop "$OPENCLAW_SERVICE" 2>/dev/null
+        local tries=0
+        while systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
+            sleep 1
+            tries=$((tries + 1))
+        done
+        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+            log "   ⚠️ Servei encara actiu després de 10s. Forçant kill..."
+            systemctl --user kill "$OPENCLAW_SERVICE" 2>/dev/null
+            sleep 2
+        fi
+        HEARTBEAT_STOPPED_OPENCLAW=true
+        log "   ✅ OpenClaw aturat"
+    else
+        log "   ℹ️ OpenClaw ja estava aturat"
+    fi
+}
+
+_heartbeat_start_openclaw() {
+    if [ "$HEARTBEAT_STOPPED_OPENCLAW" = true ]; then
+        log "🚀 Reiniciant OpenClaw..."
+        systemctl --user start "$OPENCLAW_SERVICE" 2>/dev/null
+        local tries=0
+        while ! systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
+            sleep 1
+            tries=$((tries + 1))
+        done
+        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+            log "   ✅ OpenClaw reiniciat correctament"
+        else
+            log "   ❌ ERROR: OpenClaw no ha arrencat! Comprova amb: systemctl --user status $OPENCLAW_SERVICE"
+        fi
+        HEARTBEAT_STOPPED_OPENCLAW=false
+    fi
+}
+
 # ── Helpers ───────────────────────────────────────────────────────────────────
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [HEARTBEAT] $1" | tee -a "$LOG"; }
 
@@ -580,10 +634,15 @@ FAILED=$(ls -1 "$TASKS_DIR/failed/"*.json 2>/dev/null | wc -l)
 
 log "📊 Estat: $PENDING pendents, $RUNNING running, $DONE_TODAY done avui, $FAILED fallides"
 
-# SEMPRE executar (no depenen de cua):
-update_queue_status          # 0. Actualitzar estat
-check_failed                 # 1. Recuperar fallides
-bash "$PROJECT/scripts/fix-structure.sh"  # 1.5 Auto-correcció estructura
+# ── Fase 0: Lectura (no toca ~/.openclaw/) ──────────────────────────────────
+update_queue_status          # 0. Actualitzar obra-queue.json (dins $PROJECT)
+bash "$PROJECT/scripts/fix-structure.sh"  # 0.5 Auto-correcció estructura (dins $PROJECT)
+
+# ── Fase 1: Escriptura a ~/.openclaw/ — parar bot ──────────────────────────
+_heartbeat_stop_openclaw
+trap '_heartbeat_start_openclaw' EXIT
+
+check_failed                 # 1. Recuperar fallides (mou fitxers dins tasks/)
 check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPRE corre
 
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
@@ -596,8 +655,8 @@ else
     check_code_reviews       # 5. Code reviews
     check_tests              # 6. Tests
     check_weekly_maintenance # 7. Manteniment
-    check_openclaw_health    # 8. Salut OpenClaw (diari)
-    # 9. System Brain — funcions diàries (propostes, evolució, web, roadmap)
+    check_openclaw_health    # 8. Salut OpenClaw (ja no cal stop/start intern)
+    # 9. System Brain — funcions diàries (ja no cal stop/start intern)
     if [ "$BRAIN_LOADED" = true ]; then
         run_daily
     fi
@@ -605,6 +664,11 @@ else
 fi
 
 PENDING_FINAL=$(count_pending)
-generate_report
+generate_report              # Escriu last_heartbeat_report.md a ~/.openclaw/
+
+# ── Fase 2: Reiniciar bot ──────────────────────────────────────────────────
+_heartbeat_start_openclaw
+trap - EXIT
+
 log "💓 HEARTBEAT v5 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"
