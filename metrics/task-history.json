@@ -96,6 +96,10 @@
       {
         "timestamp": 1772122811.4528465,
         "result": "created"
+      },
+      {
+        "timestamp": 1772124611.7766116,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -113,6 +117,15 @@
     "events": [
       {
         "timestamp": 1772106890.1134598,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_aurora": {
+    "events": [
+      {
+        "timestamp": 1772124611.5552092,
         "result": "created"
       }
     ],
