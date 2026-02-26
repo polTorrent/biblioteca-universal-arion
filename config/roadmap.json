@@ -12,8 +12,9 @@
     "id": "epub",
     "desc": "Generar EPUB descarregable per cada obra validada",
     "priority": 2,
-    "status": "pending",
-    "created_at": "2026-02-26"
+    "status": "in_progress",
+    "created_at": "2026-02-26",
+    "started_at": "2026-02-27"
   },
   {
     "id": "search",

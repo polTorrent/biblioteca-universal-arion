@@ -15,6 +15,7 @@ Utilitza Jinja2 real per a templates
 import argparse
 import re
 import shutil
+import sys
 from datetime import datetime
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -39,6 +40,10 @@ try:
 except ImportError:
     print("❌ Error: python-markdown no instal·lat. Executa: pip install markdown")
     exit(1)
+
+# Afegir directori arrel al path per importar utils
+sys.path.insert(0, str(Path(__file__).parent.parent))
+from utils.epub_generator import GeneradorEPUB
 
 
 class MarkdownProcessor:
@@ -401,6 +406,9 @@ class BuildSystem:
         # Construir pàgines de mecenatge
         self.build_mecenatge()
 
+        # Generar EPUBs per obres validades
+        self.build_epubs()
+
         print()
         print("═" * 60)
         print(f"✅ Construcció completada!")
@@ -618,6 +626,8 @@ class BuildSystem:
             'font_original': edicio_base.get('titol'),
             'font_url': edicio_base.get('url'),
             'contribuidors': loader.metadata.get('contribuidors', []),
+            'epub_url': f"epub/{slug}.epub" if (obra_path / '.validated').exists() else None,
+            '_obra_path': obra_path,
         }
 
         # Renderitzar template
@@ -764,6 +774,38 @@ class BuildSystem:
 
         # Generar fitxes de micromecenatge per obres en crowdfunding
         self.build_micromecenatge_pages()
+
+    def build_epubs(self):
+        """Genera EPUBs per a totes les obres validades."""
+        print()
+        print("📕 Generant EPUBs...")
+
+        epub_dir = self.docs_dir / 'epub'
+        epub_dir.mkdir(exist_ok=True)
+
+        count = 0
+        for obra in self.obres:
+            obra_path = obra.get('_obra_path')
+            if not obra_path:
+                continue
+
+            # Només obres validades (tenen .validated)
+            if not (obra_path / '.validated').exists():
+                continue
+
+            slug = obra['slug']
+            output_path = epub_dir / f"{slug}.epub"
+
+            try:
+                gen = GeneradorEPUB(obra_path)
+                gen.generar(output_path)
+                obra['epub_url'] = f"epub/{slug}.epub"
+                count += 1
+                print(f"   ✅ {slug}.epub")
+            except Exception as e:
+                print(f"   ❌ {slug}: {e}")
+
+        print(f"   📕 {count} EPUBs generats")
 
     def build_micromecenatge_pages(self):
         """Genera pàgines individuals per cada projecte de micromecenatge."""

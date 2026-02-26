@@ -15,5 +15,22 @@
       "errors": 0
     },
     "tendencia": "primera_entrada"
+  },
+  {
+    "date": "2026-02-27",
+    "obres_total": 21,
+    "obres_validades": 8,
+    "obres_needs_fix": 0,
+    "traduccions": 21,
+    "done_today": 0,
+    "errors_24h": 33,
+    "scripts_millorats": 24,
+    "uptime_worker": true,
+    "delta": {
+      "obres": 0,
+      "validades": 3,
+      "errors": 33
+    },
+    "tendencia": "millora"
   }
 ]

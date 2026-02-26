@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-26",
+  "updated_at": "2026-02-27",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -68,7 +68,7 @@
       "fonts": [
         "gutenberg"
       ],
-      "status": "done",
+      "status": "pending",
       "notes": "Traduïda i validada (7.98/10). 3 capítols, glossari 9 termes, 11 notes."
     },
     {
@@ -81,7 +81,7 @@
       "fonts": [
         "ctext"
       ],
-      "status": "done",
+      "status": "pending",
       "notes": "Traducció completa: 81 capítols, glossari 14 termes, 24 notes erudites. Qualitat 8.0/10."
     },
     {
