@@ -14,14 +14,14 @@ obra:
     tradició moral occidental. Escrita a Gènova i publicada el 1881, amb un pròleg
     afegit el 1886. Conté 575 aforismes organitzats en cinc llibres. Aquesta traducció
     inclou el Pròleg i el Llibre Primer (aforismes 1-96).
-  notes: "Traducció del Pròleg (Vorrede) i Llibre Primer (Erstes Buch, aforismes 1-96)"
-seccions: 97
+  notes: "Traducció parcial: Pròleg complet + Llibre Primer aforismes 1-24 (de 96)"
+seccions: 25
 estadistiques:
   paraules_original: 22000
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_traduccio: 6862
+  notes: 11
+  termes_glossari: 23
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: "necessita_correccions"
+  qualitat: 6.5
+  data_revisio: "2026-02-26"
