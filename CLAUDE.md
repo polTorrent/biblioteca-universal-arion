@@ -1,220 +1,302 @@
-# Biblioteca Universal Arion - Context per Claude Code
+# CLAUDE.md — Biblioteca Universal Arion
 
-## ⚠️ AUTENTICACIÓ - MODEL DUAL
+## 1. Visió del projecte
 
-### 🤖 Claude Code (desenvolupament intern)
-**SEMPRE usa subscripció Claude Pro/Max, MAI crèdits API.**
+Biblioteca oberta de traduccions al **català** d'obres clàssiques universals (filosofia, narrativa, poesia, textos orientals). Edició crítica bilingüe amb glossari, notes i context acadèmic.
 
-- Verificar abans de res: `claude auth status`
-- Ha de dir "Authenticated via Claude subscription"
-- Si demana API key → NO introduir-la → usar `claude auth login`
-- **Motiu:** Cost fix mensual ($20-200) vs pay-per-token
+- **Traduccions**: CC BY-SA 4.0
+- **Codi**: MIT
+- **Originals**: domini públic
+- **Web**: GitHub Pages via `docs/` (branch `gh-pages`) — build amb `python3 scripts/build.py`
+- **URL web**: https://poltorrent.github.io/editorial-classica/
+- **Python**: >= 3.11
 
-### 🌐 Usuaris web (mode on-demand)
-**Usen crèdits API només quan paguen per traduccions.**
-
-- API d'Anthropic activada amb `use_api=True` en AgentConfig
-- Cost cobrat a l'usuari per traducció (pay-per-token)
-- **Motiu:** Model de negoci sostenible per usuaris externs
-
-### 📊 Detecció automàtica
-Els agents detecten automàticament el context:
-- `CLAUDECODE=1` → Subscripció (cost fix)
-- Context web → API (usuari paga)
-
-### ✅ ESTAT ACTUAL
-**Implementació completa!** Els agents detecten automàticament el context i utilitzen:
-- 🤖 **Claude CLI** quan CLAUDECODE=1 (subscripció, cost €0)
-- 🌐 **Anthropic API** en context web (usuaris paguen)
-
-**Testat i validat:**
-- ✅ Mode subscripció funcional amb cost €0
-- ✅ Parsing correcte de resposta JSON del CLI
-- ✅ Fallback a API quan es requereix
-
-### 🚨 REGLA OBLIGATÒRIA PER SCRIPTS DE TRADUCCIÓ
-
-**TOTS els scripts que cridin agents de traducció HAN d'establir `CLAUDECODE=1` al principi del fitxer, ABANS d'importar els agents.**
-
-```python
-#!/usr/bin/env python3
-"""Descripció de l'script..."""
-
-import os
-import sys
-
-# ═══════════════════════════════════════════════════════════════════════════════
-# OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
-# Això ha d'anar ABANS d'importar els agents
-# ═══════════════════════════════════════════════════════════════════════════════
-os.environ["CLAUDECODE"] = "1"
-
-# Ara ja es poden importar els agents
-from agents.v2 import PipelineV2
-# ...
-```
-
-**Per què és important:**
-- Sense `CLAUDECODE=1`, els agents usen l'API i consumeixen crèdits ($$$)
-- Amb `CLAUDECODE=1`, els agents usen el CLI amb subscripció (cost €0)
-- **Mai oblidar aquesta línia en scripts nous de traducció!**
-
-## Projecte
-Biblioteca oberta i col·laborativa de traduccions al català d'obres clàssiques universals.
-
-## Idioma de treball
-Català sempre per documentació, codi i comunicació.
-
-## Model col·laboratiu
-- Traduccions inicials generades per IA
-- Perfeccionament via GitHub (correccions, notes, discussions)
-- Actualització mensual de la web
-- Comunitat coordinada via Discord
-
-## Pipeline de Traducció
+## 2. Estructura del projecte
 
 ```
-0. VERIFICAR AUTENTICACIÓ (subscripció, no API!)
-   ↓
-1. investigació → 2. glossari → 3. chunking → 4. traducció → 5. anotació → 6. format web
-   ↓
-7. POST-PROCESSAMENT AUTOMÀTIC:
-   - Formatar capítols (original i traducció) amb ## I, ## II, etc.
-   - Validar/corregir glossari YAML
-   - Generar portada si no existeix
-   - Actualitzar metadata.yml
-   - Executar build per publicar a la web
+biblioteca-universal-arion/
+├── agents/                  # Agents de traducció
+│   ├── base_agent.py        # BaseAgent abstracte (CLI + API)
+│   ├── traductor_classic.py, corrector_normatiu.py, glossarista.py...  # Agents V1
+│   ├── venice_client.py     # Client Venice/GLM
+│   ├── v2/                  # Pipeline V2
+│   │   ├── pipeline_v2.py   # Orquestrador principal
+│   │   ├── models.py        # Models Pydantic (AnalisiPreTraduccio, AvaluacioFidelitat...)
+│   │   ├── analitzador_pre.py
+│   │   ├── traductor_enriquit.py
+│   │   ├── avaluador_dimensional.py
+│   │   └── refinador_iteratiu.py
+│   └── utils/               # Utilitats dels agents
+├── core/                    # Nucli del sistema
+│   ├── estat_pipeline.py    # Persistència d'estat (reprendre traduccions)
+│   ├── memoria_contextual.py # Coherència entre chunks
+│   └── validador_final.py   # Validació final de qualitat
+├── utils/                   # Utilitats generals
+│   ├── validators.py        # Validació de text d'entrada
+│   ├── corrector_linguistic.py
+│   ├── detector_calcs.py    # Detecció de calcs lingüístics
+│   ├── checkpointer.py      # Checkpoint/resume de traduccions
+│   ├── logger.py, metrics.py, dashboard.py
+│   └── epub_generator.py
+├── scripts/                 # Scripts operatius
+│   ├── heartbeat.sh         # Generador de tasques (cron cada 2h)
+│   ├── claude-worker-mini.sh # Worker que processa tasques
+│   ├── task-manager.sh      # CLI gestió cua de tasques
+│   ├── build.py             # Generador HTML (Jinja2 + Markdown)
+│   ├── traduir_pipeline.py  # Script per llançar traduccions
+│   ├── traduir_*.py         # Scripts específics per obra
+│   └── fix-structure.sh     # Auto-correcció d'estructura d'obres
+├── obres/                   # Traduccions (per categoria/autor/obra)
+│   ├── filosofia/           # Epictetus, Plató, Sèneca, Marc Aureli, Schopenhauer...
+│   ├── narrativa/           # Kafka, Txèkhov, Poe, Melville, Akutagawa...
+│   ├── oriental/            # Laozi (Tao Te King), Sutra del Cor
+│   └── poesia/              # Shakespeare (Sonets)
+├── config/
+│   └── obra-queue.json      # Cua d'obres a traduir (heartbeat la llegeix)
+├── web/                     # Templates i assets per la web
+│   ├── templates/           # Jinja2: index.html, obra.html, base.html...
+│   ├── css/                 # styles.css, obra.css...
+│   └── js/                  # app.js, mecenatge.js...
+├── docs/                    # Output HTML (GitHub Pages) — NO editar manualment
+├── data/                    # JSON de catàleg i mecenatge
+├── tests/                   # Tests pytest
+├── dashboard/               # Dashboard web de monitorització
+├── community/               # CONTRIBUTING.md
+├── .github/workflows/build.yml  # CI: build + deploy a gh-pages
+└── pyproject.toml           # Dependències i config (ruff, pytest)
 ```
 
-### Anotació Crítica Automàtica
+## 3. Sistema autònom
 
-El pipeline ara genera automàticament notes crítiques amb l'`AnotadorCriticAgent`:
-- **Configurable:** `generar_anotacions=True/False` a `ConfiguracioPipelineV2`
-- **Densitat ajustable:** `densitat_notes="minima"/"normal"/"exhaustiva"`
-- **Tipus de notes:** històriques, culturals, intertextuals, terminològiques, geogràfiques, prosopogràfiques
-- **Sortida:** Fitxer `notes.md` generat automàticament al directori de l'obra
+### Heartbeat (`scripts/heartbeat.sh`)
+- **Cron**: cada 2 hores (`0 */2 * * *`)
+- Analitza obres pendents a `config/obra-queue.json`
+- Genera tasques JSON a `~/.openclaw/workspace/tasks/pending/`
+- Supervisió: detecta traduccions sense validar, crea tasques de revisió
+- Auto-fix: detecta `.needs_fix` i crea tasques correctores
+- Comprova sincronització web, code reviews, tests
+- Rotació de tasques completades (+7 dies)
+- Genera report a `~/.openclaw/workspace/last_heartbeat_report.md`
+- Comprova saldo DIEM abans de generar tasques
 
-### Script Template per Noves Traduccions
+### Cua de tasques (`~/.openclaw/workspace/tasks/`)
+```
+tasks/
+├── pending/    # Tasques esperant execució (JSON)
+├── running/    # Tasca en execució
+├── done/       # Completades (es roten cada 7 dies)
+└── failed/     # Fallides (es reintenten fins a 2 cops)
+```
 
-Usa `scripts/traduir_template.py` com a base per noves traduccions:
-1. Copia el fitxer amb un nom descriptiu
-2. Modifica les variables de configuració
-3. Executa l'script
+Tipus de tasques: `translate`, `supervision`, `fix`, `code-review`, `test`, `publish`, `maintenance`
 
-El post-processament és automàtic i inclou publicació a la web.
+### Worker (`scripts/claude-worker-mini.sh`)
+- Processa tasques en loop infinit dins tmux (sessió `worker`)
+- Crida `claude -p` amb `setsid -w` i `unset CLAUDECODE` (evita nested sessions)
+- **Retry**: fins a 3 intents per tasca amb backoff exponencial
+- **Rate limit**: pausa 30 min si detectat
+- **Detecció de plans**: si Claude genera un pla sense executar, reintenta amb instruccions reforçades
+- **Validació post-execució**: comprova que s'han creat/modificat fitxers realment
+- **Safety**: màx 100 tasques/dia, pausa d'emergència si 5 errors consecutius
+- **Timeout**: 30 min per tasca
+- **Auto-commit + push** després de cada tasca exitosa
+- Lockfile a `tasks/worker.lock`
 
-**Agents V2 (traducció):**
-- `AnalitzadorPreTraduccio` - Anàlisi del text abans de traduir
-- `TraductorEnriquit` - Traducció amb context ric
-- `AvaluadorDimensional` - Avaluació en 3 dimensions (fidelitat, veu, fluïdesa)
-- `RefinadorIteratiu` - Millora iterativa fins aprovació
-
-**Agents auxiliars:**
-- `GlossaristaAgent` - Crear glossaris terminològics
-- `ChunkerAgent` - Dividir textos llargs en fragments
-- `AnotadorCriticAgent` - Notes erudites (ara integrat automàticament al pipeline)
-- `CercadorFontsAgent` - Cercar textos de domini públic
-- `AgentRetratista` - Generar retrats d'autors
-- `AgentPortadista` - Generar portades d'obres
-- `WebPublisher` - Publicar la biblioteca web
-
-**Pipeline V2:** `agents/v2/pipeline_v2.py` - Orquestració completa
-
-**Dashboard de monitorització:** `dashboard/`
-- S'obre automàticament al navegador quan comença una traducció
-- Mostra progrés en temps real, logs, mètriques i gràfiques
-- Ús: `from dashboard import start_dashboard, dashboard`
-
-## Sistema de Portades (IMPORTANT)
-
-**Cada obra NECESSITA una portada.** El build genera placeholders automàticament, però són temporals.
-
-### Fitxers de portada
-- Nom: `portada.png` (o `.jpg`)
-- Ubicació: directori de l'obra (`obres/autor/obra/portada.png`)
-- Format: PNG/JPG, proporció 2:3 (ex: 400x600px)
-
-### Generar portades
+### Task Manager (`scripts/task-manager.sh`)
 ```bash
-# Veure obres sense portada real
-python scripts/generar_portades.py --list
-
-# Generar portades amb IA (requereix Venice.ai)
-python scripts/generar_portades.py
-
-# Regenerar totes
-python scripts/generar_portades.py --all
+bash scripts/task-manager.sh add <type> <instruction>
+bash scripts/task-manager.sh translate <autor> <títol> [llengua] [categoria]
+bash scripts/task-manager.sh list          # Llistar cua
+bash scripts/task-manager.sh status        # Estat worker
+bash scripts/task-manager.sh cancel <id>   # Cancel·lar tasca
+bash scripts/task-manager.sh clear [done|failed|pending|all]
+bash scripts/task-manager.sh review-all    # Code review de tot
 ```
 
-### Build i portades
-El `build.py` fa:
-1. Copia `portada.png` de cada obra a `docs/assets/portades/{autor}-{obra}-portada.png`
-2. Si no existeix portada, **genera un placeholder automàtic**
-3. Mai desapareixeran portades - sempre hi haurà almenys un placeholder
+## 4. Integració OpenClaw
 
-### Agent Portadista
-- Ubicació: `agents/portadista.py`
-- Genera portades minimalistes amb Venice.ai
-- Paletes per gènere: FIL, POE, TEA, NOV, SAG, ORI, EPO
+- **Bot**: WhatsApp/Discord via GLM5 (Venice AI)
+- **Skill**: `claude-code` — permet al bot executar tasques al repositori
+- **Fitxers OpenClaw**: `~/.openclaw/workspace/`
+  - `SOUL.md`: personalitat del bot
+  - `HEARTBEAT.md`: estat del sistema
+  - `skills/`: skills disponibles
+- **DIEM**: moneda interna per pagar tasques — heartbeat comprova saldo mínim (2)
+- **Venice client**: `agents/venice_client.py`
 
-## Estructura traduccions
+## 5. Convencions de codi
+
+- **Python 3.11+**, type hints obligatoris
+- **Pydantic v2** per models de dades (BaseModel, Field)
+- **Agents**: hereten de `BaseAgent` (`agents/base_agent.py`)
+  - Implementar `system_prompt` (property abstracta)
+  - Opcionalment sobreescriure `process()`
+  - Mode subscripció (CLI) vs API (SDK Anthropic)
+- **Model per defecte**: `claude-sonnet-4-20250514`
+- **Linter**: ruff (line-length=100, target py311)
+- **Logging**: `utils/logger.py` — `AgentLogger`
+- **Retry**: `tenacity` amb exponential backoff
+- **Idioma**: codi en català (noms de classes, variables, comentaris, commits)
+- **Dependències**: anthropic, pydantic, rich, python-dotenv, tenacity, httpx
+- **Build web**: jinja2, pyyaml, markdown
+- **IMPORTANT**: `unset CLAUDECODE` (o netejar de l'env) quan es crida `claude` des d'un subprocess per evitar error "nested sessions"
+
+## 6. Pipeline de traducció V2
+
 ```
-obres/[categoria]/[autor]/[obra]/
-├── fragments/        # Per col·laboració GitHub
-├── discussions/      # Discussions crítiques
-├── metadata.yml      # Metadades de l'obra
-├── original.md       # Text original
-├── traduccio.md      # Traducció amb marques [^N] per notes i [T] per glossari
-├── notes.md          # Notes erudites (format ## [N] Títol)
-├── glossari.yml      # Termes amb definicions
-└── portada.png       # Portada de l'obra
+Investigador → Glossarista → Chunker → [per chunk: Anàlisi → Traducció → Avaluació → Refinament] → Fusió → Validació
 ```
 
-## Sistema de Notes i Glossari
+### Agents V2 (`agents/v2/`)
+1. **AnalitzadorPreTraduccio** — Analitza to, estil, paraules clau, recursos literaris, reptes
+2. **TraductorEnriquit** — Tradueix amb context enriquit (anàlisi + glossari + few-shot)
+3. **AvaluadorDimensional** — Avalua 3 dimensions:
+   - Fidelitat (pes 25%): omissions, addicions, terminologia
+   - Veu de l'autor (pes 40%): registre, to, ritme, idiosincràsies
+   - Fluïdesa (pes 35%): sintaxi, lèxic, normativa IEC, llegibilitat
+4. **RefinadorIteratiu** — Corregeix segons feedback (màx 1 iteració)
 
-### Notes (`notes.md`)
-- Format: `## [N] Títol de la nota` seguit del contingut
-- Referències al text: `[^1]`, `[^2]`, etc. a `traduccio.md`
-- El build converteix `[^N]` a hipervincles `<sup><a href="#nota-N">[N]</a></sup>`
+### Configuració pipeline (`ConfiguracioPipelineV2`)
+- `llindar_qualitat`: 8.0/10 (global mínim per aprovar)
+- `fer_investigacio`: recerca de context sobre l'autor
+- `habilitar_persistencia`: reprendre traduccions interrompudes
+- `habilitar_dashboard`: monitorització en temps real
 
-### Glossari (`glossari.yml`)
-- Format YAML amb camps: `id`, `grec`, `transliteracio`, `traduccio`, `definicio`
-- Referències al text: `terme[T]` a `traduccio.md`
-- El build converteix `terme[T]` a `<a href="#term-id" class="term">terme</a>`
+### Llançar traducció
+```bash
+# Via script
+python3 scripts/traduir_pipeline.py obres/filosofia/plato/criton/
 
-### Tipus de notes
-[T] Traducció | [L] Literària | [F] Filosòfica | [H] Històrica | [R] Referència | [C] Cultural | [B] Biogràfica
+# Via codi
+from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+pipeline = PipelineV2(config=ConfiguracioPipelineV2())
+resultat = pipeline.traduir(text=text, llengua_origen="grec", autor="Plató", obra="Critó")
+```
 
-## Fitxa d'Obra (UI Web)
+## 7. Estructura d'una obra
 
-### Capçalera
-- Portada, títol, autor, traductor, llengua original, any
+```
+obres/<categoria>/<autor>/<obra>/
+├── metadata.yml              # OBLIGATORI: títol, autor, llengua, revisió, estadístiques
+├── original.md               # Text original (domini públic)
+├── traduccio.md              # Traducció al català
+├── glossari.yml              # Termes clau amb transliteració i traducció
+├── notes.md                  # Notes del traductor (format: ## [n] Títol)
+├── introduccio.md            # Introducció (opcional)
+├── bibliografia.md           # Fonts (opcional)
+├── portada.png               # Portada generada (opcional)
+├── fragments/                # Fragments editables per col·laboració
+├── discussions/              # Discussions crítiques
+├── .validated                # Marca de qualitat aprovada (>= 7/10)
+├── .needs_fix                # Marca de problemes (< 7/10, amb llista)
+├── .fixing                   # En procés de correcció
+├── .pipeline_state.json      # Estat de persistència del pipeline
+└── .memoria_contextual.json  # Memòria entre chunks
+```
 
-### Detalls de traducció (col·lapsable)
-- Estat, qualitat, capítols, paraules, data revisió, font original, contribuïdors
+### metadata.yml (exemple)
+```yaml
+obra:
+  titol: "Enchiridion"
+  titol_original: "Ἐγχειρίδιον"
+  autor: "Epictetus"
+  autor_original: "Ἐπίκτητος"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 125 dC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  descripcio: "Manual pràctic de filosofia estoica..."
+seccions: 5
+estadistiques:
+  paraules_original: 487
+  paraules_traduccio: 512
+  notes: 8
+  termes_glossari: 5
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-01-25"
+```
 
-### Contingut bilingüe
-- Vista: Original | Bilingüe | Traducció
-- Índex de capítols amb navegació
-- Paginació per capítols (← →)
+## 8. Tests
 
-### Notes i Glossari (col·lapsables)
-- Clicar nota/terme → obre secció → scroll → ressaltat
-- "↩ Tornar al text" → col·lapsa → torna a posició de lectura
+```bash
+python3 -m pytest tests/ -v
+```
 
-### Altres funcionalitats
-- Botó "Tornar a dalt" (apareix després de 300px scroll)
-- Sistema de favorits
-- Mode fosc compatible
+Tests existents:
+- `test_validators.py` — validació de text d'entrada
+- `test_corrector_normatiu.py` — correcció lingüística
+- `test_detector_calcs_angles.py` — detecció calcs anglesos
+- `test_checkpointer_recovery.py` — checkpoint/resume
+- `test_debug_agents.py` — debug dels agents
+- `test_metrics.py` — mètriques
+- `test_traductor.py` — traductor
+- `test_plugins_nous.py` — plugins
 
-## Criteris per gènere
-- Filosofia: precisió terminològica
-- Novel·la: veu narrativa
-- Poesia: sentit + ritme
-- Teatre: oralitat
+Config: `pyproject.toml` → `[tool.pytest.ini_options]`, asyncio_mode = "auto"
 
-## Documentació completa
-Consulta `INSTRUCCIONS_CLAUDE_CODE.md` per documentació detallada dels agents i el pipeline.
+## 9. Git i branching
 
-## Contribucions
-Totes les contribucions són benvingudes! Consulta CONTRIBUTING.md per més informació.
+- **Branch principal**: `main`
+- **Deploy**: `gh-pages` (auto via GitHub Actions)
+- **CI**: `.github/workflows/build.yml` — build + deploy a GitHub Pages en cada push a main
+- **Commits**: en català, format descriptiu (`Afegir traduccio...`, `Corregir...`)
+- **Commits automàtics del worker**: prefix `auto: <task_id>`
+- **No hi ha branching strategy** — tot va directe a `main`
+- **Auto-push**: el worker fa push automàtic després de cada tasca
+
+## 10. Seguretat
+
+**MAI accedir, llegir, modificar ni exposar:**
+- `/mnt/c/` — filesystem Windows del host
+- `~/.ssh/` — claus SSH
+- `~/.config/` — configuració personal
+- `.env`, `.env.local`, `secrets.yml`, `api_keys.txt` — secrets
+- `~/.openclaw/workspace/` — no modificar directament (usar task-manager)
+
+**Altres regles:**
+- No cometre fitxers `.env` ni secrets al repo
+- No fer `git push --force`
+- No executar comandes destructives sense confirmació
+- Respectar `.gitignore` (inclou `*.log`, `.env`, `Zone.Identifier`, etc.)
+
+## 11. Comandes ràpides
+
+```bash
+# Build web
+python3 scripts/build.py
+python3 scripts/build.py --clean
+
+# Gestió de tasques
+bash scripts/task-manager.sh list
+bash scripts/task-manager.sh status
+bash scripts/task-manager.sh add translate "Tradueix X de Y"
+
+# Worker
+bash scripts/claude-worker-mini.sh          # Iniciar worker (foreground)
+tmux new-session -d -s worker "cd ~/biblioteca-universal-arion && bash scripts/claude-worker-mini.sh"
+
+# Heartbeat manual
+bash scripts/heartbeat.sh
+
+# Tests
+python3 -m pytest tests/ -v
+
+# Dashboard
+bash dashboard.sh
+
+# Linter
+ruff check agents/ utils/ core/ scripts/
+```
+
+## 12. Problemes coneguts
+
+- **Worker complet (`claude-worker.sh`)**: no funciona — usar `claude-worker-mini.sh`
+- **Nested sessions**: si `CLAUDECODE=1` està definit i es crida `claude` des d'un subprocess, falla. Solució: `unset CLAUDECODE` o netejar env
+- **Rate limits**: el worker pausa 30 min si es detecten. Les traduccions llargues poden trigar
+- **Detecció de plans**: de vegades Claude genera plans en lloc d'executar. El worker v3 ho detecta i reintenta amb instruccions reforçades
+- **Fitxers temporals a l'arrel**: hi ha molts fitxers `.html`, `.txt`, `.py` temporals d'extraccions a l'arrel que s'haurien de netejar (prefixats amb `_` o sense directori propi)
+- **obra-queue.json desactualitzat**: els `status` no reflecteixen l'estat real de totes les obres. El heartbeat intenta actualitzar-lo
+- **Zone.Identifier**: fitxers fantasma de Windows/WSL que s'han de netejar periòdicament
+- **check_worker desactivat**: al heartbeat, `check_worker` està comentat perquè interfereix amb traduccions llargues
