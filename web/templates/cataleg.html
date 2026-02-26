@@ -1,0 +1,141 @@
+{% extends "base.html" %}
+
+{% block title %}Catàleg complet - Biblioteca Arion{% endblock %}
+{% block description %}Catàleg complet de traduccions al català d'obres clàssiques universals. {{ obres|length }} obres disponibles.{% endblock %}
+
+{% block head_extra %}
+<style>
+.cataleg-hero {
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+    text-align: center;
+}
+.cataleg-hero h1 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-3xl);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-sm);
+}
+.cataleg-hero p {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    margin: 0;
+}
+.cataleg-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    margin: var(--spacing-xl) 0 var(--spacing-2xl);
+}
+.filter-btn {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    padding: 6px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.filter-btn:hover, .filter-btn.active {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+}
+.categoria-section {
+    margin-bottom: var(--spacing-3xl);
+}
+.categoria-header {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-border-light);
+    text-transform: capitalize;
+}
+.categoria-header span {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    font-family: var(--font-ui);
+    font-weight: 400;
+    margin-left: var(--spacing-sm);
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="cataleg-hero">
+    <div class="container">
+        <h1>Catàleg d'obres</h1>
+        <p>{{ obres|length }} traduccions al català d'obres clàssiques universals</p>
+
+        <div class="cataleg-filters">
+            <button class="filter-btn active" data-filter="totes">Totes</button>
+            {% for cat in categories %}
+            <button class="filter-btn" data-filter="{{ cat }}">{{ cat|capitalize }}</button>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% for cat in categories %}
+<section class="categoria-section" data-categoria="{{ cat }}">
+    <div class="container">
+        <h2 class="categoria-header">{{ cat|capitalize }}<span>{{ obres_per_cat[cat]|length }} {% if obres_per_cat[cat]|length == 1 %}obra{% else %}obres{% endif %}</span></h2>
+        <div class="works-grid">
+            {% for obra in obres_per_cat[cat] %}
+            <article class="work-card">
+                <div class="work-card-cover">
+                    <a href="{{ base_url }}{{ obra.slug }}.html">
+                        {% if obra.portada_url %}
+                        <img src="{{ base_url }}{{ obra.portada_url }}" alt="Portada de {{ obra.titol }}" loading="lazy">
+                        {% else %}
+                        <div class="work-cover-placeholder" style="width:100px;height:140px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-tertiary);border-radius:var(--radius-sm);font-family:var(--font-titles);font-size:2rem;color:var(--color-accent);">
+                            {{ obra.titol[0] }}
+                        </div>
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="work-card-content">
+                    <h3 class="work-card-title"><a href="{{ base_url }}{{ obra.slug }}.html">{{ obra.titol }}</a></h3>
+                    <p class="work-card-author">{{ obra.autor }}</p>
+                    {% if obra.descripcio %}
+                    <p class="work-card-description">{{ obra.descripcio }}</p>
+                    {% endif %}
+                    <div class="work-card-meta">
+                        <span class="meta-lang">{{ obra.llengua_original }}</span>
+                        {% if obra.any_original %}
+                        <span class="meta-year">{{ obra.any_original }}</span>
+                        {% endif %}
+                        {% if obra.estat %}
+                        <span class="badge badge-{{ obra.estat }}">{{ obra.estat }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const btns = document.querySelectorAll('.filter-btn');
+    const sections = document.querySelectorAll('.categoria-section');
+    btns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            btns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+            const filter = this.dataset.filter;
+            sections.forEach(s => {
+                s.style.display = (filter === 'totes' || s.dataset.categoria === filter) ? '' : 'none';
+            });
+        });
+    });
+});
+</script>
+{% endblock %}

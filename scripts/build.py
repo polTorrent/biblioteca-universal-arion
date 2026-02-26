@@ -395,6 +395,9 @@ class BuildSystem:
         # Construir índex
         self.build_index()
 
+        # Construir catàleg complet
+        self.build_cataleg()
+
         # Construir pàgines de mecenatge
         self.build_mecenatge()
 
@@ -692,6 +695,48 @@ class BuildSystem:
         output_file.write_text(html, encoding='utf-8')
 
         print("   ✅ Índex generat")
+
+    def build_cataleg(self):
+        """Construeix pàgina de catàleg complet."""
+        print()
+        print("📋 Construint catàleg...")
+
+        # Agrupar obres per categoria
+        obres_per_cat: Dict[str, List[Dict]] = {}
+        for obra in self.obres:
+            # Extreure categoria del slug (ex: "filosofia" de path obres/filosofia/...)
+            slug = obra['slug']
+            # El slug és "autor-obra", buscar la categoria real al directori
+            cat = 'altres'
+            for cat_dir in (self.obres_dir).iterdir():
+                if cat_dir.is_dir():
+                    for autor_dir in cat_dir.iterdir():
+                        if autor_dir.is_dir():
+                            for obra_dir in autor_dir.iterdir():
+                                test_slug = f"{autor_dir.name}-{obra_dir.name}"
+                                if test_slug == slug:
+                                    cat = cat_dir.name
+                                    break
+            obres_per_cat.setdefault(cat, []).append(obra)
+
+        # Ordenar categories i obres dins cada categoria
+        categories = sorted(obres_per_cat.keys())
+        for cat in categories:
+            obres_per_cat[cat].sort(key=lambda o: o.get('autor', ''))
+
+        template = self.env.get_template('cataleg.html')
+        html = template.render(
+            base_url='',
+            site_url='https://editorial-classica.cat',
+            active_page='cataleg',
+            obres=self.obres,
+            categories=categories,
+            obres_per_cat=obres_per_cat,
+        )
+
+        output_file = self.docs_dir / 'cataleg.html'
+        output_file.write_text(html, encoding='utf-8')
+        print(f"   ✅ Catàleg generat ({len(self.obres)} obres)")
 
     def build_mecenatge(self):
         """Construeix les pàgines de mecenatge."""
