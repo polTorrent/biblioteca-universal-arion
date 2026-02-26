@@ -1,0 +1,54 @@
+obra:
+  titol: Sonets (selecció)
+  titol_original: Sonnets
+  autor: William Shakespeare
+  autor_original: William Shakespeare
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: 1609
+  any_traduccio: 2026
+  llengua_original: anglès
+  genere: poesia
+  subgenere: sonet
+  descripcio: 'Selecció de deu sonets de William Shakespeare, publicats originalment
+    el 1609 en l''edició Quarto. Els 154 sonets exploren temes com l''amor, la bellesa,
+    la mortalitat, el pas del temps i el poder immortalitzador de la poesia. Aquesta
+    selecció inclou els sonets 18, 29, 30, 55, 73, 116, 130, 138, 141 i 154, que representen
+    la diversitat temàtica i formal del conjunt: des de l''elogi idealitzat del Fair
+    Youth fins a la passió turmentada de la Dark Lady.
+
+    '
+  font_original: 'Project Gutenberg, EBook #1041 / Quarto 1609'
+  domini_public: true
+  temes:
+  - amor
+  - bellesa
+  - mortalitat
+  - pas del temps
+  - poesia i immortalitat
+  - desig
+  - engany i veritat
+  - naturalesa
+  context:
+    tradicio: poesia anglesa renaixentista
+    influencies:
+    - Petrarca
+    - Philip Sidney
+    - Edmund Spenser
+    - Ovidi
+    obres_relacionades:
+    - Canzoniere de Petrarca
+    - Astrophel and Stella de Philip Sidney
+    - Amoretti d'Edmund Spenser
+    - Venus and Adonis de Shakespeare
+  estadistiques:
+    sonets: 10
+    paraules_original: 1400
+    paraules_traduccio: 1550
+    notes: 11
+    termes_glossari: 6
+revisio:
+  estat: traduït
+  data_inici: '2026-02-26'
+  data_revisio: '2026-02-26'
+  qualitat: 7.5
+  requereix_revisio_humana: true

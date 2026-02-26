@@ -1,0 +1,62 @@
+termes:
+  - id: "eye-of-heaven"
+    angles: "eye of heaven"
+    traduccio: "ull del cel"
+    definicio: |
+      Perífrasi per referir-se al sol, habitual en la poesia elisabetiana.
+      Shakespeare l'utilitza al Sonet 18 per establir la comparació entre
+      l'estimat i les forces de la natura, suggerint que fins i tot el sol
+      pot ser excessiu o insuficient, mentre que l'estimat manté una
+      perfecció constant.
+
+  - id: "bootless-cries"
+    angles: "bootless cries"
+    traduccio: "crits vans"
+    definicio: |
+      "Bootless" significa 'inútil, sense profit' en anglès isabelí,
+      derivat de l'antic anglès "bōtlēas" (sense remei). Al Sonet 29,
+      el poeta es lamenta que els seus crits al cel són vans i sense
+      resposta, un topos clàssic de la poesia de queixa amorosa
+      que remunta a les Heroides d'Ovidi.
+
+  - id: "all-oblivious-enmity"
+    angles: "all-oblivious enmity"
+    traduccio: "enemistat de l'oblit"
+    definicio: |
+      Expressió del Sonet 55 que personifica l'oblit com un enemic
+      actiu que intenta esborrar la memòria. Shakespeare contraposa
+      la força destructora del temps i l'oblit al poder preservador
+      de la poesia, un tema central dels seus sonets que enllaça
+      amb la tradició horaciana del "exegi monumentum".
+
+  - id: "bare-ruined-choirs"
+    angles: "bare ruin'd choirs"
+    traduccio: "cors arruïnats i nus"
+    definicio: |
+      Una de les imatges més comentades de Shakespeare (Sonet 73).
+      "Choirs" es refereix tant als cors d'una església (les seccions
+      on cantaven els monjos) com metafòricament als ocells que cantaven
+      a les branques. La imatge evoca les ruïnes dels monestirs dissolts
+      per Enric VIII (1536-1541), establint un paral·lel entre la
+      devastació religiosa i l'envelliment personal.
+
+  - id: "wandering-bark"
+    angles: "wandering bark"
+    traduccio: "barca errant"
+    definicio: |
+      Al Sonet 116, "bark" és un terme poètic per a 'vaixell' (del
+      llatí "barca"). L'amor vertader es compara a l'estrella polar,
+      guia fixa per als navegants perduts. La imatge nàutica era
+      especialment ressonant en l'Anglaterra isabelina, potència
+      marítima que depenia de la navegació astronòmica.
+
+  - id: "seeming-trust"
+    angles: "seeming trust"
+    traduccio: "confiança fingida"
+    definicio: |
+      Al Sonet 138, "seeming trust" descriu la paradoxa central
+      dels sonets de la Dark Lady: l'amor que es basa en la mentida
+      mútua. Ambdós amants fingeixen creure's l'un a l'altre, creant
+      una intimitat construïda sobre l'engany conscient. El joc de
+      paraules amb "lie" (mentir/jeure) al dístic final reforça
+      aquesta ambigüitat moral.
