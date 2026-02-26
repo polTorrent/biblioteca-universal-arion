@@ -1,0 +1,19 @@
+[
+  {
+    "date": "2026-02-26",
+    "obres_total": 21,
+    "obres_validades": 5,
+    "obres_needs_fix": 0,
+    "traduccions": 20,
+    "done_today": 16,
+    "errors_24h": 0,
+    "scripts_millorats": 18,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "primera_entrada"
+  }
+]
