@@ -7,9 +7,9 @@
   },
   "timestamps": {
     "inici": "2026-02-25T17:47:16.912792",
-    "ultima_activitat": "2026-02-25T18:05:23.188658"
+    "ultima_activitat": "2026-02-26T01:43:51.055059"
   },
-  "fase_actual": "anotacio",
+  "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
@@ -29,10 +29,14 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 5.33,
-    "temps_total_min": 18.1
+    "qualitat_mitjana": 5.11,
+    "temps_total_min": 0.0
   },
-  "errors": [],
+  "errors": [
+    "[01:24:13] Error chunk 1: [Errno 32] Broken pipe",
+    "[01:24:13] Error chunk 2: [Errno 32] Broken pipe",
+    "[01:24:13] Error fatal: [Errno 32] Broken pipe"
+  ],
   "warnings": [
     "[17:47:56] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='xinès clàssic', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
   ]
