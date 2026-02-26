@@ -52,7 +52,7 @@ obra:
     termes_glossari: 7
 
 revisio:
-  estat: "revisat"
+  estat: "validat"
   qualitat: 7.5
-  data_revisio: "2026-02-25"
-  requereix_revisio_humana: true
+  data_revisio: "2026-02-26"
+  requereix_revisio_humana: false
