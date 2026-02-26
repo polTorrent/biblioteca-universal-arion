@@ -251,7 +251,7 @@ Doncs bé, Sòcrates, fes-nos cas a nosaltres que t'hem criat: no posis ni els f
 
 Però si te'n vas d'aquesta manera tan vergonyosa, responent a la injustícia amb injustícia i al mal amb mal, violant els teus propis acords i pactes amb nosaltres, i fent mal a qui menys caldria —a tu mateix, als amics, a la pàtria i a nosaltres—, nosaltres t'estarem airades mentre visquis, i allà els nostres germans, les Lleis de l'Hades, no et rebran amb bona disposició, sabent que vas intentar destruir-nos en la mesura que et fos possible. Però que no et convenci Critó de fer el que ell diu més que nosaltres.»
 
-Aquestes paraules, estimat amic Critó, sàpigues que les sento ressona dins meu, tal com els coribants[T] senten les flautes, i aquesta remor d'arguments brunzeix dins meu i em fa impossible escoltar res més.[^13] Però sàpigues que, almenys per ara, si parles en contra d'això, perdràs el temps. Tanmateix, si creus que pots aconseguir alguna cosa més, parla.
+Aquestes paraules, estimat amic Critó, sàpigues que les sento ressonar dins meu, tal com els coribants[T] senten les flautes, i aquesta remor d'arguments brunzeix dins meu i em fa impossible escoltar res més.[^13] Però sàpigues que, almenys per ara, si parles en contra d'això, perdràs el temps. Tanmateix, si creus que pots aconseguir alguna cosa més, parla.
 
 **CRITÓ.** Però, Sòcrates, no tinc res a dir.
 
