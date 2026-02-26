@@ -32,58 +32,6 @@ SKILL_MD="$WORKSPACE/skills/claude-code/SKILL.md"
 CLAUDE_SH="$WORKSPACE/skills/claude-code/scripts/claude.sh"
 HEARTBEAT_REPORT="$WORKSPACE/last_heartbeat_report.md"
 
-# ── Control del bot OpenClaw ─────────────────────────────────────────────────
-# El gateway corre com a systemd user service: openclaw-gateway.service
-# Parem abans de tocar fitxers a ~/.openclaw/, reiniciem després.
-OPENCLAW_SERVICE="openclaw-gateway.service"
-OPENCLAW_STOPPED=false
-
-stop_openclaw() {
-    # Comprovar si el servei està actiu
-    if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
-        log "🛑 Parant OpenClaw ($OPENCLAW_SERVICE)..."
-        systemctl --user stop "$OPENCLAW_SERVICE" 2>/dev/null
-        # Esperar fins que el procés acabi (màx 10s)
-        local tries=0
-        while systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
-            sleep 1
-            tries=$((tries + 1))
-        done
-        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
-            log "   ⚠️ Servei encara actiu després de 10s. Forçant kill..."
-            systemctl --user kill "$OPENCLAW_SERVICE" 2>/dev/null
-            sleep 2
-        fi
-        OPENCLAW_STOPPED=true
-        log "   ✅ OpenClaw aturat"
-    else
-        log "   ℹ️ OpenClaw ja estava aturat"
-        OPENCLAW_STOPPED=false
-    fi
-}
-
-start_openclaw() {
-    # Només reiniciar si l'hem parat nosaltres
-    if [ "$OPENCLAW_STOPPED" = true ]; then
-        log "🚀 Reiniciant OpenClaw ($OPENCLAW_SERVICE)..."
-        systemctl --user start "$OPENCLAW_SERVICE" 2>/dev/null
-        # Esperar que arrenqui (màx 10s)
-        local tries=0
-        while ! systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
-            sleep 1
-            tries=$((tries + 1))
-        done
-        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
-            log "   ✅ OpenClaw reiniciat correctament"
-        else
-            log "   ❌ ERROR: OpenClaw no ha arrencat! Comprova amb: systemctl --user status $OPENCLAW_SERVICE"
-        fi
-        OPENCLAW_STOPPED=false
-    else
-        log "   ℹ️ No cal reiniciar (no l'hem parat nosaltres)"
-    fi
-}
-
 # ── Helpers ───────────────────────────────────────────────────────────────────
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [IMPROVE-OC] $1" | tee -a "$LOG"; }
 
@@ -485,25 +433,13 @@ log "🔧 IMPROVE-OPENCLAW iniciat"
 mkdir -p "$PROPOSALS_DIR" "$(dirname "$METRICS_FILE")"
 mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
 
-# ── Fase 1: Anàlisis de lectura (no toquen ~/.openclaw/) ────────────────────
+# Executar anàlisis
 analyze_openclaw_log
-analyze_failed_tasks
-analyze_heartbeat_report
-
-# ── Fase 2: Anàlisis que poden modificar ~/.openclaw/ ───────────────────────
-# Parar el bot ABANS de tocar fitxers del workspace
-stop_openclaw
-
-# Trap per garantir reinici si l'script falla o s'interromp
-trap 'start_openclaw' EXIT
-
 analyze_skill_md
 analyze_claude_sh
+analyze_failed_tasks
+analyze_heartbeat_report
 analyze_personality_files
-
-# ── Fase 3: Reiniciar el bot ────────────────────────────────────────────────
-start_openclaw
-trap - EXIT  # Netejar trap (ja hem reiniciat)
 
 # Recollir mètriques
 collect_metrics
