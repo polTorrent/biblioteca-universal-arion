@@ -63,6 +63,15 @@
                         <span class="favorit-icon">🤍</span>
                         <span class="favorit-text">Afegir a favorits</span>
                     </button>
+                    {% if obra.epub_url %}
+                    <a href="{{ base_url }}{{ obra.epub_url }}"
+                       class="btn-epub-download"
+                       download
+                       title="Descarregar EPUB">
+                        <span class="epub-icon">📕</span>
+                        <span class="epub-text">EPUB</span>
+                    </a>
+                    {% endif %}
                 </div>
                 {% endif %}
 
