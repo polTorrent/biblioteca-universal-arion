@@ -11,7 +11,7 @@ Et compararé a un dia d'estiu?
 Tu ets més bell i més temperat:
 vents aspres sacsegen els tendres brots de maig,
 i el lloguer de l'estiu té un termini massa breu.
-De vegades l'ull del cel brilla amb massa ardor,[T]
+De vegades l'ull del cel brilla amb massa ardor,
 i sovint la seva tez daurada s'enfosqueix;
 i tota bellesa de la bellesa algun cop declina,
 pel destí o pel curs canviant de la natura despullada;
@@ -26,7 +26,7 @@ quan en versos eterns creixes amb el temps:
 
 Quan, en desgràcia amb la fortuna i els ulls dels homes,
 tot sol ploro el meu estat de proscrit,
-i pertorbo el cel sord amb els meus crits vans,[T]
+i pertorbo el cel sord amb els meus crits vans,
 i em miro a mi mateix i maleeixo la meva sort,
 desitjant assemblar-me a un de més ric en esperança,
 amb les faccions d'aquell, com aquell altre d'amics voltat,
@@ -45,7 +45,7 @@ Quan a les sessions del dolç pensament silenciós
 convoco el record de les coses passades,
 sospiro per la manca de molt del que vaig cercar,
 i amb antics mals renovo el plany pel temps perdut:
-llavors puc negar un ull, no avesat a plorar,
+llavors puc anegar un ull, no avesat al plor,
 pels amics estimats que amaga la nit sense data de la mort,
 i ploro de nou el dolor d'un amor fa temps cancel·lat,
 i gemego la despesa de tantes visions esvaïdes:
@@ -61,12 +61,12 @@ que pago de nou com si no haguessin estat pagats.
 Ni el marbre, ni els monuments daurats
 dels prínceps, sobreviuran a aquesta rima poderosa;
 sinó que tu brillaràs més radiant en aquests versos
-que la pedra sense escombrar, tacada pel temps deixat.
+que la pedra sense escombrar, embrutada pel temps descurat.
 Quan la guerra devastadora tombi les estàtues,
 i les revoltes arrenquin l'obra de la pedra picada,
 ni l'espasa de Mart ni el foc ràpid de la guerra cremaran
 el registre viu de la teva memòria.
-Contra la mort i tota enemistat de l'oblit[T]
+Contra la mort i tota enemistat de l'oblit
 avançaràs; la teva lloança encara trobarà lloc
 fins i tot als ulls de tota la posteritat
 que porti aquest món fins al judici final.
@@ -78,7 +78,7 @@ que porti aquest món fins al judici final.
 Aquella estació de l'any pots veure en mi
 quan les fulles grogues, o cap, o poques, pengen
 d'aquelles branques que tremolen contra el fred,
-cors arruïnats i nus, on poc fa cantaven els ocells dolços.[T]
+cors arruïnats i nus, on poc fa cantaven els ocells dolços.
 En mi veus el crepuscle d'un tal dia
 com el que es fon al ponent després de la posta;
 que a poc a poc la nit negra s'emporta,
@@ -92,13 +92,13 @@ consumit per allò que el va nodrir.
 
 ## Sonet 116[^7]
 
-No admetré impediments
-a la unió d'ànimes vertaderes. L'amor no és amor
-si canvia quan troba alteració,
-o es doblega amb qui es retira per retirar-se:
+No permetré que hi hagi impediments
+a la unió d'ànimes veritables. L'amor no és amor
+si muda quan troba mudança,
+o es doblega amb qui s'aparta per apartar-se:
 oh, no! és una fita inamovible
 que contempla les tempestes i mai no s'estrèmeix;
-és l'estel de tota barca errant,[T]
+és l'estel de tota barca errant,
 el valor del qual es desconeix, tot i que se'n pren l'alçada.
 L'amor no és el bufó del Temps, tot i que llavis rosats i galtes
 cauen dins el cercle de la seva falç corbada;
@@ -136,7 +136,7 @@ simplement dono crèdit a la seva llengua embustera:
 així, d'ambdós costats, la simple veritat es reprimeix.
 Però per què no diu ella que és injusta?
 I per què no dic jo que sóc vell?
-Oh, la millor vestimenta de l'amor és la confiança fingida,[T]
+Oh, la millor vestimenta de l'amor és la confiança fingida,
 i l'edat enamorada no vol que li comptin els anys:
   per això jec amb ella i ella amb mi,
   i en les nostres faltes per mentides ens adulem.
@@ -177,4 +177,4 @@ per als homes malalts; però jo, vassall de la meva estimada,
 
 ---
 
-*Traducció de domini públic.*
+*Traducció CC BY-SA 4.0 — Biblioteca Arion*

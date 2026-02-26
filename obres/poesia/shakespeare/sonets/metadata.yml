@@ -47,8 +47,8 @@ obra:
     notes: 11
     termes_glossari: 6
 revisio:
-  estat: traduït
+  estat: revisat
   data_inici: '2026-02-26'
   data_revisio: '2026-02-26'
-  qualitat: 7.5
+  qualitat: 8.0
   requereix_revisio_humana: true
