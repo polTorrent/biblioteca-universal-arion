@@ -204,7 +204,7 @@ run_task() {
     result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" setsid -w claude -p "$full_instruction" \
         --max-turns 25 \
         --add-dir "$PROJECT_DIR" \
-        --allowedTools "Edit" "Write" \
+        --allowedTools "Read" "Glob" "Grep" "Edit" "Write" \
         "Bash(cat:*)" "Bash(grep:*)" "Bash(ls:*)" "Bash(find:*)" \
         "Bash(python3:*)" "Bash(python:*)" "Bash(pip:*)" "Bash(pip3:*)" \
         "Bash(git add:*)" "Bash(git commit:*)" "Bash(git push:*)" \
