@@ -32,6 +32,57 @@ mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
 # ── Logger ──────────────────────────────────────────────────────────────────
 brain_log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [BRAIN] $1" | tee -a "$LOG"; }
 
+# ── Control del bot OpenClaw ────────────────────────────────────────────────
+# El gateway corre com a systemd user service: openclaw-gateway.service
+# Parem abans de tocar fitxers a ~/.openclaw/, reiniciem després.
+# Guard global per evitar doble stop/start si ja s'ha parat des d'un altre script.
+OPENCLAW_SERVICE="openclaw-gateway.service"
+BRAIN_STOPPED_OPENCLAW=false
+
+_brain_stop_openclaw() {
+    # No parar si ja l'hem parat nosaltres o si un altre script ja ho ha fet
+    if [ "$BRAIN_STOPPED_OPENCLAW" = true ]; then
+        return
+    fi
+    if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+        brain_log "🛑 Parant OpenClaw abans de tocar ~/.openclaw/..."
+        systemctl --user stop "$OPENCLAW_SERVICE" 2>/dev/null
+        local tries=0
+        while systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
+            sleep 1
+            tries=$((tries + 1))
+        done
+        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+            brain_log "   ⚠️ Servei encara actiu després de 10s. Forçant kill..."
+            systemctl --user kill "$OPENCLAW_SERVICE" 2>/dev/null
+            sleep 2
+        fi
+        BRAIN_STOPPED_OPENCLAW=true
+        brain_log "   ✅ OpenClaw aturat"
+    else
+        brain_log "   ℹ️ OpenClaw ja estava aturat"
+    fi
+}
+
+_brain_start_openclaw() {
+    # Només reiniciar si l'hem parat nosaltres
+    if [ "$BRAIN_STOPPED_OPENCLAW" = true ]; then
+        brain_log "🚀 Reiniciant OpenClaw..."
+        systemctl --user start "$OPENCLAW_SERVICE" 2>/dev/null
+        local tries=0
+        while ! systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
+            sleep 1
+            tries=$((tries + 1))
+        done
+        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+            brain_log "   ✅ OpenClaw reiniciat correctament"
+        else
+            brain_log "   ❌ ERROR: OpenClaw no ha arrencat! Comprova amb: systemctl --user status $OPENCLAW_SERVICE"
+        fi
+        BRAIN_STOPPED_OPENCLAW=false
+    fi
+}
+
 # ── Inicialitzar fitxers si no existeixen ───────────────────────────────────
 _init_files() {
     [ ! -f "$TASK_HISTORY" ] && echo '{}' > "$TASK_HISTORY"
@@ -695,12 +746,21 @@ run_daily() {
 
     _init_files
 
+    # Totes les funcions diàries poden crear tasques a ~/.openclaw/workspace/tasks/
+    # Parem el bot, executem, i reiniciem.
+    _brain_stop_openclaw
+    trap '_brain_start_openclaw' EXIT
+
     propose_translations
     check_web_health
     track_evolution
     propose_features
 
     date +%Y-%m-%d > "$LAST_RUN_FILE"
+
+    _brain_start_openclaw
+    trap - EXIT
+
     brain_log "🧠 SYSTEM BRAIN — Execució diària completada"
     brain_log "═══════════════════════════════════════════════════"
 }
@@ -711,28 +771,37 @@ run_daily() {
 # =============================================================================
 # Si s'executa directament (no sourced), processar arguments
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
+    # Funcions que escriuen a ~/.openclaw/ → necessiten stop/start
+    _with_openclaw_guard() {
+        _brain_stop_openclaw
+        trap '_brain_start_openclaw' EXIT
+        "$@"
+        _brain_start_openclaw
+        trap - EXIT
+    }
+
     case "${1:-daily}" in
         daily)
             run_daily
             ;;
         propose-translations|propose_translations)
             _init_files
-            propose_translations
+            _with_openclaw_guard propose_translations
             ;;
         check-web|check_web_health)
             _init_files
-            check_web_health
+            _with_openclaw_guard check_web_health
             ;;
         track-evolution|track_evolution)
             _init_files
-            track_evolution
+            _with_openclaw_guard track_evolution
             ;;
         propose-features|propose_features)
             _init_files
-            propose_features
+            _with_openclaw_guard propose_features
             ;;
         check-duplicate)
-            # Ús: system-brain.sh check-duplicate <type> <object>
+            # Només lectura, no cal stop/start
             _init_files
             if brain_check_duplicate "$2" "$3"; then
                 echo "OK: Es pot crear"
@@ -741,7 +810,7 @@ if [ "${BASH_SOURCE[0]}" = "$0" ]; then
             fi
             ;;
         record-task)
-            # Ús: system-brain.sh record-task <key> <result>
+            # Escriu a metrics/, no a ~/.openclaw/
             _init_files
             _record_task "$2" "$3"
             ;;
