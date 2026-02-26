@@ -1,1 +1,65 @@
-{}
+{
+  "translate_epistola-1": {
+    "events": [
+      {
+        "timestamp": 1772106888.5957232,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_crito": {
+    "events": [
+      {
+        "timestamp": 1772106888.7068615,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_meditacions": {
+    "events": [
+      {
+        "timestamp": 1772106888.8156838,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_la-metamorfosi": {
+    "events": [
+      {
+        "timestamp": 1772106888.925932,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_tao-te-king": {
+    "events": [
+      {
+        "timestamp": 1772106889.0363164,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "publish_web-health": {
+    "events": [
+      {
+        "timestamp": 1772106889.9136355,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "implement-feature_portades": {
+    "events": [
+      {
+        "timestamp": 1772106890.1134598,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  }
+}
