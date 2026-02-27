@@ -126,8 +126,8 @@ def validar_text_entrada(
                 f"El text no sembla ser en {llengua_origen}. Verifica la llengua d'origen."
             ))
 
-    # Caràcters de control (excloent newlines, tabs, etc.)
-    if re.search(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', text):
+    # Caràcters de control (excloent newlines, tabs i NULL que té check propi)
+    if re.search(r'[\x01-\x08\x0b\x0c\x0e-\x1f]', text):
         messages.append((
             SeverityLevel.WARNING,
             "El text conté caràcters de control. Es netejaran automàticament."
@@ -169,8 +169,8 @@ def netejar_text(text: str) -> str:
     # Eliminar caràcters de control (excepte newlines i tabs)
     text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', text)
 
-    # Normalitzar espais múltiples (excepte al principi de línia per preservar indentació)
-    text = re.sub(r'(?<!\n) +', ' ', text)
+    # Normalitzar espais múltiples (preservant indentació a inici de línia)
+    text = re.sub(r'(?<=\S) {2,}', ' ', text)
 
     # Normalitzar salts de línia múltiples (màxim 2)
     text = re.sub(r'\n{3,}', '\n\n', text)
@@ -255,6 +255,13 @@ def validar_metadata(metadata: dict) -> ValidationResult:
         ValidationResult amb els avisos/errors trobats.
     """
     messages: list[tuple[SeverityLevel, str]] = []
+
+    if not isinstance(metadata, dict):
+        messages.append((
+            SeverityLevel.ERROR,
+            f"El metadata ha de ser un diccionari, però és {type(metadata).__name__}."
+        ))
+        return ValidationResult(valid=False, messages=messages)
 
     camps_requerits = ["titol", "autor", "llengua_origen"]
     camps_recomanats = ["any_original", "genere", "estat"]
