@@ -10,7 +10,10 @@
       "categoria": "filosofia",
       "dificultat": 3,
       "paraules_aprox": 5000,
-      "fonts": ["perseus", "gutenberg"],
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
       "status": "done",
       "obra_dir": "obres/filosofia/epictetus/enchiridion",
       "notes": "Traduïda. Completar i verificar."
@@ -22,8 +25,11 @@
       "categoria": "filosofia",
       "dificultat": 2,
       "paraules_aprox": 2000,
-      "fonts": ["latin_library", "gutenberg"],
-      "status": "validated",
+      "fonts": [
+        "latin_library",
+        "gutenberg"
+      ],
+      "status": "pending",
       "obra_dir": "obres/filosofia/seneca/epistola-1",
       "notes": "Traduïda i validada (.validated existent)."
     },
@@ -34,8 +40,10 @@
       "categoria": "filosofia",
       "dificultat": 3,
       "paraules_aprox": 8000,
-      "fonts": ["perseus"],
-      "status": "validated",
+      "fonts": [
+        "perseus"
+      ],
+      "status": "pending",
       "obra_dir": "obres/filosofia/plato/criton",
       "notes": "Traduïda i validada (.validated existent)."
     },
@@ -46,8 +54,11 @@
       "categoria": "filosofia",
       "dificultat": 4,
       "paraules_aprox": 15000,
-      "fonts": ["perseus", "gutenberg"],
-      "status": "validated",
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
       "obra_dir": "obres/filosofia/marc-aureli/meditacions",
       "notes": "Traducció completa: 12 llibres, 487 seccions, glossari 30 termes, 38 notes. Qualitat 8/10. Validada."
     },
@@ -58,8 +69,10 @@
       "categoria": "narrativa",
       "dificultat": 3,
       "paraules_aprox": 20000,
-      "fonts": ["gutenberg"],
-      "status": "validated",
+      "fonts": [
+        "gutenberg"
+      ],
+      "status": "pending",
       "obra_dir": "obres/narrativa/kafka/la-transformacio",
       "notes": "Traduïda i validada (7.98/10). 3 capítols, glossari 9 termes, 11 notes."
     },
@@ -70,8 +83,10 @@
       "categoria": "oriental",
       "dificultat": 5,
       "paraules_aprox": 5000,
-      "fonts": ["ctext"],
-      "status": "validated",
+      "fonts": [
+        "ctext"
+      ],
+      "status": "pending",
       "obra_dir": "obres/oriental/laozi/tao-te-king",
       "notes": "Traducció completa: 81 capítols, glossari 14 termes, 24 notes erudites. Qualitat 8.0/10. Validada."
     },
@@ -82,8 +97,10 @@
       "categoria": "poesia",
       "dificultat": 4,
       "paraules_aprox": 2000,
-      "fonts": ["gutenberg"],
-      "status": "validated",
+      "fonts": [
+        "gutenberg"
+      ],
+      "status": "pending",
       "obra_dir": "obres/poesia/shakespeare/sonets",
       "notes": "Traduïts i validats (.validated existent)."
     },
@@ -94,7 +111,10 @@
       "categoria": "narrativa",
       "dificultat": 4,
       "paraules_aprox": 30000,
-      "fonts": ["gutenberg", "wikisource"],
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
       "status": "pending",
       "notes": "Narrativa russa, gran test"
     },
@@ -105,7 +125,10 @@
       "categoria": "poesia",
       "dificultat": 5,
       "paraules_aprox": 3000,
-      "fonts": ["wikisource", "gutenberg"],
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
       "status": "pending",
       "notes": "Poesia francesa, molt exigent"
     },
@@ -116,8 +139,10 @@
       "categoria": "filosofia",
       "dificultat": 5,
       "paraules_aprox": 50000,
-      "fonts": ["gutenberg"],
-      "status": "done",
+      "fonts": [
+        "gutenberg"
+      ],
+      "status": "pending",
       "obra_dir": "obres/filosofia/schopenhauer/vierfache-wurzel",
       "notes": "Traduïda (directori existent amb traduccio.md). Pendent validació."
     }
