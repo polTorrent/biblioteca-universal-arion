@@ -43,3 +43,19 @@ Nietzsche critica la confusió entre conseqüència natural (*Folge*) i càstig 
 ## [11] Wahnsinn (follia)
 
 L'aforisme 14 és un dels textos més remarcables d'*Aurora*. Nietzsche argumenta que la follia ha estat el vehicle necessari per a tota innovació moral i espiritual: només el foll podia trencar el tabú dels costums venerats sense ser destruït per la comunitat. Les pràctiques per induir la follia (dejuni, abstinència, aïllament) són essencialment idèntiques en totes les cultures. El passatge sobre els «sospirs dels solitaris» és una de les peces retòriques més intenses de Nietzsche.
+
+## [12] Der erste Christ (El primer cristià)
+
+L'aforisme 68 és un dels textos més extensos i centrals del Llibre Primer. Nietzsche presenta Pau de Tars no com un apòstol inspirat sinó com un epilèptic turmentat pel seu fracàs en complir la llei jueva, que va trobar en la crucifixió de Crist la «solució de l'enigma»: la llei queda abolida per la mort del Messies. Pau és anomenat «el Pascal jueu» — el paral·lelisme amb Pascal, que exposa el destí del cristianisme com Pau n'exposa l'origen, travessa tot el Llibre Primer. L'*Herrschsucht* (afany de domini) de Pau anticipa el concepte de voluntat de poder.
+
+## [13] Seelenmartern (turments de l'ànima)
+
+L'aforisme 77 presenta una de les crítiques més devastadores de Nietzsche contra el cristianisme: la invenció del turment espiritual com a instrument de poder. Nietzsche hi descriu amb detall les predicacions terrorífiques de Whitefield i els seus efectes sobre les congregacions (convulsions, desmais, crits), i argumenta que el cristianisme va transformar el llit de mort en un llit de tortura, enverinant els sentits i la sang de generacions senceres.
+
+## [14] Euthanasie des Christentums (eutanàsia del cristianisme)
+
+Concepte de l'aforisme 92. Nietzsche descriu la transformació del cristianisme en un moralisme suau: ja no queden «Déu, llibertat i immortalitat», sinó només «benvolença i decència». És la mort dolça (*Euthanasie*) del cristianisme, la seva dissolució en un sentimentalisme moral inofensiu. L'aforisme anticipa la «mort de Déu» de *La gaia ciència* (1882).
+
+## [15] In hoc signo vinces (aforisme 96)
+
+L'aforisme final del Llibre Primer estableix un programa: Europa ha de fer el que l'Índia va fer fa mil·lennis — prescindir dels déus, dels sacerdots i finalment dels redemptors. Nietzsche invoca els «deu o vint milions» d'europeus que ja no creuen en Déu perquè es facin un senyal entre ells i es constitueixin en una «potència a Europa». El títol irònic cita Constantí: la creu com a signe de victòria es converteix en signe de la seva pròpia superació.
