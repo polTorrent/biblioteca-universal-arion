@@ -8,6 +8,7 @@ a qualsevol petició del seu cap.
 """
 
 import os
+import re
 import sys
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -91,11 +92,13 @@ def main():
     text_original = netejar_metadades_font(text_original)
 
     # Extreure el text narratiu (entre els dos ---)
-    import re
     parts = re.split(r'^---\s*$', text_original, flags=re.MULTILINE)
-    if len(parts) >= 2:
-        # El text està a la segona part (entre primer i segon ---)
+    if len(parts) >= 3:
+        # El text està entre el primer i el segon ---
         text_narratiu = parts[1].strip()
+    elif len(parts) == 2:
+        # Només un ---: agafar el contingut més llarg
+        text_narratiu = max(parts, key=len).strip()
     else:
         text_narratiu = text_original
 
@@ -139,6 +142,10 @@ def main():
         obra=TITOL,
         genere=GENERE,
     )
+
+    if not resultat or not resultat.traduccio_final:
+        print("❌ Error: El pipeline no ha generat cap traducció")
+        sys.exit(1)
 
     # Guardar traducció
     traduccio_final = f"""# {TITOL}
