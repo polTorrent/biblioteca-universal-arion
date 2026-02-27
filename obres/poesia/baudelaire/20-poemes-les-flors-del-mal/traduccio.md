@@ -6,502 +6,703 @@ Traduït del francès per Biblioteca Arion
 ---
 
 ## 1. Al lector
+
 PREFACI
-La follia, l'error, el pecat, la vilesa
-Ocupen el nostre esperit i treballen els cossos,
-I alimentem els nostres dolços remordiments
-Com captaires que nodreixen els seus paràsits.
-Són tossuts els pecats, covards els penediments; ens fem pagar ben car cada confessió,
+
+L'estupidesa, l'error, el pecat, l'avarícia,
+Ocupen els nostres esperits i maltracten els cossos,
+I nodrím els nostres encantadors remordiments,
+Com els captaires alimenten els seus paràsits.
+
+Els nostres pecats són tossuts, els penediments covards;
+Ens fem pagar generosament les confessions,
 I tornem alegres al camí fangós,
-Creient esborrar amb vils plors totes les taques.
-Sobre el coixí del mal és Satan Trismégiste
-Qui bressola llargament el nostre esperit encantat,
+Creient rentar amb llàgrimes vils totes les taques.
+
+Sobre el coixí del mal és Satan Trismegist
+Qui bressoleja llargament l'esperit encantat,
 I el ric metall de la nostra voluntat
 És tot vaporitzat per aquest savi químic.
-És el Diable qui té els fils que ens mouen!
-Als objectes repugnants trobem encants; cada dia cap a l'Infern baixem un pas, sense horror, enmig de tenebres que pesten.
-Així com un llibertí pobre que besa i menja
-El pit martiritzat d'una antiga prostituta,
-Robem al pas un plaer clandestí
-Que premem ben fort com una taronja vella.
-Apinyats, formiguejant com un milió d'helmintos, en els nostres cervells glateix un poble de Dimonis,
 
-I, quan respirem, la Mort dins dels pulmons
-davalla, riu invisible, amb queixes sordes.
-Si la violació, el verí, el punyal, l'incendi,
-no han brodat encara amb els seus bells dissenys
-la tela vana dels nostres destins mesquins,
-és que la nostra ànima, ai!, no és prou arriscada.
-Però entre els xacals, les panteres, les llebres,
-les simies, els escorpins, els voltors, les serps,
-els monstres udolants, cridaners, grunes, reptants,
-en la menagerie infame dels nostres vicis,
-n'hi ha un més lletg, més dolent, més immund!
+És el Diable qui té els fils que ens mouen!
+Als objectes repugnants trobem atractius;
+Cada dia cap a l'Infern baixem un pas,
+Sense horror, a través de tenebres que fan pudor.
+
+Com un llibertí pobre que besa i menja
+El pit martiritzat d'una antiga meuca,
+Robem de passada un plaer clandestí
+Que premem ben fort com una taronja vella.
+
+Apinyat, formigant, com un milió de cucs,
+En els nostres cervells fa gresca un poble de dimonis,
+
+I quan respirem, la Mort dins dels nostres pulmons
+Baixa, riu invisible, amb queixes sordes.
+
+Si la violació, el verí, el punyal, l'incendi
+No han brodat encara amb els seus plaents dibuixos
+La tela banal dels nostres mesquins destins,
+És que la nostra ànima, ai las!, no és prou agosarada.
+
+Però entre els xacals, les panteres, les llices,
+Els simis, els escorpins, els voltors, les serps,
+Els monstres que udolen, bramen, grunyeixen, s'arrosseguen,
+A la casa de feres infame dels nostres vicis,
+
+N'hi ha un de més lleig, més dolent, més immund!
 Tot i que no fa grans gestos ni grans crits,
-faria de bon grat de la terra uns enderrocs
-i d'un badall s'engolaria el món;
-és l'Avorriment! —L'ull carregat d'una llàgrima involuntària,
-somia amb cadafals fumant la seva pipa.
-Tu el coneixes, lector, aquest monstre delicat —Hipòcrita lector —mon semblant —mon germà!
+Faria de bon grat de la terra unes runes
+I en un badall s'engoluiria el món;
+
+És l'Avorriment! —L'ull carregat d'una llàgrima involuntària,
+Somia amb cadafals fumant la seva pipa d'aigua.
+El coneixes, lector, aquest monstre delicat,
+—Hipòcrit lector, —el meu semblant, —el meu germà!
+
+---
+
 ## 2. Benedicció
-ESPLIN I IDEAL
+
+SPLEEN I IDEAL
+
 ## I
 BENEDICCIÓ
+
 Quan, per un decret de les potències supremes,
-el Poeta apareix en aquest món avorrit,
-sa mare espantada i plena de blasfèmies.
+El Poeta apareix en aquest món avorrit,
+Sa mare espantada i plena de blasfèmies
+Clava els punys cap a Déu, que la compadeix:
 
-Alça els punys cap a Déu, que se'n compadeix: 
-«—Ai! Per què no he parit un niu de escurçons
-antes que nodrir aquesta burla!
-Maleïda la nit de plaers efímers
-on el meu ventre va concebre el meu càstig!
+«—Ai! Per què no vaig parir un niu d'escurçons,
+En lloc de nodrir aquesta irrisió!
+Maleïda sigui la nit dels plaers efímers
+On el meu ventre va concebre la meva expiació!
+
 Ja que m'has triat entre totes les dones
-per ser el fàstic del meu trist marit, 
-i no puc llençar a les flames, 
-com una carta d'amor, aquest monstre raquític, 
-faré que la teva odi que m'oprimeix
-recaigui sobre l'instrument maleït de les teves maleses, 
-i retorçaré tan bé aquest arbre miserable
-que no podrà fer brotar els seus botons pestilents!»
-Així s'empassa l'escuma del seu odi, 
-i, sense comprendre els designis eterns, 
-ella mateixa prepara al fons de la Gehenna
-les fogueres consagrades als crims maternals.
-Tot i això, sota la tutela invisible d'un Àngel, 
-l'Infant deshereta s'embriaga de sol, 
-i en tot allò que beu i en tot allò que menja
-retrobà l'ambrosia i el nèctar vermelló.
-Juga amb el vent, parla amb el núvol
-i s'embriaga cantant el camí de la creu;
+Per ésser el fàstic del meu trist espòs,
+I que no puc llançar a les flames,
+Com una carta d'amor, aquest monstre raquític,
 
+Faré caure el teu odi que m'ofega
+Sobre l'instrument maleït de les teves maleses,
+I retorçaré tan bé aquest arbre miserable,
+Que no podrà brotar els seus botons pestilents!»
+
+Així s'empassa l'escuma del seu odi,
+I, sense comprendre els designis eternals,
+Ella mateixa prepara al fons de la Gehenna
+Les fogueres consagrades als crims maternals.
+
+Tanmateix, sota la tutela invisible d'un Àngel,
+L'Infant deseretat s'embriaga de sol,
+I en tot el que beu i en tot el que menja
+Retroba l'ambrosia i el nèctar vermell.
+
+Juga amb el vent, conversa amb el núvol
+I s'embriaga cantant del camí de la creu;
 I l'Esperit que el segueix en el seu pelegrinatge
-plora de veure'l alegre com un ocell del bosc.
-Tots els que vol estimar l'observen amb temença,
-o bé, encoratjant-se de la seva tranquil·litat,
-cerquen qui sabrà arrencar-li una queixa,
-i proven amb ell la seva ferocitat.
-En el pa i el vi destinats a la seva boca
-barregen cendra amb escopinades impures;
-amb hipocresia llencen tot el que ell toca,
-i s'acusen d'haver posat els peus en les seves petjades.
-La seva dona va cridant per les places públiques:
-«»—Ja que em troba prou bella per adorar-me,
-faré l'ofici dels ídols antics,
-i com ells vull fer-me redaurar.
-I m'embriaguaré de nard, d'encens, de mirra,
-de genuflexions, de carns i de vins,
-per saber si puc en un cor que m'admira
-usurpar rient els homenatges divins!
-I, quan em cansi d'aquestes farses impies,
-posaré sobre ell la meva fràgil i forta mà;
-i les meves ungles, iguals a les ungles de les harpies,
-sabran obrir-se camí fins al seu cor.
-Com un ocell tot jove que tremola i palpita,
+Plora de veure'l alegre com un ocell del bosc.
 
-Arrencaré aquest cor tot roig del seu pit,
-I, per sadollar la meva bèstia preferida,
-L'hi llançaré per terra amb desdeny!«»
+Tots els que vol estimar l'observen amb temença,
+O bé, prenent força de la seva tranquil·litat,
+Cerquen qui sabrà arrencar-li una queixa,
+I assagen amb ell la seva crueltat.
+
+En el pa i el vi destinats a la seva boca
+Mesclen cendra amb escopinades impures;
+Amb falsedat rebutgen tot el que ell toca,
+I es retreuen d'haver trepitjat les seves passes.
+
+La seva dona va cridant per les places públiques:
+«—Ja que em troba prou bella per a adorar-me,
+Faré l'ofici de les ídoles antigues,
+I com elles vull que em redorin;
+
+I m'embriagaré de nard, d'encens, de mirra,
+De genuflexions, de viandes i de vins,
+Per veure si puc en un cor que m'admira
+Usurpar rient els homenatges divins!
+
+I quan em cansi d'aquestes farses ímpies,
+Li posaré al damunt la meva mà fràgil i forta;
+I les meves ungles, com les ungles de les hàrpies,
+Sabran obrir-se camí fins al seu cor.
+
+Com un ocell molt jove que tremola i batega,
+Arrancaré aquest cor ben roig del seu pit,
+I, per saciar la meva bèstia estimada,
+El li llançaré a terra amb menyspreu!»
+
 Cap al Cel, on el seu ull veu un tron esplèndid,
 El Poeta serè alça els seus braços piadosos,
-I els vastos llampecs del seu esperit llúcid
-Li amaguen l'aparença dels pobles furiosos:
-«»—Beneït sigueu, Déu meu, que doneu la sofrença
+I els vastos llampecs del seu esperit lúcid
+Li amaguen l'aspecte dels pobles furiosos:
+
+«—Beneït siguis, Déu meu, que doneu la sofrença
 Com un diví remei a les nostres impureses
 I com la millor i més pura essència
 Que prepara els forts per a les santes delícies!
-Sé que guardeu un lloc al Poeta
-En els rangs benaventurats de les santes Legions,
-I que l'inviteu a l'eterna festa
-Dels Trons, de les Virtuts, de les Dominacions.
-Sé que el dolor és la noblesa única
-On mai no tocaran la terra i els inferns,
-I que cal per teixir la meva corona mística
-Abastar tots els temps i tots els universos.
-Però les joies perdudes de l'antiga Palmira,
-Els metalls desconeguts, les perles de la mar,
-Per la vostra mà engastats, no podrien bastar
-A aquest bell diadema enlluernador i clar;
-Car només serà fet de pura llum,
 
-Bevent a la llar santa dels raigs primitius,
-i els ulls mortals, amb tota la seva esplendor,
-no són sinó miralls enterbotits i esquius!
+Sé que guardeu un lloc al Poeta
+En les files benaurades de les santes Legions,
+I que l'inviteu a la festa eterna
+Dels Trons, les Virtuts, les Dominacions.
+
+Sé que el dolor és l'única noblesa
+On mai no mossegaran la terra i els inferns,
+I que cal, per teixir la meva corona mística,
+Abraçar tots els temps i tots els universos.
+
+Més les joies perdudes de l'antiga Palmira,
+Els metalls desconeguts, les perles de la mar,
+Muntats per la vostra mà, no podrien bastar
+A aquest bell diadema enlluernador i clar;
+
+Car només serà fet de pura llum,
+Extreta del focus sagrat dels raigs primordials,
+I els ulls mortals, en la seva esplendor plena,
+No són més que miralls foscos i planyívols!»
+
 ---
+
 ## 3. L'Albatros
+
 ## II
 L'ALBATROS
-Sovint, per passar l'estona, els homes de l'equipatge
-prenen albatros, vastos ocells de les mars,
-que segueixen, indolents companyons de viatge,
-la nau lliscant sobre els abismes amargs.
-Així que els han deixat damunt de les planxes,
-aquests reis de l'atzur, maldestres i avergonyits,
-deixen que llastimosament llurs grans ales blanques
-com a rems s'arrosseguin al seu costat.
-Aquest viatger alat, com és gofre i covard!
-Ell, fa poc tan bell, que és còmic i lletge!
-Un li punxa el bec amb una pipa encesa,
-l'altre imita, coixejant, l'invàlid que volava!
-El Poeta és semblant al príncep dels núvols
-que freqüenta la tempesta i es riu de l'arquer;
-exiliat a terra enmig dels udols,
-les seves ales de gegant l'impedeixen caminar.
+
+Sovint, per divertir-se, els homes de la tripulació
+Pesquen albatros, vastos ocells del mar,
+Que segueixen, companys indolents del viatge,
+El navili lliscant sobre els abismes amargs.
+
+Tan bon punt els han deixat damunt les planxes,
+Aquests reis de l'atzur, maldestres i avergonyits,
+Deixen que llurs grans ales blanques
+S'arrosseguin al costat com si fossin rems.
+
+Aquest viatger alat, com és feixuc i covard!
+Ell, que abans era tan bell, com és còmic i lleig!
+Un li punxa el bec amb una pipa,
+L'altre imita, coixejant, l'invàlid que volava!
+
+El Poeta s'assembla al príncep dels núvols
+Que freqüenta la tempesta i es riu del sagitari;
+Exiliat a terra enmig dels crits de burla,
+Les seves ales de gegant l'impedeixen caminar.
+
 ---
+
 ## 4. Elevació
+
 ## III
 ELEVACIÓ
+
 Per damunt dels estanys, per damunt de les valls,
-de les muntanyes, els boscos, els núvols, les mars,
+De les muntanyes, dels boscos, dels núvols, dels mars,
 
 Més enllà del sol, més enllà dels èters,
-més enllà dels confins de les esferes estel·lades,
-esperit meu, et mous amb agilitat,
-i, com bon nedador que es deleix en l'ona,
-solques alegre la immensitat profunda
-amb una inefable i viril voluptat.
+Més enllà dels confins de les esferes estelades,
+
+Esperit meu, et mous amb agilitat,
+I, com bon nedador que es banya en l'onada,
+Solques joiosament la immensitat profunda
+Amb una voluptat inefable i viril.
+
 Vola ben lluny d'aquests miasmes mòrbids,
-vés-te a purificar en l'aire superior,
-i beu, com pura i divina licor,
-el foc clar que omple els espais límpids.
-Darrere els enuigs i les vastes penes
-que carreguen amb llur pes l'existència borrosa,
-feliç qui pot amb ala vigorosa
-llançar-se vers els camps lluminosos i serens!
-Aquell els pensaments del qual, com aloses,
-vers els cels matí pren lliure essor —qui planeja sobre la vida i sense esforç comprèn
-el llenguatge de les flors i les coses mudes!
+Ves a purificar-te en l'aire superior,
+I beu, com pura i divina licor,
+El foc clar que omple els espais límpids.
+
+Més enllà dels avorriments i les vastes penes
+Que carreguen de llur pes l'existència brumosa,
+Feliç qui pot amb una ala vigorosa
+Llançar-se cap als camps lluminosos i serens!
+
+Aquell que té pensaments que, com aloses,
+Cap als cels al matí prenen lliure essor,
+—Qui plana sobre la vida i comprèn sense esforç
+El llenguatge de les flors i les coses mudes!
+
 ---
+
 ## 5. Correspondències
+
 ## IV
 CORRESPONDÈNCIES
-La Natura és un temple on vius pilars
-deixen sortir de vegades confuses paraules;
-l'home hi passa a través de forests de símbols
-que l'observen amb mirades familiars.
 
-Com llargs ecos que lluny es confonen
-En tenebrosa i profunda unitat,
+La Natura és un temple on vius pilars
+Deixen sortir a vegades confuses paraules;
+L'home hi passa per boscos de símbols
+Que l'observen amb mirades familiars.
+
+Com llargs ressons que de lluny es confonen
+En una tenebrosa i profunda unitat,
 Vasta com la nit i com la claredat,
-Els perfums, colors i sons es responen.
-Hi ha perfums frescos com carns d'infants,
-Dolços com oboès, verds com praderies — I d'altres, corruptes, rics i triomfants.
-Amb l'expansió de les coses infinites, com l'ambre, el musc, el benjuí i l'encens, que canten els transports de l'esperit i els sentits.
+Les fragàncies, els colors i els sons es responen.
+
+Hi ha perfums frescos com carn d'infants,
+Dolços com els oboès, verds com les prades,
+—I d'altres, corromputs, rics i triomfants,
+
+Amb l'expansió de les coses infinides,
+Com l'ambre, el musc, el benjuí i l'encens,
+Que canten els transports de l'esperit i els sentits.
+
 ---
+
 ## 6. La Bellesa
+
 ## XVIII
 LA BELLESA
+
 Sóc bella, oh mortals!, com un somni de pedra,
-I el meu pit, on cadascú s'ha ferit al seu torn,
+I el meu pit, on cadascú s'ha ferit per torn,
 Està fet per inspirar al poeta un amor
 Etern i mut així com la matèria.
+
 Regno en l'atzur com una esfinx incompresa;
-Uneixo un cor de neu a la blangor dels cignes;
+Uneixo un cor de neu al blanc dels cignes;
 Odio el moviment que desplaça les línies;
 I mai no ploro i mai no ric.
-Els poetes, davant les meves grans actituds, que semblo prendre dels monuments més altius,
-Consumiran llurs dies en austeres estudis.
-Car tinc, per fascinar aquests dòcils amants,
 
-De purs miralls que fan més belles totes les coses:
-Els meus ulls, els meus grans ulls de clartors eternes!
+Els poetes, davant les meves grans actituds,
+Que semblo prendre dels monuments més altius,
+Consumiran llurs dies en austeres estudis;
+
+Car tinc, per fascinar aquests dòcils amants,
+Purs miralls que fan totes les coses més belles:
+Els meus ulls, els meus grans ulls de claredats eternes!
+
 ---
+
 ## 7. Himne a la bellesa
+
 ## XXII
 HIMNE A LA BELLESA
-Vens del cel pregon o surts de l'abisme,
-oh Bellesa? La teva mirada, infernal i divina,
-vessa confusament el benestar i el crim,
-i per això et podem comparar amb el vi.
-Contens en el teu ull l'ocàs i l'alba;
-escampes perfums com un vespre tempestuós;
-els teus petons són filtres i la teva boca una àmfora
-que fan covard l'heroi i valent l'infant.
-Surts del forat negre o baixes dels astres?
-El Destí encantat segueix les teves faldilles com un gos;
-semeges a l'atzar la joia i els desastres,
-i ho governes tot i no respons de res.
-Camines sobre morts, Bellesa, dels quals et burles,
-de les teves joies l'Horror no és la menys encantadora,
-i l'Assassinat, entre els teus ornaments més preuats,
-dansa amorosament sobre el teu ventre orgullós.
-L'efímer enlluernat vola cap a tu, espelma,
-crepita, s'inflama i diu: Beneïm aquest flambor!
-L'amant panteixant inclinat sobre la seva bella
 
-Com un moribund acariciant la seva tomba.
+Véns del cel profund o surts de l'abisme,
+Oh Bellesa? La teva mirada, infernal i divina,
+Vessa confusament el benefici i el crim,
+I per això hom et pot comparar al vi.
+
+Contens dins del teu ull la posta i l'aurora;
+Escampes perfums com un vespre tempestuós;
+Els teus petons són un filtre i la teva boca una àmfora
+Que fan l'heroi covard i l'infant coratjós.
+
+Surts del negre abisme o baixes dels estels?
+El Destí encantat segueix les teves faldilles com un gos;
+Sembres a l'atzar l'alegria i els desastres,
+I ho governes tot i no respons de res.
+
+Camines sobre morts, Bellesa, dels quals et moques;
+De les teves joies l'Horror no és la menys encisadora,
+I l'Assassinat, entre els teus més estimats penjolls,
+Sobre el teu ventre orgullós dansa amorosament.
+
+L'efímera enlluernada vola cap a tu, espelma,
+Crepita, flameja i diu: Beneïm aquesta torxa!
+L'enamorat panteixant inclinat sobre la seva bella
+Té l'aire d'un moribund acariciant el seu sepulcre.
+
 Que vinguis del cel o de l'infern, què importa,
-Oh Bellesa!, monstre enorme, esgarrifós, innocent!
+Oh Bellesa!, monstre enorme, terrible, innocent!
 Si el teu ull, el teu somriure, el teu peu, m'obren la porta
-d'un Infinit que estimo i no he conegut mai?
+D'un Infinit que estimo i mai no he conegut?
+
 De Satan o de Déu, què importa? Àngel o Sirena,
-què importa, si fas —fada d'ulls de vellut,
-ritme, perfum, claror, oh única reina meva!—
-l'univers menys horrible i els instants menys pesats?
+Què importa, si tu torns —fada d'ulls de vellut,
+Ritme, perfum, lluor, oh la meva única reina!—
+L'univers menys esfereïdor i els instants menys pesats?
+
 ---
+
 ## 8. La Cabellera
+
 ## XXIV
 LA CABELLERA
-Oh velló que ondeja fins al coll!
-Oh bucles! Oh perfum carregat d'indolència!
-Èxtasi! Per poblar aquesta nit l'alcova fosca
-dels records que dormen en aquesta cabellera,
-la vull agitar a l'aire com un mocador!
-L'Àsia lànguida i l'Àfrica ardent,
-tot un món llunyà, absent, gairebé difunt,
-viu en les teves profunditats, bosc aromàtic!
-Com altres esperits naveguen per la música,
-el meu, oh amor meu!, neda en el teu perfum.
-Aniré allà on l'arbre i l'home, plens de saba,
-es desmagen llargament sota l'ardor dels climes.
 
-Fortes trenes, sigueu l'onada que m'enduu!
-Tu contens, mar d'eben, un somni enlluernador
-de veles, de remers, de flames i de masts:
-un port que ressona on la meva ànima pot beure
-a grans fluxos el perfum, el so i la color;
-on les naus, lliscant en l'or i en el moer,
-obren els seus vastos braços per abraçar la glòria
-d'un cel pur on fremeix l'eterna calor.
-Submergeixo el meu cap embriagat d'embriaguesa
-en aquest negre oceà on l'altre hi és tancat;
-i el meu esperit subtil que el balanceig acaricia
-us sabrà retrobar, oh fecunda peresa,
-infinits bressols de l'oci embaumat!
+Oh vellús, ondejant fins al coll!
+Oh rinxols! Oh perfum carregat de languidesa!
+Èxtasi! Per poblar aquesta nit l'alcova obscura
+Dels records que dormen en aquesta cabellera,
+La vull agitar a l'aire com un mocador!
+
+L'Àsia languorosa i l'Àfrica ardent,
+Tot un món llunyà, absent, quasi difunt,
+Viu en les teves pregoneses, bosc aromàtic!
+Com altres esperits navegen sobre la música,
+El meu, oh amor meu!, neda sobre el teu perfum.
+
+Aniré allà on l'arbre i l'home, plens de saba,
+Es consumeixen llargament sota l'ardor dels climes;
+Fortes trenes, sigueu l'onada que m'endugui!
+Tu contens, mar d'ébano, un somni enlluernador
+De veles, de remers, de flames i de pals:
+
+Un port que ressona on la meva ànima pot beure
+A grans glops el perfum, el so i el color;
+On els vaixells, lliscant entre l'or i el tafetà,
+Obren els braços vastos per abraçar la glòria
+D'un cel pur on tremola l'eterna calentor.
+
+Enfondaré el meu cap ebri d'embriaguesa
+En aquest negre oceà on l'altre roman tancat;
+I el meu esperit subtil que el balandreig acarona
+Us sabrà retrobar, oh fecunda peresa,
+Infinits bressoleigs de l'oci embalsamat!
+
 Cabells blaus, pavelló de tenebres esteses,
-em torneu l'atzur del cel immens i rodó;
-a les vores aterciades de les vostres trenes
-m'embriagó ardentment amb les olors confoses
-de l'oli de coco, de l'almesc i del quitrà.
-Llargament!, sempre! la meva mà en la vostra cabellera
-sembra el rubí, la perla i el safir,
-perquè al meu desig mai no sigueu sorda!
-No sou potser l'oasi on somio, i la carabassa
-on gust a llargs glops el vi del record?
+Em retorneu l'atzur del cel immens i rodó;
+A les vores atapeïdes de les vostres madeixes
+M'embriaguo ardenment de les fragàncies barrejades
+De l'oli de coco, l'almesc i el quitrà.
+
+Per sempre!, sempre! la meva mà en la vostra crinera espessa
+Sembrarà el rubí, la perla i el safir,
+Perquè al meu desig mai no sigueu sorda!
+No sou l'oasi on somio, i la carabassa
+On bec a llargs glops el vi del record?
+
+---
 
 ## 9. Harmonia del vespre
+
 ## XLVIII
 HARMONIA DEL VESPRE
-Arriba el temps que vibra sobre sa tija
-Cada flor s'evapora com un encenser; 
-Sons i perfums que giren en l'aire del vespre; 
-Vals melancòlic i llànguida vertigen!
-Cada flor s'evapora com un encenser; 
-El violí fremeix com cor afligit; 
-Vals melancòlic i llànguida vertigen!
-El cel és trist i bell com gran altar.
-El violí fremeix com cor afligit, 
-Cor tendre que odia el vast no res negre!
-El cel és trist i bell com gran altar; 
-El sol s'ofega en sang que es va endurir…
-Cor tendre que odia el vast no res negre, 
-Del passat lluminós recull tot rastre!
-El sol s'ofega en sang que es va endurir…
-Ton record en mi llueix com un ostensori!
+
+Ja vénen els temps quan vibrant sobre la tija
+Cada flor s'evapora com un encenser;
+Els sons i les fragàncies giren en l'aire del vespre;
+Vals malenconiós i languinós vertigen!
+
+Cada flor s'evapora com un encenser;
+El violí tremola com un cor que s'afligeix;
+Vals malenconiós i languinós vertigen!
+El cel és trist i bell com un gran reposador.
+
+El violí tremola com un cor que s'afligeix,
+Un cor tendre, que odia el no-res vast i negre!
+El cel és trist i bell com un gran reposador;
+El sol s'ha ofegat en la seva sang que es qualla...
+
+Un cor tendre, que odia el no-res vast i negre,
+Del passat lluminós recull tot vestigi!
+El sol s'ha ofegat en la seva sang que es qualla...
+El teu record en mi llueix com un ostensori!
+
 ---
+
 ## 10. La invitació al viatge
+
 ## LIV
 LA INVITACIÓ AL VIATGE
-Fill meu, germana, 
-Somnia la dolçor
-D'anar a viure junts!
-Estimar sense presses, 
+
+Fill meu, germana meva,
+Pensa en la dolçor
+D'anar-hi a viure junts!
+Estimar amb calma,
 Estimar i morir
-Al país com tu!
-Els sols humitejats
+Al país que se't sembla!
+Els sols mollaços
+D'aquells cels emboirats
+Tenen per al meu esperit els encants
+Tan misteriosos
+Dels teus ulls traïdors,
+Brillant a través de les llàgrimes.
 
-Aquests cels borrosos
-per al meu esperit tenen els encants
-tan misteriosos
-dels teus ulls traïdors,
-brillant a través de les seves llàgrimes.
 Allà, tot és ordre i bellesa,
-luxe, calma i voluptat.
-Mobles lluents,
-polits pels anys,
-decorarien la nostra cambra;
-les flors més rares
-barrejant les seves olors
-amb les vagues sentors de l'ambre,
-els sostres rics,
-els miralls profunds,
-l'esplendor oriental,
-tot hi parlaria
-a l'ànima en secret
-la seva dolça llengua natal.
+Luxe, calma i voluptat.
+
+Uns mobles lluents,
+Polits pels anys,
+Decorarien la nostra cambra;
+Les flors més rares
+Barrejant les seves olors
+Amb les vagues fragàncies de l'ambre,
+Els rics sostres,
+Els miralls profunds,
+L'esplendor oriental,
+Tot hi parlaria
+A l'ànima en secret
+La seva dolça llengua natal.
+
 Allà, tot és ordre i bellesa,
-luxe, calma i voluptat.
-Mira sobre aquests canals
-dormir aquests vaixells
-que tenen humor vagabund;
-és per satisfer
-el teu menor desig
-que vénen del confí del món.
-— Els sols ponents
-vesteixen els camps,
-els canals, la ciutat sencera,
-de jacint i d'or;
-el món s'adorm
-en una càlida llum.
+Luxe, calma i voluptat.
+
+Mira en aquests canals
+Dormir aquests vaixells
+D'humor vagabunda;
+Per saciar
+El teu més mínim desig
+Han vingut del cap del món.
+—Els sols ponents
+Revesteixen els camps,
+Els canals, la ciutat sencera,
+De jacint i d'or;
+El món s'adorm
+En una càlida llum.
+
 Allà, tot és ordre i bellesa,
-luxe, calma i voluptat.
+Luxe, calma i voluptat.
+
 ---
-## 11. La Campana esquerdada
+
+## 11. La Campana esquerda
+
 ## LXXVI
-LA CAMPANA ESQUERDADA
-És agre i dolç, durant les nits d'hivern,
-d'escoltar, vora el foc que palpita i que fuma,
-els records llunyans alçar-se lentament
+LA CAMPANA ESQUERDA
 
-Al so dels campanars que canten en la boira.
-Venturosa la campana de gola vigorosa
-que, malgrat la vellesa, desperta i ben portant,
-llança fidelment el seu crit religiós,
-com un vell soldat que vetlla sota la tenda!
-Jo, la meva ànima és esquerda, i quan en ses congoxes
-vol poblar amb els seus cants l'aire fred de les nits,
-sovint passa que la seva veu afeblia
-sembla l'agonia espès d'un ferit oblidat
-a la vora d'un llac de sang, sota un gran munt de morts,
-i que mor, sense moure's, en immenses esforços!
+És amarg i dolç, durant les nits d'hivern,
+Escoltar, vora el foc que palpita i que fuma,
+Els records llunyans lentament alçar-se
+Al so dels carillons que canten en la boira.
+
+Benaurada la campana de veu potent
+Que, malgrat la vellesa, desperta i robusta,
+Llança fidelment el seu crit religiós,
+Com un vell soldat que vetlla sota la tenda!
+
+Jo, la meva ànima és esquerda, i quan en els seus turments
+Vol poblar amb els seus cants l'aire fred de les nits,
+Sovint passa que la seva veu afeblida
+
+Sembla l'esbufec espès d'un ferit que s'oblida
+A la vora d'un llac de sang, sota un gran munt de morts,
+I que mor, sense moure's, en una agonia immensa!
+
 ---
-## 12. Spleen (Quan el cel baix i pesat...)
-*[Error: La pàgina especificada no existeix.]*
+
+## 12. Spleen (Quan el cel baix i pesat…)
+
+*[El text original no estava disponible a la font.]*
+
 ---
+
 ## 13. El Vampir
+
 ## XXXII
 EL VAMPIR
-Tu que, com un cop de ganivet,
-en el meu cor planyívol has entrat;
-tu que, forta com un ramat
-de dimonis, véns, boja i abillat,
-del meu esperit humiliat
-fer el teu llit i el teu domini;
-—infame amb qui estic lligat
-com el pres a la cadena,
-com al joc el jugador tossut,
-com a l'ampolla el borratxó,
-com als paràsits la carronya,
-—maleïda, maleïda siguis!
 
-He pregat l'espasa ràpida
-Que em conquerís la llibertat,
+Tu que, com un cop de ganivet,
+En el meu cor planyívol has entrat;
+Tu que, forta com un ramat
+De dimonis, vas venir, boja i engalanada,
+
+Del meu esperit humiliat
+Fer-ne el teu llit i el teu domini;
+—Infame a qui estic lligat
+Com el forçat a la cadena,
+
+Com al joc el jugador tossut,
+Com a l'ampolla el borratxo,
+Com als cucs la carronya,
+—Maleïda, maleïda siguis tu!
+
+He pregat l'espasa veloç
+Que conquerís ma llibertat,
 I he dit al verí pèrfid
-Que socorregués la meva covardia.
-Ai las! El verí i l'espasa. M'han menyspreat i m'han dit:
-«No ets digne que t'alliberem
+Que socorregués ma covardia.
+
+Ai las! El verí i l'espasa
+M'han menyspreat i m'han dit:
+«No ets digne que et llevem
 Del teu esclavatge maleït,
-Imbècil! Del seu imperi
-Si els nostres esforços et deslliuressin,
+
+Imbècil! —del seu imperi
+Si els nostres esforços t'alliberessin,
 Els teus petons ressuscitarien
 El cadàver del teu vampir!»
+
 ---
+
 ## 14. Remordiment pòstum
+
 ## XXXIV
 REMORDIMENT PÒSTUM
-Quan dormis, la meva bella tenebrosa,
-Al fons d'un monument de marbre negre,
+
+Quan dormiràs, ma bella tenebrosa,
+Al fons d'un monument bastit de marbre negre,
 I quan no tinguis per alcova i mansió
-Sinó una cambra plujosa i una fossa buida.
+Més que un cau plujós i una fossa fonda;
+
 Quan la pedra, oprimint el teu pit temorós
-I els teus flancs que suavitza un dolç abandó,
-Impedeixi que el teu cor bati i vulgui,
-I que els teus peus facin la seva cursa aventurera.
-La tomba, còmplice del meu somni infinit
-(Perquè la tomba sempre entendrà el poeta), durant aquelles llargues nits sense son.
-Et dirà: «Què us val, cortesana imperfecta,
-No haver conegut allò que ploren els morts?»
-— I el cuc rossegarà la teva pell com un remordiment.
+I els teus flancs que allangueix una dolça mandra,
+Impedirà que el teu cor bategui i vulgui,
+I els teus peus de córrer llur cursa aventurera,
+
+El sepulcre, confident del meu somni infinit
+(Car el sepulcre sempre entendrà el poeta),
+Durant aquestes llargues nits sense son,
+
+Et dirà: «De què et serveix, cortesana imperfecta,
+No haver conegut això que ploren els morts?»
+—I el cuc rossegarà ta pell com un remordiment.
+
+---
 
 ## 15. El Gat
+
 ## XXXV
 EL GAT
-Vine, bell gat, sobre el meu cor ardent,
-refrena l'urpa de la pota,
-deixa'm perdre'm en els teus ulls
-de metall i àgata barrejats.
-Quan els meus dits acaricien amb delícia
-el teu cap i l'esquena elàstica,
-i la mà s'embriaga del plaer
-de palpar el teu cos elèctric.
-veig la meva dona en esperit. La seva mirada,
-com la teva, bèstia estimada,
-profunda i freda, talla com un dard,
-i, dels peus fins al cap,
-un aire subtil, perfum perillós,
-neden al voltant del seu cos morè.
+
+Vine, gat meu gentil, al meu cor enamorat;
+Retira les ungles de la pota,
+I deixa'm submergir-me en els teus ulls bellíssims,
+Barreja de metall i d'àgata.
+
+Quan els meus dits acaronen amb delícia
+El teu cap i l'esquena elàstica,
+I la meva mà s'embriaga del plaer
+De palpar el teu cos elèctric,
+
+Veig la meva dona en esperit. La seva mirada,
+Com la teva, bèstia adorable,
+Profunda i freda, talla i fon com un dard,
+
+I, dels peus fins al cap,
+Un aire subtil, un perfum perillós,
+Neden al voltant del seu cos bru.
+
+---
+
 ## 16. L'Enemic
+
 ## X
 L'ENEMIC
-La meva joventut fou només tempesta fosca,
-travessada ací i allà per raigs de sol brillants;
-el tro i la pluja han fet tal destrossa
-que al meu jardí hi resten pocs fruits vermells.
-Vet aquí que he tocat la tardor de les idees,
-i cal emprar la pala i els rasclets
-per ajuntar de nou les terres inundades,
-on l'aigua cava forats grans com tombes.
-I qui sap si les flors noves que somio
-trobaran en aquest sòl rentat com una platja
 
+La meva joventut no fou sinó una tempesta tenebrosa,
+Travessada ací i allà per sols brillants;
+El tro i la pluja han fet tal estrall
+Que resten al meu jardí ben pocs fruits vermells.
+
+Ara he tocat la tardor de les idees,
+I cal emprar la pala i els rasclets
+Per recollir de nou les terres inundades,
+On l'aigua cava clots grans com tombes.
+
+I qui sap si les flors noves que somio
+Trobaran en aquest sòl rentat com una platja
 L'aliment místic que els donaria vigor?
-— Oh dolor!, oh dolor! El Temps devora la vida, 
+
+—Oh dolor! Oh dolor! El Temps devora la vida,
 I l'obscur Enemic que ens rosega el cor
-De la sang que perdem creix i es fortifica!
+De la sang que perdem creix i s'enforteix!
+
 ---
+
 ## 17. La Vida anterior
+
 ## XII
 LA VIDA ANTERIOR
-Vaig habitar molt temps sota vastos pòrtics
-Que els sols marins tenyien de mil focs, 
-I que llurs grans pilars, drets i majestuosos, 
-Els feien semblar, al vespre, coves basàltiques.
-Les ones, rodolant les imatges dels cels, 
-Barrejaven solemnement i místicament
-Els omnipotents acords de la seva rica música
-Amb els colors del ponent reflectit pels meus ulls.
-Allà vaig viure enmig de les voluptats serenes, 
-Al cor de l'atzur, les ones i els esplendors, 
-I d'esclaus nus, tot impregnats d'olors, 
-Que em refrescaven el front amb palmes, 
-I que tenien com a única cura d'aprofundir
-El secret dolorós que em feia languir.
+
+Temps ha que vaig habitar sota vastos pòrtics
+Que els sols marins tenyien de mil focs,
+I que els seus grans pilars, drets i majestuosos,
+Els tornaven semblants, al vespre, a grutes basàltiques.
+
+Les ones, fent rodar les imatges dels cels,
+Barrejaven de forma solemne i mística
+Els totpoderosos acords de la seva rica música
+Amb els colors del ponent reflectits pels meus ulls.
+
+Fou allà que vaig viure en voluptats calmes,
+Entre l'atzur, les ones i l'esplendor,
+I els esclaus nus, tots impregnats d'olor,
+Que em refrescaven el front amb palmes,
+
+I que tenien per única cura aprofundir
+El secret dolorós que em feia llanguir.
+
 ---
+
 ## 18. L'Home i la mar
+
 ## XIV
 L'HOME I LA MAR
-Home lliure, sempre estimaràs la mar
-La mar és el teu mirall; contemples la teva ànima
 
-En l'infinit transcurs de les seves ones, 
-I el teu esperit no és un abisme menys amarg.
-T'agrada submergir-te dins la teva imatge; 
-L'abraces amb els ulls i els braços, i el teu cor
+Home lliure, sempre estimaràs la mar!
+La mar és el teu mirall; contemples la teva ànima
+En el desplegament infinit de la seva onada,
+I el teu esperit no és abisme menys amarg.
+
+Et complaus a enfonsar-te en el si de la teva imatge;
+L'abraces amb ulls i braços, i el cor
 Es distreu de vegades de la seva pròpia remor
-Amb el soroll d'aquest plany indomable i salvatge.
-Sou tots dos tenebrosos i discrets: 
-Home, ningú no ha sondat el fons dels teus abismes, 
-Oh mar, ningú no coneix les teves riqueses íntimes, 
-Tant sou gelosos de guardar els vostres secrets!
+Al so d'aquest plany indomable i salvatge.
+
+Sou tots dos tenebrosos i discrets:
+Home, ningú ha sondat el fons dels teus abismes,
+Oh mar, ningú coneix les teves riqueses íntimes,
+Tant sou gelosos de guardar els secrets!
+
 I, tanmateix, fa segles innombrables
-Que us combateu sense pietat ni remordiment, 
-Tant estimeu la carnisseria i la mort, 
+Que us combateu sense pietat ni remordiment,
+Tan estimeu el carnatge i la mort,
 Oh lluitadors eterns, oh germans implacables!
+
 ---
+
 ## 19. Recolliment
+
 ## CIV
 RECOLLIMENT
-Sigues sàvia, oh Dolor meva, i estigues més quieta.
-Reclamaves el Vespre; baixa; ja és aquí: 
-Una atmosfera fosca envolta la ciutat, 
-Portant pau als uns, inquietud als altres.
-Mentres que la multitud vil dels mortals, 
-Sota el fuet del Plaer, aquest botxí sense mercè, 
-Va a collir remordiments a la festa servil, 
-Dolor meva, dóna'm la mà; vine cap aquí,
 
-'`'json
-'`'
+Sigues sàvia, oh Dolor meva, i estigues més tranquil·la.
+Reclamaves el Vespre; baixa; vet-lo aquí:
+Una atmosfera fosca embolcalla la ciutat,
+Als uns portant la pau, als altres neguit.
+
+Mentre dels mortals la multitud vil,
+Sota el fuet del Plaer, aquest botxí sense pietat,
+Va recollir remordiments en la festa servil,
+Dolor meva, dona'm la mà; vine cap aquí,
+
+Lluny d'ells. Veus com s'inclinen els Anys difunts,
+Als balcons del cel, amb vestits antics;
+Veus com sorgeix del fons de les aigües el Penediment somrient;
+
+El Sol moribund que s'adorm sota un arc,
+I, com un llarg sudari que s'arrossega a l'Orient,
+Sent, estimada meva, sent la dolça Nit que camina.
+
+---
+
+## 20. El Rellotge
+
+## CVII
+EL RELLOTGE
+
+Rellotge!, déu sinistre, espantós, impassible,
+El dit del qual ens amenaça i ens diu: «Recorda!
+Les Dolors vibrants en el teu cor ple de temor
+Es clavaran aviat com en una diana;
+
+El Plaer vaporós fugirà cap a l'horitzó
+Com una sílfi cap al fons del teló;
+Cada instant et devora un tros de la delícia
+Concedida a cada home per tota la seva estació.
+
+Tres mil sis-cents cops per hora, el Segon
+Xiuxiueja: Recorda! —Ràpid, amb la seva veu
+D'insecte, l'Ara diu: Jo sóc l'Abans,
+I he xuplat la teva vida amb la meva trompa immunda!
+
+Remember! Souviens-toi!, pròdig! Esto memor!
+(El meu goll de metall parla totes les llengües.)
+Els minuts, mortal juganer, són gangues
+Que no cal deixar anar sense extreure'n l'or!
+
+Recorda que el Temps és un jugador àvid
+Que guanya sense fer trampes, sempre!, és la llei.
+El dia decreix; la nit augmenta; recorda!
+L'abisme té sempre set; la clepsidra es buida.
+
+Aviat sonarà l'hora en què el diví Atzar,
+En què l'augusta Virtut, la teva esposa encara verge,
+En què el Penediment mateix (oh!, l'últim alberg!),
+En què tot et dirà: Mor, vell covard!, és massa tard!»
 
 ---
 
