@@ -22,7 +22,7 @@ cmd_add() {
     
     if [ -z "$type" ] || [ -z "$instruction" ]; then
         echo "Ús: task-manager.sh add <type> <instruction> [params_json]"
-        echo "Tipus: fix | test | code-review | translate | refactor | maintain"
+        echo "Tipus: fix | test | code-review | translate | refactor | maintain | consell-editorial"
         echo ""
         echo "Exemples:"
         echo "  task-manager.sh add test 'Executa tots els tests del projecte'"
@@ -47,10 +47,11 @@ cmd_add() {
         translate)   priority=3; max_duration=60 ;;
         refactor)    priority=4; max_duration=60 ;;
         maintain)    priority=5; max_duration=20 ;;
-        fetch)       priority=1; max_duration=15 ;;
-        supervision)      priority=2; max_duration=30 ;;
-        design)           priority=4; max_duration=15 ;;
-        improve-openclaw) priority=2; max_duration=45 ;;
+        fetch)              priority=1; max_duration=15 ;;
+        supervision)        priority=2; max_duration=30 ;;
+        consell-editorial)  priority=2; max_duration=30 ;;
+        design)             priority=4; max_duration=15 ;;
+        improve-openclaw)   priority=2; max_duration=45 ;;
     esac
 
     local task_file="$TASKS_DIR/pending/${task_id}.json"
