@@ -26,8 +26,6 @@ import re
 import time
 import unicodedata
 from pathlib import Path
-from typing import Optional as Opt
-from dataclasses import dataclass, field
 from enum import Enum
 from typing import TYPE_CHECKING, Callable, Literal
 
@@ -43,9 +41,9 @@ from core import EstatPipeline, MemoriaContextual, ValidadorFinal
 
 # Agents V2 (nous)
 from agents.v2.analitzador_pre import AnalitzadorPreTraduccio, SelectorExemplesFewShot
-from agents.v2.traductor_enriquit import TraductorEnriquit, ResultatTraduccio
+from agents.v2.traductor_enriquit import TraductorEnriquit
 from agents.v2.avaluador_dimensional import AvaluadorDimensional, AvaluadorSimple
-from agents.v2.refinador_iteratiu import RefinadorIteratiu, ResultatRefinament
+from agents.v2.refinador_iteratiu import RefinadorIteratiu
 from agents.v2.models import (
     AnalisiPreTraduccio,
     ContextTraduccioEnriquit,
@@ -320,7 +318,7 @@ class PipelineV2:
             )
 
         # Dashboard
-        self.dashboard: Opt[TranslationDashboard] = None
+        self.dashboard: "TranslationDashboard | None" = None
         if DASHBOARD_AVAILABLE and self.config.mostrar_dashboard:
             self.dashboard = global_dashboard
 
@@ -941,7 +939,7 @@ class PipelineV2:
                             self.estat.completar_chunk(chunk_id, qualitat=7.5)
                             self._guardar_estat_amb_memoria()
 
-                except ContentFilterError as e:
+                except ContentFilterError:
                     # Error de filtratge de contingut: suggerir chunks més petits
                     error_msg = (
                         f"Chunk {i+1} bloquejat per filtratge de contingut. "
@@ -958,7 +956,7 @@ class PipelineV2:
                     resultats_chunks.append(ResultatChunk(
                         chunk_id=i + 1,
                         text_original=chunk,
-                        traduccio_final=f"[FILTRE DE CONTINGUT: Fragment massa sensible]",
+                        traduccio_final="[FILTRE DE CONTINGUT: Fragment massa sensible]",
                         aprovat=False,
                     ))
 
@@ -1609,17 +1607,6 @@ Retorna NOMÉS la traducció millorada. Ha de sonar natural en català."""
             "",
             "---",
             "",
-        ]
-
-        # Agrupar notes per tipus per a millor organització
-        tipus_ordre = [
-            "historic",
-            "prosopografic",
-            "cultural",
-            "terminologic",
-            "intertextual",
-            "geographic",
-            "textual",
         ]
 
         tipus_noms = {
