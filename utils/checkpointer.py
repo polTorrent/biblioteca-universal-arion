@@ -29,12 +29,12 @@ class ChunkCheckpoint(BaseModel):
     text_revisat: str | None = None
     text_perfeccionat: str | None = None
     text_anotat: str | None = None
-    notes: list[dict] = Field(default_factory=list)
+    notes: list[dict[str, Any]] = Field(default_factory=list)
     iteracions_revisor: int = 0
     iteracions_perfeccionament: int = 0
     qualitat: float | None = None
     error_message: str | None = None
-    metadata: dict = Field(default_factory=dict)
+    metadata: dict[str, Any] = Field(default_factory=dict)
     timestamp_inici: datetime | None = None
     timestamp_fi: datetime | None = None
 
@@ -176,17 +176,7 @@ class Checkpointer:
         with open(filepath, "r", encoding="utf-8") as f:
             data = json.load(f)
 
-        # Convertir strings de datetime a objectes datetime
-        for field in ["created_at", "updated_at"]:
-            if field in data and isinstance(data[field], str):
-                data[field] = datetime.fromisoformat(data[field])
-
-        for chunk in data.get("chunks", []):
-            for field in ["timestamp_inici", "timestamp_fi"]:
-                if field in chunk and chunk[field] and isinstance(chunk[field], str):
-                    chunk[field] = datetime.fromisoformat(chunk[field])
-
-        self.checkpoint = PipelineCheckpoint(**data)
+        self.checkpoint = PipelineCheckpoint.model_validate(data)
         return self.checkpoint
 
     def existeix(self, sessio_id: str) -> bool:
@@ -219,8 +209,11 @@ class Checkpointer:
         """
         incomplets = []
         for filepath in self.checkpoint_dir.glob("*.checkpoint.json"):
-            with open(filepath, "r", encoding="utf-8") as f:
-                data = json.load(f)
+            try:
+                with open(filepath, "r", encoding="utf-8") as f:
+                    data = json.load(f)
+            except (json.JSONDecodeError, OSError):
+                continue
             if data.get("fase_actual") not in ["completat", "error"]:
                 chunks_completats = sum(
                     1 for c in data.get("chunks", []) if c.get("estat") == "completat"
@@ -319,6 +312,7 @@ class Checkpointer:
             Llista de diccionaris amb informació detallada de cada sessió.
         """
         sessions = []
+        previous_checkpoint = self.checkpoint
         for filepath in self.checkpoint_dir.glob("*.checkpoint.json"):
             sessio_id = filepath.stem.replace(".checkpoint", "")
             try:
@@ -350,6 +344,7 @@ class Checkpointer:
                     "updated_at": datetime.min,
                 })
 
+        self.checkpoint = previous_checkpoint
         return sorted(sessions, key=lambda x: x.get("updated_at", datetime.min), reverse=True)
 
     def _calcular_qualitat_mitjana(self, checkpoint: PipelineCheckpoint) -> float | None:
@@ -625,6 +620,7 @@ class Checkpointer:
             self.checkpoint.fase_actual = "error"
             if error_message:
                 self.checkpoint.errors_count += 1
+                self.logger.log_error("Checkpointer", f"Error global pipeline: {error_message}")
             self._save()
 
     def eliminar(self, sessio_id: str) -> bool:
