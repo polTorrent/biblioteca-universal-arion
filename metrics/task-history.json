@@ -520,5 +520,50 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_notes-del-subsol": {
+    "events": [
+      {
+        "timestamp": 1772160614.14979,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptscercador_fonts_v2py-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772160614.781816,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_crito_wikisourcepy-imports-bugs-typ": {
+    "events": [
+      {
+        "timestamp": 1772160614.9074728,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptscompile_taopy-imports-bugs-typing-error-": {
+    "events": [
+      {
+        "timestamp": 1772160615.0271986,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_sade_justinepy-imports-bugs-typin": {
+    "events": [
+      {
+        "timestamp": 1772160615.1482782,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
