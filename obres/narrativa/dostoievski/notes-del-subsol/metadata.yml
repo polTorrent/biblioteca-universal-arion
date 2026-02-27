@@ -3,18 +3,48 @@ obra:
   titol_original: "Записки из подполья"
   autor: "Fiódor Dostoievski"
   autor_original: "Фёдор Михайлович Достоевский"
-  traductor: "Editorial Clàssica"
+  traductor: "Biblioteca Arion (IA + comunitat)"
   any_original: 1864
   any_traduccio: 2026
   llengua_original: "rus"
-  descripcio: "Novella filosòfica considerada precursora de l'existencialisme. Un funcionari retirat de Sant Petersburg narra les seves reflexions amargues sobre la consciència, la llibertat i la civilització, seguides d'episodis humiliants de la seva joventut."
+  genere: narrativa
+  subgenere: "novella filosòfica"
+  descripcio: >
+    Novella filosòfica considerada precursora de l'existencialisme. Un funcionari
+    retirat de Sant Petersburg narra les seves reflexions amargues sobre la
+    consciència, la llibertat i la civilització, seguides d'episodis humiliants
+    de la seva joventut. Publicada el 1864 a la revista Época, l'obra anticipa
+    temes centrals de l'existencialisme i la psicologia moderna: la paràlisi per
+    excés de consciència, el conflicte entre raó i voluntat, la impossibilitat
+    de l'amor sense domini, i la rebel·lia irracional com a afirmació de la
+    llibertat humana.
+  font_original: "domini públic"
+  domini_public: true
+  temes:
+    - consciència i paràlisi
+    - lliure albir i determinisme
+    - alienació i ressentiment
+    - amor i domini
+    - racionalisme i utopia
+    - existencialisme
+  context:
+    tradicio: "Novel·la filosòfica russa del segle XIX"
+    influencies:
+      - "Confessions (Rousseau)"
+      - "Què fer? (Txernixevski)"
+      - "Ànimes mortes (Gógol)"
+    obres_relacionades:
+      - "Crim i càstig (Dostoievski, 1866)"
+      - "L'home del subsòl (Ralph Ellison, 1952)"
+      - "La nàusea (Sartre, 1938)"
 seccions: 2
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 35798
+  paraules_traduccio: 15699
+  notes: 13
+  termes_glossari: 15
 revisio:
-  estat: "en_progres"
-  qualitat: 0
-  data_revisio: ""
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: "2026-02-27"
+  requereix_revisio_humana: true
