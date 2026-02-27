@@ -1,20 +1,39 @@
 obra:
-  titol: "20 Poemes de Les Flors del Mal"
-  titol_original: "Les Fleurs du mal"
-  autor: "Charles Baudelaire"
-  autor_original: "Charles Baudelaire"
-  traductor: "Biblioteca Arion"
+  titol: 20 Poemes de Les Flors del Mal
+  titol_original: Les Fleurs du mal
+  autor: Charles Baudelaire
+  autor_original: Charles Baudelaire
+  traductor: Biblioteca Arion
   any_original: 1857
   any_traduccio: 2026
-  llengua_original: "francès"
-  genere: "poesia"
-  descripcio: "Selecció de 20 poemes de Les Fleurs du mal, obra mestra del simbolisme francès."
+  llengua_original: francès
+  genere: poesia
+  descripcio: Selecció de 20 poemes de Les Fleurs du mal, obra mestra del simbolisme
+    francès.
+  estadistiques:
+    paraules_traduccio: 3175
 estadistiques:
   paraules_original: 0
   paraules_traduccio: 0
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-02-27'
+avaluacio_final:
+  data: '2026-02-27T16:00:08.832525'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 57
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 57

@@ -6,8 +6,8 @@
     "llengua": "francès"
   },
   "timestamps": {
-    "inici": "2026-02-27T12:32:57.251478",
-    "ultima_activitat": "2026-02-27T12:58:02.941617"
+    "inici": "2026-02-27T16:03:40.682602",
+    "ultima_activitat": "2026-02-27T16:16:36.736413"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -21,15 +21,15 @@
       "chunk_1",
       "chunk_2",
       "chunk_3",
-      "chunk_4",
-      "chunk_5",
+      "chunk_4"
+    ],
+    "en_curs": "chunk_5",
+    "pendents": [
       "chunk_6",
       "chunk_7",
       "chunk_8",
-      "chunk_9"
-    ],
-    "en_curs": "chunk_10",
-    "pendents": [
+      "chunk_9",
+      "chunk_10",
       "chunk_11",
       "chunk_12",
       "chunk_13",
@@ -42,7 +42,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 5.0,
+    "qualitat_mitjana": 6.0,
     "temps_total_min": 0.0
   },
   "errors": [],
