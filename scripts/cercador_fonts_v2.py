@@ -16,7 +16,6 @@ Arquitectura de 3 capes:
 """
 
 import json
-import os
 import re
 import subprocess
 import sys
@@ -49,7 +48,7 @@ class FontTrobada:
 @dataclass
 class ResultatCerca:
     """Resultat complet de la cerca multi-capa."""
-    exit: bool = False
+    trobat: bool = False
     text: str | None = None
     font: FontTrobada | None = None
     fonts_provades: list[str] = field(default_factory=list)
@@ -213,7 +212,7 @@ class GutenbergAPI:
             with urllib.request.urlopen(req, timeout=15) as resp:
                 data = json.loads(resp.read().decode("utf-8"))
                 return data.get("results", [])
-        except Exception as e:
+        except Exception:
             return []
 
     @staticmethod
@@ -378,7 +377,10 @@ class InternetArchiveAPI:
             # Buscar fitxer .txt preferentment
             txt_files = [f for f in files if f.get("name", "").endswith(".txt")]
             if not txt_files:
-                txt_files = [f for f in files if f.get("name", "").endswith(".htm") or f.get("name", "").endswith(".html")]
+                txt_files = [
+                    f for f in files
+                    if f.get("name", "").endswith((".htm", ".html"))
+                ]
 
             if txt_files:
                 fname = txt_files[0]["name"]
@@ -458,7 +460,8 @@ class DescarregadorHTTP:
                 [
                     "curl", "-sL",
                     "--max-time", str(timeout),
-                    "-H", "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0",
+                    "-H", "User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:120.0) "
+                          "Gecko/20100101 Firefox/120.0",
                     "-H", "Accept: text/html,text/plain;q=0.9",
                     url,
                 ],
@@ -506,7 +509,10 @@ def _netejar_gutenberg(text: str) -> str:
         start = 0
         for i, line in enumerate(lines):
             stripped = line.strip().upper()
-            if any(x in stripped for x in ["PRODUCED BY", "DISTRIBUTED PROOFREADING", "HTTP://", "TRANSCRIBER"]):
+            if any(
+                x in stripped
+                for x in ["PRODUCED BY", "DISTRIBUTED PROOFREADING", "HTTP://", "TRANSCRIBER"]
+            ):
                 start = i + 1
                 continue
             if stripped and start > 0:
@@ -648,7 +654,7 @@ class CercadorFontsV2:
                     text = _html_a_text(html)
                     if text and len(text) > 500:
                         self.log(f"  ✅ Perseus: {len(text)} caràcters")
-                        resultat.exit = True
+                        resultat.trobat = True
                         resultat.text = text
                         resultat.font = FontTrobada(
                             nom_font="perseus",
@@ -661,9 +667,12 @@ class CercadorFontsV2:
                         self._guardar_si_cal(resultat, obra_dir)
                         return resultat
                     else:
-                        resultat.errors.append(f"Perseus: HTML rebut però text extret massa curt ({len(text) if text else 0})")
+                        mida = len(text) if text else 0
+                        resultat.errors.append(
+                            f"Perseus: HTML rebut però text extret massa curt ({mida})"
+                        )
                 else:
-                    resultat.errors.append(f"Perseus: descàrrega fallida o resposta curta")
+                    resultat.errors.append("Perseus: descàrrega fallida o resposta curta")
 
         # ── Capa 1a: Wikisource mapa intern (prioritat per originals no-anglesos) ──
         if llengua.lower() not in ["anglès", "english"]:
@@ -676,16 +685,16 @@ class CercadorFontsV2:
                     text = WikisourceAPI.obtenir_text(ws_lang, ws_page)
                     if text and len(text) > 500:
                         self.log(f"  ✅ Wikisource original: {len(text)} caràcters")
-                        resultat.exit = True
+                        resultat.trobat = True
                         resultat.text = text
                         resultat.font = FontTrobada(
                             nom_font="wikisource",
-                            url=f"https://{ws_lang}.wikisource.org/wiki/{__import__('urllib.parse', fromlist=['quote']).quote(ws_page)}",
+                            url=f"https://{ws_lang}.wikisource.org/wiki/{urllib.parse.quote(ws_page)}",
                             titol=titol, autor=autor, llengua=llengua,
                             text=text, qualitat=9, format="txt",
                             notes="Text original via mapa intern",
                         )
-                        resultat.temps_total = __import__('time').time() - inici
+                        resultat.temps_total = time.time() - inici
                         self._guardar_si_cal(resultat, obra_dir)
                         return resultat
 
@@ -697,7 +706,7 @@ class CercadorFontsV2:
             font = GutenbergAPI.obtenir_per_id(guten_id)
             if font and font.text and len(font.text) > 500:
                 self.log(f"  ✅ Gutenberg: {len(font.text)} caràcters")
-                resultat.exit = True
+                resultat.trobat = True
                 resultat.text = font.text
                 resultat.font = font
                 resultat.temps_total = time.time() - inici
@@ -715,7 +724,7 @@ class CercadorFontsV2:
             text = WikisourceAPI.obtenir_text(ws_lang, ws_page)
             if text and len(text) > 500:
                 self.log(f"  ✅ Wikisource: {len(text)} caràcters")
-                resultat.exit = True
+                resultat.trobat = True
                 resultat.text = text
                 resultat.font = FontTrobada(
                     nom_font="wikisource",
@@ -746,20 +755,20 @@ class CercadorFontsV2:
                     text = WikisourceAPI.obtenir_text(ws_lang, ws_title)
                     if text and len(text) > 500:
                         self.log(f"  ✅ Wikisource original: {len(text)} caràcters")
-                        resultat.exit = True
+                        resultat.trobat = True
                         resultat.text = text
                         resultat.font = FontTrobada(
                             nom_font="wikisource",
-                            url=f"https://{ws_lang}.wikisource.org/wiki/{__import__('urllib.parse', fromlist=['quote']).quote(ws_title)}",
+                            url=f"https://{ws_lang}.wikisource.org/wiki/{urllib.parse.quote(ws_title)}",
                             titol=ws_title, autor=autor, llengua=llengua,
                             text=text, qualitat=9, format="txt",
                             notes="Text original (no traducció)",
                         )
-                        resultat.temps_total = __import__('time').time() - inici
+                        resultat.temps_total = time.time() - inici
                         self._guardar_si_cal(resultat, obra_dir)
                         return resultat
 
-        self.log(f"  🔍 Cercant a Gutenberg API...")
+        self.log("  🔍 Cercant a Gutenberg API...")
         resultat.fonts_provades.append("gutenberg_search")
         resultats_guten = GutenbergAPI.cercar(autor, titol)
         for book in resultats_guten[:3]:
@@ -770,7 +779,7 @@ class CercadorFontsV2:
             text = GutenbergAPI.descarregar_text(book_id)
             if text and len(text) > 500:
                 self.log(f"  ✅ Gutenberg #{book_id}: {len(text)} caràcters")
-                resultat.exit = True
+                resultat.trobat = True
                 resultat.text = text
                 resultat.font = FontTrobada(
                     nom_font="gutenberg",
@@ -796,7 +805,7 @@ class CercadorFontsV2:
                 text = WikisourceAPI.obtenir_text(ws_lang, ws_title)
                 if text and len(text) > 500:
                     self.log(f"  ✅ Wikisource: {len(text)} caràcters")
-                    resultat.exit = True
+                    resultat.trobat = True
                     resultat.text = text
                     resultat.font = FontTrobada(
                         nom_font="wikisource",
@@ -809,7 +818,7 @@ class CercadorFontsV2:
                     return resultat
 
         # ── Capa 1e: Internet Archive ──
-        self.log(f"  🔍 Cercant a Internet Archive...")
+        self.log("  🔍 Cercant a Internet Archive...")
         resultat.fonts_provades.append("internet_archive")
         resultats_ia = InternetArchiveAPI.cercar(autor, titol, llengua)
         for doc in resultats_ia[:3]:
@@ -820,7 +829,7 @@ class CercadorFontsV2:
             text = InternetArchiveAPI.descarregar_text(ia_id)
             if text and len(text) > 500:
                 self.log(f"  ✅ Internet Archive: {len(text)} caràcters")
-                resultat.exit = True
+                resultat.trobat = True
                 resultat.text = text
                 resultat.font = FontTrobada(
                     nom_font="internet_archive",
@@ -847,7 +856,7 @@ class CercadorFontsV2:
                     text = _html_a_text(text)
                 if len(text) > 500:
                     self.log(f"  ✅ {nom}: {len(text)} caràcters")
-                    resultat.exit = True
+                    resultat.trobat = True
                     resultat.text = text
                     resultat.font = FontTrobada(
                         nom_font=nom, url=url,
@@ -949,12 +958,12 @@ def main():
     resultat = cercador.obtenir_text(autor, titol, llengua, obra_dir)
 
     print("\n" + "=" * 60)
-    if resultat.exit:
+    if resultat.trobat:
         print(f"✅ TROBAT: {resultat.font.nom_font}")
         print(f"   URL: {resultat.font.url}")
         print(f"   Caràcters: {len(resultat.text)}")
         print(f"   Temps: {resultat.temps_total:.1f}s")
-        print(f"\nPrimers 500 caràcters:")
+        print("\nPrimers 500 caràcters:")
         print("-" * 40)
         print(resultat.text[:500])
     else:

@@ -100,7 +100,7 @@ def main():
         if CercadorFontsV2:
             cercador = CercadorFontsV2(verbose=True)
             resultat = cercador.obtenir_text(autor, titol, llengua, obra_dir)
-            if resultat.exit and resultat.text:
+            if resultat.trobat and resultat.text:
                 print(f"✅ Font trobada: {resultat.font.nom_font} ({len(resultat.text)} chars)")
             else:
                 print(f"❌ No s'ha trobat cap font per {titol} de {autor}")
