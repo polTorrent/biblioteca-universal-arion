@@ -8,6 +8,7 @@
 #   3. check_web_health    — Revisió automàtica de la web
 #   4. track_evolution     — Memòria d'evolució del projecte
 #   5. propose_features    — Propostes de funcionalitats del roadmap
+#   6. consell_editorial   — Manté la obra-queue.json plena amb obres noves
 #
 # Ús:
 #   source scripts/system-brain.sh          # Carregar funcions (pel heartbeat)
@@ -737,6 +738,47 @@ with open(roadmap_path, 'w') as f:
 
 
 # =============================================================================
+# CONSELL EDITORIAL — Manté la obra-queue.json plena
+# =============================================================================
+run_consell_editorial() {
+    brain_log "📚 Consell Editorial — Comprovant cua d'obres..."
+
+    local pending
+    pending=$(python3 -c "
+import json
+with open('$QUEUE') as f:
+    data = json.load(f)
+pending = [o for o in data.get('obres', []) if o.get('status') == 'pending']
+print(len(pending))
+" 2>/dev/null || echo "0")
+
+    local MAX_PENDING=10
+    if [ "$pending" -ge "$MAX_PENDING" ] 2>/dev/null; then
+        brain_log "   Cua amb $pending obres pending (>= $MAX_PENDING). No cal afegir-ne."
+        return
+    fi
+
+    brain_log "   Cua amb $pending obres pending (< $MAX_PENDING). Llançant consell editorial..."
+
+    local output
+    output=$(bash "$PROJECT/scripts/consell-editorial.sh" 2>&1) || {
+        brain_log "   ❌ Error executant consell-editorial.sh"
+        return
+    }
+
+    # Extreure quantes s'han afegit del resum
+    local afegides
+    afegides=$(echo "$output" | grep -oP '\d+ afegides' | grep -oP '\d+' || echo "0")
+    brain_log "   ✅ Consell editorial completat: $afegides obres noves afegides"
+
+    # Log complet
+    echo "$output" | while IFS= read -r line; do
+        brain_log "   $line"
+    done
+}
+
+
+# =============================================================================
 # EXECUCIÓ DIÀRIA (totes les funcions no-helper)
 # =============================================================================
 run_daily() {
@@ -770,6 +812,7 @@ run_daily() {
     check_web_health
     track_evolution
     propose_features
+    run_consell_editorial
 
     date +%s > "$LAST_RUN_FILE"
 
@@ -815,6 +858,10 @@ if [ "${BASH_SOURCE[0]}" = "$0" ]; then
             _init_files
             _with_openclaw_guard propose_features
             ;;
+        consell-editorial|run_consell_editorial)
+            _init_files
+            _with_openclaw_guard run_consell_editorial
+            ;;
         check-duplicate)
             # Només lectura, no cal stop/start
             _init_files
@@ -830,7 +877,7 @@ if [ "${BASH_SOURCE[0]}" = "$0" ]; then
             _record_task "$2" "$3"
             ;;
         *)
-            echo "Ús: system-brain.sh [daily|propose-translations|check-web|track-evolution|propose-features|check-duplicate]"
+            echo "Ús: system-brain.sh [daily|propose-translations|check-web|track-evolution|propose-features|consell-editorial|check-duplicate]"
             exit 1
             ;;
     esac
