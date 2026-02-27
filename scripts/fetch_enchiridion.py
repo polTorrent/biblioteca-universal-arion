@@ -5,7 +5,10 @@ Font: Greek Wikisource (el.wikisource.org)
 """
 
 import re
+import sys
+import urllib.error
 import urllib.request
+from pathlib import Path
 
 # Greek numerals mapping for chapter headers
 GREEK_NUMERALS = {
@@ -23,7 +26,7 @@ GREEK_NUMERALS = {
 }
 
 
-def fetch_raw_text():
+def fetch_raw_text() -> str:
     """Fetch raw wikitext from Greek Wikisource."""
     url = (
         'https://el.wikisource.org/w/index.php?'
@@ -31,11 +34,18 @@ def fetch_raw_text():
         '&action=raw'
     )
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 BibliotecaArion/1.0'})
-    resp = urllib.request.urlopen(req, timeout=30)
+    try:
+        resp = urllib.request.urlopen(req, timeout=30)
+    except urllib.error.HTTPError as e:
+        print(f"Error HTTP {e.code}: {e.reason}")
+        sys.exit(1)
+    except urllib.error.URLError as e:
+        print(f"Error de connexió: {e.reason}")
+        sys.exit(1)
     return resp.read().decode('utf-8')
 
 
-def clean_wikitext(raw):
+def clean_wikitext(raw: str) -> str:
     """Convert wikitext to clean markdown."""
     # Remove the header template
     text = re.sub(r'\{\{Κεφαλίδα.*?\}\}', '', raw, flags=re.DOTALL)
@@ -82,7 +92,7 @@ def clean_wikitext(raw):
     return text
 
 
-def main():
+def main() -> None:
     print("Descarregant text grec de l'Enchiridion d'Epíctet...")
     raw = fetch_raw_text()
     print(f"Descarregat: {len(raw)} caràcters")
@@ -90,6 +100,9 @@ def main():
     # Count chapters
     chapters = re.findall(r'^==\s*(.+?)\s*==$', raw, re.MULTILINE)
     print(f"Capítols trobats: {len(chapters)}")
+    if not chapters:
+        print("Error: no s'han trobat capítols al text descarregat.")
+        sys.exit(1)
     print(f"Primer: {chapters[0]}, Últim: {chapters[-1]}")
 
     # Clean the text
@@ -110,7 +123,7 @@ def main():
     full_text = header + clean
 
     # Save
-    output_path = '/home/jo/biblioteca-universal-arion/scripts/enchiridion_greek.md'
+    output_path = Path(__file__).parent / 'enchiridion_greek.md'
     with open(output_path, 'w', encoding='utf-8') as f:
         f.write(full_text)
 
