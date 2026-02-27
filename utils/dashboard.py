@@ -1,12 +1,10 @@
 """Dashboard interactiu en temps real per al pipeline de traducció."""
 
-import time
 from dataclasses import dataclass, field
 from datetime import datetime
 from typing import Any
 
 from rich.console import Console, Group
-from rich.layout import Layout
 from rich.live import Live
 from rich.panel import Panel
 from rich.progress import (
@@ -21,7 +19,6 @@ from rich.progress import (
     TimeRemainingColumn,
 )
 from rich.table import Table
-from rich.text import Text
 
 
 @dataclass
@@ -121,7 +118,7 @@ class Dashboard:
             self.state.global_progress / self.state.total_stages * 100
             if self.state.total_stages > 0 else 0
         )
-        bar_filled = int(progress_pct / 10)
+        bar_filled = min(int(progress_pct / 10), 10)
         bar_empty = 10 - bar_filled
         progress_bar = "█" * bar_filled + "░" * bar_empty
 
@@ -147,7 +144,7 @@ Progrés global: [{progress_bar}] {progress_pct:.0f}%{chunk_info}"""
             # Progress de l'agent
             if self.state.agent_total > 0:
                 pct = self.state.agent_progress / self.state.agent_total * 100
-                bar_filled = int(pct / 5)
+                bar_filled = min(int(pct / 5), 20)
                 bar_empty = 20 - bar_filled
                 progress_bar = "█" * bar_filled + "░" * bar_empty
                 progress_str = f"\n[{progress_bar}] {pct:.0f}%"
