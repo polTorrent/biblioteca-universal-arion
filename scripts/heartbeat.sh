@@ -168,54 +168,90 @@ check_worker() {
 # ── 1. Obres pendents de traducció ───────────────────────────────────────────
 check_translations() {
     log "📚 Analitzant obres pendents..."
-    
+
     [ ! -f "$QUEUE" ] && return 0
 
     python3 -c "
-import json, os
+import json, os, unicodedata, re
 
 queue = json.load(open('$QUEUE'))
 project = '$PROJECT'
+tasks_dir = '$TASKS_DIR'
+
+def slugify(text):
+    \"\"\"Genera slug normalitzat: minúscules, sense accents, guions.\"\"\"
+    text = unicodedata.normalize('NFKD', text.lower())
+    text = ''.join(c for c in text if not unicodedata.combining(c))
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    return text.strip('-')
+
+def task_exists_in_dir(titol, directory):
+    \"\"\"Comprova si ja existeix una tasca amb aquest títol a un directori.\"\"\"
+    if not os.path.isdir(directory):
+        return False
+    for f in os.listdir(directory):
+        if f.endswith('.json'):
+            try:
+                with open(os.path.join(directory, f)) as fh:
+                    content = fh.read()
+                if titol.lower() in content.lower():
+                    return True
+            except:
+                pass
+    return False
 
 for obra in queue.get('obres', []):
     status = obra.get('status', 'pending')
     if status in ('done', 'skip', 'validated'):
         continue
-    
+
     autor = obra['autor']
     titol = obra['titol']
     llengua = obra.get('llengua', 'desconeguda')
     categoria = obra.get('categoria', 'filosofia')
-    slug_autor = autor.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a')
-    slug_titol = titol.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a').replace('í', 'i')
-    
-    obra_dir = os.path.join(project, 'obres', categoria, slug_autor, slug_titol)
-    
+
+    # Usar obra_dir explícit si existeix al JSON, sinó calcular slug
+    obra_dir_rel = obra.get('obra_dir', '')
+    if obra_dir_rel:
+        obra_dir = os.path.join(project, obra_dir_rel)
+    else:
+        obra_dir = os.path.join(project, 'obres', categoria, slugify(autor), slugify(titol))
+
     has_translation = False
     has_dir = os.path.isdir(obra_dir)
     if has_dir:
         files = os.listdir(obra_dir)
         has_translation = any(
-            f.endswith('.md') or f.endswith('.txt')
-            for f in files if any(k in f.lower() for k in ['traduccio', 'traducció', 'catala', 'català'])
+            f.endswith('.md') and any(k in f.lower() for k in ['traduccio', 'traducció', 'catala', 'català', 'chapter', 'capitol'])
+            for f in files
         )
-    
+
+    # Comprovar dedup: no crear tasca si ja n'hi ha a pending, running O failed
+    if task_exists_in_dir(titol, os.path.join(tasks_dir, 'pending')):
+        continue
+    if task_exists_in_dir(titol, os.path.join(tasks_dir, 'running')):
+        continue
+    if task_exists_in_dir(titol, os.path.join(tasks_dir, 'failed')):
+        continue
+
+    obra_dir_rel = obra_dir_rel or os.path.relpath(obra_dir, project)
+
     if not has_dir:
-        print(f'NEW|{autor}|{titol}|{llengua}|{categoria}')
+        print(f'NEW|{autor}|{titol}|{llengua}|{obra_dir_rel}')
     elif not has_translation:
-        print(f'CONTINUE|{autor}|{titol}|{llengua}|{categoria}')
-" 2>/dev/null | while IFS='|' read -r action autor titol extra1 extra2; do
+        print(f'CONTINUE|{autor}|{titol}|{llengua}|{obra_dir_rel}')
+" 2>/dev/null | while IFS='|' read -r action autor titol lingua obra_path; do
         [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
-        
+
         case "$action" in
             NEW)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Tradueix '$titol' de $autor del $extra1 al català. 1) Busca text original a Perseus/Gutenberg/Wikisource, guarda a obres/$extra2/original.md. 2) Crea metadata.yml. 3) Executa: python3 scripts/traduir_pipeline.py obres/$extra2/. Si el pipeline falla, tradueix manualment amb glossari i notes. 4) Commit+push."
+                    add_task "translate" "Tradueix '$titol' de $autor del $lingua al català. Directori: $obra_path. 1) Crea directori mkdir -p $obra_path. 2) Busca text original a Gutenberg/Wikisource amb curl, guarda a $obra_path/original.md. 3) Crea $obra_path/metadata.yml. 4) Tradueix directament al català i guarda a $obra_path/traduccio.md. 5) Crea $obra_path/glossari.yml i $obra_path/notes.md. 6) git add $obra_path && git commit && git push."
                 fi
                 ;;
             CONTINUE)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Continua la traducció de '$titol' de $autor. Revisa obres/$extra2/ per veure què falta. Completa i verifica qualitat."
+                    add_task "translate" "Continua la traducció de '$titol' de $autor. Directori: $obra_path. Llegeix els fitxers existents, completa el que falta (traduccio.md, glossari.yml, notes.md, metadata.yml). Commit+push."
                 fi
                 ;;
         esac
