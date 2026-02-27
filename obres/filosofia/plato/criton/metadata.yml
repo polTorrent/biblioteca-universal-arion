@@ -1,58 +1,54 @@
-# Camps per al validador (nivell arrel)
-title: "Critó"
-author: "Plató"
-source_language: "grec"
-status: "revisat"
+title: Critó
+author: Plató
+source_language: grec
+status: revisat
 quality_score: 7.5
-date: "2026-02-25"
-
-# Camps detallats
+date: '2026-02-25'
 obra:
-  titol: "Critó"
-  titol_original: "Κρίτων"
-  autor: "Plató"
-  autor_original: "Πλάτων"
-  traductor: "Biblioteca Arion (IA + comunitat)"
-  any_original: "c. 399 aC"
+  titol: Critó
+  titol_original: Κρίτων
+  autor: Plató
+  autor_original: Πλάτων
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: c. 399 aC
   any_traduccio: 2026
-  llengua_original: "grec"
+  llengua_original: grec
   genere: filosofia
-  subgenere: "diàleg filosòfic"
-  descripcio: >
-    Diàleg platònic ambientat a la presó d'Atenes, on Sòcrates espera l'execució.
-    El seu amic Critó li proposa fugir, però Sòcrates refusa, argumentant que
-    cal obeir les lleis de la ciutat fins i tot quan ens perjudiquen. És un
-    text fonamental sobre l'ètica del deure, el contracte social i la relació
-    entre l'individu i l'Estat. El diàleg presenta la cèlebre prosopopeia de
-    les Lleis d'Atenes, que parlen en primera persona per defensar l'autoritat
-    de la polis.
-  font_original: "https://el.wikisource.org/wiki/Κρίτων"
+  subgenere: diàleg filosòfic
+  descripcio: 'Diàleg platònic ambientat a la presó d''Atenes, on Sòcrates espera
+    l''execució. El seu amic Critó li proposa fugir, però Sòcrates refusa, argumentant
+    que cal obeir les lleis de la ciutat fins i tot quan ens perjudiquen. És un text
+    fonamental sobre l''ètica del deure, el contracte social i la relació entre l''individu
+    i l''Estat. El diàleg presenta la cèlebre prosopopeia de les Lleis d''Atenes,
+    que parlen en primera persona per defensar l''autoritat de la polis.
+
+    '
+  font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0169%3Atext%3DCrito
   domini_public: true
   temes:
-    - filosofia política
-    - ètica
-    - obediència a la llei
-    - contracte social
-    - justícia
-  referencia_stephanus: "43a-54e"
+  - filosofia política
+  - ètica
+  - obediència a la llei
+  - contracte social
+  - justícia
+  referencia_stephanus: 43a-54e
   context:
     tradicio: filosofia grega clàssica
     influencies:
-      - Sòcrates
-      - tradició sofista
+    - Sòcrates
+    - tradició sofista
     obres_relacionades:
-      - "Apologia de Sòcrates (Plató)"
-      - "Fedó (Plató)"
-      - "República (Plató)"
+    - Apologia de Sòcrates (Plató)
+    - Fedó (Plató)
+    - República (Plató)
   estadistiques:
-    paraules_original: 4500
-    paraules_traduccio: 5022
+    paraules_original: 4408
+    paraules_traduccio: 300
     seccions: 9
     notes: 13
     termes_glossari: 7
-
 revisio:
-  estat: "validat"
-  qualitat: 7.5
-  data_revisio: "2026-02-26"
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-02-27'
   requereix_revisio_humana: false
