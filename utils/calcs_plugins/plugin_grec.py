@@ -1,13 +1,15 @@
+from __future__ import annotations
+
 import re
-from typing import List
-from .base import DetectorPlugin, CalcDetectat, TipusCalc
+
+from .base import DetectorPlugin, CalcDetectat
 
 class DetectorGrec(DetectorPlugin):
     @property
     def llengua(self) -> str:
         return "grec"
-        
-    def detectar(self, text: str) -> List[CalcDetectat]:
+
+    def detectar(self, text: str) -> list[CalcDetectat]:
         calcs = []
         men_de = re.search(r'per una banda.{5,50}per l\'altra', text, re.IGNORECASE)
         if men_de:
