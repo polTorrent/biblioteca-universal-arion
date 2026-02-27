@@ -20,3 +20,6 @@ revisio:
   estat: necessita_correccio
   qualitat: 6.5
   data_revisio: '2026-02-28'
+  revisor: Claude (supervisió automàtica v2)
+  errors_bloquejants: 22
+  errors_menors: 9
