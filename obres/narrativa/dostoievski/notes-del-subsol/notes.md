@@ -42,7 +42,7 @@ El debat filosòfic central de la Primera Part gira al voltant del determinisme 
 
 ## [10] La carta de Liza
 
-A la Segona Part, quan Liza mostra al narrador la carta del seu enamorat estudiant, aquest gest té un significat profund: és l'únic moment de l'obra en què un personatge mostra amb innocència i orgull una prova del seu valor com a ésser humà. Liza guarda la carta «com una joia» perquè demostra que algú l'ha estimada amb respecte. El narrador, incapaç d'una reacció generosa, se sent encara més miserabl per contrast.
+A la Segona Part, quan Liza mostra al narrador la carta del seu enamorat estudiant, aquest gest té un significat profund: és l'únic moment de l'obra en què un personatge mostra amb innocència i orgull una prova del seu valor com a ésser humà. Liza guarda la carta «com una joia» perquè demostra que algú l'ha estimada amb respecte. El narrador, incapaç d'una reacció generosa, se sent encara més miserable per contrast.
 
 ## [11] El bitllet de cinc rubles
 
