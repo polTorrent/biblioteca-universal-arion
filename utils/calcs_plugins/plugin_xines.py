@@ -13,7 +13,7 @@ class DetectorXines(DetectorPlugin):
         for match in classificadors:
             calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="Classificador xinès traduït literalment", suggeriment="Adaptar a forma natural", severitat=5.0, llengua_origen=self.llengua))
             
-        tema_comentari = re.finditer(r'\b(Aquesta cosa|Aquest assumpte|Aquell tema),\s*jo\s+', text)
+        tema_comentari = re.finditer(r'\b(Aquesta cosa|Aquest assumpte|Aquell tema),\s*jo\s+', text, re.IGNORECASE)
         for match in tema_comentari:
             calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="Estructura tema-comentari", suggeriment="Reformular", severitat=4.0, llengua_origen=self.llengua))
             
