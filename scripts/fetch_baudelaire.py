@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Fetch 20 poems from Les Fleurs du mal by Baudelaire from Wikisource (1868 edition)."""
 
-import html as html_module
+import html
 import json
 import re
 import sys
@@ -39,6 +39,10 @@ POEMS = [
 ]
 
 
+class FetchError(Exception):
+    """Error fetching a poem from Wikisource."""
+
+
 def fetch_poem_html(page_title: str) -> str:
     """Fetch rendered HTML for a poem page from Wikisource."""
     params = urllib.parse.urlencode({
@@ -54,9 +58,13 @@ def fetch_poem_html(page_title: str) -> str:
         data = json.loads(resp.read())
 
     if "error" in data:
-        return f"[Error: {data['error'].get('info', 'unknown')}]"
+        raise FetchError(data["error"].get("info", "unknown API error"))
 
-    return data.get("parse", {}).get("text", {}).get("*", "")
+    raw_html: str = data.get("parse", {}).get("text", {}).get("*", "")
+    if not raw_html.strip():
+        raise FetchError("empty response from API")
+
+    return raw_html
 
 
 def html_to_text(raw_html: str) -> str:
@@ -82,7 +90,7 @@ def html_to_text(raw_html: str) -> str:
     text = re.sub(r"<[^>]+>", "", text)
 
     # Decode HTML entities
-    text = html_module.unescape(text)
+    text = html.unescape(text)
 
     # Clean up lines
     lines = [line.strip() for line in text.split("\n")]
@@ -126,19 +134,13 @@ def main() -> int:
 
         try:
             raw_html = fetch_poem_html(page)
-            if raw_html.startswith("[Error:"):
-                print(f"FAIL: {raw_html}")
-                parts.append(f"## {i}. {display_title}")
-                parts.append("")
-                parts.append(f"*{raw_html}*")
-            else:
-                text = html_to_text(raw_html)
-                char_count = len(text)
-                print(f"OK ({char_count} chars)")
-                parts.append(f"## {i}. {display_title}")
-                parts.append("")
-                parts.append(text)
-                success_count += 1
+            text = html_to_text(raw_html)
+            char_count = len(text)
+            print(f"OK ({char_count} chars)")
+            parts.append(f"## {i}. {display_title}")
+            parts.append("")
+            parts.append(text)
+            success_count += 1
         except Exception as e:
             print(f"FAIL: {e}")
             parts.append(f"## {i}. {display_title}")
