@@ -743,13 +743,17 @@ run_daily() {
     brain_log "═══════════════════════════════════════════════════"
     brain_log "🧠 SYSTEM BRAIN — Execució diària"
 
-    # Comprovar si ja s'ha executat avui
+    # Comprovar si han passat 2+ hores des de l'última execució
     local LAST_RUN_FILE="$TASKS_DIR/.brain-last-run"
+    local INTERVAL=7200  # 2 hores en segons
     if [ -f "$LAST_RUN_FILE" ]; then
-        local last_run_date
-        last_run_date=$(cat "$LAST_RUN_FILE" 2>/dev/null)
-        if [ "$last_run_date" = "$(date +%Y-%m-%d)" ]; then
-            brain_log "   Ja executat avui. Saltant."
+        local last_run_ts now_ts elapsed elapsed_min
+        last_run_ts=$(cat "$LAST_RUN_FILE" 2>/dev/null)
+        now_ts=$(date +%s)
+        elapsed=$(( now_ts - last_run_ts ))
+        if [ "$elapsed" -lt "$INTERVAL" ] 2>/dev/null; then
+            elapsed_min=$(( elapsed / 60 ))
+            brain_log "   Executat fa ${elapsed_min}min. Saltant."
             brain_log "═══════════════════════════════════════════════════"
             return
         fi
@@ -767,7 +771,7 @@ run_daily() {
     track_evolution
     propose_features
 
-    date +%Y-%m-%d > "$LAST_RUN_FILE"
+    date +%s > "$LAST_RUN_FILE"
 
     _brain_start_openclaw
     trap - EXIT
