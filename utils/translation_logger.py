@@ -12,28 +12,15 @@ Proporciona logging detallat amb:
 """
 
 import json
-import sys
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
-from typing import Any, Callable
+from typing import Callable
 
 from rich.console import Console
 from rich.live import Live
 from rich.panel import Panel
-from rich.progress import (
-    Progress,
-    SpinnerColumn,
-    TextColumn,
-    BarColumn,
-    TaskProgressColumn,
-    TimeElapsedColumn,
-    TimeRemainingColumn,
-    MofNCompleteColumn,
-)
 from rich.table import Table
-from rich.layout import Layout
-from rich.text import Text
 
 
 class LogLevel(str, Enum):
@@ -253,7 +240,8 @@ class TranslationLogger:
     def start_chunk(self, chunk_num: int, chunk_size: int):
         """Registra inici d'un chunk."""
         self.stats["current_chunk"] = chunk_num
-        self.info("CHUNK", f"Processant chunk {chunk_num}/{self.stats['total_chunks']} ({chunk_size:,} chars)")
+        total = self.stats['total_chunks']
+        self.info("CHUNK", f"Processant chunk {chunk_num}/{total} ({chunk_size:,} chars)")
 
     def complete_chunk(
         self,
@@ -305,7 +293,8 @@ class TranslationLogger:
         status = "✅" if score >= 7.0 else "⚠️" if score >= 5.0 else "❌"
         self.info(
             "REVISIÓ",
-            f"Chunk {chunk_num} ronda {round_num} | {status} Puntuació: {score:.1f}/10 | Issues: {issues}"
+            f"Chunk {chunk_num} ronda {round_num} | "
+            f"{status} Puntuació: {score:.1f}/10 | Issues: {issues}"
         )
 
     def log_correction(self, chunk_num: int, corrections: int):
@@ -325,16 +314,20 @@ class TranslationLogger:
 
     def log_cost_warning(self, current: float, limit: float):
         """Avís de cost."""
+        if limit <= 0:
+            return
         percentage = (current / limit) * 100
         if percentage >= 90:
-            self.warning("COST", f"⚠️ Cost al {percentage:.0f}% del límit (€{current:.2f}/€{limit:.2f})")
+            msg = f"⚠️ Cost al {percentage:.0f}% del límit (€{current:.2f}/€{limit:.2f})"
+            self.warning("COST", msg)
         elif percentage >= 75:
             self.info("COST", f"Cost al {percentage:.0f}% del límit (€{current:.2f}/€{limit:.2f})")
 
     def complete_pipeline(self):
         """Registra finalització del pipeline."""
         duration = (datetime.now() - self.stats["start_time"]).total_seconds()
-        avg_quality = sum(self.stats["quality_scores"]) / len(self.stats["quality_scores"]) if self.stats["quality_scores"] else 0
+        scores = self.stats["quality_scores"]
+        avg_quality = sum(scores) / len(scores) if scores else 0
 
         self.console.print()
         self.console.print(Panel.fit(
@@ -399,9 +392,11 @@ class LiveDashboard:
         stats = self.logger.get_stats()
 
         # Calcular valors
-        progress = stats["completed_chunks"] / stats["total_chunks"] * 100 if stats["total_chunks"] > 0 else 0
+        total = stats["total_chunks"]
+        progress = stats["completed_chunks"] / total * 100 if total > 0 else 0
         elapsed = (datetime.now() - stats["start_time"]).total_seconds()
-        avg_quality = sum(stats["quality_scores"]) / len(stats["quality_scores"]) if stats["quality_scores"] else 0
+        scores = stats["quality_scores"]
+        avg_quality = sum(scores) / len(scores) if scores else 0
 
         # Estimar temps restant
         if stats["completed_chunks"] > 0:
@@ -417,7 +412,8 @@ class LiveDashboard:
         table.add_column(style="cyan")
         table.add_column(style="white")
 
-        table.add_row("📦 Progrés", f"{stats['completed_chunks']}/{stats['total_chunks']} chunks ({progress:.0f}%)")
+        chunks_str = f"{stats['completed_chunks']}/{total} chunks ({progress:.0f}%)"
+        table.add_row("📦 Progrés", chunks_str)
         table.add_row("⭐ Qualitat", f"{avg_quality:.1f}/10")
         table.add_row("🔤 Tokens", f"{stats['total_tokens']:,}")
         table.add_row("💰 Cost", f"€{stats['total_cost']:.4f}")
@@ -429,9 +425,7 @@ class LiveDashboard:
         bar_width = 30
         filled = int(bar_width * progress / 100)
         bar = "█" * filled + "░" * (bar_width - filled)
-
-        content = Text()
-        content.append(f"\n{bar} {progress:.0f}%\n\n", style="green")
+        table.add_row("📊 Barra", f"{bar} {progress:.0f}%")
 
         return Panel(
             table,
