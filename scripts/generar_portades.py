@@ -87,7 +87,8 @@ def determinar_genere(metadata: dict, obra_dir: Path) -> str:
         return mapa_genere[genere_meta]
 
     # Deduir del path (obres/CATEGORIA/autor/obra)
-    parts = obra_dir.relative_to(ROOT / "obres").parts if obra_dir.is_relative_to(ROOT / "obres") else ()
+    obres_root = ROOT / "obres"
+    parts = obra_dir.relative_to(obres_root).parts if obra_dir.is_relative_to(obres_root) else ()
     if parts:
         categoria = parts[0].lower()
         if categoria in mapa_genere:
@@ -176,7 +177,7 @@ def generar_portada(
 
     # Comprovar si ja existeix
     if portada_path.exists() and not force:
-        print(f"  Ja te portada: {obra_dir.relative_to(ROOT)}")
+        print(f"  Ja té portada: {obra_dir.relative_to(ROOT)}")
         return False
 
     # Carregar metadata
@@ -267,25 +268,17 @@ def main() -> None:
         return
 
     # Inicialitzar agent portadista
-    agent: AgentPortadista | None = None
-    if not args.dry_run:
-        try:
-            agent = AgentPortadista(portadista_config=PortadistaConfig())
-            if not agent.venice:
-                print("Error: Venice client no disponible. Configura VENICE_API_KEY a .env")
-                sys.exit(1)
-        except Exception as e:
-            print(f"Error inicialitzant agent portadista: {e}")
-            sys.exit(1)
-    else:
-        # Dry run no necessita Venice
-        try:
-            agent = AgentPortadista(portadista_config=PortadistaConfig())
-        except Exception:
-            # Si falla per manca de Venice, creem amb venice=None (ok per dry run)
-            agent = AgentPortadista.__new__(AgentPortadista)
-            agent.portadista_config = PortadistaConfig()
-            agent.venice = None
+    # CLAUDECODE=1 fa que BaseAgent no creï client Anthropic (usa subscripció).
+    # VeniceError es captura internament a AgentPortadista.__init__ (venice=None).
+    try:
+        agent = AgentPortadista(portadista_config=PortadistaConfig())
+    except Exception as e:
+        print(f"Error inicialitzant agent portadista: {e}")
+        sys.exit(1)
+
+    if not args.dry_run and not agent.venice:
+        print("Error: Venice client no disponible. Configura VENICE_API_KEY a .env")
+        sys.exit(1)
 
     # Determinar obres a processar
     if args.obra:
