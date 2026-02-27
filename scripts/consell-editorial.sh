@@ -268,7 +268,7 @@ log "Generant propostes via Claude..."
 prompt=$(generar_prompt "$resum")
 
 # Cridar Claude amb timeout i CLAUDECODE netejat per evitar nested sessions
-resposta=$(unset CLAUDECODE; timeout 90 claude -p "$prompt" --max-turns 1 2>/dev/null) || {
+resposta=$(unset CLAUDECODE; timeout 90 claude -p "$prompt" --max-turns 3 --output-format text 2>/dev/null) || {
     log "❌ Error cridant Claude. Abortant."
     exit 1
 }
