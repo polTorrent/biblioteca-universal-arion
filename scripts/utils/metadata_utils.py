@@ -1,9 +1,12 @@
 """Utilitats per a la gestió de metadades de les obres."""
 
-from datetime import datetime
+import logging
+from datetime import date
 from pathlib import Path
 
 import yaml
+
+log = logging.getLogger(__name__)
 
 
 def crear_metadata_yml(
@@ -26,8 +29,16 @@ def crear_metadata_yml(
 
     # Si existeix, verificar format
     if metadata_path.exists():
-        with open(metadata_path, "r", encoding="utf-8") as f:
-            existing = yaml.safe_load(f) or {}
+        try:
+            with open(metadata_path, "r", encoding="utf-8") as f:
+                existing = yaml.safe_load(f) or {}
+        except yaml.YAMLError:
+            log.warning("YAML malformat a %s, es recrearà", metadata_path)
+            existing = {}
+
+        if not isinstance(existing, dict):
+            log.warning("metadata.yml no és un diccionari a %s, es recrearà", metadata_path)
+            existing = {}
 
         # Si ja té la clau 'obra:', no cal fer res
         if "obra" in existing:
@@ -35,29 +46,31 @@ def crear_metadata_yml(
 
         # Si té dades però sense 'obra:', migrar al nou format
         if "titol" in existing:
-            new_metadata = {
-                "obra": {
-                    "titol": existing.get("titol", titol),
-                    "titol_original": existing.get("titol_original"),
-                    "autor": existing.get("autor", autor),
-                    "autor_original": existing.get("autor_original"),
-                    "traductor": existing.get(
-                        "traductor", "Biblioteca Arion (IA + comunitat)"
-                    ),
-                    "any_original": existing.get("any_original"),
-                    "any_traduccio": datetime.now().year,
-                    "llengua_original": existing.get("llengua_origen")
-                    or existing.get("llengua_original")
-                    or llengua,
-                    "genere": existing.get("genere", genere),
-                    "descripcio": existing.get("descripcio", ""),
-                }
+            obra_data: dict[str, object] = {
+                "titol": existing.get("titol", titol),
+                "autor": existing.get("autor", autor),
+                "traductor": existing.get(
+                    "traductor", "Biblioteca Arion (IA + comunitat)"
+                ),
+                "any_traduccio": date.today().year,
+                "llengua_original": existing.get("llengua_origen")
+                or existing.get("llengua_original")
+                or llengua,
+                "genere": existing.get("genere", genere),
+                "descripcio": existing.get("descripcio", ""),
             }
-            # Preservar altres camps
+            # Afegir camps opcionals només si existeixen
+            for camp in ("titol_original", "autor_original", "any_original"):
+                valor = existing.get(camp)
+                if valor is not None:
+                    obra_data[camp] = valor
+
+            new_metadata: dict[str, object] = {"obra": obra_data}
+            # Preservar altres camps a l'arrel (no dins 'obra')
             if "revisio" in existing:
                 new_metadata["revisio"] = existing["revisio"]
             if "estadistiques" in existing:
-                new_metadata["obra"]["estadistiques"] = existing["estadistiques"]
+                new_metadata["estadistiques"] = existing["estadistiques"]
 
             with open(metadata_path, "w", encoding="utf-8") as f:
                 yaml.dump(
@@ -70,12 +83,12 @@ def crear_metadata_yml(
             return
 
     # Crear nou metadata
-    metadata = {
+    metadata: dict[str, object] = {
         "obra": {
             "titol": titol,
             "autor": autor,
             "traductor": "Biblioteca Arion (IA + comunitat)",
-            "any_traduccio": datetime.now().year,
+            "any_traduccio": date.today().year,
             "llengua_original": llengua,
             "genere": genere,
             "descripcio": "",
