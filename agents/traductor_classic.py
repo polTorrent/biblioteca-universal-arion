@@ -1,8 +1,10 @@
 """Agent traductor clàssic per a textos grecollatins i literatura clàssica."""
 
+from typing import Any, ClassVar
+
 from pydantic import BaseModel, Field
 
-from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+from agents.base_agent import AgentResponse, BaseAgent
 from agents.chunker_agent import TextChunk
 
 
@@ -12,15 +14,14 @@ class SolicitutTraduccio(BaseModel):
     idioma_origen: str = "llatí"
     estil: str = "clàssic i literari"
     context_previ: str = ""
-    glossari_vinculat: dict = Field(default_factory=dict)  # Per a futura injecció de regles
-    calcs_a_evitar: list[str] = Field(default_factory=list)  # Per a futura prevenció automàtica
+    glossari_vinculat: dict[str, str | dict[str, Any]] = Field(default_factory=dict)
+    calcs_a_evitar: list[str] = Field(default_factory=list)
 
 
 class TraductorClassicAgent(BaseAgent):
     """Agent especialitzat en la traducció literària acurada de textos clàssics al català."""
 
-    agent_name: str = "TraductorClassic"
-    fallback_model: str = "venice/zai-org-glm-5" # Si s'estableix un ús més complex
+    agent_name: ClassVar[str] = "TraductorClassic"
 
     @property
     def system_prompt(self) -> str:
