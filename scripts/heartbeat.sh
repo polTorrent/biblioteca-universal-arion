@@ -217,6 +217,7 @@ for obra in queue.get('obres', []):
     else:
         obra_dir = os.path.join(project, 'obres', categoria, slugify(autor), slugify(titol))
 
+    has_original = os.path.isfile(os.path.join(obra_dir, 'original.md'))
     has_translation = False
     has_dir = os.path.isdir(obra_dir)
     if has_dir:
@@ -226,32 +227,37 @@ for obra in queue.get('obres', []):
             for f in files
         )
 
-    # Comprovar dedup: no crear tasca si ja n'hi ha a pending, running O failed
+    # Comprovar dedup: no crear tasca si ja n'hi ha a pending o running (NO failed)
     if task_exists_in_dir(titol, os.path.join(tasks_dir, 'pending')):
         continue
     if task_exists_in_dir(titol, os.path.join(tasks_dir, 'running')):
         continue
-    if task_exists_in_dir(titol, os.path.join(tasks_dir, 'failed')):
-        continue
 
     obra_dir_rel = obra_dir_rel or os.path.relpath(obra_dir, project)
 
-    if not has_dir:
-        print(f'NEW|{autor}|{titol}|{llengua}|{obra_dir_rel}')
-    elif not has_translation:
-        print(f'CONTINUE|{autor}|{titol}|{llengua}|{obra_dir_rel}')
-" 2>/dev/null | while IFS='|' read -r action autor titol lingua obra_path; do
+    if has_translation:
+        # Ja té traducció — no generar tasca (supervisió s'encarrega)
+        continue
+    elif has_original:
+        # Té original però no traducció → traduir directament
+        print(f'TRANSLATE|{autor}|{titol}|{llengua}|{obra_dir_rel}|{categoria}')
+    else:
+        # No té original → primer obtenir el text font
+        print(f'FETCH|{autor}|{titol}|{llengua}|{obra_dir_rel}|{categoria}')
+" 2>/dev/null | while IFS='|' read -r action autor titol lingua obra_path categoria; do
         [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
 
         case "$action" in
-            NEW)
+            FETCH)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Tradueix '$titol' de $autor del $lingua al català. Directori: $obra_path. 1) Crea directori mkdir -p $obra_path. 2) Busca text original a Gutenberg/Wikisource amb curl, guarda a $obra_path/original.md. 3) Crea $obra_path/metadata.yml. 4) Tradueix directament al català i guarda a $obra_path/traduccio.md. 5) Crea $obra_path/glossari.yml i $obra_path/notes.md. 6) git add $obra_path && git commit && git push."
+                    add_task "fetch" "cd ~/biblioteca-universal-arion && mkdir -p $obra_path && python3 scripts/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$lingua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
+                    log "   📥 Fetch: $titol de $autor ($lingua)"
                 fi
                 ;;
-            CONTINUE)
+            TRANSLATE)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "Continua la traducció de '$titol' de $autor. Directori: $obra_path. Llegeix els fitxers existents, completa el que falta (traduccio.md, glossari.yml, notes.md, metadata.yml). Commit+push."
+                    add_task "translate" "cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $obra_path/"
+                    log "   📝 Translate: $titol de $autor"
                 fi
                 ;;
         esac
@@ -470,24 +476,111 @@ check_tests() {
 # ── 6. Tasques fallides recuperables ──────────────────────────────────────────
 check_failed() {
     log "♻️ Tasques fallides..."
-    
-    find "$TASKS_DIR/failed/" -name "*.json" -mmin +60 -type f 2>/dev/null | head -3 | while read -r failed; do
+
+    # Crear directori failed_permanent/ si no existeix
+    mkdir -p "$TASKS_DIR/failed_permanent"
+
+    find "$TASKS_DIR/failed/" -name "*.json" -mmin +60 -type f 2>/dev/null | head -5 | while read -r failed; do
         [ "$(count_pending)" -ge "$MAX_PENDING" ] && break
-        
-        local retries=$(python3 -c "import json; print(json.load(open('$failed')).get('retries',0))" 2>/dev/null)
-        retries=${retries:-0}
-        
-        if [ "$retries" -lt 2 ]; then
-            python3 -c "
+
+        # Llegir dades de la tasca
+        local task_info
+        task_info=$(python3 -c "
 import json
-f = '$failed'
-with open(f) as fh: d = json.load(fh)
+with open('$failed') as fh:
+    d = json.load(fh)
+retries = d.get('retries', d.get('retry_count', 0))
+instruction = d.get('instruction', '')
+task_type = d.get('type', 'unknown')
+regen_count = d.get('regen_count', 0)
+print(f'{retries}|{len(instruction)}|{task_type}|{regen_count}|{instruction[:200]}')
+" 2>/dev/null)
+
+        local retries inst_len task_type regen_count inst_preview
+        IFS='|' read -r retries inst_len task_type regen_count inst_preview <<< "$task_info"
+        retries=${retries:-0}
+        inst_len=${inst_len:-0}
+        regen_count=${regen_count:-0}
+
+        # Si ja s'ha reintentat 3+ vegades amb el MATEIX format → abandonar
+        if [ "$regen_count" -ge 3 ]; then
+            mv "$failed" "$TASKS_DIR/failed_permanent/"
+            log "   ⛔ Abandonada (3+ regens): $(basename "$failed")"
+            continue
+        fi
+
+        # Si la instrucció era massa llarga (>200 chars) → regenerar simplificada
+        if [ "$inst_len" -gt 200 ]; then
+            log "   🔄 Instrucció massa llarga ($inst_len chars), regenerant simplificada..."
+            python3 -c "
+import json, re, os
+
+with open('$failed') as fh:
+    d = json.load(fh)
+
+instruction = d.get('instruction', '')
+task_type = d.get('type', 'unknown')
+
+# Intentar extreure obra_path de la instrucció original
+obra_path = ''
+m = re.search(r'obres/[a-z0-9/_-]+', instruction)
+if m:
+    obra_path = m.group(0).rstrip('/')
+
+project = os.path.expanduser('~/biblioteca-universal-arion')
+new_instruction = instruction  # fallback
+
+if obra_path:
+    full_path = os.path.join(project, obra_path)
+    has_original = os.path.isfile(os.path.join(full_path, 'original.md'))
+
+    if task_type in ('translate', 'fetch', 'translation'):
+        if has_original:
+            new_instruction = f'cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py {obra_path}/'
+            task_type = 'translate'
+        else:
+            # Extreure autor/titol/llengua de la instrucció
+            autor = re.search(r\"de ([A-Z][\\w\\s]+?)(?= del| al| \\.)\", instruction)
+            autor = autor.group(1).strip() if autor else 'desconegut'
+            llengua = re.search(r'del (\\w+)', instruction)
+            llengua = llengua.group(1) if llengua else 'desconeguda'
+            titol = re.search(r\"['\\\"]([^'\\\"]+)['\\\"]\", instruction)
+            titol = titol.group(1) if titol else os.path.basename(obra_path)
+            new_instruction = f'cd ~/biblioteca-universal-arion && mkdir -p {obra_path} && python3 scripts/cercador_fonts_v2.py \\\"{autor}\\\" \\\"{titol}\\\" \\\"{llengua}\\\" \\\"{obra_path}\\\" && if [ ! -s {obra_path}/original.md ]; then echo ERROR && exit 1; fi && git add -A && git commit -m \\\"font: {titol}\\\" && git push'
+            task_type = 'fetch'
+
+d['instruction'] = new_instruction
+d['type'] = task_type
 d['retries'] = 0
+d['retry_count'] = 0
 d['recovered'] = True
-with open(f, 'w') as fh: json.dump(d, fh, indent=2)
+d['regen_count'] = d.get('regen_count', 0) + 1
+
+with open('$failed', 'w') as fh:
+    json.dump(d, fh, indent=2, ensure_ascii=False)
 " 2>/dev/null
             mv "$failed" "$TASKS_DIR/pending/"
-            log "   ♻️ Recuperada: $(basename "$failed")"
+            log "   ♻️ Regenerada (simplificada): $(basename "$failed")"
+        else
+            # Instrucció curta, reintentar tal qual si retries < max_retries
+            if [ "$retries" -lt 2 ]; then
+                python3 -c "
+import json
+with open('$failed') as fh:
+    d = json.load(fh)
+d['retries'] = 0
+d['retry_count'] = 0
+d['recovered'] = True
+d['regen_count'] = d.get('regen_count', 0) + 1
+with open('$failed', 'w') as fh:
+    json.dump(d, fh, indent=2, ensure_ascii=False)
+" 2>/dev/null
+                mv "$failed" "$TASKS_DIR/pending/"
+                log "   ♻️ Recuperada: $(basename "$failed")"
+            else
+                mv "$failed" "$TASKS_DIR/failed_permanent/"
+                log "   ⛔ Abandonada (max retries): $(basename "$failed")"
+            fi
         fi
     done
 }

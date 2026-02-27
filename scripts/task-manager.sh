@@ -44,9 +44,10 @@ cmd_add() {
         fix)         priority=0; max_duration=30 ;;
         test)        priority=1; max_duration=30 ;;
         code-review) priority=2; max_duration=45 ;;
-        translate)   priority=3; max_duration=90 ;;
+        translate)   priority=3; max_duration=60 ;;
         refactor)    priority=4; max_duration=60 ;;
         maintain)    priority=5; max_duration=20 ;;
+        fetch)       priority=1; max_duration=15 ;;
         supervision)      priority=2; max_duration=30 ;;
         design)           priority=4; max_duration=15 ;;
         improve-openclaw) priority=2; max_duration=45 ;;

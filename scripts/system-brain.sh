@@ -258,11 +258,14 @@ propose_translations() {
 
     [ ! -f "$QUEUE" ] && { brain_log "   No hi ha obra-queue.json"; return; }
 
-    # Comprovar si ja hi ha traduccions pendents/running
-    local trad_pending
-    trad_pending=$(grep -rl '"type".*translate' "$TASKS_DIR/pending/" "$TASKS_DIR/running/" 2>/dev/null | wc -l)
-    if [ "$trad_pending" -gt 0 ]; then
-        brain_log "   Ja hi ha $trad_pending traduccions en curs. Saltant propostes."
+    # Comprovar si ja hi ha traduccions pendents/running (NO failed)
+    local trad_pending=0
+    local trad_running=0
+    trad_pending=$(grep -rl '"type".*translate\|"type".*fetch' "$TASKS_DIR/pending/" 2>/dev/null | wc -l)
+    trad_running=$(grep -rl '"type".*translate\|"type".*fetch' "$TASKS_DIR/running/" 2>/dev/null | wc -l)
+    local trad_total=$((trad_pending + trad_running))
+    if [ "$trad_total" -ge 3 ]; then
+        brain_log "   Ja hi ha $trad_total traduccions en curs ($trad_pending pending + $trad_running running). Saltant propostes."
         return
     fi
 
@@ -392,8 +395,16 @@ PYEOF
         slug_autor=$(echo "$autor" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | sed 's/[èé]/e/g; s/[àá]/a/g; s/[íì]/i/g')
         slug_titol=$(echo "$titol" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | sed 's/[èé]/e/g; s/[àá]/a/g; s/[íì]/i/g')
 
-        brain_add_task "translate" "${slug_autor}_${slug_titol}" \
-            "Tradueix '$titol' de $autor del $llengua al català. 1) Busca text original a Perseus/Gutenberg/Wikisource, guarda a obres/$categoria/$slug_autor/$slug_titol/original.md. 2) Crea metadata.yml. 3) Executa: python3 scripts/traduir_pipeline.py obres/$categoria/$slug_autor/$slug_titol/. Si el pipeline falla, tradueix manualment amb glossari i notes. 4) Commit+push."
+        local obra_path="obres/$categoria/$slug_autor/$slug_titol"
+        if [ -f "$PROJECT/$obra_path/original.md" ]; then
+            # Ja té original → traduir directament
+            brain_add_task "translate" "${slug_autor}_${slug_titol}" \
+                "cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $obra_path/"
+        else
+            # No té original → primer obtenir el text
+            brain_add_task "fetch" "${slug_autor}_${slug_titol}" \
+                "cd ~/biblioteca-universal-arion && mkdir -p $obra_path && python3 scripts/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$llengua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
+        fi
     fi
 }
 

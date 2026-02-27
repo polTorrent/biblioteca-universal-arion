@@ -861,5 +861,23 @@
       }
     ],
     "fail_count": 0
+  },
+  "fetch_error-no-sha-pogut-obtenir-originalmd": {
+    "events": [
+      {
+        "timestamp": 1772185296.9282515,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_seneca_epistola_1": {
+    "events": [
+      {
+        "timestamp": 1772185298.5675466,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
