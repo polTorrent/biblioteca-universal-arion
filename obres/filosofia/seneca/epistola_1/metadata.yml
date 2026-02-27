@@ -1,0 +1,20 @@
+obra:
+  titol: "Epístola 1 — De Recuperando Tempore"
+  titol_original: "Epistula I — De Recuperando Tempore"
+  autor: "Sèneca"
+  autor_original: "Lucius Annaeus Seneca"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 65 dC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  descripcio: "Primera de les Epístoles Morals a Lucili. Sèneca reflexiona sobre el valor del temps i la necessitat de recuperar-lo."
+seccions: 1
+estadistiques:
+  paraules_original: 295
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
