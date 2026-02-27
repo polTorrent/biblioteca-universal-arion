@@ -1,40 +1,39 @@
 #!/usr/bin/env python3
 """Fetch Marcus Aurelius Meditations in original Ancient Greek from multiple sources."""
 
-import urllib.request
-import re
-import os
-import time
-import json
+from __future__ import annotations
 
-OUTPUT_DIR = "/home/jo/biblioteca-universal-arion/scripts/marcus_aurelius_greek"
-os.makedirs(OUTPUT_DIR, exist_ok=True)
+import html as html_mod
+import json
+import os
+import re
+import time
+import urllib.request
+from pathlib import Path
+
+OUTPUT_DIR = str(Path(__file__).resolve().parent / "marcus_aurelius_greek")
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
 
 
-def fetch_url(url, timeout=30):
+def fetch_url(url: str, timeout: int = 30) -> str | None:
     """Fetch a URL and return the HTML content."""
     try:
         req = urllib.request.Request(url, headers=HEADERS)
-        resp = urllib.request.urlopen(req, timeout=timeout)
+        resp = urllib.request.urlopen(req, timeout=timeout)  # noqa: S310
         return resp.read().decode("utf-8", errors="replace")
-    except Exception as e:
+    except (urllib.error.URLError, TimeoutError, OSError) as e:
         print(f"  ERROR fetching {url}: {e}")
         return None
 
 
-def strip_html(html_text):
+def strip_html(html_text: str) -> str:
     """Remove HTML tags and clean up whitespace."""
     text = re.sub(r'<br\s*/?>', '\n', html_text)
     text = re.sub(r'<p[^>]*>', '\n\n', text)
     text = re.sub(r'</p>', '', text)
     text = re.sub(r'<[^>]+>', '', text)
-    text = re.sub(r'&nbsp;', ' ', text)
-    text = re.sub(r'&amp;', '&', text)
-    text = re.sub(r'&lt;', '<', text)
-    text = re.sub(r'&gt;', '>', text)
-    text = re.sub(r'&#160;', ' ', text)
+    text = html_mod.unescape(text)
     # Clean up excessive whitespace but keep newlines
     text = re.sub(r'[ \t]+', ' ', text)
     text = re.sub(r'\n ', '\n', text)
@@ -46,7 +45,7 @@ def strip_html(html_text):
 # ============================================================================
 # SOURCE 1: Wikisource (el.wikisource.org)
 # ============================================================================
-def fetch_wikisource():
+def fetch_wikisource() -> str | None:
     print("=" * 70)
     print("SOURCE 1: Wikisource (el.wikisource.org)")
     print("=" * 70)
@@ -60,7 +59,7 @@ def fetch_wikisource():
         return None
 
     # Save raw HTML for debugging
-    with open(os.path.join(OUTPUT_DIR, "wikisource_main.html"), "w") as f:
+    with open(os.path.join(OUTPUT_DIR, "wikisource_main.html"), "w", encoding="utf-8") as f:
         f.write(html)
 
     # Find links to individual books
@@ -87,7 +86,7 @@ def fetch_wikisource():
         if len(text) > 500:
             print(f"\nFound text on main page: {len(text)} chars")
             print(f"Preview: {text[:500]}...")
-            with open(os.path.join(OUTPUT_DIR, "wikisource_text.txt"), "w") as f:
+            with open(os.path.join(OUTPUT_DIR, "wikisource_text.txt"), "w", encoding="utf-8") as f:
                 f.write(text)
             return text
 
@@ -122,7 +121,7 @@ def fetch_wikisource():
                             print(f"  Book {i+1}: {len(text)} chars")
                 time.sleep(0.5)
             if all_text:
-                with open(os.path.join(OUTPUT_DIR, "wikisource_text.txt"), "w") as f:
+                with open(os.path.join(OUTPUT_DIR, "wikisource_text.txt"), "w", encoding="utf-8") as f:
                     f.write(all_text)
                 return all_text
         elif test_html:
@@ -141,7 +140,7 @@ def fetch_wikisource():
                 text = strip_html(data["parse"]["text"]["*"])
                 print(f"API returned {len(text)} chars")
                 if len(text) > 500:
-                    with open(os.path.join(OUTPUT_DIR, "wikisource_api_text.txt"), "w") as f:
+                    with open(os.path.join(OUTPUT_DIR, "wikisource_api_text.txt"), "w", encoding="utf-8") as f:
                         f.write(text)
                     # Check for subpages
                     subpage_links = re.findall(r'href="[^"]*(/wiki/Τα_εις_εαυτόν/[^"]+)"', data["parse"]["text"]["*"])
@@ -156,7 +155,7 @@ def fetch_wikisource():
 # ============================================================================
 # SOURCE 2: Perseus Digital Library
 # ============================================================================
-def fetch_perseus():
+def fetch_perseus() -> str | None:
     print("\n" + "=" * 70)
     print("SOURCE 2: Perseus Digital Library")
     print("=" * 70)
@@ -232,17 +231,17 @@ def fetch_perseus():
         time.sleep(1)
 
     if all_text:
-        with open(os.path.join(OUTPUT_DIR, "perseus_text.txt"), "w") as f:
+        with open(os.path.join(OUTPUT_DIR, "perseus_text.txt"), "w", encoding="utf-8") as f:
             f.write(all_text)
         print(f"\nTotal Perseus text: {len(all_text)} chars")
 
-    return all_text
+    return all_text or None
 
 
 # ============================================================================
 # SOURCE 3: Project Gutenberg
 # ============================================================================
-def fetch_gutenberg():
+def fetch_gutenberg() -> str | None:
     print("\n" + "=" * 70)
     print("SOURCE 3: Project Gutenberg")
     print("=" * 70)
@@ -250,11 +249,11 @@ def fetch_gutenberg():
     # Search for Marcus Aurelius on Gutenberg
     search_url = "https://www.gutenberg.org/ebooks/search/?query=marcus+aurelius+meditations"
     print(f"Searching: {search_url}")
-    html = fetch_url(search_url)
+    search_html = fetch_url(search_url)
 
-    if html:
+    if search_html:
         # Find ebook links
-        books = re.findall(r'href="/ebooks/(\d+)"[^>]*>([^<]+)', html)
+        books = re.findall(r'href="/ebooks/(\d+)"[^>]*>([^<]+)', search_html)
         print(f"Found {len(books)} results:")
         for ebook_id, title in books[:20]:
             print(f"  #{ebook_id}: {title}")
@@ -280,7 +279,7 @@ def fetch_gutenberg():
             print(f"  Preview: {text[:500]}")
 
             if greek_chars > 50:
-                with open(os.path.join(OUTPUT_DIR, f"gutenberg_{ebook_id}.txt"), "w") as f:
+                with open(os.path.join(OUTPUT_DIR, f"gutenberg_{ebook_id}.txt"), "w", encoding="utf-8") as f:
                     f.write(text)
                 return text
 
@@ -290,10 +289,10 @@ def fetch_gutenberg():
         "https://www.gutenberg.org/ebooks/55317",  # Possible Greek text
     ]
     for url in alt_urls:
-        html = fetch_url(url)
-        if html:
+        alt_html = fetch_url(url)
+        if alt_html:
             # Find download links
-            downloads = re.findall(r'href="([^"]+\.txt[^"]*)"', html)
+            downloads = re.findall(r'href="([^"]+\.txt[^"]*)"', alt_html)
             print(f"  Downloads from {url}: {downloads[:10]}")
 
     return None
@@ -302,7 +301,7 @@ def fetch_gutenberg():
 # ============================================================================
 # SOURCE 4: Alternative - Sacred Texts / other archives
 # ============================================================================
-def fetch_alternative():
+def fetch_alternative() -> str | None:
     print("\n" + "=" * 70)
     print("SOURCE 4: Alternative sources")
     print("=" * 70)
@@ -322,7 +321,7 @@ def fetch_alternative():
             greek_chars = len(re.findall(r'[\u0370-\u03FF\u1F00-\u1FFF]', text[:10000]))
             print(f"  Response length: {len(text)}, Greek chars in first 10k: {greek_chars}")
             if greek_chars > 100:
-                with open(os.path.join(OUTPUT_DIR, "alternative_text.txt"), "w") as f:
+                with open(os.path.join(OUTPUT_DIR, "alternative_text.txt"), "w", encoding="utf-8") as f:
                     f.write(text)
                 return text
             elif len(text) < 2000:
@@ -332,6 +331,8 @@ def fetch_alternative():
 
 
 if __name__ == "__main__":
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     print("Fetching Marcus Aurelius - Τὰ εἰς ἑαυτόν (Meditations) in original Ancient Greek")
     print("=" * 70)
 
