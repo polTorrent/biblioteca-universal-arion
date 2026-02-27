@@ -121,7 +121,7 @@ class MetriquesPipeline:
             "total_tokens_output": self.total_tokens_output,
             "cost_estimat_eur": self.total_cost_eur,
             "errors_totals": errors_totals,
-            "taxa_exit": (len(self.chunks) - errors_totals) / len(self.chunks) if self.chunks else 0,
+            "taxa_exit": sum(1 for c in self.chunks if not c.errors) / len(self.chunks) if self.chunks else 0,
         }
 
     def guardar(self, directori: Path | str = ".cache/metrics") -> Path:
@@ -207,6 +207,7 @@ class MetriquesPipeline:
         totals = data.get("totals", {})
         metriques.total_tokens_input = totals.get("total_tokens_input", 0)
         metriques.total_tokens_output = totals.get("total_tokens_output", 0)
+        metriques.total_temps_s = sum(c.temps_total() for c in metriques.chunks)
         metriques.total_cost_eur = totals.get("cost_estimat_eur", 0)
 
         return metriques
