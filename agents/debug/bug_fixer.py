@@ -7,13 +7,13 @@ el mínim canvi necessari per fer passar el test.
 import difflib
 import re
 import subprocess
+import sys
 import tempfile
 from pathlib import Path
 from typing import Any
 
 from agents.base_agent import AgentConfig, BaseAgent
 from agents.debug.models import BugFix, BugReport
-
 
 # System prompt per l'agent corrector de bugs
 BUG_FIXER_SYSTEM_PROMPT = """Ets un desenvolupador expert en debugging i refactoring. Reps:
@@ -125,6 +125,7 @@ class BugFixerAgent(BaseAgent):
             Tupla (test_passa, output/error).
         """
         # Si tenim codi però no fitxer, crear temporal
+        tmp_created: Path | None = None
         if test_code and (not test_file or not test_file.exists()):
             with tempfile.NamedTemporaryFile(
                 mode="w",
@@ -134,13 +135,14 @@ class BugFixerAgent(BaseAgent):
             ) as f:
                 f.write(test_code)
                 test_file = Path(f.name)
+                tmp_created = test_file
+
+        if not test_file:
+            return False, "No s'ha proporcionat ni test_file ni test_code"
 
         try:
-            # Usar sys.executable per assegurar el Python correcte
-            import sys
-            python_cmd = sys.executable
             result = subprocess.run(
-                [python_cmd, "-m", "pytest", str(test_file), "-v", "--tb=short"],
+                [sys.executable, "-m", "pytest", str(test_file), "-v", "--tb=short"],
                 capture_output=True,
                 text=True,
                 timeout=30,
@@ -153,6 +155,9 @@ class BugFixerAgent(BaseAgent):
             return False, "Test timeout (>30s)"
         except Exception as e:
             return False, f"Error executant test: {e}"
+        finally:
+            if tmp_created and tmp_created.exists():
+                tmp_created.unlink()
 
     def _parse_response(self, response: str) -> dict[str, Any]:
         """Parseja la resposta de l'agent.
@@ -203,22 +208,47 @@ class BugFixerAgent(BaseAgent):
         try:
             content = path.read_text(encoding="utf-8")
 
-            if codi_original not in content:
-                # Intentar amb normalització d'espais
+            if codi_original in content:
+                # Substitució exacta
+                new_content = content.replace(codi_original, codi_nou, 1)
+            else:
+                # Fallback: intentar amb normalització d'espais
                 content_normalized = re.sub(r'\s+', ' ', content)
                 original_normalized = re.sub(r'\s+', ' ', codi_original)
 
                 if original_normalized not in content_normalized:
                     return False, "No s'ha trobat el codi original al fitxer"
 
-                # Reconstruir la substitució
-                # Trobar posició aproximada
-                idx = content_normalized.find(original_normalized)
-                if idx == -1:
-                    return False, "No s'ha pogut localitzar el codi"
+                # Trobar la posició al text normalitzat i mapar-la al text original
+                norm_idx = content_normalized.find(original_normalized)
+                norm_end = norm_idx + len(original_normalized)
 
-            # Fer la substitució
-            new_content = content.replace(codi_original, codi_nou, 1)
+                # Reconstruir posicions originals: recórrer el text original
+                # comptant com es mapegen les posicions normalitzades
+                orig_pos = 0
+                norm_pos = 0
+                start_orig = 0
+                end_orig = len(content)
+
+                for orig_pos, char in enumerate(content):
+                    if norm_pos == norm_idx:
+                        start_orig = orig_pos
+                    if norm_pos == norm_end:
+                        end_orig = orig_pos
+                        break
+                    # Avançar posició normalitzada
+                    if char.isspace():
+                        # En el text normalitzat, espais consecutius → un sol espai
+                        if orig_pos == 0 or not content[orig_pos - 1].isspace():
+                            norm_pos += 1
+                    else:
+                        norm_pos += 1
+                else:
+                    # Si hem acabat el bucle sense break, end_orig és el final
+                    if norm_pos >= norm_end:
+                        end_orig = len(content)
+
+                new_content = content[:start_orig] + codi_nou + content[end_orig:]
 
             if new_content == content:
                 return False, "No s'ha fet cap canvi"
@@ -393,7 +423,9 @@ Proposa el MÍNIM canvi per fer passar el test.
                 return BugFix(
                     bug_report=bug_report,
                     fitxer_modificat=bug_report.fitxer_afectat,
-                    diff=self._generate_diff(codi_original, codi_nou, str(bug_report.fitxer_afectat)),
+                    diff=self._generate_diff(
+                        codi_original, codi_nou, str(bug_report.fitxer_afectat)
+                    ),
                     codi_original=codi_original,
                     codi_nou=codi_nou,
                     explicacio=explicacio,
@@ -431,7 +463,9 @@ Proposa el MÍNIM canvi per fer passar el test.
                 return BugFix(
                     bug_report=bug_report,
                     fitxer_modificat=bug_report.fitxer_afectat,
-                    diff=self._generate_diff(codi_original, codi_nou, str(bug_report.fitxer_afectat)),
+                    diff=self._generate_diff(
+                        codi_original, codi_nou, str(bug_report.fitxer_afectat)
+                    ),
                     codi_original=codi_original,
                     codi_nou=codi_nou,
                     explicacio=explicacio,
@@ -452,7 +486,13 @@ Proposa el MÍNIM canvi per fer passar el test.
         return BugFix(
             bug_report=bug_report,
             fitxer_modificat=bug_report.fitxer_afectat,
-            diff=self._generate_diff(codi_original, codi_nou, str(bug_report.fitxer_afectat)) if codi_original else "",
+            diff=(
+                self._generate_diff(
+                    codi_original, codi_nou, str(bug_report.fitxer_afectat)
+                )
+                if codi_original
+                else ""
+            ),
             codi_original=codi_original,
             codi_nou=codi_nou,
             explicacio=explicacio,
