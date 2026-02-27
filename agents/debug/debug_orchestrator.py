@@ -19,7 +19,7 @@ from rich.table import Table
 from agents.base_agent import AgentConfig
 from agents.debug.bug_fixer import BugFixerAgent
 from agents.debug.bug_reproducer import BugReproducerAgent
-from agents.debug.models import DebugResult
+from agents.debug.models import BugFix, BugReport, DebugResult
 
 
 class DebugOrchestrator:
@@ -146,7 +146,9 @@ class DebugOrchestrator:
 
         if self.verbose:
             self.console.print("\n[bold]Test generat:[/bold]")
-            self.console.print(Syntax(bug_report.test_code, "python", theme="monokai", line_numbers=True))
+            self.console.print(Syntax(
+                bug_report.test_code, "python", theme="monokai", line_numbers=True,
+            ))
 
         # Si és dry_run, acabem aquí
         if dry_run:
@@ -222,7 +224,7 @@ class DebugOrchestrator:
 
         return result
 
-    def _auto_commit(self, bug_report, bug_fix) -> bool:
+    def _auto_commit(self, bug_report: BugReport, bug_fix: BugFix) -> bool:
         """Fa un commit automàtic del fix.
 
         Args:
@@ -234,8 +236,12 @@ class DebugOrchestrator:
         """
         try:
             # Afegir fitxer modificat
+            fitxers_a_afegir = [str(bug_fix.fitxer_modificat)]
+            if bug_report.test_file and bug_report.test_file.exists():
+                fitxers_a_afegir.append(str(bug_report.test_file))
+
             subprocess.run(
-                ["git", "add", str(bug_fix.fitxer_modificat)],
+                ["git", "add", *fitxers_a_afegir],
                 cwd=str(self.base_dir),
                 check=True,
                 capture_output=True,
