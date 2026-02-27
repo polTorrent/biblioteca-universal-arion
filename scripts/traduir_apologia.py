@@ -19,7 +19,8 @@ os.environ["CLAUDECODE"] = "1"
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pathlib import Path
-from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+
+from agents.v2 import ConfiguracioPipelineV2, PipelineV2, ResultatPipelineV2
 from agents.v2.models import LlindarsAvaluacio
 from scripts.post_traduccio import post_processar_traduccio
 
@@ -28,7 +29,7 @@ from scripts.post_traduccio import post_processar_traduccio
 # ═══════════════════════════════════════════════════════════════════════════════
 
 # Ruta a l'obra
-OBRA_PATH = "plato/apologia"
+OBRA_PATH = "filosofia/plato/apologia"
 
 # Metadades de l'obra
 TITOL = "Apologia de Sòcrates"
@@ -57,7 +58,7 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main():
+def main() -> ResultatPipelineV2:
     """Executa la traducció."""
 
     # Rutes
@@ -68,23 +69,22 @@ def main():
 
     # Verificar que existeix l'original
     if not original_path.exists():
-        print(f"❌ Error: No existeix {original_path}")
+        print(f"Error: No existeix {original_path}")
         print(f"   Crea primer el fitxer original.md a {obra_dir}")
         sys.exit(1)
 
     # Llegir text original
-    print("═" * 60)
-    print(f"  TRADUCCIÓ: {TITOL}")
+    print("=" * 60)
+    print(f"  TRADUCCIO: {TITOL}")
     print(f"  Autor: {AUTOR}")
-    print(f"  Llengua: {LLENGUA_ORIGEN} → català")
-    print("═" * 60)
+    print(f"  Llengua: {LLENGUA_ORIGEN} -> catala")
+    print("=" * 60)
     print()
     print("NOTA: Usant chunks petits (1500 chars) per evitar filtratge")
-    print("      de contingut en textos amb referències històriques.")
+    print("      de contingut en textos amb referencies historiques.")
     print()
 
-    with open(original_path, "r", encoding="utf-8") as f:
-        text_original = f.read()
+    text_original = original_path.read_text(encoding="utf-8")
 
     # Netejar capçalera si existeix (buscar primer paràgraf del text)
     text_narratiu = text_original
@@ -92,9 +92,9 @@ def main():
     # Buscar inici del contingut real (després de "---")
     if "---" in text_original:
         parts = text_original.split("---")
-        if len(parts) >= 2:
-            # El text real és després del primer ---
-            text_narratiu = "---".join(parts[1:]).strip()
+        if len(parts) >= 3:
+            # Frontmatter YAML: parts[0]=buit, parts[1]=YAML, parts[2:]=contingut
+            text_narratiu = "---".join(parts[2:]).strip()
             # Treure peu de pàgina si existeix
             if "*Text de domini públic" in text_narratiu:
                 text_narratiu = text_narratiu.split("*Text de domini públic")[0].strip()
@@ -123,46 +123,47 @@ def main():
     # Crear i executar pipeline
     pipeline = PipelineV2(config=config)
 
-    print("Iniciant traducció amb Pipeline V2...")
+    print("Iniciant traduccio amb Pipeline V2...")
     if CONFIG["mostrar_dashboard"]:
         print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except Exception as exc:
+        print(f"Error durant la traduccio: {exc}")
+        sys.exit(1)
+
+    if not resultat.traduccio_final.strip():
+        print("Error: el pipeline ha retornat una traduccio buida")
+        sys.exit(1)
+
+    # Guardar traduccio
+    traduccio_final = (
+        f"# {TITOL}\n"
+        f"*{AUTOR}*\n\n"
+        f"Traduit de l'{LLENGUA_ORIGEN} per Biblioteca Arion\n\n"
+        f"---\n\n"
+        f"{resultat.traduccio_final}\n\n"
+        f"---\n\n"
+        f"*Traduccio de domini public.*\n"
     )
 
-    # Guardar traducció
-    traduccio_final = f"""# {TITOL}
-*{AUTOR}*
-
-Traduït de l'{LLENGUA_ORIGEN} per Biblioteca Arion
-
----
-
-{resultat.traduccio_final}
-
----
-
-*Traducció de domini públic.*
-"""
-
-    with open(traduccio_path, "w", encoding="utf-8") as f:
-        f.write(traduccio_final)
+    traduccio_path.write_text(traduccio_final, encoding="utf-8")
 
     # Mostrar resum
     print()
     print(resultat.resum())
     print()
-    print(f"Traducció guardada a: {traduccio_path}")
+    print(f"Traduccio guardada a: {traduccio_path}")
 
-    # ═══════════════════════════════════════════════════════════════════════════════
-    # POST-PROCESSAMENT AUTOMÀTIC
-    # ═══════════════════════════════════════════════════════════════════════════════
+    # Post-processament automatic
     post_processar_traduccio(
         obra_dir=obra_dir,
         resultat=resultat,
@@ -171,9 +172,9 @@ Traduït de l'{LLENGUA_ORIGEN} per Biblioteca Arion
     )
 
     print()
-    print("═" * 60)
-    print("  ✅ TRADUCCIÓ COMPLETADA I PUBLICADA")
-    print("═" * 60)
+    print("=" * 60)
+    print("  TRADUCCIO COMPLETADA I PUBLICADA")
+    print("=" * 60)
 
     return resultat
 
