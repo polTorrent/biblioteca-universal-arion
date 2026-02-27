@@ -6,6 +6,7 @@ que absorbeix la vida de la seva esposa mentre pinta el seu retrat.
 """
 
 import os
+import re
 import sys
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -86,12 +87,16 @@ def main():
     # Netejar metadades de fonts digitals
     text_original = netejar_metadades_font(text_original)
 
-    # Extreure el text narratiu (entre els dos ---)
-    import re
+    # Extreure el text narratiu descartant separadors ---
+    # netejar_metadades_font ja elimina la capçalera (títol, autor, primer ---),
+    # així que el --- restant és el separador del peu de pàgina.
     parts = re.split(r'^---\s*$', text_original, flags=re.MULTILINE)
-    if len(parts) >= 2:
-        # El text està a la segona part (entre primer i segon ---)
+    if len(parts) >= 3:
+        # Capçalera intacta: capçalera --- contingut --- peu
         text_narratiu = parts[1].strip()
+    elif len(parts) == 2:
+        # Capçalera ja netejada: contingut --- peu
+        text_narratiu = parts[0].strip()
     else:
         text_narratiu = text_original
 
