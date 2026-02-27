@@ -6,6 +6,7 @@ Format: Vertical 2:3 per a llibres.
 """
 
 import io
+import os
 from pathlib import Path
 from typing import Literal
 
@@ -13,10 +14,10 @@ from PIL import Image, ImageDraw, ImageFont
 from pydantic import BaseModel, Field
 
 try:
-    from agents.base_agent import AgentConfig, AgentResponse, BaseAgent
+    from agents.base_agent import AgentConfig, BaseAgent
     from agents.venice_client import VeniceClient, VeniceError
 except ImportError:
-    from base_agent import AgentConfig, AgentResponse, BaseAgent
+    from base_agent import AgentConfig, BaseAgent
     from venice_client import VeniceClient, VeniceError
 
 
@@ -281,8 +282,8 @@ MAI:
 
     def _interpretar_obra_amb_claude(self, metadata: dict) -> str | None:
         """Usa Claude per interpretar l'obra i suggerir un símbol visual apropiat."""
-        import subprocess
         import json
+        import subprocess
 
         titol = metadata.get("titol", "")
         autor = metadata.get("autor", "")
@@ -312,11 +313,13 @@ EXEMPLES BONS:
 Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
 
         try:
+            env = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
             result = subprocess.run(
                 ["claude", "-p", prompt, "--output-format", "json"],
                 capture_output=True,
                 text=True,
                 timeout=30,
+                env=env,
             )
             if result.returncode == 0:
                 try:
@@ -473,6 +476,7 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
 
     def _eliminar_fons_blanc(self, img: Image.Image, threshold: int = 250) -> Image.Image:
         """Converteix píxels blancs a transparents."""
+        img = img.convert("RGBA")
         data = img.getdata()
         new_data = []
         for item in data:
@@ -488,14 +492,14 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
         try:
             logo_original = Image.open(logo_path).convert("RGBA")
             logo_original = self._eliminar_fons_blanc(logo_original)
-            
+
             # Renderitzar a 4x per antialiasing
             scale = 4
             big_size = size * scale
-            
+
             circle_img = Image.new("RGBA", (big_size, big_size), (0, 0, 0, 0))
             draw = ImageDraw.Draw(circle_img)
-            
+
             # Cercle blanc amb vora negra fina
             border = max(4, int(big_size * 0.025))
             draw.ellipse(
@@ -504,7 +508,7 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
                 outline="#1A1A1A",
                 width=border
             )
-            
+
             # Logo al 78% del cercle
             inner = int(big_size * 0.78)
             aspect = logo_original.width / logo_original.height
@@ -512,14 +516,14 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
                 w, h = inner, int(inner / aspect)
             else:
                 h, w = inner, int(inner * aspect)
-            
+
             logo_resized = logo_original.resize((w, h), Image.Resampling.LANCZOS)
             x, y = (big_size - w) // 2, (big_size - h) // 2
             circle_img.paste(logo_resized, (x, y), logo_resized)
-            
+
             # Reduir amb antialiasing
             return circle_img.resize((size, size), Image.Resampling.LANCZOS)
-            
+
         except Exception as e:
             self.log_warning(f"Error carregant logo: {e}")
             return None
@@ -557,7 +561,9 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
                 break
 
         # Carregar fonts amb la mida òptima
-        font_titol, font_autor, font_editorial = self._carregar_fonts(mida_titol_override=mida_titol_final)
+        font_titol, font_autor, font_editorial = self._carregar_fonts(
+            mida_titol_override=mida_titol_final,
+        )
 
         # === TÍTOL (a dalt, centrat, possiblement multilínia) ===
         titol_y = int(height * 0.05)
@@ -605,7 +611,10 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
 
         return imatge
 
-    def _dividir_titol(self, titol: str, font: ImageFont, max_width: int, draw: ImageDraw) -> list[str]:
+    def _dividir_titol(
+        self, titol: str, font: ImageFont.FreeTypeFont,
+        max_width: int, draw: ImageDraw.ImageDraw,
+    ) -> list[str]:
         """Divideix el títol en línies que càpiguen dins l'amplada màxima."""
         paraules = titol.split()
         linies = []
@@ -668,7 +677,7 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
                 paleta,
             )
             output = io.BytesIO()
-            imatge.save(output, format="PNG", quality=95)
+            imatge.save(output, format="PNG", compress_level=1)
             image_bytes = output.getvalue()
 
         self.log_info("Portada generada!")
@@ -693,13 +702,13 @@ def generar_portada_obra(
         "descripcio": descripcio,
     }
     portada_bytes = agent.generar_portada(metadata)
-    
+
     if output_path:
         path = Path(output_path)
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(portada_bytes)
         print(f"✅ Portada: {path}")
-    
+
     return portada_bytes
 
 
@@ -711,7 +720,7 @@ if __name__ == "__main__":
     print("=" * 50)
 
     agent = AgentPortadista()
-    print(f"✅ Agent creat")
+    print("✅ Agent creat")
     print(f"   Venice: {'✅' if agent.venice else '❌'}")
     print(f"   Format: {agent.portadista_config.width}x{agent.portadista_config.height}")
 
