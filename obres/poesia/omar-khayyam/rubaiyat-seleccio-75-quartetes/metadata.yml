@@ -1,0 +1,22 @@
+obra:
+  titol: "Rubaiyat (selecció: 75 quartetes)"
+  titol_original: "رباعیات عمر خیام"
+  autor: "Omar Khayyam"
+  autor_original: "عمر خیّام"
+  traductor: "Editorial Clàssica"
+  any_original: "s. XI-XII"
+  any_traduccio: 2026
+  llengua_original: "persa"
+  descripcio: "Selecció de 75 quartetes (rubaiyat) del poeta, matemàtic i astrònom persa Omar Khayyam, en la versió anglesa d'Edward FitzGerald (1a edició, 1859). Poemes sobre la fugacitat de la vida, el plaer del vi, l'amor, el destí i la recerca de sentit davant la mort."
+  font: "Project Gutenberg, EBook #246"
+  nota_edicio: "Versió anglesa d'Edward FitzGerald (1a edició, 1859). L'original persa és un corpus dispers de quartetes atribuïdes a Khayyam; FitzGerald en va seleccionar i adaptar 75 en una seqüència poètica coherent."
+seccions: 75
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: ""
