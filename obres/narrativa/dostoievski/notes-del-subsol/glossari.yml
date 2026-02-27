@@ -1,0 +1,183 @@
+termes:
+  - id: "podpolie"
+    rus: "подполье"
+    transliteracio: "podpol'ie"
+    traduccio: "subsòl"
+    definicio: >
+      Literalment, 'l'espai sota el terra', 'el soterrani'. Metàfora central
+      de l'obra que designa tant l'aïllament físic del protagonista (la seva
+      habitació miserable als afores de Petersburg) com el seu estat psicològic
+      d'autoexclusió, introspecció obsessiva i ressentiment. El subsòl representa
+      la consciència hipertrofiada que paralitza l'acció.
+    usos: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+
+  - id: "soznanije"
+    rus: "сознание"
+    transliteracio: "soznanije"
+    traduccio: "consciència"
+    definicio: >
+      Terme filosòfic fonamental del text. El narrador defensa que un excés de
+      consciència (usilennoe soznanije) és una malaltia que condueix a la
+      inèrcia i la paràlisi de la voluntat. Contraposa l'home de consciència
+      exacerbada, incapaç d'actuar, a l'home directe i d'acció, que actua
+      gràcies a la seva limitació intel·lectual.
+    usos: [1, 2, 3, 4, 5, 6, 9, 10, 11]
+
+  - id: "inertsia"
+    rus: "инерция"
+    transliteracio: "inèrtsia"
+    traduccio: "inèrcia"
+    definicio: >
+      Resultat directe de la consciència exacerbada: la incapacitat d'actuar,
+      de prendre decisions, de convertir el pensament en acció. El narrador
+      la descriu com la «destinació directa i única» de l'home intel·ligent.
+      La inèrcia és el «seure amb els braços creuats» que constitueix l'estat
+      permanent de l'home del subsòl.
+    usos: [1, 2, 6, 8]
+
+  - id: "zlost"
+    rus: "злость"
+    transliteracio: "zlost'"
+    traduccio: "ràbia / malícia"
+    definicio: >
+      Sentiment dominant del narrador, que oscil·la entre la ira destructiva
+      (contra si mateix i contra els altres) i la malícia calculada. La ràbia
+      és l'única força motriu del protagonista, però fins i tot ella es
+      descompon sota l'anàlisi de la consciència i no arriba a concretar-se
+      en acció eficaç.
+    usos: [1, 2, 3, 5, 6, 7, 8, 9, 10]
+
+  - id: "khrustalny-dvorets"
+    rus: "хрустальный дворец"
+    transliteracio: "khrustal'ny dvorets"
+    traduccio: "palau de cristall"
+    definicio: >
+      Referència al Crystal Palace de Londres (1851), símbol del progrés
+      racionalista i utòpic. Txernixevski el va usar a «Què fer?» (1863)
+      com a imatge de la societat futura ideal. Dostoievski el rebutja: el
+      narrador s'hi oposa perquè és un edifici al qual «no es pot treure la
+      llengua», és a dir, que no admet el dubte, el caprici ni la llibertat
+      individual. Dostoievski va visitar el Crystal Palace el 1862.
+    usos: [9, 10, 11]
+
+  - id: "kapriz"
+    rus: "каприз"
+    transliteracio: "kapriz"
+    traduccio: "caprici"
+    definicio: >
+      El caprici, la voluntat lliure i irracional, és el valor suprem per al
+      narrador. Contra el determinisme racionalista que redueix l'home a una
+      «tecla de piano», el caprici representa el dret de l'individu a actuar
+      contra el propi interès, contra la lògica, contra les lleis de la natura,
+      simplement per afirmar la seva llibertat i individualitat.
+    usos: [7, 9, 10, 11]
+
+  - id: "dva-zhdy-dva"
+    rus: "дважды два"
+    transliteracio: "dvazhdy dva"
+    traduccio: "dos per dos (fa quatre)"
+    definicio: >
+      Símbol de la certesa matemàtica i del determinisme racionalista. El
+      narrador rebutja «dos per dos fa quatre» com a principi absolut de
+      la realitat, perquè un món completament determinat per lleis
+      matemàtiques no deixaria espai per a la voluntat humana. «Dos per dos
+      fa cinc», diu, «també és una cosa encantadora de tant en tant.»
+    usos: [4, 9, 10]
+
+  - id: "chelovek-dejstvija"
+    rus: "человек действия"
+    transliteracio: "txelovek deistvija"
+    traduccio: "home d'acció"
+    definicio: >
+      Arquetip contraposat a l'home del subsòl. L'home directe i d'acció és
+      «estúpid» segons el narrador, però precisament la seva limitació
+      intel·lectual li permet actuar sense dubtes, trobar causes primeres
+      per a les seves decisions i avançar «com un toro enfurismat amb les
+      banyes abaixades». El narrador l'enveja amargament.
+    usos: [2, 3, 6]
+
+  - id: "naslazhdenije"
+    rus: "наслаждение"
+    transliteracio: "naslazhdenije"
+    traduccio: "plaer / voluptuositat"
+    definicio: >
+      Plaer pervers que el narrador extreu de la seva pròpia degradació i
+      sofriment. És un plaer que neix de la consciència exacerbada de la
+      pròpia impotència. El narrador arriba a trobar voluptuositat en el
+      mal de queixals, en la humiliació, en la bufetada. Aquest plaer
+      masoquista és un dels temes centrals de l'obra.
+    usos: [2, 3, 5, 6]
+
+  - id: "stena"
+    rus: "стена"
+    transliteracio: "stena"
+    traduccio: "paret / mur"
+    definicio: >
+      Metàfora de les lleis de la natura, les matemàtiques i els límits
+      imposats per la realitat. L'home directe es rendeix davant la paret
+      «amb sinceritat»; l'home del subsòl s'hi nega a sotmetre's, però
+      tampoc no pot travessar-la, i roman en un estat de rebel·lia impotent
+      però tossuda.
+    usos: [3, 4, 5]
+
+  - id: "mokry-sneg"
+    rus: "мокрый снег"
+    transliteracio: "mokry sneg"
+    traduccio: "neu humida"
+    definicio: >
+      Motiu recurrent a la Segona Part que dóna títol al relat. La neu humida
+      de Petersburg acompanya els moments clau de la narració: la sortida del
+      sopar, el viatge en trineu cap al prostíbul, la marxa final de Liza.
+      Simbolitza la misèria, la fredor emocional, la sordidesa de l'entorn
+      urbà, i la confusió interior del narrador.
+    usos: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+  - id: "liza"
+    rus: "Лиза"
+    transliteracio: "Liza"
+    traduccio: "Liza"
+    definicio: >
+      Jove prostituta de vint anys, originària de Riga, que el narrador coneix
+      al prostíbul. Representa la possibilitat de redempció a través de l'amor
+      i la compassió genuïna. El narrador intenta «salvar-la» amb un discurs
+      sobre la seva degradació, però quan ella mostra autèntica compassió cap
+      a ell, ell la rebutja per incapacitat d'acceptar un amor que no impliqui
+      domini. Liza és l'únic personatge veritablement noble de l'obra.
+    usos: [5, 6, 7, 8, 9, 10]
+
+  - id: "apollo"
+    rus: "Аполлон"
+    transliteracio: "Apollon"
+    traduccio: "Apol·lon"
+    definicio: >
+      Criat del narrador, home gran, pedant i arrogant, que el menysprea
+      obertament. La relació entre el narrador i Apol·lon és una paròdia
+      grotesca de la lluita de poder: el narrador intenta afirmar la seva
+      autoritat retardant-li el sou, però Apol·lon el domina amb les seves
+      mirades silencioses i la seva calma impertorbable. Simbolitza la
+      impotència del narrador fins i tot en l'àmbit domèstic.
+    usos: [3, 4, 7, 8, 9]
+
+  - id: "prekrasnoe-i-vozvyshennoe"
+    rus: "прекрасное и возвышенное"
+    transliteracio: "prekrasnoe i vozvyshennoe"
+    traduccio: "el bell i el sublim"
+    definicio: >
+      Fórmula irònica que al·ludeix a les categories estètiques kantianes
+      i, més immediatament, a la retòrica idealista dels anys 1840 a Rússia.
+      El narrador la usa amb sarcasme per referir-se als seus propis
+      impulsos sentimentals i «elevats», que inevitablement acaben en
+      decepció i cinisme.
+    usos: [2, 7, 8]
+
+  - id: "zverkov"
+    rus: "Зверков"
+    transliteracio: "Zviérkov"
+    traduccio: "Zviérkov"
+    definicio: >
+      Antic company d'escola del narrador, bell, segur de si, socialment
+      reeixit i superficial. Representa l'home «normal» i directe que el
+      narrador enveja i odia alhora. El seu cognom prové de 'zver' (fera,
+      bèstia), però irònicament ell és el socialment acceptat, mentre que
+      el narrador, que es creu superior, és l'exclòs.
+    usos: [2, 3, 4, 5]
