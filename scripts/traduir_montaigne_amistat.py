@@ -6,6 +6,7 @@ Text original en francès mitjà del Renaixement.
 """
 
 import os
+import re
 import sys
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -19,7 +20,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pathlib import Path
 
-from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+from agents.v2 import PipelineV2, ConfiguracioPipelineV2, ResultatPipelineV2
 from agents.v2.models import LlindarsAvaluacio
 from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
 from scripts.utils import crear_metadata_yml
@@ -56,7 +57,7 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main():
+def main() -> ResultatPipelineV2 | None:
     """Executa la traducció."""
 
     # Rutes
@@ -92,7 +93,6 @@ def main():
     text_narratiu = text_original
 
     # Detectar inici del contingut (primer paràgraf després de ---)
-    import re
     match = re.search(r'^---\s*$', text_original, re.MULTILINE)
     if match:
         # Buscar el contingut després del primer ---
@@ -133,13 +133,21 @@ def main():
         print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
-    )
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except Exception as e:
+        print(f"Error durant la traducció: {e}")
+        sys.exit(1)
+
+    if not resultat.traduccio_final or not resultat.traduccio_final.strip():
+        print("Error: El pipeline no ha generat cap traducció.")
+        sys.exit(1)
 
     # Guardar traducció
     traduccio_final = f"""# {TITOL}
