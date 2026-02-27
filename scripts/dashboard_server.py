@@ -13,15 +13,16 @@ Servidor web que mostra en temps real l'estat de tot el sistema:
 Ús: python3 scripts/dashboard_server.py [--port 8080]
 """
 
+import argparse
 import json
-import os
+import re
+import shutil
 import subprocess
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 from http.server import HTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
 from urllib.parse import urlparse
-import threading
 
 # ═══════════════════════════════════════════════════════════════
 # CONFIGURACIÓ
@@ -134,7 +135,6 @@ def get_obres():
                 if has_validated:
                     try:
                         content = (obra / ".validated").read_text()
-                        import re
                         m = re.search(r'(\d+\.?\d*)/10', content)
                         if m:
                             score = float(m.group(1))
@@ -143,7 +143,6 @@ def get_obres():
                 elif has_needs_fix:
                     try:
                         content = (obra / ".needs_fix").read_text()
-                        import re
                         m = re.search(r'(\d+\.?\d*)/10', content)
                         if m:
                             score = float(m.group(1))
@@ -200,7 +199,6 @@ def get_logs(n=50):
 
 def get_system():
     """Info del sistema."""
-    import shutil
     total, used, free = shutil.disk_usage(str(Path.home()))
 
     # CPU load
@@ -288,7 +286,6 @@ def get_diem_balance():
     try:
         for line in reversed(get_logs(100)):
             if "DIEM:" in line:
-                import re
                 m = re.search(r'DIEM:\s*([\d.]+)', line)
                 if m:
                     return float(m.group(1))
@@ -1289,7 +1286,6 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             try:
-                import subprocess
                 subprocess.run(["rm", "-f", str(Path.home() / ".openclaw/workspace/tasks/worker.lock")], timeout=5)
                 subprocess.run(["tmux", "kill-session", "-t", "worker"], capture_output=True, timeout=5)
                 time.sleep(1)
@@ -1306,7 +1302,6 @@ class DashboardHandler(SimpleHTTPRequestHandler):
             self.send_header("Content-Type", "application/json")
             self.end_headers()
             try:
-                import subprocess
                 r = subprocess.run(
                     ["bash", str(PROJECT_DIR / "scripts/heartbeat.sh")],
                     capture_output=True, text=True, timeout=120
@@ -1381,9 +1376,12 @@ class DashboardHandler(SimpleHTTPRequestHandler):
         if parsed.path == '/api/task':
             try:
                 data = json.loads(body)
-                t,instr,dur = data.get('type','translation'), data.get('instruction',''), data.get('duration',30)
-                cmd = f'bash {PROJECT_DIR}/scripts/task-manager.sh add {t} "{instr}"'
-                result = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=10)
+                t = data.get('type', 'translation')
+                instr = data.get('instruction', '')
+                result = subprocess.run(
+                    ["bash", str(PROJECT_DIR / "scripts/task-manager.sh"), "add", t, instr],
+                    capture_output=True, text=True, timeout=10,
+                )
                 self.send_response(200); self.send_header('Content-Type','application/json'); self.end_headers()
                 self.wfile.write(json.dumps({"success":result.returncode==0,"output":result.stdout+result.stderr}).encode())
             except Exception as e:
@@ -1396,7 +1394,6 @@ class DashboardHandler(SimpleHTTPRequestHandler):
 
 
 def main():
-    import argparse
     parser = argparse.ArgumentParser(description="Arion Dashboard")
     parser.add_argument("--port", type=int, default=PORT, help="Port")
     args = parser.parse_args()
