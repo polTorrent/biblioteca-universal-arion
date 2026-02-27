@@ -1,49 +1,64 @@
 #!/usr/bin/env python3
 """Compila les tres parts de la traducció del Tao Te King en un sol fitxer."""
 
-import os
+from __future__ import annotations
 
-base = os.path.join(os.path.dirname(__file__), '..', 'obres', 'oriental', 'laozi', 'tao-te-king')
+import sys
+from pathlib import Path
 
-with open(os.path.join(base, 'tao_ch1_27.md')) as f1:
-    part1 = f1.read()
+BASE: Path = Path(__file__).resolve().parent.parent / "obres" / "oriental" / "laozi" / "tao-te-king"
 
-with open(os.path.join(base, 'tao_ch28_54.md')) as f2:
-    part2 = f2.read()
-
-with open(os.path.join(base, 'tao_ch55_81.md')) as f3:
-    part3 = f3.read()
-
-# Replace the --- separator in part2 with the De Jing section header
-part2 = part2.replace(
-    '\n---\n',
-    '\n---\n\n**De Jing (德經) \u2014 Llibre de la Virtut**[^12]\n'
-)
-
-header = """# Tao Te King
+HEADER = """\
+# Tao Te King
 *Laozi (老子)*
 
 Traduït del xinès clàssic per Biblioteca Arion
 
 ---
 
-**Dao Jing (道經) \u2014 Llibre del Dao**[^11]
+**Dao Jing (道經) — Llibre del Dao**[^11]
 
 """
 
-footer = """
+FOOTER = """
 ---
 
 *Traducció de domini públic.*
 """
 
-with open(os.path.join(base, 'traduccio.md'), 'w') as out:
-    out.write(header)
-    out.write(part1)
-    out.write('\n')
-    out.write(part2)
-    out.write('\n')
-    out.write(part3)
-    out.write(footer)
+PARTS: list[str] = [
+    "tao_ch1_27.md",
+    "tao_ch28_54.md",
+    "tao_ch55_81.md",
+]
 
-print('traduccio.md compilat correctament')
+
+def compilar() -> None:
+    """Llegeix les tres parts i genera traduccio.md."""
+    fitxers_absents: list[str] = [p for p in PARTS if not (BASE / p).exists()]
+    if fitxers_absents:
+        print(f"Error: falten fitxers a {BASE}:", file=sys.stderr)
+        for nom in fitxers_absents:
+            print(f"  - {nom}", file=sys.stderr)
+        sys.exit(1)
+
+    textos: list[str] = []
+    for nom in PARTS:
+        textos.append((BASE / nom).read_text(encoding="utf-8"))
+
+    # Afegir capçalera del De Jing a la segona part
+    textos[1] = textos[1].replace(
+        "\n---\n",
+        "\n---\n\n**De Jing (德經) — Llibre de la Virtut**[^12]\n",
+    )
+
+    sortida = BASE / "traduccio.md"
+    sortida.write_text(
+        HEADER + "\n".join(textos) + FOOTER,
+        encoding="utf-8",
+    )
+    print(f"traduccio.md compilat correctament → {sortida}")
+
+
+if __name__ == "__main__":
+    compilar()
