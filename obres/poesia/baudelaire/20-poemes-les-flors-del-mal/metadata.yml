@@ -10,12 +10,13 @@ obra:
   genere: poesia
   descripcio: Selecció de 20 poemes de Les Fleurs du mal, obra mestra del simbolisme
     francès.
+seccions: 20
 estadistiques:
   paraules_original: 3613
   paraules_traduccio: 3484
-  notes: 0
+  notes: 23
   termes_glossari: 0
 revisio:
-  estat: revisat
-  qualitat: 7.5
-  data_revisio: '2026-02-27'
+  estat: necessita_correccio
+  qualitat: 6.5
+  data_revisio: '2026-02-28'
