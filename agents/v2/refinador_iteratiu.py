@@ -10,19 +10,18 @@ El flux és:
 4. Retornar millor versió + historial
 """
 
-from dataclasses import dataclass, field
 from typing import TYPE_CHECKING
 
 from pydantic import BaseModel, Field
 
-from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
+from agents.base_agent import AgentConfig, BaseAgent, extract_json_from_text
+from agents.v2.avaluador_dimensional import AvaluadorDimensional
 from agents.v2.models import (
+    LLINDARS_DEFAULT,
     ContextAvaluacio,
     FeedbackFusionat,
     LlindarsAvaluacio,
-    LLINDARS_DEFAULT,
 )
-from agents.v2.avaluador_dimensional import AvaluadorDimensional
 
 if TYPE_CHECKING:
     from utils.logger import AgentLogger
@@ -397,7 +396,10 @@ class RefinadorIteratiu:
         )
 
         if requereix_revisio:
-            avisos.append("La traducció no ha assolit el llindar mínim després de totes les iteracions")
+            avisos.append(
+                "La traducció no ha assolit el llindar mínim"
+                " després de totes les iteracions"
+            )
 
         return ResultatRefinament(
             traduccio_inicial=traduccio,
@@ -458,7 +460,8 @@ La teva ÚNICA tasca és corregir problemes de fidelitat:
 - Significat: corregir errors de sentit
 - Terminologia: usar termes precisos
 
-NO TOQUIS res més. Si la fluïdesa o el to empitjoren lleugerament per guanyar fidelitat, és acceptable.
+NO TOQUIS res més. Si la fluïdesa o el to empitjoren lleugerament
+per guanyar fidelitat, és acceptable.
 
 Retorna JSON:
 {
@@ -474,7 +477,8 @@ La teva ÚNICA tasca és recuperar o millorar la veu de l'autor:
 - Ritme: ajustar cadència de les frases
 - Recursos: preservar o adaptar figures retòriques
 
-Aquesta és la dimensió MÉS IMPORTANT. Si cal sacrificar lleugerament la fluïdesa per preservar la veu, fes-ho.
+Aquesta és la dimensió MÉS IMPORTANT. Si cal sacrificar lleugerament
+la fluïdesa per preservar la veu, fes-ho.
 
 Retorna JSON:
 {
@@ -490,7 +494,8 @@ La teva ÚNICA tasca és millorar la naturalitat del text:
 - Normativa: corregir errors IEC
 - Calcs: eliminar estructures copiades
 
-IMPORTANT: MAI sacrifiquis la veu de l'autor per guanyar fluïdesa. Si un gir és una mica forçat però preserva el to de l'autor, deixa'l.
+IMPORTANT: MAI sacrifiquis la veu de l'autor per guanyar fluïdesa.
+Si un gir és una mica forçat però preserva el to de l'autor, deixa'l.
 
 Retorna JSON:
 {
