@@ -44,7 +44,11 @@ estadistiques:
   notes: 13
   termes_glossari: 15
 revisio:
-  estat: "revisat"
-  qualitat: 8.0
+  estat: "requereix_correccio"
+  qualitat: 6.5
   data_revisio: "2026-02-27"
   requereix_revisio_humana: true
+  problemes_principals:
+    - "Omissió greu del Capítol XI de la Primera Part (passatge metaliterari)"
+    - "Epígraf de Nekràssov absent a la Segona Part"
+    - "Volum traduït insuficient (63% de l'original)"

@@ -1,0 +1,112 @@
+SUPERVISIÓ DE QUALITAT — Notes del subsòl (Dostoievski)
+Data: 2026-02-27
+Puntuació global: 6.5/10
+Estat: REQUEREIX CORRECCIÓ
+
+============================================================
+RESUM
+============================================================
+
+La traducció presenta una qualitat lingüística excel·lent en el català
+existent (prosa natural, registre literari adequat, terminologia filosòfica
+precisa). Tanmateix, hi ha omissions greus de contingut que impedeixen
+la validació: la traducció conté 22.627 paraules vs 35.798 de l'original
+(63%), cosa que indica que aproximadament un terç del text original no
+s'ha traduït.
+
+============================================================
+PUNTUACIONS PER DIMENSIÓ
+============================================================
+
+1. Qualitat del català:          8.5/10
+2. Fidelitat a l'original:      5.0/10  *** CRÍTIC ***
+3. Glossari:                     9.0/10
+4. Format i estructura:         7.0/10
+5. Metadata:                     9.0/10
+
+============================================================
+PROBLEMES CONCRETS A CORREGIR
+============================================================
+
+--- CRÍTICS (bloquejants) ---
+
+P1. OMISSIÓ GREU: Capítol XI de la Primera Part gairebé íntegre
+    L'original (Глава XI, línies 121-151) conté un dels passatges
+    filosòfics més importants de l'obra:
+    - "Лучше ничего не делать! Лучше сознательная инерция!"
+      (Millor no fer res! Millor la inèrcia conscient!)
+    - El narrador admet que no creu res del que ha escrit
+      ("mento com un sabater")
+    - El diàleg imaginat amb els crítics (línia 129-130 original)
+    - La reflexió metaliterària sobre l'escriptura
+    - La referència a Heine sobre la impossibilitat de les
+      autobiografies veraces
+    - La referència a Rousseau i les confessions
+    - La transició a la Segona Part via el motiu de la "neu humida"
+    Tot això queda reduït a 3 línies de resum a la traducció
+    (línia 155: "Capítol XI (final)"). Cal traduir íntegrament.
+
+P2. OMISSIÓ: Epígraf de Nekràssov a la Segona Part
+    L'original obre la Segona Part amb el poema de Nekràssov
+    "Когда из мрака заблужденья" ("Quan de la foscor de l'extraviu").
+    Aquest epígraf és absent de la traducció. Cal incloure'l.
+
+P3. DISCREPÀNCIA DE VOLUM GENERAL (63% de l'original)
+    La proporció 22.627/35.798 paraules (63%) és massa baixa per a una
+    traducció rus→català, on l'esperat seria 80-95%. Cal revisar tots
+    els capítols per identificar passatges omesos o resumits, especialment:
+    - Primera Part, capítols VII-IX (arguments filosòfics sobre
+      la voluntat, el "dos per dos", la "tecla de piano")
+    - Segona Part, capítol I (possibles condensacions del retrat
+      de la joventut del narrador)
+
+--- IMPORTANTS (no bloquejants però cal corregir) ---
+
+P4. Numeració no estàndard de capítols
+    "Capítol X (continuació)" i "Capítol XI (final)" no corresponen
+    a l'estructura original. L'original té clarament 11 capítols
+    diferenciats a la Primera Part. Cal renumerar correctament.
+
+P5. Error tipogràfic a notes.md (línia 45)
+    "se sent encara més miserabl per contrast"
+    → hauria de ser "miserable" (falta la 'e' final)
+
+--- MENORS ---
+
+P6. La nota final de l'autor [^4] apareix dues vegades:
+    un cop al cos del text (línia 155, dins "Capítol XI (final)")
+    i un cop al final (línia 698, com a nota del "paradoxalista").
+    Cal unificar: la nota editorial final ha d'aparèixer al
+    final de la Segona Part, com a l'original.
+
+============================================================
+ASPECTES POSITIUS
+============================================================
+
+- Prosa catalana de gran qualitat: natural, fluida, literària
+- Registre adequat per a Dostoievski (intensitat, frases llargues,
+  digressions, monòleg interior)
+- Bon tractament del diàleg (tu/vós coherent)
+- Vocabulari ric i precís (ràbia, subsòl, inèrcia, caprici)
+- Glossari excel·lent: 15 termes amb rus, transliteració,
+  definició acadèmica i referències d'ús
+- Notes del traductor completes i informatives (13 notes)
+- Metadata.yml complet amb totes les seccions requerides
+- Segona Part (capítols II-X) traduïda amb gran fidelitat
+  i poder expressiu, especialment els diàlegs amb Liza
+  i el monòleg final del narrador
+
+============================================================
+ACCIONS REQUERIDES
+============================================================
+
+1. [URGENT] Traduir íntegrament el Capítol XI original de la
+   Primera Part (passatge metaliterari, Heine, Rousseau, transició)
+2. [URGENT] Afegir l'epígraf de Nekràssov a la Segona Part
+3. [IMPORTANT] Revisar capítols VII-X de la Primera Part per
+   detectar i completar passatges omesos
+4. [IMPORTANT] Corregir la numeració dels capítols (treure
+   "continuació" i "final", alinear amb l'original)
+5. [MENOR] Corregir "miserabl" → "miserable" a notes.md
+6. [MENOR] Unificar la nota editorial final
+7. Actualitzar estadístiques a metadata.yml després de les correccions
