@@ -1,5 +1,6 @@
+from __future__ import annotations
+
 import re
-from typing import List
 from .base import DetectorPlugin, CalcDetectat
 
 class DetectorAngles(DetectorPlugin):
@@ -7,12 +8,12 @@ class DetectorAngles(DetectorPlugin):
     def llengua(self) -> str:
         return "anglès"
         
-    def detectar(self, text: str) -> List[CalcDetectat]:
+    def detectar(self, text: str) -> list[CalcDetectat]:
         calcs = []
         
         # Expressions idiomàtiques calcades
         expressions = [
-            (r'\b[Pp]er totes les aparences\b', "«Per totes les aparences» (By all appearances)", "Usar «Tot indicava que», «A primer cop d'ull»", 7.0),
+            (r'\bper totes les aparences\b', "«Per totes les aparences» (By all appearances)", "Usar «Tot indicava que», «A primer cop d'ull»", 7.0),
             (r'\bmés aviat que no pas\b', "«més aviat que no pas» (rather than)", "Usar «en lloc de», «per no»", 6.0),
             (r'\ba fi de\b', "«a fi de» (in order to)", "Simplificar a «per» o «per tal de»", 4.0),
             (r'\bcom a qüestió de fet\b', "«com a qüestió de fet» (as a matter of fact)", "Usar «de fet», «en realitat»", 6.0),
@@ -36,7 +37,7 @@ class DetectorAngles(DetectorPlugin):
             calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="Repetició d'adverbi amb guió (calc de l'anglès)", suggeriment="Usar «durant molt de temps», «intensament»", severitat=6.0, llengua_origen=self.llengua))
 
         # "just + verb" calc de l'anglès "just becoming"
-        just_verb = re.finditer(r'\bjust\s+\w+(ia|ava|eix|eix|enia|eva)\b', text, re.IGNORECASE)
+        just_verb = re.finditer(r'\bjust\s+\w+(ia|ava|eix|enia|eva)\b', text, re.IGNORECASE)
         for match in just_verb:
             calcs.append(CalcDetectat(tipus="calc_sintactic", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="«just + verb» calc de l'anglès", suggeriment="Usar «tot just», «acabava de», «just en aquell moment»", severitat=5.0, llengua_origen=self.llengua))
 
