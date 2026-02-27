@@ -375,6 +375,14 @@
       {
         "timestamp": 1772210727.2250783,
         "result": "created"
+      },
+      {
+        "timestamp": 1772212528.5770833,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772214322.0496802,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -891,6 +899,18 @@
       {
         "timestamp": 1772210726.9180005,
         "result": "created"
+      },
+      {
+        "timestamp": 1772212528.298503,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772214321.7770143,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772216122.1388566,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -929,6 +949,30 @@
       {
         "timestamp": 1772211602.5390582,
         "result": "created"
+      },
+      {
+        "timestamp": 1772212528.0505946,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772212528.1644971,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772214321.5502892,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772214321.667011,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772216121.9053645,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772216122.0233812,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -946,6 +990,23 @@
     "events": [
       {
         "timestamp": 1772210726.6685033,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772212527.9055204,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772214321.4076583,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_cicero_laelius_de_amicitia": {
+    "events": [
+      {
+        "timestamp": 1772214323.2732985,
         "result": "created"
       }
     ],
