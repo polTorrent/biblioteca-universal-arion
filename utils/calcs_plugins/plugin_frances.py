@@ -1,6 +1,6 @@
 from typing import List
 import re
-from .base import DetectorPlugin, CalcDetectat, TipusCalc
+from .base import DetectorPlugin, CalcDetectat
 
 class DetectorFrances(DetectorPlugin):
     @property
@@ -17,7 +17,7 @@ class DetectorFrances(DetectorPlugin):
         }
         
         for patro, (suggeriment, explicacio) in falsos_amics.items():
-            for regex_match in re.finditer(patro, text.lower()):
+            for regex_match in re.finditer(patro, text, re.IGNORECASE):
                 inici, fi = regex_match.span()
                 original = text[inici:fi]
                 resultats.append(CalcDetectat(
