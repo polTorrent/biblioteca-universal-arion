@@ -18,12 +18,19 @@ Inclou:
     python scripts/test_pipeline_complet.py --nomes-represa
 """
 
-import os
-import sys
-import shutil
+from __future__ import annotations
+
 import argparse
+import os
+import shutil
 import subprocess
+import sys
 from pathlib import Path
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from agents.v2.pipeline_v2 import PipelineV2, ResultatPipelineV2
+    from core.validador_final import ResultatValidacio
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
@@ -54,7 +61,7 @@ def verificar_autenticacio() -> bool:
             print(f"   Mode: Subscripció (CLAUDECODE=1)")
             return True
         else:
-            print(f"⚠️ Claude CLI no disponible")
+            print("⚠️ Claude CLI no disponible")
             return False
 
     except FileNotFoundError:
@@ -69,7 +76,9 @@ def verificar_autenticacio() -> bool:
         return False
 
 
-def test_pipeline_complet(mostrar_dashboard: bool = True, netejar: bool = False):
+def test_pipeline_complet(
+    mostrar_dashboard: bool = True, netejar: bool = False,
+) -> tuple[ResultatPipelineV2 | None, Path]:
     """Test complet amb totes les funcionalitats."""
 
     from agents.v2.pipeline_v2 import PipelineV2, ConfiguracioPipelineV2
@@ -262,7 +271,7 @@ def test_portada(obra_dir: Path) -> bool:
         print("   (Requereix VENICE_API_KEY a .env)")
 
         # Usar la funció helper amb la signatura correcta
-        portada_bytes = generar_portada_obra(
+        generar_portada_obra(
             titol="De Brevitate Vitae",
             autor="Sèneca",
             genere="FIL",  # Filosofia
@@ -306,7 +315,7 @@ def test_portada(obra_dir: Path) -> bool:
     return False
 
 
-def test_validacio(obra_dir: Path):
+def test_validacio(obra_dir: Path) -> ResultatValidacio | None:
     """Test de validació final."""
     print("\n" + "=" * 70)
     print("   TEST: Validació Final")
@@ -403,7 +412,7 @@ def test_publicacio_web(obra_dir: Path) -> bool:
         return False
 
 
-def test_represa(obra_dir: Path):
+def test_represa(obra_dir: Path) -> PipelineV2 | None:
     """Test de represa de sessió."""
     print("\n" + "=" * 70)
     print("   TEST: Represa de Sessió")
@@ -446,7 +455,7 @@ def test_represa(obra_dir: Path):
             # Mostrar algunes traduccions
             if pipeline.memoria.num_traduccions > 0:
                 print("\n   Traduccions registrades:")
-                for trad in list(pipeline.memoria.obtenir_totes_traduccions())[:5]:
+                for trad in pipeline.memoria.obtenir_totes_traduccions()[:5]:
                     print(f"     • {trad.original} → {trad.traduccio}")
 
         return pipeline
