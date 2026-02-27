@@ -1,4 +1,3 @@
-# Laelius de Amicitia
 **Autor:** Ciceró
 **Font:** [wikisource](https://la.wikisource.org/wiki/Laelius%20de%20Amicitia)
 **Llengua:** llatí
