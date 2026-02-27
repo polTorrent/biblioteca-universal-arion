@@ -145,6 +145,46 @@
       "status": "pending",
       "obra_dir": "obres/filosofia/schopenhauer/vierfache-wurzel",
       "notes": "Traduïda (directori existent amb traduccio.md). Pendent validació."
+    },
+    {
+      "autor": "Sòfocles",
+      "titol": "Ἀντιγόνη",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 2,
+      "paraules_aprox": 7500,
+      "fonts": [
+        "perseus"
+      ],
+      "status": "pending",
+      "notes": "Tragèdia fonamental del cànon occidental; obre la categoria teatre, absent al catàleg. Conflicte entre llei divina i humana, vigent a qualsevol època. | Text grec a Perseus (ed. Jebb). Riba traduí tragèdies gregues (1951) però sense edició bilingüe crítica moderna disponible."
+    },
+    {
+      "autor": "Ciceró",
+      "titol": "Laelius de Amicitia",
+      "llengua": "llatí",
+      "categoria": "assaig",
+      "dificultat": 1,
+      "paraules_aprox": 9000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "notes": "Assaig clàssic sobre l'amistat; obre la categoria assaig, absent al catàleg. Prosa llatina elegant i accessible, complement natural a Sèneca. | Text llatí a The Latin Library i Perseus. Sense traducció catalana moderna en edició bilingüe crítica."
+    },
+    {
+      "autor": "Giacomo Leopardi",
+      "titol": "Canti (selecció: 20 poemes)",
+      "llengua": "italià",
+      "categoria": "poesia",
+      "dificultat": 2,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "pending",
+      "notes": "Introdueix l'italià com a nova llengua al catàleg. Leopardi és el poeta cabdal del Romanticisme italià; els Canti són obra mestra de la lírica europea. | Text complet a Wikisource italiana. Selecció recomanada: L'infinito, A Silvia, La ginestra, Il sabato del villaggio, Canto notturno d'un pastore errante dell'Asia, etc."
     }
   ]
 }

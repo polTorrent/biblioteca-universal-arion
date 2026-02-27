@@ -1,11 +1,3 @@
-# Les Fleurs du mal — Charles Baudelaire
-
-*Selecció de 20 poemes (edició 1868, domini públic)*
-
-Font: [Wikisource](https://fr.wikisource.org/wiki/Les_Fleurs_du_mal_(1868))
-
----
-
 ## 1. Au lecteur
 
 PRÉFACE
@@ -96,8 +88,7 @@ Tu le connais, lecteur, ce monstre délicat,
 
 SPLEEN ET IDÉAL
 
-I
-
+## I
 BÉNÉDICTION
 
 Lorsque, par un décret des puissances suprêmes,
@@ -256,8 +247,7 @@ Ne sont que des miroirs obscurcis et plaintifs !
 
 ## 3. L’Albatros
 
-II
-
+## II
 L’ALBATROS
 
 Souvent, pour s’amuser, les hommes d’équipage
@@ -296,8 +286,7 @@ Ses ailes de géant l’empêchent de marcher.
 
 ## 4. Élévation
 
-III
-
+## III
 ÉLÉVATION
 
 Au-dessus des étangs, au-dessus des vallées,
@@ -344,8 +333,7 @@ Le langage des fleurs et des choses muettes !
 
 ## 5. Correspondances
 
-IV
-
+## IV
 CORRESPONDANCES
 
 La Nature est un temple où de vivants piliers
@@ -380,8 +368,7 @@ Qui chantent les transports de l’esprit et des sens.
 
 ## 6. La Beauté
 
-XVIII
-
+## XVIII
 LA BEAUTÉ
 
 Je suis belle, ô mortels ! comme un rêve de pierre,
@@ -416,8 +403,7 @@ Mes yeux, mes larges yeux aux clartés éternelles !
 
 ## 7. Hymne à la beauté
 
-XXII
-
+## XXII
 HYMNE À LA BEAUTÉ
 
 Viens-tu du ciel profond ou sors-tu de l’abîme,
@@ -480,8 +466,7 @@ L’univers moins hideux et les instants moins lourds ?
 
 ## 8. La Chevelure
 
-XXIV
-
+## XXIV
 LA CHEVELURE
 
 Ô toison, moutonnant jusque sur l’encolure !
@@ -558,8 +543,7 @@ Où je hume à longs traits le vin du souvenir ?
 
 ## 9. Harmonie du soir
 
-XLVIII
-
+## XLVIII
 HARMONIE DU SOIR
 
 Voici venir les temps où vibrant sur sa tige
@@ -598,8 +582,7 @@ Ton souvenir en moi luit comme un ostensoir !
 
 ## 10. L’Invitation au voyage
 
-LIV
-
+## LIV
 L’INVITATION AU VOYAGE
 
 Mon enfant, ma sœur,
@@ -690,8 +673,7 @@ Luxe, calme et volupté.
 
 ## 11. La Cloche fêlée
 
-LXXVI
-
+## LXXVI
 LA CLOCHE FÊLÉE
 
 Il est amer et doux, pendant les nuits d’hiver,
@@ -732,8 +714,7 @@ Et qui meurt, sans bouger, dans d’immenses efforts !
 
 ## 13. Le Vampire
 
-XXXII
-
+## XXXII
 LE VAMPIRE
 
 Toi qui, comme un coup de couteau,
@@ -788,8 +769,7 @@ Le cadavre de ton vampire ! »
 
 ## 14. Remords posthume
 
-XXXIV
-
+## XXXIV
 REMORDS POSTHUME
 
 Lorsque tu dormiras, ma belle ténébreuse,
@@ -824,8 +804,7 @@ De n’avoir pas connu ce que pleurent les morts ? »
 
 ## 15. Le Chat
 
-XXXV
-
+## XXXV
 LE CHAT
 
 Viens, mon beau chat, sur mon cœur amoureux ;
@@ -860,8 +839,7 @@ Nagent autour de son corps brun.
 
 ## 16. L’Ennemi
 
-X
-
+## X
 L’ENNEMI
 
 Ma jeunesse ne fut qu’un ténébreux orage,
@@ -896,8 +874,7 @@ Du sang que nous perdons croît et se fortifie !
 
 ## 17. La Vie antérieure
 
-XII
-
+## XII
 LA VIE ANTÉRIEURE
 
 J’ai longtemps habité sous de vastes portiques
@@ -932,8 +909,7 @@ Le secret douloureux qui me faisait languir.
 
 ## 18. L’Homme et la mer
 
-XIV
-
+## XIV
 L’HOMME ET LA MER
 
 Homme libre, toujours tu chériras la mer
@@ -972,8 +948,7 @@ Tellement vous aimez le carnage et la mort,
 
 ## 19. Recueillement
 
-CIV
-
+## CIV
 RECUEILLEMENT
 
 Sois sage, ô ma Douleur, et tiens-toi plus tranquille.
@@ -1008,8 +983,7 @@ Entends, ma chère, entends la douce Nuit qui marche.
 
 ## 20. L’Horloge
 
-CVII
-
+## CVII
 L’HORLOGE
 
 Horloge ! dieu sinistre, effrayant, impassible,
