@@ -1,0 +1,53 @@
+{
+  "sessio_id": "baudelaire-20-poemes-les-flors--2026-02-27",
+  "obra": {
+    "autor": "Baudelaire",
+    "titol": "20 Poemes Les Flors Del Mal",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-02-27T11:24:41.668918",
+    "ultima_activitat": "2026-02-27T12:27:27.615692"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 19,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13",
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 4.69,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}

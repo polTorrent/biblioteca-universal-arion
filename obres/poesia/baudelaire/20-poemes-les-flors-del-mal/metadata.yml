@@ -1,0 +1,23 @@
+avaluacio_final:
+  data: '2026-02-27T12:27:36.786601'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 62
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 61
+obra:
+  estadistiques:
+    paraules_traduccio: 3140
+revisio:
+  estat: revisat
+  data_revisio: '2026-02-27'
+  qualitat: 0.0

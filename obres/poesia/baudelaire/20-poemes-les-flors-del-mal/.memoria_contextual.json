@@ -1,0 +1,28 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Charles Pierre Baudelaire (1821-1867), París, França. Poeta francès considerat precursor del simbolisme i un dels pares de la poesia moderna. Fill d'una família burgesa, va viure una vida bohèmia marcada per les dificultats econòmiques, la malaltia i els conflictes familiars. Va ser traductor d'Edgar Allan Poe i crític d'art influent.",
+    "context_historic": "Segona meitat del segle XIX francès, època del Segon Imperi de Napoleó III, transformació urbana de París per Haussmann, industrialització i sorgiment de la modernitat urbana. Context de romanticisme tardà i naixement del simbolisme.",
+    "context_obra": "Les Fleurs du Mal (1857 (primera edició), 1861 (segona edició ampliada)) - Poesia lírica, col·lecció poètica. Escrita durant 20 anys, reflecteix l'experiència de la modernitat parisenca. Condemnada per immoralitat el 1857, amb sis poemes censurats. Dedicada a Théophile Gautier com 'parfait magicien ès lettres françaises'.",
+    "influencies": [
+      "Edgar Allan Poe",
+      "Théophile Gautier",
+      "Eugène Delacroix",
+      "Constantin Guys",
+      "Romantisme alemany",
+      "Dandisme"
+    ],
+    "temes_principals": [
+      "El mal i la bellesa",
+      "L'amor carnal i espiritual",
+      "La mort i el temps",
+      "El spleen i l'ideal",
+      "La modernitat urbana i París",
+      "La rebel·lió contra Déu",
+      "L'art com a refugi"
+    ]
+  },
+  "notes_pendents": []
+}

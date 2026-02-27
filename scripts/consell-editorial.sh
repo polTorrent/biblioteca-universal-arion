@@ -14,9 +14,9 @@
 set -euo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
-PROJECT="${PROJECT:-$HOME/biblioteca-universal-arion}"
-QUEUE="${QUEUE:-$PROJECT/config/obra-queue.json}"
-OBRES_DIR="$PROJECT/obres"
+export PROJECT="${PROJECT:-$HOME/biblioteca-universal-arion}"
+export QUEUE="${QUEUE:-$PROJECT/config/obra-queue.json}"
+export OBRES_DIR="$PROJECT/obres"
 MAX_PENDING_QUEUE="${MAX_PENDING_QUEUE:-10}"
 MAX_PROPOSTES="${MAX_PROPOSTES_PER_EXECUCIO:-3}"
 DRY_RUN=false
@@ -46,108 +46,61 @@ print(len(pending))
 " 2>/dev/null || echo "0"
 }
 
-# Genera un resum del catàleg actual per enviar a Claude
+# Genera un resum compacte del catàleg (una línia per categoria)
 generar_resum_cataleg() {
-    python3 -c "
-import json, os, sys
+    python3 << 'PYEOF'
+import json, os
 
-queue_path = '$QUEUE'
-obres_dir = '$OBRES_DIR'
+queue_path = os.environ.get('QUEUE', 'config/obra-queue.json')
+obres_dir = os.environ.get('OBRES_DIR', 'obres')
 
-# Llegir obra-queue.json
 with open(queue_path) as f:
     data = json.load(f)
 obres_queue = data.get('obres', [])
 
-# Recollir obres dels directoris (per si n'hi ha que no estan a la cua)
-obres_dirs = set()
+categories = {}
+idiomes = set()
+for o in obres_queue:
+    cat = o.get('categoria', '?')
+    autor = o.get('autor', '?')
+    idiomes.add(o.get('llengua', '?'))
+    categories.setdefault(cat, set()).add(autor)
+
 if os.path.isdir(obres_dir):
     for cat in os.listdir(obres_dir):
         cat_path = os.path.join(obres_dir, cat)
         if not os.path.isdir(cat_path):
             continue
         for autor in os.listdir(cat_path):
-            autor_path = os.path.join(cat_path, autor)
-            if not os.path.isdir(autor_path):
-                continue
-            for obra in os.listdir(autor_path):
-                obra_path = os.path.join(autor_path, obra)
-                if os.path.isdir(obra_path):
-                    obres_dirs.add(f'{cat}/{autor}/{obra}')
+            if os.path.isdir(os.path.join(cat_path, autor)):
+                categories.setdefault(cat, set()).add(autor.replace('-', ' ').title())
 
-# Resum d'obres a la cua
 lines = []
-lines.append('OBRES A LA CUA:')
-categories = {}
-idiomes = set()
-autors = set()
-for o in obres_queue:
-    cat = o.get('categoria', '?')
-    autor = o.get('autor', '?')
-    titol = o.get('titol', '?')
-    llengua = o.get('llengua', '?')
-    status = o.get('status', '?')
-    lines.append(f'  - [{status}] {autor}: {titol} ({llengua}, {cat})')
-    categories[cat] = categories.get(cat, 0) + 1
-    idiomes.add(llengua)
-    autors.add(autor)
+for cat in sorted(categories):
+    autors = sorted(categories[cat])
+    lines.append(cat.title() + ' (' + str(len(autors)) + '): ' + ', '.join(autors) + '.')
 
-lines.append('')
-lines.append('OBRES ALS DIRECTORIS (traduïdes o en procés):')
-for d in sorted(obres_dirs):
-    lines.append(f'  - {d}')
+lines.append('Idiomes: ' + ', '.join(sorted(idiomes)) + '.')
 
-lines.append('')
-lines.append('ESTADÍSTIQUES:')
-lines.append(f'  Total obres cua: {len(obres_queue)}')
-for cat, count in sorted(categories.items()):
-    lines.append(f'  - {cat}: {count}')
-lines.append(f'  Idiomes: {\", \".join(sorted(idiomes))}')
-lines.append(f'  Autors: {\", \".join(sorted(autors))}')
-
-# Detectar buits
 all_cats = {'filosofia', 'narrativa', 'poesia', 'teatre', 'assaig', 'oriental'}
-missing_cats = all_cats - set(categories.keys())
-if missing_cats:
-    lines.append(f'  Categories SENSE obres: {\", \".join(sorted(missing_cats))}')
+missing = all_cats - set(categories.keys())
+if missing:
+    lines.append('FALTEN categories: ' + ', '.join(sorted(missing)) + '.')
 
-print('\n'.join(lines))
-" 2>/dev/null
+print(' '.join(lines))
+PYEOF
 }
 
-# Genera el prompt complet per Claude
+# Genera el prompt complet per Claude (compacte, <400 paraules)
 generar_prompt() {
     local resum="$1"
     cat <<PROMPT_EOF
-Ets el Consell Editorial de la Biblioteca Universal Arion, una biblioteca oberta de traduccions al català d'obres clàssiques universals.
+Biblioteca Universal Arion: traduccions al català d'obres clàssiques. Catàleg actual: $resum
 
-CATÀLEG ACTUAL:
-$resum
+Proposa $MAX_PROPOSTES obres noves. Criteris: domini públic (autor mort >70 anys), cànon universal, diversificar categories/idiomes/èpoques, <15.000 paraules, text original disponible online (Gutenberg, Perseus, Wikisource, Latin Library, Aozora, CText). Preferir obres sense traducció catalana recent.
 
-CRITERIS DE SELECCIÓ (per ordre de prioritat):
-1. DOMINI PÚBLIC: Autor mort fa >70 anys (obligatori)
-2. UNIVERSALITAT: Obres del cànon universal reconegut, imprescindibles
-3. DIVERSITAT: Categories, idiomes i èpoques poc representades al catàleg
-4. INTERÈS: Valor cultural, educatiu, tendència actual, aniversaris
-5. TRADUCCIÓ CATALANA: Preferir obres sense traducció catalana o amb traducció antiga (>30 anys) o exhaurida. Evitar duplicar traduccions recents i de qualitat.
-6. DIFICULTAT: Preferir obres <15.000 paraules
-7. FONTS DISPONIBLES: Que el text original estigui disponible online (Gutenberg, Perseus, Wikisource, Latin Library, Aozora, CText, etc.)
-
-PROPOSA exactament $MAX_PROPOSTES obres noves que diversifiquin el catàleg. Per cada obra retorna JSON:
-{
-  "autor": "Nom Autor",
-  "titol": "Títol Original",
-  "llengua": "idioma original",
-  "categoria": "filosofia|narrativa|poesia|teatre|assaig|oriental",
-  "dificultat": 1-5,
-  "paraules_aprox": número,
-  "fonts": ["gutenberg", "perseus", "wikisource", "latin_library", "aozora", "ctext"],
-  "justificacio": "Per què aquesta obra és prioritària. Inclou info sobre traduccions catalanes existents si en tens constància.",
-  "notes": "observacions"
-}
-
-Respon NOMÉS amb un JSON array, sense markdown, sense backticks, sense explicacions.
-IMPORTANT: No repeteixis autors ni obres del catàleg actual. Diversifica al màxim.
+No repeteixis autors ni obres del catàleg. Respon NOMÉS amb un JSON array, sense markdown ni backticks:
+[{"autor":"Nom","titol":"Títol Original","llengua":"idioma","categoria":"filosofia|narrativa|poesia|teatre|assaig|oriental","dificultat":1,"paraules_aprox":5000,"fonts":["gutenberg"],"justificacio":"raó","notes":"obs"}]
 PROMPT_EOF
 }
 
@@ -268,7 +221,7 @@ log "Generant propostes via Claude..."
 prompt=$(generar_prompt "$resum")
 
 # Cridar Claude amb timeout i CLAUDECODE netejat per evitar nested sessions
-resposta=$(unset CLAUDECODE; timeout 90 claude -p "$prompt" --max-turns 3 --output-format text 2>/dev/null) || {
+resposta=$(unset CLAUDECODE; timeout 90 claude -p "$prompt" --max-turns 3 --output-format text --allowedTools "" 2>/dev/null) || {
     log "❌ Error cridant Claude. Abortant."
     exit 1
 }
