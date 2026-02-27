@@ -229,50 +229,360 @@ A les onze, Zviérkov es va aixecar: «Senyors, ara tots cap allà!» Van marxar
 ### Capítol IV
 
 
-Sabia perfectament on anaven. En un trineu, sota la neu que queia sense parar, amb el cor bategant-me, fantasiejava la meva venjança: entraria i donaria una bufetada a Zviérkov. Però al mateix temps sabia que no ho faria. La meva imaginació galopava: em veia perseguint Zviérkov anys i anys, desafiant-lo a un duel, suplicant-li que em perdonés... Tot era ridícul i jo ho sabia, i aquest saber no feia sinó augmentar la meva ràbia.
+«Vet aquí, doncs, vet aquí per fi la topada amb la realitat», rondava jo, baixant les escales de quatre en quatre. «Ja no és el Papa deixant Roma i marxant al Brasil; ja no és el ball al llac de Como!»
 
-Vaig arribar al lloc. Era un d'aquells «magatzems a la moda» d'aleshores que la policia ja ha suprimit. De dia era realment un magatzem; a la nit, amb recomanació, s'hi podia anar de visites. Vaig travessar la botiga fosca fins a la sala familiar, on cremava una sola espelma, i em vaig aturar perplex: no hi havia ningú.
+«Ets un miserabilíssim», em va travessar el cap, «si d'això en fas broma ara».
 
-«On són?», vaig preguntar.
+«Tant se val!», vaig cridar, responent-me. «Ara ja tot s'ha perdut!»
 
-Ja se n'havien anat, per descomptat. Davant meu hi havia la mestressa, que em coneixia vagament. Al cap d'un minut es va obrir una porta i va entrar una altra persona.
+Ja no n'hi havia ni rastre; però tant se val: jo sabia on havien anat.
 
-Sense fer cas de res, caminava amunt i avall per l'habitació i crec que parlava sol. Estava com salvat de la mort i tot el meu ésser se n'alegrava: no donaria la bufetada. Però tot havia canviat. Vaig mirar de reüll la noia que havia entrat: davant meu vaig entreveure un rostre jove, fresc, una mica pàl·lid, amb celles fosques i rectes, amb una mirada seriosa i com una mica sorpresa. Això em va agradar immediatament; l'hauria odiada si hagués somrigut.
+Al portal hi havia un cochero solitari, un nocturn, amb el seu capot de pagès, tot cobert de la neu humida que encara queia i que semblava tèbia. L'ambient era sufocant i carregós. El seu cavallet pelut i matisat també estava tot cobert de neu i tussia; ho recordo molt bé. Em vaig llançar al trineu de líber; però tot just vaig aixecar el peu per seure, el record de com Símonov acabava de donar-me els sis rubles em va tallar els genolls i vaig caure al trineu com un sac.
+
+«No! Cal fer molt per pagar tot això!», vaig cridar. «Però ho pagaré o moriré aquesta mateixa nit al meu lloc. Arri!»
+
+Vam arrencar. Un remolí sencer em giravoltava al cap.
+
+«No s'agenollaran a demanar-me la meva amistat — no ho faran. Això és un miratge, un miratge vulgar, repugnant, romàntic i fantàstic; el mateix ball del llac de Como. I per tant he de donar una bufetada a Zviérkov! Estic obligat a fer-ho. Així doncs, decidit; volo a donar-li una bufetada.»
+
+«Arri!»
+
+El cochero va sacsejar les regnes.
+
+«Tan bon punt entri, li clavaré. Cal dir unes paraules abans de la bufetada, a manera de preàmbul? No! Simplement entraré i li clavaré. Tots seran a la sala, i ell al sofà amb Olímpia. Maleïda Olímpia! Un cop es va riure de la meva cara i em va rebutjar. Agafaré Olímpia pels cabells i Zviérkov per les orelles! No, millor per una sola orella, i per l'orella el portaré per tota la sala. Potser tots em pegaran i em trauran a fora. Segur que sí. Tant se val! Tanmateix jo sóc el primer que ha donat la bufetada: la meva és la iniciativa; i per les lleis de l'honor, això ho és tot; ell ja està marcat i cap pallissa no pot esborrar-li la bufetada, llevat d'un duel. Haurà de batre's. Doncs que em peguin ara! Que em peguin, els innobles! Trudoliúbov serà el que pegui més fort: és tan massís; Ferfítxkin s'enganxarà pel costat i segur que pels cabells. Però tant se val, tant se val! Per a això hi vaig. Les seves testes de xai hauran de reconèixer al final el tràgic de tot plegat! Quan em treguin arrossegant-me cap a la porta, els cridaré que, en el fons, no mereixen ni el meu dit petit.»
+
+«Arri, cochero, arri!», vaig cridar al cochero.
+
+Fins i tot va estremir-se i va fer petar el fuet. Massa salvatgement havia cridat.
+
+«A l'alba ens batem, ja està decidit. Amb el departament, s'ha acabat. Ferfítxkin ha dit fa un moment "lepartament" en comptes de "departament". Però on trobaré pistoles? Absurd! Demanaré un avanç del sou i en compraré. I la pólvora, i les bales? Això és cosa del padrí. I com aconseguir-ho tot abans de l'alba? I on trobaré un padrí? No tinc coneixences...»
+
+«Absurd!», vaig cridar, arremolinant-me encara més, «absurd!»
+
+«El primer passavolant a qui m'adreci al carrer està obligat a ser el meu padrí exactament igual que a treure de l'aigua un nàufrag. S'han d'admetre els casos més excèntrics. Encara que demà demanés al propi director que fos el meu padrí, també hauria d'acceptar per simple sentiment cavalleresc i guardar-ne el secret! Anton Antónitx...»
+
+El cas era que en aquell mateix moment se'm presentava més clara i vívida que a ningú al món sencer tota la repugnant estupidesa de les meves suposicions i tot el revers de la medalla, però...
+
+«Arri, cochero, arri, brivall, arri!»
+
+«Eh, senyoret!», va dir la força de la terra.
+
+Un fred sobtat em va banyar.
+
+«No seria millor... no seria millor... anar directament cap a casa ara? Oh, Déu meu! Per què, per què ahir em vaig convidar a aquell sopar! Però no, és impossible! I la passejada de tres hores de la taula a l'estufa? No, ells, ells i no pas ningú altre han de pagar-me aquella passejada! Han de rentar-me aquest deshonor!»
+
+«Arri!»
+
+«I si em lliuren a la policia? No gosaran! Tindran por de l'escàndol. I si Zviérkov, per menyspreu, refusa el duel? Això és gairebé segur; però aleshores jo els demostro... Aleshores em llançaré a les oficines de les postes demà quan ell se'n vagi, l'agafaré per la cama, li arrancaré el capot quan pugi al cotxe. M'hi clavaré amb les dents al braç, el mossagaré. "Mireu tots, fins on es pot empènyer un home desesperat!" Que em pegui al cap, i tots ells darrere. Jo cridaré a tot el públic: "Mireu, vet aquí un cadell que marxa a seduir les txerquesses amb la meva escopinada a la cara!"
+
+Per descomptat, després d'això tot s'ha acabat! El departament ha desaparegut de la faç de la terra. M'agafen, em jutgen, em treuen del servei, m'empresonen, m'envien a Sibèria, a l'exili. Tant se val! Al cap de quinze anys sortiré de presó i me n'aniré darrere d'ell, de pèl·lec, fet un captaire. El trobaré en alguna capital de província. Serà casat i feliç. Tindrà una filla gran... Li diré: "Mira, monstre, mira les meves galtes enfonsades i el meu pèl·lec! Ho he perdut tot: la carrera, la felicitat, l'art, la ciència, la dona estimada, i tot per culpa teva. Vet aquí les pistoles. He vingut a descarregar la meva pistola i... i et perdono". Aleshores dispararé a l'aire, i de mi ningú no en sabrà res més...»
+
+Gairebé vaig plorar, tot i que sabia perfectament en aquell precís instant que tot era del Silvio de Púixkin i del *Mascarada* de Lérmontov. I de sobte vaig sentir una vergonya terrible, tan terrible que vaig aturar el cavall, vaig baixar del trineu i em vaig quedar dret a la neu al mig del carrer. El cochero em mirava amb estupor i sospirant.
+
+Què calia fer? Anar-hi era impossible: en sortia un absurd; i deixar les coses també era impossible, perquè aleshores... Senyor! Com es podien deixar les coses! I després d'aquelles ofenses!
+
+«No!», vaig exclamar, llançant-me de nou al trineu, «és la predestinació, és el destí! Arri, arri, cap allà!»
+
+I de la impaciència vaig donar un cop de puny al coll del cochero.
+
+«Però què fas? Per què pegues?», va cridar el mujik, tot fuetejant el seu rossí, que es va posar a cocejar amb les potes del darrere.
+
+La neu humida queia a grans flocs; em vaig descobrir, no me'n preocupava. Vaig oblidar tota la resta, perquè havia decidit definitivament donar la bufetada i sentia amb horror que ara, ara de debò, passaria, i que cap força al món no ho podia aturar. Les llanternes solitàries parpellejaven lúgubrament a la boira de neu, com torxes a un funeral. La neu se m'havia ficat sota el capot, sota la jaqueta, sota la corbata, i allà es fonia; no m'abrigava: de totes maneres ja tot estava perdut! Per fi vam arribar. Vaig saltar gairebé fora de mi, vaig pujar les escales corrents i vaig començar a picar a la porta amb les mans i els peus. Especialment els genolls se'm feien terriblement febles. La porta es va obrir bastant de pressa; semblava que ja sabien que venia. (Efectivament, Símonov havia avisat que potser en vindria un més, i allà calia avisar i prendre precaucions. Era un d'aquells «magatzems a la moda» d'aleshores que la policia ha exterminat fa temps. De dia era realment una botiga; al vespre, amb recomanació, s'hi podia anar de visites.) Vaig travessar a cames llargues la botiga fosca fins a la sala que coneixia, on cremava una sola espelma, i em vaig aturar perplex: no hi havia ningú.
+
+«On són?», vaig preguntar a algú.
+
+Ja se n'havien anat, per descomptat...
+
+Davant meu hi havia la mestressa, amb un somriure ximple, que vagament em coneixia. Al cap d'un minut es va obrir una porta i va entrar una altra persona.
+
+Sense fer cas de res, caminava amunt i avall per l'habitació i crec que parlava sol. Estava com salvat de la mort i tot el meu ésser se n'alegrava: li hauria donat la bufetada, sí, sense cap mena de dubte li l'hauria donada! Però ara no hi eren i... tot havia desaparegut, tot havia canviat!... Vaig mirar al voltant. Encara no m'orientava. Mecànicament vaig mirar la noia que havia entrat: davant meu vaig entreveure un rostre jove, fresc, una mica pàl·lid, amb celles fosques i rectes, amb una mirada seriosa i com una mica sorpresa. Això em va agradar immediatament; l'hauria odiada si hagués somrigut. La vaig mirar amb més fixesa, com amb esforç: els meus pensaments encara no s'havien aplegat. Alguna cosa ingènua i bondadosa hi havia en aquell rostre, però d'una seriositat estranya. Estic segur que allà dins això la perjudicava, i que cap d'aquells estúpids no l'havia notada. No era exactament una bellesa, però era alta, forta, ben feta. Anava vestida de manera extremadament senzilla. Alguna cosa fastigosa em va mossegar; vaig anar directament cap a ella...
+
+De casualitat vaig mirar-me al mirall. La meva cara agitada em va semblar extremadament repugnant: pàl·lida, dolenta, vil, amb els cabells esgavellats. «Doncs que sigui, me n'alegro», vaig pensar, «precisament me n'alegro que li semblaré repugnant; m'agrada...»
 
 ---
 
 ### Capítol V
 
 
-Em vaig despertar, o més aviat vaig sortir del meu estat de semison. Eren les dues de la matinada. En una habitació estreta, baixa, atapeïda per un armari enorme i plena de capses, draps i tota mena de roba vella, era gairebé totalment fosc. Un espelma que cremava sobre la taula al fons de l'habitació s'havia gairebé apagat.
+...En algun lloc darrere les mampares, com per una pressió enorme, com si algú les ofegués, van grinyolar les hores. Després d'un grinyol desnaturalment llarg, va seguir una campanada fina, repugnant i inexplicablement precipitada, com si algú hagués saltat endavant de cop. Van tocar les dues. Em vaig despertar, tot i que no dormia, sinó que jeia en un estat de semison.
 
-Liza estava al meu costat i em mirava fixament.
+En una habitació estreta, baixa, atapeïda per un armari enorme i plena de capses, draps i tota mena de roba vella, era gairebé totalment fosc. Un espelma que cremava sobre la taula al fons de l'habitació s'havia gairebé apagat i de tant en tant feia una flameta. Al cap d'uns minuts havia de fer-se la foscor absoluta.
 
-Vaig començar a parlar-li. No sé per què. Li vaig dir que aquell dia havia vist treure un taüt d'un soterrani, i que gairebé l'havien deixat caure. Li vaig parlar de les tombes inundades al cementiri de Vólkovo, de la neu humida, del fang.
+No vaig trigar a tornar en mi; tot, d'un cop, sense esforç, se'm va recordar immediatament, com si hagués estat a l'aguait per llançar-se'm al damunt. I de fet, fins i tot en el meu estat de semison, havia quedat en la memòria una mena de punt que no s'oblidava, al voltant del qual pesadament voltaven els meus somnis adormits. Però era estrany: tot el que m'havia passat aquell dia se'm presentava ara, en despertar-me, com cosa ja passada de feia molt, com si fes temps i temps que ja ho havia superat.
 
-«Et fa igual, morir?», li vaig preguntar.
+Tenia el cap empastifat. Alguna cosa semblava flotar per sobre meu, fregar-me, excitar-me i inquietar-me. L'angoixa i la bilis tornaven a acumular-se i buscaven sortida. De cop, al meu costat, vaig veure dos ulls oberts que em contemplaven amb curiositat i insistència. La mirada era fredament indiferent, torva, com totalment aliena; pesava.
+
+Un pensament ombrívol va néixer al meu cervell i em va recórrer tot el cos amb una sensació repugnant, semblant a la que se sent en entrar en un subsòl humit i ranci. Era d'alguna manera contranatural que precisament ara aquells dos ulls s'haguessin posat a mirar-me. Vaig recordar també que durant dues hores no havia dit ni una paraula a aquella criatura i no ho havia considerat necessari; fins i tot, per alguna raó, m'havia agradat. Ara, però, se'm va presentar amb tota la vivesa la idea absurda, repugnant com una aranya, de la depravació que, sense amor, grollerament i desvergonyidament, comença directament per allò amb què l'amor autèntic es corona. Ens vam mirar així llargament, però ella no abaixava els ulls davant dels meus ni canviava la seva mirada, de manera que al final se'm va fer inquietant.
+
+«Com et dius?», vaig preguntar de cop, per acabar d'una vegada.
+
+«Liza», va respondre gairebé en un xiuxiueig, però d'alguna manera gens amable, i va desviar els ulls.
+
+Vaig callar.
+
+«Avui fa un temps... neu... fastigós!», vaig dir gairebé per a mi, posant-me tristament la mà rere el cap i mirant el sostre. Ella no va respondre. Tot plegat era ignominiós.
+
+«Ets d'aquí?», vaig preguntar al cap d'un minut, gairebé enfadat, girant-me lleugerament cap a ella.
+
+«No.»
+
+«D'on?»
+
+«De Riga», va dir de mala gana.
+
+«Alemanya?»
+
+«Russa.»
+
+«Fa temps que ets aquí?»
+
+«On?»
+
+«En aquesta casa.»
+
+«Dues setmanes.» Parlava cada cop de manera més tallant. L'espelma es va apagar del tot; ja no li podia distingir la cara.
+
+«Tens pare i mare?»
+
+«Sí... no... sí que en tinc.»
+
+«On són?»
+
+«Allà... a Riga.»
+
+«Qui són?»
+
+«Res...»
+
+«Com res? Qui, de quina condició?»
+
+«Menestrals.»
+
+«Has viscut sempre amb ells?»
+
+«Sí.»
+
+«Quants anys tens?»
+
+«Vint.»
+
+«I per què te'n vas anar?»
+
+«Perquè sí...»
+
+Aquest «perquè sí» volia dir: deixa'm en pau, em fas nàusees. Vam callar.
+
+Déu sap per què no marxava. Jo mateix em sentia cada cop més fastiguejat i trist. Les imatges de tot el dia passat, pel seu compte, sense la meva voluntat i desordenadament, van començar a desfilar per la meva memòria. De sobte vaig recordar una escena que havia vist aquell matí al carrer, quan anava trotant amb preocupació cap a l'oficina.
+
+«Avui han tret un taüt d'un soterrani i gairebé l'han deixat caure», vaig dir de cop en veu alta, sense cap intenció de començar una conversa, gairebé per accident.
+
+«Un taüt?»
+
+«Sí, a la plaça del Fenc; el treien d'un soterrani.»
+
+«D'un soterrani?»
+
+«No d'un soterrani, sinó d'un pis de soterrani... bé, ja saps, a baix... d'una mala casa... Hi havia tanta brutícia al voltant... Closques, escombraries... feia pudor... era fastigós.»
+
+Silenci.
+
+«Un mal dia per enterrar!», vaig tornar a començar, per no callar.
+
+«Per què mal?»
+
+«La neu, la mullena...» (Vaig badallar.)
+
+«Tant se val», va dir ella de sobte, després d'un breu silenci.
+
+«No, és fastigós...» (Vaig badallar de nou.) «Els enterradors devien estar maleint perquè la neu els mullava. I a la fossa devia haver-hi aigua.»
+
+«Per què hi hauria d'haver aigua a la fossa?», va preguntar amb una mena de curiositat, però parlant de manera encara més seca i tallant que abans. Alguna cosa va començar a esperonar-me.
+
+«Com que per què? Doncs l'aigua, al fons, uns quinze centímetres. Aquí, al cementiri de Vólkovo, no es pot fer ni una sola fossa seca.»
+
+«Per què?»
+
+«Com per què? El terreny és pantanós. Aquí tot és pantà. Els posen directament a l'aigua. Jo mateix ho he vist... moltes vegades...»
+
+(No ho havia vist ni un sol cop, i mai no havia estat a Vólkovo; només ho havia sentit explicar.)
+
+«Et fa igual, morir?»
 
 «Per què hauria de morir?», va respondre, com defensant-se.
 
 «Algun dia et moriràs, igual que la difunta d'avui. Era... també una noia. Es va morir de tisi.»
 
-I aleshores, sense saber per què, em vaig posar a parlar-li de la seva vida, del seu futur, de com es marcaria any rere any, de com cada cop la cosa seria pitjor, fins a acabar en un soterrani de la plaça del Fenc. Li vaig descriure un funeral miserable, sense llàgrimes, sense ningú, i una tomba plena d'aigua i fang.
+«Una prostituta s'hauria mort a l'hospital.» (Ja ho sabia, vaig pensar, i va dir «prostituta» i no «noia».)
 
-«I ningú, ningú, mai al món, no vindrà a la teva tomba; el teu nom desapareixerà de la faç de la terra, com si mai no haguessis existit ni haguessis nascut! Fang i pantà, per molt que piquis a la nit, quan els morts es lleven, al costat del taüt: "Deixeu-me, bona gent, sortir a viure una mica! Vaig viure i no vaig veure la vida, la meva vida se'n va anar de buit; se la van beure a la taverna de la plaça del Fenc; deixeu-me, bona gent, viure una altra vegada al món!..."»
+«Devia diners a la mestressa», vaig objectar, cada cop més esperonat per la discussió, «i va servir-la gairebé fins al final, tot i que tenia la tisi. Els cocheros de la rodalia en parlaven amb els soldats. Devien ser els seus antics coneguts. Reien. Fins i tot volien anar a fer-li el funeral a la taverna.» (I aquí vaig mentir molt.)
 
-Em vaig deixar endur pel pathos fins al punt que se'm va fer un nus a la gola... i de cop em vaig aturar, espantat, i vaig començar a escoltar amb el cor bategant-me. I amb raó per espantar-me.
+Silenci, un silenci profund. Ella no es movia ni un pèl.
 
-Feia estona que pressentia que li havia trasbalsat tota l'ànima i li havia trencat el cor. Ella jeia bocaterrosa, amb la cara enfonsada al coixí, i se l'abraçava amb les dues mans. Tot el seu cos jove tremolava com en convulsions. Els sanglots que se li comprimien al pit s'escapaven en crits i gemecs. Aleshores s'enganxava encara més fort al coixí: no volia que ningú, ni una sola ànima viva d'allà dins, sabés del seu turment i de les seves llàgrimes. Es mossegava el coixí, es mossegava la mà fins a fer-se sang, o bé, clavant-se els dits als cabells desfets, es quedava rígida per l'esforç, contenint l'alè i serrant les dents.
+«I a l'hospital, millor s'hi mor?»
 
-Li vaig donar la meva adreça i li vaig demanar que vingués a veure'm.
+«No és el mateix?... I per què m'hauria de morir?», va afegir amb irritació.
 
-«Vindré...», va xiuxiuejar ella amb decisió.
+«Si no ara, després.»
 
-Marxant cap a casa, a peu, sota la neu humida que queia a grans flocs, sabia la veritat amarga que ja resplendí a través de la meva confusió.
+«Doncs després...»
+
+«Com que sí! Tu ara ets jove, bonica, fresca: per això et valoren. Però d'aquí un any d'aquesta vida ja no seràs el que ets; et marcires.»
+
+«D'aquí un any?»
+
+«En tot cas, d'aquí un any valdràs menys», vaig continuar amb malícia. «I aniràs d'aquí a un altre lloc, més baix, a una altra casa. I al cap d'un any més, a una tercera casa, cada cop més baix, i al cap de set anys arribaràs a la plaça del Fenc, al soterrani. I encara seria sort. Perquè la desgràcia és que potser et vindrà, a sobre de tot, alguna malaltia, una debilitat de pulmó... o un refredat. En aquesta vida les malalties es curen malament. S'enganxen i potser ja no se'n van. I et moriràs.»
+
+«Doncs em moriré», va respondre amb una animadversió ja decidida, i es va remoure de cop.
+
+«Però no és una llàstima?»
+
+«De qui?»
+
+«De la vida.»
+
+Silenci.
+
+«Tens promès?»
+
+«A vós què us importa?»
+
+«No t'interrogo. Tant me fa. Per què t'enfades? De ben segur has tingut els teus disgustos. A mi què m'importa? Només em fa llàstima.»
+
+«De qui?»
+
+«De tu em fa llàstima.»
+
+«No cal...», va xiuxiuejar gairebé sense veu i es va remoure de nou.
+
+Això em va irritar immediatament. Com! Jo m'havia posat tan amable amb ella, i ella...
+
+«I tu què et penses? Vas per bon camí, oi?»
+
+«No penso res.»
+
+«Doncs pitjor, que no pensis. Desperta, mentre tens temps. I temps en tens. Ets encara jove, bonica; podries estimar, casar-te, ser feliç...»
+
+«No totes les casades són felices», va tallar amb la seva brusquedat seca d'abans.
+
+«No totes, és clar, però tot i així és molt millor que això. Incomparablement millor. I amb amor es pot viure fins i tot sense felicitat. La vida és bona fins i tot amb penes, és bo viure al món, sigui com sigui. Però aquí, què hi ha a part de... pudor? Ecs!»
+
+Vaig girar-me amb repugnància; ja no raonava fredament. Jo mateix començava a sentir el que deia i m'acalorava. Ja m'abrusava per exposar les meves idees estimades, covades al meu racó. Alguna cosa s'havia encès de sobte dins meu, una mena de «propòsit» havia aparegut.
+
+«No em miris a mi, jo no et sóc exemple. Potser sóc encara pitjor que tu. Jo, d'altra banda, he vingut aquí borratxo», vaig afanyar-me a justificar-me. «A més, un home i una dona és cosa ben diferent; per molt que m'embruti i m'enlletgeixi, no sóc l'esclau de ningú; he vingut i me n'aniré, i ja no hi sóc. Me n'he sacseït i ja sóc un altre. Però tu, des del primer moment ets esclava. Sí, esclava! Ho dónes tot, tota la voluntat. I trencar aquestes cadenes després, no podràs: cada cop et lligaran més fort. Aquesta cadena maleïda, la conec. Ja no parlo d'altres coses que potser no entendries, però digues-me: segur que ja deus diners a la mestressa, oi? Vet-ho aquí!», vaig afegir, encara que ella no em va respondre, sinó que escoltava callada, amb tot el seu ésser. «Vet aquí la cadena! Mai no te n'alliberaràs. Faran que sigui així. És com vendre l'ànima al diable...
+
+»...I a més a més», vaig continuar, «jo... potser sóc tan desgraciat com tu, i per això em tiro al fang, també per desesperació. Bé, es beu per pena: doncs jo sóc aquí per pena. Digues-me, què hi ha de bo en tot això: vet aquí tu i jo... que hem estat junts... fa una estona, i no ens hem dit ni una paraula en tot el temps, i després tu m'has mirat com una salvatge; i jo igual. S'estima així? Una persona ha de trobar-se amb una altra persona així? És una ignomínia, vet aquí el que és!»
+
+«Sí!», va assentir de cop, de pressa i amb brusquedat. Fins i tot em va sorprendre la precipitació d'aquell sí. Vol dir que potser el mateix pensament li rondava pel cap quan fa un moment em contemplava? Vol dir que també ella era capaç de certs pensaments?... «Dimoni, això és curiós, això és... afinitat», vaig pensar, gairebé fregant-me les mans. «I com que no m'he de sortir amb una ànima tan jove!...»
+
+Però el que més m'arrossegava era el joc.
+
+Ella va girar el cap cap a mi i, segons em va semblar a la foscor, es va recolzar sobre la mà. Potser m'examinava. Com vaig lamentar no poder distingir-li els ulls! Sentia la seva respiració profunda.
+
+«Per què vas venir aquí?», vaig començar ja amb certa autoritat.
+
+«Perquè sí...»
+
+«Però que bé que s'estaria a casa dels teus pares! Calenteta, tranquil·la; el teu niu.»
+
+«I si és pitjor?»
+
+«Cal trobar el to», em va passar pel cap, «amb sentimentalisme potser no se'n treu gaire.»
+
+Tanmateix, només va ser un flaix. Us juro que ella m'interessava de debò. A més, estava afluixat, receptiu. I la pilotada va tan bé amb el sentiment.
+
+«Qui diu!», vaig apressar-me a respondre. «De tot passa. Jo estic segur que algú t'ha fet mal i que els altres estan més en falta davant teu que tu davant d'ells. De la teva història no en sé res, però una noia com tu segur que no ha vingut aquí de bon grat...»
+
+«Quina mena de noia sóc jo?», va xiuxiuejar gairebé sense veu; però la vaig sentir.
+
+«Dimoni, li estic fent la pilota. Això és fastigós. O potser no...» Ella callava.
+
+«Mira, Liza, parlaré de mi. Si jo hagués tingut una família de petit, no seria com sóc ara. Hi penso sovint. Perquè per malament que vagin les coses a la família, són el teu pare i la teva mare, no pas enemics ni estranys. Encara que sigui un cop l'any, et mostraran amor. Almenys saps que ets a casa teva. Jo vaig créixer sense família; per això dec ser el que sóc... insensible.»
+
+Vaig esperar una mica.
+
+«Potser no ho entén», vaig pensar, «i és ridícul: moral!»
+
+«Si jo fos pare i tingués una filla, crec que estimaria més la filla que els fills, de debò», vaig començar de biaix, com qui no parla del tema, per distreure-la. Confesso que vaig enrojolar.
+
+«Per què?», va preguntar.
+
+Ah, escoltava, doncs!
+
+«Així, no ho sé, Liza. Mira: he conegut un pare que era un home sever, dur, però davant de la filla s'agenollava, li besava les mans i els peus, no se'n cansava de mirar-la. Ella ballava en un sarao i ell es passava cinc hores al mateix lloc, sense treure-li els ulls de sobre. N'estava boig; jo ho entenc. A la nit ella es cansava, s'adormia, i ell es despertava i anava a besar-la adormida i a fer-li el senyal de la creu. Ell anava amb un jaquetó greixós, un garrepa per a tothom, però a ella li comprava coses cares, regals luxosos, i quina alegria si el regal li agradava. Els pares sempre estimen més les filles que les mares. A algunes noies els va bé viure a casa dels pares! I jo, crec que la meva filla no la casaria mai.»
+
+«Per què?», va preguntar, amb un mig somriure.
+
+«Gelós que seria, per Déu. Com és possible que en besarà un altre? Que estimarà un desconegut més que el seu pare? Fa mal només de pensar-ho. Per descomptat, tot això són ximpleries; per descomptat, tothom finalment entra en raó. Però crec que, abans de lliurar-la, em turmentaria amb les meves soles preocupacions: rebutjaria tots els pretendents. I al final l'acabaria donant a aquell que ella mateixa estima. Perquè aquell de qui la filla s'enamora, al pare sempre li sembla el pitjor de tots. Així va. Per culpa d'això hi ha moltes desgràcies a les famílies.»
+
+«D'altres estan contents de vendre la filla, no ja de donar-la amb honor», va dir ella de cop.
+
+Ah! Vet-ho aquí!
+
+«Això, Liza, és en aquelles famílies maleïdes on no hi ha ni Déu ni amor», vaig reprendre amb passió. «I on no hi ha amor, tampoc no hi ha enteniment. N'hi ha, de famílies així, és veritat, però jo no parlo d'elles. Tu, pel que es veu, no has vist res de bo a la teva família, per parlar així. De debò deus ser desgraciadíssima. Hm... Això passa sobretot per la pobresa.»
+
+«I entre els senyors, és millor? La gent honrada viu bé fins i tot en la pobresa.»
+
+«Hm... sí. Pot ser. Encara una cosa, Liza: l'home només compta les seves penes i no compta la seva felicitat. Però si ho comptés com cal, veuria que a tothom li n'ha tocat la seva part. I si a la família tot va bé, si Déu beneeix, si el marit resulta un home bo, que t'estima, et mima, no et deixa? La vida és bona en aquella família! Fins i tot de vegades amb penes a mitges és bona; i on no hi ha penes? Et casaràs, potser, i ja ho sabràs. Però pren els primers temps de casada, amb aquell que estimes: quanta felicitat, quanta felicitat de vegades! I contínuament. Als primers temps fins i tot les baralles amb el marit acaben bé. Hi ha dones que com més estimen, més baralles busquen amb el marit. De debò; n'he conegut una: "Tant t'estimo", deia, "que per amor et faig patir, i tu nota-t'ho!" Saps que es pot turmentar algú per amor? Sobretot les dones. I ella pensa per a si: "Després ja l'estimaré tant, tant el mimaré, que no és pecat turmentar-lo ara!" I a la casa tothom se n'alegra, i tot va bé, i és alegre, i pacífic, i honrat... Ara, altres vegades la gelosia. Ell se'n va alguna banda — jo n'he coneguda una — ella no s'aguanta, surt de nit i corre furtivament a mirar: no serà allà, no serà en aquella casa, no serà amb aquella dona? Això ja és dolent. I ella mateixa ho sap, que és dolent, i el cor se li encongeix i es castiga, però és que l'estima; tot per amor. I què bo és fer les paus després d'una baralla, admetre la culpa davant d'ell o perdonar-lo! I tan bé que es queden tots dos de cop, tan bé, com si es tornessin a trobar, com si es tornessin a casar, com si l'amor tornés a començar. I ningú, ningú no ha de saber el que passa entre marit i muller, si s'estimen. I per grossa que sigui la baralla, ni a la pròpia mare han de cridar de jutge, ni l'un ha de parlar de l'altre. Ells mateixos són els seus jutges. L'amor és un misteri de Déu i ha d'estar amagat de tots els ulls estranys, passi el que passi. Així és més sant, més bo. Es respecten més l'un a l'altre, i sobre el respecte es basa molt. I si un cop ja hi ha hagut amor, si s'han casat per amor, per què ha de passar l'amor? No es pot mantenir? Rarament hi ha un cas que no es pugui mantenir. I si el marit resulta un home bo i honrat, com passarà l'amor? El primer amor de casats passarà, és cert, però després en vindrà un de millor encara. Aleshores s'uniran les ànimes, posaran en comú tots els afers; no hi haurà secrets entre ells. I quan vindran els fills, aleshores fins i tot els moments més difícils semblaran felicitat; només cal estimar i tenir coratge. Aleshores fins i tot la feina és alegre; aleshores fins i tot la falta de pa que et negues per als fills, també és alegre. Perquè ells després t'estimaran per això; per a tu mateixa estalvies, doncs. Els fills creixen; sents que ets el seu exemple, el seu suport; que fins i tot quan moris, ells portaran tota la vida els teus sentiments i pensaments, perquè els van rebre de tu, la teva imatge i semblança. Per tant, és un gran deure. Com no s'han d'unir pare i mare? Diuen que tenir fills és pesat. Qui ho diu? És la felicitat celestial! Estimes els nens petits, Liza? Jo els estimo bojament. Imagina't: un noiet rosat, que et xucla el pit, quin marit tindrà el cor de girar-se contra la dona, mirant-la com seu amb la seva criatura! El nadó és rosat, grassonet, s'estira, es gronxa; les cametes i les manetes estan plenes, les ungles netes, petites, tan petites que fa riure de mirar-les, els ullets semblant que ja ho entenguin tot. I xucla, i amb la maneta et toqueteja el pit, juga. El pare s'acosta, el nen deixa el pit, s'inclina tot enrere, mira el pare, riu — i Déu sap com de rialler — i torna, torna a xuclar. I llavors va i mossega el pit de la mare, quan ja li surten les dents, i amb els ullets la mira de reüll: "Mira, t'he mossegat!" No és tota la felicitat, quan tots tres, marit, muller i fill, estan junts? Per aquests moments es pot perdonar molt. No, Liza, primer cal aprendre a viure un mateix, i després acusar els altres!»
+
+«Amb estampes, amb aquestes estampes és com t'hi has de ficar!», vaig pensar per a mi, encara que, per Déu, parlava amb sentiment, i de cop vaig enrojolar. «I si ella de cop esclata a riure, on em fico?» Aquella idea em va fer posar furiós. Al final del discurs m'havia acalorat de debò, i ara l'amor propi em pungia d'alguna manera. El silenci es va allargar. Gairebé la vaig empènyer.
+
+«Com és que vós...», va començar ella de cop, i es va aturar.
+
+Però jo ja ho havia entès tot: a la seva veu tremolava una cosa diferent, ja no seca, ni brusca, ni refractària com feia un moment, sinó una cosa suau i tímida, tan tímida que de sobte jo mateix vaig sentir-me avergonyit davant d'ella, culpable.
+
+«Què?», vaig preguntar amb una curiositat tendra.
+
+«Doncs vós...»
+
+«Què?»
+
+«Parleu com... com si fos d'un llibre», va dir, i una cosa que semblava un to burleta va tornar a sentir-se a la seva veu.
+
+Aquella observació em va fer molt de mal. No era el que m'esperava.
+
+No vaig entendre que ella es disfressava expressament de burla, que aquesta és la darrera estratagema habitual de les persones tímides i de cor cast, a les quals algú envaeix l'ànima de manera grollera i insistent i que fins a l'últim moment no es rendeixen per orgull i tenen por de mostrar els seus sentiments. Pel sol fet de la timidesa amb què havia abordat la seva burla en diversos intents, i que només al final s'havia decidit a expressar-la, jo ja hauria d'haver-ho endevinat. Però no ho vaig endevinar, i un sentiment dolent em va envair.
+
+«Espera't», vaig pensar.
 
 ---
 
 ### Capítol VI
+
+
+«Eh, prou, Liza, quin llibre ni llibre, quan a mi mateix em fa fàstic tot plegat. I no de lluny: tot això se m'ha despertat ara a l'ànima... De veritat, de veritat que no et fa fàstic ser aquí? No, pel que es veu, molt pot fer l'hàbit! El dimoni sap què pot fer de la gent, l'hàbit. De veritat et penses que mai no t'envelliras, que sempre seràs guapa i que et tindran aquí pels segles dels segles? Ja no parlo de les porcades d'aquí dins... Però mira, et diré una cosa sobre la teva vida d'ara: ets jove, bonica, bona, amb ànima i sentiments; doncs, saps què? que tan bon punt m'he despertat fa una estona, m'ha fet fàstic estar aquí amb tu! Només borratxo es pot venir aquí. Però si fossis en un altre lloc, si visquessis com viu la gent decent, jo potser no és que t'anés al darrere, sinó que m'enamoraria de tu: em faria feliç una mirada teva, no ja una paraula; t'esperaria al portal, m'estaria hores de genolls davant teu; et miraria com la meva promesa, i ho tindria per un honor. No gosaria pensar res impur de tu. Però aquí sé que només cal que jo xiuli i tu, vulguis o no vulguis, has de venir amb mi, i ja no sóc jo qui es consulta amb la teva voluntat, sinó tu amb la meva. L'últim dels mujiks que es lloga de jornaler, almenys no es ven sencer, i sap que li arriba el termini. Però on és el teu termini? Pensa-hi: què hi dónes aquí? Què hi esclavitzes? L'ànima, l'ànima sobre la qual no tens cap poder, l'esclavitzes junt amb el cos! El teu amor el lliures a la profanació de qualsevol borratxo! L'amor! Però si l'amor ho és tot, si l'amor és un diamant, un tresor de donzella! Per merèixer aquest amor, hi ha homes disposats a donar la vida, a anar a la mort. I en quant es valora ara el teu amor? Estàs comprada sencera, tota sencera, i per què cal buscar-ne l'amor, quan sense amor tot és possible. Per a una noia no hi ha ofensa més gran, ho entens? He sentit dir que us fan la gràcia de deixar-vos tenir amants aquí dins. Però si això és pura farsa, un engany, una burla, i vosaltres us ho creieu. Que l'estima, de debò, l'amant? No m'ho crec. Com estimarà, si sap que d'un moment a l'altre et cridaran per anar amb un altre? Un porc, vet aquí el que és! Et respecta ni que sigui una mica? Què teniu en comú? Es riu de tu i et roba — vet aquí tot el seu amor! Sort si no et pega. I potser sí que et pega. Pregunta-li, si en tens un: es casarà amb tu? T'esclafirà de riure a la cara, si és que no t'escup o et pega — i ell mateix potser no val dos cèntims trencats. I a canvi de què, pensa-hi, hi has llençat la teva vida? Que et donen cafè i et mantenen bé? Però per què et mantenen? Una altra, una d'honrada, no li passaria el mos per la gola, perquè sap per a què la mantenen. Tu aquí deus diners, i sempre en deuràs, i sempre, fins al final, en deuràs, fins que els clients comencin a fer-te fàstic. I això arribarà aviat; no confiïs en la joventut. Aquí tot vola en diligència. Et trauran a fora. I no simplement et trauran, sinó que molt abans començaran a buscar-te els ossos, a retreure't coses, a insultar-te — com si no fossis tu qui li ha donat la salut, la joventut i l'ànima de franc, sinó com si l'haguessis arruïnada a ella, com si l'haguessis deixat al carrer, com si l'haguessis robat. I no esperis suport: les teves companyes també es llançaran contra tu, per fer-li la pilota, perquè aquí totes són esclaves, fa temps que han perdut la consciència i la compassió. S'han envilides, i no hi ha al món insults més repugnants, més vils, més ofensius que els d'aquí dins. I tot ho hi deixaràs, tot, sense reserva: la salut, la joventut, la bellesa, les esperances, i als vint-i-dos anys semblaran que en tinguis trenta-cinc, i sort si no estàs malalta; dóna gràcies a Déu per això. Tu ara et penses que no treballes, que tot és gresca! Doncs no hi ha al món treball més dur ni més de presidi. El cor sol ja se't desfaria en llàgrimes. I no gosaràs dir ni una paraula, ni mitja, quan et fotin fora; te n'aniràs com una culpable. Passaràs d'un lloc a un altre, i d'un altre a un tercer, i aniràs baixant fins a arribar a la plaça del Fenc, al soterrani. I allà et pegaran sense mirar-se-hi; és la cortesia d'allà; allà el client no sap acariciar sense pegar. No et creus que sigui tan fastigós? Vés-hi, mira-ho algun dia, potser ho veuràs amb els teus propis ulls. Jo vaig veure-n'hi una, per Cap d'Any, al portal. Les seves pròpies companyes l'havien tret a fora per fer-la refredar una mica, perquè plorava massa, i li havien tancat la porta. A les nou del matí ja estava completament borratxa, escabellada, mig nua, tota apallissada. Tenia la cara pintada, però els ulls morats; li regalimava sang del nas i de les dents: un cochero li acabava de clavar un cop. Seia a l'escaló de pedra, a la mà tenia un peix salat; plorava, es lamentava de la seva «sort», i amb el peix picava els graons de l'escala. I al portal s'havien apilat els cocheros i els soldats borratxos que es burlaven d'ella. No et creus que tu també seràs igual? Jo tampoc no ho voldria creure, però qui sap, potser fa deu anys, vuit, aquesta mateixa dona, la del peix salat, havia arribat d'algun lloc fresca com un angelet, innocent, neta; no coneixia el mal, s'enrojolava a cada paraula. Potser era com tu: orgullosa, susceptible, diferent de les altres, amb aires de reina, i sabia que tota una felicitat esperava aquell que l'estimés i a qui ella estimés. Mira com ha acabat! I si en aquell moment precís, quan picava amb el peix els graons bruts, borratxa i escabellada, si en aquell moment li van tornar a la memòria tots els seus anys anteriors, nets, a casa del seu pare, quan encara anava a l'escola i el fill del veí l'esperava al camí, li jurava que l'estimaria tota la vida, que posaria la seva sort a les seves mans, i plegats van decidir estimar-se per sempre i casar-se quan fossin grans! No, Liza, feliç tu, feliç tu, si et mors aviat en algun racó, en algun soterrani, com la difunta d'avui, de tisi. A l'hospital, dius? D'acord, t'hi portaran, si la mestressa encara et necessita. La tisi és una malaltia especial; no és cap febre. Fins a l'últim moment la persona espera i diu que està bé. S'enganya a si mateixa. I a la mestressa li convé. No pateixis, és així; has venut l'ànima, i a sobre deus diners, per tant ni pots piular. I quan estiguis morint-te, totes t'abandonaran, totes et giraran l'esquena — perquè què se'n treu, de tu? Encara et retreuran que ocupes lloc de franc, que no t'acabes de morir. No aconseguiràs un got d'aigua sense insults: "Quan et moriràs, bona pessa? No ens deixes dormir amb els teus gemecs, els clients se'n fan fàstic". Això és cert; jo ho he sentit dir. Et ficaran, moribunda, al racó més pudent del soterrani: foscor, humitat; què pensaràs, estesa allà sola? Et moriràs, t'arreplegaran de pressa, mà estranya, rondina i impacient; ningú no et beneïrà, ningú no sospirarà per tu; només voldran treure't del damunt. Compraran quatre posts, et trauran, com han tret la pobra d'avui, i aniran a fer-te el funeral a la taverna. A la fossa, fang, brutícia, neu humida; per tu no faran cerimònies. "Baixa-la, Vaniukha; vaja si aquesta pessa, fins aquí de cap per avall s'ha posat. Escurça les cordes, brivall." "Va bé així." "Com va bé? Mira que cau de costat. Era una persona o no? Bé, tant se val, cobreix-la." I ni maleir-se voldran per tu gaire estona. La cobriran de pressa amb argila blava humida i se n'aniran a la taverna... I aquí s'acaba la teva memòria a la terra; a les tombes d'altres hi van els fills, els pares, els marits, però a la teva: ni una llàgrima, ni un sospir, ni un recordatori, i ningú, ningú, mai en tot el món no vindrà a la teva tomba; el teu nom desapareixerà de la faç de la terra, com si mai no haguessis existit ni haguessis nascut! Fang i pantà, per molt que piquis a la nit, quan els morts es lleven, a la tapa del taüt: "Deixeu-me, bona gent, sortir a viure una mica! Vaig viure i no vaig veure la vida; la meva vida se'n va anar de buit; se la van beure a la taverna de la plaça del Fenc; deixeu-me, bona gent, viure una altra vegada al món!..."»
+
+---
+
+### Capítol VII
+
+
+Em vaig deixar endur pel pathos fins al punt que se'm va preparar un espasme a la gola i... de cop vaig aturar-me, em vaig incorporar espantat i, inclinant temerosament el cap, amb el cor bategant-me, vaig començar a escoltar. I amb raó per espantar-me.
+
+Feia estona que pressentia que li havia trasbalsat tota l'ànima i li havia trencat el cor, i com més me'n convencia, més desitjava arribar al meu objectiu tan aviat i tan fort com fos possible. El joc, el joc m'havia arrossegat; tot i que no només el joc...
+
+Sabia que parlava amb afectació, amb rebuscament, fins i tot com d'un llibre; en una paraula, jo no sabia parlar d'altra manera que «com d'un llibre». Però això no em preocupava; sabia, pressentia, que em comprendrien i que aquella mateixa qualitat llibresca podia ajudar encara més la causa. Però ara, havent aconseguit l'efecte, vaig acovardir-me de cop. No, mai, mai no havia estat testimoni d'una desesperació semblant! Jeia bocaterrosa, amb la cara fermament clavada al coixí i abraçant-lo amb les dues mans. El pit se li esquinçava. Tot el seu cos jove tremolava com en convulsions. Els sanglots que se li comprimien al pit la pressionaven, l'esberlaven i de cop esclataven en crits i gemecs. Aleshores s'enganxava encara més fort al coixí: no volia que ningú allà dins, ni una sola ànima viva, sabés del seu turment i de les seves llàgrimes. Es mossegava el coixí, es va mossegar la mà fins a fer-se sang (ho vaig veure després), o bé, clavant-se els dits als cabells desfets, es quedava rígida per l'esforç, contenint l'alè i serrant les dents. Vaig voler dir-li alguna cosa, demanar-li que es calmés, però vaig sentir que no gosava, i de sobte jo mateix, tot estremint-me, gairebé amb terror, vaig posar-me a palpar a la foscor, a recollir les meves coses de pressa per marxar. Estava fosc: per molt que m'hi esforçava, no podia acabar de pressa. De cop vaig tocar una capsa de llumins i un canelobro amb una espelma nova sencera. Tan bon punt la llum va il·luminar l'habitació, Liza es va alçar de cop, va seure i, amb una mena de rostre convuls, amb un mig somriure de boja, gairebé absurd, em va mirar. Vaig seure al seu costat i li vaig agafar les mans; ella va tornar en si, es va llançar cap a mi, va voler abraçar-me, però no va gosar i va inclinar suaument el cap davant meu.
+
+«Liza, amiga meva, he fet mal... perdona'm», vaig començar, però ella em va estrènyer les mans amb tanta força que vaig comprendre que no era això el que calia dir, i vaig callar.
+
+«Vet aquí la meva adreça, Liza, vine a veure'm.»
+
+«Vindré...», va xiuxiuejar ella amb decisió, encara sense alçar el cap.
+
+«Ara me'n vaig, adéu... fins a la vista.»
+
+Vaig aixecar-me; ella també es va aixecar i de sobte es va posar tota vermella, va estremir-se, va agafar el mocador que hi havia sobre la cadira i se'l va llançar a les espatlles fins al mentó. Fet això, va tornar a somriure d'una manera dolorosa, va enrojolar i em va mirar estranyament. Em feia mal; tenia pressa de marxar, de desaparèixer.
+
+«Espereu», va dir de sobte, ja al vestíbul, a la mateixa porta, aturant-me per la màniga del capot; va deixar la candela de pressa i va sortir corrents: pel que es veia, havia recordat alguna cosa o volia portar-me alguna cosa per ensenyar-me. Mentre corria, es va posar tota vermella, els ulls li brillaven, als llavis li va aparèixer un somriure — què devia ser? Vaig esperar per força; va tornar al cap d'un minut, amb una mirada que com si demanés perdó per alguna cosa. En general, ja no era la mateixa cara, la mateixa mirada de feia una estona: torva, desconfiada i obstinada. Ara la seva mirada era suplicant, suau, i alhora confiada, tendrament tímida. Així miren els nens els qui estimen molt i de qui demanen alguna cosa. Tenia els ulls marrons clars, uns ulls bells, vius, que sabien reflectir tant l'amor com l'odi ombrívol.
+
+Sense explicar-me res — com si jo, com un ésser superior, hagués de saber-ho tot sense explicacions — em va estendre un paper. Tota la seva cara s'havia il·luminat en aquell instant amb el triomf més ingenu, gairebé infantil. Vaig desplegar-lo. Era una carta d'un estudiant de medicina o d'algú semblant: una declaració d'amor molt pomposa, florida, però extraordinàriament respectuosa. No recordo ara les paraules exactes, però recordo molt bé que a través de l'estil elevat s'entreveien sentiments autèntics, que no es poden fingir. Quan vaig acabar de llegir, vaig trobar la seva mirada calenta, curiosa i infantilment impacient fixada en mi. Havia clavat els ulls al meu rostre i esperava amb impaciència: què diria? Amb poques paraules, de pressa, però amb una alegria i un orgull evidents, em va explicar que havia estat en un ball, a casa d'una família «molt, molt bona gent, gent de família, on no saben absolutament res, res de res», perquè ella aquí encara era nova, tot just havia arribat i de cap manera havia decidit quedar-s'hi, i se n'aniria en acabar de pagar el deute... «Doncs allà hi havia aquell estudiant, va ballar tota la nit, va parlar amb ella, i va resultar que la coneixia de Riga, de quan era petita, havien jugat plegats, feia molt temps ja, i coneixia els seus pares, però d'això ell no en sap res de res de res, ni se'n sospita! I l'endemà del ball (feia tres dies) li havia enviat aquesta carta a través d'una amiga amb qui ella havia anat al ball... i... i ja està.»
+
+Va abaixar amb pudor els seus ulls que llampegaven, quan va acabar d'explicar-ho.
+
+Pobreta, guardava la carta d'aquell estudiant com un tresor i havia sortit corrents a buscar aquell únic tresor seu, no volent que jo marxés sense saber que també a ella l'estimaven honestament i sincerament, que amb ella també es parlava amb respecte. Segurament aquella carta estava destinada a quedar-se a la capsa sense conseqüències. Tant se val; estic segur que ella l'hauria guardat tota la vida com un tresor, com el seu orgull i la seva justificació, i vet aquí que ara, en un moment com aquell, se n'havia recordat i l'havia portat per vantar-se ingènuament davant meu, per restituir-se als meus ulls, perquè jo ho veiés, perquè jo l'elogiés. No vaig dir res, li vaig estrènyer la mà i vaig sortir. Tenia tantes ganes de marxar... Vaig fer tot el camí a peu, malgrat que la neu humida encara queia a grans flocs. Estava esgotat, aclaparat, desconcertat. Però la veritat ja lluïa a través del desconcert. La veritat fastigosa!
+
+---
+
+### Capítol VIII
 
 
 No vaig trigar a consentir a reconèixer aquella veritat. L'endemà al matí, després d'unes hores de son feixuc i plúmbi, i recordant de seguida tot el dia anterior, em vaig quedar fins i tot astorat de la meva sentimentalitat amb Liza, de tots aquells «horrors i compassions d'ahir». «Quina crisi tan femenina de nervis, ecs!», vaig decidir. «I per què li vaig donar la meva adreça? I si ve? Bé, que vingui si vol; tant se val...» Però, evidentment, el més important i urgent ara era salvar la meva reputació davant de Zviérkov i Símonov. Aquesta era la qüestió principal. I de Liza me'n vaig oblidar completament aquell matí, enfeinat com estava.
@@ -289,7 +599,7 @@ Un cop m'avorria, vaig arribar a un pacte amb mi mateix i vaig acabar traient-me
 
 ---
 
-### Capítol VII
+### Capítol IX
 
 
 Però va venir.
@@ -340,7 +650,7 @@ Vaig dominar-me, tanmateix, i vaig alçar el cap. I precisament perquè m'avergo
 
 ---
 
-### Capítol VIII
+### Capítol X
 
 
 Al cap d'un quart d'hora jo corria amunt i avall per l'habitació amb una impaciència furiosa, i a cada moment mirava per l'escletxa de les mampares. Ella seia a terra, amb el cap recolzat al llit i, segurament, plorava. Però no se n'anava, i això era el que m'irritava. Ara ja ho sabia tot. L'havia ofesa definitivament, però... no cal explicar-ho. Va endevinar que l'impuls de la meva passió havia estat precisament una venjança, una nova humiliació. Tanmateix, no afirmo que ho entengués amb tota claredat; però sí que va entendre perfectament que jo era un home miserabl i, sobretot, incapaç d'estimar-la.

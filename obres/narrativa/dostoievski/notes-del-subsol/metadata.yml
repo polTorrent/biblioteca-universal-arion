@@ -40,11 +40,11 @@ obra:
 seccions: 2
 estadistiques:
   paraules_original: 35798
-  paraules_traduccio: 15699
+  paraules_traduccio: 22627
   notes: 13
   termes_glossari: 15
 revisio:
   estat: "revisat"
-  qualitat: 7.5
+  qualitat: 8.0
   data_revisio: "2026-02-27"
   requereix_revisio_humana: true
