@@ -1,0 +1,20 @@
+obra:
+  titol: "Notes del subsòl"
+  titol_original: "Записки из подполья"
+  autor: "Fiódor Dostoievski"
+  autor_original: "Фёдор Михайлович Достоевский"
+  traductor: "Editorial Clàssica"
+  any_original: 1864
+  any_traduccio: 2026
+  llengua_original: "rus"
+  descripcio: "Novella filosòfica considerada precursora de l'existencialisme. Un funcionari retirat de Sant Petersburg narra les seves reflexions amargues sobre la consciència, la llibertat i la civilització, seguides d'episodis humiliants de la seva joventut."
+seccions: 2
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "en_progres"
+  qualitat: 0
+  data_revisio: ""
