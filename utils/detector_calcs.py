@@ -8,6 +8,7 @@ Identifica construccions no naturals en català que són calcs de:
 - Anglès: gerundis, passives
 """
 
+import math
 import re
 from enum import Enum
 
@@ -250,7 +251,7 @@ class DetectorCalcs:
         for llengua, amics in self.FALSOS_AMICS.items():
             for paraula_cat, (paraula_orig, significat_real) in amics.items():
                 # Buscar la paraula en el text
-                for match in re.finditer(rf'\b{paraula_cat}\b', text, re.IGNORECASE):
+                for match in re.finditer(rf'\b{re.escape(paraula_cat)}\b', text, re.IGNORECASE):
                     calcs.append(CalcDetectat(
                         tipus=TipusCalc.FALS_AMIC,
                         text_original=match.group(),
@@ -263,13 +264,16 @@ class DetectorCalcs:
 
         return calcs
 
-    def _detectar_per_llengua(self, text: str) -> list['CalcDetectat']:
+    def _detectar_per_llengua(self, text: str) -> list[CalcDetectat]:
         """Detecta patrons específics usant l'arquitectura de plugins."""
         from .calcs_plugins import obtenir_plugin
-        calcs = []
+        calcs: list[CalcDetectat] = []
         plugin = obtenir_plugin(self.llengua_origen)
         if plugin:
-            res = plugin.detectar(text)
+            try:
+                res = plugin.detectar(text)
+            except Exception:
+                return calcs
             for c in res:
                 # Convertim el model del plugin al model principal
                 calcs.append(CalcDetectat(
@@ -279,7 +283,7 @@ class DetectorCalcs:
                     explicacio=c.explicacio,
                     suggeriment=c.suggeriment,
                     severitat=c.severitat,
-                    llengua_origen=c.llengua_origen
+                    llengua_origen=c.llengua_origen,
                 ))
         return calcs
 
@@ -326,7 +330,6 @@ class DetectorCalcs:
         # - 2 calcs/100p = ~7.5 punts (notar)
         # - 5 calcs/100p = ~5 punts (problemàtic)
         # - 10+ calcs/100p = <3 punts (crític)
-        import math
         penalitzacio_densitat = min(7.0, densitat * 1.2 + math.log1p(densitat) * 0.5)
 
         # Factor de severitat (multiplicador 0.8-1.2)
