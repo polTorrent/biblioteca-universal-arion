@@ -13,11 +13,11 @@ Diferències amb el traductor v1:
 
 import json
 import re
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, ClassVar
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 
-from agents.base_agent import AgentConfig, AgentResponse, BaseAgent, extract_json_from_text
+from agents.base_agent import AgentConfig, BaseAgent, extract_json_from_text
 from agents.v2.models import (
     AnalisiPreTraduccio,
     ContextTraduccioEnriquit,
@@ -68,7 +68,7 @@ class TraductorEnriquit(BaseAgent):
     4. Documenta les decisions preses
     """
 
-    agent_name: str = "TraductorEnriquit"
+    agent_name: ClassVar[str] = "TraductorEnriquit"
 
     def __init__(
         self,
@@ -126,15 +126,18 @@ FORMAT RESPOSTA (JSON):
         # Parsejar resposta (robust)
         data = extract_json_from_text(response.content)
         if data and data.get("traduccio"):
-            return ResultatTraduccio(
-                traduccio=data.get("traduccio", ""),
-                decisions_clau=data.get("decisions_clau", []),
-                termes_preservats=data.get("termes_preservats", {}),
-                recursos_adaptats=data.get("recursos_adaptats", []),
-                notes_traductor=data.get("notes_traductor", []),
-                confianca=data.get("confianca", 0.8),
-                avisos=data.get("avisos", []),
-            )
+            try:
+                return ResultatTraduccio(
+                    traduccio=data.get("traduccio", ""),
+                    decisions_clau=data.get("decisions_clau", []),
+                    termes_preservats=data.get("termes_preservats", {}),
+                    recursos_adaptats=data.get("recursos_adaptats", []),
+                    notes_traductor=data.get("notes_traductor", []),
+                    confianca=data.get("confianca", 0.8),
+                    avisos=data.get("avisos", []),
+                )
+            except ValidationError as e:
+                self.log_warning(f"JSON parsejat però validació fallida: {e}")
 
         # Si falla el parsing, intentar extreure la traducció del text
         self.log_warning("No s'ha pogut parsejar JSON, extraient traducció del text")
