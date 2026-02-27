@@ -185,6 +185,48 @@
       ],
       "status": "pending",
       "notes": "Introdueix l'italià com a nova llengua al catàleg. Leopardi és el poeta cabdal del Romanticisme italià; els Canti són obra mestra de la lírica europea. | Text complet a Wikisource italiana. Selecció recomanada: L'infinito, A Silvia, La ginestra, Il sabato del villaggio, Canto notturno d'un pastore errante dell'Asia, etc."
+    },
+    {
+      "autor": "Matsuo Bashō",
+      "titol": "Oku no Hosomichi (El camí estret cap al nord profund)",
+      "llengua": "japonès",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "pending",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el japonès com a nova llengua. Obra mestra del haibun (prosa poètica + haiku), diari de viatge de 1689 pel nord del Japó. Bashō (†1694) és el poeta fonamental de la literatura japonesa; l'Oku no Hosomichi és el text en prosa més influent del Japó premodern. Reforça la categoria oriental (només 2 obres). Cap traducció catalana publicada. Text original a Aozora Bunko i Wikisource japonesa."
+    },
+    {
+      "autor": "Omar Khayyam",
+      "titol": "Rubaiyat (selecció: 75 quartetes)",
+      "llengua": "persa",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 3500,
+      "fonts": [
+        "wikisource",
+        "ganjoor"
+      ],
+      "status": "pending",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el persa com a nova llengua i obre la biblioteca a la tradició literària islàmica. Khayyam (†1131), matemàtic i poeta, és una de les veus més universals de la poesia mundial. Les quartetes (robāʿiyyāt) combinen escepticisme filosòfic, carpe diem i misticisme sufí. Cap traducció catalana directa del persa. Text original a Wikisource persa i Ganjoor.net."
+    },
+    {
+      "autor": "August Strindberg",
+      "titol": "Fröken Julie (La senyoreta Júlia)",
+      "llengua": "suec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "pending",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el suec com a nova llengua. Drama naturalista en un acte (1888) que revolucionà el teatre europeu: lluita de classes, gènere i desig en una nit de Sant Joan. Strindberg (†1912) és el dramaturg escandinau més influent després d'Ibsen. Reforça la categoria teatre (només 1 obra). Cap traducció catalana recent. Text suec a Project Gutenberg i Wikisource sueca."
     }
   ]
 }
