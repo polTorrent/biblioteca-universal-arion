@@ -1,23 +1,36 @@
+obra:
+  titol: "Laelius de Amicitia"
+  titol_original: "Laelius de Amicitia"
+  autor: "Ciceró"
+  autor_original: "Marcus Tullius Cicero"
+  traductor: "Biblioteca Arion"
+  any_original: "44 aC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  descripcio: "Diàleg filosòfic sobre l'amistat, posat en boca de Gai Leli amb els seus gendres Fanni i Escèvola, poc després de la mort d'Escipió l'Africà."
+seccions: 27
+estadistiques:
+  paraules_original: 10500
+  paraules_traduccio: 11969
+  notes: 0
+  termes_glossari: 0
 avaluacio_final:
   data: '2026-02-27T22:16:57.183769'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
+    fidelitat: 4.5
+    veu_autor: 6.0
+    fluidesa: 6.0
+    correccio_linguistica: 5.0
+    coherencia: 5.0
+    global: 4.5
   total_errors: 69
-  errors_critics: 0
-  errors_alts: 0
+  errors_critics: 3
+  errors_alts: 5
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
   correccions_pendents: 48
-obra:
-  estadistiques:
-    paraules_traduccio: 11969
 revisio:
-  estat: revisat
-  data_revisio: '2026-02-27'
-  qualitat: 0.0
+  estat: "necessita_correccio"
+  data_revisio: '2026-02-28'
+  qualitat: 4.5
