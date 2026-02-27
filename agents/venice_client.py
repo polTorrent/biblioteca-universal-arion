@@ -1,6 +1,7 @@
 """Client per a l'API de Venice.ai - Generació d'imatges per portades."""
 
 import asyncio
+import base64
 import os
 from typing import Literal
 
@@ -32,8 +33,8 @@ class ImageGenerationRequest(BaseModel):
 
     prompt: str
     negative_prompt: str = ""
-    width: int = Field(default=1024, ge=512, le=1280)   # Venice API limit: 1280
-    height: int = Field(default=1280, ge=512, le=1280)  # Venice API limit: 1280
+    width: int = Field(default=1024, ge=512, le=2048)
+    height: int = Field(default=1536, ge=512, le=2048)
     model: str = "z-image-turbo"
     steps: int = Field(default=30, ge=10, le=50)
     cfg_scale: float = Field(default=7.5, ge=1.0, le=20.0)
@@ -188,12 +189,8 @@ class VeniceClient:
                         image_response = await client.get(data["url"])
                         return image_response.content
                     elif "image" in data:
-                        # Base64 encoded
-                        import base64
                         return base64.b64decode(data["image"])
                     elif "images" in data and len(data["images"]) > 0:
-                        # Array d'imatges en base64
-                        import base64
                         return base64.b64decode(data["images"][0])
                     else:
                         raise VeniceRequestError(f"Format de resposta desconegut: {data.keys()}")
@@ -201,10 +198,12 @@ class VeniceClient:
                 # Resposta directa en bytes (PNG)
                 return response.content
 
-            except httpx.TimeoutException:
-                raise VeniceRequestError("Temps d'espera excedit. La generació pot trigar.")
+            except httpx.TimeoutException as e:
+                raise VeniceRequestError(
+                    "Temps d'espera excedit. La generació pot trigar."
+                ) from e
             except httpx.RequestError as e:
-                raise VeniceRequestError(f"Error de connexió: {e}")
+                raise VeniceRequestError(f"Error de connexió: {e}") from e
 
     async def llistar_models(
         self,
@@ -252,7 +251,7 @@ class VeniceClient:
                 return models
 
             except httpx.RequestError as e:
-                raise VeniceRequestError(f"Error de connexió: {e}")
+                raise VeniceRequestError(f"Error de connexió: {e}") from e
 
     def generar_imatge_sync(
         self,
