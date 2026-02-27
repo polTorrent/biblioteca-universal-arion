@@ -5,16 +5,16 @@ import urllib.request
 import urllib.parse
 import re
 import os
-import time
 import json
+import subprocess
 
-OUTPUT_DIR = "/home/jo/biblioteca-universal-arion/scripts/marcus_aurelius_greek"
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "marcus_aurelius_greek")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
 
 
-def fetch_url(url, timeout=30):
+def fetch_url(url: str, timeout: int = 30) -> str | None:
     """Fetch URL handling Unicode properly."""
     try:
         # Parse and re-encode the URL to handle Unicode
@@ -33,7 +33,7 @@ def fetch_url(url, timeout=30):
         return None
 
 
-def strip_html(html_text):
+def strip_html(html_text: str) -> str:
     """Remove HTML tags."""
     text = re.sub(r'<br\s*/?>', '\n', html_text)
     text = re.sub(r'<p[^>]*>', '\n\n', text)
@@ -48,224 +48,247 @@ def strip_html(html_text):
     return text.strip()
 
 
-def count_greek(text, n=5000):
+def count_greek(text: str, n: int = 5000) -> int:
     """Count Greek characters in first n chars."""
     return len(re.findall(r'[\u0370-\u03FF\u1F00-\u1FFF]', text[:n]))
 
 
-# ============================================================================
-# WIKISOURCE
-# ============================================================================
-print("=" * 70)
-print("WIKISOURCE")
-print("=" * 70)
+def main() -> None:
+    # ========================================================================
+    # WIKISOURCE
+    # ========================================================================
+    print("=" * 70)
+    print("WIKISOURCE")
+    print("=" * 70)
 
-# Use the API to get raw wikitext
-api_base = "https://el.wikisource.org/w/api.php"
+    # Use the API to get raw wikitext
+    api_base = "https://el.wikisource.org/w/api.php"
 
-# First get the main page
-params = {
-    "action": "parse",
-    "page": "Τα εις εαυτόν",
-    "prop": "text|links",
-    "format": "json"
-}
-api_url = f"{api_base}?{urllib.parse.urlencode(params)}"
-print(f"API URL: {api_url}")
-result = fetch_url(api_url)
-
-if result:
-    try:
-        data = json.loads(result)
-        if "parse" in data:
-            html_content = data["parse"]["text"]["*"]
-            text = strip_html(html_content)
-            print(f"Main page text length: {len(text)}")
-            print(f"Greek chars: {count_greek(text)}")
-            print(f"Preview:\n{text[:1000]}\n")
-
-            # Save it
-            with open(os.path.join(OUTPUT_DIR, "wikisource_main.txt"), "w") as f:
-                f.write(text)
-
-            # Check for subpage links
-            links = data["parse"].get("links", [])
-            print(f"Links found: {len(links)}")
-            for link in links:
-                title = link.get("*", "")
-                if "εαυτόν" in title or "εαυτ" in title:
-                    print(f"  -> {title}")
-        else:
-            print(f"No parse data. Keys: {data.keys()}")
-            if "error" in data:
-                print(f"Error: {data['error']}")
-    except json.JSONDecodeError as e:
-        print(f"JSON error: {e}")
-        print(f"Response preview: {result[:500]}")
-
-# Try to get individual book pages
-print("\nFetching individual books from Wikisource...")
-book_names_to_try = [
-    # Try various naming patterns
-    "Τα εις εαυτόν/Βιβλίο Α",
-    "Τα εις εαυτόν/Βιβλίον Α",
-    "Τα εις εαυτόν/Α",
-    "Τα εις εαυτόν/1",
-    "Τα εις εαυτόν/Βιβλίο 1",
-    "Τα εις εαυτόν/Βιβλίο Πρώτο",
-]
-
-for test_name in book_names_to_try:
+    # First get the main page
     params = {
         "action": "parse",
-        "page": test_name,
-        "prop": "text",
+        "page": "Τα εις εαυτόν",
+        "prop": "text|links",
         "format": "json"
     }
     api_url = f"{api_base}?{urllib.parse.urlencode(params)}"
+    print(f"API URL: {api_url}")
     result = fetch_url(api_url)
+
     if result:
-        data = json.loads(result)
-        if "parse" in data:
-            text = strip_html(data["parse"]["text"]["*"])
-            gc = count_greek(text)
-            print(f"  FOUND: '{test_name}' -> {len(text)} chars, {gc} Greek")
-            if gc > 50:
-                print(f"  Preview: {text[:200]}")
-            break
-        elif "error" in data:
-            print(f"  NOT FOUND: '{test_name}' -> {data['error'].get('info', 'unknown error')}")
+        try:
+            data = json.loads(result)
+            if "parse" in data:
+                html_content = data["parse"]["text"]["*"]
+                text = strip_html(html_content)
+                print(f"Main page text length: {len(text)}")
+                print(f"Greek chars: {count_greek(text)}")
+                print(f"Preview:\n{text[:1000]}\n")
 
-# ============================================================================
-# PERSEUS DIGITAL LIBRARY
-# ============================================================================
-print("\n" + "=" * 70)
-print("PERSEUS DIGITAL LIBRARY")
-print("=" * 70)
+                with open(os.path.join(OUTPUT_DIR, "wikisource_main.txt"), "w",
+                          encoding="utf-8") as f:
+                    f.write(text)
 
-# Fetch book 1, chapter 1 first to understand the structure
-url = "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0641%3Abook%3D1%3Achapter%3D1"
-print(f"Fetching: {url}")
-html = fetch_url(url, timeout=60)
+                links = data["parse"].get("links", [])
+                print(f"Links found: {len(links)}")
+                for link in links:
+                    title = link.get("*", "")
+                    if "εαυτόν" in title or "εαυτ" in title:
+                        print(f"  -> {title}")
+            else:
+                print(f"No parse data. Keys: {list(data.keys())}")
+                if "error" in data:
+                    print(f"Error: {data['error']}")
+        except json.JSONDecodeError as e:
+            print(f"JSON error: {e}")
+            print(f"Response preview: {result[:500]}")
 
-if html:
-    print(f"HTML length: {len(html)}")
+    # Try to get individual book pages
+    print("\nFetching individual books from Wikisource...")
+    book_names_to_try = [
+        "Τα εις εαυτόν/Βιβλίο Α",
+        "Τα εις εαυτόν/Βιβλίον Α",
+        "Τα εις εαυτόν/Α",
+        "Τα εις εαυτόν/1",
+        "Τα εις εαυτόν/Βιβλίο 1",
+        "Τα εις εαυτόν/Βιβλίο Πρώτο",
+    ]
 
-    # Save for analysis
-    with open(os.path.join(OUTPUT_DIR, "perseus_book1_ch1.html"), "w") as f:
-        f.write(html)
+    for test_name in book_names_to_try:
+        params = {
+            "action": "parse",
+            "page": test_name,
+            "prop": "text",
+            "format": "json"
+        }
+        api_url = f"{api_base}?{urllib.parse.urlencode(params)}"
+        result = fetch_url(api_url)
+        if result:
+            try:
+                data = json.loads(result)
+            except json.JSONDecodeError:
+                print(f"  ERROR: Invalid JSON for '{test_name}'")
+                continue
+            if "parse" in data:
+                text = strip_html(data["parse"]["text"]["*"])
+                gc = count_greek(text)
+                print(f"  FOUND: '{test_name}' -> {len(text)} chars, {gc} Greek")
+                if gc > 50:
+                    print(f"  Preview: {text[:200]}")
+                break
+            elif "error" in data:
+                print(
+                    f"  NOT FOUND: '{test_name}'"
+                    f" -> {data['error'].get('info', 'unknown error')}"
+                )
 
-    # Try various extraction patterns
-    # Pattern 1: text_container
-    m = re.search(r'class="text_container"[^>]*>(.*?)</div>', html, re.DOTALL)
-    if m:
-        text = strip_html(m.group(1))
-        print(f"text_container: {len(text)} chars, {count_greek(text)} Greek")
-        print(f"Preview: {text[:500]}")
+    # ========================================================================
+    # PERSEUS DIGITAL LIBRARY
+    # ========================================================================
+    print("\n" + "=" * 70)
+    print("PERSEUS DIGITAL LIBRARY")
+    print("=" * 70)
 
-    # Pattern 2: Look for the actual Greek text in the page
-    # Perseus typically has Greek in specific elements
-    greek_spans = re.findall(r'>([\u0370-\u03FF\u1F00-\u1FFF][^<]{5,})</(?:span|p|div|td)', html)
-    if greek_spans:
-        print(f"\nGreek spans found: {len(greek_spans)}")
-        for i, span in enumerate(greek_spans[:5]):
-            print(f"  {i}: {span[:200]}")
+    url = (
+        "https://www.perseus.tufts.edu/hopper/text"
+        "?doc=Perseus%3Atext%3A2008.01.0641%3Abook%3D1%3Achapter%3D1"
+    )
+    print(f"Fetching: {url}")
+    html = fetch_url(url, timeout=60)
 
-    # Pattern 3: Look in the main reading area
-    reading_match = re.search(r'<table class="text_body"[^>]*>(.*?)</table>', html, re.DOTALL)
-    if reading_match:
-        reading_text = strip_html(reading_match.group(1))
-        gc = count_greek(reading_text, 10000)
-        print(f"\ntext_body table: {len(reading_text)} chars, {gc} Greek")
-        if gc > 20:
-            print(f"Preview: {reading_text[:500]}")
-
-    # Pattern 4: extract all text from the page and look for Greek
-    all_text = strip_html(html)
-    gc = count_greek(all_text, len(all_text))
-    print(f"\nTotal Greek chars in page: {gc}")
-
-    # Find the actual Greek passage by looking for consecutive Greek text
-    greek_passages = re.findall(r'((?:[\u0370-\u03FF\u1F00-\u1FFF][\u0370-\u03FF\u1F00-\u1FFF\s\.,;·\u0300-\u036F\u1DC0-\u1DFF]{10,})+)', all_text)
-    if greek_passages:
-        print(f"\nGreek passages found: {len(greek_passages)}")
-        for i, passage in enumerate(greek_passages[:5]):
-            print(f"  Passage {i} ({len(passage)} chars): {passage[:300]}")
-else:
-    print("Failed to fetch Perseus")
-
-# Now try the XML/text version from Perseus
-print("\nTrying Perseus XML API...")
-xml_url = "https://www.perseus.tufts.edu/hopper/xmlchunk?doc=Perseus%3Atext%3A2008.01.0641%3Abook%3D1"
-html = fetch_url(xml_url, timeout=60)
-if html:
-    print(f"XML response: {len(html)} chars")
-    gc = count_greek(html, len(html))
-    print(f"Greek chars: {gc}")
-    text = strip_html(html)
-    if gc > 50:
-        print(f"Preview: {text[:500]}")
-    with open(os.path.join(OUTPUT_DIR, "perseus_xml_book1.txt"), "w") as f:
-        f.write(text)
-
-# ============================================================================
-# PROJECT GUTENBERG
-# ============================================================================
-print("\n" + "=" * 70)
-print("PROJECT GUTENBERG")
-print("=" * 70)
-
-# Search Gutenberg
-search_url = "https://www.gutenberg.org/ebooks/search/?query=marcus+aurelius"
-print(f"Searching: {search_url}")
-html = fetch_url(search_url, timeout=30)
-if html:
-    books = re.findall(r'href="/ebooks/(\d+)"[^>]*>\s*([^<]+)', html)
-    seen = set()
-    for ebook_id, title in books:
-        if ebook_id not in seen:
-            seen.add(ebook_id)
-            print(f"  #{ebook_id}: {title.strip()}")
-
-# Try known IDs
-for ebook_id in ["2680"]:
-    print(f"\nFetching Gutenberg #{ebook_id} metadata...")
-    meta_url = f"https://www.gutenberg.org/ebooks/{ebook_id}"
-    html = fetch_url(meta_url, timeout=30)
     if html:
-        # Find all download links
-        downloads = re.findall(r'href="([^"]*(?:\.txt|\.htm)[^"]*)"[^>]*>([^<]+)', html)
-        for href, label in downloads:
-            print(f"  {label.strip()} -> {href}")
+        print(f"HTML length: {len(html)}")
 
-# ============================================================================
-# ALTERNATIVE: Try the well-known online Greek text from other sources
-# ============================================================================
-print("\n" + "=" * 70)
-print("ALTERNATIVE SOURCES")
-print("=" * 70)
+        with open(os.path.join(OUTPUT_DIR, "perseus_book1_ch1.html"), "w",
+                  encoding="utf-8") as f:
+            f.write(html)
 
-# Try mikrosapoplous or other known Greek text repositories
-alt_urls = [
-    ("https://www.mikrosapoplous.gr/marco/marco1a.html", "mikrosapoplous Book 1"),
-    ("http://www.poesialatina.it/_ns/Greek/tt2/MarcusAurelius/MedBook01.html", "poesialatina Book 1"),
-    ("https://www.hs-augsburg.de/~harsch/graeca/Chronologia/S_post02/Marcus_Aurelius/mar_me01.html", "Bibliotheca Augustana Book 1"),
-]
+        m = re.search(r'class="text_container"[^>]*>(.*?)</div>', html, re.DOTALL)
+        if m:
+            text = strip_html(m.group(1))
+            print(f"text_container: {len(text)} chars, {count_greek(text)} Greek")
+            print(f"Preview: {text[:500]}")
 
-for url, name in alt_urls:
-    print(f"\nTrying {name}: {url}")
-    html = fetch_url(url, timeout=30)
+        greek_spans = re.findall(
+            r'>([\u0370-\u03FF\u1F00-\u1FFF][^<]{5,})</(?:span|p|div|td)', html
+        )
+        if greek_spans:
+            print(f"\nGreek spans found: {len(greek_spans)}")
+            for i, span in enumerate(greek_spans[:5]):
+                print(f"  {i}: {span[:200]}")
+
+        reading_match = re.search(
+            r'<table class="text_body"[^>]*>(.*?)</table>', html, re.DOTALL
+        )
+        if reading_match:
+            reading_text = strip_html(reading_match.group(1))
+            gc = count_greek(reading_text, 10000)
+            print(f"\ntext_body table: {len(reading_text)} chars, {gc} Greek")
+            if gc > 20:
+                print(f"Preview: {reading_text[:500]}")
+
+        all_text = strip_html(html)
+        gc = count_greek(all_text, len(all_text))
+        print(f"\nTotal Greek chars in page: {gc}")
+
+        greek_passages = re.findall(
+            r'((?:[\u0370-\u03FF\u1F00-\u1FFF]'
+            r'[\u0370-\u03FF\u1F00-\u1FFF\s\.,;·\u0300-\u036F\u1DC0-\u1DFF]{10,})+)',
+            all_text,
+        )
+        if greek_passages:
+            print(f"\nGreek passages found: {len(greek_passages)}")
+            for i, passage in enumerate(greek_passages[:5]):
+                print(f"  Passage {i} ({len(passage)} chars): {passage[:300]}")
+    else:
+        print("Failed to fetch Perseus")
+
+    # Now try the XML/text version from Perseus
+    print("\nTrying Perseus XML API...")
+    xml_url = (
+        "https://www.perseus.tufts.edu/hopper/xmlchunk"
+        "?doc=Perseus%3Atext%3A2008.01.0641%3Abook%3D1"
+    )
+    html = fetch_url(xml_url, timeout=60)
     if html:
+        print(f"XML response: {len(html)} chars")
+        gc = count_greek(html, len(html))
+        print(f"Greek chars: {gc}")
         text = strip_html(html)
-        gc = count_greek(text, len(text))
-        print(f"  Length: {len(text)}, Greek chars: {gc}")
-        if gc > 100:
-            print(f"  Preview: {text[:500]}")
-            with open(os.path.join(OUTPUT_DIR, f"alt_{name.replace(' ', '_')}.txt"), "w") as f:
-                f.write(text)
+        if gc > 50:
+            print(f"Preview: {text[:500]}")
+        with open(os.path.join(OUTPUT_DIR, "perseus_xml_book1.txt"), "w",
+                  encoding="utf-8") as f:
+            f.write(text)
 
-print("\n" + "=" * 70)
-print("DONE")
-print("=" * 70)
-print(f"Output: {OUTPUT_DIR}")
-os.system(f"ls -la {OUTPUT_DIR}")
+    # ========================================================================
+    # PROJECT GUTENBERG
+    # ========================================================================
+    print("\n" + "=" * 70)
+    print("PROJECT GUTENBERG")
+    print("=" * 70)
+
+    search_url = "https://www.gutenberg.org/ebooks/search/?query=marcus+aurelius"
+    print(f"Searching: {search_url}")
+    html = fetch_url(search_url, timeout=30)
+    if html:
+        books = re.findall(r'href="/ebooks/(\d+)"[^>]*>\s*([^<]+)', html)
+        seen: set[str] = set()
+        for ebook_id, title in books:
+            if ebook_id not in seen:
+                seen.add(ebook_id)
+                print(f"  #{ebook_id}: {title.strip()}")
+
+    for ebook_id in ["2680"]:
+        print(f"\nFetching Gutenberg #{ebook_id} metadata...")
+        meta_url = f"https://www.gutenberg.org/ebooks/{ebook_id}"
+        html = fetch_url(meta_url, timeout=30)
+        if html:
+            downloads = re.findall(
+                r'href="([^"]*(?:\.txt|\.htm)[^"]*)"[^>]*>([^<]+)', html
+            )
+            for href, label in downloads:
+                print(f"  {label.strip()} -> {href}")
+
+    # ========================================================================
+    # ALTERNATIVE SOURCES
+    # ========================================================================
+    print("\n" + "=" * 70)
+    print("ALTERNATIVE SOURCES")
+    print("=" * 70)
+
+    alt_urls = [
+        ("https://www.mikrosapoplous.gr/marco/marco1a.html", "mikrosapoplous Book 1"),
+        (
+            "http://www.poesialatina.it/_ns/Greek/tt2/MarcusAurelius/MedBook01.html",
+            "poesialatina Book 1",
+        ),
+        (
+            "https://www.hs-augsburg.de/~harsch/graeca/Chronologia"
+            "/S_post02/Marcus_Aurelius/mar_me01.html",
+            "Bibliotheca Augustana Book 1",
+        ),
+    ]
+
+    for url, name in alt_urls:
+        print(f"\nTrying {name}: {url}")
+        html = fetch_url(url, timeout=30)
+        if html:
+            text = strip_html(html)
+            gc = count_greek(text, len(text))
+            print(f"  Length: {len(text)}, Greek chars: {gc}")
+            if gc > 100:
+                print(f"  Preview: {text[:500]}")
+                with open(os.path.join(OUTPUT_DIR, f"alt_{name.replace(' ', '_')}.txt"),
+                          "w", encoding="utf-8") as f:
+                    f.write(text)
+
+    print("\n" + "=" * 70)
+    print("DONE")
+    print("=" * 70)
+    print(f"Output: {OUTPUT_DIR}")
+    subprocess.run(["ls", "-la", OUTPUT_DIR], check=False)
+
+
+if __name__ == "__main__":
+    main()
