@@ -24,7 +24,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from agents.web_publisher import WebPublisher, WebPublisherConfig
 
 
-def main():
+def main() -> int:
     parser = argparse.ArgumentParser(
         description="Publicar la Biblioteca Arion a GitHub Pages"
     )
@@ -57,14 +57,17 @@ def main():
         generar_portades=args.portades,
     )
 
-    publisher = WebPublisher(publisher_config=config)
+    try:
+        publisher = WebPublisher(publisher_config=config)
+    except Exception as e:
+        print(f"Error inicialitzant el publisher: {e}")
+        return 1
 
     # Filtrar obres si cal
     obres_filtrades = [args.obra] if args.obra else None
 
-    # Publicar
+    # Publicar (generar_portades ja ve del config, no cal passar-ho de nou)
     result = publisher.publicar_tot(
-        generar_portades=args.portades,
         obres_filtrades=obres_filtrades,
     )
 
