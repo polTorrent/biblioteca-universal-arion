@@ -19,9 +19,18 @@ if TYPE_CHECKING:
     from types import ModuleType
 
 # Type aliases per literals reutilitzats
-TipusFont = Literal["perseus", "latin_library", "gutenberg", "wikisource", "aozora", "ctext", "altre"]
-LlenguaOriginal = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "altres"]
-LlenguaCerca = Literal["llatí", "grec", "japonès", "xinès", "anglès", "alemany", "francès", "qualsevol"]
+TipusFont = Literal[
+    "perseus", "latin_library", "gutenberg", "wikisource",
+    "aozora", "ctext", "altre",
+]
+LlenguaOriginal = Literal[
+    "llatí", "grec", "japonès", "xinès",
+    "anglès", "alemany", "francès", "altres",
+]
+LlenguaCerca = Literal[
+    "llatí", "grec", "japonès", "xinès",
+    "anglès", "alemany", "francès", "qualsevol",
+]
 
 logger = logging.getLogger(__name__)
 
@@ -101,7 +110,8 @@ class PescadorTextosAgent(BaseAgent):
         return """Ets un expert en biblioteques digitals de textos clàssics universals.
 
 OBJECTIU:
-Ajudar a localitzar, identificar i obtenir textos clàssics de domini públic en les millors edicions disponibles.
+Ajudar a localitzar, identificar i obtenir textos clàssics de domini públic
+en les millors edicions disponibles.
 
 FONTS PRINCIPALS:
 
@@ -283,7 +293,7 @@ Inclou:
 Aquesta obra és de DOMINI PÚBLIC (l'autor va morir fa més de 70 anys).
 
 INSTRUCCIONS:
-1. Busca el text original complet a Wikisource, Project Gutenberg, Internet Archive, o altres fonts de domini públic
+1. Busca el text original complet a Wikisource, Gutenberg, Internet Archive o altres fonts
 2. Retorna el TEXT NARRATIU COMPLET de l'obra, no només un resum
 3. Inclou TOTS els capítols/seccions de l'obra
 4. Indica la font d'on has obtingut el text
@@ -297,7 +307,8 @@ FORMAT DE RESPOSTA:
 
 IMPORTANT: Necessito el TEXT COMPLET per poder-lo traduir al català. No escurçis ni resumeixis."""
         else:
-            prompt = f"""Busca informació sobre on trobar el text complet en {llengua} de "{titol}" de {autor}.
+            prompt = f"""Busca informació sobre on trobar el text \
+complet en {llengua} de "{titol}" de {autor}.
 
 Indica:
 1. Les millors fonts de domini públic (Wikisource, Gutenberg, etc.)
