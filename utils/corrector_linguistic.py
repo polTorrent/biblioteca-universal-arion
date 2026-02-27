@@ -4,17 +4,21 @@ Proporciona correcció ortogràfica, gramatical i estilística per al català.
 S'integra amb el pipeline de traducció per millorar la qualitat final.
 """
 
+import logging
 import re
-from typing import Optional
-from pydantic import BaseModel, Field
+from typing import Any
+
 from enum import Enum
+from pydantic import BaseModel, Field
+
+logger = logging.getLogger(__name__)
 
 try:
     import language_tool_python
     LANGUAGETOOL_DISPONIBLE = True
 except ImportError:
     LANGUAGETOOL_DISPONIBLE = False
-    print("[CorrectorLinguistic] ⚠️ language-tool-python no instal·lat")
+    logger.info("language-tool-python no instal·lat")
 
 
 class CategoriaError(str, Enum):
@@ -54,7 +58,9 @@ class ResultatCorreccio(BaseModel):
     errors_gramatica: int = 0
     errors_puntuacio: int = 0
     errors_estil: int = 0
+    errors_tipografia: int = 0
     errors_barbarisme: int = 0
+    errors_altres: int = 0
 
 
 class CorrectorLinguistic:
@@ -134,10 +140,11 @@ class CorrectorLinguistic:
         "renderitzar": "renderitzar (acceptable) o generar",
     }
 
-    _instance = None
-    _tool = None
+    _instance: "CorrectorLinguistic | None" = None
+    _tool: Any = None
+    _initialized: bool = False
 
-    def __new__(cls, llengua: str = "ca"):
+    def __new__(cls, llengua: str = "ca") -> "CorrectorLinguistic":
         """Singleton per evitar múltiples connexions."""
         if cls._instance is None:
             cls._instance = super().__new__(cls)
@@ -166,13 +173,13 @@ class CorrectorLinguistic:
 
         try:
             CorrectorLinguistic._tool = language_tool_python.LanguageTool(self.llengua)
-            print(f"[CorrectorLinguistic] ✅ Inicialitzat per '{self.llengua}'")
+            logger.info("Inicialitzat per '%s'", self.llengua)
         except Exception as e:
-            print(f"[CorrectorLinguistic] ⚠️ Error inicialitzant: {e}")
+            logger.warning("Error inicialitzant LanguageTool: %s", e)
             CorrectorLinguistic._tool = None
 
     @property
-    def tool(self):
+    def tool(self) -> Any:
         return CorrectorLinguistic._tool
 
     def corregir(self, text: str, auto_corregir: bool = False) -> ResultatCorreccio:
@@ -222,7 +229,7 @@ class CorrectorLinguistic:
                     text_corregit = self.tool.correct(text)
 
             except Exception as e:
-                print(f"[CorrectorLinguistic] Error en correcció: {e}")
+                logger.error("Error en correcció: %s", e)
 
         # 3. Calcular estadístiques
         stats = self._calcular_estadistiques(errors)
@@ -261,14 +268,16 @@ class CorrectorLinguistic:
 
         return errors
 
-    def _mapejar_categoria(self, categoria_lt: str) -> CategoriaError:
+    @staticmethod
+    def _mapejar_categoria(categoria_lt: str) -> CategoriaError:
         """Mapeja categoria de LanguageTool a la nostra."""
-        return self.MAPEIG_CATEGORIES.get(
+        return CorrectorLinguistic.MAPEIG_CATEGORIES.get(
             categoria_lt.upper(),
             CategoriaError.ALTRES
         )
 
-    def _calcular_severitat(self, match, categoria: CategoriaError) -> float:
+    @staticmethod
+    def _calcular_severitat(match: Any, categoria: CategoriaError) -> float:
         """Calcula severitat d'un error."""
         severitats_base = {
             CategoriaError.ORTOGRAFIA: 7.0,
@@ -281,14 +290,17 @@ class CorrectorLinguistic:
         }
         return severitats_base.get(categoria, 5.0)
 
-    def _calcular_estadistiques(self, errors: list[ErrorLinguistic]) -> dict:
+    @staticmethod
+    def _calcular_estadistiques(errors: list[ErrorLinguistic]) -> dict[str, int]:
         """Calcula estadístiques per categoria."""
-        stats = {
+        stats: dict[str, int] = {
             "errors_ortografia": 0,
             "errors_gramatica": 0,
             "errors_puntuacio": 0,
             "errors_estil": 0,
+            "errors_tipografia": 0,
             "errors_barbarisme": 0,
+            "errors_altres": 0,
         }
 
         for error in errors:
@@ -298,7 +310,8 @@ class CorrectorLinguistic:
 
         return stats
 
-    def _calcular_puntuacio(self, text: str, errors: list[ErrorLinguistic]) -> float:
+    @staticmethod
+    def _calcular_puntuacio(text: str, errors: list[ErrorLinguistic]) -> float:
         """Calcula puntuació normativa (10 = perfecte)."""
         if not errors:
             return 10.0
@@ -324,7 +337,9 @@ class CorrectorLinguistic:
             f"  • Gramàtica: {resultat.errors_gramatica}",
             f"  • Puntuació: {resultat.errors_puntuacio}",
             f"  • Estil: {resultat.errors_estil}",
+            f"  • Tipografia: {resultat.errors_tipografia}",
             f"  • Barbarismes: {resultat.errors_barbarisme}",
+            f"  • Altres: {resultat.errors_altres}",
             "",
         ]
 
@@ -348,10 +363,11 @@ class CorrectorLinguistic:
         if cls._tool:
             try:
                 cls._tool.close()
+            except Exception:
+                logger.warning("Error tancant LanguageTool")
+            finally:
                 cls._tool = None
                 cls._instance = None
-            except:
-                pass
 
 
 # Funcions helper
