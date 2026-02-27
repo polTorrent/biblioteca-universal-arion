@@ -5,7 +5,6 @@ i genera tests pytest que demostren el problema.
 """
 
 import re
-import tempfile
 from pathlib import Path
 from typing import Any
 
