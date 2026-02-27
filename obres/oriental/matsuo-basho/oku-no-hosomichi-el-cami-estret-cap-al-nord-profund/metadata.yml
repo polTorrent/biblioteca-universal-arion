@@ -1,0 +1,28 @@
+obra:
+  titol: "Oku no Hosomichi (El camí estret cap al nord profund)"
+  titol_original: "おくのほそ道"
+  autor: "Matsuo Bashō"
+  autor_original: "松尾芭蕉"
+  traductor: "Editorial Clàssica"
+  any_original: "1689 (publicat 1702)"
+  any_traduccio: 2026
+  llengua_original: "japonès"
+  descripcio: >
+    Obra mestra de la literatura japonesa, relat de viatge (紀行文) en prosa poètica
+    intercalada amb haikus. Narra el periple de Bashō i el seu deixeble Sora pel nord
+    del Japó (1689), des d'Edo fins a Ōgaki, recorrent uns 2.400 km en 150 dies.
+    Considerada el cim del gènere haibun (prosa amb haiku) i una de les obres cabdals
+    de la literatura universal.
+  categoria: "oriental"
+  genere: "haibun (prosa poètica amb haiku)"
+  font: "Wikisource japonès (底本: 三宅邦吉『新釈奥の細道』, 籾山書店, 1911)"
+seccions: 1
+estadistiques:
+  paraules_original: ~4500
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 15
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
