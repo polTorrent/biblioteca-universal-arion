@@ -1008,6 +1008,19 @@
       {
         "timestamp": 1772214323.2732985,
         "result": "created"
+      },
+      {
+        "timestamp": 1772228751.1163328,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_laelius-de-amicitia": {
+    "events": [
+      {
+        "timestamp": 1772228750.783158,
+        "result": "created"
       }
     ],
     "fail_count": 0

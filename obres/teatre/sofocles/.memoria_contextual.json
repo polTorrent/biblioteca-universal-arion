@@ -1,0 +1,84 @@
+{
+  "traduccions": {
+    "αυταδελφον": {
+      "original": "αὐτάδελφον",
+      "traduccio": "germana de sang",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "κηρυγμα": {
+      "original": "κήρυγμα",
+      "traduccio": "proclamació, edicte",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "στρατηγος": {
+      "original": "στρατηγός",
+      "traduccio": "estrateg, general",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ταφος": {
+      "original": "τάφος",
+      "traduccio": "sepultura, enterrament",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "δημολευστος": {
+      "original": "δημόλευστος",
+      "traduccio": "apedregat pel poble",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "τυραννος": {
+      "original": "τύραννος",
+      "traduccio": "tirà, sobirà",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "οσια": {
+      "original": "ὅσια",
+      "traduccio": "actes piadosos, sagrats",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "κασιγνητη": {
+      "original": "κασιγνήτη",
+      "traduccio": "germana",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "οιωνοι": {
+      "original": "οἰωνοί",
+      "traduccio": "ocells de presa, voltors",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "εντιμος": {
+      "original": "ἔντιμος",
+      "traduccio": "honorat, respectat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Teatre. ",
+    "context_historic": "",
+    "context_obra": "Sofocles. ",
+    "influencies": [],
+    "temes_principals": []
+  },
+  "notes_pendents": []
+}
