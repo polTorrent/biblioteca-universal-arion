@@ -485,6 +485,21 @@ log "🔧 IMPROVE-OPENCLAW iniciat"
 mkdir -p "$PROPOSALS_DIR" "$(dirname "$METRICS_FILE")"
 mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
 
+# ── Control de freqüència: cada 6 hores ─────────────────────────────────────
+LAST_RUN_FILE="$TASKS_DIR/.improve-openclaw-last-run"
+INTERVAL=21600  # 6 hores en segons
+if [ -f "$LAST_RUN_FILE" ]; then
+    last_run_ts=$(cat "$LAST_RUN_FILE" 2>/dev/null)
+    now_ts=$(date +%s)
+    elapsed=$(( now_ts - last_run_ts ))
+    if [ "$elapsed" -lt "$INTERVAL" ] 2>/dev/null; then
+        elapsed_min=$(( elapsed / 60 ))
+        log "   Executat fa ${elapsed_min}min. Saltant."
+        log "═══════════════════════════════════════════════════"
+        exit 0
+    fi
+fi
+
 # ── Fase 1: Anàlisis de lectura (no toquen ~/.openclaw/) ────────────────────
 analyze_openclaw_log
 analyze_failed_tasks
@@ -507,6 +522,9 @@ trap - EXIT  # Netejar trap (ja hem reiniciat)
 
 # Recollir mètriques
 collect_metrics
+
+# Guardar timestamp d'execució
+date +%s > "$LAST_RUN_FILE"
 
 PENDING=$(count_improve_pending)
 log "🔧 IMPROVE-OPENCLAW completat. Tasques improve-openclaw pendents: $PENDING"
