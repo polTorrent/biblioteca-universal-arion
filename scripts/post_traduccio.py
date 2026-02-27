@@ -13,13 +13,12 @@ Aquesta utilitat s'encarrega de:
     post_processar_traduccio(obra_dir, resultat_pipeline)
 """
 
-import os
 import re
 import shutil
 import subprocess
 import yaml
 from pathlib import Path
-from typing import Optional
+from typing import Any
 from datetime import datetime
 
 # Marcadors de metadades de fonts que cal eliminar
@@ -414,7 +413,7 @@ def migrar_metadata_format(metadata_path: Path) -> dict:
     return metadata
 
 
-def actualitzar_metadata(obra_dir: Path, resultat) -> bool:
+def actualitzar_metadata(obra_dir: Path, resultat: Any) -> bool:
     """Actualitza metadata.yml amb els resultats de la traducció."""
     metadata_path = obra_dir / 'metadata.yml'
 
@@ -460,7 +459,7 @@ def actualitzar_metadata(obra_dir: Path, resultat) -> bool:
 def corregir_traduccio_languagetool(traduccio_path: Path, auto_corregir: bool = False) -> bool:
     """Passa LanguageTool per la traducció i mostra/corregeix errors."""
     try:
-        from utils.corrector_linguistic import corregir_text, CorrectorLinguistic, LANGUAGETOOL_DISPONIBLE
+        from utils.corrector_linguistic import CorrectorLinguistic, LANGUAGETOOL_DISPONIBLE
     except ImportError:
         print("   ⚠️ LanguageTool no disponible")
         return False
@@ -543,7 +542,7 @@ def executar_avaluacio_final(obra_dir: Path) -> dict:
         return {'aprovat': True, 'error': 'import_error'}
     except Exception as e:
         print(f"   ⚠️  Error en avaluació: {e}")
-        return {'aprovat': True, 'error': str(e)}
+        return {'aprovat': False, 'error': str(e)}
 
 
 def executar_build() -> bool:
@@ -575,7 +574,7 @@ def executar_build() -> bool:
 
 def post_processar_traduccio(
     obra_dir: Path,
-    resultat=None,
+    resultat: Any = None,
     generar_portada_auto: bool = True,
     executar_build_auto: bool = True,
 ) -> dict:
