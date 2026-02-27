@@ -6,7 +6,9 @@ Text original en anglès (traducció de Constance Garnett) de Project Gutenberg.
 """
 
 import os
+import re
 import sys
+from pathlib import Path
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
@@ -17,11 +19,10 @@ os.environ["CLAUDECODE"] = "1"
 # Afegir el directori arrel al path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from pathlib import Path
-
-from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+from agents.v2 import ConfiguracioPipelineV2, PipelineV2
 from agents.v2.models import LlindarsAvaluacio
-from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
+from agents.v2.pipeline_v2 import ResultatPipelineV2
+from scripts.post_traduccio import netejar_metadades_font, post_processar_traduccio
 from scripts.utils import crear_metadata_yml
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -56,9 +57,8 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main():
+def main() -> ResultatPipelineV2:
     """Executa la traducció."""
-
     # Rutes
     base_dir = Path(__file__).parent.parent
     obra_dir = base_dir / "obres" / OBRA_PATH
@@ -92,8 +92,8 @@ def main():
     text_narratiu = text_original
 
     # Detectar inici del contingut (primer ## o primer capítol numerat)
-    import re
-    match = re.search(r'^(##\s+|[一二三四五六七八九十]+\s*$|[IVXLCDM]+\s*$)', text_original, re.MULTILINE)
+    patro_inici = r"^(##\s+|[一二三四五六七八九十]+\s*$|[IVXLCDM]+\s*$)"
+    match = re.search(patro_inici, text_original, re.MULTILINE)
     if match:
         text_narratiu = text_original[match.start():]
 
@@ -131,13 +131,17 @@ def main():
         print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
-    )
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except Exception as e:
+        print(f"❌ Error durant la traducció: {e}")
+        sys.exit(1)
 
     # Guardar traducció
     traduccio_final = f"""# {TITOL}
