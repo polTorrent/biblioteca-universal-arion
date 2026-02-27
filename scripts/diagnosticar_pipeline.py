@@ -8,11 +8,17 @@ per assegurar que el pipeline està correctament configurat.
     python scripts/diagnosticar_pipeline.py
 """
 
+import os
+import re
+import subprocess
 import sys
 from pathlib import Path
 
+# Directori arrel del projecte (independent del CWD)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
 # Afegir el directori arrel al path
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(PROJECT_ROOT))
 
 try:
     from rich.console import Console
@@ -27,9 +33,7 @@ except ImportError:
 class SimplePrinter:
     """Printer simple si rich no està disponible."""
 
-    def print(self, text="", **kwargs):
-        # Eliminar estils de rich
-        import re
+    def print(self, text: object = "", **kwargs) -> None:
         clean_text = re.sub(r'\[/?[^\]]+\]', '', str(text))
         print(clean_text)
 
@@ -53,10 +57,7 @@ def verificar_dependencies() -> bool:
     all_ok = True
     for module, desc in dependencies:
         try:
-            if module == "dotenv":
-                __import__("dotenv")
-            else:
-                __import__(module)
+            __import__(module)
             console.print(f"  ✅ {module} ({desc})")
         except ImportError:
             console.print(f"  ❌ {module} ({desc}) - NO INSTAL·LAT")
@@ -68,8 +69,6 @@ def verificar_dependencies() -> bool:
 def verificar_autenticacio() -> bool:
     """Verifica l'autenticació amb Claude."""
     console.print("\n[bold]2. Verificant autenticació...[/bold]")
-
-    import subprocess
 
     try:
         result = subprocess.run(
@@ -88,7 +87,7 @@ def verificar_autenticacio() -> bool:
             console.print("  ⚠️ Autenticat via API key (pot generar costos)")
             return True
         elif result.returncode != 0:
-            console.print(f"  ❌ Error verificant autenticació")
+            console.print("  ❌ Error verificant autenticació")
             console.print(f"     Output: {result.stderr or result.stdout}")
             return False
         else:
@@ -136,7 +135,7 @@ def verificar_estructura() -> bool:
 
     # Directoris requerits
     for d, desc in directoris_requerits:
-        if Path(d).exists():
+        if (PROJECT_ROOT / d).exists():
             console.print(f"  ✅ {d}/ ({desc})")
         else:
             console.print(f"  ❌ {d}/ ({desc}) - NO EXISTEIX")
@@ -144,7 +143,7 @@ def verificar_estructura() -> bool:
 
     # Directoris opcionals
     for d, desc in directoris_opcionals:
-        if Path(d).exists():
+        if (PROJECT_ROOT / d).exists():
             console.print(f"  ✅ {d}/ ({desc})")
         else:
             console.print(f"  ℹ️ {d}/ ({desc}) - Opcional, no existeix")
@@ -152,7 +151,7 @@ def verificar_estructura() -> bool:
     # Fitxers requerits
     console.print("")
     for f, desc in fitxers_requerits:
-        if Path(f).exists():
+        if (PROJECT_ROOT / f).exists():
             console.print(f"  ✅ {f}")
         else:
             console.print(f"  ❌ {f} - NO EXISTEIX")
@@ -280,8 +279,6 @@ def verificar_agents() -> bool:
 def verificar_variables_entorn() -> None:
     """Verifica variables d'entorn importants."""
     console.print("\n[bold]7. Variables d'entorn...[/bold]")
-
-    import os
 
     variables = [
         ("CLAUDECODE", "Mode Claude Code (subscripció)"),
