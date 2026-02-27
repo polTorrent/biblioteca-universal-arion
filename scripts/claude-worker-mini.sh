@@ -20,7 +20,6 @@ LOCKFILE="$TASKS_DIR/worker.lock"
 
 MAX_RETRIES=3                # Intents per tasca abans de marcar com failed
 MAX_CONSECUTIVE_FAILS=5      # Pausa llarga si N tasques seguides fallen
-MAX_TASKS_PER_DAY=100        # Límit diari de tasques
 COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60             # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
@@ -40,7 +39,6 @@ mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
 # Comptadors
 CONSECUTIVE_FAILS=0
 TODAY=$(date '+%Y-%m-%d')
-TASKS_TODAY=0
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG"; }
 
@@ -88,8 +86,7 @@ daily_summary() {
         local fail_count=$(find "$TASKS_DIR/failed/" -name "*.json" -newermt "$TODAY" -type f 2>/dev/null | wc -l)
         log "📊 Resum dia $TODAY: $done_count completades, $fail_count fallides"
         TODAY="$new_day"
-        TASKS_TODAY=0
-        CONSECUTIVE_FAILS=0
+                CONSECUTIVE_FAILS=0
         rotate_done
     fi
 }
@@ -288,18 +285,11 @@ EOF
 # =============================================================================
 acquire_lock
 log "🚀 Worker mini v3 iniciat (PID $$)"
-log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, max_day=$MAX_TASKS_PER_DAY, timeout=${TASK_TIMEOUT}s"
+log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, timeout=${TASK_TIMEOUT}s"
 log "   NOU v3: Validació post-execució + detecció plans + instruccions reforçades"
 
 while true; do
     daily_summary
-
-    # ── Safety: límit diari ───────────────────────────────────────────────
-    if [ $TASKS_TODAY -ge $MAX_TASKS_PER_DAY ]; then
-        log "🛡️ Límit diari assolit ($MAX_TASKS_PER_DAY). Esperant fins demà."
-        sleep 3600
-        continue
-    fi
 
     # ── Safety: massa errors consecutius ──────────────────────────────────
     if [ $CONSECUTIVE_FAILS -ge $MAX_CONSECUTIVE_FAILS ]; then
@@ -390,7 +380,6 @@ while true; do
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
             CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
         fi
-        TASKS_TODAY=$((TASKS_TODAY + 1))
         sleep $COOLDOWN_OK
         continue
     fi
@@ -406,8 +395,7 @@ while true; do
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
             CONSECUTIVE_FAILS=0
-            TASKS_TODAY=$((TASKS_TODAY + 1))
-            sleep $COOLDOWN_OK
+                sleep $COOLDOWN_OK
         else
             # ── PLA SENSE ACCIÓ: retry amb instrucció reforçada ───────
             log "⚠️ $TASK_ID: Claude va generar output però NO va executar res (${DURATION}s)"
@@ -437,8 +425,7 @@ print(d['retries'])
                 CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
                 sleep $COOLDOWN_FAIL
             fi
-            TASKS_TODAY=$((TASKS_TODAY + 1))
-        fi
+            fi
 
     else
         # ── FAIL: decidir retry o failed ──────────────────────────────
@@ -457,6 +444,5 @@ print(d['retries'])
             sleep $COOLDOWN_FAIL
         fi
 
-        TASKS_TODAY=$((TASKS_TODAY + 1))
     fi
 done
