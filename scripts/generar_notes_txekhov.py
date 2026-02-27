@@ -11,13 +11,17 @@ os.environ["CLAUDECODE"] = "1"
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import json
+import traceback
 from pathlib import Path
 from agents.anotador_critic import AnotadorCriticAgent, AnotacioRequest
 
-def main():
+# Directori arrel del projecte (relatiu a la ubicació d'aquest script)
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+
+def main() -> int:
     """Genera notes per la traducció de Txèkhov."""
 
-    obra_dir = Path("obres/narrativa/txekhov/sala-numero-6")
+    obra_dir = PROJECT_ROOT / "obres/narrativa/txekhov/sala-numero-6"
     traduccio_path = obra_dir / "traduccio.md"
     notes_path = obra_dir / "notes.md"
 
@@ -72,7 +76,10 @@ def main():
                         contingut = nota.get("nota", nota.get("contingut", nota.get("explicacio", "")))
 
                         # Usar text_referit com a títol si no hi ha títol explícit
-                        titol = nota.get("titol", text_referit[:50] + "..." if len(text_referit) > 50 else text_referit)
+                        titol = nota.get(
+                            "titol",
+                            (text_referit[:50] + "...") if len(text_referit) > 50 else text_referit,
+                        )
 
                         notes_content += f"## [{i}] [{tipus}] {titol}\n\n"
                         if text_referit and text_referit != titol:
@@ -94,7 +101,6 @@ def main():
 
     except Exception as e:
         print(f"\n❌ Error generant notes: {e}")
-        import traceback
         traceback.print_exc()
         return 1
 
