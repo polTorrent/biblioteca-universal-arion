@@ -7,11 +7,12 @@ Proporciona funcions d'accés ràpid al sistema de debugging TDD.
     >>> debug_rapido("El validador no detecta errors de format")
 """
 
-import os
-from pathlib import Path
+from __future__ import annotations
 
-# Assegurar mode subscripció
-os.environ.setdefault("CLAUDECODE", "1")
+from typing import TYPE_CHECKING
+
+if TYPE_CHECKING:
+    from agents.debug.models import BugReport
 
 
 def debug_rapido(descripcio: str, fitxers: list[str] | None = None) -> bool:
@@ -62,7 +63,7 @@ def debug_fitxer(fitxer: str, descripcio: str = "Bug detectat") -> bool:
     return debug_rapido(descripcio, fitxers=[fitxer])
 
 
-def reproduir_nomes(descripcio: str, fitxers: list[str] | None = None) -> "BugReport | None":
+def reproduir_nomes(descripcio: str, fitxers: list[str] | None = None) -> BugReport | None:
     """
     Només reprodueix el bug sense intentar arreglar-lo.
 
