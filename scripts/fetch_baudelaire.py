@@ -8,6 +8,7 @@ import sys
 import time
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
 BASE = "https://fr.wikisource.org/w/api.php"
 HEADERS = {"User-Agent": "BibliotecaArion/1.0"}
@@ -63,7 +64,7 @@ def html_to_text(raw_html: str) -> str:
     # Remove ws-noexport blocks (headers, footers, navigation)
     text = re.sub(
         r'<[^>]*class="[^"]*ws-noexport[^"]*"[^>]*>.*?</div>\s*</div>\s*</div>',
-        "", text := raw_html, flags=re.DOTALL,
+        "", raw_html, flags=re.DOTALL,
     )
     text = re.sub(r'<small class="ws-noexport"[^>]*>.*?</small>', "", text, flags=re.DOTALL)
     text = re.sub(r'<div[^>]*ws-noexport[^>]*>.*?</div>', "", text, flags=re.DOTALL)
@@ -153,6 +154,7 @@ def main() -> int:
 
     content = "\n".join(parts)
 
+    Path(output_path).parent.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(content)
 
