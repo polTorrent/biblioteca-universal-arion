@@ -2,22 +2,20 @@
 """Traducció de 'Meditacions' (Τὰ εἰς ἑαυτόν) de Marc Aureli del grec antic al català."""
 
 import os
+import re
 import sys
-
-# ═══════════════════════════════════════════════════════════════════════════════
-# OBLIGATORI: Establir CLAUDECODE=1 per usar subscripció (cost €0)
-# Això ha d'anar ABANS d'importar els agents
-# ═══════════════════════════════════════════════════════════════════════════════
-os.environ["CLAUDECODE"] = "1"
 
 # Afegir el directori arrel al path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
+# Netejar CLAUDECODE per evitar errors de "nested sessions" si s'executa com a subprocess
+os.environ.pop("CLAUDECODE", None)
+
 from pathlib import Path
 
-from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+from agents.v2 import ConfiguracioPipelineV2, PipelineV2
 from agents.v2.models import LlindarsAvaluacio
-from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
+from scripts.post_traduccio import netejar_metadades_font, post_processar_traduccio
 from scripts.utils import crear_metadata_yml
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -49,8 +47,8 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main():
-    """Executa la traducció."""
+def main() -> None:
+    """Executa la traducció de Meditacions de Marc Aureli."""
 
     # Rutes
     base_dir = Path(__file__).parent.parent
@@ -75,14 +73,12 @@ def main():
     print("=" * 60)
     print()
 
-    with open(original_path, "r", encoding="utf-8") as f:
-        text_original = f.read()
+    text_original = original_path.read_text(encoding="utf-8")
 
     # Netejar metadades de fonts digitals
     text_original = netejar_metadades_font(text_original)
 
     # Detectar inici del contingut (primer capítol)
-    import re
     text_narratiu = text_original
     match = re.search(r'^(##\s+)', text_original, re.MULTILINE)
     if match:
@@ -92,6 +88,10 @@ def main():
     for footer in ['*Text de domini públic', '*Traducció de domini públic', '---\n\n*']:
         if footer in text_narratiu:
             text_narratiu = text_narratiu.split(footer)[0].strip()
+
+    if not text_narratiu.strip():
+        print("Error: El text original està buit després de netejar-lo")
+        sys.exit(1)
 
     print(f"Text original: {len(text_narratiu)} caràcters")
     print()
@@ -121,31 +121,34 @@ def main():
         print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
-    )
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except Exception as e:
+        print(f"Error durant la traducció: {e}")
+        sys.exit(1)
+
+    if not resultat.traduccio_final:
+        print("Error: El pipeline no ha generat cap traducció")
+        sys.exit(1)
 
     # Guardar traducció
-    traduccio_final = f"""# {TITOL}
-*{AUTOR}*
+    traduccio_final = (
+        f"# {TITOL}\n"
+        f"*{AUTOR}*\n\n"
+        f"Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion\n\n"
+        f"---\n\n"
+        f"{resultat.traduccio_final}\n\n"
+        f"---\n\n"
+        f"*Traducció de domini públic.*\n"
+    )
 
-Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion
-
----
-
-{resultat.traduccio_final}
-
----
-
-*Traducció de domini públic.*
-"""
-
-    with open(traduccio_path, "w", encoding="utf-8") as f:
-        f.write(traduccio_final)
+    traduccio_path.write_text(traduccio_final, encoding="utf-8")
 
     # Mostrar resum
     print()
@@ -167,8 +170,6 @@ Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion
     print("=" * 60)
     print("  TRADUCCIÓ COMPLETADA I PUBLICADA")
     print("=" * 60)
-
-    return resultat
 
 
 if __name__ == "__main__":
