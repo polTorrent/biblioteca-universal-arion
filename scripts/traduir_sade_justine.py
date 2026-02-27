@@ -7,6 +7,7 @@ Font: Wikisource (domini públic)
 """
 
 import os
+import re
 import sys
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -20,9 +21,9 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from pathlib import Path
 
-from agents.v2 import PipelineV2, ConfiguracioPipelineV2
+from agents.v2 import ConfiguracioPipelineV2, PipelineV2
 from agents.v2.models import LlindarsAvaluacio
-from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
+from scripts.post_traduccio import netejar_metadades_font, post_processar_traduccio
 from scripts.utils import crear_metadata_yml
 
 
@@ -58,7 +59,7 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main():
+def main() -> None:
     """Executa la traducció."""
 
     # Rutes
@@ -67,13 +68,13 @@ def main():
     original_path = obra_dir / "original.md"
     traduccio_path = obra_dir / "traduccio.md"
 
-    # Crear/verificar metadata.yml
-    crear_metadata_yml(obra_dir, TITOL, AUTOR, LLENGUA_ORIGEN, GENERE)
-
     # Verificar que existeix l'original
     if not original_path.exists():
         print(f"❌ Error: No existeix {original_path}")
         sys.exit(1)
+
+    # Crear/verificar metadata.yml
+    crear_metadata_yml(obra_dir, TITOL, AUTOR, LLENGUA_ORIGEN, GENERE)
 
     # Llegir text original
     print("═" * 70)
@@ -90,7 +91,6 @@ def main():
     text_original = netejar_metadades_font(text_original)
 
     # Detectar inici del contingut narratiu
-    import re
     text_narratiu = text_original
 
     # Treure capçalera editorial si existeix
@@ -131,13 +131,20 @@ def main():
         print(f"Dashboard: http://localhost:{CONFIG['dashboard_port']}")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
-    )
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except KeyboardInterrupt:
+        print("\n⚠️  Traducció interrompuda per l'usuari.")
+        sys.exit(130)
+    except Exception as e:
+        print(f"\n❌ Error durant la traducció: {e}")
+        sys.exit(1)
 
     # Guardar traducció
     traduccio_final = f"""# {TITOL}
@@ -175,8 +182,6 @@ Traduït del {LLENGUA_ORIGEN} per Biblioteca Arion
     print("═" * 70)
     print("  ✅ TRADUCCIÓ COMPLETADA I PUBLICADA")
     print("═" * 70)
-
-    return resultat
 
 
 if __name__ == "__main__":
