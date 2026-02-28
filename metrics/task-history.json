@@ -1096,5 +1096,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_froken-julie-la-senyoreta-julia": {
+    "events": [
+      {
+        "timestamp": 1772255721.9005082,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }

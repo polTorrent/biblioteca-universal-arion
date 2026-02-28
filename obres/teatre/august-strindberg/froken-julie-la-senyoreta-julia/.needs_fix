@@ -1,0 +1,89 @@
+data: 2026-02-28
+puntuacio: 3.0/10
+supervisor: Claude (supervisió automàtica)
+
+# Problemes detectats — Fröken Julie (La Senyoreta Júlia)
+
+## CRÍTICS (bloquejants)
+
+### 1. Traducció massivament incompleta
+- L'original té 12.472 paraules / 3.288 línies
+- La traducció té 5.341 paraules / 578 línies
+- Només s'ha traduït aproximadament el 43% del text original
+- Falten escenes senceres: el canvi de roba de Jean, la conversa sobre el vi de Dijon,
+  la discussió sobre el prometatge de Kristin, diàlegs extensos entre Julie i Jean
+  sobre el futur, i moltes més
+
+### 2. Text d'IA incrustat a la traducció (línia 371-373)
+- Text literal de resposta d'IA dins la traducció:
+  "No puc veure la traducció existent que demanes que millori. Només veig el text
+  original en suec. Podries proporcionar la traducció al català que vols que millori?"
+- Això és un artefacte del procés de traducció que mai no hauria d'aparèixer al text final
+
+### 3. Passatges truncats (mínim 12 llocs)
+- Línia 78: discurs de Jean tallat a meitat
+- Línia 127-128: discurs de la Senyoreta tallat
+- Línia 152-153: discurs de Jean tallat
+- Línia 197: text tallat a meitat de paraula
+- Línia 213: text tallat
+- Línia 253: text tallat ("LA SENYORE" incomplet)
+- Línia 269: text tallat
+- Línia 307: text tallat a meitat de frase ("ara som...")
+- Línia 330: text tallat a meitat
+- Línia 333: text tallat ("la meva mare va caure...")
+- Línia 369: text tallat ("Per torturar...")
+- Línia 455: text tallat
+- Línia 479-480: text tallat
+- Línia 534: text tallat ("és la meva fe viva... i és")
+- Línia 561: text tallat ("Ah...")
+
+## GREUS
+
+### 4. Noms de personatges inconsistents
+- "Joan" (línies 11-30) canvia a "JEAN" (a partir de línia 34) — ha de ser consistent
+- "Cristina" (línies 11-18) canvia a "KRISTIN" (a partir de línia 32) — ha de ser consistent
+- "SENYORETA" (L51) vs "LA SENYORETA" (L154) vs "SENORETA" (L273, sense accent!)
+- Cal decidir: o tot en català (Joan, Cristina, Senyoreta) o tot en suec (Jean, Kristin, Fröken)
+  i mantenir-ho coherent al llarg de tota l'obra
+
+### 5. Fitxers obligatoris inexistents
+- NO existeix glossari.yml (obligatori segons l'estructura del projecte)
+- NO existeix notes.md
+- NO existeix introduccio.md (recomanable per context d'una obra tan important)
+
+### 6. metadata.yml defectuós
+- Claus duplicades: `estadistiques` i `seccions` apareixen dues vegades
+- `paraules_original: 0` quan l'original té 12.472 paraules
+- `paraules_traduccio: 0` (al segon bloc) contradiu `paraules_traduccio: 5320` (al primer)
+- `estat: revisat` contradiu `qualitat: 0.0`
+- `notes: 0` i `termes_glossari: 0` — no hi ha glossari ni notes
+- Totes les puntuacions d'avaluació són 0.0
+
+## MODERATS
+
+### 7. Errors gramaticals en català
+- Línia 544: "al armari" → "a l'armari" (contracció obligatòria al/a l')
+- Línia 28: "Deu estar com avergonyida" → "Deu estar avergonyida" ("com" sobrer)
+- Línia 385: "He dormit com un soc!" → "He dormit com un soc!" (correcte, però "tronc" seria més natural)
+
+### 8. Problemes de format
+- Doble separador `---` (línies 66-67) sense contingut entremig
+- Acotacions inconsistents: algunes amb cursiva, altres sense
+- Manca separador clar entre escenes
+- La llista de personatges (L8-12) no inclou la descripció completa de l'espai escènic
+
+### 9. Registre tu/vós inconsistent sense justificació
+- Julie i Jean alternen entre tu i vós sense un patró clar que reflecteixi
+  l'evolució de la relació com a l'original (ni → du)
+- Cal establir un criteri coherent per marcar el canvi de registre
+
+## RECOMANACIONS PER A LA CORRECCIÓ
+
+1. **Prioritat màxima**: Retraduir l'obra COMPLETA (els 21 chunks, sense truncaments)
+2. **Eliminar** el text d'IA incrustat (L371-373)
+3. **Unificar** els noms dels personatges (recomanat: Joan, Cristina, Senyoreta Júlia)
+4. **Crear** glossari.yml amb termes clau (termes suecs, registres formal/informal, etc.)
+5. **Crear** notes.md amb notes sobre decisions de traducció
+6. **Corregir** metadata.yml (eliminar duplicats, actualitzar estadístiques)
+7. **Revisar** tots els passatges truncats i completar-los
+8. **Establir** criteri clar per al canvi tu/vós que reflecteixi l'original
