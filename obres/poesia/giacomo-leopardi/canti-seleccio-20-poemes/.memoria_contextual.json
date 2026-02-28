@@ -1,0 +1,48 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Giacomo Taldegardo Francesco di Sales Saverio Pietro Leopardi (1798-1837), Recanati, Estats Pontificis (actual Itàlia). Poeta, filòsof i filòleg italià, considerat una de les figures més importants del Romanticisme europeu. Nascut en una família noble conservadora, va desenvolupar una filosofia pessimista sobre la condició humana i va compondre algunes de les poesies més sublims de la literatura italiana. La seva vida va estar marcada per la malaltia, la reclusió i una recerca constant de bellesa i veritat.",
+    "context_historic": "Període de fragmentació política italiana sota dominació austriaca, moviments del Risorgimento, Restauració post-napoleònica, transició entre Neoclassicisme i Romanticisme",
+    "context_obra": "Canti (1818-1836) - Poesia lírica. Obra composta al llarg de gairebé dues dècades, reflectint l'evolució intel·lectual i emocional de Leopardi, des dels primers impulsos patriòtics fins a la maduresa filosòfica. Representa la síntesi de la seva visió del món i la seva recerca estètica",
+    "influencies": [
+      "Homero i la poesia grega",
+      "Virgili i els clàssics llatins",
+      "Torquato Tasso",
+      "Francesco Petrarca",
+      "Illuminisme francès",
+      "Johann Wolfgang von Goethe"
+    ],
+    "temes_principals": [
+      "Pessimisme existencial i teoria del dolor",
+      "Nostalgia per la joventut i la innocència perdudes",
+      "Patriotisme i lament per la decadència d'Itàlia",
+      "Natura com a força indiferent i enganyosa",
+      "Amor impossible i desil·lusió sentimental"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Silvia",
+    "[H] Personatge històric: Nerina",
+    "[H] Personatge històric: Aspasia",
+    "[H] Personatge històric: Bruto",
+    "[H] Personatge històric: Saffo",
+    "[H] Personatge històric: Pompeu",
+    "[H] Personatge històric: Consalvo",
+    "[C] Referència cultural: Mitologia grecorromana",
+    "[C] Referència cultural: Història romana i glòries del passat italià",
+    "[C] Referència cultural: Paisatges de Recanati i dels Abruços",
+    "[C] Referència cultural: Literatura clàssica",
+    "[C] Referència cultural: Filosofia antiga",
+    "[C] Referència cultural: Tradició petrarquista",
+    "[T] Terme tècnic: canzone",
+    "[T] Terme tècnic: idillio",
+    "[T] Terme tècnic: endecasillabo",
+    "[T] Terme tècnic: pessimismo leopardiano",
+    "[T] Terme tècnic: teoria del piacere",
+    "[T] Terme tècnic: infinito",
+    "[T] Terme tècnic: rimembranza",
+    "[T] Terme tècnic: natura matrigna"
+  ]
+}
