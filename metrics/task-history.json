@@ -1096,6 +1096,10 @@
       {
         "timestamp": 1772228751.1163328,
         "result": "created"
+      },
+      {
+        "timestamp": 1772273338.7886856,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1131,6 +1135,15 @@
     "events": [
       {
         "timestamp": 1772267940.1311166,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_rubaiyat-seleccio-75-quartetes": {
+    "events": [
+      {
+        "timestamp": 1772273337.4555671,
         "result": "created"
       }
     ],
