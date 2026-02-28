@@ -1,0 +1,26 @@
+qualitat: 7.3
+data: 2026-03-01
+avaluador: pipeline-v2
+
+dimensions:
+  fidelitat: 6.0
+  veu_autor: 8.0
+  fluidesa: 7.5
+
+notes: |
+  Traducció parcialment completa (5/53 capítols). La qualitat del text traduït
+  és bona: registre filosòfic adequat, català normatiu i fluïdesa natural.
+
+  OMISSIONS PENDENTS DE CORRECCIÓ:
+  - Cap. 1 §4: falta segona meitat (desitjar governar i riquesa alhora)
+  - Cap. 2 §2: falta des de "τὴν ὄρεξιν δὲ παντελῶς" (eliminar desig, usar impuls amb lleugeresa)
+  - Cap. 4: falta des de "καὶ ὡσαύτως ἐφ' ἑκάστου ἔργου" (generalització i resposta a obstacles)
+
+  MILLORES RECOMANADES:
+  - Revisar "apropïs" (cap. 1 §4): considerar "emprendre" o "abordar" per ἅπτεσθαι
+  - Completar els 48 capítols restants (6-53) de l'Enchiridion
+
+  PUNTS FORTS:
+  - Glossari amb 6 termes tècnics ben documentats
+  - 8 notes erudites amb referències creuades
+  - Anotacions de termes en el text (markup)
