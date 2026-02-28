@@ -5,6 +5,7 @@ Estil visual: MINIMALISTA FIGURATIU - siluetes i objectes simplificats, 60%+ esp
 Format: Vertical 2:3 per a llibres.
 """
 
+import hashlib
 import io
 import os
 from pathlib import Path
@@ -93,109 +94,496 @@ PALETES: dict[str, PaletaGenere] = {
     ),
 }
 
-# Símbols figuratius per temes específics
-SIMBOLS_TEMATICS: dict[str, str] = {
-    # Filosofia
-    "estoïcisme": "a single ancient Greek column fragment",
-    "temps": "a minimalist hourglass with falling sand",
-    "mort": "a single wilting flower stem",
-    "virtut": "a simple laurel branch",
-    "ànima": "a delicate feather floating",
-    "raó": "a single candle flame illuminating",
-    "llibertat": "broken chain links",
-    "deure": "an old iron key",
-    "presó": "vertical iron bars with light between",
-    "diàleg": "two facing silhouette profiles",
-    "coneixement": "an open ancient book",
-    "veritat": "a simple mirror reflection",
-    "saviesa": "an owl silhouette",
-    "natura": "a single gnarled tree",
-    "voluntat": "a clenched fist silhouette",
-    "representació": "a window frame with landscape",
-    "causalitat": "falling dominoes in sequence",
-    "lògica": "interlocking geometric shapes",
-    "metafísica": "a door slightly ajar with light",
-    "epistemologia": "an eye looking through keyhole",
-    # Obres específiques
-    "conversió": "a heart with flames rising",
-    "confessions": "a heart with flames rising",
-    "pecat": "a ripe pear on a branch",
-    "cicuta": "an ancient greek cup or kylix",
-    "sòcrates": "an ancient greek cup or kylix",
-    "immortalitat": "a butterfly emerging from cocoon",
-    "superhome": "an eagle soaring over mountain peak",
-    "zaratustra": "an eagle soaring over mountain peak",
-    "àguila": "an eagle soaring over mountain peak",
-    "tao": "yin yang symbol in brushstroke style",
-    "yin": "water flowing around stones",
-    "equilibri": "balanced stones stacked",
-    "camí": "a winding mountain path",
-    "emperador": "a roman laurel wreath crown",
-    "roma": "a roman eagle standard aquila",
-    # Poesia
-    "amor": "two intertwined roses",
-    "melangia": "rain drops on window",
-    # Teatre
-    "tragèdia": "a cracked theatrical mask",
-    "comèdia": "a smiling mask with shadow",
-    # Novel·la / Terror gòtic
-    "viatge": "a sailing ship silhouette",
-    "guerra": "a broken sword",
-    "família": "an empty chair by window",
-    "gòtic": "a gothic castle silhouette against moonlight",
-    "terror": "a single human eye in darkness",
-    "misteri": "an ornate keyhole with light behind",
-    "castell": "a gothic castle tower silhouette",
-    "fantasma": "a translucent veil floating",
-    "boira": "mist rising from water",
-    "nit": "a crescent moon behind clouds",
-    "ombra": "a long shadow cast by candlelight",
-    # Art i pintura
-    "retrat": "an ornate oval picture frame, empty, gilded",
-    "oval": "an ornate oval picture frame, empty, gilded",
-    "pintura": "a painter's palette with brushes",
-    "pintor": "a single paintbrush with wet tip",
-    "art": "an artist easel with blank canvas",
-    "artista": "a painter's palette with brushes",
-    "quadre": "an ornate picture frame casting shadow",
-    "tela": "a stretched canvas on wooden frame",
-    "cavallet": "an artist easel silhouette",
-    # Oriental
-    "zen": "a single lotus flower",
-    "bushido": "a katana blade reflection",
-    "bambú": "bamboo stalks in mist",
-    "foc": "dancing flames",
-    "infern": "flames rising from below",
-    "sacrifici": "hands releasing a bird",
-    "obsessió": "an eye in shadow staring",
-    # Epopeia
-    "heroi": "a shield and spear crossed",
-    "déus": "lightning bolt from clouds",
-    "batalla": "a single warrior helmet",
-    # Obres clàssiques específiques
-    "odissea": "an ancient Greek trireme ship with single sail on waves",
-    "ulisses": "an ancient Greek trireme ship with single sail on waves",
-    "odisseu": "an ancient Greek trireme ship with single sail on waves",
-    "ítaca": "an ancient Greek trireme ship with single sail on waves",
-    "eneida": "the wooden Trojan horse silhouette",
-    "enees": "the wooden Trojan horse silhouette",
-    "troia": "the wooden Trojan horse silhouette",
+# Símbols figuratius per temes específics — cada clau té una llista d'alternatives
+# per evitar repeticions entre obres. La selecció es fa per hash de títol+autor.
+SIMBOLS_TEMATICS: dict[str, list[str]] = {
+    # ── Obres específiques (prioritat alta, al principi per matching primer) ──
+    # NOTA: entrades multi-paraula van PRIMER per evitar matchos parcials
+    "sutra del cor": [
+        "a lotus emerging from perfectly dark water",
+        "wooden prayer beads arranged in a circle",
+        "an ancient palm leaf manuscript on silk",
+    ],
+    "cor delator": [
+        "an anatomical heart silhouette pulsing under floorboards",
+        "a heartbeat line fading to flat silence",
+    ],
+    "meditacions": [
+        "a Roman wax tablet with bronze stylus on field desk",
+        "an emperor's signet ring resting on worn marble",
+        "a Roman oil lamp glowing on a military campaign table",
+        "a philosophical diary open under starlight",
+    ],
+    "aurora": [
+        "a sun rising behind jagged mountain silhouette",
+        "dawn light fracturing through storm clouds",
+        "a lone mountain peak catching first golden rays",
+        "a philosopher's hammer mid-strike on stone tablet",
+    ],
+    "epístola": [
+        "an ancient scroll being carefully unrolled",
+        "a wax seal on folded parchment with stylus",
+        "a Roman writing reed beside a clay inkwell",
+        "a rolled papyrus letter tied with thread",
+    ],
+    "sonet": [
+        "a quill pen resting on parchment with ink drop",
+        "an inkwell with a single suspended drop of ink",
+        "a lyre wreathed in delicate laurel",
+        "a folded sonnet page with wax rose seal",
+    ],
+    "sonets": [
+        "a quill pen casting shadow of a rose",
+        "a lute with a single vibrating string",
+        "an Elizabethan stage rose with thorns",
+        "an ink-stained sonnet scroll tied with silk ribbon",
+    ],
+    "confessions": [
+        "a heart with flames rising",
+        "a quill pen dripping ink like tears",
+        "an open leather diary lit by candlelight",
+    ],
+    "conversió": [
+        "a heart with flames rising",
+        "a chrysalis cracking open to light",
+        "a doorway from shadow into radiance",
+    ],
+    "pecat": [
+        "a ripe pear on a branch",
+        "a serpent coiled around a fig branch",
+        "a cracked golden apple",
+    ],
+    "cicuta": ["an ancient greek cup or kylix"],
+    "sòcrates": [
+        "an ancient greek cup or kylix",
+        "a hemlock sprig beside a stone cup",
+    ],
+    "immortalitat": [
+        "a butterfly emerging from cocoon",
+        "a phoenix feather still glowing embers",
+        "an eternal flame on weathered stone altar",
+    ],
+    "superhome": [
+        "an eagle soaring over mountain peak",
+        "a lion silhouette roaring at cliff edge",
+        "a tightrope walker silhouette over an abyss",
+    ],
+    "zaratustra": [
+        "a hermit descending from a mountain cave at dawn",
+        "an eagle soaring over a solitary peak",
+        "a rising sun illuminating a serpent and eagle",
+    ],
+    "àguila": ["an eagle soaring over mountain peak"],
+    "tao": [
+        "water flowing gently around immovable stones",
+        "an empty clay vessel on a rustic wooden table",
+        "a mountain waterfall dissolving into soft mist",
+        "a single ink brushstroke forming the character for way",
+    ],
+    "yin": [
+        "water flowing around polished river stones",
+        "moonlight reflected on a perfectly still lake",
+    ],
+    "equilibri": [
+        "balanced stones stacked on a river shore",
+        "two koi fish circling each other in a pool",
+        "a tightrope walker's long balance pole",
+    ],
+    "camí": [
+        "a winding mountain path disappearing into mist",
+        "stepping stones crossing a quiet stream",
+        "a trail vanishing into a bamboo forest",
+    ],
+    "emperador": [
+        "a roman laurel wreath crown on marble",
+        "an imperial signet ring with eagle seal",
+        "a purple cloak draped over empty marble throne",
+    ],
+    "roma": [
+        "a roman eagle standard aquila",
+        "a roman triumphal arch silhouette",
+        "the Colosseum in elegant minimalist outline",
+    ],
     # Poe i terror americà
-    "poe": "a black raven perched on skull",
-    "corb": "a black raven silhouette",
-    "enterrat": "a coffin lid slightly open",
-    "cor": "an anatomical heart silhouette",
-    "pèndol": "a swinging pendulum blade",
-    "pou": "a dark circular pit from above",
-    "usher": "a crumbling mansion facade",
-    "gat": "a black cat silhouette with glowing eye",
+    "poe": [
+        "a black raven perched on pale skull",
+        "a pendulum blade swinging over darkness",
+        "a masquerade mask beside a stopped clock",
+    ],
+    "corb": ["a black raven silhouette on a branch"],
+    "enterrat": [
+        "a coffin lid slightly open with fingernails marks",
+        "a hand pushing through freshly turned earth",
+    ],
+    "cor": [
+        "an anatomical heart silhouette pulsing",
+        "a heartbeat line fading to flat silence",
+    ],
+    "pèndol": ["a sharp pendulum blade swinging in arc"],
+    "pou": ["a dark circular pit viewed from above"],
+    "usher": ["a crumbling mansion facade reflected in tarn"],
+    "gat": ["a black cat silhouette with single glowing eye"],
     # Kafka
-    "transformació": "a beetle silhouette from above",
-    "metamorfosi": "a beetle silhouette from above",
-    "insecte": "a beetle silhouette from above",
-    "kafka": "a beetle silhouette from above",
-    "procés": "a maze of doors in perspective",
-    "burocràcia": "towering filing cabinets",
+    "metamorfosi": ["a beetle silhouette viewed from above"],
+    "transformació": [
+        "a beetle silhouette from above",
+        "a human shadow distorting into strange shape",
+    ],
+    "insecte": ["a beetle silhouette from above"],
+    "kafka": [
+        "a beetle silhouette from above",
+        "a maze of identical doors in infinite perspective",
+        "a bowler hat casting an insect-shaped shadow",
+    ],
+    "procés": [
+        "a maze of identical doors in perspective",
+        "towering filing cabinets vanishing upward",
+    ],
+    "burocràcia": [
+        "towering filing cabinets in shadow",
+        "an endless corridor of identical numbered doors",
+    ],
+    # Obres clàssiques
+    "odissea": ["an ancient Greek trireme ship with single sail on waves"],
+    "ulisses": ["an ancient Greek trireme ship with single sail on waves"],
+    "odisseu": ["an ancient Greek trireme ship with single sail on waves"],
+    "ítaca": ["an ancient Greek trireme ship with single sail on waves"],
+    "eneida": ["the wooden Trojan horse silhouette"],
+    "enees": ["the wooden Trojan horse silhouette"],
+    "troia": ["the wooden Trojan horse silhouette"],
+    "shakespeare": [
+        "a quill pen with ink flowing into rose petals",
+        "a stage rose intertwined with thorns",
+        "the Globe Theatre in delicate silhouette",
+        "a sonnet scroll unfurling with scattered petals",
+    ],
+    "nietzsche": [
+        "a philosopher's hammer striking cracked stone",
+        "a tightrope walker silhouette over void",
+        "a dancing star emerging from cosmic chaos",
+        "a mountain peak with a single figure at dawn",
+    ],
+    # Sèneca
+    "lucili": [
+        "two hands exchanging an ancient scroll",
+        "a sealed letter resting on a Roman desk",
+    ],
+    "parsimònia": [
+        "a single coin on vast empty marble table",
+        "a single water drop about to fall from leaf",
+    ],
+    # ── Filosofia (temes generals) ──
+    "estoïcisme": [
+        "a single ancient Greek column fragment",
+        "a weathered marble hand resting on a sphere",
+        "an ancient bronze ring on cracked stone",
+        "a stoic's cloak draped over empty bench",
+    ],
+    "temps": [
+        "an ancient water clock with single drop falling",
+        "an unwinding spool of golden thread",
+        "a sundial casting its longest shadow",
+        "sand slipping through weathered fingers",
+    ],
+    "mort": [
+        "a candle flame at the instant of extinguishing",
+        "an autumn leaf suspended mid-fall",
+        "a moth approaching a dying lantern",
+        "a pocket watch stopped at midnight",
+    ],
+    "virtut": [
+        "a simple laurel branch",
+        "a polished bronze shield reflecting soft light",
+        "a straight arrow pointing skyward",
+        "balanced scales on a marble pedestal",
+    ],
+    "ànima": [
+        "a delicate feather floating in still air",
+        "a translucent butterfly in warm amber light",
+        "a small flame inside a glass sphere",
+        "a bird silhouette escaping through open window",
+    ],
+    "raó": [
+        "a crystal prism splitting a beam of light",
+        "a compass needle pointing true north",
+        "a single candle illuminating an open book",
+        "a magnifying glass focusing sunlight",
+    ],
+    "llibertat": [
+        "broken chain links on stone floor",
+        "an open birdcage with door swung wide",
+        "a kite soaring without its string",
+        "a key turning in an open lock",
+    ],
+    "deure": [
+        "an old iron key on velvet",
+        "a sealed wax letter on marble",
+        "a soldier's helmet resting on his shield",
+        "a judge's gavel on aged wood",
+    ],
+    "presó": [
+        "vertical iron bars with light streaming between",
+        "a barred window framing distant horizon",
+        "a heavy iron door slightly ajar",
+        "chains dissolving into wisps of smoke",
+    ],
+    "diàleg": [
+        "two facing silhouette profiles in conversation",
+        "two wooden chairs facing each other",
+        "a stone bridge connecting two cliff edges",
+        "two ancient scrolls unfurled side by side",
+    ],
+    "coneixement": [
+        "an astrolabe silhouette against dark sky",
+        "a burning torch in perfect darkness",
+        "a seed splitting open with first sprout",
+        "an ancient map with compass rose",
+    ],
+    "veritat": [
+        "a veil being gently lifted",
+        "a lantern cutting through dense fog",
+        "a diamond facet catching pure light",
+        "a still pool reflecting a single star",
+    ],
+    "saviesa": [
+        "an ancient gnarled olive tree",
+        "an elder's walking staff leaning on wall",
+        "a deep well with still water far below",
+        "an owl silhouette on bare branch at dusk",
+    ],
+    "natura": [
+        "a river stone worn perfectly smooth by water",
+        "a mountain peak barely visible above clouds",
+        "a wave frozen at the moment of breaking",
+        "a single gnarled tree on a windswept hill",
+    ],
+    "voluntat": [
+        "a hammer striking a glowing anvil",
+        "a flame burning steady against strong wind",
+        "an arrow at full draw in a longbow",
+        "a clenched fist silhouette raised",
+    ],
+    "representació": [
+        "a window frame with distant landscape",
+        "a theater curtain half drawn aside",
+        "a shadow puppet on an illuminated screen",
+        "a painted canvas showing another canvas",
+    ],
+    "causalitat": [
+        "ripples expanding in perfectly still water",
+        "a gear mechanism frozen in motion",
+        "a pendulum captured mid-swing",
+        "falling dominoes in precise sequence",
+    ],
+    "lògica": [
+        "a labyrinth viewed from directly above",
+        "a chess knight piece on empty board",
+        "nested circles in precise geometric arrangement",
+        "interlocking gears in harmony",
+    ],
+    "metafísica": [
+        "a staircase ascending into soft clouds",
+        "a mirror reflecting another mirror infinitely",
+        "a sphere floating above a dark surface",
+        "a door slightly ajar with golden light beyond",
+    ],
+    "epistemologia": [
+        "a telescope pointed at distant stars",
+        "a hand reaching toward a point of light",
+        "a map with vast uncharted territories",
+        "an eye looking through an ornate keyhole",
+    ],
+    "moral": [
+        "a cracked stone tablet of ancient laws",
+        "a pair of scales gently tilting",
+        "a mask split between light and shadow",
+    ],
+    "aforisme": [
+        "a chisel carving precise letters into marble",
+        "a lightning bolt illuminating stone text",
+    ],
+    "prejudici": [
+        "a cracked empty pedestal with nothing on it",
+        "shattered stone tablets on the ground",
+        "a toppled statue in elegant fragments",
+    ],
+    # ── Poesia ──
+    "amor": [
+        "a sealed love letter with crimson wax seal",
+        "two hands almost touching across a gap",
+        "a lute with one string still vibrating",
+        "a rose pressed between pages of a book",
+    ],
+    "bellesa": [
+        "a perfect pearl resting in an open shell",
+        "morning dew caught on a spider web",
+        "a swan gliding on still water",
+        "a prism casting a rainbow on white wall",
+    ],
+    "mortalitat": [
+        "a clock face with no hands",
+        "autumn leaves scattered on ancient stone",
+        "a sundial in long evening shadow",
+        "a single candle burning low in its holder",
+    ],
+    "melangia": [
+        "rain drops trailing down a window pane",
+        "a willow tree bending in autumn wind",
+        "an empty garden swing in gentle breeze",
+    ],
+    # ── Teatre ──
+    "tragèdia": [
+        "a cracked theatrical mask",
+        "a broken crown lying on stone steps",
+        "a dagger with a single crimson drop",
+    ],
+    "comèdia": [
+        "a smiling mask casting a sad shadow",
+        "a jester's bell on a crooked stick",
+    ],
+    # ── Novel·la ──
+    "viatge": [
+        "a sailing ship silhouette on horizon",
+        "a compass rose with worn brass needle",
+        "footprints disappearing into far distance",
+    ],
+    "guerra": [
+        "a broken sword on bare earth",
+        "a dented helmet with torn plume",
+        "a torn battle flag on a silent field",
+    ],
+    "família": [
+        "an empty chair beside a window",
+        "a family portrait frame turned face down",
+        "a child's wooden toy left on worn steps",
+    ],
+    # ── Gòtic / Terror ──
+    "gòtic": [
+        "a gothic castle silhouette against full moonlight",
+        "a stone gargoyle silhouette on a ledge",
+        "a wrought iron gate with fog creeping beyond",
+    ],
+    "terror": [
+        "a single human eye wide in darkness",
+        "a shadow cast with no visible source",
+        "a pale hand emerging from total darkness",
+    ],
+    "misteri": [
+        "an ornate keyhole with light streaming behind",
+        "a magnifying glass over an ancient cipher",
+        "a sealed wooden box with strange carved symbol",
+    ],
+    "castell": [
+        "a gothic castle tower silhouette at dusk",
+        "a drawbridge over a fog-shrouded moat",
+    ],
+    "fantasma": [
+        "a translucent veil floating in empty room",
+        "a rocking chair moving on its own",
+        "a candle flickering without any wind",
+    ],
+    "boira": [
+        "a lighthouse beam cutting through thick fog",
+        "dark trees fading into white coastal mist",
+        "mist rising slowly from still black water",
+    ],
+    "nit": [
+        "a single bright star in vast darkness",
+        "a solitary window glowing in dark building facade",
+        "a crescent moon casting silver on still water",
+    ],
+    "ombra": [
+        "a long shadow with no visible source",
+        "a silhouette projected on a sunlit stone wall",
+        "a candle casting two crossing shadows",
+    ],
+    # ── Art i pintura ──
+    "retrat": [
+        "an ornate oval picture frame, empty, gilded",
+        "a painter's easel with canvas covered by cloth",
+        "a gilded hand mirror lying face down",
+    ],
+    "oval": ["an ornate oval picture frame, empty, gilded"],
+    "pintura": [
+        "a painter's palette with fresh oil colors",
+        "a single bold brushstroke of deep vermillion",
+        "paint dripping from a suspended brush tip",
+    ],
+    "pintor": [
+        "a single paintbrush with wet glistening tip",
+        "a palette knife edge with thick fresh paint",
+    ],
+    "art": [
+        "an artist easel with blank white canvas",
+        "a sculptor's chisel beside a marble fragment",
+    ],
+    "artista": ["a painter's palette with well-used brushes"],
+    "quadre": [
+        "an ornate picture frame casting dramatic shadow",
+        "a canvas with one single bold impasto stroke",
+    ],
+    "tela": ["a stretched canvas on worn wooden frame"],
+    "cavallet": ["an artist easel silhouette in studio light"],
+    # ── Oriental ──
+    "zen": [
+        "a stone garden with precisely raked sand patterns",
+        "a ceramic tea bowl on woven tatami",
+        "an enso circle drawn in single brushstroke",
+        "a single smooth river stone on raked gravel",
+    ],
+    "bushido": [
+        "a katana blade reflecting moonlight",
+        "a samurai helmet with crescent moon crest",
+        "cherry blossoms falling onto a still blade",
+    ],
+    "bambú": [
+        "bamboo stalks disappearing into mountain mist",
+        "a single bamboo shoot breaking through cracked stone",
+    ],
+    "buda": [
+        "a bodhi tree with vast spreading roots",
+        "a lotus emerging from dark muddy water",
+        "an empty meditation cushion in bare room",
+    ],
+    "sutra": [
+        "a lotus emerging from perfectly dark water",
+        "wooden prayer beads arranged in a circle",
+        "an ancient palm leaf manuscript on silk",
+    ],
+    "foc": [
+        "a single match at the instant of igniting",
+        "embers glowing deep orange in darkness",
+        "dancing flames reflected in still water",
+    ],
+    "infern": [
+        "flames rising from cracked earth below",
+        "a cracked earth surface revealing fire beneath",
+    ],
+    "sacrifici": [
+        "hands releasing a white bird skyward",
+        "a broken sword laid upon a stone altar",
+    ],
+    "obsessió": [
+        "a moth spiraling helplessly toward a flame",
+        "a clock with hands spinning wildly",
+        "an eye in deep shadow staring unblinking",
+    ],
+    # ── Epopeia ──
+    "heroi": [
+        "a lone warrior's shadow stretching at dusk",
+        "a hero's worn sandal on ancient stone step",
+        "a shield and bronze spear crossed",
+    ],
+    "déus": [
+        "lightning bolt descending from dark clouds",
+        "Mount Olympus peak glimpsed through clouds",
+        "a divine hand reaching through parting clouds",
+    ],
+    "batalla": [
+        "a single ancient warrior helmet in profile",
+        "arrows lodged deep in a wooden shield",
+        "a bronze war horn silhouette",
+    ],
 }
 
 
@@ -261,15 +649,17 @@ ESTIL:
 - Colors limitats (2-3 màxim)
 - Inspiració: pòsters de pel·lícules minimalistes, il·lustració editorial, art japonès
 
-EXEMPLES DE BONS SÍMBOLS FIGURATIUS:
-- Filosofia del temps: rellotge de sorra, espelma consumint-se
-- Estoïcisme: columna grega, cadenes trencades
-- Presó/deure: clau antiga, barrots amb llum
-- Poesia: ploma amb tinta, flor delicada
-- Teatre: màscara, focus de llum
-- Novel·la: llibre obert, finestra
-- Oriental: flor de cirerer, pinzell de tinta
-- Epopeia: casc antic, espasa
+EXEMPLES DE BONS SÍMBOLS FIGURATIUS (varietat és clau, MAI repetir entre obres):
+- Filosofia estoica: tauleta de cera romana, anell de bronze, capa sobre banc buit
+- Temps i mortalitat: rellotge d'aigua, fil d'or desfent-se, rellotge de butxaca aturat
+- Llibertat: gàbia oberta, estel sense fil, cadenes dissolent-se en fum
+- Poesia: lira amb llorer, ploma projectant ombra de rosa, tinter amb gota suspesa
+- Teatre: corona trencada en graons, daga amb una sola gota
+- Novel·la/gòtic: porta de ferro entreoberta, gàrgola en silenci, fanals en boira
+- Oriental: jardí zen amb sorra rastrejada, bol de te sobre tatami, enso en pinzellada
+- Epopeia: sandàlia d'heroi en pedra antiga, corn de guerra, casc de guerrer
+- Terror: mà emergint de la foscor, finestra solitària il·luminada, ombra sense origen
+- Art: pinzellada única de vermell intens, cisell al costat de fragment de marbre
 
 MAI:
 - Text o lletres
@@ -279,6 +669,19 @@ MAI:
 
     def _obtenir_paleta(self, genere: str) -> PaletaGenere:
         return PALETES.get(genere, PALETES["NOV"])
+
+    def _seleccionar_simbol(self, opcions: list[str], metadata: dict) -> str:
+        """Selecciona un símbol de la llista d'opcions basat en un hash de l'obra.
+
+        Usa un hash determinista de títol+autor per garantir que la mateixa obra
+        sempre rep el mateix símbol, però obres diferents amb el mateix tema
+        reben símbols diferents.
+        """
+        if len(opcions) == 1:
+            return opcions[0]
+        clau = f"{metadata.get('titol', '')}-{metadata.get('autor', '')}".lower()
+        h = int(hashlib.md5(clau.encode()).hexdigest(), 16)
+        return opcions[h % len(opcions)]
 
     def _interpretar_obra_amb_claude(self, metadata: dict) -> str | None:
         """Usa Claude per interpretar l'obra i suggerir un símbol visual apropiat."""
@@ -348,17 +751,17 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
         tema_trobat = None
 
         # 1. PRIORITAT MÀXIMA: Buscar paraules clau al TÍTOL (més específic)
-        for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
+        for clau, opcions in SIMBOLS_TEMATICS.items():
             if clau in titol:
-                simbol = simbol_candidat
+                simbol = self._seleccionar_simbol(opcions, metadata)
                 tema_trobat = f"títol ({clau})"
                 break
 
         # 2. Si no, buscar a la DESCRIPCIÓ (context de l'obra)
         if not simbol:
-            for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
+            for clau, opcions in SIMBOLS_TEMATICS.items():
                 if clau in descripcio:
-                    simbol = simbol_candidat
+                    simbol = self._seleccionar_simbol(opcions, metadata)
                     tema_trobat = f"descripció ({clau})"
                     break
 
@@ -367,15 +770,16 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
             for tema in temes:
                 tema_lower = tema.lower()
                 if tema_lower in SIMBOLS_TEMATICS:
-                    simbol = SIMBOLS_TEMATICS[tema_lower]
+                    opcions = SIMBOLS_TEMATICS[tema_lower]
+                    simbol = self._seleccionar_simbol(opcions, metadata)
                     tema_trobat = f"tema ({tema})"
                     break
 
         # 4. Si no, buscar per l'AUTOR (per estils característics)
         if not simbol:
-            for clau, simbol_candidat in SIMBOLS_TEMATICS.items():
+            for clau, opcions in SIMBOLS_TEMATICS.items():
                 if clau in autor:
-                    simbol = simbol_candidat
+                    simbol = self._seleccionar_simbol(opcions, metadata)
                     tema_trobat = f"autor ({clau})"
                     break
 
@@ -387,18 +791,47 @@ Respon NOMÉS amb l'objecte en anglès, sense explicacions."""
                 tema_trobat = "interpretació IA"
 
         # 6. Símbols per defecte segons gènere (només si res més funciona)
-        simbols_defecte = {
-            "FIL": "a single ancient oil lamp glowing softly",
-            "POE": "a quill pen with ink drop",
-            "TEA": "a spotlight beam on empty stage",
-            "NOV": "an old leather-bound book slightly open",
-            "SAG": "rays of light through stained glass",
-            "ORI": "a single cherry blossom branch",
-            "EPO": "an ancient bronze helmet in profile",
+        simbols_defecte: dict[str, list[str]] = {
+            "FIL": [
+                "a single ancient oil lamp glowing softly",
+                "a philosopher's stone on aged parchment",
+                "an abacus with wooden beads",
+            ],
+            "POE": [
+                "a quill pen with ink drop suspended",
+                "a dried pressed flower between pages",
+                "a nautilus shell cross section",
+            ],
+            "TEA": [
+                "a spotlight beam on empty dark stage",
+                "a curtain rope with golden tassel",
+                "theatrical footlights in a row",
+            ],
+            "NOV": [
+                "an old leather-bound book slightly open",
+                "a pair of reading glasses on worn wood",
+                "a bookmark ribbon trailing from closed book",
+            ],
+            "SAG": [
+                "rays of light through stained glass",
+                "a sacred chalice with soft glow",
+                "a stone cathedral rose window silhouette",
+            ],
+            "ORI": [
+                "a stone lantern in misty garden",
+                "a pine branch heavy with fresh snow",
+                "a crane in flight over still water",
+            ],
+            "EPO": [
+                "an ancient bronze helmet in profile",
+                "a stone tablet with weathered inscription",
+                "a war chariot wheel fragment",
+            ],
         }
 
         if not simbol:
-            simbol = simbols_defecte.get(genere, simbols_defecte["NOV"])
+            opcions_defecte = simbols_defecte.get(genere, simbols_defecte["NOV"])
+            simbol = self._seleccionar_simbol(opcions_defecte, metadata)
             tema_trobat = "gènere per defecte"
 
         # Construir prompt figuratiu minimalista
