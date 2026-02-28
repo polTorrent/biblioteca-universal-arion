@@ -1,15 +1,22 @@
 obra:
-  titol: "Rubaiyat (selecció: 75 quartetes)"
-  titol_original: "رباعیات عمر خیام"
-  autor: "Omar Khayyam"
-  autor_original: "عمر خیّام"
-  traductor: "Editorial Clàssica"
-  any_original: "s. XI-XII"
+  titol: 'Rubaiyat (selecció: 75 quartetes)'
+  titol_original: رباعیات عمر خیام
+  autor: Omar Khayyam
+  autor_original: عمر خیّام
+  traductor: Editorial Clàssica
+  any_original: s. XI-XII
   any_traduccio: 2026
-  llengua_original: "persa"
-  descripcio: "Selecció de 75 quartetes (rubaiyat) del poeta, matemàtic i astrònom persa Omar Khayyam, en la versió anglesa d'Edward FitzGerald (1a edició, 1859). Poemes sobre la fugacitat de la vida, el plaer del vi, l'amor, el destí i la recerca de sentit davant la mort."
-  font: "Project Gutenberg, EBook #246"
-  nota_edicio: "Versió anglesa d'Edward FitzGerald (1a edició, 1859). L'original persa és un corpus dispers de quartetes atribuïdes a Khayyam; FitzGerald en va seleccionar i adaptar 75 en una seqüència poètica coherent."
+  llengua_original: anglès
+  descripcio: Selecció de 75 quartetes (rubaiyat) del poeta, matemàtic i astrònom
+    persa Omar Khayyam, en la versió anglesa d'Edward FitzGerald (1a edició, 1859).
+    Poemes sobre la fugacitat de la vida, el plaer del vi, l'amor, el destí i la recerca
+    de sentit davant la mort.
+  font: 'Project Gutenberg, EBook #246'
+  nota_edicio: Versió anglesa d'Edward FitzGerald (1a edició, 1859). L'original persa
+    és un corpus dispers de quartetes atribuïdes a Khayyam; FitzGerald en va seleccionar
+    i adaptar 75 en una seqüència poètica coherent.
+  estadistiques:
+    paraules_traduccio: 667
 seccions: 75
 estadistiques:
   paraules_original: 0
@@ -17,6 +24,22 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: revisat
+  qualitat: 7.0
+  data_revisio: '2026-02-28'
+avaluacio_final:
+  data: '2026-02-28T02:30:19.741718'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 9
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 9
