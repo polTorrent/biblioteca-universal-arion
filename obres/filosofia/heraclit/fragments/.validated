@@ -1,0 +1,18 @@
+validat: true
+data: "2026-03-01"
+puntuacio: 8.6
+dimensions:
+  fidelitat: 8.5
+  veu_autor: 8.5
+  fluidesa: 8.8
+validador: "Claude (Anthropic) — supervisió editorial"
+notes: |
+  Traducció de 25 fragments seleccionats (DK 1-126) de gran qualitat.
+  Punts forts: laconisme oracular preservat, terminologia filosòfica tractada
+  amb coherència (Lògos, Foc, Natura, Comú amb majúscules), tria lèxica
+  excel·lent ("seny" per σωφρονεῖν, "esdevenir" per γενέσθαι, "etern-viu"
+  per ἀείζωον). Glossari de 11 termes complet amb definicions, transliteracions
+  i referències creuades. Notes crítiques acadèmiques (15) amb context
+  historicofil·losòfic. Lleugers punts de millora: DK 12 podria incloure
+  el sentit d'"ἐπιρρεῖ" (fluir sobre els qui hi entren), DK 119 és
+  marginalment menys lacònic que l'original de 3 mots.

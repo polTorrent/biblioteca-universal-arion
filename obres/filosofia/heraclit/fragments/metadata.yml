@@ -30,9 +30,13 @@ obra:
     notes: 15
     termes_glossari: 11
   revisio:
-    estat: "revisat"
-    qualitat: 8
-    data: "2026-01-26"
+    estat: "validat"
+    qualitat: 8.6
+    data_revisio: "2026-03-01"
+    dimensions:
+      fidelitat: 8.5
+      veu_autor: 8.5
+      fluidesa: 8.8
   context:
     tradicio: "filosofia presocràtica"
     influencies:
