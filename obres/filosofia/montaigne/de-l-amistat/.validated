@@ -1,0 +1,14 @@
+validat: true
+data: 2026-03-01
+puntuacio_global: 8.2
+dimensions:
+  fidelitat: 8.0
+  veu_autor: 8.5
+  fluidesa: 8.0
+notes_validacio: >
+  Traducció molt fidel i literàriament aconseguida de l'assaig XXVII del Llibre I
+  dels Essais. L'estil discursiu i íntim de Montaigne es preserva amb naturalitat.
+  La famosa sentència "Perquè era ell, perquè era jo" és impecable. Aparell crític
+  complet amb 26 notes i glossari de 12 termes. Única observació menor: interpolació
+  "[per consultar-lo]" a la l.98 on l'original diu "où je ne le trouve à dire".
+validador: claude
