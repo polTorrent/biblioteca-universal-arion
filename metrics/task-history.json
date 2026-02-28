@@ -967,22 +967,6 @@
   "translate_cd-biblioteca-universal-arion--python3-scriptstraduir_p": {
     "events": [
       {
-        "timestamp": 1772212528.1644971,
-        "result": "created"
-      },
-      {
-        "timestamp": 1772214321.5502892,
-        "result": "created"
-      },
-      {
-        "timestamp": 1772214321.667011,
-        "result": "created"
-      },
-      {
-        "timestamp": 1772216121.9053645,
-        "result": "created"
-      },
-      {
         "timestamp": 1772216122.0233812,
         "result": "created"
       },
@@ -1044,6 +1028,22 @@
       },
       {
         "timestamp": 1772243124.202735,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772248526.7633264,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772248526.883811,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772248527.0029435,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772253921.631975,
         "result": "created"
       }
     ],

@@ -7,14 +7,16 @@
   },
   "timestamps": {
     "inici": "2026-02-28T02:47:10.512300",
-    "ultima_activitat": "2026-02-28T04:05:28.874719"
+    "ultima_activitat": "2026-02-28T06:03:13.580868"
   },
-  "fase_actual": "anotacio",
+  "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
     "chunking",
-    "traduccio"
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 21,
@@ -45,7 +47,7 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 5.23,
+    "qualitat_mitjana": 5.3,
     "temps_total_min": 0.0
   },
   "errors": [
