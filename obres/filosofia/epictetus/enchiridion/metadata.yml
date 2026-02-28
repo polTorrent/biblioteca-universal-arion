@@ -18,6 +18,7 @@ estadistiques:
   termes_glossari: 5
 
 revisio:
-  estat: "revisat"
-  qualitat: 8.5
-  data_revisio: "2026-01-25"
+  estat: "validat-parcial"
+  qualitat: 7.3
+  data_revisio: "2026-03-01"
+  notes: "5/53 capítols traduïts. 3 omissions dins dels capítols traduïts pendents de correcció."
