@@ -1,0 +1,44 @@
+{
+  "sessio_id": "matsuo-bashō-oku-no-hosomichi-(el-2026-02-28",
+  "obra": {
+    "autor": "Matsuo Bashō",
+    "titol": "Oku no Hosomichi (El camí estret cap al nord profund)",
+    "llengua": "japonès"
+  },
+  "timestamps": {
+    "inici": "2026-02-28T00:51:26.868553",
+    "ultima_activitat": "2026-02-28T02:01:49.363962"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 10,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 4.7,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}
