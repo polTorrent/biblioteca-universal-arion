@@ -406,3 +406,621 @@ Die historische Widerlegung als die endgültige. — Ehemals suchte man zu bewei
 
     „In hoc signo vinces“. — So vorgeschritten Europa auch sonst sein mag: in religiösen Dingen hat es noch nicht die freisinnige Naivität der alten Brahmanen erreicht, zum Zeichen, dass in Indien vor vier Jahrtausenden mehr gedacht wurde und mehr Lust am Denken vererbt zu werden pflegte, als jetzt unter uns. Jene Brahmanen nämlich glaubten erstens, dass die Priester mächtiger seien, als die Götter, und zweitens, dass die Bräuche es seien, worin die Macht der Priester begriffen liege: weshalb ihre Dichter nicht müde wurden, die Bräuche (Gebete, Zeremonien, Opfer, Lieder, Metren) als die eigentlichen Geber alles Guten zu preisen. Wie viel Dichterei und Aberglaube hier auch immer dazwischengelaufen sein mag: die Sätze sind wahr! Einen Schritt weiter: und man warf die Götter bei Seite, — was Europa auch einmal tun muss! Noch einen Schritt weiter: und man hatte auch die Priester und Vermittler nicht mehr nötig, und der Lehrer der Religion der Selbsterlösung, Buddha, trat auf: — wie ferne ist Europa noch von dieser Stufe der Kultur! Wenn endlich auch alle Bräuche und Sitten vernichtet sind, auf welche die Macht der Götter, der Priester und Erlöser sich stützt, wenn also die Moral im alten Sinne gestorben sein wird: dann kommt — ja was kommt dann? Doch raten wir nicht herum, sondern sehen wir zunächst zu, dass Europa nachholt, was in Indien, unter dem Volke der Denker, schon vor einigen Jahrtausenden als Gebot des Denkens getan wurde! Es gibt jetzt vielleicht zehn bis zwanzig Millionen Menschen unter den verschiedenen Völkern Europa’s, welche nicht mehr „an Gott glauben“, — ist es zu viel gefordert, dass sie einander ein Zeichen geben? Sobald sie sich derartig erkennen, werden sie sich auch zu erkennen geben, — sie werden sofort eine Macht in Europa sein und, glücklicherweise, eine Macht zwischen den Völkern! Zwischen den Ständen! Zwischen Arm und Reich! Zwischen Befehlenden und Unterworfenen! Zwischen den unruhigsten und den ruhigsten, beruhigendsten Menschen!
 
+
+---
+
+
+## Fünftes Buch
+
+### 423. Im großen Schweigen
+
+Im großen Schweigen. — [Text: veure traducció catalana]
+
+### 424. Für wen die Wahrheit da ist
+
+Für wen die Wahrheit da ist. — [Text: veure traducció catalana]
+
+### 425. Wir Götter in der Verbannung!
+
+Wir Götter in der Verbannung!. — [Text: veure traducció catalana]
+
+### 426. Farbenblindheit der Denker
+
+Farbenblindheit der Denker. — [Text: veure traducció catalana]
+
+### 427. Die Verschönerung der Wissenschaft
+
+Die Verschönerung der Wissenschaft. — [Text: veure traducció catalana]
+
+### 428. Zwei Arten Moralisten
+
+Zwei Arten Moralisten. — [Text: veure traducció catalana]
+
+### 429. Die neue Leidenschaft
+
+Die neue Leidenschaft. — [Text: veure traducció catalana]
+
+### 430. Auch heldenhaft
+
+Auch heldenhaft. — [Text: veure traducció catalana]
+
+### 431. Die Meinungen der Gegner
+
+Die Meinungen der Gegner. — [Text: veure traducció catalana]
+
+### 432. Forscher und Versucher
+
+Forscher und Versucher. — [Text: veure traducció catalana]
+
+### 433. Mit neuen Augen sehen
+
+Mit neuen Augen sehen. — [Text: veure traducció catalana]
+
+### 434. Fürsprache einlegen
+
+Fürsprache einlegen. — [Text: veure traducció catalana]
+
+### 435. Nicht unvermerkt zu Grunde gehen
+
+Nicht unvermerkt zu Grunde gehen. — [Text: veure traducció catalana]
+
+### 436. Kasuistisch
+
+Kasuistisch. — [Text: veure traducció catalana]
+
+### 437. Vorrechte
+
+Vorrechte. — [Text: veure traducció catalana]
+
+### 438. Mensch und Dinge
+
+Mensch und Dinge. — [Text: veure traducció catalana]
+
+### 439. Merkmale des Glücks
+
+Merkmale des Glücks. — [Text: veure traducció catalana]
+
+### 440. Nicht entsagen
+
+Nicht entsagen. — [Text: veure traducció catalana]
+
+### 441. Warum das Nächste uns immer ferner wird
+
+Warum das Nächste uns immer ferner wird. — [Text: veure traducció catalana]
+
+### 442. Die Regel
+
+Die Regel. — [Text: veure traducció catalana]
+
+### 443. Zur Erziehung
+
+Zur Erziehung. — [Text: veure traducció catalana]
+
+### 444. Verwunderung über Widerstand
+
+Verwunderung über Widerstand. — [Text: veure traducció catalana]
+
+### 445. Worin sich die Edelsten verrechnen
+
+Worin sich die Edelsten verrechnen. — [Text: veure traducció catalana]
+
+### 446. Rangordnung
+
+Rangordnung. — [Text: veure traducció catalana]
+
+### 447. Meister und Schüler
+
+Meister und Schüler. — [Text: veure traducció catalana]
+
+### 448. Die Wirklichkeit ehren
+
+Die Wirklichkeit ehren. — [Text: veure traducció catalana]
+
+### 449. Wo sind die Bedürftigen des Geistes?
+
+Wo sind die Bedürftigen des Geistes?. — [Text: veure traducció catalana]
+
+### 450. Die Lockung der Erkenntnis
+
+Die Lockung der Erkenntnis. — [Text: veure traducció catalana]
+
+### 451. Wem ein Hofnarr nötig ist
+
+Wem ein Hofnarr nötig ist. — [Text: veure traducció catalana]
+
+### 452. Ungeduld
+
+Ungeduld. — [Text: veure traducció catalana]
+
+### 453. Moralisches Interregnum
+
+Moralisches Interregnum. — [Text: veure traducció catalana]
+
+### 454. Zwischenrede
+
+Zwischenrede. — [Text: veure traducció catalana]
+
+### 455. Die erste Natur
+
+Die erste Natur. — [Text: veure traducció catalana]
+
+### 456. Eine werdende Tugend
+
+Eine werdende Tugend. — [Text: veure traducció catalana]
+
+### 457. Letzte Schweigsamkeit
+
+Letzte Schweigsamkeit. — [Text: veure traducció catalana]
+
+### 458. Das große Loos
+
+Das große Loos. — [Text: veure traducció catalana]
+
+### 459. Die Großmütigkeit des Denkers
+
+Die Großmütigkeit des Denkers. — [Text: veure traducció catalana]
+
+### 460. Seine gefährlichen Stunden ausnützen
+
+Seine gefährlichen Stunden ausnützen. — [Text: veure traducció catalana]
+
+### 461. Hic Rhodus, hic salta
+
+Hic Rhodus, hic salta. — [Text: veure traducció catalana]
+
+### 462. Langsame Kuren
+
+Langsame Kuren. — [Text: veure traducció catalana]
+
+### 463. Am siebenten Tage
+
+Am siebenten Tage. — [Text: veure traducció catalana]
+
+### 464. Scham des Schenkenden
+
+Scham des Schenkenden. — [Text: veure traducció catalana]
+
+### 465. Bei einer Begegnung
+
+Bei einer Begegnung. — [Text: veure traducció catalana]
+
+### 466. Verlust im Ruhme
+
+Verlust im Ruhme. — [Text: veure traducció catalana]
+
+### 467. Zweimal Geduld
+
+Zweimal Geduld. — [Text: veure traducció catalana]
+
+### 468. Das Reich der Schönheit ist größer
+
+Das Reich der Schönheit ist größer. — [Text: veure traducció catalana]
+
+### 469. Die Unmenschlichkeit des Weisen
+
+Die Unmenschlichkeit des Weisen. — [Text: veure traducció catalana]
+
+### 470. Am Gastmahle Vieler
+
+Am Gastmahle Vieler. — [Text: veure traducció catalana]
+
+### 471. Eine andere Nächstenliebe
+
+Eine andere Nächstenliebe. — [Text: veure traducció catalana]
+
+### 472. Sich nicht rechtfertigen
+
+Sich nicht rechtfertigen. — [Text: veure traducció catalana]
+
+### 473. Wo man sein Haus bauen soll
+
+Wo man sein Haus bauen soll. — [Text: veure traducció catalana]
+
+### 474. Die einzigen Wege
+
+Die einzigen Wege. — [Text: veure traducció catalana]
+
+### 475. Schwerwerden
+
+Schwerwerden. — [Text: veure traducció catalana]
+
+### 476. Am Erntefest des Geistes
+
+Am Erntefest des Geistes. — [Text: veure traducció catalana]
+
+### 477. Von der Skepsis erlöst
+
+Von der Skepsis erlöst. — [Text: veure traducció catalana]
+
+### 478. Gehen wir vorüber
+
+Gehen wir vorüber. — [Text: veure traducció catalana]
+
+### 479. Liebe und Wahrhaftigkeit
+
+Liebe und Wahrhaftigkeit. — [Text: veure traducció catalana]
+
+### 480. Unvermeidlich
+
+Unvermeidlich. — [Text: veure traducció catalana]
+
+### 481. Zwei Deutsche
+
+Zwei Deutsche. — [Text: veure traducció catalana]
+
+### 482. Seinen Umgang suchen
+
+Seinen Umgang suchen. — [Text: veure traducció catalana]
+
+### 483. Überdruss am Menschen
+
+Überdruss am Menschen. — [Text: veure traducció catalana]
+
+### 484. Der eigene Weg
+
+Der eigene Weg. — [Text: veure traducció catalana]
+
+### 485. Ferne Perspektiven
+
+Ferne Perspektiven. — [Text: veure traducció catalana]
+
+### 486. Gold und Hunger
+
+Gold und Hunger. — [Text: veure traducció catalana]
+
+### 487. Scham
+
+Scham. — [Text: veure traducció catalana]
+
+### 488. Gegen die Verschwendung der Liebe
+
+Gegen die Verschwendung der Liebe. — [Text: veure traducció catalana]
+
+### 489. Freunde in der Not
+
+Freunde in der Not. — [Text: veure traducció catalana]
+
+### 490. Diese kleinen Wahrheiten!
+
+Diese kleinen Wahrheiten!. — [Text: veure traducció catalana]
+
+### 491. Auch deshalb Einsamkeit!
+
+Auch deshalb Einsamkeit!. — [Text: veure traducció catalana]
+
+### 492. Unter den Südwinden
+
+Unter den Südwinden. — [Text: veure traducció catalana]
+
+### 493. Auf dem eigenen Baume
+
+Auf dem eigenen Baume. — [Text: veure traducció catalana]
+
+### 494. Letztes Argument des Tapferen
+
+Letztes Argument des Tapferen. — [Text: veure traducció catalana]
+
+### 495. Unsere Lehrer
+
+Unsere Lehrer. — [Text: veure traducció catalana]
+
+### 496. Das böse Prinzip
+
+Das böse Prinzip. — [Text: veure traducció catalana]
+
+### 497. Das reinmachende Auge
+
+Das reinmachende Auge. — [Text: veure traducció catalana]
+
+### 498. Nicht fordern
+
+Nicht fordern. — [Text: veure traducció catalana]
+
+### 499. Der Böse
+
+Der Böse. — [Text: veure traducció catalana]
+
+### 500. Wider den Strich
+
+Wider den Strich. — [Text: veure traducció catalana]
+
+### 501. Sterbliche Seelen
+
+Sterbliche Seelen. — [Text: veure traducció catalana]
+
+### 502. Ein Wort für drei verschiedene Zustände
+
+Ein Wort für drei verschiedene Zustände. — [Text: veure traducció catalana]
+
+### 503. Freundschaft
+
+Freundschaft. — [Text: veure traducció catalana]
+
+### 504. Versöhnen
+
+Versöhnen. — [Text: veure traducció catalana]
+
+### 505. Die Praktischen
+
+Die Praktischen. — [Text: veure traducció catalana]
+
+### 506. Die nötige Austrocknung alles Guten
+
+Die nötige Austrocknung alles Guten. — [Text: veure traducció catalana]
+
+### 507. Gegen die Tyrannei des Wahren
+
+Gegen die Tyrannei des Wahren. — [Text: veure traducció catalana]
+
+### 508. Nicht pathetisch nehmen
+
+Nicht pathetisch nehmen. — [Text: veure traducció catalana]
+
+### 509. Das dritte Auge
+
+Das dritte Auge. — [Text: veure traducció catalana]
+
+### 510. Seinen Tugenden entlaufen
+
+Seinen Tugenden entlaufen. — [Text: veure traducció catalana]
+
+### 511. Die Versucherin
+
+Die Versucherin. — [Text: veure traducció catalana]
+
+### 512. Gegen die Sachen mutig
+
+Gegen die Sachen mutig. — [Text: veure traducció catalana]
+
+### 513. Schranke und Schönheit
+
+Schranke und Schönheit. — [Text: veure traducció catalana]
+
+### 514. An die Stärkeren
+
+An die Stärkeren. — [Text: veure traducció catalana]
+
+### 515. Zunahme der Schönheit
+
+Zunahme der Schönheit. — [Text: veure traducció catalana]
+
+### 516. Seinen Dämon nicht in die Nächsten fahren lassen!
+
+Seinen Dämon nicht in die Nächsten fahren lassen!. — [Text: veure traducció catalana]
+
+### 517. Zur Liebe verführen
+
+Zur Liebe verführen. — [Text: veure traducció catalana]
+
+### 518. Resignation
+
+Resignation. — [Text: veure traducció catalana]
+
+### 519. Betrogen werden
+
+Betrogen werden. — [Text: veure traducció catalana]
+
+### 520. Die ewige Totenfeier
+
+Die ewige Totenfeier. — [Text: veure traducció catalana]
+
+### 521. Ausnahme-Eitelkeit
+
+Ausnahme-Eitelkeit. — [Text: veure traducció catalana]
+
+### 522. Die Weisheit ohne Ohren
+
+Die Weisheit ohne Ohren. — [Text: veure traducció catalana]
+
+### 523. Hinterfragen
+
+Hinterfragen. — [Text: veure traducció catalana]
+
+### 524. Eifersucht der Einsamen
+
+Eifersucht der Einsamen. — [Text: veure traducció catalana]
+
+### 525. Wirkung des Lobes
+
+Wirkung des Lobes. — [Text: veure traducció catalana]
+
+### 526. Nicht Symbol sein wollen
+
+Nicht Symbol sein wollen. — [Text: veure traducció catalana]
+
+### 527. Die Versteckten
+
+Die Versteckten. — [Text: veure traducció catalana]
+
+### 528. Seltenere Enthaltsamkeit
+
+Seltenere Enthaltsamkeit. — [Text: veure traducció catalana]
+
+### 529. Wodurch Menschen und Völker Glanz bekommen
+
+Wodurch Menschen und Völker Glanz bekommen. — [Text: veure traducció catalana]
+
+### 530. Umschweife des Denkers
+
+Umschweife des Denkers. — [Text: veure traducció catalana]
+
+### 531. Die Kunst anders empfinden
+
+Die Kunst anders empfinden. — [Text: veure traducció catalana]
+
+### 532. Die Liebe macht gleich
+
+Die Liebe macht gleich. — [Text: veure traducció catalana]
+
+### 533. Wir Anfänger
+
+Wir Anfänger. — [Text: veure traducció catalana]
+
+### 534. Die kleinen Dosen
+
+Die kleinen Dosen. — [Text: veure traducció catalana]
+
+### 535. Die Wahrheit hat die Macht nötig
+
+Die Wahrheit hat die Macht nötig. — [Text: veure traducció catalana]
+
+### 536. Die Daumenschraube
+
+Die Daumenschraube. — [Text: veure traducció catalana]
+
+### 537. Meisterschaft
+
+Meisterschaft. — [Text: veure traducció catalana]
+
+### 538. Moralischer Irrsinn des Genie's
+
+Moralischer Irrsinn des Genie's. — [Text: veure traducció catalana]
+
+### 539. Wisst ihr auch, was ihr wollt
+
+Wisst ihr auch, was ihr wollt. — [Text: veure traducció catalana]
+
+### 540. Lernen
+
+Lernen. — [Text: veure traducció catalana]
+
+### 541. Wie man versteinern soll
+
+Wie man versteinern soll. — [Text: veure traducció catalana]
+
+### 542. Der Philosoph und das Alter
+
+Der Philosoph und das Alter. — [Text: veure traducció catalana]
+
+### 543. Nicht die Leidenschaft zum Argument der Wahrheit machen
+
+Nicht die Leidenschaft zum Argument der Wahrheit machen. — [Text: veure traducció catalana]
+
+### 544. Wie man jetzt Philosophie treibt
+
+Wie man jetzt Philosophie treibt. — [Text: veure traducció catalana]
+
+### 545. Aber wir glauben euch nicht
+
+Aber wir glauben euch nicht. — [Text: veure traducció catalana]
+
+### 546. Sklave und Idealist
+
+Sklave und Idealist. — [Text: veure traducció catalana]
+
+### 547. Die Tyrannen des Geistes
+
+Die Tyrannen des Geistes. — [Text: veure traducció catalana]
+
+### 548. Der Sieg über die Kraft
+
+Der Sieg über die Kraft. — [Text: veure traducció catalana]
+
+### 549. Selbstflucht
+
+Selbstflucht. — [Text: veure traducció catalana]
+
+### 550. Erkenntnis und Schönheit
+
+Erkenntnis und Schönheit. — [Text: veure traducció catalana]
+
+### 551. Von zukünftigen Tugenden
+
+Von zukünftigen Tugenden. — [Text: veure traducció catalana]
+
+### 552. Die idealische Selbstsucht
+
+Die idealische Selbstsucht. — [Text: veure traducció catalana]
+
+### 553. Auf Umwegen
+
+Auf Umwegen. — [Text: veure traducció catalana]
+
+### 554. Vorschritt
+
+Vorschritt. — [Text: veure traducció catalana]
+
+### 555. Die geringsten genügen schon
+
+Die geringsten genügen schon. — [Text: veure traducció catalana]
+
+### 556. Die guten Vier
+
+Die guten Vier. — [Text: veure traducció catalana]
+
+### 557. Auf einen Feind los
+
+Auf einen Feind los. — [Text: veure traducció catalana]
+
+### 558. Aber auch nicht seine Tugenden verbergen!
+
+Aber auch nicht seine Tugenden verbergen!. — [Text: veure traducció catalana]
+
+### 559. Nicht zu sehr
+
+Nicht zu sehr. — [Text: veure traducció catalana]
+
+### 560. Was uns frei steht
+
+Was uns frei steht. — [Text: veure traducció catalana]
+
+### 561. Sein Glück auch leuchten lassen
+
+Sein Glück auch leuchten lassen. — [Text: veure traducció catalana]
+
+### 562. Die Sesshaften und die Freien
+
+Die Sesshaften und die Freien. — [Text: veure traducció catalana]
+
+### 563. Der Wahn der sittlichen Weltordnung
+
+Der Wahn der sittlichen Weltordnung. — [Text: veure traducció catalana]
+
+### 564. Gleich neben der Erfahrung!
+
+Gleich neben der Erfahrung!. — [Text: veure traducció catalana]
+
+### 565. Würde und Unwissenheit im Bunde
+
+Würde und Unwissenheit im Bunde. — [Text: veure traducció catalana]
+
+### 566. Wohlfeil leben
+
+Wohlfeil leben. — [Text: veure traducció catalana]
+
+### 567. Im Felde
+
+Im Felde. — [Text: veure traducció catalana]
+
+### 568. Dichter und Vogel
+
+Dichter und Vogel. — [Text: veure traducció catalana]
+
+### 569. An die Einsamen
+
+An die Einsamen. — [Text: veure traducció catalana]
+
+### 570. Verluste
+
+Verluste. — [Text: veure traducció catalana]
+
+### 571. Feld-Apotheke der Seele
+
+Feld-Apotheke der Seele. — [Text: veure traducció catalana]
+
+### 572. Das Leben soll uns beruhigen
+
+Das Leben soll uns beruhigen. — [Text: veure traducció catalana]
+
+### 573. Sich häuten
+
+Sich häuten. — [Text: veure traducció catalana]
+
+### 574. Nicht zu vergessen
+
+Nicht zu vergessen. — [Text: veure traducció catalana]
+
+### 575. Wir Luft-Schifffahrer des Geistes!
+
+Wir Luft-Schifffahrer des Geistes!. — [Text: veure traducció catalana]
+
