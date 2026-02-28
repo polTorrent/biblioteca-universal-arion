@@ -1209,5 +1209,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "maintenance_manteniment-setmanal-1-neteja-zoneidentifier-2-verifica": {
+    "events": [
+      {
+        "timestamp": 1772319603.4738543,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
