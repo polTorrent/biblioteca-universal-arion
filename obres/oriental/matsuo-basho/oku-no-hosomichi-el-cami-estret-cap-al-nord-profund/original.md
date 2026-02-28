@@ -1,4 +1,3 @@
-# おくのほそ道 (Oku no Hosomichi)
 ## 松尾芭蕉 (Matsuo Bashō)
 
 **Font**: [Wikisource japonès](https://ja.wikisource.org/wiki/おくのほそ道)
