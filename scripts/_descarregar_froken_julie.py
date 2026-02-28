@@ -3,18 +3,22 @@
 
 import html
 import re
+import sys
 import urllib.request
+from pathlib import Path
+from urllib.error import HTTPError, URLError
 
 
 BASE_URL = "https://runeberg.org/frkjulie/"
 PARTS = ["01.html", "02.html", "03.html", "04.html", "05.html"]
-OUTPUT = "obres/teatre/august-strindberg/froken-julie-la-senyoreta-julia/original.md"
+OUTPUT = Path("obres/teatre/august-strindberg/froken-julie-la-senyoreta-julia/original.md")
 
 
 def fetch_page(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     with urllib.request.urlopen(req, timeout=30) as resp:
-        return resp.read().decode("utf-8")
+        charset = resp.headers.get_content_charset() or "utf-8"
+        return resp.read().decode(charset)
 
 
 def html_to_text(raw_html: str) -> str:
@@ -65,19 +69,23 @@ def main() -> None:
 ---
 
 """
-    parts_text = []
+    parts_text: list[str] = []
     for part in PARTS:
         url = BASE_URL + part
         print(f"  Descarregant {url}...")
-        raw = fetch_page(url)
+        try:
+            raw = fetch_page(url)
+        except (HTTPError, URLError, TimeoutError) as e:
+            print(f"    Error descarregant {url}: {e}", file=sys.stderr)
+            sys.exit(1)
         text = html_to_text(raw)
         parts_text.append(text)
         print(f"    {len(text)} caràcters")
 
     full_text = header + "\n\n---\n\n".join(parts_text)
 
-    with open(OUTPUT, "w", encoding="utf-8") as f:
-        f.write(full_text + "\n")
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(full_text + "\n", encoding="utf-8")
 
     word_count = len(full_text.split())
     print(f"\nEscrit a {OUTPUT}")
