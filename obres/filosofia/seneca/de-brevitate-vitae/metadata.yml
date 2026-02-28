@@ -11,25 +11,25 @@ obra:
   estadistiques:
     paraules_traduccio: 5770
 revisio:
-  estat: revisat
-  data_revisio: '2026-02-25'
-  qualitat: 0.0
-  notes_revisio: 'Traducció completa (20 capítols, 101 seccions). Revisada i corregida:
-    5 errors gramaticals resolts. 17 notes crítiques i glossari de 14 termes. Falta
-    portada.'
+  estat: necessita_correccio
+  data_revisio: '2026-03-01'
+  qualitat: 5.5
+  notes_revisio: 'Validació 2026-03-01: 5.5/10 — NO APROVAT. Capítols XIV, XVI, XVIII
+    absents. Meta-comentaris d''agent dins el text. Truncaments a III, VII, IX, XII.
+    Error gramatical (no podias). Glossari i notes excel·lents. 17 notes, 14 termes.'
 avaluacio_final:
-  data: '2026-02-25T13:11:30.541775'
+  data: '2026-03-01'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 60
-  errors_critics: 0
-  errors_alts: 0
+    fidelitat: 5.0
+    veu_autor: 7.5
+    fluidesa: 7.0
+    correccio_linguistica: 6.5
+    coherencia: 4.5
+    global: 5.5
+  total_errors: 9
+  errors_critics: 3
+  errors_alts: 3
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 57
+  correccions_pendents: 9
