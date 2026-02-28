@@ -1109,5 +1109,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_canti-seleccio-20-poemes": {
+    "events": [
+      {
+        "timestamp": 1772262002.1987698,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
