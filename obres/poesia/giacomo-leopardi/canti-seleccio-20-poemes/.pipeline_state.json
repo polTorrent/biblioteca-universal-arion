@@ -7,13 +7,16 @@
   },
   "timestamps": {
     "inici": "2026-02-28T04:12:18.288790",
-    "ultima_activitat": "2026-02-28T05:40:12.569892"
+    "ultima_activitat": "2026-02-28T07:54:02.067351"
   },
-  "fase_actual": "traduccio",
+  "fase_actual": "anotacio",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 24,
@@ -39,16 +42,16 @@
       "chunk_19",
       "chunk_20",
       "chunk_21",
-      "chunk_22"
-    ],
-    "en_curs": "chunk_23",
-    "pendents": [
+      "chunk_22",
+      "chunk_23",
       "chunk_24"
-    ]
+    ],
+    "en_curs": null,
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 4.41,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 4.4,
+    "temps_total_min": 11.74
   },
   "errors": [],
   "warnings": [
