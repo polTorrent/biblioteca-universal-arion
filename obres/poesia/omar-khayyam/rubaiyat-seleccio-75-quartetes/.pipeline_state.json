@@ -1,0 +1,43 @@
+{
+  "sessio_id": "omar-khayyam-rubaiyat-(selecció:--2026-02-28",
+  "obra": {
+    "autor": "Omar Khayyam",
+    "titol": "Rubaiyat (selecció: 75 quartetes)",
+    "llengua": "anglès"
+  },
+  "timestamps": {
+    "inici": "2026-02-28T10:28:13.191546",
+    "ultima_activitat": "2026-02-28T10:53:32.583393"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 12,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8"
+    ],
+    "en_curs": "chunk_9",
+    "pendents": [
+      "chunk_10",
+      "chunk_11",
+      "chunk_12"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 5.37,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}
