@@ -18,8 +18,8 @@ estadistiques:
   paraules_original: 12667
   paraules_traduccio: 13483
   notes: 20
-  termes_glossari: 21
+  termes_glossari: 24
 revisio:
-  estat: pendent_revisio
-  qualitat: 0
-  data_revisio: '2026-02-28'
+  estat: revisat
+  qualitat: 8.3
+  data_revisio: '2026-03-01'

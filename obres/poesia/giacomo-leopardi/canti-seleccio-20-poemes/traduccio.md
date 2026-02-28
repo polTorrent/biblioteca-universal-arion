@@ -2207,7 +2207,7 @@ litoral asperjava, confoses
 i trencades i recobertes
 en pocs instants: d'on sobre aquelles ara pastura
 la cabra, i ciutats noves
-sorgeixen per l'altra banda, als quals escambell
+sorgeixen per l'altra banda, a les quals escambell
 són les sepultes, i les murs prostrades
 l'ardu mont al seu peu quasi trepitja.
 No té natura a la llavor
