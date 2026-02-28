@@ -1,7 +1,3 @@
-# Fröken Julie
-
-**Ett naturalistiskt sorgespel**
-
 *August Strindberg* (1888)
 
 **Font**: [Projekt Runeberg](https://runeberg.org/frkjulie/) — domini públic

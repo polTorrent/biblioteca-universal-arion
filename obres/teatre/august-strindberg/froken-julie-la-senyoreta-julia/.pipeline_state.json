@@ -1,0 +1,57 @@
+{
+  "sessio_id": "august-strindberg-fröken-julie-—-la-se-2026-02-28",
+  "obra": {
+    "autor": "August Strindberg",
+    "titol": "Fröken Julie — La Senyoreta Júlia",
+    "llengua": "suec"
+  },
+  "timestamps": {
+    "inici": "2026-02-28T02:47:10.512300",
+    "ultima_activitat": "2026-02-28T04:05:28.874719"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio"
+  ],
+  "chunks": {
+    "total": 21,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13",
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 5.23,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[03:31:06] Error chunk 12: float() argument must be a string or a real number, not 'NoneType'"
+  ],
+  "warnings": [
+    "[02:47:54] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='suec', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
