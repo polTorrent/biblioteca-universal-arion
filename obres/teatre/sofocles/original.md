@@ -1,4 +1,3 @@
-# Αντιγόνη
 **Autor:** Sòfocles
 **Font:** [wikisource](https://el.wikisource.org/wiki/%CE%91%CE%BD%CF%84%CE%B9%CE%B3%CF%8C%CE%BD%CE%B7)
 **Llengua:** grec
