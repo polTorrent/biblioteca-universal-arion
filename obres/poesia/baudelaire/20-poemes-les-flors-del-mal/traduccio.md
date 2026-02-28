@@ -11,7 +11,7 @@ PREFACI
 
 L'estupidesa, l'error, el pecat, l'avarícia,
 Ocupen els nostres esperits i maltracten els cossos,
-I nodrím els nostres encantadors remordiments,
+I nodrim els nostres encantadors remordiments,
 Com els captaires alimenten els seus paràsits.
 
 Els nostres pecats són tossuts, els penediments covards;
@@ -36,7 +36,6 @@ Que premem ben fort com una taronja vella.
 
 Apinyat, formigant, com un milió de cucs,
 En els nostres cervells fa gresca un poble de dimonis,
-
 I quan respirem, la Mort dins dels nostres pulmons
 Baixa, riu invisible, amb queixes sordes.
 
@@ -47,7 +46,7 @@ La tela banal dels nostres mesquins destins,
 
 Però entre els xacals, les panteres, les llices,
 Els simis, els escorpins, els voltors, les serps,
-Els monstres que udolen, bramen, grunyeixen, s'arrosseguen,
+Els monstres que xisclen, udolen, grunyeixen, s'arrosseguen,
 A la casa de feres infame dels nostres vicis,
 
 N'hi ha un de més lleig, més dolent, més immund!
@@ -154,7 +153,7 @@ On mai no mossegaran la terra i els inferns,
 I que cal, per teixir la meva corona mística,
 Abraçar tots els temps i tots els universos.
 
-Més les joies perdudes de l'antiga Palmira,
+Mes les joies perdudes de l'antiga Palmira,
 Els metalls desconeguts, les perles de la mar,
 Muntats per la vostra mà, no podrien bastar
 A aquest bell diadema enlluernador i clar;
@@ -181,7 +180,7 @@ Aquests reis de l'atzur, maldestres i avergonyits,
 Deixen que llurs grans ales blanques
 S'arrosseguin al costat com si fossin rems.
 
-Aquest viatger alat, com és feixuc i covard!
+Aquest viatger alat, com és maldestre i moll!
 Ell, que abans era tan bell, com és còmic i lleig!
 Un li punxa el bec amb una pipa,
 L'altre imita, coixejant, l'invàlid que volava!
@@ -200,7 +199,6 @@ ELEVACIÓ
 
 Per damunt dels estanys, per damunt de les valls,
 De les muntanyes, dels boscos, dels núvols, dels mars,
-
 Més enllà del sol, més enllà dels èters,
 Més enllà dels confins de les esferes estelades,
 
@@ -245,7 +243,7 @@ Hi ha perfums frescos com carn d'infants,
 Dolços com els oboès, verds com les prades,
 —I d'altres, corromputs, rics i triomfants,
 
-Amb l'expansió de les coses infinides,
+Amb l'expansió de les coses infinites,
 Com l'ambre, el musc, el benjuí i l'encens,
 Que canten els transports de l'esperit i els sentits.
 
@@ -268,7 +266,7 @@ I mai no ploro i mai no ric.
 
 Els poetes, davant les meves grans actituds,
 Que semblo prendre dels monuments més altius,
-Consumiran llurs dies en austeres estudis;
+Consumiran llurs dies en austers estudis;
 
 Car tinc, per fascinar aquests dòcils amants,
 Purs miralls que fan totes les coses més belles:
@@ -296,7 +294,7 @@ El Destí encantat segueix les teves faldilles com un gos;
 Sembres a l'atzar l'alegria i els desastres,
 I ho governes tot i no respons de res.
 
-Camines sobre morts, Bellesa, dels quals et moques;
+Camines sobre morts, Bellesa, dels quals et burles;
 De les teves joies l'Horror no és la menys encisadora,
 I l'Assassinat, entre els teus més estimats penjolls,
 Sobre el teu ventre orgullós dansa amorosament.
@@ -347,7 +345,7 @@ On els vaixells, lliscant entre l'or i el tafetà,
 Obren els braços vastos per abraçar la glòria
 D'un cel pur on tremola l'eterna calentor.
 
-Enfondaré el meu cap ebri d'embriaguesa
+Enfondaré el meu cap enamorat d'embriaguesa
 En aquest negre oceà on l'altre roman tancat;
 I el meu esperit subtil que el balandreig acarona
 Us sabrà retrobar, oh fecunda peresa,
@@ -375,11 +373,11 @@ HARMONIA DEL VESPRE
 Ja vénen els temps quan vibrant sobre la tija
 Cada flor s'evapora com un encenser;
 Els sons i les fragàncies giren en l'aire del vespre;
-Vals malenconiós i languinós vertigen!
+Vals malenconiós i llanguorós vertigen!
 
 Cada flor s'evapora com un encenser;
 El violí tremola com un cor que s'afligeix;
-Vals malenconiós i languinós vertigen!
+Vals malenconiós i llanguorós vertigen!
 El cel és trist i bell com un gran reposador.
 
 El violí tremola com un cor que s'afligeix,
@@ -459,7 +457,7 @@ Escoltar, vora el foc que palpita i que fuma,
 Els records llunyans lentament alçar-se
 Al so dels carillons que canten en la boira.
 
-Benaurada la campana de veu potent
+Benaurada la campana de gorja vigorosa
 Que, malgrat la vellesa, desperta i robusta,
 Llança fidelment el seu crit religiós,
 Com un vell soldat que vetlla sota la tenda!
@@ -467,16 +465,41 @@ Com un vell soldat que vetlla sota la tenda!
 Jo, la meva ànima és esquerda, i quan en els seus turments
 Vol poblar amb els seus cants l'aire fred de les nits,
 Sovint passa que la seva veu afeblida
-
 Sembla l'esbufec espès d'un ferit que s'oblida
 A la vora d'un llac de sang, sota un gran munt de morts,
-I que mor, sense moure's, en una agonia immensa!
+I que mor, sense moure's, en uns esforços immensos!
 
 ---
 
 ## 12. Spleen (Quan el cel baix i pesat…)
 
-*[El text original no estava disponible a la font.]*
+## LXXVIII
+SPLEEN
+
+Quan el cel baix i pesat pesa com una tapadora
+Sobre l'esperit que gemega presa dels llargs avorriments,
+I de l'horitzó abraçant tot el cercle
+Ens aboca un dia negre més trist que les nits;
+
+Quan la terra es transforma en un calabós humit,
+On l'Esperança, com un rat-penat,
+Va batent els murs amb la seva ala tímida
+I es colpeja el cap contra els sostres podrits;
+
+Quan la pluja estenent les seves immenses esteles
+D'una vasta presó imita els barrots,
+I un poble mut d'infames aranyes
+Ve a estendre les seves xarxes al fons dels nostres cervells,
+
+Unes campanes de sobte salten amb fúria
+I llancen cap al cel un horrible udol,
+Com esperits errants i sense pàtria
+Que es posen a gemegar obstinadament.
+
+— I llargs cotxes fúnebres, sense tambors ni música,
+Desfilen lentament dins la meva ànima; l'Esperança,
+Vençuda, plora, i l'Angoixa atroç, despòtica,
+Sobre el meu crani inclinat clava la seva bandera negra.
 
 ---
 
@@ -528,7 +551,7 @@ I quan no tinguis per alcova i mansió
 Més que un cau plujós i una fossa fonda;
 
 Quan la pedra, oprimint el teu pit temorós
-I els teus flancs que allangueix una dolça mandra,
+I els teus flancs que suavitza una encantadora indolència,
 Impedirà que el teu cor bategui i vulgui,
 I els teus peus de córrer llur cursa aventurera,
 
@@ -549,7 +572,7 @@ EL GAT
 
 Vine, gat meu gentil, al meu cor enamorat;
 Retira les ungles de la pota,
-I deixa'm submergir-me en els teus ulls bellíssims,
+I deixa'm submergir-me en els teus bells ulls,
 Barreja de metall i d'àgata.
 
 Quan els meus dits acaronen amb delícia
@@ -625,7 +648,7 @@ L'HOME I LA MAR
 Home lliure, sempre estimaràs la mar!
 La mar és el teu mirall; contemples la teva ànima
 En el desplegament infinit de la seva onada,
-I el teu esperit no és abisme menys amarg.
+I el teu esperit no és un abisme menys amarg.
 
 Et complaus a enfonsar-te en el si de la teva imatge;
 L'abraces amb ulls i braços, i el cor
@@ -661,7 +684,7 @@ Dolor meva, dona'm la mà; vine cap aquí,
 
 Lluny d'ells. Veus com s'inclinen els Anys difunts,
 Als balcons del cel, amb vestits antics;
-Veus com sorgeix del fons de les aigües el Penediment somrient;
+Veus com sorgeix del fons de les aigües la Recança somrient;
 
 El Sol moribund que s'adorm sota un arc,
 I, com un llarg sudari que s'arrossega a l'Orient,
@@ -680,7 +703,7 @@ Les Dolors vibrants en el teu cor ple de temor
 Es clavaran aviat com en una diana;
 
 El Plaer vaporós fugirà cap a l'horitzó
-Com una sílfi cap al fons del teló;
+Com una sílfide cap al fons del teló;
 Cada instant et devora un tros de la delícia
 Concedida a cada home per tota la seva estació.
 
