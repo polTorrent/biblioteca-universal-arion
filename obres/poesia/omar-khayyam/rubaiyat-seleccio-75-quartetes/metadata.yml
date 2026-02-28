@@ -15,31 +15,35 @@ obra:
   nota_edicio: Versió anglesa d'Edward FitzGerald (1a edició, 1859). L'original persa
     és un corpus dispers de quartetes atribuïdes a Khayyam; FitzGerald en va seleccionar
     i adaptar 75 en una seqüència poètica coherent.
-  estadistiques:
-    paraules_traduccio: 2118
 seccions: 75
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 2584
+  paraules_traduccio: 2118
+  quartetes_traduides: 62
+  quartetes_pendents: 13
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: revisat
-  qualitat: 0.0
+  estat: necessita_correccio
+  qualitat: 4.0
   data_revisio: '2026-02-28'
 avaluacio_final:
-  data: '2026-02-28T10:24:34.213237'
+  data: '2026-02-28'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 26
-  errors_critics: 0
-  errors_alts: 0
+    fidelitat: 3.0
+    veu_autor: 6.0
+    fluidesa: 5.0
+    correccio_linguistica: 6.0
+    coherencia: 5.0
+    global: 4.0
+  total_errors: 13
+  errors_critics: 3
+  errors_alts: 7
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 23
+  correccions_pendents: 10
+  notes_supervisio: >
+    13 quartetes falten (XXXI-XXXVI, LXI-LXVI, LXXV).
+    Text corrupte dins traduccio.md (missatge d'error agent + JSON).
+    Falten glossari.yml i notes.md.
