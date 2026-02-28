@@ -122,10 +122,15 @@ def main():
     else:
         text_narratiu = text_original
 
-    # Treure peu de pàgina
-    for footer in ['*Text de domini públic', '*Traducció de domini públic', '---\n\n*']:
+    # Treure peu de pàgina (només patrons finals reals, no separadors interns)
+    for footer in ['*Text de domini públic', '*Traducció de domini públic']:
         if footer in text_narratiu:
             text_narratiu = text_narratiu.split(footer)[0].strip()
+    # Treure '---\n\n*' final només si és a prop del final del text (últims 200 chars)
+    footer_hrule = '---\n\n*'
+    last_pos = text_narratiu.rfind(footer_hrule)
+    if last_pos > 0 and (len(text_narratiu) - last_pos) < 200:
+        text_narratiu = text_narratiu[:last_pos].strip()
 
     print("═" * 60)
     print(f"  TRADUCCIÓ: {titol}")
