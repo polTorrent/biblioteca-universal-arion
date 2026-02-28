@@ -28,7 +28,7 @@ Per tant, en la mesura del possible, he revisat aquesta obra de joventut, i fins
 
 ### § 1. El mètode
 
-[Plató]{.term data-term="subjekt"} el diví i el sorprenent Kant uneixen les seves veus emfàtiques per recomanar una regla per al mètode de tot filosofar, més encara, de tot saber en general.[^plato-kant] Cal, diuen, satisfer igualment dues lleis, la de l'[homogeneïtat]{.term data-term="homogeneitaet"} i la de l'[especificació]{.term data-term="spezifikation"}, sense sacrificar l'una a l'altra.
+Plató el diví i el sorprenent Kant uneixen les seves veus emfàtiques per recomanar una regla per al mètode de tot filosofar, més encara, de tot saber en general.[^plato-kant] Cal, diuen, satisfer igualment dues lleis, la de l'[homogeneïtat]{.term data-term="homogeneitaet"} i la de l'[especificació]{.term data-term="spezifikation"}, sense sacrificar l'una a l'altra.
 
 [^plato-kant]: [R] Plató: *Fileb* 219-223, *Polític* 62-63, *Fedre* 361-363 (ed. Bipont). Kant: *Crítica de la raó pura*, Apèndix a la Dialèctica transcendental.
 

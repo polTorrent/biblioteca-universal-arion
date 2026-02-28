@@ -1,0 +1,31 @@
+validated: true
+data: 2026-03-01
+puntuacio: 8.0
+validador: "Claude (validació automàtica)"
+
+dimensions:
+  fidelitat: 7.5
+  veu_autor: 8.0
+  fluidesa: 8.5
+
+resum: >
+  Traducció completa i rigorosa dels 52 §§ en 8 capítols. Excel·lent aparell
+  crític: glossari amb 30+ termes, notes filosòfiques/bibliogràfiques detallades,
+  introducció editorial i taula de citacions clàssiques. Català normatiu de
+  qualitat alta amb registre acadèmic adequat. To irònic de Schopenhauer ben
+  preservat. Totes les citacions gregues, llatines i franceses conservades
+  amb traducció.
+
+punts_forts:
+  - "Glossari exhaustiu amb definicions, notes i termes relacionats"
+  - "Sistema de notes [T]/[F]/[R] coherent i informatiu"
+  - "Consistència terminològica excel·lent (Vorstellung→representació, etc.)"
+  - "Passatges satírics ben resolts (Münchhausen, prova ontològica)"
+  - "Introducció editorial amb context, criteris i bibliografia"
+  - "Citacions clàssiques preservades amb traduccions acurades"
+
+aspectes_millorables:
+  - "Capítols 7-8 més condensats que 1-6 (§44, §45, §47, §48 molt breus)"
+  - "Prefaci a la 2a edició truncat amb [...]"
+  - "Traducció intermediada per versió anglesa (Hillebrand 1907)"
+  - "Corregit: marcatge erroni [Plató]{data-term='subjekt'} a §1"
