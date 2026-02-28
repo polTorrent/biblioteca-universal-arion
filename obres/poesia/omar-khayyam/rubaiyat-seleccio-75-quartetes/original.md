@@ -1,8 +1,3 @@
-# Rubaiyat of Omar Khayyam
-
-**Rendered into English Verse by Edward FitzGerald**
-**First Edition (1859)**
-
 Font: [Project Gutenberg, EBook #246](https://www.gutenberg.org/ebooks/246)
 
 ---
