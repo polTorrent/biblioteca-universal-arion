@@ -9,11 +9,11 @@ Traduït del japonès per Biblioteca Arion
 **Font**: [Wikisource japonès] (https://ja.wikisource.org/wiki/おくのほそ道)
 **Data**: Any 15 de Genroku (1702)
 ---
-*Oku no Hosomichi* (El sender estret cap al nord) és un diari de viatge del poeta de haiku Matsuo Bashō del període cultural Genroku. Publicat l'any 15 de Genroku (1702). És l'obra representativa dels relats de viatge de la literatura clàssica japonesa, i conté nombrosos haiku entreteixits al llarg del text. Bashō, acompanyat del seu deixeble Kawai Sora, va partir de la seva ermita Saitō-an a Fukagawa (Edo) el 27 del tercer mes de Genroku 2 (16 de maig de 1689 del calendari occidental), i després d'uns 150 dies recorrent Tōhoku i Hokuriku, va tornar a Edo l'any 4 de Genroku (1691). *Oku no Hosomichi* narra aquest viatge des de Musashi passant per Shimotsuke, Iwashiro, Rikuzen, Rikuchū, Mutsu, Dewa, Echigo, Etchū, Kaga i Echizen fins que va partir d'Ōgaki, a Mino, el sisè dia del novè mes del calendari lunar.
+*Oku no Hosomichi* (El camí estret cap al nord profund) és un diari de viatge del poeta de haiku Matsuo Bashō del període cultural Genroku. Publicat l'any 15 de Genroku (1702). És l'obra representativa dels relats de viatge de la literatura clàssica japonesa, i conté nombrosos haiku entreteixits al llarg del text. Bashō, acompanyat del seu deixeble Kawai Sora, va partir de la seva ermita Saitō-an a Fukagawa (Edo) el 27 del tercer mes de Genroku 2 (16 de maig de 1689 del calendari occidental), i després d'uns 150 dies recorrent Tōhoku i Hokuriku, va tornar a Edo l'any 4 de Genroku (1691). *Oku no Hosomichi* narra aquest viatge des de Musashi passant per Shimotsuke, Iwashiro, Rikuzen, Rikuchū, Mutsu, Dewa, Echigo, Etchū, Kaga i Echizen fins que va partir d'Ōgaki, a Mino, el sisè dia del novè mes del calendari lunar.
 *Text base: Shin-shaku Oku no Hosomichi de Kuniyoshi Miyake, Editorial Momiyama, juliol de Meiji 44.*
 ---
 Els dies i els mesos són viatgers de cent generacions, i els anys que van i vénen són també pelegrins. Els qui passen la vida sencera navegant, o els qui envelleixen prenent les regnes dels cavalls, viuen dia rere dia el viatge i fan del caminar la seva llar. També molts dels antics van morir en els seus viatges.
-Jo mateix, no sé des de quin any, temptat pels vents d'un núvol errant, no he pogut reprimir els pensaments de vagarejar. L'any passat vaig deambular per les costes marines, i a la tardor vaig escombar les teranyines de la cabanya en ruïnes vora el riu. Quan l'any gairebé s'acabava i va arribar la primavera, amb la boira del cel pensava travessar el pas de Shirakawa. Quan l'esperit del vagareig em va posseir i em va trastornar l'enteniment, i quan els déus del camí em van cridar, no podia concentrar-me en res. Vaig arreglar els forats dels pantalons, vaig canviar els cordons del barret i em vaig fer moxibustió als tres ri. Aleshores ja tenia al cap la lluna de Matsushima. Vaig deixar la casa on vivia a algú altre i em vaig traslladar a la villa de Sanpū.
+Jo mateix, no sé des de quin any, temptat pels vents d'un núvol errant, no he pogut reprimir els pensaments de vagarejar. L'any passat vaig deambular per les costes marines, i a la tardor vaig escombar les teranyines de la cabanya en ruïnes vora el riu. Quan l'any gairebé s'acabava i va arribar la primavera, amb la boira del cel pensava travessar el pas de Shirakawa. Quan l'esperit del vagareig em va posseir i em va trastornar l'enteniment, i quan els déus del camí em van cridar, no podia concentrar-me en res. Vaig arreglar els forats dels pantalons, vaig canviar els cordons del barret i em vaig fer moxibustió als tres ri. Aleshores ja tenia al cap la lluna de Matsushima. Vaig deixar la casa on vivia a algú altre i em vaig traslladar a la vil·la de Sanpū.
 *La casa d'herba*
 *també canvia d'habitant—*
 *casa de nines.*
@@ -26,7 +26,7 @@ Aquest va ser el primer poema del meu pinzell de viatge. Encara no podia avança
 El que portava a l'esquena encorbada em molestava abans de res. Havia sortit només amb el cos, sense més, però portava una túnica de paper com a protecció nocturna, una bata de bany lleugera, estris per la pluja, pinzell i tinta, i també regals d'acomiadament que no podia rebutjar, que es van convertir en un destorb pel camí—quin enuig!
 
 Pelegrinàrem a Mukai no Yashima acompanyats de Sora, qui ens digué: "Aquesta deïtat és la deessa Konohana-sakuya-hime, que és una amb el Fuji. Quan entrà a la cambra sense portes i es cremà per demostrar la seva honestedat, del foc nasqué el venerabilíssim Hohodemi. D'aquí ve el nom de Mukai no Yashima [les vuit illes de la cambra]. També per això s'acostuma a compondre poemes sobre el fum. A més, aquest lloc prohibeix pescar el peix anomenat konoshiro. Així es transmet al món el sentit d'aquesta llegenda."
-El trentè dia passàrem la nit al peu del mont Nikkō. L'hoste ens digué: "Em dic Hotoke Gozaemon. Com que faig de la sinceritat absoluta la meva norma, la gent m'anomena així. Descanseu amb confiança sobre aquest coixí d'herba d'una nit." Quina mena de buddha s'ha manifestat en aquest món corromput i polsós per ajudar persones com nosaltres, monjos captaires i pelegrins? Observant els actes de l'hoste, veiérem que era simplement ignorant i sense discerniment, però honest i testarrut. Era del tipus proper als homes íntegres i de paraula, i el seu temperament pur mereixia tot respecte.
+El trentè dia passàrem la nit al peu del mont Nikkō. L'hoste ens digué: "Em dic Hotoke Gozaemon. Com que faig de la sinceritat absoluta la meva norma, la gent m'anomena així. Descanseu amb confiança sobre aquest coixí d'herba d'una nit." Quina mena de buddha s'ha manifestat en aquest món corromput i polsós per ajudar persones com nosaltres, monjos captaires i pelegrins? Observant els actes de l'hoste, vérem que era simplement ignorant i sense discerniment, però honest i testarrut. Era del tipus proper als homes íntegres i de paraula, i el seu temperament pur mereixia tot respecte.
 El primer dia del quart mes pujàrem a venerar la muntanya sagrada. Antigament, aquest mont s'escrivia com a "Futara-san", però quan el gran mestre Kūkai el fundà, el canvià a "Nikkō". Devia endevinar mil anys de futur: ara aquesta llum sagrada brilla per tot el cel i la seva benevolència s'escampa fins als vuit extrems del món, mentre la gent viu en pau i tranquil·litat. Hi ha massa coses reverencials per escriure, així que deixo la ploma.
     Quin prodigi sagrat:
     la llum del sol entre fulles verdes
@@ -35,12 +35,12 @@ El mont Kurokami s'embolcallava de boira i encara tenia neu blanca.
     Rapant-me el cap,
     al mont Kurokami
     canvio de vestits        —Sora
-Sora era dels Kawai i es deia Sōgo. Vivia sota les branques baixes del plàtan de Bashō i m'ajudava en les tasques domèstiques. Es'n alegrava de poder acompanyar-me a Matsushima i Kisakata, i volia compartir les penalitats del viatge. El matí de la partida es rapà el cap, es vestí de negre monacal i canvià el nom de Sōgo per Sōgo. D'aquí el poema del mont Kurokami. Les dues paraules "canvio de vestits" tenen força i ressonen.
+Sora era dels Kawai i es deia Sōgo. Vivia sota les branques baixes del plàtan de Bashō i m'ajudava en les tasques domèstiques. Se n'alegrava de poder acompanyar-me a Matsushima i Kisakata, i volia compartir les penalitats del viatge. El matí de la partida es rapà el cap, es vestí de negre monacal i canvià el nom de Sōgo per Sōgo. D'aquí el poema del mont Kurokami. Les dues paraules "canvio de vestits" tenen força i ressonen.
 Pujàrem més de vint chō muntanya amunt fins a una cascada. Des del cim d'una cova rocosa, l'aigua salta i cau cent shaku fins a una bassa verda entre milers de roques. Amagant-nos dins la cova rocosa i mirant des de darrere la cascada, la diuen cascada d'Urami.
     Una estona
     reclòs a la cascada:
     l'inici de l'estiu
-A un lloc anomenat Nasu tenint coneguts, decidírem travessar la plana per prendre el camí directe. Veiérem un poble llunyà i hi anàrem, però plogué i es feu de nit. Demanàrem refugi per una nit a casa d'un pagès, i a l'endemà tornàrem a caminar per la plana. Allí hi havia cavalls pasturant. Demanàrem ajuda a un noi que tallava herba, i el rústic, tot i ser-ho, no era insensible. "Què fer? Aquesta plana es ramifica en totes direccions i és perillós que els viatgers es perdin, però seguiu aquest cavall fins on s'aturi i retorneu-lo." Dues criatures petites corrien seguint les petjades del cavall. Una era una nena que es deia Kasane. Era un nom poc comú però encantador.
+A un lloc anomenat Nasu tenint coneguts, decidírem travessar la plana per prendre el camí directe. Vérem un poble llunyà i hi anàrem, però plogué i es feu de nit. Demanàrem refugi per una nit a casa d'un pagès, i a l'endemà tornàrem a caminar per la plana. Allí hi havia cavalls pasturant. Demanàrem ajuda a un noi que tallava herba, i el rústic, tot i ser-ho, no era insensible. "Què fer? Aquesta plana es ramifica en totes direccions i és perillós que els viatgers es perdin, però seguiu aquest cavall fins on s'aturi i retorneu-lo." Dues criatures petites corrien seguint les petjades del cavall. Una era una nena que es deia Kasane. Era un nom poc comú però encantador.
     Kasane deu ser
     el nom del clavell
     de vuit pètals
@@ -96,7 +96,7 @@ Al costat d'aquest hostal hi havia un gran castanyer que donava ombra a un monjo
 Sortint de casa de Tōkyū, a unes cinc ri, passàrem l'hostal de Hinokawa i allà s'alçava la muntanya Asaka. El camí n'era a prop. Per aquesta contrada hi ha molts estanys. S'acostava el temps de tallar el katsumi, i vaig preguntar a tothom quina era l'herba que anomenen hanakatsumi, però ningú no ho sabia. Cercant estanys, preguntant a la gent, dient «katsumi, katsumi», se'ns va fer tard. Des de Nihonmatsu giràrem a la dreta, visitàrem la cova de Kurozuka i passàrem la nit a Fukushima.
 
 L'endemà anàrem a cercar la pedra del tint de Shinobu al poble de Shinobu. En un poblet remot de les muntanyes ombrívolves hi havia la pedra, mig soterrada. Un nen del lloc ens va explicar que antigament estava dalt de la muntanya, però com que els viatgers venien a provar-la estripant l'herba i els cereals, la van empènyer fins a aquesta vall per enuig. Per això ara la cara de la pedra mira cap avall, cosa que sembla versemblant.
-Les mans que plantin els plàntules
+Les mans que plantin les plàntules
 recorden també el tint de Shinobu
 Passàrem el pas de Tsuki-no-wa i arribàrem a l'hostal anomenat. Se-no-kami. Les antigues ruïnes de Satō Shōji es troben a una riba i mitja del turó de l'esquerra, al poblet d'Iizuka de Sabano, segons ens van dir. Hi anàrem a buscar-les i trobàrem traces de la porta principal en un lloc anomenat Maruyama. Aquest era l'antic castell del Shōji. Seguint els consells de la gent, vaig deixar caure les llàgrimes. A més, en un temple proper hi havia les làpides d'una família sencera. Especialment commovedor era el record de les núvies d'aquells dos homes. Tot i ser dones, els seus noms coratjosos han perviscut al món. Les llàgrimes no són cosa del passat llunyà. Entràrem al temple per demanar te. Allí conserven com a tresors l'espasa de Yoshitsune i el bagul de Benkei.
 Bagul i espasa també
@@ -107,14 +107,14 @@ Amb aquestes pluges d'estiu últimament
 el camí està molt dolent i el cos cansat, així que només ho vaig mirar de lluny en passar.
 On és Kasajima?
 Sota la lluna, camí de fang
-Nos allotjàrem a Iwanuma.
+Ens allotjàrem a Iwanuma.
 En veure el pi de Takekuma em vaig sentir com si despertés. L'arrel es bifurca en dues des del peu i conserva l'aspecte d'antany. Recordo que el monjo Nōin havia compost un poema. Fa temps, quan un governador de Mutsu va baixar aquí, van tallar aquest arbre per fer-ne pilars per a un pont sobre el riu Natori. Per això Nōin va compondre el vers 'aquest cop el pi no deixa ni rastre'. He sentit que al llarg de les generacions l'han anat tallant i plantant. Ara té l'aspecte de mil anys i és un pi meravellós.
 Pi de Takekuma
 mostreu-vos als cirerers tardans - Kyohaku
 I jo vaig respondre: 
 Dels cirerers als pins
 han passat dos arbres i tres mesos
-Crossàrem el riu Natori i entràrem a Sendai. Era el dia de l'iris. Cercàrem allotjament i hi restàrem quatre o cinc dies.
+Travessàrem el riu Natori i entràrem a Sendai. Era el dia de l'iris. Cercàrem allotjament i hi restàrem quatre o cinc dies.
 Aquí hi ha un pintor anomenat Kaemon. He sentit que és una persona amb cert gust artístic i l'he conegut. Aquest home ha estat estudiant durant anys vestigis històrics poc clars, així que un dia em va fer de guia. Els prats de Miyagi estaven plens de lespedezes en flor, evocant l'aspecte de la tardor. A Tamada i Yokono les azalees florien en turons verdosos. Era l'època en què floreixen. Entràrem en un bosc de pins tan dens que no hi filtrava ni un raig de sol. Aquí s'anomena Kinoshita. Devia ser així d'humit de rosada antigament, per això van compondre els versos sobre 'mi-sabuari mi-kasa'. Veneràrem la sala de Yakushi i el santuari de Tenjin, i així va passar el dia.
 
 Com les pintures de Matsushima amb els seus salars, enviades d'aquí i d'allà, i les sandàlies de palla amb cordons tenyits d'indi que em van regalar per al camí, només ara, arribant fins aquí, aquest boig del viatge mostra la seva veritable natura.
@@ -123,8 +123,8 @@ Com les pintures de Matsushima amb els seus salars, enviades d'aquí i d'allà, 
 *cordó de sandàlia*
 Seguint aquelles pintures que m'havien donat, camino fins arribar a la carena de muntanya del Camí de l'Interior, on hi ha l'herba de Tōfu. Encara ara, any rere any, teixeixen estores d'aquesta herba i les ofereixen al governador provincial.
 **L'estela de Tsubo - Poble d'Ichikawa, Tagajō**
-L'estela de pedra de Tsubo fa més de sis shaku d'alt i uns tres d'ample. Entre la molsa es distingeixen les lletres, esborrades. Marca les distàncies fins als confins de les quatre regions: "Primera any de l'era Jinki, Inspector Provincial i General de la Guarnició Fronterera, Ōno Ason Azumahito ho va establir. Sisè any de l'era Tempyō-hōji, conseller i governador Militar d'Tōkaidō i Tōsandō, mateix General Emi Ason Inukai ho va restaurar, primer dia del dotzè mes." Correspon al regnat de l'Emperador.
-Encara que des d'antic molts poemes han cantat aquests llocs i s'han transmès les seves històries, les muntanyes s'ensorren, els rius canvien de curs, els camins es transformen, les pedres queden enterrades sota la terra, els arbres envelleixen i són substituïts per altres de joves. El temps passa, les eres canvien, i de tot plegat no en queda res cert. Però aquí, davant d'aquest monument indiscutible de mil anys, contemplo el cor dels antics. Aquest és un dels fruits del pelegrí, l'alegria d'estar viu. Oblido les fatiges del viatge i se m'omple els ulls de llàgrimes.
+L'estela de pedra de Tsubo fa més de sis shaku d'alt i uns tres d'ample. Entre la molsa es distingeixen les lletres, esborrades. Marca les distàncies fins als confins de les quatre regions: "Primer any de l'era Jinki, Inspector Provincial i General de la Guarnició Fronterera, Ōno Ason Azumahito ho va establir. Sisè any de l'era Tempyō-hōji, conseller i governador Militar de Tōkaidō i Tōsandō, mateix General Emi Ason Inukai ho va restaurar, primer dia del dotzè mes." Correspon al regnat de l'Emperador.
+Encara que des d'antic molts poemes han cantat aquests llocs i s'han transmès les seves històries, les muntanyes s'ensorren, els rius canvien de curs, els camins es transformen, les pedres queden enterrades sota la terra, els arbres envelleixen i són substituïts per altres de joves. El temps passa, les eres canvien, i de tot plegat no en queda res cert. Però aquí, davant d'aquest monument indiscutible de mil anys, contemplo el cor dels antics. Aquest és un dels fruits del pelegrí, l'alegria d'estar viu. Oblido les fatiges del viatge i se m'omplen els ulls de llàgrimes.
 D'allí vaig cercar la pedra de Noda no Tamagawa i sue no Matsuyama. Aquest darrer lloc és ara un temple que s'anomena Sue no Matsuyama. Tot és cementiri, i penso en els versos sobre ocells que aparellen i branques que s'entrelacen, i com també aquests llaços acaben, i la tristesa creix mentre escolto la campana del vespre a la badia de Shiogama.
 El cel de pluja de maig s'aclareix una mica, i a la llum tènue de la lluna vespertina, l'illa de Magaki es veu molt a prop. Les barquetes dels pescadors van i vénen, i les seves veus repartint el peix ressonen amb aquell vers: "Què tristament ressona el cordó!" El cor que va compondre això em commou i em resulta molt entendridor. Aquella nit, un músic cec va tocar el biwa i va recitar el que anomena "cançó de l'Interior". No era de l'Heike, ni era dansa: amb una melodia rústica i la veu ben alta, tot i tenir-lo a prop del coixí mentre dormia, em va semblar admirable que en aquesta terra remota no s'hagués perdut del tot l'antic esperit.
 De bon matí, vaig anar a resar al santuari de Shiogama. El governador provincial l'ha fet restaurar: els pilars del santuari són robustos, les bigues policromades brillen, les escales de pedra s'apilen nou ken d'altura, i el sol matinal il·lumina la balustrada vermella. És propi de les costums del nostre país que fins aquí, al final dels camins, fins als confins de terra i pols, la divinitat es manifesti amb força renovada. Què noble és!
@@ -175,8 +175,8 @@ Volíem baixar pel riu Mogami fins a un lloc anomenat Oishida, però esperàvem 
 El riu Mogami neix a Michinoku i té les fonts a Yamagata. Hi ha passos temibles com Goten i Hayabusa. Flueix al nord de la muntanya Itajiki i acaba desembocant al mar de Sakata. Baixem el riu en barca entre boscos espessos que cobreixen les muntanyes a banda i banda. Les barques carregades d'arròs les anomenen ina-bune. La cascada de Shiraito cau entre les fulles verdes, i el santuari de Sennindō s'alça a la riba. L'aigua creix i la barca es fa perillosa.
 
 *Pluges de maig—*
-*recollides totes:*
-*riu Mogami*
+*aplegades: ràpid*
+*el riu Mogami*
 
 El tercer dia del sisè mes pugem al mont Haguro. Cerquem un home anomenat Zushi Sakichi i ens presenta al mestre Egaku Ajari, representant del superior. Ens allotgem al temple de Minamidani, on ens acull amb gran compassió i delicadesa.
 
@@ -222,7 +222,9 @@ Partint de Haguro, som acollits a Tsurukaoka, a casa d'un home del clan Nagayama
 Després de gaudir d'innombrables paisatges de muntanyes, rius i mars, arribo ara a Kisagata amb el cor commogut. Des del port de Sakata, cap al nord-est, travessant muntanyes, seguint costes rocoses i trepitjant sorres, després d'unes deu ri, mentre el sol començava a pondre's, el vent marí bufava sorra amunt i tot es feia borrós. El mont Chōkai s'ocultava en la foscor misteriosa. Caminant a les fosques, vaig pensar que si això ja era bonic, com seria després de la pluja? Esperant que escampés, em vaig refugiar amb els genolls plegats en una cabanya de pescadors.
 L'endemà el cel es va aclarir completament i el sol de la matinada va sortir radiant. Naveguem per Kisagata i primer anem a l'illa Nōin, per visitar les traces dels tres anys de reclusió del monjo. A l'altra banda, desembarquem on hi ha un vell cirerer que va inspirar el poema 'navegar sobre les flors', vestigis del monjo Saigyō. Al centre de l'aigua hi ha un túmul imperial que diuen que és la tomba de l'emperadriu Jingū. El temple s'anomena Kan'manjuji. No he sentit mai que l'emperadriu hagués visitat aquest lloc. Em pregunto què pot ser.
 Assegut a la sala principal d'aquest temple, quan aixeco les cortines, tot el paisatge s'estén davant els ulls: al sud, el mont Chōkai sosté el cel i la seva ombra es reflecteix a la badia; a l'oest es limita amb la barrera de Muyari; a l'est s'alça un dic que arriba fins al camí d'Akita, i al nord s'obre al mar on entren les ones, al lloc anomenat Shiokoshi. La badia té una ri de llarg i d'ample. Té cert aire de Matsushima, però és diferent. Matsushima sembla que rigui, Kisagata sembla que es queixi. A la solitud s'afegeix tristesa, com si el paisatge turmentés l'ànima.
-Kisagata... / pluja sobre el rostre / de Seishi adormida
+*Kisagata—*
+*pluja i Seishi entre les flors*
+*de l'arbre de seda*
 Shiokoshi... / les potes de la grua mullades / mar fresc
 A Kisagata / què mengen a la festa / dels déus? (Sora)
 Casa de pescadors... / les portes per terra / fred del vespre (comerciant de Mino)
@@ -323,7 +325,7 @@ Travessant l'entrada de Yoshizaki, a la frontera d'Echizen, cerquem el pi de Shi
 
 Aquest sol poema exhaureix tots els paisatges; afegir-hi una sola paraula seria com alçar un dit inútil.
 A Maruoka, el mestre del temple Tenryūji té vells vincles amb mi, així que l'hi vaig a veure. També hi ha un tal Hokushi de Kanazawa que casualment havia passat per alt i m'ha seguit fins aquí. Els paisatges dels llocs per on hem passat no deixen de succeir-se en la seva ment, i de tant en tant se sent alguna composició emotiva. Ara que ja ens hem d'acomiadar:
-Escric algo a l'abanic i el plego: quina nostàlgia!
+Escric quelcom a l'abanic i el plego: quina nostàlgia!
 Cinquanta chō muntanya endins, fem reverència a l'Eiheiji, el temple del mestre zen Dōgen. Que el mestre evités les llunyanes terres i deixés la seva petjada en aquest racó de muntanya tan amagat també deu tenir les seves nobles raons.
 Fukui és a unes tres ri, així que hi sopem i en sortim, però el camí del capvespre és difícil de seguir. Aquí viu un vell ermità anomenat Tōsai. No sé quin any va venir a Edo a cercar-me, fa ja més de deu anys. Em pregunto si encara viurà, envellint i decaient, o potser ja haurà mort. Pregunto a la gent i em diuen que encara és viu i m'indiquen on.
 M'escolo discretament pel centre de la ciutat i trobo una caseta humil on s'enfilem calàbasses i esponja, amb flors cresta de gall i escoba que amaguen la porta. "Segur que és aquí dins", penso, i toco a la porta. Surt una dona d'aspecte miserable que pregunta: "D'on veniu, reverend ermità?". "El meu marit ha anat a casa d'un tal algú d'aquest barri. Si teniu algun assumpte, aneu-lo a cercar allà." Devia ser la seva muller. Aquestes escenes només les havia vistes en contes antics! Aviat el trobem i passem dues nits a casa seva. Quan marxem cap al port de Tsuruga per veure la lluna plena, Tōsai també ens vol acompanyar. Es recull graciosament les faldilles i, alegre, s'alça com un bastó de camí.
@@ -333,10 +335,12 @@ Clara lluna sobre la sorra que porta Yugyō.
 El quinzè, com havia dit l'hoste, plou.
 Lluna plena... el temps del nord és sempre incert.
 El setze el cel s'aclareix, i anem en barca a la platja de Tane a recollir petites conquilles multicolors. Set ri mar endins. Un tal Ten'ya ho prepara tot amb molt de compte: cistells trencats, tubs de bambú petit, i posa molts servents a la barca. El vent de popa ens empeny en un moment. A la platja només hi ha humils casetes de pescadors i un temple trist del Lotus. Aquí bevem te, escalfem sake, i suportem la tristesa melancòlica del vespre.
-Solitud... una platja d'tardor més trista que Suma.
+Solitud... una platja de tardor més trista que Suma.
 Entre les ones, petites conquilles barrejades amb pols de bruguerola.
 Aquest dia faig escriure Tōsai amb el pinzell i ho deixo al temple. Michimichi també ve fins a aquest port a rebre'm i m'acompanya cap a la província de Mino. Ajudat pel cavall, entro a la vila d'Ōgaki, on Sora també ha vingut d'Ise per trobar-me, i Etsujin s'ha reunit a casa d'Jokō. Maekawa Jikei, pare i fill, i altres amics íntims em visiten i se n'alegren com si trobessim algú que ha ressuscitat, alhora celebrant i condolint-se. El cansament del viatge encara no s'ha esvaït, i ja és el sisè del novè mes. Decideixo tornar a embarcar-me per anar a adorar el trasllat del santuari d'Ise:
-L'esclop de l'cloïssa obre's: ens separem en aquest final d'estiu.
+*La cloïssa*
+*s'obre les valves a Futami:*
+*la tardor se'n va*
 
 ---
 
