@@ -427,6 +427,10 @@
       {
         "timestamp": 1772276402.8895152,
         "result": "created"
+      },
+      {
+        "timestamp": 1772278738.5413218,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1152,6 +1156,15 @@
     "events": [
       {
         "timestamp": 1772273337.4555671,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_oku-no-hosomichi-el-cami-estret-cap-al-nord-profund": {
+    "events": [
+      {
+        "timestamp": 1772278738.3882482,
         "result": "created"
       }
     ],
