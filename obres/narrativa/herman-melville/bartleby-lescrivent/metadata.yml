@@ -1,30 +1,52 @@
 obra:
   titol: Bartleby, l'escrivent
+  titol_original: "Bartleby, the Scrivener: A Story of Wall Street"
   autor: Herman Melville
+  autor_original: Herman Melville
   traductor: Biblioteca Arion (IA + comunitat)
+  any_original: 1853
   any_traduccio: 2026
   llengua_original: anglès
   genere: narrativa
-  descripcio: ''
-  estadistiques:
-    paraules_traduccio: 498
+  descripcio: >
+    Relat curt de Herman Melville publicat originalment a Putnam's Magazine
+    (1853). Narra la història d'un advocat de Wall Street i el seu enigmàtic
+    copista Bartleby, que progressivament es nega a complir qualsevol tasca
+    amb la frase "Preferiria no fer-ho". Obra cabdal de la literatura americana,
+    precursora de l'existencialisme i la literatura de l'absurd.
+seccions: 1
+estadistiques:
+  paraules_original: 14353
+  paraules_traduccio: 11467
+  notes: 15
+  termes_glossari: 17
 revisio:
   estat: revisat
-  data_revisio: '2026-02-03'
-  qualitat: 6.93
+  data_revisio: '2026-03-01'
+  qualitat: 6.7
 avaluacio_final:
-  data: '2026-02-03T08:29:55.580440'
+  data: '2026-03-01'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 132
-  errors_critics: 0
-  errors_alts: 0
+    fidelitat: 6.5
+    veu_autor: 7.5
+    fluidesa: 7.0
+    correccio_linguistica: 6.5
+    coherencia: 6.0
+    global: 6.7
+  total_errors: 15
+  errors_critics: 3
+  errors_alts: 5
   aprovat: false
-  requereix_revisio_humana: true
+  requereix_revisio_humana: false
   correccions_aplicades: 0
-  correccions_pendents: 117
+  correccions_pendents: 15
+  detall_errors_critics:
+    - "Omissió paràgraf Imprimis (John Jacob Astor)"
+    - "Omissió paràgraf arribada de Bartleby"
+    - "Inconsistència noms personatges (Turkey/Gall Dindi, Nippers/Pinces/Tenalles, Ginger Nut/Galeta de Gingebre/Gallet)"
+  detall_errors_alts:
+    - "Castellanisme: manzana (ha de ser illa)"
+    - "Errata: m'constrenyia (ha de ser em constrenyia)"
+    - "Inconsistència marques diàleg (guions / cometes llatines / cometes angleses)"
+    - "Inconsistència registre tu/vós"
+    - "Inconsistència terme screen (biombo/paravent/para-vent)"
