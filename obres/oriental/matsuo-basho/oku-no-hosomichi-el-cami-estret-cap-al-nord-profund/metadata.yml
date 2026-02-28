@@ -23,6 +23,7 @@ estadistiques:
   notes: 0
   termes_glossari: 15
 revisio:
-  estat: revisat
-  qualitat: 7.5
+  estat: necessita_correccio
+  qualitat: 6.5
   data_revisio: '2026-02-28'
+  motiu: 'errors gramaticals, haiku final garblat, format inconsistent dels haiku, omissions en traduccions clau'
