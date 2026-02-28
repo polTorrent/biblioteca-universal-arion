@@ -15,30 +15,11 @@ obra:
     idil·lis, cançons filosòfiques i els grans poemes de la maduresa.
 seccions: 20
 estadistiques:
-  paraules_original: 12500
-  paraules_traduccio: 5557
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 12667
+  paraules_traduccio: 13483
+  notes: 20
+  termes_glossari: 21
 revisio:
-  estat: requereix_correccio
-  qualitat: 2.5
+  estat: pendent_revisio
+  qualitat: 0
   data_revisio: '2026-02-28'
-  supervisor: Claude Opus 4.6
-  notes: >
-    Traducció greument incompleta: 8 de 20 poemes absents, meta-comentaris IA
-    incrustats al text, artefactes JSON, poemes truncats, sense glossari ni notes.
-    Requereix retraducció completa.
-avaluacio_final:
-  data: '2026-02-28'
-  puntuacions:
-    completesa: 1.0
-    fidelitat: 3.0
-    qualitat_catala: 4.0
-    format_estructura: 2.0
-    glossari: 0.0
-    notes: 0.0
-    global: 2.5
-  total_errors: 115
-  errors_critics: 12
-  aprovat: false
-  requereix_revisio_humana: true
