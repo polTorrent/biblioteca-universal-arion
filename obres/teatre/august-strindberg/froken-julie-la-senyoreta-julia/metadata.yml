@@ -1,6 +1,6 @@
 obra:
-  titol: Fröken Julie — La Senyoreta Júlia
-  titol_original: Fröken Julie
+  titol: "Fröken Julie — La Senyoreta Júlia"
+  titol_original: "Fröken Julie"
   autor: August Strindberg
   autor_original: August Strindberg
   traductor: Biblioteca Arion
@@ -8,37 +8,18 @@ obra:
   any_traduccio: 2026
   llengua_original: suec
   genere: teatre
-  descripcio: Drama naturalista en un acte. La nit de Sant Joan, la senyoreta Júlia
-    —filla del comte— i Jean —el criat— inicien un joc de seducció i poder que acaba
-    en tragèdia. Obra clau del naturalisme europeu.
-  font: Projekt Runeberg (domini públic)
+  descripcio: >
+    Drama naturalista en un acte. La nit de Sant Joan, la senyoreta Júlia
+    —filla del comte— i Joan —el criat— inicien un joc de seducció i poder
+    que acaba en tragèdia. Obra clau del naturalisme europeu.
+  font: "Projekt Runeberg (domini públic)"
 seccions: 1
 estadistiques:
   paraules_original: 12472
-  paraules_traduccio: 5341
-  notes: 0
-  termes_glossari: 0
+  paraules_traduccio: 12100
+  notes: 8
+  termes_glossari: 17
 revisio:
-  estat: requereix_correccio
-  qualitat: 3.0
-  data_revisio: '2026-02-28'
-avaluacio_final:
-  data: '2026-02-28'
-  puntuacions:
-    fidelitat: 2.0
-    veu_autor: 5.0
-    fluidesa: 5.5
-    correccio_linguistica: 5.0
-    coherencia: 2.5
-    global: 3.0
-  total_errors: 55
-  errors_critics: 3
-  errors_alts: 6
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 50
-  notes_supervisio: >
-    Traducció incompleta (43% del text original). Text d'IA incrustat.
-    Noms de personatges inconsistents. Múltiples passatges truncats.
-    Cal retraducció completa.
+  estat: pendent_supervisio
+  qualitat: 0.0
+  data_revisio: "2026-02-28"
