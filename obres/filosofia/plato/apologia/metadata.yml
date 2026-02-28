@@ -22,11 +22,16 @@ obra:
     - virtut
   referencia_stephanus: 17a-42a
 
+seccions: 3
+
 revisio:
-  estat: incompleta
+  estat: "pendent_revisio"
   qualitat: 7.5
   data_revisio: '2026-03-01'
-  notes: "Traducció ~40% completa (fins a 26d Stephanus). Qualitat del text existent 7.5/10. Cal completar la resta i afegir glossari i notes."
+  notes: "Traducció completa (17a-42a). Afegits glossari i notes. Pendent de supervisió."
 
 estadistiques:
-  paraules_traduccio: 4058
+  paraules_original: 9800
+  paraules_traduccio: 10594
+  notes: 14
+  termes_glossari: 13
