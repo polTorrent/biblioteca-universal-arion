@@ -2,39 +2,43 @@ obra:
   titol: Canti — Selecció de 20 poemes
   titol_original: Canti
   autor: Giacomo Leopardi
+  autor_original: Giacomo Leopardi
   traductor: Biblioteca Arion
-  any_original: 1831-1835
+  any_original: 1818-1836
   any_traduccio: 2026
   llengua_original: italià
+  llengua_traduccio: català
   genere: poesia
-  descripcio: Selecció de vint poemes dels Canti de Giacomo Leopardi, obra cabdal
+  descripcio: >
+    Selecció de vint poemes dels Canti de Giacomo Leopardi, obra cabdal
     del Romanticisme italià i de la poesia europea del segle XIX. Inclou odes cíviques,
     idil·lis, cançons filosòfiques i els grans poemes de la maduresa.
-  estadistiques:
-    paraules_traduccio: 5557
 seccions: 20
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 12500
+  paraules_traduccio: 5557
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: revisat
-  qualitat: 4.33
+  estat: requereix_correccio
+  qualitat: 2.5
   data_revisio: '2026-02-28'
+  supervisor: Claude Opus 4.6
+  notes: >
+    Traducció greument incompleta: 8 de 20 poemes absents, meta-comentaris IA
+    incrustats al text, artefactes JSON, poemes truncats, sense glossari ni notes.
+    Requereix retraducció completa.
 avaluacio_final:
-  data: '2026-02-28T07:54:05.923328'
+  data: '2026-02-28'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
+    completesa: 1.0
+    fidelitat: 3.0
+    qualitat_catala: 4.0
+    format_estructura: 2.0
+    glossari: 0.0
+    notes: 0.0
+    global: 2.5
   total_errors: 115
-  errors_critics: 0
-  errors_alts: 0
+  errors_critics: 12
   aprovat: false
   requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 110
