@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-02-27",
+  "updated_at": "2026-03-01",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -14,7 +14,7 @@
         "perseus",
         "gutenberg"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/filosofia/epictetus/enchiridion",
       "notes": "Traduïda. Completar i verificar."
     },
