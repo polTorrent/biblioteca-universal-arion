@@ -288,6 +288,10 @@
       {
         "timestamp": 1772322336.854567,
         "result": "created"
+      },
+      {
+        "timestamp": 1772324140.3989403,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -381,10 +385,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772158816.0507112,
-        "result": "created"
-      },
-      {
         "timestamp": 1772161203.140259,
         "result": "created"
       },
@@ -458,6 +458,10 @@
       },
       {
         "timestamp": 1772302535.4476306,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772324140.7769022,
         "result": "created"
       }
     ],
