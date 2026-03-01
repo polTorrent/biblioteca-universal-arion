@@ -48,3 +48,15 @@ La descripció que Joan fa del pavelló turc (*turkisk paviljong*) al jardí del
 ## [8] Font de l'original
 
 Text original suec de *Fröken Julie* obtingut de Projekt Runeberg (domini públic). L'obra va ser escrita el 1888 i és considerada una de les peces fonamentals del naturalisme teatral europeu.
+
+## [9] Correccions de la supervisió (2026-03-01)
+
+S'han aplicat les correccions següents durant la revisió de qualitat:
+
+- **Duplicació eliminada**: S'ha suprimit un passatge duplicat (Joan confessa pensaments «bruts» + referència a la caixa de civada + acusació de mentida) que apareixia dues vegades al text. L'original suec conté aquest passatge només un cop (línies 1671-1685 de l'original). La duplicació s'ha eliminat deixant la primera instància intacta.
+
+- **«Funcionari» → «jornaler»**: S'ha corregit la traducció de *statkarl* (treballador agrícola lligat a una propietat) que havia estat traduït erròniament com «funcionari», elevant la posició social del pare de Joan. El terme correcte és «jornaler», coherent amb la resta del text on Joan es defineix com «fill de jornaler».
+
+## [10] La cadernera (Serine)
+
+L'original usa *grönsiska* (llucareta, *Chloris chloris*), un ocell cantaire comú a Escandinàvia. El nom propi «Serine» es manté sense canvis. La traducció adapta l'espècie com «cadernera» per la seva ressonància cultural en l'àmbit català. L'escena del sacrifici de l'ocell —que Joan degolla amb la destral de cuina— és el detonant emocional que desencadena el monòleg final de Júlia i funciona com a metàfora de la seva pròpia destrucció.

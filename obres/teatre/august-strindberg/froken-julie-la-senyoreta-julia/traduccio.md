@@ -419,7 +419,7 @@ Però si heu nascut aquí, a la comarca?
 
 **JOAN**
 
-El meu pare era funcionari de l'advocat fiscal d'aquí al costat, i vaig veure la senyoreta de petita, encara que la senyoreta no em va fer cas!
+El meu pare era jornaler de l'advocat fiscal d'aquí al costat, i vaig veure la senyoreta de petita, encara que la senyoreta no em va fer cas!
 
 **SENYORETA**
 
@@ -1499,22 +1499,6 @@ Amant del lacai, criada de merda, calla la boca i vés-te'n d'aquí! Em vens a r
 *esfondrada.*
 
 Tens raó; pega'm; trepitja'm; no he mereixut res millor! Sóc una miserable; però ajuda'm! Ajuda'm, si hi ha cap sortida!
-
-**JOAN**
-
-No seré jo qui negui que em feu pena! Quan jeia als bancals de cebes i us veia al jardí de les roses, sí, ara us ho confessaré, tenia els mateixos pensaments bruts que tots els nois.
-
-**SENYORETA**
-
-I vós que volíeu morir per mi!
-
-**JOAN**
-
-A la caixa de la civada! Allò era pura xerrameça.
-
-**SENYORETA**
-
-Mentida, doncs!
 
 **JOAN**
 
