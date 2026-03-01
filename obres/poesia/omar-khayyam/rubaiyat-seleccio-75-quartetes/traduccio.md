@@ -31,7 +31,7 @@ i, un cop partits, potser no tornem mai més."
 Ara l'Any Nou reviu antics Desitjos,
 l'Ànima reflexiva es retira a la Solitud,
   on la MÀ BLANCA DE MOISÈS sobre la Branca
-s'apaga, i Jesús des de Terra respira.
+brota, i Jesús des de Terra sospira.
 
 ## V.
 
@@ -52,7 +52,7 @@ que enrogeixi aquella Galta groga seva.
 Ves, omple la copa, i al foc de la primavera
 llença el vestit hivernal del penediment:
   l'Ocell del Temps té poc camí per volar
-—i mira!, ja bate les ales.
+—i mira!, ja bat les ales.
 
 ## VIII.
 
@@ -91,10 +91,10 @@ oh, l'alegre música d'un tambor llunyà!
 
 ## XIII.
 
-Mira la Rosa que floreix al nostre entorn: "Escolta,
-riu mentre es dirigeix al Món: jo floreixo
-  d'un cop esquinço la borla de seda de la meva bossa
-i escampo el seu tresor pel Jardí."
+Mira la Rosa que floreix al nostre entorn—«Mireu»,
+diu rient, «al Món floreixo:
+  d'un cop esquinço la borla de seda de la bossa
+i n'escampo el tresor pel Jardí.»
 
 ## XIV.
 
@@ -357,7 +357,7 @@ ho sap tot ell—HO SAP—ho sap de cert!
 
 ## LI.
 
-Escriu el Dit que escriu, i havent escrit
+Escriu el Dit i, havent escrit,
 se'n va: ni pietat ni saviesa
   el tornaran per cancel·lar un traç,
 ni llàgrima esborrarà una lletra.
