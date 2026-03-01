@@ -16,10 +16,20 @@ obra:
 seccions: 1
 estadistiques:
   paraules_original: 12472
-  paraules_traduccio: 12100
-  notes: 8
-  termes_glossari: 17
+  paraules_traduccio: 12040
+  notes: 10
+  termes_glossari: 22
 revisio:
-  estat: pendent_supervisio
-  qualitat: 0.0
-  data_revisio: "2026-02-28"
+  estat: revisat
+  qualitat: 8.1
+  data_revisio: "2026-03-01"
+  revisor: "Supervisió automàtica"
+  detall:
+    fidelitat: 7.5
+    veu_autor: 8.5
+    fluidesa: 8.5
+  correccions:
+    - "Eliminada duplicació de passatge (Joan confessa pensaments bruts)"
+    - "Corregit 'funcionari' → 'jornaler' (statkarl)"
+    - "Afegits 5 termes al glossari"
+    - "Afegides 2 notes de supervisió"
