@@ -29,7 +29,10 @@ import os
 import shutil
 import sys
 from pathlib import Path
+from typing import Any
 
+# Forçar mode subscripció als agents (evita requerir ANTHROPIC_API_KEY,
+# ja que AgentRetratista usa Venice API directament, no Anthropic).
 os.environ["CLAUDECODE"] = "1"
 
 ROOT = Path(__file__).parent.parent
@@ -41,8 +44,7 @@ except ImportError:
     print("PyYAML no instal·lat. Executa: pip install PyYAML")
     sys.exit(1)
 
-from agents.agents_retratista import AUTORS_IMATGES, AgentRetratista
-from agents.venice_client import VeniceError
+from agents.agents_retratista import AUTORS_IMATGES, AgentRetratista  # noqa: E402
 
 
 def trobar_autors(obres_dir: Path) -> dict[str, dict]:
@@ -74,8 +76,12 @@ def trobar_autors(obres_dir: Path) -> dict[str, dict]:
         if autor_slug in autors:
             continue
 
-        with open(metadata_file, encoding="utf-8") as f:
-            metadata = yaml.safe_load(f) or {}
+        try:
+            with open(metadata_file, encoding="utf-8") as f:
+                metadata = yaml.safe_load(f) or {}
+        except (yaml.YAMLError, OSError) as e:
+            print(f"  Avís: metadata invàlida a {metadata_file}: {e}")
+            continue
 
         obra_data = metadata.get("obra", {})
         nom_autor = obra_data.get("autor", autor_slug.replace("-", " ").title())
@@ -126,7 +132,7 @@ def copiar_a_web(retrat_file: Path, autor_slug: str) -> Path | None:
 
 def generar_retrat(
     autor_slug: str,
-    autor_info: dict,
+    autor_info: dict[str, Any],
     agent: AgentRetratista,
     force: bool = False,
     dry_run: bool = False,
@@ -181,9 +187,6 @@ def generar_retrat(
 
         return True
 
-    except VeniceError as e:
-        print(f"  Error Venice per {nom}: {e}")
-        return False
     except ValueError as e:
         print(f"  Error per {nom}: {e}")
         return False
