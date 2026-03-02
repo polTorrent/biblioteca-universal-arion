@@ -1134,10 +1134,6 @@
   "fetch_cicero_laelius_de_amicitia": {
     "events": [
       {
-        "timestamp": 1772228751.1163328,
-        "result": "created"
-      },
-      {
         "timestamp": 1772273338.7886856,
         "result": "created"
       },
@@ -1211,6 +1207,10 @@
       },
       {
         "timestamp": 1772427603.8098834,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772435725.1634018,
         "result": "created"
       }
     ],
