@@ -415,6 +415,9 @@ class BuildSystem:
         # Construir pàgines d'autors amb retrats
         self.build_autors()
 
+        # Generar feed RSS
+        self.build_rss()
+
         print()
         print("═" * 60)
         print(f"✅ Construcció completada!")
@@ -1003,6 +1006,85 @@ class BuildSystem:
             count += 1
 
         print(f"   ✅ {count} pàgines d'autors generades")
+
+
+    def build_rss(self):
+        """Genera el feed RSS 2.0 amb les traduccions publicades."""
+        from xml.etree.ElementTree import Element, SubElement, ElementTree
+
+        print()
+        print("📡 Generant feed RSS...")
+
+        site_url = "https://poltorrent.github.io/editorial-classica"
+
+        rss = Element("rss", version="2.0", **{"xmlns:atom": "http://www.w3.org/2005/Atom"})
+        channel = SubElement(rss, "channel")
+
+        SubElement(channel, "title").text = "Biblioteca Arion"
+        SubElement(channel, "link").text = site_url
+        SubElement(channel, "description").text = (
+            "Noves traduccions al català d'obres clàssiques universals"
+        )
+        SubElement(channel, "language").text = "ca"
+        SubElement(channel, "copyright").text = "CC BY-SA 4.0"
+        SubElement(channel, "lastBuildDate").text = datetime.now(
+            tz=__import__("datetime").timezone.utc
+        ).strftime("%a, %d %b %Y %H:%M:%S +0000")
+
+        # atom:link self-reference (recomanat per validadors RSS)
+        atom_link = SubElement(channel, "atom:link")
+        atom_link.set("href", f"{site_url}/feed.xml")
+        atom_link.set("rel", "self")
+        atom_link.set("type", "application/rss+xml")
+
+        # Ordenar obres per data de revisió (més recent primer)
+        obres_ordenades = sorted(
+            self.obres,
+            key=lambda o: o.get("data_revisio") or "1900-01-01",
+            reverse=True,
+        )
+
+        for obra in obres_ordenades:
+            item = SubElement(channel, "item")
+            SubElement(item, "title").text = f"{obra['titol']} — {obra['autor']}"
+            obra_url = f"{site_url}/{obra['slug']}.html"
+            SubElement(item, "link").text = obra_url
+            SubElement(item, "guid", isPermaLink="true").text = obra_url
+
+            desc = obra.get("descripcio") or f"Traducció al català de {obra['titol']}"
+            SubElement(item, "description").text = desc
+
+            # pubDate a partir de data_revisio
+            data_str = obra.get("data_revisio") or ""
+            if data_str and data_str != "1900-01-01":
+                try:
+                    dt = datetime.strptime(str(data_str)[:10], "%Y-%m-%d")
+                    SubElement(item, "pubDate").text = dt.strftime(
+                        "%a, %d %b %Y 00:00:00 +0000"
+                    )
+                except (ValueError, TypeError):
+                    pass
+
+            SubElement(item, "author").text = obra.get("traductor", "Editorial Clàssica")
+
+            # Categoria basada en el path
+            obra_path = obra.get("_obra_path")
+            if obra_path:
+                parts = obra_path.relative_to(self.obres_dir).parts
+                if len(parts) >= 1:
+                    SubElement(item, "category").text = parts[0].title()
+
+        # Escriure XML
+        output_file = self.docs_dir / "feed.xml"
+        tree = ElementTree(rss)
+
+        import io
+
+        buf = io.BytesIO()
+        tree.write(buf, encoding="utf-8", xml_declaration=True)
+        output_file.write_bytes(buf.getvalue())
+
+        print(f"   ✅ feed.xml generat ({len(obres_ordenades)} entrades)")
 
 
 def main():
