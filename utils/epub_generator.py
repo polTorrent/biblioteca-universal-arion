@@ -7,7 +7,7 @@ Crea EPUB 3.0 amb fallback NCX (EPUB 2) sense dependències externes
 import re
 import uuid
 import zipfile
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from xml.etree.ElementTree import Element, SubElement, tostring
@@ -176,10 +176,18 @@ class GeneradorEPUB:
         return self.md.convert(text)
 
     def _netejar_capcalera_v2(self, text: str) -> str:
-        """Elimina capçalera de metadades V2 (fins al primer ---)."""
+        """Elimina capçalera de metadades V2 (YAML frontmatter o bloc fins a ---)."""
         if "---" not in text:
             return text
         lines = text.split("\n")
+        # YAML frontmatter: comença amb --- i acaba amb ---
+        if lines[0].strip() == "---":
+            for i, line in enumerate(lines[1:], 1):
+                if line.strip() == "---":
+                    return "\n".join(lines[i + 1:]).strip()
+            # Només un --- inicial sense tancament: eliminar primera línia
+            return "\n".join(lines[1:]).strip()
+        # Format V2: capçalera lliure acabada amb ---
         for i, line in enumerate(lines):
             if line.strip() == "---":
                 return "\n".join(lines[i + 1:]).strip()
@@ -316,11 +324,11 @@ class GeneradorEPUB:
             dc_desc.text = descripcio.strip()
 
         dc_date = SubElement(meta, "dc:date")
-        dc_date.text = datetime.now().strftime("%Y-%m-%d")
+        dc_date.text = datetime.now(tz=timezone.utc).strftime("%Y-%m-%d")
 
         modified = SubElement(meta, "meta")
         modified.set("property", "dcterms:modified")
-        modified.text = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+        modified.text = datetime.now(tz=timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
 
         if te_portada_img:
             cover_meta = SubElement(meta, "meta")
@@ -540,7 +548,7 @@ class GeneradorEPUB:
                 if isinstance(content, bytes):
                     zf.writestr(path, content)
                 else:
-                    zf.writestr(path, content.encode("utf-8") if isinstance(content, str) else content)
+                    zf.writestr(path, content.encode("utf-8"))
 
         return output_path
 
