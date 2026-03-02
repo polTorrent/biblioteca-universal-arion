@@ -522,6 +522,8 @@ class SearchPanelManager {
         this.searchPanel = document.querySelector('.search-panel');
         this.closeBtn = document.querySelector('.search-close');
         this.input = this.searchPanel?.querySelector('input');
+        this.searchIndex = null;
+        this.suggestionsEl = null;
 
         if (!this.searchBtn || !this.searchPanel) return;
 
@@ -549,6 +551,65 @@ class SearchPanelManager {
                 this.close();
             }
         });
+
+        // Suggeriments instantanis
+        if (this.input) {
+            this.createSuggestions();
+            let timer;
+            this.input.addEventListener('input', () => {
+                clearTimeout(timer);
+                timer = setTimeout(() => this.showSuggestions(), 150);
+            });
+        }
+    }
+
+    createSuggestions() {
+        this.suggestionsEl = document.createElement('div');
+        this.suggestionsEl.className = 'search-suggestions';
+        this.suggestionsEl.style.cssText = 'max-width:600px;margin:0 auto;';
+        this.searchPanel.querySelector('.container').appendChild(this.suggestionsEl);
+    }
+
+    loadIndex() {
+        if (this.searchIndex) return Promise.resolve(this.searchIndex);
+        return fetch('data/search-index.json')
+            .then(r => r.json())
+            .then(data => { this.searchIndex = data; return data; })
+            .catch(() => []);
+    }
+
+    showSuggestions() {
+        const q = (this.input.value || '').trim().toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+        if (!q || q.length < 2) {
+            this.suggestionsEl.innerHTML = '';
+            return;
+        }
+        this.loadIndex().then(index => {
+            const terms = q.split(/\s+/);
+            const matches = index.filter(obra => {
+                const haystack = (obra.titol + ' ' + obra.autor + ' ' + obra.categoria)
+                    .toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                return terms.every(t => haystack.indexOf(t) !== -1);
+            }).slice(0, 5);
+
+            if (matches.length === 0) {
+                this.suggestionsEl.innerHTML = '';
+                return;
+            }
+            this.suggestionsEl.innerHTML = matches.map(o =>
+                '<a href="' + o.url + '" class="search-suggestion-item">' +
+                    '<strong>' + this.esc(o.titol) + '</strong>' +
+                    '<span> — ' + this.esc(o.autor) + '</span>' +
+                '</a>'
+            ).join('');
+        });
+    }
+
+    esc(t) {
+        const d = document.createElement('div');
+        d.textContent = t;
+        return d.innerHTML;
     }
 
     isOpen() {
@@ -568,10 +629,12 @@ class SearchPanelManager {
         if (this.input) {
             this.input.focus();
         }
+        this.loadIndex();
     }
 
     close() {
         this.searchPanel.setAttribute('hidden', '');
+        if (this.suggestionsEl) this.suggestionsEl.innerHTML = '';
     }
 }
 

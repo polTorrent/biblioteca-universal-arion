@@ -406,6 +406,9 @@ class BuildSystem:
         # Construir pàgines de mecenatge
         self.build_mecenatge()
 
+        # Construir pàgina de cerca i índex
+        self.build_cerca()
+
         # Generar EPUBs per obres validades
         self.build_epubs()
 
@@ -806,6 +809,56 @@ class BuildSystem:
                 print(f"   ❌ {slug}: {e}")
 
         print(f"   📕 {count} EPUBs generats")
+
+    def build_cerca(self):
+        """Construeix la pàgina de cerca i genera l'índex JSON."""
+        import json
+
+        print()
+        print("🔍 Construint cercador...")
+
+        # Generar índex de cerca (JSON amb dades de totes les obres)
+        search_index: List[Dict[str, Any]] = []
+        for obra in self.obres:
+            obra_path = obra.get('_obra_path')
+            categoria = 'altres'
+            if obra_path:
+                # Extreure categoria del path (obres/<categoria>/autor/obra)
+                parts = obra_path.relative_to(self.obres_dir).parts
+                if len(parts) >= 1:
+                    categoria = parts[0]
+
+            search_index.append({
+                'titol': obra.get('titol', ''),
+                'autor': obra.get('autor', ''),
+                'categoria': categoria,
+                'llengua': obra.get('llengua_original', ''),
+                'any_original': str(obra.get('any_original', '')),
+                'descripcio': obra.get('descripcio', '') or '',
+                'estat': obra.get('estat', 'esborrany'),
+                'url': f"{obra['slug']}.html",
+                'portada': obra.get('portada_url', ''),
+            })
+
+        # Guardar índex JSON
+        data_dest = self.docs_dir / 'data'
+        data_dest.mkdir(exist_ok=True)
+        index_file = data_dest / 'search-index.json'
+        with open(index_file, 'w', encoding='utf-8') as f:
+            json.dump(search_index, f, ensure_ascii=False, indent=None)
+        print(f"   ✅ search-index.json generat ({len(search_index)} obres)")
+
+        # Renderitzar pàgina de cerca
+        template = self.env.get_template('cerca.html')
+        html = template.render(
+            base_url='',
+            site_url='https://editorial-classica.cat',
+            active_page='cerca',
+        )
+
+        output_file = self.docs_dir / 'cerca.html'
+        output_file.write_text(html, encoding='utf-8')
+        print("   ✅ cerca.html generat")
 
     def build_micromecenatge_pages(self):
         """Genera pàgines individuals per cada projecte de micromecenatge."""
