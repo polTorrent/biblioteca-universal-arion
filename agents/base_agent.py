@@ -98,10 +98,11 @@ def extract_json_from_text(text: str) -> dict[str, Any] | None:
                     continue
 
     # Intentar amb regex per blocs de codi
-    code_block_match = re.search(r'```(?:json)?\s*(\{[\s\S]*?\})\s*```', text)
+    # Extraiem tot el contingut del bloc i deixem que json.loads gestioni l'estructura
+    code_block_match = re.search(r'```(?:json)?\s*([\s\S]*?)\s*```', text)
     if code_block_match:
         try:
-            parsed = json.loads(code_block_match.group(1))
+            parsed = json.loads(code_block_match.group(1).strip())
             if isinstance(parsed, dict):
                 return parsed
         except json.JSONDecodeError:
@@ -438,6 +439,10 @@ class BaseAgent(ABC):
                     # Extreure contingut de la resposta del CLI
                     # Format: {"type": "result", "result": "...", "usage": {...}, ...}
                     content = response_data.get("result") or ""
+                    if not content:
+                        raise RuntimeError(
+                            "El CLI ha retornat una resposta buida (sense contingut)"
+                        )
 
                     # Determinar model utilitzat
                     model_usage = response_data.get("modelUsage", {})
