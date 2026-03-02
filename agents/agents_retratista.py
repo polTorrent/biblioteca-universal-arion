@@ -28,15 +28,14 @@ Exemple d'ús:
 
 import io
 import os
-import requests
 from pathlib import Path
-from PIL import Image
 from typing import ClassVar
 
+import requests
+from PIL import Image
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, BaseAgent
-
 
 # ═══════════════════════════════════════════════════════════════════════════
 # PROMPT D'ESTIL ROTOSCÒPIA SEPIA
@@ -117,12 +116,11 @@ class AgentRetratista(BaseAgent):
 
         # Headers per Wikimedia (requereix User-Agent)
         self.wikimedia_headers = {
-            "User-Agent": "BibliotecaArion/1.0 (https://github.com/biblioteca-arion; contact@arion.cat)"
+            "User-Agent": (
+                "BibliotecaArion/1.0"
+                " (https://github.com/biblioteca-arion; contact@arion.cat)"
+            )
         }
-
-    def log_error(self, message: str) -> None:
-        """Log d'error."""
-        self.logger.log_error(self.agent_name, Exception(message))
 
     @property
     def system_prompt(self) -> str:
@@ -150,7 +148,10 @@ class AgentRetratista(BaseAgent):
         }
 
         try:
-            resp = requests.get(self.WIKIMEDIA_API, params=params, headers=self.wikimedia_headers, timeout=10)
+            resp = requests.get(
+                self.WIKIMEDIA_API, params=params,
+                headers=self.wikimedia_headers, timeout=10,
+            )
             resp.raise_for_status()
             data = resp.json()
 
@@ -172,13 +173,16 @@ class AgentRetratista(BaseAgent):
                 "format": "json",
             }
 
-            resp_url = requests.get(self.WIKIMEDIA_API, params=params_url, headers=self.wikimedia_headers, timeout=10)
+            resp_url = requests.get(
+                self.WIKIMEDIA_API, params=params_url,
+                headers=self.wikimedia_headers, timeout=10,
+            )
             resp_url.raise_for_status()
             data_url = resp_url.json()
 
             pages = data_url.get("query", {}).get("pages", {})
             for page in pages.values():
-                imageinfo = page.get("imageinfo", [{}])[0]
+                imageinfo = (page.get("imageinfo") or [{}])[0]
                 url = imageinfo.get("url")
                 if url:
                     self.log_info(f"URL imatge: {url[:80]}...")
@@ -190,7 +194,9 @@ class AgentRetratista(BaseAgent):
             self.log_error(f"Error cercant a Wikimedia: {e}")
             return None
 
-    def _aplicar_estil_venice(self, image_url: str, estil: str = "rotoscopia_sepia") -> bytes | None:
+    def _aplicar_estil_venice(
+        self, image_url: str, estil: str = "rotoscopia_sepia",
+    ) -> bytes | None:
         """Aplica estil artístic amb Venice /image/edit.
 
         Args:
@@ -256,7 +262,7 @@ class AgentRetratista(BaseAgent):
             img.thumbnail((512, 512), Image.Resampling.LANCZOS)
 
             # Convertir a escala de grisos
-            from PIL import ImageOps, ImageEnhance, ImageFilter
+            from PIL import ImageEnhance, ImageFilter, ImageOps
 
             gray = ImageOps.grayscale(img)
 
@@ -578,7 +584,7 @@ if __name__ == "__main__":
     print("=" * 60)
 
     agent = AgentRetratista()
-    print(f"✅ Agent creat")
+    print("✅ Agent creat")
     print(f"   Venice: {'✅ Configurada' if agent.venice_api_key else '❌ No configurada'}")
     print(f"   Estil: {agent.retratista_config.estil}")
     print()
