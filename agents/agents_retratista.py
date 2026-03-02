@@ -431,13 +431,10 @@ def generar_retrat_autor(
 # ═══════════════════════════════════════════════════════════════════════════
 
 AUTORS_IMATGES = {
+    # Filosofia
     "plato": {
         "nom": "Plató",
         "nom_wikimedia": "Plato",
-    },
-    "aristotil": {
-        "nom": "Aristòtil",
-        "nom_wikimedia": "Aristotle",
     },
     "seneca": {
         "nom": "Sèneca",
@@ -451,10 +448,23 @@ AUTORS_IMATGES = {
         "nom": "Heràclit d'Efes",
         "nom_wikimedia": "Heraclitus",
     },
+    "marc-aureli": {
+        "nom": "Marc Aureli",
+        "nom_wikimedia": "Marcus Aurelius",
+    },
     "schopenhauer": {
         "nom": "Arthur Schopenhauer",
         "nom_wikimedia": "Arthur Schopenhauer",
     },
+    "nietzsche": {
+        "nom": "Friedrich Nietzsche",
+        "nom_wikimedia": "Friedrich Nietzsche",
+    },
+    "montaigne": {
+        "nom": "Michel de Montaigne",
+        "nom_wikimedia": "Michel de Montaigne",
+    },
+    # Narrativa
     "akutagawa": {
         "nom": "Akutagawa Ryūnosuke",
         "nom_wikimedia": "Ryunosuke Akutagawa",
@@ -462,6 +472,74 @@ AUTORS_IMATGES = {
     "garxin": {
         "nom": "Vsévolod Garxin",
         "nom_wikimedia": "Vsevolod Garshin",
+    },
+    "kafka": {
+        "nom": "Franz Kafka",
+        "nom_wikimedia": "Franz Kafka",
+    },
+    "dostoievski": {
+        "nom": "Fiódor Dostoievski",
+        "nom_wikimedia": "Fyodor Dostoevsky",
+    },
+    "txekhov": {
+        "nom": "Anton Txèkhov",
+        "nom_wikimedia": "Anton Chekhov",
+    },
+    "edgar-allan-poe": {
+        "nom": "Edgar Allan Poe",
+        "nom_wikimedia": "Edgar Allan Poe",
+    },
+    "emily-bronte": {
+        "nom": "Emily Brontë",
+        "nom_wikimedia": "Emily Brontë",
+    },
+    "herman-melville": {
+        "nom": "Herman Melville",
+        "nom_wikimedia": "Herman Melville",
+    },
+    "sade": {
+        "nom": "Marquès de Sade",
+        "nom_wikimedia": "Marquis de Sade",
+    },
+    # Poesia
+    "shakespeare": {
+        "nom": "William Shakespeare",
+        "nom_wikimedia": "William Shakespeare",
+    },
+    "baudelaire": {
+        "nom": "Charles Baudelaire",
+        "nom_wikimedia": "Charles Baudelaire",
+    },
+    "giacomo-leopardi": {
+        "nom": "Giacomo Leopardi",
+        "nom_wikimedia": "Giacomo Leopardi",
+    },
+    "omar-khayyam": {
+        "nom": "Omar Khayyam",
+        "nom_wikimedia": "Omar Khayyam",
+    },
+    # Teatre
+    "sofocles": {
+        "nom": "Sòfocles",
+        "nom_wikimedia": "Sophocles",
+    },
+    "august-strindberg": {
+        "nom": "August Strindberg",
+        "nom_wikimedia": "August Strindberg",
+    },
+    # Oriental
+    "laozi": {
+        "nom": "Laozi",
+        "nom_wikimedia": "Laozi",
+    },
+    "matsuo-basho": {
+        "nom": "Matsuo Bashō",
+        "nom_wikimedia": "Matsuo Bashō",
+    },
+    # Assaig
+    "cicero": {
+        "nom": "Marc Tul·li Ciceró",
+        "nom_wikimedia": "Cicero",
     },
 }
 

@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+
+{% block title %}{{ autor.nom }} - Biblioteca Arion{% endblock %}
+{% block description %}Obres de {{ autor.nom }} traduïdes al català a la Biblioteca Arion.{% endblock %}
+
+{% block og_title %}{{ autor.nom }} - Biblioteca Arion{% endblock %}
+{% block og_description %}{{ autor.obres|length }} {% if autor.obres|length == 1 %}obra{% else %}obres{% endif %} traduïdes al català{% endblock %}
+
+{% block head_extra %}
+<style>
+.autor-hero {
+    padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+}
+.autor-hero-inner {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-2xl);
+    flex-wrap: wrap;
+}
+.autor-retrat {
+    flex-shrink: 0;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    border: 3px solid var(--color-border-light);
+}
+.autor-retrat img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.autor-retrat-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-bg-tertiary);
+    font-family: var(--font-titles);
+    font-size: 4rem;
+    color: var(--color-accent);
+}
+.autor-info {
+    flex: 1;
+    min-width: 280px;
+}
+.autor-info h1 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-3xl);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-xs);
+}
+.autor-info .autor-original {
+    font-family: var(--font-body);
+    font-size: var(--font-size-lg);
+    color: var(--color-text-muted);
+    font-style: italic;
+    margin: 0 0 var(--spacing-md);
+}
+.autor-meta {
+    display: flex;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    margin-bottom: var(--spacing-md);
+}
+.autor-meta-item {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-secondary);
+}
+.autor-meta-item strong {
+    display: block;
+    font-size: var(--font-size-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-text-muted);
+    margin-bottom: 2px;
+}
+.autor-obres-section {
+    padding: var(--spacing-xl) 0 var(--spacing-3xl);
+}
+.autor-obres-section h2 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-2xl);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--color-border-light);
+}
+@media (max-width: 600px) {
+    .autor-hero-inner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .autor-retrat {
+        width: 140px;
+        height: 140px;
+    }
+    .autor-meta {
+        justify-content: center;
+    }
+}
+</style>
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "{{ autor.nom }}",
+    {% if autor.retrat_url %}"image": "{{ autor.retrat_url }}",{% endif %}
+    "workExample": [
+        {% for obra in autor.obres %}
+        {
+            "@type": "Book",
+            "name": "{{ obra.titol }}"
+        }{% if not loop.last %},{% endif %}
+        {% endfor %}
+    ]
+}
+</script>
+{% endblock %}
+
+{% block content %}
+<section class="autor-hero">
+    <div class="container">
+        <div class="autor-hero-inner">
+            <div class="autor-retrat">
+                {% if autor.retrat_url %}
+                <img src="{{ base_url }}{{ autor.retrat_url }}"
+                     alt="Retrat de {{ autor.nom }}"
+                     loading="lazy">
+                {% else %}
+                <div class="autor-retrat-placeholder">
+                    {{ autor.nom[0] }}
+                </div>
+                {% endif %}
+            </div>
+
+            <div class="autor-info">
+                <h1>{{ autor.nom }}</h1>
+                {% if autor.nom_original and autor.nom_original != autor.nom %}
+                <p class="autor-original">{{ autor.nom_original }}</p>
+                {% endif %}
+
+                <div class="autor-meta">
+                    <div class="autor-meta-item">
+                        <strong>Obres traduïdes</strong>
+                        {{ autor.obres|length }}
+                    </div>
+                    {% if autor.categoria %}
+                    <div class="autor-meta-item">
+                        <strong>Categoria</strong>
+                        {{ autor.categoria|capitalize }}
+                    </div>
+                    {% endif %}
+                    {% if autor.llengua %}
+                    <div class="autor-meta-item">
+                        <strong>Llengua original</strong>
+                        {{ autor.llengua|capitalize }}
+                    </div>
+                    {% endif %}
+                    {% if autor.epoca %}
+                    <div class="autor-meta-item">
+                        <strong>Època</strong>
+                        {{ autor.epoca }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="autor-obres-section">
+    <div class="container">
+        <h2>Obres traduïdes</h2>
+        <div class="works-grid">
+            {% for obra in autor.obres %}
+            <article class="work-card">
+                <div class="work-card-cover">
+                    <a href="{{ base_url }}{{ obra.slug }}.html">
+                        {% if obra.portada_url %}
+                        <img src="{{ base_url }}{{ obra.portada_url }}"
+                             alt="Portada de {{ obra.titol }}"
+                             loading="lazy">
+                        {% else %}
+                        <div class="work-cover-placeholder" style="width:100px;height:140px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-tertiary);border-radius:var(--radius-sm);font-family:var(--font-titles);font-size:2rem;color:var(--color-accent);">
+                            {{ obra.titol[0] }}
+                        </div>
+                        {% endif %}
+                    </a>
+                </div>
+                <div class="work-card-content">
+                    <h3 class="work-card-title"><a href="{{ base_url }}{{ obra.slug }}.html">{{ obra.titol }}</a></h3>
+                    {% if obra.titol_original %}
+                    <p class="work-card-author" style="font-style:italic;">{{ obra.titol_original }}</p>
+                    {% endif %}
+                    {% if obra.descripcio %}
+                    <p class="work-card-description">{{ obra.descripcio }}</p>
+                    {% endif %}
+                    <div class="work-card-meta">
+                        {% if obra.any_original %}
+                        <span class="meta-year">{{ obra.any_original }}</span>
+                        {% endif %}
+                        {% if obra.estat %}
+                        <span class="badge badge-{{ obra.estat }}">{{ obra.estat }}</span>
+                        {% endif %}
+                        {% if obra.qualitat %}
+                        <span class="meta-quality">{{ obra.qualitat }}/10</span>
+                        {% endif %}
+                    </div>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+
+        <nav class="work-navigation mt-2xl" aria-label="Navegació">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="{{ base_url }}cataleg.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</section>
+{% endblock %}

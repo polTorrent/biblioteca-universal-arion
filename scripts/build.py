@@ -412,6 +412,9 @@ class BuildSystem:
         # Generar EPUBs per obres validades
         self.build_epubs()
 
+        # Construir pàgines d'autors amb retrats
+        self.build_autors()
+
         print()
         print("═" * 60)
         print(f"✅ Construcció completada!")
@@ -913,6 +916,93 @@ class BuildSystem:
                 count += 1
 
         print(f"   ✅ {count} fitxes de micromecenatge generades")
+
+    def _autor_slug(self, nom: str) -> str:
+        """Genera un slug consistent per un nom d'autor.
+
+        Mateix algorisme que el template obra.html usa per generar
+        l'href dels autor-links.
+        """
+        return (
+            nom.lower()
+            .replace("'", "")
+            .replace(" ", "-")
+            .replace("(", "")
+            .replace(")", "")
+        )
+
+    def _trobar_retrat(self, autor_slug: str) -> Optional[str]:
+        """Busca el retrat d'un autor al directori docs/assets/autors/.
+
+        Args:
+            autor_slug: Slug de l'autor (nom del directori).
+
+        Returns:
+            URL relativa del retrat o None.
+        """
+        autors_dir = self.docs_dir / 'assets' / 'autors'
+        retrat_file = autors_dir / f'retrat_{autor_slug}.png'
+        if retrat_file.exists():
+            return f'assets/autors/retrat_{autor_slug}.png'
+        return None
+
+    def build_autors(self):
+        """Construeix pàgines individuals per cada autor."""
+        print()
+        print("🖼️  Construint pàgines d'autors...")
+
+        if not (self.templates_dir / 'autor.html').exists():
+            print("   ⚠️  Template autor.html no trobat")
+            return
+
+        template = self.env.get_template('autor.html')
+
+        # Agrupar obres per autor
+        autors: Dict[str, Dict[str, Any]] = {}
+
+        for obra in self.obres:
+            nom_autor = obra.get('autor', 'Desconegut')
+            autor_slug = self._autor_slug(nom_autor)
+
+            # Extreure slug del directori d'autor i categoria
+            obra_path = obra.get('_obra_path')
+            dir_slug = obra_path.parent.name if obra_path else autor_slug
+            categoria = ''
+            if obra_path:
+                parts = obra_path.relative_to(self.obres_dir).parts
+                if len(parts) >= 1:
+                    categoria = parts[0]
+
+            if autor_slug not in autors:
+                retrat_url = self._trobar_retrat(dir_slug)
+                autors[autor_slug] = {
+                    'nom': nom_autor,
+                    'nom_original': obra.get('autor_original'),
+                    'slug': autor_slug,
+                    'dir_slug': dir_slug,
+                    'retrat_url': retrat_url,
+                    'categoria': categoria,
+                    'llengua': obra.get('llengua_original', ''),
+                    'epoca': obra.get('any_original', ''),
+                    'obres': [],
+                }
+
+            autors[autor_slug]['obres'].append(obra)
+
+        # Generar pàgina per cada autor
+        count = 0
+        for autor_slug, autor_data in autors.items():
+            html = template.render(
+                base_url='',
+                site_url='https://editorial-classica.cat',
+                autor=autor_data,
+            )
+
+            output_file = self.docs_dir / f'autor-{autor_slug}.html'
+            output_file.write_text(html, encoding='utf-8')
+            count += 1
+
+        print(f"   ✅ {count} pàgines d'autors generades")
 
 
 def main():
