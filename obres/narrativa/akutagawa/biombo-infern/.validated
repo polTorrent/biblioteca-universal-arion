@@ -1,0 +1,15 @@
+data_validacio: 2026-03-03
+puntuacio: 7.5
+validador: supervisio-qualitat-claude
+notes: |
+  Traducció de bona qualitat literària amb veu narrativa ben aconseguida.
+  Fidel a l'original (20 capítols complets, sense omissions significatives).
+
+  Problemes pendents de correcció menor:
+  - Typos: "Pero" (l.16), "perdondré" (l.40), "detestet" (l.56/401),
+    "gotejavat" (l.162), "Succeïssos" (l.231), "de sembla trist" (l.243),
+    "paraudes" (l.321), "ouvits" (l.351), "estenguéé" (l.365)
+  - Glossari incomplet: manca entrada per "hakama" (marcat [T] al text)
+  - Notes: numeració [^n] es reinicia entre capítols i algunes notes
+    referenciades al text (XII, XVII, XVIII) no tenen entrada a notes.md
+  - metadata.yml: falten camps seccions, paraules_original, notes, termes_glossari
