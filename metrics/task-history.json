@@ -1134,10 +1134,6 @@
   "fetch_cicero_laelius_de_amicitia": {
     "events": [
       {
-        "timestamp": 1772392536.9109602,
-        "result": "created"
-      },
-      {
         "timestamp": 1772401533.5103316,
         "result": "created"
       },
@@ -1211,6 +1207,10 @@
       },
       {
         "timestamp": 1772549126.896683,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772557204.4772825,
         "result": "created"
       }
     ],
@@ -1355,6 +1355,24 @@
     "events": [
       {
         "timestamp": 1772536525.288706,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_sala-numero-6": {
+    "events": [
+      {
+        "timestamp": 1772557203.3043253,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_justine": {
+    "events": [
+      {
+        "timestamp": 1772557203.4381385,
         "result": "created"
       }
     ],
