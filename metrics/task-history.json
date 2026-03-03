@@ -1350,5 +1350,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_quatre-dies": {
+    "events": [
+      {
+        "timestamp": 1772536525.288706,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
