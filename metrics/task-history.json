@@ -1341,5 +1341,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_biombo-infern": {
+    "events": [
+      {
+        "timestamp": 1772534726.072341,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
