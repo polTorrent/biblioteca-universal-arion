@@ -10,8 +10,14 @@ obra:
   genere: narrativa
   descripcio: Primera novel·la publicada del Marquès de Sade (1791). Reflexió filosòfica
     sobre virtut i vici a través de les desgràcies de Justine.
-  font: Wikisource (domini públic)
+  font: https://fr.wikisource.org/wiki/Justine_ou_les_Malheurs_de_la_vertu
+seccions: 3
+estadistiques:
+  paraules_original: 113766
+  paraules_traduccio: 9592
+  notes: 10
+  termes_glossari: 16
 revisio:
   estat: en_curs
-  data_revisio: '2026-02-02'
-  qualitat: 8.1
+  data_revisio: '2026-03-03'
+  qualitat: 0
