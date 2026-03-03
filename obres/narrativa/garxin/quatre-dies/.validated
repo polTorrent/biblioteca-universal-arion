@@ -1,0 +1,31 @@
+data_validacio: 2026-03-03
+puntuacio_global: 8.5
+validador: Claude (supervisió de qualitat)
+
+puntuacions:
+  qualitat_catala: 8.0
+  fidelitat_original: 9.0
+  glossari: 9.0
+  format: 8.5
+  metadata: 8.0
+
+resum: >
+  Traducció de qualitat alta. Català literari natural i fluid, amb registre
+  adequat al flux de consciència del text original. Fidelitat excel·lent:
+  cap omissió ni invenció detectada. Glossari de 15 termes plenament
+  consistent amb el text i les notes a peu de pàgina. Notes erudites
+  completes i ben estructurades.
+
+problemes_menors:
+  - "'llençat' (2 cops) → forma dialectal; la normativa IEC prefereix 'llançat'"
+  - "'espàsticament' (§VII) → millor 'espasmòdicament' o 'convulsivament'"
+  - "'se m'ha afeblida' (§VIII) → participi invariable amb haver: 'se m'ha afeblat'"
+  - "'em va apoderar' (§VIII) → verb reflexiu: 'es va apoderar de mi'"
+  - "estadistiques.notes (12) no coincideix amb les 15 notes a peu de pàgina"
+
+punts_forts:
+  - Registre literari excel·lent que captura el to del flux de consciència
+  - Adaptacions culturals intel·ligents (unitats, expressions idiomàtiques)
+  - Glossari exhaustiu amb transliteracions del rus
+  - Notes erudites de gran valor acadèmic (context històric, simbolisme, influència)
+  - Primera traducció catalana d'un autor rus de primera línia
