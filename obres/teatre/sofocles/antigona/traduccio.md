@@ -502,7 +502,33 @@ ella que no va deixar que el seu propi germà,
 caigut sense sepultura en el camp de batalla,
 fos devorat pels gossos carronyers o per cap ocell.
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+Aquesta no mereix un honor d'or?
+Aquestes paraules fosques corren en silenci.
+Per a mi, quan tu actues amb èxit, pare,
+no hi ha cap bé més preuat,
+perquè quin ornament més gran per als fills
+que la glòria florent d'un pare? I què pot ser més gran
+per a un pare que els seus fills?
+No portis doncs un sol caràcter en tu mateix,
+com tu dius, i res més, pensant que això és just.
+Perquè aquell que sembla pensar tot sol,
+o tenir una llengua que ningú més té, o una ànima única,
+aquests, quan són posats a prova, es mostren buits.
+Per a un home, fins i tot si és savi, aprendre
+moltes coses no té res de vergonyós, ni és vergonyós cedir.
+Veus al costat dels torrents hivernals
+quants arbres cedeixen i com salven les branques,
+mentre que els qui s'hi oposen es perden soca-rel?
+Així mateix, la nau que navega amb les veles ben tenses
+i no cedeix en res, acaba voltejant
+amb els bancs de popa cap avall.
+Per tant, cedeix i calma la teva còlera.
+Si puc donar una opinió, tot i ser més jove,
+jo dic que seria molt millor
+que l'home nasqués ple de tot saber;
+però si no és així —i sovint no ho és—
+també és bell aprendre dels qui parlen bé.
+CORIFEU: Senyor, és raonable que l'escoltis, si diu alguna cosa oportuna.
 
 també has d'aprendre tu això; s'ha dit bé de dues maneres.
 CREÓ: ¿Els de la meva edat també haurem de ser ensenyats
@@ -826,8 +852,34 @@ I des de lluny algú sent una veu
 de plors aguts, sense ritus, al voltant de la cambra,
 i va a comunicar-ho al senyor Creont.
 
-Mentre s'acosta cada cop més, li arriben indicis confusos d'un crit lamentable. Gemegant, emet aquestes paraules de dolor: "Ai, desgraciat de mi! Sóc potser un endeví? Camino pel camí més desgraciat de tots els que he recorregut? Em crida la veu del meu fill. Però vosaltres, servidors, aneu més de pressa i, situant-vos al costat de la tomba, mireu, aparteu les pedres del túmul, entrant fins a la mateixa entrada: si sento la veu d'Hèmon o si els déus m'enganyen."
-MISSATGER: Vam complir aquestes ordres del nostre desanimat senyor. I en l'últim refugi sepulcral la vam veure penjada del coll, lligada amb un llaç de lli del seu propi vel, i ell caigut al seu voltant, plorant la pèrdua del llit nupcial i les accions del pare i el llit maleït. I quan els veu, gemegant amargament, va cap a ell i, cridant entre plors, li diu: "Oh desgraciat, quina acció has comès! Què tenies al cap? En quina desgràcia has perit? Surt, fill meu! Com a pare t'ho suplico!" I el noi, mirant-lo amb ulls salvatges, escupint-li a la cara i sense respondre mot, treu la doble fulla de l'espasa. Quan el pare s'elança per fugir, se li escapa. Aleshores el desgraciat, iritat amb si mateix, tal com estava, estirant-se...
+I a l'infortunat li arriben sense senyal els crits
+de qui s'acosta cada cop més a ell, i exhalant un gemec
+pronuncia paraules plenes de dol: «Ai, desgraciat de mi,
+potser sóc endeví? Em dirigeixo potser pel camí
+més desventurat de tots els que he recorregut?
+La veu del meu fill em caricia l'oïda. Però, servents,
+aneu-hi més a prop, de pressa, i col·locant-vos davant la tomba
+mireu-ho bé, entrant entre les pedres
+fins a la mateixa boca, si reconec la veu d'Hemon
+o si els déus m'enganyen.»
+MISSATGER
+Això férem per manament del nostre senyor afligit.
+I al fons de la sepultura la vam veure
+penjada pel coll,
+subjecta per un llaç teixit de lli,
+i ell, caigut al seu voltant, abraçant-la per la cintura,
+plorant la pèrdua del seu amor perdut
+i les obres del pare i el matrimoni desgraciat.
+I quan el veu, llançant un crit terrible,
+s'acosta cap a ell i bramant l'invoca:
+«Oh desgraciat, quina acció has comès! Què
+has pensat? En quina desgràcia has perit?
+Surt, fill meu, te'n prego.»
+Però el noi, mirant-lo amb ulls salvatges,
+li escup a la cara i sense dir res,
+desembaina l'espasa de doble tall. I quan el pare
+intenta fugir, el va fallar; llavors el desgraciat,
+iracut contra si mateix, tal com estava, es va clavar l'espasa al pit.
 
 Es va clavar l'espasa al pit, i encara conscient s'abraça a la donzella amb els braços ensangonats.
 I exhalant expulsa un raig violent de sang vermella sobre la galta blanca.
@@ -876,7 +928,49 @@ COR Pots veure-ho; ja no és dins, en secret.
 CREÓ Ai de mi!
 Veig aquest altre segon mal, el desgraciat que soc. 1295
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+Qui em dirà, doncs, quin destí m'espera encara?
+Tinc entre les mans, ara mateix, el meu fill,
+desgraciat, i davant veig un altre mort.
+Ai, ai, mare desgraciada! Ai, fill meu!
+**MISSATGER**
+Ella, amb l'espasa d'esmolada fulla,
+ha tancat per sempre els ulls foscos, plorant primer
+la mort gloriosa del difunt Megareu,
+i després la d'aquest, i finalment t'ha maleït
+a tu, l'infanticida, per les teves accions malvades.
+**CREONT**
+Ai, ai de mi!
+He tremolat d'espant. Per què ningú
+m'ha traspassat amb una espasa de doble tall?
+Desgraciat, ai!
+Desgraciat, immers en la misèria.
+**MISSATGER**
+La difunta t'acusava de ser el culpable
+d'aquestes morts i de les altres.
+**CREONT**
+Com s'ha donat la mort?
+**MISSATGER**
+S'ha traspassat sota el fetge amb la pròpia mà
+quan ha sabut la mort lamentable del fill.
+**CREONT**
+Ai de mi! Això no ho pot carregar 
+cap altre mortal; és culpa meva.
+Jo t'he matat, jo, desgraciat,
+jo! Ho dic de veritat. Servants,
+endugeu-me el més ràpid possible, tregueu-me de la vista,
+a mi, que no sóc res.
+**COR**
+Aconseges el que convé, si hi ha benefici en les desgràcies.
+Els mals presents, com més breus, millors.
+**CREONT**
+Que vingui, que vingui,
+que aparegui el més bell dels destins,
+el que em porti l'últim dia,
+el suprem! Que vingui, que vingui,
+perquè no vegi cap altre alba.
+**COR**
+Això és del futur. Cal tenir cura
+de fer les coses presents. De la resta se n'ocupen els qui ho han de fer.
 
 ---
 

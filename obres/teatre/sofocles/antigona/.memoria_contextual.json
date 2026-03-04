@@ -2,12 +2,6 @@
   "traduccions": {},
   "personatges": {},
   "decisions_estil": [],
-  "context_investigacio": {
-    "autor_bio": "Sòfocles. ",
-    "context_historic": "",
-    "context_obra": "Antígona. ",
-    "influencies": [],
-    "temes_principals": []
-  },
+  "context_investigacio": null,
   "notes_pendents": []
 }
