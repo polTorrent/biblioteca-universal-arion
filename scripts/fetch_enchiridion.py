@@ -35,14 +35,14 @@ def fetch_raw_text() -> str:
     )
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 BibliotecaArion/1.0'})
     try:
-        resp = urllib.request.urlopen(req, timeout=30)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.read().decode('utf-8')
     except urllib.error.HTTPError as e:
         print(f"Error HTTP {e.code}: {e.reason}")
         sys.exit(1)
     except urllib.error.URLError as e:
         print(f"Error de connexió: {e.reason}")
         sys.exit(1)
-    return resp.read().decode('utf-8')
 
 
 def clean_wikitext(raw: str) -> str:
@@ -66,7 +66,7 @@ def clean_wikitext(raw: str) -> str:
 
     # Remove <ref> tags
     text = re.sub(r'<ref[^>]*>.*?</ref>', '', text, flags=re.DOTALL)
-    text = re.sub(r'<ref[^/]*/>', '', text)
+    text = re.sub(r'<ref[^>]*/>', '', text)
 
     # Convert chapter headers: ==αʹ== -> ## I (αʹ)
     def convert_header(match):
