@@ -353,9 +353,9 @@ while true; do
 
     # ── Rate limit → pausar, tornar tasca a pending ──────────────────
     if [ $EXIT -eq 99 ] || echo "$RESULT" | grep -q "RATE_LIMIT_HIT"; then
-        log "🛑 RATE LIMIT — Pausant 2 hores"
+        log "🛑 RATE LIMIT — Pausant 30 minuts"
         mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/" 2>/dev/null
-        sleep 7200
+        sleep 1800
         log "▶️ Reprenent després de rate limit"
         continue
     fi
