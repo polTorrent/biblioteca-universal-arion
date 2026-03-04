@@ -606,7 +606,33 @@ Sense plors, sense amics, sense núpcies, desgraciadíssima, faig el darrer cam�
 **CREONT**
 Sabeu que els cants i planys abans de morir, ningú no els deixaria mai, si hagués de parlar? No l'emportareu al més aviat possible? I al refugi cobert...
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+tancant-la a la tomba, com he dit,
+deixeu-la sola, abandonada, tant si ha de morir
+com si ha de viure sepultada en aquesta mena de cova;
+nosaltres estem nets pel que fa a aquesta donzella,
+però es veurà privada de la ciutadania d'aquí dalt.
+ANTÍGONA: Oh tomba! Oh cambra nupcial! Oh excavada
+llar eternament guardada, on me'n vaig
+cap als meus, que Persèfone ha rebut
+en gran nombre entre els morts que han perit;
+dels quals jo baixo l'última i amb la sort més dolenta,
+amb molta diferència, abans que el meu destí de vida s'hagi complert.
+Però en arribar-hi, alimento grans esperances
+que arribaré estimada pel pare, i estimada per tu,
+mare, i estimada per tu, estimat germà;
+ja que quan vàreu morir, jo mateixa amb les meves mans
+us vaig rentar i us vaig adornar i us vaig oferir
+libacions sobre la tomba. I ara, Polinices, 
+per haver cobert el teu cos obtinc ara aquestes recompenses.
+I, tanmateix, jo t'he honrat davant dels qui pensen rectament.
+Perquè mai, ni si hagués estat mare de fills,
+ni si un marit se m'hagués mort i es marcís,
+hauria emprès aquesta tasca contra la voluntat dels ciutadans.
+En virtut de quina llei dic això?
+Un marit mort, en podria tenir un altre,
+i un fill d'un altre home, si perdés aquest;
+però amb la mare i el pare sepultats a l'Hades,
+no hi ha cap germà que pugui néixer mai més.
 
 D'aquesta manera, per haver-te honrat per damunt de tot,
 Creont ha jutjat que falto contra la seva llei
@@ -675,7 +701,34 @@ als altars que cremaven del tot; però Hefest no va brillar
 dels sacrificis, sinó que sobre la cendra
 la humitat greixosa dels fèmurs es fonia.
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+s'apagava i s'esvalava, i les bilis
+es dispersaven enlaire, i les cuixes
+queien despullades del greix protector.
+Això és el que vaig aprendre d'aquest noi,
+quan s'extingien els oracles sense senyals.
+Ell és el meu guia, com jo ho sóc d'altres.
+I la ciutat pateix aquesta malaltia per culpa teva.
+Els nostres altars i fogons estan tots plens
+de la carronya que han portat ocells i gossos
+del fill desventurat i caigut d'Èdip.
+I aleshores els déus ja no accepten
+les nostres pregàries de sacrifici, ni la flama de les cuixes,
+ni cap ocell entona els seus cants favorables,
+perquè han menjat el greix de sang humana.
+Per això, fill meu, reflexiona. És comú
+a tots els mortals l'errar.
+Però quan s'ha errat, no és ni savi
+ni desgraciat l'home que, caigut en el mal,
+hi posa remei i no resta immòbil.
+La tossuderia porta a la ximpleria.
+Cedeix al mort i no punxis qui ja ha perit.
+Quina valentia hi ha a matar qui ja és mort?
+Et dono bons consells perquè et vull bé. I és molt dolç
+aprendre d'algú que parla bé, si en treu profit.
+**CREÓ**
+Ancià, tots com arquers contra una diana
+dispareu contra aquest home, i ni tan sols
+de l'art màntica estic lliure. A causa del vostre llinatge
 
 Ja m'han venut i m'han carregat de culpes fa temps.
 Guanyeu diners, comercieu amb l'electrum de Sardes
@@ -702,7 +755,11 @@ CREONT: Saps que parles dels governants?
 TIRÈSIES: Ho sé; gràcies a mi tens aquesta ciutat que has salvat.
 CREONT: Ets un profeta savi, però que estima la injustícia.
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+TIRÈSIAS: M'impulses a revelar els secrets immutables del meu esperit.
+CREONT: Parla, però que no sigui per guany.
+TIRÈSIAS: Doncs així ja em sembla pel que fa a tu.
+CREONT: Sàpigues que no em corromperàs.
+TIRÈSIAS: Però sàpigues bé que no et queden molts dies de vida, perquè donaràs un fill teu com a pagament pels morts, a canvi d'haver pres una ànima viva dels déus celestials i enterrar-la sense honor, i de retenir aquí un cadàver que pertany als déus infernals, privat de ritus sagrats. Ni tu ni els déus celestials teniu dret sobre aquestes coses, però tu les violentes. Per això et persegueixen les Erínies d'Hades i dels déus, que venguen tard però segur, perquè pateixis els mateixos mals. I mira si dic això sobornat: ben aviat se sentiran plors d'homes i dones a casa teva. I totes les ciutats s'alcen hostils contra tu, perquè els gossos, les feres o els ocells han portat als seus altars trossos de carn i l'olor impiu infecta les seves ciutats. Com un arquer irritat, he disparat contra tu aquestes sagetes certes del cor, i del seu foc no podràs escapar.
 
 [ERROR: El CLI ha retornat una resposta buida (sense contingut)]
 
@@ -714,7 +771,31 @@ Tu l'honres per damunt de totes les ciutats juntament amb la teva mare llampegan
 Oh tu, guia del cor d'astres que respiren foc, vigilant dels crits nocturns, fill de Zeus, apareix, senyor, amb les teves Tíades que t'envolten, elles que boges et ballen tota la nit, a tu, Íac, el guardià!
 MISSATGER: Veïns de Cadme i de les llars d'Amfíó...
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+No hi ha cap vida humana que pugui elogiar o censurar, 
+per estable que sembli.
+La fortuna alça i la fortuna abat
+sempre tant el venturós com el desventurat;
+i cap endeví no hi ha dels destins humans.
+Creont era envejable, segons el meu parer:
+havia salvat dels enemics aquesta terra cadmea,
+havia pres el poder absolut del país
+i el governava, florint amb noble descendència.
+I ara ho ha perdut tot. Quan els homes
+abandonen els seus plaers, jo no considero
+que aquest visqui, sinó que el tinc per mort vivent.
+Pot ser ric a casa, si vol, abundosament,
+i viure amb aspecte de tirà; però si li manca
+la joia d'això, la resta no val ni l'ombra del fum
+comparada amb el plaer.
+**COR** I ara quin nou dolor dels reis ve a portar-nos?
+**MISSATGER** Han mort. Els vius són culpables de llur mort.
+**COR** Qui mata? I qui és el mort? Digues-ho.
+**MISSATGER** Hèmon ha perit; la seva sang raja per mà pròpia.
+**COR** Per mà paterna o per la seva pròpia?
+**MISSATGER** Per la seva, indignat amb son pare pel crim.
+**COR** Oh endeví, com de cert has complert la paraula!
+**MISSATGER** Essent així les coses, convé deliberar sobre la resta.
+**COR** I veig també la desgraciada Eurídice que s'acosta
 
 l'esposa de Creont. Surt del palau,
 potser perquè ha sentit parlar del fill, o potser per atzar.
@@ -744,6 +825,8 @@ de la noia, excavada en pedra.
 I des de lluny algú sent una veu
 de plors aguts, sense ritus, al voltant de la cambra,
 i va a comunicar-ho al senyor Creont.
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
 
 Es va clavar l'espasa al pit, i encara conscient s'abraça a la donzella amb els braços ensangonats.
 I exhalant expulsa un raig violent de sang vermella sobre la galta blanca.
