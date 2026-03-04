@@ -10,30 +10,33 @@ obra:
   genere: teatre
   descripcio: Tragèdia grega sobre el conflicte entre la llei divina i la llei humana.
     Antígona desafia l'edicte del rei Creont per enterrar el seu germà Polinices.
-  estadistiques:
-    paraules_traduccio: 7846
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 15000
+  paraules_traduccio: 7846
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: revisat
-  qualitat: 4.6
+  estat: necessita_correccio
+  qualitat: 3.0
   data_revisio: '2026-03-04'
 avaluacio_final:
-  data: '2026-03-04T11:44:51.935755'
+  data: '2026-03-04'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
+    fidelitat: 3.0
+    veu_autor: 4.0
+    fluidesa: 4.0
+    correccio_linguistica: 3.0
+    coherencia: 2.0
+    global: 3.0
   total_errors: 70
-  errors_critics: 0
-  errors_alts: 0
+  errors_critics: 3
+  errors_alts: 7
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
   correccions_pendents: 62
+  notes_supervisio: >
+    Traducció incompleta. 8 errors del pipeline incrustats al text,
+    comentari meta de la IA visible, noms de personatges inconsistents,
+    errades ortogràfiques, fitxers obligatoris inexistents (glossari, notes).
+    Cal retraduir els chunks fallits i fer una revisió completa.
