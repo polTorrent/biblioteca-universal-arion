@@ -826,7 +826,8 @@ I des de lluny algú sent una veu
 de plors aguts, sense ritus, al voltant de la cambra,
 i va a comunicar-ho al senyor Creont.
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+Mentre s'acosta cada cop més, li arriben indicis confusos d'un crit lamentable. Gemegant, emet aquestes paraules de dolor: "Ai, desgraciat de mi! Sóc potser un endeví? Camino pel camí més desgraciat de tots els que he recorregut? Em crida la veu del meu fill. Però vosaltres, servidors, aneu més de pressa i, situant-vos al costat de la tomba, mireu, aparteu les pedres del túmul, entrant fins a la mateixa entrada: si sento la veu d'Hèmon o si els déus m'enganyen."
+MISSATGER: Vam complir aquestes ordres del nostre desanimat senyor. I en l'últim refugi sepulcral la vam veure penjada del coll, lligada amb un llaç de lli del seu propi vel, i ell caigut al seu voltant, plorant la pèrdua del llit nupcial i les accions del pare i el llit maleït. I quan els veu, gemegant amargament, va cap a ell i, cridant entre plors, li diu: "Oh desgraciat, quina acció has comès! Què tenies al cap? En quina desgràcia has perit? Surt, fill meu! Com a pare t'ho suplico!" I el noi, mirant-lo amb ulls salvatges, escupint-li a la cara i sense respondre mot, treu la doble fulla de l'espasa. Quan el pare s'elança per fugir, se li escapa. Aleshores el desgraciat, iritat amb si mateix, tal com estava, estirant-se...
 
 Es va clavar l'espasa al pit, i encara conscient s'abraça a la donzella amb els braços ensangonats.
 I exhalant expulsa un raig violent de sang vermella sobre la galta blanca.
