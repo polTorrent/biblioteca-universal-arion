@@ -25,12 +25,12 @@ def fetch_raw_text() -> str:
     )
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 BibliotecaArion/1.0"})
     try:
-        resp = urllib.request.urlopen(req, timeout=30)
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            return resp.read().decode("utf-8")
     except urllib.error.HTTPError as e:
         raise SystemExit(f"Error HTTP {e.code} descarregant el text: {e.reason}") from e
     except urllib.error.URLError as e:
         raise SystemExit(f"Error de xarxa descarregant el text: {e.reason}") from e
-    return resp.read().decode("utf-8")
 
 
 def clean_wikitext(raw: str) -> str:
