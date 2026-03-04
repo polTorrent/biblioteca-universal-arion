@@ -22,18 +22,18 @@ revisio:
   qualitat: 5.91
   data_revisio: '2026-03-04'
 avaluacio_final:
-  data: '2026-03-04T18:41:20.262625'
+  data: '2026-03-04T20:00:36.160855'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 86
-  errors_critics: 0
+    fidelitat: 1.0
+    veu_autor: 1.0
+    fluidesa: 1.0
+    correccio_linguistica: 1.0
+    coherencia: 1.0
+    global: 1.0
+  total_errors: 3
+  errors_critics: 2
   errors_alts: 0
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 78
+  correccions_pendents: 0
