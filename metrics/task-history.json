@@ -393,10 +393,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772267939.5892587,
-        "result": "created"
-      },
-      {
         "timestamp": 1772276402.8895152,
         "result": "created"
       },
@@ -470,6 +466,10 @@
       },
       {
         "timestamp": 1772619325.7026284,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772622002.724515,
         "result": "created"
       }
     ],
@@ -1174,10 +1174,6 @@
   "fetch_cicero_laelius_de_amicitia": {
     "events": [
       {
-        "timestamp": 1772460936.2078109,
-        "result": "created"
-      },
-      {
         "timestamp": 1772469925.5740507,
         "result": "created"
       },
@@ -1251,6 +1247,10 @@
       },
       {
         "timestamp": 1772613925.9659195,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772622003.7029731,
         "result": "created"
       }
     ],
@@ -1413,6 +1413,15 @@
     "events": [
       {
         "timestamp": 1772557203.4381385,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_antigona": {
+    "events": [
+      {
+        "timestamp": 1772622002.557253,
         "result": "created"
       }
     ],
