@@ -20,8 +20,8 @@ def fetch_and_process() -> None:
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
 
     try:
-        resp = urllib.request.urlopen(req, timeout=30)
-        raw_html: str = resp.read().decode("utf-8", errors="replace")
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            raw_html: str = resp.read().decode("utf-8", errors="replace")
     except (HTTPError, URLError, TimeoutError) as exc:
         print(f"Error fetching {url}: {exc}", file=sys.stderr)
         sys.exit(1)
@@ -82,7 +82,8 @@ def fetch_and_process() -> None:
 
     # Remove the initial wrapping text
     if text.startswith("prp-pages-output"):
-        text = text[text.find("\n") :]
+        nl = text.find("\n")
+        text = text[nl:] if nl >= 0 else ""
     text = text.strip()
 
     # Build the final organized markdown
