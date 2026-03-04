@@ -9,7 +9,6 @@ import json
 import subprocess
 
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "marcus_aurelius_greek")
-os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36"}
 
@@ -54,6 +53,8 @@ def count_greek(text: str, n: int = 5000) -> int:
 
 
 def main() -> None:
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
+
     # ========================================================================
     # WIKISOURCE
     # ========================================================================
@@ -79,7 +80,10 @@ def main() -> None:
         try:
             data = json.loads(result)
             if "parse" in data:
-                html_content = data["parse"]["text"]["*"]
+                parse_text = data["parse"].get("text", {})
+                html_content = parse_text.get("*", "")
+                if not html_content:
+                    print("No text content in parse response")
                 text = strip_html(html_content)
                 print(f"Main page text length: {len(text)}")
                 print(f"Greek chars: {count_greek(text)}")
@@ -130,7 +134,9 @@ def main() -> None:
                 print(f"  ERROR: Invalid JSON for '{test_name}'")
                 continue
             if "parse" in data:
-                text = strip_html(data["parse"]["text"]["*"])
+                parse_text = data["parse"].get("text", {})
+                html_content = parse_text.get("*", "")
+                text = strip_html(html_content)
                 gc = count_greek(text)
                 print(f"  FOUND: '{test_name}' -> {len(text)} chars, {gc} Greek")
                 if gc > 50:
