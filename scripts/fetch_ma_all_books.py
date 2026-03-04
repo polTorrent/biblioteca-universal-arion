@@ -118,8 +118,8 @@ def _fetch_wikisource() -> dict[int, str]:
                 else:
                     err = data.get("error", {}).get("info", "unknown")
                     print(f"  -> API error: {err}")
-            except json.JSONDecodeError as e:
-                print(f"  -> JSON parse error: {e}")
+            except (json.JSONDecodeError, KeyError) as e:
+                print(f"  -> Parse error: {e}")
         time.sleep(0.5)
 
     if books:
