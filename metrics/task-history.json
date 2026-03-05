@@ -397,10 +397,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772324140.7769022,
-        "result": "created"
-      },
-      {
         "timestamp": 1772325945.1518261,
         "result": "created"
       },
@@ -474,6 +470,10 @@
       },
       {
         "timestamp": 1772731291.7962232,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772733069.8448513,
         "result": "created"
       }
     ],
@@ -1178,10 +1178,6 @@
   "fetch_cicero_laelius_de_amicitia": {
     "events": [
       {
-        "timestamp": 1772565326.8689451,
-        "result": "created"
-      },
-      {
         "timestamp": 1772572530.3696563,
         "result": "created"
       },
@@ -1255,6 +1251,10 @@
       },
       {
         "timestamp": 1772725816.4960377,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772733070.8587534,
         "result": "created"
       }
     ],
