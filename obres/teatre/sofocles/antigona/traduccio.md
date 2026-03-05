@@ -1,2277 +1,1042 @@
-# Antígona[^1]
+# Antígona
 *Sòfocles*
 
 Traduït del grec per Biblioteca Arion
 
 ---
 
-## Personatges
-
-- **ANTÍGONA**, filla d'Èdip
-- **ISMENE**, germana d'Antígona
-- **COR**, d'ancians tebans
-- **CREONT**, rei de Tebes, oncle d'Antígona
-- **GUÀRDIA**
-- **HEMON**, fill de Creont, promès d'Antígona
-- **TIRÈSIES**, endeví cec
-- **MISSATGER**
-- **EURÍDICE**, esposa de Creont
-- **SEGON MISSATGER**
-
----
-
-## Pròleg
-
-*Davant el palau reial de Tebes, a l'alba. Antígona crida Ismene fora de les portes.*
-
+**Antígona**
+**Autor: ** Sòfocles
+*Veure també: entrada relacionada. Teatre antic. Tragèdia que va escriure Sòfocles i es va representar el 441 aC*
 **ANTÍGONA**
-
-Ismene, germana meva, sang de la meva sang,[^2]
-saps tu quin dels mals nascuts d'Èdip
-Zeus no complirà encara sobre nosaltres dues, les vives?
-Perquè no hi ha res dolorós ni exempt de ruïna,
-ni vergonyós ni deshonrós que jo no hagi vist
-entre els teus mals i els meus.
-I ara, quin és aquest edicte que diuen que el general
-acaba d'imposar a tota la ciutat?
-En saps res? N'has sentit parlar? O se t'escapa
-que cap als que estimem avancen els mals dels enemics?
-
-**ISMENE**
-
-A mi no m'ha arribat cap notícia, Antígona,
-dels que estimem, ni dolça ni amarga,
-des que ens van arrabassar els dos germans,
-morts tots dos en un sol dia per mà mútua.
-I com que l'exèrcit argiu ha fugit
-aquesta nit, no sé res més,
-ni em trobo més afortunada ni més afligida.
-
+Oh germana de sang, estimada Ismena,
+saps quin mal dels que venen d'Èdip
+Zeus encara no ha descarregat sobre nosaltres mentre vivim?
+No hi ha dolor, desgràcia,
+vergonya ni deshonor
+que jo no hagi vist dels nostres mals.
+I ara, què és això que diuen
+que l'estrateg ha proclamat a tota la ciutat?
+Has sentit res? O no t'adones
+que els mals dels enemics amenacen els nostres?
+**ISMENA**
+A mi no m'ha arribat cap notícia, Antígona estimada,
+ni dolça ni dolorosa,
+des que vam perdre els dos germans,
+morts en un sol dia pels dos.
+I com que l'exèrcit d'Argos ha desaparegut
+en la nit d'ara, no sé res més,
+ni si tinc més sort ni si estic més perduda.
 **ANTÍGONA**
+Ho sabia bé, i per això et vaig fer sortir
+del pati, perquè sentissis tu sola.
 
-Ho sabia bé, i per això et vaig cridar
-fora dels portals, perquè ho escoltessis tu sola.
+**ISMENA**: Què és això? Sembla que reveles alguna paraula amarga.
+**ANTÍGONA**: És que Creont no ha tractat els nostres dos germans de manera diferent: honrant l'un i deshonrant l'altre? A Eteocles, segons diuen, l'ha enterrat sota terra amb el degut respecte al dret i a la llei, donant-li honor entre els morts. Però del cadàver de Polinices, que va morir desgraciadament, diuen que ha proclamat als ciutadans que ningú el cobreixi amb sepultura ni el plori, sinó que el deixin sense plors i sense tomba, dolç banquet per als ocells que el miren com a grat aliment. Això diuen que el bo de Creont ha decretat per a tu i per a mi —sí, també per a mi— i que vindrà aquí per proclamar-ho clarament als qui no ho saben. No pren l'assumpte a la lleugera: qui faci alguna d'aquestes coses serà apedregat fins a la mort públicament a la ciutat. Així estan les coses per a tu, i aviat mostraràs si has nascut noble o si ets indigna del teu llinatge.
+**ISMENA**: Pobra desgraciat! Si les coses estan així, què puc fer jo per afegir-hi o treure-hi res?
+**ANTÍGONA**: Pensa si compartirà la tasca i col·laboraràs.
+**ISMENA**: Quin risc? Què tens al cap?
+**ANTÍGONA**: Si m'ajudaràs a aixecar el cadàver.
+**ISMENA**: Tens intenció d'enterrar-lo, quan està prohibit per la ciutat?
 
-**ISMENE**
-
-Què passa? És clar que alguna cosa fosca et torba.
-
-**ANTÍGONA**
-
-Doncs no ha disposat Creont, dels nostres dos germans,
-a l'un honors fúnebres i a l'altre deshonor?
-A Etèocles, diuen, amb justícia
-i el ritu degut, l'ha amagat sota terra,
-honrat entre els morts de sota.
-Però el cos de Polinices, mort desgraciadament,
-diuen que ha proclamat als ciutadans
-que ningú no l'enterri ni el plori,
-sinó que el deixin sense plor, sense tomba, dolç
-tresor per als ocells que el miren àvids de menjar.
-Tal és, diuen, l'edicte que el bon Creont
-ha proclamat per a tu i per a mi —sí, dic per a mi—,
-i que ve cap aquí a anunciar-ho clarament
-als qui no ho saben, i que no pren l'afer
-com poca cosa: qui gosés fer-ho
-s'enfronta a la mort per lapidació pública.
-Així estan les coses. Aviat mostraràs
-si ets de natura noble o indigna dels teus.
-
-**ISMENE**
-
-Dissortada! I si les coses són així, què hi podria fer jo,
-lligant o deslligant?
-
-**ANTÍGONA**
-
-Mira si voldràs compartir l'esforç i l'acció.
-
-**ISMENE**
-
-Quin risc? On vas amb el pensament?
-
-**ANTÍGONA**
-
-Si amb aquesta mà m'ajudaràs a aixecar el cos.
-
-**ISMENE**
-
-Penses enterrar-lo, contra la prohibició de la ciutat?
-
-**ANTÍGONA**
-
-El meu germà, sí, i el teu, encara que tu no ho vulguis.
-No em trobaran mai traïdora.
-
-**ISMENE**
-
-Temerària! Quan Creont ho ha prohibit?
-
-**ANTÍGONA**
-
-Ell no té cap dret a apartar-me dels meus.
-
-**ISMENE**
-
-Ai! Reflexiona, germana: el nostre pare,
-com va morir odiat i infame,
-havent-se arrencat els ulls ell mateix
-amb la seva pròpia mà, pels seus crims descoberts.
-Després, la seva mare i esposa —doble paraula—
-va destruir la seva vida amb un llaç trenat.
-I en tercer lloc, els nostres dos germans en un sol dia,
-els desgraciats, es van donar mort mútua
-amb llances creuades.
-I ara que restem soles nosaltres dues, considera
-com morirem de la pitjor manera si, violant la llei,
-transgredim el decret i el poder del tirà.
-Cal pensar, primer, que som dones
-i que no estem fetes per lluitar contra homes;
-i després, que som governades per més forts
-i que hem d'obeir això i coses encara més dures.
+**ANTÍGONA** Almenys el meu germà, i també el teu si tu no vols
+enterrar-lo. No em capturaran per haver-lo traït.
+**ISMENE** Oh temerària! Quan Creont ho ha vetat?
+**ANTÍGONA** Però no té cap dret d'apartar-me dels meus.
+**ISMENE** Ai de mi! Reflexiona, oh germana: el nostre pare
+va morir odiat i infame
+després d'arrencar-se els dos ulls amb les seves mans
+pels crims descoberts.
+Després la nostra mare, que també era la seva esposa,
+va destruir la seva vida amb la corda trenada.
+I tercer, els nostres dos germans, els desgraciats,
+van trobar una mort compartida en un sol dia,
+matant-se mútuament.
+Ara mira: nosaltres dues, que hem quedat soles,
+com morirem de manera terrible
+si violem la llei o desafiem
+els decrets i el poder dels tirans!
+Cal recordar que som dones,
+no hem nascut per lluitar contra els homes.
+I després, que ens manen els més forts
+i hem d'obeir aquestes coses i d'altres
+encara més doloroses.
 Jo, doncs, demanant perdó als de sota terra
-—perquè hi sóc forçada—,
-obeïré els qui tenen el poder; car actuar
-per damunt de les pròpies forces no té cap sentit.
+perquè em veig forçada a això,
+obeïré els que manen.
+Actuar sense mesura no té cap sentit.
+**ANTÍGONA** No t'ho demanaria, ni tampoc,
+si encara ho volguessis fer,
+ho faries de bon grat amb mi.
 
-**ANTÍGONA**
+Però pensa tu el que vulguis; jo l'enterraré. 
+És bell morir fent això. 
+Jauré al costat de qui estimo, estimada amb amor, 
+havent comès actes sagrats. El temps que he de complaure 
+els morts és més llarg que el dels vius. 
+Allí jauré per sempre. Tu, si t'ho sembla, 
+deshonra el que els déus tenen per honorat.
+**ISMENA** Jo no ho deshonro, però sóc incapaç 
+d'actuar per força contra els ciutadans.
+**ANTÍGONA** Tu pots al·legar això. Jo aniré 
+a cobrir de terra la sepultura del germà més estimat.
+**ISMENA** Ai, pobra de tu! Com em fas por!
+**ANTÍGONA** No t'espantis per mi. Enderreça el teu destí.
+**ISMENA** Almenys no revelis aquesta acció a ningú, 
+amaga-la en secret, i jo també ho faré.
+**ANTÍGONA** Ai, crida-ho! Seràs molt més odiosa 
+si calles, que si ho proclames a tothom.
+**ISMENA** Tens un cor ardent per a coses fredes.
+**ANTÍGONA** Però sé que complaco aquells que més he de complaure.
+**ISMENA** Si pots fer-ho; però persegueixes l'impossible.
+**ANTÍGONA** Doncs quan ja no tingui forces, pararé.
+**ISMENA** Però no convé perseguir l'impossible des del començament.
+**ANTÍGONA** Si dius això, seràs odiada per mi, 
+i enemiga del mort justament. 
+Però deixa'm a mi i la meva mala decisió
 
-No t'ho demanaré, no; ni encara que volguessis
-fer-ho, m'agradaria que actuéssim juntes.
-Sigues com et plagui: jo l'enterraré.
-Bell m'és morir fent-ho.
-Estimada, jaurai al seu costat, estimada amb l'estimat,
-havent comès un sant crim. Perquè és més llarg
-el temps que haig de plaure als de sota que als d'aquí.
-Allà jaurai per sempre; tu, si ho vols,
-deshonra el que els déus honoren.
-
-**ISMENE**
-
-Jo no els deshonro; però sóc incapaç
-d'actuar contra la voluntat dels ciutadans.
-
-**ANTÍGONA**
-
-Tu pots excusar-te així. Jo me'n vaig
-a alçar un túmul al meu germà estimat.
-
-**ISMENE**
-
-Ai de mi, com tremolo per tu!
-
-**ANTÍGONA**
-
-No tremolis per mi: endreça el teu propi destí.
-
-**ISMENE**
-
-Almenys no ho revelis a ningú,
-guarda el secret; jo faré el mateix.
-
-**ANTÍGONA**
-
-Ai! Proclama-ho! Em seràs molt més odiosa
-si calles i no ho dius a tothom.
-
-**ISMENE**
-
-Tens un cor ardent per coses gèlides.
-
-**ANTÍGONA**
-
-Sé que complac a qui més he de complaure.
-
-**ISMENE**
-
-Si és que pots! Però desitges l'impossible.
-
-**ANTÍGONA**
-
-Doncs bé, quan ja no tingui forces, pararé.
-
-**ISMENE**
-
-No escau ni d'intentar el que és impossible.
-
-**ANTÍGONA**
-
-Si continues parlant així, guanyaràs el meu odi
-i seràs justament odiada pel mort.
-Però deixa'm a mi i la meva insensatesa
-patir aquest destí terrible; car no patiré
-res tan greu que no sigui una mort bella.
-
-**ISMENE**
-
-Si et sembla bé, vés; però sàpigues
-que te'n vas insensata, però fidelment estimada pels teus.
-
----
-
-## Pàrodos[^3]
-
-*Entra el Cor d'ancians tebans.*
-
-**COR**
-
-Raig del sol, la llum més bella que mai ha brillat
-sobre Tebes de les set portes,
-per fi has aparegut, oh parpella
+Patir aquesta cosa terrible? No em sotmetré 
+a res que m'impedeixi morir dignament.
+**ISMENE**: Però si et sembla bé, vés-hi; només sàpigues 
+que vas sense seny, tot i que ets fidel als teus estimats.
+**COR**: Raig de sol, la més bella llum 
+que ha aparegut mai a Tebes de les set portes,
+vas brillar una vegada, oh parpella 
 del dia daurat,
-avançant sobre les aigües de Dirce,[^4]
-i l'home de l'escut blanc vingut d'Argos en armes completes
-l'has posat en fuga, esperonant-lo amb fre més agut.
-
-Ell, que contra la nostra terra per Polinices
-fou alçat en querelles ambigües,
-cridant agut,
-com una àguila va volar sobre la terra nostra,
-cobert amb ales de neu blanca,
+venint sobre les aigües de Dirce,
+i vas fer fugir amb fre més ràpid
+el guerrer de blancs escuts vingut d'Argos,
+fugitiu amb tota la seva host.
+ell que sobre la nostra terra, alçat
+per les disputes controvertides de Polinices,
+cridant agudament
+com una àliga va volar sobre la terra,
+cobert amb ales de blanca neu,
 amb moltes armes
-i cascos empennatxats.
+i cascs de plomes de cavall.
+Posant-se sobre els palaus, obrint les fauces
+tot al voltant amb llances sanguinàries
+contra la boca de set portes,
+se'n va anar abans d'omplir mai
+les goles amb la nostra sang i que el foc de pi
+d'Hefest prengués la corona de torres.
+Tal va ser l'estrèpit d'Ares que s'estengué
+al nostre voltant, difícil de vèncer per al drac adversari.
+Zeus, en efecte, odia sobremanera
+la vanitat de la gran llengua, i veient-los
+venir amb gran torrent
+i la superba arrogància del soroll d'or,
+amb el foc llançat dels dards
+ja als cims l'abat
+quan es disposava a cridar victòria.
 
-Es va plantar sobre les nostres cases, obrint les seves fauces de mort
-amb llances assassines al voltant
-de les set portes,
-i va marxar abans de saciar les seves mandíbules
-amb la nostra sang, i abans que el foc de pi d'Hefest[^5]
-conquerís la corona de les torres. Tal fragor d'Ares
-s'estenia darrere seu, massa dur per al drac rival.
-
-Perquè Zeus odia enormement la jactància
-d'una llengua orgullosa; i en veure'ls avançar
-en torrent poderós
-amb l'arrogància de l'or ressonant,
-va fulminat amb el seu llamp
-aquell que ja dalt de les muralles
-s'impulsava a cridar victòria.
-
-I caigué sobre la dura terra, abatut,
-el portador de foc, que llavors amb fúria boja
-delirant
-bufava ràfegues dels vents més hostils.
-Però les coses van anar d'una altra manera:
-aquí i allà, el gran Ares, cavall de tir dret,
-els colpejava i dispersava.
-
-Perquè set capitans a set portes,
-situats igual contra iguals, van deixar
-a Zeus Tropeu les armes de bronze completes,
-excepte aquells dos odiosos que, nascuts d'un sol pare
-i d'una sola mare, van alçar l'un contra l'altre
-les dues llances victorioses
-i van compartir una mort comuna.
-
-Però la Victòria de gran nom va venir
-alegrant-se amb Tebes rica en carros;
-doncs dels combats recents
-establim ara l'oblit,
-i recorrem tots els temples dels déus
-amb danses nocturnes, i que Baco,[^6] el que fa tremolar Tebes,
-ens guiï!
-
-Però vet aquí el rei del país,
-Creont, fill de Meneceu, nou governant
-per les noves circumstàncies dels déus;
-quin designi rumia,
+Però va caure a terra que li resistí, el portador de foc
+captivat pel seu propi destí, aquell que llavors 
+amb furiosa arrancada respirava com un bacant
+sota les ràfegues dels vents més hostils.
+Aquí i allà els combats variaven,
+i el gran Ares, que sacseja amb la dreta, 
+donava empenta ara als uns, ara als altres.
+Set cabdills davant de set portes,
+disposats igual contra igual, van deixar
+a Zeus triomfant les seves armes de bronze,
+llevat d'aquells dos odiosos que, nascuts
+del mateix pare i la mateixa mare,
+van clavar l'un contra l'altre les llances
+de doble tall i van compartir la mort.
+Però ha arribat la Victòria del gran nom,
+que correspon a l'alegria de Tebes rica en carros.
+Doncs ara, dels combats recents, 
+posem-hi oblit, i anem a tots els temples dels déus
+amb cors que durin tota la nit, i que Dionís,
+que fa vibrar Tebes, dirigeixi la festa.
+Però heus aquí que ve el rei del país,
+Creó, fill de Meneceu, nou governant
+per les fresques disposicions dels déus.
+Quin pla deu estar meditant,
 que ha convocat aquesta assemblea d'ancians
-enviant-nos un edicte comú?
-
----
-
-## Primer Episodi
-
-**CREONT**
-
-Ciutadans, els déus han redreçat la nau de l'estat
-després de sacsejar-la en una gran tempesta.
-I jo us he enviat a buscar, separats de tots,
-perquè sé que vau respectar sempre el poder
-del tron de Laios,[^7]
-i després, quan Èdip governava la ciutat,
-i quan va morir, vau restar fidels
-als seus fills amb lleialtat ferma.
-Ara que aquells, per un doble destí, en un sol dia
-han caigut, havent-se colpit i havent rebut el cop
-l'un de l'altre, amb una contaminació fraticida,
-jo posseeixo tot el poder i el tron
-per parentiu proper amb els morts.
-
-Però és impossible conèixer l'ànima,
-el pensament i el judici de cap home
-fins que no s'ha mostrat en el govern i les lleis.
-Perquè a mi, qui governant tota la ciutat
-no s'adhereix als millors consells,
-sinó que per algun temor manté la llengua tancada,
-em sembla el pitjor dels homes, ara i sempre;
-i qui estima un amic per damunt de la seva pàtria,
-aquest no compta per a mi en absolut.
-Perquè jo —que ho sàpiga Zeus que tot ho veu sempre—
-ni callaria en veure la ruïna
-avançant contra els ciutadans en lloc de la salvació,
-ni mai faria amic meu un enemic de la terra,
-sabent que és ella la que ens salva, i navegant
-sobre ella, dreta, fem els nostres amics.
-
-Amb lleis com aquestes faig gran aquesta ciutat,
-i ara he proclamat als ciutadans, germanes d'aquestes,
-pel que fa als fills d'Èdip:
-a Etèocles, que va morir lluitant per la ciutat,
-mostrant el més alt valor amb la llança,
-que sigui enterrat amb tots els ritus sagrats
-que acompanyen els morts més nobles sota terra.
-Però el seu germà de sang, Polinices vull dir,
-que va tornar de l'exili per cremar
-la terra pàtria i els déus ancestrals
-de dalt a baix, que va voler saciar-se
-de sang comuna i esclavitzar els seus,
-per a aquest ha estat proclamat a la ciutat
-que ningú no li doni tomba ni el plori,
-sinó que deixin el seu cos sense enterrar, devorat
-per ocells i gossos, mutilat a la vista.
-Tal és el meu pensament, i mai per mi
-els malvats tindran més honor que els justos;
-però qui sigui lleial a la ciutat, mort
-o viu, serà igualment honrat per mi.
-
-**COR**
-
-Així et plau, fill de Meneceu, Creont,
-tractar l'enemic i l'amic d'aquesta terra;
-i tens potestat d'emprar tota llei
-tant sobre els morts com sobre els qui vivim.
-
-**CREONT**
-
-Sigueu, doncs, guardians del que ha estat decretat.
-
-**COR**
-
-Encarrega-ho a algú més jove.
-
-**CREONT**
-
-Ja hi ha guardians del cadàver.
-
-**COR**
-
-Què més ens encomanaries, llavors?
-
-**CREONT**
-
-Que no cediu davant qui desobeeixi.
-
-**COR**
-
-No hi ha ningú tan neci que desitgi morir.
-
-**CREONT**
-
-I cert, aquest és el preu; però l'esperança
-de guany sovint perd els homes.
-
-*Entra el Guàrdia.*
-
-**GUÀRDIA**
-
-Senyor, no diré que arribo sense alè
-de córrer amb el pas lleuger.
-Perquè molts pensaments m'han aturat pel camí,
-fent-me girar i tornar enrere.
-L'ànima em deia moltes coses:
-«Desgraciat, per què vas allà on seràs castigat?»
-«Infeliç, t'atures altra vegada? I si Creont ho sap
-per un altre, com no en patiràs?»
-Giravoltant així, avançava lentament,
-i un camí curt es va fer llarg.
-Però al final va vèncer venir aquí
-davant teu. I si no tinc res a dir, ho diré igualment;
-perquè vinc agafat a l'esperança
-de no patir res més del que el destí m'assigni.
-
-**CREONT**
-
-Què és el que et causa tanta angúnia?
-
-**GUÀRDIA**
-
-Vull dir-te primer el que em toca: el fet
-ni l'he comès ni he vist qui ho va fer,
-i no seria just que caigués en cap mal.
-
-**CREONT**
-
-Apuntes bé i et protegeixes per tots costats;
-és clar que tens alguna novetat a anunciar.
-
-**GUÀRDIA**
-
-Les coses terribles causen molta vacil·lació.
-
-**CREONT**
-
-Parlaràs d'una vegada, i després te n'aniràs?
-
-**GUÀRDIA**
-
-Doncs t'ho dic: algú ha enterrat el mort
-fa poc, i ha escampat pols seca sobre la pell
-i ha fet les libacions rituals.
-
-**CREONT**
-
-Què dius? Quin home ha gosat fer això?
-
-**GUÀRDIA**
-
-No ho sé; perquè allà no hi havia cap cop
-d'aixada ni marca de pala. La terra era dura
-i seca, intacta, sense solcs de rodes;
-l'autor no va deixar cap rastre.
-Quan el primer guàrdia del dia
-ens ho va mostrar, tots en vam quedar estupefactes.
-El mort havia desaparegut de la vista —no enterrat en un túmul,
-sinó cobert d'una pols fina, com si algú fugís d'un sacrilegi.
-No hi havia senyals de cap fera ni gos
-que hi hagués vingut o l'hagués esquinçat.
-Les acusacions volaven entre nosaltres,
-guàrdia contra guàrdia, i hauria acabat en cops
-si algú no ens hagués aturat.
-Perquè cadascú era sospitós de ser l'autor
-i ningú clarament, sinó que tots negaven saber-ne res.
-Estàvem disposats a agafar ferro roent
-i a caminar pel foc i a jurar pels déus
-que no ho havíem fet ni érem còmplices
-de qui ho planejà o executà.
-Al final, quan la investigació no donava res més,
-algú va dir una cosa que va fer abaixar
-tots els caps a terra de por; perquè no teníem
-ni com replicar ni com sortir-ne bé.
-La paraula era que s'havia de comunicar
-l'assumpte a tu, i que no es podia amagar.
-I això va vèncer, i a mi, desgraciat,
-la sort em va tocar aquest bon premi.
-Sóc aquí contra la meva voluntat, davant gent que no em vol, ho sé;
-perquè ningú estima el portador de males noves.
-
-**COR**
-
-Senyor, el meu pensament em fa rumiar fa estona:
-no serà cosa dels déus, aquest fet?
-
-**CREONT**
-
-Calla, abans que m'omplis d'ira amb les teves paraules,
-i no et mostris neci i vell alhora.
-Perquè dius coses intolerables quan afirmes
-que els déus tenen providència d'aquest mort.
-L'haurien honrat com a benefactor,
-enterrant-lo, ell que va venir a cremar
-els temples de columnes i les ofrenes
-i a destruir la seva terra i les seves lleis?
-O veus que els déus honrin els malvats?
-No pot ser. Però ja fa temps que homes de la ciutat,
-suportant-ho a penes, murmuren contra mi
-sacsejant el cap en secret, sense portar
-dignament el coll sota el jou, com si m'estimessin.
-Sé prou bé que aquests han subornat
-els guàrdies perquè fessin l'acte.
-Perquè res tan dolent com l'argent
-ha crescut entre els homes. Això destrueix ciutats,
-això arrenca els homes de casa,
-això ensenya i desvia les ments honestes
-cap a actes vergonyosos;
-ha mostrat als homes la manera de tota vilesa
-i el coneixement de tota impietat.
-Però els que han executat això per un sou,
-tard o d'hora, pagaran la justícia.
-
-Escolta bé, tant cert com que revereixo Zeus:
-si no trobeu l'autor d'aquest enterrament
-i me'l porteu davant dels ulls,
-l'Hades sol no us bastarà; abans
-penjats vius, revelareu aquest ultratge,
-perquè aprengueu d'on s'ha de treure el guany
-i d'ara endavant robeu sabent
-que no de tot lloc convé estimar el lucre.
-Perquè dels guanys vergonyosos en veuràs
-més de perduts que de salvats.
-
-**GUÀRDIA**
-
-Em deixes dir una cosa o me'n vaig així?
-
-**CREONT**
-
-No saps que fins ara les teves paraules m'irriten?
-
-**GUÀRDIA**
-
-Et mossega a les orelles o a l'ànima?
-
-**CREONT**
-
-Per què mesures on em fa mal?
-
-**GUÀRDIA**
-
-L'autor et molesta el cor, i jo les orelles.
-
-**CREONT**
-
-Ai, quin xerraire nat que ets!
-
-**GUÀRDIA**
-
-Potser sí, però el fet no l'he comès mai.
-
-**CREONT**
-
-I tant que sí, venent l'ànima per diners!
-
-**GUÀRDIA**
-
-Ai!
-Terrible cosa quan qui jutja jutja en fals.
-
-**CREONT**
-
-Fes-te l'enginyós amb el teu judici; però si no
-em porteu els culpables, confesareu
-que els guanys miserables porten desgràcies.
-
-*El Guàrdia se'n va.*
-
-**GUÀRDIA**
-
-Tant de bo el trobin! Però el trobin o no
-—que això ho decidirà la sort—
-no em veuràs tornar aquí mai més.
-Perquè ara, salvat més enllà de tota esperança,
-dec als déus una gran gratitud.
-
----
-
-## Primer Estàsim[^8]
-
-**COR**
-
-Moltes són les coses admirables, però res
-més admirable que l'home.
-Ell travessa el mar grisenc amb el Notos hivernal,
-penetrant sota onades que l'envolten.
-I la Terra, la més sublim de les deesses,
+enviant un herald a tots?
+**CREÓ: ** Homes, els déus, després de sacsejat els afers de la ciutat
+amb gran convulsió, els han tornat a enderegar.
+A vosaltres us he fet cridar per mitjà de missatgers,
+separats de la resta, sabent bé
+que sempre heu respectat el poder del tron de Laios.
+
+Això de nou va passar quan Èdip va redreçar la ciutat. I després que va morir, al voltant dels seus fills, que romanien amb fermes conviccions. Quan aquells van perir en un sol dia per un destí doble —colpejant-se i rebent cops de la pròpia mà amb sacrilegi—, jo tinc ja tot el poder i el tron pel parentesc més pròxim amb els morts.
+És impossible conèixer l'ànima, el caràcter i el judici de qualsevol home fins que es mostri experimentat en comandaments i lleis. Per a mi, qui governa tota la ciutat i no s'adhereix als millors consells sinó que per por té la llengua tancada, em sembla el pitjor ara i sempre. I encara més: qui considera un amic per damunt de la seva pròpia pàtria, aquest no el tinc en res.
+Jo —que ho sàpiga Zeus que ho veu tot sempre— ni callaria veient la ruïna avançar cap als ciutadans en lloc de la salvació, ni mai faria amic meu un home enemic de la terra. Sé això: que aquesta és la que salva, i navegant amb rumb segur, fem els amics.
+Amb aquestes lleis jo faig créixer aquesta ciutat. I ara, proclamant decrets semblants a aquests, tinc per als ciutadans sobre els fills d'Èdip: Etèocles, que va combatre per la ciutat...
+
+Ha mort per aquesta pàtria, ell que va excel·lir amb la llança, i l'he d'enterrar amb els honors i purificacions que corresponen als més nobles morts que davallen a les profunditats.
+Quant al seu germà, em refereixo a Polinices, que va tornar de l'exili i va voler cremar la terra paterna i els déus ancestrals fins a les cimes, va voler tastar la sang comuna i conduir els seus com a esclaus: s'ha proclamat que a aquesta ciutat ningú l'honri amb sepultura ni cap persona el plori, sinó que el deixin insepult perquè el seu cos sigui devorat per aus rapinyaires i gossos, i quedi exposat per a l'escarn de tots.
+Aquest és el meu pensament, i els malvats mai rebran de mi honor abans que els justos; però qui sigui fidel a aquesta ciutat, mort o viu, per igual serà honorat per mi.
+**COR** Et plau això, fill de Meneceu, Creont: castigar qui és hostil a la ciutat i premiar qui li és favorable. Tens poder per usar qualsevol llei, tant respecte als morts com respecte als qui vivim.
+**CREONT** Sigueu ara guardians vigilants del que he dit.
+**COR** Confia aquesta tasca a algú més jove.
+**CREONT** Però ja hi ha guardians preparats per vigilar el cadàver.
+**COR** Què més voldries ordenar encara?
+**CREONT** Que no permeteu cap connivència amb els qui desobeeixen això.
+**COR** No hi ha ningú tan insensatat que desitgi morir.
+
+**CREONT: ** I també hi ha la recompensa, aquesta. Però les esperances de guany han perdut més d'un home.
+**GUARDIÀ: ** Senyor, he de dir que no arribo sense alè per haver corregut aixecant els peus lleugers. He tingut molts sobresalts d'angoixa, girant pel camí per tornar enrere. L'ànima em deia moltes coses: "Desgraciat, per què vas allà on rebràs el càstig? Miserable, no t'ho penses? I si Creont s'assabenta per un altre? Com no et fa mal això?" Donant voltes a aquests pensaments, anava molt a poc a poc. I així el camí curt es fa llarg.
+Al final, però, ha vençut la idea de venir aquí cap a tu. I encara que no tingui res a dir, ho diré igualment. Vinc aferrat a l'esperança de no patir més que allò que m'està destinat.
+**CREONT: ** Què és el que et causa aquest desànim?
+**GUARDIÀ: ** Vull explicar-te primer els meus assumptes. L'acte, ni el vaig fer ni vaig veure qui el feia, i no seria just que em passés res de dolent.
+**CREONT: ** Apuntes bé i tanques l'assumpte en cercle. És clar que tens alguna novetat per anunciar.
+**GUARDIÀ: ** Les coses terribles, és cert, posen molt de por.
+**CREONT: ** No ho diràs mai? Després te'n vas i ja està?
+**GUARDIÀ: ** Ja t'ho dic, doncs. El mort, algú ara mateix...
+
+L'ha enterrat i se n'ha anat, escampant sobre el cos
+pols per calmar la set i complint els ritus sagrats que fan falta.
+**CREONT: ** Què dius? Quin home ha gosat fer això?
+**GUARDIÀ: ** No ho sé. Allà no hi havia cap cop de pic
+ni destral llançada. La terra era dura
+i seca, sense esquerdes, no marcada
+per rodes. L'autor no va deixar rastre.
+Quan el primer de nosaltres de guàrdia diürna
+ens ho va mostrar, tots ens vam quedar atònits.
+El mort havia desaparegut —no amb un túmul,
+sinó amb pols fina escampada, com qui vol evitar
+la profanació. No es veien rastres
+ni de feres ni de gossos que haguessin vingut
+a arrossegar-lo.
+Llavors van esclatar discussions àspres entre nosaltres,
+un guardià acusava l'altre, i hauria acabat
+a cops si no fos que no hi havia ningú per aturar-nos.
+Cadascun semblava culpable
+i cap no era evident, tots negaven saber-ho.
+Estàvem disposats a agafar ferro candent
+amb les mans, travessar el foc i jurar pels déus
+que no ho havíem fet ni sabíem res
+d'algú que ho hagués planejat o executat.
+Finalment, quan ja no podíem investigar més,
+algú va dir una cosa que ens va fer baixar
+el cap a terra de por —no podíem
+ni contradir-lo ni saber com actuar bé.
+L'idea era que s'havia de revelar...
+
+que aquesta tasca sigui teva i no cal amagar-la.
+I això va triomfar, i a mi, desgraciat, 
+la sort m'impedeix obtenir aquest benefici. 275
+Vinc de mala gana als qui no ho volen, ho sé: 
+ningu no estima el missatger de males notícies.
+COR
+Senyor, fa temps que medito si potser
+aquesta acció no serà obra dels déus...
+CREONT
+Para, abans que amb el teu parlar m'omples d'ira també, 280
+no t'hi trobin sense seny i vell alhora.
+Dius coses insuportables quan afirmes
+que els déus es preocupen d'aquest cadàver.
+Potser l'han amagat per reverència, com a benefactor, 
+ell que va venir a cremar els temples 285
+i les ofrenes dels amfictions
+i a escampar llur terra i lleis?
+O veus que els déus honren els malvats?
+No pot ser. Però fa temps que alguns homes
+de la ciutat, suportant-me a penes, murmuraven contra mi 290
+en secret, movent el cap, i no portaven
+el jou al coll com cal, per estimar-me.
+D'aquests sé bé que han estat corromputs
+amb diners per fer això.
+Res no ha brollat tan dolent per als homes 295
+com l'argent, aquesta moneda malèfica. Això saqueja
+ciutats, això treu els homes de casa seva, 
+això ensenya i corromp els cors
+honests per portar-los a accions indignes;
+
+ha mostrat que els homes tenen astúcia per fer el mal
+i saben ser impius en tota empresa.
+I els qui van dur a terme això per diners
+amb el temps van acabar pagant-ne el preu.
+Però si Zeus encara em té reverència,
+sàpiga-ho bé —i ho dic sota jurament—:
+si no trobeu qui amb les seves pròpies mans
+va donar sepultura a aquest mort
+i me'l porteu davant meu,
+no us bastarà només l'Hades:
+vius i penjats haureu d'expiar
+aquesta insolència, perquè sabent
+d'on cal cercar el profit, d'ara endavant
+robeu, i aprengueu que no cal
+estimar el guany a qualsevol preu.
+Dels beneficis deshonrosos
+veuríeu més homes arruïnats que no pas salvats.
+**GUÀRDIA** Em deixaràs dir quelcom, o me'n vaig així?
+**CREÓ** No saps que fins ara parles molestament?
+**GUÀRDIA** T'irrita a les orelles o a l'ànima?
+**CREÓ** Per què vols delimitar on està el meu dolor?
+**GUÀRDIA** Qui ha actuat t'irrita l'ànima; jo, només les orelles.
+**CREÓ** Ai! Com és evident que has nascut xerraire!
+**GUÀRDIA** Almenys mai no he comès aquesta acció.
+**CREÓ** I fins i tot això, venent la teva ànima per plata.
+**GUÀRDIA** Ai! És terrible semblar culpable i també semblar-ho falsament.
+**CREÓ** Ara fes-te l'enginyós amb les teves opinions; però si no...
+
+Feu que se'm revelin els culpables! Us diré que
+els guanys cobards porten desgràcies.
+GUARDIÀ: Però que sigui trobat sobretot! I si és
+detingut o no, això ho decidirà la sort;
+no és possible que em vegis tornar aquí.
+Fins i tot ara, quan m'he salvat contra tota
+esperança i parer meu, estic molt agraït als déus.
+COR: Moltes coses són terribles, però res
+més terrible que l'home.
+És ell qui travessa el mar tempestuós
+amb el vent del sud hibernal,
+avançant enmig de les ones
+que el bramen al voltant.
+I a la més alta de les deesses, la Terra
 indestructible, infatigable, la treballa
-amb les arades que van i venen any rere any,
-girant-la amb raça equina.
+amb les seves relles que van i vénen
+any rere any,
+llaurant-la amb cavalls.
+Captura els ocells de vol lleuger,
+i les races de feres salvatges, i els peixos del mar
+amb els seus paranys de xarxes teixides,
+l'home enginyós.
+Domina amb els seus enginys la fera
+que viu als camps i vaga per les muntanyes,
+doma amb el jou el cavall de crinera espessa
+i el brau indomable de les muntanyes.
+I la paraula, i el pensament ràpid com el vent, i les passions
+que governen les ciutats les ha après,
+i a fugir del fred de les intempèries
+i de la pluja cruel.
+Enginyós per a tot! Tot ho afronta
+amb recursos per al futur.
+Només de l'Hades no trobarà escapatòria;
+però ha sabut trobar curació per malalties sense remei.
 
-I la tribu lleu dels ocells l'atrapa amb xarxes,
-i les races de feres salvatges i la natura marina
-amb les seves xarxes teixides,
-l'home sagaç;
-i amb enginys domina la bèstia
-dels camps i de la muntanya, i al cavall de crinera
-espessa li posa el jou sobre el coll,
-i al toro incansable de la serra.
+No veig cap traducció prèvia al vostre missatge, només el text grec original. Per poder millorar una traducció, necessito veure primer la versió catalana que voleu que millori.
+Podríeu proporcionar la traducció actual que voleu que perfeccioni? Així podré aplicar els principis de naturalitat, preservació de la veu de l'autor i fidelitat al sentit que caracteritzen una bona traducció.
 
-I la paraula i el pensament lleuger com el vent
-i els impulsos que ordenen ciutats,
-tot s'ho ha ensenyat, i a fugir dels dards
-de les gelades a cel obert i les pluges adverses:
-ple de recursos, cap cosa futura
-el troba sense recurs; només de la mort
-no trobarà escapatòria;
-però de malalties invencibles ha enginyat remeis.
-
-Posseint l'habilitat enginyosa de les arts
-més enllà d'esperança,
-de vegades s'encamina al mal, d'altres al bé.
-Quan honora les lleis de la terra i la justícia
-jurada als déus, la ciutat s'alça;
-sense ciutat queda aquell a qui la deshonra
-acompanya per gust de l'audàcia.
-Que no comparteixi el meu fogar
-ni pensi com jo, qui faci tals coses.
-
----
-
-## Segon Episodi
-
-*El Cor veu que porten Antígona.*
-
-**COR**
-
-Davant un prodigi diví vacil·lo!
-Coneixent-la, com podré negar
-que aquesta noia no és Antígona?
-Oh dissortada,
-i filla del dissortad Èdip,
-què ha passat? No serà que et porten
-per haver desobeït les lleis del rei
-i t'han agafat en la teva follia?
-
-**GUÀRDIA**
-
-Aquí la teniu: és ella qui va fer l'acte.
-L'hem agafat enterrant el mort. Però on és Creont?
-
-**COR**
-
-Vet-lo que surt just a temps del palau.
-
-*Entra Creont.*
-
-**CREONT**
-
-Què passa? Quina coincidència m'ha fet sortir?
-
-**GUÀRDIA**
-
-Senyor, pels mortals res no s'ha de jurar impossible.
-El pensament desmenteix el propòsit. Jo
-gairebé havia jurat que mai tornaria aquí,
-espantat per les teves amenaces d'aquell dia.
-Però com que l'alegria inesperada
-no s'assembla a cap altre plaer,
-he vingut, malgrat els meus juraments,
-portant aquesta noia, que va ser atrapada
-adornant la tomba. Aquí no es va tirar cap sort:
-aquesta troballa és meva, de ningú més.
-I ara, senyor, pren-la, com vulguis,
-interroga-la i jutja-la; jo sóc lliure
-i tinc dret a estar deslliurat d'aquests mals.
-
-**CREONT**
-
-De quina manera i on l'has agafada?
-
-**GUÀRDIA**
-
-Ella enterrava l'home. Ja ho saps tot.
-
-**CREONT**
-
-Entens bé el que dius i parles correctament?
-
-**GUÀRDIA**
-
-La vaig veure enterrant el cadàver que tu
-havies prohibit. Parlo clar i net?
-
-**CREONT**
-
-I com va ser vista i agafada?
-
-**GUÀRDIA**
-
-Així va ser. Quan vam tornar allà,
-sota aquelles terribles amenaces teves,
+I ara, senyor, pren-la tu mateix, com vulguis,
+jutja-la i interroga-la; jo tinc tot el dret
+a quedar-me lliure d'aquests mals.
+**CREONT** Com és que portes aquesta? D'on l'has presa?
+**GUÀRDIA** Aquesta enterrava l'home. Ja ho saps tot.
+**CREONT** Entens bé el que dius i ho dius amb certesa?
+**GUÀRDIA** La vaig veure enterrant el mort
+que tu havies prohibit. Ho dic prou clar?
+**CREONT** Com va ser vista i capturada?
+**GUÀRDIA** Va passar així. Quan hi vam arribar,
+amenaçats per aquelles terribles paraules teves,
 vam escombrar tota la pols que cobria
-el mort i vam deixar ben nu el cos moll.
-Ens vam asseure al cim dels turons, a sotavent,
-fugint de la pudor que'n sortia,
-desvetllant-nos els uns als altres amb retrets
-si algú descurava la seva guàrdia.
-Això va durar fins que el cercle brillant del sol
-es va plantar al mig del cel
-i la calor cremava. I llavors, de sobte,
-un remolí alçà de terra un turment celeste,
-va omplir la plana, maltractant tot el fullatge
-de la selva dels camps, i el gran cel se n'omplí;
-tancant els ulls, vam suportar el flagell diví.
-Quan finalment va passar, després de llarga estona,
-es veu la noia, i llença un crit agut i amarg
-com l'ocell que descobreix el niu buit
-dels seus pollets. Així ella, en veure el cadàver nu,
-va esclatar en plors i va llançar maleïdes
-contra els qui havien fet l'acte.
-I tot seguit amb les mans porta pols seca,
-i d'un gerro de bronze ben forjat,
-amb tres libacions, corona el mort.
-Nosaltres, en veure-ho, ens hi vam llançar
-i la vam agafar de seguida, sense que s'espantés gens;
-i la vam interrogar sobre els actes anteriors i els d'ara:
-no va negar res,
-cosa que em va donar alhora goig i dolor.
-Perquè alliberar-se un mateix dels mals
-és dolcíssim, però portar els amics a la desgràcia
-és dolorós; tot i que tot això m'importa menys
-que la meva pròpia salvació.
-
-**CREONT**
-
-Tu, la que inclina el cap a terra:
-confesses o negues haver-ho fet?
-
-**ANTÍGONA**
-
-Confesso haver-ho fet i no ho nego.
-
-**CREONT**
-
-Tu, guàrdia, vés lliure on vulguis,
-absolt de tota acusació.
-
-*El Guàrdia se'n va.*
-
-I tu, digues-me, breument, no amb llargues paraules:
-sabies que estava prohibit fer el que has fet?
-
-**ANTÍGONA**
-
-Ho sabia. Com no ho havia de saber? Era públic.
-
-**CREONT**
-
-I tot i així, vas gosar transgredir les lleis?
-
-**ANTÍGONA**[^9]
-
-No va ser Zeus qui va proclamar aquest edicte,
-ni la Justícia, companya dels déus de sota,
-va establir tals lleis entre els homes.
-I no creia que els teus decrets tinguessin tanta força
-que un mortal pogués traspassar
-les lleis no escrites i indefectibles dels déus.
-Perquè no són d'avui ni d'ahir, sinó que viuen
-des de sempre, i ningú sap d'on van aparèixer.
-Davant d'aquestes lleis no havia de pagar jo la pena
-davant dels déus per por del caprici de cap home;
-perquè sabia que havia de morir —com no?—
-encara que tu no ho haguessis proclamat. I si moro
-abans d'hora, ho considero un guany.
-Perquè qui viu com jo, enmig de tants de mals,
-com no ha de trobar guany en morir?
-Així, arribar a aquest destí
-no em causa cap dolor; però si hagués tolerat
-que el fill de la meva mare restés mort sense sepultura,
-llavors sí que hauria patit; d'això, no pateixo.
-I si et sembla que he obrat de manera insensata,
-potser és un insensant qui em jutja insensata.
-
-**COR**
-
-Es mostra la filla rude, de pare rude;
-no sap cedir davant les desgràcies.
-
-**CREONT**
-
-Sàpigues, doncs, que els esperits massa inflexibles
-són els que més cauen, i que el ferro més dur,
-endurit al foc i rígid,
-el veuràs trencat i esmicolat més sovint.
-Sé que un petit fre domina
-els cavalls més furiosos; perquè no escau
-pensar a lo gran qui és esclau dels altres.
-Aquesta va saber ultrajar llavors,
-transgredint les lleis establertes;
-i l'ultrage, ara que ho ha fet, és doble:
-jactar-se'n i riure de l'acte.
-Ara bé, no seré jo l'home —ella serà l'home—
-si aquest poder li queda impune.
-Tant si és filla de la meva germana
-com si fos la més propera de la meva sang
-per Zeus protector de la llar,
-ella i la seva germana no escaparan
-de la mort més dura; perquè acuso
-també l'altra d'haver planejat aquest enterrament.
-Crideu-la! La vaig veure fa poc dins,
-deliran i fora de seny.
-El cor dels que tramen malament en la fosca
-sol ser descobert abans.
-Però odio també quan algú, atrapat en mals,
-vol després fer-ho semblar bell.
-
-**ANTÍGONA**
-
-Vols alguna cosa més que matar-me?
-
-**CREONT**
-
-No, res més; amb això ho tinc tot.
-
-**ANTÍGONA**
-
-Llavors, per què trigues? De les teves paraules
-res no em plau ni em plaurà mai;
-i igualment les meves et desplauen a tu.
-Tanmateix, d'on hauria pogut treure una glòria
-més noble que d'enterrar el meu propi germà?
-Tots aquests dirien que els plau
-si la por no els tanqués la llengua.
-Però la tirania gaudeix de molts privilegis,
-i entre ells, el de fer i dir el que vol.
-
-**CREONT**
-
-Ets l'única dels cadmeus que ho veu així.
-
-**ANTÍGONA**
-
-Ells també ho veuen, però davant teu tanquen la boca.
-
-**CREONT**
-
-I no et fa vergonya pensar diferent d'ells?
-
-**ANTÍGONA**
-
-No hi ha res vergonyós en honrar els de la mateixa sang.
-
-**CREONT**
-
-No era del teu mateix sang el que va morir lluitant contra ell?
-
-**ANTÍGONA**
-
-Del meu mateix sang: d'una mateixa mare i un mateix pare.
-
-**CREONT**
-
-Com, doncs, fas un honor impiu a l'altre?
-
-**ANTÍGONA**
-
-El mort no testimoniarà contra mi.
-
-**CREONT**
-
-Sí, si l'honores igual que l'impiu.
-
-**ANTÍGONA**
-
-No era un esclau qui va morir, sinó un germà.
-
-**CREONT**
-
-Que assaltava aquesta terra! L'altre la defensava.
-
-**ANTÍGONA**
-
-Tanmateix, l'Hades desitja els mateixos ritus.
-
-**CREONT**
-
-Però el just no ha de rebre el mateix tracte que l'injust.
-
-**ANTÍGONA**
-
-Qui sap si a baix això és considerat sagrat?
-
-**CREONT**
-
-L'enemic mai no es fa amic, ni quan mor.
-
-**ANTÍGONA**
-
-La meva natura no és d'odiar, sinó d'estimar.[^10]
-
-**CREONT**
-
-Doncs baixa a baix, si has d'estimar, i estima'ls!
-Mentre jo visqui, no manarà una dona.
-
-*Entra Ismene portada pels criats.*
-
-**COR**
-
-Aquí ve, davant les portes, Ismene,
-vessant llàgrimes d'amor fraternal;
-un núvol sobre les celles enfosqueix
-el seu rostre enrogit
-i rega les seves belles galtes.
-
-**CREONT**
-
-I tu, que dins de casa, com una serp amagada,
-em xuclaves la sang sense que ho sabés —no veia
-que criava dues plagues i revoltoses contra el tron—,
-vinga, digues-me: confesses haver participat
-en l'enterrament, o juraràs que no en sabies res?
-
-**ISMENE**
-
-He fet l'acte, si ella hi consent;
-i comparteixo la culpa i la suporto.
-
-**ANTÍGONA**
-
-Però la justícia no t'ho permetrà, perquè
-ni vas voler ni jo t'hi vaig convidar.
-
-**ISMENE**
-
-Però en les teves desgràcies no em fa vergonya
-fer-me companya del teu patiment.
-
-**ANTÍGONA**
-
-L'Hades i els de sota saben qui va fer l'acte;
-no estimo una amiga que estima només de paraula.
-
-**ISMENE**
-
-No em deshonris, germana, negant-me
-morir amb tu i honrar el mort.
-
-**ANTÍGONA**
-
-No moris amb mi ni t'apropiïs del que no vas tocar.
-La meva mort sola bastarà.
-
-**ISMENE**
-
-I quina vida m'és estimada si em quedo sense tu?
-
-**ANTÍGONA**
-
-Pregunta-ho a Creont; perquè d'ell ets protectora.
-
-**ISMENE**
-
-Per què em fas mal, sense cap profit?
-
-**ANTÍGONA**
-
-Si en rio, és un riure de dolor.
-
-**ISMENE**
-
-Què podria fer ara per ajudar-te?
-
-**ANTÍGONA**
-
-Salva't tu mateixa; no et tinc enveja que escapissis.
-
-**ISMENE**
-
-Ai de mi! I no tindré part en el teu destí?
-
-**ANTÍGONA**
-
-Tu vas triar viure, i jo morir.
-
-**ISMENE**
-
-Però no sense haver-ho dit!
-
-**ANTÍGONA**
-
-Tu semblaves assenyada als uns, i jo als altres.
-
-**ISMENE**
-
-Tanmateix, la nostra falta és igual.
-
-**ANTÍGONA**
-
-Anima't; tu vius, i la meva ànima fa temps
-que és morta, per servir als morts.
-
-**CREONT**
-
-Dic d'aquestes dues noies que l'una
-s'ha mostrat insensata ara, l'altra des que va néixer.
-
-**ISMENE**
-
-Senyor, la raó que un té de naixement no hi roman
-en els qui pateixen, sinó que se'n va.
-
-**CREONT**
-
-La teva sí, quan vas triar fer mal amb els malvats.
-
-**ISMENE**
-
-Quina vida em queda a mi sola sense ella?
-
-**CREONT**
-
-No en parlis: ella ja no existeix.
-
-**ISMENE**
-
-Però mataràs la promesa del teu propi fill?
-
-**CREONT**
-
-Hi ha altres camps per llaurar.
-
-**ISMENE**
-
-No com l'harmonia que hi havia entre ell i ella.
-
-**CREONT**
-
-Odio dones dolentes per als meus fills.
-
-**ANTÍGONA**
-
-Oh estimat Hemon, com et deshonra el teu pare!
-
-**CREONT**
-
-Tu i el teu llit nupcial m'irriteu massa.
-
-**COR**
-
-De veres privaràs el teu fill d'ella?
-
-**CREONT**
-
-L'Hades és qui posarà fi a aquestes noces.
-
-**COR**
-
-Sembla decidit, doncs, que ha de morir.
-
-**CREONT**
-
-Per tu i per mi. No més dilacions:
-porteu-la dins, servidors; d'ara endavant
-han de ser dones tancades i no deixar-les lliures.
-Perquè fins els agosarats fugen
-quan veuen l'Hades a prop de la vida.
-
-*Porten Antígona i Ismene dins.*
-
----
-
-## Segon Estàsim
-
-**COR**
-
-Feliços aquells la vida dels quals no ha tastat el mal!
-Perquè quan una casa és sacsejada pels déus,
-cap desgràcia no falta a la raça,
-avançant sobre generacions;
-igual que quan les onades del mar,
-empeses per vents tràcis sobre les tenebres submarines,
-remenen des del fons sorra negra,
-i les costes colpides bramen amb un gemec.
-
-Antic és el dolor que veig
-en la casa dels Labdàcides,
-calamitat sobre calamitat dels morts,
-i cap generació no allibera l'altra,
-sinó que un déu les tomba, sense remei.
-Ara, sobre l'última arrel
-que restava a la casa d'Èdip, una llum s'estenia;
-i ara, la pols sagnant dels déus inferiors
-la sega, amb la follia del discurs i l'Erínia del cor.
-
-La teva potència, oh Zeus, quina transgressió d'homes
-la podria contenir?
-Ni la son que tot ho caça la venç mai,
-ni els mesos incansables dels déus; i tu,
-senyor que no envelleix amb el temps,
-ocupes l'esplendor resplendent de l'Olimp.
-El que ve després i el que vindrà,
-i el que va ser abans, la mateixa llei assoleix:
-res no s'acosta a la vida dels mortals
-sense una gran part de ruïna.
-
-Car l'esperança errant, que a molts homes és profit,
-a molts altres és engany de desigs lleugers;
-i avança sense que el qui no sap ho noti
-fins que algú es crema els peus al foc calent.
-Perquè per la saviesa d'algú, es va revelar l'adagi cèlebre:
-el mal sembla bé
-a aquell a qui un déu
-empeny cap a la ruïna;
-i ben poc temps passa fora de la desgràcia.
-
-*Entra Hemon.*
-
-Però aquí ve Hemon, el més jove
-dels teus fills; arriba adolorit
-pel destí de la seva promesa Antígona,
-sofrint per les seves noces frustrades?
-
----
-
-## Tercer Episodi
-
-**CREONT**
-
-Aviat ho sabrem, millor que cap endeví.
-Fill, véns furiós contra el teu pare
-havent sentit la sentència sobre la teva promesa?
-O bé nosaltres et som estimats facis el que facis?
-
-**HEMON**
-
-Pare, sóc teu, i tu em guies amb els teus consells
-bons, que jo seguiré.
-Cap matrimoni tindrà més valor per a mi
-que la teva bona guia.
-
-**CREONT**
-
-Així ha de ser, fill, que en el pit
-poseu el judici patern per sobre de tot.
-Per això els homes desitgen criar fills
-obedients dins la casa,
-perquè puguin tornar mal per mal a l'enemic
-i honrar l'amic igual que el pare.
-Però qui engendra fills inútils,
-què en diries sinó que s'ha criat penalitats
-i un gran motiu de riure per als seus enemics?
-No llencis mai, fill, la raó per plaer
-d'una dona, sabent que és un fred abraç
-una dona dolenta al teu llit. Quina ferida
-hi ha pitjor que un fals amic?
-Escup-la, doncs, com una enemiga,
-i deixa que la noia es casi amb algú a l'Hades.
-Perquè l'he agafat obertament, sola
-de tota la ciutat en la seva desobediència,
-i no em faré mentider davant la ciutat:
-la mataré. Que invoqui, si vol, Zeus
-protector de la sang. Perquè si tolero
-el desordre entre els de la meva pròpia família,
-molt més encara entre els estranys.
-Qui és just dins la seva casa,
-es mostrarà just també a la ciutat.
-Però qui transgredeix o violenta les lleis
-o pretén donar ordres als governants,
-no tindrà mai el meu elogi.
-Cal obeir qui la ciutat ha designat,
-en coses petites i grans, justes o no.
-I d'aquest home confiaria jo
-que manaria bé i seria manat amb gust,
-i que en la tempesta de la batalla restaria
-ferm com un company just i lleial.
-No hi ha cap mal pitjor que l'anarquia.
-Ella destrueix ciutats, ella arrasa
-les cases, ella trenca
-les files aliades en la fugida; en canvi, l'obediència
-salva la majoria dels que es mantenen drets.
-Així cal defensar l'ordre establert,
-i de cap manera deixar-se vèncer per una dona.
-Millor, si cal, caure davant un home,
-que no pas que ens diguin inferiors a les dones.
-
-**COR**
-
-A nosaltres, si els anys no ens enganyen,
-ens sembles parlar amb seny del que dius.
-
-**HEMON**
-
-Pare, els déus donen la raó als homes,
-el bé més gran de tots.
-Jo no sabria dir que tu no parles bé
-—ni ho voldria ni ho sabria—,
-però un altre podria encertar-la.
-La meva condició és vetllar per tu
-tot el que la gent diu, o fa, o critica.
-Perquè la teva mirada espanta l'home del carrer
-per a paraules que tu no voldries sentir;
-però jo puc escoltar en la foscor
-com la ciutat plora per aquesta noia:
-que de totes les dones és la menys mereixedora
-de morir de la pitjor mort per l'acte més gloriós.
-Ella, que no va deixar que el seu germà caigut
-en batalla restés sense enterrar, a mercè de gossos
-ni d'ocells carnissers,
-no mereix ella l'honor de l'or?
-Tal és el rumor fosc que s'escampa en silenci.
-
-Per a mi, pare, no hi ha cap bé més preuat
-que la teva prosperitat;
-perquè quin orgull més gran per als fills
-que la glòria d'un pare que floreix, o per al pare que els fills?
-No portis dins teu un sol criteri
-—que el que tu dius, i res més, és l'encertat.
-Perquè qui creu que ell sol és assenyat,
-o que té una llengua o una ànima que ningú altre té,
-aquest, un cop obert, es mostra buit.
-Però un home, per savi que sigui, no es deshonra
-aprenent molt i no tensant massa la corda.
-Veus, vora els torrents hivernals,
-com els arbres que cedeixen salven les branques,
-però els que resisteixen són arrabassats d'arrel?
-Així el mariner que tensa la vela
-sense cedir mai, acaba navegant
-amb la quilla girada.
-Cedeix, doncs, i dóna pas al teu enuig.
-Perquè si algun judici tinc jo, tot i ser jove,
-dic que és excel·lent que un home
-sigui ple de tota saviesa;
-però si no, perquè les coses no solen anar així,
-també és bo aprendre dels qui parlen bé.
-
-**COR**
-
-Senyor, escau que aprenguis d'ell si diu alguna cosa encertada,
-i tu d'ell igualment; perquè tots dos heu parlat bé.
-
-**CREONT**
-
-A la nostra edat, haurem d'aprendre a pensar
-d'un home tan jove?
-
-**HEMON**
-
-Res que no sigui just. I si sóc jove,
-no cal mirar l'edat sinó els actes.
-
-**CREONT**
-
-És un acte honrar els que creen desordre?
-
-**HEMON**
-
-No demanaria mai que es reverenciés els malvats.
-
-**CREONT**
-
-I no és ella víctima d'aquesta malaltia?
-
-**HEMON**
-
-No ho diu el poble de Tebes.
-
-**CREONT**
-
-La ciutat em dirà a mi què he d'ordenar?
-
-**HEMON**
-
-Veus com has parlat massa jove, tu?
-
-**CREONT**
-
-He de governar aquesta terra per altri o per mi?
-
-**HEMON**
-
-No hi ha ciutat que sigui d'un sol home.
-
-**CREONT**
-
-No es considera la ciutat del que la governa?
-
-**HEMON**
-
-Governa bé, si vols, un desert tot sol.
-
-**CREONT**
-
-Aquest, pel que sembla, és aliat de la dona.
-
-**HEMON**
-
-Si tu ets la dona. Perquè jo em preocupo per tu.
-
-**CREONT**
-
-Miserable! En litigi contra el teu pare?
-
-**HEMON**
-
-Perquè et veig errar contra la justícia.
-
-**CREONT**
-
-Erro honrant la meva autoritat?
-
-**HEMON**
-
-No l'honores trepitjant els honors dels déus.
-
-**CREONT**
-
-Caràcter abjecte, sotmès a una dona!
-
-**HEMON**
-
-No em trobaràs mai esclau de la vilesa.
-
-**CREONT**
-
-Tot el teu discurs és per ella.
-
-**HEMON**
-
-I per tu i per mi, i pels déus de sota.
-
-**CREONT**
-
-Ella no viurà per casar-se amb tu, mai.
-
-**HEMON**
-
-Llavors morirà, i en morir, destruirà algú més.
-
-**CREONT**
-
-Gosaries arribar a les amenaces?
-
-**HEMON**
-
-Quina amenaça és parlar contra judicis buits?
-
-**CREONT**
-
-Plorant aprendràs, tu que ets buit de seny.
-
-**HEMON**
-
-Si no fossis el meu pare, diria que no tens seny.
-
-**CREONT**
-
-Esclau d'una dona, no em halagues!
-
-**HEMON**
-
-Vols parlar i no sentir mai res?
-
-**CREONT**
-
-De debò? Per l'Olimp, sàpigues
-que no m'insultaràs sense pagar-ho.
-Porteu aquí l'odiosa, perquè mori
-ara mateix, davant els ulls del nuvi!
-
-**HEMON**
-
-Mai davant meu, no t'ho creguis;
-ella no morirà al meu costat, i tu mai
-no tornaràs a veure la meva cara amb els teus ulls;
-delira amb aquells amics que ho vulguin suportar.
-
-*Hemon se'n va.*
-
-**COR**
-
-L'home, senyor, se n'ha anat precipitat per la ira;
-un esperit tan jove, ferit, és terrible.
-
-**CREONT**
-
-Que faci el que vulgui! Que pensi en gran!
-Però aquestes dues noies no s'escaparan del destí.
-
-**COR**
-
-Penses matar-les totes dues?
-
-**CREONT**
-
-No la que no hi ha tingut part; bé dius.
-
-**COR**
-
-I amb quina mort penses matar-la?
-
-**CREONT**
-
-La portaré a un lloc desert de tota petja humana
-i la tancaré viva en una cova de roca,
-posant-hi tan sols una mica de menjar, com a expiació,
-perquè tota la ciutat eviti la contaminació.
-I allà, pregant a l'Hades, l'únic déu que venera,
-potser obtindrà de no morir,
-o almenys aprendrà, massa tard,
-que és treball inútil venerar l'Hades.
-
-*Creont se'n va.*
-
----
-
-## Tercer Estàsim[^11]
-
-**COR**
-
-Eros, invencible en el combat, Eros, que caus sobre les possessions,
-que vetlles la nit a les galtes suaus d'una donzella,
-que travesses els mars i les cabanes del camp;
-ni cap dels immortals pot fugir de tu
-ni cap dels homes efímers; i qui et posseeix, delira.
-
-Tu arrenques les ments justes cap a la injúria,
-tu has provocat aquesta querella entre homes de la mateixa sang;
-venç el desig visible dels ulls de la núvia
-bella al tàlem, que seu al costat
-dels grans principis. Perquè juga invencible
-la deessa Afrodita.
-
----
-
-## Quart Episodi
-
-**COR**
-
-Ara jo mateix sóc arrossegat fora de les lleis
-en veure això; no puc contenir
-la font de llàgrimes
-quan veig Antígona encaminar-se
-cap a la cambra on tots reposen.
-
-*Antígona és conduïda per guardes.*
-
-**ANTÍGONA**
-
-Mireu-me, ciutadans de la terra pàtria,
-caminant el meu darrer camí,
-mirant per última vegada la llum del sol,
-i mai més. L'Hades que a tots acull em porta viva
-a la riba de l'Aqueront,[^12]
-sense haver tingut part en els himeneats,
-sense que cap cant nupcial m'hagi celebrat;
-em desposaré amb l'Aqueront.
-
-**COR**
-
-¿No te'n vas, doncs, gloriosa i lloada
-cap a aquesta cambra dels morts,
-ni colpida per malaltia que consumeix
-ni pel tall de l'espasa,
-sinó autònoma, viva, sola entre els mortals,
-baixaràs a l'Hades?
-
-**ANTÍGONA**
-
-He sentit que va morir de la manera més trista
-l'estrangera frígia, filla de Tàntal,[^13]
-al cim del Sípil, a qui la roca,
-com heura tenaç, va dominar,
-i les pluges que la fonen —diuen els homes—
-i la neu no la deixen mai, i sota les celles ploraneres
-rega els vessants; un destí molt semblant al seu m'adorm.
-
-**COR**
-
-Però ella era deessa i nascuda de déus,
-i nosaltres som mortals i de llinatge mortal.
-Tot i que per a una morta és un gran honor
-haver compartit el destí dels iguals als déus
-en vida i després en la mort.
-
-**ANTÍGONA**
-
-Ai, em fan riure! Per què, pels déus paterns,
-m'ultrageu no quan ja he marxat, sinó en presència?
-Oh ciutat, oh homes opulents de la ciutat!
-Ah, fonts de Dirce,
-i bosc sagrat de Tebes, la dels bells carros,
-us prenc per testimonis
-de com, sense plors dels amics, per quines lleis,
-camino cap al sepulcre de terra amuntegada, tomba inaudita.
-Ai, dissortada, que ni entre els mortals ni entre els morts
-tinc lloc, ni amb els vius ni amb els morts.
-
-**COR**
-
-Avançant fins a l'extrem de l'audàcia,
-vas caure, filla, amb força
-contra l'alt pedestal de la Justícia.
-I pagues algun càstig del teu pare.
-
-**ANTÍGONA**
-
-Has tocat el meu dolor més punyent:
-el plany tres vegades revoltat del meu pare,
-i de tot el nostre destí,
-dels cèlebres Labdàcides.
-Ai, els desastres del llit matern,
-les unions incestuoses de la meva mare
-amb el meu pare desgraciat!
-De quins pares vaig néixer jo, la infeliç!
-Cap a ells me'n vaig, maleïda, sense noces,
-com a resident estranya.
-Ai, germà de noces fatals,
-morint, m'has mort a mi que encara vivia!
-
-**COR**
-
-Reverència és pietat,
-però el poder, per a qui té poder,
-no es pot transgredir de cap manera;
-el teu propi caràcter t'ha destruït.
-
-**ANTÍGONA**
-
-Sense plors, sense amics, sense cants nupcials, dissortada,
-sóc conduïda pel darrer camí.
-Ja no m'és permès, desgracidada,
-veure l'ull sagrat d'aquesta llum.
-I la meva sort, sense llàgrimes,
-cap amic no la plora.
-
-**CREONT**
-
-No sabeu que cants i plors abans de morir,
-ningú no pararia si els calgués?
-No la portareu ràpidament? I tancada
-en el sepulcre cobert, com he dit,
-deixeu-la sola, abandonada, ja mori
-o visqui enterrada en tal sepultura;
-perquè nosaltres som innocents de la noia:
-només se la privarà de residir a dalt.
-
-**ANTÍGONA**
-
-Oh tomba, oh tàlem nupcial, oh habitació
-subterrània, guàrdia per sempre, on camino
-cap als meus, dels quals el nombre entre els morts
-Persèfone ha rebut ja la majoria;
-i jo, l'última i la pitjor amb diferència,
-baixo abans que s'exhaureixi la meva part de vida.
-Però arribo nodrida per l'esperança
-d'arribar estimada al meu pare, estimada a tu,
-mare, estimada a tu, cap germà;
-perquè quan vau morir, amb les meves mans jo
-us vaig rentar, us vaig vestir i vaig fer
-les libacions sobre la tomba. I ara, Polinices,
-per haver cobert el teu cos, rebo aquesta recompensa.
-Tot i que t'he honrat amb el que el seny aprova.
-Perquè mai —ni si hagués estat mare de fills,
-ni si un espòs se m'hagués podrit mort—
-no hauria emprès aquesta tasca contra la voluntat dels ciutadans.
-Per quina llei ho dic? Un espòs mort,
-un altre n'hauria tingut; i un fill d'un altre home,
-si hagués perdut el primer;
-però amb el pare i la mare amagats a l'Hades,
-cap germà no podria néixer mai.[^14]
-Per aquesta llei et vaig posar a tu per davant,
-i a Creont vaig semblar-li criminal
-i terriblement agosarada, oh cap germà.
-I ara em porta així, amb les seves mans,
-sense llit, sense himeneu, sense haver tingut part
-en cap matrimoni ni en la criança de fills,
-sinó que, abandonada pels amics, dissortada,
-viva entro a la cambra dels morts.
-Quina llei divina he transgredit?
-Per què he de mirar encara als déus, la dissortada?
-A qui invocaré com a aliat? Si precisament
-per haver estat piadosa he guanyat el nom d'impiadosa.
-Si això és el que als déus sembla bé,
-sofrint reconeixeré el meu error;
+el cadàver, i vam deixar ben nu el cos podrit,
+ens vam asseure dalt dels turons, contra el vent,
+evitant que ens arribés l'olor,
+un home renyint l'altre amb crits
+aspres, si algú descuidava aquesta tasca.
+Això va durar fins que el cercle brillant
+del sol es va plantar enmig del cel
+i la calor ens cremava. Llavors, de sobte,
+un remolí va alçar de terra un turment celeste,
+va omplir la plana, assotant tota
+la vegetació del camp, i l'aire immens
+es va omplir de pols; vam tancar els ulls, patint
+aquesta plaga divina.
+I quan va passar, al cap d'una llarga estona,
+la noia apareix, i deixa anar un crit ple d'amargor.
+
+l'agut crit d'un ocell quan veu el niu
+buit de cries, orfe del seu jaç. 425
+Així ella mateixa, quan va veure el cadàver nu,
+va trencar a plorar i va invocar
+terribles malediccions contra els qui havien comès l'acte.
+I tot seguit va portar pols seca amb les mans
+i d'un càntir de bronze ben forjat 430
+va coronar el mort amb triple libació.
+I nosaltres, en veure-ho, vam córrer
+i la vam atrapar de seguida, sense que s'alterés,
+i la vam interrogar pels fets d'abans i pels d'ara:
+no va negar res, 435
+alhora amb alegria i dolor per a mi.
+Perquè haver escapat jo dels mals
+és dolcíssim, però portar els amics al mal
+és dolorós; però tot això m'importa menys
+que la meva pròpia salvació. 440
+CREONT: Tu, sí, tu que baixeu el cap cap a terra,
+dius o neges haver fet això?
+ANTÍGONA: Admeto haver-ho fet i no ho nego.
+CREONT: Tu pots marxar lliure cap a on vulguis,
+alliberat d'aquesta greu acusació; 445
+i tu digue'm, breument, sense donar-hi voltes:
+sabies que estava proclamat no fer això?
+ANTÍGONA: Ho sabia. Com no ho havia de saber? Era evident.
+CREONT: I aleshores vas gosar transgredir aquestes lleis?
+ANTÍGONA: Perquè no va ser Zeus qui em va proclamar això, 450
+
+Ni la Justícia que habita amb els déus de l'Avern va establir semblants lleis entre els mortals. Ni creia que els teus edictes tinguessin tal poder que poguessin ultrapassar, tu que ets mortal, les lleis no escrites i immutables dels déus. Perquè no són d'ara ni d'ahir, sinó que viuen eternament, i ningú no sap des de quan van aparèixer. Jo no havia de respondre davant dels déus d'aquestes lleis temint l'orgull de cap home; ja sabia que moriria, com no?, encara que tu no haguessis proclamat l'edicte. I si mor abans de temps, ho tinc per guany. Qui viu entre tants mals com jo, com no n'ha de treure profit de la mort? Així, per a mi afrontar aquest destí no és cap dolor; però si hagués deixat insepult el cadàver del meu germà, fill de la mateixa mare, per això sí que patira; per això no en sofreixo. I si et sembla que ara actuo com una necia, gairebé és un neci qui m'acusa de necesa.
+COR: Es veu el caràcter ferotge de la noia, filla d'un pare ferotge. No sap cedir davant l'adversitat.
+CREONT: Però sàpigues que els ànims massa durs cauen més sovint, i veuràs que el ferro més resistent, forjat al foc i ben temperat, es trenca i s'esquerda amb gran facilitat.
+
+Amb un simple fre sé que es domen
+els cavalls irats; no convé 
+que tingui pensaments altius qui és esclau dels altres.
+Aquesta sabia cometre insolències llavors,
+transgredir les lleis establertes;
+i ara, després d'haver-ho fet, la segona insolència
+és vanagloriar-se'n i riure del que ha fet.
+Ara, doncs, jo no seré home, sinó ella serà l'home,
+si aquest poder queda impune en les seves mans.
+Però sigui germana meva o més consanguínia
+que tot el Zeus protector de la família,
+ni ella ni la seva cómplice escaparan
+de la mort més cruel; també a aquella
+l'acuso igualment d'haver planejat aquest enterrament.
+Crideu-la! L'acabo de veure a dins
+delirant, fora del seu seny.
+L'ànim sol traïr-se abans
+dels qui maquinen en secret sense cap rectitud;
+però també odio quan algú,
+sorprès en faltes, després vol embellir-les.
+**ANTÍGONA: ** Vols alguna cosa més que matar-me un cop m'has capturat?
+**CREONT: ** Jo res; amb això ho tinc tot.
+**ANTÍGONA: ** Doncs per què dubtes? Cap de les teves paraules
+m'agrada ni m'agradarà mai;
+i així també les meves et disgusten per naturalesa.
+I, tanmateix, d'on hauria pogut treure
+glòria més gloriosa que posant al sepulcre
+el meu propi germà?
+
+τιθεῖσα; τούτοις τοῦτο πᾶσιν ἁνδάνειν
+λέγοιτ᾽ ἄν, εἰ μὴ γλῶσσαν ἐγκλῄοι φόβος. 505
+ἀλλ᾽ ἡ τυραννὶς πολλά τ᾽ ἄλλ᾽ εὐδαιμονεῖ
+κἄξεστιν αὐτῇ δρᾶν λέγειν θ᾽ ἃ βούλεται.
+**CREÓ** Tu ets l'única de tots els cadmeus que ho veus així.
+**ANTÍGONA** Ells també ho veuen, però davant teu callen.
+**CREÓ** I tu no et fa vergonya pensar diferent dels altres? 510
+**ANTÍGONA** No hi ha res de vergonyós en honrar els que comparteixen la teva sang.
+**CREÓ** I no era de la mateixa sang qui va morir lluitant contra ell?
+**ANTÍGONA** De la mateixa sang, de la mateixa mare i el mateix pare.
+**CREÓ** Doncs com pots retre-li honors impius?
+**ANTÍGONA** El mort no ho dirà, això que dius. 515
+**CREÓ** Però si l'honres igual que al sacríleg...
+**ANTÍGONA** No va morir cap esclau, sinó un germà.
+**CREÓ** Devastant aquesta terra; l'altre la defensava.
+**ANTÍGONA** Tot i així, l'Hades reclama aquestes lleis.
+**CREÓ** Però el bo no ha de tenir la mateixa sort que el dolent. 520
+**ANTÍGONA** Qui sap si allà baix això és sagrat?
+**CREÓ** Mai l'enemic es fa amic, ni quan ha mort.
+**ANTÍGONA** Jo no he nascut per odiar, sinó per estimar.
+**CREÓ** Doncs vés-te'n allà baix i, si has d'estimar, estima
+els morts; mentre jo visqui, cap dona no manarà sobre mi. 525
+**COR** I ara davant les portes ve Ismene,
+
+vessant llàgrimes de germana cap avall;
+un núvol sanguinolent cobreix les celles,
+mullant la bella galta.
+**CREONT** I tu, que com una escurçó amagada a casa
+em traïes en secret, i jo no m'adonava
+que alimentava dues amenaces i dues rebel·lions contra el tron,
+vés, digues-me: també tu confessaràs
+haver participat en aquesta sepultura, o juraràs que no ho sabies?
+**ISMENE** Ho he fet, si aquesta ho confirma,
+i comparteixo i assumeixo la culpa.
+**ANTÍGONA** Però la justícia no t'ho permetrà,
+perquè ni tu ho vas voler ni jo t'hi vaig associar.
+**ISMENE** Però en les teves desgràcies no em fa vergonya
+acompanyar-te en el patiment.
+**ANTÍGONA** De qui va ser l'obra, Hades i els de sota en són testimonis;
+jo no estimo l'amiga que només ama amb paraules.
+**ISMENE** No em deshonris, germana, deixa'm
+morir amb tu i purificar el mort.
+**ANTÍGONA** No moris per mi ni facis teu
+allò que no vas tocar. Prou moriré jo sola.
+**ISMENE** I quina vida em serà estimada sense tu?
+**ANTÍGONA** Pregunta-ho a Creont: d'ell ets tu protegida.
+**ISMENE** Per què m'aflixeixes així, sense cap profit?
+**ANTÍGONA** Si ric, serà amb amargura.
+**ISMENE** Doncs què puc fer encara per ajudar-te?
+
+Salva't tu mateixa; no t'envejo si t'escapes.
+ISMENA: Ai de mi, desgraciada! I me'n vaig sense compartir el teu destí?
+ANTÍGONA: Tu vas triar viure, i jo morir.
+ISMENA: Però no sense haver dit les meves paraules.
+ANTÍGONA: Tu pensaves bé en una cosa, jo en l'altra.
+ISMENA: I, tanmateix, la culpa és igual per a les dues.
+ANTÍGONA: Tingues valor; tu vius, però la meva ànima ja fa temps que ha mort, per poder ajudar els morts.
+CREÓ: D'aquestes dues noies dic que una acaba de mostrar-se completament folla, l'altra ho és des que va néixer.
+ISMENA: La raó no es manté en qui viu desgràcies, sinó que s'esvaeix.
+CREÓ: Almenys la teva, quan vas triar fer el mal al costat dels dolents.
+ISMENA: Com he de viure jo sola, sense aquesta?
+CREÓ: Però d'aquesta no en parlis; ja no existeix.
+ISMENA: Però mataràs les noces del teu propi fill?
+CREÓ: Hi ha altres camps que es poden llaurar.
+ISMENA: No com estava acordat entre ell i aquesta.
+CREÓ: Odio les dones dolentes per als meus fills.
+ANTÍGONA: Oh estimadíssim Hemó, com t'humilia el pare!
+CREÓ: M'avorreixes massa, tu i el teu llit nupcial.
+COR: Doncs privaràs d'aquesta el teu propi fill?
+CREÓ: Serà Hades qui aturi aquests casaments.
+
+**COR** Està decidit, sembla, que aquesta ha de morir.
+**CREÓ** Per tu i per mi també. No perdis més temps, 
+porteu-la a dins, servents. D'ara endavant 
+cal que aquestes siguin dones i no vagin lliures.
+Fins els valents fugen quan veuen l'Hades 
+ja a prop de llur vida.
+**COR** Feliços aquells la vida dels quals no ha tastat cap mal.
+Quan un déu sacseja una casa des del cel, 
+cap desgràcia no manca d'estendre's
+sobre la multitud del llinatge,
+igual que l'onatge del mar de vent hostil, quan
+les ràfegues tràcies escampen les tenebres dels fons marins,
+revol des de l'abisme sorra negra
+i les costes, assotades pel vent contrari, 
+gemeguen amb estrèpit.
+Veig que les penes ancestrals de la casa dels Labdàcides
+cauen sobre les penes dels morts,
+i cap generació no n'allibera el llinatge, sinó que
+algun dels déus la destrueix i no té redempció.
+Ara, per damunt de les darreres arrels 
+que s'estenien, la llum a la casa d'Èdip
+novament la cobreix pols sagnant dels déus d'abaix,
+la bogeria de les paraules i la fúria de l'esperit.
+El teu poder, Zeus, quina transgressió dels homes
+el podria vèncer? A tu no et pren mai 
+el son que tot ho caça,
+ni els mesos incansables dels déus, sinó que, impertorbable amb el temps,
+posseeixes com a senyor l'esplendor marmoreal de l'Olimp.
+Per al futur com per al que vindrà
+
+I aquesta llei d'abans ja bastava, 
+res no passa
+per la vida dels mortals sense ruïna.
+Doncs l'esperança errant porta molts beneficis als homes, 
+però a molts també és engany d'amors vans; 
+per qui no ho sap res passa, fins que algú toca
+el foc amb el peu. De la saviesa ve un proverbi conegut: 
+que el mal sembli bo
+a aquell a qui el déu
+la ment guia cap a la ruïna; 
+i viu molt poc temps lluny del desastre.
+Aquí ve Hemó, el més jove
+dels teus fills. Ve afligit
+pel destí de la seva promesa Antígona, 
+dolorit per l'engany del llit perdut?
+CREONT: Aviat ho sabrem millor que els endevins.
+Fill meu, no vindràs al teu pare furiós
+per haver sentit la sentència definitiva
+de la teva futura esposa? O som per tu
+estimats en tot el que fem?
+HEMÓ: Pare, sóc teu, i tu que tens
+bons consells m'orientes, i jo els seguiré.
+Cap matrimoni em serà més important
+que seguir el teu savi judici.
+CREONT: Així cal, fill meu, tenir-ho en el cor: 
+estar en tot darrera del parer del pare.
+Per això els homes preguen tenir fills
+obedients criats a casa, 
+perquè castiguin l'enemic amb mals
+i honorin l'amic igual que el pare.
+
+Qui genera fills inútils, què més se'n pot dir sinó que s'ha procurat penes a si mateix i molt de riure als seus enemics?
+No perdis mai la raó, fill meu, pel plaer d'una dona. Sàpigues que això es converteix en una abraçada freda: tenir una dona dolenta per esposa a casa. I quina ferida seria més gran que un mal amic?
+Rebutja-la com una enemiga i deixa que aquesta noia es casi amb algú a l'Hades. Ja que l'he agafat clarament desobedient a tota la ciutat —ella sola—, no seré fals amb la ciutat, sinó que la mataré. Que invoqui llavors Zeus, déu del llinatge! Perquè si he de criar els de la meva casa sense disciplina, molt més faré el mateix amb els de fora del parentesc.
+Qui és home honest amb els seus també es mostrarà just a la ciutat. Però qui transgredeix les lleis o pretén manar els qui governen, no pot tenir la meva aprovació.
+Cal obeir qui la ciutat designi, tant en les coses petites com en les justes i en les contràries. D'aquest home estaria segur que sabria manar bé i acceptaria ser manat, i que en la guerra, al lloc que li toqués, es mantindria com un aliat just i bo.
+
+No hi ha mal més gran que l'anarquia.
+Això destrueix les ciutats, això enderroca
+les cases, això trenca les files aliades
+i les dispersa; però la disciplina
+salva la majoria dels cossos dels que es mantenen drets.
+Així cal defensar els que mantenen l'ordre,
+i no hem de ser mai vençuts per una dona.
+Millor, si cal, caure davant d'un home
+que no ser anomenats inferiors a les dones.
+COR
+A nosaltres, si no ens enganya l'edat,
+ens sembla que raones amb seny en tot allò que dius.
+HEMÓ
+Pare, els déus fan néixer en els homes l'enteniment,
+el més alt de tots els béns que existeixen.
+Jo no podria ni sabria dir
+que no tens raó en això que afirmes.
+Potser, però, també un altre podria tenir raó.
+Però jo he nascut per observar tot el que
+algú diu o fa o critica.
+La teva mirada, en efecte, és terrible per a un ciutadà corrent
+quan parles així, d'una manera que tu no voldries sentir;
+però jo puc escoltar, en la foscor,
+com la ciutat plora aquesta noia,
+com la més indigna de totes les dones
+pereix de la pitjor manera per les accions més glorioses.
+Ella, que no va deixar que el seu propi germà,
+caigut en la batalla, jacés sense sepultura
+ni fos devorat per gossos carnívors
+ni per cap ocell de presa.
+
+¿No és aquesta digna de rebre honors daurats?
+Això diu el rumor que corre en silenci.
+Per a mi, quan tu tens èxit, pare, no hi ha cap possessió més valuosa. Quina glòria més gran hi ha per als fills que la d'un pare florent? O quin honor més gran dels fills cap al pare?
+No et limitis a una sola manera de ser, com dius, i cap altra, pensant que això és l'encertat. Perquè qui creu ser l'únic que pensa, o tenir una llengua que ningú més té, o una ànima única, quan es posen a prova resulten buits.
+Per a un home, fins i tot si és savi, aprendre moltes coses no té res de vergonyós. Ni tampoc el fet de no tensar-se excessivament. Veus com al costat dels torrents hivernals tots els arbres que cedeixen salven les seves branques? Els qui s'hi resisteixen es perden sencers amb arrel i tot. 
+De la mateixa manera, el vaixell que tensa massa les cordes sense cedir gens acaba navegant cap avall amb els bancs del revés.
+Cedeix, doncs, i concedeix al teu cor un canvi. Perquè si hi ha alguna opinió sensata, fins i tot d'algú més jove com jo, dic que és molt millor que l'home neixi ple de tot coneixement. Però si no és així —perquè això no sol passar—, també és bell aprendre dels qui parlen bé.
+Cor: Senyor, és raonable que tu aprenguis, si ell diu alguna cosa oportuna.
+
+aprendre, i tu també aprèn això: està ben dit de dues maneres.
+**CREÓ** ¿Nosaltres, a la nostra edat, haurem d'aprendre 
+a pensar d'un home tan jove per naturalesa?
+**HÈMON** Res que no sigui just. I si sóc jove,
+no miris tant els anys com els fets.
+**CREÓ** ¿És un fet respectar els rebels?
+**HÈMON** No diria mai que s'ha de venerar els malvats.
+**CREÓ** ¿Doncs no està aquesta noia afectada per tal mal?
+**HÈMON** Tot el poble de Tebes diu que no.
+**CREÓ** ¿La ciutat ens ha de dir què hem de manar?
+**HÈMON** Veus com parles massa jove?
+**CREÓ** ¿Per a un altre que no sigui jo he de governar aquesta terra?
+**HÈMON** No és ciutat la que pertany a un sol home.
+**CREÓ** ¿No es considera que la ciutat és de qui governa?
+**HÈMON** Governaries bé una terra deserta tu sol.
+**CREÓ** Aquest, pel que veig, lluita al costat de la dona.
+**HÈMON** Si tu ets dona, sí. Per tu m'interesso.
+**CREÓ** Malvat, ¿vas contra la justícia del teu pare?
+**HÈMON** No et veig seguir la justícia quan erres.
+**CREÓ** ¿Erro respectant la meva autoritat?
+**HÈMON** No respectes l'honor dels déus, trepitjant-lo.
+**CREÓ** Caràcter immund, inferior a una dona!
+**HÈMON** No em trobaràs inferior a les vergonyes.
+**CREÓ** Tot el teu discurs és a favor d'ella.
+
+**HÈMON** I de tu i de mi, i dels déus dels inferns.
+**CRÈON** Aquesta no la prendràs mai més per esposa mentre visqui.
+**HÈMON** Si mor, morint destruirà algú.
+**CRÈON** I així t'atreveixes a amenaçar-me descaradament?
+**HÈMON** Què té d'amenaçant dir el que és just?
+**CRÈON** Ploraràs la teva follia, insensé que ets.
+**HÈMON** Si no fossis el meu pare, diria que has perdut la raó.
+**CRÈON** No em parlis com un esclau de dona.
+**HÈMON** Vols parlar sense escoltar res del que et dic?
+**CRÈON** És cert? Per Zeus que ho sabràs! No em tornaràs a insultar impunement. Porteu aquesta dona i que mori ara mateix davant dels seus ulls, a prop del nuvi.
+**HÈMON** No davant meu, això no ho creguis mai. Ni ella morirà al meu costat ni tu no tornaràs a veure'm, perquè delires amb els qui t'envolten.
+**COR** L'home, senyor, se n'ha anat furiós. La ment d'un jove quan pateix és terrible.
+**CRÈON** Que faci el que vulgui, que pensi que és més del que és. Però aquestes dues noies no escaparan de la mort.
+**COR** Tens intenció de matar-les totes dues?
+**CRÈON** No la innocent; dius bé.
+**COR** I amb quina mena de mort planeja matar-la?
+
+Creó la conduirà lluny del camí dels mortals, a soledat,
+i l'amagarà viva en una fossa de pedra,
+posant-hi només el menjar just per evitar la màcula,
+perquè així tota la ciutat escapi del sacrilegi.
+I allà, pregant a Hades, l'únic déu que venera,
+potser aconseguirà no morir,
+o almenys llavors sabrà, finalment,
+que és treball inútil venerar els d'Hades.
+**Cor**
+Amor invencible en la batalla, Amor que t'abats sobre els béns,
+tu que vetlles en les tendres galtes de la donzella,
+vagues per damunt dels mars i pels estables del camp;
+i no t'escapa cap dels immortals
+ni cap dels homes d'un sol dia. Qui et té, s'enjolieix.
+Tu torces les ments dels justos cap a la injustícia, per a llur perdició;
+tu has despertat aquest conflicte entre homes de la mateixa sang;
+però venç el desig clar dels ulls de la núvia
+del bon llit, seient al costat dels grans
+ordenaments divins. Perquè jugant invencible hi ha la deessa Afrodita.
+Però ara ja jo mateix em veig
+portat fora de les lleis
+veient això, i ja no puc
+contenir les fonts de llàgrimes
+quan veig aquesta Antígona anant
+cap al llit on tots dormen.
+**Antígona**
+Mireu-me, ciutadans de la terra pàtria, fent el darrer camí,
+veient per darrera vegada la llum del sol.
+
+mai més no tornaré. Sinó que Hades, senyor de tots els morts, m'arrossega viva cap a la riba d'Aqueront, sense haver tingut núpcies, sense que cap cant nupcial m'hagi cantat mai; amb Aqueront em casaré.
+COR: Doncs no marxes gloriosa i amb lloança cap a aquest amagatall dels morts, sense haver estat colpejada per malalties que et consumeixin ni haver rebut la sort de les espases, sinó que autònoma, viva, tu sola entre els mortals baixaràs a l'Hades.
+ANTÍGONA: He sentit que morí de la manera més dolorosa l'estrangera frígia, filla de Tàntal, al cim del Sípil, a qui la branca pètria de l'heura tenacíssima la va dominar, i les pluges que la fonen, segons diuen els homes, i la neu mai no l'abandona, i sota les celles que ploren eternament li mullen el coll; un déu m'adorm semblantíssima a ella.
+COR: Però ella era déu i de llinatge diví, nosaltres som mortals i de llinatge mortal. I, tanmateix, és gran cosa que, quan mors, puguis sentir que has tingut la mateixa sort que els iguals als déus, tant en vida com després de morta.
+ANTÍGONA: Ai de mi, em burlen! Per què, pels déus paterns, m'ultrages no quan me n'he anat, sinó davant dels meus ulls? Oh ciutat, oh homes rics en béns de la ciutat! Oh fonts de Dirce i bosc de Tebes rica en carros, us poso per testimonis de com, sense llàgrimes dels meus, amb quines lleis...
+
+**ANTÍGONA**  
+Cap a la tomba que m'envolta de terra  
+m'encamino, vers el sepulcre funest.
+Ai, desgraciada de mi! No pertanyo  
+ni als mortals ni als morts,  
+estrangera entre vius i difunts.
+**COR**  
+Has arribat al límit de l'audàcia,  
+has topat, filla meva, contra l'altar  
+sublim de la Justícia.  
+Pagues algun càstig del teu pare.
+**ANTÍGONA**  
+Has tocat la pena més dolorosa per a mi:  
+el triple lament pel pare i pel destí  
+sencer dels il·lustres Labdàcides.  
+Ai, les relacions de ma mare,  
+el llit incestuós amb el meu pare  
+desventurat! D'ells vaig néixer,  
+jo, la infeliç.  
+Cap a ells me'n vaig, maleïda i sense noces.  
+Ai, germà del matrimoni desgraciat!  
+Mort com ets, has destruït la que encara vivia.
+**COR**  
+Respectar és pietat,  
+però el poder, per a qui el té,  
+no admet transgressió.  
+La teva obstinació t'ha perdut.
+**ANTÍGONA**  
+Sense plors, sense amics, sense noces,  
+infeliç, emprenc el darrer camí.  
+Ja no em serà permès, desgraciada,  
+contemplar l'ull sagrat del sol.  
+El meu destí, sense llàgrimes,  
+cap amic el plora.
+**CREONT**  
+¿Sabeu què? Si es permetés cantar  
+i lamentar-se abans de morir,  
+ningú no pararia mai.  
+Emporteu-vos-la de seguida! I tanqueu-la
+
+abraçant-la amb la tomba, tal com he dit,
+deixeu-la sola i abandonada, ja sigui per morir
+o per viure enterrada en aquesta presó subterrània;
+nosaltres som nets de culpa respecte a aquesta noia,
+però es veurà privada de la vida de dalt.
+ANTÍGONA: Oh tomba, oh cambra nupcial, oh caverna excavada,
+presó eterna on me'n vaig
+cap als meus, dels quals Persèfone ha rebut
+el major nombre entre els morts;
+dels quals sóc l'última i, de bon tros, la més desgraciada
+que baixo, abans que la meva vida s'hagi complert.
+Tot i així, tinc grans esperances
+d'arribar estimada al pare, i estimada a tu,
+mare, i estimada a tu, germà estimat;
+ja que quan vau morir, amb les meves pròpies mans
+us vaig rentar i adornar, i us vaig fer
+les ofrenes dels morts. Ara, però, Polinices, en embolcallar
+el teu cos, això és el que guanyo.
+I, tanmateix, et vaig honrar com feien els sensats.
+Perquè mai no ho hauria fet, ni si hagués estat mare,
+ni si el meu espòs hagués mort i es descompongués,
+contra la voluntat dels ciutadans hauria pres aquesta pena.
+En nom de quina llei dic això?
+Si mor un espòs, en puc tenir un altre,
+i un fill d'un altre home, si perdo aquest,
+però amb la mare i el pare ja morts a l'Hades,
+cap germà no pot tornar a néixer mai més.
+
+Per haver-te honrat amb tal preferència
+Creó va jutjar que jo trencava la llei
+fent actes terribles, oh germà estimat. 915
+I ara em porta agafada així de les mans,
+sense talàm nupcial, sense noces, sense haver-me
+casat ni tingut fills,
+sinó que així, desemparada dels meus,
+baixo viva als sepulcres dels morts, jo, la infortunada. 920
+Quina llei divina he transgres?
+Per què haig de mirar cap als déus,
+jo que sóc tan desgraciat? A qui cridar com a aliat?
+Ja que per ser piadosa he guanyat
+la fama d'impía. 925
+Però si això és bell als ulls dels déus,
+reconeixeríem, en patir, que hem errat;
 però si són ells els qui erren, que no pateixin
-més mal del que injustament em fan a mi.
-
-**COR**
-
-Encara els mateixos cops de vent
-agiten l'ànima d'aquesta.
-
-**CREONT**
-
-Per això, als qui la porten,
-els costaran plors la seva lentitud.
-
-**ANTÍGONA**
-
-Ai de mi! Aquesta paraula
-s'acosta molt a la mort.
-
-**COR**
-
-No tinc cap consol per animar-te
-que tot això no es complirà així.
-
-**ANTÍGONA**
-
-Oh ciutat de Tebes, terra dels meus pares,
+més mal del que em fan injustament.
+COR: Encara els mateixos vents 930
+sacsegen l'ànima d'aquesta.
+CREÓ: Doncs per això els qui la porten
+ploraran la seva lentitud.
+ANTÍGONA: Ai de mi! Aquesta paraula
+s'acosta molt a la mort. 935
+COR: No et puc donar ànim dient
+que això no es complirà.
+ANTÍGONA: Oh ciutat paterna de la terra de Tebes
 i déus ancestrals,
-ja m'emporten i ja no triguen.
+sóc portada ja, no més demora! 940
 Mireu, prínceps de Tebes,
-l'última que resta de la família reial,
-quines coses pateixo i per quins homes,
-per haver venerat la pietat.
+l'única que resta dels reis,
+com pateixo i per obra de quins homes,
 
-*Se l'emporten.*
+No veig cap traducció prèvia per millorar. La secció "TRADUCCIÓ: " està buida.
+Vols que tradueixi aquest fragment coral del grec antic? Sembla ser d'una tragèdia grega (possiblement d'Sòfocles) que fa referència als mites de Danae, Licurg i els fills de Fineu.
+Si vols que faci la traducció completa, puc aplicar el format JSON que tinc configurat per a traduccions literàries, preservant el to tràgic i la solemnitat del cor.
 
----
+...de les Erecteïdes,
+i va créixer en antres llunyans
+entre les tempestes paternals
+Bòreas, veloce com els cavalls, de peu ferm sobre el gel,
+fill dels déus. Però també sobre aquella
+les Moires eternals van exercir el seu poder, oh filla.
+TIRÈSIES: Senyors de Tebes, hem vingut per un camí comú,
+dos que veiem amb un sol ull; perquè els cecs
+necessiten guia per caminar.
+CREONT: Què hi ha de nou, ancià Tirèsies?
+TIRÈSIES: Jo t'ho ensenyaré, i tu fes cas de l'endeví.
+CREONT: Fins ara no m'he apartat del teu seny.
+TIRÈSIES: Per això has governat aquesta ciutat amb rumb cert.
+CREONT: Puc testimoniar que n'he tret profit.
+TIRÈSIES: Pensa que ara estàs novament al fil de la navalla.
+CREONT: Què passa? Com m'espanten les teves paraules!
+TIRÈSIES: Ho sabràs, escoltant els signes del meu art.
+Car assegut al meu antic seient d'auguració,
+on s'aplega tot ocell,
+vaig sentir crits desconeguts dels ocells,
+que cridaven amb mal presagi, ensalvatgits.
+I que es despedaçaven entre ells amb urpes assassines
+ho vaig entendre; car el bategar d'ales tenia significat.
+Tot seguit, espantat, vaig provar els sacrificis
+als altars ben encesos. Però dels sacrificis
+Hefest no va brillar. En lloc d'això, sobre la cendra
+es fonia la grassa putrefacta de les cuixes
 
-## Quart Estàsim
-
-**COR**
-
-També Dànae va suportar el canvi de la llum celeste
-per una presó de bronze;[^15]
-amagada en un sepulcre nupcial va ser subjugada.
-Tot i que era honorada pel llinatge, oh filla,
-i guardava les llavors daurades de Zeus.
-Però la força del destí és terrible:
-ni la riquesa ni Ares ni les torres
-ni les naus negres batudes per les ones en podrien fugir.
-
-Va ser empresonat també el fill iracund de Driant,[^16]
-rei dels edonis, per les seves injúries burletes,
-tancat per Dionís en una presó de roca.
-Així la terrible força de la seva bogeria
-es va anar escolant. Ell va reconèixer, delirant,
-que havia tocat el déu amb les seves paraules burletes;
-perquè va voler aturar les dones posseïdes i el foc evant,
-i va provocar les Muses amants de la flauta.
-
-I vora les aigües fosques del mar doble,
-les costes del Bòsfor i l'inhospitalari
-Salmidès dels tracis, on Ares veí
-va veure la ferida execrable
-infligida als dos fills de Fineu[^17]
-per la seva esposa salvatge:
-ulls encegats, orbes que clamaven venjança,
-colpejats per mans sagnants
-i per les puntes d'agulles de teixir.
-
-I consumint-se, els degraciats ploraven la seva dissort,
-nascuts de la mare de noces malaurades.
-Ella tenia llavor dels antics
-Erecteides,
-i en coves llunyanes
-va ser criada entre els vendavals paterns,
-Bòreas cavall del vent sobre els cims escarpats,
-filla dels déus. Però fins sobre ella
-les Moires de llarga vida van tenir poder, oh filla.
-
----
-
-## Cinquè Episodi
-
-*Entra Tirèsies guiat per un noi.*
-
-**TIRÈSIES**
-
-Senyors de Tebes, hem vingut fent un camí comú,
-dos veient pels ulls d'un: perquè per als cecs
-el camí es fa així, amb un guia.
-
+i fumava i s'inflamava, i les bilis
+es vessaven per l'aire, i els femurs despullats
+gotegiaven, sense el greix que els cobria.
+Això vaig aprendre d'aquest noi,
+veient com fallaven els oracles dels ritus.
+Ell és el meu guia, i jo ho sóc d'altres.
+I la ciutat està malalta per culpa del teu cor.
+Els nostres altars i fogars són plens
+del menjar dels ocells de presa i dels gossos
+del desgraciat fill d'Èdip caigut.
+I llavors els déus ja no accepten
+les nostres pregàries de sacrifici ni la flama
+dels femurs, ni els ocells donen crits
+favorables, havent menjat el greix
+de la sang humana.
+Reflexiona sobre això, doncs, fill meu. Perquè
+tots els homes tenen en comú l'errar;
+però quan s'erra, aquell home ja no és
+ni imprudent ni desgraciat, si caigut
+en el mal cerca remei i no roman immòbil.
+L'obstinació comporta desventura.
+Cedeix davant el mort i no turmentes
+qui ja ha perit. Quina força hi ha a matar un mort?
+Pensant bé, et parlo bé. I aprendre
+del qui parla bé és dolcíssim, si parla amb profit.
 **CREONT**
+Oh ancià, tots, com arquers que apunten a la diana,
+dispareu contra aquest home, i tampoc
+sóc exempt de les vostres arts endevinatòries.
+Pel vostre llinatge ja...
 
-Què hi ha de nou, ancià Tirèsies?
-
+**CREÓ**
+Ja fa temps que estic venut i sobrecarregat d'acusacions!
+Guanyeu diners, comercieu amb l'electre de Sardes,
+si voleu, i amb l'or de l'Índia; però a aquell
+no l'amagareu en cap sepultura,
+ni tan sols si volguessin les àguiles de Zeus
+arrapar-lo per dur-lo com a presa al tron dels déus.
+Ni així, sense por d'aquesta contaminació,
+permetré que sigui enterrat; ben sé que cap mortal
+no té poder per contaminar els déus.
+Cauen, oh ancià Tirèsies, fins i tot els homes
+més hàbils amb caigudes ignominioses
+quan pronuncien amb elegància paraules infames per lucre.
 **TIRÈSIES**
-
-T'ho ensenyaré, i tu obeeix l'endeví.
-
-**CREONT**
-
-Mai fins ara no m'he apartat del teu consell.
-
+Ai! Sap potser algú dels mortals, ho considera...
+**CREÓ**
+Quin tòpic! Quin lloc comú pronuncies?
 **TIRÈSIES**
-
-Per això has governat bé la nau d'aquesta ciutat.
-
-**CREONT**
-
-Puc testificar que m'has estat profitós.
-
+Quan superior és la prudència entre tots els béns!
+**CREÓ**
+Tant com la irracionalitat és el pitjor dels mals, crec.
 **TIRÈSIES**
-
-Pensa que ara camines de nou sobre el fil de la navalla.
-
-**CREONT**
-
-Què és? Com em fa estremir la teva paraula!
-
+Però tu vas ple d'aquesta malaltia.
+**CREÓ**
+No vull respondre de mala manera al profeta.
 **TIRÈSIES**
-
-Ho sabràs escoltant els senyals de la meva art.
-Asseient-me al meu antic observatori d'ocells,
-on tinc port de tota mena d'aus,
-sento un crit desconegut d'ocells, graznant
-amb una fúria estranya i bàrbara.
-I que es destrossaven entre ells amb les urpes
-ho vaig comprendre; perquè el batec de les ales no era obscur.
-Tot seguit, espantat, vaig provar les ofrenes de foc
-en altars tot encesos; però dels sacrificis
-Hefest no brillava, sinó que sobre la cendra
-una humitat viscosa dels fèmurs es fonia
-i fumejava i esquitxava, i les vesícules biliars
-s'espargirien pels aires, i els fèmurs
-quedaven nus de la seva capa de greix.
-Tals eren els senyals frustrats dels ritus
-que jo aprenia d'aquest noi;
-perquè ell em guia com jo guio els altres.
-I la ciutat pateix per causa del teu judici.
-Perquè els nostres altars i fogars estan tots plens
-d'aliment d'ocells i gossos, provinent del cos
-del desventurat fill d'Èdip.
-I per això els déus ja no accepten de nosaltres
-ni pregàries ni flames de fèmurs,
-ni cap ocell emet crits de bon auguri
-havent menjat el greix de sang humana.
-
-Reflexiona sobre això, fill. Errar
-és comú a tots els homes;
-però quan algú ha errat, aquell home
-ja no és ni insensant ni desgraciat
-si, caigut en el mal, busca remei i no resta immòbil.
-L'obstinació mereix el nom de necedada.
-Cedeix davant del mort i no fereixis qui ja ha mort.
-Quina valor hi ha a matar un mort per segona vegada?
-Et parlo amb bon consell. I és molt dolç
-aprendre de qui parla bé, si el que diu és profitós.
-
-**CREONT**
-
-Vell, tots com arquers dispareu contra mi,
-i ni de l'art endevinatòria estic lliure.
-Per la vostra raça he estat venut i explotat des de fa temps.
-Enriquiu-vos, comercieu amb l'ambre de Sardes,
-si voleu, i l'or de l'Índia;
-però aquell no l'enterrareu en cap tomba,
-ni que les àguiles de Zeus vulguin portar-ne el menjar
-fins al tron de Zeus com a botí:
-ni així, per por d'aquesta contaminació,
-permetré que l'enterrin; perquè sé bé
-que cap home té prou força per contaminar els déus.
-Però, oh ancià Tirèsies, fins els més hàbils
-cauen en caigudes vergonyoses quan pronuncien
-paraules vergonyoses bellament, per lucre.
-
+I, tanmateix, ho fas, dient que profetitzo mentides.
+**CREÓ**
+Tot el llinatge dels profetes és cobdiciós.
 **TIRÈSIES**
-
-Ah! Sap cap dels homes, es para algú a pensar...
-
-**CREONT**
-
-Què? Quin és aquest lloc comú que dius?
-
+I el dels tirans estima el lucre vergonyós.
+**CREÓ**
+Saps que parles dels teus governants?
 **TIRÈSIES**
+Ho sé: gràcies a mi vas poder salvar aquesta ciutat.
+**CREÓ**
+Ets un profeta savi, però que estima la injustícia.
 
-...quant és la prudència el millor dels béns?
-
-**CREONT**
-
-Tant, crec, com la manca de seny és el pitjor dels danys.
-
-**TIRÈSIES**
-
-Doncs tu estàs ple precisament d'aquesta malaltia.
-
-**CREONT**
-
-No vull respondre malament a l'endeví.
-
-**TIRÈSIES**
-
-I tant que ho fas, dient que profetitzo falsament.
-
-**CREONT**
-
-La raça dels endevins és àvida de diners.
-
-**TIRÈSIES**
-
-I la dels tirans estima els guanys vergonyosos.
-
-**CREONT**
-
-Saps que parles als governants?
-
-**TIRÈSIES**
-
-Ho sé; per mi has salvat aquesta ciutat.
-
-**CREONT**
-
-Ets un savi endeví, però amic de la injustícia.
-
-**TIRÈSIES**
-
-Em faràs revelar el que no s'ha de moure dins del cor.
-
-**CREONT**
-
-Mou-ho, però no per lucre.
-
-**TIRÈSIES**
-
-Doncs així ja ho sembla, pel que a tu fa.
-
-**CREONT**
-
-Sàpigues que no vendrà el meu judici.
-
-**TIRÈSIES**
-
-Doncs sàpigues bé que no passaran gaires voltes
-del sol en la seva cursa
-abans que donis, de les teves pròpies entranyes, un mort
-a canvi d'un mort,
-perquè has llançat a baix un dels de dalt,
-tancant deshonrosament una ànima viva en una tomba,
-i tens a dalt un dels déus de sota,
-un cadàver privat de ritus, sense ofrenes, sense consagrar.
-D'això ni tu ni els déus de dalt en teniu dret,
-sinó que tu els fas violència.
-Per això els destructors que castiguen tard,
-les Erínies de l'Hades i dels déus, t'aguaiten
-per ser atrapat en els mateixos mals.
-
+TIRÈSIES: M'obligues a dir allò que no es mou dins la ment.
+CREONT: Digues-ho, però que no sigui per lucre.
+TIRÈSIES: Això és el que penso del teu cas.
+CREONT: Sàpigues que no compraràs el meu judici.
+TIRÈSIES: Doncs sàpigues bé que no veuràs moltes més
+voltes dels cercles del sol en la seva carrera,
+abans que tu mateix donis en intercanvi
+pels morts un cadàver de les teves entranyes,
+perquè has deixat un mort exposat que hauria d'estar enterrat,
+i has tancat ignominiosament en la tomba una ànima viva,
+i mantens aquí dalt un mort que pertany als déus de baix,
+sense part, sense ritus, sense pietat.
+Ni tu ni els déus de dalt teniu cap dret sobre això,
+sinó que per tu això es fa per força.
+Per això t'esperen els venjadors destructors
+que arriben tard: l'Hades i les Erínies divines,
+per ser pres en aquests mateixos mals.
 I mira si dic això per diners:
-perquè poc temps passarà abans que a casa teva
-ressonin els plors d'homes i dones.
-I totes les ciutats es revolten hostils
-els cadàvers dels quals han estat consagrats per gossos
-o feres o algun ocell alat que porta
-l'olor impiu cap a cada llar de la ciutat.
+perquè es veurà, quan no hagi passat molt temps,
+gemecs d'homes i dones a casa teva.
+I totes les ciutats s'agiten hostils,
+de les quals gossos van purificar les despulles
+o feres o algun ocell de presa, portant
+olor sacrílega cap a la ciutat del llar.
+Tals fletxes contra tu, ja que m'afflieixes,
+he llençat amb còlera, fletxes que van certes al cor,
+del calor de les quals no escaparàs.
 
-Tals són les fletxes que et llanço com un arquer
-perquè m'irriten, al teu cor,
-fletxes certeres, el caliu de les quals no evitaràs.
-
-Noi, porta'ns a casa, perquè aquest
-descarregui la seva ira contra gent més jove
-i aprengui a tenir la llengua més quieta
-i el seny millor del que ara porta.
-
-*Tirèsies se'n va.*
-
-**COR**
-
-L'home, senyor, ha marxat profetitzant coses terribles.
-I sabem, des que la meva cabellera
-va canviar de negra a blanca,
-que mai ha dit una mentida a la ciutat.
-
+Oh fill, porta'ns cap a casa, perquè aquest
+deixi anar la seva còlera contra els joves
+i aprengui a tenir la llengua més serena
+i un seny millor que el que ara porta al cor.
+**CORO**
+L'home, senyor, se n'ha anat profetitzant
+coses terribles. I bé sabem, des que porto
+aquests cabells blancs sobre els que eren negres,
+que mai no ha dit mentides a la ciutat.
+**CREONT** 
+Ho reconec jo mateix i em turben els pensaments.
+Perquè cedir és terrible, però resistir
+i que la ruïna colpegi l'ànima en el perill també ho és.
+**CORO**
+Cal prendre bon consell, fill de Meneceu.
 **CREONT**
-
-Ho sé jo també, i el cor em tremola.
-Cedir és terrible, però resistir
-i colpejar el destí amb la meva obstinació, també ho és.
-
-**COR**
-
-Cal bon consell, fill de Meneceu.
-
+Què he de fer doncs? Digue-ho. T'obeeixo.
+**CORO**
+Ves i allibera la noia de la cova soterrada,
+i construeix una tomba per al que jau mort.
 **CREONT**
-
-Què he de fer, doncs? Digueu-ho: obeïré.
-
-**COR**
-
-Vés, allibera la noia de la seva presó subterrània
-i construeix una tomba per al qui jau exposat.
-
+I això ho aproves i creus que he de cedir?
+**CORO**
+Tot el que es pugui de pressa, senyor,
+perquè els mals dels déus tallen ràpidament 
+els qui tenen el cor pervers.
 **CREONT**
-
-Això aconselles, i creus que haig de cedir?
-
-**COR**
-
-Sí, senyor, tan ràpid com puguis; perquè els càstigs
-dels déus, ràpids de peus, tallen als insensats.
-
+Ai las! Costa molt, però deixo de banda
+els sentiments per actuar; contra la necessitat
+no cal lluitar.
+**CORO**
+Fes-ho ara mateix anant-hi, no ho confiïs a altres.
 **CREONT**
+Tal com estic me n'aniré. Aneu, aneu, servidors,
+els que sou aquí i els que no, agafeu destres
+a les mans i correu cap al lloc que es veu.
+I jo, ja que el meu parer s'ha girat en aquesta direcció...
 
-Ai de mi! A contracor, però aparto el cor
-del que volia fer; no cal lluitar contra la necessitat.
-
+Jo mateix l'he lligat i, quan sigui present, el deslligaré. Tinc por que no sigui millor respectar les lleis establertes i acabar així la vida salvant-la.
 **COR**
-
-Vés a fer-ho, doncs, i no ho deixis a altres.
-
-**CREONT**
-
-Tal com sóc, me'n vaig. Aneu, aneu, servents,
-els qui sou aquí i els absents, agafeu destrals
-i correu cap al lloc que es veu des d'aquí.
-Jo, perquè el meu judici ha canviat,
-jo que la vaig lligar, jo seré present per deslligar-la.
-Temo que el millor sigui viure
-guardant les lleis establertes fins al final.
-
-*Creont se'n va precipitadament.*
-
----
-
-## Cinquè Estàsim
-
-**COR**
-
-Oh déu dels molts noms,[^18] orgull de la núvia cadmea
-i fill de Zeus que trona fort,
-tu que protegeixes l'il·lustre Itàlia
-i regnes als racons acolliders
-d'Eleusis, al si de Demèter,
-oh Bacus, en la terra mare de Tebes,
-Bacus de les Bacants,
-tu que habites vora les humides aigües
-de l'Ismenos i sobre la sembra del drac ferotge;
-
-a tu et va veure el rellampec de la torxa
-sobre la roca de doble cim,
-allà on les nimfes corícies
-van com a Bacants,
-i la font de Castàlia.
-
-I et fan venir els pendents coberts d'heura
-de les muntanyes de Nisa i la riba verda
-carregada de raïms,
-mentre paraules immortals
-criden «Evohé!» quan tu visites els carrers de Tebes,
-
-la ciutat que tu honores per sobre de totes
-amb la teva mare fulminada pel llamp.
-I ara que tota la ciutat
-està presa d'una malaltia violenta,
-vine amb pas purificador sobre el cim del Parnàs
-o pel pas gemegant de l'estret.
-
-Oh corifeu dels astres que respiren foc,
-senyor de les veus nocturnes,
-fill nascut de Zeus, apareix,
-oh senyor, amb les teves acompanyants
-les Tiíades, que dansen tota la nit
-en deliri per tu, Iacchos, el dispensador!
-
----
-
-## Èxode
-
-*Entra el Missatger.*
-
+Tu de molts noms, orgull de la nimfa cadmea i descendència de Zeus que trons amb força, tu que regnes sobre la gloriosa Itàlia i domini sobre tots als replecs d'Eleusis de Demèter, Bacus! Tu que habites Tebes, ciutat materna, vora les aigües humides dels corrents d'Ismè i damunt la sembra del drac salvatge.
+A tu t'ha vist el llampec dalt la roca de doble cim, fumejant, allà on caminen les nimfes coríkies, bacants, i la font de Castàlia.
+I a tu t'envien les costes eissoses dels monts niseus i les riberes verdes riques en raïms, mentre veus immortals criden evohé vigilant els carrers de Tebes.
+A aquesta ciutat honores per damunt de totes les altres, junt amb ta mare ferida pel llamp. I ara, com que tota la ciutat està presa d'una malaltia violenta, vine amb peu purificador per damunt la cinglera del Parnàs o l'estret que gemega!
+Oh! Tu que guies els astres que alien foc, guardià de les veus nocturnes, fill nascut de Zeus, apareix, senyor, amb les teves Tíades companyes que al teu voltant, boges, et dansen tota la nit, a tu, Iacchos dispensador!
 **MISSATGER**
+Veïns de Cadme i de la casa d'Amfió!
 
-Veïns de Cadmos i del palau d'Amfió,
-no hi ha vida humana que, un cop establerta,
-jo lloaria o blasmaria mai;
-perquè la fortuna aixeca i la fortuna tomba
-el qui és feliç i el qui és infeliç, sempre;
-i cap endeví pot predir el que s'esdevé als mortals.
-Perquè Creont era envejable, segons jo,
-havent salvat dels enemics la terra cadmea
-i havent rebut tot el poder monàrquic;
-governava, florí amb bona descendència de fills.
-I ara, tot s'ha perdut. Perquè quan els plaers
-l'abandonen, no considero
-que visqui, sinó que el tinc per un cadàver animat.
-Acumula riqueses dins la teva casa, si vols,
-i viu amb aparença de tirà; però si
-no hi ha alegria, tot allò,
-no pagaria ni l'ombra del fum per a un home, comparat amb el goig.
+No veig cap traducció proporcionada en el teu missatge. Has inclòs l'original grec, però no la traducció actual que vols que millori.
+Si us plau, proporciona'm la traducció catalana existent perquè pugui millorar-la segons les teves necessitats.
 
-**COR**
+No veig cap traducció en el vostre missatge que pugui millorar. Només hi ha el text original en grec antic i després "TRADUCCIÓ: " però no hi ha cap text traduït.
+Si us plau, proporcioneu la traducció actual que voleu que millori, i llavors podré treballar-hi per fer-la més natural en català.
 
-Quina nova desgràcia dels reis portes?
+Al desgraciat li arriben confusos crits mentre s'acosta arrossegant-se. Gemegant pronuncia paraules angoixoses: «Ai, desgraciat de mi! Sóc profeta? Segueixo potser el camí més desgraciat de tots els que he recorregut? La veu del meu fill m'agita. Però vosaltres, servents, aneu-hi de pressa i poseu-vos al costat del sepulcre. Mireu, entrant pel forat del túmul de pedres fins a l'entrada mateixa, si comprenc la veu d'Haemon o si els déus m'enganyen.»
+MISSATGER: Això ens va manar el nostre descoratjat senyor i hi anàrem. Vàrem veure-la penjada al fons del sepulcre, lligada pel coll amb una corda de lli, i ell aferrat a la seva cintura, planyent la pèrdua del llit nupcial d'allà baix, les obres del pare i el llit desgraciat. Quan els veu, amb un gemec tètric entra i s'acosta a ell cridant: «Oh desgraciat, quina acció has comès! Quin seny tenies? Per quina desgràcia has perit? Surt, fill meu, com a suplicant t'ho demano.» Però el jove, mirant-lo amb ulls salvatges, li escup a la cara i sense dir res treu la doble fulla de l'espasa. Quan el pare fuig ràpidament, l'erra. Llavors el desgraciat, irritat contra si mateix, es clava l'arma al pit i cau.
 
-**MISSATGER**
+Es clavà l'espasa al pit, i encara conscient s'abraça a la donzella amb el braç humit de sang. I amb un agonia agònics, esquitxa la seva galta blanca amb gotes vermelles. Jau mort sobre morta, havent obtingut, desgraciat, els ritus nupcials a la casa d'Hades, mostrant als homes quin gran mal comporta la imprudència.
+COR: Què en pots deduir? La dona s'ha escapat altra vegada, sense dir paraula bona ni dolenta.
+MISSATGER: També jo estic desconcertat. Però em nodreixo de l'esperança que, en sentir els plors pel seu fill, no considerarà oportú fer laments públics per la ciutat, sinó que dins de casa confiarà a les esclaves el dol familiar. Té seny, no és dona d'errar.
+COR: No ho sé. A mi em sembla que tant el silenci excessiu com els crits inútils pesen igual.
+MISSATGER: Ho sabrem si amaga alguna cosa reprimida al cor colèric, apropant-nos al palau. Tens raó: també el silenci té el seu pes.
+COR: I aquí ve el rei en persona, portant a les mans un record ben visible, si es pot dir, no una desgràcia aliena, sinó fruit del seu propi error.
+CREONT: Ai! Errors de ments insensates, durs i mortals!
 
-Són morts. I els vius són culpables de les morts.
-
-**COR**
-
-I qui ha matat? Qui jau mort? Parla.
-
-**MISSATGER**
-
-Hemon ha mort; la seva sang, per la seva pròpia mà.
-
-**COR**
-
-Per mà del pare o per la seva?
-
-**MISSATGER**
-
-Per la seva pròpia, furiós amb el pare per l'assassinat.
-
-**COR**
-
-Oh endeví, amb quanta certesa vas complir la paraula!
-
-**MISSATGER**
-
-Estant així les coses, cal deliberar.
-
-*Eurídice surt del palau.*
-
-**COR**
-
-I mira, veig l'infeliç Eurídice,
-l'esposa de Creont; surt del palau
-havent sentit la notícia del fill, o per atzar.
-
-**EURÍDICE**
-
-Ciutadans tots, he sentit les paraules
-quan sortia cap al portal per adreçar
-les meves pregàries a la deessa Pal·las.
-I mentre descorria els panys de la porta,
-el so d'un mal domèstic
-em colpeja les orelles; i caic d'esquena
-espantada entre les criades i perdo el sentit.
-Però sigui quina sigui la nova, repetiu-la;
-perquè no sóc inexperta de mals, i escoltaré.
-
-**MISSATGER**
-
-Jo, estimada senyora, que hi era, parlaré
-i no ometré cap paraula de la veritat.
-Per què t'hauria d'endolcir res que al final
-resultaria ser fals? La veritat sempre és recta.
-Jo, seguint els passos del teu espòs,
-vaig arribar al cim de la plana, on jeia
-encara el cos de Polinices, esquinçat pels gossos.
-I havent pregat a la deessa dels camins
-i a Plutó que continguessin la seva ira,
-el vam rentar amb un bany purificador,
-vam cremar amb branques fresques el que en restava,
-vam alçar un túmul alt de terra pàtria,
-i de seguida vam entrar al tàlem nupcial
-de l'Hades, la cova de pedra, de la noia.
-I algú sent, des de lluny, crits aguts de plor
-vora la cambra sense ritus fúnebres,
-i ve a dir-ho al senyor Creont.
-I a mesura que s'apropa, l'envolten
-els sons confusos d'un crit desgraciat,
-i amb un gemec diu aquesta paraula terrible:
-«Dissortat de mi! Sóc endeví? És aquest
-el camí més desgraciat de tots els que he recorregut?
-La veu del meu fill m'arriba. Però, servidors,
-aneu-hi corrents, i plantats vora la tomba,
-mireu, entrant per l'escletxa on les pedres s'han arrencat,
-fins a la boca mateixa, si és la veu d'Hemon
-la que reconec, o si els déus m'enganyen.»
-
-Per ordre del senyor desesperat
-vam mirar; i al fons del sepulcre
-vam veure ella penjada del coll,
-lligada amb un llaç de fil fi,
-i ell abraçat a la seva cintura,
-plorant la destrucció de la seva promesa als inferns,
-i les obres del pare, i el llit desgraciat.
-El pare, en veure'l, amb un gemec terrible,
-entra cap a ell i el crida amb un crit:
-«Desgraciat, què has fet? Quin pensament
-t'ha posseït? En quina desgràcia has perdut el seny?
-Surt, fill, t'ho suplico de genolls.»
-Però el fill, mirant-lo amb ulls ferotges,
-li escup a la cara i, sense respondre,
-treu l'espasa de doble tall. El pare
-va fugir i va fallar el cop; i llavors el desgraciat,
-furiós contra si mateix, tal com estava,
-es va deixar caure sobre l'espasa, clavant-la
-al mig del cos; i encara conscient
-abraça la noia amb el braç defallit.
-I llançant un alè viu, escampa un brot
-de sang vermella sobre la galta blanca d'ella.
-Jau mort abraçat al mort, havent aconseguit
-les seves noces, el dissortad, a la casa d'Hades,
-mostrant als homes que la manca de seny
-és amb diferència el pitjor dels mals per a un home.
-
-*Eurídice se'n va en silenci.*
-
-**COR**
-
-Què voldria dir això? La dona se n'ha tornat
-sense dir ni una paraula, ni bona ni dolenta.
-
-**MISSATGER**
-
-Jo també m'he sorprès; però em nodreixo de l'esperança
-que, havent sentit les penes del fill,
-no haurà volgut plorar en públic,
-sinó que dins de casa
-posarà les serventes a plorar el dol familiar.
-No li manca seny per cometre una errada.
-
-**COR**
-
-No ho sé; però tant el silenci excessiu
-em sembla greu com el crit va i inútil.
-
-**MISSATGER**
-
-Doncs entrarem, no sigui que amagui
-alguna cosa reclosa dins un cor enfurit,
-passant per davant de casa; perquè tens raó:
-també hi ha un pes en l'excés de silenci.
-
-*Entra Creont portant el cos d'Hemon.*
-
-**COR**
-
-I aquí ve el senyor en persona,
-portant als seus braços un record ben clar,
-si és lícit dir-ho, no d'un mal aliè,
-sinó del seu propi error.
-
-**CREONT**
-
-Ai!
-Errors d'una ment errada,
-obstinats, mortífers!
-Oh, veient els qui han matat
-i els morts del meu llinatge!
-Ai, dissort dels meus designis!
-Ai, fill meu, jove mort en jove destí,
-ai, ai!
-Has mort, has estat arrencat
-no per la teva insensatesa, sinó per la meva!
-
-**COR**
-
-Ai, com sembla que veus la justícia massa tard!
-
-**CREONT**
-
-Ai de mi!
-He après, desgraciat; sobre el meu cap
-un déu, llavors, amb un gran pes
-m'ha colpit i m'ha llançat per camins salvatges,
-ai, trepitjant i tomban la meva alegria.
-Ai, ai! Penosos treballs dels mortals!
-
-*Entra el Segon Missatger del palau.*
-
-**SEGON MISSATGER**
-
-Senyor, véns portant mals a les mans
-i sembla que n'has de veure d'altres dins el palau.
-
-**CREONT**
-
-Quin mal hi ha, pitjor que els mals que ja tinc?
-
-**SEGON MISSATGER**
-
-La teva esposa ha mort, mare d'aquest mort,
-dissortada, amb ferides acabades de fer.
-
-**CREONT**
-
-Oh!
-Oh port purificat de l'Hades,
+Oh, veient els qui maten i els qui moren, tots de la mateixa sang!
+Ai de mi! Les meves decisions desventurades!
+Ai, fill meu, jove que amb una mort prematura... 
+ai, ai, has mort, te'n has anat
+per culpa de les meves folles decisions, no de les teves!
+**COR: ** Ai! Sembla que veus la justícia massa tard.
+**CREÓ: ** Ai de mi!
+Ho he après, desgraciat! El déu, amb un pes enorme,
+em va colpejar aleshores al cap
+i em va sacsejar per camins feréstecs,
+ai de mi, capgirant la meva alegria perduda!
+Ai, ai! Oh penes dels mortals, penes cruels!
+**MISSATGER: ** Oh senyor, com qui porta i posseeix desgràcies:
+aquestes que portes a les mans, i a casa
+sembla que n'hi ha més, i aviat veuràs nous mals.
+**CREÓ: ** Què pot ser encara pitjor que els mals que ja tinc?
+**MISSATGER: ** La teva dona ha mort, la mare d'aquest mort,
+desgraciada, amb ferides encara fresques.
+**CREÓ: ** Ai!
+Ai, porta de l'Hades que no es pot purificar,
 per què, per què em destrueixes?
-Oh portador de mals,
-quines penes m'envies, quina paraula dius?
-Ai, has acabat de matar un home ja mort!
-Què dius, fill? Quina nova em portes,
-ai, ai,
-un sacrifici de mort de dona
-amuntegat sobre la destrucció?
+Oh tu que m'has portat aquests mals anuncis i dolors,
+quina paraula proclames?
+Ai! Has rematat un home ja perdut!
+Què dius, fill? Quina nova desgràcia em portes?
+Ai, ai! A la ruïna s'hi afegeix
+un nou sacrifici: una mort de dona!
+**COR: ** Es pot veure; ja no és als amagatalls.
+**CREÓ: ** Ai de mi!
+Aquest segon mal també el veig, desgraciat!
 
-**COR**
-
-Es pot veure; ja no és amagada dins.
-
-*Es mostra el cos d'Eurídice.*
-
-**CREONT**
-
-Ai de mi,
-veig un altre mal, segon, desgraciat!
-Quin destí, quin em queda per venir?
-Tinc el meu fill als braços, acabat de collir,
-i davant meu veig un altre cadàver.
-Ai, ai, mare dissortada, ai, fill!
-
-**SEGON MISSATGER**
-
-Ella, vora l'altar, amb una espasa esmolada,
-va tancar les parpelles fosques, havent plorat primer
-la glòria del mort anterior, Megareu,
-i després la d'aquest; i finalment contra tu
-va llançar maleïdes, assassí dels teus fills.
-
-**CREONT**
-
+Quin destí, doncs, quin destí m'espera encara?
+Tinc a les mans aquest fill acabat de morir, 
+miserable de mi, i davant meu veig l'altre mort.
+Ai, ai, mare desgraciat! Ai, fill meu!
+MISSATGER
+I ella, amb l'espasa de doble tall, 
+afluixa els ulls foscos, després de plorar
+pel noble destí de Megareu, mort abans, 
+i després per aquest, i finalment et maleeix
+a tu, infanticida, per les teves obres malvades.
+CREONT
 Ai, ai!
-Em tremola de por! Per què no m'ha colpit algú
-amb una espasa de doble tall?
-Dissortad de mi, ai,
-amarat d'una desgràcia amarga!
-
-**SEGON MISSATGER**
-
-Perquè vas ser acusat per la morta
-de ser el causant de la mort d'aquest i d'aquella.
-
-**CREONT**
-
-I de quina manera es va treure la vida?
-
-**SEGON MISSATGER**
-
-Es va colpejar ella mateixa sota el fetge, amb la seva mà,
-en assabentar-se del patiment agut del seu fill.
-
-**CREONT**
-
-Ai de mi! Això no podrà mai recaure
-sobre cap altre mortal, ni treure-ho de la meva culpa.
-Jo, jo t'he matat, ai miserble,
-jo, dic la veritat. Oh servents,
-porteu-me el més ràpid possible, porteu-me lluny,
-jo que no sóc més que un no-res.
-
-**COR**
-
-Bon consell, si hi ha res de bo entre els mals;
-perquè els mals més breus són els millors als peus.
-
-**CREONT**
-
-Que vingui, que vingui,
-que aparegui la més bella de les morts
-portant-me el darrer dia;
-que vingui, que vingui,
-perquè no vegi mai un altre dia.
-
-**COR**
-
-Això és del futur. Cal ocupar-se del present.
-D'allò ja se n'ocuparan aquells a qui pertoca.
-
-**CREONT**
-
-He pregat allò que desitjo.
-
-**COR**
-
-No preguis res; perquè del destí fixat
+M'he alçat de por. Per què ningú
+no m'ha traspassat amb una espasa de doble tall?
+Miserable de mi! Ai!
+Miserable, mesclat amb miserable dolor.
+MISSATGER
+Bé, aquesta morta t'acusava d'ésser culpable
+d'aquestes morts i també de les altres.
+CREONT
+I de quina manera es va donar la mort?
+MISSATGER
+Es va clavar l'espasa sota el fetge, amb la seva pròpia mà, 
+quan va sentir el dolor acut i planyívol d'aquest fill.
+CREONT
+Ai de mi! Això no s'ajustarà mai
+a cap altre mortal per culpa meva.
+Jo t'he matat, jo, oh desgraciat, 
+jo, dic la veritat. Servants!
+Porteu-me com més aviat millor, porteu-me lluny, 
+jo que no sóc més que un no res.
+COR
+Aconseiles el que convé, si hi ha algun profit en els mals.
+El més breu és el millor quan els mals són als peus.
+CREONT
+Que vingui, que vingui, 
+que aparegui la més bella de les morts, 
+que em porti el darrer dia, 
+la suprema! Que vingui, que vingui, 
+perquè no vegi cap més dia!
+COR
+Això és cosa del futur. Cal ocupar-se 
+d'actuar sobre el que tenim davant. D'això se n'ocupen
+els qui s'han d'ocupar.
+CREONT
+Pero tot el que desitjo, això he demanat.
+COR
+No preguis res més: dels infortunis decretats
 no hi ha alliberament per als mortals.
-
-**CREONT**
-
-Porteu d'aquí un home va,
-que, oh fill, et va matar sense voler-ho,
-i a tu també, aquesta; ai, dissortad, no sé
-cap a quin dels dos girar-me; tot
-s'ha torçat a les meves mans, i sobre el meu cap
-un destí difícil de portar s'ha abalansat.
-
-*Porten Creont dins.*
-
-**COR**
-
-La prudència és, amb diferència, la primera condició
-de la felicitat. No cal
-cometre cap impietat contra els déus.
-Les grans paraules dels orgullosos,
-pagades amb grans cops,
-ensenyen la prudència a la vellesa.[^19]
+CREONT
+Porteu-vos aquest home inútil, 
+que a tu, fill, sens voler t'he matat
+i també a aquesta, ai miserable de mi! No sé
+cap on...
 
 ---
 
-*Fi de l'Antígona de Sòfocles*
-
-[^1]: Tragèdia representada per primera vegada a Atenes el 441 aC. Sòfocles (c. 496-406 aC) va escriure més de 120 obres, de les quals se'n conserven set tragèdies completes.
-[^2]: Vers 1 del grec: κοινὸν αὐτάδελφον Ἰσμήνης κάρα — «cap comú d'Ismene, germana de sang».
-[^3]: Pàrodos (πάροδος): cant d'entrada del cor al teatre grec.
-[^4]: Dirce: font sagrada de Tebes.
-[^5]: Hefest (Ἥφαιστος): déu del foc i la forja.
-[^6]: Baco o Dionís, déu del vi, nascut a Tebes de Sèmele i Zeus.
-[^7]: Laios (Λάιος): pare d'Èdip, antic rei de Tebes.
-[^8]: Estàsim (στάσιμον): cant del cor en posició estàtica, entre els episodis. Aquesta és la famosa «Oda a l'Home» (πολλὰ τὰ δεινά), una de les peces corals més cèlebres de la tragèdia grega.
-[^9]: Versos 450-470: el gran discurs d'Antígona sobre les lleis no escrites dels déus (ἄγραπτα κἀσφαλῆ θεῶν νόμιμα), un dels textos fonamentals de la filosofia del dret natural.
-[^10]: Vers 523: οὔτοι συνέχθειν, ἀλλὰ συμφιλεῖν ἔφυν — «No vaig néixer per compartir l'odi, sinó l'amor». Un dels versos més citats de la tragèdia grega.
-[^11]: Versos 781-800: l'Oda a Eros (Ἔρως ἀνίκατε μάχαν), cant sobre el poder invencible de l'amor.
-[^12]: Aqueront (Ἀχέρων): riu de l'inframón per on les ànimes dels morts travessaven cap a l'Hades.
-[^13]: Níobe, filla de Tàntal, que va ser convertida en roca al mont Sípil plorant pels seus fills morts per Apol·lo i Àrtemis.
-[^14]: Versos 905-912: aquest passatge, on Antígona argumenta que un germà és irreemplaçable (a diferència d'un marit o un fill), ha estat molt debatut des de l'Antiguitat. Alguns crítics l'han considerat una interpolació, però la majoria d'editors moderns el conserven.
-[^15]: Dànae, tancada pel seu pare Acrisi en una cambra de bronze, on Zeus la va visitar en forma de pluja d'or.
-[^16]: Licurg, rei dels edonis de Tràcia, castigat per Dionís per haver-se oposat al seu culte.
-[^17]: Fineu, rei de Tràcia. La seva segona esposa va encegar els seus fills del primer matrimoni.
-[^18]: Himne a Dionís-Baco, invocat amb molts noms (Iacchos, Bacus, etc.), fill de Zeus i Sèmele de Tebes.
-[^19]: Versos 1348-1353: la sentència final del cor, on es resumeix la lliçó de la tragèdia: la saviesa (τὸ φρονεῖν) és la primera condició de la felicitat, i l'orgull davant els déus és castigat.
+*Traducció de domini públic.*
