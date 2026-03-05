@@ -1439,5 +1439,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "translation_executa-el-pipeline-v2-per-retraduir-cd-biblioteca-univer": {
+    "events": [
+      {
+        "timestamp": 1772734814.5087473,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
