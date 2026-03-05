@@ -56,7 +56,7 @@ Catherine i ell continuaven sent companys constants en les seves estones de resp
 
 —Oh, però el Joseph ho dirà —va suggerir ella—; més val que te'n vagis!
 
-—El Joseph està carregant calç a l'altre costat dels Penyals de Penistone; no tornarà fins a les fosques, i mai no ho sabrà.
+—El Joseph està carregant calç a l'altre costat dels Espadats de Penistone; no tornarà fins a les fosques, i mai no ho sabrà.
 
 Dit això, es va arrossegar fins al foc i es va asseure. Catherine va reflexionar un instant, amb les celles arrufades —veia que calia aplanar el camí per a una intrusió—. «Isabella i Edgar Linton han parlat de venir aquesta tarda», va dir, al cap d'un minut de silenci. «Com que plou, gairebé no els espero; però podrien venir, i si ho fan, tu corres el risc de ser renyat sense cap raó.»
 

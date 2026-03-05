@@ -219,7 +219,7 @@ Cap a mitjanit, mentre encara érem llevats, la tempesta va esclatar sobre les C
 
 —Bé, senyoreta! —vaig exclamar, tocant-li l'espatlla—. No estareu decidida a buscar-vos la mort, oi? Sabeu quina hora és? Les dotze i mitja. Vinga, vinga al llit! No serveix de res esperar més aquell noi ximple: se n'haurà anat a Gimmerton, i s'hi quedarà ara. Suposa que no l'esperaríem fins tan tard: almenys, suposa que només el senyor Hindley seria llevat; i prefereix no fer-se obrir la porta per l'amo.
 
-—No, no, no és a Gimmerton —va dir Joseph—. No m'estranyaria que fos al fons d'un aiguamoll. Aquesta visitació no era per no-res, i us convé vigilar, senyoreta... potser la propera sereu vós. Gràcies al Cel per tot! Tot concorre per al bé dels qui són escollits i separats de la brossa! Ja sabeu què diu l'Escriptura. —I va començar a citar diversos textos, remetent-nos a capítols i versicles on els podíem trobar.
+—No, no, no pas a Gimmerton —va dir Joseph—. No m'estranyaria gens ni mica que fos al fons d'un aiguamoll. Aquesta visitació no era pas per no-res, i us convé vigilar, senyoreta... potser la propera sereu vós! Gràcies al Cel per tot! Tot concorre per al bé dels qui són escollits i separats de la brossa! Ja sabeu prou qué diu l'Escriptura. —I va començar a citar diversos textos, remetent-nos a capítols i versicles on els podíem trobar.
 
 Jo, havent suplicat en va la noia caparruda que s'aixequés i es tragués la roba mullada, el vaig deixar predicant i ella tremolant, i me'n vaig anar al llit amb el petit Hareton, que dormia tan profundament com si tothom al seu voltant estigués dormint. Vaig sentir Joseph llegint una estona més; després vaig distingir el seu pas lent a l'escala, i llavors em vaig adormir.
 

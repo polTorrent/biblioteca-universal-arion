@@ -18,7 +18,7 @@ El descens abrupte dels Espadats de Penistone li atreia particularment l'atenci�
 
 —Oh, hi heu estat! —va exclamar joiosa—. Aleshores jo també hi podré anar, quan sigui gran. Hi ha anat el papa, Ellen?
 
-—El papa us diria, senyoreta —vaig respondre precipitadament—, que no paga la pena d'anar-hi. Les landes, on passegeu amb ell, són molt més boniques; i el Parc de Thrushcross és el lloc més bonic del món.
+—El papa us diria, senyoreta —vaig respondre precipitadament—, que no paga la pena d'anar-hi. Les landes, on passegeu amb ell, són molt més boniques; i el Parc dels Tords és el lloc més bonic del món.
 
 —Però jo ja conec el parc, i no conec allò —va murmurar per a si mateixa—. I m'encantaria mirar al meu voltant des del cim del punt més alt: el meu poniet Minny m'hi portarà algun dia.
 
