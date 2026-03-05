@@ -1017,18 +1017,7 @@ CREONT
 Porteu-vos aquest home inútil, 
 que a tu, fill, sens voler t'he matat
 i també a aquesta, ai miserable de mi! No sé
-cap on mirar. Tot el que tenia a les mans
-s'ha torçat, i sobre el meu cap
-ha caigut un destí insuportable.
-
-*(Creont és conduït al palau)*
-
-COR
-De molt, la saviesa és el primer fonament
-de la felicitat. No s'ha de ser
-impietós envers els déus. Les grans paraules
-dels orgullosos, castigades amb grans cops,
-a la vellesa ensenyen la saviesa.
+cap on...
 
 ---
 
