@@ -20,9 +20,9 @@ estadistiques:
 revisio:
   estat: revisat
   qualitat: 0.0
-  data_revisio: '2026-03-05'
+  data_revisio: '2026-03-06'
 avaluacio_final:
-  data: '2026-03-05T21:09:41.552958'
+  data: '2026-03-06T00:13:09.902922'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
