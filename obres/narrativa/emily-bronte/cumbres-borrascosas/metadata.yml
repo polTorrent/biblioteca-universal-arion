@@ -50,16 +50,20 @@ estadistiques:
   termes_glossari: 20
 
 revisio:
-  estat: en_curs
+  estat: requereix_correccions
   data_inici: '2026-02-20'
-  data_revisio: '2026-02-25'
-  qualitat: 5.4
+  data_revisio: '2026-03-05'
+  qualitat: 6.5
   requereix_revisio_humana: true
   notes_revisio: >
-    Traducció automàtica completada amb correccions sistemàtiques.
-    Topònims normalitzats (Cims Borrascosos, Granja dels Tords).
-    Format de capítols estandarditzat. Errors lingüístics corregits.
-    Pendent de revisió humana per millorar qualitat global.
+    Supervisió detallada 2026-03-05. Puntuació: 6.5/10 (llindar: 7.0).
+    Problemes crítics: inconsistència toponímica ("Cims de Torment" vs
+    "Cims Borrascosos"), "Penistone Crags" amb 3 traduccions diferents,
+    "Parc de Thrushcross" inconsistent amb "Granja dels Tords".
+    Castellanismes ("encariñats"), paraules inexistents ("preposterosament",
+    "bestiar"), errors lèxics puntuals. Estil i fidelitat bons (8+/10).
+    Traducció completa (34/34 capítols, 120K paraules).
+    Detalls a .needs_fix.
 
 portada: portada.png
 
