@@ -1426,5 +1426,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_cumbres-borrascosas": {
+    "events": [
+      {
+        "timestamp": 1772730002.571609,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
