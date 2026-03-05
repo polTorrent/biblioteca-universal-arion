@@ -44,7 +44,7 @@ Va assenyalar Hareton, l'altre individu, que no havia guanyat res més que volum
 
 Vaig xiuxiuejar a Catherine que no havia d'accedir a la proposta de cap manera: era completament fora de qüestió.
 
-«Per què?», va preguntar ella, en veu alta. «Estic cansada de córrer, i el terra està humit de rosada: no puc seure aquí. Anem-hi, Ellen. A més, diu que he vist el seu fill. S'equivoca, em penso; però endevino on viu: a la masia que vaig visitar venint dels Penascos de Penistone. Oi que sí?»
+«Per què?», va preguntar ella, en veu alta. «Estic cansada de córrer, i el terra està humit de rosada: no puc seure aquí. Anem-hi, Ellen. A més, diu que he vist el seu fill. S'equivoca, em penso; però endevino on viu: a la masia que vaig visitar venint dels Espadats de Penistone. Oi que sí?»
 
 «Així és. Vinga, Nelly, calla—serà un regal per ella fer-nos una visita. Hareton, tira endavant amb la noia. Tu caminaràs amb mi, Nelly.»
 

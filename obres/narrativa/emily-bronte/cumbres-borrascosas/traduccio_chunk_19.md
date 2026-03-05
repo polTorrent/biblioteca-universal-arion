@@ -32,7 +32,7 @@ Devia haver estat posat a una prova terrible, durant el viatge, per aquella cria
 
 —Oh, anirà bé —va dir l'amo a mi, després d'observar-los un moment—. Molt bé, si el podem quedar, Ellen. La companyia d'una criatura de la seva edat li insuflarà un esperit nou aviat, i a força de desitjar tenir forces, les guanyarà.
 
-—Sí, si el podem quedar! —vaig rumiar per a mi mateixa; i greus recels em van envair que hi havia poques esperances d'això. I aleshores, vaig pensar, com viurà aquell ser feble a Cims de Torment? Entre el seu pare i Hareton, quins companys de joc i mestres tindria! Els nostres dubtes van ser resolts de seguida, fins i tot abans del que jo esperava. Acabava de pujar els nens, després que el te s'hagués acabat, i havia vist Linton adormit —no em va permetre deixar-lo fins que no va ser el cas—, havia baixat, i estava dreta vora la taula del vestíbul, encenent un ciri de dormitori per al senyor Edgar, quan una minyona va sortir de la cuina i m'informà que el criat del senyor Heathcliff, Joseph, era a la porta i desitjava parlar amb l'amo.
+—Sí, si el podem quedar! —vaig rumiar per a mi mateixa; i greus recels em van envair que hi havia poques esperances d'això. I aleshores, vaig pensar, com viurà aquell ser feble a Cims Borrascosos? Entre el seu pare i Hareton, quins companys de joc i mestres tindria! Els nostres dubtes van ser resolts de seguida, fins i tot abans del que jo esperava. Acabava de pujar els nens, després que el te s'hagués acabat, i havia vist Linton adormit —no em va permetre deixar-lo fins que no va ser el cas—, havia baixat, i estava dreta vora la taula del vestíbul, encenent un ciri de dormitori per al senyor Edgar, quan una minyona va sortir de la cuina i m'informà que el criat del senyor Heathcliff, Joseph, era a la porta i desitjava parlar amb l'amo.
 
 —Primer li preguntaré què vol —vaig dir, amb una trepidació considerable—. Una hora ben poc escaient per importunar la gent, i en l'instant que acaben de tornar d'un llarg viatge. No crec que l'amo el pugui rebre.
 
@@ -48,13 +48,13 @@ Joseph havia travessat la cuina mentre jo pronunciava aquestes paraules, i ara e
 
 Vaig percebre que estava decidit a rebutjar la meva mediació, de manera que ben a contracor vaig pujar a la biblioteca i vaig anunciar el visitant intempestiu, aconsellant que fos despatxat fins l'endemà. El senyor Linton no va tenir temps d'autoritzar-m'hi, perquè Joseph va pujar trepitjant-me els talons i, irrompent a l'estança, es va plantar a l'extrem oposat de la taula, amb els dos punys clavats al cap del seu bastó, i va començar amb un to elevat, com si anticipés oposició:
 
-—Heathcliff m'ha enviat a buscar el seu noi, i no me n'he d'anar sense ell.
+—L'amo Heathcliff m'ha enviat a buscar el seu minyó, i no me n'he pas d'anar sense ell.
 
 Edgar Linton va restar en silenci un moment; una expressió de dolor extrem li va enfosquir les faccions: hauria compadit l'infant per ell mateix; però, recordant les esperances i els temors d'Isabella, i els seus desigs ansiosos pel seu fill, i la recomanació que li havia fet de vetllar-lo, es va afligir amargament davant la perspectiva de lliurar-lo, i va buscar en el seu cor com podria evitar-ho. No se li va presentar cap pla: la mera exhibició de qualsevol desig de quedar-se'l hauria fet el reclamant encara més peremptori: no quedava res més que resignar-s'hi. Tanmateix, no pensava despertar-lo.
 
-—Digueu al senyor Heathcliff —va respondre amb calma— que el seu fill anirà a Cims de Torment demà. Ara és al llit, i massa cansat per fer el camí. També podeu dir-li que la mare de Linton desitjava que romangués sota la meva tutela; i que, de moment, la seva salut és molt precària.
+—Digueu al senyor Heathcliff —va respondre amb calma— que el seu fill anirà a Cims Borrascosos demà. Ara és al llit, i massa cansat per fer el camí. També podeu dir-li que la mare de Linton desitjava que romangués sota la meva tutela; i que, de moment, la seva salut és molt precària.
 
-—No! —va dir Joseph, donant un cop amb el seu bastó al terra i adoptant un aire autoritari—. No! Això no vol dir res. A Heathcliff no li importa la mare, ni vós tampoc; però tindrà el seu noi; i me l'he d'endur... així que ja ho sabeu!
+—No! —va dir Joseph, donant un cop amb el seu bastó al terra i adoptant un aire autoritari—. Que no! Això no vol dir pas res. A l'amo Heathcliff no li importa la mare, ni vós tampoc; emprò tindrà el seu minyó; i me l'he d'endur... idò ja ho sabeu!
 
 —No us l'endureu aquesta nit! —va respondre Linton amb decisió—. Baixeu les escales immediatament, i repetiu al vostre amo el que us he dit. Ellen, acompanyeu-lo a baix. Aneu...
 

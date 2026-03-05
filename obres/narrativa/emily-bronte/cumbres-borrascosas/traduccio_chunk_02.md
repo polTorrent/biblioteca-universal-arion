@@ -6,15 +6,15 @@ Al capdamunt d'aquell tossal desolat la terra estava endurida per una gelada neg
 
 —Desgraciats moradors! —vaig ejacular mentalment—. Us mereixeu un aïllament perpetu de la vostra espècie per la vostra inhospitalitat grollera. Almenys, jo no mantindria les portes barrades durant el dia. No me n'importa —hi entraré! Així resolt, vaig aferrar el pom i el vaig sacsejar amb violència. Joseph, amb cara de vinagre, va treure el cap per una finestra rodona del graner.
 
-—Què voleu? —va cridar—. L'amo és a la cleda. Aneu per darrere del paller, si li voleu parlar.
+—Qué voleu, idò? —va cridar—. L'amo és a la cleda. Passeu per darrere del paller, si li heu de parlar.
 
 —No hi ha ningú dins per obrir la porta? —vaig cridar en resposta.
 
-—Només hi ha la mestressa; i no l'obrirà encara feu aquest renou esgarrifós fins al vespre.
+—Només hi ha la mestressa; i no us obrirà pas, ni que feu aquest renou esgarrifós fins al vespre.
 
 —Per què? No li podeu dir qui soc, eh, Joseph?
 
-—Ni jo! Jo no hi tinc res a veure —va murmurar el cap, desapareixent.
+—Ni jo tampoc! Jo no hi tinc pas res a veure —va murmurar el cap, desapareixent.
 
 La neu començava a caure espessa. Vaig agafar la maneta per provar una altra vegada; quan un jove sense armilla i amb una forca a l'espatlla va aparèixer al pati del darrere. Em va cridar perquè el seguís i, després de travessar una rentadora i una zona empedrada amb un cobert de carbó, una bomba i un colomar, vam arribar finalment a la immensa estança càlida i alegre on m'havien rebut abans. Resplendia deliciosament amb la lluïssor d'un foc immens, compost de carbó, torba i llenya; i prop de la taula, parada per un àpat generós, em va complaure observar la «mestressa», una persona l'existència de la qual no havia sospitat mai abans. Vaig fer una reverència i vaig esperar, pensant que em convidaria a seure. Em va mirar, repenjada a la cadira, i va romandre immòbil i muda.
 
@@ -122,7 +122,7 @@ Vaig imaginar, per un moment, que aquest tros d'eloqüència m'era adreçat a mi
 
 —Vell hipòcrita escandalós! —va respondre ella—. No teniu por que us emportin de dret, cada cop que aneu esmentant el nom del diable? Us adverteixo que us abtingueu de provocar-me, o demanaré el vostre segrest com un favor especial! Prou! Mireu aquí, Joseph —va continuar, agafant un llibre llarg i fosc d'una prestatgeria—; us mostraré fins on he progressat en l'Art Negre: aviat seré competent per fer-ne neteja de la casa. La vaca vermella no va morir per casualitat; i la vostra artritis amb prou feines pot comptar-se entre les visitacions providencials!
 
-—Oh, malvat, malvat! —va panteixar el vell—; que el Senyor ens lliuri del mal!
+—Ai, maleït, maleït! —va panteixar el vell—; que Nostre Senyor ens lliuri del mal!
 
 —No, reprovat! Ets un abandonat... vés-te'n, o et faré mal seriosament! Us faré modelar tots en cera i argila! i el primer que passi els límits que fixi serà... no diré què li faran, però... ja ho veureu! Vés-te'n, t'estic mirant!
 
@@ -166,11 +166,11 @@ Amb aquest insult la meva paciència es va esgotar. Vaig pronunciar una expressi
 
 —Llavors espero que el seu fantasma us perseguirà; i espero que el senyor Heathcliff no torni a tenir cap altre llogater fins que el Mas sigui una ruïna —va respondre ella, amb agudesa.
 
-—Escolteu, escolteu, els està maleint! —va murmurar Joseph, cap a on jo havia estat dirigint-me.
+—Escolteu, escolteu, que els està maleint! —va murmurar Joseph, cap a on jo havia estat dirigint-me.
 
 Seia a l'abast de l'oïda, munyint les vaques a la llum d'un fanal, que vaig agafar sense cerimònies, i, cridant que el tornaria l'endemà, em vaig precipitar cap a la porta posterior més propera.
 
-—Amo, amo, ens roba el fanal! —va cridar el vell, seguint la meva retirada—. Ei, Gnasher! Ei, gos! Ei, Wolf, atura'l, atura'l!
+—Amo, amo, que ens roba el fanal! —va cridar el vell, seguint la meva retirada—. Au, Gnasher! Au, gos! Au, Wolf, atura'l, atura'l!
 
 En obrir la porteta, dues bèsties peludes em van volar al coll, tirant-me a terra i apagant la llum; mentre una riallada barrejada de Heathcliff i Hareton posava la coroneta a la meva ràbia i humiliació. Per sort, les bèsties semblaven més inclinades a estirar les potes, badallar i brandar les cues, que a devorar-me viu; però no permetien cap ressurrecció, i em vaig veure obligat a jeuir fins que els seus amos malignes els plagués d'alliberar-me: llavors, sense barret i tremolant d'ira, vaig ordenar als bergants que em deixessin sortir —sota la seva responsabilitat si em retenien un minut més— amb diverses amenaces incoherents de represàlia que, en la seva profunditat indefinida de virulència, feien pensar en el Rei Lear.
 

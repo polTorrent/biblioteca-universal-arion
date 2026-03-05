@@ -30,7 +30,7 @@ Va llançar la pipa i es va posar a fer via cap endins, la noia la va seguir, i 
 
 —Sí, pel que jo en sé! —va respondre, sortint corrents amb una pala de cendres calentes.
 
-Li hauria preguntat per què la senyora Dean havia abandonat la Granja, però era impossible aturar-la en un moment tan crític, de manera que vaig girar cua i vaig marxar, passejant tranquil·lament, amb la resplendor d'un sol ponent al darrere, i la dolça glòria d'una lluna creixent al davant —l'una esmorteint-se, i l'altra brillant— mentre abandonava el parc i pujava pel camí pedregós que bifurcava cap a l'estatge del senyor Heathcliff. Abans d'arribar a albirar-lo, tot el que quedava del dia era una llum ambre sense raigs al llarg del ponent: però podia veure cada còdol del camí, i cada bri d'herba, gràcies a aquella lluna esplèndida. No vaig haver ni d'escalar la reixa ni de trucar —va cedir a la meva mà. Això és una millora, vaig pensar. I en vaig advertir una altra, gràcies a les meves narius: una fragància de violers i malves embaumava l'aire des d'entre els arbres fruiters casolans.
+Li hauria preguntat per què la senyora Dean havia abandonat la Granja, però era impossible aturar-la en un moment tan crític, de manera que vaig girar cua i vaig marxar, passejant tranquil·lament, amb la resplendor d'un sol ponent al darrere, i la dolça glòria d'una lluna creixent al davant —l'una esmorteint-se, i l'altra brillant— mentre abandonava el parc i pujava pel camí pedregós que bifurcava cap a l'estatge del senyor Heathcliff. Abans d'arribar a albirar-lo, tot el que quedava del dia era una llum ambre sense raigs al llarg del ponent: però podia veure cada còdol del camí, i cada bri d'herba, gràcies a aquella lluna esplèndida. No vaig haver ni d'escalar la reixa ni de trucar —va cedir a la meva mà. Això és una millora, vaig pensar. I en vaig advertir una altra, gràcies a les meves narius: una fragància de violers i ravenisses embaumava l'aire des d'entre els arbres fruiters casolans.
 
 Les dues portes i les gelosies estaven obertes; i, tanmateix, com és habitual en terres carboníferes, un bell foc vermell il·luminava la xemeneia: el confort que l'ull n'obté fa suportable l'excés de calor. Però la casa de Cims Borrascosos és tan gran que els seus habitants disposen de prou espai per apartar-se de la seva influència; i així, els que hi havia s'havien instal·lat no gaire lluny d'una de les finestres. Podia veure'ls i sentir-los parlar abans d'entrar, i vaig mirar i escoltar en conseqüència; mogut per una barreja de curiositat i enveja, que creixia a mesura que m'entretenia.
 
@@ -166,7 +166,7 @@ L'obra que estudiaven era plena de costoses il·lustracions; i aquelles i la sev
 
 —No són les vuit! —va respondre, alçant-se de mala gana—. Hareton, et deixaré aquest llibre sobre la repisa de la xemeneia, i en portaré més demà.
 
-—Qualsevol llibre que deixeu, me'l'emportaré a la casa —va dir Joseph—, i serà molt que els torneu a trobar; així que feu el que vulgueu!
+—Qualsevol llibre que deixeu, me l'emportaré a la casa —va dir Joseph—, i serà molt que els torneu a trobar; així que feu el que vulgueu!
 
 Cathy va amenaçar que la seva biblioteca pagaria per la d'ella; i, somrient en passar davant de Hareton, va pujar cantant les escales: més lleugera de cor, m'atreveixo a dir, del que mai havia estat sota aquell sostre; excepte, potser, durant les seves primeres visites a Linton.
 
