@@ -7,13 +7,16 @@
   },
   "timestamps": {
     "inici": "2026-03-05T19:37:33.371934",
-    "ultima_activitat": "2026-03-05T19:50:26.366570"
+    "ultima_activitat": "2026-03-05T21:09:27.854806"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 46,
@@ -22,10 +25,8 @@
       "chunk_2",
       "chunk_3",
       "chunk_4",
-      "chunk_5"
-    ],
-    "en_curs": "chunk_6",
-    "pendents": [
+      "chunk_5",
+      "chunk_6",
       "chunk_7",
       "chunk_8",
       "chunk_9",
@@ -66,18 +67,49 @@
       "chunk_44",
       "chunk_45",
       "chunk_46"
-    ]
+    ],
+    "en_curs": null,
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 2.2,
+    "qualitat_mitjana": 1.81,
     "temps_total_min": 0.0
   },
   "errors": [
     "[19:41:57] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
     "[19:49:43] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
-    "[19:50:26] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)"
+    "[19:50:26] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:54:13] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:04:44] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:08:41] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:09:29] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:13:23] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:15:06] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:16:45] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:20:37] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:21:18] Error chunk 21: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:21:59] Error chunk 22: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:22:59] Error chunk 23: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:23:40] Error chunk 24: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:31:39] Error chunk 27: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:32:20] Error chunk 28: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:34:00] Error chunk 29: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:34:36] Error chunk 30: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:36:32] Error chunk 31: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:37:17] Error chunk 32: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:39:00] Error chunk 33: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:39:48] Error chunk 34: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:41:16] Error chunk 35: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:56:46] Error chunk 40: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:57:25] Error chunk 41: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:59:11] Error chunk 42: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:00:59] Error chunk 43: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:02:34] Error chunk 44: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:04:13] Error chunk 45: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:05:58] Error chunk 46: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
-    "[19:40:14] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+    "[19:40:14] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:07:41] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
   ]
 }
