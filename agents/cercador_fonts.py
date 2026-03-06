@@ -6,7 +6,6 @@ tradicionals no estan disponibles.
 
 from __future__ import annotations
 
-import logging
 import os
 import time
 from typing import TYPE_CHECKING, Any, ClassVar, Literal
@@ -31,8 +30,6 @@ LlenguaCerca = Literal[
     "llatí", "grec", "japonès", "xinès",
     "anglès", "alemany", "francès", "qualsevol",
 ]
-
-logger = logging.getLogger(__name__)
 
 # Intentar importar Gemini (nou SDK)
 # NOTA: 'genai_types' en comptes de 'types' per evitar eclipsar el mòdul stdlib 'types'.
