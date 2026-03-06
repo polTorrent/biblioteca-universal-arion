@@ -4,6 +4,7 @@ import http.server, json, os, re, subprocess, threading, time, queue
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import parse_qs
+from typing import Any
 import socketserver
 
 PORT = int(os.environ.get("DASHBOARD_PORT", 9090))
@@ -15,36 +16,38 @@ LOGS = {"openclaw":HOME/"openclaw.log","worker":HOME/"claude-worker.log","claude
 
 class S:
     @staticmethod
-    def worker():
+    def worker() -> dict[str, Any]:
         try:
             pf=Path("/tmp/worker.pid"); lf=TASKS/"worker.lock"
             wp=pf.read_text().strip() if pf.exists() else None
             wr=False
             if wp:
                 try: wr=subprocess.run(["ps","-p",wp,"-o","comm="],capture_output=True,text=True,timeout=3).returncode==0
-                except: pass
+                except (OSError, subprocess.SubprocessError): pass
             if not wr:
                 try:
                     r=subprocess.run(["pgrep","-f","claude-worker"],capture_output=True,text=True,timeout=3)
                     wr=r.returncode==0
                     if wr and r.stdout.strip(): wp=r.stdout.strip().split('\n')[0]
-                except: pass
+                except (OSError, subprocess.SubprocessError): pass
             ca=False
             try: ca=bool(subprocess.run(["bash","-c","ps aux|grep '[c]laude.*-p'|head -1"],capture_output=True,text=True,timeout=3).stdout.strip())
-            except: pass
+            except (OSError, subprocess.SubprocessError): pass
             ct=None
             if lf.exists():
                 try:
                     c=lf.read_text().strip()
-                    try: d=json.loads(c); ct=d.get("task",d.get("instruction","..."))[:100]
-                    except: ct=c[:100]
-                except: ct="..."
+                    try:
+                        d=json.loads(c); val=d.get("task") or d.get("instruction") or "..."
+                        ct=str(val)[:100]
+                    except (json.JSONDecodeError, ValueError): ct=c[:100]
+                except OSError: ct="..."
             return {"running":wr,"pid":wp,"claude_active":ca,"current_task":ct}
         except Exception as e: return {"running":False,"error":str(e)}
 
     @staticmethod
-    def tasks():
-        t={"pending":[],"running":[],"done":[],"failed":[]}
+    def tasks() -> dict[str, Any]:
+        t: dict[str, list[dict[str, str]]]={"pending":[],"running":[],"done":[],"failed":[]}
         try:
             if not TASKS.exists(): return {"pending":[],"running":[],"done":[],"failed":[],"counts":{"pending":0,"running":0,"done":0,"failed":0}}
             # Check subdirectory structure first (pending/, running/, done/, failed/)
@@ -55,7 +58,7 @@ class S:
                     if not d.is_dir(): continue
                     for f in sorted(d.glob("*.json")):
                         try: data=json.loads(f.read_text())
-                        except: data={}
+                        except (json.JSONDecodeError, OSError): data={}
                         t[status].append({"name":f.stem,"type":data.get("type","?"),"instruction":data.get("instruction","")[:150]})
             else:
                 # Fallback: flat files with prefixes
@@ -63,18 +66,18 @@ class S:
                     n=f.stem
                     if n=="worker": continue
                     try: data=json.loads(f.read_text())
-                    except: data={}
+                    except (json.JSONDecodeError, OSError): data={}
                     i={"name":n,"type":data.get("type","?"),"instruction":data.get("instruction","")[:150]}
                     if n.startswith("done_"): t["done"].append(i)
                     elif n.startswith("failed_"): t["failed"].append(i)
                     elif n.startswith("running_"): t["running"].append(i)
                     else: t["pending"].append(i)
-        except: pass
+        except Exception: pass
         return {"pending":t["pending"][-30:],"running":t["running"],"done":t["done"][-15:],"failed":t["failed"][-10:],"counts":{k:len(v) for k,v in t.items()}}
 
     @staticmethod
-    def obres():
-        o=[]
+    def obres() -> list[dict[str, Any]]:
+        o: list[dict[str, Any]]=[]
         try:
             if not OBRES.exists(): return o
             for cat in sorted(OBRES.iterdir()):
@@ -83,12 +86,12 @@ class S:
                     if not aut.is_dir(): continue
                     for ob in sorted(aut.iterdir()):
                         if not ob.is_dir(): continue
-                        m={}; mf=ob/"metadata.yml"
+                        m: dict[str, str]={}; mf=ob/"metadata.yml"
                         if mf.exists():
                             try:
                                 for l in mf.read_text().split('\n'):
                                     if ':' in l: k,v=l.split(':',1); m[k.strip()]=v.strip().strip('"\'')
-                            except: pass
+                            except OSError: pass
                         st="empty"
                         if (ob/".validated").exists(): st="validated"
                         elif (ob/".fixing").exists(): st="fixing"
@@ -101,13 +104,13 @@ class S:
                                 try:
                                     x=re.search(r'[\d.]+',sf.read_text().strip())
                                     if x: sc=float(x.group())
-                                except: pass
+                                except (OSError, ValueError): pass
                         o.append({"categoria":cat.name,"autor":aut.name,"obra":m.get("titol",ob.name),"llengua":m.get("llengua_original","?"),"status":st,"score":sc})
-        except: pass
+        except Exception: pass
         return o
 
     @staticmethod
-    def daily():
+    def daily() -> dict[str, Any]:
         try:
             today=datetime.now().strftime('%Y-%m-%d')
             yest=(datetime.now()-timedelta(days=1)).strftime('%Y-%m-%d')
@@ -121,23 +124,23 @@ class S:
                             if 'completada' in lo or '✅' in lo: td+=1
                             if 'failed' in lo or '❌' in lo: tf+=1
                             if 'rate limit' in lo or 'rate_limit' in lo: trl+=1
-                except: pass
+                except (OSError, subprocess.SubprocessError): pass
                 try:
                     r=subprocess.run(["bash","-c",f"grep -c '{yest}.*COMPLETADA\\|{yest}.*✅' {wl}"],capture_output=True,text=True,timeout=3)
                     if r.returncode==0: yd=int(r.stdout.strip())
-                except: pass
+                except (OSError, subprocess.SubprocessError, ValueError): pass
             wu="—"
             try:
                 pf=Path("/tmp/worker.pid")
                 if pf.exists():
                     r=subprocess.run(["ps","-p",pf.read_text().strip(),"-o","etime="],capture_output=True,text=True,timeout=3)
                     if r.returncode==0: wu=r.stdout.strip()
-            except: pass
+            except (OSError, subprocess.SubprocessError): pass
             return {"today_done":td,"today_failed":tf,"today_rate_limits":trl,"yesterday_done":yd,"worker_uptime":wu}
         except Exception as e: return {"error":str(e)}
 
     @staticmethod
-    def claude_session():
+    def claude_session() -> dict[str, Any]:
         try:
             wl=LOGS["worker"]; is_rl=False; ri="Activa"
             if wl.exists():
@@ -151,7 +154,7 @@ class S:
                             ri=f"Pausa {pm.group(1)} min" if pm else "En pausa"
                             break
                         elif 'completada' in lo or '✅' in lo: break
-                except: pass
+                except (OSError, subprocess.SubprocessError): pass
             return {"is_rate_limited":is_rl,"reset_info":ri}
         except Exception as e: return {"error":str(e),"is_rate_limited":False}
 
@@ -190,13 +193,13 @@ class S:
             return {"available":False,"raw":str(e)}
 
     @staticmethod
-    def openclaw():
+    def openclaw() -> dict[str, Any]:
         try:
             r=subprocess.run(["pgrep","-f","openclaw"],capture_output=True,text=True,timeout=3)
             run=r.returncode==0; last=""
             if LOGS["openclaw"].exists():
                 try: last=subprocess.run(["tail","-1",str(LOGS["openclaw"])],capture_output=True,text=True,timeout=3).stdout.strip()[:120]
-                except: pass
+                except (OSError, subprocess.SubprocessError): pass
             return {"running":run,"last_activity":last}
         except Exception as e: return {"running":False,"error":str(e)}
 
@@ -222,23 +225,32 @@ class S:
         except Exception as e: return {"error":str(e)}
 
 class LS:
-    def __init__(self):
-        self.subs=[]; self._pos={}; self._on=False
-    def start(self):
+    def __init__(self) -> None:
+        self.subs: list[queue.Queue[dict[str, Any]]]=[]
+        self._lock=threading.Lock()
+        self._pos: dict[str, int]={}; self._on=False
+    def start(self) -> None:
         if self._on: return
         self._on=True; threading.Thread(target=self._w,daemon=True).start()
-    def stop(self): self._on=False
-    def sub(self):
-        q=queue.Queue(maxsize=300); self.subs.append(q); return q
-    def unsub(self,q):
-        if q in self.subs: self.subs.remove(q)
-    def _bc(self,t,d):
+    def stop(self) -> None: self._on=False
+    def sub(self) -> queue.Queue[dict[str, Any]]:
+        q: queue.Queue[dict[str, Any]]=queue.Queue(maxsize=300)
+        with self._lock: self.subs.append(q)
+        return q
+    def unsub(self, q: queue.Queue[dict[str, Any]]) -> None:
+        with self._lock:
+            if q in self.subs: self.subs.remove(q)
+    def _bc(self, t: str, d: dict[str, Any]) -> None:
         dead=[]
-        for q in self.subs:
+        with self._lock: snapshot=list(self.subs)
+        for q in snapshot:
             try: q.put_nowait({"type":t,"data":d,"ts":datetime.now().isoformat()})
             except queue.Full: dead.append(q)
-        for x in dead: self.subs.remove(x)
-    def _w(self):
+        if dead:
+            with self._lock:
+                for x in dead:
+                    if x in self.subs: self.subs.remove(x)
+    def _w(self) -> None:
         while self._on:
             for n,p in LOGS.items():
                 try:
@@ -251,7 +263,7 @@ class LS:
                             for l in nc.strip().split('\n')[-30:]:
                                 if l.strip(): self._bc("log",{"source":n,"line":l.strip()[:500]})
                     elif sz<lp: self._pos[n]=0
-                except: pass
+                except (OSError, ValueError): pass
             time.sleep(1)
 
 ls=LS()
@@ -288,13 +300,15 @@ class H(http.server.BaseHTTPRequestHandler):
                     self.wfile.write(f"data: {json.dumps({'type':'heartbeat'})}\n\n".encode()); self.wfile.flush()
         except(BrokenPipeError,ConnectionResetError,OSError): pass
         finally: ls.unsub(q)
-    def _lg(self):
+    def _lg(self) -> None:
         pa=parse_qs(self.path.split('?')[1] if '?' in self.path else '')
-        src=pa.get('source',['worker'])[0]; n=int(pa.get('n',['50'])[0])
-        lp=LOGS.get(src); lines=[]
+        src=pa.get('source',['worker'])[0]
+        try: n=min(int(pa.get('n',['50'])[0]),500)
+        except ValueError: n=50
+        lp=LOGS.get(src); lines: list[str]=[]
         if lp and lp.exists():
             try: lines=subprocess.run(["tail",f"-{n}",str(lp)],capture_output=True,text=True,timeout=5).stdout.strip().split('\n')
-            except: pass
+            except (OSError, subprocess.SubprocessError): pass
         self._j({"source":src,"lines":lines})
     def _ex(self):
         try:
@@ -305,14 +319,15 @@ class H(http.server.BaseHTTPRequestHandler):
             r=subprocess.run(["bash","-c",c],capture_output=True,text=True,timeout=30,cwd=str(ARION))
             self._j({"stdout":r.stdout[-4000:],"stderr":r.stderr[-2000:],"code":r.returncode})
         except Exception as e: self._j({"error":str(e)},500)
-    def _tk(self):
+    def _tk(self) -> None:
         try:
             b=json.loads(self.rfile.read(int(self.headers.get('Content-Length',0))))
             inst=b.get('instruction','')
             if not inst: return self._j({"error":"No instruction"},400)
-            TASKS.mkdir(parents=True,exist_ok=True)
+            pending_dir=TASKS/"pending"
+            pending_dir.mkdir(parents=True,exist_ok=True)
             ts=datetime.now().strftime("%Y%m%d_%H%M%S")
-            (TASKS/f"dashboard_{b.get('type','custom')}_{ts}.json").write_text(json.dumps({"type":b.get('type','custom'),"instruction":inst,"created":datetime.now().isoformat(),"source":"dashboard"},indent=2))
+            (pending_dir/f"dashboard_{b.get('type','custom')}_{ts}.json").write_text(json.dumps({"type":b.get('type','custom'),"instruction":inst,"created":datetime.now().isoformat(),"source":"dashboard"},indent=2))
             self._j({"ok":True})
         except Exception as e: self._j({"error":str(e)},500)
     def _j(self,d,c=200):
