@@ -1,10 +1,13 @@
 """Sistema de mètriques per al pipeline de traducció."""
 
 import json
+import logging
 from dataclasses import dataclass, field
 from datetime import datetime
 from pathlib import Path
 from typing import Any
+
+logger = logging.getLogger(__name__)
 
 
 @dataclass
@@ -242,6 +245,7 @@ class MetricsCollector:
                     data = json.load(f)
                     metriques.append(data.get("totals", data))
             except Exception:
+                logger.warning("Error carregant mètriques de %s", filepath)
                 continue
         return metriques
 
@@ -282,7 +286,7 @@ class MetricsCollector:
             f"Chunks processats: {total_chunks}",
             "",
             "─── Qualitat ───",
-            f"Qualitat mitjana global: {sum(qualitats)/len(qualitats):.2f}" if qualitats else "N/A",
+            f"Qualitat mitjana global: {sum(qualitats)/len(qualitats):.2f}" if qualitats else "Qualitat mitjana global: N/A",
             f"Taxa d'èxit global: {taxa_exit_global*100:.1f}%",
             "",
             "─── Recursos ───",
@@ -320,9 +324,9 @@ class MetricsCollector:
             f"Iteracions mitjana: {resum['iteracions_mitjana']:.1f}",
             "",
             "─── Qualitat ───",
-            f"Mitjana: {resum['qualitat_mitjana']:.2f}" if resum['qualitat_mitjana'] else "N/A",
-            f"Mínima: {resum['qualitat_minima']:.2f}" if resum['qualitat_minima'] else "N/A",
-            f"Màxima: {resum['qualitat_maxima']:.2f}" if resum['qualitat_maxima'] else "N/A",
+            f"Mitjana: {resum['qualitat_mitjana']:.2f}" if resum['qualitat_mitjana'] else "Mitjana: N/A",
+            f"Mínima: {resum['qualitat_minima']:.2f}" if resum['qualitat_minima'] else "Mínima: N/A",
+            f"Màxima: {resum['qualitat_maxima']:.2f}" if resum['qualitat_maxima'] else "Màxima: N/A",
             f"Taxa èxit: {resum['taxa_exit']*100:.1f}%",
             "",
             "─── Recursos ───",
