@@ -751,7 +751,47 @@ REPORT
     log "📋 Report generat a $REPORT_FILE"
 }
 
-# ── 9. ⭐ Salut OpenClaw (diari) ──────────────────────────────────────────────
+# ── 9b. ⭐ Comprovació ràpida d'obres validades (sense tasques Claude) ────────
+check_quick_issues() {
+    log "🔍 Comprovació ràpida d'obres validades..."
+
+    local ok_count=0
+    local problem_count=0
+    local rebuilt_web=false
+
+    while IFS= read -r validated_file; do
+        local obra_dir
+        obra_dir=$(dirname "$validated_file")
+        local obra_name
+        obra_name=$(basename "$obra_dir")
+
+        # Comprovar presència a la web
+        if [ -f "$PROJECT/docs/index.html" ] && ! grep -q "$obra_name" "$PROJECT/docs/index.html" 2>/dev/null; then
+            if [ "$rebuilt_web" = false ]; then
+                log "   🌐 Obra validada '$obra_name' no apareix a la web. Executant build.py..."
+                python3 "$PROJECT/scripts/build.py" 2>/dev/null && rebuilt_web=true
+                if [ "$rebuilt_web" = true ]; then
+                    log "   ✅ Web regenerada"
+                fi
+            fi
+            problem_count=$((problem_count + 1))
+            continue
+        fi
+
+        # Comprovar portada (només log, improve ho arreglarà)
+        if [ ! -f "$obra_dir/portada.png" ]; then
+            log "   ⚠️ $obra_name: falta portada.png"
+            problem_count=$((problem_count + 1))
+            continue
+        fi
+
+        ok_count=$((ok_count + 1))
+    done < <(find "$PROJECT/obres" -name ".validated" 2>/dev/null)
+
+    log "   Resum ràpid: $ok_count obres OK, $problem_count amb problemes menors"
+}
+
+# ── 10. ⭐ Salut OpenClaw (diari) ─────────────────────────────────────────────
 check_openclaw_health() {
     log "🔧 Salut OpenClaw..."
 
@@ -822,6 +862,7 @@ else
     check_supervision        # 2. ⭐ SUPERVISIÓ
     check_translations       # 3. Noves traduccions
     check_web_sync           # 4. Web sincronitzada
+    check_quick_issues       # 4b. Comprovació ràpida obres validades
     check_code_reviews       # 5. Code reviews
     check_tests              # 6. Tests
     check_weekly_maintenance # 7. Manteniment

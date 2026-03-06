@@ -52,6 +52,7 @@ cmd_add() {
         consell-editorial)  priority=2; max_duration=30 ;;
         design)             priority=4; max_duration=15 ;;
         improve-openclaw)   priority=2; max_duration=45 ;;
+        improve)            priority=3; max_duration=60 ;;
     esac
 
     local task_file="$TASKS_DIR/pending/${task_id}.json"
