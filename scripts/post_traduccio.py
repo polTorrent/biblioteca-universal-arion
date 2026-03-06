@@ -526,7 +526,8 @@ def executar_avaluacio_final(obra_dir: Path) -> dict:
         if errors_greus:
             print("   Errors principals:")
             for e in errors_greus[:3]:
-                print(f"      • [{e.severitat.value.upper()}] {e.explicacio[:60]}...")
+                desc = e.explicacio[:60] + ("..." if len(e.explicacio) > 60 else "")
+                print(f"      • [{e.severitat.value.upper()}] {desc}")
 
         return {
             'aprovat': informe.aprovat,
@@ -558,6 +559,7 @@ def executar_build() -> bool:
             cwd=str(root),
             capture_output=True,
             text=True,
+            timeout=300,
         )
 
         if result.returncode == 0:
@@ -567,6 +569,9 @@ def executar_build() -> bool:
             print(f"   ❌ Error en build: {result.stderr}")
             return False
 
+    except subprocess.TimeoutExpired:
+        print("   ❌ Build ha excedit el temps límit (5 min)")
+        return False
     except Exception as e:
         print(f"   ❌ Error executant build: {e}")
         return False
