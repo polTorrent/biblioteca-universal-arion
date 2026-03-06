@@ -310,11 +310,21 @@ for obra in pendents:
     autor = obra['autor']
     titol = obra['titol']
     categoria = obra.get('categoria', 'filosofia')
-    slug_autor = autor.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a')
-    slug_titol = titol.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a').replace('í', 'i')
-    obra_dir = obres_dir / categoria / slug_autor / slug_titol
+    # IMPORTANT: usar obra_dir del JSON (té el path real amb guions)
+    obra_dir_json = obra.get('obra_dir', '')
+    if obra_dir_json:
+        obra_dir = Path(project) / obra_dir_json
+    else:
+        import unicodedata, re as _re
+        def _slug(t):
+            t = unicodedata.normalize('NFKD', t.lower())
+            t = ''.join(c for c in t if not unicodedata.combining(c))
+            return _re.sub(r'[^a-z0-9]+', '-', t).strip('-')
+        obra_dir = obres_dir / categoria / _slug(autor) / _slug(titol)
+        obra_dir_json = str(obra_dir.relative_to(Path(project)))
     obra['has_original'] = (obra_dir / 'original.md').exists()
     obra['has_dir'] = obra_dir.is_dir()
+    obra['obra_dir_rel'] = obra_dir_json
 
 # Puntuació per prioritzar
 # Criteri: curtes primer, amb font disponible, diversificar categories
@@ -367,7 +377,7 @@ scored.sort(key=lambda x: x['score'], reverse=True)
 for i, obra in enumerate(scored[:3]):
     fonts_str = ','.join(obra.get('fonts', []))
     has_orig = 'SI' if obra.get('has_original') else 'NO'
-    print(f"RANK|{i+1}|{obra['autor']}|{obra['titol']}|{obra.get('categoria','?')}|{obra.get('paraules_aprox',0)}|{obra.get('dificultat',3)}|{obra['score']}|{has_orig}|{fonts_str}|{obra.get('llengua','?')}")
+    print(f"RANK|{i+1}|{obra['autor']}|{obra['titol']}|{obra.get('categoria','?')}|{obra.get('paraules_aprox',0)}|{obra.get('dificultat',3)}|{obra['score']}|{has_orig}|{fonts_str}|{obra.get('llengua','?')}|{obra.get('obra_dir_rel','')}")
 PYEOF
 )
 
@@ -379,24 +389,19 @@ PYEOF
     brain_log "   📊 Ranking de propostes:"
     local first_autor="" first_titol="" first_llengua="" first_categoria=""
 
-    echo "$py_output" | while IFS='|' read -r _ rank autor titol categoria paraules dificultat score has_orig fonts llengua; do
+    echo "$py_output" | while IFS='|' read -r _ rank autor titol categoria paraules dificultat score has_orig fonts llengua obra_dir_rank; do
         brain_log "   #$rank: $titol ($autor) — cat:$categoria, ${paraules}p, dif:$dificultat, score:$score, orig:$has_orig"
         # Guardar la primera per crear tasca
         if [ "$rank" = "1" ]; then
-            echo "$autor|$titol|$llengua|$categoria" > /tmp/brain_top_pick.tmp
+            echo "$autor|$titol|$llengua|$categoria|$obra_dir_rank" > /tmp/brain_top_pick.tmp
         fi
     done
 
     # Crear tasca per la primera del ranking
     if [ -f /tmp/brain_top_pick.tmp ]; then
-        IFS='|' read -r autor titol llengua categoria < /tmp/brain_top_pick.tmp
+        IFS='|' read -r autor titol llengua categoria obra_path < /tmp/brain_top_pick.tmp
         rm -f /tmp/brain_top_pick.tmp
 
-        local slug_autor slug_titol
-        slug_autor=$(echo "$autor" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | sed 's/[èé]/e/g; s/[àá]/a/g; s/[íì]/i/g')
-        slug_titol=$(echo "$titol" | tr '[:upper:]' '[:lower:]' | tr ' ' '_' | sed 's/[èé]/e/g; s/[àá]/a/g; s/[íì]/i/g')
-
-        local obra_path="obres/$categoria/$slug_autor/$slug_titol"
         if [ -f "$PROJECT/$obra_path/original.md" ]; then
             # Ja té original → traduir directament
             brain_add_task "translate" "${slug_autor}_${slug_titol}" \
