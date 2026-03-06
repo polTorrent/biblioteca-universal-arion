@@ -56,7 +56,10 @@ def carregar_metadata(obra_dir: Path) -> dict | None:
     if not meta_path.exists():
         return None
     with open(meta_path, encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        data = yaml.safe_load(f)
+    if not isinstance(data, dict):
+        return None
+    return data
 
 
 def determinar_genere(metadata: dict, obra_dir: Path) -> str:
