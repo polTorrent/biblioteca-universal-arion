@@ -57,7 +57,7 @@ class DetectorAngles(DetectorPlugin):
             calcs.append(CalcDetectat(tipus="passiva_excessiva", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="Passiva amb agent explícit", suggeriment="Preferir veu activa o passiva reflexa", severitat=6.0, llengua_origen=self.llengua))
             
         # Gerundi progressiu
-        progressiu = re.finditer(r'\b(estava|estaven|estic|estàs|està|estem|esteu|estan)\s+\w+(ant|ent|int)\b', text, re.IGNORECASE)
+        progressiu = re.finditer(r'\b(estava|estaves|estàvem|estàveu|estaven|estic|estàs|està|estem|esteu|estan)\s+\w+(ant|ent|int)\b', text, re.IGNORECASE)
         for match in progressiu:
             calcs.append(CalcDetectat(tipus="gerundi_angles", text_original=match.group(), posicio=(match.start(), match.end()), explicacio="Perífrasi progressiva (I am doing)", suggeriment="Valorar imperfet simple", severitat=4.0, llengua_origen=self.llengua))
 
