@@ -183,14 +183,23 @@ class VeniceClient:
                 content_type = response.headers.get("content-type", "")
 
                 if "application/json" in content_type:
-                    data = response.json()
+                    try:
+                        data = response.json()
+                    except ValueError as exc:
+                        raise VeniceRequestError(
+                            "Resposta JSON invàlida de l'API Venice"
+                        ) from exc
                     # Si retorna URL, descarregar la imatge
                     if "url" in data:
                         image_response = await client.get(data["url"])
+                        if image_response.status_code != 200:
+                            raise VeniceRequestError(
+                                f"Error {image_response.status_code} descarregant imatge"
+                            )
                         return image_response.content
                     elif "image" in data:
                         return base64.b64decode(data["image"])
-                    elif "images" in data and len(data["images"]) > 0:
+                    elif "images" in data and data["images"]:
                         return base64.b64decode(data["images"][0])
                     else:
                         raise VeniceRequestError(f"Format de resposta desconegut: {data.keys()}")
@@ -232,7 +241,12 @@ class VeniceClient:
                         f"Error {response.status_code} obtenint models"
                     )
 
-                data = response.json()
+                try:
+                    data = response.json()
+                except ValueError as exc:
+                    raise VeniceRequestError(
+                        "Resposta JSON invàlida obtenint models"
+                    ) from exc
                 models = []
 
                 # Estructura de resposta pot variar
