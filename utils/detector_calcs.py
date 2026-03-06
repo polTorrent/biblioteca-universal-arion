@@ -8,6 +8,7 @@ Identifica construccions no naturals en català que són calcs de:
 - Anglès: gerundis, passives
 """
 
+import logging
 import math
 import re
 from enum import Enum
@@ -120,7 +121,7 @@ class DetectorCalcs:
 
         # GENERAL
         TipusCalc.NEGACIO_DOBLE: [
-            (r'\b(no\s+\.\.\.\s+ni|ni\s+\.\.\.\s+no)\b',
+            (r'\bno\s+(?:\w+\s+){1,4}ni\b|\bni\s+(?:\w+\s+){1,4}no\b',
              "Negació doble (del llatí/grec)",
              "Revisar si la doble negació és necessària en català"),
         ],
@@ -273,6 +274,9 @@ class DetectorCalcs:
             try:
                 res = plugin.detectar(text)
             except Exception:
+                logging.getLogger(__name__).warning(
+                    "Error al plugin de '%s'", self.llengua_origen, exc_info=True
+                )
                 return calcs
             for c in res:
                 # Convertim el model del plugin al model principal
