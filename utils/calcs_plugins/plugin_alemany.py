@@ -1,6 +1,8 @@
+from __future__ import annotations
+
 import re
 
-from .base import DetectorPlugin, CalcDetectat
+from .base import CalcDetectat, DetectorPlugin
 
 
 class DetectorAlemany(DetectorPlugin):
