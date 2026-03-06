@@ -351,7 +351,9 @@ def test_validacio(obra_dir: Path) -> ResultatValidacio | None:
                 print(f"   - [{item.categoria}] {item.item}: {item.error}")
                 count += 1
                 if count >= 5:
-                    print(f"   ... i {resultat.warnings - 5} més")
+                    restants = resultat.warnings - count
+                    if restants > 0:
+                        print(f"   ... i {restants} més")
                     break
 
     return resultat
@@ -422,21 +424,29 @@ def test_represa(obra_dir: Path) -> PipelineV2 | None:
         print("\n⚠️  No hi ha sessió anterior per reprendre")
         return None
 
-    from agents.v2.pipeline_v2 import PipelineV2, ConfiguracioPipelineV2
+    try:
+        from agents.v2.pipeline_v2 import PipelineV2, ConfiguracioPipelineV2
+    except ImportError as e:
+        print(f"\n❌ No s'ha pogut importar el pipeline: {e}")
+        return None
 
     print(f"\n📂 Directori: {obra_dir}")
 
-    # Crear pipeline amb configuració per reprendre
-    config = ConfiguracioPipelineV2(
-        habilitar_persistencia=True,
-        directori_obra=obra_dir,
-        mostrar_dashboard=False,
-    )
+    try:
+        # Crear pipeline amb configuració per reprendre
+        config = ConfiguracioPipelineV2(
+            habilitar_persistencia=True,
+            directori_obra=obra_dir,
+            mostrar_dashboard=False,
+        )
 
-    pipeline = PipelineV2(config)
+        pipeline = PipelineV2(config)
 
-    # Inicialitzar per carregar estat
-    es_represa = pipeline._inicialitzar_estat("Sèneca", "De Brevitate Vitae", "llatí")
+        # Inicialitzar per carregar estat
+        es_represa = pipeline._inicialitzar_estat("Sèneca", "De Brevitate Vitae", "llatí")
+    except Exception as e:
+        print(f"\n❌ Error inicialitzant pipeline: {e}")
+        return None
 
     if es_represa and pipeline.estat:
         pipeline._carregar_memoria()
