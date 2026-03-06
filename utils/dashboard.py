@@ -102,10 +102,6 @@ class Dashboard:
         )
 
         self._live: Live | None = None
-        self._progress: Progress | None = None
-        self._global_task: TaskID | None = None
-        self._chunk_task: TaskID | None = None
-        self._agent_task: TaskID | None = None
 
     def _create_header_panel(self) -> Panel:
         """Crea el panell de capçalera."""
@@ -154,7 +150,10 @@ Progrés global: [{progress_bar}] {progress_pct:.0f}%{chunk_info}"""
             # Temps
             elapsed = (datetime.now() - self.state.start_time).total_seconds()
             elapsed_str = self._format_time(elapsed)
-            remaining_str = self._format_time(self.state.estimated_remaining) if self.state.estimated_remaining > 0 else "calculant..."
+            if self.state.estimated_remaining > 0:
+                remaining_str = self._format_time(self.state.estimated_remaining)
+            else:
+                remaining_str = "calculant..."
 
             content = f"""Agent actiu: [bold cyan]{self.state.active_agent}[/bold cyan]
 Estat: {self.state.agent_status}{progress_str}
@@ -380,6 +379,7 @@ class ProgressTracker:
 
         self._progress = Progress(*columns, console=self.console)
         self._tasks: dict[str, TaskID] = {}
+        self._totals: dict[str, int] = {}
 
     def start(self) -> None:
         """Inicia el tracker."""
@@ -403,6 +403,7 @@ class ProgressTracker:
             completed=completed,
         )
         self._tasks[name] = task_id
+        self._totals[name] = total
         return name
 
     def update_task(
@@ -426,6 +427,7 @@ class ProgressTracker:
             kwargs["description"] = description
         if total is not None:
             kwargs["total"] = total
+            self._totals[name] = total
 
         if advance > 0:
             self._progress.update(task_id, advance=advance, **kwargs)
@@ -438,14 +440,14 @@ class ProgressTracker:
             return
 
         task_id = self._tasks[name]
-        task = self._progress.tasks[task_id]
-        self._progress.update(task_id, completed=task.total)
+        self._progress.update(task_id, completed=self._totals.get(name, 0))
 
     def remove_task(self, name: str) -> None:
         """Elimina una tasca."""
         if name in self._tasks:
             self._progress.remove_task(self._tasks[name])
             del self._tasks[name]
+            self._totals.pop(name, None)
 
     def __enter__(self) -> "ProgressTracker":
         """Context manager entry."""
