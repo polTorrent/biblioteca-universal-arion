@@ -787,6 +787,56 @@ print(len(pending))
 
 
 # =============================================================================
+# MILLORA CONTÍNUA — Revisió periòdica d'obres validades
+# =============================================================================
+run_millora_continua() {
+    brain_log "🔄 Millora Contínua — Comprovant si toca executar..."
+
+    local MILLORA_SCRIPT="$PROJECT/scripts/millora-continua.sh"
+    [ ! -f "$MILLORA_SCRIPT" ] && { brain_log "   millora-continua.sh no trobat"; return; }
+
+    local LAST_RUN_FILE="$TASKS_DIR/.millora-continua-last-run"
+    local today_dow
+    today_dow=$(date +%u)  # 1=dl, 5=dv, 7=dg
+
+    local should_run=false
+
+    # Executar cada divendres (dia 5)
+    if [ "$today_dow" -eq 5 ]; then
+        should_run=true
+    fi
+
+    # O si no s'ha executat en 7 dies
+    if [ -f "$LAST_RUN_FILE" ]; then
+        local last_ts
+        last_ts=$(cat "$LAST_RUN_FILE" 2>/dev/null)
+        local now_ts
+        now_ts=$(date +%s)
+        local elapsed=$(( now_ts - last_ts ))
+        if [ "$elapsed" -ge 604800 ]; then  # 7 dies
+            should_run=true
+        fi
+    else
+        # Mai executat
+        should_run=true
+    fi
+
+    if [ "$should_run" = false ]; then
+        brain_log "   No toca executar (últim: $(cat "$LAST_RUN_FILE" 2>/dev/null | xargs -I{} date -d @{} '+%Y-%m-%d' 2>/dev/null || echo 'mai'))"
+        return
+    fi
+
+    brain_log "   Executant millora-continua.sh..."
+    bash "$MILLORA_SCRIPT" 2>&1 | while IFS= read -r line; do
+        brain_log "   $line"
+    done
+
+    date +%s > "$LAST_RUN_FILE"
+    brain_log "   Millora contínua completada"
+}
+
+
+# =============================================================================
 # EXECUCIÓ DIÀRIA (totes les funcions no-helper)
 # =============================================================================
 run_daily() {
@@ -828,6 +878,7 @@ run_daily() {
     track_evolution
     propose_features
     run_consell_editorial
+    run_millora_continua
 
     date +%s > "$LAST_RUN_FILE"
 
@@ -878,6 +929,10 @@ if [ "${BASH_SOURCE[0]}" = "$0" ]; then
         consell-editorial|run_consell_editorial)
             _init_files
             _with_openclaw_guard run_consell_editorial
+            ;;
+        millora-continua|run_millora_continua)
+            _init_files
+            _with_openclaw_guard run_millora_continua
             ;;
         check-duplicate)
             # Només lectura, no cal stop/start
