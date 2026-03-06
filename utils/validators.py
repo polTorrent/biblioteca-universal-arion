@@ -115,7 +115,15 @@ def validar_text_entrada(
     }
 
     text_lower = text.lower()
-    llengua_norm = llengua_origen.lower().replace("í", "i").replace("è", "e")
+    llengua_norm = (
+        llengua_origen.lower()
+        .replace("à", "a")
+        .replace("è", "e")
+        .replace("é", "e")
+        .replace("í", "i")
+        .replace("ó", "o")
+        .replace("ú", "u")
+    )
 
     if llengua_norm in indicadors_llengua:
         indicadors = indicadors_llengua[llengua_norm]
