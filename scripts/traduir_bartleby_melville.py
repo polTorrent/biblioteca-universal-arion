@@ -91,14 +91,16 @@ def main():
     # Netejar metadades de fonts digitals
     text_original = netejar_metadades_font(text_original)
 
-    # Extreure el text narratiu (entre els dos ---)
+    # Extreure el text narratiu descartant separadors ---
+    # netejar_metadades_font ja elimina la capçalera (títol, autor, primer ---),
+    # així que el --- restant és el separador del peu de pàgina.
     parts = re.split(r'^---\s*$', text_original, flags=re.MULTILINE)
     if len(parts) >= 3:
-        # El text està entre el primer i el segon ---
+        # Capçalera intacta: capçalera --- contingut --- peu
         text_narratiu = parts[1].strip()
     elif len(parts) == 2:
-        # Només un ---: agafar el contingut més llarg
-        text_narratiu = max(parts, key=len).strip()
+        # Capçalera ja netejada: contingut --- peu
+        text_narratiu = parts[0].strip()
     else:
         text_narratiu = text_original
 
