@@ -1083,6 +1083,10 @@
       {
         "timestamp": 1772169610.9433575,
         "result": "created"
+      },
+      {
+        "timestamp": 1772774473.0618556,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1091,6 +1095,10 @@
     "events": [
       {
         "timestamp": 1772169611.0674167,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772774473.1918147,
         "result": "created"
       }
     ],
@@ -1101,6 +1109,10 @@
       {
         "timestamp": 1772169611.1907918,
         "result": "created"
+      },
+      {
+        "timestamp": 1772774473.3179822,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1109,6 +1121,10 @@
     "events": [
       {
         "timestamp": 1772169611.312871,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772774473.4431522,
         "result": "created"
       }
     ],
