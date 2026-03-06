@@ -590,10 +590,17 @@ update_queue_status() {
     log "📋 Actualitzant obra-queue.json..."
     
     python3 -c "
-import json, os
+import json, os, unicodedata, re
 
 queue_path = '$QUEUE'
 project = '$PROJECT'
+
+def slugify(text):
+    \"\"\"Genera slug normalitzat: minúscules, sense accents, guions.\"\"\"
+    text = unicodedata.normalize('NFKD', text.lower())
+    text = ''.join(c for c in text if not unicodedata.combining(c))
+    text = re.sub(r'[^a-z0-9]+', '-', text)
+    return text.strip('-')
 
 with open(queue_path) as f:
     queue = json.load(f)
@@ -603,10 +610,13 @@ for obra in queue.get('obres', []):
     autor = obra['autor']
     titol = obra['titol']
     categoria = obra.get('categoria', 'filosofia')
-    slug_autor = autor.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a')
-    slug_titol = titol.lower().replace(' ', '_').replace('è', 'e').replace('à', 'a').replace('í', 'i')
-    
-    obra_dir = os.path.join(project, 'obres', categoria, slug_autor, slug_titol)
+
+    # Usar obra_dir explícit si existeix al JSON, sinó calcular slug
+    obra_dir_rel = obra.get('obra_dir', '')
+    if obra_dir_rel:
+        obra_dir = os.path.join(project, obra_dir_rel)
+    else:
+        obra_dir = os.path.join(project, 'obres', categoria, slugify(autor), slugify(titol))
     
     if os.path.isdir(obra_dir):
         files = os.listdir(obra_dir)
