@@ -167,7 +167,7 @@ def verificar_checkpoints() -> None:
     try:
         from utils.checkpointer import Checkpointer
 
-        checkpointer = Checkpointer()
+        checkpointer = Checkpointer(checkpoint_dir=PROJECT_ROOT / ".cache/pipeline/checkpoints")
 
         # Usar el mètode nou si existeix
         if hasattr(checkpointer, 'llistar_sessions_detallat'):
@@ -224,7 +224,7 @@ def verificar_metriques() -> None:
     try:
         from utils.metrics import MetricsCollector
 
-        collector = MetricsCollector()
+        collector = MetricsCollector(directori=PROJECT_ROOT / ".cache/metrics")
         metriques = collector.carregar_totes()
 
         if not metriques:
@@ -297,7 +297,7 @@ def verificar_variables_entorn() -> None:
             console.print(f"  ℹ️ {var}: No configurat ({desc})")
 
 
-def main():
+def main() -> int:
     """Funció principal de diagnòstic."""
     if RICH_AVAILABLE:
         console.print(Panel.fit(
