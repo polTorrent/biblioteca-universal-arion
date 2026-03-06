@@ -57,7 +57,7 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main() -> ResultatPipelineV2 | None:
+def main() -> ResultatPipelineV2:
     """Executa la traducció."""
 
     # Rutes
@@ -117,6 +117,7 @@ def main() -> ResultatPipelineV2 | None:
         max_chars_chunk=CONFIG["max_chars_chunk"],
         fer_avaluacio=CONFIG["fer_avaluacio"],
         fer_refinament=CONFIG["fer_refinament"],
+        llindar_qualitat=CONFIG["llindar_qualitat"],
         llindars=LlindarsAvaluacio(
             global_minim=CONFIG["llindar_qualitat"],
             max_iteracions=CONFIG["max_iteracions_refinament"],
