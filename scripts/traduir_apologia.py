@@ -22,7 +22,8 @@ from pathlib import Path
 
 from agents.v2 import ConfiguracioPipelineV2, PipelineV2, ResultatPipelineV2
 from agents.v2.models import LlindarsAvaluacio
-from scripts.post_traduccio import post_processar_traduccio
+from scripts.post_traduccio import netejar_metadades_font, post_processar_traduccio
+from scripts.utils import crear_metadata_yml
 
 # ═══════════════════════════════════════════════════════════════════════════════
 # CONFIGURACIÓ - APOLOGIA DE SÒCRATES
@@ -67,6 +68,9 @@ def main() -> ResultatPipelineV2:
     original_path = obra_dir / "original.md"
     traduccio_path = obra_dir / "traduccio.md"
 
+    # Crear/actualitzar metadata.yml
+    crear_metadata_yml(obra_dir, TITOL, AUTOR, LLENGUA_ORIGEN, GENERE)
+
     # Verificar que existeix l'original
     if not original_path.exists():
         print(f"Error: No existeix {original_path}")
@@ -85,27 +89,14 @@ def main() -> ResultatPipelineV2:
     print()
 
     text_original = original_path.read_text(encoding="utf-8")
-
-    # Netejar capçalera si existeix (buscar primer paràgraf del text)
-    text_narratiu = text_original
-
-    # Buscar inici del contingut real (després de "---")
-    if "---" in text_original:
-        parts = text_original.split("---")
-        if len(parts) >= 3:
-            # Frontmatter YAML: parts[0]=buit, parts[1]=YAML, parts[2:]=contingut
-            text_narratiu = "---".join(parts[2:]).strip()
-            # Treure peu de pàgina si existeix
-            if "*Text de domini públic" in text_narratiu:
-                text_narratiu = text_narratiu.split("*Text de domini públic")[0].strip()
-            if text_narratiu.endswith("---"):
-                text_narratiu = text_narratiu[:-3].strip()
+    text_narratiu = netejar_metadades_font(text_original)
 
     print(f"Text original: {len(text_narratiu)} caràcters")
     print()
 
     # Configurar pipeline
     config = ConfiguracioPipelineV2(
+        directori_obra=obra_dir,
         fer_analisi_previa=CONFIG["fer_analisi_previa"],
         crear_glossari=CONFIG["crear_glossari"],
         fer_chunking=CONFIG["fer_chunking"],
