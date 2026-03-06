@@ -12,10 +12,11 @@ Proporciona logging detallat amb:
 """
 
 import json
+import sys
 from datetime import datetime
 from enum import Enum
 from pathlib import Path
-from typing import Callable
+from typing import Any, Callable
 
 from rich.console import Console
 from rich.live import Live
@@ -132,7 +133,7 @@ class TranslationLogger:
         level: LogLevel,
         stage: str,
         message: str,
-        data: dict | None = None,
+        data: dict[str, Any] | None = None,
     ):
         """Registra un missatge."""
         if not self._should_log(level):
@@ -175,40 +176,42 @@ class TranslationLogger:
                 "data": data,
             }
             with open(self.json_log_file, "a", encoding="utf-8") as f:
-                f.write(json.dumps(json_entry, ensure_ascii=False) + "\n")
+                f.write(json.dumps(json_entry, ensure_ascii=False, default=str) + "\n")
 
         # Callbacks
         for callback in self._callbacks:
             try:
+                stats_copy = self.stats.copy()
+                stats_copy["quality_scores"] = list(stats_copy["quality_scores"])
                 callback({
                     "level": level.value,
                     "stage": stage,
                     "message": message,
                     "data": data,
-                    "stats": self.stats.copy(),
+                    "stats": stats_copy,
                 })
-            except Exception:
-                pass
+            except Exception as e:
+                print(f"[TranslationLogger] Error en callback: {e}", file=sys.stderr)
 
     # Mètodes de conveniència
-    def debug(self, stage: str, message: str, data: dict | None = None):
+    def debug(self, stage: str, message: str, data: dict[str, Any] | None = None):
         self._log(LogLevel.DEBUG, stage, message, data)
 
-    def info(self, stage: str, message: str, data: dict | None = None):
+    def info(self, stage: str, message: str, data: dict[str, Any] | None = None):
         self._log(LogLevel.INFO, stage, message, data)
 
-    def success(self, stage: str, message: str, data: dict | None = None):
+    def success(self, stage: str, message: str, data: dict[str, Any] | None = None):
         self._log(LogLevel.SUCCESS, stage, message, data)
 
-    def warning(self, stage: str, message: str, data: dict | None = None):
+    def warning(self, stage: str, message: str, data: dict[str, Any] | None = None):
         self.stats["warnings"] += 1
         self._log(LogLevel.WARNING, stage, message, data)
 
-    def error(self, stage: str, message: str, data: dict | None = None):
+    def error(self, stage: str, message: str, data: dict[str, Any] | None = None):
         self.stats["errors"] += 1
         self._log(LogLevel.ERROR, stage, message, data)
 
-    def critical(self, stage: str, message: str, data: dict | None = None):
+    def critical(self, stage: str, message: str, data: dict[str, Any] | None = None):
         self.stats["errors"] += 1
         self._log(LogLevel.CRITICAL, stage, message, data)
 
@@ -276,7 +279,8 @@ class TranslationLogger:
         )
 
         # Mostrar progrés
-        progress = self.stats["completed_chunks"] / self.stats["total_chunks"] * 100
+        total = self.stats["total_chunks"]
+        progress = self.stats["completed_chunks"] / total * 100 if total > 0 else 0
         self.console.print(
             f"    [dim]Progrés: {progress:.0f}% | "
             f"Mitjana qualitat: {avg_quality:.1f}/10 | "
@@ -469,11 +473,12 @@ if __name__ == "__main__":
     logger.start_stage("glossari")
     logger.log_glossary(45)
 
+    import time
+
     for i in range(1, 11):
         logger.start_chunk(i, chunk_size=2500)
 
         # Simular traducció
-        import time
         time.sleep(0.5)
 
         logger.log_translation(i, "Aquesta dissertació filosòfica...")
