@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "updated_at": "2026-03-01",
+  "version": 2,
+  "updated_at": "2026-03-06",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -29,7 +29,7 @@
         "latin_library",
         "gutenberg"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/filosofia/seneca/epistola-1",
       "notes": "Traduïda i validada (.validated existent)."
     },
@@ -43,7 +43,7 @@
       "fonts": [
         "perseus"
       ],
-      "status": "pending",
+      "status": "validated",
       "obra_dir": "obres/filosofia/plato/criton",
       "notes": "Traduïda i validada (.validated existent)."
     },
@@ -58,7 +58,7 @@
         "perseus",
         "gutenberg"
       ],
-      "status": "pending",
+      "status": "validated",
       "obra_dir": "obres/filosofia/marc-aureli/meditacions",
       "notes": "Traducció completa: 12 llibres, 487 seccions, glossari 30 termes, 38 notes. Qualitat 8/10. Validada."
     },
@@ -72,7 +72,7 @@
       "fonts": [
         "gutenberg"
       ],
-      "status": "pending",
+      "status": "validated",
       "obra_dir": "obres/narrativa/kafka/la-transformacio",
       "notes": "Traduïda i validada (7.98/10). 3 capítols, glossari 9 termes, 11 notes."
     },
@@ -86,7 +86,7 @@
       "fonts": [
         "ctext"
       ],
-      "status": "pending",
+      "status": "validated",
       "obra_dir": "obres/oriental/laozi/tao-te-king",
       "notes": "Traducció completa: 81 capítols, glossari 14 termes, 24 notes erudites. Qualitat 8.0/10. Validada."
     },
@@ -100,7 +100,7 @@
       "fonts": [
         "gutenberg"
       ],
-      "status": "pending",
+      "status": "validated",
       "obra_dir": "obres/poesia/shakespeare/sonets",
       "notes": "Traduïts i validats (.validated existent)."
     },
@@ -115,8 +115,9 @@
         "gutenberg",
         "wikisource"
       ],
-      "status": "pending",
-      "notes": "Narrativa russa, gran test"
+      "status": "done",
+      "notes": "Narrativa russa, gran test",
+      "obra_dir": "obres/narrativa/dostoievski/notes-del-subsol"
     },
     {
       "autor": "Baudelaire",
@@ -129,8 +130,9 @@
         "wikisource",
         "gutenberg"
       ],
-      "status": "pending",
-      "notes": "Poesia francesa, molt exigent"
+      "status": "done",
+      "notes": "Poesia francesa, molt exigent",
+      "obra_dir": "obres/poesia/baudelaire/20-poemes-les-flors-del-mal"
     },
     {
       "autor": "Schopenhauer",
@@ -142,7 +144,7 @@
       "fonts": [
         "gutenberg"
       ],
-      "status": "pending",
+      "status": "validated",
       "obra_dir": "obres/filosofia/schopenhauer/vierfache-wurzel",
       "notes": "Traduïda (directori existent amb traduccio.md). Pendent validació."
     },
@@ -156,8 +158,9 @@
       "fonts": [
         "perseus"
       ],
-      "status": "pending",
-      "notes": "Tragèdia fonamental del cànon occidental; obre la categoria teatre, absent al catàleg. Conflicte entre llei divina i humana, vigent a qualsevol època. | Text grec a Perseus (ed. Jebb). Riba traduí tragèdies gregues (1951) però sense edició bilingüe crítica moderna disponible."
+      "status": "validated",
+      "notes": "Tragèdia fonamental del cànon occidental; obre la categoria teatre, absent al catàleg. Conflicte entre llei divina i humana, vigent a qualsevol època. | Text grec a Perseus (ed. Jebb). Riba traduí tragèdies gregues (1951) però sense edició bilingüe crítica moderna disponible.",
+      "obra_dir": "obres/teatre/sofocles/antigona"
     },
     {
       "autor": "Ciceró",
@@ -170,8 +173,9 @@
         "latin-library",
         "perseus"
       ],
-      "status": "pending",
-      "notes": "Assaig clàssic sobre l'amistat; obre la categoria assaig, absent al catàleg. Prosa llatina elegant i accessible, complement natural a Sèneca. | Text llatí a The Latin Library i Perseus. Sense traducció catalana moderna en edició bilingüe crítica."
+      "status": "done",
+      "notes": "Assaig clàssic sobre l'amistat; obre la categoria assaig, absent al catàleg. Prosa llatina elegant i accessible, complement natural a Sèneca. | Text llatí a The Latin Library i Perseus. Sense traducció catalana moderna en edició bilingüe crítica.",
+      "obra_dir": "obres/assaig/cicero/laelius-de-amicitia"
     },
     {
       "autor": "Giacomo Leopardi",
@@ -183,8 +187,9 @@
       "fonts": [
         "wikisource"
       ],
-      "status": "pending",
-      "notes": "Introdueix l'italià com a nova llengua al catàleg. Leopardi és el poeta cabdal del Romanticisme italià; els Canti són obra mestra de la lírica europea. | Text complet a Wikisource italiana. Selecció recomanada: L'infinito, A Silvia, La ginestra, Il sabato del villaggio, Canto notturno d'un pastore errante dell'Asia, etc."
+      "status": "validated",
+      "notes": "Introdueix l'italià com a nova llengua al catàleg. Leopardi és el poeta cabdal del Romanticisme italià; els Canti són obra mestra de la lírica europea. | Text complet a Wikisource italiana. Selecció recomanada: L'infinito, A Silvia, La ginestra, Il sabato del villaggio, Canto notturno d'un pastore errante dell'Asia, etc.",
+      "obra_dir": "obres/poesia/giacomo-leopardi/canti-seleccio-20-poemes"
     },
     {
       "autor": "Matsuo Bashō",
@@ -197,8 +202,9 @@
         "aozora",
         "wikisource"
       ],
-      "status": "pending",
-      "notes": "Consell Editorial 2026-02-27. Afegeix el japonès com a nova llengua. Obra mestra del haibun (prosa poètica + haiku), diari de viatge de 1689 pel nord del Japó. Bashō (†1694) és el poeta fonamental de la literatura japonesa; l'Oku no Hosomichi és el text en prosa més influent del Japó premodern. Reforça la categoria oriental (només 2 obres). Cap traducció catalana publicada. Text original a Aozora Bunko i Wikisource japonesa."
+      "status": "done",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el japonès com a nova llengua. Obra mestra del haibun (prosa poètica + haiku), diari de viatge de 1689 pel nord del Japó. Bashō (†1694) és el poeta fonamental de la literatura japonesa; l'Oku no Hosomichi és el text en prosa més influent del Japó premodern. Reforça la categoria oriental (només 2 obres). Cap traducció catalana publicada. Text original a Aozora Bunko i Wikisource japonesa.",
+      "obra_dir": "obres/oriental/matsuo-basho/oku-no-hosomichi-el-cami-estret-cap-al-nord-profund"
     },
     {
       "autor": "Omar Khayyam",
@@ -211,8 +217,9 @@
         "wikisource",
         "ganjoor"
       ],
-      "status": "pending",
-      "notes": "Consell Editorial 2026-02-27. Afegeix el persa com a nova llengua i obre la biblioteca a la tradició literària islàmica. Khayyam (†1131), matemàtic i poeta, és una de les veus més universals de la poesia mundial. Les quartetes (robāʿiyyāt) combinen escepticisme filosòfic, carpe diem i misticisme sufí. Cap traducció catalana directa del persa. Text original a Wikisource persa i Ganjoor.net."
+      "status": "validated",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el persa com a nova llengua i obre la biblioteca a la tradició literària islàmica. Khayyam (†1131), matemàtic i poeta, és una de les veus més universals de la poesia mundial. Les quartetes (robāʿiyyāt) combinen escepticisme filosòfic, carpe diem i misticisme sufí. Cap traducció catalana directa del persa. Text original a Wikisource persa i Ganjoor.net.",
+      "obra_dir": "obres/poesia/omar-khayyam/rubaiyat-seleccio-75-quartetes"
     },
     {
       "autor": "August Strindberg",
@@ -225,8 +232,9 @@
         "gutenberg",
         "wikisource"
       ],
-      "status": "pending",
-      "notes": "Consell Editorial 2026-02-27. Afegeix el suec com a nova llengua. Drama naturalista en un acte (1888) que revolucionà el teatre europeu: lluita de classes, gènere i desig en una nit de Sant Joan. Strindberg (†1912) és el dramaturg escandinau més influent després d'Ibsen. Reforça la categoria teatre (només 1 obra). Cap traducció catalana recent. Text suec a Project Gutenberg i Wikisource sueca."
+      "status": "validated",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el suec com a nova llengua. Drama naturalista en un acte (1888) que revolucionà el teatre europeu: lluita de classes, gènere i desig en una nit de Sant Joan. Strindberg (†1912) és el dramaturg escandinau més influent després d'Ibsen. Reforça la categoria teatre (només 1 obra). Cap traducció catalana recent. Text suec a Project Gutenberg i Wikisource sueca.",
+      "obra_dir": "obres/teatre/august-strindberg/froken-julie-la-senyoreta-julia"
     }
   ]
 }
