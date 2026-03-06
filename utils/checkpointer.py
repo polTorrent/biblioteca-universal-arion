@@ -6,7 +6,7 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, ValidationError
 
 from utils.logger import get_logger
 
@@ -286,7 +286,7 @@ class Checkpointer:
         # Intentar carregar principal
         try:
             return self.carregar(sessio_id)
-        except (json.JSONDecodeError, KeyError, TypeError) as e:
+        except (json.JSONDecodeError, KeyError, TypeError, ValidationError) as e:
             self.logger.log_warning(
                 "Checkpointer",
                 f"Checkpoint corrupte, intentant backup: {e}"
@@ -313,38 +313,39 @@ class Checkpointer:
         """
         sessions = []
         previous_checkpoint = self.checkpoint
-        for filepath in self.checkpoint_dir.glob("*.checkpoint.json"):
-            sessio_id = filepath.stem.replace(".checkpoint", "")
-            try:
-                checkpoint = self.carregar(sessio_id)
-                if checkpoint:
+        try:
+            for filepath in self.checkpoint_dir.glob("*.checkpoint.json"):
+                sessio_id = filepath.stem.replace(".checkpoint", "")
+                try:
+                    checkpoint = self.carregar(sessio_id)
+                    if checkpoint:
+                        sessions.append({
+                            "sessio_id": sessio_id,
+                            "obra": checkpoint.obra,
+                            "autor": checkpoint.autor,
+                            "fase": checkpoint.fase_actual,
+                            "updated_at": checkpoint.updated_at,
+                            "created_at": checkpoint.created_at,
+                            "chunks_completats": sum(
+                                1 for c in checkpoint.chunks if c.estat == "completat"
+                            ),
+                            "chunks_total": len(checkpoint.chunks),
+                            "chunks_error": sum(
+                                1 for c in checkpoint.chunks if c.estat == "error"
+                            ),
+                            "qualitat_mitjana": self._calcular_qualitat_mitjana(checkpoint),
+                            "total_cost_eur": checkpoint.total_cost_eur,
+                            "total_temps_segons": checkpoint.total_temps_segons,
+                            "errors_count": checkpoint.errors_count,
+                        })
+                except Exception:
                     sessions.append({
                         "sessio_id": sessio_id,
-                        "obra": checkpoint.obra,
-                        "autor": checkpoint.autor,
-                        "fase": checkpoint.fase_actual,
-                        "updated_at": checkpoint.updated_at,
-                        "created_at": checkpoint.created_at,
-                        "chunks_completats": sum(
-                            1 for c in checkpoint.chunks if c.estat == "completat"
-                        ),
-                        "chunks_total": len(checkpoint.chunks),
-                        "chunks_error": sum(
-                            1 for c in checkpoint.chunks if c.estat == "error"
-                        ),
-                        "qualitat_mitjana": self._calcular_qualitat_mitjana(checkpoint),
-                        "total_cost_eur": checkpoint.total_cost_eur,
-                        "total_temps_segons": checkpoint.total_temps_segons,
-                        "errors_count": checkpoint.errors_count,
+                        "error": "Checkpoint corrupte",
+                        "updated_at": datetime.min,
                     })
-            except Exception:
-                sessions.append({
-                    "sessio_id": sessio_id,
-                    "error": "Checkpoint corrupte",
-                    "updated_at": datetime.min,
-                })
-
-        self.checkpoint = previous_checkpoint
+        finally:
+            self.checkpoint = previous_checkpoint
         return sorted(sessions, key=lambda x: x.get("updated_at", datetime.min), reverse=True)
 
     def _calcular_qualitat_mitjana(self, checkpoint: PipelineCheckpoint) -> float | None:
@@ -486,7 +487,6 @@ class Checkpointer:
                 timestamp_fi=datetime.now(),
             )
             self.checkpoint.chunk_actual = int(chunk_id)
-            self._save()
 
     def chunk_error(self, chunk_id: str, error_message: str) -> None:
         """Marca un chunk amb error.
@@ -503,7 +503,6 @@ class Checkpointer:
                 timestamp_fi=datetime.now(),
             )
             self.checkpoint.errors_count += 1
-            self._save()
 
     def obtenir_chunks_pendents(self) -> list[ChunkCheckpoint]:
         """Retorna chunks no completats.
@@ -574,11 +573,11 @@ class Checkpointer:
     ) -> None:
         """Guarda els paths dels fitxers publicats."""
         if self.checkpoint:
-            if epub:
+            if epub is not None:
                 self.checkpoint.epub_path = epub
-            if pdf:
+            if pdf is not None:
                 self.checkpoint.pdf_path = pdf
-            if html:
+            if html is not None:
                 self.checkpoint.html_path = html
             self._save()
 
