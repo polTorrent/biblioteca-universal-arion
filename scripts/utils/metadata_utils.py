@@ -45,7 +45,13 @@ def crear_metadata_yml(
             return
 
         # Si té dades però sense 'obra:', migrar al nou format
-        if "titol" in existing:
+        if "titol" not in existing:
+            log.warning(
+                "metadata.yml sense clau 'obra' ni 'titol' a %s, es recrearà",
+                metadata_path,
+            )
+            # Fall through per recrear amb les dades proporcionades
+        else:
             obra_data: dict[str, object] = {
                 "titol": existing.get("titol", titol),
                 "autor": existing.get("autor", autor),
