@@ -1,13 +1,14 @@
 import re
-from typing import List
-from .base import DetectorPlugin, CalcDetectat
+
+from .base import CalcDetectat, DetectorPlugin
+
 
 class DetectorXines(DetectorPlugin):
     @property
     def llengua(self) -> str:
         return "xinès"
-        
-    def detectar(self, text: str) -> List[CalcDetectat]:
+
+    def detectar(self, text: str) -> list[CalcDetectat]:
         calcs = []
         classificadors = re.finditer(r'\b(un cap de|una boca de|un ull de|una mà de|un tros de persona)\b', text, re.IGNORECASE)
         for match in classificadors:
