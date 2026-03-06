@@ -5,6 +5,7 @@ Del japonès original (Aozora Bunko) al català.
 """
 
 import os
+import re
 import sys
 
 # ═══════════════════════════════════════════════════════════════════════════════
@@ -16,7 +17,6 @@ os.environ["CLAUDECODE"] = "1"
 # Afegir el directori arrel al path
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-import re
 from pathlib import Path
 
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
@@ -60,12 +60,12 @@ def main():
     original_path = obra_dir / "original.md"
     traduccio_path = obra_dir / "traduccio.md"
 
-    # Crear/verificar metadata.yml amb format correcte
-    crear_metadata_yml(obra_dir, TITOL, AUTOR, LLENGUA_ORIGEN, GENERE)
-
     if not original_path.exists():
         print(f"❌ Error: No existeix {original_path}")
         sys.exit(1)
+
+    # Crear/verificar metadata.yml amb format correcte
+    crear_metadata_yml(obra_dir, TITOL, AUTOR, LLENGUA_ORIGEN, GENERE)
 
     print("═" * 60)
     print(f"  TRADUCCIÓ: {TITOL}")
@@ -119,13 +119,17 @@ def main():
         print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
-    )
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except Exception as e:
+        print(f"❌ Error durant la traducció: {e}")
+        sys.exit(1)
 
     # Guardar traducció
     traduccio_final = f"""# {TITOL}
