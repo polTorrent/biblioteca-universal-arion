@@ -1,11 +1,15 @@
-import re, subprocess, sys
+import re
+import subprocess
+import sys
 
-def fetch_raw(title):
+
+def fetch_raw(title: str) -> str:
     url = "https://no.wikisource.org/w/index.php?title=" + title + "&action=raw"
-    r = subprocess.run(["curl", "-s", url], capture_output=True, text=True)
+    r = subprocess.run(["curl", "-s", url], capture_output=True, text=True, check=True)
     return r.stdout
 
-def clean_wikitext(text):
+
+def clean_wikitext(text: str) -> str:
     text = re.sub(r'\{\{topp[^}]*\}\}', '', text)
     text = re.sub(r'\{\{bunn[^}]*\}\}', '', text)
     text = re.sub(r'\{\{prosa\}\}', '', text)
@@ -17,32 +21,39 @@ def clean_wikitext(text):
     text = re.sub(r'\n{3,}', '\n\n', text)
     return text.strip()
 
-parts = [
+
+PARTS = [
     ("Et_Dukkehjem/F%C3%B8rste_akt", "Eerste akt"),
     ("Et_Dukkehjem/Annen_akt", "Annen akt"),
     ("Et_Dukkehjem/Tredje_akt", "Tredje akt"),
 ]
 
-output = "# Et dukkehjem\n\n## Henrik Ibsen (1879)\n\n---\n\n"
-output += "## Personerne\n\n"
-output += "- **Advokat Helmer**\n"
-output += "- **Nora**, hans hustru\n"
-output += "- **Doktor Rank**\n"
-output += "- **Fru Linde**\n"
-output += "- **Sagforer Krogstad**\n"
-output += "- **Helmers tre sma born**\n"
-output += "- **Anne-Marie**, barnepige hos Helmers\n"
-output += "- **Helene**, stuepige hos Helmers\n"
-output += "- **Et bybud**\n\n"
-output += "Handlingen foregar i Helmers bolig.\n\n---\n\n"
 
-for url_part, title in parts:
-    raw = fetch_raw(url_part)
-    cleaned = clean_wikitext(raw)
-    output += "## " + title + "\n\n" + cleaned + "\n\n---\n\n"
+def main() -> None:
+    output = "# Et dukkehjem\n\n## Henrik Ibsen (1879)\n\n---\n\n"
+    output += "## Personerne\n\n"
+    output += "- **Advokat Helmer**\n"
+    output += "- **Nora**, hans hustru\n"
+    output += "- **Doktor Rank**\n"
+    output += "- **Fru Linde**\n"
+    output += "- **Sagforer Krogstad**\n"
+    output += "- **Helmers tre sma born**\n"
+    output += "- **Anne-Marie**, barnepige hos Helmers\n"
+    output += "- **Helene**, stuepige hos Helmers\n"
+    output += "- **Et bybud**\n\n"
+    output += "Handlingen foregar i Helmers bolig.\n\n---\n\n"
 
-outpath = sys.argv[1] if len(sys.argv) > 1 else "original.md"
-with open(outpath, "w") as f:
-    f.write(output)
+    for url_part, title in PARTS:
+        raw = fetch_raw(url_part)
+        cleaned = clean_wikitext(raw)
+        output += "## " + title + "\n\n" + cleaned + "\n\n---\n\n"
 
-print("Written " + str(len(output)) + " chars to " + outpath)
+    outpath = sys.argv[1] if len(sys.argv) > 1 else "original.md"
+    with open(outpath, "w") as f:
+        f.write(output)
+
+    print("Written " + str(len(output)) + " chars to " + outpath)
+
+
+if __name__ == "__main__":
+    main()
