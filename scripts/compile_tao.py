@@ -46,11 +46,17 @@ def compilar() -> None:
     for nom in PARTS:
         textos.append((BASE / nom).read_text(encoding="utf-8"))
 
-    # Afegir capçalera del De Jing a la segona part
-    textos[1] = textos[1].replace(
-        "\n---\n",
-        "\n---\n\n**De Jing (德經) — Llibre de la Virtut**[^12]\n",
-    )
+    # Afegir capçalera del De Jing a la segona part (només el primer separador)
+    marcador = "\n---\n"
+    if marcador not in textos[1]:
+        print("Avís: no s'ha trobat el separador '---' a la segona part; "
+              "la capçalera del De Jing no s'inserirà.", file=sys.stderr)
+    else:
+        textos[1] = textos[1].replace(
+            marcador,
+            "\n---\n\n**De Jing (德經) — Llibre de la Virtut**[^12]\n",
+            1,
+        )
 
     sortida = BASE / "traduccio.md"
     sortida.write_text(
