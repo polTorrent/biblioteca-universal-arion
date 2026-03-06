@@ -71,14 +71,19 @@ def main() -> int:
                 for i, nota in enumerate(notes, 1):
                     if isinstance(nota, dict):
                         # L'agent retorna: numero, tipus, text_referit, nota
-                        tipus = nota.get("tipus", "G")
-                        text_referit = nota.get("text_referit", "")
-                        contingut = nota.get("nota", nota.get("contingut", nota.get("explicacio", "")))
+                        # Nota: `or ""` protegeix contra valors null explícits al JSON
+                        tipus = nota.get("tipus") or "G"
+                        text_referit = nota.get("text_referit") or ""
+                        contingut = (
+                            nota.get("nota")
+                            or nota.get("contingut")
+                            or nota.get("explicacio")
+                            or ""
+                        )
 
                         # Usar text_referit com a títol si no hi ha títol explícit
-                        titol = nota.get(
-                            "titol",
-                            (text_referit[:50] + "...") if len(text_referit) > 50 else text_referit,
+                        titol = nota.get("titol") or (
+                            (text_referit[:50] + "...") if len(text_referit) > 50 else text_referit
                         )
 
                         notes_content += f"## [{i}] [{tipus}] {titol}\n\n"
