@@ -55,29 +55,43 @@ cmd_add() {
     esac
 
     local task_file="$TASKS_DIR/pending/${task_id}.json"
-    
-    python3 << PYEOF
-import json
+
+    # Escapar instrucció i params de forma segura via json.dumps
+    local escaped_instruction
+    escaped_instruction=$(python3 -c "import json,sys; print(json.dumps(sys.stdin.read().strip()))" <<< "$instruction")
+    local escaped_params
+    escaped_params=$(python3 -c "
+import json, sys
+raw = sys.stdin.read().strip()
+try:
+    parsed = json.loads(raw)
+    print(json.dumps(parsed))
+except Exception:
+    print('{}')
+" <<< "$params")
+
+    python3 -c "
+import json, sys
 task = {
-    "id": "$task_id",
-    "type": "$type",
-    "priority": $priority,
-    "created_at": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
-    "status": "pending",
-    "params": $params,
-    "instruction": """$instruction""",
-    "max_duration_minutes": $max_duration,
-    "retry_count": 0,
-    "max_retries": 2,
-    "depends_on": None,
-    "result": None,
-    "error": None,
-    "started_at": None,
-    "completed_at": None
+    'id': '$task_id',
+    'type': '$type',
+    'priority': $priority,
+    'created_at': '$(date -u +%Y-%m-%dT%H:%M:%SZ)',
+    'status': 'pending',
+    'params': json.loads(sys.argv[1]),
+    'instruction': json.loads(sys.argv[2]),
+    'max_duration_minutes': $max_duration,
+    'retry_count': 0,
+    'max_retries': 2,
+    'depends_on': None,
+    'result': None,
+    'error': None,
+    'started_at': None,
+    'completed_at': None
 }
-with open("$task_file", 'w') as f:
+with open('$task_file', 'w') as f:
     json.dump(task, f, indent=2, ensure_ascii=False)
-PYEOF
+" "$escaped_params" "$escaped_instruction"
 
     echo -e "${GREEN}✅ Tasca creada: $task_id${NC}"
     echo -e "   Tipus: $type | Prioritat: $priority | Max: ${max_duration}min"

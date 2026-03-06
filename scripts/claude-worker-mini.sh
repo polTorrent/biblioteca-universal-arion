@@ -324,7 +324,22 @@ while true; do
     TASK_BASENAME=$(basename "$TASK")
     log "═══════════════════════════════════════════════════"
     log "▶ Executant: $TASK_ID (tipus=$TASK_TYPE, intent $((RETRIES + 1))/$MAX_RETRIES)"
-    mv "$TASK" "$TASKS_DIR/running/"
+
+    # Moviment atòmic: verificar que el fitxer encara existeix abans de moure
+    # (evita race condition amb heartbeat que pot moure fitxers simultàniament)
+    if [ ! -f "$TASK" ]; then
+        log "⚠️ Tasca ja no existeix a pending/ (moguda per heartbeat?). Saltant."
+        continue
+    fi
+    if ! mv -n "$TASK" "$TASKS_DIR/running/$TASK_BASENAME" 2>/dev/null; then
+        log "⚠️ No s'ha pogut moure la tasca a running/ (race condition). Saltant."
+        continue
+    fi
+    # Verificar que el mv ha funcionat (mv -n no sobreescriu però pot fallar silenciosament)
+    if [ ! -f "$TASKS_DIR/running/$TASK_BASENAME" ]; then
+        log "⚠️ Fitxer no trobat a running/ després de mv. Saltant."
+        continue
+    fi
     START_TIME=$(date +%s)
     
     # Snapshot de l'estat git ABANS d'executar
