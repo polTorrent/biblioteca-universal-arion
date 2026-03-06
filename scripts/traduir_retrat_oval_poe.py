@@ -55,7 +55,7 @@ CONFIG = {
 # ═══════════════════════════════════════════════════════════════════════════════
 
 
-def main():
+def main() -> "ResultatPipelineV2 | None":
     """Executa la traducció."""
 
     # Rutes
@@ -98,12 +98,16 @@ def main():
         # Capçalera ja netejada: contingut --- peu
         text_narratiu = parts[0].strip()
     else:
-        text_narratiu = text_original
+        text_narratiu = text_original.strip()
 
     # Treure peu de pàgina si existeix
     for footer in ['*Text de domini públic', '*Traducció de domini públic']:
         if footer in text_narratiu:
             text_narratiu = text_narratiu.split(footer)[0].strip()
+
+    if not text_narratiu:
+        print("❌ Error: El text original és buit després de la neteja")
+        sys.exit(1)
 
     print(f"Text original: {len(text_narratiu)} caràcters")
     print()
@@ -133,13 +137,21 @@ def main():
         print(f"(Dashboard a http://localhost:{CONFIG['dashboard_port']})")
     print()
 
-    resultat = pipeline.traduir(
-        text=text_narratiu,
-        llengua_origen=LLENGUA_ORIGEN,
-        autor=AUTOR,
-        obra=TITOL,
-        genere=GENERE,
-    )
+    try:
+        resultat = pipeline.traduir(
+            text=text_narratiu,
+            llengua_origen=LLENGUA_ORIGEN,
+            autor=AUTOR,
+            obra=TITOL,
+            genere=GENERE,
+        )
+    except Exception as e:
+        print(f"❌ Error durant la traducció: {e}")
+        sys.exit(1)
+
+    if not resultat.traduccio_final:
+        print("❌ Error: El pipeline no ha generat cap traducció")
+        sys.exit(1)
 
     # Guardar traducció
     traduccio_final = f"""# {TITOL}
