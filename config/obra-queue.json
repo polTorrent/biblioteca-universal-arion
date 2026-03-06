@@ -235,6 +235,50 @@
       "status": "validated",
       "notes": "Consell Editorial 2026-02-27. Afegeix el suec com a nova llengua. Drama naturalista en un acte (1888) que revolucionà el teatre europeu: lluita de classes, gènere i desig en una nit de Sant Joan. Strindberg (†1912) és el dramaturg escandinau més influent després d'Ibsen. Reforça la categoria teatre (només 1 obra). Cap traducció catalana recent. Text suec a Project Gutenberg i Wikisource sueca.",
       "obra_dir": "obres/teatre/august-strindberg/froken-julie-la-senyoreta-julia"
+    },
+    {
+      "autor": "Henrik Ibsen",
+      "titol": "Et dukkehjem (Casa de nines)",
+      "llengua": "noruec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 13000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/henrik-ibsen/et-dukkehjem-casa-de-nines",
+      "notes": "Consell Editorial 2026-03-06. Afegeix el noruec com a nova llengua. Drama en tres actes (1879) que revolucionà el teatre europeu: Nora Helmer trenca amb el matrimoni burgès. Ibsen (†1906) és el pare del teatre modern. Reforça la categoria teatre (3 obres). Cap traducció catalana recent en edició bilingüe. Text noruec a Project Gutenberg i Wikisource noruega."
+    },
+    {
+      "autor": "Fernando Pessoa",
+      "titol": "O Guardador de Rebanhos (El guardador de ramats)",
+      "llengua": "portuguès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 6000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats",
+      "notes": "Consell Editorial 2026-03-06. Afegeix el portuguès com a nova llengua. 49 poemes escrits sota l'heterònim Alberto Caeiro (1914), mestre dels altres heterònims. Poesia anti-metafísica del sensacionisme: mirar el món sense pensar-lo. Pessoa (†1935) és el poeta fonamental del modernisme europeu. Cap traducció catalana directa del portuguès. Text a Wikisource portuguesa."
+    },
+    {
+      "autor": "Ibn Tufayl",
+      "titol": "Hayy ibn Yaqzan (El filòsof autodidacte)",
+      "llengua": "àrab",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 14000,
+      "fonts": [
+        "wikisource",
+        "archive.org"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte",
+      "notes": "Consell Editorial 2026-03-06. Afegeix l'àrab com a nova llengua i obre la biblioteca a la tradició filosòfica islàmica. Novel·la filosòfica (c. 1169) sobre un nen criat sol en una illa que arriba al coneixement per pura raó. Ibn Tufayl (†1185), metge i filòsof andalusí de Guadix. Influència directa sobre Defoe (Robinson Crusoe), Locke i la Il·lustració. Cap traducció catalana. Text àrab a Wikisource i Archive.org."
     }
   ]
 }
