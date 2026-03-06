@@ -6,9 +6,9 @@ S'integra amb el pipeline de traducció per millorar la qualitat final.
 
 import logging
 import re
+from enum import Enum
 from typing import Any
 
-from enum import Enum
 from pydantic import BaseModel, Field
 
 logger = logging.getLogger(__name__)
@@ -157,6 +157,12 @@ class CorrectorLinguistic:
             llengua: Codi de llengua ('ca', 'ca-ES', 'ca-ES-valencia')
         """
         if self._initialized:
+            if self.llengua != llengua:
+                logger.warning(
+                    "CorrectorLinguistic ja inicialitzat amb '%s', "
+                    "s'ignora '%s' (singleton)",
+                    self.llengua, llengua,
+                )
             return
 
         self.llengua = llengua
@@ -192,6 +198,12 @@ class CorrectorLinguistic:
         Returns:
             ResultatCorreccio amb errors trobats i text corregit
         """
+        if not text or not text.strip():
+            return ResultatCorreccio(
+                text_original=text,
+                text_corregit=text,
+            )
+
         errors: list[ErrorLinguistic] = []
         text_corregit = text
 
@@ -250,11 +262,10 @@ class CorrectorLinguistic:
     def _detectar_barbarismes(self, text: str) -> list[ErrorLinguistic]:
         """Detecta barbarismes no coberts per LanguageTool."""
         errors = []
-        text_lower = text.lower()
 
         for barbarisme, alternatiu in self.BARBARISMES_EXTRA.items():
             pattern = rf'\b{re.escape(barbarisme)}\b'
-            for match in re.finditer(pattern, text_lower):
+            for match in re.finditer(pattern, text, re.IGNORECASE):
                 errors.append(ErrorLinguistic(
                     categoria=CategoriaError.BARBARISME,
                     missatge=f"Possible barbarisme: '{barbarisme}'",
@@ -277,7 +288,7 @@ class CorrectorLinguistic:
         )
 
     @staticmethod
-    def _calcular_severitat(match: Any, categoria: CategoriaError) -> float:
+    def _calcular_severitat(_match: Any, categoria: CategoriaError) -> float:
         """Calcula severitat d'un error."""
         severitats_base = {
             CategoriaError.ORTOGRAFIA: 7.0,
@@ -363,8 +374,8 @@ class CorrectorLinguistic:
         if cls._tool:
             try:
                 cls._tool.close()
-            except Exception:
-                logger.warning("Error tancant LanguageTool")
+            except Exception as e:
+                logger.warning("Error tancant LanguageTool: %s", e)
             finally:
                 cls._tool = None
                 cls._instance = None
