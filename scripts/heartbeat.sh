@@ -146,19 +146,27 @@ check_diem() {
 
 # ── Comprovació Worker ────────────────────────────────────────────────────────
 check_worker() {
-    if ! pgrep -f "claude-worker-mini" > /dev/null 2>&1; then
-        log "⚠️ Worker NO actiu. Reiniciant..."
-        cd "$PROJECT"
-        rm -f "$TASKS_DIR/worker.lock"
-        for f in "$TASKS_DIR/running/"*.json; do
-            [ -f "$f" ] && mv "$f" "$TASKS_DIR/pending/"
-        done
-        tmux kill-session -t worker 2>/dev/null
-        tmux new-session -d -s worker "cd $PROJECT && bash scripts/claude-worker-mini.sh"
-        log "✅ Worker reiniciat"
-    else
+    if pgrep -f "claude-worker-mini" > /dev/null 2>&1; then
         log "✅ Worker actiu"
+        return
     fi
+    log "⚠️ Worker NO actiu. Reiniciant (lleuger)..."
+    # Netejar lockfile orfe
+    if [ -f "$TASKS_DIR/worker.lock" ]; then
+        local old_pid
+        old_pid=$(cat "$TASKS_DIR/worker.lock" 2>/dev/null)
+        if ! kill -0 "$old_pid" 2>/dev/null; then
+            rm -f "$TASKS_DIR/worker.lock"
+        fi
+    fi
+    # Retornar tasques running a pending
+    for f in "$TASKS_DIR/running/"*.json; do
+        [ -f "$f" ] && mv "$f" "$TASKS_DIR/pending/"
+    done
+    # Reiniciar amb nohup (independent de tmux)
+    nohup bash "$PROJECT/scripts/claude-worker-mini.sh" >> "$LOG" 2>&1 &
+    disown
+    log "✅ Worker reiniciat (PID $!)"
 }
 
 # =============================================================================
@@ -393,14 +401,26 @@ check_needs_fix() {
     find "$PROJECT/obres" -name ".fixing" 2>/dev/null | while read -r fixing_file; do
         obra_dir=$(dirname "$fixing_file")
         obra_name=$(basename "$obra_dir")
-        
+
         # Si ja no hi ha tasca pending/running → el fix s'ha completat
         if ! ls "$TASKS_DIR/pending/"*"$obra_name"* "$TASKS_DIR/running/"*"$obra_name"* 2>/dev/null | grep -q .; then
-            # Comprovar que s'ha completat (no fallit)
-            if ls "$TASKS_DIR/done/"*"$obra_name"* 2>/dev/null | grep -q .; then
+            # Comprovar que hi ha una tasca a done/ MES NOVA que el .fixing
+            # (evita confondre tasques antigues amb el fix actual)
+            local fixing_time
+            fixing_time=$(stat -c %Y "$fixing_file" 2>/dev/null || echo 0)
+            local found_newer=false
+            for done_file in "$TASKS_DIR/done/"*"$obra_name"*.json; do
+                [ -f "$done_file" ] || continue
+                local done_time
+                done_time=$(stat -c %Y "$done_file" 2>/dev/null || echo 0)
+                if [ "$done_time" -gt "$fixing_time" ]; then
+                    found_newer=true
+                    break
+                fi
+            done
+            if [ "$found_newer" = true ]; then
                 log "   ✅ $obra_name: fix completat, eliminant .fixing per re-supervisar"
                 rm -f "$fixing_file"
-                # El proper heartbeat farà check_supervision i re-avaluarà
             fi
         fi
     done
@@ -493,14 +513,23 @@ retries = d.get('retries', d.get('retry_count', 0))
 instruction = d.get('instruction', '')
 task_type = d.get('type', 'unknown')
 regen_count = d.get('regen_count', 0)
-print(f'{retries}|{len(instruction)}|{task_type}|{regen_count}|{instruction[:200]}')
+total_failures = d.get('total_failures', retries + regen_count * 3)
+print(f'{retries}|{len(instruction)}|{task_type}|{regen_count}|{total_failures}|{instruction[:200]}')
 " 2>/dev/null)
 
-        local retries inst_len task_type regen_count inst_preview
-        IFS='|' read -r retries inst_len task_type regen_count inst_preview <<< "$task_info"
+        local retries inst_len task_type regen_count total_failures inst_preview
+        IFS='|' read -r retries inst_len task_type regen_count total_failures inst_preview <<< "$task_info"
         retries=${retries:-0}
         inst_len=${inst_len:-0}
         regen_count=${regen_count:-0}
+        total_failures=${total_failures:-0}
+
+        # Si el total d'intents acumulats (regens * retries) >= 9 → abandonar definitivament
+        if [ "$total_failures" -ge 9 ]; then
+            mv "$failed" "$TASKS_DIR/failed_permanent/"
+            log "   ⛔ Abandonada ($total_failures intents totals): $(basename "$failed")"
+            continue
+        fi
 
         # Si ja s'ha reintentat 3+ vegades amb el MATEIX format → abandonar
         if [ "$regen_count" -ge 3 ]; then
@@ -551,6 +580,7 @@ if obra_path:
 
 d['instruction'] = new_instruction
 d['type'] = task_type
+d['total_failures'] = d.get('total_failures', d.get('retries', 0) + d.get('regen_count', 0) * 3) + d.get('retries', 0)
 d['retries'] = 0
 d['retry_count'] = 0
 d['recovered'] = True
@@ -568,6 +598,7 @@ with open('$failed', 'w') as fh:
 import json
 with open('$failed') as fh:
     d = json.load(fh)
+d['total_failures'] = d.get('total_failures', d.get('retries', 0) + d.get('regen_count', 0) * 3) + d.get('retries', 0)
 d['retries'] = 0
 d['retry_count'] = 0
 d['recovered'] = True
@@ -764,7 +795,7 @@ log "💓 HEARTBEAT v5 iniciat (amb supervisió + brain)"
 [ "$BRAIN_LOADED" = true ] && log "🧠 System Brain carregat" || log "⚠️ System Brain NO disponible"
 
 check_diem || exit 0
-# check_worker  # DESACTIVAT — interfereix amb traduccions llargues
+check_worker  # Reactivat: comprovació lleugera amb pgrep + nohup
 
 PENDING=$(count_pending)
 RUNNING=$(count_running)

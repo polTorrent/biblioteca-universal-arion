@@ -402,13 +402,16 @@ PYEOF
         IFS='|' read -r autor titol llengua categoria obra_path < /tmp/brain_top_pick.tmp
         rm -f /tmp/brain_top_pick.tmp
 
+        local dedup_key
+        dedup_key=$(echo "$obra_path" | tr '/' '_' | tr -d '.')
+
         if [ -f "$PROJECT/$obra_path/original.md" ]; then
             # Ja té original → traduir directament
-            brain_add_task "translate" "${slug_autor}_${slug_titol}" \
+            brain_add_task "translate" "$dedup_key" \
                 "cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $obra_path/"
         else
             # No té original → primer obtenir el text
-            brain_add_task "fetch" "${slug_autor}_${slug_titol}" \
+            brain_add_task "fetch" "$dedup_key" \
                 "cd ~/biblioteca-universal-arion && mkdir -p $obra_path && python3 scripts/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$llengua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
         fi
     fi
@@ -808,10 +811,17 @@ run_daily() {
 
     _init_files
 
-    # Totes les funcions diàries poden crear tasques a ~/.openclaw/workspace/tasks/
-    # Parem el bot, executem, i reiniciem.
-    _brain_stop_openclaw
-    trap '_brain_start_openclaw' EXIT
+    # Si estem sent executats via source (des del heartbeat), NO tocar traps ni openclaw:
+    # el heartbeat ja gestiona el seu propi cicle stop/start i trap EXIT.
+    local sourced=false
+    if [ "${BASH_SOURCE[0]}" != "$0" ]; then
+        sourced=true
+    fi
+
+    if [ "$sourced" = false ]; then
+        _brain_stop_openclaw
+        trap '_brain_start_openclaw' EXIT
+    fi
 
     propose_translations
     check_web_health
@@ -821,8 +831,10 @@ run_daily() {
 
     date +%s > "$LAST_RUN_FILE"
 
-    _brain_start_openclaw
-    trap - EXIT
+    if [ "$sourced" = false ]; then
+        _brain_start_openclaw
+        trap - EXIT
+    fi
 
     brain_log "🧠 SYSTEM BRAIN — Execució diària completada"
     brain_log "═══════════════════════════════════════════════════"
