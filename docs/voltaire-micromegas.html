@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Micromegas - Voltaire">
+    <meta property="og:description" content="None">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://editorial-classica.cat/voltaire-micromegas.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Micromegas - Voltaire | Editorial Clàssica</title>
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Biblioteca Arion — Noves traduccions" href="feed.xml">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<!-- Estils per índex, navegació i favorits -->
+<link rel="stylesheet" href="css/obra.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Micromegas",
+    "author": {
+        "@type": "Person",
+        "name": "Voltaire"
+    },
+    "translator": {
+        "@type": "Organization",
+        "name": "Editorial Clàssica"
+    },
+    "inLanguage": "ca",
+    "workTranslation": {
+        "@type": "Book",
+        "name": "None",
+        "author": {
+            "@type": "Person",
+            "name": "None"
+        },
+        "inLanguage": "grec"
+    },
+    "datePublished": "2026"
+}
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
+<article class="page-content">
+    <div class="container">
+        <!-- Capçalera de l'obra amb portada -->
+        <header class="work-header">
+            <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                
+
+                <div class="work-info" style="flex: 1; min-width: 300px;">
+                    <h1 class="work-title">Micromegas</h1>
+                    
+
+                    <div class="work-meta-grid">
+                        <div class="work-meta-item">
+                            <strong>Autor</strong>
+                            
+                            <a href="autor-voltaire.html" class="author-link">Voltaire</a>
+                            
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Traducció</strong>
+                            Editorial Clàssica
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Llengua original</strong>
+                            Grec
+                        </div>
+
+                        
+
+                    </div>
+
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Qualitat</strong>
+                                7.0/10
+                            </div>
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-03-07
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls de vista -->
+        <div class="text-container" data-mode="bilingue">
+            <div class="view-controls">
+                <!-- Navegació capítols esquerra -->
+                <button class="chapter-nav-top-btn" id="prev-chapter-top" title="Capítol anterior" disabled>←</button>
+
+                <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
+                    <span class="toc-icon">☰</span> Índex
+                </button>
+                <span class="view-separator">|</span>
+                <button class="view-btn" data-mode="original">Original</button>
+                <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
+                <button class="view-btn" data-mode="traduccio">Traducció</button>
+
+                <!-- Navegació capítols dreta -->
+                <button class="chapter-nav-top-btn" id="next-chapter-top" title="Capítol següent" disabled>→</button>
+            </div>
+
+            <!-- Índex de capítols (amagat per defecte) -->
+            <nav class="chapter-toc" id="chapter-toc" aria-label="Índex de capítols">
+                <div class="toc-header">
+                    <h3>Índex de capítols</h3>
+                    <button class="toc-close" id="toc-close" aria-label="Tancar índex">&times;</button>
+                </div>
+                <ol class="toc-list" id="toc-list">
+                    <!-- Omplert dinàmicament per JS -->
+                </ol>
+            </nav>
+
+            <!-- Grid bilingüe -->
+            <div class="bilingue-grid">
+                <!-- Columna original -->
+                <section class="original-column">
+                    <div class="column-header">Text original (grec)</div>
+                    
+                <div class="section" id="orig-1" data-parallel="trad-1">
+                    <p><strong>Autor:</strong> Voltaire
+<strong>Font:</strong> <a href="https://fr.wikisource.org/wiki/Microm%C3%A9gas">Wikisource</a>
+<strong>Llengua:</strong> francès
+<strong>Edició:</strong> Œuvres complètes de Voltaire, Garnier, 1877, tome 21</p>
+                </div>
+                
+
+                <div class="section" id="orig-2" data-parallel="trad-2">
+                    <h2>CHAPITRE I.</h2>
+<p>VOYAGE D&rsquo;UN HABITANT DU MONDE DE L&rsquo;ÉTOILE SIRIUS DANS LA PLANÈTE DE SATURNE.</p>
+<p>Dans une de ces planètes qui tournent autour de l&rsquo;étoile nommée Sirius, il y avait un jeune homme de beaucoup d&rsquo;esprit, que j&rsquo;ai eu l&rsquo;honneur de connaître dans le dernier voyage qu&rsquo;il fit sur notre petite fourmilière ; il s&rsquo;appelait Micromégas<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>, nom qui convient fort à tous les grands. Il avait huit lieues de haut : j&rsquo;entends, par huit lieues, vingt-quatre mille pas géométriques de cinq pieds chacun.</p>
+<p>Quelques géomètres<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>, gens toujours utiles au public, prendront sur-le-champ la plume, et trouveront que, puisque M. Micromégas, habitant du pays de Sirius, a de la tête aux pieds vingt-quatre mille pas, qui font cent vingt mille pieds de roi, et que nous autres, citoyens de la terre, nous n&rsquo;avons guère que cinq pieds, et que notre globe a neuf mille lieues de tour ; ils trouveront, dis-je, qu&rsquo;il faut absolument que le globe qui l&rsquo;a produit ait au juste vingt-un millions six cent mille fois plus de circonférence que notre petite terre. Rien n&rsquo;est plus simple et plus ordinaire dans la nature. Les États de quelques souverains d&rsquo;Allemagne ou d&rsquo;Italie, dont on peut faire le tour en une demi-heure, comparés à l&rsquo;empire de Turquie, de Moscovie ou de la Chine, ne sont qu&rsquo;une faible image des prodigieuses différences que la nature a mises dans tous les êtres.</p>
+<p>La taille de Son Excellence étant de la hauteur que j&rsquo;ai dite, tous nos sculpteurs et tous nos peintres conviendront sans peine que sa ceinture peut avoir cinquante mille pieds de roi de tour : ce qui fait une très-jolie proportion<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup>. Son nez étant le tiers de son beau visage, et son beau visage étant la septième partie de la hauteur de son beau corps, il faut avouer que le nez du Sirien a six mille trois cent trente-trois pieds de roi plus une fraction ; ce qui était à démontrer.</p>
+<p>Quant à son esprit, c&rsquo;est un des plus cultivés que nous ayons ; il sait beaucoup de choses ; il en a inventé quelques-unes ; il n&rsquo;avait pas encore deux cent cinquante ans ; et il étudiait, selon la coutume, au collège le plus célèbre<sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> de sa planète, lorsqu&rsquo;il devina, par la force de son esprit, plus de cinquante propositions d&rsquo;Euclide. C&rsquo;est dix-huit de plus que Blaise Pascal, lequel, après en avoir deviné trente-deux en se jouant, à ce que dit sa sœur, devint depuis un géomètre assez médiocre<sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup>, et un fort mauvais métaphysicien. Vers les quatre cent cinquante ans, au sortir de l&rsquo;enfance, il disséqua beaucoup de ces petits insectes qui n&rsquo;ont pas cent pieds de diamètre, et qui se dérobent aux microscopes ordinaires ; il en composa un livre fort curieux, mais qui lui fit quelques affaires. Le muphti de son pays, grand vétillard, et fort ignorant, trouva dans son livre des propositions suspectes, malsonnantes, téméraires<sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup>, hérétiques, sentant l&rsquo;hérésie, et le poursuivit vivement : il s&rsquo;agissait de savoir si la forme substantielle des puces de Sirius était de même nature que celle des colimaçons. Micromégas se défendit avec esprit ; il mit les femmes de son côté ; le procès dura deux cent vingt ans. Enfin le muphti fit condamner le livre par des jurisconsultes qui ne l&rsquo;avaient pas lu, et l&rsquo;auteur eut ordre de ne paraître à la cour de huit cents années<sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup>.</p>
+<p>Il ne fut que médiocrement affligé d&rsquo;être banni d&rsquo;une cour qui n&rsquo;était remplie que de tracasseries et de petitesses. Il fit une chanson fort plaisante contre le muphti, dont celui-ci ne s&rsquo;embarrassa guère ; et il se mit à voyager de planète en planète, pour achever de se former l&rsquo;esprit et le cœur<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup>, comme l&rsquo;on dit. Ceux qui ne voyagent qu&rsquo;en chaise de poste ou en berline seront sans doute étonnés des équipages de là-haut : car nous autres, sur notre petit tas de boue, nous ne concevons rien au-delà de nos usages. Notre voyageur connaissait merveilleusement les lois de la gravitation, et toutes les forces attractives et répulsives. Il s&rsquo;en servait si à propos que, tantôt à l&rsquo;aide d&rsquo;un rayon du soleil, tantôt par la commodité d&rsquo;une comète, il allait de globe en globe, lui et les siens, comme un oiseau voltige de branche en branche. Il parcourut la voie lactée en peu de temps, et je suis obligé d&rsquo;avouer qu&rsquo;il ne vit jamais à travers les étoiles dont elle est semée ce beau ciel empyrée que l&rsquo;illustre vicaire Derham<sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> se vante d&rsquo;avoir vu au bout de sa lunette. Ce n&rsquo;est pas que je prétende que M. Derham ait mal vu, à Dieu ne plaise ! mais Micromégas était sur les lieux, c&rsquo;est un bon observateur, et je ne veux contredire personne. Micromégas, après avoir bien tourné, arriva dans le globe de Saturne. Quelque accoutumé qu&rsquo;il fût à voir des choses nouvelles, il ne put d&rsquo;abord, en voyant la petitesse du globe et de ses habitants, se défendre de ce sourire de supériorité qui échappe quelquefois aux plus sages. Car enfin Saturne n&rsquo;est guère que neuf cents fois plus gros que la terre, et les citoyens de ce pays-là sont des nains qui n&rsquo;ont que mille toises de haut ou environ. Il s&rsquo;en moqua un peu d&rsquo;abord avec ses gens, à peu près comme un musicien italien se met à rire de la musique de Lulli quand il vient en France. Mais comme le Sirien avait un bon esprit, il comprit bien vite qu&rsquo;un être pensant peut fort bien n&rsquo;être pas ridicule pour n&rsquo;avoir que six mille pieds de haut. Il se familiarisa avec les Saturniens, après les avoir étonnés. Il lia une étroite amitié avec le secrétaire de l&rsquo;Académie de Saturne, homme de beaucoup d&rsquo;esprit, qui n&rsquo;avait à la vérité rien inventé, mais qui rendait un fort bon compte des inventions des autres, et qui faisait passablement de petits vers et de grands calculs<sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup>. Je rapporterai ici, pour la satisfaction des lecteurs, une conversation singulière que Micromégas eut un jour avec M. le secrétaire.</p>
+<p><strong>Notes du chapitre I :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> De micros, petit, et de megas, grand.</p>
+<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> C&rsquo;est ainsi qu&rsquo;on lit dans les premières éditions. D&rsquo;autres, au lieu de géomètres, portent algébristes. (B.)</p>
+<p><sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Je rétablis cette phrase d&rsquo;après les premières éditions. (B.)</p>
+<p><sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Au lieu de le plus célèbre, qu&rsquo;on lit dans la première édition, les éditions postérieures portent : des jésuites. (B.)</p>
+<p><sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Pascal devint un très-grand géomètre, non dans la classe de ceux qui ont contribué par de grandes découvertes au progrès des sciences, comme Descartes, Newton, mais dans celle des géomètres qui ont montré par leurs ouvrages un génie du premier ordre. (K.)</p>
+<p><sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> L&rsquo;édition que je crois l&rsquo;originale porte : téméraires, sentant l&rsquo;hérésie. Le texte actuel existe dès 1756. (B.)</p>
+<p><sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> M. de Voltaire avait été persécuté par le théatin Boyer, pour avoir dit dans ses Lettres philosophiques que les facultés de notre âme se développent en même temps que nos organes, de la même manière que les facultés de l&rsquo;âme des animaux. (K.)</p>
+<p><sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> Voyez la note 2 de la page 69.</p>
+<p><sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> Savant Anglais, auteur de la Théologie astronomique, et de quelques autres ouvrages qui ont pour objet de prouver l&rsquo;existence de Dieu par le détail des merveilles de la nature ; malheureusement, lui et ses imitateurs se trompent souvent dans l&rsquo;exposition de ces merveilles : ils s&rsquo;extasient sur la sagesse qui se montre dans l&rsquo;ordre d&rsquo;un phénomène, et on découvre que ce phénomène est tout différent de ce qu&rsquo;ils ont supposé ; alors c&rsquo;est ce nouvel ordre qui leur paraît un chef-d&rsquo;œuvre de sagesse. Ce défaut, commun à tous les ouvrages de ce genre, les a discrédités. On sait trop d&rsquo;avance que, de quelque manière que les choses soient, l&rsquo;auteur finira toujours par les admirer. (K.)</p>
+<p><sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup> Fontenelle.</p>
+                </div>
+                
+
+                <div class="section" id="orig-3" data-parallel="trad-3">
+                    <h2>CHAPITRE II.</h2>
+<p>CONVERSATION DE L&rsquo;HABITANT DE SIRIUS AVEC CELUI DE SATURNE.</p>
+<p>Après que Son Excellence se fut couchée, et que le secrétaire se fut approché de son visage : « Il faut avouer, dit Micromégas, que la nature est bien variée. — Oui, dit le Saturnien ; la nature est comme un parterre dont les fleurs… — Ah ! dit l&rsquo;autre, laissez là votre parterre. — Elle est, reprit le secrétaire, comme une assemblée de blondes et de brunes, dont les parures… — Eh ! qu&rsquo;ai-je à faire de vos brunes<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> ? dit l&rsquo;autre. — Elle est donc comme une galerie de peintures dont les traits… — Eh non ! dit le voyageur ; encore une fois, la nature est comme la nature. Pourquoi lui chercher des comparaisons ? — Pour vous plaire, répondit le secrétaire. — Je ne veux point qu&rsquo;on me plaise, répondit le voyageur ; je veux qu&rsquo;on m&rsquo;instruise : commencez d&rsquo;abord par me dire combien les hommes de votre globe ont de sens. — Nous en avons soixante et douze, dit l&rsquo;académicien ; et nous nous plaignons tous les jours du peu. Notre imagination va au-delà de nos besoins ; nous trouvons qu&rsquo;avec nos soixante et douze sens, notre anneau, nos cinq lunes, nous sommes trop bornés ; et, malgré toute notre curiosité et le nombre assez grand de passions qui résultent de nos soixante et douze sens, nous avons tout le temps de nous ennuyer. — Je le crois bien, dit Micromégas ; car dans notre globe nous avons près de mille sens, et il nous reste encore je ne sais quel désir vague, je ne sais quelle inquiétude, qui nous avertit sans cesse que nous sommes peu de chose, et qu&rsquo;il y a des êtres beaucoup plus parfaits. J&rsquo;ai un peu voyagé ; j&rsquo;ai vu des mortels fort au-dessous de nous ; j&rsquo;en ai vu de fort supérieurs ; mais je n&rsquo;en ai vu aucuns qui n&rsquo;aient plus de désirs que de vrais besoins, et plus de besoins que de satisfaction. J&rsquo;arriverai peut-être un jour au pays où il ne manque rien ; mais jusqu&rsquo;à présent personne ne m&rsquo;a donné de nouvelles positives de ce pays-là. » Le Saturnien et le Sirien s&rsquo;épuisèrent alors en conjectures ; mais, après beaucoup de raisonnements fort ingénieux et fort incertains, il en fallut revenir aux faits. « Combien de temps vivez-vous ? dit le Sirien. — Ah ! bien peu, répliqua le petit homme de Saturne. — C&rsquo;est tout comme chez nous, dit le Sirien ; nous nous plaignons toujours du peu. Il faut que ce soit une loi universelle de la nature. — Hélas ! nous ne vivons, dit le Saturnien, que cinq cents grandes révolutions du soleil. (Cela revient à quinze mille ans ou environ, à compter à notre manière.) Vous voyez bien que c&rsquo;est mourir presque au moment que l&rsquo;on est né ; notre existence est un point, notre durée un instant, notre globe un atome. À peine a-t-on commencé à s&rsquo;instruire un peu que la mort arrive avant qu&rsquo;on ait de l&rsquo;expérience. Pour moi, je n&rsquo;ose faire aucuns projets ; je me trouve comme une goutte d&rsquo;eau dans un océan immense. Je suis honteux, surtout devant vous, de la figure ridicule que je fais dans ce monde. »</p>
+<p>Micromégas lui repartit : « Si vous n&rsquo;étiez pas philosophe, je craindrais de vous affliger en vous apprenant que notre vie est sept cents fois plus longue que la vôtre ; mais vous savez trop bien que quand il faut rendre son corps aux éléments, et ranimer la nature sous une autre forme, ce qui s&rsquo;appelle mourir ; quand ce moment de métamorphose est venu, avoir vécu une éternité, ou avoir vécu un jour, c&rsquo;est précisément la même chose. J&rsquo;ai été dans les pays où l&rsquo;on vit mille fois plus longtemps que chez moi, et j&rsquo;ai trouvé qu&rsquo;on y murmurait encore. Mais il y a partout des gens de bon sens qui savent prendre leur parti et remercier l&rsquo;auteur de la nature. Il a répandu sur cet univers une profusion de variétés avec une espèce d&rsquo;uniformité admirable. Par exemple tous les êtres pensants sont différents, et tous se ressemblent au fond par le don de la pensée et des désirs. La matière est partout étendue ; mais elle a dans chaque globe des propriétés diverses. Combien comptez-vous de ces propriétés diverses dans votre matière ? — Si vous parlez de ces propriétés, dit le Saturnien, sans lesquelles nous croyons que ce globe ne pourrait subsister tel qu&rsquo;il est, nous en comptons trois cents, comme l&rsquo;étendue, l&rsquo;impénétrabilité, la mobilité, la gravitation, la divisibilité, et le reste. — Apparemment, répliqua le voyageur, que ce petit nombre suffit aux vues que le Créateur avait sur votre petite habitation. J&rsquo;admire en tout sa sagesse ; je vois partout des différences, mais aussi partout des proportions. Votre globe est petit, vos habitants le sont aussi ; vous avez peu de sensations ; votre matière a peu de propriétés ; tout cela est l&rsquo;ouvrage de la Providence. De quelle couleur est votre soleil bien examiné ? — D&rsquo;un blanc fort jaunâtre, dit le Saturnien ; et quand nous divisons un de ses rayons, nous trouvons qu&rsquo;il contient sept couleurs. — Notre soleil tire sur le rouge, dit le Sirien, et nous avons trente-neuf couleurs primitives. Il n&rsquo;y a pas un soleil, parmi tous ceux dont j&rsquo;ai approché, qui se ressemble, comme chez vous il n&rsquo;y a pas un visage qui ne soit différent de tous les autres. »</p>
+<p>Après plusieurs questions de cette nature, il s&rsquo;informa combien de substances essentiellement différentes on comptait dans Saturne. Il apprit qu&rsquo;on n&rsquo;en comptait qu&rsquo;une trentaine, comme Dieu, l&rsquo;espace, la matière, les êtres étendus qui sentent, les êtres étendus qui sentent et qui pensent, les êtres pensants qui n&rsquo;ont point d&rsquo;étendue ; ceux qui se pénètrent, ceux qui ne se pénètrent pas, et le reste. Le Sirien, chez qui on en comptait trois cents, et qui en avait découvert trois mille autres dans ses voyages, étonna prodigieusement le philosophe de Saturne. Enfin, après s&rsquo;être communiqué l&rsquo;un à l&rsquo;autre un peu de ce qu&rsquo;ils savaient et beaucoup de ce qu&rsquo;ils ne savaient pas, après avoir raisonné pendant une révolution du soleil, ils résolurent de faire ensemble un petit voyage philosophique.</p>
+<p><strong>Notes du chapitre II :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Voltaire se moque ici du style précieux de la Pluralité des mondes de Fontenelle. Voyez cet ouvrage, Premier Soir. (G. A.)</p>
+                </div>
+                
+
+                <div class="section" id="orig-4" data-parallel="trad-4">
+                    <h2>CHAPITRE III.</h2>
+<p>VOYAGE DES DEUX HABITANTS DE SIRIUS ET SATURNE.</p>
+<p>Nos deux philosophes étaient prêts à s&rsquo;embarquer dans l&rsquo;atmosphère de Saturne avec une fort jolie provision d&rsquo;instruments mathématiques, lorsque la maîtresse du Saturnien, qui en eut des nouvelles, vint en larmes faire ses remontrances. C&rsquo;était une jolie petite brune qui n&rsquo;avait que six cent soixante toises, mais qui réparait par bien des agréments la petitesse de sa taille. « Ah ! cruel ! s&rsquo;écria-t-elle, après t&rsquo;avoir résisté quinze cents ans, lorsque enfin je commençais à me rendre, quand j&rsquo;ai à peine passé cent<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> ans entre tes bras, tu me quittes pour aller voyager avec un géant d&rsquo;un autre monde ; va, tu n&rsquo;es qu&rsquo;un curieux, tu n&rsquo;as jamais eu d&rsquo;amour : si tu étais un vrai Saturnien, tu serais fidèle. Où vas-tu courir ? Que veux-tu ? Nos cinq lunes sont moins errantes que toi, notre anneau est moins changeant. Voilà qui est fait, je n&rsquo;aimerai jamais plus personne. » Le philosophe l&rsquo;embrassa, pleura avec elle, tout philosophe qu&rsquo;il était ; et la dame, après s&rsquo;être pâmée, alla se consoler avec un petit-maître du pays.</p>
+<p>Cependant nos deux curieux partirent ; ils sautèrent d&rsquo;abord sur l&rsquo;anneau, qu&rsquo;ils trouvèrent assez plat, comme l&rsquo;a fort bien deviné un illustre habitant de notre petit globe<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> ; de là ils allèrent de lune en lune. Une comète passait tout auprès de la dernière ; ils s&rsquo;élancèrent sur elle avec leurs domestiques et leurs instruments. Quand ils eurent fait environ cent cinquante millions de lieues, ils rencontrèrent les satellites de Jupiter. Ils passèrent dans Jupiter même, et y restèrent une année, pendant laquelle ils apprirent de fort beaux secrets qui seraient actuellement sous presse sans messieurs les inquisiteurs, qui ont trouvé quelques propositions un peu dures. Mais j&rsquo;en ai lu le manuscrit dans la bibliothèque de l&rsquo;illustre archevêque de…, qui m&rsquo;a laissé voir ses livres avec cette générosité et cette bonté qu&rsquo;on ne saurait assez louer. Aussi je lui promets un long article dans la première édition qu&rsquo;on fera de Moréri, et je n&rsquo;oublierai pas surtout messieurs ses enfants, qui donnent une si grande espérance de perpétuer la race de leur illustre père.</p>
+<p>Mais revenons à nos voyageurs. En sortant de Jupiter, ils traversèrent un espace d&rsquo;environ cent millions de lieues, et ils côtoyèrent la planète de Mars, qui, comme on sait, est cinq fois plus petite que notre petit globe ; ils virent deux lunes qui servent à cette planète, et qui ont échappé aux regards de nos astronomes. Je sais bien que le père Castel écrira, et même assez plaisamment, contre l&rsquo;existence de ces deux lunes ; mais je m&rsquo;en rapporte à ceux qui raisonnent par analogie. Ces bons philosophes-là savent combien il serait difficile que Mars, qui est si loin du soleil, se passât à moins de deux lunes. Quoi qu&rsquo;il en soit, nos gens trouvèrent cela si petit qu&rsquo;ils craignirent de n&rsquo;y pas trouver de quoi coucher, et ils passèrent leur chemin comme deux voyageurs qui dédaignent un mauvais cabaret de village, et poussent jusqu&rsquo;à la ville voisine. Mais le Sirien et son compagnon se repentirent bientôt. Ils allèrent longtemps, et ne trouvèrent rien. Enfin ils aperçurent une petite lueur : c&rsquo;était la terre : cela fit pitié à des gens qui venaient de Jupiter. Cependant, de peur de se repentir une seconde fois, ils résolurent de débarquer. Ils passèrent sur la queue de la comète, et, trouvant une aurore boréale toute prête, ils se mirent dedans, et arrivèrent à terre sur le bord septentrional de la mer Baltique, le cinq juillet mil sept cent trente-sept, nouveau style.</p>
+<p><strong>Notes du chapitre III :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> L&rsquo;édition de 1775 est la première qui porte cent ; toutes les éditions précédentes portent : deux cents. (B.)</p>
+<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Huygens. Voyez tome XVII, page 261.</p>
+                </div>
+                
+
+                <div class="section" id="orig-5" data-parallel="trad-5">
+                    <h2>CHAPITRE IV.</h2>
+<p>CE QUI LEUR ARRIVE SUR LE GLOBE DE LA TERRE.</p>
+<p>Après s&rsquo;être reposés quelque temps, ils mangèrent à leur déjeuner deux montagnes, que leurs gens leur apprêtèrent assez proprement. Ensuite ils voulurent reconnaître le petit pays où ils étaient. Ils allèrent d&rsquo;abord du nord au sud. Les pas ordinaires du Sirien et de ses gens étaient d&rsquo;environ trente mille pieds de roi ; le nain de Saturne, dont la taille n&rsquo;était que de mille toises, suivait de loin en haletant ; or il fallait qu&rsquo;il fît environ douze pas, quand l&rsquo;autre faisait une enjambée : figurez-vous (s&rsquo;il est permis de faire de telles comparaisons) un très-petit chien de manchon qui suivrait un capitaine des gardes du roi de Prusse.</p>
+<p>Comme ces étrangers-là vont assez vite, ils eurent fait le tour du globe en trente-six heures ; le soleil, à la vérité, ou plutôt la terre, fait un pareil voyage en une journée ; mais il faut songer qu&rsquo;on va bien plus à son aise quand on tourne sur son axe que quand on marche sur ses pieds. Les voilà donc revenus d&rsquo;où ils étaient partis, après avoir vu cette mare, presque imperceptible pour eux, qu&rsquo;on nomme la Méditerranée, et cet autre petit étang qui, sous le nom du grand Océan, entoure la taupinière. Le nain n&rsquo;en avait eu jamais qu&rsquo;à mi-jambe, et à peine l&rsquo;autre avait-il mouillé son talon. Ils firent tout ce qu&rsquo;ils purent en allant et en revenant dessus et dessous pour tâcher d&rsquo;apercevoir si ce globe était habité ou non. Ils se baissèrent, ils se couchèrent, ils tâtèrent partout ; mais leurs yeux et leurs mains n&rsquo;étant point proportionnés aux petits êtres qui rampent ici, ils ne reçurent pas la moindre sensation qui pût leur faire soupçonner que nous et nos confrères les autres habitants de ce globe avons l&rsquo;honneur d&rsquo;exister.</p>
+<p>Le nain, qui jugeait quelquefois un peu trop vite, décida d&rsquo;abord qu&rsquo;il n&rsquo;y avait personne sur la terre. Sa première raison était qu&rsquo;il n&rsquo;avait vu personne. Micromégas lui fit sentir poliment que c&rsquo;était raisonner assez mal : « Car, disait-il, vous ne voyez pas avec vos petits yeux certaines étoiles de la cinquantième grandeur que j&rsquo;aperçois très-distinctement ; concluez-vous de là que ces étoiles n&rsquo;existent pas ? — Mais, dit le nain, j&rsquo;ai bien tâté. — Mais, répondit l&rsquo;autre, vous avez mal senti. — Mais, dit le nain, ce globe-ci est si mal construit, cela est si irrégulier et d&rsquo;une forme qui me paraît si ridicule ! tout semble être ici dans le chaos : voyez-vous ces petits ruisseaux dont aucun ne va de droit fil, ces étangs qui ne sont ni ronds, ni carrés, ni ovales, ni sous aucune forme régulière ; tous ces petits grains pointus dont ce globe est hérissé, et qui m&rsquo;ont écorché les pieds ? (Il voulait parler des montagnes.) Remarquez-vous encore la forme de tout le globe, comme il est plat aux pôles, comme il tourne autour du soleil d&rsquo;une manière gauche, de façon que les climats des pôles sont nécessairement incultes ? En vérité, ce qui fait que je pense qu&rsquo;il n&rsquo;y a ici personne, c&rsquo;est qu&rsquo;il me paraît que des gens de bon sens ne voudraient pas y demeurer. — Eh bien, dit Micromégas, ce ne sont peut-être pas non plus des gens de bon sens qui l&rsquo;habitent. Mais enfin il y a quelques apparence que ceci n&rsquo;est pas fait pour rien. Tout vous paraît irrégulier ici, dites-vous, parce que tout est tiré au cordeau dans Saturne et dans Jupiter. Eh ! c&rsquo;est peut-être pour<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> cette raison-là même qu&rsquo;il y a ici un peu de confusion. Ne vous ai-je pas dit que dans mes voyages j&rsquo;avais toujours remarqué de la variété ? » Le Saturnien répliqua à toutes ces raisons. La dispute n&rsquo;eût jamais fini, si par bonheur Micromégas, en s&rsquo;échauffant à parler, n&rsquo;eût cassé le fil de son collier de diamants. Les diamants tombèrent ; c&rsquo;étaient de jolis petits carats assez inégaux, dont les plus gros pesaient quatre cents livres, et les plus petits cinquante. Le nain en ramassa quelques-uns ; il s&rsquo;aperçut, en les approchant de ses yeux, que ces diamants, de la façon dont ils étaient taillés, étaient d&rsquo;excellents microscopes. Il prit donc un petit microscope de cent soixante pieds de diamètre, qu&rsquo;il appliqua à sa prunelle ; et Micromégas en choisit un de deux mille cinq cents pieds. Ils étaient excellents ; mais d&rsquo;abord on ne vit rien par leur secours : il fallait s&rsquo;ajuster. Enfin l&rsquo;habitant de Saturne vit quelque chose d&rsquo;imperceptible qui remuait entre deux eaux dans la mer Baltique : c&rsquo;était une baleine. Il la prit avec le petit doigt fort adroitement ; et la mettant sur l&rsquo;ongle de son pouce, il la fit voir au Sirien, qui se mit à rire pour la seconde fois de l&rsquo;excès de petitesse dont étaient les habitants de notre globe. Le Saturnien, convaincu que notre monde est habité, s&rsquo;imagina bien vite qu&rsquo;il ne l&rsquo;était que par des baleines ; et comme il était grand raisonneur, il voulut deviner d&rsquo;où un si petit atome tirait son mouvement, s&rsquo;il avait des idées, une volonté, une liberté. Micromégas y fut fort embarrassé ; il examina l&rsquo;animal fort patiemment, et le résultat de l&rsquo;examen fut qu&rsquo;il n&rsquo;y avait pas moyen de croire qu&rsquo;une âme fut logée là. Les deux voyageurs inclinaient donc à penser qu&rsquo;il n&rsquo;y a point d&rsquo;esprit dans notre habitation, lorsqu&rsquo;à l&rsquo;aide du microscope ils aperçurent quelque chose d&rsquo;aussi gros qu&rsquo;une baleine qui flottait sur la mer Baltique. On sait que dans ce temps-là même une volée de philosophes revenait du cercle polaire, sous lequel ils avaient été faire des observations dont personne ne s&rsquo;était avisé jusqu&rsquo;alors<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>. Les gazettes dirent que leur vaisseau échoua aux côtes de Botnie, et qu&rsquo;ils eurent bien de la peine à se sauver ; mais on ne sait jamais dans ce monde le dessous des cartes. Je vais raconter ingénument comme la chose se passa, sans y rien mettre du mien : ce qui n&rsquo;est pas un petit effort pour un historien.</p>
+<p><strong>Notes du chapitre IV :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Toutes les éditions qui ont précédé celles de Kehl portent par. (B.)</p>
+<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> C&rsquo;étaient Maupertuis, Clairaut, Camus et Le Monnier. Ils rapportaient la mesure du degré de Laponie. (G. A.)</p>
+                </div>
+                
+
+                <div class="section" id="orig-6" data-parallel="trad-6">
+                    <h2>CHAPITRE V.</h2>
+<p>EXPÉRIENCES ET RAISONNEMENTS DES DEUX VOYAGEURS.</p>
+<p>Micromégas étendit la main tout doucement vers l&rsquo;endroit où l&rsquo;objet paraissait, et avançant deux doigts, et les retirant par la crainte de se tromper, puis les ouvrant et les serrant, il saisit fort adroitement le vaisseau qui portait ces messieurs, et le mit encore sur son ongle, sans le trop presser, de peur de l&rsquo;écraser. « Voici un animal bien différent du premier, dit le nain de Saturne ; » le Sirien mit le prétendu animal dans le creux de sa main. Les passagers et les gens de l&rsquo;équipage, qui s&rsquo;étaient crus enlevés par un ouragan, et qui se croyaient sur une espèce de rocher, se mettent tous en mouvement ; les matelots prennent des tonneaux de vin, les jettent sur la main de Micromégas, et se précipitent après. Les géomètres prennent leurs quarts de cercle, leurs secteurs, deux filles laponnes<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>, et descendent sur les doigts du Sirien. Ils en firent tant qu&rsquo;il sentit enfin remuer quelque chose qui lui chatouillait les doigts : c&rsquo;était un bâton ferré qu&rsquo;on lui enfonçait d&rsquo;un pied dans l&rsquo;index ; il jugea, par ce picotement, qu&rsquo;il était sorti quelque chose du petit animal qu&rsquo;il tenait ; mais il n&rsquo;en soupçonna pas d&rsquo;abord davantage. Le microscope, qui faisait à peine discerner une baleine et un vaisseau, n&rsquo;avait point de prise sur un être aussi imperceptible que des hommes. Je ne prétends choquer ici la vanité de personne, mais je suis obligé de prier les importants de faire ici une petite remarque avec moi ; c&rsquo;est qu&rsquo;en prenant la taille des hommes d&rsquo;environ cinq pieds, nous ne faisons pas sur la terre une plus grande figure qu&rsquo;en ferait sur une boule de dix pieds de tour un animal qui aurait à peu près la six cent millième<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> partie d&rsquo;un pouce en hauteur. Figurez-vous une substance qui pourrait tenir la terre dans sa main, et qui aurait des organes en proportion des nôtres ; et il se peut très-bien faire qu&rsquo;il y ait un grand nombre de ces substances : or concevez, je vous prie, ce qu&rsquo;elles penseraient de ces batailles qui font gagner au vainqueur un village pour le perdre ensuite.</p>
+<p>Je ne doute pas que si quelque capitaine des grands grenadiers lit jamais cet ouvrage, il ne hausse de deux grands pieds au moins les bonnets de sa troupe ; mais je l&rsquo;avertis qu&rsquo;il aura beau faire, que lui et les siens ne seront jamais que des infiniment petits.</p>
+<p>Quelle adresse merveilleuse ne fallut-il donc pas à notre philosophe de Sirius pour apercevoir les atomes dont je viens de parler ? Quand Leuwenhoek et Hartsoeker virent les premiers, ou crurent voir la graine dont nous sommes formés, ils ne firent pas à beaucoup près une si étonnante découverte. Quel plaisir sentit Micromégas en voyant remuer ces petites machines, en examinant tous leurs tours, en les suivant dans toutes leurs opérations ! comme il s&rsquo;écria ! comme il mit avec joie un de ses microscopes dans les mains de son compagnon de voyage ! « Je les vois, disaient-ils tous deux à la fois ; ne les voyez-vous pas qui portent des fardeaux, qui se baissent, qui se relèvent. » En parlant ainsi, les mains leur tremblaient, par le plaisir de voir des objets si nouveaux, et par la crainte de les perdre. Le Saturnien, passant d&rsquo;un excès de défiance à un excès de crédulité, crut apercevoir qu&rsquo;ils travaillaient à la propagation. « Ah ! disait-il, j&rsquo;ai pris la nature sur le fait<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup>. » Mais il se trompait sur les apparences : ce qui n&rsquo;arrive que trop, soit qu&rsquo;on se serve ou non du microscope.</p>
+<p><strong>Notes du chapitre V :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Voyez les notes du quatrième Discours en vers sur l&rsquo;Homme (de la Modération), tome IX, et celles du Russe à Paris, tome X.</p>
+<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> L&rsquo;édition que je crois l&rsquo;originale porte soixante millième. (B.)</p>
+<p><sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Expression heureuse et plaisante de Fontenelle, en rendant compte de quelques observations d&rsquo;histoire naturelle. (K.)</p>
+                </div>
+                
+
+                <div class="section" id="orig-7" data-parallel="trad-7">
+                    <h2>CHAPITRE VI.</h2>
+<p>CE QUI LEUR ARRIVA AVEC LES HOMMES.</p>
+<p>Micromégas, bien meilleur observateur que son nain, vit clairement que les atomes se parlaient ; et il le fit remarquer à son compagnon, qui, honteux de s&rsquo;être mépris sur l&rsquo;article de la génération, ne voulut point croire que de pareilles espèces pussent se communiquer des idées. Il avait le don des langues aussi bien que le Sirien ; il n&rsquo;entendait point parler nos atomes, et il supposait qu&rsquo;ils ne parlaient pas ; d&rsquo;ailleurs, comment ces êtres imperceptibles auraient-ils les organes de la voix, et qu&rsquo;auraient-ils à dire ? Pour parler, il faut penser, ou à peu près ; mais s&rsquo;ils pensaient, ils auraient donc l&rsquo;équivalent d&rsquo;une âme ; or, attribuer l&rsquo;équivalent d&rsquo;une âme à cette espèce, cela lui paraissait absurde. « Mais, dit le Sirien, vous avez cru tout à l&rsquo;heure qu&rsquo;ils faisaient l&rsquo;amour ; est-ce que vous croyez qu&rsquo;on puisse faire l&rsquo;amour sans penser et sans proférer quelque parole, ou du moins sans se faire entendre ? Supposez-vous d&rsquo;ailleurs qu&rsquo;il soit plus difficile de produire un argument qu&rsquo;un enfant ? Pour moi, l&rsquo;un et l&rsquo;autre me paraissent de grands mystères. — Je n&rsquo;ose plus ni croire ni nier, dit le nain ; je n&rsquo;ai plus d&rsquo;opinion ; il faut tâcher d&rsquo;examiner ces insectes, nous raisonnerons après. — C&rsquo;est fort bien dit, » reprit Micromégas ; et aussitôt il tira une paire de ciseaux dont il se coupa les ongles, et d&rsquo;une rognure de l&rsquo;ongle de son pouce il fit sur-le-champ une espèce de grande trompette parlante, comme un vaste entonnoir, dont il mit le tuyau dans son oreille. La circonférence de l&rsquo;entonnoir enveloppait le vaisseau et tout l&rsquo;équipage. La voix la plus faible entrait dans les fibres circulaires de l&rsquo;ongle ; de sorte que, grâce à son industrie, le philosophe de là-haut entendit parfaitement le bourdonnement de nos insectes de là-bas. En peu d&rsquo;heures il parvint à distinguer les paroles, et enfin à entendre le français. Le nain en fit autant, quoique avec plus de difficulté. L&rsquo;étonnement des voyageurs redoublait à chaque instant. Ils entendaient des mites parler d&rsquo;assez bon sens : ce jeu de la nature leur paraissait inexplicable. Vous croyez bien que le Sirien et son nain brûlaient d&rsquo;impatience de lier conversation avec les atomes ; le nain craignait que sa voix de tonnerre, et surtout celle de Micromégas, n&rsquo;assourdît les mites sans en être entendue. Il fallait en diminuer la force. Ils se mirent dans la bouche des espèces de petits cure-dents, dont le bout fort effilé venait donner auprès du vaisseau. Le Sirien tenait le nain sur ses genoux, et le vaisseau avec l&rsquo;équipage sur un ongle ; il baissait la tête et parlait bas. Enfin, moyennant toutes ces précautions et bien d&rsquo;autres encore, il commença ainsi son discours :</p>
+<p>« Insectes invisibles, que la main du Créateur s&rsquo;est plu à faire naître dans l&rsquo;abîme de l&rsquo;infiniment petit, je le remercie de ce qu&rsquo;il a daigné me découvrir des secrets qui semblaient impénétrables. Peut-être ne daignerait-on pas vous regarder à ma cour ; mais je ne méprise personne, et je vous offre ma protection. »</p>
+<p>Si jamais il y a eu quelqu&rsquo;un d&rsquo;étonné, ce furent les gens qui entendirent ces paroles. Ils ne pouvaient deviner d&rsquo;où elles partaient. L&rsquo;aumônier du vaisseau récita les prières des exorcismes, les matelots jurèrent, et les philosophes du vaisseau firent des systèmes ; mais quelque système qu&rsquo;ils fissent, ils ne purent jamais deviner qui leur parlait. Le nain de Saturne, qui avait la voix plus douce que Micromégas, leur apprit alors en peu de mots à quelles espèces ils avaient affaire. Il leur conta le voyage de Saturne, les mit au fait de ce qu&rsquo;était M. Micromégas ; et après les avoir plaints d&rsquo;être si petits, il leur demanda s&rsquo;ils avaient toujours été dans ce misérable état si voisin de l&rsquo;anéantissement, ce qu&rsquo;ils faisaient dans un globe qui paraissait appartenir à des baleines, s&rsquo;ils étaient heureux, s&rsquo;ils multipliaient, s&rsquo;ils avaient une âme, et cent autres questions de cette nature.</p>
+<p>Un raisonneur de la troupe, plus hardi que les autres, et choqué de ce qu&rsquo;on doutait de son âme, observa l&rsquo;interlocuteur avec des pinnules<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> braquées sur un quart de cercle, fit deux stations, et à la troisième il parla ainsi : « Vous croyez donc, monsieur, parce que vous avez mille toises depuis la tête jusqu&rsquo;aux pieds, que vous êtes un… — Mille toises ! s&rsquo;écria le nain ; juste Ciel ! d&rsquo;où peut-il savoir ma hauteur ? mille toises ! il ne se trompe pas d&rsquo;un pouce ; quoi ! cet atome m&rsquo;a mesuré ! il est géomètre, il connaît ma grandeur ; et moi, qui ne le vois qu&rsquo;à travers un microscope, je ne connais pas encore la sienne ! — Oui, je vous ai mesuré, dit le physicien, et je mesurerai bien encore votre grand compagnon. » La proposition fut acceptée ; Son Excellence se coucha de son long : car, s&rsquo;il se fût tenu debout, sa tête eût été trop au-dessus des nuages. Nos philosophes lui plantèrent un grand arbre dans un endroit que le docteur Swift nommerait, mais que je me garderai bien d&rsquo;appeler par son nom, à cause de mon grand respect pour les dames. Puis, par une suite de triangles liés ensemble, ils conclurent que ce qu&rsquo;ils voyaient était en effet un jeune homme de cent vingt mille pieds de roi<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>.</p>
+<p>Alors Micromégas prononça ces paroles : « Je vois plus que jamais qu&rsquo;il ne faut juger de rien sur sa grandeur apparente. Ô Dieu ! qui avez donné une intelligence à des substances qui paraissent si méprisables ; l&rsquo;infiniment petit vous coûte aussi peu que l&rsquo;infiniment grand ; et s&rsquo;il est possible qu&rsquo;il y ait des êtres plus petits que ceux-ci, ils peuvent encore avoir un esprit supérieur à ceux de ces superbes animaux que j&rsquo;ai vus dans le ciel, dont le pied seul couvrirait le globe où je suis descendu. »</p>
+<p>Un des philosophes lui répondit qu&rsquo;il pouvait en toute sûreté croire qu&rsquo;il est en effet des êtres intelligents beaucoup plus petits que l&rsquo;homme. Il lui conta, non pas tout ce que Virgile a dit de fabuleux sur les abeilles, mais ce que Swammerdam a découvert, et ce que Réaumur a disséqué<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup>. Il lui apprit enfin qu&rsquo;il y a des animaux qui sont pour les abeilles ce que les abeilles sont pour l&rsquo;homme, ce que le Sirien lui-même était pour ces animaux si vastes dont il parlait, et ce que ces grands animaux sont pour d&rsquo;autres substances devant lesquelles ils ne paraissent que comme des atomes. Peu à peu la conversation devint intéressante, et Micromégas parla ainsi :</p>
+<p><strong>Notes du chapitre VI :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Ce sont deux petites pièces de cuivre percées, dans le milieu, d&rsquo;une fente de haut en bas, dont on se sert pour prendre des distances et mesurer des angles sur le terrain. (G. A.)</p>
+<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> L&rsquo;édition que je crois l&rsquo;originale porte un beau jeune… de cent vingt mille pieds de roi. (B.)</p>
+<p><sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Chacun de ces deux savants a publié des travaux volumineux sur les insectes.</p>
+                </div>
+                
+
+                <div class="section" id="orig-8" data-parallel="trad-8">
+                    <h2>CHAPITRE VII.</h2>
+<p>CONVERSATION AVEC LES HOMMES.</p>
+<p>« Ô atomes intelligents, dans qui l&rsquo;Être éternel s&rsquo;est plu à vous manifester son adresse et sa puissance, vous devez sans doute goûter des joies bien pures sur votre globe : car, ayant si peu de matière, et paraissant tout esprit, vous devez passer votre vie à aimer et à penser ; c&rsquo;est la véritable vie des esprits. Je n&rsquo;ai vu nulle part le vrai bonheur ; mais il est ici, sans doute. » À ce discours, tous les philosophes secouèrent la tête ; et l&rsquo;un d&rsquo;eux, plus franc que les autres, avoua de bonne foi que, si l&rsquo;on en excepte un petit nombre d&rsquo;habitants fort peu considérés, tout le reste est un assemblage de fous, de méchants et de malheureux. « Nous avons plus de matière qu&rsquo;il ne nous en faut, dit-il, pour faire beaucoup de mal, si le mal vient de la matière ; et trop d&rsquo;esprit, si le mal vient de l&rsquo;esprit. Savez-vous bien, par exemple, qu&rsquo;à l&rsquo;heure que je vous parle<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>, il y a cent mille fous de notre espèce, couverts de chapeaux, qui tuent cent mille autres animaux couverts d&rsquo;un turban, ou qui sont massacrés par eux, et que, presque par toute la terre, c&rsquo;est ainsi qu&rsquo;on en use de temps immémorial ? » Le Sirien frémit, et demanda quel pouvait être le sujet de ces horribles querelles entre de si chétifs animaux. « Il s&rsquo;agit, dit le philosophe, de quelque tas de boue<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> grand comme votre talon. Ce n&rsquo;est pas qu&rsquo;aucun de ces millions d&rsquo;hommes qui se font égorger prétende un fétu sur ce tas de boue. Il ne s&rsquo;agit que de savoir s&rsquo;il appartiendra à un certain homme qu&rsquo;on nomme Sultan, ou à un autre qu&rsquo;on nomme, je ne sais pourquoi, César. Ni l&rsquo;un ni l&rsquo;autre n&rsquo;a jamais vu ni ne verra jamais le petit coin de terre dont il s&rsquo;agit ; et presque aucun de ces animaux qui s&rsquo;égorgent mutuellement n&rsquo;a jamais vu l&rsquo;animal pour lequel ils s&rsquo;égorgent.</p>
+<p>— Ah ! malheureux ! s&rsquo;écria le Sirien avec indignation, peut-on concevoir cet excès de rage forcenée ! Il me prend envie de faire trois pas, et d&rsquo;écraser de trois coups de pied toute cette fourmilière d&rsquo;assassins ridicules.</p>
+<p>— Ne vous en donnez pas la peine, lui répondit-on ; ils travaillent assez à leur ruine. Sachez qu&rsquo;au bout de dix ans, il ne reste jamais la centième partie de ces misérables ; sachez que, quand même ils n&rsquo;auraient pas tiré l&rsquo;épée, la faim, la fatigue, ou l&rsquo;intempérance, les emportent presque tous. D&rsquo;ailleurs, ce n&rsquo;est pas eux qu&rsquo;il faut punir, ce sont ces barbares sédentaires qui du fond de leur cabinet ordonnent, dans le temps de leur digestion, le massacre d&rsquo;un million d&rsquo;hommes, et qui ensuite en font remercier Dieu solennellement. »</p>
+<p>Le voyageur se sentait ému de pitié pour la petite race humaine, dans laquelle il découvrait de si étonnants contrastes. « Puisque vous êtes du petit nombre des sages, dit-il à ces messieurs, et qu&rsquo;apparemment vous ne tuez personne pour de l&rsquo;argent, dites-moi, je vous en prie, à quoi vous vous occupez. — Nous disséquons des mouches, dit le philosophe, nous mesurons des lignes, nous assemblons des nombres ; nous sommes d&rsquo;accord sur deux ou trois points que nous entendons, et nous disputons sur deux ou trois mille que nous n&rsquo;entendons pas. »</p>
+<p>Il prit aussitôt fantaisie au Sirien et au Saturnien d&rsquo;interroger ces atomes pensants, pour savoir les choses dont ils convenaient. « Combien comptez-vous, dit-il, de l&rsquo;étoile de la Canicule à la grande étoile des Gémeaux ? » Ils répondirent tous à la fois : « Trente-deux degrés et demi. — Combien comptez-vous d&rsquo;ici à la lune ? — Soixante demi-diamètres de la terre en nombre rond. — Combien pèse votre air ? » Il croyait les attraper<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup>, mais tous lui dirent que l&rsquo;air pèse environ neuf cents fois moins qu&rsquo;un pareil volume de l&rsquo;eau la plus légère, et dix-neuf mille fois moins que l&rsquo;or de ducat. Le petit nain de Saturne, étonné de leurs réponses, fut tenté de prendre pour des sorciers ces mêmes gens auxquels il avait refusé une âme un quart d&rsquo;heure auparavant.</p>
+<p>Enfin Micromégas leur dit : « Puisque vous savez si bien ce qui est hors de vous, sans doute vous savez encore mieux ce qui est en dedans. Dites-moi ce que c&rsquo;est que votre âme, et comment vous formez vos idées. » Les philosophes parlèrent tous à la fois comme auparavant ; mais ils furent tous de différents avis. Le plus vieux citait Aristote, l&rsquo;autre prononçait le nom de Descartes ; celui-ci, de Malebranche ; cet autre, de Leibnitz ; cet autre, de Locke. Un vieux péripatéticien dit tout haut avec confiance : « L&rsquo;âme est une entéléchie, et une raison par qui elle a la puissance d&rsquo;être ce qu&rsquo;elle est. C&rsquo;est ce que déclare expressément Aristote, page 633 de l&rsquo;édition du Louvre<sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup>. » Il cita le passage<sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup>. « Je n&rsquo;entends pas trop bien le grec, dit le géant. — Ni moi non plus, dit la mite philosophique. — Pourquoi donc, reprit le Sirien, citez-vous un certain Aristote en grec ? — C&rsquo;est, répliqua le savant, qu&rsquo;il faut bien citer ce qu&rsquo;on ne comprend point du tout dans la langue qu&rsquo;on entend le moins. »</p>
+<p>Le cartésien prit la parole, et dit : « L&rsquo;âme est un esprit pur qui a reçu dans le ventre de sa mère toutes les idées métaphysiques<sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup>, et qui, en sortant de là, est obligée d&rsquo;aller à l&rsquo;école, et d&rsquo;apprendre tout de nouveau ce qu&rsquo;elle a si bien su, et qu&rsquo;elle ne saura plus. — Ce n&rsquo;était donc pas la peine, répondit l&rsquo;animal de huit lieues, que ton âme fût si savante dans le ventre de ta mère, pour être si ignorante quand tu aurais de la barbe au menton. Mais qu&rsquo;entends-tu par esprit ? — Que me demandez-vous là ? dit le raisonneur ; je n&rsquo;en ai point d&rsquo;idée ; on dit que ce n&rsquo;est pas la matière. — Mais sais-tu au moins ce que c&rsquo;est que la matière ? — Très-bien, répondit l&rsquo;homme. Par exemple cette pierre est grise, est d&rsquo;une telle forme, a ses trois dimensions, elle est pesante et divisible. — Eh bien ! dit le Sirien, cette chose qui te paraît être divisible, pesante, et grise, me dirais-tu bien ce que c&rsquo;est ? Tu vois quelques attributs ; mais le fond de la chose, le connais-tu ? — Non, dit l&rsquo;autre. — Tu ne sais donc point ce que c&rsquo;est que la matière. »</p>
+<p>Alors monsieur Micromégas, adressant la parole à un autre sage qu&rsquo;il tenait sur son pouce, lui demanda ce que c&rsquo;était que son âme, et ce qu&rsquo;elle faisait. « Rien du tout, répondit le philosophe malebranchiste<sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> ; c&rsquo;est Dieu qui fait tout pour moi : je vois tout en lui, je fais tout en lui ; c&rsquo;est lui qui fait tout sans que je m&rsquo;en mêle. — Autant vaudrait ne pas être, reprit le sage de Sirius. Et toi, mon ami, dit-il à un Leibnitzien qui était là, qu&rsquo;est-ce que ton âme ? — C&rsquo;est, répondit le Leibnitzien, une aiguille qui montre les heures pendant que mon corps carillonne<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> ; ou bien, si vous voulez, c&rsquo;est elle qui carillonne pendant que mon corps montre l&rsquo;heure ; ou bien mon âme est le miroir de l&rsquo;univers, et mon corps est la bordure du miroir : cela est clair. »</p>
+<p>Un petit partisan de Locke était là tout auprès ; et quand on lui eut enfin adressé la parole : « Je ne sais pas, dit-il, comment je pense, mais je sais que je n&rsquo;ai jamais pensé qu&rsquo;à l&rsquo;occasion de mes sens. Qu&rsquo;il y ait des substances immatérielles et intelligentes, c&rsquo;est de quoi je ne doute pas ; mais qu&rsquo;il soit impossible à Dieu de communiquer la pensée à la matière, c&rsquo;est de quoi je doute fort. Je révère la puissance éternelle ; il ne m&rsquo;appartient pas de la borner : je n&rsquo;affirme rien ; je me contente de croire qu&rsquo;il y a plus de choses possibles qu&rsquo;on ne pense<sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup>. »</p>
+<p>L&rsquo;animal de Sirius sourit : il ne trouva pas celui-là le moins sage ; et le nain de Saturne aurait embrassé le sectateur de Locke sans l&rsquo;extrême disproportion. Mais il y avait là, par malheur, un petit animalcule en bonnet carré<sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup> qui coupa la parole à tous les animalcules philosophes ; il dit qu&rsquo;il savait tout le secret, que tout cela se trouvait dans la Somme de saint Thomas ; il regarda de haut en bas les deux habitants célestes ; il leur soutint que leurs personnes, leurs mondes, leurs soleils, leurs étoiles, tout était fait uniquement pour l&rsquo;homme. À ce discours, nos deux voyageurs se laissèrent aller l&rsquo;un sur l&rsquo;autre en étouffant de ce rire inextinguible qui, selon Homère<sup><a href="#nota-11" class="note-ref" id="ref-11">[11]</a></sup>, est le partage des dieux : leurs épaules et leurs ventres allaient et venaient, et dans ces convulsions le vaisseau, que le Sirien avait sur son ongle, tomba dans une poche de la culotte du Saturnien. Ces deux bonnes gens le cherchèrent longtemps ; enfin ils retrouvèrent l&rsquo;équipage, et le rajustèrent fort proprement. Le Sirien reprit les petites mites ; il leur parla encore avec beaucoup de bonté, quoiqu&rsquo;il fût un peu fâché dans le fond du cœur de voir que les infiniment petits eussent un orgueil presque infiniment grand. Il leur promit de leur faire un beau livre de philosophie<sup><a href="#nota-12" class="note-ref" id="ref-12">[12]</a></sup> écrit fort menu pour leur usage, et que, dans ce livre, ils verraient le bout des choses. Effectivement, il leur donna ce volume avant son départ : on le porta à Paris à l&rsquo;Académie des sciences ; mais quand le vieux<sup><a href="#nota-13" class="note-ref" id="ref-13">[13]</a></sup> secrétaire l&rsquo;eut ouvert, il ne vit rien qu&rsquo;un livre tout blanc : « Ah ! dit-il, je m&rsquo;en étais bien douté. »</p>
+<p><strong>Notes du chapitre VII :</strong></p>
+<p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> On a vu, à la fin du chapitre III, que la scène se passait en 1737. Il s&rsquo;agit ici de la guerre des Turcs et des Russes, de 1736 à 1739.</p>
+<p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> La Crimée, qui toutefois n&rsquo;a été réunie en Russie qu&rsquo;en 1783.</p>
+<p><sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> L&rsquo;édition que je crois l&rsquo;originale porte : effrayer, au lieu de : attraper. (B.)</p>
+<p><sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Le mot ἐυτελέχειά se trouve bien à la page 633 du tome Ier de l&rsquo;édition donnée par Guillaume du Val ou édition du Louvre, mais non de la phrase telle que la citait Voltaire dans le texte de 1750, et telle qu&rsquo;il la traduit ci-dessus.</p>
+<p><sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Voici ce passage tel qu&rsquo;il est transcrit dans l&rsquo;édition datée de 1750 : Ἐντελέχειά τις ἐςὶ καὶ λόγος τοῦ δύναμιν ἔχοντος τοιουδὶ εἶναι. Ce passage d&rsquo;Aristote, de l&rsquo;Âme, livre II, chapitre II, est ainsi traduit par Casaubou : Anima quædam perfectio et actus ac ratio est quod potentiam habet ut ejusmodi sit. (B.)</p>
+<p><sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Hypothèse des idées innées.</p>
+<p><sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> Voyez dans les Mélanges, année 1769, l&rsquo;opuscule intitulé Tout en Dieu.</p>
+<p><sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> Hypothèse de l&rsquo;harmonie préétablie.</p>
+<p><sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> Voyez, sur Locke, une des Lettres anglaises, et le Traité de Métaphysique.</p>
+<p><sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup> Un docteur de la Sorbonne.</p>
+<p><sup><a href="#nota-11" class="note-ref" id="ref-11">[11]</a></sup> Iliade, I, 599.</p>
+<p><sup><a href="#nota-12" class="note-ref" id="ref-12">[12]</a></sup> L&rsquo;édition que je crois l&rsquo;originale, et celle qui est datée de 1750, portent : « livre de philosophie, qui leur apprendrait des choses admirables, et qui leur montrerait le bon des choses. » (B.)</p>
+<p><sup><a href="#nota-13" class="note-ref" id="ref-13">[13]</a></sup> Quoique la scène se passe en 1737, comme on l&rsquo;a vu pages 112 et 119, on pouvait donner l&rsquo;épithète de vieux à Fontenelle, qui avait alors quatre-vingts ans, et qui mourut vingt ans après. Il s&rsquo;était démis, en 1740, de la place de secrétaire perpétuel.</p>
+                </div>
+                
+                </section>
+
+                <!-- Columna traducció -->
+                <section class="translation-column">
+                    <div class="column-header">Traducció (català)</div>
+                    
+                <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>CAPÍTOL I.</h2>
+<p>VIATGE D&rsquo;UN HABITANT DEL MÓN DE L&rsquo;ESTRELLA SIRIUS CAP AL PLANETA DE SATURN.
+En un d&rsquo;aquests planetes que giren al voltant de l&rsquo;estrella anomenada Sirius, hi havia un jove de molt d&rsquo;enteniment, que vaig tenir l&rsquo;honor de conèixer en l&rsquo;últim viatge que va fer al nostre petit formiguer; s&rsquo;anomenava Micromègas<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>, nom que escau força a tots els grans. Tenia vuit llegües d&rsquo;alçada: entenc, per vuit llegües, vint-i-quatre mil passos geomètrics de cinc peus cadascun.
+Alguns geòmetres<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>, gent sempre útil al públic, agafaran tot seguit la ploma, i trobaran que, atès que el senyor Micromègas, habitant del país de Sirius, té del cap als peus vint-i-quatre mil passos, que fan cent vint mil peus de rei, i que nosaltres, ciutadans de la terra, no en tenim gaire més de cinc peus, i que el nostre globe té nou mil llegües de circumferència; trobaran, dic, que cal absolutament que el globe que l&rsquo;ha produït tingui exactament vint-i-un milions sis-cents mil vegades més de circumferència que la nostra petita terra. Res no és més simple ni més ordinari en la natura. Els Estats d&rsquo;alguns sobirans d&rsquo;Alemanya o d&rsquo;Itàlia, que es poden recórrer en mitja hora, comparats amb l&rsquo;imperi de Turquia, de Moscòvia o de la Xina, no són sinó una feble imatge de les prodigioses diferències que la natura ha posat en tots els éssers.</p>
+<p>Com que la talla de Sa Excel·lència és de l&rsquo;alçada que he dit, tots els nostres escultors i tots els nostres pintors reconeixeran fàcilment que la seva cintura pot tenir cinquanta mil peus reials de circumferència, cosa que fa una proporció ben galana. Com que el seu nas és la tercera part del seu bell rostre, i el seu bell rostre la setena part de l&rsquo;alçada del seu bell cos, cal reconèixer que el nas del sirià té sis mil tres-cents trenta-tres peus reials més una fracció, com calia demostrar.
+Pel que fa al seu enteniment, és un dels més cultivats que tenim; sap moltes coses, n&rsquo;ha inventat algunes; encara no tenia dos-cents cinquanta anys i estudiava, segons el costum, al col·legi més cèlebre del seu planeta, quan va endevinar, amb la força de la seva intel·ligència, més de cinquanta proposicions d&rsquo;Euclides. Són divuit més que Blaise Pascal, el qual, després d&rsquo;haver-ne endevinat trenta-dos jugant, segons diu la seva germana, esdevingué després un geòmetra prou mediocre i un metafísic ben dolent. Cap als quatre-cents cinquanta anys, en sortir de la infantesa, va dissecar molts d&rsquo;aquests petits insectes que no tenen cent peus de diàmetre i que s&rsquo;amaguen als microscopis ordinaris; en va compondre un llibre ben curiós, però que li va portar alguns problemes. El muftí del seu país, gran meticulos i molt ignorant, va trobar en el seu llibre proposicions sospitoses, malsonants, temeràries, herètiques, que feien olor d&rsquo;heretgia, i el va perseguir vivament: es tractava de saber si la forma substancial.</p>
+<p>No es va entristeir gaire per ser bandejat d&rsquo;una cort plena d&rsquo;intrigues i mesquineses. Va compondre una cançó força divertida contra el muftí, que aquest va ignorar completament. Llavors es va posar a viatjar de planeta en planeta per acabar de formar-se l&rsquo;esperit i el cor, com es diu. Els qui només viatgen en diligència o berlina sense dubte s&rsquo;estranyaran dels mitjans de transport celestials: car nosaltres, des del nostre petit munt de fang, no concebem res més enllà dels nostres costums. El nostre viatger coneixia meravellosament les lleis de la gravitació i totes les forces d&rsquo;atracció i repulsió. Les dominava tan bé que, tant si era amb l&rsquo;ajuda d&rsquo;un raig de sol com si era aprofitant un cometa, anava de planeta en planeta amb els seus companys, com un ocell que saltirona de branca en branca. Va recórrer la Via Làctia en poc temps, i he de confessar que mai no va veure a través dels estels que l&rsquo;esmalen aquell bell cel empiri que l&rsquo;il·lustre vicari Derham es vanta d&rsquo;haver vist amb el seu telescopi. No és que pretengui que el senyor Derham hagi vist malament, Déu me&rsquo;n guard! Però Micròmegas era al lloc mateix, és un bon observador, i no vull contradir ningú. Micròmegas, després d&rsquo;haver viatjat molt, va arribar al planeta Saturn. Per acostumat que estigués a veure coses noves, no va poder evitar al principi un somriure de superioritat en veure la petitesa del planeta i dels seus habitants. És un gest que de vegades escapa fins i tot als més savis. Car al cap i a l</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>Micromégas li respongué: «Si no fóssiu filòsof, em temeria afligir-vos en dir-vos que la nostra vida és set-cents cops més llarga que la vostra; però sabeu prou bé que quan cal tornar el cos als elements i revifar la natura sota una altra forma —el que s&rsquo;anomena morir—, quan arriba aquest moment de metamorfosi, haver viscut una eternitat o haver viscut un dia és exactament el mateix. He estat en països on es viu mil vegades més que a casa meva, i hi he trobat que encara es queixaven. Però arreu hi ha gent sensata que sap resignar-se i donar gràcies a l&rsquo;autor de la natura. Ha escampat sobre aquest univers una profusió de varietats amb una mena d&rsquo;uniformitat admirable. Per exemple, tots els éssers pensants són diferents, i tots es semblen en el fons pel do del pensament i dels desitjos. La matèria s&rsquo;estén pertot; però té en cada glob propietats diverses. Quantes d&rsquo;aquestes propietats diverses compteu en la vostra matèria?» «Si parleu d&rsquo;aquestes propietats —digué el saturnià— sense les quals creiem que aquest glob no podria subsistir tal com és, en comptem tres-centes, com l&rsquo;extensió, la impenetrabilitat, la mobilitat, la gravitació, la divisibilitat, i la resta.» «»Sembla —replicà el viatger— que aquest petit nombre és suficient per als designis que el Creador tenia sobre la vostra petita habitació. Admiro en tot la seva saviesa; veig diferències pertot, però també proporcions pertot. El vostre glob és petit, els vostres habitants ho són també; teniu poques sensacions; la vostra m</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>Mentrestant els dos curiosos partiren; saltaren primer a l&rsquo;anell, que trobaren prou pla, com ho havia endevinat molt bé un il·lustre habitant del nostre petit globe; d&rsquo;allà anaren de lluna en lluna. Una cometa passava molt a prop de la darrera; s&rsquo;hi llançaren amb els seus criats i els seus instruments. Quan hagueren fet uns cent cinquanta milions de llegües, trobaren els satèl·lits de Júpiter. Passaren a Júpiter mateix i hi restaren un any, durant el qual aprengueren grans secrets que ara estarien en premsa si no fos pels senyors inquisidors, que han trobat algunes proposicions una mica dures. Però n&rsquo;he llegit el manuscrit a la biblioteca de l&rsquo;il·lustre arquebisbe de&hellip;, que m&rsquo;ha deixat veure els seus llibres amb aquesta generositat i aquesta bondat que no se sabria prou lloar. Per això li prometo un llarg article en la primera edició que es faci de Moréri, i sobretot no oblidaré els senyors fills seus, que fan concebre tantes esperances de perpetuar la nissaga del seu il·lustre pare.</p>
+<p>Però tornem als nostres viatgers. En sortir de Júpiter, van travessar un espai d&rsquo;uns cent milions de llegües, i van vorejar el planeta Mart, que, com tothom sap, és cinc vegades més petit que el nostre petit glob; van veure dues llunes que serveixen aquest planeta, i que han escapat a la mirada dels nostres astrònoms. Ben bé sé que el pare Castel escriurà, i fins i tot força enginyosament, contra l&rsquo;existència d&rsquo;aquestes dues llunes; però jo em remeto a aquells que raonen per analogia. Aquests bons filòsofs saben prou bé què difícil seria que Mart, que és tan lluny del sol, se&rsquo;n pogués sortir amb menys de dues llunes. Sigui com sigui, els nostres van trobar allò tan petit que van témer no trobar-hi allotjament, i van continuar el seu camí com dos viatgers que desdenyaren una mala taverna de poble i continuen fins a la ciutat veïna. Però el sirià i el seu company aviat se&rsquo;n van penedir. Van anar molt de temps, i no van trobar res. Finalment, van albirar una petita lluïssor: era la Terra; això va fer llàstima a gent que venia de Júpiter. Tanmateix, per por de penedir-se una segona vegada, van resoldre desembarcar. Van passar sobre la cua del cometa, i, trobant una aurora boreal a punt, s&rsquo;hi van ficar, i van arribar a terra per la riba septentrional del mar Bàltic, el cinc de juliol de mil set-cents trenta-set, estil nou.</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>El nan, que de vegades jutjava una mica massa de pressa, va decidir de bon començament que no hi havia ningú a la Terra. La seva primera raó era que no havia vist ningú. Micromégas li va fer entendre educadament que raonava força malament: «»Car —li deia— no veieu amb els vostres ullets certes estrelles de magnitud cinquanta que jo distingeixo molt clarament; en concloeu que aquestes estrelles no existeixen? —Però —digué el nan— he palpetat a fons. —Però —respongué l&rsquo;altre— heu tocat malament. —Però —digué el nan— aquest globus està tan mal construït, és tan irregular i d&rsquo;una forma que em sembla tan ridícula! Tot sembla estar aquí en el caos: mireu aquests rierets, cap dels quals no va en línia recta, aquests estanys que no són ni rodons, ni quadrats, ni ovals, ni de cap forma regular; totes aquestes puntes esmolades de què està eriçat aquest globus, i que m&rsquo;han escoriat els peus? (Volia parlar de les muntanyes.) Fixeu-vos encara en la forma de tot el globus, com és pla als pols, com gira al voltant del sol de manera desmanyota, de manera que els climas dels pols són necessàriament incultes? En veritat, el que em fa pensar que aquí no hi ha ningú és que em sembla que gent assenyada no hi voldria viure. —Doncs bé —digué Micromégas—, potser tampoc no és gent assenyada la que hi viu. Però al capdavall hi ha alguna aparença que això no està fet per a res. Tot us sembla irregular aquí, dieu, perquè tot està adaptat a Saturn i a Júpiter. Ecs! Potser és precisament per aquesta mate</p>
+<p>Se sap que per aquell mateix temps una colla de filòsofs tornava del cercle polar, on havien anat a fer unes observacions que ningú no havia tingut l&rsquo;ocurrència de fer fins llavors. Les gacetes van dir que llur navili va encallar a les costes de Botnia i que van passar prou treballs per salvar-se; però en aquest món mai no se sap el que es cou a les olles. Vaig a explicar sincerament com van passar les coses, sense afegir-hi res del meu:, cosa que no és poca feinada per a un historiador.</p>
+<p>**Notes del capítol IV: **
+<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Totes les edicions anteriors a les de Kehl porten par. (B.)
+<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Eren Maupertuis, Clairaut, Camus i Li Monnier. Portaven la mesura del grau de Lapònia. (G. A.)</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
+                    <h2>CAPÍTOL V.</h2>
+<p>EXPERIÈNCIES I RAONAMENTS DELS DOS VIATGERS.
+Micromégas va estendre la mà molt delicadament cap al lloc on apareixia l&rsquo;objecte, i avançant dos dits, i retirant-los per por d&rsquo;equivocar-se, després obrint-los i tancant-los, va agafar amb gran destresa el vaixell que portava aquests senyors, i el va posar de nou a la ungla, sense prémer massa, per por d&rsquo;aixafar-lo. «Aquest és un animal ben diferent del primer», digué el nan de Saturn; el sirià va col·locar el pretès animal al palmell de la mà. Els passatgers i la gent de l&rsquo;equipatge, que s&rsquo;havien cregut enduts per un huracà i que es creien sobre una mena de roca, es posaren tots en moviment; els mariners agafen tonells de vi, els llancen sobre la mà de Micromégas, i s&rsquo;hi precipiten darrere. Els geòmetres agafen els seus quadrants, els seus sectors, dues noies laponas, i baixen pels dits del sirià. Van fer tant rebombori que finalment aquest va sentir que es movia alguna cosa que li feia pessigolles als dits: era un bastó ferrat que li ficaven un peu dins l&rsquo;índex; va jutjar, per aquest picotiment, que havia sortit alguna cosa del petit animal que tenia; però d&rsquo;entrada no en va sospitar res més. El microscopi, que tot just feia distingir una balena i un vaixell, no tenia cap efecte sobre un ésser tan imperceptible com els homes. No pretenc ferir aquí la vanitat de ningú, però em veig obligat a pregar els importants que facin aquí una petita observació amb mi; és que prenent la talla dels homes d&rsquo;uns cinc peus, no fem a la terra una figura més gran que la que faria sobre una bola de deu peus de circumferència un animal que tingués aproximadament la sis-centesmil·lèsima part d&rsquo;una polzada d&rsquo;alçada. Figureu-vos una substància que pogués tenir la terra a la mà, i que tingués òrgans en proporció als nostres; i pot fer-se molt bé que hi hagi un gran nombre d&rsquo;aquestes substàncies: doncs concebeu, si us plau, què pensarien d&rsquo;aquestes batalles que fan guanyar al vencedor un poble per perdre&rsquo;l després.</p>
+<p>No dubto que si algun capità dels granaders llegeix mai aquesta obra, alçarà els gorros de la seva tropa almenys dos peus; però l&rsquo;adverteixo que per molt que faci, ell i els seus no seran mai més que infinitament petits.
+Quina destresa meravellosa no calgué doncs al nostre filòsof de Sírius per distingir els àtoms dels quals acabo de parlar? Quan Leeuwenhoek i Hartsoeker van ser els primers a veure, o cregueren veure, la llavor de què som formats, no feren ni de bon tros un descobriment tan sorprenent. Quin plaer sentí Micromègas en veure com es movien aquelles petites màquines, en examinar totes les seves maniobres, en seguir-les en totes les seves operacions! Com exclamà! Amb quina alegria posà un dels seus microscopis a les mans del seu company de viatge! &ldquo;Els veig, deien tots dos alhora; no veieu que porten càrregues, que s&rsquo;inclinen, que es redrecen?&rdquo; En parlar així, les mans els tremolaven, pel plaer de veure objectes tan nous i pel temor de perdre&rsquo;ls. El saturnià, passant d&rsquo;un excés de desconfiança a un excés de credulitat, cregué percebre que es dedicaven a la reproducció. &ldquo;Ah!, deia, he enxampat la natura in fraganti!&rdquo; Però s&rsquo;equivocava sobre les aparences:, cosa que passa massa sovint, tant si hom es serveix del microscopi com si no.</p>
+<p>**Notes del capítol V: **
+<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Vegeu les notes del quart Discurs en vers sobre l&rsquo;Home (de la Moderació), tom IX, i les del Rus a París, tom X.
+<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> L&rsquo;edició que crec l&rsquo;original porta seixanta mil. (B.)
+<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> Expressió encertada i divertida de Fontenelle, en donar compte d&rsquo;algunes observacions d&rsquo;història natural. (K.)</p>
+                </div>
+                
+
+                <div class="section" id="trad-3" data-parallel="orig-3">
+                    <h2>CAPÍTOL VI.</h2>
+<p>EL QUE ELS VA PASSAR AMB ELS HOMES.
+Micromégas, observador molt millor que el seu nan, va veure clarament que els àtoms es parlaven; i ho va fer notar al seu company, que, avergonyit d&rsquo;haver-se equivocat pel que fa a la generació, no volia creure que semblants espècies poguessin comunicar-se idees. Tenia el do de les llengües igual que el Sirià; no sentia parlar els nostres àtoms, i suposava que no parlaven; per altra part, com podrien aquests éssers imperceptibles tenir òrgans de la veu, i què tindrien a dir? Per parlar cal pensar, o gairebé; però si pensaven, llavors tindrien l&rsquo;equivalent d&rsquo;una ànima; ara bé, atribuir l&rsquo;equivalent d&rsquo;una ànima a aquesta espècie li semblava absurd. &ldquo;Però&rdquo;, digué el Sirià, &ldquo;ara mateix heu cregut que feien l&rsquo;amor; creieu que es pot fer l&rsquo;amor sense pensar i sense pronunciar cap paraula, o almenys sense fer-se entendre? Suposeu a més a més que sigui més difícil produir un argument que un fill? Per mi, l&rsquo;un i l&rsquo;altre em semblen grans misteris.&rdquo; &ldquo;Ja no goso ni creure ni negar&rdquo;, digué el nan; &ldquo;no tinc opinió; cal provar d&rsquo;examinar aquests insectes, després ja raonarem.&rdquo; &ldquo;Molt ben dit&rdquo;, va respondre Micromé</p>
+<p>«Insectes invisibles que la mà del Creador ha volgut fer néixer en l&rsquo;abisme de l&rsquo;infinitament petit, li agraeixo que s&rsquo;hagi dignat descobrir-me secrets que semblaven impenetrables. Potser ni tan sols es dignarien a mirar-vos a la meva cort; però jo no menyspreo ningú, i us ofereixo la meva protecció.»
+Mai ningú no s&rsquo;havia esbalaït tant com la gent que va sentir aquestes paraules. No podien endevinar d&rsquo;on venien. L&rsquo;almoiner del vaixell recità oracions d&rsquo;exorcisme, els mariners blasfemaren, i els filòsofs del vaixell van elaborar teories; però per molt que teoritzessin, mai no pogueren endevinar qui els parlava. El nan de Saturn, que tenia la veu més dolça que Micromegas, els va explicar aleshores en poques paraules amb qui es les veien. Els va contar el viatge de Saturn, els va informar del que era el senyor Micromegas; i després d&rsquo;haver-los compadit per ésser tan petits, els va preguntar si havien estat sempre en aquest miserable estat a punt de desaparèixer, què feien en un globus que semblava pertànyer a balenes, si eren feliços, si es multiplicaven, si tenien ànima, i cent altres qüestions d&rsquo;aquesta mena.</p>
+<p>Un dels raonadors del grup, més audaç que els altres, i escandalitzat que es posés en dubte la seva ànima, va observar l&rsquo;interlocutor amb unes pínnules dirigides cap a un quart de cercle, va prendre dues mesures, i a la tercera va parlar així: «Creieu, doncs, senyor, perquè teniu mil toeses de cap a peus, que sou un&hellip; — Mil toeses! —cridà el nan—. Sant cel! D&rsquo;on pot saber la meva alçada? Mil toeses! No s&rsquo;equivoca ni una polzada; com! Aquest àtom m&rsquo;ha mesurat! És geòmetra, coneix la meva grandària; i jo, que no el veig sinó a través d&rsquo;un microscopi, encara no conec la seva!» — «Sí, us he mesurat —digué el físic—, i també mesuraré el vostre gran company.» La proposta fou acceptada; Sa Excel·lència s&rsquo;estiré ben llarg, perquè, si s&rsquo;hagués mantingut dret, el cap li hauria quedat massa per damunt dels núvols. Els nostres filòsofs li plantaren un gran arbre en un lloc que el doctor Swift anomenaria, però que jo em guardaria molt bé d&rsquo;anomenar pel seu nom, pel meu gran respecte envers les dames. Després, mitjançant una sèrie de triangles enllaçats, van concloure que allò que veien era efectivament un jove home de cent vint mil peus de rei.</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>El cartesià va prendre la paraula i va dir: «L&rsquo;ànima és un esperit pur que ha rebut al si matern totes les idees metafísiques, i que, en sortir-ne, ha d&rsquo;anar a l&rsquo;escola i aprendre de nou tot allò que sabia tan bé i que ja no sabrà més. —Doncs no valia la pena —va respondre l&rsquo;ésser gegant— que la teva ànima fos tan sàvia al si matern per ser tan ignorant quan tinguis barba al mentó. Però què entens per esperit? —Què em pregunteu? —va dir el pensador—; no en tinc cap idea; diuen que no és la matèria. —Però saps almenys què és la matèria? —Perfectament —va respondre l&rsquo;home—. Per exemple, aquesta pedra és grisa, té tal forma, té tres dimensions, és pesant i divisible. —Doncs bé! —va dir el sirià—, aquesta cosa que et sembla divisible, pesant i grisa, em pots dir què és? Veus alguns atributs, però l&rsquo;essència de la cosa, la coneixes? —No —va dir l&rsquo;altre. —Doncs no saps què és la matèria.»</p>
+<p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
+<p>L&rsquo;animal de Sirius va somriure: no el va considerar el menys savi; i el nan de Saturn hauria abraçat el seguidor de Locke si no fos per l&rsquo;extrema desproporció. Però hi havia allà, per desgràcia, una criatureta amb barret quadrat que va interrompre totes les criaturetes filòsofes; va dir que sabia tot el secret, que tot això es trobava a la Summa de sant Tomàs; va mirar de dalt a baix els dos habitants celestials; els va afirmar que les seves persones, els seus mons, els seus sols, els seus estels, tot estava fet únicament per a l&rsquo;home. Davant aquest discurs, els nostres dos viatgers van esclatar a riure amb aquell riure inextingible que, segons Homer, és privilegi dels déus: les espatlles i els ventres els tremolaven, i en aquestes convulsions la nau, que el sirià tenia a l&rsquo;ungla, va caure en una butxaca dels calçons del saturnià. Els dos la van cercar molt de temps; finalment van tornar a trobar la tripulació i la van col·locar bé molt acuradament. El sirià va tornar a agafar les petites criaturetes; els va parlar altra vegada amb molta bondat, tot i que al fons del cor estava una mica disgustat de veure que els infinitament petits tinguessin un orgull gairebé infinitament gran. Els va prometre de fer-los un bell llibre de filosofia escrit ben menut per al seu ús, i que, en aquest llibre, veurien el fons de les coses. Efectivament, els va donar aquest volum abans de marxar: el van portar a París a l&rsquo;Acadèmia de les ciències; però quan el vell.</p>
+<p><em><em>Notes del capítol VII: **
+<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> Com s&rsquo;ha dit al final del capítol III, l&rsquo;escena passava el 1737. Aquí es refereix a la guerra entre turcs i russos, de 1736 a 1739.
+<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> Crimea, que, tanmateix, no fou annexionada a Rússia fins al 1783.
+<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> L&rsquo;edició que crec l&rsquo;original porta: effrayer, en lloc de: attraper. (B.)
+<sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> El mot ἐντελέχεια es troba efectivament a la pàgina 633 del tom I de l&rsquo;edició de Guillaume du Val o edició del Louvre, però no en la frase tal com la citava Voltaire en el text de 1750, i tal com la tradueix més amunt.
+<sup><a href="#nota-5" class="note-ref" id="ref-5">[5]</a></sup> Aquest passatge apareix transcrit així en l&rsquo;edició datada de 1750: Ἐντελέχειά τις ἐστὶ καὶ λόγος τοῦ δύναμιν ἔχοντος τοιουδὶ εἶναι. Aquest passatge d&rsquo;Aristòtil, </em>De l&rsquo;ànima</em>, llibre II, capítol II, és així traduït per Casaubon: Anima quaedam perfectio et actus ac ratio est quod potentiam habet ut ejusmodi sit. (B.)
+<sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> Hipòtesi de les idees innates.
+<sup><a href="#nota-7" class="note-ref" id="ref-7">[7]</a></sup> Vegeu en els <em>Mélanges</em>, any 1769, l&rsquo;opuscle titulat <em>Tout en Dieu</em>.
+<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> Hipòtesi de l&rsquo;harmonia preestablerta.
+<sup><a href="#nota-9" class="note-ref" id="ref-9">[9]</a></sup> Vegeu, sobre Locke, una de les <em>Cartes angleses</em>, i el <em>Tractat de metafísica</em>.
+<sup><a href="#nota-10" class="note-ref" id="ref-10">[10]</a></sup> Un doctor de la Sorbona.
+<sup><a href="#nota-11" class="note-ref" id="ref-11">[11]</a></sup> <em>Ilíada</em>, I, 599.
+<sup><a href="#nota-12" class="note-ref" id="ref-12">[12]</a></sup> L&rsquo;edició que crec l&rsquo;original, i la datada de 1750, porten: «llibre de filosofia que els ensenyaria coses admirables, i els mostraria el bo de les coses.» (B.)
+<sup><a href="#nota-13" class="note-ref" id="ref-13">[13]</a></sup> Tot i que l&rsquo;escena passa el 1737, com s&rsquo;ha vist a les pàgines 112 i 119, es podia donar l&rsquo;epítet de vell a Fontenelle, que llavors tenia vuitanta anys.</p>
+                </div>
+                
+
+                <div class="section" id="trad-4" data-parallel="orig-4">
+                    <p><em>Traducció de domini públic.</em></p>
+                </div>
+                
+                </section>
+            </div>
+
+            <!-- Navegació entre capítols -->
+            <nav class="chapter-nav" id="chapter-nav" aria-label="Navegació entre capítols">
+                <button class="chapter-nav-btn" id="prev-chapter" disabled>
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-text">Capítol anterior</span>
+                </button>
+                <span class="chapter-indicator" id="chapter-indicator">Capítol 1 de 1</span>
+                <button class="chapter-nav-btn" id="next-chapter" disabled>
+                    <span class="nav-text">Capítol següent</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+        </div>
+
+        <!-- Notes (amagat per defecte) -->
+        
+
+        <!-- Glossari (amagat per defecte) -->
+        
+
+        <!-- Bibliografia -->
+        
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</article>
+
+<!-- Script per índex i navegació de capítols (paginació) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocPanel = document.getElementById('chapter-toc');
+    const tocClose = document.getElementById('toc-close');
+    const tocList = document.getElementById('toc-list');
+    const prevBtn = document.getElementById('prev-chapter');
+    const nextBtn = document.getElementById('next-chapter');
+    const prevBtnTop = document.getElementById('prev-chapter-top');
+    const nextBtnTop = document.getElementById('next-chapter-top');
+    const indicator = document.getElementById('chapter-indicator');
+
+    if (!tocToggle || !tocPanel || !tocList) return;
+
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
+
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
+
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
+
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
+        const text = h2.textContent.trim();
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
+    });
+
+    // Si no hi ha prou capítols, amagar TOTA la navegació i sortir
+    if (chapters.length <= 1) {
+        // Amagar navegació inferior
+        const nav = document.getElementById('chapter-nav');
+        if (nav) nav.style.display = 'none';
+        // Amagar botó índex
+        if (tocToggle) tocToggle.style.display = 'none';
+        // Amagar panell índex
+        if (tocPanel) tocPanel.style.display = 'none';
+        // Amagar botons navegació superior
+        if (prevBtnTop) prevBtnTop.style.display = 'none';
+        if (nextBtnTop) nextBtnTop.style.display = 'none';
+        return;
+    }
+
+    // Hi ha capítols: mostrar el botó d'índex
+    tocToggle.classList.add('visible');
+
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = '<span class="toc-chapter-num">' + (i + 1) + '.</span> Capítol ' + ch.title;
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            showChapter(i);
+            closeToc();
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    let currentChapter = 0;
+
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
+
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
+            c.style.display = 'none';
+        });
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
+            c.style.display = 'block';
+        });
+        currentChapter = index;
+        updateNavigation();
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateNavigation() {
+        const atStart = currentChapter === 0;
+        const atEnd = currentChapter === chapters.length - 1;
+        prevBtn.disabled = atStart;
+        nextBtn.disabled = atEnd;
+        if (prevBtnTop) prevBtnTop.disabled = atStart;
+        if (nextBtnTop) nextBtnTop.disabled = atEnd;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
+            a.classList.toggle('active', i === currentChapter);
+        });
+    }
+
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
+
+    tocToggle.addEventListener('click', function() {
+        tocPanel.classList.contains('open') ? closeToc() : openToc();
+    });
+    tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
+    if (prevBtnTop) prevBtnTop.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    if (nextBtnTop) nextBtnTop.addEventListener('click', function() { showChapter(currentChapter + 1); });
+
+    document.addEventListener('click', function(e) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+            closeToc();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
+    });
+
+    updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Botons d'accés ràpid a seccions
+document.addEventListener('DOMContentLoaded', function() {
+    // Botó Capítols - obre l'índex de capítols
+    const quickChapters = document.getElementById('quick-chapters');
+    if (quickChapters) {
+        quickChapters.addEventListener('click', function() {
+            const tocBtn = document.getElementById('toc-toggle');
+            if (tocBtn) tocBtn.click();
+        });
+    }
+
+    // Botó Glossari - scroll a la secció i obre-la
+    const quickGlossari = document.getElementById('quick-glossari');
+    if (quickGlossari) {
+        quickGlossari.addEventListener('click', function() {
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            if (glossariSection) {
+                if (!glossariSection.classList.contains('open')) {
+                    glossariSection.classList.add('open');
+                    if (glossariToggle) glossariToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    glossariSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+
+    // Botó Notes - scroll a la secció i obre-la
+    const quickNotes = document.getElementById('quick-notes');
+    if (quickNotes) {
+        quickNotes.addEventListener('click', function() {
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            if (notesSection) {
+                if (!notesSection.classList.contains('open')) {
+                    notesSection.classList.add('open');
+                    if (notesToggle) notesToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    notesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem (usant classe CSS)
+                if (savedTermElement) {
+                    savedTermElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        savedTermElement.classList.remove('highlight-temp');
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
+});
+
+// Inicialitzar estat del botó de favorits
+document.addEventListener('DOMContentLoaded', async function() {
+    const favBtn = document.querySelector('.btn-favorit-below');
+    if (!favBtn || !window.ArionFavorits) return;
+
+    // Esperar que l'auth estigui llest
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const obraId = favBtn.dataset.obraId;
+    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
+
+    if (isFavorit) {
+        favBtn.classList.add('active');
+        favBtn.querySelector('.favorit-icon').textContent = '❤️';
+    }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="cataleg.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>
