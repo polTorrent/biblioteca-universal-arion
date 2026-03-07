@@ -1,0 +1,191 @@
+termes:
+  - original: "Phänomenologie"
+    traduccio: "fenomenologia"
+    transliteracio: null
+    definicio: >
+      Ciència descriptiva de les estructures essencials de la consciència pura
+      i dels seus correlats intencionals. Per a Husserl, mètode filosòfic que
+      retorna «a les coses mateixes» (zu den Sachen selbst) mitjançant la
+      reducció fenomenològica.
+
+  - original: "Intentionalität"
+    traduccio: "intencionalitat"
+    transliteracio: null
+    definicio: >
+      Propietat fonamental de la consciència de ser sempre consciència «de
+      quelcom» (Bewußtsein von etwas). Tot acte de consciència — percepció,
+      judici, desig — es dirigeix cap a un objecte intencional. Concepte
+      heretat de Brentano i reelaborat per Husserl.
+
+  - original: "Epoché"
+    traduccio: "epoché"
+    transliteracio: "ἐποχή"
+    definicio: >
+      Suspensió del judici sobre l'existència del món natural. No és negació
+      ni dubte, sinó «posada entre parèntesis» (Einklammerung) de la tesi
+      general de l'actitud natural per accedir a la consciència pura.
+
+  - original: "Reduktion (phänomenologische)"
+    traduccio: "reducció (fenomenològica)"
+    transliteracio: null
+    definicio: >
+      Operació metòdica per la qual el fenomenòleg passa de l'actitud natural
+      a l'actitud transcendental. Inclou l'epoché i la reconducció de tot
+      objecte al seu mode de donació en la consciència.
+
+  - original: "natürliche Einstellung"
+    traduccio: "actitud natural"
+    transliteracio: null
+    definicio: >
+      Actitud quotidiana i precientífica en què el món es dóna com a existent
+      «per descomptat» (selbstverständlich). Inclou la «tesi general»
+      (Generalthesis) segons la qual el món existeix independentment de la
+      consciència.
+
+  - original: "Generalthesis"
+    traduccio: "tesi general"
+    transliteracio: null
+    definicio: >
+      Creença implícita i constant que el món existeix com a realitat
+      independent. Constitueix el nucli de l'actitud natural i és allò que
+      l'epoché posa entre parèntesis.
+
+  - original: "Noesis"
+    traduccio: "noesi"
+    transliteracio: "νόησις"
+    definicio: >
+      Pol subjectiu de l'acte intencional: l'acte de consciència en tant que
+      activitat — percebre, jutjar, imaginar, recordar. Correlat de la noema.
+
+  - original: "Noema"
+    traduccio: "noema"
+    transliteracio: "νόημα"
+    definicio: >
+      Pol objectiu de l'acte intencional: el sentit o contingut de l'objecte
+      tal com es dóna a la consciència. No és l'objecte real, sinó l'objecte
+      «en tant que viscut» (als Erlebtes).
+
+  - original: "Evidenz"
+    traduccio: "evidència"
+    transliteracio: null
+    definicio: >
+      Donació originària i plena d'un estat de coses a la consciència. Font
+      última de tota legitimitat epistèmica. Hi ha graus d'evidència: adequada
+      (perfecta) i inadequada (parcial).
+
+  - original: "Wesensschau"
+    traduccio: "intuïció d'essències"
+    transliteracio: null
+    definicio: >
+      Captació directa i intuïtiva de les estructures essencials (eidos) d'un
+      fenomen, mitjançant la variació eidètica. Fonament de les veritats
+      a priori de la fenomenologia.
+
+  - original: "Lebenswelt"
+    traduccio: "món de la vida"
+    transliteracio: null
+    definicio: >
+      Món tal com és viscut prereflexivament en l'experiència quotidiana,
+      anterior a tota idealització científica. Concepte desenvolupat sobretot
+      a la Crisi, però ja present en germen en les lliçons introductòries.
+
+  - original: "Erlebnis"
+    traduccio: "vivència"
+    transliteracio: null
+    definicio: >
+      Unitat d'experiència conscient: qualsevol acte o estat de consciència
+      (percepció, record, fantasia, sentiment). Element bàsic del flux de
+      consciència (Erlebnisstrom).
+
+  - original: "Bewußtsein"
+    traduccio: "consciència"
+    transliteracio: null
+    definicio: >
+      Camp de les vivències intencionals. Per a Husserl, la consciència no és
+      una substància sinó un flux de vivències (Bewußtseinsstrom) caracteritzat
+      per la intencionalitat.
+
+  - original: "Eidos"
+    traduccio: "eidos / essència"
+    transliteracio: "εἶδος"
+    definicio: >
+      Estructura essencial i invariable d'un fenomen, obtinguda per variació
+      eidètica. Equivalent husserlià de la «forma» platònica, però sense
+      compromís ontològic amb un món d'Idees separat.
+
+  - original: "Konstitution"
+    traduccio: "constitució"
+    transliteracio: null
+    definicio: >
+      Procés pel qual la consciència transcendental «constitueix» (dóna sentit
+      i validesa) els objectes de l'experiència. No és creació, sinó donació
+      de sentit.
+
+  - original: "Horizont"
+    traduccio: "horitzó"
+    transliteracio: null
+    definicio: >
+      Context implícit de possibilitats que envolta tota vivència intencional.
+      Cada percepció té un horitzó intern (aspectes no vistos de l'objecte)
+      i un horitzó extern (el món com a rerefons).
+
+  - original: "Psychologismus"
+    traduccio: "psicologisme"
+    transliteracio: null
+    definicio: >
+      Doctrina que redueix les lleis lògiques a lleis psicològiques. Husserl
+      la refuta a les Investigacions lògiques i hi torna en aquestes lliçons
+      per mostrar la necessitat d'una lògica pura.
+
+  - original: "reine Logik"
+    traduccio: "lògica pura"
+    transliteracio: null
+    definicio: >
+      Ciència a priori de les formes i lleis ideals del pensament, independent
+      de la psicologia empírica. Fonament de totes les ciències.
+
+  - original: "Urteil"
+    traduccio: "judici"
+    transliteracio: null
+    definicio: >
+      Acte intencional pel qual la consciència afirma o nega un estat de coses.
+      Distingit de la mera representació (Vorstellung) per la seva pretensió
+      de veritat.
+
+  - original: "Anschauung"
+    traduccio: "intuïció"
+    transliteracio: null
+    definicio: >
+      Donació directa i originària d'un objecte a la consciència, ja sigui
+      sensible (percepció) o categorial (intuïció d'essències). Oposada a
+      la intenció buida o merament significativa.
+
+  - original: "transzendental"
+    traduccio: "transcendental"
+    transliteracio: null
+    definicio: >
+      Relatiu a les condicions de possibilitat de l'experiència i del
+      coneixement. En Husserl, designa la consciència pura en tant que camp
+      de constitució de tot sentit i validesa.
+
+  - original: "strenge Wissenschaft"
+    traduccio: "ciència rigorosa"
+    transliteracio: null
+    definicio: >
+      Ideal de la filosofia com a disciplina fundada en l'evidència absoluta,
+      amb validesa universal i apodíctica. Programa central de la fenomenologia
+      husserliana.
+
+  - original: "Wertung"
+    traduccio: "valoració"
+    transliteracio: null
+    definicio: >
+      Acte intencional de la consciència axiològica pel qual s'atribueix valor
+      a un objecte. Fonament de l'ètica fenomenològica.
+
+  - original: "Gemüt"
+    traduccio: "ànim / esperit afectiu"
+    transliteracio: null
+    definicio: >
+      Esfera de la vida afectiva i volitiva de la consciència, distinta de
+      l'esfera teòrica (intel·lecte). Inclou sentiments, desigs, volicions.

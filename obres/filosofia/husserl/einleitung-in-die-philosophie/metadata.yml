@@ -1,0 +1,88 @@
+obra:
+  titol: "Introducció a la filosofia. Lliçons"
+  titol_original: "Einleitung in die Philosophie. Vorlesungen"
+  autor: "Edmund Husserl"
+  autor_original: "Edmund Husserl"
+  traductor: "Editorial Clàssica"
+  any_original: "1916–1920"
+  any_traduccio: 2026
+  llengua_original: "alemany"
+  tipus: "lliçons universitàries"
+  serie: "Husserliana Materialien, Band IX"
+  editor_critic: "Hanne Jacobs"
+  descripcio: >
+    Lliçons universitàries d'Edmund Husserl sobre la naturalesa, el mètode i
+    la tasca de la filosofia, impartides a la Universitat de Friburg entre 1916
+    i 1920. Husserl hi exposa la fenomenologia com a ciència rigorosa, la
+    distinció entre actitud natural i actitud filosòfica, la reducció
+    fenomenològica, la intencionalitat de la consciència i la relació entre
+    filosofia i ciències empíriques. Obra fonamental per comprendre la gènesi
+    del pensament husserlià madur.
+
+edicio:
+  tipus: "crítica bilingüe"
+  base: "Manuscrits de Husserl (Husserl-Archiv, Leuven), domini públic"
+  notes_tipus:
+    - "T: Nota del traductor"
+    - "F: Nota filosòfica"
+    - "R: Referència bibliogràfica"
+    - "H: Nota historicofilosòfica"
+
+estructura:
+  parts:
+    - numero: 1
+      titol: "La idea de la filosofia"
+      contingut: "Definició, tasca i abast de la filosofia com a ciència universal"
+    - numero: 2
+      titol: "Actitud natural i actitud filosòfica"
+      contingut: "La Generalthesis, el món natural, la reflexió filosòfica"
+    - numero: 3
+      titol: "La reducció fenomenològica"
+      contingut: "L'epoché, la posada entre parèntesis, la consciència pura"
+    - numero: 4
+      titol: "Intencionalitat i consciència"
+      contingut: "Estructura noesi-noema, actes intencionals, horitzontalitat"
+    - numero: 5
+      titol: "Filosofia i ciències"
+      contingut: "Fonamentació de les ciències, psicologisme, lògica pura"
+    - numero: 6
+      titol: "Lògica i teoria del coneixement"
+      contingut: "Evidència, veritat, judicis, categories"
+    - numero: 7
+      titol: "Ètica i filosofia pràctica"
+      contingut: "Raó pràctica, valors, voluntat, normes"
+
+context:
+  tradicio: "Fenomenologia / Filosofia transcendental"
+  influencies:
+    - "René Descartes (meditacions, dubte metòdic)"
+    - "Immanuel Kant (filosofia transcendental)"
+    - "Franz Brentano (intencionalitat)"
+    - "Bernard Bolzano (lògica pura)"
+    - "Gottfried Wilhelm Leibniz (mathesis universalis)"
+  obres_relacionades:
+    - "Investigacions lògiques (1900/01)"
+    - "Idees relatives a una fenomenologia pura (1913)"
+    - "La filosofia com a ciència rigorosa (1911)"
+    - "Meditacions cartesianes (1931)"
+    - "La crisi de les ciències europees (1936)"
+
+estadistiques:
+  paraules_original: 48000
+  parts: 7
+  llicons: 42
+
+temes:
+  - fenomenologia
+  - epistemologia
+  - filosofia transcendental
+  - intencionalitat
+  - reducció fenomenològica
+  - consciència
+  - lògica
+  - ètica filosòfica
+
+revisio:
+  estat: "en_traduccio"
+  qualitat: null
+  data_revisio: null
