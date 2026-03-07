@@ -279,6 +279,50 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte",
       "notes": "Consell Editorial 2026-03-06. Afegeix l'àrab com a nova llengua i obre la biblioteca a la tradició filosòfica islàmica. Novel·la filosòfica (c. 1169) sobre un nen criat sol en una illa que arriba al coneixement per pura raó. Ibn Tufayl (†1185), metge i filòsof andalusí de Guadix. Influència directa sobre Defoe (Robinson Crusoe), Locke i la Il·lustració. Cap traducció catalana. Text àrab a Wikisource i Archive.org."
+    },
+    {
+      "autor": "Zhuangzi",
+      "titol": "Capítols interiors (selecció)",
+      "llengua": "xinès",
+      "categoria": "filosofia",
+      "dificultat": 5,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/zhuangzi/capitols-interiors",
+      "notes": "Consell Editorial 2026-03-07. Segon pilar del taoisme filosòfic, complement essencial al Tao Te King de Laozi. Els 7 capítols interiors (內篇) són el nucli autèntic de l'obra: paràboles, diàlegs i paradoxes sobre la llibertat, la relativitat del coneixement i el wu wei. Zhuangzi (†c. 286 aC) és, amb Laozi, el pensador fonamental del taoisme. Prosa literària xinesa d'una riquesa incomparable. Cap traducció catalana. Text original a CText.org."
+    },
+    {
+      "autor": "Horaci",
+      "titol": "Odes (selecció: 20 odes)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/horaci/odes-seleccio-20-odes",
+      "notes": "Consell Editorial 2026-03-07. El gran líric romà, absent al catàleg. Les Odes (Carmina, 23-13 aC) són el cim de la poesia llatina: carpe diem, aurea mediocritas, fugacitat del temps. Horaci (†8 aC) és el poeta romà més influent després de Virgili. Selecció recomanada: I.1, I.5, I.9, I.11 (carpe diem), I.22, I.37, II.3, II.10 (aurea mediocritas), II.14, III.1, III.2, III.9, III.13, III.30 (exegi monumentum), IV.7, IV.9, i altres. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Voltaire",
+      "titol": "Micromégas",
+      "llengua": "francès",
+      "categoria": "narrativa",
+      "dificultat": 2,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/voltaire/micromegas",
+      "notes": "Consell Editorial 2026-03-07. Conte filosòfic (1752) que inaugura la ciència-ficció: un gegant de Sírius i un saturnià visiten la Terra i descobreixen la petitesa i la presumpció dels humans. Sàtira del racionalisme dogmàtic i de l'antropocentrisme. Voltaire (†1778) és la figura central de la Il·lustració. Breu, àgil, ideal per a una traducció bilingüe. Cap traducció catalana recent. Text francès a Wikisource francesa i Project Gutenberg."
     }
   ]
 }
