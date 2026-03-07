@@ -1,14 +1,19 @@
 #!/usr/bin/env python3
 """Descarrega els 7 capítols de Micromégas de Wikisource FR."""
 import urllib.request
+import urllib.error
 import re
 import html
-import sys
+from pathlib import Path
 
-def fetch_chapter(num):
+def fetch_chapter(num: str) -> str:
     url = f'https://fr.wikisource.org/wiki/Microm%C3%A9gas/Chapitre_{num}'
     req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0 (BibliotecaArion/1.0)'})
-    resp = urllib.request.urlopen(req, timeout=30)
+    try:
+        resp = urllib.request.urlopen(req, timeout=30)
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
+        print(f'  ERROR descarregant capítol {num}: {e}', flush=True)
+        return f'[ERROR fetching chapter {num}: {e}]'
     page = resp.read().decode('utf-8')
     # Extract parser output div
     m = re.search(r'class="mw-parser-output"[^>]*>(.*?)(?:<div class="printfooter|<!--\s*\nNewPP)', page, re.DOTALL)
@@ -33,19 +38,23 @@ def fetch_chapter(num):
     lines = [l for l in lines if l]
     return '\n\n'.join(lines)
 
-chapters_nums = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII']
-chapters = []
-for num in chapters_nums:
-    print(f'Fetching chapter {num}...', flush=True)
-    text = fetch_chapter(num)
-    chapters.append(text)
-    print(f'  Got {len(text)} chars')
+def main() -> None:
+    chapters_nums = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII']
+    chapters: list[str] = []
+    for num in chapters_nums:
+        print(f'Fetching chapter {num}...', flush=True)
+        text = fetch_chapter(num)
+        chapters.append(text)
+        print(f'  Got {len(text)} chars')
 
-full = '\n\n---\n\n'.join(chapters)
-print(f'\nTotal: {len(full)} chars')
+    full = '\n\n---\n\n'.join(chapters)
+    print(f'\nTotal: {len(full)} chars')
 
-outpath = 'obres/narrativa/voltaire/micromegas/original.md'
-header = """# Micromégas
+    script_dir = Path(__file__).resolve().parent
+    outpath = script_dir.parent / 'obres/narrativa/voltaire/micromegas/original.md'
+    outpath.parent.mkdir(parents=True, exist_ok=True)
+
+    header = """# Micromégas
 **Autor:** Voltaire
 **Font:** [Wikisource](https://fr.wikisource.org/wiki/Microm%C3%A9gas)
 **Llengua:** francès
@@ -54,6 +63,9 @@ header = """# Micromégas
 
 """
 
-with open(outpath, 'w', encoding='utf-8') as f:
-    f.write(header + full)
-print(f'Saved to {outpath}')
+    outpath.write_text(header + full, encoding='utf-8')
+    print(f'Saved to {outpath}')
+
+
+if __name__ == '__main__':
+    main()
