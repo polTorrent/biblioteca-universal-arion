@@ -1,22 +1,27 @@
 obra:
-  titol: "Hayy Ibn Yaqzan — El filòsof autodidacte"
-  titol_original: "حي بن يقظان"
-  autor: "Ibn Tufayl"
-  autor_original: "ابن طفيل"
-  traductor: "Biblioteca Arion"
-  any_original: "c. 1160"
+  titol: Hayy Ibn Yaqzan — El filòsof autodidacte
+  titol_original: حي بن يقظان
+  autor: Ibn Tufayl
+  autor_original: ابن طفيل
+  traductor: Biblioteca Arion
+  any_original: c. 1160
   any_traduccio: 2026
-  llengua_original: "àrab"
-  genere: "narrativa"
-  descripcio: "Novel·la filosòfica sobre un nen abandonat en una illa deserta que, mitjançant l'observació de la natura i la raó, descobreix per si sol les veritats de la filosofia i la metafísica. Obra fonamental del pensament islàmic medieval que anticipa el racionalisme i el mite del bon salvatge."
+  llengua_original: àrab
+  genere: narrativa
+  descripcio: Novel·la filosòfica sobre un nen abandonat en una illa deserta que,
+    mitjançant l'observació de la natura i la raó, descobreix per si sol les veritats
+    de la filosofia i la metafísica. Obra fonamental del pensament islàmic medieval
+    que anticipa el racionalisme i el mite del bon salvatge.
   temes:
-    - autodidactisme
-    - naturalesa
-    - raó
-    - filosofia islàmica
-    - illa deserta
-    - il·luminació
-    - contemplació
+  - autodidactisme
+  - naturalesa
+  - raó
+  - filosofia islàmica
+  - illa deserta
+  - il·luminació
+  - contemplació
+  estadistiques:
+    paraules_traduccio: 134
 seccions: 1
 estadistiques:
   paraules_original: 0
@@ -24,11 +29,11 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
+  estat: revisat
   qualitat: 0.0
-  data_revisio: "2026-03-07"
+  data_revisio: '2026-03-07'
 avaluacio_final:
-  data: "2026-03-07T16:21:40.156938"
+  data: '2026-03-07T23:57:42.895569'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
