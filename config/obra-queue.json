@@ -368,6 +368,51 @@
       "status": "pending",
       "obra_dir": "obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol",
       "notes": "Consell Editorial 2026-03-07. Reforça la categoria oriental (només 4 obres). Kālidāsa (†c. s. V dC) és el poeta i dramaturg més gran de la literatura sànscrita, sovint comparat amb Shakespeare. Poema líric en 111 estrofes: un yaksha exiliat envia un missatge d'amor a la seva esposa a través d'un núvol monsònic, descrivint la geografia i la bellesa de l'Índia. Obra mestra del kāvya (poesia ornamental). Cap traducció catalana. Text sànscrit a Wikisource i Archive.org."
+    },
+    {
+      "autor": "Li Bai",
+      "titol": "Selecció de 30 poemes",
+      "llengua": "xinès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/li-bai/seleccio-de-30-poemes",
+      "notes": "Consell Editorial 2026-03-07. Diversifica el xinès de filosofia a poesia: primera obra poètica xinesa al catàleg. Li Bai (†762), el 'Immortal Desterrat', és el poeta més gran de la dinastia Tang i de tota la literatura xinesa. Selecció recomanada: 靜夜思 (Pensaments en una nit tranquil·la), 月下獨酌 (Bevent sol sota la lluna), 將進酒 (Porteu vi), 蜀道難 (El difícil camí de Shu), 早發白帝城, 望廬山瀑布, i altres. Poesia lírica de gran intensitat: natura, vi, amistat, exili i llibertat. Cap traducció catalana del xinès. Text original a CText.org i Wikisource xinesa."
+    },
+    {
+      "autor": "Eurípides",
+      "titol": "Medea (Μήδεια)",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/euripides/medea",
+      "notes": "Consell Editorial 2026-03-07. El tercer gran tràgic grec, absent del catàleg. Medea (431 aC) és la tragèdia més poderosa d'Eurípides (†406 aC): la princesa de Còlquida, traïda per Jàson, executa una venjança terrible. Obra cabdal sobre la passió, la justícia i la condició de la dona al món antic. Complementa l'Antígona de Sòfocles al catàleg teatral. Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Murray/Diggle)."
+    },
+    {
+      "autor": "Giovanni Boccaccio",
+      "titol": "Decameró (selecció: 10 contes)",
+      "llengua": "italià",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/boccaccio/decamero-seleccio-10-contes",
+      "notes": "Consell Editorial 2026-03-07. Obre la narrativa italiana al catàleg: Boccaccio (†1375) és, amb Dante i Petrarca, un dels tres pilars de la literatura italiana. El Decameró (1353) és la col·lecció de contes més influent de la literatura europea medieval. Selecció recomanada: I.1 (Ser Ciappelletto), I.3 (els tres anells), II.5, III.1, IV.5 (Lisabetta), V.9 (Federigo degli Alberighi), VI.10, VII.2, IX.3, X.10 (Griselda). Prosa toscana elegant, humor, erotisme i crítica social. Cap traducció catalana recent en edició bilingüe. Text italià a Wikisource italiana i Project Gutenberg."
     }
   ]
 }
