@@ -42,21 +42,20 @@ def crear_tasca(titol: str, idioma: str = "", usuari_id: str = "", canal_id: str
         json.dump(tasca, f, indent=2)
     
     # Afegir a la cua del worker
-    if TASK_QUEUE.exists():
-        try:
-            with open(TASK_QUEUE, "r+") as f:
-                try:
-                    data = json.load(f)
-                except json.JSONDecodeError:
-                    data = []
-                if not isinstance(data, list):
-                    data = []
-                data.append(tasca)
-                f.seek(0)
-                json.dump(data, f, indent=2)
-                f.truncate()
-        except Exception as e:
-            log(f"Error afegint a la cua: {e}")
+    try:
+        data: list[dict] = []
+        if TASK_QUEUE.exists():
+            try:
+                data = json.loads(TASK_QUEUE.read_text())
+            except (json.JSONDecodeError, OSError):
+                data = []
+            if not isinstance(data, list):
+                data = []
+        data.append(tasca)
+        TASK_QUEUE.parent.mkdir(parents=True, exist_ok=True)
+        TASK_QUEUE.write_text(json.dumps(data, indent=2))
+    except OSError as e:
+        log(f"Error afegint a la cua: {e}")
     
     log(f"✅ Proposta creada: {titol} (usuari: {usuari_id})")
     return task_id
