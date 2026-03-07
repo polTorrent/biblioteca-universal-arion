@@ -1,0 +1,29 @@
+obra:
+  titol: "La filosofia en l'edat tràgica dels grecs"
+  titol_original: "Die Philosophie im tragischen Zeitalter der Griechen"
+  autor: "Friedrich Nietzsche"
+  autor_original: "Friedrich Wilhelm Nietzsche"
+  traductor: "Editorial Clàssica"
+  any_original: 1873
+  any_traduccio: 2026
+  llengua_original: "alemany"
+  genere: "filosofia"
+  descripcio: >
+    Escrit inacabat de 1873, publicat pòstumament, on Nietzsche presenta els filòsofs
+    presocràtics (Tales, Anaximandre, Heràclit, Parmènides, Anaxàgores) no com a figures
+    històriques sinó com a personalitats filosòfiques vives. L'obra és un manifest de la
+    seva concepció de la filosofia com a activitat creadora, estretament lligada a l'art i
+    a la cultura grega tràgica. Nietzsche hi defensa que aquests pensadors van assolir una
+    grandesa irrepetible perquè filosofaven des de la vida, no des de l'erudició.
+    Proposta de la comunitat.
+  notes: "Traducció completa dels 17 capítols conservats"
+seccions: 17
+estadistiques:
+  paraules_original: 16500
+  paraules_traduccio: 17200
+  notes: 25
+  termes_glossari: 22
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-03-07"
