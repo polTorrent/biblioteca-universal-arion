@@ -32,7 +32,7 @@ from pathlib import Path
 from typing import ClassVar
 
 import requests
-from PIL import Image
+from PIL import Image, ImageEnhance, ImageFilter, ImageOps
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, BaseAgent
@@ -259,11 +259,10 @@ class AgentRetratista(BaseAgent):
             resp.raise_for_status()
 
             img = Image.open(io.BytesIO(resp.content))
-            img.thumbnail((512, 512), Image.Resampling.LANCZOS)
+            size = self.retratista_config.output_size
+            img.thumbnail((size, size), Image.Resampling.LANCZOS)
 
             # Convertir a escala de grisos
-            from PIL import ImageEnhance, ImageFilter, ImageOps
-
             gray = ImageOps.grayscale(img)
 
             # Augmentar contrast
