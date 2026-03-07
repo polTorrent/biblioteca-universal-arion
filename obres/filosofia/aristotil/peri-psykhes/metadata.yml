@@ -1,0 +1,32 @@
+obra:
+  titol: "Sobre l'Ànima"
+  titol_original: "Περὶ Ψυχῆς"
+  titol_llati: "De Anima"
+  autor: "Aristòtil"
+  autor_original: "Ἀριστοτέλης"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 350 aC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  descripcio: >
+    Tractat fonamental d'Aristòtil sobre la naturalesa de l'ànima (psyche),
+    considerat la primera obra sistemàtica de psicologia filosòfica occidental.
+    En tres llibres, examina les facultats de l'ànima —nutritiva, sensitiva
+    i intel·lectiva— i la seva relació amb el cos, establint la doctrina
+    hilemòrfica segons la qual l'ànima és la forma (eidos) del cos natural
+    que posseeix vida en potència.
+  categories:
+    - filosofia
+    - psicologia
+    - metafísica
+  libres: 3
+seccions: 3
+estadistiques:
+  paraules_original: 12500
+  paraules_traduccio: 14200
+  notes: 45
+  termes_glossari: 30
+revisio:
+  estat: "primera_versio"
+  qualitat: null
+  data_revisio: null
