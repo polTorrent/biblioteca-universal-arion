@@ -335,7 +335,7 @@
         "perseus",
         "wikisource"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/assaig/plutarc/sobre-la-tranquillitat-de-lanima",
       "notes": "Consell Editorial 2026-03-07. Reforça la categoria assaig (només 2 obres). Plutarc (†c. 120 dC) és un dels moralistes més influents de l'Antiguitat, absent del catàleg. Tractat dels Moralia sobre la serenitat interior: pont entre estoïcisme, epicureisme i platonisme. Prosa elegant i plena d'anècdotes. Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (Moralia, ed. Goodwin)."
     },
@@ -350,7 +350,7 @@
         "latin-library",
         "perseus"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/poesia/virgili/bucoliques",
       "notes": "Consell Editorial 2026-03-07. El poeta llatí més important, absent del catàleg. 10 èglogues pastorals (42-39 aC) que funden la tradició bucòlica europea: paisatge idealitzat, amor, música i reflexió política (ègloga IV, messiànica). Virgili (†19 aC) és el vèrtex de la literatura llatina. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
     },

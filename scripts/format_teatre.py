@@ -4,11 +4,13 @@ Reformateja obres de teatre per a mòbil
 Separa parlaments, destaca noms de personatge, millora llegibilitat
 """
 import re
+import sys
 from pathlib import Path
 
-def format_teo(obra_path):
+
+def format_teatre(obra_path: str) -> int:
     """Reformateja una obra de teatre."""
-    
+
     with open(obra_path, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     
@@ -40,7 +42,7 @@ def format_teo(obra_path):
                 new_lines.append('\n')
             new_lines.append(f'*{stripped[1:-1]}*\n')
             in_dialogue = False
-        elif stripped.startswith('#') or stripped.startswith('##'):
+        elif stripped.startswith('#'):
             # Títols
             if new_lines and new_lines[-1].strip():
                 new_lines.append('\n')
@@ -64,7 +66,9 @@ def format_teo(obra_path):
     return len(new_lines)
 
 if __name__ == '__main__':
-    import sys
     obra = sys.argv[1] if len(sys.argv) > 1 else 'traduccio.md'
-    lines = format_teo(obra)
-    print(f"✅ Reformatejat: {lines} línies")
+    if not Path(obra).is_file():
+        print(f"Error: no existeix el fitxer '{obra}'", file=sys.stderr)
+        sys.exit(1)
+    lines = format_teatre(obra)
+    print(f"Reformatejat: {lines} linies")

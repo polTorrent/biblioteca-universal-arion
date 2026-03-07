@@ -5,14 +5,6 @@
 
 ---
 
-.mw-parser-output #headertemplate{border:1px solid #ada;background-color:#e4f2e4;clear:both;margin:1em 0 0 0;width:100%;text-align:center;margin-bottom:5px}.mw-parser-output .headertemplate .header_backlink,.mw-parser-output .headertemplate .header_forelink{font-size:0.9em;width:20%}.mw-parser-output .headertemplate .header_title{width:60%}.mw-parser-output .header_notes{width:100%;border-bottom:1px solid #A88;background:#FAFAFF;font-size:0.9em}.mw-parser-output .headertemplate .header_backlink{text-align:left}.mw-parser-output .headertemplate .header_forelink{text-align:right}@media screen{html.skin-theme-clientpref-night .mw-parser-output #headertemplate{background-color:#0b1e1c}html.skin-theme-clientpref-night .mw-parser-output .header_notes{background-color:#1d1d21}}@media screen and (prefers-color-scheme:dark){html.skin-theme-clientpref-os .mw-parser-output #headertemplate{background-color:#0b1e1c}html.skin-theme-clientpref-os .mw-parser-output .header_notes{background-color:#1d1d21}}
-
-←Περὶ ἀοργησίας
-
-Περὶ εὐθυμίας Συγγραφέας: ΠλούταρχοςΗθικά
-
-Περὶ φιλαδελφίας→
-
 ΠΕΡΙ ΕΥΘΥΜΙΑΣ
 
 [464e] Πλούταρχος Πακκίῳ εὖ πράττειν.
