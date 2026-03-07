@@ -126,6 +126,19 @@
       "descripcio": "Obra mestra de Nietzsche escrita en forma poètica. Presenta les idees del superhome, l'etern retorn i la voluntat de poder a través del profeta Zaratustra."
     },
     {
+      "id": "der-wille-zur-macht",
+      "titol": "La voluntat de poder",
+      "titol_original": "Der Wille zur Macht",
+      "autor": "Friedrich Nietzsche",
+      "idioma": "alemany",
+      "any": 1901,
+      "genere": "filosofia",
+      "extensio": "mitjana",
+      "cost_traduccio": 0,
+      "estat": "disponible",
+      "descripcio": "Recull pòstum d'apunts filosòfics sobre la voluntat de poder, el nihilisme, la transvaloració dels valors i l'etern retorn. Selecció de 50 aforismes dels quatre llibres."
+    },
+    {
       "id": "metamorfosi",
       "titol": "La metamorfosi",
       "titol_original": "Die Verwandlung",

@@ -1409,6 +1409,10 @@
       {
         "timestamp": 1772228750.783158,
         "result": "created"
+      },
+      {
+        "timestamp": 1772859602.988458,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1615,6 +1619,15 @@
     "events": [
       {
         "timestamp": 1772845211.5250542,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_fragments-postums": {
+    "events": [
+      {
+        "timestamp": 1772859603.1616743,
         "result": "created"
       }
     ],
