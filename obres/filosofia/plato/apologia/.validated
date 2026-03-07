@@ -1,0 +1,22 @@
+data: 2026-03-07
+puntuacio: 7.8
+revisor: Supervisio automatica (Claude)
+notes: |
+  Traducció completa (17a-42a) de l'Apologia de Sòcrates a partir de Jowett.
+  Qualitat general bona amb registre culte adequat i bona cadència oratòria.
+
+  Puntuacions parcials:
+    - Qualitat del catala: 7.5/10
+    - Fidelitat al original: 8.0/10
+    - Glossari: 8.5/10
+    - Format i estructura: 8.0/10
+    - metadata.yml: 7.0/10
+
+  Problemes menors a corregir:
+    1. Castellanisme "he sentit a parlar" → "he sentit parlar" (linia 11)
+    2. Registre inadequat "emprenyar-se/emprenyuen" → "enfadar-se/s'enfaden" (linia 23)
+    3. Imperatiu erroni "Diu als jutges" → "Digues als jutges"; "diu-nos" → "digues-nos" (linia 31)
+    4. Error persona/temps "professavem ensenyar" → "he professat ensenyar" (linia 123)
+    5. Error de persona "us diran savi" → "em diran savi" (linia 143)
+    6. Verb truncat "que els castigar" → "que els castigueu" (linia 153)
+    7. metadata.yml: manca any_traduccio i llengua (idioma desti)
