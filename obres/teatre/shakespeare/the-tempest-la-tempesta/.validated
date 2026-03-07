@@ -1,0 +1,29 @@
+data_validacio: 2026-03-07
+puntuacio: 7.5
+validador: "Supervisio automatica (Claude)"
+resum: >
+  Traducció completa i fidel de The Tempest (5 actes, 9 escenes). Tots els
+  parlaments, acotacions i cançons presents. Noms catalanitzats consistentment.
+  Passatges celebres ("Our revels now are ended", "O brave new world", "Be not
+  afeard", "Full fathom five", "This thing of darkness") traduïts amb qualitat
+  literaria alta. Glossari complet (22 termes), notes erudites (11). Registre
+  literari adequat i natural.
+
+problemes_menors:
+  - "Línia 3050: 'ha de captivat' — error gramatical, hauria de ser 'ha de captivar'"
+  - "Línia 553: 'aborrides' per 'abhorr'd' — fals amic, hauria de ser 'execrables/odioses' (no 'avorribles')"
+  - "Línia 496: 'rellotges' per 'glasses' (rellotges de sorra) — imprecisió lèxica"
+  - "Línia 1741: 'amb molt més facilitat' — hauria de ser 'amb molta més facilitat' (concordança)"
+  - "Línia 132: 'embriachs' — ortografia arcaica, normativa moderna: 'embriacs'"
+  - "Inconsistència de format: _Pròs._ (Acte I, II, V) vs *Pròs.* (Acte III, IV)"
+  - "L'Epíleg de Pròsper ('Now my charms are all o'erthrown...') no hi és — tampoc es troba al text font (Project Gutenberg), però caldria afegir-lo d'una edició completa"
+  - "Cançó 'Full fathom five' no manté la rima de l'original (decisió deliberada segons notes)"
+
+punts_forts:
+  - "Passatge 'Our revels now are ended' (ll. 2414-2429): excel·lent — 'borrall', 'estofa que els somnis', 's'arrodoneix amb un son'"
+  - "Monòleg de Caliban 'Be not afeard' (ll. 2005-2013): bellíssim — 'tintinnants', 'brunziran'"
+  - "Joc de paraules 'dòlar/dolor' (ll. 948-951): preservat"
+  - "'et faré bacallà sec' per 'make a stock-fish of thee': adaptació inspirada"
+  - "'va fer de baix al meu pecat' per 'it did bass my trespass': joc musical preservat"
+  - "'criatura de tenebra' per 'thing of darkness': elevació lèxica adequada"
+  - "'bell món nou' per 'brave new world': equivalent natural i precís"

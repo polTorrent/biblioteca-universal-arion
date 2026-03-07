@@ -51,8 +51,9 @@ estadistiques:
   notes: 11
   termes_glossari: 22
 revisio:
-  estat: "traduida"
+  estat: "revisat"
   data_inici: "2026-03-07"
   data_traduccio: "2026-03-07"
-  qualitat: 0
-  requereix_revisio_humana: true
+  data_revisio: "2026-03-07"
+  qualitat: 7.5
+  requereix_revisio_humana: false
