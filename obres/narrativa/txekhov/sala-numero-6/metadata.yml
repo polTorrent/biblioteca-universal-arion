@@ -7,13 +7,13 @@ obra:
   genere: narrativa
   descripcio: ''
   estadistiques:
-    paraules_traduccio: 16055
+    paraules_traduccio: 16463
 revisio:
   estat: revisat
   data_revisio: '2026-03-07'
-  qualitat: 7.0
+  qualitat: 8.0
 avaluacio_final:
-  data: '2026-03-07T12:11:09.370925'
+  data: '2026-03-07T14:41:52.316657'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
@@ -21,10 +21,10 @@ avaluacio_final:
     correccio_linguistica: 0.0
     coherencia: 0.0
     global: 0.0
-  total_errors: 137
+  total_errors: 140
   errors_critics: 0
   errors_alts: 0
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 101
+  correccions_pendents: 104

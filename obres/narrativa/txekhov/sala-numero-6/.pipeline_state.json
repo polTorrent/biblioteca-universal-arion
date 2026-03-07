@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-02-03T12:58:35.781370",
-    "ultima_activitat": "2026-03-07T12:10:48.416992"
+    "ultima_activitat": "2026-03-07T14:41:30.501281"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -134,8 +134,8 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 6.28,
-    "temps_total_min": 8.06
+    "qualitat_mitjana": 6.19,
+    "temps_total_min": 2.6
   },
   "errors": [
     "[11:03:02] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
@@ -163,7 +163,10 @@
     "[11:53:51] Error chunk 83: [Errno 32] Broken pipe",
     "[11:53:51] Error fatal: [Errno 32] Broken pipe",
     "[12:09:29] Error chunk 33: El CLI ha retornat una resposta buida (sense contingut)",
-    "[12:10:48] Error chunk 83: El CLI ha retornat una resposta buida (sense contingut)"
+    "[12:10:48] Error chunk 83: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:36:21] Error chunk 83: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:38:42] Error chunk 83: [Errno 32] Broken pipe",
+    "[14:38:42] Error fatal: [Errno 32] Broken pipe"
   ],
   "warnings": [
     "[14:52:12] Error anotació: [Errno 7] Argument list too long: 'claude'"
