@@ -1,0 +1,18 @@
+data: 2026-03-07
+puntuacio: 7.5
+supervisor: claude-opus-4-6
+notes: |
+  Traducció parcial (~8% de l'obra) de qualitat notable.
+  Registre literari setcentista ben aconseguit.
+  Fidelitat alta al text original.
+  Aparell crític sòlid (introducció, notes, glossari, bibliografia).
+  Problemes menors:
+  - "llibertinatje" hauria de ser "llibertinatge" (forma normativa IEC)
+  - "desbauxament" no és forma estàndard; preferible "debauxa" o "disbauxa"
+  - metadata.yml necessita actualització (qualitat: 0, estat: en_curs)
+  Puntuacions parcials:
+  - Qualitat del català: 8/10
+  - Fidelitat al original: 8.5/10
+  - Glossari: 8.5/10
+  - Format: 8/10
+  - metadata.yml: 6.5/10
