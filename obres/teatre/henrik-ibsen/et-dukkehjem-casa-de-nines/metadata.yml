@@ -1,0 +1,21 @@
+obra:
+  titol: "Casa de nines"
+  titol_original: "Et dukkehjem"
+  autor: "Henrik Ibsen"
+  autor_original: "Henrik Ibsen"
+  traductor: "Biblioteca Arion"
+  any_original: 1879
+  any_traduccio: 2026
+  llengua_original: "noruec"
+  genere: "teatre"
+  descripcio: "Drama en tres actes que explora el paper de la dona en la societat del segle XIX. Nora Helmer descobreix que la seva vida matrimonial es basa en il·lusions i pren una decisio radical."
+seccions: 3
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "en_proces"
+  qualitat: 0
+  data_revisio: ""
