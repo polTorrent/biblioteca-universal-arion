@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """ARION MISSION CONTROL v4"""
 import http.server, json, os, re, subprocess, threading, time, queue
+import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 from urllib.parse import parse_qs
@@ -159,7 +160,7 @@ class S:
         except Exception as e: return {"error":str(e),"is_rate_limited":False}
 
     @staticmethod
-    def venice_diem():
+    def venice_diem() -> dict[str, Any]:
         """Crèdits Venice / DIEM via API."""
         try:
             # Llegir VENICE_API_KEY de .env o entorn
@@ -178,8 +179,9 @@ class S:
                             api_key=line.split('=',1)[1].strip().strip('"').strip("'")
             if not api_key:
                 return {"available":False,"raw":"VENICE_API_KEY no trobada"}
-            r=subprocess.run(["curl","-s","-H",f"Authorization: Bearer {api_key}","https://api.venice.ai/api/v1/billing/balance"],capture_output=True,text=True,timeout=15)
-            out=r.stdout.strip()
+            req=urllib.request.Request("https://api.venice.ai/api/v1/billing/balance",headers={"Authorization":f"Bearer {api_key}"})
+            with urllib.request.urlopen(req,timeout=15) as resp:
+                out=resp.read().decode().strip()
             if not out:
                 return {"available":False,"raw":"API no respon"}
             try:
@@ -204,7 +206,7 @@ class S:
         except Exception as e: return {"running":False,"error":str(e)}
 
     @staticmethod
-    def git():
+    def git() -> dict[str, Any]:
         try:
             r=subprocess.run(["git","log","--oneline","-8"],capture_output=True,text=True,timeout=5,cwd=str(ARION))
             c=r.stdout.strip().split('\n') if r.returncode==0 else []
@@ -214,7 +216,7 @@ class S:
         except Exception as e: return {"error":str(e),"recent_commits":[],"uncommitted_changes":0}
 
     @staticmethod
-    def system():
+    def system() -> dict[str, Any]:
         try:
             with open('/proc/uptime') as f: us=float(f.readline().split()[0])
             r=subprocess.run(["free","-m"],capture_output=True,text=True,timeout=3)
@@ -314,6 +316,8 @@ class H(http.server.BaseHTTPRequestHandler):
         try:
             b=json.loads(self.rfile.read(int(self.headers.get('Content-Length',0))))
             c=b.get('command','').strip()
+            SHELL_META=re.compile(r'[;|&`$(){}]')
+            if SHELL_META.search(c): return self._j({"error":"Caràcters no permesos en la comanda"},403)
             ok=any(c.startswith(p) for p in ['tail','head','cat','ls','grep','wc','find','ps aux','df','free','uptime','git log','git status','git diff','bash ~/biblioteca-universal-arion/scripts/','kill ','pkill -f claude-worker','pkill -f dashboard','source ~/.nvm/nvm.sh','bankr'])
             if not ok: return self._j({"error":"Comanda no permesa"},403)
             r=subprocess.run(["bash","-c",c],capture_output=True,text=True,timeout=30,cwd=str(ARION))
