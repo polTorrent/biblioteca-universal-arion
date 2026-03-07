@@ -7,6 +7,7 @@
 # =============================================================================
 
 import json
+import subprocess
 import sys
 import os
 from datetime import datetime
@@ -46,25 +47,26 @@ def crear_tasca(titol: str, idioma: str = "", usuari_id: str = "", canal_id: str
     
     # Crear fitxer de tasca
     tasca_file = PROPOSTES_DIR / f"{task_id}.json"
-    with open(tasca_file, "w") as f:
-        json.dump(tasca, f, indent=2)
+    with open(tasca_file, "w", encoding="utf-8") as f:
+        json.dump(tasca, f, indent=2, ensure_ascii=False)
     
     # Afegir a la cua del worker
-    if TASK_QUEUE.exists():
-        try:
-            with open(TASK_QUEUE, "r+") as f:
+    try:
+        if TASK_QUEUE.exists():
+            with open(TASK_QUEUE, "r", encoding="utf-8") as f:
                 try:
                     data = json.load(f)
                 except json.JSONDecodeError:
                     data = []
-                if not isinstance(data, list):
-                    data = []
-                data.append(tasca)
-                f.seek(0)
-                json.dump(data, f, indent=2)
-                f.truncate()
-        except Exception as e:
-            log(f"Error afegint a la cua: {e}")
+            if not isinstance(data, list):
+                data = []
+        else:
+            data = []
+        data.append(tasca)
+        with open(TASK_QUEUE, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+    except OSError as e:
+        log(f"Error afegint a la cua: {e}")
     
     # Guardar com a processada
     with open(PROPOSTES_PROCESSADES, "a") as f:
@@ -74,8 +76,7 @@ def crear_tasca(titol: str, idioma: str = "", usuari_id: str = "", canal_id: str
     
     # Regenerar el botó de propostes
     try:
-        import subprocess
-        subprocess.run(["python3", str(Path.home() / "biblioteca-universal-arion" / "scripts" / "regenerar_boto_propostes.py")], 
+        subprocess.run(["python3", str(PROJECT / "scripts" / "regenerar_boto_propostes.py")],
                       capture_output=True, timeout=10)
         log("🔄 Botó de propostes regenerat")
     except Exception as e:
@@ -89,14 +90,14 @@ def main():
         # Llegir de stdin si no hi ha arguments
         try:
             data = json.load(sys.stdin)
-        except:
+        except (json.JSONDecodeError, ValueError):
             log("Error: No s'han rebut dades")
             sys.exit(1)
     else:
         # Llegir del primer argument
         try:
             data = json.loads(sys.argv[1])
-        except:
+        except (json.JSONDecodeError, ValueError):
             log("Error: Dades JSON invàlides")
             sys.exit(1)
     
