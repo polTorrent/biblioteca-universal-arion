@@ -15,6 +15,16 @@ avaluacio_final:
   correccions_aplicades: 0
   correccions_pendents: 76
 obra:
+  titol: Antígona
+  titol_original: Ἀντιγόνη
+  autor: Sòfocles
+  autor_original: Σοφοκλής
+  traductor: Biblioteca Arion
+  any_original: 441 aC
+  any_traduccio: 2026
+  llengua_original: grec
+  genere: teatre
+  descripcio: Tragèdia grega sobre el conflicte entre la llei divina i la llei humana. Antígona desafia l'edicte del rei Creont per enterrar el seu germà Polinices.
   estadistiques:
     paraules_traduccio: 9370
 revisio:
