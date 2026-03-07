@@ -89,7 +89,7 @@ def create_manual_button():
     import os
     import requests
     
-    token = "MTQ2OTM0NTE0ODEzODk0Njc1Mg.GfH2xn.CHohbG2Mtdsc6iWwj-nAqA_svGT8MwKG5WF-RE"
+    token = os.environ.get("DISCORD_BOT_TOKEN", "")
     url = f"https://discord.com/api/v10/channels/{CHANNEL_ID}/messages"
     
     payload = {
