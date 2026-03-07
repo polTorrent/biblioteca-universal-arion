@@ -1,12 +1,12 @@
 # Fragments Pòstums — Friedrich Nietzsche
 
-## Selecció de fragments (1882–1888)
+## Selecció de fragments (1881–1889)
 
 Traducció al català des de l'alemany. Fonts: *Kritische Studienausgabe* (KSA), ed. Giorgio Colli i Mazzino Montinari, de Gruyter/dtv.
 
 ---
 
-### I. Voluntat de poder i etern retorn (1882–1884)
+### I. Voluntat de poder i etern retorn (1881–1884)
 
 **Fragment 11[141] — Agost 1881 (KSA 9)**
 
