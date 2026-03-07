@@ -702,6 +702,39 @@ rotate_done() {
 }
 
 
+# ── 10b. Processar notificacions pendents d'usuaris ──────────────────────────
+process_pending_notifications() {
+    local NOTIF_FILE="$HOME/.openclaw/workspace/pending_notification.txt"
+    
+    if [ ! -f "$NOTIF_FILE" ]; then
+        return
+    fi
+    
+    log "📨 Processant notificacions pendents..."
+    
+    # Llegir dades de la notificació
+    local channel user message timestamp
+    channel=$(grep "^channel:" "$NOTIF_FILE" | cut -d: -f2-)
+    user=$(grep "^user:" "$NOTIF_FILE" | cut -d: -f2-)
+    message=$(grep "^message:" "$NOTIF_FILE" | cut -d: -f2-)
+    timestamp=$(grep "^timestamp:" "$NOTIF_FILE" | cut -d: -f2-)
+    
+    # Enviar via OpenClaw (scriure a fitxer que el gateway llegirà)
+    local NOTIF_OUT="$HOME/.openclaw/workspace/outgoing_notification.json"
+    cat > "$NOTIF_OUT" << EOF
+{
+  "action": "send",
+  "channel": "discord",
+  "channelId": "${channel:-1479504522614476953}",
+  "message": "${message}",
+  "timestamp": "$(date -Iseconds)"
+}
+EOF
+    
+    log "   ✅ Notificació preparada per a ${user}"
+    rm -f "$NOTIF_FILE"
+}
+
 # ── 10. Generar report per Discord ────────────────────────────────────────────
 generate_report() {
     local REPORT_FILE="$HOME/.openclaw/workspace/last_heartbeat_report.md"
@@ -882,6 +915,9 @@ if [ -f "$PROJECT/scripts/processar-propostes.sh" ]; then
     log "📋 Processant propostes Discord..."
     bash "$PROJECT/scripts/processar-propostes.sh" 2>/dev/null || true
 fi
+
+# ── Fase 2.6: Processar notificacions pendents ───────────────────────────────
+process_pending_notifications
 
 # ── Fase 3: Reiniciar bot ──────────────────────────────────────────────────
 _heartbeat_start_openclaw

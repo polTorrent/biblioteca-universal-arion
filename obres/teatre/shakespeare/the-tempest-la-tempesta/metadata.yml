@@ -47,11 +47,12 @@ estadistiques:
   actes: 5
   escenes: 9
   paraules_original: 16600
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_traduccio: 17593
+  notes: 11
+  termes_glossari: 22
 revisio:
-  estat: "en_curs"
+  estat: "traduida"
   data_inici: "2026-03-07"
+  data_traduccio: "2026-03-07"
   qualitat: 0
   requereix_revisio_humana: true
