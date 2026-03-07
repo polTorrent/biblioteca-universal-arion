@@ -417,10 +417,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772622002.724515,
-        "result": "created"
-      },
-      {
         "timestamp": 1772622940.0470712,
         "result": "created"
       },
@@ -494,6 +490,10 @@
       },
       {
         "timestamp": 1772902803.725671,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772908530.8988905,
         "result": "created"
       }
     ],
@@ -685,6 +685,10 @@
       },
       {
         "timestamp": 1772763688.358176,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772908542.289774,
         "result": "created"
       }
     ],
@@ -1251,6 +1255,10 @@
       {
         "timestamp": 1772902803.2356598,
         "result": "created"
+      },
+      {
+        "timestamp": 1772908530.44637,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1270,10 +1278,6 @@
   },
   "translate_cd-biblioteca-universal-arion--python3-scriptstraduir_p": {
     "events": [
-      {
-        "timestamp": 1772237723.7198353,
-        "result": "created"
-      },
       {
         "timestamp": 1772237723.8390546,
         "result": "created"
@@ -1348,6 +1352,10 @@
       },
       {
         "timestamp": 1772895602.6047695,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772908530.287428,
         "result": "created"
       }
     ],
@@ -1692,6 +1700,10 @@
       },
       {
         "timestamp": 1772877037.6996996,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772908529.928836,
         "result": "created"
       }
     ],
