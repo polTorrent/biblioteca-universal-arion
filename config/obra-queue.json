@@ -456,6 +456,50 @@
       "status": "pending",
       "obra_dir": "obres/oriental/confuci/analectes-lunyu-seleccio-llibres-i-iv",
       "notes": "Consell Editorial 2026-03-07. Complement imprescindible als textos taoistes del catàleg (Laozi, Zhuangzi): el confucianisme és l'altre gran pilar del pensament xinès. Confuci (†479 aC) és el pensador més influent de l'Àsia oriental. Els Llibres I-IV de les Analectes contenen els aforismes fonamentals sobre rén (仁, humanitat), lǐ (禮, ritual), junzǐ (君子, persona exemplar), xué (學, estudi) i govern virtuós. Prosa concisa i sentenciosa, ideal per a edició bilingüe. Cap traducció catalana directa del xinès. Text original a CText.org."
+    },
+    {
+      "autor": "Apuleu",
+      "titol": "Cupido i Psique (Metamorfosis IV.28–VI.24)",
+      "llengua": "llatí",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/apuleu/cupido-i-psique",
+      "notes": "Consell Editorial 2026-03-07. Primera narrativa llatina al catàleg. El conte mític més influent de l'Antiguitat, inserit dins les Metamorfosis (L'ase d'or): Psique, mortal d'una bellesa que rivalitza amb Venus, és condemnada a casar-se amb un monstre però s'enamora de Cupido; després de perdre'l per la curiositat, supera proves imposades per Venus fins a la reconciliació i l'apoteosi. Arquetip de tots els contes de fades europeus (La Bella i la Bèstia, Eros i Psique). Apuleu (†c. 170 dC), escriptor nord-africà de prosa llatina exuberant. Cap traducció catalana en edició bilingüe. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Rainer Maria Rilke",
+      "titol": "Cartes a un jove poeta (Briefe an einen jungen Dichter)",
+      "llengua": "alemany",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "archive.org"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/rilke/cartes-a-un-jove-poeta",
+      "notes": "Consell Editorial 2026-03-07. Obre l'alemany a la categoria assaig, fins ara sense cap obra en aquesta llengua. 10 cartes (1903-1908) adreçades al cadet Franz Xaver Kappus: meditacions sobre la creativitat, la solitud, l'amor, la paciència i la vida interior que han esdevingut un dels textos més llegits del segle XX. Rilke (†1926), poeta fonamental del modernisme europeu en llengua alemanya, amb una prosa epistolar d'una intensitat lírica excepcional. Domini públic (>70 anys). Cap traducció catalana recent en edició bilingüe. Text alemany a Project Gutenberg i Archive.org."
+    },
+    {
+      "autor": "Adam Mickiewicz",
+      "titol": "Sonets de Crimea (Sonety krymskie)",
+      "llengua": "polonès",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/mickiewicz/sonets-de-crimea",
+      "notes": "Consell Editorial 2026-03-07. Afegeix el polonès com a nova llengua al catàleg, obrint la biblioteca a la tradició literària eslava occidental. 18 sonets (1826) escrits durant l'exili a Rússia: el paisatge de Crimea — estepes, mars, muntanyes — com a mirall de l'ànima romàntica desterrada. Mickiewicz (†1855) és el poeta nacional de Polònia i una de les grans veus del Romanticisme europeu, comparable a Byron o Pushkin. Sonets d'una perfecció formal i una intensitat visual extraordinàries. Cap traducció catalana. Text polonès a Wikisource polonesa."
     }
   ]
 }
