@@ -618,6 +618,1115 @@ Causa de l'«altruisme». — De l'amor els homes han parlat en conjunt de maner
 Mirada a la llunyania. — Si morals són només les accions, com s'ha definit, que es fan per l'altre i només per ell, aleshores no hi ha cap acció moral! Si morals són només les accions — segons una altra definició — que es fan en llibertat de la voluntat, aleshores tampoc no hi ha cap acció moral! — I què és, doncs, allò que se'n diu i que tanmateix existeix i vol ser explicat? Són els efectes d'alguns errors intel·lectuals. — I suposem que hom s'alliberés d'aquests errors, què en seria de les «accions morals»? — En virtut d'aquests errors hem atribuït fins ara a certes accions un valor més alt del que tenen: les hem separat de les accions «egoistes» i de les «no lliures». Si ara les reassignem a aquestes, com hem de fer, en reduïm certament el valor (el sentiment del seu valor), i fins per sota de la mesura justa, perquè les accions «egoistes» i «no lliures» han estat fins ara massa menyspreades, a causa d'aquella suposada diferència profunda i essencial. — Així, precisament aquestes accions es faran d'ara endavant més rarament, perquè d'ara endavant seran menys estimades? — Inevitablement! Almenys durant un bon temps, mentre la balança del sentiment del valor estigui sota la reacció d'errors anteriors! Però el nostre contracompte és que retornem als homes el bon ànim per a les accions titllades d'egoistes i en restaurem el valor, — els prenguem la mala [consciència]{.term data-term="Gewissen"}! I ja que fins ara han estat amb diferència les més freqüents i ho seran en tot futur, els traiem a tota la imatge de les accions i de la vida el seu aspecte maligne! Això és un resultat ben alt! Quan l'home deixa de considerar-se dolent, deixa de ser-ho!
 
 
+
+## Llibre Tercer
+
+### 149. Cal fer petites accions divergents
+
+Cal fer petites accions divergents! — En els afers del costum, actuar de tant en tant contra la pròpia convicció més clara; cedir aquí en la pràctica i reservar-se la llibertat espiritual; fer com fan tots i amb això dispensar a tots una mena d'amabilitat i benefici, com a compensació per la divergència de les nostres opinions: — això val per a molts esperits força lliures no sols com a inofensiu, sinó com a «honrat», «humà», «tolerant», «no pedant», i com puguin sonar totes les belles paraules amb les quals s'adorma la consciència intel·lectual: i així l'un porta el seu fill al baptisme cristià i tanmateix és ateu, i l'altre fa el servei militar com tothom, per molt que condemni l'odi entre els pobles, i un tercer corre a l'església amb una doneta perquè ella té parents devots, i fa vots davant d'un sacerdot sense avergonyir-se'n. «No és essencial si algú com nosaltres fa també el que tothom ha fet sempre i continua fent» — així sona el prejudici groller! L'error groller! Perquè no hi ha res més essencial que el fet que allò ja poderós, tradicional i reconegut sense raó sigui confirmat una vegada més per l'acció d'un home reconegut com a raonable: amb això rep, als ulls de tots els qui en senten parlar, la sanció de la raó mateixa! Tot el respecte per les vostres opinions! Però les petites accions divergents valen més!
+
+### 150. L'atzar dels matrimonis
+
+L'atzar dels matrimonis. — Si jo fos un Déu, i un Déu benvolent, els matrimonis dels homes em farien perdre la paciència més que cap altra cosa. Un individu pot avançar lluny, molt lluny, en els seus setanta, sí, en els seus trenta anys, — és per meravellar-se, fins i tot per als déus! Però quan es veu com penja l'herència i el llegat d'aquesta lluita i victòria, el llorer de la seva humanitat, al primer lloc que es presenta, on una doneta el despedaça; quan es veu com sap conquerir bé i conservar malament, sí, com ni tan sols pensa que per mitjà de la procreació podria preparar una vida encara més victoriosa: aleshores hom perd la paciència, com ja hem dit, i es diu «de la humanitat no en pot sortir res a la llarga, els individus són malgastats, l'atzar dels matrimonis fa impossible tota raó d'un gran caminar de la humanitat; — deixem de ser els espectadors zelosos i boigs d'aquest espectacle sense objectiu!» — En aquest estat d'ànim es van retirar una vegada els déus d'Epicur a la seva divina quietud i benaurança: estaven cansats dels homes i dels seus afers amorosos.
+
+### 151. Cal inventar nous ideals aquí
+
+Cal inventar nous ideals aquí. — No s'hauria de permetre prendre una decisió sobre la pròpia vida en estat d'enamorament, ni fixar d'una vegada per totes el caràcter de la pròpia companyia a causa d'un capritx violent: caldria declarar públicament invàlids els juraments dels enamorats i negar-los el matrimoni: — i precisament perquè el matrimoni s'hauria de prendre incomparablement més seriosament! de manera que en els casos on fins ara es realitzava, per regla general precisament no es realitzaria! La majoria dels matrimonis no són de la mena que hom no voldria cap tercer com a testimoni? I precisament aquest tercer gairebé mai no falta — el fill — i és més que un testimoni, a saber, el boc expiatori!
+
+### 152. Fórmula del jurament
+
+Fórmula del jurament. — «Si ara mento, ja no sóc una persona decent, i tothom tindrà dret a dir-m'ho a la cara». — Aquesta fórmula la recomano en lloc del jurament judicial i la invocació habitual de Déu que l'acompanya: és més forta. Fins i tot el devot no té cap raó per oposar-s'hi: tan bon punt el jurament habitual ja no serveix prou, el devot ha d'escoltar el seu catecisme, que prescriu «no prendràs el nom del Senyor el teu Déu en va!»
+
+### 153. Un descontent
+
+Un descontent. — Vet aquí un d'aquells vells valents: s'irrita amb la civilització perquè creu que aquesta aspira a fer totes les bones coses, honors, tresors, dones formoses, — accessibles també als covards.
+
+### 154. Consol dels qui estan en perill
+
+Consol dels qui estan en perill. — Els grecs, en una vida que estava molt a prop de grans perills i trasbalsaments, cercaven en la reflexió i el coneixement una mena de seguretat del sentiment i un darrer [refugi]{.term data-term="refugium"}. Nosaltres, en un estat incomparablement més segur, hem portat la perillositat a la reflexió i al coneixement, i ens refem i ens tranquil·litzem d'ella en la vida.
+
+### 155. Escepticisme extingit
+
+[Escepticisme]{.term data-term="Skepsis"} extingit. — Les gosadies agosarades són més rares en l'era nova que en l'antiga i medieval, — probablement perquè l'era nova ja no té fe en presagis, oracles, astres i endevins. Això vol dir: ens hem tornat incapaços de creure en un futur que ens estigui destinat, com creien els antics, els quals — a diferència de nosaltres — eren molt menys escèptics respecte del que vindrà que respecte del que és.
+
+### 156. Dolents per exuberància
+
+Dolents per exuberància. — «Que no ens sentim massa bé!» — aquesta era la secreta ansietat del cor dels grecs en la seva bona època. Per això es predicaven la mesura. I nosaltres!
+
+### 157. Culte dels «sons naturals»
+
+Culte dels «sons naturals». — Cap a on apunta el fet que la nostra cultura és tolerant envers les manifestacions del dolor, envers les llàgrimes, els laments, els retrets, els gestos d'ira o d'humiliació; que no sols les suporta sinó que les aprova i les compta entre les inevitabilitats nobles? — mentre que l'esperit de la filosofia antiga les mirava amb menyspreu i no els reconeixia cap necessitat. Recordem com Plató — és a dir: cap dels filòsofs més inhumans — parla del Filoctetes de l'escena tràgica. Potser a la nostra cultura moderna li manca «la filosofia»? Potser nosaltres, segons l'estimació d'aquells antics filòsofs, pertanyem tots plegats al «populatxo»?
+
+### 158. Clima de l'adulador
+
+Clima de l'adulador. — Els aduladors servils ja no cal buscar-los a la vora dels prínceps, — tots aquests tenen el gust militar, i l'adulador va contra aquest gust. Però a la vora dels banquers i dels artistes, aquella flor encara floreix avui.
+
+### 159. Els ressuscitadors de morts
+
+Els ressuscitadors de morts. — Les persones vanitoses valoren un fragment del passat més alt des del moment en què aconsegueixen de reviure'l sentimentalment (sobretot si això és difícil), sí, voldrien fins i tot ressuscitar-lo d'entre els morts. Com que els vanitosos són sempre una multitud, el perill dels estudis històrics, quan tota una època s'hi lliura, no és de fet insignificant: es malgasta massa força en tota mena de resurreccions de morts. Potser tot el moviment del romanticisme s'entén millor des d'aquest punt de vista.
+
+### 160. Va, cobejós i poc savi
+
+Va, cobejós i poc savi. — Els vostres desitjos són més grans que el vostre enteniment, i la vostra vanitat és encara més gran que els vostres desitjos — a persones com vosaltres és molt aconsellable, de soca-rel, força pràctica cristiana i, a més, una mica de teoria schopenhaueriana!
+
+### 161. Bellesa segons l'època
+
+Bellesa segons l'època. — Si els nostres escultors, pintors i músics volen captar el sentit del temps, han de representar la bellesa inflada, gegantina i nerviosa: tal com els grecs, sota l'imperi de la seva moral de la mesura, veien i representaven la bellesa com l'Apol·lo del Belvedere. En realitat hauríem d'anomenar-lo lleig! Però els ximples «classicistes» ens han robat tota honradesa!
+
+### 162. La ironia dels contemporanis
+
+La ironia dels contemporanis. — De moment és costum europeu tractar tots els grans interessos amb ironia, perquè per l'afany de servir-los no es té temps de prendre'ls seriosament.
+
+### 163. Contra Rousseau
+
+Contra Rousseau. — Si és veritat que la nostra civilització té quelcom de miserable, teniu l'opció de concloure amb Rousseau «aquesta civilització miserable és culpable de la nostra mala moralitat» o de concloure contra Rousseau «la nostra bona moralitat és culpable d'aquesta misèria de la civilització. Els nostres conceptes socials febles i efeminats del bé i del mal i la immensa dominació d'aquests sobre cos i ànima han acabat per fer febles tots els cossos i totes les ànimes i han trencat els homes independents, autònoms, desprejudiciats, els pilars d'una civilització forta: allà on encara es troba mala moralitat, s'hi veuen les darreres runes d'aquests pilars». Que el paradoxon s'enfronti al paradoxon, doncs! És impossible que la veritat estigui en ambdós costats: i és que hi és en algun dels dos? Que s'examini.
+
+### 164. Potser prematur
+
+Potser prematur. — Avui dia sembla que, sota tota mena de noms falsos i enganyosos i en la major part dels casos en gran confusió per part d'aquells que no es consideren vinculats als costums i les lleis existents, es fan els primers intents d'organitzar-se i amb això de crear-se un dret: mentre que fins ara, estigmatitzats com a criminals, lliurepensadors, immorals, malfactors, sota la maledicció de la proscripció i la mala consciència, vivien corromputs i corrompent. Això s'hauria de considerar, en conjunt, raonable i bo, encara que faci del segle vinent un segle perillós i pengi el fusell a l'espatlla de cadascú: ja pel sol fet que hi hagi un contrapoder que recordi constantment que no hi ha cap moral que faci moral per si sola i que tota [moralitat]{.term data-term="Sittlichkeit"} que s'afirma exclusivament a si mateixa mata massa força bona i surt massa cara a la humanitat. Els divergents, que tan sovint són els inventius i fecunds, no han de ser sacrificats més; ni tan sols ha de considerar-se deshonrós desviar-se de la moral, en actes i pensaments; s'han de fer nombrosos experiments nous de vida i de comunitat; s'ha de treure del món un pes immens de mala consciència — aquests objectius generals haurien de ser reconeguts i fomentats per tots els honestos i cercadors de la veritat!
+
+### 165. Quina moral no avorreix
+
+Quina moral no avorreix. — Els principals manaments morals que un poble es deixa ensenyar i predicar una vegada i una altra estan en relació amb els seus principals defectes, i per això no li resulten avorrits. Els grecs, als quals la moderació, el coratge fred, el sentit just i en general la sensatesa els mancaven massa sovint, tenien oïda per a les quatre virtuts socràtiques — perquè els eren tan necessàries i tanmateix tenien tan poc talent per a elles!
+
+### 166. A la cruïlla
+
+A la cruïlla. — Pfui! voleu entrar en un sistema on cal ser roda completa i absoluta, o hom cau sota les rodes! On s'entén per si sol que cadascú és allò per a què ha estat fet des de dalt! On buscar «connexions» pertany als deures naturals! On ningú no se sent ofès quan se li assenyala un home amb l'insinuació «li pot ser útil un dia»! On hom no s'avergonyeix de fer visites per demanar la intercessió d'una persona! On hom ni tan sols sospita com, amb una inserció deliberada en tals costums, es designa a si mateix com una terrissa ordinària de la natura, que els altres poden gastar i trencar sense sentir-se'n massa responsables; com si es digués: «d'aquesta mena, com jo, no n'hi haurà mai escassetat: preneu-me! Sense cerimònies!» —
+
+### 167. Els homenatges incondicionals
+
+Els homenatges incondicionals. — Quan penso en el filòsof alemany més llegit, el músic alemany més escoltat i l'home d'estat alemany més considerat, he de confessar-me: els alemanys, aquest poble dels sentiments incondicionals, ho passen malament ara, i precisament a causa dels seus propis grans homes. S'hi pot veure tres vegades un espectacle esplèndid: cada cop un torrent, en el propi llit que ell mateix s'ha cavat, i tan poderosament agitat que sovint podria semblar que vol fluir muntanya amunt. I tanmateix, per molt que hom estiri la seva veneració: qui no voldria ser d'una altra opinió que Schopenhauer, en conjunt i en general! — I qui podria ara ser de la mateixa opinió que Richard Wagner, en conjunt i en detall! per molt que sigui veritat el que algú va dir, que allà on ell s'escandalitza i allà on escandalitza, hi ha un problema enterrat, — però ell mateix no el treu a la llum. — I finalment, quants voldrien de tot cor ser de la mateixa opinió que Bismarck, si ell mateix fos de la mateixa opinió amb si mateix o almenys fes cara de voler-ho ser d'ara endavant! Cert: sense principis, però amb instints fonamentals, un esperit àgil al servei d'instints fonamentals forts, i precisament per això sense principis — això no hauria de ser res d'estrany en un home d'estat, sinó que hauria de valer com allò just i natural; però fins ara era precisament tan poc alemany! tan poc com el soroll al voltant de la música, i la discordança i el malhumor al voltant del músic, tan poc com la nova i extraordinària posició que Schopenhauer va escollir: és a dir, ni per sobre de les coses, ni de genolls davant les coses — ambdues coses encara haurien pogut anomenar-se alemanyes —, sinó *contra* les coses! Increïble! I desagradable! Posar-se en la mateixa fila que les coses i tanmateix com a adversari seu, al capdavall fins i tot com l'adversari de si mateix! — què pot fer el venerador incondicional amb un tal exemple! I què amb tres tals exemples, que entre ells mateixos no volen fer les paus! Aquí Schopenhauer és adversari de la música de Wagner, i Wagner adversari de la política de Bismarck, i Bismarck adversari de tota wagneria i schopenhaueria! Què queda per fer? Cap a on fugir amb la seva set d'«homenatge en bloc»! Es podrien seleccionar de la música del músic uns quants centenars de compassos de bona música que s'enganxen al cor i als quals hom s'acostarà de bon grat, perquè tenen cor — es podria, amb aquest petit botí, retirar-se i oblidar tota la resta? I un arranjament semblant respecte del filòsof i de l'home d'estat — seleccionar, enganxar-se al cor i sobretot oblidar la resta? Sí, si oblidar no fos tan difícil! Hi havia un home molt orgullós que no volia acceptar res sinó de si mateix, tant el bo com el dolent: quan va necessitar l'oblit, no es podia donar a si mateix, i va haver de conjurar tres vegades els esperits; van venir, van escoltar el seu desig i finalment van dir: «precisament això no està en el nostre poder!» No haurien d'aprofitar els alemanys l'experiència de Manfred? Per què conjurar primer els esperits! És inútil, no s'oblida quan es vol oblidar. I com seria de gran «la resta» que aquí, d'aquestes tres grandeses del temps, caldria oblidar per poder ser d'ara endavant el seu venerador en bloc! Més aconsellable és aprofitar la bona ocasió i assajar quelcom de nou: és a dir, créixer en l'honradesa amb si mateix i, d'un poble de la repetició crèdula i de la cega i acèrrima hostilitat, esdevenir un poble de l'assentiment condicionat i de l'oposició benvolent; però primer de tot aprendre que els homenatges incondicionals a les persones són quelcom de ridícul, que en això també per als alemanys el desaprendre no és cap deshonra, i que hi ha un adagi profund i digne de ser meditat: «*Ce qui importe, ce ne sont point les personnes: mais les choses*». Aquest adagi és, com aquell qui el va pronunciar, gran, honest, senzill i silenciós — tot com Carnot, el soldat i el republicà. — Però es pot parlar ara d'un francès als alemanys, i a més d'un republicà? Potser no; sí, potser no es pot ni tan sols recordar el que Niebuhr al seu temps va poder dir als alemanys: ningú li havia produït tant la impressió de la vertadera grandesa com Carnot.
+
+### 168. Un model
+
+Un model. — Què estimo de Tucídides, què fa que l'honri més que Plató? Té la més àmplia i desprejudiciada alegria per tot el que és típic en l'home i en els esdeveniments i troba que a cada tipus pertany un quàntum de bona raó: aquesta raó cerca descobrir-la. Posseeix una justícia pràctica més gran que Plató; no és un difamador ni empequeñidor dels homes que no li agraden o que li han fet mal en la vida. Al contrari: veu quelcom de gran en totes les coses i persones i ho hi afegeix, en tant que només veu tipus; què tindria a fer tota la posteritat, a la qual dedica la seva obra, amb allò que no fos típic! Així arriba en ell, l'home-pensador, aquella cultura del coneixement del món més desprejudiciat a una darrera esplèndida floració, la qual va tenir en Sòfocles el seu poeta, en Pèricles el seu home d'estat, en Hipòcrates el seu metge, en Demòcrit el seu naturalista: aquella cultura que mereix ser batejada amb el nom dels seus mestres, els sofistes, i que malauradament des d'aquest instant del baptisme comença a tornar-se-'ns pàl·lida i incomprensible, — perquè ara sospitem que devia ser una cultura molt immoral, contra la qual un Plató amb totes les escoles socràtiques va combatre! La veritat és aquí tan enredada i enganxifosa que fa nàusea deslligar-la: que el vell error (*error veritate simplicior*) segueixi el seu vell camí!
+
+### 169. El grec ens és molt estrany
+
+El grec ens és molt estrany. — Oriental o modern, asiàtic o europeu: en relació amb el grec, tot això té en comú el gust per les masses i el gaudi de la gran quantitat com a llenguatge del sublim, mentre que a Pèstum, Pompeia i Atenes i davant tota l'arquitectura grega hom resta tan sorprès de com, amb masses tan petites, els grecs saben expressar i els agrada expressar quelcom de sublim. — Igualment: com eren de simples els homes a Grècia en la seva pròpia representació! Com els sobrepassem nosaltres en el coneixement de l'home! Però com de laberíntics es presenten les nostres ànimes i les nostres representacions de les ànimes comparades amb les seves! Si volguéssim i goséssim una arquitectura segons la nostra manera d'ànima (som massa covards per això!) — el laberint hauria de ser el nostre model! La música que ens és pròpia i que realment ens expressa ja ho deixa endevinar! (En la música, en efecte, els homes es deixen anar, perquè creuen que ningú no és capaç de veure'ls a ells mateixos sota la seva música.)
+
+### 170. Una altra perspectiva del sentiment
+
+Una altra perspectiva del sentiment. — Què és la nostra xerrameca sobre els grecs! Què entenem de la seva art, l'ànima de la qual — és la passió per la bellesa masculina nua! — Només des d'aquí van sentir la bellesa femenina. Tenien, doncs, per a ella una perspectiva completament diferent de la nostra. I de manera similar era la seva relació amb l'amor a la dona: veneraven d'una altra manera, menyspreaven d'una altra manera.
+
+### 171. L'alimentació de l'home modern
+
+L'alimentació de l'home modern. — Sap digerir moltes coses, gairebé totes — és la seva mena d'ambició: però seria d'un ordre superior si precisament no ho sabés fer; *homo pamphagus* no és l'espècie més fina. Vivim entre un passat que tenia un gust més boig i caparrut que nosaltres i un futur que potser en tindrà un de més selecte — vivim massa al mig.
+
+### 172. Tragèdia i música
+
+Tragèdia i música. — Homes d'una constitució anímica fonamentalment bel·licosa, com per exemple els grecs del temps d'Èsquil, són difícils de commoure, i quan la [compassió]{.term data-term="Mitleid"} venç la seva duresa, els agafa com un vertigen i com una «força demoníaca» — se senten aleshores sense llibertat i esgarrifats d'un tremolor religiós. Després tenen els seus dubtes sobre aquest estat; mentre hi són, gaudeixen de l'encís de l'estar-fora-de-si i del meravellós, barrejat amb la més amarga absenta del sofriment: és precisament una beguda per a guerrers, quelcom rar, perillós i agredolç, que no es concedeix fàcilment. — A ànimes que senten la compassió d'aquesta manera s'adreça la tragèdia, a ànimes dures i bel·licoses, difícils de vèncer, sigui per la por, sigui per la compassió, però a les quals els és útil de ser estovades de tant en tant: però què ha de fer la tragèdia amb aquells que estan oberts a les «afeccions simpàtiques» com les veles als vents! Quan els atenesos es van tornar més tendres i sensibles, al temps de Plató — ah, com eren encara lluny de la sentimentalitat dels nostres habitants de grans i petites ciutats! — però tot i així els filòsofs ja es queixaven de la nocivitat de la tragèdia. Una era plena de perills, com la que tot just comença, en la qual la valentia i la virilitat pugen de preu, potser tornarà a endurir les ànimes gradualment fins que els poetes tràgics els siguin necessaris: mentrestant han estat un xic superflus — per dir-ho amb la paraula més suau. — Potser també per a la música vindrà encara l'era millor (serà la pitjor, de ben segur!), quan els artistes s'hagin d'adreçar amb ella a homes estrictament personals, durs en si mateixos, dominats per la fosca seriositat de la pròpia passió: però què ha de fer la música amb aquestes ànimes d'avui, massa mòbils, immadures, mig personals, curioses i àvides de tot, del temps que s'acaba?
+
+### 173. Els panegiristes del treball
+
+Els panegiristes del [treball]{.term data-term="Arbeit"}. — En la glorificació del «treball», en l'infatigable parlar del «benedicció del treball», hi veig el mateix arrière-pensée que en la lloança de les accions impersonals d'utilitat pública: la por de tot l'individual. Perquè en el fons es percep, davant del treball — i amb treball sempre es vol dir aquella dura laboriositat de matí a nit —, que un tal treball és la millor policia, que manté tothom a ratlla i sap impedir poderosament el desenvolupament de la raó, de l'avidesa, del desig d'independència. Perquè consumeix una quantitat extraordinària de força nerviosa i la sostrau al pensar, a la meditació, al somiar, a l'inquietar-se, a l'estimar, a l'odiar, posa sempre una petita fita davant els ulls i concedeix satisfaccions fàcils i regulars. Així una societat on es treballa contínuament i durament tindrà més seguretat: i la seguretat és adorada avui com la divinitat suprema. — I ara! Espant! Precisament el «treballador» s'ha tornat perillós! Formigueja d'«individus perillosos»! I darrere d'ells, el perill dels perills — l'*individuum*!
+
+### 174. Moda moral d'una societat comerciant
+
+Moda moral d'una societat comerciant. — Darrere del principi de la moda moral actual: «les accions morals són les accions de la simpatia envers els altres», hi veig operar un instint social de la por, que es disfressa intel·lectualment d'aquesta manera: aquest instint vol, com a cosa suprema, important i immediata, que a la vida li sigui treta tota la perillositat que antigament tenia, i que tothom i amb totes les forces hi ajudi: per això només les accions que apunten a la seguretat comuna i al sentiment de seguretat de la societat poden rebre el predicat de «bones»! — Quina poca alegria deuen tenir avui els homes de si mateixos, si una tal tirania de la por els prescriu la llei moral suprema, si es deixen manar tan sense contradicció mirar més enllà de si mateixos, al costat de si mateixos, però tenir ulls de linx per a tota necessitat, per a tot sofriment aliè! No estem, amb aquesta immensa intencionalitat de llimar totes les arestes i cantonades a la vida, en el millor camí de convertir la humanitat en sorra? Sorra! Petita, suau, rodona, infinita sorra! És aquest el vostre ideal, heralds de les afeccions simpàtiques? — Mentrestant, fins i tot la qüestió queda sense resposta, si s'és més útil a l'altre ajudant-lo i assistint-lo contínuament i directament — cosa que només pot fer-se de manera molt superficial, si no es converteix en una intromissió tirànica i una transformació — o formant de si mateix quelcom que l'altre contempli amb gaudi, per exemple un jardí bell, tranquil, tancat en si mateix, amb alts murs contra les tempestes i la pols dels camins, però també amb una porta hospitalària.
+
+### 175. Pensament fonamental d'una cultura de comerciants
+
+Pensament fonamental d'una cultura de comerciants. — Es veu ara en múltiples aspectes néixer la cultura d'una societat per a la qual el comerç és l'ànima en la mateixa mesura que per als grecs antics ho era la competició personal i per als romans la guerra, la victòria i el dret. El comerciant sap taxar-ho tot sense produir-ho, i taxar-ho segons la necessitat dels consumidors, no segons la seva pròpia necessitat més personal; «qui i quants consumeixen això?» és la seva pregunta de les preguntes. Aplica ara aquest tipus de taxació instintivament i incessantment: a tot, i per tant també a les produccions de les arts i les ciències, dels pensadors, erudits, artistes, homes d'estat, dels pobles i partits, de les èpoques senceres: per a tot el que es crea pregunta per l'oferta i la demanda, a fi de fixar per a si el valor d'una cosa. Això fet caràcter d'una cultura sencera, pensat fins a l'il·limitat i el més fi i aplicat a tota voluntat i capacitat: vet aquí allò de què estareu orgullosos, homes del segle vinent: si els profetes de la classe comerciant tenen raó de posar-ho en les vostres mans! Però jo tinc poca fe en aquests profetes. *Credat Judaeus Apella* — per parlar amb Horaci.
+
+### 176. La crítica sobre els pares
+
+La crítica sobre els pares. — Per què es suporta ara ja la veritat sobre el passat més recent? Perquè sempre hi ha ja una nova generació que se sent en oposició a aquest passat i gaudeix en aquesta crítica de les primícies del sentiment de poder. Antigament, al contrari, la nova generació volia fonamentar-se en l'anterior, i començava a sentir-se pròpia assumint les opinions dels pares, no sols adoptant-les sinó prenent-les, si podia, encara més estrictament. La crítica sobre els pares era aleshores viciosa: els joves idealistes d'ara hi comencen.
+
+### 177. Aprendre la soledat
+
+Aprendre la soledat. — Oh, pobres dracs de les grans ciutats de la política mundial, joves dotats, turmentats per l'ambició, que considereu el vostre deure pronunciar-vos sobre tots els esdeveniments — sempre passa quelcom! Que quan d'aquesta manera feu pols i soroll us creieu el carro de la història! Que, perquè sempre escolteu, sempre ateneu el moment en què podeu ficar la vostra paraula, perdeu tota productivitat autèntica! Per molt àvids que pugueu ser de grans obres: el profund silenci de l'embaràs no arriba mai a vosaltres! L'esdeveniment del dia us empeny com la palla davant seu, mentre creieu perseguir l'esdeveniment — pobres dracs! — Si hom vol fer d'heroi a l'escenari, no ha de pensar a fer de cor, sí, no ha de saber ni com es fa de cor.
+
+### 178. Els gastats de cada dia
+
+Els gastats de cada dia. — A aquests joves no els manca ni caràcter, ni talent, ni diligència: però no se'ls ha deixat mai temps de donar-se una direcció a si mateixos, sinó que se'ls ha acostumat des de petits a rebre'n una. Aleshores, quan eren prou madurs per «ser enviats al desert», es va fer una altra cosa — se'ls va utilitzar, se'ls va sostreure a si mateixos, se'ls va educar per al desgast quotidià, se'ls en va fer una doctrina del deure — i ara ja no ho poden evitar i no ho volen d'una altra manera. Només que no s'ha de negar a aquestes pobres bèsties de càrrega les seves «vacances» — com s'anomena, aquest ideal d'oci d'un segle sobrecarregat de treball: on hom pot gandulejar i ser estúpid i infantil a cor què vols.
+
+### 179. Tan poc estat com sigui possible
+
+Tan poc estat com sigui possible! — Totes les relacions polítiques i econòmiques no mereixen que precisament els esperits més dotats tinguin el dret i el deure d'ocupar-se'n: un tal consum d'esperit és en el fons pitjor que una penúria. Són i resten àmbits de treball per als caps menors, i altres caps que no els menors no haurien d'estar al servei d'aquest taller: que la màquina es faci miques una altra vegada! Però tal com estan les coses ara, quan no sols tothom creu haver-ne de saber cada dia, sinó que tothom vol a cada instant ser-ne actiu i per això abandona el seu propi treball, és una gran i ridícula follia. Es paga la «seguretat general» massa cara a aquest preu: i, el que és més boig, amb tot això es produeix el contrari de la seguretat general, com el nostre estimat segle s'encarrega de demostrar: com si mai no s'hagués demostrat! Fer la societat a prova de lladres i de foc i infinitament còmoda per a tot tracte i negoci, i transformar l'estat en la providència en el bon i el mal sentit — aquests són objectius baixos, mediocres i no absolutament imprescindibles, que no s'haurien de perseguir amb els mitjans i instruments més elevats que existeixen — uns mitjans que precisament caldria reservar per als objectius més elevats i rars! La nostra era, per molt que parli d'economia, és una malbaratadora: malbarata el més preciós, l'esperit.
+
+### 180. Les guerres
+
+Les guerres. — Les grans guerres del present són l'efecte de l'estudi històric.
+
+### 181. Governar
+
+Governar. — Els uns governen per plaer de governar; els altres, per no ser governats: — per a aquests és només el menor de dos mals.
+
+### 182. La conseqüència barroera
+
+La conseqüència barroera. — Es diu amb gran distinció: «això és un caràcter!» — sí! si mostra una conseqüència barroera, si la conseqüència salta a la vista fins i tot a l'ull obtús! Però quan un esperit més fi i profund impera i és conseqüent a la seva manera superior, els espectadors neguen l'existència del caràcter. Per això els homes d'estat astuts representen habitualment la seva comèdia darrere d'una disfressa de conseqüència barroera.
+
+### 183. Els vells i els joves
+
+Els vells i els joves. — «Hi ha quelcom d'immoral en els parlaments — així pensa encara més d'un —, perquè s'hi poden tenir opinions contra el govern!» — «Sempre s'ha de tenir l'opinió que el senyor mana» — aquest és l'onzè manament en més d'un vell cap honest, especialment al nord d'Alemanya. Hom en riu com d'una moda passada: però antigament era la moral! Potser es riurà un dia també d'allò que ara, entre la generació jove educada parlamentàriament, val com a moral: és a dir, posar la política de partit per sobre de la pròpia saviesa i respondre a cada qüestió de bé públic de la manera que faci bon vent a les veles del partit. «S'ha de tenir l'opinió que la situació del partit requereix» — així sonaria el cànon. Al servei d'una tal moral hi ha ara tota mena de sacrifici, autosuperació i martiri.
+
+### 184. L'estat com a producte dels anarquistes
+
+L'estat com a producte dels anarquistes. — Als països dels homes domesticats, encara n'hi ha prou d'endarrerits i indomesticats: de moment es concentren als campaments socialistes més que a qualsevol altre lloc. Si arriba el cas que aquests facin lleis, es pot comptar que es posaran una cadena de ferro i exerciran una disciplina terrible: — es coneixen! I suportaran aquestes lleis, amb la consciència que ells mateixos les han donades — el sentiment del poder, i d'aquest poder, és massa jove i deliciós per a ells perquè no ho sofrissin tot per ell.
+
+### 185. Captaires
+
+Captaires. — S'haurien de suprimir els captaires: perquè hom s'irrita de donar-los i s'irrita de no donar-los.
+
+### 186. Homes de negocis
+
+Homes de negocis. — El vostre negoci — és el vostre prejudici més gran, us lliga al vostre lloc, a la vostra societat, a les vostres inclinacions. Diligents en el negoci, — però mandrosos d'esperit, satisfets amb la vostra penúria i amb el davantal del deure penjat sobre aquesta satisfacció: així viviu, així voleu els vostres fills!
+
+### 187. D'un futur possible
+
+D'un futur possible. — És inconcebible un estat en què el malfactor es denunciés a si mateix, es dictés públicament el seu propi càstig, amb l'orgullós sentiment d'honrar així la llei que ell mateix ha fet, d'exercir el seu poder en castigar-se, el poder del legislador; es pot haver equivocat, però s'eleva per sobre de la seva falta amb el càstig voluntari, esborra la falta amb franquesa, grandesa i calma, no sols netejant-la: hi afegeix un benefici públic. —
+
+Aquest seria el criminal d'un futur possible, que pressuposa certament també una legislació del futur, del pensament fonamental: «em sotmeto només a la llei que jo mateix he donades, en les coses grans i petites». S'han de fer encara tants experiments! S'han de treure a la llum tants futurs!
+
+### 188. Embriaguesa i nutrició
+
+Embriaguesa i nutrició. — Els pobles són tan enganyats perquè sempre cerquen un enganyador, és a dir, un vi excitant per als seus sentits. Si només el poden tenir, es conformen amb mal pa. L'embriaguesa els val més que la nutrició — vet aquí l'ham que mossegaran sempre! Què són per a ells homes sorgits del seu si — ni que siguin els pràctics més experts — comparats amb conqueridors brillants o antigues cases principesques plenes de pompa! Com a mínim, l'home del poble els ha de prometre conquestes i pompa: així potser li creuran. Obeeixen sempre, i fan encara més que obeir, sempre que s'hi puguin embriagar! No se'ls pot oferir ni tan sols el repòs i el gaudi sense la corona de llorer i la seva força embogidora. Aquest gust plebeu, que pren l'embriaguesa per més important que la nutrició, no ha sorgit de cap manera al fons del populatxo: hi ha estat portat, trasplantat, i només hi creix encara de la manera més endarrerida i exuberant, mentre que té el seu origen en les intel·ligències més elevades i ha florit en elles durant mil·lennis. El poble és el darrer sòl salvatge on aquest esplèndid herbassar pot prosperar. — Com! I és precisament a ell que s'hauria de confiar la política? Perquè se'n faci la seva embriaguesa quotidiana?
+
+### 189. De la gran política
+
+De la gran política. — Per molt que la utilitat i la vanitat, tant d'individus com de pobles, puguin cooperar en la gran política: l'aigua més poderosa que l'impulsa endavant és la necessitat del [sentiment de poder]{.term data-term="Machtgefühl"}, que brolla de fonts inesgotables de tant en tant, no sols en les ànimes dels prínceps i dels poderosos, sinó no pas menys en les capes inferiors del poble. Arriba una vegada i una altra l'hora en què la massa està disposada a jugar-se la vida, la fortuna, la consciència, la virtut per aconseguir aquell goig suprem seu i imposar-se com a nació victoriosa i tirànicament arbitrària sobre altres nacions (o imaginar-s'ho). Aleshores brollen els sentiments pròdigs, abnegats, esperançats, confiats, temeraris en excés, fantàstics amb tanta abundància, que el príncep ambiciós o prudentment previsor pot engegar una guerra i posar la bona consciència del poble sota la seva injustícia. Els grans conqueridors sempre han tingut el llenguatge patètic de la virtut a la boca: sempre tenien al voltant masses que es trobaven en estat d'exaltació i només volien sentir el llenguatge més elevat. Estranya follia dels judicis morals! Quan l'home és en el sentiment de poder, es sent i es diu bo: i precisament aleshores els altres, sobre els quals ha de descarregar el seu poder, el senten i l'anomenen dolent! — Hesíode, en la faula de les edats dels homes, va pintar la mateixa era, la dels herois homèrics, dues vegades seguides i en va fer dues d'una: vista des dels qui estaven sota la terrible i bronzina pressió d'aquests aventurers de la violència, o n'havien sabut pels seus avantpassats, semblava dolenta; però els descendents d'aquests llinatges cavallerescos hi veneraven una bona era antiga, beatament semibeatífica. El poeta no va saber ajudar-se d'altra manera que com ho va fer — devia tenir oients d'ambdues menes al seu voltant!
+
+### 190. L'antiga formació alemanya
+
+L'antiga formació alemanya. — Quan els alemanys van començar a ser interessants per als altres pobles d'Europa — no fa gaire —, va ser gràcies a una formació que ara ja no posseeixen, sí, que han sacsejat amb un zel cec, com si hagués estat una malaltia: i tanmateix no van saber bescanviar-la per res de millor que la follia política i nacional. Certament, amb ella han aconseguit tornar-se molt més interessants per als altres pobles que quan ho eren per la seva formació: que tinguin la seva satisfacció, doncs! Mentrestant, no es pot negar que aquella formació alemanya va enganyar els europeus i que no era digna de tal interès, ni de tal imitació i apropiació competitiva. Que hom miri avui Schiller, Wilhelm von Humboldt, Schleiermacher, Hegel, Schelling, que llegeixi les seves correspondències i entri en el gran cercle dels seus seguidors: què els és comú, què d'ells ens afecta, com som ara, de vegades tan insofriblement, de vegades tan commovedor i llastimós? D'una banda, la mania d'aparèixer a tot preu moralment commogut; d'una altra, l'anhel de generalitats brillants i sense os, juntament amb la intenció de voler veure-ho tot més bonic (caràcters, passions, èpoques, costums) — malauradament «bonic» segons un gust dolent i difós, que tanmateix es vantava d'ascendència grega. És un idealisme tou, bonhomiós, de lluïssor argentada, que vol sobretot gestos noblament dissimulats i veus noblament dissimulades, una cosa tan presumptuosa com inofensiva, animada per la més cordial aversió contra la realitat «freda» o «seca», contra l'anatomia, contra les passions completes, contra tota forma d'abstinència i escepticisme filosòfics, i sobretot contra el coneixement de la natura, en la mesura que no es deixa usar com a simbolisme religiós. Goethe va contemplar aquest tràfec de la formació alemanya a la seva manera: al marge, amb suau resistència, en silenci, confirmant-se cada cop més en el seu propi camí millor. Poc després també Schopenhauer ho va contemplar — a ell se li havia tornat visible molta realitat del món i molta diableria del món, i en va parlar amb tanta brutalitat com entusiasme: perquè aquesta diableria té la seva bellesa! — I què va seduir en el fons els estrangers perquè no ho contemplessin com Goethe i Schopenhauer, o simplement no en fessin cas? Era aquella lluïssor apagada, aquella enigmàtica llum de Via Làctia, que brillava al voltant d'aquesta formació: llavors l'estranger es deia «Això ens és molt, molt llunyà, aquí s'acaba per a nosaltres el veure, el sentir, el comprendre, el gaudir, el valorar; tanmateix podrien ser estrelles! Hauran descobert els alemanys en silenci un racó del cel i s'hi hauran instal·lat? Cal intentar apropar-se als alemanys». I s'hi van apropar: mentre que no gaire més tard els mateixos alemanys van començar a esforçar-se a treure's la lluïssor de Via Làctia de sobre; sabien massa bé que no havien estat al cel — sinó en un núvol!
+
+### 191. Homes millors!
+
+Homes millors! — Em diuen que el nostre art s'adreça als homes àvids, insaciables, indomats, fàstics, turmentats del present, i els mostra una imatge de benaurança, elevació i desmundanització al costat de la imatge de la seva devastació: de manera que puguin oblidar i respirar per un moment, sí, potser endur-se de tornada d'aquell oblit l'impuls de la fugida i la conversió. Pobres artistes, amb un públic així! Amb uns arrière-pensées mig sacerdotals, mig d'alienistes! Quant més feliç era Corneille — «el nostre gran Corneille», com exclama Madame de Sévigné, amb un accent de dona davant d'un home sencer — quant més elevat el seu auditori, al qual podia fer bé amb les imatges de les virtuts cavalleresques, del deure estricte, del sacrifici generós, de l'heroica contenció de si mateix! Com estimaven ell i els seus l'existència d'una altra manera, no des d'una cega i feréstega «[voluntat]{.term data-term="Wille"}», que hom maleeix perquè no la pot matar, sinó com un lloc on la grandesa i la humanitat són possibles alhora i on fins i tot la coacció més estricta de les formes, la submissió a una arbitrarietat principesca i eclesiàstica, no pot suprimir ni l'orgull, ni la cavalleria, ni la gràcia, ni l'esperit de tots els individus, sinó que són sentits com un estímul i esperó del contrast amb l'autocràcia innata i la noblesa, amb el poder heretat de la voluntat i la passió!
+
+### 192. Desitjar-se adversaris perfectes
+
+Desitjar-se adversaris perfectes. — No es pot disputar als francesos que han estat el poble més cristià de la terra: no en el sentit que la religiositat de la massa hagi estat més gran que en altres llocs, sinó perquè entre ells els ideals cristians més difícils s'han encarnat en persones i no han restat mera representació, esbós, mitjaneria. Aquí tenim Pascal, en la unió d'ardor, esperit i honradesa, el primer de tots els cristians — i consideri's què s'havia d'unir aquí! Aquí tenim Fénelon, l'expressió perfecta i encisadora de la cultura eclesiàstica en totes les seves forces: un terme mitjà daurat, que com a historiador hom estaria temptat de demostrar com a quelcom d'impossible, quan només era quelcom d'inefablement difícil i improbable. Aquí tenim Madame Guyon entre les seves iguals, els quietistes francesos: i tot allò que l'eloqüència i l'ardor de l'apòstol Pau va cercar d'endevinar sobre l'estat de la més sublim, amorosa, silenciosa, extàtica semidivinitat del cristià, s'hi ha fet veritat i ha deixat enrere aquella impertinència jueva que Pau té davant Déu, gràcies a una autèntica, femenina, fina, distingida, naïvetat de la vella França en paraula i gest. Aquí tenim el fundador dels monestirs de la Trapa, ell, que amb l'ideal ascètic del cristianisme va fer l'última seriositat, no com una excepció entre francesos, sinó com a autèntic francès: perquè fins avui la seva fosca creació només ha pogut arrelar i mantenir-se forta entre francesos, els va seguir a l'Alsàcia i a Algèria. No oblidem els hugonots: mai no hi havia hagut una unió més bella de l'esperit guerrer i treballador, dels costums més fins i de la severitat cristiana. I a Port-Royal va arribar per darrera vegada la gran erudició cristiana a la seva floració: i els grans homes de França entenen la floració millor que en qualsevol altre lloc. Lluny de ser superficial, un gran francès té sempre la seva superfície, una pell natural per al seu contingut i la seva profunditat — mentre que la profunditat d'un gran alemany sol estar tancada com en una càpsula rugosa, com un elixir que es protegeix de la llum i de les mans lleugeres amb la seva coberta dura i estranya. — I ara endevini's per què aquest poble dels tipus acabats de la cristiandat havia de produir també els tipus acabats contraris del lliurepensador anticristià! El lliurepensador francès va lluitar sempre en si mateix contra grans homes i no sols contra dogmes i malformacions sublims, com els lliurepensadors d'altres pobles.
+
+### 193. *Esprit* i moral
+
+*Esprit* i moral. — L'alemany, que coneix el secret de ser avorrit amb esperit, saber i sentiment, i que s'ha acostumat a sentir l'avorriment com a moral — té davant l'*esprit* francès la por que pugui arrencar els ulls a la moral — i tanmateix una por i una delectança com l'ocellet davant la serp de cascavell. Dels alemanys famosos, potser ningú no ha tingut més *esprit* que Hegel — però també tenia una por tan gran, tan alemanya, davant d'ell, que va crear el seu estil peculiarment dolent. L'essència d'aquest estil és que un nucli és embolicat i tornat a embolicar fins que tot just es deixa veure, vergonyós i curiós — com «joves dones miren a través dels seus vels», per parlar amb el vell misògin Èsquil —: aquell nucli, però, és una ocurrència enginyosa, sovint atrevida, sobre les coses més espirituals, una combinació de paraules fina i agosarada, com escau en la societat dels pensadors, com a guarniment de la ciència — però en aquells embolcalls es presenta com a ciència abstrusa en si i totalment com a avorriment altament moral! Aquí tenien els alemanys una forma d'*esprit* que els era permesa i la van gaudir amb un entusiasme tan desbridat que el bon, el molt bon enteniment de Schopenhauer es va quedar parat — durant tota la seva vida va esbroncir contra l'espectacle que els alemanys li oferien, però mai no va poder explicar-se'l.
+
+### 194. Vanitat dels mestres de moral
+
+Vanitat dels mestres de moral. — L'èxit en general escàs dels mestres de moral s'explica pel fet que volien massa d'un sol cop, és a dir, eren massa ambiciosos: volien massa donar preceptes per a tots. Però això és vagar per la indefinició i fer discursos als animals per fer-los homes: quin prodigi que els animals ho trobin avorrit! Caldria triar cercles delimitats i buscar i exigir la moral per a ells, per exemple fer discursos als llops per fer-ne gossos. Però sobretot, el gran èxit resta sempre per a qui no vol educar ni a tots, ni a cercles delimitats, sinó a un de sol, i no mira ni a dreta ni a esquerra. El segle passat és superior al nostre precisament en el fet que va tenir tants homes educats individualment, juntament amb molts educadors que hi havien trobat la tasca de la seva vida — i amb la tasca també la dignitat, davant de si mateixos i de tota l'altra «bona societat».
+
+### 195. La formació anomenada clàssica
+
+La formació anomenada clàssica. — Descobrir que la nostra vida està consagrada al coneixement; que la llançaríem, no! que ja l'hauríem llançada, si aquesta consagració no la protegís de nosaltres mateixos; recitar-se sovint i amb commoció aquell vers:
+
+«Destí, et segueixo! I si no volgués, ho hauria de fer tanmateix i entre sospirs!»
+
+### 196. El límit del nostre sentit de l'oïda
+
+El límit del nostre sentit de l'oïda. — Hom sent només les preguntes per a les quals hom és capaç de trobar una resposta.
+
+### 197. Compte, doncs!
+
+Compte, doncs! — No hi ha res que agradem més de comunicar que el segell del secret, juntament amb allò que hi ha a sota.
+
+### 198. Enuig de l'orgullós
+
+Enuig de l'orgullós. — L'orgullós s'enrabia fins i tot amb aquells que l'impulsen endavant: — mira amb mal ull el seu cotxe!
+
+### 199. Generositat
+
+Generositat. — Generositat en el poderós és, sovint, la manca de sentit dels drets.
+
+### 200. Riure
+
+Riure. — Riure vol dir: alegrar-se del mal d'un altre, però amb bona consciència.
+
+### 201. Aplaudiment
+
+Aplaudiment. — En l'aplaudiment sempre hi ha una mena de soroll: fins i tot en l'aplaudiment que ens fem a nosaltres mateixos.
+
+### 202. El pròdig
+
+El pròdig. — Encara no posseeix aquella pobresa del ric que ja sap quant d'or donarà cada dia: la que fa una distribució raonada.
+
+### 203. *Hic niger est*
+
+*Hic niger est*. — Habitualment no té cap pensament, — però per excepció li vénen mals pensaments.
+
+### 204. El captaire i la cortesia
+
+El captaire i la cortesia. — «No és descortesia usar una pedra per picar a una porta quan manca la campaneta» — així pensen tots els captaires i tots els necessitats, però ningú no els dóna la raó.
+
+### 205. Necessitat
+
+[Necessitat]{.term data-term="Bedürfniss"}. — La necessitat passa per ser la causa del sorgiment: en realitat, sovint és només un efecte d'allò que ha sorgit.
+
+### 206. En la pluja
+
+En la pluja. — Plou, i jo penso en els pobres que ara s'apilonen amb les seves moltes preocupacions i sense pràctica per amagar-les: tots preparats i disposats a fer-se mal els uns als altres, i a procurar-se, fins i tot amb mal temps, una mena miserable de benestar. — I aquesta no és pas la meva pobresa!
+
+### 207. Un envejós
+
+Un envejós. — Vet aquí un envejós — no li desitgeu fills; estaria gelós d'ells, perquè ja no pot tornar a ser un nen.
+
+### 208. Gran home!
+
+Gran home! — Del fet que algú sigui «un home gran» no es pot concloure que sigui un home; potser és només un nen, o un camaleó de totes les edats, o una doneta encantada.
+
+### 209. Una manera de demanar raons
+
+Una manera de demanar raons. — Hi ha una manera de demanar-nos les nostres raons que ens fa oblidar no sols les nostres millors raons, sinó que desperta en nosaltres un entossudiment i una repugnància contra les raons en general: — una manera molt estupiditzant de preguntar i veritablement un artifici de gent tirànica!
+
+### 210. Mesura en la diligència
+
+Mesura en la diligència. — No cal voler sobrepassar la diligència del pare: això posa malalt.
+
+### 211. Enemics secrets
+
+Enemics secrets. — Poder-se sostenir un enemic secret — és un luxe per al qual la moralitat de fins i tot els esperits millors no sol ser prou rica.
+
+### 212. No deixar-se enganyar
+
+No deixar-se enganyar. — El seu esperit té males maneres, és precipitat i balbucejant d'impaciència: de manera que gairebé no endevinaríem quina ànima tan àmplia i d'alè tan llarg hi habita.
+
+### 213. El camí cap a la felicitat
+
+El camí cap a la felicitat. — Un savi preguntà a un boig quin era el camí cap a la felicitat. Sense vacilar, el boig va respondre, com qui és preguntat el camí cap a la ciutat més propera: «Admira't a tu mateix i viu al carrer!» «Alto! — va exclamar el savi — exigeixes massa, n'hi ha prou amb admirar-se a si mateix!» El boig va respondre: «Però com es pot admirar constantment sense menysprear constantment?»
+
+### 214. La fe salva
+
+La fe salva. — La fe en general no fa ni vertader ni fals: la virtut que posseeix és fer eficaç.
+
+### 215. Avarícia
+
+[Avarícia]{.term data-term="Geiz"}. — La nostra avarícia en comprar i vendre és un dels grans instruments contra el refinament de la nostra sensibilitat: hauríem de permetre'ns de pagar massa car, de donar-nos a la ruïna, i contrapesar àmpliament la generositat.
+
+### 216. Jove fons del mal
+
+Jove fons del mal. — Aquells nois que treballen durament als tallers no haurien de ser capaços de les accions que fan, ja que no hi ha temps per a elles: perquè la seva força és insuficient: la naturalesa, que els va donar la voluntat de fer el mal, però no va donar-los la força per a ella, — ha obert aquí una nova font de la pitjor mena.
+
+### 217. Per què estricte!
+
+Per què estricte! — Que no se'm digui que una severitat estricta serveix tant a l'educador com a l'educand! Un educador bo, que ha de ser primer ho i ha d'ésser-ho, no necessita ser estricte, sinó intel·ligent.
+
+### 218. Manejar les pròpies febleses com a artista
+
+Manejar les pròpies febleses com a artista. — Si al capdavall hem de tenir febleses i reconèixer-les com a lleis sobre nosaltres, desitjo a cadascú almenys prou força artística per saber fer de les seves febleses la contrapartida de les seves virtuts i, per mitjà de les seves febleses, fer-nos cobejosos de les seves virtuts: allò que els grans músics van entendre en una mesura tan excel·lent. Amb quina freqüència es fa sentir en la música de Beethoven un to bast, autoritari, impacient, en Mozart una jovialitat de gent planera, davant la qual el cor i l'esperit han de fer concessions, en Richard Wagner una inquietud que salta i s'imposa, amb la qual el més pacient gairebé perd el bon humor: però aleshores ell torna a la seva força, i igualment aquells altres; tots ells ens han creat, amb les seves febleses, una fam voraç de les seves virtuts i una llengua deu vegades més sensible per a cada gota d'esperit sonor, de bellesa sonora, de bondat sonora.
+
+### 219. L'engany en la humiliació
+
+L'engany en la humiliació. — Has causat al teu proïsme un dolor profund amb la teva insensatesa i has destruït una felicitat irrecuperable — i ara vences la teva vanitat, vas a trobar-lo, t'humilies davant d'ell, exposes la teva insensatesa al seu menyspreu i creus que, després d'aquesta escena dura i extremadament penosa per a tu, en el fons tot ha quedat arreglat — la teva pèrdua voluntària d'honor compensa la pèrdua involuntària de felicitat de l'altre: amb aquest sentiment te'n vas elevat i restaurat en la teva virtut. Però l'altre té el seu dolor profund com abans, no li resulta cap consol que tu siguis insensata i li hagis dit, fins i tot recorda l'espectacle penós que li has ofert quan t'has menyspreat a tu mateix davant d'ell, com una ferida nova, que et deu a tu — però no pensa en venjança i no comprèn com entre tu i ell res es pugui compensar. En el fons has representat aquella escena davant de tu mateix i per a tu mateix: havies convidat un testimoni per a tu, no per a ell — no t'enganyis!
+
+### 220. Dignitat i por
+
+Dignitat i por. — Les cerimònies, les vestidures de càrrec i estament, les cares serioses, la mirada solemne, el pas lent, el discurs enrevessat i tot allò que s'anomena dignitat: tot és la forma de disfressa d'aquells que en el fons són porucs — volen infondre por (a si mateixos o al que representen). Els destemuts, és a dir, originalment: els indubtablement i en tot moment terribles, no necessiten dignitat ni cerimònies, posen la sinceritat, el dir les coses de dret, en paraules i gestos, en bona reputació i encara més en mala reputació, com a senyal de la seva terrible seguretat en si mateixos.
+
+### 221. Moralitat del sacrifici
+
+Moralitat del sacrifici. — La moralitat que es mesura pel sacrifici és la de l'estadi semisalvatge. La raó hi obté una victòria difícil i sagnant dins l'ànima, hi ha contrainstints poderosos que cal tombar: sense una mena de crueltat, com en els sacrificis que exigeixen déus caníbals, no s'aconsegueix.
+
+### 222. On cal desitjar fanatisme
+
+On cal desitjar fanatisme. — Les natures [flemàtiques]{.term data-term="phlegmatisch"} només es poden entusiasmar fanatitzant-les.
+
+### 223. L'ull temut
+
+L'ull temut. — Res no és més temut pels artistes, poetes i escriptors que aquell ull que veu el seu petit engany, que percep retrospectivament com de vegades s'han aturat a la cruïlla on el camí portava o bé al gaudi innocent de si mateixos o bé a la recerca de l'efecte; que els calcula quan volien vendre poc per molt, quan cercaven elevar i embellir sense estar ells mateixos elevats; que veu el pensament a través de tot l'artifici de la seva art tal com era primer davant d'ells, potser com una figura de llum encisadora, però potser també com un robatori a tothom, com un pensament quotidià que havien d'estirar, escurçar, tenyir, embolicar, condimentar per fer-ne quelcom, en lloc que el pensament fes quelcom d'ells — oh, aquest ull que percep en la vostra obra tota la vostra inquietud, el vostre espiar i la vostra avidesa, la vostra imitació i la vostra voluntat de superar (que no és sinó una imitació envejosa), que coneix la vostra rubor tan bé com la vostra art d'amagar-la i reinterpretar-la davant vosaltres mateixos!
+
+### 224. L'«edificant» en la desgràcia del proïsme
+
+L'«edificant» en la desgràcia del proïsme. — Es troba en la desgràcia, i ara vénen els «compassius» i li pinten la seva desgràcia — finalment se'n van satisfets i edificats: s'han delectat amb l'horror de l'infortunat com amb el seu propi horror i s'han fet una bona tarda.
+
+### 225. Mitjà per ser ràpidament menyspreat
+
+Mitjà per ser ràpidament menyspreat. — Un home que parla molt i de pressa baixa extraordinàriament en la nostra estima, després del tracte més breu, fins i tot si parla amb seny — no sols en la mesura en què resulta molest, sinó molt més. Perquè endevinem a quantes persones ja ha resultat molest, i afegim al desplaer que ens fa el menyspreu que pressuposem que altres li tenen.
+
+### 226. Del tracte amb celebritats
+
+Del tracte amb celebritats. — A: Però per què eviteu aquest gran home? — B: No voldria aprendre a malinterpretar-lo! Les nostres imperfeccions no es suporten mútuament: jo sóc miop i desconfiat, i ell porta els seus diamants falsos tan a gust com els autèntics.
+
+### 227. Portadors de cadenes
+
+Portadors de cadenes. — Precaució amb tots els esperits que estan encadenats! Per exemple, amb les dones intel·ligents que el destí ha confinat en un entorn petit i esmortit i que hi envelleixen. Certament, jeuen aparentment indolents i mig cecs al sol: però a cada pas estrany, a cada cosa imprevista, salten per mossegar; es volen venjar de tot allò que ha escapat de la seva caseta de gos.
+
+### 228. Venjança en l'elogi
+
+Venjança en l'elogi. — Vet aquí una pàgina escrita plena d'elogis, i l'anomeneu plana: però si endevineu que hi ha una venjança amagada en aquest elogi, la trobareu gairebé excessivament fina i gaudireu molt de la riquesa de petits traços audaciosos i figures. No és la persona, sinó la seva venjança que és tan fina, rica i inventiva; ell mateix gairebé no se n'adona.
+
+### 229. Orgull
+
+Orgull. — Ah, cap de vosaltres no coneix el sentiment del torturat quan és tornat a la cel·la després de la tortura i amb el seu secret! — el subjecta encara amb les dents. Què en sabeu del jubilació de l'orgull humà!
+
+### 230. «Utilitarista»
+
+«Utilitarista». — Ara els sentiments en les coses morals van tan encreuats que per a un home es demostra una moral per la seva utilitat i per a un altre es refuta precisament per la seva utilitat.
+
+### 231. De la virtut alemanya
+
+De la virtut alemanya. — Com de degenerat en el seu gust, com d'esclau davant de dignitats, estaments, vestidures, pompa i luxe devia ser un poble que estimava el simple (*schlicht*) com el dolent (*schlecht*), l'home simple com l'home dolent! S'hauria d'oposar a l'orgull moral dels alemanys sempre aquesta parauleta «schlecht» i res més!
+
+### 232. D'una disputa
+
+D'una disputa. — A: Amic, s'ha quedat ronc de tant parlar! — B: Doncs quedo refutat. No en parlem més.
+
+### 233. Els «conscienciosos»
+
+Els «conscienciosos». — Heu observat quina mena de persones valoren més l'escrupolositat més estricta? Les que són conscients de molts sentiments miserables, que pensen amb ansietat de si mateixes i en si mateixes i tenen por dels altres, que volen amagar tant com sigui possible el seu interior — cerquen impressionar-se a si mateixes, per mitjà d'aquella severitat de la consciència i duresa del deure, gràcies a la impressió severa i dura que els altres han de rebre d'elles (especialment els subordinats).
+
+### 234. Por de la fama
+
+Por de la fama. — A: Que algú fugi de la seva fama, que ofengui deliberadament el seu panegirista, que tingui por de sentir judicis sobre si, per por de l'elogi — això existeix, això és real, cregueu-ho o no!
+
+— B: Certament existeix i es dóna! Només una mica de paciència, senyor Orgull! —
+
+### 235. Rebutjar l'agraïment
+
+Rebutjar l'agraïment. — Es pot ben rebutjar una petició, però mai no s'ha de rebutjar un agraïment (o, el que és el mateix, acceptar-lo fredament i convencionalment). Això ofèn profundament — i per què?
+
+### 236. Càstig
+
+[Càstig]{.term data-term="Strafe"}. — Una cosa estranya, el nostre càstig! No purifica el criminal, no és cap expiació: al contrari, embruta més que el propi crim.
+
+### 237. Una necessitat del partit
+
+Una necessitat del partit. — Hi ha una tristesa ridícula, però no inofensiva, en gairebé tot partit: en pateixen tots aquells que durant anys han estat els defensors fidels i honorables de l'opinió del partit i sobtadament un dia s'adonen que un de molt més poderós ha agafat la trompeta. Com suportaran que els hagin fet callar! I així es fan sentir, de vegades en tons nous.
+
+### 238. L'aspiració a la gràcia
+
+L'aspiració a la gràcia. — Quan una natura forta no té la inclinació a la crueltat i no està sempre ocupada de si mateixa, aspira involuntàriament a la gràcia — aquest és el seu distintiu. Els caràcters febles, en canvi, estimen els judicis aspres — s'associen als herois del menyspreu de l'home, als denigradors religiosos o filosòfics de l'existència, o es retiren darrere costums estrictes i «vocacions» penoses: així cerquen crear-se un caràcter i una mena de força. I ho fan igualment de manera involuntària.
+
+### 239. Indicació per als moralistes
+
+Indicació per als moralistes. — Els nostres músics han fet un gran descobriment: la lletjor interessant també és possible en la seva art! I així es llancen a aquest oceà obert de la lletjor, com embriacs, i mai no havia estat tan fàcil fer música. Ara per primera vegada s'ha guanyat el fons general de color fosc, sobre el qual fins i tot la franja més petita de música bella rep la lluïssor de l'or i l'esmaragda; ara per primera vegada es gosa sacsejar l'oient amb tempesta, revolta i deixar-lo sense alè, per donar-li després, amb un instant d'afonament en el repòs, un sentiment de benaurança que beneficia l'estimació de la música en general. S'ha descobert el contrast: ara per primera vegada són possibles els efectes més forts — i barats: ningú no demana ja bona música. Però heu de donar-vos pressa! Per a cada art ja només hi ha un breu lapse de temps un cop ha arribat a aquest descobriment. — Oh, si els nostres pensadors tinguessin oïdes per escoltar l'ànima dels nostres músics a través de la seva música! Quant de temps cal esperar fins que es retrobi una ocasió com aquesta, de sorprendre l'home interior en l'acte dolent i en la innocència d'aquest acte! Perquè els nostres músics no tenen la més petita intuïció que estan posant en música la seva pròpia història, la història de l'enlletgiment de l'ànima. Antigament, el bon músic gairebé havia de tornar-se un bon home per causa de la seva art — . I ara!
+
+### 240. De la moralitat de l'escena
+
+De la moralitat de l'escena. — Qui creu que el teatre de Shakespeare actua moralment i que la visió de Macbeth aparta irresistiblement del mal de l'ambició, s'equivoca: i s'equivoca una altra vegada si creu que el propi Shakespeare va sentir com ell. Qui realment està posseït per l'ambició furiosa, veu aquesta imatge seva amb gaudi; i quan l'heroi es perd per la seva passió, això és precisament la condimentació més punxant en la beguda calenta d'aquest gaudi. No ho va sentir el poeta d'una altra manera? Com regialment, i de cap manera vilment, fa córrer el seu ambiciós la seva carrera des del moment del gran crim! Només des d'aleshores atrau «demoníacament» i excita natures semblants a la imitació; — demoníac vol dir aquí: en desafiament de l'avantatge i de la vida, a favor d'un pensament i un instint. Creieu potser que Tristan i Isolda donen una lliçó contra l'adulteri perquè tots dos hi sucumbeixen? Això seria posar els poetes cap per avall: els quals, com sobretot Shakespeare, estan enamorats de les passions en si, i no menys de les seves disposicions mortals: — aquelles en què el cor ja no s'agafa a la vida més fermament que una gota al vidre. No és la culpa i el seu mal desenllaç el que els preocupa, ni a Shakespeare ni a Sòfocles (en l'Àiax, el Filoctetes, l'Èdip): per fàcil que hauria estat en els casos esmentats fer de la culpa la palanca del drama, precisament això ha estat evitat. Tampoc el poeta tràgic vol amb les seves imatges de la vida indisposar contra la vida! Al contrari, exclama: «és l'encís de tots els encisos, aquesta existència excitant, canviant, perillosa, fosca i sovint travessada pel sol! És una aventura viure — preneu-hi el partit que vulgueu, sempre tindrà aquest caràcter!» — Així parla des d'una era inquieta i vigorosa, mig embriagada i atordida per la seva sobreabundància de sang i energia — des d'una era pitjor que la nostra: per la qual cosa hem de reajustar i fer just l'objectiu d'un drama shakespearià, és a dir, no entendre'l.
+
+### 241. Por i intel·ligència
+
+Por i intel·ligència. — Si és veritat el que ara s'afirma amb més determinació, que la causa del pigment negre de la pell no s'ha de buscar en la llum: no podria ser el darrer efecte d'accessos d'ira freqüents i acumulats durant mil·lennis (i afluxos de sang a la pell)? Mentre que en altres tribus més intel·ligents l'espant i l'empal·lidiment igualment freqüents haurien donat com a resultat final el color blanc de la pell? — Perquè el grau de por és un indicador de la intel·ligència: i abandonar-se sovint a la ira cega, el senyal que l'animalitat encara és del tot propera i vol imposar-se de nou. — Gris-marró seria, doncs, el color originari de l'home — quelcom de simiesc i d'ursí, com és natural.
+
+### 242. Independència
+
+[Independència]{.term data-term="Unabhängigkeit"}. — Independència (en la seva dosi més feble anomenada «llibertat de pensament») és la forma de renúncia que el dominador finalment adopta — ell, que ha cercat llargament quelcom que pogués dominar i no ha trobat res sinó ell mateix.
+
+### 243. Les dues direccions
+
+Les dues direccions. — Si intentem contemplar el mirall en si, al final no hi descobrim sinó les coses que s'hi reflecteixen. Si volem captar les coses, al final no tornem sinó al mirall. — Aquesta és la història més general del coneixement.
+
+### 244. Alegria per allò real
+
+Alegria per allò real. — La nostra actual inclinació a l'alegria per allò real — gairebé tots la tenim — només s'explica pel fet que durant tant de temps, i fins a l'avorriment, ens ha agradat allò irreal. En si mateixa, tal com es presenta ara, sense selecció ni finesa, és una inclinació no sense preocupació: — el seu menor perill és la manca de gust.
+
+### 245. Finesa del sentiment de poder
+
+Finesa del [sentiment de poder]{.term data-term="Machtgefühl"}. — Napoleó s'irritava de parlar malament i no s'enganyava sobre això: però la seva afany de domini, que no desdenyava cap ocasió i era més fi que el seu fi esperit, el portava a parlar encara pitjor del que podia. Així es venjava del seu propi enuig (era gelós de tots els seus afectes, perquè tenien poder) i gaudia del seu arbitri autocràtic. Després, respecte de les oïdes i el judici dels oients, gaudia d'aquest arbitri una altra vegada: com si parlar-los així fos encara prou bo per a ells. Sí, jubilava en secret davant el pensament d'atordir el judici i confondre el gust amb el llamp i el tro de la més alta autoritat — que resideix en l'aliança de poder i genialitat; mentre que ambdues coses en ell, fredament i orgullosament, s'aferraven a la veritat que parlava malament. — Napoleó, com un tipus completament pensat i elaborat d'un sol instint, pertany a la humanitat antiga: els trets de la qual — la construcció simple i l'elaboració i dramatització inventiva d'un motiu o pocs motius — es reconeixen prou fàcilment.
+
+### 246. Aristòtil i el matrimoni
+
+Aristòtil i el matrimoni. — En els fills dels grans genis esclata la follia, en els fills dels grans virtuosos l'estupidesa — observa Aristòtil. Volia amb això convidar els homes d'excepció al matrimoni?
+
+### 247. Origen del mal temperament
+
+Origen del mal temperament. — L'injust i l'erràtic en l'ànim de certes persones, el seu desordre i la seva desmesura, són les darreres conseqüències d'innombrables inexactituds lògiques, manca d'aprofundiment i conclusions precipitades de les quals els seus avantpassats es van fer culpables. Les persones de bon temperament, en canvi, descenen de llinatges reflexius i aprofundits, que van posar la raó en un lloc alt — tant si era amb fins lloables com malvats, això no compta tant.
+
+### 248. El fingiment com a deure
+
+El fingiment com a deure. — La bondat ha estat desenvolupada sobretot pel llarg fingiment que cercava semblar bondat; arreu on existia gran poder es reconeixia la necessitat precisament d'aquesta mena de fingiment — inspira seguretat i confiança i centuplicà la suma real de poder físic. La mentida és, si no la mare, almenys la dida de la bondat. L'honradesa, igualment, ha estat conreada sobretot per l'exigència d'una aparença d'honradesa i probitat: en les aristocràcies hereditàries. De la pràctica persistent d'un fingiment neix finalment natura: el fingiment s'elimina finalment a si mateix, i els òrgans i instints en són els fruits gairebé inesperats en el jardí de la hipocresia.
+
+### 249. Qui és mai sol!
+
+Qui és mai sol! — El porc no sap què és estar sol: darrere la seva cadira hi ha sempre un enemic. — Oh, qui ens pogués contar la història d'aquell sentiment fi que s'anomena soledat!
+
+### 250. Nit i música
+
+Nit i música. — L'oïda, l'òrgan de la por, només ha pogut desenvolupar-se tan riquement com s'ha desenvolupat a la nit i en la penombra de boscos i coves foscos, d'acord amb el mode de vida del temps medrós, és a dir, del temps més llarg de la humanitat que ha existit: a la llum del dia l'oïda és menys necessària. D'aquí el caràcter de la música, com a art de la nit i la penombra.
+
+### 251. Estoic
+
+Estoic. — Hi ha una serenitat de l'estoic quan se sent oprimit pel cerimonial que ell mateix ha prescrit a la seva conducta: es gaudeix com a dominador.
+
+### 252. Que s'hi pensi!
+
+Que s'hi pensi! — El castigat ja no és el que ha fet l'acte. Sempre és el boc expiatori.
+
+### 253. Evidència
+
+Evidència. — Malament! Malament! El que millor i més tossudament cal demostrar és l'evidència. Perquè massa gent no té els ulls per veure-la. Però és tan avorrit!
+
+### 254. Els anticipadors
+
+Els anticipadors. — El que distingeix, però també és perillós, en les natures poètiques és la seva fantasia exhaustiva: la que anticipa el que serà i podria ser, l'anticipa en el gaudi, l'anticipa en el sofriment, i en el moment final de l'esdeveniment i l'acció ja n'està cansada. Lord Byron, que sabia tot això massa bé, va escriure al seu diari: «Si tinc un fill, ha de ser quelcom de ben prosaïc — jurisperiti o pirata.»
+
+### 255. Conversa sobre música
+
+Conversa sobre música. — A: Què en diu d'aquesta música? — B: M'ha aclaparat, no tinc res a dir. Escolti! Torna a començar! — A: Tant millor! Mirem de superar-la nosaltres aquesta vegada. Em permet unes paraules sobre aquesta música? I mostrar-li també un drama que potser la primera vegada no va voler veure? — B: D'acord! tinc dues oïdes i més si cal. Acosti's a mi! — A: — Això encara no és el que ens vol dir, de moment només promet que dirà quelcom, quelcom d'inaudit, com dóna a entendre amb aquests gestos. Perquè gestos és el que són. Com fa senyals! s'alça! llança els braços! I ara li sembla que ha arribat el moment suprem de la tensió: dues fanfares més, i presenta el seu tema, preciós i endiumenjat, com cruixint de pedres nobles. És una dona bonica? O un cavall bonic? Prou, mira al voltant amb encís, perquè ha de recollir mirades d'encís — ara per fi li agrada del tot el seu tema, ara es torna inventiu, gosa nous i audaços traços. Com fa emergir el seu tema! Ah! Compte — no sols sap adornar-lo, sinó també maquillar-lo! Sí, sap què és el color de la salut, sap fer que aparegui — és més fi en el seu autoconeixement del que jo creia. I ara està convençut que ha convençut els seus oients, dóna les seves ocurrències com si fossin les coses més importants del món, té l'atreviment impertinent d'assenyalar el seu tema com si fos massa bo per a aquest món. — Ah, com desconfia! Que no ens cansem! Així aboca les seves melodies sota dolçors — fins i tot apel·la als nostres sentits més grollers per excitar-nos i tornar a posar-nos sota el seu poder! Escolteu com conjura el que és elemental dels ritmes tempestuosos i atronadors! I ara, quan s'adona que ens agafen, ens estrenyen i gairebé ens esclafan, gosa tornar a barrejar el seu tema en el joc dels elements i persuadir-nos, mig atordits i sacsejats, que el nostre atordiment i sacseig és l'efecte del seu tema prodigiós. I d'ara endavant els oients ho creuen: tan bon punt sona, neix en ells un record d'aquella commoció elemental — aquest record ara beneficia el tema, — s'ha tornat «demoníac»! Quin coneixedor de l'ànima! Ens domina amb les arts d'un orador popular. — Però la música calla! — B: I sort que calla! perquè ja no puc suportar d'escoltar-lo! Deu vegades prefereixo deixar-me enganyar que saber la veritat a la seva manera! — A: Això és el que volia sentir de vostè. Així com vostè, són els millors d'ara: us conformeu amb deixar-vos enganyar! Veniu amb oïdes grolleres i àvides, no porteu la consciència de l'art per escoltar, heu llançat pel camí la vostra redlichkeit més fina! I amb això malmeniu l'art i els artistes! Cada cop que aplaudiu i jubileu, teniu la consciència dels artistes a les mans — i ai, si s'adonen que no sabeu distingir entre música innocent i música culpable! No em refereixo a la música «bona» i «dolenta» — de l'una i l'altra n'hi ha en ambdues menes! Però anomeno música innocent aquella que pensa única i absolutament en si mateixa, que creu en si mateixa i que ha oblidat el món per sobre seu — el resonar-per-si-mateixa de la soledat més profunda, que parla amb si mateixa sobre si mateixa i ja no sap que hi ha oients i espiadors i efectes i malentesos i fracassos allà fora. — Finalment: la música que acabem d'escoltar és precisament d'aquesta mena noble i rara, i tot el que n'he dit era mentida — perdoneu la meva malícia, si en teniu ganes! — B: Oh, vostè també estima aquesta música? Aleshores molts pecats li són perdonats!
+
+### 256. La felicitat dels dolents
+
+La felicitat dels dolents. — Aquests homes silenciosos, foscos, dolents tenen quelcom que no els podeu disputar, un gaudi rar i estrany en el *dolce far niente*, una quietud de capvespre i posta de sol com només la coneix un cor que massa sovint ha estat consumit, esquinçat, enverinat pels afectes.
+
+### 257. Paraules presents en nosaltres
+
+Paraules presents en nosaltres. — Expressem sempre els nostres pensaments amb les paraules que tenim a mà. O per expressar tota la meva sospita: tenim en cada moment precisament el pensament per al qual les paraules que tenim a mà són capaces d'expressar-lo aproximadament.
+
+### 258. Afalagar el gos
+
+Afalagar el gos. — Només cal acariciar el pèl d'aquest gos: immediatament espurneja i fa espurnes, com qualsevol altre adulador — i és enginyós a la seva manera. Per què no l'hauríem de suportar?
+
+### 259. L'antic panegirista
+
+L'antic panegirista. — «Ha emmudit sobre mi, encara que ara coneix la veritat i podria dir-la. Però sonaria a venjança — i ell estima la veritat massa, el digne d'estima!»
+
+### 260. Amulet dels dependents
+
+Amulet dels dependents. — Qui depèn inevitablement d'un senyor ha de tenir quelcom amb què inspiri por i mantingui el senyor a ratlla, per exemple la probitat o la franquesa o una mala llengua.
+
+### 261. Per què tan sublim!
+
+Per què tan sublim! — Oh, conec aquesta bèstia! Certament es plau més a si mateixa quan camina sobre dues potes «com un déu»: però quan ha tornat a caure sobre les seves quatre potes, em plau més a mi: li escau tan incomparablement més natural!
+
+### 262. El dimoni del poder
+
+El dimoni del [poder]{.term data-term="Macht"}. — No la necessitat, no el desig — no, l'amor al poder és el dimoni dels homes. Doneu-los-ho tot, salut, aliment, habitatge, entreteniment — i són i resten infeliços i capritxosos: perquè el dimoni espera i espera i vol ser satisfet. Preneu-los-ho tot i satisfeu-lo: i seran gairebé feliços — tan feliços com poden ser homes i dimonis. Però per què dic encara això? Luter ja ho va dir, i millor que jo, en els versos: «Que ens prenguin cos, bé, honor, fills i dona: deixa-ho córrer — el Regne ha de restar nostre!» Sí! Sí! El «Reich»!
+
+### 263. La contradicció encarnada i animada
+
+La contradicció encarnada i animada. — En el que s'anomena geni hi ha una contradicció fisiològica: posseeix, d'una banda, molts moviments salvatges, desordenats, involuntaris, i d'altra banda, moviments de la més alta activitat finalista — i amb això li és propi un mirall que li mostra ambdós moviments l'un al costat de l'altre i l'un dins de l'altre, però també prou sovint l'un contra l'altre. A conseqüència d'aquest espectacle és sovint infeliç, i quan se sent més bé, en la creació, és perquè oblida que precisament ara, amb la més alta activitat finalista, fa quelcom de fantàstic i irracional (això és tot art) — ho ha de fer.
+
+### 264. Voler equivocar-se
+
+Voler equivocar-se. — Les persones envejoses amb un olfacte més fi procuren no conèixer massa bé el seu rival, per poder sentir-se superiors a ell.
+
+### 265. El teatre té el seu temps
+
+El teatre té el seu temps. — Quan la fantasia d'un poble decau, neix en ell la inclinació a fer-se representar les seves llegendes a l'escenari; aleshores suporta els substituts grollers de la fantasia — però per a aquella era a la qual pertany el rapsode èpic, el teatre i l'actor disfressat d'heroi són un fre en lloc d'una ala per a la fantasia: massa a prop, massa determinat, massa pesat, massa poc somni i vol d'ocell.
+
+### 266. Sense gràcia
+
+Sense gràcia. — Li manca la gràcia i ho sap: oh, com sap dissimular-ho! Amb virtut estricta, amb fosquedat de mirada, amb desconfiança adoptada envers els homes i l'existència, amb bromes grolleres, amb menyspreu de les maneres de viure més fines, amb pathos i pretensions, amb filosofia cínica — sí, s'ha convertit en un caràcter, en la consciència constant de la seva mancança.
+
+### 267. Per què tan orgullós!
+
+Per què tan orgullós! — Un caràcter noble es distingeix d'un de vulgar en el fet que no té a mà una sèrie de costums i punts de vista, com l'altre: simplement no li han estat heretats ni ensenyats.
+
+### 268. Escil·la i Caribdis de l'orador
+
+Escil·la i Caribdis de l'orador. — Com era de difícil a Atenes parlar de manera que es guanyessin els oients per a la causa sense rebutjar-los amb la forma o desviar-los de la causa amb ella! Com és encara de difícil a França escriure d'aquesta manera!
+
+### 269. Els malalts i l'art
+
+Els malalts i l'art. — Contra tota mena de tribulació i misèria de l'ànima, s'ha d'intentar primer: canvi de dieta i treball corporal dur. Però la gent, en aquests casos, sol recórrer a mitjans d'embriaguesa: per exemple, a l'art — per a perjudici seu i de l'art! No us adoneu que, quan com a malalts demaneu l'art, feu malalts els artistes?
+
+### 270. Tolerància aparent
+
+Tolerància aparent. — Són paraules bones, benvolents, entenimentades, sobre i en favor de la ciència, però! però! veig darrere la vostra tolerància envers la ciència! Al racó del vostre cor creieu, malgrat tot, que no us és necessària, que és generós per part vostra deixar-la valer, sí, fer-ne de portaveus, sobretot quan la ciència no exerceix contra les vostres opinions aquesta generositat! Sabeu que no teniu cap dret a aquest exercici de tolerància? que aquest gest magnànim és un insult més groller a la ciència que una burla oberta que algun sacerdot o artista arrogant es permeti contra ella? Us manca aquella consciència estricta per allò que és vertader i real, no us turmenta ni tortura trobar la ciència en contradicció amb els vostres sentiments, no coneixeu l'anhel àvid del coneixement com una llei que impera sobre vosaltres, no sentiu cap deure en el desig de ser present amb l'ull allà on es coneix, de no deixar escapar res del que és conegut. No coneixeu allò que tracteu amb tanta tolerància! I només perquè no ho coneixeu, us resulta possible fer cares tan magnànimes! Vosaltres, precisament vosaltres, miraríeu amargament i fanàticament si la ciència us il·luminés una vegada la cara amb els seus ulls! — Què ens importa, doncs, que exerciu tolerància — envers un fantasma! I ni tan sols envers nosaltres! I què importa de nosaltres!
+
+### 271. L'estat d'ànim festiu
+
+L'estat d'ànim festiu. — Precisament per a aquelles persones que aspiren amb més ardor al poder, és indescriptiblement agradable sentir-se aclaparades! Enfonsar-se sobtadament i profundament en un sentiment, com en un remolí! Deixar-se arrencar les regnes de la mà i contemplar un moviment cap a qui sap on! Qui és, què és el que ens fa aquest servei — és un gran servei: estem tan feliços i sense alè i sentim una quietud excepcional com al més profund de la terra. Per una vegada del tot sense poder! Un joguet de forces primordials! És un relaxament en aquesta felicitat, un despreniment del gran pes, un rodar cap avall sense esforç com per una gravetat cega. És el somni de l'alpinista que té el seu objectiu a dalt, però que pel camí, de pura fatiga, s'adorm per un moment i somia la felicitat del contrari — precisament el rodar cap avall sense esforç. — Descric la felicitat tal com me l'imagino en la nostra actual societat d'Europa i Amèrica, perseguida i assedegada de poder. De tant en tant volen trontollar enrere cap a la impotència — aquest gaudi els l'ofereixen guerres, arts, religions, genis. Quan hom s'ha abandonat per un moment a una impressió que tot ho engoleix i esclafa — és l'estat d'ànim festiu modern! — aleshores es torna a estar més lliure, reposat, fred, sever, i s'aspira incansablement al contrari: al poder. —
+
+### 272. La purificació de la raça
+
+La purificació de la raça. — Probablement no hi ha races pures, sinó només races purificades, i aquestes en gran raresa. El que és habitual són les races creuades, en les quals sempre, al costat de la disharmonia de les formes corporals (per exemple, quan l'ull i la boca no combinen), es trobaran també disharmonies dels hàbits i conceptes de valor. (Livingstone va sentir algú dir: «Déu va crear els homes blancs i els negres, el diable, però, va crear les races mestisses».) Les races creuades són sempre alhora cultures creuades, moralitats creuades: són en general més dolentes, més cruels, més inquietes. La puresa és el resultat darrer d'innombrables adaptacions, absorcions i exclusions, i el progrés cap a la puresa es mostra en el fet que la força existent en una raça es limita cada vegada més a funcions individuals seleccionades, mentre que abans havia d'ocupar-se de massa coses i sovint contradictòries: una tal limitació sempre semblarà també un empobriment i cal jutjar-la amb prudència i delicadesa. Però finalment, quan el procés de purificació ha reeixit, tota aquella força que abans es gastava en la lluita de les propietats disharmonioses està a disposició de l'organisme sencer: per la qual cosa les races purificades sempre s'han tornat també més fortes i més belles. — Els grecs ens donen el model d'una raça i cultura purificada: i esperem que un dia s'aconsegueixi també una raça i cultura europea pura.
+
+### 273. L'elogi
+
+L'elogi. — Vet aquí algú de qui notes que et vol elogiar: et mordeixes els llavis, el cor se t'estreny: ah, que passi aquest calze! Però no passa, ve! Beguem, doncs, la dolça impertinència del panegirista, superem el fàstic i el profund menyspreu pel nucli del seu elogi, fem les arrugues de l'alegria agraïda sobre la cara — ell ha volgut fer-nos bé! I ara, un cop fet, sabem que se sent molt elevat, ha obtingut una victòria sobre nosaltres; — sí! i també sobre si mateix, el gos! — perquè no li ha estat fàcil arrencar-se aquest elogi.
+
+### 274. Dret i privilegi de l'home
+
+Dret i privilegi de l'home. — Nosaltres els homes som les úniques criatures que, quan surten malament, poden ratllat-se a si mateixes com una frase mal escrita — sigui que ho fem per l'honor de la humanitat o per compassió envers ella o per repugnància envers nosaltres mateixos.
+
+### 275. El transformat
+
+El transformat. — Ara es torna virtuós, només per fer mal als altres amb això. No el mireu tant!
+
+
+## Llibre Quart
+
+### 276. Quantes vegades! Que inesperat!
+
+Quantes vegades! Que inesperat! — Quants homes casats han viscut aquell matí en què els ha clarejat que la seva jove esposa és avorrida i creu el contrari! Per no parlar d'aquelles dones, la carn de les quals és dòcil i l'esperit feble!
+
+### 277. Virtuts càlides i fredes
+
+Virtuts càlides i fredes. — El coratge com a sang freda i impertorbabilitat, i el coratge com a bravura ardent i mig cega — tots dos reben un sol nom! Com són de diferents les [virtuts]{.term data-term="Tugenden"} fredes de les càlides! I seria un neci qui cregués que la «bondat» s'hi afegeix només per la calidesa: i no menor neci qui la volgués atribuir només a la fredor! La veritat és que la humanitat ha trobat molt útil tant el coratge càlid com el fred, i a més a més no prou freqüent com per no comptar-lo en ambdós colors entre les pedres precioses.
+
+### 278. La memòria complaent
+
+La memòria complaent. — Qui ocupa un rang elevat fa bé de procurar-se una memòria complaent, és a dir: de retenir tot el bé possible de les persones i de traçar-hi una ratlla: així se les manté en una agradable dependència. De la mateixa manera pot procedir l'home amb si mateix: que tingui o no una memòria complaent, això decideix finalment sobre la seva pròpia actitud envers si mateix, sobre la noblesa, la bondat o la desconfiança en l'observació de les seves inclinacions i intencions, i finalment, de nou, sobre la naturalesa de les inclinacions i intencions mateixes.
+
+### 279. En què ens tornem artistes
+
+En què ens tornem artistes. — Qui converteix algú en el seu ídol, intenta justificar-se davant si mateix elevant-lo a l'ideal; es torna artista en això, per tal de tenir bona consciència. Quan pateix, no pateix per la ignorància, sinó per la mentida a si mateix, com si no ho sabés. — La necessitat interior i el plaer d'un home així — i tots els apassionadament enamorats en formen part — no es pot esgotar amb galledes ordinàries.
+
+### 280. Infantil
+
+Infantil. — Qui viu com els infants — és a dir, no lluita pel seu pa ni creu que els seus actes tinguin un significat definitiu — roman infantil.
+
+### 281.
+
+El jo vol posseir-ho tot. — Sembla que l'home en general només actua per posseir: almenys les llengües suggereixen aquest pensament, les quals consideren tota acció passada com si amb ella posseíssim quelcom («he parlat, he lluitat, he vençut»: és a dir, ara estic en possessió de la meva paraula, la meva lluita, la meva victòria). Com d'avar es mostra l'home en tot això! Ni tan sols deixar que el passat se li escapi de les mans, sinó voler posseir-lo també!
+
+### 282. Perill en la bellesa
+
+Perill en la bellesa. — Aquesta dona és bella i intel·ligent: ah, però quant més intel·ligent hauria arribat a ser, si no fos bella!
+
+### 283. Pau domèstica i pau de l'ànima
+
+Pau domèstica i pau de l'ànima. — El nostre estat d'ànim habitual depèn de l'estat d'ànim en què sabem mantenir el nostre entorn.
+
+### 284. Presentar el nou com a vell
+
+Presentar el nou com a vell. — Molts es mostren irritats quan se'ls explica una novetat; senten la superioritat que la novetat atorga a qui la sap abans.
+
+### 285. On acaba el jo?
+
+On acaba el jo? — La majoria prenen sota la seva protecció una cosa que saben, com si el coneixement ja la convertís en propietat seva. L'afany d'apropiació del [sentiment del jo]{.term data-term="Ichgefühl"} no té límits: els grans homes parlen com si tot el temps estigués darrere seu i ells fossin el cap d'aquest llarg cos, i les bones dones es compten com a mèrit la bellesa dels seus fills, dels seus vestits, del seu gos, del seu metge, de la seva ciutat, i només no gosen dir «tot això soc jo». *Chi non ha, non è* — es diu a Itàlia.
+
+### 286. Animals domèstics i de companyia, i coses semblants
+
+Animals domèstics i de companyia, i coses semblants. — Hi ha res més repugnant que la sentimentalitat envers plantes i animals, de part d'una criatura que des del principi ha viscut entre ells com l'enemic més furiós i que finalment, davant les seves víctimes afeblides i mutilades, pretén encara sentiments tendres! Davant aquesta mena de «natura», a l'home li escau sobretot la serietat, si és que és un home que pensa.
+
+### 287.
+
+Dos amics. — Eren amics, però han deixat de ser-ho, i van desfer la seva amistat tots dos alhora: l'un perquè es creia massa desconegut, l'altre perquè es creia massa conegut — i tots dos s'enganyaven! — perquè cap dels dos no es coneixia prou a si mateix.
+
+### 288. Comèdia dels nobles
+
+Comèdia dels nobles. — Aquells a qui no els surt la noble i cordial familiaritat, intenten fer endevinar la seva natura noble mitjançant la reserva i la severitat i un cert menyspreu per la familiaritat: com si el fort sentiment de confiança que tenen s'avergonyís de mostrar-se.
+
+### 289. On no es pot dir res contra una virtut
+
+On no es pot dir res contra una virtut. — Entre els covards, és de mal gust dir alguna cosa contra la valentia, i provoca menyspreu; i les persones sense escrúpols es mostren exasperades quan es diu alguna cosa contra la [compassió]{.term data-term="Mitleiden"}.
+
+### 290. Un malbaratament
+
+Un malbaratament. — En les natures excitables i sobtades, les primeres paraules i accions són gairebé sempre insignificants per al seu veritable caràcter (les dicten les circumstàncies i són, per dir-ho així, imitacions de l'esperit de les circumstàncies), però com que ja han estat dites i fetes, les paraules i accions de caràcter genuí que vénen després han de gastar-se sovint en compensar, reparar o fer oblidar les primeres.
+
+### 291. Presumpció
+
+[Presumpció]{.term data-term="Anmaassung"}. — La presumpció és un orgull fingit i simulat; però a l'orgull li és precisament propi que no pot ni vol cap simulació ni hipocresia — en aquest sentit, la presumpció és la hipocresia de la incapacitat per a la hipocresia, quelcom molt difícil i que gairebé sempre fracassa. Suposant, però, que es delata, com sol passar, al presumptuós l'espera un triple inconvenient: se l'increpa perquè ens ha volgut enganyar, i se l'increpa perquè ha volgut mostrar-se superior a nosaltres — i finalment encara se'n riuen, perquè totes dues coses li han sortit malament. Com cal, doncs, desaconsellar la presumpció!
+
+### 292. Una mena de malentès
+
+Una mena de malentès. — Quan sentim parlar algú, sovint n'hi ha prou amb el so d'una sola consonant (per exemple una *r*) per infondre'ns un dubte sobre l'honestedat del seu sentiment: no estem acostumats a aquell so i l'hauríem de produir voluntàriament, amb arbitrarietat — ens sona «afectat». Aquí hi ha un terreny dels malentesos més grollers: i el mateix val per a l'estil d'un escriptor que té costums que no són els de tothom. La seva «naturalitat» només és sentida com a tal per ell, i precisament amb allò que ell mateix considera «afectat», perquè un cop hi va cedir a la moda i al suposat «bon gust», potser agrada i inspira confiança.
+
+### 293. Agraït
+
+Agraït. — Un gra de sentit agraït i de pietat de massa — i ja se'n pateix com d'un vici i es cau, amb tota la pròpia independència i honestedat, sota la mala consciència.
+
+### 294. Sants
+
+Sants. — Són els homes més sensuals els que han de fugir de les dones i mortificar el seu cos.
+
+### 295. Finesa del servei
+
+Finesa del servei. — Dins del gran art de servir, una de les tasques més fines és servir un ambiciós indomable, que certament és el més fort egoista en tot, però que de cap manera vol passar per tal (això és precisament un tret de la seva ambició), a qui tot ha de succeir segons la seva voluntat i el seu capritx, i tanmateix sempre de manera que sembli com si ell se sacrifiqués i rarament volgués alguna cosa per a si mateix.
+
+### 296. El duel
+
+El duel. — Considero un avantatge, va dir algú, poder tenir un duel quan n'hi ha un d'absolutament necessari; perquè al meu voltant sempre hi ha braus camarades. El duel és l'últim camí honorable que resta cap al suïcidi, malauradament un camí indirecte i ni tan sols del tot segur.
+
+### 297. Perniciós
+
+Perniciós. — Hom arruïna un jove de la manera més segura quan l'indueix a estimar més el qui pensa igual que el qui pensa diferent.
+
+### 298. El culte als herois i els seus fanàtics
+
+El culte als herois i els seus fanàtics. — El fanàtic d'un ideal que té carn i sang sol tenir raó mentre nega, i és terrible en això: coneix allò que nega tan bé com a si mateix, per la raó més simple: perquè ve d'allà, s'hi sent a casa i en secret sempre tem haver-hi de tornar — vol fer-se impossible el retorn per la manera com nega. Però tan bon punt afirma, entreclou els ulls i comença a idealitzar (sovint només per fer mal als que s'han quedat a casa); se'n diu quelcom d'artístic — d'acord, però també hi ha quelcom de deshonest. L'idealitzador d'una persona se la situa tan lluny que ja no la pot veure nítidament — i aleshores interpreta el que encara veu com a «bell», és a dir: com a simètric, de línies suaus, indeterminat. Com que ara vol adorar el seu ideal que plana en la llunyania i l'alçària, necessita, per protegir-lo del *profanum vulgus*, construir un temple per a la seva adoració. Hi porta tots els objectes venerables i consagrats que encara posseeix, perquè el seu encantament també beneficiï l'ideal i aquest creixi amb aquest aliment i es torni cada cop més diví. Finalment ha acabat de fabricar el seu déu — però ai! n'hi ha un que sap com ha anat tot plegat, la seva [consciència]{.term data-term="Gewissen"} intel·lectual — i n'hi ha també un altre que hi protesta, del tot inconscientment: el propi divinitzat, que ara, com a conseqüència del culte, el cant de lloança i l'encens, es torna insuportable i es delata de manera abominable com a no-déu i massa-home. Aquí només queda al fanàtic una sortida: es deixa maltractar pacientment, ell i els seus iguals, i interpreta tota la misèria encara *in majorem dei gloriam*, mitjançant una nova espècie d'autoengany i de noble mentida: pren partit contra si mateix i sent, com a maltractat i com a intèrpret, quelcom com un martiri — així s'enfila al cim de la seva presumpció. — Homes d'aquesta mena vivien, per exemple, al voltant de Napoleó: sí, potser és precisament ell qui ha infós al nostre segle aquella prosternació romàntica, aliena a l'esperit de la Il·lustració, davant el «geni» i l'«heroi», ell, davant el qual un Byron no s'avergonyia de dir que era un «cuc davant un ésser semblant». (Les fórmules d'una tal prosternació les va trobar aquell vell i presumptuós cap de vent, Thomas Carlyle, que va dedicar una llarga vida a fer romàntica la raó dels seus anglesos: en va!)
+
+### 299. Aparença d'heroisme
+
+Aparença d'heroisme. — Llançar-se enmig dels enemics pot ser el signe de la covardia.
+
+### 300. Clement amb l'adulador
+
+Clement amb l'adulador. — La darrera astúcia dels insaciablement ambiciosos és no deixar notar el menyspreu pels homes que la vista dels aduladors els inspira, sinó mostrar-se clements també amb ells, com un déu que no pot ser sinó clement.
+
+### 301. «Amb caràcter»
+
+«Amb caràcter». — «El que he dit una vegada, ho faig» — aquesta manera de pensar es considera plena de caràcter. Quantes accions es fan, no perquè hagin estat triades com les més raonables, sinó perquè, quan se'ns van acudir, van excitar d'alguna manera la nostra vanitat i ambició, de manera que hi persistim i les executem cegament! Així reforcen en nosaltres mateixos la fe en el nostre caràcter i la nostra bona consciència, és a dir, en conjunt, la nostra força: mentre que la tria del més raonable possible manté l'escepticisme envers nosaltres i, en conseqüència, un sentiment de feblesa.
+
+### 302. Una, dues i tres vegades cert!
+
+Una, dues i tres vegades cert! — Els homes menteixen indescriptiblement sovint, però després no hi pensen i en conjunt no s'ho creuen.
+
+### 303. Passatemps del coneixedor d'homes
+
+Passatemps del coneixedor d'homes. — Ell creu conèixer-me i se sent fi i important quan tracta amb mi d'aquesta o d'aquella manera: em guardo de desenganyar-lo. Perquè ho hauria de pagar, mentre que ara em vol bé, ja que li proporciono un sentiment de superioritat sàvia. — Aquí n'hi ha un altre: que tem que jo m'imagini conèixer-lo, i s'hi sent humiliat. Així es comporta de manera esgarrifosa i indefinida i cerca enganyar-me sobre ell — per elevar-se de nou per damunt meu.
+
+### 304. Els destructors del món
+
+Els destructors del món. — A aquest no li surt alguna cosa; finalment exclama indignat: «que s'enfonsi el món sencer!» Aquest sentiment abominable és el cim de l'[enveja]{.term data-term="Neid"}, que conclou: com que jo no puc tenir alguna cosa, el món sencer no ha de tenir res! el món sencer no ha de ser res!
+
+### 305. Avarícia
+
+Avarícia. — La nostra avarícia en les compres augmenta amb la baratura dels objectes — per què? Serà que les petites diferències de preu són precisament les que fan el petit ull de l'avarícia?
+
+### 306. Ideal grec
+
+Ideal grec. — Què admiraven els grecs d'Odisseu? Sobretot la capacitat per a la mentida i per a la represàlia astuta i terrible; estar a l'alçada de les circumstàncies; quan convé, semblar més noble que el més noble; poder ser el que es vulgui; perseverança heroica; posar-se tots els mitjans a disposició; tenir esperit — el seu esperit és l'admiració dels déus, que somriuen quan hi pensen —: tot això és l'ideal grec! El més notable és que aquí la contraposició entre aparença i ésser no se sent en absolut i, per tant, tampoc no es comptabilitza moralment. Hi ha hagut mai actors tan consumats!
+
+### 307. Facta! Sí, Facta ficta!
+
+*Facta!* Sí, *Facta ficta!* — Un historiador no té a veure amb allò que realment ha succeït, sinó només amb els esdeveniments suposats: perquè només aquests han tingut efecte. Igualment, només amb els herois suposats. El seu tema, l'anomenada història universal, són opinions sobre accions suposades i els seus motius suposats, que al seu torn donen peu a opinions i accions, la realitat de les quals, però, s'evapora immediatament i actua només com a vapor — un engendrar i concebre continus de fantasmes sobre les boires profundes de la realitat insondable. Tots els historiadors narren coses que mai no han existit, excepte en la imaginació.
+
+### 308. No entendre de comerç és noble
+
+No entendre de comerç és noble. — Vendre la pròpia virtut només al preu més alt, o fins i tot usurejar-hi, com a mestre, funcionari, artista — converteix el geni i el talent en un afer de botiguers. Amb la pròpia saviesa, no cal voler ser astut!
+
+### 309. Por i amor
+
+Por i amor. — La [por]{.term data-term="Furcht"} ha afavorit més el coneixement general dels homes que l'amor, perquè la por vol endevinar qui és l'altre, què pot, què vol: enganyar-s'hi seria perill i perjudici. A l'inrevés, l'amor té un impuls secret a veure en l'altre tanta bellesa com sigui possible o a elevar-lo tan amunt com es pugui: enganyar-s'hi seria per a ell un plaer i un avantatge — i així ho fa.
+
+### 310. Els bonhomiosos
+
+Els bonhomiosos. — Els bonhomiosos han adquirit la seva naturalesa per la por constant que els seus avantpassats tenien davant les intromissions alienes — suavitzaven, apaivagaven, demanaven perdó, es plegaven, distreien, adulaven, s'arraulien, amagaven el dolor, el disgust, alliçaven de seguida els seus trets — i finalment van llegar tot aquest mecanisme delicat i ben rodejat als seus fills i nets. A aquests, una sort més favorable no els va donar cap motiu per a aquella por constant: malgrat tot, toquen constantment el seu instrument.
+
+### 311. L'anomenada ànima
+
+L'anomenada ànima. — La suma de moviments interiors que resulten fàcils a l'home i que, en conseqüència, fa de bon grat i amb gràcia, s'anomena la seva [ànima]{.term data-term="Seele"}; — es considera sense ànima qui deixa notar esforç i duresa en els moviments interiors.
+
+### 312. Els oblidadissos
+
+Els oblidadissos. — En els esclats de la passió i en el fantasieig del somni i de la follia, l'home redescobreix la seva prehistòria i la de la humanitat: l'animalitat amb les seves ganyotes salvatges; la seva memòria s'estén prou enrere, mentre que el seu estat civilitzat s'ha desenvolupat a partir de l'oblit d'aquestes experiències primigènies, és a dir, del relaxament d'aquella memòria. Qui, com un oblidadís de la més alta categoria, ha restat sempre molt lluny de tot això, no comprèn els homes — però és un avantatge per a tothom que de tant en tant hi hagi individus aïllats que «no els comprenen» i que han estat engendrats, per dir-ho així, de llavor divina i nascuts de la raó.
+
+### 313. L'amic que ja no es desitja
+
+L'amic que ja no es desitja. — L'amic les esperances del qual no podem satisfer, el preferim com a enemic.
+
+### 314. Des de la societat dels pensadors
+
+Des de la societat dels pensadors. — Enmig de l'oceà del [devenir]{.term data-term="Werden"} ens despertem sobre un illot que no és més gran que una barca, nosaltres aventurers i ocells migratoris, i ens hi mirem al voltant una estona: tan de pressa i tan curiosament com és possible, perquè de seguida ens pot arrossegar un vent o una onada pot escombrar l'illot, de manera que no quedi res de nosaltres! Però aquí, en aquest petit espai, trobem altres ocells migratoris i sentim parlar dels anteriors — i així vivim un minut deliciós de coneixement i d'endevinació, entre alegres batecs d'ales i piuladissa els uns amb els altres, i amb l'esperit ens llançem a l'aventura sobre l'oceà, no menys orgullosos que ell mateix!
+
+### 315. Despossseir-se
+
+Desposseir-se. — Deixar anar quelcom del que es posseeix, renunciar al propi dret — fa plaer, quan indica una gran riquesa. Aquí pertany la [generositat]{.term data-term="Grossmuth"}.
+
+### 316. Sectes febles
+
+Sectes febles. — Les sectes que senten que romandran febles, van a la caça d'adherents intel·ligents individuals i volen suplir amb la qualitat allò que els manca en quantitat. Aquí no rau cap perill petit per als intel·ligents.
+
+### 317. El judici del vespre
+
+El judici del vespre. — Qui reflexiona sobre la seva obra del dia i de la vida quan n'és al final i és cansat, arriba habitualment a una consideració melancòlica: però la culpa no és del dia ni de la vida, sinó del cansament. — Enmig de la creació no ens prenem habitualment temps per jutjar la vida i l'existència, i enmig del gaudi tampoc: però si alguna vegada hi arriba, ja no donem la raó a aquell qui va esperar el setè dia i el repòs per trobar-ho tot molt bell — havia perdut el millor moment.
+
+### 318. Precaució davant els sistemàtics!
+
+Precaució davant els sistemàtics! — Hi ha una teatralitat dels sistemàtics: com que volen omplir un sistema i arrodonir-ne l'horitzó, han d'intentar fer aparèixer les seves qualitats més febles amb l'estil de les més fortes — volen representar natures completes i d'una sola peça.
+
+### 319. Hospitalitat
+
+[Hospitalitat]{.term data-term="Gastfreundschaft"}. — El sentit dels costums de l'hospitalitat és: paralitzar l'hostilitat en l'estranger. Allà on en l'estranger ja no se sent primerament l'enemic, l'hospitalitat minva; floreix mentre floreix el seu pressupòsit malvat.
+
+### 320. Del temps atmosfèric
+
+Del temps atmosfèric. — Un temps molt inusual i imprevisible fa que els homes es tornin desconfiats també els uns dels altres; s'hi tornen avesats a les novetats, perquè han d'abandonar els seus costums. Per això els dèspotes estimen tots els països on el temps és moral.
+
+### 321. Perill en la innocència
+
+Perill en la innocència. — Les persones innocents es converteixen en víctimes en tots els aspectes, perquè la seva ignorància els impedeix distingir entre mesura i desmesura i ser precavuts contra si mateixos a temps. Així, joves dones innocents, és a dir ignorants, s'acostumen al gaudi freqüent dels afrodisíacs i en pateixen la mancança més tard, quan els seus marits emmalalteixen o es marceixen prematurament; precisament la concepció ingènua i crèdula, segons la qual aquest tracte freqüent seria el dret i la norma, les porta a una necessitat que més tard les exposa a les temptacions més violentes i a coses pitjors. Però en general i en un sentit elevat: qui estima una persona o una cosa sense conèixer-la, esdevé presa d'alguna cosa que no estimaria si la pogués veure. Arreu on calen experiència, precaució i passos mesurats, serà precisament l'innocent el més a fons arruïnat, perquè ha de beure amb els ulls cecs les solsides i el pitjor verí de cada cosa. Considereu la pràctica de tots els prínceps, esglésies, sectes, partits, corporacions: no s'utilitza sempre l'innocent com l'esquer més dolç per als casos més perillosos i infames? — tal com Odisseu va emprar l'innocent Neoptòlem per treure amb engany l'arc i les fletxes al vell, malalt i ermità de Lemnos. — El [cristianisme]{.term data-term="Christenthum"}, amb el seu menyspreu pel món, ha fet de la ignorància una virtut, la innocència cristiana, potser perquè el resultat més freqüent d'aquesta innocència és precisament, com s'ha indicat, la culpa, el sentiment de culpa i la desesperació, per tant una virtut que condueix al cel pel camí indirecte de l'infern: perquè ara sí que poden obrir-se els propileus foscos de la salvació cristiana, ara sí que actua la promesa d'una segona innocència pòstuma: — és una de les més belles invencions del cristianisme!
+
+### 322. Viure, si és possible, sense metge
+
+Viure, si és possible, sense metge. — Em sembla que un malalt és més imprudent quan té un metge que quan ell mateix s'ocupa de la seva salut. En el primer cas n'hi ha prou amb ser estricte respecte a tot allò que li han prescrit; en l'altre, mirem amb més consciència allò a què apunten aquelles prescripcions, la nostra salut, i observem molt més, ens manem i prohibim molt més del que faria cap metge. — Totes les regles tenen aquest efecte: apartar del propòsit que hi ha darrere la regla i fer-nos més imprudents. — I com hauria crescut la imprudència de la humanitat fins al desenfrenament i la destrucció, si mai hagués confiat a la divinitat com a metge, amb tota honestedat, «com Déu vulgui»! —
+
+### 323. Enfosquiment del cel
+
+Enfosquiment del cel. — Coneixeu la venjança de les persones tímides, que en societat es comporten com si els haguessin robat les extremitats? La venjança de les ànimes humils i cristianament submises, que per la terra només s'arrosseguen? La venjança d'aquells que jutgen immediatament i immediatament reben tort? La venjança dels borratxos de tota mena, per als quals el matí és el més sinistre del dia? Igualment la dels malaltissos de tota mena, dels malaltiços i deprimits, que ja no tenen el coratge de guarir? El nombre d'aquests petits venjatius, i encara més el dels seus petits actes de venjança, és immens; l'aire sencer xiula constantment amb les fletxes i fletxetes de la seva malícia, de manera que el sol i el cel de la vida s'enfosqueixen — no només per a ells, sinó encara més per a nosaltres, els altres, la resta: cosa que és pitjor que el fet que massa sovint ens esgarrapin la pell i el cor. No neguem de vegades el sol i el cel, simplement perquè no els hem vist durant tant de temps? — Per tant: solitud! També per això, solitud!
+
+### 324. Filosofia dels actors
+
+Filosofia dels actors. — És la il·lusió felicitat dels grans actors que els personatges històrics que representen van sentir realment el que ells senten en la seva representació — però s'equivoquen de cap a peus: la seva capacitat d'imitació i endevinació, que volentiers farien passar per un do de clarividència, només penetra prou a fons per explicar gestos, tons i mirades i, en general, allò extern; és a dir: s'apodera de l'ombra de l'ànima d'un gran heroi, estadista, guerrer, ambiciós, gelós, desesperat, s'hi apropa molt, però no penetra fins a l'esperit dels seus objectes. Certament seria un bell descobriment que en comptes de tots els pensadors, coneixedors i especialistes, només calgués l'actor clarivident per il·luminar l'essència de qualsevol estat! No oblidem mai, quan tals pretensions es fan sentir, que l'actor és un mico ideal, i tan mico que no és capaç de creure en l'«essència» i l'«essencial»: tot li esdevé joc, to, gest, escenari, bastidors i públic.
+
+### 325. Viure apartat i creure
+
+Viure apartat i creure. — El mitjà per convertir-se en profeta i taumaturg del seu temps val avui com antigament: viure apartat, amb pocs coneixements, alguns pensaments i molta presumpció — finalment s'instal·la en nosaltres la creença que la humanitat no pot prescindir de nosaltres, perquè nosaltres podem prescindir ben visiblement d'ella. Un cop establerta aquesta creença, un també troba crèduls. Finalment, un consell per a qui el pugui necessitar (li va ser donat a Wesley pel seu mestre espiritual Böhler): «Predica la fe fins que la tinguis, i aleshores la predicaràs perquè la tens!» —
+
+### 326. Conèixer les pròpies circumstàncies
+
+Conèixer les pròpies circumstàncies. — Podem estimar les nostres forces, però no la nostra [força]{.term data-term="Kraft"}. Les circumstàncies no només ens les amaguen i ens les mostren — no! també les engrandeixen i les empetiteixen. Cal considerar-se una magnitud variable, la capacitat de rendiment de la qual, en circumstàncies favorables, pot igualar potser la més elevada: per tant, cal reflexionar sobre les circumstàncies i no escatimar cap esforç en la seva observació.
+
+### 327. Una faula
+
+Una faula. — El Don Joan del coneixement: encara no l'ha descobert cap filòsof ni poeta. Li manca l'amor per les coses que coneix, però té esperit, coqueteig i gaudi en la caça i les intrigues del coneixement — fins als estels més alts i remots del coneixement! — fins que finalment no li resta res per caçar, excepte allò absolutament dolorós del coneixement, semblant al bevedor que acaba bevent absenta i àcid nítric. Així anhela finalment l'infern — és l'últim coneixement que el sedueix. Potser també aquest el decep, com tot allò que s'ha conegut! I aleshores hauria de restar per tota l'eternitat clavat a la decepció, convertit ell mateix en convidat de pedra, amb el desig d'un sopar del coneixement que mai més no li serà concedit! — perquè el món sencer de les coses ja no té cap mos per oferir a aquest famèlic.
+
+### 328. A què donen a pensar les teories idealistes
+
+A què donen a pensar les teories idealistes. — Hom troba les teories idealistes amb més seguretat entre els practicants sense escrúpols; perquè necessiten la seva resplendor per a la seva reputació. Hi recorren amb els seus instints i no tenen cap sentiment d'hipocresia: tan poc com un anglès amb la seva cristianitat i la seva santificació del diumenge es considera hipòcrita. A l'inrevés: a les natures contemplatives, que han de mantenir-se disciplinades contra tota fantasia i que també temen la fama d'entusiasme, només els satisfan les dures teories realistes: hi recorren amb la mateixa necessitat instintiva, i sense perdre la seva honestedat.
+
+### 329. Els calumniadors de la jovialitat
+
+Els calumniadors de la jovialitat. — Profundament ferits per la vida, els qui ho han estat han considerat sospitosa tota [jovialitat]{.term data-term="Heiterkeit"}, com si fos sempre infantil i pueril i revelés una desraó davant la qual hom només pot sentir commiseració i commoció, com quan un infant moribund encara acaricia les seves joguines al llit. Aquests homes veuen darrere totes les roses tombes amagades i dissimulades; festes, rebombori, música alegre els semblen l'autoengany decidit del malalt greu, que vol xarrupar encara un minut l'embriaguesa de la vida. Però aquest judici sobre la jovialitat no és res més que la seva refracció sobre el fons fosc del cansament i la malaltia: ell mateix és quelcom de commovedor, d'irracional, que empeny a la compassió, sí, fins i tot quelcom d'infantil i de pueril, però procedent d'aquella segona infantesa que segueix la vellesa i precedeix la mort.
+
+### 330. Encara no n'hi ha prou!
+
+Encara no n'hi ha prou! — No n'hi ha prou amb demostrar una cosa, també cal seduir o elevar els homes cap a ella. Per això el savi ha d'aprendre a dir la seva saviesa: i sovint de manera que soni a bogeria!
+
+### 331. Dret i límit
+
+Dret i límit. — L'ascetisme és la manera de pensar adequada per a aquells que han d'extirpar els seus impulsos sensuals perquè són bèsties ferotges. Però també només per a ells!
+
+### 332. L'estil inflat
+
+L'estil inflat. — Un artista que no vol descarregar i així alleugerir el seu sentiment turgent en l'obra, sinó que vol comunicar precisament el sentiment de turgència, és bombàstic i el seu estil és l'estil inflat.
+
+### 333. «Humanitat»
+
+«Humanitat». — No considerem els animals com a éssers morals. Però creieu que els animals ens consideren a nosaltres com a éssers morals? — Un animal que podia parlar va dir: «La humanitat és un prejudici del qual almenys nosaltres els animals no patim.»
+
+### 334. El benefactor
+
+El benefactor. — El benefactor satisfà una necessitat del seu esperit quan fa el bé. Com més forta és aquesta necessitat, menys pensa en l'altre, que li serveix per satisfer la seva necessitat; es torna indelicat i ofensiu en certes circumstàncies. (Això es diu de la beneficència i la misericòrdia jueves: que, com és sabut, és una mica més ardent que la d'altres pobles.)
+
+### 335. Perquè l'amor sigui sentit com a amor
+
+Perquè l'amor sigui sentit com a amor. — Ens cal ser honests amb nosaltres mateixos i conèixer-nos molt bé per poder exercir envers els altres aquella simulació filantròpica que s'anomena amor i bondat.
+
+### 336. De què som capaços?
+
+De què som capaços? — Un home havia estat tan turmentat tot el dia pel seu fill malcriat i maliciós que al vespre el va matar i, respirant alleujat, va dir a la resta de la família: «Ara podem dormir tranquils!» — Què sabem de què les circumstàncies ens podrien empènyer!
+
+### 337. «Natural»
+
+«Natural». — Ser natural almenys en els propis defectes — és potser l'últim elogi d'un artista artificiós i en tota la resta teatral i mig autèntic. Un tal ésser deixarà per tant sortir atrevidament els seus defectes.
+
+### 338. Consciència substitutòria
+
+Consciència substitutòria. — Una persona és la [consciència]{.term data-term="Gewissen"} de l'altra: i això és especialment important quan l'altra no en té cap.
+
+### 339. Transformació dels deures
+
+Transformació dels deures. — Quan el deure deixa de ser feixuc i es transforma, per llarg exercici, en una inclinació plaent i en necessitat, aleshores els drets dels altres, als quals es referien els nostres deures, ara les nostres inclinacions, es converteixen en una altra cosa: en ocasions de sensacions agradables per a nosaltres. L'altre es torna, en virtut dels seus drets, d'aleshores ençà, amable (en lloc de venerable i temible, com abans). Busquem el nostre plaer quan ara reconeixem i mantenim l'àmbit del seu poder. Quan els quietistes ja no sentien cap feixuguesa en el seu cristianisme i en Déu només trobaven el seu plaer, van prendre la divisa «Tot per a la glòria de Déu!»: fessin el que fessin en aquest sentit, ja no era cap sacrifici; equivalia a «Tot per al nostre plaer!» Exigir que el deure sigui sempre quelcom de feixuc — com fa Kant — vol dir exigir que mai no es converteixi en costum i hàbit: en aquesta exigència hi ha un petit residu de crudeltat ascètica.
+
+### 340. L'evidència va contra l'historiador
+
+L'evidència va contra l'historiador. — Que els homes surten del ventre de la mare és un fet ben demostrat: malgrat tot, fills adults que són al costat de la seva mare fan que la hipòtesi sembli molt absurda; té l'evidència en contra.
+
+### 341. Avantatge en el desconeixement
+
+Avantatge en el desconeixement. — Algú va dir que en la infància havia tingut un tal menyspreu per les manies capritxoses del temperament melancòlic, que fins a la meitat de la seva vida li havia restat amagat quin temperament tenia: precisament el melancòlic. Va declarar que aquesta era la millor de totes les ignoràncies possibles.
+
+### 342. No confondre!
+
+No confondre! — Sí! Ell examina la cosa des de tots els costats, i vosaltres penseu que és un veritable home de coneixement. Però vol rebaixar-ne el preu — la vol comprar!
+
+### 343. Suposadament moral
+
+Suposadament moral. — Vosaltres no voleu mai estar descontents amb vosaltres mateixos, ni patir per vosaltres — i dieu que aquest és el vostre impuls moral! Molt bé, un altre el pot anomenar la vostra covardia. Però una cosa és certa: mai no fareu el viatge al voltant del món (que sou vosaltres mateixos!) i restareu en vosaltres mateixos un atzar i un terròs sobre el terròs! Creieu doncs que nosaltres, els qui pensem diferent, ens exposem per pura bogeria al viatge a través dels nostres propis deserts, pantans i glaceres i triem voluntàriament el dolor i el fàstic envers nosaltres, com els estilites?
+
+### 344. Finesa en la fallada
+
+Finesa en la fallada. — Si Homer, com es diu, de vegades s'adormia, va ser més savi que tots els artistes de l'ambició insomne. Cal deixar respirar els admiradors, transformant-los de tant en tant en censors; perquè ningú no suporta una bondat ininterrompudament brillant i desperta; i en lloc de fer bé, un mestre d'aquesta mena es converteix en un monitor que s'odia, mentre camina davant nostre.
+
+### 345. La nostra felicitat no és un argument ni a favor ni en contra
+
+La nostra felicitat no és un argument ni a favor ni en contra. — Moltes persones només són capaces d'una felicitat petita: no és cap objecció contra la seva saviesa que aquesta no els pugui donar més felicitat, com no és cap objecció contra la medicina que certes persones no es puguin curar i d'altres estiguin sempre malaltiços. Que cadascú trobi amb bona sort precisament la concepció de la vida amb la qual pot realitzar el seu grau més alt de felicitat: tot i així la seva vida pot seguir sent miserable i poc envejable.
+
+### 346. Enemics de les dones
+
+Enemics de les dones. — «La dona és el nostre enemic» — qui parla així com a home a homes, en ell parla l'impuls indomat, que no només s'odia a si mateix sinó també els seus mitjans.
+
+### 347. Una escola d'oratòria
+
+Una escola d'oratòria. — Si es calla un any, es desaprèn la xarrameca i s'aprèn a parlar. Els pitagòrics eren els millors homes d'estat del seu temps.
+
+### 348. Sentiment de poder
+
+[Sentiment de poder]{.term data-term="Gefühl der Macht"}. — Cal distingir bé: qui encara vol guanyar el sentiment de poder, recorre a tots els mitjans i no menysprea cap aliment. Però qui ja el té, s'ha tornat molt selectiu i noble en el seu gust; rarament res el satisfà.
+
+### 349. No tan important
+
+No tan important. — En un cas de mort que es presencia, un pensament sorgeix regularment que de seguida es reprimeix, per un fals sentiment de decència: que l'acte de morir no és tan significatiu com la reverència general pretén, i que el moribund probablement ha perdut en la vida coses més importants que les que aquí està a punt de perdre. El final aquí no és certament la meta. —
+
+### 350. Com es promet millor
+
+Com es promet millor. — Quan es fa una promesa, no és la paraula la que promet, sinó allò no dit darrere la paraula. Sí, les paraules fan una promesa més feble, ja que descarreguen i consumeixen una força que és part d'aquella força que promet. Per tant, doneu-vos la mà i poseu-vos el dit als llavis — així feu les promeses més segures.
+
+### 351. Habitualment mal comprès
+
+Habitualment mal comprès. — En la conversa hom observa l'un esforçant-se a parar un parany en el qual l'altre cau, no per malícia, com es podria pensar, sinó per plaer en la pròpia astúcia: i després uns altres que preparen l'enginy perquè l'altre faci el mot d'esperit, i que lliguen el llaç perquè aquell en tregui el nus: no per benvolença, com es podria pensar, sinó per malícia i menyspreu dels intel·lectes grollers.
+
+### 352. Centre
+
+Centre. — Aquell sentiment: «jo soc el centre del món!» sorgeix amb molta força quan hom és sorprès sobtadament per la vergonya; aleshores hom resta atordid enmig d'una maregassa i es sent enlluternat com per un gran ull que ens mira des de tots costats i a través nostre.
+
+### 353. Llibertat d'expressió
+
+Llibertat d'expressió. — «La veritat s'ha de dir, encara que el món s'hagi de trencar!» — així exclama, amb gran boca, el gran Fichte! — Sí! Sí! Però encara caldria tenir-la! — Però ell vol dir que cadascú hauria de dir la seva opinió, encara que tot anés de qualsevol manera. Sobre això encara es podria discutir amb ell.
+
+### 354. Coratge per al patiment
+
+Coratge per al patiment. — Tal com som ara, podem suportar una quantitat considerable de desplaer, i el nostre estómac està preparat per a aquest aliment pesat. Potser sense ell trobaríem insípid l'àpat de la vida: i sense la bona voluntat envers el dolor hauríem de renunciar a massa plaers!
+
+### 355. Veneradors
+
+Veneradors. — Qui venera de tal manera que crucifica el no-venerador, pertany als botxins del seu partit — hom es guarda de donar-li la mà, fins i tot si és del mateix partit.
+
+### 356. Efecte de la felicitat
+
+Efecte de la felicitat. — El primer efecte de la felicitat és el sentiment de [poder]{.term data-term="Macht"}: aquest vol expressar-se, sigui contra nosaltres mateixos o contra altres persones, o contra idees o contra éssers imaginaris. Les maneres més habituals d'expressar-se són: regalar, burlar-se, destruir — totes tres amb un instint bàsic comú.
+
+### 357. Mosques morals
+
+Mosques morals. — Aquells moralistes als quals manca l'amor al coneixement i que només coneixen el plaer de fer mal — tenen l'esperit i l'avorriment de la gent de poble petit; el seu plaer, tan cruel com miserable, és vigilar de prop el veí i clavar-hi una agulla sense que se n'adoni, perquè s'hi punxi. En ells perdura la mala educació dels nens petits, que no poden estar animats sense una mica de caça i maltractament d'éssers vius i morts.
+
+### 358. Raons i la seva manca de fonament
+
+Raons i la seva manca de fonament. — Tens aversió per ell i presentes raons abundants per a aquesta aversió — però jo només crec la teva aversió i no les teves raons! És un fer-se el bo davant tu mateix, presentar-te i presentar-me allò que passa instintivament com una conclusió de la raó.
+
+### 359. Aprovar alguna cosa
+
+Aprovar alguna cosa. — S'aprova el matrimoni, primer perquè no se'l coneix, segon perquè s'hi ha acostumat, tercer perquè s'ha contret — és a dir, en gairebé tots els casos. I tanmateix res no s'ha provat amb això sobre la bondat del matrimoni en general.
+
+### 360. Cap utilitaristes
+
+Cap utilitaristes. — «El poder al qual s'ha fet i s'ha desitjat molt de mal val més que la impotència a la qual només succeeix el bé» — així sentien els grecs. És a dir: el [sentiment de poder]{.term data-term="Gefühl der Macht"} era estimat per ells més que qualsevol utilitat o bona reputació.
+
+### 361. Semblar lleig
+
+Semblar lleig. — La moderació es veu a si mateixa com a bella; n'és innocent, que a l'ull de l'immoderat aparegui aspra i sobria, per tant, lletja.
+
+### 362. Diferent en l'odi
+
+Diferent en l'odi. — Alguns només odien quan se senten febles i cansats: altrament són indulgents i passen per alt. D'altres només odien quan veuen la possibilitat de venjança: altrament es guarden de tota ira secreta i sorollosa, i quan se'n presenten motius, pensen en una altra cosa.
+
+### 363. Gent de l'atzar
+
+Gent de l'atzar. — L'essencial de tota invenció ho fa l'atzar, però a la majoria de la gent, aquest atzar no els surt a l'encontre.
+
+### 364. Elecció de l'entorn
+
+Elecció de l'entorn. — Cal guardar-se de viure en un entorn davant el qual no es pot ni callar dignament ni comunicar allò superior, de manera que només resten per comunicar les nostres queixes i necessitats i tota la història de les nostres misèries. Amb això un es torna descontent de si i descontent d'aquest entorn, sí, afegeix al mal el disgust de sentir-se sempre en la queixa. Al contrari, cal viure allà on un s'avergonyeix de parlar de si i no ho necessita. — Però qui pensa en tals coses, en una elecció en tals coses! Hom parla del seu «destí», es planta amb les espatlles amples i sospira «infeliç Atles!»
+
+### 365. Vanitat
+
+[Vanitat]{.term data-term="Eitelkeit"}. — La vanitat és la por de semblar original, per tant una manca d'orgull, però no necessàriament una manca d'originalitat.
+
+### 366. Aflicció de criminal
+
+Aflicció de criminal. — Com a criminal descobert, hom no pateix pel crim, sinó per la vergonya o pel disgust d'haver comès una estupidesa o per la privació de l'element acostumat, i cal una finesa que és rara per distingir-ho. Qualsevol que hagi freqüentat molt les presons i els presidis queda astorat de la raresa amb què s'hi troba un inequívoc «remordiment de consciència»: en canvi, tant més hi ha l'enyor del vell crim estimat.
+
+### 367. Semblar sempre feliç
+
+Semblar sempre feliç. — Quan la filosofia era assumpte de competició pública, a la Grècia del tercer segle, no pocs filòsofs es van fer feliços pel pensament que altres, que vivien segons principis diferents i s'hi turmentaven, havien de sentir disgust per la seva felicitat: creien que amb la seva felicitat els refutaven de la millor manera, i per a això n'hi havia prou amb semblar sempre feliços: però amb el temps havien de tornar-se realment feliços! Aquesta va ser, per exemple, la sort dels cínics.
+
+### 368. Raó de molts malentesos
+
+Raó de molts malentesos. — La moralitat de la força nerviosa creixent és alegre i inquieta; la moralitat de la força nerviosa decreixent, al vespre o en els malalts i els vells, és patidora, calmant, expectant, melancòlica, sí, no rarament fosca. Segons que es tingui d'una o de l'altra, no es comprèn la que ens manca, i a l'altre se la interpreta sovint com a immoralitat i feblesa.
+
+### 369. Elevar-se per damunt de la pròpia misèria
+
+Elevar-se per damunt de la pròpia misèria. — Quina gent més orgullosa, que per restablir el sentiment de la seva dignitat i importància, necessita primer uns altres als quals pugui cridar i sotmetre: aquells, precisament, la impotència i covardia dels quals permeten que algú faci davant d'ells gests altius i furiosos impunement! — de manera que necessiten la misèria del seu entorn per elevar-se un instant per damunt de la pròpia misèria! — Per a això, un necessita un gos, un altre un amic, un tercer una dona, un quart un partit i un de molt rar, tota una època.
+
+### 370. En quin sentit el pensador estima el seu enemic
+
+En quin sentit el pensador estima el seu enemic. — No callis ni amaguis mai res que pugui ser pensat contra el teu pensament! Promet-t'ho! Forma part de la primera [honestedat]{.term data-term="Redlichkeit"} del pensament. Has de fer cada dia també la teva campanya contra tu mateix. Una victòria i una posició conquerida ja no són assumpte teu, sinó de la veritat — però tampoc la teva derrota és assumpte teu!
+
+### 371. El mal de la força
+
+El mal de la força. — La [violència]{.term data-term="Gewaltthätigkeit"} com a conseqüència de la passió, per exemple de la ira, s'ha d'entendre fisiològicament com un intent de prevenir un atac d'asfíxia imminent. Innombrables actes de prepotència que es descarreguen sobre altres persones han estat desviaments d'un sobtat flux de sang mitjançant una forta acció muscular: i potser tot el «mal de la força» pertany a aquest punt de vista. (El mal de la força fa mal a l'altre sense pensar-hi — necessita descarregar-se; el mal de la feblesa vol fer mal i veure els signes del patiment.)
+
+### 372. En honor dels coneixedors
+
+En honor dels coneixedors. — Tan bon punt algú, sense ser coneixedor, fa de jutge, cal protestar immediatament: sigui home o dona, l'entusiasme i l'embadaliment per una cosa o una persona no són arguments; el rebuig i l'odi envers elles, tampoc.
+
+### 373. Censura reveladora
+
+Censura reveladora. — «No coneix els homes» — en boca d'un vol dir: «no coneix la baixesa»; en boca de l'altre: «no coneix l'excepcionalitat, i massa bé la baixesa».
+
+### 374. Valor del sacrifici
+
+Valor del sacrifici. — Com més es nega als estats i als prínceps el dret de sacrificar els individus (com en l'administració de justícia, el servei militar, etc.), més pujarà el valor de l'autosacrifici.
+
+### 375. Parlar massa clar
+
+Parlar massa clar. — Hom pot articular massa clarament per diferents raons: per desconfiança envers un mateix, en una llengua nova i no practicada, i per desconfiança envers els altres, per la seva estupidesa o lentitud de comprensió. I el mateix en l'àmbit espiritual: la nostra comunicació és de vegades massa clara, massa minuciosa, perquè aquells a qui ens comuniquem altrament no ens entendrien. Per tant, l'estil perfecte i lleuger només és permès davant un auditori perfecte.
+
+### 376. Dormir molt
+
+Dormir molt. — Què fer per estimular-se quan s'està cansat i tip d'un mateix? L'un recomana la casa de joc, l'altre el cristianisme, el tercer l'electricitat. Però el millor, estimat melancòlic meu, és i resta: dormir molt, en sentit propi i figurat! Així tornareu a tenir el vostre matí! El secret de la saviesa de la vida és saber intercalar el son de tota mena en el moment adequat.
+
+### 377. A què donen a pensar els ideals fantàstics
+
+A què donen a pensar els ideals fantàstics. — Allà on rauen els nostres defectes, la nostra fantasia s'esbrava. La sentència entusiasta «estimeu els vostres enemics!» l'han hagut d'inventar els jueus, els millors odiadors que hi ha hagut, i la més bella glorificació de la castedat l'han escrita els qui en la seva joventut van viure de manera dissoluta i abominable.
+
+### 378. Mà neta i paret neta
+
+Mà neta i paret neta. — No cal pintar ni Déu ni el diable a la paret. S'espatlla així la paret i el veïnatge.
+
+### 379. Probable i improbable
+
+Probable i improbable. — Una dona estimava secretament un home, l'enlairava molt per sobre d'ella i es deia en el més secret: «si un home així m'estimés, seria una gràcia davant la qual hauria de prostrar-me a la pols!» — I a l'home li passava exactament el mateix, i precisament respecte a aquesta dona, i ell també es deia en el més secret exactament aquest pensament. Quan finalment un dia tots dos van desfer-se la llengua i es van dir tot allò callat i secretíssim del cor, es va fer un silenci i una certa reflexió. Aleshores la dona va començar, amb veu refredada: «però és ben clar! no som cap dels dos allò que hem estimat! Si tu ets el que dius i no res més, m'he humiliat per no res i t'he estimat en va; el dimoni m'ha seduït, com a tu.» — Aquesta història molt probable no succeeix mai — per què?
+
+### 380. Consell provat
+
+Consell provat. — De tots els mitjans de consol, res no fa tant de bé als necessitats de consol com l'afirmació que per al seu cas no hi ha consol. Hi ha en això una tal distinció, que tornen a aixecar el cap.
+
+### 381. Conèixer la pròpia «singularitat»
+
+Conèixer la pròpia «singularitat». — Oblidem massa fàcilment que als ulls de les persones que ens veuen per primera vegada som quelcom completament diferent del que ens considerem a nosaltres mateixos: gairebé sempre només una singularitat que salta als ulls i que determina la impressió. Així, l'home més bondadós i equànime, si porta un gran bigoti, seu per dir-ho així a la seva ombra, i hi seu tranquil·lament — els ulls corrents veuen en ell l'accessori d'un gran bigoti, és a dir: un caràcter militar, fàcilment irascible, en circumstàncies violent — i es comporten davant seu d'acord.
+
+### 382. Jardiner i jardí
+
+Jardiner i jardí. — De dies humits i tèrbols, de la solitud, de paraules poc afectuoses adreçades a nosaltres, creixen conclusions com bolets: un matí són allà, no sabem d'on, i ens miren grises i malhumorades. Ai del pensador que no és el jardiner sinó només el sòl de les seves plantes!
+
+### 383. La comèdia de la compassió
+
+La comèdia de la [compassió]{.term data-term="Mitleiden"}. — Per molt que prenguem part en la desgràcia d'un infortunat: en la seva presència sempre representem una mica de comèdia, no diem moltes coses que pensem ni com les pensem, amb aquella cautela del metge al capçal dels malalts greus.
+
+### 384. Sants estranys
+
+Sants estranys. — Hi ha pusil·lànimes que no donen cap valor a la seva millor obra i acció i la presenten malament per comunicar-la o exposar-la: però per una mena de venjança tampoc no donen cap valor a la simpatia dels altres, o ni tan sols creuen en la simpatia; s'avergonyeixen de semblar arrossegats per si mateixos i senten un plaer obstinat a fer-se ridículs. — Aquests són estats de l'ànima dels artistes melancòlics.
+
+### 385. Els vanitosos
+
+Els vanitosos. — Som com aparadors en els quals nosaltres mateixos disposem, amaguem o il·luminem constantment les nostres suposades qualitats, que els altres ens atribueixen — per enganyar-nos.
+
+### 386. Els patètics i els ingenus
+
+Els patètics i els ingenus. — Pot ser un costum molt poc noble no deixar passar cap ocasió en què es pugui mostrar patètic: per aquell gaudi de pensar-se l'espectador que es colpeja el pit i se sent miserable i petit. Per tant, pot ser també un signe de noblesa d'esperit burlar-se de les situacions patètiques i comportar-s'hi indignament. L'antiga aristocràcia guerrera de França tenia aquesta mena de distinció i finesa.
+
+### 387. Prova d'una reflexió abans del matrimoni
+
+Prova d'una reflexió abans del matrimoni. — Suposem que ella m'estimés, com em resultaria feixuga amb el temps! I suposem que no m'estimés, com em resultaria encara més feixuga amb el temps! — Només es tracta de dues menes de feixuguesa: — casem-nos doncs!
+
+### 388. La vilania amb bona consciència
+
+La vilania amb bona consciència. — Ser estafat en el petit comerç — això és en algunes comarques, per exemple al Tirol, tan desagradable perquè s'obté, a més de la mala compra, la cara rude i l'àvida grolleria, la mala consciència i la barroera hostilitat que sorgeix en el venedor fraudulent contra nosaltres. A Venècia, en canvi, l'estafador està sincerement content de la seva trapelleria reeixida i gens hostil envers l'estafat, sí, disposat a fer-li un compliment i sobretot a riure amb ell, si ell en té ganes. — En resum, per a la vilania cal tenir també l'esperit i la bona consciència: això gairebé reconcilia l'estafat amb l'estafa.
+
+### 389. Quelcom massa pesat
+
+Quelcom massa pesat. — Gent molt honesta, però una mica massa pesada per ser cortesa i amable, busca respondre immediatament a una cortesia amb un servei seriós o amb una contribució de la seva força. És commovedor veure com presenten tímidament les seves monedes d'or, quan un altre els ha ofert els seus cèntims daurats.
+
+### 390. Amagar l'esperit
+
+Amagar l'esperit. — Quan enxampem algú amagant el seu esperit davant nostre, el qualifiquem de dolent: i tant més si sospitem que la cortesia i la filantropia l'hi han empès.
+
+### 391. El mal moment
+
+El mal moment. — Les natures vivaces menteixen només un moment: després s'han enganyat a si mateixes i estan convençudes i són honrades.
+
+### 392. Condició de la cortesia
+
+Condició de la cortesia. — La cortesia és una molt bona cosa i realment una de les quatre virtuts cardinals (si bé l'última): però perquè no ens resultem mútuament feixucs amb ella, aquell amb qui tracto ha de ser un grau menys o més cortès que jo — altrament no avancem, i l'ungüent no sols unta sinó que ens enganxa.
+
+### 393. Virtuts perilloses
+
+Virtuts perilloses. — «No oblida res, però ho perdona tot.» — Aleshores se'l detesta doblement, perquè avergonyeix doblement, amb la seva memòria i amb la seva [generositat]{.term data-term="Grossmuth"}.
+
+### 394. Sense vanitat
+
+Sense vanitat. — Les persones apassionades pensen poc en el que els altres pensen; el seu estat les eleva per damunt de la vanitat.
+
+### 395. La contemplació
+
+La contemplació. — En un pensador, l'estat contemplatiu propi del pensador segueix sempre l'estat de la por; en un altre, sempre l'estat del desig. Al primer, per tant, la contemplació li sembla lligada al sentiment de seguretat; al segon, al sentiment de sacietat — és a dir: aquell hi és coratjós, aquest hi és fastiguejat i neutral.
+
+### 396. A la caça
+
+A la caça. — L'un va a la caça de veritats agradables, l'altre — de desagradables. Però també el primer té més plaer en la caça que en la presa.
+
+### 397. Educació
+
+Educació. — L'educació és una continuació de l'engendrar i sovint una mena d'embelliment retroactiu del mateix.
+
+### 398. En què es reconeix el més ardent
+
+En què es reconeix el més ardent. — De dues persones que lluiten entre elles, o que s'estimen, o que s'admiren, la més ardent assumeix sempre la posició més incòmoda. El mateix val per a dos pobles.
+
+### 399. Defensar-se
+
+Defensar-se. — Certes persones tenen el millor dret a actuar d'una determinada manera; però quan es defensen, ja no se les creu — i s'erra.
+
+### 400. Mimament moral
+
+Mimament moral. — Hi ha natures d'una delicadesa moral que amb cada èxit senten vergonya i amb cada fracàs, remordiments de consciència.
+
+### 401. El desaprenentatge més perillós
+
+El desaprenentatge més perillós. — Es comença per desaprendre a estimar els altres i s'acaba per no trobar res d'estimable en un mateix.
+
+### 402. També una tolerància
+
+També una tolerància. — «Haver jaut un minut de massa sobre brases ardents i cremar-s'hi una mica — això encara no fa cap mal, en les persones i en les castanyes! Aquesta mica d'amargor i duresa fa apreciar encara més com de dolç i suau és el nucli.» — Sí! Així jutgeu vosaltres, els gaudidors! Sublims antropòfags!
+
+### 403. Orgulls diferents
+
+Orgulls diferents. — Les dones són les qui empal·lideixen davant la idea que el seu estimat pugui no ser digne d'elles; els homes són els qui empal·lideixen davant la idea que puguin no ser dignes de la seva estimada. Es parla aquí de dones completes, d'homes complets. Tals homes, com a persones habitualment segures de si i del sentiment de poder, en l'estat de la passió tenen la seva timidesa, el seu dubte sobre si mateixos; tals dones, que altrament sempre se senten les febles, les disposades a l'entrega, en l'excepció sublim de la passió tenen el seu orgull i el seu sentiment de poder — que pregunta: qui és digne de mi?
+
+### 404. A qui rarament es fa justícia
+
+A qui rarament es fa justícia. — Certes persones no poden entusiasmar-se per alguna cosa de bo i gran sense cometre una greu injustícia en alguna altra direcció: aquesta és la seva mena de moralitat.
+
+### 405. Luxe
+
+Luxe. — L'inclinació al luxe va fins a la profunditat d'un home: revela que el superflu i l'immòdic és l'aigua en què la seva ànima neda més a gust.
+
+### 406. Immortalitzar
+
+Immortalitzar. — Qui vol matar el seu adversari pot considerar si no l'immortalitza precisament amb això.
+
+### 407. Contra el nostre caràcter
+
+Contra el nostre caràcter. — Quan la veritat que hem de dir va contra el nostre caràcter — cosa que sovint s'esdevé — ens comportem com si mentíssim malament i desvetllem desconfiança.
+
+### 408. On cal molta clemència
+
+On cal molta clemència. — Certes natures només tenen l'opció de ser malfactors públics o patidors secrets.
+
+### 409. Malaltia
+
+Malaltia. — Per malaltia cal entendre: una aproximació prematura de la vellesa, de la lletjor i dels judicis pessimistes: coses que van de bracet.
+
+### 410. Els angoixats
+
+Els angoixats. — Precisament els éssers maldestres i angoixats es converteixen fàcilment en homicides: no comprenen la petita defensa o venjança oportuna, el seu odi, per manca d'esperit i de presència d'ànim, no coneix cap altra sortida que la destrucció.
+
+### 411. Sense odi
+
+Sense odi. — Vols dir adéu a la teva passió? Fes-ho, però sense odi contra ella! Altrament tens una segona passió. — L'ànima dels cristians que s'han alliberat del pecat queda habitualment arruïnada després per l'odi contra el pecat. Mireu les cares dels grans cristians! Són les cares de grans odiadors.
+
+### 412. Enginyós i limitat
+
+Enginyós i limitat. — No sap valorar res excepte a si mateix; i quan vol valorar els altres, primer els ha de transformar en si mateix. Però en això és enginyós.
+
+### 413. Els acusadors privats i públics
+
+Els acusadors privats i públics. — Mireu bé tothom que acusa i inquireix — hi revela el seu caràcter: i no rarament un caràcter pitjor que el de la víctima, darrere el crim de la qual va. L'acusador creu en tota innocència que l'oponent d'un crim i d'un criminal ja ha de ser per si de bon caràcter, o ha de passar per bo — i així es deixa anar, és a dir: es treu les caretes.
+
+### 414. Els cecs voluntaris
+
+Els cecs voluntaris. — Hi ha una mena d'entrega apassionada, portada fins a l'extrem, a una persona o a un partit, que delata que en secret ens hi sentim superiors i n'estem ressentits. Ens ceguem, per dir-ho així, voluntàriament com a càstig perquè el nostre ull ha vist massa.
+
+### 415. Remedium amoris
+
+*Remedium amoris*. — Encara ajuda contra l'amor, en la majoria dels casos, aquell vell remei radical: l'amor correspost.
+
+### 416. On és el pitjor enemic?
+
+On és el pitjor enemic? — Qui pot conduir bé la seva causa i n'és conscient, està habitualment disposat a la reconciliació amb el seu adversari. Però creure que es té la bona causa i saber que no s'és hàbil per defensar-la — això crea un odi furiós i irreconciliable contra l'oponent de la pròpia causa. — Que cadascú calculi d'acord amb això on ha de buscar els seus pitjors enemics!
+
+### 417. Límit de tota humilitat
+
+Límit de tota humilitat. — A la humilitat que diu: *credo quia absurdum est*, i que ofereix en sacrifici la seva raó, ja hi ha arribat més d'un: però ningú, que jo sàpiga, a aquella humilitat que n'és a un sol pas i que diu: *credo quia absurdus sum*.
+
+### 418. Joc de veritat
+
+Joc de veritat. — Més d'un és veraç — no perquè abomini de fingir sentiments, sinó perquè li sortiria malament de fer creure la seva fingiment. En resum, no es fia del seu talent com a actor i prefereix l'honestedat, el «joc de veritat».
+
+### 419. Coratge en el partit
+
+Coratge en el partit. — Les pobres ovelles diuen al seu caporal: «vés sempre endavant, que a nosaltres no ens faltarà mai el coratge de seguir-te.» El pobre caporal, però, pensa per si: «seguiu-me sempre, que a mi no em faltarà mai el coratge de conduir-vos.»
+
+### 420. Astúcia de la víctima sacrificial
+
+Astúcia de la víctima sacrificial. — És una trista astúcia voler enganyar-se sobre algú a qui ens hem sacrificat, i oferir-li l'ocasió de semblar-nos tal com desitjaríem que fos.
+
+### 421. A través dels altres
+
+A través dels altres. — Hi ha persones que no volen ser vistes d'altra manera que transparentant a través dels altres. I en això hi ha molta astúcia.
+
+### 422. Fer alegria als altres
+
+Fer alegria als altres. — Per què fer alegria supera tots els plaers? — Perquè amb això es fa un plaer als nostres cinquanta impulsos alhora. Poden ser individualment plaers molt petits: però posats tots en una mà, la mà és més plena que mai — i el cor també! —
+
+
 ## Llibre Cinquè
 
 ### 423. En el gran silenci
