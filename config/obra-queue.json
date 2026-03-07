@@ -276,7 +276,7 @@
         "wikisource",
         "archive.org"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte",
       "notes": "Consell Editorial 2026-03-06. Afegeix l'àrab com a nova llengua i obre la biblioteca a la tradició filosòfica islàmica. Novel·la filosòfica (c. 1169) sobre un nen criat sol en una illa que arriba al coneixement per pura raó. Ibn Tufayl (†1185), metge i filòsof andalusí de Guadix. Influència directa sobre Defoe (Robinson Crusoe), Locke i la Il·lustració. Cap traducció catalana. Text àrab a Wikisource i Archive.org."
     },
@@ -290,7 +290,7 @@
       "fonts": [
         "ctext"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/filosofia/zhuangzi/capitols-interiors",
       "notes": "Consell Editorial 2026-03-07. Segon pilar del taoisme filosòfic, complement essencial al Tao Te King de Laozi. Els 7 capítols interiors (內篇) són el nucli autèntic de l'obra: paràboles, diàlegs i paradoxes sobre la llibertat, la relativitat del coneixement i el wu wei. Zhuangzi (†c. 286 aC) és, amb Laozi, el pensador fonamental del taoisme. Prosa literària xinesa d'una riquesa incomparable. Cap traducció catalana. Text original a CText.org."
     },
