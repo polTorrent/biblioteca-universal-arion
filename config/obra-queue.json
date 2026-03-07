@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-07",
+  "updated_at": "2026-03-08",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -380,7 +380,7 @@
         "ctext",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/poesia/li-bai/seleccio-de-30-poemes",
       "notes": "Consell Editorial 2026-03-07. Diversifica el xinès de filosofia a poesia: primera obra poètica xinesa al catàleg. Li Bai (†762), el 'Immortal Desterrat', és el poeta més gran de la dinastia Tang i de tota la literatura xinesa. Selecció recomanada: 靜夜思 (Pensaments en una nit tranquil·la), 月下獨酌 (Bevent sol sota la lluna), 將進酒 (Porteu vi), 蜀道難 (El difícil camí de Shu), 早發白帝城, 望廬山瀑布, i altres. Poesia lírica de gran intensitat: natura, vi, amistat, exili i llibertat. Cap traducció catalana del xinès. Text original a CText.org i Wikisource xinesa."
     },
