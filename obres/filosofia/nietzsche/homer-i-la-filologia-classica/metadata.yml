@@ -1,0 +1,29 @@
+obra:
+  titol: "Homer i la filologia clàssica"
+  titol_original: "Homer und die klassische Philologie"
+  autor: "Friedrich Nietzsche"
+  autor_original: "Friedrich Wilhelm Nietzsche"
+  traductor: "Editorial Clàssica"
+  any_original: 1869
+  any_traduccio: 2026
+  llengua_original: "alemany"
+  genere: "filosofia"
+  descripcio: >
+    Lliçó inaugural pronunciada per Nietzsche el 28 de maig de 1869 a la Universitat
+    de Basilea, amb només 24 anys, en accedir a la càtedra de filologia clàssica.
+    En aquest discurs, Nietzsche defensa la unitat entre filologia i filosofia, aborda
+    la qüestió homèrica (Homer com a individu o com a creació col·lectiva) i proclama
+    la seva cèlebre frase final: «Philosophia facta est quae philologia fuit» — la
+    filosofia ha esdevingut allò que fou la filologia. Text fonamental per entendre
+    el jove Nietzsche i la seva concepció de la cultura grega. Proposta de la comunitat.
+  notes: "Traducció completa de la lliçó inaugural"
+seccions: 1
+estadistiques:
+  paraules_original: 5200
+  paraules_traduccio: 5400
+  notes: 15
+  termes_glossari: 18
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-03-07"
