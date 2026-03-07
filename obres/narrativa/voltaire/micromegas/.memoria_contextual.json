@@ -1,0 +1,42 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "François-Marie Arouet (Voltaire) (1694-1778), París, França. Escriptor, filòsof i dramaturg francès, figura central de la Il·lustració europea. Va destacar per la seva crítica feresta a l'Antic Règim, l'església i la intolerància religiosa. Defensor de la llibertat d'expressió, la raó i el progrés científic, va influir profundament en el pensament polític i social del segle XVIII.",
+    "context_historic": "França del segle XVIII sota l'Antic Règim, època de la Il·lustració. Període de ferment intel·lectual i crisi social que precedí la Revolució Francesa. Tensió entre absolutisme monàrquic, poder eclesiàstic i nous ideals racionalistes.",
+    "context_obra": "Micromégas (1752) - Conte filosòfic (conte voltairià). Escrit durant l'exili de Voltaire a la cort de Frederic II de Prússia. Influït pels seus estudis newtonians i per les polèmiques amb Leibniz sobre la naturalesa de l'univers. Forma part del cicle de contes filosòfics voltairians.",
+    "influencies": [
+      "John Locke",
+      "Isaac Newton",
+      "Filosofia anglesa",
+      "Escepticisme de Pierre Bayle",
+      "Racionalisme cartesià",
+      "Epicur"
+    ],
+    "temes_principals": [
+      "Relativisme còsmic i crítica a l'antropocentrisme",
+      "Sàtira de la vanitat humana i dels prejudicis",
+      "Reflexió sobre els límits del coneixement humà",
+      "Crítica als sistemes filosòfics dogmàtics",
+      "Tolerància i obertura mental"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Micromégas",
+    "[H] Personatge històric: El secretari de l'Acadèmia de Saturn",
+    "[H] Personatge històric: Filòsofs terrestres",
+    "[H] Personatge històric: Leibniz",
+    "[H] Personatge històric: Newton",
+    "[C] Referència cultural: Sistema astronòmic de Newton",
+    "[C] Referència cultural: Filosofia leibniziana",
+    "[C] Referència cultural: Acadèmies científiques del s. XVIII",
+    "[C] Referència cultural: Descobriments telescòpics",
+    "[C] Referència cultural: Geografia i matemàtiques de l'època",
+    "[T] Terme tècnic: Sirius",
+    "[T] Terme tècnic: Lieues géométriques",
+    "[T] Terme tècnic: Saturn",
+    "[T] Terme tècnic: Système du monde",
+    "[T] Terme tècnic: Infiniment petit et infiniment grand"
+  ]
+}

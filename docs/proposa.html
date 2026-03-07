@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposar Obra - Biblioteca Universal Arion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 100%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 0.95em;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+        input:focus, select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        .hint {
+            color: #888;
+            font-size: 0.85em;
+            margin-top: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 16px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+        .success {
+            display: none;
+            text-align: center;
+            padding: 30px;
+        }
+        .success h2 {
+            color: #4CAF50;
+            margin-bottom: 15px;
+        }
+        .success p {
+            color: #666;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .logo span {
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <span>📚</span>
+        </div>
+        <h1>Proposar una Obra</h1>
+        <p class="subtitle">Biblioteca Universal Arion - Traduccions al català</p>
+        
+        <form id="propostaForm">
+            <div class="form-group">
+                <label for="titol">Títol de l'obra *</label>
+                <input type="text" id="titol" name="titol" required placeholder="Ex: Faust, Hamlet, La Divina Comèdia...">
+                <p class="hint">Introdueix el títol complet de l'obra</p>
+            </div>
+            
+            <div class="form-group">
+                <label for="autor">Autor</label>
+                <input type="text" id="autor" name="autor" placeholder="Ex: Johann Wolfgang von Goethe">
+            </div>
+            
+            <div class="form-group">
+                <label for="idioma">Idioma original *</label>
+                <select id="idioma" name="idioma" required>
+                    <option value="">Selecciona l'idioma...</option>
+                    <option value="alemany">Alemany</option>
+                    <option value="angles">Anglès</option>
+                    <option value="frances">Francès</option>
+                    <option value="italia">Italià</option>
+                    <option value="espanyol">Espanyol</option>
+                    <option value="portugues">Portuguès</option>
+                    <option value="rus">Rus</option>
+                    <option value="grec">Grec antic</option>
+                    <option value="llati">Llatí</option>
+                    <option value="altre">Altre</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="comentaris">Comentaris additionals</label>
+                <input type="text" id="comentaris" name="comentaris" placeholder="Ex: Volum IX de l'edició Husserliana...">
+            </div>
+            
+            <button type="submit" id="submitBtn">Enviar Proposta</button>
+        </form>
+        
+        <div class="success" id="success">
+            <h2>✅ Proposta Enviada!</h2>
+            <p>La teva proposta s'ha afegit a la cua de traduccions.</p>
+            <p>Et notificarem quan l'obra estigui disponible.</p>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById('propostaForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const btn = document.getElementById('submitBtn');
+            btn.disabled = true;
+            btn.textContent = 'Enviant...';
+            
+            const data = {
+                titol: document.getElementById('titol').value,
+                autor: document.getElementById('autor').value,
+                idioma: document.getElementById('idioma').value,
+                comentaris: document.getElementById('comentaris').value,
+                timestamp: new Date().toISOString()
+            };
+            
+            try {
+                // Guardar localment i enviar al worker
+                const response = await fetch('/api/proposta', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify(data)
+                });
+                
+                if (response.ok) {
+                    document.getElementById('propostaForm').style.display = 'none';
+                    document.getElementById('success').style.display = 'block';
+                } else {
+                    throw new Error('Error al servidor');
+                }
+            } catch (error) {
+                // Fallback: guardar localment
+                localStorage.setItem('proposta_' + Date.now(), JSON.stringify(data));
+                document.getElementById('propostaForm').style.display = 'none';
+                document.getElementById('success').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>

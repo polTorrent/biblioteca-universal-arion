@@ -1,4 +1,3 @@
-# Micromégas
 **Autor:** Voltaire
 **Font:** [Wikisource](https://fr.wikisource.org/wiki/Microm%C3%A9gas)
 **Llengua:** francès
