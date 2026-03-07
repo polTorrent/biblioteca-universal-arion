@@ -1,7 +1,7 @@
-# Hayy Ibn Yaqzan El Filosof Autodidacte
+# Hayy Ibn Yaqzan — El filòsof autodidacte
 *Ibn Tufayl*
 
-Traduït del llatí per Biblioteca Arion
+Traduït del àrab per Biblioteca Arion
 
 ---
 

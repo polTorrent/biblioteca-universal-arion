@@ -7,9 +7,9 @@
   },
   "timestamps": {
     "inici": "2026-03-07T16:18:55.519331",
-    "ultima_activitat": "2026-03-07T16:21:39.491391"
+    "ultima_activitat": "2026-03-07T23:57:36.096217"
   },
-  "fase_actual": "anotacio",
+  "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
@@ -28,7 +28,7 @@
   },
   "metriques": {
     "qualitat_mitjana": 9.0,
-    "temps_total_min": 2.73
+    "temps_total_min": 0.0
   },
   "errors": [],
   "warnings": []
