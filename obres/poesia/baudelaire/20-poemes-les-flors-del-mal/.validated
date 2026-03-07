@@ -1,0 +1,16 @@
+data: 2026-03-07
+puntuacio: 7.0
+revisor: Claude Opus 4.6 (supervisio automatica)
+dimensions:
+  fidelitat: 7.5
+  veu_autor: 7.0
+  fluidesa: 7.0
+  format: 8.5
+  glossari: 3.0
+notes: >
+  Traducció aprovada amb reserves. 20 poemes complets, fidelitat acceptable,
+  to poètic mantingut. Notes crítiques excel·lents (23 notes). Glossari absent
+  (principal dèficit). Errors menors: "Fill meu" per "Mon enfant" (poema 10),
+  "esbufec" per "râle" (poema 11), "goll" per "gosier" (poema 20),
+  "Sigues" per "Siguis" (poema 19), "sent" per "escolta" (poema 19),
+  "es banya" per "se pâme" (poema 4). Cal crear glossari.yml amb termes clau.
