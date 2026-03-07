@@ -267,6 +267,20 @@ class VeniceClient:
             except httpx.RequestError as e:
                 raise VeniceRequestError(f"Error de connexió: {e}") from e
 
+    @staticmethod
+    def _run_sync(coro: object) -> object:
+        """Executa una coroutine síncronament, compatible amb event loops actius."""
+        try:
+            loop = asyncio.get_running_loop()
+        except RuntimeError:
+            loop = None
+
+        if loop is not None and loop.is_running():
+            import concurrent.futures
+            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
+                return pool.submit(asyncio.run, coro).result()
+        return asyncio.run(coro)
+
     def generar_imatge_sync(
         self,
         prompt: str,
@@ -288,7 +302,7 @@ class VeniceClient:
         Returns:
             bytes: Imatge PNG en bytes.
         """
-        return asyncio.run(
+        return self._run_sync(
             self.generar_imatge(
                 prompt=prompt,
                 negative_prompt=negative_prompt,
@@ -306,7 +320,7 @@ class VeniceClient:
         tipus: Literal["image", "text", "all"] = "image",
     ) -> list[ImageModel]:
         """Versió síncrona de llistar_models."""
-        return asyncio.run(self.llistar_models(tipus))
+        return self._run_sync(self.llistar_models(tipus))
 
 
 def generar_portada_llibre(
@@ -366,7 +380,7 @@ def generar_portada_llibre(
         negative_prompt=negative_prompt,
         width=1024,
         height=1536,  # Format 2:3 vertical per portades
-        model="flux-2-max",
+        model="z-image-turbo",
         steps=35,
         cfg_scale=8.0,
     )
