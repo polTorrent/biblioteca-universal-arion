@@ -308,6 +308,10 @@
       {
         "timestamp": 1772858407.718021,
         "result": "created"
+      },
+      {
+        "timestamp": 1772860410.1644506,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1628,6 +1632,15 @@
     "events": [
       {
         "timestamp": 1772859603.1616743,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_apologia": {
+    "events": [
+      {
+        "timestamp": 1772860410.4203806,
         "result": "created"
       }
     ],
