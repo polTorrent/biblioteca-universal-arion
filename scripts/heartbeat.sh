@@ -877,7 +877,13 @@ fi
 PENDING_FINAL=$(count_pending)
 generate_report              # Escriu last_heartbeat_report.md a ~/.openclaw/
 
-# ── Fase 2: Reiniciar bot ──────────────────────────────────────────────────
+# ── Fase 2.5: Processar propostes Discord ───────────────────────────────────
+if [ -f "$PROJECT/scripts/processar-propostes.sh" ]; then
+    log "📋 Processant propostes Discord..."
+    bash "$PROJECT/scripts/processar-propostes.sh" 2>/dev/null || true
+fi
+
+# ── Fase 3: Reiniciar bot ──────────────────────────────────────────────────
 _heartbeat_start_openclaw
 trap - EXIT
 

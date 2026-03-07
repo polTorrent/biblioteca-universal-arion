@@ -1,0 +1,57 @@
+obra:
+  titol: "La Tempesta"
+  titol_original: "The Tempest"
+  autor: "William Shakespeare"
+  autor_original: "William Shakespeare"
+  traductor: "Biblioteca Arion (IA + comunitat)"
+  any_original: "c. 1610-1611"
+  any_traduccio: 2026
+  llengua_original: "anglès"
+  genere: "teatre"
+  subgenere: "comèdia romàntica / romance"
+  descripcio: >-
+    La Tempesta és considerada l'última obra completa de Shakespeare, escrita
+    cap al 1610-1611. Pròsper, duc legítim de Milà, viu exiliat en una illa
+    remota amb la seva filla Miranda. Mitjançant la seva màgia, provoca una
+    tempesta que porta els seus enemics a l'illa, on orquestra la reconciliació,
+    el perdó i la restauració de l'ordre. L'obra explora temes com el poder,
+    la colonització, l'art i la naturalesa, la llibertat i el perdó. El famós
+    discurs de Pròsper «Our revels now are ended» es llegeix sovint com el
+    comiat de Shakespeare del teatre. Proposta rebuda per Quercus al canal
+    propostes-traducció.
+  font_original: "Project Gutenberg, EBook #23042 / First Folio 1623"
+  domini_public: true
+  temes:
+    - poder i autoritat
+    - colonització i llibertat
+    - perdó i reconciliació
+    - màgia i art
+    - naturalesa i civilització
+    - amor
+    - comiat i renúncia
+  context:
+    tradicio: "teatre anglès renaixentista"
+    influencies:
+      - "Ovidi (Metamorfosis)"
+      - "Montaigne (Des Cannibales)"
+      - "Virgili (Eneida)"
+      - "Commedia dell'arte"
+    obres_relacionades:
+      - "El somni d'una nit d'estiu"
+      - "El conte d'hivern"
+      - "Pericles"
+  proposant: "Quercus"
+  canal_proposta: "propostes-traducció"
+seccions: 5
+estadistiques:
+  actes: 5
+  escenes: 9
+  paraules_original: 16600
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "en_curs"
+  data_inici: "2026-03-07"
+  qualitat: 0
+  requereix_revisio_humana: true

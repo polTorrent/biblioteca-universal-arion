@@ -1,0 +1,12 @@
+{
+  "canal_propostes": "1479599316380291276",
+  "canal_notificacions": "1469504522614476953",
+  "propostes_processades": [
+    "1772837034"
+  ],
+  "config": {
+    "auto_processar": true,
+    "notificar_usuari": true,
+    "prefix_tasca": "proposta"
+  }
+}
