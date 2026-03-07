@@ -7,9 +7,9 @@
   },
   "timestamps": {
     "inici": "2026-02-03T12:58:35.781370",
-    "ultima_activitat": "2026-02-03T14:52:12.633240"
+    "ultima_activitat": "2026-03-07T12:10:48.416992"
   },
-  "fase_actual": "anotacio",
+  "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
@@ -134,10 +134,37 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 7.94,
-    "temps_total_min": 97.01
+    "qualitat_mitjana": 6.28,
+    "temps_total_min": 8.06
   },
-  "errors": [],
+  "errors": [
+    "[11:03:02] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:04:19] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:07:52] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:08:27] Error chunk 31: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:09:11] Error chunk 33: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:18:09] Error chunk 57: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:19:47] Error chunk 64: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:21:01] Error chunk 71: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:24:46] Error chunk 74: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:28:01] Error chunk 83: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:29:29] Error chunk 85: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:31:45] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:32:52] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:33:32] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:34:06] Error chunk 31: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:35:32] Error chunk 33: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:47:05] Error chunk 83: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:53:51] Error chunk 10: [Errno 32] Broken pipe",
+    "[11:53:51] Error chunk 13: [Errno 32] Broken pipe",
+    "[11:53:51] Error chunk 18: [Errno 32] Broken pipe",
+    "[11:53:51] Error chunk 31: [Errno 32] Broken pipe",
+    "[11:53:51] Error chunk 33: [Errno 32] Broken pipe",
+    "[11:53:51] Error chunk 83: [Errno 32] Broken pipe",
+    "[11:53:51] Error fatal: [Errno 32] Broken pipe",
+    "[12:09:29] Error chunk 33: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:10:48] Error chunk 83: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
   "warnings": [
     "[14:52:12] Error anotació: [Errno 7] Argument list too long: 'claude'"
   ]
