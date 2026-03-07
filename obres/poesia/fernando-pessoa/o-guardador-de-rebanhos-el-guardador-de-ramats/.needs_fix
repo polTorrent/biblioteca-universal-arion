@@ -1,0 +1,20 @@
+data_revisio: 2026-03-07
+puntuacio: 0.5
+revisor: supervisio-automatica
+
+problemes:
+  - "[CRÍTIC] traduccio.md està completament buit — cap dels 49 poemes ha estat traduït"
+  - "[CRÍTIC] No existeix glossari.yml"
+  - "[CRÍTIC] No existeix notes.md"
+  - "[ALT] metadata.yml té totes les puntuacions a 0.0 i estadístiques buides"
+  - "[ALT] metadata.yml té l'entrada 'estadistiques' duplicada (dins 'obra' i a nivell arrel)"
+  - "[ALT] Falten paraules_original a les estadístiques (hauria de ser ~5000+)"
+  - "[MITJÀ] No existeix introduccio.md amb context sobre l'heterònim Alberto Caeiro"
+  - "[MITJÀ] No existeix bibliografia.md"
+
+accions_requerides:
+  - "Executar traducció completa dels 49 poemes del portuguès al català"
+  - "Crear glossari.yml amb termes clau (rebanho/ramat, pastor, chocalhos, planície, etc.)"
+  - "Crear notes.md amb notes del traductor sobre decisions estilístiques"
+  - "Corregir metadata.yml: eliminar duplicació d'estadístiques, actualitzar comptadors"
+  - "Opcionalment crear introduccio.md sobre Alberto Caeiro i el sensacionisme"
