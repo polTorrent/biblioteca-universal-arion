@@ -1,5 +1,5 @@
 obra:
-  titol: "Micromegas"
+  titol: "Micromègas"
   titol_original: "Micromégas"
   autor: "Voltaire"
   autor_original: "François-Marie Arouet (Voltaire)"
@@ -7,31 +7,15 @@ obra:
   any_original: 1752
   any_traduccio: 2026
   llengua_original: "frances"
-  descripcio: "Conte filosofic de Voltaire sobre dos gegants extraterrestres que visiten la Terra i reflexionen sobre la relativitat de la grandesa i la condicio humana."
+  descripcio: "Conte filosòfic de Voltaire sobre dos gegants extraterrestres que visiten la Terra i reflexionen sobre la relativitat de la grandesa i la condició humana."
   seccions: 7
   estadistiques:
     paraules_original: 6800
-    paraules_traduccio: 3767
+    paraules_traduccio: 7257
     notes: 13
-    termes_glossari: 0
+    termes_glossari: 18
 revisio:
-  estat: "necessita_correccio"
-  qualitat: 3.0
-  data_revisio: '2026-03-07'
-  comentari: "Traduccio incompleta (~50-60% omesa per errors CLI). Llengua font erròniament marcada com a llati (es frances). Cal retraduir."
-avaluacio_final:
-  data: '2026-03-07T20:29:13.610954'
-  puntuacions:
-    fidelitat: 3.0
-    veu_autor: 6.0
-    fluidesa: 6.0
-    correccio_linguistica: 5.0
-    coherencia: 3.0
-    global: 3.0
-  total_errors: 8
-  errors_critics: 3
-  errors_alts: 4
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 8
+  estat: "pendent_supervisio"
+  qualitat: 0
+  data_revisio: '2026-03-08'
+  comentari: "Traducció completa refeta dels 7 capítols. Corregida la llengua font (francès, no llatí). Afegits glossari.yml i notes.md."
