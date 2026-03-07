@@ -66,5 +66,29 @@
     "status": "pending",
     "created_at": "2026-03-07T13:44:13.317036",
     "source": "discord_command"
+  },
+  {
+    "id": "1772915092_proposta_14996",
+    "type": "translate",
+    "description": "Tradueix: Sein und zeit",
+    "titol": "Sein und zeit",
+    "idioma_original": "desconegut",
+    "usuari_discord_id": "743437884782149693",
+    "usuari_discord_nom": "enigmaridworld",
+    "status": "pending",
+    "created_at": "2026-03-07T21:24:52.310965",
+    "source": "discord_bot"
+  },
+  {
+    "id": "1772915092_proposta_14996",
+    "type": "translate",
+    "description": "Tradueix: Sein und Zeit - alemany",
+    "titol": "Sein und Zeit - alemany",
+    "idioma_original": "desconegut",
+    "usuari_discord_id": "743437884782149693",
+    "usuari_discord_nom": "enigmaridworld",
+    "status": "pending",
+    "created_at": "2026-03-07T21:24:52.733510",
+    "source": "discord_bot"
   }
 ]
