@@ -417,10 +417,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772619325.7026284,
-        "result": "created"
-      },
-      {
         "timestamp": 1772622002.724515,
         "result": "created"
       },
@@ -494,6 +490,10 @@
       },
       {
         "timestamp": 1772895603.3656611,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772902803.725671,
         "result": "created"
       }
     ],
@@ -668,6 +668,10 @@
       },
       {
         "timestamp": 1772761887.6814218,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772902815.1147213,
         "result": "created"
       }
     ],
@@ -1243,6 +1247,10 @@
       {
         "timestamp": 1772895602.777542,
         "result": "created"
+      },
+      {
+        "timestamp": 1772902803.2356598,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1801,6 +1809,33 @@
     "events": [
       {
         "timestamp": 1772895602.3953965,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_hayy-ibn-yaqzan-el-filosof-autodidacte": {
+    "events": [
+      {
+        "timestamp": 1772902803.0534256,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptspropostes_listenerpy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772902814.951328,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_narrativa_voltaire_micromegas": {
+    "events": [
+      {
+        "timestamp": 1772902815.4425259,
         "result": "created"
       }
     ],
