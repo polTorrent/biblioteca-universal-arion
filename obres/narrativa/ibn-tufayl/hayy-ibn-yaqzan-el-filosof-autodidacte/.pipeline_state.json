@@ -1,0 +1,35 @@
+{
+  "sessio_id": "ibn-tufayl-hayy-ibn-yaqzan-el-f-2026-03-07",
+  "obra": {
+    "autor": "Ibn Tufayl",
+    "titol": "Hayy Ibn Yaqzan El Filosof Autodidacte",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-03-07T16:18:55.519331",
+    "ultima_activitat": "2026-03-07T16:21:39.491391"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 1,
+    "completats": [
+      "chunk_1"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 9.0,
+    "temps_total_min": 2.73
+  },
+  "errors": [],
+  "warnings": []
+}
