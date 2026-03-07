@@ -71,6 +71,16 @@ def crear_tasca(titol: str, idioma: str = "", usuari_id: str = "", canal_id: str
         f.write(f"{task_id}|{titol}|{usuari_id}|{canal_id}|{datetime.now().isoformat()}\n")
     
     log(f"✅ Proposta creada: {titol} (usuari: {usuari_id})")
+    
+    # Regenerar el botó de propostes
+    try:
+        import subprocess
+        subprocess.run(["python3", str(Path.home() / "biblioteca-universal-arion" / "scripts" / "regenerar_boto_propostes.py")], 
+                      capture_output=True, timeout=10)
+        log("🔄 Botó de propostes regenerat")
+    except Exception as e:
+        log(f"⚠️ Error regenerant botó: {e}")
+    
     return task_id
 
 def main():

@@ -1,0 +1,28 @@
+obra:
+  titol: "Fragments Postums"
+  titol_original: "Nachgelassene Fragmente"
+  autor: "Friedrich Nietzsche"
+  autor_original: "Friedrich Wilhelm Nietzsche"
+  traductor: "Editorial Classica (proposta comunitat)"
+  any_original: "1869-1889"
+  any_traduccio: 2026
+  llengua_original: "alemany"
+  genere: "filosofia"
+  descripcio: >
+    Seleccio de fragments postums de Friedrich Nietzsche, escrits entre 1882 i 1888
+    i publicats despres de la seva mort. Aquests apunts privats, mai destinats a
+    publicacio, revelen el taller intel·lectual de Nietzsche: idees en gestacio,
+    experiments de pensament i formulacions provisionals de conceptes centrals com
+    la voluntat de poder, l'etern retorn, el superhome i la transvaloració de tots
+    els valors. Seleccio de 25 fragments representatius organitzats cronologicament.
+  notes: "Seleccio de 25 fragments representatius (1882-1888). Proposta comunitat."
+seccions: 25
+estadistiques:
+  paraules_original: 3800
+  paraules_traduccio: 3900
+  notes: 12
+  termes_glossari: 18
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
