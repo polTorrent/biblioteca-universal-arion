@@ -83,6 +83,6 @@ temes:
   - ètica filosòfica
 
 revisio:
-  estat: "en_traduccio"
-  qualitat: null
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-03-07"
