@@ -1323,6 +1323,10 @@
       {
         "timestamp": 1772214321.4076583,
         "result": "created"
+      },
+      {
+        "timestamp": 1772866147.603714,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1645,6 +1649,33 @@
     "events": [
       {
         "timestamp": 1772860410.4203806,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_de-brevitate-vitae": {
+    "events": [
+      {
+        "timestamp": 1772866147.2569911,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_the-tempest-la-tempesta": {
+    "events": [
+      {
+        "timestamp": 1772866147.4414635,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_horaci_odes-seleccio-20-odes": {
+    "events": [
+      {
+        "timestamp": 1772866157.8759253,
         "result": "created"
       }
     ],

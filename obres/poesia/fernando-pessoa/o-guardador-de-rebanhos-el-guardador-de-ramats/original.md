@@ -1,5 +1,3 @@
-# O Guardador de Rebanhos
-
 **Alberto Caeiro** (heterònim de Fernando Pessoa)
 
 Escrit el 1914. Publicat el 1925 a la revista *Athena*.
