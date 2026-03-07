@@ -4,6 +4,7 @@ regenerar_boto_propostes.py - Regenera el botó de propostes al canal de Discord
 S'executa després de cada proposta processada
 Utilitza openclaw message tool per registrar correctament el modal
 """
+import os
 import subprocess
 import json
 from pathlib import Path
@@ -59,7 +60,7 @@ def regenerate_button():
         result = subprocess.run(
             ["curl", "-s", "-X", "POST", 
              "http://127.0.0.1:18789/message",
-             "-H", "Authorization: Bearer d00b65891b42da1d2f461f2feeca4e33eddb4dd7cc3971b2",
+             "-H", f"Authorization: Bearer {os.environ.get('OPENCLAW_API_TOKEN', '')}",
              "-H", "Content-Type: application/json",
              "-d", json.dumps({
                  "action": "send",
@@ -85,8 +86,7 @@ def regenerate_button():
     return create_manual_button()
 
 def create_manual_button():
-    """Fallback: crea el botó directamentvia Discord API"""
-    import os
+    """Fallback: crea el botó directament via Discord API"""
     import requests
     
     token = os.environ.get("DISCORD_BOT_TOKEN", "")
