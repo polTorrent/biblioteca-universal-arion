@@ -1,0 +1,27 @@
+data: 2026-03-07
+puntuacio: 3/10
+revisor: supervisio-qualitat-claude
+
+problemes_critics:
+  - "OMISSIONS MASSIVES: ~50-60% del text original frances no s'ha traduit. Hi ha 8 marcadors [ERROR: El CLI ha retornat una resposta buida] dins traduccio.md. Capitols II (Conversa Siria-Saturn) i III (Viatge dels dos habitants) falten quasi completament."
+  - "LLENGUA FONT ERRÒNIA: El text diu 'Traduit del llati' pero l'original es en frances (Wikisource fr, Oeuvres completes de Voltaire, Garnier 1877). El pipeline_state.json tambe marca 'llengua: llati'. Cal corregir a 'frances'."
+  - "FRASES TRUNCADES: Multiples paragrafs acaben tallats a mig mot: 'Car al cap i a l', 'la vostra m', 'per aquesta mate', 'va respondre Microme'. Resultat de chunks amb resposta buida del CLI."
+
+problemes_alts:
+  - "metadata.yml extremadament incomplet: falten titol_original, autor_original, traductor, any_original (1752), any_traduccio, descripcio, seccions (7), llengua_original (frances), paraules_original, notes, termes_glossari."
+  - "metadata.yml contradictori: marca 'qualitat: 7.0' i 'estat: revisat' pero l'avaluacio_final dona 'global: 0.0', 'aprovat: false', 'total_errors: 8'."
+  - "Falta fitxer glossari.yml (obligatori segons estructura d'obra)."
+  - "Falta fitxer notes.md (obligatori). Les notes son inline i incompletes."
+
+problemes_mitjans:
+  - "Inconsistencia en el nom del protagonista: alterna entre 'Micromegas', 'Micromegas' i 'Micromegas' amb accent variable."
+  - "Format de notes inconsistent: alguns capitols tenen 'Notes del capitol X:' amb espai abans dels dos punts."
+  - "Cometes tipografiques inconsistents: barreja cometes llatines i angleses."
+
+accions_necessaries:
+  - "1. RETRADUIR COMPLET: Tornar a executar el pipeline amb llengua_origen='frances' (no llati)."
+  - "2. Verificar que tots els 7 capitols queden complets sense truncaments."
+  - "3. Completar metadata.yml amb tots els camps obligatoris."
+  - "4. Crear glossari.yml amb termes clau (Micromegas, muftí, entelèquia, etc.)."
+  - "5. Crear notes.md amb les notes del traductor separades."
+  - "6. Revisar coherencia del nom propi (Micromegas amb accent consistent)."
