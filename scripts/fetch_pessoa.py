@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Fetch O Guardador de Rebanhos from pt.wikisource.org"""
 import json
+import os
 import re
-import urllib.request
-import urllib.parse
-import time
 import sys
+import time
+import urllib.parse
+import urllib.request
 
 OBRA_DIR = "obres/poesia/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats"
 
@@ -104,7 +105,7 @@ def main():
             poems.append((i, title, text))
             print(f"  OK ({len(text)} chars)")
         else:
-            print(f"  FAILED")
+            print("  FAILED")
         time.sleep(0.5)  # Be nice to the server
 
     print(f"\nFetched {len(poems)}/{total} poems")
@@ -130,6 +131,7 @@ def main():
         lines.append("")
 
     output_path = f"{OBRA_DIR}/original.md"
+    os.makedirs(OBRA_DIR, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write("\n".join(lines))
 
