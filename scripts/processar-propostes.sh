@@ -103,17 +103,34 @@ notificar_usuari() {
     local titol="$2"
     local estat="$3"
     
-    # Crear fitxer de notificació pendent
-    cat > "$PROPOSTES_DIR/notificacio_pendent.json" << EOF
-{
-  "usuari_id": "${usuari_id}",
-  "titol": "${titol}",
-  "estat": "${estat}",
-  "timestamp": "$(date -Iseconds)"
-}
+    log "📨 Enviant notificació a ${usuari_id}: ${titol} - ${estat}"
+    
+    # Enviar notificació real mitjançant OpenClaw
+    # Utilitza el canal de notificacions de Discord
+    local canal_notificacions="1479504522614476953"
+    local missatge=""
+    
+    case "$estat" in
+        "publicada")
+            missatge="🎉 **La teva proposta ja està disponible!**\n\n📚 **${titol}** ha estat traduït i publicat.\n\n🔗 Visita la biblioteca per llegir-lo: https://biblioteca-arion.cat\n\nGràcies per la teva proposta! <@${usuari_id}>"
+            ;;
+        "en_progres")
+            missatge="📖 **Traducció en curs**\n\n📚 **${titol}** s'està traduint.\n\nT'avisarem quan estigui disponible!"
+            ;;
+        *)
+            missatge="📋 **Actualització de proposta**\n\n📚 **${titol}** - Estat: ${estat}"
+            ;;
+    esac
+    
+    # Guardar per al heartbeat
+    cat > "$HOME/.openclaw/workspace/pending_notification.txt" << EOF
+channel:${canal_notificacions}
+user:${usuari_id}
+message:${missatge}
+timestamp:$(date -Iseconds)
 EOF
     
-    log "📨 Notificació pendent per ${usuari_id}: ${titol} - ${estat}"
+    log "✅ Notificació preparada per enviar"
 }
 
 # Funció principal per processar propostes noves
