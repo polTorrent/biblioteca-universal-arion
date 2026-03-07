@@ -4,7 +4,12 @@
 
 LAST_MESSAGE_FILE="/home/jo/.openclaw/workspace/propostes-button-message.txt"
 CHANNEL_ID="1479599316380291276"
-TOKEN="MTQ2OTM0NTE0ODEzODk0Njc1Mg.GfH2xn.CHohbG2Mtdsc6iWwj-nAqA_svGT8MwKG5WF-RE"
+TOKEN="${DISCORD_BOT_TOKEN:-}"
+
+if [ -z "$TOKEN" ]; then
+    echo "❌ Error: DISCORD_BOT_TOKEN no està configurat"
+    exit 1
+fi
 
 TIMESTAMP=$(date +%s)
 
