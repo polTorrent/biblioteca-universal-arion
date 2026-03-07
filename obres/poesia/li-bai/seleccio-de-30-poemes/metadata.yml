@@ -1,0 +1,21 @@
+obra:
+  titol: "Selecció de 30 poemes"
+  titol_original: "李白詩選三十首"
+  autor: "Li Bai"
+  autor_original: "李白"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 725–762"
+  any_traduccio: 2026
+  llengua_original: "xinès"
+  descripcio: "Selecció de trenta poemes representatius de Li Bai (701–762), el poeta més celebrat de la dinastia Tang. Inclou obres mestres com 靜夜思 (Pensaments en una nit tranquil·la), 將進酒 (Que vingui el vi!), 蜀道難 (El camí difícil de Shu) i 夢遊天姥吟留別 (Somiant una excursió al mont Tianmu)."
+  categoria: "poesia"
+seccions: 30
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: ""
