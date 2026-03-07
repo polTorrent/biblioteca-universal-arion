@@ -70,9 +70,19 @@ Von diesem Augenblick an war ich in seiner Gewalt. Er trieb mich, wie er wollte.
 
 Wochenlang lebte ich in der Hölle. Ich konnte nicht schlafen, konnte nicht essen, magerte ab, wurde still und sonderbar. Meine Eltern merkten wohl, daß etwas nicht stimmte, aber sie konnten nicht ahnen, was es war. Die Mutter seufzte und bat mich, ihr zu sagen, was mich bedrücke. Der Vater sprach ernst mit mir. Aber ich konnte es ihnen nicht sagen. Jede Beichte hätte das Schlimmste enthüllt: die Lüge, den Diebstahl, die Erpressung.
 
+Es kamen Tage, an denen ich glaubte, verrückt zu werden. Ich war ein unordentlicher, sonderbarer Schüler geworden, vernachlässigte meine Arbeiten, konnte in keiner Stunde still sitzen und lag nachts halbe Nächte wach mit offenen Augen. Wenn die Mutter mich zu einem Arzt führen wollte, wurde ich eigensinnig und begann zu weinen. Mein Vater schalt mich mehrmals, und dann wurde er ernst und sprach allein mit mir. Er fragte, ob mir jemand etwas getan habe. Wie nahe er kam! Aber ich konnte nicht, konnte nicht, konnte nicht reden.
+
+Kromer führte mich nun auch in neue Abenteuer. Ich mußte mit ihm abends vor dem Haus eines Gastwirts stehen, und während ich Wache hielt, stieg er durch ein Kellerfenster hinein. Er trieb mich, die schlimmsten Dinge zu tun. Und wenn ich widerstrebte, erinnerte er mich an den Müller und die gestohlenen Äpfel. Dann zitterte ich und tat, was er verlangte.
+
+Einmal ließ er mich Worte auf einen Zettel schreiben, die ich nicht verstand, damals nicht. Aber ich tat alles, was er wollte. Und eines Nachts erwachte ich aus einem Alptraum, in dem Kromer mich mit einem Messer bedrohte, und ich schrie so laut, daß meine Mutter herbeikam und sich zu mir setzte. Sie streichelte mein Haar und fragte: »Was ist dir, mein Kind? Was hast du?«
+
+Ich weinte nur und konnte nichts sagen.
+
 Und dann kam Demian.
 
 Ein neuer Schüler erschien in unserer Klasse. Er war größer und kräftiger als wir anderen, er hatte ein reifes, eigenartiges Gesicht, beinahe das Gesicht eines Mannes, und seine Stirn und sein Blick waren die eines Erwachsenen. Er hieß Max Demian, und von der ersten Stunde an übte er eine seltsame Faszination auf mich aus.
+
+Er sah aus, als wäre er älter als wir alle, als wäre er kein Schüler, sondern ein Forscher, ein Überlegener. Er war von keinem Lehrer einzuschüchtern, und er war von keinem Mitschüler zu beeindrucken. Er war — anders. Er trug das Zeichen, obwohl ich es damals noch nicht so nennen konnte.
 
 Es war an einem Nachmittag, daß Demian mich ansprach. Er wartete nach der Schule auf mich, und als die andern weg waren, sagte er:
 
@@ -98,9 +108,23 @@ Ich wollte lügen, aber sein Blick hielt mich fest.
 
 »Hm,« machte Demian nachdenklich. »Hör mal, du brauchst dich nicht zu fürchten. Ich kümmere mich darum.«
 
-Und tatsächlich — wenige Tage später war Kromers Herrschaft über mich zu Ende. Ich weiß nie genau erfahren, was Demian mit ihm gesprochen hatte. Aber Kromer kam nie wieder zu mir. Er mied mich, er sah mich nicht an, und wenn unsere Blicke sich einmal kreuzten, war Angst in den seinen.
+»Aber was kannst du tun?«
 
-Ich war frei! Mein Dank gegenüber Demian war unermeßlich. Und doch — seltsamerweise war auch etwas Bedrückendes in dieser Befreiung, denn ich fühlte, daß ich nun an Demian gebunden war, so wie ich vorher an Kromer gebunden gewesen war. Nicht durch Angst, nein — durch etwas anderes, etwas Tieferes.
+»Ich rede mit Kromer. Es wird nicht lange dauern. Und er wird dich in Ruhe lassen.«
+
+»Er wird dich verprügeln!« rief ich.
+
+Demian lächelte. Es war ein seltsames, reifes, überlegenes Lächeln, das Lächeln eines Mannes, nicht eines Knaben.
+
+»Das wird er nicht. Und wenn er es versucht — ich habe auch ein paar Sachen über ihn, die er nicht gern in der Öffentlichkeit hätte. Aber ich brauche das gar nicht. Er wird von selber aufhören, glaub mir.«
+
+Ich verstand nicht, aber ich spürte, daß Demian wußte, wovon er sprach. Es war, als hätte er viel mehr von der Welt gesehen als wir alle, als hätte er schon dort gelebt, wo wir noch nicht waren.
+
+Und tatsächlich — wenige Tage später war Kromers Herrschaft über mich zu Ende. Ich habe nie genau erfahren, was Demian mit ihm gesprochen hatte. Aber Kromer kam nie wieder zu mir. Er mied mich, er sah mich nicht an, und wenn unsere Blicke sich einmal kreuzten, war Angst in den seinen. Kromer, der Tyrann, der mein Herr und Peiniger gewesen war, der starke, brutale Kromer hatte Angst! Und er hatte Angst vor Demian, vor dem neuen Schüler, der weder drohte noch schrie, der nur ruhig und freundlich war.
+
+Ich war frei! Mein Dank gegenüber Demian war unermeßlich. Und doch — seltsamerweise war auch etwas Bedrückendes in dieser Befreiung, denn ich fühlte, daß ich nun an Demian gebunden war, so wie ich vorher an Kromer gebunden gewesen war. Nicht durch Angst, nein — durch etwas anderes, etwas Tieferes. Durch Bewunderung, durch eine Art von Liebe, und durch die Ahnung, daß dieser Mensch mir etwas zu geben hatte, etwas Wichtiges, das ich noch nicht verstand.
+
+Ich versuchte, mich Demian zu nähern, aber er entzog sich leicht. Er war freundlich, aber nie zudringlich. Er lächelte, er nickte, aber er kam nicht von sich aus zu mir. Und so begann ich, auf seltsame Weise zu warten — auf ein Wort, einen Wink, ein Zeichen von ihm. Und während ich wartete, geschah etwas in mir: die lichte Welt der Eltern, die so erschüttert gewesen war, begann sich wieder zu festigen, aber nicht ganz wie zuvor. Ein Riß war geblieben, und durch den Riß schimmerte etwas, das weder zum Lichten noch zum Finsteren gehörte — etwas Drittes, etwas Neues.
 
 ---
 
@@ -126,11 +150,21 @@ Ich war ganz betäubt. Das war ja alles vollkommen anders, als was man uns immer
 
 »Nicht ganz so,« sagte Demian. »Ich sage nur: man kann die Sache auch so ansehen. Kain war ein Mann, vor dem die andern Angst hatten. Und weil er ihnen Angst machte, hängten sie ihm ein Brandmal an und erfanden eine Geschichte dazu. Geschichten werden immer von denen erfunden, die Angst haben — von der Herde. Kain war kein Verbrecher — er war nur anders.«
 
+Und er erzählte mir noch mehr über Kain, über das Zeichen, über die Angst der Vielen vor den Wenigen. Er erzählte mir, wie die Herde den Einzelnen verfolgt, wie sie ihn zum Bösen erklärt, sobald er anders ist. Er sprach ruhig und sicher, als erzähle er etwas, das er schon lange wußte und das sich von selber verstand.
+
+»Siehst du,« sagte er, »so ist es auch in der Schule, so ist es auch in der Kirche, so ist es auch in der Politik. Wenn jemand anders denkt, wenn jemand mutiger ist, wenn jemand sich weigert, der Herde zu folgen — dann ist er gefährlich. Dann muß man ihn unschädlich machen. Man sperrt ihn ein oder man tötet ihn oder man hängt ihm eine Geschichte an.«
+
 Von diesem Tage an dachte ich bei jedem Bibelabschnitt daran, wie Demian es wohl deuten würde. Die Geschichte von Kain und dem Zeichen ließ mich nicht mehr los. Es war, als hätte Demian eine Tür geöffnet, durch die kalte, fremde Luft hereinwehte — beängstigend, aber reinigend.
+
+Ich begann, die Welt mit andern Augen zu sehen. Nicht daß alles anders geworden wäre — der Vater war noch gütig, die Mutter noch warm, die Schwestern noch rein. Aber es war, als hätte sich hinter der lichten Oberfläche etwas verschoben, als leuchtete eine andere Wahrheit durch. Die zwei Welten, die bisher so fest getrennt waren — die lichte und die finstere — begannen sich zu mischen, und ihre Grenzen wurden unscharf.
 
 Demian war überhaupt ein merkwürdiger Mensch. Er schien älter als wir alle, nicht nur an Jahren, sondern im Wesen. Er lebte neben uns, aber er lebte auch in einer ganz andern Welt. Er hatte seine Mutter — über den Vater wurde nie gesprochen — und die beiden lebten in einem vornehmen alten Haus in unserer Stadt. Seine Mutter, Frau Eva, war eine Erscheinung, die mich sofort und für immer bezauberte, als ich sie zum erstenmal sah. Sie war groß, schlank, mit dunklem Haar und einem seltsamen, rätselhaften Gesicht, in dem Güte und Strenge, Zärtlichkeit und Leidenschaft zusammenflossen. Sie sah aus wie eine Königin, wie eine Priesterin, wie eine Mutter aller Menschen.
 
 In der Schule war Demian den meisten überlegen, nicht weil er besonders fleißig gewesen wäre, sondern weil er einen Verstand hatte, der schon fertig schien, während unserer noch gärte und sich mühte. Er war ruhig und gelassen, sprach wenig, ließ sich von keinem Lehrer einschüchtern und erwarb sich, ohne es zu suchen, eine eigentümliche Stellung, die teils Respekt und teils Mißtrauen war.
+
+Es gab eine Eigenschaft an Demian, die mich besonders verwunderte: er schien den Willen der Leute beeinflussen zu können. Einmal zum Beispiel, in der Schule, hatte ein Lehrer ihn aufgerufen und ihm eine schwierige Frage gestellt. Demian stand auf und blickte den Lehrer ruhig an, ohne zu antworten. Der Lehrer wiederholte die Frage, ungeduldig. Demian sagte nichts. Er stand nur da und blickte. Und der Lehrer — der strenge, gefürchtete Lehrer — wurde verwirrt, räusperte sich und wandte sich an einen andern Schüler. Es war, als hätte Demians Blick ihm den Willen genommen.
+
+Ein anderes Mal erzählte er mir davon: »Die meisten Menschen,« sagte er, »haben keinen eigenen Willen. Sie tun, was man ihnen sagt. Wenn jemand wirklich will, wirklich und aus ganzer Seele, dann kann er sehr viel bewirken. Die Menschen spüren den Willen, und sie weichen ihm aus, wenn er stark genug ist.«
 
 »Weißt du,« sagte er einmal zu mir, »die meisten Menschen sind eigentlich gar nicht lebendig. Sie gehen umher und tun, was man ihnen sagt, und denken, was man ihnen vordenkt. Sie haben nie gelernt, selber zu denken und selber zu wollen. Und wenn einer anfängt, selber zu denken und selber zu wollen, dann fürchten sie ihn, dann hassen sie ihn, dann sagen sie, er sei böse. Darum ist die Geschichte von Kain so wichtig: sie zeigt, daß die Herde den Einzelnen immer zum Bösen erklärt, wenn er anders ist als sie.«
 
@@ -142,155 +176,179 @@ Ich verstand nicht alles, was Demian sagte. Aber ich fühlte, daß er recht hatt
 
 Die Jahre vergingen. Ich war nun Konfirmand und besuchte das Gymnasium. Die Bekanntschaft mit Demian war für eine Weile etwas lockerer geworden — wir gingen in verschiedene Klassen, sahen uns seltener. Aber sein Einfluß blieb, lebte in mir weiter, wie ein Samen, der langsam keimte.
 
-Ich war in ein Alter gekommen, wo neue Unruhe mich erfüllte. Die Pubertät kam über mich mit dunklen Wellen, mit Stürmen und Sehnsüchten, die ich nicht benennen konnte. Ich wurde verschlossener, trotziger, empfindlicher. Die Welt schien voller Rätsel und Gefahren, und das Schlimmste war, daß ich selber mir das größte Rätsel wurde.
+Im Konfirmandenunterricht kamen wir wieder zusammen. Der alte Pfarrer erzählte uns die Geschichte vom Schächer am Kreuz — dem Verbrecher, der neben Christus gekreuzigt wurde und in letzter Minute bereute. Der Pfarrer pries die Kraft der Reue, die selbst den schlimmsten Sünder retten konnte.
 
-Im Konfirmandenunterricht hörte ich die Geschichte von dem Schächer am Kreuz, der in letzter Stunde bereut hatte. »Heut noch wirst du mit mir im Paradiese sein,« hatte Jesus ihm gesagt. Es war eine der Geschichten, die man uns als Trost und Ermutigung erzählte — seht, selbst ein Verbrecher kann gerettet werden, wenn er nur bereut!
+Wieder war es Demian, der mich nachdenklich machte. Auf dem Heimweg sagte er:
 
-Demian deutete auch diese Geschichte anders.
+»Hast du die Geschichte vom Schächer gehört? Wieder so eine schöne Geschichte von der Herde. Da hängt einer am Kreuz und bereut, und dann kommt er ins Paradies. Eine wunderbare Sache für die Schwachen! Immer kann man bereuen, immer kann man umkehren, immer ist alles vergeben. Aber der andere Schächer — der, der nicht bereut, der frech und trotzig bleibt — der ist doch viel interessanter! Der hat Charakter. Der läßt sich nicht einschüchtern, auch nicht im Angesicht des Todes. Der hat ein Zeichen.«
 
-»Merkst du,« sagte er, »was da eigentlich steht? Der eine Schächer war ein Feigling, ein Jammerer, der am Ende Kreide fraß und zu kriechen anfing. Was für ein Gewinn! Der andere aber, der Unbeugsame, der seine Überzeugung hatte und seinen Weg ging bis zum Ende — der ist eigentlich der Bewundernswerte. Er hätte sich auch bekehren können, aber er tat es nicht, weil er Charakter hatte.«
+»Aber er kommt nicht ins Paradies,« wandte ich ein.
 
-»Aber er war doch ein Verbrecher!«
+»Wer weiß?« sagte Demian. »Vielleicht kommt er in ein besseres. Oder vielleicht braucht er gar kein Paradies. Vielleicht ist er schon dort, wo er sein muß.«
 
-»Was heißt das? Christus selbst wurde als Verbrecher gekreuzigt. Was Verbrechen ist und was Tugend, das bestimmt die Gesellschaft — die Herde. Wer den Mut hat, außerhalb der Herde zu leben, der wird zum Verbrecher erklärt. Und manchmal ist er gerade darum der Stärkere.«
+Dann fuhr er fort: »Weißt du, die ganze Moral, die man uns lehrt, ist eine Moral der Schwachen. Sie sagt: bereue, unterwirf dich, sei demütig, dann wirst du belohnt. Aber es gibt eine andere Moral, eine ältere, eine stärkere. Die sagt: sei du selbst, folge deinem inneren Gesetz, auch wenn die Welt dich dafür haßt.«
 
-Solche Gespräche mit Demian gingen mir lange nach. Und sie verbanden sich mit dem, was in mir selber vorging: mit den dunklen Regungen, den neuen Leidenschaften, dem Gefühl, zwischen zwei Welten zu stehen. Die eine — die alte, lichte, fromme Welt meiner Eltern — wurde mir fremd und eng. Die andere — die dunkle, verbotene, lockende Welt — zog mich an, aber sie machte mir auch Angst.
+Ich war erschüttert. Das war Aufruhr gegen alles, was ich gelernt hatte! Und doch — etwas in mir jubelte, etwas in mir erkannte diese Worte als wahr.
 
-In dieser Zeit lernte ich trinken. Einige meiner Schulkameraden nahmen mich mit in Wirtshäuser, und bald war ich der wildeste von allen. Ich trank, ich prahlte, ich sprach zynisch über alles, was mir früher heilig gewesen war. Ich wurde ein Raufbold und Tagedieb. Meine Noten verschlechterten sich, meine Eltern waren außer sich. Mein Vater sprach ernst und traurig mit mir, meine Mutter weinte. Aber ich war wie betäubt, wie besessen. Die finstere Welt hatte mich gepackt, und ich konnte mich nicht wehren.
+In jener Zeit begann ich, mich von meinen Eltern innerlich zu entfernen. Nicht daß ich sie weniger liebte — aber ihre Welt, ihre Wahrheiten, ihre Regeln begannen mir fremd zu werden. Ich spürte, daß sie mich nicht mehr ganz erreichten, daß zwischen uns ein Raum entstand, der immer weiter wurde.
 
-Es war keine Freude, was ich empfand, es war ein dumpfer Rausch, eine verzweifelte Betäubung. Ich trank nicht, weil es mir schmeckte, ich trank, um die Stimme in mir zu ersticken, die nach etwas anderem rief — nach etwas Höherem, Reinerem, das ich nicht erreichen konnte.
+Die Konfirmation kam und ging, und danach verlor ich Demian für eine Weile aus den Augen. Ich wurde in eine andere Stadt geschickt, auf ein Internat, wo ich das Gymnasium weitermachen sollte. Dort begann eine neue Zeit meines Lebens — und es war keine gute Zeit.
 
-In einer solchen Nacht saß ich auf einer Bank im Park, betrunken und elend, und ich dachte an Demian. Wo war er? Ich hatte ihn lange nicht gesehen. Was würde er von mir denken? Und plötzlich durchfuhr mich ein Gedanke: was bin ich geworden? Ein Nichts, ein Gesunkener, ein Verlorener. Und ich weinte in der Nacht.
+Ich geriet in schlechte Gesellschaft. Es war ein älterer Schüler namens Alfons Beck, ein Bursche von vielleicht achtzehn Jahren, der mich in die Wirtshäuser mitnahm. Dort saßen wir und tranken Wein und Bier, und ich lernte die Kameradschaft der Betrunkenen kennen, das laute, leere Lachen, die rauhen Scherze, die sinnlosen Geschichten, die man sich in der Dunkelheit erzählte.
 
-Am nächsten Tag sah ich in der Schule ein Mädchen, das ich noch nie bemerkt hatte. Sie war nicht besonders schön, aber sie hatte etwas in ihrem Gesicht — einen Ausdruck von Reinheit und Klarheit, der mich zutiefst erschütterte. Ich wußte nicht, wie sie hieß, aber von diesem Augenblick an nannte ich sie Beatrice, nach der Beatrice des Dante.
+Ich begann zu trinken, regelmäßig und viel. Es war ein Sturz, ein Fall, und ich fiel willig. Alles, was in mir dunkel und wild war, brach hervor. Ich versäumte den Unterricht, ich log, ich stahl kleine Beträge. Ich war nicht mehr der brave Sohn aus dem lichten Haus — ich war ein Verlorener, ein Taugenichts, einer von der andern Seite.
 
-Und von diesem Augenblick an wandelte sich etwas in mir. Ich trank nicht mehr. Ich kehrte zurück zu den Büchern, zu den stillen Abenden, zu den langen Spaziergängen. Ich begann zu zeichnen und zu malen. Ich versuchte, das Gesicht meiner Beatrice zu malen, aber es gelang mir nicht — statt ihres Gesichts malte ich immer wieder ein anderes, ein Gesicht, das halb Mann und halb Frau war, das halb jung und halb alt war, ein Gesicht, das mir seltsam vertraut schien und das mich doch befremdete. Eines Tages erkannte ich es: es war Demians Gesicht. Oder mein eigenes. Oder beides zugleich.
+Mein Vater schrieb strenge Briefe. Die Mutter schrieb besorgte. Ich las sie und zerriss sie und trank weiter. Es war eine wilde, verworrene Zeit, und ich war in ihr verloren wie ein Schiff ohne Steuer.
+
+Und mitten in dieser Verwüstung geschah etwas Seltsames. Ich sah ein Mädchen. Sie ging mir auf der Straße entgegen, eine junge Frau mit hellem Gesicht und stolzem Gang, und ich war sofort bezaubert. Ich folgte ihr nicht, sprach sie nicht an, kannte ihren Namen nicht. Aber ihr Bild brannte sich in mein Herz ein, und ich gab ihr heimlich einen Namen: Beatrice — nach Dantes Beatrice, der göttlichen Führerin.
+
+Von diesem Augenblick an begann sich alles zu ändern.
 
 ---
 
 ### Viertes Kapitel: Beatrice
 
-Beatrice, so nannte ich das Mädchen, das ich nie ansprach und nie kennenlernte. Sie war mein Ideal, mein Stern, mein Weg zurück ins Licht. Aber das Licht, zu dem sie mich führte, war nicht mehr das alte, fromme Licht meiner Kindheit — es war ein neues, eigeneres Licht, ein Licht, das ich selber suchte und selber fand.
+Das Erlebnis auf der Straße, die Begegnung mit dem Mädchen, das ich Beatrice nannte, veränderte mein Leben wie ein Blitz, der in ein finsteres Zimmer fährt. Ich hörte auf zu trinken. Ich zog mich von Beck und seinen Kumpanen zurück. Ich begann wieder zu lesen, zu denken, mich zu pflegen.
 
-Ich malte ihr Bild — oder versuchte es. Und jedes Mal, wenn ich malte, wurde das Bild zu etwas anderem. Einmal sah es aus wie Demian, einmal wie ich selbst, einmal wie ein Gesicht aus einem Traum, halb männlich, halb weiblich, halb jung, halb alt. Es war ein Bild, das mich verfolgte und anzog, ein Bild, das tiefer in mich hineinreichte als jedes wirkliche Gesicht.
+Aber nicht die Rückkehr ins Lichte war es, die nun geschah. Es war etwas Neues, Drittes. Ich kehrte nicht zu den Eltern und ihrem Gott zurück — ich fand einen eigenen Tempel, einen eigenen Altar. Beatrice war mein Ideal, meine Göttin, mein Leitstern. Nicht daß ich sie kannte oder gar liebte — ich hatte nie ein Wort mit ihr gesprochen. Aber ihr Bild war mir heilig, und ich verehrte es wie ein Gläubiger sein Heiligenbild.
 
-Eines Tages, beim Malen, fiel mir ein Satz ein, den Demian einmal gesagt hatte: »Der Vogel kämpft sich aus dem Ei. Das Ei ist die Welt. Wer geboren werden will, muß eine Welt zerstören.« Ich malte den Vogel. Es war ein Sperber, halb aus dem Ei gebrochen, den Kopf zum Himmel gereckt, vor einem blauen Hintergrund. Es war das beste Bild, das ich je gemalt hatte.
+Ich begann zu malen. Es war ein Drang, den ich nicht erklären konnte — als müßte ich das Bild in mir nach außen bringen, als müßte ich es festhalten, ehe es verblasste. Ich malte ihr Gesicht, immer wieder, mit Bleistift und Kohle, und obwohl die Zeichnungen nie genau stimmten, war doch in ihnen etwas, das mehr war als ein Porträt.
 
-Ich schickte das Bild an Demian — ich wußte seine Adresse noch, obwohl er längst aus unserer Stadt fortgezogen war. Ich schickte es ohne Brief, ohne Gruß, nur das Bild.
+Und dann geschah etwas Merkwürdiges. Während ich malte, bemerkte ich, daß das Gesicht, das unter meinen Händen entstand, nicht mehr Beatrice war. Es war — jemand anderes. Es war ein Gesicht, das ich kannte und nicht kannte, ein Gesicht, das mich anzog und erschreckte. Als ich das Bild betrachtete, erkannte ich es: es war Demians Gesicht. Nein, nicht genau Demians Gesicht — es war halb sein Gesicht und halb meines, oder vielmehr: es war ein Gesicht, das zwischen uns beiden lag, das uns beiden gehörte.
 
-Und eines Tages fand ich in meinem Schulheft einen Zettel. Jemand mußte ihn hineingelegt haben, als mein Heft im Klassenzimmer lag. Auf dem Zettel stand in einer fremden, klaren Handschrift:
+Ich hängte das Bild an die Wand meines Zimmers und lebte mit ihm. Es sprach zu mir, wenn ich es ansah. Es fragte mich, es forderte mich heraus. Es war mein Schicksal, gemalt in Kohle auf Papier.
+
+In dieser Zeit träumte ich viel. Und ein Traum kehrte immer wieder: ich sah einen Vogel, einen Sperber, der sich aus einem riesigen Ei herausarbeitete. Er kämpfte und zappelte, und das Ei, das die ganze Welt war, zersprang, und der Vogel flog heraus, groß und mächtig, und flog auf in einen blauen Himmel, der weder licht noch finster war, sondern beides zugleich.
+
+Ich malte auch den Vogel. Ich malte ihn, wie er sich aus dem Ei kämpfte, mit ausgebreiteten Schwingen, und ich schickte das Bild an Demian, ohne Begleitbrief, ohne Erklärung. Ich hatte seine Adresse nicht, aber ich wußte den Namen seiner Mutter und der Stadt, und so adressierte ich den Brief an Frau Eva Demian.
+
+Wochen vergingen. Dann fand ich eines Tages ein Zettelchen in meinem Schulbuch, in einer Handschrift, die ich nicht kannte. Darauf stand:
 
 »Der Vogel kämpft sich aus dem Ei. Das Ei ist die Welt. Wer geboren werden will, muß eine Welt zerstören. Der Vogel fliegt zu Gott. Der Gott heißt Abraxas.«
 
-Abraxas! Das Wort schlug in mich ein wie ein Blitz. Ich hatte es nie gehört, aber es klang in mir wider, als hätte ich es schon immer gekannt. Abraxas — der Gott, der zugleich göttlich und teuflisch war, der das Licht und die Finsternis in sich vereinte, der weder gut noch böse war, sondern beides zugleich.
+Abraxas! Ich hatte den Namen nie gehört. Ich suchte ihn in Büchern und fand wenig — nur daß er ein Gott oder Dämon der Antike sei, der das Göttliche und das Teuflische in sich vereine. Ein Gott, der Gott und Teufel zugleich war! Das war es, was ich gesucht hatte, ohne es zu wissen! Die Überwindung der zwei Welten, die Vereinigung von Licht und Finsternis, von Gut und Böse — in einem einzigen, ungeheuren Wesen.
 
-Von diesem Augenblick an wurde Abraxas mein Geheimnis, meine Suche, mein Weg. Ich las alles, was ich über diesen Namen finden konnte. In einem alten Buch über gnostische Religionen fand ich ihn wieder: Abraxas war der Gott der Gnostiker, der Gott, der die Gegensätze in sich vereinte, der jenseits von Gut und Böse stand, der die ganze Welt umfaßte — das Licht und den Schatten, das Männliche und das Weibliche, das Heilige und das Verfluchte.
+Abraxas! Von nun an war dieses Wort mein Geheimnis, mein Losungswort, mein Gebet.
 
-In jenen Tagen der Suche begann ich, Orgel zu spielen. Ich ging in die kleine Kirche am Stadtrand und spielte auf der alten Orgel. Und eines Abends, als ich spielte, bemerkte ich einen Mann, der in einer der hinteren Bänke saß und zuhörte. Als ich fertig war, kam er zu mir. Er war ein seltsamer, dunkler Mann mit einem feinen, klugen Gesicht.
+Und eines Tages — es war Abend, ich ging durch die stillen Straßen der Stadt — hörte ich Orgelmusik aus einer kleinen Kirche. Ich trat ein. In der leeren Kirche saß ein Mann an der Orgel und spielte — eine wilde, dunkle, leidenschaftliche Musik, die nichts mit Kirchenliedern zu tun hatte. Es war Musik, in der Gott und Teufel zugleich lebten, Musik, in der Licht und Finsternis sich paarten.
 
-»Sie spielen schön,« sagte er. »Was war das für ein Stück?«
+Ich setzte mich still in eine Bank und lauschte. Als der Mann aufhörte zu spielen und sich umdrehte, sah ich ein bleiches, mageres Gesicht mit einem dichten Bart und brennenden Augen.
 
-»Ich weiß nicht,« sagte ich. »Ich improvisiere.«
+»Wer sind Sie?« fragte ich.
 
-»Es klang wie Abraxas,« sagte er und lächelte.
+»Pistorius,« sagte er. »Ein ehemaliger Theologiestudent. Jetzt — ein Suchender, wie Sie, scheint mir.«
 
-Ich fuhr zusammen. »Woher kennen Sie — «
+Wir begannen zu sprechen, und das Gespräch dauerte Stunden. Pistorius kannte Abraxas. Er kannte die Gnosis, die alten Mysterien, die verborgenen Lehren. Er erzählte mir von den Gnostikern, die geglaubt hatten, daß der Gott der Bibel nur ein halber Gott sei, ein Gott des Lichts, dem die dunkle Hälfte fehle. Der wahre Gott, sagten sie, sei Abraxas, der Licht und Dunkel umfasse.
 
-»Abraxas? Es gibt vieles, was ich kenne. Ich heiße Pistorius. Kommen Sie wieder, wir sollten miteinander reden.«
+»Das ist es,« rief ich. »Das ist es, was ich gesucht habe! Die Vereinigung der Gegensätze!«
 
-So begann meine Bekanntschaft mit Pistorius, dem ehemaligen Theologiestudenten, der Organist geworden war und der wie ich auf der Suche nach Abraxas war. Von ihm lernte ich vieles über die alten Religionen, über das Feuer und die Träume, über die Symbole und die verborgene Sprache der Seele. Wir saßen oft nachts vor dem Kamin in seiner kleinen Wohnung, und Pistorius erzählte mir von den Gnostikern, von den Mystikern, von den Alchemisten, und er sagte:
+Pistorius lächelte. »Ja, aber Vorsicht. Es genügt nicht, es zu wissen. Man muß es leben. Man muß die beiden Welten in sich zusammenführen, nicht nur im Kopf, sondern im Herzen, im Leib, in jeder Faser.«
 
-»Sieh, das ist das Geheimnis: der Gott, den wir verehren sollen, ist nicht der halbe Gott der Kirchen, der nur das Licht und das Gute ist. Der wahre Gott ist Abraxas, der alles in sich enthält — das Göttliche und das Teuflische, das Licht und das Dunkel. Erst wer beides annimmt, beides in sich vereint, ist ein ganzer Mensch.«
+Von nun an traf ich Pistorius regelmäßig. Er wurde mein Lehrer, mein Führer auf dem Weg. Er zeigte mir alte Bücher, er erklärte mir Symbole, er lehrte mich, ins Feuer zu starren und die Bilder zu sehen, die in den Flammen tanzten.
 
-Und ich spürte, daß ich auf diesem Weg war — dem Weg zu mir selber, dem Weg zu meinem eigenen Gott, dem Weg zu Abraxas.
+Aber irgendwann — es dauerte Monate — bemerkte ich, daß Pistorius mir nicht alles geben konnte. Er war ein Wissender, ja, aber er war auch ein Gefangener. Er war in der Vergangenheit gefangen, in den alten Büchern, den alten Symbolen, den alten Religionen. Er blickte rückwärts, nicht vorwärts. Er konnte die alten Götter beschwören, aber er konnte keinen neuen Gott erschaffen.
+
+Und es kam der Tag, an dem ich ihm das sagte — grausam, unbarmherzig, wie nur die Jugend grausam sein kann. Ich sagte ihm, daß er ein Antiquar sei, ein Sammler von toten Wahrheiten, und daß ich weiter müsse, über ihn hinaus, zu etwas Neuem.
+
+Pistorius wurde blaß. Dann nickte er langsam. »Du hast recht,« sagte er leise. »Und du bist grausam. Aber du hast recht.«
+
+Es war ein Abschied, und er tat mir weh. Pistorius hatte mir viel gegeben. Aber der Weg ging weiter, und ich mußte ihn allein gehen — oder mit Demian.
 
 ---
 
 ### Fünftes Kapitel: Der Vogel kämpft sich aus dem Ei
 
-Mein Leben hatte nun eine Richtung, ein Ziel, wenn auch ein geheimnisvolles und schwer zu benennendes. Ich studierte, ich malte, ich las, ich suchte. Die Welt meiner Eltern lag weit hinter mir — nicht vergessen, nicht verachtet, aber überwunden. Ich brauchte sie nicht mehr. Ich war auf dem Weg zu meiner eigenen Welt.
+Es war die Zeit der großen inneren Kämpfe. Die Schule lag hinter mir, und ich stand vor dem Leben wie vor einem dunklen Tor, das in ein unbekanntes Land führte. Ich wußte nicht, was ich werden sollte, was ich tun sollte, wohin ich gehen sollte. Alles, was ich hatte, war der Vogel, der sich aus dem Ei kämpfte — das Bild, das Demian mir einmal geschickt hatte, das Symbol meines Weges.
 
-Pistorius wurde mir ein Lehrer und Freund. Aber nach und nach begann ich zu spüren, daß auch er seine Grenzen hatte. Er war ein Suchender wie ich, aber sein Suchen war rückwärts gewandt — er suchte in den alten Religionen, in den alten Symbolen, in den alten Mythen. Er wollte das Alte wiederbeleben, ich aber wollte etwas Neues schaffen. Er war ein Archäologe der Seele, ich wollte ein Schöpfer sein.
+In jener Zeit begann ich, die Universität zu besuchen. Ich studierte — was, ist gleichgültig; es war nur ein Vorwand, ein Rahmen für das eigentliche Geschehen, das sich in meinem Innern abspielte. Ich las viel, dachte viel, malte. Und ich suchte — Demian.
 
-Eines Tages sagte ich ihm das, und ich sagte es hart und unfreundlich, wie es meine Art war in jenen Jahren. Pistorius wurde blaß und schwieg. Dann sagte er leise:
+Ich hatte ihn seit Jahren nicht mehr gesehen. Aber sein Bild lebte in mir, sein Gesicht, sein Lächeln, seine Worte. Er war mein Bruder, mein anderes Selbst, mein Führer, und ich wußte, daß ich ihn wiederfinden würde — daß ich ihn finden mußte.
 
-»Du hast recht. Das ist mein Fehler. Ich schaue immer zurück. Danke, daß du es mir sagst.«
+Es war in einer Vorlesung, daß ein Professor beiläufig den Namen Abraxas erwähnte. Mein Herz schlug. Ich sprach den Professor nach der Vorlesung an und bat ihn, mir mehr darüber zu erzählen.
 
-Ich hatte ihn verletzt, und es tat mir leid. Aber es war die Wahrheit, und die Wahrheit mußte gesagt werden. Von diesem Tage an sahen wir uns seltener, und bald verloren wir uns ganz aus den Augen.
+»Abraxas?« sagte er. »Ein gnostischer Gott. Man weiß nicht viel über ihn. Ein Gott, der Gott und Teufel in sich vereint. Die Gnostiker glaubten, daß er über allem steht, über Gut und Böse, über Licht und Finsternis. Ein interessantes Konzept, aber natürlich nur eine historische Kuriosität.«
 
-In jener Zeit träumte ich oft. Meine Träume waren voll von Bildern und Symbolen, die mich ängstigten und faszinierten zugleich. Immer wieder träumte ich von dem Vogel, der sich aus dem Ei kämpfte. Und immer wieder träumte ich von einem Gesicht — dem Gesicht einer Frau, die zugleich Mutter und Geliebte war, die zugleich streng und zärtlich war, die zugleich Demians Gesicht und mein eigenes trug. Ich nannte sie Frau Eva, ohne zu wissen warum.
+Nein! Es war keine Kuriosität! Es war die Wahrheit, meine Wahrheit, die Wahrheit Demians, die Wahrheit des Vogels, der sich aus dem Ei kämpft!
 
-Und dann, eines Tages, kam ein Brief von Demian. Der erste Brief seit Jahren. Er schrieb:
+In einer Nacht hatte ich einen Traum, der alles veränderte. Ich träumte, ich stünde vor einem alten Haus, und über der Tür war ein Wappen in den Stein gehauen: ein Vogel, ein Sperber, der sich aus einer Weltkugel herausarbeitete. Ich trat ein, und in einem hohen, dunklen Zimmer saß eine Frau — groß, still, mit dunklem Haar und einem Gesicht, das ich kannte und nicht kannte. Es war das Gesicht meiner Mutter und es war das Gesicht Demians und es war das Gesicht von Beatrice, und es war das Gesicht aller Frauen der Welt. Sie lächelte mich an und sagte: »Du kommst.«
 
-»Lieber Sinclair, bald werde ich dich wiedersehen. Du weißt noch nicht, wann und wo, aber du wirst es spüren. Sei bereit.
+Und ich wachte auf und wußte: ich mußte sie finden. Und ich wußte: sie existierte. Und ich wußte: sie war Frau Eva, Demians Mutter.
 
-Kennst du den Spruch noch? Der Vogel kämpft sich aus dem Ei. Das Ei ist die Welt. Du bist auf dem Weg. Bald wirst du fliegen.
+In den folgenden Wochen lebte ich wie im Fieber. Ich malte das Gesicht aus meinem Traum, immer wieder, und jedes Mal wurde es deutlicher, lebendiger, wirklicher. Es war das Gesicht einer Frau, die Mutter und Geliebte und Göttin zugleich war, die Gut und Böse, Licht und Dunkel, Mann und Frau in sich vereinte.
 
-Abraxas!
-
-Dein Demian.«
-
-Ich las den Brief immer wieder. Er war wie eine Verheißung, wie ein Ruf, wie ein Signal. Ja, ich war bereit. Ich wußte nicht wofür, aber ich war bereit.
+Ich nannte sie Frau Eva, obwohl ich nicht wußte, ob sie wirklich so hieß. Aber der Name war richtig, ich fühlte es.
 
 ---
 
 ### Sechstes Kapitel: Jakobs Kampf
 
-Ich war nun Student in H. und lebte mein eigenes Leben, weit weg von meinen Eltern und meiner Kindheit. Ich studierte, ich las, ich dachte nach, und ich wartete — ohne recht zu wissen worauf. Das Bild der Frau Eva begleitete mich ständig, in meinen Träumen, in meinen Zeichnungen, in meinen Gedanken.
+Es war ein langer Kampf, der nun folgte — der Kampf Jakobs mit dem Engel, der Kampf mit mir selbst. Ich rang mit meinen Dämonen, mit meinen Ängsten, mit der Herde in mir, die sich weigerte zu sterben. Es gab Nächte, in denen ich weinte, und Nächte, in denen ich lachte, und Nächte, in denen ich ins Leere starrte.
 
-Eines Tages, in der Universitätsstadt, sah ich auf der Straße einen Mann, der mir bekannt vorkam. Er ging langsam, mit sicheren, ruhigen Schritten, und als er näher kam, erkannte ich ihn: es war Demian!
+Der Kampf war der Kampf um mein eigenes Selbst, um den Menschen, der ich sein sollte. Jeder trägt einen Entwurf in sich, ein Bild dessen, was er werden kann, und der Weg dorthin ist der Kampf — der Kampf gegen alles, was dieses Bild verhüllt und verdunkelt.
 
-Er hatte sich verändert — er war größer geworden, männlicher, mit einem Gesicht, das noch reifer und rätselhafter war als früher. Aber sein Blick war derselbe geblieben — dieser ruhige, wissende, durchdringende Blick, der einen bis ins Innerste traf.
+Es war auch die Zeit, in der ich lernte, allein zu sein. Nicht einsam — allein. Es ist ein großer Unterschied. Der Einsame leidet unter seiner Einsamkeit; der Alleine feiert sie. Ich lernte, in mir selber zu wohnen, meine eigene Gesellschaft zu genießen, mich selbst zu erforschen wie ein unbekanntes Land.
+
+Ich begann wieder zu träumen, lebhafter als je zuvor. Und in meinen Träumen erschien immer wieder dasselbe Bild: das Gesicht der Frau, Frau Eva, die Mutter-Geliebte-Göttin. Ihr Gesicht zog mich an wie ein Magnet, und ich wußte, daß ich ihr eines Tages gegenüberstehen würde.
+
+Ich trug das Wissen um Abraxas in mir, das Wissen, daß die Welt nicht in Gut und Böse geteilt ist, sondern daß beides zusammengehört, daß beides göttlich ist. Dieses Wissen war eine Last und eine Befreiung zugleich. Eine Last, weil es mich von den andern trennte, von der Herde, von der bequemen Moral der Vielen. Eine Befreiung, weil es mich zu mir selber führte.
+
+In der Universität lebte ich zurückgezogen. Ich hatte wenige Freunde, wenige Bekannte. Aber unter den wenigen gab es einige, in denen ich etwas Verwandtes spürte — ein Flackern, ein Zeichen, einen Blick, der verriet, daß auch sie Suchende waren, Erwachende, Menschen mit dem Zeichen Kains.
+
+Eines Tages, in einer fremden Stadt, in einem kleinen Restaurant, sah ich ihn. Demian. Er saß an einem Tisch, allein, und las. Er war älter geworden, sein Gesicht war noch reifer, noch ruhiger, noch überlegener. Aber er war es — zweifellos, unverwechselbar.
 
 »Demian!« rief ich.
 
-Er lächelte. »Sinclair! Da bist du ja. Ich wußte, daß wir uns hier treffen würden.«
+Er sah auf und lächelte. Es war dasselbe Lächeln — das Lächeln eines Menschen, der alles weiß und alles verzeiht.
 
-Wir gingen zusammen durch die Stadt, und es war, als hätten wir uns nie getrennt. Demian erzählte mir von seinen Reisen, von seinen Studien, von seinen Erfahrungen. Und dann sagte er:
+»Sinclair,« sagte er. »Ich habe auf dich gewartet.«
 
-»Ich möchte, daß du meine Mutter kennenlernst. Sie erwartet dich.«
+Wir sprachen die halbe Nacht. Er erzählte mir von seinen Reisen, von seinen Studien, von den Menschen, die er getroffen hatte — Menschen mit dem Zeichen, Erwachende, Suchende. Er erzählte mir von einer Gemeinschaft, die sich bildete, einer stillen, unsichtbaren Bruderschaft von Menschen, die das Zeichen trugen.
 
-»Deine Mutter?«
+»Es sind nicht viele,« sagte er. »Aber sie sind überall. Und sie erkennen einander. Es braucht kein Wort, kein Zeichen — sie erkennen sich am Blick.«
 
-»Ja. Du kennst sie schon. Du hast sie oft geträumt.«
+»Und was wollen sie?«
 
-Ich erschrak. Es war wahr — das Gesicht, das ich so oft geträumt hatte, das Gesicht der Frau Eva — war es das Gesicht von Demians Mutter?
-
-Am nächsten Tag führte Demian mich zu ihr. Sie wohnte in einem alten Haus am Stadtrand, mit einem großen Garten voller alter Bäume. Und als ich sie sah, wußte ich: das war sie. Das war das Gesicht aus meinen Träumen. Das war Frau Eva.
-
-Sie war groß und schlank, mit dunklem Haar, das schon ein wenig grau war an den Schläfen. Ihr Gesicht war weder jung noch alt, es war zeitlos, es trug alle Alter in sich. In ihren Augen lag eine Ruhe und eine Tiefe, die mich zugleich trösteten und erschütterten. Sie nahm meine beiden Hände und sah mich an, und ich fühlte mich gekannt — vollständig gekannt, durchschaut und angenommen, wie nie zuvor in meinem Leben.
-
-»Ich habe lange auf Sie gewartet, Sinclair,« sagte sie, und ihre Stimme war warm und tief. »Max hat mir viel von Ihnen erzählt. Aber ich kannte Sie schon, bevor er mir von Ihnen sprach.«
-
-Ich konnte nichts sagen. Ich stand da und hielt ihre Hände und fühlte, daß ich nach Hause gekommen war — nicht in das alte Elternhaus, nicht in die lichte Welt meiner Kindheit, sondern in ein neues Zuhause, in das Zuhause meiner Seele.
-
-Von diesem Tag an war ich oft bei Frau Eva und Demian. In ihrem Haus versammelten sich Menschen, die wie wir auf der Suche waren — Suchende, Erwachende, Menschen mit dem Zeichen Kains auf der Stirn. Es waren keine Schwärmer und keine Sektierer, es waren Menschen, die gelernt hatten, sich selbst zu vertrauen, ihren eigenen Träumen und Stimmen zu folgen. Frau Eva war für uns alle die Mutter, die Priesterin, die weise Frau, die jeden sah und jeden verstand.
-
-»Jeder von euch,« sagte sie einmal, »trägt die ganze Welt in sich. Ihr braucht nicht zu suchen — ihr braucht nur zu erwachen. Was ihr sucht, das seid ihr schon. Was ihr werden wollt, das seid ihr schon. Ihr müßt nur den Mut haben, es zu sein.«
-
-In jenen Tagen kämpfte ich meinen Kampf — den Kampf Jakobs mit dem Engel, den Kampf mit mir selbst. Denn so nah ich meinem Ziel war, so nah ich Frau Eva und Demian und mir selbst war — es gab noch Widerstände in mir, alte Ängste, alte Bindungen, alte Lügen. Die lichte Welt meiner Kindheit hielt mich noch fest, und die dunkle Welt lockte mich noch mit falschen Versprechungen. Ich mußte beide überwinden, beide in mir vereinen, um zu mir selbst zu kommen.
-
-Es war Frau Eva, die mir sagte:
-
-»Sie können nicht zu sich selbst kommen, solange Sie nicht gelernt haben, sich selbst zu lieben — nicht nur die lichte Hälfte, sondern auch die dunkle. Sie müssen den ganzen Sinclair annehmen — den frommen und den wilden, den reinen und den finsteren. Erst dann sind Sie ganz.«
+»Nichts. Oder alles. Sie wollen sein, was sie sind. Sie wollen den Vogel sein, der sich aus dem Ei kämpft. Sie wollen Abraxas, den Gott der Ganzheit.«
 
 ---
 
 ### Siebentes Kapitel: Frau Eva
 
-Die Wochen und Monate in der Nähe von Frau Eva und Demian waren die reichsten meines Lebens. Ich lernte, was es heißt, wirklich zu leben — nicht nach den Regeln anderer, nicht nach den Erwartungen der Gesellschaft, sondern aus dem eigenen Inneren heraus.
+Am nächsten Tag führte Demian mich zu seiner Mutter.
 
-Ich liebte Frau Eva. Es war keine gewöhnliche Liebe, keine sinnliche Begierde — obwohl auch die darin war, tief verborgen und nie ausgesprochen. Es war eine Liebe, die alles umfaßte: Verehrung und Verlangen, Dankbarkeit und Sehnsucht, Ehrfurcht und Vertrautheit. Sie war die Mutter und die Geliebte, die Göttin und die Freundin, die Weise und die Ewig-Junge. In ihr vereinten sich alle Gegensätze, wie in Abraxas.
+Frau Eva empfing mich in einem großen, stillen Zimmer. Sie stand mitten im Raum, groß, ruhig, wartend. Ihr Gesicht war das Gesicht aus meinem Traum — genau so, wie ich es hundertmal gemalt hatte: die dunklen Augen, die warmen Lippen, der Ausdruck von Güte und Strenge, von Mütterlichkeit und Leidenschaft.
 
-»Liebe muß nicht bitten,« sagte sie mir einmal, »und sie darf auch nicht fordern. Liebe muß die Kraft haben, in sich selbst zur Gewißheit zu kommen. Dann wird sie nicht mehr gezogen, sondern zieht.«
+»Sie sind Sinclair,« sagte sie. »Ich kenne Sie. Max hat mir viel von Ihnen erzählt. Und ich habe Ihr Bild gesehen, den Sperber.«
 
-»Aber woher weiß ich, ob mein Wunsch erhört wird?« fragte ich.
+Ich konnte nicht sprechen. Ich stand da und sah sie an, und alles, was ich je gesucht hatte, alles, was ich je ersehnt hatte, war in diesem Gesicht.
 
-»Wenn ein Wunsch stark genug und wahr genug ist, wird er erhört. Aber ein wahrer Wunsch ist etwas anderes als das, was die meisten Menschen sich wünschen. Die meisten wünschen sich tausend Dinge, die sie gar nicht brauchen. Ein wahrer Wunsch kommt aus der Tiefe, aus dem Kern des Wesens. Wer wahrhaft wünscht — und wer es wagt, alles auf diesen einen Wunsch zu setzen — dem wird er erfüllt.«
+»Sie haben mich geträumt,« sagte sie, und es war keine Frage, es war eine Feststellung.
 
-Manchmal gingen wir zusammen spazieren, Frau Eva, Demian und ich, durch den großen Garten oder hinaus in die Wälder. Und manchmal saßen wir abends zusammen, schweigend, und die Stille war voll von Bedeutung und Wärme. In solchen Stunden fühlte ich mich aufgehoben in einer Geborgenheit, die tiefer war als alles, was ich kannte — tiefer als die Geborgenheit der Kindheit, tiefer als die Sicherheit der lichten Welt. Es war die Geborgenheit des Ganzen, die Geborgenheit des Menschen, der zu sich selbst gefunden hat.
+»Ja,« flüsterte ich. »Wie ist das möglich?«
 
-Demian sprach in jener Zeit oft von der Zukunft. Er glaubte, daß eine große Umwälzung bevorstehe — nicht nur eine politische, sondern eine geistige. Die alte Welt, sagte er, sei dem Untergang geweiht. Die alten Werte, die alten Ordnungen, die alten Götter — sie alle würden zusammenbrechen. Und aus den Trümmern werde eine neue Welt entstehen, eine Welt der Erwachten, der Menschen mit dem Zeichen.
+Sie lächelte. »Es ist immer möglich. Die Seele kennt den Weg, auch wenn der Verstand ihn nicht sieht.«
+
+Von diesem Tag an wurde Frau Evas Haus meine Heimat. Nicht daß ich dort wohnte — aber ich war dort, in Gedanken, in Gefühlen, in Träumen. Ich besuchte sie und Demian fast jeden Tag, und wir saßen zusammen und sprachen über die Dinge, die uns bewegten: über Abraxas, über das Zeichen, über das Erwachen, über die Zukunft.
+
+Um Frau Eva herum hatte sich ein Kreis gebildet — eine kleine Gemeinschaft von Suchenden, Erwachenden, Menschen mit dem Zeichen. Es waren wenige, vielleicht ein Dutzend, und sie waren sehr verschieden: ein Astrologe, ein Dichter, eine junge Frau, die Visionen hatte, ein alter Mann, der die Sprache der Tiere zu verstehen glaubte. Was sie verband, war nicht ein Glaube, nicht eine Lehre, sondern ein gemeinsames Suchen, eine gemeinsame Ahnung, daß die Welt mehr war als das, was die Herde sah.
+
+Frau Eva war der Mittelpunkt dieses Kreises, aber sie herrschte nicht, sie lehrte nicht, sie predigte nicht. Sie war einfach da, und ihre Gegenwart genügte. Man fühlte sich ruhig in ihrer Nähe, man fühlte sich verstanden, man fühlte sich — ganz. Die zwei Welten, die mein ganzes Leben lang gegeneinander gekämpft hatten, fanden in ihrer Nähe Frieden.
+
+»Sehen Sie,« sagte sie einmal zu mir, »jeder Mensch trägt die ganze Welt in sich. Gut und Böse, Hell und Dunkel, Mann und Frau — alles ist in jedem. Das Geheimnis ist nicht, das eine zu wählen und das andere abzulehnen. Das Geheimnis ist, beides zu bejahen, beides zu umarmen, beides zu sein.«
+
+»Das ist Abraxas,« sagte ich.
+
+»Das ist Abraxas,« bestätigte sie. »Und Abraxas ist in Ihnen, Sinclair. Sie müssen ihn nur finden.«
+
+Es war eine Zeit des Glücks, wie ich sie nie zuvor erlebt hatte. Aber es war kein leichtes Glück, kein bequemes Glück — es war ein Glück, das weh tat, das forderte, das brannte. Denn Frau Eva zu lieben — und ich liebte sie, mit einer Liebe, die alles umfaßte: Sohn, Liebhaber, Anbeter, Schüler — war zugleich beglückend und schmerzlich. Sie war mir nahe und fern zugleich, erreichbar und unerreichbar, Mutter und Geliebte und Göttin.
+
+Ich sprach mit Demian darüber. Er verstand mich, wie immer.
+
+»Sie liebt dich,« sagte er. »Aber nicht so, wie du denkst. Sie liebt dich, weil du du bist, weil du erwachst, weil du das Zeichen trägst. Ihre Liebe ist nicht die Liebe einer Frau zu einem Mann — es ist die Liebe der Seele zum Erwachenden. Verstehst du das?«
+
+Ich verstand es — nicht ganz, nicht mit dem Verstand, aber mit dem Herzen.
+
+Demian sprach oft in jener Epoche vom Kommenden, vom Zukünftigen. Er spürte etwas in der Luft, eine große Veränderung, eine Umwälzung. Er sprach von einem neuen Zeitalter, das anbrach, von alten Ordnungen, die zusammenstürzten, von einer neuen Menschheit, die geboren werden wollte.
 
 »Es wird furchtbar werden,« sagte er. »Die alte Welt wird sich wehren, mit aller Gewalt und aller Grausamkeit. Es wird Krieg geben, Zerstörung, Leid. Aber es muß so sein. Wer geboren werden will, muß eine Welt zerstören.«
 
@@ -304,6 +362,8 @@ Und dann kam der Krieg.
 
 Es war, als hätte die ganze Welt auf diesen Augenblick gewartet. Mit einem Schlag zerriß der dünne Schleier der Zivilisation, und die dunkle Welt brach hervor — nicht mehr versteckt in den Hinterhöfen und Wirtshäusern, sondern offen und gewaltig, über den ganzen Erdteil. Die Fahnen flatterten, die Kanonen donnerten, die Züge rollten an die Front, und Millionen junge Männer marschierten in den Tod.
 
+Die Menschen waren trunken. Auf den Straßen wurde gesungen und gejubelt, als ginge es zu einem Fest. Es war, als hätte der Krieg die Mauern zwischen den zwei Welten eingerissen — die dunkle Welt flutete herein und übernahm alles, und die lichte Welt versank in Blut und Feuer.
+
 Auch Demian ging. Auch ich ging. Wir alle gingen — die Erwachten und die Schlafenden, die Suchenden und die Blinden, die mit dem Zeichen und die ohne Zeichen. Der Krieg unterschied nicht.
 
 In der letzten Nacht vor dem Abschied saß ich noch einmal bei Frau Eva. Sie war ruhig und ernst, aber nicht traurig. In ihren Augen lag die gleiche Tiefe wie immer, und ihre Stimme war warm und fest.
@@ -314,6 +374,10 @@ In der letzten Nacht vor dem Abschied saß ich noch einmal bei Frau Eva. Sie war
 
 Sie lächelte. »Wir sehen uns immer. Wohin du auch gehst, ich bin bei dir. Du brauchst nur in dich hineinzuhören, und du wirst mich finden.«
 
+In jener Nacht küßte sie mich — zum ersten und zum letzten Mal. Ihr Kuß war wie Frühling und wie Herbst, wie Geburt und wie Tod, wie alles, was das Leben war.
+
+Dann ging ich in den Krieg.
+
 An der Front traf ich Demian wieder. Wir lagen in derselben Stellung, in einem zerschossenen Graben, unter dem endlosen Donner der Geschütze. Um uns herum war Verwüstung, Schlamm, Tod. Aber Demian war ruhig wie immer. Sein Gesicht leuchtete in der Dunkelheit wie das Gesicht eines Engels — eines dunklen Engels, eines Engels, der das Licht und die Finsternis in sich trug.
 
 »Weißt du noch,« sagte er eines Nachts, »was Frau Eva gesagt hat? Daß jeder die ganze Welt in sich trägt?«
@@ -322,20 +386,36 @@ An der Front traf ich Demian wieder. Wir lagen in derselben Stellung, in einem z
 
 »Das ist wahr. Und es ist besonders jetzt wahr. Sieh um dich — das hier ist nicht nur draußen, das ist auch in uns. Der Kampf, die Zerstörung, der Tod — das ist alles auch in uns. Und die neue Welt, die kommen wird — auch die ist in uns. Wir brauchen nicht zu warten. Wir können sie jetzt schon bauen — in uns.«
 
+»Und Abraxas?«
+
+»Abraxas ist hier. Abraxas ist immer hier. Er ist Gott und Teufel, Schöpfer und Zerstörer. Er ist der Krieg und der Frieden. Er ist alles, was ist.«
+
+Wir schwiegen. Um uns herum donnerten die Geschütze, und der Himmel brannte rot.
+
 Wenige Tage später kam der Angriff. Eine Granate schlug ein, ganz nah. Ich wurde geschleudert, es gab einen ungeheuren Knall, und dann war alles dunkel.
 
-Als ich erwachte, lag ich in einem Lazarett, auf einer Bahre, neben vielen anderen Verwundeten. Neben mir lag Demian. Er war schwer verwundet, sein Gesicht war blaß, aber seine Augen waren offen und klar.
+Als ich erwachte, lag ich in einem Lazarett, auf einer Bahre, neben vielen anderen Verwundeten. Alles tat mir weh, ich konnte mich kaum bewegen. Eine Schwester kam und gab mir Wasser. Ich fragte nach Demian.
+
+»Es liegt einer neben Ihnen,« sagte sie. »Er hat nach Ihnen gefragt.«
+
+Ich drehte den Kopf. Da lag Demian, ganz nah, auf der nächsten Bahre. Er war schwer verwundet, sein Gesicht war blaß, aber seine Augen waren offen und klar. Er lächelte, als er mich sah.
 
 »Sinclair,« flüsterte er, und ich beugte mich zu ihm.
 
 »Hör zu, Sinclair. Ich muß gehen. Vielleicht brauchst du mich einmal wieder. Dann hör in dich hinein. Dann wirst du mich finden — nicht mehr draußen, sondern in dir. Hörst du? In dir.«
 
-Er lächelte, und sein Lächeln war wie Frau Evas Lächeln — warm und tief und voller Geheimnis.
+Ich griff nach seiner Hand. Sie war warm und fest.
 
 »Und denk daran: der Vogel kämpft sich aus dem Ei. Immer wieder. Immer wieder muß man eine Welt zerstören, um geboren zu werden. Fürchte dich nicht.«
+
+Er drückte meine Hand. Dann beugte er sich zu mir herüber, und sein Gesicht war ganz nah, und ich spürte seinen Atem und roch seinen Geruch, und er gab mir — nein, nicht er gab mir, sondern jemand, der durch ihn wirkte, Frau Eva vielleicht, oder Abraxas, oder das Leben selbst — er gab mir einen Kuß auf die Stirn. Einen leichten, warmen Kuß, wie ein Zeichen.
+
+»Leb wohl, Sinclair,« sagte er. »Und vergiß nicht: ich bin in dir.«
 
 Dann schloß er die Augen. In der Nacht starb er, still und friedlich, wie ein Mensch, der nach Hause geht.
 
 Und ich — ich lag da, verwundet und allein, und ich fühlte, daß etwas in mir sich verändert hatte. Der Schmerz war da, die Trauer war da, die Angst war da. Aber darunter, tief darunter, war etwas anderes: eine Ruhe, eine Gewißheit, ein Wissen. Demian war nicht fort. Er war in mir. Frau Eva war in mir. Abraxas war in mir. Alles, was ich gesucht hatte, war in mir — war immer in mir gewesen.
+
+Der Vogel hatte sich aus dem Ei gekämpft. Die Welt war zerstört. Und ich — ich war geboren.
 
 Wenn ich manchmal den Schlüssel finde und ganz in mich selbst hinuntersteige, dort wo im dunklen Spiegel die Schicksalsbilder schlummern, dann brauche ich mich nur über den dunklen Spiegel zu beugen und sehe mein eigenes Bild, das nun ganz ihm gleicht, ihm, meinem Freund und Führer.

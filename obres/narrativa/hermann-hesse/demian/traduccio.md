@@ -2,7 +2,7 @@
 
 ## Hermann Hesse (1919)
 
-### Traducció al català — Biblioteca Arion (Proposta comunitat)
+### Traducció al català — Biblioteca Arion
 
 ---
 
@@ -72,9 +72,19 @@ Des d'aquell moment vaig estar sota el seu poder. Em manejava com volia. Exigia 
 
 Durant setmanes vaig viure a l'infern. No podia dormir, no podia menjar, vaig aprimar-me, em vaig tornar callat i estrany. Els meus pares notaven que alguna cosa no anava bé, però no podien sospitar què era. La mare sospirava i em demanava que li digués què em turmentava. El pare em parlava seriosament. Però no els ho podia dir. Qualsevol confessió hauria revelat el pitjor: la mentida, el robatori, el xantatge.
 
+Van arribar dies en què creia que em tornaria boig. M'havia convertit en un alumne desordenat i estrany, descurava les tasques, no podia estar quiet a cap classe i passava les nits mig despert amb els ulls oberts. Quan la mare em volia portar al metge, m'obstinava i començava a plorar. El pare em va renyar diverses vegades, i després es va posar seriós i va parlar sol amb mi. Em va preguntar si algú m'havia fet alguna cosa. Com n'era de prop! Però no podia, no podia, no podia parlar.
+
+Kromer em portava ara a noves aventures. Havia de quedar-me amb ell al vespre davant la casa d'un taverner, i mentre jo feia guàrdia, ell s'enfilava per una finestra del soterrani. Em forçava a fer les coses més terribles. I quan em resistia, em recordava el Müller i les pomes robades. Aleshores tremolava i feia el que demanava.
+
+Un cop em va fer escriure paraules en un paper que no vaig entendre, aleshores no. Però feia tot el que ell volia. I una nit em vaig despertar d'un malson en què Kromer m'amenaçava amb un ganivet, i vaig cridar tan fort que la meva mare va venir corrents i es va asseure al meu costat. Em va acariciar els cabells i va preguntar: «Què et passa, fill meu? Què tens?»
+
+Jo només plorava i no podia dir res.
+
 I aleshores va arribar Demian.
 
 Un alumne nou va aparèixer a la nostra classe. Era més gran i més fort que nosaltres, tenia un rostre madur i singular, gairebé el rostre d'un home, i el seu front i la seva mirada eren els d'un adult. Es deia Max Demian, i des de la primera hora va exercir una estranya fascinació sobre mi.
+
+Semblava com si fos més gran que tots nosaltres, com si no fos un alumne, sinó un investigador, un superior. Cap mestre no el podia intimidar, i cap company no l'impressionava. Era — diferent. Portava el signe, encara que aleshores jo no ho sabia anomenar així.
 
 Va ser una tarda que Demian em va adreçar la paraula. Em va esperar després de l'escola, i quan els altres se n'havien anat, va dir:
 
@@ -82,7 +92,7 @@ Va ser una tarda que Demian em va adreçar la paraula. Em va esperar després de
 
 Em vaig posar vermell i vaig balbotejar: «Què?»
 
-«Tens un company que et turmentam oi?»
+«Tens un company que et turmenta, oi?»
 
 Em vaig espantar fins al fons del cor. Com ho sabia?
 
@@ -100,9 +110,23 @@ Volia mentir, però la seva mirada em retenia.
 
 «Hm», va fer Demian pensatiu. «Escolta, no cal que tinguis por. Jo m'encarregaré d'això.»
 
-I efectivament — pocs dies després, el domini de Kromer sobre mi es va acabar. No vaig saber mai exactament què li havia dit Demian. Però Kromer no va tornar mai més a venir a buscar-me. M'evitava, no em mirava, i quan les nostres mirades es creuaven, hi havia por en les seves.
+«Però què pots fer?»
 
-Era lliure! La meva gratitud envers Demian era immensa. I tanmateix — estranyament, hi havia també quelcom d'opressiu en aquesta alliberació, perquè sentia que ara estava lligat a Demian, tal com abans ho havia estat a Kromer. No per la por, no — per alguna altra cosa, alguna cosa més profunda.
+«Parlaré amb Kromer. No trigarà gaire. I et deixarà en pau.»
+
+«T'apallissarà!», vaig exclamar.
+
+Demian va somriure. Era un somriure estrany, madur, superior: el somriure d'un home, no pas d'un noi.
+
+«No ho farà. I si ho intenta — jo també sé algunes coses d'ell que no voldria que es fessin públiques. Però ni tan sols necessito això. Ell deixarà de fer-ho sol, creu-me.»
+
+No ho entenia, però sentia que Demian sabia de què parlava. Era com si hagués vist molt més del món que tots nosaltres, com si ja hagués viscut allà on nosaltres encara no havíem estat.
+
+I efectivament — pocs dies després, el domini de Kromer sobre mi es va acabar. No vaig saber mai exactament què li havia dit Demian. Però Kromer no va tornar mai més a venir a buscar-me. M'evitava, no em mirava, i quan les nostres mirades es creuaven, hi havia por en les seves. Kromer, el tirà, que havia estat el meu amo i botxí, el Kromer fort i brutal, tenia por! I tenia por de Demian, de l'alumne nou, que ni amenaçava ni cridava, que només era tranquil i amable.
+
+Era lliure! La meva gratitud envers Demian era immensa. I tanmateix — estranyament, hi havia també quelcom d'opressiu en aquesta alliberació, perquè sentia que ara estava lligat a Demian, tal com abans ho havia estat a Kromer. No per la por, no — per alguna altra cosa, alguna cosa més profunda. Per admiració, per una mena d'amor, i pel pressentiment que aquesta persona tenia alguna cosa per donar-me, alguna cosa important que jo encara no entenia.
+
+Vaig intentar acostar-me a Demian, però ell s'esquivava amb facilitat. Era amable, però mai intrusiu. Somreia, assentia, però no venia a mi espontàniament. I així vaig començar, d'una manera estranya, a esperar — una paraula, un gest, un signe d'ell. I mentre esperava, alguna cosa succeïa dins meu: el món lluminós dels pares, tan sacsejat, començava a consolidar-se de nou, però no del tot com abans. Hi havia quedat una esquerda, i per l'esquerda es filtrava alguna cosa que no pertanyia ni al món lluminós ni al fosc — alguna cosa tercera, alguna cosa nova.
 
 ---
 
@@ -122,17 +146,27 @@ Vaig dir que la trobava completament natural.
 
 «Això és precisament», va dir Demian en veu baixa. «La majoria de les històries que ens expliquen es poden llegir d'una manera completament diferent, i aleshores tenen un sentit molt millor. Per exemple, no és gens segur que Caín fos un brètol. Pensa-hi! Aquí hi ha algú que és temut. Per què? Perquè té un signe al front. Quin signe? Una taca que el fa lleig? Seria massa estúpid! Les persones amb coratge i caràcter sempre resulten sinistres a la resta. I així van inventar la història que Caín era un criminal i que el seu signe era una vergonya. En realitat, el signe era una distinció. L'home amb el signe era algú que feia por. Tenia alguna cosa al rostre que resultava sinistre als altres. La gent amb el signe eren els forts, els valents, els que pensaven més enllà que els altres. Els altres en tenien por i van inventar una història per convertir-los en criminals. Així és gairebé sempre al món.»
 
-Vaig quedar totalment atordiment. Allò era completament diferent del que sempre ens havien explicat!
+Vaig quedar totalment atordit. Allò era completament diferent del que sempre ens havien explicat!
 
 «Vols dir», vaig preguntar excitat, «que Caín era en realitat el millor? I que Abel no...»
 
 «No exactament», va dir Demian. «Només dic que la cosa es pot veure també així. Caín era un home que feia por als altres. I perquè els feia por, li van penjar un estigma i van inventar una història per justificar-ho. Les històries sempre les inventen els que tenen por — el ramat. Caín no era un criminal: simplement era diferent.»
 
+I em va explicar més coses sobre Caín, sobre el signe, sobre la por dels molts davant els pocs. Em va explicar com el ramat persegueix l'individu, com el declara dolent tan bon punt és diferent. Parlava amb calma i seguretat, com si expliqués alguna cosa que sabia de feia temps i que s'entenia per si mateixa.
+
+«Veus», deia, «és igual a l'escola, és igual a l'església, és igual a la política. Quan algú pensa diferent, quan algú és més valent, quan algú es nega a seguir el ramat — aleshores és perillós. Aleshores cal neutralitzar-lo. Se l'empresona o se'l mata o se li penja una història al damunt.»
+
 Des d'aquell dia, amb cada passatge bíblic em preguntava com l'interpretaria Demian. La història de Caín i el signe no em va deixar en pau. Era com si Demian hagués obert una porta per la qual entrava aire fred i estrany — inquietant, però purificador.
+
+Vaig començar a veure el món amb uns altres ulls. No és que tot hagués canviat — el pare era encara bondadós, la mare encara càlida, les germanes encara pures. Però era com si darrere la superfície lluminosa alguna cosa s'hagués desplaçat, com si hi brillés una altra veritat. Els dos mons, fins aleshores tan fermament separats — el lluminós i el fosc — començaven a barrejar-se, i les seves fronteres es tornaven difuses.
 
 Demian era en general una persona singular. Semblava més gran que tots nosaltres, no només en anys, sinó en essència. Vivia entre nosaltres, però vivia també en un món completament diferent. Tenia la seva mare — del pare no se'n parlava mai — i tots dos vivien en una casa antiga i distingida de la nostra ciutat. La seva mare, la senyora Eva, era una aparició que em va encantar a l'instant i per sempre la primera vegada que la vaig veure. Era alta, esvelta, amb cabells foscos i un rostre estrany i enigmàtic, on confluïen bondat i severitat, tendresa i passió. Semblava una reina, una sacerdotessa, una mare de tota la humanitat.
 
 A l'escola, Demian era superior a la majoria, no perquè fos especialment estudiós, sinó perquè tenia un enteniment que ja semblava acabat, mentre el nostre encara fermentava i s'esforçava. Era tranquil i serè, parlava poc, no es deixava intimidar per cap mestre i va adquirir, sense buscar-ho, una posició peculiar que era en part respecte i en part desconfiança.
+
+Hi havia una qualitat de Demian que m'impressionava particularment: semblava capaç d'influir la voluntat de les persones. Un cop, per exemple, a l'escola, un mestre l'havia interpel·lat i li havia fet una pregunta difícil. Demian es va aixecar i va mirar el mestre amb calma, sense respondre. El mestre va repetir la pregunta, impacient. Demian no va dir res. Estava allà dret i mirava. I el mestre — el mestre sever i temut — es va torbar, va carraspegar i es va adreçar a un altre alumne. Era com si la mirada de Demian li hagués robat la voluntat.
+
+Un altre cop em va explicar com funcionava: «La majoria de la gent», deia, «no tenen voluntat pròpia. Fan el que els diuen. Quan algú realment vol, realment i amb tota l'ànima, aleshores pot aconseguir moltes coses. La gent sent la voluntat, i se n'aparten, si és prou forta.»
 
 «Saps», em va dir un cop, «la majoria de la gent en realitat no està viva. Van amunt i avall i fan el que els diuen i pensen el que altres els pensen per ells. No han après mai a pensar per si mateixos ni a voler per si mateixos. I quan algú comença a pensar per si mateix i a voler per si mateix, aleshores en tenen por, aleshores l'odien, aleshores diuen que és dolent. Per això la història de Caín és tan important: mostra que el ramat sempre declara dolent l'individu, quan és diferent d'ells.»
 
@@ -142,157 +176,181 @@ No entenia tot el que Demian deia. Però sentia que tenia raó. I sentia que aqu
 
 ### Capítol tercer: El lladre
 
-Els anys passaven. Ara era catecumen i anava al gimnàs. La relació amb Demian s'havia afluixat durant un temps — anàvem a classes diferents, ens vèiem menys sovint. Però la seva influència perdurava, vivia en mi, com una llavor que germinava lentament.
+Els anys van passar. Jo era ara catecumen i anava al gimnàs. El tracte amb Demian s'havia afluixat una mica — anàvem a classes diferents, ens vèiem menys sovint. Però la seva influència persistia, vivia en mi, com una llavor que germinava lentament.
 
-Havia arribat a una edat en què una nova inquietud m'omplia. La pubertat em va envair amb onades fosques, amb tempestes i anhels que no sabia anomenar. Em vaig tornar més reservat, més rebel, més susceptible. El món semblava ple d'enigmes i perills, i el pitjor era que jo mateix m'havia convertit en el meu propi enigma més gran.
+A la catequesi de confirmació vam tornar a coincidir. El vell rector ens va explicar la història del lladre a la creu — el criminal que va ser crucificat al costat de Crist i que es va penedir a l'últim moment. El rector va lloar la força del penediment, que podia salvar fins i tot el pitjor pecador.
 
-A la catequesi de confirmació vaig escoltar la història del lladre a la creu, que s'havia penedit a última hora. «Avui mateix seràs amb mi al paradís», li havia dit Jesús. Era una de les històries que ens explicaven com a consol i encoratjament: mireu, fins i tot un criminal pot ser salvat si es penedeix!
+Un cop més va ser Demian qui em va fer reflexionar. Tornant cap a casa va dir:
 
-Demian també va interpretar aquesta història d'una altra manera.
+«Has sentit la història del lladre? Una altra bella història del ramat. Hi penja un al creu i es penedeix, i aleshores va al paradís. Una cosa meravellosa per als febles! Sempre es pot penedir, sempre es pot tornar enrere, sempre tot és perdonat. Però l'altre lladre — el que no es penedeix, el que es manté desafiant i insolent — aquest sí que és interessant! Té caràcter. No es deixa intimidar, ni tan sols davant la mort. Porta un signe.»
 
-«T'adones», va dir, «del que realment diu aquí? Un dels lladres era un covard, un ploraner, que al final va fer-se el manso i es va posar a arrossegar-se. Quin guany! L'altre, en canvi, l'indòmit, que tenia les seves conviccions i va seguir el seu camí fins al final — aquest és en realitat l'admirable. S'hauria pogut convertir igualment, però no ho va fer, perquè tenia caràcter.»
+«Però no va al paradís», vaig objectar.
 
-«Però era un criminal!»
+«Qui sap?», va dir Demian. «Potser va a un de millor. O potser no necessita cap paradís. Potser ja és on ha de ser.»
 
-«Què vol dir això? El propi Crist va ser crucificat com a criminal. Què és delicte i què és virtut ho determina la societat — el ramat. Qui té el coratge de viure fora del ramat és declarat criminal. I de vegades és precisament per això el més fort.»
+Després va continuar: «Saps, tota la moral que ens ensenyen és una moral dels febles. Diu: penedeix-te, sotmet-te, sigues humil, i seràs recompensat. Però hi ha una altra moral, una de més antiga, una de més forta. Que diu: sigues tu mateix, segueix la teva llei interior, encara que el món t'odiï per això.»
 
-Aquestes converses amb Demian em perseguien molt de temps. I es connectaven amb el que passava dins meu: amb els impulsos foscos, les noves passions, la sensació d'estar entre dos mons. L'un — el vell món lluminós, devot, dels meus pares — se'm feia estrany i estret. L'altre — el món fosc, prohibit, temptador — m'atreia, però també em feia por.
+Vaig quedar trasbalsat. Allò era una rebel·lió contra tot el que havia après! I tanmateix — alguna cosa dins meu jubilava, alguna cosa dins meu reconeixia aquelles paraules com a veritables.
 
-En aquesta època vaig aprendre a beure. Alguns companys d'escola em van endur a tavernes, i aviat jo era el més salvatge de tots. Bevia, m'espavilava, parlava cínicament de tot allò que abans m'havia estat sagrat. Em vaig convertir en un buscabregues i un gandul. Les meves notes van empitjorar, els meus pares estaven desesperats. El meu pare em parlava seriosament i amb tristesa, la meva mare plorava. Però jo estava com atordiment, com posseït. El món fosc m'havia atrapat i no me'n podia defensar.
+En aquella època vaig començar a allunyar-me interiorment dels meus pares. No és que els estimés menys — però el seu món, les seves veritats, les seves regles començaven a fer-se-m'hi estranyes. Sentia que ja no m'arribaven del tot, que entre nosaltres s'obria un espai cada cop més gran.
 
-No era plaer el que sentia, era un embriagament sord, una desesperada anestèsia. No bevia perquè m'agradés el gust; bevia per ofegar la veu que dins meu clamava per alguna altra cosa — per alguna cosa més elevada, més pura, que no podia assolir.
+La confirmació va arribar i va passar, i després vaig perdre Demian de vista per un temps. Em van enviar a una altra ciutat, a un internat, on havia de continuar el gimnàs. Allà va començar una nova època de la meva vida — i no va ser una bona època.
 
-En una d'aquelles nits seia en un banc del parc, borratxo i desgraciat, i vaig pensar en Demian. On era? Feia temps que no el veia. Què pensaria de mi? I de sobte em va traspassar un pensament: en què m'he convertit? En un no-res, un enfonsat, un perdut. I vaig plorar en la nit.
+Vaig caure en mala companyia. Era un alumne més gran anomenat Alfons Beck, un noi d'uns divuit anys, que em portava a les tavernes. Allà sèiem i bevíem vi i cervesa, i vaig conèixer la camaraderia dels borratxos, les riallades buides i sorolloses, les bromes grolleres, les històries absurdes que es contaven a les fosques.
 
-L'endemà vaig veure a l'escola una noia que no havia notat mai. No era especialment bonica, però tenia alguna cosa al rostre — una expressió de puresa i claredat que em va commoure profundament. No sabia com es deia, però des d'aquell instant la vaig anomenar Beatriu, com la Beatriu del Dant.
+Vaig començar a beure, regularment i molt. Va ser una caiguda, un precipici, i m'hi vaig llançar de bon grat. Tot el que hi havia de fosc i salvatge dins meu va irrompre. Faltava a classe, mentia, robava petites quantitats. Ja no era el fill obedient de la casa lluminosa — era un perdut, un deixat, un de l'altre banda.
 
-I des d'aquell instant alguna cosa va canviar dins meu. Vaig deixar de beure. Vaig tornar als llibres, als vespres tranquils, als llargs passeigs. Vaig començar a dibuixar i a pintar. Intentava pintar el rostre de la meva Beatriu, però no me'n sortia — en lloc del seu rostre pintava sempre un altre, un rostre que era meitat home i meitat dona, meitat jove i meitat vell, un rostre que em resultava estranyament familiar i que alhora em desconcertava. Un dia el vaig reconèixer: era el rostre de Demian. O el meu propi. O tots dos alhora.
+El meu pare escrivia cartes severes. La mare n'escrivia d'angoixades. Les llegia i les esquinçava i bevia més. Va ser una època salvatge i confusa, i m'hi trobava perdut com un vaixell sense timó.
+
+I enmig d'aquella devastació va passar una cosa estranya. Vaig veure una noia. Caminava cap a mi pel carrer, una dona jove amb el rostre clar i el pas altiu, i a l'instant vaig quedar encantat. No la vaig seguir, no li vaig parlar, no sabia el seu nom. Però la seva imatge es va gravar al meu cor, i secretament li vaig donar un nom: Beatriu — com la Beatriu de Dante, la guia divina.
+
+A partir d'aquell instant tot va començar a canviar.
 
 ---
 
 ### Capítol quart: Beatriu
 
-Beatriu — així anomenava la noia que mai no vaig adreçar la paraula ni vaig conèixer. Era el meu ideal, el meu estel, el meu camí de retorn cap a la llum. Però la llum cap a la qual em guiava ja no era l'antiga llum devota de la meva infantesa — era una llum nova, més pròpia, una llum que jo mateix cercava i trobava.
+L'experiència al carrer, la trobada amb la noia que vaig anomenar Beatriu, em va canviar la vida com un llamp que entra en una habitació fosca. Vaig deixar de beure. Em vaig apartar de Beck i els seus companys. Vaig tornar a llegir, a pensar, a cuidar-me.
 
-Pintava el seu retrat — o ho intentava. I cada cop que pintava, la imatge es transformava en una altra cosa. Un cop semblava Demian, un cop jo mateix, un cop un rostre d'un somni, meitat masculí, meitat femení, meitat jove, meitat vell. Era una imatge que em perseguia i m'atreia, una imatge que penetrava més endins de mi que qualsevol rostre real.
+Però no va ser un retorn al món lluminós el que va succeir. Va ser alguna cosa nova, tercera. No vaig tornar als pares i al seu Déu — vaig trobar un temple propi, un altar propi. Beatriu era el meu ideal, la meva deessa, el meu estel. No és que la conegués ni l'estimés — no li havia dit mai una paraula. Però la seva imatge m'era sagrada, i la venerava com un creient venera la seva icona.
 
-Un dia, mentre pintava, em va venir al cap una frase que Demian havia dit una vegada: «L'ocell lluita per sortir de l'ou. L'ou és el món. Qui vol néixer ha de destruir un món.» Vaig pintar l'ocell. Era un esparver, mig sorgit de l'ou, amb el cap alçat cap al cel, sobre un fons blau. Era la millor pintura que havia fet mai.
+Vaig començar a pintar. Era un impuls que no sabia explicar — com si hagués de treure la imatge interior cap a fora, com si l'hagués de retenir abans que s'esvaís. Pintava el seu rostre, una vegada i una altra, amb llapis i carbó, i encara que els dibuixos no eren mai exactes, hi havia en ells alguna cosa que era més que un retrat.
 
-Vaig enviar la pintura a Demian — encara recordava la seva adreça, tot i que feia temps que havia marxat de la nostra ciutat. La vaig enviar sense carta, sense salutació, només la pintura.
+I aleshores va passar una cosa estranya. Mentre pintava, vaig notar que el rostre que naixia sota les meves mans ja no era Beatriu. Era — algú altre. Era un rostre que coneixia i no coneixia, un rostre que m'atreia i m'espantava. Quan vaig contemplar el dibuix, el vaig reconèixer: era el rostre de Demian. No, no exactament el rostre de Demian — era mig el seu rostre i mig el meu, o més aviat: era un rostre que es trobava entre tots dos, que pertanyia a tots dos.
 
-I un dia vaig trobar un paper dins el meu quadern escolar. Algú l'hi devia haver posat mentre el quadern era a l'aula. Al paper hi deia, amb una cal·ligrafia forastera i clara:
+Vaig penjar el dibuix a la paret de la meva habitació i vaig viure amb ell. Em parlava, quan el mirava. Em preguntava, em desafiava. Era el meu destí, pintat en carbó sobre paper.
+
+En aquella època somiava molt. I un somni tornava sempre: veia un ocell, un esparver, que lluitava per sortir d'un ou enorme. Lluitava i es debatia, i l'ou, que era el món sencer, es trencava, i l'ocell en sortia, gran i poderós, i volava cap a un cel blau que no era ni lluminós ni fosc, sinó totes dues coses alhora.
+
+Vaig pintar també l'ocell. El vaig pintar mentre lluitava per sortir de l'ou, amb les ales esteses, i vaig enviar el dibuix a Demian, sense carta, sense explicació. No tenia la seva adreça, però sabia el nom de la seva mare i la ciutat, i així vaig adreçar el sobre a la senyora Eva Demian.
+
+Van passar setmanes. Un dia vaig trobar un paperets dins el meu llibre escolar, en una lletra que no coneixia. Hi deia:
 
 «L'ocell lluita per sortir de l'ou. L'ou és el món. Qui vol néixer ha de destruir un món. L'ocell vola cap a Déu. El déu es diu Abraxas.»
 
-Abraxas! La paraula em va colpejar com un llamp. No l'havia sentida mai, però ressonava dins meu com si l'hagués coneguda des de sempre. Abraxas — el déu que era alhora diví i diabòlic, que unia la llum i les tenebres, que no era ni bo ni dolent, sinó totes dues coses alhora.
+Abraxas! No havia sentit mai aquell nom. El vaig buscar als llibres i en vaig trobar poc — només que era un déu o dimoni de l'antiguitat que unia el diví i el diabòlic. Un déu que era Déu i diable alhora! Això era el que havia cercat sense saber-ho! La superació dels dos mons, la unió de llum i foscor, de bé i mal — en un sol ésser immens.
 
-Des d'aquell instant, Abraxas va esdevenir el meu secret, la meva recerca, el meu camí. Vaig llegir tot el que vaig poder trobar sobre aquest nom. En un vell llibre sobre religions gnòstiques el vaig retrobar: Abraxas era el déu dels gnòstics, el déu que unia els contraris, que estava més enllà del bé i del mal, que abastava el món sencer — la llum i l'ombra, el masculí i el femení, el sagrat i el maleït.
+Abraxas! Des d'aleshores aquella paraula va ser el meu secret, la meva contrasenya, la meva oració.
 
-En aquells dies de recerca vaig començar a tocar l'orgue. Anava a la petita església de les afores i tocava el vell orgue. I un vespre, mentre tocava, vaig notar un home assegut en un dels bancs del fons que escoltava. Quan vaig acabar, es va acostar a mi. Era un home estrany i fosc, amb un rostre fi i intel·ligent.
+I un dia — era al vespre, caminava pels carrers silenciosos de la ciutat — vaig sentir música d'orgue que sortia d'una petita església. Vaig entrar-hi. A l'església buida, un home seia a l'orgue i tocava — una música salvatge, fosca, apassionada, que no tenia res a veure amb els himnes litúrgics. Era música en la qual vivien Déu i diable alhora, música en la qual la llum i les tenebres s'aparellaven.
 
-«Toqueu molt bé», va dir. «Quina peça era?»
+Em vaig asseure en silenci en un banc i vaig escoltar. Quan l'home va deixar de tocar i es va girar, vaig veure un rostre pàl·lid i magre amb una barba espessa i uns ulls cremants.
 
-«No ho sé», vaig dir. «Improviso.»
+«Qui sou?», vaig preguntar.
 
-«Sonava com Abraxas», va dir, i va somriure.
+«Pistorius», va dir. «Un antic estudiant de teologia. Ara — un cercador, com vostè, pel que sembla.»
 
-Vaig sobresaltar-me. «Com coneixeu...»
+Vam començar a parlar, i la conversa va durar hores. Pistorius coneixia Abraxas. Coneixia la gnosi, els antics misteris, les doctrines ocultes. Em va parlar dels gnòstics, que creien que el Déu de la Bíblia era només mig déu, un déu de la llum al qual li faltava la meitat fosca. El veritable déu, deien, era Abraxas, que abraçava llum i foscor.
 
-«Abraxas? Hi ha moltes coses que conec. Em dic Pistorius. Torneu, hauríem de parlar.»
+«Això és!», vaig exclamar. «Això és el que he buscat! La unió dels contraris!»
 
-Així va començar la meva relació amb Pistorius, l'antic estudiant de teologia reconvertit en organista, que com jo estava a la recerca d'Abraxas. D'ell vaig aprendre moltes coses sobre les antigues religions, sobre el foc i els somnis, sobre els símbols i el llenguatge ocult de l'ànima. Sovint sèiem de nit davant la llar de foc del seu petit apartament, i Pistorius em parlava dels gnòstics, dels místics, dels alquimistes, i deia:
+Pistorius va somriure. «Sí, però compte. No n'hi ha prou amb saber-ho. S'ha de viure. S'han d'unir els dos mons dins un, no només al cap, sinó al cor, al cos, a cada fibra.»
 
-«Mira, aquest és el secret: el déu que hem de venerar no és el déu a mitges de les esglésies, que és només llum i bondat. El veritable déu és Abraxas, que ho conté tot — el diví i el diabòlic, la llum i la foscor. Només qui accepta totes dues coses, qui les uneix en si mateix, és una persona sencera.»
+A partir d'aleshores vaig trobar-me amb Pistorius regularment. Va ser el meu mestre, el meu guia en el camí. Em mostrava llibres antics, m'explicava símbols, m'ensenyava a mirar fixament el foc i veure les imatges que dansaven a les flames.
 
-I jo sentia que era en aquest camí — el camí cap a mi mateix, el camí cap al meu propi déu, el camí cap a Abraxas.
+Però en algun moment — van passar mesos — vaig notar que Pistorius no em podia donar tot el que necessitava. Era un savi, sí, però també un presoner. Estava atrapat en el passat, en els llibres antics, els símbols antics, les religions antigues. Mirava enrere, no endavant. Podia invocar els déus antics, però no podia crear-ne un de nou.
+
+I va arribar el dia en què li ho vaig dir — cruelment, despietadament, com només la joventut pot ser cruel. Li vaig dir que era un antiquari, un col·leccionista de veritats mortes, i que jo havia de continuar, més enllà d'ell, cap a alguna cosa nova.
+
+Pistorius es va posar pàl·lid. Després va assentir lentament. «Tens raó», va dir en veu baixa. «I ets cruel. Però tens raó.»
+
+Va ser un comiat, i em va fer mal. Pistorius m'havia donat molt. Però el camí continuava, i l'havia de fer sol — o amb Demian.
 
 ---
 
 ### Capítol cinquè: L'ocell lluita per sortir de l'ou
 
-La meva vida tenia ara una direcció, una meta, per bé que misteriosa i difícil de definir. Estudiava, pintava, llegia, cercava. El món dels meus pares quedava lluny darrere meu — no oblidat, no menyspreat, però superat. Ja no el necessitava. Estava en camí cap al meu propi món.
+Va ser l'època de les grans lluites interiors. L'escola quedava enrere, i jo em trobava davant la vida com davant un portal fosc que portava a un país desconegut. No sabia què havia de ser, què havia de fer, on havia d'anar. Tot el que tenia era l'ocell que lluitava per sortir de l'ou — la imatge que Demian m'havia enviat un cop, el símbol del meu camí.
 
-Pistorius va ser per a mi un mestre i un amic. Però a poc a poc vaig començar a sentir que també ell tenia els seus límits. Era un cercador com jo, però la seva recerca mirava enrere — cercava en les antigues religions, en els antics símbols, en els antics mites. Volia reviure el vell; jo, en canvi, volia crear alguna cosa nova. Ell era un arqueòleg de l'ànima; jo volia ser un creador.
+En aquella època vaig començar a anar a la universitat. Estudiava — què, tant és; era només un pretext, un marc per a l'esdeveniment real, que succeïa dins meu. Llegia molt, pensava molt, pintava. I cercava — Demian.
 
-Un dia li ho vaig dir, i li ho vaig dir durament i sense amabilitat, com era el meu costum en aquells anys. Pistorius va empal·lidir i va callar. Després va dir en veu baixa:
+No l'havia vist des de feia anys. Però la seva imatge vivia en mi, el seu rostre, el seu somriure, les seves paraules. Era el meu germà, el meu altre jo, el meu guia, i sabia que el retrobaria — que l'havia de retrobar.
 
-«Tens raó. Aquest és el meu defecte. Sempre miro enrere. Gràcies per dir-m'ho.»
+Va ser en una classe que un professor va esmentar de passada el nom d'Abraxas. El cor em va fer un bot. Vaig parlar amb el professor després de la classe i li vaig demanar que m'expliqués més coses.
 
-L'havia ferit, i me'n sabia greu. Però era la veritat, i la veritat s'havia de dir. Des d'aquell dia ens vam veure menys, i aviat ens vam perdre completament de vista.
+«Abraxas?», va dir. «Un déu gnòstic. No se'n sap gaire. Un déu que unia Déu i diable. Els gnòstics creien que estava per sobre de tot, del bé i del mal, de la llum i la foscor. Un concepte interessant, però evidentment només una curiositat històrica.»
 
-En aquella època somiava sovint. Els meus somnis eren plens d'imatges i símbols que m'espantaven i fascinaven alhora. Una vegada i una altra somiava l'ocell que lluitava per sortir de l'ou. I una vegada i una altra somiava un rostre — el rostre d'una dona que era alhora mare i amant, que era alhora severa i tendra, que portava alhora el rostre de Demian i el meu propi. L'anomenava senyora Eva, sense saber per què.
+No! No era cap curiositat! Era la veritat, la meva veritat, la veritat de Demian, la veritat de l'ocell que lluitava per sortir de l'ou!
 
-I aleshores, un dia, va arribar una carta de Demian. La primera carta en anys. Deia:
+Una nit vaig tenir un somni que ho va canviar tot. Vaig somiar que em trobava davant d'una casa antiga, i a sobre la porta hi havia un escut esculpit a la pedra: un ocell, un esparver, que lluitava per sortir d'un globus terraqüi. Vaig entrar, i en una habitació alta i fosca seia una dona — alta, silenciosa, amb els cabells foscos i un rostre que coneixia i no coneixia. Era el rostre de la meva mare i era el rostre de Demian i era el rostre de Beatriu, i era el rostre de totes les dones del món. Em va somriure i va dir: «Véns.»
 
-«Estimat Sinclair, aviat ens retrobarem. Encara no saps quan ni on, però ho sentiràs. Estigues a punt.
+I em vaig despertar i vaig saber: l'havia de trobar. I vaig saber: existia. I vaig saber: era la senyora Eva, la mare de Demian.
 
-Recordes encara la sentència? L'ocell lluita per sortir de l'ou. L'ou és el món. Ets en camí. Aviat volaràs.
+Durant les setmanes següents vaig viure com en un deliri. Pintava el rostre del meu somni, una vegada i una altra, i cada cop es feia més clar, més viu, més real. Era el rostre d'una dona que era mare i amant i deessa alhora, que unia bé i mal, llum i foscor, home i dona dins seu.
 
-Abraxas!
-
-El teu Demian.»
-
-Vaig llegir la carta una vegada i una altra. Era com una promesa, com una crida, com un senyal. Sí, estava a punt. No sabia per a què, però estava a punt.
+La vaig anomenar senyora Eva, encara que no sabia si realment es deia així. Però el nom era correcte, ho sentia.
 
 ---
 
 ### Capítol sisè: La lluita de Jacob
 
-Ara era estudiant a H. i vivia la meva pròpia vida, lluny dels meus pares i de la meva infantesa. Estudiava, llegia, reflexionava, i esperava — sense saber ben bé què. La imatge de la senyora Eva m'acompanyava constantment, als somnis, als dibuixos, als pensaments.
+Va ser una llarga lluita la que va seguir — la lluita de Jacob amb l'àngel, la lluita amb mi mateix. Vaig combatre amb els meus dimonis, amb les meves pors, amb el ramat dins meu que es negava a morir. Hi va haver nits en què vaig plorar, i nits en què vaig riure, i nits en què vaig mirar fixament al buit.
 
-Un dia, a la ciutat universitària, vaig veure al carrer un home que em resultava conegut. Caminava a poc a poc, amb passos segurs i tranquils, i quan es va acostar el vaig reconèixer: era Demian!
+La lluita era la lluita pel meu propi jo, per la persona que havia de ser. Cadascú porta dins seu un esbós, una imatge d'allò que pot arribar a ser, i el camí cap allà és la lluita — la lluita contra tot el que emmascara i enfosqueix aquella imatge.
 
-Havia canviat — s'havia fet més gran, més viril, amb un rostre encara més madur i enigmàtic que abans. Però la seva mirada era la mateixa — aquella mirada tranquil·la, sàvia, penetrant, que et tocava fins al més profund.
+Va ser també l'època en què vaig aprendre a estar sol. No solitari — sol. Hi ha una gran diferència. El solitari pateix per la seva solitud; l'home sol la celebra. Vaig aprendre a habitar dins meu, a gaudir de la meva pròpia companyia, a explorar-me com un país desconegut.
+
+Vaig tornar a somiar, més vívament que mai. I als meus somnis apareixia sempre la mateixa imatge: el rostre de la dona, la senyora Eva, la mare-amant-deessa. El seu rostre m'atreia com un imant, i sabia que un dia em trobaria davant seu.
+
+Portava dins meu el coneixement d'Abraxas, el saber que el món no està dividit en bé i mal, sinó que tots dos pertanyen plegats, que tots dos són divins. Aquest saber era una càrrega i una alliberació alhora. Una càrrega, perquè em separava dels altres, del ramat, de la moral còmoda dels molts. Una alliberació, perquè em portava cap a mi mateix.
+
+A la universitat vivia retirat. Tenia pocs amics, pocs coneguts. Però entre els pocs n'hi havia alguns en qui sentia alguna cosa afí — una guspira, un signe, una mirada que revelava que també ells eren cercadors, despertats, persones amb el signe de Caín.
+
+Un dia, en una ciutat desconeguda, en un petit restaurant, el vaig veure. Demian. Seia a una taula, sol, i llegia. S'havia fet gran, el seu rostre era encara més madur, més tranquil, més superior. Però era ell — sens dubte, inconfusible.
 
 «Demian!», vaig cridar.
 
-Va somriure. «Sinclair! Aquí ets. Sabia que ens trobaríem aquí.»
+Va alçar la vista i va somriure. Era el mateix somriure — el somriure d'una persona que ho sap tot i tot ho perdona.
 
-Vam caminar junts per la ciutat, i era com si no ens haguéssim separat mai. Demian em va parlar dels seus viatges, dels seus estudis, de les seves experiències. I aleshores va dir:
+«Sinclair», va dir. «T'he estat esperant.»
 
-«Voldria que coneguessis la meva mare. T'espera.»
+Vam parlar mitja nit. Em va explicar els seus viatges, els seus estudis, les persones que havia conegut — persones amb el signe, despertats, cercadors. Em va parlar d'una comunitat que es formava, una germandat silenciosa i invisible de persones que portaven el signe.
 
-«La teva mare?»
+«No són gaires», va dir. «Però són pertot arreu. I es reconeixen mútuament. No cal cap paraula, cap senyal — es reconeixen per la mirada.»
 
-«Sí. Ja la coneixes. L'has somiada sovint.»
+«I què volen?»
 
-Em vaig espantar. Era veritat — el rostre que havia somiat tan sovint, el rostre de la senyora Eva — era el rostre de la mare de Demian?
-
-L'endemà, Demian em va portar a veure-la. Vivia en una casa antiga a les afores de la ciutat, amb un gran jardí ple de vells arbres. I quan la vaig veure, ho vaig saber: era ella. Era el rostre dels meus somnis. Era la senyora Eva.
-
-Era alta i esvelta, amb cabells foscos que ja clarejaven una mica a les temples. El seu rostre no era ni jove ni vell, era atemporal, contenia totes les edats. Als seus ulls hi havia una calma i una profunditat que alhora em consolaven i em commovien. Em va agafar les dues mans i em va mirar, i em vaig sentir conegut — completament conegut, traspassat i acceptat, com mai abans a la meva vida.
-
-«Feia temps que l'esperava, Sinclair», va dir, i la seva veu era càlida i profunda. «En Max m'ha parlat molt de vostè. Però ja el coneixia, abans que em parlés de vostè.»
-
-No vaig poder dir res. Estava dret, amb les seves mans entre les meves, i sentia que havia tornat a casa — no a la vella casa paterna, no al món lluminós de la meva infantesa, sinó a una nova llar, la llar de la meva ànima.
-
-Des d'aquell dia vaig anar sovint a casa de la senyora Eva i Demian. A casa seva es reunien persones que, com nosaltres, estaven a la recerca — cercadors, despertats, persones amb el signe de Caín al front. No eren fanàtics ni sectaris; eren persones que havien après a confiar en si mateixes, a seguir els seus propis somnis i les seves pròpies veus. La senyora Eva era per a tots nosaltres la mare, la sacerdotessa, la dona sàvia, que veia i comprenia cadascú.
-
-«Cadascun de vosaltres», va dir una vegada, «porta el món sencer dins seu. No cal que cerqueu: només cal que desperteu. El que cerqueu, ja ho sou. El que voleu arribar a ser, ja ho sou. Només us cal el coratge de ser-ho.»
-
-En aquells dies vaig lliurar el meu combat — la lluita de Jacob amb l'àngel, la lluita amb mi mateix. Perquè per molt a prop que estigués de la meva meta, per molt a prop que estigués de la senyora Eva, de Demian i de mi mateix, encara hi havia resistències dins meu, pors antigues, lligams antics, mentides antigues. El món lluminós de la meva infantesa encara em retenia, i el món fosc encara em temptava amb falses promeses. Havia de superar-los tots dos, unir-los dins meu, per arribar a mi mateix.
-
-Va ser la senyora Eva qui em va dir:
-
-«No pot arribar a si mateix mentre no hagi après a estimar-se — no només la meitat lluminosa, sinó també la fosca. Ha d'acceptar el Sinclair sencer — el devot i el salvatge, el pur i el fosc. Només aleshores serà complet.»
+«Res. O tot. Volen ser el que són. Volen ser l'ocell que lluita per sortir de l'ou. Volen Abraxas, el déu de la totalitat.»
 
 ---
 
 ### Capítol setè: La senyora Eva
 
-Les setmanes i els mesos prop de la senyora Eva i Demian van ser els més rics de la meva vida. Vaig aprendre què vol dir viure de veritat — no segons les regles dels altres, no segons les expectatives de la societat, sinó des del propi interior.
+L'endemà Demian em va portar a veure la seva mare.
 
-Estimava la senyora Eva. No era un amor corrent, no era un desig sensual — encara que també hi era, profundament amagat i mai pronunciat. Era un amor que ho abastava tot: veneració i anhel, gratitud i enyorança, reverència i familiaritat. Era la mare i l'amant, la deessa i l'amiga, la sàvia i l'eterna jove. En ella s'unien tots els contraris, com en Abraxas.
+La senyora Eva em va rebre en una habitació gran i silenciosa. Estava al mig de l'estança, alta, tranquil·la, expectant. El seu rostre era el rostre del meu somni — exactament, tal com l'havia pintat cent vegades: els ulls foscos, els llavis càlids, l'expressió de bondat i severitat, de maternalitat i passió.
 
-«L'amor no ha de demanar», em va dir una vegada, «ni tampoc ha d'exigir. L'amor ha de tenir la força d'arribar a la certesa dins d'ell mateix. Aleshores ja no és atret, sinó que atrau.»
+«Vostè és Sinclair», va dir. «El conec. En Max m'ha parlat molt de vostè. I he vist el seu dibuix, l'esparver.»
 
-«Però com sé si el meu desig serà escoltat?», vaig preguntar.
+No podia parlar. Estava allà dret i la mirava, i tot el que havia cercat mai, tot el que havia anhelat mai, era en aquell rostre.
 
-«Si un desig és prou fort i prou vertader, serà escoltat. Però un desig veritable és una cosa molt diferent del que la majoria de la gent desitja. La majoria desitja mil coses que no necessita gens. Un desig veritable prové de la profunditat, del nucli de l'ésser. Qui desitja de veritat — i qui gosa apostar-ho tot a aquest únic desig — el veurà complert.»
+«M'ha somiat», va dir, i no era una pregunta, era una constatació.
 
-De vegades passejàvem junts, la senyora Eva, Demian i jo, pel gran jardí o cap als boscos. I de vegades sèiem al vespre junts, en silenci, i el silenci era ple de significat i d'escalfor. En aquelles hores em sentia embolcallat en una seguretat que era més profunda que tot el que coneixia — més profunda que la seguretat de la infantesa, més profunda que la certesa del món lluminós. Era la seguretat del tot, la seguretat de la persona que ha trobat el camí cap a si mateixa.
+«Sí», vaig xiuxiuejar. «Com és possible?»
 
-Demian parlava sovint en aquella època del futur. Creia que una gran convulsió era imminent — no només política, sinó espiritual. El vell món, deia, estava condemnat. Els vells valors, els vells ordres, els vells déus — tots s'ensorrarien. I de les runes sorgirà un món nou, un món dels despertats, de les persones amb el signe.
+Va somriure. «Sempre és possible. L'ànima coneix el camí, encara que l'enteniment no el vegi.»
+
+A partir d'aquell dia, la casa de la senyora Eva va ser la meva llar. No és que hi visqués — però hi era, en pensament, en sentiment, en somnis. La visitava a ella i a Demian gairebé cada dia, i sèiem plegats i parlàvem de les coses que ens commovien: d'Abraxas, del signe, del despertar, del futur.
+
+Al voltant de la senyora Eva s'havia format un cercle — una petita comunitat de cercadors, de despertats, de persones amb el signe. Eren pocs, potser una dotzena, i eren molt diferents: un astròleg, un poeta, una dona jove que tenia visions, un vell que creia entendre el llenguatge dels animals. El que els unia no era una creença, no era una doctrina, sinó una recerca comuna, un pressentiment compartit que el món era molt més del que el ramat hi veia.
+
+La senyora Eva era el centre d'aquell cercle, però no governava, no ensenyava, no predicava. Simplement hi era, i la seva presència bastava. Un se sentia tranquil a prop seu, un se sentia comprès, un se sentia — sencer. Els dos mons que havien lluitat tota la meva vida l'un contra l'altre trobaven la pau a prop seu.
+
+«Miri», em va dir un cop, «cada ésser humà porta el món sencer dins seu. Bé i mal, llum i foscor, home i dona — tot és dins cadascú. El secret no és triar l'un i rebutjar l'altre. El secret és afirmar tots dos, abraçar tots dos, ser tots dos.»
+
+«Això és Abraxas», vaig dir.
+
+«Això és Abraxas», va confirmar. «I Abraxas és dins vostè, Sinclair. Només l'ha de trobar.»
+
+Va ser un temps de felicitat, com no l'havia viscut mai. Però no era una felicitat fàcil ni còmoda — era una felicitat que feia mal, que exigia, que cremava. Perquè estimar la senyora Eva — i l'estimava, amb un amor que ho abastava tot: fill, amant, adorador, deixeble — era alhora enriquidor i dolorós. M'era propera i llunyana alhora, assolible i inassolible, mare i amant i deessa.
+
+En vaig parlar amb Demian. Em va entendre, com sempre.
+
+«T'estima», va dir. «Però no com tu penses. T'estima perquè ets tu, perquè desperts, perquè portes el signe. El seu amor no és l'amor d'una dona cap a un home — és l'amor de l'ànima cap al qui desperta. Ho entens?»
+
+Ho entenia — no del tot, no amb l'enteniment, però sí amb el cor.
+
+Demian parlava sovint en aquella època del que vindria, del futur. Sentia alguna cosa a l'aire, un gran canvi, una convulsió. Parlava d'una era nova que s'inaugurava, d'ordres antics que s'enrunaven, d'una humanitat nova que volia néixer.
 
 «Serà terrible», deia. «El vell món es defensarà, amb tota la violència i tota la crueltat. Hi haurà guerra, destrucció, sofriment. Però ha de ser així. Qui vol néixer ha de destruir un món.»
 
@@ -306,6 +364,8 @@ I aleshores va arribar la guerra.
 
 Va ser com si tot el món hagués estat esperant aquell moment. D'un cop, el vel prim de la civilització es va esquinçar, i el món fosc va irrompre — ja no amagat als patis del darrere i a les tavernes, sinó obert i poderós, per tot el continent. Les banderes onejaven, els canons tronaven, els trens rodaven cap al front, i milions de joves marxaven cap a la mort.
 
+La gent estava embriagada. Als carrers es cantava i es cridava de joia, com si anessin a una festa. Era com si la guerra hagués enderrocat els murs entre els dos mons — el món fosc va inundar-ho tot, i el món lluminós es va enfonsar en sang i foc.
+
 Demian també hi va anar. Jo també. Tots hi vam anar — els despertats i els adormits, els cercadors i els cecs, els que portaven el signe i els que no el portaven. La guerra no distingia.
 
 La darrera nit abans del comiat vaig seure una vegada més amb la senyora Eva. Era tranquil·la i seriosa, però no trista. Als seus ulls hi havia la mateixa profunditat de sempre, i la seva veu era càlida i ferma.
@@ -316,6 +376,10 @@ La darrera nit abans del comiat vaig seure una vegada més amb la senyora Eva. E
 
 Va somriure. «Sempre ens veiem. Vagis on vagis, soc amb tu. Només cal que escoltis dins teu, i em trobaràs.»
 
+Aquella nit em va besar — per primera i darrera vegada. El seu petó era com la primavera i com la tardor, com el naixement i com la mort, com tot el que era la vida.
+
+Després me'n vaig anar a la guerra.
+
 Al front vaig retrobar Demian. Érem a la mateixa posició, en una trinxera destruïda, sota el tro interminable dels canons. Al nostre voltant hi havia devastació, fang, mort. Però Demian era tranquil com sempre. El seu rostre brillava en la foscor com el rostre d'un àngel — un àngel fosc, un àngel que portava la llum i les tenebres dins seu.
 
 «Recordes», va dir una nit, «el que va dir la senyora Eva? Que cadascú porta el món sencer dins seu?»
@@ -324,20 +388,36 @@ Al front vaig retrobar Demian. Érem a la mateixa posició, en una trinxera dest
 
 «És veritat. I és especialment veritat ara. Mira al teu voltant: això no és només fora, també és dins nostre. La lluita, la destrucció, la mort — tot això també és dins nostre. I el nou món que vindrà — també és dins nostre. No cal esperar. Ja el podem construir ara — dins nostre.»
 
+«I Abraxas?»
+
+«Abraxas és aquí. Abraxas és sempre aquí. És Déu i diable, creador i destructor. És la guerra i la pau. És tot el que és.»
+
+Vam callar. Al nostre voltant tronaven els canons, i el cel era vermell de flames.
+
 Pocs dies després va arribar l'atac. Una granada va caure molt a prop. Vaig ser llançat per l'aire, hi va haver un esclat immens, i aleshores tot va ser fosc.
 
-Quan em vaig despertar, era en un hospital de campanya, en una llitera, al costat de molts altres ferits. Al meu costat hi havia Demian. Estava greument ferit; el seu rostre era pàl·lid, però els seus ulls eren oberts i clars.
+Quan em vaig despertar, era en un hospital de campanya, en una llitera, al costat de molts altres ferits. Tot em feia mal, amb prou feines em podia moure. Una infermera va venir i em va donar aigua. Vaig preguntar per Demian.
+
+«N'hi ha un al seu costat», va dir. «Ha preguntat per vostè.»
+
+Vaig girar el cap. Allà era Demian, molt a prop, a la llitera del costat. Estava greument ferit; el seu rostre era pàl·lid, però els seus ulls eren oberts i clars. Va somriure quan em va veure.
 
 «Sinclair», va xiuxiuejar, i em vaig inclinar cap a ell.
 
 «Escolta, Sinclair. He de marxar. Potser em necessitaràs de nou algun dia. Aleshores escolta dins teu. Aleshores em trobaràs — ja no fora, sinó dins teu. Sents? Dins teu.»
 
-Va somriure, i el seu somriure era com el somriure de la senyora Eva — càlid i profund i ple de misteri.
+Li vaig agafar la mà. Era càlida i ferma.
 
 «I recorda: l'ocell lluita per sortir de l'ou. Sempre de nou. Sempre de nou s'ha de destruir un món per néixer. No tinguis por.»
+
+Em va estrènyer la mà. Després es va inclinar cap a mi, i el seu rostre era molt a prop, i sentia la seva respiració i olorava la seva olor, i em va donar — no, no em va donar ell, sinó algú que actuava a través d'ell, la senyora Eva potser, o Abraxas, o la vida mateixa — em va donar un petó al front. Un petó lleuger i càlid, com un signe.
+
+«Adeu, Sinclair», va dir. «I no ho oblidis: soc dins teu.»
 
 Aleshores va tancar els ulls. Aquella nit va morir, silenciosament i en pau, com una persona que torna a casa.
 
 I jo — jo era allà, ferit i sol, i sentia que alguna cosa dins meu havia canviat. El dolor hi era, la tristesa hi era, la por hi era. Però a sota, molt a sota, hi havia alguna altra cosa: una calma, una certesa, un saber. Demian no se n'havia anat. Era dins meu. La senyora Eva era dins meu. Abraxas era dins meu. Tot el que havia cercat era dins meu — sempre havia estat dins meu.
+
+L'ocell havia lluitat per sortir de l'ou. El món s'havia destruït. I jo — jo havia nascut.
 
 Quan de vegades trobo la clau i baixo fins al fons de mi mateix, allà on en el mirall fosc dormen les imatges del destí, aleshores només m'he d'inclinar sobre el mirall fosc i veig la meva pròpia imatge, que ara s'assembla completament a ell, a ell, el meu amic i guia.
