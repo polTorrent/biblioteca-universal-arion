@@ -1,12 +1,12 @@
 # Nachgelassene Fragmente — Friedrich Nietzsche
 
-## Selecció de fragments (1882–1888)
+## Selecció de fragments (1881–1889)
 
 Fonts: *Kritische Studienausgabe* (KSA), ed. Giorgio Colli i Mazzino Montinari, de Gruyter/dtv.
 
 ---
 
-### I. Wille zur Macht und ewige Wiederkehr (1882–1884)
+### I. Wille zur Macht und ewige Wiederkehr (1881–1884)
 
 **Fragment 11[141] — Agost 1881 (KSA 9)**
 
