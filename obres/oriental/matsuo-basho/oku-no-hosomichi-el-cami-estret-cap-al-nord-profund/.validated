@@ -1,0 +1,11 @@
+data: 2026-03-07
+puntuacio: 7.5
+revisor: supervisio-automatica
+notes: |
+  Traducció completa i fidel de l'obra sencera. Bona qualitat literària.
+  Problemes menors detectats:
+  - "ombrívolves" per "ombrívoles" (línia 106 traduccio.md)
+  - "se'n vaig" per "me'n vaig" (línia 278 traduccio.md)
+  - Espai trencat al link Wikisource (línia 9 traduccio.md)
+  - Haiku d'Obanazawa (línies 182-192) sense format cursiva per línia
+  - metadata.yml: notes=0 (hauria de ser 10), termes_glossari=15 (hauria de ser 22), seccions=1 (incorrecte)

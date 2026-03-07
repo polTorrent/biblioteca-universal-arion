@@ -20,10 +20,10 @@ seccions: 1
 estadistiques:
   paraules_original: ~4500
   paraules_traduccio: 7943
-  notes: 0
-  termes_glossari: 15
+  notes: 10
+  termes_glossari: 22
 revisio:
-  estat: necessita_correccio
-  qualitat: 6.5
-  data_revisio: '2026-02-28'
-  motiu: 'errors gramaticals, haiku final garblat, format inconsistent dels haiku, omissions en traduccions clau'
+  estat: revisat
+  qualitat: 7.5
+  data_revisio: '2026-03-07'
+  notes_supervisio: 'Traducció completa i fidel. Problemes menors: 2 errors gramaticals, format haiku Obanazawa, metadata desactualitzat.'
