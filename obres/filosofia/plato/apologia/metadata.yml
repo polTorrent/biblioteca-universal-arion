@@ -6,6 +6,8 @@ obra:
   traductor: Biblioteca Arion
   any_original: c. 399 aC
   llengua_original: grec antic
+  llengua: catala
+  any_traduccio: 2026
   descripcio: >
     Discurs de defensa de Sòcrates davant el tribunal atenenc que l'acusava
     de corrompre la joventut i no creure en els déus de la ciutat. És un dels
@@ -25,10 +27,10 @@ obra:
 seccions: 3
 
 revisio:
-  estat: "pendent_revisio"
-  qualitat: 7.5
-  data_revisio: '2026-03-01'
-  notes: "Traducció completa (17a-42a). Afegits glossari i notes. Pendent de supervisió."
+  estat: "revisat"
+  qualitat: 7.8
+  data_revisio: '2026-03-07'
+  notes: "Supervisio completada. Qualitat aprovada (7.8/10). 6 errors menors identificats per corregir."
 
 estadistiques:
   paraules_original: 9800
