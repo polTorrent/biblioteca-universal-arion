@@ -1,5 +1,3 @@
-# Et dukkehjem
-
 ## Henrik Ibsen (1879)
 
 ---
@@ -2753,4 +2751,3 @@ fi:Nora: Toinen Näytös
 fi:Nora: Kolmas Näytös
 
 ---
-

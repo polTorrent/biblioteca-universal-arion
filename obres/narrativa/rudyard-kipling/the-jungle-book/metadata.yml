@@ -1,0 +1,19 @@
+obra:
+  titol: "El llibre de la selva"
+  titol_original: "The Jungle Book"
+  autor: "Rudyard Kipling"
+  traductor: "Editorial Clàssica"
+  any_original: 1894
+  any_traduccio: 2026
+  llengua_original: "anglès"
+  descripcio: "Recull de contes sobre Mowgli, un nen criat per llops a la selva índia, i altres relats d'animals. Obra mestra de la literatura infantil i d'aventures que explora temes de llei, pertinença i identitat."
+seccions: 7
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "en procés"
+  qualitat: 0
+  data_revisio: ""
