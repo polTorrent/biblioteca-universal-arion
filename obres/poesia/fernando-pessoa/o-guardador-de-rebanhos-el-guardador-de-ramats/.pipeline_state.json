@@ -1,0 +1,99 @@
+{
+  "sessio_id": "fernando-pessoa-(alb-o-guardador-de-reban-2026-03-07",
+  "obra": {
+    "autor": "Fernando Pessoa (Alberto Caeiro)",
+    "titol": "O Guardador de Rebanhos (El guardador de ramats)",
+    "llengua": "portuguès"
+  },
+  "timestamps": {
+    "inici": "2026-03-07T06:53:53.862005",
+    "ultima_activitat": "2026-03-07T08:17:38.759780"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 13,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.4,
+    "temps_total_min": 17.39
+  },
+  "errors": [
+    "[06:59:16] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:00:59] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:03:27] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:05:53] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:06:33] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:07:13] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:08:52] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:14:15] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:16:43] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:17:20] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:17:56] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:24:59] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:25:34] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:27:31] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:29:56] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:30:37] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:32:26] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:34:44] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:36:55] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:38:49] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:40:34] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:41:19] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:44:33] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:46:27] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:47:05] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:48:55] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:49:39] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:50:28] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:52:21] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:58:20] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:03:38] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:05:40] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:06:25] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:07:12] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:07:47] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:08:28] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:13:06] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:13:44] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:17:38] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:17:38] Error chunk 4: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 5: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 6: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 7: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 8: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 10: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 12: [Errno 32] Broken pipe",
+    "[08:17:38] Error chunk 13: [Errno 32] Broken pipe",
+    "[08:17:38] Error fatal: [Errno 32] Broken pipe"
+  ],
+  "warnings": [
+    "[06:54:44] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='portuguès', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
+    "[07:19:21] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
