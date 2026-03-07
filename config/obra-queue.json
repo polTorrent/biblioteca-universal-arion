@@ -130,7 +130,7 @@
         "wikisource",
         "gutenberg"
       ],
-      "status": "done",
+      "status": "validated",
       "notes": "Poesia francesa, molt exigent",
       "obra_dir": "obres/poesia/baudelaire/20-poemes-les-flors-del-mal"
     },
@@ -413,6 +413,49 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/boccaccio/decamero-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-07. Obre la narrativa italiana al catàleg: Boccaccio (†1375) és, amb Dante i Petrarca, un dels tres pilars de la literatura italiana. El Decameró (1353) és la col·lecció de contes més influent de la literatura europea medieval. Selecció recomanada: I.1 (Ser Ciappelletto), I.3 (els tres anells), II.5, III.1, IV.5 (Lisabetta), V.9 (Federigo degli Alberighi), VI.10, VII.2, IX.3, X.10 (Griselda). Prosa toscana elegant, humor, erotisme i crítica social. Cap traducció catalana recent en edició bilingüe. Text italià a Wikisource italiana i Project Gutenberg."
+    },
+    {
+      "autor": "Lucreci",
+      "titol": "De rerum natura, Llibre I",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
+      "notes": "Consell Editorial 2026-03-07. Única veu epicúria al catàleg, contrapunt essencial a l'estoïcisme dominant (Sèneca, Epictetus, Marc Aureli). Lucreci (†c. 55 aC) exposa la física atomista d'Epicur en hexàmetres d'una bellesa excepcional: el Llibre I presenta els principis fonamentals — res no neix del no-res, res no s'anihila, tot és àtoms i buit. Poema filosòfic que uneix ciència, ateisme i sublimitat poètica. Cap traducció catalana en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Sei Shōnagon",
+      "titol": "Makura no Sōshi (El llibre del coixí) — selecció: 30 seccions",
+      "llengua": "japonès",
+      "categoria": "assaig",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "aozora"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/sei-shonagon/makura-no-soshi-el-llibre-del-coixi",
+      "notes": "Consell Editorial 2026-03-07. Reforça la categoria assaig (només 3 obres) i afegeix la primera veu femenina al catàleg. Sei Shōnagon (†c. 1025), dama de la cort Heian, escriu el primer zuihitsu (assaig miscel·lani) de la literatura japonesa (c. 1002): llistes poètiques, observacions sobre la natura, la bellesa i l'etiqueta cortesana, amb una sensibilitat estètica única (mono no aware, okashi). Complement perfecte al Bashō del catàleg: prosa femenina de cort vs. haibun masculí itinerant. Cap traducció catalana. Text original a Aozora Bunko."
+    },
+    {
+      "autor": "Confuci",
+      "titol": "Analectes (Lúnyǔ) — selecció: Llibres I-IV",
+      "llengua": "xinès",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/confuci/analectes-lunyu-seleccio-llibres-i-iv",
+      "notes": "Consell Editorial 2026-03-07. Complement imprescindible als textos taoistes del catàleg (Laozi, Zhuangzi): el confucianisme és l'altre gran pilar del pensament xinès. Confuci (†479 aC) és el pensador més influent de l'Àsia oriental. Els Llibres I-IV de les Analectes contenen els aforismes fonamentals sobre rén (仁, humanitat), lǐ (禮, ritual), junzǐ (君子, persona exemplar), xué (學, estudi) i govern virtuós. Prosa concisa i sentenciosa, ideal per a edició bilingüe. Cap traducció catalana directa del xinès. Text original a CText.org."
     }
   ]
 }
