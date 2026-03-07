@@ -6,7 +6,8 @@ Inclou: tasques actives, obres pendents, problemes, estimacions
 import json
 import os
 from pathlib import Path
-from datetime import datetime, timedelta
+import re
+from datetime import datetime
 import subprocess
 
 PROJECT = Path.home() / "biblioteca-universal-arion"
@@ -28,7 +29,7 @@ def get_running_task():
                     "instruction": data.get("instruction", "")[:100],
                     "started": data.get("started_at", "desconegut")
                 }
-            except:
+            except Exception:
                 pass
     return None
 
@@ -46,7 +47,7 @@ def get_pending_tasks(limit=10):
                     "instruction": data.get("instruction", "")[:80],
                     "priority": data.get("priority", 0)
                 })
-            except:
+            except Exception:
                 pass
     return tasks
 
@@ -89,13 +90,12 @@ def get_obres_status():
                     if needs_fix_file.exists():
                         try:
                             content = needs_fix_file.read_text()
-                            import re
                             score_match = re.search(r'(\d+\.?\d*)/10', content)
                             if score_match:
                                 score = float(score_match.group(1))
                             # Extreure primera línia com a raó
                             reason = content.split('\n')[0][:60]
-                        except:
+                        except Exception:
                             pass
                     
                     obra_info = {
@@ -152,7 +152,7 @@ def get_failed_tasks():
                     "error": data.get("error", "desconegut")[:50],
                     "retries": data.get("retries", 0)
                 })
-            except:
+            except Exception:
                 pass
     return tasks
 
@@ -166,7 +166,7 @@ def get_worker_status():
         if result.returncode == 0:
             return "✅ ACTIU"
         return "❌ INACTIU"
-    except:
+    except Exception:
         return "❓ DESCONEGUT"
 
 def generate_report():
