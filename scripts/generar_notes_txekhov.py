@@ -84,7 +84,7 @@ def main() -> int:
                         # Usar text_referit com a títol si no hi ha títol explícit
                         titol = nota.get("titol") or (
                             (text_referit[:50] + "...") if len(text_referit) > 50 else text_referit
-                        )
+                        ) or f"Nota {i}"
 
                         notes_content += f"## [{i}] [{tipus}] {titol}\n\n"
                         if text_referit and text_referit != titol:
