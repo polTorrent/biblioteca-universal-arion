@@ -735,6 +735,14 @@ EOF
     rm -f "$NOTIF_FILE"
 }
 
+# ── 10b. Regenerar botó de propostes ──────────────────────────────────────────
+regenerate_proposals_button() {
+    if [ -f "$PROJECT/scripts/boto_propostes_watchdog.sh" ]; then
+        log "🔄 Regenerant botó de propostes..."
+        bash "$PROJECT/scripts/boto_propostes_watchdog.sh" 2>/dev/null || true
+    fi
+}
+
 # ── 10. Generar report per Discord ────────────────────────────────────────────
 generate_report() {
     local REPORT_FILE="$HOME/.openclaw/workspace/last_heartbeat_report.md"
