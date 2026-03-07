@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 """Fetch Plutarch's Peri Euthymias from el.wikisource.org."""
+import os
+import sys
+import urllib.error
 import urllib.request
 import html
 import re
 
 url = "https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF_%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1%CF%82_(%CE%A0%CE%BB%CE%BF%CF%8D%CF%84%CE%B1%CF%81%CF%87%CE%BF%CF%82)"
 req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-content = urllib.request.urlopen(req, timeout=15).read().decode("utf-8")
+try:
+    with urllib.request.urlopen(req, timeout=15) as resp:
+        content = resp.read().decode("utf-8")
+except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
+    print(f"Error fetching URL: {e}", file=sys.stderr)
+    sys.exit(1)
 
 title = re.search(r"<title>(.*?)</title>", content)
 if title:
@@ -57,7 +65,8 @@ if match:
     start = 0
     for i, line in enumerate(lines):
         stripped = line.strip()
-        if stripped and not stripped.startswith('.') and not stripped.startswith('@') and not stripped.startswith('{') and not stripped.startswith('}') and len(stripped) > 5:
+        skip_prefixes = ('.', '@', '{', '}')
+        if stripped and not any(stripped.startswith(p) for p in skip_prefixes) and len(stripped) > 5:
             # Check if it looks like Greek text or a heading
             if any(c in stripped for c in 'αβγδεζηθικλμνξοπρστυφχψωΑΒΓΔΕΖΗΘΙΚΛΜΝΞΟΠΡΣΤΥΦΧΨΩάέήίόύώ') or stripped.startswith('#'):
                 start = i
@@ -66,6 +75,7 @@ if match:
     text = re.sub(r"\n{3,}", "\n\n", text.strip())
 
     outpath = "obres/assaig/plutarc/sobre-la-tranquillitat-de-lanima/original.md"
+    os.makedirs(os.path.dirname(outpath), exist_ok=True)
     header = "# Περὶ εὐθυμίας\n## Plutarc (Πλούταρχος)\n\n"
     header += "**Font**: [Wikisource (el)](https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF_%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1%CF%82_(%CE%A0%CE%BB%CE%BF%CF%8D%CF%84%CE%B1%CF%81%CF%87%CE%BF%CF%82))\n\n---\n\n"
 
