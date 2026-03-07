@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-03-07T01:00:12.083897Z",
+  "timestamp": "2026-03-07T23:30:44.362357Z",
   "tasques_completades_24h": 0,
-  "tasques_fallides_24h": 0,
-  "errors_log_24h": 67,
-  "temps_mitja_delegacio_s": 69,
-  "ultim_heartbeat_ok": 1772844031,
+  "tasques_fallides_24h": 1,
+  "errors_log_24h": 105,
+  "temps_mitja_delegacio_s": 62,
+  "ultim_heartbeat_ok": 1772924464,
   "propostes_pendents": 0
 }
