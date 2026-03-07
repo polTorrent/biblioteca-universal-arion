@@ -1,0 +1,30 @@
+obra:
+  titol: "Humà, massa humà"
+  titol_original: "Menschliches, Allzumenschliches"
+  subtitol: "Un llibre per a esperits lliures"
+  subtitol_original: "Ein Buch für freie Geister"
+  autor: "Friedrich Nietzsche"
+  autor_original: "Friedrich Wilhelm Nietzsche"
+  traductor: "Editorial Clàssica"
+  any_original: 1878
+  any_traduccio: 2026
+  llengua_original: "alemany"
+  genere: "filosofia"
+  descripcio: >
+    Primera obra del període il·lustrat de Nietzsche, publicada el 1878 i dedicada
+    a Voltaire. Trencament radical amb Wagner i la metafísica romàntica.
+    Nietzsche hi adopta un mètode d'anàlisi psicològica i històrica dels valors
+    morals, religiosos i estètics, dissolent-los en els seus orígens «humans,
+    massa humans». L'obra consta de 638 aforismes distribuïts en nou seccions.
+    Selecció de 50 aforismes representatius de les nou seccions del primer volum.
+  notes: "Selecció de 50 aforismes clau del primer volum. Edició de referència: Chemnitz, Ernst Schmeitzner, 1878."
+seccions: 9
+estadistiques:
+  paraules_original: 5800
+  paraules_traduccio: 6100
+  notes: 18
+  termes_glossari: 20
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-03-07"
