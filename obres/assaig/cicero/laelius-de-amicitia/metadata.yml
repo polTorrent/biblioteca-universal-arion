@@ -8,31 +8,15 @@ obra:
   any_traduccio: 2026
   llengua_original: "llatí"
   descripcio: "Diàleg filosòfic sobre l'amistat, posat en boca de Gai Leli amb els seus gendres Fanni i Escèvola, poc després de la mort d'Escipió l'Africà."
-seccions: 27
+seccions: 85
 estadistiques:
   paraules_original: 10500
-  paraules_traduccio: 11969
-  notes: 0
-  termes_glossari: 0
-avaluacio_final:
-  data: '2026-02-27T22:16:57.183769'
-  puntuacions:
-    fidelitat: 4.5
-    veu_autor: 6.0
-    fluidesa: 6.0
-    correccio_linguistica: 5.0
-    coherencia: 5.0
-    global: 4.5
-  total_errors: 69
-  errors_critics: 3
-  errors_alts: 5
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 48
+  paraules_traduccio: 12100
+  notes: 18
+  termes_glossari: 11
 revisio:
-  estat: "necessita_correccio"
-  data_revisio: '2026-03-07'
+  estat: "corregit"
+  data_revisio: "2026-03-07"
   qualitat: 5.5
   supervisor: "Supervisió automàtica"
-  comentari: "Traducció completa i generalment fidel. Manca glossari, notes i numeració de seccions. Errors lingüístics puntuals i calcs del llatí."
+  comentari: "Correcció completa: afegides 85 seccions numerades, glossari amb 11 termes filosòfics, 18 notes històriques, introducció i bibliografia. Corregits errors lingüístics i millorats calcs del llatí."
