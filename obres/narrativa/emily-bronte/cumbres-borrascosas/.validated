@@ -1,0 +1,18 @@
+data: 2026-03-07
+puntuacio: 7.5
+supervisor: Claude (supervisio automatica)
+notes: >
+  Traducció completa (34/34 capítols, ~125K paraules). Qualitat literària
+  notable: registre victorià ben aconseguit, veus narratives diferenciades,
+  prosa fluida i natural en català. Fidelitat alta (8.5/10). Glossari complet
+  (20 termes). Notes crítiques excel·lents (15 notes acadèmiques).
+
+  Problemes menors pendents de correcció:
+  - Inconsistència toponímica puntual: "Cims de Torment" (2x) en lloc de
+    "Cims Borrascosos"; "Parc de Thrushcross" (2x) en lloc de "Granja dels
+    Tords"; "Penistone Crags" amb 3 variants ("Espadats" 7x, "Penyals" 1x,
+    "Penascos" 1x) — cal unificar a "Espadats de Penistone".
+  - "bestiar" (cap. I) com a traducció de "cattle" — preferible "ramat".
+  - Divergències menors entre traduccio.md i chunks individuals.
+
+  Recomanació: correcció de les inconsistències toponímiques per pujar a 8+/10.
