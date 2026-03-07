@@ -224,7 +224,7 @@ En aquella època somiava molt. I un somni tornava sempre: veia un ocell, un esp
 
 Vaig pintar també l'ocell. El vaig pintar mentre lluitava per sortir de l'ou, amb les ales esteses, i vaig enviar el dibuix a Demian, sense carta, sense explicació. No tenia la seva adreça, però sabia el nom de la seva mare i la ciutat, i així vaig adreçar el sobre a la senyora Eva Demian.
 
-Van passar setmanes. Un dia vaig trobar un paperets dins el meu llibre escolar, en una lletra que no coneixia. Hi deia:
+Van passar setmanes. Un dia vaig trobar un paperet dins el meu llibre escolar, en una lletra que no coneixia. Hi deia:
 
 «L'ocell lluita per sortir de l'ou. L'ou és el món. Qui vol néixer ha de destruir un món. L'ocell vola cap a Déu. El déu es diu Abraxas.»
 

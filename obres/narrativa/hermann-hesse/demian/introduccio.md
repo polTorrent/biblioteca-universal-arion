@@ -6,7 +6,7 @@
 
 ## Context biogràfic
 
-Hesse va néixer a Calw (Württemberg) en una família de missioners protestants. La seva infantesa va estar marcada per la tensió entre la pietat familiar i una sensibilitat artística rebelde que el va portar a fugir del seminari de Maulbronn el 1892. Aquesta experiència de ruptura amb el món institucional ressona profundament en la trajectòria de Sinclair.
+Hesse va néixer a Calw (Württemberg) en una família de missioners protestants. La seva infantesa va estar marcada per la tensió entre la pietat familiar i una sensibilitat artística rebel que el va portar a fugir del seminari de Maulbronn el 1892. Aquesta experiència de ruptura amb el món institucional ressona profundament en la trajectòria de Sinclair.
 
 Durant la Gran Guerra, Hesse es va oposar al nacionalisme bel·licista des de Suïssa, cosa que li va valer l'ostracisme de la premsa alemanya. La crisi personal que va seguir — separació de la primera esposa, mort del pare, depressió — el va conduir a la psicoanàlisi junguiana, que va transformar radicalment la seva visió de l'ésser humà i de la creativitat. *Demian* és el primer fruit d'aquesta transformació.
 
