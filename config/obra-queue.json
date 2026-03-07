@@ -323,6 +323,51 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/voltaire/micromegas",
       "notes": "Consell Editorial 2026-03-07. Conte filosòfic (1752) que inaugura la ciència-ficció: un gegant de Sírius i un saturnià visiten la Terra i descobreixen la petitesa i la presumpció dels humans. Sàtira del racionalisme dogmàtic i de l'antropocentrisme. Voltaire (†1778) és la figura central de la Il·lustració. Breu, àgil, ideal per a una traducció bilingüe. Cap traducció catalana recent. Text francès a Wikisource francesa i Project Gutenberg."
+    },
+    {
+      "autor": "Plutarc",
+      "titol": "Sobre la tranquil·litat de l'ànima (Περὶ εὐθυμίας)",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/plutarc/sobre-la-tranquillitat-de-lanima",
+      "notes": "Consell Editorial 2026-03-07. Reforça la categoria assaig (només 2 obres). Plutarc (†c. 120 dC) és un dels moralistes més influents de l'Antiguitat, absent del catàleg. Tractat dels Moralia sobre la serenitat interior: pont entre estoïcisme, epicureisme i platonisme. Prosa elegant i plena d'anècdotes. Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (Moralia, ed. Goodwin)."
+    },
+    {
+      "autor": "Virgili",
+      "titol": "Bucòliques (Eclogae)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4500,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/virgili/bucoliques",
+      "notes": "Consell Editorial 2026-03-07. El poeta llatí més important, absent del catàleg. 10 èglogues pastorals (42-39 aC) que funden la tradició bucòlica europea: paisatge idealitzat, amor, música i reflexió política (ègloga IV, messiànica). Virgili (†19 aC) és el vèrtex de la literatura llatina. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Kālidāsa",
+      "titol": "Meghadūta (El missatger del núvol)",
+      "llengua": "sànscrit",
+      "categoria": "oriental",
+      "dificultat": 5,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "archive.org"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol",
+      "notes": "Consell Editorial 2026-03-07. Reforça la categoria oriental (només 4 obres). Kālidāsa (†c. s. V dC) és el poeta i dramaturg més gran de la literatura sànscrita, sovint comparat amb Shakespeare. Poema líric en 111 estrofes: un yaksha exiliat envia un missatge d'amor a la seva esposa a través d'un núvol monsònic, descrivint la geografia i la bellesa de l'Índia. Obra mestra del kāvya (poesia ornamental). Cap traducció catalana. Text sànscrit a Wikisource i Archive.org."
     }
   ]
 }
