@@ -1,35 +1,26 @@
 obra:
   titol: De Brevitate Vitae
+  titol_original: De Brevitate Vitae
   autor: Sèneca
+  autor_original: Lucius Annaeus Seneca
   traductor: Biblioteca Arion (IA + comunitat)
+  any_original: "c. 49 dC"
   any_traduccio: 2026
   llengua_original: llatí
   genere: filosofia
   descripcio: Tractat filosòfic estoic on Sèneca exhorta Paulí a abandonar els afers
     públics i dedicar-se a la filosofia, argumentant que la vida no és breu sinó que
     la malgastem.
-  estadistiques:
-    paraules_traduccio: 5770
+seccions: 20
+estadistiques:
+  paraules_original: 5765
+  paraules_traduccio: 8420
+  notes: 17
+  termes_glossari: 14
 revisio:
-  estat: necessita_correccio
-  data_revisio: '2026-03-01'
+  estat: pendent_supervisio
+  data_revisio: '2026-03-07'
   qualitat: 5.5
-  notes_revisio: 'Validació 2026-03-01: 5.5/10 — NO APROVAT. Capítols XIV, XVI, XVIII
-    absents. Meta-comentaris d''agent dins el text. Truncaments a III, VII, IX, XII.
-    Error gramatical (no podias). Glossari i notes excel·lents. 17 notes, 14 termes.'
-avaluacio_final:
-  data: '2026-03-01'
-  puntuacions:
-    fidelitat: 5.0
-    veu_autor: 7.5
-    fluidesa: 7.0
-    correccio_linguistica: 6.5
-    coherencia: 4.5
-    global: 5.5
-  total_errors: 9
-  errors_critics: 3
-  errors_alts: 3
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 9
+  notes_revisio: 'Correcció 2026-03-07: tots els errors resolts (capítols XIV, XVI,
+    XVIII traduïts; meta-comentaris eliminats; truncaments completats; errors ortogràfics
+    corregits; metadata completada). Pendent de nova supervisió.'
