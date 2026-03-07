@@ -1,0 +1,35 @@
+obra:
+  titol: "Demian"
+  titol_original: "Demian. Die Geschichte einer Jugend"
+  autor: "Hermann Hesse"
+  autor_original: "Hermann Hesse"
+  traductor: "Biblioteca Arion (IA + comunitat)"
+  any_original: 1919
+  any_traduccio: 2026
+  llengua_original: "alemany"
+  descripcio: |
+    Novel·la de formació (Bildungsroman) que narra el despertar espiritual
+    i intel·lectual del jove Emil Sinclair, guiat per la figura enigmàtica
+    de Max Demian. Una exploració profunda de la dualitat entre el bé i el
+    mal, la recerca de la identitat i la influència de Nietzsche, Jung i
+    el gnosticisme en el pensament de Hesse.
+  genere: "narrativa"
+  subgenere: "novel·la"
+  domini_public: true
+  proposta: "comunitat"
+  temes:
+    - dualitat bé/mal
+    - formació personal (Bildungsroman)
+    - gnosticisme (Abraxas)
+    - psicoanàlisi junguiana
+    - rebel·lia espiritual
+    - Primera Guerra Mundial
+  estadistiques:
+    paraules_original: 6772
+    paraules_traduccio: 6820
+    notes: 8
+    termes_glossari: 13
+revisio:
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: "2026-03-07"
