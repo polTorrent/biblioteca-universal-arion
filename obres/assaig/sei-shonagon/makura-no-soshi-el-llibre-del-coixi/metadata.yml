@@ -1,0 +1,61 @@
+obra:
+  titol: "El llibre del coixí"
+  titol_original: "枕草子"
+  titol_romanitzat: "Makura no Sōshi"
+  autor: "Sei Shōnagon (清少納言)"
+  traductor: "Biblioteca Universal Arion (IA + revisió humana)"
+  any_original: "c. 1002 dC"
+  any_traduccio: 2026
+  llengua_original: "japonès clàssic"
+  genere: "assaig/zuihitsu"
+  descripcio: >
+    El Makura no Sōshi (枕草子, El llibre del coixí) és una obra cabdal de la
+    literatura japonesa clàssica, escrita per Sei Shōnagon, dama de la cort de
+    l'emperadriu Teishi durant el període Heian. Considerat el primer exemple del
+    gènere zuihitsu (随筆, «seguir el pinzell»), el text recull observacions,
+    llistes, anècdotes cortesanes i reflexions estètiques amb una prosa elegant
+    i plena d'enginy. Selecció de 30 seccions representatives.
+  temes:
+    - estètica japonesa
+    - vida cortesana Heian
+    - zuihitsu
+    - mono no aware
+    - okashi (encant, gràcia)
+    - natura
+    - sensibilitat
+tradicio_textual:
+  versions_principals:
+    - llengua: japonès clàssic
+      tipus: "Sankanbon (三巻本)"
+      nota: "Versió en tres volums, la més extensa i editada; base de les edicions modernes"
+    - llengua: japonès clàssic
+      tipus: "Nōinbon (能因本)"
+      nota: "Atribuïda al poeta Nōin, amb ordenació diferent"
+    - llengua: japonès clàssic
+      tipus: "Maedabon (前田本)"
+      nota: "Manuscrit de la família Maeda, possiblement el més antic"
+  edicio_base: "Sankanbon (三巻本), seguint l'edició de Hagitani Boku (萩谷朴)"
+seccions: 30
+estadistiques:
+  paraules_original: 2100
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
+llicencia:
+  tipus: "CC BY-SA 4.0"
+  nota: "Text original de domini públic (obra del s. XI)"
+context_historic: >
+  Sei Shōnagon va servir com a dama de companyia (nyōbō) de l'emperadriu
+  Teishi (定子) a la cort imperial de Heian-kyō (actual Kyoto) entre els anys
+  993 i 1000 aproximadament. El Makura no Sōshi va ser escrit durant aquest
+  període i poc després. L'obra és contemporània del Genji Monogatari de
+  Murasaki Shikibu, l'altra gran escriptora del període Heian, amb qui Sei
+  Shōnagon mantenia una cèlebre rivalitat literària. El títol «llibre del
+  coixí» (makura no sōshi) fa referència als quaderns que es guardaven dins
+  els coixins de fusta japonesos, on s'escrivien notes privades. L'obra va
+  establir el gènere zuihitsu (assaig lliure) i és una font inestimable per
+  comprendre l'estètica, els costums i la sensibilitat del Japó clàssic.
