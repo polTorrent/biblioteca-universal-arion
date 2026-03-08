@@ -1,6 +1,4 @@
-Text llatí original (domini públic). Font: The Latin Library.
-
----
+# P. Vergili Maronis Bucolica
 
 ## Ecloga I
 

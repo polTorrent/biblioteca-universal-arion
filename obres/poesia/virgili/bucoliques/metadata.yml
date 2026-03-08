@@ -1,5 +1,5 @@
 avaluacio_final:
-  data: '2026-03-08T03:45:30.105605'
+  data: '2026-03-08T03:58:35.021536'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
@@ -7,16 +7,16 @@ avaluacio_final:
     correccio_linguistica: 0.0
     coherencia: 0.0
     global: 0.0
-  total_errors: 15
+  total_errors: 20
   errors_critics: 0
   errors_alts: 0
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 14
+  correccions_pendents: 18
 obra:
   estadistiques:
-    paraules_traduccio: 1235
+    paraules_traduccio: 1472
 revisio:
   estat: revisat
   data_revisio: '2026-03-08'
