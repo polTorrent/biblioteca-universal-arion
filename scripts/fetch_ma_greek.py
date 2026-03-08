@@ -6,7 +6,6 @@ import urllib.parse
 import re
 import os
 import json
-import subprocess
 
 OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "marcus_aurelius_greek")
 
@@ -84,14 +83,15 @@ def main() -> None:
                 html_content = parse_text.get("*", "")
                 if not html_content:
                     print("No text content in parse response")
-                text = strip_html(html_content)
-                print(f"Main page text length: {len(text)}")
-                print(f"Greek chars: {count_greek(text)}")
-                print(f"Preview:\n{text[:1000]}\n")
+                else:
+                    text = strip_html(html_content)
+                    print(f"Main page text length: {len(text)}")
+                    print(f"Greek chars: {count_greek(text)}")
+                    print(f"Preview:\n{text[:1000]}\n")
 
-                with open(os.path.join(OUTPUT_DIR, "wikisource_main.txt"), "w",
-                          encoding="utf-8") as f:
-                    f.write(text)
+                    with open(os.path.join(OUTPUT_DIR, "wikisource_main.txt"), "w",
+                              encoding="utf-8") as f:
+                        f.write(text)
 
                 links = data["parse"].get("links", [])
                 print(f"Links found: {len(links)}")
@@ -293,7 +293,10 @@ def main() -> None:
     print("DONE")
     print("=" * 70)
     print(f"Output: {OUTPUT_DIR}")
-    subprocess.run(["ls", "-la", OUTPUT_DIR], check=False)
+    for entry in sorted(os.listdir(OUTPUT_DIR)):
+        full = os.path.join(OUTPUT_DIR, entry)
+        size = os.path.getsize(full)
+        print(f"  {entry} ({size} bytes)")
 
 
 if __name__ == "__main__":
