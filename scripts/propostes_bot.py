@@ -18,7 +18,7 @@ def load_token():
         for line in ENV_FILE.read_text().splitlines():
             if line.startswith("DISCORD_BOT_TOKEN"):
                 return line.split("=", 1)[1].strip().strip('"')
-    return os.environ.get("DISCORD_BOT_TOKEN", "")
+    return os.environ.get("DISCORD_BOT_TOKEN") or ""
 
 TOKEN = load_token()
 CHANNEL_ID = "1479599316380291276"
@@ -31,21 +31,21 @@ def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     print(f"[{timestamp}] {msg}")
 
-def get_last_message_id():
+def get_last_message_id() -> str:
     try:
         return LAST_MESSAGE_FILE.read_text().strip()
-    except:
+    except (OSError, ValueError):
         return "0"
 
-def save_last_message_id(msg_id):
+def save_last_message_id(msg_id: str) -> None:
     LAST_MESSAGE_FILE.parent.mkdir(parents=True, exist_ok=True)
     LAST_MESSAGE_FILE.write_text(str(msg_id))
 
-def crear_tasca(titol, idioma, usuari_id, usuari_nom):
+def crear_tasca(titol: str, idioma: str, usuari_id: str, usuari_nom: str) -> str:
     """Crea una tasca al worker."""
     timestamp = int(datetime.now().timestamp())
     task_id = f"{timestamp}_proposta_{os.getpid()}"
-    
+
     tasca = {
         "id": task_id,
         "type": "translate",
@@ -56,44 +56,43 @@ def crear_tasca(titol, idioma, usuari_id, usuari_nom):
         "usuari_discord_nom": usuari_nom,
         "status": "pending",
         "created_at": datetime.now().isoformat(),
-        "source": "discord_bot"
+        "source": "discord_bot",
     }
-    
-    # Crear fitxer de tasca
+
     PROPOSTES_DIR.mkdir(parents=True, exist_ok=True)
     tasca_file = PROPOSTES_DIR / f"{task_id}.json"
-    with open(tasca_file, "w") as f:
-        json.dump(tasca, f, indent=2)
-    
+    with open(tasca_file, "w", encoding="utf-8") as f:
+        json.dump(tasca, f, indent=2, ensure_ascii=False)
+
     # Afegir a la cua
     if TASK_QUEUE.exists():
         try:
-            with open(TASK_QUEUE, "r+") as f:
+            with open(TASK_QUEUE, "r", encoding="utf-8") as f:
                 data = json.load(f)
-                if not isinstance(data, list):
-                    data = []
-                data.append(tasca)
-                f.seek(0)
-                json.dump(data, f, indent=2)
-                f.truncate()
-        except:
-            with open(TASK_QUEUE, "w") as f:
-                json.dump([tasca], f, indent=2)
+            if not isinstance(data, list):
+                data = []
+        except (json.JSONDecodeError, OSError):
+            data = []
     else:
-        with open(TASK_QUEUE, "w") as f:
-            json.dump([tasca], f, indent=2)
-    
+        data = []
+
+    data.append(tasca)
+    with open(TASK_QUEUE, "w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+
     return task_id
 
-def send_response(channel_id, message_id, content):
+def send_response(channel_id: str, message_id: str, content: str) -> None:
     """Envia resposta al canal."""
     url = f"https://discord.com/api/v10/channels/{channel_id}/messages"
     headers = {"Authorization": f"Bot {TOKEN}", "Content-Type": "application/json"}
-    data = {
+    payload = {
         "content": content,
-        "message_reference": {"message_id": message_id}
+        "message_reference": {"message_id": message_id},
     }
-    requests.post(url, headers=headers, json=data)
+    resp = requests.post(url, headers=headers, json=payload, timeout=15)
+    if resp.status_code >= 400:
+        log(f"Error enviant resposta (HTTP {resp.status_code}): {resp.text[:200]}")
 
 def check_messages():
     """Comprova nous missatges al canal."""
@@ -102,11 +101,11 @@ def check_messages():
     url = f"https://discord.com/api/v10/channels/{CHANNEL_ID}/messages?after={last_id}&limit=10"
     headers = {"Authorization": f"Bot {TOKEN}"}
     
-    response = requests.get(url, headers=headers)
-    if response.status_code != 200:
+    resp = requests.get(url, headers=headers, timeout=15)
+    if resp.status_code != 200:
         return
-    
-    messages = response.json()
+
+    messages = resp.json()
     
     for msg in reversed(messages):
         content = msg.get("content", "").strip()
@@ -135,15 +134,24 @@ def check_messages():
                 log(f"✅ Proposta: {titol} ({idioma}) per {author_name}")
                 
                 # Respondre
-                response = f"✅ **Proposta rebuda!**\n\n📚 **Obra:** {titol}\n📝 **Idioma:** {idioma or 'desconegut'}\n\nLa tasca s'ha afegit a la cua del worker."
-                send_response(CHANNEL_ID, msg_id, response)
+                reply = (
+                    f"✅ **Proposta rebuda!**\n\n"
+                    f"📚 **Obra:** {titol}\n"
+                    f"📝 **Idioma:** {idioma or 'desconegut'}\n\n"
+                    f"La tasca s'ha afegit a la cua del worker."
+                )
+                send_response(CHANNEL_ID, msg_id, reply)
         
         save_last_message_id(msg_id)
 
-def main():
+def main() -> None:
+    if not TOKEN:
+        log("ERROR: No s'ha trobat DISCORD_BOT_TOKEN. Configura .env o variable d'entorn.")
+        return
+
     log("🤖 Bot de propostes iniciat")
     log(f"📡 Escoltant canal: {CHANNEL_ID}")
-    
+
     while True:
         try:
             check_messages()
