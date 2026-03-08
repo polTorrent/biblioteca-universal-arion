@@ -410,7 +410,7 @@
         "wikisource",
         "gutenberg"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/narrativa/boccaccio/decamero-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-07. Obre la narrativa italiana al catàleg: Boccaccio (†1375) és, amb Dante i Petrarca, un dels tres pilars de la literatura italiana. El Decameró (1353) és la col·lecció de contes més influent de la literatura europea medieval. Selecció recomanada: I.1 (Ser Ciappelletto), I.3 (els tres anells), II.5, III.1, IV.5 (Lisabetta), V.9 (Federigo degli Alberighi), VI.10, VII.2, IX.3, X.10 (Griselda). Prosa toscana elegant, humor, erotisme i crítica social. Cap traducció catalana recent en edició bilingüe. Text italià a Wikisource italiana i Project Gutenberg."
     },
@@ -544,6 +544,51 @@
       "status": "pending",
       "obra_dir": "obres/poesia/karel-hynek-macha/maj-maig",
       "notes": "Consell Editorial 2026-03-08. Afegeix el txec com a nova llengua al catàleg, obrint la biblioteca a la tradició literària eslava central. Máj (1836) és el poema fundacional de la literatura txeca moderna: 4 cants i 2 intermezzi que narren la tragèdia de Vilém, bandoler que mata sense saber-ho el seu pare i és executat, en un paisatge de maig d'una bellesa exuberant que contrasta amb la violència i la mort. Mácha (†1836, als 25 anys) és el poeta romàntic txec per excel·lència, redescobert pel modernisme i les avantguardes del s. XX. Poema d'una musicalitat i una riquesa visual extraordinàries, comparable al Màj de Byron o al Lenore de Bürger. Cap traducció catalana. Text txec a Wikisource txeca."
+    },
+    {
+      "autor": "Safo",
+      "titol": "Fragments (selecció: 30 poemes i fragments)",
+      "llengua": "grec",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/safo/fragments-seleccio-30-poemes",
+      "notes": "Consell Editorial 2026-03-08. Primera gran veu femenina de la lírica occidental i absència clamorosa del catàleg. Safo de Lesbos (†c. 570 aC), la 'desena Musa' segons Plató, és la poeta més important de l'Antiguitat grega. Dels nou llibres originals sobreviuen fragments d'una intensitat lírica incomparable: l'himne a Afrodita (fr. 1), l'oda a l'estimada (fr. 31, φαίνεταί μοι), el fragment de la poma (fr. 105a), i desenes de textos sobre el desig, la bellesa i la pèrdua. Selecció dels 30 fragments més substancials i traduïbles. Diversifica la poesia grega (dominada per veus masculines al catàleg). Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Campbell/Voigt) i Wikisource grega."
+    },
+    {
+      "autor": "Petroni",
+      "titol": "Cena Trimalchionis (El banquet de Trimalció)",
+      "llengua": "llatí",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
+      "notes": "Consell Editorial 2026-03-08. La gran sàtira romana, gènere completament absent del catàleg. Petroni (†66 dC, contemporani de Sèneca i Neró) és l'autor del Satyricon, la primera novel·la picaresca de la literatura occidental. La Cena Trimalchionis (Satyricon 26.7–78.8) és l'episodi més cèlebre i autònom: el banquet grotesc d'un llibert nou-ric, amb plats extravagants, discursos ridículs, testament en vida i una comicitat corrosiva que retrata la societat romana imperial. Prosa llatina col·loquial única (sermo vulgaris), document lingüístic inestimable del llatí parlat. Complementa la narrativa llatina d'Apuleu amb un to radicalment diferent. Cap traducció catalana en edició bilingüe. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Pu Songling",
+      "titol": "Liaozhai zhiyi (selecció: 10 contes fantàstics)",
+      "llengua": "xinès",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/pu-songling/liaozhai-zhiyi-seleccio-10-contes",
+      "notes": "Consell Editorial 2026-03-08. Diversifica el xinès de filosofia i poesia cap a la narrativa, gènere completament absent per a aquesta llengua al catàleg. Pu Songling (†1715), erudit fracassat als exàmens imperials, escriu durant 40 anys la col·lecció més cèlebre de contes fantàstics de la literatura xinesa: 491 relats de fantasmes, esperits guineu (húlí jīng 狐狸精), dimonis, scholars enamorats i justícia sobrenatural. Prosa clàssica (wenyan) d'una elegància i una inventiva narrativa extraordinàries, comparable als contes de Hoffmann o Poe. Selecció recomanada: 聂小倩 (Nie Xiaoqian), 画皮 (La pell pintada), 婴宁 (Yingning), 阿宝 (A Bao), 促织 (El grill), 席方平 (Xi Fangping), 田七郎 (Tian Qilang), 连城 (Liancheng), 黄英 (Huang Ying), 王六郎 (Wang Liulang). Cap traducció catalana. Text xinès clàssic a CText.org i Wikisource xinesa."
     }
   ]
 }
