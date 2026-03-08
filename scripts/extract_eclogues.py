@@ -26,8 +26,8 @@ def extract(filepath: str) -> str:
         html = html[m.end() :]
 
     # Mark speaker names (font size=3) before stripping tags
-    def mark_speaker(m: re.Match) -> str:
-        name = m.group(1).strip()
+    def mark_speaker(match: re.Match[str]) -> str:
+        name = match.group(1).strip()
         return "\n\nSPKR_" + name + "_SPKR\n\n"
 
     html = re.sub(
