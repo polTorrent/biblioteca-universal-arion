@@ -126,7 +126,8 @@ def copiar_a_web(retrat_file: Path, autor_slug: str) -> Path | None:
     try:
         shutil.copy2(retrat_file, dest)
         return dest
-    except OSError:
+    except OSError as e:
+        print(f"  Avís: no s'ha pogut copiar retrat a web: {e}")
         return None
 
 
