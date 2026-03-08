@@ -1,0 +1,22 @@
+obra:
+  titol: "Cupido i Psique"
+  titol_original: "Cupido et Psyche (Metamorphoseon IV.28–VI.24)"
+  autor: "Apuleu"
+  autor_original: "Lucius Apuleius Madaurensis"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 160 dC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  descripcio: "La faula intercalada de Cupido i Psique, narrada per una vella dins les Metamorfosis d'Apuleu. Una de les històries d'amor més influents de la literatura antiga, amb elements de conte de fades, al·legoria filosòfica i misteri religiós."
+  categoria: "narrativa"
+  font: "The Latin Library (thelatinlibrary.com)"
+seccions: 3
+estadistiques:
+  paraules_original: 9255
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
