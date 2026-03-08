@@ -1319,10 +1319,6 @@
   "translate_cd-biblioteca-universal-arion--python3-scriptstraduir_p": {
     "events": [
       {
-        "timestamp": 1772828738.32622,
-        "result": "created"
-      },
-      {
         "timestamp": 1772830548.6602025,
         "result": "created"
       },
@@ -1396,6 +1392,10 @@
       },
       {
         "timestamp": 1773001262.4617126,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773001355.3851326,
         "result": "created"
       }
     ],
