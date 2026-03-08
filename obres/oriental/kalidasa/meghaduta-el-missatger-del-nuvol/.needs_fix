@@ -1,0 +1,24 @@
+data: 2026-03-08
+puntuacio: 0.5
+revisor: supervisio-qualitat
+
+problemes_critics:
+  - "OBRA EQUIVOCADA: El directori es diu 'meghaduta-el-missatger-del-nuvol' pero tot el contingut (original.md, metadata.yml, traduccio.md, notes.md) correspon a Kumarasambhava (El Naixement del Deu de la Guerra), una obra completament diferent de Kalidasa."
+  - "TRADUCCIO BUIDA: traduccio.md no conte cap traduccio real, nomes un encapcalament i linies buides."
+  - "ORIGINAL INCORRECTE: original.md conte el Kumarasambhava de Griffith (1879), no el Meghaduta."
+
+problemes_greus:
+  - "metadata.yml: titol diu 'Kumarasambhava' pero el directori es 'meghaduta'"
+  - "metadata.yml: llengua_original es 'angles' pero hauria de ser 'sanscrit'"
+  - "metadata.yml: totes les puntuacions a 0.0, 164 errors totals"
+  - "metadata.yml: paraules_original i paraules_traduccio a 0"
+  - "original.md: capcalera diu 'Llengua: nuvol' (sense sentit)"
+  - "No existeix glossari.yml"
+
+accions_necessaries:
+  - "Decidir quina obra es vol: Meghaduta o Kumarasambhava"
+  - "Si Meghaduta: obtenir el text original correcte i refer tota la traduccio"
+  - "Si Kumarasambhava: reanomenar el directori i refer la traduccio des de zero"
+  - "En qualsevol cas: traduir realment l'obra (traduccio.md es buit)"
+  - "Corregir metadata.yml amb les dades correctes"
+  - "Crear glossari.yml amb termes sanskrits"
