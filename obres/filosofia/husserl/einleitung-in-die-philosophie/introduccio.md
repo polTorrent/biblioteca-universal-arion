@@ -1,37 +1,38 @@
 # Introducció
 
-## Edmund Husserl i la fenomenologia com a filosofia primera
+## Edmund Husserl i les lliçons d'«Introducció a la filosofia»
 
-Edmund Husserl (1859–1938) és el fundador de la fenomenologia, un dels corrents filosòfics més influents del segle XX. Nascut a Proßnitz (Moràvia, avui Prostějov, República Txeca) en una família jueva, va estudiar matemàtiques a Leipzig i Berlín amb Karl Weierstraß, i va obtenir el doctorat amb una tesi sobre el càlcul de variacions (1882). La seva trajectòria va girar cap a la filosofia gràcies a Franz Brentano, de qui va ser alumne a Viena (1884-1886). De Brentano va rebre la noció d'intencionalitat — la idea que tota consciència és consciència «de quelcom» — que es convertiria en el pilar de tota la fenomenologia.
+Edmund Husserl (1859–1938) va impartir les lliçons recollides en aquest volum a la Universitat de Friburg entre 1916 i 1920, sota el títol «Einleitung in die Philosophie» (Introducció a la filosofia). El text principal correspon a la lliçó del semestre d'hivern de 1919/20 — una lliçó de quatre hores setmanals que va ser seguida per uns 300 estudiants —, si bé la primera part incorpora materials de les lliçons homònimes del semestre d'estiu de 1916 i del semestre d'estiu de 1918.
 
-Després de l'habilitació a Halle (1887), Husserl va publicar les seves primeres obres: la *Filosofia de l'aritmètica* (1891), encara sota la influència del psicologisme, i les *Investigacions lògiques* (1900/01), on va refutar radicalment el psicologisme i va establir les bases de la fenomenologia com a ciència descriptiva de les estructures de la consciència. L'any 1901 va obtenir una càtedra a Göttingen, on va romandre fins al 1916, i on va escriure les *Idees relatives a una fenomenologia pura i a una filosofia fenomenològica* (1913), obra en la qual va introduir la reducció fenomenològica (epoché) com a mètode central.
+## Estructura de l'obra
 
-## Les lliçons de Friburg (1916–1920)
+L'obra es divideix en dues parts:
 
-L'any 1916, Husserl va ser nomenat catedràtic de filosofia a la Universitat Albert Ludwig de Friburg de Brisgòvia, on va succeir Heinrich Rickert. Les lliçons que presentem aquí — *Einleitung in die Philosophie* — corresponen als seus primers anys a Friburg i representen la seva exposició més accessible i sistemàtica de la fenomenologia com a programa filosòfic complet.
+### I. Lliçó principal (Vorlesung 1919/20)
 
-En aquestes lliçons, Husserl no pressuposa cap coneixement previ de fenomenologia. Parteix de la pregunta més elemental — «Què és la filosofia?» — i condueix l'oient, pas a pas, des de l'actitud natural de la vida quotidiana fins a l'actitud filosòfica oberta per la reducció fenomenològica. El recorregut abasta set grans temes:
+Husserl recorre la història de la filosofia com a via per fonamentar la fenomenologia:
 
-1. **La idea de la filosofia** — La filosofia com a ciència rigorosa i la necessitat d'un nou començament radical, en la línia de Descartes.
+1. **L'àmbit peculiar de problemes de la filosofia** — La filosofia ocupa una «dimensió» radicalment nova respecte de les ciències positives.
+2. **La filosofia o ciència grega incipient** — El naixement de l'interès teòric pur entre els grecs, des de Tales fins a Demòcrit.
+3. **Plató i el descobriment de l'apriori** — La teoria de les Idees com a primer accés a l'esfera de l'apriori.
+4. **Teoria formal de la ciència** — La lògica formal, la mathesis universalis i la teoria de les multiplicitats.
+5. **Aristòtil i la idea d'una ontologia real** — L'ontologia material i les categories regionals.
+6. **Explicació cientificonatural i teleològica del món** — La tensió entre explicació mecànica i teleològica.
+7. **Axiologia apriorística i ètica** — Fonamentació d'una axiologia formal i material, paral·lela a la lògica formal.
+8. **Ètica social** — L'extensió de l'ètica a la vida comunitària.
+9. **Teleologia** — La qüestió del sentit últim del món i de la vida humana.
+10. **Racionalisme i empirisme** — L'enfrontament entre les dues tradicions i els seus límits.
+11. **El gir interior de Descartes** — El cogito com a punt d'arrencada de la filosofia moderna.
+12. **La fenomenologia com a ciència apriorística** — La fenomenologia transcendental com a fonament de tota ciència.
 
-2. **Actitud natural i actitud filosòfica** — La descripció del món tal com és viscut ingènuament (la «tesi general» de l'actitud natural) i la possibilitat de trencar aquesta ingenuïtat mitjançant l'admiració filosòfica.
+### II. Apèndix (Anhang): Lliçons de 1916 i 1918
 
-3. **La reducció fenomenològica** — L'epoché com a suspensió de la tesi d'existència del món, que obre l'accés a la consciència pura i a la subjectivitat transcendental.
+Seccions dedicades als grans filòsofs moderns: Descartes, Locke, Berkeley, Hume, Spinoza, Leibniz i Kant, amb una secció central sobre teoria del coneixement i metafísica.
 
-4. **Intencionalitat i consciència** — L'estructura fonamental de la consciència (tota consciència és consciència «de quelcom»), la correlació noesi-noema, i la noció d'horitzó.
+## Nota sobre la traducció
 
-5. **Filosofia i ciències** — La relació entre la filosofia fenomenològica i les ciències positives, amb la crítica del psicologisme com a exemple paradigmàtic.
+Aquesta és la primera traducció al català de les lliçons d'«Introducció a la filosofia» de Husserl. El text alemany s'ha extret de l'edició crítica publicada com a *Husserliana Materialien* Band IX (ed. Hanne Jacobs, Springer, 2012).
 
-6. **Lògica i teoria del coneixement** — El problema del coneixement, l'accés fenomenològic a l'epistemologia, i la teoria de l'evidència i la veritat.
+S'ha procurat mantenir la fidelitat al text original, respectant l'estil expositiu de Husserl — sovint complex i amb oracions llargues i subordinades — i la seva terminologia tècnica. Les citacions en grec i llatí s'han conservat en la llengua original. Els termes tècnics fenomenològics es tradueixen d'acord amb la tradició filosòfica catalana i castellana establerta, amb un glossari de referència inclòs en aquest volum.
 
-7. **Ètica i filosofia pràctica** — L'extensió de la fenomenologia a l'esfera dels valors, la voluntat i la raó pràctica.
-
-## Significació de l'obra
-
-Aquestes lliçons són d'un interès excepcional per diverses raons. En primer lloc, mostren Husserl com a professor: la seva capacitat d'exposar amb claredat idees d'una complexitat considerable, de conduir l'estudiant a través d'un camí de pensament rigorós sense perdre mai el fil conductor. En segon lloc, ofereixen una síntesi del pensament husserlià madur — posterior a les *Ideen* però anterior a les *Meditacions cartesianes* i a la *Crisi* — que permet copsar el sistema fenomenològic en el seu conjunt. En tercer lloc, contenen passatges sobre ètica i axiologia fenomenològica que són relativament poc coneguts i que mostren l'abast del projecte husserlià més enllà de la teoria del coneixement.
-
-## Sobre aquesta traducció
-
-Aquesta és la primera traducció al català de les lliçons introductòries de Husserl a la filosofia. Hem tingut en compte les traduccions existents a altres llengües romàniques (castellà, francès, italià) i la terminologia fenomenològica establerta. Els termes tècnics s'ofereixen en alemany entre claudàtors la primera vegada que apareixen i es recullen al glossari. Les notes a peu de pàgina inclouen aclariments filosòfics [F], referències bibliogràfiques [R], notes del traductor [T] i notes historicofilosòfiques [H].
-
-La traducció segueix la normativa de l'Institut d'Estudis Catalans (IEC) i ha estat preparada amb voluntat de fidelitat al text original i de llegibilitat en català. Quan la sintaxi alemanya de Husserl — sovint densa i parentètica — ho ha exigit, hem optat per solucions que prioritzen la claredat sense trair el pensament de l'autor.
+Les notes a peu de pàgina de l'edició original (referents a manuscrits, variants textuals i referències creuades) s'han conservat tal com apareixen al text font.
