@@ -1,0 +1,80 @@
+obra:
+  titol: "Decameron - Seleccio de 10 contes"
+  titol_original: "Decameron"
+  autor: "Giovanni Boccaccio"
+  autor_original: "Giovanni Boccaccio"
+  traductor: "Editorial Classica"
+  any_original: "c. 1349-1353"
+  any_traduccio: 2026
+  llengua_original: "italia"
+  descripcio: >
+    Seleccio de deu novelles representatives del Decameron de Boccaccio,
+    obra mestra de la narrativa europea medieval. Les novelles trien una
+    mostra de cada Giornata, incloent-hi les mes celebres: Ser Ciappelletto
+    (I,1), els tres anells de Melchisedec (I,3), Andreuccio da Perugia (II,5),
+    Masetto da Lamporecchio (III,1), Lisabetta da Messina (IV,5), Federigo
+    degli Alberighi (V,9), Fra Cipolla (VI,10), Peronella (VII,2), Calandrino
+    i l'elitropia (VIII,3) i Griselda (X,10).
+  font: "https://it.wikisource.org/wiki/Decameron"
+  genere: "narrativa"
+  subgenere: "novella"
+  periode: "medieval"
+  lloc: "Florencia, Italia"
+  temes:
+    - "engany i astúcia"
+    - "amor i desig"
+    - "fortuna i adversitat"
+    - "religió i hipocresia"
+    - "ingeniositat verbal"
+    - "crítica social"
+    - "fidelitat i paciencia"
+seccions: 10
+novelles:
+  - giornata: I
+    novella: 1
+    titol: "Ser Ciappelletto"
+    tema: "Hipocresia religiosa i falsa santedat"
+  - giornata: I
+    novella: 3
+    titol: "Melchisedec e i tre anelli"
+    tema: "Tolerancia religiosa i saviesa"
+  - giornata: II
+    novella: 5
+    titol: "Andreuccio da Perugia"
+    tema: "Aventura picaresca i fortuna"
+  - giornata: III
+    novella: 1
+    titol: "Masetto da Lamporecchio"
+    tema: "Engany i desig carnal"
+  - giornata: IV
+    novella: 5
+    titol: "Lisabetta da Messina"
+    tema: "Amor tragic i crueltat"
+  - giornata: V
+    novella: 9
+    titol: "Federigo degli Alberighi"
+    tema: "Amor noble i sacrifici"
+  - giornata: VI
+    novella: 10
+    titol: "Fra Cipolla"
+    tema: "Eloqüencia i engany clerical"
+  - giornata: VII
+    novella: 2
+    titol: "Peronella"
+    tema: "Adulteri i astúcia femenina"
+  - giornata: VIII
+    novella: 3
+    titol: "Calandrino e l'elitropia"
+    tema: "Beffa i credulitat"
+  - giornata: X
+    novella: 10
+    titol: "Griselda"
+    tema: "Paciencia i submissio conjugal"
+estadistiques:
+  paraules_original: 28484
+  novelles: 10
+  giornate_representades: 9
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null

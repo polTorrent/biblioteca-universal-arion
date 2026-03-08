@@ -1,0 +1,100 @@
+termes:
+  - terme: "novella"
+    original: "novella"
+    traduccio: "conte, narració breu"
+    nota: "Genere narratiu breu d'origen italia medieval, diferent del 'romanzo'"
+
+  - terme: "giornata"
+    original: "giornata"
+    traduccio: "jornada"
+    nota: "Cada un dels deu dies en que s'estructura el Decameron"
+
+  - terme: "brigata"
+    original: "brigata"
+    traduccio: "colla, grup"
+    nota: "El grup de deu joves (set dones i tres homes) que expliquen les histories"
+
+  - terme: "beffa"
+    original: "beffa"
+    traduccio: "burla, engany"
+    nota: "Motiu recurrent al Decameron; engany astut sovint amb final comic"
+
+  - terme: "ingegno"
+    original: "ingegno"
+    traduccio: "enginy, intel·ligencia"
+    nota: "Qualitat central dels protagonistes boccaccians: astúcia i creativitat"
+
+  - terme: "fortuna"
+    original: "fortuna"
+    traduccio: "fortuna, sort"
+    nota: "Forca imprevisible que governa els esdeveniments; tema central del Decameron"
+
+  - terme: "cortesia"
+    original: "cortesia"
+    traduccio: "cortesia, noblesa d'esperit"
+    nota: "Virtut cavalleresca que transcendeix la classe social"
+
+  - terme: "mercatante"
+    original: "mercatante"
+    traduccio: "mercader"
+    nota: "Classe social emergent a la Florencia del Trecento, protagonista de moltes novelles"
+
+  - terme: "usura"
+    original: "usura"
+    traduccio: "usura"
+    nota: "Practic de prestec amb interes, condemnada per l'Església pero essencial per al comerc"
+
+  - terme: "frate"
+    original: "frate"
+    traduccio: "frare"
+    nota: "Membre d'un orde religiós; sovint objecte de satira al Decameron"
+
+  - terme: "confessione"
+    original: "confessione"
+    traduccio: "confessio"
+    nota: "Sagrament central a la novella de Ser Ciappelletto (I,1)"
+
+  - terme: "Saladino"
+    original: "Saladino"
+    traduccio: "Saladí"
+    nota: "Salah ad-Din (1137-1193), solda d'Egipte i Siria; figura de magnanimitat al Decameron"
+
+  - terme: "elitropia"
+    original: "elitropia"
+    traduccio: "heliotropi"
+    nota: "Pedra legendaria que suposadament feia invisible qui la portava (VIII,3)"
+
+  - terme: "marchese"
+    original: "marchese"
+    traduccio: "marques"
+    nota: "Titol nobiliari; Gualtieri, marques de Saluzzo, protagonista de la novella de Griselda (X,10)"
+
+  - terme: "pestilenza"
+    original: "pestilenza"
+    traduccio: "pestilencia, pesta"
+    nota: "La Pesta Negra de 1348, marc narratiu del Decameron"
+
+  - terme: "sollazzo"
+    original: "sollazzo"
+    traduccio: "esbarjo, divertiment"
+    nota: "Proposit de les novelles: entretenir durant el refugi de la pesta"
+
+  - terme: "villa"
+    original: "villa"
+    traduccio: "vila, casa de camp"
+    nota: "Lloc de refugi de la brigata fora de Florencia"
+
+  - terme: "onore"
+    original: "onore"
+    traduccio: "honor"
+    nota: "Concepte social clau, especialment en relacio amb la reputacio femenina"
+
+  - terme: "senno"
+    original: "senno"
+    traduccio: "seny, saviesa"
+    nota: "Virtut intel·lectual i practica valorada al Decameron"
+
+  - terme: "amore"
+    original: "amore"
+    traduccio: "amor"
+    nota: "Forca motriu de moltes novelles; pot ser noble, tragic o purament carnal"
