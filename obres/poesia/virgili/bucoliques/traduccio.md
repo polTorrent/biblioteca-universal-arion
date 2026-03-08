@@ -116,7 +116,7 @@ Aneu, cabres meves, ramat antany feliç, aneu.
 Jo no us veuré ja més, ajagut en una cova verda,
 penjant lluny del cingle ple de mates;
 no cantaré cap cançó; no pasturant jo, cabres,
-no brosareu el cytís florit ni els salzes amargs.
+no brosareu el cítis florit ni els salzes amargs.
 
 Títir
 
@@ -199,7 +199,7 @@ De qui fuges, ah, dement? Fins els déus han habitat els boscos,
 i el dardani Paris. Que Pal·las habiti les ciutadelles
 que ella va fundar; a nosaltres, que ens agradin sobretot els boscos.
 La lleona ferotge persegueix el llop, el llop la cabra,
-la cabra juganera persegueix el cytís florit,
+la cabra juganera persegueix el cítis florit,
 a tu et persegueix Coridó, oh Alexis: cadascú l'estira el seu plaer.
 
 Mira, els bous tornen de la jou portant l'arada penjada,
@@ -481,7 +481,7 @@ l'amom assiri naixerà pertot.
 
 Però quan ja puguis llegir les gestes dels herois i del pare,
 i conèixer què és la virtut,
-a poc a poc el camp groguejará amb l'espiga tendra,
+a poc a poc el camp groquejarà amb l'espiga tendra,
 i el raïm roig penjarà de les mates incultes,
 i les dures alzines suaran mel roscida.
 
@@ -687,7 +687,7 @@ S'hi afegeix com a companya la tímida Egle.
 Egle, la més bella de les Naíades, i al que ja s'hi veu,
 li pinta el front i les temples amb mores sanguínies.
 Ell, rient de l'engany, diu: 'Per què em lliguen?'
-'Deslliguen-me, nois; prou és haver demostrat que podíeu.
+'Desligueu-me, nois; prou és haver demostrat que podíeu.
 Les cançons que voleu, escolteu-les; les cançons per a vosaltres,
 per a ella un altre premi.' I tot seguit comença ell mateix.
 Aleshores, sí que veuries Faunes i feres ballar
@@ -975,7 +975,7 @@ passejaré la teva efígie: al déu li plau el nombre imparell.
 Porteu Dafnis de la ciutat a casa, cants meus, porteu Dafnis.
 
 Lliga amb tres nusos, Amaril·lis, tres colors;
-lliga, Amaril·lis, i digues: 'Lligaments de Venus lligoo.'
+lliga, Amaril·lis, i digues: 'Lligaments de Venus lligo.'
 
 Porteu Dafnis de la ciutat a casa, cants meus, porteu Dafnis.
 
@@ -1075,7 +1075,7 @@ els cignes el portaran cantant fins als estels.'
 Lícidas
 
 Així els teus eixams fugin dels teixos de Còrsega,
-així les vaques pasturades de cytís inflm els mugrons;
+així les vaques pasturades de cítis inflin els mugrons;
 comença, si tens quelcom. A mi també les Piérides
 m'han fet poeta; també tinc cants; també els pastors
 em diuen vate: però no me'ls crec;
@@ -1161,7 +1161,7 @@ Va venir Pan, déu d'Arcàdia, que el vam veure nosaltres mateixos
 vermell de baies sanguínies de saüc i de mini:
 'Hi haurà algun límit?', va dir. 'L'Amor no es preocupa d'això,
 ni el cruel Amor se sacia de llàgrimes, ni l'herba d'aigua,
-ni les abelles de cytís, ni les cabres de fullam.'
+ni les abelles de cítis, ni les cabres de fullam.'
 Trist, aquell va dir: 'Tanmateix cantareu, àrcades,
 als vostres monts aquests versos, vosaltres sols experts en el cant,
 àrcades. Oh que suaument reposarien els meus ossos
@@ -1175,7 +1175,7 @@ jauria amb mi entre els salzes sota la vinya flexible:
 Fíl·lis em colliria corones, Amintes cantaria.
 Aquí hi ha fonts fresques, aquí prats tendres, Lícoris;
 aquí hi ha bosc; aquí amb tu consumiria la vida sencera.
-Ara l'amor insensant em reté entre les armes del dur Mart,
+Ara l'amor dement em reté entre les armes del dur Mart,
 enmig de les fletxes i davant d'enemics.
 Tu, lluny de la pàtria (no voldria creure-ho tant!)
 mires, dura, les neus alpines i els freds del Rin

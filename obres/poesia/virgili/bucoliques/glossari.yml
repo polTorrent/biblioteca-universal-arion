@@ -1,0 +1,182 @@
+termes:
+  - id: "avena"
+    llati: "avena"
+    traduccio: "avena, flauta de canya"
+    definicio: >
+      Instrument musical pastoral fet d'una canya prima. En la poesia bucòlica,
+      l'avena és l'instrument característic del pastor-poeta, símbol de la
+      poesia humil i rústica en oposició a la tuba èpica. Virgili l'empra
+      des del primer vers de l'Ègloga I com a emblema del gènere pastoral.
+
+  - id: "pastor"
+    llati: "pastor"
+    traduccio: "pastor"
+    definicio: >
+      Figura central de la poesia bucòlica. Els pastors virginians no són
+      treballadors realistes sinó idealitzacions literàries: canten, competeixen
+      en certàmens poètics i viuen amors. Representen el poeta en un entorn
+      natural idealitzat, hereu de la tradició dels Idil·lis de Teòcrit.
+
+  - id: "cytisus"
+    llati: "cytisus"
+    traduccio: "cítis"
+    definicio: >
+      Arbust lleguminós (probablement Medicago arborea o Cytisus scoparius)
+      apreciat com a farratge per a cabres i abelles. Apareix recurrentment
+      a les Bucòliques com a element del paisatge pastoral i aliment predilecte
+      del ramat, especialment a les Èglogues II, IX i X.
+
+  - id: "viburnum"
+    llati: "viburnum"
+    traduccio: "viburn"
+    definicio: >
+      Arbust flexible i modest, emprat per Virgili com a terme de comparació
+      per indicar inferioritat. A l'Ègloga I, Roma s'alça entre les altres
+      ciutats com els xiprers entre els humils viburns, establint un contrast
+      entre grandesa i petitesa.
+
+  - id: "tityrus"
+    llati: "Tityrus"
+    traduccio: "Títir"
+    definicio: >
+      Pastor protagonista de l'Ègloga I, que gaudeix de l'oci concedit per
+      un déu (al·legoria d'Octavià/August). La tradició identifica Títir
+      amb el propi Virgili, que va conservar les seves terres gràcies a la
+      protecció imperial. Reapareix com a figura secundària a les Èglogues
+      III, V, VI i IX.
+
+  - id: "meliboeus"
+    llati: "Meliboeus"
+    traduccio: "Melibeu"
+    definicio: >
+      Pastor interlocutor de Títir a l'Ègloga I i narrador de l'Ègloga VII.
+      Representa els camperols desposseïts per les confiscacions de terres
+      després de la batalla de Filipos (42 aC). El seu exili contrasta amb
+      la sort afortunada de Títir.
+
+  - id: "amaryllis"
+    llati: "Amaryllis"
+    traduccio: "Amaril·lis"
+    definicio: >
+      Nom femení pastoral, d'origen grec (Ἀμαρυλλίς, 'la resplendent').
+      Apareix a les Èglogues I, III, VIII i IX com a objecte d'amor dels
+      pastors. En la tradició bucòlica teocritea, Amaril·lis és l'arquetip
+      de l'estimada rústica, a vegades esquiva, a vegades amorosa.
+
+  - id: "daphnis"
+    llati: "Daphnis"
+    traduccio: "Dafnis"
+    definicio: >
+      Pastor mític, fill d'Hermes i una nimfa, considerat l'inventor del
+      cant bucòlic. Protagonista de les Èglogues V (on es plora i divinitza
+      la seva mort) i VIII (ritual màgic per fer-lo tornar). La seva mort i
+      apoteosi a l'Ègloga V s'han interpretat com a al·legoria de Juli Cèsar.
+
+  - id: "corydon"
+    llati: "Corydon"
+    traduccio: "Coridó"
+    definicio: >
+      Pastor protagonista de l'Ègloga II, on canta el seu amor no correspost
+      pel jove Alexis. Reapareix victoriós al certamen de l'Ègloga VII contra
+      Tirsis. El seu nom, d'origen grec (Κορύδων, 'alosa'), és arquetípic
+      del pastor enamorat en la tradició bucòlica.
+
+  - id: "musae"
+    llati: "Musae"
+    traduccio: "Muses"
+    definicio: >
+      Deesses de les arts i la poesia, filles de Zeus i Mnemòsine. Virgili
+      les invoca repetidament com a font d'inspiració del cant pastoral.
+      Apareixen també amb els noms de Camenes (equivalent llatí) i Piérides
+      (per la seva associació amb la Pièria, bressol del seu culte).
+
+  - id: "pan"
+    llati: "Pan"
+    traduccio: "Pan"
+    definicio: >
+      Déu arcadi dels pastors, els ramats i la natura salvatge. Inventor
+      de la flauta de Pan (σῦριγξ), feta de canyes. A l'Ègloga X, Pan
+      apareix amb el rostre pintat de baies de saüc per consolar Gal.
+      A l'Ègloga IV, ni Pan amb l'Arcàdia per jutge no podria vèncer el poeta.
+
+  - id: "phoebus"
+    llati: "Phoebus"
+    traduccio: "Febus"
+    definicio: >
+      Epítet d'Apol·lo (Φοῖβος, 'el resplendent'), déu de la poesia, la
+      música i la profecia. Patrona els poetes i els certàmens de cant.
+      A l'Ègloga VI, el Cinçi (Apol·lo del mont Cintos) adverteix Virgili
+      que un pastor ha de cantar cants humils, no èpoques guerres (la recusatio).
+
+  - id: "pierides"
+    llati: "Pierides"
+    traduccio: "Piérides"
+    definicio: >
+      Epítet de les Muses derivat de la Pièria, regió al nord de l'Olimp
+      on se situava el seu bressol. Virgili les invoca especialment als
+      moments de transició narrativa (Èglogues VI, VIII, X) per sol·licitar
+      inspiració o tancar el cant.
+
+  - id: "silenus"
+    llati: "Silenus"
+    traduccio: "Silè"
+    definicio: >
+      Semidéu acompanyant de Bacus, representat com un vell savi però
+      ebri. Protagonista de l'Ègloga VI, on dos nois i la nimfa Egle el
+      capturen perquè canti. El seu cant cosmogònic abasta des de la
+      creació del món fins als mites de Pasífae, Prometeu i Orfeu.
+
+  - id: "aegloga"
+    llati: "ecloga / aegloga"
+    traduccio: "ègloga"
+    definicio: >
+      Composició poètica de tema pastoral, normalment en forma de diàleg
+      entre pastors. Del grec ἐκλογή ('selecció, peça escollida'). Virgili
+      va escriure deu èglogues entre 42 i 39 aC, refundant el gènere
+      bucòlic de Teòcrit per a la literatura llatina.
+
+  - id: "gallus"
+    llati: "Gallus"
+    traduccio: "Gal"
+    definicio: >
+      Gai Corneli Gal (c. 70–26 aC), poeta elegíac romà i amic de Virgili.
+      Protagonista de l'Ègloga X, on pateix d'amor per Lícoris (nom poètic
+      de l'actriu Citèris). Virgili li dedica l'última ègloga com a homenatge
+      a la poesia elegíaca i a l'amistat.
+
+  - id: "pollio"
+    llati: "Pollio"
+    traduccio: "Pol·lió"
+    definicio: >
+      Gai Asini Pol·lió (76 aC – 4 dC), polític, orador i poeta romà,
+      protector de Virgili. Apareix a les Èglogues III, IV i VIII. L'Ègloga IV,
+      la cèlebre profecia del nen diví i l'edat d'or, s'adreça al seu consolat
+      (40 aC) com a inici d'una nova era.
+
+  - id: "amor"
+    llati: "Amor"
+    traduccio: "Amor"
+    definicio: >
+      Força divina personificada que domina pastors i poetes. Virgili el
+      presenta com una potència cruel i indomable ('omnia vincit Amor',
+      Ègloga X, 69). L'amor pastoral oscil·la entre l'idil·li i el
+      sofriment, i constitueix el motor dramàtic de la majoria d'èglogues.
+
+  - id: "carmen-amoebaeum"
+    llati: "carmen amoebaeum"
+    traduccio: "cant amebeu, cant a torns"
+    definicio: >
+      Forma poètica en què dos pastors alternen estrofes en competició,
+      responent-se mútuament amb versos paral·lels. Estructura central
+      de les Èglogues III, V i VII, heretada dels idil·lis de Teòcrit.
+      Un jutge (Palemó, Melibeu) sol determinar el vencedor.
+
+  - id: "nymphae"
+    llati: "Nymphae"
+    traduccio: "Nimfes"
+    definicio: >
+      Divinitats femenines menors associades a la natura: les Naíades
+      (fonts i rius), les Dríades (boscos), les Hamadríades (arbres).
+      A les Bucòliques habiten el paisatge pastoral, ploren la mort de
+      Dafnis i protegeixen els pastors. La seva presència sacralitza
+      l'espai natural.
