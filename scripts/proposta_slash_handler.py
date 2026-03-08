@@ -7,7 +7,7 @@ import json
 import sys
 import os
 from datetime import datetime
-from pathlib import Home
+from pathlib import Path
 
 PROJECT = Path.home() / "biblioteca-universal-arion"
 PROPOSTES_DIR = PROJECT / "propostes"
@@ -42,21 +42,22 @@ def crear_tasca(titol: str, idioma: str = "", usuari_id: str = "", usuari_nom: s
         json.dump(tasca, f, indent=2)
     
     # Afegir a la cua del worker
-    if TASK_QUEUE.exists():
-        try:
-            with open(TASK_QUEUE, "r+") as f:
+    try:
+        if TASK_QUEUE.exists():
+            with open(TASK_QUEUE, "r") as f:
                 try:
                     data = json.load(f)
                 except json.JSONDecodeError:
                     data = []
-                if not isinstance(data, list):
-                    data = []
-                data.append(tasca)
-                f.seek(0)
-                json.dump(data, f, indent=2)
-                f.truncate()
-        except Exception as e:
-            log(f"Error afegint a la cua: {e}")
+            if not isinstance(data, list):
+                data = []
+        else:
+            data = []
+        data.append(tasca)
+        with open(TASK_QUEUE, "w") as f:
+            json.dump(data, f, indent=2)
+    except Exception as e:
+        log(f"Error afegint a la cua: {e}")
     
     log(f"✅ Proposta creada: {titol} per {usuari_nom}")
     return task_id
@@ -86,7 +87,7 @@ if __name__ == "__main__":
     
     if not titol:
         print(json.dumps({
-            "content": "❌ Has d'especificar un títol!\nÚs: `/proposta titol: Nom de l\'obra idioma: idioma`"
+            "content": "❌ Has d'especificar un títol!\nÚs: `/proposta titol: Nom de l'obra idioma: idioma`"
         }))
         sys.exit(1)
     
