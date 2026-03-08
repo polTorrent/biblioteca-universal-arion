@@ -2,9 +2,11 @@
 """Descarrega els Analectes (Lúnyǔ) Llibres I-IV des de Wikisource xinès."""
 import json
 import re
+import urllib.error
 import urllib.request
 import urllib.parse
 import sys
+from pathlib import Path
 
 BOOKS = {
     "學而第一": "Llibre I · Xué ér (Aprendre)",
@@ -28,10 +30,14 @@ def fetch_book(book_name: str) -> str:
         })
     )
     req = urllib.request.Request(url, headers={"User-Agent": "BibliotecaArion/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        data = json.loads(resp.read().decode("utf-8"))
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
+        print(f"ERROR xarxa descarregant {book_name}: {e}", file=sys.stderr)
+        return ""
 
-    pages = data["query"]["pages"]
+    pages = data.get("query", {}).get("pages", {})
     for pid, page in pages.items():
         if pid == "-1":
             return ""
@@ -42,13 +48,13 @@ def fetch_book(book_name: str) -> str:
         content = re.sub(r"'{2,}", '', content)
         content = re.sub(r'<[^>]+/?>', '', content)
         content = re.sub(r'==+\s*[^=]+\s*=+', '', content)
-        lines = [l.strip() for l in content.split('\n') if l.strip()]
+        lines = [line.strip() for line in content.split('\n') if line.strip()]
         return '\n\n'.join(lines)
     return ""
 
 
-def main():
-    output_dir = sys.argv[1] if len(sys.argv) > 1 else "."
+def main() -> None:
+    output_dir = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
 
     parts = []
     parts.append("# 論語 · Lúnyǔ — Analectes")
@@ -76,7 +82,8 @@ def main():
         parts.append("---")
         parts.append("")
 
-    output_path = f"{output_dir}/original.md"
+    output_path = output_dir / "original.md"
+    output_dir.mkdir(parents=True, exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
         f.write('\n'.join(parts))
 
