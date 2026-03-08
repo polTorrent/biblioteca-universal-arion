@@ -21,8 +21,8 @@ def fetch_url(url: str, timeout: int = 30) -> str | None:
     """Fetch a URL and return the HTML content."""
     try:
         req = urllib.request.Request(url, headers=HEADERS)
-        resp = urllib.request.urlopen(req, timeout=timeout)  # noqa: S310
-        return resp.read().decode("utf-8", errors="replace")
+        with urllib.request.urlopen(req, timeout=timeout) as resp:  # noqa: S310
+            return resp.read().decode("utf-8", errors="replace")
     except (urllib.error.URLError, TimeoutError, OSError) as e:
         print(f"  ERROR fetching {url}: {e}")
         return None
