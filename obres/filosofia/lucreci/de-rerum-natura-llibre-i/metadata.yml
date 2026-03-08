@@ -1,0 +1,26 @@
+obra:
+  titol: "De Rerum Natura — Llibre I"
+  titol_original: "De Rerum Natura — Liber Primus"
+  autor: "Lucreci"
+  autor_original: "Titus Lucretius Carus"
+  traductor: "Biblioteca Arion"
+  any_original: "c. 55 aC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  genere: "filosofia"
+  descripcio: >
+    Primer llibre del poema filosòfic epicuri «De la natura de les coses».
+    Lucreci exposa els principis fonamentals de la física atomista: res no sorgeix
+    del no-res, res no es destrueix completament, la matèria es compon d'àtoms
+    invisibles i buit. Dedicat a Memmi, s'obre amb un himne a Venus com a força
+    generatriu de la natura i inclou l'elogi d'Epicur.
+seccions: 1
+estadistiques:
+  versos_original: 1117
+  paraules_original: ~7500
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
