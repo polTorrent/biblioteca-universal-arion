@@ -2,8 +2,9 @@
 """Fetch 10 selected novellas from Boccaccio's Decameron from Italian Wikisource."""
 
 import json
-import urllib.request
+import urllib.error
 import urllib.parse
+import urllib.request
 import re
 import sys
 import time
@@ -26,7 +27,7 @@ NOVELLAS = [
     ("Decameron/Giornata decima/Novella decima", "Giornata X, Novella 10 - Griselda"),
 ]
 
-def fetch_page(title):
+def fetch_page(title: str) -> str | None:
     """Fetch wikitext of a page from Italian Wikisource."""
     params = urllib.parse.urlencode({
         "action": "query",
@@ -38,8 +39,12 @@ def fetch_page(title):
     })
     url = f"{BASE}?{params}"
     req = urllib.request.Request(url, headers=HEADERS)
-    resp = urllib.request.urlopen(req, timeout=30)
-    data = json.loads(resp.read())
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            data = json.loads(resp.read())
+    except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as e:
+        print(f"  ERROR xarxa: {e}")
+        return None
     pages = data.get("query", {}).get("pages", {})
     for pid, page in pages.items():
         if pid == "-1":
@@ -50,7 +55,7 @@ def fetch_page(title):
     return None
 
 
-def clean_wikitext(text):
+def clean_wikitext(text: str) -> str:
     """Basic cleanup of wikitext to plain text."""
     if not text:
         return ""
@@ -75,11 +80,11 @@ def clean_wikitext(text):
     return text.strip()
 
 
-def main():
+def main() -> None:
     output_dir = Path("/home/jo/biblioteca-universal-arion/obres/narrativa/boccaccio/decamero-seleccio-10-contes")
     output_dir.mkdir(parents=True, exist_ok=True)
 
-    all_text = []
+    all_text: list[str] = []
     all_text.append("# Decameron — Selecció de 10 contes\n")
     all_text.append("## Giovanni Boccaccio\n")
     all_text.append("*Text original en italià (segle XIV)*\n")
@@ -100,13 +105,11 @@ def main():
                 print(f"  OK ({len(cleaned)} chars)")
             else:
                 print(f"  WARN: text massa curt ({len(cleaned)} chars)")
-                # Try alternative page names
         else:
             print(f"  WARN: pàgina no trobada")
         time.sleep(1)  # Be polite
 
     if success_count == 0:
-        # Try alternative page structure
         print("\nProvant estructura alternativa...")
         alt_novellas = [
             ("Decameron/Giornata_prima/Novella_prima", "Giornata I, Novella 1"),
@@ -116,8 +119,16 @@ def main():
             print(f"  Provant: {page_title}")
             wikitext = fetch_page(page_title)
             if wikitext:
-                print(f"  TROBAT! ({len(wikitext)} chars)")
-                break
+                cleaned = clean_wikitext(wikitext)
+                if len(cleaned) > 100:
+                    all_text.append(f"\n## {desc}\n")
+                    all_text.append(f"*({page_title})*\n\n")
+                    all_text.append(cleaned)
+                    all_text.append("\n\n---\n")
+                    success_count += 1
+                    print(f"  TROBAT! ({len(cleaned)} chars)")
+                    break
+                print(f"  WARN: text massa curt ({len(cleaned)} chars)")
             time.sleep(1)
 
     if success_count > 0:
