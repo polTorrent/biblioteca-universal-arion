@@ -118,19 +118,6 @@ def _xml_declaration() -> bytes:
     return b'<?xml version="1.0" encoding="UTF-8"?>\n'
 
 
-def _serialize(element: Element, ns_map: dict[str, str] | None = None) -> bytes:
-    """Serialitza un Element a bytes amb declaració XML."""
-    # Registrar namespaces
-    if ns_map:
-        for prefix, uri in ns_map.items():
-            if prefix:
-                element.set(f"xmlns:{prefix}", uri)
-            else:
-                element.set("xmlns", uri)
-    raw = tostring(element, encoding="unicode", xml_declaration=False)
-    return _xml_declaration() + raw.encode("utf-8")
-
-
 # ─── Classe principal ─────────────────────────────────────────────────────────
 
 class GeneradorEPUB:
@@ -222,7 +209,7 @@ class GeneradorEPUB:
         if any_orig:
             cos += f'<p style="text-align:center;color:#999;margin-top:0.5em">{_esc(any_orig)}</p>\n'
         cos += '<div class="editorial-portada">Biblioteca Universal Arion</div>\n'
-        cos += f'<p style="text-align:center;font-size:0.8em;color:#aaa;margin-top:1em">Traducció al català · {datetime.now().year}</p>\n'
+        cos += f'<p style="text-align:center;font-size:0.8em;color:#aaa;margin-top:1em">Traducció al català · {datetime.now(tz=timezone.utc).year}</p>\n'
         return self._xhtml_document(titol, cos)
 
     def _generar_traduccio_xhtml(self, text: str) -> str:
@@ -265,7 +252,7 @@ class GeneradorEPUB:
             f"<h2>Colofó</h2>\n"
             f"<p><em>{_esc(titol)}</em> de {_esc(autor)}</p>\n"
             f"<p>Traducció al català: {_esc(traductor)}</p>\n"
-            f"<p>Biblioteca Universal Arion · {datetime.now().year}</p>\n"
+            f"<p>Biblioteca Universal Arion · {datetime.now(tz=timezone.utc).year}</p>\n"
             "<p>Llicència: CC BY-SA 4.0</p>\n"
             "<p>Aquesta traducció és lliure. Podeu copiar-la, distribuir-la "
             "i adaptar-la sempre que n'indiqueu l'autoria.</p>\n"
