@@ -1,0 +1,24 @@
+obra:
+  titol: "Analectes (Lúnyǔ) — selecció: Llibres I-IV"
+  titol_original: "論語 (選：學而、為政、八佾、里仁)"
+  autor: "Confuci"
+  autor_original: "孔子 (Kǒngzǐ)"
+  traductor: "Biblioteca Universal Arion"
+  any_original: "c. 475–221 aC (Període dels Regnes Combatents)"
+  any_traduccio: 2026
+  llengua_original: "xinès clàssic"
+  descripcio: >
+    Selecció dels quatre primers llibres dels Analectes (論語, Lúnyǔ),
+    la compilació dels ensenyaments de Confuci recollits pels seus deixebles.
+    Inclou temes fonamentals com l'aprenentatge, el govern, els ritus
+    i la benevolència (仁, rén).
+seccions: 4
+estadistiques:
+  paraules_original: 3089
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
