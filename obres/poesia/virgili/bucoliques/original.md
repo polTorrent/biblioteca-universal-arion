@@ -1,7 +1,3 @@
-# Bucòliques (Eclogae)
-
-**Publius Vergilius Maro**
-
 Text llatí original (domini públic). Font: The Latin Library.
 
 ---
