@@ -1,4 +1,3 @@
-# The Birth of the War-God: A Poem by Kálidása
 **Autor:** desconegut
 **Font:** [gutenberg](https://www.gutenberg.org/ebooks/31968)
 **Llengua:** núvol
