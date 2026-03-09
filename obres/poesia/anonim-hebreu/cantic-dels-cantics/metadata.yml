@@ -1,0 +1,27 @@
+obra:
+  titol: "Càntic dels Càntics"
+  titol_original: "שיר השירים (Šīr haššīrīm)"
+  autor: "Anònim (tradició hebrea)"
+  autor_original: "אנונימי (מסורת עברית)"
+  traductor: "Editorial Clàssica"
+  any_original: "c. s. IV-III aC"
+  any_traduccio: 2026
+  llengua_original: "hebreu"
+  descripcio: >
+    Poema d'amor líric del cànon bíblic hebreu, atribuït tradicionalment
+    al rei Salomó. Celebra l'amor eròtic entre dos amants amb rica
+    imagineria pastoral i sensual. Considerat al·legoria mística tant
+    en la tradició jueva com cristiana. Un dels textos poètics més
+    bells i influents de la literatura universal.
+  categoria: "poesia"
+  font: "Sefaria.org — Miqra According to the Masorah (CC BY-SA)"
+seccions: 8
+estadistiques:
+  paraules_original: 1342
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: ""

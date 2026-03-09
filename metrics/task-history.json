@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1772926232.0625565,
-        "result": "created"
-      },
-      {
         "timestamp": 1772928125.1219983,
         "result": "created"
       },
@@ -1299,6 +1295,10 @@
       {
         "timestamp": 1773018328.7701662,
         "result": "created"
+      },
+      {
+        "timestamp": 1773018508.7644014,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1318,18 +1318,6 @@
   },
   "translate_cd-biblioteca-universal-arion--python3-scriptstraduir_p": {
     "events": [
-      {
-        "timestamp": 1772845203.0571363,
-        "result": "created"
-      },
-      {
-        "timestamp": 1772895602.6047695,
-        "result": "created"
-      },
-      {
-        "timestamp": 1772908530.287428,
-        "result": "created"
-      },
       {
         "timestamp": 1772910003.3378263,
         "result": "created"
@@ -1396,6 +1384,18 @@
       },
       {
         "timestamp": 1773001417.0061684,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773018508.5971437,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773018558.9517596,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773018607.8643622,
         "result": "created"
       }
     ],
@@ -2127,6 +2127,15 @@
     "events": [
       {
         "timestamp": 1773009144.3970377,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_shir_hashirimpy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1773018620.7617645,
         "result": "created"
       }
     ],
