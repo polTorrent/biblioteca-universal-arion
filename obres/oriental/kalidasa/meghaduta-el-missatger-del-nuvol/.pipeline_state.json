@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-08T04:23:03.595156",
-    "ultima_activitat": "2026-03-08T17:28:40.097856"
+    "ultima_activitat": "2026-03-09T01:00:36.927161"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -96,8 +96,8 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 1.05,
-    "temps_total_min": 11.07
+    "qualitat_mitjana": 1.03,
+    "temps_total_min": 2.14
   },
   "errors": [
     "[04:25:33] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
@@ -384,7 +384,18 @@
     "[17:28:39] Error chunk 38: [Errno 32] Broken pipe",
     "[17:28:40] Error chunk 63: [Errno 32] Broken pipe",
     "[17:28:40] Error chunk 69: [Errno 32] Broken pipe",
-    "[17:28:40] Error fatal: [Errno 32] Broken pipe"
+    "[17:28:40] Error fatal: [Errno 32] Broken pipe",
+    "[23:57:00] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:57:43] Error chunk 38: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:01:30] Error chunk 69: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:05:14] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:07:00] Error chunk 38: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:08:11] Error chunk 69: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:28:16] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:33:09] Error chunk 69: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:36:05] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:59:19] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[01:00:36] Error chunk 69: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": []
 }
