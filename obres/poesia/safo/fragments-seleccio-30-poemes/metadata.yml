@@ -1,0 +1,20 @@
+obra:
+  titol: "Fragments (selecció: 30 poemes i fragments)"
+  titol_original: "Ἀποσπάσματα"
+  autor: "Safo"
+  autor_original: "Σαπφώ"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 630–570 aC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  descripcio: "Selecció de 30 fragments i poemes de Safo de Lesbos, la poeta lírica grega per excel·lència. Inclou l'Himne a Afrodita (fr. 1), el cèlebre fragment 31 (Φαίνεταί μοι), poemes nupcials (epitalamis), fragments amorosos i el poema de la mitjanit (fr. 168B). Text segons l'edició Lobel-Page / Voigt."
+seccions: 30
+estadistiques:
+  paraules_original: 980
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
