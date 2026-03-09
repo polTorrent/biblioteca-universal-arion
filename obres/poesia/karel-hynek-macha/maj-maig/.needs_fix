@@ -1,0 +1,23 @@
+data: 2026-03-09
+puntuacio: 3/10
+revisor: Claude (supervisió automàtica)
+
+problemes_critics:
+  - "Traducció incompleta: només ~15-20% de l'original traduït (218 línies de ~1077)"
+  - "Falten seccions senceres: Intermezzo I, Intermezzo II, Cant quart"
+  - "Cant primer, Cant segon i Cant tercer estan molt incomplerts"
+  - "5 marcadors d'error del CLI dins la traducció: [ERROR: El CLI ha retornat una resposta buida (sense contingut)]"
+
+problemes_linguistics:
+  - "L.28: 'Que es comiat de la victòria' → 'Que s'acomiadi de la victòria'"
+  - "L.85: 's'empal·la els ulls' → paraula inexistent; usar 'es tapa els ulls' o 'es cobreix els ulls'"
+
+problemes_metadata:
+  - "metadata.yml: seccions 'estadistiques' duplicades amb dades contradictòries (1302 vs 6582 paraules)"
+  - "Les puntuacions del pipeline (0.0 en totes les dimensions) confirmen la fallada"
+
+accions_requerides:
+  - "Retraduir l'obra COMPLETA: els 4 cants i els 2 intermezzi"
+  - "Eliminar tots els marcadors [ERROR] de traduccio.md"
+  - "Corregir errors lingüístics en els fragments existents"
+  - "Unificar i corregir metadata.yml (eliminar duplicats)"
