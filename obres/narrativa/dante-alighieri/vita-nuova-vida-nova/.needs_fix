@@ -1,0 +1,20 @@
+DATA: 2026-03-09
+PUNTUACIÓ: 1/10
+REVISIÓ: Supervisió de qualitat
+
+PROBLEMES CRÍTICS:
+1. TRADUCCIÓ FALLIDA: El fitxer traduccio.md conté ~40 missatges d'error del CLI ("out of extra usage") i només 3 petits fragments traduïts. La traducció no s'ha completat.
+2. COBERTURA: Menys de l'1% de l'obra original traduïda. La Vita Nuova té 42 capítols; només hi ha uns paràgrafs solts.
+3. SENSE ESTRUCTURA: No hi ha divisió en capítols, seccions ni numeració.
+4. SENSE GLOSSARI: No existeix glossari.yml (termes com "dolce stil novo", "gentilissima", "salutazione", "spiriti" requereixen glossari).
+5. SENSE NOTES: No existeix notes.md.
+6. METADATA MALFORMAT: Dues seccions 'estadistiques' duplicades i contradictòries al metadata.yml. Totes les puntuacions a 0.0.
+7. FITXERS TEMPORALS: extract_text.py i vita_nuova_raw.txt no haurien de ser al directori de l'obra.
+
+ACCIONS NECESSÀRIES:
+- Refer completament la traducció dels 42 capítols de la Vita Nuova.
+- Netejar els missatges d'error del traduccio.md.
+- Crear glossari.yml amb terminologia del dolce stil novo.
+- Crear notes.md amb context sobre l'obra.
+- Corregir metadata.yml (eliminar duplicats, actualitzar estadístiques).
+- Moure o eliminar fitxers temporals (extract_text.py, vita_nuova_raw.txt).

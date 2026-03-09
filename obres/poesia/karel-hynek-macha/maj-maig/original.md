@@ -1,4 +1,3 @@
-# Maj
 **Autor:** Karel Hynek Macha
 **Font:** [Wikisource (cs)](https://cs.wikisource.org/wiki/M%C3%A1j_(M%C3%A1cha))
 **Llengua:** txec

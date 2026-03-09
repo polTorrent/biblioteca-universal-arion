@@ -1,0 +1,39 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Karel Hynek Mácha (16 de novembre de 1810 - 6 de novembre de 1836), Praga, Bohèmia (actual República Txeca). Poeta romàntic txec considerat el fundador de la poesia txeca moderna. Va morir prematurament als 26 anys, poc després de la publicació de la seva obra mestra 'Máj'. Va estudiar dret a la Universitat de Praga i va treballar breument com a funcionari judicial.",
+    "context_historic": "Renaixement Nacional Txec (Národní obrození), moviment cultural i polític de revitalització de la identitat txeca sota l'Imperi Austríac. Època del Romanticisme europeu, amb influència de Byron, Goethe i altres poetes romàntics.",
+    "context_obra": "Máj (1835-1836 (publicada pòstumament el 1836)) - Poema èpic romàntic. Dedicada a Hynek Komm, burgès de Praga i patriota txec. Escrita durant els estudis universitaris de Mácha, inspirada pels seus viatges per Bohèmia i la seva fascinació per la natura i el folklore txec.",
+    "influencies": [
+      "Lord Byron",
+      "Johann Wolfgang von Goethe",
+      "Adam Mickiewicz",
+      "Romanticisme alemany",
+      "Poesia popular eslava"
+    ],
+    "temes_principals": [
+      "L'amor tràgic i la passió",
+      "La natura com a espai de reflexió",
+      "La mort i la redempció",
+      "El conflicte entre el bé i el mal",
+      "La justícia i el perdó"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Vilém (protagonista)",
+    "[H] Personatge històric: Jarmila (estimada de Vilém)",
+    "[H] Personatge històric: El pare de Jarmila",
+    "[H] Personatge històric: Hynek Komm (dedicatari)",
+    "[C] Referència cultural: Paisatges de Bohèmia",
+    "[C] Referència cultural: Costums i tradicions txeques del segle XIX",
+    "[C] Referència cultural: Folklore eslau",
+    "[C] Referència cultural: Tradicions judicials de l'època",
+    "[C] Referència cultural: Mitologia eslava",
+    "[T] Terme tècnic: Romanticisme txec",
+    "[T] Terme tècnic: Renaixement Nacional",
+    "[T] Terme tècnic: Métrica txeca tradicional",
+    "[T] Terme tècnic: Dialectes bohemis"
+  ]
+}
