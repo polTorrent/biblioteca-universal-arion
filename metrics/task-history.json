@@ -254,10 +254,6 @@
   "fix_": {
     "events": [
       {
-        "timestamp": 1772126411.367177,
-        "result": "created"
-      },
-      {
         "timestamp": 1772162411.8765602,
         "result": "created"
       },
@@ -331,6 +327,10 @@
       },
       {
         "timestamp": 1773001261.8460457,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773054002.782892,
         "result": "created"
       }
     ],
@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772930219.8565798,
-        "result": "created"
-      },
-      {
         "timestamp": 1772934073.3947616,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773046803.4850054,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773054003.8126836,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1772938803.331916,
-        "result": "created"
-      },
-      {
         "timestamp": 1772941475.8169487,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773046802.9903476,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773054003.3933518,
         "result": "created"
       }
     ],
@@ -2163,6 +2163,24 @@
     "events": [
       {
         "timestamp": 1773046802.6261542,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_maj-maig": {
+    "events": [
+      {
+        "timestamp": 1773054003.1863635,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_rabindranath-tagore_gitanjali-seleccio-30-poemes": {
+    "events": [
+      {
+        "timestamp": 1773054018.9174352,
         "result": "created"
       }
     ],

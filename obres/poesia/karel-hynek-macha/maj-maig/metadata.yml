@@ -12,7 +12,7 @@ obra:
     txec, narra la tràgica història de Vilém, bandoler que mata el seu propi pare
     sense saber-ho, i de Jarmila, la seva estimada.
   estadistiques:
-    paraules_traduccio: 911
+    paraules_traduccio: 1302
 seccions: 6
 estadistiques:
   paraules_original: 5118
@@ -21,10 +21,10 @@ estadistiques:
   termes_glossari: 18
 revisio:
   estat: revisat
-  qualitat: 0.0
+  qualitat: 5.0
   data_revisio: '2026-03-09'
 avaluacio_final:
-  data: '2026-03-09T11:34:38.211529'
+  data: '2026-03-09T11:53:27.286331'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
