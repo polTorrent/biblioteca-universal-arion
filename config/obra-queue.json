@@ -571,7 +571,7 @@
         "latin-library",
         "perseus"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
       "notes": "Consell Editorial 2026-03-08. La gran sàtira romana, gènere completament absent del catàleg. Petroni (†66 dC, contemporani de Sèneca i Neró) és l'autor del Satyricon, la primera novel·la picaresca de la literatura occidental. La Cena Trimalchionis (Satyricon 26.7–78.8) és l'episodi més cèlebre i autònom: el banquet grotesc d'un llibert nou-ric, amb plats extravagants, discursos ridículs, testament en vida i una comicitat corrosiva que retrata la societat romana imperial. Prosa llatina col·loquial única (sermo vulgaris), document lingüístic inestimable del llatí parlat. Complementa la narrativa llatina d'Apuleu amb un to radicalment diferent. Cap traducció catalana en edició bilingüe. Text llatí a The Latin Library i Perseus."
     },
@@ -616,7 +616,7 @@
         "wikisource",
         "gutenberg"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/poesia/rabindranath-tagore/gitanjali-seleccio-30-poemes",
       "notes": "Consell Editorial 2026-03-09. Afegeix el bengalí com a nova llengua al catàleg, obrint la biblioteca a la tradició literària de l'Índia moderna. Tagore (†1941), Premi Nobel de Literatura 1913, és el poeta més important de l'Índia i una de les grans veus de la lírica mundial del segle XX. Gitanjali ('Ofrena de cançons', 1910) és el recull que li valgué el Nobel: 157 poemes en prosa d'una espiritualitat transparent, diàleg entre l'ànima i el diví ple de llum, natura i anhel. Selecció dels 30 poemes més representatius. Tagore escrigué originalment en bengalí i després en autotraduí una selecció a l'anglès (1912). Traducció directa del bengalí. Cap traducció catalana. Text bengalí a Wikisource bengalí; versió anglesa a Project Gutenberg."
     },
