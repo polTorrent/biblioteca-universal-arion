@@ -1,22 +1,22 @@
-avaluacio_final:
-  data: '2026-03-09T14:10:12.288370'
-  puntuacions:
-    fidelitat: 1.0
-    veu_autor: 1.0
-    fluidesa: 2.0
-    correccio_linguistica: 3.0
-    coherencia: 1.0
-    global: 1.5
-  total_errors: 5
-  errors_critics: 3
-  errors_alts: 1
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 1
 obra:
-  estadistiques: {}
+  titol: Cena Trimalchionis (El banquet de Trimalció)
+  titol_original: Cena Trimalchionis (Satyricon XXVII-LIII)
+  autor: Petroni
+  autor_original: Petronius Arbiter
+  traductor: Biblioteca Arion
+  any_original: c. 60 dC
+  any_traduccio: 2026
+  llengua_original: llatí
+  descripcio: 'El banquet de Trimalció, episodi central del Satyricon de Petroni:
+    sàtira magistral d''un sopar opulent ofert per un llibert enriquit, amb retrat
+    viu de la societat romana imperial.'
+  seccions: 27
+  estadistiques:
+    paraules_original: 6500
+    paraules_traduccio: 8130
+    notes: 12
+    termes_glossari: 28
 revisio:
   estat: revisat
+  qualitat: 8.0
   data_revisio: '2026-03-09'
-  qualitat: 0.0
