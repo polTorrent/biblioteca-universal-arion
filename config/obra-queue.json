@@ -483,7 +483,7 @@
         "gutenberg",
         "archive.org"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/assaig/rilke/cartes-a-un-jove-poeta",
       "notes": "Consell Editorial 2026-03-07. Obre l'alemany a la categoria assaig, fins ara sense cap obra en aquesta llengua. 10 cartes (1903-1908) adreçades al cadet Franz Xaver Kappus: meditacions sobre la creativitat, la solitud, l'amor, la paciència i la vida interior que han esdevingut un dels textos més llegits del segle XX. Rilke (†1926), poeta fonamental del modernisme europeu en llengua alemanya, amb una prosa epistolar d'una intensitat lírica excepcional. Domini públic (>70 anys). Cap traducció catalana recent en edició bilingüe. Text alemany a Project Gutenberg i Archive.org."
     },
@@ -589,6 +589,51 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/pu-songling/liaozhai-zhiyi-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-08. Diversifica el xinès de filosofia i poesia cap a la narrativa, gènere completament absent per a aquesta llengua al catàleg. Pu Songling (†1715), erudit fracassat als exàmens imperials, escriu durant 40 anys la col·lecció més cèlebre de contes fantàstics de la literatura xinesa: 491 relats de fantasmes, esperits guineu (húlí jīng 狐狸精), dimonis, scholars enamorats i justícia sobrenatural. Prosa clàssica (wenyan) d'una elegància i una inventiva narrativa extraordinàries, comparable als contes de Hoffmann o Poe. Selecció recomanada: 聂小倩 (Nie Xiaoqian), 画皮 (La pell pintada), 婴宁 (Yingning), 阿宝 (A Bao), 促织 (El grill), 席方平 (Xi Fangping), 田七郎 (Tian Qilang), 连城 (Liancheng), 黄英 (Huang Ying), 王六郎 (Wang Liulang). Cap traducció catalana. Text xinès clàssic a CText.org i Wikisource xinesa."
+    },
+    {
+      "autor": "Ovidi",
+      "titol": "Metamorfosis (selecció: 5 mites)",
+      "llengua": "llatí",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/ovidi/metamorfosis-seleccio-5-mites",
+      "notes": "Consell Editorial 2026-03-09. L'absència més cridanera del catàleg llatí: Ovidi (†17/18 dC) és el poeta narratiu romà per excel·lència, autor de l'obra mitològica més influent de la literatura occidental. Selecció de 5 mites fonamentals: Dafne i Apol·lo (I.452-567), Narcís i Eco (III.339-510), Orfeu i Eurídice (X.1-85, XI.1-66), Pigmalió (X.243-297), Dèdal i Ícar (VIII.183-235). Hexàmetres d'una fluïdesa i elegància incomparables, amb transicions narratives que fonen un mite en l'altre. Complement essencial a Virgili i Horaci al catàleg llatí. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Rabindranath Tagore",
+      "titol": "Gitanjali (selecció: 30 poemes)",
+      "llengua": "bengalí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/rabindranath-tagore/gitanjali-seleccio-30-poemes",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el bengalí com a nova llengua al catàleg, obrint la biblioteca a la tradició literària de l'Índia moderna. Tagore (†1941), Premi Nobel de Literatura 1913, és el poeta més important de l'Índia i una de les grans veus de la lírica mundial del segle XX. Gitanjali ('Ofrena de cançons', 1910) és el recull que li valgué el Nobel: 157 poemes en prosa d'una espiritualitat transparent, diàleg entre l'ànima i el diví ple de llum, natura i anhel. Selecció dels 30 poemes més representatius. Tagore escrigué originalment en bengalí i després en autotraduí una selecció a l'anglès (1912). Traducció directa del bengalí. Cap traducció catalana. Text bengalí a Wikisource bengalí; versió anglesa a Project Gutenberg."
+    },
+    {
+      "autor": "Thiruvalluvar",
+      "titol": "Tirukkuṛaḷ (selecció: 100 kural)",
+      "llengua": "tàmil",
+      "categoria": "oriental",
+      "dificultat": 5,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "project-madurai"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/thiruvalluvar/tirukkural-seleccio-100-kural",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el tàmil com a nova llengua al catàleg, obrint la biblioteca a la tradició literària dravídica de l'Índia del sud. El Tirukkuṛaḷ (c. s. I aC – s. V dC) és l'obra mestra de la literatura tàmil clàssica i un dels textos ètics més universals de la humanitat: 1.330 dístics (kural) organitzats en tres llibres — Virtut (Aram), Riquesa/Política (Porul) i Amor (Inbam). Thiruvalluvar és venerat com el poeta ètic suprem del món tàmil; el text és secular, sense adscripció religiosa, amb una saviesa pràctica comparable als Analectes de Confuci o les Màximes de La Rochefoucauld. Selecció de 100 kural dels tres llibres. Cap traducció catalana. Text tàmil a Wikisource tàmil i Project Madurai."
     }
   ]
 }
