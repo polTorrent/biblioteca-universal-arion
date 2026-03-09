@@ -634,6 +634,51 @@
       "status": "pending",
       "obra_dir": "obres/oriental/thiruvalluvar/tirukkural-seleccio-100-kural",
       "notes": "Consell Editorial 2026-03-09. Afegeix el tàmil com a nova llengua al catàleg, obrint la biblioteca a la tradició literària dravídica de l'Índia del sud. El Tirukkuṛaḷ (c. s. I aC – s. V dC) és l'obra mestra de la literatura tàmil clàssica i un dels textos ètics més universals de la humanitat: 1.330 dístics (kural) organitzats en tres llibres — Virtut (Aram), Riquesa/Política (Porul) i Amor (Inbam). Thiruvalluvar és venerat com el poeta ètic suprem del món tàmil; el text és secular, sense adscripció religiosa, amb una saviesa pràctica comparable als Analectes de Confuci o les Màximes de La Rochefoucauld. Selecció de 100 kural dels tres llibres. Cap traducció catalana. Text tàmil a Wikisource tàmil i Project Madurai."
+    },
+    {
+      "autor": "Catul",
+      "titol": "Carmina (selecció: 25 poemes)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/catul/carmina-seleccio-25-poemes",
+      "notes": "Consell Editorial 2026-03-09. El gran líric romà de la passió, absent del catàleg. Catul (†c. 54 aC) és el poeta més intensament personal de Roma: els seus carmina — breus, ferotges, tendres — inventen la lírica amorosa occidental. Selecció recomanada: 1 (dedica), 2-3 (el pardal de Lèsbia), 5 (vivamus atque amemus), 7, 8, 11, 13, 31, 46, 51 (traducció de Safo), 64 (epili de Peleu i Tetis, fragment), 70, 72, 75, 76, 83, 85 (odi et amo), 87, 92, 96, 101 (ave atque vale), 109. Contrapunt essencial a l'Horaci olímpic i el Virgili pastoral: allà on ells busquen la perfecció formal i la grandesa, Catul desplega una veu nua, directa, violentament emotiva. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Aristòfanes",
+      "titol": "Els núvols (Νεφέλαι)",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/aristofanes/els-nuvols",
+      "notes": "Consell Editorial 2026-03-09. La comèdia és completament absent del catàleg teatral (Antígona, Medea, Fröken Julie, Casa de nines — tot tragèdia o drama). Aristòfanes (†c. 386 aC) és el mestre indiscutible de la comèdia antiga i l'únic comedògraf grec del qual conservem obres completes. Els núvols (423 aC) satiritzen Sòcrates com a sofista corruptor de la joventut: Estrepsíades, un pagès endeutat, envia el seu fill al 'Pensador' de Sòcrates per aprendre a guanyar qualsevol argument, amb resultats desastrosos. Comèdia intel·lectual que parodia la filosofia, la retòrica i l'educació atenesa, amb una comicitat física i verbal d'una inventiva delirant. Font primària per a la recepció de Sòcrates (anterior a Plató). Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Henderson) i Wikisource grega."
+    },
+    {
+      "autor": "Rumi",
+      "titol": "Masnavi (selecció: 10 contes)",
+      "llengua": "persa",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "wikisource",
+        "ganjoor"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/rumi/masnavi-seleccio-10-contes",
+      "notes": "Consell Editorial 2026-03-09. Complement essencial a Omar Khayyam: si les Rubaiyat expressen l'escepticisme hedonista, el Masnavi de Rumi és la veu mística sufí, 'el Corà en persa' segons Jāmī. Jalāl al-Dīn Rūmī (†1273), poeta i místic de Konya, és l'autor més llegit del món islàmic i un dels poetes més traduïts de la història. El Masnavi-ye Ma'navi (c. 1258-1273) conté 25.000 dístics organitzats en 6 llibres: contes, paràboles i al·legories que il·luminen la cerca de Déu, l'amor diví i la transformació interior. Selecció de 10 contes representatius: la flauta de canya (proemi), el lloro i el mercader, l'elefant a les fosques, Moisès i el pastor, el lleó i la llebre, la ciutat dels cecs, l'home que trucava a la porta de Déu, el jardiner i les tres fruites, el gramàtic i el barquer, la llàntia i l'oli. Cap traducció catalana directa del persa. Text persa a Wikisource persa i Ganjoor.net."
     }
   ]
 }
