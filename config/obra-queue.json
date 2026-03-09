@@ -541,7 +541,7 @@
       "fonts": [
         "wikisource"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/poesia/karel-hynek-macha/maj-maig",
       "notes": "Consell Editorial 2026-03-08. Afegeix el txec com a nova llengua al catàleg, obrint la biblioteca a la tradició literària eslava central. Máj (1836) és el poema fundacional de la literatura txeca moderna: 4 cants i 2 intermezzi que narren la tragèdia de Vilém, bandoler que mata sense saber-ho el seu pare i és executat, en un paisatge de maig d'una bellesa exuberant que contrasta amb la violència i la mort. Mácha (†1836, als 25 anys) és el poeta romàntic txec per excel·lència, redescobert pel modernisme i les avantguardes del s. XX. Poema d'una musicalitat i una riquesa visual extraordinàries, comparable al Màj de Byron o al Lenore de Bürger. Cap traducció catalana. Text txec a Wikisource txeca."
     },
@@ -556,7 +556,7 @@
         "perseus",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/poesia/safo/fragments-seleccio-30-poemes",
       "notes": "Consell Editorial 2026-03-08. Primera gran veu femenina de la lírica occidental i absència clamorosa del catàleg. Safo de Lesbos (†c. 570 aC), la 'desena Musa' segons Plató, és la poeta més important de l'Antiguitat grega. Dels nou llibres originals sobreviuen fragments d'una intensitat lírica incomparable: l'himne a Afrodita (fr. 1), l'oda a l'estimada (fr. 31, φαίνεταί μοι), el fragment de la poma (fr. 105a), i desenes de textos sobre el desig, la bellesa i la pèrdua. Selecció dels 30 fragments més substancials i traduïbles. Diversifica la poesia grega (dominada per veus masculines al catàleg). Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Campbell/Voigt) i Wikisource grega."
     },
@@ -679,6 +679,50 @@
       "status": "pending",
       "obra_dir": "obres/oriental/rumi/masnavi-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-09. Complement essencial a Omar Khayyam: si les Rubaiyat expressen l'escepticisme hedonista, el Masnavi de Rumi és la veu mística sufí, 'el Corà en persa' segons Jāmī. Jalāl al-Dīn Rūmī (†1273), poeta i místic de Konya, és l'autor més llegit del món islàmic i un dels poetes més traduïts de la història. El Masnavi-ye Ma'navi (c. 1258-1273) conté 25.000 dístics organitzats en 6 llibres: contes, paràboles i al·legories que il·luminen la cerca de Déu, l'amor diví i la transformació interior. Selecció de 10 contes representatius: la flauta de canya (proemi), el lloro i el mercader, l'elefant a les fosques, Moisès i el pastor, el lleó i la llebre, la ciutat dels cecs, l'home que trucava a la porta de Déu, el jardiner i les tres fruites, el gramàtic i el barquer, la llàntia i l'oli. Cap traducció catalana directa del persa. Text persa a Wikisource persa i Ganjoor.net."
+    },
+    {
+      "autor": "Yunus Emre",
+      "titol": "Selecció de 25 poemes",
+      "llengua": "turc",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 2500,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/yunus-emre/seleccio-25-poemes",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el turc com a nova llengua al catàleg, obrint la biblioteca a la tradició literària turca i sufí d'Anatòlia. Yunus Emre (†c. 1321) és el poeta fundacional de la literatura turca i el místic sufí més estimat del món turcòfon. Els seus ilahis (himnes) i poemes en turc anatolià antic expressen l'amor diví, la unitat de l'ésser i la humilitat amb una senzillesa que els fa universals — comparable a Rumi però en llengua turca popular, no en persa cortesà. Selecció dels 25 poemes més representatius: 'Bana seni gerek seni' (Només et necessito a Tu), 'Aşkın aldı benden beni' (L'amor m'ha pres de mi), 'Ben yürürüm yane yane', etc. Patrimoni de la Humanitat (UNESCO, 1991). Cap traducció catalana. Text turc a Wikisource turca."
+    },
+    {
+      "autor": "Anònim nòrdic",
+      "titol": "Völuspá (La profecia de la sibil·la)",
+      "llengua": "islandès antic",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 3500,
+      "fonts": [
+        "wikisource",
+        "heimskringla.no"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/anonim-nordic/voluspa-la-profecia-de-la-sibilla",
+      "notes": "Consell Editorial 2026-03-09. Afegeix l'islandès antic (nòrdic antic) com a nova llengua al catàleg, obrint la biblioteca a la tradició literària escandinava medieval. La Völuspá (c. s. X) és el poema més important de l'Edda poètica: una sibil·la (völva) narra a Odin la creació del món, l'arbre Yggdrasil, la guerra dels déus, la mort de Baldr i el Ragnarök (la fi del món) seguit d'un renaixement còsmic. 66 estrofes en metre fornyrðislag d'una força visionària i una densitat simbòlica incomparables: cosmogonia, escatologia i profecia en un sol poema. Font primària de la mitologia nòrdica, influència directa sobre Tolkien, Wagner i tota la cultura nòrdica. Cap traducció catalana. Text en nòrdic antic a Wikisource islandesa i Heimskringla.no."
+    },
+    {
+      "autor": "Lev Tolstoi",
+      "titol": "Quanta terra necessita un home? i altres contes breus",
+      "llengua": "rus",
+      "categoria": "narrativa",
+      "dificultat": 2,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/lev-tolstoi/quanta-terra-necessita-un-home-i-altres-contes",
+      "notes": "Consell Editorial 2026-03-09. L'absència més flagrant del catàleg narratiu: Tolstoi (†1910), amb Dostoievski, és el pilar de la narrativa russa i mundial, però completament absent de la biblioteca. Selecció de 3 contes breus morals: 'Quanta terra necessita un home?' (Много ли человеку земли нужно, 1886), paràbola perfecta sobre l'avarícia; 'Tres morts' (Три смерти, 1859), meditació sobre el morir; 'El presoner del Caucas' (Кавказский пленник, 1872), aventura i reflexió sobre la guerra. Prosa d'una claredat cristal·lina i una profunditat moral insondable. Contes ideals per a una edició bilingüe: breus, autònoms, universals. Reforça el rus (només Dostoievski al catàleg). Cap traducció catalana recent en edició bilingüe. Text rus a Wikisource russa i Project Gutenberg."
     }
   ]
 }
