@@ -67,7 +67,7 @@ l'arbre florit mentia dol d'amor,
 el rossinyol cantava el seu amor a la rosa,
 i un sospir perfumat revelava la rosada.
 El llac llis entre els arbustos ombrívols
-ressonava fosca un dolor secret,
+ressonava foscament un dolor secret,
 la riba l'abraçava a tot voltant;
 i els sols clars d'altres mons
 vagaven per les franges blavoses,
@@ -82,7 +82,7 @@ tan pàl·lidament clar, clarament pàl·lid,
 com l'estimada cerca l'amant —
 va encendre's en un resplendor rosat;
 a les aigües contemplava el seu reflex
-i d'amor per si mateixa definia.
+i d'amor per si mateixa es moria.
 Més enllà lluïa la pàl·lida ombra dels patis,
 que s'acostaven sempre més i més,
 com si en abraçada cada cop més avall
@@ -247,7 +247,7 @@ pensament rere pensament mor.
 «Nit profunda! Tu amb el teu vel
 ara cobreixes la meva llar,
 i ella fa dol per mi! —
-¿Que fa dol? — ¿Per mi? Pur somni!
+Que fa dol? — Per mi? Pur somni!
 Ja fa temps que no sap res de mi.
 Amb prou feines demà el dia clar
 s'alci sobre els seus boscos,
@@ -438,7 +438,7 @@ amb elles xerroten les onetes,
 semblen adormir el presoner,
 que jeu en les tenebres profundes.
 
-El guàrdia va despertar un soroll terrible
+Un soroll terrible va despertar el guàrdia,
 que feien les cadenes en caure;
 amb el llum va entrar. — El pas lleuger
 no va despertar el pres dels somnis terribles.
@@ -514,7 +514,7 @@ amb la seva caiguda segueix mesurant el temps.
 I les gotes — el cant de les aigües i els vents
 al presoner anuncien la fi propera,
 ell que en els pensaments desfalleix. —
-Des de la distància es fa sentir la òliba,
+Des de la distància es fa sentir l'òliba,
 i per damunt d'ell la mitjanit sona la campana.
 
 ---
@@ -949,7 +949,7 @@ per la vall, per les muntanyes, boscos, llac, camps,
 com un llençol llunyà la blancor de la neu s'estenia,
 com un llençol estès — per damunt la calavera i la roda.
 En les tenebres profundes la lluna pàl·lida s'arrossegava,
-de tant en tant sonava el plor de la òliba, i el trist tremolor del vent,
+de tant en tant sonava el plor de l'òliba, i el trist tremolor del vent,
 i amb el vent sobre la roda el tabaleig de l'esquelet,
 que la por m'oprimia el pit i al meu cavall també.
 I allà, on l'ombra del poble, a galop vaig volar amb el cavall,
@@ -975,7 +975,7 @@ l'arbre florit mentia dol d'amor,
 el rossinyol cantava el seu amor a la rosa,
 i un sospir perfumat revelava la rosada.
 El llac llis entre els arbustos ombrívols
-ressonava fosca un dolor secret,
+ressonava foscament un dolor secret,
 la riba l'abraçava a tot voltant,
 com un germà la germana en jocs infantils.
 I al voltant de la calavera la claror del crepuscle
