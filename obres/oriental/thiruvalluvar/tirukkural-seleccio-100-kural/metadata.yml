@@ -1,0 +1,28 @@
+obra:
+  titol: "Tirukkuṛaḷ (selecció: 100 kural)"
+  titol_original: "திருக்குறள்"
+  autor: "Thiruvalluvar"
+  autor_original: "திருவள்ளுவர்"
+  traductor: "Biblioteca Universal Arion"
+  any_original: "c. s. III aC – s. V dC"
+  any_traduccio: 2026
+  llengua_original: "tàmil"
+  descripcio: >
+    Selecció de 100 kurals (dístics) del Tirukkuṛaḷ, obra mestra de la literatura
+    tàmil i un dels textos ètics més importants de la humanitat. Organitzat en tres
+    llibres: Aram (Virtut), Porul (Riquesa) i Inbam (Amor), el Tirukkuṛaḷ condensa
+    en 1330 versets curts tota una filosofia de vida. Aquesta selecció recull 100
+    dels kurals més representatius.
+  categoria: "oriental"
+  genere: "poesia didàctica / ètica"
+  forma: "kural (dístic de 7 paraules)"
+seccions: 3
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
