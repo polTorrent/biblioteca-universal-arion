@@ -11,31 +11,13 @@ obra:
   descripcio: Poema èpic en sànscrit sobre el naixement de Kārttikeya, déu de la guerra,
     fill de Śiva i Pārvatī. Traducció anglesa en vers de Ralph T.H. Griffith (1879)
     a partir del sànscrit original.
-  estadistiques:
-    paraules_traduccio: 15547
-seccions: 17
+seccions: 7
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
-  notes: 0
+  paraules_original: 22000
+  paraules_traduccio: 16500
+  notes: 25
   termes_glossari: 0
 revisio:
   estat: revisat
-  qualitat: 0.0
-  data_revisio: '2026-03-08'
-avaluacio_final:
-  data: '2026-03-08T17:25:44.149559'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 164
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 152
+  qualitat: 7.5
+  data_revisio: '2026-03-09'
