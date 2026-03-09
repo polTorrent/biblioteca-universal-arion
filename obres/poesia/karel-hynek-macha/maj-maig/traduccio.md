@@ -142,15 +142,15 @@ on el llac s'endinsa en les muntanyes,
 per les ones espurna persegueix espurna,
 sobre l'aigua estrella juga amb estrella.
 
-Com coloma blanc de neu
+Com coloma blanca de neu
 sota núvol negre que vola,
-nínfar que floreix
+nenúfar que floreix
 sobre l'atzur fosc; així, lleugera
 — allà on el llac s'endinsa en les muntanyes —
 per les ones fosques alguna cosa s'apropa,
 ràpidament s'apropa. Un petit instant,
 i ja com vol pausat de cigonya,
-ja no coloma ni flor de nínfar,
+ja no és coloma ni flor de nenúfar,
 sinó blanca vela que es balança al vent.
 El rem esvelt es banya en l'atzur,
 i forma llargues esteles al voltant.
@@ -198,7 +198,7 @@ Es gira. — La veu emmudeix —
 Per la roca baixà en poc de temps,
 vora la roca troba el seu bot.
 Ràpid s'allunya, com vol de cigonya,
-cada cop més petit, fins que com flor de nínfar
+cada cop més petit, fins que com flor de nenúfar
 entre les muntanyes desapareix per les aigües.
 
 Silencioses són les ones, fosc el si de les aigües,
@@ -534,7 +534,7 @@ de figures horribles el grup es persegueix.
 **Cor d'esperits**
 
 «En el silenci de les hores de mitjanit;
-llambordes vaguen pels sepulcres,
+llumenetes vaguen pels sepulcres,
 i la seva claror blava i morta
 il·lumina la faç del qui avui ha estat enterrat,
 que de guàrdia — mentre els altres dormen —
@@ -544,7 +544,7 @@ Al zenit hi ha un núvol gris
 i sobre ell la lluna ajaguda
 en l'esguard esgarrifós del mort vigilant,
 i dins la boca entreoberta
-les dents rebrillants escrostonades.»
+les dents brillants serrades.»
 
 **Una veu**
 
@@ -961,7 +961,7 @@ Després de nou el curs de la vida al vast món em va dur,
 més d'un torb tempestuós en profunda tristesa em va endur;
 però aquella trista notícia sempre m'atreia de tornada,
 fins que amb la jove primavera al pujol vaig retornar.
-Amb la posta del sol seien jo allà al pujol,
+Amb la posta del sol seia jo allà al pujol,
 per damunt meu la roda — el pal — l'esquelet — la calavera pàl·lida;
 amb ulls tristos mirava la llunyania del paisatge primaveral,
 fins allà on per les muntanyes fluïa la boira grisa.
@@ -996,7 +996,7 @@ el meu rostre i el d'aquella calavera feia més pàl·lid,
 i — com un llençol — la seva blancor vasta
 per la vall — pels boscos — per les muntanyes al lluny s'estenia.
 De tant en tant des de la distància el cant del cucut
-encara per la vall ressonava, de tant en tant la òliba gemegava;
+encara per la vall ressonava, de tant en tant l'òliba gemegava;
 dels patis dels voltants sonaven els lladrucs i udols dels gossos.
 Al voltant per la garriga hi ha la dolça fragància de les herbes,
 pel pujol floreixen les margaridetes de prat.
