@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-09",
+  "updated_at": "2026-03-10",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -768,6 +768,49 @@
       "status": "pending",
       "obra_dir": "obres/poesia/aleksandr-pushkin/el-genet-de-bronze",
       "notes": "Consell Editorial 2026-03-09. Diversifica el rus cap a la poesia (fins ara només narrativa: Dostoievski, Tolstoi) i afegeix el poeta fundacional de la literatura russa moderna, completament absent del catàleg. Aleksandr Pushkin (†1837) és per al rus el que Shakespeare és per a l'anglès o Dante per a l'italià: el creador de la llengua literària moderna. El genet de bronze (Медный всадник, 1833) és el seu poema narratiu més perfecte: la gran inundació de Sant Petersburg de 1824 destrueix la vida del petit funcionari Ievgueni, que, boig de dolor, desafia l'estàtua eqüestre de Pere el Gran — l'estàtua cobra vida i el persegueix pels carrers buits. Poema sobre el poder, la ciutat, l'individu contra l'Estat, la bogeria i la bellesa terrible de la creació imperial. Introducció i 2 parts en tetrametres iàmbics d'una fluïdesa prodigiosa. Obra breu, intensa, ideal per a edició bilingüe. Cap traducció catalana. Text rus a Wikisource russa i Project Gutenberg."
+    },
+    {
+      "autor": "Hesíode",
+      "titol": "Els treballs i els dies (Ἔργα καὶ Ἡμέραι)",
+      "llengua": "grec",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/hesiode/els-treballs-i-els-dies",
+      "notes": "Consell Editorial 2026-03-10. Diversifica la poesia grega: el catàleg té Safo (lírica) però no poesia didàctica. Hesíode (s. VIII-VII aC, >2700 anys) és, amb Homer, el pilar de la literatura grega arcaica. Els treballs i els dies (Ἔργα καὶ Ἡμέραι) és el primer poema didàctic d'Occident: 828 hexàmetres on Hesíode instrueix el seu germà Perses sobre la justícia, el treball agrícola, la navegació i els dies fastos. Conté el mite de Prometeu i Pandora, el mite de les cinc edats (or, plata, bronze, herois, ferro) i la faula del falcó i el rossinyol — primera faula de la literatura europea. Obra fundacional per a l'ètica del treball, la teodicea i la poesia gnòmica. Cap traducció catalana recent. Text grec a Perseus Digital Library i Wikisource grega."
+    },
+    {
+      "autor": "Mozi",
+      "titol": "Amor universal (兼愛)",
+      "llengua": "xinès",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/mozi/amor-universal",
+      "notes": "Consell Editorial 2026-03-10. Completa el quartet filosòfic xinès clàssic: el catàleg ja inclou Laozi (taoisme), Confuci (confucianisme) i Zhuangzi (taoisme); falta Mozi (moisme), el gran rival de Confuci. Mozi (墨子, c. 470-391 aC) va fundar l'escola moista, la primera filosofia utilitarista i pacifista del món. 兼愛 (Jiān Ài, 'Amor universal') és el nucli del seu pensament: tres capítols (superior, mitjà, inferior) on argumenta que la guerra, el robatori i l'opressió neixen de l'amor parcial, i que només l'amor imparcial i universal pot salvar la humanitat. Argumentació lògica rigorosa, estil directe i repetitiu (molt diferent de Laozi o Zhuangzi). Cap traducció catalana. Text xinès clàssic a CText (Chinese Text Project)."
+    },
+    {
+      "autor": "Sándor Petőfi",
+      "titol": "Selecció de 20 poemes",
+      "llengua": "hongarès",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/sandor-petofi/seleccio-20-poemes",
+      "notes": "Consell Editorial 2026-03-10. Afegeix una NOVA LLENGUA al catàleg: l'hongarès, llengua uraliana sense cap representació fins ara. Sándor Petőfi (1823-1849) és el poeta nacional hongarès i figura central de la Revolució de 1848. Va morir als 26 anys a la batalla de Segesvár, convertint-se en mite romàntic. La selecció inclou poemes emblemàtics: Nemzeti dal (Cançó nacional, l'himne revolucionari), Szeptember végén (Final de setembre, elegia amorosa perfecta), Az Alföld (La Gran Plana), A farkasok dala (La cançó dels llops), János vitéz (fragments). Estil directe, popular, musical — va democratitzar la poesia hongaresa trencant amb l'academicisme. Cap traducció catalana. Text hongarès a Wikisource hongaresa (Magyar Elektronikus Könyvtár)."
     }
   ]
 }
