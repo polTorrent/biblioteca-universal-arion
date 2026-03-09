@@ -21,3 +21,11 @@ revisio:
   estat: corregit
   qualitat: null
   data_revisio: '2026-03-09'
+  correccions_aplicades:
+    - "Concordança de gènere: 'coloma blanc' → 'coloma blanca'"
+    - "Normativa IEC: 'nínfar' → 'nenúfar' (3 ocurrències)"
+    - "Error lèxic crític: 'llambordes' → 'llumenetes' (světýlka = llumetes, no llambordes)"
+    - "Error lèxic: 'dents rebrillants escrostonades' → 'dents brillants serrades'"
+    - "Conjugació verbal: 'seien jo' → 'seia jo' (1a pers. sg. imperfet de seure)"
+    - "Elisió normativa: 'la òliba' → 'l'òliba'"
+    - "Verb omès: 'ja no coloma' → 'ja no és coloma'"
