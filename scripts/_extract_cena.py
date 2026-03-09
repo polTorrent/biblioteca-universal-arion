@@ -1,33 +1,38 @@
 #!/usr/bin/env python3
 """Extreu la Cena Trimalchionis (cap. XXVI-LXXVIII) del Satyricon complet."""
+import sys
 from pathlib import Path
 
-obra_dir = Path("obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio")
-original = obra_dir / "original.md"
 
-with open(original, "r", encoding="utf-8") as f:
-    lines = f.readlines()
+def main() -> None:
+    obra_dir = Path("obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio")
+    original = obra_dir / "original.md"
 
-# Cena Trimalchionis: cap XXVI (línia 199) fins final cap LXXVIII (línia 609)
-# 0-indexed: 198 to 608
-start_idx = None
-end_idx = None
-for i, line in enumerate(lines):
-    if line.strip() == "## XXVI.":
-        start_idx = i
-    if line.strip() == "## LXXIX.":
-        end_idx = i
-        break
+    if not original.exists():
+        print(f"ERROR: no existeix {original}")
+        sys.exit(1)
 
-if start_idx is None or end_idx is None:
-    print(f"ERROR: start={start_idx}, end={end_idx}")
-    exit(1)
+    lines: list[str] = original.read_text(encoding="utf-8").splitlines(keepends=True)
 
-cena_lines = lines[start_idx:end_idx]
-cena_text = "".join(cena_lines).strip()
-print(f"Extracted lines {start_idx+1}-{end_idx} ({len(cena_lines)} lines, {len(cena_text)} chars)")
+    # Cena Trimalchionis: cap XXVI fins final cap LXXVIII
+    start_idx: int | None = None
+    end_idx: int | None = None
+    for i, line in enumerate(lines):
+        if line.strip() == "## XXVI.":
+            start_idx = i
+        if line.strip() == "## LXXIX.":
+            end_idx = i
+            break
 
-header = """**Autor:** Petronius
+    if start_idx is None or end_idx is None:
+        print(f"ERROR: start={start_idx}, end={end_idx}")
+        sys.exit(1)
+
+    cena_lines = lines[start_idx:end_idx]
+    cena_text = "".join(cena_lines).strip()
+    print(f"Extracted lines {start_idx + 1}-{end_idx} ({len(cena_lines)} lines, {len(cena_text)} chars)")
+
+    header = """**Autor:** Petronius
 **Font:** [wikisource](https://la.wikisource.org/wiki/Satyricon)
 **Llengua:** llatí
 
@@ -35,7 +40,9 @@ header = """**Autor:** Petronius
 
 """
 
-with open(original, "w", encoding="utf-8") as f:
-    f.write(header + cena_text + "\n")
+    original.write_text(header + cena_text + "\n", encoding="utf-8")
+    print("original.md reescrit amb la Cena Trimalchionis (cap. XXVI-LXXVIII)")
 
-print(f"original.md reescrit amb la Cena Trimalchionis (cap. XXVI-LXXVIII)")
+
+if __name__ == "__main__":
+    main()
