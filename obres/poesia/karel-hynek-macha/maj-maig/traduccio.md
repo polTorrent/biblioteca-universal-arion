@@ -179,7 +179,7 @@ amb paraules suaus li xiuxiueja:
 per damunt la nit dels arbres; la seva ombra blanca
 profundament s'enfonsa en el si del llac;
 però més endins encara, clavada a l'aigua,
-hi ha la llum d'un llum per una finestra petita;
+hi ha la claror d'un llum per una finestra petita;
 allà Vilém s'entreté amb el pensament
 que el dia vinent el privarà de la vida.
 La teva deshonra, la teva culpa,
@@ -360,7 +360,7 @@ tant la música captiva l'oïda.
 «Com la dolça veu de la vida agradable
 insuflà dins el paisatge nocturn;
 però abans que passi el temps de demà — ai —
-aquesta oïda meva mai ai mai
+aquesta oïda meva, ai, mai
 no sentirà més aquells sons!»
 S'esfondra de nou el presoner — el soroll de les cadenes
 s'estén per la masmorra; — —
@@ -442,7 +442,7 @@ Un soroll terrible va despertar el guàrdia,
 que feien les cadenes en caure;
 amb el llum va entrar. — El pas lleuger
 no va despertar el pres dels somnis terribles.
-De columna a columna la llum del llum
+De columna a columna la claror del llum
 vola per la llarga sala,
 cada cop més pàl·lid — més pàl·lid el seu centelleig,
 fins que al fons s'esgota la seva força,
@@ -468,7 +468,7 @@ Però abans que l'oïda atrapi la veu,
 les paraules terribles es fan no-res —
 com havien sortit — s'esvaeixen.
 
-S'acosta el guàrdia, i la llum del llum
+S'acosta el guàrdia, i la claror del llum
 davant mateix del rostre del pres apareix.
 El rostre del pres — visió terrible —
 l'ull reposa immòbil
@@ -534,7 +534,7 @@ de figures horribles el grup es persegueix.
 **Cor d'esperits**
 
 «En el silenci de les hores de mitjanit;
-llumenetes vaguen pels sepulcres,
+llumetes vaguen pels sepulcres,
 i la seva claror blava i morta
 il·lumina la faç del qui avui ha estat enterrat,
 que de guàrdia — mentre els altres dormen —
@@ -696,7 +696,7 @@ Al llac verd hi ha un estol blanc d'ocells,
 i el curs dels bots lleugers i el rem veloç
 les ombres blavoses de les ones en franges vermelles escampa.
 A la riba del llac el bosc de pins murmura,
-i dels tords el psalm solemne i el cant d'altres ocells
+i dels tords el salm solemne i el cant d'altres ocells
 es barreja amb les veus de les noies que vaguen per la vall;
 tota criatura viva celebra el jove maig.
 I del vent matiner — com un cant — el dolç buf
