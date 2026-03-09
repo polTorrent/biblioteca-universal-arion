@@ -1,25 +1,24 @@
 #!/usr/bin/env python3
 """Genera original.md per al Tirukkural a partir del JSON descarregat."""
+from __future__ import annotations
+
 import json
 import sys
+from pathlib import Path
 
-with open('/tmp/tirukkural.json') as f:
-    d = json.load(f)
-kurals = d['kural']
-
-selected_numbers = [
-    # Book 1: Aram (Virtue) - 40 kurals
+SELECTED_NUMBERS: list[int] = [
+    # Book 1: Aram (Virtue) - 38 kurals
     1, 2, 10, 11, 15, 21, 25, 31, 34, 41, 45, 50,
     51, 56, 61, 67, 71, 76, 80, 81, 86, 91, 95, 100,
     101, 105, 110, 111, 115, 121, 125, 130, 131, 133,
     141, 151, 155, 160,
-    # Book 2: Porul (Wealth) - 35 kurals
+    # Book 2: Porul (Wealth) - 38 kurals
     381, 383, 390, 391, 395, 400, 421, 423, 430,
     431, 436, 471, 475, 491, 495, 521, 525,
     541, 545, 550, 591, 594, 600, 611, 615, 620,
     631, 636, 691, 695, 721, 725, 751, 755, 760,
     781, 785, 790,
-    # Book 3: Inbam (Love) - 25 kurals
+    # Book 3: Inbam (Love) - 27 kurals
     1081, 1085, 1090, 1091, 1095, 1100,
     1101, 1105, 1110, 1141, 1145,
     1171, 1175, 1180, 1191, 1195, 1200,
@@ -27,9 +26,7 @@ selected_numbers = [
     1291, 1295, 1300, 1321, 1325, 1330,
 ]
 
-kural_map = {k['Number']: k for k in kurals}
-
-chapter_info = {
+CHAPTER_INFO: dict[int, tuple[str, str, str]] = {
     1: ("கடவுள் வாழ்த்து", "Lloanca de Deu", "Aram"),
     2: ("வான்சிறப்பு", "Excellencia de la pluja", "Aram"),
     3: ("நீத்தார் பெருமை", "Grandesa dels ascetes", "Aram"),
@@ -73,65 +70,100 @@ chapter_info = {
     133: ("ஊடலுவகை", "Joies del joc amoros", "Inbam"),
 }
 
-def get_chapter(num):
-    return ((num - 1) // 10) + 1
-
-lines = []
-lines.append("# திருக்குறள் — Tirukkuṛaḷ")
-lines.append("")
-lines.append("**Thiruvalluvar** (திருவள்ளுவர்)")
-lines.append("")
-lines.append("Selecció de 100 kurals dels tres llibres: Aram (அறம், Virtut), Porul (பொருள், Riquesa) i Inbam (இன்பம், Amor).")
-lines.append("")
-lines.append("Text original en tàmil (domini públic, c. segle III aC – segle V dC).")
-lines.append("")
-lines.append("---")
-lines.append("")
-
-current_book = None
-current_chapter = None
-
-book_names = {
+BOOK_NAMES: dict[str, str] = {
     "Aram": "## Llibre I: அறம் (Aram — Virtut)",
     "Porul": "## Llibre II: பொருள் (Porul — Riquesa)",
-    "Inbam": "## Llibre III: இன்பம் (Inbam — Amor)"
+    "Inbam": "## Llibre III: இன்பம் (Inbam — Amor)",
 }
 
-for num in selected_numbers:
-    k = kural_map[num]
-    ch = get_chapter(num)
 
-    if ch in chapter_info:
-        ch_tamil, ch_catalan, book = chapter_info[ch]
+def get_chapter(num: int) -> int:
+    return ((num - 1) // 10) + 1
 
-        if book != current_book:
-            current_book = book
-            lines.append(book_names[book])
-            lines.append("")
 
-        if ch != current_chapter:
-            current_chapter = ch
-            lines.append(f"### Capitol {ch}: {ch_tamil} — {ch_catalan}")
-            lines.append("")
+def generar_original(json_path: Path, outpath: Path) -> None:
+    with open(json_path) as f:
+        d = json.load(f)
 
-    lines.append(f"**Kural {k['Number']}**")
-    lines.append("")
-    lines.append(f"> {k['Line1']}")
-    lines.append(f"> {k['Line2']}")
-    lines.append("")
-    t1 = k.get('transliteration1', '')
-    t2 = k.get('transliteration2', '')
-    if t1 and t2:
-        lines.append(f"*{t1} / {t2}*")
+    kurals: list[dict[str, object]] = d["kural"]
+    kural_map: dict[int, dict[str, object]] = {k["Number"]: k for k in kurals}
+
+    lines: list[str] = [
+        "# திருக்குறள் — Tirukkuṛaḷ",
+        "",
+        "**Thiruvalluvar** (திருவள்ளுவர்)",
+        "",
+        f"Selecció de {len(SELECTED_NUMBERS)} kurals dels tres llibres:"
+        " Aram (அறம், Virtut), Porul (பொருள், Riquesa) i Inbam (இன்பம், Amor).",
+        "",
+        "Text original en tàmil (domini públic, c. segle III aC – segle V dC).",
+        "",
+        "---",
+        "",
+    ]
+
+    current_book: str | None = None
+    current_chapter: int | None = None
+    missing: list[int] = []
+
+    for num in SELECTED_NUMBERS:
+        k = kural_map.get(num)
+        if k is None:
+            missing.append(num)
+            continue
+
+        ch = get_chapter(num)
+
+        if ch in CHAPTER_INFO:
+            ch_tamil, ch_catalan, book = CHAPTER_INFO[ch]
+
+            if book != current_book:
+                current_book = book
+                lines.append(BOOK_NAMES[book])
+                lines.append("")
+
+            if ch != current_chapter:
+                current_chapter = ch
+                lines.append(f"### Capitol {ch}: {ch_tamil} — {ch_catalan}")
+                lines.append("")
+
+        lines.append(f"**Kural {k['Number']}**")
         lines.append("")
-    explanation = k.get('Translation', k.get('explanation', ''))
-    lines.append(f"[EN: {explanation}]")
-    lines.append("")
+        lines.append(f"> {k['Line1']}")
+        lines.append(f"> {k['Line2']}")
+        lines.append("")
+        t1 = k.get("transliteration1", "")
+        t2 = k.get("transliteration2", "")
+        if t1 and t2:
+            lines.append(f"*{t1} / {t2}*")
+            lines.append("")
+        explanation = k.get("Translation", k.get("explanation", ""))
+        lines.append(f"[EN: {explanation}]")
+        lines.append("")
 
-content = '\n'.join(lines)
-print(f"Generated {len(selected_numbers)} kurals, {len(content)} chars")
+    if missing:
+        print(f"AVÍS: {len(missing)} kurals no trobats al JSON: {missing}", file=sys.stderr)
 
-outpath = sys.argv[1] if len(sys.argv) > 1 else '/tmp/tirukkural_original.md'
-with open(outpath, 'w') as f:
-    f.write(content)
-print(f"Written to {outpath}")
+    content = "\n".join(lines)
+    generated = len(SELECTED_NUMBERS) - len(missing)
+    print(f"Generated {generated} kurals, {len(content)} chars")
+
+    outpath.parent.mkdir(parents=True, exist_ok=True)
+    with open(outpath, "w") as f:
+        f.write(content)
+    print(f"Written to {outpath}")
+
+
+def main() -> None:
+    json_path = Path("/tmp/tirukkural.json")
+    if not json_path.exists():
+        print(f"ERROR: No s'ha trobat {json_path}", file=sys.stderr)
+        print("Descarrega'l primer amb: curl -o /tmp/tirukkural.json <url>", file=sys.stderr)
+        sys.exit(1)
+
+    outpath = Path(sys.argv[1]) if len(sys.argv) > 1 else Path("/tmp/tirukkural_original.md")
+    generar_original(json_path, outpath)
+
+
+if __name__ == "__main__":
+    main()
