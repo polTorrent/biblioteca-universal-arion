@@ -24,8 +24,12 @@ revisio:
   correccions_aplicades:
     - "Concordança de gènere: 'coloma blanc' → 'coloma blanca'"
     - "Normativa IEC: 'nínfar' → 'nenúfar' (3 ocurrències)"
-    - "Error lèxic crític: 'llambordes' → 'llumenetes' (světýlka = llumetes, no llambordes)"
+    - "Error lèxic crític: 'llambordes' → 'llumetes' (světýlka = llumetes, no llambordes)"
     - "Error lèxic: 'dents rebrillants escrostonades' → 'dents brillants serrades'"
     - "Conjugació verbal: 'seien jo' → 'seia jo' (1a pers. sg. imperfet de seure)"
     - "Elisió normativa: 'la òliba' → 'l'òliba'"
     - "Verb omès: 'ja no coloma' → 'ja no és coloma'"
+    - "Repetició cacofònica: 'la llum d'un llum' → 'la claror d'un llum' (3 ocurrències)"
+    - "Puntuació: 'mai ai mai' → 'ai, mai' (expressió natural catalana)"
+    - "Diminutiu incorrecte: 'llumenetes' → 'llumetes'"
+    - "Lèxic: 'psalm' → 'salm' (forma normativa catalana)"
