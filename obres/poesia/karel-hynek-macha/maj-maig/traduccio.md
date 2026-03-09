@@ -65,7 +65,7 @@ on el bosc de pins exhalava fragància.
 D'amor xiuxiuejava la molsa silenciosa;
 l'arbre florit mentia dol d'amor,
 el rossinyol cantava el seu amor a la rosa,
-i un sospir perfumat revelava la rosada.
+i un sospir perfumat revelava la rosa.
 El llac llis entre els arbustos ombrívols
 ressonava foscament un dolor secret,
 la riba l'abraçava a tot voltant;
@@ -85,7 +85,7 @@ a les aigües contemplava el seu reflex
 i d'amor per si mateixa es moria.
 Més enllà lluïa la pàl·lida ombra dels patis,
 que s'acostaven sempre més i més,
-com si en abraçada cada cop més avall
+com si en una abraçada cada cop més avall
 s'enrosquessin en el si del crepuscle,
 fins que per fi en la penombra es fonen en un.
 Amb elles, arbres s'entrellacen amb arbres. —
@@ -103,7 +103,7 @@ L'atzur se li ondula als peus,
 més enllà verdeja florint,
 cada cop més verd transllueix,
 fins que en la distància en pàl·lida claror es fon.
-Per la llisor immensa de la superfície
+Per la llisor immensa de les aigües
 la noia clava l'esguard cansat;
 per la llisor immensa de la superfície
 no mira res fora l'espurneig dels estels.
@@ -143,9 +143,9 @@ per les ones espurna persegueix espurna,
 sobre l'aigua estrella juga amb estrella.
 
 Com coloma blanca de neu
-sota núvol negre que vola,
-nenúfar que floreix
-sobre l'atzur fosc; així, lleugera
+que vola sota un núvol negre,
+com un nenúfar que floreix
+sobre l'atzur fosc; així, àgilment
 — allà on el llac s'endinsa en les muntanyes —
 per les ones fosques alguna cosa s'apropa,
 ràpidament s'apropa. Un petit instant,
@@ -155,7 +155,7 @@ sinó blanca vela que es balança al vent.
 El rem esvelt es banya en l'atzur,
 i forma llargues esteles al voltant.
 Aquelles roses d'or que prop del roure
-cremen allà dalt a les muntanyes,
+cremen al cel sobre les muntanyes,
 amb or rosat li dauren el front.
 «Ràpid el bot! Més a prop, més a prop!
 És ell, és ell! Aquelles plomes, les flors,
@@ -245,7 +245,7 @@ el presoner hi ha embolicat la seva ànima;
 pensament rere pensament mor.
 
 «Nit profunda! Tu amb el teu vel
-ara cobreixes la meva llar,
+ara cobreixes el meu poble,
 i ella fa dol per mi! —
 Que fa dol? — Per mi? Pur somni!
 Ja fa temps que no sap res de mi.
@@ -328,7 +328,7 @@ ofega les paraules. S'aixeca de sobte;
 en la nit dringa el soroll de les cadenes
 i per la finestra petita l'esguard del pres
 vola enfora rere el murmuri de les aigües. —
-La lluna plena ha cobert un núvol,
+La lluna plena, l'ha coberta un núvol,
 però per sobre la fosca silueta de les muntanyes
 surten estels en el si de la nit;
 i pel llac la llum estel·lar,
@@ -409,8 +409,8 @@ venç el pensament. —
 Silenci profund. — L'eco de les gotes
 amb la seva caiguda torna a mesurar el temps.
 
-«Nit més tenebrosa! — — — Aquí, en el cor de la nit,
-que entri un raig de lluna, un tremolor d'estel
+«Nit més tenebrosa! — — — Aquí, en el si de la nit,
+s'hi escola un raig de lluna, un tremolor d'estel
 — — allà — només ombra erma,
 allà no hi ha — no hi ha — no hi ha llum,
 només tenebra hi roman.
@@ -694,7 +694,7 @@ llavors de cop tot va despertar del somni,
 i alegre exulta tota criatura viva.
 Al llac verd hi ha un estol blanc d'ocells,
 i el curs dels bots lleugers i el rem veloç
-les ombres blavoses de les ones en franges vermelles escampa.
+escampa les ombres blavoses de les ones en franges vermelles.
 A la riba del llac el bosc de pins murmura,
 i dels tords el salm solemne i el cant d'altres ocells
 es barreja amb les veus de les noies que vaguen per la vall;
@@ -705,7 +705,7 @@ més amunt guia sobre els boscos el vol d'oques salvatges,
 i per les muntanyes inclina els arbres joves. —
 Però un sol espectacle entela la bellesa del matí.
 On dins l'ample llac penetra un estret illot,
-i d'un petit poble i la blanca torre l'ombra
+i d'un petit poble i de la blanca torre l'ombra
 profundament enfonsada en el si verd de l'aigua,
 un clamor i un estrèpit immens s'alcen pel jove matí,
 i una gran multitud surt a raudals per les portes del petit poble.
@@ -840,9 +840,9 @@ així acabà els dies de la seva vida el terrible senyor dels boscos;
 sobre el rostre mort el darrer somni dormita.
 Contemplant-lo — durant tot el llarg dia
 una multitud immensa al voltant del petit pujol romania;
-fins que cap al ponent inclinant el sol el seu curs,
+fins que, inclinant el sol el seu curs cap al ponent,
 alegrament en l'esguard mort del cap tallat reia,
-emmudí del llac l'ampla — vespertina riba.
+emmudí l'ampla riba vespertina del llac.
 
 Sobre la distància de les muntanyes fosques el darrer incendi cremava;
 en el silenci profund s'alçà la claror de la lluna,
@@ -973,7 +973,7 @@ on el bosc de pins exhalava fragància.
 D'amor xiuxiuejava la molsa silenciosa,
 l'arbre florit mentia dol d'amor,
 el rossinyol cantava el seu amor a la rosa,
-i un sospir perfumat revelava la rosada.
+i un sospir perfumat revelava la rosa.
 El llac llis entre els arbustos ombrívols
 ressonava foscament un dolor secret,
 la riba l'abraçava a tot voltant,
