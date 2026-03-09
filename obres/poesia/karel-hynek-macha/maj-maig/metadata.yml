@@ -18,6 +18,6 @@ estadistiques:
   notes: 10
   termes_glossari: 18
 revisio:
-  estat: corregit
-  qualitat: 0
+  estat: pendent_supervisio
+  qualitat: null
   data_revisio: '2026-03-09'
