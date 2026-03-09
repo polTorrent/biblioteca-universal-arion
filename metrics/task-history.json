@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773001262.6342425,
-        "result": "created"
-      },
-      {
         "timestamp": 1773003270.2197952,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773090002.2820919,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773097202.5421088,
         "result": "created"
       }
     ],
@@ -2248,6 +2248,15 @@
     "events": [
       {
         "timestamp": 1773090016.5249648,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_teatre_aristofanes_els-nuvols": {
+    "events": [
+      {
+        "timestamp": 1773097218.88914,
         "result": "created"
       }
     ],
