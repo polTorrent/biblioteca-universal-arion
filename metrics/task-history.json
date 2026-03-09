@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772926232.4912353,
-        "result": "created"
-      },
-      {
         "timestamp": 1772930219.8565798,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773018447.4061623,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773046803.4850054,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1772931603.480208,
-        "result": "created"
-      },
-      {
         "timestamp": 1772938803.331916,
         "result": "created"
       },
@@ -1299,6 +1295,10 @@
       {
         "timestamp": 1773039603.4048603,
         "result": "created"
+      },
+      {
+        "timestamp": 1773046802.9903476,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -1318,10 +1318,6 @@
   },
   "translate_cd-biblioteca-universal-arion--python3-scriptstraduir_p": {
     "events": [
-      {
-        "timestamp": 1772910003.3378263,
-        "result": "created"
-      },
       {
         "timestamp": 1772910003.521698,
         "result": "created"
@@ -1396,6 +1392,10 @@
       },
       {
         "timestamp": 1773018607.8643622,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773046802.8230739,
         "result": "created"
       }
     ],
@@ -2154,6 +2154,15 @@
     "events": [
       {
         "timestamp": 1773020485.9961767,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_vita-nuova-vida-nova": {
+    "events": [
+      {
+        "timestamp": 1773046802.6261542,
         "result": "created"
       }
     ],
