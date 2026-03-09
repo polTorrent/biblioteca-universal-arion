@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-08",
+  "updated_at": "2026-03-09",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -365,7 +365,7 @@
         "wikisource",
         "archive.org"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol",
       "notes": "Consell Editorial 2026-03-07. Reforça la categoria oriental (només 4 obres). Kālidāsa (†c. s. V dC) és el poeta i dramaturg més gran de la literatura sànscrita, sovint comparat amb Shakespeare. Poema líric en 111 estrofes: un yaksha exiliat envia un missatge d'amor a la seva esposa a través d'un núvol monsònic, descrivint la geografia i la bellesa de l'Índia. Obra mestra del kāvya (poesia ornamental). Cap traducció catalana. Text sànscrit a Wikisource i Archive.org."
     },
@@ -483,7 +483,7 @@
         "gutenberg",
         "archive.org"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/assaig/rilke/cartes-a-un-jove-poeta",
       "notes": "Consell Editorial 2026-03-07. Obre l'alemany a la categoria assaig, fins ara sense cap obra en aquesta llengua. 10 cartes (1903-1908) adreçades al cadet Franz Xaver Kappus: meditacions sobre la creativitat, la solitud, l'amor, la paciència i la vida interior que han esdevingut un dels textos més llegits del segle XX. Rilke (†1926), poeta fonamental del modernisme europeu en llengua alemanya, amb una prosa epistolar d'una intensitat lírica excepcional. Domini públic (>70 anys). Cap traducció catalana recent en edició bilingüe. Text alemany a Project Gutenberg i Archive.org."
     },
