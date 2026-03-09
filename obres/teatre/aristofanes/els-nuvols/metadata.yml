@@ -1,0 +1,22 @@
+obra:
+  titol: "Els núvols"
+  titol_original: "Νεφέλαι"
+  autor: "Aristòfanes"
+  autor_original: "Ἀριστοφάνης"
+  traductor: "Editorial Clàssica"
+  any_original: "423 aC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  categoria: "teatre"
+  descripcio: "Comèdia clàssica d'Aristòfanes que satiritza Sòcrates i els sofistes atenesos. Estrepsiades, un pagès endeutat, envia el seu fill Fidípides al 'Pensatori' de Sòcrates per aprendre l'art de la retòrica i escapar dels creditors."
+  font: "el.wikisource.org"
+seccions: 1
+estadistiques:
+  paraules_original: 10800
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
