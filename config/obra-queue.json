@@ -723,6 +723,51 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/lev-tolstoi/quanta-terra-necessita-un-home-i-altres-contes",
       "notes": "Consell Editorial 2026-03-09. L'absència més flagrant del catàleg narratiu: Tolstoi (†1910), amb Dostoievski, és el pilar de la narrativa russa i mundial, però completament absent de la biblioteca. Selecció de 3 contes breus morals: 'Quanta terra necessita un home?' (Много ли человеку земли нужно, 1886), paràbola perfecta sobre l'avarícia; 'Tres morts' (Три смерти, 1859), meditació sobre el morir; 'El presoner del Caucas' (Кавказский пленник, 1872), aventura i reflexió sobre la guerra. Prosa d'una claredat cristal·lina i una profunditat moral insondable. Contes ideals per a una edició bilingüe: breus, autònoms, universals. Reforça el rus (només Dostoievski al catàleg). Cap traducció catalana recent en edició bilingüe. Text rus a Wikisource russa i Project Gutenberg."
+    },
+    {
+      "autor": "Boeci",
+      "titol": "De consolatione Philosophiae, Llibre I",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/boeci/de-consolatione-philosophiae-llibre-i",
+      "notes": "Consell Editorial 2026-03-09. Pont entre l'Antiguitat i l'Edat Mitjana, completament absent del catàleg. Anicius Manlius Severinus Boethius (†524 dC), 'l'últim romà i el primer escolàstic', escriu a la presó de Pavia, condemnat a mort per Teodoric, el prosimetrum (prosa + poesia) més influent de l'Occident medieval. El Llibre I és autònom i ideal per a una edició bilingüe: la Filosofia apareix com a dona al costat del presoner malalt, foragita les Muses de la poesia com a 'meretrices' i diagnostica la causa del seu patiment — l'oblit de si mateix. 8 proses i 7 poemes en metres variats (elegíacs, sàfics, glicònics). Obra traduïda per Alfred el Gran, Chaucer, la reina Elisabet I; influència directa sobre Dante, Tomàs d'Aquino i tota la filosofia medieval. Complement essencial als estoics del catàleg: Boeci sintetitza platonisme, estoïcisme i aristotelisme en un moment de crisi existencial radical. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Zeami Motokiyo",
+      "titol": "Tres peces de nō: Matsukaze, Atsumori, Hagoromo",
+      "llengua": "japonès",
+      "categoria": "teatre",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/zeami-motokiyo/tres-peces-de-no",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el japonès al teatre, combinació completament nova al catàleg. Zeami Motokiyo (†1443) és el creador del teatre nō i el primer gran teòric teatral del Japó (Fūshikaden, Kadensho), comparable a Aristòtil per la seva influència en la teoria dramàtica asiàtica. Tres peces representatives de tres categories del nō: Matsukaze (松風, 'Vent entre els pins'), mugen-nō de dona (tercera categoria): el fantasma de dues germanes pescadores d'Ariwara no Yukihira reviu el seu amor i dolor al clar de lluna — obra mestra de la bellesa yūgen. Atsumori (敦盛), shura-nō de guerrer (segona categoria): el monjo Rensei retroba el fantasma del jove guerrer Taira no Atsumori, a qui va matar a la batalla de Ichi-no-Tani — reconciliació entre enemic i víctima. Hagoromo (羽衣, 'El vel de plomes'), nō celestial (tercera categoria): un pescador troba el vel d'una tennin (àngel) i negocia la seva dansa a canvi de retornar-lo — puresa i sublimitat. Zeami és el Bashō del teatre: economia extrema, suggeriment, la bellesa del que no es diu. Cap traducció catalana. Text japonès a Aozora Bunko i Wikisource japonesa."
+    },
+    {
+      "autor": "Aleksandr Pushkin",
+      "titol": "El genet de bronze (Медный всадник)",
+      "llengua": "rus",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/aleksandr-pushkin/el-genet-de-bronze",
+      "notes": "Consell Editorial 2026-03-09. Diversifica el rus cap a la poesia (fins ara només narrativa: Dostoievski, Tolstoi) i afegeix el poeta fundacional de la literatura russa moderna, completament absent del catàleg. Aleksandr Pushkin (†1837) és per al rus el que Shakespeare és per a l'anglès o Dante per a l'italià: el creador de la llengua literària moderna. El genet de bronze (Медный всадник, 1833) és el seu poema narratiu més perfecte: la gran inundació de Sant Petersburg de 1824 destrueix la vida del petit funcionari Ievgueni, que, boig de dolor, desafia l'estàtua eqüestre de Pere el Gran — l'estàtua cobra vida i el persegueix pels carrers buits. Poema sobre el poder, la ciutat, l'individu contra l'Estat, la bogeria i la bellesa terrible de la creació imperial. Introducció i 2 parts en tetrametres iàmbics d'una fluïdesa prodigiosa. Obra breu, intensa, ideal per a edició bilingüe. Cap traducció catalana. Text rus a Wikisource russa i Project Gutenberg."
     }
   ]
 }
