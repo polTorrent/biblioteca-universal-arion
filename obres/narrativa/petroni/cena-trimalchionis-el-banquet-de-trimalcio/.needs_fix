@@ -1,0 +1,19 @@
+DATA: 2026-03-09
+PUNTUACIÓ: 0.5/10
+REVISOR: Claude (supervisió automàtica)
+
+ERRORS CRÍTICS:
+1. TRADUCCIÓ BUIDA: traduccio.md no conté cap text traduït, només la capçalera del document
+2. METADATA INCOMPLET: falten camps obligatoris (titol, titol_original, autor, llengua_original, descripcio, any_original, any_traduccio, traductor); estadistiques buit
+3. GLOSSARI INEXISTENT: no existeix glossari.yml
+4. NOTES INEXISTENTS: no existeix notes.md
+
+ACCIONS REQUERIDES:
+- Executar la traducció completa del text llatí (Satyricon, Cena Trimalchionis) al català
+- Completar metadata.yml amb tots els camps obligatoris
+- Crear glossari.yml amb termes clau llatins
+- Crear notes.md amb notes del traductor
+- Considerar crear introduccio.md amb context sobre l'obra
+
+NOTA: L'original.md conté el text llatí complet (~219 KB, tot el Satyricon de Petroni).
+Cal decidir si es tradueix tot el Satyricon o només la Cena Trimalchionis (capítols 26-78).
