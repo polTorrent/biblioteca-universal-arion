@@ -1,0 +1,28 @@
+obra:
+  titol: "Gitanjali (selecció: 30 poemes)"
+  titol_original: "গীতাঞ্জলি (Gitanjali)"
+  autor: "Rabindranath Tagore"
+  autor_original: "রবীন্দ্রনাথ ঠাকুর"
+  traductor: "Editorial Clàssica"
+  any_original: "1910 (bengalí) / 1912 (anglès)"
+  any_traduccio: 2026
+  llengua_original: "bengalí (via anglès de l'autor)"
+  descripcio: >
+    Selecció de 30 poemes de Gitanjali (Ofrenes de cançons), el recull de
+    poesia mística i devocional que va valer a Tagore el Premi Nobel de
+    Literatura el 1913. Els poemes expressen la recerca espiritual, l'amor
+    diví, la naturalesa i la condició humana amb una musicalitat i profunditat
+    úniques. Text base: la traducció anglesa en prosa poètica feta pel propi
+    Tagore (1912), amb pròleg de W.B. Yeats.
+  font: "Project Gutenberg, ebook #7164"
+  poemes_seleccionats: [1, 2, 3, 4, 5, 7, 10, 11, 12, 13, 16, 22, 23, 27, 30, 34, 35, 36, 39, 45, 48, 50, 56, 59, 67, 69, 72, 86, 96, 103]
+seccions: 30
+estadistiques:
+  paraules_original: 3351
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
