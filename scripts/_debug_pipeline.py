@@ -1,21 +1,34 @@
 #!/usr/bin/env python3
 """Debug script per la pipeline."""
-import os, sys
-os.environ['CLAUDECODE'] = '1'
+import os
+import sys
+
+os.environ.pop('CLAUDECODE', None)
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 print("DEBUG: script starting", flush=True)
 
 from pathlib import Path
 
-obra_dir = Path(sys.argv[1]) if os.path.isabs(sys.argv[1]) else Path(__file__).parent.parent / sys.argv[1]
-print(f"DEBUG: obra_dir exists: {obra_dir.exists()}", flush=True)
+if len(sys.argv) < 2:
+    print("Ús: python3 _debug_pipeline.py <directori_obra>", file=sys.stderr)
+    sys.exit(1)
+
+arg = sys.argv[1]
+obra_dir = Path(arg) if os.path.isabs(arg) else Path(__file__).parent.parent / arg
+
+if not obra_dir.exists():
+    print(f"ERROR: directori no trobat: {obra_dir}", file=sys.stderr)
+    sys.exit(1)
+print(f"DEBUG: obra_dir: {obra_dir}", flush=True)
 
 original_path = obra_dir / 'original.md'
+if not original_path.exists():
+    print(f"ERROR: fitxer no trobat: {original_path}", file=sys.stderr)
+    sys.exit(1)
 print(f"DEBUG: original.md size: {original_path.stat().st_size}", flush=True)
 
-with open(original_path) as f:
-    text = f.read()
+text = original_path.read_text(encoding="utf-8")
 print(f"DEBUG: text length: {len(text)}", flush=True)
 
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
