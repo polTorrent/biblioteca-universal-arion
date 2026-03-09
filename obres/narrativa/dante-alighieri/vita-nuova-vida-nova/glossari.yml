@@ -1,0 +1,152 @@
+termes:
+  - id: "beatrice"
+    italia: "Beatrice"
+    transliteracio: ""
+    traduccio: "Beatriu"
+    definicio: >
+      Nom de la dona estimada per Dante, identificada tradicionalment amb Bice Portinari
+      (1266-1290), filla del banquer florentí Folco Portinari. El nom conté un joc
+      etimològic essencial: Beatrice deriva del llatí 'beatrix' (la que fa feliç,
+      la que beatifica), i Dante explota constantment aquesta connexió entre el nom
+      i la beatitud que la seva presència li atorga. A la Vita Nuova, Beatriu és
+      progressivament transfigurada de dona terrenal a figura quasi angèlica.
+    usos: [2, 3, 5, 14, 22, 23, 24, 26, 28, 29, 31, 39, 40, 41, 42]
+
+  - id: "amore"
+    italia: "Amore"
+    transliteracio: ""
+    traduccio: "Amor"
+    definicio: >
+      Personificació d'Amor com a senyor feudal que governa el cor del poeta.
+      Dante el presenta com a figura visionària que apareix en somnis i fantàsies,
+      vestit de blanc o com a pelegrí. En el capítol XXV, Dante justifica teòricament
+      la personificació d'Amor com a recurs retòric legítim de la poesia vulgar,
+      citant precedents de Virgili, Lucà, Horaci i Ovidi. Amor actua com a intermediari
+      entre Dante i Beatriu.
+    usos: [2, 3, 4, 9, 12, 13, 14, 20, 24, 25, 38, 39]
+
+  - id: "donna-gloriosa"
+    italia: "gloriosa donna della mia mente"
+    transliteracio: ""
+    traduccio: "gloriosa dona de la meva ment"
+    definicio: >
+      Epítet amb què Dante designa Beatriu al capítol II. Estableix des del principi
+      la dimensió intel·lectual i espiritual de l'amor dantesc: Beatriu no és sols
+      objecte de desig sensual, sinó presència a la ment ('della mia mente'),
+      que il·lumina l'enteniment del poeta.
+    usos: [2]
+
+  - id: "gentilissima"
+    italia: "gentilissima"
+    transliteracio: ""
+    traduccio: "gentilíssima"
+    definicio: >
+      Superlatiu de 'gentile', epítet constant de Beatriu a la Vita Nuova. 'Gentile'
+      al dolce stil novo no significa simplement 'amable' sinó 'noble d'esperit',
+      'dotada de gentilesa interior'. La gentilesa és qualitat de l'ànima, no de
+      llinatge, com teoritza Guinizelli al sonet 'Al cor gentil rempaira sempre amore'
+      i el mateix Dante al capítol XX.
+    usos: [3, 5, 10, 11, 14, 22, 26]
+
+  - id: "salute"
+    italia: "salute / salutazione"
+    transliteracio: ""
+    traduccio: "salut / salutació"
+    definicio: >
+      Terme polisèmic central a la Vita Nuova. 'Salute' significa simultàniament
+      'salutació' (l'acte de saludar), 'salut' (benestar) i 'salvació' (gràcia
+      espiritual). El salut de Beatriu atorga beatitud al poeta (cap. XI) i la seva
+      negació el precipita en la desesperació (cap. X, XII). Dante juga constantment
+      amb aquesta triple significació.
+    usos: [3, 10, 11, 12, 18, 26]
+
+  - id: "spirito-vita"
+    italia: "Spirito della Vita / Spirito animale / Spirito naturale"
+    transliteracio: ""
+    traduccio: "Esperit de la Vida / Esperit animal / Esperit natural"
+    definicio: >
+      Sistema dels tres esperits segons la fisiologia medieval derivada de Galè:
+      l'Esperit vital (al cor, governa la vida), l'Esperit animal (al cervell,
+      governa els sentits i el moviment) i l'Esperit natural (al fetge, governa
+      la nutrició). Dante els utilitza per descriure l'efecte físic de l'amor:
+      cadascun reacciona diferentment davant la visió de Beatriu.
+    usos: [2, 4, 14, 15, 16]
+
+  - id: "beatitudine"
+    italia: "beatitudine"
+    transliteracio: ""
+    traduccio: "beatitud"
+    definicio: >
+      Estat de felicitat suprema que el poeta experimenta gràcies a Beatriu.
+      Inicialment resideix en el salut de Beatriu; després de la negació del salut
+      (cap. X-XII), Dante trasllada la seva beatitud a les paraules de lloança
+      (cap. XVIII), la qual cosa marca el gir fonamental de l'obra cap a la
+      poesia de la 'loda' (lloança).
+    usos: [3, 11, 12, 18]
+
+  - id: "dolce-stil-novo"
+    italia: "dolce stil novo"
+    transliteracio: ""
+    traduccio: "dolç estil nou"
+    definicio: >
+      Escola poètica florentina de finals del segle XIII, representada per
+      Guido Guinizelli, Guido Cavalcanti, Dante, Cino da Pistoia i Lapo Gianni.
+      Caracteritzada per la identificació d'amor i cor gentil, la dona angèlica,
+      l'anàlisi dels efectes psicofísics de l'amor, i un estil refinat i musical.
+      La Vita Nuova és l'obra teòrica i narrativa central del moviment.
+
+  - id: "schermo"
+    italia: "schermo della veritade"
+    transliteracio: ""
+    traduccio: "escamot de la veritat / dona-pantalla"
+    definicio: >
+      Estratagema cortès consistent a fingir amor per una altra dona per amagar
+      l'objecte veritable del desig. Dante utilitza dues dones-pantalla successives
+      (caps. V-VII i IX-X) per protegir el secret del seu amor per Beatriu.
+      L'excés de fingiment causa que Beatriu li negui el salut.
+    usos: [5, 6, 7, 9, 10]
+
+  - id: "trovatori"
+    italia: "trovatori / dicitori per rima"
+    transliteracio: ""
+    traduccio: "trobadors / ditors en rima"
+    definicio: >
+      Poetes que componen en llengua vulgar. Al capítol XXV, Dante distingeix entre
+      els poetes llatins clàssics i els nous 'ditors per rima' en vulgar, defensant
+      el dret d'aquests a utilitzar la personificació i altres figures retòriques
+      reservades anteriorment als llatins. El 'primer amic' de Dante és Guido
+      Cavalcanti.
+    usos: [3, 25]
+
+  - id: "ballata"
+    italia: "Ballata"
+    transliteracio: ""
+    traduccio: "Balada"
+    definicio: >
+      Forma poètica musical originàriament lligada a la dansa (de 'ballare'),
+      amb estructura de tornada i estrofes. Dante utilitza una Balada al capítol XII
+      com a missatgera a Beatriu, seguint les instruccions d'Amor aparegut en somni.
+    usos: [12]
+
+  - id: "accidente"
+    italia: "accidente in sostanza"
+    transliteracio: ""
+    traduccio: "accident en substància"
+    definicio: >
+      Concepte filosòfic aristotèlic emprat per Dante al capítol XXV per definir
+      la natura d'Amor: no és una substància independent (ni corporal ni intel·ligent),
+      sinó un accident (qualitat) que existeix en una substància (l'ànima humana).
+      Aquesta precisió filosòfica justifica la llicència poètica de personificar-lo.
+    usos: [25]
+
+  - id: "primavera"
+    italia: "Primavera / prima verrà"
+    transliteracio: ""
+    traduccio: "Primavera / 'primera vindrà'"
+    definicio: >
+      Sobrenom de Joana, la dona de Guido Cavalcanti. Dante al capítol XXIV
+      interpreta el nom com a profecia: 'Prima-vera' = 'prima verrà' (primera
+      vindrà), prefigurant l'arribada de Beatriu, així com Joan Baptista
+      va precedir Crist. És un dels passatges on la tipologia cristiana
+      s'aplica més explícitament a Beatriu.
+    usos: [24]
