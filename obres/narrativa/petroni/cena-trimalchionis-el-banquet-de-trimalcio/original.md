@@ -1,4 +1,3 @@
-# Satyricon
 **Autor:** Petronius
 **Font:** [wikisource](https://la.wikisource.org/wiki/Satyricon)
 **Llengua:** llatí
