@@ -1,5 +1,28 @@
+obra:
+  titol: Vita Nuova (La Vida Nova)
+  titol_original: Vita Nuova
+  autor: Dante Alighieri
+  traductor: Biblioteca Arion
+  any_original: c. 1294
+  any_traduccio: 2026
+  llengua_original: italià
+  genere: narrativa
+  descripcio: Obra juvenil de Dante que narra el seu amor per Beatrice, alternant
+    prosa i poesia (prosímetre). Considerada fundacional de la literatura italiana
+    i del dolce stil novo.
+  estadistiques:
+    paraules_traduccio: 983
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-09'
 avaluacio_final:
-  data: '2026-03-09T02:12:45.539480'
+  data: '2026-03-09T02:58:34.094993'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
@@ -7,10 +30,10 @@ avaluacio_final:
     correccio_linguistica: 0.0
     coherencia: 0.0
     global: 0.0
-  total_errors: 0
+  total_errors: 1114
   errors_critics: 0
   errors_alts: 0
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 0
+  correccions_pendents: 1114

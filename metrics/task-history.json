@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1772928125.1219983,
-        "result": "created"
-      },
-      {
         "timestamp": 1772930219.4716961,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773018508.7644014,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773020469.978863,
         "result": "created"
       }
     ],
@@ -2136,6 +2136,24 @@
     "events": [
       {
         "timestamp": 1773018620.7617645,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_vita_nuovapy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1773020485.528596,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsclean_html_entitiespy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1773020485.9961767,
         "result": "created"
       }
     ],
