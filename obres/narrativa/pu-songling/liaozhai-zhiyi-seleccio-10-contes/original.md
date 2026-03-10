@@ -1,5 +1,3 @@
-# 聊齋誌異 (Liaozhai Zhiyi) — Selecció de 10 contes fantàstics
-
 **Autor**: 蒲松齡 (Pu Songling, 1640-1715)
 **Font**: Wikisource (zh.wikisource.org)
 **Llengua**: xinès clàssic (文言文)
