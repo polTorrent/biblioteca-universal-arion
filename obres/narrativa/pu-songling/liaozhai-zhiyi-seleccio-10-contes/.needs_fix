@@ -1,0 +1,28 @@
+Data: 2026-03-10
+Puntuació global: 1.5/10
+Revisor: Claude (supervisió automàtica)
+
+PROBLEMES CRÍTICS:
+1. TRADUCCIÓ INCOMPLETA: Només hi ha fragments parcials de 2 dels 10 contes (畫皮 i 嬰寧). Els contes 1 (聶小倩), 4 (促織), 5 (席方平), 6 (阿寶), 7 (青鳳), 8 (小翠), 9 (狐嫁女) i 10 (勞山道士) no tenen cap traducció.
+2. ERRORS DE CLI: Múltiples línies "[ERROR: El CLI ha retornat una resposta buida (sense contingut)]" intercalades al fitxer traduccio.md (línies 8-10, 22, 44-46).
+3. COBERTURA: Aproximadament un 5% del text original està traduït. La traducció és essencialment fallida.
+
+PROBLEMES DE FORMAT:
+4. Sense estructura de capítols: No hi ha títols ni separadors per als 10 contes.
+5. El conte 2 (畫皮) comença abruptament sense títol ni introducció.
+6. El conte 3 (嬰寧) apareix com a fragment desconnectat.
+
+PROBLEMES DE METADATA:
+7. metadata.yml té dues seccions "estadistiques" duplicades i contradictòries (1410 vs 204 paraules).
+8. Camps "notes: 0" i "termes_glossari: 0" reflecteixen absència total de notes i glossari.
+9. Qualitat marcada com 0.0, coherent amb l'estat real.
+
+FITXERS ABSENTS:
+10. glossari.yml — No existeix (obligatori per convencions del projecte).
+11. notes.md — No existeix.
+
+ACCIÓ REQUERIDA:
+- Cal refer la traducció completa dels 10 contes.
+- Crear glossari.yml amb termes xinesos clau (noms propis, conceptes culturals).
+- Crear notes.md amb context cultural i literari.
+- Corregir metadata.yml (eliminar duplicats, actualitzar estadístiques).
