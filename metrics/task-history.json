@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1772979551.7246475,
-        "result": "created"
-      },
-      {
         "timestamp": 1772981390.6652045,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773140403.6133413,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773147603.7069495,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773017481.0736077,
-        "result": "created"
-      },
-      {
         "timestamp": 1773017610.0310564,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773140403.1154683,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773147603.0135334,
         "result": "created"
       }
     ],
@@ -2284,6 +2284,15 @@
     "events": [
       {
         "timestamp": 1773126019.038202,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_liaozhai-zhiyi-seleccio-10-contes": {
+    "events": [
+      {
+        "timestamp": 1773147602.7683141,
         "result": "created"
       }
     ],
