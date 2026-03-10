@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773008722.8655145,
-        "result": "created"
-      },
-      {
         "timestamp": 1773009180.1217048,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773104403.2453694,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773111602.7734516,
         "result": "created"
       }
     ],
@@ -2266,6 +2266,15 @@
     "events": [
       {
         "timestamp": 1773104418.2516885,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_anonim-nordic_voluspa-la-profecia-de-la-sibilla": {
+    "events": [
+      {
+        "timestamp": 1773111619.329496,
         "result": "created"
       }
     ],
