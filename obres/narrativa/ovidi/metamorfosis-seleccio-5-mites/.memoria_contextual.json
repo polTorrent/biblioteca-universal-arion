@@ -1,0 +1,44 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Publius Ovidius Naso (43 a.C. - 17/18 d.C.), Sulmo (actual Sulmona), regió dels Peligni, Itàlia central. Poeta romà de l'època augustal, membre de la generació posterior a Virgili i Horaci. Conegut per les seves obres elegíaques (Amores, Ars Amatoria) i les Metamorfosis. Va ser exiliat per August l'any 8 d.C. a Tomis (actual Constança, Romania) per motius mai del tot clarificats, possiblement relacionats amb la seva poesia amorosa i algun escàndol cortesà.",
+    "context_historic": "Període augustal (27 a.C. - 14 d.C.), edat d'or de la literatura llatina. Època de pau i prosperitat després de les guerres civils, amb gran mecenatge cultural. Ovidi va viure la transició de la República a l'Imperi i la consolidació del poder d'August.",
+    "context_obra": "Metamorphoses (2-8 d.C. (completada just abans de l'exili)) - Poema èpic mitològic en hexàmetres dactílics. Obra de maduresa d'Ovidi, concebuda com una épica que rivalitzés amb l'Eneida virgiliana però centrada en la mitologia grega i romana. Possible intent de síntesi universal de les tradicions metamòrfiques antigues.",
+    "influencies": [
+      "poesia alexandrina grega",
+      "Virgili i l'èpica romana",
+      "tradició elegíaca romana (Cal·límac, Properci)",
+      "Homer i la mitologia grega",
+      "tradicions metamòrfiques hel·lenístiques"
+    ],
+    "temes_principals": [
+      "transformacions i metamorfosis com a metàfora del canvi",
+      "amor i passió en totes les seves formes",
+      "relacions conflictives entre déus i mortals",
+      "poder, abús i justícia divina",
+      "la permanència a través del canvi"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Apol·lo (Febo, Delius)",
+    "[H] Personatge històric: Dafne (filla del riu Peneu)",
+    "[H] Personatge històric: Cupido (Amor)",
+    "[H] Personatge històric: la serp Pitó",
+    "[H] Personatge històric: Peneu (déu riu, pare de Dafne)",
+    "[H] Personatge històric: Zeus/Júpiter",
+    "[H] Personatge històric: nombroses nimfes i déus menors",
+    "[C] Referència cultural: topografia sagrada de Delfos",
+    "[C] Referència cultural: cultes oraculars apolinis",
+    "[C] Referència cultural: tradicions d'hospitalitat grega",
+    "[C] Referència cultural: jerarquies divines olímpiques",
+    "[C] Referència cultural: geografia mític de Grècia i Àsia Menor",
+    "[T] Terme tècnic: metamorfosi",
+    "[T] Terme tècnic: epítet (Delius, Peneia)",
+    "[T] Terme tècnic: invocació",
+    "[T] Terme tècnic: personificació de fenòmens naturals",
+    "[T] Terme tècnic: teofània",
+    "[T] Terme tècnic: hierogàmia"
+  ]
+}
