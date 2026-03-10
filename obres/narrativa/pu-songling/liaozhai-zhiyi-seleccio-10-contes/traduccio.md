@@ -1,0 +1,50 @@
+# Liaozhai Zhiyi — Selecció de 10 contes
+*Pu Songling*
+
+Traduït del xinès clàssic per Biblioteca Arion
+
+---
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+
+Un dia va anar al mercat i es trobà amb un taoista que, en veure'l, es quedà perplex. Li preguntà: «Què t'ha passat?» L'estudiant respongué: «Res.» El taoista digué: «Fill, estàs envoltat de forces malignes. Com pots dir que no és res?» L'estudiant ho negà amb fermesa. El taoista se n'anà dient: «Quina ceguesa! Al món hi ha gent que no s'adona que la mort l'espera.»
+Aquelles paraules inquietaren l'estudiant, que començà a sospitar de la dona. Però pensant-hi bé, era una bellesa tan radiosa que no podia ser un esperit maligne. Suposà que el taoista era un farsant que vivia d'exorcismes. Arribà a la porta del seu estudi i la trobà tancada per dins; intrigat, saltà la tàpia i descobrí que també la porta de l'habitació estava tancada. S'hi acostà de puntetes i espià per la finestra. Veié un esperit terrorífic, amb la cara verda i les dents serrades com una serra. Havia estès una pell humana sobre el llit i la pintava amb un pinzell de colors. Després llençà el pinzell, agafà la pell i se la posà com si fos un vestit. Immediatament es transformà en la dona. En veure això, l'estudiant es va espantar i fugí arrossegant-se com una bèstia.
+Cercà el taoista desesperadament sense saber on havia anat. Després de buscar per tot arreu, el trobà al camp i s'agenollà suplicant-li que l'alliberés del mal. El taoista digué: «Aquesta criatura també té les seves penes. Acaba de trobar qui la substitueixi, i jo no tinc cor per matar-la.» Donà a l'estudiant un plomall antimosques i li ordenà que el pengés a la porta del dormitori. Abans de marxar, quedaren de trobar-se al temple de l'Emperador Verd.
+L'estudiant tornà a casa, però no gosà entrar al seu estudi; dormí a l'habitació principal i hi penjà el plomall. Després de la primera vigília, sentí sorolls a fora. No gosà mirar i demanà a la seva dona que ho fes. Només veié la dona que s'acostava, però en veure el plomall no gosà avançar. S'aturà i grinyolà les dents durant una bona estona abans de marxar. Al cap d'una estona tornà i cridà: «El taoista em vol espantar! Però no serà així. Prefereixo empassar-me'l i vomitar-lo després!» Agafà el plomall, el féu bocins, trencà la porta del dormitori i entrà directament al llit. Esquarterà l'estudiant, li arrencà el cor i se n'anà.
+La dona va cridar, la serventa va entrar amb una espelma i trobà l'estudiant mort, amb el pit obert i ple de sang. La senyora Chen plorava espantada sense gosar fer soroll. L'endemà va enviar el seu cunyat, que es deia Erlang, a cercar el taoista. Aquest es posà furiós: «Jo la vaig perdonar, però aquesta dimonia s'ha atrevit a fer això!» Immediatament va anar amb el germà de l'estudiant. La dona ja no era enlloc, però el taoista alçà el cap i mirà als quatre vents: «Per sort no ha fugit gaire lluny. De qui és aquesta casa del pati sud?» Erlang digué: «És la meva.» El taoista digué: «Ara hi és.» Erlang es quedà perplex, pensant que no podia ser. El taoista preguntà: «Ha vingut alguna persona desconeguda?» Respongué: «Jo he anat al temple de l'Emperador Verd ben d'hora i no ho sé. Tornaré a casa a preguntar-ho.» Se n'anà i al cap d'una estona tornà dient: «És veritat. Aquest matí ha vingut una vella que volia treballar de serventa a casa nostra. Ma dona l'ha feta quedar i encara hi és.» El taoista digué: «És la criatura.» I hi anaren plegats.
+El taoista brandà una espasa de fusta, es plantà al mig del pati i cridà: «Dimònia! Torna'm el plomall!» La vella, que era a l'habitació, es posà pàl·lida de terror. Sortí de l'habitació per fugir, però el taoista la perseguí i la colpejà. La vella caigué, la pell humana es despenjà d'un cop i es transformà en un esperit malèfic que jaïa beuglant com un porc. El taoista li tallà el cap amb l'espasa de fusta i el cos es convertí en fum espès que es formà en una pila al terra. El taoista tragué una carbassa, en llevà el tap i la posà enmig del fum. Aquest s'hi introduí amb un xiulet com si algú l'aspirés, i en un instant va desaparèixer tot. El taoista tapà la carbassa i la ficà en un sac. Tots miraren la pell humana: tenia celles, ulls, mans i peus, tot complet. El taoista la enrotllà amb el soroll d'un rotlle de pintura, també la ficà en un sac i es preparà per marxar.
+La senyora Chen el rebé a la porta fent reverències, plorant i demanant-li un mètode per ressuscitar el marit. El taoista s'excusà dient que no en sabia. La Chen plorava més fort i no es volia aixecar del terra. El taoista reflexionà i digué: «Els meus coneixements són limitats, no puc ressuscitar els morts. Però et puc indicar una persona que potser ho podrà fer. Si l'hi demanes, segurament t'ajudarà.» Preguntà: «Qui és?» Respongué: «Al mercat hi ha un boig que de vegades dorm en fems. Prova de demanar-li-ho amb humilitat. Si t'insulta, no t'enfadis.» Erlang també el coneixia. Es van acomiadar del taoista i hi anaren amb la cunyada. Veieren el captaire cantant boig pel carrer, amb mocs de tres pams i tan brut que no s'hi podia apropar. La Chen s'hi acostà de genolls. El captaire rigué: «Bella dama, m'estimes?» La Chen li explicà el cas. Tornà a riure: «Tothom té marit. Per què el vols ressuscitar?» La Chen li suplicà. Aleshores digué: «Què estrany! La gent mor i em demana que la ressusciti. Sóc jo l'Encarregat dels Morts?» S'enfadà i la colpejà amb un bastó. La Chen aguantà el dolor. La gent del mercat s'hi anà aplegant com una paret. El captaire escopí un gruix d'esput, el posà davant la boca de la Chen i digué: «Menja-te'l!» La Chen es posà roja com un tomàquet i vacil·là; però recordant les instruccions del taoista, se'l va menjar a la força. Notà que en baixar-li per la gola era dur com un tros de cotó i li quedà encallat al pit. El captaire rigué fort: «La bella dama m'estima de veres!» Es va aixecar, se n'anà i ja no es girà més. El seguiren fins que entrà al temple. El cercaren, però no el trobaren enlloc; miraren per tot arreu sense èxit i tornaren a casa avergonyits i decebuts.
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+
+Al cap de poc, la minyona va servir el menjar: pollastres tendres ben grassonets. L'àvia el va convidar a menjar i, quan van acabar, la criada va recollir els plats. L'àvia va dir:
+—Crida la Ning.
+La minyona va assentir i va sortir. Al cap d'una estona, se sentia una rialla apagada des de fora. L'àvia va tornar a cridar:
+—Yingning, el teu cosí ve de visita.
+Des de fora, la rialla no s'aturava. La minyona la va empènyer endins; encara es tapava la boca amb les mans, sense poder contenir el riure. L'àvia la va mirar amb enuig:
+—Quan tenim visita, aquest escàndol... Què et passa?
+La noia va reprimir el riure i es va quedar dreta. El jove la va saludar amb una reverència. L'àvia va dir:
+—Aquest és en Wang, fill de la teva tia. La família ni es coneix... Quina vergonya!
+El jove va preguntar:
+—Quants anys té la meva cosina?
+L'àvia no va entendre. El jove ho va repetir. La noia va tornar a riure, sense poder alçar la vista. L'àvia va explicar al jove:
+—Ja veus que li falta educació. Té setze anys, però és innocent com un nadó.
+—Un any menys que jo —va respondre ell.
+—El meu nebot ja en té disset... No serà del any del cavall?
+El jove va assentir. L'àvia va continuar:
+—I la dona del meu nebot?
+—No en tinc —va respondre.
+—Amb el talent i l'aspecte que tens, com és que als disset anys encara no estàs promès? La Yingning tampoc té compromís, us aniríeu bé; llàstima que sigueu parents.
+El jove no va dir res, amb els ulls clavats a Yingning, sense apartar la mirada ni un instant.
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+
+---
+
+*Traducció de domini públic.*
