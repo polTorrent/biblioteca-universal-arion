@@ -811,6 +811,51 @@
       "status": "pending",
       "obra_dir": "obres/poesia/sandor-petofi/seleccio-20-poemes",
       "notes": "Consell Editorial 2026-03-10. Afegeix una NOVA LLENGUA al catàleg: l'hongarès, llengua uraliana sense cap representació fins ara. Sándor Petőfi (1823-1849) és el poeta nacional hongarès i figura central de la Revolució de 1848. Va morir als 26 anys a la batalla de Segesvár, convertint-se en mite romàntic. La selecció inclou poemes emblemàtics: Nemzeti dal (Cançó nacional, l'himne revolucionari), Szeptember végén (Final de setembre, elegia amorosa perfecta), Az Alföld (La Gran Plana), A farkasok dala (La cançó dels llops), János vitéz (fragments). Estil directe, popular, musical — va democratitzar la poesia hongaresa trencant amb l'academicisme. Cap traducció catalana. Text hongarès a Wikisource hongaresa (Magyar Elektronikus Könyvtár)."
+    },
+    {
+      "autor": "Teofrast",
+      "titol": "Els caràcters",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/teofrast/els-caracters",
+      "notes": "Consell Editorial 2026-03-10. Teofrast (Θεόφραστος, c. 371-287 aC), deixeble i successor d'Aristòtil al Liceu. 'Els caràcters' (Χαρακτῆρες) és una col·lecció de 30 retrats satírics de tipus morals — l'adulador, l'avar, el supersticiós, el xafarder — que va fundar el gènere del caràcter literari, influint en La Bruyère, Molière i tota la tradició moralista europea. Prosa breu, mordaç i observacional. No hi ha cap traducció catalana. Text grec a Perseus Digital Library."
+    },
+    {
+      "autor": "Kamo no Chōmei",
+      "titol": "Hōjōki",
+      "llengua": "japonès",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/kamo-no-chomei/hojoki",
+      "notes": "Consell Editorial 2026-03-10. Kamo no Chōmei (鴨長明, 1155-1216), poeta i ermità japonès. 'Hōjōki' (方丈記, 'Cròniques de la meva cabana') és una de les tres grans obres del gènere zuihitsu (assaig japonès), juntament amb 'El llibre del coixí' de Sei Shōnagon (ja al catàleg). Escrita el 1212 des d'una cabana de 3 metres quadrats a les muntanyes de Hino, reflexiona sobre la impermanència (mujō) a través de cinc desastres viscuts: incendi, tornado, trasllat de la capital, fam i terratrèmol. Prosa lírica, contemplativa, profundament budista. Cap traducció catalana. Text japonès clàssic a Aozora Bunko."
+    },
+    {
+      "autor": "Petrarca",
+      "titol": "Selecció de 20 sonets del Canzoniere",
+      "llengua": "italià",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/petrarca/seleccio-20-sonets",
+      "notes": "Consell Editorial 2026-03-10. Francesco Petrarca (1304-1374), pare de l'humanisme i creador del sonet modern. El 'Canzoniere' (Rerum vulgarium fragmenta) conté 366 poemes dedicats majoritàriament a Laura. Selecció de 20 sonets emblemàtics: 'Voi ch'ascoltate in rime sparse il suono' (I), 'Solo et pensoso i più deserti campi' (XXXV), 'Chiare, fresche et dolci acque' (CXXVI), 'Erano i capei d'oro a l'aura sparsi' (XC), entre d'altres. Va definir la lírica amorosa occidental i influir en Ausiàs March, Shakespeare, Garcilaso i tota la tradició petrarquista. Cap traducció catalana recent dels sonets. Text italià a Wikisource italiana i Project Gutenberg."
     }
   ]
 }
