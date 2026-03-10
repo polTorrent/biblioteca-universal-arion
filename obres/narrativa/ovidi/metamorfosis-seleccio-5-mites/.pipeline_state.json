@@ -1,54 +1,34 @@
 {
-  "sessio_id": "ovidi-metamorfosis-selecci-2026-03-10",
+  "sessio_id": "ovidi-metamorfosis-manual-2026-03-11",
   "obra": {
     "autor": "Ovidi",
-    "titol": "Metamorfosis Seleccio 5 Mites",
+    "titol": "Metamorfosis — Selecció de cinc mites",
     "llengua": "llatí"
   },
   "timestamps": {
-    "inici": "2026-03-10T16:06:05.947767",
-    "ultima_activitat": "2026-03-10T17:35:49.553808"
+    "inici": "2026-03-11T00:20:00.000000",
+    "ultima_activitat": "2026-03-11T12:00:00.000000"
   },
-  "fase_actual": "traduccio",
+  "fase_actual": "completat",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio",
+    "validacio"
   ],
   "chunks": {
-    "total": 10,
-    "completats": [
-      "chunk_1",
-      "chunk_2",
-      "chunk_3",
-      "chunk_4",
-      "chunk_5"
-    ],
-    "en_curs": "chunk_6",
-    "pendents": [
-      "chunk_7",
-      "chunk_8",
-      "chunk_9",
-      "chunk_10"
-    ]
+    "total": 5,
+    "completats": ["mite_1", "mite_2", "mite_3", "mite_4", "mite_5"],
+    "en_curs": null,
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.0,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 8.5,
+    "temps_total_min": 0
   },
-  "errors": [
-    "[16:09:49] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
-    "[16:10:36] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
-    "[16:12:56] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
-    "[16:14:58] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
-    "[16:15:40] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
-    "[17:29:38] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
-    "[17:30:14] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
-    "[17:32:55] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
-    "[17:33:37] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
-    "[17:35:49] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)"
-  ],
-  "warnings": [
-    "[16:09:03] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
-  ]
+  "errors": [],
+  "warnings": []
 }

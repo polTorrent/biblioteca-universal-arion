@@ -1,0 +1,24 @@
+obra:
+  titol: Metamorfosis — Selecció de cinc mites
+  titol_original: Metamorphoses (selecta)
+  autor: Ovidi
+  autor_original: Publius Ovidius Naso
+  traductor: Biblioteca Arion
+  any_original: c. 8 dC
+  any_traduccio: 2026
+  llengua_original: llatí
+  genere: narrativa
+  descripcio: >
+    Selecció de cinc mites de les Metamorfosis d'Ovidi: Apol·lo i Dafne,
+    Píram i Tisbe, Eco i Narcís, Dèdal i Ícar, i Orfeu i Eurídice. Cinc relats de
+    transformació que exploren l'amor, la pèrdua i la identitat.
+seccions: 5
+estadistiques:
+  paraules_original: 4200
+  paraules_traduccio: 5715
+  notes: 7
+  termes_glossari: 22
+revisio:
+  estat: revisat
+  qualitat: 8.5
+  data_revisio: '2026-03-11'

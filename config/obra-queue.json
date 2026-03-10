@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-10",
+  "updated_at": "2026-03-11",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -646,7 +646,7 @@
         "latin-library",
         "perseus"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/poesia/catul/carmina-seleccio-25-poemes",
       "notes": "Consell Editorial 2026-03-09. El gran líric romà de la passió, absent del catàleg. Catul (†c. 54 aC) és el poeta més intensament personal de Roma: els seus carmina — breus, ferotges, tendres — inventen la lírica amorosa occidental. Selecció recomanada: 1 (dedica), 2-3 (el pardal de Lèsbia), 5 (vivamus atque amemus), 7, 8, 11, 13, 31, 46, 51 (traducció de Safo), 64 (epili de Peleu i Tetis, fragment), 70, 72, 75, 76, 83, 85 (odi et amo), 87, 92, 96, 101 (ave atque vale), 109. Contrapunt essencial a l'Horaci olímpic i el Virgili pastoral: allà on ells busquen la perfecció formal i la grandesa, Catul desplega una veu nua, directa, violentament emotiva. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
     },

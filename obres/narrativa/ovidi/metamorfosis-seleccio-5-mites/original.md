@@ -1,5 +1,3 @@
-# Metamorfosis — Selecció de 5 mites
-
 **Publi Ovidi Nasó** (*Publius Ovidius Naso*)
 Circa 8 dC
 

@@ -1,0 +1,110 @@
+termes:
+  - terme: "Metamorphoses"
+    transliteracio: "Metamorphōsēs"
+    traduccio: "Metamorfosis / Transformacions"
+    nota: "Poema èpic en 15 llibres d'Ovidi, c. 8 dC"
+
+  - terme: "Phoebus"
+    transliteracio: "Phoebus"
+    traduccio: "Febus (Apol·lo)"
+    nota: "Epítet d'Apol·lo, 'el Brillant'"
+
+  - terme: "Daphne"
+    transliteracio: "Daphnē"
+    traduccio: "Dafne"
+    nota: "Nimfa filla del riu Peneu, transformada en llorer"
+
+  - terme: "laurus"
+    transliteracio: "laurus"
+    traduccio: "llorer"
+    nota: "Arbre sagrat d'Apol·lo, símbol de victòria"
+
+  - terme: "Cupido"
+    transliteracio: "Cupīdō"
+    traduccio: "Cupido / Amor"
+    nota: "Fill de Venus, déu de l'amor"
+
+  - terme: "Pyramus"
+    transliteracio: "Pyramus"
+    traduccio: "Píram"
+    nota: "Jove babiloni, amant de Tisbe"
+
+  - terme: "Thisbe"
+    transliteracio: "Thisbē"
+    traduccio: "Tisbe"
+    nota: "Jove babilònia, amant de Píram"
+
+  - terme: "morus"
+    transliteracio: "mōrus"
+    traduccio: "morera"
+    nota: "Arbre els fruits del qual passen de blancs a foscos per la sang dels amants"
+
+  - terme: "Echo"
+    transliteracio: "Ēchō"
+    traduccio: "Eco"
+    nota: "Nimfa castigada per Juno a repetir només les últimes paraules"
+
+  - terme: "Narcissus"
+    transliteracio: "Narcissus"
+    traduccio: "Narcís"
+    nota: "Fill del Cefís i Liríope, enamorat del seu propi reflex"
+
+  - terme: "Rhamnusia"
+    transliteracio: "Rhamnūsia"
+    traduccio: "Ramnúsia (Nèmesi)"
+    nota: "Deessa de la venjança, del temple de Ramnunt"
+
+  - terme: "Daedalus"
+    transliteracio: "Daedalus"
+    traduccio: "Dèdal"
+    nota: "Artífex mític, constructor del laberint de Creta"
+
+  - terme: "Icarus"
+    transliteracio: "Īcarus"
+    traduccio: "Ícar"
+    nota: "Fill de Dèdal, mort per volar massa a prop del sol"
+
+  - terme: "Orpheus"
+    transliteracio: "Orpheus"
+    traduccio: "Orfeu"
+    nota: "Poeta i músic mític de Tràcia"
+
+  - terme: "Eurydice"
+    transliteracio: "Eurydīcē"
+    traduccio: "Eurídice"
+    nota: "Esposa d'Orfeu, morta per mossegada de serp"
+
+  - terme: "Hymenaeus"
+    transliteracio: "Hymenaios"
+    traduccio: "Himeneu"
+    nota: "Déu del matrimoni"
+
+  - terme: "Tartara"
+    transliteracio: "Tartara"
+    traduccio: "Tàrtar"
+    nota: "Regions més profundes del món subterrani"
+
+  - terme: "Styx"
+    transliteracio: "Styx"
+    traduccio: "Estígia"
+    nota: "Riu de l'inframón pels quals juraven els déus"
+
+  - terme: "Eumenides"
+    transliteracio: "Eumenides"
+    traduccio: "Eumènides (Fúries)"
+    nota: "Deesses de la venjança infernal"
+
+  - terme: "Persephone"
+    transliteracio: "Persephonē"
+    traduccio: "Persèfone"
+    nota: "Reina de l'inframón, esposa de Plutó/Hades"
+
+  - terme: "conubia"
+    transliteracio: "cōnubia"
+    traduccio: "matrimoni / núpcies"
+    nota: "Terme formal per a la unió conjugal"
+
+  - terme: "taedae"
+    transliteracio: "taedae"
+    traduccio: "torxes nupcials"
+    nota: "Símbols del matrimoni romà"
