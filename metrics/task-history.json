@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773009360.0169828,
-        "result": "created"
-      },
-      {
         "timestamp": 1773015106.0558856,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773118802.5220976,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773126003.1789207,
         "result": "created"
       }
     ],
@@ -2275,6 +2275,15 @@
     "events": [
       {
         "timestamp": 1773111619.329496,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_aleksandr-pushkin_el-genet-de-bronze": {
+    "events": [
+      {
+        "timestamp": 1773126019.038202,
         "result": "created"
       }
     ],
