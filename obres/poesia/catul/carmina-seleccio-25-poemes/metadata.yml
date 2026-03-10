@@ -1,0 +1,48 @@
+obra:
+  titol: "Carmina (selecció: 25 poemes)"
+  titol_original: "Carmina"
+  autor: "Catul"
+  autor_original: "Gaius Valerius Catullus"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 60-54 aC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  descripcio: "Selecció de 25 poemes del Liber Catullianus, incloent els famosos poemes d'amor a Lèsbia, l'elegia al germà (CI), l'himne a Diana (XXXIV) i el cèlebre dístic 'Odi et amo' (LXXXV). Catul és el màxim representant de la poesia neotèrica llatina."
+  categoria: "poesia"
+  font: "The Latin Library (domini públic)"
+seccions: 25
+poemes_seleccionats:
+  - "I. Ad Cornelium"
+  - "II. Fletus passeris Lesbiae"
+  - "III. Fletus passeris Lesbiae"
+  - "V. Ad Lesbiam"
+  - "VII. Ad Lesbiam"
+  - "VIII. Ad se ipsum"
+  - "XI. Ad Furium et Aurelium"
+  - "XIII. Ad Fabullum"
+  - "XXXI. Ad Sirmium insulam"
+  - "XXXIV. Carmen Dianae"
+  - "XLIII. Ad Ameanam"
+  - "XLVI."
+  - "XLIX. Ad Marcum Tullium Ciceronem"
+  - "LI. Ad Lesbiam"
+  - "LVIII. Ad Marcum Caelium Rufum"
+  - "LXX."
+  - "LXXII. Ad Lesbiam"
+  - "LXXV. Ad Lesbiam"
+  - "LXXVI. Ad deos"
+  - "LXXXIII. Ad Lesbiam"
+  - "LXXXV."
+  - "LXXXVII. Ad Lesbiam"
+  - "XCII. Ad Lesbiam"
+  - "CI. Ad inferias"
+  - "CIX. Ad Lesbiam"
+estadistiques:
+  paraules_original: 1450
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
