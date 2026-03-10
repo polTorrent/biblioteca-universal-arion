@@ -1,0 +1,58 @@
+{
+  "traduccions": {
+    "蘭若": {
+      "original": "蘭若",
+      "traduccio": "monestir budista",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "劍客": {
+      "original": "劍客",
+      "traduccio": "espadatxí",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Pu Songling (蒲松齡) (1640-1715), Zichuan, província de Shandong, Xina. Escriptor xinès de la dinastia Qing, funcionari menor i professor particular durant gran part de la seva vida. Conegut principalment per la seva col·lecció de contes fantàstics que combinen folklore tradicional amb crítica social subtil.",
+    "context_historic": "Dinastia Qing (1644-1912), període de consolidació manxú sobre Xina. Època de rigor confucià i censura literària, que va portar molts escriptors a utilitzar l'al·legoria i el fantàstic per expressar crítiques socials.",
+    "context_obra": "聊齋誌異 (Liaozhai Zhiyi) (c. 1670-1679 (publicat pòstumament el 1766)) - Col·lecció de contes fantàstics i sobrenaturals (zhiguai xiaoshuo). Escrita durant els anys de joventut de l'autor com a exercici literari i forma de preservar folklore local. Reflecteix la vida quotidiana i les tensions socials de la Xina del segle XVII.",
+    "influencies": [
+      "Literatura fantàstica tradicional xinesa",
+      "Folklore popular",
+      "Confucianisme",
+      "Taoisme",
+      "Tradició oral local"
+    ],
+    "temes_principals": [
+      "Amor entre humans i éssers sobrenaturals",
+      "Crítica a la corrupció oficial",
+      "Justícia kàrmica",
+      "Fantasmes i esperits",
+      "Transformacions i metamorfosis"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Ning Caichen (甯采臣)",
+    "[H] Personatge històric: Nie Xiaoqian (聶小倩)",
+    "[H] Personatge històric: Yan Chixia (燕赤霞)",
+    "[H] Personatge històric: Diversos funcionaris corruptes",
+    "[H] Personatge històric: Esperits femenins",
+    "[H] Personatge històric: Deus i dimonis locals",
+    "[C] Referència cultural: Sistema d'exàmens imperials",
+    "[C] Referència cultural: Budisme i taoisme popular",
+    "[C] Referència cultural: Conceptes de karma i reencarnació",
+    "[C] Referència cultural: Jerarquies socials confucianes",
+    "[C] Referència cultural: Festivals tradicionals xinesos",
+    "[C] Referència cultural: Geomància (feng shui)",
+    "[T] Terme tècnic: Zhiguai (志怪) - literatura de l'estrany",
+    "[T] Terme tècnic: Qi (氣) - energia vital",
+    "[T] Terme tècnic: Yin-yang",
+    "[T] Terme tècnic: Wu wei (無為) - no-acció taoista",
+    "[T] Terme tècnic: Mandarinat - sistema burocràtic imperial"
+  ]
+}
