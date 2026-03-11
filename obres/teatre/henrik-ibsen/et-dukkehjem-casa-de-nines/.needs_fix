@@ -1,0 +1,27 @@
+Supervisió de qualitat — 2026-03-11
+Puntuació: 1.5/10 (NO APROVADA)
+
+PROBLEMES CRÍTICS:
+1. TRADUCCIÓ BUIDA: traduccio.md no conté cap text (només capçalera). La fusió dels chunks no es va completar mai.
+2. TRADUCCIÓ INCOMPLETA: Només 11 de 43 chunks traduïts (~14,6% de l'obra). Falten chunks 2, 5, 8, 10, 12, 13, 14, 17, 18, 19 i del 22 al 43. Els actes 2 i 3 estan gairebé sense traduir.
+3. GLOSSARI INEXISTENT: No existeix el fitxer glossari.yml.
+4. NOTES INEXISTENTS: No existeix el fitxer notes.md.
+
+PROBLEMES DE CONSISTÈNCIA:
+5. Nom inconsistent del personatge Fru Linde: apareix com "Senyora Confronte" (chunks 4, 7, 11, 20, 21), "Fru Confronte" (chunk 6) i "Sra. Confronte" (chunk 9). Caldria unificar. A més, "Confronte" és una traducció dubtosa de "Linde" (nom propi que habitualment no es tradueix).
+6. Inconsistència en el tractament: barreja de "tu" i "vós" dins del mateix diàleg sense justificació (ex. Krogstad/Nora al chunk 15 usa "vós", però altres personatges usen "tu").
+
+PROBLEMES DE METADATA:
+7. metadata.yml: camps duplicats (estadistiques apareix 2 vegades amb valors contradictoris).
+8. metadata.yml: paraules_original: 0 (hauria de ser ~25.900).
+9. metadata.yml: "decisio" sense accent (hauria de ser "decisió") al camp descripcio.
+10. metadata.yml: qualitat 0.0 i aprovat: false (coherent amb l'estat real però no s'ha actualitzat després dels chunks existents).
+
+ACCIONS NECESSÀRIES:
+- Completar la traducció dels 32 chunks restants (prioritat: actes 2 i 3 sencers).
+- Fusionar tots els chunks a traduccio.md.
+- Unificar el nom del personatge (recomanat: "Senyora Linde" o "Fru Linde").
+- Definir i aplicar criteri de tu/vós consistent.
+- Crear glossari.yml amb termes clau (noruec-català).
+- Crear notes.md amb anotacions del traductor.
+- Corregir metadata.yml (eliminar duplicats, afegir estadístiques reals).
