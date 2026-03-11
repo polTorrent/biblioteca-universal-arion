@@ -601,7 +601,7 @@
         "latin-library",
         "perseus"
       ],
-      "status": "in_progress",
+      "status": "validated",
       "obra_dir": "obres/narrativa/ovidi/metamorfosis-seleccio-5-mites",
       "notes": "Consell Editorial 2026-03-09. L'absència més cridanera del catàleg llatí: Ovidi (†17/18 dC) és el poeta narratiu romà per excel·lència, autor de l'obra mitològica més influent de la literatura occidental. Selecció de 5 mites fonamentals: Dafne i Apol·lo (I.452-567), Narcís i Eco (III.339-510), Orfeu i Eurídice (X.1-85, XI.1-66), Pigmalió (X.243-297), Dèdal i Ícar (VIII.183-235). Hexàmetres d'una fluïdesa i elegància incomparables, amb transicions narratives que fonen un mite en l'altre. Complement essencial a Virgili i Horaci al catàleg llatí. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
     },
@@ -676,7 +676,7 @@
         "wikisource",
         "ganjoor"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/oriental/rumi/masnavi-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-09. Complement essencial a Omar Khayyam: si les Rubaiyat expressen l'escepticisme hedonista, el Masnavi de Rumi és la veu mística sufí, 'el Corà en persa' segons Jāmī. Jalāl al-Dīn Rūmī (†1273), poeta i místic de Konya, és l'autor més llegit del món islàmic i un dels poetes més traduïts de la història. El Masnavi-ye Ma'navi (c. 1258-1273) conté 25.000 dístics organitzats en 6 llibres: contes, paràboles i al·legories que il·luminen la cerca de Déu, l'amor diví i la transformació interior. Selecció de 10 contes representatius: la flauta de canya (proemi), el lloro i el mercader, l'elefant a les fosques, Moisès i el pastor, el lleó i la llebre, la ciutat dels cecs, l'home que trucava a la porta de Déu, el jardiner i les tres fruites, el gramàtic i el barquer, la llàntia i l'oli. Cap traducció catalana directa del persa. Text persa a Wikisource persa i Ganjoor.net."
     },
