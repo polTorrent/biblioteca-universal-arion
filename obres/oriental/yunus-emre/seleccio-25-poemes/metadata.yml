@@ -1,0 +1,59 @@
+obra:
+  titol: "Selecció de 25 poemes"
+  titol_original: "Divan-ı Yunus Emre (seçme 25 şiir)"
+  autor: "Yunus Emre"
+  autor_original: "يونس امره"
+  traductor: "Biblioteca Universal Arion (IA + revisió humana)"
+  any_original: "c. 1300-1320"
+  any_traduccio: 2026
+  llengua_original: "turc antic (anatolià)"
+  genere: "poesia/oriental"
+  descripcio: >
+    Selecció de 25 poemes del Divan de Yunus Emre (c. 1238–1320), un dels pares
+    de la literatura turca i gran poeta místic sufi. Els seus versos, escrits en turc
+    anatolià popular (no en persa ni àrab cortesà), expressen l'amor diví, la recerca
+    espiritual, la fugacitat del món i la fraternitat humana amb un llenguatge accessible
+    i profundament líric. La seva obra influí decisivament en la poesia turca posterior
+    i en el moviment dels derviches.
+  temes:
+    - sufisme
+    - amor diví (aşk)
+    - mística
+    - fugacitat del món
+    - fraternitat humana
+    - recerca espiritual
+    - poesia turca medieval
+tradicio_textual:
+  versions_principals:
+    - llengua: turc antic anatolià
+      tipus: Divan-ı Yunus Emre (manuscrits diversos, s. XIV-XVI)
+      nota: >
+        Existeixen diversos manuscrits del Divan, cap autògraf. Les edicions
+        modernes principals són les de Burhan Toprak (1933-34), Abdülbâki Gölpınarlı
+        (1943) i Mustafa Tatcı (1990-91).
+  edicio_base: >
+    Textos basats en les edicions crítiques modernes del Divan de Yunus Emre,
+    especialment Tatcı (1990-91) i Gölpınarlı (1943). Domini públic (obres del s. XIV).
+seccions: 25
+estadistiques:
+  paraules_original: 2850
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
+llicencia:
+  tipus: CC BY-SA 4.0
+  nota: >
+    Text original de domini públic (obra del segle XIV). Traducció sota CC BY-SA 4.0.
+context_historic: >
+  Yunus Emre (c. 1238–1320) és considerat el pare de la poesia turca en llengua
+  vernacla. En una època en què la literatura culta de l'Àsia Menor s'escrivia en
+  persa i àrab, Yunus Emre optà pel turc anatolià del poble. Deixeble del xeic sufi
+  Taptuk Emre, la seva poesia combina la tradició mística de l'Islam amb un lirisme
+  popular i directe. Va ser declarat Personalitat de l'Any per la UNESCO el 1991.
+  Els seus poemes es reciten encara avui a Turquia i són part fonamental del cànon
+  literari turc. La seva influència s'estén a poetes posteriors com Karacaoğlan,
+  Pir Sultan Abdal i Âşık Veysel.
