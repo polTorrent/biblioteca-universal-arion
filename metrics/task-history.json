@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773009056.5753653,
-        "result": "created"
-      },
-      {
         "timestamp": 1773015106.4824116,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773190803.4891908,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773198003.8962839,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773039603.4048603,
-        "result": "created"
-      },
-      {
         "timestamp": 1773046802.9903476,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773190803.015105,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773198003.4086394,
         "result": "created"
       }
     ],
@@ -2293,6 +2293,24 @@
     "events": [
       {
         "timestamp": 1773147602.7683141,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_et-dukkehjem-casa-de-nines": {
+    "events": [
+      {
+        "timestamp": 1773198003.219088,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_narrativa_lev-tolstoi_quanta-terra-necessita-un-home-i-altres-contes": {
+    "events": [
+      {
+        "timestamp": 1773198019.4918942,
         "result": "created"
       }
     ],
