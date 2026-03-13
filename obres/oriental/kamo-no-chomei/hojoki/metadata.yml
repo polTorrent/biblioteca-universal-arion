@@ -22,8 +22,8 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: revisat
-  qualitat: 0.0
+  estat: necessita_correccio
+  qualitat: 4.0
   data_revisio: '2026-03-13'
 avaluacio_final:
   data: '2026-03-13T12:45:46.929786'
