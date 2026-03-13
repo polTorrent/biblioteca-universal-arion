@@ -12,7 +12,7 @@ obra:
     el temps, i recerca espiritual.
   genere: poesia
   estadistiques:
-    paraules_traduccio: 112
+    paraules_traduccio: 139
 seccions: 20
 estadistiques:
   paraules_original: 0
@@ -21,10 +21,10 @@ estadistiques:
   termes_glossari: 0
 revisio:
   estat: revisat
-  qualitat: 0.0
+  qualitat: 10.0
   data_revisio: '2026-03-13'
 avaluacio_final:
-  data: '2026-03-13T19:47:25.848936'
+  data: '2026-03-13T22:54:08.949230'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
