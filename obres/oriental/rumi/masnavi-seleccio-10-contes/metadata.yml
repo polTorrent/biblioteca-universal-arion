@@ -22,13 +22,13 @@ obra:
 seccions: 11
 estadistiques:
   paraules_original: 4200
-  paraules_traduccio: 4500
-  notes: 15
-  termes_glossari: 18
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 20
 revisio:
-  estat: revisat
-  qualitat: 0.0
-  data_revisio: '2026-03-11'
+  estat: pendent
+  qualitat: 1.5
+  data_revisio: '2026-03-13'
 avaluacio_final:
   data: '2026-03-11T04:55:14.878990'
   puntuacions:

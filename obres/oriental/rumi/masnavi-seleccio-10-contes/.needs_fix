@@ -1,0 +1,22 @@
+Data: 2026-03-13
+Puntuació: 1.5/10
+Revisor: Supervisió automàtica
+
+PROBLEMES CRÍTICS:
+1. [CRÍTIC] traduccio.md està BUIT — no conté cap text traduït, només la capçalera amb títol i autor. L'obra sencera resta per traduir.
+2. [CRÍTIC] metadata.yml conté estadístiques falses: diu "paraules_traduccio: 4500" quan en realitat n'hi ha 0.
+3. [CRÍTIC] metadata.yml diu "estat: revisat" quan l'obra no s'ha traduït.
+4. [CRÍTIC] No hi ha fitxer notes.md (requerit per una obra d'aquesta complexitat).
+5. [CRÍTIC] No hi ha fitxer introduccio.md (recomanat per contextualitzar Rumi i el Masnavi).
+
+ELEMENTS CORRECTES:
+- glossari.yml: ben elaborat amb 20 termes, transliteracions i context sufí adequat.
+- metadata.yml: estructura correcta, descripció de l'obra acurada, font Gutenberg identificada.
+- original.md: text font present (Redhouse 1881, Gutenberg #61724).
+
+ACCIONS REQUERIDES:
+1. Traduir els 10 contes del Llibre Primer del Masnavi (Proemi + contes I-X) al català.
+2. Corregir estadístiques a metadata.yml (paraules_traduccio, notes, qualitat).
+3. Crear notes.md amb notes del traductor.
+4. Crear introduccio.md amb context sobre Rumi i el Masnavi.
+5. Posar metadata.yml estat a "en_curs" fins que la traducció estigui completa.
