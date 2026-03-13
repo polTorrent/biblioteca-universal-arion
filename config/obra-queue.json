@@ -992,6 +992,53 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/firdawsi/shahnameh-rostam-i-sohrab",
       "notes": "Consell Editorial 2026-03-13. Abul-Qàsem Firdawsí (c. 940–1020), poeta persa, autor del Shahnameh (شاهنامه, Llibre dels Reis, c. 1010), l'epopeia nacional de Pèrsia i una de les obres més llargues de la literatura mundial (50.000 dístics). L'episodi de Rostam i Sohrab és el passatge més cèlebre: l'heroi Rostam mata en combat el seu propi fill Sohrab sense reconèixer-lo, una tragèdia d'identitat i destí que ha inspirat Matthew Arnold i nombrosos artistes. El catàleg té poesia persa (Omar Khayyam, Rumi) però cap narrativa èpica persa. Cap traducció catalana de cap fragment del Shahnameh. Text persa a Wikisource i traduccions al domini públic a Gutenberg."
+    },
+    {
+      "autor": "Tàcit",
+      "titol": "Germania",
+      "llengua": "llatí",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "latin_library",
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/tacit/germania",
+      "notes": "Consell Editorial 2026-03-13. Publius Cornelius Tacitus (c. 56–120 dC), historiador romà. De origine et situ Germanorum (98 dC) és una breu monografia etnogràfica sobre els pobles germànics: costums, religió, govern, vida quotidiana. Text fundacional de l'etnografia europea i document essencial per comprendre els pobles del nord de l'Imperi. El catàleg té assaig de Ciceró, Plutarc, Rilke i Sei Shōnagon, però cap historiografia ni etnografia romana. La prosa de Tàcit, densa i epigramàtica, és un repte estilístic interessant. Cap traducció catalana recent accessible. Text llatí complet a Latin Library i Perseus."
+    },
+    {
+      "autor": "Teocrit",
+      "titol": "Idil·lis (selecció)",
+      "llengua": "grec",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/teocrit/idillis",
+      "notes": "Consell Editorial 2026-03-13. Teocrit de Siracusa (c. 300–260 aC), poeta grec hel·lenístic, fundador de la poesia bucòlica i pastoral. Els Idil·lis (Εἰδύλλια) estableixen el gènere que influirà Virgili (Bucòliques), el Renaixement i tota la tradició pastoral europea. Selecció de 10 idil·lis representatius (I, II, III, VI, VII, X, XI, XV, XXIV, XXX) que cobreixen pastoral, mim urbà, epil·li i poesia amorosa. El catàleg inclou poesia grega arcaica (Safo, Hesíode) i clàssica (Pindar via Horaci) però manca completament el període hel·lenístic. Cap traducció catalana moderna dels Idil·lis. Text grec a Perseus."
+    },
+    {
+      "autor": "Vishnu Sharma",
+      "titol": "Panchatantra (Llibre I: Mitrabheda)",
+      "llengua": "sànscrit",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "sacred_texts",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/vishnu-sharma/panchatantra-llibre-i",
+      "notes": "Consell Editorial 2026-03-13. Vishnu Sharma (datat entre s. III aC i s. V dC), compilador del Panchatantra (पञ्चतन्त्र), la col·lecció de faules amb animals més influent de la literatura mundial. El Llibre I (Mitrabheda, 'La pèrdua dels amics') narra la història del bou Sanjeevaka i el lleó Pingalaka, trencats per la intriga del xacal Damanaka: una reflexió sobre l'amistat, la manipulació política i el poder. Origen directe de Kalila i Dimna (àrab), Stephanites kai Ichnelates (grec bizantí), i influència decisiva sobre La Fontaine, els Germans Grimm i la tradició fabulística europea. El catàleg té Kalidasa (teatre/poesia sànscrita) però cap narrativa sànscrita. Cap traducció catalana del Panchatantra. Text sànscrit a Wikisource; traducció anglesa d'Arthur W. Ryder (1925) al domini públic a Gutenberg."
     }
   ]
 }
