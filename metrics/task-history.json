@@ -254,10 +254,6 @@
   "fix_": {
     "events": [
       {
-        "timestamp": 1772261120.3558917,
-        "result": "created"
-      },
-      {
         "timestamp": 1772267939.178675,
         "result": "created"
       },
@@ -331,6 +327,10 @@
       },
       {
         "timestamp": 1773200175.070851,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773387611.473562,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773140403.1154683,
-        "result": "created"
-      },
-      {
         "timestamp": 1773147603.0135334,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773385769.1373067,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773387611.957721,
         "result": "created"
       }
     ],
