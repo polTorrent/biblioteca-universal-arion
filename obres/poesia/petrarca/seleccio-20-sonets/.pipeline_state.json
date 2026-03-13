@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-13T18:30:24.035229",
-    "ultima_activitat": "2026-03-13T18:38:33.319987"
+    "ultima_activitat": "2026-03-13T19:47:19.476557"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -28,7 +28,7 @@
   },
   "metriques": {
     "qualitat_mitjana": 8.0,
-    "temps_total_min": 1.15
+    "temps_total_min": 0.0
   },
   "errors": [
     "[18:32:04] Error chunk 1: could not convert string to float: 'N/A'"

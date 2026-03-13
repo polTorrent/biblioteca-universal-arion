@@ -20,11 +20,11 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: needs_fix
+  estat: revisat
   qualitat: 0.0
   data_revisio: '2026-03-13'
 avaluacio_final:
-  data: '2026-03-13T18:38:33.739327'
+  data: '2026-03-13T19:47:25.848936'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
