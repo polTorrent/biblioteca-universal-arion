@@ -2,6 +2,37 @@
   "traduccions": {},
   "personatges": {},
   "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  "context_investigacio": {
+    "autor_bio": "Kamo no Chōmei (鴨長明) (1155 - 1216), Kyoto, Japó. Poeta, assagista i funcionari de la cort imperial japonesa que va abandonar la vida aristocràtica per convertir-se en monjo budista i ermità. Va ser testimoni de grans desastres naturals i convulsions socials del seu temps, experiències que van inspirar la seva obra mestra. Els seus darrers anys els va passar en una petita cabana de deu peus quadrats (hōjō) als turons de Hino, prop de Kyoto.",
+    "context_historic": "Període de transició entre l'era Heian tardana i el període Kamakura primerenc (finals s. XII - inicis s. XIII). Època marcada per les guerres Genpei (1180-1185), la caiguda de l'aristocràcia de la cort i l'ascens de la classe guerrera samurai. Kyoto va patir incendis, fams, terratrèmols i convulsions polítiques que van marcar profundament l'autor.",
+    "context_obra": "Hōjōki (方丈記) (c. 1212) - Zuihitsu (assaig literari/records personals). Escrit durant els anys d'ermità de l'autor en la seva cabana de Hino, com a reflexió sobre les calamitats presenciades i la vanitat de les ambicions mundanes. L'obra reflecteix la seva decisió de retirar-se del món després de haver estat testimoni de desastres naturals i socials devastadors.",
+    "influencies": [
+      "Budisme zen i de la Terra Pura",
+      "Poesia clàssica japonesa (waka)",
+      "Filosofia de la impermanència (mujō)",
+      "Literatura de retir eremític (inja bungaku)"
+    ],
+    "temes_principals": [
+      "Impermanència (mujō) de totes les coses",
+      "Desastres naturals com a manifestació de la fragilitat humana",
+      "Crítica a la societat aristocràtica i les seves vanitats",
+      "Vida eremítica com a camí espiritual",
+      "Relació entre l'ésser humà i la natura"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Emperador Go-Toba",
+    "[H] Personatge històric: Funcionaris de la cort imperial",
+    "[H] Personatge històric: Monjos budistes contemporanis",
+    "[C] Referència cultural: Concepte budista de mujō (impermanència)",
+    "[C] Referència cultural: Tradició eremítica japonesa (inja)",
+    "[C] Referència cultural: Desastres històrics específics (incendi d'Ōji 1177, fam de Yōwa 1181)",
+    "[C] Referència cultural: Arquitectura de cabanes eremítiques (hōjō)",
+    "[C] Referència cultural: Poesia waka clàssica",
+    "[T] Terme tècnic: Hōjō (cabana de deu peus quadrats)",
+    "[T] Terme tècnic: Mujō (impermanència)",
+    "[T] Terme tècnic: Inja (ermità)",
+    "[T] Terme tècnic: Zuihitsu (assaig seguint el pinzell)",
+    "[T] Terme tècnic: Waka (poesia clàssica de 31 síl·labes)"
+  ]
 }
