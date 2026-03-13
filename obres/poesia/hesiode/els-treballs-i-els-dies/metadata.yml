@@ -1,0 +1,41 @@
+obra:
+  titol: Els treballs i els dies
+  titol_original: Ἔργα καὶ Ἡμέραι
+  autor: Hesíode
+  autor_original: Ἡσίοδος
+  traductor: Biblioteca Arion
+  any_original: c. 700 aC
+  any_traduccio: 2026
+  llengua_original: grec
+  genere: poesia
+  descripcio: Poema didàctic sobre el treball agrícola, la justícia divina i la vida
+    quotidiana a la Grècia arcaica. Hesíode s'adreça al seu germà Perses per ensenyar-li
+    els valors del treball honest.
+  estadistiques:
+    paraules_traduccio: 975
+seccions: 1
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-13'
+avaluacio_final:
+  data: '2026-03-13T18:15:11.592676'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 10
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 9

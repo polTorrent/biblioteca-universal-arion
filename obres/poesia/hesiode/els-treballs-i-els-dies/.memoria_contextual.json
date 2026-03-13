@@ -1,0 +1,43 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Hesíode de Ascra (c. 750-650 a.C.), Ascra, Beòcia (Grècia central). Poeta èpic grec, considerat junt amb Homer un dels primers i més influents poetes de la literatura grega. Fill d'un comerciant d'Àsia Menor establert a Beòcia, va viure com a pagès i va reflectir en la seva obra la vida rural i les tensions socials de la seva època.",
+    "context_historic": "Grècia arcaica (s. VIII-VII a.C.), època de formació de les polis, renaixement cultural després de l'edat fosca, desenvolupament de l'alfabet i codificació de les tradicions orals",
+    "context_obra": "Ἔργα καὶ Ἡμέραι (Erga kai Hemerai) (c. 700 a.C.) - Poesia èpica didàctica. Escrita per al seu germà Perses després d'un conflicte per l'herència paterna, com a manual moral i pràctic per a la vida camperola",
+    "influencies": [
+      "tradició oral grega",
+      "poesia épica micènica",
+      "saviesa popular camperola",
+      "tradicions mitològiques"
+    ],
+    "temes_principals": [
+      "ètica del treball",
+      "justícia divina",
+      "agricultura i calendari rural",
+      "decadència moral de la humanitat",
+      "saviesa pràctica per a la vida"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Perses (germà de l'autor)",
+    "[H] Personatge històric: Zeus",
+    "[H] Personatge històric: Prometeu",
+    "[H] Personatge històric: Pandora",
+    "[H] Personatge històric: Hecate",
+    "[H] Personatge històric: reis devoradors de regals",
+    "[H] Personatge històric: les Muses",
+    "[C] Referència cultural: mite de Pandora",
+    "[C] Referència cultural: les cinc edats (or, plata, bronze, herois, ferro)",
+    "[C] Referència cultural: fàbula del falcó i el rossinyol",
+    "[C] Referència cultural: festivitats religioses gregues",
+    "[C] Referència cultural: pràctiques agrícoles arcaiques",
+    "[T] Terme tècnic: arete (virtut)",
+    "[T] Terme tècnic: dike (justícia)",
+    "[T] Terme tècnic: hybris (desmesura)",
+    "[T] Terme tècnic: ponos (treball/esforç)",
+    "[T] Terme tècnic: eris (discòrdia)",
+    "[T] Terme tècnic: hexàmetre dactílic"
+  ]
+}
