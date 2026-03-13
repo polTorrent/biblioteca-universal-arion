@@ -1,0 +1,22 @@
+obra:
+  titol: "Diàlegs dels Morts (selecció de 10 diàlegs)"
+  titol_original: "Νεκρικοὶ Διάλογοι"
+  autor: "Lucià de Samòsata"
+  autor_original: "Λουκιανός ὁ Σαμοσατεύς"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 170 dC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  descripcio: "Selecció de 10 diàlegs satírics ambientats al món dels morts, on personatges mitològics, filòsofs i conqueridors debaten sobre la vanitat de la vida terrenal."
+seccions: 10
+estadistiques:
+  paraules_original: 4019
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
+fonts:
+  - "el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
