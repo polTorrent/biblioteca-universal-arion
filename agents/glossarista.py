@@ -13,7 +13,7 @@ if TYPE_CHECKING:
 
 
 # Tipus de llengües suportades
-SupportedLanguage = Literal["llatí", "grec", "anglès", "alemany", "francès", "japonès", "xinès"]
+SupportedLanguage = Literal["llatí", "grec", "anglès", "alemany", "francès", "japonès", "xinès", "italià", "rus", "portuguès"]
 
 
 class GlossaryEntry(BaseModel):

@@ -1,0 +1,39 @@
+{
+  "sessio_id": "francesco-petrarca-selecció-de-20-sonet-2026-03-13",
+  "obra": {
+    "autor": "Francesco Petrarca",
+    "titol": "Selecció de 20 Sonets del Canzoniere",
+    "llengua": "italià"
+  },
+  "timestamps": {
+    "inici": "2026-03-13T18:30:24.035229",
+    "ultima_activitat": "2026-03-13T18:38:33.319987"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 1,
+    "completats": [
+      "chunk_1"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 8.0,
+    "temps_total_min": 1.15
+  },
+  "errors": [
+    "[18:32:04] Error chunk 1: could not convert string to float: 'N/A'"
+  ],
+  "warnings": [
+    "[18:31:12] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='italià', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
