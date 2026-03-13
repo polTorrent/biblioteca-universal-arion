@@ -1,4 +1,3 @@
-# The Mesnevi
 **Autor:** desconegut
 **Font:** [gutenberg](https://www.gutenberg.org/ebooks/61724)
 **Llengua:** desconeguda
