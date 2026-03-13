@@ -25,7 +25,7 @@ for title, slug in poems.items():
             c = re.sub(r'<br\s*/?>', '\n', c)
             c = re.sub(r'<[^>]+>', '', c)
             c = h.unescape(c)
-            lines = [l.strip() for l in c.strip().split('\n')]
+            lines = [line.strip() for line in c.strip().split('\n')]
             while lines and not lines[0]:
                 lines.pop(0)
             while lines and not lines[-1]:
