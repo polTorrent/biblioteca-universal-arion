@@ -1,0 +1,41 @@
+obra:
+  titol: "Quanta terra necessita un home? i altres contes breus"
+  titol_original: "Много ли человеку земли нужно? и другие рассказы"
+  autor: "Lev Tolstoi"
+  autor_original: "Лев Николаевич Толстой"
+  traductor: "Editorial Clàssica"
+  any_original: "1858-1886"
+  any_traduccio: 2026
+  llengua_original: "rus"
+  descripcio: >
+    Selecció de cinc contes breus morals de Lev Tolstoi: «Quanta terra necessita un home?» (1886),
+    «Tres morts» (1858), «Dos vells» (1885), «De què viuen els homes» (1881) i «La candela» (1885).
+    Contes de gran profunditat espiritual que exploren la cobdícia, la mort, la fe, l'amor i la justícia.
+  font: "Wikisource (ru.wikisource.org)"
+  llicencia_original: "Domini públic"
+  contes:
+    - titol: "Quanta terra necessita un home?"
+      titol_original: "Много ли человеку земли нужно?"
+      any: 1886
+    - titol: "Tres morts"
+      titol_original: "Три смерти"
+      any: 1858
+    - titol: "Dos vells"
+      titol_original: "Два старика"
+      any: 1885
+    - titol: "De què viuen els homes"
+      titol_original: "Чем люди живы"
+      any: 1881
+    - titol: "La candela"
+      titol_original: "Свечка"
+      any: 1885
+seccions: 5
+estadistiques:
+  paraules_original: 21295
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
