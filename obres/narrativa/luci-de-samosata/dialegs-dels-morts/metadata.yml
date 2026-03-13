@@ -1,0 +1,94 @@
+title: Diàlegs dels morts (selecció de 10 diàlegs)
+author: Luci de Samòsata
+source_language: grec
+status: pendent
+quality_score: 0.0
+date: '2026-03-13'
+
+obra:
+  titol: Diàlegs dels morts (selecció de 10 diàlegs)
+  titol_original: Νεκρικοὶ Διάλογοι
+  autor: Luci de Samòsata
+  autor_original: Λουκιανὸς ὁ Σαμοσατεύς
+  traductor: Biblioteca Arion (IA + comunitat)
+  any_original: c. 165 dC
+  any_traduccio: 2026
+  llengua_original: grec
+  genere: narrativa
+  subgenere: diàleg satíric
+  descripcio: |
+    Selecció de deu diàlegs dels trenta que componen els Νεκρικοὶ Διάλογοι
+    de Llucià de Samòsata. Ambientats a l'Hades, els morts — herois, reis,
+    filòsofs i déus — conversen amb ironia mordaç sobre la vanitat de la vida,
+    la futilitat de la riquesa i la igualtat universal davant la mort.
+    Menip el Cínic hi fa de fil conductor, ridiculitzant les pretensions
+    dels poderosos i els savis. Obra mestra de la sàtira antiga, precursora
+    del diàleg filosòfic humorístic europeu.
+
+  font_original: "Edició M.D. Macleod, Luciani Opera (Oxford Classical Texts, 1972-1987)"
+  domini_public: true
+
+  temes:
+    - sàtira
+    - mort i igualtat
+    - vanitat humana
+    - filosofia cínica
+    - crítica del poder
+    - desmitificació
+
+  context:
+    tradicio: Segona Sofística grega
+    influencies:
+      - Menip de Gàdara
+      - Diògenes de Sinope
+      - Aristòfanes
+      - tradició cínica
+    obres_relacionades:
+      - Diàlegs dels déus (Llucià)
+      - Icaromenip (Llucià)
+      - Història veritable (Llucià)
+      - Menip o la Necromància (Llucià)
+
+  dialeg_seleccio:
+    - num: 1
+      titol: Diògenes i Pòl·lux
+      personatges: [Diògenes, Pòl·lux]
+    - num: 2
+      titol: Caront, Menip i Hermes
+      personatges: [Caront, Menip, Hermes]
+    - num: 3
+      titol: Menip, Amfíloc i Trofoni
+      personatges: [Menip, Amfíloc, Trofoni]
+    - num: 4
+      titol: Hermes i Caront
+      personatges: [Hermes, Caront]
+    - num: 5
+      titol: Plutó i Hermes
+      personatges: [Plutó, Hermes]
+    - num: 10
+      titol: Caront i Hermes (l'embarcament)
+      personatges: [Caront, Hermes, Menip, Carmòleos]
+    - num: 13
+      titol: Diògenes i Alexandre
+      personatges: [Diògenes, Alexandre]
+    - num: 20
+      titol: Menip, Èac i altres
+      personatges: [Menip, Èac, Pitàgores]
+    - num: 22
+      titol: Caront i Menip
+      personatges: [Caront, Menip]
+    - num: 26
+      titol: Menip i Quiró
+      personatges: [Menip, Quiró]
+
+  estadistiques:
+    paraules_original: 4200
+    seccions: 10
+    notes: 0
+    termes_glossari: 0
+
+revisio:
+  estat: pendent
+  qualitat: 0.0
+  data_revisio: null
+  requereix_revisio_humana: false
