@@ -1,14 +1,17 @@
 obra:
-  titol: "De Consolatione Philosophiae - Llibre I"
-  titol_original: "De Consolatione Philosophiae - Liber Primus"
-  autor: "Boeci"
-  autor_original: "Anicius Manlius Severinus Boethius"
-  traductor: "Biblioteca Arion"
-  any_original: "c. 524 dC"
+  titol: De Consolatione Philosophiae - Llibre I
+  titol_original: De Consolatione Philosophiae - Liber Primus
+  autor: Boeci
+  autor_original: Anicius Manlius Severinus Boethius
+  traductor: Biblioteca Arion
+  any_original: c. 524 dC
   any_traduccio: 2026
-  llengua_original: "llatí"
-  genere: "filosofia"
-  descripcio: "Primer llibre de La Consolació de la Filosofia, escrit per Boeci a la presó mentre esperava l'execució. Diàleg entre Boeci i la Filosofia personificada, alternant prosa i vers (prosimetrum)."
+  llengua_original: llatí
+  genere: filosofia
+  descripcio: Primer llibre de La Consolació de la Filosofia, escrit per Boeci a la
+    presó mentre esperava l'execució. Diàleg entre Boeci i la Filosofia personificada,
+    alternant prosa i vers (prosimetrum).
+  estadistiques: {}
 seccions: 7
 estadistiques:
   paraules_original: 0
@@ -16,6 +19,22 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-13'
+avaluacio_final:
+  data: '2026-03-13T14:43:39.692559'
+  puntuacions:
+    fidelitat: 1.0
+    veu_autor: 1.0
+    fluidesa: 3.0
+    correccio_linguistica: 6.0
+    coherencia: 1.0
+    global: 2.1
+  total_errors: 10
+  errors_critics: 7
+  errors_alts: 2
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 1

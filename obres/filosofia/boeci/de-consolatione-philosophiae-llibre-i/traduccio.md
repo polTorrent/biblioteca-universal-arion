@@ -1,5 +1,5 @@
-# de-consolatione-philosophiae-llibre-i
-*boeci*
+# De Consolatione Philosophiae - Llibre I
+*Boeci*
 
 Traduït del llatí per Biblioteca Arion
 
