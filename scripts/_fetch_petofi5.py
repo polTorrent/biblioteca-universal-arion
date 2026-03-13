@@ -4,7 +4,6 @@ import urllib.request
 import urllib.parse
 import json
 import re
-import html as h
 
 poems = {
     'Befordúltam a konyhára...': 'Befordúltam a konyhára...',
@@ -28,8 +27,12 @@ for title, page_title in poems.items():
         if 'parse' in data and 'wikitext' in data['parse']:
             wikitext = data['parse']['wikitext']['*']
             # Extract poem from wikitext - remove templates and wiki markup
-            # Remove {{...}} templates
-            wikitext = re.sub(r'\{\{[^}]*\}\}', '', wikitext)
+            # Remove {{...}} templates (handles nesting)
+            while '{{' in wikitext:
+                cleaned = re.sub(r'\{\{[^{}]*\}\}', '', wikitext)
+                if cleaned == wikitext:
+                    break
+                wikitext = cleaned
             # Remove [[Category:...]]
             wikitext = re.sub(r'\[\[Kategória:[^\]]*\]\]', '', wikitext)
             wikitext = re.sub(r'\[\[Category:[^\]]*\]\]', '', wikitext)
