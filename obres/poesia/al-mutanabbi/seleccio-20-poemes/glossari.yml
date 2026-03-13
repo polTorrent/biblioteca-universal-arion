@@ -1,0 +1,75 @@
+termes:
+  - original: "قصيدة"
+    transliteracio: "qaṣīda"
+    traduccio: "oda, poema llarg"
+    notes: "Forma poètica àrab clàssica amb rima única (monorimada) i metre fix. Estructura tripartita: nasīb (preludi amorós), raḥīl (viatge) i madīḥ (lloança)."
+
+  - original: "بيت"
+    transliteracio: "bayt"
+    traduccio: "vers, dístic"
+    notes: "Unitat bàsica de la poesia àrab. Cada bayt consta de dos hemistiquis (ṣadr i ʿajuz) separats per una cesura."
+
+  - original: "ديوان"
+    transliteracio: "dīwān"
+    traduccio: "cançoner, recull poètic"
+    notes: "Col·lecció completa de l'obra poètica d'un autor. El Dīwān d'al-Mutanabbī conté unes 326 composicions."
+
+  - original: "مدح"
+    transliteracio: "madḥ / madīḥ"
+    traduccio: "panegíric, lloança"
+    notes: "Gènere poètic de lloança a un mecenes o governant. Al-Mutanabbī va dedicar nombrosos madḥ a Sayf al-Dawla."
+
+  - original: "فخر"
+    transliteracio: "fakhr"
+    traduccio: "autoelogi, jactància poètica"
+    notes: "Gènere en què el poeta es lloa a si mateix. Al-Mutanabbī n'és el mestre indiscutible en la tradició àrab."
+
+  - original: "هجاء"
+    transliteracio: "hijāʾ"
+    traduccio: "sàtira, invectiva"
+    notes: "Poesia de vituperi contra enemics. Al-Mutanabbī va compondre sàtires famoses contra Kāfūr d'Egipte."
+
+  - original: "حكمة"
+    transliteracio: "ḥikma"
+    traduccio: "saviesa, sentència"
+    notes: "Versos gnòmics o sentenciosos. Molts versos d'al-Mutanabbī han passat a ser proverbis en àrab."
+
+  - original: "غزل"
+    transliteracio: "ghazal"
+    traduccio: "poesia amorosa, lírica"
+    notes: "Secció amorosa que sol obrir les qasides clàssiques (nasīb). Pot ser cast (ʿudhrī) o sensual."
+
+  - original: "رثاء"
+    transliteracio: "rithāʾ"
+    traduccio: "elegia, lament fúnebre"
+    notes: "Poesia de dol per la mort d'algú. Al-Mutanabbī va escriure elegies memorables."
+
+  - original: "سيف الدولة"
+    transliteracio: "Sayf al-Dawla"
+    traduccio: "Sayf al-Dawla (Espasa de l'Estat)"
+    notes: "Emir hamdànida d'Alep (r. 944–967). Principal mecenes d'al-Mutanabbī durant nou anys (948–957)."
+
+  - original: "كافور"
+    transliteracio: "Kāfūr"
+    traduccio: "Kāfūr (càmfora)"
+    notes: "Regent ikhshídida d'Egipte (m. 968). Al-Mutanabbī va escriure primer lloances i després sàtires ferotges contra ell."
+
+  - original: "بحر"
+    transliteracio: "baḥr"
+    traduccio: "metre, mar (poètic)"
+    notes: "Cadascun dels metres de la prosodia àrab clàssica (ʿarūḍ). Al-Mutanabbī emprava sobretot el ṭawīl, el kāmil i el wāfir."
+
+  - original: "قافية"
+    transliteracio: "qāfiya"
+    traduccio: "rima"
+    notes: "En la qaṣīda clàssica, tots els versos comparteixen la mateixa rima final (rima monorimada)."
+
+  - original: "عروض"
+    transliteracio: "ʿarūḍ"
+    traduccio: "prosòdia, mètrica àrab"
+    notes: "Sistema mètric quantitatiu basat en síl·labes llargues i curtes, sistematitzat per al-Khalīl ibn Aḥmad (s. VIII)."
+
+  - original: "حماسة"
+    transliteracio: "ḥamāsa"
+    traduccio: "valor, heroisme"
+    notes: "Tema poètic central en al-Mutanabbī, que celebra el coratge guerrer i l'ambició noble."
