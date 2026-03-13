@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-11",
+  "updated_at": "2026-03-13",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -676,7 +676,7 @@
         "wikisource",
         "ganjoor"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/oriental/rumi/masnavi-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-09. Complement essencial a Omar Khayyam: si les Rubaiyat expressen l'escepticisme hedonista, el Masnavi de Rumi és la veu mística sufí, 'el Corà en persa' segons Jāmī. Jalāl al-Dīn Rūmī (†1273), poeta i místic de Konya, és l'autor més llegit del món islàmic i un dels poetes més traduïts de la història. El Masnavi-ye Ma'navi (c. 1258-1273) conté 25.000 dístics organitzats en 6 llibres: contes, paràboles i al·legories que il·luminen la cerca de Déu, l'amor diví i la transformació interior. Selecció de 10 contes representatius: la flauta de canya (proemi), el lloro i el mercader, l'elefant a les fosques, Moisès i el pastor, el lleó i la llebre, la ciutat dels cecs, l'home que trucava a la porta de Déu, el jardiner i les tres fruites, el gramàtic i el barquer, la llàntia i l'oli. Cap traducció catalana directa del persa. Text persa a Wikisource persa i Ganjoor.net."
     },
@@ -690,7 +690,7 @@
       "fonts": [
         "wikisource"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/oriental/yunus-emre/seleccio-25-poemes",
       "notes": "Consell Editorial 2026-03-09. Afegeix el turc com a nova llengua al catàleg, obrint la biblioteca a la tradició literària turca i sufí d'Anatòlia. Yunus Emre (†c. 1321) és el poeta fundacional de la literatura turca i el místic sufí més estimat del món turcòfon. Els seus ilahis (himnes) i poemes en turc anatolià antic expressen l'amor diví, la unitat de l'ésser i la humilitat amb una senzillesa que els fa universals — comparable a Rumi però en llengua turca popular, no en persa cortesà. Selecció dels 25 poemes més representatius: 'Bana seni gerek seni' (Només et necessito a Tu), 'Aşkın aldı benden beni' (L'amor m'ha pres de mi), 'Ben yürürüm yane yane', etc. Patrimoni de la Humanitat (UNESCO, 1991). Cap traducció catalana. Text turc a Wikisource turca."
     },
@@ -856,6 +856,52 @@
       "status": "pending",
       "obra_dir": "obres/poesia/petrarca/seleccio-20-sonets",
       "notes": "Consell Editorial 2026-03-10. Francesco Petrarca (1304-1374), pare de l'humanisme i creador del sonet modern. El 'Canzoniere' (Rerum vulgarium fragmenta) conté 366 poemes dedicats majoritàriament a Laura. Selecció de 20 sonets emblemàtics: 'Voi ch'ascoltate in rime sparse il suono' (I), 'Solo et pensoso i più deserti campi' (XXXV), 'Chiare, fresche et dolci acque' (CXXVI), 'Erano i capei d'oro a l'aura sparsi' (XC), entre d'altres. Va definir la lírica amorosa occidental i influir en Ausiàs March, Shakespeare, Garcilaso i tota la tradició petrarquista. Cap traducció catalana recent dels sonets. Text italià a Wikisource italiana i Project Gutenberg."
+    },
+    {
+      "autor": "Lucià de Samòsata",
+      "titol": "Diàlegs dels morts (selecció de 10 diàlegs)",
+      "llengua": "grec",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/lucia-de-samosata/dialegs-dels-morts",
+      "notes": "Consell Editorial 2026-03-13. Lucià de Samòsata (Λουκιανός, c. 125-180 dC), prosista siríac-grec, mestre de la sàtira i el diàleg còmic. Els 'Diàlegs dels morts' (Νεκρικοὶ Διάλογοι) són 30 diàlegs breus ambientats a l'Hades on filòsofs, reis i herois són ridiculitzats per Hermes, Caront i Diògenes. Selecció de 10 diàlegs representatius. Prosa satírica única al catàleg: humor, ironia i crítica social des de l'antiguitat. Influència directa sobre Erasme, Rabelais, Swift i Voltaire. Cap traducció catalana moderna. Text grec a Perseus Digital Library i Project Gutenberg."
+    },
+    {
+      "autor": "Terenci",
+      "titol": "Andria",
+      "llengua": "llatí",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin_library",
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/terenci/andria",
+      "notes": "Consell Editorial 2026-03-13. Publi Terenci Àfer (Publius Terentius Afer, c. 195-159 aC), dramaturg romà d'origen nord-africà (Cartago). 'Andria' ('La dona d'Andros', 166 aC) és la seva primera comèdia, basada en Menandre. Trama d'amors creuats, identitats ocultes i reconeixement final — el model de la comèdia occidental. Terenci va refinar el llatí col·loquial amb elegància i naturalitat; Cèsar l'anomenà 'dimidiatus Menander'. El catàleg té tragèdia grega (Sòfocles, Eurípides), teatre nòrdic (Ibsen, Strindberg) i Nō japonès (Zeami), però cap comèdia romana. Cap traducció catalana recent. Text llatí a The Latin Library, Perseus i Gutenberg."
+    },
+    {
+      "autor": "Al-Mutanabbī",
+      "titol": "Selecció de 20 poemes",
+      "llengua": "àrab",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "wikisource",
+        "al-adab"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/al-mutanabbi/seleccio-20-poemes",
+      "notes": "Consell Editorial 2026-03-13. Abu al-Tayyib Ahmad ibn al-Husayn al-Mutanabbī (أبو الطيب المتنبي, 915-965), considerat el més gran poeta de la llengua àrab. Panegírics, elegies i poemes filosòfics d'una intensitat retòrica sense parió. La seva poesia combina orgull personal (fakhr), lloança (madh) i reflexió existencial (hikma). Selecció de 20 poemes emblemàtics que cobreixen les diferents etapes: els anys de joventut rebel, el període a la cort de Sayf al-Dawla a Alep, i l'exili final. El catàleg té narrativa àrab (Ibn Tufayl) però cap poesia àrab clàssica. Dificultat alta per la densitat retòrica i les al·lusions culturals. Cap traducció catalana. Text àrab a Wikisource àrab i al-adab.com."
     }
   ]
 }
