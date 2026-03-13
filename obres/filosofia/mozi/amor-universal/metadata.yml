@@ -1,0 +1,45 @@
+obra:
+  titol: "Amor universal (兼愛)"
+  titol_original: "兼愛"
+  titol_romanitzat: "Jiān Ài"
+  autor: "Mozi (墨子)"
+  autor_original: "墨翟"
+  traductor: "Biblioteca Universal Arion (IA + revisió humana)"
+  any_original: "c. s. V aC"
+  any_traduccio: 2026
+  llengua_original: "xinès clàssic"
+  genere: "filosofia"
+  descripcio: >
+    Els tres capítols de «Jiān Ài» (兼愛, Amor universal) constitueixen el nucli
+    doctrinal del mohisme. Mozi hi defensa que tots els mals del món —guerres,
+    robatoris, injustícia— neixen de l'amor parcial (別, bié) i que l'únic remei
+    és l'amor universal i indiscriminat (兼, jiān). Argumenta amb exemples històrics
+    (Yu el Gran, el rei Wen, el rei Wu) que els grans sobirans ja van practicar
+    aquest principi, i que és tan factible com qualsevol costum imposada pels governants.
+  temes:
+    - mohisme
+    - ètica
+    - filosofia política
+    - amor universal
+    - utilitarisme antic
+    - justícia social
+tradicio_textual:
+  versions_principals:
+    - llengua: "xinès clàssic"
+      tipus: "text rebut (墨子)"
+      nota: "Transmès dins el Mòzǐ (墨子), capítols 14-16"
+  font_utilitzada:
+    origen: "Wikisource xinès (zh.wikisource.org)"
+    url: "https://zh.wikisource.org/wiki/墨子/兼愛上"
+    acces: "2026-03-13"
+    llicencia: "Domini públic"
+seccions: 3
+estadistiques:
+  paraules_original: 3200
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
