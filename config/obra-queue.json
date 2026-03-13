@@ -902,6 +902,51 @@
       "status": "pending",
       "obra_dir": "obres/poesia/al-mutanabbi/seleccio-20-poemes",
       "notes": "Consell Editorial 2026-03-13. Abu al-Tayyib Ahmad ibn al-Husayn al-Mutanabbī (أبو الطيب المتنبي, 915-965), considerat el més gran poeta de la llengua àrab. Panegírics, elegies i poemes filosòfics d'una intensitat retòrica sense parió. La seva poesia combina orgull personal (fakhr), lloança (madh) i reflexió existencial (hikma). Selecció de 20 poemes emblemàtics que cobreixen les diferents etapes: els anys de joventut rebel, el període a la cort de Sayf al-Dawla a Alep, i l'exili final. El catàleg té narrativa àrab (Ibn Tufayl) però cap poesia àrab clàssica. Dificultat alta per la densitat retòrica i les al·lusions culturals. Cap traducció catalana. Text àrab a Wikisource àrab i al-adab.com."
+    },
+    {
+      "autor": "Luci de Samòsata",
+      "titol": "Diàlegs dels morts (selecció de 10 diàlegs)",
+      "llengua": "grec",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/luci-de-samosata/dialegs-dels-morts",
+      "notes": "Consell Editorial 2026-03-13. Λουκιανὸς ὁ Σαμοσατεύς (c. 125–180 dC), mestre de la sàtira menippea. Els Νεκρικοὶ Διάλογοι (Diàlegs dels morts) presenten converses entre figures mítiques i històriques a l'Hades: Diògenes ridiculitza Alexandre, Hermes s'esbrava amb Caront, els filòsofs es barallen sobre la vanitat. Humor mordaç, crítica social i desmitificació del poder. El catàleg té abundant prosa grega filosòfica i tràgica però cap sàtira. Selecció dels 10 diàlegs més emblemàtics. Cap traducció catalana recent. Text grec complet a Perseus Digital Library i Wikisource grec."
+    },
+    {
+      "autor": "Chikamatsu Monzaemon",
+      "titol": "Sonezaki Shinjū (Els suïcidis d'amor de Sonezaki)",
+      "llengua": "japonès",
+      "categoria": "teatre",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/chikamatsu-monzaemon/sonezaki-shinju",
+      "notes": "Consell Editorial 2026-03-13. 近松門左衛門 (1653–1725), el 'Shakespeare japonès', dramaturg de jōruri (bunraku) i kabuki. Sonezaki Shinjū (曽根崎心中, 1703) és la primera obra de sewamono (drama domèstic) del teatre de titelles japonès: la història tràgica d'Ohatsu i Tokubei, que trien el doble suïcidi davant la impossibilitat del seu amor. Va revolucionar el teatre japonès en portar la vida quotidiana a l'escenari. El catàleg té Zeami (noh) però no representa el bunraku ni el drama domèstic. Cap traducció catalana. Text japonès a Aozora Bunko."
+    },
+    {
+      "autor": "Lu Yu",
+      "titol": "Chájīng (El clàssic del te)",
+      "llengua": "xinès",
+      "categoria": "assaig",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/lu-yu/chajing",
+      "notes": "Consell Editorial 2026-03-13. 陸羽 (733–804), el 'Sant del Te', erudit de la dinastia Tang. El Chájīng (茶經, c. 760) és el primer tractat complet sobre el te: origen, preparació, utensilis, aigua, cerimònia i filosofia. Tres volums, deu capítols. Combina coneixement pràctic amb reflexió estètica i espiritual, influenciat pel taoisme i el budisme. El catàleg té filosofia xinesa (Laozi, Confuci, Zhuangzi, Mozi) però cap assaig cultural xinès. Obra fundacional de la cultura del te a l'Àsia Oriental. Cap traducció catalana. Text xinès clàssic complet a CText (Chinese Text Project) i Wikisource xinès."
     }
   ]
 }
