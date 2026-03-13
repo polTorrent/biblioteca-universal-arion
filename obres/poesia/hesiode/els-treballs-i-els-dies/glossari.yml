@@ -1,0 +1,134 @@
+termes:
+  - id: "eris"
+    grec: "Ἔρις"
+    transliteracio: "Eris"
+    traduccio: "Discòrdia"
+    definicio: >
+      Personificació de la discòrdia. Hesíode distingeix dues Erides: una negativa
+      que fomenta la guerra, i una positiva que impulsa la competència i el treball.
+      Aquesta distinció és una innovació hesiòdica respecte a la tradició homèrica.
+    usos: [1, 2]
+
+  - id: "dike"
+    grec: "δίκη"
+    transliteracio: "díke"
+    traduccio: "justícia"
+    definicio: >
+      Concepte central del poema. Designa tant la justícia com a principi còsmic
+      com les sentències judicials concretes. Personificada com a filla de Zeus,
+      la Justícia (Díke) s'oposa a la Desmesura (Hýbris) com a fonament de
+      l'ordre social i diví.
+    usos: [1, 3, 4, 5]
+
+  - id: "hybris"
+    grec: "ὕβρις"
+    transliteracio: "hýbris"
+    traduccio: "desmesura"
+    definicio: >
+      Transgressió dels límits imposats per la justícia i els déus. A diferència
+      de la tragèdia àtica posterior, en Hesíode la hýbris és sobretot social i econòmica:
+      l'abús de poder dels reis corruptes i la rapacitat dels germans injustos.
+    usos: [3, 4, 5]
+
+  - id: "arete"
+    grec: "ἀρετή"
+    transliteracio: "areté"
+    traduccio: "virtut, excel·lència"
+    definicio: >
+      La virtut entesa com a excel·lència moral i pràctica. Hesíode la situa al
+      cim d'un camí llarg i empintat, contraposant-la a la maldat, que és fàcil
+      d'assolir. Aquesta imatge del camí de la virtut va influir profundament en
+      la tradició filosòfica grega posterior.
+    usos: [5, 6]
+
+  - id: "erga"
+    grec: "ἔργα"
+    transliteracio: "érga"
+    traduccio: "treballs, feines"
+    definicio: >
+      Paraula clau del títol i del poema. Designa el treball agrícola honest com
+      a fonament de la vida bona i de la justícia social. El treball no és càstig
+      diví sinó condició necessària per a la prosperitat i la virtut.
+    usos: [1, 5, 6, 7]
+
+  - id: "pandora"
+    grec: "Πανδώρα"
+    transliteracio: "Pandṓra"
+    traduccio: "Pandora (la que tot ho dóna)"
+    definicio: >
+      La primera dona, creada per ordre de Zeus com a càstig per als homes després
+      del robatori del foc per Prometeu. El seu nom significa 'tots els dons', perquè
+      cada déu olímpic li va fer un regal. Va obrir la gerra que contenia tots els mals.
+    usos: [2]
+
+  - id: "prometeu"
+    grec: "Προμηθεύς"
+    transliteracio: "Promētheús"
+    traduccio: "Prometeu (el previsor)"
+    definicio: >
+      Tità fill de Jàpet que va robar el foc diví per donar-lo als homes. La seva
+      astúcia provoca la ira de Zeus, que com a revenja crea Pandora. En Hesíode,
+      Prometeu és una figura ambigua: benefactor dels homes però causant indirecte
+      dels seus mals.
+    usos: [2]
+
+  - id: "perses"
+    grec: "Πέρσης"
+    transliteracio: "Pérsēs"
+    traduccio: "Perses"
+    definicio: >
+      Germà d'Hesíode i destinatari del poema. Segons el poeta, Perses havia
+      obtingut injustament una part desproporcionada de l'herència familiar suborn
+      als jutges. El poema és en gran part una exhortació a Perses perquè abandoni
+      la injustícia i es dediqui al treball honest.
+    usos: [1, 2, 3, 4, 5, 6, 7, 8]
+
+  - id: "demeter"
+    grec: "Δημήτηρ"
+    transliteracio: "Dēmḗtēr"
+    traduccio: "Demèter"
+    definicio: >
+      Deessa del gra i l'agricultura. El seu blat sagrat és la base de la vida
+      agrícola que Hesíode descriu. La invocació a Demèter i a Zeus subterrani
+      forma part del ritual de la sembra.
+    usos: [2, 6, 7]
+
+  - id: "pleiades"
+    grec: "Πληιάδες"
+    transliteracio: "Plēiádes"
+    traduccio: "Plèiades"
+    definicio: >
+      Cúmul estel·lar (les set filles d'Atles) que serveix de rellotge astronòmic
+      per al calendari agrícola. La seva sortida helíaca marca l'inici de la sega
+      i la seva posta l'hora de la sembra, els dos moments clau del cicle agrari.
+    usos: [6, 7]
+
+  - id: "nemesis"
+    grec: "Νέμεσις"
+    transliteracio: "Némesis"
+    traduccio: "Nèmesi, indignació justa"
+    definicio: >
+      Personificació de la indignació divina davant la injustícia. Juntament amb
+      Aidós (Pudor), abandona la terra al final de la raça de ferro, deixant els
+      homes sense protecció moral contra el mal.
+    usos: [4]
+
+  - id: "aidos"
+    grec: "Αἰδώς"
+    transliteracio: "Aidṓs"
+    traduccio: "pudor, vergonya"
+    definicio: >
+      Sentiment de vergonya i respecte que regula el comportament social. Hesíode
+      en fa un ús doble: com a personificació divina que abandona la terra (amb Nèmesi),
+      i com a qualitat humana ambivalent que pot ser tant perjudicial com beneficiosa.
+    usos: [4, 6]
+
+  - id: "boreas"
+    grec: "Βορέας"
+    transliteracio: "Boréas"
+    traduccio: "Bòreas, vent del nord"
+    definicio: >
+      El vent del nord, associat a l'hivern i al fred intens. La descripció de
+      la tempesta de Bòreas (vv. 504-563) és un dels passatges més vívids del
+      poema, amb una força descriptiva que recorda l'epopeia homèrica.
+    usos: [7]
