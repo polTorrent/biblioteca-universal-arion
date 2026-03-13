@@ -1,45 +1,59 @@
+"""Parseja el XML de Perseus per extreure el text grec d'Els Treballs i els Dies d'Hesíode."""
+
 import re
 import html as h
+import sys
+from pathlib import Path
 
-with open("/tmp/hesiod_perseus.xml", "r", encoding="utf-8") as f:
-    xml = f.read()
+INPUT_PATH = Path("/tmp/hesiod_perseus.xml")
+DEST = Path(__file__).resolve().parent.parent / "obres/poesia/hesiode/els-treballs-i-els-dies/original.md"
 
-# Extract only Greek lines (skip metadata)
-lines = re.findall(r'<l[^>]*>(.*?)</l>', xml, re.DOTALL)
-clean_lines = []
-for line in lines:
-    clean = re.sub(r'<[^>]+>', '', line)
-    clean = h.unescape(clean).strip()
-    if clean and not clean.startswith(('Greek', 'English', 'Basic', 'Text key', 'Check', 'Revise', 'Fix', 'converted')):
-        # Only keep lines with Greek chars
-        if re.search(r'[\u0370-\u03FF\u1F00-\u1FFF]', clean):
-            clean_lines.append(clean)
 
-print(f"Total Greek lines: {len(clean_lines)}")
+def parse_greek_lines(xml: str) -> list[str]:
+    """Extreu línies gregues netes del XML de Perseus."""
+    raw_lines = re.findall(r'<l[^>]*>(.*?)</l>', xml, re.DOTALL)
+    skip_prefixes = (
+        'Greek', 'English', 'Basic', 'Text key', 'Check', 'Revise', 'Fix', 'converted',
+    )
+    clean_lines: list[str] = []
+    for line in raw_lines:
+        clean = re.sub(r'<[^>]+>', '', line)
+        clean = h.unescape(clean).strip()
+        if clean and not clean.startswith(skip_prefixes):
+            if re.search(r'[\u0370-\u03FF\u1F00-\u1FFF]', clean):
+                clean_lines.append(clean)
+    return clean_lines
 
-# Also extract card/section markers
-cards = re.findall(r'<milestone[^>]*unit="card"[^>]*n="(\d+)"', xml)
-print(f"Card markers: {cards}")
 
-# Build the text with line numbers
-output_lines = []
-for i, line in enumerate(clean_lines, 1):
-    output_lines.append(line)
+def main() -> None:
+    if not INPUT_PATH.exists():
+        print(f"Error: no s'ha trobat {INPUT_PATH}", file=sys.stderr)
+        sys.exit(1)
 
-# Save
-dest = "obres/poesia/hesiode/els-treballs-i-els-dies/original.md"
-with open(dest, "w", encoding="utf-8") as f:
-    f.write("# Ἔργα καὶ Ἡμέραι\n\n")
-    f.write("**Ἡσίοδος** (Hesiod, s. VIII-VII aC)\n\n")
-    f.write("Font: Perseus Digital Library (CC BY-SA 3.0)\n\n")
-    f.write("---\n\n")
-    for line in output_lines:
-        f.write(line + "\n")
+    xml = INPUT_PATH.read_text(encoding="utf-8")
+    lines = parse_greek_lines(xml)
+    print(f"Total Greek lines: {len(lines)}")
 
-print(f"Written {len(output_lines)} lines to {dest}")
-print("\nFirst 10 lines:")
-for l in output_lines[:10]:
-    print(l)
-print("\nLast 5 lines:")
-for l in output_lines[-5:]:
-    print(l)
+    cards = re.findall(r'<milestone[^>]*unit="card"[^>]*n="(\d+)"', xml)
+    print(f"Card markers: {cards}")
+
+    DEST.parent.mkdir(parents=True, exist_ok=True)
+    with open(DEST, "w", encoding="utf-8") as f:
+        f.write("# Ἔργα καὶ Ἡμέραι\n\n")
+        f.write("**Ἡσίοδος** (Hesiod, s. VIII-VII aC)\n\n")
+        f.write("Font: Perseus Digital Library (CC BY-SA 3.0)\n\n")
+        f.write("---\n\n")
+        for line in lines:
+            f.write(line + "\n")
+
+    print(f"Written {len(lines)} lines to {DEST}")
+    print("\nFirst 10 lines:")
+    for line in lines[:10]:
+        print(line)
+    print("\nLast 5 lines:")
+    for line in lines[-5:]:
+        print(line)
+
+
+if __name__ == "__main__":
+    main()
