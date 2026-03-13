@@ -1,36 +1,73 @@
-Supervisió de qualitat — 2026-03-13
+Supervisió de qualitat — 2026-03-13 (revisió 2)
 Puntuació: 6.5/10 (per sota del llindar de 7.0)
 
 PROBLEMES A CORREGIR:
 
-1. PARAULES INVENTADES (CRÍTIC)
-   - "fauta" (Proemi, v.10) → no existeix en català; substituir per "falta" o reformular
-   - "m'extricularàs" (Conte I, v.68) → no existeix; substituir per "em deslliuraràs" o "em trauràs"
+1. PARAULES INVENTADES O INEXISTENTS (CRÍTIC — afecta normativa IEC)
+   - "fauta" (Proemi, v.10) → no existeix en català; hauria de ser "falta" o reformular
+   - "m'extricularàs" (Conte I, v.68) → invent; usar "em deslliuraràs" o "em trauràs d'apuros"
    - "sendemar" (Conte I, v.54) → no existeix; reformular el vers
-   - "d'entrambaltres" (Conte I, v.136) → no estàndard; substituir per "d'ambdós" o reformular
+   - "d'entrambaltres" (Conte I, v.136) → no estàndard; usar "d'ambdós" o "de l'un i l'altre"
+   - "per fati" (Proemi, v.34) → no existeix; reformular ("per destí", "per fat")
+   - "empaula" (Conte II, v.15) → no existeix; reformular
+   - "delsa" (Conte I, v.75) → no és forma normativa; reformular
 
 2. RIMES FORÇADES QUE PRODUEIXEN CATALÀ ANTINATURAL (IMPORTANT)
-   - Proemi: "tant se val, tant se van" (v.14), "per fati" (v.34)
-   - Conte I: múltiples versos amb construccions forçades per mantenir la rima
-   - Recomanació: prioritzar la naturalitat del català per sobre de la rima
+   - Proemi: "tant se val, tant se van" (v.14) — construcció sense sentit
+   - Proemi: "per fati" (v.34) — castellanisme/invent per rimar
+   - Conte I: "sens confús" (v.12), "al seu puny" (v.35), "en situ" (v.185)
+   - Conte I: múltiples versos amb ordres de paraules forçats i sintagmes estranys
+   - Conte II: "amb cor de vere" (v.6), "en tota estesa" (v.22), "al seu camí" forçat
+   - Recomanació: prioritzar la naturalitat del català per sobre de la rima. Millor prosa rítmica que vers rimat artificial
 
 3. OMISSIONS SIGNIFICATIVES DINS DELS CONTES (IMPORTANT)
-   - Contes III-X són resums molt condensats, no traduccions
-   - Salts de desenes de versos sense indicació (conte III: v.150→350; conte V: v.13→65)
-   - Cal indicar clarament les omissions amb [...] o nota explicativa
-   - Alternativament, completar les traduccions de les seccions omeses
+   - Contes III-X passen de vers rimat complet a prosa/vers molt condensat
+   - Salts de desenes/centenars de versos sense indicar-ho:
+     * Conte III: v.40→70→100→150→350→390→430 (centenars de versos omesos)
+     * Conte V: v.13→65→120→175→215→250→278 (grans blocs omesos)
+     * Conte VII: v.45→50→55→95→105→135→165 (seccions senceres perdudes)
+     * Conte VIII: v.25→60→80→100→150→175 (omissions substancials)
+     * Conte IX: v.30→50→70→185→225→250→300 (la major part omesa)
+     * Conte X: v.35→50→70→105→120 (condensat)
+   - NO s'indica enlloc que hi ha omissions (ni amb [...] ni amb notes)
+   - Cal: a) marcar clarament les omissions, o b) completar les traduccions
 
 4. INCONSISTÈNCIA DE FORMAT (MODERAT)
-   - Proemi i Contes I-II en vers rimat
-   - Contes III-X en prosa telegràfica
-   - Cal unificar el format o justificar el canvi a la introducció
+   - Proemi i Contes I-II: vers rimat complet (traducció detallada)
+   - Contes III-X: barreja de prosa i vers, molt més condensats
+   - El canvi és abrupte i no s'explica ni a la introducció ni amb notes
+   - Cal unificar o justificar el canvi de format
 
-5. METADATA.YML INCORRECTE (MENOR)
-   - qualitat: 1.5 → actualitzar a la puntuació real (6.5)
-   - estat: en_curs → mantenir fins a correcció
+5. CASTELLANISMES I CALCS (MODERAT)
+   - "en situ" (Conte I, v.185) → llatinisme innecessari o calc del castellà "in situ"
+   - "sens confús" (Conte I, v.12) → "sense confusió"
+   - "per fati" → reminiscència de "fatum" forçada
+   - Alguns girs sintàctics calcats de l'anglès: "el nostre príncep l'estranger a una cambra va guiar de dia" (v.70)
+
+6. NUMERACIÓ DE VERSOS ERRÒNIA (MENOR)
+   - Conte I: salta de v.100 a v.115 (falten 14 versos)
+   - Conte II: salta de v.35 a v.80 (falten 44 versos)
+   - La numeració no és contínua ni correspon sempre a l'original
+
+7. metadata.yml (MENOR)
+   - paraules_original: 4200 → molt per sota del real (el Llibre I de Redhouse té milers de versos)
+   - paraules_traduccio: 9500 → verificar
+   - L'obra base de Redhouse és molt més extensa; caldria indicar que és una selecció abreujada
 
 ELEMENTS POSITIUS (no requereixen canvi):
-- Introducció: excel·lent, qualitat acadèmica
-- Notes (18): detallades, precises, contextualitzades
-- Glossari (20 termes): ben construït amb transliteracions correctes
+- Introducció: excel·lent qualitat acadèmica, ben documentada, contextualitza l'obra
+- Notes (18): detallades, precises, amb context corànic i sufí ben explicat
+- Glossari (20 termes): ben construït, transliteracions correctes, context útil
+- Proemi: traducció poètica reeixida, amb bon ritme i sentit
+- Conte I (fins v.100): traducció versificada completa i generalment fidel
+- Conte II: traducció versificada acceptable
 - Adaptacions culturals encertades ("Hodge"→"en Jaume", "Dick"→"en Pere")
+- To general respectuós amb l'obra original
+- Registre literari adequat per a poesia mística
+- Basmala correctament traduïda ("En nom de Déu, el Totmisericordiós, el Molt Compassiu")
+
+RESUM:
+El Proemi, els Contes I-II i tot l'aparell crític (introducció, notes, glossari) són de bona qualitat (7-8/10). El problema principal és que els Contes III-X són resums molt condensats amb grans omissions no marcades, cosa que fa que l'obra en conjunt no arribi al llindar de qualitat. A més, hi ha paraules inventades que cal corregir. Per arribar a 7/10 caldria:
+a) Completar o ampliar significativament els contes III-X, o marcar clarament les omissions
+b) Corregir totes les paraules inventades (fauta, m'extricularàs, sendemar, etc.)
+c) Millorar les rimes més forçades (preferir prosa rítmica a rimes artificials)
