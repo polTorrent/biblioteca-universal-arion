@@ -1,0 +1,27 @@
+obra:
+  titol: Selecció de 20 poemes
+  titol_original: Válogatott versek
+  autor: Sándor Petőfi
+  autor_original: Petőfi Sándor
+  traductor: Biblioteca Arion
+  any_original: 1842-1849
+  any_traduccio: 2026
+  llengua_original: hongarès
+  genere: poesia
+  descripcio: >
+    Selecció de 20 poemes emblemàtics de Petőfi Sándor (1823-1849), poeta
+    nacional hongarès i figura central de la Revolució de 1848. Inclou poemes
+    revolucionaris (Nemzeti dal), elegies amoroses (Szeptember végén), odes al
+    paisatge (Az Alföld, A Tisza) i reflexions sobre la poesia i la llibertat.
+    Primera traducció al català d'aquest autor.
+  font: https://hu.wikisource.org/wiki/Szerz%C5%91:Pet%C5%91fi_S%C3%A1ndor
+seccions: 20
+estadistiques:
+  paraules_original: 4000
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: pendent
+  qualitat: 0
+  data_revisio: ""
