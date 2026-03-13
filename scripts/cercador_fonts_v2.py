@@ -107,7 +107,47 @@ GUTENBERG_IDS: dict[str, dict[str, int]] = {
         "fourfold root": 50966,
     },
     "sade": {
-        "justine": 38070,  # Si existeix a Gutenberg
+        "justine": 38070,
+    },
+    "boethius": {
+        "consolation": 14328,
+        "de consolatione": 14328,
+    },
+    "boeci": {
+        "de consolatione": 14328,
+        "consolation": 14328,
+    },
+    "hesiod": {
+        "works and days": 348,
+        "treballs": 348,
+    },
+    "hesiode": {
+        "treballs": 348,
+        "els treballs": 348,
+    },
+    "terence": {
+        "andria": 22188,
+    },
+    "terenci": {
+        "andria": 22188,
+    },
+    "petrarca": {
+        "canzoniere": 17650,
+        "sonets": 17650,
+    },
+    "petrarch": {
+        "canzoniere": 17650,
+    },
+    "lucian": {
+        "dialogues of the dead": 6585,
+        "dialegs dels morts": 6585,
+    },
+    "theophrastus": {
+        "characters": 1076,
+    },
+    "teofrast": {
+        "caracters": 1076,
+        "els caracters": 1076,
     },
 }
 
@@ -155,6 +195,30 @@ PERSEUS_URLS: dict[str, dict[str, str]] = {
     "heraclitus": {
         "fragments": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0248",
     },
+    "hesiod": {
+        "works and days": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0132",
+        "treballs": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0132",
+    },
+    "hesiode": {
+        "treballs": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0132",
+        "els treballs": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0132",
+    },
+    "terence": {
+        "andria": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0085",
+    },
+    "terenci": {
+        "andria": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0085",
+    },
+    "lucian": {
+        "dialogues": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0437",
+    },
+    "theophrastus": {
+        "characters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
+    },
+    "teofrast": {
+        "caracters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
+        "els caracters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
+    },
 }
 
 WIKISOURCE_PAGES: dict[str, dict[str, tuple[str, str]]] = {
@@ -183,6 +247,40 @@ WIKISOURCE_PAGES: dict[str, dict[str, tuple[str, str]]] = {
     "akutagawa": {
         "rashomon": ("ja", "羅生門"),
         "biombo-infern": ("ja", "地獄変"),
+    },
+    "boeci": {
+        "de consolatione": ("la", "Consolatio Philosophiae"),
+        "consolatio": ("la", "Consolatio Philosophiae"),
+    },
+    "boethius": {
+        "consolation": ("la", "Consolatio Philosophiae"),
+        "de consolatione": ("la", "Consolatio Philosophiae"),
+    },
+    "hesiode": {
+        "treballs": ("el", "Ἔργα καὶ Ἡμέραι"),
+        "els treballs": ("el", "Ἔργα καὶ Ἡμέραι"),
+    },
+    "hesiod": {
+        "works and days": ("el", "Ἔργα καὶ Ἡμέραι"),
+    },
+    "petrarca": {
+        "canzoniere": ("it", "Canzoniere"),
+        "sonets": ("it", "Canzoniere"),
+    },
+    "petrarch": {
+        "canzoniere": ("it", "Canzoniere"),
+    },
+    "terenci": {
+        "andria": ("la", "Andria"),
+    },
+    "terence": {
+        "andria": ("la", "Andria"),
+    },
+    "kamo no chomei": {
+        "hojoki": ("ja", "方丈記"),
+    },
+    "zeami": {
+        "matsukaze": ("ja", "松風 (能)"),
     },
 }
 
@@ -900,9 +998,13 @@ class CercadorFontsV2:
             "francès": ["fr"],
             "italià": ["it"],
             "japonès": ["ja"],
-            "xinès": ["zh"],
+            "xinès": ["zh", "zh-classical", "en"],
+            "xinès clàssic": ["zh", "zh-classical", "en"],
             "rus": ["ru"],
             "sànscrit": ["sa", "en"],
+            "hongarès": ["hu"],
+            "àrab": ["ar", "en"],
+            "suec": ["sv"],
         }
         return mapa.get(llengua.lower(), ["en"])
 

@@ -258,13 +258,13 @@ for obra in queue.get('obres', []):
         case "$action" in
             FETCH)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "fetch" "cd ~/biblioteca-universal-arion && mkdir -p $obra_path && python3 scripts/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$lingua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
+                    add_task "fetch" "mkdir -p $obra_path && python3 scripts/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$lingua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
                     log "   📥 Fetch: $titol de $autor ($lingua)"
                 fi
                 ;;
             TRANSLATE)
                 if ! task_exists "$titol" > /dev/null 2>&1; then
-                    add_task "translate" "cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $obra_path/"
+                    add_task "translate" "python3 scripts/traduir_pipeline.py $obra_path/"
                     log "   📝 Translate: $titol de $autor"
                 fi
                 ;;
@@ -385,7 +385,7 @@ check_needs_fix() {
         if [ "${score_int:-0}" -eq 0 ]; then
             # PUNTUACIÓ 0 → Traducció corrupta, cal retraduir de zero
             log "   🔴 $obra_name: puntuació 0/10 — RETRADUCCIÓ"
-            add_task "translation" "Executa el pipeline V2 per retraduir: cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $relpath. Si el pipeline falla, tradueix manualment: 1) Llegeix original.md a $relpath. 2) Tradueix TOTS els capítols al català. 3) Afegeix notes i glossari. 4) Sobreescriu traduccio.md. 5) Elimina .needs_fix/.fixing. 6) Commit+push."
+            add_task "translation" "Executa el pipeline V2 per retraduir: python3 scripts/traduir_pipeline.py $relpath. Si el pipeline falla, tradueix manualment: 1) Llegeix original.md a $relpath. 2) Tradueix TOTS els capítols al català. 3) Afegeix notes i glossari. 4) Sobreescriu traduccio.md. 5) Elimina .needs_fix/.fixing. 6) Commit+push."
         else
             # PUNTUACIÓ 1-6 → Cal corregir problemes específics
             log "   🟡 $obra_name: puntuació ${score}/10 — CORRECCIONS"
@@ -565,7 +565,7 @@ if obra_path:
 
     if task_type in ('translate', 'fetch', 'translation'):
         if has_original:
-            new_instruction = f'cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py {obra_path}/'
+            new_instruction = f'python3 scripts/traduir_pipeline.py {obra_path}/'
             task_type = 'translate'
         else:
             # Extreure autor/titol/llengua de la instrucció
@@ -575,7 +575,7 @@ if obra_path:
             llengua = llengua.group(1) if llengua else 'desconeguda'
             titol = re.search(r\"['\\\"]([^'\\\"]+)['\\\"]\", instruction)
             titol = titol.group(1) if titol else os.path.basename(obra_path)
-            new_instruction = f'cd ~/biblioteca-universal-arion && mkdir -p {obra_path} && python3 scripts/cercador_fonts_v2.py \\\"{autor}\\\" \\\"{titol}\\\" \\\"{llengua}\\\" \\\"{obra_path}\\\" && if [ ! -s {obra_path}/original.md ]; then echo ERROR && exit 1; fi && git add -A && git commit -m \\\"font: {titol}\\\" && git push'
+            new_instruction = f'mkdir -p {obra_path} && python3 scripts/cercador_fonts_v2.py \\\"{autor}\\\" \\\"{titol}\\\" \\\"{llengua}\\\" \\\"{obra_path}\\\" && if [ ! -s {obra_path}/original.md ]; then echo ERROR && exit 1; fi && git add -A && git commit -m \\\"font: {titol}\\\" && git push'
             task_type = 'fetch'
 
 d['instruction'] = new_instruction

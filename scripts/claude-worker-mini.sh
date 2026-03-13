@@ -167,7 +167,13 @@ validate_task_result() {
         log "   ✗ Validació: Traducció sense fitxers nous creats"
         return 1
     fi
-    
+
+    # Tasques de fetch: comprovar que s'ha creat original.md
+    if [ "$task_type" = "fetch" ]; then
+        log "   ✗ Validació: Fetch sense fitxers nous creats (original.md no generat)"
+        return 1
+    fi
+
     # Tasques de fix: comprovar canvis
     if [ "$task_type" = "fix" ]; then
         log "   ✗ Validació: Fix sense canvis detectats"
@@ -208,7 +214,7 @@ run_task() {
         "Bash(head:*)" "Bash(tail:*)" "Bash(wc:*)" "Bash(mkdir:*)" \
         "Bash(sed:*)" "Bash(cp:*)" "Bash(mv:*)" "Bash(rm:*)" \
         "Bash(touch:*)" "Bash(echo:*)" "Bash(date:*)" "Bash(tee:*)" \
-        "Bash(curl:*)" "Bash(wget:*)" \
+        "Bash(curl:*)" "Bash(wget:*)" "Bash(cd:*)" \
         --output-format text 2>&1) && exit_code=0 || exit_code=$?
 
     # 124 = timeout va matar el procés
