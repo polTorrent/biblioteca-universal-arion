@@ -41,7 +41,7 @@ def clean_wikitext(text: str) -> str:
     text = re.sub(r"\[\[[^\]]*\|([^\]]+)\]\]", r"\1", text)
     text = re.sub(r"\[\[([^\]]+)\]\]", r"\1", text)
     text = re.sub(r"\[http[^\]]*\]", "", text)
-    text = re.sub(r"={3,}\s*(.+?)\s*={3,}", r"## \\1", text)
+    text = re.sub(r"={3,}\s*(.+?)\s*={3,}", r"## \1", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
