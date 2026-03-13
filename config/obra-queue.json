@@ -899,7 +899,7 @@
         "wikisource",
         "al-adab"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/poesia/al-mutanabbi/seleccio-20-poemes",
       "notes": "Consell Editorial 2026-03-13. Abu al-Tayyib Ahmad ibn al-Husayn al-Mutanabbī (أبو الطيب المتنبي, 915-965), considerat el més gran poeta de la llengua àrab. Panegírics, elegies i poemes filosòfics d'una intensitat retòrica sense parió. La seva poesia combina orgull personal (fakhr), lloança (madh) i reflexió existencial (hikma). Selecció de 20 poemes emblemàtics que cobreixen les diferents etapes: els anys de joventut rebel, el període a la cort de Sayf al-Dawla a Alep, i l'exili final. El catàleg té narrativa àrab (Ibn Tufayl) però cap poesia àrab clàssica. Dificultat alta per la densitat retòrica i les al·lusions culturals. Cap traducció catalana. Text àrab a Wikisource àrab i al-adab.com."
     },
@@ -1039,6 +1039,52 @@
       "status": "pending",
       "obra_dir": "obres/narrativa/vishnu-sharma/panchatantra-llibre-i",
       "notes": "Consell Editorial 2026-03-13. Vishnu Sharma (datat entre s. III aC i s. V dC), compilador del Panchatantra (पञ्चतन्त्र), la col·lecció de faules amb animals més influent de la literatura mundial. El Llibre I (Mitrabheda, 'La pèrdua dels amics') narra la història del bou Sanjeevaka i el lleó Pingalaka, trencats per la intriga del xacal Damanaka: una reflexió sobre l'amistat, la manipulació política i el poder. Origen directe de Kalila i Dimna (àrab), Stephanites kai Ichnelates (grec bizantí), i influència decisiva sobre La Fontaine, els Germans Grimm i la tradició fabulística europea. El catàleg té Kalidasa (teatre/poesia sànscrita) però cap narrativa sànscrita. Cap traducció catalana del Panchatantra. Text sànscrit a Wikisource; traducció anglesa d'Arthur W. Ryder (1925) al domini públic a Gutenberg."
+    },
+    {
+      "autor": "Epicur",
+      "titol": "Carta a Meneceu i Maximes capitals",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/epicur/carta-meneceu-maximes",
+      "notes": "Consell Editorial 2026-03-13. Epicur de Samos (341-270 aC), fundador de l escola epicuria. La Carta a Meneceu es el text etic fonamental: recerca del plaer moderat, eliminacio de la por a la mort, autarquia. Les Maximes capitals condensen en 40 aforismes la doctrina. El cataleg conte multiples estoics pero cap epicuri. Cap traduccio catalana moderna. Textos grecs a Perseus i Wikisource."
+    },
+    {
+      "autor": "Anonim anglosaxo",
+      "titol": "Beowulf (seleccio)",
+      "llengua": "angles antic",
+      "categoria": "narrativa",
+      "dificultat": 5,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/anonim-anglosaxo/beowulf",
+      "notes": "Consell Editorial 2026-03-13. Beowulf (c. 700-1000 dC), unic poema epic complet en angles antic. Narra les gestes de Beowulf contra Grendel, la seva mare i un drac. Obra fundacional de la literatura anglesa. Afegeix angles antic com a llengua nova. Cap traduccio catalana. Text a Gutenberg i Wikisource."
+    },
+    {
+      "autor": "Vyasa",
+      "titol": "Bhagavad Gita (seleccio de 6 capitols)",
+      "llengua": "sanscrit",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "sacred_texts",
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/vyasa/bhagavad-gita",
+      "notes": "Consell Editorial 2026-03-13. Bhagavad Gita, atribuida a Vyasa, dialeg filosofic Arjuna-Krishna del Mahabharata. Text fonamental de la filosofia india: karma-ioga, bhakti-ioga, dharma. Seleccio de 6 capitols (1-2, 3, 11, 12, 18). Cataleg te Sutra del Cor pero no aquest pilar hinduista. Cap traduccio catalana recent. Text sanscrit a Wikisource; trad. anglesa Arnold (1885) a Gutenberg."
     }
   ]
 }
