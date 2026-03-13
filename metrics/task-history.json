@@ -2477,5 +2477,23 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_els-treballs-i-els-dies": {
+    "events": [
+      {
+        "timestamp": 1773422594.3050408,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obrespoesiapetrarcase": {
+    "events": [
+      {
+        "timestamp": 1773422594.5667353,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }
