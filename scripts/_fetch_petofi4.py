@@ -12,7 +12,7 @@ poems = {
 }
 
 for title, slug in poems.items():
-    encoded = urllib.parse.quote(slug, safe='')
+    encoded = urllib.parse.quote(slug, safe='_.')
     url = f'https://hu.wikisource.org/wiki/{encoded}'
     try:
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
@@ -36,7 +36,7 @@ for title, slug in poems.items():
             else:
                 print(f'=== {title} === TOO SHORT: "{c}"')
         else:
-            # Debug: show first 2000 chars
+            # Debug: show first 500 chars
             print(f'=== {title} === NO MATCH. First 500 chars of page:')
             print(text[:500])
     except Exception as e:
