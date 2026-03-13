@@ -425,6 +425,22 @@ main() {
     mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
     check_lock
 
+    # Comprovació de pausa
+    PAUSE_FILE="$PROJECT_DIR/PAUSE"
+    if [ -f "$PAUSE_FILE" ]; then
+        PAUSED_UNTIL=$(grep "PAUSED_UNTIL=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+        TODAY=$(date '+%Y-%m-%d')
+        if [ -n "$PAUSED_UNTIL" ] && [[ "$TODAY" < "$PAUSED_UNTIL" ]]; then
+            REASON=$(grep "REASON=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+            log "⏸️ Worker en PAUSA fins $PAUSED_UNTIL"
+            log "   Motiu: $REASON"
+            log "═══════════════════════════════════════════"
+            set_status "PAUSED"
+            rm -f "$LOCK_FILE"
+            exit 0
+        fi
+    fi
+
     log "═══════════════════════════════════════════"
     log "  Worker Arion iniciat (PID $$)"
     log "═══════════════════════════════════════════"
@@ -439,6 +455,20 @@ main() {
 
     # Main loop
     while true; do
+        # Check pause file
+        if [ -f "$PAUSE_FILE" ]; then
+            PAUSED_UNTIL=$(grep "PAUSED_UNTIL=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+            TODAY=$(date '+%Y-%m-%d')
+            if [ -n "$PAUSED_UNTIL" ] && [[ "$TODAY" < "$PAUSED_UNTIL" ]]; then
+                REASON=$(grep "REASON=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+                log "⏸️ Worker en PAUSA fins $PAUSED_UNTIL"
+                log "   Motiu: $REASON"
+                set_status "PAUSED"
+                rm -f "$LOCK_FILE"
+                exit 0
+            fi
+        fi
+
         # Check runtime limit
         if ! check_runtime; then
             break

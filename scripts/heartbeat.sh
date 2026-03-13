@@ -857,6 +857,23 @@ log "═════════════════════════
 log "💓 HEARTBEAT v5 iniciat (amb supervisió + brain)"
 [ "$BRAIN_LOADED" = true ] && log "🧠 System Brain carregat" || log "⚠️ System Brain NO disponible"
 
+# ── Comprovació de pausa ───────────────────────────────────────────────────
+PAUSE_FILE="$PROJECT/PAUSE"
+if [ -f "$PAUSE_FILE" ]; then
+    PAUSED_UNTIL=$(grep "PAUSED_UNTIL=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+    PAUSED_BY=$(grep "PAUSED_BY=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+    REASON=$(grep "REASON=" "$PAUSE_FILE" 2>/dev/null | cut -d'=' -f2)
+    TODAY=$(date '+%Y-%m-%d')
+    if [ -n "$PAUSED_UNTIL" ] && [[ "$TODAY" < "$PAUSED_UNTIL" ]]; then
+        log "⏸️ PAUSA ACTIVA fins $PAUSED_UNTIL"
+        log "   Motiu: $REASON"
+        log "   Per: $PAUSED_BY"
+        log "💓 HEARTBEAT v5 completat (en pausa)"
+        log "═══════════════════════════════════════════════════"
+        exit 0
+    fi
+fi
+
 check_diem || exit 0
 check_worker  # Reactivat: comprovació lleugera amb pgrep + nohup
 

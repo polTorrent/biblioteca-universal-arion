@@ -1,0 +1,47 @@
+obra:
+  titol: Masnavi — Selecció de 10 contes
+  titol_original: مثنوی معنوی — Mesnevī-yi Ma'nevī
+  autor: Jalal al-Din Rumi (Mevlānā)
+  autor_original: جلال‌الدین محمد بلخی
+  traductor: Biblioteca Arion
+  any_original: c. 1258-1273
+  any_traduccio: 2026
+  llengua_original: anglès (trad. Redhouse 1881, de l'original persa)
+  descripcio: 'Selecció dels 10 contes del Llibre Primer del Masnavi de Rumi, l''obra
+    mestra de la poesia mística sufí. Inclou el Proemi (Plany de la flauta de canya)
+    i els 10 contes al·legòrics que exploren la separació de l''ànima respecte de
+    Déu, l''amor diví, la guerra interior contra l''ego, la necessitat d''un mestre
+    espiritual, i la confiança en Déu. Traduït a partir de la versió anglesa de James
+    W. Redhouse (1881), de domini públic (Gutenberg #61724).
+
+    '
+  font: https://www.gutenberg.org/ebooks/61724
+  categoria: oriental
+  genere: poesia mística
+  estadistiques: {}
+seccions: 11
+estadistiques:
+  paraules_original: 4200
+  paraules_traduccio: 4500
+  notes: 15
+  termes_glossari: 18
+revisio:
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-11'
+avaluacio_final:
+  data: '2026-03-11T04:55:14.878990'
+  puntuacions:
+    fidelitat: 1.0
+    veu_autor: 1.0
+    fluidesa: 5.0
+    correccio_linguistica: 6.0
+    coherencia: 1.0
+    global: 2.5
+  total_errors: 11
+  errors_critics: 8
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 2
