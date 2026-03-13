@@ -1,0 +1,103 @@
+{
+  "sessio_id": "kamo-no-chomei-hojoki-2026-03-13",
+  "obra": {
+    "autor": "Kamo No Chomei",
+    "titol": "Hojoki",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-03-13T09:42:26.725566",
+    "ultima_activitat": "2026-03-13T11:13:58.595482"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 40,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13",
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21",
+      "chunk_22",
+      "chunk_23",
+      "chunk_24",
+      "chunk_25",
+      "chunk_26",
+      "chunk_27",
+      "chunk_28",
+      "chunk_29"
+    ],
+    "en_curs": "chunk_30",
+    "pendents": [
+      "chunk_31",
+      "chunk_32",
+      "chunk_33",
+      "chunk_34",
+      "chunk_35",
+      "chunk_36",
+      "chunk_37",
+      "chunk_38",
+      "chunk_39",
+      "chunk_40"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 2.64,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[09:49:47] Error chunk 3: could not convert string to float: 'N/A'",
+    "[09:55:17] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:56:22] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:59:49] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:00:57] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:02:09] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:03:21] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:04:25] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:05:28] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:11:13] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:12:06] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:14:48] Error chunk 3: could not convert string to float: 'N/A'",
+    "[10:15:54] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:24:09] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:27:43] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:28:49] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:29:44] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:30:37] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:31:38] Error chunk 19: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:32:44] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:34:18] Error chunk 21: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:38:15] Error chunk 23: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:39:24] Error chunk 24: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:40:26] Error chunk 25: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:47:55] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:51:18] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[10:55:05] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:00:48] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:01:51] Error chunk 21: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:05:31] Error chunk 24: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:11:30] Error chunk 28: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": []
+}
