@@ -1,0 +1,32 @@
+Data: 2026-03-13
+Puntuació: 0.0/10
+Supervisor: Claude (supervisió automàtica)
+
+PROBLEMES CRÍTICS:
+
+1. TRADUCCIÓ BUIDA: traduccio.md no conté cap text traduït, només la capçalera.
+
+2. ORIGINAL INCORRECTE: original.md conté una traducció anglesa de Project Gutenberg (H.R. James, 1897), NO el text llatí original. Cal substituir-lo pel text llatí (disponible a latin_text.md).
+
+3. METADATA INVÀLIDA: estadistiques té tots els valors a 0, revisio.qualitat a 0.0 però estat diu "revisat" — inconsistent.
+
+4. FITXERS TEMPORALS: el directori conté fitxers que no pertanyen a l'estructura estàndard d'una obra:
+   - extract.py, extract_latin.py (scripts d'extracció)
+   - index.html, latin_raw.html, raw.html, raw2.html (HTML temporals)
+   - perseus.html (524 KB de HTML cru)
+   - raw.txt (275 KB de text cru)
+   - ws_liber1.json, ws_response.json, ws_search.json, ws_search2.json (respostes API)
+   - .font_info.json
+   Cal moure o eliminar aquests fitxers.
+
+5. FALTEN FITXERS OBLIGATORIS:
+   - glossari.yml
+   - notes.md
+
+ACCIONS REQUERIDES:
+- Substituir original.md pel text llatí (latin_text.md ja el conté)
+- Executar la traducció completa del Llibre I amb el pipeline V2
+- Crear glossari.yml amb termes filosòfics clau (consolatio, philosophia, fortuna, etc.)
+- Crear notes.md amb notes del traductor
+- Netejar fitxers temporals del directori
+- Actualitzar metadata.yml amb estadístiques reals
