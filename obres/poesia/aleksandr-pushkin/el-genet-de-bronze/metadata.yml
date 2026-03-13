@@ -1,0 +1,27 @@
+obra:
+  titol: "El genet de bronze"
+  titol_original: "Медный всадник"
+  subtitol: "Narració petersburguesa"
+  autor: "Aleksandr Puixkin"
+  autor_original: "Александр Сергеевич Пушкин"
+  traductor: "Biblioteca Universal Arion"
+  any_original: 1833
+  any_traduccio: 2026
+  llengua_original: "rus"
+  descripcio: "Poema narratiu sobre la gran inundació de Sant Petersburg de 1824 i el conflicte entre l'individu i el poder estatal, simbolitzat per l'estàtua eqüestre de Pere el Gran."
+  font: "https://ru.wikisource.org/wiki/Медный_всадник_(Пушкин)"
+  llicencia_original: "Domini públic (PD-old-70)"
+seccions:
+  - "Предисловие (Prefaci)"
+  - "Вступление (Introducció)"
+  - "Часть первая (Part primera)"
+  - "Часть вторая (Part segona)"
+estadistiques:
+  paraules_original: 3200
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: null
+  data_revisio: null
