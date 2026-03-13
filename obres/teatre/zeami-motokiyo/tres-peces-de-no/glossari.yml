@@ -1,0 +1,90 @@
+termes:
+  - original: "能"
+    transliteracio: "nō"
+    traduccio: "teatre nō"
+    nota: "Forma de teatre musical japonès originada al s. XIV, caracteritzada per moviments lents, màscares i cant"
+
+  - original: "シテ"
+    transliteracio: "shite"
+    traduccio: "protagonista"
+    nota: "Actor principal en una peça de nō"
+
+  - original: "ワキ"
+    transliteracio: "waki"
+    traduccio: "deuteragonista"
+    nota: "Actor secundari que sol fer de monjo viatger o testimoni"
+
+  - original: "ツレ"
+    transliteracio: "tsure"
+    traduccio: "acompanyant"
+    nota: "Actor que acompanya el shite o el waki"
+
+  - original: "地謡"
+    transliteracio: "jiutai"
+    traduccio: "cor"
+    nota: "Cor de cantants que narra i comenta l'acció"
+
+  - original: "序の舞"
+    transliteracio: "jo no mai"
+    traduccio: "dansa introductòria"
+    nota: "Dansa lenta i elegant, sovint interpretada per personatges femenins o celestials"
+
+  - original: "修羅"
+    transliteracio: "shura"
+    traduccio: "asura / infern dels guerrers"
+    nota: "Reialme budista de combat etern on pateixen els esperits dels guerrers"
+
+  - original: "羽衣"
+    transliteracio: "hagoromo"
+    traduccio: "mantell de plomes"
+    nota: "Vestidura celestial que permet als éssers divins volar"
+
+  - original: "天人"
+    transliteracio: "tennin"
+    traduccio: "ésser celestial"
+    nota: "Criatura divina del panteó budista, equivalent a una nimfa o àngel"
+
+  - original: "海人"
+    transliteracio: "ama"
+    traduccio: "bussejadora / pescadora"
+    nota: "Dones que es dedicaven a la recol·lecció marina al Japó tradicional"
+
+  - original: "中納言"
+    transliteracio: "chūnagon"
+    traduccio: "conseller mitjà"
+    nota: "Càrrec de la cort imperial japonesa"
+
+  - original: "無常"
+    transliteracio: "mujō"
+    traduccio: "impermanència"
+    nota: "Concepte budista fonamental: res no és permanent"
+
+  - original: "幽霊"
+    transliteracio: "yūrei"
+    traduccio: "esperit / fantasma"
+    nota: "Esperit d'un difunt que torna al món dels vius"
+
+  - original: "松原"
+    transliteracio: "matsubara"
+    traduccio: "pinar"
+    nota: "Bosc de pins, element paisatgístic clàssic japonès"
+
+  - original: "須磨"
+    transliteracio: "Suma"
+    traduccio: "Suma"
+    nota: "Platja prop de Kobe, escenari de Matsukaze i d'episodis del Genji Monogatari"
+
+  - original: "三保の松原"
+    transliteracio: "Miho no Matsubara"
+    traduccio: "Pinar de Miho"
+    nota: "Platja amb vista al mont Fuji, escenari de Hagoromo"
+
+  - original: "クセ"
+    transliteracio: "kuse"
+    traduccio: "clímax narratiu"
+    nota: "Secció central d'una peça nō amb dansa i narració combinades"
+
+  - original: "キリ"
+    transliteracio: "kiri"
+    traduccio: "final"
+    nota: "Secció conclusiva d'una peça de nō"

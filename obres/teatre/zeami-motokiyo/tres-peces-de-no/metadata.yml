@@ -1,0 +1,32 @@
+obra:
+  titol: "Tres peces de nō: Matsukaze, Atsumori, Hagoromo"
+  titol_original: "能三番：松風・敦盛・羽衣"
+  autor: "Zeami Motokiyo"
+  autor_original: "世阿弥元清"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 1400-1430"
+  any_traduccio: 2026
+  llengua_original: "japonès"
+  descripcio: "Tres peces mestres del teatre nō japonès: Matsukaze (松風), drama d'amor i memòria sobre dues germanes i el cortesà Ariwara no Yukihira; Atsumori (敦盛), peça de guerrer (shura-mono) sobre la reconciliació entre el monjo Renshō i l'esperit del jove noble Atsumori; i Hagoromo (羽衣), peça celestial sobre un pescador que troba el mantell de plomes d'una tennin a la platja de Miho."
+  categoria: "teatre"
+  genere: "nō (能)"
+  peces:
+    - titol: "Matsukaze"
+      titol_original: "松風"
+      tipus: "sanbanme-mono (三番目物) — peça de dona"
+    - titol: "Atsumori"
+      titol_original: "敦盛"
+      tipus: "nibanme-mono (二番目物) — peça de guerrer"
+    - titol: "Hagoromo"
+      titol_original: "羽衣"
+      tipus: "sanbanme-mono (三番目物) — peça celestial"
+seccions: 3
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
