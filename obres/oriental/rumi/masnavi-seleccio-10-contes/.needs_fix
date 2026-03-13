@@ -1,0 +1,36 @@
+Supervisió de qualitat — 2026-03-13
+Puntuació: 6.5/10 (per sota del llindar de 7.0)
+
+PROBLEMES A CORREGIR:
+
+1. PARAULES INVENTADES (CRÍTIC)
+   - "fauta" (Proemi, v.10) → no existeix en català; substituir per "falta" o reformular
+   - "m'extricularàs" (Conte I, v.68) → no existeix; substituir per "em deslliuraràs" o "em trauràs"
+   - "sendemar" (Conte I, v.54) → no existeix; reformular el vers
+   - "d'entrambaltres" (Conte I, v.136) → no estàndard; substituir per "d'ambdós" o reformular
+
+2. RIMES FORÇADES QUE PRODUEIXEN CATALÀ ANTINATURAL (IMPORTANT)
+   - Proemi: "tant se val, tant se van" (v.14), "per fati" (v.34)
+   - Conte I: múltiples versos amb construccions forçades per mantenir la rima
+   - Recomanació: prioritzar la naturalitat del català per sobre de la rima
+
+3. OMISSIONS SIGNIFICATIVES DINS DELS CONTES (IMPORTANT)
+   - Contes III-X són resums molt condensats, no traduccions
+   - Salts de desenes de versos sense indicació (conte III: v.150→350; conte V: v.13→65)
+   - Cal indicar clarament les omissions amb [...] o nota explicativa
+   - Alternativament, completar les traduccions de les seccions omeses
+
+4. INCONSISTÈNCIA DE FORMAT (MODERAT)
+   - Proemi i Contes I-II en vers rimat
+   - Contes III-X en prosa telegràfica
+   - Cal unificar el format o justificar el canvi a la introducció
+
+5. METADATA.YML INCORRECTE (MENOR)
+   - qualitat: 1.5 → actualitzar a la puntuació real (6.5)
+   - estat: en_curs → mantenir fins a correcció
+
+ELEMENTS POSITIUS (no requereixen canvi):
+- Introducció: excel·lent, qualitat acadèmica
+- Notes (18): detallades, precises, contextualitzades
+- Glossari (20 termes): ben construït amb transliteracions correctes
+- Adaptacions culturals encertades ("Hodge"→"en Jaume", "Dick"→"en Pere")
