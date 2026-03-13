@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-13",
+  "updated_at": "2026-03-14",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -914,7 +914,7 @@
         "perseus",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "done",
       "obra_dir": "obres/narrativa/luci-de-samosata/dialegs-dels-morts",
       "notes": "Consell Editorial 2026-03-13. Λουκιανὸς ὁ Σαμοσατεύς (c. 125–180 dC), mestre de la sàtira menippea. Els Νεκρικοὶ Διάλογοι (Diàlegs dels morts) presenten converses entre figures mítiques i històriques a l'Hades: Diògenes ridiculitza Alexandre, Hermes s'esbrava amb Caront, els filòsofs es barallen sobre la vanitat. Humor mordaç, crítica social i desmitificació del poder. El catàleg té abundant prosa grega filosòfica i tràgica però cap sàtira. Selecció dels 10 diàlegs més emblemàtics. Cap traducció catalana recent. Text grec complet a Perseus Digital Library i Wikisource grec."
     },
