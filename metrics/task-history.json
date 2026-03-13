@@ -425,14 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773061203.4657273,
-        "result": "created"
-      },
-      {
-        "timestamp": 1773068403.8033237,
-        "result": "created"
-      },
-      {
         "timestamp": 1773075603.9793751,
         "result": "created"
       },
@@ -502,6 +494,14 @@
       },
       {
         "timestamp": 1773398526.0023234,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773402256.5801597,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773404109.6317637,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773160021.7050881,
-        "result": "created"
-      },
-      {
         "timestamp": 1773183603.4988003,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773391232.2564793,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773404109.057636,
         "result": "created"
       }
     ],
@@ -2388,6 +2388,15 @@
     "events": [
       {
         "timestamp": 1773391249.016579,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_hojoki": {
+    "events": [
+      {
+        "timestamp": 1773404108.880872,
         "result": "created"
       }
     ],
