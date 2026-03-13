@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-13T11:30:01.840882",
-    "ultima_activitat": "2026-03-13T12:30:26.853987"
+    "ultima_activitat": "2026-03-13T12:45:33.724692"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -36,12 +36,12 @@
       "chunk_13",
       "chunk_14"
     ],
-    "en_curs": "chunk_13",
+    "en_curs": null,
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 2.82,
-    "temps_total_min": 28.0
+    "qualitat_mitjana": 2.3,
+    "temps_total_min": 2.43
   },
   "errors": [
     "[11:33:50] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
@@ -59,7 +59,12 @@
     "[12:05:36] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
     "[12:06:41] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
     "[12:10:35] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
-    "[12:27:38] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)"
+    "[12:27:38] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:34:30] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:35:11] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:37:12] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:41:06] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:45:33] Error chunk 10: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":334,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 1pm (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"6ecf125b-7e25-4902-9365-aa117c31ad6e\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"16db5bea-bc40-4ed9-9314-90443deb49c8\"}\n"
   ],
   "warnings": [
     "[11:32:21] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
