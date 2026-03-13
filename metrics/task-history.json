@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773118803.0502253,
-        "result": "created"
-      },
-      {
         "timestamp": 1773133204.2027898,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773409677.906141,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773411517.9266376,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773200175.7175217,
-        "result": "created"
-      },
-      {
         "timestamp": 1773202049.4263964,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773409677.4140677,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773411517.462362,
         "result": "created"
       }
     ],
@@ -2424,6 +2424,15 @@
     "events": [
       {
         "timestamp": 1773405973.2968647,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_de-consolatione-philosophiae-llibre-i": {
+    "events": [
+      {
+        "timestamp": 1773411517.2878351,
         "result": "created"
       }
     ],

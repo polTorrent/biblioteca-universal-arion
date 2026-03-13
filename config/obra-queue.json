@@ -765,7 +765,7 @@
         "wikisource",
         "gutenberg"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/poesia/aleksandr-pushkin/el-genet-de-bronze",
       "notes": "Consell Editorial 2026-03-09. Diversifica el rus cap a la poesia (fins ara només narrativa: Dostoievski, Tolstoi) i afegeix el poeta fundacional de la literatura russa moderna, completament absent del catàleg. Aleksandr Pushkin (†1837) és per al rus el que Shakespeare és per a l'anglès o Dante per a l'italià: el creador de la llengua literària moderna. El genet de bronze (Медный всадник, 1833) és el seu poema narratiu més perfecte: la gran inundació de Sant Petersburg de 1824 destrueix la vida del petit funcionari Ievgueni, que, boig de dolor, desafia l'estàtua eqüestre de Pere el Gran — l'estàtua cobra vida i el persegueix pels carrers buits. Poema sobre el poder, la ciutat, l'individu contra l'Estat, la bogeria i la bellesa terrible de la creació imperial. Introducció i 2 parts en tetrametres iàmbics d'una fluïdesa prodigiosa. Obra breu, intensa, ideal per a edició bilingüe. Cap traducció catalana. Text rus a Wikisource russa i Project Gutenberg."
     },
@@ -838,7 +838,7 @@
         "aozora",
         "wikisource"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/oriental/kamo-no-chomei/hojoki",
       "notes": "Consell Editorial 2026-03-10. Kamo no Chōmei (鴨長明, 1155-1216), poeta i ermità japonès. 'Hōjōki' (方丈記, 'Cròniques de la meva cabana') és una de les tres grans obres del gènere zuihitsu (assaig japonès), juntament amb 'El llibre del coixí' de Sei Shōnagon (ja al catàleg). Escrita el 1212 des d'una cabana de 3 metres quadrats a les muntanyes de Hino, reflexiona sobre la impermanència (mujō) a través de cinc desastres viscuts: incendi, tornado, trasllat de la capital, fam i terratrèmol. Prosa lírica, contemplativa, profundament budista. Cap traducció catalana. Text japonès clàssic a Aozora Bunko."
     },
