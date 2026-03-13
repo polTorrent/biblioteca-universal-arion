@@ -1,0 +1,23 @@
+Data: 2026-03-13
+Puntuació: 0/10
+Supervisor: Claude (supervisió automàtica)
+
+PROBLEMES CRÍTICS — Traducció completament fallida:
+
+1. ORIGINAL BUIT: original.md no conté cap text italià de Petrarca. Cal descarregar els 20 sonets seleccionats del Canzoniere (Gutenberg #17650 o altra font de domini públic).
+
+2. TRADUCCIÓ INEXISTENT: traduccio.md conté un missatge de l'LLM demanant el text font en lloc d'una traducció real. No hi ha cap sonet traduït.
+
+3. GLOSSARI INEXISTENT: no existeix glossari.yml. Error del pipeline: 'italià' no és una llengua suportada pel glossarista (només llatí, grec, anglès, alemany, francès, japonès, xinès).
+
+4. NOTES INEXISTENTS: no existeix notes.md.
+
+5. METADATA INCOHERENT: metadata.yml declara qualitat 8.0 i estat 'revisat' però l'avaluació final mostra global 0.0, aprovat false, i requereix revisió humana. Estadístiques duplicades i contradictòries.
+
+6. FORMAT INCORRECTE: no hi ha cap estructura de sonets (haurien de ser 20 sonets numerats amb text bilingüe).
+
+ACCIONS NECESSÀRIES:
+- Afegir 'italià' com a llengua suportada al glossarista (agents/v2/models.py o equivalent)
+- Descarregar el text original italià dels 20 sonets seleccionats
+- Reexecutar el pipeline complet
+- Verificar que el metadata.yml reflecteixi l'estat real
