@@ -11,30 +11,13 @@ obra:
   descripcio: Primer llibre de La Consolació de la Filosofia, escrit per Boeci a la
     presó mentre esperava l'execució. Diàleg entre Boeci i la Filosofia personificada,
     alternant prosa i vers (prosimetrum).
-  estadistiques: {}
-seccions: 7
+seccions: 13
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 3418
+  paraules_traduccio: 5364
+  notes: 10
+  termes_glossari: 20
 revisio:
-  estat: pendent
-  qualitat: 0.0
+  estat: revisat
+  qualitat: 8.0
   data_revisio: '2026-03-13'
-avaluacio_final:
-  data: '2026-03-13T14:57:08.635465'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 0
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 0
