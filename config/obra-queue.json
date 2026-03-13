@@ -780,7 +780,7 @@
         "perseus",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/poesia/hesiode/els-treballs-i-els-dies",
       "notes": "Consell Editorial 2026-03-10. Diversifica la poesia grega: el catàleg té Safo (lírica) però no poesia didàctica. Hesíode (s. VIII-VII aC, >2700 anys) és, amb Homer, el pilar de la literatura grega arcaica. Els treballs i els dies (Ἔργα καὶ Ἡμέραι) és el primer poema didàctic d'Occident: 828 hexàmetres on Hesíode instrueix el seu germà Perses sobre la justícia, el treball agrícola, la navegació i els dies fastos. Conté el mite de Prometeu i Pandora, el mite de les cinc edats (or, plata, bronze, herois, ferro) i la faula del falcó i el rossinyol — primera faula de la literatura europea. Obra fundacional per a l'ètica del treball, la teodicea i la poesia gnòmica. Cap traducció catalana recent. Text grec a Perseus Digital Library i Wikisource grega."
     },
@@ -947,6 +947,51 @@
       "status": "pending",
       "obra_dir": "obres/assaig/lu-yu/chajing",
       "notes": "Consell Editorial 2026-03-13. 陸羽 (733–804), el 'Sant del Te', erudit de la dinastia Tang. El Chájīng (茶經, c. 760) és el primer tractat complet sobre el te: origen, preparació, utensilis, aigua, cerimònia i filosofia. Tres volums, deu capítols. Combina coneixement pràctic amb reflexió estètica i espiritual, influenciat pel taoisme i el budisme. El catàleg té filosofia xinesa (Laozi, Confuci, Zhuangzi, Mozi) però cap assaig cultural xinès. Obra fundacional de la cultura del te a l'Àsia Oriental. Cap traducció catalana. Text xinès clàssic complet a CText (Chinese Text Project) i Wikisource xinès."
+    },
+    {
+      "autor": "Pseudo-Longí",
+      "titol": "Del sublim (Περὶ ὕψους)",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/pseudo-longi/del-sublim",
+      "notes": "Consell Editorial 2026-03-13. Pseudo-Longí (s. I dC), atribuït tradicionalment a Cassi Longí però d'autoria incerta. Del sublim (Περὶ ὕψους) és el tractat fundacional d'estètica literària occidental: analitza les fonts de la grandesa en l'escriptura — pensament elevat, emoció, figures retòriques, dicció noble i composició. Influència immensa en la teoria estètica europea (Burke, Kant, Schiller). El catàleg té retòrica antiga (Ciceró, Teofrast) però cap tractat d'estètica pura. Cap traducció catalana publicada. Text grec complet a Perseus Digital Library i Wikisource."
+    },
+    {
+      "autor": "Yoshida Kenkō",
+      "titol": "Tsurezuregusa (Assaigs en l'oci) — selecció de 50 capítols",
+      "llengua": "japonès",
+      "categoria": "oriental",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/oriental/yoshida-kenko/tsurezuregusa",
+      "notes": "Consell Editorial 2026-03-13. 吉田兼好 (c. 1284–1350), monjo budista i poeta japonès. Tsurezuregusa (徒然草, c. 1330) és un dels tres grans zuihitsu (assaig miscel·lani) de la literatura japonesa, al costat del Makura no Sōshi de Sei Shōnagon. 243 capítols breus sobre la bellesa de l'impermanència, l'estètica del wabi, la natura humana i la vida contemplativa. Influència central en l'estètica japonesa (mono no aware, mujō). El catàleg inclou Sei Shōnagon però manca el complement masculí del gènere zuihitsu. Selecció dels 50 capítols més representatius. Cap traducció catalana. Text japonès clàssic a Aozora Bunko."
+    },
+    {
+      "autor": "Firdawsí",
+      "titol": "Shahnameh: Rostam i Sohrab",
+      "llengua": "persa",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/firdawsi/shahnameh-rostam-i-sohrab",
+      "notes": "Consell Editorial 2026-03-13. Abul-Qàsem Firdawsí (c. 940–1020), poeta persa, autor del Shahnameh (شاهنامه, Llibre dels Reis, c. 1010), l'epopeia nacional de Pèrsia i una de les obres més llargues de la literatura mundial (50.000 dístics). L'episodi de Rostam i Sohrab és el passatge més cèlebre: l'heroi Rostam mata en combat el seu propi fill Sohrab sense reconèixer-lo, una tragèdia d'identitat i destí que ha inspirat Matthew Arnold i nombrosos artistes. El catàleg té poesia persa (Omar Khayyam, Rumi) però cap narrativa èpica persa. Cap traducció catalana de cap fragment del Shahnameh. Text persa a Wikisource i traduccions al domini públic a Gutenberg."
     }
   ]
 }
