@@ -6,10 +6,10 @@
     "llengua": "italià"
   },
   "timestamps": {
-    "inici": "2026-03-13T18:30:24.035229",
-    "ultima_activitat": "2026-03-13T19:47:19.476557"
+    "inici": "2026-03-13T22:51:11.094206",
+    "ultima_activitat": "2026-03-13T22:54:08.401886"
   },
-  "fase_actual": "traduccio",
+  "fase_actual": "anotacio",
   "fases_completades": [
     "investigacio",
     "glossari",
@@ -27,13 +27,9 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 8.0,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 10.0,
+    "temps_total_min": 2.96
   },
-  "errors": [
-    "[18:32:04] Error chunk 1: could not convert string to float: 'N/A'"
-  ],
-  "warnings": [
-    "[18:31:12] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='italià', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
-  ]
+  "errors": [],
+  "warnings": []
 }
