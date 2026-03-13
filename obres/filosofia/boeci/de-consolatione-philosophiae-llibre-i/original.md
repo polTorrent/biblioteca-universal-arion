@@ -1,5 +1,3 @@
-# Gutenberg #14328
-**Autor:** 
 **Font:** [gutenberg](https://www.gutenberg.org/ebooks/14328)
 **Llengua:** 
 
@@ -5511,11 +5509,3 @@ Bk. V., ch. i., p. 227,l. 16: Aristotle, 'Physics,'
 
   "     ch. vi., p. 258, l. 8: Aristotle, 'De
         Cælo,' II. 1.
-
-
-
-
-
-
-
-End of Project Gutenberg's The Consolation of Philosophy, by Boethius
