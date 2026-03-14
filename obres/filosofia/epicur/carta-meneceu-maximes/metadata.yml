@@ -1,0 +1,20 @@
+obra:
+  titol: "Carta a Meneceu i Màximes capitals"
+  titol_original: "Ἐπιστολὴ πρὸς Μενοικέα — Κύριαι Δόξαι"
+  autor: "Epicur"
+  autor_original: "Ἐπίκουρος"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 300 aC"
+  any_traduccio: 2026
+  llengua_original: "grec"
+  descripcio: "Carta d'Epicur al seu deixeble Meneceu sobre la felicitat, el plaer, la mort i els déus, juntament amb les quaranta màximes fonamentals de la filosofia epicúria. Conservades per Diògenes Laerci (Llibre X)."
+seccions: 2
+estadistiques:
+  paraules_original: 2767
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent_traduccio"
+  qualitat: 0
+  data_revisio: ""
