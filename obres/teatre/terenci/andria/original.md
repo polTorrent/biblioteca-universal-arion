@@ -1,5 +1,3 @@
-# Andria — P. Terentius Afer (Terenci)
-
 **Font**: [The Latin Library](https://www.thelatinlibrary.com/ter.andria.html)
 **Llengua original**: llatí
 **Data**: c. 166 aC

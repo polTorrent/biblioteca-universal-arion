@@ -884,7 +884,7 @@
         "perseus",
         "gutenberg"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/teatre/terenci/andria",
       "notes": "Consell Editorial 2026-03-13. Publi Terenci Àfer (Publius Terentius Afer, c. 195-159 aC), dramaturg romà d'origen nord-africà (Cartago). 'Andria' ('La dona d'Andros', 166 aC) és la seva primera comèdia, basada en Menandre. Trama d'amors creuats, identitats ocultes i reconeixement final — el model de la comèdia occidental. Terenci va refinar el llatí col·loquial amb elegància i naturalitat; Cèsar l'anomenà 'dimidiatus Menander'. El catàleg té tragèdia grega (Sòfocles, Eurípides), teatre nòrdic (Ibsen, Strindberg) i Nō japonès (Zeami), però cap comèdia romana. Cap traducció catalana recent. Text llatí a The Latin Library, Perseus i Gutenberg."
     },
@@ -974,7 +974,7 @@
         "aozora",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/oriental/yoshida-kenko/tsurezuregusa",
       "notes": "Consell Editorial 2026-03-13. 吉田兼好 (c. 1284–1350), monjo budista i poeta japonès. Tsurezuregusa (徒然草, c. 1330) és un dels tres grans zuihitsu (assaig miscel·lani) de la literatura japonesa, al costat del Makura no Sōshi de Sei Shōnagon. 243 capítols breus sobre la bellesa de l'impermanència, l'estètica del wabi, la natura humana i la vida contemplativa. Influència central en l'estètica japonesa (mono no aware, mujō). El catàleg inclou Sei Shōnagon però manca el complement masculí del gènere zuihitsu. Selecció dels 50 capítols més representatius. Cap traducció catalana. Text japonès clàssic a Aozora Bunko."
     },
