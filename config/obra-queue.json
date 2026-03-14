@@ -929,7 +929,7 @@
         "aozora",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/teatre/chikamatsu-monzaemon/sonezaki-shinju",
       "notes": "Consell Editorial 2026-03-13. 近松門左衛門 (1653–1725), el 'Shakespeare japonès', dramaturg de jōruri (bunraku) i kabuki. Sonezaki Shinjū (曽根崎心中, 1703) és la primera obra de sewamono (drama domèstic) del teatre de titelles japonès: la història tràgica d'Ohatsu i Tokubei, que trien el doble suïcidi davant la impossibilitat del seu amor. Va revolucionar el teatre japonès en portar la vida quotidiana a l'escenari. El catàleg té Zeami (noh) però no representa el bunraku ni el drama domèstic. Cap traducció catalana. Text japonès a Aozora Bunko."
     },
@@ -1051,7 +1051,7 @@
         "perseus",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/filosofia/epicur/carta-meneceu-maximes",
       "notes": "Consell Editorial 2026-03-13. Epicur de Samos (341-270 aC), fundador de l escola epicuria. La Carta a Meneceu es el text etic fonamental: recerca del plaer moderat, eliminacio de la por a la mort, autarquia. Les Maximes capitals condensen en 40 aforismes la doctrina. El cataleg conte multiples estoics pero cap epicuri. Cap traduccio catalana moderna. Textos grecs a Perseus i Wikisource."
     },
@@ -1085,6 +1085,52 @@
       "status": "pending",
       "obra_dir": "obres/oriental/vyasa/bhagavad-gita",
       "notes": "Consell Editorial 2026-03-13. Bhagavad Gita, atribuida a Vyasa, dialeg filosofic Arjuna-Krishna del Mahabharata. Text fonamental de la filosofia india: karma-ioga, bhakti-ioga, dharma. Seleccio de 6 capitols (1-2, 3, 11, 12, 18). Cataleg te Sutra del Cor pero no aquest pilar hinduista. Cap traduccio catalana recent. Text sanscrit a Wikisource; trad. anglesa Arnold (1885) a Gutenberg."
+    },
+    {
+      "autor": "Ésquil",
+      "titol": "Prometeu encadenat",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/esquil/prometeu-encadenat",
+      "notes": "Consell Editorial 2026-03-14. Ésquil (c. 525-456 aC), pare de la tragèdia grega. Prometeu encadenat (Προμηθεύς Δεσμώτης) dramatitza el càstig del tità que va robar el foc als déus per donar-lo als humans: mite fundacional sobre la rebel·lió contra el poder, el progrés tècnic i el sofriment per convicció. El catàleg inclou Sòfocles (Antígona) i Eurípides però manca Ésquil, completant així la tríada tràgica grega. Cap traducció catalana moderna. Text grec complet a Perseus Digital Library i Wikisource."
+    },
+    {
+      "autor": "Spinoza",
+      "titol": "Tractat de la reforma de l'enteniment",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 5,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin_library",
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/spinoza/tractat-reforma-enteniment",
+      "notes": "Consell Editorial 2026-03-14. Baruch Spinoza (1632-1677), filòsof racionalista neerlandès. El Tractatus de Intellectus Emendatione (1677, pòstum) és una introducció al seu mètode filosòfic: com purificar l'enteniment per assolir el coneixement veritable, jerarquia dels modes de percepció, la idea de Déu com a fonament. Text inacabat però coherent, complementari a l'Ètica. El catàleg conté filosofia antiga (estoics, Plató, Aristòtil) i moderna (Nietzsche, Schopenhauer) però cap racionalista del XVII. Cap traducció catalana coneguda. Text llatí a Latin Library i Wikisource; trad. anglesa Elwes (1883) a Gutenberg."
+    },
+    {
+      "autor": "Sor Juana Inés de la Cruz",
+      "titol": "Primero sueño",
+      "llengua": "castellà",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "wikisource",
+        "cervantesvirtual"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/sor-juana/primero-sueno",
+      "notes": "Consell Editorial 2026-03-14. Sor Juana Inés de la Cruz (1648-1695), monja i poeta novohispana, considerada la figura literària més important de l'Amèrica colonial. Primero sueño (1692), silva de 975 versos, narra el viatge de l'ànima pel coneixement universal durant el somni: cosmologia, epistemologia i els límits de la raó humana, en clau barroca gongorina. Obra mestra única per gènere (poema filosòfic extens), per autoria femenina en una època dominada per homes, i per la síntesi de tradicions europea i americana. Afegeix castellà com a idioma nou al catàleg. Cap traducció catalana. Text a Wikisource i Biblioteca Virtual Cervantes."
     }
   ]
 }
