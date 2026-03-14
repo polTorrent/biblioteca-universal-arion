@@ -1,4 +1,3 @@
-# Primero Sueño
 **Autor:** Sor Juana Inés de la Cruz
 **Font:** [wikisource](https://es.wikisource.org/wiki/Primero_Sue%C3%B1o)
 **Llengua:** castellà
