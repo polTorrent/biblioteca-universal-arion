@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773404109.6317637,
-        "result": "created"
-      },
-      {
         "timestamp": 1773405958.3270588,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773462655.3746343,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773464404.2791479,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773404109.057636,
-        "result": "created"
-      },
-      {
         "timestamp": 1773405957.792802,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773462654.8790634,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773464403.740712,
         "result": "created"
       }
     ],
@@ -2638,6 +2638,15 @@
     "events": [
       {
         "timestamp": 1773462654.7198339,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_sonezaki-shinju": {
+    "events": [
+      {
+        "timestamp": 1773464403.517788,
         "result": "created"
       }
     ],
