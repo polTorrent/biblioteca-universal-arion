@@ -1980,6 +1980,10 @@
       {
         "timestamp": 1772924398.9525967,
         "result": "created"
+      },
+      {
+        "timestamp": 1773529217.7148583,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -2818,6 +2822,15 @@
     "events": [
       {
         "timestamp": 1773529202.3515086,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_teatre_esquil_prometeu-encadenat": {
+    "events": [
+      {
+        "timestamp": 1773529218.364713,
         "result": "created"
       }
     ],
