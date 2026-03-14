@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773415204.2944508,
-        "result": "created"
-      },
-      {
         "timestamp": 1773417051.0399153,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773477836.8011873,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773486003.101377,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773429965.5315068,
-        "result": "created"
-      },
-      {
         "timestamp": 1773431806.1252077,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773485228.789997,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773486002.6435158,
         "result": "created"
       }
     ],
@@ -2709,6 +2709,24 @@
     "events": [
       {
         "timestamp": 1773485228.9788766,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_idillis": {
+    "events": [
+      {
+        "timestamp": 1773486002.462365,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_sor-juana_primero-sueno": {
+    "events": [
+      {
+        "timestamp": 1773488931.4707026,
         "result": "created"
       }
     ],
