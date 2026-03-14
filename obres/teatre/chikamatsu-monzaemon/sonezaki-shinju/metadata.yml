@@ -1,16 +1,25 @@
-avaluacio_final:
-  data: '2026-03-14T05:40:56.931580'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 0
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 0
+obra:
+  titol: "Els suïcidis d'amor a Sonezaki"
+  titol_original: "曽根崎心中"
+  titol_romanitzat: "Sonezaki Shinjū"
+  autor: "Chikamatsu Monzaemon"
+  autor_original: "近松門左衛門"
+  traductor: "Biblioteca Arion"
+  any_original: "1703"
+  any_traduccio: 2026
+  llengua_original: "japonès clàssic"
+  genere: "Sewamono (jōruri domèstic / bunraku)"
+  descripcio: >
+    Drama domèstic per al teatre de titelles basat en el doble suïcidi
+    real de Tokubei i Ohatsu a Sonezaki, Osaka, el 1703. Obra fundacional
+    del gènere shinjū-mono i una de les peces més cèlebres del teatre japonès.
+seccions: 3
+estadistiques:
+  paraules_original: 2850
+  paraules_traduccio: 2420
+  notes: 21
+  termes_glossari: 20
+revisio:
+  estat: "revisat"
+  qualitat: 8.5
+  data_revisio: "2026-03-14"

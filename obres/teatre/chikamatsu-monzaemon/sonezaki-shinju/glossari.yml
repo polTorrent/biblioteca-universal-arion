@@ -1,0 +1,95 @@
+termes:
+  - terme: "心中"
+    romanitzacio: "shinjū"
+    significat: "Doble suïcidi d'amor; literalment 'dins del cor'. Pacte de mort entre dos amants que no poden estar junts en vida."
+    context: "Títol de l'obra i tema central"
+
+  - terme: "浄瑠璃"
+    romanitzacio: "jōruri"
+    significat: "Teatre narratiu musical japonès amb titelles, narrador (tayū) i acompanyament de shamisen. Avui conegut com a bunraku."
+    context: "Gènere de l'obra"
+
+  - terme: "世話物"
+    romanitzacio: "sewamono"
+    significat: "Drama domèstic ambientat en el món contemporani dels comerciants i cortesanes, per oposició al jidaimono (drama històric)."
+    context: "Gènere específic de l'obra"
+
+  - terme: "道行"
+    romanitzacio: "michiyuki"
+    significat: "Secció poètica cantada que descriu el viatge dels personatges. En les obres de shinjū, és el camí cap al lloc de la mort."
+    context: "Acte tercer de l'obra"
+
+  - terme: "太夫"
+    romanitzacio: "tayū"
+    significat: "Narrador-cantant del jōruri. Interpreta totes les veus (narració, diàlegs, poesia) acompanyat del shamisen."
+    context: "Intèrpret principal del text"
+
+  - terme: "遊女"
+    romanitzacio: "yūjo"
+    significat: "Cortesana dels barris de plaer. Dona contractada per treballar en una casa de plaer, sense llibertat personal."
+    context: "Professió d'Ohatsu"
+
+  - terme: "手代"
+    romanitzacio: "tedai"
+    significat: "Dependent o empleat d'una botiga comercial. Rang intermedi entre l'aprenent (decchi) i el gerent (bantō)."
+    context: "Rang de Tokubei a la botiga Hirano-ya"
+
+  - terme: "廓"
+    romanitzacio: "kuruwa"
+    significat: "Barri de plaer llicenciat pel govern. Espai tancat on es concentraven les cases de cortesanes."
+    context: "Entorn social d'Ohatsu"
+
+  - terme: "北新地"
+    romanitzacio: "Kita-Shinchi"
+    significat: "Barri nord de Shinchi, zona de plaer al nord d'Osaka on se situa la casa Temma-ya."
+    context: "Ubicació de l'acte segon"
+
+  - terme: "縁の下"
+    romanitzacio: "en no shita"
+    significat: "Espai sota el terra elevat de fusta de les cases japoneses tradicionals."
+    context: "Amagatall de Tokubei a l'acte segon"
+
+  - terme: "一蓮托生"
+    romanitzacio: "ichiren takushō"
+    significat: "Renéixer junts en una mateixa flor de lotus al Paradís d'Amida. Promesa d'unió eterna més enllà de la mort."
+    context: "Jurament final de Tokubei"
+
+  - terme: "寂滅為楽"
+    romanitzacio: "jakumetsu iraku"
+    significat: "En l'extinció [del desig] hi ha la joia. Frase del Sutra del Nirvana citada al michiyuki."
+    context: "Doctrina budista al·ludida al tercer acte"
+
+  - terme: "あだしが原"
+    romanitzacio: "Adashigahara"
+    significat: "Camp als afores de Kyoto on s'abandonaven els cadàvers. Tòpic poètic de la fugacitat de la vida."
+    context: "Al·lusió poètica al michiyuki"
+
+  - terme: "天神"
+    romanitzacio: "Tenjin"
+    significat: "Déu de les lletres (Sugawara no Michizane). El bosc de Tenjin a Sonezaki és el lloc del doble suïcidi."
+    context: "Escenari de l'acte final"
+
+  - terme: "元禄"
+    romanitzacio: "Genroku"
+    significat: "Era del Japó (1688-1704). Període d'esplendor cultural i econòmic, especialment per a la burgesia d'Osaka."
+    context: "Període històric de l'obra"
+
+  - terme: "竹本座"
+    romanitzacio: "Takemoto-za"
+    significat: "Teatre de jōruri fundat per Takemoto Gidayū a Osaka. Chikamatsu hi va escriure les seves obres més cèlebres."
+    context: "Lloc de l'estrena"
+
+  - terme: "三味線"
+    romanitzacio: "shamisen"
+    significat: "Instrument de tres cordes que acompanya la narració del tayū al jōruri."
+    context: "Acompanyament musical"
+
+  - terme: "名残"
+    romanitzacio: "nagori"
+    significat: "Comiat, record, vestigi. Paraula clau del michiyuki, que connota la tristesa de la separació."
+    context: "Mot recurrent a l'acte tercer"
+
+  - terme: "七五調"
+    romanitzacio: "shichigochō"
+    significat: "Ritme poètic japonès de 7-5 síl·labes, hereu del waka. Chikamatsu l'usa al michiyuki."
+    context: "Forma poètica del tercer acte"
