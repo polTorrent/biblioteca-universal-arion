@@ -4,7 +4,6 @@ informe_detallat.py - Genera informes detallats per a la Biblioteca Arion
 Inclou: tasques actives, obres pendents, problemes, estimacions
 """
 import json
-import os
 from pathlib import Path
 import re
 from datetime import datetime
@@ -15,7 +14,7 @@ TASKS_DIR = Path.home() / ".openclaw" / "workspace" / "tasks"
 OBRES_DIR = PROJECT / "obres"
 QUEUE_FILE = PROJECT / "config" / "obra-queue.json"
 
-def get_running_task():
+def get_running_task() -> dict[str, str] | None:
     """Obté la tasca actualment en execució"""
     running_dir = TASKS_DIR / "running"
     if running_dir.exists():
@@ -33,7 +32,7 @@ def get_running_task():
                 pass
     return None
 
-def get_pending_tasks(limit=10):
+def get_pending_tasks(limit: int = 10) -> list[dict[str, str | int]]:
     """Obté les tasques pendents"""
     pending_dir = TASKS_DIR / "pending"
     tasks = []
@@ -51,7 +50,7 @@ def get_pending_tasks(limit=10):
                 pass
     return tasks
 
-def get_obres_status():
+def get_obres_status() -> dict[str, list[dict[str, str | float | None]]]:
     """Obté l'estat de totes les obres"""
     obres = {
         "validades": [],
@@ -120,7 +119,7 @@ def get_obres_status():
     
     return obres
 
-def get_estimation(obres):
+def get_estimation(obres: dict[str, list[dict]]) -> dict[str, float]:
     """Calcula estimacions de temps"""
     # Assumptes:
     # - Traducció nova: ~30 min per 1000 paraules
@@ -137,7 +136,7 @@ def get_estimation(obres):
     
     return estimations
 
-def get_failed_tasks():
+def get_failed_tasks() -> list[dict[str, str | int]]:
     """Obté les tasques fallides"""
     failed_dir = TASKS_DIR / "failed"
     tasks = []
@@ -156,7 +155,7 @@ def get_failed_tasks():
                 pass
     return tasks
 
-def get_worker_status():
+def get_worker_status() -> str:
     """Obté l'estat del worker"""
     try:
         result = subprocess.run(
@@ -169,7 +168,7 @@ def get_worker_status():
     except Exception:
         return "❓ DESCONEGUT"
 
-def generate_report():
+def generate_report() -> str:
     """Genera l'informe complet"""
     now = datetime.now()
     
@@ -250,7 +249,7 @@ def generate_report():
 | Traduccions pendents | {estimations['traduccions_pendents']:.1f}h |
 | Correccions pendents | {estimations['correccions_pendents']:.1f}h |
 | Validacions | {estimations['validacions_pendents']:.1f}h |
-| **TOTAL** | **{estimations['total_hores']:.1f}h** ({estimations['dies_laborables']:.1f} dies)
+| **TOTAL** | **{estimations['total_hores']:.1f}h** ({estimations['dies_laborables']:.1f} dies) |
 
 """
     
