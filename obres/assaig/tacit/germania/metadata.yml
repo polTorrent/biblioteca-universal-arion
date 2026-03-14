@@ -1,0 +1,22 @@
+avaluacio_final:
+  data: '2026-03-14T10:12:19.890787'
+  puntuacions:
+    fidelitat: 8.0
+    veu_autor: 8.0
+    fluidesa: 7.0
+    correccio_linguistica: 6.0
+    coherencia: 8.0
+    global: 7.5
+  total_errors: 29
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: true
+  requereix_revisio_humana: false
+  correccions_aplicades: 0
+  correccions_pendents: 15
+obra:
+  estadistiques: {}
+revisio:
+  estat: revisat
+  data_revisio: '2026-03-14'
+  qualitat: 0.0

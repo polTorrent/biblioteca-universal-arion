@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773413355.62526,
-        "result": "created"
-      },
-      {
         "timestamp": 1773415204.2944508,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773474166.6582456,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773477836.8011873,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773426277.0349576,
-        "result": "created"
-      },
-      {
         "timestamp": 1773428118.758779,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773474087.6603768,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773476001.7731354,
         "result": "created"
       }
     ],
@@ -2669,6 +2669,33 @@
     "events": [
       {
         "timestamp": 1773474104.5863967,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresassaigtacitgerma": {
+    "events": [
+      {
+        "timestamp": 1773476001.9623017,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_teocrit_idillis": {
+    "events": [
+      {
+        "timestamp": 1773481569.1104214,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_germania": {
+    "events": [
+      {
+        "timestamp": 1773483397.600918,
         "result": "created"
       }
     ],
