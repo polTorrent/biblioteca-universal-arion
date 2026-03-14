@@ -1,0 +1,86 @@
+{
+  "traduccions": {
+    "merit (accumulated in earlier lives)": {
+      "original": "merit (accumulated in earlier lives)",
+      "traduccio": "mèrit (acumulat en vides anteriors)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "virtues": {
+      "original": "virtues",
+      "traduccio": "virtuts",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "merchant": {
+      "original": "merchant",
+      "traduccio": "mercader",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "asterism and lunar station": {
+      "original": "asterism and lunar station",
+      "traduccio": "constel·lació i mansió lunar",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "yoke": {
+      "original": "yoke",
+      "traduccio": "jou",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "conch-shell and beat of drum": {
+      "original": "conch-shell and beat of drum",
+      "traduccio": "trompa de cargol i tambor",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Vishnu Sharma (c. segle III a.C. (dates incertes)), Índia septentrional (possiblement Kashmir o regió de Mathura). Brahmà erudit considerat tradicionalment l'autor del Panchatantra, una de les col·leccions de fàbules més influents del món. La seva existència històrica és debatuda pels erudits, i el nom podria ser pseudònim. Segons la tradició, va compondre aquestes històries per educar els fills del rei Amarashakti.",
+    "context_historic": "Període de formació de la literatura didàctica sànscrita (c. segle III a.C. - VI d.C.), època de consolidació dels regnes post-maurians, desenvolupament del hinduisme clàssic i sistematització de la literatura gnòmica",
+    "context_obra": "पञ्चतन्त्र (Pañcatantra) (c. segle III a.C. - VI d.C. (composició gradual)) - Col·lecció de fàbules didàctiques en prosa sànscrita amb versos intercalats (akhyayika). Obra destinada a l'educació política i moral dels prínceps, utilitzant animals com a protagonistes per ensenyar nitishastra (art del govern) i prudència mundana",
+    "influencies": [
+      "Tradició oral de fàbules índies",
+      "Literatura didàctica brahmànica",
+      "Tractats de nitishastra (ciència política)",
+      "Tradicions budistes i jainistes de contes morals"
+    ],
+    "temes_principals": [
+      "Nitishastra (ciència del govern prudent)",
+      "Amistat i traïció",
+      "Astucia política i diplomàcia",
+      "Moralitat pràctica vs ideal",
+      "Supervivència social"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Rei Amarashakti (personatge marc)",
+    "[H] Personatge històric: Karataka i Damanaka (xacals protagonistes del Llibre I)",
+    "[H] Personatge històric: Pingalaka (lleó rei)",
+    "[H] Personatge històric: Sanjeevaka (brau)",
+    "[H] Personatge històric: Diversos animals parlants amb noms sànscrits",
+    "[C] Referència cultural: Sistema de castes brahmànic",
+    "[C] Referència cultural: Geografia mítolòsica índia (Kailasa)",
+    "[C] Referència cultural: Conceptes del dharma i artha",
+    "[C] Referència cultural: Tradicions cortesanes índies",
+    "[C] Referència cultural: Filosofia política antiga índia",
+    "[T] Terme tècnic: Nitishastra",
+    "[T] Terme tècnic: Tantra (tractat)",
+    "[T] Terme tècnic: Katha (història emmarcada)",
+    "[T] Terme tècnic: Dharma",
+    "[T] Terme tècnic: Artha",
+    "[T] Terme tècnic: Sutra",
+    "[T] Terme tècnic: Raja (rei)",
+    "[T] Terme tècnic: Mantrin (conseller)"
+  ]
+}
