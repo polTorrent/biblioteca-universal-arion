@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773411517.9266376,
-        "result": "created"
-      },
-      {
         "timestamp": 1773413355.62526,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773471603.8245776,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773474166.6582456,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773417050.5453706,
-        "result": "created"
-      },
-      {
         "timestamp": 1773426277.0349576,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773472184.7990777,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773474087.6603768,
         "result": "created"
       }
     ],
@@ -2660,6 +2660,15 @@
     "events": [
       {
         "timestamp": 1773466438.6890147,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_assaig_tacit_germania": {
+    "events": [
+      {
+        "timestamp": 1773474104.5863967,
         "result": "created"
       }
     ],
