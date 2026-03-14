@@ -1,7 +1,7 @@
-# Panchatantra Llibre I
+# Panchatantra (Llibre I: Mitrabheda)
 *Vishnu Sharma*
 
-Traduït del llatí per Biblioteca Arion
+Traduït del anglès per Biblioteca Arion
 
 ---
 

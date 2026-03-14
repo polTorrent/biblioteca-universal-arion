@@ -144,12 +144,16 @@ def main():
     fer_chunking = len(text_narratiu) > 3000
     max_chars = 2500 if genere == "filosofia" else 3500
 
+    # Ajustar límit de text segons mida real
+    max_chars_text = max(150000, len(text_narratiu) + 10000)
+
     config = ConfiguracioPipelineV2(
         directori_obra=obra_dir,
         fer_analisi_previa=True,
         crear_glossari=True,
         fer_chunking=fer_chunking,
         max_chars_chunk=max_chars,
+        max_chars_text=max_chars_text,
         fer_avaluacio=True,
         fer_refinament=True,
         llindars=LlindarsAvaluacio(
