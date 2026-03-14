@@ -1,0 +1,1395 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="None">
+    <meta name="author" content="Biblioteca Arion">
+    <meta name="keywords" content="traduccions, clàssics, grec, llatí, alemany, català, filosofia, literatura">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Germania - Tacit">
+    <meta property="og:description" content="None">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://editorial-classica.cat/tacit-germania.html">
+    <meta property="og:site_name" content="Biblioteca Arion">
+    <meta property="og:locale" content="ca_ES">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Biblioteca Arion">
+    <meta name="twitter:description" content="Traduccions obertes de clàssics universals al català">
+
+    <title>Germania - Tacit | Editorial Clàssica</title>
+
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Biblioteca Arion — Noves traduccions" href="feed.xml">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Serif+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@400;500;700&family=GFS+Didot&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    
+<!-- Estils per índex, navegació i favorits -->
+<link rel="stylesheet" href="css/obra.css">
+
+<!-- Schema.org -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "Germania",
+    "author": {
+        "@type": "Person",
+        "name": "Tacit"
+    },
+    "translator": {
+        "@type": "Organization",
+        "name": "Editorial Clàssica"
+    },
+    "inLanguage": "ca",
+    "workTranslation": {
+        "@type": "Book",
+        "name": "None",
+        "author": {
+            "@type": "Person",
+            "name": "None"
+        },
+        "inLanguage": "grec"
+    },
+    "datePublished": "2026"
+}
+</script>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <div class="header-inner">
+                <!-- Logo -->
+                <div class="site-logo">
+                    <a href="index.html" class="site-brand">
+                        <img src="assets/logo/logo_arion_v1.png" alt="Logo Arion" class="site-logo-img">
+                        <span class="site-title">Biblioteca Arion</span>
+                    </a>
+                </div>
+
+                <!-- Navegació i controls -->
+                <div class="header-actions">
+                    <button class="icon-btn search-btn" aria-label="Cercar" title="Cercar">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                    </button>
+                    <button class="icon-btn theme-toggle" aria-label="Canviar tema" title="Mode fosc/clar">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                    <a href="login.html" class="btn-auth">Entrar</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cercador desplegable -->
+        <div class="search-panel" hidden>
+            <div class="container">
+                <form class="search-form" action="cerca.html" method="GET">
+                    <input type="search" name="q" placeholder="Cercar obres, autors, temes..." autocomplete="off" autofocus>
+                    <button type="submit">Cercar</button>
+                    <button type="button" class="search-close" aria-label="Tancar cerca">✕</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        
+<!-- Botó tornar a dalt -->
+<button class="back-to-top" id="back-to-top" title="Tornar a dalt">↑</button>
+
+<article class="page-content">
+    <div class="container">
+        <!-- Capçalera de l'obra amb portada -->
+        <header class="work-header">
+            <div class="work-header-content" style="display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap;">
+                
+
+                <div class="work-info" style="flex: 1; min-width: 300px;">
+                    <h1 class="work-title">Germania</h1>
+                    
+
+                    <div class="work-meta-grid">
+                        <div class="work-meta-item">
+                            <strong>Autor</strong>
+                            
+                            <a href="autor-tacit.html" class="author-link">Tacit</a>
+                            
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Traducció</strong>
+                            Editorial Clàssica
+                        </div>
+
+                        <div class="work-meta-item">
+                            <strong>Llengua original</strong>
+                            Grec
+                        </div>
+
+                        
+
+                    </div>
+
+                    
+
+                    
+                    <!-- Detalls de traducció (collapsible) -->
+                    <button class="details-toggle" id="details-toggle">
+                        <span>Detalls de la traducció</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="work-details" id="work-details" style="display: none;">
+                        <div class="work-meta-grid">
+                            
+                            <div class="work-meta-item">
+                                <strong>Estat</strong>
+                                <span class="badge badge-status-revisat">revisat</span>
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Any traducció</strong>
+                                2026
+                            </div>
+                            
+
+                            
+
+                            
+
+                            
+                            <div class="work-meta-item">
+                                <strong>Última revisió</strong>
+                                2026-03-14
+                            </div>
+                            
+
+                            
+
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls de vista -->
+        <div class="text-container" data-mode="bilingue">
+            <div class="view-controls">
+                <!-- Navegació capítols esquerra -->
+                <button class="chapter-nav-top-btn" id="prev-chapter-top" title="Capítol anterior" disabled>←</button>
+
+                <button class="view-btn toc-toggle" id="toc-toggle" title="Índex de capítols">
+                    <span class="toc-icon">☰</span> Índex
+                </button>
+                <span class="view-separator">|</span>
+                <button class="view-btn" data-mode="original">Original</button>
+                <button class="view-btn active" data-mode="bilingue">Bilingüe</button>
+                <button class="view-btn" data-mode="traduccio">Traducció</button>
+
+                <!-- Navegació capítols dreta -->
+                <button class="chapter-nav-top-btn" id="next-chapter-top" title="Capítol següent" disabled>→</button>
+            </div>
+
+            <!-- Índex de capítols (amagat per defecte) -->
+            <nav class="chapter-toc" id="chapter-toc" aria-label="Índex de capítols">
+                <div class="toc-header">
+                    <h3>Índex de capítols</h3>
+                    <button class="toc-close" id="toc-close" aria-label="Tancar índex">&times;</button>
+                </div>
+                <ol class="toc-list" id="toc-list">
+                    <!-- Omplert dinàmicament per JS -->
+                </ol>
+            </nav>
+
+            <!-- Grid bilingüe -->
+            <div class="bilingue-grid">
+                <!-- Columna original -->
+                <section class="original-column">
+                    <div class="column-header">Text original (grec)</div>
+                    
+                <div class="section" id="orig-1" data-parallel="trad-1">
+                    <h2>III</h2>
+<p>Fuisse apud eos et Herculem memorant, primumque omnium virorum fortium ituri in proelia canunt.
+Sunt illis haec quoque carmina, quorum relatu, quem barditum vocant, accendunt animos futuraeque pugnae fortunam ipso cantu augurantur.</p>
+<p>Terrent enim trepidantve, prout sonuit acies, nec tam vocis ille quam virtutis concentus videtur.
+Adfectatur praecipue asperitas soni et fractum murmur, obiectis ad os scutis, quo plenior et gravior vox repercussu intumescat.</p>
+<p>Ceterum et Ulixen quidam opinantur longo illo et fabuloso errore in hunc Oceanum delatum adisse Germaniae terras, Asciburgiumque, quod in ripa Rheni situm hodieque incolitur, ab illo constitutum nominatumque; aram quin etiam Ulixi consecratam, adiecto Laertae patris nomine, eodem loco olim repertam, monumentaque et tumulos quosdam Graecis litteris inscriptos in confinio Germaniae Raetiaeque adhuc exstare.</p>
+<p>Quae neque confirmare argumentis neque refellere in animo est: ex ingenio suo quisque demat vel addat fidem.</p>
+<p>Ipse eorum opinionibus accedo, qui Germaniae populos nullis aliis aliarum nationum conubiis infectos propriam et sinceram et tantum sui similem gentem exstitisse arbitrantur.
+Unde habitus quoque corporum, tamquam in tanto hominum numero, idem omnibus: truces et caerulei oculi, rutilae comae, magna corpora et tantum ad impetum valida: laboris atque operum non eadem patientia, minimeque sitim aestumque tolerare, frigora atque inediam caelo solove adsueverunt.</p>
+<p>Terra etsi aliquanto specie differt, in universum tamen aut silvis horrida aut paludibus foeda, umidior qua Gallias, ventosior qua Noricum ac Pannoniam adspicit; satis ferax, frugiferarum arborum inpatiens, pecorum fecunda, sed plerumque improcera.
+Ne armentis quidem suus honor aut gloria frontis: numero gaudent, eaeque solae et gratissimae opes sunt.
+Argentum et aurum propitiine an irati di negaverint dubito.
+Nec tamen adfirmaverim nullam Germaniae venam argentum aurumve gignere: quis enim scrutatus est?
+Possessione et usu haud perinde adficiuntur.
+Est videre apud illos argentea vasa, legatis et principibus eorum muneri data, non in alia vilitate quam quae humo finguntur; quamquam proximi ob usum commerciorum aurum et argentum in pretio habent formasque quasdam nostrae pecuniae adgnoscunt atque eligunt.
+Interiores simplicius et antiquius permutatione mercium utuntur.
+Pecuniam probant veterem et diu notam, serratos bigatosque.
+Argentum quoque magis quam aurum sequuntur, nulla adfectione animi, sed quia numerus argenteorum facilior usui est promiscua ac vilia mercantibus.</p>
+<p>Ne ferrum quidem superest, sicut ex genere telorum colligitur.
+Rari gladiis aut maioribus lanceis utuntur: hastas vel ipsorum vocabulo frameas gerunt angusto et brevi ferro, sed ita acri et ad usum habili, ut eodem telo, prout ratio poscit, vel comminus vel eminus pugnent.
+Et eques quidem scuto frameaque contentus est; pedites et missilia spargunt, pluraque singuli, atque in inmensum vibrant, nudi aut sagulo leves.
+Nulla cultus iactatio; scuta tantum lectissimis coloribus distinguunt.
+Paucis loricae, vix uni alterive cassis aut galea.
+Equi non forma, non velocitate conspicui.
+Sed nec variare gyros in morem nostrum docentur: in rectum aut uno flexu dextros agunt, ita coniuncto orbe, ut nemo posterior sit.
+In universum aestimanti plus penes peditem roboris; eoque mixti proeliantur, apta et congruente ad equestrem pugnam velocitate peditum, quos ex omni iuventute delectos ante aciem locant.
+Definitur et numerus; centeni ex singulis pagis sunt, idque ipsum inter suos vocantur, et quod primo numerus fuit, iam nomen et honor est.
+Acies per cuneos componitur.
+Cedere loco, dummodo rursus instes, consilii quam formidinis arbitrantur.
+Corpora suorum etiam in dubiis proeliis referunt.
+Scutum reliquisse praecipuum flagitium, nec aut sacris adesse aut concilium inire ignominioso fas; multique superstites bellorum infamiam laqueo finierunt.</p>
+<h2>VII</h2>
+<p>Reges ex nobilitate, duces ex virtute sumunt.
+Nec regibus infinita aut libera potestas, et duces exemplo potius quam imperio, si prompti, si conspicui, si ante aciem agant, admiratione praesunt.
+Ceterum neque animadvertere neque vincire, ne verberare quidem nisi sacerdotibus permissum, non quasi in poenam nec ducis iussu, sed velut deo imperante, quem adesse bellantibus credunt.
+Effigiesque et signa quaedam detracta lucis in proelium ferunt; quodque praecipuum fortitudinis incitamentum est, non casus, nec fortuita conglobatio turmam aut cuneum facit, sed familiae et propinquitates; et in proximo pignora, unde feminarum ululatus audiri, unde vagitus infantium.
+Hi cuique sanctissimi testes, hi maximi laudatores.
+Ad matres, ad coniuges vulnera ferunt; nec illae numerare aut exigere plagas pavent, cibosque et hortamina pugnantibus gestant.</p>
+<h2>VIII</h2>
+<p>Memoriae proditur quasdam acies inclinatas iam et labantes a feminis restitutas constantia precum et obiectu pectorum et monstrata comminus captivitate, quam longe inpatientius feminarum suarum nomine timent, adeo ut efficacius obligentur animi civitatum, quibus inter obsides puellae quoque nobiles imperantur.
+Inesse quin etiam sanctum aliquid et providum putant, nec aut consilia earum aspernantur aut responsa neglegunt.
+Vidimus sub divo Vespasiano Veledam diu apud plerosque numinis loco habitam; sed et olim Albrunam et compluris alias venerati sunt, non adulatione nec tamquam facerent deas.</p>
+<p>Deorum maxime Mercurium colunt, cui certis diebus humanis quoque hostiis litare fas habent.
+Herculem et Martem concessis animalibus placant.
+Pars Sueborum et Isidi sacrificat: unde causa et origo peregrino sacro, parum comperi, nisi quod signum ipsum in modum liburnae figuratum docet advectam religionem.
+Ceterum nec cohibere parietibus deos neque in ullam humani oris speciem adsimulare ex magnitudine caelestium arbitrantur: lucos ac nemora consecrant deorumque nominibus appellant secretum illud, quod sola reverentia vident.</p>
+<p>Auspicia sortesque ut qui maxime observant: sortium consuetudo simplex.
+Virgam frugiferae arbori decisam in surculos amputant eosque notis quibusdam discretos super candidam vestem temere ac fortuito spargunt.
+Mox, si publice consultetur, sacerdos civitatis, sin privatim, ipse pater familiae, precatus deos caelumque suspiciens ter singulos tollit, sublatos secundum impressam ante notam interpretatur.
+Si prohibuerunt, nulla de eadem re in eundem diem consultatio; sin permissum, auspiciorum adhuc fides exigitur.
+Et illud quidem etiam hic notum, avium voces volatusque interrogare; proprium gentis equorum quoque praesagia ac monitus experiri.
+Publice aluntur isdem nemoribus ac lucis, candidi et nullo mortali opere contacti; quos pressos sacro curru sacerdos ac rex vel princeps civitatis comitantur hinnitusque ac fremitus observant.
+Nec ulli auspicio maior fides, non solum apud plebem, sed apud proceres, apud sacerdotes; se enim ministros deorum, illos conscios putant.
+Est et alia observatio auspiciorum, qua gravium bellorum eventus explorant.
+Eius gentis, cum qua bellum est, captivum quoquo modo interceptum cum electo popularium suorum, patriis quemque armis, committunt: victoria huius vel illius pro praeiudicio accipitur.</p>
+<p>De minoribus rebus principes consultant; de maioribus omnes, ita tamen, ut ea quoque, quorum penes plebem arbitrium est, apud principes pertractentur.
+Coeunt, nisi quid fortuitum et subitum incidit, certis diebus, cum aut incohatur luna aut impletur; nam agendis rebus hoc auspicatissimum initium credunt.
+Nec dierum numerum, ut nos, sed noctium computant.
+Sic constituunt, sic condicunt: nox ducere diem videtur.
+Illud ex libertate vitium, quod non simul nec ut iussi conveniunt, sed et alter et tertius dies cunctatione coeuntium absumitur.
+Ut turbae placuit, considunt armati.
+Silentium per sacerdotes, quibus tum et coercendi ius est, imperatur.
+Mox rex vel princeps, prout aetas cuique, prout nobilitas, prout decus bellorum, prout facundia est, audiuntur, auctoritate suadendi magis quam iubendi potestate.
+Si displicuit sententia, fremitu aspernantur; sin placuit, frameas concutiunt.
+Honoratissimum adsensus genus est armis laudare.</p>
+<h2>XII</h2>
+<p>Licet apud concilium accusare quoque et discrimen capitis intendere.
+Distinctio poenarum ex delicto.
+Proditores et transfugas arboribus suspendunt, ignavos et imbelles et corpore infames caeno ac palude, iniecta insuper crate, mergunt.
+Diversitas supplicii illuc respicit, tamquam scelera ostendi oporteat, dum puniuntur, flagitia abscondi.
+Sed et levioribus delictis pro modo poena: equorum pecorumque numero convicti multantur.
+Pars multae regi vel civitati, pars ipsi, qui vindicatur, vel propinquis eius exsolvitur.
+Eliguntur in isdem conciliis et principes, qui iura per pagos vicosque reddunt; centeni singulis ex plebe comites consilium simul et auctoritas adsunt.</p>
+<h2>XIII</h2>
+<p>Nihil autem neque publicae neque privatae rei nisi armati agunt.
+Sed arma sumere non ante cuiquam moris, quam civitas suffecturum probaverit.
+Tum in ipso concilio vel principum aliquis vel pater vel propinqui scuto frameaque iuvenem ornant: haec apud illos toga, hic primus iuventae honos; ante hoc domus pars videntur, mox rei publicae.
+Insignis nobilitas aut magna patrum merita principis dignationem etiam adulescentulis adsignant: ceteris robustioribus ac iam pridem probatis adgregantur, nec rubor inter comites adspici.
+Gradus quin etiam ipse comitatus habet, iudicio eius quem sectantur; magnaque et comitum aemulatio, quibus primus apud principem suum locus, et principum, cui plurimi et acerrimi comites.
+Haec dignitas, hae vires, magno semper et electorum iuvenum globo circumdari, in pace decus, in bello praesidium.
+Nec solum in sua gente cuique, sed apud finitimas quoque civitates id nomen, ea gloria est, si numero ac virtute comitatus emineat; expetuntur enim legationibus et muneribus ornantur et ipsa plerumque fama bella profligant.</p>
+<h2>XIV</h2>
+<p>Cum ventum in aciem, turpe principi virtute vinci, turpe comitatui virtutem principis non adaequare.
+Iam vero infame in omnem vitam ac probrosum superstitem principi suo ex acie recessisse.
+Illum defendere, tueri, sua quoque fortia facta gloriae eius adsignare praecipuum sacramentum est.
+Principes pro victoria pugnant, comites pro principe.
+Si civitas, in qua orti sunt, longa pace et otio torpeat, plerique nobilium adulescentium petunt ultro eas nationes, quae tum bellum aliquod gerunt, quia et ingrata genti quies et facilius inter ancipitia clarescunt magnumque comitatum non nisi vi belloque tueare; exigunt enim principis sui liberalitate illum bellatorem equum, illam cruentam victricemque frameam.
+Nam epulae et quamquam incompti, largi tamen apparatus pro stipendio cedunt.
+Materia munificentiae per bella et raptus.
+Nec arare terram aut exspectare annum tam facile persuaseris quam vocare hostem et vulnera mereri.
+Pigrum quin immo et iners videtur sudore acquirere quod possis sanguine parare.</p>
+<p>Quotiens bella non ineunt, non multum venatibus, plus per otium transigunt, dediti somno ciboque, fortissimus quisque ac bellicosissimus nihil agens, delegata domus et penatium et agrorum cura feminis senibusque et infirmissimo cuique ex familia; ipsi hebent, mira diversitate naturae, cum idem homines sic ament inertiam et oderint quietem.
+Mos est civitatibus ultro ac viritim conferre principibus vel armentorum vel frugum, quod pro honore acceptum etiam necessitatibus subvenit.
+Gaudent praecipue finitimarum gentium donis, quae non modo a singulis, sed et publice mittuntur, electi equi, magna arma, phalerae torquesque; iam et pecuniam accipere docuimus.</p>
+<h2>XVI</h2>
+<p>Nullas Germanorum populis urbes habitari satis notum est, ne pati quidem inter se iunctas sedes.
+Colunt discreti ac diversi, ut fons, ut campus, ut nemus placuit.
+Vicos locant non in nostrum morem conexis et cohaerentibus aedificiis: suam quisque domum spatio circumdat, sive adversus casus ignis remedium sive inscitia aedificandi.
+Ne caementorum quidem apud illos aut tegularum usus: materia ad omnia utuntur informi et citra speciem aut delectationem.
+Quaedam loca diligentius inlinunt terra ita pura ac splendente, ut picturam ac lineamenta colorum imitetur.
+Solent et subterraneos specus aperire eosque multo insuper fimo onerant, suffugium hiemis et receptaculum frugibus, quia rigorem frigorum eius modi loci molliunt, et si quando hostis advenit, aperta populatur, abdita autem et defossa aut ignorantur aut eo ipso fallunt, quod quaerenda sunt.</p>
+<h2>XVII</h2>
+<p>Tegumen omnibus sagum fibula aut, si desit, spina consertum: cetera intecti totos dies iuxta focum atque ignem agunt.
+Locupletissimi veste distinguuntur, non fluitante, sicut Sarmatae ac Parthi, sed stricta et singulos artus exprimente.
+Gerunt et ferarum pelles, proximi ripae neglegenter, ulteriores exquisitius, ut quibus nullus per commercia cultus.
+Eligunt feras et detracta velamina spargunt maculis pellibusque beluarum, quas exterior Oceanus atque ignotum mare gignit.
+Nec alius feminis quam viris habitus, nisi quod feminae saepius lineis amictibus velantur eosque purpura variant, partemque vestitus superioris in manicas non extendunt, nudae brachia ac lacertos; sed et proxima pars pectoris patet.</p>
+<h2>XVIII</h2>
+<p>Quamquam severa illic matrimonia, nec ullam morum partem magis laudaveris.
+Nam prope soli barbarorum singulis uxoribus contenti sunt, exceptis admodum paucis, qui non libidine, sed ob nobilitatem plurimis nuptiis ambiuntur.
+Dotem non uxor marito, sed uxori maritus offert.
+Intersunt parentes et propinqui ac munera probant, munera non ad delicias muliebres quaesita nec quibus nova nupta comatur, sed boves et frenatum equum et scutum cum framea gladioque.
+In haec munera uxor accipitur, atque in vicem ipsa armorum aliquid viro adfert: hoc maximum vinculum, haec arcana sacra, hos coniugales deos arbitrantur.
+Ne se mulier extra virtutum cogitationes extraque bellorum casus putet, ipsis incipientis matrimonii auspiciis admonetur venire se laborum periculorumque sociam, idem in pace, idem in proelio passuram ausuramque.
+Hoc iuncti boves, hoc paratus equus, hoc data arma denuntiant.
+Sic vivendum, sic pereundum: accipere se, quae liberis inviolata ac digna reddat, quae nurus accipiant, rursusque ad nepotes referantur.</p>
+<h2>XIX</h2>
+<p>Ergo saepta pudicitia agunt, nullis spectaculorum inlecebris, nullis conviviorum inritationibus corruptae.
+Litterarum secreta viri pariter ac feminae ignorant.
+Paucissima in tam numerosa gente adulteria, quorum poena praesens et maritis permissa: abscisis crinibus nudatam coram propinquis expellit domo maritus ac per omnem vicum verbere agit; publicatae enim pudicitiae nulla venia: non forma, non aetate, non opibus maritum invenerit.
+Nemo enim illic vitia ridet, nec corrumpere et corrumpi saeculum vocatur.
+Melius quidem adhuc eae civitates, in quibus tantum virgines nubunt et eum spe votoque uxoris semel transigitur.
+Sic unum accipiunt maritum quo modo unum corpus unamque vitam, ne ulla cogitatio ultra, ne longior cupiditas, ne tamquam maritum, sed tamquam matrimonium ament.
+Numerum liberorum finire aut quemquam ex adgnatis necare flagitium habetur, plusque ibi boni mores valent quam alibi bonae leges.</p>
+<p>In omni domo nudi ac sordidi in hos artus, in haec corpora, quae miramur, excrescunt.
+Sua quemque mater uberibus alit, nec ancillis ac nutricibus delegantur.
+Dominum ac servum nullis educationis deliciis dignoscas: inter eadem pecora, in eadem humo degunt, donec aetas separet ingenuos, virtus adgnoscat.
+Sera iuvenum venus, eoque inexhausta pubertas.
+Nec virgines festinantur; eadem iuventa, similis proceritas: pares validaeque miscentur, ac robora parentum liberi referunt.
+Sororum filiis idem apud avunculum qui ad patrem honor.
+Quidam sanctiorem artioremque hunc nexum sanguinis arbitrantur et in accipiendis obsidibus magis exigunt, tamquam et animum firmius et domum latius teneant.
+Heredes tamen successoresque sui cuique liberi, et nullum testamentum.
+Si liberi non sunt, proximus gradus in possessione fratres, patrui, avunculi.
+Quanto plus propinquorum, quanto maior adfinium numerus, tanto gratiosior senectus; nec ulla orbitatis pretia.</p>
+<h2>XXI</h2>
+<p>Suscipere tam inimicitias seu patris seu propinqui quam amicitias necesse est; nec implacabiles durant: luitur enim etiam homicidium certo armentorum ac pecorum numero recipitque satisfactionem universa domus, utiliter in publicum, quia periculosiores sunt inimicitiae iuxta libertatem.</p>
+<p>Convictibus et hospitiis non alia gens effusius indulget.
+Quemcumque mortalium arcere tecto nefas habetur; pro fortuna quisque apparatis epulis excipit.
+Cum defecere, qui modo hospes fuerat, monstrator hospitii et comes; proximam domum non invitati adeunt.
+Nec interest: pari humanitate accipiuntur.
+Notum ignotumque quantum ad ius hospitis nemo discernit.
+Abeunti, si quid poposcerit, concedere moris; et poscendi in vicem eadem facilitas.
+Gaudent muneribus, sed nec data imputant nec acceptis obligantur: victus inter hospites comis.</p>
+<h2>XXII</h2>
+<p>Statim e somno, quem plerumque in diem extrahunt, lavantur, saepius calida, ut apud quos plurimum hiems occupat.
+Lauti cibum capiunt: separatae singulis sedes et sua cuique mensa.
+Tum ad negotia nec minus saepe ad convivia procedunt armati.
+Diem noctemque continuare potando nulli probrum.
+Crebrae, ut inter vinolentos, rixae raro conviciis, saepius caede et vulneribus transiguntur.
+Sed et de reconciliandis in vicem inimicis et iungendis adfinitatibus et adsciscendis principibus, de pace denique ac bello plerumque in conviviis consultant, tamquam nullo magis tempore aut ad simplices cogitationes pateat animus aut ad magnas incalescat.
+Gens non astuta nec callida aperit adhuc secreta pectoris licentia ioci; ergo detecta et nuda omnium mens.
+Postera die retractatur, et salva utriusque temporis ratio est: deliberant, dum fingere nesciunt, constituunt, dum errare non possunt.</p>
+<h2>XXIII</h2>
+<p>Potui umor ex hordeo aut frumento, in quandam similitudinem vini corruptus: proximi ripae et vinum mercantur.
+Cibi simplices, agrestia poma, recens fera aut lac concretum: sine apparatu, sine blandimentis expellunt famem.
+Adversus sitim non eadem temperantia.
+Si indulseris ebrietati suggerendo quantum concupiscunt, haud minus facile vitiis quam armis vincentur.</p>
+<h2>XXIV</h2>
+<p>Genus spectaculorum unum atque in omni coetu idem.
+Nudi iuvenes, quibus id ludicrum est, inter gladios se atque infestas frameas saltu iaciunt.
+Exercitatio artem paravit, ars decorem, non in quaestum tamen aut mercedem: quamvis audacis lasciviae pretium est voluptas spectantium.
+Aleam, quod mirere, sobrii inter seria exercent, tanta lucrandi perdendive temeritate, ut, cum omnia defecerunt, extremo ac novissimo iactu de libertate ac de corpore contendant.
+Victus voluntariam servitutem adit: quamvis iuvenior, quamvis robustior adligari se ac venire patitur.
+Ea est in re prava pervicacia; 
+ipsi fidem vocant.
+Servos condicionis huius per commercia tradunt, ut se quoque pudore victoriae exsolvant.</p>
+<h2>XXV</h2>
+<p>Ceteris servis non in nostrum morem, descriptis per familiam ministeriis, utuntur: suam quisque sedem, suos penates regit.
+Frumenti modum dominus aut pecoris aut vestis ut colono iniungit, et servus hactenus paret: cetera domus officia uxor ac liberi exsequuntur.
+Verberare servum ac vinculis et opere coercere rarum: occidere solent, non disciplina et severitate, sed impetu et ira, ut inimicum, nisi quod impune est.
+Liberti non multum supra servos sunt, raro aliquod momentum in domo, numquam in civitate, exceptis dumtaxat iis gentibus quae regnantur.
+Ibi enim et super ingenuos et super nobiles ascendunt: apud ceteros impares libertini libertatis argumentum sunt.</p>
+<h2>XXVI</h2>
+<p>Faenus agitare et in usuras extendere ignotum; ideoque magis servatur quam si vetitum esset.
+Agri pro numero cultorum ab universis in vices occupantur, quos mox inter se secundum dignationem partiuntur; facilitatem partiendi camporum spatia praestant, Arva per annos mutant, et superest ager.
+Nec enim cum ubertate et amplitudine soli labore contendunt, ut pomaria conserant et prata separent et hortos rigent: sola terrae seges imperatur.
+Unde annum quoque ipsum non in totidem digerunt species: hiems et ver et aestas intellectum ac vocabula habent, autumni perinde nomen ac bona ignorantur.</p>
+<h2>XXVII</h2>
+<p>Funerum nulla ambitio: id solum observatur, ut corpora clarorum virorum certis lignis crementur.
+Struem rogi nec vestibus nec odoribus cumulant: sua cuique arma, quorundam igni et equus adicitur.
+Sepulcrum caespes erigit: monumentorum arduum et operosum honorem ut gravem defunctis aspernantur.
+Lamenta ac lacrimas cito, dolorem et tristitiam tarde ponunt.
+Feminis lugere honestum est, viris meminisse.</p>
+<p>Haec in commune de omnium Germanorum origine ac moribus accepimus: nunc singularum gentium instituta ritusque, quatenus differant, quae nationes e Germania in Gallias commigraverint, expediam.</p>
+<h2>XXVIII</h2>
+<p>Validiores olim Gallorum res fuisse summus auctorum divus Iulius tradit; eoque credibile est etiam Gallos in Germaniam transgressos: quantulum enim amnis obstabat quo minus, ut quaeque gens evaluerat, occuparet permutaretque sedes promiscuas adhuc et nulla regnorum potentia divisas?
+Igitur inter Hercyniam silvam Rhenumque et Moenum amnes Helvetii, ulteriora Boii, Gallica utraque gens, tenuere.
+Manet adhuc Boihaemi nomen significatque loci veterem memoriam quamvis mutatis cultoribus.
+Sed utrum Aravisci in Pannoniam ab Osis, Germanorum natione, an Osi ab Araviscis in Germaniam commigraverint, cum eodem adhuc sermone institutis moribus utantur, incertum est, quia pari olim inopia ac libertate eadem utriusque ripae bona malaque erant.
+Treveri et Nervii circa adfectationem Germanicae originis ultro ambitiosi sunt, tamquam per hanc gloriam sanguinis a similitudine et inertia Gallorum separentur.
+Ipsam Rheni ripam haud dubie Germanorum populi colunt, Vangiones, Triboci, Nemetes.
+Ne Ubii quidem, quamquam Romana colonia esse meruerint ac libentius Agrippinenses conditoris sui nomine vocentur, origine erubescunt, transgressi olim et experimento fidei super ipsam Rheni ripam conlocati, ut arcerent, non ut custodirentur.</p>
+<h2>XXIX</h2>
+<p>Omnium harum gentium virtute praecipui Batavi non multum ex ripa, sed insulam Rheni amnis colunt, Chattorum quondam populus et seditione domestica in eas sedes transgressus, in quibus pars Romani imperii fierent.
+Manet honos et antiquae societatis insigne; nam nec tributis contemnuntur nec publicanus atterit; exempti oneribus et conlationibus et tantum in usum proeliorum sepositi, velut tela atque arma, bellis reservantur.
+Est in eodem obsequio et Mattiacorum gens; protulit enim magnitudo populi Romani ultra Rhenum ultraque veteres terminos imperii reverentiam.
+Ita sede finibusque in sua ripa, mente animoque nobiscum agunt, cetera similes Batavis, nisi quod ipso adhuc terrae suae solo et caelo acrius animantur.</p>
+<p>Non numeraverim inter Germaniae populos, quamquam trans Rhenum Danuviumque consederint, eos qui decumates agros exercent.
+Levissimus quisque Gallorum et inopia audax dubiae possessionis solum occupavere; mox limite acto promotisque praesidiis sinus imperii et pars provinciae habentur.</p>
+<h2>XXX</h2>
+<p>Ultra hos Chatti initium sedis ab Hercynio saltu incohant, non ita effusis ac palustribus locis, ut ceterae civitates, in quas Germania patescit; durant siquidem colles, paulatim rarescunt, et Chattos suos saltus Hercynius prosequitur simul atque deponit.
+Duriora genti corpora, stricti artus, minax vultus et maior animi vigor.
+Multum, ut inter Germanos, rationis ac sollertiae: praeponere electos, audire praepositos, nosse ordines, intellegere occasiones, differre impetus, disponere diem, vallare noctem, fortunam inter dubia, virtutem inter certa numerare, quodque rarissimum nec nisi ratione disciplinae concessum, plus reponere in duce quam in exercitu.
+Omne robur in pedite, quem super arma ferramentis quoque et copiis onerant: alios ad proelium ire videas, Chattos ad bellum.
+Rari excursus et fortuita pugna.
+Equestrium sane virium id proprium, cito parare victoriam, cito cedere: velocitas iuxta formidinem, cunctatio propior constantiae est.</p>
+<h2>XXXI</h2>
+<p>Et aliis Germanorum populis usurpatum raro et privata cuiusque audentia apud Chattos in consensum vertit, ut primum adoleverint, crinem barbamque submittere, nec nisi hoste caeso exuere votivum obligatumque virtuti oris habitum.
+Super sanguinem et spolia revelant frontem, seque tum demum pretia nascendi rettulisse dignosque patria ac parentibus ferunt: ignavis et imbellibus manet squalor.
+Fortissimus quisque ferreum insuper anulum (ignominiosum id genti) velut vinculum gestat, donec se caede hostis absolvat.
+Plurimis Chattorum hic placet habitus, iamque canent insignes et hostibus simul suisque monstrati.
+Omnium penes hos initia pugnarum; haec prima semper acies, visu nova; nam ne in pace quidem vultu mitiore mansuescunt.
+Nulli domus aut ager aut aliqua cura: prout ad quemque venere, aluntur, prodigi alieni, contemptores sui, donec exsanguis senectus tam durae virtuti impares faciat.</p>
+<h2>XXXII</h2>
+<p>Proximi Chattis certum iam alveo Rhenum, quique terminus esse sufficiat, Usipi ac Tencteri colunt.
+Tencteri super solitum bellorum decus equestris disciplinae arte praecellunt; nec maior apud Chattos peditum laus quam Tencteris equitum.
+Sic instituere maiores; posteri imitantur.
+Hi lusus infantium, haec iuvenum aemulatio: perseverant senes.
+Inter familiam et penates et iura successionum equi traduntur: excipit filius, non ut cetera, maximus natu, sed prout ferox bello et melior.</p>
+<h2>XXXIII</h2>
+<p>Iuxta Tencteros Bructeri olim occurrebant: nunc Chamavos et Angrivarios inmigrasse narratur, pulsis Bructeris ac penitus excisis vicinarum consensu nationum, seu superbiae odio seu praedae dulcedine seu favore quodam erga nos deorum; nam ne spectaculo quidem proelii invidere.
+Super sexaginta milia non armis telisque Romanis, sed, quod magnificentius est, oblectationi oculisque ceciderunt.
+Maneat, quaeso, duretque gentibus, si non amor nostri, at certe odium sui, quando urgentibus imperii fatis nihil iam praestare fortuna maius potest quam hostium discordiam.</p>
+<h2>XXXIV</h2>
+<p>Angrivarios et Chamavos a tergo Dulgubnii et Chasuarii cludunt, aliaeque gentes haud perinde memoratae, a fronte Frisii excipiunt.
+Maioribus minoribusque Frisiis vocabulum est ex modo virium.
+Utraeque nationes usque ad Oceanum Rheno praetexuntur, ambiuntque inmensos insuper lacus et Romanis classibus navigatos.
+Ipsum quin etiam Oceanum illa temptavimus: et superesse adhuc Herculis columnas fama vulgavit, sive adiit Hercules, seu quidquid ubique magnificum est, in claritatem eius referre consensimus.
+Nec defuit audentia Druso Germanico, sed obstitit Oceanus in se simul atque in Herculem inquiri.
+Mox nemo temptavit, sanctiusque ac reverentius visum de actis deorum credere quam scire.</p>
+<h2>XXXV</h2>
+<p>Hactenus in occidentem Germaniam novimus; in septentrionem ingenti flexu redit.
+Ac primo statim Chaucorum gens, quamquam incipiat a Frisiis ac partem litoris occupet, omnium quas exposui gentium lateribus obtenditur, donec in Chattos usque sinuetur.
+Tam inmensum terrarum spatium non tenent tantum Chauci, sed et implent, populus inter Germanos nobilissimus, quique magnitudinem suam malit iustitia tueri.
+Sine cupididate, sine impotentia, quieti secretique nulla provocant bella, nullis raptibus aut latrociniis populantur.
+Id praecipuum virtutis ac virium argumentum est, quod, ut superiores agant, non per iniurias adsequuntur; prompta tamen omnibus arma ac, si res poscat, exercitus, plurimum virorum equorumque; et quiescentibus eadem fama.</p>
+<h2>XXXVI</h2>
+<p>In latere Chaucorum Chattorumque Cherusci nimiam ac marcentem diu pacem inlacessiti nutrierunt: idque iucundius quam tutius fuit, quia inter impotentes et validos falso quiescas: ubi manu agitur, modestia ac probitas nomina superioris sunt.
+Ita qui olim boni aequique Cherusci, nunc inertes ac stulti vocantur: Chattis victoribus fortuna in sapientiam cessit.
+Tracti ruina Cheruscorum et Fosi, contermina gens.
+Adversarum rerum ex aequo socii sunt, cum in secundis minores fuissent.</p>
+<h2>XXXVII</h2>
+<p>Eundem Germaniae sinum proximi Oceano Cimbri tenent, parva nunc civitas, sed gloria ingens.
+Veterisque famae lata vestigia manent, utraque ripa castra ac spatia, quorum ambitu nunc quoque metiaris molem manusque gentis et tam magni exitus fidem.
+Sescentesimum et quadragesimum annum urbs nostra agebat, cum primum Cimbrorum audita sunt arma, Caecilio Metello et Papirio Carbone consulibus.
+Ex quo si ad alterum imperatoris Traiani consulatum computemus, ducenti ferme et decem anni colliguntur: tam diu Germania vincitur.
+Medio tam longi aevi spatio multa in vicem damna.
+Non Samnis, non Poeni, non Hispaniae Galliaeve, ne Parthi quidem saepius admonuere: quippe regno Arsacis acrior est Germanorum libertas.
+Quid enim aliud nobis quam caedem Crassi, amisso et ipse Pacoro, infra Ventidium deiectus Oriens obiecerit?
+At Germani Carbone et Cassio et Scauro Aurelio et Servilio Caepione Gnaeoque Mallio fusis vel captis quinque simul consularis exercitus populo Romano, Varum trisque cum eo legiones etiam Caesari abstulerunt; nec impune C. Marius in Italia, divus Iulius in Gallia, Drusus ac Nero et Germanicus in suis eos sedibus perculerunt.
+Mox ingentes Gai Caesaris minae in ludibrium versae.
+Inde otium, donec occasione discordiae nostrae et civilium armorum expugnatis legionum hibernis etiam Gallias adfectavere; ac rursus inde pulsi proximis temporibus triumphati magis quam victi sunt.</p>
+<h2>XXXVIII</h2>
+<p>Nunc de Suebis dicendum est, quorum non una, ut Chattorum Tencterorumve, gens; maiorem enim Germaniae partem obtinent, propriis adhuc nationibus nominibusque discreti, quamquam in commune Suebi vocentur.
+Insigne gentis obliquare crinem nodoque substringere: sic Suebi a ceteris Germanis, sic Sueborum ingenui a servis separantur.
+In aliis gentibus seu cognatione aliqua Sueborum seu, quod saepe accidit, imitatione, rarum et intra iuventae spatium; apud Suebos usque ad canitiem horrentem capillum retro sequuntur.
+Ac saepe in ipso vertice religatur; principes et ornatiorem habent.
+Ea cura formae, sed innoxia; neque enim ut ament amenturve, in altitudinem quandam et terrorem adituri bella compti, ut hostium oculis, armantur.</p>
+<h2>XXXIX</h2>
+<p>Vetustissimos se nobilissimosque Sueborum Semnones memorant; fides antiquitatis religione firmatur.
+Stato tempore in silvam auguriis patrum et prisca formidine sacram omnes eiusdem sanguinis populi legationibus coeunt caesoque publice homine celebrant barbari ritus horrenda primordia.
+Est et alia luco reverentia: nemo nisi vinculo ligatus ingreditur, ut minor et potestatem numinis prae se ferens.
+Si forte prolapsus est, attolli et insurgere haud licitum: per humum evolvuntur.
+Eoque omnis superstitio respicit, tamquam inde initia gentis, ibi regnator omnium deus, cetera subiecta atque parentia.
+Adicit auctoritatem fortuna Semnonum: centum pagi iis habitantur magnoque corpore efficitur ut se Sueborum caput credant.</p>
+<p>Contra Langobardos paucitas nobilitat: plurimis ac valentissimis nationibus cincti non per obsequium, sed proeliis ac periclitando tuti sunt.
+Reudigni deinde et Aviones et Anglii et Varini et Eudoses et Suardones et Nuithones fluminibus aut silvis muniuntur.
+Nec quicquam notabile in singulis, nisi quod in commune Nerthum, id est Terram matrem, colunt eamque intervenire rebus hominum, invehi populis arbitrantur.
+Est in insula Oceani castum nemus, dicatumque in eo vehiculum, veste contectum; attingere uni sacerdoti concessum.
+Is adesse penetrali deam intellegit vectamque bubus feminis multa cum veneratione prosequitur.
+Laeti tunc dies, festa loca, quaecumque adventu hospitioque dignatur.
+Non bella ineunt, non arma sumunt; clausum omne ferrum; pax et quies tunc tantum nota, tunc tantum amata, donec idem sacerdos satiatam conversatione mortalium deam templo reddat.
+Mox vehiculum et vestes et, si credere velis, numen ipsum secreto lacu abluitur.
+Servi ministrant, quos statim idem lacus haurit.
+Arcanus hinc terror sanctaque ignorantia, quid sit illud, quod tantum perituri vident.</p>
+<h2>XLI</h2>
+<p>Et haec quidem pars Sueborum in secretiora Germaniae porrigitur.
+Propior, ut, quo modo paulo ante Rhenum, sic nunc Danuvium sequar, Hermundurorum civitas, fida Romanis; eoque solis Germanorum non in ripa commercium, sed penitus atque in splendidissima Raetiae provinciae colonia.
+Passim et sine custode transeunt; et cum ceteris gentibus arma modo castraque nostra ostendamus, his domos villasque patefecimus non concupiscentibus.
+In Hermunduris Albis oritur, flumen inclutum et notum olim; nunc tantum auditur.</p>
+<h2>XLII</h2>
+<p>Iuxta Hermunduros Naristi ac deinde Marcomani et Quadi agunt.
+Praecipua Marcomanorum gloria viresque, atque ipsa etiam sedes pulsis olim Boiis virtute parta.
+Nec Naristi Quadive degenerant.
+Eaque Germaniae velut frons est, quatenus Danuvio peragitur.
+Marcomanis Quadisque usque ad nostram memoriam reges mansere ex gente ipsorum, nobile Marobodui et Tudri genus: iam et externos patiuntur, sed vis et potentia regibus ex auctoritate Romana.
+Raro armis nostris, saepius pecunia iuvantur, nec minus valent.</p>
+<h2>XLIII</h2>
+<p>Retro Marsigni, Cotini, Osi, Buri terga Marcomanorum Quadorumque claudunt.
+E quibus Marsigni et Buri sermone cultuque Suebos referunt: Cotinos Gallica, Osos Pannonica lingua coarguit non esse Germanos, et quod tributa patiuntur.
+Partem tributorum Sarmatae, partem Quadi ut alienigenis imponunt: Cotini, quo magis pudeat, et ferrum effodiunt.
+Omnesque hi populi pauca campestrium, ceterum saltus et vertices montium iugumque insederunt.
+Dirimit enim scinditque Suebiam continuum montium iugum, ultra quod plurimae gentes agunt, ex quibus latissime patet Lygiorum nomen in plures civitates diffusum.
+Valentissimas nominasse sufficiet, Harios, Helveconas, Manimos, Helisios, Nahanarvalos.
+Apud Nahanarvalos antiquae religionis lucus ostenditur.
+Praesidet sacerdos muliebri ornatu, sed deos interpretatione Romana Castorem Pollucemque memorant.
+Ea vis numini, nomen Alcis.
+Nulla simulacra, nullum peregrinae superstitionis vestigium; ut fratres tamen, ut iuvenes venerantur.
+Ceterum Harii super vires, quibus enumeratos paulo ante populos antecedunt, truces insitae feritati arte ac tempore lenocinantur: nigra scuta, tincta corpora; atras ad proelia noctes legunt ipsaque formidine atque umbra feralis exercitus terrorem inferunt, nullo hostium sustinente novum ac velut infernum adspectum; nam primi in omnibus proeliis oculi vincuntur.</p>
+<h2>XLIV</h2>
+<p>Trans Lygios Gotones regnantur, paulo iam adductius quam ceterae Germanorum gentes, nondum tamen supra libertatem.
+Protinus deinde ab Oceano Rugii et Lemovii; omniumque harum gentium insigne rotunda scuta, breves gladii et erga reges obsequium.</p>
+<p>Suionum hinc civitates ipso in Oceano praeter viros armaque classibus valent.
+Forma navium eo differt, quod utrimque prora paratam semper adpulsui frontem agit.
+Nec velis ministrantur nec remos in ordinem lateribus adiungunt: solutum, ut in quibusdam fluminum, et mutabile, ut res poscit, hinc vel illinc remigium.
+Est apud illos et opibus honos, eoque unus imperitat, nullis iam exceptionibus, non precario iure parendi.
+Nec arma, ut apud ceteros Germanos, in promiscuo, sed clausa sub custode, et quidem servo, quia subitos hostium incursus prohibet Oceanus, otiosae porro armatorum manus facile lasciviunt.
+Enimvero neque nobilem neque ingenuum, ne libertinum quidem armis praeponere regia utilitas est.</p>
+<h2>XLV</h2>
+<p>Trans Suionas aliud mare, pigrum ac prope inmotum, quo cingi cludique terrarum orbem hinc fides , quod extremus cadentis iam solis fulgor in ortus edurat adeo clarus, ut sidera hebetet; sonum insuper emergentis audiri formasque equorum et radios capitis adspici persuasio adicit.
+Illuc usque (et fama vera) tantum natura.
+Ergo iam dextro Suebici maris litore Aestiorum gentes adluuntur, quibus ritus habitusque Sueborum, lingua Britannicae propior.
+Matrem deum venerantur.
+Insigne superstitionis formas aprorum gestant: id pro armis omniumque tutela securum deae cultorem etiam inter hostis praestat.
+Rarus ferri, frequens fustium usus.
+Frumenta ceterosque fructus patientius quam pro solita Germanorum inertia laborant.
+Sed et mare scrutantur, ac soli omnium sucinum, quod ipsi glesum vocant, inter vada atque in ipso litore legunt.
+Nec quae natura, quaeve ratio gignat, ut barbaris, quaesitum compertumve; diu quin etiam inter cetera eiectamenta maris iacebat, donec luxuria nostra dedit nomen.
+Ipsis in nullo usu; rude legitur, informe profertur, pretiumque mirantes accipiunt.
+Sucum tamen arborum esse intellegas, quia terrena quaedam atque etiam volucria animalia plerumque interlucent, quae implicata umore mox durescente materia cluduntur.
+Fecundiora igitur nemora lucosque sicut Orientis secretis, ubi tura balsamaque sudantur, ita Occidentis insulis terrisque inesse crediderim, quae vicini solis radiis expressa atque liquentia in proximum mare labuntur ac vi tempestatum in adversa litora exundant.
+Si naturam sucini admoto igni temptes, in modum taedae accenditur alitque flammam pinguem et olentem; mox ut in picem resinamve lentescit.</p>
+<p>Suionibus Sitonum gentes continuantur.
+Cetera similes uno differunt, quod femina dominatur; in tantum non modo a libertate sed etiam a servitute degenerant.</p>
+<h2>XLVI</h2>
+<p>Hic Suebiae finis.
+Peucinorum Venedorumque et Fennorum nationes Germanis an Sarmatis adscribam dubito, quamquam Peucini, quos quidam Bastarnas vocant, sermone, cultu, sede ac domiciliis ut Germani agunt.
+Sordes omnium ac torpor procerum; conubiis mixtis nonnihil in Sarmatarum habitum foedantur.
+Venedi multum ex moribus traxerunt; nam quidquid inter Peucinos Fennosque silvarum ac montium erigitur latrociniis pererrant.
+Hi tamen inter Germanos potius referuntur, quia et domos figunt et scuta gestant et pedum usu ac pernicitate gaudent: quae omnia diversa Sarmatis sunt in plaustro equoque viventibus.
+Fennis mira feritas, foeda paupertas: non arma, non equi, non penates; victui herba, vestitui pelles, cubile humus: solae in sagittis spes, quas inopia ferri ossibus asperant.
+Idemque venatus viros pariter ac feminas alit; passim enim comitantur partemque praedae petunt.
+Nec aliud infantibus ferarum imbriumque suffugium quam ut in aliquo ramorum nexu contegantur: huc redeunt iuvenes, hoc senum receptaculum.
+Sed beatius arbitrantur quam ingemere agris, inlaborare domibus, suas alienasque fortunas spe metuque versare: securi adversus homines, securi adversus deos rem difficillimam adsecuti sunt, ut illis ne voto quidem opus esset.
+Cetera iam fabulosa: Hellusios et Oxionas ora hominum voltusque, corpora atque artus ferarum gerere: quod ego ut incompertum in medio relinquam.</p>
+                </div>
+                
+                </section>
+
+                <!-- Columna traducció -->
+                <section class="translation-column">
+                    <div class="column-header">Traducció (català)</div>
+                    
+                <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Traducció de domini públic.</em></p>
+                </div>
+                
+                </section>
+            </div>
+
+            <!-- Navegació entre capítols -->
+            <nav class="chapter-nav" id="chapter-nav" aria-label="Navegació entre capítols">
+                <button class="chapter-nav-btn" id="prev-chapter" disabled>
+                    <span class="nav-arrow">←</span>
+                    <span class="nav-text">Capítol anterior</span>
+                </button>
+                <span class="chapter-indicator" id="chapter-indicator">Capítol 1 de 1</span>
+                <button class="chapter-nav-btn" id="next-chapter" disabled>
+                    <span class="nav-text">Capítol següent</span>
+                    <span class="nav-arrow">→</span>
+                </button>
+            </nav>
+
+            <!-- Botons per mostrar/amagar notes i glossari -->
+            
+            <div class="section-toggle-container">
+                
+                
+                <button class="section-toggle" id="notes-toggle" data-target="notes-section">
+                    <span>Notes (17)</span>
+                    <span class="toggle-icon">▼</span>
+                </button>
+                
+            </div>
+            
+        </div>
+
+        <!-- Notes (amagat per defecte) -->
+        
+        <section class="notes-section collapsible-section" id="notes-section">
+            <h2>Notes</h2>
+            
+            <div class="note" id="nota-1">
+                <div class="note-header">
+                    <span class="note-number">[1]</span>
+                    
+                    <h4>Hèrcules</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«Hèrcules»</p>
+</blockquote>
+<p>Els germànics identifiquen Hèrcules amb alguna divinitat local guerrera. Tàcit utilitza aquest nom per facilitar la comprensió romana d&rsquo;un culte germànic desconegut.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-2">
+                <div class="note-header">
+                    <span class="note-number">[2]</span>
+                    
+                    <h4>barditus</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Terminologia</p>
+<blockquote>
+<p>«barditus»</p>
+</blockquote>
+<p>Cant de guerra germànic que combinava invocacions rituals amb tàctiques psicològiques. Els romans en van adoptar versions per a les seves pròpies tropes.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-3">
+                <div class="note-header">
+                    <span class="note-number">[3]</span>
+                    
+                    <h4>Ulisses</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Intertextualitat</p>
+<blockquote>
+<p>«Ulisses»</p>
+</blockquote>
+<p>Tàcit recull llegendes locals que connectaven Ulisses amb territoris germànics, possiblement per prestigiar els orígens d&rsquo;aquestes terres amb un heroi grec.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-4">
+                <div class="note-header">
+                    <span class="note-number">[4]</span>
+                    
+                    <h4>Ascibúrgium</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Geografia</p>
+<blockquote>
+<p>«Ascibúrgium»</p>
+</blockquote>
+<p>Probable Ascibúrgium: actual Moers-Asberg, a la riba del Rin. Les excavacions arqueològiques han confirmat l&rsquo;existència d&rsquo;un assentament romà en aquesta ubicació.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-5">
+                <div class="note-header">
+                    <span class="note-number">[5]</span>
+                    
+                    <h4>Germània i Rècia</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Geografia</p>
+<blockquote>
+<p>«Germània i Rècia»</p>
+</blockquote>
+<p>Rècia era la província romana que comprenia parts dels actuals Àustria, Suïssa i el sud d&rsquo;Alemanya. La frontera amb Germània era una zona de contacte cultural intens.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-6">
+                <div class="note-header">
+                    <span class="note-number">[6]</span>
+                    
+                    <h4>frameas</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Terminologia</p>
+<blockquote>
+<p>«frameas»</p>
+</blockquote>
+<p>Llança llarga germànica amb punta de ferro relativament curta. Era l&rsquo;arma característica dels guerrers germànics, usada tant per a lluita cos a cos com llançada.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-7">
+                <div class="note-header">
+                    <span class="note-number">[7]</span>
+                    
+                    <h4>cent</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«cent»</p>
+</blockquote>
+<p>La centúria germànica (lat. <em>centeni</em>) era una unitat militar i administrativa bàsica, probablement equivalents als <em>centenarii</em> posteriors del dret germànic.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-8">
+                <div class="note-header">
+                    <span class="note-number">[8]</span>
+                    
+                    <h4>cunys</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«cunys»</p>
+</blockquote>
+<p>Formació tàctica en forma de falca (<em>cuneus</em>), que permetia concentrar la força d&rsquo;atac en un punt específic de les línies enemigues.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-9">
+                <div class="note-header">
+                    <span class="note-number">[9]</span>
+                    
+                    <h4>abandonat l'escut</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«abandonat l&rsquo;escut»</p>
+</blockquote>
+<p>L&rsquo;escut simbolitzava l&rsquo;honor militar. Abandonar-lo equivalia a cobardesa i comportava exclusió social total, pràctica documentada també entre altres pobles germànics.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-10">
+                <div class="note-header">
+                    <span class="note-number">[10]</span>
+                    
+                    <h4>no a la nostra manera</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«no a la nostra manera»</p>
+</blockquote>
+<p>Tàcit contrasta l&rsquo;urbanisme romà, amb edificis contigus i carrers regulars, amb l&rsquo;hàbitat dispersat germànic, que reflecteix diferències fonamentals en l&rsquo;organització social.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-11">
+                <div class="note-header">
+                    <span class="note-number">[11]</span>
+                    
+                    <h4>coves subterrànies</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«coves subterrànies»</p>
+</blockquote>
+<p>Magatzems soterranis (<em>specus subterranei</em>) documentats arqueològicament. Servien tant per conservar grans com per amagar-los dels enemics durant les incursions.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-12">
+                <div class="note-header">
+                    <span class="note-number">[12]</span>
+                    
+                    <h4>fíbula</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«fíbula»</p>
+</blockquote>
+<p>Fermall metàl·lic per subjectar la roba, equivalent als botons actuals. Les fíbules germàniques són abundant en el registre arqueològic i mostren gran varietat decorativa.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-13">
+                <div class="note-header">
+                    <span class="note-number">[13]</span>
+                    
+                    <h4>sàrmates</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Geografia</p>
+<blockquote>
+<p>«sàrmates»</p>
+</blockquote>
+<p>Poble nòmada de les estepes pòntico-càspies, coneguts per la seva roba ampla adaptada a la vida a cavall. Tàcit els usa com a punt de comparació estilística.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-14">
+                <div class="note-header">
+                    <span class="note-number">[14]</span>
+                    
+                    <h4>criades ni dides</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«criades ni dides»</p>
+</blockquote>
+<p>Contrapunt amb la pràctica romana aristocràtica d&rsquo;utilitzar nodrices i pedagogs. Tàcit idealitza aquesta diferència com a mostra de virtut moral germànica.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-15">
+                <div class="note-header">
+                    <span class="note-number">[15]</span>
+                    
+                    <h4>caps de bestiar i ramats</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«caps de bestiar i ramats»</p>
+</blockquote>
+<p>El <em>wergild</em> o preu de la sang: compensació econòmica per evitar la venjança. Sistema jurídic que serà fonamental en el dret germànic medieval.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-16">
+                <div class="note-header">
+                    <span class="note-number">[16]</span>
+                    
+                    <h4>líquid d'ordi o blat, fermentat</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«líquid d&rsquo;ordi o blat, fermentat»</p>
+</blockquote>
+<p>Cervesa primitiva (<em>cerevisia</em>). Tàcit la descriu com una beguda fermentada diferent del vi, que els germànics consumien habitualment.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+            <div class="note" id="nota-17">
+                <div class="note-header">
+                    <span class="note-number">[17]</span>
+                    
+                    <h4>daus</h4>
+                    
+                </div>
+                <p><strong>Tipus:</strong> Context Cultural</p>
+<blockquote>
+<p>«daus»</p>
+</blockquote>
+<p>Els jocs de daus (<em>alea</em>) eren passió germànica. Apostar la pròpia llibertat revela tanto l&rsquo;esperit competitiu com la concepció de l&rsquo;honor personal entre aquests pobles.</p>
+                
+                <a href="#" class="back-to-text notes-back">↩ Tornar al text</a>
+            </div>
+            
+        </section>
+        
+
+        <!-- Glossari (amagat per defecte) -->
+        
+
+        <!-- Bibliografia -->
+        
+
+        <!-- Navegació -->
+        <nav class="work-navigation mt-2xl" aria-label="Navegació entre obres">
+            <div style="display: flex; justify-content: center; gap: var(--spacing-xl);">
+                <a href="index.html" class="badge">← Tornar al catàleg</a>
+            </div>
+        </nav>
+    </div>
+</article>
+
+<!-- Script per índex i navegació de capítols (paginació) -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const tocToggle = document.getElementById('toc-toggle');
+    const tocPanel = document.getElementById('chapter-toc');
+    const tocClose = document.getElementById('toc-close');
+    const tocList = document.getElementById('toc-list');
+    const prevBtn = document.getElementById('prev-chapter');
+    const nextBtn = document.getElementById('next-chapter');
+    const prevBtnTop = document.getElementById('prev-chapter-top');
+    const nextBtnTop = document.getElementById('next-chapter-top');
+    const indicator = document.getElementById('chapter-indicator');
+
+    if (!tocToggle || !tocPanel || !tocList) return;
+
+    // IMPORTANT: Netejar la TOC primer per evitar duplicats
+    tocList.innerHTML = '';
+
+    // Buscar columnes
+    const tradColumn = document.querySelector('.translation-column');
+    const origColumn = document.querySelector('.original-column');
+    if (!tradColumn) return;
+
+    // Detectar marcadors de capítol (romans, aràbics, o paraules catalanes)
+    function isChapterMarker(str) {
+        str = str.trim();
+        // Números romans
+        if (/^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/i.test(str) && str.length > 0) {
+            return true;
+        }
+        // Números aràbics
+        if (/^\d+$/.test(str)) {
+            return true;
+        }
+        // Paraules catalanes de números
+        var catalanNumbers = ['un', 'dos', 'tres', 'quatre', 'cinc', 'sis', 'set',
+                              'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
+                              'catorze', 'quinze', 'setze', 'disset', 'divuit',
+                              'dinou', 'vint'];
+        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+    }
+
+    // Trobar H2 de capítols NOMÉS a la columna de traducció
+    const allH2s = tradColumn.querySelectorAll('h2');
+    const chapters = [];
+
+    allH2s.forEach(function(h2) {
+        const text = h2.textContent.trim();
+        if (isChapterMarker(text)) {
+            chapters.push({ element: h2, title: text });
+        }
+    });
+
+    // Si no hi ha prou capítols, amagar TOTA la navegació i sortir
+    if (chapters.length <= 1) {
+        // Amagar navegació inferior
+        const nav = document.getElementById('chapter-nav');
+        if (nav) nav.style.display = 'none';
+        // Amagar botó índex
+        if (tocToggle) tocToggle.style.display = 'none';
+        // Amagar panell índex
+        if (tocPanel) tocPanel.style.display = 'none';
+        // Amagar botons navegació superior
+        if (prevBtnTop) prevBtnTop.style.display = 'none';
+        if (nextBtnTop) nextBtnTop.style.display = 'none';
+        return;
+    }
+
+    // Hi ha capítols: mostrar el botó d'índex
+    tocToggle.classList.add('visible');
+
+    // Crear entrades de TOC (NOMÉS una vegada per capítol)
+    chapters.forEach(function(ch, i) {
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#';
+        a.innerHTML = '<span class="toc-chapter-num">' + (i + 1) + '.</span> Capítol ' + ch.title;
+        a.addEventListener('click', function(e) {
+            e.preventDefault();
+            showChapter(i);
+            closeToc();
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+    });
+
+    let currentChapter = 0;
+
+    // Crear containers per paginació
+    function createContainers(column, chapterList) {
+        const h2s = column.querySelectorAll('h2');
+        const validH2s = Array.from(h2s).filter(function(h2) {
+            return isChapterMarker(h2.textContent.trim());
+        });
+
+        validH2s.forEach(function(h2, idx) {
+            const container = document.createElement('div');
+            container.className = 'chapter-content';
+            container.dataset.chapter = idx;
+            if (idx > 0) container.style.display = 'none';
+
+            const nodesToMove = [h2];
+            let node = h2;
+            while (node.nextElementSibling) {
+                node = node.nextElementSibling;
+                if (node.tagName === 'H2' && validH2s.includes(node)) break;
+                nodesToMove.push(node);
+            }
+
+            h2.parentNode.insertBefore(container, h2);
+            nodesToMove.forEach(function(n) { container.appendChild(n); });
+        });
+    }
+
+    createContainers(tradColumn, chapters);
+    if (origColumn) createContainers(origColumn, chapters);
+
+    function showChapter(index) {
+        if (index < 0 || index >= chapters.length) return;
+        document.querySelectorAll('.chapter-content').forEach(function(c) {
+            c.style.display = 'none';
+        });
+        document.querySelectorAll('.chapter-content[data-chapter="' + index + '"]').forEach(function(c) {
+            c.style.display = 'block';
+        });
+        currentChapter = index;
+        updateNavigation();
+        document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    function updateNavigation() {
+        const atStart = currentChapter === 0;
+        const atEnd = currentChapter === chapters.length - 1;
+        prevBtn.disabled = atStart;
+        nextBtn.disabled = atEnd;
+        if (prevBtnTop) prevBtnTop.disabled = atStart;
+        if (nextBtnTop) nextBtnTop.disabled = atEnd;
+        indicator.textContent = 'Capítol ' + (currentChapter + 1) + ' de ' + chapters.length;
+        tocList.querySelectorAll('a').forEach(function(a, i) {
+            a.classList.toggle('active', i === currentChapter);
+        });
+    }
+
+    function openToc() { tocPanel.classList.add('open'); }
+    function closeToc() { tocPanel.classList.remove('open'); }
+
+    tocToggle.addEventListener('click', function() {
+        tocPanel.classList.contains('open') ? closeToc() : openToc();
+    });
+    tocClose.addEventListener('click', closeToc);
+    prevBtn.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    nextBtn.addEventListener('click', function() { showChapter(currentChapter + 1); });
+    if (prevBtnTop) prevBtnTop.addEventListener('click', function() { showChapter(currentChapter - 1); });
+    if (nextBtnTop) nextBtnTop.addEventListener('click', function() { showChapter(currentChapter + 1); });
+
+    document.addEventListener('click', function(e) {
+        if (tocPanel.classList.contains('open') && !tocPanel.contains(e.target) && !tocToggle.contains(e.target)) {
+            closeToc();
+        }
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeToc();
+        if (e.key === 'ArrowLeft' && !prevBtn.disabled) showChapter(currentChapter - 1);
+        if (e.key === 'ArrowRight' && !nextBtn.disabled) showChapter(currentChapter + 1);
+    });
+
+    updateNavigation();
+});
+
+// Acordió per detalls de traducció
+document.addEventListener('DOMContentLoaded', function() {
+    const detailsToggle = document.getElementById('details-toggle');
+    const workDetails = document.getElementById('work-details');
+
+    if (detailsToggle && workDetails) {
+        detailsToggle.addEventListener('click', function() {
+            const isOpen = workDetails.style.display !== 'none';
+            workDetails.style.display = isOpen ? 'none' : 'block';
+            detailsToggle.classList.toggle('open', !isOpen);
+        });
+    }
+});
+
+// Botons d'accés ràpid a seccions
+document.addEventListener('DOMContentLoaded', function() {
+    // Botó Capítols - obre l'índex de capítols
+    const quickChapters = document.getElementById('quick-chapters');
+    if (quickChapters) {
+        quickChapters.addEventListener('click', function() {
+            const tocBtn = document.getElementById('toc-toggle');
+            if (tocBtn) tocBtn.click();
+        });
+    }
+
+    // Botó Glossari - scroll a la secció i obre-la
+    const quickGlossari = document.getElementById('quick-glossari');
+    if (quickGlossari) {
+        quickGlossari.addEventListener('click', function() {
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            if (glossariSection) {
+                if (!glossariSection.classList.contains('open')) {
+                    glossariSection.classList.add('open');
+                    if (glossariToggle) glossariToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    glossariSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+
+    // Botó Notes - scroll a la secció i obre-la
+    const quickNotes = document.getElementById('quick-notes');
+    if (quickNotes) {
+        quickNotes.addEventListener('click', function() {
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            if (notesSection) {
+                if (!notesSection.classList.contains('open')) {
+                    notesSection.classList.add('open');
+                    if (notesToggle) notesToggle.classList.add('active');
+                }
+                setTimeout(function() {
+                    notesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            }
+        });
+    }
+});
+
+// Toggle per seccions collapsibles (glossari i notes)
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButtons = document.querySelectorAll('.section-toggle');
+
+    toggleButtons.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            const targetId = this.dataset.target;
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                const isOpen = targetSection.classList.contains('open');
+                targetSection.classList.toggle('open', !isOpen);
+                this.classList.toggle('active', !isOpen);
+
+                // Scroll a la secció si s'obre
+                if (!isOpen) {
+                    setTimeout(function() {
+                        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    }, 100);
+                }
+            }
+        });
+    });
+
+    // Variable per guardar la posició de lectura
+    var savedScrollPosition = 0;
+    var savedTermElement = null;
+
+    // Obrir notes i fer scroll quan es clica una referència de nota
+    document.querySelectorAll('a.note-ref').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir notes si estan tancades
+            if (notesSection && !notesSection.classList.contains('open')) {
+                notesSection.classList.add('open');
+                if (notesToggle) notesToggle.classList.add('active');
+            }
+
+            // Fer scroll a la nota després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar la nota temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Obrir glossari i fer scroll quan es clica un terme
+    document.querySelectorAll('a.term').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+            const targetElement = document.getElementById(targetId);
+
+            // Guardar posició actual de lectura i element clicat
+            savedScrollPosition = window.scrollY;
+            savedTermElement = this;
+
+            // Obrir glossari si està tancat
+            if (glossariSection && !glossariSection.classList.contains('open')) {
+                glossariSection.classList.add('open');
+                if (glossariToggle) glossariToggle.classList.add('active');
+            }
+
+            // Fer scroll al terme després d'un petit delay
+            if (targetElement) {
+                setTimeout(function() {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    // Ressaltar el terme temporalment (usant classe CSS)
+                    targetElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        targetElement.classList.remove('highlight-temp');
+                    }, 2000);
+                }, 150);
+            }
+        });
+    });
+
+    // Tornar al text des del glossari (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.glossary-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const glossariSection = document.getElementById('glossari-section');
+            const glossariToggle = document.getElementById('glossari-toggle');
+
+            // Col·lapsar el glossari
+            if (glossariSection) {
+                glossariSection.classList.remove('open');
+            }
+            if (glossariToggle) {
+                glossariToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada
+            setTimeout(function() {
+                window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                // Ressaltar breument el terme on estàvem (usant classe CSS)
+                if (savedTermElement) {
+                    savedTermElement.classList.add('highlight-temp');
+                    setTimeout(function() {
+                        savedTermElement.classList.remove('highlight-temp');
+                    }, 1500);
+                }
+            }, 100);
+        });
+    });
+
+    // Tornar al text des de les notes (col·lapsar i tornar a la posició)
+    document.querySelectorAll('.notes-back').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const notesSection = document.getElementById('notes-section');
+            const notesToggle = document.getElementById('notes-toggle');
+
+            // Col·lapsar les notes
+            if (notesSection) {
+                notesSection.classList.remove('open');
+            }
+            if (notesToggle) {
+                notesToggle.classList.remove('active');
+            }
+
+            // Tornar a la posició guardada (o a dalt si no n'hi ha)
+            setTimeout(function() {
+                if (savedScrollPosition > 0) {
+                    window.scrollTo({ top: savedScrollPosition, behavior: 'smooth' });
+                } else {
+                    document.querySelector('.text-container').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }, 100);
+        });
+    });
+});
+
+// Inicialitzar estat del botó de favorits
+document.addEventListener('DOMContentLoaded', async function() {
+    const favBtn = document.querySelector('.btn-favorit-below');
+    if (!favBtn || !window.ArionFavorits) return;
+
+    // Esperar que l'auth estigui llest
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    const obraId = favBtn.dataset.obraId;
+    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
+
+    if (isFavorit) {
+        favBtn.classList.add('active');
+        favBtn.querySelector('.favorit-icon').textContent = '❤️';
+    }
+});
+
+// Botó tornar a dalt
+document.addEventListener('DOMContentLoaded', function() {
+    const backToTop = document.getElementById('back-to-top');
+    if (!backToTop) return;
+
+    function toggleBackToTop() {
+        if (window.scrollY > 300) {
+            backToTop.classList.add('visible');
+        } else {
+            backToTop.classList.remove('visible');
+        }
+    }
+
+    window.addEventListener('scroll', toggleBackToTop);
+    toggleBackToTop();
+
+    backToTop.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+</script>
+
+    </main>
+
+    <!-- Footer - Ampliat v2 -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Columna 1: Sobre -->
+                <div class="footer-section">
+                    <h4>Sobre Arion</h4>
+                    <p>Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.</p>
+                    <a href="sobre.html" class="footer-link">Més informació →</a>
+                </div>
+
+                <!-- Columna 2: Recursos -->
+                <div class="footer-section">
+                    <h4>Recursos</h4>
+                    <ul>
+                        <li><a href="cataleg.html">Catàleg d'obres</a></li>
+                        <li><a href="faq.html">Preguntes freqüents</a></li>
+                        <li><a href="contribuir.html">Com contribuir</a></li>
+                        <li><a href="https://github.com/biblioteca-arion/biblioteca-universal-arion" target="_blank" rel="noopener">GitHub</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Legal -->
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="termes.html">Termes d'ús</a></li>
+                        <li><a href="privacitat.html">Política de privacitat</a></li>
+                        <li><a href="llicencies.html">Llicències</a></li>
+                    </ul>
+                    <p class="footer-license"><small>CC BY-SA 4.0</small></p>
+                </div>
+
+                <!-- Columna 4: Contacte -->
+                <div class="footer-section">
+                    <h4>Contacte</h4>
+                    <p class="footer-email">biblioteca@arion.cat</p>
+                    <div class="social-links">
+                        <a href="https://github.com/biblioteca-arion" target="_blank" rel="noopener" aria-label="GitHub">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://discord.gg/arion" target="_blank" rel="noopener" aria-label="Discord">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M20.317 4.37a19.791 19.791 0 00-4.885-1.515.074.074 0 00-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 00-5.487 0 12.64 12.64 0 00-.617-1.25.077.077 0 00-.079-.037A19.736 19.736 0 003.677 4.37a.07.07 0 00-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 00.031.057 19.9 19.9 0 005.993 3.03.078.078 0 00.084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 00-.041-.106 13.107 13.107 0 01-1.872-.892.077.077 0 01-.008-.128 10.2 10.2 0 00.372-.292.074.074 0 01.077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 01.078.01c.12.098.246.198.373.292a.077.077 0 01-.006.127 12.299 12.299 0 01-1.873.892.077.077 0 00-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 00.084.028 19.839 19.839 0 006.002-3.03.077.077 0 00.032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 00-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 Biblioteca Universal Arion · Fet amb dedicació per a la cultura catalana</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="js/supabase-client.js"></script>
+    <script src="js/auth-manager.js"></script>
+    <script src="js/favorits-carret.js"></script>
+    <script src="js/app.js"></script>
+    
+</body>
+</html>

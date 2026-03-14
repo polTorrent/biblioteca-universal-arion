@@ -1,4 +1,3 @@
-# De origine et situ Germanorum (Germania)
 **Autor:** Tàcit
 **Font:** [wikisource](https://la.wikisource.org/wiki/De%20origine%20et%20situ%20Germanorum%20%28Germania%29)
 **Llengua:** llatí
