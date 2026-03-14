@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-14",
+  "updated_at": "2026-03-15",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -1097,7 +1097,7 @@
         "perseus",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/teatre/esquil/prometeu-encadenat",
       "notes": "Consell Editorial 2026-03-14. Ésquil (c. 525-456 aC), pare de la tragèdia grega. Prometeu encadenat (Προμηθεύς Δεσμώτης) dramatitza el càstig del tità que va robar el foc als déus per donar-lo als humans: mite fundacional sobre la rebel·lió contra el poder, el progrés tècnic i el sofriment per convicció. El catàleg inclou Sòfocles (Antígona) i Eurípides però manca Ésquil, completant així la tríada tràgica grega. Cap traducció catalana moderna. Text grec complet a Perseus Digital Library i Wikisource."
     },
