@@ -1,17 +1,27 @@
 #!/usr/bin/env python3
 """Fetch Tsurezuregusa from Japanese Wikisource - extract 50 selected dan."""
-import urllib.request
-import re
+from __future__ import annotations
+
 import html as html_mod
+import re
+import sys
+import urllib.request
+from pathlib import Path
+from urllib.error import HTTPError, URLError
 
 BASE = "https://ja.wikisource.org"
 
-def fetch(url):
+
+def fetch(url: str) -> str:
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; BibliotecaArion/1.0)"})
-    resp = urllib.request.urlopen(req, timeout=30)
+    try:
+        resp = urllib.request.urlopen(req, timeout=30)
+    except (HTTPError, URLError, TimeoutError) as exc:
+        print(f"ERROR fetching {url}: {exc}", file=sys.stderr)
+        sys.exit(1)
     return resp.read().decode("utf-8")
 
-def extract_text(raw_html):
+def extract_text(raw_html: str) -> str:
     """Extract main content text from Wikisource page."""
     match = re.search(r'<div class="mw-parser-output">(.*?)<div[^>]*class="[^"]*printfooter', raw_html, re.DOTALL)
     if not match:
@@ -45,34 +55,6 @@ def extract_text(raw_html):
     return '\n'.join(lines)
 
 
-# Fetch the full text
-url = BASE + "/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E6%A0%A1%E8%A8%BB%E6%97%A5%E6%9C%AC%E6%96%87%E5%AD%B8%E5%A4%A7%E7%B3%BB)"
-print("Fetching full text...")
-html_content = fetch(url)
-text = extract_text(html_content)
-
-# Parse into sections by number
-sections = {}
-current_num = None
-current_text = []
-
-for line in text.split('\n'):
-    stripped = line.strip()
-    # Check if this is a section number (standalone number)
-    if re.match(r'^\d+$', stripped) and 1 <= int(stripped) <= 243:
-        if current_num is not None:
-            sections[current_num] = '\n'.join(current_text).strip()
-        current_num = int(stripped)
-        current_text = []
-    elif current_num is not None:
-        current_text.append(line)
-
-# Don't forget the last section
-if current_num is not None:
-    sections[current_num] = '\n'.join(current_text).strip()
-
-print(f"Parsed {len(sections)} sections")
-
 # Selected 50 most representative dan
 # Mix of: philosophy of impermanence, aesthetics, nature, human nature, humor, Buddhism
 SELECTED = [
@@ -83,41 +65,80 @@ SELECTED = [
     167, 170, 175, 188, 189, 211, 215, 231, 241, 243,
 ]
 
-# Build output
-output_lines = []
-output_lines.append(f"**Autor:** Yoshida Kenkō (吉田兼好)")
-output_lines.append(f"**Font:** [wikisource_ja](https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E6%A0%A1%E8%A8%BB%E6%97%A5%E6%9C%AC%E6%96%87%E5%AD%B8%E5%A4%A7%E7%B3%BB))")
-output_lines.append(f"**Llengua:** japonès clàssic")
-output_lines.append(f"**Edició:** 校註日本文學大系 (Kōchū Nihon Bungaku Taikei)")
-output_lines.append(f"**Selecció:** 50 capítols de 243")
-output_lines.append("")
-output_lines.append("---")
-output_lines.append("")
-output_lines.append("# 徒然草 — Tsurezuregusa")
-output_lines.append("")
-output_lines.append("吉田兼好 (Yoshida Kenkō)")
-output_lines.append("")
 
-missing = []
-for num in SELECTED:
-    if num in sections:
-        output_lines.append(f"## 第{num}段")
-        output_lines.append("")
-        output_lines.append(sections[num])
-        output_lines.append("")
-        output_lines.append("")
-    else:
-        missing.append(num)
+def parse_sections(text: str) -> dict[int, str]:
+    sections: dict[int, str] = {}
+    current_num: int | None = None
+    current_text: list[str] = []
 
-if missing:
-    print(f"WARNING: Missing sections: {missing}")
+    for line in text.split('\n'):
+        stripped = line.strip()
+        if re.match(r'^\d+$', stripped) and 1 <= int(stripped) <= 243:
+            if current_num is not None:
+                sections[current_num] = '\n'.join(current_text).strip()
+            current_num = int(stripped)
+            current_text = []
+        elif current_num is not None:
+            current_text.append(line)
 
-output = '\n'.join(output_lines)
+    if current_num is not None:
+        sections[current_num] = '\n'.join(current_text).strip()
 
-# Write to file
-outpath = "obres/oriental/yoshida-kenko/tsurezuregusa/original.md"
-with open(outpath, 'w', encoding='utf-8') as f:
-    f.write(output)
+    return sections
 
-print(f"Written {len(output)} chars to {outpath}")
-print(f"Sections included: {len([n for n in SELECTED if n in sections])}/{len(SELECTED)}")
+
+def build_output(sections: dict[int, str]) -> tuple[str, list[int]]:
+    output_lines = [
+        "**Autor:** Yoshida Kenkō (吉田兼好)",
+        "**Font:** [wikisource_ja](https://ja.wikisource.org/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E6%A0%A1%E8%A8%BB%E6%97%A5%E6%9C%AC%E6%96%87%E5%AD%B8%E5%A4%A7%E7%B3%BB))",
+        "**Llengua:** japonès clàssic",
+        "**Edició:** 校註日本文學大系 (Kōchū Nihon Bungaku Taikei)",
+        "**Selecció:** 50 capítols de 243",
+        "",
+        "---",
+        "",
+        "# 徒然草 — Tsurezuregusa",
+        "",
+        "吉田兼好 (Yoshida Kenkō)",
+        "",
+    ]
+
+    missing: list[int] = []
+    for num in SELECTED:
+        if num in sections:
+            output_lines.append(f"## 第{num}段")
+            output_lines.append("")
+            output_lines.append(sections[num])
+            output_lines.append("")
+            output_lines.append("")
+        else:
+            missing.append(num)
+
+    return '\n'.join(output_lines), missing
+
+
+def main() -> None:
+    url = BASE + "/wiki/%E5%BE%92%E7%84%B6%E8%8D%89_(%E6%A0%A1%E8%A8%BB%E6%97%A5%E6%9C%AC%E6%96%87%E5%AD%B8%E5%A4%A7%E7%B3%BB)"
+    print("Fetching full text...")
+    html_content = fetch(url)
+    text = extract_text(html_content)
+
+    sections = parse_sections(text)
+    print(f"Parsed {len(sections)} sections")
+
+    output, missing = build_output(sections)
+    if missing:
+        print(f"WARNING: Missing sections: {missing}", file=sys.stderr)
+
+    repo_root = Path(__file__).resolve().parent.parent
+    outpath = repo_root / "obres/oriental/yoshida-kenko/tsurezuregusa/original.md"
+    outpath.parent.mkdir(parents=True, exist_ok=True)
+    outpath.write_text(output, encoding="utf-8")
+
+    included = len([n for n in SELECTED if n in sections])
+    print(f"Written {len(output)} chars to {outpath}")
+    print(f"Sections included: {included}/{len(SELECTED)}")
+
+
+if __name__ == "__main__":
+    main()
