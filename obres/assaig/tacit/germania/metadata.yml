@@ -1,31 +1,37 @@
 obra:
-  titol: "Germania"
-  titol_original: "De origine et situ Germanorum"
-  autor: "Tàcit"
-  autor_original: "Publius Cornelius Tacitus"
-  traductor: "Biblioteca Arion"
-  any_original: "c. 98 dC"
+  titol: Germania
+  titol_original: De origine et situ Germanorum
+  autor: Tàcit
+  autor_original: Publius Cornelius Tacitus
+  traductor: Biblioteca Arion
+  any_original: c. 98 dC
   any_traduccio: 2026
-  llengua_original: "llatí"
-  descripcio: "Tractat etnogràfic sobre els pobles germànics, els seus costums, institucions, religió i territori."
+  llengua_original: llatí
+  descripcio: Tractat etnogràfic sobre els pobles germànics, els seus costums, institucions,
+    religió i territori.
   seccions: 46
   estadistiques:
     paraules_original: 7500
-    paraules_traduccio: 0
+    paraules_traduccio: 6213
     notes: 17
     termes_glossari: 0
 revisio:
-  estat: "necessita_correcció"
-  qualitat: 2.0
-  data_revisio: "2026-03-14"
+  estat: revisat
+  qualitat: 4.0
+  data_revisio: '2026-03-14'
 avaluacio_final:
-  data: "2026-03-14"
+  data: '2026-03-14T13:15:20.585249'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
     fluidesa: 0.0
     correccio_linguistica: 0.0
     coherencia: 0.0
-    global: 2.0
+    global: 0.0
+  total_errors: 52
+  errors_critics: 0
+  errors_alts: 0
   aprovat: false
-  notes: "Traducció fallida - traduccio.md buida, només 11/25 chunks traduïts, sense glossari"
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 28
