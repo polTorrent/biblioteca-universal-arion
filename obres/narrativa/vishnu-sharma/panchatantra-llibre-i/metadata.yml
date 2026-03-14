@@ -1,0 +1,22 @@
+obra:
+  titol: "Panchatantra (Llibre I: Mitrabheda)"
+  titol_original: "पञ्चतन्त्र — मित्रभेद"
+  autor: "Vishnu Sharma"
+  autor_original: "विष्णुशर्मन्"
+  traductor: "Biblioteca Arion"
+  any_original: "c. 300 aC"
+  any_traduccio: 2026
+  llengua_original: "anglès"
+  descripcio: "Llibre I del Panchatantra: 'La pèrdua dels amics' (Mitrabheda). Col·lecció de faules i contes encadenats sobre la intriga, l'amistat i la traïció, amb morals en vers."
+  genere: "narrativa"
+  notes: "Traducció basada en la versió anglesa d'Arthur W. Ryder (1925), domini públic."
+seccions: 1
+estadistiques:
+  paraules_original: 40464
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null

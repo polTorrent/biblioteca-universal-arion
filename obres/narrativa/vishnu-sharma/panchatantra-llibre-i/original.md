@@ -1,11 +1,3 @@
-# The Panchatantra — Book I: The Loss of Friends (Mitrabheda)
-
-*Vishnu Sharma (c. 300 BCE) — Translation by Arthur William Ryder (1925)*
-
-*Purnabhadra's Recension of 1199 CE*
-
----
-
 ## The Loss of Friends
 
 Here then begins Book I, called "The Loss of Friends." The first verse runs:
