@@ -1,0 +1,19 @@
+Data: 2026-03-14
+Puntuació: 0/10
+Revisor: Supervisió automàtica
+
+Problemes crítics:
+1. ORIGINAL INCORRECTE: original.md conté 「浮世の有様」(Ukiyo no Arisama, crònica històrica) en lloc de 「曽根崎心中」(Sonezaki Shinjū, drama de bunraku de Chikamatsu Monzaemon). Cal obtenir el text correcte.
+2. TRADUCCIÓ BUIDA: traduccio.md no conté cap traducció, només missatges d'error del CLI.
+3. METADATA INCOMPLET: metadata.yml no té els camps obligatoris (títol, autor, llengua_original, descripció, any_original, etc.). Només conté avaluació a zeros.
+4. GLOSSARI ABSENT: No existeix glossari.yml.
+5. NOTES ABSENTS: No existeix notes.md.
+6. FITXERS TEMPORALS: _aozora_index.html, _extract.py, _source.html, sonezaki.zip haurien de ser eliminats o moguts.
+
+Accions necessàries:
+- Obtenir el text original correcte de 曽根崎心中 (Sonezaki Shinjū) de Chikamatsu Monzaemon
+- Refer tota la traducció des de zero
+- Completar metadata.yml amb tots els camps obligatoris
+- Crear glossari.yml amb termes clau del teatre bunraku/jōruri
+- Crear notes.md amb context sobre l'obra
+- Netejar fitxers temporals
