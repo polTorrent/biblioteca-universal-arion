@@ -1,0 +1,41 @@
+{
+  "sessio_id": "chikamatsu-monzaemon-sonezaki-shinju-2026-03-14",
+  "obra": {
+    "autor": "Chikamatsu Monzaemon",
+    "titol": "Sonezaki Shinju",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-03-14T05:33:42.808366",
+    "ultima_activitat": "2026-03-14T05:40:49.726737"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 2,
+    "completats": [
+      "chunk_1",
+      "chunk_2"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 7.12
+  },
+  "errors": [
+    "[05:36:15] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:39:28] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[05:40:49] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}

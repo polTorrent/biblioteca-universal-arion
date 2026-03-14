@@ -1,4 +1,3 @@
-# 浮世の有様
 **Autor:** Chikamatsu Monzaemon
 **Font:** [wikisource](https://ja.wikisource.org/wiki/%E6%B5%AE%E4%B8%96%E3%81%AE%E6%9C%89%E6%A7%98)
 **Llengua:** japonès
