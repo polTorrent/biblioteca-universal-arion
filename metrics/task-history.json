@@ -2813,5 +2813,14 @@
       }
     ],
     "fail_count": 0
+  },
+  "supervision_panchatantra-llibre-i": {
+    "events": [
+      {
+        "timestamp": 1773529202.3515086,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
   }
 }

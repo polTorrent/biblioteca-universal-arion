@@ -15,9 +15,8 @@ def format_teatre(obra_path: str) -> int:
         lines = f.readlines()
     
     new_lines = []
-    in_dialogue = False
-    
-    for i, line in enumerate(lines):
+
+    for line in lines:
         stripped = line.strip()
         
         # Detectar noms de personatge (format: _Nom._ o Nom.)
@@ -31,26 +30,22 @@ def format_teatre(obra_path: str) -> int:
                 new_lines.append('\n')
             
             nom = char_match.group(1)
-            resta = char_match.group(2) if len(char_match.groups()) > 1 else ''
+            resta = char_match.group(2)
             
             # Format: **NOM:** text
             new_lines.append(f'**{nom.upper()}:** {resta}\n')
-            in_dialogue = True
         elif stripped.startswith('_') and stripped.endswith('_') and len(stripped) > 2:
             # Didascàlia en cursiva
             if new_lines and new_lines[-1].strip():
                 new_lines.append('\n')
             new_lines.append(f'*{stripped[1:-1]}*\n')
-            in_dialogue = False
         elif stripped.startswith('#'):
             # Títols
             if new_lines and new_lines[-1].strip():
                 new_lines.append('\n')
             new_lines.append(line)
-            in_dialogue = False
         elif stripped == '---':
             new_lines.append('\n---\n\n')
-            in_dialogue = False
         elif stripped:
             # Text normal
             new_lines.append(f'{stripped}\n')
