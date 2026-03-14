@@ -1,0 +1,31 @@
+Data: 2026-03-14
+Puntuació: 5.5/10
+Revisor: Supervisió automàtica
+
+PROBLEMES CRÍTICS:
+1. FUSIÓ INCOMPLETA: traduccio.md només conté ~20 dels ~40 fragments traduïts. Els fragments restants estan als fitxers _group1.md, _group2.md, _group3.md, _group4.md sense haver-se integrat.
+2. ERRORS DE PIPELINE: Dues marques "[ERROR: El CLI ha retornat una resposta buida (sense contingut)]" visibles a traduccio.md (Fragment 109 i després del Fragment 75).
+3. FRAGMENT DESPLAÇAT: El Fragment 92 (l'arquer i les dues fletxes) apareix enganxat al final del Fragment 14 a traduccio.md. Hauria de ser un fragment independent.
+4. FRAGMENT 10 TRUNCAT: Manca la segona meitat de l'original (passatge sobre Saigyō i les cordes al teulat per espantar les milanes).
+
+PROBLEMES DE LLENGUA:
+5. ERROR GRAMATICAL REPETIT: "No t'hes de fiar" → "No t'has de fiar" (Fragment 211, repetit 8 vegades).
+6. ACCENTS MANCANTS: "pero" → "però", "Nomes" → "Només", "col·leccio" → "col·lecció", "mes" → "més" (diversos llocs a _group1.md i traduccio.md).
+
+PROBLEMES DE FORMAT:
+7. NUMERACIÓ INCONSISTENT: Barreja "Primer fragment", "Segon fragment", "Fragment 7", "Fragment 32", "95", "102" (sense prefix).
+8. GLOSSARI INEXISTENT: 0 termes al glossari. Una obra japonesa clàssica requereix glossari (nembutsu, waka, moxa, sanri, hitatare, etc.).
+9. NOTES ESCASSES: Només 6 notes en 40 fragments. Molts termes i referencies culturals queden sense anotar.
+10. PIPELINE STATE ERRONI: El camp "llengua" del .pipeline_state.json diu "llatí" en lloc de "japonès clàssic".
+
+ACCIONS REQUERIDES:
+- [ ] Fusionar _group1-4.md dins traduccio.md amb ordre correcte dels fragments
+- [ ] Eliminar marques [ERROR] i completar els fragments 109 i 75
+- [ ] Separar Fragment 92 del Fragment 14
+- [ ] Completar Fragment 10 amb la secció sobre Saigyō
+- [ ] Corregir "t'hes" → "t'has" a tot arreu
+- [ ] Corregir accents mancants
+- [ ] Unificar format de numeració (recomanat: "## Fragment N")
+- [ ] Crear glossari.yml amb termes clau japonesos
+- [ ] Afegir notes per a referencies culturals
+- [ ] Corregir pipeline_state.json (llengua)
