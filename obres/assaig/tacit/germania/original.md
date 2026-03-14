@@ -4,13 +4,7 @@
 
 ---
 
-fons: incognitus 
-
-Hic est indiculum Germaniae.
-
-I - II - III - IV - V - VI - VII - VIII - IX - X - XI - XII - XIII - XIV - XV - XVI - XVII - XVIII - XIX - XX - XXI - XXII - XXIII - XXIV - XXV - XXVI - XXVII - XXVIII - XXIX - XXX - XXXI - XXXII - XXXIII - XXXIV - XXXV - XXXVI - XXXVII - XXXVIII - XXXIX - XL - XLI - XLII - XLIII - XLIV - XLV - XLVI
-
-
+## I
 
 Germania omnis a Gallis Raetisque et Pannoniis Rheno et Danuvio fluminibus,
 a Sarmatis Dacisque mutuo metu aut montibus separatur: cetera Oceanus ambit, latos sinus et insularum inmensa spatia complectens, nuper cognitis quibusdam gentibus ac regibus, quos bellum aperuit.

@@ -118,7 +118,15 @@ Al costat dels Catto, que segueixen el curs ja ben delimitat del Rin —que és 
 Els Tencteris, a més de la glòria habitual en la guerra, excel·leixen en l'art de la disciplina eqüestre; ni és més gran entre els Catto la fama de la infanteria que entre els Tencteris la dels cavallers.
 Així ho van establir els avantpassats; els descendents ho imiten. Aquests són els jocs dels infants, aquesta l'emulació dels joves: hi perseveren els ancians. Entre els béns familiars i els lars i els drets de successió s'hi transmeten els cavalls: el fill hereta, no com en la resta de coses el més gran per edat, sinó segons sigui més ferotge en la guerra i millor.
 
-[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
+## XXXIII
+Prop dels tènters s'estenien abans els brúcters: ara es diu que els camaus i els angrivaris han emigrat cap allà, després d'expulsar i exterminar completament els brúcters pel consens de les nacions veïnes, ja sigui per odi a la seva arrogància, ja sigui per l'al·licient del botí, ja sigui per alguna favor dels déus cap a nosaltres; doncs no ens van escatimar ni tan sols l'espectacle del combat.
+Més de seixanta mil van caure, no per les armes i els projectils romans, sinó —cosa que és més magnífica— per al nostre entreteniment.
+Que perduri, us prego, i que duri entre els pobles, si no l'amor cap a nosaltres, almenys certament l'odi cap a si mateixos, ja que, urgint els destins de l'imperi, la fortuna ja no pot proporcionar res més gran que la discòrdia dels enemics.
+## XXXIV
+Els dulgubnis i els casuaris tanquen per darrere els angrivaris i els camaus, juntament amb altres pobles no igualment coneguts; per davant els reben els frisis.
+Els frisis majors i menors tenen el nom segons la mesura de les seves forces. Ambdós pobles s'estenen al llarg del Rin fins a l'oceà, i envolten a més llacs immensos navegats per flotes romanes.
+Fins i tot el mateix oceà vam intentar explorar en aquella direcció: i la fama ha escampat que encara existeixen les columnes d'Hèrcules, ja sigui que Hèrcules hi va arribar, ja sigui que hem consentit a referir a la seva glòria tot allò que és magnífic en qualsevol lloc.
+Drus Germànic no va mancar d'audàcia, però l'oceà es va oposar a aquesta investigació sobre ell mateix i sobre Hèrcules. Després ningú ho va intentar, i va semblar més sant i respectuós creure en les gestes dels déus que no pas conèixer-les.
 
 ## XXXV
 Fins aquí coneixem Germània cap a l'occident; cap al nord fa una gran corba. I immediatament després trobem la tribu dels chauci que, tot i començar a partir dels frisons i ocupar part del litoral, s'estén al llarg de tots els pobles que he descrit, fins que arriba als chatti. Un territori tan immens no només el posseeixen els chauci, sinó que també l'omplen completament: poble nobilíssim entre els germànics, que prefereix defensar la seva grandesa amb la justícia. Sense cobdícia, sense violència, tranquils i apartats, no provoquen cap guerra ni devasten amb raptes o bandidatge. Això és la prova principal de la seva virtut i força: que per actuar com a superiors, no ho aconsegueixen mitjançant injustícies; tenen, però, les armes preparades per a tots i, si la situació ho demana, exèrcits amb moltíssims homes i cavalls; i fins i tot estant tranquils, gaudeixen de la mateixa fama.
