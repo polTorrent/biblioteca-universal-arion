@@ -1020,7 +1020,7 @@
         "perseus",
         "gutenberg"
       ],
-      "status": "in_progress",
+      "status": "done",
       "obra_dir": "obres/poesia/teocrit/idillis",
       "notes": "Consell Editorial 2026-03-13. Teocrit de Siracusa (c. 300–260 aC), poeta grec hel·lenístic, fundador de la poesia bucòlica i pastoral. Els Idil·lis (Εἰδύλλια) estableixen el gènere que influirà Virgili (Bucòliques), el Renaixement i tota la tradició pastoral europea. Selecció de 10 idil·lis representatius (I, II, III, VI, VII, X, XI, XV, XXIV, XXX) que cobreixen pastoral, mim urbà, epil·li i poesia amorosa. El catàleg inclou poesia grega arcaica (Safo, Hesíode) i clàssica (Pindar via Horaci) però manca completament el període hel·lenístic. Cap traducció catalana moderna dels Idil·lis. Text grec a Perseus."
     },
@@ -1177,6 +1177,52 @@
       "status": "pending",
       "obra_dir": "obres/poesia/shota-rustaveli/el-cavaller-pell-pantera",
       "notes": "Consell Editorial 2026-03-14. Shota Rustaveli (შოთა რუსთაველი, c. 1160-1220), poeta nacional de Geòrgia. Vepkhistqaosani (ვეფხისტყაოსანი, 'El cavaller amb la pell de pantera', c. 1200) és l'epopeia nacional georgiana i una de les grans obres de la literatura medieval mundial: la història d'amistat, amor cortès i cavalleresca entre Tariel, Avtandil i Nestan-Darejan, en 1.600 estrofes de shairi (quartet de 16 síl·labes). Afegeix el GEORGIÀ com a llengua completament nova al catàleg — primera representació de la literatura caucàsica i d'una llengua kartveliana. Selecció de 5 episodis clau: el pròleg filosòfic, la trobada amb el cavaller misteriós, la història de Nestan, la recerca i el desenllaç. Influenciat pel sufisme persa i el neoplatonisme. Cap traducció catalana. Text georgià a Wikisource georgiana; traduccions angleses al domini públic a Gutenberg."
+    },
+    {
+      "autor": "Juvenal",
+      "titol": "Sàtires (selecció de 5 sàtires)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "latin_library",
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/juvenal/satires",
+      "notes": "Consell Editorial 2026-03-14. Decimus Iunius Iuvenalis (c. 55–130 dC), el satirista més ferotge de Roma. Les Saturae (16 sàtires en 5 llibres) són un retrat implacable de la corrupció, la hipocresia i la decadència de la Roma imperial. Selecció de 5 sàtires representatives: I (programàtica: 'difficile est saturam non scribere'), III (els horrors de viure a Roma), VI (fragments: crítica dels costums), X ('panem et circenses', la vanitat dels desitjos humans — la sàtira que va inspirar el Rasselas de Johnson), XIV (l'educació moral). Juvenal va encunyar expressions que defineixen la cultura occidental: 'quis custodiet ipsos custodes?', 'mens sana in corpore sano', 'panem et circenses'. El catàleg conté lírica llatina (Horaci, Virgili, Catul, Ovidi) però cap veu satírica: Juvenal aporta el contrapunt crític, la Roma des de baix, la indignació moral com a motor literari ('si natura negat, facit indignatio versum'). Dificultat 4 per la densitat d'al·lusions culturals i el registre col·loquial-elevat. Cap traducció catalana moderna. Text llatí complet a The Latin Library, Perseus Digital Library i Project Gutenberg."
+    },
+    {
+      "autor": "Elias Lönnrot (compilador)",
+      "titol": "Kalevala (selecció de 10 cants)",
+      "llengua": "finès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/kalevala/seleccio-10-cants",
+      "notes": "Consell Editorial 2026-03-14. Elias Lönnrot (1802–1884), filòleg finès que va compilar el Kalevala (1835, versió definitiva 1849) a partir de la tradició oral rúnica de Carèlia i Finlàndia. Epopeia nacional finesa, 22.795 versos en 50 cants, en tetràmetre trocaic (metre de Kalevala), la mètrica nativa finesa que va influir Longfellow (Hiawatha). Selecció de 10 cants clau: 1 (cosmogonia: Väinämöinen neix del mar), 2-3 (el sembra Väinämöinen), 8-9 (la forja del Sampo per Ilmarinen), 12 (Lemminkäinen a Tuonela, el regne dels morts), 26-27 (el rapte del Sampo), 35 (la tragèdia de Kullervo — inspiració directa de Túrin Turambar de Tolkien), 49-50 (la partida de Väinämöinen i l'arribada del nou món). Afegeix el FINÈS com a llengua completament nova al catàleg — primera representació d'una llengua uràlica no hongaresa i de la tradició literària nòrdica-bàltica. Temàtiques: xamanisme, creació per la paraula, rivalitat entre herois cantors, el Sampo com a objecte de poder. Cap traducció catalana. Text finès complet a Wikisource finesa i Project Gutenberg."
+    },
+    {
+      "autor": "Nguyễn Du",
+      "titol": "Truyện Kiều (La història de Kiều, selecció)",
+      "llengua": "vietnamita",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/nguyen-du/truyen-kieu",
+      "notes": "Consell Editorial 2026-03-14. Nguyễn Du (阮攸, 1766–1820), poeta nacional del Vietnam. Truyện Kiều (Đoạn Trường Tân Thanh, 'Nous crits d'un cor esquinçat', 1820) és l'obra mestra de la literatura vietnamita i el poema narratiu més important del sud-est asiàtic: 3.254 versos en lục bát (mètrica alternada de 6 i 8 síl·labes, nativa vietnamita) que narren la vida tràgica de Thúy Kiều, una jove de talent i bellesa que es ven com a concubina per salvar el seu pare, i travessa quinze anys de patiment — prostitució, engany, amor, separació, temptativa de suïcidi — abans d'una reconciliació final agredolça. Basat en una novel·la xinesa menor (Jin Yun Qiao zhuan), Nguyễn Du la va transformar en poesia d'una intensitat lírica i moral que cap vietnamita no pot recitar sense emocionar-se: és l'equivalent del Quixot o del Hamlet per a la cultura vietnamita. Afegeix el VIETNAMITA com a llengua completament nova al catàleg — primera representació de la literatura del sud-est asiàtic i d'una llengua austroasiàtica. Selecció de passatges clau: el pròleg i la descripció de les germanes, la festa de Thanh Minh, la venda de Kiều, la trobada amb Từ Hải (el rebel), el retorn final. Cap traducció catalana ni castellana coneguda. Text vietnamita complet a Wikisource vietnamita; traduccions angleses de Huỳnh Sanh Thông (1983) disponibles, versió de 1897 al domini públic."
     }
   ]
 }
