@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773433660.7198436,
-        "result": "created"
-      },
-      {
         "timestamp": 1773439100.383447,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773492564.0542965,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773499802.9808707,
         "result": "created"
       }
     ],
@@ -2740,6 +2740,10 @@
     "events": [
       {
         "timestamp": 1773492563.8938577,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773499802.817906,
         "result": "created"
       }
     ],
