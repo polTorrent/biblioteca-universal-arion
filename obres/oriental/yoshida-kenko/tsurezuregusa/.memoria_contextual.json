@@ -1,0 +1,41 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Yoshida Kenko (吉田兼好), també conegut com Urabe Kenko (c. 1283 - c. 1350), Kyoto, Japó. Monjo budista, poeta i assagista japonès del període Kamakura tardà. Va servir a la cort imperial abans de retirar-se a la vida monàstica cap al 1313. És considerat un dels mestres de l'assaig personal i la prosa reflexiva japonesa.",
+    "context_historic": "Període Kamakura (1185-1333), època de transició entre l'aristocràcia de cort i el govern militar dels samurai. Declivi de l'aristocràcia imperial i influència creixent del budisme zen.",
+    "context_obra": "徒然草 (Tsurezuregusa) (c. 1330-1331) - Assaig personal (zuihitsu), literatura contemplativa. Escrita durant el retir monàstic de Kenko, com a reflexions sobre la vida, la societat i la condició humana. Influenciada per la tradició budista de la meditació sobre la impermanència",
+    "influencies": [
+      "Budisme zen",
+      "Literatura de cort de l'època Heian",
+      "Sei Shonagon",
+      "Poesia waka clàssica",
+      "Filosofia budista de la impermanència"
+    ],
+    "temes_principals": [
+      "Impermanència de la vida (mujo)",
+      "Crítica social i moral",
+      "Estètica de la bellesa transitòria",
+      "Solitud i reclusió",
+      "Observació de la natura humana"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Emperador diverses èpoques",
+    "[H] Personatge històric: Sei Shonagon",
+    "[H] Personatge històric: Monjos budistes contemporanis",
+    "[H] Personatge històric: Cortesans de l'època Kamakura",
+    "[H] Personatge històric: Zoga Saint",
+    "[C] Referència cultural: Cort imperial japonesa",
+    "[C] Referència cultural: Tradicions budistes",
+    "[C] Referència cultural: Estètica mono no aware",
+    "[C] Referència cultural: Literatura waka",
+    "[C] Referència cultural: Costums aristocràtics de l'època Heian-Kamakura",
+    "[T] Terme tècnic: Mono no aware (melancolia de les coses)",
+    "[T] Terme tècnic: Zuihitsu (assaig lliure)",
+    "[T] Terme tècnic: Waka (poesia japonesa)",
+    "[T] Terme tècnic: Mujo (impermanència budista)",
+    "[T] Terme tècnic: Makura no Soshi (referència literària)"
+  ]
+}
