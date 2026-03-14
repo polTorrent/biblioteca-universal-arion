@@ -1,0 +1,39 @@
+obra:
+  titol: Idil·lis (selecció)
+  titol_original: Εἰδύλλια
+  autor: Teòcrit
+  autor_original: Θεόκριτος
+  traductor: Biblioteca Arion
+  any_original: c. 270 aC
+  any_traduccio: 2026
+  llengua_original: grec antic
+  genere: poesia
+  descripcio: Selecció dels Idil·lis de Teòcrit, pare de la poesia bucòlica grega.
+    Escenes pastorals, cants amebeus i mites en dialecte dòric.
+  estadistiques: {}
+seccions: 7
+estadistiques:
+  paraules_original: 6676
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-14'
+avaluacio_final:
+  data: '2026-03-14T11:48:38.016459'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 0
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 0
