@@ -1131,6 +1131,52 @@
       "status": "pending",
       "obra_dir": "obres/poesia/sor-juana/primero-sueno",
       "notes": "Consell Editorial 2026-03-14. Sor Juana Inés de la Cruz (1648-1695), monja i poeta novohispana, considerada la figura literària més important de l'Amèrica colonial. Primero sueño (1692), silva de 975 versos, narra el viatge de l'ànima pel coneixement universal durant el somni: cosmologia, epistemologia i els límits de la raó humana, en clau barroca gongorina. Obra mestra única per gènere (poema filosòfic extens), per autoria femenina en una època dominada per homes, i per la síntesi de tradicions europea i americana. Afegeix castellà com a idioma nou al catàleg. Cap traducció catalana. Text a Wikisource i Biblioteca Virtual Cervantes."
+    },
+    {
+      "autor": "Mengzi (Menci)",
+      "titol": "Selecció de 7 capítols",
+      "llengua": "xinès",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/filosofia/mengzi/seleccio-7-capitols",
+      "notes": "Consell Editorial 2026-03-14. Mengzi (孟子, c. 372-289 aC), segon gran mestre del confucianisme, conegut com 'el segon sant'. El llibre Mengzi recull els seus diàlegs i ensenyaments: la bondat innata de la natura humana (性善, xìng shàn), el govern benevolent (仁政, rénzhèng), el dret del poble a rebel·lar-se contra tirans i la distinció entre rei i tirà. Selecció de 7 capítols representatius que cobreixen ètica, política i natura humana. El catàleg conté Confuci (confucianisme), Laozi i Zhuangzi (taoisme) i Mozi (moisme), però falta Mengzi, el segon pilar confucià que va sistematitzar i expandir la doctrina del Mestre. Cap traducció catalana. Text xinès clàssic complet a CText (Chinese Text Project) i Wikisource xinès."
+    },
+    {
+      "autor": "Plaut",
+      "titol": "Miles Gloriosus (El soldat fanfarró)",
+      "llengua": "llatí",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin_library",
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/teatre/plaut/miles-gloriosus",
+      "notes": "Consell Editorial 2026-03-14. Titus Maccius Plautus (c. 254-184 aC), el gran comedògraf romà popular. Miles Gloriosus ('El soldat fanfarró', c. 205 aC) és l'arquetip de la comèdia del soldat vanitós: Pirgopolínices, el militar que es creu irresistible, és víctima d'un engany ordit pel seu esclau Palestrió. L'obra va crear el tipus del 'miles gloriosus' que travessa tota la literatura occidental: el Capitano de la Commedia dell'Arte, Falstaff de Shakespeare, Cyrano de Bergerac. Plaut és complement essencial de Terenci (ja a la cua): on Terenci refina i elegantitza, Plaut és farsesc, popular i desbordant. Cap traducció catalana moderna. Text llatí complet a The Latin Library, Perseus Digital Library i Project Gutenberg."
+    },
+    {
+      "autor": "Shota Rustaveli",
+      "titol": "El cavaller amb la pell de pantera (selecció de 5 episodis)",
+      "llengua": "georgià",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/poesia/shota-rustaveli/el-cavaller-pell-pantera",
+      "notes": "Consell Editorial 2026-03-14. Shota Rustaveli (შოთა რუსთაველი, c. 1160-1220), poeta nacional de Geòrgia. Vepkhistqaosani (ვეფხისტყაოსანი, 'El cavaller amb la pell de pantera', c. 1200) és l'epopeia nacional georgiana i una de les grans obres de la literatura medieval mundial: la història d'amistat, amor cortès i cavalleresca entre Tariel, Avtandil i Nestan-Darejan, en 1.600 estrofes de shairi (quartet de 16 síl·labes). Afegeix el GEORGIÀ com a llengua completament nova al catàleg — primera representació de la literatura caucàsica i d'una llengua kartveliana. Selecció de 5 episodis clau: el pròleg filosòfic, la trobada amb el cavaller misteriós, la història de Nestan, la recerca i el desenllaç. Influenciat pel sufisme persa i el neoplatonisme. Cap traducció catalana. Text georgià a Wikisource georgiana; traduccions angleses al domini públic a Gutenberg."
     }
   ]
 }
