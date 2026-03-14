@@ -1,0 +1,32 @@
+obra:
+  titol: "Bhagavad Gītā (selecció de 6 capítols)"
+  titol_original: "भगवद्गीता"
+  autor: "Vyāsa (Vedavyāsa)"
+  autor_original: "वेदव्यास"
+  traductor: "Editorial Clàssica"
+  any_original: "c. s. V-II aC"
+  any_traduccio: 2026
+  llengua_original: "sànscrit"
+  descripcio: >
+    Selecció de sis capítols del Bhagavad Gītā, el diàleg filosòfic entre
+    Arjuna i Kṛṣṇa al camp de batalla de Kurukṣetra, part del Mahābhārata.
+    Capítols seleccionats: 1 (Desànim d'Arjuna), 2 (Sāṅkhya), 3 (Karma),
+    6 (Domini de si mateix), 11 (Visió de la forma universal), 12 (Devoció).
+  capitols_seleccionats:
+    - 1: "Arjunaviṣādayogaḥ — El ioga del desànim d'Arjuna"
+    - 2: "Sāṅkhyayogaḥ — El ioga del coneixement"
+    - 3: "Karmayogaḥ — El ioga de l'acció"
+    - 6: "Ātmasaṃyamayogaḥ — El ioga del domini de si mateix"
+    - 11: "Viśvarūpadarśanayogaḥ — El ioga de la visió de la forma universal"
+    - 12: "Bhaktiyogaḥ — El ioga de la devoció"
+seccions: 6
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  versos: 290
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: ""
