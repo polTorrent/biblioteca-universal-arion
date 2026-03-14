@@ -1,0 +1,44 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Chikamatsu Monzaemon (近松門左衛門) (1653 - 1725), Província d'Echizen (actual prefectura de Fukui), Japó. Dramaturg japonès considerat el pare del bunraku i el més gran escriptor teatral de l'època Edo. Va escriure més de 100 obres, combinant jōruri (narrativa cantada) amb ningyō-shibai (teatre de titelles). És conegut com el 'Shakespeare japonès' per la seva profunditat psicològica i realisme.",
+    "context_historic": "Període Edo inicial (1603-1868), època de pau i prosperitat sota el shogunat Tokugawa. Auge de la cultura urbana i la classe mercantil a Osaka i Edo. Desenvolupament del kabuki i bunraku com a formes teatrals populars.",
+    "context_obra": "Sonezaki Shinjū (曽根崎心中) (1703) - Bunraku (teatre de titelles) - sewamono (drama domèstic). Basada en un cas real d'un doble suïcidi ocorregut a Osaka el 1703. Escrita per al teatre de titelles Takemoto-za. Primera obra 'sewamono' de Chikamatsu, marcant un canvi del drama històric al contemporani.",
+    "influencies": [
+      "Literatura clàssica xinesa",
+      "Poesia waka japonesa",
+      "Tradicions del nō i kyōgen",
+      "Cultura urbana d'Osaka",
+      "Literatura budista"
+    ],
+    "temes_principals": [
+      "Amor impossible entre classes socials",
+      "Conflicte entre deure i passió",
+      "Crítica social al sistema de classes",
+      "Doble suïcidi com a única escapatòria",
+      "Honor i reputació en la societat mercantil"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Tokubei (jove comerciant)",
+    "[H] Personatge històric: Ohatsu (prostituta)",
+    "[H] Personatge històric: Kuheiji (antagonista)",
+    "[H] Personatge històric: Kyūemon (oncle de Tokubei)",
+    "[C] Referència cultural: Sistema de prostíbuls d'Osaka (Shinmachi)",
+    "[C] Referència cultural: Comerç del sake i oli",
+    "[C] Referència cultural: Matrimonis concertats",
+    "[C] Referència cultural: Conceptes de giri i ninjō",
+    "[C] Referència cultural: Rituals de shinjū (doble suïcidi)",
+    "[C] Referència cultural: Geografia d'Osaka del segle XVIII",
+    "[T] Terme tècnic: Bunraku",
+    "[T] Terme tècnic: Jōruri",
+    "[T] Terme tècnic: Sewamono",
+    "[T] Terme tècnic: Giri",
+    "[T] Terme tècnic: Ninjō",
+    "[T] Terme tècnic: Shinjū",
+    "[T] Terme tècnic: Tayū (cortesana d'alt rang)",
+    "[T] Terme tècnic: Chōnin (classe mercantil)"
+  ]
+}
