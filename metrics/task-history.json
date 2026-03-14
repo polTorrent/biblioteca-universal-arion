@@ -1221,14 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773442803.421241,
-        "result": "created"
-      },
-      {
-        "timestamp": 1773450005.5475087,
-        "result": "created"
-      },
-      {
         "timestamp": 1773457203.634984,
         "result": "created"
       },
@@ -1298,6 +1290,14 @@
       },
       {
         "timestamp": 1773505238.357619,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773508905.3226817,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773510763.720505,
         "result": "created"
       }
     ],
@@ -2758,6 +2758,10 @@
       {
         "timestamp": 1773492564.3613572,
         "result": "created"
+      },
+      {
+        "timestamp": 1773508905.6052814,
+        "result": "created"
       }
     ],
     "fail_count": 0
@@ -2766,6 +2770,15 @@
     "events": [
       {
         "timestamp": 1773492580.8680036,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_tsurezuregusa": {
+    "events": [
+      {
+        "timestamp": 1773510763.5398715,
         "result": "created"
       }
     ],

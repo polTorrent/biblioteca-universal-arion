@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-14T15:28:40.761950",
-    "ultima_activitat": "2026-03-14T17:59:51.162562"
+    "ultima_activitat": "2026-03-14T18:34:18.176592"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -44,8 +44,8 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.7,
-    "temps_total_min": 18.33
+    "qualitat_mitjana": 0.52,
+    "temps_total_min": 3.61
   },
   "errors": [
     "[15:31:41] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
@@ -105,7 +105,21 @@
     "[17:59:51] Error chunk 14: [Errno 32] Broken pipe",
     "[17:59:51] Error chunk 17: [Errno 32] Broken pipe",
     "[17:59:51] Error chunk 18: [Errno 32] Broken pipe",
-    "[17:59:51] Error fatal: [Errno 32] Broken pipe"
+    "[17:59:51] Error fatal: [Errno 32] Broken pipe",
+    "[18:10:30] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:11:20] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:13:17] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:15:41] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:16:30] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:17:20] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:22:39] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:23:27] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:25:51] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:26:37] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:29:48] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:30:37] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:33:34] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:34:18] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[17:35:02] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
