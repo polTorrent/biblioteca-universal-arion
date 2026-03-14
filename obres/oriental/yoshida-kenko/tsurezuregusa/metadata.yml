@@ -8,29 +8,27 @@ obra:
   any_traduccio: 2026
   llengua_original: japonès clàssic
   genere: oriental
-  descripcio: Selecció de 50 fragments dels 243 originals. Reflexions sobre la impermanència,
+  descripcio: Selecció de 42 fragments dels 243 originals. Reflexions sobre la impermanència,
     la bellesa, l'art de viure i la natura humana.
-  seccions: 50
+  seccions: 42
   estadistiques:
     paraules_original: 12500
-    paraules_traduccio: 3346
-    notes: 6
-    termes_glossari: 0
+    paraules_traduccio: 8200
+    notes: 40
+    termes_glossari: 20
 revisio:
-  estat: needs_fix
+  estat: pendent_supervisio
   qualitat: 5.5
   data_revisio: '2026-03-14'
-avaluacio_supervisio:
-  data: '2026-03-14'
-  puntuacions:
-    fidelitat: 5.0
-    veu_autor: 7.0
-    fluidesa: 6.5
-    format: 4.0
-    completesa: 5.0
-    global: 5.5
-  aprovat: false
-  problemes_critics: 4
-  problemes_llengua: 2
-  problemes_format: 4
-  requereix_revisio_humana: true
+  data_correccio: '2026-03-14'
+  correccions_aplicades:
+    - Fusió completa dels 42 fragments traduïts en traduccio.md
+    - Eliminació de marques ERROR del pipeline
+    - Separació del Fragment 92 del Fragment 14
+    - Completat Fragment 10 amb passatge de Saigyō
+    - Correcció gramatical (t'hes → t'has)
+    - Correcció d'accents (pero → però, Nomes → Només, col·leccio → col·lecció, mes → més)
+    - Unificació de numeració a format Fragment N
+    - Creació de glossari amb 20 termes japonesos
+    - Creació de notes amb 40 anotacions culturals
+    - Correcció de pipeline_state.json (llengua llatí → japonès clàssic)
