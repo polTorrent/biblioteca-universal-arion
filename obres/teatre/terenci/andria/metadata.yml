@@ -1,16 +1,37 @@
+obra:
+  titol: "Andria"
+  titol_original: "Andria"
+  autor: "Terenci"
+  autor_original: "Publius Terentius Afer"
+  traductor: "Biblioteca Arion"
+  any_original: "166 aC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  descripcio: "Primera comèdia de Terenci, basada en l'Andria i la Perínthia de Menandre. Tracta dels enredos amorosos del jove Pàmfil, el seu pare Simo, i la misteriosa dona d'Andros."
+seccions: 5
+estadistiques:
+  paraules_original: 9500
+  paraules_traduccio: 1200
+  notes: 15
+  termes_glossari: 0
+revisio:
+  estat: "incompleta"
+  qualitat: 3.0
+  data_revisio: "2026-03-14"
+  comentari: "Només traduït el pròleg i inici Acte I (~5-10%). Falten Actes II-V."
 avaluacio_final:
-  data: '2026-03-14T03:39:43.801269'
+  data: "2026-03-14"
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 19
-  errors_critics: 0
-  errors_alts: 0
+    fidelitat: 6.5
+    veu_autor: 6.0
+    fluidesa: 7.0
+    correccio_linguistica: 7.0
+    coherencia: 3.0
+    global: 3.0
+  total_errors: 6
+  errors_critics: 2
+  errors_alts: 4
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 18
+  correccions_pendents: 6
