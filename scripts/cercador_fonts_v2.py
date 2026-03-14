@@ -276,6 +276,14 @@ WIKISOURCE_PAGES: dict[str, dict[str, tuple[str, str]]] = {
     "terence": {
         "andria": ("la", "Andria"),
     },
+    "sor juana": {
+        "primero sueño": ("es", "Primero Sueño"),
+        "primero sueno": ("es", "Primero Sueño"),
+    },
+    "sor juana inés de la cruz": {
+        "primero sueño": ("es", "Primero Sueño"),
+        "primero sueno": ("es", "Primero Sueño"),
+    },
     "kamo no chomei": {
         "hojoki": ("ja", "方丈記"),
     },
@@ -1002,6 +1010,8 @@ class CercadorFontsV2:
             "xinès clàssic": ["zh", "zh-classical", "en"],
             "rus": ["ru"],
             "sànscrit": ["sa", "en"],
+            "castellà": ["es", "en"],
+            "espanyol": ["es", "en"],
             "hongarès": ["hu"],
             "àrab": ["ar", "en"],
             "suec": ["sv"],
