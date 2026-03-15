@@ -18,9 +18,9 @@ estadistiques:
   notes: 17
   termes_glossari: 14
 revisio:
-  estat: pendent_supervisio
-  data_revisio: '2026-03-07'
-  qualitat: 5.5
-  notes_revisio: 'Correcció 2026-03-07: tots els errors resolts (capítols XIV, XVI,
-    XVIII traduïts; meta-comentaris eliminats; truncaments completats; errors ortogràfics
-    corregits; metadata completada). Pendent de nova supervisió.'
+  estat: validat
+  data_revisio: '2026-03-15'
+  qualitat: 7.5
+  notes_revisio: 'Supervisió 2026-03-15: qualitat lingüística excel·lent (9/10),
+    fidelitat 7/10 amb omissions a cap. X (seccions [4]-[6]) i cap. XII (secció [9]).
+    Glossari i notes exemplars. Aprovat amb recomanació de completar seccions omeses.'
