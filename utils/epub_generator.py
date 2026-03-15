@@ -139,7 +139,9 @@ class GeneradorEPUB:
         yml = self.obra_path / "metadata.yml"
         if yml.exists():
             with open(yml, "r", encoding="utf-8") as f:
-                self.metadata = yaml.safe_load(f) or {}
+                raw = yaml.safe_load(f)
+            if isinstance(raw, dict):
+                self.metadata = raw
         self.obra_data = self.metadata.get("obra", {})
 
     def _llegir_text(self, nom: str) -> str:
@@ -152,8 +154,9 @@ class GeneradorEPUB:
         fitxer = self.obra_path / "glossari.yml"
         if fitxer.exists():
             with open(fitxer, "r", encoding="utf-8") as f:
-                data = yaml.safe_load(f) or {}
-            return data.get("termes", [])
+                data = yaml.safe_load(f)
+            if isinstance(data, dict):
+                return data.get("termes", [])
         return []
 
     # ── Conversió Markdown → XHTML ───────────────────────────────────────
@@ -407,6 +410,9 @@ class GeneradorEPUB:
 
     def generar(self, output_path: str | Path | None = None) -> Path:
         """Genera l'EPUB i retorna el Path del fitxer creat."""
+        if not self.obra_path.is_dir():
+            raise FileNotFoundError(f"No existeix el directori de l'obra: {self.obra_path}")
+
         self._llegir_metadata()
 
         titol = self.obra_data.get("titol", self.obra_path.name.capitalize())
