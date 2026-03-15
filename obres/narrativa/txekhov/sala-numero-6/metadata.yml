@@ -9,9 +9,9 @@ obra:
   estadistiques:
     paraules_traduccio: 16463
 revisio:
-  estat: revisat
-  data_revisio: '2026-03-07'
-  qualitat: 8.0
+  estat: necessita_correccio
+  data_revisio: '2026-03-15'
+  qualitat: 4.0
 avaluacio_final:
   data: '2026-03-07T14:41:52.316657'
   puntuacions:
