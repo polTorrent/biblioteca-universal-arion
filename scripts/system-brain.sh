@@ -877,7 +877,7 @@ run_daily() {
     check_web_health
     track_evolution
     propose_features
-    run_consell_editorial
+    # run_consell_editorial  # DESACTIVAT per petició de l'usuari (15/03/2026) - PROU obres noves
     run_millora_continua
 
     date +%s > "$LAST_RUN_FILE"

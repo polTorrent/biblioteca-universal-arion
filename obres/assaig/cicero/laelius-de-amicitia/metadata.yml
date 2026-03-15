@@ -15,8 +15,8 @@ estadistiques:
   notes: 18
   termes_glossari: 11
 revisio:
-  estat: "corregit"
-  data_revisio: "2026-03-07"
-  qualitat: 5.5
+  estat: "validat"
+  data_revisio: "2026-03-15"
+  qualitat: 7.5
   supervisor: "Supervisió automàtica"
-  comentari: "Correcció completa: afegides 85 seccions numerades, glossari amb 11 termes filosòfics, 18 notes històriques, introducció i bibliografia. Corregits errors lingüístics i millorats calcs del llatí."
+  comentari: "Validat amb 7.5/10. Bon nivell literari del català, 85 seccions completes, glossari consistent, 18 notes, introducció i bibliografia. Problemes menors: §LXXXI falta etimologia amor/amicitia; §XXXIII inconsistència noms llatins."

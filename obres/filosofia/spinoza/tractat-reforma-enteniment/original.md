@@ -1,4 +1,3 @@
-# Tractatus de intellectus emendatione, et de via qua optime in veram rerum cognitionem dirigitur
 **Autor:** Spinoza
 **Font:** [wikisource](https://la.wikisource.org/wiki/Tractatus%20de%20intellectus%20emendatione%2C%20et%20de%20via%20qua%20optime%20in%20veram%20rerum%20cognitionem%20dirigitur)
 **Llengua:** llatí

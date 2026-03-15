@@ -1,0 +1,41 @@
+obra:
+  titol: Tractat de la reforma de l'enteniment
+  titol_original: Tractatus de intellectus emendatione
+  autor: Spinoza
+  autor_original: Baruch Spinoza
+  traductor: Editorial Clàssica
+  any_original: '1677'
+  any_traduccio: 2026
+  llengua_original: llatí
+  descripcio: Tractat incomplet de Spinoza sobre el mètode per dirigir l'enteniment
+    cap al coneixement veritable, escrit cap al 1662 i publicat pòstumament.
+  categoria: filosofia
+  genere: tractat filosòfic
+  estadistiques:
+    paraules_traduccio: 8338
+seccions: 11
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: revisat
+  qualitat: 6.67
+  data_revisio: '2026-03-15'
+avaluacio_final:
+  data: '2026-03-15T08:53:49.645814'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 46
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 33
