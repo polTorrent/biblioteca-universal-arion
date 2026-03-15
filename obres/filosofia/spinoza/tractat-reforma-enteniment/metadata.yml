@@ -12,7 +12,7 @@ obra:
   categoria: filosofia
   genere: tractat filosòfic
   estadistiques:
-    paraules_traduccio: 8338
+    paraules_traduccio: 9510
 seccions: 11
 estadistiques:
   paraules_original: 0
@@ -21,10 +21,10 @@ estadistiques:
   termes_glossari: 0
 revisio:
   estat: revisat
-  qualitat: 6.67
+  qualitat: 5.4
   data_revisio: '2026-03-15'
 avaluacio_final:
-  data: '2026-03-15T08:53:49.645814'
+  data: '2026-03-15T09:17:03.532701'
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
@@ -32,10 +32,10 @@ avaluacio_final:
     correccio_linguistica: 0.0
     coherencia: 0.0
     global: 0.0
-  total_errors: 46
+  total_errors: 56
   errors_critics: 0
   errors_alts: 0
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 33
+  correccions_pendents: 40

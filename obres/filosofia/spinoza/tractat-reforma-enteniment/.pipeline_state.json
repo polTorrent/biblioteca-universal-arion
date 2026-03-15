@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-15T04:08:50.302329",
-    "ultima_activitat": "2026-03-15T09:11:11.261207"
+    "ultima_activitat": "2026-03-15T09:16:59.227315"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -78,7 +78,7 @@
       "chunk_55",
       "chunk_56"
     ],
-    "en_curs": "chunk_54",
+    "en_curs": null,
     "pendents": [
       "chunk_57",
       "chunk_58",
@@ -102,8 +102,8 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 1.29,
-    "temps_total_min": 22.83
+    "qualitat_mitjana": 1.43,
+    "temps_total_min": 21.82
   },
   "errors": [
     "[04:12:07] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
