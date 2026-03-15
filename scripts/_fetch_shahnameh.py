@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Fetch Rostam & Sohrab from Persian Wikisource."""
+import html as html_mod
 import json
 import re
+import sys
 import urllib.request
 import urllib.parse
 from pathlib import Path
@@ -23,37 +25,32 @@ BASE = "https://fa.wikisource.org/w/api.php"
 OBRA_DIR = Path("obres/narrativa/firdawsi/shahnameh-rostam-i-sohrab")
 
 
-def html_to_text(html):
-    text = re.sub(r"<style[^>]*>.*?</style>", "", html, flags=re.DOTALL)
+def html_to_text(raw_html: str) -> str:
+    text = re.sub(r"<style[^>]*>.*?</style>", "", raw_html, flags=re.DOTALL)
     text = re.sub(r"<script[^>]*>.*?</script>", "", text, flags=re.DOTALL)
     text = re.sub(r"<br\s*/?>", "\n", text)
     text = re.sub(r"<p[^>]*>", "\n\n", text)
     text = re.sub(r"</p>", "", text)
     text = re.sub(r"<[^>]+>", "", text)
-    text = text.replace("&amp;", "&")
-    text = text.replace("&lt;", "<")
-    text = text.replace("&gt;", ">")
-    text = text.replace("&nbsp;", " ")
-    text = text.replace("&#160;", " ")
-    text = re.sub(r"&#\d+;", "", text)
+    text = html_mod.unescape(text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text.strip()
 
 
-def fetch_section(page_title):
+def fetch_section(page_title: str) -> str:
     params = {"action": "parse", "page": page_title, "prop": "text", "format": "json"}
     url = f"{BASE}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(url, headers={"User-Agent": "BibliotecaArion/1.0"})
     with urllib.request.urlopen(req, timeout=20) as resp:
         data = json.loads(resp.read().decode("utf-8"))
-        html = data.get("parse", {}).get("text", {}).get("*", "")
-        if html:
-            return html_to_text(html)
+        raw_html = data.get("parse", {}).get("text", {}).get("*", "")
+        if raw_html:
+            return html_to_text(raw_html)
     return ""
 
 
-def main():
-    all_parts = []
+def main() -> None:
+    all_parts: list[str] = []
     for sec in SECTIONS:
         short = sec.split("/")[-1]
         print(f"Fetching: {short}...", end=" ", flush=True)
@@ -69,7 +66,7 @@ def main():
 
     if not all_parts:
         print("ERROR: No sections fetched!")
-        return
+        sys.exit(1)
 
     combined = "\n\n---\n\n".join(all_parts)
 
