@@ -1143,7 +1143,7 @@
         "ctext",
         "wikisource"
       ],
-      "status": "pending",
+      "status": "in_progress",
       "obra_dir": "obres/filosofia/mengzi/seleccio-7-capitols",
       "notes": "Consell Editorial 2026-03-14. Mengzi (孟子, c. 372-289 aC), segon gran mestre del confucianisme, conegut com 'el segon sant'. El llibre Mengzi recull els seus diàlegs i ensenyaments: la bondat innata de la natura humana (性善, xìng shàn), el govern benevolent (仁政, rénzhèng), el dret del poble a rebel·lar-se contra tirans i la distinció entre rei i tirà. Selecció de 7 capítols representatius que cobreixen ètica, política i natura humana. El catàleg conté Confuci (confucianisme), Laozi i Zhuangzi (taoisme) i Mozi (moisme), però falta Mengzi, el segon pilar confucià que va sistematitzar i expandir la doctrina del Mestre. Cap traducció catalana. Text xinès clàssic complet a CText (Chinese Text Project) i Wikisource xinès."
     },
@@ -1267,6 +1267,51 @@
       "status": "pending",
       "obra_dir": "obres/teatre/moliere/el-misantrop",
       "notes": "Consell Editorial 2026-03-14. Jean-Baptiste Poquelin, dit Molière (1622–1673), el més gran dramaturg de la llengua francesa i una de les figures centrals del teatre universal. Le Misanthrope (1666) és la seva obra mestra de la 'gran comèdia': Alceste, home d'una sinceritat intransigent, es debat entre el seu odi a la hipocresia social i el seu amor per Célimène, encarnació de l'enginy cortesà i la superficialitat. Cinc actes en alexandrins d'una perfecció formal absoluta. L'obra planteja el dilema etern entre autenticitat i sociabilitat, entre la virtut inflexible i el compromís necessari per viure en societat — tema que anticipa Rousseau i ressona fins avui. El catàleg conté teatre grec (Sòfocles, Eurípides, Aristòfanes, Ésquil), romà (Plaut, Terenci), japonès (Zeami, Chikamatsu), nòrdic (Ibsen, Strindberg) i anglès (Shakespeare), però cap dramaturg FRANCÈS — una absència notable donat el pes de la tradició teatral francesa. Molière és la porta d'entrada natural. Cap traducció catalana recent accessible. Text francès complet a Wikisource francesa i Project Gutenberg."
+    },
+    {
+      "autor": "Stefan Zweig",
+      "titol": "Schachnovelle (La novel·la d'escacs)",
+      "llengua": "alemany",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/stefan-zweig/schachnovelle",
+      "notes": "Consell Editorial 2026-03-15. Stefan Zweig (1881–1942), mestre de la Novelle psicològica i un dels escriptors més llegits del segle XX. Schachnovelle (1942, publicada pòstumament) és la seva darrera obra i la seva obra mestra: a bord d'un transatlàntic, el Dr. B., un advocat austríac que va sobreviure a l'aïllament de la Gestapo estudiant un manual d'escacs fins a la bogeria, desafia Mirko Czentovic, campió mundial d'escacs d'intel·ligència limitada però geni mecànic del tauler. Duet psicològic entre dos tipus d'intel·ligència: la intuïtiva-cultural contra la mecànica-savant, la civilització europea en crisi contra la força bruta. Escrita a Petrópolis, Brasil, poc abans del suïcidi de Zweig, és un testament literari sobre la destrucció de la cultura europea pel totalitarisme. El catàleg conté narrativa alemanya del XIX (Kafka, Hesse, Goethe) però cap del segle XX: Zweig aporta la Mitteleuropa desapareguda, la prosa psicològica vienesa, el darrer alè de l'humanisme centreeuropeu. Cap traducció catalana publicada. Text alemany al domini públic (†1942, vida+70=2013): disponible a Project Gutenberg i Wikisource alemanya."
+    },
+    {
+      "autor": "Tucídides",
+      "titol": "L'oració fúnebre de Pèricles (Història, Llibre II, 34-46)",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/assaig/tucidides/oracio-funebre-pericles",
+      "notes": "Consell Editorial 2026-03-15. Tucídides (Θουκυδίδης, c. 460–400 aC), historiador atenenc, pare de la historiografia crítica i de la ciència política. L'oració fúnebre de Pèricles (Ἐπιτάφιος λόγος, Llibre II, capítols 34-46 de la Història de la guerra del Peloponès) és el discurs polític més influent de la civilització occidental: pronunciat el 431 aC en honor dels caiguts del primer any de guerra, Pèricles defineix els valors d'Atenes — la democràcia, la llibertat individual, la igualtat davant la llei, el coratge, la bellesa sense extravagància, el saber sense feblesa. Cada frase ha ressonat durant 2.400 anys: Lincoln a Gettysburg, Churchill, Obama. El catàleg té abundant filosofia grega (Plató, Aristòtil, Epictetus, Epicur, Heraclit) i retòrica (Pseudo-Longí, Ciceró) però cap historiografia: Tucídides aporta la prosa política en estat pur, la mirada freda i analítica sobre el poder humà. Text breu, dens, ideal per a edició bilingüe. Cap traducció catalana moderna accessible. Text grec complet a Perseus Digital Library i Wikisource grega."
+    },
+    {
+      "autor": "Natsume Sōseki",
+      "titol": "Yume Jūya (Deu nits de somnis)",
+      "llengua": "japonès",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "pending",
+      "obra_dir": "obres/narrativa/natsume-soseki/yume-juya",
+      "notes": "Consell Editorial 2026-03-15. Natsume Sōseki (夏目漱石, 1867–1916), el novel·lista més important del Japó modern, el rostre dels bitllets de 1.000 iens durant dècades. Yume Jūya (夢十夜, 'Deu nits de somnis', 1908) és un cicle de deu relats onírics publicats per entregues al diari Asahi Shimbun: cada nit comença amb 'こんな夢を見た' ('Vaig tenir aquest somni') i desplega una visió entre el fantàstic, l'al·legòric i el surrealista — una dona que demana ser enterrada i esperar cent anys perquè floreixi un lliri blanc (1a nit), un samurai que ha de trobar la il·luminació o suïcidar-se (2a), un home que porta el seu fill cec a esquena i descobreix que l'infant és el fantasma d'un assassinat (3a), porcs que marxen cap al precipici (10a). Escrit vint anys abans del Manifest Surrealista de Breton, anticipa les tècniques del somni literari europeu. El catàleg conté abundant literatura japonesa clàssica (Bashō, Kamo no Chōmei, Sei Shōnagon, Yoshida Kenkō, Zeami, Chikamatsu) però cap prosa japonesa moderna: Sōseki aporta el pont entre la tradició i la modernitat, l'escriptor que va inventar la novel·la japonesa moderna després d'estudiar a Londres. Cap traducció catalana. Text japonès complet a Aozora Bunko (青空文庫) i Wikisource japonesa."
     }
   ]
 }
