@@ -1,0 +1,64 @@
+Data: 2026-03-15
+Puntuació: 4.0/10
+Supervisió: Claude (supervisió automàtica)
+
+PROBLEMES CRÍTICS
+=================
+
+1. PASSATGES DUPLICATS (crític)
+   - Capítol IV apareix DOS cops (línia ~48 i ~54) amb traduccions lleugerament diferents del mateix text
+   - Passatge sobre medicina/Pirogov/sistema antisèptic apareix duplicat (línia ~123 i ~135)
+   - Capítol VIII apareix dos cops (línia ~131 i ~142)
+   - Conversa sobre el poble entre Ivan Dmitritx i Andrei apareix duplicada (línia ~163 i ~205)
+   - Escena de l'examen mental apareix duplicada (línia ~267 i ~330)
+
+2. ARTEFACTES DE CODI/JSON AL TEXT (crític)
+   - Línia ~267-268: apareix "'`'json" i "'`'" en brut dins la traducció
+   - Línies ~293-297: notes d'edició en brut dins el text ("Canviant 'durant hores senceres'...", "Simplificant...", "Naturalitzant...", "Reordenant...", "Canviant...")
+   - Línia ~302: dades JSON en brut ("Ievgueni Fiodòrovitx": "Ievgueni Fiodòrovitx")
+
+3. INCONSISTÈNCIA GREU EN NOMS PROPIS (crític)
+   - Protagonista: Andrei Iefímitx / Andrey Yefimitch / Andrei Efímitx / Andréi Iefімітx (amb caràcters ciríl·lics!)
+   - Ivan: Ivan Dmitritx / Ivan Dmítritx / Ivan Dmitritch / Ivan Dmítritch / Ivan Dmitrikh
+   - Amic: Mikhaïl Averiànitx / Mihail Averyanitch / Mikhaíl Averiànitx / Mikhaïl Averianítx
+   - Criada: Dariuixka / Darúixka / Dariúixka / Darià
+   - Ajudant: Serguei Serguéitx / Serguei Sergueïtx / Serguei Serguèievitx
+   - Jueu: Moiseika / Moisseika
+   - Doctor jove: Hobotov / Khobótov
+
+4. CARÀCTERS CIRÍL·LICS DINS EL TEXT CATALÀ (crític)
+   - Línia ~353: "Iefiмітx" conté caràcters ciríl·lics м і т
+
+PROBLEMES IMPORTANTS
+====================
+
+5. FORMAT DE DIÀLEG INCONSISTENT
+   - Alguns diàlegs usen «guillemets» francesos
+   - Altres usen "cometes" angleses
+   - Altres usen format directe amb em-dash (—)
+   - Cal unificar a un sol format (preferentment —em-dash per al català)
+
+6. METADATA INCOMPLETA I CONTRADICTÒRIA
+   - Camp 'descripcio' buit
+   - Falten: titol_original, autor_original, any_original, seccions, paraules_original, notes, termes_glossari
+   - avaluacio_final mostra totes les puntuacions a 0.0, 140 errors, aprovat: false
+   - Però revisio.estat diu "revisat" i qualitat: 8.0 — contradictori
+
+7. ERROR GRAMATICAL
+   - Línia 4: "Traduït del anglès" hauria de ser "Traduït de l'anglès"
+
+8. CAPÍTOLS INCOMPLETS O DESORDENATS
+   - Falten fragments de diversos capítols
+   - La narrativa salta entre escenes sense continuïtat clara
+   - Possible que chunks de traducció s'hagin fusionat malament
+
+ACCIONS NECESSÀRIES
+===================
+1. Eliminar TOTS els passatges duplicats (mantenir la millor versió)
+2. Eliminar artefactes de codi/JSON
+3. Unificar transliteració de noms (proposat: Andrei Iefímitx, Ivan Dmítritx, Mikhaïl Averiànitx, Dariúixka, Serguei Serguéitx, Moiseika, Khobótov)
+4. Corregir caràcters ciríl·lics
+5. Unificar format de diàleg (em-dash —)
+6. Completar metadata.yml
+7. Revisar continuïtat narrativa i omplir buits
+8. Corregir "del anglès" → "de l'anglès"
