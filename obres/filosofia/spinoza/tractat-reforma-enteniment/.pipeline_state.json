@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-15T04:08:50.302329",
-    "ultima_activitat": "2026-03-15T09:02:49.367048"
+    "ultima_activitat": "2026-03-15T09:07:18.375745"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -78,7 +78,7 @@
       "chunk_55",
       "chunk_56"
     ],
-    "en_curs": "chunk_43",
+    "en_curs": "chunk_50",
     "pendents": [
       "chunk_57",
       "chunk_58",
@@ -102,7 +102,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 1.16,
+    "qualitat_mitjana": 1.22,
     "temps_total_min": 22.83
   },
   "errors": [
@@ -253,7 +253,9 @@
     "[08:57:28] Error chunk 28: El CLI ha retornat una resposta buida (sense contingut)",
     "[08:58:58] Error chunk 33: El CLI ha retornat una resposta buida (sense contingut)",
     "[08:59:32] Error chunk 38: El CLI ha retornat una resposta buida (sense contingut)",
-    "[09:02:49] Error chunk 42: El CLI ha retornat una resposta buida (sense contingut)"
+    "[09:02:49] Error chunk 42: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:06:35] Error chunk 46: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:07:18] Error chunk 49: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[04:10:55] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",

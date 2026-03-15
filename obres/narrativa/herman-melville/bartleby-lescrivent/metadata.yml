@@ -21,32 +21,26 @@ estadistiques:
   notes: 15
   termes_glossari: 17
 revisio:
-  estat: revisat
-  data_revisio: '2026-03-01'
-  qualitat: 6.7
+  estat: validat
+  data_revisio: '2026-03-15'
+  qualitat: 7.5
 avaluacio_final:
-  data: '2026-03-01'
+  data: '2026-03-15'
   puntuacions:
-    fidelitat: 6.5
-    veu_autor: 7.5
-    fluidesa: 7.0
-    correccio_linguistica: 6.5
-    coherencia: 6.0
-    global: 6.7
-  total_errors: 15
-  errors_critics: 3
-  errors_alts: 5
-  aprovat: false
+    fidelitat: 8.0
+    veu_autor: 8.0
+    fluidesa: 7.5
+    correccio_linguistica: 7.5
+    coherencia: 7.0
+    global: 7.5
+  total_errors: 2
+  errors_critics: 0
+  errors_alts: 0
+  errors_menors: 2
+  aprovat: true
   requereix_revisio_humana: false
-  correccions_aplicades: 0
-  correccions_pendents: 15
-  detall_errors_critics:
-    - "Omissió paràgraf Imprimis (John Jacob Astor)"
-    - "Omissió paràgraf arribada de Bartleby"
-    - "Inconsistència noms personatges (Turkey/Gall Dindi, Nippers/Pinces/Tenalles, Ginger Nut/Galeta de Gingebre/Gallet)"
-  detall_errors_alts:
-    - "Castellanisme: manzana (ha de ser illa)"
-    - "Errata: m'constrenyia (ha de ser em constrenyia)"
-    - "Inconsistència marques diàleg (guions / cometes llatines / cometes angleses)"
-    - "Inconsistència registre tu/vós"
-    - "Inconsistència terme screen (biombo/paravent/para-vent)"
+  correccions_aplicades: 6
+  correccions_pendents: 0
+  millores_recomanades:
+    - "Unificar marques de diàleg (alterna guió llarg, cometes llatines i cometes angleses)"
+    - "Corregir cometes trencades al final del text"
