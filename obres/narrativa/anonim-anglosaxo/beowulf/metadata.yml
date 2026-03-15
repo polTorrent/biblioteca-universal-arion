@@ -1,0 +1,20 @@
+obra:
+  titol: "Beowulf (selecció)"
+  titol_original: "Bēowulf"
+  autor: "Anònim anglosaxó"
+  autor_original: "Anonymous"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 700-1000 dC"
+  any_traduccio: 2026
+  llengua_original: "anglès antic"
+  descripcio: "Poema èpic anglosaxó, la composició literària més important en anglès antic. Narra les gestes de l'heroi geat Beowulf contra el monstre Grendel, la seva mare i un drac. Selecció dels passatges més representatius."
+seccions: 23
+estadistiques:
+  paraules_original: 8742
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
