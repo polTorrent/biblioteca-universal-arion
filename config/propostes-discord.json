@@ -5,7 +5,7 @@
     "1772837034"
   ],
   "config": {
-    "auto_processar": true,
+    "auto_processar": false,
     "notificar_usuari": true,
     "prefix_tasca": "proposta"
   }

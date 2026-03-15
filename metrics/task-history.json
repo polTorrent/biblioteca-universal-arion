@@ -425,10 +425,6 @@
   "publish_python3-scriptsbuildpy": {
     "events": [
       {
-        "timestamp": 1773442803.8834207,
-        "result": "created"
-      },
-      {
         "timestamp": 1773450006.0358794,
         "result": "created"
       },
@@ -502,6 +498,10 @@
       },
       {
         "timestamp": 1773550804.003655,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773556564.8137887,
         "result": "created"
       }
     ],
@@ -1221,10 +1221,6 @@
   "fetch_error-no-sha-pogut-obtenir-originalmd": {
     "events": [
       {
-        "timestamp": 1773472184.7990777,
-        "result": "created"
-      },
-      {
         "timestamp": 1773474087.6603768,
         "result": "created"
       },
@@ -1298,6 +1294,10 @@
       },
       {
         "timestamp": 1773550803.573489,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773556564.3959248,
         "result": "created"
       }
     ],
@@ -1528,6 +1528,10 @@
       },
       {
         "timestamp": 1772859602.988458,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773560203.5493574,
         "result": "created"
       }
     ],
@@ -2865,6 +2869,15 @@
       },
       {
         "timestamp": 1773550803.4136243,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_bartleby-lescrivent": {
+    "events": [
+      {
+        "timestamp": 1773556564.2161245,
         "result": "created"
       }
     ],
