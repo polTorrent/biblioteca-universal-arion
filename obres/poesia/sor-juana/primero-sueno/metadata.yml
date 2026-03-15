@@ -11,31 +11,13 @@ obra:
     mestra de Sor Juana. Narra el viatge de l'ànima durant el somni nocturn, que intenta
     comprendre la totalitat de l'univers mitjançant la raó.
   genere: poesia
-  estadistiques:
-    paraules_traduccio: 1170
 seccions: 1
 estadistiques:
-  paraules_original: 5200
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 4861
+  paraules_traduccio: 4794
+  notes: 12
+  termes_glossari: 15
 revisio:
   estat: revisat
-  qualitat: 0.0
+  qualitat: 7.5
   data_revisio: '2026-03-15'
-avaluacio_final:
-  data: '2026-03-15T00:12:48.256595'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 28
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 27
