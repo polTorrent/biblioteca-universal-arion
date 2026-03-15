@@ -1,0 +1,49 @@
+data_revisio: 2026-03-15
+puntuacio: 6.5
+revisor: supervisio-automatica
+
+problemes:
+  - gravetat: critica
+    descripcio: >
+      Capitol IX de la Primera Part completament absent. Falta tot el passatge
+      sobre destruccio i caos, l'home com a animal constructor, els formiguers,
+      el "dos per dos fa cinc" com a alternativa, i la reflexio sobre el proces
+      vs l'objectiu. Aproximadament 2.000 paraules de l'original omeses.
+
+  - gravetat: alta
+    descripcio: >
+      Numeracio errada dels capitols a la Primera Part: el Capitol VI (sobre la
+      mandra com a carrera) esta etiquetat com a "Capitol VII", produint dos
+      "Capitol VII" seguits. Cal renumerar: l'actual primer "Capitol VII" (linia 81)
+      ha de ser "Capitol VI", i l'actual segon "Capitol VII" (linia 88) es correcte.
+
+  - gravetat: moderada
+    descripcio: >
+      Volum traduit insuficient: 25.445 paraules vs 35.798 de l'original (71%).
+      Tot i la millora respecte a la revisio anterior (63%), encara falta un 29%
+      del text. A mes del Capitol IX absent, hi ha passatges condensats dins de
+      capitols existents que contribueixen al deficit.
+
+  - gravetat: menor
+    descripcio: >
+      metadata.yml desactualitzat: paraules_traduccio indica 22.627 pero el
+      recompte real es 25.445. Cal actualitzar.
+
+accions_requerides:
+  - Traduir completament el Capitol IX de la Primera Part (passatge sobre destruccio, caos, formiguers, dos per dos fa cinc)
+  - Corregir numeracio: primer "Capitol VII" -> "Capitol VI"
+  - Revisar capitols existents per detectar passatges condensats o resumits
+  - Actualitzar estadistiques a metadata.yml (paraules_traduccio: 25445)
+  - Objectiu: arribar al 90-100% del volum original
+
+millores_respecte_revisio_anterior:
+  - Epigraf de Nekrassov afegit correctament a la Segona Part
+  - Capitol XI ampliat amb el passatge metaliterari (Heine, Rousseau, sinceritat)
+  - Volum augmentat del 63% al 71%
+
+nota_positiva: >
+  La qualitat linguistica del catala es excellent (8.5/10). La prosa es natural i
+  idiomatica, el to neurotic i autoconscient del narrador es transmet amb gran
+  fidelitat, els dialogs interiors son vius i convincents. El glossari es un dels
+  millors del cataleg. Les notes del traductor son academicament solides. El
+  problema principal continua sent d'exhaustivitat, no de qualitat.
