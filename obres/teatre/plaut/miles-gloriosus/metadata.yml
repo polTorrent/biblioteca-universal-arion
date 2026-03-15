@@ -1,0 +1,22 @@
+obra:
+  titol: "Miles Gloriosus (El soldat fanfarró)"
+  titol_original: "Miles Gloriosus"
+  autor: "Plaut"
+  autor_original: "Titus Maccius Plautus"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 205 aC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  categoria: "teatre"
+  descripcio: "Comèdia llatina sobre un soldat fanfarró i vanitós que és enganyat pels seus esclaus. Una de les obres més populars de Plaut, model per a la commedia dell'arte i el teatre còmic europeu posterior."
+  font: "https://www.thelatinlibrary.com/plautus/miles.shtml"
+seccions: 5
+estadistiques:
+  paraules_original: 13137
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
