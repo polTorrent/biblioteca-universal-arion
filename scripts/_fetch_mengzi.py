@@ -6,6 +6,7 @@ import re
 import time
 import urllib.parse
 import urllib.request
+from pathlib import Path
 
 CHAPTERS = [
     ("梁惠王上", "Liang Hui Wang I"),
@@ -27,8 +28,8 @@ def fetch_chapter(ch_zh: str) -> str | None:
         f"?action=parse&page={urllib.parse.quote(page)}&prop=wikitext&format=json"
     )
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 BibliotecaArion/1.0"})
-    resp = urllib.request.urlopen(req, timeout=20)
-    data = json.loads(resp.read())
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        data = json.loads(resp.read())
     if "parse" not in data:
         return None
     wikitext = data["parse"]["wikitext"]["*"]
@@ -36,7 +37,7 @@ def fetch_chapter(ch_zh: str) -> str | None:
     wikitext = re.sub(r"\{\{[^}]*\}\}", "", wikitext)
     wikitext = re.sub(r"\[\[Category:[^\]]*\]\]", "", wikitext)
     wikitext = re.sub(r"\[\[File:[^\]]*\]\]", "", wikitext)
-    wikitext = re.sub(r"<ref[^>]*>.*?</ref>", "", wikitext)
+    wikitext = re.sub(r"<ref[^>]*>.*?</ref>", "", wikitext, flags=re.DOTALL)
     wikitext = re.sub(r"<ref[^/]*/>", "", wikitext)
     return wikitext.strip()
 
@@ -64,6 +65,7 @@ def main():
         time.sleep(0.5)
 
     output = "\n".join(parts)
+    Path(OUTPUT).parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT, "w", encoding="utf-8") as f:
         f.write(output)
     print(f"\nTotal: {len(output)} chars written to {OUTPUT}")
