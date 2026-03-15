@@ -1,0 +1,21 @@
+obra:
+  titol: "Selecció de 7 capítols"
+  titol_original: "孟子"
+  autor: "Mengzi (Menci)"
+  autor_original: "孟子"
+  traductor: "Editorial Clàssica"
+  any_original: "c. 300 aC"
+  any_traduccio: 2026
+  llengua_original: "xinès"
+  descripcio: "Selecció dels set capítols superiors del Mengzi, text fonamental del confucianisme que recull els diàlegs i ensenyaments de Menci sobre la natura humana, el govern benevolent i la moralitat."
+  font: "https://zh.wikisource.org/wiki/孟子"
+seccions: 7
+estadistiques:
+  paraules_original: 598
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: ""
