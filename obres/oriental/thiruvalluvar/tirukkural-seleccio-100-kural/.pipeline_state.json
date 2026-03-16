@@ -1,0 +1,54 @@
+{
+  "sessio_id": "thiruvalluvar-tirukkuṛaḷ-(selecció-2026-03-16",
+  "obra": {
+    "autor": "Thiruvalluvar",
+    "titol": "Tirukkuṛaḷ (selecció: 100 kural)",
+    "llengua": "tàmil"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T20:54:15.451271",
+    "ultima_activitat": "2026-03-16T21:06:50.162564"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 8,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 12.58
+  },
+  "errors": [
+    "[20:56:27] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:57:05] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:58:44] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:59:25] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:01:09] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:03:05] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:05:07] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:05:45] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[20:54:57] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='tàmil', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
+    "[21:06:50] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}

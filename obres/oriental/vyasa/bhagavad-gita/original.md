@@ -1,5 +1,3 @@
-# Bhagavad Gītā — भगवद्गीता
-
 ## Selecció de 6 capítols
 
 **Autor**: Vyāsa (Vedavyāsa) — वेदव्यास
