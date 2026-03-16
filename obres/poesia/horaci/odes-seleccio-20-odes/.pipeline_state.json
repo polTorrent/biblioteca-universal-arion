@@ -1,0 +1,28 @@
+{
+  "sessio_id": "horaci-odes-(carmina)-—-sel-2026-03-16",
+  "obra": {
+    "autor": "Horaci",
+    "titol": "Odes (Carmina) — Selecció de 20 Odes",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T19:24:47.588134",
+    "ultima_activitat": "2026-03-16T19:25:42.015779"
+  },
+  "fase_actual": "glossari",
+  "fases_completades": [
+    "investigacio"
+  ],
+  "chunks": {
+    "total": 0,
+    "completats": [],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}
