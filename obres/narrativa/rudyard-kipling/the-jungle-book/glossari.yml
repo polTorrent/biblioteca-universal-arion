@@ -1,0 +1,153 @@
+# Glossari — The Jungle Book (Rudyard Kipling)
+# Termes clau: personatges, llocs i conceptes
+
+termes:
+  - original: "Mowgli"
+    traduccio: "Mowgli"
+    categoria: "personatge"
+    nota: "Nen criat per llops a la selva. El nom significa 'granota' (frog) segons Kipling."
+
+  - original: "Shere Khan"
+    traduccio: "Shere Khan"
+    categoria: "personatge"
+    nota: "El tigre coix, antagonista principal. 'Shere' deriva del hindi 'sher' (tigre)."
+
+  - original: "Baloo"
+    traduccio: "Baloo"
+    categoria: "personatge"
+    nota: "L'ós que ensenya la Llei de la Selva als cadells. Del hindi 'bhālū' (ós)."
+
+  - original: "Bagheera"
+    traduccio: "Bagheera"
+    categoria: "personatge"
+    nota: "La pantera negra, mentora de Mowgli. Del hindi 'bāgherā' (pantera)."
+
+  - original: "Akela"
+    traduccio: "Akela"
+    categoria: "personatge"
+    nota: "El llop solitari, líder de la manada de Seeonee."
+
+  - original: "Tabaqui"
+    traduccio: "Tabaqui"
+    categoria: "personatge"
+    nota: "El xacal, 'the Dish-licker' (el llepa-plats). Espia de Shere Khan."
+
+  - original: "Kaa"
+    traduccio: "Kaa"
+    categoria: "personatge"
+    nota: "La serp pitó de roca, aliada de Mowgli."
+
+  - original: "Hathi"
+    traduccio: "Hathi"
+    categoria: "personatge"
+    nota: "L'elefant salvatge. Del hindi 'hāthī' (elefant)."
+
+  - original: "Rikki-Tikki-Tavi"
+    traduccio: "Rikki-Tikki-Tavi"
+    categoria: "personatge"
+    nota: "La mangosta protagonista del conte homònim."
+
+  - original: "Nag"
+    traduccio: "Nag"
+    categoria: "personatge"
+    nota: "La cobra, antagonista de Rikki-Tikki-Tavi. Del hindi 'nāg' (cobra)."
+
+  - original: "Nagaina"
+    traduccio: "Nagaina"
+    categoria: "personatge"
+    nota: "La femella de cobra, parella de Nag."
+
+  - original: "Darzee"
+    traduccio: "Darzee"
+    categoria: "personatge"
+    nota: "L'ocell teixidor, aliat de Rikki-Tikki-Tavi. Del hindi 'darzī' (sastre)."
+
+  - original: "Kotick"
+    traduccio: "Kotick"
+    categoria: "personatge"
+    nota: "La foca blanca, protagonista de 'The White Seal'."
+
+  - original: "Toomai"
+    traduccio: "Toomai"
+    categoria: "personatge"
+    nota: "El jove mahout (cuidador d'elefants) protagonista de 'Toomai of the Elephants'."
+
+  - original: "Mother Wolf"
+    traduccio: "Mare Lloba"
+    categoria: "personatge"
+    nota: "Raksha, la lloba que adopta Mowgli."
+
+  - original: "Father Wolf"
+    traduccio: "Pare Llop"
+    categoria: "personatge"
+    nota: "El llop que acull Mowgli a la cova."
+
+  - original: "Gray Brother"
+    traduccio: "Germà Gris"
+    categoria: "personatge"
+    nota: "Un dels germans llop de Mowgli."
+
+  - original: "Bandar-Log"
+    traduccio: "Bandar-Log"
+    categoria: "grup"
+    nota: "El Poble dels Micos. Del hindi 'bandar' (mico) i 'log' (gent)."
+
+  - original: "Seeonee Pack"
+    traduccio: "Manada de Seeonee"
+    categoria: "grup"
+    nota: "La manada de llops que adopta Mowgli. Seeonee (Seoni) és un districte real de l'Índia central."
+
+  - original: "Gidur-log"
+    traduccio: "Gidur-log"
+    categoria: "grup"
+    nota: "El poble dels xacals. Del hindi 'gīdaṛ' (xacal) i 'log' (gent)."
+
+  - original: "The Jungle"
+    traduccio: "la Selva"
+    categoria: "lloc"
+    nota: "L'espai salvatge de l'Índia central on transcorre l'acció."
+
+  - original: "Waingunga River"
+    traduccio: "riu Waingunga"
+    categoria: "lloc"
+    nota: "Riu prop del qual viu Shere Khan. Basat en el riu Wainganga real."
+
+  - original: "Council Rock"
+    traduccio: "la Roca del Consell"
+    categoria: "lloc"
+    nota: "Lloc de reunió de la manada de Seeonee."
+
+  - original: "Cold Lairs"
+    traduccio: "les Coves Fredes"
+    categoria: "lloc"
+    nota: "Ciutat abandonada on viuen els Bandar-Log."
+
+  - original: "Law of the Jungle"
+    traduccio: "la Llei de la Selva"
+    categoria: "concepte"
+    nota: "Codi de conducta dels animals de la selva. Tema central de l'obra."
+
+  - original: "Pack Council"
+    traduccio: "el Consell de la Manada"
+    categoria: "concepte"
+    nota: "Assemblea on la manada pren decisions col·lectives."
+
+  - original: "Master Words"
+    traduccio: "les Paraules Mestres"
+    categoria: "concepte"
+    nota: "Fórmules de reconeixement entre pobles animals: 'We be of one blood, ye and I'."
+
+  - original: "dewanee"
+    traduccio: "dewanee"
+    categoria: "concepte"
+    nota: "La bogeria (ràbia) dels animals. Del hindi 'dīwānā' (boig). Es manté en hindi original."
+
+  - original: "Man-cub"
+    traduccio: "cadell d'home"
+    categoria: "concepte"
+    nota: "Terme que els animals usen per referir-se a Mowgli."
+
+  - original: "Red Flower"
+    traduccio: "la Flor Vermella"
+    categoria: "concepte"
+    nota: "El foc, que els animals de la selva temen i no anomenen directament."
