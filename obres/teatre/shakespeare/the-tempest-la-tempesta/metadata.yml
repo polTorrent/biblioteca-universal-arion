@@ -7,6 +7,7 @@ obra:
   any_original: "c. 1610-1611"
   any_traduccio: 2026
   llengua_original: "anglès"
+  categoria: "teatre"
   genere: "teatre"
   subgenere: "comèdia romàntica / romance"
   descripcio: >-
@@ -19,7 +20,7 @@ obra:
     discurs de Pròsper «Our revels now are ended» es llegeix sovint com el
     comiat de Shakespeare del teatre. Proposta rebuda per Quercus al canal
     propostes-traducció.
-  font_original: "Project Gutenberg, EBook #23042 / First Folio 1623"
+  font_original: "https://www.gutenberg.org/ebooks/23042"
   domini_public: true
   temes:
     - poder i autoritat

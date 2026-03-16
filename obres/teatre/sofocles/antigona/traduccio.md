@@ -185,7 +185,7 @@ Després d'enterrar-lo se n'ha anat, i sobre el cos ha escampat pols seca i ha c
 CREÓ: Què dius? Quin home ha gosat fer això?
 GUARDA: No ho sé, senyor. Allà no hi havia cap marca de pic ni rastre de bipic. El terreny era dur i sec, sense esquerdes, i tampoc estava marcat per rodes de carro. Qui ho va fer no va deixar cap pista. Però tan bon punt el primer vigilant del matí ens ho va ensenyar, tots vam quedar esglaiats. El mort havia desaparegut de la vista —no en una tomba, sinó que l'havia cobert una pols fina, com si algú hagués volgut evitar la maledicció divina. No es veien rastres de cap bèstia ni de cap gos que l'hagués arrossegat.
 Llavors van començar a volar insults entre nosaltres, els guardes acusant-se mútuament, i la cosa gairebé va arribar als cops. No hi havia ningú per aturar-ho. Cadascú semblava culpable als ulls dels altres, però cap no ho tenia clar, i tots evitàvem saber la veritat. Estàvem disposats a agafar ferro roent amb les mans, a travessar el foc i a jurar pels déus que no ho havíem fet nosaltres ni érem còmplices de qui ho havia planejat o executat.
-Al final, quan ja no quedava res més per investigar, un d'ells va dir una cosa que va fer que tots abaixéssim el cap de por. No podíem rebatjar-ho, i tampoc sabíem com resoldre la situació actuant correctament. La proposta era que havíem de portar...
+Al final, quan ja no quedava res més per investigar, un d'ells va dir una cosa que va fer que tots abaixéssim el cap de por. No podíem rebatre-ho, i tampoc sabíem com resoldre la situació actuant correctament. La proposta era que havíem de portar...
 
 que aquesta tasca sigui teva i no cal amagar-la.
 I això va triomfar, i a mi, desgraciat, 
@@ -462,7 +462,7 @@ CREÓ: Serà Hades qui aturi aquests casaments.
 
 **COR** Està decidit, sembla, que ella ha de morir.
 **CREONT** Per a tu i per a mi també. No perdis més temps: emporteu-la a dins, criats. D'ara endavant cal que aquestes dones estiguin recloses. Perquè fins els valents fugen quan veuen la mort a tocar.
-**COR** Feliços aquells que no han tastat cap mal en la vida. Perquè quan un déu sacseja una casa, les desgràcies no deixen de caure sobre tota la descendència, com quan els vents tracius de mal alè empènyen les ones marines. Aquestes fan rodolar la fosca sorra des del fons, i les costes bramem amb dolor sota els seus cops.
+**COR** Feliços aquells que no han tastat cap mal en la vida. Perquè quan un déu sacseja una casa, les desgràcies no deixen de caure sobre tota la descendència, com quan els vents tracius de mal alè empènyen les ones marines. Aquestes fan rodolar la fosca sorra des del fons, i les costes bramen amb dolor sota els seus cops.
 Veig com les antigues desgràcies de la casa dels Labdàcides s'acumulen sobre les dels morts, i cap generació del llinatge no s'allibera: un dels déus l'enfonsa, sense redempció possible. Ara, la darrera arrel lluminosa que s'estenia per la casa d'Èdip és segada de nou per la pols sanguinària dels déus infernals, per la follia de les paraules i l'Erínia de l'ànima.
 Zeus, quin poder humà pot vèncer el teu? Tu, a qui ni el son que tot ho caça ni els mesos incansables dels déus poden agafar mai, i que regnes eternament sobre l'esplendor marmoreal de l'Olimp. I en el futur
 
@@ -585,20 +585,20 @@ no miris tant els anys com els fets.
 **CREÓ** Tot el teu discurs és a favor d'ella.
 
 **HÈMON** I de tu i de mi, i dels déus dels inferns.
-**CRÈON** Aquesta no la prendràs mai més per esposa mentre visqui.
+**CREONT** Aquesta no la prendràs mai més per esposa mentre visqui.
 **HÈMON** Si mor, morint destruirà algú.
-**CRÈON** I així t'atreveixes a amenaçar-me descaradament?
+**CREONT** I així t'atreveixes a amenaçar-me descaradament?
 **HÈMON** Què té d'amenaçant dir el que és just?
-**CRÈON** Ploraràs la teva follia, insensé que ets.
+**CREONT** Ploraràs la teva follia, insensé que ets.
 **HÈMON** Si no fossis el meu pare, diria que has perdut la raó.
-**CRÈON** No em parlis com un esclau de dona.
+**CREONT** No em parlis com un esclau de dona.
 **HÈMON** Vols parlar sense escoltar res del que et dic?
-**CRÈON** És cert? Per Zeus que ho sabràs! No em tornaràs a insultar impunement. Porteu aquesta dona i que mori ara mateix davant dels seus ulls, a prop del nuvi.
+**CREONT** És cert? Per Zeus que ho sabràs! No em tornaràs a insultar impunement. Porteu aquesta dona i que mori ara mateix davant dels seus ulls, a prop del nuvi.
 **HÈMON** No davant meu, això no ho creguis mai. Ni ella morirà al meu costat ni tu no tornaràs a veure'm, perquè delires amb els qui t'envolten.
 **COR** L'home, senyor, se n'ha anat furiós. La ment d'un jove quan pateix és terrible.
-**CRÈON** Que faci el que vulgui, que pensi que és més del que és. Però aquestes dues noies no escaparan de la mort.
+**CREONT** Que faci el que vulgui, que pensi que és més del que és. Però aquestes dues noies no escaparan de la mort.
 **COR** Tens intenció de matar-les totes dues?
-**CRÈON** No la innocent; dius bé.
+**CREONT** No la innocent; dius bé.
 **COR** I amb quina mena de mort planeja matar-la?
 
 Creó la conduirà lluny del camí dels mortals, a soledat,
@@ -614,7 +614,7 @@ Amor invencible en la batalla, Amor que t'abats sobre els béns,
 tu que vetlles en les tendres galtes de la donzella,
 vagues per damunt dels mars i pels estables del camp;
 i no t'escapa cap dels immortals
-ni cap dels homes d'un sol dia. Qui et té, s'enjolieix.
+ni cap dels homes d'un sol dia. Qui et té, s'enfollia.
 Tu torces les ments dels justos cap a la injustícia, per a llur perdició;
 tu has despertat aquest conflicte entre homes de la mateixa sang;
 però venç el desig clar dels ulls de la núvia
@@ -735,10 +735,6 @@ sóc portada ja, no més demora! 940
 Mireu, prínceps de Tebes,
 l'única que resta dels reis,
 com pateixo i per obra de quins homes,
-
-No veig cap traducció prèvia per millorar. La secció "TRADUCCIÓ: " està buida.
-Vols que tradueixi aquest fragment coral del grec antic? Sembla ser d'una tragèdia grega (possiblement d'Sòfocles) que fa referència als mites de Danae, Licurg i els fills de Fineu.
-Si vols que faci la traducció completa, puc aplicar el format JSON que tinc configurat per a traduccions literàries, preservant el to tràgic i la solemnitat del cor.
 
 ...de les Erecteïdes,
 i va créixer en antres llunyans
@@ -892,10 +888,7 @@ per un no res davant del plaer.
 **MISSATGER** Per la seva pròpia, furiós pel crim del pare.
 **COR** Oh endeví, quina raó tenies!
 **MISSATGER** Estant així les coses, cal decidir la resta.
-**COR** I mira, veig la desgracida Eurídice que s'acosta
-
-No veig cap traducció en el vostre missatge que pugui millorar. Només hi ha el text original en grec antic i després "TRADUCCIÓ: " però no hi ha cap text traduït.
-Si us plau, proporcioneu la traducció actual que voleu que millori, i llavors podré treballar-hi per fer-la més natural en català.
+**COR** I mira, veig la desgraciada Eurídice que s'acosta
 
 Al desgraciat li arriben confusos crits mentre s'acosta arrossegant-se. Gemegant pronuncia paraules angoixoses: «Ai, desgraciat de mi! Sóc profeta? Segueixo potser el camí més desgraciat de tots els que he recorregut? La veu del meu fill m'agita. Però vosaltres, servents, aneu-hi de pressa i poseu-vos al costat del sepulcre. Mireu, entrant pel forat del túmul de pedres fins a l'entrada mateixa, si comprenc la veu d'Haemon o si els déus m'enganyen.»
 MISSATGER: Això ens va manar el nostre descoratjat senyor i hi anàrem. Vàrem veure-la penjada al fons del sepulcre, lligada pel coll amb una corda de lli, i ell aferrat a la seva cintura, planyent la pèrdua del llit nupcial d'allà baix, les obres del pare i el llit desgraciat. Quan els veu, amb un gemec tètric entra i s'acosta a ell cridant: «Oh desgraciat, quina acció has comès! Quin seny tenies? Per quina desgràcia has perit? Surt, fill meu, com a suplicant t'ho demano.» Però el jove, mirant-lo amb ulls salvatges, li escup a la cara i sense dir res treu la doble fulla de l'espasa. Quan el pare fuig ràpidament, l'erra. Llavors el desgraciat, irritat contra si mateix, es clava l'arma al pit i cau.
@@ -938,7 +931,7 @@ ai, ai,
 has mort, t'has alliberat
 no pas per les teves sinó per les meves males decisions!
 COR: Ai, com sembla que veus tard la justícia!
-CREU: Ai de mi!
+CREONT: Ai de mi!
 Ho he après, desgraciat; un déu em va colpejar al cap,
 carregat d'un gran pes,
 i em va sacsejar per camins salvatges,
@@ -947,10 +940,10 @@ Uf, uf, oh penes dels mortals, penes penoses!
 MISSATGER: Oh senyor, com qui té i ha adquirit,
 portant aquests mals que tens a les mans,
 sembla que arribes per veure'n de nous a casa.
-CREU: Què hi ha encara de pitjor entre els mals?
+CREONT: Què hi ha encara de pitjor entre els mals?
 MISSATGER: La dona ha mort, la mare d'aquest mort,
 desgraciat, ara mateix per ferides recents.
-CREU: Ai!
+CREONT: Ai!
 Oh port impurificable d'Hades,
 per què, per què em destrueixes?
 Oh tu que m'has portat dolents anuncis,
@@ -961,7 +954,7 @@ ai, ai,
 que una mort de dona
 s'afegeix a la ruïna?
 COR: Es pot veure; ja no està en els seus apartaments.
-CREU: Ai de mi!
+CREONT: Ai de mi!
 Veig aquest segon mal, desgraciat!
 
 Quin destí, doncs, quin destí m'espera encara?
@@ -996,7 +989,7 @@ jo, dic la veritat. Servants!
 Porteu-me com més aviat millor, porteu-me lluny, 
 jo que no sóc més que un no res.
 COR
-Aconseiles el que convé, si hi ha algun profit en els mals.
+Aconsellis el que convé, si hi ha algun profit en els mals.
 El més breu és el millor quan els mals són als peus.
 CREONT
 Que vingui, que vingui, 
