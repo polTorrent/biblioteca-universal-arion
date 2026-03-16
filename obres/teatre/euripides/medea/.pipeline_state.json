@@ -1,0 +1,95 @@
+{
+  "sessio_id": "eurípides-medea-2026-03-16",
+  "obra": {
+    "autor": "Eurípides",
+    "titol": "Medea",
+    "llengua": "grec"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T16:10:58.598628",
+    "ultima_activitat": "2026-03-16T16:33:25.365470"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 51,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12"
+    ],
+    "en_curs": "chunk_13",
+    "pendents": [
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21",
+      "chunk_22",
+      "chunk_23",
+      "chunk_24",
+      "chunk_25",
+      "chunk_26",
+      "chunk_27",
+      "chunk_28",
+      "chunk_29",
+      "chunk_30",
+      "chunk_31",
+      "chunk_32",
+      "chunk_33",
+      "chunk_34",
+      "chunk_35",
+      "chunk_36",
+      "chunk_37",
+      "chunk_38",
+      "chunk_39",
+      "chunk_40",
+      "chunk_41",
+      "chunk_42",
+      "chunk_43",
+      "chunk_44",
+      "chunk_45",
+      "chunk_46",
+      "chunk_47",
+      "chunk_48",
+      "chunk_49",
+      "chunk_50",
+      "chunk_51"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 1.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[16:14:09] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:16:52] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:17:39] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:23:11] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:23:54] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:25:03] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:26:53] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:28:39] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:31:09] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:33:25] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[16:13:27] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
