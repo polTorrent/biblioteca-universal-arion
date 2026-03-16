@@ -2,11 +2,14 @@ obra:
   titol: "Sonets de Crimea"
   titol_original: "Sonety krymskie"
   autor: "Adam Mickiewicz"
+  autor_original: "Adam Mickiewicz"
   traductor: "Biblioteca Universal Arion"
   any_original: 1826
   any_traduccio: 2026
   llengua_original: "polonès"
+  categoria: "poesia"
   descripcio: "Cicle de divuit sonets escrits per Adam Mickiewicz durant el seu viatge a Crimea el 1825. Considerats una de les cimes del romanticisme polonès, combinen la contemplació del paisatge oriental amb la nostàlgia de la pàtria perduda."
+  font_original: "https://pl.wikisource.org/wiki/Sonety_krymskie"
 seccions: 18
 estadistiques:
   paraules_original: 0
