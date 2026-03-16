@@ -8,10 +8,11 @@ obra:
   any_original: 1833
   any_traduccio: 2026
   llengua_original: rus
+  categoria: poesia
   descripcio: Poema narratiu sobre la gran inundació de Sant Petersburg de 1824 i
     el conflicte entre l'individu i el poder estatal, simbolitzat per l'estàtua eqüestre
     de Pere el Gran.
-  font: https://ru.wikisource.org/wiki/Медный_всадник_(Пушкин)
+  font_original: https://ru.wikisource.org/wiki/Медный_всадник_(Пушкин)
   llicencia_original: Domini públic (PD-old-70)
 seccions:
 - Предисловие (Prefaci)
