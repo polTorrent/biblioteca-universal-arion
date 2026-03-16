@@ -7,9 +7,11 @@ obra:
   any_original: 1857
   any_traduccio: 2026
   llengua_original: francès
+  categoria: poesia
   genere: poesia
   descripcio: Selecció de 20 poemes de Les Fleurs du mal, obra mestra del simbolisme
     francès.
+  font_original: https://fr.wikisource.org/wiki/Les_Fleurs_du_mal/1861
 seccions: 20
 estadistiques:
   paraules_original: 3613

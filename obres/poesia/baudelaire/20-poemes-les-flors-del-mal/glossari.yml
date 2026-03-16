@@ -1,0 +1,150 @@
+termes:
+  - original: "spleen"
+    traduccio: "spleen / avorriment"
+    notes: "Terme clau baudelairià que designa un estat de tedi existencial profund, sense equivalent exacte en català. Es manté el mot anglès/francès en el títol i es tradueix com 'avorriment' en context."
+    categoria: "concepte"
+
+  - original: "ennui"
+    traduccio: "avorriment"
+    notes: "L'Ennui baudelairià va més enllà del simple avorriment: és una acídia existencial, el pitjor dels vicis (Au lecteur). Personificat com a monstre."
+    categoria: "concepte"
+
+  - original: "idéal"
+    traduccio: "ideal"
+    notes: "Pol oposat al spleen en l'estructura del recull. Aspiració a la bellesa i la transcendència."
+    categoria: "concepte"
+
+  - original: "volupté"
+    traduccio: "voluptat"
+    notes: "Plaer sensual intens, sovint amb connotacions espirituals. Mot recurrent en l'estètica baudelairiana ('Luxe, calme et volupté')."
+    categoria: "concepte"
+
+  - original: "gouffre"
+    traduccio: "abisme"
+    notes: "Imatge recurrent del buit vertiginós, tant físic com metafísic. Apareix a 'Au lecteur', 'Hymne à la beauté', 'L'Homme et la mer'."
+    categoria: "imatge"
+
+  - original: "correspondances"
+    traduccio: "correspondències"
+    notes: "Doctrina estètica central: les sinestèsies entre sentits (perfums, colors, sons) reflecteixen una unitat oculta de la Natura."
+    categoria: "concepte"
+
+  - original: "Satan Trismégiste"
+    traduccio: "Satan Trismegist"
+    notes: "Fusió de Satan amb Hermes Trismegist (tres vegades gran), l'alquimista. El Diable com a químic savi que vaporitza la voluntat."
+    categoria: "referència"
+
+  - original: "le Poëte"
+    traduccio: "el Poeta"
+    notes: "Figura idealitzada del poeta com a ésser escollit, incomprès pel món ('Bénédiction', 'L'Albatros'). Majúscula al·legòrica."
+    categoria: "figura"
+
+  - original: "albatros"
+    traduccio: "albatros"
+    notes: "Símbol del poeta: majestuós en vol (creació), maldestre a terra (vida quotidiana). Al·legoria central del poema homònim."
+    categoria: "símbol"
+
+  - original: "encensoir"
+    traduccio: "encenser"
+    notes: "Objecte litúrgic per cremar encens. Símil per a les flors que s'evaporen a 'Harmonie du soir' (pantoum)."
+    categoria: "objecte"
+
+  - original: "ostensoir"
+    traduccio: "ostensori"
+    notes: "Objecte litúrgic per exhibir l'hòstia consagrada. Símil final d''Harmonie du soir': el record llueix com un ostensori."
+    categoria: "objecte"
+
+  - original: "reposoir"
+    traduccio: "reposador"
+    notes: "Altar provisional on es diposita el Santíssim durant processons. Símil per al cel trist i bell a 'Harmonie du soir'."
+    categoria: "objecte"
+
+  - original: "pantoum"
+    traduccio: "pantoum"
+    notes: "Forma poètica malaia amb versos recurrents. 'Harmonie du soir' n'és l'exemple més cèlebre en llengua francesa."
+    categoria: "forma"
+
+  - original: "helminthes"
+    traduccio: "cucs"
+    notes: "Paràsits intestinals. Imatge de la corrupció interior a 'Au lecteur'."
+    categoria: "imatge"
+
+  - original: "Géhenne"
+    traduccio: "Gehenna"
+    notes: "Vall de Hinnom, símbol de l'infern en tradició judeocristiana. A 'Bénédiction', la mare prepara les fogueres infernals."
+    categoria: "referència"
+
+  - original: "clepsydre"
+    traduccio: "clepsidra"
+    notes: "Rellotge d'aigua antic. A 'L'Horloge', simbolitza el temps que s'escola inexorablement."
+    categoria: "objecte"
+
+  - original: "houka"
+    traduccio: "pipa d'aigua"
+    notes: "Pipa oriental per fumar tabac. L'Ennui personificat fuma la seva houka tot somiant amb cadafals."
+    categoria: "objecte"
+
+  - original: "philtre"
+    traduccio: "filtre"
+    notes: "Poció màgica, especialment amorosa. A 'Hymne à la beauté', els petons de la Bellesa són un filtre."
+    categoria: "objecte"
+
+  - original: "nard"
+    traduccio: "nard"
+    notes: "Planta aromàtica oriental (Nardostachys). Perfum preuat en l'antiguitat, associat a la unció. A 'Bénédiction'."
+    categoria: "referència"
+
+  - original: "benjoin"
+    traduccio: "benjuí"
+    notes: "Resina aromàtica de l'arbre Styrax. Un dels perfums de 'Correspondances', dins la sinestèsia baudelairiana."
+    categoria: "referència"
+
+  - original: "musc"
+    traduccio: "musc / almesc"
+    notes: "Substància olorosa d'origen animal. Apareix a 'Correspondances' i 'La Chevelure'. 'Almesc' és la forma normativa catalana."
+    categoria: "referència"
+
+  - original: "la Beauté"
+    traduccio: "la Bellesa"
+    notes: "Personificació al·legòrica. A 'La Beauté' parla en primera persona com una esfinx impassible; a 'Hymne à la beauté' és un monstre ambivalent."
+    categoria: "figura"
+
+  - original: "la Mort"
+    traduccio: "la Mort"
+    notes: "Personificació constant. A 'Au lecteur', baixa als pulmons com un riu invisible."
+    categoria: "figura"
+
+  - original: "la Douleur"
+    traduccio: "la Dolor / el Dolor"
+    notes: "Personificada a 'Recueillement' com a companya íntima del poeta, a qui demana calma i silenci."
+    categoria: "figura"
+
+  - original: "le Temps"
+    traduccio: "el Temps"
+    notes: "Personificat com a jugador àvid i devorador de la vida ('L'Ennemi', 'L'Horloge')."
+    categoria: "figura"
+
+  - original: "le Plaisir"
+    traduccio: "el Plaer"
+    notes: "Personificat com a botxí sense pietat a 'Recueillement'. Paradoxa baudelairiana: el plaer és tirania."
+    categoria: "figura"
+
+  - original: "sphinx"
+    traduccio: "esfinx"
+    notes: "Criatura mitològica. La Bellesa es compara a una esfinx incompresa a 'La Beauté'."
+    categoria: "referència"
+
+  - original: "Palmyre"
+    traduccio: "Palmira"
+    notes: "Ciutat antiga de Síria, famosa per la seva riquesa. Referència a 'Bénédiction'."
+    categoria: "referència"
+
+  - original: "harpies"
+    traduccio: "hàrpies"
+    notes: "Criatures mitològiques gregues amb ungles afilades. La dona del Poeta es compara a les hàrpies a 'Bénédiction'."
+    categoria: "referència"
+
+  - original: "sylphide"
+    traduccio: "sílfide"
+    notes: "Esperit elemental de l'aire en la tradició paracelsiana. El Plaer fuig com una sílfide a 'L'Horloge'."
+    categoria: "referència"
