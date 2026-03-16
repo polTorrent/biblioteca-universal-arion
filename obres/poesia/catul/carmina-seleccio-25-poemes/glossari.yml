@@ -1,0 +1,129 @@
+---
+# Glossari de termes clau — Catul, Carmina (selecció: 25 poemes)
+# Llatí → Català amb context poètic
+
+termes:
+  - original: "basium / basia"
+    traduccio: "bes / besada"
+    categoria: "lèxic amorós"
+    nota: "Terme col·loquial per 'petó', característic de Catul; diferent del més formal 'osculum'."
+
+  - original: "Lesbia"
+    traduccio: "Lèsbia"
+    categoria: "noms propis"
+    nota: "Pseudònim poètic de Clòdia Metel·la. Evoca Safo de Lesbos, model literari de Catul."
+
+  - original: "passer"
+    traduccio: "pardal"
+    categoria: "fauna"
+    nota: "Ocell domèstic de Lèsbia, protagonista dels poemes II i III. Possible símbol eròtic."
+
+  - original: "nugae"
+    traduccio: "bagatel·les / menudeses"
+    categoria: "lèxic literari"
+    nota: "Catul anomena així els seus propis poemes amb falsa modèstia (poema I)."
+
+  - original: "libellum"
+    traduccio: "llibret"
+    categoria: "lèxic literari"
+    nota: "Diminutiu afectuós de 'liber'; referència al recull poètic dedicat a Corneli Nepot."
+
+  - original: "pumex / pumice"
+    traduccio: "pedra tosca / pumicita"
+    categoria: "objectes"
+    nota: "Pedra volcànica usada per polir els rotlles de papir. Imatge del llibre acabat de publicar."
+
+  - original: "Venus / Veneres"
+    traduccio: "Venus / les Venus"
+    categoria: "divinitats"
+    nota: "Deessa de l'amor. En plural pot referir-se a les Gràcies o a múltiples manifestacions de la bellesa."
+
+  - original: "Cupido / Cupidines"
+    traduccio: "Cupido / els Cupidos"
+    categoria: "divinitats"
+    nota: "Déu de l'amor (Eros). El plural 'Cupidines' és innovació poètica de Catul (poema III)."
+
+  - original: "Orcus"
+    traduccio: "Orc"
+    categoria: "divinitats"
+    nota: "Déu del món subterrani, equivalent a Plutó/Hades. Personificació de la mort."
+
+  - original: "Diana / Lucina / Trivia / Luna"
+    traduccio: "Diana / Lucina / Trívia / Lluna"
+    categoria: "divinitats"
+    nota: "Quatre noms de la mateixa deessa (poema XXXIV): Diana (caçadora), Lucina (parts), Trívia (encreuaments), Luna (astre)."
+
+  - original: "Iuppiter / Iovis"
+    traduccio: "Júpiter"
+    categoria: "divinitats"
+    nota: "Déu suprem del panteó romà. Apareix com a hipèrbole amorosa (LXX, LXXII)."
+
+  - original: "Neptunus"
+    traduccio: "Neptú"
+    categoria: "divinitats"
+    nota: "Déu del mar. Esmentat al poema XXXI (Sirmió)."
+
+  - original: "moechus / moechis"
+    traduccio: "adúlter / amants"
+    categoria: "lèxic amorós"
+    nota: "Préstec del grec μοιχός. Terme despectiu per als amants de Lèsbia (poema XI)."
+
+  - original: "otium"
+    traduccio: "oci / lleure"
+    categoria: "conceptes"
+    nota: "Concepte romà d'oci contemplatiu. Catul l'associa amb el perill de la passió (poema LI)."
+
+  - original: "fides / foedus"
+    traduccio: "fidelitat / pacte"
+    categoria: "conceptes"
+    nota: "Termes del dret romà aplicats a l'amor. 'Foedus amicitiae' = pacte d'amistat sagrada entre amants."
+
+  - original: "pietas"
+    traduccio: "pietat / devoció"
+    categoria: "conceptes"
+    nota: "Virtut romana de deure envers déus, pàtria i família. Catul la reclama davant els déus (poema LXXVI)."
+
+  - original: "inferiae"
+    traduccio: "ofrenes funeràries"
+    categoria: "religió"
+    nota: "Ofrenes rituals als morts. El poema CI és una elegia al germà mort a la Tròade."
+
+  - original: "Sirmio"
+    traduccio: "Sirmió"
+    categoria: "topònims"
+    nota: "Península al llac de Garda (actual Sirmione), on Catul tenia una vil·la. Poema XXXI."
+
+  - original: "Cyrene / Cyrenis"
+    traduccio: "Cirene"
+    categoria: "topònims"
+    nota: "Colònia grega a Líbia, famosa pel silfi (laserpicium). Referència al poema VII."
+
+  - original: "Bithynia / Bithunos"
+    traduccio: "Bitínia"
+    categoria: "topònims"
+    nota: "Província romana a l'Àsia Menor. Catul hi va viatjar amb el pretor Gai Memmi (c. 57-56 aC)."
+
+  - original: "Cornelius"
+    traduccio: "Corneli"
+    categoria: "noms propis"
+    nota: "Corneli Nepot, historiador romà, dedicatari del libellum (poema I)."
+
+  - original: "Fabullus"
+    traduccio: "Fabul"
+    categoria: "noms propis"
+    nota: "Amic de Catul, convidat a un sopar humorístic (poema XIII)."
+
+  - original: "unguentum"
+    traduccio: "perfum / ungüent"
+    categoria: "objectes"
+    nota: "Oli aromàtic de luxe. Al poema XIII, regal diví que val més que qualsevol sopar."
+
+  - original: "hendecasyllabus"
+    traduccio: "hendecasíl·lab"
+    categoria: "mètrica"
+    nota: "Vers d'onze síl·labes (esquema faleci), metre preferit de Catul per als poemes breus."
+
+  - original: "distichon elegiacum"
+    traduccio: "dístic elegíac"
+    categoria: "mètrica"
+    nota: "Parella d'hexàmetre + pentàmetre. Usat als epigrames i elegies (poemes LXX-CIX)."
