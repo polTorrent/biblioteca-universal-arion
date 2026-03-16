@@ -1,0 +1,161 @@
+glossari:
+  - terme: "dharma"
+    original: "धर्म"
+    transliteracio: "dharma"
+    traduccio: "deure, llei còsmica, ordre moral"
+    nota: >
+      Concepte central: el deure sagrat, la llei universal que sosté l'ordre còsmic i social.
+      En el Gītā, Kṛṣṇa exhorta Arjuna a complir el seu svadharma (deure propi).
+
+  - terme: "yoga"
+    original: "योग"
+    transliteracio: "yoga"
+    traduccio: "unió, disciplina espiritual"
+    nota: >
+      Literalment 'unió' (de l'arrel yuj, 'unir'). Cada capítol del Gītā porta el títol
+      d'un yoga diferent: karma-yoga, bhakti-yoga, jñāna-yoga, etc.
+
+  - terme: "karma"
+    original: "कर्म"
+    transliteracio: "karma"
+    traduccio: "acció, acte ritual, llei de causa i efecte"
+    nota: >
+      L'acció i les seves conseqüències. El capítol 3 (Karmayoga) ensenya l'acció
+      desinteressada, sense apego als fruits (niṣkāma karma).
+
+  - terme: "ātman"
+    original: "आत्मन्"
+    transliteracio: "ātman"
+    traduccio: "ànima, el si mateix"
+    nota: >
+      L'essència immortal i immutable de l'ésser. Kṛṣṇa ensenya que l'ātman
+      no neix ni mor (2.20): na jāyate mriyate vā kadācit.
+
+  - terme: "brahman"
+    original: "ब्रह्मन्"
+    transliteracio: "brahman"
+    traduccio: "l'absolut, la realitat suprema"
+    nota: >
+      La realitat última, fonament de tot el que existeix. Distingir de brahmā
+      (el déu creador) i brāhmaṇa (sacerdot).
+
+  - terme: "bhakti"
+    original: "भक्ति"
+    transliteracio: "bhakti"
+    traduccio: "devoció, amor diví"
+    nota: >
+      La devoció amorosa envers la divinitat. El capítol 12 (Bhaktiyoga) la presenta
+      com la via més directa d'alliberament.
+
+  - terme: "arjuna"
+    original: "अर्जुन"
+    transliteracio: "arjuna"
+    traduccio: "Arjuna (nom propi)"
+    nota: >
+      Tercer dels cinc germans Pāṇḍava, gran arquer. El seu desànim davant la batalla
+      (capítol 1) desencadena l'ensenyament de Kṛṣṇa.
+
+  - terme: "kṛṣṇa"
+    original: "कृष्ण"
+    transliteracio: "kṛṣṇa"
+    traduccio: "Kṛṣṇa (nom propi), 'el fosc'"
+    nota: >
+      Avatāra de Viṣṇu, auriga d'Arjuna i mestre espiritual del Gītā.
+      Revela la seva forma còsmica al capítol 11.
+
+  - terme: "sāṅkhya"
+    original: "साङ्ख्य"
+    transliteracio: "sāṅkhya"
+    traduccio: "discerniment, escola filosòfica del coneixement"
+    nota: >
+      Sistema filosòfic que distingeix entre puruṣa (consciència) i prakṛti (matèria).
+      El capítol 2 (Sāṅkhyayoga) exposa el coneixement de la naturalesa de l'ànima.
+
+  - terme: "mokṣa"
+    original: "मोक्ष"
+    transliteracio: "mokṣa"
+    traduccio: "alliberament, eliberació del cicle de renaixements"
+    nota: >
+      L'objectiu últim de l'existència: l'alliberament del saṃsāra (cicle de
+      naixements i morts).
+
+  - terme: "saṃsāra"
+    original: "संसार"
+    transliteracio: "saṃsāra"
+    traduccio: "cicle de renaixements, existència cíclica"
+    nota: >
+      El cicle continu de naixement, mort i renaixement del qual l'ànima
+      cerca alliberar-se.
+
+  - terme: "guṇa"
+    original: "गुण"
+    transliteracio: "guṇa"
+    traduccio: "qualitat, atribut de la naturalesa"
+    nota: >
+      Les tres qualitats de prakṛti: sattva (bondat, llum), rajas (passió, activitat)
+      i tamas (foscor, inèrcia). Determinen el caràcter i les accions.
+
+  - terme: "prakṛti"
+    original: "प्रकृति"
+    transliteracio: "prakṛti"
+    traduccio: "naturalesa primordial, matèria"
+    nota: >
+      La naturalesa material, font de tota manifestació. Oposada a puruṣa
+      (consciència pura) en la filosofia sāṅkhya.
+
+  - terme: "puruṣa"
+    original: "पुरुष"
+    transliteracio: "puruṣa"
+    traduccio: "esperit, consciència pura, persona còsmica"
+    nota: >
+      El principi conscient, testimoni immutable. En el Gītā, Kṛṣṇa és
+      el puruṣottama, el puruṣa suprem.
+
+  - terme: "kurukṣetra"
+    original: "कुरुक्षेत्र"
+    transliteracio: "kurukṣetra"
+    traduccio: "camp de Kuru, camp de batalla"
+    nota: >
+      El camp on té lloc la gran batalla entre Pāṇḍava i Kaurava.
+      També interpretat al·legòricament com el camp del deure (dharmakṣetra).
+
+  - terme: "māyā"
+    original: "माया"
+    transliteracio: "māyā"
+    traduccio: "il·lusió, poder creatiu diví"
+    nota: >
+      El poder d'il·lusió que oculta la realitat última. Kṛṣṇa la descriu
+      com el seu propi poder diví (daivī māyā).
+
+  - terme: "nirvāṇa"
+    original: "निर्वाण"
+    transliteracio: "nirvāṇa"
+    traduccio: "extinció del sofriment, pau suprema"
+    nota: >
+      En el Gītā, brahma-nirvāṇa és l'estat de pau absoluta en la unió
+      amb brahman.
+
+  - terme: "śraddhā"
+    original: "श्रद्धा"
+    transliteracio: "śraddhā"
+    traduccio: "fe, confiança, convicció"
+    nota: >
+      La fe o confiança ferma en l'ensenyament espiritual i en el mestre.
+      Essencial per a la pràctica del yoga.
+
+  - terme: "viśvarūpa"
+    original: "विश्वरूप"
+    transliteracio: "viśvarūpa"
+    traduccio: "forma universal, forma còsmica"
+    nota: >
+      La forma còsmica de Kṛṣṇa revelada a Arjuna al capítol 11,
+      que conté tots els éssers i tots els mons.
+
+  - terme: "svadharma"
+    original: "स्वधर्म"
+    transliteracio: "svadharma"
+    traduccio: "deure propi, vocació personal"
+    nota: >
+      El deure específic de cadascú segons la seva naturalesa i posició.
+      Kṛṣṇa ensenya que és millor complir el svadharma imperfectament
+      que el deure d'un altre perfectament (3.35).
