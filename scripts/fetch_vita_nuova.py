@@ -2,8 +2,9 @@
 """Descarrega la Vita Nuova de Dante des de Wikisource italià."""
 
 import re
-import subprocess
 from pathlib import Path
+
+import httpx
 
 
 ROMANS = [
@@ -17,11 +18,9 @@ ROMANS = [
 
 def fetch_raw(title: str) -> str:
     url = f"https://it.wikisource.org/w/index.php?title={title}&action=raw"
-    r = subprocess.run(
-        ["curl", "-s", "--max-time", "15", url],
-        capture_output=True, text=True, check=True,
-    )
-    return r.stdout
+    r = httpx.get(url, timeout=15)
+    r.raise_for_status()
+    return r.text
 
 
 def clean_wikitext(text: str) -> str:
@@ -54,7 +53,7 @@ def main() -> None:
     obra_dir.mkdir(parents=True, exist_ok=True)
 
     output = "# Vita Nuova\n\n**Autor:** Dante Alighieri\n**Font:** Wikisource italià\n**Llengua:** italià\n\n---\n\n"
-    errors = []
+    errors: list[str] = []
 
     for r in ROMANS:
         title = f"Vita_nuova/{r}"
