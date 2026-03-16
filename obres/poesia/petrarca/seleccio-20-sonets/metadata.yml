@@ -4,27 +4,28 @@ obra:
   autor: Francesco Petrarca
   autor_original: Francesco Petrarca
   traductor: Biblioteca Arion
-  any_original: 1327-1374
+  any_original: "1327-1374"
   any_traduccio: 2026
   llengua_original: italià
-  descripcio: Selecció dels vint sonets més cèlebres del Canzoniere de Petrarca, obra
+  categoria: poesia
+  genere: poesia
+  descripcio: >
+    Selecció dels vint sonets més cèlebres del Canzoniere de Petrarca, obra
     fundacional de la lírica europea moderna. Temes d'amor per Laura, reflexió sobre
     el temps, i recerca espiritual.
-  genere: poesia
-  estadistiques:
-    paraules_traduccio: 139
+  font_original: "https://www.gutenberg.org/ebooks/17650"
 seccions: 20
 estadistiques:
   paraules_original: 0
-  paraules_traduccio: 0
+  paraules_traduccio: 139
   notes: 0
   termes_glossari: 0
 revisio:
   estat: revisat
-  qualitat: 10.0
-  data_revisio: '2026-03-13'
+  qualitat: 0.0
+  data_revisio: "2026-03-13"
 avaluacio_final:
-  data: '2026-03-13T22:54:08.949230'
+  data: "2026-03-13T22:54:08.949230"
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
