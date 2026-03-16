@@ -1,0 +1,41 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Yunus Emre (c. 1240-1250 - c. 1320-1328), Anatòlia, Imperi Otomà (actual Turquia), possiblement regió d'Eskişehir. Poeta místic sufí considerarat el primer gran poeta de la literatura turca. Seguidor de la tradició sufí, va escriure poesia devocional en turc anatolià que va influir profundament en la literatura turca posterior. La seva obra, transmesa inicialment de forma oral, combina espiritualitat islàmica amb elements de la cultura popular anatoliana.",
+    "context_historic": "Segle XIII, període de transició a Anatòlia amb l'expansió dels beiliats turcs i l'Imperi Otomà naixent. Època d'intensa activitat sufí i sincretisme cultural entre tradicions bizantines, perses, àrabs i turques. Convivència de diverses tradicions místiques i religioses.",
+    "context_obra": "Antologia de poemes de Yunus Emre (selecció moderna) (segles XIII-XIV (poemes originals), selecció moderna del segle XX-XXI) - poesia mística sufí, lírica devocional. Antologia moderna que recull poemes representatius de Yunus Emre. Els poemes originals van ser compostos com a expressions de devoció sufí i ensenyament espiritual, transmesos oralment abans de ser fixats per escrit.",
+    "influencies": [
+      "sufisme islàmic",
+      "poesia persa mística",
+      "tradició oral turca",
+      "Mevlana Rumi",
+      "tradició devocional islàmica"
+    ],
+    "temes_principals": [
+      "amor diví (aşk)",
+      "unió mística amb Déu",
+      "renúncia del jo",
+      "espiritualitat sufí",
+      "devoció islàmica"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Mecnun (Majnun)",
+    "[H] Personatge històric: Leyla",
+    "[H] Personatge històric: sufís",
+    "[H] Personatge històric: ahís (confraria artesanal)",
+    "[C] Referència cultural: història de Mecnun i Leyla",
+    "[C] Referència cultural: terminologia sufí",
+    "[C] Referència cultural: confraries islàmiques",
+    "[C] Referència cultural: cultura anatoliana medieval",
+    "[C] Referència cultural: tradició mística persa",
+    "[T] Terme tècnic: aşk (amor diví)",
+    "[T] Terme tècnic: tecellî (manifestació divina)",
+    "[T] Terme tècnic: sufí",
+    "[T] Terme tècnic: ahí",
+    "[T] Terme tècnic: mecnun (boig d'amor)",
+    "[T] Terme tècnic: endişe (preocupació/ànsia espiritual)"
+  ]
+}

@@ -1,6 +1,3 @@
-# ديوان المتنبي — مختارات عشرين قصيدة
-# Dīwān al-Mutanabbī — Selecció de 20 poemes
-
 > Font: Domini públic (segle X dC)
 > Abū al-Ṭayyib Aḥmad ibn al-Ḥusayn al-Mutanabbī (أبو الطيب أحمد بن الحسين المتنبي, 915–965 dC)
 
