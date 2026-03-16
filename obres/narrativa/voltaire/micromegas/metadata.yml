@@ -7,7 +7,9 @@ obra:
   any_original: 1752
   any_traduccio: 2026
   llengua_original: "frances"
+  categoria: "narrativa"
   descripcio: "Conte filosòfic de Voltaire sobre dos gegants extraterrestres que visiten la Terra i reflexionen sobre la relativitat de la grandesa i la condició humana."
+  font_original: "https://fr.wikisource.org/wiki/Microm%C3%A9gas"
   seccions: 7
   estadistiques:
     paraules_original: 6800
