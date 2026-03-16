@@ -7,7 +7,12 @@ obra:
   any_original: "c. s. X (manuscrit c. 1270)"
   any_traduccio: 2026
   llengua_original: "islandès antic"
-  descripcio: "Poema cosmogònic de l'Edda poètica que narra la creació del món, la guerra dels déus, el Ragnarök i el renaixement. Una völva (sibil·la) relata la seva visió a Óðinn."
+  categoria: "poesia"
+  font_original: "https://heimskringla.no/wiki/Völuspá"
+  descripcio: >
+    Poema cosmogònic de l'Edda poètica que narra la creació del món, la
+    guerra dels déus, el Ragnarök i el renaixement. Una völva (sibil·la) relata la
+    seva visió a Óðinn.
 seccions: 66
 estadistiques:
   paraules_original: 2800
@@ -15,6 +20,6 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 0.0
+  data_revisio: "2026-03-16"
