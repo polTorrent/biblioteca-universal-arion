@@ -1,0 +1,96 @@
+---
+# Glossari de termes clau — Andria (Terenci)
+# Termes llatins amb traducció catalana i context dramatúrgic
+
+termes:
+  - original: fabula
+    traduccio: comèdia
+    nota: "Gènere teatral. En llatí, 'fabula' designa qualsevol obra dramàtica; aquí es refereix específicament a la comèdia palliata."
+
+  - original: contaminatio
+    traduccio: contaminació
+    nota: "Tècnica literària de combinar dues o més obres gregues en una de llatina. Terenci defensa aquesta pràctica al pròleg contra els seus crítics."
+
+  - original: prologus
+    traduccio: pròleg
+    nota: "Part introductòria de la comèdia llatina. Terenci l'usa per a polèmica literària, no per resumir l'argument com era habitual."
+
+  - original: nuptiae
+    traduccio: noces
+    nota: "Element central de la trama: Simo prepara unes noces fingides per posar a prova Pàmfil."
+
+  - original: meretrix
+    traduccio: cortesana
+    nota: "Personatge típic de la comèdia nova. Crísida (Chrysis) és la dona d'Andros que exerceix aquest ofici."
+
+  - original: servus
+    traduccio: esclau
+    nota: "Davus és el servus callidus (esclau astut), arquetip central de la comèdia nova que mou l'acció amb els seus enganys."
+
+  - original: libertus
+    traduccio: llibert
+    nota: "Esclau alliberat. Sòsia és el libertus de Simo, cosa que explica la seva relació de confiança."
+
+  - original: senex
+    traduccio: vell / pare
+    nota: "Tipus còmic: el pare que vol controlar el fill. Simo i Cremes representen aquest paper."
+
+  - original: adulescens
+    traduccio: jove
+    nota: "Tipus còmic: el jove enamorat. Pàmfil (Pamphilus) i Carínus (Charinus) són els adulescentes de l'obra."
+
+  - original: ephebus
+    traduccio: efeb
+    nota: "Jove que ha completat la formació militar/cívica. Marca la transició a la vida adulta."
+
+  - original: ancilla
+    traduccio: criada
+    nota: "Personatge secundari femení típic; les criades informen sobre les dones principals."
+
+  - original: dos / dotis
+    traduccio: dot
+    nota: "Aportació econòmica al matrimoni. Cremes ofereix la seva filla amb una dot generosa."
+
+  - original: pistrinum
+    traduccio: molí
+    nota: "Lloc de càstig per als esclaus. Simo amenaça Davus amb enviar-lo al molí."
+
+  - original: consilium
+    traduccio: pla / estratagema
+    nota: "Recurrent en l'obra: els plans de Davus i els contraplans de Simo."
+
+  - original: fides
+    traduccio: fidelitat / confiança
+    nota: "Virtut que Simo demana a Sòsia. Valor central en les relacions amo-esclau."
+
+  - original: taciturnitas
+    traduccio: discreció
+    nota: "Qualitat que Simo valora en Sòsia juntament amb la fides."
+
+  - original: Andria
+    traduccio: "la dona d'Andros"
+    nota: "Títol de l'obra. Andria ('la d'Andros') designa Crísida/Gliceri, provinents de l'illa grega d'Andros."
+
+  - original: Chrysis
+    traduccio: Crísida
+    nota: "La dona d'Andros que mor al començament de l'obra. El seu funeral desencadena la revelació de l'amor de Pàmfil."
+
+  - original: Glycerium
+    traduccio: Gliceri
+    nota: "Germana de Crísida i estimada de Pàmfil. Nom derivat del grec γλυκύς (dolç)."
+
+  - original: Pamphilus
+    traduccio: Pàmfil
+    nota: "Protagonista jove, fill de Simo. Nom grec que significa 'estimat de tothom'."
+
+  - original: Davus
+    traduccio: Davus / Dave
+    nota: "Esclau astut (servus callidus) de Simo. Nom tràcic típic dels esclaus en la comèdia."
+
+  - original: Chremes
+    traduccio: Cremes
+    nota: "Vell ric, pare de Filumena. Promet la seva filla a Pàmfil però es retracta en descobrir l'afer."
+
+  - original: Menander
+    traduccio: Menandre
+    nota: "Dramaturg grec (c. 342-290 aC), autor de l'Andria original que Terenci adapta al llatí."
