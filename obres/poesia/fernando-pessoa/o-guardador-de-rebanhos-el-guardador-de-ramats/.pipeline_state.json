@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-07T06:53:53.862005",
-    "ultima_activitat": "2026-03-07T08:17:38.759780"
+    "ultima_activitat": "2026-03-16T19:44:31.431415"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -39,8 +39,8 @@
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.4,
-    "temps_total_min": 17.39
+    "qualitat_mitjana": 0.19,
+    "temps_total_min": 12.0
   },
   "errors": [
     "[06:59:16] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
@@ -90,7 +90,16 @@
     "[08:17:38] Error chunk 10: [Errno 32] Broken pipe",
     "[08:17:38] Error chunk 12: [Errno 32] Broken pipe",
     "[08:17:38] Error chunk 13: [Errno 32] Broken pipe",
-    "[08:17:38] Error fatal: [Errno 32] Broken pipe"
+    "[08:17:38] Error fatal: [Errno 32] Broken pipe",
+    "[19:33:40] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:35:33] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:37:16] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:38:06] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:38:42] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:39:53] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:41:45] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:43:54] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:44:31] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[06:54:44] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='portuguès', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
