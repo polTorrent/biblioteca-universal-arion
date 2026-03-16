@@ -7,11 +7,13 @@ obra:
   any_original: s. XI-XII
   any_traduccio: 2026
   llengua_original: anglès
+  categoria: poesia
   descripcio: Selecció de 75 quartetes (rubaiyat) del poeta, matemàtic i astrònom
     persa Omar Khayyam, en la versió anglesa d'Edward FitzGerald (1a edició, 1859).
     Poemes sobre la fugacitat de la vida, el plaer del vi, l'amor, el destí i la recerca
     de sentit davant la mort.
   font: 'Project Gutenberg, EBook #246'
+  font_original: https://www.gutenberg.org/ebooks/246
   nota_edicio: Versió anglesa d'Edward FitzGerald (1a edició, 1859). L'original persa
     és un corpus dispers de quartetes atribuïdes a Khayyam; FitzGerald en va seleccionar
     i adaptar 75 en una seqüència poètica coherent.
