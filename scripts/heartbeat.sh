@@ -898,7 +898,7 @@ check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPR
 # ═══ MODE CONSOLIDACIÓ: auditoria i reparació ═══
 echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
 AUDIT_LAST="$PROJECT/config/.last_audit"
-AUDIT_INTERVAL=14400  # cada 4 hores
+AUDIT_INTERVAL=43200  # cada 12 hores (🛑 CONSOLIDACIÓ: reduït de 4h)
 
 should_audit=false
 if [ ! -f "$AUDIT_LAST" ]; then
@@ -921,12 +921,14 @@ if [ "$PENDING" -ge "$MAX_PENDING" ]; then
     log "✅ Cua plena ($PENDING). Saltant tasques noves."
 else
     # Només si hi ha espai a la cua:
-    check_supervision        # 2. ⭐ SUPERVISIÓ
+    # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM
+    # check_supervision        # 2. ⭐ SUPERVISIÓ
     # 🛑 CONSOLIDACIÓ: desactivat — no crear fetch/translate per obres noves
     # check_translations       # 3. Noves traduccions
     check_web_sync           # 4. Web sincronitzada
     check_quick_issues       # 4b. Comprovació ràpida obres validades
-    check_code_reviews       # 5. Code reviews
+    # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM
+    # check_code_reviews       # 5. Code reviews
     check_tests              # 6. Tests
     check_weekly_maintenance # 7. Manteniment
     check_openclaw_health    # 8. Salut OpenClaw (ja no cal stop/start intern)

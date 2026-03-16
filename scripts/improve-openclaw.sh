@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0  # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM
 # =============================================================================
 # improve-openclaw.sh — Analitzador i millorador del sistema OpenClaw
 # =============================================================================
