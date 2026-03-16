@@ -897,9 +897,8 @@ check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPR
 
 # ═══ MODE CONSOLIDACIÓ: auditoria i reparació ═══
 echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
-AUDIT_LAST="$REPO/config/.last_audit"
+AUDIT_LAST="$PROJECT/config/.last_audit"
 AUDIT_INTERVAL=14400  # cada 4 hores
-REPO="$PROJECT"
 
 should_audit=false
 if [ ! -f "$AUDIT_LAST" ]; then
@@ -913,7 +912,7 @@ else
 fi
 
 if [ "$should_audit" = true ]; then
-    bash "$REPO/scripts/auditar-cataleg.sh" --fix
+    bash "$PROJECT/scripts/auditar-cataleg.sh" --fix
     date +%s > "$AUDIT_LAST"
     echo "[$(date)] ✅ Auditoria completada, tasques generades"
 fi
