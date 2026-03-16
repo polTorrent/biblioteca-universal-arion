@@ -1,0 +1,167 @@
+# Glossari — Selecció de 25 poemes de Yunus Emre
+# Termes clau del turc antic anatolià (s. XIII-XIV)
+
+termes:
+  - original: "aşk"
+    transliteracio: "aşk"
+    traduccio: "amor (diví)"
+    notes: >
+      Concepte central del sufisme. No és simplement amor romàntic sinó l'amor
+      místic cap a Déu, força transformadora que consumeix l'ànima del cercador.
+
+  - original: "dost"
+    transliteracio: "dost"
+    traduccio: "amic, estimat (Déu)"
+    notes: >
+      En la poesia sufi, referència velada a Déu com a l'Amic per excel·lència.
+      Del persa دوست (dūst).
+
+  - original: "gönül"
+    transliteracio: "gönül"
+    traduccio: "cor, ànima"
+    notes: >
+      El cor espiritual, seu de l'experiència mística i de la connexió amb Déu.
+      Diferent de yürek (cor físic).
+
+  - original: "Mevlâ"
+    transliteracio: "Mevlâ"
+    traduccio: "Senyor, Déu"
+    notes: >
+      De l'àrab مولى (mawlā), títol de reverència per a Déu.
+
+  - original: "Hak"
+    transliteracio: "Hak / Hakk"
+    traduccio: "la Veritat, Déu"
+    notes: >
+      De l'àrab حق (ḥaqq), un dels 99 noms de Déu a l'Islam. Yunus l'usa
+      com a sinònim directe de Déu.
+
+  - original: "derviş"
+    transliteracio: "derviş"
+    traduccio: "dervix, asceta sufi"
+    notes: >
+      Del persa درویش (darvīš), 'pobre'. Cercador espiritual que renuncia
+      als béns mundans.
+
+  - original: "tecellî"
+    transliteracio: "tecellî"
+    traduccio: "manifestació divina, teofania"
+    notes: >
+      De l'àrab تجلّي (tajallī). Moment en què Déu es revela al cor del místic.
+
+  - original: "Mecnun"
+    transliteracio: "Mecnun"
+    traduccio: "Majnun (el boig d'amor)"
+    notes: >
+      Personatge de la llegenda àrab Layla i Majnun. Arquetip de l'amant
+      consumit per l'amor fins a la bogeria. Usat com a metàfora de l'èxtasi sufi.
+
+  - original: "Leyla"
+    transliteracio: "Leyla"
+    traduccio: "Layla (l'estimada)"
+    notes: >
+      L'estimada de Majnun. En context sufi, representa l'Estimat diví.
+
+  - original: "sufi"
+    transliteracio: "sufi"
+    traduccio: "sufi, místic islàmic"
+    notes: >
+      Seguidor del tasawwuf (sufisme), la dimensió mística de l'Islam.
+
+  - original: "cennet"
+    transliteracio: "cennet"
+    traduccio: "paradís"
+    notes: >
+      De l'àrab جنّة (janna). Yunus relativitza el paradís material davant
+      l'amor directe a Déu (poema I).
+
+  - original: "şeyh"
+    transliteracio: "şeyh"
+    traduccio: "xeic, mestre espiritual"
+    notes: >
+      De l'àrab شيخ (šayḫ). Guia espiritual en una confraria sufi.
+
+  - original: "Taptuk"
+    transliteracio: "Taptuk Emre"
+    traduccio: "Taptuk Emre (mestre de Yunus)"
+    notes: >
+      Xeic sufi, mestre espiritual de Yunus Emre. Figura semi-llegendària
+      de l'Anatòlia del segle XIII.
+
+  - original: "garip"
+    transliteracio: "garip"
+    traduccio: "estranger, exiliat, desvalgut"
+    notes: >
+      Terme recurrent que expressa la condició d'exili de l'ànima lluny de Déu
+      i la soledat del cercador espiritual.
+
+  - original: "ilim"
+    transliteracio: "ilim"
+    traduccio: "ciència, coneixement"
+    notes: >
+      De l'àrab علم ('ilm). Yunus distingeix entre el coneixement libresc
+      i el veritable coneixement de si mateix i de Déu (poema VII).
+
+  - original: "mârifet"
+    transliteracio: "mârifet"
+    traduccio: "gnosi, coneixement místic"
+    notes: >
+      De l'àrab معرفة (ma'rifa). Coneixement directe i experiencial de Déu,
+      superior al coneixement racional (ilim).
+
+  - original: "can"
+    transliteracio: "can / cân"
+    traduccio: "ànima, vida"
+    notes: >
+      Del persa جان (jān). L'essència vital i espiritual de la persona.
+
+  - original: "vasl"
+    transliteracio: "vasl / vuslat"
+    traduccio: "unió (mística amb Déu)"
+    notes: >
+      De l'àrab وصل (waṣl). La unió de l'ànima amb l'Estimat diví,
+      objectiu suprem del camí sufi.
+
+  - original: "fâni"
+    transliteracio: "fâni"
+    traduccio: "efímer, transitori"
+    notes: >
+      De l'àrab فاني (fānī). Allò que passa i desapareix, oposat a bâki (etern).
+
+  - original: "bâki"
+    transliteracio: "bâki"
+    traduccio: "etern, permanent"
+    notes: >
+      De l'àrab باقي (bāqī). Només Déu és bâki; tot el món és fâni.
+
+  - original: "Tuba"
+    transliteracio: "Tuba"
+    traduccio: "Tuba (arbre del paradís)"
+    notes: >
+      Arbre mític del paradís islàmic esmentat en la tradició profètica.
+
+  - original: "elif"
+    transliteracio: "elif"
+    traduccio: "elif (primera lletra de l'alfabet àrab)"
+    notes: >
+      Símbol d'unitat divina per la seva forma recta (ا). Yunus diu que
+      el sentit dels quatre llibres sagrats es resumeix en l'elif (poema VII).
+
+  - original: "ecel"
+    transliteracio: "ecel"
+    traduccio: "destí de mort, hora fixada"
+    notes: >
+      De l'àrab أجل (ajal). El moment de la mort, predeterminat per Déu.
+
+  - original: "Azrâil"
+    transliteracio: "Azrâil"
+    traduccio: "Azrael (àngel de la mort)"
+    notes: >
+      L'àngel encarregat de recollir les ànimes en el moment de la mort.
+
+  - original: "devrân"
+    transliteracio: "devrân"
+    traduccio: "cicle del temps, destí"
+    notes: >
+      De l'àrab دوران (dawrān). El pas inexorable del temps i la
+      fortuna canviant.
