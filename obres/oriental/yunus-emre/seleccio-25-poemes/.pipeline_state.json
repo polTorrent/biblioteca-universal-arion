@@ -1,0 +1,45 @@
+{
+  "sessio_id": "yunus-emre-selecció-de-25-poeme-2026-03-16",
+  "obra": {
+    "autor": "Yunus Emre",
+    "titol": "Selecció de 25 poemes",
+    "llengua": "turc antic (anatolià)"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T20:31:14.640853",
+    "ultima_activitat": "2026-03-16T20:41:12.727169"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 4,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 1.0,
+    "temps_total_min": 9.97
+  },
+  "errors": [
+    "[20:32:36] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:33:20] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:35:46] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[20:31:54] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='turc antic (anatolià)', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
+    "[20:41:12] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
