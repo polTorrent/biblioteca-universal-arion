@@ -29,11 +29,11 @@ obra:
       tipus: "sanbanme-mono (三番目物) — peça celestial"
 seccions: 3
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 2700
+  paraules_traduccio: 2097
+  notes: 13
+  termes_glossari: 17
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 8.0
+  data_revisio: "2026-03-16"
