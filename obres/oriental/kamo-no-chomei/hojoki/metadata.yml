@@ -6,13 +6,15 @@ obra:
   traductor: Biblioteca Arion
   any_original: '1212'
   any_traduccio: 2026
-  llengua_original: anglès
+  llengua_original: japonès
+  categoria: oriental
   genere: assaig
   descripcio: Reflexió budista sobre la impermanència de la vida, escrita per Kamo
     no Chōmei el 1212 des de la seva cabana ermitana. Un dels grans clàssics de la
     literatura japonesa, al costat del Makura no Sōshi i el Tsurezuregusa.
   nota_font: Traduït al català a partir de la traducció anglesa del Prof. T. Kusajima
     (1961), revisada pel Prof. Scott George.
+  font_original: https://archive.org/details/hjki0000kamo
 seccions: 1
 estadistiques:
   paraules_original: 3360
