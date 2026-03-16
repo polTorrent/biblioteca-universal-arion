@@ -1,4 +1,3 @@
-# Selecció de 25 poemes de Yunus Emre
 **Autor:** Yunus Emre (يونس امره)
 **Font:** Divan-ı Yunus Emre (domini públic, s. XIII-XIV)
 **Llengua:** turc antic (anatolià)
