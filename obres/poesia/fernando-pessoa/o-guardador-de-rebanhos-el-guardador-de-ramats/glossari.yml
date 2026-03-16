@@ -1,0 +1,125 @@
+termes:
+  - original: "rebanho"
+    traduccio: "ramat"
+    categoria: "substantiu"
+    nota: "Mot central del poemari. Metàfora dels pensaments i idees del poeta-pastor."
+
+  - original: "pastor"
+    traduccio: "pastor"
+    categoria: "substantiu"
+    nota: "Figura del poeta com a guardador d'idees. Alter ego d'Alberto Caeiro."
+
+  - original: "Natureza"
+    traduccio: "Natura"
+    categoria: "substantiu"
+    nota: "Concepte fonamental de Caeiro: la realitat immediata, oposada al pensament abstracte."
+
+  - original: "alma"
+    traduccio: "ànima"
+    categoria: "substantiu"
+    nota: "Per a Caeiro, no és una entitat metafísica sinó la capacitat de sentir directament."
+
+  - original: "Estações"
+    traduccio: "Estacions"
+    categoria: "substantiu"
+    nota: "Les estacions de l'any, personificades com a guies del pastor."
+
+  - original: "pensamento"
+    traduccio: "pensament"
+    categoria: "substantiu"
+    nota: "Objecte de crítica constant: pensar és malaltia dels ulls per a Caeiro."
+
+  - original: "olhar"
+    traduccio: "mirada / mirar"
+    categoria: "substantiu / verb"
+    nota: "Acte central de la poètica de Caeiro: veure sense interpretar."
+
+  - original: "cousas"
+    traduccio: "coses"
+    categoria: "substantiu"
+    nota: "Forma arcaica portuguesa de 'coisas'. Les coses tal com són, sense significat afegit."
+
+  - original: "sentidos"
+    traduccio: "sentits"
+    categoria: "substantiu"
+    nota: "'Eu não tenho filosofia, tenho sentidos' — els sentits com a alternativa a la filosofia."
+
+  - original: "sossego"
+    traduccio: "assossec"
+    categoria: "substantiu"
+    nota: "Pau interior que ve d'acceptar la realitat sense pensar-hi."
+
+  - original: "cordeirinho"
+    traduccio: "anyellet"
+    categoria: "substantiu"
+    nota: "Diminutiu afectiu de 'cordeiro' (anyell). Desig de ser simple com un animal."
+
+  - original: "cajado"
+    traduccio: "gaiato / garrot"
+    categoria: "substantiu"
+    nota: "Bastó de pastor. Símbol de l'ofici poètic."
+
+  - original: "outeiro"
+    traduccio: "turó"
+    categoria: "substantiu"
+    nota: "Elevació del terreny des d'on el pastor observa el ramat."
+
+  - original: "girassol"
+    traduccio: "gira-sol"
+    categoria: "substantiu"
+    nota: "Imatge de la mirada nítida i directa que segueix la llum."
+
+  - original: "malmequer"
+    traduccio: "margarida"
+    categoria: "substantiu"
+    nota: "'Creio no mundo como um malmequer' — creure existint, no pensant."
+
+  - original: "entardecer"
+    traduccio: "capvespre"
+    categoria: "substantiu"
+    nota: "Moment de transició recurrent al poemari."
+
+  - original: "trovoada"
+    traduccio: "tronada"
+    categoria: "substantiu"
+    nota: "Fenomen natural que provoca reflexió involuntària al poeta."
+
+  - original: "planície"
+    traduccio: "planúria"
+    categoria: "substantiu"
+    nota: "Paisatge obert, escenari de la vida pastoral."
+
+  - original: "encosta"
+    traduccio: "vessant"
+    categoria: "substantiu"
+    nota: "Pendent del turó on pastura el ramat."
+
+  - original: "chocalhos"
+    traduccio: "esquelles"
+    categoria: "substantiu"
+    nota: "Picarols del bestiar. So que representa la presència del ramat."
+
+  - original: "luar"
+    traduccio: "llum de lluna / claror de lluna"
+    categoria: "substantiu"
+    nota: "Imatge recurrent de la llum natural nocturna."
+
+  - original: "Menino Jesus"
+    traduccio: "Nen Jesús"
+    categoria: "nom propi"
+    nota: "Figura central del poema VIII: un Jesús nen que juga i riu, alliberat de teologia."
+
+  - original: "mistério"
+    traduccio: "misteri"
+    categoria: "substantiu"
+    nota: "Per a Caeiro, el misteri és que la gent pensi en el misteri. Les coses no tenen misteri."
+
+  - original: "metafísica"
+    traduccio: "metafísica"
+    categoria: "substantiu"
+    nota: "Objecte de rebuig explícit: la metafísica com a malaltia del pensament."
+
+  - original: "heterónimo"
+    traduccio: "heterònim"
+    categoria: "substantiu"
+    nota: "Alberto Caeiro és l'heterònim 'mestre' de Pessoa, del qual depenen Reis i Campos."
