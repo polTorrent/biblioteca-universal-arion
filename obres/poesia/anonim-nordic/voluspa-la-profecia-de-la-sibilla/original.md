@@ -1,5 +1,3 @@
-# Völuspá
-
 **Font**: Codex Regius (GKS 2365 4to), c. 1270. Edda poètica.
 **Llengua**: islandès antic (nòrdic antic)
 **Atribució**: Anònim
