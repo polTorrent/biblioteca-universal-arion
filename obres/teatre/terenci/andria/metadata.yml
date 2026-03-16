@@ -4,14 +4,19 @@ obra:
   autor: Terenci
   autor_original: Publius Terentius Afer
   traductor: Biblioteca Arion
-  any_original: 166 aC
+  any_original: "166 aC"
   any_traduccio: 2026
   llengua_original: llatí
-  descripcio: Primera comèdia de Terenci, basada en l'Andria i la Perínthia de Menandre.
+  categoria: teatre
+  descripcio: >
+    Primera comèdia de Terenci, basada en l'Andria i la Perínthia de Menandre.
     Tracta dels enredos amorosos del jove Pàmfil, el seu pare Simo, i la misteriosa
     dona d'Andros.
-  estadistiques:
-    paraules_traduccio: 8915
+  font_original:
+    - url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.02.0085"
+      nom: "Perseus Digital Library"
+    - url: "https://www.thelatinlibrary.com/ter.andria.html"
+      nom: "The Latin Library"
 seccions: 5
 estadistiques:
   paraules_original: 9500
