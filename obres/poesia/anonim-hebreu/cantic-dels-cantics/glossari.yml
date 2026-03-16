@@ -1,0 +1,123 @@
+# Glossari — Càntic dels Càntics (שיר השירים)
+# Termes clau de l'hebreu bíblic amb transliteració i traducció al català
+
+termes:
+  - original: "שִׁיר הַשִּׁירִים"
+    transliteracio: "Šīr haššīrīm"
+    traduccio: "Càntic dels Càntics"
+    notes: "Superllatiu hebreu: el càntic per excel·lència"
+
+  - original: "דּוֹד"
+    transliteracio: "dōd"
+    traduccio: "estimat, amat"
+    notes: "Terme central del poema; designa l'amant masculí"
+
+  - original: "רַעְיָה"
+    transliteracio: "raʿyāh"
+    traduccio: "estimada, companya"
+    notes: "Designa l'amant femenina; lit. 'la que pastura amb mi'"
+
+  - original: "כַּלָּה"
+    transliteracio: "kallāh"
+    traduccio: "núvia, promesa"
+    notes: "Usat als capítols 4-5 com a apel·latiu afectuós"
+
+  - original: "אַהֲבָה"
+    transliteracio: "ʾahăḇāh"
+    traduccio: "amor"
+    notes: "Tema central; 'forta com la mort' (8:6)"
+
+  - original: "שׁוֹשַׁנָּה"
+    transliteracio: "šōšannāh"
+    traduccio: "lliri, rosa"
+    notes: "Flor simbòlica; possible lotus o lliri dels camps"
+
+  - original: "חֲבַצֶּלֶת"
+    transliteracio: "ḥăḇaṣṣeleṯ"
+    traduccio: "narcís, rosa de Saron"
+    notes: "Flor de la plana de Saron (2:1); identificació botànica incerta"
+
+  - original: "כֶּרֶם"
+    transliteracio: "kerem"
+    traduccio: "vinya"
+    notes: "Símbol polisèmic: fertilitat, cos de l'amada, propietat"
+
+  - original: "מֹר"
+    transliteracio: "mōr"
+    traduccio: "mirra"
+    notes: "Resina aromàtica; símbol de sensualitat i desig"
+
+  - original: "לְבוֹנָה"
+    transliteracio: "ləḇōnāh"
+    traduccio: "encens, olíban"
+    notes: "Resina aromàtica del Líban; associada al sagrat"
+
+  - original: "נֵרְדְּ"
+    transliteracio: "nērd"
+    traduccio: "nard"
+    notes: "Perfum d'origen indi, molt preuat a l'antiguitat"
+
+  - original: "תַּפּוּחַ"
+    transliteracio: "tappūaḥ"
+    traduccio: "poma, pomera"
+    notes: "Fruit simbòlic d'amor; no necessàriament la poma moderna"
+
+  - original: "רִמּוֹן"
+    transliteracio: "rimmōn"
+    traduccio: "magrana, magraner"
+    notes: "Símbol de fertilitat i bellesa"
+
+  - original: "צְבִי"
+    transliteracio: "ṣəḇī"
+    traduccio: "gasela"
+    notes: "Imatge de velocitat i gràcia; comparació amb l'estimat"
+
+  - original: "עֹפֶר"
+    transliteracio: "ʿōp̄er"
+    traduccio: "cervatell"
+    notes: "Cria de cérvol; imatge de delicadesa"
+
+  - original: "יוֹנָה"
+    transliteracio: "yōnāh"
+    traduccio: "coloma"
+    notes: "Apel·latiu afectuós per a l'estimada; símbol de puresa"
+
+  - original: "שׁוּלַמִּית"
+    transliteracio: "šūlammīṯ"
+    traduccio: "la sulamita"
+    notes: "Nom o títol de l'amada (7:1); possible femení de Salomó"
+
+  - original: "הַשָּׂרוֹן"
+    transliteracio: "haššārōn"
+    traduccio: "el Saron"
+    notes: "Plana costanera fèrtil entre Jaffa i el Carmel"
+
+  - original: "הַלְּבָנוֹן"
+    transliteracio: "halləḇānōn"
+    traduccio: "el Líban"
+    notes: "Muntanya simbòlica de majestuositat i fragància"
+
+  - original: "גִּלְעָד"
+    transliteracio: "gilʿāḏ"
+    traduccio: "Galaad"
+    notes: "Regió a l'est del Jordà, famosa pels seus ramats"
+
+  - original: "אַפִּרְיוֹן"
+    transliteracio: "ʾappirəyōn"
+    traduccio: "llitera, palanquí"
+    notes: "Hapax legomenon; possible préstec del grec φορεῖον o del persa"
+
+  - original: "בְּנוֹת יְרוּשָׁלַיִם"
+    transliteracio: "bənōṯ yərūšālayim"
+    traduccio: "filles de Jerusalem"
+    notes: "Cor femení que funciona com a interlocutor"
+
+  - original: "חוֹתָם"
+    transliteracio: "ḥōṯām"
+    traduccio: "segell"
+    notes: "'Posa'm com un segell sobre el teu cor' (8:6)"
+
+  - original: "שַׁלְהֶבֶתְיָה"
+    transliteracio: "šalheḇeṯyāh"
+    traduccio: "flama divina, flama de Yah"
+    notes: "Únic possible nom diví al text; flama d'amor inextingible (8:6)"
