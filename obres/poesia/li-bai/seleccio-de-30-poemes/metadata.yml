@@ -16,11 +16,11 @@ obra:
   font_original: "https://zh.wikisource.org/wiki/Author:李白"
 seccions: 30
 estadistiques:
-  paraules_original: 622
-  paraules_traduccio: 49
-  notes: 0
+  paraules_original: 1920
+  paraules_traduccio: 2850
+  notes: 12
   termes_glossari: 25
 revisio:
-  estat: "en_progres"
-  qualitat: 0.0
+  estat: "revisat"
+  qualitat: 7.5
   data_revisio: "2026-03-16"
