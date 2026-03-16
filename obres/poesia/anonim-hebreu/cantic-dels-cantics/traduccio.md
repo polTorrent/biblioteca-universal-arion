@@ -108,7 +108,7 @@ Traduït de l'hebreu per Biblioteca Arion
 
 **4:1** Que bella ets, amiga meva, que bella ets! Els teus ulls són colomes darrere el teu vel; els teus cabells, com un ramat de cabres que davallen del mont Galaad.
 
-**4:2** Les teves dents, com un ramat de ovelles toses que pugen del bany, totes amb bessons, cap d'elles estèril.
+**4:2** Les teves dents, com un ramat d'ovelles toses que pugen del bany, totes amb bessons, cap d'elles estèril.
 
 **4:3** Com un fil escarlata són els teus llavis, i la teva parla és encisadora. Com mitja magrana, les teves temples darrere el teu vel.
 
@@ -155,9 +155,9 @@ Traduït de l'hebreu per Biblioteca Arion
 
 **5:7** M'han trobat els guàrdies que fan la ronda per la ciutat; m'han colpejat, m'han ferit; els guàrdies de les muralles m'han pres el mantell.
 
-**5:8** Us conjuro, filles de Jerusalem: si trobeu el meu estimat, què li direu? Que estic malalta d'amor.
+**5:8** Us conjuro, filles de Jerusalem: si trobeu el meu estimat, que li direu? Que estic malalta d'amor.
 
-**5:9** Què té el teu estimat més que un altre, la més bella de les dones? Què té el teu estimat més que un altre, que així ens conjures?
+**5:9** Que té el teu estimat més que un altre, la més bella de les dones? Que té el teu estimat més que un altre, que així ens conjures?
 
 **5:10** El meu estimat és blanc i vermell, distingit entre deu mil.
 
@@ -203,7 +203,7 @@ Traduït de l'hebreu per Biblioteca Arion
 
 ## Capítol 7
 
-**7:1** Torna, torna, Sulamita! Torna, torna, que et contemplem! Què veieu en la Sulamita? Com la dansa dels dos campaments.
+**7:1** Torna, torna, Sulamita! Torna, torna, que et contemplem! Que veieu en la Sulamita? Com la dansa dels dos campaments.
 
 **7:2** Que bells són els teus peus amb sandàlies, filla de príncep! Les corbes dels teus malucs són com joies, obra de mans d'artesà.
 
@@ -240,7 +240,7 @@ Traduït de l'hebreu per Biblioteca Arion
 
 **8:3** La seva esquerra sota el meu cap, i la seva dreta m'abraça.
 
-**8:4** Us conjuro, filles de Jerusalem: per què despertareu i per què desvetllareu l'amor fins que vulgui?
+**8:4** Us conjuro, filles de Jerusalem: per que despertareu i per que desvetllareu l'amor fins que vulgui?
 
 **8:5** Qui és aquesta que puja del desert, recolzada sobre el seu estimat? Sota el pomer t'he despertat; allà on la teva mare et va concebre, allà on va infantar la que et va donar a llum.
 
@@ -248,7 +248,7 @@ Traduït de l'hebreu per Biblioteca Arion
 
 **8:7** Les aigües abundants no poden apagar l'amor, ni els rius ofegar-lo. Si algú donés tota la hisenda de la seva casa per l'amor, el menysprearan del tot.
 
-**8:8** Tenim una germana petita que encara no té pits. Què farem per la nostra germana el dia que es parli d'ella?
+**8:8** Tenim una germana petita que encara no té pits. Que farem per la nostra germana el dia que es parli d'ella?
 
 **8:9** Si és una muralla, hi bastiran merlets de plata; si és una porta, la tancaran amb posts de cedre.
 
