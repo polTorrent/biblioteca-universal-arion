@@ -1,5 +1,3 @@
-# שיר השירים — Càntic dels Càntics (Song of Songs)
-
 **Llengua original**: hebreu bíblic
 
 **Font**: Sefaria.org — Miqra According to the Masorah (CC BY-SA)
