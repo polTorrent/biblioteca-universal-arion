@@ -1,19 +1,28 @@
 obra:
-  titol: La Sala número 6
-  autor: Anton Txèkhov
-  traductor: Biblioteca Arion (IA + comunitat)
+  titol: "La Sala número 6"
+  titol_original: "Палата № 6"
+  autor: "Anton Txèkhov"
+  autor_original: "Антон Павлович Чехов"
+  traductor: "Biblioteca Arion (IA + comunitat)"
+  any_original: 1892
   any_traduccio: 2026
-  llengua_original: anglès
-  genere: narrativa
-  descripcio: ''
+  llengua_original: "rus"
+  llengua_intermedia: "anglès"
+  categoria: "narrativa"
+  genere: "narrativa curta"
+  descripcio: "Relat llarg sobre un metge d'un hospital psiquiàtric provincial que acaba qüestionant la frontera entre raó i follia."
+  font_original: "https://www.gutenberg.org/ebooks/13409"
+  nota_font: "Dins 'The Horse-Stealers and Other Stories', traducció anglesa de Constance Garnett (domini públic)"
+  seccions: 19
   estadistiques:
+    paraules_original: 18000
     paraules_traduccio: 16463
 revisio:
-  estat: necessita_correccio
-  data_revisio: '2026-03-15'
+  estat: "necessita_correccio"
+  data_revisio: "2026-03-15"
   qualitat: 4.0
 avaluacio_final:
-  data: '2026-03-07T14:41:52.316657'
+  data: "2026-03-07T14:41:52.316657"
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0

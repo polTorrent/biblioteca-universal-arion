@@ -10,7 +10,9 @@ obra:
   descripcio: 'Llibre I del Panchatantra: ''La pèrdua dels amics'' (Mitrabheda). Col·lecció
     de faules i contes encadenats sobre la intriga, l''amistat i la traïció, amb morals
     en vers.'
+  categoria: narrativa
   genere: narrativa
+  font_original: https://www.gutenberg.org/ebooks/25512
   notes: Traducció basada en la versió anglesa d'Arthur W. Ryder (1925), domini públic.
   estadistiques: {}
 seccions: 1
