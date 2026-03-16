@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-06T23:02:56.968285",
-    "ultima_activitat": "2026-03-16T16:42:51.002224"
+    "ultima_activitat": "2026-03-16T16:59:40.119272"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -65,11 +65,11 @@
       "chunk_42",
       "chunk_43"
     ],
-    "en_curs": "chunk_29",
+    "en_curs": "chunk_39",
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.96,
+    "qualitat_mitjana": 0.9,
     "temps_total_min": 14.56
   },
   "errors": [
@@ -246,7 +246,16 @@
     "[16:27:42] Error chunk 22: El CLI ha retornat una resposta buida (sense contingut)",
     "[16:29:39] Error chunk 23: El CLI ha retornat una resposta buida (sense contingut)",
     "[16:31:34] Error chunk 24: El CLI ha retornat una resposta buida (sense contingut)",
-    "[16:42:51] Error chunk 28: El CLI ha retornat una resposta buida (sense contingut)"
+    "[16:42:51] Error chunk 28: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:44:36] Error chunk 29: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:47:15] Error chunk 30: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:48:54] Error chunk 31: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:50:36] Error chunk 32: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:54:49] Error chunk 34: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:55:26] Error chunk 35: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:57:20] Error chunk 36: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:59:00] Error chunk 37: El CLI ha retornat una resposta buida (sense contingut)",
+    "[16:59:40] Error chunk 38: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[23:03:42] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='noruec', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
