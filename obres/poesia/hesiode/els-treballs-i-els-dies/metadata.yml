@@ -7,6 +7,7 @@ obra:
   any_original: c. 700 aC
   any_traduccio: 2026
   llengua_original: grec
+  categoria: poesia
   genere: poesia
   subgenere: poesia didàctica
   descripcio: >
@@ -22,6 +23,7 @@ obra:
     - mitologia grega
     - ètica
     - calendari agrícola
+font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0132"
 seccions: 8
 estadistiques:
   paraules_original: 5856
