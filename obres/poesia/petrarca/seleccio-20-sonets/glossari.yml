@@ -1,0 +1,65 @@
+obra:
+  titol: "Selecció de 20 Sonets del Canzoniere"
+  autor: "Francesco Petrarca"
+  llengua_original: "italià"
+
+termes:
+  - original: "amore"
+    traduccio: "amor"
+    notes: "Concepte central del Canzoniere, amor cortès idealitzat"
+
+  - original: "Laura"
+    traduccio: "Laura"
+    notes: "Nom de la dona estimada, possible joc de mots amb 'l'aura' (brisa) i 'lauro' (llorer)"
+
+  - original: "sonetto"
+    traduccio: "sonet"
+    notes: "Composició de 14 versos, estructura ABBA ABBA CDC DCD o variants"
+
+  - original: "dolce"
+    traduccio: "dolç"
+    notes: "Epítet recurrent associat a Laura i als records"
+
+  - original: "sospiri"
+    traduccio: "sospirs"
+    notes: "Motiu líric constant, expressió del patiment amorós"
+
+  - original: "pianto"
+    traduccio: "plor"
+    notes: "El plor com a expressió del dolor i la pèrdua"
+
+  - original: "occhi"
+    traduccio: "ulls"
+    notes: "Els ulls de Laura, font de llum i de turment"
+
+  - original: "vago"
+    traduccio: "bell / encisador"
+    notes: "Adjectiu polisèmic: bonic, errant, desitjós"
+
+  - original: "rime sparse"
+    traduccio: "rimes disperses"
+    notes: "Subtítol del Canzoniere (Rerum vulgarium fragmenta)"
+
+  - original: "in vita / in morte"
+    traduccio: "en vida / en mort"
+    notes: "Divisió del Canzoniere: sonets escrits en vida i després de la mort de Laura"
+
+  - original: "gentile"
+    traduccio: "gentil / noble"
+    notes: "Atribut de noblesa espiritual, no social"
+
+  - original: "cor / cuore"
+    traduccio: "cor"
+    notes: "Seu de les emocions i del conflicte interior"
+
+  - original: "alma / anima"
+    traduccio: "ànima"
+    notes: "L'ànima en tensió entre amor terrenal i espiritual"
+
+  - original: "canzoniere"
+    traduccio: "cançoner"
+    notes: "Recull de poemes lírics, títol de l'obra principal de Petrarca"
+
+  - original: "volgare"
+    traduccio: "vulgar / vernacle"
+    notes: "Llengua italiana en oposició al llatí, Petrarca escriu en volgare toscà"
