@@ -1,5 +1,36 @@
 # CLAUDE.md — Biblioteca Universal Arion
 
+## 🛑 MODE CONSOLIDACIÓ (actiu)
+
+**NO CREAR TÍTOLS NOUS.** El catàleg té ~100 obres i moltes tenen problemes.
+Dedica't EXCLUSIVAMENT a millorar les obres existents.
+
+### Problemes a resoldre (per ordre de prioritat):
+1. **CRÍTIC**: Obres sense original.md o amb contingut inventat/placeholder
+2. **CRÍTIC**: Traduccions incompletes (<30% de l'original) o inventades
+3. **ALT**: Fonts originals sense URL verificable al metadata.yml
+4. **ALT**: Castellanismes i errors de normativa a les traduccions
+5. **MITJÀ**: Glossaris inexistents o YAML invàlid
+6. **MITJÀ**: Notes referenciades [^N] que no existeixen a notes.md
+7. **BAIX**: Portades inexistents o placeholders
+8. **BAIX**: Obres que no apareixen a la web (falta build)
+
+### Workflow del worker en mode consolidació:
+1. Executa `bash scripts/auditar-cataleg.sh --fix` per generar tasques
+2. Processa les tasques per ordre de prioritat (priority 1 primer)
+3. Quan no hi ha tasques pendents, torna a executar l'auditoria
+4. Si tot és ✅, avisa i espera noves instruccions
+
+### Què NO fer:
+- NO afegir obres noves a obra-queue.json
+- NO executar consell-editorial.sh
+- NO proposar títols nous al brain
+- NO crear tasques de tipus "fetch" o "translate" per obres que no existeixin ja
+
+### Com saber si una obra necessita atenció:
+- Executa: bash scripts/auditar-cataleg.sh
+- Mira config/auditoria.json
+
 ## 1. Visió del projecte
 
 Biblioteca oberta de traduccions al **català** d'obres clàssiques universals (filosofia, narrativa, poesia, textos orientals). Edició crítica bilingüe amb glossari, notes i context acadèmic.

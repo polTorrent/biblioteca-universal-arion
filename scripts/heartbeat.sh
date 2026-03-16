@@ -895,12 +895,36 @@ trap '_heartbeat_start_openclaw' EXIT
 check_failed                 # 1. Recuperar fallides (mou fitxers dins tasks/)
 check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPRE corre
 
+# ═══ MODE CONSOLIDACIÓ: auditoria i reparació ═══
+echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
+AUDIT_LAST="$REPO/config/.last_audit"
+AUDIT_INTERVAL=14400  # cada 4 hores
+REPO="$PROJECT"
+
+should_audit=false
+if [ ! -f "$AUDIT_LAST" ]; then
+    should_audit=true
+else
+    last=$(cat "$AUDIT_LAST")
+    now=$(date +%s)
+    if [ $((now - last)) -gt $AUDIT_INTERVAL ]; then
+        should_audit=true
+    fi
+fi
+
+if [ "$should_audit" = true ]; then
+    bash "$REPO/scripts/auditar-cataleg.sh" --fix
+    date +%s > "$AUDIT_LAST"
+    echo "[$(date)] ✅ Auditoria completada, tasques generades"
+fi
+
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
     log "✅ Cua plena ($PENDING). Saltant tasques noves."
 else
     # Només si hi ha espai a la cua:
     check_supervision        # 2. ⭐ SUPERVISIÓ
-    check_translations       # 3. Noves traduccions
+    # 🛑 CONSOLIDACIÓ: desactivat — no crear fetch/translate per obres noves
+    # check_translations       # 3. Noves traduccions
     check_web_sync           # 4. Web sincronitzada
     check_quick_issues       # 4b. Comprovació ràpida obres validades
     check_code_reviews       # 5. Code reviews
