@@ -1,4 +1,3 @@
-# 能三番：松風・敦盛・羽衣
 **Autor:** 世阿弥元清 (Zeami Motokiyo, c. 1363–1443)
 **Font:** Textos clàssics del repertori de Nō (謡曲), domini públic
 **Llengua:** japonès clàssic (中世日本語)
