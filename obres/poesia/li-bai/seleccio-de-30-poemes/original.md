@@ -1,4 +1,3 @@
-# 李白詩選三十首
 ## Selecció de 30 poemes de Li Bai (李白, 701–762)
 
 ---

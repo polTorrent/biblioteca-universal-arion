@@ -1,0 +1,43 @@
+{
+  "sessio_id": "li-bai-selecció-de-30-poeme-2026-03-16",
+  "obra": {
+    "autor": "Li Bai",
+    "titol": "Selecció de 30 poemes",
+    "llengua": "xinès"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T19:05:28.298626",
+    "ultima_activitat": "2026-03-16T19:16:29.559924"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 3,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 11.02
+  },
+  "errors": [
+    "[19:10:48] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:13:08] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:16:01] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[19:08:17] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
