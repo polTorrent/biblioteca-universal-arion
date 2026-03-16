@@ -16,6 +16,7 @@ obra:
   categoria: oriental
   genere: haibun (prosa poètica amb haiku)
   font: 'Wikisource japonès (底本: 三宅邦吉『新釈奥の細道』, 籾山書店, 1911)'
+  font_original: 'https://ja.wikisource.org/wiki/おくのほそ道'
 seccions: 1
 estadistiques:
   paraules_original: ~4500
