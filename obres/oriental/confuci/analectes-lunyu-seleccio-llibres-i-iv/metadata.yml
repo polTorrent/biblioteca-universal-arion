@@ -16,11 +16,11 @@ obra:
     i la benevolència (仁, rén).
 seccions: 4
 estadistiques:
-  paraules_original: 3089
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 3420
+  paraules_traduccio: 4285
+  notes: 12
+  termes_glossari: 22
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 8.0
+  data_revisio: "2026-03-16"
