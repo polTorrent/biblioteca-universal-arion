@@ -1,23 +1,23 @@
 obra:
-  titol: Masnavi — Selecció de 10 contes
-  titol_original: مثنوی معنوی — Mesnevī-yi Ma'nevī
-  autor: Jalal al-Din Rumi (Mevlānā)
-  autor_original: جلال‌الدین محمد بلخی
-  traductor: Biblioteca Arion
-  any_original: c. 1258-1273
+  titol: "Masnavi — Selecció de 10 contes"
+  titol_original: "مثنوی معنوی — Mesnevī-yi Ma'nevī"
+  autor: "Jalal al-Din Rumi (Mevlānā)"
+  autor_original: "جلال‌الدین محمد بلخی"
+  traductor: "Biblioteca Arion"
+  any_original: "c. 1258-1273"
   any_traduccio: 2026
-  llengua_original: anglès (trad. Redhouse 1881, de l'original persa)
-  descripcio: 'Selecció dels 10 contes del Llibre Primer del Masnavi de Rumi, l''obra
-    mestra de la poesia mística sufí. Inclou el Proemi (Plany de la flauta de canya)
-    i els 10 contes al·legòrics que exploren la separació de l''ànima respecte de
-    Déu, l''amor diví, la guerra interior contra l''ego, la necessitat d''un mestre
-    espiritual, i la confiança en Déu. Traduït a partir de la versió anglesa de James
-    W. Redhouse (1881), de domini públic (Gutenberg #61724).
-
-    '
-  font: https://www.gutenberg.org/ebooks/61724
+  llengua_original: "persa (traduït de l'anglès de Redhouse, 1881)"
+  descripcio: >
+    Selecció dels 10 contes del Llibre Primer del Masnavi de Rumi, l'obra
+    mestra de la poesia mística sufí. Inclou el Proemi (Plany de la flauta
+    de canya) i els 10 contes al·legòrics que exploren la separació de
+    l'ànima respecte de Déu, l'amor diví, la guerra interior contra l'ego,
+    la necessitat d'un mestre espiritual, i la confiança en Déu. Traduït a
+    partir de la versió anglesa de James W. Redhouse (1881), de domini públic
+    (Gutenberg #61724).
+  font_original: "https://www.gutenberg.org/ebooks/61724"
   categoria: oriental
-  genere: poesia mística
+  genere: "poesia mística"
 seccions: 11
 estadistiques:
   paraules_original: 4200
@@ -25,6 +25,6 @@ estadistiques:
   notes: 18
   termes_glossari: 20
 revisio:
-  estat: revisat
+  estat: "revisat"
   qualitat: 7.5
-  data_revisio: '2026-03-16'
+  data_revisio: "2026-03-16"
