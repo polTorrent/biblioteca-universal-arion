@@ -3,18 +3,17 @@ obra:
   titol_original: भगवद्गीता
   autor: Vyāsa (Vedavyāsa)
   autor_original: वेदव्यास
-  traductor: Editorial Clàssica
+  traductor: Biblioteca Arion
   any_original: c. s. V-II aC
   any_traduccio: 2026
   llengua_original: sànscrit
   categoria: oriental
   font_original: https://sa.wikisource.org/wiki/श्रीमद्भगवद्गीता
-  descripcio: 'Selecció de sis capítols del Bhagavad Gītā, el diàleg filosòfic entre
-    Arjuna i Kṛṣṇa al camp de batalla de Kurukṣetra, part del Mahābhārata. Capítols
-    seleccionats: 1 (Desànim d''Arjuna), 2 (Sāṅkhya), 3 (Karma), 6 (Domini de si mateix),
-    11 (Visió de la forma universal), 12 (Devoció).
-
-    '
+  descripcio: >
+    Selecció de sis capítols del Bhagavad Gītā, el diàleg filosòfic entre
+    Arjuna i Kṛṣṇa al camp de batalla de Kurukṣetra, part del Mahābhārata.
+    Capítols seleccionats: 1 (Desànim d'Arjuna), 2 (Sāṅkhya), 3 (Karma),
+    6 (Domini de si mateix), 11 (Visió de la forma universal), 12 (Devoció).
   capitols_seleccionats:
   - 1: Arjunaviṣādayogaḥ — El ioga del desànim d'Arjuna
   - 2: Sāṅkhyayogaḥ — El ioga del coneixement
@@ -22,32 +21,14 @@ obra:
   - 6: Ātmasaṃyamayogaḥ — El ioga del domini de si mateix
   - 11: Viśvarūpadarśanayogaḥ — El ioga de la visió de la forma universal
   - 12: Bhaktiyogaḥ — El ioga de la devoció
-  estadistiques:
-    paraules_traduccio: 474
 seccions: 6
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 3777
+  paraules_traduccio: 7635
   versos: 290
   notes: 0
   termes_glossari: 20
 revisio:
   estat: revisat
-  qualitat: 7.0
+  qualitat: 8.0
   data_revisio: '2026-03-16'
-avaluacio_final:
-  data: '2026-03-16T21:11:32.092143'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 3
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 2
