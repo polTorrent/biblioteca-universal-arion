@@ -1,4 +1,7 @@
 #!/bin/bash
+# 🛑 MODE CONSOLIDACIÓ ACTIU (des de 2026-03-16)
+# No es generen títols nous. Només millores del catàleg existent.
+# Per reactivar: eliminar els "return 0" i descomentar les línies marcades
 # =============================================================================
 # system-brain.sh — Cervell intel·ligent del sistema Arion
 # =============================================================================
@@ -255,6 +258,7 @@ brain_add_task() {
 # 2. PROPOSTES INTEL·LIGENTS DE TRADUCCIÓ
 # =============================================================================
 propose_translations() {
+    return 0  # 🛑 CONSOLIDACIÓ: no proposar traduccions noves
     brain_log "📚 Proposant traduccions intel·ligents..."
 
     [ ! -f "$QUEUE" ] && { brain_log "   No hi ha obra-queue.json"; return; }
@@ -749,6 +753,7 @@ with open(roadmap_path, 'w') as f:
 # CONSELL EDITORIAL — Manté la obra-queue.json plena
 # =============================================================================
 run_consell_editorial() {
+    return 0  # 🛑 CONSOLIDACIÓ: consell editorial pausat
     brain_log "📚 Consell Editorial — Comprovant cua d'obres..."
 
     local pending

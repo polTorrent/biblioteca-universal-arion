@@ -1,4 +1,5 @@
 #!/bin/bash
+exit 0  # 🛑 MODE CONSOLIDACIÓ — consell editorial pausat
 # =============================================================================
 # consell-editorial.sh — Agent autònom del Consell Editorial
 # =============================================================================
