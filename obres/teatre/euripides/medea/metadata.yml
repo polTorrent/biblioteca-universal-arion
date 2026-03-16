@@ -1,14 +1,19 @@
 obra:
-  titol: "Medea"
-  titol_original: "Μήδεια"
-  autor: "Eurípides"
-  autor_original: "Εὐριπίδης"
-  traductor: "Editorial Clàssica"
-  any_original: "431 aC"
+  titol: Medea
+  titol_original: Μήδεια
+  autor: Eurípides
+  autor_original: Εὐριπίδης
+  traductor: Editorial Clàssica
+  any_original: 431 aC
   any_traduccio: 2026
-  llengua_original: "grec"
-  categoria: "teatre"
-  descripcio: "Tragèdia grega sobre Medea, princesa de la Còlquida, que es venja de Jàson després que aquest l'abandoni per casar-se amb la filla del rei de Corint. Una de les obres més poderoses del teatre antic sobre la passió, la traïció i la venjança."
+  llengua_original: grec
+  categoria: teatre
+  descripcio: Tragèdia grega sobre Medea, princesa de la Còlquida, que es venja de
+    Jàson després que aquest l'abandoni per casar-se amb la filla del rei de Corint.
+    Una de les obres més poderoses del teatre antic sobre la passió, la traïció i
+    la venjança.
+  estadistiques:
+    paraules_traduccio: 1417
 seccions: 1
 estadistiques:
   paraules_original: 8564
@@ -16,6 +21,22 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: null
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-16'
+avaluacio_final:
+  data: '2026-03-16T17:14:45.924609'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 1508
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 1504

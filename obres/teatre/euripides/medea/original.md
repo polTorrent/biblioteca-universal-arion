@@ -1,4 +1,3 @@
-# Μήδεια (Medea)
 **Autor:** Εὐριπίδης (Eurípides)
 **Font:** [Wikisource (el)](https://el.wikisource.org/wiki/%CE%9C%CE%AE%CE%B4%CE%B5%CE%B9%CE%B1)
 **Llengua:** grec antic

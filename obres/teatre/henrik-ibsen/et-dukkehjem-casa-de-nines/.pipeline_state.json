@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-06T23:02:56.968285",
-    "ultima_activitat": "2026-03-16T16:59:40.119272"
+    "ultima_activitat": "2026-03-16T17:08:39.795666"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -65,12 +65,12 @@
       "chunk_42",
       "chunk_43"
     ],
-    "en_curs": "chunk_39",
+    "en_curs": null,
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.9,
-    "temps_total_min": 14.56
+    "qualitat_mitjana": 0.96,
+    "temps_total_min": 62.39
   },
   "errors": [
     "[23:07:57] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
@@ -255,7 +255,11 @@
     "[16:55:26] Error chunk 35: El CLI ha retornat una resposta buida (sense contingut)",
     "[16:57:20] Error chunk 36: El CLI ha retornat una resposta buida (sense contingut)",
     "[16:59:00] Error chunk 37: El CLI ha retornat una resposta buida (sense contingut)",
-    "[16:59:40] Error chunk 38: El CLI ha retornat una resposta buida (sense contingut)"
+    "[16:59:40] Error chunk 38: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:06:41] Error chunk 40: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:08:30] Error chunk 41: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":289,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 7pm (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"2e668b4e-7ade-4b61-82aa-c57549f2f7b9\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"f7073396-8806-41f2-8f09-ae30f3969310\"}\n",
+    "[17:08:35] Error chunk 42: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":303,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 7pm (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"b2cff77a-0d3c-4d96-9dfe-f5bf98c6f42c\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"a5d70fe4-0cb3-41a7-85f1-d630ae62380c\"}\n",
+    "[17:08:39] Error chunk 43: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":300,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 7pm (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"2c3d89ce-d317-45a7-a5b5-fafa30aec844\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"f727fc97-ca5d-466e-906e-a17bb5c5fdc5\"}\n"
   ],
   "warnings": [
     "[23:03:42] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès' or 'xinès' [type=literal_error, input_value='noruec', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",

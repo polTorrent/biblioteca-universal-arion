@@ -1,0 +1,40 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Adam Bernard Mickiewicz (1798-1855), Zaosie, prop de Nowogródek (actual Belarus, llavors República de les Dues Nacions). Poeta, dramaturg i activista polític polonès, considerat el bard nacional de Polònia i la figura més important del romanticisme polonès. Va viure gran part de la seva vida en l'exili, primer a Rússia i després a França, a causa de les seves activitats independentistes.",
+    "context_historic": "Època de les particions de Polònia (1772-1795) i posterior dominació russa, període del romanticisme europeu i dels moviments nacionals. Polònia havia perdut la seva independència i estava dividida entre Rússia, Prússia i Àustria.",
+    "context_obra": "Sonety krymskie (1825-1826) - cicle de sonets lírics. Escrits durant l'exili administratiu de Mickiewicz a Crimea (1825-1826), després de la seva implicació en organitzacions estudiantils independentistes. El viatge per la península li va proporcionar una experiència exòtica que va plasmar en aquests versos.",
+    "influencies": [
+      "Lord Byron",
+      "romanticisme occidental",
+      "tradició literària polonesa",
+      "folklore lituà i bielorús",
+      "orientalisme romàntic"
+    ],
+    "temes_principals": [
+      "nostàlgia per la pàtria perduda",
+      "exotisme oriental",
+      "paisatges de les estepes",
+      "amor i passió",
+      "diàleg entre cultures (eslava i tàrtara)"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Khan Giray",
+    "[H] Personatge històric: Zeida",
+    "[H] Personatge històric: Maria Potocka",
+    "[H] Personatge històric: tàrtars de Crimea",
+    "[C] Referència cultural: Akerman (fortalesa de Bilhorod-Dnistrovskyi)",
+    "[C] Referència cultural: Dniestr",
+    "[C] Referència cultural: estepes de Crimea",
+    "[C] Referència cultural: Bakhchysarai",
+    "[C] Referència cultural: cultura tàrtara",
+    "[C] Referència cultural: tradicions otomanes",
+    "[T] Terme tècnic: kurhan (túmul funerari)",
+    "[T] Terme tècnic: burzán (mala herba estèpica)",
+    "[T] Terme tècnic: żuraw (grua, ocell migratori)",
+    "[T] Terme tècnic: akyn (poeta popular tàrtar)"
+  ]
+}
