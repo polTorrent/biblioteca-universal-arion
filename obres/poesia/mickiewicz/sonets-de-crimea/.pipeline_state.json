@@ -7,33 +7,39 @@
   },
   "timestamps": {
     "inici": "2026-03-16T19:01:10.222068",
-    "ultima_activitat": "2026-03-16T19:02:26.587324"
+    "ultima_activitat": "2026-03-16T19:12:45.253634"
   },
-  "fase_actual": "traduccio",
+  "fase_actual": "anotacio",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 4,
     "completats": [
-      "chunk_1"
-    ],
-    "en_curs": "chunk_2",
-    "pendents": [
+      "chunk_1",
+      "chunk_2",
       "chunk_3",
       "chunk_4"
-    ]
+    ],
+    "en_curs": null,
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.0,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 1.5,
+    "temps_total_min": 11.58
   },
   "errors": [
-    "[19:02:26] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)"
+    "[19:02:26] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:05:48] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:11:37] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
-    "[19:01:49] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='polonès', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+    "[19:01:49] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='polonès', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
+    "[19:12:45] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
   ]
 }

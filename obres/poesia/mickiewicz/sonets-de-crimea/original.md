@@ -1,5 +1,3 @@
-# Sonety krymskie — Adam Mickiewicz
-
 ## I. Stepy akermańskie
 
 Wpłynąłem na suchego przestwór Oceanu,

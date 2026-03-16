@@ -12,11 +12,11 @@ obra:
   font_original: "https://pl.wikisource.org/wiki/Sonety_krymskie"
 seccions: 18
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 1819
+  paraules_traduccio: 2474
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 19
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: "2026-03-16"
