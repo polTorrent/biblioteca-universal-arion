@@ -15,6 +15,8 @@ obra:
 
     '
   font_original: https://no.wikisource.org/wiki/Et_dukkehjem
+  estadistiques:
+    paraules_traduccio: 5852
 seccions: 3
 estadistiques:
   paraules_original: 25921
@@ -22,6 +24,22 @@ estadistiques:
   notes: 0
   termes_glossari: 14
 revisio:
-  estat: traduït
-  qualitat: 7.5
+  estat: revisat
+  qualitat: 6.14
   data_revisio: '2026-03-16'
+avaluacio_final:
+  data: '2026-03-16T17:08:58.227203'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 159
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 150

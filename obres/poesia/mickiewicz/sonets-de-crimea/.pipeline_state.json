@@ -1,0 +1,36 @@
+{
+  "sessio_id": "adam-mickiewicz-sonets-de-crimea-2026-03-16",
+  "obra": {
+    "autor": "Adam Mickiewicz",
+    "titol": "Sonets de Crimea",
+    "llengua": "polonès"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T19:01:10.222068",
+    "ultima_activitat": "2026-03-16T19:01:49.799698"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 4,
+    "completats": [],
+    "en_curs": "chunk_1",
+    "pendents": [
+      "chunk_2",
+      "chunk_3",
+      "chunk_4"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": [
+    "[19:01:49] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='polonès', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
