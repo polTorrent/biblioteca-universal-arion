@@ -1,0 +1,100 @@
+# Glossari — Et dukkehjem (Casa de nines)
+# Henrik Ibsen, 1879
+# Termes clau noruec → català
+
+termes:
+  - original: "et dukkehjem"
+    traduccio: "una casa de nines"
+    notes: "Títol de l'obra. 'Dukke' = nina/ninot; 'hjem' = llar. Metàfora de la vida domèstica artificial."
+
+  - original: "lerkefugl"
+    traduccio: "alosa"
+    notes: "Sobrenom que Helmer usa per a Nora. Literalment 'ocell alosa'. Símbol de la dona cantaire i submisa."
+
+  - original: "sanglerke"
+    traduccio: "alosa cantaire"
+    notes: "Variant de 'lerkefugl'. Helmer l'usa com a terme afectuós i possessiu."
+
+  - original: "ekorn"
+    traduccio: "esquirol"
+    notes: "Segon sobrenom animal que Helmer dona a Nora. Connotació de criatura petita i activa."
+
+  - original: "spillefugl"
+    traduccio: "malgastadora"
+    notes: "Literalment 'ocell que malgasta'. Helmer l'usa per referir-se als hàbits de despesa de Nora."
+
+  - original: "slikkmunnen"
+    traduccio: "la llepaire"
+    notes: "Literalment 'boca de llepolies'. Helmer ho diu referint-se a l'afició de Nora pels dolços."
+
+  - original: "makroner"
+    traduccio: "macarons"
+    notes: "Dolços prohibits per Helmer. Símbol de la petita rebel·lia secreta de Nora."
+
+  - original: "juletræ"
+    traduccio: "arbre de Nadal"
+    notes: "Element escènic central del primer acte. Símbol de la felicitat domèstica aparent."
+
+  - original: "gjeld"
+    traduccio: "deute"
+    notes: "Tema central de l'obra. El deute secret de Nora és el motor del conflicte dramàtic."
+
+  - original: "veksel"
+    traduccio: "lletra de canvi"
+    notes: "Document financer falsificat per Nora. Element clau de la trama."
+
+  - original: "forfalskning"
+    traduccio: "falsificació"
+    notes: "El crim de Nora: falsificar la signatura del seu pare en una lletra de canvi."
+
+  - original: "forstue"
+    traduccio: "vestíbul"
+    notes: "Espai liminal entre l'interior domèstic i l'exterior. Recurrent en les acotacions."
+
+  - original: "stue"
+    traduccio: "sala d'estar"
+    notes: "Espai principal on transcorre l'acció. Descrit com 'hyggelig og smakfullt'."
+
+  - original: "tarantella"
+    traduccio: "tarantel·la"
+    notes: "Dansa napolitana que Nora balla al segon acte. Símbol del seu estat emocional desesperat."
+
+  - original: "det vidunderlige"
+    traduccio: "el meravellós"
+    notes: "Concepte clau. Nora espera 'det vidunderlige' — que Helmer assumeixi la culpa per ella. Al final, renuncia a aquesta il·lusió."
+
+  - original: "pligt"
+    traduccio: "deure"
+    notes: "Tema filosòfic central del tercer acte. Nora qüestiona els seus 'pligter' (deures) com a esposa i mare."
+
+  - original: "lov"
+    traduccio: "llei"
+    notes: "Nora descobreix que la llei no reconeix les seves motivacions. Conflicte entre llei moral i llei positiva."
+
+  - original: "bybud"
+    traduccio: "missatger"
+    notes: "Recader de ciutat. Apareix breument al primer acte."
+
+  - original: "doktor Rank"
+    traduccio: "doctor Rank"
+    notes: "Amic de la família. Malalt terminal, representa la mortalitat i la veritat sota les aparences."
+
+  - original: "Krogstad"
+    traduccio: "Krogstad"
+    notes: "Antagonista. Advocat desacreditat que xantatge Nora amb la lletra falsificada."
+
+  - original: "fru Linde"
+    traduccio: "senyora Linde"
+    notes: "Kristine Linde. Amiga de Nora, dona independent que ha viscut sola. Contrapunt de Nora."
+
+  - original: "barnepike"
+    traduccio: "mainadera"
+    notes: "La dida/cuidadora dels fills. Anne-Marie al text."
+
+  - original: "gasje"
+    traduccio: "sou"
+    notes: "Salari. Helmer acaba de ser nomenat director de banc amb un bon sou."
+
+  - original: "bankdirektør"
+    traduccio: "director de banc"
+    notes: "Nou càrrec de Helmer que desencadena els esdeveniments de l'obra."
