@@ -33,11 +33,11 @@ de la seva ànima cap home no ha vist el vol.
 Una flama és el plany de la flauta, no pas un alè;
 qui no sent aquesta flama, que mori, doncs bé.
 La flama de l'amor és la que mou la flauta,
-la fermentació del vi, l'amor; mai no és fauta.                           10
+la fermentació del vi, l'amor; mai no hi falta.                           10
 La flauta de l'amant absent no és cap joguina;
 els seus trins proclamen dolor i goig que afina.
 Verí o cura, la flauta roman;
-contenta, planyent, com vulgueu, tant se val, tant se van.
+contenta o planyent, com vulgueu, tant se val.
 Conta la seva història de dolor cremant;
 relata com l'amor és foll, en breu instant.
 L'amant coneix millor les penes de l'amant;
@@ -79,7 +79,7 @@ Qui no sent de l'amor la flama que tot vivifica,
 Puc estar quiet, serè, content,
 quan la meva delícia és lluny? No! Dolent.
 L'amor mana al meu plany que tota cadena esclati.
-El cor em rebentaria, de silenci maleït per fati.
+El cor em rebentaria, de silenci maleït pel fat.
 Un mirall es mostra millor quan és brillant;
 enterbolit de rovell, el seu llum es va apagant.
 Doncs, neteja'n tota impura aliança;
@@ -118,7 +118,7 @@ molt d'or, amb joies, serà seu; i gràcies sense mida.»                   10
 Tots van prometre meravelles; cadascú, usar la seva art;
 examinar el cas; alleujar el mal de la donzella en tota part.
 «Cadascú de nosaltres té el poder guaridor de Jesús [59].
-De tots els seus mals curem els homes cada hora, sens confús.»
+De tots els seus mals curem els homes cada hora, sense falla.»
 Per orgull, «si Déu vol» no van dir, ben cert. [60]
 La nul·litat de l'home, en ells Déu volia fer desert.
 És a dir — ometre aquesta santa paraula
@@ -166,7 +166,7 @@ i ser el primer a albirar l'estranger que ha de venir.
 Un va veure de gest majestuós i ple,
 de resplendor suau — com el sol entre núvols, va entendre bé;
 o lluna plena — així semblava de lluny.
-Les fantasies sempre desfiguren els objectes al seu puny.
+Les fantasies sempre desfiguren els objectes al seu pas.
 Coses inexistents sovint el deliri les pinta;
 veiem la humanitat enganyada per les fintes.                               35
 La seva pau, la seva guerra, sovint per una quimera;
@@ -205,7 +205,7 @@ quan cistelles als captaires van repartir amb zel.                         50
 Jesús va proclamar que el miracle duraria;
 que el menjar mai no mancaria com en el passat seria.
 Els homes van dubtar, en van demanar més per emmagatzemar;
-no van confiar en la paraula de Déu per al pa de cada sendemar.
+no van confiar en la paraula de Déu per al pa de cada dia.
 Impertinents aquells suplicants, plens d'avidesa;
 la porta de misericòrdia del cel es va tancar amb fermesa.
 
@@ -239,7 +239,7 @@ l'essència del proverbi: "Amb paciència, tot s'ha vençut."                65
 Aquesta trobada és la recompensa de tota la meva pregària;
 tu resoldràs l'enigma de la meva fosca desesperança precària.
 L'expositor, tu, de tots els desitjos de la meva ànima;
-tu m'extricularàs dels fondals dels pantans de l'angoixa unànima.
+tu em trauràs dels fondals dels pantans de l'angoixa unànime.
 Sigues benvingut, doncs; un veritable amic en la necessitat;
 si t'haguessis retardat, el meu cas fóra ben lamentat.
 Príncep dels metges! Qui no et donaria la benvinguda,
@@ -259,7 +259,7 @@ Protegiu-nos, cel! Quina germandat de torps i confesos!»
 Va veure el seu turment; d'allí va endevinar el seu mal.
 El secret va guardar; amagat el va tenir tal qual.                         75
 La malaltia no era causada per bilis ni melsa.
-El perfum de l'essència es flaire millor que no es delsa.
+El perfum de l'essència es percep millor del que es descriu.
 Va traçar el seu patiment a una ment oprimida;
 el cos sa, l'ànima amb un desig suprimit a la vida.
 Les seves vacil·lacions li van fer endevinar l'amor;
@@ -325,7 +325,7 @@ llevat del metge i la pacient; cap altre no s'hi veié.
 Amb els tons més gentils va preguntar: «On era la teva llar?
 Doncs per cada poble un remei diferent s'ha de trobar.
 Quins amics, quina família has deixat enrere—
-companys, companyes de joc, que et tractaven amb cor de vere?»
+companys, companyes de joc, que et tractaven amb cor sincer?»
 Sobre el pols el dit. Llavors, un per un,
 va inquirir de nou cada punt, sense ometre'n cap, gens oportú.
 
@@ -359,7 +359,7 @@ Va preguntar: «En deixar tu la teva vila natal,
 on va ser que els teus tutors et van posar al final?»
 
 Un lloc va dir, i va passar a d'altres;
-ni rubor ni pols van donar senyal, d'entrambaltres.
+ni rubor ni pols van donar senyal, d'ambdós.
 De senyors i ciutadans va fer informe,
 de festivals i llocs de gai esbarjo de bona forma.                        135
 Vila rere vila, casa rere casa, per nom,
@@ -471,7 +471,7 @@ travessat d'armes per l'ivori mentre fuig amb dolor.
 «Qui em mata per allò que deixo al darrere,
 no reflexiona: "Sang vessada reclama la seva mena sencera."                185
 Avui sóc jo; demà seràs tu;
-qui hi perdrà més? No sóc jo, tothom ho sap en situ.
+qui hi perdrà més? No sóc jo, tothom ho sap de cert.
 L'ombra d'un mur, és cert, és ampla i folgada;
 el sol gira; l'ombra es decanta, desplaçada.
 El món és una muntanya; totes les nostres obres, una veu;
@@ -542,7 +542,7 @@ amb l'esperança que la Poll recuperés la xerrameca per alguna traça.
 Tres dies i tres nits d'aquesta guisa va passar,
 la desesperació al cor, com una noia enamorada de plorar;
 sense parar de sanglotar i sospirar, la seva paraula
-era: «Pregunteu: tornarà la parla mai al meu ocell que avui no empaula?»
+era: «Pregunteu: tornarà la parla mai al meu ocell que avui roman mut?»
 
 Un mendicant amb el cap descobert va passar per atzar;
 el crani ben rasat, llis i lluent com un vidre de mirar.                   15
@@ -559,7 +559,7 @@ La humanitat en aquest punt viu en gran error;
 els escollits del Senyor són ignorats a tota hora.                         20
 
 Per ceguesa no veuen el veritable punt de la contesa;
-la diferència entre ells és immensa al llarg de la vida en tota estesa.
+la diferència entre ells és immensa al llarg de tota la vida.
 La vespa i l'abella mengen i beuen dels mateixos camps oberts;
 l'una pica, l'altra mel dolça dona sempre, en tots concerts.
 Els cérvols de totes dues menes pasturan al mateix flanc de muntanya;
