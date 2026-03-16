@@ -7,6 +7,13 @@ obra:
   any_original: "c. 1400-1430"
   any_traduccio: 2026
   llengua_original: "japonès"
+  font_original:
+    - url: "https://ja.wikisource.org/wiki/松風_(謡曲)"
+      descripcio: "Matsukaze — Wikisource japonès"
+    - url: "https://ja.wikisource.org/wiki/敦盛_(謡曲)"
+      descripcio: "Atsumori — Wikisource japonès"
+    - url: "https://ja.wikisource.org/wiki/羽衣_(謡曲)"
+      descripcio: "Hagoromo — Wikisource japonès"
   descripcio: "Tres peces mestres del teatre nō japonès: Matsukaze (松風), drama d'amor i memòria sobre dues germanes i el cortesà Ariwara no Yukihira; Atsumori (敦盛), peça de guerrer (shura-mono) sobre la reconciliació entre el monjo Renshō i l'esperit del jove noble Atsumori; i Hagoromo (羽衣), peça celestial sobre un pescador que troba el mantell de plomes d'una tennin a la platja de Miho."
   categoria: "teatre"
   genere: "nō (能)"
