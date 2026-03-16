@@ -1,0 +1,26 @@
+{
+  "sessio_id": "al-mutanabbī-selecció-de-20-poeme-2026-03-16",
+  "obra": {
+    "autor": "Al-Mutanabbī",
+    "titol": "Selecció de 20 poemes",
+    "llengua": "àrab"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T20:26:43.079810",
+    "ultima_activitat": "2026-03-16T20:26:43.079874"
+  },
+  "fase_actual": "investigacio",
+  "fases_completades": [],
+  "chunks": {
+    "total": 0,
+    "completats": [],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}
