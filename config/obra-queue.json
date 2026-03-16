@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-15",
+  "updated_at": "2026-03-16",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -320,7 +320,7 @@
         "wikisource",
         "gutenberg"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/narrativa/voltaire/micromegas",
       "notes": "Consell Editorial 2026-03-07. Conte filosòfic (1752) que inaugura la ciència-ficció: un gegant de Sírius i un saturnià visiten la Terra i descobreixen la petitesa i la presumpció dels humans. Sàtira del racionalisme dogmàtic i de l'antropocentrisme. Voltaire (†1778) és la figura central de la Il·lustració. Breu, àgil, ideal per a una traducció bilingüe. Cap traducció catalana recent. Text francès a Wikisource francesa i Project Gutenberg."
     },
