@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-16T20:08:13.533091",
-    "ultima_activitat": "2026-03-16T20:12:34.546734"
+    "ultima_activitat": "2026-03-16T20:13:43.539975"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -19,12 +19,11 @@
     "total": 4,
     "completats": [
       "chunk_1",
-      "chunk_2"
+      "chunk_2",
+      "chunk_3"
     ],
-    "en_curs": "chunk_3",
-    "pendents": [
-      "chunk_4"
-    ]
+    "en_curs": "chunk_4",
+    "pendents": []
   },
   "metriques": {
     "qualitat_mitjana": 0.0,
@@ -32,7 +31,8 @@
   },
   "errors": [
     "[20:11:43] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
-    "[20:12:34] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)"
+    "[20:12:34] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[20:13:43] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[20:09:09] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='hebreu', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
