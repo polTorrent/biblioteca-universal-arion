@@ -1,0 +1,92 @@
+{
+  "traduccions": {
+    "jungle law": {
+      "original": "Jungle Law",
+      "traduccio": "Llei de la Jungla",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "dewanee": {
+      "original": "dewanee",
+      "traduccio": "bogeria",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "hydrophobia": {
+      "original": "hydrophobia",
+      "traduccio": "hidrofòbia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "chief of the wolves": {
+      "original": "Chief of the Wolves",
+      "traduccio": "Cap dels Llops",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "due warning": {
+      "original": "due warning",
+      "traduccio": "avís degut",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "quarters": {
+      "original": "quarters",
+      "traduccio": "territori de caça",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "gidur-log": {
+      "original": "Gidur-log",
+      "traduccio": "poble dels xacals",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "children of kings": {
+      "original": "children of kings",
+      "traduccio": "fills de reis",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "byre": {
+      "original": "byre",
+      "traduccio": "establia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "rubbish-heaps": {
+      "original": "rubbish-heaps",
+      "traduccio": "abocadors",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "dish-licker": {
+      "original": "Dish-licker",
+      "traduccio": "Llepa-plats",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "head of game": {
+      "original": "head of game",
+      "traduccio": "cap de caça",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": null,
+  "notes_pendents": []
+}
