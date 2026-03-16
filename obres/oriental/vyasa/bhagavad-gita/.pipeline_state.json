@@ -7,20 +7,35 @@
   },
   "timestamps": {
     "inici": "2026-03-16T20:50:44.369595",
-    "ultima_activitat": "2026-03-16T20:50:44.369657"
+    "ultima_activitat": "2026-03-16T20:51:37.762528"
   },
-  "fase_actual": "investigacio",
-  "fases_completades": [],
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
   "chunks": {
-    "total": 0,
+    "total": 9,
     "completats": [],
-    "en_curs": null,
-    "pendents": []
+    "en_curs": "chunk_1",
+    "pendents": [
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9"
+    ]
   },
   "metriques": {
     "qualitat_mitjana": 0.0,
     "temps_total_min": 0.0
   },
   "errors": [],
-  "warnings": []
+  "warnings": [
+    "[20:51:37] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='sànscrit', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
 }
