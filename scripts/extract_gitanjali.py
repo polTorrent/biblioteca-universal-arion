@@ -34,8 +34,9 @@ def extract_poems(lines: list[str]) -> dict[int, str]:
         if idx + 1 < len(poem_starts):
             end_line = poem_starts[idx + 1][0]
         else:
-            end_line = min(start_line + 50, len(lines))
-            for j in range(start_line, min(start_line + 100, len(lines))):
+            search_limit = min(start_line + 100, len(lines))
+            end_line = search_limit
+            for j in range(start_line + 1, search_limit):
                 if "***" in lines[j] or "End of" in lines[j]:
                     end_line = j
                     break
