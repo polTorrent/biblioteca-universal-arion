@@ -15,7 +15,7 @@ obra:
     notes: 13
     termes_glossari: 18
 revisio:
-  estat: "pendent_supervisio"
-  qualitat: 0
-  data_revisio: '2026-03-08'
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: '2026-03-16'
   comentari: "Traducció completa refeta dels 7 capítols. Corregida la llengua font (francès, no llatí). Afegits glossari.yml i notes.md."
