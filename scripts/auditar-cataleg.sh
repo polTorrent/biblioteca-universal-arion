@@ -181,6 +181,13 @@ if [[ "${1:-}" == "--fix" ]]; then
 
     mkdir -p "$TASQUES_DIR"
     n_tasques=0
+
+    # Obtenir llista de tasques ja existents (pending + running) per evitar duplicats
+    EXISTING_TASKS=""
+    for f in "$TASQUES_DIR"/*.json "$TASQUES_DIR/../running/"*.json; do
+        [ -f "$f" ] && EXISTING_TASKS="$EXISTING_TASKS $(basename "$f")"
+    done
+
     for r in "${RESULTATS[@]}"; do
         n_err=$(echo "$r" | grep -oP '"n_errors":\K\d+')
         [ "$n_err" -eq 0 ] && continue
@@ -196,8 +203,9 @@ if [[ "${1:-}" == "--fix" ]]; then
         [[ "$errs" == *"INCOMPLETA"* ]] && priority=2
 
         if [[ "$errs" == *"NO_ORIGINAL"* ]] || [[ "$errs" == *"ORIGINAL_MASSA_CURT"* ]] || [[ "$errs" == *"ORIGINAL_PLACEHOLDER"* ]]; then
-            task_id="fix-fetch-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-fetch-${autor}-${obra}"; then
+                task_id="fix-fetch-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-fetch",
@@ -207,12 +215,14 @@ if [[ "${1:-}" == "--fix" ]]; then
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"NO_METADATA"* ]] || [[ "$errs" == *"METADATA_INVALID"* ]] || [[ "$errs" == *"METADATA_FALTA"* ]] || [[ "$errs" == *"NO_FONT_ORIGINAL"* ]] || [[ "$errs" == *"FONT_SENSE_URL"* ]]; then
-            task_id="fix-metadata-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-metadata-${autor}-${obra}"; then
+                task_id="fix-metadata-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-metadata",
@@ -222,12 +232,14 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"NO_TRADUCCIO"* ]] || [[ "$errs" == *"TRADUCCIO_INCOMPLETA"* ]] || [[ "$errs" == *"TRADUCCIO_PLACEHOLDER"* ]]; then
-            task_id="fix-translate-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-translate-${autor}-${obra}"; then
+                task_id="fix-translate-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-translate",
@@ -237,12 +249,14 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"NO_GLOSSARI"* ]] || [[ "$errs" == *"GLOSSARI_INVALID"* ]]; then
-            task_id="fix-glossari-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-glossari-${autor}-${obra}"; then
+                task_id="fix-glossari-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-glossari",
@@ -252,12 +266,14 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"NO_PORTADA"* ]] || [[ "$errs" == *"PORTADA_PLACEHOLDER"* ]]; then
-            task_id="fix-portada-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-portada-${autor}-${obra}"; then
+                task_id="fix-portada-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-portada",
@@ -267,12 +283,14 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"CASTELLANISMES"* ]]; then
-            task_id="fix-llengua-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-llengua-${autor}-${obra}"; then
+                task_id="fix-llengua-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-llengua",
@@ -282,12 +300,14 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"NOTES_REFERENCIADES_PERO_BUIDES"* ]]; then
-            task_id="fix-notes-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-notes-${autor}-${obra}"; then
+                task_id="fix-notes-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-notes",
@@ -297,12 +317,14 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
 
         if [[ "$errs" == *"NO_A_LA_WEB"* ]]; then
-            task_id="fix-web-${autor}-${obra}-$(date +%s)"
-            cat > "$TASQUES_DIR/${task_id}.json" << EOF
+            if ! echo "$EXISTING_TASKS" | grep -q "fix-web-${autor}-${obra}"; then
+                task_id="fix-web-${autor}-${obra}-$(date +%s)"
+                cat > "$TASQUES_DIR/${task_id}.json" << EOF
 {
   "id": "$task_id",
   "type": "fix-web",
@@ -312,7 +334,8 @@ EOF
   "created": "$(date -Iseconds)"
 }
 EOF
-            n_tasques=$((n_tasques + 1))
+                n_tasques=$((n_tasques + 1))
+            fi
         fi
     done
 
