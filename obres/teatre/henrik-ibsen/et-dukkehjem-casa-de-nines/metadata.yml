@@ -16,10 +16,10 @@ obra:
   font_original: "https://no.wikisource.org/wiki/Et_dukkehjem"
 seccions: 3
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 3550
+  paraules_original: 25921
+  paraules_traduccio: 18
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 14
 revisio:
   estat: "revisat"
   qualitat: 0.0
