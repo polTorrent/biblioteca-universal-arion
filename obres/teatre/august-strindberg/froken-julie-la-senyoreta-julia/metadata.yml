@@ -7,12 +7,13 @@ obra:
   any_original: 1888
   any_traduccio: 2026
   llengua_original: suec
+  categoria: teatre
   genere: teatre
   descripcio: >
     Drama naturalista en un acte. La nit de Sant Joan, la senyoreta Júlia
     —filla del comte— i Joan —el criat— inicien un joc de seducció i poder
     que acaba en tragèdia. Obra clau del naturalisme europeu.
-  font: "Projekt Runeberg (domini públic)"
+  font_original: "https://runeberg.org/frkjulie/"
 seccions: 1
 estadistiques:
   paraules_original: 12472
