@@ -896,26 +896,28 @@ check_failed                 # 1. Recuperar fallides (mou fitxers dins tasks/)
 check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPRE corre
 
 # ═══ MODE CONSOLIDACIÓ: auditoria i reparació ═══
-echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
-AUDIT_LAST="$PROJECT/config/.last_audit"
-AUDIT_INTERVAL=43200  # cada 12 hores (🛑 CONSOLIDACIÓ: reduït de 4h)
-
-should_audit=false
-if [ ! -f "$AUDIT_LAST" ]; then
-    should_audit=true
-else
-    last=$(cat "$AUDIT_LAST")
-    now=$(date +%s)
-    if [ $((now - last)) -gt $AUDIT_INTERVAL ]; then
-        should_audit=true
-    fi
-fi
-
-if [ "$should_audit" = true ]; then
-    bash "$PROJECT/scripts/auditar-cataleg.sh" --fix
-    date +%s > "$AUDIT_LAST"
-    echo "[$(date)] ✅ Auditoria completada, tasques generades"
-fi
+# 🛑 TEMPORALMENT DESACTIVAT — la cua ja té 260+ tasques, no cal generar-ne més
+# Reactivar quan pendents < 50
+# echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
+# AUDIT_LAST="$PROJECT/config/.last_audit"
+# AUDIT_INTERVAL=43200  # cada 12 hores (🛑 CONSOLIDACIÓ: reduït de 4h)
+#
+# should_audit=false
+# if [ ! -f "$AUDIT_LAST" ]; then
+#     should_audit=true
+# else
+#     last=$(cat "$AUDIT_LAST")
+#     now=$(date +%s)
+#     if [ $((now - last)) -gt $AUDIT_INTERVAL ]; then
+#         should_audit=true
+#     fi
+# fi
+#
+# if [ "$should_audit" = true ]; then
+#     bash "$PROJECT/scripts/auditar-cataleg.sh" --fix
+#     date +%s > "$AUDIT_LAST"
+#     echo "[$(date)] ✅ Auditoria completada, tasques generades"
+# fi
 
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
     log "✅ Cua plena ($PENDING). Saltant tasques noves."
