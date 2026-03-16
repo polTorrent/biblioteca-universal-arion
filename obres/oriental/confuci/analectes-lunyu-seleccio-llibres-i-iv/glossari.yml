@@ -1,0 +1,113 @@
+# Glossari — Analectes (Lúnyǔ), Llibres I–IV
+# Termes clau del xinès clàssic confucià
+
+termes:
+  - original: "仁"
+    transliteracio: "rén"
+    traduccio: "benevolència, humanitat"
+    nota: "Virtut cardinal confuciana: amor als altres, humanitat plena. Tema central del Llibre IV."
+
+  - original: "禮"
+    transliteracio: "lǐ"
+    traduccio: "ritus, cerimònia, cortesia"
+    nota: "Normes de conducta ritual i social. Tema central del Llibre III."
+
+  - original: "君子"
+    transliteracio: "jūnzǐ"
+    traduccio: "home exemplar, persona noble"
+    nota: "Ideal moral confucià: qui cultiva la virtut. Originalment 'fill de príncep', Confuci el redefineix èticament."
+
+  - original: "小人"
+    transliteracio: "xiǎorén"
+    traduccio: "home mesquí, persona vulgar"
+    nota: "Oposat al jūnzǐ: qui actua per interès propi."
+
+  - original: "道"
+    transliteracio: "dào"
+    traduccio: "camí, via, doctrina"
+    nota: "El camí correcte de conducta moral i política."
+
+  - original: "德"
+    transliteracio: "dé"
+    traduccio: "virtut, poder moral"
+    nota: "Força moral interna que emana de qui practica el dào."
+
+  - original: "孝"
+    transliteracio: "xiào"
+    traduccio: "pietat filial"
+    nota: "Deure fonamental envers els pares; base de tota moralitat segons Confuci."
+
+  - original: "弟"
+    transliteracio: "tì"
+    traduccio: "respecte fraternal"
+    nota: "Respecte del germà petit envers el gran. Complement de xiào."
+
+  - original: "忠"
+    transliteracio: "zhōng"
+    traduccio: "lleialtat, sinceritat"
+    nota: "Fidelitat envers el sobirà i coherència interna."
+
+  - original: "恕"
+    transliteracio: "shù"
+    traduccio: "reciprocitat, empatia"
+    nota: "No fer als altres allò que no voldries per a tu. Complement de zhōng (IV.15)."
+
+  - original: "信"
+    transliteracio: "xìn"
+    traduccio: "fiabilitat, paraula donada"
+    nota: "Complir els compromisos; virtut essencial en les relacions."
+
+  - original: "義"
+    transliteracio: "yì"
+    traduccio: "justícia, rectitud"
+    nota: "Sentit del deure moral; oposat a l'interès (lì 利)."
+
+  - original: "學"
+    transliteracio: "xué"
+    traduccio: "estudi, aprenentatge"
+    nota: "Cultiu personal per la imitació dels models antics. Tema del Llibre I."
+
+  - original: "樂"
+    transliteracio: "yuè / lè"
+    traduccio: "música / alegria"
+    nota: "yuè: art musical, vehicle d'harmonia social. lè: joia interior."
+
+  - original: "子"
+    transliteracio: "zǐ"
+    traduccio: "el Mestre"
+    nota: "Títol honorífic per referir-se a Confuci en els Analectes."
+
+  - original: "天"
+    transliteracio: "tiān"
+    traduccio: "cel"
+    nota: "Força còsmica suprema; no un déu personal sinó un ordre moral universal."
+
+  - original: "八佾"
+    transliteracio: "bā yì"
+    traduccio: "vuit fileres de dansaires"
+    nota: "Dansa ritual reservada al rei; usurpada per la família Jì (III.1)."
+
+  - original: "韶"
+    transliteracio: "sháo"
+    traduccio: "música Sháo"
+    nota: "Música de l'emperador Shùn, considerada perfecta en bellesa i bondat (III.25)."
+
+  - original: "詩"
+    transliteracio: "shī"
+    traduccio: "Odes, Clàssic de la Poesia"
+    nota: "El Shījīng (詩經), un dels Cinc Clàssics confucians."
+
+  - original: "曾子"
+    transliteracio: "Zēngzǐ"
+    traduccio: "Mestre Zēng"
+    nota: "Zēng Shēn, deixeble destacat de Confuci, transmissor de l'ensenyament sobre zhōng i shù."
+
+  - original: "子貢"
+    transliteracio: "Zǐgòng"
+    traduccio: "Zǐgòng"
+    nota: "Duān Mù Cì, deixeble eloqüent i diplomat."
+
+  - original: "子夏"
+    transliteracio: "Zǐxià"
+    traduccio: "Zǐxià"
+    nota: "Bǔ Shāng, deixeble especialista en el Clàssic de la Poesia."
