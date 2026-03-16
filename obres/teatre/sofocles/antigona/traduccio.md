@@ -33,7 +33,7 @@ del pati, perquè sentissis tu sola.
 
 **ISMENA**: Què és això? Sembla que reveles alguna paraula amarga.
 **ANTÍGONA**: És que Creont no ha tractat els nostres dos germans de manera diferent: honrant l'un i deshonrant l'altre? A Eteocles, segons diuen, l'ha enterrat sota terra amb el degut respecte al dret i a la llei, donant-li honor entre els morts. Però del cadàver de Polinices, que va morir desgraciadament, diuen que ha proclamat als ciutadans que ningú el cobreixi amb sepultura ni el plori, sinó que el deixin sense plors i sense tomba, dolç banquet per als ocells que el miren com a grat aliment. Això diuen que el bo de Creont ha decretat per a tu i per a mi —sí, també per a mi— i que vindrà aquí per proclamar-ho clarament als qui no ho saben. No pren l'assumpte a la lleugera: qui faci alguna d'aquestes coses serà apedregat fins a la mort públicament a la ciutat. Així estan les coses per a tu, i aviat mostraràs si has nascut noble o si ets indigna del teu llinatge.
-**ISMENA**: Pobra desgraciat! Si les coses estan així, què puc fer jo per afegir-hi o treure-hi res?
+**ISMENA**: Pobra desgraciada! Si les coses estan així, què puc fer jo per afegir-hi o treure-hi res?
 **ANTÍGONA**: Pensa si compartirà la tasca i col·laboraràs.
 **ISMENA**: Quin risc? Què tens al cap?
 **ANTÍGONA**: Si m'ajudaràs a aixecar el cadàver.
@@ -120,14 +120,14 @@ menys aquells dos odiosos que, nascuts d'un sol pare
 i una sola mare, alçant contra ells mateixos
 llances de doble tall, obtingueren
 els dos la part comuna de la mort.
-Mas heus que la Victòria de gran nom vingué
+Però heus que la Victòria de gran nom vingué
 a correspondre l'alegria de la poderosa Tebes,
 doncs ara oblidem els combats
 presents,
 i tots els temples dels déus
 amb cors que duraran tota la nit visitarem, i que Bacus, qui sacseja Tebes,
 comenci la dansa.
-Mas heus aquí ja el rei del país,
+Però heus aquí ja el rei del país,
 Creonte el Menècida, nou governant
 per les noves disposicions divines,
 qui avança. Quina resolució prepara,
@@ -381,7 +381,7 @@ temprat al foc fins a fer-se tallant,
 
 Amb un petit fre sé que els cavalls furiosos es domen; qui és esclau dels altres no pot tenir grans pensaments. Aquesta ja sabia llavors com cometre desmesura, transgredint les lleis establertes; i aquesta és la segona desmesura, un cop fet: presumir-ne i riure's d'haver-ho comès.
 Doncs ara jo no seré home i ella serà home, si aquest poder li queda impune. Però fins i tot si fos germana meva o més propera per sang que el mateix Zeus protector de casa nostra, ni ella ni la seva germana escaparan de la mort més terrible; perquè també acuso aquella d'haver planejat igualment aquesta sepultura.
-I crideu-la; l'he vista ara mateix a dins de palau, furiosa i trasbalsat. L'ànima sol delatar-se abans en aquells que no tracen res de bo a les fosques; però odio quan algú, després de ser atrapat en el mal, vol embellir-ho.
+I crideu-la; l'he vista ara mateix a dins de palau, furiosa i trasbalsada. L'ànima sol delatar-se abans en aquells que no tracen res de bo a les fosques; però odio quan algú, després de ser atrapat en el mal, vol embellir-ho.
 ANTÍGONA
 Vols alguna cosa més que matar-me després d'haver-me capturat?
 CREONT
@@ -532,7 +532,7 @@ caigut en la matança, jacent sense sepultura,
 fos destruït per gossos carnívors
 o per cap au rapinyaire.
 
-¿No és aquesta digne de rebre honor daurat?
+No és aquesta digne de rebre honor daurat?
 Tal és la fosca fama que s'estén en silenci.
 Per a mi, pare, quan les coses et van bé, 
 no hi ha cap tresor més preuat, 
@@ -560,25 +560,25 @@ també és noble aprendre dels que parlen bé.
 **COR**: Senyor, és raonable, si diu alguna cosa oportuna...
 
 aprendre, i tu també aprèn això: està ben dit de dues maneres.
-**CREÓ** ¿Nosaltres, a la nostra edat, haurem d'aprendre 
+**CREÓ** Nosaltres, a la nostra edat, haurem d'aprendre 
 a pensar d'un home tan jove per naturalesa?
 **HÈMON** Res que no sigui just. I si sóc jove,
 no miris tant els anys com els fets.
-**CREÓ** ¿És un fet respectar els rebels?
+**CREÓ** És un fet respectar els rebels?
 **HÈMON** No diria mai que s'ha de venerar els malvats.
-**CREÓ** ¿Doncs no està aquesta noia afectada per tal mal?
+**CREÓ** Doncs no està aquesta noia afectada per tal mal?
 **HÈMON** Tot el poble de Tebes diu que no.
-**CREÓ** ¿La ciutat ens ha de dir què hem de manar?
+**CREÓ** La ciutat ens ha de dir què hem de manar?
 **HÈMON** Veus com parles massa jove?
-**CREÓ** ¿Per a un altre que no sigui jo he de governar aquesta terra?
+**CREÓ** Per a un altre que no sigui jo he de governar aquesta terra?
 **HÈMON** No és ciutat la que pertany a un sol home.
-**CREÓ** ¿No es considera que la ciutat és de qui governa?
+**CREÓ** No es considera que la ciutat és de qui governa?
 **HÈMON** Governaries bé una terra deserta tu sol.
 **CREÓ** Aquest, pel que veig, lluita al costat de la dona.
 **HÈMON** Si tu ets dona, sí. Per tu m'interesso.
-**CREÓ** Malvat, ¿vas contra la justícia del teu pare?
+**CREÓ** Malvat, vas contra la justícia del teu pare?
 **HÈMON** No et veig seguir la justícia quan erres.
-**CREÓ** ¿Erro respectant la meva autoritat?
+**CREÓ** Erro respectant la meva autoritat?
 **HÈMON** No respectes l'honor dels déus, trepitjant-lo.
 **CREÓ** Caràcter immund, inferior a una dona!
 **HÈMON** No em trobaràs inferior a les vergonyes.
@@ -671,7 +671,7 @@ contemplar l'ull sagrat del sol.
 El meu destí, sense llàgrimes,  
 cap amic el plora.
 **CREONT**  
-¿Sabeu què? Si es permetés cantar  
+Sabeu què? Si es permetés cantar  
 i lamentar-se abans de morir,  
 ningú no pararia mai.  
 Emporteu-vos-la de seguida! I tanqueu-la
@@ -714,7 +714,7 @@ sinó que així, desemparada dels meus,
 baixo viva als sepulcres dels morts, jo, la infortunada. 920
 Quina llei divina he transgres?
 Per què haig de mirar cap als déus,
-jo que sóc tan desgraciat? A qui cridar com a aliat?
+jo que sóc tan desgraciada? A qui cridar com a aliat?
 Ja que per ser piadosa he guanyat
 la fama d'impía. 925
 Però si això és bell als ulls dels déus,
@@ -768,7 +768,7 @@ als altars ben encesos. Però dels sacrificis
 Hefest no va brillar. En lloc d'això, sobre la cendra
 es fonia la grassa putrefacta de les cuixes
 
-S'inflamaven i supuraven, la bilis es dispersava per l'aire, i els muscles de les cuixes quedaven al descobert, despullats del greix que els cobria. Això vaig aprendre del meu jove guia, mentre s'esvaneïen els auguris dels ritus sense senyal. Ell és la meva guia, i jo sóc la dels altres. I per això la ciutat pateix a causa del teu pensament. Els nostres altars i llars estan plens de la carn que els ocells i gossos han pres del desgraciat fill caigut d'Èdip. I els déus ja no accepten les nostres pregàries dels sacrificis ni la flama de les cuixes, ni cap ocell emet crits favorables, després d'haver menjat el greix de sang homicida. Per això, fill meu, reflexiona. És comú a tots els humans l'errar; però quan s'erra, aquell home ja no és insensato ni desventurat que, quan cau en el mal, busca remei i no roman immòbil. L'obstinació comporta ignorància. Cedeix al mort i no atormentis qui ja ha perit. Quina valentia hi ha a matar el qui ja és mort? Et dic això pensant en el teu bé. I és dolcíssim aprendre del qui parla bé, si parla amb profit.
+S'inflamaven i supuraven, la bilis es dispersava per l'aire, i els muscles de les cuixes quedaven al descobert, despullats del greix que els cobria. Això vaig aprendre del meu jove guia, mentre s'esvaneïen els auguris dels ritus sense senyal. Ell és la meva guia, i jo sóc la dels altres. I per això la ciutat pateix a causa del teu pensament. Els nostres altars i llars estan plens de la carn que els ocells i gossos han pres del desgraciat fill caigut d'Èdip. I els déus ja no accepten les nostres pregàries dels sacrificis ni la flama de les cuixes, ni cap ocell emet crits favorables, després d'haver menjat el greix de sang homicida. Per això, fill meu, reflexiona. És comú a tots els humans l'errar; però quan s'erra, aquell home ja no és insensate ni desventurat que, quan cau en el mal, busca remei i no roman immòbil. L'obstinació comporta ignorància. Cedeix al mort i no atormentis qui ja ha perit. Quina valentia hi ha a matar el qui ja és mort? Et dic això pensant en el teu bé. I és dolcíssim aprendre del qui parla bé, si parla amb profit.
 **CREONT**
 Oh ancià, tots com arquers d'una diana dispareu contra aquest home, i tampoc m'estalvieu la vostra art endevinatòria. Per part del vostre llinatge...
 
@@ -1009,7 +1009,7 @@ Això és cosa del futur. Cal ocupar-se
 d'actuar sobre el que tenim davant. D'això se n'ocupen
 els qui s'han d'ocupar.
 CREONT
-Pero tot el que desitjo, això he demanat.
+Però tot el que desitjo, això he demanat.
 COR
 No preguis res més: dels infortunis decretats
 no hi ha alliberament per als mortals.
