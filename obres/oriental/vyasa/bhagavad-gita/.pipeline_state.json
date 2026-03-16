@@ -7,19 +7,21 @@
   },
   "timestamps": {
     "inici": "2026-03-16T20:50:44.369595",
-    "ultima_activitat": "2026-03-16T20:51:37.762528"
+    "ultima_activitat": "2026-03-16T21:11:30.745308"
   },
-  "fase_actual": "traduccio",
+  "fase_actual": "anotacio",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 9,
-    "completats": [],
-    "en_curs": "chunk_1",
-    "pendents": [
+    "completats": [
+      "chunk_1",
       "chunk_2",
       "chunk_3",
       "chunk_4",
@@ -28,14 +30,26 @@
       "chunk_7",
       "chunk_8",
       "chunk_9"
-    ]
+    ],
+    "en_curs": null,
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.0,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 0.78,
+    "temps_total_min": 20.77
   },
-  "errors": [],
+  "errors": [
+    "[20:54:11] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:00:48] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:03:04] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:05:17] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:05:54] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:08:41] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:09:24] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[21:10:06] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
   "warnings": [
-    "[20:51:37] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='sànscrit', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+    "[20:51:37] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='sànscrit', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
+    "[21:11:30] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
   ]
 }
