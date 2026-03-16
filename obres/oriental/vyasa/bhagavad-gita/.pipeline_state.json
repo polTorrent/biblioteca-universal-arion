@@ -1,0 +1,26 @@
+{
+  "sessio_id": "vyāsa-(vedavyāsa)-bhagavad-gītā-(selec-2026-03-16",
+  "obra": {
+    "autor": "Vyāsa (Vedavyāsa)",
+    "titol": "Bhagavad Gītā (selecció de 6 capítols)",
+    "llengua": "sànscrit"
+  },
+  "timestamps": {
+    "inici": "2026-03-16T20:50:44.369595",
+    "ultima_activitat": "2026-03-16T20:50:44.369657"
+  },
+  "fase_actual": "investigacio",
+  "fases_completades": [],
+  "chunks": {
+    "total": 0,
+    "completats": [],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}
