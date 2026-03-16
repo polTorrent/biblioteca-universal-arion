@@ -10,6 +10,7 @@ obra:
   descripcio: "Selecció de 25 poemes del Liber Catullianus, incloent els famosos poemes d'amor a Lèsbia, l'elegia al germà (CI), l'himne a Diana (XXXIV) i el cèlebre dístic 'Odi et amo' (LXXXV). Catul és el màxim representant de la poesia neotèrica llatina."
   categoria: "poesia"
   font: "The Latin Library (domini públic)"
+  font_original: "https://www.thelatinlibrary.com/catullus.shtml"
 seccions: 25
 poemes_seleccionats:
   - "I. Ad Cornelium"
