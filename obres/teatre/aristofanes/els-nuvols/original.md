@@ -1,5 +1,3 @@
-# Νεφέλαι (Els núvols)
-
 **Autor:** Ἀριστοφάνης (Aristòfanes)
 **Data:** 423 aC (primera versió), c. 419-416 aC (revisió)
 **Llengua original:** grec antic
