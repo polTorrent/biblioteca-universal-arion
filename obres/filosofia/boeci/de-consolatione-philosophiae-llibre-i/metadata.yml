@@ -7,10 +7,12 @@ obra:
   any_original: c. 524 dC
   any_traduccio: 2026
   llengua_original: llatí
-  genere: filosofia
+  categoria: filosofia
+  genere: prosimetrum
   descripcio: Primer llibre de La Consolació de la Filosofia, escrit per Boeci a la
     presó mentre esperava l'execució. Diàleg entre Boeci i la Filosofia personificada,
     alternant prosa i vers (prosimetrum).
+  font_original: "https://www.gutenberg.org/ebooks/14328"
 seccions: 13
 estadistiques:
   paraules_original: 3418
