@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T05:09:36.197177",
-    "ultima_activitat": "2026-03-17T05:22:54.529354"
+    "ultima_activitat": "2026-03-17T05:36:47.388263"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -26,17 +26,17 @@
       "chunk_6",
       "chunk_7",
       "chunk_8",
-      "chunk_9"
-    ],
-    "en_curs": "chunk_10",
-    "pendents": [
+      "chunk_9",
+      "chunk_10",
       "chunk_11",
       "chunk_12",
       "chunk_13",
       "chunk_14",
       "chunk_15",
-      "chunk_16",
-      "chunk_17",
+      "chunk_16"
+    ],
+    "en_curs": "chunk_17",
+    "pendents": [
       "chunk_18",
       "chunk_19",
       "chunk_20",
@@ -68,7 +68,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 0.0,
+    "qualitat_mitjana": 0.68,
     "temps_total_min": 0.0
   },
   "errors": [
@@ -80,7 +80,12 @@
     "[05:18:27] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
     "[05:19:14] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
     "[05:20:54] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
-    "[05:22:54] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)"
+    "[05:22:54] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:28:40] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:30:37] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:34:22] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:36:04] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:36:47] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[05:10:20] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='anglès antic', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
