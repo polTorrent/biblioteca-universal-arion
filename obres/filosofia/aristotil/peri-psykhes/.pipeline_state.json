@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T07:54:39.179337",
-    "ultima_activitat": "2026-03-17T07:56:26.683147"
+    "ultima_activitat": "2026-03-17T08:04:38.565757"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -15,7 +15,8 @@
     "glossari",
     "chunking",
     "traduccio",
-    "anotacio"
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 6,
@@ -27,12 +28,12 @@
       "chunk_5",
       "chunk_6"
     ],
-    "en_curs": "chunk_1",
+    "en_curs": null,
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.0,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 3.9,
+    "temps_total_min": 8.2
   },
   "errors": [
     "[07:56:12] Error chunk 1: [Errno 32] Broken pipe",
@@ -41,7 +42,9 @@
     "[07:56:12] Error chunk 4: [Errno 32] Broken pipe",
     "[07:56:12] Error chunk 5: [Errno 32] Broken pipe",
     "[07:56:12] Error chunk 6: [Errno 32] Broken pipe",
-    "[07:56:12] Error fatal: [Errno 32] Broken pipe"
+    "[07:56:12] Error fatal: [Errno 32] Broken pipe",
+    "[08:01:15] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:02:25] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[07:56:12] Error anotació: [Errno 32] Broken pipe"
