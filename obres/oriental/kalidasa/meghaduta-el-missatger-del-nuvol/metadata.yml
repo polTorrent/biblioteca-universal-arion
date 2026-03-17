@@ -1,6 +1,6 @@
 obra:
-  titol: "Kumārasambhava — El Naixement del Déu de la Guerra"
-  titol_original: "कुमारसम्भवम् (Kumārasambhava)"
+  titol: "Meghadūta — El Missatger del Núvol"
+  titol_original: "मेघदूतम् (Meghadūtam)"
   autor: "Kālidāsa"
   autor_original: "कालिदास"
   traductor: "Editorial Clàssica"
@@ -10,11 +10,12 @@ obra:
   categoria: "oriental"
   genere: "poesia"
   descripcio: >
-    Poema èpic en sànscrit sobre el naixement de Kārttikeya, déu de la guerra,
-    fill de Śiva i Pārvatī. Traducció anglesa en vers de Ralph T.H. Griffith (1879)
-    a partir del sànscrit original.
-  font_original: "https://www.gutenberg.org/ebooks/31968"
-seccions: 7
+    Poema líric en sànscrit on un yakṣa exiliat demana a un núvol
+    que porti un missatge a la seva estimada a la ciutat d'Alakā.
+    Obra mestra de la poesia sànscrita clàssica, considerada un dels
+    millors poemes lírics de la literatura universal.
+  font_original: "https://en.wikisource.org/wiki/The_Megha_Duta"
+seccions: 2
 estadistiques:
   paraules_original: 22000
   paraules_traduccio: 16500
