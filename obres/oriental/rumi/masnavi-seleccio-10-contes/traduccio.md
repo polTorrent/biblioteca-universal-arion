@@ -37,7 +37,7 @@ la fermentació del vi, l'amor; mai no hi falta.                           10
 La flauta de l'amant absent no és cap joguina;
 els seus trins proclamen dolor i goig que afina.
 Verí o cura, la flauta roman;
-contenta o planyent, com vulgueu, tant se val.
+contenta o planyent, tot li és igual.
 Conta la seva història de dolor cremant;
 relata com l'amor és foll, en breu instant.
 L'amant coneix millor les penes de l'amant;
@@ -79,7 +79,7 @@ Qui no sent de l'amor la flama que tot vivifica,
 Puc estar quiet, serè, content,
 quan la meva delícia és lluny? No! Dolent.
 L'amor mana al meu plany que tota cadena esclati.
-El cor em rebentaria, de silenci maleït pel fat.
+El cor em rebentaria, de silenci maleït pel destí ingrat.
 Un mirall es mostra millor quan és brillant;
 enterbolit de rovell, el seu llum es va apagant.
 Doncs, neteja'n tota impura aliança;
@@ -122,7 +122,7 @@ De tots els seus mals curem els homes cada hora, sense falla.»
 Per orgull, «si Déu vol» no van dir, ben cert. [60]
 La nul·litat de l'home, en ells Déu volia fer desert.
 És a dir — ometre aquesta santa paraula
-és pecat; dita de memòria, al Senyor no l'apaula.
+és pecat; dita sols de memòria, al Senyor no el commou.
 Quants se n'abstenen de pronunciar-la en veu alta,
 els cors dels quals cada acció amb «si Déu vol» esmalta!                  15
 
