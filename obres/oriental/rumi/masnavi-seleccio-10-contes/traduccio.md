@@ -829,6 +829,8 @@ La llebre replicà: «Amics estimats, un respir concediu-me.
 Un estratagema planejo, i enganyaré el tirà cruel, creieu-me.              130
 El meu pla astut salvarà les ànimes de tots els vius.»
 
+[...] [Versos 131-170 omesos: la llebre exposa el seu estratagema als companys]
+
 Hi havia un pou no gaire lluny, que la llebre havia vist.
 La llebre mantingué el lleó famolenc a la vall.
 Llavors cap al lleó va anar.
@@ -836,9 +838,13 @@ Llavors cap al lleó va anar.
 Va trobar la fera impacient, furiosa per la tardança.                      175
 La llebre li digué: «Pel camí, un lleó ens va fer l'emboscada.»
 
+[...] [Versos 177-214 omesos: diàleg entre el lleó i la llebre sobre el rival inventat]
+
 El lleó exclamà: «En nom de Déu! Vine! On és la fera?»                    215
 La llebre es posà al capdavant, fent de guia,
 per menar el lleó allà on ella decidia.
+
+[...] [Versos 220-245 omesos: el camí cap al pou]
 
 Van arribar al pou. Tots dos miraren avall;
 i dins l'aigua allà una reflexió va dibuixar un lleó i una llebre.
@@ -882,6 +888,9 @@ La nostra *nafs* és un infern; aquell infern, un drac de foc.               5
 Oceans sencers no podrien extingir les seves flames, ni un poc.
 Malgrat tot, la seva fam voraç mai no es saciaria,
 fins que la veu de Déu li cridés: «Estàs satisfeta, incendiària?»
+
+[...] [Versos 8-14 omesos: sobre la natura insaciable de les passions]
+
 Déu, des de la ubiqüitat, estamparà el Seu peu sobre l'infern.             15
 Llavors deixarà de cremar: «Ell ho volgué, i es va complir» etern.
 
@@ -892,14 +901,21 @@ Un arc no dispararà recte si la fletxa no ho és amb rigor.                  20
 
 Hem acabat la guerra externa, la menor que existeix;
 i com el Profeta, emprenem la guerra major, la que ell defineix.            25
+
+[...] [Versos 26-29 omesos: sobre el *jihad* major, la lluita interior]
+
 Derrotar un enemic armat no és res extraordinari;
 un lleó vertader és aquell qui conquista la seva pròpia carn, solitari.     30
+
+[...] [Versos 31-34 omesos: transició a la història d'Úmar]
 
 De Cèsar un ambaixador a Úmar vingué,
 a través de deserts immensos.
 Preguntà: «On és el palau del Califa, homes?»                              35
 La gent respongué: «No trobaràs cap palau del Califa aquí;
 el sol pavelló del nostre Califa és la seva ment il·luminada.»
+
+[...] [Versos 38-74 omesos: l'ambaixador cerca Úmar per tot Medina]
 
 Una àrab del desert va veure finalment qui li digué
 que Úmar, llavors, dormia sota una palmera.                                 75
