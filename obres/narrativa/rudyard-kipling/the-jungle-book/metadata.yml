@@ -1,31 +1,32 @@
 obra:
-  titol: El llibre de la selva
-  titol_original: The Jungle Book
-  autor: Rudyard Kipling
-  traductor: Editorial Clàssica
+  titol: "El llibre de la selva"
+  titol_original: "The Jungle Book"
+  autor: "Rudyard Kipling"
+  traductor: "Editorial Clàssica"
   any_original: 1894
   any_traduccio: 2026
-  llengua_original: anglès
-  descripcio: Recull de contes sobre Mowgli, un nen criat per llops a la selva índia,
+  llengua_original: "anglès"
+  categoria: "narrativa"
+  descripcio: >
+    Recull de contes sobre Mowgli, un nen criat per llops a la selva índia,
     i altres relats d'animals. Obra mestra de la literatura infantil i d'aventures
     que explora temes de llei, pertinença i identitat.
-  estadistiques:
-    paraules_traduccio: 6426
 seccions: 7
-font:
-  url: https://www.gutenberg.org/ebooks/236
-  llicencia: Domini públic
+font_original:
+  url: "https://www.gutenberg.org/ebooks/236"
+  nom: "Project Gutenberg"
+  llicencia: "Domini públic"
 estadistiques:
   paraules_original: 50839
-  paraules_traduccio: 0
+  paraules_traduccio: 6426
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: revisat
+  estat: "revisat"
   qualitat: 6.71
-  data_revisio: '2026-03-16'
+  data_revisio: "2026-03-16"
 avaluacio_final:
-  data: '2026-03-16T23:18:34.968650'
+  data: "2026-03-16T23:18:34.968650"
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
