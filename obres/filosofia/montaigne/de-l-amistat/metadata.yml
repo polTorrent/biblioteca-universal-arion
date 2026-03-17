@@ -7,11 +7,16 @@ obra:
   any_original: 1580
   any_traduccio: 2026
   llengua_original: francès
-  genere: filosofia
-  descripcio: Assaig sobre l'amistat perfecta, escrit en record d'Étienne de La Boétie.
-    Capítol XXVII del Llibre I dels Essais.
+  categoria: filosofia
+  genere: assaig
+  descripcio: >
+    Assaig sobre l'amistat perfecta, escrit en record d'Étienne de La Boétie.
+    Capítol XXVIII del Llibre I dels Essais.
+  font_original: https://fr.wikisource.org/wiki/Essais/Livre_I/Chapitre_28
   estadistiques:
+    paraules_original: 4824
     paraules_traduccio: 4640
+    notes: 8
 revisio:
   estat: validat
   data_revisio: '2026-03-01'
