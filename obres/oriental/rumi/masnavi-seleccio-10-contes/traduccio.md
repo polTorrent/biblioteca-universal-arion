@@ -170,7 +170,7 @@ Les fantasies sempre desfiguren els objectes al seu pas.
 Coses inexistents sovint el deliri les pinta;
 veiem la humanitat enganyada per les fintes.                               35
 La seva pau, la seva guerra, sovint per una quimera;
-el seu orgull, la seva vergonya, un trist epigrama qualssevera.
+el seu orgull, la seva vergonya, un trist epigrama qualsevol.
 Però les visions que extasien els sants beneïts
 són reflexos dels habitants del cel infinits.
 
@@ -1081,7 +1081,7 @@ En aquell temps el Senyor envià son a Úmar.                                100
 Inclinà el cap; el son el lligà fort; un somni veié.
 
 La veu celestial cridà al califa: «Escolta, Úmar, escolta!
-El nostre servent, alleugerix-li la necessitat.                            105
+El nostre servent, alleugereix-li la necessitat.                            105
 Del tresor públic extreu
 set-cents sequins d'or.                                                    110
 Lliura-li'ls; i digues: "Oh home de bé,
