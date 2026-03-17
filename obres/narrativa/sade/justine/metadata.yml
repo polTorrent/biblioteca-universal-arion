@@ -12,7 +12,8 @@ obra:
   descripcio: Primera novel·la publicada del Marquès de Sade (1791). Reflexió filosòfica
     sobre virtut i vici a través de les desgràcies de Justine.
   font_original: https://fr.wikisource.org/wiki/Justine_ou_les_Malheurs_de_la_vertu
-  estadistiques: {}
+  estadistiques:
+    paraules_traduccio: 8060
 seccions: 3
 estadistiques:
   paraules_original: 113766
@@ -22,5 +23,21 @@ estadistiques:
 revisio:
   estat: revisat
   data_revisio: '2026-03-17'
-  qualitat: 0.0
+  qualitat: 5.83
   nota: Traducció parcial (~8%). Pipeline V2 en curs per completar la traducció.
+avaluacio_final:
+  data: '2026-03-17T03:43:06.638786'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 8
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 2
