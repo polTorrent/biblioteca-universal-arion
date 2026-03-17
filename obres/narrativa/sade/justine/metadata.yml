@@ -7,10 +7,12 @@ obra:
   any_original: 1791
   any_traduccio: 2026
   llengua_original: francès
-  categoria: "narrativa"
-  genere: "novel·la filosòfica"
-  descripcio: "Primera novel·la publicada del Marquès de Sade (1791). Reflexió filosòfica sobre virtut i vici a través de les desgràcies de Justine."
-  font_original: "https://fr.wikisource.org/wiki/Justine_ou_les_Malheurs_de_la_vertu"
+  categoria: narrativa
+  genere: novel·la filosòfica
+  descripcio: Primera novel·la publicada del Marquès de Sade (1791). Reflexió filosòfica
+    sobre virtut i vici a través de les desgràcies de Justine.
+  font_original: https://fr.wikisource.org/wiki/Justine_ou_les_Malheurs_de_la_vertu
+  estadistiques: {}
 seccions: 3
 estadistiques:
   paraules_original: 113766
@@ -18,7 +20,7 @@ estadistiques:
   notes: 10
   termes_glossari: 16
 revisio:
-  estat: parcial
+  estat: revisat
   data_revisio: '2026-03-17'
-  qualitat: 7.5
-  nota: "Traducció parcial (~8%). Pipeline V2 en curs per completar la traducció."
+  qualitat: 0.0
+  nota: Traducció parcial (~8%). Pipeline V2 en curs per completar la traducció.
