@@ -7,22 +7,38 @@
   },
   "timestamps": {
     "inici": "2026-03-17T07:16:02.170260",
-    "ultima_activitat": "2026-03-17T07:16:59.172308"
+    "ultima_activitat": "2026-03-17T07:18:38.899911"
   },
-  "fase_actual": "glossari",
+  "fase_actual": "traduccio",
   "fases_completades": [
-    "investigacio"
+    "investigacio",
+    "glossari",
+    "chunking"
   ],
   "chunks": {
-    "total": 0,
+    "total": 12,
     "completats": [],
-    "en_curs": null,
-    "pendents": []
+    "en_curs": "chunk_1",
+    "pendents": [
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12"
+    ]
   },
   "metriques": {
     "qualitat_mitjana": 0.0,
     "temps_total_min": 0.0
   },
   "errors": [],
-  "warnings": []
+  "warnings": [
+    "[07:18:38] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
 }
