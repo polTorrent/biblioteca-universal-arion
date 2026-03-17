@@ -7,13 +7,16 @@
   },
   "timestamps": {
     "inici": "2026-03-17T07:21:09.750636",
-    "ultima_activitat": "2026-03-17T07:55:26.578384"
+    "ultima_activitat": "2026-03-17T08:07:41.218996"
   },
-  "fase_actual": "traduccio",
+  "fase_actual": "anotacio",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 21,
@@ -33,19 +36,19 @@
       "chunk_13",
       "chunk_14",
       "chunk_15",
-      "chunk_16"
-    ],
-    "en_curs": "chunk_17",
-    "pendents": [
+      "chunk_16",
+      "chunk_17",
       "chunk_18",
       "chunk_19",
       "chunk_20",
       "chunk_21"
-    ]
+    ],
+    "en_curs": null,
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 2.69,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 2.62,
+    "temps_total_min": 46.52
   },
   "errors": [
     "[07:24:43] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
@@ -57,9 +60,13 @@
     "[07:44:30] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
     "[07:45:16] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
     "[07:50:47] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
-    "[07:55:26] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)"
+    "[07:55:26] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
+    "[07:57:13] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:01:58] Error chunk 19: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:02:45] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
-    "[07:23:22] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+    "[07:23:22] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
+    "[08:07:41] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
   ]
 }

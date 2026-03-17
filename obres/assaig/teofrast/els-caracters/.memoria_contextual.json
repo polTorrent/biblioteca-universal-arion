@@ -1,0 +1,37 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Teofrast d'Eresos (Θεόφραστος) (c. 371-287 a.C.), Eresos, illa de Lesbos. Filòsof grec, deixeble i successor d'Aristòtil a l'escola peripatètica del Liceu d'Atenes. Escriptor prolífic que va tractar filosofia natural, ètica, botànica i retòrica, conegut especialment pels seus estudis sobre les plantes i aquesta obra de caràcters morals.",
+    "context_historic": "Període hel·lenístic primerenc, després de la mort d'Alexandre Magne (323 a.C.). Època de transformació política i cultural a Grècia, amb el sorgiment dels regnes hel·lenístics i l'evolució de la filosofia cap a escoles més pràctiques centrades en l'ètica individual.",
+    "context_obra": "Ἠθικοὶ Χαρακτῆρες (Ethikoi Charakteres) (c. 319-287 a.C. (últim període de la seva vida)) - assaig moral, literatura de caràcters, prosa didàctica. Escrita durant la seva maduresa com a cap del Liceu, dedicada a Policles. L'obra reflecteix l'observació de llarga durada de la natura humana en el context social atenès, com indica el proemi on l'autor menciona els seus noranta-nou anys.",
+    "influencies": [
+      "Aristòtil (mestre directe)",
+      "Plató (indirectament)",
+      "tradició còmica atenesa",
+      "observació empírica de la natura humana"
+    ],
+    "temes_principals": [
+      "tipologia de vicis morals",
+      "crítica social de l'Atenes hel·lenística",
+      "psicologia dels defectes humans",
+      "sàtira de costums",
+      "diversitat del caràcter humà malgrat l'educació comuna"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Policles (dedicatari de l'obra)",
+    "[H] Personatge històric: referències a tipus socials atenesos sense noms propis",
+    "[C] Referència cultural: institucions democràtiques atenenques",
+    "[C] Referència cultural: vida quotidiana a l'àgora",
+    "[C] Referència cultural: pràctiques religioses gregues",
+    "[C] Referència cultural: costums de l'aristocràcia i classe mitjana",
+    "[C] Referència cultural: teatre i festivals religiosos",
+    "[T] Terme tècnic: ἦθος (ethos - caràcter)",
+    "[T] Terme tècnic: τρόπος (tropos - manera de ser)",
+    "[T] Terme tècnic: παιδεία (paideia - educació)",
+    "[T] Terme tècnic: φύσις (physis - natura)",
+    "[T] Terme tècnic: χαρακτήρ (charakter - marca distintiva)"
+  ]
+}
