@@ -428,7 +428,7 @@ Viatja joiós; pensa que la seva sort és gran;
 i mai no somnia què ha de ser-li reservat més endavant.
 Un corser àrab orgullosament el portava;
 no calculava a quin preu tot això es guanyava.                             165
-Oh fatu insensata! T'apresses cap a la teva perdició.
+Oh criatura insensata! T'apresses cap a la teva perdició.
 El càrrec que somies aviat serà la teva tomba i presó.
 La fantasia teixia teranyines de poder i fama;
 l'àngel de la mort va tronar: «Vine, i tot això deixa, en la trama!»
@@ -1006,7 +1006,7 @@ al so de la teva dolça veu, el meu goig es multiplicava amb amor.»
 
 [...] [Versos 121-134 omesos: el mercader es lamenta; finalment llença el lloro fora]
 
-El mercader va llençar el lloro fora de la gàbia amb consternació.
+El mercader va llançar el lloro fora de la gàbia amb consternació.
 El lloro va volar amunt; a un arbre va prendre una alta posició.           135
 
 «Vine, estimat Lloro meu!
@@ -1019,8 +1019,12 @@ ell, com estava acordat, va caure mort, segons aparences belles.            145
 Com volent dir-me a mi, aquí a la gàbia tancat:
 'Tu fingeix la mort; així salvaràs la teva edat.'»
 
+[...] [Versos 148-149 omesos]
+
 Fes-te gra, i els ocells et picaran;                                       150
 fes-te flor, i tots els infants hi acudiran.
+
+[...] [Versos 151-164 omesos: digressió sobre l'engany i la veritat]
 
 «Adéu, estimat amo; me'n vaig ara cap a casa.
 Que tu també siguis lliure, quan el judici arribi, per gràcia.             165
@@ -1039,18 +1043,24 @@ Mira com han d'actuar les ànimes, per guanyar la benaurança.»
 
 Hi havia un músic tal que el cel feia girar.
 Els rossinyols ploraven d'èxtasi amb la seva veu,
-un sol plaer centuplicava el goig del cor fideu.
+un sol plaer centuplicava el goig del cor fidel.
 El seu cant encisava tota reunió on anava,                                   5
 i l'aplaudiment com un tro esclatava.
+
+[...] [Versos 6-24 omesos: sobre el poder de la música i els sants]
 
 Els sants són els Israfils d'aquest nostre temps passatger.                 25
 Els morts espirituals per ells viuen vida sublim de ple.
 Les nostres ànimes són cadàvers; les tombes, els nostres cossos.
 A la veu del sant s'alcen, vestides amb els seus llençols.
 
+[...] [Versos 30-55 omesos: sobre la decadència del cos i el pas del temps]
+
 Però ara s'havia fet vell; llargs anys havia passat en la terra.
 L'esquena doblement corbada, com panxa de gerro de vi;                     60
 la seva veu era ara esquerda, desafinada, aspra, i tots la fugien.
+
+[...] [Versos 62-69 omesos: sobre la pèrdua de l'art i la joventut]
 
 El nostre músic en la vellesa sentia la mossegada de la pobresa.           70
 Cap diner no podia guanyar.
@@ -1065,6 +1075,8 @@ L'arpa li feia de coixí; sobre una tomba va descansar.
 
 Amb el son la seva ànima fou alliberada de presó i de dolor.                85
 
+[...] [Versos 86-99 omesos: el somni de l'arpista i la seva comunió amb Déu]
+
 En aquell temps el Senyor envià son a Úmar.                                100
 Inclinà el cap; el son el lligà fort; un somni veié.
 
@@ -1077,11 +1089,19 @@ el salari de les teves cordes és. Vés-te'n; i quan s'acabi,
 torna aquí de nou; cerca'm a mi sol."»                                    115
 
 Al so d'aquella veu temible, Úmar despertà.
+
+[...] [Versos 116-119 omesos: Úmar es prepara per sortir]
+
 Cap al cementiri dirigí els seus passos.                                   120
+
+[...] [Versos 121-134 omesos: Úmar cerca l'arpista al cementiri]
 
 Úmar li digué: «No tinguis por! No fugis de mi;
 bones noves de dalt et porto aquest dia, aquí.                             135
 De tu el Senyor ha parlat en termes del més alt elogi.
+
+[...] [Versos 136-144 omesos: Úmar lliura l'or i explica el somni]
+
 Aquesta bagatela envia per a les necessitats presents.                     145
 Quan s'acabi, torna aquí; no temis l'escassetat.»
 
@@ -1095,6 +1115,8 @@ estavellà en trossos. Així l'apostrofà:
 M'has barrat el camí del cel, com un saltejador deslleial.
 La meva sang has xuclat setanta anys, cosa vergonyosa!                     155
 Oh Senyor, el Més Misericordiós! Perdona la meva vida passada!»
+
+[...] [Versos 156-164 omesos: l'arpista es penedeix profundament]
 
 Aleshores Úmar li digué: «Aquesta contrició profunda teva
 és prova que ets sobri.                                                    165
@@ -1124,6 +1146,8 @@ El disc de la lluna bé el podem imaginar que és pa.                        10
 Les mans alcem al cel; la fam ens punxa.
 Fins i tot els captaires senten vergonya de la nostra pobresa dira.»
 
+[...] [Versos 11-29 omesos: la dona insisteix en la seva queixa]
+
 El marit li respongué: «Prega, fes silenci!                                30
 La nostra vida és gairebé passada. Què ens queda sinó plorar?
 
@@ -1141,8 +1165,12 @@ Tots depenen de Déu, el millor dels que alimenten.                          45
 Si pots aprendre a trobar dolça aquesta part de mort,
 sàpigues que Déu farà que el seu tot s'ajusti al teu conhort.              50
 
+[...] [Versos 51-69 omesos: el marit parla de la confiança en Déu i la riquesa interior]
+
 »Jo trio el camí que porta dret a la porta del contentament,                70
 per què prens tu el sender cap al pecat i el patiment?»
+
+[...] [Versos 71-184 omesos: llarg debat entre marit i muller sobre la pobresa, la confiança en Déu i la decisió d'anar a veure el califa]
 
 La dona li respongué: «La manifestació pública del califa és               185
 per a tots els que manquen d'introducció.
@@ -1150,30 +1178,44 @@ Ser, i tenir una pena, és introducció segura.»
 
 Ell encara objectà: «Fins i tot llavors, un testimoni necessitaria.»       190
 
+[...] [Versos 191-194 omesos]
+
 La dona reprengué: «Aigua de pluja és tot el que tenim.                    195
 Un potets d'aigua portaràs amb tu, com a ofrena al califa.
 Tanca bé els llavis del pot.»                                              205
+
+[...] [Versos 206-214 omesos: preparatius per al viatge]
 
 L'home ara hi assentí: «Sí! Tapa la boca del pot ben fort.                 215
 L'aigua de l'esmorzar del nostre califa serà — tan fresca!»
 
 El nostre àrab pren ara aquell pot d'aigua al seu càrrec.
 De dia i de nit viatja.                                                     225
+
+[...] [Versos 226-234 omesos: el viatge pel desert fins a Bagdad]
+
 El pot arribà a Bagdad sa i estalvi.
 
 Una veu proclamà: «Veniu endavant, tots els fills de la necessitat!»       235
+
+[...] [Versos 236-249 omesos: l'àrab arriba a les portes de Bagdad]
 
 El nostre àrab, des de lluny, des de l'erm arenós del desert,
 ha arribat finalment als murs de Bagdad.                                   250
 
 Ell respongué: «Sóc un estranger, pobre, vingut des de les arenes,
 amb l'esperança d'obtenir algun favor de mans sobiranes.                   255
+
+[...] [Versos 256-269 omesos: l'àrab presenta la seva súplica]
+
 En cerca de pa sóc; com a ofrena, aigua porto.                             270
 L'esperança de pa obre de bat a bat els portals del cel!»
 
 El califa, quan veié aquell pot, i escoltà aquell relat,
 el vas omplí de sequins d'or,
 per alliberar el nostre àrab de la garra crua de la pobresa.               290
+
+[...] [Versos 291-299 omesos: el califa ordena que l'àrab sigui atès]
 
 El nostre àrab fou posat en una barca a la vora del riu;
 el corrent veié, admirà, s'inclinà, perdé tot el seu orgull viu,          300
@@ -1190,7 +1232,9 @@ que brolla de saviesa; una gota de l'oceà de la Seva gràcia.              305
 Husam al-Din, Llum de la Veritat, pren, amic meu,
 un full, perquè les virtuts d'un Mestre hi puguis afegir.
 Ets tant llum com llanterna, tot en un.                                      5
-Guia dels manaments del meu cor, clau del meu desig — ets tu, fideu.
+Guia dels manaments del meu cor, clau del meu desig — ets tu, fidel.
+
+[...] [Versos 6-9 omesos]
 
 Tria primer el teu Mestre; després, segueix tot el que t'ha mostrat.
 L'esclat d'un Mestre és la calor de l'estiu;                               10
@@ -1199,6 +1243,8 @@ fred hivern, la multitud terrena.
 Tria un Mestre, doncs. Sense tal guia, viatjar és va;
 el camí és perillós — assetjat pel seguici del mal.
 
+[...] [Versos 15-34 omesos: sobre la necessitat d'un guia espiritual]
+
 El Profeta digué a Alí: «Cosí, escolta'm.
 El "Lleó de la Veritat" ets tu; un heroi.                                   35
 No confiïs massa, tanmateix, en el teu coratge sol;
@@ -1206,9 +1252,13 @@ confia, molt més, en el braç de Déu.
 La Seva ombra sobre la terra és el que la manté al seu lloc;
 el Seu esperit, com ocell del sol, s'enfila a l'espai supern.               40
 
+[...] [Versos 41-49 omesos: sobre l'obediència al mestre]
+
 »Havent triat el teu Mestre, obediència rendeix,
 implícita; tal com Moisès caminant per aquell camp.                          50
 Passi el que passi, guarda't, i no qüestionis res.»
+
+[...] [Versos 52-69 omesos: transició a la paràbola del valentó i el tatuador]
 
 Un cert valentó de Qazwin anà a trobar un artista,
 per tenir un disseny valent imprès a la seva pell.                           70
@@ -1239,6 +1289,8 @@ Tingues paciència, tu també, germà, amb la punxada de l'agulla.
 Així escaparàs l'agulló de la consciència dins el teu cor.
 Els qui han vençut — alliberats del jou del cos —
 són adorats a les esferes, el sol, la lluna, els estels.                   110
+
+[...] [Versos 111-119 omesos: sobre l'alliberament de l'ànima]
 
 Voldries brillar tant intensament a la vista de tots?
 Aniquila el teu jo fosc — el vel del teu ésser.                            120
