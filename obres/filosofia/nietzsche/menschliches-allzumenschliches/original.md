@@ -1,6 +1,3 @@
-# Menschliches, Allzumenschliches
-# Ein Buch für freie Geister
-
 **Friedrich Nietzsche** (1878)
 
 *Text complet del primer i segon volum.*
