@@ -7,7 +7,8 @@ obra:
   any_original: "c. 49 dC"
   any_traduccio: 2026
   llengua_original: llatí
-  genere: filosofia
+  categoria: filosofia
+  font_original: "https://la.wikisource.org/wiki/De%20brevitate%20vitae"
   descripcio: Tractat filosòfic estoic on Sèneca exhorta Paulí a abandonar els afers
     públics i dedicar-se a la filosofia, argumentant que la vida no és breu sinó que
     la malgastem.
