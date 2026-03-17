@@ -7,14 +7,16 @@
   },
   "timestamps": {
     "inici": "2026-03-17T05:39:36.121009",
-    "ultima_activitat": "2026-03-17T05:42:19.045857"
+    "ultima_activitat": "2026-03-17T05:43:23.854280"
   },
   "fase_actual": "anotacio",
   "fases_completades": [
     "investigacio",
     "glossari",
     "chunking",
-    "traduccio"
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 1,
@@ -26,12 +28,13 @@
   },
   "metriques": {
     "qualitat_mitjana": 0.0,
-    "temps_total_min": 0.0
+    "temps_total_min": 3.8
   },
   "errors": [
     "[05:42:19] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
-    "[05:41:37] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+    "[05:41:37] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
+    "[05:43:23] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
   ]
 }

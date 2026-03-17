@@ -1,5 +1,3 @@
-# Epistulae Morales ad Lucilium — Epistula I
-
 ## De Recuperando Tempore
 
 **Lucius Annaeus Seneca**

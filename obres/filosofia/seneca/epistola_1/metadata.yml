@@ -1,15 +1,18 @@
 obra:
-  titol: "Epístola 1 — De Recuperando Tempore"
-  titol_original: "Epistula I — De Recuperando Tempore"
-  autor: "Sèneca"
-  autor_original: "Lucius Annaeus Seneca"
-  traductor: "Editorial Clàssica"
-  any_original: "c. 65 dC"
+  titol: Epístola 1 — De Recuperando Tempore
+  titol_original: Epistula I — De Recuperando Tempore
+  autor: Sèneca
+  autor_original: Lucius Annaeus Seneca
+  traductor: Editorial Clàssica
+  any_original: c. 65 dC
   any_traduccio: 2026
-  llengua_original: "llatí"
-  categoria: "filosofia"
-  descripcio: "Primera de les Epístoles Morals a Lucili. Sèneca reflexiona sobre el valor del temps i la necessitat de recuperar-lo."
-  font_original: "https://la.wikisource.org/wiki/Epistulae_morales_ad_Lucilium/Liber_I#I._-_De_recuperando_tempore"
+  llengua_original: llatí
+  categoria: filosofia
+  descripcio: Primera de les Epístoles Morals a Lucili. Sèneca reflexiona sobre el
+    valor del temps i la necessitat de recuperar-lo.
+  font_original: https://la.wikisource.org/wiki/Epistulae_morales_ad_Lucilium/Liber_I#I._-_De_recuperando_tempore
+  estadistiques:
+    paraules_traduccio: 10
 seccions: 1
 estadistiques:
   paraules_original: 295
@@ -17,6 +20,6 @@ estadistiques:
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "pendent"
-  qualitat: null
-  data_revisio: null
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-17'
