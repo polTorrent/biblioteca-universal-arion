@@ -15,7 +15,7 @@ estadistiques:
   paraules_original: 0
   paraules_traduccio: 0
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 25
 
 revisio:
   estat: "pendent"
