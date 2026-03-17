@@ -313,6 +313,8 @@ el dolor d'un amant a qui la seva dama mai no ha consagrat.
 La seva solitud, l'angoixa del seu pit,
 no aquí la pintaré; en altre lloc sigui dit.                               100
 
+[...] [Versos 101-114 omesos: digressió sobre la natura de l'amor diví]
+
 L'hoste, convençut que l'amor li havia causat el mal,
 va procedir a calmar la ment del príncep a senyal.
 «Buideu aquestes cambres de tota ànima mortal;
@@ -585,12 +587,16 @@ del seu acte al d'ells un interval podem veure créixer.                    35
 Maledicció de Déu sobre llur bruixeria i art diabòlic!
 La Seva benedicció sobre Moisès, que va triar la millor part, apostòlic!
 
+[...] [Versos 36-79 omesos: digressió sobre la diferència entre miracles i màgia]
+
 El vi de l'amor de Déu era l'aliment de la seva ànima.
 El vi que embriaga, aboca'l de la teva copa amb calma.                     80
 
 ---
 
 ## III. El rei jueu, perseguidor dels cristians. [80]
+
+> *Nota del traductor: A partir d'aquest conte, la traducció adopta un format més condensat, alternant vers i prosa rítmica, amb selecció dels passatges més rellevants de l'original. Els versos omesos s'indiquen amb [...] seguit del rang corresponent.*
 
 Un rei jueu, salvatge i cruel en els seus actes,
 per odi a Jesús perseguia els natzarens.
@@ -634,6 +640,8 @@ Llavors expulsa'm lluny de tu, a l'exili,
 i ells m'acolliran, sota aparença de dolor.                                 25
 "En secret," fingiré, "soc cristià de cor;
 Déu és testimoni de com la meva fe m'ha causat mal."»
+
+[...] [Versos 26-39 omesos: el pla del visir es posa en marxa]
 
 Davant del públic, nas i orelles van ser tallats.
 Va fugir cap als cristians i es posà a predicar.                            40
