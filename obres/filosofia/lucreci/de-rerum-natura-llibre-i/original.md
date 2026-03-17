@@ -1,5 +1,3 @@
-# De rerum natura — Liber I
-
 **Autor:** Titus Lucretius Carus (c. 99–55 aC)
 
 **Font:** [The Latin Library](https://www.thelatinlibrary.com/lucretius/lucretius1.shtml)
