@@ -1,0 +1,24 @@
+obra:
+  titol: "Beowulf"
+  titol_original: "Bēowulf"
+  autor: "Anònim anglosaxó"
+  autor_original: "Anonymous"
+  traductor: "Biblioteca Arion"
+  any_original: "c. 700-1000 dC"
+  any_traduccio: 2026
+  llengua_original: "anglès antic"
+  descripcio: "Poema èpic anglosaxó en anglès antic (Old English), el text literari més antic conservat en una llengua germànica. Narra les gestes de l'heroi geat Beowulf contra el monstre Grendel, la seva mare i un drac."
+  font_url: "https://www.gutenberg.org/ebooks/9701"
+  font_edicio: "Harrison & Sharp, 4a edició"
+  categoria: "narrativa"
+  genere: "poema èpic"
+seccions: 43
+estadistiques:
+  paraules_original: 18408
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 30
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: ""
