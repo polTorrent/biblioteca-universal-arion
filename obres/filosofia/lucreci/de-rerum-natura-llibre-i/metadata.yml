@@ -20,9 +20,10 @@ seccions: 1
 estadistiques:
   versos_original: 1117
   paraules_original: ~7500
+  paraules_traduccio: ~8500
   notes: 0
   termes_glossari: 16
 revisio:
-  estat: "pendent"
-  qualitat: null
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: "2026-03-17"

@@ -8,19 +8,19 @@ obra:
   any_original: 1919-1920
   any_traduccio: 2026
   llengua_original: alemany
+  categoria: filosofia
   font: Husserliana Materialien Band IX
+  font_original: https://link.springer.com/book/10.1007/978-94-007-4066-2
   editor_original: Hanne Jacobs
   editorial_original: Springer
-  descripcio: 'Lliçons universitàries d''Edmund Husserl impartides a Friburg entre
+  descripcio: >-
+    Lliçons universitàries d'Edmund Husserl impartides a Friburg entre
     1916 i 1920 sota el títol «Einleitung in die Philosophie». El text principal correspon
-    a la lliçó del semestre d''hivern 1919/20, que incorpora materials de les lliçons
-    anteriors de 1916 i 1918. L''obra recorre la història de la filosofia des dels
-    grecs fins a la fenomenologia, passant per Plató, Aristòtil, Descartes, l''empirisme
+    a la lliçó del semestre d'hivern 1919/20, que incorpora materials de les lliçons
+    anteriors de 1916 i 1918. L'obra recorre la història de la filosofia des dels
+    grecs fins a la fenomenologia, passant per Plató, Aristòtil, Descartes, l'empirisme
     britànic, Spinoza, Leibniz i Kant, per fonamentar la fenomenologia com a ciència
     rigorosa i apriorística.
-
-    '
-  estadistiques: {}
 seccions:
   llico_principal:
   - L'àmbit peculiar de problemes de la filosofia
