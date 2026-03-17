@@ -1,57 +1,56 @@
 obra:
-  titol: "Introducció a la filosofia"
-  titol_original: "Einleitung in die Philosophie"
-  subtitol: "Lliçons 1916–1920"
-  subtitol_original: "Vorlesungen 1916–1920"
-  autor: "Edmund Husserl"
-  traductor: "Editorial Clàssica (Biblioteca Universal Arion)"
-  any_original: "1919-1920"
+  titol: Introducció a la filosofia
+  titol_original: Einleitung in die Philosophie
+  subtitol: Lliçons 1916–1920
+  subtitol_original: Vorlesungen 1916–1920
+  autor: Edmund Husserl
+  traductor: Editorial Clàssica (Biblioteca Universal Arion)
+  any_original: 1919-1920
   any_traduccio: 2026
-  llengua_original: "alemany"
-  font: "Husserliana Materialien Band IX"
-  editor_original: "Hanne Jacobs"
-  editorial_original: "Springer"
-  descripcio: >
-    Lliçons universitàries d'Edmund Husserl impartides a Friburg entre 1916 i 1920
-    sota el títol «Einleitung in die Philosophie». El text principal correspon a la
-    lliçó del semestre d'hivern 1919/20, que incorpora materials de les lliçons
-    anteriors de 1916 i 1918. L'obra recorre la història de la filosofia des dels
-    grecs fins a la fenomenologia, passant per Plató, Aristòtil, Descartes, l'empirisme
+  llengua_original: alemany
+  font: Husserliana Materialien Band IX
+  editor_original: Hanne Jacobs
+  editorial_original: Springer
+  descripcio: 'Lliçons universitàries d''Edmund Husserl impartides a Friburg entre
+    1916 i 1920 sota el títol «Einleitung in die Philosophie». El text principal correspon
+    a la lliçó del semestre d''hivern 1919/20, que incorpora materials de les lliçons
+    anteriors de 1916 i 1918. L''obra recorre la història de la filosofia des dels
+    grecs fins a la fenomenologia, passant per Plató, Aristòtil, Descartes, l''empirisme
     britànic, Spinoza, Leibniz i Kant, per fonamentar la fenomenologia com a ciència
     rigorosa i apriorística.
 
+    '
+  estadistiques: {}
 seccions:
   llico_principal:
-    - "L'àmbit peculiar de problemes de la filosofia"
-    - "La filosofia o ciència grega incipient"
-    - "Plató i el descobriment de l'apriori"
-    - "Teoria formal de la ciència"
-    - "Aristòtil i la idea d'una ontologia real"
-    - "Explicació cientificonatural i teleològica del món"
-    - "Axiologia apriorística i ètica"
-    - "Ètica social"
-    - "Teleologia"
-    - "Racionalisme i empirisme"
-    - "El gir interior de Descartes"
-    - "La fenomenologia com a ciència apriorística"
+  - L'àmbit peculiar de problemes de la filosofia
+  - La filosofia o ciència grega incipient
+  - Plató i el descobriment de l'apriori
+  - Teoria formal de la ciència
+  - Aristòtil i la idea d'una ontologia real
+  - Explicació cientificonatural i teleològica del món
+  - Axiologia apriorística i ètica
+  - Ètica social
+  - Teleologia
+  - Racionalisme i empirisme
+  - El gir interior de Descartes
+  - La fenomenologia com a ciència apriorística
   apendix:
-    - "Descartes"
-    - "Locke"
-    - "Teoria del coneixement i metafísica"
-    - "Berkeley"
-    - "Hume"
-    - "Spinoza"
-    - "Leibniz"
-    - "Kant"
-
+  - Descartes
+  - Locke
+  - Teoria del coneixement i metafísica
+  - Berkeley
+  - Hume
+  - Spinoza
+  - Leibniz
+  - Kant
 estadistiques:
   paraules_original: 186612
   paraules_traduccio: 46083
   notes: 5
   termes_glossari: 37
   pagines_original: 478
-
 revisio:
-  estat: "en_curs"
-  qualitat: ~
-  data_revisio: "2026-03-08"
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-17'

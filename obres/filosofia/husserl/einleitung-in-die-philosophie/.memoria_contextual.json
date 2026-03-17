@@ -1,0 +1,157 @@
+{
+  "traduccions": {
+    "philosophie": {
+      "original": "Philosophie",
+      "traduccio": "filosofia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "wissenschaft": {
+      "original": "Wissenschaft",
+      "traduccio": "ciència",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "problemsphare": {
+      "original": "Problemsphäre",
+      "traduccio": "esfera de problemes / àmbit problemàtic",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "anschauung": {
+      "original": "Anschauung",
+      "traduccio": "intuïció / contemplació",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "erfahrung": {
+      "original": "Erfahrung",
+      "traduccio": "experiència",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "erkenntnisinteressen": {
+      "original": "Erkenntnisinteressen",
+      "traduccio": "interessos cognoscitius",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "dimension": {
+      "original": "Dimension",
+      "traduccio": "dimensió",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "disziplin": {
+      "original": "Disziplin",
+      "traduccio": "disciplina",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "zoologie": {
+      "original": "Zoologie",
+      "traduccio": "zoologia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "botanik": {
+      "original": "Botanik",
+      "traduccio": "botànica",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "psychologie": {
+      "original": "Psychologie",
+      "traduccio": "psicologia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "sprachwissenschaft": {
+      "original": "Sprachwissenschaft",
+      "traduccio": "lingüística / ciència del llenguatge",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "kunstwissenschaft": {
+      "original": "Kunstwissenschaft",
+      "traduccio": "ciència de l'art / estètica científica",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "chemie": {
+      "original": "Chemie",
+      "traduccio": "química",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "geometrie": {
+      "original": "Geometrie",
+      "traduccio": "geometria",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "mathematik": {
+      "original": "Mathematik",
+      "traduccio": "matemàtiques",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Edmund Gustav Albrecht Husserl (1859 - 1938), Prossnitz, Moràvia (actual Prostějov, República Txeca). Filòsof alemany d'origen jueu, fundador de la fenomenologia com a moviment filosòfic. Professor a Halle, Göttingen i Friburg, va desenvolupar un mètode rigorós per a l'estudi de la consciència i els fenòmens tal com es presenten a l'experiència directa.",
+    "context_historic": "Època de transformacions intel·lectuals a Europa (final s.XIX - primers del XX), crisi del positivisme, sorgiment de la psicologia experimental, context de la Primera Guerra Mundial i ascens del nazisme",
+    "context_obra": "Einleitung in die Philosophie (c. 1920-1930) - tractat filosòfic introductor. Conferències i textos preparatoris per a estudiants, part dels esforços de Husserl per sistematitzar i divulgar el mètode fenomenològic",
+    "influencies": [
+      "Franz Brentano",
+      "Carl Stumpf",
+      "Gottfried Wilhelm Leibniz",
+      "René Descartes",
+      "David Hume",
+      "Immanuel Kant"
+    ],
+    "temes_principals": [
+      "l'àmbit específic dels problemes filosòfics",
+      "diferenciació entre filosofia i ciències positives",
+      "mètode fenomenològic",
+      "reducció fenomenològica",
+      "consciència intencional"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: René Descartes",
+    "[H] Personatge històric: Immanuel Kant",
+    "[H] Personatge històric: Franz Brentano",
+    "[H] Personatge històric: David Hume",
+    "[C] Referència cultural: tradició filosòfica alemanya",
+    "[C] Referència cultural: crisi de les ciències europees",
+    "[C] Referència cultural: positivisme del segle XIX",
+    "[C] Referència cultural: psicologia descriptiva",
+    "[T] Terme tècnic: Phänomenologie",
+    "[T] Terme tècnic: Bewusstsein",
+    "[T] Terme tècnic: Intentionalität",
+    "[T] Terme tècnic: Epoché",
+    "[T] Terme tècnic: Reduktion",
+    "[T] Terme tècnic: Wesensschau",
+    "[T] Terme tècnic: Erlebnis",
+    "[T] Terme tècnic: Noema",
+    "[T] Terme tècnic: Noesis"
+  ]
+}
