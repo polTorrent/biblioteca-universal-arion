@@ -1,0 +1,26 @@
+{
+  "sessio_id": "aristòtil-sobre-lànima-2026-03-17",
+  "obra": {
+    "autor": "Aristòtil",
+    "titol": "Sobre l'Ànima",
+    "llengua": "grec"
+  },
+  "timestamps": {
+    "inici": "2026-03-17T07:54:39.179337",
+    "ultima_activitat": "2026-03-17T07:54:39.179471"
+  },
+  "fase_actual": "investigacio",
+  "fases_completades": [],
+  "chunks": {
+    "total": 0,
+    "completats": [],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}

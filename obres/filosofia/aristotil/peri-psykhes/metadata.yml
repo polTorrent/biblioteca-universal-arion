@@ -15,10 +15,8 @@ obra:
     i intel·lectiva— i la seva relació amb el cos, establint la doctrina
     hilemòrfica segons la qual l'ànima és la forma (eidos) del cos natural
     que posseeix vida en potència.
-  categories:
-    - filosofia
-    - psicologia
-    - metafísica
+  categoria: "filosofia"
+  font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046"
   libres: 3
 seccions: 3
 estadistiques:
