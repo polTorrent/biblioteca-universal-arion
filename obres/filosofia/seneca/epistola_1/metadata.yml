@@ -23,3 +23,19 @@ revisio:
   estat: revisat
   qualitat: 0.0
   data_revisio: '2026-03-17'
+avaluacio_final:
+  data: '2026-03-17T05:43:30.154716'
+  puntuacions:
+    fidelitat: 1.0
+    veu_autor: 1.0
+    fluidesa: 1.0
+    correccio_linguistica: 3.0
+    coherencia: 1.0
+    global: 1.3
+  total_errors: 3
+  errors_critics: 3
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 0
