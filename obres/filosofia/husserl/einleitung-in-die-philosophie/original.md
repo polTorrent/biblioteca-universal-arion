@@ -1,13 +1,3 @@
-# Einleitung in die Philosophie
-# Introducció a la filosofia
-
-**Edmund Husserl**
-*Vorlesungen 1916–1920 (Husserliana Materialien IX)*
-
----
-
-# PART I — LLIÇÓ PRINCIPAL (Vorlesung 1919/20)
-
 ## L'àmbit peculiar de problemes de la filosofia
 ## Die eigentümliche Problemsphäre der Philosophie
 
