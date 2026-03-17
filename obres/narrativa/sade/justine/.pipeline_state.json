@@ -1,0 +1,26 @@
+{
+  "sessio_id": "marquès-de-sade-justine-o-els-infort-2026-03-17",
+  "obra": {
+    "autor": "Marquès de Sade",
+    "titol": "Justine o els Infortunis de la Virtut",
+    "llengua": "francès"
+  },
+  "timestamps": {
+    "inici": "2026-03-17T01:27:23.377817",
+    "ultima_activitat": "2026-03-17T01:27:23.377943"
+  },
+  "fase_actual": "investigacio",
+  "fases_completades": [],
+  "chunks": {
+    "total": 0,
+    "completats": [],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}
