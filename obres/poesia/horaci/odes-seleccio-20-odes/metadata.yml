@@ -1,16 +1,20 @@
 obra:
-  titol: "Odes (Carmina) — Selecció de 20 Odes"
-  titol_original: "Carmina"
-  autor: "Horaci"
-  autor_original: "Quintus Horatius Flaccus"
-  traductor: "Editorial Clàssica"
-  any_original: "c. 23-13 aC"
+  titol: Odes (Carmina) — Selecció de 20 Odes
+  titol_original: Carmina
+  autor: Horaci
+  autor_original: Quintus Horatius Flaccus
+  traductor: Editorial Clàssica
+  any_original: c. 23-13 aC
   any_traduccio: 2026
-  llengua_original: "llatí"
-  categoria: "poesia"
-  descripcio: "Selecció de 20 odes dels quatre llibres de les Carmina d'Horaci, el gran poeta líric romà. Les Odes són l'obra mestra de la lírica llatina, amb temes com el carpe diem, l'amistat, l'amor, la naturalesa i la reflexió sobre la mortalitat."
-  font_original: "https://www.thelatinlibrary.com/hor.html"
-  font_original_alt: "https://www.gutenberg.org/ebooks/13507"
+  llengua_original: llatí
+  categoria: poesia
+  descripcio: Selecció de 20 odes dels quatre llibres de les Carmina d'Horaci, el
+    gran poeta líric romà. Les Odes són l'obra mestra de la lírica llatina, amb temes
+    com el carpe diem, l'amistat, l'amor, la naturalesa i la reflexió sobre la mortalitat.
+  font_original: https://www.thelatinlibrary.com/hor.html
+  font_original_alt: https://www.gutenberg.org/ebooks/13507
+  estadistiques:
+    paraules_traduccio: 5838
 seccions: 20
 estadistiques:
   paraules_original: 14353
@@ -18,6 +22,22 @@ estadistiques:
   notes: 0
   termes_glossari: 31
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: revisat
+  qualitat: 4.55
+  data_revisio: '2026-03-17'
+avaluacio_final:
+  data: '2026-03-17T02:52:13.480656'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 53
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 44

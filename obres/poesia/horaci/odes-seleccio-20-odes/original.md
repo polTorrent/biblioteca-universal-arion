@@ -1,4 +1,3 @@
-# Odes (Carmina) — Selecció de 20 Odes
 **Autor:** Quintus Horatius Flaccus (Horaci)
 **Font:** [The Latin Library](https://www.thelatinlibrary.com/hor.html)
 **Llengua:** llatí
@@ -7,8 +6,7 @@
 
 Q. HORATI FLACCI CARMINVM LIBER PRIMVS
 
-I
-
+## I
 Maecenas atavis edite regibus,
 o et praesidium et dulce decus meum,
 sunt quos curriculo pulverem Olympicum
@@ -46,8 +44,7 @@ Lesboum refugit tendere barbiton.
 Quod si me lyricis vatibus inseres,               35
 sublimi feriam sidera vertice.
 
-II
-
+## II
 Iam satis terris nivis atque dirae
 grandinis misit Pater et rubente
 dextera sacras iaculatus arces
@@ -113,8 +110,7 @@ hic ames dici pater atque princeps,               50
 neu sinas Medos equitare inultos
      te duce, Caesar.
 
-III
-
+## III
      Sic te diva potens Cypri,
 sic fratres Helenae, lucida sidera,
      ventorumque regat pater
@@ -156,8 +152,7 @@ caelum ipsum petimus stultitia neque
      per nostrum patimur scelus
 iracunda Iovem ponere fulmina.               40
 
-IV
-
+## IV
 Soluitur acris hiems grata vice veris et Favoni
      trahuntque siccas machinae carinas,
 ac neque iam stabulis gaudet pecus aut arator igni
@@ -179,8 +174,7 @@ et domus exilis Plutonia, quo simul mearis,
 nec tenerum Lycidan mirabere, quo calet iuventus
      nunc omnis et mox virgines tepebunt.               20
 
-V
-
+## V
 Quis multa gracilis te puer in rosa
 perfusus liquidis urget odoribus
      grato, Pyrrha, sub antro?
@@ -201,8 +195,7 @@ votiva paries indicat uvida
      suspendisse potenti
      vestimenta maris deo.               15
 
-VI
-
+## VI
 Scriberis Vario fortis et hostium
 uictor, Maeonii carminis alite,
 quam rem cumque ferox nauibus aut equis
@@ -228,8 +221,7 @@ sectis in iuvenes unguibus acrium
 cantamus, vacui sive quid urimur
      non praeter solitum leves.               20
 
-VII
-
+## VII
 Laudabunt alii claram Rhodon aut Mytilenen
      aut Ephesum bimarisve Corinthi
 moenia vel Baccho Thebas vel Apolline Delphos
@@ -263,8 +255,7 @@ ambiguam tellure nova Salamina futuram.
 mecum saepe viri, nunc vino pellite curas;               30
      cras ingens iterabimus aequor.'
 
-VIII
-
+## VIII
      Lydia, dic, per omnis
 te deos oro, Sybarin cur properes amando
      perdere, cur apricum
@@ -282,8 +273,7 @@ filium dicunt Thetidis sub lacrimosa Troia
      funera, ne virilis               15
 cultus in caedem et Lycias proriperet catervas?
 
-IX
-
+## IX
 Vides ut alta stet nive candidum
 Soracte nec iam sustineant onus
      silvae laborantes geluque
@@ -314,8 +304,7 @@ gratus puellae risus ab angulo
      pignusque dereptum lacertis
      aut digito male pertinaci.
 
-X
-
+## X
 Mercuri, facunde nepos Atlantis,
 qui feros cultus hominum recentum
 voce formasti catus et decorae
@@ -341,8 +330,7 @@ sedibus virgaque levem coerces
 aurea turbam, superis deorum
      gratus et imis.               20
 
-XI
-
+## XI
 Tu ne quaesieris (scire nefas) quem mihi, quem tibi
 finem di dederint, Leuconoe, nec Babylonios
 temptaris numeros. Ut melius quicquid erit pati!
@@ -352,8 +340,7 @@ Tyrrhenum, sapias, vina liques et spatio brevi
 spem longam reseces. Dum loquimur, fugerit invida
 aetas: carpe diem, quam minimum credula postero.
 
-XII
-
+## XII
 Quem virum aut heroa lyra vel acri
 tibia sumis celebrare, Clio?
 Quem deum? Cuius recinet iocosa
@@ -429,8 +416,7 @@ tu gravi curru quaties Olympum,
 tu parum castis inimica mittes
      fulmina lucis.               60
 
-XIII
-
+## XIII
      Cum tu, Lydia, Telephi
 cervicem roseam, cerea Telephi
      laudas bracchia, vae, meum
@@ -452,8 +438,7 @@ quos inrupta tenet copula nec malis
      divolsus querimoniis
 suprema citius solvet amor die.               20
 
-XIV
-
+## XIV
 O navis, referent in mare te novi
 fluctus. O quid agis? Fortiter occupa
      portum. Nonne vides ut
@@ -479,8 +464,7 @@ nunc desiderium curaque non levis,
      interfusa nitentis
      vites aequora Cycladas.               20
 
-XV
-
+## XV
 Pastor cum traheret per freta navibus
 Idaeis Helenen perfidus hospitam,
 ingrato celeris obruit otio
@@ -526,8 +510,7 @@ matronisque Phrygum classis Achillei;
 post certas hiemes uret Achaicus               35
      ignis Iliacas domos.'
 
-XVI
-
+## XVI
 O matre pulchra filia pulchrior,
 quem criminosis cumque voles modum
      pones iambis, sive flamma
@@ -563,8 +546,7 @@ mutare quaero tristia, dum mihi
      fias recantatis amica
      opprobriis animumque reddas.
 
-XVII
-
+## XVII
 Velox amoenum saepe Lucretilem
 mutat Lycaeo Faunus et igneam
      defendit aestatem capellis
@@ -600,8 +582,7 @@ incontinentis iniciat manus
      et scindat haerentem coronam
      crinibus inmeritamque vestem.
 
-XVIII
-
+## XVIII
 Nullam, Vare, sacra vite prius severis arborem
 circa mite solum Tiburis et moenia Catili;
 siccis omnia nam dura deus proposuit neque
@@ -619,8 +600,7 @@ cornu tympana, quae subsequitur caecus amor sui
 et tollens vacuum plus nimio gloria verticem               15
 arcanique fides prodiga, perlucidior vitro.
 
-XIX
-
+## XIX
      Mater saeva Cupidinum
 Thebanaeque iubet me Semelae puer
      et lasciva Licentia
@@ -638,8 +618,7 @@ verbenas, pueri, ponite turaque
      bimi cum patera meri:
 mactata veniet lenior hostia.               15
 
-XX
-
+## XX
 Vile potabis modicis Sabinum
 cantharis, Graeca quod ego ipse testa
 conditum levi, datus in theatro
@@ -655,8 +634,7 @@ tu bibes uvam; mea nec Falernae               10
 temperant vites neque Formiani
      pocula colles.
 
-XXI
-
+## XXI
 Dianam tenerae dicite virgines,
 intonsum, pueri, dicite Cynthium
      Latonamque supremo
@@ -677,8 +655,7 @@ pestemque a populo et principe Caesare in
      Persas atque Britannos
      vestra motus aget prece.               15
 
-XXII
-
+## XXII
 Integer vitae scelerisque purus
 non eget Mauris iaculis neque arcu
 nec venenatis gravida sagittis,
@@ -709,8 +686,7 @@ solis in terra domibus negata:
 dulce ridentem Lalagen amabo,
      dulce loquentem.
 
-XXIII
-
+## XXIII
 Vitas inuleo me similis, Chloe,
 quaerenti pavidam montibus aviis
      matrem non sine vano
@@ -726,8 +702,7 @@ Gaetulusue leo, frangere persequor:               10
      tandem desine matrem
      tempestiva sequi viro.
 
-XXIV
-
+## XXIV
 Quis desiderio sit pudor aut modus
 tam cari capitis? Praecipe lugubris
 cantus, Melpomene, cui liquidam pater
@@ -753,8 +728,7 @@ nigro compulerit Mercurius gregi?
 durum: sed levius fit patientia
      quicquid corrigere est nefas.               20
 
-XXV
-
+## XXV
 Parcius iunctas quatiunt fenestras
 iactibus crebris iuvenes proterui
 nec tibi somnos adimunt amatque
@@ -780,8 +754,7 @@ gaudeat pulla magis atque myrto,
 aridas frondes hiemis sodali
      dedicet Euro.               20
 
-XXVI
-
+## XXVI
 Musis amicus tristitiam et metus
 tradam protervis in mare Creticum
      portare ventis, quis sub Arcto
@@ -797,8 +770,7 @@ prosunt honores; hunc fidibus novis,               10
      hunc Lesbio sacrare plectro
      teque tuasque decet sorores.
 
-XXVII
-
+## XXVII
 Natis in usum laetitiae scyphis
 pugnare Thracum est; tollite barbarum
      morem verecundumque Bacchum
@@ -829,8 +801,7 @@ magus venenis, quis poterit deus?
      vix inligatum te triformi
      Pegasus expediet Chimaera.
 
-XXVIII
-
+## XXVIII
 Te maris et terrae numeroque carentis harenae
      mensorem cohibent, Archyta,
 pulveris exigui prope latum parva Matinum
@@ -868,8 +839,7 @@ te maneant ipsum: precibus non linquar inultis
 Quamquam festinas, non est mora longa; licebit               35
      iniecto ter pulvere curras.
 
-XXIX
-
+## XXIX
 Icci, beatis nunc Arabum invides
 gazis et acrem militiam paras
      non ante devictis Sabaeae
@@ -890,8 +860,7 @@ libros Panaeti Socraticam et domum
      mutare loricis Hiberis,
      pollicitus meliora, tendis?               15
 
-XXX
-
+## XXX
 O Venus regina Cnidi Paphique,
 sperne dilectam Cypron et vocantis
 ture te multo Glycerae decoram
@@ -902,8 +871,7 @@ Gratiae zonis properentque Nymphae
 et parum comis sine te Iuventas
      Mercuriusque.
 
-XXXI
-
+## XXXI
 Quid dedicatum poscit Apollinem
 vates? Quid orat, de patera novum
      fundens liquorem? Non opimae
@@ -929,8 +897,7 @@ Latoe, dones, at, precor, integra
      cum mente, nec turpem senectam
      degere nec cithara carentem.               20
 
-XXXII
-
+## XXXII
 Poscimur. Si quid vacui sub umbra
 lusimus tecum, quod et hunc in annum
 vivat et pluris, age, dic Latinum,
@@ -951,8 +918,7 @@ grata testudo Iovis, o laborum
 dulce lenimen, mihi cumque salve               15
      rite vocanti.
 
-XXXIII
-
+## XXXIII
 Albi, ne doleas plus nimio memor
 inmitis Glycerae neu miserabilis
 descantes elegos, cur tibi iunior
@@ -973,8 +939,7 @@ grata detinuit compede Myrtale
 libertina, fretis acrior Hadriae               15
      curuantis Calabros sinus.
 
-XXXIV
-
+## XXXIV
 Parcus deorum cultor et infrequens,
 insanientis dum sapientiae
      consultus erro, nunc retrorsum
@@ -995,8 +960,7 @@ obscura promens; hinc apicem rapax
      Fortuna cum stridore acuto
      sustulit, hic posuisse gaudet.               15
 
-XXXV
-
+## XXXV
 O diva, gratum quae regis Antium,
 praesens vel imo tollere de gradu
      mortale corpus vel superbos
@@ -1047,8 +1011,7 @@ pepercit aris? O utinam nova
      incude diffingas retusum in
      Massagetas Arabasque ferrum!               40
 
-XXXVI
-
+## XXXVI
      Et ture et fidibus iuvat
 placare et vituli sanguini debito
      custodes Numidae deos,
@@ -1070,8 +1033,7 @@ deponent oculos nec Damalis nouo
      divelletur adultero
 lascivis hederis ambitiosior.               20
 
-XXXVII
-
+## XXXVII
 Nunc est bibendum, nunc pede libero
 pulsanda tellus, nunc Saliaribus
      ornare pulvinar deorum
@@ -1112,8 +1074,7 @@ saevis Liburnis scilicet invidens               30
      privata deduci superbo,
      non humilis mulier, triumpho.
 
-XXXVIII
-
+## XXXVIII
 Persicos odi, puer, apparatus,
 displicent nexae philyra coronae,
 mitte sectari, rosa quo locorum
@@ -1132,8 +1093,7 @@ dedecet myrtus neque me sub arta
 
 Q. HORATI FLACCI CARMINVM LIBER SECVNDVS
 
-I
-
+## I
 Motum ex Metello consule civicum
 
 bellique causas et vitia et modos
@@ -1214,8 +1174,7 @@ Ceae retractes munera Neniae,
 
      quaere modos leviore plectro.               40
 
-II
-
+## II
 Nullus argento color est avaris
 
 abdito terris, inimice lamnae
@@ -1264,8 +1223,7 @@ quisquis ingentis oculo inretorto
 
      spectat acervos.
 
-III
-
+## III
 Aequam memento rebus in arduis
 
 servare mentem, non secus in bonis
@@ -1322,8 +1280,7 @@ versatur urna serius ocius
 
      exilium impositura cumbae.
 
-IV
-
+## IV
 Ne sit ancillae tibi amor pudori,
 
 Xanthia Phoceu: prius insolentem
@@ -1372,8 +1329,7 @@ cuius octauvm trepidavit aetas
 
      claudere lustrum.
 
-V
-
+## V
 Nondum subacta ferre iugum valet
 
 cervice, nondum munia comparis
@@ -1422,8 +1378,7 @@ mire sagacis falleret hospites
 
      crinibus ambiguoque voltu.
 
-VI
-
+## VI
 Septimi, Gadis aditure mecum et
 
 Cantabrum indoctum iuga ferre nostra et
@@ -1472,8 +1427,7 @@ debita sparges lacrima favillam
 
      vatis amici.
 
-VII
-
+## VII
 O saepe mecum tempus in ultimum
 
 deducte Bruto militiae duce,
@@ -1530,8 +1484,7 @@ dicet bibendi? Non ego sanius
 
      dulce mihi furere est amico.
 
-VIII
-
+## VIII
 Ulla si iuris tibi peierati
 
 poena, Barine, nocuisset umquam,
@@ -1580,8 +1533,7 @@ virgines nuptae, tua ne retardet
 
      aura maritos.
 
-IX
-
+## IX
 Non semper imbres nubibus hispidos
 
 manant in agros aut mare Caspium
@@ -1630,8 +1582,7 @@ victis minores volvere vertices
 
      exiguis equitare campis.
 
-X
-
+## X
 Rectius vives, Licini, neque altum
 
 semper urgendo neque, dum procellas
@@ -1680,8 +1631,7 @@ contrahes vento nimium secundo
 
      turgida vela.
 
-XI
-
+## XI
 Quid bellicosus Cantaber et Scythes,
 
 Hirpine Quincti, cogitet Hadria
@@ -1730,8 +1680,7 @@ Lyden? Eburna dic, age, cum lyra
 
      more comas religata nodum.
 
-XII
-
+## XII
 Nolis longa ferae bella Numantiae,
 
 nec durum Hannibalem nec Siculum mare
@@ -1788,8 +1737,7 @@ quae poscente magis gaudeat eripi,
 
      interdum rapere occupet?
 
-XIII
-
+## XIII
 Ille et nefasto te posuit die,
 
 quicumque primum, et sacrilega manu
@@ -1870,8 +1818,7 @@ dulci laborum decipitur sono
 
      aut timidos agitare lyncas.               40
 
-XIV
-
+## XIV
 Eheu fugaces, Postume, Postume,
 
 labuntur anni nec pietas moram
@@ -1928,8 +1875,7 @@ servata centum clavibus et mero
 
      pontificum potiore cenis.
 
-XV
-
+## XV
 Iam pauca aratro iugera regiae
 
 moles relinquent, undique latius
@@ -1970,8 +1916,7 @@ leges sinebant, oppida publico
 
      templa novo decorare saxo.               20
 
-XVI
-
+## XVI
 Otium divos rogat in patenti
 
 prensus Aegaeo, simul atra nubes
@@ -2052,8 +1997,7 @@ Parca non mendax dedit et malignum
 
      spernere volgus.               40
 
-XVII
-
+## XVII
 Cur me querellis exanimas tuis?
 
 Nec dis amicum est nec mihi te prius
@@ -2118,8 +2062,7 @@ custos virorum. Reddere victimas               30
 
      nos humilem feriemus agnam.
 
-XVIII
-
+## XVIII
      Non ebur neque aureum
 
 mea renidet in domo lacunar;
@@ -2200,8 +2143,7 @@ genus coercet, hic levare functum
 
 vocatus atque non vocatus audit.               40
 
-XIX
-
+## XIX
 Bacchum in remotis carmina rupibus
 
 vidi docentem, credite posteri,
@@ -2266,8 +2208,7 @@ cornu decorum leniter atterens               30
 
      ore pedes tetigitque crura.
 
-XX
-
+## XX
 Non usitata nec tenui ferar
 
 penna biformis per liquidum aethera
@@ -2324,8 +2265,7 @@ luctusque turpes et querimoniae;
 
 Q. HORATI FLACCI CARMINVM LIBER TERTIVS
 
-I
-
+## I
 Odi profanum volgus et arceo.
 
 Favete linguis: carmina non prius
@@ -2422,8 +2362,7 @@ sublime ritu moliar atrium?
 
      divitias operosiores?
 
-II
-
+## II
 Angustam amice pauperiem pati
 
 robustus acri militia puer
@@ -2488,8 +2427,7 @@ neglectus incesto addidit integrum,               30
 
      deservit pede Poena claudo.
 
-III
-
+## III
 Iustum et tenacem propositi virum
 
 non civium ardor prava iubentium,
@@ -2634,8 +2572,7 @@ quo, Musa, tendis? Desine pervicax               70
 
      magna modis tenuare parvis.
 
-IV
-
+## IV
 Descende caelo et dic age tibia
 
 regina longum Calliope melos,
@@ -2796,8 +2733,7 @@ reliquit ales, nequitiae additus
 
      Pirithoum cohibent catenae.               80
 
-V
-
+## V
 Caelo tonantem credidimus Iovem
 
 regnare: praesens divus habebitur
@@ -2910,8 +2846,7 @@ diiudicata lite relinqueret,
 
      aut Lacedaemonium Tarentum.
 
-VI
-
+## VI
 Delicta maiorum inmeritus lues,
 
 Romane, donec templa refeceris
@@ -3008,8 +2943,7 @@ aetas parentum, peior avis, tulit
 
      progeniem vitiosiorem.
 
-VII
-
+## VII
 Quid fles, Asterie, quem tibi candidi
 
 primo restituent vere Favonii
@@ -3074,8 +3008,7 @@ sub cantu querulae despice tibiae               30
 
      duram difficilis mane.
 
-VIII
-
+## VIII
 Martis caelebs quid agam Kalendis,
 
 quid velint flores et acerra turis
@@ -3132,8 +3065,7 @@ dona praesentis cape laetus horae,
 
      linque severa.
 
-IX
-
+## IX
      'Donec gratus eram tibi
 
 nec quisquam potior bracchia candidae
@@ -3182,8 +3114,7 @@ ille est, tu levior cortice et inprobo
 
 tecum vivere amem, tecum obeam lubens.'
 
-X
-
+## X
 Extremum Tanain si biberes, Lyce,
 
 saevo nupta viro, me tamen asperas
@@ -3224,8 +3155,7 @@ non hoc semper erit liminis aut aquae
 
      caelestis patiens latus.               20
 
-XI
-
+## XI
 Mercuri, - nam te docilis magistro
 
 movit Amphion lapides canendo, -
@@ -3330,8 +3260,7 @@ omine et nostri memorem sepulcro
 
      scalpe querellam.'
 
-XII
-
+## XII
 Miserarum est neque amori dare ludum neque dulci
 
      mala vino lavere aut exanimari
@@ -3356,8 +3285,7 @@ catus idem per apertum fugientis agitato               10
 
      latitantem fruticeto excipere aprum.
 
-XIII
-
+## XIII
 O fons Bandusiae splendidior vitro,
 
 dulci digne mero non sine floribus,
@@ -3390,8 +3318,7 @@ me dicente cavis impositam ilicem
 
      lymphae desiliunt tuae.
 
-XIV
-
+## XIV
 Herculis ritu modo dictus, o plebs,
 
 morte venalem petiisse laurum,
@@ -3448,8 +3375,7 @@ non ego hoc ferrem calidus iuventa
 
      consule Planco.
 
-XV
-
+## XV
      Uxor pauperis Ibyci,
 
 tandem nequitiae fige modum tuae
@@ -3482,8 +3408,7 @@ tonsae Luceriam, non citharae decent
 
 nec poti vetulam faece tenus cadi.
 
-XVI
-
+## XVI
 Inclusam Danaen turris aenea
 
 robustaeque fores et vigilum canum
@@ -3572,8 +3497,7 @@ desunt multa; bene est cui deus obtulit
 
      parca quod satis est manu.
 
-XVII
-
+## XVII
 Aeli vetusto nobilis ab Lamo -
 
 quando et priores hinc Lamias ferunt
@@ -3606,8 +3530,7 @@ conpone lignum; cras Genium mero
 
      cum famulis operum solutis.
 
-XVIII
-
+## XVIII
 Faune, Nympharum fugientum amator,
 
 per meos finis et aprica rura
@@ -3640,8 +3563,7 @@ gaudet invisam pepulisse fossor               15
 
      ter pede terram.
 
-XIX
-
+## XIX
      Quantum distet ab Inacho
 
 Codrus, pro patria non timidus mori,
@@ -3698,8 +3620,7 @@ puro te similem, Telephe, Vespero
 
 me lentus Glycerae torret amor meae.
 
-XX
-
+## XX
 Non vides quanto moveas periclo,
 
 Pyrrhe, Gaetulae catulos leaenae?
@@ -3732,8 +3653,7 @@ qualis aut Nireus fuit aut aquosa               15
 
      raptus ab Ida.
 
-XXI
-
+## XXI
 O nata mecum consule Manlio,
 
 seu tu querellas sive geris iocos
@@ -3782,8 +3702,7 @@ segnesque nodum solvere Gratiae
 
      dum rediens fugat astra Phoebus.
 
-XXII
-
+## XXII
 Montium custos nemorumque virgo,
 
 quae laborantis utero puellas
@@ -3800,8 +3719,7 @@ verris obliquom meditantis ictum
 
      sanguine donem.
 
-XXIII
-
+## XXIII
 Caelo supinas si tuleris manus
 
 nascente luna, rustica Phidyle,
@@ -3842,8 +3760,7 @@ non sumptuosa blandior hostia
 
      farre pio et saliente mica.               20
 
-XXIV
-
+## XXIV
      Intactis opulentior
 
 thesauris Arabum et divitis Indiae
@@ -3972,8 +3889,7 @@ haredi properet. Scilicet inprobae
 
 curtae nescio quid semper abest rei.
 
-XXV
-
+## XXV
      Quo me, Bacche, rapis tui
 
 plenum? Quae nemora aut quos agor in specus
@@ -4014,8 +3930,7 @@ nil mortale loquar. Dulce periculum est,
 
 cingentem viridi tempora pampino.               20
 
-XXVI
-
+## XXVI
 Vixi puellis nuper idoneus
 
 et militavi non sine gloria;
@@ -4040,8 +3955,7 @@ Memphin carentem Sithonia niue               10
 
      tange Chloen semel arrogantem.
 
-XXVII
-
+## XXVII
 Impios parrae recinentis omen
 
 ducat et praegnans canis aut ab agro
@@ -4194,8 +4108,7 @@ disce fortunam; tua sectus orbis               75
 
      nomina ducet'.
 
-XXVIII
-
+## XXVIII
      Festo quid potius die
 
 Neptuni faciam? Prome reconditum,
@@ -4228,8 +4141,7 @@ fulgentisque tenet Cycladas et Paphum
 
 dicetur merita Nox quoque nenia.               15
 
-XXIX
-
+## XXIX
 Tyrrhena regum progenies, tibi
 
 non ante verso lene merum cado
@@ -4358,8 +4270,7 @@ tunc me biremis praesidio scaphae
 
      aura feret geminusque Pollux.
 
-XXX
-
+## XXX
 Exegi monumentum aere perennius
 
 regalique situ pyramidum altius,
@@ -4400,8 +4311,7 @@ lauro cinge volens, Melpomene, comam.
 
 Q. HORATI FLACCI CARMINVM LIBER QVARTVS
 
-I
-
+## I
      Intermissa, Venus, diu
 
 rursus bella moves? Parce precor, precor.
@@ -4482,8 +4392,7 @@ iam captum teneo, iam volucrem sequor
 
 campi, te per aquas, dure, volubilis.               40
 
-II
-
+## II
 Pindarum quisquis studet aemulari,
 
 Iulle, ceratis ope Daedalea
@@ -4604,8 +4513,7 @@ qua notam duxit niveus videri,
 
      cetera fuluus.               60
 
-III
-
+## III
      Quem tu, Melpomene, semel
 
 nascentem placido lumine videris,
@@ -4654,8 +4562,7 @@ quod monstror digito praetereuntium
 
 quod spiro et placeo, si placeo, tuum est.
 
-IV
-
+## IV
 Qualem ministrum fulminis alitem,
 
 cui rex deorum regnum in avis vagas
@@ -4808,8 +4715,7 @@ quas et benigno numine Iuppiter
 
      expediunt per acuta belli'.
 
-V
-
+## V
 Divis orte bonis, optume Romulae
 
 custos gentis, abes iam nimium diu;
@@ -4890,8 +4796,7 @@ sicco mane die, dicimus uvidi,
 
      cum sol Oceano subest.               40
 
-VI
-
+## VI
 Dive, quem proles Niobea magnae
 
 vindicem linguae Tityosque raptor
@@ -4980,8 +4885,7 @@ reddidi carmen docilis modorum
 
      vatis Horati.'
 
-VII
-
+## VII
 Diffugere nives, redeunt iam gramina campis
 
      arboribusque comae;
@@ -5038,8 +4942,7 @@ nec Lethaea valet Theseus abrumpere caro
 
      vincula Pirithoo.
 
-VIII
-
+## VIII
 Donarem pateras grataque commodus,
 
 Censorine, meis aera sodalibus,
@@ -5108,8 +5011,7 @@ ornatus viridi tempora pampino
 
 Liber vota bonos ducit ad exitus.
 
-IX
-
+## IX
 Ne forte credas interitura quae
 
 longe sonantem natus ad Aufidum
@@ -5214,8 +5116,7 @@ peiusque leto flagitium timet,               50
 
      aut patria timidus perire.
 
-X
-
+## X
 O crudelis adhuc et Veneris muneribus potens,
 
 insperata tuae cum veniet pluma superbiae
@@ -5232,8 +5133,7 @@ dices, heu, quotiens te speculo videris alterum:
 
 vel cur his animis incolumes non redeunt genae?'
 
-XI
-
+## XI
 Est mihi nonum superantis annum
 
 plenus Albani cadus, est in horto,
@@ -5306,8 +5206,7 @@ voce quos reddas; minuentur atrae               35
 
      carmine curae.
 
-XII
-
+## XII
 Iam veris comites, quae mare temperant,
 
 impellunt animae lintea Thraciae,
@@ -5364,8 +5263,7 @@ misce stultitiam consiliis brevem:
 
      dulce est desipere in loco.
 
-XIII
-
+## XIII
 Audivere, Lyce, di mea vota, di
 
 audivere, Lyce: fis anus, et tamen
@@ -5422,8 +5320,7 @@ possent ut iuvenes visere fervidi
 
      dilapsam in cineres facem.
 
-XIV
-
+## XIV
 Quae cura patrum quaeve Quiritium
 
 plenis honorum muneribus tuas,
@@ -5528,8 +5425,7 @@ duraeque tellus audit Hiberiae,               50
 
      compositis venerantur armis.
 
-XV
-
+## XV
 Phoebus volentem proelia me loqui
 
 victas et urbes increpuit lyra,
