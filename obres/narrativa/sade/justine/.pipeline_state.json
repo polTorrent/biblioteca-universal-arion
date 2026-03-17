@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T01:27:23.377817",
-    "ultima_activitat": "2026-03-17T02:06:23.856310"
+    "ultima_activitat": "2026-03-17T02:08:25.412130"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -341,7 +341,7 @@
       "chunk_318",
       "chunk_319"
     ],
-    "en_curs": "chunk_8",
+    "en_curs": "chunk_9",
     "pendents": []
   },
   "metriques": {
@@ -676,7 +676,8 @@
     "[01:59:52] Error fatal: [Errno 32] Broken pipe",
     "[02:01:39] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
     "[02:02:21] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
-    "[02:06:23] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)"
+    "[02:06:23] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[02:08:25] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[01:29:27] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
