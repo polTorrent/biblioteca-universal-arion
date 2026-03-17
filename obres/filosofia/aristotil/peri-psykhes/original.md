@@ -1,4 +1,3 @@
-# Sobre l'Ànima
 **Autor:** Aristòtil
 **Font:** [perseus](https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046)
 **Llengua:** grec
