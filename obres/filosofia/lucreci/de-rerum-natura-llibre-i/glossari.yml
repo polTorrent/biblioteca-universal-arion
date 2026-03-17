@@ -1,0 +1,121 @@
+# Glossari — De Rerum Natura, Llibre I
+# Termes clau del llatí amb traducció al català
+
+termes:
+  - original: "primordia rerum"
+    transliteracio: "primordia rerum"
+    traduccio: "primers principis de les coses"
+    nota: >
+      Expressió central de Lucreci per designar els àtoms, els components
+      últims i indivisibles de tota la matèria. Sinònim de 'semina rerum',
+      'corpora prima' i 'genitalia corpora'.
+
+  - original: "semina rerum"
+    transliteracio: "semina rerum"
+    traduccio: "llavors de les coses"
+    nota: >
+      Metàfora lucreciana per als àtoms, emfasitzant el seu paper generatiu.
+      Correspon al grec σπέρματα (spérmata) d'Epicur.
+
+  - original: "corpora prima"
+    transliteracio: "corpora prima"
+    traduccio: "cossos primers"
+    nota: >
+      Sinònim de 'primordia rerum'. Designa els àtoms com a elements
+      fonamentals i indivisibles.
+
+  - original: "genitalia corpora"
+    transliteracio: "genitalia corpora"
+    traduccio: "cossos generadors"
+    nota: >
+      Variant que subratlla la funció creadora dels àtoms, la seva capacitat
+      de generar totes les coses per combinació.
+
+  - original: "inane"
+    transliteracio: "inane"
+    traduccio: "buit"
+    nota: >
+      El buit (κενόν, kenón en grec), un dels dos principis fonamentals
+      de la física epicúria juntament amb els àtoms. Espai on els cossos
+      es mouen.
+
+  - original: "natura rerum"
+    transliteracio: "natura rerum"
+    traduccio: "la natura de les coses"
+    nota: >
+      Títol del poema i concepte central: la totalitat del món físic
+      i les seves lleis, explicable sense intervenció divina.
+
+  - original: "religio"
+    transliteracio: "religio"
+    traduccio: "superstició religiosa"
+    nota: >
+      Lucreci usa 'religio' amb sentit pejoratiu: la por irracional als déus
+      i als càstigs ultraterrenals que oprimeix la humanitat.
+      «Tantum religio potuit suadere malorum» (v. 101).
+
+  - original: "Venus"
+    transliteracio: "Venus"
+    traduccio: "Venus"
+    nota: >
+      Invocada a l'himne inicial no com a deessa personal sinó com a
+      al·legoria de la força generatriu de la natura (voluptas).
+
+  - original: "voluptas"
+    transliteracio: "voluptas"
+    traduccio: "plaer"
+    nota: >
+      Concepte epicuri central (ἡδονή, hēdonḗ). Per a Epicur i Lucreci,
+      el plaer —entès com a absència de dolor (ataraxia)— és el bé suprem.
+
+  - original: "anima / animus"
+    transliteracio: "anima / animus"
+    traduccio: "ànima / esperit"
+    nota: >
+      Lucreci distingeix 'animus' (ment racional, situada al pit) d''anima'
+      (principi vital difós pel cos). Tots dos són materials, compostos
+      d'àtoms molt fins.
+
+  - original: "Mavors"
+    transliteracio: "Mavors"
+    traduccio: "Mart"
+    nota: >
+      Forma arcaica de Mars. A l'himne inicial, Mart jau vençut als braços
+      de Venus: al·legoria de la pau (Venus) dominant la guerra (Mart).
+
+  - original: "Memmiadae"
+    transliteracio: "Memmiadae"
+    traduccio: "Memmi"
+    nota: >
+      Gaius Memmius, noble romà a qui Lucreci dedica el poema.
+      Probablement el tribú de la plebs del 66 aC.
+
+  - original: "simulacra"
+    transliteracio: "simulacra"
+    traduccio: "simulacres / imatges"
+    nota: >
+      Pel·lícules finíssimes d'àtoms que es desprenen de la superfície
+      dels objectes i arriben als sentits (teoria epicúria de la percepció).
+
+  - original: "foedera naturai"
+    transliteracio: "foedera naturai"
+    traduccio: "lleis de la natura"
+    nota: >
+      Expressió per a les lleis naturals immutables. L'arcaisme 'naturai'
+      (genitiu arcaic de 'natura') és típic del llatí de Lucreci.
+
+  - original: "clinamen"
+    transliteracio: "clinamen"
+    traduccio: "desviació"
+    nota: >
+      Terme tècnic epicuri (παρέγκλισις, parénklisis): la lleugera
+      desviació espontània dels àtoms en la seva caiguda, que explica
+      el lliure albir i la formació del món.
+
+  - original: "ataraxia"
+    transliteracio: "ἀταραξία"
+    traduccio: "serenitat / impertorbabilitat"
+    nota: >
+      Estat de pau interior, objectiu de la filosofia epicúria.
+      Lucreci no usa el terme grec directament, però tot el poema
+      hi tendeix com a ideal.
