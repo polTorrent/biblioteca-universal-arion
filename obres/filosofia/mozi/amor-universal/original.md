@@ -1,5 +1,3 @@
-# 兼愛 — Mozi (墨子)
-
 Font: Wikisource (zh.wikisource.org), domini públic.
 
 ---
