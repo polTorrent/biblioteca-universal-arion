@@ -6,7 +6,7 @@ obra:
   traductor: "Biblioteca Arion"
   any_original: "c. 1258-1273"
   any_traduccio: 2026
-  llengua_original: "persa (traduït de l'anglès de Redhouse, 1881)"
+  llengua_original: "anglès"
   descripcio: >
     Selecció dels 10 contes del Llibre Primer del Masnavi de Rumi, l'obra
     mestra de la poesia mística sufí. Inclou el Proemi (Plany de la flauta
@@ -21,10 +21,10 @@ obra:
 seccions: 11
 estadistiques:
   paraules_original: 4200
-  paraules_traduccio: 9500
+  paraules_traduccio: 10132
   notes: 18
   termes_glossari: 20
 revisio:
   estat: "revisat"
-  qualitat: 7.5
-  data_revisio: "2026-03-16"
+  qualitat: 7.0
+  data_revisio: "2026-03-17"
