@@ -13,13 +13,13 @@ obra:
 seccions: 10
 estadistiques:
   paraules_original: 4019
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_traduccio: 4458
+  notes: 12
+  termes_glossari: 20
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 8.0
+  data_revisio: "2026-03-17"
 fonts:
   - "https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
   - "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0438"
