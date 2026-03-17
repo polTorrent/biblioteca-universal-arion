@@ -12,12 +12,12 @@ obra:
 seccions: 7
 
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 17086
+  paraules_traduccio: 12479
   notes: 0
   termes_glossari: 25
 
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: "revisat"
+  qualitat: 8.0
+  data_revisio: "2026-03-17"
