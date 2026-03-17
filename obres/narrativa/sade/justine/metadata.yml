@@ -18,6 +18,7 @@ estadistiques:
   notes: 10
   termes_glossari: 16
 revisio:
-  estat: revisat
-  data_revisio: '2026-03-07'
+  estat: parcial
+  data_revisio: '2026-03-17'
   qualitat: 7.5
+  nota: "Traducció parcial (~8%). Pipeline V2 en curs per completar la traducció."
