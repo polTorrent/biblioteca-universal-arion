@@ -7,7 +7,9 @@ obra:
   any_original: "c. 170 dC"
   any_traduccio: 2026
   llengua_original: "grec"
+  categoria: "narrativa"
   descripcio: "Selecció de 10 diàlegs satírics ambientats al món dels morts, on personatges mitològics, filòsofs i conqueridors debaten sobre la vanitat de la vida terrenal."
+  font_original: "https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
 seccions: 10
 estadistiques:
   paraules_original: 4019
@@ -19,4 +21,5 @@ revisio:
   qualitat: 0
   data_revisio: null
 fonts:
-  - "el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
+  - "https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
+  - "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0438"
