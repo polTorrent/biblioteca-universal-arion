@@ -925,15 +925,22 @@ L'ombra d'aquella palmera emparava l'Ombra de Déu!
 Sobre l'ambaixador van caure temor i reverència.                            80
 Dos sentiments, amor i temor, per natura oposats,
 es barrejaven al seu pit per ritus ocults i amagats.
+
+[...] [Versos 83-89 omesos: reflexió de l'ambaixador sobre la por i la reverència]
+
 Pensà: «Una temor espiritual és aquesta; no és por mortal.                  90
 Qui tem Déu té l'amonestació del Senyor al seu si.»
 
 Mut va restar fins que Úmar va despertar del seu èxtasi.                    95
 
+[...] [Versos 96-110 omesos: Úmar desperta i saluda l'ambaixador]
+
 Úmar va relatar totes les estacions travessades per la seva ànima:
 els seus vols, les seves lluites, les tribulacions.
 Va parlar de temps on el vol del temps no compta per a res;
 de l'estació de la Santedat, gloriosa de relatar.                          115
+
+[...] [Versos 116-119 omesos]
 
 L'ambaixador preguntà: «Com pot una ànima del cel
 baixar a la província dels elements?»                                       120
@@ -965,6 +972,8 @@ que ell estigui engabiat, mentre vosaltres a les branques seieu a tot sot. 20
 Ell desitja que recordeu el vostre amic perdut
 quan begueu els vostres gots, abans de sortir al camp, benvingut.»
 
+[...] [Versos 21-44 omesos: el mercader viatja a l'Índia i hi fa negocis]
+
 El mercader havia promès donar als ocells de l'Índia el missatge.           45
 I quan va arribar a aquella terra,
 en un retir boscós, un estol de lloros va trobar.
@@ -973,10 +982,14 @@ va caure a terra; no semblava respirar.
 El mercader va sentir penediment del que havia fet,
 exclamant: «Ai! El pobre ocell l'he matat, tot solet!»                     55
 
+[...] [Versos 56-94 omesos: el mercader torna a casa; el lloro pregunta per les noves]
+
 El mercader li respongué: «Vaig explicar tota la teva pena trista
 a un estol de lloros verds, tan semblants a tu.                             95
 D'ells, un, afectat per la teva història de dolor,
 el cor trencat, va fer un sospir, expirà i va caure en la foscor.»
+
+[...] [Versos 98-104 omesos: reacció del lloro al relat]
 
 Tot just el nostre ocell va sentir l'estat d'aquell lloro llunyà,
 un estremiment va fer, va desmaiar-se, es va tornar rígid.                 105
@@ -985,8 +998,13 @@ els vestits va esquinçar de pena; la barba es va arrencar.
 
 «Lloro meu! Per què, estimat, amb el cor així trencat?                     110
 Estàs mort ara, de veritat? Tan aviat volies marxar d'amagat?
+
+[...] [Versos 111-119 omesos: lament del mercader]
+
 La teva llengua m'era més cara que tota la riquesa de l'or;                120
 al so de la teva dolça veu, el meu goig es multiplicava amb amor.»
+
+[...] [Versos 121-134 omesos: el mercader es lamenta; finalment llença el lloro fora]
 
 El mercader va llençar el lloro fora de la gàbia amb consternació.
 El lloro va volar amunt; a un arbre va prendre una alta posició.           135
