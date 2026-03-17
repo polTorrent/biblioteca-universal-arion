@@ -7,7 +7,9 @@ obra:
   any_original: "c. 55 aC"
   any_traduccio: 2026
   llengua_original: "llatí"
-  genere: "filosofia"
+  categoria: "filosofia"
+  genere: "poesia didàctica"
+  font_original: "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"
   descripcio: >
     Primer llibre del poema filosòfic epicuri «De la natura de les coses».
     Lucreci exposa els principis fonamentals de la física atomista: res no sorgeix
