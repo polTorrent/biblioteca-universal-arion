@@ -1,0 +1,120 @@
+termes:
+  - original: "道"
+    transliteracio: "dào"
+    traduccio: "el Camí / la Via"
+    notes: "Concepte central del taoisme. Principi últim, inefable i sense forma, origen de totes les coses. Zhuangzi l'entén com a realitat que transcendeix les distincions humanes."
+
+  - original: "天"
+    transliteracio: "tiān"
+    traduccio: "el Cel / la Naturalesa"
+    notes: "No referit al cel físic sinó al curs natural de les coses, la naturalesa espontània, oposat a l'artifici humà (人 rén)."
+
+  - original: "無為"
+    transliteracio: "wú wéi"
+    traduccio: "no-acció / acció sense esforç"
+    notes: "Actuar en harmonia amb el curs natural, sense imposar la voluntat. No és passivitat sinó acció espontània i eficaç."
+
+  - original: "逍遙"
+    transliteracio: "xiāo yáo"
+    traduccio: "vagareig lliure / llibertat absoluta"
+    notes: "Títol del primer capítol (逍遙遊). Estat de llibertat espiritual sense dependències ni limitacions."
+
+  - original: "齊物"
+    transliteracio: "qí wù"
+    traduccio: "igualtat de les coses / equiparació dels éssers"
+    notes: "Títol del segon capítol. Doctrina que les distincions entre les coses (gran/petit, bo/dolent, vida/mort) són relatives i convencionals."
+
+  - original: "真人"
+    transliteracio: "zhēn rén"
+    traduccio: "persona autèntica / persona veritable"
+    notes: "Ideal humà del Zhuangzi: qui viu en harmonia amb el Camí, sense por a la vida ni a la mort. Descrit àmpliament al capítol 6 (大宗師)."
+
+  - original: "至人"
+    transliteracio: "zhì rén"
+    traduccio: "persona suprema"
+    notes: "Un dels tres tipus de savi ideal. 'La persona suprema no té jo' (至人無己). Apareix al capítol 1."
+
+  - original: "神人"
+    transliteracio: "shén rén"
+    traduccio: "persona divina / persona espiritual"
+    notes: "Segon tipus de savi ideal. 'La persona divina no té mèrits' (神人無功). Habita a la muntanya Gushe."
+
+  - original: "聖人"
+    transliteracio: "shèng rén"
+    traduccio: "persona sàvia / el savi"
+    notes: "Tercer tipus de savi ideal. 'El savi no té nom' (聖人無名). Usat tant en sentit taoista com per referir-se als savis confucians."
+
+  - original: "氣"
+    transliteracio: "qì"
+    traduccio: "alè vital / energia vital"
+    notes: "Força vital que anima tot l'univers. En el Zhuangzi, el concepte apareix en el 'dejuni del cor' (心齋): 'Escolta amb l'alè vital, no amb el cor'."
+
+  - original: "德"
+    transliteracio: "dé"
+    traduccio: "virtut / poder interior"
+    notes: "No la virtut moral confuciana sinó el poder inherent que cada ésser rep del Camí. Títol del capítol 5 (德充符, 'Signes de la virtut plena')."
+
+  - original: "物化"
+    transliteracio: "wù huà"
+    traduccio: "transformació de les coses"
+    notes: "Concepte clau del final del capítol 2: la metamorfosi constant dels éssers. Il·lustrat pel somni de la papallona (胡蝶夢)."
+
+  - original: "心齋"
+    transliteracio: "xīn zhāi"
+    traduccio: "dejuni del cor"
+    notes: "Pràctica d'buidar la ment de tot coneixement i desig per rebre el Camí. Ensenyat per Confuci a Yan Hui al capítol 4."
+
+  - original: "坐忘"
+    transliteracio: "zuò wàng"
+    traduccio: "seure i oblidar"
+    notes: "Estat meditatiu d'oblit total del cos i la ment. Yan Hui al capítol 6: 'Deixar caure el cos, abandonar la intel·ligència, separar-se de la forma i el coneixement, unir-se al Gran Flux'."
+
+  - original: "天籟"
+    transliteracio: "tiān lài"
+    traduccio: "flauta del Cel / música celestial"
+    notes: "Al capítol 2, Ziqi distingeix tres nivells de so: flauta humana (人籟), flauta de la terra (地籟) i flauta del Cel. La flauta del Cel és el so que cada cosa produeix per si mateixa."
+
+  - original: "鯤"
+    transliteracio: "kūn"
+    traduccio: "Kun (peix gegant)"
+    notes: "Peix mític de milers de li de llarg que es transforma en l'ocell Peng. Obre el capítol 1."
+
+  - original: "鵬"
+    transliteracio: "péng"
+    traduccio: "Peng (ocell gegant)"
+    notes: "Ocell mític que s'eleva a noranta mil li d'altura. Metàfora de la grandesa que la perspectiva limitada no pot comprendre."
+
+  - original: "庖丁"
+    transliteracio: "páo dīng"
+    traduccio: "el cuiner Ding"
+    notes: "Protagonista de la paràbola del capítol 3 (養生主). Esquartera bous seguint el Camí, no la tècnica. Metàfora de l'acció perfecta en harmonia amb la naturalesa."
+
+  - original: "天鈞"
+    transliteracio: "tiān jūn"
+    traduccio: "el torn del Cel / l'equilibri celestial"
+    notes: "Metàfora del punt central des del qual totes les perspectives s'equilibren. Apareix al capítol 2: 'El savi harmonitza l'afirmació i la negació i reposa en l'equilibri celestial'."
+
+  - original: "渾沌"
+    transliteracio: "hún dùn"
+    traduccio: "Hundun / el Caos primordial"
+    notes: "Emperador del Centre en la paràbola final del capítol 7. Mor quan li obren set forats (els sentits), al·legoria contra la intervenció artificial."
+
+  - original: "大宗師"
+    transliteracio: "dà zōng shī"
+    traduccio: "el Gran Mestre Ancestral"
+    notes: "Títol del capítol 6. El 'gran mestre' és el Camí mateix, mestre de tots els éssers."
+
+  - original: "養生主"
+    transliteracio: "yǎng shēng zhǔ"
+    traduccio: "el senyor de la preservació de la vida"
+    notes: "Títol del capítol 3. Tracta de com preservar la vida seguint el curs natural, sense forçar."
+
+  - original: "應帝王"
+    transliteracio: "yìng dì wáng"
+    traduccio: "responent als emperadors i reis"
+    notes: "Títol del capítol 7, el darrer dels interiors. Tracta del govern ideal: governar sense governar."
+
+  - original: "道樞"
+    transliteracio: "dào shū"
+    traduccio: "el gòzol del Camí / l'eix del Camí"
+    notes: "Al capítol 2: el punt central des del qual es pot respondre a infinites perspectives. Quan 'això' i 'allò' deixen de ser oposats, s'arriba a l'eix del Camí."
