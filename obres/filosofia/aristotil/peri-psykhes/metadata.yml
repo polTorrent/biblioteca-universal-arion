@@ -1,23 +1,24 @@
 obra:
-  titol: "Sobre l'Ànima"
-  titol_original: "Περὶ Ψυχῆς"
-  titol_llati: "De Anima"
-  autor: "Aristòtil"
-  autor_original: "Ἀριστοτέλης"
-  traductor: "Editorial Clàssica"
-  any_original: "c. 350 aC"
+  titol: Sobre l'Ànima
+  titol_original: Περὶ Ψυχῆς
+  titol_llati: De Anima
+  autor: Aristòtil
+  autor_original: Ἀριστοτέλης
+  traductor: Editorial Clàssica
+  any_original: c. 350 aC
   any_traduccio: 2026
-  llengua_original: "grec"
-  descripcio: >
-    Tractat fonamental d'Aristòtil sobre la naturalesa de l'ànima (psyche),
-    considerat la primera obra sistemàtica de psicologia filosòfica occidental.
-    En tres llibres, examina les facultats de l'ànima —nutritiva, sensitiva
-    i intel·lectiva— i la seva relació amb el cos, establint la doctrina
-    hilemòrfica segons la qual l'ànima és la forma (eidos) del cos natural
-    que posseeix vida en potència.
-  categoria: "filosofia"
-  font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046"
+  llengua_original: grec
+  descripcio: 'Tractat fonamental d''Aristòtil sobre la naturalesa de l''ànima (psyche),
+    considerat la primera obra sistemàtica de psicologia filosòfica occidental. En
+    tres llibres, examina les facultats de l''ànima —nutritiva, sensitiva i intel·lectiva—
+    i la seva relació amb el cos, establint la doctrina hilemòrfica segons la qual
+    l''ànima és la forma (eidos) del cos natural que posseeix vida en potència.
+
+    '
+  categoria: filosofia
+  font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046
   libres: 3
+  estadistiques: {}
 seccions: 3
 estadistiques:
   paraules_original: 12500
@@ -25,6 +26,6 @@ estadistiques:
   notes: 45
   termes_glossari: 30
 revisio:
-  estat: "primera_versio"
-  qualitat: null
-  data_revisio: null
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-17'

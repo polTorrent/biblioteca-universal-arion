@@ -7,22 +7,43 @@
   },
   "timestamps": {
     "inici": "2026-03-17T07:54:39.179337",
-    "ultima_activitat": "2026-03-17T07:55:32.079730"
+    "ultima_activitat": "2026-03-17T07:56:26.683147"
   },
-  "fase_actual": "glossari",
+  "fase_actual": "traduccio",
   "fases_completades": [
-    "investigacio"
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio"
   ],
   "chunks": {
-    "total": 0,
-    "completats": [],
-    "en_curs": null,
+    "total": 6,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6"
+    ],
+    "en_curs": "chunk_1",
     "pendents": []
   },
   "metriques": {
     "qualitat_mitjana": 0.0,
     "temps_total_min": 0.0
   },
-  "errors": [],
-  "warnings": []
+  "errors": [
+    "[07:56:12] Error chunk 1: [Errno 32] Broken pipe",
+    "[07:56:12] Error chunk 2: [Errno 32] Broken pipe",
+    "[07:56:12] Error chunk 3: [Errno 32] Broken pipe",
+    "[07:56:12] Error chunk 4: [Errno 32] Broken pipe",
+    "[07:56:12] Error chunk 5: [Errno 32] Broken pipe",
+    "[07:56:12] Error chunk 6: [Errno 32] Broken pipe",
+    "[07:56:12] Error fatal: [Errno 32] Broken pipe"
+  ],
+  "warnings": [
+    "[07:56:12] Error anotació: [Errno 32] Broken pipe"
+  ]
 }

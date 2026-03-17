@@ -1,5 +1,41 @@
 {
-  "traduccions": {},
+  "traduccions": {
+    "πολιτεια": {
+      "original": "πολιτεία",
+      "traduccio": "constitució, govern, sistema polític",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "βασιλεια": {
+      "original": "βασιλεία",
+      "traduccio": "reialesa, monarquia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "αθηναιοι": {
+      "original": "Ἀθηναῖοι",
+      "traduccio": "atenesos",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ιωνες": {
+      "original": "Ἴωνες",
+      "traduccio": "jonis",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "απολλων πατρωος": {
+      "original": "Ἀπόλλων Πατρῷος",
+      "traduccio": "Apol·lo Paternal",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
   "personatges": {},
   "decisions_estil": [],
   "context_investigacio": null,
