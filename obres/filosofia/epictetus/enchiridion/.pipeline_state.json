@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T07:21:09.750636",
-    "ultima_activitat": "2026-03-17T07:50:47.064404"
+    "ultima_activitat": "2026-03-17T07:53:58.681060"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -31,11 +31,11 @@
       "chunk_11",
       "chunk_12",
       "chunk_13",
-      "chunk_14"
+      "chunk_14",
+      "chunk_15"
     ],
-    "en_curs": "chunk_15",
+    "en_curs": "chunk_16",
     "pendents": [
-      "chunk_16",
       "chunk_17",
       "chunk_18",
       "chunk_19",
@@ -44,7 +44,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 2.65,
+    "qualitat_mitjana": 2.87,
     "temps_total_min": 0.0
   },
   "errors": [

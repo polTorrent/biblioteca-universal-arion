@@ -219,6 +219,22 @@ PERSEUS_URLS: dict[str, dict[str, str]] = {
         "caracters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
         "els caracters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
     },
+    "aristotle": {
+        "de anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "on the soul": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+    },
+    "aristotil": {
+        "peri psykhes": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "sobre l'anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "sobre l'ànima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "de anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+    },
+    "aristòtil": {
+        "peri psykhes": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "sobre l'anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "sobre l'ànima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+        "de anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
+    },
 }
 
 WIKISOURCE_PAGES: dict[str, dict[str, tuple[str, str]]] = {
@@ -275,6 +291,22 @@ WIKISOURCE_PAGES: dict[str, dict[str, tuple[str, str]]] = {
     },
     "terence": {
         "andria": ("la", "Andria"),
+    },
+    "aristotle": {
+        "de anima": ("el", "Περὶ Ψυχῆς"),
+        "on the soul": ("el", "Περὶ Ψυχῆς"),
+    },
+    "aristotil": {
+        "peri psykhes": ("el", "Περὶ Ψυχῆς"),
+        "sobre l'anima": ("el", "Περὶ Ψυχῆς"),
+        "sobre l'ànima": ("el", "Περὶ Ψυχῆς"),
+        "de anima": ("el", "Περὶ Ψυχῆς"),
+    },
+    "aristòtil": {
+        "peri psykhes": ("el", "Περὶ Ψυχῆς"),
+        "sobre l'anima": ("el", "Περὶ Ψυχῆς"),
+        "sobre l'ànima": ("el", "Περὶ Ψυχῆς"),
+        "de anima": ("el", "Περὶ Ψυχῆς"),
     },
     "sor juana": {
         "primero sueño": ("es", "Primero Sueño"),
