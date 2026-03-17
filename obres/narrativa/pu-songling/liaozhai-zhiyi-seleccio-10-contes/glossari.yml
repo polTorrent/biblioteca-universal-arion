@@ -1,0 +1,127 @@
+termes:
+- id: hu
+  xinès: 狐
+  pinyin: Hú
+  traduccio: guineu / esperit guineu
+  definicio: "Ésser sobrenatural central en la mitologia xinesa. Les guineus, després
+    de segles de cultiu espiritual, adquireixen poders màgics i la capacitat de transformar-se
+    en éssers humans, sovint dones d'extraordinària bellesa. Al Liaozhai, les guineus
+    representen figures ambivalents: poden ser seductores perilloses o companyes lleials
+    i amoroses. Pu Songling les utilitza com a metàfora de l'alteritat i del desig."
+
+- id: gui
+  xinès: 鬼
+  pinyin: Guǐ
+  traduccio: fantasma / esperit
+  definicio: "Ànima d'un difunt que roman en el món dels vius, sovint per una mort
+    injusta o prematura. A diferència dels esperits guineu, els fantasmes són éssers
+    humans morts que no han trobat descans. Al Liaozhai, personatges com Nie Xiaoqian
+    són fantasmes obligats a servir forces demoníaques."
+
+- id: yaoguai
+  xinès: 妖怪
+  pinyin: Yāoguài
+  traduccio: dimoni / esperit malèfic
+  definicio: "Criatura sobrenatural malèfica. El terme combina 妖 (yāo, 'estrany,
+    sinistre') i 怪 (guài, 'monstre'). Al Liaozhai, els yaoguai solen ser éssers
+    que manipulen o devoren els humans, com la criatura de 'La pell pintada' (畫皮)."
+
+- id: yecha
+  xinès: 夜叉
+  pinyin: Yèchā
+  traduccio: yākṣa / dimoni nocturn
+  definicio: "Criatura demoníaca procedent de la mitologia budista (del sànscrit yakṣa).
+    Al conte de Nie Xiaoqian, el yākṣa és l'entitat maligna que controla el fantasma
+    i es nodreix de la sang dels viatgers."
+
+- id: jiankexia
+  xinès: 劍客
+  pinyin: Jiànkè / Xiá
+  traduccio: espadatxí errant
+  definicio: "Guerrer vagabund expert en l'art de l'espasa, sovint dotat de poders
+    sobrenaturals. Yan Chixia, al conte de Nie Xiaoqian, n'és l'exemple paradigmàtic:
+    porta una espasa màgica capaç de destruir dimonis."
+
+- id: mingfu
+  xinès: 冥府
+  pinyin: Míngfǔ
+  traduccio: tribunal de l'infern / món subterrani
+  definicio: "Tribunal i burocràcia del més enllà en la cosmologia xinesa. Presidit
+    pel Rei Yama (閻羅王) i els seus jutges, és un sistema judicial paral·lel al dels
+    vius, sovint tan corrupte com el terrenal. Al conte de Xi Fangping, el protagonista
+    pateix la injustícia d'aquest sistema judicial infernal."
+
+- id: chenghuang
+  xinès: 城隍
+  pinyin: Chénghuáng
+  traduccio: déu de la ciutat
+  definicio: "Divinitat protectora d'una ciutat, que al món dels morts actua com a
+    jutge local. Al conte de Xi Fangping, el déu de la ciutat és el primer tribunal
+    on es presenta la denúncia, però resulta estar subornat."
+
+- id: erlang
+  xinès: 二郎
+  pinyin: Èrláng
+  traduccio: Erlang / Segon Príncep
+  definicio: "Divinitat de la justícia en la mitologia xinesa, parent de l'Emperador
+    de Jade. Al conte de Xi Fangping, Erlang és el jutge just i incorruptible que
+    finalment fa justícia i castiga els oficials corruptes de l'infern."
+
+- id: huapi
+  xinès: 畫皮
+  pinyin: Huà Pí
+  traduccio: la pell pintada
+  definicio: "Títol del segon conte de la selecció. Fa referència a la pell humana
+    que un dimoni pinta i es posa per adoptar l'aparença d'una dona bella. Metàfora
+    clàssica de l'engany i les aparences en la literatura xinesa."
+
+- id: cuzhì
+  xinès: 促織
+  pinyin: Cùzhī
+  traduccio: grill
+  definicio: "Insecte protagonista del quart conte. Durant la dinastia Ming, les baralles
+    de grills eren un entreteniment cortesà. El conte és una al·legoria sobre l'abús
+    de poder imperial i el sofriment del poble per satisfer els capricis dels governants."
+
+- id: lianruo
+  xinès: 蘭若
+  pinyin: Lánruò
+  traduccio: temple budista
+  definicio: "Terme derivat del sànscrit āraṇya ('bosc', 'lloc solitari'), que designa
+    un temple o monestir budista. Al conte de Nie Xiaoqian, el temple abandonat és
+    l'escenari principal on cohabiten fantasmes i dimonis."
+
+- id: daoshi
+  xinès: 道士
+  pinyin: Dàoshì
+  traduccio: taoista / sacerdot taoista
+  definicio: "Practicant del taoisme, sovint dotat de poders d'exorcisme i control
+    dels esperits. Al conte de 'La pell pintada', el taoista és qui identifica la
+    presència demoníaca i finalment destrueix el dimoni. Al conte del 'Taoista de Laoshan',
+    el mestre ensenya arts màgiques al seu deixeble."
+
+- id: laoshan
+  xinès: 勞山
+  pinyin: Láoshān
+  traduccio: muntanya Laoshan
+  definicio: "Muntanya sagrada del taoisme situada a la província de Shandong, famosa
+    pels seus temples i ermitans. Escenari del desè conte, on un jove estudiant hi
+    va a buscar ensenyaments immortals però no té la perseverança necessària."
+
+- id: yishi-shi
+  xinès: 異史氏
+  pinyin: Yìshǐ Shì
+  traduccio: l'Historiador de l'Insòlit
+  definicio: "Pseudònim que Pu Songling utilitza per signar els seus comentaris al
+    final de cada conte. Aquests epílegs, introduïts per la fórmula '異史氏曰' ('L'Historiador
+    de l'Insòlit diu'), ofereixen reflexions morals, filosòfiques o satíriques sobre
+    la narració precedent."
+
+- id: wenyanwen
+  xinès: 文言文
+  pinyin: Wényánwén
+  traduccio: xinès clàssic / xinès literari
+  definicio: "Registre literari del xinès utilitzat per Pu Songling, basat en la llengua
+    escrita clàssica i allunyat de la parla col·loquial de l'època. L'ús del wenyan
+    confereix al Liaozhai un to arcaic i erudit, i connecta l'obra amb la gran tradició
+    de la prosa clàssica xinesa."
