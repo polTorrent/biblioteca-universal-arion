@@ -1,15 +1,18 @@
 obra:
-  titol: "Diàlegs dels Morts (selecció de 10 diàlegs)"
-  titol_original: "Νεκρικοὶ Διάλογοι"
-  autor: "Lucià de Samòsata"
-  autor_original: "Λουκιανός ὁ Σαμοσατεύς"
-  traductor: "Editorial Clàssica"
-  any_original: "c. 170 dC"
+  titol: Diàlegs dels Morts (selecció de 10 diàlegs)
+  titol_original: Νεκρικοὶ Διάλογοι
+  autor: Lucià de Samòsata
+  autor_original: Λουκιανός ὁ Σαμοσατεύς
+  traductor: Editorial Clàssica
+  any_original: c. 170 dC
   any_traduccio: 2026
-  llengua_original: "grec"
-  categoria: "narrativa"
-  descripcio: "Selecció de 10 diàlegs satírics ambientats al món dels morts, on personatges mitològics, filòsofs i conqueridors debaten sobre la vanitat de la vida terrenal."
-  font_original: "https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
+  llengua_original: grec
+  categoria: narrativa
+  descripcio: Selecció de 10 diàlegs satírics ambientats al món dels morts, on personatges
+    mitològics, filòsofs i conqueridors debaten sobre la vanitat de la vida terrenal.
+  font_original: https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι
+  estadistiques:
+    paraules_traduccio: 846
 seccions: 10
 estadistiques:
   paraules_original: 4019
@@ -17,9 +20,25 @@ estadistiques:
   notes: 12
   termes_glossari: 20
 revisio:
-  estat: "revisat"
-  qualitat: 8.0
-  data_revisio: "2026-03-17"
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-17'
 fonts:
-  - "https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι"
-  - "https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0438"
+- https://el.wikisource.org/wiki/Νεκρικοί_Διάλογοι
+- https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0438
+avaluacio_final:
+  data: '2026-03-17T03:12:45.100822'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 118
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 114

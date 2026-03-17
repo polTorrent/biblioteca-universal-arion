@@ -1,6 +1,3 @@
-# Νεκρικοὶ Διάλογοι — Λουκιανός
-# Diàlegs dels Morts — Lucià de Samòsata
-
 Selecció de 10 diàlegs. Text original en grec antic.
 Font: Wikisource (el.wikisource.org)
 
@@ -447,4 +444,3 @@ Font: Wikisource (el.wikisource.org)
 ἔτι ἔχῃ, ὦ Τειρεσία, τῶν ψευσμάτων; ἀλλὰ κατὰ τοὺς μάντεις τοῦτο ποιεῖς· ἔθος γὰρ ὑμῖν μηδὲν ὑγιὲς λέγειν.
 
 ---
-
