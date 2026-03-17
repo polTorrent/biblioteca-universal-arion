@@ -1,0 +1,128 @@
+termes:
+  - original: "ψυχή"
+    transliteracio: "psychē"
+    traduccio: "ànima"
+    notes: >
+      Concepte central del tractat. Per a Aristòtil, l'ànima és la forma (eidos)
+      del cos natural que posseeix vida en potència; no és una substància separada
+      sinó l'actualitat primera d'un cos orgànic.
+
+  - original: "εἶδος"
+    transliteracio: "eidos"
+    traduccio: "forma"
+    notes: >
+      Principi formal que determina l'essència d'una cosa. En el context del
+      De Anima, l'ànima és l'eidos del cos vivent.
+
+  - original: "ὕλη"
+    transliteracio: "hylē"
+    traduccio: "matèria"
+    notes: >
+      Substrat material que rep la forma. El cos és la matèria de l'ànima
+      en la doctrina hilemòrfica.
+
+  - original: "ἐνέργεια"
+    transliteracio: "energeia"
+    traduccio: "acte, actualitat"
+    notes: >
+      Estat d'actualització o activitat plena. L'ànima és l'enérgeia primera
+      del cos natural orgànic.
+
+  - original: "δύναμις"
+    transliteracio: "dynamis"
+    traduccio: "potència"
+    notes: >
+      Capacitat o possibilitat d'arribar a un estat d'actualització.
+      Oposat a enérgeia.
+
+  - original: "ἐντελέχεια"
+    transliteracio: "entelecheia"
+    traduccio: "entelèquia"
+    notes: >
+      Realització completa d'una potencialitat. Aristòtil defineix l'ànima
+      com l'entelèquia primera d'un cos natural que té vida en potència.
+
+  - original: "νοῦς"
+    transliteracio: "nous"
+    traduccio: "intel·lecte"
+    notes: >
+      Facultat racional de l'ànima. Aristòtil distingeix entre intel·lecte
+      passiu (nous pathētikos) i intel·lecte agent (nous poiētikos).
+
+  - original: "αἴσθησις"
+    transliteracio: "aisthēsis"
+    traduccio: "sensació, percepció"
+    notes: >
+      Facultat sensitiva de l'ànima, que permet rebre les formes sensibles
+      sense la matèria.
+
+  - original: "φαντασία"
+    transliteracio: "phantasia"
+    traduccio: "imaginació"
+    notes: >
+      Facultat intermèdia entre la percepció i el pensament que produeix
+      imatges (phantasmata) a partir de les sensacions.
+
+  - original: "θρεπτικόν"
+    transliteracio: "threptikon"
+    traduccio: "facultat nutritiva"
+    notes: >
+      La forma més bàsica d'ànima, present en tots els éssers vius,
+      responsable de la nutrició, el creixement i la reproducció.
+
+  - original: "αἰσθητικόν"
+    transliteracio: "aisthētikon"
+    traduccio: "facultat sensitiva"
+    notes: >
+      Facultat pròpia dels animals, que permet la percepció sensorial
+      i el moviment.
+
+  - original: "νοητικόν"
+    transliteracio: "noētikon"
+    traduccio: "facultat intel·lectiva"
+    notes: >
+      Facultat exclusiva dels éssers humans, que permet el pensament
+      abstracte i el raonament.
+
+  - original: "κοινὴ αἴσθησις"
+    transliteracio: "koinē aisthēsis"
+    traduccio: "sentit comú"
+    notes: >
+      Facultat que unifica les dades dels cinc sentits particulars
+      i permet percebre qualitats comunes com el moviment i la magnitud.
+
+  - original: "νοῦς ποιητικός"
+    transliteracio: "nous poiētikos"
+    traduccio: "intel·lecte agent"
+    notes: >
+      Intel·lecte actiu que actualitza els intel·ligibles en potència,
+      comparat amb la llum que fa visibles els colors. Considerat
+      immortal i etern.
+
+  - original: "νοῦς παθητικός"
+    transliteracio: "nous pathētikos"
+    traduccio: "intel·lecte passiu"
+    notes: >
+      Intel·lecte receptiu que és en potència tots els intel·ligibles.
+      Corruptible, a diferència de l'intel·lecte agent.
+
+  - original: "ὄρεξις"
+    transliteracio: "orexis"
+    traduccio: "desig, appetició"
+    notes: >
+      Facultat desiderativa de l'ànima que inclou el desig (epithymia),
+      l'impuls (thymos) i la voluntat (boulēsis). Causa del moviment animal.
+
+  - original: "κίνησις"
+    transliteracio: "kinēsis"
+    traduccio: "moviment"
+    notes: >
+      Canvi o procés. Aristòtil examina com l'ànima és principi de
+      moviment dels éssers vius sense ser ella mateixa moguda.
+
+  - original: "τὸ τί ἦν εἶναι"
+    transliteracio: "to ti ēn einai"
+    traduccio: "l'essència, el què era ser"
+    notes: >
+      Expressió tècnica aristotèlica per designar l'essència d'una cosa,
+      allò que fa que una cosa sigui el que és.
