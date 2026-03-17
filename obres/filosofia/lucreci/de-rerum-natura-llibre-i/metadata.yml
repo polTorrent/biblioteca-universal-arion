@@ -1,21 +1,24 @@
 obra:
-  titol: "De Rerum Natura — Llibre I"
-  titol_original: "De Rerum Natura — Liber Primus"
-  autor: "Lucreci"
-  autor_original: "Titus Lucretius Carus"
-  traductor: "Biblioteca Arion"
-  any_original: "c. 55 aC"
+  titol: De Rerum Natura — Llibre I
+  titol_original: De Rerum Natura — Liber Primus
+  autor: Lucreci
+  autor_original: Titus Lucretius Carus
+  traductor: Biblioteca Arion
+  any_original: c. 55 aC
   any_traduccio: 2026
-  llengua_original: "llatí"
-  categoria: "filosofia"
-  genere: "poesia didàctica"
-  font_original: "https://www.thelatinlibrary.com/lucretius/lucretius1.shtml"
-  descripcio: >
-    Primer llibre del poema filosòfic epicuri «De la natura de les coses».
+  llengua_original: llatí
+  categoria: filosofia
+  genere: poesia didàctica
+  font_original: https://www.thelatinlibrary.com/lucretius/lucretius1.shtml
+  descripcio: 'Primer llibre del poema filosòfic epicuri «De la natura de les coses».
     Lucreci exposa els principis fonamentals de la física atomista: res no sorgeix
-    del no-res, res no es destrueix completament, la matèria es compon d'àtoms
-    invisibles i buit. Dedicat a Memmi, s'obre amb un himne a Venus com a força
-    generatriu de la natura i inclou l'elogi d'Epicur.
+    del no-res, res no es destrueix completament, la matèria es compon d''àtoms invisibles
+    i buit. Dedicat a Memmi, s''obre amb un himne a Venus com a força generatriu de
+    la natura i inclou l''elogi d''Epicur.
+
+    '
+  estadistiques:
+    paraules_traduccio: 4782
 seccions: 1
 estadistiques:
   versos_original: 1117
@@ -24,6 +27,22 @@ estadistiques:
   notes: 0
   termes_glossari: 16
 revisio:
-  estat: "revisat"
-  qualitat: 7.5
-  data_revisio: "2026-03-17"
+  estat: revisat
+  qualitat: 5.44
+  data_revisio: '2026-03-17'
+avaluacio_final:
+  data: '2026-03-17T07:43:15.083824'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 42
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 37
