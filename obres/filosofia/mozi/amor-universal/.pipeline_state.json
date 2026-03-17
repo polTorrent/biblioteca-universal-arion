@@ -1,0 +1,40 @@
+{
+  "sessio_id": "mozi-(墨子)-amor-universal-(兼愛)-2026-03-17",
+  "obra": {
+    "autor": "Mozi (墨子)",
+    "titol": "Amor universal (兼愛)",
+    "llengua": "xinès clàssic"
+  },
+  "timestamps": {
+    "inici": "2026-03-17T06:10:56.433583",
+    "ultima_activitat": "2026-03-17T06:21:26.448732"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio"
+  ],
+  "chunks": {
+    "total": 3,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 2.67,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[06:19:08] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[06:21:26] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[06:11:41] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='xinès clàssic', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
