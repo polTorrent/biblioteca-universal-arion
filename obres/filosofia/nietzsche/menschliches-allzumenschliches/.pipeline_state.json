@@ -1,0 +1,28 @@
+{
+  "sessio_id": "friedrich-nietzsche-humà,-massa-humà-2026-03-17",
+  "obra": {
+    "autor": "Friedrich Nietzsche",
+    "titol": "Humà, massa humà",
+    "llengua": "alemany"
+  },
+  "timestamps": {
+    "inici": "2026-03-17T05:55:23.429095",
+    "ultima_activitat": "2026-03-17T05:55:58.857083"
+  },
+  "fase_actual": "glossari",
+  "fases_completades": [
+    "investigacio"
+  ],
+  "chunks": {
+    "total": 0,
+    "completats": [],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": []
+}

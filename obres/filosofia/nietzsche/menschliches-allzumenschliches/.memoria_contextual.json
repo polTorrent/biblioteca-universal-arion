@@ -1,0 +1,43 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Friedrich Wilhelm Nietzsche (1844-1900), Röcken, Prússia (actual Alemanya). Filòsof alemany, filòleg clàssic i crític de la moral cristiana, considerat un dels precursors de l'existencialisme. Va desenvolupar una filosofia radical que qüestionava tots els valors tradicionals occidentals. La seva obra va influir profundament en la filosofia, la literatura i l'art del segle XX.",
+    "context_historic": "Segle XIX alemany, època de la unificació alemanya sota Bismarck, crisi dels valors tradicionals i emergència de la modernitat industrial. Context cultural marcat pel romanticisme tardà, l'ascens de les ciències naturals i la secularització.",
+    "context_obra": "Menschliches, Allzumenschliches. Ein Buch für freie Geister (1876-1878, publicat 1878) - filosofia aforística. Escrita durant la ruptura intel·lectual i personal de Nietzsche amb Wagner i Schopenhauer, marca la transició cap a la seva filosofia madura. Obra dedicada a Voltaire en commemoració del centenari de la seva mort.",
+    "influencies": [
+      "filosofia grega presocrática",
+      "Arthur Schopenhauer",
+      "Richard Wagner (primer període)",
+      "Ralph Waldo Emerson",
+      "filologia clàssica"
+    ],
+    "temes_principals": [
+      "crítica de la metafísica",
+      "genealogia de la moral",
+      "psicologia dels sentiments morals",
+      "l'esperit lliure",
+      "crítica de la religió i l'art"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Voltaire",
+    "[H] Personatge històric: Richard Wagner",
+    "[H] Personatge històric: Arthur Schopenhauer",
+    "[H] Personatge històric: Sòcrates",
+    "[H] Personatge històric: Plató",
+    "[H] Personatge històric: Heràclit",
+    "[H] Personatge històric: La Rochefoucauld",
+    "[C] Referència cultural: cultura alemanya del segle XIX",
+    "[C] Referència cultural: cristianisme i moral cristiana",
+    "[C] Referència cultural: art i música wagneriana",
+    "[C] Referència cultural: il·lustració francesa",
+    "[C] Referència cultural: filosofia grega antiga",
+    "[T] Terme tècnic: freie Geister (esperits lliures)",
+    "[T] Terme tècnic: Umwertung (transvaloració)",
+    "[T] Terme tècnic: Werthschätzungen (valoracions)",
+    "[T] Terme tècnic: Vorurteile (prejudicis)",
+    "[T] Terme tècnic: Metaphysik (metafísica)"
+  ]
+}
