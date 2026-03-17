@@ -6,7 +6,8 @@ obra:
   traductor: Biblioteca Arion
   any_original: c. 300 aC
   any_traduccio: 2026
-  llengua_original: anglès
+  llengua_original: sànscrit
+  llengua_font: anglès
   descripcio: 'Llibre I del Panchatantra: ''La pèrdua dels amics'' (Mitrabheda). Col·lecció
     de faules i contes encadenats sobre la intriga, l''amistat i la traïció, amb morals
     en vers.'
@@ -14,12 +15,10 @@ obra:
   genere: narrativa
   font_original: https://www.gutenberg.org/ebooks/25512
   notes: Traducció basada en la versió anglesa d'Arthur W. Ryder (1925), domini públic.
-  estadistiques:
-    paraules_traduccio: 16913
 seccions: 1
 estadistiques:
   paraules_original: 40464
-  paraules_traduccio: 0
+  paraules_traduccio: 16913
   notes: 0
   termes_glossari: 0
 revisio:
