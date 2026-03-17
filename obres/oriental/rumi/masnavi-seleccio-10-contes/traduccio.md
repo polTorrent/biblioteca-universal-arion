@@ -653,6 +653,8 @@ Maleït Anticrist, tan ple de frau i ardits!
 Els llaços del diable s'escampen amb aspecte temptador;
 els esquers són variats; nosaltres, com ocells, tanquem els ulls.
 
+[...] [Versos 45-65 omesos: el visir guanya la confiança dels cristians]
+
 Cada nit alliberes l'ànima del parany de la carn, [86]
 per escrutar els registres ocults de la Teva voluntat.
 Cada nit l'ànima és com un ocell alliberat de la gàbia,
@@ -661,6 +663,8 @@ De nit el presoner perd el sentit dels barrots i cadenes;
 de nit el monarca no coneix estat ni pompa;
 el mercader ja no compta, dormint, guanys ni pèrdues;
 el príncep i el pagès, iguals, es giren als seus llits.
+
+[...] [Versos 75-95 omesos: digressió sobre la natura del somni i l'ànima]
 
 Un califa va preguntar a Layla: «Ets realment tu
 per qui el pobre Majnún va perdre el seny? Car veig
@@ -675,6 +679,8 @@ El neci no sap que és una ombra el que persegueix.
 Els servents de Déu són les seves ombres aquí a la terra;
 morts a aquest món, vius en un segon naixement.                            105
 
+[...] [Versos 106-145 omesos: el visir predica i guanya autoritat entre els cristians]
+
 Sis anys va estar absent el visir, lluny del rei;
 semblava deixeble de la fe de Jesús.
 Un volum va preparar en nom de cadascun dels dotze capitans;
@@ -682,8 +688,12 @@ el contingut d'aquests registres, no tots igual.
 L'estil de cada un era d'un guisat diferent;                               150
 de cap a cap, cada llibre era una falsificació.
 
+[...] [Versos 151-349 omesos: el visir sembra la discòrdia amb evangelis contradictoris]
+
 El visir llavors es matà — alliberà l'ànima dels afanys de la terra.
 El poble, en sentir la seva mort, fou greument afligit.                    350
+
+[...] [Versos 351-389 omesos: els dotze capitans disputen la successió]
 
 Un capità de legió va avançar, d'entre els dotze:
 «Mireu! Successor soc jo del sant.»
@@ -695,6 +705,8 @@ Els morts s'amuntegaven en piles de centenars d'homes;
 la sang es vessava a torrents, fluint per la plana.
 Les llavors de discòrdia sembrades per la mà traïdora d'aquell malvat
 havien produït ara la seva collita, fatal per al país.
+
+[...] [Versos 395-429 omesos: reflexió sobre la unitat perduda i la vinguda d'Ahmad]
 
 El nom d'Ahmad, així, un amic es prova, de poder:
 pilar de llum de dia, núvol protector de nit.                              430
@@ -785,11 +797,15 @@ Ell respongué: «Cert! Cal confiar en la Providència.
 El Profeta digué clarament als seus deixebles reunits:                      20
 'Confieu en Déu, però lligeu el camell amb nusos ben units.'»
 
+[...] [Versos 21-64 omesos: debat entre les bèsties sobre la confiança en Déu i el destí]
+
 Un ximple un matí va arribar corrents, espantat,
 on Salomó tenia el seu tribunal instal·lat.
 Respongué aquell desgraciat: «L'àngel, Senyor, de la mort,                 65
 m'ha clavat ara mateix una mirada que m'ha tallat el conhort.»
 Salomó va manar al vent que el portés a l'Hindustà.
+
+[...] [Versos 67-74 omesos: Salomó reflexiona sobre l'incident]
 
 Un altre dia, l'àngel de la mort vingué; el rei li explicà l'afer:
 «La teva mirada irada sobre aquell home l'ha empès a fugir.»               75
@@ -802,6 +818,8 @@ Allà el vaig trobar, i amb la meva mà li vaig prendre l'alè.»
 
 Entén doncs que les coses de la terra les ordena Déu.
 De qui fugiràs? De tu mateix? Oh, és absurd!
+
+[...] [Versos 85-119 omesos: digressió sobre el destí i la providència divina]
 
 La sort va caure sobre la llebre un matí.                                   120
 Les bèsties digueren: «Cadascun ha tingut el seu torn;
