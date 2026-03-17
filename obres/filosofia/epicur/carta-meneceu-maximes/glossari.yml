@@ -1,0 +1,194 @@
+# Glossari — Carta a Meneceu i Màximes capitals (Epicur)
+# Termes clau del text original en grec antic
+
+termes:
+  - original: "ἡδονή"
+    transliteracio: "hēdonḗ"
+    traduccio: "plaer"
+    categoria: "concepte_central"
+    notes: >
+      Concepte fonamental de l'ètica epicúria. No es refereix al plaer sensual
+      sinó a l'absència de dolor (aponia) i pertorbació (ataraxia).
+
+  - original: "ἀταραξία"
+    transliteracio: "ataraxía"
+    traduccio: "impertorbabilitat, serenitat"
+    categoria: "concepte_central"
+    notes: >
+      Estat de calma absoluta de l'ànima, lliure de por i ansietat.
+      Objectiu suprem de la filosofia epicúria juntament amb l'aponia.
+
+  - original: "ἀπονία"
+    transliteracio: "aponía"
+    traduccio: "absència de dolor"
+    categoria: "concepte_central"
+    notes: >
+      Absència de dolor corporal. Complementa l'ataraxia (absència de
+      pertorbació anímica) com a condició de la felicitat.
+
+  - original: "εὐδαιμονία"
+    transliteracio: "eudaimonía"
+    traduccio: "felicitat, benestar"
+    categoria: "concepte_central"
+    notes: >
+      La vida feliç i plena, finalitat última de la filosofia.
+      Per a Epicur, s'assoleix mitjançant el plaer entès com a absència de dolor.
+
+  - original: "φρόνησις"
+    transliteracio: "phrónēsis"
+    traduccio: "prudència, saviesa pràctica"
+    categoria: "virtut"
+    notes: >
+      La virtut més important segons Epicur, origen de totes les altres.
+      Capacitat de calcular correctament plaers i dolors.
+
+  - original: "ἐπιθυμία"
+    transliteracio: "epithymía"
+    traduccio: "desig"
+    categoria: "concepte_central"
+    notes: >
+      Epicur classifica els desigs en: naturals i necessaris, naturals i no
+      necessaris, i ni naturals ni necessaris (buits).
+
+  - original: "φυσική"
+    transliteracio: "physikḗ"
+    traduccio: "natural"
+    categoria: "classificacio"
+    notes: >
+      Qualificatiu dels desigs conformes a la natura humana.
+
+  - original: "ἀναγκαία"
+    transliteracio: "anankáia"
+    traduccio: "necessària"
+    categoria: "classificacio"
+    notes: >
+      Qualificatiu dels desigs imprescindibles per a la vida, la salut
+      corporal o la felicitat.
+
+  - original: "κενή"
+    transliteracio: "kenḗ"
+    traduccio: "buida, vana"
+    categoria: "classificacio"
+    notes: >
+      Qualificatiu dels desigs que no tenen fonament natural, nascuts
+      d'opinions falses (kenodoxia).
+
+  - original: "θάνατος"
+    transliteracio: "thánatos"
+    traduccio: "mort"
+    categoria: "concepte_central"
+    notes: >
+      Per a Epicur, la mort no ens afecta: quan hi som nosaltres, ella no hi és;
+      quan ella hi és, nosaltres ja no hi som. Argument central de la Carta.
+
+  - original: "αἴσθησις"
+    transliteracio: "aísthēsis"
+    traduccio: "sensació, percepció"
+    categoria: "epistemologia"
+    notes: >
+      Base del coneixement epicuri. Tot bé i tot mal resideixen en la sensació;
+      la mort n'és la privació.
+
+  - original: "ἀφθαρσία"
+    transliteracio: "aphtharsía"
+    traduccio: "incorruptibilitat, immortalitat"
+    categoria: "teologia"
+    notes: >
+      Atribut dels déus epicuris, éssers eterns i feliços que no intervenen
+      en els afers humans.
+
+  - original: "μακαριότης"
+    transliteracio: "makariótēs"
+    traduccio: "beatitud, felicitat divina"
+    categoria: "teologia"
+    notes: >
+      Atribut dels déus. Els déus existeixen però no tenen les qualitats
+      que el vulgar els atribueix.
+
+  - original: "αὐτάρκεια"
+    transliteracio: "autárkeia"
+    traduccio: "autosuficiència"
+    categoria: "virtut"
+    notes: >
+      Gran bé segons Epicur. No per viure amb poc, sinó per no dependre
+      de l'abundància i gaudir més del que és senzill.
+
+  - original: "τύχη"
+    transliteracio: "týchē"
+    traduccio: "fortuna, atzar"
+    categoria: "concepte_central"
+    notes: >
+      Epicur rebutja que la fortuna sigui una divinitat. El savi prefereix
+      la mala sort amb bon judici que la bona sort sense raó.
+
+  - original: "ἀνάγκη"
+    transliteracio: "anánkē"
+    traduccio: "necessitat, determinisme"
+    categoria: "concepte_central"
+    notes: >
+      Epicur rebutja el determinisme absolut dels físics. Tres causes:
+      necessitat, atzar i el que depèn de nosaltres (par'hēmâs).
+
+  - original: "εἱμαρμένη"
+    transliteracio: "heimarménē"
+    traduccio: "destí, fatalitat"
+    categoria: "concepte_central"
+    notes: >
+      Epicur considera pitjor seguir el destí dels físics que els mites
+      dels déus, perquè el destí no deixa esperança.
+
+  - original: "φιλία"
+    transliteracio: "philía"
+    traduccio: "amistat"
+    categoria: "concepte_central"
+    notes: >
+      El bé més gran que la saviesa proporciona per a la felicitat
+      de tota la vida (Màxima 27).
+
+  - original: "δικαιοσύνη"
+    transliteracio: "dikaiosýnē"
+    traduccio: "justícia"
+    categoria: "concepte_central"
+    notes: >
+      Per a Epicur, la justícia no és quelcom en si mateix sinó un pacte
+      mutu de no fer-se mal. Té caràcter convencional i utilitari.
+
+  - original: "σύμβολον τοῦ συμφέροντος"
+    transliteracio: "sýmbolon toû symphérontos"
+    traduccio: "signe del que convé"
+    categoria: "etica_politica"
+    notes: >
+      Definició epicúria de la justícia natural: un acord sobre allò que
+      és mútuament avantatjós per no fer-se mal.
+
+  - original: "πρόληψις"
+    transliteracio: "prólēpsis"
+    traduccio: "preconcepció, noció prèvia"
+    categoria: "epistemologia"
+    notes: >
+      Concepte general format a partir de percepcions repetides.
+      Criteri de veritat en l'epistemologia epicúria.
+
+  - original: "φυσιολογία"
+    transliteracio: "physiología"
+    traduccio: "estudi de la natura"
+    categoria: "epistemologia"
+    notes: >
+      Coneixement de la natura necessari per alliberar-se de les pors
+      sobre els fenòmens celestes i la mort (Màxima 11-12).
+
+  - original: "σοφός"
+    transliteracio: "sophós"
+    traduccio: "savi"
+    categoria: "virtut"
+    notes: >
+      L'ideal humà epicuri: qui ni tem la mort ni rebutja la vida,
+      i prefereix el bon judici a la bona fortuna.
+
+  - original: "λογισμός"
+    transliteracio: "logismós"
+    traduccio: "raonament, càlcul"
+    categoria: "epistemologia"
+    notes: >
+      Raonament sobri que investiga les causes de tota elecció i rebuig.
+      Instrument fonamental de la prudència (phrónēsis).
