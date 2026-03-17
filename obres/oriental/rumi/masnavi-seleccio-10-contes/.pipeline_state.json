@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T01:02:24.407961",
-    "ultima_activitat": "2026-03-17T01:05:10.922647"
+    "ultima_activitat": "2026-03-17T01:06:35.457148"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -18,11 +18,11 @@
   "chunks": {
     "total": 240,
     "completats": [
-      "chunk_1"
+      "chunk_1",
+      "chunk_2"
     ],
-    "en_curs": "chunk_2",
+    "en_curs": "chunk_3",
     "pendents": [
-      "chunk_3",
       "chunk_4",
       "chunk_5",
       "chunk_6",
@@ -263,10 +263,12 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 5.0,
+    "qualitat_mitjana": 2.5,
     "temps_total_min": 0.0
   },
-  "errors": [],
+  "errors": [
+    "[01:06:35] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
   "warnings": [
     "[01:03:11] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value=\"persa (traduït de l'anglès de Redhouse, 1881)\", input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
   ]
