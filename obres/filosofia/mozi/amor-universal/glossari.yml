@@ -1,0 +1,164 @@
+# Glossari — 兼愛 (Amor universal), Mozi
+# Termes clau del text original en xinès clàssic amb romanització i traducció al català
+
+termes:
+  - original: "兼愛"
+    romanitzacio: "jiān ài"
+    traduccio: "amor universal"
+    notes: >
+      Concepte central del mohisme. Amor indiscriminat i igualitari envers tothom,
+      oposat a l'amor parcial (別愛). Mozi argumenta que és l'únic remei contra
+      el desordre social.
+
+  - original: "別"
+    romanitzacio: "bié"
+    traduccio: "parcialitat / distinció"
+    notes: >
+      Oposat a 兼. Representa l'amor selectiu o parcial que, segons Mozi,
+      és l'arrel de tots els conflictes i injustícies.
+
+  - original: "兼"
+    romanitzacio: "jiān"
+    traduccio: "universal / inclusiu"
+    notes: >
+      Literalment «tot alhora», «sense distinció». Principi d'inclusivitat
+      total que Mozi proposa com a fonament de la bona governança.
+
+  - original: "仁"
+    romanitzacio: "rén"
+    traduccio: "benevolència / humanitat"
+    notes: >
+      Virtut cardinal en la filosofia xinesa. Mozi l'empra per designar
+      la persona virtuosa (仁人) que actua pel bé de tothom.
+
+  - original: "義"
+    romanitzacio: "yì"
+    traduccio: "justícia / rectitud"
+    notes: >
+      Concepte ètic fonamental. En el context mohista, la justícia s'identifica
+      amb la pràctica de l'amor universal.
+
+  - original: "聖人"
+    romanitzacio: "shèngrén"
+    traduccio: "el savi / el sant"
+    notes: >
+      Figura ideal del governant perfecte que pren com a missió
+      ordenar el món (治天下).
+
+  - original: "治"
+    romanitzacio: "zhì"
+    traduccio: "ordre / bon govern"
+    notes: >
+      Estat de pau i harmonia social, oposat al desordre (亂, luàn).
+
+  - original: "亂"
+    romanitzacio: "luàn"
+    traduccio: "desordre / caos"
+    notes: >
+      Estat de conflicte social causat per l'amor parcial.
+      Mozi n'analitza les causes per proposar-ne el remei.
+
+  - original: "利"
+    romanitzacio: "lì"
+    traduccio: "benefici / profit"
+    notes: >
+      Concepte utilitarista clau. Mozi parla d'«intercanvi de beneficis»
+      (交相利) com a complement pràctic de l'amor universal.
+
+  - original: "害"
+    romanitzacio: "hài"
+    traduccio: "mal / dany"
+    notes: >
+      Oposat a 利. L'objectiu de la persona benevolent és eliminar
+      els danys del món (除天下之害).
+
+  - original: "天下"
+    romanitzacio: "tiānxià"
+    traduccio: "el món / tot sota el cel"
+    notes: >
+      Expressa la totalitat del món civilitzat. El bon governant
+      ha de vetllar pel bé de tot el tianxia.
+
+  - original: "交相愛"
+    romanitzacio: "jiāo xiāng ài"
+    traduccio: "estimar-se mútuament"
+    notes: >
+      Fórmula que expressa la reciprocitat de l'amor universal:
+      tothom estima tothom sense distinció.
+
+  - original: "交相利"
+    romanitzacio: "jiāo xiāng lì"
+    traduccio: "beneficiar-se mútuament"
+    notes: >
+      Complement pràctic de l'amor universal. L'intercanvi mutu
+      de beneficis és el resultat natural de l'amor universal.
+
+  - original: "孝"
+    romanitzacio: "xiào"
+    traduccio: "pietat filial"
+    notes: >
+      Virtut de respecte i cura envers els pares. Mozi argumenta
+      que l'amor universal no la contradiu sinó que la reforça.
+
+  - original: "慈"
+    romanitzacio: "cí"
+    traduccio: "afecte paternal / benignitat"
+    notes: >
+      Virtut del pare o governant envers els fills o súbdits.
+      Paral·lela a la pietat filial (孝).
+
+  - original: "忠"
+    romanitzacio: "zhōng"
+    traduccio: "lleialtat"
+    notes: >
+      Virtut del ministre envers el sobirà. Part del sistema
+      de relacions virtuoses que l'amor universal perfecciona.
+
+  - original: "諸侯"
+    romanitzacio: "zhūhóu"
+    traduccio: "els senyors feudals / els prínceps"
+    notes: >
+      Governants dels estats vassalls durant el període
+      dels Regnes Combatents. Mozi els critica per la guerra mútua.
+
+  - original: "盜賊"
+    romanitzacio: "dào zéi"
+    traduccio: "lladres i bandits"
+    notes: >
+      Exemple de desordre social causat per l'amor parcial:
+      el lladre estima casa seva però no la dels altres.
+
+  - original: "禹"
+    romanitzacio: "Yǔ"
+    traduccio: "Yu el Gran"
+    notes: >
+      Sobirà mític que va controlar les inundacions.
+      Mozi el cita com a exemple històric de governant que va practicar l'amor universal.
+
+  - original: "文王"
+    romanitzacio: "Wén Wáng"
+    traduccio: "el rei Wen"
+    notes: >
+      Fundador de la dinastia Zhou. Mozi el presenta com a model
+      de governant just que no discriminava entre grans i petits.
+
+  - original: "武王"
+    romanitzacio: "Wǔ Wáng"
+    traduccio: "el rei Wu"
+    notes: >
+      Fill del rei Wen, va completar la conquesta dels Shang.
+      Citat per Mozi com a exemple de justícia imparcial.
+
+  - original: "湯"
+    romanitzacio: "Tāng"
+    traduccio: "Tang (fundador dels Shang)"
+    notes: >
+      Primer sobirà de la dinastia Shang. Mozi cita el seu discurs
+      on s'ofereix com a sacrifici personal pel bé del poble.
+
+  - original: "子墨子"
+    romanitzacio: "Zǐ Mòzǐ"
+    traduccio: "el mestre Mozi"
+    notes: >
+      Forma honorífica per referir-se a Mozi (墨翟, c. 470-391 aC),
+      filòsof fundador del mohisme.
