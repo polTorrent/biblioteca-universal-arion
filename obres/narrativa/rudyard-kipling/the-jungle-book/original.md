@@ -1,3 +1,10 @@
+# The Jungle Book
+**Autor:** Rudyard Kipling
+**Font:** [gutenberg](https://www.gutenberg.org/ebooks/236)
+**Llengua:** anglès
+
+---
+
 THE JUNGLE BOOK
 
 By Rudyard Kipling
