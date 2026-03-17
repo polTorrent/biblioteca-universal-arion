@@ -1,0 +1,77 @@
+{
+  "sessio_id": "anònim-anglosaxó-beowulf-2026-03-17",
+  "obra": {
+    "autor": "Anònim anglosaxó",
+    "titol": "Beowulf",
+    "llengua": "anglès antic"
+  },
+  "timestamps": {
+    "inici": "2026-03-17T05:09:36.197177",
+    "ultima_activitat": "2026-03-17T05:10:20.345279"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 45,
+    "completats": [],
+    "en_curs": "chunk_1",
+    "pendents": [
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13",
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21",
+      "chunk_22",
+      "chunk_23",
+      "chunk_24",
+      "chunk_25",
+      "chunk_26",
+      "chunk_27",
+      "chunk_28",
+      "chunk_29",
+      "chunk_30",
+      "chunk_31",
+      "chunk_32",
+      "chunk_33",
+      "chunk_34",
+      "chunk_35",
+      "chunk_36",
+      "chunk_37",
+      "chunk_38",
+      "chunk_39",
+      "chunk_40",
+      "chunk_41",
+      "chunk_42",
+      "chunk_43",
+      "chunk_44",
+      "chunk_45"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [],
+  "warnings": [
+    "[05:10:20] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='anglès antic', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
