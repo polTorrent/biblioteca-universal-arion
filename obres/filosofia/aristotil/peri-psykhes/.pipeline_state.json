@@ -7,10 +7,12 @@
   },
   "timestamps": {
     "inici": "2026-03-17T07:54:39.179337",
-    "ultima_activitat": "2026-03-17T07:54:39.179471"
+    "ultima_activitat": "2026-03-17T07:55:32.079730"
   },
-  "fase_actual": "investigacio",
-  "fases_completades": [],
+  "fase_actual": "glossari",
+  "fases_completades": [
+    "investigacio"
+  ],
   "chunks": {
     "total": 0,
     "completats": [],
