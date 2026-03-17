@@ -15,7 +15,9 @@ obra:
     distraccions, la negligència i els altres. Sèneca exhorta Lucili a prendre
     possessió de cada hora, perquè el temps és l'únic bé veritablement nostre
     i, tanmateix, l'únic que no podem retornar.
-  font_original: "L. D. Reynolds (ed.), L. Annaei Senecae Ad Lucilium Epistulae Morales, Oxford Classical Texts, 1965"
+  categoria: filosofia
+  font_original: "https://la.wikisource.org/wiki/Epistulae_morales_ad_Lucilium/Liber_I#I._-_De_recuperando_tempore"
+  font_bibliografica: "L. D. Reynolds (ed.), L. Annaei Senecae Ad Lucilium Epistulae Morales, Oxford Classical Texts, 1965"
   domini_public: true
   temes:
     - estoïcisme
