@@ -13,16 +13,16 @@ obra:
   any_original: c. 399 aC
   any_traduccio: 2026
   llengua_original: grec
+  categoria: filosofia
   genere: filosofia
   subgenere: diàleg filosòfic
-  descripcio: 'Diàleg platònic ambientat a la presó d''Atenes, on Sòcrates espera
-    l''execució. El seu amic Critó li proposa fugir, però Sòcrates refusa, argumentant
+  descripcio: >
+    Diàleg platònic ambientat a la presó d'Atenes, on Sòcrates espera
+    l'execució. El seu amic Critó li proposa fugir, però Sòcrates refusa, argumentant
     que cal obeir les lleis de la ciutat fins i tot quan ens perjudiquen. És un text
-    fonamental sobre l''ètica del deure, el contracte social i la relació entre l''individu
-    i l''Estat. El diàleg presenta la cèlebre prosopopeia de les Lleis d''Atenes,
-    que parlen en primera persona per defensar l''autoritat de la polis.
-
-    '
+    fonamental sobre l'ètica del deure, el contracte social i la relació entre l'individu
+    i l'Estat. El diàleg presenta la cèlebre prosopopeia de les Lleis d'Atenes,
+    que parlen en primera persona per defensar l'autoritat de la polis.
   font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0169%3Atext%3DCrito
   domini_public: true
   temes:
@@ -49,6 +49,6 @@ obra:
     termes_glossari: 7
 revisio:
   estat: revisat
-  qualitat: 0.0
+  qualitat: 7.5
   data_revisio: '2026-02-27'
   requereix_revisio_humana: false
