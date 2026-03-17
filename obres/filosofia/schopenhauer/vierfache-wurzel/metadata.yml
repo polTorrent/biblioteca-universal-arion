@@ -8,6 +8,7 @@ obra:
   any_revisio: 1847
   any_edicio_base: 1864
   llengua_original: "alemany"
+  categoria: "filosofia"
   tipus: "tractat filosòfic"
   descripcio: >
     Tesi doctoral de Schopenhauer que estableix les bases del seu sistema
@@ -22,6 +23,7 @@ edicio:
   tipus: "crítica bilingüe"
   base: "Tercera edició (1864), editada per Julius Frauenstädt"
   font: "Internet Archive (domini públic)"
+  font_original: "https://archive.org/details/berdievierfache00teleigoog"
   notes_tipus:
     - "T: Nota del traductor"
     - "F: Nota filosòfica"
