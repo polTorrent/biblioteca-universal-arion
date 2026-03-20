@@ -1,0 +1,42 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Rabindranath Tagore (রবীন্দ্রনাথ ঠাকুর) (1861-1941), Calcuta, Bengala, Índia Britànica. Poeta, filòsof, compositor i pedagog bengalí, primer asiàtic en rebre el Premi Nobel de Literatura (1913). Membre de la prominent família Tagore del Renaixement bengalí, va ser una figura clau en la modernització cultural de l'Índia. Fundador de la universitat Visva-Bharati i defensor del diàleg intercultural entre Orient i Occident.",
+    "context_historic": "Època colonial britànica a l'Índia (s. XIX-XX), Renaixement bengalí, emergència del nacionalisme indi i moviments d'independència. Període de síntesi entre tradicions orientals i pensament occidental.",
+    "context_obra": "গীতাঞ্জলি (Gītāñjali - 'Ofrena de cançons') (1910 (original bengalí), 1912 (autotraducció anglesa)) - Poesia lírica devocional/mística. Traduïda pel propi Tagore a l'anglès per fer accessible la seva poesia al món occidental. Escrita en un període de maduresa espiritual i literària de l'autor. La selecció anglesa combina poemes de diferents col·leccions bengalís.",
+    "influencies": [
+      "Upanishads i filosofia védica",
+      "Tradició devocional baül",
+      "Poesia mística bengalí",
+      "Romanticisme europeu",
+      "Transcendentalisme americà",
+      "Filosofia de Schopenhauer"
+    ],
+    "temes_principals": [
+      "Devoció mística i unió amb el diví",
+      "Relació entre finitud humana i infinit diví",
+      "Mort i transcendència",
+      "Bellesa de la naturalesa com a manifestació divina",
+      "Servei desinteressat i amor universal"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Referències al diví (Thou, Lord)",
+    "[H] Personatge històric: Al·lusions a figures de la tradició hinduista",
+    "[H] Personatge històric: Mencions indirectes de gurus i mestres espirituals",
+    "[C] Referència cultural: Conceptes hindús de bhakti (devoció)",
+    "[C] Referència cultural: Tradició dels sadhu i sants bengalís",
+    "[C] Referència cultural: Festivals i rituals bengalís",
+    "[C] Referència cultural: Geografia del Bengala (rius, muntanyes)",
+    "[C] Referència cultural: Música clàssica índia (ragas)",
+    "[T] Terme tècnic: bhakti (devoció)",
+    "[T] Terme tècnic: dharma (deure/ordre còsmic)",
+    "[T] Terme tècnic: moksha (alliberament)",
+    "[T] Terme tècnic: avatar (encarnació divina)",
+    "[T] Terme tècnic: samsara (cicle de renaixements)",
+    "[T] Terme tècnic: karma",
+    "[T] Terme tècnic: upasana (adoració)"
+  ]
+}
