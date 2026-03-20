@@ -7,6 +7,7 @@ obra:
   any_original: 1609
   any_traduccio: 2026
   llengua_original: anglès
+  categoria: poesia
   genere: poesia
   subgenere: sonet
   descripcio: >-
@@ -16,7 +17,7 @@ obra:
     selecció inclou els sonets 18, 29, 30, 55, 73, 116, 130, 138, 141 i 154, que representen
     la diversitat temàtica i formal del conjunt: des de l'elogi idealitzat del Fair
     Youth fins a la passió turmentada de la Dark Lady.
-  font_original: 'Project Gutenberg, EBook #1041 / Quarto 1609'
+  font_original: 'https://www.gutenberg.org/ebooks/1041'
   domini_public: true
   temes:
   - amor
