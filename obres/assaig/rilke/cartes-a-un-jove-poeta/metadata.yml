@@ -7,7 +7,9 @@ obra:
   any_original: "1929"
   any_traduccio: 2026
   llengua_original: "alemany"
+  categoria: "assaig"
   descripcio: "Deu cartes escrites per Rilke entre 1903 i 1908 al jove poeta Franz Xaver Kappus, amb reflexions profundes sobre l'art, la solitud, l'amor, la vida interior i el procés creatiu."
+  font_original: "https://www.projekt-gutenberg.org/rilke/jungdich/jungdich.html"
 seccions: 10
 estadistiques:
   paraules_original: 11273
