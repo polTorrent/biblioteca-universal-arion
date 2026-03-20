@@ -16,10 +16,10 @@ obra:
   font_original: "https://www.gutenberg.org/ebooks/17650"
 seccions: 20
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 139
+  paraules_original: 191911
+  paraules_traduccio: 160
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 15
 revisio:
   estat: revisat
   qualitat: 0.0
