@@ -14,7 +14,8 @@ obra:
     revolucionaris (Nemzeti dal), elegies amoroses (Szeptember végén), odes al
     paisatge (Az Alföld, A Tisza) i reflexions sobre la poesia i la llibertat.
     Primera traducció al català d'aquest autor.
-  font: https://hu.wikisource.org/wiki/Szerz%C5%91:Pet%C5%91fi_S%C3%A1ndor
+  categoria: poesia
+  font_original: https://hu.wikisource.org/wiki/Szerz%C5%91:Pet%C5%91fi_S%C3%A1ndor
 seccions: 20
 estadistiques:
   paraules_original: 4000
