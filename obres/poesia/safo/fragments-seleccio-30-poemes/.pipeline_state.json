@@ -1,0 +1,48 @@
+{
+  "sessio_id": "safo-fragments-(selecció:-2026-03-20",
+  "obra": {
+    "autor": "Safo",
+    "titol": "Fragments (selecció: 30 poemes i fragments)",
+    "llengua": "grec"
+  },
+  "timestamps": {
+    "inici": "2026-03-20T22:17:51.979253",
+    "ultima_activitat": "2026-03-20T22:34:08.378063"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 6,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 1.83,
+    "temps_total_min": 16.27
+  },
+  "errors": [
+    "[22:26:51] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:27:37] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:28:18] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:32:42] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[22:21:24] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:34:08] Error anotació: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
