@@ -1,13 +1,19 @@
 obra:
-  titol: El retrat oval
-  autor: Edgar Allan Poe
-  traductor: Biblioteca Arion (IA + comunitat)
+  titol: "El retrat oval"
+  titol_original: "The Oval Portrait"
+  autor: "Edgar Allan Poe"
+  traductor: "Biblioteca Arion (IA + comunitat)"
+  any_original: 1842
   any_traduccio: 2026
-  llengua_original: anglès
-  genere: narrativa
-  descripcio: Conte curt de terror gòtic sobre un pintor obsessionat que absorbeix
+  llengua_original: "anglès"
+  categoria: "narrativa"
+  genere: "narrativa"
+  font_original: "https://www.gutenberg.org/files/2147/2147-h/2147-h.htm"
+  descripcio: >
+    Conte curt de terror gòtic sobre un pintor obsessionat que absorbeix
     la vida de la seva esposa mentre pinta el seu retrat.
   estadistiques:
+    paraules_original: 1095
     paraules_traduccio: 1450
 revisio:
   estat: publicat
