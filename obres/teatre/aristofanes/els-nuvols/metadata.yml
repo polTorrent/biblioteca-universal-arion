@@ -1,31 +1,31 @@
 obra:
-  titol: Els núvols
-  titol_original: Νεφέλαι
-  autor: Aristòfanes
-  autor_original: Ἀριστοφάνης
-  traductor: Editorial Clàssica
-  any_original: 423 aC
+  titol: "Els núvols"
+  titol_original: "Νεφέλαι"
+  autor: "Aristòfanes"
+  autor_original: "Ἀριστοφάνης"
+  traductor: "Editorial Clàssica"
+  any_original: "423 aC"
   any_traduccio: 2026
-  llengua_original: grec
-  categoria: teatre
-  descripcio: Comèdia clàssica d'Aristòfanes que satiritza Sòcrates i els sofistes
-    atenesos. Estrepsiades, un pagès endeutat, envia el seu fill Fidípides al 'Pensatori'
-    de Sòcrates per aprendre l'art de la retòrica i escapar dels creditors.
-  font: el.wikisource.org
-  estadistiques:
-    paraules_traduccio: 336
+  llengua_original: "grec"
+  categoria: "teatre"
+  descripcio: >
+    Comèdia clàssica d'Aristòfanes que satiritza Sòcrates i els sofistes
+    atenesos. Estrepsiades, un pagès endeutat, envia el seu fill Fidípides al
+    'Pensatori' de Sòcrates per aprendre l'art de la retòrica i escapar dels
+    creditors.
+  font_original: "https://el.wikisource.org/wiki/%CE%9D%CE%B5%CF%86%CE%AD%CE%BB%CE%B1%CE%B9"
 seccions: 1
 estadistiques:
   paraules_original: 10800
-  paraules_traduccio: 0
+  paraules_traduccio: 336
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: revisat
+  estat: "revisat"
   qualitat: 0.0
-  data_revisio: '2026-03-16'
+  data_revisio: "2026-03-16"
 avaluacio_final:
-  data: '2026-03-16T22:58:20.337616'
+  data: "2026-03-16T22:58:20.337616"
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
