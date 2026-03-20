@@ -2,11 +2,14 @@ obra:
   titol: "Vita Nuova (La Vida Nova)"
   titol_original: "Vita Nuova"
   autor: "Dante Alighieri"
+  autor_original: "Dante Alighieri"
   traductor: "Biblioteca Arion"
   any_original: "c. 1294"
   any_traduccio: 2026
   llengua_original: "italià"
-  genere: "narrativa"
+  categoria: "narrativa"
+  genere: "prosímetre"
+  font_original: "https://www.gutenberg.org/ebooks/41085"
   descripcio: >
     Obra juvenil de Dante que narra el seu amor per Beatriu, alternant
     prosa i poesia (prosímetre). Considerada fundacional de la literatura italiana
