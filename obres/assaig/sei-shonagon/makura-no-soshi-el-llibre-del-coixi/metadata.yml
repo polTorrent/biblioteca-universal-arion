@@ -43,12 +43,12 @@ seccions: 30
 estadistiques:
   paraules_original: 379
   paraules_traduccio: 1899
-  notes: 0
+  notes: 5
   termes_glossari: 10
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 8.0
+  data_revisio: "2026-03-20"
 llicencia:
   tipus: "CC BY-SA 4.0"
   nota: "Text original de domini públic (obra del s. XI)"
