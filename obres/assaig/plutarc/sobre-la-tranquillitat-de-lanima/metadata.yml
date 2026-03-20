@@ -7,8 +7,10 @@ obra:
   any_original: "c. 100 dC"
   any_traduccio: 2026
   llengua_original: "grec"
+  categoria: "assaig"
   genere: "assaig"
   descripcio: "Tractat moral de Plutarc adreçat al seu amic Pacci, on reflexiona sobre com assolir la serenitat interior (euthymia). Part dels Moralia, combina filosofia estoica i epicúria amb consells pràctics per viure amb tranquil·litat d'esperit."
+  font_original: "https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF_%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1%CF%82_(%CE%A0%CE%BB%CE%BF%CF%8D%CF%84%CE%B1%CF%81%CF%87%CE%BF%CF%82)"
 seccions: 20
 estadistiques:
   paraules_original: 0
