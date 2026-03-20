@@ -1,0 +1,21 @@
+obra:
+  titol: "Laelius de Amicitia"
+  titol_original: "Laelius de Amicitia"
+  autor: "Ciceró"
+  autor_original: "Marcus Tullius Cicero"
+  traductor: "Editorial Clàssica"
+  any_original: "44 aC"
+  any_traduccio: 2026
+  llengua_original: "llatí"
+  categoria: "assaig"
+  descripcio: "Diàleg filosòfic sobre l'amistat, escrit per Ciceró poc després de la mort del seu amic Escipió l'Africà. Leli, el protagonista, reflexiona sobre la natura, el valor i les condicions de la veritable amistat."
+  font_original: "https://la.wikisource.org/wiki/Laelius%20de%20Amicitia"
+estadistiques:
+  paraules_original: 0
+  paraules_traduccio: 0
+  notes: 0
+  termes_glossari: 0
+revisio:
+  estat: "pendent"
+  qualitat: 0
+  data_revisio: null
