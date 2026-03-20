@@ -10,44 +10,46 @@ obra:
   categoria: narrativa
   genere: narrativa
   subgenere: novel·la epistolar
-  descripcio: >
-    Novel·la epistolar que va sacsejar l'Europa del segle XVIII. El jove Werther
-    escriu cartes al seu amic Wilhelm narrant la seva passió impossible per Lotte,
-    una dona compromesa amb Albert. L'obra, pedra angular del Sturm und Drang,
-    explora l'amor no correspost, la natura, l'art i el conflicte entre sensibilitat
+  descripcio: 'Novel·la epistolar que va sacsejar l''Europa del segle XVIII. El jove
+    Werther escriu cartes al seu amic Wilhelm narrant la seva passió impossible per
+    Lotte, una dona compromesa amb Albert. L''obra, pedra angular del Sturm und Drang,
+    explora l''amor no correspost, la natura, l''art i el conflicte entre sensibilitat
     i raó, fins a un desenllaç tràgic que va commocionar tota una generació.
-  font_original: "https://www.gutenberg.org/ebooks/2407"
+
+    '
+  font_original: https://www.gutenberg.org/ebooks/2407
   domini_public: true
   temes:
-    - amor no correspost
-    - Sturm und Drang
-    - natura
-    - sensibilitat
-    - suïcidi
-    - societat
-    - art
-    - llibertat individual
+  - amor no correspost
+  - Sturm und Drang
+  - natura
+  - sensibilitat
+  - suïcidi
+  - societat
+  - art
+  - llibertat individual
   context:
     tradicio: literatura germànica, romanticisme primerenc
     influencies:
-      - Rousseau
-      - Ossian
-      - Homer
-      - Klopstock
+    - Rousseau
+    - Ossian
+    - Homer
+    - Klopstock
     obres_relacionades:
-      - Faust de Goethe
-      - La nova Heloïsa de Rousseau
-      - Hiperió de Hölderlin
+    - Faust de Goethe
+    - La nova Heloïsa de Rousseau
+    - Hiperió de Hölderlin
   estadistiques:
     paraules_original: 32000
     capitols: 2
-    paraules_traduccio: 0
+    paraules_traduccio: 25328
     notes: 0
     termes_glossari: 0
 revisio:
   estat: en_traduccio
-  data_inici: "2026-03-07"
-  qualitat: 0
+  data_inici: '2026-03-07'
+  qualitat: 0.0
   requereix_revisio_humana: true
   proposat_per: snoopyfan
   canal: propostes-traduccio
+  data_revisio: '2026-03-20'
