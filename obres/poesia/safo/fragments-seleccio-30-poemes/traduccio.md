@@ -1,58 +1,58 @@
-# Safo — Fragments (selecció de 30 poemes)
+# Fragments (selecció: 30 poemes i fragments)
+*Safo*
 
-Traducció al català dels fragments de Safo de Lesbos (c. 630 – c. 570 aC).
-Numeració segons l'edició Lobel-Page / Voigt (LP/V).
+Traduït del grec per Biblioteca Arion
 
 ---
 
 ## Fragment 1 (Himne a Afrodita)
 
-Afrodita immortal del tron brodat,
-filla de Zeus, teixidora d'enganys, et prego,
-no em dominis amb penes ni amb angoixes,
-senyora, el cor,
+Afrodita immortal del tron iridescent,
+filla de Zeus teixidora d'enganys, et suplico:
+no em vencis el cor amb angoixes ni penes,
+senyora,
 
-sinó vine aquí, si mai en un altre temps
-sentint la meva veu de lluny
-em vas escoltar, i deixant la casa del pare
-vas venir, daurada,
+sinó vine aquí, com altres vegades
+quan, sentint de lluny les meves paraules,
+em vas escoltar, i vas arribar deixant
+la casa daurada del teu pare
 
-havent enganxat el carro: bells pardals
-veloços et portaven sobre la terra fosca
-batent les ales espesses des del cel
-a través de l'èter;
+després d'unir el carro: et portaven
+ràpids pardals batent espesses les ales
+per damunt de la terra fosca, des del cel
+a través de l'aire pur;
 
-i de seguida van arribar; i tu, benaventurada,
-somrient amb el teu rostre immortal
-em preguntaves què em passava aquesta vegada i per què
-aquesta vegada et cridava
+aviat van arribar. I tu, benaurada,
+somrient amb el rostre immortal
+em preguntaves què pateixo ara i per què
+t'invoco ara
 
-i què volia jo sobretot que passés
-al meu cor foll: «A qui aquesta vegada he de persuadir
-perquè torni al teu amor? Qui, oh
-Safo, et fa tort?
+i què vull que em passi més que res
+en el meu cor boig. «A qui he de convèncer
+que torni al teu amor? Qui et fa mal,
+Safo?
 
-Perquè si fuig, aviat perseguirà,
-si no accepta regals, en donarà,
+Car si fuig, aviat et perseguirà,
+si no accepta regals, te'n donarà,
 si no estima, aviat estimarà
 encara que no vulgui.»
 
-Vine'm també ara, allibera'm de les dures
-preocupacions, tot allò que el meu cor
-desitja que s'acompleixi, acompleix-ho, i tu mateixa
+Vine a mi també ara, i allibera'm
+d'aquesta cruel angoixa. Tot allò que el meu
+cor desitja complir, compleix-ho. Tu mateixa
 sigues la meva aliada.
 
 ## Fragment 2
 
-Vine'm des de Creta cap a aquest temple
+Vine a mi des de Creta a aquest temple
 sagrat, on hi ha un bosc encantador
-de pomeres, i altars perfumats
-d'encens;
+de pomeres, i els altars perfumats
+amb encens;
 
-i l'aigua freda murmura entre les branques
-de les pomeres, i tot el lloc és ombrívol
-de roses, i de les fulles tremoloses
-davalla la son;
+i ressona dins l'aigua fresca entre les branques
+de pomera, i tot el lloc
+està ombrejat de roses, i de les fulles tremoloses
+baixa el somni;
 
 i un prat on pasturen els cavalls floreix
 amb flors de primavera, i les brises
@@ -178,7 +178,7 @@ Em semblaves una nena petita i sense gràcia.
 
 ## Fragment 55
 
-Morta jauras i mai ningú no es recordarà de tu
+Morta jauràs i mai ningú no es recordarà de tu
 ni ara ni després; perquè no tens part de les roses
 de Pièria, sinó que invisible també a la casa d'Hades
 vagaràs entre les ombres dels morts, esvaïda.
@@ -369,3 +369,7 @@ S'ha post la lluna
 i les Plèiades, és mitjanit,
 l'hora passa,
 i jo dormo sola.
+
+---
+
+*Traducció de domini públic.*
