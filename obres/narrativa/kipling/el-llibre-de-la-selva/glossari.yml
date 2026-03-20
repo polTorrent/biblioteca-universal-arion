@@ -1,0 +1,191 @@
+termes:
+  - id: "law-of-the-jungle"
+    angles: "Law of the Jungle"
+    traduccio: "Llei de la jungla"
+    definicio: |
+      Codi de conducta no escrit que regeix la vida dels animals de la selva
+      a l'obra de Kipling. Estableix drets, deures i prohibicions per a cada
+      espècie, incloent-hi la prohibició de caçar homes excepte en circumstàncies
+      molt concretes. Funciona com a metàfora de l'ordre social i la justícia natural.
+
+  - id: "free-people"
+    angles: "Free People"
+    traduccio: "Poble Lliure"
+    definicio: |
+      Nom amb què els llops es refereixen a si mateixos com a col·lectiu.
+      Subratlla la seva independència i el rebuig a sotmetre's a cap autoritat
+      externa, especialment la de Shere Khan. Només obeeixen el cap de la manada
+      i la Llei de la jungla.
+
+  - id: "pack-council"
+    angles: "Pack Council"
+    traduccio: "Consell de la manada"
+    definicio: |
+      Assemblea mensual dels llops de Seeonee, celebrada a la Roca del Consell
+      durant la lluna plena. S'hi presenten els cadells nous, es resolen disputes
+      i es prenen decisions col·lectives. És l'equivalent d'un parlament tribal
+      dins la societat dels llops.
+
+  - id: "council-rock"
+    angles: "Council Rock"
+    traduccio: "Roca del Consell"
+    definicio: |
+      Turó cobert de pedres i roques on es reuneix la manada de Seeonee.
+      Akela, el llop solitari, hi presideix les sessions des del cim.
+      Espai simbòlic de poder i justícia dins la selva.
+
+  - id: "hunting-grounds"
+    angles: "hunting grounds"
+    traduccio: "territori de caça"
+    definicio: |
+      Zona assignada a cada manada o animal per caçar-hi. Canviar de territori
+      sense avís previ és una violació greu de la Llei de la jungla, com fa
+      Shere Khan al principi del relat.
+
+  - id: "man-cub"
+    angles: "man's cub"
+    traduccio: "cadell d'home"
+    definicio: |
+      Expressió amb què els animals de la selva es refereixen a Mowgli.
+      Reflecteix la seva condició ambigua: és humà de naixement però criat
+      entre llops, i la tensió entre els dos mons és el motor de la història.
+
+  - id: "dewanee"
+    angles: "dewanee"
+    traduccio: "bogeria"
+    definicio: |
+      Paraula d'origen hindustànic (del hindi दीवाना, dīwānā) que els animals
+      de la selva utilitzen per referir-se a la ràbia o hidrofòbia. És la pitjor
+      desgràcia que pot afectar un animal salvatge, i fins i tot el tigre
+      en fuig.
+
+  - id: "gidur-log"
+    angles: "Gidur-log"
+    traduccio: "poble dels xacals"
+    definicio: |
+      Terme hindustànic per designar col·lectivament els xacals. Tabaqui
+      l'utilitza amb autoironia per referir-se al seu propi poble, considerat
+      el més baix en l'escala social de la selva.
+
+  - id: "seeonee"
+    angles: "Seeonee"
+    traduccio: "Seeonee"
+    definicio: |
+      Turons on viu la manada de llops que adopta Mowgli. Basat en la regió
+      real de Seoni (Madhya Pradesh, Índia central), zona de selva i turons
+      que Kipling coneixia per descripcions de naturalistes britànics.
+
+  - id: "waingunga"
+    angles: "Waingunga"
+    traduccio: "Waingunga"
+    definicio: |
+      Riu proper als turons de Seeonee, territori habitual de Shere Khan.
+      Basat en el riu Wainganga real, afluent del Godavari a l'Índia central.
+
+  - id: "sambhur"
+    angles: "Sambhur"
+    traduccio: "sambhur"
+    definicio: |
+      Gran cérvol asiàtic (Rusa unicolor) que habita les selves de l'Índia.
+      És una de les preses principals dels depredadors de la selva de Kipling.
+
+  - id: "bandar-log"
+    angles: "Bandar-log"
+    traduccio: "Bandar-log (poble dels micos)"
+    definicio: |
+      Del hindi बंदर (bandar, "mico") i लोग (log, "gent"). Són els micos
+      de la selva, menyspreats per tots els altres animals perquè no tenen llei,
+      cap ni disciplina. Representen el caos i la vanitat irresponsable.
+
+  - id: "master-words"
+    angles: "Master Words"
+    traduccio: "Paraules Mestres"
+    definicio: |
+      Fórmules rituals que Baloo ensenya als cadells de llop per identificar-se
+      davant les diferents espècies de la selva. Cada espècie té la seva pròpia
+      Paraula Mestra, i conèixer-les garanteix protecció i pas lliure.
+
+  - id: "cold-lairs"
+    angles: "Cold Lairs"
+    traduccio: "Caus Freds"
+    definicio: |
+      Ruïnes d'una antiga ciutat humana abandonada a la selva, on viuen
+      els Bandar-log. Representen la civilització humana engolida per la
+      natura i la decadència del poder sense llei.
+
+  - id: "red-flower"
+    angles: "Red Flower"
+    traduccio: "Flor Vermella"
+    definicio: |
+      Nom amb què els animals de la selva designen el foc, que temen
+      profundament. Mowgli l'utilitza com a arma decisiva contra Shere Khan
+      i els llops rebels, marcant la seva diferència com a humà.
+
+  - id: "lone-wolf"
+    angles: "Lone Wolf"
+    traduccio: "Llop Solitari"
+    definicio: |
+      Títol d'Akela, el líder de la manada de Seeonee. Implica respecte
+      i experiència: ha sobreviscut sol abans de liderar el grup.
+      Quan perd la seva posició, torna a ser literalment un llop solitari.
+
+personatges:
+  - nom: "Mowgli"
+    traduccio: "Mowgli"
+    tipus: "protagonista"
+    descripcio: "Nen humà criat per llops. El seu nom significa 'granota' en la llengua de la selva."
+
+  - nom: "Shere Khan"
+    traduccio: "Shere Khan"
+    tipus: "antagonista"
+    descripcio: "Tigre de Bengala coix, antagonista principal. 'Shere' ve del hindi शेर (lleó/tigre)."
+
+  - nom: "Akela"
+    traduccio: "Akela"
+    tipus: "líder"
+    descripcio: "Gran llop gris, cap de la manada de Seeonee. Del hindi अकेला ('solitari')."
+
+  - nom: "Baloo"
+    traduccio: "Baloo"
+    tipus: "mentor"
+    descripcio: "Ós bru que ensenya la Llei de la jungla als cadells. Del hindi भालू (bhālū, 'ós')."
+
+  - nom: "Bagheera"
+    traduccio: "Bagheera"
+    tipus: "protector"
+    descripcio: "Pantera negra, nascuda en captivitat. Del hindi बघीरा (baghīrā, 'pantera/lleopard')."
+
+  - nom: "Tabaqui"
+    traduccio: "Tabaqui"
+    tipus: "secundari"
+    descripcio: "Xacal adulador i intrigant, servidor de Shere Khan."
+
+  - nom: "Raksha"
+    traduccio: "Raksha"
+    tipus: "mare adoptiva"
+    descripcio: "Lloba mare de Mowgli. El seu nom significa 'el dimoni' en hindi."
+
+  - nom: "Kaa"
+    traduccio: "Kaa"
+    tipus: "aliat"
+    descripcio: "Gran pitó de roca, temut per la seva força i poder hipnòtic."
+
+  - nom: "Hathi"
+    traduccio: "Hathi"
+    tipus: "autoritat"
+    descripcio: "Elefant salvatge, senyor de la selva. Del hindi हाथी (hāthī, 'elefant')."
+
+  - nom: "Ikki"
+    traduccio: "Ikki"
+    tipus: "secundari"
+    descripcio: "Porc espí, portador de notícies i rumors de la selva."
+
+  - nom: "Mang"
+    traduccio: "Mang"
+    tipus: "secundari"
+    descripcio: "Ratpenat, esmentat al poema inicial com a herald del crepuscle."
+
+  - nom: "Rann"
+    traduccio: "Rann"
+    tipus: "secundari"
+    descripcio: "Milà (au rapinyaire), herald de la nit al poema inicial."
