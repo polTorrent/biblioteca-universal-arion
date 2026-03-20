@@ -7,10 +7,12 @@ obra:
   any_original: '1692'
   any_traduccio: 2026
   llengua_original: castellà
+  categoria: poesia
   descripcio: Poema filosòfic barroc de 975 versos en forma de silva, considerat l'obra
     mestra de Sor Juana. Narra el viatge de l'ànima durant el somni nocturn, que intenta
     comprendre la totalitat de l'univers mitjançant la raó.
   genere: poesia
+  font_original: "https://es.wikisource.org/wiki/Primero%20Sue%C3%B1o"
 seccions: 1
 estadistiques:
   paraules_original: 4861
