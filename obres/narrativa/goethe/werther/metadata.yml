@@ -7,6 +7,7 @@ obra:
   any_original: 1774
   any_traduccio: 2026
   llengua_original: alemany
+  categoria: narrativa
   genere: narrativa
   subgenere: novel·la epistolar
   descripcio: >
@@ -15,7 +16,7 @@ obra:
     una dona compromesa amb Albert. L'obra, pedra angular del Sturm und Drang,
     explora l'amor no correspost, la natura, l'art i el conflicte entre sensibilitat
     i raó, fins a un desenllaç tràgic que va commocionar tota una generació.
-  font_original: "Project Gutenberg, EBook #2407"
+  font_original: "https://www.gutenberg.org/ebooks/2407"
   domini_public: true
   temes:
     - amor no correspost
