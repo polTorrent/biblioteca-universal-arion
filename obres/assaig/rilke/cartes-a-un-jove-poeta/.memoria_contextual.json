@@ -1,0 +1,78 @@
+{
+  "traduccions": {
+    "kunst-werk": {
+      "original": "Kunst-Werk",
+      "traduccio": "obra d'art",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "geheimnisvolle existenzen": {
+      "original": "geheimnisvolle Existenzen",
+      "traduccio": "existències misterioses",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "personlichem": {
+      "original": "Persönlichem",
+      "traduccio": "personal",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "notwendigkeit": {
+      "original": "Notwendigkeit",
+      "traduccio": "necessitat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "alltag": {
+      "original": "Alltag",
+      "traduccio": "quotidianitat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "aufrichtigkeit": {
+      "original": "Aufrichtigkeit",
+      "traduccio": "sinceritat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "uberlieferungen": {
+      "original": "Überlieferungen",
+      "traduccio": "tradicions",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "kindheit": {
+      "original": "Kindheit",
+      "traduccio": "infància",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "schaffenden": {
+      "original": "Schaffenden",
+      "traduccio": "creador",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "liebesgedichte": {
+      "original": "Liebesgedichte",
+      "traduccio": "poemes d'amor",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": null,
+  "notes_pendents": []
+}
