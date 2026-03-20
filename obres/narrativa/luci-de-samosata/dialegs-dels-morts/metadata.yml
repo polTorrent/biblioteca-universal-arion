@@ -14,6 +14,7 @@ obra:
   any_original: c. 165 dC
   any_traduccio: 2026
   llengua_original: grec
+  categoria: narrativa
   genere: narrativa
   subgenere: diàleg satíric
   descripcio: |
@@ -26,6 +27,7 @@ obra:
     del diàleg filosòfic humorístic europeu.
 
   font_original: "Edició M.D. Macleod, Luciani Opera (Oxford Classical Texts, 1972-1987)"
+  font_original_url: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0438"
   domini_public: true
 
   temes:
