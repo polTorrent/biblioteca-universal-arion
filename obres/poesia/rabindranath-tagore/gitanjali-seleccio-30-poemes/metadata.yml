@@ -21,10 +21,10 @@ obra:
 seccions: 30
 estadistiques:
   paraules_original: 3351
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_traduccio: 3531
+  notes: 6
+  termes_glossari: 8
 revisio:
-  estat: "pendent"
-  qualitat: null
-  data_revisio: null
+  estat: "revisat"
+  qualitat: 8.0
+  data_revisio: "2026-03-20"
