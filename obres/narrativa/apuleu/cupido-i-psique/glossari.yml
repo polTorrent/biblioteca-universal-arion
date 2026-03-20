@@ -1,0 +1,169 @@
+termes:
+  - id: "psyche"
+    llati: "Psyche"
+    transliteracio: "Psychē"
+    traduccio: "Psique (ànima)"
+    definicio: >
+      Nom de la protagonista, que en grec significa «ànima» (ψυχή). La faula és una al·legoria
+      del viatge de l'ànima humana cap a la unió amb l'amor diví. Apuleu juga constantment
+      amb el doble sentit del nom: Psique és alhora una noia mortal i la personificació de l'ànima.
+    usos: [IV.28, V.4, V.22, VI.24]
+
+  - id: "cupido"
+    llati: "Cupido"
+    transliteracio: "Cupīdō"
+    traduccio: "Cupido (desig)"
+    definicio: >
+      Déu de l'amor, fill de Venus. En llatí, «cupido» significa «desig ardent». Marit secret
+      de Psique, que li prohibeix veure el seu rostre. Equivalent del grec Eros. La seva revelació
+      com a déu formós és el punt culminant del Llibre V.
+    usos: [IV.30, V.22, V.24, VI.24]
+
+  - id: "venus"
+    llati: "Venus"
+    transliteracio: "Venus"
+    traduccio: "Venus"
+    definicio: >
+      Deessa de l'amor i la bellesa, mare de Cupido. Antagonista de Psique per gelosia:
+      la bellesa mortal de la noia desvia el culte que li correspon. Sotmet Psique a proves
+      impossibles com a càstig per la seva gosadia.
+    usos: [IV.29, IV.30, V.28, VI.1]
+
+  - id: "zephyrus"
+    llati: "Zephyrus"
+    transliteracio: "Zephyrus"
+    traduccio: "Zèfir"
+    definicio: >
+      Vent suau de l'oest, servidor de Cupido. Transporta Psique des del cim de la roca
+      fins a la vall florida on hi ha el palau diví, i posteriorment trasllada les germanes.
+    usos: [IV.35, V.6, V.7, V.15]
+
+  - id: "curiositas"
+    llati: "curiositas"
+    transliteracio: "curiōsitās"
+    traduccio: "curiositat"
+    definicio: >
+      Tema central de la faula i de tota l'obra d'Apuleu (Metamorfosis). La curiositat
+      sacrílega (sacrilega curiositate) de Psique, que la porta a desvetllar la identitat
+      del seu marit, és el motor de la seva caiguda i del seu viatge de redempció.
+    usos: [V.6, V.19, V.23, VI.1]
+
+  - id: "lucerna"
+    llati: "lucerna"
+    transliteracio: "lucerna"
+    traduccio: "llàntia, llum d'oli"
+    definicio: >
+      La llàntia amagada per Psique seguint el consell de les germanes. Instrument de la
+      transgressió: la seva llum revela Cupido adormit, però una gota d'oli bullent el crema
+      i el desperta. Símbol de la curiositat i del coneixement prohibit.
+    usos: [V.20, V.22, V.23]
+
+  - id: "novacula"
+    llati: "novacula"
+    transliteracio: "novācula"
+    traduccio: "navalla, ganiveta afilada"
+    definicio: >
+      L'arma que les germanes aconsellen a Psique per degollar el suposat monstre-marit.
+      Psique la porta al llit però es penedeix en veure la bellesa de Cupido. Juntament
+      amb la llàntia, forma el parell simbòlic de la intenció homicida frustrada per l'amor.
+    usos: [V.20, V.22]
+
+  - id: "metamorphoses"
+    llati: "Metamorphoseon"
+    transliteracio: "Metamorphōseōn"
+    traduccio: "Les metamorfosis (L'ase d'or)"
+    definicio: >
+      Títol de la novel·la d'Apuleu (també coneguda com «Asinus aureus») dins la qual
+      s'insereix la faula de Cupido i Psique (llibres IV.28–VI.24). L'obra narra les
+      aventures de Luci, transformat en ase per la seva curiositat.
+    usos: []
+
+  - id: "oraculum"
+    llati: "oraculum"
+    transliteracio: "ōrāculum"
+    traduccio: "oracle"
+    definicio: >
+      L'oracle d'Apol·lo a Milet que dicta el destí de Psique: ser exposada al cim d'una
+      roca per al seu nuvi, descrit com un monstre alat temut fins pels déus. L'oracle
+      usa hexàmetres llatins dins la prosa, un recurs estilístic notable.
+    usos: [IV.33]
+
+  - id: "sorores"
+    llati: "sorores"
+    transliteracio: "sorōrēs"
+    traduccio: "germanes"
+    definicio: >
+      Les dues germanes grans de Psique, mogudes per l'enveja de la seva fortuna.
+      Actuen com a forces destructives que manipulen Psique per fer-la trair Cupido.
+      Comparades amb Fúries i Sirenes, moren precipitant-se des de la roca.
+    usos: [V.5, V.9, V.14, V.26, V.27]
+
+  - id: "scopulus"
+    llati: "scopulus"
+    transliteracio: "scopulus"
+    traduccio: "penyal, roca escarpada"
+    definicio: >
+      El penyal al cim de la muntanya on Psique és exposada per ordre de l'oracle,
+      com en un ritual nupcial-funerari. Espai liminal entre el món humà i el diví,
+      entre la mort i el renaixement.
+    usos: [IV.33, IV.35, V.14, V.27]
+
+  - id: "ceres"
+    llati: "Ceres"
+    transliteracio: "Cerēs"
+    traduccio: "Ceres"
+    definicio: >
+      Deessa de l'agricultura i les collites. Psique li demana asil al seu temple, però
+      Ceres la rebutja per no enemistar-se amb Venus, tot i compadir-la. Representa
+      la simpatia impotent davant el poder de Venus.
+    usos: [VI.1, VI.2, VI.3]
+
+  - id: "iuno"
+    llati: "Iuno"
+    transliteracio: "Iūnō"
+    traduccio: "Juno"
+    definicio: >
+      Germana i esposa de Júpiter, deessa del matrimoni. Com Ceres, refusa ajudar
+      Psique per por de Venus. Irònicament, com a protectora dels matrimonis,
+      no pot defensar el matrimoni de Psique i Cupido.
+    usos: [V.31, VI.4]
+
+  - id: "thalamus"
+    llati: "thalamus"
+    transliteracio: "thalamus"
+    traduccio: "cambra nupcial"
+    definicio: >
+      Terme que designa la cambra nupcial o llit conjugal. A la faula, apareix en contextos
+      paradoxals: les «noces fúnebres» (feralis thalami) de Psique i la cambra on Venus
+      guarda Cupido ferit.
+    usos: [IV.33, V.28]
+
+  - id: "fatum"
+    llati: "fatum / sors"
+    transliteracio: "fātum / sors"
+    traduccio: "destí, fat / sort, oracle"
+    definicio: >
+      El destí i la sort oracular que governen la vida de Psique. L'oracle (sors Pythica)
+      determina el seu matrimoni monstruós, i la Fortuna la persegueix. La tensió entre
+      destí, lliure voluntat i curiositat és el nucli filosòfic de la faula.
+    usos: [IV.32, IV.33, V.5, V.11]
+
+  - id: "domus-regia"
+    llati: "domus regia"
+    transliteracio: "domus rēgia"
+    traduccio: "palau reial, casa divina"
+    definicio: >
+      El palau màgic construït per arts divines on Psique és transportada pel Zèfir.
+      Ple d'or, ivori, plata i gemmes, amb servidors invisibles. Representa la vida
+      paradisíaca que Psique gaudeix abans de la seva transgressió.
+    usos: [V.1, V.2]
+
+  - id: "pinnis"
+    llati: "pinnae / pinnatus"
+    transliteracio: "pinnae"
+    traduccio: "ales, alat"
+    definicio: >
+      Les ales de Cupido, símbol del seu poder diví. L'oracle descriu el marit de Psique
+      com un ésser «que vola amb ales sobre l'èter». Venus amenaça d'arrencar-les al seu fill.
+      La revelació de les ales rosades de Cupido és un dels moments més lírics del text.
+    usos: [IV.33, V.22, V.30]
