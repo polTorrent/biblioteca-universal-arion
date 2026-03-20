@@ -15,7 +15,8 @@ obra:
     Masetto da Lamporecchio (III,1), Lisabetta da Messina (IV,5), Federigo
     degli Alberighi (V,9), Fra Cipolla (VI,10), Peronella (VII,2), Calandrino
     i l'elitropia (VIII,3) i Griselda (X,10).
-  font: "https://it.wikisource.org/wiki/Decameron"
+  categoria: "narrativa"
+  font_original: "https://it.wikisource.org/wiki/Decameron"
   genere: "narrativa"
   subgenere: "novella"
   periode: "medieval"
