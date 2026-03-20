@@ -18,7 +18,8 @@ obra:
     excés de consciència, el conflicte entre raó i voluntat, la impossibilitat
     de l'amor sense domini, i la rebel·lia irracional com a afirmació de la
     llibertat humana.
-  font_original: "domini públic"
+  categoria: "narrativa"
+  font_original: "https://ru.wikisource.org/wiki/Записки_из_подполья_(Достоевский)"
   domini_public: true
   temes:
     - consciència i paràlisi
