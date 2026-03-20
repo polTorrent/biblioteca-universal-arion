@@ -1,0 +1,159 @@
+termes:
+  - id: "hypsos"
+    grec: "ὕψος"
+    transliteracio: "hýpsos"
+    traduccio: "sublimitat, grandesa"
+    definicio: >
+      Concepte central del tractat: l'elevació suprema de l'estil literari que
+      transporta l'oient més enllà de la persuasió, cap a l'èxtasi. No és
+      merament ornamentació retòrica sinó una força irresistible que domina
+      l'audiència. Pseudo-Longí identifica cinc fonts del sublim.
+    usos: [1, 7, 8, 9]
+
+  - id: "ekstasis"
+    grec: "ἔκστασις"
+    transliteracio: "ékstasis"
+    traduccio: "èxtasi, transport"
+    definicio: >
+      Estat de superació dels límits de la consciència ordinària provocat pel
+      sublim. Contrasta amb la mera persuasió (peithó): mentre la persuasió
+      opera dins la raó, l'èxtasi arrabassa l'oient fora de si mateix.
+    usos: [1]
+
+  - id: "megalophyes"
+    grec: "μεγαλοφυές"
+    transliteracio: "megalophyés"
+    traduccio: "grandesa natural, geni innat"
+    definicio: >
+      La primera i més important de les cinc fonts del sublim: la capacitat
+      innata de concebre pensaments elevats. No és ensenyable sinó un do de la
+      natura, tot i que pot ser cultivat. Equivalent a la grandesa d'esperit.
+    usos: [8, 9]
+
+  - id: "pathos"
+    grec: "πάθος"
+    transliteracio: "páthos"
+    traduccio: "passió, emoció intensa"
+    definicio: >
+      La segona font del sublim: l'emoció vehement i inspirada. Pseudo-Longí
+      discrepa de Cecili, que l'ometia: la passió genuïna, quan escau, és
+      sublim per naturalesa. Tanmateix, el pathos no és idèntic al sublim,
+      ja que existeixen passions baixes (pietat, dolor, por) i sublimitat
+      sense passió.
+    usos: [3, 8]
+
+  - id: "schemata"
+    grec: "σχήματα"
+    transliteracio: "skhḗmata"
+    traduccio: "figures retòriques"
+    definicio: >
+      La tercera font del sublim: la formació adequada de figures, tant de
+      pensament com de dicció. Inclou recursos com l'apòstrofe, la pregunta
+      retòrica, l'asíndeton i la hipèrbole.
+    usos: [8]
+
+  - id: "phrasis-gennaia"
+    grec: "γενναία φράσις"
+    transliteracio: "gennaía phrásis"
+    traduccio: "dicció noble, expressió distingida"
+    definicio: >
+      La quarta font del sublim: l'elecció de paraules nobles i l'ús de
+      trops i metàfores. Inclou la selecció lèxica (eklogḗ onomátōn) i
+      l'expressió figurada i creativa.
+    usos: [8]
+
+  - id: "synthesis"
+    grec: "σύνθεσις"
+    transliteracio: "sýnthesis"
+    traduccio: "composició, disposició de les paraules"
+    definicio: >
+      La cinquena font del sublim: l'arranjament harmoniós i digne de les
+      paraules, que produeix grandesa a través del ritme, la cadència i
+      l'estructura de la frase.
+    usos: [8]
+
+  - id: "physis"
+    grec: "φύσις"
+    transliteracio: "phýsis"
+    traduccio: "natura, talent natural"
+    definicio: >
+      El do innat que és fonament de tota grandesa literària. Pseudo-Longí
+      defensa que natura i art (tékhne) són complementàries: la natura és
+      com la bona fortuna, i l'art com el bon consell. Sense mètode, el
+      geni natural és inestable i arriscat.
+    usos: [2, 9]
+
+  - id: "tekhne"
+    grec: "τέχνη"
+    transliteracio: "tékhne"
+    traduccio: "art, tècnica, mètode"
+    definicio: >
+      El coneixement metòdic que complementa el talent natural. El tractat
+      mateix és un exercici de tékhne: sistematitzar les fonts del sublim.
+      Pseudo-Longí argumenta contra els qui creuen que el sublim és
+      purament natural i no es pot ensenyar.
+    usos: [2]
+
+  - id: "oidein"
+    grec: "οἰδεῖν"
+    transliteracio: "oideîn"
+    traduccio: "inflor, ampul·lositat"
+    definicio: >
+      Un dels vicis que imiten falsament el sublim: l'estil hinxat i buit
+      que pretén ser grandiós però resulta ridícul. És el defecte més
+      difícil d'evitar perquè tots els qui aspiren a la grandesa hi cauen
+      fàcilment. Oposat al veritable hýpsos.
+    usos: [3]
+
+  - id: "meirakiodes"
+    grec: "μειρακιῶδες"
+    transliteracio: "meirakiôdes"
+    traduccio: "puerilitat, afectació"
+    definicio: >
+      Segon vici oposat al sublim: l'estil afectat i pedant, propi
+      d'escolars, que per excés d'elaboració cau en la frivolitat. Neix
+      del desig d'originalitat i elegància però degenera en artificiositat.
+    usos: [3]
+
+  - id: "parenthyrson"
+    grec: "παρένθυρσον"
+    transliteracio: "parénthyrson"
+    traduccio: "fals entusiasme, passió fora de lloc"
+    definicio: >
+      Terme encunyat per Tèodor: passió desmesurada o inoportuna on no
+      n'hi ha de menester, o desproporcionada on caldria moderació. Com
+      un bacant que s'embriaga sense motiu. Tercer vici oposat al sublim.
+    usos: [3]
+
+  - id: "psychron"
+    grec: "ψυχρόν"
+    transliteracio: "psykhón"
+    traduccio: "fred, trivialitat"
+    definicio: >
+      Estil mancant de calor i emoció, que cau en la banalitat per excés
+      de recerca intel·lectual. Pseudo-Longí il·lustra aquest vici amb
+      exemples de Timeu, que malgrat ser erudit sovint produeix expressions
+      puerils i fredes.
+    usos: [3, 4]
+
+  - id: "phantasia"
+    grec: "φαντασία"
+    transliteracio: "phantasía"
+    traduccio: "imatge mental, visió imaginativa"
+    definicio: >
+      La capacitat de visualitzar escenes vívides i transmetre-les a
+      l'audiència. En poesia serveix per astorar (ékplexis), en oratòria
+      per fer palpable i present allò que es descriu. Mecanisme clau
+      per assolir el sublim.
+    usos: [9]
+
+  - id: "mimesis"
+    grec: "μίμησις"
+    transliteracio: "mímesis"
+    traduccio: "imitació, emulació"
+    definicio: >
+      La imitació i emulació dels grans escriptors antics com a via cap
+      al sublim. Pseudo-Longí recomana imaginar-se davant un tribunal
+      compost per Homer, Plató i Demòstenes com a estímul per assolir
+      la grandesa.
+    usos: [9]
