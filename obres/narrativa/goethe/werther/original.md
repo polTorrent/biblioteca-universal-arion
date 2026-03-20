@@ -1,6 +1,3 @@
-# Die Leiden des jungen Werthers
-*Johann Wolfgang von Goethe*
-
 Hamburger Ausgabe, Band 6
 
 ---

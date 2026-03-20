@@ -1,0 +1,46 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Johann Wolfgang von Goethe (28 d'agost de 1749 - 22 de març de 1832), Frankfurt del Main, Sacre Imperi Romanogermànic. Escriptor, poeta, dramaturg, científic i polític alemany, figura central del moviment Sturm und Drang i del Romanticisme alemany. Va ser una de les personalitats més influents de la literatura mundial i un dels últims genis universals de la cultura occidental. A més de la literatura, va contribuir significativament a la ciència natural, especialment en òptica i botanica.",
+    "context_historic": "Visqué durant l'Aufklärung (Il·lustració alemanya), les guerres napoleòniques i la transició del feudalisme al liberalisme. La seva època es caracteritzà per la fragmentació política dels estats alemanys, el sorgiment del romanticisme com a reacció contra la Il·lustració, i l'emergència del sentiment nacional alemany.",
+    "context_obra": "Die Leiden des jungen Werthers (1774 (primera edició), revisada substancialment el 1787) - Novel·la epistolar sentimental. Inspirada en les experiències amoroses de Goethe amb Charlotte Buff a Wetzlar el 1772 i el suïcidi del seu conegut Karl Wilhelm Jerusalem el mateix any. Escrita com a catarsi personal per superar una crisi emocional. La novel·la es presenta com a edició pòstuma de cartes reals trobades després del suïcidi del protagonista.",
+    "influencies": [
+      "William Shakespeare",
+      "Homer",
+      "Baruch Spinoza",
+      "Jean-Jacques Rousseau",
+      "literatura francesa del s. XVIII",
+      "Johann Joachim Winckelmann",
+      "Johann Gottfried Herder"
+    ],
+    "temes_principals": [
+      "amor no correspost i passió destructiva",
+      "conflicte entre individu i societat",
+      "crítica a les convencions socials burgeses",
+      "idealització de la natura com a refugi",
+      "melancolía i sentiment tràgic de l'existència",
+      "suïcidi com a escape final"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Wilhelm (amic destinatari de les cartes)",
+    "[H] Personatge històric: Charlotte 'Lotte' Buff (l'estimada)",
+    "[H] Personatge històric: Albert (promès i després marit de Lotte)",
+    "[H] Personatge històric: Karl Wilhelm Jerusalem (inspiració real del protagonista)",
+    "[H] Personatge històric: Homer (referència literària constant)",
+    "[C] Referència cultural: Il·líada i Odissea d'Homer",
+    "[C] Referència cultural: Ossian de James Macpherson",
+    "[C] Referència cultural: Emília Galotti de Lessing",
+    "[C] Referència cultural: costums i festes populars alemanyes del s. XVIII",
+    "[C] Referència cultural: jerarquia social de l'Antic Règim",
+    "[C] Referència cultural: pietisme alemany",
+    "[T] Terme tècnic: Sturm und Drang",
+    "[T] Terme tècnic: Empfindsamkeit (sensibilitat)",
+    "[T] Terme tècnic: Weltschmerz (dolor del món)",
+    "[T] Terme tècnic: Briefroman (novel·la epistolar)",
+    "[T] Terme tècnic: Liebeskummer (pena d'amor)",
+    "[T] Terme tècnic: Schwärmerei (exaltació sentimental)"
+  ]
+}
