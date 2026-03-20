@@ -9,11 +9,11 @@ Traduït de l'anglès de l'autor per Biblioteca Arion
 
 M'has fet infinit, tal és el teu voler. Aquesta fràgil gerra la buides una vegada i una altra, i l'omples sempre de vida nova.
 
-Aquesta petita flauta de canya l'has portada per turons i valls, i hi has alè melodies eternament noves.
+Aquesta petita flauta de canya l'has portada per turons i valls, i hi has alat melodies eternament noves.
 
 Al toc immortal de les teves mans el meu petit cor perd els seus límits en l'alegria i dóna naixença a una expressió inefable.
 
-Els teus dons infinits em vénen només en aquestes mans tan petites. Passen les edats, i encara vesseS, i encara hi ha espai per omplir.
+Els teus dons infinits em vénen només en aquestes mans tan petites. Passen les edats, i encara vesses, i encara hi ha espai per omplir.
 
 ---
 
@@ -37,7 +37,7 @@ No sé com cantes, mestre meu! Escolto sempre en silenciosa admiració.
 
 La llum de la teva música il·lumina el món. L'alè vital de la teva música recorre el cel d'extrem a extrem. El corrent sagrat de la teva música trenca tots els obstacles de pedra i es precipita endavant.
 
-El meu cor anhela unir-se al teu cant, però lluitA en va per trobar la veu. Voldria parlar, però la paraula no es torna cançó, i exclamo desconcertat. Ai, has fet captiu el meu cor en les xarxes infinites de la teva música, mestre meu!
+El meu cor anhela unir-se al teu cant, però lluita en va per trobar la veu. Voldria parlar, però la paraula no es torna cançó, i exclamo desconcertat. Ai, has fet captiu el meu cor en les xarxes infinites de la teva música, mestre meu!
 
 ---
 
@@ -243,7 +243,7 @@ I dóna'm la força de lliurar la meva força a la teva voluntat amb amor.
 
 Quan el cor és dur i eixut, vine sobre meu amb un xàfec de misericòrdia.
 
-Quan la gràcia s'ha perdut de la vida, vine amb una esclat de cançó.
+Quan la gràcia s'ha perdut de la vida, vine amb un esclat de cançó.
 
 Quan el treball tumultuós alça el seu soroll per tots costats i em tanca del més-enllà, vine a mi, senyor meu del silenci, amb la teva pau i el teu repòs.
 
