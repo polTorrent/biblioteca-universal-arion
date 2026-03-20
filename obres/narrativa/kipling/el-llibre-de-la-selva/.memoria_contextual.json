@@ -1,0 +1,96 @@
+{
+  "traduccions": {
+    "law of the jungle": {
+      "original": "Law of the Jungle",
+      "traduccio": "Llei de la jungla",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "hunting grounds": {
+      "original": "hunting grounds",
+      "traduccio": "territori de caça",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "dewanee": {
+      "original": "dewanee",
+      "traduccio": "bogeria",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "gidur-log": {
+      "original": "Gidur-log",
+      "traduccio": "poble dels xacals",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "chief of the wolves": {
+      "original": "Chief of the Wolves",
+      "traduccio": "Cap dels llops",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "night-song": {
+      "original": "night-song",
+      "traduccio": "cant nocturn",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "due warning": {
+      "original": "due warning",
+      "traduccio": "avís previ",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Joseph Rudyard Kipling (30 de desembre de 1865 - 18 de gener de 1936), Bombai, Presidència de Bombai, Índia britànica. Escriptor i poeta britànic nascut a l'Índia colonial, considerat un dels principals cronistes de l'Imperi britànic. Va ser el primer escriptor de llengua anglesa a rebre el Premi Nobel de Literatura (1907) i el més jove guanyador fins aleshores als 42 anys. Les seves obres reflecteixen tant la fascinació com la crítica cap al colonialisme britànic.",
+    "context_historic": "Època de l'apogeu de l'Imperi britànic (1870-1914), period victorià tardà i eduardià. Context de l'imperialisme europeu, expansió colonial i confiança en la superioritat occidental. L'Índia era la 'joia de la corona' britànica, amb un complex sistema de castes i tensions entre tradició i modernització.",
+    "context_obra": "The Jungle Book (1894) - Col·lecció de contes per a infants i juvenils, literatura fantàstica amb elements de fàbula. Escrit mentre Kipling vivia a Brattleboro, Vermont (Estats Units) entre 1892-1896, després del seu matrimoni amb Caroline Balestier. Inspirat en records de la seva infantesa a l'Índia i lectures sobre vida salvatge.",
+    "influencies": [
+      "Literatura victoriana",
+      "Experiències colonials a l'Índia",
+      "Folklore i tradicions orals índies",
+      "Ballades populars angleses",
+      "Bret Harte",
+      "Mark Twain"
+    ],
+    "temes_principals": [
+      "El conflicte entre natura i civilització",
+      "El creixement personal i la iniciació",
+      "La lleialtat i l'amistat",
+      "L'ordre social i les lleis naturals",
+      "La supervivència i adaptació"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Mowgli",
+    "[H] Personatge històric: Baloo l'ós",
+    "[H] Personatge històric: Bagheera la pantera",
+    "[H] Personatge històric: Shere Khan el tigre",
+    "[H] Personatge històric: Akela el llop",
+    "[H] Personatge històric: Kaa la serp piton",
+    "[H] Personatge històric: Rikki-Tikki-Tavi la mangosta",
+    "[H] Personatge històric: Toomai",
+    "[C] Referència cultural: Vida tribal i castes de l'Índia",
+    "[C] Referència cultural: Geografia del subcontinent indi",
+    "[C] Referència cultural: Fauna i flora tropical",
+    "[C] Referència cultural: Tradicions orals i folklore indi",
+    "[C] Referència cultural: Sistema colonial britànic",
+    "[C] Referència cultural: Conceptes hinduistes sobre dharma i karma",
+    "[T] Terme tècnic: Seeonee Hills",
+    "[T] Terme tècnic: Bandar-log (poble dels micos)",
+    "[T] Terme tècnic: Lukannon (illa de foques)",
+    "[T] Terme tècnic: Terminologia hindi i urdu",
+    "[T] Terme tècnic: Noms d'animals en llengües índies"
+  ]
+}
