@@ -1,0 +1,50 @@
+{
+  "sessio_id": "firdawsí-shahnameh:-rostam-i--2026-03-20",
+  "obra": {
+    "autor": "Firdawsí",
+    "titol": "Shahnameh: Rostam i Sohrab",
+    "llengua": "persa"
+  },
+  "timestamps": {
+    "inici": "2026-03-20T19:15:04.479281",
+    "ultima_activitat": "2026-03-20T19:23:45.534331"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 11,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5"
+    ],
+    "en_curs": "chunk_6",
+    "pendents": [
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[19:16:32] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:18:38] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:19:23] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:21:36] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:23:45] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[19:15:51] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='persa', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
