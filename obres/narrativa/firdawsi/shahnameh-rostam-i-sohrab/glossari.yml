@@ -1,0 +1,123 @@
+# Glossari — Shahnameh: Rostam i Sohrab
+# Termes clau del text original persa amb transliteració i traducció al català
+
+termes:
+  - original: "رستم"
+    transliteracio: "Rostam"
+    traduccio: "Rostam"
+    categoria: "nom propi"
+    nota: "Heroi llegendari d'Iran, fill de Zal i Rudabeh. El guerrer més gran del Shahnameh."
+
+  - original: "سهراب"
+    transliteracio: "Sohrab"
+    traduccio: "Sohrab"
+    categoria: "nom propi"
+    nota: "Fill de Rostam i Tahmineh, guerrer jove i valent que mor a mans del seu pare sense que cap dels dos conegui la identitat de l'altre."
+
+  - original: "شاهنامه"
+    transliteracio: "Shahnameh"
+    traduccio: "Llibre dels Reis"
+    categoria: "títol"
+    nota: "Epopeia nacional persa escrita per Firdawsí cap al 1010 dC."
+
+  - original: "تهمینه"
+    transliteracio: "Tahmineh"
+    traduccio: "Tahmineh"
+    categoria: "nom propi"
+    nota: "Princesa de Samangan, mare de Sohrab i esposa de Rostam."
+
+  - original: "افراسیاب"
+    transliteracio: "Afrasiyab"
+    traduccio: "Afrasiyab"
+    categoria: "nom propi"
+    nota: "Rei de Turan, enemic ancestral d'Iran. Envia Sohrab contra l'exèrcit iranià."
+
+  - original: "کاوس"
+    transliteracio: "Kavus"
+    traduccio: "Kavus"
+    categoria: "nom propi"
+    nota: "Xah d'Iran (Kay Kavus), monarca sovint imprudent que governa durant l'episodi."
+
+  - original: "هومان"
+    transliteracio: "Human"
+    traduccio: "Human"
+    categoria: "nom propi"
+    nota: "Guerrer turanià enviat per Afrasiyab per acompanyar Sohrab."
+
+  - original: "بارمان"
+    transliteracio: "Barman"
+    traduccio: "Barman"
+    categoria: "nom propi"
+    nota: "Guerrer turanià enviat juntament amb Human per vigilar Sohrab."
+
+  - original: "زال"
+    transliteracio: "Zal"
+    traduccio: "Zal"
+    categoria: "nom propi"
+    nota: "Pare de Rostam, criat pel Simurgh (ocell mític)."
+
+  - original: "توران"
+    transliteracio: "Turan"
+    traduccio: "Turan"
+    categoria: "topònim"
+    nota: "Territori dels enemics d'Iran, governat per Afrasiyab."
+
+  - original: "ایران"
+    transliteracio: "Iran"
+    traduccio: "Iran"
+    categoria: "topònim"
+    nota: "El regne iranià, escenari principal de l'epopeia."
+
+  - original: "سمنگان"
+    transliteracio: "Samangan"
+    traduccio: "Samangan"
+    categoria: "topònim"
+    nota: "Ciutat on Rostam coneix Tahmineh i on neix Sohrab."
+
+  - original: "دژ سپید"
+    transliteracio: "Dezh-e Sepid"
+    traduccio: "Fortalesa Blanca"
+    categoria: "topònim"
+    nota: "Fortalesa conquistada per Sohrab al començament de la seva campanya."
+
+  - original: "رخش"
+    transliteracio: "Rakhsh"
+    traduccio: "Rakhsh"
+    categoria: "nom propi"
+    nota: "Cavall llegendari de Rostam, reconegut per Sohrab com a senyal d'identitat."
+
+  - original: "پهلوان"
+    transliteracio: "pahlavan"
+    traduccio: "campió / guerrer"
+    categoria: "vocabulari"
+    nota: "Títol honorífic per als grans guerrers de l'epopeia."
+
+  - original: "یزدان"
+    transliteracio: "Yazdan"
+    traduccio: "Déu"
+    categoria: "vocabulari"
+    nota: "Terme persa per referir-se a Déu, usat en el to religiós del poema."
+
+  - original: "دیو"
+    transliteracio: "div"
+    traduccio: "dimoni / div"
+    categoria: "vocabulari"
+    nota: "Criatura maligna de la mitologia persa."
+
+  - original: "نوش‌دارو"
+    transliteracio: "nushdaru"
+    traduccio: "antídot / elixir"
+    categoria: "vocabulari"
+    nota: "Remei guaridor que Rostam demana a Kavus per salvar Sohrab, però arriba massa tard."
+
+  - original: "بازوبند"
+    transliteracio: "bazuband"
+    traduccio: "braçalet / armilla"
+    categoria: "objecte"
+    nota: "Braçalet que Rostam dona a Tahmineh perquè el porti el seu fill com a senyal de reconeixement."
+
+  - original: "رزم"
+    transliteracio: "razm"
+    traduccio: "combat / batalla"
+    categoria: "vocabulari"
+    nota: "Terme recurrent per als enfrontaments bèl·lics del poema."
