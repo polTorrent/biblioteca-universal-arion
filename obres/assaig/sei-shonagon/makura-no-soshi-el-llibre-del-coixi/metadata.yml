@@ -15,6 +15,7 @@ obra:
     gènere zuihitsu (随筆, «seguir el pinzell»), el text recull observacions,
     llistes, anècdotes cortesanes i reflexions estètiques amb una prosa elegant
     i plena d'enginy. Selecció de 30 seccions representatives.
+  categoria: "assaig"
   temes:
     - estètica japonesa
     - vida cortesana Heian
@@ -23,6 +24,9 @@ obra:
     - okashi (encant, gràcia)
     - natura
     - sensibilitat
+  font_original:
+    url: "https://ja.wikisource.org/wiki/枕草子"
+    descripcio: "Text japonès clàssic a Wikisource japonès, edició Sankanbon"
 tradicio_textual:
   versions_principals:
     - llengua: japonès clàssic
@@ -37,10 +41,10 @@ tradicio_textual:
   edicio_base: "Sankanbon (三巻本), seguint l'edició de Hagitani Boku (萩谷朴)"
 seccions: 30
 estadistiques:
-  paraules_original: 2100
-  paraules_traduccio: 0
+  paraules_original: 379
+  paraules_traduccio: 1899
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 10
 revisio:
   estat: "pendent"
   qualitat: 0
