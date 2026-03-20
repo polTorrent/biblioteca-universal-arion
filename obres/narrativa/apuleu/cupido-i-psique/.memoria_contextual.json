@@ -1,0 +1,51 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Lucius Apuleius Madaurensis (c. 124 - c. 170 d.C.), Madaura, Numídia (actual Algèria). Escriptor, orador i filòsof romà d'origen africà, educat a Cartago i Atenes. Va ser iniciat als misteris d'Isis i va desenvolupar una carrera com a advocat i filòsof platònic. És considerat l'últim gran prosista de la literatura llatina clàssica.",
+    "context_historic": "Segle II d.C., època dels emperadors Antonins, període de pau i prosperitat romana. Renaixement cultural amb síntesi entre tradicions gregues, romanes i orientals. Expansió dels cultes mistèrics i del neoplatonisme.",
+    "context_obra": "Metamorphoses (Cupido et Psyche, Libri IV-VI) (c. 160-170 d.C.) - Novel·la al·legòrica intercalada / conte màgic. Història narrada com a relat intercalat dins de 'L'ase d'or', explicada per una vella a una jove segrestada. Serveix com a al·legoria de l'ànima humana i el seu camí vers la divinitat.",
+    "influencies": [
+      "Platonisme",
+      "Cultes mistèrics d'Isis",
+      "Retòrica asiàtica",
+      "Literatura milèsia",
+      "Filosofia estoica"
+    ],
+    "temes_principals": [
+      "Amor diví vs amor terrenal",
+      "Proves iniciàtiques de l'ànima",
+      "Bellesa i gelosia",
+      "Curiositat i transgressió",
+      "Redempció i purificació"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Venus",
+    "[H] Personatge històric: Cupido/Amor",
+    "[H] Personatge històric: Psique",
+    "[H] Personatge històric: Júpiter",
+    "[H] Personatge històric: Zèfir",
+    "[H] Personatge històric: Pan",
+    "[H] Personatge històric: Ceres",
+    "[H] Personatge històric: Juno",
+    "[H] Personatge històric: Prosèrpina",
+    "[H] Personatge històric: Plutó",
+    "[C] Referència cultural: Culte a Venus",
+    "[C] Referència cultural: Misteris d'Isis",
+    "[C] Referència cultural: Geografia de l'Hades",
+    "[C] Referència cultural: Rituals de bellesa romana",
+    "[C] Referència cultural: Oracles i profecies",
+    "[C] Referència cultural: Banquets divins",
+    "[C] Referència cultural: Metamorfosis ovidiana",
+    "[T] Terme tècnic: pulchritudo",
+    "[T] Terme tècnic: forma",
+    "[T] Terme tècnic: numen",
+    "[T] Terme tècnic: sacrarium",
+    "[T] Terme tècnic: mysteria",
+    "[T] Terme tècnic: apotheosis",
+    "[T] Terme tècnic: pietas",
+    "[T] Terme tècnic: religio"
+  ]
+}
