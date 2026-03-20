@@ -1,6 +1,3 @@
-# Σαπφώ — Ἀποσπάσματα
-
-Selecció de 30 fragments i poemes de Safo de Lesbos (c. 630 – c. 570 aC).
 Numeració segons l'edició Lobel-Page / Voigt (LP/V).
 Text en grec antic (dialecte eòlic de Lesbos), domini públic.
 
