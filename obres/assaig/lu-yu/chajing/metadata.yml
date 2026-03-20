@@ -7,10 +7,12 @@ obra:
   any_original: "c. 760 dC"
   any_traduccio: 2026
   llengua_original: "xinès"
+  categoria: "assaig"
   descripcio: "Primer tractat sistemàtic sobre el te, considerat el text fundacional de la cultura del te. Dividit en deu capítols, cobreix l'origen, els estris, l'elaboració, els atuells, la cocció, la beguda, les fonts històriques, les regions productores, les simplificacions i la representació visual del te."
+  font_original: "https://zh.wikisource.org/wiki/%E8%8C%B6%E7%B6%93"
 seccions: 10
 estadistiques:
-  paraules_original: 0
+  paraules_original: 7044
   paraules_traduccio: 0
   notes: 0
   termes_glossari: 0
