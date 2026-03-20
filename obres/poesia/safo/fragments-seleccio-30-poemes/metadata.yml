@@ -7,7 +7,9 @@ obra:
   any_original: "c. 630–570 aC"
   any_traduccio: 2026
   llengua_original: "grec"
+  categoria: "poesia"
   descripcio: "Selecció de 30 fragments i poemes de Safo de Lesbos, la poeta lírica grega per excel·lència. Inclou l'Himne a Afrodita (fr. 1), el cèlebre fragment 31 (Φαίνεταί μοι), poemes nupcials (epitalamis), fragments amorosos i el poema de la mitjanit (fr. 168B). Text segons l'edició Lobel-Page / Voigt."
+  font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0199"
 seccions: 30
 estadistiques:
   paraules_original: 980
