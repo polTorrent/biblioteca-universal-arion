@@ -1,0 +1,103 @@
+# Glossari — Quanta terra necessita un home? i altres contes
+# Lev Tolstoi — Termes clau rus-català
+
+termes:
+  - original: "земля"
+    transliteracio: "zemlià"
+    traduccio: "terra"
+    nota: "Mot central del conte principal; simbolitza tant la propietat com la cobdícia"
+
+  - original: "мужик"
+    transliteracio: "muzhik"
+    traduccio: "pagès, camperol"
+    nota: "Home del camp rus, classe social baixa"
+
+  - original: "десятина"
+    transliteracio: "desiatina"
+    traduccio: "desiatina"
+    nota: "Unitat de mesura agrària russa (~1,09 hectàrees)"
+
+  - original: "барин / барыня"
+    transliteracio: "barin / barýnia"
+    traduccio: "senyor / senyora"
+    nota: "Terratinent noble"
+
+  - original: "община"
+    transliteracio: "obxina"
+    traduccio: "comuna, comunitat rural"
+    nota: "Sistema col·lectiu de propietat de la terra a la Rússia tsarista"
+
+  - original: "старшина"
+    transliteracio: "starxinà"
+    traduccio: "cap, ancià"
+    nota: "Líder de la comunitat baixkira al conte"
+
+  - original: "кумыс"
+    transliteracio: "kumís"
+    traduccio: "kumís"
+    nota: "Beguda fermentada de llet d'euga, típica dels pobles de la estepa"
+
+  - original: "кибитка"
+    transliteracio: "kibítka"
+    traduccio: "iurta, tenda de feltre"
+    nota: "Habitatge nòmada dels baixkirs"
+
+  - original: "башкирцы"
+    transliteracio: "baixkírtsi"
+    traduccio: "baixkirs"
+    nota: "Poble turc de la zona dels Urals"
+
+  - original: "черт"
+    transliteracio: "txort"
+    traduccio: "dimoni, diable"
+    nota: "Figura sobrenatural que tempta Pakhom al conte principal"
+
+  - original: "Пахом"
+    transliteracio: "Pakhom"
+    traduccio: "Pakhom"
+    nota: "Protagonista de «Quanta terra necessita un home?»"
+
+  - original: "смерть"
+    transliteracio: "smert"
+    traduccio: "mort"
+    nota: "Tema central a «Tres morts» (Три смерти)"
+
+  - original: "ямщик"
+    transliteracio: "iamxtxik"
+    traduccio: "cotxer, conductor de carruatge"
+    nota: "Personatge clau a «Tres morts»"
+
+  - original: "странник / паломник"
+    transliteracio: "stránnik / palómnik"
+    traduccio: "pelegrí"
+    nota: "Personatge central a «Dos vells» (Два старика)"
+
+  - original: "Иерусалим"
+    transliteracio: "Ierusalim"
+    traduccio: "Jerusalem"
+    nota: "Destinació del pelegrinatge a «Dos vells»"
+
+  - original: "Ангел"
+    transliteracio: "Ànguel"
+    traduccio: "àngel"
+    nota: "Personatge central a «De què viuen els homes» (Чем люди живы)"
+
+  - original: "сапожник"
+    transliteracio: "sapózhnik"
+    traduccio: "sabater"
+    nota: "Ofici del protagonista a «De què viuen els homes»"
+
+  - original: "свечка"
+    transliteracio: "svétxka"
+    traduccio: "candela, espelma"
+    nota: "Títol i símbol del darrer conte"
+
+  - original: "приказчик"
+    transliteracio: "prikàztxik"
+    traduccio: "administrador, capatàs"
+    nota: "L'administrador opressor que apareix en diversos contes"
+
+  - original: "изба"
+    transliteracio: "izbà"
+    traduccio: "isba, cabana de fusta"
+    nota: "Casa tradicional russa de fusta"
