@@ -1,8 +1,15 @@
+# Primero Sueño
 **Autor:** Sor Juana Inés de la Cruz
-**Font:** [wikisource](https://es.wikisource.org/wiki/Primero_Sue%C3%B1o)
+**Font:** [wikisource](https://es.wikisource.org/wiki/Primero%20Sue%C3%B1o)
 **Llengua:** castellà
 
 ---
+
+Primero Sueño
+de Sor Juana Inés de la Cruz
+Descargar como    Primero SueñoPrimero SueñoSor Juana Inés de la Cruz
+
+ Edición de Antonio Alatorre
 
 Piramidal, funesta, de la tierra
 
@@ -800,7 +807,7 @@ que un hemistiquio solo
 
 de los que le dictó propicio Apolo:
 
-según de Homero, digo, la sentencia,
+según de ro, digo, la sentencia,
 
 las Pirámides fueron materiales
 
