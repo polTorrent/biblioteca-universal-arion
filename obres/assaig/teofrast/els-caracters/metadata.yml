@@ -3,7 +3,7 @@ obra:
   titol_original: Χαρακτήρες
   autor: Teofrast
   autor_original: Θεόφραστος
-  traductor: Editorial Clàssica
+  traductor: Biblioteca Arion
   any_original: c. 319 aC
   any_traduccio: 2026
   llengua_original: grec
@@ -12,31 +12,13 @@ obra:
   descripcio: Trenta breus retrats de tipus morals de la societat atenenca, des de
     l'adulador fins a l'avar. Obra fundacional de la caracterologia i la literatura
     de costums.
-  estadistiques:
-    paraules_traduccio: 795
 seccions: 30
 estadistiques:
   paraules_original: 7040
-  paraules_traduccio: 0
+  paraules_traduccio: 7850
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 36
 revisio:
   estat: revisat
-  qualitat: 5.5
-  data_revisio: '2026-03-17'
-avaluacio_final:
-  data: '2026-03-17T08:20:29.845774'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 574
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 573
+  qualitat: 8.0
+  data_revisio: '2026-03-20'
