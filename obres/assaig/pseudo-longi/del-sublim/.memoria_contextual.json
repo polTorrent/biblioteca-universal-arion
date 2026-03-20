@@ -1,0 +1,50 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Pseudo-Longí (autor anònim) (incert (probablement segle I-III d.C.)), incert (probablement zona grega oriental de l'Imperi Romà). Autor anònim d'identitat desconeguda, tradicionalment identificat erròniament amb Cassi Longí. Era probablement un retòric i crític literari grec d'època imperial romana. La seva obra revela un profund coneixement de la literatura grega clàssica i de les tècniques retòriques.",
+    "context_historic": "Imperi Romà d'època altoimperial (segle I-III d.C.), període de la Segona Sofística, quan la cultura grega clàssica va experimentar un renaixement sota el domini romà. Època de gran activitat retòrica i literària.",
+    "context_obra": "Περὶ ὕψους (Peri hypsous) (incert (segle I-III d.C.)) - tractat de crítica literària i retòrica. Escrit com a resposta crítica al tractat sobre el sublim de Cecili de Calacte, dirigit a Postumi Terencià. Busca definir i explicar com assolir l'excel·lència literària o 'sublim'.",
+    "influencies": [
+      "retòrica clàssica grega",
+      "tradició crítica aristotèlica",
+      "escola peripatètica",
+      "Cecili de Calacte (com a oponent)",
+      "Homer i els grans poetes arcaics"
+    ],
+    "temes_principals": [
+      "definició del sublim literari",
+      "les cinc fonts del sublim",
+      "crítica dels defectes estilístics",
+      "anàlisi d'exemples d'autors clàssics",
+      "relació entre geni natural i tècnica"
+    ]
+  },
+  "notes_pendents": [
+    "[H] Personatge històric: Cecili de Calacte",
+    "[H] Personatge històric: Postumi Terencià",
+    "[H] Personatge històric: Homer",
+    "[H] Personatge històric: Safo",
+    "[H] Personatge històric: Píndar",
+    "[H] Personatge històric: Èsquil",
+    "[H] Personatge històric: Sòfocles",
+    "[H] Personatge històric: Eurípides",
+    "[H] Personatge històric: Herodot",
+    "[H] Personatge històric: Tucídides",
+    "[H] Personatge històric: Demòstenes",
+    "[H] Personatge històric: Ciceró",
+    "[H] Personatge històric: Plató",
+    "[C] Referència cultural: mitologia grega",
+    "[C] Referència cultural: història d'Atenes clàssica",
+    "[C] Referència cultural: retòrica àtica",
+    "[C] Referència cultural: poesia lírica arcaica",
+    "[C] Referència cultural: tragèdia grega",
+    "[C] Referència cultural: historiografia clàssica",
+    "[T] Terme tècnic: ὕψος (hypsos - sublim)",
+    "[T] Terme tècnic: μεγαλοφροσύνη (megalophrosyne - grandesa d'esperit)",
+    "[T] Terme tècnic: σχήματα (schemata - figures retòriques)",
+    "[T] Terme tècnic: λέξις (lexis - dicció)",
+    "[T] Terme tècnic: σύνθεσις (synthesis - composició)"
+  ]
+}
