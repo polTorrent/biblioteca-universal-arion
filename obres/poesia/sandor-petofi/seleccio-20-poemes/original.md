@@ -1,5 +1,3 @@
-# Válogatott versek — Petőfi Sándor
-
 ## 1. Nemzeti dal
 
 *(Pest, 1848. március 13.)*
