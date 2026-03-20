@@ -1,4 +1,3 @@
-# 茶經
 **Autor:** 陸羽 (Lu Yu)
 **Font:** [Wikisource](https://zh.wikisource.org/wiki/茶經)
 **Llengua:** xinès clàssic
