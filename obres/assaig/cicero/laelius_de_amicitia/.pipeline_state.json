@@ -1,0 +1,98 @@
+{
+  "sessio_id": "ciceró-laelius-de-amicitia-2026-03-20",
+  "obra": {
+    "autor": "Ciceró",
+    "titol": "Laelius de Amicitia",
+    "llengua": "llatí"
+  },
+  "timestamps": {
+    "inici": "2026-03-20T13:52:15.259083",
+    "ultima_activitat": "2026-03-20T14:19:41.730720"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 47,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13",
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21"
+    ],
+    "en_curs": "chunk_22",
+    "pendents": [
+      "chunk_23",
+      "chunk_24",
+      "chunk_25",
+      "chunk_26",
+      "chunk_27",
+      "chunk_28",
+      "chunk_29",
+      "chunk_30",
+      "chunk_31",
+      "chunk_32",
+      "chunk_33",
+      "chunk_34",
+      "chunk_35",
+      "chunk_36",
+      "chunk_37",
+      "chunk_38",
+      "chunk_39",
+      "chunk_40",
+      "chunk_41",
+      "chunk_42",
+      "chunk_43",
+      "chunk_44",
+      "chunk_45",
+      "chunk_46",
+      "chunk_47"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 1.04,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[13:54:59] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:55:34] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:56:09] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:56:50] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:57:24] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:57:42] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:58:27] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:59:05] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:59:44] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:00:20] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:04:09] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:08:17] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:09:56] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:13:21] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:14:51] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:19:00] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:19:41] Error chunk 21: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[13:54:28] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
