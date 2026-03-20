@@ -171,7 +171,7 @@ vegada que era impossible quedar-se al llit i que el més assenyat seria
 sacrificar-ho tot, encara que només existís la més petita esperança
 d'alliberar-se així del llit. Però alhora no va oblidar recordar-se de
 tant en tant que era molt millor la reflexió tranquil·la i sereníssima
-que no pas les decisions deseserades. En aquests moments dirigia els
+que no pas les decisions desesperades. En aquests moments dirigia els
 ulls tan agudament com podia cap a la finestra, però malauradament de la
 vista de la boira matinal, que fins i tot amagava l'altra banda del
 carrer estret, se'n podia treure poca confiança i alegria. «Ja són les
@@ -180,7 +180,7 @@ les set i encara hi ha aquesta boira.» I durant una estona va romandre
 quiet, amb la respiració feble, com si potser esperés de l'absolut
 silenci el retorn de les circumstàncies reals i evidents.
 
-Pero després es va dir: «Abans que donin un quart per les vuit, he de
+Però després es va dir: «Abans que donin un quart per les vuit, he de
 sortir completament del llit sense falta. A més, abans d'aquella hora
 també vindrà algú de la botiga a preguntar per mi, perquè la botiga
 s'obre abans de les set.» I es va posar a balancejar tot el cos
@@ -355,7 +355,7 @@ al metge. Gregor està malalt. De pressa, pel metge. Has sentit parlar
 Gregor ara?» «Era una veu d'animal,» digué l'apoderat, sorprenentment
 baixet en comparació amb els crits de la mare. «Anna! Anna!», cridà el
 pare a través de l'antesala cap a la cuina i batà les mans, «aneu a
-buscar un serrallers immediatament!» I ja corrien les dues noies amb les
+buscar un serraller immediatament!» I ja corrien les dues noies amb les
 faldilles que remenaven per l'antesala —com s'havia vestit la germana
 tan de pressa?— i obriren la porta de l'apartament d'una revolada. No es
 va sentir ni que tanquessin la porta; segurament l'havien deixat oberta,
@@ -413,7 +413,7 @@ mare —que era aquí malgrat la presència de l'apoderat, amb els cabells
 encara despentinats de la nit, alts i esborrissats— primer mirà el pare
 amb les mans ajuntades, després anà dos passos cap a en Gregor i caigué
 enmig de les seves faldes que s'estenien al seu voltant, amb el rostre
-completament introbalbe, enfonsat al pit. El pare tancà el puny amb
+completament introbable, enfonsat al pit. El pare tancà el puny amb
 expressió hostil, com si volgués empènyer en Gregor de tornada cap a la
 seva habitació, llavors mirà insegur per la sala d'estar, després
 s'ombrejà els ulls amb les mans i plorà, fent tremolar el seu pit
@@ -696,7 +696,7 @@ també devien estar ja completament curades, ja no sentia cap impediment,
 s'estranyava d'això i va pensar en com feia més d'un mes s'havia fet un
 petit tall al dit amb el ganivet, i com aquesta ferida encara li havia
 fet prou mal l'abans-d'ahir. «Ara tindré menys sensibilitat?», va
-pensar, i ja xuclavaavidament el formatge, cap al qual se sentia atret
+pensar, i ja xuclava àvidament el formatge, cap al qual se sentia atret
 immediatament i amb força per sobre de tots els altres aliments.
 Ràpidament, un rere l'altre i amb els ulls llagrimejant de satisfacció,
 va devorar el formatge, la verdura i la salsa; els aliments frescos, en
@@ -712,7 +712,7 @@ se li havia arrodonit una mica, i allà a l'estret lloc gairebé no podia
 respirar. Amb petits atacs d'ofec va mirar amb els ulls una mica sortits
 com la germana, que no sospitava res, amb una escombra no només va
 escombrar les restes sinó fins i tot els aliments que Gregor ni havia
-tocat, com si també aquests ja no servissín, i com ho va tirar tot de
+tocat, com si també aquests ja no servissin, i com ho va tirar tot de
 pressa en un cubell que va tancar amb una tapa de fusta, després del
 qual se'n va endur tot. Tan bon punt es va girar, Gregor ja va sortir de
 sota el canapè i es va estirar i inflar.
@@ -1112,7 +1112,7 @@ silenci, potser això era bon senyal. Aleshores va sonar el timbre. La
 minyona era, naturalment, tancada a la cuina i la Grete havia d'anar a
 obrir. El pare havia arribat. «Què ha passat?» van ser les seves
 primeres paraules; l'aspecte de la Grete li ho havia revelat tot, sens
-dubte. La Grete va respondre amb veu sorda, evidentment estava apretant
+dubte. La Grete va respondre amb veu sorda, evidentment estava estrenyent
 la cara contra el pit del pare: «La mare s'ha desmaiat, però ja està
 millor. En Gregor ha tingut un atac.» «Ja m'ho esperava», va dir el
 pare, «sempre us ho he dit, però vosaltres, les dones, no voleu
@@ -1193,7 +1193,7 @@ darrera mirada va veure encara com la porta de la seva habitació s'obria
 de bat a bat, i davant la germana que cridava la mare sortia corrents,
 en camisa, perquè la germana l'havia desvestida per donar-li llibertat
 per respirar en el desmai, com després la mare corria cap al pare i pel
-camí les faldilles desfermat se li anaven caient a terra una rere
+camí les faldilles desfermades se li anaven caient a terra una rere
 l'altra, i com ensopegant amb les faldilles es llançava damunt del pare
 i l'abraçava, en unió total amb ell —però ja la vista de Gregor fallava—
 i amb les mans al clatell del pare li demanava clemència per la vida de
@@ -1224,7 +1224,7 @@ completament diferent que abans.
 
 És cert que ja no eren les converses animades dels temps passats, en les
 quals Gregor sempre havia pensat amb una certa enyorança quan, cansat,
-s'havia hagut de llençar al llit humit en les petites habitacions
+s'havia hagut de llançar al llit humit en les petites habitacions
 d'hotel. Ara tot transcorria generalment en gran silenci. El pare
 s'adormia aviat després del sopar en la seva butaca; la mare i la
 germana es recomanaven mútuament silenci; la mare cosia, corbada molt
@@ -1265,7 +1265,7 @@ sí que és vida. Aquesta és la pau dels meus vells dies.» I recolzat en
 les dues dones, s'alçava feixugament, com si fos per ell mateix la
 càrrega més gran, es deixava conduir per les dones fins a la porta, allà
 les acomiadava amb un gest de la mà i continuava ja sol, mentre la mare
-i la germana llençaven ràpidament, l'una la costura, l'altra la ploma,
+i la germana llançaven ràpidament, l'una la costura, l'altra la ploma,
 per córrer darrere del pare i continuar ajudant-lo.
 
 Qui en aquesta família exhausta i extenuada tenia temps per ocupar-se de
@@ -1393,16 +1393,16 @@ instal·lat aquí, a tota l'administració de la casa, i especialment a la
 cuina. No toleraven trastos inútils i encara menys bruts. A més, havien
 portat en gran part els seus propis mobles. Per aquest motiu moltes
 coses havien esdevingut supèrflues, que certament no es podien vendre
-però que tampoc no volien llençar. Totes aquestes anaven a parar a
+però que tampoc no volien llançar. Totes aquestes anaven a parar a
 l'habitació de Gregor. Així com també la caixa de les cendres i la
 paperera de la cuina. Tot el que en un moment donat era inservible, la
 serventa, que sempre tenia molta pressa, simplement ho llançava a
 l'habitació de Gregor; Gregor per sort només veia la majoria de vegades
 l'objecte en qüestió i la mà que el sostenia. La serventa potser tenia
 la intenció de recuperar les coses quan tingués temps i ocasió o de
-llençar-ho tot d'una vegada, però en realitat es quedaven allà on havien
+llançar-ho tot d'una vegada, però en realitat es quedaven allà on havien
 anat a parar per la primera llançada, llevat que Gregor es bellugués
-entre els cacharrots i els posés en moviment, primer obligat perquè no
+entre els trastos i els posés en moviment, primer obligat perquè no
 hi havia cap altre lloc lliure per arrossegar-se, però després amb un
 plaer creixent, encara que després d'aquestes expedicions, mort de
 cansament i tristesa, es quedava immòbil durant hores.
