@@ -1,0 +1,25 @@
+{
+  "traduccions": {},
+  "personatges": {},
+  "decisions_estil": [],
+  "context_investigacio": {
+    "autor_bio": "Lu Yu (陸羽) (733 - 804 dC), Jingling, Hubei, Xina (dinastia Tang). Erudit i escriptor xinès de la dinastia Tang, conegut com el 'Sage del Te'. Orfe adoptat per monjos budistes, va desenvolupar un profund coneixement sobre el cultiu, preparació i consum del te. Es considera el fundador de l'art del te xinès i el primer teòric sistemàtic d'aquesta pràctica cultural.",
+    "context_historic": "Dinastia Tang (618-907), edat d'or de la literatura i cultura xineses. Període de gran expansió comercial, desenvolupament urbà i intercanvi cultural. El te es popularitza entre l'aristocràcia i els intel·lectuals com a beguda refinada i pràctica espiritual.",
+    "context_obra": "Chájīng (茶經) - El Clàssic del Te (c. 760-780 dC) - Tractat enciclopèdic, literatura tècnica i filosòfica. Escrita durant la maduresa de Lu Yu com a resposta a la creixent popularitat del te a la societat Tang. Primera sistematització completa del coneixement sobre el te, destinada tant a aficionats com a comerciants i artesans.",
+    "influencies": [
+      "Budisme zen",
+      "Filosofia taoista",
+      "Literatura clàssica xinesa",
+      "Tradicions xamàniques dels pobles del sud de Xina",
+      "Medicina tradicional xinesa"
+    ],
+    "temes_principals": [
+      "Botànica i cultiu del te",
+      "Utensilis i tècniques de preparació",
+      "Mètodes de cocció i servei",
+      "Geografia de les regions productores",
+      "Propietats medicinals i espirituals"
+    ]
+  },
+  "notes_pendents": []
+}
