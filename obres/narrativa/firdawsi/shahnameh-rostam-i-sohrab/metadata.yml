@@ -12,11 +12,11 @@ obra:
   font_original: "https://fa.wikisource.org/wiki/شاهنامه_(تصحیح_ژول_مل)"
 seccions: 10
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
-  notes: 0
-  termes_glossari: 0
+  paraules_original: 6975
+  paraules_traduccio: 9082
+  notes: 10
+  termes_glossari: 20
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: "2026-03-20"
