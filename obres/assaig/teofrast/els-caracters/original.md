@@ -1,5 +1,3 @@
-# Χαρακτήρες — Teofrast
-
 **Font**: [Βικιθήκη (Wikisource)](https://el.wikisource.org/wiki/%CE%A7%CE%B1%CF%81%CE%B1%CE%BA%CF%84%CE%AE%CF%81%CE%B5%CF%82)
 
 ---
