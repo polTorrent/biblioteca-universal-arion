@@ -1,0 +1,64 @@
+{
+  "sessio_id": "giovanni-boccaccio-decameron---seleccio-2026-03-20",
+  "obra": {
+    "autor": "Giovanni Boccaccio",
+    "titol": "Decameron - Seleccio de 10 contes",
+    "llengua": "italia"
+  },
+  "timestamps": {
+    "inici": "2026-03-20T18:31:56.817912",
+    "ultima_activitat": "2026-03-20T19:00:49.479091"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 21,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11"
+    ],
+    "en_curs": "chunk_12",
+    "pendents": [
+      "chunk_13",
+      "chunk_14",
+      "chunk_15",
+      "chunk_16",
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 1.27,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[18:33:21] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:39:55] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:41:09] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:43:16] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:43:47] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:50:39] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:57:12] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:00:12] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:00:49] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[18:32:49] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='italia', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
