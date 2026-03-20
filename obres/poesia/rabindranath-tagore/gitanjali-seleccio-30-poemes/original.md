@@ -1,4 +1,3 @@
-# Gitanjali (Song Offerings)
 ## Rabindranath Tagore (1912)
 
 *Seleccio de 30 poemes de l'edicio anglesa de 1912, traduida pel propi autor del bengali original.*
