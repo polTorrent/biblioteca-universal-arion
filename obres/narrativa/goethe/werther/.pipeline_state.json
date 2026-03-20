@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-20T19:41:43.051510",
-    "ultima_activitat": "2026-03-20T23:20:50.913552"
+    "ultima_activitat": "2026-03-20T23:55:26.172969"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -169,11 +169,11 @@
       "chunk_146",
       "chunk_147"
     ],
-    "en_curs": "chunk_118",
+    "en_curs": "chunk_137",
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 1.17,
+    "qualitat_mitjana": 1.28,
     "temps_total_min": 0.0
   },
   "errors": [
@@ -396,7 +396,19 @@
     "[23:06:09] Error chunk 110: El CLI ha retornat una resposta buida (sense contingut)",
     "[23:10:01] Error chunk 112: El CLI ha retornat una resposta buida (sense contingut)",
     "[23:17:24] Error chunk 115: El CLI ha retornat una resposta buida (sense contingut)",
-    "[23:18:11] Error chunk 116: El CLI ha retornat una resposta buida (sense contingut)"
+    "[23:18:11] Error chunk 116: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:24:24] Error chunk 119: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:31:34] Error chunk 122: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:32:08] Error chunk 123: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:32:47] Error chunk 124: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:37:31] Error chunk 126: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:48:27] Error chunk 130: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:50:04] Error chunk 131: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:50:50] Error chunk 132: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:51:24] Error chunk 133: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:53:00] Error chunk 134: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:54:45] Error chunk 135: El CLI ha retornat una resposta buida (sense contingut)",
+    "[23:55:26] Error chunk 136: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[19:43:39] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
