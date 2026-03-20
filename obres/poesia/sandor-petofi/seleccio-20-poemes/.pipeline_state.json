@@ -1,0 +1,51 @@
+{
+  "sessio_id": "sándor-petőfi-selecció-de-20-poeme-2026-03-20",
+  "obra": {
+    "autor": "Sándor Petőfi",
+    "titol": "Selecció de 20 poemes",
+    "llengua": "hongarès"
+  },
+  "timestamps": {
+    "inici": "2026-03-20T22:42:27.892492",
+    "ultima_activitat": "2026-03-20T22:56:42.203912"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 7,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 14.24
+  },
+  "errors": [
+    "[22:43:55] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:46:08] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:48:17] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:50:35] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:53:15] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:55:35] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[22:56:11] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[22:43:11] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='hongarès', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
+  ]
+}
