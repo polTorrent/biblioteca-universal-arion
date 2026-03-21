@@ -1,5 +1,3 @@
-# Cupido i Psique (Metamorfosis IV.28–VI.24)
-
 **Autor:** Lucius Apuleius Madaurensis (c. 124–170 dC)
 
 **Font:** The Latin Library (thelatinlibrary.com)
@@ -211,4 +209,3 @@ Sed Cupido iam cicatrice solida revalescens nec diutinam suae Psyches absentiam 
 [24] Nec mora, cum cena nuptialis affluens exhibetur. Accumbebat summum torum maritus Psychen gremio suo complexus. Sic et cum sua Iunone Iuppiter ac deinde per ordinem toti dei. Tunc poculum nectaris, quod vinum deorum est, Iovi quidem suus pocillator ille rusticus puer, ceteris vero Liber ministrabat, Vulcanus cenam coquebat; Horae rosis et ceteris floribus purpurabant omnia, Gratiae spargebant balsama, Musae quoque canora personabant. Tunc Apollo cantavit ad citharam, Venus suavi musicae superingressa formonsa saltavit, scaena sibi sic concinnata, ut Musae quidem chorum canerent, tibias inflaret Saturus, et Paniscus ad fistulam diceret. Sic rite Psyche convenit in manum Cupidinis et nascitur illis maturo partu filia, quam Voluptatem nominamus".
 
 [25] Sic captivae puellae delira et temulenta illa narrabat anicula; sed astans ego non procul dolebam mehercules quod pugillares et stilum non habebam qui tam bellam fabellam praenotarem. Ecce confecto nescio quo gravi proelio latrones adveniunt onusti, non nulli tamen immo promptiores vulneratis domi relictis et plagas recurantibus ipsi ad reliquas occultatas in quadam spelunca sarcinas, ut aiebant, proficisci gestiunt. Prandioque raptim tuburcinato me et equum vectores rerum illarum futuros fustibus exinde tundentes producunt in viam multisque clivis et anfractibus fatigatos prope ipsam vesperam perducunt ad quampiam speluncam, unde multis onustos rebus rursum ne breviculo quidem tempore refectos ociter reducunt. Tantaque trepidatione festinabat ut me plagis multis obtundentes propellentesque super lapidem propter viam positum deicerent, unde crebris aeque ingestis ictibus crure dextero et ungula sinistra me debilitatum aegre ad exurgendum compellunt.
-

@@ -7,13 +7,16 @@
   },
   "timestamps": {
     "inici": "2026-03-20T17:56:01.419867",
-    "ultima_activitat": "2026-03-20T18:06:04.174062"
+    "ultima_activitat": "2026-03-21T17:31:43.162817"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
-    "chunking"
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
   ],
   "chunks": {
     "total": 45,
@@ -23,10 +26,8 @@
       "chunk_3",
       "chunk_4",
       "chunk_5",
-      "chunk_6"
-    ],
-    "en_curs": "chunk_7",
-    "pendents": [
+      "chunk_6",
+      "chunk_7",
       "chunk_8",
       "chunk_9",
       "chunk_10",
@@ -65,20 +66,95 @@
       "chunk_43",
       "chunk_44",
       "chunk_45"
-    ]
+    ],
+    "en_curs": "chunk_19",
+    "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.67,
-    "temps_total_min": 0.0
+    "qualitat_mitjana": 0.3,
+    "temps_total_min": 2.42
   },
   "errors": [
     "[17:59:17] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
     "[17:59:59] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
     "[18:03:38] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
     "[18:05:21] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
-    "[18:06:04] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)"
+    "[18:06:04] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:43:47] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:45:24] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:46:02] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:46:43] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:47:21] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:48:02] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:48:40] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:52:37] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:53:11] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:56:41] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:58:10] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[14:58:54] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
+    "[15:00:34] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
+    "[15:05:09] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[15:06:46] Error chunk 19: El CLI ha retornat una resposta buida (sense contingut)",
+    "[15:08:17] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)",
+    "[15:09:06] Error chunk 21: El CLI ha retornat una resposta buida (sense contingut)",
+    "[15:10:57] Error chunk 22: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:13:48] Error chunk 1: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 2: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 4: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 5: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 6: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 7: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 8: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 10: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 11: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 13: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 14: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 15: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 16: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 18: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 19: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 20: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 21: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 22: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 23: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 24: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 25: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 26: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 27: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 28: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 29: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 30: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 31: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 32: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 33: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 34: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 35: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 36: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 37: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 38: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 39: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 40: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 41: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 42: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 43: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 44: [Errno 32] Broken pipe",
+    "[17:13:48] Error chunk 45: [Errno 32] Broken pipe",
+    "[17:13:48] Error fatal: [Errno 32] Broken pipe",
+    "[17:14:42] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:15:23] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:16:48] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:18:50] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:19:33] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:23:40] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:24:28] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:25:03] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:25:55] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:26:31] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:27:13] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:29:01] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
-    "[17:58:13] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+    "[17:58:13] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
+    "[17:13:48] Error anotació: [Errno 32] Broken pipe"
   ]
 }
