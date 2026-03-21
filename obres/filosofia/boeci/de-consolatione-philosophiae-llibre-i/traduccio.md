@@ -19,7 +19,7 @@ consola ara els fats d'aquest vell entristit.
 
 Car ha vingut inesperada, accelerada pels mals, la vellesa,
 i el dolor ha ordenat que la seva edat s'instal·lés.
-Cabells intempestius es vesssen pel cap
+Cabells intempestius es vessen pel cap
 i la pell tremola laxa sobre el cos exhaurit.
 
 Feliç la mort dels homes que no s'insereix
