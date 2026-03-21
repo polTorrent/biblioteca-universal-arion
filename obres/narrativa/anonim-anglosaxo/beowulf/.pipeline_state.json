@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T05:09:36.197177",
-    "ultima_activitat": "2026-03-17T05:36:47.388263"
+    "ultima_activitat": "2026-03-21T13:19:27.304231"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -33,12 +33,12 @@
       "chunk_13",
       "chunk_14",
       "chunk_15",
-      "chunk_16"
+      "chunk_16",
+      "chunk_17",
+      "chunk_18"
     ],
-    "en_curs": "chunk_17",
+    "en_curs": "chunk_19",
     "pendents": [
-      "chunk_18",
-      "chunk_19",
       "chunk_20",
       "chunk_21",
       "chunk_22",
@@ -68,7 +68,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 0.68,
+    "qualitat_mitjana": 1.19,
     "temps_total_min": 0.0
   },
   "errors": [
@@ -85,7 +85,19 @@
     "[05:30:37] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
     "[05:34:22] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
     "[05:36:04] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
-    "[05:36:47] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)"
+    "[05:36:47] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:52:15] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:54:06] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:54:48] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[12:58:58] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:00:37] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:01:15] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:01:54] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:02:35] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:04:16] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:08:35] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:09:13] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
+    "[13:11:08] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[05:10:20] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='anglès antic', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error"
