@@ -13,32 +13,15 @@ obra:
     no, el control de les nostres opinions i desitjos.'
   font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0236
   estadistiques:
-    paraules_traduccio: 2070
-seccions: 5
+    paraules_traduccio: 6333
+seccions: 53
 estadistiques:
-  paraules_original: 487
-  paraules_traduccio: 512
+  paraules_original: 5094
+  paraules_traduccio: 6333
   notes: 8
   termes_glossari: 5
 revisio:
   estat: revisat
-  qualitat: 6.88
-  data_revisio: '2026-03-17'
-  notes: 5/53 capítols traduïts. 3 omissions dins dels capítols traduïts pendents
-    de correcció.
-avaluacio_final:
-  data: '2026-03-17T08:07:42.337682'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 19
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 12
+  qualitat: 8.0
+  data_revisio: '2026-03-21'
+  notes: 53/53 capítols traduïts. Traducció completa de l'Enchiridion.
