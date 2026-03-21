@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-16T22:45:02.824895",
-    "ultima_activitat": "2026-03-16T22:56:49.783840"
+    "ultima_activitat": "2026-03-21T00:56:40.396557"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -43,7 +43,7 @@
       "chunk_20",
       "chunk_21"
     ],
-    "en_curs": null,
+    "en_curs": "chunk_6",
     "pendents": []
   },
   "metriques": {
@@ -93,7 +93,12 @@
     "[22:56:37] Error chunk 18: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":241,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 12am (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"ecc09b75-ea1e-444a-8ec0-9148beb444fb\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"1b6ea7c1-15b0-4071-8495-26b291c0b60c\"}\n",
     "[22:56:41] Error chunk 19: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":254,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 12am (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"486b8bc1-6d2c-4b8d-9464-991c993e8f72\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"3d32ed07-6832-4071-828c-995238008788\"}\n",
     "[22:56:45] Error chunk 20: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":281,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 12am (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"2650d146-58f4-480a-a95f-5d318669ba43\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"25d3704e-533b-40fe-b825-95b91230f9b5\"}\n",
-    "[22:56:49] Error chunk 21: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":282,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 12am (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"af1d0a72-45aa-41ee-81ec-2664247cefc1\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"c71cd0ed-a6ac-4ac8-8028-29acc07314a3\"}\n"
+    "[22:56:49] Error chunk 21: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"duration_ms\":282,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"You're out of extra usage · resets 12am (Europe/Madrid)\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"af1d0a72-45aa-41ee-81ec-2664247cefc1\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"fast_mode_state\":\"off\",\"uuid\":\"c71cd0ed-a6ac-4ac8-8028-29acc07314a3\"}\n",
+    "[00:47:13] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:49:16] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:51:20] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:53:55] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[00:56:40] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[22:47:32] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
