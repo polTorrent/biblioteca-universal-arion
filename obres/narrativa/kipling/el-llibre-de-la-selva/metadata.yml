@@ -1,32 +1,34 @@
 obra:
-  titol: "El llibre de la selva"
-  titol_original: "The Jungle Book"
-  autor: "Rudyard Kipling"
-  traductor: "Biblioteca Universal Arion (proposta comunitat)"
+  titol: El llibre de la selva
+  titol_original: The Jungle Book
+  autor: Rudyard Kipling
+  traductor: Biblioteca Universal Arion (proposta comunitat)
   any_original: 1894
   any_traduccio: 2026
-  llengua_original: "anglès"
-  descripcio: >
-    Recull de relats ambientats a la selva índia, centrats en Mowgli, un nen criat
-    per llops, i les seves aventures amb Baloo l'ós, Bagheera la pantera i Shere Khan
-    el tigre. Inclou també relats independents com «Rikki-Tikki-Tavi» i «Toomai dels
-    Elefants». Obra mestra de la narrativa al·legòrica sobre la llei, la pertinença
-    i la natura.
-  categoria: "narrativa"
-  genere: "relat / novel·la curta"
-  origen: "proposta comunitat"
-  font_original: "https://www.gutenberg.org/ebooks/236"
+  llengua_original: anglès
+  descripcio: 'Recull de relats ambientats a la selva índia, centrats en Mowgli, un
+    nen criat per llops, i les seves aventures amb Baloo l''ós, Bagheera la pantera
+    i Shere Khan el tigre. Inclou també relats independents com «Rikki-Tikki-Tavi»
+    i «Toomai dels Elefants». Obra mestra de la narrativa al·legòrica sobre la llei,
+    la pertinença i la natura.
+
+    '
+  categoria: narrativa
+  genere: relat / novel·la curta
+  origen: proposta comunitat
+  font_original: https://www.gutenberg.org/ebooks/236
+  estadistiques: {}
 seccions: 3
 contingut:
-  - "Els germans de Mowgli (Mowgli's Brothers)"
-  - "La caça de Kaa (Kaa's Hunting)"
-  - "Tigre! Tigre! (Tiger! Tiger!)"
+- Els germans de Mowgli (Mowgli's Brothers)
+- La caça de Kaa (Kaa's Hunting)
+- Tigre! Tigre! (Tiger! Tiger!)
 estadistiques:
   paraules_original: 0
   paraules_traduccio: 0
   notes: 0
   termes_glossari: 0
 revisio:
-  estat: "esborrany"
-  qualitat: 0
-  data_revisio: "2026-03-07"
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-21'

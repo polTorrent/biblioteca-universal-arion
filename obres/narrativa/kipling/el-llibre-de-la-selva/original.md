@@ -1,4 +1,3 @@
-# The Jungle Book
 **Autor:** Rudyard Kipling
 **Font:** [Project Gutenberg #236](https://www.gutenberg.org/ebooks/236)
 **Llengua:** anglès
@@ -5382,7 +5381,3 @@ Parade Song of the Camp Animals
         Serving each in his degree;
         Children of the yoke and goad,
         Pack and harness, pad and load!_
-
-
-
-
