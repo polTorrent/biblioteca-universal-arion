@@ -13,7 +13,8 @@ obra:
   categoria: narrativa
   font: The Latin Library (thelatinlibrary.com)
   font_original: https://www.thelatinlibrary.com/apuleius/apuleius4.shtml
-  estadistiques: {}
+  estadistiques:
+    paraules_traduccio: 3868
 seccions: 3
 estadistiques:
   paraules_original: 9255
@@ -22,5 +23,21 @@ estadistiques:
   termes_glossari: 0
 revisio:
   estat: revisat
-  qualitat: 0.0
+  qualitat: 5.7
   data_revisio: '2026-03-21'
+avaluacio_final:
+  data: '2026-03-21T18:14:25.102896'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 32
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 24
