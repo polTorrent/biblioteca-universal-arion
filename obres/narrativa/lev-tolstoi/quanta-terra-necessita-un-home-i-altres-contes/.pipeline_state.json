@@ -1,0 +1,86 @@
+{
+  "sessio_id": "lev-tolstoi-quanta-terra-necessi-2026-03-21",
+  "obra": {
+    "autor": "Lev Tolstoi",
+    "titol": "Quanta terra necessita un home? i altres contes breus",
+    "llengua": "rus"
+  },
+  "timestamps": {
+    "inici": "2026-03-21T17:54:26.144051",
+    "ultima_activitat": "2026-03-21T18:23:35.347313"
+  },
+  "fase_actual": "traduccio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking"
+  ],
+  "chunks": {
+    "total": 38,
+    "completats": [
+      "chunk_1",
+      "chunk_2",
+      "chunk_3",
+      "chunk_4",
+      "chunk_5",
+      "chunk_6",
+      "chunk_7",
+      "chunk_8",
+      "chunk_9",
+      "chunk_10",
+      "chunk_11",
+      "chunk_12",
+      "chunk_13",
+      "chunk_14",
+      "chunk_15"
+    ],
+    "en_curs": "chunk_16",
+    "pendents": [
+      "chunk_17",
+      "chunk_18",
+      "chunk_19",
+      "chunk_20",
+      "chunk_21",
+      "chunk_22",
+      "chunk_23",
+      "chunk_24",
+      "chunk_25",
+      "chunk_26",
+      "chunk_27",
+      "chunk_28",
+      "chunk_29",
+      "chunk_30",
+      "chunk_31",
+      "chunk_32",
+      "chunk_33",
+      "chunk_34",
+      "chunk_35",
+      "chunk_36",
+      "chunk_37",
+      "chunk_38"
+    ]
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.4,
+    "temps_total_min": 0.0
+  },
+  "errors": [
+    "[17:57:10] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:00:05] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:00:44] Error chunk 3: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:02:41] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:04:25] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:06:39] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:09:06] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:11:11] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:11:50] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:13:59] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:14:34] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:20:47] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:21:35] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[18:23:35] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)"
+  ],
+  "warnings": [
+    "[17:56:24] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
+  ]
+}
