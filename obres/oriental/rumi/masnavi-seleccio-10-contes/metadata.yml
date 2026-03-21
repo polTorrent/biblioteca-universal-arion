@@ -20,11 +20,11 @@ obra:
   genere: "poesia mística"
 seccions: 11
 estadistiques:
-  paraules_original: 4200
+  paraules_original: 4200  # selecció abreujada del Llibre Primer (original complet: ~127.000 paraules)
   paraules_traduccio: 10132
   notes: 18
   termes_glossari: 20
 revisio:
   estat: "revisat"
-  qualitat: 7.0
-  data_revisio: "2026-03-17"
+  qualitat: 7.5
+  data_revisio: "2026-03-21"
