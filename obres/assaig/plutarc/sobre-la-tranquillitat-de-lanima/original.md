@@ -1,4 +1,3 @@
-# Περὶ εὐθυμίας
 ## Plutarc (Πλούταρχος)
 
 **Font**: [Wikisource (el)](https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF_%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1%CF%82_(%CE%A0%CE%BB%CE%BF%CF%8D%CF%84%CE%B1%CF%81%CF%87%CE%BF%CF%82))

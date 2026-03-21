@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-20T15:25:04.361765",
-    "ultima_activitat": "2026-03-20T15:54:03.457471"
+    "ultima_activitat": "2026-03-21T19:40:18.516188"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -38,7 +38,7 @@
       "chunk_18",
       "chunk_19"
     ],
-    "en_curs": "chunk_20",
+    "en_curs": "chunk_19",
     "pendents": [
       "chunk_21",
       "chunk_22",
@@ -60,7 +60,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 0.58,
+    "qualitat_mitjana": 0.96,
     "temps_total_min": 0.0
   },
   "errors": [
@@ -80,7 +80,18 @@
     "[15:49:55] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
     "[15:50:30] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
     "[15:52:17] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
-    "[15:54:03] Error chunk 19: El CLI ha retornat una resposta buida (sense contingut)"
+    "[15:54:03] Error chunk 19: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:17:17] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:22:00] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:22:59] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:30:01] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:30:52] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:32:18] Error chunk 12: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:33:06] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:34:29] Error chunk 14: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:38:04] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:38:49] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[19:40:18] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[15:27:11] Error glossari: El CLI ha retornat una resposta buida (sense contingut)"
