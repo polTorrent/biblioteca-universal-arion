@@ -1,23 +1,19 @@
-*August Strindberg* (1888)
+# Fröken Julie
 
-**Font**: [Projekt Runeberg](https://runeberg.org/frkjulie/) — domini públic
+**August Strindberg** (1888)
 
----
+*Ett naturalistiskt sorgespel*
 
-## Personer
-
-- **Fröken Julie**, 25 år
-- **Jean**, Betjänt, 30 år
-- **Kristin**, Kokerska, 35 år
+Font: [Project Runeberg](https://runeberg.org/frkjulie/)
 
 ---
 
 Handlingen i Grevens kök, Midsommarnatten
 
-*Kristin står vid spisen och steker i en stekpanna; hon är klädd
+Kristin står vid spisen och steker i en stekpanna; hon är klädd
 i ljus bomullsklänning och har ett köksförkläde framför sig; Jean
 kommer in klädd i livré; bärande ett par stora ridstövlar med sporrar
-som han ställer ifrån sig på en synlig plats på golvet.*
+som han ställer ifrån sig på en synlig plats på golvet.
 
 **JEAN**
 
@@ -203,10 +199,6 @@ emellertid ha tack för mat! Det var mycket skönt!
 
 *Slår korken i buteljen*
 
----
-
----
-
 **FRöKEN**
 
 *i dörren, talar utåt.*
@@ -326,27 +318,23 @@ Var inte orolig Kristin! Jag ska inte ta din fästman ifrån dig!
 
 **PANTOMIN**:
 
-*Spelas så som om skådespelerskan verkligen vore ensam i lokalen;
+Spelas så som om skådespelerskan verkligen vore ensam i lokalen;
 vänder vid behov ryggen åt publiken; ser icke ut i salongen; brådskar
-icke som om hon vore rädd publiken skulle bli otålig.*
+icke som om hon vore rädd publiken skulle bli otålig.
 
 *Kristin ensam. Svag fiolmusik på avstånd i scottishtakt.*
 
-*Kristin gnolande efter musiken; dukar av efter Jean, diskar
-tallriken vid slaskbordet, torkar och ställer in i ett skåp.*
+Kristin gnolande efter musiken; dukar av efter Jean, diskar
+tallriken vid slaskbordet, torkar och ställer in i ett skåp.
 
-*Därpå lägger hon av sig köksförklädet, tar fram en liten spegel
+Därpå lägger hon av sig köksförklädet, tar fram en liten spegel
 ur en bordslåda, ställer den mot syrenkrukan på bordet; tänder ett
-talgljus och värmer en hårnål, varmed hon krusar håret i pannan.*
+talgljus och värmer en hårnål, varmed hon krusar håret i pannan.
 
-*Därpå ut i dörren och lyssnar. återvänder till bordet. Hittar
+Därpå ut i dörren och lyssnar. återvänder till bordet. Hittar
 frökens kvarglömda näsduk, som hon tar och luktar på; sedan breder hon
 ut den, liksom i tankarne, sträcker den, slätar den och viker den i
-fyra delar o.s.v.*
-
----
-
----
+fyra delar o.s.v.
 
 **JEAN**
 
@@ -574,8 +562,8 @@ det för vin.
 
 **JEAN**
 
-*tar fram ur islåren en ölbutelj som han drar opp; söker i
-skåpet ett glas och en talrik, samt serverar.*
+tar fram ur islåren en ölbutelj som han drar opp; söker i
+skåpet ett glas och en talrik, samt serverar.
 
 Var så artig!
 
@@ -618,8 +606,8 @@ Min härskarinnas skål!
 
 Bravo! - Nu skall ni kyssa min sko, också, så är det riktigt träffat!
 
-*Jean tvekande, men därpå djärvt fattande hennes fot som han
-kysser lätt.*
+Jean tvekande, men därpå djärvt fattande hennes fot som han
+kysser lätt.
 
 **FRöKEN**
 
@@ -828,8 +816,8 @@ Får jag se vad ni fått i ögat!
 Det var min klänningsarm som skrubbade er; sitt ner nu så ska jag
 hjälpa er!
 
-*Tar honom i armen och sätter honom; fattar hans huvud och lutar
-det bakåt; med snibben av näsduken söker hon få ut smolket*
+Tar honom i armen och sätter honom; fattar hans huvud och lutar
+det bakåt; med snibben av näsduken söker hon få ut smolket
 
 Sitt still nu; alldeles still!-
 
@@ -926,8 +914,8 @@ Tror ni?
 
 Jag fruktar nästan!
 
-*Jean djärvt fram och vill ta henne om livet för att kyssa
-henne.*
+Jean djärvt fram och vill ta henne om livet för att kyssa
+henne.
 
 **FRöKEN**
 
@@ -1316,22 +1304,18 @@ Jag svär!
 
 *Fröken ut hastigt till höger. Jean häftigt efter.*
 
----
-
----
-
 **BALETT**
 
-*Bondfolket in högtidsklädda, med blommor i hattarna; en
+Bondfolket in högtidsklädda, med blommor i hattarna; en
 fiolspelare i spetsen; en ankare svagdricka och en kutting brännvin
 sirade med grönt läggs opp på bordet; glas tagas fram. Därpå
 drickes. Sedan tar man i ring och sjunger och dansar dansleken: "Det
-kommo två fruar från skogen."*
+kommo två fruar från skogen."
 
 *När detta är gjort gå de igen sjungande.*
 
-*Fröken in ensam; ser förödelsen i köket; slår ihop händerna;
-därpå tar hon upp en pudervippa och pudrar sitt ansikte.*
+Fröken in ensam; ser förödelsen i köket; slår ihop händerna;
+därpå tar hon upp en pudervippa och pudrar sitt ansikte.
 
 **JEAN**
 
@@ -1594,8 +1578,8 @@ Så har jag lärt, och sådan är jag! Var nu inte nervös och spela
 inte fin, för nu äro vi lika goda kålsupare! - Se så min flicka lilla,
 kom så ska jag bjuda dig på ett glas extra!
 
-*öppnar bordslådan och tar fram vinbuteljen; fyller två
-begagnade glas.*
+öppnar bordslådan och tar fram vinbuteljen; fyller två
+begagnade glas.
 
 **FRöKEN**
 
@@ -1883,7 +1867,7 @@ aldrig ville bli hans hustru, men att han kunde bli hennes
 älskare. Han föreställde henne, att han ej hade lust se den kvinna han
 älskade, åtnjuta mindre aktning än han själv. På hennes förklaring att
 världens aktning icke kom henne vid, och under inflytande av sin
-passion, antog han villkoren.
+passion, antog han villkoren. 
 
 Men nu var han utestängd från sitt umgänge och hänvisades på sitt
 husliga liv, som dock icke kunde tillfredsställa honom. Jag kom till
@@ -2298,14 +2282,10 @@ Tala då vänligt till mig, Jean!
 
 En befallning låter alltid ovänlig; känn på! känn på!
 
----
-
----
-
-*Jean ensam; drar en suck av lättnad; sätter sig vid bordet; tar
+Jean ensam; drar en suck av lättnad; sätter sig vid bordet; tar
 fram annotationsbok och penna; räkna högt då och då; stumt minspel,
 tills Kristin kommer in körkklädd; med en nattkappa och en vit halsduk
-i handen.*
+i handen.
 
 **KRISTIN**
 
@@ -2332,8 +2312,8 @@ Jaa! Han har ju lovat att följa med mig till skrift i dag!
 
 Ja, det var ju så sant det! -Och där har du skruden! Så kom då!
 
-*Sätter sig; Kristin börjar klä på honom nattkappan och vita
-halsduken.*
+Sätter sig; Kristin börjar klä på honom nattkappan och vita
+halsduken.
 
 *Paus.*
 
@@ -2545,15 +2525,15 @@ Greven? Nej, det kan jag aldrig tro, för då skulle han nog ha ringt!
 
 Ja Gud hjälpe oss! Aldrig har jag varit med om slikt!
 
-*Solen har nu gått upp och lyser på parkens trätoppar; skenet
-flyttar sig småningom, tills det snett faller in genom fönsterna.*
+Solen har nu gått upp och lyser på parkens trätoppar; skenet
+flyttar sig småningom, tills det snett faller in genom fönsterna.
 
 *Jean går till dörren och ger ett tecken.*
 
 **FRöKEN**
 
-*in resklädd med en liten fågelbur höljd av en handduk och
-vilken hon ställer på en stol.*
+in resklädd med en liten fågelbur höljd av en handduk och
+vilken hon ställer på en stol.
 
 Nu är jag färdig!
 
@@ -2716,8 +2696,8 @@ Ja vad hjälper det att ni bannar! Gå!
 Nej, jag vill inte gå ännu; jag kan inte --- jag måste se ---
 tyst! det kör en vagn därute -
 
-*Lyss utåt allt under det hon håller ögonen fästade på kubben
-och yxan.*
+Lyss utåt allt under det hon håller ögonen fästade på kubben
+och yxan.
 
 Tror ni inte att jag kan se blod! Tror ni att jag är så svag ---
 åh - jag skulle vilja se ditt blod, din hjärna på en träkubbe - jag
@@ -2751,8 +2731,8 @@ mjölnarn i säcken bara!
 
 **FRöKEN**
 
-*Skyndar emot henne och faller i hennes armar liksom för att
-söka skydd.*
+Skyndar emot henne och faller i hennes armar liksom för att
+söka skydd.
 
 Hjälp mig Kristin! Hjälp mig mot denne man!
 
@@ -2854,9 +2834,9 @@ i sagorna - och därifrån är inte långt till Schweiz - med alperna du -
 tänk alperna med snö på mitt i sommarn - och där växer det apelsiner
 och lagrar som är gröna hela året om ---
 
-*Jean syns i högra kulissen strykande sin rakkniv på en rem, som
+Jean syns i högra kulissen strykande sin rakkniv på en rem, som
 han håller med tänderna och vänstra handen; lyss förnöjd på samtalet
-och nickar bifall då och då.*
+och nickar bifall då och då.
 
 **FRöKEN**
 
@@ -3139,8 +3119,8 @@ följderna!
 
 Ja, men ---
 
-*Det ringer två skarpa slag i klockan; Fröken störtar upp; Jean
-byter om rock.*
+Det ringer två skarpa slag i klockan; Fröken störtar upp; Jean
+byter om rock.
 
 **JEAN**
 
@@ -3285,5 +3265,3 @@ Det är rysligt! Men det finns intet annat slut! -Gå!
 *Fröken går bestämt ut genom dörren.*
 
 *Ridå.*
-
----
