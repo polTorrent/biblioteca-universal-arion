@@ -1,5 +1,3 @@
-# Et dukkehjem
-
 **Henrik Ibsen** (1879)
 
 ---
@@ -2737,4 +2735,3 @@ HELMER. (synker ned på en stol ved døren og slår hendene for ansiktet). Nora!
 (nedenfra høres drønnet av en port som slås i lås.)
 
 ---
-
