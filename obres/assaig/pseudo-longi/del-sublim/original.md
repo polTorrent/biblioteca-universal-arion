@@ -1,5 +1,3 @@
-# Περὶ ὕψους (Del sublim)
-
 **Autor:** Pseudo-Longí (Λογγῖνος)
 **Època:** segle I dC (datació disputada)
 **Llengua:** grec antic

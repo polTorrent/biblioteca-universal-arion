@@ -1,16 +1,20 @@
 obra:
-  titol: "Del sublim"
-  titol_original: "Περὶ ὕψους"
-  autor: "Pseudo-Longí"
-  autor_original: "Λογγῖνος"
-  traductor: "Biblioteca Arion"
-  any_original: "c. segle I dC"
+  titol: Del sublim
+  titol_original: Περὶ ὕψους
+  autor: Pseudo-Longí
+  autor_original: Λογγῖνος
+  traductor: Biblioteca Arion
+  any_original: c. segle I dC
   any_traduccio: 2026
-  llengua_original: "grec"
-  categoria: "assaig"
-  genere: "assaig"
-  descripcio: "Tractat clàssic de crítica literària i retòrica que explora el concepte del sublim (hýpsos) en la literatura. Analitza les fonts de la grandesa estilística: pensament elevat, passió, figures retòriques, dicció noble i composició digna. Atribuït tradicionalment a Longí, l'autoria resta disputada."
-  font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0560"
+  llengua_original: grec
+  categoria: assaig
+  genere: assaig
+  descripcio: 'Tractat clàssic de crítica literària i retòrica que explora el concepte
+    del sublim (hýpsos) en la literatura. Analitza les fonts de la grandesa estilística:
+    pensament elevat, passió, figures retòriques, dicció noble i composició digna.
+    Atribuït tradicionalment a Longí, l''autoria resta disputada.'
+  font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0560
+  estadistiques: {}
 seccions: 22
 estadistiques:
   paraules_original: 7533
@@ -18,6 +22,6 @@ estadistiques:
   notes: 0
   termes_glossari: 15
 revisio:
-  estat: "pendent"
-  qualitat: 0
-  data_revisio: ""
+  estat: revisat
+  qualitat: 0.0
+  data_revisio: '2026-03-22'
