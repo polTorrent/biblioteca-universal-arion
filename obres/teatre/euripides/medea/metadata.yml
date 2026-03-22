@@ -8,12 +8,14 @@ obra:
   any_traduccio: 2026
   llengua_original: grec
   categoria: teatre
-  descripcio: >
-    Tragèdia grega sobre Medea, princesa de la Còlquida, que es venja de
-    Jàson després que aquest l'abandoni per casar-se amb la filla del rei de Corint.
+  descripcio: 'Tragèdia grega sobre Medea, princesa de la Còlquida, que es venja de
+    Jàson després que aquest l''abandoni per casar-se amb la filla del rei de Corint.
     Una de les obres més poderoses del teatre antic sobre la passió, la traïció i
     la venjança.
-  font_original: "https://el.wikisource.org/wiki/%CE%9C%CE%AE%CE%B4%CE%B5%CE%B9%CE%B1"
+
+    '
+  font_original: https://el.wikisource.org/wiki/%CE%9C%CE%AE%CE%B4%CE%B5%CE%B9%CE%B1
+  estadistiques: {}
 seccions: 1
 estadistiques:
   paraules_original: 8564
@@ -23,7 +25,7 @@ estadistiques:
 revisio:
   estat: revisat
   qualitat: 0.0
-  data_revisio: '2026-03-16'
+  data_revisio: '2026-03-22'
 avaluacio_final:
   data: '2026-03-16T17:14:45.924609'
   puntuacions:
