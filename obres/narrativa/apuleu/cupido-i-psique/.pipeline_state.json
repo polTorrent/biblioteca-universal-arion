@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-20T17:56:01.419867",
-    "ultima_activitat": "2026-03-21T18:14:22.755486"
+    "ultima_activitat": "2026-03-22T09:43:18.067994"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -67,11 +67,11 @@
       "chunk_44",
       "chunk_45"
     ],
-    "en_curs": null,
+    "en_curs": "chunk_14",
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.91,
+    "qualitat_mitjana": 0.82,
     "temps_total_min": 60.32
   },
   "errors": [
@@ -170,7 +170,15 @@
     "[18:08:23] Error chunk 41: El CLI ha retornat una resposta buida (sense contingut)",
     "[18:09:01] Error chunk 42: El CLI ha retornat una resposta buida (sense contingut)",
     "[18:13:42] Error chunk 44: El CLI ha retornat una resposta buida (sense contingut)",
-    "[18:14:22] Error chunk 45: El CLI ha retornat una resposta buida (sense contingut)"
+    "[18:14:22] Error chunk 45: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:35:16] Error chunk 1: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:35:53] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:36:27] Error chunk 4: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:37:05] Error chunk 5: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:37:39] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:38:20] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:42:31] Error chunk 11: El CLI ha retornat una resposta buida (sense contingut)",
+    "[09:43:18] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[17:58:13] Error glossari: El CLI ha retornat una resposta buida (sense contingut)",
