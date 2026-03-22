@@ -16,11 +16,11 @@ obra:
   font_original: "https://el.wikisource.org/wiki/%CE%9D%CE%B5%CF%86%CE%AD%CE%BB%CE%B1%CE%B9"
 seccions: 1
 estadistiques:
-  paraules_original: 10800
+  paraules_original: 10796
   paraules_traduccio: 13795
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 20
 revisio:
-  estat: "pendent_revisio"
-  qualitat: 0.0
-  data_revisio: "2026-03-21"
+  estat: "revisat"
+  qualitat: 7.5
+  data_revisio: "2026-03-22"
