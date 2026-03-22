@@ -7,9 +7,9 @@
   },
   "timestamps": {
     "inici": "2026-03-20T20:28:37.256504",
-    "ultima_activitat": "2026-03-21T17:52:18.016447"
+    "ultima_activitat": "2026-03-22T11:20:01.178143"
   },
-  "fase_actual": "anotacio",
+  "fase_actual": "traduccio",
   "fases_completades": [
     "investigacio",
     "glossari",
@@ -226,11 +226,11 @@
       "chunk_204",
       "chunk_205"
     ],
-    "en_curs": null,
+    "en_curs": "chunk_22",
     "pendents": []
   },
   "metriques": {
-    "qualitat_mitjana": 0.19,
+    "qualitat_mitjana": 0.38,
     "temps_total_min": 0.0
   },
   "errors": [
@@ -441,7 +441,20 @@
     "[17:52:17] Error chunk 203: [Errno 32] Broken pipe",
     "[17:52:17] Error chunk 204: [Errno 32] Broken pipe",
     "[17:52:17] Error chunk 205: [Errno 32] Broken pipe",
-    "[17:52:18] Error fatal: [Errno 32] Broken pipe"
+    "[17:52:18] Error fatal: [Errno 32] Broken pipe",
+    "[10:53:35] Error chunk 2: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:00:00] Error chunk 6: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:00:38] Error chunk 7: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:02:08] Error chunk 8: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:02:49] Error chunk 9: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:03:23] Error chunk 10: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:08:55] Error chunk 13: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:12:51] Error chunk 15: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:14:28] Error chunk 16: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:15:06] Error chunk 17: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:15:41] Error chunk 18: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:19:18] Error chunk 20: El CLI ha retornat una resposta buida (sense contingut)",
+    "[11:20:01] Error chunk 21: El CLI ha retornat una resposta buida (sense contingut)"
   ],
   "warnings": [
     "[17:52:18] Error anotació: [Errno 32] Broken pipe"
