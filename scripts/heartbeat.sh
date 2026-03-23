@@ -26,6 +26,7 @@ MIN_DIEM_RESERVE=2
 
 # ── Carregar System Brain (deduplicació + funcions intel·ligents) ────────────
 BRAIN_SCRIPT="$PROJECT/scripts/system-brain.sh"
+BRAIN_STOPPED_OPENCLAW=false  # Valor per defecte (el brain pot sobreescriure'l)
 if [ -f "$BRAIN_SCRIPT" ]; then
     # Exportar variables perquè el brain les hereti
     export PROJECT TASKS_DIR TASK_MANAGER QUEUE LOG
@@ -896,28 +897,27 @@ check_failed                 # 1. Recuperar fallides (mou fitxers dins tasks/)
 check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPRE corre
 
 # ═══ MODE CONSOLIDACIÓ: auditoria i reparació ═══
-# 🛑 TEMPORALMENT DESACTIVAT — la cua ja té 260+ tasques, no cal generar-ne més
-# Reactivar quan pendents < 50
-# echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
-# AUDIT_LAST="$PROJECT/config/.last_audit"
-# AUDIT_INTERVAL=43200  # cada 12 hores (🛑 CONSOLIDACIÓ: reduït de 4h)
-#
-# should_audit=false
-# if [ ! -f "$AUDIT_LAST" ]; then
-#     should_audit=true
-# else
-#     last=$(cat "$AUDIT_LAST")
-#     now=$(date +%s)
-#     if [ $((now - last)) -gt $AUDIT_INTERVAL ]; then
-#         should_audit=true
-#     fi
-# fi
-#
-# if [ "$should_audit" = true ]; then
-#     bash "$PROJECT/scripts/auditar-cataleg.sh" --fix
-#     date +%s > "$AUDIT_LAST"
-#     echo "[$(date)] ✅ Auditoria completada, tasques generades"
-# fi
+# Reactivat: la cua està buida, cal regenerar tasques
+echo "[$(date)] 🔧 Mode consolidació: auditant catàleg..."
+AUDIT_LAST="$PROJECT/config/.last_audit"
+AUDIT_INTERVAL=43200  # cada 12 hores
+
+should_audit=false
+if [ ! -f "$AUDIT_LAST" ]; then
+    should_audit=true
+else
+    last=$(cat "$AUDIT_LAST")
+    now=$(date +%s)
+    if [ $((now - last)) -gt $AUDIT_INTERVAL ]; then
+        should_audit=true
+    fi
+fi
+
+if [ "$should_audit" = true ]; then
+    bash "$PROJECT/scripts/auditar-cataleg.sh" --fix
+    date +%s > "$AUDIT_LAST"
+    echo "[$(date)] ✅ Auditoria completada, tasques generades"
+fi
 
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
     log "✅ Cua plena ($PENDING). Saltant tasques noves."
@@ -932,7 +932,7 @@ else
     check_weekly_maintenance # 7. Manteniment
     check_openclaw_health    # 8. Salut OpenClaw (ja no cal stop/start intern)
     # 9. System Brain — funcions diàries (ja no cal stop/start intern)
-    if [ "$BRAIN_LOADED" = true ]; then
+    if [ "$BRAIN_LOADED" = true ] && type run_daily &>/dev/null; then
         run_daily
     fi
     rotate_done              # 10. Neteja
