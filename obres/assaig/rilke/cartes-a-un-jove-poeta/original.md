@@ -1,7 +1,3 @@
-# Briefe an einen jungen Dichter
-
-**Rainer Maria Rilke**
-
 *Briefe an einen jungen Dichter* (1929)
 
 ---
