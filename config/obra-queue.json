@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updated_at": "2026-03-16",
+  "updated_at": "2026-03-23",
   "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
   "obres": [
     {
@@ -261,7 +261,7 @@
       "fonts": [
         "wikisource"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/poesia/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats",
       "notes": "Consell Editorial 2026-03-06. Afegeix el portuguès com a nova llengua. 49 poemes escrits sota l'heterònim Alberto Caeiro (1914), mestre dels altres heterònims. Poesia anti-metafísica del sensacionisme: mirar el món sense pensar-lo. Pessoa (†1935) és el poeta fonamental del modernisme europeu. Cap traducció catalana directa del portuguès. Text a Wikisource portuguesa."
     },
@@ -276,7 +276,7 @@
         "wikisource",
         "archive.org"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte",
       "notes": "Consell Editorial 2026-03-06. Afegeix l'àrab com a nova llengua i obre la biblioteca a la tradició filosòfica islàmica. Novel·la filosòfica (c. 1169) sobre un nen criat sol en una illa que arriba al coneixement per pura raó. Ibn Tufayl (†1185), metge i filòsof andalusí de Guadix. Influència directa sobre Defoe (Robinson Crusoe), Locke i la Il·lustració. Cap traducció catalana. Text àrab a Wikisource i Archive.org."
     },
@@ -676,7 +676,7 @@
         "wikisource",
         "ganjoor"
       ],
-      "status": "done",
+      "status": "validated",
       "obra_dir": "obres/oriental/rumi/masnavi-seleccio-10-contes",
       "notes": "Consell Editorial 2026-03-09. Complement essencial a Omar Khayyam: si les Rubaiyat expressen l'escepticisme hedonista, el Masnavi de Rumi és la veu mística sufí, 'el Corà en persa' segons Jāmī. Jalāl al-Dīn Rūmī (†1273), poeta i místic de Konya, és l'autor més llegit del món islàmic i un dels poetes més traduïts de la història. El Masnavi-ye Ma'navi (c. 1258-1273) conté 25.000 dístics organitzats en 6 llibres: contes, paràboles i al·legories que il·luminen la cerca de Déu, l'amor diví i la transformació interior. Selecció de 10 contes representatius: la flauta de canya (proemi), el lloro i el mercader, l'elefant a les fosques, Moisès i el pastor, el lleó i la llebre, la ciutat dels cecs, l'home que trucava a la porta de Déu, el jardiner i les tres fruites, el gramàtic i el barquer, la llàntia i l'oli. Cap traducció catalana directa del persa. Text persa a Wikisource persa i Ganjoor.net."
     },

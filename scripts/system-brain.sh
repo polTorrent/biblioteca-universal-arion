@@ -2,7 +2,7 @@
 # 🛑 MODE CONSOLIDACIÓ ACTIU (des de 2026-03-16)
 # No es generen títols nous. Només millores del catàleg existent.
 # Per reactivar: eliminar els "return 0" i descomentar les línies marcades
-exit 0  # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM
+return 0  # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM (return, no exit, perquè és sourcejat)
 # =============================================================================
 # system-brain.sh — Cervell intel·ligent del sistema Arion
 # =============================================================================
