@@ -1,6 +1,3 @@
-# Beowulf
-*Anònim anglosaxó (c. 700-1000 dC)*
-
 Text en anglès antic (Old English) segons ledició de Harrison & Sharp, 4a edició.
 Font: Project Gutenberg #9701
 

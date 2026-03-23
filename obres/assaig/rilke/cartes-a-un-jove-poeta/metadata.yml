@@ -1,15 +1,19 @@
 obra:
-  titol: "Cartes a un jove poeta"
-  titol_original: "Briefe an einen jungen Dichter"
-  autor: "Rainer Maria Rilke"
-  autor_original: "Rainer Maria Rilke"
-  traductor: "Biblioteca Arion"
-  any_original: "1929"
+  titol: Cartes a un jove poeta
+  titol_original: Briefe an einen jungen Dichter
+  autor: Rainer Maria Rilke
+  autor_original: Rainer Maria Rilke
+  traductor: Biblioteca Arion
+  any_original: '1929'
   any_traduccio: 2026
-  llengua_original: "alemany"
-  categoria: "assaig"
-  descripcio: "Deu cartes escrites per Rilke entre 1903 i 1908 al jove poeta Franz Xaver Kappus, amb reflexions profundes sobre l'art, la solitud, l'amor, la vida interior i el procés creatiu."
-  font_original: "https://www.projekt-gutenberg.org/rilke/jungdich/jungdich.html"
+  llengua_original: alemany
+  categoria: assaig
+  descripcio: Deu cartes escrites per Rilke entre 1903 i 1908 al jove poeta Franz
+    Xaver Kappus, amb reflexions profundes sobre l'art, la solitud, l'amor, la vida
+    interior i el procés creatiu.
+  font_original: https://www.projekt-gutenberg.org/rilke/jungdich/jungdich.html
+  estadistiques:
+    paraules_traduccio: 7345
 seccions: 10
 estadistiques:
   paraules_original: 11273
@@ -17,5 +21,22 @@ estadistiques:
   notes: 0
   termes_glossari: 20
 revisio:
-  estat: "pendent"
-  qualitat: 0
+  estat: revisat
+  qualitat: 4.86
+  data_revisio: '2026-03-23'
+avaluacio_final:
+  data: '2026-03-23T17:03:42.416663'
+  puntuacions:
+    fidelitat: 0.0
+    veu_autor: 0.0
+    fluidesa: 0.0
+    correccio_linguistica: 0.0
+    coherencia: 0.0
+    global: 0.0
+  total_errors: 446
+  errors_critics: 0
+  errors_alts: 0
+  aprovat: false
+  requereix_revisio_humana: true
+  correccions_aplicades: 0
+  correccions_pendents: 436
