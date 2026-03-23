@@ -19,15 +19,21 @@ class S:
     @staticmethod
     def worker() -> dict[str, Any]:
         try:
-            pf=Path("/tmp/worker.pid"); lf=TASKS/"worker.lock"
-            wp=pf.read_text().strip() if pf.exists() else None
-            wr=False
-            if wp:
-                try: wr=subprocess.run(["ps","-p",wp,"-o","comm="],capture_output=True,text=True,timeout=3).returncode==0
-                except (OSError, subprocess.SubprocessError): pass
+            lf=TASKS/"worker.lock"
+            wp=None; wr=False
+            # 1. Lockfile del worker-mini (conté PID com a text pla)
+            if lf.exists():
+                try:
+                    c=lf.read_text().strip()
+                    if c.isdigit():
+                        wp=c
+                        try: wr=subprocess.run(["ps","-p",wp,"-o","comm="],capture_output=True,text=True,timeout=3).returncode==0
+                        except (OSError, subprocess.SubprocessError): pass
+                except OSError: pass
+            # 2. Fallback: pgrep
             if not wr:
                 try:
-                    r=subprocess.run(["pgrep","-f","claude-worker"],capture_output=True,text=True,timeout=3)
+                    r=subprocess.run(["pgrep","-f","claude-worker-mini"],capture_output=True,text=True,timeout=3)
                     wr=r.returncode==0
                     if wr and r.stdout.strip(): wp=r.stdout.strip().split('\n')[0]
                 except (OSError, subprocess.SubprocessError): pass
@@ -35,14 +41,15 @@ class S:
             try: ca=bool(subprocess.run(["bash","-c","ps aux|grep '[c]laude.*-p'|head -1"],capture_output=True,text=True,timeout=3).stdout.strip())
             except (OSError, subprocess.SubprocessError): pass
             ct=None
-            if lf.exists():
-                try:
-                    c=lf.read_text().strip()
+            # Tasca actual: mirar running/
+            rf=TASKS/"running"
+            if rf.is_dir():
+                rfiles=list(rf.glob("*.json"))
+                if rfiles:
                     try:
-                        d=json.loads(c); val=d.get("task") or d.get("instruction") or "..."
-                        ct=str(val)[:100]
-                    except (json.JSONDecodeError, ValueError): ct=c[:100]
-                except OSError: ct="..."
+                        d=json.loads(rfiles[0].read_text())
+                        ct=str(d.get("id") or d.get("instruction","...")[:80])
+                    except (json.JSONDecodeError, OSError, ValueError): ct=rfiles[0].stem
             return {"running":wr,"pid":wp,"claude_active":ca,"current_task":ct}
         except Exception as e: return {"running":False,"error":str(e)}
 

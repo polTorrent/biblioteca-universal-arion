@@ -7,7 +7,7 @@
   },
   "timestamps": {
     "inici": "2026-03-17T05:09:36.197177",
-    "ultima_activitat": "2026-03-21T13:19:27.304231"
+    "ultima_activitat": "2026-03-23T16:40:02.913873"
   },
   "fase_actual": "traduccio",
   "fases_completades": [
@@ -37,7 +37,7 @@
       "chunk_17",
       "chunk_18"
     ],
-    "en_curs": "chunk_19",
+    "en_curs": "chunk_9",
     "pendents": [
       "chunk_20",
       "chunk_21",
@@ -68,7 +68,7 @@
     ]
   },
   "metriques": {
-    "qualitat_mitjana": 1.19,
+    "qualitat_mitjana": 2.45,
     "temps_total_min": 0.0
   },
   "errors": [
