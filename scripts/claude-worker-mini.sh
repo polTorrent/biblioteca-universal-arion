@@ -10,7 +10,7 @@
 #   - Tot el que ja tenia v2 (retry, safety limits, rotació, etc.)
 # =============================================================================
 
-set -u
+set -uo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
 TASKS_DIR="$HOME/.openclaw/workspace/tasks"
@@ -204,7 +204,10 @@ run_task() {
     local full_instruction="${EXEC_PREFIX}${instruction}"
 
     # Crida DIRECTA a claude amb setsid per evitar el problema del PTY
-    result=$(cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" setsid -w claude -p "$full_instruction" \
+    # Escriu output en temps real a /tmp/claude-live.txt per al dashboard
+    local LIVE_LOG="/tmp/claude-live.txt"
+    echo "[$(date '+%H:%M:%S')] ── Tasca: ${instruction:0:80}..." > "$LIVE_LOG"
+    (cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" setsid -w claude -p "$full_instruction" \
         --max-turns 25 \
         --add-dir "$PROJECT_DIR" \
         --allowedTools "Read" "Glob" "Grep" "Edit" "Write" \
@@ -215,7 +218,8 @@ run_task() {
         "Bash(sed:*)" "Bash(cp:*)" "Bash(mv:*)" "Bash(rm:*)" \
         "Bash(touch:*)" "Bash(echo:*)" "Bash(date:*)" "Bash(tee:*)" \
         "Bash(curl:*)" "Bash(wget:*)" "Bash(cd:*)" \
-        --output-format text 2>&1) && exit_code=0 || exit_code=$?
+        --output-format text 2>&1) | tee -a "$LIVE_LOG" > /tmp/claude-code-result.txt && exit_code=0 || exit_code=$?
+    result=$(cat /tmp/claude-code-result.txt)
 
     # 124 = timeout va matar el procés
     if [ $exit_code -eq 124 ]; then
@@ -305,8 +309,19 @@ while true; do
         continue
     fi
 
-    # ── Agafar primera tasca ──────────────────────────────────────────────
-    TASK=$(ls -1t "$TASKS_DIR/pending/"*.json 2>/dev/null | head -1)
+    # ── Agafar tasca amb prioritat més alta (número més baix) ─────────────
+    TASK=$(python3 -c "
+import json, glob, sys
+tasks = []
+for f in glob.glob(sys.argv[1] + '/pending/*.json'):
+    try:
+        with open(f) as fh: d = json.load(fh)
+        tasks.append((d.get('priority', 5), f))
+    except: pass
+if tasks:
+    tasks.sort(key=lambda x: x[0])
+    print(tasks[0][1])
+" "$TASKS_DIR" 2>/dev/null)
 
     if [ -z "$TASK" ]; then
         sleep $IDLE_POLL

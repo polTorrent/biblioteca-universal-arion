@@ -1125,11 +1125,11 @@ La purificació de la raça. — Probablement no hi ha races pures, sinó només
 
 ### 273. L'elogi
 
-L'elogi. — Vet aquí algú de qui notes que et vol elogiar: et mordeixes els llavis, el cor se t'estreny: ah, que passi aquest calze! Però no passa, ve! Beguem, doncs, la dolça impertinència del panegirista, superem el fàstic i el profund menyspreu pel nucli del seu elogi, fem les arrugues de l'alegria agraïda sobre la cara — ell ha volgut fer-nos bé! I ara, un cop fet, sabem que se sent molt elevat, ha obtingut una victòria sobre nosaltres; — sí! i també sobre si mateix, el gos! — perquè no li ha estat fàcil arrencar-se aquest elogi.
+L'elogi. — Vet aquí algú de qui notes que et vol elogiar: et mossegues els llavis, el cor se t'estreny: ah, que passi aquest calze! Però no passa, ve! Beguem, doncs, la dolça impertinència del panegirista, superem el fàstic i el profund menyspreu pel nucli del seu elogi, fem les arrugues de l'alegria agraïda sobre la cara — ell ha volgut fer-nos bé! I ara, un cop fet, sabem que se sent molt elevat, ha obtingut una victòria sobre nosaltres; — sí! i també sobre si mateix, el gos! — perquè no li ha estat fàcil arrencar-se aquest elogi.
 
 ### 274. Dret i privilegi de l'home
 
-Dret i privilegi de l'home. — Nosaltres els homes som les úniques criatures que, quan surten malament, poden ratllat-se a si mateixes com una frase mal escrita — sigui que ho fem per l'honor de la humanitat o per compassió envers ella o per repugnància envers nosaltres mateixos.
+Dret i privilegi de l'home. — Nosaltres els homes som les úniques criatures que, quan surten malament, poden ratllar-se a si mateixes com una frase mal escrita — sigui que ho fem per l'honor de la humanitat o per compassió envers ella o per repugnància envers nosaltres mateixos.
 
 ### 275. El transformat
 
