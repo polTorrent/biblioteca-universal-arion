@@ -5,7 +5,235 @@ Traduït del grec per Biblioteca Arion
 
 ---
 
+## Capítol 1
+**[1.1]** L'opuscle de Cecili sobre el sublim, que hem estat examinant junts com saps, estimadíssim Postumi Terencià, ens ha semblat inadequat per al tema que tracta i molt lluny d'abordar els aspectes fonamentals. Tampoc no ofereix gaire profit als lectors, que és justament l'objectiu principal que ha de perseguir qui escriu. En qualsevol art es demanen dues coses: primer, mostrar què és la matèria en qüestió; segon —inferior en ordre, però superior en importància—, com podem adquirir aquesta capacitat i per quins mètodes. Cecili, però, s'esforça a mostrar mitjançant milers d'exemples quina mena de cosa és el sublim, com si els lectors ho ignoressin. Mentre que omet —no sé ben bé per què— com una cosa innecessària el camí pel qual podríem fer avançar la nostra pròpia naturalesa fins a assolir una certa grandesa.
+**[1.2]** Però potser més que acusar aquest home de les seves omissions, cal elogiar-lo per la mateixa idea i esforç. I ja que tu també m'has encoratjat a escriure alguna cosa sobre el sublim per al teu benefici, doncs bé, examinem si sembla que hem observat res d'útil per als homes públics. Tu mateix, amic, jutjaràs amb la màxima veritat els detalls, com és propi del teu caràcter i convé. Encertava aquell que va declarar què tenim de semblant als déus: «el benefici» —va dir— «i la veritat». Quan t'escric,
 
+**[1.3]** Estimadíssim amic, quan parlem d'algú expert en literatura, gairebé puc estalviar-me d'explicar detalladament que el sublim és el cim i l'excel·lència del discurs. Els més grans poetes i prosistes han destacat únicament per això i han assolit la glòria eterna.
+**[1.4]** El que és extraordinari no porta els oients a la persuasió, sinó a l'èxtasi. En tots els casos, el que ens meravella i ens impacta sempre supera allò que és persuasiu i allò que agrada. La persuasió, en general, depèn de nosaltres. Però aquestes altres qualitats tenen un poder i una força irresistibles. Se situen per damunt de qualsevol oient i el dominen. 
+L'experiència en la invenció i l'ordenació dels temes només es manifesta a penes a partir del conjunt del discurs. El sublim, en canvi, quan surt a la llum en el moment oportú, ho ha il·luminat tot d'un cop i ha mostrat d'una sola vegada tot el poder de l'orador. Crec, doncs, que aquestes coses i d'altres semblants, estimadíssim Terencià, tu mateix les podries ensenyar per experiència.
+## Capítol 2
+**[2.1]** Però nosaltres hem de plantejar-nos al principi aquesta qüestió: si hi ha un art del sublim o de la profunditat. Alguns creuen que s'equivoquen completament els qui redueixen aquestes coses a preceptes tècnics. Neixen, diuen, les qualitats magnífiques i no s'adquireixen per ensenyament. L'única tècnica respecte a aquestes és haver nascut amb elles. Els treballs naturals es fan pitjors, segons creuen, i del tot més febles quan s'emmacilen amb artificiosos tecnicismes.
+
+**[2.2]** Jo, però, dic que aquesta posició es revelarà equivocada si hom considera que la natura —igual com en la majoria d'àmbits passionals actua per ella mateixa—, tampoc acostuma a ser arbitrària ni del tot sense mètode. Ella mateixa constitueix l'element primer i arquetípic de tota generació. Però el mètode és capaç de proporcionar les mesures adequades, el moment oportú per a cada cosa i l'exercici més segur. Les coses grans, quan es deixen sense guia del coneixement, esdevenen inestables i sense fonament, més perilloses quan només segueixen l'impuls i la gosadia ignorant. Sovint necessiten tant un centre com un fre.
+**[2.3]** Allò mateix que Demòstenes afirma sobre la vida humana —que el més gran dels béns és la bona sort, i el segon, no menor, és deliberar bé, i quan aquest falta destrueix necessàriament també l'altre—, això mateix podríem dir dels discursos. La natura ocupa el lloc de la bona sort, i l'art el de la bona deliberació. I el més decisiu: fins i tot el fet que algú participi en l'art dels discursos basant-se només en la natura, no ho podem aprendre d'enlloc més que de l'art mateix. Si qui critica els estudiosos reflexionés sobre aquestes coses, ja no consideraria la teoria sobre aquests temes com a superflua i inútil.
+
+## Capítol 3
+**[3.1]**... i de la fornada tenen la llum més brillant.
+Si només veig algú amb llar,
+arrancaré un sol cabell tempestuós
+i incendiaré la casa fins carbonitzar-la;
+però ara encara no he llançat el noble crit.
+Ja no és tràgic això, sinó paratràgic: les trenes, el vomitar cap al cel, convertir Bòreas en flautista i tota la resta que segueix. Està embolicat en l'expressió i confús a causa de les imatges més que no pas terrible, i si examines cadascun d'aquests elements a la llum del dia, gradualment passa del terrible al menyspreable. I si fins i tot en la tragèdia—gènere elevat per natura i que admet la pompa—la inflació excessiva és imperdonable, difícilment s'esquindria, em sembla, a discursos que pretenen ser veritables.
+**[3.2]** Per la mateixa raó es riuen dels escrits de Gòrgies de Leontins quan escriu «Xerxes, el Zeus dels perses» i «voltors, tombes animades», i d'algunes coses de Cal·lístenes que no són elevades sinó aèries, i encara més les de Clitarc. Aquest és un home superficial que s'infla com diu Sòfocles:
+amb petites flautes, però sense brida.
+I semblants són els escrits d'Amfícrates, Hegèsios i Matris: sovint, creient-se inspirats, no fan de bacants sinó que juguen.
+
+**[3.3]** En general, sembla que la inflació és, entre tots els defectes, el més difícil d'evitar. Per natura, tots els que aspiren a la grandesa, fugint de ser acusats de feblesa i sequedat, no sé com van a parar a aquest vici, convençuts que «errar en coses grans és sempre un noble error».
+**[3.4]** Però els tumors malignes, tant en els cossos com en les paraules, són aquells que són buits i falsos i que de vegades ens porten al contrari del que busquem. Car diuen que no hi ha res més sec que un hidròpic. Ara bé, mentre que la inflació vol elevar-se per sobre de les altures, el puerilisme és directament oposat a la grandesa: és completament baix i mesquí i, de fet, el més ignoble dels defectes. Què és, doncs, el puerilisme? És evident que és un pensament escolar que, per l'excessiva elaboració, acaba en fredor. Hi cauen els que aspiren a l'extraordinari i l'artificial i, sobretot, a allò que és agradable. Però van a parar a allò que és sòrdid i de mal gust. Al costat d'aquest hi ha un tercer tipus de defecte en les passions, que Teodoros anomenava 'falsa inspiració'. Aquesta és una passió inoportuna i buida on no cal passió, o desmesurada on cal moderació. Molts, com si fossin beguts, es deixen portar cap a passions que ja no són apropiades per al tema sinó que són seves pròpies i escolars. Llavors fan el ridícul justament davant d'oients que no han experimentat res, desplaçats davant d'un públic que no ho està. Però sobre les passions tenim reservat un altre lloc.
+
+## Capítol 4
+**[4.1]** De l'altra mena que esmentàvem, vull dir de l'estil fred, en Timeu n'està ple. Aquest home era prou hàbil en altres aspectes i de vegades no aliè a la grandesa del discurs, erudit i enginyós. Però era durissim censor dels errors aliens mentre que era insensible als propis, i sovint cau en la més pueril estupidesa per la seva passió d'inventar sempre idees extravagants.
+**[4.2]** Citaré un o dos exemples d'aquest home, ja que Cecili se n'ha endut la majoria. Elogiant Alexandre el Gran, diu: «Va conquerir tota l'Àsia en menys temps del que Isòcrates va trigar a escriure el seu discurs panegíric sobre la guerra contra els perses.» Admirable comparació, la del macedoni amb el sofista! És clar, Timeu, que els espartans per això mateix eren molt inferiors a Isòcrates en valentia: perquè ells van trigar trenta anys a conquerir Messena, mentre que ell va compondre el Panegíric en només deu.
+**[4.3]** I als atenesos derrotats a Sicília què els diu? Que «per haver ofès Hermes i haver mutilat les seves estàtues, van pagar el càstig, no menys per culpa d'un home que descendia per línia paterna de qui va cometre el sacrílegi: Hermòcrates, fill d'Hermó.» Així que em pregunto, estimadíssim Terencià, per què no escriu també sobre el tirà Dionís: «Com que va ser impiu amb Zeus i Hèracles, per això mateix Dió i Heràclides el van privar de la tirania.»
+
+**[4.4]** I què cal dir de Timeu, quan fins i tot aquells herois —em refereixo a Xenofont i Plató, formats a l'escola de Sòcrates—, malgrat tot, a vegades s'obliden d'ells mateixos per culpa d'aquestes frivolitats? Un d'ells, en la *República dels Lacedemonis*, escriu: «D'aquells, certament, sentiríeu una veu menys sonora que la de les pedres, giraríeu menys els ulls que els de bronze, i els consideraríeu més pudorosos fins i tot que les pupil·les dels ulls.» Era més propi d'Amficrates que de Xenofont anomenar les pupil·les "donzelles pudoroses". Com és possible creure que les pupil·les de tothom són castes, quan diuen que en res es revela tant la desvergonyiment d'algú com en els ulls! Com diu Aquil·les retreient a Agamèmnon la seva desfacatesa: «amb ulls de gos carregats de vi».
+**[4.5]** Però Timeu, com si s'apoderés d'un botí, ni tan sols va deixar aquesta frivolitat a Xenofont. Diu, parlant d'Agatòcles i de com va raptar la neboda d'un altre home durant la cerimònia nupcial: «Qui hauria fet això amb pupil·les castes i no dissolutes?»
+
+**[4.6]** I què diem? Plató, que en tot altre és diví, per dir «tauletes», diu: «Després d'escriure, dipositaran als temples records de xiprer». I altra vegada: «Respecte a les muralles, oh Megil·le, jo estaria d'acord amb Esparta en deixar dormir les muralles jaient a terra i no alçar-les».
+**[4.7]** I no gaire lluny està l'expressió d'Heròdot, que anomena les dones belles «dolors dels ulls». Tanmateix, té certa disculpa, perquè són els bàrbars embriagats els que diuen aquestes paraules en la seva obra; però no és bell que ni tan sols des d'aquests personatges es perdi la dignitat davant l'eternitat per mesquinesa d'esperit.
+## Capítol 5
+**[5.1]** Tots aquests defectes indignes, però, s'implanten en els discursos per una sola causa: per l'afany obsessiu de novetat en els conceptes, pel qual sobretot s'enfolleeixen els d'ara. D'on ens ve el bé, gairebé d'allí mateix sol néixer també el mal. Per tant, ja que contribueixen a l'èxit de les composicions tant les belleses de l'expressió com les sublimitats, i a més els plaers, aquests mateixos elements es converteixen en principis i fonaments dels contraris, igual que de l'encert. Quelcom semblant passa també amb les metàboles, les hipèrboles i els plurals; més endavant mostrarem el perill que semblen comportar. Per això cal ja plantejar-se i proposar de quina manera podem evitar els vicis barrejats amb les sublimitats. I això seria possible, amic meu, si ens procuréssim, en primer lloc, un coneixement pur i un judici del sublim vertader.
+
+## Capítol 7
+**[7.1]** Cal saber, estimat amic, que en la vida quotidiana no hi ha res de vertaderament gran si no és també gran el fet de poder-ho desdenyar. Parlo de riqueses, honors, reputacions, tiranies i totes les altres coses d'aparença externa. Una persona prudent no els trobaria béns excel·lents, perquè el mateix fet de menysprear-los ja és un bé considerable. De fet, la gent admira més aquells que podrien tenir aquestes coses, però les desdenyem per noblesa d'ànim. Així mateix, cal examinar també els textos poètics i en prosa. No sigui cas que tinguin una aparença de grandesa basada en elements afegits a l'atzar, però que després resultin buits quan els analitzem a fons. D'aquestes obres és més noble menysprear-les que admirar-les.
+**[7.2]** Per naturalesa, l'autèntic sublim eleva la nostra ànima i, amb un moviment d'orgull, l'omple d'alegria i grandesa, com si ella mateixa hagués creat allò que ha escoltat.
+**[7.3]** Quan un home prudent i expert en discursos escolta alguna cosa moltes vegades, però aquesta no eleva l'ànima ni deixa al pensament més contingut per contemplar del que diuen les paraules, i fins i tot decau si l'examines contínuament, ja no es tracta de vertader sublim, sinó d'alguna cosa que només impressiona en el moment d'escoltar-la. El vertader sublim ofereix molt material per contemplar, és difícil o més aviat impossible de superar, i deixa un record fort i indeleble.
+
+**[7.4]** En general, considera autèntics els textos sublims que agraden sempre i a tothom. Quan persones de professions, vides, aspiracions, edats i maneres de pensar diferents coincideixen totes en el mateix judici sobre les mateixes obres, llavors aquesta aprovació unànime de persones tan diverses dona credibilitat ferma i incontestable a allò que s'admira.
+## Capítol 8
+**[8.1]** Ja que hi ha, per dir-ho així, cinc fonts que són les més fecundes per al sublim del discurs —i totes cinc modalitats presuposen com a fonament comú la capacitat d'expressió, sense la qual res no és possible—, la primera i més poderosa és la facultat de concebre pensaments elevats, tal com ja vam definir en el nostre estudi sobre Xenofont; la segona és la passió intensa i entusiàstica. Ara bé, aquestes dues fonts del sublim són principalment dons naturals, mentre que les altres ja depenen de la tècnica: la configuració adequada de les figures (que són de dues menes: les unes de pensament, les altres d'expressió), a més d'això l'expressió noble, que inclou la selecció de paraules i el llenguatge figurat i elaborat; la cinquena causa de grandesa, que engloba totes les anteriors, és la composició digna i elevada. Vegem ara allò que comprèn cadascuna d'aquestes modalitats, però advertint primer que Cecili ha omès algunes de les cinc parts, com per exemple la passió.
+
+**[8.2]** Si algú creu que aquestes dues coses —el sublim i la dimensió emocional— constitueixen una unitat i que sempre coexisteixen i van unides per naturalesa, es confon. Hi ha certes emocions allunyades del sublim i vulgars, com ara la pietat, el dolor i la por, i, a l'inrevés, molts passatges sublims sense emoció, com també els versos que el poeta va dedicar als Aloades, entre milers d'exemples:
+*Decidits estaven a posar l'Ossa sobre l'Olimp, i sobre l'Ossa el Pèlion de fulles tremoloses, per fer el cel accessible; *
+i el vers encara més grandiós que s'hi afegeix:
+*i ho haurien aconseguit.*
+**[8.3]** Pel que fa als rètors, els encomiàstics, els discursos pomposos i els ceremonials contenen grandesa i sublim, però la majoria de vegades manquen d'emoció. Per això, entre els rètors, els més emotius rarament sobresurten en l'encomi, i a l'inrevés, els que destaquen en l'elogi rarament són emotius.
+**[8.4]** Ara bé, si Cecili va pensar que la dimensió emocional no contribueix mai al sublim, i per això va considerar que no era digne d'esment, es confon completament. Gosaré dir que no hi ha res tan grandiloqüent com la passió noble, quan cal, que inspira els discursos com sota l'efecte d'una bogeria sagrada i els fa, per dir-ho així, profetitzar.
+
+'`'json
+'`'
+
+els mocs li gotegen del nas.
+No va fer terrible la imatge, sinó repugnant.
+Però ell, com magnifica les divinitats?
+La distància que pot veure un home amb els seus ulls, 
+assegut en una talaia, mirant sobre el mar vinós, 
+és la mateixa que recorren d'un salt els cavalls altíssons dels déus. (Il. V 770-772)
+Mesura llur impuls amb una distància còsmica. Qui, doncs, no exclamaria amb raó, davant la desmesura d'aquesta grandesa, que si els cavalls dels déus prenen l'embranzida dues vegades consecutives, ja no trobaran lloc al cosmos?
+**[9.6]** Sobrehumanes són també les visions de la teomàquia: 
+I al voltant va ressonar el gran cel i l'Olimp.
+I s'esglaiaren a sota el senyor dels morts, Hades, 
+i, esglaiat, va saltar del tron i va cridar, no fos que
+Poséidon, el que sacseja la terra, l'esquerdés, 
+i apareguessin als mortals i als immortals les cases
+horroroses i podrides, que fins i tot els déus abhorreixin.
+Veus, company, com mentre la terra s'esquerda des dels fonaments, i el mateix tàrtar queda al descobert, i tot el cosmos pateix un trastorn i una dissolució, cel i infern, mortals i immortals, tot lluita i s'arrisca alhora en aquella batalla?
+**[9.7]** Però aquestes coses, per terribles que siguin, són completament impies i no respecten la dignitat, tret que es prenguin al·legòricament. Homer, em sembla, quan transmet ferides dels déus, sedicions, venjances, llàgrimes, presons i passions de tota mena, ha fet dels homes de Troia, en la mesura que
+
+**[9.8]** Molt millors que els passatges sobre la lluita dels déus són aquells que presenten la divinitat com a quelcom realment incorrupte, gran i pur, com ara (i molts autors abans nostre han treballat aquest lloc) els versos sobre Posidó:
+I tremolaren els alts monts i la selva
+i els cims i la ciutat dels troians i les naus dels aqueus
+sota els peus immortals de Posidó que anava.
+I anà conduint sobre les ones, i saltaren els cetacis sota d'ell
+per tot arreu des dels amagatalls, i reconegueren el senyor;
+i la mar s'obria de goig, i volaven lleugers.
+**[9.9]** D'aquesta mateixa manera també el legislador dels jueus, que no era cap home ordinari, quan va concebre i manifestar el poder diví d'acord amb la seva dignitat, va escriure immediatament al començament de les lleis: «Digué Déu», diu —què? «Faci's la llum, i fou feta.»
+**[9.10]** Potser no semblaré molest, amic meu, si afegeixo encara un exemple més del poeta i de les coses humanes per aprendre com acostuma a entrar en les grandeses heroiques. Una boira sobtada i una nit impenetrable paralitzen la batalla dels grecs; llavors Àiax, desorientat:
+Zeus pare (diu), però tu allibera dels núvols els fills:::::::::: :: dels aqueus,
+i fes-hi serenor, i dóna als ulls veure;
+i a la llum també destrueix-nos.
+
+La passió d'Àiax és certament autèntica: no suplica viure —que seria una petició massa humil per a l'heroi—, sinó que, trobant-se en una foscor estèril on no pot aplicar la seva valentia a res de noble, s'indigna per romandre inactiu davant la batalla i demana llum el més aviat possible, per tal de trobar una sepultura digna del seu valor, encara que Zeus mateix se li oposi.
+**[9.11]** Però aquí Homer acompanya favorablement els combats, i no li passa res més que estar foll,
+    com quan Ares el de la llança o el foc destructor
+    furioseja als monts, en l'espessor del bosc profund,
+    i l'escuma li ve als llavis.
+Tot i així, a través de l'Odissea mostra —i cal considerar això per moltes raons— que l'amor pels mites és propi de la vellesa en una gran natura ja en decadència.
+**[9.12]** És evident per moltes altres coses que va compondre aquesta segona obra, i també pel fet d'introduir a l'Odissea restes dels sofriments iliàdics com episodis [de la guerra de Troia], i, per Zeus!, pel fet d'incorporar-hi els plors i les compassions com si fossin ja coneguts pels herois. L'Odissea, en efecte, no és altra cosa que un epíleg de la Ilíada.
+
+«Aquí jau l'Àiax guerrer, aquí l'Aquil·les,
+aquí Pàtrocle, igual als déus en consell;
+aquí el meu estimat fill.» (γ 109-111)
+**[9.13]** Per la mateixa raó, em sembla, quan es va escriure la Ilíada en la plenitud del seu alè creador, va concebre tota l'obra com a dramàtica i plena de lluita, mentre que en l'Odissea és predominantment narratiu, cosa que és pròpia de la vellesa. Per això, en l'Odissea hom podria comparar Homer amb un sol ponent, del qual roman la grandesa sense la intensitat. Ja no conserva aquí el mateix vigor que en aquells poemes ilíacs, ni una grandesa constant sense alts i baixos, ni el mateix torrent d'emocions que s'encadenen, ni la rapidesa, l'agilitat i la densitat d'imatges nascudes de la realitat. Sinó que, com un oceà que es retira cap a si mateix i es veu desert dins els seus propis límits, a partir d'aleshores només apareixen els refluxos de l'antiga grandesa, vagant entre fàbules i inverosimilituds.
+**[9.14]** En dir això, no he oblidat les tempestes de l'Odissea, els episodis del Cíclop i altres passatges, però explico la vellesa —vellesa d'Homer, això sí. Tanmateix, en tots aquests episodis el mític predomina sobre l'actiu. He fet aquesta digressió, com he dit, per mostrar com els grans esperits, en declinar, es desvien fàcilment cap a la frivolitat, com ara els episodis de l'odre i els companys que Circe apacentava convertits en porcs, els quals Zoïlos va dir que eren «porquets plorant», i Zeus alimentat pels coloms com un pollet.
+
+## Capítol 10
+**[10.1]** Ara bé, si tenim algun altre recurs que pugui elevar els nostres discursos, examinem-lo. Doncs bé, com que en totes les coses per naturalesa hi ha certes parts que acompanyen les matèries, necessàriament el que ens causaria el sublim seria saber triar sempre dels elements que tenim els més adequats i poder-los compondre entre si com si formessin un sol cos: una cosa atrau per la selecció de materials, l'altra per la condensació dels elements seleccionats. Per exemple, Safo pren les afeccions que acompanyen les bogeries amoroses dels símptomes que s'hi associen i de la realitat mateixa. I on demostra la seva excel·lència? En el fet que sap triar i entrellaçar els més extrems i intensos: 
+**[10.2]** Em sembla que aquell home és igual als déus, 
+l'home que seu al teu costat i t'escolta
+de prop la dolça veu
+i el riure temptador, que m'ha fet
+tremolar el cor al pit.
+Perquè quan et miro, ja no puc
+parlar; 
+sinó que se'm trenca la llengua, i una flama
+subtil m'ha recorregut la pell; 
+amb els ulls no hi veig res, i em xiulen
+les orelles; 
+una suor freda em xopa, i el tremolor
+
+més pàl·lida que l'herba
+estic; molt poc me'n falta
+per semblar morta.
+Però tot s'ha de suportar, ja que fins el pobre...
+**[10.3]** No et sorprenguis que en la mateixa experiència reuneixi l'ànima i el cos, l'oïda i la llengua, la vista i el color, tot dispersant-se com si fossin elements aliens, i com alhora, per contraposicions, es refreda i s'inflama, delira i raona, s'encoratja i s'espanta, o gairebé mor, perquè no sembli que l'afecta una sola passió, sinó una barreja de passions? Tot això succeeix als enamorats, però la percepció dels extrems, com he dit, i la seva unió en un mateix punt va crear l'excel·lència. De manera semblant, em sembla, el poeta tria els elements més terribles que acompanyen les tempestes.
+**[10.4]** En efecte, l'autor dels *Arimaspeia* creu que aquests versos són terribles: «Això és per a nosaltres un gran prodigi per al nostre cor: / homes que habiten sobre l'aigua, lluny de terra, en el mar; / són uns infeliços, perquè tenen treballs penosos; / els ulls fixats en els estels, però l'ànima en el mar. / Segurament, amb les mans aixecades cap als déus estimats, / preguen molt mentre se'ls remuen les entranyes.» Em sembla evident a tothom que això té més ornament retòric que terror veritable.
+
+**[10.5]** I què dir d'Homer? Prenem un exemple entre molts: «Va caure damunt, com quan una ona violenta sobre la nau ràpida, alimentada pels vents sota els núvols, i tota ella quedà amagada sota l'escuma, i el terrible buf del vent brama contra la vela, i se'ls encongeix el cor als mariners espantats; perquè ben poc els separa de la mort.»
+**[10.6]** També Arat va intentar traslladar el mateix passatge: «i només una fusta els protegeix de l'Hades». Però ho va tractar de manera senzilla i elegant en lloc de terrible. A més, va delimitar el perill dient «la fusta els protegeix de l'Hades». Així doncs, els protegeix. El poeta, en canvi, no delimita el terror d'una sola vegada, sinó que retrata homes que s'estan perdent constantament i gairebé a cada ona que els colpeja. A més, forçant les preposicions que normalment van separades i comprimint-les l'una contra l'altra de manera antinatural [ὑπὲκ θανάτοιο], va fer sofrir el vers amb el mateix patiment dels mariners, i amb la compressió del vers va modelar perfectament l'emoció, i gairebé va plasmar en les paraules el caràcter propi del perill: «ben poc els separa de la mort».
+**[10.7]** Igual fa Arquíloc en el naufragi, i Demòstenes en l'anunci de la notícia: «Era vespre», diu. Però van netejar les excel·lències, per dir-ho així, seleccionant les millors, i les van combinar sense intercalar res de superflu o indigne o escolar. Perquè aquestes coses destrueixen el conjunt, com si fossin defectes o diluïments que s'introdueixen en grandeses que s'edifiquen conjuntament, fortificades per la seva relació mútua.
+
+## Capítol 11
+**[11.1]** L'amplificació és una virtut aliada a les anteriors. Es produeix quan els temes i les lluites es desenvolupen cíclicament, i s'hi van introduint contínuament grandeses variades que s'alternen, amb múltiples inicis i pauses, per intensificació.
+**[11.2]** Això pot passar mitjançant l'argumentació per llocs comuns, l'exageració d'arguments o proves, l'acumulació d'accions o passions —ja que hi ha infinites formes d'amplificació. Tanmateix, l'orador ha de saber que cap d'aquestes tècniques per si sola pot constituir una peça perfecta sense el sublim. L'única excepció són les lamentacions o, per Zeus, els passatges de registre humil. Dels altres recursos amplificadors, si en treieu l'element sublim, n'extraureu com qui diu l'ànima del cos. Immediatament, es debiliten i es buiden de la seva efectivitat, ja que no compten amb el reforç del sublim.
+**[11.3]** Ara bé, cal establir breument, per tal de ser clars, en què es diferencia del que acabem de dir allò que ara ensenyem —ja que allò era una delimitació dels temes principals i la seva ordenació en unitat—, i en què en general el sublim es distingeix de l'amplificació.
+## Capítol 12
+**[12.1]** Doncs bé, la definició dels autors de manuals no em satisfà gens. «L'amplificació», diuen, «és un discurs que confereix grandesa als temes tractats». Aquesta definició pot perfectament aplicar-se al sublim, a les passions i als recursos estilístics, ja que tots ells confereixen al discurs una certa grandesa. Però em sembla que es diferencien entre si pel fet que el sublim rau en l'elevació, mentre que l'amplificació també rau en la quantitat. Per això, el primer sovint es troba fins i tot en un sol pensament, mentre que l'altra sempre implica quantitat i una certa abundància.
+
+**[12.2]** I l'amplificació és, a grans trets, una completació a partir de totes les parts i tòpics que es relacionen amb els assumptes; reforça allò que s'ha establert amb la seva insistència, i es diferencia de la demostració en això: que aquesta demostra allò que es busca...
+...de la manera més rica, la grandesa s'escampa en múltiples direccions com un mar obert.
+**[12.3]** Per això, amb raó, l'orador té una gran ardor, ja que és més apassionat, i s'inflama amb ímpetu colèric, mentre que l'altre, establert en una solemnitat magnànima, no és fred, però tampoc està tan encès.
+**[12.4]** Però em sembla, estimadíssim Terencià, que precisament per aquests aspectes —i ho dic si també a nosaltres, com a grecs, se'ns permet opinar sobre això— Ciceró difereix de Demòstenes quant a grandesa. Un té la sublimitat més aviat abrupte, l'altre en l'efusió; i el nostre, per la violència de cada element i també per la força de la rapidesa i l'habilitat, es podria comparar amb quelcom que crema i arrasa alhora, com un llamp o un raig. Ciceró, en canvi, com un incendi que s'estén per tot arreu, es propaga i devora per tots costats, amb un foc sempre abundant i persistent que es transmet de manera diversa en ell mateix i es reanima per successió.
+
+**[12.5]** Però vosaltres ho jutjaríeu millor. El sublim demostènic, excessivament elevat, té el seu moment en les vehemències i les passions intenses, quan cal impressionar completament l'oient. El flux, en canvi, té lloc quan cal inundar l'ànima: és adequat sobretot per a descripcions de llocs i epílegs, digressions i tots els passatges descriptius i epidíctics, històries i tractats de ciències naturals, i no poques altres parts.
+## Capítol 13
+**[13.1]** Que Plató, però (hi torno), fluint silenciosament, no es fa menys grandiós, ho saps tu que has llegit el passatge de la *República*.
+«Els que ignoren la saviesa i la virtut», diu, «sempre acompanyats de banquets i coses així, van cap avall, sembla, i així vaguen tota la vida. Mai no van alçar la mirada cap a allò vertader i elevat, ni s'hi van elevar, ni mai tastaren un plaer ferm i pur. Sinó que, a la manera del bestiar, sempre mirant cap avall i inclinats sobre la terra i les taules, es nodreixen com el bestiar, omplint-se i copulant. I per l'avarícia d'aquestes coses es donen cops de peu i es cornegen amb banyes de ferro i ungles, i es maten per insaciabilitat».
+
+**[13.2]** Aquest autor ens mostra, si no volem passar-ho per alt, que hi ha també una altra via cap al sublim, a més de les que hem exposat. Quina és, doncs, aquesta via? La imitació i emulació dels grans escriptors i poetes del passat. I d'aquest propòsit, amic meu, mantinguem-nos-hi ferms, perquè un esperit aliè inspira molts, de la mateixa manera que es diu de la Pítia quan s'acosta al trípode. Allà hi ha una crevassa de la terra que exhala, segons diuen, un vapor diví. Immediatament, queda prenyada d'aquell poder sobrenatural i profetitza per inspiració divina. Així, de la grandesa natural dels antics certes emanacions arriben a les ànimes dels qui els emulen, com des de boques sagrades. Inspirats per elles, fins i tot els qui no són gaire profètics s'entusiasmen per la grandesa dels altres.
+**[13.3]** Heròdot va ser l'únic que va esdevenir completament homèric? Estesícor ho va ser abans que ell, i també Arquíloc, però més que tots ells Plató, que va adaptar al seu estil infinites derivacions d'aquella font homèrica. I potser hauríem necessitat proves d'això, si no fos que Ammoni i els seus deixebles ho han classificat i recollit per escrit.
+**[13.4]** Això no és robatori, sinó una reproducció com la que es fa de belles fisonomies o creacions artístiques. I em sembla que tampoc hauria pogut florir tant en els dogmes filosòfics ni hauria pogut entrar tan sovint en matèries i expressions poètiques, si no hagués competit amb totes les seves forces amb Homer per la primacia, com un jove rival contra un ja admirat. Potser ho feia amb excessiva rivalitat i com lluitant amb llança, però no sense profit va rivalitzar. Perquè "bona és aquesta discòrdia per als mortals", segons Hesíode.
+
+**[14.14]** Així doncs, també nosaltres, quan treballem en quelcom que necessita elevació retòrica i grandesa d'esperit, fem bé de figurar-nos com hauria dit Homer aquesta mateixa cosa, com l'haurien elevat Plató o Demòstenes, o Tucídides en la història. Aquests personatges, quan se'ns presenten per emulació, resplandeixen davant nostre.
+**[14.2]** Això elevarà les ànimes cap als models que imaginem; i encara més, si afegim també aquesta reflexió: com hauria escoltat Homer o Demòstenes això que dic, si hi fossin presents, o què haurien sentit al respecte? Perquè realment és una gran prova imaginar-se aquest tribunal i teatre per als propis discursos, i rendir comptes dels escrits davant d'herois tan grans com a jutges i testimonis.
+**[14.3]** Però encara més estimulant és afegir-hi: com escoltarien les generacions futures el que he escrit? Però si algú des del principi té por de dir quelcom que sobrepassi la seva pròpia vida i temps, aleshores el que concep aquesta ànima serà forçosament incomplet i cec. S'enboirarà sense arribar a completar-se per a les generacions futures.
+## Capítol 15
+
+per millorar la claredat",
+        "Substituit 'sota l'impuls de' per 'mogut per'",
+        "Reordenat 'el de la dels discursos la vividesa' per 'el dels discursos, la vividesa'",
+        "Canviat 'el més aplicat a portar a la tragèdia' per 'el més hàbil representant'",
+        "Substituit 'tampoc no és covard per atacar' per 'tampoc no tem enfrontar-se a'",
+        "Eliminat l'ús excessiu de guions largues i incisos embolicats"
+
+amb la cua es fueteja ambdós costats i l'esperona per al combat.
+**[15.4]** Quan Heli lliura les regnes a Faetó: 
+ «Però no t'adrecis cap a l'èter libi, 
+ja que no té humitat en la seva mescla, 
+el teu carro descendirà», 
+diu, i després: 
+ «Condueix mantenint el curs de les set Plèiades.»
+Després d'escoltar això, el noi agafà les regnes; 
+esperonant els flancs dels cavalls alats
+els deixà anar, i ells van volar cap als replecs de l'èter.
+El pare, cavalcant darrere sobre l'esquena del Sirius, 
+guiava el fill amb consells: «Cap aquí, 
+gira el carro cap aquí, cap aquí.»
+No diries que l'ànima de qui escriu puja també al carro i, compartint el perill amb els cavalls, vola alhora amb ells? Perquè si no corregués a la mateixa velocitat que aquelles obres celestials, mai no hauria pogut imaginar-se semblants coses. Semblants són també els versos sobre Cassandra del mateix: 
+ «Però, oh troians amics dels cavalls.»
+**[15.5]** I quan Èsquil s'aventura amb les imatges més heroiques, com també els Set contra Tebes: 
+ «Set homes» —diu—, «capitans impetuosos, 
+sacrificant un toro sobre un escut lligat amb cordes negres, 
+i tocant amb les mans la sang del toro, 
+per Ares, Enio i el Terror amic de la sang»
+
+van jurar-se mútuament,
+conjurant-se la mort sense pietat —encara que de vegades Eurípides presenti conceptes no acabats i, per dir-ho així, crus i aspres, s'arrisca per ambició fins i tot en aquests perills.
+**[15.6]** En Èsquil, els palaus de Licurg entren paradoxalment en frenesí diví quan apareix Dionís:
+"Delira la casa, ja, el sostre entra en frenesí báquic; "
+Però Eurípides ha expressat aquesta mateixa idea d'una manera més suavitzada:
+"I tota la muntanya va entrar en frenesí báquic."
+**[15.7]** Sòfocles també s'ha imaginat magistralment l'Èdip moribund que s'enterra ell mateix amb un prodigi diví. I també l'aparició d'Aquil·les als grecs en el moment de marxar, quan es manifesta als qui s'allunyaven sobre la tomba. No sé si algú ha representat aquesta imatge de manera més viva que Simònides. Però és impossible d'enumerar-ho tot.
+**[15.8]** Les imatges dels poetes tenen, com he dit, una transgressió més mitològica que supera completament la versemblança. En canvi, en la imaginació retòrica allò més bonic és sempre el pràctic i el verídic. Les transgressions esdevenen terribles i monstruoses quan el discurs té quelcom de poètic i la ficció és fabulosa i es precipita cap a tota mena d'impossibilitats. Tal com ara fins i tot els hàbils oradors del nostre temps, com els actors tràgics, veuen Erínies, i aquests nobles no poden aprendre ni tan sols això: que qui diu "Orestes.
+
+Deixa'm! Tu, que ets una de les meves Erínies,
+em mantens al centre per llançar-me al Tàrtar.
+S'imagina això perquè delira.
+**[15.9]** Què pot fer, doncs, la fantasia retòrica? Sens dubte, aportar moltes altres qualitats als discursos per fer-los combatius i emotius, però quan es barreja amb els arguments pràctics, no només persuadeix l'oient, sinó que el sotmet. «I si algú», diu, «escoltés ara mateix crits davant dels tribunals, i després algú digués que s'ha obert la presó i que els presoners fugen, cap persona, ni vell ni jove, seria tan indiferent com per no acudir a ajudar tant com pogués. Però si algú vingués i digués que aquest és qui els ha alliberat, sense ni escoltar-lo seria executat a l'instant».
+**[15.10]** Com també Hipèrides, quan fou acusat perquè havia votat alliberar els esclaus després de la derrota: «Aquest decret», va dir, «no el va escriure l'orador, sinó la batalla de Queronea». En efecte, mentre l'orador feia arguments pràctics, alhora feia servir la fantasia, per això va superar els límits de la persuasió amb la seva audàcia.
+**[15.11]** Però naturalment, en tots aquests casos sempre escoltem el més fort, per això som arrossegats de l'argumentació cap a allò que sorprèn per la fantasia, cosa que amaga l'element pràctic enlluernant-lo. I no ens passa això sense raó: quan dues forces es combinen en una, sempre la més forta atreu cap a si el poder de l'altra.
+
+**[15.12]** Amb això n'hi ha prou pel que fa als pensaments sublims que neixen de la grandesa d'ànim, de la imitació o de la imaginació.
+## Capítol 16
+**[16.1]** A continuació cal tractar les figures retòriques. En efecte, també aquestes, si es treballen com cal, contribuirien molt a la grandesa, com he dit. Però com que ho examinar tot amb detall seria una tasca massa feixuga —que no té límits—, exposaré només alguns dels recursos que produeixen l'estil grandiloqüent, per demostrar el que m'he proposat.
+**[16.2]** Demòstenes aporta una demostració en el seu discurs *Sobre la corona*. Quin n'era l'ús natural? "No us vau equivocar, vosaltres que vau emprendre la lluita per la llibertat dels grecs. Teniu exemples propis d'això: no es van equivocar ni els de Marató ni els de Salamina ni els de Platea." 
+Però quan, com inspirat de sobte per un déu i posseït pel frenesí profètic, va pronunciar el jurament pels millors herois de Grècia —"No és possible que us equivoquéssiu, juro pels qui es van arriscar a Marató"—, és evident que amb aquesta sola figura del jurament (que aquí anomeno apostrofe) va elevar els avantpassats a la categoria de déus. Suggeria que cal jurar pels qui van morir així com si fossin déus. Va despertar en els jutges l'orgull dels qui es van arriscar allà, i va transformar la naturalesa de la demostració en sublim extraordinari i passió, donant-li la credibilitat de juraments estranys i sobrenaturals. 
+Al mateix temps, va transmetre als oients un discurs com un cant de victòria i un remei, perquè, alleugerits pels elogis, no se sentissin menys valents en la lluita contra Filip que no pas a Marató i Salamina.
+
+**[16.3]** Però diuen que en Eupòlis es troba la llavor del jurament:
+Car no, per la meva batalla de Marató,
+cap d'ells farà mal alegrement al meu cor.
+Ara bé, no és gran cosa que algú juri de qualsevol manera, sinó on, com, en quines circumstàncies i amb quina finalitat. Però allà no hi ha res més que un jurament, i davant d'atenencs encara afortunats i que no necessiten consolació. A més, el poeta no va jurar immortalitzant els homes perquè generi als oients un discurs digne de la seva virtut, sinó que es va desviar dels que van arriscar la vida cap a l'inanimat, cap a la batalla. En canvi, en Demòstenes el jurament està elaborat davant els derrotats, perquè Queronea no aparegui més als atenencs com una desgràcia. I alhora és demostració que no va cometre cap error, exemple, garantia, elogi i exhortació.
+**[16.4]** I com que s'enfrontava al retòric amb l'objecció: "Parles d'haver governat amb derrota, i després jures per victòries", per aquest motiu ho regula amb precisió i també condueix els termes amb seguretat, ensenyant que fins i tot en els arrebats bàquics cal mantenir la lucidesa: "Els que van arriscar la vida", diu, "a Marató i els que van combatre per mar a Salamina i a Artemisi i els que van formar en batalla a Platea." En cap lloc va dir "els que van vèncer", sinó que per tot arreu ha sostret astutament el nom del resultat, perquè era afortunat i contrari als esdeveniments de Queronea. Per això també, anticipant-se a l'oient, immediatament afegeix: "Als quals tots va enterrar públicament la ciutat, Esquines, no només els que van triomfar."
+
+## Capítol 17
+**[17.1]** No és convenient passar per alt en aquest punt una cosa que hem observat, estimadíssim amic, i serà ben breu: que els esquemes retòrics, per naturalesa, d'alguna manera són aliats del sublim i, al seu torn, reben d'ell un ajut meravellós. Però de quina manera i com ho explicaré? És particularment sospitós actuar amb astucia mitjançant esquemes, ja que dona peu a sospitar-ne emboscades, trampes, engany, i això especialment quan el discurs s'adreça a un jutge amb autoritat, sobretot a tirans, reis, governants, tots els qui ocupen posicions elevades. S'indigna immediatament si sent que un retòric hàbil el manipula amb esquemes com si fos un nen sense seny, i interpretant l'engany com un menyspreu cap a la seva persona, de vegades s'enfureix del tot, i encara que domini la seva ira, s'oposa completament a deixar-se persuadir pel discurs. Per això l'esquema sembla excel·lent precisament quan això mateix passa desapercebut: que és un esquema.
+**[17.2]** Així doncs, el sublim i la passió es converteixen en antídot i auxili admirable contra la sospita de manipulació, i d'alguna manera l'artifici de l'astucia, envoltat per la bellesa i la grandesa, des d'aleshores s'esvaeix i evita tota suspicàcia. N'és prova suficient el passatge esmentat abans: "pels homes de Marató". Per quin mitjà amagà aquí l'orador l'esquema? És evident: amb la mateixa llum. Gairebé igual que les llums tènues s'esvaeixen envoltades per la claror del sol, així els sofismes de la retòrica els esvaeix la grandesa que es difon per tot arreu.
+
+**[17.3]** Quelcom semblant passa també en la pintura: quan l'ombra i la llum estan disposades en paral·lel sobre el mateix pla amb els colors, la llum primer se'ns presenta i no sols sembla destacada sinó també molt més propera. Doncs bé, també en els discursos les passions i el sublim, que són més propers a les nostres ànimes tant per una certa afinitat natural com per la seva brillantor, sempre es manifesten abans que les figures i eclipsen la seva tècnica, mantenint-la com sota un vel.
+## Capítol 18
+**[18.1]** I què direm d'aquelles preguntes i interrogacions? No és cert que amb aquestes mateixes figures els arguments esdevenen molt més pràctics i solemnes? "O és que voleu anar d'aquí d'allà preguntant-vos els uns als altres: 'Es diu res de nou?' Doncs què hi pot haver de més nou que un home macedoni que fa la guerra a Grècia? 'Ha mort Filip?' 'No, per Zeus, però està malalt.' 'I què us importa? Car encara que li passi quelcom, aviat en fareu un altre Filip.'" I de nou diu: "Naveguem contra Macedònia". "On ancorem, doncs?", va preguntar algú. "La mateixa guerra trobarà els punts febles dels afers de Filip." Dit simplement, això hauria estat del tot inferior, però ara l'ímpetu entusiasta i el to agut de la pregunta i resposta, i el fet de respondre's a si mateix com si fos un altre, no sols ha fet més sublim l'expressió mitjançant la figura sinó també més convincent.
+
+## Capítol 20
+**[20.1]** La convergència de figures també és especialment eficaç. Quan dues o tres s'uneixen com una associació, es combinen per aportar força, persuasió i bellesa. Això passa amb els passatges contra Medias, on es combinen anàfores i descripcions vívides entrellaçades amb asíndets: «Qui pega pot fer moltes coses, algunes de les quals la víctima ni seria capaç d'explicar a un altre: amb el gest, amb la mirada, amb la veu.
+**[20.2]** Perquè el discurs no s'aturi en els mateixos elements (la quietud porta immobilitat, però el desordre porta passió, que és moviment i agitació de l'ànima), salta immediatament a altres asíndets i anàfores: 'amb el gest, amb la mirada, amb la veu, quan actua com un insolent, quan ho fa com un enemic, quan amb els punys, quan amb la palmada al rostre.' L'orador fa exactament el mateix que qui pega: colpeja la ment dels jutges amb aquest atac continuat. I des d'aquí, com les tempestes, torna a atacar: 'quan amb els punys, quan amb la palmada al rostre', diu; 'això commou, això trastorna les persones, no avesades a ser humiliades; ningú que expliqués aquests fets seria capaç de transmetre la seva gravetat.'
+**[20.3]** Així conserva plenament la naturalesa de les anàfores i els asíndets amb el canvi continu. D'aquesta manera, el seu ordre esdevé desordenat i, al contrari, el desordre adopta un cert ordre.»
+
+## Capítol 21
+**[21.1]** Endavant, afegeix-hi els connectors, si vols, com fan els seguidors d'Isòcrates: «Cal no oblidar, certament, que qui pega faria moltes coses: primer amb el gest, després amb la mirada, i encara amb la mateixa veu». Si continues així aquest desenvolupament ordenat, veuràs com la passió, que estava comprimida i s'anava asprant, si l'allises amb connectors fins a convertir-la en fluïdesa, cau sense força i s'apaga a l'instant. És com si algú lligués els cossos dels corredors: els treia l'impuls. Així la passió, impedida pels connectors i altres afegits, s'irrita, perquè perd la llibertat de la carrera i el sortir disparada com d'una catapulta.
+## Capítol 22
+**[22.1]** De la mateixa categoria cal considerar els hipèrbats. Són el canvi d'ordre natural de paraules o pensaments i el caràcter més fidel d'una passió combativa. Tal com els que de debò s'enfaden, s'espanten, s'indignen o pateixen gelosia o qualsevol altra emoció —són moltes i innombrables les passions, ningú no podria dir quantes—, quan es proposen una cosa, sovint salten a una altra. Intercalen elements irracionals, després tornen als primers punts, i arrossegats d'una banda a l'altra per l'angoixa com per un vent capritxós, canvien de mil maneres l'ordre natural de paraules, pensaments i seqüència. Així entre els millors escriptors la imitació, mitjançant els hipèrbats, es dirigeix cap a les obres de la naturalesa. L'art és perfecte quan sembla naturalesa, i la naturalesa reeixida quan conté art sense que es noti.
 
 ---
 
