@@ -16,8 +16,8 @@ raw = "".join(lines[10672:])
 raw = re.sub(r"\n\s*[\u2014\u2013_~\-]+\s*\d{3}\s*[\u2014\u2013_~\-]+\s*\n", "\n", raw)
 # Standalone three-digit page numbers on their own line
 raw = re.sub(r"\n\s*\d{3}\s*\n", "\n", raw)
-# Footer lines like "Nietzsche, Morgenröthe. 19" etc.
-raw = re.sub(r"\n\s*Nietz?sche,?\s*Morgen.{3,10}\.\s*\d+\**\s*\n", "\n", raw, flags=re.IGNORECASE)
+# Footer lines like "Nietzsche, Morgenröthe. 19" etc. (various OCR spellings)
+raw = re.sub(r"\n\s*Nietz?sche,?\s*M\w+r\w+e\.?\s*\d+\**\s*\n", "\n", raw, flags=re.IGNORECASE)
 # Small standalone numbers (page refs, footnote markers): "19'", "20*", "23**"
 raw = re.sub(r"\n\s*\d{1,2}['\*]*\s*\n", "\n", raw)
 
@@ -58,8 +58,35 @@ raw = raw.replace("\u2022 ", "")
 # Step 3: Join hyphenated words across lines
 raw = re.sub(r"(\w)-\s*\n\s*", lambda m: m.group(1), raw)
 
-# Step 4: Collapse multiple blank lines
+# Step 4: Collapse multiple blank lines and fix OCR line-spacing issues
 raw = re.sub(r"\n{3,}", "\n\n", raw)
+
+# Some OCR sections have each line separated by a blank line.
+# Join them: if a line doesn't end with paragraph-ending punctuation
+# and the next non-blank line is a continuation (starts with lowercase or punctuation),
+# remove the blank line between them.
+lines_list = raw.split("\n")
+new_lines = []
+i = 0
+while i < len(lines_list):
+    line = lines_list[i]
+    new_lines.append(line)
+    # Check if this is a content line followed by blank + continuation
+    if (i + 2 < len(lines_list)
+        and line.strip()
+        and lines_list[i+1].strip() == ""
+        and lines_list[i+2].strip()
+        and not re.match(r"^\d{3}\.\s*$", lines_list[i+2].strip())
+        and not re.match(r"^###", lines_list[i+2].strip())
+        # Current line doesn't end a paragraph
+        and not re.search(r"[.!?—]\s*$", line.strip())
+        # Next line looks like a continuation
+        and re.match(r"^[a-züöäA-ZÜÖÄ\"\u201e\u201c(]", lines_list[i+2].strip())):
+        # Skip the blank line
+        i += 2
+        continue
+    i += 1
+raw = "\n".join(new_lines)
 
 # Step 5: Split into aphorisms
 aph_pattern = re.compile(r"^(\d{3})\.\s*$", re.MULTILINE)
@@ -95,7 +122,20 @@ def clean_aphorism(text):
         para = para.strip()
         if para:
             cleaned.append(para)
-    return "\n\n".join(cleaned)
+
+    # Join short paragraphs that are just broken lines from OCR
+    # If a paragraph is short (< 80 chars) and doesn't end with sentence-ending punctuation,
+    # join it with the next one
+    merged = []
+    i = 0
+    while i < len(cleaned):
+        current = cleaned[i]
+        while i + 1 < len(cleaned) and len(current) < 80 and not re.search(r'[.!?"\u201d\u201c]\s*$', current):
+            i += 1
+            current = current + " " + cleaned[i]
+        merged.append(current)
+        i += 1
+    return "\n\n".join(merged)
 
 # OCR error fixes
 OCR_FIXES = [
@@ -164,6 +204,88 @@ OCR_FIXES = [
     ("trocken,,", "trocken,"),
     ("dciss", "dass"),
     ("Losegeld", "Lösegeld"),
+    ("Zi^ischenrede", "Zwischenrede"),
+    ("Cure n", "Curen"),
+    ("Nichts 2u sehr", "Nichts zu sehr"),
+    ("2u erreichen", "zu erreichen"),
+    ("noth wendig", "nothwendig"),
+    ("bebten", "besten"),
+    ("Feld -Apotheke", "Feld-Apotheke"),
+    ("Ausnahme -Eitelkeit", "Ausnahme-Eitelkeit"),
+    ("diegrossen", "die grossen"),
+    ("Nietzsche, MorgeorSthe. 19 ", ""),
+    ("MorgeorSthe", "Morgenröthe"),
+    ("jedesIntellectes", "jedes Intellectes"),
+    ("messen^", "messen,"),
+    ("ihn^", "ihn."),
+    ("Zufälligkeiten r ", "Zufälligkeiten: "),
+    ("welche' ", "welche "),
+    ("Einige' ", "Einige "),
+    ("eben' ", "eben "),
+    (" fiir ", " für "),
+    (" imd ", " und "),
+    (" ims ", " uns "),
+    (" lun ", " um "),
+    (" Eirifluss", " Einfluss"),
+    (" urehrenden ", " verehrenden "),
+    (" Wässer ", " Wasser "),
+    ("beihi ", "beim "),
+    ("Zeugtiiss", "Zeugniss"),
+    ("pbschon", "obschon"),
+    ("purpumglühenden", "purpurglühenden"),
+    ("lüfenschen", "Menschen"),
+    ("eixiem", "einem"),
+    ("d\u00abm", "dem"),
+    ("Manier\u005e", "Manier;"),
+    ("Narr. ^ B:", "Narr.\" — B:"),
+    ("an^ besten", "am besten"),
+    ("genügte^ ihn", "genügte, ihn"),
+    ("kommt es^ dass", "kommt es, dass"),
+    ("werdet^ nicht", "werden nicht"),
+    ("^ebt,", "giebt,"),
+    ("Vemunftgründe", "Vernunftgründe"),
+    ("thäteti!", "thäten!"),
+    ("-Gluth", "Gluth"),
+    ("•euch", "euch"),
+    (" ^ ", " "),
+    ("in der- halben", "in der halben"),
+    ("jade ", "jede "),
+    ("Morgenrötren", "Morgenröthen"),
+    ("—-Wenn", "— Wenn"),
+    ("Gedanken-Bauten", "Gedanken-Bauten"),
+    ("Menschen^", "Menschen,"),
+    ("jade ", "jede "),
+    ("Grossen und Ganzen", "Grossen und Ganzen"),
+    (" Vigt ", " lügt "),
+    ("grö^smüthig", "grossmüthig"),
+    ("furchten", "fürchten"),
+    ("Gt)ttes", "Gottes"),
+    (" in's Ideal ", " in's Ideal "),
+    ("Procrustes - Bett", "Prokrustesbett"),
+    ("Geistig -Armen", "Geistig-Armen"),
+    ("Morgenrötren", "Morgenröthen"),
+    ("Götter -Vorrecht", "Götter-Vorrecht"),
+    ("Prokrustes - Bett", "Prokrustesbett"),
+    ("Morgenrötren", "Morgenröthen"),
+    ("-^ Grund", "\u2014 Grund"),
+    ("schrecklicher^", "schrecklicher,"),
+    ("Nietxsche, Morgenröthe. , 22 ", ""),
+    ("Aus* beuter", "Ausbeuter"),
+    ("die Folge .", "die Folge ..."),
+    (" «des ", " des "),
+    ("•werden", "werden"),
+    ("liebensund", "liebens- und"),
+    (" ericennen", " erkennen"),
+    ("möchet", "möchtet"),
+    (" ,22 ", " "),
+    ("Seligkeiten\" an sich", "Seligkeiten\" an sich"),
+    # Fix 558 title OCR garble
+    ("' Aber auch nicht \u00f6eine Tilgenden verbergen!", "Aber auch nicht seine Tugenden verbergen!"),
+    ("Aber auch nicht \u00f6eine Tilgenden verbergen!", "Aber auch nicht seine Tugenden verbergen!"),
+    ("\u00f6eine Tilgenden", "seine Tugenden"),
+    ("JEitelkeit", "Eitelkeit"),
+    ("s6hen", "sehen"),
+    ("Unreinlichkeiteti", "Unreinlichkeiten"),
     # Clean up stray punctuation artifacts
     ("  ", " "),
 ]
@@ -193,10 +315,21 @@ def fix_ocr(text):
     return text
 
 def get_title(text):
-    m = re.match(r"^(.+?)\s*[—]\s*", text)
+    # Try to match "Title. — text" or "Title — text"
+    m = re.match(r"^(.+?)\s*\u2014\s*", text)
     if m:
-        return m.group(1).strip().rstrip(".")
-    return text.split("\n")[0].strip().rstrip(".")
+        title = m.group(1).strip().rstrip(".")
+        # Sanity check: title shouldn't be too long (>100 chars probably means no dash found)
+        if len(title) < 120:
+            return title
+    # Try matching "Title." at start followed by more text
+    m = re.match(r'^([^.!?]+[.!?])\s', text)
+    if m:
+        title = m.group(1).strip().rstrip(".")
+        if len(title) < 120:
+            return title
+    # Fallback: first sentence/phrase
+    return text[:80].split(".")[0].strip()
 
 # Missing aphorisms - text from standard 1881 edition
 missing_texts = {}
@@ -250,8 +383,10 @@ missing_texts[566] = (
     "unerträgliche Entbehrung."
 )
 
-# Fix 560 ending (truncated in OCR)
+# Fix 560 ending (truncated in OCR, and has text from 562 mixed in from out-of-order pages)
 aph_560_ending = " Thatsachen? Glauben die Meisten nicht, darin ohne guten oder schlechten Willen Nichts ändern zu können?"
+# Text from page 359 that belongs to 562 (not 560)
+aph_560_false_text = "dann nicht mehr vergisst"
 
 # Fix 565 (truncated)
 aph_565_supplement = " und jeder von uns kann bei Gutem, das er versteht, zehn Andere aufklären. Wo wir aber nicht verstehen, da sträuben wir uns und sind selten billig; dem Unbekannten gegenüber setzen wir uns leicht in Würde und Strenge, wie als ob der Blick in ein unaufgehelltes Chaos die Erhabenheit unserer Seele beweise."
@@ -269,8 +404,12 @@ for num in range(423, 576):
     elif num in aphorisms:
         text = aphorisms[num]
 
-        # Fix truncated aphorisms
+        # Fix truncated/corrupt aphorisms
         if num == 560:
+            # Remove false text from 562 that got mixed in due to out-of-order OCR pages
+            idx = text.find(aph_560_false_text)
+            if idx > 0:
+                text = text[:idx].rstrip()
             text = text.rstrip() + aph_560_ending
         if num == 565:
             text = text.rstrip() + aph_565_supplement
