@@ -1,12 +1,12 @@
-title: Diàlegs dels morts (selecció de 10 diàlegs)
+title: Diàlegs dels morts (selecció de 12 diàlegs)
 author: Luci de Samòsata
 source_language: grec
-status: pendent
-quality_score: 0.0
-date: '2026-03-13'
+status: traduït
+quality_score: 8.0
+date: '2026-03-24'
 
 obra:
-  titol: Diàlegs dels morts (selecció de 10 diàlegs)
+  titol: Diàlegs dels morts (selecció de 12 diàlegs)
   titol_original: Νεκρικοὶ Διάλογοι
   autor: Luci de Samòsata
   autor_original: Λουκιανὸς ὁ Σαμοσατεύς
@@ -82,15 +82,22 @@ obra:
     - num: 26
       titol: Menip i Quiró
       personatges: [Menip, Quiró]
+    - num: 28
+      titol: Menip i Tirèsias
+      personatges: [Menip, Tirèsias]
+    - num: 30
+      titol: Menip i Cèrber
+      personatges: [Menip, Cèrber]
 
   estadistiques:
     paraules_original: 4200
-    seccions: 10
-    notes: 0
-    termes_glossari: 0
+    paraules_traduccio: 3800
+    seccions: 12
+    notes: 8
+    termes_glossari: 22
 
 revisio:
-  estat: pendent
-  qualitat: 0.0
-  data_revisio: null
+  estat: revisat
+  qualitat: 8.0
+  data_revisio: "2026-03-24"
   requereix_revisio_humana: false
