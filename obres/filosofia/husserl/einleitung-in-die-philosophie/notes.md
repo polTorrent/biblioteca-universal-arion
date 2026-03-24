@@ -61,6 +61,22 @@ Kant apareix com la figura culminant de la filosofia moderna pre-fenomenològica
 
 ## Notes històriques [H]
 
+### [F8] Aristip de Cirene (c. 435–356 aC)
+
+Fundador de l'escola cirenaica, considerat deixeble de Sòcrates però filosòficament molt distant d'ell. Husserl el presenta com el representant de l'hedonisme en la seva forma primera i més pura: el plaer (ἡδονή) és l'únic bé, i el plaer sensible és el suprem. Husserl analitza la doctrina d'Aristip per mostrar que, malgrat el seu error fonamental (l'equiparació de tot valor amb el plaer), conté un apriori formal: el principi que, entre magnituds de valor homogènies, cal triar la més gran.
+
+### [F9] Franz Brentano (1838–1917)
+
+Mestre de Husserl a Viena, fonamental per a la gènesi de la fenomenologia. En les lliçons sobre axiologia i ètica, Husserl reconeix explícitament el deute amb Brentano quant a la formulació de l'imperatiu categòric com a principi del «millor entre l'assolible». En un full intercalat autocríticament, Husserl admet haver «recaigut» en les vies de pensament de Brentano i reconeix les limitacions d'una ètica purament basada en l'imperatiu categòric formal, especialment gràcies a l'objecció de Moritz Geiger (1907) sobre l'absurditat d'exigir a una mare que «calculi» si l'atenció al seu fill és el millor bé pràctic.
+
+### [F10] Epicur (341–270 aC) i l'hedonisme antic
+
+Husserl esmenta Epicur juntament amb Aristip com a representants de l'hedonisme ètic, és a dir, de la doctrina que identifica el bé amb el plaer. Tot i que Epicur proposava un hedonisme més refinat que Aristip (privilegiant els plaers espirituals i l'ataràxia), Husserl els agrupa com a formes d'«escepticisme ètic» o «negativisme», és a dir, com a negació d'una veritable ètica.
+
+### [F11] Els estoics i la διάθεσις
+
+Husserl recorre al concepte estoic de διάθεσις (disposició ferma) per designar l'ideal d'una personalitat èticament perfecta: aquella que mostra una direcció volitiva constant i conscient cap al millor, una convicció resoluta que es manté al llarg de tota la vida. Aquesta referència connecta l'ètica husserliana amb la tradició estoica de la virtut com a disposició estable del caràcter.
+
 ### [H1] Les lliçons de Friburg (1916–1920)
 
 Edmund Husserl va arribar a la Universitat de Friburg el 1916 com a successor de Heinrich Rickert a la càtedra de filosofia. Les lliçons sota el títol *Einleitung in die Philosophie* van ser impartides en diversos semestres: hivern 1916/17, estiu 1918 i hivern 1919/20. El text principal d'aquest volum correspon a la lliçó del semestre d'hivern 1919/20, que és la versió més elaborada i incorpora materials de les lliçons anteriors.
