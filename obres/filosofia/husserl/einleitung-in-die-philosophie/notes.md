@@ -162,3 +162,21 @@ Sofista grec, autor de la cèlebre tesi «L'home és la mesura de totes les cose
 ### [F26] El *Timeu* de Plató
 
 Diàleg tardà de Plató (c. 360 aC) que conté el gran mite cosmogònic platònic. Husserl l'interpreta com «la primera teleologia assajada sobre el fonament de l'apriori»: el Demiürg (δημιουργός, artesà diví), contemplant la Idea del Bé com a ideal suprem, configura la matèria (χώρα, receptacle) segons models ideals per crear el cosmos com el «millor possible». Husserl hi destaca: la doctrina de l'Eros (*Simposi*, *Fedre*) com a amor contemplatiu pels ideals purs; la Idea del Bé com a «sol» de tots els ideals (cf. la metàfora del sol a la *República* VI); i el Demiürg com a principi teleològic supratemporal. Husserl remarca que en Plató no hi ha una separació clara entre el Demiürg i la Idea del Bé, la qual cosa genera ambigüitats teològiques.
+
+## Notes filosòfiques addicionals [F] — Apèndix: Berkeley
+
+### [F27] L'immaterialisme de Berkeley
+
+En l'apèndix dedicat a Berkeley, Husserl exposa amb detall la tesi central de l'immaterialisme berkeleyà: *esse est percipi* — l'ésser de les coses materials consisteix exclusivament en el seu ser-percebudes. Berkeley no nega l'existència del món quotidià, sinó que reinterpreta «existència» com a presència en un esperit percipient. Les coses no són sinó complexos regulars d'idees sensibles (sensacions) que, per comoditat pràctica, agrupem sota noms unitaris. Husserl subratlla que Berkeley segueix amb conseqüència implacable els motius de la filosofia immanent que ja es trobaven en Locke, eliminant la distinció entre qualitats primàries i secundàries: si les secundàries són subjectives, les primàries — que no es poden representar sense les secundàries — també ho són. L'argument clau és que una idea només pot assemblar-se a una altra idea, mai a una suposada realitat material.
+
+### [F28] La doctrina berkeleyiana de la substància espiritual i de Déu
+
+Berkeley distingeix entre idees (passives, donades en la sensació) i esperits (actius, captats en la reflexió). El jo espiritual no és una «idea» sinó una *notion*: un principi actiu, substància espiritual, l'ésser de la qual consisteix en activitat. Aquesta distinció permet a Berkeley establir una metafísica espiritualista: tot ésser vertader és ésser espiritual. La inferència a Déu es fa per un nou gir de la prova teleològica: les impressions sensibles, que no depenen del nostre arbitri, han de tenir una causa exterior; aquesta causa no pot ser material (la matèria és passiva), sinó espiritual; la racionalitat, infinitud i teleologia de l'ordre natural exigeixen un esperit infinit i infinitament perfecte com a causa: Déu. Husserl valora aquesta construcció com una mostra de com la teoria del coneixement transforma els problemes metafísics i teològics.
+
+### [F29] Ernst Mach (1838–1916) i el positivisme empiriocrític
+
+Husserl observa que la interpretació berkeleyiana de la natura com a complexos de dades sensorials anticipa notablement les idees d'Ernst Mach i els seus seguidors, que redueixen la realitat física a «elements» (sensacions) i rebutgen les entitats metafísiques com a ficcions. Mach, físic i filòsof austríac, va influir profundament en el positivisme lògic del Cercle de Viena. Husserl nota la convergència però subratlla la diferència: Berkeley conserva la substància espiritual i Déu, mentre que Mach n'elimina tota metafísica.
+
+### [T8] Sobre *notion* en Berkeley
+
+Berkeley introdueix el terme *notion* per designar el tipus de captació que tenim de l'esperit, les activitats i les relacions — és a dir, d'allò que no és una «idea» passiva. La *notion* no és una representació sensible sinó una forma de coneixement directe del subjecte actiu, de les categories i del conceptual. En els escrits tardans de Berkeley, el concepte de *notion* s'amplia cap a una direcció que Husserl interpreta com una aproximació al platonisme.
