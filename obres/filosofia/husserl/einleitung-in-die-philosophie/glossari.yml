@@ -158,3 +158,47 @@ termes:
   - original: "Selbstverständlichkeit"
     traduccio: "evidència per si mateixa / obvietat"
     notes: "Allò que es dóna com a comprensible sense necessitat de demostració."
+
+  - original: "kategorischer Imperativ"
+    traduccio: "imperatiu categòric"
+    notes: "El principi suprem de la raó pràctica: fer el millor entre l'assolible segons el millor saber i consciència."
+
+  - original: "hypothetischer Imperativ"
+    traduccio: "imperatiu hipotètic"
+    notes: "Imperatiu condicionat a un fi pressuposat, per oposició al categòric que és incondicional."
+
+  - original: "Absorption / Absorptionsgesetz"
+    traduccio: "absorció / llei de l'absorció"
+    notes: "Principi ètic apriorístic: el bé superior absorbeix l'inferior en l'elecció; triar el menor bé és un mal ètic."
+
+  - original: "Kunstlehre"
+    traduccio: "art tècnica"
+    notes: "Disciplina pràctica que formula regles per a l'actuar correcte en un àmbit determinat (ciència, art, ètica)."
+
+  - original: "Güterlehre"
+    traduccio: "doctrina dels béns"
+    notes: "Ciència sistemàtica dels béns (Güter), les seves classes, ordres jeràrquics i lleis de connexió."
+
+  - original: "Gutwert / Daseinswert"
+    traduccio: "valor de bé / valor d'existència"
+    notes: "Valor que depèn de l'existència real de l'objecte, per oposició al valor estètic (Schönwert)."
+
+  - original: "Schönwert / Schönheitswert"
+    traduccio: "valor de bellesa / valor estètic"
+    notes: "Valor independent de la realitat de l'objecte, lligat al mode d'aparició."
+
+  - original: "Eudaimonia"
+    traduccio: "eudaimonia"
+    notes: "Del grec εὐδαιμονία (felicitat). Concepte central de l'ètica antiga, discutit per Husserl."
+
+  - original: "Gesinnung"
+    traduccio: "convicció / actitud interior"
+    notes: "La disposició volitiva habitual d'una persona; Husserl la distingeix del mer acte de voluntat momentani."
+
+  - original: "Selbstvervollkommnung"
+    traduccio: "autoperfeccionament"
+    notes: "L'ideal pràctic de la millora constant de la persona, derivat de l'imperatiu categòric."
+
+  - original: "Würde"
+    traduccio: "dignitat"
+    notes: "Predicat de valor específicament personal: la dignitat resulta del compliment de l'exigència ètica formal."
