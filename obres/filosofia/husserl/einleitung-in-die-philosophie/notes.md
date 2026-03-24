@@ -112,3 +112,53 @@ En la secció 11, Husserl es refereix a la gran obra de Locke (*An Essay concern
 ### [T6] Sobre *scientia intuitiva*
 
 Expressió llatina que Spinoza usa a l'*Ethica* (part V) per designar el grau més alt de coneixement: el coneixement de les coses singulars tal com se segueixen necessàriament de l'essència de Déu. Husserl la reprèn per mostrar com, en el sistema de Spinoza, la ciència natural assoliria el seu valor definitiu només quan les seves proposicions fossin reconduïdes deductivament fins als principis metafísics últims.
+
+### [T7] Sobre *intellectus ectypus* i *intellectus archetypus*
+
+Distinció kantiana (cf. *Crítica del judici*, §77) entre dos tipus d'intel·lecte: l'*intellectus ectypus* (intel·lecte ectípic o reproductiu), que correspon al tipus humà i que depèn de donacions prèvies de l'experiència per formar-se representacions; i l'*intellectus archetypus* (intel·lecte arquetípic o productiu), un intel·lecte hipotètic per al qual pensar i crear coincidirien, és a dir, que en pensar les coses les produiria. Husserl discuteix críticament aquesta distinció per mostrar que definir conceptualment un intel·lecte arquetípic no equival a provar-ne la possibilitat, de la mateixa manera que en matemàtiques una definició consistent no garanteix l'existència de l'objecte definit.
+
+## Notes filosòfiques addicionals [F] — Secció 9: Teleologia
+
+### [F16] Recapitulació i transició a la teleologia
+
+La secció 9 comença amb una recapitulació de tot el gran apartat anterior (seccions 6–8), que tractava l'axiologia apriorística, l'ètica i l'ètica social. Husserl pren ara el tema que havia quedat en suspens des de la secció 6: l'oposició entre concepció naturalista i concepció teleològica del món. La pregunta fonamental és: pot el món sencer ser comprès com a conforme a fins, i si és així, quin tipus de ciència correspondria a aquesta comprensió?
+
+### [F17] El problema de Déu com a subjecte de la teleologia del món
+
+Husserl introdueix el concepte de Déu no com a dogma religiós sinó com a exigència formal del problema teleològic: si l'univers sencer ha de ser comprensible teleològicament, cal un subjecte que tingui tot l'univers com a camp d'acció pràctica, és a dir, que posseeixi «omnipresència teleològica». Husserl no afirma l'existència d'un tal subjecte, sinó que analitza les condicions formals de la seva possibilitat, mostrant que el problema de Déu sorgeix necessàriament de les ciències formals de l'axiologia i l'ètica.
+
+### [F18] Auguste Comte (1798–1857) i el positivisme
+
+Fundador del positivisme, Comte va proposar en el *Cours de philosophie positive* (1830–1842) la «llei dels tres estadis»: l'estadi teològic (animista/religiós), el metafísic (abstracte) i el positiu (científic). Segons Comte, la concepció teleològica del món no és més que una sublimació de l'animisme infantil. Husserl exposa aquesta posició per contrastar-la, però observa que les grans idees també tenen una etapa infantil i que l'origen psicològic d'una concepció no en determina el valor de veritat.
+
+### [F19] L'Ananke i la mística pitagòrica
+
+Husserl esmenta dos antecedents de la idea de causalitat natural: el principi pitagòric «Tot és nombre» (πάντα ἀριθμός), que intueix una estructura matemàtica del cosmos, i el concepte heraclític d'Ananke (Ἀνάγκη, Necessitat), la força que travessa i regeix tot el devenir del món. Ambdós, malgrat el seu caràcter especulatiu, van anticipar la idea científica de lleis naturals.
+
+### [F20] Xenòfanes de Colofó (c. 570–475 aC)
+
+Filòsof presocràtic, fundador de l'escola d'Elea. Husserl cita la seva doctrina de l'ἕν καὶ πᾶν (u i tot): la idea d'una única divinitat que governa el món, idèntica a la totalitat, que mou i dirigeix totes les coses pel poder del pensament. Xenòfanes va criticar l'antropomorfisme religiós dels grecs i va proposar un monoteisme filosòfic que Husserl interpreta com un estadi de la reflexió teleològica dins l'hilozoisme. (El text de l'edició conté els caràcters grecs corromputs; la lectura correcta és ἕν καὶ πᾶν.)
+
+### [F21] Heràclit d'Efes (c. 535–475 aC) i el Logos
+
+Husserl presenta la filosofia d'Heràclit com una concepció teleològica del món ja plenament desenvolupada dins el marc hilozoístic. El Logos (λόγος) heraclític és el principi diví d'un ordre racional que governa immanentment tot el devenir del món, inseparable del flux del devenir. La tesi fonamental «Tot ésser és devenir» expressa que el món és un procés infinit de vida en el qual oposats lluiten i, a través d'aquesta lluita, es manté una tendència racional. Husserl subratlla que en Heràclit no hi ha cap Déu separat com a esperit: el Logos és una llei eterna immanent.
+
+### [F22] Empèdocles d'Agrigent (c. 494–434 aC)
+
+Husserl situa Empèdocles com el primer filòsof que opera una separació (encara mig mítica) entre el material i el psíquic. Els quatre elements (terra, aigua, aire, foc) constitueixen la matèria, mentre que les forces motrius — Amor (φιλία) i Odi (νεῖκος) — són principis psíquics que causen les mescles i desmescles de les quals resulta el devenir de totes les coses.
+
+### [F23] Anaxàgores de Clazòmenes (c. 500–428 aC) i el νοῦς
+
+Successor conceptual d'Empèdocles, Anaxàgores condensa els dos principis psíquics en un sol νοῦς (intel·lecte, ment) ordenador del món, que configura el cosmos a partir de la barreja caòtica d'infinitament molts elements. Husserl valora aquest pas com l'establiment d'una realitat espiritual pròpia com a principi de l'ordre del món, tot i que Anaxàgores no va aconseguir deslliurar-se del tot de les expressions sensibles (el νοῦς com «el més fi, el més pur») ni aclarir el mode d'acció de l'esperit sobre la matèria.
+
+### [F24] L'atomisme: Leucip (s. V aC) i Demòcrit (c. 460–370 aC)
+
+Husserl presenta l'atomisme com la primera concepció purament naturalista del món i com el primer monisme materialista. Contra el dualisme psicofísic d'Anaxàgores, l'atomisme afirma que no hi ha cap diferència essencial entre el físic i el psíquic: tot el que és, és material, consistent en àtoms que es diferencien exclusivament per predicats geomètrics i mecànics (grandària, forma, posició, moviment). Husserl reconeix que l'atomisme va crear el concepte cientificonatural de matèria i va anticipar genialment els pensaments fonamentals de l'explicació mecànica de la natura, però en critica l'absurditat: les vivències de consciència (ira, alegria, judicis, voluntat) no són espacials ni esteses, i això és donat amb evidència absoluta en la intuïció interna.
+
+### [F25] Protàgores d'Abdera (c. 490–420 aC)
+
+Sofista grec, autor de la cèlebre tesi «L'home és la mesura de totes les coses» (πάντων χρημάτων μέτρον ἐστὶν ἄνθρωπος). Husserl reconeix a Protàgores el mèrit d'haver descobert la relativitat dels judicis d'experiència externa (els colors, les qualitats tàctils, etc., depenen dels sentits de qui experimenta), però critica que generalitzés il·legítimament aquesta relativitat a tots els judicis, negant així tota veritat en si. Plató no va poder superar Protàgores respecte de la natura exterior, perquè no va veure el camí per obtenir, a partir d'experiències subjectivament relatives, judicis de veritat objectivament vàlida sobre la natura.
+
+### [F26] El *Timeu* de Plató
+
+Diàleg tardà de Plató (c. 360 aC) que conté el gran mite cosmogònic platònic. Husserl l'interpreta com «la primera teleologia assajada sobre el fonament de l'apriori»: el Demiürg (δημιουργός, artesà diví), contemplant la Idea del Bé com a ideal suprem, configura la matèria (χώρα, receptacle) segons models ideals per crear el cosmos com el «millor possible». Husserl hi destaca: la doctrina de l'Eros (*Simposi*, *Fedre*) com a amor contemplatiu pels ideals purs; la Idea del Bé com a «sol» de tots els ideals (cf. la metàfora del sol a la *República* VI); i el Demiürg com a principi teleològic supratemporal. Husserl remarca que en Plató no hi ha una separació clara entre el Demiürg i la Idea del Bé, la qual cosa genera ambigüitats teològiques.
