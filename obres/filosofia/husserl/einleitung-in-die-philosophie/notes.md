@@ -105,6 +105,10 @@ Husserl esmenta Hobbes com a contemporani de Descartes i punt de partida alterna
 
 Lambert apareix en el context del desenvolupament que va de Spinoza a Leibniz i Kant. El seu *Neues Organon* (1764) i la seva correspondència amb Kant van contribuir a la distinció entre ontologia formal i ontologia material que Husserl considera fonamental. Lambert va cercar una teoria de les formes del coneixement que anticipés elements de la fenomenologia.
 
+### [F15] L'*Essay concerning Human Understanding* de Locke
+
+En la secció 11, Husserl es refereix a la gran obra de Locke (*An Essay concerning Human Understanding*, 1690) com l'«obra fonamental clàssica» del psicologisme, és a dir, de la posició que redueix la investigació del coneixement a la psicologia empírica. Husserl contraposa l'enfocament de Locke al de Descartes: mentre que Locke situa el coneixement dins de la ciència empírica de la vida anímica, les *Meditationes* de Descartes obren el terreny per a una investigació del coneixement no psicològica, és a dir, transcendental.
+
 ### [T6] Sobre *scientia intuitiva*
 
 Expressió llatina que Spinoza usa a l'*Ethica* (part V) per designar el grau més alt de coneixement: el coneixement de les coses singulars tal com se segueixen necessàriament de l'essència de Déu. Husserl la reprèn per mostrar com, en el sistema de Spinoza, la ciència natural assoliria el seu valor definitiu només quan les seves proposicions fossin reconduïdes deductivament fins als principis metafísics últims.
