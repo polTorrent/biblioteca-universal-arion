@@ -154,9 +154,13 @@ Der Hemmschuh. — Moralisch zu leiden und dann zu hören, dieser Art Leiden lie
 
 Die Verachtung der Ursachen, der Folgen und der Wirklichkeit. — Jene bösen Zufälle, welche eine Gemeinde treffen, plötzliche Wetter oder Unfruchtbarkeiten oder Seuchen, leiten alle Mitglieder auf den Argwohn, dass Verstöße gegen die Sitte begangen sind oder dass neue Gebräuche erfunden werden müssen, um eine neue dämonische Gewalt und Laune zu beschwichtigen. Diese Art Argwohn und Nachdenken geht somit gerade der Ergründung der wahren natürlichen Ursachen aus dem Wege, sie nimmt die dämonische Ursache als die Voraussetzung. Hier ist die eine Quelle der erblichen Verkehrtheit des menschlichen Intellekts: und die andere Quelle entspringt daneben, indem man ebenso grundsätzlich den wahren natürlichen Folgen einer Handlung ein viel geringeres Augenmerk schenkte, als den übernatürlichen (den sogenannten Strafen und Gnaden der Gottheit). Es sind zum Beispiel bestimmte Bäder für bestimmte Zeiten vorgeschrieben: man badet, nicht um rein zu werden, sondern weil es vorgeschrieben ist. Man lernt nicht die wirklichen Folgen der Unreinlichkeit fliehen, sondern das vermeintliche Missfallen der Götter an der Versäumnis eines Bades. Unter dem Drucke abergläubischer Angst argwöhnt man, es müsse sehr viel mehr mit diesem Abwaschen der Unreinlichkeit auf sich haben, man legt zweite und dritte Bedeutungen hinein, man verdirbt sich den Sinn und die Lust am Wirklichen und hält dies zuletzt, nur insofern es Symbol sein kann, noch für wertvoll. So verachtet der Mensch im Banne der Sittlichkeit der Sitte erstens die Ursachen, zweitens die Folgen, drittens die Wirklichkeit, und spinnt alle seine höheren Empfindungen (der Ehrfurcht, der Erhabenheit, des Stolzes, der Dankbarkeit, der Liebe) an eine eingebildete Welt an: die sogenannte höhere Welt. Und noch jetzt sehen wir die Folge: wo das Gefühl eines Menschen sich erhebt, da ist irgendwie jene eingebildete Welt im Spiel. Es ist traurig: aber einstweilen müssen dem wissenschaftlichen Menschen alle höheren Gefühle verdächtig sein, so sehr sind sie mit Wahn und Unsinn verquickt. Nicht dass sie es an sich oder für immer sein müssten: aber gewiss wird von allen allmählichen Reinigungen, welche der Menschheit bevorstehen, die Reinigung der höheren Gefühle eine der allmählichsten sein.
 
-### 34. Moralische Gefühle und moralische Begriffe
+### 34. Aus der Gesellschaft der Denker
 
-Moralische Gefühle und moralische Begriffe. — Ersichtlich werden moralische Gefühle so übertragen, dass die Kinder bei den Erwachsenen starke Neigungen und Abneigungen gegen bestimmte Handlungen wahrnehmen und dass sie als geborene Affen diese Neigungen und Abneigungen nachmachen; im späteren Leben, wo sie sich voll von diesen angelernten und wohl geübten Affekten finden, halten sie ein nachträgliches Warum, eine Art Begründung, dass jene Neigungen und Abneigungen berechtigt sind, für eine Sache des Anstandes. Diese „Begründungen“ aber haben weder mit der Herkunft, noch dem Grade des Gefühls bei ihnen Etwas zu tun: man findet sich eben nur mit der Regel ab, dass man als vernünftiges Wesen Gründe für sein Für und Wider haben müsse, und zwar angebbare und annehmbare Gründe. Insofern ist die Geschichte der moralischen Gefühle eine ganz andere, als die Geschichte der moralischen Begriffe. Erstere sind mächtig vor der Handlung, letztere namentlich nach der Handlung, angesichts der Nötigung, sich über sie auszusprechen.
+Aus der Gesellschaft der Denker. — Inmitten des Ozeans des Werdens wachen wir auf einem Inselchen, das nicht grösser als ein Nachen ist, auf, wir Abenteuerer und Wandervögel, und sehen uns hier eine kleine Weile um: so eilig und so neugierig wie möglich, denn wie schnell kann uns ein Wind verwehen
+
+oder eine Welle über das Inselchen hinwegppülen, sodass Nichts mehr von uns da ist! Aber hier, auf diesem kleinen Raimie, finden wir andere Wandervogel und hören von früheren, — und so leben wir eine köstliche Minute der Erkenntniss und des Errathens, unter froh« lichem Flügelschlägen und Gezwitscher mit einander und abenteuern im Geiste hinaus auf den Ozean, nicht weniger stolz als er selber I
+
+315Sich entäussern. — Etwas von seinem Eigenthume fahren lassen, sein Recht aufgeben — macht Freude, wenn es grossen Reichthum anzeigt. Dahin gehört die Grrossmuth.
 
 ### 35. Gefühle und deren Abkunft von Urteilen
 
@@ -759,7 +763,6 @@ Regieren. — Die Einen regieren, aus Lust am Regieren; die Andern, um nicht reg
 
 Die grobe Konsequenz. — Man sagt mit großer Auszeichnung: „das ist ein Charakter!“ — ja! wenn er grobe Konsequenz zeigt, wenn die Konsequenz auch dem stumpfen Auge einleuchtet! Aber sobald ein feinerer und tieferer Geist waltet und auf seine höhere Weise folgerichtig ist, leugnen die Zuschauer das Vorhandensein des Charakters. Deshalb spielen verschlagene Staatsmänner ihre Komödie gewöhnlich hinter einem Deckmantel der groben Konsequenz.
 
-
 ### 183. Die Alten und die Jungen
 
 Die Alten und die Jungen. — „Es ist etwas Unmoralisches an den Parlamenten — so denkt Der und' Jener immer noch — , denn man darf da auch Ansichten gegen die Regierung haben!" — „Man muss immer die Ansicht von der Sache haben, welche der gnädige Herr befiehlt" — das ist das elfte Gebot in manchem braven alten Kopfe, namentlich im nördlichen Deutschland. Man lacht darüber wie über eine veraltete Mode: aber ehemals war es die Moral! Vielleicht, dass man auch wieder einmal über Das lacht, was jetzt, unter dem parlamentarisch erzogenen jüngeren Geschlechte als moralisch gilt: nämlich die Politik der Partei über die eigne Weisheit zu stellen und jede Frage des öffentlichen Wohles so zu beantworten, wie es gerade guten Wind für die Segel der Partei macht. „Man muss die Ansicht von der Sache haben, welche die Situation der Partei erheischt" — so würde der Kanon lauten. Im Dienste einer solchen Moral giebt es jetzt jede Art von Opfer, Selbstüberwindung und Martyrium.
@@ -825,6 +828,8 @@ Nietzsche, Morgenröthe. 12
 193Esprit und Moral, — Der Deutsche, welcher sich auf das Geheimniss versteht, mit Geist, Wissen und Gemüth langweilig zu sein, und sich gewohnt hat, die Langeweile als moralisch zu empfinden, — hat vor dem französischen esprit die Angst, er möchte der Moral die Augen ausstechen — und doch eine Angst und Lust, wie das Vöglein vor der Klapperschlange. Von den berühmten Deutschen hat vielleicht Niemand mehr esprit gehabt, als Hegel, — aber er hatte dafür auch eine so grosse deutsche Angst vor ihm, dass sie seinen eigenthümlichen schlechten Stil geschaffen hat. Dessen Wesen ist nämlich, dass ein Kern umwickelt und nochmals und wiederum umwickelt wird, bis er kaum noch hindurchblickt, verschämt und neugierig, — wie „junge Frau'n durch ihre Schleier blicken", um mit dem alten Weiberhasser Aeschylus zu reden — : jener Kern ist aber ein witziger, oft vorlauter Einfall über die geistigsten Dinge, eine feine, gewagte Wortverbindung, wie so Etwas in die Gesellschaft von Denkern gehört, als Zukost der Wissenschaft, — aber in jenen Umwickelungen präsentirt es sich als abstruse Wissenschaft selber und durchaus als höchst moralische Langeweile! Da hatten die Deutschen eine ihnen erlaubte Form des esprit und sie genossen sie mit solchem ausgelassenen Entzücken, dass Schopenhauer's guter, sehr guter Verstand davor stille stand, — er hat zeitlebens gegen das Schauspiel, welches ihm die Deutschen boten, gepoltert, aber es nie sich zu erklären vermocht.
 
 179
+
+### 193. Esprit und Moral, Esprit und Moral, — Der Deutsche, welcher sich  auf das Geheimniss versteht, mit Geist, Wissen und Gemüth langweilig zu sein, und sich gewohnt hat, die  Langeweile als moralisch zu empfinden, — hat vor dem  französischen esprit die Angst, er möchte der Moral  die Augen ausstechen — und doch eine Angst und Lust,  wie das Vöglein vor der Klapperschlange. Von den  berühmten Deutschen hat vielleicht Niemand mehr esprit  gehabt, als Hegel, — aber er hatte dafür auch eine so  grosse deutsche Angst vor ihm, dass sie seinen eigenthümlichen schlechten Stil geschaffen hat. Dessen Wesen  ist nämlich, dass ein Kern umwickelt und nochmals und  wiederum umwickelt wird, bis er kaum noch hindurchblickt, verschämt und neugierig, — wie „junge Frau'n  durch ihre Schleier blicken", um mit dem alten Weiberhasser Aeschylus zu reden — : jener Kern ist aber ein  witziger, oft vorlauter Einfall über die geistigsten Dinge,  eine feine, gewagte Wortverbindung, wie so Etwas in  die Gesellschaft von Denkern gehört, als Zukost  der Wissenschaft, — aber in jenen Umwickelungen präsentirt es sich als abstruse Wissenschaft selber und  durchaus als höchst moralische Langeweile! Da hatten  die Deutschen eine ihnen erlaubte Form des esprit  und sie genossen sie mit solchem ausgelassenen Entzücken, dass Schopenhauer's guter, sehr guter Verstand  davor stille stand, — er hat zeitlebens gegen das Schauspiel, welches ihm die Deutschen boten, gepoltert, aber  es nie sich zu erklären vermocht.
 
 ### 194. Eitelkeit der Morallehrer
 
@@ -905,6 +910,8 @@ haben! Schaffen wir den Begriff der Sünde aus der Welt — und schicken wir ihm
 - 192 -
 
 der Pfleger der Gesundheit; noch gehört die Lehre von dem Leibe und von der Diät nicht zu den Verpflichtungen aller niederen und höheren Schulen; noch giebt es keine stillen Vereine Solcher, welche sich unter einander verpflichtet haben, auf die Hülfe der Gerichte und auf Strafe und Rache an ihren Übelthätern zu verzichten; noch hat kein Denker den Muth gehabt, die Gesundheit einer Gesellschaft und der Einzelnen darnach zu bemessen, wie viel Parasiten sie ertragen kann, und noch fand sich kein Staatengründer, welcher die Pflugschar im Geiste jener freigebigen und mildherzigen Rede führte: „willst du das Land bauen, so baue mit dem Pfluge: da geneusst dein der Vogel und der Wolf, der hinter deinem Pfluge geht, — es geneusst dein alle Creatur/*
+
+### 202. Zur Pflege der Gesundheit. Zur Pflege der Gesundheit. — Man hat kaum  angefangen, über die Physiologie der Verbrecher nachzudenken und doch steht man schon vor der unabweislichen Einsicht, dass zwischen Verbrechern und Geisteskranken kein wesentlicher Unterschied besteht: vorausgesetzt, dass man glaubt, die übliche moralische  Denkweise sei die Denkweise der geistigen Gesundheit. Kein Glaube aber wird jetzt so gut noch geglaubt, wie dieser, und so scheue man sich nicht, seine  Consequenz zu ziehen und den Verbrecher wie einen  Geisteskranken zu behandeln: vor Allem nicht mit hochmüthiger Barmherzigkeit, sondern mit ärztlicher Klugheit, ärztlichem guten Willen. Es thut ihm Luftwechsel,  andere Gesellschaft, zeitweiliges Verschwinden, vielleicht  Alleinsein und eine neue Beschäftignng noth, — gut!  Vielleicht findet er es selber in seinem Vortheil, eine  Zeit hindurch in einem Gewahrsam zu leben, um so  Schutz gegen sich selber und einen lästigen tyrannischen Trieb zu finden, — g^t! Man soll ihm die Möglichkeit und die Mittel des Geheiltwerdens (der Ausrottung, Umbildung, Sublimirung jenes Triebes) ganz  klar vorlegen, auch, im schlimmen Falle, die Unwahrscheinlichkeit desselben; man soll dem unheilbaren Verbrecher, der sich selber zum Greuel geworden ist, die  Gelegenheit ziun Selbstmord anbieten. Diess als äusserstes Mittel der Erleichterung vorbehalten: soll man  Nichts verabsäimien, um vor Allem dem Verbrecher  den guten Muth und die Freiheit des Gemüthes wieder  zu geben; man soll Gewissensbisse wie eine Sache der  Unreinlichkeit ihm von der Seele wischen und ihm  Fingerzeige geben, wie er den Schaden, welchen er  vielleicht an dem Einen geübt, durch eine Wohlthat  am Anderen, ja vielleicht an der Gesammtheit ausgleichen und überbieten könne. Alles in äusserster Schonung! Und namentlich in Anonymität oder imter neuen  Namen und mit häufigerem Ortswechsel, damit die Unbescholtenheit des Rufes und sein künftiges Leben so  wenig wie möglich dabei Gefahr laufe. Jetzt zwar will  immer noch Der, welchem ein Schaden zugefügt ist,  ganz abgesehen davon, wie dieser Schaden etwa gut  zu machen ist, seine Rache haben und wendet sich  ihrethalben an die Gerichte, — und diess hält einstweilen unsere abscheulichen Strafordnungen noch aufrecht, sammt ihrer Krämerwage und dem Aufwiegenwollen der Schuld durch die Strafe: aber dürften  wir nicht hierüber hinaus kommen können? Wie erleichtert wäre das allgemeine Gefühl des Lebens, wenn  man mit dem Glauben an die Schuld auch vom alten  Instinct der Rache sich losmachte und es selbst als  eine feine Klugheit der Glücklichen betrachtete, mit  dem Christenthum den Segen über seine Feinde zu  sprechen und Denen wohlzuthun, die uns beleidigt  haben! Schaffen wir den Begriff der Sünde aus der  Welt — und schicken wir ihm den Begriff der Strafe  bald hinterdrein! Mögen diese verbannten Unholde  irgendwo anders fürderhin, als. unter Menschen, leben,  wenn sie durchaus leben wollen und nicht am eigenen  Ekel zu Ghrunde gehen! — Inzwischen erwäge man, dass  die Einbusse, welche die Gesellschaft und die Einzelnen  durch die Verbrecher erleiden, der Einbusse ganz gleichartig ist, welche sie von den Kranken erleiden: die  Kranken verbreiten Sorge, Missmuth, produciren nicht,  zehren den Ertrag Anderer auf, brauchen Wärter, Ärzte,  Unterhaltung und leben von der Zeit und den Kräften  der Gesunden. Trotzdem würde man jetzt Den als  unmenschlich bezeichnen, welcher dafiir an den Kranken  Rache nehmen wollte. Ehedem freilich that man diess;  in rohen Zuständen der Cultur und jetzt noch bei manchen wilden Völkern, wird der Kranke in der That als  Verbrecher behandelt, als die Gefahr der Gemeinde  und als Wohnsitz irgend eines dämonischen Wesens,  welches sich ihm in Folge einer Schuld einverleibt hat,  — da heisst es: jeder Kranke ist ein Schuldiger! Und  wir, — sollten wir noch nicht reif für die entgegengesetzte Anschauxmg sein? sollten wir noch mcht sagen  dürfen: jeder „Schuldige" ist ein Kranker? — Nein, die  Stunde dafiir ist noch nicht gekommen. Noch fehlen  vor Allem die Ärzte, fiir welche Das, was wir bisher  praktische Moral nannten, sich in ein Stück ihrer Heilkunst und Heilwissenschaft umgewandelt haben muss;  noch fehlt allgemein jenes hungrige Interesse an diesen  Dingen, das vielleicht einmal dem Sturm und Drang  jener alten religiösen Erregungen nicht unähnlich erscheinen wird; noch sind die Kirchen nicht im Besitz  der Pfleger der Gesundheit; noch gehört die Lehre von  dem Leibe und von der Diät nicht zu den Verpflichtungen aller niederen und höheren Schulen; noch giebt  es keine stillen Vereine Solcher, welche sich unter einander verpflichtet haben, auf die Hülfe der Gerichte  und auf Strafe und Rache an ihren Übelthätern zu verzichten; noch hat kein Denker den Muth gehabt, die  Gesundheit einer Gesellschaft und der Einzelnen darnach zu bemessen, wie viel Parasiten sie ertragen kann,  und noch fand sich kein Staatengründer, welcher die  Pflugschar im Geiste jener freigebigen und mildherzigen  Rede führte: „willst du das Land bauen, so baue mit  dem Pfluge: da geneusst dein der Vogel und der Wolf,  der hinter deinem Pfluge geht, — es geneusst dein  alle Creatur/*
 
 ### 203. Gegen die schlechte Diät
 
@@ -996,6 +1003,8 @@ Worin man sich kennt. — Sobald ein Thier ein anderes sieht, so misst es sich i
 
 213Die Menschen des verfehlten Lebens. — Die Einen sind aus solchem Stoffe, dass es der Ge-» Seilschaft erlaubt ist, Diess oder Jenes aus ihnen zu machen: xmter allen Umständen werden sie sich gut dabei befinden und nicht über ein verfehltes Leben zu klagen haben. Andere sind von zu besonderem Stoffe — es braucht desshalb noch kein besonders edler, sondern eben nur ein seltnerer zu sein — , als dass sie nicht sich schlecht befinden müssten, den einzigen Fall ausgenommen, dass sie ihrem einzigen Zwecke gemäss leben können: — in allen anderen Fällen hat die Gesellschaft den Schaden davon. Denn Alles, was dem Einzelnen als verfehltes, missrathenes Leben erscheint, seine ganze Bürde von Missmuth, Lähmung, Erkrankung, Reizbarkeit, Begehrlichkeit, wirft er auf die Gesellschaft zurück — und so bildet sich um sie eine schlechte dumpfe Luft und, im günstigsten Falle, eine Gewitterwolke.
 
+### 213. Die Menschen des verfehlten Lebens Die Menschen des verfehlten Lebens. —  Die Einen sind aus solchem Stoffe, dass es der Ge-»  Seilschaft erlaubt ist, Diess oder Jenes aus ihnen zu  machen: xmter allen Umständen werden sie sich gut  dabei befinden und nicht über ein verfehltes Leben  zu klagen haben. Andere sind von zu besonderem Stoffe  — es braucht desshalb noch kein besonders edler, sondern eben nur ein seltnerer zu sein — , als dass sie  nicht sich schlecht befinden müssten, den einzigen Fall  ausgenommen, dass sie ihrem einzigen Zwecke gemäss  leben können: — in allen anderen Fällen hat die Gesellschaft den Schaden davon. Denn Alles, was dem  Einzelnen als verfehltes, missrathenes Leben erscheint,  seine ganze Bürde von Missmuth, Lähmung, Erkrankung,  Reizbarkeit, Begehrlichkeit, wirft er auf die Gesellschaft  zurück — und so bildet sich um sie eine schlechte  dumpfe Luft und, im günstigsten Falle, eine Gewitterwolke.
+
 ### 214. Was Nachsicht!
 
 Was Nachsicht! — Ihr leidet, und verlangt, dass wir nachsichtig gegen euch sind, wenn ihr im Leiden den Dingen und Menschen Unrecht thut! Aber was liegt an unserer Nachsicht! Ihr aber solltet vorsichtiger um euer selbst willen sein! Das ist eine schöne Art, sich für sein Leiden so zu entschädigen, dass man noch dazu sein Urtheil schädigt! Auf euch selber fallt eure eigne Rache zurück, wenn ihr Etwas verunglimpft; ihr trübt damit euer Auge, nicht das der Anderen: ihr gewöhnt euch an das Falsch- und SchiefSehen!
@@ -1014,6 +1023,12 @@ Die Bösen und die Musik. — Sollte die volle Seligkeit der Liebe, welche im un
 
 Alles!" —
 
+### 215. Moral der Opferthiere. Moral der Opferthiere. — „Sich begeistert hingeben", „sich selber zum Opfer bringen" — diess sind  die Stichworte eurer Moral, und ich glaube es gerne,  dass ihr, wie ihr sagt, „es damit ehrlich meint": nur  kenne ich euch besser, als ihr euch kennt, wenn eure  „Ehrlichkeit" mit einer solchen Moral Arm in Arm zu  gehen vermag. Ihr seht von der Höhe derselben herab  auf jene andere nüchterne Moral, welche Selbstbeherrschung, Strenge, Gehorsam fordert, ihr nennt sie wohl  gar egoistisch, und gewiss! — ihr seid ehrlich gegen  euch, wenn sie euch missfallt, — sie muss euch missfallen! Denn indem ihr euch begeistert hingebt und  aus euch ein Opfer macht, geniesst ihr jenen Rausch  des Gedankens, nunmehr eins zu sein mit dem Mächtigen, sei es ein Gott oder ein Mensch, dem ihr euch  weiht: ihr schwelgt in dem Gefühle seiner Macht, die  eben wieder durch ein Opfer bezeugt ist. In Wahrheit  scheint ihr euch nur zu opfern, ihr wandelt euch vielmehr in Gedanken zu Göttern um und geniesst euch  als solche. Von diesem Genüsse aus gerechnet, — wie  schw^ach und arm dünkt euch jene „egoistische" Moral  des Gehorsams, der Pflicht, derVemünftigkeit: sie missfällt euch, weil hier wirklich geopfert und hingegeben  werden muss, ohne dass der Opferer sich in einen Gott  verwandelt wähnt, wie ihr wähnt. Kurz, ihr wollt den  Rausch und das Übermaass, und jene von euch verachtete Moral hebt den Finger auf gegen Rausch und  Übermaass, — ich glaube euch wohl, dass sie euch  Missbehagen macht!
+
+### 216. Die Bösen und die Musik. Die Bösen und die Musik. — Sollte die volle  Seligkeit der Liebe, welche im unbedingten Vertrauen liegt, jemals anderen Personen zu Theil geworden sein, als tief misstrauischen, bösen und galligen?  Diese nämlich gemessen in ihr die ungeheure, nie geglaubte und glaubliche Ausnahme ihrer Seele! Eines  Tages kommt jene gränzenlose, traumhafte Empfindung  über sie, gegen die sich ihr ganzes übriges heimliches  und sichtbares Leben abhebt: wie ein köstliches Räthsel  und Wunder, voll goldenen Glanzes und über alle Worte  und Bilder hinaus. Das unbedingte Vertrauen macht  stumm; ja, selbst ein Leiden und eine Schwere ist  in diesem seligen Stummwerden, wesshalb auch solche  vom Glück gedrückte Seelen der Musik dankbarer zu  sein pflegen, als alle anderen und besseren: denn durch  die Musik hindurch, sehen und hören sie, wie durch  einen farbigen Rauch, ihre Liebe gleichsam ferner,  rührender und weniger schwer geworden; Musik ist  ihnen das einzige Mittel, ihrem ausserordentlichen Zustande zuzuschauen und mit einer Art von Entfremdung und Erleichterung erst seines Anblicks theilhaft  zu werden. Jeder Liebende denkt bei der Musik: „sie  redet von mir, sie redet an meiner Statt, sie weiss 
+
+Alles!" —
+
 ### 217. Der Künstler
 
 Der Künstler. — Die Deutschen wollen durch den Künstler in eine Art erträumter Passion kommen; die Italiäner wollen durch ihn von ihren wirklichen Passionen ausruhen; die Franzosen wollen von ihm Gelegenheit, ihr Urtheil zu beweisen, und Anlässe zum Reden haben. Also seien wir billig!
@@ -1025,6 +1040,10 @@ Der Künstler. — Die Deutschen wollen durch den Künstler in eine Art erträum
 2l8.
 
 Mit seinen Schwächen als Künstler schalten. Wenn wir durchaus Schwächen haben sollen und sie als Gesetze über uns endlich auch anerkennen müssen, so wünsche ich Jedem wenigstens so viel künstlerische Kraft, dass er aus seinen Schwächen die Folie seiner Tugenden und durch seine Schwächen uns begehrlich nach seinen Tugenden zu machen verstehe: Das, was in so ausgezeichnetem Maasse die grossen Musiker verstanden haben. Wie häufig ist in Beethoven's Musik ein grober rechthaberischer, ungeduldiger Ton, bei Moz£irt eine Jovialität biederer Gesellen, bei der Herz und Geist ein Wenig fiirlieb nehmen müssen, bei Richard Wagner eine abspringende und zudringende Unruhe, bei der dem Geduldigsten die gte Laune eben abhanden kommen will: da aber kehrt er zu seiner Klraft zurück, und ebenso Jene; sie Alle haben uns mit ihren Schwächen einen Heisshimger nach ihren Tugenden und eine zehnmal empfindlichere Zunge für jeden Tropfen tonenden Geistes, tönender Schönheit, tönender Giite
+
+gemacht.
+
+### 218. Mit seinen Schwächen als Künstler schalten Mit seinen Schwächen als Künstler schalten.  Wenn wir durchaus Schwächen haben sollen und sie  als Gesetze über uns endlich auch anerkennen müssen,  so wünsche ich Jedem wenigstens so viel künstlerische  Kraft, dass er aus seinen Schwächen die Folie seiner  Tugenden und durch seine Schwächen uns begehrlich  nach seinen Tugenden zu machen verstehe: Das, was  in so ausgezeichnetem Maasse die grossen Musiker verstanden haben. Wie häufig ist in Beethoven's Musik  ein grober rechthaberischer, ungeduldiger Ton, bei  Moz£irt eine Jovialität biederer Gesellen, bei der Herz  und Geist ein Wenig fiirlieb nehmen müssen, bei Richard  Wagner eine abspringende und zudringende Unruhe,  bei der dem Geduldigsten die g^te Laune eben abhanden kommen will: da aber kehrt er zu seiner Klraft  zurück, und ebenso Jene; sie Alle haben uns mit ihren  Schwächen einen Heisshimger nach ihren Tugenden und  eine zehnmal empfindlichere Zunge für jeden Tropfen  tonenden Geistes, tönender Schönheit, tönender Giite 
 
 gemacht.
 
@@ -1098,6 +1117,10 @@ schlichten Mann als den schlechten Mann abschätzte! Man soll dem moralischen Ho
 
 Aus einer Disputation. — A: Freund, Sie haben sich heiser gesprochen! — B: So bin ich widerlegt. Reden wir nicht weiter davon,
 
+### 231. in seinem Geschmack, wie sclavisch vor Würden, Stän^ in seinem Geschmack, wie sclavisch vor Würden, Stän^  den, Trachten, Pomp und Prunk muss ein Volk gewesen  sein, als es das Schlichte als das Schlechte, den  schlichten Mann als den schlechten Mann abschätzte!  Man soll dem moralischen Hochmuthe der Deutschen  immer diess Wörtlein „schlecht" und Nichts weiter entgegenhalten!
+
+### 232. sich heiser gesprochen! sich heiser gesprochen! — B: So bin ich widerlegt.  Reden wir nicht weiter davon,
+
 ### 233. Die „Gewissenhaften"
 
 Die „Gewissenhaften". — Habt ihr Acht gegeben, was für Menschen am meisten Werth auf strengste Gewissenhaftigkeit legen? Die, welche sich vieler, erbärmlicher Empfindungen bewusst sind, ängstlich von sich und an sich denken und Angst vor Anderen haben, die ihr Inneres so sehr wie möglich verbergen wollen,
@@ -1116,11 +1139,15 @@ Scheu vor dem Ruhme. — A: Dass Einer seinem Ruhme ausweicht, dass Einer seinen
 
 weisen (oder, was das Selbe ist, ihn kalt und conventioneil annehmen). Diess beleidigt tief — und warum?
 
+### 235. Dank abweisen. Dank abweisen. — Man darf wohl eine Bitte abweisen, aber nimmermehr darf man einen Dank abweisen (oder, was das Selbe ist, ihn kalt und conventioneil annehmen). Diess beleidigt tief — und warum?
+
 ### 236. Strafe
 
 Strafe. — Ein seltsames Ding, unsere Strafe! Sie reinigt nicht den Verbrecher, sie ist kein Abbüssen: im Gegentheil, sie beschmutzt mehr, als das Verbrechen selber.
 
 237Eine Partei noth. — Es giebt eine lächerliche, aber nicht ungefährliche Betrübniss fast in jeder Partei: an ihr leiden alle Die, welche die jahrelangen, treuen und ehrenwerthen Verfechter der Parteimeinung waren und plötzlich, eines Tages, merken, dass ein viel Mächtigerer die Trompete in die Hand genommen hat. Wie wollen sie es ertragen, stumm gemacht zu sein! Und so werden sie laut und mitunter in neuen Tönen.
+
+### 237. Eine Partei noth. Eine Partei noth. — Es giebt eine lächerliche,  aber nicht ungefährliche Betrübniss fast in jeder Partei:  an ihr leiden alle Die, welche die jahrelangen, treuen  und ehrenwerthen Verfechter der Parteimeinung waren  und plötzlich, eines Tages, merken, dass ein viel Mächtigerer die Trompete in die Hand genommen hat. Wie  wollen sie es ertragen, stumm gemacht zu sein! Und so  werden sie laut und mitunter in neuen Tönen.
 
 ### 238. Das Streben nach Anmuth
 
@@ -1153,6 +1180,8 @@ Unabhängigkeit. — Unabhängigkeit (in ihrer schwächsten Dosis „Gedankenfre
 lieh annimmt, — er, der lange Das gesucht hat, was er beherrschen konnte, und Nichts gefunden hat, als sich selber.
 
 243Die zwei Richtungen. — Versuchen wir den Spiegel an sich zu betrachten, so entdecken wir endlich Nichts, als die Dinge auf ihm. Wollen wir die Dinge fassen, so kommen wir zuletzt wieder auf Nichts, als auf den Spiegel. — Diess ist die allgemeinste Geschichte der Erkenntniss.
+
+### 243. Die zwei Richtungen. Die zwei Richtungen. — Versuchen wir den  Spiegel an sich zu betrachten, so entdecken wir endlich  Nichts, als die Dinge auf ihm. Wollen wir die Dinge  fassen, so kommen wir zuletzt wieder auf Nichts, als  auf den Spiegel. — Diess ist die allgemeinste Geschichte  der Erkenntniss.
 
 ### 244. Freude am Wirklichen
 
@@ -1208,6 +1237,8 @@ Man erwäge! —  Der gestraft wird, ist nicht mehr Der, welcher die That gethan
 
 253Augenschein. — Schlimm! Schlimm! Was man am besten, am hartnäckigsten beweisen muss, das ist der Augenschn. Denn Allzuvielen fehlen die Augen, ihn zu sehen. Aber es ist so langweilig!
 
+### 253. Augenschein. Augenschein. — Schlimm! Schlimm! Was man  am besten, am hartnäckigsten beweisen muss, das ist  der Augensch^n. Denn Allzuvielen fehlen die Augen,  ihn zu sehen. Aber es ist so langweilig!
+
 ### 254. Die Vorwegnehmenden
 
 Die Vorwegnehmenden. — Das Auszeichnende, aber auch Gefahrliche in den dichterischen Naturen ist ihre erschöpfende Phantasie: die, welche Das, was wird und werden könnte, vorweg nimmt, vorweg geniesst, vorweg erleidet und im endlichen Augenblick des Geschehens und der That bereits müde ist. Lord Byron, der diess Alles zu gut kannte, schrieb in sein Tagebuch: „Wenn ich einen Sohn habe, so soll er etwas ganz Prosaisches werden — Jurist oder Seeräuber."
@@ -1238,11 +1269,17 @@ Glück derBösen. — Diese stillen, düsteren, bösen Menschen haben Etwas, das
 
 257Worte in uns gegenwärtig. — Wir drücken unsere Gedanken immer mit den Worten aus, die uns zur Hand sind. Oder lun meinen ganzen Verdacht auszudrücken: wir haben in jedem Momente eben nur den Gedanken, für welchen uns die Worte zur Hand sind, die ihn ungefähr auszudrücken vermögen.
 
+### 257. Worte in uns gegenwärtig. Worte in uns gegenwärtig. — Wir drücken  unsere Gedanken immer mit den Worten aus, die uns  zur Hand sind. Oder lun meinen ganzen Verdacht auszudrücken: wir haben in jedem Momente eben nur den  Gedanken, für welchen uns die Worte zur Hand sind,  die ihn ungefähr auszudrücken vermögen.
+
 ### 258. Dem Hunde schmeicheln
 
 Dem Hunde schmeicheln. — Man muss diesem Hunde nur einmal das Fell streichen: sofort knistert er und sprüht Fimken, wie jeder andere Schmeichler — und ist geistreich auf seine Art. Warum sollten wir ihn nicht so ertragen!
 
 259Der ehemalige Lobredner. — »,Er ist stumm über mich geworden, obwohl er die Wahrheit jetzt weiss und sie sagen köimte. Aber sie würde wie Rache klingen — und er achtet die Wahrheit so hoch, der Achtungswürdige!"
+
+- 229 ~
+
+### 259. Der ehemalige Lobredner. Der ehemalige Lobredner. — »,Er ist stumm  über mich geworden, obwohl er die Wahrheit jetzt  weiss und sie sagen köimte. Aber sie würde wie Rache  klingen — und er achtet die Wahrheit so hoch, der  Achtungswürdige!" 
 
 - 229 ~
 
@@ -1367,6 +1404,8 @@ Kindlich. — Wer lebt, wie die Kinder — also nicht um sein Brod kämpft und n
 
 Das Ich will Alles haben. — Es scheint, dass der Mensch überhaupt niir handelt, um zu besitzen: wenigstens legen die Sprachen ' diesen Gedanken nahe, welche alles vergangene Handeln so betrachten, als ob wir damit Etwas besässen („ich habe gesprochen, gekämpft, gesiegt": das ist, ich bin nun im Besitze meines Spruches, Kampfes, Sieges). Wie habsüchtig nimmt sich hierbei der Mensch aus! Selbst die Vergangenheit sich nicht entwinden lassen, gerade auch sie noch haben wollen!
 
+### 281. Das Ich will Alles haben. Das Ich will Alles haben. — Es scheint, dass  der Mensch überhaupt niir handelt, um zu besitzen:  wenigstens legen die Sprachen ' diesen Gedanken nahe,  welche alles vergangene Handeln so betrachten, als ob  wir damit Etwas besässen („ich habe gesprochen, gekämpft, gesiegt": das ist, ich bin nun im Besitze meines  Spruches, Kampfes, Sieges). Wie habsüchtig nimmt  sich hierbei der Mensch aus! Selbst die Vergangenheit  sich nicht entwinden lassen, gerade auch sie noch haben  wollen!
+
 ### 282. Gefahr in der Schönheit
 
 Gefahr in der Schönheit. — Diese Frau ist schon und klug: ach, wie viel klüger aber würde sie geworden sein, wenn sie nicht schon wäre!
@@ -1398,6 +1437,8 @@ Haus- und Schoossthiere undVerwandtes. — Giebt es etwas Ekelhafteres, als die 
 287. •
 
 Zwei Freunde. — Es waren Freunde, aber sie haben aufgehört, es zu sein, und sie knüpften von beiden Seiten zugleich ihre Freundschaft los, der Eine, weil er sich zu sehr verkannt glaubte, der Andere, weil er sich zu sehr erkannt glaubte — und Beide haben sich dabei getäuscht! — denn Jeder von ihnen kannte sich selber nicht genug.
+
+### 287. Zwei Freunde. Zwei Freunde. — Es waren Freunde, aber sie  haben aufgehört, es zu sein, und sie knüpften von  beiden Seiten zugleich ihre Freundschaft los, der Eine,  weil er sich zu sehr verkannt glaubte, der Andere, weil  er sich zu sehr erkannt glaubte — und Beide haben  sich dabei getäuscht! — denn Jeder von ihnen kannte  sich selber nicht genug.
 
 ### 288. Komödie der Edlen
 
@@ -1436,6 +1477,8 @@ Heilige. — Die sinnlichsten Männer sind es, welche vor den Frauen fliehn und 
 295Feinheit des Dienens. — Innerhalb der grossen Kunst des Dienens gehört es zu den feinsten Aufgaben»
 
 einem unbändig Ehrgeizigen zu dienen, der zwar der stärkste Egoist in Allem ist, aber durchaus nicht dafür gelten will (es ist diess gerade ein Stück seines Ehrgeizes), dem Alles nach Willen und Laune geschehen muss und doch immer so, dkss es den Anschein hat, als ob er sich aufopferte und selten fiir sich selber Etwas wolle.
+
+### 295. Feinheit des Dienens. Feinheit des Dienens. — Innerhalb der grossen  Kunst des Dienens gehört es zu den feinsten Aufgaben»  einem unbändig Ehrgeizigen zu dienen, der zwar der  stärkste Egoist in Allem ist, aber durchaus nicht dafür  gelten will (es ist diess gerade ein Stück seines Ehrgeizes), dem Alles nach Willen und Laune geschehen  muss und doch immer so, dkss es den Anschein hat,  als ob er sich aufopferte und selten fiir sich selber  Etwas wolle.
 
 ### 296. Das Duell
 
@@ -1497,6 +1540,8 @@ Geiz. — Unser Geiz beim Kaufen nimmt mit der Wohlfeilheit der Gegenstände zu,
 
 3o6. Griechisches Ideal. — Was bewunderten die Griechen an Odysseus? Vor Allem die Fähigkeit zur Lüge und zur listigen und furchtbaren Wiedervergeltung; den Umstanden gewachsen sein; wenn es gilt, edler erscheinen als der Edelste; sein können, was man will; heldenhafte Beharrlichkeit; sich alle Mittel zu Gebote stellen; Geist haben — sein Geist ist die Bewunderung der Gotter, sie lächeln, wenn sie daran denken — : diess Alles ist griechisches Ideal! Das Merkwürdigste daran ist, dass hier der Gegensatz von Scheinen und Sein gar nicht gefühlt und also auch nicht sittlich angerechnet wird. Gab es je so gründliche Schauspieler!
 
+### 306. Griechisches Ideal. Griechisches Ideal. — Was bewunderten die  Griechen an Odysseus? Vor Allem die Fähigkeit zur  Lüge und zur listigen und furchtbaren Wiedervergeltung; den Umstanden gewachsen sein; wenn es gilt,  edler erscheinen als der Edelste; sein können, was  man will; heldenhafte Beharrlichkeit; sich alle Mittel  zu Gebote stellen; Geist haben — sein Geist ist die  Bewunderung der Gotter, sie lächeln, wenn sie daran  denken — : diess Alles ist griechisches Ideal! Das Merkwürdigste daran ist, dass hier der Gegensatz von Scheinen und Sein gar nicht gefühlt und also auch nicht  sittlich angerechnet wird. Gab es je so gründliche  Schauspieler!
+
 ### 307. Facta! Ja Facta f icta!
 
 Facta! Ja Facta f icta! — Ein Geschichtsschreiber hat es nicht mit dem, was wirklich geschehen ist, sondern nur mit den vermeintlichen Ereignissen zu thun: denn nur diese haben gewirkt. Ebenso nur mit den vermeintlichen Helden. Sein Thema, die sogenannte Weltgeschichte, sind Meinungen über vermeintliche Handlungen und deren vermeintliche Motive, welche wieder Anlass zu Meinungen und Handlungen geben, deren Realität aber sofort wieder verdampft und nur als Dampf wirkt, — ein fortwährendes Zeugen und Schwangerwerden von Phantomen über den tiefen Nebeln der unergründlichen Wirklichkeit. Alle Historiker erzählen von Dingen, die nie existirt haben, ausser in der Vorstellung.
@@ -1521,6 +1566,8 @@ Die Gutmüthigen. — Die Gutmüthigen haben ihr Wesen durch die beständige Fur
 
 die er in Folge dessen gerne und mit Anmuth thut, nennt man seine Seele; — er gilt als seelenlos, wenn er Mühe und Härte bei inneren Bewegungen merken lässt.
 
+### 311. Die sogenannte Seele. Die sogenannte Seele. — Die Sunune innerer  Bewegungen, welche dem Menschen leicht fallen und  die er in Folge dessen gerne und mit Anmuth thut,  nennt man seine Seele; — er gilt als seelenlos, wenn er  Mühe und Härte bei inneren Bewegungen merken lässt.
+
 ### 312. Die Vergesslichen
 
 Die Vergesslichen. — In den Ausbrüchen der Leidenschaft und im Phantasiren des Traumes und des Irrsinns entdeckt der Mensch seine und der Menschheit Vorgeschichte wieder: die Thierheit mit ihren wilden Grimassen; sein Gedächtniss greift einmal weit genug rückwärts, während sein civilisirter Zustand sich aus dem Vergessen dieser Urerfahrungen, also aus- dem Nachlassen jenes Gedächtnisses entwickelt. Wer als ein Vergesslicher höchster Gattung allem Diesen immerdar sehr fem geblieben ist, versteht die Menschen nicht, — aber es ist ein Vortheil für Alle, wenn es hier und da solche Einzelne giebt, welche „sie nicht verstehen" und die gleichsam aus gottlichem Samen gezeugt und von der Vernunft geboren sind.
@@ -1529,13 +1576,9 @@ Die Vergesslichen. — In den Ausbrüchen der Leidenschaft und im Phantasiren de
 
 Der nicht mehr erwünschte Freund. — Den Freund, dessen Hoffnungen man nicht befriedigen kann, wünscht man sich lieber zum Feinde.
 
-### 34. Aus der Gesellschaft der Denker
+### 314. Aus der Gesellschaft der Denker. Aus der Gesellschaft der Denker. — Inmitten  des Ozeans des Werdens wachen wir auf einem Inselchen, das nicht grösser als ein Nachen ist, auf, wir  Abenteuerer und Wandervögel, und sehen uns hier eine  kleine Weile um: so eilig und so neugierig wie möglich, denn wie schnell kann uns ein Wind verwehen  oder eine Welle über das Inselchen hinwegppülen, sodass Nichts mehr von uns da ist! Aber hier, auf diesem  kleinen Raimie, finden wir andere Wandervogel imd  hören von früheren, — und so leben wir eine köstliche  Minute der Erkenntniss und des Errathens, unter froh«  lichem Flügelschlägen und Gezwitscher mit einander und  abenteuern im Geiste hinaus auf den Ozean, nicht  weniger stolz als er selber I
 
-Aus der Gesellschaft der Denker. — Inmitten des Ozeans des Werdens wachen wir auf einem Inselchen, das nicht grösser als ein Nachen ist, auf, wir Abenteuerer und Wandervögel, und sehen uns hier eine kleine Weile um: so eilig und so neugierig wie möglich, denn wie schnell kann uns ein Wind verwehen
-
-oder eine Welle über das Inselchen hinwegppülen, sodass Nichts mehr von uns da ist! Aber hier, auf diesem kleinen Raimie, finden wir andere Wandervogel und hören von früheren, — und so leben wir eine köstliche Minute der Erkenntniss und des Errathens, unter froh« lichem Flügelschlägen und Gezwitscher mit einander und abenteuern im Geiste hinaus auf den Ozean, nicht weniger stolz als er selber I
-
-315Sich entäussern. — Etwas von seinem Eigenthume fahren lassen, sein Recht aufgeben — macht Freude, wenn es grossen Reichthum anzeigt. Dahin gehört die Grrossmuth.
+### 315. Sich entäussern. Sich entäussern. — Etwas von seinem Eigenthume fahren lassen, sein Recht aufgeben — macht  Freude, wenn es grossen Reichthum anzeigt. Dahin  gehört die Grrossmuth.
 
 ### 316. Schwache Secten
 
@@ -1544,6 +1587,8 @@ Schwache Secten. — Die Secten welche fühlen, dass sie schwach bleiben werden,
 317Das Urtheil des Abends. — Wer über sein Tages- und Lebenswerk nachdenkt, wenn er am Ende und müde ist, kommt gewöhnlich zu einer melancholischen Betrachtung: das liegt aber nicht am Tage und am Leben, sondern an der Müdigkeit. — Mitten im Schaffen nehmen wir uns gewöhnlich keine Zeit zu Urtheilen über das Leben und das Dasein, und mitten im Geniessen auch nicht: kommt es aber einmal doch dazu, so geben wir Dem nicht mehr Recht, welcher auf den
 
 siebenten Tag und die Ruhe wartete, um Alles, was da ist, sehr schon zu finden, — er hatte den besseren Augenblick verpasst.
+
+### 317. Das Urtheil des Abends. Das Urtheil des Abends. — Wer über sein  Tages- und Lebenswerk nachdenkt, wenn er am Ende  und müde ist, kommt gewöhnlich zu einer melancholischen Betrachtung: das liegt aber nicht am Tage und  am Leben, sondern an der Müdigkeit. — Mitten im  Schaffen nehmen wir uns gewöhnlich keine Zeit zu  Urtheilen über das Leben und das Dasein, und mitten  im Geniessen auch nicht: kommt es aber einmal doch  dazu, so geben wir Dem nicht mehr Recht, welcher auf den  siebenten Tag und die Ruhe wartete, um Alles, was da  ist, sehr schon zu finden, — er hatte den besseren Augenblick verpasst.
 
 ### 318. Vorsicht vor den Systematikern!
 
@@ -1583,6 +1628,8 @@ schwirrt fortwährend von den abgeschossenen Pfeilen und Pfeilchen ihrer Bosheit
 
 - 253 -
 
+### 324. Philosophie der Schauspieler. Philosophie der Schauspieler. — Es ist der  beglückende Wahn der grossen Schauspieler, dass es  den historischen Personen, welche sie darstellen, wirklich so zu Muthe gewesen sei, wie ihnen bei ihrer Darstellung, — aber sie irren sich stark darin: ihre nachahmende und errathende Kraft, die sie gerne für ein  hellseherisches Vermögen ausgeben mochten, dringt  nur gerade tief genug ein, um Gebärden, Töne und  Blicke und überhaupt das Äusserliche zu erklären; das  heisst, der Schatten von der Seele eines grossen Helden, Staatsmannes, Kriegers, Ehrgeizigen, Eifersüchtigen,  Verzweifelnden wird von ihnen erhascht, sie dringen  bis nahe an die Seele, aber nicht bis in den Geist ihrer  Objecte. Das wäre freilich eine schöne Entdeckung,  dass es nur des hellseherischen Schauspielers bedürfe,  statt aller Denker, Kenner, Fachmänner, um in's Wesen  Irgend eines Zustandes hinabzuleuchten 1 Vergessen wir  doch nie, sobald derartige Anmaassungen laut werden,  dass der Schauspieler eben ein idealer Affe ist und so  sehr Affe, dass er an das „Wesen** und das „Wesentliche" gar nicht zu glauben vermag: Alles wird ihm  Spiel, Ton, Gebärde, Bühne, Coulisse und Publicum.
+
 ### 325. Abseits leben und glauben
 
 Abseits leben und glauben. — Das Mittel, um der Prophet und Wundermann seiner Zeit zu werden, gilt heute noch wie vor Alters: man lebe abseits, mit wenig Kenntnissen, einigen Gedanken und sehr viel Dünkel, — endlich stellt sich der Glaube bei uns ein, dass die Menschheit ohne uns nicht fortkommen könne, weil wir nämlich ganz ersichtlich ohne sie fortkommen. Sobald dieser Glaube da ist, findet man auch Glauben. Zuletzt ein Rath für Den, der ihn brauchen mag (er wurde Wesley von seinem geistlichen Lehrer Böhler gegeben): „Predige den Glauben, bis du ihn hast, und dann wirst du ihn predigen, weil du ihn
@@ -1611,6 +1658,12 @@ Mhd eine Unvernunft verrathe, bei deren Anblick man nur Erbarmen und Rührung em
 
 Recht und Gränze. — Der Asketismus ist für Solche die rechte Denkweise, welche ihre sinnlichen Triebe ausrotten müssen, weil dieselben wüthende Raubthiere sind. Aber auch nur für Solche!
 
+### 329. Die Verleumder der Heiterkeit. Die Verleumder der Heiterkeit. — Tief vom  Leben verwundete Menschen haben alle Heiterkeit verdächtigt, als ob sie immer kindlich und kindisch sei  Mhd eine Unvernunft verrathe, bei deren Anblick man  nur Erbarmen und Rührung empfinden könne, wie  wenn ein dem Tode nahes Kind auf seinem Bette noch  seine Spielsachen liebkost. Solche Menschen sehen  unter allen Rosen verborgene und verhehlte Gräber;  Lustbarkeiten, Getümmel, fröhliche Musik erscheint  ihnen wie die entschlossene Selbsttäuschung des Schwerkranken, der noch einmal eine Minute den Rausch des  Lebens schlürfen will. Aber dieses Urtheil über die  Heiterkeit ist nichts Anderes, als deren Strahlenbrechung  auf dem düsteren Grunde der Ermüdung und Krankheit:  es ist selber etwas Rührendes, Unvernünftiges, zum  Mitleiden Drängendes, ja sogar etwas Kindliches und  Kindisches, aber aus jener zweiten Kindheit her»  welche dem Alter folgt und dem Tode voranläuft.
+
+### 330. Noch nicht genug! Noch nicht genug! — Es ist noch nicht genug,  eine Sache zu beweisen, man muss die Menschen zu  ihr auch noch verfuhren oder zu ihr erheben. Desshalb soll der Wissende lernen, seine Weisheit zu sagen:  und oft so, dass sie wie Thorheit klingt!
+
+### 331. Solche die rechte Denkweise, welche ihre sinnlichen Solche die rechte Denkweise, welche ihre sinnlichen  Triebe ausrotten müssen, weil dieselben wüthende Raubthiere sind. Aber auch nur für Solche!
+
 ### 332. Der aufgeblasene Stil
 
 Der aufgeblasene Stil. — Ein Künstler, der sein hochgeschwollenes Gefühl nicht im Werke entladen und sich so erleichtem, sondern vielmehr gerade das
@@ -1628,6 +1681,8 @@ Gefühl der Schwellung mittheilen will, ist schwülstig und sein Stil ist der au
 Der Wohlthätige. - Der Wohlthätige befriedigt ein Bedürfniss seines Gemüths, wenn er wohlthut. Je starker dieses Bedürfniss ist, um so weniger denkt er sich in den Anderen hinein, der ihm dient, sein Bedürfniss zu stillen, er wird unzart und beleidigt unter Umständen. (Diess sagt man der jüdischen Wohlthätigkeit und Barmherzigkeit nach: welche bekanntlich etwas hitziger ist, als die anderer Volker.)
 
 335Damit Liebe als Liebe gespürt werde. — Wir haben nöthig, gegen uns redlich zu sein und uns sehr gut zu kennen, um gegen Andere jene menschenfreundliche Verstellung üben zu können, welche Liebe und Güte genannt wird.
+
+### 335. Damit Liebe als Liebe gespürt werde Damit Liebe als Liebe gespürt werde. —  Wir haben nöthig, gegen uns redlich zu sein und uns  sehr gut zu kennen, um gegen Andere jene menschenfreundliche Verstellung üben zu können, welche Liebe  und Güte genannt wird.
 
 ### 336. Wessen sind wir fähig?
 
@@ -1667,11 +1722,15 @@ Nicht zu verwechseln! — Ja! Er betrachtet die Sache von allen Seiten, und ihr 
 
 wir Andersgesinnten der reinen Narrheit halber uns der Reise durch die eigenen Öden, Sümpfe und Eisgebirge aussetzen und Schmerzen und Überdruss an uns freiwillig erwählen, wie die Säulenheiligen?
 
+### 343. Angeblich moralisch. Angeblich moralisch. — Ihr wollt nie mit euch  unzufrieden werden, nie an euch leiden, — imd nennt  diess euren moralischen Hang! Nun gut, ein Andrer  mag es eure Feigheit nennen. Aber Eins ist gewiss:  ihr werdet niemals die Reise um die Welt (die ihr selber  seid!) machen und in euch selber ein Zufall und eine  Scholle auf der Scholle bleiben! Glaubt ihr denn, dass  wir Andersgesinnten der reinen Narrheit halber uns  der Reise durch die eigenen Öden, Sümpfe und Eisgebirge aussetzen und Schmerzen und Überdruss an  uns freiwillig erwählen, wie die Säulenheiligen?
+
 ### 344. Feinheit im Fehlgreifen
 
 Feinheit im Fehlgreifen. — Wenn Homer, wie man sagt, bisweilen geschlafen hat, so war er klüger als alle die Künstler des schlaflosen Ehrgeizes. Man muss die Bewunderer zu Athem kommen lassen, dadurch dass man sie voÄ Zeit zu Zeit in Tadler verwandelt; denn Niemand hält eine ununterbrochen glänzende und wache Güte aus; und statt wohlzuthun, wird ein Meister der Art zum Zuchtmeister, den man hasst, während er vor uns hergeht.
 
 345Unser Glück ist kein Argument für und wider. — Viele Menschen sind nur eines geringen Glückes fähig: es ist ebenso wenig ein Einwand gegen ihre Weisheit, dass diese ihnen nicht mehr Glück geben könne, als es ein Einwand gegen die Heilkunst ist, dass manche Menschen nicht zu curiren und andere immer kränklich sind. Möge Jeder mit gutem Glück gerade die Lebensauffassung finden, bei der er sein höchstes Maass von Glück verwirklichen kann: dabei kann sein Leben immer noch erbärmlich und wenig neidenswerth sein.
+
+### 345. Unser Glück ist kein Argument für und Unser Glück ist kein Argument für und  wider. — Viele Menschen sind nur eines geringen  Glückes fähig: es ist ebenso wenig ein Einwand gegen  ihre Weisheit, dass diese ihnen nicht mehr Glück geben  könne, als es ein Einwand gegen die Heilkunst ist, dass  manche Menschen nicht zu curiren und andere immer  kränklich sind. Möge Jeder mit gutem Glück gerade  die Lebensauffassung finden, bei der er sein höchstes  Maass von Glück verwirklichen kann: dabei kann sein  Leben immer noch erbärmlich und wenig neidenswerth sein.
 
 ### 346. Weiberfeinde
 
@@ -1680,6 +1739,8 @@ Weiberfeinde. — „Das Weib ist unser Feind" — wer so als Mann zu Männern s
 17*
 
 347Eine Schule des Redners. — Wenn man ein Jahr lang schweigt, so verlernt man das Schwätzen und lernt das Reden. Die Pythagoreer waren die besten Staatsmänner ihrer Zeit.
+
+### 347. Eine Schule des Redners. Eine Schule des Redners. — Wenn man ein  Jahr lang schweigt, so verlernt man das Schwätzen und  lernt das Reden. Die Pythagoreer waren die besten  Staatsmänner ihrer Zeit.
 
 ### 348. Gefühl der Macht
 
@@ -1694,6 +1755,10 @@ Nicht gar so wichtig. — Bei einem Sterbefalle, dem man zusieht, steigt ein Ged
 spricht. Lasst euch also die Hand reichen und legt dabei den Finger auf den Mund, -— so macht ihr die sichersten Gelöbnisse.
 
 351Gewöhnlich missverstanden. — Im Gespräche bemerkt man den Einen bemüht, eine Falle zu legen, in welche der Andere fällt, nicht aus Bosheit, wie man denken sollte, sondern aus Vergnügen an der eigenen Pfiffigkeit: dann wieder Andre, welche den Witz vorbereiten, damit der Andre ihn mache, und welche die Schleife knüpfen, damit Jener den Knoten daraus ziehe: nicht aus Wohlwollen, wie man denken sollte, sondern aus Bosheit und Verachtung der groben Intellecte.
+
+### 350. Wie man am besten verspricht. Wie man am besten verspricht. — Wenn ein  Versprechen gemacht wird, so ist es nicht das Wort,  welches verspricht, sondern das Unausgesprochene hinter dem Worte, Ja, die Worte machen ein Versprechen  unkräftiger, indem sie eine Kraft entladen und verbrauchen, welche ein Theil jener Kraft ist, die verspricht. Lasst euch also die Hand reichen und legt  dabei den Finger auf den Mund, -— so macht ihr die  sichersten Gelöbnisse.
+
+### 351. Gewöhnlich missverstanden. Gewöhnlich missverstanden. — Im Gespräche  bemerkt man den Einen bemüht, eine Falle zu legen,  in welche der Andere fällt, nicht aus Bosheit, wie man  denken sollte, sondern aus Vergnügen an der eigenen  Pfiffigkeit: dann wieder Andre, welche den Witz vorbereiten, damit der Andre ihn mache, und welche die  Schleife knüpfen, damit Jener den Knoten daraus ziehe:  nicht aus Wohlwollen, wie man denken sollte, sondern  aus Bosheit und Verachtung der groben Intellecte.
 
 ### 352. Centrum
 
@@ -1720,6 +1785,8 @@ Wirkung des Glückes. — Die erste Wirkung des Glückes ist das Gefühl der Mac
 357Moralische Stechfliegen. — Jene Moralisten, denen die Liebe zur Erkenntniss abgeht und welche nur den Gnuss des Wehethuns kennen — haben den Geist und die Langeweile von KJeinstädtem; ihr ebenso grausames, als jämmerliches Vergnügen ist, dem Nachbar auf die Finger zu sehen und unvermerkt eine Nadel so zu stecken, dass er sich daran sticht. In ihnen ist die Unart kleiner Knaben rückständig, welche nicht munter sein können ohne etwas Jagd und Misshandlung von Lebendigem und Todtem.
 
 — 263 -
+
+### 357. Moralische Stechfliegen. Moralische Stechfliegen. — Jene Moralisten,  denen die Liebe zur Erkenntniss abgeht imd welche  nur den G^nuss des Wehethuns kennen — haben den  Geist und die Langeweile von KJeinstädtem; ihr ebenso  grausames, als jämmerliches Vergnügen ist, dem Nachbar auf die Finger zu sehen und unvermerkt eine Nadel  so zu stecken, dass er sich daran sticht. In ihnen ist  die Unart kleiner Knaben rückständig, welche nicht  munter sein können ohne etwas Jagd und Misshandlung  von Lebendigem und Todtem.
 
 ### 358. Gründe und ihre Grundlosigkeit
 
@@ -1749,6 +1816,8 @@ Menschen des Zufalls. — Das Wesentliche an jeder Erfindung thut der Zufall, ab
 
 364Wahl der Umgebung. — Man hüte sich, in einer Umgebung zu leben, vor der man weder würdig schweigen, noch sein Höheres mitzutheilen vermag, sodass unsere Klagen und Bedürfnisse und die ganze Geschichte unserer Nothstände zur Mittheilung übrig bleiben. Dabei wird man mit sich unzufrieden, und unzufrieden mit dieser Umgebung, ja, nimmt den Verdruss, sich immer als Klagenden zu empfinden, noch zu dem Nothstände hinzu, der uns klagen macht. Sondern dort soll man leben, wo man sich schämt, von sich zu reden, und es nicht nöthig hat. — Aber wer denkt an solche Dinge, an eine Wahl in solchen Dingen 1 Man redet von seinem „Verhängniss", stellt sich mit breitem Rücken hin und seufzt „ich unglückseliger Atlas!"
 
+### 364. Wahl der Umgebung. Wahl der Umgebung. — Man hüte sich, in einer  Umgebung zu leben, vor der man weder würdig schweigen, noch sein Höheres mitzutheilen vermag, sodass  unsere Klagen und Bedürfnisse und die ganze Geschichte  unserer Nothstände zur Mittheilung übrig bleiben. Dabei wird man mit sich unzufrieden, und unzufrieden mit  dieser Umgebung, ja, nimmt den Verdruss, sich immer  als Klagenden zu empfinden, noch zu dem Nothstände  hinzu, der uns klagen macht. Sondern dort soll man  leben, wo man sich schämt, von sich zu reden, und  es nicht nöthig hat. — Aber wer denkt an solche Dinge,  an eine Wahl in solchen Dingen 1 Man redet von seinem „Verhängniss", stellt sich mit breitem Rücken hin  und seufzt „ich unglückseliger Atlas!"
+
 ### 365. Eitelkeit
 
 Eitelkeit. — Die Eitelkeit ist die Furcht, origpinal zu erscheinen, also ein Mangel an Stolz, aber nicht nothwendig ein Mangel an Originalität.
@@ -1760,6 +1829,8 @@ Verbrecher-Kummer. — Man leidet als entdeckter Verbrecher nicht am Verbrechen,
 Schande oder am Verdruss über eine gemachte Dummheit oder an der Entbehrung des gewohnten Elementes, und es bedarf einer Feinheit, die selten ist, hierin zu unterscheiden. Jeder, der viel in Gefangnissen und Zuchthäusern verkehrt hat, ist erstaunt, wie selten daselbst ein unzweideutiger „Gewissensbiss" anzutreffen ist: um so mehr aber das Heimweh nach dem alten bösen geliebten Verbrechen.
 
 367Immer glücklich scheinen. — Als die Philosophie Sache des öffentlichen Wetteifers war, im Griechenland des dritten Jahrhunderts, gab es nicht wenige Philosophen, welche glücklich durch den Hintergedanken wurden, dass Andere, die nach anderen Principien lebten und sich dabei quälten, an ihrem Glücke Ärger haben müssten: sie glaubten, mit ihrem Glücke jene am besten zu widerlegen, und dazu genügte es ihnen, immer glücklich zu scheinen: aber dabei mussten sie auf die Dauer glücklich werden! Diess war zum Beispiel das Loos der Cyniker.
+
+### 367. Immer glücklich scheinen. Immer glücklich scheinen. — Als die Philosophie Sache des öffentlichen Wetteifers war, im Griechenland des dritten Jahrhunderts, gab es nicht wenige  Philosophen, welche glücklich durch den Hintergedanken  wurden, dass Andere, die nach anderen Principien lebten und sich dabei quälten, an ihrem Glücke Ärger  haben müssten: sie glaubten, mit ihrem Glücke jene am  besten zu widerlegen, und dazu genügte es ihnen, immer  glücklich zu scheinen: aber dabei mussten sie auf die  Dauer glücklich werden! Diess war zum Beispiel das  Loos der Cyniker.
 
 ### 368. Grund vieler Verkennung
 
@@ -1776,6 +1847,8 @@ Inwiefern der Denker seinen Feind liebt. — Nie Etwas zurückhalten oder dir ve
 371Das Böse der Stärke, — Die Gewaltthätigkeit als Folge der Leidenschaft, zum Beispiel des Zornes, ist physiologisch als ein Versuch zu verstehen, einem drohenden Erstickungsanfall vorzubeugen. Zahllose Handlungen des Übermuths, der sich an anderen Personen auslässt, sind Ableitungen eines plötzlichen Blutandranges durch eine starke Muskel- Action gewesen:
 
 und vielleicht gehört das ganze ,3öse der Stärke" unter diesen Gesichtspunct. (Das Böse der Stärke thut dem Andern wehe, ohne daran zu denken, — es muss sich auslassen; das Böse der Schwäche will wehe thun und die Zeichen des Leidens sehen.)
+
+### 371. Das Böse der Stärke, Das Böse der Stärke, — Die Gewaltthätigkeit  als Folge der Leidenschaft, zum Beispiel des Zornes,  ist physiologisch als ein Versuch zu verstehen, einem  drohenden Erstickungsanfall vorzubeugen. Zahllose  Handlungen des Übermuths, der sich an anderen Personen auslässt, sind Ableitungen eines plötzlichen Blutandranges durch eine starke Muskel- Action gewesen:  und vielleicht gehört das ganze ,3öse der Stärke" unter  diesen Gesichtspunct. (Das Böse der Stärke thut dem  Andern wehe, ohne daran zu denken, — es muss sich  auslassen; das Böse der Schwäche will wehe thun und  die Zeichen des Leidens sehen.)
 
 ### 372. Zur Ehre der Kenner
 
@@ -1798,6 +1871,8 @@ um so höher wird der Werth der Selbst-Opferung steigen.
 375Zu deutlich reden. — Man kann aus verschiedenen Gründen zu deutlich articulirt sprechen: einmal, aus Misstrauen gegen sich, in einer neuen ungeübten Sprache, sodann aber auch aus Misstrauen gegen die Anderen, wegen ihrer Dummheit oder Langsamkeit des
 
 Verständnisses. Und so auch im Geistigsten: unsere Mittheilung ist mitunter zu deutlich, zu peinlich, weil Die, welchen wir uns mittheilen, uns sonst nicht verstehen. Folglich ist der vollkommene und leichte Stil nur vor einer vollkommenen Zuhörerschaft erlaubt.
+
+### 375. Zu deutlich reden. Zu deutlich reden. — Man kann aus verschiedenen Gründen zu deutlich articulirt sprechen: einmal,  aus Misstrauen gegen sich, in einer neuen ungeübten  Sprache, sodann aber auch aus Misstrauen gegen die  Anderen, wegen ihrer Dummheit oder Langsamkeit des  Verständnisses. Und so auch im Geistigsten: unsere  Mittheilung ist mitunter zu deutlich, zu peinlich, weil  Die, welchen wir uns mittheilen, uns sonst nicht verstehen. Folglich ist der vollkommene und leichte Stil  nur vor einer vollkommenen Zuhörerschaft erlaubt.
 
 ### 376. Viel schlafen,
 
@@ -1899,6 +1974,8 @@ Ohne Eitelkeit. — Leidenschaftliche Menschen denken wenig an Das, was die Ande
 
 395Die Contemplation. — Bei dem einen Denker folgt der dem Denker eigene beschauliche Zustand inmier auf den Zustand der Furcht, bei einem andern immer auf den Zustand der Begierde. Dem ersten scheint demnach die Beschaulichkeit mit dem Gefühl der Sicherheit verbunden, dem andern mit dem Gefühl der Sättigung — das heisst: jener ist dabei muthig, dieser überdrüssig und neutral gestimmt.
 
+### 395. Die Contemplation. Die Contemplation. — Bei dem einen Denker  folgt der dem Denker eigene beschauliche Zustand  inmier auf den Zustand der Furcht, bei einem andern  immer auf den Zustand der Begierde. Dem ersten  scheint demnach die Beschaulichkeit mit dem Gefühl  der Sicherheit verbunden, dem andern mit dem Gefühl  der Sättigung — das heisst: jener ist dabei muthig,  dieser überdrüssig und neutral gestimmt.
+
 ### 396. Auf der jagd
 
 Auf der jagd. — Jener ist auf der Jagd, angenehme Wahrheiten zu haschen, dieser — unangenehme.
@@ -1953,6 +2030,8 @@ Luxus. — Der Hang zum Luxus geht in die Tiefe eines Menschen: er verräth, das
 
 4o6. Unsterblich machen. — Wer seinen Gegner tödten will, mag erwägen, ob er ihn nicht gerade dadurch bei sich verewigt.
 
+### 406. Unsterblich machen. Unsterblich machen. — Wer seinen Gegner  tödten will, mag erwägen, ob er ihn nicht gerade dadurch bei sich verewigt.
+
 ### 407. Wider unsern Charakter
 
 Wider unsern Charakter. — Geht die Wahrheit, die wir zu sagen haben, wider unsern Charakter — wie es oft vorkommt — , so benehmen wir .uns dabei, als ob wir schlecht lögen und erregen Misstrauen.
@@ -1990,6 +2069,10 @@ Die freiwillig Blinden. — Es giebt eine Art schwärmerischer, bis zum Ausserst
 415Remedium amoris. — Inuner noch hilft gegen die Liebe in den meisten Fällen jenes alte Radicalmittel: die Gegenliebe.
 
 4i6. Wo ist der schlimmste Feind? — Wer seine Sache gut führen kann und sich dessen bewusst ist, ist gegen seinen Widersacher meist versöhnlich gestimmt. Aber zu glauben, dass man die gute Sache für sich habe, und zu wissen, dass man nicht geschickt ist, sie zu vertheidigen, — das macht einen ingrimmigen und unversöhnlichen Hass auf den Gegner der eignen Sache. — Möge Jeder darnach berechnen, wo seine schlimmsten Feinde zu suchen sind!
+
+### 415. Remedium amoris. Remedium amoris. — Inuner noch hilft gegen  die Liebe in den meisten Fällen jenes alte Radicalmittel: die Gegenliebe.
+
+### 416. Wo ist der schlimmste Feind? Wo ist der schlimmste Feind? — Wer seine  Sache gut führen kann und sich dessen bewusst ist,  ist gegen seinen Widersacher meist versöhnlich gestimmt. Aber zu glauben, dass man die gute Sache  für sich habe, und zu wissen, dass man nicht geschickt  ist, sie zu vertheidigen, — das macht einen ingrimmigen  und unversöhnlichen Hass auf den Gegner der eignen  Sache. — Möge Jeder darnach berechnen, wo seine  schlimmsten Feinde zu suchen sind!
 
 ### 417. Gränze aller Demuth
 
@@ -2642,4 +2725,3 @@ Nicht zu vergessen! — Je höher wir uns erheben, um so kleiner erscheinen wir 
 ### 575. Wir Luft-Schifffahrer des Geistes!
 
 Wir Luft-Schifffahrer des Geistes! — Alle diese kühnen Vögel, die in's Weite, Weiteste hinausfliegen, — gewiss! irgendwo werden sie nicht mehr weiter können und sich auf einen Mast oder eine kärgliche Klippe niederhocken — und noch dazu so dankbar für diese erbärmliche Unterkunft! Aber wer dürfte daraus schliessen, dass es vor ihnen keine ungeheuere freie Bahn mehr gebe, dass sie so weit geflogen sind, als man fliegen könne! Alle unsere grossen Lehrmeister und Vorläufer sind endlich stehen geblieben, und es ist nicht die edelste und anmuthigste Gebärde, mit der die Müdigkeit stehen bleibt: auch mir und dir wird es so ergehen! Was geht das aber mich und dich an! Andere Vögel werden weiter fliegen! Diese unsere Einsicht und Gläubigkeit fliegt mit ihnen um die Wette hinaus und hinauf, sie steigt geradewegs über unserm Haupte und über seiner Ohnmacht in die Höhe und sieht von dort aus in die Feme, sieht die Schaaren viel mächtigerer Vögel, als wir sind, voraus, die dahin streben werden, wohin wir strebten, und wo Alles noch Meer, Meer, Meer ist! — Und wohin wollen wir denn? Wollen wir denn über das Meer? Wohin reisst uns dieses mächtige Gelüste, das uns mehr gilt als irgend eine Lust? Warum doch gerade in dieser Richtung, dorthin, wo bisher alle Sonnen der Menschheit untergegangen sind? Wird man vielleicht uns einstmals nachsagen, dass auch wir, nach Westen steuernd, ein Indien zu erreichen hofften, — dass aber unser Loos war, an der Unendlichkeit zu scheitern? Oder, meine Brüder? Oder? —
-
