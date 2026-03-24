@@ -407,6 +407,8 @@ La refutació històrica com a definitiva. — Antigament es cercava de demostra
 «*In hoc signo vinces*». — Per molt avançada que estigui Europa en d'altres coses: en afers religiosos no ha assolit encara la ingènua llibertat de pensament dels antics brahmans, senyal que a l'Índia fa quatre mil·lennis es pensava més i es traspassava més plaer de pensar del que avui entre nosaltres. Aquells brahmans, en efecte, creien primer que els sacerdots eren més poderosos que els déus, i segon que allò que feia la força dels sacerdots eren els costums: per la qual cosa els seus poetes no es cansaven de lloar els costums (pregàries, cerimònies, sacrificis, càntics, metres) com els vertaders donadors de tot bé. Per molta poesia i superstició que s'hi barregés: els principis són vertaders! Un pas més: i es van desfer dels déus, — cosa que Europa també haurà de fer un dia! Un pas més encara: i ja no es tenien necessitat de sacerdots ni d'intermediaris, i el mestre de la religió de l'autoredemció, Buda, va aparèixer: — com és lluny Europa encara d'aquest grau de cultura! Quan finalment també tots els costums i tots els usos siguin destruïts, sobre els quals es recolza el poder dels déus, dels sacerdots i dels redemptors, quan doncs la moral en el sentit antic hagi mort: llavors ve — sí, què ve llavors? Però no fem suposicions, sinó mirem primer que Europa posi al dia allò que a l'Índia, entre el poble dels pensadors, ja es va fer fa uns quants mil·lennis com a manament del pensament! Ara potser hi ha deu o vint milions de persones entre els diferents pobles d'Europa que «ja no creuen en Déu», — és massa demanar que es facin un senyal entre ells? Tan bon punt es reconeguin d'aquesta manera, també es donaran a conèixer, — seran immediatament una potència a Europa i, afortunadament, una potència entre els pobles! Entre els estaments! Entre rics i pobres! Entre els qui manen i els qui obeeixen! Entre les persones més inquietes i les més tranquil·les, més tranquil·litzadores!
 
 
+---
+
 ## Llibre Segon
 
 ### 97. Hom es torna moral — no perquè sigui moral
@@ -618,6 +620,8 @@ Causa de l'«altruisme». — De l'amor els homes han parlat en conjunt de maner
 Mirada a la llunyania. — Si morals són només les accions, com s'ha definit, que es fan per l'altre i només per ell, aleshores no hi ha cap acció moral! Si morals són només les accions — segons una altra definició — que es fan en llibertat de la voluntat, aleshores tampoc no hi ha cap acció moral! — I què és, doncs, allò que se'n diu i que tanmateix existeix i vol ser explicat? Són els efectes d'alguns errors intel·lectuals. — I suposem que hom s'alliberés d'aquests errors, què en seria de les «accions morals»? — En virtut d'aquests errors hem atribuït fins ara a certes accions un valor més alt del que tenen: les hem separat de les accions «egoistes» i de les «no lliures». Si ara les reassignem a aquestes, com hem de fer, en reduïm certament el valor (el sentiment del seu valor), i fins per sota de la mesura justa, perquè les accions «egoistes» i «no lliures» han estat fins ara massa menyspreades, a causa d'aquella suposada diferència profunda i essencial. — Així, precisament aquestes accions es faran d'ara endavant més rarament, perquè d'ara endavant seran menys estimades? — Inevitablement! Almenys durant un bon temps, mentre la balança del sentiment del valor estigui sota la reacció d'errors anteriors! Però el nostre contracompte és que retornem als homes el bon ànim per a les accions titllades d'egoistes i en restaurem el valor, — els prenguem la mala [consciència]{.term data-term="Gewissen"}! I ja que fins ara han estat amb diferència les més freqüents i ho seran en tot futur, els traiem a tota la imatge de les accions i de la vida el seu aspecte maligne! Això és un resultat ben alt! Quan l'home deixa de considerar-se dolent, deixa de ser-ho!
 
 
+
+---
 
 ## Llibre Tercer
 
@@ -1135,6 +1139,8 @@ Dret i privilegi de l'home. — Nosaltres els homes som les úniques criatures q
 
 El transformat. — Ara es torna virtuós, només per fer mal als altres amb això. No el mireu tant!
 
+
+---
 
 ## Llibre Quart
 
@@ -1726,6 +1732,8 @@ A través dels altres. — Hi ha persones que no volen ser vistes d'altra manera
 
 Fer alegria als altres. — Per què fer alegria supera tots els plaers? — Perquè amb això es fa un plaer als nostres cinquanta impulsos alhora. Poden ser individualment plaers molt petits: però posats tots en una mà, la mà és més plena que mai — i el cor també! —
 
+
+---
 
 ## Llibre Cinquè
 
@@ -2341,8 +2349,6 @@ No oblidar! — Com més alt puja l'esperit, més perill corre d'oblidar-se dels
 
 Nosaltres aeronautes de l'esperit![^15] — Tots aquells ocells temeraris que volen cap enfora, cap al més llunyà — de ben segur! en algun moment no podran anar més lluny i s'asseuran en un pal o en un escull solitari — i encara agraïts d'aquest miserable refugi! Però qui en voldria concloure que ja no hi ha davant d'ells un camí lliure i immens, que han volat tan lluny com es pot volar! Tots els nostres grans mestres i predecessors han acabat per aturar-se, i no és el gest més noble ni el més graciós el que es cansa: també m'esdevindrà a mi, a tu, — però, què ens importa a nosaltres dos! Altres ocells volaran més lluny! Aquest coneixement nostre i aquesta fe nostra lluiten plegats per sobrepassar-se, cap amunt i cap enfora, no poder trobar el final, i mirar des d'allà on estem la immensitat que queda sota nostre, i aquell prodigi d'ocells que volen molt més lluny del que mai ha volat cap ocell, — a la recerca d'una terra que encara no ha estat vista per ningú! — Allà, allà on no podem anar més lluny, tenim la nostra aventura i la nostra indomable esperança.
 
-
----
 
 [^1]: *Erlösung*: redempció, alliberament. Veg. glossari.
 [^2]: *Gewissen*: consciència moral. Veg. glossari.
