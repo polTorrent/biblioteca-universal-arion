@@ -38,6 +38,18 @@ Antiga serventa de la casa de la meva senyora,
 per què estàs aquí, davant les portes, en aquesta solitud,
 lamentant-te sola les teves penes?
 
+Com és que Medea vol quedar-se sola, sense tu?
+DIDA: Vell pedagog dels fills de Jàson, les desgràcies dels senyors també ens toquen l'ànima als servidors fidels quan les coses van malament. El dolor m'ha portat a tal punt que tinc ganes de proclamar al cel i a la terra el destí de la meva senyora.
+PEDAGOG: És que la pobreta encara no para de lamentar-se?
+DIDA: Quin sort tens: el mal és només al començament, encara no ha arribat al pitjor.
+PEDAGOG: Pobre de tu! —si això es pot dir dels amos— Com no sap res dels nous mals que vindran.
+DIDA: Què hi ha, vell? No deixis de dir-ho.
+PEDAGOG: Res; ja em penedeixo del que he dit abans.
+DIDA: No, per la teva barba, no ho amaguis al teu company esclau; si cal, faré silenci sobre això.
+PEDAGOG: He sentit algú que parlava, fent veure que no escoltava, quan m'apropava als taulers de joc, allà on s'asseuen els més vells al voltant de la sagrada font de Pirene, que Creó, el sobirà d'aquesta terra, vol expulsar aquests nens de la terra de Corint juntament amb la mare. No sé si aquesta notícia és certa, però tant de bo no sigui cert.
+DIDA: I Jàson permetrà això, que els seus fills ho pateixin, encara que tingui diferències amb la mare?
+PEDAGOG: Els vells llaços s'abandonen pels nous matrimonis, i aquell home ja no és amic d'aquesta casa.
+
 **Dida: ** Estem perduts si afegim una desgràcia nova a l'antiga, abans de superar aquesta.
 **Pedagog: ** Però tu —que no és moment que la senyora ho sàpiga— fes silenci i calla.
 **Dida: ** Oh, fills! Escolteu quin pare teniu! Que no mori —que és el meu senyor—, però és dolent amb la seva família.
@@ -166,6 +178,14 @@ De tots els éssers que tenen vida i judici,
 les dones som la raça més desgraciadada:
 que primer hem de comprar un marit
 amb molts diners, i prendre'ns un amo del cos
+
+acceptar-ho; això és encara un mal més dolorós que el mal.
+I en això rau la lluita més gran: sigui rebre el mal o el bé. Perquè no hi ha separacions honroses per a les dones, ni és possible rebutjar l'espòs.
+Arribada a costums i lleis nous, cal ser endevinaire, sense haver après a casa, de com tractar millor el marit. I si, mentre nosaltres ens esforcem durament en aquestes coses, l'espòs conviu sense suportar el jou a la força, la vida és envejable; si no, cal morir.
+L'home, però, quan se li fa feixuc conviure amb els de casa, surt fora i calma el cor de l'angoixa, girant-se cap a algun amic o cap a un igual. Nosaltres, però, hem de mirar forçosament cap a una sola ànima.
+I diuen de nosaltres que vivim una vida sense perill a casa mentre ells lluiten amb la llança. Pensen malament: que tres vegades voldria estar al costat de l'escut abans que parir una sola vegada.
+Però no és el mateix discurs el que s'aplica a tu i a mi. Tu tens aquesta ciutat i la casa del pare, els plaers de la vida i la companyia d'amics. Jo, però, solitària i sense pàtria, sóc ultratjada per l'home, saquejada d'una terra bàrbara, sense mare, sense germà, sense cap parent on recolzar-me en aquesta desgràcia.
+Tant, doncs, vull obtenir de tu:
 
 Si pogués trobar algun camí, algun estratagema  
 per fer pagar aquests mals al meu marit,  
@@ -392,6 +412,19 @@ Podria criar els fills dignament per a casa meva. Engendrant germans per als teu
 Cor: Jàson, has embellert bé aquestes paraules; però, encara que ho digui contra la meva opinió, em sembla que, traïnt la teva esposa, no actues justament.
 Medea: Jo difereixo molt de molts mortals. Per a mi, qui és injust, però dotat d'elocüència, pateix el màxim càstig; perquè, presumint d'embellir amb la llengua les injustícies, gosa ser completament malvat; però no és gens savi. I tu, ara no et facis l'elegant amb mi ni l'hàbil orador. Una sola paraula t'abatarà: hauries d'haver-me persuadit, si no fossis dolent,
 
+fer aquest casament, però no amagant-ho dels teus amics.
+Jasó: Serviríes perfectament aquesta causa, em sembla, si et prohibís casar-te, tu que ni ara mateix t'atreveixes a deixar anar la gran còlera del teu cor.
+Medea: No era això el que et movia, sinó que un llit bàrbar a la vellesa no et semblava gloriós.
+Jasó: Sàpigues bé ara: no m'he casat amb aquest llit reial que ara tinc per desig d'una dona, sinó, com ja he dit abans, per salvar-te a tu i engendrar germans per als meus fills, fills sobirans que siguin defensa per a casa nostra.
+Medea: Que no m'arribi mai una felicitat amarga, ni una riquesa que turbi el meu esperit.
+Jasó: Saps com hauríes de pregar per semblar més sàvia? Que les coses bones no et semblin mai dolentes, ni que en la sort semblis desgraciada.
+Medea: Insulta'm, ja que tu tens escapatòria, mentre jo, sola, hauré de fugir d'aquesta terra.
+Jasó: Tu mateixa has escollit això; no culpis ningú més.
+Medea: Fent què? Potser casant-me i traint-te?
+Jasó: Llançant malediccions sacrílègues contra els reis.
+Medea: I també sóc una maledicció per a la teva casa.
+Jasó: No discutiré més d'això amb tu. Però si vols rebre algun ajut dels meus béns per als nens o per al teu exili,
+
 '`'json
 '`'
 
@@ -438,6 +471,31 @@ MEDEA
 I què et va dir Apol·lo sobre els fills?
 EGEU
 Paraules més sàvies del que pot entendre un home.
+
+MEDEA: És permès que sapiguem l'oracle del déu?
+EGEU: Per descomptat, ja que també cal una ment sàvia.
+MEDEA: Doncs què va dir-te l'oracle? Conta-m'ho, si és permès sentir-ho.
+EGEU: Que no deslligui el peu que sobresurt de l'odre...
+MEDEA: Fins que facis què o arrivis a quina terra?
+EGEU: Fins que arribi novament a la llar paterna.
+MEDEA: I tu per què has de navegar cap a aquesta terra?
+EGEU: Hi ha un tal Pitteu, rei de la terra de Trezè...
+MEDEA: Fill, segons diuen, de Pèlops, molt piadós.
+EGEU: A ell vull comunicar-li l'oracle del déu.
+MEDEA: És un home savi i expert en aquests afers.
+EGEU: I per a mi, el més estimat de tots els companys d'armes.
+MEDEA: Doncs que tinguis bona sort i aconsegueixis tot el que desitges.
+EGEU: Però per què els teus ulls i la teva pell s'han tornat pàl·lids?
+MEDEA: Egeu, el meu marit és el pitjor de tots.
+EGEU: Què dius? Explica'm clarament les teves penes.
+MEDEA: Jàson m'agreu sense haver-li fet cap mal.
+EGEU: Què ha fet? Explica-m'ho més clarament.
+MEDEA: Ha pres una altra dona com a senyora de casa.
+EGEU: No ha gosat fer aquesta acció tan vergonyosa!
+MEDEA: Ben cert que sí! I nosaltres, que abans érem estimats, ara som menyspressats.
+EGEU: Per amor d'ella o per odi al teu llit?
+MEDEA: Per un gran amor. No ha estat fidel als qui l'estimaven.
+EGEU: Doncs que se'n vagi, si, com dius, és tan dolent.
 
 **MEDEA**: S'ha enamorat de l'aliança amb els senyors del poder.
 **EGEU**: I qui li ofereix aquesta unió? Acaba'm d'explicar.
@@ -519,43 +577,283 @@ D'on trauràs l'audàcia contra els teus fills, del cor o de la mà? Com, mirant
 
 Jo, però, vaig reflexionar i em vaig dir: «Infeliç, per què m'enfollic i m'indigno contra qui ens vol bé, i em converteixo en enemiga dels senyors d'aquesta terra i del meu marit, que fa per nosaltres el millor: es casa amb la tirana i procura germans als meus fills? No m'alliberaré de la còlera —què em passa?— quan els déus ho disposen tan favorablement? És que no tinc fills? I sé que haurem de fugir d'aquesta terra sense amics?» Pensant això, vaig adonar-me que tenia molta insensatesa i que m'enfadava sense motiu. Ara, doncs, t'aprovo; em sembla que ets prudent per haver pres aquesta aliança per a nosaltres, mentre jo soc una nècia, jo que hauria d'haver participat en aquests plans i haver-me casat amb tu, i haver estat al costat del llit nupcial i haver tingut cura de la núvia. Però som el que som —no ho dic per ofendre—: dones. No calia, doncs, que t'igualassis als mals ni que responguessis a les folies amb folies. Cedim, i reconeixem que aleshores pensàvem malament, però ara he decidit millor. Oh fills, fills meus, veniu, sortiu de casa, sortiu, saludeu el vostre pare juntament amb mi, i reconcilieu-vos alhora, deixant enrere l'antiga enemistat per ser amics com la vostra mare; hi ha treva entre nosaltres i la còlera s'ha calmat.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":261,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"76dfe984-1108-429e-9a95-fcc4b8133267","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"d7f573bb-18f6-4315-ad19-326a22d592a6"}
+Agafeu-me la mà dreta. Ai, quins mals! Com pressenteixo alguna cosa oculta!
+Fills meus, quan visqueu llargs anys, m'oferirieu encara el vostre braç afectuós? Desgracíada de mi! Com estic a punt de plorar, plena de temor! Amb el temps, deixant de banda la disputa amb el pare, he omplert de llàgrimes aquest rostre tendre.
+Cor: També a mi s'han escampat llàgrimes fresques pels ulls. I que no arribi desgràcia més gran que l'actual!
+Jàson: Aprovo, dona, això, i no retrego l'altre. És natural que les dones s'airin quan el marit pren una altra esposa. Però el teu cor ha canviat a millor i has reconegut la decisió encertada, encara que amb temps: són accions d'una dona prudent. I per a vosaltres, nens, el pare us ha procurat amb reflexió gran salvació amb l'ajuda dels déus. Penso que sereu els primers d'aquesta terra coríntia juntament amb els vostres futurs germans. Però creixeu! Les altres coses les farà el pare i qualsevol dels déus que sigui benèvol. I que us vegi ben alimentats quan arribeu a l'edat adulta, superiors als meus enemics!
+Tu, per què mulles les pupil·les amb llàgrimes fresques, girant cap enrere la galta blanca? I no reps amb alegria aquesta paraula meva?
+Medea: Res. Estava pensant en aquests nens.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":239,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"846ad23c-a13a-4ed3-a0ae-b2a78aad45e5","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"cbf503eb-118e-4b1d-a3f8-f69aa40f87bf"}
+**IÀSÓ.** Tranquil·litza't ara; jo faré que tot això vagi bé.
+**MEDEA.** Ho faré; confio en les teves paraules. Però una dona és fràgil i ploranera per natura.
+**IÀSÓ.** Per què aleshores gemes tant per aquests fills?
+**MEDEA.** Jo els vaig parir. Quan demanava als déus que els fills sobrevisquessin, em va entrar compassió pel que podria passar-los. Però pel que fa al motiu pel qual has vingut a parlar amb mi, unes coses ja s'han dit, d'altres les recordaré. Els tirans del país creuen que és millor expulsar-me. I per a mi també és el millor, ho reconec. Així no molesto ni tu ni els senyors d'aquesta terra, perquè semblo hostil a la casa. Nosaltres marxem d'aquest país a l'exili, però perquè els fills puguin créixer sota la teva cura, demana a Creont que no hagin de fugir d'aquesta terra.
+**IÀSÓ.** No sé si els podria convèncer, però cal intentar-ho.
+**MEDEA.** Tu, però, ordena a la teva esposa que demani al seu pare que els fills no fugin d'aquesta terra.
+**IÀSÓ.** Certament, i crec que la convenceré.
+**MEDEA.** Si és com les altres dones, es deixarà convèncer. I jo també t'ajudaré en aquesta tasca: li enviaré regals magnífics —ho sé jo—, un peplo fi i una corona d'or batut, que els fills portaran. Però cal fer-ho amb tota rapidesa.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":478,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"97cf94e4-9540-40c7-b07b-8e8644629449","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"561dc373-21ed-4f99-befa-4a0cce7c2ab3"}
+que alguna de les serventes porti aquí els ornaments.
+Serà feliç de mil maneres diferents,
+en obtenir-te com a excel·lent espòs
+i posseint els ornaments que Hèlios,
+avi del pare, dóna als seus descendents.
+Agafeu aquests regals, fills meus, amb les mans
+i doneu-los a la núvia, la feliç tirannessa,
+portant-los; segur que no rebrà regals censurables.
+**JASÓ**: Però què, oh nècia, vols buidar-te les mans d'aquests béns?
+Creus que a la casa reial li falten vestits,
+creus que també li falta or? Guarda-te'ls, no els donis.
+Si la dona realment ens considera dignes d'alguna paraula,
+ho preferirà als béns, n'estic segur.
+**MEDEA**: No em parlis així; els regals persuadeixen fins i tot els déus
+i l'or val més que milers de paraules per als mortals.
+El seu destí l'afavoreix, ara el deu l'engrandeix,
+ella que regna jove; i per l'exili dels meus fills
+canviaria la vida, no només or.
+Però, fills meus, entreu a la rica casa
+de la nova esposa del pare, la meva senyora,
+supliqueu-li, demaneu-li de no haver de fugir d'aquesta terra,
+donant-li ornaments —d'això especialment cal—
+que ella rebi aquests regals de les seves pròpies mans.
+Aneu-hi el més aviat possible; i a la mare, del que desitja obtenir,
+porteu-li bones noves si ho aconseguiu.
+**COR**: Ara ja no tinc esperances de vida per als nens,
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":246,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"ff324185-e086-41ac-a13a-d3623394af92","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"9b0d7e80-f5fc-4c83-83fe-5b760119c80e"}
+Ja no més; ara caminen cap a la mort.
+La núvia rebrà les cadenes daurades, 
+la dissortada rebrà la seva perdició; 
+i entorn dels cabells rossos, amb les seves pròpies mans, 
+posarà l'ornament de l'Hades.
+La gràcia immortal i l'esplendor dels peplos
+daurats la persuadiran de cenyir-se la corona forjada; 
+amb els morts ja s'adornarà com a núvia.
+En tal parany caurà, 
+i en tal destí de mort, la infeliç; 
+no podrà evitar la perdició.
+I tu, desgraciat, tu, mal gendre, parent dels tirans, 
+sense saber-ho aportes la destrucció
+als teus fills, i a la teva esposa
+una mort odiosa.
+Mísera, com t'equivoques de destí!
+I també ploro el teu dolor, oh desgraciada mare
+dels fills, tu que els mataràs
+a causa del llit nupcial, que el teu espòs, 
+abandonant-te contra tot dret, 
+comparteix amb una altra dona.
+**PEDAGOG**
+Senyora, aquests fills teus són alliberats de l'exili, 
+i la princesa reial ha rebut amb goig
+els presents amb les seves mans; hi ha pau per als nens.
+Eia!
+Per què et quedes torbada quan tens sort?
+ [Per què has girat el rostre
+i no reps amb goig la nova que et porto?]
+**MEDEA**
+Ai de mi!
+**PEDAGOG**
+Això no concorda amb el que t'he anunciat.
+**MEDEA**
+Ai, altra vegada!
+**PEDAGOG**
+Potser t'anuncio alguna desgràcia
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":250,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"3cab251b-a8f3-48ef-b41c-731072bc24e6","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"04c884c1-cbb7-463e-a49b-73f7b0dd83a4"}
+No ho sé. Potser m'he equivocat amb la bona nova?
+**ME.** Has dit el que has dit; no et retrec res.
+**PE.** Per què tens, doncs, els ulls tristos i plores?
+**ME.** Gran necessitat m'hi empeny, ancià. Això ho han maquinat els déus i jo mateixa amb mala intenció.
+**PE.** Ànim! Encara pots tornar amb els teus fills.
+**ME.** Primer enviaré d'altres a l'Hades, jo, desgraciadíssima.
+**PE.** No ets tu sola qui s'ha separat dels seus fills. Cal suportar les desgràcies amb lleugeresa, mortal com ets.
+**ME.** Ho faré. Però vés dins casa i prepara als nens el que cal cada dia.
+Oh fills meus, fills meus! Vosaltres ja teniu ciutat i casa on viureu sempre, deixant-me a mi, desgraciadíssima, privats de mare. Jo me'n vaig cap a terra estranya, exiliada, abans de gaudir de vosaltres i veure-us feliços, abans de preparar llits nupcials per als vostres casaments, cambres matrimonials, i alçar torxes enlairades.
+Oh desgraciadíssima de la meva tossuderia!
+En va us he criat, fills meus. En va he patit i m'he consumit en treballs, suportant cruels dolors en el part.
+Certament, una vegada jo, desgraciadíssima, tenia moltes esperances posades en vosaltres: que em cuidaríeu en la vellesa i, quan morís, amb les vostres mans m'amortaixaríeu bé, envejable per als humans. Però ara ja s'ha perdut...
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":283,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"62986239-4b83-47c6-be0f-ea9b1b1168a0","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"70d5a9b8-696d-4519-a94f-0e9f569d7927"}
+dolça inquietud! Sense vosaltres, 
+viuré una vida penosa i dolorosa.
+I vosaltres ja no veureu més la mare
+amb mirada amorosa, passant a una altra vida.
+Ai! Ai! Per què em mireu, fills?
+Per què em somrieu aquest darrer somriure?
+Ai de mi! Què faré? Se'm desfà el cor, 
+dones, quan he vist la mirada radiosa dels meus fills.
+No ho podria fer. Que es perdin
+els plans anteriors! Me'ls enduc d'aquesta terra.
+Per què he de ferir el pare d'aquests
+amb les seves desgràcies, i jo mateixa patir el doble de mals?
+No, pas jo! Que es perdin els plans!
+Però què em passa? Vull ser objecte de riure
+deixant els meus enemics sense càstig?
+Cal atrevir-se a això! Però quina vilesa la meva, 
+deixar entrar paraules toves al cor!
+Aneu, fills, cap a casa! I qui no té dret
+a ser present als meus sacrificis, 
+que se n'ocupi ell; no faré malbé la mà.
+Ah!
+No, cor meu, no facis tu això!
+Deixa'ls estar, desgraciat, respecta els fills!
+Allí amb nosaltres, vivint, t'alegraran.
+Pels esperits venjadors d'Hades, 
+mai passarà que jo deixi els meus fills als enemics
+perquè els maltractin!
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":246,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"a37edebd-4135-4333-898a-1b5b7f0454e1","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"234e8834-fe04-43fe-90c1-4cf337ae85f3"}
+De tota manera han de morir. I ja que cal, 
+matarem els fills que hem engendrat.
+De tota manera això està fet i no ho podrà evitar.
+I ja la princesa núvia mor amb la corona al cap, 
+embolicada en els seus vestits. Ho sé ben cert.
+Però ja em dirigeixo pel camí més dolorós, 
+i a aquests els enviaré per un camí de més dolorós encara.
+Vull dir adéu als meus fills. Doneu-me, oh fills, 
+doneu la mà dreta per saludar vostra mare.
+Oh mà estimadíssima! I estimadíssima boca, 
+i figura i rostre noble dels meus fills!
+Sigueu feliços, però allà. El d'aquí
+el pare us l'ha pres. Oh dolça mirada!
+Oh pell suau i dolcíssim alè dels fills!
+Aneu-vos-en, aneu-vos-en! Ja no sóc capaç
+de mirar-vos. Sóc vençuda pels mals.
+I comprenc bé quins mals estic a punt de fer, 
+però la còlera és més forta que els meus raonaments, 
+ella que és la causa dels majors mals dels mortals.
+**COR**
+Moltes vegades ja
+he entrat en raonaments més subtils
+i he arribat a disputes més grans
+del que convé que examini el gènere femení.
+Però és que també hi ha una musa per a nosaltres, 
+que conversa amb nosaltres per amor a la saviesa.
+No amb totes, però potser trobaries
+un petit grup entre moltes dones
+que coneix la musa.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":222,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"da49e506-845b-4add-9eb0-c3e533c41254","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"7db6471a-f9ae-49ba-92a2-0db44486fe7d"}
+Dic que els mortals sense experiència que no han tingut fills són més feliços que els que n'han tingut. Els que no tenen fills, per inexperiència, no saben si els fills porten dolçor o amargor als mortals, i així s'estalvien molts patiments. Però els que tenen a casa el dolç brot dels fills, veig que es consumeixen de preocupacions tota la vida: primer, pensant com criar-los bé i d'on deixar-los el sustent; després, si serviran gent indigna o honrada, cosa que és incerta. Però un mal, el darrer i pitjor de tots, l'he de revelar ja a tots els mortals: encara que hagin trobat prou sustentacle i els fills hagin arribat a la joventut i s'hagin fet honrats, si el destí ho vol així, la mort se'ls emporta al Hades. Com pot ser, doncs, que els déus imposin als mortals, a més de totes les altres penes, també aquesta dolor tan amarga per causa dels fills?
+MEDEA: Amigues, fa temps que espero el destí i vigilo atentament com aniran les coses. I ja veig que s'aproxima un servent de Jàson; la respiració agitada mostra que ve a anunciar alguna nova desgràcia.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":240,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"f3cea374-ca2b-4ce8-8d63-8fd0c015f52c","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"4fc0bc22-36ad-4fba-9b36-878c0cd05f9e"}
+MISSATGER
+Tu que has comès un acte terrible i contra tota llei,
+Medea, fuig, fuig! Ni per mar
+ni per terra trobaràs escapatòria.
+MEDEA
+I per què hauria de fugir?
+MISSATGER
+La princesa ha mort ara mateix,
+i també Creont, el seu pare, pels teus verins.
+MEDEA. M'has dit la millor notícia! D'ara endavant
+et comptaré entre els meus benefactors i amics.
+MISSATGER
+Què dius? Estàs en el teu seny, dona?
+Tu que has profanat la llar dels sobirans,
+t'alegres d'escoltar-ho? No tems les conseqüències?
+MEDEA
+Jo també tinc alguna cosa a dir-te en contra,
+però no t'afanyis, bon amic.
+Conta-m'ho: com van morir? Em faries
+el doble de grat si han tingut una mort horrorosa.
+MISSATGER
+Quan els teus dos fills van arribar
+amb llur pare i van entrar al palau nupcial,
+ens vam alegrar els serfs que patíem pels teus mals.
+De seguida va córrer el rumor per tot arreu
+que tu i el teu espòs havíeu fet les paus.
+Un besava les mans dels nens, l'altre els cabells rossos;
+jo mateix, de tan content,
+vaig seguir-los fins a les estances de les dones.
+La senyora que ara venerem en lloc teu,
+abans de veure els teus dos fills,
+tenia la mirada fixa amorosament en Jàson.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":298,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"87db724b-7b7e-4eed-b004-08ba83476994","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"d6dfea70-0971-4918-b1fb-5bd024058861"}
+'`'json
+'`'
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":246,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"a9a60888-a1b4-41d1-91a7-705071904778","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"f4e7de91-585b-451a-9b03-bcf39cf7b63d"}
+amb escuma blanca que s'escorria, i els ulls que giraven, i la sang que ja no romania a la pell; aleshores llançà un gran plany. Immediatament, una de les dones es precipità cap a la casa del pare, l'altra cap al nou espòs, per anunciar la desgràcia de la núvia; i tota la casa ressonava de curses precipitades. Ja aixecava la cama per completar la distància del recorregut quan el veloç corredor hauria tocat la meta, però ella, amb els ulls clucs i en silenci, amb un terrible gemec la infortunada reprengué els sentits. Perquè una doble desgràcia l'atacava: la corona daurada posada al voltant del cap emetia un corrent prodigiós de foc devorador, i els vestits prims, presents dels seus fills, devoraven la tendra carn de la desgraciadíssima. Fuig alçant-se del tron, tot cremant-se, sacsejant la cabellera i el cap ara d'un costat ara de l'altre, volent arrencar-se la corona; però l'or la mantenia fermament lligada, i el foc, quan sacsejava els cabells, brillava el doble més fort. Cau a terra vençuda per la desgràcia, irreconeixible excepte per qui l'havia engendrada: perquè ja no es distingien els ulls ni el bell rostre, sinó que la sang rajava del cap barrejada amb foc, i les carns s'escorrien dels ossos com làgrima de pi.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":480,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"d7e49811-0f2e-4729-bf53-9ad5a8770d2f","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"a89f04be-f271-4bbf-8109-a33fdefbc404"}
+"αὐτοκτόνον": "fratricida"
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":246,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"b200394e-ad50-457c-a136-2912e6e9eab7","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"8fa28c8c-1c53-4b34-855d-754178d46fe8"}
+Perquè de la teva descendència daurada va brollar, 
+i hi ha temor que sang divina caigui
+sota les mans dels homes.
+Mas tu, oh llum nascuda de Zeus, impedeix-ho, 
+fes que cessin, expulsa de casa les sanguinàries
+i miserables Erínies dels esperits venjadors!
+En va fluí el treball dels fills, 
+debades vas donar vida a la nissaga estimada, tu que
+vares deixar enrere el pas més hostil als estrangers
+de les blaves roques Simplègades?
+Desgraciada! Per què s'apodera de tu
+una còlera tan feixuga i una mort
+hostil? Car als mortals
+les contaminacions de la mateixa sang esdevenen dures
+quan cauen sobre la terra, i per als qui maten els seus, 
+els dolors enviats pels déus s'abaten sobre les cases.
+<ELS NENS des de dins: 
+Ai, ai!>
+COR: Sents el crit? Sents els nens?
+Ai, infortunada, oh dona de mal fat!
+NEN: Ai de mi! Què faré? On fugiré de les mans de ma mare?
+— No ho sé, estimat germà! Perquè som perduts.
+COR: Entraré a la casa? Em sembla que he
+d'ajudar els nens contra la mort.
+NEN: Sí, pels déus, ajudeu-nos! N'hi ha prou motiu.
+— Ja som a punt de morir per l'espasa!
+COR: Miserable! Com eres, doncs, pedra o ferro, 
+tu que amb la teva pròpia mà mataràs
+els fills que vas engendrar amb destí!
+Només n'he sentit una, només una de les dones
+d'abans que alcés la mà contra els seus fills estimats:
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":248,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"28384638-6dad-4ef9-a6ef-25b1f62894d7","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"5720d9a1-baec-46ad-b0a4-5b55c40ce6b4"}
+Ino, que va enfolquir per causa dels déus, quan l'esposa de Zeus la va expulsar de casa amb la seva maledicció; la infeliç es llança al mar després de l'impiu assassinat dels seus fills, saltant des de la riba, i mor junt amb els dos nens. Què més terrible podria passar encara? Oh, llit de les dones, ple de dolor, quants mals has causat ja als mortals!
+Jasó: Dones que esteu prop d'aquesta casa, encara és dins de casa Medea, la que ha comès aquestes coses terribles, o ha fugit? Hauria d'estar amagada sota terra o haver alçat el vol cap a les profunditats de l'èter, si no vol pagar el preu al palau dels reis. Confia que, després d'haver matat els senyors de la terra, ella mateixa escaparà impune d'aquesta casa? Però no tinc tanta preocupació per ella com pels meus fills; a ella la castigaran pels seus crims, però jo he vingut a salvar la vida dels meus nens, perquè els parents no els facin mal, cobrant venjança pel sacríleg assassinat de la mare.
+Cor: Oh desgraciat, no saps a quina desgràcia has arribat, Jasó; si ho sabesses, no diries aquestes paraules.
+Jasó: Què hi ha? Potser vol matar-me també a mi?
+Cor: Els teus fills han mort a mans de la seva mare.
+Jasó: Ai de mi, què dius? Com m'has destruït, dona!
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":297,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"5f02d752-653f-4888-95c2-329d202ca7f2","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"4f5c0070-d74d-4bed-920f-bfa38d6e0145"}
+**Cor: ** Ja no et preocupis pels teus fills, que ja no existeixen.
+**Jasó: ** On els va matar? Dins o fora de casa?
+**Cor: ** Obre les portes i veuràs la matança dels teus fills.
+**Jasó: ** Servidors, obriu les tanques al més aviat possible, lleveu els pestells, que vull veure el doble mal: els morts i venjar-me d'ella.
+**Medea: ** * (apareixent dalt en el carro del Sol)* Per què forces aquestes portes, cercant els cadàvers i a mi, que els he matats? Deixa-ho estar. Si necessites alguna cosa de mi, digues el que vulguis, però mai no em tocaràs amb la mà. Tal vehicle el pare Hèlios, meu avi, ens dona, bastió contra la mà enemiga.
+**Jasó: ** Oh odi! Oh dona la més odiosa de totes davant dels déus, de mi i de tota la raça humana! Tu que vas gosar clavar l'espasa als teus propis fills, que tu mateixa vas parir, i m'has destruït sense descendència! I després d'haver fet això gosses mirar el sol i la terra, havent comès l'acte més impiu! Que perisquis! Ara m'adono del que aleshores no veia: que quan et vaig portar de casa teva, de terra bàrbara a casa grega, eres un gran mal, traidora del pare i de la terra que et va nodrir. I els déus van llançar contra mi el teu dimoni venjador: perquè tu, després de matar el teu germà prop de la llar paterna, vas pujar a la nau Argo de belles proes.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":242,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"f9b94144-e15e-47ac-8ad7-d0682afc0275","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"733e4d15-1dd4-4ce2-a88e-2ccb3eb330bc"}
+**Jàson: ** He començat amb això. Tu, que et vas casar amb aquest home i em vas donar fills, els has destruït per causa del llit i del llit. Cap dona grega hauria suportat això, amb qui abans pensava casar-me, parentesc hostil i funest per a mi. Lleona ets, no dona, amb una natura més ferotge que l'Escil·la tirènia. Però no et podria ferir amb milers de retrets: tens tal descaro! Vés-te'n, infame i assassina dels fills! I jo he de lamentar el meu destí, que no gaudirà de nous llits nupcials ni podré saludar vius els fills que vaig engendrar i criar, sinó que els he perdut.
+**Medea: ** M'estendria molt contestant aquestes paraules, si Zeus pare no sabés què has sofert de mi i què has fet tu. Però tu no anaves a viure plaentment després d'haver deshonrat el meu llit, rient-te de mi, ni tampoc la princesa, ni Creont, que t'ha unit en matrimoni, havia de trigar a expulsar-me d'aquesta terra. Per això, anomena'm lleona si vols, i Escil·la que va habitar la terra tirènia: he pres del teu cor la venjança que calia.
+**Jàson: ** Tu també pateixes i ets còmplice d'aquests mals.
+**Medea: ** Ho sé de cert. Però s'alleuja el dolor si tu no rius.
 
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":366,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"ff6121c0-8c54-43f8-bccc-48c7153f53e1","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"8c090e03-d44b-4290-a010-2fe97387407e"}
-
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":251,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"e5bd94e4-93c0-4a32-84b7-06260be32933","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"2876d7b8-a81b-4032-9f3a-4ad117fed097"}
-
-[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"duration_ms":300,"duration_api_ms":0,"num_turns":1,"result":"You're out of extra usage · resets 8pm (Europe/Madrid)","stop_reason":"stop_sequence","session_id":"3e219cf2-2209-419f-b656-c26b83468ab8","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"fast_mode_state":"off","uuid":"e611e963-9419-4ca9-93eb-3e6c7b39b413"}
+veient els amargs finals del meu matrimoni.
+Jasó. Però que t'aniquilin l'Erínia dels fills
+i la Justícia assassina!
+Medea. I quin déu o dimoni t'escolta, 
+perjur i traïdor?
+Jasó. Ai, ai! Abominable infanticida!
+Medea. Vés cap a casa i enterra la teva esposa.
+Jasó. Hi vaig, havent perdut els meus dos fills.
+Medea. Encara no plores prou. Espera la vellesa.
+Jasó. Oh, fills estimadíssims! Medea. Per a la mare, sí; per tu, no.
+Jasó. I malgrat això els vas matar? Medea. Per fer-te mal.
+Jasó. Ai de mi! Necessito abraçar
+els dolços llavis dels fills, desgraciat!
+Medea. Ara els parles, ara els abraces, 
+després d'haver-los rebutjat. Jasó. Deixa'm, pels déus, 
+tocar la tendra pell dels fills.
+Medea. No es pot. Les paraules són inútils.
+Jasó. Zeus, escoltes com som expulsats, 
+què patim per aquesta lleona
+abominable i infanticida?
+Però amb totes les forces que tinc, 
+ploro i invoco els déus, 
+prenent-los com a testimonis: després de matar els meus fills, 
+m'impedeix tocar-los amb les mans i enterrar-los, 
+fills que mai no hauria hagut d'engendrar
+per veure'ls morts per la teva mà.
+Cor. Zeus governa moltes coses des de l'Olimp, 
+i els déus compleixen moltes coses inesperades.
+El que semblava que passaria no s'ha complert, 
+i el déu ha trobat camí per allò inesperat.
+Així ha acabat aquest fet.
 
 ---
 
