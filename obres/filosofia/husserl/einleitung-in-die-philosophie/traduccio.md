@@ -8,6 +8,36 @@ Traducció al català: Editorial Clàssica (Biblioteca Universal Arion)
 
 ---
 
+## Índex
+
+### Part I — Lliçó principal (Vorlesung 1919/20)
+
+1. [L'àmbit peculiar de problemes de la filosofia](#làmbit-peculiar-de-problemes-de-la-filosofia)
+2. [La filosofia o ciència grega incipient](#la-filosofia-o-ciència-grega-incipient)
+3. [Plató i el descobriment de l'apriori](#plató-i-el-descobriment-de-lapriori)
+4. [Teoria formal de la ciència](#teoria-formal-de-la-ciència)
+5. [Aristòtil i la idea d'una ontologia real](#aristòtil-i-la-idea-duna-ontologia-real)
+6. Explicació cientificonatural i teleològica del món *(pendent de traducció)*
+7. [Axiologia apriorística i ètica](#axiologia-apriorística-i-ètica)
+8. Ètica social *(pendent de traducció)*
+9. Teleologia *(pendent de traducció)*
+10. Racionalisme i empirisme *(pendent de traducció)*
+11. El gir interior de Descartes *(pendent de traducció)*
+12. La fenomenologia com a ciència apriorística *(pendent de traducció)*
+
+### Part II — Apèndix
+
+- Descartes *(pendent de traducció)*
+- Locke *(pendent de traducció)*
+- Teoria del coneixement i metafísica *(pendent de traducció)*
+- Berkeley *(pendent de traducció)*
+- Hume *(pendent de traducció)*
+- [Spinoza](#apèndix-spinoza)
+- Leibniz *(pendent de traducció)*
+- Kant *(pendent de traducció)*
+
+---
+
 # PART I — LLIÇÓ PRINCIPAL (Vorlesung 1919/20)
 
 ## L'àmbit peculiar de problemes de la filosofia
