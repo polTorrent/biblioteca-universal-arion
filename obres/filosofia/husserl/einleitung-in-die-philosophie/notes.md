@@ -92,3 +92,19 @@ El text ha estat editat per Hanne Jacobs i publicat el 2012 per Springer dins la
 ### [H4] La fenomenologia com a «filosofia primera»
 
 Husserl concep la fenomenologia com la realització del somni filosòfic secular d'una *prima philosophia*: una ciència absolutament fonamentada que serveixi de base a totes les altres ciències. Aquesta ambició connecta amb Aristòtil (πρώτη φιλοσοφία) i amb Descartes (la recerca d'un fonament indubtable), però Husserl la reformula radicalment: la filosofia primera no és metafísica sinó fenomenologia transcendental, l'estudi de les estructures essencials de la consciència pura.
+
+### [F12] L'ocasionalisme i Malebranche (1638–1715)
+
+L'ocasionalisme és la doctrina metafísica del segle XVII segons la qual les substàncies finites (cossos i esperits) no actuen causalment les unes sobre les altres: Déu és l'única causa vertadera de tot esdevenir. Nicolas Malebranche, el seu principal representant, ensenyava que «veiem totes les coses en Déu» i que Déu és el «lloc de tots els esperits». Husserl presenta l'ocasionalisme com un intent de resoldre el problema cartesià de la interacció psicofísica que, malgrat les seves limitacions, manté la dimensió teleològica i l'activitat divina que Spinoza eliminarà. La tesi que tota causalitat aparent entre finits és en veritat causalitat divina prepara el terreny del monisme spinozià, però preservant Déu com a subjecte actiu i creador.
+
+### [F13] Thomas Hobbes (1588–1679)
+
+Husserl esmenta Hobbes com a contemporani de Descartes i punt de partida alternatiu de la filosofia moderna. El materialisme mecanicista de Hobbes —que redueix tota realitat, inclosa la vida mental, a moviment de cossos— representa un corrent paral·lel al racionalisme cartesià. Tot i que Husserl no el desenvolupa extensament en aquestes lliçons, el situa al costat de Descartes com a origen de la línia empirista.
+
+### [F14] Johann Heinrich Lambert (1728–1777)
+
+Lambert apareix en el context del desenvolupament que va de Spinoza a Leibniz i Kant. El seu *Neues Organon* (1764) i la seva correspondència amb Kant van contribuir a la distinció entre ontologia formal i ontologia material que Husserl considera fonamental. Lambert va cercar una teoria de les formes del coneixement que anticipés elements de la fenomenologia.
+
+### [T6] Sobre *scientia intuitiva*
+
+Expressió llatina que Spinoza usa a l'*Ethica* (part V) per designar el grau més alt de coneixement: el coneixement de les coses singulars tal com se segueixen necessàriament de l'essència de Déu. Husserl la reprèn per mostrar com, en el sistema de Spinoza, la ciència natural assoliria el seu valor definitiu només quan les seves proposicions fossin reconduïdes deductivament fins als principis metafísics últims.
