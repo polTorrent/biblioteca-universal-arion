@@ -14,7 +14,7 @@ obra:
     estoica i epicúria amb consells pràctics per viure amb tranquil·litat d'esperit.
   font_original: https://el.wikisource.org/wiki/%CE%A0%CE%B5%CF%81%CE%AF_%CE%B5%CF%85%CE%B8%CF%85%CE%BC%CE%AF%CE%B1%CF%82_(%CE%A0%CE%BB%CE%BF%CF%8D%CF%84%CE%B1%CF%81%CF%87%CE%BF%CF%82)
   estadistiques:
-    paraules_traduccio: 4629
+    paraules_traduccio: 5740
 seccions: 20
 estadistiques:
   paraules_original: 0
@@ -23,21 +23,21 @@ estadistiques:
   termes_glossari: 0
 revisio:
   estat: revisat
-  qualitat: 5.33
-  data_revisio: '2026-03-22'
+  qualitat: 6.0
+  data_revisio: '2026-03-24'
 avaluacio_final:
-  data: '2026-03-22T12:46:32.323478'
+  data: '2026-03-24T12:05:35.301146'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 47
-  errors_critics: 0
-  errors_alts: 0
+    fidelitat: 5.0
+    veu_autor: 7.0
+    fluidesa: 5.0
+    correccio_linguistica: 5.0
+    coherencia: 6.0
+    global: 5.7
+  total_errors: 72
+  errors_critics: 2
+  errors_alts: 2
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 36
+  correccions_pendents: 51
