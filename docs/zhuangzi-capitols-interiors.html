@@ -346,8 +346,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Capítols interiors (selecció)</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Zhuangzi (莊子)</em></p>
+<p>Traduït del xinès per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Capítol 1 — El vagareig lliure (逍遙遊)</h2>
 <p>Al mar del Nord hi ha un peix que es diu Kun. El Kun és tan gran que ningú no sap quants milers de <em>li</em> fa. Es transforma en un ocell que es diu Peng. L&rsquo;esquena del Peng no se sap quants milers de <em>li</em> abasta; quan s&rsquo;alça enfurismat, les seves ales són com núvols que pengen del cel. Aquest ocell, quan el mar s&rsquo;agita, es disposa a migrar cap al mar del Sud. El mar del Sud és l&rsquo;Estany del Cel. El <em>Qixie</em>, crònica de prodigis, diu: «Quan el Peng migra cap al mar del Sud, bat l&rsquo;aigua tres mil <em>li</em>, s&rsquo;eleva amb el remolí nou-cents mil <em>li</em> amunt, i vola sis mesos sense aturar-se.» Vapors salvatges, grans de pols, el buf amb què els éssers vius es bufen els uns als altres. El blau del cel, és el seu color veritable? O és que s&rsquo;estén tan lluny que no té límit? Quan l&rsquo;ocell mira cap avall, veu el mateix.</p>
 <p>Si l&rsquo;aigua acumulada no és prou profunda, no té força per sostenir una gran barca. Aboca una copa d&rsquo;aigua en un clot del terra i un gra de mostassa hi farà de vaixell; però posa-hi la copa i s&rsquo;encallarà, perquè l&rsquo;aigua és poca i la barca gran. Si el vent acumulat no és prou potent, no té força per sostenir unes grans ales. Per això, a noranta mil <em>li</em> d&rsquo;altura, el vent queda a sota, i llavors el Peng cavalca el vent; amb el cel blau a l&rsquo;esquena i res que l&rsquo;obstrueixi, llavors es disposa a volar cap al sud.</p>
@@ -418,7 +425,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -804,7 +811,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

@@ -1410,8 +1410,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">De Rerum Natura — Llibre I</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Lucreci</em></p>
+<p>Traduït del llatí per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>Mare dels fills d&rsquo;Enees, goig dels homes i dels déus, Venus amorosa! Sota els astres que es llisquen pel cel, tu omples de vida el mar navegable i les terres fèrtils, ja que per tu tota mena d&rsquo;éssers vivents és concebuda i veu la llum del sol naixent.
 Davant teu, deessa, davant teu fugen els vents i els núvols del cel a la teva arribada. Per a tu la dolça terra meravellosa ofereix flors, per a tu riuen les aigües marines, i el cel apaivagat brilla amb llum difosa.
 Doncs tan bon punt es desperta la primavera i s&rsquo;allibera la brisa fecunda del favoni, primer els ocells de l&rsquo;aire, deessa, t&rsquo;anuncien a tu i la teva arribada, amb els cors colpits per la teva força. Després els animals salvatges salten per les alegres praderies.</p>
@@ -1688,7 +1695,7 @@ ni el que és dalt ni el que és baix, perquè tot es recolza al centre
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -1978,7 +1985,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

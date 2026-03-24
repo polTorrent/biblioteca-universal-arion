@@ -835,14 +835,21 @@ whither he leads.</p>
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Critó</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Plató</em></p>
+<p>Traduït de l&rsquo;anglès (versió de Benjamin Jowett) per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p><strong>Personatges del diàleg:</strong> Sòcrates, Critó.</p>
 <p><strong>Escena:</strong> La presó de Sòcrates.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>43a</h2>
 <p><strong>SÒCRATES.</strong> Per què has vingut tan d&rsquo;hora, Critó? Encara no és molt aviat?
 <strong>CRITÓ.</strong> Sí que ho és, sens dubte.
@@ -1019,14 +1026,14 @@ whither he leads.</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Notes</h2>
 <p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>: Referència a la <em>Ilíada</em> d&rsquo;Homer (IX, 363). Aquil·les amenaça d&rsquo;abandonar Troia i tornar a Ftia, la seva terra natal. Sòcrates interpreta el somni com una profecia de la seva mort al tercer dia: «Ftia» representa el seu retorn final, no a una terra sinó a l&rsquo;altre món.</p>
 <p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>: Els coribants eren sacerdots de la deessa Cíbele que celebraven rituals frenètics amb música de flautes i tambors. Sòcrates compara l&rsquo;efecte de l&rsquo;argument de les Lleis amb el trànsit místic induït per la música dels coribants: un cop l&rsquo;has sentida, no pots sentir res més.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <p><em>Traducció basada en la versió anglesa de Benjamin Jowett (domini públic).</em>
 <em>Revisada i adaptada al català normatiu per Biblioteca Arion.</em></p>
                 </div>
@@ -1393,7 +1400,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

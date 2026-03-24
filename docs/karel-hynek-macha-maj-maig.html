@@ -1228,8 +1228,15 @@ hrdliččin zve ku lásce hlas:
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Maj (Maig)</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Karel Hynek Mácha</em></p>
+<p>Traduït del txec per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Dedicatòria</h2>
 <p>Al molt honorable senyor
 HYNEK KOMM
@@ -1284,7 +1291,7 @@ de flors et teixeix el maig txec!</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Cant primer</h2>
 <p>Era el vespre tardà — primer de maig —
 vespre de maig — era temps d&rsquo;amor.
@@ -1433,7 +1440,7 @@ La veu de la tórtora crida al joc de l&rsquo;amor:
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Cant segon</h2>
 <p>Ha caigut una estrella des de l&rsquo;altura del cel,
 morta estrella de resplendor livid;
@@ -1717,7 +1724,7 @@ i per damunt d&rsquo;ell la mitjanit sona la campana.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>Intermezzo I</h2>
 <p>Mitjanit <em>(paisatge)</em></p>
 <p>Per les planes extenses dorm la llum pàl·lida de la lluna,
@@ -1814,7 +1821,7 @@ ja és de dia, ja és de dia!»</p>
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>Cant tercer</h2>
 <p>Sobre les muntanyes fosques el dia rosat
 s&rsquo;alça despertant la vall de maig,
@@ -2007,7 +2014,7 @@ la veu de la tórtora crida a l&rsquo;amor:
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>Intermezzo II</h2>
 <p>Les muntanyes s&rsquo;alcen encarades,
 d&rsquo;una a l&rsquo;altra un núvol estès
@@ -2061,7 +2068,7 @@ grans laments van ressonar:
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>Cant quart</h2>
 <p>El bell maig va passar, va morir la flor primaveral,
 i l&rsquo;estiu s&rsquo;encengué; — després l&rsquo;estiu va passar,
@@ -2167,7 +2174,7 @@ la veu de la tórtora crida a l&rsquo;amor:
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -2611,7 +2618,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

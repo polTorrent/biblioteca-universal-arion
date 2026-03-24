@@ -295,8 +295,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">El retrat oval</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Edgar Allan Poe</em></p>
+<p>Traduït de l&rsquo;anglès per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>El castell on el meu criat s&rsquo;havia atrevit a entrar per força —en comptes de permetre que jo, greument ferit com estava, passés la nit a la intempèrie— era una d&rsquo;aquelles construccions tenebroses i grandioses que des de fa temps dominen els Apenins<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>, tan reals com les que imagina la senyora Radcliffe<sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>. Per tot el que es veia, havia estat abandonat recentment i de manera temporal. Ens instal·làrem en una de les cambres més petites i menys luxosament moblades. Es trobava en una torre apartada de l&rsquo;edifici. Les decoracions eren riques però esquinçades i antigues. Les parets lluïen tapissos i una gran quantitat de trofeus heràldics<sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> de tota mena, juntament amb un nombre inusualment gran de pintures modernes molt expressives emmarcades en ric arabesc daurat. Aquestes pintures penjaven no només de les parets principals, sinó també dels molts racons que l&rsquo;arquitectura capritxosa del castell feia necessaris —i en aquestes pintures el meu deliri incipient, potser, m&rsquo;havia fet interessar-me profundament. Per això vaig demanar a Pedro que tanqués les pesades persianes de la cambra —ja que era de nit—, que encengués les llengües d&rsquo;un alt canelobre que hi havia al capçal del meu llit, i que obrís de bat a bat les cortines frangetjades de vellut negre que embolcallaven el llit mateix. Volia que tot això es fes per poder abandonar-me, si no al son, almenys alternativament a la contemplació d&rsquo;aquestes pintures i a la lectura d&rsquo;un petit volum que s&rsquo;havia trobat damunt el coixí i que pretenia descriure-les i comentar-les.</p>
 <p>Llargament —molt llargament— vaig llegir, i devotament, ferventment, vaig contemplar. Les hores volaren ràpides i glorioses, i arribà la mitjanit profunda. La posició del canelobre em desplaïa, i estenent la mà amb dificultat, per no molestar el meu criat adormit, el vaig col·locar de manera que els seus raigs il·luminessin més plenament el llibre.</p>
 <p>Però l&rsquo;acció produí un efecte del tot inesperat. Els raigs de les nombroses espelmes (car n&rsquo;hi havia moltes) caigueren ara dins un nínxol de la cambra que fins aleshores havia romàs en ombra profunda, ocult per una de les columnes del llit. Així vaig veure en llum vívida un quadre fins llavors inadvertit. Era el retrat d&rsquo;una noia que tot just descloia cap a la dona. Vaig mirar la pintura de pressa, i després vaig tancar els ulls. Per què ho vaig fer no em fou evident al principi ni tan sols a mi mateix. Però mentre les meves parpelles romanien closes, vaig repassar mentalment la raó d&rsquo;haver-les tancat. Fou un moviment impulsiu per guanyar temps per pensar —per assegurar-me que la meva visió no m&rsquo;havia enganyat—, per calmar i dominar la meva imaginació per a una contemplació més serena i més certa. Al cap d&rsquo;uns instants vaig tornar a mirar fixament la pintura.</p>
@@ -306,7 +313,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -762,7 +769,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

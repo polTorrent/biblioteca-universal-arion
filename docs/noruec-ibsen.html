@@ -1641,8 +1641,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Casa de nines</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Henrik Ibsen</em></p>
+<p>Traduit del noruec per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Personatges</h2>
 <p><strong>Torvald Helmer</strong>, advocat</p>
 <p><strong>Nora</strong>, la seva esposa</p>
@@ -1656,7 +1663,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Primer acte</h2>
 <p>(Una sala d&rsquo;estar agradable i decorada amb bon gust, però sense luxe. A la dreta del fons, una porta que dona a l&rsquo;entrada; una altra porta a l&rsquo;esquerra del fons dona a l&rsquo;estudi de Helmer. Entre les dues portes, un pianoforte. A la paret de l&rsquo;esquerra, al mig, una porta, i més endavant una finestra. Prop de la finestra, una taula rodona amb butaques i un sofà petit. A la paret lateral de la dreta, una mica endarrerida, una porta, i a la mateixa paret, més cap al davant, una estufa de ceràmica amb un parell de butaques i una gandula davant seu. Entre l&rsquo;estufa i la porta lateral, una tauleta. Gravats a les parets. Una étagère amb objectes de porcellana i altres petites peces d&rsquo;art; un petit llibreter amb llibres en enquadernació de luxe. Catifa al terra; foc a l&rsquo;estufa. Dia d&rsquo;hivern.)</p>
 <p>(Es sent el timbre a l&rsquo;entrada; poc després se sent que obren la porta. Nora entra a la sala tararejant de bon humor; porta roba d&rsquo;abric i molts paquets que deixa sobre la taula de la dreta. Deixa la porta de l&rsquo;entrada oberta darrere seu, i es veu a fora un missatger que porta un arbre de Nadal i una cistella, que lliura a la criada, que els ha obert la porta.)</p>
@@ -2174,7 +2181,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Segon acte</h2>
 <p>(La mateixa sala. Al racó del fons, prop del piano, hi ha l&rsquo;arbre de Nadal, despullat, desmanegat, amb les espelmes consumides fins al moll. La roba d&rsquo;abric de la Nora és sobre el sofà.)</p>
 <p>(La Nora, sola a la sala, camina inquieta d&rsquo;un cantó a l&rsquo;altre; finalment s&rsquo;atura davant el sofà i agafa l&rsquo;abric.)</p>
@@ -2628,7 +2635,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>Tercer acte</h2>
 <p>(La mateixa habitació. La taula baixa amb cadires al voltant ha estat avançada fins al mig de la sala. Hi crema una llàntia sobre la taula. La porta del vestíbul és oberta. Des del pis de dalt se sent música de ball.)</p>
 <p>(La Senyora Linde seu a la taula i fulleja distretament un llibre; intenta llegir però sembla incapaç de concentrar el pensament; un parell de vegades escolta atentament cap a la porta exterior.)</p>
@@ -3026,7 +3033,6 @@
 <p><em>(surt per la porta del vestíbul.)</em></p>
 <p><strong>HELMER</strong> <em>(s&rsquo;enfonsa sobre una cadira vora la porta i es cobreix la cara amb les mans)</em>. Nora! Nora! <em>(mira al seu voltant i s&rsquo;aixeca)</em> Buit. Ja no és aquí. <em>(un esperança li surt del fons)</em> Allò més meravellós —?!</p>
 <p><em>(Des de baix se sent el tro d&rsquo;una porta que es tanca de cop.)</em></p>
-<hr>
                 </div>
                 
                 </section>
@@ -3411,7 +3417,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

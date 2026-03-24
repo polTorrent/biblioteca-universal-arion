@@ -4060,8 +4060,15 @@ Werther-Buch 2&rdquo; von Johann Wolfgang von Goethe.</p>
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Els sofriments del jove Werther</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Johann Wolfgang von Goethe</em></p>
+<p>Traduït del alemany per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
 <p>&lsquo;<code>'json
 '</code>&lsquo;</p>
@@ -4319,7 +4326,7 @@ La bona dona havia dormit poc aquella nit; allò que tant havia temut s&rsquo;ha
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -4728,7 +4735,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

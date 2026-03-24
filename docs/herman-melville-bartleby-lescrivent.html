@@ -1602,8 +1602,15 @@ death.</p>
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Bartleby, l'escrivent</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Herman Melville</em></p>
+<p>Traduït de l&rsquo;anglès per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>Sóc un home d&rsquo;edat avançada. La naturalesa de la meva feina durant els darrers trenta anys m&rsquo;ha posat en contacte, més del que és habitual, amb un grup d&rsquo;homes interessant i una mica peculiar, del qual encara no s&rsquo;ha escrit res, que jo sàpiga: em refereixo als escrivans de documents legals. N&rsquo;he conegut molts, tant professionalment com personalment, i si volgués, podria explicar diverses històries que farien somriure la gent benèvola i plorar les ànimes sensibles. Però deixo de banda les biografies de tots els altres escrivans per centrar-me en alguns passatges de la vida de Bartleby, que va ser l&rsquo;escrivà més estrany que havia conegut mai. Mentre que d&rsquo;altres copistes de documents legals podria escriure&rsquo;n la vida completa, de Bartleby no es pot fer res semblant. Crec que no existeixen materials per a una biografia completa i satisfactòria d&rsquo;aquest home. És una pèrdua irreparable per a la literatura. Bartleby va ser un d&rsquo;aquells éssers dels quals no es pot saber res, excepte a partir de fonts directes, i en el seu cas aquestes són molt poques. El que els meus propis ulls sorpresos van veure de Bartleby, això és tot el que en sé, excepte un informe vague que apareixerà més endavant.</p>
 <p>Abans de presentar l&rsquo;escrivà tal com el vaig conèixer per primera vegada, convé que parli una mica de mi mateix, dels meus empleats, del meu negoci, del meu despatx i de l&rsquo;entorn general, perquè aquesta descripció és indispensable per comprendre adequadament el personatge principal que estic a punt de presentar.</p>
 <p>Primerament: sóc un home que, des de la joventut, ha estat impregnat d&rsquo;una profunda convicció que la manera de viure més fàcil és la millor. Per tant, tot i pertànyer a una professió proverbalment enèrgica i nerviosa, fins i tot turbulenta a vegades, mai no he permès que res d&rsquo;això envaís la meva pau. Sóc un d&rsquo;aquells advocats sense ambició que mai no s&rsquo;adrecen a un jurat, ni de cap manera busquen l&rsquo;aplaudiment públic; sinó que, en la fresca tranquil·litat d&rsquo;un refugi acollidor, fan els seus negocis còmodament entre bons, hipoteques i títols de propietat d&rsquo;homes rics. Tots els qui em coneixen em consideren un home eminentment <em>prudent</em>. El difunt John Jacob Astor, un personatge poc donat a l&rsquo;entusiasme poètic, no va tenir cap vacil·lació a pronunciar que el meu primer gran punt era la prudència; el segon, el mètode. No ho dic per vanitat, sinó que simplement registro el fet que no vaig estar desocupat en la meva professió gràcies al difunt John Jacob Astor; un nom que, ho confesso, m&rsquo;agrada repetir, perquè té un so rodó i orbicular, i ressona com lingots d&rsquo;or. Hi afegiré lliurement que no era insensible a la bona opinió del difunt John Jacob Astor.</p>
@@ -1800,7 +1807,7 @@ death.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -2350,7 +2357,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

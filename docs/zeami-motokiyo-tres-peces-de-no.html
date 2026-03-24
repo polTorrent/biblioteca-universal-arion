@@ -380,8 +380,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Tres peces de nō: Matsukaze, Atsumori, Hagoromo</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Zeami Motokiyo</em></p>
+<p>Traduït del japonès clàssic per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>I. Matsukaze (松風)</h2>
 <h3>Entrada del waki</h3>
 <p>Sóc un monjo viatger. Com a monjo pelegrí que he recorregut totes les terres, encara no he vist la platja de Suma, a la província de Tsu, i per això he decidit emprendre el camí per contemplar-la.</p>
@@ -413,7 +420,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>II. Atsumori (敦盛)</h2>
 <h3>Entrada del waki</h3>
 <p>Sóc Kumagai no Jirō Naozane, natural de la província de Musashi. A la batalla d&rsquo;Ichi-no-Tani vaig abatir el jove noble Atsumori, del clan Taira, i des d&rsquo;aleshores, commòs per la impermanència de totes les coses, m&rsquo;he fet monjo sota el nom de Renshō<sup><a href="#nota-6" class="note-ref" id="ref-6">[6]</a></sup> i he baixat fins a Ichi-no-Tani per pregar pel repòs de la seva ànima.</p>
@@ -446,7 +453,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>III. Hagoromo (羽衣)</h2>
 <h3>Entrada del waki</h3>
 <p>Sóc Hakuryō, pescador de la platja de Miho. Cada dia surto a la costa a llançar l&rsquo;ham.</p>
@@ -489,7 +496,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <p><em>Traducció de domini públic — CC BY-SA 4.0</em></p>
                 </div>
                 
@@ -969,7 +976,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

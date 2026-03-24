@@ -373,8 +373,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Fragments Pòstums — Friedrich Nietzsche</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>Selecció de fragments (1881–1889)</h2>
+<p>Traducció al català des de l&rsquo;alemany. Fonts: <em>Kritische Studienausgabe</em> (KSA), ed. Giorgio Colli i Mazzino Montinari, de Gruyter/dtv.</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h3>I. Voluntat de poder i etern retorn (1881–1884)</h3>
 <p><strong>Fragment 11<sup><a href="#nota-141" class="note-ref" id="ref-141">[141]</a></sup> — Agost 1881 (KSA 9)</strong></p>
 <p>El pes més gran. — Què passaria si un dia o una nit un dimoni s&rsquo;infiltrés fins a la teva solitud més solitària i et digués: «Aquesta vida, tal com la vius ara i l&rsquo;has viscuda, l&rsquo;hauràs de viure un cop més i innombrables cops més; i no hi haurà res de nou, sinó que cada dolor i cada plaer i cada pensament i sospir i tot allò inexpressablement petit i gran de la teva vida haurà de retornar-te, i tot en la mateixa sèrie i successió.» No et llançaries a terra i cruixiries les dents i maleiries el dimoni que parlés així? O bé has viscut alguna vegada un instant prodigiós en què li respondries: «Ets un déu i mai no he sentit res més diví!»</p>
@@ -387,7 +394,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h3>II. Més enllà del bé i del mal — Treballs preparatoris (1884–1885)</h3>
 <p><strong>Fragment 25<sup><a href="#nota-11" class="note-ref" id="ref-11">[11]</a></sup> — Primavera 1884 (KSA 11)</strong></p>
 <p>Suposem que no hi ha res més de real «donat» que el nostre món de desigs i passions, que no podem baixar ni pujar a cap altra «realitat» que precisament la realitat dels nostres impulsos — car pensar no és més que un comportament d&rsquo;aquests impulsos entre si —: no és permès de fer l&rsquo;assaig i de plantejar la pregunta de si allò donat no basta per comprendre, a partir dels seus semblants, també l&rsquo;anomenat món mecanicista (o «material»)?</p>
@@ -400,7 +407,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h3>III. La genealogia de la moral — Treballs preparatoris (1885–1887)</h3>
 <p><strong>Fragment 2<sup><a href="#nota-127" class="note-ref" id="ref-127">[127]</a></sup> — Tardor 1885 (KSA 12)</strong></p>
 <p>L&rsquo;home moral no és una espècie millor que l&rsquo;immoral, és només una espècie més feble. No és el tipus superior; simplement té menys força, — la seva «virtut» és l&rsquo;expressió de la seva feblesa.</p>
@@ -413,7 +420,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h3>IV. Voluntat de poder — Fragments tardans (1887–1888)</h3>
 <p><strong>Fragment 9<sup><a href="#nota-8" class="note-ref" id="ref-8">[8]</a></sup> — Tardor 1887 (KSA 12)</strong></p>
 <p>El nihilisme com a ideal de la potència suprema de l&rsquo;esperit, de la vida més desbordant — en part destructiu, en part irònic.</p>
@@ -432,7 +439,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h3>V. Darrers fragments (1888–1889)</h3>
 <p><strong>Fragment 14<sup><a href="#nota-14" class="note-ref" id="ref-14">[14]</a></sup> — Primavera 1888 (KSA 13)</strong></p>
 <p>El meu concepte del geni. — Els grans homes són, com les grans èpoques, materials explosius en els quals s&rsquo;ha acumulat una força immensa; la seva condició prèvia és sempre, històricament i fisiològicament, que durant molt de temps s&rsquo;hagi aplegat, amuntegat, estalviat i conservat per a ells — que durant molt de temps no hagi tingut lloc cap explosió.</p>
@@ -912,7 +919,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

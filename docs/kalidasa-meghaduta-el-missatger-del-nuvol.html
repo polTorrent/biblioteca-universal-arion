@@ -3071,15 +3071,22 @@ retained.</p>
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Kumārasambhava — El Naixement del Déu de la Guerra</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Kālidāsa</em></p>
+<p>Traduït del anglès per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p><strong>Autor: ** desconegut
 </strong>Font: ** [gutenberg] (https://www.gutenberg.org/ebooks/31968)
 **Llengua: ** anglès.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p>EL NAIXEMENT DEL DÉU DE LA GUERRA.
 Poema de Kālidāsa
 Traduit del sànscrit a l&rsquo;anglès en vers
@@ -4540,7 +4547,7 @@ NOTES DEL TRANSCRIPTOR
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -5088,7 +5095,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

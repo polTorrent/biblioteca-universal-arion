@@ -358,15 +358,25 @@ La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    <h2 class="section-title">Sobre la Natura (Fragments)</h2>
+                    <h2 class="section-title">Fragments d'Heràclit</h2>
 
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>Περὶ φύσεως (Sobre la natura)</h2>
+<p><strong>Autor:</strong> Heràclit d&rsquo;Efes (Ἡράκλειτος ὁ Ἐφέσιος)</p>
+<p><strong>Traductor:</strong> Pipeline V2 - Biblioteca Universal Arion</p>
+<p><strong>Data:</strong> 2026-01-28</p>
+<p><strong>Qualitat:</strong> 8.0/10</p>
+                </div>
+                
+<h2 class="section-title">Sobre la Natura (Fragments)</h2>
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p><strong>Heràclit d&rsquo;Efes</strong> (c. 535-475 aC)</p>
 <p><em>Numeració segons Diels-Kranz (DK)</em></p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>DK 1</h2>
 <p>D&rsquo;aquest Lògos que és sempre, els homes es mostren sense comprensió tant abans d&rsquo;escoltar-lo com després d&rsquo;haver-lo escoltat per primera vegada; car tot succeint segons aquest Lògos, semblen inexperimentats quan proven paraules i obres d&rsquo;aquesta mena, com les que jo exposo.<sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup></p>
 <h2>DK 2</h2>
@@ -876,7 +886,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

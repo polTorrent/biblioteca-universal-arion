@@ -2605,8 +2605,15 @@ it:Le nebule</p>
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Els núvols</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Aristòfanes</em></p>
+<p>Traduït del grec antic per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Dramatis personae</h2>
 <ul>
 <li>ESTREPSIADES, ciutadà atenès endeutat</li>
@@ -2625,7 +2632,7 @@ it:Le nebule</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>ELS NÚVOLS</h2>
 <p><em>(Escena: Atenes. Nit. L&rsquo;interior d&rsquo;una casa, amb dos llits — en un dorm ESTREPSIADES, en l&rsquo;altre FIDÍPIDES. Al fons s&rsquo;endevina la façana del pensadori de Sòcrates.)</em></p>
 <p><strong>ESTREPSIADES</strong></p>
@@ -3023,7 +3030,7 @@ te la juro pels déus que la dipositaré.</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <p><strong>SÒCRATES</strong>
 Per quins déus juraries? Primer de tot, per a nosaltres els déus no són moneda corrent.</p>
 <p><strong>ESTREPSIADES</strong>
@@ -3295,7 +3302,7 @@ i cultiva la saviesa.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>PARÀBASI</h2>
 <p><em>(El Cor s&rsquo;adreça directament al públic)</em></p>
 <p><strong>COR</strong></p>
@@ -3419,7 +3426,7 @@ així sabrà millor com cal ajustar els dies de la vida al calendari lunar.</p>
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>SÒCRATES INTENTA ENSENYAR ESTREPSIADES</h2>
 <p><strong>SÒCRATES</strong></p>
 <p>Per l&rsquo;Alè! Per el Caos! Per l&rsquo;Aire!
@@ -3766,7 +3773,7 @@ girar d&rsquo;una altra manera.</p>
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>ESTREPSIADES INTENTA CONVÈNCER EL FILL</h2>
 <p><strong>ESTREPSIADES</strong></p>
 <p>Per la Boirina, aquí no et quedaràs,
@@ -3872,7 +3879,7 @@ i no té pràctica dels penjadors d&rsquo;aquí.</p>
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>ESTREPSIADES PORTA FIDÍPIDES A SÒCRATES</h2>
 <p><strong>ESTREPSIADES</strong></p>
 <p>Guarda silenci i no diguis res dolent d&rsquo;uns homes brillants i intel·ligents, dels quals, per la seva frugalitat, ningú no s&rsquo;ha tallat els cabells mai, ni s&rsquo;ha untat d&rsquo;oli, ni ha anat als banys a rentar-se. Tu, però, m&rsquo;estàs rosegant la vida com si ja fos mort. Vés de pressa i aprèn en el meu lloc!</p>
@@ -4099,7 +4106,7 @@ i no té pràctica dels penjadors d&rsquo;aquí.</p>
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <p><strong>ESTREPSIADES</strong></p>
 <p>Cinquè, quart, tercer; després el segon;
 i llavors aquell dia que jo més
@@ -4704,7 +4711,7 @@ però sobretot perquè sabia que ultrajaven els déus!</p>
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <p><em>Traducció de domini públic. Biblioteca Universal Arion, 2026.</em></p>
                 </div>
                 
@@ -5042,7 +5049,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

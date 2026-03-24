@@ -301,8 +301,15 @@ VI (Βουκολιασταί), VII (Θαλύσια), XI (Κύκλωψ), XV (Συ
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Idil·lis (selecció)</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Teòcrit</em></p>
+<p>Traduït del grec antic per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Idil·li I — Tirsis o el Cant</h2>
 <p><em>(Θύρσις ἢ ᾠδά)</em></p>
 <p>CABRER:
@@ -504,7 +511,7 @@ no fos cas que el boc vingui rere vostre.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Idil·li II — Les Fetilleres</h2>
 <p><em>(Φαρμακεύτριαι)</em></p>
 <p>SIMETXA:
@@ -713,7 +720,7 @@ de la nit tranquil·la.</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Idil·li III — La Serenata</h2>
 <p><em>(Κῶμος)</em></p>
 <p>Faig la serenata a Amaril·lis; les meves cabres
@@ -792,7 +799,7 @@ dolç com la mel a la gola.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>Idil·li VI — Els Cantors Bucòlics</h2>
 <p><em>(Βουκολιασταί)</em></p>
 <p>Dafnis el vaquer i Dametes un dia
@@ -857,7 +864,7 @@ Cap dels dos no va guanyar: van restar invictes tots dos.</p>
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>Idil·li VII — Les Talísies (La Festa de la Collita)</h2>
 <p><em>(Θαλύσια)</em></p>
 <p>Hi hagué un temps que Eucritos i jo
@@ -1084,7 +1091,7 @@ d&rsquo;espigues i de roselles.</p>
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>Idil·li XI — El Ciclop</h2>
 <p><em>(Κύκλωψ)</em></p>
 <p>No hi ha altre remei contra l&rsquo;amor,
@@ -1208,7 +1215,7 @@ que si hagués pagat or al metge.</p>
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>Idil·li XV — Les Siracusanes (La Festa d&rsquo;Adonis)</h2>
 <p><em>(Συρακόσιαι ἢ Ἀδωνιάζουσαι)</em></p>
 <p>GORGO:
@@ -1452,7 +1459,7 @@ gent contenta quan tornis.</p>
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <p><em>Traducció de domini públic — Biblioteca Universal Arion, 2026</em></p>
                 </div>
                 
@@ -1932,7 +1939,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

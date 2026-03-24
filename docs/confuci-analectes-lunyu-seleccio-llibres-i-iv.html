@@ -278,16 +278,8 @@
                 <!-- Columna original -->
                 <section class="original-column">
                     <div class="column-header">Text original (xinès clàssic)</div>
-                    <h2 class="section-title">論語 · Lúnyǔ — Analectes</h2>
-
+                    
                 <div class="section" id="orig-1" data-parallel="trad-1">
-                    <p><strong>Confuci (孔子, Kǒngzǐ, c. 551–479 aC)</strong></p>
-<p>Selecció: Llibres I–IV</p>
-<p>Font: <a href="https://zh.wikisource.org/wiki/論語">Wikisource xinès</a></p>
-                </div>
-                
-
-                <div class="section" id="orig-2" data-parallel="trad-2">
                     <h2>Llibre I · Xué ér (Aprendre)</h2>
 <h3>學而第一</h3>
 <p>一之一</p>
@@ -325,7 +317,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-3" data-parallel="trad-3">
+                <div class="section" id="orig-2" data-parallel="trad-2">
                     <h2>Llibre II · Wéi zhèng (Governar)</h2>
 <h3>為政第二</h3>
 <p>二之一</p>
@@ -379,7 +371,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-4" data-parallel="trad-4">
+                <div class="section" id="orig-3" data-parallel="trad-3">
                     <h2>Llibre III · Bā yì (Vuit fileres de dansaires)</h2>
 <h3>八佾第三</h3>
 <p>三之一</p>
@@ -437,7 +429,7 @@
                 </div>
                 
 
-                <div class="section" id="orig-5" data-parallel="trad-5">
+                <div class="section" id="orig-4" data-parallel="trad-4">
                     <h2>Llibre IV · Lǐ rén (La benevolència en la comunitat)</h2>
 <h3>里仁第四</h3>
 <p>四之一</p>
@@ -492,6 +484,7 @@
 <p>子曰：「德不孤，必有鄰。」</p>
 <p>四之二六</p>
 <p>子游曰：「事君數，斯辱矣。朋友數，斯疏矣。」</p>
+<hr>
                 </div>
                 
                 </section>
@@ -1216,7 +1209,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

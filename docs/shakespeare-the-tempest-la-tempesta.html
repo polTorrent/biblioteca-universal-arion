@@ -2690,8 +2690,15 @@ Be free, and fare thou well! Please you, draw near.
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">La Tempesta</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>William Shakespeare</h2>
+<p>Traducció al català de <em>The Tempest</em> (c. 1610-1611)</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h3>DRAMATIS PERSONAE</h3>
 <ul>
 <li><strong>ALONSO</strong>, Rei de Nàpols.</li>
@@ -2722,7 +2729,7 @@ Be free, and fare thou well! Please you, draw near.
                 
 <h2 class="section-title">ACTE I.</h2>
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>ESCENA I. <em>En un vaixell a alta mar: s&rsquo;ou un soroll tempestuós de trons i llampecs.</em></h2>
 <blockquote>
 <p><em>Entren el CAPITÀ i el CONTRAMAESTRE.</em></p>
@@ -3167,7 +3174,7 @@ de mi, el seu senyor.</p>
                 
 <h2 class="section-title">ACTE II</h2>
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>ESCENA I. <em>Una altra part de l&rsquo;illa.</em></h2>
 <blockquote>
 <p><em>Entren ALONSO, SEBASTIÀ, ANTONI, GONZALO, ADRIÀ, FRANCESC i altres.</em></p>
@@ -3634,7 +3641,7 @@ llibertat!</p>
                 
 <h2 class="section-title">ACTE III</h2>
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>ESCENA I. <em>Davant la cel·la de Pròsper.</em></h2>
 <blockquote>
 <p><em>Entra FERRAN, portant un tronc.</em></p>
@@ -4017,7 +4024,7 @@ els pugui ara empènyer a fer.</p>
                 
 <h2 class="section-title">ACTE IV</h2>
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>ESCENA I. <em>Davant la cel·la de Pròsper.</em></h2>
 <blockquote>
 <p><em>Entren PRÒSPER, FERRAN i MIRANDA.</em></p>
@@ -4340,7 +4347,7 @@ segueix-me i serveix-me.    <em>[Surten.]</em></p>
                 
 <h2 class="section-title">ACTE V.</h2>
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>ESCENA I. <em>Davant la cel·la de Pròsper.</em></h2>
 <blockquote>
 <p><em>Entren PRÒSPER amb les seves robes màgiques, i ARIEL.</em></p>
@@ -4573,7 +4580,6 @@ uns quants bergants que no recordeu.</p>
 <p>Anhelo sentir la història de la vostra vida, que ha de captivat l&rsquo;oïda estranyament.</p>
 <p><strong>PRÒSPER</strong></p>
 <p>Us ho contaré tot; i us prometo mars en calma, vents propicis, i una navegació tan expedita que atraparà la vostra flota reial de lluny. [<em>A part, a Ari.</em>] Ariel meu, menut, aquest és el teu encàrrec: després, als elements, sigues lliure, i adéu! Si us plau, acosteu-vos.</p>
-<hr>
                 </div>
                 
                 </section>
@@ -5081,7 +5087,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

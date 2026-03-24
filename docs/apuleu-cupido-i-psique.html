@@ -390,8 +390,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Cupido i Psique</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Apuleu</em></p>
+<p>Traduït del llatí per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
 <p>[ERROR: El CLI ha retornat una resposta buida (sense contingut)]</p>
 <p><sup><a href="#nota-31" class="note-ref" id="ref-31">[31]</a></sup> I gemegant i bramant d&rsquo;indignació per tota aquella faula escampada sobre la rivalitat en bellesa: «Per mi t&rsquo;ho suplico», digué, «pel pacte del nostre amor maternal, per les dolces ferides de les teves sagetes, per les ensucrades cremors d&rsquo;aquesta flama, concedeix venjança plena a la teva mare i castiga severament aquesta bellesa rebel. I fes això sol i únic per sobre de tot: que aquesta donzella sigui presa d&rsquo;un amor ardentíssim per un home de la condició més baixa, un a qui la Fortuna ha condemnat alhora en dignitat, patrimoni i seguretat personal, tan ínfim que per tot l&rsquo;orbe no trobi igual a la seva misèria.»
@@ -463,7 +470,7 @@ Psique no gosa tocar aquella massa desordenada i inextricable, sinó que, espant
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -782,7 +789,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

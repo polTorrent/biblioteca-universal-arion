@@ -373,8 +373,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">De Brevitate Vitae</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Sèneca</em></p>
+<p>Traduït del llatí per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>I.</h2>
 <p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup> La majoria dels mortals, Paulí, es queixen de la crueltat de la natura, perquè la nostra vida és massa breu, perquè aquest temps que se&rsquo;ns dóna transcorre tan ràpidament, fins al punt que, excepte molt pocs, els altres moren quan encara es preparen per viure. I no només la turba i el vulgar ignorant es lamenta d&rsquo;aquest mal públic, com creuen; també ha provocat queixes d&rsquo;homes il·lustres aquesta mateixa angoixa. D&rsquo;aquí ve aquella exclamació del més gran dels metges: «la vida és breu, l&rsquo;art és llarg»; <sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup> d&rsquo;aquí ve la disputa d&rsquo;Aristòtil amb la natura de les coses, gens pròpia d&rsquo;un home savi: «que ella ha concedit als animals una vida tan llarga que poden viure cinc o deu segles, mentre que a l&rsquo;home, nascut per a coses tan nombroses i grans, li ha establert un terme molt més curt». <sup><a href="#nota-3" class="note-ref" id="ref-3">[3]</a></sup> No tenim poc temps, sinó que en perdem molt. La vida és prou llarga i se&rsquo;ns ha donat àmpliament per dur a terme les més grans empreses, si s&rsquo;aprofités bé del tot; però quan es dissipa per luxe i negligència, quan no es dedica a cap cosa bona, finalment, forçats per l&rsquo;última necessitat, ens adonem que ha passat allò que no sabíem que s&rsquo;anava perdent. <sup><a href="#nota-4" class="note-ref" id="ref-4">[4]</a></sup> Així és: no rebem una vida breu, sinó que la fem breu, i no som pobres d&rsquo;ella sinó malbaratadors. Com les riqueses àmplies i reials, quan han arribat a un mal senyor, es dissipan en un moment, però per modestes que siguin, si s&rsquo;han lliurat a un bon guardià, creixen amb l&rsquo;ús, així la nostra edat s&rsquo;estén molt per a qui la sap administrar.</p>
 <h2>II.</h2>
@@ -427,7 +434,7 @@ Perquè encara que concedíssim que diuen tot això de bona fe, que escriuen per
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -921,7 +928,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

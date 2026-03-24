@@ -1695,8 +1695,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Medea</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Eurípides</em></p>
+<p>Traduït del grec per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>NODRIDORA
 Ben hauria volgut que la nau d&rsquo;Argo no hagués travessat mai cap a la terra dels còlxids, més enllà de les fosques Simplègades, i que al mont Pelió no hagués caigut mai cap pi tallat, ni haguessin empunyat els rems aquells homes excel·lents que anaren a buscar el velló d&rsquo;or per a Pèlies. Perquè llavors la meva senyora Medea no hauria navegat cap a les torres d&rsquo;Iolcos amb el cor trasbalsat d&rsquo;amor per Jasó, ni hauria persuadit les filles de Pèlies que matessin el seu pare, ni habitaria aquesta terra coríntia amb el seu home i els seus fills. En arribar, va saber complaure els ciutadans d&rsquo;aquesta terra on havia vingut a refugiar-se, i en tot s&rsquo;avenia amb Jasó: aquesta és la salvació més gran, quan una dona no discrepa del seu home.
 Pero ara tot és odi, i el que més estimava s&rsquo;ha tornat malalt. Perquè Jasó, traïnt els seus propis fills i la meva senyora, es casa en noces reials, prenent per muller la filla de Creont, que governa aquesta terra. I Medea, la desgraciadissima, deshonrada, clama els juraments, invoca les mans dretes estretides en senyal de fe suprema, i posa els déus per testimonis de quina recompensa rep de Jasó. Jeu sense menjar, lliurant el cos al dolor,</p>
@@ -2501,7 +2508,7 @@ Així ha acabat aquest fet.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -2863,7 +2870,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

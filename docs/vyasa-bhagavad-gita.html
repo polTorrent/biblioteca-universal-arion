@@ -1039,8 +1039,15 @@ al camp de batalla de Kurukṣetra, sobre el deure, l&rsquo;acció, el coneixeme
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Bhagavad Gītā (selecció de 6 capítols)</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Vyāsa (Vedavyāsa)</em></p>
+<p>Traduït del sànscrit per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Capítol 1 — El ioga del desànim d&rsquo;Arjuna</h2>
 <p>Dhṛtarāṣṭra va dir:
 Al camp del dharma, al camp de Kuru, reunits i desitjosos de combatre, què van fer els meus fills i els fills de Pāṇḍu, Sañjaya? (1.1)</p>
@@ -1100,7 +1107,7 @@ Havent dit això en el camp de batalla, Arjuna s&rsquo;assegué al seient del ca
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Capítol 2 — El ioga del coneixement</h2>
 <p>Sañjaya va dir:
 A ell, així posseït per la compassió, amb els ulls plens de llàgrimes i torbats, abatut, Madhusūdana li adreçà aquestes paraules: (2.1)</p>
@@ -1184,7 +1191,7 @@ Quan un home abandona tots els desigs que habiten en la ment, oh Pārtha, i es s
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Capítol 3 — El ioga de l&rsquo;acció</h2>
 <p>Arjuna digué:
 Si consideres que la intel·ligència és superior a l&rsquo;acció, oh Janārdana, per què em compel·leixes a aquesta acció terrible, oh Keśava? (3.1)</p>
@@ -1236,7 +1243,7 @@ Però, què és allò que empeny l&rsquo;home a cometre pecat, fins i tot contra
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>Capítol 6 — El ioga del domini de si mateix</h2>
 <p>El Senyor Benaurat digué:
 Aquell qui acompleix l&rsquo;acció deguda sense dependre del fruit de l&rsquo;acció, aqueix és el renunciant i el iogui, no pas aquell qui no encén el foc ni aquell qui no actua. (6.1)</p>
@@ -1293,7 +1300,7 @@ Oh Pārtha, ni aquí ni en l&rsquo;altre món no hi ha destrucció per a ell; ca
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>Capítol 11 — El ioga de la visió de la forma universal</h2>
 <p>Arjuna digué:
 Per gràcia envers mi, Tu m&rsquo;has revelat el suprem secret anomenat adhyātma; amb aquesta paraula Teva, la meva il·lusió s&rsquo;ha dissipat. (11.1)</p>
@@ -1364,7 +1371,7 @@ Molt difícil de veure és aquesta forma meva que has contemplat. Fins i tot els
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>Capítol 12 — El ioga de la devoció</h2>
 <p>Arjuna digué:
 Dels devots que, constantment units en el ioga, et veneren a Tu, i dels qui veneren l&rsquo;Imperible no-manifestat, quins són els més versats en el ioga? (12.1)</p>
@@ -1391,7 +1398,7 @@ Aquells qui, fixant la ment en Mi, em veneren amb ioga constant i amb fe suprema
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -1472,7 +1479,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

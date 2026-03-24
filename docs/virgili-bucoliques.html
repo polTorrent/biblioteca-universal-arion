@@ -1243,8 +1243,15 @@ Ite domum saturae, uenit Hesperus, ite, capellae.</p>
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Bucòliques</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Publi Virgili Maró</em></p>
+<p>Traduït del llatí per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Ègloga I</h2>
 <p>Melibeu</p>
 <p>Títir, tu, ajagut sota l&rsquo;ombra d&rsquo;un faig estès,
@@ -1344,7 +1351,7 @@ i cauen ombres més grans des de les altes muntanyes.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Ègloga II</h2>
 <p>El pastor Coridó s&rsquo;abraçava d&rsquo;amor pel bell Alexis,
 les delícies del seu amo, i no tenia cap esperança.
@@ -1422,7 +1429,7 @@ Trobaràs un altre Alexis, si aquest et rebutja.&rsquo;</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Ègloga III</h2>
 <p>Menalcas</p>
 <p>Digues-me, Damoetas, de qui és aquest ramat? De Melibeu?</p>
@@ -1578,7 +1585,7 @@ Tanqueu ja els recs, nois; prou han begut els prats.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>Ègloga IV</h2>
 <p>Muses de Sicília, cantem una mica més alt.
 No a tots agraden els arbustos i les humils tamarins;
@@ -1646,7 +1653,7 @@ ni un déu l&rsquo;ha admès a la seva taula ni una deessa al seu llit.</p>
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>Ègloga V</h2>
 <p>Menalcas</p>
 <p>Per què no, Mopse, ja que ens hem trobat tots dos —tu bo
@@ -1755,7 +1762,7 @@ bell per les simetria dels nusos i el bronze, Menalcas.</p>
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>Ègloga VI</h2>
 <p>La nostra Musa, Talia, va dignarse primer a jugar amb el vers siracusà,
 i no es va avergonyir d&rsquo;habitar els boscos.
@@ -1846,7 +1853,7 @@ i Vèsper va avançar per l&rsquo;Olimp que no ho volia.</p>
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>Ègloga VII</h2>
 <p>Melibeu</p>
 <p>Per atzar Dafnis s&rsquo;havia assegut sota una alzina sonora,
@@ -1935,7 +1942,7 @@ Des d&rsquo;aleshores, per a nosaltres Coridó és Coridó.</p>
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <h2>Ègloga VIII</h2>
 <p>La musa dels pastors Damó i Alfesibeu,
 que una vedella, oblidant l&rsquo;herba, va admirar quan competien,
@@ -2050,7 +2057,7 @@ Ho creiem? O els qui estimen es forgen ells mateixos els somnis?</p>
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <h2>Ègloga IX</h2>
 <p>Lícidas</p>
 <p>On vas, Meris, amb aquest pas? Cap a la ciutat, on mena el camí?</p>
@@ -2134,7 +2141,7 @@ Els cants, millor els cantarem quan ell mateix vingui.</p>
                 </div>
                 
 
-                <div class="section" id="trad-10" data-parallel="orig-10">
+                <div class="section" id="trad-11" data-parallel="orig-11">
                     <h2>Ègloga X</h2>
 <p>Concedeix-me, Aretusa, aquest darrer esforç:
 uns pocs versos per al meu Gal s&rsquo;han de dir, que la mateixa Lícoris
@@ -2216,7 +2223,7 @@ Aneu a casa, sadolles; ve l&rsquo;Estrella del Vespre; aneu, cabres.</p>
                 </div>
                 
 
-                <div class="section" id="trad-11" data-parallel="orig-11">
+                <div class="section" id="trad-12" data-parallel="orig-12">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -2704,7 +2711,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

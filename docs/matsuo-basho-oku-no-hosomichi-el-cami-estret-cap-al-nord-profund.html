@@ -471,21 +471,28 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Oku no Hosomichi (El camí estret cap al nord profund)</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Matsuo Bashō</em></p>
+<p>Traduït del japonès per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Matsuo Bashō (松尾芭蕉)</h2>
 <p><strong>Font</strong>: [Wikisource japonès] (https://ja.wikisource.org/wiki/おくのほそ道)
 <strong>Data</strong>: Any 15 de Genroku (1702)</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <p><em>Oku no Hosomichi</em> (El camí estret cap al nord profund) és un diari de viatge del poeta de haiku Matsuo Bashō del període cultural Genroku. Publicat l&rsquo;any 15 de Genroku (1702). És l&rsquo;obra representativa dels relats de viatge de la literatura clàssica japonesa, i conté nombrosos haiku entreteixits al llarg del text. Bashō, acompanyat del seu deixeble Kawai Sora, va partir de la seva ermita Saitō-an a Fukagawa (Edo) el 27 del tercer mes de Genroku 2 (16 de maig de 1689 del calendari occidental), i després d&rsquo;uns 150 dies recorrent Tōhoku i Hokuriku, va tornar a Edo l&rsquo;any 4 de Genroku (1691). <em>Oku no Hosomichi</em> narra aquest viatge des de Musashi passant per Shimotsuke, Iwashiro, Rikuzen, Rikuchū, Mutsu, Dewa, Echigo, Etchū, Kaga i Echizen fins que va partir d&rsquo;Ōgaki, a Mino, el sisè dia del novè mes del calendari lunar.
 <em>Text base: Shin-shaku Oku no Hosomichi de Kuniyoshi Miyake, Editorial Momiyama, juliol de Meiji 44.</em></p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <p>Els dies i els mesos són viatgers de cent generacions, i els anys que van i vénen són també pelegrins. Els qui passen la vida sencera navegant, o els qui envelleixen prenent les regnes dels cavalls, viuen dia rere dia el viatge i fan del caminar la seva llar. També molts dels antics van morir en els seus viatges.
 Jo mateix, no sé des de quin any, temptat pels vents d&rsquo;un núvol errant, no he pogut reprimir els pensaments de vagarejar. L&rsquo;any passat vaig deambular per les costes marines, i a la tardor vaig escombar les teranyines de la cabanya en ruïnes vora el riu. Quan l&rsquo;any gairebé s&rsquo;acabava i va arribar la primavera, amb la boira del cel pensava travessar el pas de Shirakawa. Quan l&rsquo;esperit del vagareig em va posseir i em va trastornar l&rsquo;enteniment, i quan els déus del camí em van cridar, no podia concentrar-me en res. Vaig arreglar els forats dels pantalons, vaig canviar els cordons del barret i em vaig fer moxibustió als tres ri. Aleshores ja tenia al cap la lluna de Matsushima. Vaig deixar la casa on vivia a algú altre i em vaig traslladar a la vil·la de Sanpū.
 <em>La casa d&rsquo;herba</em>
@@ -785,7 +792,7 @@ Aquella nit la lluna era clara. &ldquo;Demà a la nit també serà així?&rdquo;
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <p><em>Traducció de domini públic.</em></p>
                 </div>
                 
@@ -1318,7 +1325,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

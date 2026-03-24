@@ -315,8 +315,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">El Sutra del Cor de la Perfecció de la Saviesa</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><strong>Prajñāpāramitā Hṛdaya Sūtra</strong> · प्रज्ञापारमिताहृदयसूत्र</p>
+<p><em>Traducció del sànscrit al català</em></p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <p>El noble <a href="#term-avalokitesvara" class="term" data-term="avalokitesvara">Avalokiteśvara</a>, el <a href="#term-bodhisattva" class="term" data-term="bodhisattva">bodhisattva</a>, mentre practicava la profunda <a href="#term-prajnaparamita" class="term" data-term="prajnaparamita">perfecció de la saviesa</a>, va contemplar clarament: els cinc <a href="#term-skandha" class="term" data-term="skandha">agregats</a> són buits de naturalesa pròpia.</p>
 <p>«Aquí, <a href="#term-sariputra" class="term" data-term="sariputra">Śāriputra</a>, la forma és <a href="#term-sunyata" class="term" data-term="sunyata">vacuïtat</a> i la vacuïtat mateixa és forma. La forma no és diferent de la vacuïtat, la vacuïtat no és diferent de la forma. Allò que és forma, això és vacuïtat; allò que és vacuïtat, això és forma. Igualment amb la sensació, la percepció, les formacions mentals i la consciència.</p>
 <p>»Aquí, Śāriputra, tots els <a href="#term-dharma" class="term" data-term="dharma">fenòmens</a> tenen el caràcter de la vacuïtat: no són originats ni destruïts, ni impurs ni immaculats, ni deficients ni complets.</p>
@@ -333,14 +340,14 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Notes del traductor</h2>
 <p><sup><a href="#nota-1" class="note-ref" id="ref-1">[1]</a></sup>: Les Quatre Nobles Veritats del budisme: el sofriment (<em>duḥkha</em>), el seu origen (<em>samudaya</em>), la seva cessació (<em>nirodha</em>) i el camí cap a la cessació (<em>mārga</em>). El sutra nega la seva existència última per mostrar que fins i tot les veritats més sagrades són buides de naturalesa pròpia.</p>
 <p><sup><a href="#nota-2" class="note-ref" id="ref-2">[2]</a></sup>: Els tres temps són passat, present i futur. L&rsquo;expressió indica que tots els Budes —els que han estat, els que són i els que seran— segueixen aquest mateix ensenyament.</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Sobre la traducció</h2>
 <p>El <em>Prajñāpāramitā Hṛdaya Sūtra</em> és possiblement el text més recitat de tot el budisme Mahāyāna. La seva brevetat (menys de tres-centes paraules en sànscrit) contrasta amb la immensitat del seu contingut filosòfic: condensa en poques línies l&rsquo;essència dels voluminosos <em>Sutres de la Perfecció de la Saviesa</em>, que en la seva forma completa arriben als cent mil versos.</p>
 <p>El concepte central és <em>śūnyatā</em>, traduït aquí com «vacuïtat». Aquesta traducció, tot i ser la més establerta, pot induir a error: no es tracta del buit com a absència o negació nihilista, sinó de la comprensió que cap fenomen —incloent-hi el jo— posseeix una existència independent i permanent. Tot el que existeix ho fa de manera relacional i condicionada.</p>
@@ -671,7 +678,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

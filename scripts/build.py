@@ -206,30 +206,15 @@ class ContentLoader:
             return text
 
         lines = text.split('\n')
-        content_start = 0
 
-        # Buscar el primer separador --- que indica fi de capçalera
+        # Buscar el primer marcador de capítol real (## Pròleg, ## I, ## Llibre Primer, etc.)
+        # Això preserva pròlegs i prefacis com a contingut real
         for i, line in enumerate(lines):
-            if line.strip() == '---':
-                content_start = i + 1
-                break
-
-        if content_start > 0:
-            # Ara buscar el primer capítol real (## seguit de número romà o català)
-            remaining_lines = lines[content_start:]
-            chapter_start = 0
-
-            for i, line in enumerate(remaining_lines):
-                stripped = line.strip()
-                # Detectar inici de capítol: ## I, ## II, ## 1, ## Capítol, etc.
-                if stripped.startswith('## '):
-                    chapter_title = stripped[3:].strip()
-                    # Si és un número romà, número aràbic, o paraula de capítol
-                    if (self._is_chapter_marker(chapter_title)):
-                        chapter_start = i
-                        break
-
-            return '\n'.join(remaining_lines[chapter_start:]).strip()
+            stripped = line.strip()
+            if stripped.startswith('## '):
+                chapter_title = stripped[3:].strip()
+                if self._is_chapter_marker(chapter_title):
+                    return '\n'.join(lines[i:]).strip()
 
         return text
 
@@ -248,6 +233,15 @@ class ContentLoader:
                           'catorze', 'quinze', 'setze', 'disset', 'divuit',
                           'dinou', 'vint']
         if text.lower() in catalan_numbers:
+            return True
+        # Pròlegs, prefacis i seccions preliminars
+        prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                     'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                     'prooemium', 'prolegomena', 'prefazione', 'préface']
+        if text.lower() in prefacis:
+            return True
+        # Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch", "Part I")
+        if re.match(r'^(Llibre|Buch|Book|Part|Livre|Libro)\s+', text, re.IGNORECASE):
             return True
         return False
 

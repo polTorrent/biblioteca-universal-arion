@@ -1698,8 +1698,18 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Shahnameh — Rostam i Sohrab</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>Traducció al català</h2>
+<p><strong>Autor:</strong> Abolqasem Firdawsí (ابوالقاسم فردوسی)
+<strong>Traductor:</strong> Editorial Clàssica
+<strong>Llengua original:</strong> persa (فارسی)
+<strong>Font:</strong> Edició de Jules Mohl (تصحیح ژول مل)</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>I. Inici de la història de Sohrab</h2>
 <p>Escolta ara el combat de Sohrab i Rostam,
 has escoltat altres històries, escolta també aquesta.</p>
@@ -1746,7 +1756,7 @@ d&rsquo;aquell conflicte que va tenir amb el pare.</p>
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>II. Naixement de Sohrab de la seva mare Tahmineh</h2>
 <p>Quan nou mesos van passar sobre la filla del rei,
 va néixer un infant com la lluna resplendent.</p>
@@ -1821,7 +1831,7 @@ per què hauria l&rsquo;estel d&rsquo;alçar el cap?»</p>
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>III. Conquesta de la Fortalesa Blanca per Sohrab</h2>
 <p>Quan el sol va treure el cap de la muntanya,
 els turanians es van cenyir els lloms.</p>
@@ -1874,7 +1884,7 @@ perquè l&rsquo;afer era urgent i ineludible.</p>
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>IV. Afrasiyab envia Barman i Human a Sohrab</h2>
 <p>La notícia va arribar a Afrasiyab
 que Sohrab havia llançat la barca a l&rsquo;aigua.</p>
@@ -1953,7 +1963,7 @@ tot ho cremava i no quedava res.</p>
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>V. Atac de Sohrab contra l&rsquo;exèrcit de Kavus</h2>
 <p>Quan va escoltar les paraules dures,
 va girar l&rsquo;esquena i se&rsquo;n va anar.</p>
@@ -2088,7 +2098,7 @@ el dia lluminós se li va tornar fosc.</p>
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>VI. Combat de Rostam amb Sohrab</h2>
 <p>Va anar al camp de batalla i va agafar la llança,
 va quedar meravellat per les paraules de la mare.</p>
@@ -2197,7 +2207,7 @@ ves, i que el creador del món decideixi.»</p>
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>VII. Sohrab abat Rostam</h2>
 <p>Quan el sol resplendent va treure el cap,
 el corb negre va plegar les ales.</p>
@@ -2394,7 +2404,7 @@ tu no tens cara per a la veritat!»</p>
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <h2>VIII. Mort de Sohrab a mans de Rostam</h2>
 <p>Un altre cop van lligar els cavalls amb força,
 la sort adversa girava sobre el seu cap. <sup><a href="#nota-1145" class="note-ref" id="ref-1145">[1145]</a></sup></p>
@@ -2627,7 +2637,7 @@ tots ens dispersarem quan siguem companys de ruta.»</p>
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <h2>IX. Lament de Rostam sobre Sohrab</h2>
 <p>Rostam va ordenar que el seu servent
 fes un vestit de fil d&rsquo;or.</p>
@@ -2754,7 +2764,7 @@ no vull recordar llur rancor.»</p>
                 </div>
                 
 
-                <div class="section" id="trad-10" data-parallel="orig-10">
+                <div class="section" id="trad-11" data-parallel="orig-11">
                     <h2>X. Retorn de Rostam al campament</h2>
 <p>Van marxar i el cel es va enfosquir,
 el firmament quedava astorat per Sohrab.</p>
@@ -3386,7 +3396,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

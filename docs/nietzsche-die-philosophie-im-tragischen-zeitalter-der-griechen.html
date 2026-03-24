@@ -386,8 +386,15 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">La filosofia en l'edat tràgica dels grecs</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><strong>Friedrich Nietzsche</strong> (1873, publicat pòstumament)</p>
+<p><em>Traducció al català per Editorial Clàssica — Biblioteca Universal Arion</em></p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>§ 1</h2>
 <p>Hi ha hagut èpoques en què els grecs es trobaven en perill de quedar sufocats per allò estranger i pretèrit, per la «cultura», i la seva religió era gairebé un amuntegament caòtic de déus forans; tanmateix, la religió grega no fou mai un inert amuntegament, car els grecs van aprendre a poc a poc a organitzar el caos, tot seguint l&rsquo;ensenyament dèlfic: recordant-se d&rsquo;ells mateixos, és a dir, de llurs necessitats genuïnes, i deixant morir les necessitats aparents. Així es van retrobar a si mateixos; no van romandre gaire temps els epígons i hereus sobrecarregats de tot l&rsquo;Orient; ells mateixos van esdevenir, després d&rsquo;una lluita penosa amb ells mateixos, per interpretació pràctica d&rsquo;aquella sentència, els successors més rics i fèrtils del tresor heretat, els primogènits i els models de tots els pobles culturals futurs.</p>
 <p>Això és una paràbola per a cadascun de nosaltres: cadascú ha d&rsquo;organitzar el caos que porta dins seu, tot reflexionant sobre les seves necessitats autèntiques. La seva honestedat, el seu caràcter ferm i verídic, han de rebel·lar-se algun dia contra el fet que sempre es repeteixi, s&rsquo;imiti, s&rsquo;aprengui. Llavors comença a comprendre que la cultura pot ser encara alguna cosa més que una decoració de la vida, és a dir, en el fons sempre dissimulació i encubriment; car tot adorn amaga allò adornat. Així el concepte grec de cultura — en contrast amb el romà — es desvetlla de nou, el concepte de la cultura com una nova <em>physis</em> millorada, sense interior ni exterior, sense dissimulació ni convenció, de la cultura com una unanimitat entre la vida, el pensament, l&rsquo;aparença i la voluntat.</p>
@@ -1212,7 +1219,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

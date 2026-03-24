@@ -1191,8 +1191,15 @@ rauhen Realität einsam und mutig sind. Möchte das Jahr, das bevorsteht, Sie da
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Cartes a un jove poeta</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <p><em>Rainer Maria Rilke</em></p>
+<p>Traduït de l&rsquo;alemany per Biblioteca Arion</p>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>1. Carta</h2>
 <p><em>París, 17 de febrer de 1903</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1219,7 +1226,7 @@ Els versos que tan amablement m&rsquo;heu confiat us els retorno ara. I us agrae
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>2. Carta</h2>
 <p><em>Viareggio, prop de Pisa (Itàlia), 5 d&rsquo;abril de 1903</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1237,7 +1244,7 @@ Vostre:
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>3. Carta</h2>
 <p><em>Viareggio, prop de Pisa (Itàlia), 23 d&rsquo;abril de 1903</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1261,7 +1268,7 @@ Vostre:
                 </div>
                 
 
-                <div class="section" id="trad-4" data-parallel="orig-4">
+                <div class="section" id="trad-5" data-parallel="orig-5">
                     <h2>4. Carta</h2>
 <p><em>Worpswede, prop de Bremen, 16 de juliol de 1903</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1281,7 +1288,7 @@ Vostre:
                 </div>
                 
 
-                <div class="section" id="trad-5" data-parallel="orig-5">
+                <div class="section" id="trad-6" data-parallel="orig-6">
                     <h2>5. Carta</h2>
 <p><em>Roma, 29 d&rsquo;octubre de 1903</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1297,7 +1304,7 @@ Vostre:
                 </div>
                 
 
-                <div class="section" id="trad-6" data-parallel="orig-6">
+                <div class="section" id="trad-7" data-parallel="orig-7">
                     <h2>6. Carta</h2>
 <p><em>Roma, 23 de desembre de 1903</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1319,7 +1326,7 @@ Roma, 23 de desembre de 1903</p>
                 </div>
                 
 
-                <div class="section" id="trad-7" data-parallel="orig-7">
+                <div class="section" id="trad-8" data-parallel="orig-8">
                     <h2>7. Carta</h2>
 <p><em>Roma, 14 de maig de 1904</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1361,7 +1368,7 @@ que la meva boca ardent no pot trobar&hellip;</p>
                 </div>
                 
 
-                <div class="section" id="trad-8" data-parallel="orig-8">
+                <div class="section" id="trad-9" data-parallel="orig-9">
                     <h2>8. Carta</h2>
 <p><em>Borgeby gård, Flädie, Suècia, 12 d&rsquo;agost de 1904</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1383,7 +1390,7 @@ Llavors no us heu d&rsquo;espantar, estimat senyor Kappus, si una tristesa s&rsq
                 </div>
                 
 
-                <div class="section" id="trad-9" data-parallel="orig-9">
+                <div class="section" id="trad-10" data-parallel="orig-10">
                     <h2>9. Carta</h2>
 <p><em>Furuborg, Jonsered, Suècia, 4 de novembre de 1904</em></p>
 <p>Estimat senyor Kappus,</p>
@@ -1403,7 +1410,7 @@ Rainer Maria Rilke</p>
                 </div>
                 
 
-                <div class="section" id="trad-10" data-parallel="orig-10">
+                <div class="section" id="trad-11" data-parallel="orig-11">
                     <h2>10. Carta</h2>
 <p><em>París, el segon dia de Nadal de 1908</em>
 <strong>A Franz Xaver Kappus</strong>
@@ -1417,7 +1424,7 @@ París, el segon dia de Nadal de 1908</p>
                 </div>
                 
 
-                <div class="section" id="trad-11" data-parallel="orig-11">
+                <div class="section" id="trad-12" data-parallel="orig-12">
                     <p><em>Traducció al català per Biblioteca Arion. Text original de domini públic.</em></p>
                 </div>
                 
@@ -1755,7 +1762,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció

@@ -1680,8 +1680,14 @@
                 <!-- Columna traducció -->
                 <section class="translation-column">
                     <div class="column-header">Traducció (català)</div>
-                    
+                    <h2 class="section-title">Casa de nines</h2>
+
                 <div class="section" id="trad-1" data-parallel="orig-1">
+                    <h2>Henrik Ibsen (1879)</h2>
+                </div>
+                
+
+                <div class="section" id="trad-2" data-parallel="orig-2">
                     <h2>Personatges</h2>
 <ul>
 <li><strong>Advocat Helmer</strong></li>
@@ -1698,7 +1704,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-2" data-parallel="orig-2">
+                <div class="section" id="trad-3" data-parallel="orig-3">
                     <h2>Primer acte</h2>
 <p><em>(Una sala acollidora i de bon gust, però no luxosa. Al fons a la dreta, una porta que dona al rebedor; al fons a l&rsquo;esquerra, una altra porta que condueix al despatx de Helmer. Entre les dues portes, un piano. Al centre de la paret esquerra, una porta, i més endavant una finestra. Prop de la finestra, una taula rodona amb butaques i un petit sofà. A la paret de la dreta, una mica endarrera, una porta, i a la mateixa paret, més cap endavant, una estufa de rajoles amb un parell de butaques i un balancí al davant. Entre l&rsquo;estufa i la porta lateral, una tauleta. Gravats a les parets. Una vitrina amb objectes de porcellana i altres petites obres d&rsquo;art; una llibreria petita amb llibres relligats elegantment. Catifa al terra; foc a l&rsquo;estufa. Dia d&rsquo;hivern.)</em></p>
 <p><em>(Se sent el timbre al rebedor; poc després s&rsquo;obre la porta. Nora entra contenta a la sala, cantussejant; porta roba d&rsquo;abric i un grapat de paquets que deixa sobre la taula de la dreta. Deixa oberta la porta del rebedor, i es veu un missatger que porta un arbre de Nadal i una cistella, que lliura a la criada que ha obert la porta.)</em></p>
@@ -2216,7 +2222,7 @@
                 </div>
                 
 
-                <div class="section" id="trad-3" data-parallel="orig-3">
+                <div class="section" id="trad-4" data-parallel="orig-4">
                     <h2>Segon acte</h2>
 <p><em>(La mateixa sala. A dalt, al racó prop del piano, hi ha l&rsquo;arbre de Nadal, despullat, malmenat, amb les espelmes cremades fins al moll. El roba d&rsquo;abric de la Nora és sobre el sofà.)</em></p>
 <p><em>(La Nora, sola a la sala, camina inquieta d&rsquo;un costat a l&rsquo;altre; finalment s&rsquo;atura davant el sofà i agafa el seu abric.)</em></p>
@@ -3340,7 +3346,21 @@ document.addEventListener('DOMContentLoaded', function() {
                               'vuit', 'nou', 'deu', 'onze', 'dotze', 'tretze',
                               'catorze', 'quinze', 'setze', 'disset', 'divuit',
                               'dinou', 'vint'];
-        return catalanNumbers.indexOf(str.toLowerCase()) !== -1;
+        if (catalanNumbers.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Pròlegs, prefacis i seccions preliminars
+        var prefacis = ['pròleg', 'prefaci', 'introducció', 'avant-propos',
+                         'vorrede', 'vorwort', 'einleitung', 'preface', 'prologue',
+                         'prooemium', 'prolegomena', 'prefazione', 'préface'];
+        if (prefacis.indexOf(str.toLowerCase()) !== -1) {
+            return true;
+        }
+        // Marcadors de llibre/part (ex: "Llibre Primer", "Erstes Buch")
+        if (/^(Llibre|Buch|Book|Part|Livre|Libro)\s+/i.test(str)) {
+            return true;
+        }
+        return false;
     }
 
     // Trobar H2 de capítols NOMÉS a la columna de traducció
