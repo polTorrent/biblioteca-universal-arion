@@ -7,10 +7,10 @@ Traduït del grec per Biblioteca Arion
 
 NODRIDORA
 Ben hauria volgut que la nau d'Argo no hagués travessat mai cap a la terra dels còlxids, més enllà de les fosques Simplègades, i que al mont Pelió no hagués caigut mai cap pi tallat, ni haguessin empunyat els rems aquells homes excel·lents que anaren a buscar el velló d'or per a Pèlies. Perquè llavors la meva senyora Medea no hauria navegat cap a les torres d'Iolcos amb el cor trasbalsat d'amor per Jasó, ni hauria persuadit les filles de Pèlies que matessin el seu pare, ni habitaria aquesta terra coríntia amb el seu home i els seus fills. En arribar, va saber complaure els ciutadans d'aquesta terra on havia vingut a refugiar-se, i en tot s'avenia amb Jasó: aquesta és la salvació més gran, quan una dona no discrepa del seu home.
-Pero ara tot és odi, i el que més estimava s'ha tornat malalt. Perquè Jasó, traïnt els seus propis fills i la meva senyora, es casa en noces reials, prenent per muller la filla de Creont, que governa aquesta terra. I Medea, la desgraciadissima, deshonrada, clama els juraments, invoca les mans dretes estretides en senyal de fe suprema, i posa els déus per testimonis de quina recompensa rep de Jasó. Jeu sense menjar, lliurant el cos al dolor,
+Però ara tot és odi, i el que més estimava s'ha tornat malalt. Perquè Jasó, traïnt els seus propis fills i la meva senyora, es casa en noces reials, prenent per muller la filla de Creont, que governa aquesta terra. I Medea, la desgraciadíssima, deshonrada, clama els juraments, invoca les mans dretes estretides en senyal de fe suprema, i posa els déus per testimonis de quina recompensa rep de Jasó. Jeu sense menjar, lliurant el cos al dolor,
 
 consumint amb llàgrimes tots els seus dies,
-desde que va saber que el seu home l'havia ultratjada.
+des que va saber que el seu home l'havia ultratjada.
 No alça els ulls ni aparta el rostre de terra;
 com una roca o una onada marina
 escolta quan els amics la reprenen.
@@ -30,18 +30,18 @@ o que mati el tirànic i el que s'ha casat amb ell
 i després pateixi una desgràcia encara més gran.
 És temible: qui li faci la guerra
 no en sortirà fàcilment victoriós.
-Però mireu: aquí vénen els nens, cansats de córrer,
+Però mireu: aquí venen els nens, cansats de córrer,
 sense pensar gens en les penes de llur mare.
 La joventut no sol conèixer el dolor.
 PEDAGOG
 Antiga serventa de la casa de la meva senyora,
-per què estàs aquí, davant les portes, en aquesta solitud,
+per què ets aquí, davant les portes, en aquesta solitud,
 lamentant-te sola les teves penes?
 
 Com és que Medea vol quedar-se sola, sense tu?
 DIDA: Vell pedagog dels fills de Jàson, les desgràcies dels senyors també ens toquen l'ànima als servidors fidels quan les coses van malament. El dolor m'ha portat a tal punt que tinc ganes de proclamar al cel i a la terra el destí de la meva senyora.
 PEDAGOG: És que la pobreta encara no para de lamentar-se?
-DIDA: Quin sort tens: el mal és només al començament, encara no ha arribat al pitjor.
+DIDA: Quina sort tens: el mal és només al començament, encara no ha arribat al pitjor.
 PEDAGOG: Pobre de tu! —si això es pot dir dels amos— Com no sap res dels nous mals que vindran.
 DIDA: Què hi ha, vell? No deixis de dir-ho.
 PEDAGOG: Res; ja em penedeixo del que he dit abans.
@@ -54,7 +54,7 @@ PEDAGOG: Els vells llaços s'abandonen pels nous matrimonis, i aquell home ja no
 **Pedagog: ** Però tu —que no és moment que la senyora ho sàpiga— fes silenci i calla.
 **Dida: ** Oh, fills! Escolteu quin pare teniu! Que no mori —que és el meu senyor—, però és dolent amb la seva família.
 **Pedagog: ** I qui dels mortals no ho és? Ara t'adones que cadascú s'estima més a si mateix que al veí? Els uns per justícia, els altres per guany; si aquest pare no els vol per culpa del llit nupcial.
-**Dida: ** Entreu —que tot anirà bé— a casa, fills. I tu mantén-los el més allunyats possible i no els acostis a la mare que està afligida. Ja l'he vista mirar-los amb mirada amenaçadora, com si els volgués fer alguna cosa. I no s'apaivgarà la seva còlera, ho sé de cert, fins que no descarregui contra algú... Contra enemics, això sí, no contra éssers estimats.
+**Dida: ** Entreu —que tot anirà bé— a casa, fills. I tu mantén-los el més allunyats possible i no els acostis a la mare que està afligida. Ja l'he vista mirar-los amb mirada amenaçadora, com si els volgués fer alguna cosa. I no s'apaivagará la seva còlera, ho sé de cert, fins que no descarregui contra algú... Contra enemics, això sí, no contra éssers estimats.
 **Medea** * (des de dins)*
 Ai!
 Ai de mi, plena de penes,
@@ -822,6 +822,32 @@ Jasó: Ai de mi, què dius? Com m'has destruït, dona!
 **Medea: ** M'estendria molt contestant aquestes paraules, si Zeus pare no sabés què has sofert de mi i què has fet tu. Però tu no anaves a viure plaentment després d'haver deshonrat el meu llit, rient-te de mi, ni tampoc la princesa, ni Creont, que t'ha unit en matrimoni, havia de trigar a expulsar-me d'aquesta terra. Per això, anomena'm lleona si vols, i Escil·la que va habitar la terra tirènia: he pres del teu cor la venjança que calia.
 **Jàson: ** Tu també pateixes i ets còmplice d'aquests mals.
 **Medea: ** Ho sé de cert. Però s'alleuja el dolor si tu no rius.
+
+**Jàson: ** Oh fills, quina mare tan malvada que heu tingut!
+**Medea: ** Oh nens, com heu mort pel mal del vostre pare!
+**Jàson: ** No ha estat la meva mà dreta qui els ha perdut.
+**Medea: ** Sinó la teva desmesura i les teves noves noces.
+**Jàson: ** Els has jutjat dignes de mort per un llit nupcial?
+**Medea: ** Creus que això és poca cosa per a una dona?
+**Jàson: ** Per a la que té seny sí; però per a tu tot és dolent.
+**Medea: ** Aquests ja no hi són; això et consumirà.
+**Jàson: ** Són aquí, ai de mi, com a taques sobre el teu cap.
+**Medea: ** Els déus saben qui va començar la desgràcia.
+**Jàson: ** Coneixen doncs la teva ànima execrable.
+**Medea: ** Abomina'm; però jo odio la teva veu amarga.
+**Jàson: ** I jo la teva; però la separació és fàcil.
+**Medea: ** Com doncs? Què faré? Perquè jo també ho vull molt.
+**Jàson: ** Deixa'm enterrar aquests morts i plorar-los.
+**Medea: ** Això no, perquè jo els enterraré amb aquesta mà,
+portant-los al recinte sagrat d'Hera Acraia,
+perquè cap enemic els profani
+arrasant les tombes. I en aquesta terra de Sísifo
+establiré una festa solemne i rituals sagrats
+d'ara endavant en lloc d'aquest impi assassinat.
+Jo mateixa aniré a la terra d'Erecteu,
+per viure amb Egeu, fill de Pandion.
+Tu, com et correspon, moriràs com el malvat que ets,
+colpejat al cap per un fragment de l'Argo.
 
 veient els amargs finals del meu matrimoni.
 Jasó. Però que t'aniquilin l'Erínia dels fills

@@ -16,7 +16,7 @@ obra:
     '
   font_original: https://el.wikisource.org/wiki/%CE%9C%CE%AE%CE%B4%CE%B5%CE%B9%CE%B1
   estadistiques:
-    paraules_traduccio: 9540
+    paraules_traduccio: 9787
 seccions: 1
 estadistiques:
   paraules_original: 8564
@@ -25,21 +25,21 @@ estadistiques:
   termes_glossari: 22
 revisio:
   estat: revisat
-  qualitat: 5.7
-  data_revisio: '2026-03-24'
+  qualitat: 6.0
+  data_revisio: '2026-03-25'
 avaluacio_final:
-  data: '2026-03-23T17:04:15.102274'
+  data: '2026-03-25T11:14:15.227127'
   puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 756
-  errors_critics: 0
-  errors_alts: 0
+    fidelitat: 6.0
+    veu_autor: 7.0
+    fluidesa: 5.0
+    correccio_linguistica: 4.0
+    coherencia: 3.0
+    global: 5.3
+  total_errors: 136
+  errors_critics: 1
+  errors_alts: 5
   aprovat: false
   requereix_revisio_humana: true
   correccions_aplicades: 0
-  correccions_pendents: 748
+  correccions_pendents: 111
