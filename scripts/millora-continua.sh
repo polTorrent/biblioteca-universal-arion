@@ -1,0 +1,1 @@
+../sistema/automatitzacio/millora-continua.sh

@@ -1,0 +1,1 @@
+../sistema/automatitzacio/task-manager.sh

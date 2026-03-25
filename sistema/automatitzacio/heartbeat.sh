@@ -738,9 +738,9 @@ EOF
 
 # ── 10b. Regenerar botó de propostes ──────────────────────────────────────────
 regenerate_proposals_button() {
-    if [ -f "$PROJECT/scripts/boto_propostes_watchdog.sh" ]; then
+    if [ -f "$PROJECT/sistema/automatitzacio/boto_propostes_watchdog.sh" ]; then
         log "🔄 Regenerant botó de propostes..."
-        bash "$PROJECT/scripts/boto_propostes_watchdog.sh" 2>/dev/null || true
+        bash "$PROJECT/sistema/automatitzacio/boto_propostes_watchdog.sh" 2>/dev/null || true
     fi
 }
 
@@ -749,8 +749,8 @@ generate_report() {
     local REPORT_FILE="$HOME/.openclaw/workspace/last_heartbeat_report.md"
     
     # Generar informe detallat amb el script Python
-    if [ -f "$PROJECT/scripts/informe_detallat.py" ]; then
-        python3 "$PROJECT/scripts/informe_detallat.py" > "$REPORT_FILE" 2>/dev/null
+    if [ -f "$PROJECT/sistema/traduccio/informe_detallat.py" ]; then
+        python3 "$PROJECT/sistema/traduccio/informe_detallat.py" > "$REPORT_FILE" 2>/dev/null
         log "📋 Report detallat generat a $REPORT_FILE"
     else
         # Fallback a l'informe simple
@@ -914,7 +914,7 @@ else
 fi
 
 if [ "$should_audit" = true ]; then
-    bash "$PROJECT/scripts/auditar-cataleg.sh" --fix
+    bash "$PROJECT/sistema/automatitzacio/auditar-cataleg.sh" --fix
     date +%s > "$AUDIT_LAST"
     echo "[$(date)] ✅ Auditoria completada, tasques generades"
 fi
@@ -942,9 +942,9 @@ PENDING_FINAL=$(count_pending)
 generate_report              # Escriu last_heartbeat_report.md a ~/.openclaw/
 
 # ── Fase 2.5: Processar propostes Discord ───────────────────────────────────
-if [ -f "$PROJECT/scripts/processar-propostes.sh" ]; then
+if [ -f "$PROJECT/sistema/automatitzacio/processar-propostes.sh" ]; then
     log "📋 Processant propostes Discord..."
-    bash "$PROJECT/scripts/processar-propostes.sh" 2>/dev/null || true
+    bash "$PROJECT/sistema/automatitzacio/processar-propostes.sh" 2>/dev/null || true
 fi
 
 # ── Fase 2.6: Processar notificacions pendents ───────────────────────────────

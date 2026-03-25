@@ -4,7 +4,7 @@
 
 LOCK_FILE="$HOME/.openclaw/workspace/tasks/worker.lock"
 LOG="$HOME/claude-worker.log"
-WORKER_SCRIPT="$HOME/biblioteca-universal-arion/scripts/claude-worker.sh"
+WORKER_SCRIPT="$HOME/biblioteca-universal-arion/sistema/automatitzacio/claude-worker.sh"
 
 # Comprovar si el worker corre
 if [ -f "$LOCK_FILE" ]; then

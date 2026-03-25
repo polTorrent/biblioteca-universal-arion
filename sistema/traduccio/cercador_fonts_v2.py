@@ -7,7 +7,7 @@ Arquitectura de 3 capes:
   Capa 3: Integració worker/heartbeat per retry intel·ligent
 
 Ús directe:
-    python3 scripts/cercador_fonts_v2.py "Sèneca" "De Brevitate Vitae" "llatí"
+    python3 sistema/traduccio/cercador_fonts_v2.py "Sèneca" "De Brevitate Vitae" "llatí"
 
 Ús des del pipeline:
     from scripts.cercador_fonts_v2 import CercadorFontsV2

@@ -1,6 +1,6 @@
 #!/bin/bash
 # auditar-cataleg.sh — Audita totes les obres i genera informe + tasques de reparació
-# Ús: bash scripts/auditar-cataleg.sh [--fix]
+# Ús: bash sistema/automatitzacio/auditar-cataleg.sh [--fix]
 
 set -uo pipefail
 REPO="$HOME/biblioteca-universal-arion"
@@ -211,7 +211,7 @@ if [[ "${1:-}" == "--fix" ]]; then
   "type": "fix-fetch",
   "priority": $priority,
   "max_duration": 900,
-  "instruction": "cd ~/biblioteca-universal-arion && python3 scripts/cercador_fonts_v2.py --autor '$autor' --obra '$obra' --output obres/*/$autor/$obra/original.md && echo DONE",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor '$autor' --obra '$obra' --output obres/*/$autor/$obra/original.md && echo DONE",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -245,7 +245,7 @@ EOF
   "type": "fix-translate",
   "priority": $priority,
   "max_duration": 3600,
-  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/*/$autor/$obra/original.md existeix i te contingut real. Si existeix, executa: python3 scripts/traduir_pipeline.py --autor '$autor' --obra '$obra'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/$autor/$obra/ && git commit -m 'fix: traduir/completar $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/*/$autor/$obra/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor '$autor' --obra '$obra'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/$autor/$obra/ && git commit -m 'fix: traduir/completar $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -279,7 +279,7 @@ EOF
   "type": "fix-portada",
   "priority": 4,
   "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && python3 scripts/generar_portades.py --obra '$autor/$obra' && git add obres/*/$autor/$obra/portada.* && git commit -m 'fix: portada $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra '$autor/$obra' && git add obres/*/$autor/$obra/portada.* && git commit -m 'fix: portada $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -330,7 +330,7 @@ EOF
   "type": "fix-web",
   "priority": 3,
   "max_duration": 300,
-  "instruction": "cd ~/biblioteca-universal-arion && python3 scripts/build.py && git add docs/ && git commit -m 'build: afegir $autor/$obra a la web' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/web/build.py && git add docs/ && git commit -m 'build: afegir $autor/$obra a la web' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF

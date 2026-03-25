@@ -6,7 +6,7 @@ exit 0  # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM
 # Analitza logs, skills, scripts i tasques fallides per detectar problemes
 # i generar tasques de millora o propostes de canvi.
 #
-# Ús: bash scripts/improve-openclaw.sh
+# Ús: bash sistema/automatitzacio/improve-openclaw.sh
 #
 # Política de canvis:
 #   - Scripts tècnics (claude.sh, heartbeat.sh, etc.) → pot modificar amb BACKUP
@@ -21,7 +21,7 @@ PROJECT="$HOME/biblioteca-universal-arion"
 OPENCLAW_DIR="$HOME/.openclaw"
 WORKSPACE="$OPENCLAW_DIR/workspace"
 TASKS_DIR="$WORKSPACE/tasks"
-TASK_MANAGER="$PROJECT/scripts/task-manager.sh"
+TASK_MANAGER="$PROJECT/sistema/automatitzacio/task-manager.sh"
 PROPOSALS_DIR="$WORKSPACE/proposals"
 METRICS_FILE="$PROJECT/metrics/openclaw-health.json"
 LOG="$HOME/claude-worker.log"
@@ -377,7 +377,7 @@ analyze_heartbeat_report() {
     if echo "$report" | grep -qi "INACTIU"; then
         log "   Worker inactiu detectat al report"
         if [ "$(count_improve_pending)" -lt "$MAX_IMPROVE_PENDING" ]; then
-            add_improve_task "Worker INACTIU segons l'últim heartbeat report. Comprova: 1) pgrep -f claude-worker-mini. 2) cat ~/.openclaw/workspace/tasks/worker.lock. 3) Reinicia si cal amb: tmux new-session -d -s worker 'cd ~/biblioteca-universal-arion && bash scripts/claude-worker-mini.sh'"
+            add_improve_task "Worker INACTIU segons l'últim heartbeat report. Comprova: 1) pgrep -f claude-worker-mini. 2) cat ~/.openclaw/workspace/tasks/worker.lock. 3) Reinicia si cal amb: tmux new-session -d -s worker 'cd ~/biblioteca-universal-arion && bash sistema/automatitzacio/claude-worker-mini.sh'"
         fi
     fi
 }

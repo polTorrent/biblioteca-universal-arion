@@ -1,0 +1,1 @@
+../sistema/traduccio/cercador_fonts_v2.py

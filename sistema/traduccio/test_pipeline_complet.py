@@ -7,15 +7,15 @@ Inclou:
 - Memòria contextual (core/memoria_contextual.py)
 - Validació final (core/validador_final.py)
 - Generació de portada (agents/portadista.py)
-- Publicació web (scripts/build.py)
+- Publicació web (sistema/web/build.py)
 - Dashboard en temps real (dashboard/)
 
 Ús:
-    python scripts/test_pipeline_complet.py
-    python scripts/test_pipeline_complet.py --sense-dashboard
-    python scripts/test_pipeline_complet.py --netejar  # Esborra test anterior
-    python scripts/test_pipeline_complet.py --nomes-validar
-    python scripts/test_pipeline_complet.py --nomes-represa
+    python sistema/traduccio/test_pipeline_complet.py
+    python sistema/traduccio/test_pipeline_complet.py --sense-dashboard
+    python sistema/traduccio/test_pipeline_complet.py --netejar  # Esborra test anterior
+    python sistema/traduccio/test_pipeline_complet.py --nomes-validar
+    python sistema/traduccio/test_pipeline_complet.py --nomes-represa
 """
 
 from __future__ import annotations
@@ -403,7 +403,7 @@ def test_publicacio_web(obra_dir: Path) -> bool:
                     print(f"   {result.stderr[:300]}")
                 return False
         else:
-            print("⚠️  scripts/build.py no trobat")
+            print("⚠️  sistema/web/build.py no trobat")
             return False
 
     except subprocess.TimeoutExpired:
@@ -503,13 +503,13 @@ def mostrar_instruccions_finals(obra_dir: Path, mostrar_dashboard: bool):
 """)
 
     print("""🔄 Per reprendre si s'interromp:
-   python scripts/test_pipeline_complet.py --nomes-represa
+   python sistema/traduccio/test_pipeline_complet.py --nomes-represa
 
 📋 Per validar manualment:
-   python scripts/test_pipeline_complet.py --nomes-validar
+   python sistema/traduccio/test_pipeline_complet.py --nomes-validar
 
 🗑️  Per netejar i tornar a començar:
-   python scripts/test_pipeline_complet.py --netejar
+   python sistema/traduccio/test_pipeline_complet.py --netejar
 """)
 
 
@@ -519,11 +519,11 @@ def main():
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Exemples:
-  python scripts/test_pipeline_complet.py              # Test complet amb dashboard
-  python scripts/test_pipeline_complet.py --sense-dashboard  # Sense dashboard
-  python scripts/test_pipeline_complet.py --netejar    # Netejar i tornar a començar
-  python scripts/test_pipeline_complet.py --nomes-validar    # Només validar
-  python scripts/test_pipeline_complet.py --nomes-represa    # Mostrar estat
+  python sistema/traduccio/test_pipeline_complet.py              # Test complet amb dashboard
+  python sistema/traduccio/test_pipeline_complet.py --sense-dashboard  # Sense dashboard
+  python sistema/traduccio/test_pipeline_complet.py --netejar    # Netejar i tornar a començar
+  python sistema/traduccio/test_pipeline_complet.py --nomes-validar    # Només validar
+  python sistema/traduccio/test_pipeline_complet.py --nomes-represa    # Mostrar estat
 """
     )
     parser.add_argument("--sense-dashboard", action="store_true",
@@ -546,7 +546,7 @@ Exemples:
 ║  • Validació final (core/validador_final.py)                         ║
 ║  • Pipeline V2 (agents/v2/pipeline_v2.py)                            ║
 ║  • Generació portades (agents/portadista.py)                         ║
-║  • Publicació web (scripts/build.py)                                 ║
+║  • Publicació web (sistema/web/build.py)                              ║
 ╚══════════════════════════════════════════════════════════════════════╝
 """)
 

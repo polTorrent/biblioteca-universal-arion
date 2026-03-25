@@ -2,7 +2,7 @@
 # =============================================================================
 # worker-status.sh — Estat ràpid del sistema worker
 # =============================================================================
-# Ús: bash scripts/worker-status.sh
+# Ús: bash sistema/automatitzacio/worker-status.sh
 # =============================================================================
 
 TASKS_DIR="$HOME/.openclaw/workspace/tasks"

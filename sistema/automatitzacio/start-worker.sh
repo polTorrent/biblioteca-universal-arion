@@ -13,6 +13,6 @@ fi
 mv ~/.openclaw/workspace/tasks/running/*.json ~/.openclaw/workspace/tasks/pending/ 2>/dev/null
 
 # Iniciar
-nohup bash scripts/claude-worker-mini.sh > /dev/null 2>&1 &
+nohup bash sistema/automatitzacio/claude-worker-mini.sh > /dev/null 2>&1 &
 echo $! > /tmp/worker.pid
 echo "✅ Worker iniciat (PID $!)"

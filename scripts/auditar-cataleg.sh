@@ -1,0 +1,1 @@
+../sistema/automatitzacio/auditar-cataleg.sh

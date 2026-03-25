@@ -4,7 +4,7 @@
 INSTRUCCIONS:
 1. Copia aquest fitxer amb un nom descriptiu (ex: traduir_nom_obra.py)
 2. Modifica les variables de configuració a la secció CONFIGURACIÓ
-3. Executa: python scripts/traduir_nom_obra.py
+3. Executa: python sistema/traduccio/traduir_nom_obra.py
 
 El procés farà:
 1. Llegir el text original

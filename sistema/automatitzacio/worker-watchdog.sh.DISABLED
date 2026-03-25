@@ -25,6 +25,6 @@ if [ $ELAPSED -gt 300 ]; then
     mv "$RUNNING" "$TASKS_DIR/done/"
     log "🐕 Tasca saltada"
     sleep 2
-    tmux new-session -d -s worker "cd $PROJECT_DIR && bash scripts/claude-worker-mini.sh"
+    tmux new-session -d -s worker "cd $PROJECT_DIR && bash sistema/automatitzacio/claude-worker-mini.sh"
     log "🐕 Worker reiniciat"
 fi

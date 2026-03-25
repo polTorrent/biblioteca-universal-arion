@@ -1,0 +1,1 @@
+../sistema/automatitzacio/start-worker.sh

@@ -289,10 +289,11 @@ cmd_review_all() {
     done
     
     # Scripts
-    for f in "$project"/scripts/*.py; do
+    for f in "$project"/sistema/traduccio/*.py "$project"/sistema/web/*.py; do
         [ -f "$f" ] || continue
         local basename=$(basename "$f")
-        cmd_add "code-review" "Revisa scripts/$basename: verifica que funcioni correctament i que segueixi les convencions." "{\"file\": \"scripts/$basename\"}"
+        local relpath="${f#$project/}"
+        cmd_add "code-review" "Revisa $relpath: verifica que funcioni correctament i que segueixi les convencions." "{\"file\": \"$relpath\"}"
     done
     
     echo -e "${GREEN}✅ Tasques de revisió generades${NC}"

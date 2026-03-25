@@ -5,7 +5,7 @@ Verifica dependències, autenticació, checkpoints i mètriques
 per assegurar que el pipeline està correctament configurat.
 
 Ús:
-    python scripts/diagnosticar_pipeline.py
+    python sistema/traduccio/diagnosticar_pipeline.py
 """
 
 import os

@@ -2,8 +2,8 @@
 """Script genèric per traduir qualsevol obra amb Pipeline V2.
 
 Ús:
-    python3 scripts/traduir_pipeline.py obres/filosofia/seneca/de-brevitate-vitae/
-    python3 scripts/traduir_pipeline.py obres/narrativa/kafka/metamorfosi/
+    python3 sistema/traduccio/traduir_pipeline.py obres/filosofia/seneca/de-brevitate-vitae/
+    python3 sistema/traduccio/traduir_pipeline.py obres/narrativa/kafka/metamorfosi/
 
 Llegeix metadata.yml per obtenir títol, autor, llengua i gènere automàticament.
 """
@@ -68,8 +68,8 @@ def carregar_metadata(obra_dir: Path) -> dict:
 
 def main():
     if len(sys.argv) < 2:
-        print("Ús: python3 scripts/traduir_pipeline.py <ruta_obra>")
-        print("Ex:  python3 scripts/traduir_pipeline.py obres/filosofia/seneca/de-brevitate-vitae/")
+        print("Ús: python3 sistema/traduccio/traduir_pipeline.py <ruta_obra>")
+        print("Ex:  python3 sistema/traduccio/traduir_pipeline.py obres/filosofia/seneca/de-brevitate-vitae/")
         sys.exit(1)
 
     # Ruta de l'obra

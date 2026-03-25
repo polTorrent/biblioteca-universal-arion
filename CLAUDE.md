@@ -16,7 +16,7 @@ Dedica't EXCLUSIVAMENT a millorar les obres existents.
 8. **BAIX**: Obres que no apareixen a la web (falta build)
 
 ### Workflow del worker en mode consolidació:
-1. Executa `bash scripts/auditar-cataleg.sh --fix` per generar tasques
+1. Executa `bash sistema/automatitzacio/auditar-cataleg.sh --fix` per generar tasques
 2. Processa les tasques per ordre de prioritat (priority 1 primer)
 3. Quan no hi ha tasques pendents, torna a executar l'auditoria
 4. Si tot és ✅, avisa i espera noves instruccions
@@ -28,7 +28,7 @@ Dedica't EXCLUSIVAMENT a millorar les obres existents.
 - NO crear tasques de tipus "fetch" o "translate" per obres que no existeixin ja
 
 ### Com saber si una obra necessita atenció:
-- Executa: bash scripts/auditar-cataleg.sh
+- Executa: bash sistema/automatitzacio/auditar-cataleg.sh
 - Mira config/auditoria.json
 
 ## 1. Visió del projecte
@@ -38,7 +38,7 @@ Biblioteca oberta de traduccions al **català** d'obres clàssiques universals (
 - **Traduccions**: CC BY-SA 4.0
 - **Codi**: MIT
 - **Originals**: domini públic
-- **Web**: GitHub Pages via `docs/` (branch `gh-pages`) — build amb `python3 scripts/build.py`
+- **Web**: GitHub Pages via `docs/` (branch `gh-pages`) — build amb `python3 sistema/web/build.py`
 - **URL web**: https://poltorrent.github.io/editorial-classica/
 - **Python**: >= 3.11
 
@@ -69,14 +69,10 @@ biblioteca-universal-arion/
 │   ├── checkpointer.py      # Checkpoint/resume de traduccions
 │   ├── logger.py, metrics.py, dashboard.py
 │   └── epub_generator.py
-├── scripts/                 # Scripts operatius
-│   ├── heartbeat.sh         # Generador de tasques (cron cada 2h)
-│   ├── claude-worker-mini.sh # Worker que processa tasques
-│   ├── task-manager.sh      # CLI gestió cua de tasques
-│   ├── build.py             # Generador HTML (Jinja2 + Markdown)
-│   ├── traduir_pipeline.py  # Script per llançar traduccions
-│   ├── traduir_*.py         # Scripts específics per obra
-│   └── fix-structure.sh     # Auto-correcció d'estructura d'obres
+├── sistema/                 # Scripts operatius (reorganitzats)
+│   ├── automatitzacio/      # heartbeat.sh, claude-worker-mini.sh, task-manager.sh, fix-structure.sh...
+│   ├── traduccio/           # traduir_pipeline.py, traduir_*.py, cercador_fonts_v2.py, generar_portades.py...
+│   └── web/                 # build.py, dashboard_server.py
 ├── obres/                   # Traduccions (per categoria/autor/obra)
 │   ├── filosofia/           # Epictetus, Plató, Sèneca, Marc Aureli, Schopenhauer...
 │   ├── narrativa/           # Kafka, Txèkhov, Poe, Melville, Akutagawa...
@@ -99,7 +95,7 @@ biblioteca-universal-arion/
 
 ## 3. Sistema autònom
 
-### Heartbeat (`scripts/heartbeat.sh`)
+### Heartbeat (`sistema/automatitzacio/heartbeat.sh`)
 - **Cron**: cada 2 hores (`0 */2 * * *`)
 - Analitza obres pendents a `config/obra-queue.json`
 - Genera tasques JSON a `~/.openclaw/workspace/tasks/pending/`
@@ -121,7 +117,7 @@ tasks/
 
 Tipus de tasques: `translate`, `supervision`, `fix`, `code-review`, `test`, `publish`, `maintenance`
 
-### Worker (`scripts/claude-worker-mini.sh`)
+### Worker (`sistema/automatitzacio/claude-worker-mini.sh`)
 - Processa tasques en loop infinit dins tmux (sessió `worker`)
 - Crida `claude -p` amb `setsid -w` i `unset CLAUDECODE` (evita nested sessions)
 - **Retry**: fins a 3 intents per tasca amb backoff exponencial
@@ -133,15 +129,15 @@ Tipus de tasques: `translate`, `supervision`, `fix`, `code-review`, `test`, `pub
 - **Auto-commit + push** després de cada tasca exitosa
 - Lockfile a `tasks/worker.lock`
 
-### Task Manager (`scripts/task-manager.sh`)
+### Task Manager (`sistema/automatitzacio/task-manager.sh`)
 ```bash
-bash scripts/task-manager.sh add <type> <instruction>
-bash scripts/task-manager.sh translate <autor> <títol> [llengua] [categoria]
-bash scripts/task-manager.sh list          # Llistar cua
-bash scripts/task-manager.sh status        # Estat worker
-bash scripts/task-manager.sh cancel <id>   # Cancel·lar tasca
-bash scripts/task-manager.sh clear [done|failed|pending|all]
-bash scripts/task-manager.sh review-all    # Code review de tot
+bash sistema/automatitzacio/task-manager.sh add <type> <instruction>
+bash sistema/automatitzacio/task-manager.sh translate <autor> <títol> [llengua] [categoria]
+bash sistema/automatitzacio/task-manager.sh list          # Llistar cua
+bash sistema/automatitzacio/task-manager.sh status        # Estat worker
+bash sistema/automatitzacio/task-manager.sh cancel <id>   # Cancel·lar tasca
+bash sistema/automatitzacio/task-manager.sh clear [done|failed|pending|all]
+bash sistema/automatitzacio/task-manager.sh review-all    # Code review de tot
 ```
 
 ## 4. Integració OpenClaw
@@ -196,7 +192,7 @@ Investigador → Glossarista → Chunker → [per chunk: Anàlisi → Traducció
 ### Llançar traducció
 ```bash
 # Via script
-python3 scripts/traduir_pipeline.py obres/filosofia/plato/criton/
+python3 sistema/traduccio/traduir_pipeline.py obres/filosofia/plato/criton/
 
 # Via codi
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
@@ -296,20 +292,20 @@ Config: `pyproject.toml` → `[tool.pytest.ini_options]`, asyncio_mode = "auto"
 
 ```bash
 # Build web
-python3 scripts/build.py
-python3 scripts/build.py --clean
+python3 sistema/web/build.py
+python3 sistema/web/build.py --clean
 
 # Gestió de tasques
-bash scripts/task-manager.sh list
-bash scripts/task-manager.sh status
-bash scripts/task-manager.sh add translate "Tradueix X de Y"
+bash sistema/automatitzacio/task-manager.sh list
+bash sistema/automatitzacio/task-manager.sh status
+bash sistema/automatitzacio/task-manager.sh add translate "Tradueix X de Y"
 
 # Worker
-bash scripts/claude-worker-mini.sh          # Iniciar worker (foreground)
-tmux new-session -d -s worker "cd ~/biblioteca-universal-arion && bash scripts/claude-worker-mini.sh"
+bash sistema/automatitzacio/claude-worker-mini.sh          # Iniciar worker (foreground)
+tmux new-session -d -s worker "cd ~/biblioteca-universal-arion && bash sistema/automatitzacio/claude-worker-mini.sh"
 
 # Heartbeat manual
-bash scripts/heartbeat.sh
+bash sistema/automatitzacio/heartbeat.sh
 
 # Tests
 python3 -m pytest tests/ -v
@@ -318,7 +314,7 @@ python3 -m pytest tests/ -v
 bash dashboard.sh
 
 # Linter
-ruff check agents/ utils/ core/ scripts/
+ruff check agents/ utils/ core/ sistema/
 ```
 
 ## 12. Problemes coneguts

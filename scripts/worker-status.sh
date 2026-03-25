@@ -1,0 +1,1 @@
+../sistema/automatitzacio/worker-status.sh

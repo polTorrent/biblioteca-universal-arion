@@ -1,0 +1,1 @@
+../sistema/automatitzacio/claude-worker-mini.sh

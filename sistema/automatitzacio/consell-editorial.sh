@@ -7,9 +7,9 @@ exit 0  # 🛑 MODE CONSOLIDACIÓ — consell editorial pausat
 # propostes d'obres noves i les afegeixi a obra-queue.json.
 #
 # Ús:
-#   bash scripts/consell-editorial.sh              # Execució normal
-#   bash scripts/consell-editorial.sh --dry-run    # Mostra la tasca que crearia, sense crear-la
-#   bash scripts/consell-editorial.sh --force      # Ignora límit de pending
+#   bash sistema/automatitzacio/consell-editorial.sh              # Execució normal
+#   bash sistema/automatitzacio/consell-editorial.sh --dry-run    # Mostra la tasca que crearia, sense crear-la
+#   bash sistema/automatitzacio/consell-editorial.sh --force      # Ignora límit de pending
 # =============================================================================
 
 set -euo pipefail
@@ -134,7 +134,7 @@ if [ "$DRY_RUN" = true ]; then
 fi
 
 log "Creant tasca per al worker..."
-bash "$PROJECT/scripts/task-manager.sh" add consell-editorial "$instruction"
+bash "$PROJECT/sistema/automatitzacio/task-manager.sh" add consell-editorial "$instruction"
 
 log "Tasca creada. El worker la processarà automàticament."
 log "══════════════════════════════════════════════════"

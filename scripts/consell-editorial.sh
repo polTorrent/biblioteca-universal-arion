@@ -1,0 +1,1 @@
+../sistema/automatitzacio/consell-editorial.sh

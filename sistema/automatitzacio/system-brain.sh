@@ -15,15 +15,15 @@ return 0  # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM (return, no exit, perq
 #   6. consell_editorial   — Manté la obra-queue.json plena amb obres noves
 #
 # Ús:
-#   source scripts/system-brain.sh          # Carregar funcions (pel heartbeat)
-#   bash scripts/system-brain.sh daily      # Executar totes les funcions diàries
-#   bash scripts/system-brain.sh <funció>   # Executar una funció concreta
+#   source sistema/automatitzacio/system-brain.sh          # Carregar funcions (pel heartbeat)
+#   bash sistema/automatitzacio/system-brain.sh daily      # Executar totes les funcions diàries
+#   bash sistema/automatitzacio/system-brain.sh <funció>   # Executar una funció concreta
 # =============================================================================
 
 # ── Configuració ────────────────────────────────────────────────────────────
 PROJECT="${PROJECT:-$HOME/biblioteca-universal-arion}"
 TASKS_DIR="${TASKS_DIR:-$HOME/.openclaw/workspace/tasks}"
-TASK_MANAGER="${TASK_MANAGER:-$PROJECT/scripts/task-manager.sh}"
+TASK_MANAGER="${TASK_MANAGER:-$PROJECT/sistema/automatitzacio/task-manager.sh}"
 QUEUE="${QUEUE:-$PROJECT/config/obra-queue.json}"
 ROADMAP="$PROJECT/config/roadmap.json"
 METRICS_DIR="$PROJECT/metrics"
@@ -413,11 +413,11 @@ PYEOF
         if [ -f "$PROJECT/$obra_path/original.md" ]; then
             # Ja té original → traduir directament
             brain_add_task "translate" "$dedup_key" \
-                "cd ~/biblioteca-universal-arion && python3 scripts/traduir_pipeline.py $obra_path/"
+                "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/traduir_pipeline.py $obra_path/"
         else
             # No té original → primer obtenir el text
             brain_add_task "fetch" "$dedup_key" \
-                "cd ~/biblioteca-universal-arion && mkdir -p $obra_path && python3 scripts/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$llengua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
+                "cd ~/biblioteca-universal-arion && mkdir -p $obra_path && python3 sistema/traduccio/cercador_fonts_v2.py \"$autor\" \"$titol\" \"$llengua\" \"$obra_path\" && if [ ! -s $obra_path/original.md ]; then echo 'ERROR: No s.ha pogut obtenir original.md' && exit 1; fi && git add -A && git commit -m \"font: $titol de $autor\" && git push"
         fi
     fi
 }
@@ -504,7 +504,7 @@ check_web_health() {
 
         if [ "$recent_validated" -gt 0 ] || [ ! -f "$PROJECT/docs/index.html" ]; then
             brain_add_task "publish" "web-health" \
-                "Web desactualitzada ($issues problemes). Executa 'python3 scripts/build.py' per regenerar docs/. Verifica que totes les obres amb .validated apareixen. Commit i push."
+                "Web desactualitzada ($issues problemes). Executa 'python3 sistema/web/build.py' per regenerar docs/. Verifica que totes les obres amb .validated apareixen. Commit i push."
         fi
     else
         brain_log "   ✅ Web saludable"
@@ -775,7 +775,7 @@ print(len(pending))
     brain_log "   Cua amb $pending obres pending (< $MAX_PENDING). Llançant consell editorial..."
 
     local output
-    output=$(bash "$PROJECT/scripts/consell-editorial.sh" 2>&1) || {
+    output=$(bash "$PROJECT/sistema/automatitzacio/consell-editorial.sh" 2>&1) || {
         brain_log "   ❌ Error executant consell-editorial.sh"
         return
     }
@@ -798,7 +798,7 @@ print(len(pending))
 run_millora_continua() {
     brain_log "🔄 Millora Contínua — Comprovant si toca executar..."
 
-    local MILLORA_SCRIPT="$PROJECT/scripts/millora-continua.sh"
+    local MILLORA_SCRIPT="$PROJECT/sistema/automatitzacio/millora-continua.sh"
     [ ! -f "$MILLORA_SCRIPT" ] && { brain_log "   millora-continua.sh no trobat"; return; }
 
     local LAST_RUN_FILE="$TASKS_DIR/.millora-continua-last-run"
