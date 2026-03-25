@@ -1,0 +1,507 @@
+/**
+ * ═══════════════════════════════════════════════════════════════════
+ * USUARI PUBLIC - Estils per la pàgina de perfil públic
+ * Biblioteca Universal Arion
+ * ═══════════════════════════════════════════════════════════════════
+ */
+
+/* ─────────────────────────────────────────────────────────────────
+   LOADING I ERROR STATES
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    gap: var(--spacing-lg);
+}
+
+.loading-spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid var(--color-border);
+    border-top-color: var(--color-primary);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.usuari-error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 60vh;
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.error-icon {
+    font-size: 4rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.usuari-error h2 {
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-text);
+}
+
+.usuari-error p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-xl);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   CAPÇALERA DEL PERFIL PÚBLIC
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-header-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: var(--spacing-3xl) 0;
+    color: white;
+}
+
+.usuari-header {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xl);
+}
+
+.usuari-avatar-wrapper {
+    position: relative;
+    flex-shrink: 0;
+}
+
+.usuari-avatar {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    border: 5px solid white;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usuari-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.usuari-avatar .avatar-placeholder {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.usuari-level-badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: var(--font-size-sm);
+    font-weight: 700;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.usuari-info {
+    flex: 1;
+}
+
+.usuari-nom {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0 0 var(--spacing-xs) 0;
+    color: white;
+}
+
+.usuari-titol {
+    font-size: 1.25rem;
+    font-style: italic;
+    opacity: 0.9;
+    margin: 0 0 var(--spacing-md) 0;
+}
+
+.usuari-bio {
+    opacity: 0.85;
+    line-height: 1.6;
+    margin: 0 0 var(--spacing-md) 0;
+    max-width: 600px;
+}
+
+.usuari-membre {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   ESTADÍSTIQUES
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-stats-section {
+    margin-top: -40px;
+    margin-bottom: var(--spacing-xl);
+    position: relative;
+    z-index: 10;
+}
+
+.usuari-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing-md);
+}
+
+.usuari-stat-card {
+    background: var(--color-surface);
+    padding: var(--spacing-lg);
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease;
+}
+
+.usuari-stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.usuari-stat-icon {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.usuari-stat-value {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+}
+
+.usuari-stat-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   BARRA DE PROGRÉS
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-progress-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.usuari-progress {
+    background: var(--color-surface);
+    padding: var(--spacing-lg) var(--spacing-xl);
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   MEDALLES
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-medalles-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: var(--spacing-lg);
+    font-size: 1.5rem;
+}
+
+.title-icon {
+    font-size: 1.75rem;
+}
+
+.usuari-medalles {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.usuari-medalla {
+    background: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #FFD700;
+    box-shadow: 0 2px 10px rgba(255, 215, 0, 0.2);
+    transition: transform 0.2s ease;
+}
+
+.usuari-medalla:hover {
+    transform: scale(1.05);
+}
+
+.usuari-medalla-icona {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.usuari-medalla-nom {
+    font-weight: 600;
+    font-size: var(--font-size-sm);
+    color: var(--color-text);
+}
+
+.usuari-medalla-data {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
+    margin-top: 0.25rem;
+}
+
+.no-medalles {
+    text-align: center;
+    color: var(--color-text-muted);
+    padding: var(--spacing-xl);
+    background: var(--color-surface);
+    border-radius: 12px;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   OBRES PATROCINADES
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-obres-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.usuari-obres {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.usuari-obra {
+    background: var(--color-surface);
+    padding: var(--spacing-md);
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    display: flex;
+    gap: var(--spacing-md);
+    transition: all 0.2s ease;
+}
+
+.usuari-obra:hover {
+    border-color: var(--color-primary);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.usuari-obra-icona {
+    font-size: 2.5rem;
+    flex-shrink: 0;
+}
+
+.usuari-obra-info {
+    flex: 1;
+}
+
+.usuari-obra-titol {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.usuari-obra-autor {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.usuari-obra-aportacio {
+    font-size: var(--font-size-sm);
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   RÀNKING
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-ranking-section {
+    margin-bottom: var(--spacing-xl);
+}
+
+.usuari-ranking-card {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: var(--spacing-lg);
+    border-radius: 16px;
+    text-align: center;
+}
+
+.ranking-position {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+}
+
+.ranking-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+}
+
+.ranking-medal {
+    font-size: 2.5rem;
+}
+
+.ranking-label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-top: var(--spacing-xs);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   CALL TO ACTION
+   ───────────────────────────────────────────────────────────────── */
+
+.usuari-cta-section {
+    padding: var(--spacing-xl) 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.usuari-cta {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.usuari-cta h3 {
+    margin-bottom: var(--spacing-sm);
+}
+
+.usuari-cta p {
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: var(--spacing-md);
+    justify-content: center;
+}
+
+.btn-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-xl);
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btn-cta.btn-primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.btn-cta.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.btn-cta.btn-secondary {
+    background: var(--color-surface);
+    color: var(--color-text);
+    border: 2px solid var(--color-border);
+}
+
+.btn-cta.btn-secondary:hover {
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   RESPONSIVE
+   ───────────────────────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+    .usuari-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .usuari-avatar {
+        width: 100px;
+        height: 100px;
+    }
+
+    .usuari-avatar .avatar-placeholder {
+        font-size: 2.5rem;
+    }
+
+    .usuari-nom {
+        font-size: 1.75rem;
+    }
+
+    .usuari-titol {
+        font-size: 1rem;
+    }
+
+    .usuari-bio {
+        max-width: 100%;
+    }
+
+    .usuari-membre {
+        justify-content: center;
+    }
+
+    .usuari-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .usuari-stat-value {
+        font-size: 1.5rem;
+    }
+
+    .usuari-medalles {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+
+    .usuari-medalla-icona {
+        font-size: 2rem;
+    }
+
+    .usuari-obres {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .btn-cta {
+        width: 100%;
+    }
+}
+
+/* ─────────────────────────────────────────────────────────────────
+   MODE FOSC
+   ───────────────────────────────────────────────────────────────── */
+
+[data-theme="dark"] .usuari-ranking-card {
+    background: linear-gradient(135deg, var(--color-surface) 0%, var(--color-background) 100%);
+}
+
+[data-theme="dark"] .usuari-medalla {
+    background: linear-gradient(135deg, rgba(255, 215, 0, 0.1) 0%, var(--color-surface) 100%);
+}

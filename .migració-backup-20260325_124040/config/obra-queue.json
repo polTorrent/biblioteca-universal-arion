@@ -1,0 +1,1091 @@
+{
+  "version": 2,
+  "updated_at": "2026-03-23",
+  "notes": "Llista d'obres per traduir automàticament. El heartbeat agafa la propera 'pending' cada dia.",
+  "obres": [
+    {
+      "autor": "Epictetus",
+      "titol": "Enchiridion",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/filosofia/epictetus/enchiridion",
+      "notes": "Traduïda. Completar i verificar."
+    },
+    {
+      "autor": "Sèneca",
+      "titol": "Epístola 1",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 2,
+      "paraules_aprox": 2000,
+      "fonts": [
+        "latin_library",
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/filosofia/seneca/epistola-1",
+      "notes": "Traduïda i validada (.validated existent)."
+    },
+    {
+      "autor": "Plató",
+      "titol": "Critó",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/filosofia/plato/criton",
+      "notes": "Traduïda i validada (.validated existent)."
+    },
+    {
+      "autor": "Marc Aureli",
+      "titol": "Meditacions",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 4,
+      "paraules_aprox": 15000,
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/filosofia/marc-aureli/meditacions",
+      "notes": "Traducció completa: 12 llibres, 487 seccions, glossari 30 termes, 38 notes. Qualitat 8/10. Validada."
+    },
+    {
+      "autor": "Kafka",
+      "titol": "La metamorfosi",
+      "llengua": "alemany",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 20000,
+      "fonts": [
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/narrativa/kafka/la-transformacio",
+      "notes": "Traduïda i validada (7.98/10). 3 capítols, glossari 9 termes, 11 notes."
+    },
+    {
+      "autor": "Laozi",
+      "titol": "Tao Te King",
+      "llengua": "xinès",
+      "categoria": "oriental",
+      "dificultat": 5,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/oriental/laozi/tao-te-king",
+      "notes": "Traducció completa: 81 capítols, glossari 14 termes, 24 notes erudites. Qualitat 8.0/10. Validada."
+    },
+    {
+      "autor": "Shakespeare",
+      "titol": "10 Sonets",
+      "llengua": "anglès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 2000,
+      "fonts": [
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/poesia/shakespeare/sonets",
+      "notes": "Traduïts i validats (.validated existent)."
+    },
+    {
+      "autor": "Dostoievski",
+      "titol": "Notes del subsòl",
+      "llengua": "rus",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 30000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "done",
+      "notes": "Narrativa russa, gran test",
+      "obra_dir": "obres/narrativa/dostoievski/notes-del-subsol"
+    },
+    {
+      "autor": "Baudelaire",
+      "titol": "20 poemes (Les flors del mal)",
+      "llengua": "francès",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "validated",
+      "notes": "Poesia francesa, molt exigent",
+      "obra_dir": "obres/poesia/baudelaire/20-poemes-les-flors-del-mal"
+    },
+    {
+      "autor": "Schopenhauer",
+      "titol": "La quàdruple arrel",
+      "llengua": "alemany",
+      "categoria": "filosofia",
+      "dificultat": 5,
+      "paraules_aprox": 50000,
+      "fonts": [
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/filosofia/schopenhauer/vierfache-wurzel",
+      "notes": "Traduïda (directori existent amb traduccio.md). Pendent validació."
+    },
+    {
+      "autor": "Sòfocles",
+      "titol": "Ἀντιγόνη",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 2,
+      "paraules_aprox": 7500,
+      "fonts": [
+        "perseus"
+      ],
+      "status": "validated",
+      "notes": "Tragèdia fonamental del cànon occidental; obre la categoria teatre, absent al catàleg. Conflicte entre llei divina i humana, vigent a qualsevol època. | Text grec a Perseus (ed. Jebb). Riba traduí tragèdies gregues (1951) però sense edició bilingüe crítica moderna disponible.",
+      "obra_dir": "obres/teatre/sofocles/antigona"
+    },
+    {
+      "autor": "Ciceró",
+      "titol": "Laelius de Amicitia",
+      "llengua": "llatí",
+      "categoria": "assaig",
+      "dificultat": 1,
+      "paraules_aprox": 9000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "validated",
+      "notes": "Assaig clàssic sobre l'amistat; obre la categoria assaig, absent al catàleg. Prosa llatina elegant i accessible, complement natural a Sèneca. | Text llatí a The Latin Library i Perseus. Sense traducció catalana moderna en edició bilingüe crítica.",
+      "obra_dir": "obres/assaig/cicero/laelius-de-amicitia"
+    },
+    {
+      "autor": "Giacomo Leopardi",
+      "titol": "Canti (selecció: 20 poemes)",
+      "llengua": "italià",
+      "categoria": "poesia",
+      "dificultat": 2,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "validated",
+      "notes": "Introdueix l'italià com a nova llengua al catàleg. Leopardi és el poeta cabdal del Romanticisme italià; els Canti són obra mestra de la lírica europea. | Text complet a Wikisource italiana. Selecció recomanada: L'infinito, A Silvia, La ginestra, Il sabato del villaggio, Canto notturno d'un pastore errante dell'Asia, etc.",
+      "obra_dir": "obres/poesia/giacomo-leopardi/canti-seleccio-20-poemes"
+    },
+    {
+      "autor": "Matsuo Bashō",
+      "titol": "Oku no Hosomichi (El camí estret cap al nord profund)",
+      "llengua": "japonès",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "validated",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el japonès com a nova llengua. Obra mestra del haibun (prosa poètica + haiku), diari de viatge de 1689 pel nord del Japó. Bashō (†1694) és el poeta fonamental de la literatura japonesa; l'Oku no Hosomichi és el text en prosa més influent del Japó premodern. Reforça la categoria oriental (només 2 obres). Cap traducció catalana publicada. Text original a Aozora Bunko i Wikisource japonesa.",
+      "obra_dir": "obres/oriental/matsuo-basho/oku-no-hosomichi-el-cami-estret-cap-al-nord-profund"
+    },
+    {
+      "autor": "Omar Khayyam",
+      "titol": "Rubaiyat (selecció: 75 quartetes)",
+      "llengua": "persa",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 3500,
+      "fonts": [
+        "wikisource",
+        "ganjoor"
+      ],
+      "status": "validated",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el persa com a nova llengua i obre la biblioteca a la tradició literària islàmica. Khayyam (†1131), matemàtic i poeta, és una de les veus més universals de la poesia mundial. Les quartetes (robāʿiyyāt) combinen escepticisme filosòfic, carpe diem i misticisme sufí. Cap traducció catalana directa del persa. Text original a Wikisource persa i Ganjoor.net.",
+      "obra_dir": "obres/poesia/omar-khayyam/rubaiyat-seleccio-75-quartetes"
+    },
+    {
+      "autor": "August Strindberg",
+      "titol": "Fröken Julie (La senyoreta Júlia)",
+      "llengua": "suec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "validated",
+      "notes": "Consell Editorial 2026-02-27. Afegeix el suec com a nova llengua. Drama naturalista en un acte (1888) que revolucionà el teatre europeu: lluita de classes, gènere i desig en una nit de Sant Joan. Strindberg (†1912) és el dramaturg escandinau més influent després d'Ibsen. Reforça la categoria teatre (només 1 obra). Cap traducció catalana recent. Text suec a Project Gutenberg i Wikisource sueca.",
+      "obra_dir": "obres/teatre/august-strindberg/froken-julie-la-senyoreta-julia"
+    },
+    {
+      "autor": "Henrik Ibsen",
+      "titol": "Et dukkehjem (Casa de nines)",
+      "llengua": "noruec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 13000,
+      "fonts": [
+        "gutenberg",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/teatre/henrik-ibsen/et-dukkehjem-casa-de-nines",
+      "notes": "Consell Editorial 2026-03-06. Afegeix el noruec com a nova llengua. Drama en tres actes (1879) que revolucionà el teatre europeu: Nora Helmer trenca amb el matrimoni burgès. Ibsen (†1906) és el pare del teatre modern. Reforça la categoria teatre (3 obres). Cap traducció catalana recent en edició bilingüe. Text noruec a Project Gutenberg i Wikisource noruega."
+    },
+    {
+      "autor": "Fernando Pessoa",
+      "titol": "O Guardador de Rebanhos (El guardador de ramats)",
+      "llengua": "portuguès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 6000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/poesia/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats",
+      "notes": "Consell Editorial 2026-03-06. Afegeix el portuguès com a nova llengua. 49 poemes escrits sota l'heterònim Alberto Caeiro (1914), mestre dels altres heterònims. Poesia anti-metafísica del sensacionisme: mirar el món sense pensar-lo. Pessoa (†1935) és el poeta fonamental del modernisme europeu. Cap traducció catalana directa del portuguès. Text a Wikisource portuguesa."
+    },
+    {
+      "autor": "Ibn Tufayl",
+      "titol": "Hayy ibn Yaqzan (El filòsof autodidacte)",
+      "llengua": "àrab",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 14000,
+      "fonts": [
+        "wikisource",
+        "archive.org"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte",
+      "notes": "Consell Editorial 2026-03-06. Afegeix l'àrab com a nova llengua i obre la biblioteca a la tradició filosòfica islàmica. Novel·la filosòfica (c. 1169) sobre un nen criat sol en una illa que arriba al coneixement per pura raó. Ibn Tufayl (†1185), metge i filòsof andalusí de Guadix. Influència directa sobre Defoe (Robinson Crusoe), Locke i la Il·lustració. Cap traducció catalana. Text àrab a Wikisource i Archive.org."
+    },
+    {
+      "autor": "Zhuangzi",
+      "titol": "Capítols interiors (selecció)",
+      "llengua": "xinès",
+      "categoria": "filosofia",
+      "dificultat": 5,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "done",
+      "obra_dir": "obres/filosofia/zhuangzi/capitols-interiors",
+      "notes": "Consell Editorial 2026-03-07. Segon pilar del taoisme filosòfic, complement essencial al Tao Te King de Laozi. Els 7 capítols interiors (內篇) són el nucli autèntic de l'obra: paràboles, diàlegs i paradoxes sobre la llibertat, la relativitat del coneixement i el wu wei. Zhuangzi (†c. 286 aC) és, amb Laozi, el pensador fonamental del taoisme. Prosa literària xinesa d'una riquesa incomparable. Cap traducció catalana. Text original a CText.org."
+    },
+    {
+      "autor": "Horaci",
+      "titol": "Odes (selecció: 20 odes)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/horaci/odes-seleccio-20-odes",
+      "notes": "Consell Editorial 2026-03-07. El gran líric romà, absent al catàleg. Les Odes (Carmina, 23-13 aC) són el cim de la poesia llatina: carpe diem, aurea mediocritas, fugacitat del temps. Horaci (†8 aC) és el poeta romà més influent després de Virgili. Selecció recomanada: I.1, I.5, I.9, I.11 (carpe diem), I.22, I.37, II.3, II.10 (aurea mediocritas), II.14, III.1, III.2, III.9, III.13, III.30 (exegi monumentum), IV.7, IV.9, i altres. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Voltaire",
+      "titol": "Micromégas",
+      "llengua": "francès",
+      "categoria": "narrativa",
+      "dificultat": 2,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/narrativa/voltaire/micromegas",
+      "notes": "Consell Editorial 2026-03-07. Conte filosòfic (1752) que inaugura la ciència-ficció: un gegant de Sírius i un saturnià visiten la Terra i descobreixen la petitesa i la presumpció dels humans. Sàtira del racionalisme dogmàtic i de l'antropocentrisme. Voltaire (†1778) és la figura central de la Il·lustració. Breu, àgil, ideal per a una traducció bilingüe. Cap traducció catalana recent. Text francès a Wikisource francesa i Project Gutenberg."
+    },
+    {
+      "autor": "Plutarc",
+      "titol": "Sobre la tranquil·litat de l'ànima (Περὶ εὐθυμίας)",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/plutarc/sobre-la-tranquillitat-de-lanima",
+      "notes": "Consell Editorial 2026-03-07. Reforça la categoria assaig (només 2 obres). Plutarc (†c. 120 dC) és un dels moralistes més influents de l'Antiguitat, absent del catàleg. Tractat dels Moralia sobre la serenitat interior: pont entre estoïcisme, epicureisme i platonisme. Prosa elegant i plena d'anècdotes. Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (Moralia, ed. Goodwin)."
+    },
+    {
+      "autor": "Virgili",
+      "titol": "Bucòliques (Eclogae)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4500,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/virgili/bucoliques",
+      "notes": "Consell Editorial 2026-03-07. El poeta llatí més important, absent del catàleg. 10 èglogues pastorals (42-39 aC) que funden la tradició bucòlica europea: paisatge idealitzat, amor, música i reflexió política (ègloga IV, messiànica). Virgili (†19 aC) és el vèrtex de la literatura llatina. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Kālidāsa",
+      "titol": "Meghadūta (El missatger del núvol)",
+      "llengua": "sànscrit",
+      "categoria": "oriental",
+      "dificultat": 5,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "archive.org"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol",
+      "notes": "Consell Editorial 2026-03-07. Reforça la categoria oriental (només 4 obres). Kālidāsa (†c. s. V dC) és el poeta i dramaturg més gran de la literatura sànscrita, sovint comparat amb Shakespeare. Poema líric en 111 estrofes: un yaksha exiliat envia un missatge d'amor a la seva esposa a través d'un núvol monsònic, descrivint la geografia i la bellesa de l'Índia. Obra mestra del kāvya (poesia ornamental). Cap traducció catalana. Text sànscrit a Wikisource i Archive.org."
+    },
+    {
+      "autor": "Li Bai",
+      "titol": "Selecció de 30 poemes",
+      "llengua": "xinès",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/li-bai/seleccio-de-30-poemes",
+      "notes": "Consell Editorial 2026-03-07. Diversifica el xinès de filosofia a poesia: primera obra poètica xinesa al catàleg. Li Bai (†762), el 'Immortal Desterrat', és el poeta més gran de la dinastia Tang i de tota la literatura xinesa. Selecció recomanada: 靜夜思 (Pensaments en una nit tranquil·la), 月下獨酌 (Bevent sol sota la lluna), 將進酒 (Porteu vi), 蜀道難 (El difícil camí de Shu), 早發白帝城, 望廬山瀑布, i altres. Poesia lírica de gran intensitat: natura, vi, amistat, exili i llibertat. Cap traducció catalana del xinès. Text original a CText.org i Wikisource xinesa."
+    },
+    {
+      "autor": "Eurípides",
+      "titol": "Medea (Μήδεια)",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/teatre/euripides/medea",
+      "notes": "Consell Editorial 2026-03-07. El tercer gran tràgic grec, absent del catàleg. Medea (431 aC) és la tragèdia més poderosa d'Eurípides (†406 aC): la princesa de Còlquida, traïda per Jàson, executa una venjança terrible. Obra cabdal sobre la passió, la justícia i la condició de la dona al món antic. Complementa l'Antígona de Sòfocles al catàleg teatral. Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Murray/Diggle)."
+    },
+    {
+      "autor": "Giovanni Boccaccio",
+      "titol": "Decameró (selecció: 10 contes)",
+      "llengua": "italià",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/boccaccio/decamero-seleccio-10-contes",
+      "notes": "Consell Editorial 2026-03-07. Obre la narrativa italiana al catàleg: Boccaccio (†1375) és, amb Dante i Petrarca, un dels tres pilars de la literatura italiana. El Decameró (1353) és la col·lecció de contes més influent de la literatura europea medieval. Selecció recomanada: I.1 (Ser Ciappelletto), I.3 (els tres anells), II.5, III.1, IV.5 (Lisabetta), V.9 (Federigo degli Alberighi), VI.10, VII.2, IX.3, X.10 (Griselda). Prosa toscana elegant, humor, erotisme i crítica social. Cap traducció catalana recent en edició bilingüe. Text italià a Wikisource italiana i Project Gutenberg."
+    },
+    {
+      "autor": "Lucreci",
+      "titol": "De rerum natura, Llibre I",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "done",
+      "obra_dir": "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
+      "notes": "Consell Editorial 2026-03-07. Única veu epicúria al catàleg, contrapunt essencial a l'estoïcisme dominant (Sèneca, Epictetus, Marc Aureli). Lucreci (†c. 55 aC) exposa la física atomista d'Epicur en hexàmetres d'una bellesa excepcional: el Llibre I presenta els principis fonamentals — res no neix del no-res, res no s'anihila, tot és àtoms i buit. Poema filosòfic que uneix ciència, ateisme i sublimitat poètica. Cap traducció catalana en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Sei Shōnagon",
+      "titol": "Makura no Sōshi (El llibre del coixí) — selecció: 30 seccions",
+      "llengua": "japonès",
+      "categoria": "assaig",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "aozora"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/sei-shonagon/makura-no-soshi-el-llibre-del-coixi",
+      "notes": "Consell Editorial 2026-03-07. Reforça la categoria assaig (només 3 obres) i afegeix la primera veu femenina al catàleg. Sei Shōnagon (†c. 1025), dama de la cort Heian, escriu el primer zuihitsu (assaig miscel·lani) de la literatura japonesa (c. 1002): llistes poètiques, observacions sobre la natura, la bellesa i l'etiqueta cortesana, amb una sensibilitat estètica única (mono no aware, okashi). Complement perfecte al Bashō del catàleg: prosa femenina de cort vs. haibun masculí itinerant. Cap traducció catalana. Text original a Aozora Bunko."
+    },
+    {
+      "autor": "Confuci",
+      "titol": "Analectes (Lúnyǔ) — selecció: Llibres I-IV",
+      "llengua": "xinès",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "done",
+      "obra_dir": "obres/oriental/confuci/analectes-lunyu-seleccio-llibres-i-iv",
+      "notes": "Consell Editorial 2026-03-07. Complement imprescindible als textos taoistes del catàleg (Laozi, Zhuangzi): el confucianisme és l'altre gran pilar del pensament xinès. Confuci (†479 aC) és el pensador més influent de l'Àsia oriental. Els Llibres I-IV de les Analectes contenen els aforismes fonamentals sobre rén (仁, humanitat), lǐ (禮, ritual), junzǐ (君子, persona exemplar), xué (學, estudi) i govern virtuós. Prosa concisa i sentenciosa, ideal per a edició bilingüe. Cap traducció catalana directa del xinès. Text original a CText.org."
+    },
+    {
+      "autor": "Apuleu",
+      "titol": "Cupido i Psique (Metamorfosis IV.28–VI.24)",
+      "llengua": "llatí",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/apuleu/cupido-i-psique",
+      "notes": "Consell Editorial 2026-03-07. Primera narrativa llatina al catàleg. El conte mític més influent de l'Antiguitat, inserit dins les Metamorfosis (L'ase d'or): Psique, mortal d'una bellesa que rivalitza amb Venus, és condemnada a casar-se amb un monstre però s'enamora de Cupido; després de perdre'l per la curiositat, supera proves imposades per Venus fins a la reconciliació i l'apoteosi. Arquetip de tots els contes de fades europeus (La Bella i la Bèstia, Eros i Psique). Apuleu (†c. 170 dC), escriptor nord-africà de prosa llatina exuberant. Cap traducció catalana en edició bilingüe. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Rainer Maria Rilke",
+      "titol": "Cartes a un jove poeta (Briefe an einen jungen Dichter)",
+      "llengua": "alemany",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "archive.org"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/rilke/cartes-a-un-jove-poeta",
+      "notes": "Consell Editorial 2026-03-07. Obre l'alemany a la categoria assaig, fins ara sense cap obra en aquesta llengua. 10 cartes (1903-1908) adreçades al cadet Franz Xaver Kappus: meditacions sobre la creativitat, la solitud, l'amor, la paciència i la vida interior que han esdevingut un dels textos més llegits del segle XX. Rilke (†1926), poeta fonamental del modernisme europeu en llengua alemanya, amb una prosa epistolar d'una intensitat lírica excepcional. Domini públic (>70 anys). Cap traducció catalana recent en edició bilingüe. Text alemany a Project Gutenberg i Archive.org."
+    },
+    {
+      "autor": "Adam Mickiewicz",
+      "titol": "Sonets de Crimea (Sonety krymskie)",
+      "llengua": "polonès",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/mickiewicz/sonets-de-crimea",
+      "notes": "Consell Editorial 2026-03-07. Afegeix el polonès com a nova llengua al catàleg, obrint la biblioteca a la tradició literària eslava occidental. 18 sonets (1826) escrits durant l'exili a Rússia: el paisatge de Crimea — estepes, mars, muntanyes — com a mirall de l'ànima romàntica desterrada. Mickiewicz (†1855) és el poeta nacional de Polònia i una de les grans veus del Romanticisme europeu, comparable a Byron o Pushkin. Sonets d'una perfecció formal i una intensitat visual extraordinàries. Cap traducció catalana. Text polonès a Wikisource polonesa."
+    },
+    {
+      "autor": "Dante Alighieri",
+      "titol": "Vita Nuova (Vida nova)",
+      "llengua": "italià",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/dante-alighieri/vita-nuova-vida-nova",
+      "notes": "Consell Editorial 2026-03-08. Dante (†1321) és el poeta suprem de la literatura universal i l'absència més flagrant del catàleg (hi ha Boccaccio i Leopardi però no Dante). La Vita Nuova (c. 1294) és un prosimetrum — 31 poemes (sonets, cançons, balades) entrellaçats amb prosa narrativa — que relata l'amor per Beatrice des del primer encontre als 9 anys fins a la seva mort i la promesa de la Commedia. Obra fundacional del dolce stil novo i de la lírica europea moderna. Combina autobiografia, filosofia neoplatònica i innovació formal. Cap traducció catalana recent en edició bilingüe crítica. Text italià a Wikisource italiana i Project Gutenberg."
+    },
+    {
+      "autor": "Anònim (tradició hebrea)",
+      "titol": "Càntic dels Càntics (Šīr haššīrīm)",
+      "llengua": "hebreu",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 2500,
+      "fonts": [
+        "wikisource",
+        "mechon-mamre"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/anonim-hebreu/cantic-dels-cantics",
+      "notes": "Consell Editorial 2026-03-08. Afegeix l'hebreu com a nova llengua al catàleg, obrint la biblioteca a la tradició literària semítica antiga. El Càntic dels Càntics (Šīr haššīrīm, c. s. IV-III aC) és el poema d'amor més influent de la literatura mundial: diàleg entre dos amants ple d'imatges de la natura, el cos i el desig. Atribuït a Salomó per tradició, és obra mestra de la lírica oriental i ha generat segles d'interpretació al·legòrica (mística jueva, cristiana, sufí). 8 capítols breus d'una intensitat sensorial incomparable. Existeixen traduccions catalanes dins edicions bíbliques, però cap edició bilingüe crítica independent amb aparell acadèmic (glossari, notes filològiques, introducció). Text hebreu a Wikisource hebrea i Mechon Mamre."
+    },
+    {
+      "autor": "Karel Hynek Mácha",
+      "titol": "Máj (Maig)",
+      "llengua": "txec",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3500,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/karel-hynek-macha/maj-maig",
+      "notes": "Consell Editorial 2026-03-08. Afegeix el txec com a nova llengua al catàleg, obrint la biblioteca a la tradició literària eslava central. Máj (1836) és el poema fundacional de la literatura txeca moderna: 4 cants i 2 intermezzi que narren la tragèdia de Vilém, bandoler que mata sense saber-ho el seu pare i és executat, en un paisatge de maig d'una bellesa exuberant que contrasta amb la violència i la mort. Mácha (†1836, als 25 anys) és el poeta romàntic txec per excel·lència, redescobert pel modernisme i les avantguardes del s. XX. Poema d'una musicalitat i una riquesa visual extraordinàries, comparable al Màj de Byron o al Lenore de Bürger. Cap traducció catalana. Text txec a Wikisource txeca."
+    },
+    {
+      "autor": "Safo",
+      "titol": "Fragments (selecció: 30 poemes i fragments)",
+      "llengua": "grec",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/safo/fragments-seleccio-30-poemes",
+      "notes": "Consell Editorial 2026-03-08. Primera gran veu femenina de la lírica occidental i absència clamorosa del catàleg. Safo de Lesbos (†c. 570 aC), la 'desena Musa' segons Plató, és la poeta més important de l'Antiguitat grega. Dels nou llibres originals sobreviuen fragments d'una intensitat lírica incomparable: l'himne a Afrodita (fr. 1), l'oda a l'estimada (fr. 31, φαίνεταί μοι), el fragment de la poma (fr. 105a), i desenes de textos sobre el desig, la bellesa i la pèrdua. Selecció dels 30 fragments més substancials i traduïbles. Diversifica la poesia grega (dominada per veus masculines al catàleg). Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Campbell/Voigt) i Wikisource grega."
+    },
+    {
+      "autor": "Petroni",
+      "titol": "Cena Trimalchionis (El banquet de Trimalció)",
+      "llengua": "llatí",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
+      "notes": "Consell Editorial 2026-03-08. La gran sàtira romana, gènere completament absent del catàleg. Petroni (†66 dC, contemporani de Sèneca i Neró) és l'autor del Satyricon, la primera novel·la picaresca de la literatura occidental. La Cena Trimalchionis (Satyricon 26.7–78.8) és l'episodi més cèlebre i autònom: el banquet grotesc d'un llibert nou-ric, amb plats extravagants, discursos ridículs, testament en vida i una comicitat corrosiva que retrata la societat romana imperial. Prosa llatina col·loquial única (sermo vulgaris), document lingüístic inestimable del llatí parlat. Complementa la narrativa llatina d'Apuleu amb un to radicalment diferent. Cap traducció catalana en edició bilingüe. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Pu Songling",
+      "titol": "Liaozhai zhiyi (selecció: 10 contes fantàstics)",
+      "llengua": "xinès",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/pu-songling/liaozhai-zhiyi-seleccio-10-contes",
+      "notes": "Consell Editorial 2026-03-08. Diversifica el xinès de filosofia i poesia cap a la narrativa, gènere completament absent per a aquesta llengua al catàleg. Pu Songling (†1715), erudit fracassat als exàmens imperials, escriu durant 40 anys la col·lecció més cèlebre de contes fantàstics de la literatura xinesa: 491 relats de fantasmes, esperits guineu (húlí jīng 狐狸精), dimonis, scholars enamorats i justícia sobrenatural. Prosa clàssica (wenyan) d'una elegància i una inventiva narrativa extraordinàries, comparable als contes de Hoffmann o Poe. Selecció recomanada: 聂小倩 (Nie Xiaoqian), 画皮 (La pell pintada), 婴宁 (Yingning), 阿宝 (A Bao), 促织 (El grill), 席方平 (Xi Fangping), 田七郎 (Tian Qilang), 连城 (Liancheng), 黄英 (Huang Ying), 王六郎 (Wang Liulang). Cap traducció catalana. Text xinès clàssic a CText.org i Wikisource xinesa."
+    },
+    {
+      "autor": "Ovidi",
+      "titol": "Metamorfosis (selecció: 5 mites)",
+      "llengua": "llatí",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/narrativa/ovidi/metamorfosis-seleccio-5-mites",
+      "notes": "Consell Editorial 2026-03-09. L'absència més cridanera del catàleg llatí: Ovidi (†17/18 dC) és el poeta narratiu romà per excel·lència, autor de l'obra mitològica més influent de la literatura occidental. Selecció de 5 mites fonamentals: Dafne i Apol·lo (I.452-567), Narcís i Eco (III.339-510), Orfeu i Eurídice (X.1-85, XI.1-66), Pigmalió (X.243-297), Dèdal i Ícar (VIII.183-235). Hexàmetres d'una fluïdesa i elegància incomparables, amb transicions narratives que fonen un mite en l'altre. Complement essencial a Virgili i Horaci al catàleg llatí. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Rabindranath Tagore",
+      "titol": "Gitanjali (selecció: 30 poemes)",
+      "llengua": "bengalí",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/rabindranath-tagore/gitanjali-seleccio-30-poemes",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el bengalí com a nova llengua al catàleg, obrint la biblioteca a la tradició literària de l'Índia moderna. Tagore (†1941), Premi Nobel de Literatura 1913, és el poeta més important de l'Índia i una de les grans veus de la lírica mundial del segle XX. Gitanjali ('Ofrena de cançons', 1910) és el recull que li valgué el Nobel: 157 poemes en prosa d'una espiritualitat transparent, diàleg entre l'ànima i el diví ple de llum, natura i anhel. Selecció dels 30 poemes més representatius. Tagore escrigué originalment en bengalí i després en autotraduí una selecció a l'anglès (1912). Traducció directa del bengalí. Cap traducció catalana. Text bengalí a Wikisource bengalí; versió anglesa a Project Gutenberg."
+    },
+    {
+      "autor": "Thiruvalluvar",
+      "titol": "Tirukkuṛaḷ (selecció: 100 kural)",
+      "llengua": "tàmil",
+      "categoria": "oriental",
+      "dificultat": 5,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "project-madurai"
+      ],
+      "status": "done",
+      "obra_dir": "obres/oriental/thiruvalluvar/tirukkural-seleccio-100-kural",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el tàmil com a nova llengua al catàleg, obrint la biblioteca a la tradició literària dravídica de l'Índia del sud. El Tirukkuṛaḷ (c. s. I aC – s. V dC) és l'obra mestra de la literatura tàmil clàssica i un dels textos ètics més universals de la humanitat: 1.330 dístics (kural) organitzats en tres llibres — Virtut (Aram), Riquesa/Política (Porul) i Amor (Inbam). Thiruvalluvar és venerat com el poeta ètic suprem del món tàmil; el text és secular, sense adscripció religiosa, amb una saviesa pràctica comparable als Analectes de Confuci o les Màximes de La Rochefoucauld. Selecció de 100 kural dels tres llibres. Cap traducció catalana. Text tàmil a Wikisource tàmil i Project Madurai."
+    },
+    {
+      "autor": "Catul",
+      "titol": "Carmina (selecció: 25 poemes)",
+      "llengua": "llatí",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/catul/carmina-seleccio-25-poemes",
+      "notes": "Consell Editorial 2026-03-09. El gran líric romà de la passió, absent del catàleg. Catul (†c. 54 aC) és el poeta més intensament personal de Roma: els seus carmina — breus, ferotges, tendres — inventen la lírica amorosa occidental. Selecció recomanada: 1 (dedica), 2-3 (el pardal de Lèsbia), 5 (vivamus atque amemus), 7, 8, 11, 13, 31, 46, 51 (traducció de Safo), 64 (epili de Peleu i Tetis, fragment), 70, 72, 75, 76, 83, 85 (odi et amo), 87, 92, 96, 101 (ave atque vale), 109. Contrapunt essencial a l'Horaci olímpic i el Virgili pastoral: allà on ells busquen la perfecció formal i la grandesa, Catul desplega una veu nua, directa, violentament emotiva. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Aristòfanes",
+      "titol": "Els núvols (Νεφέλαι)",
+      "llengua": "grec",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/teatre/aristofanes/els-nuvols",
+      "notes": "Consell Editorial 2026-03-09. La comèdia és completament absent del catàleg teatral (Antígona, Medea, Fröken Julie, Casa de nines — tot tragèdia o drama). Aristòfanes (†c. 386 aC) és el mestre indiscutible de la comèdia antiga i l'únic comedògraf grec del qual conservem obres completes. Els núvols (423 aC) satiritzen Sòcrates com a sofista corruptor de la joventut: Estrepsíades, un pagès endeutat, envia el seu fill al 'Pensador' de Sòcrates per aprendre a guanyar qualsevol argument, amb resultats desastrosos. Comèdia intel·lectual que parodia la filosofia, la retòrica i l'educació atenesa, amb una comicitat física i verbal d'una inventiva delirant. Font primària per a la recepció de Sòcrates (anterior a Plató). Cap traducció catalana recent en edició bilingüe crítica. Text grec a Perseus (ed. Henderson) i Wikisource grega."
+    },
+    {
+      "autor": "Rumi",
+      "titol": "Masnavi (selecció: 10 contes)",
+      "llengua": "persa",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "wikisource",
+        "ganjoor"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/oriental/rumi/masnavi-seleccio-10-contes",
+      "notes": "Consell Editorial 2026-03-09. Complement essencial a Omar Khayyam: si les Rubaiyat expressen l'escepticisme hedonista, el Masnavi de Rumi és la veu mística sufí, 'el Corà en persa' segons Jāmī. Jalāl al-Dīn Rūmī (†1273), poeta i místic de Konya, és l'autor més llegit del món islàmic i un dels poetes més traduïts de la història. El Masnavi-ye Ma'navi (c. 1258-1273) conté 25.000 dístics organitzats en 6 llibres: contes, paràboles i al·legories que il·luminen la cerca de Déu, l'amor diví i la transformació interior. Selecció de 10 contes representatius: la flauta de canya (proemi), el lloro i el mercader, l'elefant a les fosques, Moisès i el pastor, el lleó i la llebre, la ciutat dels cecs, l'home que trucava a la porta de Déu, el jardiner i les tres fruites, el gramàtic i el barquer, la llàntia i l'oli. Cap traducció catalana directa del persa. Text persa a Wikisource persa i Ganjoor.net."
+    },
+    {
+      "autor": "Yunus Emre",
+      "titol": "Selecció de 25 poemes",
+      "llengua": "turc",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 2500,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/oriental/yunus-emre/seleccio-25-poemes",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el turc com a nova llengua al catàleg, obrint la biblioteca a la tradició literària turca i sufí d'Anatòlia. Yunus Emre (†c. 1321) és el poeta fundacional de la literatura turca i el místic sufí més estimat del món turcòfon. Els seus ilahis (himnes) i poemes en turc anatolià antic expressen l'amor diví, la unitat de l'ésser i la humilitat amb una senzillesa que els fa universals — comparable a Rumi però en llengua turca popular, no en persa cortesà. Selecció dels 25 poemes més representatius: 'Bana seni gerek seni' (Només et necessito a Tu), 'Aşkın aldı benden beni' (L'amor m'ha pres de mi), 'Ben yürürüm yane yane', etc. Patrimoni de la Humanitat (UNESCO, 1991). Cap traducció catalana. Text turc a Wikisource turca."
+    },
+    {
+      "autor": "Anònim nòrdic",
+      "titol": "Völuspá (La profecia de la sibil·la)",
+      "llengua": "islandès antic",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 3500,
+      "fonts": [
+        "wikisource",
+        "heimskringla.no"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/anonim-nordic/voluspa-la-profecia-de-la-sibilla",
+      "notes": "Consell Editorial 2026-03-09. Afegeix l'islandès antic (nòrdic antic) com a nova llengua al catàleg, obrint la biblioteca a la tradició literària escandinava medieval. La Völuspá (c. s. X) és el poema més important de l'Edda poètica: una sibil·la (völva) narra a Odin la creació del món, l'arbre Yggdrasil, la guerra dels déus, la mort de Baldr i el Ragnarök (la fi del món) seguit d'un renaixement còsmic. 66 estrofes en metre fornyrðislag d'una força visionària i una densitat simbòlica incomparables: cosmogonia, escatologia i profecia en un sol poema. Font primària de la mitologia nòrdica, influència directa sobre Tolkien, Wagner i tota la cultura nòrdica. Cap traducció catalana. Text en nòrdic antic a Wikisource islandesa i Heimskringla.no."
+    },
+    {
+      "autor": "Lev Tolstoi",
+      "titol": "Quanta terra necessita un home? i altres contes breus",
+      "llengua": "rus",
+      "categoria": "narrativa",
+      "dificultat": 2,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/lev-tolstoi/quanta-terra-necessita-un-home-i-altres-contes",
+      "notes": "Consell Editorial 2026-03-09. L'absència més flagrant del catàleg narratiu: Tolstoi (†1910), amb Dostoievski, és el pilar de la narrativa russa i mundial, però completament absent de la biblioteca. Selecció de 3 contes breus morals: 'Quanta terra necessita un home?' (Много ли человеку земли нужно, 1886), paràbola perfecta sobre l'avarícia; 'Tres morts' (Три смерти, 1859), meditació sobre el morir; 'El presoner del Caucas' (Кавказский пленник, 1872), aventura i reflexió sobre la guerra. Prosa d'una claredat cristal·lina i una profunditat moral insondable. Contes ideals per a una edició bilingüe: breus, autònoms, universals. Reforça el rus (només Dostoievski al catàleg). Cap traducció catalana recent en edició bilingüe. Text rus a Wikisource russa i Project Gutenberg."
+    },
+    {
+      "autor": "Boeci",
+      "titol": "De consolatione Philosophiae, Llibre I",
+      "llengua": "llatí",
+      "categoria": "filosofia",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "latin-library",
+        "perseus"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/filosofia/boeci/de-consolatione-philosophiae-llibre-i",
+      "notes": "Consell Editorial 2026-03-09. Pont entre l'Antiguitat i l'Edat Mitjana, completament absent del catàleg. Anicius Manlius Severinus Boethius (†524 dC), 'l'últim romà i el primer escolàstic', escriu a la presó de Pavia, condemnat a mort per Teodoric, el prosimetrum (prosa + poesia) més influent de l'Occident medieval. El Llibre I és autònom i ideal per a una edició bilingüe: la Filosofia apareix com a dona al costat del presoner malalt, foragita les Muses de la poesia com a 'meretrices' i diagnostica la causa del seu patiment — l'oblit de si mateix. 8 proses i 7 poemes en metres variats (elegíacs, sàfics, glicònics). Obra traduïda per Alfred el Gran, Chaucer, la reina Elisabet I; influència directa sobre Dante, Tomàs d'Aquino i tota la filosofia medieval. Complement essencial als estoics del catàleg: Boeci sintetitza platonisme, estoïcisme i aristotelisme en un moment de crisi existencial radical. Cap traducció catalana recent en edició bilingüe crítica. Text llatí a The Latin Library i Perseus."
+    },
+    {
+      "autor": "Zeami Motokiyo",
+      "titol": "Tres peces de nō: Matsukaze, Atsumori, Hagoromo",
+      "llengua": "japonès",
+      "categoria": "teatre",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/teatre/zeami-motokiyo/tres-peces-de-no",
+      "notes": "Consell Editorial 2026-03-09. Afegeix el japonès al teatre, combinació completament nova al catàleg. Zeami Motokiyo (†1443) és el creador del teatre nō i el primer gran teòric teatral del Japó (Fūshikaden, Kadensho), comparable a Aristòtil per la seva influència en la teoria dramàtica asiàtica. Tres peces representatives de tres categories del nō: Matsukaze (松風, 'Vent entre els pins'), mugen-nō de dona (tercera categoria): el fantasma de dues germanes pescadores d'Ariwara no Yukihira reviu el seu amor i dolor al clar de lluna — obra mestra de la bellesa yūgen. Atsumori (敦盛), shura-nō de guerrer (segona categoria): el monjo Rensei retroba el fantasma del jove guerrer Taira no Atsumori, a qui va matar a la batalla de Ichi-no-Tani — reconciliació entre enemic i víctima. Hagoromo (羽衣, 'El vel de plomes'), nō celestial (tercera categoria): un pescador troba el vel d'una tennin (àngel) i negocia la seva dansa a canvi de retornar-lo — puresa i sublimitat. Zeami és el Bashō del teatre: economia extrema, suggeriment, la bellesa del que no es diu. Cap traducció catalana. Text japonès a Aozora Bunko i Wikisource japonesa."
+    },
+    {
+      "autor": "Aleksandr Pushkin",
+      "titol": "El genet de bronze (Медный всадник)",
+      "llengua": "rus",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 3000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/aleksandr-pushkin/el-genet-de-bronze",
+      "notes": "Consell Editorial 2026-03-09. Diversifica el rus cap a la poesia (fins ara només narrativa: Dostoievski, Tolstoi) i afegeix el poeta fundacional de la literatura russa moderna, completament absent del catàleg. Aleksandr Pushkin (†1837) és per al rus el que Shakespeare és per a l'anglès o Dante per a l'italià: el creador de la llengua literària moderna. El genet de bronze (Медный всадник, 1833) és el seu poema narratiu més perfecte: la gran inundació de Sant Petersburg de 1824 destrueix la vida del petit funcionari Ievgueni, que, boig de dolor, desafia l'estàtua eqüestre de Pere el Gran — l'estàtua cobra vida i el persegueix pels carrers buits. Poema sobre el poder, la ciutat, l'individu contra l'Estat, la bogeria i la bellesa terrible de la creació imperial. Introducció i 2 parts en tetrametres iàmbics d'una fluïdesa prodigiosa. Obra breu, intensa, ideal per a edició bilingüe. Cap traducció catalana. Text rus a Wikisource russa i Project Gutenberg."
+    },
+    {
+      "autor": "Hesíode",
+      "titol": "Els treballs i els dies (Ἔργα καὶ Ἡμέραι)",
+      "llengua": "grec",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/hesiode/els-treballs-i-els-dies",
+      "notes": "Consell Editorial 2026-03-10. Diversifica la poesia grega: el catàleg té Safo (lírica) però no poesia didàctica. Hesíode (s. VIII-VII aC, >2700 anys) és, amb Homer, el pilar de la literatura grega arcaica. Els treballs i els dies (Ἔργα καὶ Ἡμέραι) és el primer poema didàctic d'Occident: 828 hexàmetres on Hesíode instrueix el seu germà Perses sobre la justícia, el treball agrícola, la navegació i els dies fastos. Conté el mite de Prometeu i Pandora, el mite de les cinc edats (or, plata, bronze, herois, ferro) i la faula del falcó i el rossinyol — primera faula de la literatura europea. Obra fundacional per a l'ètica del treball, la teodicea i la poesia gnòmica. Cap traducció catalana recent. Text grec a Perseus Digital Library i Wikisource grega."
+    },
+    {
+      "autor": "Mozi",
+      "titol": "Amor universal (兼愛)",
+      "llengua": "xinès",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "ctext"
+      ],
+      "status": "done",
+      "obra_dir": "obres/filosofia/mozi/amor-universal",
+      "notes": "Consell Editorial 2026-03-10. Completa el quartet filosòfic xinès clàssic: el catàleg ja inclou Laozi (taoisme), Confuci (confucianisme) i Zhuangzi (taoisme); falta Mozi (moisme), el gran rival de Confuci. Mozi (墨子, c. 470-391 aC) va fundar l'escola moista, la primera filosofia utilitarista i pacifista del món. 兼愛 (Jiān Ài, 'Amor universal') és el nucli del seu pensament: tres capítols (superior, mitjà, inferior) on argumenta que la guerra, el robatori i l'opressió neixen de l'amor parcial, i que només l'amor imparcial i universal pot salvar la humanitat. Argumentació lògica rigorosa, estil directe i repetitiu (molt diferent de Laozi o Zhuangzi). Cap traducció catalana. Text xinès clàssic a CText (Chinese Text Project)."
+    },
+    {
+      "autor": "Sándor Petőfi",
+      "titol": "Selecció de 20 poemes",
+      "llengua": "hongarès",
+      "categoria": "poesia",
+      "dificultat": 3,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/sandor-petofi/seleccio-20-poemes",
+      "notes": "Consell Editorial 2026-03-10. Afegeix una NOVA LLENGUA al catàleg: l'hongarès, llengua uraliana sense cap representació fins ara. Sándor Petőfi (1823-1849) és el poeta nacional hongarès i figura central de la Revolució de 1848. Va morir als 26 anys a la batalla de Segesvár, convertint-se en mite romàntic. La selecció inclou poemes emblemàtics: Nemzeti dal (Cançó nacional, l'himne revolucionari), Szeptember végén (Final de setembre, elegia amorosa perfecta), Az Alföld (La Gran Plana), A farkasok dala (La cançó dels llops), János vitéz (fragments). Estil directe, popular, musical — va democratitzar la poesia hongaresa trencant amb l'academicisme. Cap traducció catalana. Text hongarès a Wikisource hongaresa (Magyar Elektronikus Könyvtár)."
+    },
+    {
+      "autor": "Teofrast",
+      "titol": "Els caràcters",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/teofrast/els-caracters",
+      "notes": "Consell Editorial 2026-03-10. Teofrast (Θεόφραστος, c. 371-287 aC), deixeble i successor d'Aristòtil al Liceu. 'Els caràcters' (Χαρακτῆρες) és una col·lecció de 30 retrats satírics de tipus morals — l'adulador, l'avar, el supersticiós, el xafarder — que va fundar el gènere del caràcter literari, influint en La Bruyère, Molière i tota la tradició moralista europea. Prosa breu, mordaç i observacional. No hi ha cap traducció catalana. Text grec a Perseus Digital Library."
+    },
+    {
+      "autor": "Kamo no Chōmei",
+      "titol": "Hōjōki",
+      "llengua": "japonès",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/oriental/kamo-no-chomei/hojoki",
+      "notes": "Consell Editorial 2026-03-10. Kamo no Chōmei (鴨長明, 1155-1216), poeta i ermità japonès. 'Hōjōki' (方丈記, 'Cròniques de la meva cabana') és una de les tres grans obres del gènere zuihitsu (assaig japonès), juntament amb 'El llibre del coixí' de Sei Shōnagon (ja al catàleg). Escrita el 1212 des d'una cabana de 3 metres quadrats a les muntanyes de Hino, reflexiona sobre la impermanència (mujō) a través de cinc desastres viscuts: incendi, tornado, trasllat de la capital, fam i terratrèmol. Prosa lírica, contemplativa, profundament budista. Cap traducció catalana. Text japonès clàssic a Aozora Bunko."
+    },
+    {
+      "autor": "Petrarca",
+      "titol": "Selecció de 20 sonets del Canzoniere",
+      "llengua": "italià",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/petrarca/seleccio-20-sonets",
+      "notes": "Consell Editorial 2026-03-10. Francesco Petrarca (1304-1374), pare de l'humanisme i creador del sonet modern. El 'Canzoniere' (Rerum vulgarium fragmenta) conté 366 poemes dedicats majoritàriament a Laura. Selecció de 20 sonets emblemàtics: 'Voi ch'ascoltate in rime sparse il suono' (I), 'Solo et pensoso i più deserti campi' (XXXV), 'Chiare, fresche et dolci acque' (CXXVI), 'Erano i capei d'oro a l'aura sparsi' (XC), entre d'altres. Va definir la lírica amorosa occidental i influir en Ausiàs March, Shakespeare, Garcilaso i tota la tradició petrarquista. Cap traducció catalana recent dels sonets. Text italià a Wikisource italiana i Project Gutenberg."
+    },
+    {
+      "autor": "Lucià de Samòsata",
+      "titol": "Diàlegs dels morts (selecció de 10 diàlegs)",
+      "llengua": "grec",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/lucia-de-samosata/dialegs-dels-morts",
+      "notes": "Consell Editorial 2026-03-13. Lucià de Samòsata (Λουκιανός, c. 125-180 dC), prosista siríac-grec, mestre de la sàtira i el diàleg còmic. Els 'Diàlegs dels morts' (Νεκρικοὶ Διάλογοι) són 30 diàlegs breus ambientats a l'Hades on filòsofs, reis i herois són ridiculitzats per Hermes, Caront i Diògenes. Selecció de 10 diàlegs representatius. Prosa satírica única al catàleg: humor, ironia i crítica social des de l'antiguitat. Influència directa sobre Erasme, Rabelais, Swift i Voltaire. Cap traducció catalana moderna. Text grec a Perseus Digital Library i Project Gutenberg."
+    },
+    {
+      "autor": "Terenci",
+      "titol": "Andria",
+      "llengua": "llatí",
+      "categoria": "teatre",
+      "dificultat": 3,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "latin_library",
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/teatre/terenci/andria",
+      "notes": "Consell Editorial 2026-03-13. Publi Terenci Àfer (Publius Terentius Afer, c. 195-159 aC), dramaturg romà d'origen nord-africà (Cartago). 'Andria' ('La dona d'Andros', 166 aC) és la seva primera comèdia, basada en Menandre. Trama d'amors creuats, identitats ocultes i reconeixement final — el model de la comèdia occidental. Terenci va refinar el llatí col·loquial amb elegància i naturalitat; Cèsar l'anomenà 'dimidiatus Menander'. El catàleg té tragèdia grega (Sòfocles, Eurípides), teatre nòrdic (Ibsen, Strindberg) i Nō japonès (Zeami), però cap comèdia romana. Cap traducció catalana recent. Text llatí a The Latin Library, Perseus i Gutenberg."
+    },
+    {
+      "autor": "Al-Mutanabbī",
+      "titol": "Selecció de 20 poemes",
+      "llengua": "àrab",
+      "categoria": "poesia",
+      "dificultat": 5,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "wikisource",
+        "al-adab"
+      ],
+      "status": "done",
+      "obra_dir": "obres/poesia/al-mutanabbi/seleccio-20-poemes",
+      "notes": "Consell Editorial 2026-03-13. Abu al-Tayyib Ahmad ibn al-Husayn al-Mutanabbī (أبو الطيب المتنبي, 915-965), considerat el més gran poeta de la llengua àrab. Panegírics, elegies i poemes filosòfics d'una intensitat retòrica sense parió. La seva poesia combina orgull personal (fakhr), lloança (madh) i reflexió existencial (hikma). Selecció de 20 poemes emblemàtics que cobreixen les diferents etapes: els anys de joventut rebel, el període a la cort de Sayf al-Dawla a Alep, i l'exili final. El catàleg té narrativa àrab (Ibn Tufayl) però cap poesia àrab clàssica. Dificultat alta per la densitat retòrica i les al·lusions culturals. Cap traducció catalana. Text àrab a Wikisource àrab i al-adab.com."
+    },
+    {
+      "autor": "Luci de Samòsata",
+      "titol": "Diàlegs dels morts (selecció de 10 diàlegs)",
+      "llengua": "grec",
+      "categoria": "narrativa",
+      "dificultat": 3,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/luci-de-samosata/dialegs-dels-morts",
+      "notes": "Consell Editorial 2026-03-13. Λουκιανὸς ὁ Σαμοσατεύς (c. 125–180 dC), mestre de la sàtira menippea. Els Νεκρικοὶ Διάλογοι (Diàlegs dels morts) presenten converses entre figures mítiques i històriques a l'Hades: Diògenes ridiculitza Alexandre, Hermes s'esbrava amb Caront, els filòsofs es barallen sobre la vanitat. Humor mordaç, crítica social i desmitificació del poder. El catàleg té abundant prosa grega filosòfica i tràgica però cap sàtira. Selecció dels 10 diàlegs més emblemàtics. Cap traducció catalana recent. Text grec complet a Perseus Digital Library i Wikisource grec."
+    },
+    {
+      "autor": "Chikamatsu Monzaemon",
+      "titol": "Sonezaki Shinjū (Els suïcidis d'amor de Sonezaki)",
+      "llengua": "japonès",
+      "categoria": "teatre",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/teatre/chikamatsu-monzaemon/sonezaki-shinju",
+      "notes": "Consell Editorial 2026-03-13. 近松門左衛門 (1653–1725), el 'Shakespeare japonès', dramaturg de jōruri (bunraku) i kabuki. Sonezaki Shinjū (曽根崎心中, 1703) és la primera obra de sewamono (drama domèstic) del teatre de titelles japonès: la història tràgica d'Ohatsu i Tokubei, que trien el doble suïcidi davant la impossibilitat del seu amor. Va revolucionar el teatre japonès en portar la vida quotidiana a l'escenari. El catàleg té Zeami (noh) però no representa el bunraku ni el drama domèstic. Cap traducció catalana. Text japonès a Aozora Bunko."
+    },
+    {
+      "autor": "Lu Yu",
+      "titol": "Chájīng (El clàssic del te)",
+      "llengua": "xinès",
+      "categoria": "assaig",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "ctext",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/lu-yu/chajing",
+      "notes": "Consell Editorial 2026-03-13. 陸羽 (733–804), el 'Sant del Te', erudit de la dinastia Tang. El Chájīng (茶經, c. 760) és el primer tractat complet sobre el te: origen, preparació, utensilis, aigua, cerimònia i filosofia. Tres volums, deu capítols. Combina coneixement pràctic amb reflexió estètica i espiritual, influenciat pel taoisme i el budisme. El catàleg té filosofia xinesa (Laozi, Confuci, Zhuangzi, Mozi) però cap assaig cultural xinès. Obra fundacional de la cultura del te a l'Àsia Oriental. Cap traducció catalana. Text xinès clàssic complet a CText (Chinese Text Project) i Wikisource xinès."
+    },
+    {
+      "autor": "Pseudo-Longí",
+      "titol": "Del sublim (Περὶ ὕψους)",
+      "llengua": "grec",
+      "categoria": "assaig",
+      "dificultat": 4,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/pseudo-longi/del-sublim",
+      "notes": "Consell Editorial 2026-03-13. Pseudo-Longí (s. I dC), atribuït tradicionalment a Cassi Longí però d'autoria incerta. Del sublim (Περὶ ὕψους) és el tractat fundacional d'estètica literària occidental: analitza les fonts de la grandesa en l'escriptura — pensament elevat, emoció, figures retòriques, dicció noble i composició. Influència immensa en la teoria estètica europea (Burke, Kant, Schiller). El catàleg té retòrica antiga (Ciceró, Teofrast) però cap tractat d'estètica pura. Cap traducció catalana publicada. Text grec complet a Perseus Digital Library i Wikisource."
+    },
+    {
+      "autor": "Yoshida Kenkō",
+      "titol": "Tsurezuregusa (Assaigs en l'oci) — selecció de 50 capítols",
+      "llengua": "japonès",
+      "categoria": "oriental",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "aozora",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/oriental/yoshida-kenko/tsurezuregusa",
+      "notes": "Consell Editorial 2026-03-13. 吉田兼好 (c. 1284–1350), monjo budista i poeta japonès. Tsurezuregusa (徒然草, c. 1330) és un dels tres grans zuihitsu (assaig miscel·lani) de la literatura japonesa, al costat del Makura no Sōshi de Sei Shōnagon. 243 capítols breus sobre la bellesa de l'impermanència, l'estètica del wabi, la natura humana i la vida contemplativa. Influència central en l'estètica japonesa (mono no aware, mujō). El catàleg inclou Sei Shōnagon però manca el complement masculí del gènere zuihitsu. Selecció dels 50 capítols més representatius. Cap traducció catalana. Text japonès clàssic a Aozora Bunko."
+    },
+    {
+      "autor": "Firdawsí",
+      "titol": "Shahnameh: Rostam i Sohrab",
+      "llengua": "persa",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/firdawsi/shahnameh-rostam-i-sohrab",
+      "notes": "Consell Editorial 2026-03-13. Abul-Qàsem Firdawsí (c. 940–1020), poeta persa, autor del Shahnameh (شاهنامه, Llibre dels Reis, c. 1010), l'epopeia nacional de Pèrsia i una de les obres més llargues de la literatura mundial (50.000 dístics). L'episodi de Rostam i Sohrab és el passatge més cèlebre: l'heroi Rostam mata en combat el seu propi fill Sohrab sense reconèixer-lo, una tragèdia d'identitat i destí que ha inspirat Matthew Arnold i nombrosos artistes. El catàleg té poesia persa (Omar Khayyam, Rumi) però cap narrativa èpica persa. Cap traducció catalana de cap fragment del Shahnameh. Text persa a Wikisource i traduccions al domini públic a Gutenberg."
+    },
+    {
+      "autor": "Tàcit",
+      "titol": "Germania",
+      "llengua": "llatí",
+      "categoria": "assaig",
+      "dificultat": 3,
+      "paraules_aprox": 10000,
+      "fonts": [
+        "latin_library",
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/assaig/tacit/germania",
+      "notes": "Consell Editorial 2026-03-13. Publius Cornelius Tacitus (c. 56–120 dC), historiador romà. De origine et situ Germanorum (98 dC) és una breu monografia etnogràfica sobre els pobles germànics: costums, religió, govern, vida quotidiana. Text fundacional de l'etnografia europea i document essencial per comprendre els pobles del nord de l'Imperi. El catàleg té assaig de Ciceró, Plutarc, Rilke i Sei Shōnagon, però cap historiografia ni etnografia romana. La prosa de Tàcit, densa i epigramàtica, és un repte estilístic interessant. Cap traducció catalana recent accessible. Text llatí complet a Latin Library i Perseus."
+    },
+    {
+      "autor": "Teocrit",
+      "titol": "Idil·lis (selecció)",
+      "llengua": "grec",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 8000,
+      "fonts": [
+        "perseus",
+        "gutenberg"
+      ],
+      "status": "validated",
+      "obra_dir": "obres/poesia/teocrit/idillis",
+      "notes": "Consell Editorial 2026-03-13. Teocrit de Siracusa (c. 300–260 aC), poeta grec hel·lenístic, fundador de la poesia bucòlica i pastoral. Els Idil·lis (Εἰδύλλια) estableixen el gènere que influirà Virgili (Bucòliques), el Renaixement i tota la tradició pastoral europea. Selecció de 10 idil·lis representatius (I, II, III, VI, VII, X, XI, XV, XXIV, XXX) que cobreixen pastoral, mim urbà, epil·li i poesia amorosa. El catàleg inclou poesia grega arcaica (Safo, Hesíode) i clàssica (Pindar via Horaci) però manca completament el període hel·lenístic. Cap traducció catalana moderna dels Idil·lis. Text grec a Perseus."
+    },
+    {
+      "autor": "Vishnu Sharma",
+      "titol": "Panchatantra (Llibre I: Mitrabheda)",
+      "llengua": "sànscrit",
+      "categoria": "narrativa",
+      "dificultat": 4,
+      "paraules_aprox": 12000,
+      "fonts": [
+        "gutenberg",
+        "sacred_texts",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/narrativa/vishnu-sharma/panchatantra-llibre-i",
+      "notes": "Consell Editorial 2026-03-13. Vishnu Sharma (datat entre s. III aC i s. V dC), compilador del Panchatantra (पञ्चतन्त्र), la col·lecció de faules amb animals més influent de la literatura mundial. El Llibre I (Mitrabheda, 'La pèrdua dels amics') narra la història del bou Sanjeevaka i el lleó Pingalaka, trencats per la intriga del xacal Damanaka: una reflexió sobre l'amistat, la manipulació política i el poder. Origen directe de Kalila i Dimna (àrab), Stephanites kai Ichnelates (grec bizantí), i influència decisiva sobre La Fontaine, els Germans Grimm i la tradició fabulística europea. El catàleg té Kalidasa (teatre/poesia sànscrita) però cap narrativa sànscrita. Cap traducció catalana del Panchatantra. Text sànscrit a Wikisource; traducció anglesa d'Arthur W. Ryder (1925) al domini públic a Gutenberg."
+    },
+    {
+      "autor": "Epicur",
+      "titol": "Carta a Meneceu i Maximes capitals",
+      "llengua": "grec",
+      "categoria": "filosofia",
+      "dificultat": 3,
+      "paraules_aprox": 4000,
+      "fonts": [
+        "perseus",
+        "wikisource"
+      ],
+      "status": "done",
+      "obra_dir": "obres/filosofia/epicur/carta-meneceu-maximes",
+      "notes": "Consell Editorial 2026-03-13. Epicur de Samos (341-270 aC), fundador de l escola epicuria. La Carta a Meneceu es el text etic fonamental: recerca del plaer moderat, eliminacio de la por a la mort, autarquia. Les Maximes capitals condensen en 40 aforismes la doctrina. El cataleg conte multiples estoics pero cap epicuri. Cap traduccio catalana moderna. Textos grecs a Perseus i Wikisource."
+    },
+    {
+      "autor": "Vyasa",
+      "titol": "Bhagavad Gita (seleccio de 6 capitols)",
+      "llengua": "sanscrit",
+      "categoria": "oriental",
+      "dificultat": 4,
+      "paraules_aprox": 7000,
+      "fonts": [
+        "sacred_texts",
+        "wikisource",
+        "gutenberg"
+      ],
+      "status": "done",
+      "obra_dir": "obres/oriental/vyasa/bhagavad-gita",
+      "notes": "Consell Editorial 2026-03-13. Bhagavad Gita, atribuida a Vyasa, dialeg filosofic Arjuna-Krishna del Mahabharata. Text fonamental de la filosofia india: karma-ioga, bhakti-ioga, dharma. Seleccio de 6 capitols (1-2, 3, 11, 12, 18). Cataleg te Sutra del Cor pero no aquest pilar hinduista. Cap traduccio catalana recent. Text sanscrit a Wikisource; trad. anglesa Arnold (1885) a Gutenberg."
+    },
+    {
+      "autor": "Sor Juana Inés de la Cruz",
+      "titol": "Primero sueño",
+      "llengua": "castellà",
+      "categoria": "poesia",
+      "dificultat": 4,
+      "paraules_aprox": 5000,
+      "fonts": [
+        "https://www.cervantesvirtual.com/obra/el-sueno-0/",
+        "wikisource"
+      ],
+      "font_verificada": "Biblioteca Virtual Miguel de Cervantes",
+      "status": "validated",
+      "obra_dir": "obres/poesia/sor-juana/primero-sueno",
+      "notes": "Consell Editorial 2026-03-14. Sor Juana Inés de la Cruz (1648-1695), monja i poeta novohispana, considerada la figura literària més important de l'Amèrica colonial. Primero sueño (1692), silva de 975 versos, narra el viatge de l'ànima pel coneixement universal durant el somni: cosmologia, epistemologia i els límits de la raó humana, en clau barroca gongorina. Obra mestra única per gènere (poema filosòfic extens), per autoria femenina en una època dominada per homes, i per la síntesi de tradicions europea i americana. Afegeix castellà com a idioma nou al catàleg. Cap traducció catalana. Font verificada: Biblioteca Virtual Miguel de Cervantes (https://www.cervantesvirtual.com/obra/el-sueno-0/)."
+    }
+  ]
+}

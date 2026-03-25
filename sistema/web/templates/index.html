@@ -1,0 +1,388 @@
+{% extends "base.html" %}
+
+{% block title %}Biblioteca Arion - Traduccions de clàssics al català{% endblock %}
+{% block description %}Biblioteca oberta de traduccions al català d'obres clàssiques universals. Filosofia, literatura, teatre i poesia.{% endblock %}
+
+{% block content %}
+<!-- Hero Section - Simple i elegant -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-brand">
+            <img src="{{ base_url }}assets/logo/logo_arion_v1.png" alt="Logo Arion" class="hero-logo">
+            <h1>Biblioteca Arion</h1>
+        </div>
+        <p class="hero-subtitle">
+            Traduccions obertes de clàssics universals al català
+        </p>
+        {% if stats %}
+        <div class="hero-stats">
+            <span><strong>{{ stats.total_obres }}</strong> {% if stats.total_obres == 1 %}obra{% else %}obres{% endif %}</span>
+            <span class="stats-dot">·</span>
+            <span><strong>{{ stats.total_autors }}</strong> {% if stats.total_autors == 1 %}autor{% else %}autors{% endif %}</span>
+            <span class="stats-dot">·</span>
+            <span><strong>{{ stats.total_paraules|default(0)|int }}</strong> paraules</span>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Últims títols publicats -->
+<section class="latest-works">
+    <div class="container">
+        <div class="section-header">
+            <h2>Últims títols publicats</h2>
+            <div class="carousel-nav" data-carousel="published">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        {% if obres %}
+        <div class="works-carousel" data-carousel="published">
+            <div class="carousel-track">
+                {% for obra in obres[:10] %}
+                <article class="work-card-carousel">
+                    <a href="{{ base_url }}{{ obra.slug }}.html" class="work-card-link">
+                        <div class="work-cover">
+                            {% if obra.portada_url %}
+                            <img src="{{ base_url }}{{ obra.portada_url }}"
+                                 alt="Portada de {{ obra.titol }}"
+                                 loading="lazy">
+                            {% else %}
+                            <div class="work-cover-placeholder">
+                                {{ obra.titol[0] }}
+                            </div>
+                            {% endif %}
+                            {% if obra.estat %}
+                            <span class="badge badge-{{ obra.estat }}">{{ obra.estat }}</span>
+                            {% endif %}
+                            <button class="btn-action btn-favorit"
+                                    data-obra-id="{{ obra.slug }}"
+                                    data-obra-titol="{{ obra.titol }}"
+                                    data-obra-autor="{{ obra.autor }}"
+                                    title="Afegir a favorits">
+                                <span class="favorit-icon">🤍</span>
+                            </button>
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">{{ obra.titol }}</h3>
+                            <p class="work-author">{{ obra.autor }}</p>
+                        </div>
+                    </a>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+
+        {% if obres|length > 10 %}
+        <div class="see-all">
+            <a href="{{ base_url }}cataleg.html" class="btn-secondary">Veure totes les obres →</a>
+        </div>
+        {% endif %}
+        {% else %}
+        <div class="empty-state">
+            <p>Pròximament nous textos traduïts.</p>
+            <p><small>El catàleg s'anirà ampliant amb traduccions de textos clàssics.</small></p>
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Projectes de micromecenatge -->
+<section class="crowdfunding-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Projectes de micromecenatge, participa-hi!</h2>
+            <div class="carousel-nav" data-carousel="crowdfunding">
+                <button class="nav-arrow prev" aria-label="Anterior" disabled>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                <button class="nav-arrow next" aria-label="Següent">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <div class="works-carousel" data-carousel="crowdfunding">
+            <div class="carousel-track">
+                <!-- Projecte 1 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-metafisica.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/aristotil-metafisica-portada.png" alt="Portada Metafísica">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Metafísica</h3>
+                            <p class="work-author">Aristòtil</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 20%"></div>
+                                </div>
+                                <span class="progress-text">1€ de 5€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 2 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-odissea.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/homer-odissea-portada.png" alt="Portada L'Odissea">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">L'Odissea</h3>
+                            <p class="work-author">Homer</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="progress-text">30€ de 50€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 3 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-meditacions.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/marc-aureli-meditacions-portada.png" alt="Portada Meditacions">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Meditacions</h3>
+                            <p class="work-author">Marc Aureli</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 85%"></div>
+                                </div>
+                                <span class="progress-text">17€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 4 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-confessions.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/sant-agusti-confessions-portada.png" alt="Portada Confessions">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Confessions</h3>
+                            <p class="work-author">Sant Agustí</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 10%"></div>
+                                </div>
+                                <span class="progress-text">3€ de 30€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 5 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-eneida.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/virgili-eneida-portada.png" alt="Portada Eneida">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Eneida</h3>
+                            <p class="work-author">Virgili</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 45%"></div>
+                                </div>
+                                <span class="progress-text">45€ de 100€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 6 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-fedo.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/plato-fedo-portada.png" alt="Portada Fedó">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Fedó</h3>
+                            <p class="work-author">Plató</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 70%"></div>
+                                </div>
+                                <span class="progress-text">7€ de 10€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 7 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-zaratustra.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/nietzsche-zaratustra-portada.png" alt="Portada Així parlà Zaratustra">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Així parlà Zaratustra</h3>
+                            <p class="work-author">Nietzsche</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 25%"></div>
+                                </div>
+                                <span class="progress-text">10€ de 40€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+
+                <!-- Projecte 8 -->
+                <article class="work-card-carousel crowdfunding-card">
+                    <a href="{{ base_url }}micromecenatge-tao-te-ching.html" class="work-card-link">
+                        <div class="work-cover">
+                            <img src="{{ base_url }}assets/portades/lao-tse-tao-te-ching-portada.png" alt="Portada Tao Te Ching">
+                        </div>
+                        <div class="work-info">
+                            <h3 class="work-title">Tao Te Ching</h3>
+                            <p class="work-author">Lao Tse</p>
+                            <div class="funding-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 95%"></div>
+                                </div>
+                                <span class="progress-text">19€ de 20€</span>
+                            </div>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </div>
+
+        <div class="see-all">
+            <a href="{{ base_url }}micromecenatge.html" class="btn-secondary">Veure tots els projectes →</a>
+        </div>
+    </div>
+</section>
+
+<!-- Com funciona - Micromecenatge -->
+<section class="how-section" id="com-funciona">
+    <div class="container">
+        <h2 class="how-title">Fes realitat una traducció</h2>
+        <p class="how-intro">Cada aportació apropa un clàssic al català</p>
+
+        <div class="how-steps" id="howSteps">
+            <article class="how-step" data-step="1">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">1</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Tria</strong>
+                        <span class="how-step-sub">Escull una obra</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>Explora el catàleg d'obres pendents. Des de filosofia grega fins a poesia persa.</p>
+                        <a href="{{ base_url }}micromecenatge.html">Veure obres →</a>
+                    </div>
+                </div>
+                <div class="how-step-line"></div>
+            </article>
+
+            <article class="how-step" data-step="2">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">2</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Aporta</strong>
+                        <span class="how-step-sub">Des d'1€</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>Contribueix sol o en grup. Cada euro compta per fer possible la traducció.</p>
+                        <a href="{{ base_url }}mecenatge.html">Com funciona →</a>
+                    </div>
+                </div>
+                <div class="how-step-line"></div>
+            </article>
+
+            <article class="how-step" data-step="3">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">3</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Traducció</strong>
+                        <span class="how-step-sub">Publicació oberta</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>L'obra es tradueix amb rigor i es publica gratuïtament. Per sempre, per a tothom.</p>
+                        <a href="{{ base_url }}sobre.html">El procés →</a>
+                    </div>
+                </div>
+                <div class="how-step-line"></div>
+            </article>
+
+            <article class="how-step how-step-final" data-step="4">
+                <button class="how-step-header" type="button" aria-expanded="false">
+                    <span class="how-step-num">4</span>
+                    <div class="how-step-text">
+                        <strong class="how-step-name">Gaudeix</strong>
+                        <span class="how-step-sub">Recompenses</span>
+                    </div>
+                    <span class="how-step-icon">▼</span>
+                </button>
+                <div class="how-step-content">
+                    <div class="how-step-body">
+                        <p>El teu nom als crèdits, accés al Discord i descomptes en futures campanyes.</p>
+                        <a href="{{ base_url }}mecenatge.html#recompenses">Recompenses →</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 0.25rem;">
+            <a href="{{ base_url }}mecenatge.html" class="btn-mecenatge">💝 Mecenatge</a>
+        </div>
+    </div>
+</section>
+
+<!-- Script per inicialitzar favorits -->
+<script>
+document.addEventListener('DOMContentLoaded', async function() {
+    // Esperar que ArionFavorits estigui llest
+    await new Promise(resolve => setTimeout(resolve, 500));
+
+    if (!window.ArionFavorits || !window.ArionAuth?.isLoggedIn()) return;
+
+    // Obtenir tots els favorits
+    const favorits = await window.ArionFavorits.getAll();
+    const favoritIds = favorits.map(f => f.obra_id);
+
+    // Actualitzar botons
+    document.querySelectorAll('.btn-favorit').forEach(btn => {
+        const obraId = btn.dataset.obraId;
+        if (favoritIds.includes(obraId)) {
+            btn.classList.add('active');
+            const icon = btn.querySelector('.favorit-icon');
+            if (icon) icon.textContent = '❤️';
+        }
+    });
+});
+</script>
+{% endblock %}

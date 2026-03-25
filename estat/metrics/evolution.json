@@ -1,0 +1,308 @@
+[
+  {
+    "date": "2026-02-26",
+    "obres_total": 21,
+    "obres_validades": 5,
+    "obres_needs_fix": 0,
+    "traduccions": 20,
+    "done_today": 16,
+    "errors_24h": 0,
+    "scripts_millorats": 18,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "primera_entrada"
+  },
+  {
+    "date": "2026-02-27",
+    "obres_total": 21,
+    "obres_validades": 8,
+    "obres_needs_fix": 0,
+    "traduccions": 21,
+    "done_today": 0,
+    "errors_24h": 33,
+    "scripts_millorats": 24,
+    "uptime_worker": true,
+    "delta": {
+      "obres": 0,
+      "validades": 3,
+      "errors": 33
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-02-28",
+    "obres_total": 29,
+    "obres_validades": 9,
+    "obres_needs_fix": 0,
+    "traduccions": 24,
+    "done_today": 5,
+    "errors_24h": 1,
+    "scripts_millorats": 62,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 8,
+      "validades": 1,
+      "errors": -32
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-01",
+    "obres_total": 30,
+    "obres_validades": 9,
+    "obres_needs_fix": 0,
+    "traduccions": 28,
+    "done_today": 2,
+    "errors_24h": 0,
+    "scripts_millorats": 5,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 1,
+      "validades": 0,
+      "errors": -1
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-02",
+    "obres_total": 30,
+    "obres_validades": 16,
+    "obres_needs_fix": 1,
+    "traduccions": 28,
+    "done_today": 1,
+    "errors_24h": 0,
+    "scripts_millorats": 1,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 7,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-03",
+    "obres_total": 30,
+    "obres_validades": 16,
+    "obres_needs_fix": 1,
+    "traduccions": 28,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 7,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "estable"
+  },
+  {
+    "date": "2026-03-04",
+    "obres_total": 30,
+    "obres_validades": 18,
+    "obres_needs_fix": 1,
+    "traduccions": 28,
+    "done_today": 1,
+    "errors_24h": 0,
+    "scripts_millorats": 1,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 2,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-05",
+    "obres_total": 31,
+    "obres_validades": 18,
+    "obres_needs_fix": 1,
+    "traduccions": 29,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 7,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 1,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-06",
+    "obres_total": 31,
+    "obres_validades": 19,
+    "obres_needs_fix": 1,
+    "traduccions": 29,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 0,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 1,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-07",
+    "obres_total": 36,
+    "obres_validades": 19,
+    "obres_needs_fix": 1,
+    "traduccions": 29,
+    "done_today": 1,
+    "errors_24h": 0,
+    "scripts_millorats": 38,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 5,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-08",
+    "obres_total": 52,
+    "obres_validades": 30,
+    "obres_needs_fix": 0,
+    "traduccions": 40,
+    "done_today": 0,
+    "errors_24h": 2,
+    "scripts_millorats": 34,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 16,
+      "validades": 11,
+      "errors": 2
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-09",
+    "obres_total": 61,
+    "obres_validades": 30,
+    "obres_needs_fix": 0,
+    "traduccions": 42,
+    "done_today": 4,
+    "errors_24h": 0,
+    "scripts_millorats": 17,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 9,
+      "validades": 0,
+      "errors": -2
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-10",
+    "obres_total": 71,
+    "obres_validades": 30,
+    "obres_needs_fix": 0,
+    "traduccions": 45,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 14,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 10,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-11",
+    "obres_total": 75,
+    "obres_validades": 30,
+    "obres_needs_fix": 0,
+    "traduccions": 46,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 4,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 4,
+      "validades": 0,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-13",
+    "obres_total": 78,
+    "obres_validades": 31,
+    "obres_needs_fix": 0,
+    "traduccions": 48,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 0,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 3,
+      "validades": 1,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-14",
+    "obres_total": 90,
+    "obres_validades": 33,
+    "obres_needs_fix": 1,
+    "traduccions": 52,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 35,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 12,
+      "validades": 2,
+      "errors": 0
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-15",
+    "obres_total": 102,
+    "obres_validades": 35,
+    "obres_needs_fix": 1,
+    "traduccions": 59,
+    "done_today": 0,
+    "errors_24h": 1,
+    "scripts_millorats": 16,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 12,
+      "validades": 2,
+      "errors": 1
+    },
+    "tendencia": "millora"
+  },
+  {
+    "date": "2026-03-16",
+    "obres_total": 102,
+    "obres_validades": 40,
+    "obres_needs_fix": 3,
+    "traduccions": 59,
+    "done_today": 0,
+    "errors_24h": 0,
+    "scripts_millorats": 8,
+    "uptime_worker": false,
+    "delta": {
+      "obres": 0,
+      "validades": 5,
+      "errors": -1
+    },
+    "tendencia": "millora"
+  }
+]

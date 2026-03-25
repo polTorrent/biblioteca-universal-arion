@@ -1,0 +1,228 @@
+{% extends "base.html" %}
+
+{% block title %}{{ obra.titol }} - Micromecenatge - Biblioteca Arion{% endblock %}
+{% block description %}Ajuda a finançar la traducció de {{ obra.titol }} de {{ obra.autor }}. {{ obra.recaptat }}€ de {{ obra.cost_traduccio }}€ recaptats.{% endblock %}
+
+{% block head_extra %}
+<link rel="stylesheet" href="{{ base_url }}css/mecenatge.css">
+{% endblock %}
+
+{% block content %}
+<article class="detall-micromecenatge">
+    <!-- Header amb portada i info -->
+    <header class="detall-header">
+        <div class="detall-portada">
+            {% if obra.portada_url %}
+            <img src="{{ base_url }}{{ obra.portada_url }}" alt="Portada de {{ obra.titol }}">
+            {% else %}
+            <div class="fitxa-portada" style="height: 400px; display: flex; align-items: center; justify-content: center; background: var(--color-bg-tertiary); border-radius: var(--radius-lg);">
+                <span class="fitxa-placeholder" style="font-size: 6rem;">{{ obra.titol[0] }}</span>
+            </div>
+            {% endif %}
+        </div>
+
+        <div class="detall-info">
+            <h1>{{ obra.titol }}</h1>
+            {% if obra.titol_original %}
+            <p class="detall-titol-original">{{ obra.titol_original }}</p>
+            {% endif %}
+
+            <div class="detall-meta">
+                <span class="detall-meta-item">
+                    <strong>📖</strong> {{ obra.autor }}
+                </span>
+                <span class="detall-meta-item">
+                    <strong>🌍</strong> {{ obra.idioma|capitalize }}
+                </span>
+                <span class="detall-meta-item">
+                    <strong>📅</strong> {{ obra.any }}
+                </span>
+                <span class="detall-meta-item">
+                    <strong>🏷️</strong> {{ obra.genere|capitalize }}
+                </span>
+            </div>
+
+            <!-- Barra de progrés gran -->
+            <div class="detall-progres">
+                <div class="barra-progres">
+                    <div class="progres-fill" style="width: {{ percentatge }}%"></div>
+                </div>
+                <div class="progres-stats">
+                    <span>
+                        <span class="progres-recaptat">{{ obra.recaptat }}€</span>
+                        <span class="progres-objectiu">de {{ obra.cost_traduccio }}€</span>
+                    </span>
+                    <span class="progres-percentatge">{{ percentatge }}%</span>
+                </div>
+                <p class="mecenes-count" style="margin-top: var(--spacing-sm); margin-bottom: 0;">
+                    👥 {{ mecenatge.aportacions|length if mecenatge else obra.mecenes }} mecenes
+                </p>
+            </div>
+
+            <a href="pagament.html?obra={{ obra.id }}" class="btn-aportar" style="display: block; text-align: center; margin-top: var(--spacing-lg);"
+               onclick="sessionStorage.setItem('mecenatge_obra', JSON.stringify({{ obra|tojson }}))">
+                💝 Aportar a aquest projecte
+            </a>
+        </div>
+    </header>
+
+    <!-- Descripció -->
+    <section style="margin-bottom: var(--spacing-2xl);">
+        <h2 style="border: none;">Sobre l'obra</h2>
+        <p style="font-size: var(--font-size-lg); line-height: 1.8; color: var(--color-text-secondary);">
+            {{ obra.descripcio }}
+        </p>
+    </section>
+
+    <!-- Nivells de recompensa -->
+    <section class="recompenses-section">
+        <h2>Tria la teva aportació</h2>
+        <div class="nivells-grid">
+            <div class="nivell-card" data-import="1">
+                <div class="nivell-preu">1€</div>
+                <div class="nivell-nom">Micromecenes</div>
+                <div class="nivell-descripcio">
+                    El teu nom apareixerà als crèdits de la traducció com a micromecenes.
+                </div>
+            </div>
+
+            <div class="nivell-card destacat" data-import="5">
+                <div class="nivell-preu">5€</div>
+                <div class="nivell-nom">Mecenes</div>
+                <div class="nivell-descripcio">
+                    Crèdits + distintiu especial al Discord de la comunitat Arion.
+                </div>
+            </div>
+
+            <div class="nivell-card" data-import="10">
+                <div class="nivell-preu">10€</div>
+                <div class="nivell-nom">Mecenes Plus</div>
+                <div class="nivell-descripcio">
+                    Tot l'anterior + 1 mes de subscripció Pro amb accés a totes les funcions.
+                </div>
+            </div>
+
+            <div class="nivell-card" data-import="20">
+                <div class="nivell-preu">20€</div>
+                <div class="nivell-nom">Gran Mecenes</div>
+                <div class="nivell-descripcio">
+                    Tot l'anterior + 3 mesos de subscripció Pro + accés anticipat a la traducció.
+                </div>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: var(--spacing-xl);">
+            <a href="pagament.html?obra={{ obra.id }}" class="btn-aportar" style="display: inline-block; padding: var(--spacing-lg) var(--spacing-2xl);"
+               onclick="sessionStorage.setItem('mecenatge_obra', JSON.stringify({{ obra|tojson }}))">
+                💝 Aportar ara
+            </a>
+        </div>
+    </section>
+
+    <!-- Llista de mecenes -->
+    {% if mecenatge and mecenatge.aportacions %}
+    <section class="mecenes-section">
+        <h2>Mecenes d'aquesta obra</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-lg);">
+            Gràcies a totes les persones que estan fent possible aquesta traducció:
+        </p>
+        <ul class="mecenes-llista">
+            {% for aportacio in mecenatge.aportacions|sort(attribute='import', reverse=true) %}
+            <li>
+                <span class="mecenes-badge">
+                    {% if aportacio.import >= 20 %}👑
+                    {% elif aportacio.import >= 10 %}💎
+                    {% elif aportacio.import >= 5 %}⭐
+                    {% else %}🌟{% endif %}
+                </span>
+                <span class="mecenes-nom">{{ aportacio.usuari_nom }}</span>
+                <span class="mecenes-import">({{ aportacio.import }}€)</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </section>
+    {% endif %}
+
+    <!-- Com funciona -->
+    <section style="background: var(--color-bg-secondary); padding: var(--spacing-xl); border-radius: var(--radius-lg); margin-bottom: var(--spacing-2xl);">
+        <h2 style="border: none; margin-top: 0;">Com funciona?</h2>
+        <ol style="list-style: none; counter-reset: step;">
+            <li style="margin-bottom: var(--spacing-md); display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">1</span>
+                <div>
+                    <strong>Tria la teva aportació</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">Des d'1€, cada euro ens apropa a l'objectiu.</p>
+                </div>
+            </li>
+            <li style="margin-bottom: var(--spacing-md); display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">2</span>
+                <div>
+                    <strong>El progrés es mostra en temps real</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">Pots veure com s'apropa l'objectiu gràcies a tots els mecenes.</p>
+                </div>
+            </li>
+            <li style="margin-bottom: var(--spacing-md); display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">3</span>
+                <div>
+                    <strong>Quan s'arriba al 100%, comencem</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">La traducció s'inicia immediatament i rebràs notificacions del progrés.</p>
+                </div>
+            </li>
+            <li style="display: flex; gap: var(--spacing-md); align-items: flex-start;">
+                <span style="background: var(--color-accent); color: white; width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-weight: bold;">4</span>
+                <div>
+                    <strong>Es publica l'obra</strong>
+                    <p style="color: var(--color-text-muted); margin: 0;">Els mecenes reben accés anticipat i apareixen als crèdits.</p>
+                </div>
+            </li>
+        </ol>
+    </section>
+
+    <!-- Compartir -->
+    <section style="text-align: center; padding: var(--spacing-xl) 0;">
+        <h2 style="border: none;">Comparteix aquest projecte</h2>
+        <p style="color: var(--color-text-muted); margin-bottom: var(--spacing-lg);">
+            Com més gent el conegui, més ràpid arribarem a l'objectiu!
+        </p>
+        <div style="display: flex; gap: var(--spacing-md); justify-content: center; flex-wrap: wrap;">
+            <a href="https://twitter.com/intent/tweet?text=Ajuda a traduir {{ obra.titol }} al català!&url={{ site_url }}micromecenatge-{{ obra.id }}.html"
+               target="_blank" rel="noopener" class="btn-tipus btn-tipus-secondary">
+                🐦 Twitter
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site_url }}micromecenatge-{{ obra.id }}.html"
+               target="_blank" rel="noopener" class="btn-tipus btn-tipus-secondary">
+                📘 Facebook
+            </a>
+            <button onclick="navigator.clipboard.writeText(window.location.href); alert('Enllaç copiat!');" class="btn-tipus btn-tipus-secondary">
+                🔗 Copiar enllaç
+            </button>
+        </div>
+    </section>
+
+    <!-- Tornar -->
+    <p style="text-align: center; margin-top: var(--spacing-xl);">
+        <a href="mecenatge.html" style="color: var(--color-text-muted);">← Tornar al mecenatge</a>
+    </p>
+</article>
+{% endblock %}
+
+{% block scripts_extra %}
+<script src="{{ base_url }}js/mecenatge.js"></script>
+<script>
+// Guardar obra al sessionStorage per al pagament
+document.querySelectorAll('.nivell-card').forEach(card => {
+    card.addEventListener('click', function() {
+        document.querySelectorAll('.nivell-card').forEach(c => c.classList.remove('selected'));
+        this.classList.add('selected');
+
+        const obra = {{ obra|tojson }};
+        obra.selectedImport = parseInt(this.dataset.import);
+        sessionStorage.setItem('mecenatge_obra', JSON.stringify(obra));
+
+        if (window.ArionMecenatge) {
+            window.ArionMecenatge.MecenatgeManager.currentImport = parseInt(this.dataset.import);
+        }
+    });
+});
+</script>
+{% endblock %}

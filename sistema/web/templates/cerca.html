@@ -1,0 +1,327 @@
+{% extends "base.html" %}
+
+{% block title %}Cerca - Biblioteca Arion{% endblock %}
+{% block description %}Cerca obres, autors i categories a la Biblioteca Arion{% endblock %}
+
+{% block head_extra %}
+<style>
+.cerca-hero {
+    padding: var(--spacing-3xl) 0 var(--spacing-xl);
+    text-align: center;
+    background: linear-gradient(180deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+}
+.cerca-hero h1 {
+    font-family: var(--font-titles);
+    font-size: var(--font-size-3xl);
+    color: var(--color-text-primary);
+    margin: 0 0 var(--spacing-lg);
+}
+.cerca-input-wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+.cerca-input-wrapper input {
+    width: 100%;
+    padding: var(--spacing-md) var(--spacing-xl);
+    padding-left: 48px;
+    border: 2px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    font-family: var(--font-ui);
+    font-size: var(--font-size-lg);
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
+    transition: border-color var(--transition-fast);
+    box-sizing: border-box;
+}
+.cerca-input-wrapper input:focus {
+    outline: none;
+    border-color: var(--color-accent);
+}
+.cerca-input-wrapper .cerca-icon {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+.cerca-filters {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+    margin-top: var(--spacing-lg);
+}
+.cerca-filter-btn {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    padding: 6px 16px;
+    border: 1px solid var(--color-border);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+.cerca-filter-btn:hover, .cerca-filter-btn.active {
+    background: var(--color-accent);
+    color: #fff;
+    border-color: var(--color-accent);
+}
+.cerca-resultats {
+    padding: var(--spacing-xl) 0 var(--spacing-3xl);
+}
+.cerca-info {
+    font-family: var(--font-ui);
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+    margin-bottom: var(--spacing-lg);
+}
+.cerca-info strong {
+    color: var(--color-text-primary);
+}
+.cerca-empty {
+    text-align: center;
+    padding: var(--spacing-3xl) 0;
+    color: var(--color-text-muted);
+    font-family: var(--font-ui);
+}
+.cerca-empty .empty-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.5;
+}
+.cerca-empty p {
+    font-size: var(--font-size-lg);
+    margin: 0 0 var(--spacing-sm);
+}
+.cerca-empty .empty-hint {
+    font-size: var(--font-size-sm);
+}
+.cerca-highlight {
+    background: var(--color-highlight-strong);
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+</style>
+{% endblock %}
+
+{% block content %}
+<section class="cerca-hero">
+    <div class="container">
+        <h1>Cerca</h1>
+        <div class="cerca-input-wrapper">
+            <svg class="cerca-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="M21 21l-4.35-4.35"></path>
+            </svg>
+            <input type="search" id="cerca-input" placeholder="Cercar per t\u00edtol, autor, categoria..." autocomplete="off" autofocus>
+        </div>
+        <div class="cerca-filters">
+            <button class="cerca-filter-btn active" data-filter="totes">Totes</button>
+            <button class="cerca-filter-btn" data-filter="filosofia">Filosofia</button>
+            <button class="cerca-filter-btn" data-filter="narrativa">Narrativa</button>
+            <button class="cerca-filter-btn" data-filter="oriental">Oriental</button>
+            <button class="cerca-filter-btn" data-filter="poesia">Poesia</button>
+        </div>
+    </div>
+</section>
+
+<section class="cerca-resultats">
+    <div class="container">
+        <div id="cerca-info" class="cerca-info"></div>
+        <div id="cerca-results" class="works-grid"></div>
+    </div>
+</section>
+
+<script>
+(function() {
+    var searchIndex = [];
+    var currentFilter = 'totes';
+    var input = document.getElementById('cerca-input');
+    var resultsContainer = document.getElementById('cerca-results');
+    var infoContainer = document.getElementById('cerca-info');
+    var filterBtns = document.querySelectorAll('.cerca-filter-btn');
+
+    // Carregar \u00edndex de cerca
+    fetch('data/search-index.json')
+        .then(function(r) { return r.json(); })
+        .then(function(data) {
+            searchIndex = data;
+            // Llegir query param inicial
+            var params = new URLSearchParams(window.location.search);
+            var q = params.get('q');
+            if (q) {
+                input.value = q;
+                doSearch(q);
+            } else {
+                showAll();
+            }
+        })
+        .catch(function() {
+            infoContainer.textContent = 'Error carregant l\'\u00edndex de cerca.';
+        });
+
+    // Events
+    var debounceTimer;
+    input.addEventListener('input', function() {
+        clearTimeout(debounceTimer);
+        var query = input.value;
+        debounceTimer = setTimeout(function() {
+            doSearch(query);
+            updateURL(query);
+        }, 200);
+    });
+
+    filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+            filterBtns.forEach(function(b) { b.classList.remove('active'); });
+            this.classList.add('active');
+            currentFilter = this.dataset.filter;
+            doSearch(input.value);
+        });
+    });
+
+    function updateURL(query) {
+        var url = new URL(window.location);
+        if (query) {
+            url.searchParams.set('q', query);
+        } else {
+            url.searchParams.delete('q');
+        }
+        history.replaceState(null, '', url);
+    }
+
+    function normalize(text) {
+        return (text || '').toLowerCase()
+            .normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function doSearch(query) {
+        var q = normalize(query.trim());
+
+        if (!q) {
+            showAll();
+            return;
+        }
+
+        var terms = q.split(/\s+/).filter(function(t) { return t.length > 0; });
+        var results = [];
+
+        searchIndex.forEach(function(obra) {
+            // Filtrar per categoria
+            if (currentFilter !== 'totes' && obra.categoria !== currentFilter) return;
+
+            // Calcular puntuaci\u00f3
+            var score = 0;
+            var titolN = normalize(obra.titol);
+            var autorN = normalize(obra.autor);
+            var catN = normalize(obra.categoria);
+            var descN = normalize(obra.descripcio);
+            var llenguaN = normalize(obra.llengua);
+            var searchable = titolN + ' ' + autorN + ' ' + catN + ' ' + descN + ' ' + llenguaN;
+
+            var allMatch = true;
+            terms.forEach(function(term) {
+                if (searchable.indexOf(term) === -1) {
+                    allMatch = false;
+                    return;
+                }
+                // Puntuar per camp
+                if (titolN.indexOf(term) !== -1) score += 10;
+                if (autorN.indexOf(term) !== -1) score += 8;
+                if (catN.indexOf(term) !== -1) score += 5;
+                if (llenguaN.indexOf(term) !== -1) score += 3;
+                if (descN.indexOf(term) !== -1) score += 1;
+            });
+
+            if (allMatch && score > 0) {
+                results.push({ obra: obra, score: score });
+            }
+        });
+
+        // Ordenar per puntuaci\u00f3
+        results.sort(function(a, b) { return b.score - a.score; });
+
+        renderResults(results.map(function(r) { return r.obra; }), query.trim());
+    }
+
+    function showAll() {
+        var filtered = searchIndex;
+        if (currentFilter !== 'totes') {
+            filtered = searchIndex.filter(function(o) {
+                return o.categoria === currentFilter;
+            });
+        }
+        renderResults(filtered, '');
+    }
+
+    function escapeHtml(text) {
+        var div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+    }
+
+    function highlightText(text, query) {
+        if (!query || !text) return escapeHtml(text);
+        var escaped = escapeHtml(text);
+        var terms = query.split(/\s+/).filter(function(t) { return t.length > 0; });
+        terms.forEach(function(term) {
+            var regex = new RegExp('(' + term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            escaped = escaped.replace(regex, '<span class="cerca-highlight">$1</span>');
+        });
+        return escaped;
+    }
+
+    function renderResults(obres, query) {
+        if (query) {
+            infoContainer.innerHTML = '<strong>' + obres.length + '</strong> ' +
+                (obres.length === 1 ? 'resultat' : 'resultats') +
+                ' per \u00ab' + escapeHtml(query) + '\u00bb';
+        } else {
+            infoContainer.innerHTML = '<strong>' + obres.length + '</strong> ' +
+                (obres.length === 1 ? 'obra' : 'obres');
+        }
+
+        if (obres.length === 0) {
+            resultsContainer.innerHTML =
+                '<div class="cerca-empty">' +
+                    '<div class="empty-icon">\uD83D\uDD0D</div>' +
+                    '<p>Cap resultat trobat</p>' +
+                    '<p class="empty-hint">Prova amb altres termes o categories</p>' +
+                '</div>';
+            return;
+        }
+
+        var html = '';
+        obres.forEach(function(obra) {
+            var portadaHtml;
+            if (obra.portada) {
+                portadaHtml = '<img src="' + escapeHtml(obra.portada) + '" alt="Portada de ' + escapeHtml(obra.titol) + '" loading="lazy">';
+            } else {
+                portadaHtml = '<div class="work-cover-placeholder" style="width:100px;height:140px;display:flex;align-items:center;justify-content:center;background:var(--color-bg-tertiary);border-radius:var(--radius-sm);font-family:var(--font-titles);font-size:2rem;color:var(--color-accent);">' +
+                    escapeHtml(obra.titol.charAt(0)) + '</div>';
+            }
+
+            html += '<article class="work-card">' +
+                '<div class="work-card-cover">' +
+                    '<a href="' + escapeHtml(obra.url) + '">' + portadaHtml + '</a>' +
+                '</div>' +
+                '<div class="work-card-content">' +
+                    '<h3 class="work-card-title"><a href="' + escapeHtml(obra.url) + '">' + highlightText(obra.titol, query) + '</a></h3>' +
+                    '<p class="work-card-author">' + highlightText(obra.autor, query) + '</p>' +
+                    (obra.descripcio ? '<p class="work-card-description">' + highlightText(obra.descripcio, query) + '</p>' : '') +
+                    '<div class="work-card-meta">' +
+                        '<span class="meta-lang">' + escapeHtml(obra.llengua) + '</span>' +
+                        (obra.any_original ? '<span class="meta-year">' + escapeHtml(obra.any_original) + '</span>' : '') +
+                        '<span class="badge badge-' + escapeHtml(obra.estat) + '">' + escapeHtml(obra.estat) + '</span>' +
+                    '</div>' +
+                '</div>' +
+            '</article>';
+        });
+        resultsContainer.innerHTML = html;
+    }
+})();
+</script>
+{% endblock %}
