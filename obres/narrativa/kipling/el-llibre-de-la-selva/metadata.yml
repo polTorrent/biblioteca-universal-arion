@@ -18,18 +18,18 @@ obra:
   origen: proposta comunitat
   font_original: https://www.gutenberg.org/ebooks/236
   estadistiques:
-    paraules_traduccio: 10105
+    paraules_traduccio: 23659
 seccions: 3
 contingut:
 - Els germans de Mowgli (Mowgli's Brothers)
-- La caça de Kaa (Kaa's Hunting)
+- La cacera de Kaa (Kaa's Hunting)
 - Tigre! Tigre! (Tiger! Tiger!)
 estadistiques:
-  paraules_original: 0
-  paraules_traduccio: 0
+  paraules_original: 51000
+  paraules_traduccio: 23659
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 5
 revisio:
   estat: revisat
-  qualitat: 6.75
-  data_revisio: '2026-03-24'
+  qualitat: 7.5
+  data_revisio: '2026-03-25'
