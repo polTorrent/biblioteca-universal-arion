@@ -26,7 +26,7 @@ té un cor implacable i no suportarà
 patir aquesta injúria. La conec prou bé
 i temo que es clavi un punyal esmolat al pit,
 entrant en silenci a l'alcova on jeu el llit nupcial,
-o que mati el tirànic i el que s'ha casat amb ell
+o que mati el tirà i el que s'ha casat amb ell
 i després pateixi una desgràcia encara més gran.
 És temible: qui li faci la guerra
 no en sortirà fàcilment victoriós.
@@ -175,7 +175,7 @@ el goig de viure, desitjo morir, amigues.
 Perquè aquell que per a mi ho significava tot,
 el més dolent dels homes ha resultat ser: el meu marit.
 De tots els éssers que tenen vida i judici,
-les dones som la raça més desgraciadada:
+les dones som la raça més desgraciada:
 que primer hem de comprar un marit
 amb molts diners, i prendre'ns un amo del cos
 
@@ -274,7 +274,7 @@ quedar-te entre nosaltres essent-me hostil.
 **CREONTE: ** Doncs per què em forces i no m'alliberes?
 **MEDEA: ** Deixa'm quedar aquest sol dia i acabar de pensar com fugirem, i proveir els meus fills, ja que el pare no es molesta a fer res pels nens. Tingues pietat d'ells: tu també ets pare. És natural que els tinguis compassió. Per mi no em preocupo, si hem de fugir; però ploro per ells, que han caigut en la desgràcia.
 **CREONTE: ** El meu caràcter no és gens tirànic. Per respecte he perdut moltes coses, i ara veig que m'erro, dona, però obtindràs això. Et poso en guarda: si demà el sol et veu a tu i els teus fills dins els límits d'aquesta terra, moriràs. És paraula certa. Ara, si cal quedar-se, queda't un dia; no faràs res terrible del que tinc por.
-**COR: ** Desgraciada dona! Ai, ai, desdichada pels teus dolors! On et giraràs? Quina hospitalitat trobaràs? Quina casa o terra descobriràs que et salvi dels mals? Com un déu t'ha portat, Medea, a un oceà de mals sense escapatòria!
+**COR: ** Desgraciada dona! Ai, ai, dissortada pels teus dolors! On et giraràs? Quina hospitalitat trobaràs? Quina casa o terra descobriràs que et salvi dels mals? Com un déu t'ha portat, Medea, a un oceà de mals sense escapatòria!
 **MEDEA: ** Tot ha anat malament per totes bandes. Qui dirà el contrari?
 
 Però no serà pas així, no ho penseu encara.
@@ -341,7 +341,7 @@ a la nostra ment la lira divina del cant,
 ja que hauríem pogut respondre amb himnes
 al llinatge masculí. El llarg temps té
 moltes coses que dir del nostre destí i el dels homes.
-Peru tu vas navegar des de la llar paterna
+Però tu vas navegar des de la llar paterna
 amb el cor boig d'amor, travessant
 les roques bessones del mar; 
 i vius ara en terra estrangera, 
@@ -362,7 +362,7 @@ acceptant sense protestar les decisions dels més poderosos,
 seràs expulsada d'aquesta terra per paraules vanes.
 I a mi no em fa res: que no paris mai
 de dir que Jàson és l'home més dolent.
-Peru pel que has dit contra els governants, 
+Però pel que has dit contra els governants, 
 considera que ja és un guany que només et castiguin amb l'exili.
 Jo sempre calmava la còlera dels reis
 quan es deixaven endur per la ira i volia que tu et quedéssis.
@@ -425,10 +425,7 @@ Jasó: Llançant malediccions sacrílègues contra els reis.
 Medea: I també sóc una maledicció per a la teva casa.
 Jasó: No discutiré més d'això amb tu. Però si vols rebre algun ajut dels meus béns per als nens o per al teu exili,
 
-'`'json
-'`'
-
-que jutji amb perspicàcia els lits de les dones.
+que jutgi amb perspicàcia els lits de les dones.
 Oh pàtria, oh casa meva, que mai
 em quedi sense ciutat,
 vivint una vida sense sortida,
@@ -488,11 +485,11 @@ MEDEA: Doncs que tinguis bona sort i aconsegueixis tot el que desitges.
 EGEU: Però per què els teus ulls i la teva pell s'han tornat pàl·lids?
 MEDEA: Egeu, el meu marit és el pitjor de tots.
 EGEU: Què dius? Explica'm clarament les teves penes.
-MEDEA: Jàson m'agreu sense haver-li fet cap mal.
+MEDEA: Jàson m'agreuja sense haver-li fet cap mal.
 EGEU: Què ha fet? Explica-m'ho més clarament.
 MEDEA: Ha pres una altra dona com a senyora de casa.
 EGEU: No ha gosat fer aquesta acció tan vergonyosa!
-MEDEA: Ben cert que sí! I nosaltres, que abans érem estimats, ara som menyspressats.
+MEDEA: Ben cert que sí! I nosaltres, que abans érem estimats, ara som menyspreats.
 EGEU: Per amor d'ella o per odi al teu llit?
 MEDEA: Per un gran amor. No ha estat fidel als qui l'estimaven.
 EGEU: Doncs que se'n vagi, si, com dius, és tan dolent.
@@ -535,10 +532,6 @@ pare del meu pare, i per tot el llinatge dels déus.
 EGEU: Què he de fer o no fer? Digues.
 MEDEA: Que mai tu mateix m'expulsaràs de la teva terra,
 
-'`'json
-        "τείσειν δίκην": "rebin el seu càstig"
-'`'
-
 També em sembla que aquestes coses estan bé,
 els casaments reials pels quals ens ha traït.
 Són convenients i saviament decidits.
@@ -565,9 +558,6 @@ ni llar ni refugi per als meus mals.
 Vaig errar quan vaig abandonar
 la casa paterna, persuadida per les paraules d'un grec
 que rebrà el càstig amb l'ajuda dels déus.
-
-'`'json
-'`'
 
 Diuen que les nou Muses Pierines van plantar la rosada Harmonia. I que a les ribes del bell corrent Cefís, Venus va infondre el suau alè de vents temperats després d'aspirar l'aire del país. Sempre, coronant-se els cabells amb perfumades garlandes de roses, envia els Amors com a col·laboradors de la Saviesa, aliats de tota virtut.
 Com, doncs, la ciutat dels rius sagrats, la terra amiga, acollirà la infanticida, la que cometerà sacrilegi entre els altres? Pensa en el cop als teus fills, pensa quin crim prepares! No, pels teus genolls te suplicem de totes les maneres possibles: no matis els teus fills!
@@ -765,17 +755,12 @@ La senyora que ara venerem en lloc teu,
 abans de veure els teus dos fills,
 tenia la mirada fixa amorosament en Jàson.
 
-'`'json
-'`'
-
 amb escuma blanca que s'escorria, i els ulls que giraven, i la sang que ja no romania a la pell; aleshores llançà un gran plany. Immediatament, una de les dones es precipità cap a la casa del pare, l'altra cap al nou espòs, per anunciar la desgràcia de la núvia; i tota la casa ressonava de curses precipitades. Ja aixecava la cama per completar la distància del recorregut quan el veloç corredor hauria tocat la meta, però ella, amb els ulls clucs i en silenci, amb un terrible gemec la infortunada reprengué els sentits. Perquè una doble desgràcia l'atacava: la corona daurada posada al voltant del cap emetia un corrent prodigiós de foc devorador, i els vestits prims, presents dels seus fills, devoraven la tendra carn de la desgraciadíssima. Fuig alçant-se del tron, tot cremant-se, sacsejant la cabellera i el cap ara d'un costat ara de l'altre, volent arrencar-se la corona; però l'or la mantenia fermament lligada, i el foc, quan sacsejava els cabells, brillava el doble més fort. Cau a terra vençuda per la desgràcia, irreconeixible excepte per qui l'havia engendrada: perquè ja no es distingien els ulls ni el bell rostre, sinó que la sang rajava del cap barrejada amb foc, i les carns s'escorrien dels ossos com làgrima de pi.
-
-"αὐτοκτόνον": "fratricida"
 
 Perquè de la teva descendència daurada va brollar, 
 i hi ha temor que sang divina caigui
 sota les mans dels homes.
-Mas tu, oh llum nascuda de Zeus, impedeix-ho, 
+Mes tu, oh llum nascuda de Zeus, impedeix-ho, 
 fes que cessin, expulsa de casa les sanguinàries
 i miserables Erínies dels esperits venjadors!
 En va fluí el treball dels fills, 
