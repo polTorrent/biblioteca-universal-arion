@@ -6,19 +6,19 @@ una portada artística amb l'agent portadista si no en té.
 
 Ús:
     # Generar portades per totes les obres validades sense portada
-    python3 scripts/generar_portades.py
+    python3 sistema/traduccio/generar_portades.py
 
     # Forçar regeneració de totes les portades (obres validades)
-    python3 scripts/generar_portades.py --force
+    python3 sistema/traduccio/generar_portades.py --force
 
     # Generar portada per una obra concreta
-    python3 scripts/generar_portades.py --obra filosofia/seneca/epistola-1
+    python3 sistema/traduccio/generar_portades.py --obra filosofia/seneca/epistola-1
 
     # Dry run (mostrar què es generaria)
-    python3 scripts/generar_portades.py --dry-run
+    python3 sistema/traduccio/generar_portades.py --dry-run
 
     # Llistar obres validades sense portada
-    python3 scripts/generar_portades.py --list
+    python3 sistema/traduccio/generar_portades.py --list
 """
 
 import argparse

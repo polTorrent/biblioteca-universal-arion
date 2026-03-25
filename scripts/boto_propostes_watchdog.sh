@@ -1,0 +1,1 @@
+../sistema/automatitzacio/boto_propostes_watchdog.sh

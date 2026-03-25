@@ -8,7 +8,7 @@ echo ""
 # Verificar que docs/ existeix
 if [ ! -d "docs" ]; then
     echo "❌ Directori docs/ no trobat!"
-    echo "Executa primer: python3 scripts/build.py"
+    echo "Executa primer: python3 sistema/web/build.py"
     exit 1
 fi
 

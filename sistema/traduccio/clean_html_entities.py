@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Clean HTML entities from original.md files.
 
-Usage: python3 scripts/clean_html_entities.py <path>
+Usage: python3 sistema/traduccio/clean_html_entities.py <path>
 """
 import html
 import re

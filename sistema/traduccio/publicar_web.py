@@ -2,9 +2,9 @@
 """Script per publicar la Biblioteca Arion a la web.
 
 Ús:
-    python scripts/publicar_web.py                    # Publicar tot sense portades
-    python scripts/publicar_web.py --portades        # Amb portades (requereix VENICE_API_KEY)
-    python scripts/publicar_web.py --obra epictetus-enchiridion  # Una obra específica
+    python sistema/traduccio/publicar_web.py                    # Publicar tot sense portades
+    python sistema/traduccio/publicar_web.py --portades        # Amb portades (requereix VENICE_API_KEY)
+    python sistema/traduccio/publicar_web.py --obra epictetus-enchiridion  # Una obra específica
 """
 
 import argparse

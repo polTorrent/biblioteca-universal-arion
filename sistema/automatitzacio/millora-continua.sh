@@ -6,9 +6,9 @@
 # completesa i presència web. Crea tasques de tipus "improve" per corregir-los.
 #
 # Ús:
-#   bash scripts/millora-continua.sh              # Selecciona màx 2 obres
-#   bash scripts/millora-continua.sh --dry-run    # Mostra taula sense crear tasques
-#   bash scripts/millora-continua.sh --all        # Selecciona totes amb score > 0
+#   bash sistema/automatitzacio/millora-continua.sh              # Selecciona màx 2 obres
+#   bash sistema/automatitzacio/millora-continua.sh --dry-run    # Mostra taula sense crear tasques
+#   bash sistema/automatitzacio/millora-continua.sh --all        # Selecciona totes amb score > 0
 # =============================================================================
 
 set -uo pipefail
@@ -16,7 +16,7 @@ set -uo pipefail
 # ── Configuració ──────────────────────────────────────────────────────────────
 PROJECT="${PROJECT:-$HOME/biblioteca-universal-arion}"
 TASKS_DIR="${TASKS_DIR:-$HOME/.openclaw/workspace/tasks}"
-TASK_MANAGER="${TASK_MANAGER:-$PROJECT/scripts/task-manager.sh}"
+TASK_MANAGER="${TASK_MANAGER:-$PROJECT/sistema/automatitzacio/task-manager.sh}"
 METRICS_DIR="$PROJECT/metrics"
 REPORT_FILE="$METRICS_DIR/millora-continua-report.md"
 LOG="${LOG:-$HOME/claude-worker.log}"
@@ -305,13 +305,13 @@ if not dry_run:
             elif 'Notes trencades' in p:
                 actions.append(f"Crear entrades ## [N] a notes.md per les referències trencades")
             elif 'portada' in p.lower():
-                actions.append(f"Generar portada: python3 scripts/generar_portades.py {r['relpath']}")
+                actions.append(f"Generar portada: python3 sistema/traduccio/generar_portades.py {r['relpath']}")
             elif 'Puntuació' in p:
-                actions.append(f"Millorar estil/qualitat: python3 scripts/traduir_pipeline.py {r['relpath']}/ --mode millora")
+                actions.append(f"Millorar estil/qualitat: python3 sistema/traduccio/traduir_pipeline.py {r['relpath']}/ --mode millora")
             elif 'EPUB' in p:
                 actions.append(f"Generar EPUB amb EpubGenerator")
             elif 'web' in p.lower():
-                actions.append(f"Regenerar web: python3 scripts/build.py")
+                actions.append(f"Regenerar web: python3 sistema/web/build.py")
             elif 'Glossari' in p:
                 actions.append(f"Ampliar glossari.yml (mínim 5 entrades significatives)")
             elif 'curta' in p:
@@ -325,7 +325,7 @@ if not dry_run:
             f"Problemes detectats: {'; '.join(r['problems'])}. "
             f"Accions: {' | '.join(actions)}. "
             f"Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. "
-            f"python3 scripts/build.py && git add -A && git commit -m \"improve: {r['obra_name']}\" && git push"
+            f"python3 sistema/web/build.py && git add -A && git commit -m \"improve: {r['obra_name']}\" && git push"
         )
         print(f"TASK|{r['obra_name']}|{r['relpath']}|{instruction}")
 

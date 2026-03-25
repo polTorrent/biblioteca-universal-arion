@@ -7,9 +7,9 @@ Utilitza Jinja2 real per a templates
 ═══════════════════════════════════════════════════════════════════
 
 Ús:
-    python scripts/build.py                 # Construir tot
-    python scripts/build.py --clean         # Netejar i reconstruir
-    python scripts/build.py --watch         # Mode observació
+    python sistema/web/build.py                 # Construir tot
+    python sistema/web/build.py --clean         # Netejar i reconstruir
+    python sistema/web/build.py --watch         # Mode observació
 """
 
 import argparse

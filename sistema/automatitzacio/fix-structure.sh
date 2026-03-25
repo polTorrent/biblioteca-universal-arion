@@ -4,7 +4,7 @@
 # =============================================================================
 # Detecta obres mal ubicades a obres/ i les mou a la categoria correcta.
 # Cridat pel heartbeat o manualment.
-# Ús: bash scripts/fix-structure.sh [--dry-run]
+# Ús: bash sistema/automatitzacio/fix-structure.sh [--dry-run]
 # =============================================================================
 
 set -uo pipefail
@@ -182,7 +182,7 @@ if [ $fix_count -gt 0 ]; then
     if ! $DRY_RUN; then
         # Rebuild web
         cd "$PROJECT"
-        python3 scripts/build.py > /dev/null 2>&1
+        python3 sistema/web/build.py > /dev/null 2>&1
         git add -A 2>/dev/null
         git commit -m "fix: auto-correcció estructura obres ($fix_count canvis)" 2>/dev/null
         git push origin main 2>/dev/null

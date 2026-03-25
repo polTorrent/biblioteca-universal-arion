@@ -1,0 +1,1 @@
+../sistema/automatitzacio/worker-watchdog.sh

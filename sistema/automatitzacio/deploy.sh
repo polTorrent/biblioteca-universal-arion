@@ -6,7 +6,7 @@ echo "============================"
 
 # 1. Regenerar web
 echo "📦 Generant web..."
-python3 scripts/build.py --clean
+python3 sistema/web/build.py --clean
 
 # 2. Verificar canvis
 echo ""

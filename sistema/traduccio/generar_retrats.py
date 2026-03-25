@@ -9,19 +9,19 @@ de l'autor (primera obra trobada), i es copia a web/assets/autors/.
 
 Ús:
     # Generar retrats per tots els autors sense retrat
-    python3 scripts/generar_retrats.py
+    python3 sistema/traduccio/generar_retrats.py
 
     # Forçar regeneració de tots els retrats
-    python3 scripts/generar_retrats.py --force
+    python3 sistema/traduccio/generar_retrats.py --force
 
     # Generar retrat per un autor concret
-    python3 scripts/generar_retrats.py --autor seneca
+    python3 sistema/traduccio/generar_retrats.py --autor seneca
 
     # Dry run (mostrar què es generaria)
-    python3 scripts/generar_retrats.py --dry-run
+    python3 sistema/traduccio/generar_retrats.py --dry-run
 
     # Llistar autors sense retrat
-    python3 scripts/generar_retrats.py --list
+    python3 sistema/traduccio/generar_retrats.py --list
 """
 
 import argparse
