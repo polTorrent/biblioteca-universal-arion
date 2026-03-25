@@ -2327,15 +2327,15 @@ Als solitaris. — Si no estem disposats a patir la soledat com a home, difícil
 
 ### 570. Pèrdues
 
-Pèrdues. — Hi ha pèrdues que comuniquen a l'ànima una sublimitat sense la qual no podia viure; i hi ha guanys que l'empetiteixen. — Com de poc sabem el que realment necessitem!
+Pèrdues. — Hi ha pèrdues que comuniquen a l'ànima una sublimitat amb la qual s'absté de lamentar-se i passeja en silenci, com sota alts xiprers negres.
 
 ### 571. Farmàcia de campanya de l'ànima
 
-Farmàcia de campanya de l'ànima. — Quin és el remei més eficaç i més ràpid? — Una feina ben feta. Quin és el segon? — El pensament d'un bon amic.
+Farmàcia de campanya de l'ànima. — Quin és el remei més fort? — La victòria.
 
 ### 572. La vida ens ha de tranquil·litzar
 
-La vida ens ha de tranquil·litzar. — Si com es diu és cert que les coses s'agencen totes soles en el curs del món, i que tot ve a parar a un lloc, — hem de confiar que la vida sap tranquil·litzar-nos i fer-nos oblidar les grans inquietuds. Però si no és cert — aleshores qui és el que ens pot tranquil·litzar? Doncs la vida mateixa, la seva plenitud, la seva bellesa, la seva indiferència vers les nostres petites angoixes!
+La vida ens ha de tranquil·litzar. — Quan hom, com el pensador, viu habitualment en el gran corrent del pensament i del sentiment, i fins i tot els nostres somnis nocturns segueixen aquest corrent: aleshores desitgem de la vida tranquil·litat i silenci, — mentre que d'altres volen precisament descansar de la vida quan es lliuren a la meditació.
 
 ### 573. Mudar la pell
 
@@ -2343,7 +2343,7 @@ Mudar la pell. — La serp que no pot mudar la pell, mor. De la mateixa manera, 
 
 ### 574. No oblidar!
 
-No oblidar! — Com més alt puja l'esperit, més perill corre d'oblidar-se dels seus orígens i de trencar els ponts amb les coses senzilles i humils de les quals va néixer. — No oblideu! — és la paraula que l'esperit s'ha de dir cada matí.
+No oblidar! — Com més alt ens elevem, més petits apareixem als ulls d'aquells que no saben volar.
 
 ### 575. Nosaltres aeronautes de l'esperit!
 
