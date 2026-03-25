@@ -19,10 +19,11 @@ LOG="$HOME/claude-worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
 
 MAX_RETRIES=3                # Intents per tasca abans de marcar com failed
-MAX_CONSECUTIVE_FAILS=5      # Pausa llarga si N tasques seguides fallen
+MAX_CONSECUTIVE_FAILS=3      # Pausa llarga si N tasques seguides fallen (era 5, reduït a 3)
 COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60             # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
+CONSECUTIVE_ERRORS_FILE="/tmp/worker-consecutive-errors.txt"
 TASK_TIMEOUT=1800            # 30 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
@@ -36,11 +37,41 @@ EXEC_PREFIX="IMPORTANT: Executa les accions directament. NO generis plans, llist
 source ~/.nvm/nvm.sh 2>/dev/null
 mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
 
-# Comptadors
-CONSECUTIVE_FAILS=0
+# Comptadors (carregar errors persistents)
+load_consecutive_errors
 TODAY=$(date '+%Y-%m-%d')
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG"; }
+
+# ── Comptador persistent d'errors consecutius ────────────────────────────────
+load_consecutive_errors() {
+    if [ -f "$CONSECUTIVE_ERRORS_FILE" ]; then
+        CONSECUTIVE_FAILS=$(cat "$CONSECUTIVE_ERRORS_FILE" 2>/dev/null || echo 0)
+    else
+        CONSECUTIVE_FAILS=0
+    fi
+}
+
+save_consecutive_errors() {
+    echo "$CONSECUTIVE_FAILS" > "$CONSECUTIVE_ERRORS_FILE"
+}
+
+reset_consecutive_errors() {
+    CONSECUTIVE_FAILS=0
+    echo 0 > "$CONSECUTIVE_ERRORS_FILE"
+}
+
+# ── Notificació Discord via heartbeat ────────────────────────────────────────
+notify_discord_pause() {
+    local errors="$1"
+    local pause_secs="$2"
+    local heartbeat_md="$HOME/.openclaw/workspace/HEARTBEAT.md"
+    if [ -f "$heartbeat_md" ]; then
+        local msg="⚠️ WORKER PAUSA: $errors errors consecutius detectats. Pausa de ${pause_secs}s activada a $(date '+%H:%M:%S')"
+        echo -e "\n## Worker Alert ($(date '+%Y-%m-%d %H:%M:%S'))\n$msg" >> "$heartbeat_md"
+        log "📢 Notificació de pausa escrita a HEARTBEAT.md per Discord"
+    fi
+}
 
 # ── Lockfile: evitar workers duplicats ────────────────────────────────────────
 acquire_lock() {
@@ -301,11 +332,12 @@ log "   NOU v3: Validació post-execució + detecció plans + instruccions refor
 while true; do
     daily_summary
 
-    # ── Safety: massa errors consecutius ──────────────────────────────────
+    # ── Safety: massa errors consecutius (≥3) ─────────────────────────────
     if [ $CONSECUTIVE_FAILS -ge $MAX_CONSECUTIVE_FAILS ]; then
-        log "🛡️ $CONSECUTIVE_FAILS errors consecutius. Pausa d'emergència ${COOLDOWN_EMERGENCY}s."
+        log "🛡️ $CONSECUTIVE_FAILS errors consecutius (llindar=$MAX_CONSECUTIVE_FAILS). Pausa d'emergència ${COOLDOWN_EMERGENCY}s."
+        notify_discord_pause "$CONSECUTIVE_FAILS" "$COOLDOWN_EMERGENCY"
         sleep $COOLDOWN_EMERGENCY
-        CONSECUTIVE_FAILS=0
+        reset_consecutive_errors
         continue
     fi
 
@@ -410,11 +442,12 @@ if tasks:
             log "🔄 Max turns per $TASK_ID (${DURATION}s) — $CHANGES fitxers canviats → completant"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
-            CONSECUTIVE_FAILS=0
+            reset_consecutive_errors
         else
             log "🔄 Max turns per $TASK_ID (${DURATION}s) — SENSE canvis reals → failed"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
             CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
+            save_consecutive_errors
         fi
         sleep $COOLDOWN_OK
         continue
@@ -430,7 +463,7 @@ if tasks:
             log "   Resultat: $(echo "$RESULT" | head -3 | tr '\n' ' ')"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
-            CONSECUTIVE_FAILS=0
+            reset_consecutive_errors
                 sleep $COOLDOWN_OK
         else
             # ── PLA SENSE ACCIÓ: retry amb instrucció reforçada ───────
