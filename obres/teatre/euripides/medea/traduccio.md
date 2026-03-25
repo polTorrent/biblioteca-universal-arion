@@ -54,7 +54,7 @@ PEDAGOG: Els vells llaços s'abandonen pels nous matrimonis, i aquell home ja no
 **Pedagog: ** Però tu —que no és moment que la senyora ho sàpiga— fes silenci i calla.
 **Dida: ** Oh, fills! Escolteu quin pare teniu! Que no mori —que és el meu senyor—, però és dolent amb la seva família.
 **Pedagog: ** I qui dels mortals no ho és? Ara t'adones que cadascú s'estima més a si mateix que al veí? Els uns per justícia, els altres per guany; si aquest pare no els vol per culpa del llit nupcial.
-**Dida: ** Entreu —que tot anirà bé— a casa, fills. I tu mantén-los el més allunyats possible i no els acostis a la mare que està afligida. Ja l'he vista mirar-los amb mirada amenaçadora, com si els volgués fer alguna cosa. I no s'apaivagará la seva còlera, ho sé de cert, fins que no descarregui contra algú... Contra enemics, això sí, no contra éssers estimats.
+**Dida: ** Entreu —que tot anirà bé— a casa, fills. I tu mantén-los el més allunyats possible i no els acostis a la mare que està afligida. Ja l'he vista mirar-los amb mirada amenaçadora, com si els volgués fer alguna cosa. I no s'apaivagarà la seva còlera, ho sé de cert, fins que no descarregui contra algú... Contra enemics, això sí, no contra éssers estimats.
 **Medea** * (des de dins)*
 Ai!
 Ai de mi, plena de penes,
@@ -78,7 +78,7 @@ Ell gaudeix del llit dels tirans,
 i ella, als seus aposentos, consumeix la vida
 la senyora, sense que cap amic
 li escalfi el cor amb paraules de consol.
-MEDEA: Ai las! Oh Zeus i Terra i Llum!
+MEDEA: Ai! Oh Zeus i Terra i Llum!
 Oh que una flama celestial travessi
 el meu cap! Quin profit tinc encara
 a viure? Ai, ai! Que amb la mort acabi
@@ -144,7 +144,7 @@ que els mortals poguessin curar-se amb cants;
 però on hi ha àpats abundants, 
 per què alcen la veu en va?
 El plaer que porta el moment
-ja dona per si sol als mortals
+ja dóna per si sol als mortals
 la satisfacció del banquet.
 
 **COR**
@@ -229,9 +229,9 @@ fer que els seus fills siguin educats massa savis;
 a més de la resta d'ociosos que són, 
 desperten l'enveja hostil dels ciutadans.
 Perquè portant nous coneixements savis als ignorants, 
-pararàs inútil i no pas savi per natura; 
+semblaràs inútil i no pas savi per natura; 
 i dels que creuen saber alguna cosa refinada, 
-si et consideren superior en la ciutat, els resultaràs molest.
+si et consideren superior en la ciutat, els faràs nosa.
 Jo mateixa comparteixo aquesta sort: 
 perquè, sent sàvia, per a uns sóc envejable, 
 per a altres callada, per a altres diferent, 
@@ -273,7 +273,7 @@ quedar-te entre nosaltres essent-me hostil.
 **MEDEA: ** Fugirem. No t'he demanat això.
 **CREONTE: ** Doncs per què em forces i no m'alliberes?
 **MEDEA: ** Deixa'm quedar aquest sol dia i acabar de pensar com fugirem, i proveir els meus fills, ja que el pare no es molesta a fer res pels nens. Tingues pietat d'ells: tu també ets pare. És natural que els tinguis compassió. Per mi no em preocupo, si hem de fugir; però ploro per ells, que han caigut en la desgràcia.
-**CREONTE: ** El meu caràcter no és gens tirànic. Per respecte he perdut moltes coses, i ara veig que m'erro, dona, però obtindràs això. Et poso en guarda: si demà el sol et veu a tu i els teus fills dins els límits d'aquesta terra, moriràs. És paraula certa. Ara, si cal quedar-se, queda't un dia; no faràs res terrible del que tinc por.
+**CREONTE: ** El meu caràcter no és gens tirànic. Per respecte he perdut moltes coses, i ara veig que m'erro, dona, però obtindràs això. T'aviso: si demà el sol et veu a tu i els teus fills dins els límits d'aquesta terra, moriràs. És paraula certa. Ara, si cal quedar-se, queda't un dia; no faràs res terrible del que tinc por.
 **COR: ** Desgraciada dona! Ai, ai, dissortada pels teus dolors! On et giraràs? Quina hospitalitat trobaràs? Quina casa o terra descobriràs que et salvi dels mals? Com un déu t'ha portat, Medea, a un oceà de mals sense escapatòria!
 **MEDEA: ** Tot ha anat malament per totes bandes. Qui dirà el contrari?
 
@@ -410,7 +410,7 @@ Quan vaig arribar aquí des d'Iolcos, arrossegava moltes desgràcies sense remei
 
 Podria criar els fills dignament per a casa meva. Engendrant germans per als teus fills, els uniria i, entrellaçant el llinatge, viuríem feliços. Perquè a tu, de què et serveixen els fills? I a mi em convé que els fills vius beneficiïn els que han de venir. Potser ho he decidit malament? Ni tu ho diries, si el matrimoni no et turmentés. Però heu arribat a tal punt que les dones, quan el matrimoni va bé, creieu que ho teniu tot; però si hi ha algun infortuni al llit, convertiu les coses més bones i belles en les més hostils. Caldria que els mortals engendressin fills d'alguna altra manera, i que no existís el gènere femení; així no hi hauria cap mal per als homes.
 Cor: Jàson, has embellert bé aquestes paraules; però, encara que ho digui contra la meva opinió, em sembla que, traïnt la teva esposa, no actues justament.
-Medea: Jo difereixo molt de molts mortals. Per a mi, qui és injust, però dotat d'elocüència, pateix el màxim càstig; perquè, presumint d'embellir amb la llengua les injustícies, gosa ser completament malvat; però no és gens savi. I tu, ara no et facis l'elegant amb mi ni l'hàbil orador. Una sola paraula t'abatarà: hauries d'haver-me persuadit, si no fossis dolent,
+Medea: Jo difereixo molt de molts mortals. Per a mi, qui és injust, però dotat d'eloqüència, pateix el màxim càstig; perquè, presumint d'embellir amb la llengua les injustícies, gosa ser completament malvat; però no és gens savi. I tu, ara no et facis l'elegant amb mi ni l'hàbil orador. Una sola paraula t'abatarà: hauries d'haver-me persuadit, si no fossis dolent,
 
 fer aquest casament, però no amagant-ho dels teus amics.
 Jasó: Serviríes perfectament aquesta causa, em sembla, si et prohibís casar-te, tu que ni ara mateix t'atreveixes a deixar anar la gran còlera del teu cor.
@@ -574,13 +574,13 @@ Jàson: Aprovo, dona, això, i no retrego l'altre. És natural que les dones s'a
 Tu, per què mulles les pupil·les amb llàgrimes fresques, girant cap enrere la galta blanca? I no reps amb alegria aquesta paraula meva?
 Medea: Res. Estava pensant en aquests nens.
 
-**IÀSÓ.** Tranquil·litza't ara; jo faré que tot això vagi bé.
+**JASÓ.** Tranquil·litza't ara; jo faré que tot això vagi bé.
 **MEDEA.** Ho faré; confio en les teves paraules. Però una dona és fràgil i ploranera per natura.
-**IÀSÓ.** Per què aleshores gemes tant per aquests fills?
+**JASÓ.** Per què aleshores gemes tant per aquests fills?
 **MEDEA.** Jo els vaig parir. Quan demanava als déus que els fills sobrevisquessin, em va entrar compassió pel que podria passar-los. Però pel que fa al motiu pel qual has vingut a parlar amb mi, unes coses ja s'han dit, d'altres les recordaré. Els tirans del país creuen que és millor expulsar-me. I per a mi també és el millor, ho reconec. Així no molesto ni tu ni els senyors d'aquesta terra, perquè semblo hostil a la casa. Nosaltres marxem d'aquest país a l'exili, però perquè els fills puguin créixer sota la teva cura, demana a Creont que no hagin de fugir d'aquesta terra.
-**IÀSÓ.** No sé si els podria convèncer, però cal intentar-ho.
+**JASÓ.** No sé si els podria convèncer, però cal intentar-ho.
 **MEDEA.** Tu, però, ordena a la teva esposa que demani al seu pare que els fills no fugin d'aquesta terra.
-**IÀSÓ.** Certament, i crec que la convenceré.
+**JASÓ.** Certament, i crec que la convenceré.
 **MEDEA.** Si és com les altres dones, es deixarà convèncer. I jo també t'ajudaré en aquesta tasca: li enviaré regals magnífics —ho sé jo—, un peplo fi i una corona d'or batut, que els fills portaran. Però cal fer-ho amb tota rapidesa.
 
 que alguna de les serventes porti aquí els ornaments.
@@ -801,9 +801,9 @@ Jasó: Ai de mi, què dius? Com m'has destruït, dona!
 **Cor: ** Obre les portes i veuràs la matança dels teus fills.
 **Jasó: ** Servidors, obriu les tanques al més aviat possible, lleveu els pestells, que vull veure el doble mal: els morts i venjar-me d'ella.
 **Medea: ** * (apareixent dalt en el carro del Sol)* Per què forces aquestes portes, cercant els cadàvers i a mi, que els he matats? Deixa-ho estar. Si necessites alguna cosa de mi, digues el que vulguis, però mai no em tocaràs amb la mà. Tal vehicle el pare Hèlios, meu avi, ens dona, bastió contra la mà enemiga.
-**Jasó: ** Oh odi! Oh dona la més odiosa de totes davant dels déus, de mi i de tota la raça humana! Tu que vas gosar clavar l'espasa als teus propis fills, que tu mateixa vas parir, i m'has destruït sense descendència! I després d'haver fet això gosses mirar el sol i la terra, havent comès l'acte més impiu! Que perisquis! Ara m'adono del que aleshores no veia: que quan et vaig portar de casa teva, de terra bàrbara a casa grega, eres un gran mal, traidora del pare i de la terra que et va nodrir. I els déus van llançar contra mi el teu dimoni venjador: perquè tu, després de matar el teu germà prop de la llar paterna, vas pujar a la nau Argo de belles proes.
+**Jasó: ** Oh odi! Oh dona la més odiosa de totes davant dels déus, de mi i de tota la raça humana! Tu que vas gosar clavar l'espasa als teus propis fills, que tu mateixa vas parir, i m'has destruït sense descendència! I després d'haver fet això goses mirar el sol i la terra, havent comès l'acte més impiu! Que peris! Ara m'adono del que aleshores no veia: que quan et vaig portar de casa teva, de terra bàrbara a casa grega, eres un gran mal, traidora del pare i de la terra que et va nodrir. I els déus van llançar contra mi el teu dimoni venjador: perquè tu, després de matar el teu germà prop de la llar paterna, vas pujar a la nau Argo de belles proes.
 
-**Jàson: ** He començat amb això. Tu, que et vas casar amb aquest home i em vas donar fills, els has destruït per causa del llit i del llit. Cap dona grega hauria suportat això, amb qui abans pensava casar-me, parentesc hostil i funest per a mi. Lleona ets, no dona, amb una natura més ferotge que l'Escil·la tirènia. Però no et podria ferir amb milers de retrets: tens tal descaro! Vés-te'n, infame i assassina dels fills! I jo he de lamentar el meu destí, que no gaudirà de nous llits nupcials ni podré saludar vius els fills que vaig engendrar i criar, sinó que els he perdut.
+**Jàson: ** He començat amb això. Tu, que et vas casar amb aquest home i em vas donar fills, els has destruït per causa del llit i del llit. Cap dona grega hauria suportat això, amb qui abans pensava casar-me, parentesc hostil i funest per a mi. Lleona ets, no dona, amb una natura més ferotge que l'Escil·la tirènia. Però no et podria ferir amb milers de retrets: tens tanta desvergonya! Vés-te'n, infame i assassina dels fills! I jo he de lamentar el meu destí, que no gaudirà de nous llits nupcials ni podré saludar vius els fills que vaig engendrar i criar, sinó que els he perdut.
 **Medea: ** M'estendria molt contestant aquestes paraules, si Zeus pare no sabés què has sofert de mi i què has fet tu. Però tu no anaves a viure plaentment després d'haver deshonrat el meu llit, rient-te de mi, ni tampoc la princesa, ni Creont, que t'ha unit en matrimoni, havia de trigar a expulsar-me d'aquesta terra. Per això, anomena'm lleona si vols, i Escil·la que va habitar la terra tirènia: he pres del teu cor la venjança que calia.
 **Jàson: ** Tu també pateixes i ets còmplice d'aquests mals.
 **Medea: ** Ho sé de cert. Però s'alleuja el dolor si tu no rius.
