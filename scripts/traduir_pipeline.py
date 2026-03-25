@@ -144,6 +144,12 @@ def main():
     fer_chunking = len(text_narratiu) > 3000
     max_chars = 2500 if genere == "filosofia" else 3500
 
+    # Forçar chunking per obres llargues (>20.000 paraules ≈ 120.000 chars)
+    paraules = len(text_narratiu.split())
+    if paraules > 20000 and not fer_chunking:
+        print(f"[CHUNKING FORÇAT] Obra de {paraules} paraules > llindar de 20.000")
+        fer_chunking = True
+
     # Ajustar límit de text segons mida real
     max_chars_text = max(150000, len(text_narratiu) + 10000)
 

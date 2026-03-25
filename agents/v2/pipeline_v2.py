@@ -114,6 +114,10 @@ class ConfiguracioPipelineV2(BaseModel):
     # Chunking
     fer_chunking: bool = Field(default=True, description="Dividir text en fragments")
     max_chars_chunk: int = Field(default=800, description="Mida màxima de cada chunk (era 3000, ara 800)")
+    max_paraules_sense_chunk: int = Field(
+        default=20000,
+        description="Si el text supera aquest nombre de paraules (~120k chars), forçar chunking independentment de fer_chunking"
+    )
     chunk_strategy: str = Field(default="paragraph", description="Estratègia de chunking")
 
     # Límits de truncat per evitar excés de tokens
@@ -661,6 +665,14 @@ class PipelineV2:
         # Netejar text si hi ha warnings de caràcters problemàtics
         if validacio.has_warnings():
             text = netejar_text(text)
+
+        # ═══════════════════════════════════════════════════════════════
+        # CHUNKING FORÇAT PER OBRES LLARGUES
+        # ═══════════════════════════════════════════════════════════════
+        paraules_text = len(text.split())
+        if paraules_text > self.config.max_paraules_sense_chunk and not self.config.fer_chunking:
+            print(f"[CHUNKING FORÇAT] Obra de {paraules_text} paraules > llindar de {self.config.max_paraules_sense_chunk}")
+            self.config.fer_chunking = True
 
         # ═══════════════════════════════════════════════════════════════
         # INICIALITZAR ESTAT PERSISTENT (CORE)
