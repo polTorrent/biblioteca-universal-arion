@@ -117,7 +117,7 @@ daily_summary() {
         local fail_count=$(find "$TASKS_DIR/failed/" -name "*.json" -newermt "$TODAY" -type f 2>/dev/null | wc -l)
         log "📊 Resum dia $TODAY: $done_count completades, $fail_count fallides"
         TODAY="$new_day"
-                CONSECUTIVE_FAILS=0
+        reset_consecutive_errors
         rotate_done
     fi
 }
@@ -492,6 +492,7 @@ print(d['retries'])
                 log "   ❌ $TASK_ID FALLIT definitiu: $MAX_RETRIES intents, tots plans sense acció"
                 mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
                 CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
+                save_consecutive_errors
                 sleep $COOLDOWN_FAIL
             fi
             fi
@@ -510,6 +511,7 @@ print(d['retries'])
             [ -n "$RESULT" ] && log "   Error: $(echo "$RESULT" | tail -3 | tr '\n' ' ')"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
             CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
+            save_consecutive_errors
             sleep $COOLDOWN_FAIL
         fi
 
