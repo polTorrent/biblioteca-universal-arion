@@ -219,22 +219,8 @@ PERSEUS_URLS: dict[str, dict[str, str]] = {
         "caracters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
         "els caracters": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0232",
     },
-    "aristotle": {
-        "de anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "on the soul": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-    },
-    "aristotil": {
-        "peri psykhes": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "sobre l'anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "sobre l'ànima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "de anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-    },
-    "aristòtil": {
-        "peri psykhes": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "sobre l'anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "sobre l'ànima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-        "de anima": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046",
-    },
+    # NOTE: Perseus 1999.01.0046 era Ath. Pol., no De Anima. URLs eliminades.
+    # De Anima s'obté via Wikisource grec (Περὶ Ψυχῆς).
 }
 
 WIKISOURCE_PAGES: dict[str, dict[str, tuple[str, str]]] = {
