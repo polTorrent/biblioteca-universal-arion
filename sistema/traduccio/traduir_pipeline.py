@@ -15,7 +15,13 @@ import re
 # CLAUDECODE=1 per usar subscripció (cost €0)
 os.environ["CLAUDECODE"] = "1"
 
-sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# Afegir sistema/ i arrel del projecte al path
+_traduccio_dir = os.path.dirname(os.path.abspath(__file__))
+_sistema_dir = os.path.dirname(_traduccio_dir)
+_project_root = os.path.dirname(_sistema_dir)
+sys.path.insert(0, _sistema_dir)
+sys.path.insert(0, _project_root)
+sys.path.insert(0, _traduccio_dir)
 
 from pathlib import Path
 import yaml
