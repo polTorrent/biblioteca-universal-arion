@@ -53,4 +53,4 @@ Wer daher einen Schluß auf diesen Grundsatz gründet, wird verbunden seyn, gena
 
 ---
 
-*[Text fortgesetzt — §4-§52 folgen]*
+*[Nota editorial: El text alemany complet (§4-§52) no està disponible en domini públic en format digital accessible. La traducció al català es va realitzar a partir de la versió anglesa de Hillebrand (1907), disponible a Project Gutenberg (ID 50966). L'original alemany complet es pot consultar en edicions impreses: Meiner Verlag, Philosophische Bibliothek.]*
