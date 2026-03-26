@@ -46,21 +46,20 @@ seccions:
   - Kant
 estadistiques:
   paraules_original: 186612
-  paraules_traduccio: 121212
+  paraules_traduccio: 205657
   notes: 20
   termes_glossari: 51
   pagines_original: 478
-  seccions_traduides: 8
+  seccions_traduides: 20
   seccions_total: 20
-  cobertura_percentatge: 44
+  cobertura_percentatge: 100
 revisio:
-  estat: en_progres
+  estat: revisat
   qualitat: 7.5
-  versio: "0.5"
-  data_revisio: '2026-03-25'
+  versio: "1.0"
+  data_revisio: '2026-03-26'
   nota: >-
-    Traducció parcial (121k paraules, 44%). Cobreix Part I seccions 1-5, 7
-    (Axiologia apriorística i ètica), 9 (Teleologia), 11 (El gir interior de Descartes),
-    6 (Explicació cientificonatural) + Part II Apèndixs: Spinoza, Berkeley, Locke.
-    Pendent: seccions 8, 10, 12,
-    i apèndixs Descartes, Teoria del coneixement, Hume, Leibniz, Kant.
+    Traducció completa (205k paraules, 100%). Cobreix les 12 seccions de la
+    Part I i els 8 apèndixs de la Part II. Integrades seccions 8 (Ètica social),
+    10 (Racionalisme i empirisme), 12 (Fenomenologia com a ciència apriorística)
+    i apèndixs Descartes, Teoria del coneixement, Hume i Kant.
