@@ -5,6 +5,11 @@ Traduït del grec per Biblioteca Arion
 
 ---
 
+**SOBRE LA TRANQUIL·LITAT DE L'ÀNIMA**
+[464e] Plutarc saluda Paci i li desitja prosperitat.
+He rebut tard la teva carta, en la qual em demanaves que t'escrigués alguna cosa sobre la tranquil·litat de l'ànima i sobre els punts del *Timeu* que necessiten una explicació més acurada. Al mateix temps, però, el nostre company Eros es veia obligat a navegar immediatament cap a Roma, ja que havia rebut una carta de l'excel·lentíssim Fundà que, tal com acostuma, l'constrenyia.
+[464f] Com que no tenia temps, tal com m'havia proposat, per ocupar-me d'allò que volies, però com que tampoc podia suportar que l'home arribés fins a tu de part nostra amb les mans completament buides, vaig triar material sobre la tranquil·litat de l'ànima dels apunts que jo mateix m'havia fet. [465a] Ho faig pensant que tu també busques aquest discurs no per escoltar-ho per gaudir de l'estil literari, sinó per obtenir-ne una ajuda pràctica. I em felicito que, tot i tenir amistats influents i una reputació no inferior a cap dels que parlen a l'àgora, no has patit allò del tràgic Merop, ni com aquell...
+
 «La multitud que et felicitava et va sorprendre»
 Tu recordes bé, perquè ho has sentit moltes vegades, que les mals naturals no es curen amb riqueses: ni unes sandàlies fines alliberen de la gota, ni un anell preciós cura les ungles incarnades, ni una diadema el mal de cap.
 I aleshores, com podrien els diners, la fama o el poder a les corts aportar tranquil·litat a l'ànima i una vida sense pertorbacions? Només ho aconseguiran si qui els posseeix en gaudeix amb mesura i no necessita allò que no té. I què és això sinó la raó exercitada i entrenada? Aquesta raó, quan la part passional i irracional de l'ànima es descontrola, sovint la domina ràpidament. No permet que es deixi anar ni que caigui víctima de les circumstàncies presents.
@@ -107,6 +112,8 @@ Però un altre que és de Quios, un altre de Gàlata o Bitínia no està satisfe
 Però qui té seny, contemplant les miríades d'homes que el sol observa mentre tenen pensaments de salvació, 
  «tots nosaltres que gaudim del fruit de la terra de vastos camps,»
 no seu plorant i humiliant-se pel fet que és menys il·lustre i ric que alguns, sinó que, vivint més dignament i millor que milers i milers entre tants, beneint la seva sort, avança per la vida. A Olímpia, certament, no és possible vencer escollint els adversaris, però en la vida les circumstàncies permeten tenir avantatge sobre molts i ser més envejable que envejós dels altres, si és que no et converteixis en rival de Briareu ni d'Hèracles. Quan, doncs, admiris tant com superior aquell que és portat en llitera, inclina't i contempla també els que el porten; i quan, creuant el pont flotant, beneeixis aquell Xerxes com l'Helespòntic, mira també els que sota fuets obren túnels a l'Atos i els que tenen tallades les orelles i el nas per haver-se trencat el pont amb les onades.
+
+[ERROR: El CLI ha retornat una resposta buida (sense contingut)]
 
 «Tots nosaltres tenim alguna desgràcia», va dir, «però qui no té la meva, li va de meravella.»
 'Aquest a la plaça el tenen per afortunat, 
