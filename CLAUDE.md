@@ -31,6 +31,107 @@ Dedica't EXCLUSIVAMENT a millorar les obres existents.
 - Executa: bash sistema/automatitzacio/auditar-cataleg.sh
 - Mira config/auditoria.json
 
+## ⚠️ PROTOCOL ANTI-AL·LUCINACIÓ — OBLIGATORI EN TOTA TRADUCCIÓ
+
+### REGLA ZERO: MAI INVENTAR CONTINGUT
+No generis MAI text que no existeixi al document original. Si no tens
+clar què diu l'original, PARA i demana aclariment. Una traducció amb
+buits és infinitament millor que una traducció amb invencions.
+
+### UNITATS DE VERIFICACIÓ SEGONS GÈNERE
+
+Cada gènere té una "unitat" natural que serveix per comptar i verificar:
+
+| Gènere | Unitat de verificació | Exemples d'identificador |
+|--------|----------------------|--------------------------|
+| Filosofia aforística | Aforisme | ### 195, **195.** |
+| Filosofia tractadística | Secció/paràgraf | § 28, ### Cap. 5 |
+| Novel·la | Paràgraf o capítol | Capítol XII, ¶ numerat |
+| Poesia | Estrofa o poema | Sonet XIV, Estrofa 3 |
+| Teatre | Escena o parlament | Acte II Escena 3, ANTÍGONA: |
+| Assaig | Secció o paràgraf | I., II., ### Secció 5 |
+| Textos orientals | Sutra/vers/capítol | Vers 42, Cap. XXIII |
+
+Si el text no té numeració explícita, usa els PARÀGRAFS com a unitat
+(separats per línia en blanc).
+
+### PROCEDIMENT OBLIGATORI PER CADA CHUNK/BLOC
+
+#### ABANS de traduir:
+1. IDENTIFICA el gènere i la unitat de verificació adequada
+2. COMPTA les unitats del bloc original
+3. LLISTA els seus identificadors (números, títols, primers 5 mots)
+4. REGISTRA: "Bloc: unitats [PRIMERA] a [ÚLTIMA], total: N"
+5. LOCALITZA tots els elements de risc dins el bloc:
+   - Cites entre cometes, guillemets «» "" ''
+   - Diàlegs (PERSONATGE: text, o amb guió —)
+   - Fragments en altres idiomes (llatí, grec, alemany...)
+   - Versos incrustats dins prosa
+   - Llistes o enumeracions
+
+#### DURANT la traducció:
+6. Tradueix unitat per unitat, mantenint un comptador intern
+7. Després de CADA unitat que contingui un element de risc, VERIFICA:
+   - He acabat la unitat sencera? (no només fins a la cita)
+   - El text que escric a continuació existeix a l'original?
+   - La pròxima unitat que tradueixo té correspondència a l'original?
+8. REGLA FONAMENTAL SOBRE CITES I DIÀLEGS:
+   Les cites, diàlegs, fragments en altres idiomes i qualsevol text
+   entre cometes o guillemets que apareix DINS d'una unitat (aforisme,
+   paràgraf, escena...) és CONTINGUT NORMAL A TRADUIR.
+   NO és un senyal de final.
+   NO indica que la unitat s'ha acabat.
+   TRADUEIX la cita i CONTINUA amb el text que la segueix a l'original.
+
+#### DESPRÉS de traduir:
+9. RECOMPTE FINAL OBLIGATORI:
+   - Unitats a l'original: ___
+   - Unitats a la traducció: ___
+   - Coincideixen? SÍ → continua. NO → PARA i corregeix.
+10. VERIFICA que l'última unitat traduïda correspon a l'última unitat
+    de l'original (compara primers mots).
+11. VERIFICA que cap unitat de la traducció conté idees, arguments,
+    descripcions o frases que no apareixen en absolut a l'original.
+
+### SENYALS D'ALARMA — ESTÀS AL·LUCINANT SI:
+- Escrius una unitat i no trobes el text original corresponent
+- L'identificador de la unitat (número, títol) no existeix a l'original
+- Acabes de traduir una cita/diàleg i el que escrius després no ho
+  pots localitzar a l'original
+- La traducció és molt més curta o llarga que l'original sense motiu
+- Sents que estàs "completant" o "continuant" en lloc de traduir
+- Estàs generant parlaments d'un personatge que no parla en aquell punt
+- Inventes estrofes d'un poema que a l'original no existeixen
+- Escrius paràgrafs narratius que no reconeixies fa un moment a l'original
+
+### FORMAT DE VERIFICACIÓ (afegeix al final de cada chunk)
+
+```
+<!-- VERIFICACIÓ ANTI-AL·LUCINACIÓ
+Gènere: [filosofia/novel·la/poesia/teatre/assaig/oriental]
+Unitat de verificació: [aforisme/paràgraf/estrofa/escena/secció]
+Original: unitats [PRIMERA] a [ÚLTIMA] (total: N)
+Traducció: unitats [PRIMERA] a [ÚLTIMA] (total: N)
+Coincideix: SÍ/NO
+Elements de risc tractats: [cites/diàlegs/fragments llatí/etc.]
+Primers mots última unitat original: "..."
+Primers mots última unitat traducció: "..."
+-->
+```
+
+### SI DETECTES QUE HAS AL·LUCINAT:
+1. PARA immediatament
+2. Indica quina és l'última unitat CORRECTAMENT traduïda
+3. Torna a l'original i localitza on t'has perdut
+4. Reprèn des de l'últim punt correcte
+5. NO intentis "arreglar" el text inventat — esborra'l tot i re-tradueix
+
+### VERIFICACIÓ AUTOMÀTICA
+Executa el script de verificació després de cada traducció:
+```bash
+python3 scripts/verificar_traduccio.py <original.md> <traduccio.md> [gènere]
+```
+
 ## 1. Visió del projecte
 
 Biblioteca oberta de traduccions al **català** d'obres clàssiques universals (filosofia, narrativa, poesia, textos orientals). Edició crítica bilingüe amb glossari, notes i context acadèmic.

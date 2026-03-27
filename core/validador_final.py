@@ -213,6 +213,92 @@ class ValidadorFinal:
     # VALIDACIONS
     # =========================================================================
 
+    def validar_integritat(self) -> list[ItemValidacio]:
+        """Verifica que la traducció no conté al·lucinacions.
+
+        PRIORITAT MÀXIMA — s'executa ABANS de tots els altres checks.
+        Compara estructura original vs traducció per detectar contingut inventat.
+        """
+        items: list[ItemValidacio] = []
+
+        original = self._carregar_original()
+        traduccio = self._carregar_traduccio()
+
+        if not original or not traduccio:
+            return items
+
+        # --- Check 1: Ratio de longitud ---
+        ratio = len(traduccio) / len(original) if original else 0
+
+        items.append(ItemValidacio(
+            categoria="integritat",
+            item="ratio_longitud",
+            descripcio="Proporció original/traducció dins rang normal (0.4-2.5x)",
+            obligatori=True,
+            ok=0.15 <= ratio <= 5.0,
+            error=(f"Ratio sospitós: {ratio:.2f}x "
+                   f"(orig={len(original)}, trad={len(traduccio)})")
+                   if not (0.15 <= ratio <= 5.0) else None,
+            suggeriment="Possible al·lucinació o omissió massiva. Revisar manualment.",
+        ))
+
+        # --- Check 2: Recompte d'unitats numerades ---
+        patrons = [
+            r'(?:^|\n)### (\d+)',
+            r'(?:^|\n)\*\*(\d+)\.\*\*',
+            r'(?:^|\n)(\d+)\.\s',
+            r'(?:^|\n)§\s*(\d+)',
+        ]
+
+        nums_orig: set[str] = set()
+        nums_trad: set[str] = set()
+        for patro in patrons:
+            nums_orig.update(re.findall(patro, original))
+            nums_trad.update(re.findall(patro, traduccio))
+
+        if nums_orig:  # Només si el text té numeració
+            inventats = nums_trad - nums_orig
+            falten = nums_orig - nums_trad
+
+            error_msg = None
+            if inventats or falten:
+                parts = []
+                if inventats:
+                    parts.append(f"Unitats inventades: {sorted(inventats)[:10]}")
+                if falten:
+                    parts.append(f"Unitats omeses: {sorted(falten)[:10]}")
+                error_msg = ". ".join(parts)
+
+            items.append(ItemValidacio(
+                categoria="integritat",
+                item="recompte_unitats",
+                descripcio="Totes les unitats de l'original existeixen a la traducció",
+                obligatori=True,
+                ok=len(inventats) == 0 and len(falten) == 0,
+                error=error_msg,
+                suggeriment="🚨 POSSIBLE AL·LUCINACIÓ. Revisar traducció manualment.",
+            ))
+
+        # --- Check 3: Paràgrafs (per textos sense numeració) ---
+        if not nums_orig:
+            par_orig = len([p for p in original.split('\n\n') if len(p.strip()) > 30])
+            par_trad = len([p for p in traduccio.split('\n\n') if len(p.strip()) > 30])
+
+            diferencia = abs(par_orig - par_trad)
+            llindar = max(5, int(par_orig * 0.40))
+
+            items.append(ItemValidacio(
+                categoria="integritat",
+                item="recompte_paragrafs",
+                descripcio=f"Nombre de paràgrafs similar (orig={par_orig}, trad={par_trad})",
+                obligatori=diferencia > llindar * 2,
+                ok=diferencia <= llindar,
+                error=f"Diferència de {diferencia} paràgrafs (orig={par_orig}, trad={par_trad})",
+                suggeriment="Revisar si falten paràgrafs o n'hi ha d'inventats.",
+            ))
+
+        return items
+
     def validar_fitxers(self) -> list[ItemValidacio]:
         """Valida l'existència dels fitxers obligatoris."""
         items: list[ItemValidacio] = []
@@ -810,6 +896,27 @@ class ValidadorFinal:
         print(f"[ValidadorFinal] Iniciant validació de {self.obra_dir}")
 
         tots_items: list[ItemValidacio] = []
+
+        # ⚠️ PRIMER: Verificació d'integritat (anti-al·lucinació)
+        print("[ValidadorFinal] 🛡️ Verificant integritat (anti-al·lucinació)...")
+        tots_items.extend(self.validar_integritat())
+
+        # Si integritat falla amb error crític, avortar
+        errors_integritat = [i for i in tots_items if i.categoria == "integritat"
+                             and i.obligatori and not i.ok]
+        if errors_integritat:
+            print("[ValidadorFinal] 🚨 INTEGRITAT FALLIDA — Possible al·lucinació")
+            errors_critics = len(errors_integritat)
+            return ResultatValidacio(
+                obra_dir=str(self.obra_dir),
+                timestamp=datetime.now().isoformat(),
+                items=tots_items,
+                errors_critics=errors_critics,
+                warnings=0,
+                puntuacio=0.0,
+                pot_publicar=False,
+                resum=f"🚨 POSSIBLE AL·LUCINACIÓ — {errors_critics} errors d'integritat. No es pot publicar.",
+            )
 
         # Executar totes les validacions
         print("[ValidadorFinal] Validant fitxers...")

@@ -108,6 +108,24 @@ for cat_dir in sorted(obres_dir.iterdir()):
                 improvement_score += 20
                 problems.append(f"Puntuació millorable ({score}/10)")
 
+            # ── 1b. CHECK AL·LUCINACIÓ (PRIORITAT MÀXIMA) ──
+            original_file = obra_dir / 'original.md'
+            traduccio_file = obra_dir / 'traduccio.md'
+            if original_file.exists() and traduccio_file.exists():
+                import subprocess
+                verificador = Path(project) / 'scripts' / 'verificar_traduccio.py'
+                if verificador.exists():
+                    try:
+                        result = subprocess.run(
+                            ['python3', str(verificador), str(original_file), str(traduccio_file)],
+                            capture_output=True, text=True, timeout=30
+                        )
+                        if result.returncode != 0:
+                            improvement_score += 50
+                            problems.append("🚨 POSSIBLE AL·LUCINACIÓ — Recompte d'unitats no coincideix")
+                    except Exception:
+                        pass
+
             # ── 2. Antiguitat del .validated ──
             validated_mtime = validated_file.stat().st_mtime
             age_days = int((now - validated_mtime) / 86400)

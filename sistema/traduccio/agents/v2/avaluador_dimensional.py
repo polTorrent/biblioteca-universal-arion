@@ -73,6 +73,17 @@ IGNORA COMPLETAMENT (NO ÉS LA TEVA FEINA):
 - La qualitat literària del text català
 
 ══════════════════════════════════════════════════════════════════════════════
+⚠️ VERIFICACIÓ D'INTEGRITAT — PRIORITAT MÀXIMA (FER PRIMER):
+══════════════════════════════════════════════════════════════════════════════
+
+ABANS d'avaluar res, VERIFICA:
+1. COMPTA les unitats (aforismes, paràgrafs, estrofes, escenes...) a l'original i la traducció
+2. Si NO coincideixen → puntuació 0, feedback: "ALERTA AL·LUCINACIÓ"
+3. Per cada unitat de la traducció: el contingut és plausiblement una traducció de l'original?
+4. ATENCIÓ ESPECIAL a zones just DESPRÉS de cites/cometes/diàlegs/fragments en altres idiomes
+5. Si detectes contingut INVENTAT a la traducció que no existeix a l'original → puntuació 0
+
+══════════════════════════════════════════════════════════════════════════════
 AVALUA NOMÉS AQUESTES 5 CATEGORIES:
 ══════════════════════════════════════════════════════════════════════════════
 
@@ -81,10 +92,11 @@ AVALUA NOMÉS AQUESTES 5 CATEGORIES:
    - S'han omès frases, clàusules o idees?
    - Gravetat: 3 si és una idea principal, 2 si és secundària, 1 si és menor
 
-2. ADDICIONS
+2. ADDICIONS / INVENCIONS
    - Hi ha contingut inventat que no és a l'original?
    - S'han afegit explicacions, interpretacions o aclariments no justificats?
-   - Gravetat: 3 si canvia el sentit, 2 si és notable, 1 si és estilístic
+   - Hi ha unitats (aforismes, paràgrafs, estrofes) que NO existeixen a l'original?
+   - Gravetat: 3 si canvia el sentit o és contingut inventat, 2 si és notable, 1 si és estilístic
 
 3. SIGNIFICAT
    - El sentit de cada frase es transmet correctament?
