@@ -57,7 +57,6 @@ PATRONS_UNITAT: dict[str, list[str]] = {
         r'(?:^|\n)### Sutra\s+(\d+)',      # ### Sutra 3
         r'(?:^|\n)(\d+)\s*[\.:\-]\s',      # 42. Text
     ],
-    "paragraf": [],
 }
 
 # Romans → àrabs
@@ -91,33 +90,12 @@ def normalitzar_id(raw_id: str) -> str:
     ANTÍGONA → "ANTÍGONA" (sense canvi per noms)
     """
     s = raw_id.strip().rstrip('.')
-    # Ja és numèric
     if s.isdigit():
         return s
-    # Numeral romà
     upper = s.upper()
     if upper in _ROMANS:
         return str(_ROMANS[upper])
-    # Text no numèric (noms de personatges, etc.) — retornar en majúscules
     return upper
-
-
-def detectar_genere(text: str) -> str:
-    """Detecta automàticament el gènere/unitat dominant del text."""
-    resultats: dict[str, int] = {}
-    for genere, patrons in PATRONS_UNITAT.items():
-        if genere == "paragraf":
-            continue
-        total = 0
-        for patro in patrons:
-            total += len(re.findall(patro, text))
-        if total > 0:
-            resultats[genere] = total
-
-    if not resultats:
-        return "paragraf"
-
-    return max(resultats, key=resultats.get)
 
 
 def _tots_els_patrons() -> list[str]:
@@ -150,45 +128,37 @@ def extreure_unitats_universal(text: str) -> list[dict]:
                 "text_inici": text[match.start():match.start() + 80].strip(),
             })
 
-    # Eliminar duplicats per posició (diferents patrons poden capturar
-    # el mateix lloc) — quedar-se amb el primer
-    vistos: set[int] = set()
-    uniques: list[dict] = []
-    for u in sorted(unitats, key=lambda x: x["posicio"]):
-        if u["posicio"] not in vistos:
-            vistos.add(u["posicio"])
-            uniques.append(u)
-
-    # Eliminar duplicats per ID normalitzat al mateix voltant
-    # (ex: "195" capturat per dos patrons a posicions molt properes)
-    ids_vistos: dict[str, int] = {}
+    # Eliminar duplicats per posició propera (±10 chars)
+    unitats.sort(key=lambda x: x["posicio"])
     finals: list[dict] = []
-    for u in uniques:
-        prev_pos = ids_vistos.get(u["id"])
-        if prev_pos is not None and abs(u["posicio"] - prev_pos) < 10:
-            continue  # duplicat proper, ignorar
-        ids_vistos[u["id"]] = u["posicio"]
+    for u in unitats:
+        # Skip if there's already a unit within 10 chars at the same position
+        if finals and abs(u["posicio"] - finals[-1]["posicio"]) < 10:
+            continue
         finals.append(u)
 
     return finals
 
 
-def extreure_paragrafs(text: str) -> list[dict]:
-    """Extreu paràgrafs com a unitats (fallback per textos sense numeració)."""
-    paragrafs = re.split(r'\n\s*\n', text)
-    unitats: list[dict] = []
-    pos = 0
-    for i, p in enumerate(paragrafs):
-        p = p.strip()
-        if len(p) > 20:  # Ignorar línies molt curtes
-            unitats.append({
-                "id_raw": str(i + 1),
-                "id": str(i + 1),
-                "posicio": pos,
-                "text_inici": p[:80],
-            })
-        pos += len(p) + 2
-    return unitats
+def detectar_genere_dominant(text: str) -> str:
+    """Detecta el gènere/unitat dominant del text."""
+    resultats: dict[str, int] = {}
+    for genere, patrons in PATRONS_UNITAT.items():
+        total = 0
+        for patro in patrons:
+            total += len(re.findall(patro, text))
+        if total > 0:
+            resultats[genere] = total
+
+    if not resultats:
+        return "paragraf"
+    return max(resultats, key=resultats.get)
+
+
+def comptar_paraules(text: str) -> int:
+    """Compta paraules d'un text (ignorant markdown)."""
+    net = re.sub(r'[#*_`\[\]()>|]', ' ', text)
+    return len(net.split())
 
 
 def verificar(original_path: str, traduccio_path: str,
@@ -204,32 +174,60 @@ def verificar(original_path: str, traduccio_path: str,
     original = Path(original_path).read_text(encoding="utf-8")
     traduccio = Path(traduccio_path).read_text(encoding="utf-8")
 
-    # Detectar gènere per informació
-    genere_orig = genere or detectar_genere(original)
-    genere_trad = genere or detectar_genere(traduccio)
+    # Extreure unitats amb TOTS els patrons (universal)
+    unitats_orig = extreure_unitats_universal(original)
+    unitats_trad = extreure_unitats_universal(traduccio)
+
+    genere_orig = detectar_genere_dominant(original)
+    genere_trad = detectar_genere_dominant(traduccio)
 
     print(f"📚 Gènere detectat (original): {genere_orig}")
     print(f"📝 Gènere detectat (traducció): {genere_trad}")
     if not strict:
         print("   (mode relaxat — usa --strict per alertes estrictes)")
 
-    # Extreure unitats amb TOTS els patrons
-    unitats_orig = extreure_unitats_universal(original)
-    unitats_trad = extreure_unitats_universal(traduccio)
+    # ═══════════════════════════════════════════════════════════
+    # DECIDIR ESTRATÈGIA DE COMPARACIÓ
+    # ═══════════════════════════════════════════════════════════
 
-    # Si no s'han trobat unitats numerades, fallback a paràgrafs
-    if not unitats_orig:
-        unitats_orig = extreure_paragrafs(original)
-    if not unitats_trad:
-        unitats_trad = extreure_paragrafs(traduccio)
+    te_estructura_orig = len(unitats_orig) >= 3
+    te_estructura_trad = len(unitats_trad) >= 3
+
+    if te_estructura_orig and te_estructura_trad:
+        # Ambdós tenen unitats estructurades → comparar IDs normalitzats
+        return _verificar_per_ids(
+            original, traduccio,
+            unitats_orig, unitats_trad,
+            strict=strict,
+        )
+    elif te_estructura_orig or te_estructura_trad:
+        # Només un té estructura → comparar recomptes amb marge generós
+        structured = unitats_orig if te_estructura_orig else unitats_trad
+        which = "original" if te_estructura_orig else "traducció"
+        print(f"\n📊 Només {which} té unitats estructurades ({len(structured)})")
+        print("   Comparació basada en recompte de paraules.")
+        return _verificar_per_paraules(original, traduccio, strict=strict)
+    else:
+        # Cap dels dos té estructura → comparar per paraules
+        print("\n📊 Cap text té unitats estructurades.")
+        print("   Comparació basada en recompte de paraules.")
+        return _verificar_per_paraules(original, traduccio, strict=strict)
+
+
+def _verificar_per_ids(
+    original: str, traduccio: str,
+    unitats_orig: list[dict], unitats_trad: list[dict],
+    strict: bool = False,
+) -> bool:
+    """Compara textos per IDs normalitzats d'unitats."""
 
     ids_orig = [u["id"] for u in unitats_orig]
     ids_trad = [u["id"] for u in unitats_trad]
     ids_orig_set = set(ids_orig)
     ids_trad_set = set(ids_trad)
 
-    print(f"\n📖 Original: {len(unitats_orig)} unitats")
-    print(f"📝 Traducció: {len(unitats_trad)} unitats")
+    print(f"\n📖 Original: {len(unitats_orig)} unitats estructurades")
+    print(f"📝 Traducció: {len(unitats_trad)} unitats estructurades")
 
     problemes = False
     avisos = False
@@ -237,10 +235,7 @@ def verificar(original_path: str, traduccio_path: str,
     # ─── CHECK 1: Recompte ───
     n_orig = len(unitats_orig)
     n_trad = len(unitats_trad)
-    if n_orig > 0:
-        diff_ratio = abs(n_orig - n_trad) / n_orig
-    else:
-        diff_ratio = 0.0
+    diff_ratio = abs(n_orig - n_trad) / n_orig if n_orig > 0 else 0.0
 
     if n_orig != n_trad:
         if strict or diff_ratio > 0.20:
@@ -255,7 +250,7 @@ def verificar(original_path: str, traduccio_path: str,
                   f"{n_orig} vs {n_trad} ({diff_ratio:.0%})")
             avisos = True
 
-    # ─── CHECK 2: Unitats que falten ───
+    # ─── CHECK 2: Unitats que falten a la traducció ───
     falten_ids = ids_orig_set - ids_trad_set
     if falten_ids:
         falten = sorted(
@@ -269,7 +264,7 @@ def verificar(original_path: str, traduccio_path: str,
                 inici = u["text_inici"][:50] if u else "?"
                 print(f'   • {f}: "{inici}..."')
             problemes = True
-        elif len(falten) > n_orig * 0.20 if n_orig > 0 else False:
+        elif len(falten) > max(n_orig * 0.20, 2):
             print(f"\n❌ FALTEN {len(falten)} unitats (>{20}% de l'original):")
             for f in falten[:10]:
                 u = next((u for u in unitats_orig if u["id"] == f), None)
@@ -297,7 +292,7 @@ def verificar(original_path: str, traduccio_path: str,
                 inici = u["text_inici"][:50] if u else "?"
                 print(f'   • {s}: "{inici}..."')
             problemes = True
-        elif len(sobren) > n_orig * 0.20 if n_orig > 0 else False:
+        elif len(sobren) > max(n_orig * 0.20, 2):
             print(f"\n🚨 {len(sobren)} unitats INVENTADES "
                   f"(>{20}% respecte l'original):")
             for s in sobren[:10]:
@@ -327,7 +322,7 @@ def verificar(original_path: str, traduccio_path: str,
         if desalineacions:
             problemes = True
 
-    # ─── CHECK 5: Longituds sospitoses ───
+    # ─── CHECK 5: Longituds sospitoses (només unitats amb ID comú) ───
     sospitosos: list[tuple[str, int, int, float]] = []
     for uo in unitats_orig:
         corresponent = [ut for ut in unitats_trad if ut["id"] == uo["id"]]
@@ -348,7 +343,6 @@ def verificar(original_path: str, traduccio_path: str,
 
         ratio = len_t / len_o if len_o > 0 else 0
 
-        # En mode relaxat, llindar més alt per evitar falsos positius
         llindar_alt = 3.0 if strict else 5.0
         llindar_baix = 0.2 if strict else 0.1
 
@@ -366,13 +360,15 @@ def verificar(original_path: str, traduccio_path: str,
         else:
             avisos = True
 
-    # ─── CHECK 6: Detecció de zones post-cita ───
-    cites_original = list(re.finditer(
-        r'[«"„"\'](.*?)[»""\'"]', original, re.DOTALL
-    ))
-    if cites_original and strict:
-        print(f"\n🔍 Cites/cometes detectades a l'original: {len(cites_original)}")
-        print("   (Zones de risc d'al·lucinació)")
+    # ─── CHECK 6: Cites (només strict) ───
+    if strict:
+        cites_original = list(re.finditer(
+            r'[«"„"\'](.*?)[»""\'"]', original, re.DOTALL
+        ))
+        if cites_original:
+            print(f"\n🔍 Cites/cometes detectades a l'original: "
+                  f"{len(cites_original)}")
+            print("   (Zones de risc d'al·lucinació)")
 
     # ─── RESUM ───
     if not problemes and not avisos:
@@ -386,6 +382,49 @@ def verificar(original_path: str, traduccio_path: str,
     else:
         print("\n❌ VERIFICACIÓ FALLIDA — Cal revisió manual")
         return False
+
+
+def _verificar_per_paraules(
+    original: str, traduccio: str, strict: bool = False,
+) -> bool:
+    """Compara textos sense estructura per recompte de paraules.
+
+    Per textos sense numeració explícita, l'única comparació fiable
+    és el volum total de text, no els paràgrafs individuals.
+    """
+    par_orig = comptar_paraules(original)
+    par_trad = comptar_paraules(traduccio)
+
+    print(f"\n📖 Original: {par_orig} paraules")
+    print(f"📝 Traducció: {par_trad} paraules")
+
+    if par_orig == 0:
+        print("\n⚠️  Original buit!")
+        return False
+
+    ratio = par_trad / par_orig
+
+    # Traduccions normals: entre 0.3x i 3x (xinès→català pot ser 2x+)
+    llindar_baix = 0.2 if not strict else 0.3
+    llindar_alt = 4.0 if not strict else 3.0
+
+    if ratio < llindar_baix:
+        print(f"\n❌ TRADUCCIÓ MOLT CURTA: {ratio:.1%} de l'original")
+        print("   Possible traducció incompleta.")
+        return False
+    elif ratio > llindar_alt:
+        print(f"\n❌ TRADUCCIÓ MOLT LLARGA: {ratio:.1%} de l'original")
+        print("   Possible contingut inventat.")
+        return False
+    elif ratio < 0.5 or ratio > 2.5:
+        print(f"\n⚠️  Ratio de paraules: {ratio:.1%} — dins marge però notable")
+        if strict:
+            return False
+        print(f"\n✅ VERIFICACIÓ OK (amb avisos menors) — comparació per paraules")
+        return True
+    else:
+        print(f"\n✅ VERIFICACIÓ OK — ratio de paraules: {ratio:.1%}")
+        return True
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -411,7 +450,7 @@ if __name__ == "__main__":
         print()
         print("Exemples:")
         print("  python verificar_traduccio.py obres/.../original.md obres/.../traduccio.md")
-        print("  python verificar_traduccio.py original.md traduccio.md aforisme --strict")
+        print("  python verificar_traduccio.py original.md traduccio.md --strict")
         sys.exit(1)
 
     genere_arg = args[2] if len(args) > 2 else None
