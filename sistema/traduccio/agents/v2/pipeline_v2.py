@@ -1414,6 +1414,35 @@ class PipelineV2:
                         aprovat = avaluacio_simple.es_acceptable
 
         # ─────────────────────────────────────────────────────────────
+        # VERIFICACIÓ ANTI-AL·LUCINACIÓ
+        # ─────────────────────────────────────────────────────────────
+        integritat = self._verificar_integritat_chunk(text_chunk, traduccio_actual)
+        if not integritat["ok"]:
+            for error in integritat["errors"]:
+                if self.dashboard:
+                    self.dashboard.log_warning("Integritat", error)
+            if any("INVENTADES" in e for e in integritat["errors"]):
+                if self.dashboard:
+                    self.dashboard.log_warning("Integritat", "Re-traduint chunk per al·lucinació...")
+                # Re-traduir amb context simplificat (sense few-shot per evitar confusió)
+                context_reforcat = ContextTraduccioEnriquit(
+                    text_original=text_chunk,
+                    llengua_origen=llengua_origen,
+                    autor=autor,
+                    obra=obra,
+                    genere=genere or "narrativa",
+                    analisi=analisi,
+                    exemples_fewshot=[],
+                    glossari=glossari,
+                )
+                resultat_retraduccio = self.traductor.traduir(
+                    context_reforcat,
+                    self.memoria,
+                    max_chars_context_memoria=self.config.max_chars_context_memoria,
+                )
+                traduccio_actual = resultat_retraduccio.traduccio
+
+        # ─────────────────────────────────────────────────────────────
         # CORRECCIÓ NORMATIVA (LanguageTool)
         # ─────────────────────────────────────────────────────────────
         resultat_correccio: ResultatCorreccioNormativa | None = None
@@ -1453,6 +1482,76 @@ class PipelineV2:
             aprovat=aprovat,
             correccio_normativa=resultat_correccio,
         )
+
+    def _verificar_integritat_chunk(self, original: str, traduccio: str) -> dict:
+        """Verifica que la traducció d'un chunk no conté al·lucinacions.
+
+        Retorna dict amb 'ok', 'errors', 'avisos'.
+        """
+        resultat: dict = {"ok": True, "errors": [], "avisos": []}
+
+        # Patrons per detectar unitats numerades
+        patrons = [
+            r'(?:^|\n)### (\d+)',
+            r'(?:^|\n)\*\*(\d+)\.\*\*',
+            r'(?:^|\n)(\d+)\.\s',
+            r'(?:^|\n)§\s*(\d+)',
+            r'(?:^|\n)## Capítol\s+(\w+)',
+            r'(?:^|\n)## Escena\s+(\w+)',
+        ]
+
+        nums_orig: set[str] = set()
+        nums_trad: set[str] = set()
+
+        for patro in patrons:
+            for m in re.findall(patro, original):
+                nums_orig.add(m)
+            for m in re.findall(patro, traduccio):
+                nums_trad.add(m)
+
+        if not nums_orig:
+            # Text sense numeració → verificar per longitud i paràgrafs
+            ratio = len(traduccio) / len(original) if original else 0
+            if ratio > 2.5 or ratio < 0.3:
+                resultat["ok"] = False
+                resultat["avisos"].append(
+                    f"Ratio longitud sospitós: {ratio:.1f}x "
+                    f"(orig={len(original)}, trad={len(traduccio)})"
+                )
+
+            par_orig = len([p for p in original.split('\n\n') if len(p.strip()) > 20])
+            par_trad = len([p for p in traduccio.split('\n\n') if len(p.strip()) > 20])
+
+            if par_orig > 0 and abs(par_orig - par_trad) > max(2, par_orig * 0.3):
+                resultat["ok"] = False
+                resultat["avisos"].append(
+                    f"Diferència de paràgrafs: orig={par_orig}, trad={par_trad}"
+                )
+
+            return resultat
+
+        # Verificar amb unitats numerades
+        inventats = nums_trad - nums_orig
+        falten = nums_orig - nums_trad
+
+        if inventats:
+            resultat["ok"] = False
+            resultat["errors"].append(
+                f"🚨 UNITATS INVENTADES: {sorted(inventats)}"
+            )
+
+        if falten:
+            resultat["ok"] = False
+            resultat["errors"].append(
+                f"⚠️ Unitats que falten: {sorted(falten)}"
+            )
+
+        # Verificar ratio de longitud per seguretat
+        ratio = len(traduccio) / len(original) if original else 0
+        if ratio > 2.5 or ratio < 0.3:
+            resultat["avisos"].append(f"Ratio longitud: {ratio:.1f}x")
+
+        return resultat
 
     def _refinar_simple(
         self,

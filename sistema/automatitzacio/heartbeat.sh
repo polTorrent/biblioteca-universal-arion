@@ -349,7 +349,7 @@ for categoria in obres_dir.iterdir():
                 ;;
             NEEDS_REVIEW)
                 if ! task_exists "supervis.*$obra_name\|qualitat.*$obra_name" > /dev/null 2>&1; then
-                    add_task "supervision" "SUPERVISIÓ QUALITAT de '$obra_name' a $relpath. Comprova: 1) Qualitat del català (gramàtica, naturalitat, estil). 2) Fidelitat al original (no omissions ni invencions). 3) Glossari consistent. 4) Format correcte (capítols, notes). 5) metadata.yml complet. PUNTUACIÓ: Si qualitat >= 7/10, crea fitxer .validated amb data i puntuació. Si < 7/10, crea fitxer .needs_fix amb llista de problemes concrets."
+                    add_task "supervision" "SUPERVISIÓ QUALITAT de '$obra_name' a $relpath. PAS 0 — VERIFICACIÓ ANTI-AL·LUCINACIÓ (FER PRIMER): 1) Executa: python3 scripts/verificar_traduccio.py ${relpath}/original.md ${relpath}/traduccio.md 2) Si falla → crea .needs_fix amb motiu 'AL·LUCINACIÓ' i NO continues. 3) Compara 5-10 unitats aleatòries (inici, mig, final) entre original i traducció. 4) ATENCIÓ ESPECIAL a zones post-cita/diàleg i l'últim 20% del text. PAS 1 — Si integritat OK, comprova: 1) Qualitat del català (gramàtica, naturalitat, estil). 2) Fidelitat al original (no omissions ni invencions). 3) Glossari consistent. 4) Format correcte (capítols, notes). 5) metadata.yml complet. PUNTUACIÓ: Si qualitat >= 7/10, crea fitxer .validated amb data i puntuació. Si < 7/10, crea fitxer .needs_fix amb llista de problemes concrets."
                 fi
                 ;;
         esac
