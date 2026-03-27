@@ -1,4 +1,4 @@
-# Canzoniere — Selecció de 18 Sonets
+# Canzoniere — Selecció de Sonets
 *Francesco Petrarca (1304–1374)*
 
 Font: Rerum Vulgarium Fragmenta (Canzoniere), text de Wikisource (it.wikisource.org)
