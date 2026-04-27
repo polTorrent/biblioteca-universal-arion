@@ -60,17 +60,28 @@ plan_optimizations() {
     local balance=$1
     local tasks=""
     
-    # Balance alt (>10 DIEM) → Tasques intensives
-    if (( $(echo "$balance > 10.0" | bc -l) )); then
-        log "📊 Saldo alt ($balance DIEM) - Planificant tasques intensives"
-        tasks="INTENSIVE"
-    # Balance mitjà (5-10 DIEM) → Tasques mitjanes
+    # Utilitzar model selector intel·ligent
+    local budget_report
+    budget_report=$(python3 "$PROJECT/sistema/config/model_selector.py" 2>&1)
+    
+    log "📊 Estat del pressupost:"
+    echo "$budget_report" | grep -E "Saldo|Disponible|Recomanacions" >> "$LOG"
+    
+    # Balance alt (>8 DIEM) → Tasques amb models superiors
+    if (( $(echo "$balance > 8.0" | bc -l) )); then
+        log "💰 Saldo alt ($balance DIEM) - Utilitzant models superiors per tareas importants"
+        tasks="PREMIUM"
+    # Balance mitjà (5-8 DIEM) → Tasques amb models equilibrats
     elif (( $(echo "$balance >= 5.0" | bc -l) )); then
-        log "📊 Saldo mitjà ($balance DIEM) - Planificant tasques mitjanes"
-        tasks="MODERATE"
-    # Balance baix (<5 DIEM) → No activar
+        log "📊 Saldo mitjà ($balance DIEM) - Utilitzant models equilibrats"
+        tasks="BALANCED"
+    # Balance baix (3-5 DIEM) → Tasques rutinàries amb models econòmics
+    elif (( $(echo "$balance >= 3.0" | bc -l) )); then
+        log "⚠️ Saldo baix ($balance DIEM) - Només tasques rutinàries"
+        tasks="ECONOMIC"
+    # Balance crític (<3 DIEM) → Preservar
     else
-        log "📊 Saldo baix ($balance DIEM) - Millor preservar"
+        log "🚨 Saldo crític ($balance DIEM) - Preservant per emergències"
         tasks="SKIP"
     fi
     
@@ -83,41 +94,55 @@ create_optimization_tasks() {
     local count=0
     
     case "$level" in
-        INTENSIVE)
-            # Revisar traduccions amb qualitat mitjana
-            create_task "Qualitat: Revisar traduccions amb puntuació 6-7" \
-                "Busca obres amb .needs_fix que tinguin puntuació entre 6-7. Revisa i millora la traducció. Elimina .needs_fix si la qualitat final >= 8." && ((count++))
+        PREMIUM)
+            # Models superiors per a traduccions importants
+            log "💎 Creant tasques PREMIUM amb models superiors"
             
-            # Actualitzar glossaris
-            create_task "Glossari: Actualitzar glossaris d'obres completades" \
-                "Busca obres amb .validated i sense glossari.yml (o glossari incomplet). Extreu termes del text i crea glossari complet." && ((count++))
+            create_task "Traducció: Obra filosòfica complexa" \
+                "Usant model_selector.py per seleccionar claude-opus-4-7. Tradueix obra filosòfica sense .validated. Protocol anti-al·lucinació obligatori. Crea .validated si qualitat >= 8." && ((count++))
             
-            # Revisar metadata
-            create_task "Metadata: Completar metadata.yml d'obres sense metadata" \
-                "Busca obres sense metadata.yml o amb metadata incomplet. Crea metadata.yml amb: title, author, source_language, category, date, status, translator." && ((count++))
+            create_task "Supervisió: Revisió final d'alta qualitat" \
+                "Usant openai-gpt-55-pro per detectar al·lucinacions. Revisa traduccions amb puntuació 7-8. Aplica protocol anti-al·lucinació. Crea .validated si qualitat >= 8." && ((count++))
             
-            # Testejant scripts
-            create_task "Tests: Executar tests del projecte" \
-                "Executa: python3 -m pytest tests/ -v. Si hi ha errors, arregla'ls. Commit amb: 'test: corregeix errors'." && ((count++))
+            create_task "Qualitat: Glossari i notes d'obra complexa" \
+                "Usant claude-opus-4-7. Obra amb .validated però sense glossari complet. Extreu termes filosòfics/lingüístics i crea glossari.yml amb definicions contextuales." && ((count++))
             ;;
             
-        MODERATE)
-            # Revisar traduccions recents
-            create_task "Qualitat: Supervisar traduccions noves" \
-                "Busca obres traduïdes els últims 7 dies sense .validated. Revisa 5-10 unitats aleatòries. Crea .validated o .needs_fix segons qualitat." && ((count++))
+        BALANCED)
+            # Models equilibrats per a tasques mitjanes
+            log "⚖️ Creant tasques BALANCED amb models equilibrats"
             
-            # Actualitzar web
+            create_task "Traducció: Obra narrativa estàndard" \
+                "Usant claude-sonnet-4-6. Tradueix obra narrativa sense .validated. Qualitat mínim 7/10. Crea .validated si >= 7." && ((count++))
+            
+            create_task "Supervisió: Revisió bàsica" \
+                "Usant qwen3-6-27b. Revisa obres noves (últims 7 dies). Puntuació >= 6. Aplica protocol anti-al·lucinació bàsic." && ((count++))
+            
+            create_task "Metadata: Completar metadades" \
+                "Usant qwen3-6-27b. Obres sense metadata.yml o incomplet. Crea metadata complet amb títol, autor, llengua, categoria, data, estat." && ((count++))
+            ;;
+            
+        ECONOMIC)
+            # Models econòmics per a tasques rutinàries
+            log "💡 Creant tasques ECONOMIC amb models econòmics"
+            
             create_task "Web: Regenerar docs si cal" \
-                "Comprova si obres/ té modificacions més recents que docs/. Si sí, executa: python3 sistema/web/build.py. Commit i push." && ((count++))
+                "Usant glm-5. Comprova si obres/ té modificacions més recents que docs/. Si sí, executa: python3 sistema/web/build.py. Commit i push." && ((count++))
+            
+            create_task "Tests: Executar testos bàsics" \
+                "Usant glm-5. Executa: python3 -m pytest tests/ -v --tb=short. Si hi ha errors simples, arregla'ls. Ignora errors complexos." && ((count++))
+            
+            create_task "Fetch: Obtenir texts fonts" \
+                "Usant deepseek-v3.2. Obres sense original.md. Cercador fonts, descarrega text i guarda comoriginal.md. Commit." && ((count++))
             ;;
             
         SKIP)
-            log "⏭️ No es creen tasques d'optimització"
+            log "⏭️ No es creen tasques d'optimització - Preservant saldo"
             return 0
             ;;
     esac
     
-    log "✅ $count tasques d'optimització creades"
+    log "✅ $count tasques d'optimització creades amb nivell $level"
     return $count
 }
 
