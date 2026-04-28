@@ -51,7 +51,7 @@ al pobre, cada dia li sembla tot un eix.
 De què serveix el consell a un foll?
 No malgastis paraules; calma el teu doll.
 Trenca els lligams del desig; sigues lliure de tot.
-No et facis esclau del guany; no siguis captiu del dot.
+No et facis esclau del guany; no siguis captiu de l'avarícia.
 Vessa rius dins d'un sol gotet menut:
 no pot contenir sinó el seu poc contingut.                                 20
 L'ull és un vas que mai no queda content;
@@ -79,7 +79,7 @@ Qui no sent de l'amor la flama que tot vivifica,
 Puc estar quiet, serè, content,
 quan la meva delícia és lluny? No! Dolent.
 L'amor mana al meu plany que tota cadena esclati.
-El cor em rebentaria, de silenci maleït pel destí ingrat.
+El cor em rebentaria, de silenci maleït.
 Un mirall es mostra millor quan és brillant;
 enterbolit de rovell, el seu llum es va apagant.
 Doncs, neteja'n tota impura aliança;
@@ -118,7 +118,7 @@ molt d'or, amb joies, serà seu; i gràcies sense mida.»                   10
 Tots van prometre meravelles; cadascú, usar la seva art;
 examinar el cas; alleujar el mal de la donzella en tota part.
 «Cadascú de nosaltres té el poder guaridor de Jesús [59].
-De tots els seus mals curem els homes cada hora, sense falla.»
+De tots els seus mals curem els homes cada hora.»
 Per orgull, «si Déu vol» no van dir, ben cert. [60]
 La nul·litat de l'home, en ells Déu volia fer desert.
 És a dir — ometre aquesta santa paraula
@@ -131,7 +131,7 @@ En va reflexionen, en va s'encongeixen de freds.
 La donzella esdevingué un veritable esquelet;
 les llàgrimes del príncep la seva ineptitud han retret.
 Amb l'oximel, per destí, la bilis augmentà;
-fins l'oli d'ametlla s'esgotà on com a greix s'aplicà.
+fins i tot l'oli d'ametlla s'esgotà allà on com a greix s'aplicà.
 Laxants de mirabolà actuen com a noguera primer;
 com la nafta alimenta un foc, les begudes portaren sols daler.
 
@@ -216,7 +216,7 @@ de maldat i culpa n'és el càstig que es confia.                           55
 El pecador empedreït, que al seu Déu ofèn,
 és un lladre despietat; els seus amics ell pren.
 Qui no té vergonya en paraules ni en fets,
-desesperació per decepció és el seu sou d'entremets.
+desesperació per decepció és la seva recompensa.
 
 Les esferes del cel obeeixen la paraula del Creador;
 els sants àngels serveixen dòcilment el Senyor.
@@ -254,12 +254,12 @@ les causes predisponents, els símptomes, cercats amb bon vist.
 Llavors ell: «Els remeis fins ara adduïts
 han estat perjudicials, cap bé no han produït.
 El cas ha estat des del principi mal comprès.
-Protegiu-nos, cel! Quina germandat de torps i confesos!»
+Protegiu-nos, cel! Quina germandat d'incompetents!»
 
 Va veure el seu turment; d'allí va endevinar el seu mal.
 El secret va guardar; amagat el va tenir tal qual.                         75
 La malaltia no era causada per bilis ni melsa.
-El perfum de l'essència es percep millor del que es descriu.
+El perfum de l'essència es percep millor del que es veu.
 Va traçar el seu patiment a una ment oprimida;
 el cos sa, l'ànima amb un desig suprimit a la vida.
 Les seves vacil·lacions li van fer endevinar l'amor;
@@ -301,7 +301,7 @@ L'alè de vida que Ell va donar a aquest cos,
 amb Ell reunir-se, hauria la misericòrdia de fer el repòs.
 Anys fa que converso amb Ell. Vida serena!
 Una repetició més! Oh, escena de goig plena!                               95
-Que agradable cel i terra mantenen llur somriure!
+Que plaent que cel i terra mantenen llur somriure!
 Ell ofereix ànima, ment, ull, centuplicat, sens escriure!
 
 Més enllà de les meves forces, oh, no em posis a prova avui!
@@ -341,9 +341,11 @@ imagina què ha de ser un dolor que el cor fa corcolar.
 Si cada observador casual pogués albirar aquells mals,
 on seria la cura que corromp, el dol que mata, fatals?
 Els nois posen una espina sota la cua d'un ase;
-en Noi no sap el remei; saltar no és cap base.
+en Noi no sap el remei; saltar no serveix de res.
 El moviment de la cua és pitjor; encara més enfonsa el dard.
 És tasca de la raó alleujar el dolor que crema tan tard.                   125
+L'ase, si els punxons creixen, coça, salta, rodola;
+la seva pell de sang es taca; res no el consola.
 
 La ment del nostre metge, per l'art ben preparada,
 amb mesures gentils va cercar el mal que temia, amb parada.
@@ -373,7 +375,7 @@ d'un jove orfebre allà ella havia estat la flama que lluïa.
 Extret aquest punt — confessat aquest secret,
 més fàcilment el nostre metge la resta va veure net.
 «Oh donzella, fes-me saber l'adreça d'aquest jove.»
-«Al Pou Sagrat, prop del camí públic del cap de pont, allà on el plou.»   140
+«Al Pou Sagrat, prop del camí públic del cap de pont.»   140
 
 «Ja ho sabia», va dir ell, «de seguida, que el teu cas era tal.
 Ara confia en mi. Per servir-te faré molt, i molt de cabal.
@@ -393,7 +395,7 @@ Si l'or i la plata no fossin difícils de trobar,
 com podrien créixer? [66] Aviat s'haurien esgotat de minar.»
 
 Les paraules suaus del bon metge percebudes,
-la ment de la donzella de la cura angoixant es veié alliberada de servituds.
+la ment de la donzella es veié alliberada de la cura angoixant.
 Algunes promeses són veritablement sinceres;
 d'altres es fan només per enganyar les orelles lleugeres.                  150
 La promesa d'un home bo és una gemma de preu;
@@ -459,7 +461,7 @@ Tot amor que es basteix sobre encants superficials de pell
 no és amor vertader. Al final, vergonya és el que l'encén donzell.
 
 Els ulls li aboquen dos corrents de llàgrimes amargues;
-les faccions alterades, el pitjor enemic que ell es marca.                 180
+les faccions alterades, el pitjor enemic que ell tem.                 180
 
 El paó té per enemic el seu plomatge tot sol.
 El monarca sagna quan els seus esplendors fan mal al veí com un dol.
@@ -501,6 +503,8 @@ mai no pot obrar malament; és sempre el millor, Déu n'és fidel.
 Qui pot perdonar, pot també condemnar;
 és vicegerent de Déu; actua en el lloc del cel, sens dubtar.               200
 
+[...] [Versos 201-214 omesos: analogia d'Ismael i Abraham, el príncep no actuà per luxúria, Elies enfonsant la nau]
+
 Si Déu no tingués misericòrdia en la Seva ira,
 com podria el Senyor de les Misericòrdies tronar quan mira?
 Un nen pot tremolar davant la llanceta que fa dolor;
@@ -508,7 +512,7 @@ la seva mare sap que hi ha guariment en el dard punxidor.
 Pot mig matar-lo, però el restaura a vida sana;
 així les grans misericòrdies de Déu superen la nostra brega ufana.
 Els homes jutgen el que veuen pel que pensen, sense fi.
-De jutjar la justícia, els homes de seny s'abstindran, sí.                219
+De jutjar la justícia, els homes de seny s'abstindran.                 219
 
 ---
 
@@ -531,7 +535,7 @@ uns pots va fer caure; l'oli es va escampar pel paratge.
 L'amo, en tornar, primer es va asseure,
 com a senyor de la casa; la botiga era seva per sempre.
 Les basses d'oli va albirar, i el plomatge mullat de la Poll;
-un cop al cap li va fer caure les plomes com un desfull.
+un cop al cap li va fer caure les plomes a l'acte.
 
 En silenci uns dies la Poll va rumiar, de pesar;
 l'oliaire ha perdut el seny, per dir-ho clar.
@@ -551,7 +555,7 @@ el crani ben rasat, llis i lluent com un vidre de mirar.                   15
 A l'instant la nostra Poll va trencar el seu silenci,
 va cridar darrere el mendicant: «Pobre cap! Ai! Ai! Quin dolenci!
 Vell pelat! Vell pelat! Què has fet, criatura?
-Has vessat el pot d'oli d'algú? S'ha acabat l'oli, segur que sí, per ventura?»
+Has vessat el pot d'oli d'algú? S'ha acabat l'oli, oi?»
 Els vianants van somriure tots de l'error de la Poll,
 entre cap pelat i cap nu no feia cap distinció ni consol.
 
@@ -669,7 +673,7 @@ el príncep i el pagès, iguals, es giren als seus llits.
 Un califa va preguntar a Layla: «Ets realment tu
 per qui el pobre Majnún va perdre el seny? Car veig
 que no ets tan bella entre les altres belles.»
-Va dir ella: «Calla! Tu no ets Majnún; ni el seu parell.»
+Va dir ella: «Calla! Tu no ets Majnún; no ets ell.»
 
 Un ocell vola per l'aire; la seva ombra llisca sobre la terra;
 un segon ocell sembla, tot i no ser res.                                   100
@@ -784,7 +788,7 @@ i no escampés més el terror per aquella vall de nord.
 
 El lleó hi va consentir, si complien la promesa.
 «Però pitjor que cap home, en verí i en ràbia obscura,                      10
-la meva pròpia *nafs* carnals m'ha traït sempre amb duresa.
+la meva pròpia *nafs* carnal m'ha traït sempre amb duresa.
 Tanmateix, he après. No digué Ahmed: 'Confieu!
 El creient no cau dues vegades en el mateix parany viu'?»
 
