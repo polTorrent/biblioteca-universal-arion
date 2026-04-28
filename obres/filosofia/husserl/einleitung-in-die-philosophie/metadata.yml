@@ -46,7 +46,7 @@ seccions:
   - Kant
 estadistiques:
   paraules_original: 186612
-  paraules_traduccio: 205645
+  paraules_traduccio: 204612
   notes: 20
   termes_glossari: 51
   pagines_original: 478
@@ -61,6 +61,8 @@ revisio:
   nota: >-
     Traducció completa (205k paraules, 100%). Cobreix les 12 seccions de la
     Part I i els 8 apèndixs de la Part II. Revisió 2026-04-28: reordenades
-    seccions de la Part I (6, 9-12 estaven desplaçades i barrejades amb
-    apèndixs), eliminat duplicat de l'apèndix Descartes, corregits accents
-    en capçaleres d'apèndixs.
+    seccions de la Part I, eliminat duplicat de l'apèndix Descartes, corregits
+    accents en capçaleres. Revisió posterior: eliminats 253 números de pàgina
+    i 241 capçaleres de paginació incrustats, reunits 132 paràgrafs trencats,
+    corregits castellanismes (no obstant → tanmateix), normalitzades capçaleres
+    bilingües de la Part II.
