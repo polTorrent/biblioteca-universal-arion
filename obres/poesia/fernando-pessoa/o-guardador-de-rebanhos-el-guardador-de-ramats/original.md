@@ -657,8 +657,6 @@ A mesma ao contrário...
 
 ## 16. Estas quatro canções, escrevi-as estando doente
 
-|autor=Alberto Caeiro
-}}
 
 
 Estas quatro canções, escrevi-as estando doente.
@@ -677,9 +675,6 @@ Nem realmente saberem o que é saúde e doença.
 
 ## 17. Quem me dera que a minha vida fosse um carro de bois
 
-|autor=Alberto Caeiro
-|notas=Escrito em 4-3-1914.
-}}
 
 
 Quem me dera que a minha vida fosse um carro de bois
@@ -735,7 +730,6 @@ Para que bate o luar na relva?
 
 ## 20. O Tejo é mais belo que o rio que corre pela minha aldeia
 
-}}
 
 
 O Tejo é mais belo que o rio que corre pela minha aldeia,
@@ -888,27 +882,27 @@ E aceita tudo mais nitidamente.
 
 ## 26. Às vezes, em dias de luz perfeita e exacta
 
-:Às vezes, em dias de  luz perfeita e exata,
-:Em que as cousas têm toda a realidade que podem ter,
-:Pergunto a mim próprio devagar
-:Por que sequer atribuo eu
-:Beleza às cousas.
+Às vezes, em dias de  luz perfeita e exata,
+Em que as cousas têm toda a realidade que podem ter,
+Pergunto a mim próprio devagar
+Por que sequer atribuo eu
+Beleza às cousas.
 
-:Uma flor acaso tem beleza?
-:Tem beleza acaso um fruto?
-:Não: têm cor e forma
-:E existência apenas.
-:A beleza é o nome de qualquer cousa que não existe
-:Que eu dou às cousas em troca do agrado que me dão.
-:Não significa nada.
-:Então por que digo eu das cousas: são belas?
+Uma flor acaso tem beleza?
+Tem beleza acaso um fruto?
+Não: têm cor e forma
+E existência apenas.
+A beleza é o nome de qualquer cousa que não existe
+Que eu dou às cousas em troca do agrado que me dão.
+Não significa nada.
+Então por que digo eu das cousas: são belas?
 
-:Sim, mesmo a mim, que vivo só de viver,
-:Invisíveis, vêm ter comigo as mentiras dos homens
-:Perante as cousas,
-:Perante as cousas que simplesmente existem.
+Sim, mesmo a mim, que vivo só de viver,
+Invisíveis, vêm ter comigo as mentiras dos homens
+Perante as cousas,
+Perante as cousas que simplesmente existem.
 
-:Que difícil ser próprio e não ver senão o visível!
+Que difícil ser próprio e não ver senão o visível!
 
 ---
 
@@ -1034,8 +1028,6 @@ Por ela não ser linguagem nenhuma.
 ## 32. Acho tão natural que não se pense
 
 (s.d.)
-|autor=Alberto Caeiro
-}}
 
 
 Acho tão natural que não se pense
@@ -1080,9 +1072,6 @@ Para ver se elas falavam...
 
 ## 34. Acordo de noite subitamente
 
-|autor=Alberto Caeiro
-|notas=Escrito em 7-5-1914.
-}}
 
 
 Acordo de noite subitamente,
@@ -1286,9 +1275,6 @@ Do horizonte cheio de montes baixos.
 
 ## 42. Passou a diligência pela estrada, e foi-se
 
-|autor=Alberto Caeiro
-|notas=7-5-1914
-}}
 
 
 Passou a diligência pela estrada, e foi-se;
@@ -1302,9 +1288,6 @@ E o sol é sempre pontual todos os dias.
 
 ## 43. Antes o vôo da ave, que passa e não deixa rasto
 
-|autor=Alberto Caeiro
-|notas=Escrito em 7-5-1914.
-}}
 
 
 Antes o vôo  da ave, que  passa e não deixa rasto,
@@ -1324,9 +1307,6 @@ Passa, ave, passa, e ensina-me a passar!
 
 ## 44. Rimo quando calha
 
-|autor=Alberto Caeiro
-|notas=Escrito em 7-3-1914
-}}
 
 
 Rimo quando calha
@@ -1341,9 +1321,6 @@ Por isso muitas vezes não rimo...
 
 ## 45. Um renque de árvores lá longe, lá para a encosta
 
-|autor=Alberto Caeiro
-|notas=Escrito em 7-5-1914
-}}
 
 
 Um renque de árvores lá longe, lá para a encosta.
@@ -1479,9 +1456,6 @@ Para termos muito que ver e ouvir...
 
 ## 50. No meu prato que mistura de Natureza!
 
-|autor=Alberto Caeiro
-|notas=Escrito em 7-4-1914.
-}}
 
 
 No meu prato que mistura de Natureza!

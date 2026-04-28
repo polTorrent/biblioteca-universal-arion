@@ -10,13 +10,13 @@ obra:
   categoria: "poesia"
   genere: "poesia"
   descripcio: >
-    Recull de 49 poemes escrits per Alberto Caeiro, heterònim de Fernando
+    Recull de 51 poemes escrits per Alberto Caeiro, heterònim de Fernando
     Pessoa. Obra central del sensacionisme portuguès, celebra la percepció directa
     de la natura i rebutja el pensament metafísic.
-  font_original: "http://arquivopessoa.net/textos/0001"
-seccions: 49
+  font_original: "https://pt.wikisource.org/wiki/O_Guardador_de_Rebanhos"
+seccions: 51
 estadistiques:
-  paraules_original: 7873
+  paraules_original: 7826
   paraules_traduccio: 8148
   notes: 8
   termes_glossari: 15
