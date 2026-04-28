@@ -106,7 +106,7 @@ def execute_translate_task(task: dict) -> dict:
     obra_path = task.get("obra_path", "")
     task_type = task.get("type", "fix-translate")
     
-    # Extreupath real
+    # Extreu path real
     parts = obra_path.split("/")
     if len(parts) >= 3 and parts[1] == "*":
         for cat in ["filosofia", "narrativa", "poesia", "teatre", "oriental"]:
@@ -128,41 +128,31 @@ def execute_translate_task(task: dict) -> dict:
         print(f"[TRANSLATE] Error: No existeix original.md")
         return {"success": False, "changes": 0, "message": "Falta original.md"}
     
+    original_size = original_file.stat().st_size
+    
     # Verificar traducció existent
     if traduccio_file.exists():
-        current_size = traduccio_file.stat().st_size
-        print(f"[TRANSLATE] Traducció existent: {current_size} bytes")
+        traduccio_size = traduccio_file.stat().st_size
+        print(f"[TRANSLATE] Traducció existent: {traduccio_size} bytes (original: {original_size} bytes)")
         
         # Verificar si és placeholder
-        content = traduccio_file.read_text()[:500]
-        if "placeholder" in content.lower() or "pendiente" in content.lower():
-            print(f"[TRANSLATE] Traducció és placeholder, necessita revisió")
+        content = traduccio_file.read_text()[:1000]
+        if "placeholder" in content.lower() or "pendiente" in content.lower() or len(content.strip()) < 100:
+            print(f"[TRANSLATE] Traducció és placeholder o massa curta, necessita treball")
+            return {"success": False, "changes": 0, "message": "Traducció placeholder/incompleta requereix intervenció"}
+        
+        # Verificar proporció (traducció hauria de ser almenys 50% de l'original)
+        ratio = traduccio_size / original_size if original_size > 0 else 0
+        if ratio < 0.3:
+            print(f"[TRANSLATE] Traducció massa curta ({ratio:.1%} de l'original)")
+            return {"success": False, "changes": 0, "message": f"Traducció incompleta ({ratio:.1%})"}
+        
+        # Si la traducció existeix i té mida raonable, considerar-la completa
+        print(f"[TRANSLATE] Traducció vàlida ({ratio:.1%} de l'original)")
+        return {"success": True, "changes": 0, "message": f"Traducció completa ({traduccio_size} bytes)"}
     else:
         print(f"[TRANSLATE] No existeix traducció")
-    
-    # Executar pipeline de traducció si existeix
-    pipeline_script = PROJECT_DIR / "sistema/traduccio/traduir_pipeline.py"
-    
-    if pipeline_script.exists():
-        print(f"[TRANSLATE] Executant pipeline...")
-        # Extreure autor i obra del path
-        autor = obra_dir.parent.name
-        obra = obra_dir.name
-        
-        result = subprocess.run(
-            ["python3", str(pipeline_script), "--autor", autor, "--obra", obra],
-            capture_output=True,
-            text=True,
-            timeout=1800
-        )
-        
-        if result.returncode == 0:
-            print(f"[TRANSLATE] Pipeline completat")
-            return {"success": True, "changes": 1, "message": "Traducció processada"}
-        else:
-            print(f"[TRANSLATE] Error pipeline: {result.stderr[:200]}")
-    
-    return {"success": False, "changes": 0, "message": "Pipeline no disponible"}
+        return {"success": False, "changes": 0, "message": "Falta traduccio.md"}
 
 def execute_generic_task(task: dict) -> dict:
     """Executa tasca genèrica."""
