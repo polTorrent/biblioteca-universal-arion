@@ -8,8 +8,6 @@ Font: [Wikisource (sv)](https://sv.wikisource.org/wiki/Fröken_Julie)
 
 ---
 
-}}
-
 
 PERSONER.
 
