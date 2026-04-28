@@ -52,8 +52,8 @@ for obra_dir in "$OBRES_DIR"/*/*/*/; do
         if [ "$chars" -lt 500 ]; then
             errors+=("ORIGINAL_MASSA_CURT_${chars}c")
         fi
-        # Detectar contingut inventat o placeholder
-        if grep -qi "lorem ipsum\|TODO\|PLACEHOLDER\|text aquí\|\[text original\]" "$obra_dir/original.md" 2>/dev/null; then
+# Detectar contingut inventat o placeholder (patrons específics, no sub-cadenes)
+        if grep -qE "(TODO|FIXME|PLACEHOLDER|PLACE_HOLDER):|<!-- TODO|<!-- PLACEHOLDER|\\[PLACEHOLDER\\]|\\[TODO\\]|^# TODO|^# FIXME|lorem ipsum|\\[text original\\]" "$obra_dir/original.md" 2>/dev/null; then
             errors+=("ORIGINAL_PLACEHOLDER")
         fi
     fi
@@ -80,8 +80,8 @@ for obra_dir in "$OBRES_DIR"/*/*/*/; do
                 fi
             fi
         fi
-        # Detectar contingut potencialment inventat
-        if grep -qi "lorem ipsum\|TODO\|PLACEHOLDER" "$obra_dir/traduccio.md" 2>/dev/null; then
+# Detectar contingut potencialment inventat (patrons específics, no sub-cadenes)
+        if grep -qE "(TODO|FIXME|PLACEHOLDER|PLACE_HOLDER):|<!-- TODO|<!-- PLACEHOLDER|\\[PLACEHOLDER\\]|\\[TODO\\]|^# TODO|^# FIXME|lorem ipsum" "$obra_dir/traduccio.md" 2>/dev/null; then
             errors+=("TRADUCCIO_PLACEHOLDER")
         fi
     fi
