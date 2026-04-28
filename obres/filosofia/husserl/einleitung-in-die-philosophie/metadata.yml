@@ -46,7 +46,7 @@ seccions:
   - Kant
 estadistiques:
   paraules_original: 186612
-  paraules_traduccio: 205633
+  paraules_traduccio: 205645
   notes: 20
   termes_glossari: 51
   pagines_original: 478
@@ -57,9 +57,10 @@ revisio:
   estat: revisat
   qualitat: 7.5
   versio: "1.0"
-  data_revisio: '2026-03-26'
+  data_revisio: '2026-04-28'
   nota: >-
     Traducció completa (205k paraules, 100%). Cobreix les 12 seccions de la
-    Part I i els 8 apèndixs de la Part II. Integrades seccions 8 (Ètica social),
-    10 (Racionalisme i empirisme), 12 (Fenomenologia com a ciència apriorística)
-    i apèndixs Descartes, Teoria del coneixement, Hume i Kant.
+    Part I i els 8 apèndixs de la Part II. Revisió 2026-04-28: reordenades
+    seccions de la Part I (6, 9-12 estaven desplaçades i barrejades amb
+    apèndixs), eliminat duplicat de l'apèndix Descartes, corregits accents
+    en capçaleres d'apèndixs.
