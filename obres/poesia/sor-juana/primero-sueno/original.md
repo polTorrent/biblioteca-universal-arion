@@ -7,9 +7,8 @@
 
 Primero Sueño
 de Sor Juana Inés de la Cruz
-Descargar como    Primero SueñoPrimero SueñoSor Juana Inés de la Cruz
 
- Edición de Antonio Alatorre
+Edición de Antonio Alatorre
 
 Piramidal, funesta, de la tierra
 

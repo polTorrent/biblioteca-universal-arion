@@ -16,7 +16,7 @@ obra:
 
     '
   categoria: filosofia
-  font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0046
+  font_original: https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg0086/tlg002/tlg0086.tlg002.1st1K-grc1.xml
   libres: 3
   estadistiques:
     paraules_traduccio: 451
