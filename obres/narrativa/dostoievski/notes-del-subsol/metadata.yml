@@ -41,15 +41,14 @@ obra:
 seccions: 2
 estadistiques:
   paraules_original: 35798
-  paraules_traduccio: 25445
+  paraules_traduccio: 26528
   notes: 13
   termes_glossari: 15
 revisio:
-  estat: "requereix_correccio"
-  qualitat: 6.5
-  data_revisio: "2026-03-15"
-  requereix_revisio_humana: true
-  problemes_principals:
-    - "Capítol IX de la Primera Part completament absent"
-    - "Numeració errada: Capítol VI etiquetat com VII (duplicat)"
-    - "Volum traduït insuficient (71% de l'original)"
+  estat: "validat"
+  qualitat: 8.0
+  data_revisio: "2026-04-29"
+  requereix_revisio_humana: false
+  notes_revisio: >-
+    Capítol IX de la Primera Part afegit (traducció completa).
+    Numeració de capítols corregida. Tots els capítols presents.
