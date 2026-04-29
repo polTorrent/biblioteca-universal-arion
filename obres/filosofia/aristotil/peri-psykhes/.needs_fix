@@ -1,0 +1,74 @@
+# REQUIERE RETRADUCCIÓ COMPLETA
+
+## Data diagnòstic: 2026-04-29
+## Prioritat: CRÍTICA (1)
+
+## Problema identificat
+La traducció actual NO és una traducció vàlida. Conté:
+- Missatges d'error del CLI (`[ERROR: El CLI ha retornat una resposta buida]`)
+- Diagnòstics i preguntes en lloc de traducció
+- Fragments d'altres obres (notes sobre "Constitució d'Atenes")
+- Contingut totalment alien al text original
+
+## Estat dels fitxers
+- `original.md`: 20,921 paraules ✅ CORRECTE (text grec autèntic d'Aristòtil)
+- `traduccio.md`: 467 paraules ❌ INCORRECTE (no és traducció)
+
+## Accions requerides
+
+### 1. RETRADUCCIÓ COMPLETA
+- La traducció ha de començar des de zero
+- Utilitzar el model `claude-sonnet-4-6` (filosofia, cost ~0.8 DIEM)
+- Seguir el protocol anti-al·lucinació estricte
+
+### 2. Verificacions obligatòries
+- Comptar unitats de verificació: cada capítol (Κεφάλαιον) és una unitat
+- L'original té 3 llibres (Βιβλίον Α, Β, Γ) amb múltiples capítols cadascun
+- Després de traduir CADA capítol, verificar corresponent amb l'original
+
+### 3. Estructura de la traducció
+```
+# Sobre l'Ànima
+*Aristòtil*
+
+Traduït del grec per Biblioteca Arion
+
+---
+
+## Llibre I (Βιβλίον Α)
+
+### Capítol 1
+[traducció del Κεφάλαιον 1]
+
+### Capítol 2
+[traducció del Κεφάλαιον 2]
+...
+
+## Llibre II (Βιβλίον Β)
+...
+
+## Llibre III (Βιβλίον Γ)
+...
+```
+
+### 4. Terminologia filosòfica clau
+- ψυχή → ànima
+- εἶδος → forma/eidos
+- ὕλη → matèria
+- ἐντελέχεια → entelèquia/acte
+- δύναμις → potència
+- νοῦς → nous/intel·lecte
+- αἴσθησις → sensació/percepció
+- φαντασία → imaginació
+
+### 5. Glossari obligatori
+Crear glossari.yml amb:
+- Terms clau amb transliteració
+- Traduccions catalanes
+- Context filosòfic
+
+## Model recomanat
+- `claude-sonnet-4-6` per retraducció (saldo actual: 12.68 DIEM, suficient)
+
+## Proper pas
+Executar retraducció quan el worker disposi de temps suficient (estimat: 2-3 hores per traducció completa amb verificació per capítols).
