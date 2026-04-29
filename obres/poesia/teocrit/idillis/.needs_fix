@@ -1,0 +1,13 @@
+PROBLEMA CRÍTIC:
+- original.md només conté metadata, CAP TEXT GREC
+- traduccio.md conté 7,396 paraules de traducció HALLUCINADA
+- Cal buscar el text grec original (Teòcrit, Εἰδύλλια)
+
+FONT RECOMANADA:
+- First1KGreek: https://github.com/OpenGreekAndLatin/First1KGreek
+- Perseus: https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman
+
+ACCIÓ:
+- Descarregar text grec complet dels 7 idil·lis originals
+- Descartar o marcar la traducció actual com a "font anglesa provisional"
+- Retraduir des del grec un cop disponible l'original
