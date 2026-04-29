@@ -4,45 +4,29 @@ obra:
   titol_llati: De Anima
   autor: Aristòtil
   autor_original: Ἀριστοτέλης
-  traductor: Editorial Clàssica
+  traductor: Biblioteca Arion
   any_original: c. 350 aC
   any_traduccio: 2026
   llengua_original: grec
-  descripcio: 'Tractat fonamental d''Aristòtil sobre la naturalesa de l''ànima (psyche),
+  descripció: >
+    Tractat fonamental d'Aristòtil sobre la naturalesa de l'ànima (psyche),
     considerat la primera obra sistemàtica de psicologia filosòfica occidental. En
-    tres llibres, examina les facultats de l''ànima —nutritiva, sensitiva i intel·lectiva—
+    tres llibres, examina les facultats de l'ànima —nutritiva, sensitiva i intel·lectiva—
     i la seva relació amb el cos, establint la doctrina hilemòrfica segons la qual
-    l''ànima és la forma (eidos) del cos natural que posseeix vida en potència.
+    l'ànima és la forma (eidos) del cos natural que posseeix vida en potència.
 
-    '
-  categoria: filosofia
-  font_original: https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg0086/tlg002/tlg0086.tlg002.1st1K-grc1.xml
-  libres: 3
-  estadistiques:
-    paraules_traduccio: 451
-seccions: 3
+categoria: filosofia
+font_original: https://github.com/OpenGreekAndLatin/First1KGreek/blob/master/data/tlg0086/tlg002/tlg0086.tlg002.1st1K-grc1.xml
+llibres: 3
+
 estadistiques:
-  paraules_original: 12500
-  paraules_traduccio: 14200
-  notes: 45
-  termes_glossari: 30
+  paraules_original: 20921
+  paraules_traduccio: 1100
+  notes: 0
+  termes_glossari: 0
+
 revisio:
-  estat: revisat
-  qualitat: 8.5
-  data_revisio: '2026-03-17'
-avaluacio_final:
-  data: '2026-03-17T08:04:39.234461'
-  puntuacions:
-    fidelitat: 0.0
-    veu_autor: 0.0
-    fluidesa: 0.0
-    correccio_linguistica: 0.0
-    coherencia: 0.0
-    global: 0.0
-  total_errors: 6
-  errors_critics: 0
-  errors_alts: 0
-  aprovat: false
-  requereix_revisio_humana: true
-  correccions_aplicades: 0
-  correccions_pendents: 6
+  estat: en_progres
+  qualitat: null
+  data_revisio: null
+  comentari: "Retraducció iniciada el 2026-04-29. Llibre I, Capítols 1-2 traduïts. Resta: Llibre I complet + Llibres II i III."
