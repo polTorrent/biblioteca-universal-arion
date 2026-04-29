@@ -5,6 +5,20 @@ Traduït del llatí per Biblioteca Arion
 
 ---
 
+## I
+
+Germània sencera queda separada de les Gàl·lies, de la Rècia i de la Pannònia pels rius Rin i Danubi, dels sàrmates i dacis pel mutu temor o per les muntanyes; la resta l'envolta l'Oceà, que abasta amples golfs i espais immensos d'illes, de les quals algunes nacions i reis han estat coneguts fa poc, descoberts per la guerra. El Rin, nascut d'un cim inaccessible i espadat de les Alpes rètiques, amb un gir moderat cap a l'oest es barreja amb l'Oceà septentrional. El Danubi, nascut del pendent suau i força baix del mont Abnoba, banya molts pobles fins que, per sis boques, es llança al mar Pontí; la setena boca és engolida per les mules.
+
+Quant als mateixos germans, crec que són indígenes i gens barrejats amb altres pobles per arribades ni hospitalitats, perquè antigament qui volia canviar de residència no ho feia per terra, sinó amb flotes, i l'oceà immens d'enfront i, per dir-ho així, hostil, és visitat per naus rares que venen del nostre món.
+
+Qui, deixant enrere el perill d'un mar horrorós i desconegut, deixaria l'Àsia o l'Àfrica o Itàlia per anar a Germània, terra informe, de cel aspre, trista de conreu i d'aspecte, si no fos la pàtria?
+
+Celebren en cants antics, que és entre ells l'únic gènere de memòria i d'anals, que Tuistó, déu nascut de la terra, va tenir un fill anomenat Mannus, origen i fundador del poble; a Mannus li assignen tres fills: dels quals pren nom els ingaevons, propers a l'Oceà; els herminions, del mig, i la resta, istaevons.
+
+Alguns, en la llibertat que dóna l'antiguitat, afirmen que del déu van néixer més fills i que hi ha més noms de pobles: marsis, gambrivis, sueus, vàndils, i que aquests són els noms verdaders i antics. Però el nom de «Germània» és recent i acabat d'afegir: els qui primer van travessar el Rin i van expulsar els gals, ara anomenats tungres, llavors eren anomenats germans; així el nom de la nació, no del poble, s'ha imposat poc a poc, perquè tots els que primer eren anomenats germans per por del vencedor, després ells mateixos, inventant el nom, es van anomenar germans.
+
+---
+
 ## III
 Recorden que també Hèrcules va viure entre ells, i quan van a la batalla el canten com el primer de tots els homes valents. Tenen uns cants que anomenen *barditus*: quan els reciten encenen els ànims i presagien la sort de la futura lluita amb el mateix cant.
 Segons com sona la formació de batalla, inspiren por o tremolor, i no sembla tant un concert de veus com de coratge. Busquen especialment l'aspror del so i un murmuri trencat, posant els escuts davant la boca perquè la veu ressoni més plena i greu amb l'eco.
