@@ -42,7 +42,7 @@ except ImportError:
     exit(1)
 
 # Afegir directori arrel al path per importar utils
-sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent.parent))
 from utils.epub_generator import GeneradorEPUB
 
 
@@ -359,9 +359,10 @@ class BuildSystem:
         self.root = project_root
         self.obres_dir = project_root / 'obres'
         self.docs_dir = project_root / 'docs'
-        self.templates_dir = project_root / 'web' / 'templates'
-        self.css_dir = project_root / 'web' / 'css'
-        self.js_dir = project_root / 'web' / 'js'
+        self.templates_dir = project_root / 'sistema' / 'web' / 'templates'
+        self.css_dir = project_root / 'sistema' / 'web' / 'css'
+        self.js_dir = project_root / 'sistema' / 'web' / 'js'
+        self.web_assets_dir = project_root / 'sistema' / 'web' / 'assets'
 
         # Jinja2 environment
         self.env = Environment(
@@ -1088,7 +1089,7 @@ def main():
     args = parser.parse_args()
 
     # Directori del projecte
-    project_root = Path(__file__).parent.parent
+    project_root = Path(__file__).parent.parent.parent  # sistema/web/build.py -> biblioteca-universal-arion/
 
     # Construir
     builder = BuildSystem(project_root)

@@ -1,0 +1,33 @@
+# REQUIERE REVISIÓ I CORRECCIÓ
+
+## Data diagnòstic: 2026-04-29
+## Prioritat: ALTA (2)
+
+## Problema identificat
+Traducció potencialment amb:
+- Faltes d'ortografia/català incorrecte
+- Possibles calc del castellà o paraules inventades
+- Qualitat insuficient per a narrativa literària
+
+## Model utilitzat
+**INCORRECTE**: Si s'ha utilitzat deepseek-v3.2 per a traducció, és un error.
+**CORRECTE**: Per a narrativa existencial (Dostoievski), s'ha d'utilitzar:
+- claude-sonnet-4-6 (mínim, ~0.8 DIEM)
+- Per a revisió rigorosa: gemini-3-1-pro-preview (~2.0 DIEM)
+
+## Model adequat per gènere
+| Gènere | Model | Cost |
+|--------|-------|------|
+| Narrativa/Assaig | claude-sonnet-4-6 | ~0.8 DIEM |
+| Filosofia/Poesia | claude-opus-4-7 | ~3.5 DIEM |
+| Fetch/diagnòstic | deepseek-v3.2 | ~0.2 DIEM |
+
+## Accions requerides
+1. Revisar la traducció completa amb gemini-3-1-pro-preview
+2. Identificar i corregir totes les faltes i calc
+3. Verificar fidelitat al original rus
+4. Actualitzar metadata.yml amb el model correcte utilitzat
+5. Eliminar aquest fitxer .needs_fix quan la qualitat sigui >= 7/10
+
+## Proper pas
+Executar revisió amb model adequat quan el saldo DIEM ho permeti (> 5 DIEM per a narrativa completa).
