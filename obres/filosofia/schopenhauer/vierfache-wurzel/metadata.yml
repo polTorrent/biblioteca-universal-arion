@@ -7,7 +7,12 @@ obra:
   any_original: 1813
   any_revisio: 1847
   any_edicio_base: 1864
-  llengua_original: "alemany"
+  llengua_original: "anglès"
+  traduccio_indirecta: true
+  nota_font: >
+    Traducció catalana feta a partir de la traducció anglesa de Karl Hillebrand (1907).
+    L'original alemany complet (1847) no està disponible en format digital accessible.
+    Edicions impreses: Meiner Verlag, Philosophische Bibliothek.
   categoria: "filosofia"
   tipus: "tractat filosòfic"
   descripcio: >
@@ -23,7 +28,7 @@ edicio:
   tipus: "crítica bilingüe"
   base: "Tercera edició (1864), editada per Julius Frauenstädt"
   font: "Internet Archive (domini públic)"
-  font_original: "https://archive.org/details/berdievierfache00teleigoog"
+  font_original: "Project Gutenberg (ebook 50966) - Traducció anglesa de Karl Hillebrand (1907)"
   notes_tipus:
     - "T: Nota del traductor"
     - "F: Nota filosòfica"

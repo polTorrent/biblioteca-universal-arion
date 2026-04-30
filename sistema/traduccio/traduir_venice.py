@@ -111,7 +111,7 @@ def load_memoria_contextual(obra_dir: Path) -> str:
     if not memoria_path.exists():
         return ""
     
-    withopen(memoria_path, "r", encoding="utf-8") as f:
+    with open(memoria_path, "r", encoding="utf-8") as f:
         try:
             memoria = json.load(f)
             # Retornar els últims paràgrafs traduïts per context

@@ -1,0 +1,53 @@
+{
+  "last_updated": "2026-04-30T19:30:00+02:00",
+  "status": "PAUSED",
+  "reason": "Saldo DIEM insuficient (1.08 DIEM). Reactivació automàtica a les 00:00 UTC.",
+  "pending_tasks": 3,
+  "active_translations": [
+    {
+      "obra": "aristotil/peri-psykhes",
+      "status": "paused",
+      "progres": "4.5%",
+      "blocked_reason": "Saldo insuficient (req: 8.0 DIEM, available: 1.08 DIEM)"
+    },
+    {
+      "obra": "petroni/cena-trimalchionis",
+      "status": "paused",
+      "progres": "26%",
+      "blocked_reason": "Saldo insuficient (req: 3.0 DIEM, available: 1.08 DIEM)"
+    },
+    {
+      "obra": "rumi/masnavi-seleccio-10-contes",
+      "status": "paused",
+      "progres": "8%",
+      "blocked_reason": "Saldo insuficient (req: 3.0 DIEM, available: 1.08 DIEM)"
+    }
+  ],
+  "needs_fix_works": [
+    {
+      "obra": "schopenhauer/vierfache-wurzel",
+      "status": "waiting_manual_fix",
+      "issue": "Traducció des d'anglès (no alemany)",
+      "action_needed": "Canviar llengua_original a 'anglès' al metadata.yml"
+    },
+    {
+      "obra": "teocrit/idillis",
+      "status": "waiting_original",
+      "issue": "Original grec mancantic",
+      "action_needed": "Trobar text grec complet"
+    },
+    {
+      "obra": "sade/justine",
+      "status": "waiting_config",
+      "issue": "Pipeline V2 requereix Claude API",
+      "action_needed": "Configurar API Anthropic o adaptar pipeline per Venice AI"
+    }
+  ],
+  "catalog_health": {
+    "total_works": 100,
+    "correct": 94,
+    "with_issues": 6,
+    "completion_rate": "94%"
+  },
+  "next_heartbeat": "2026-04-30T21:00:00+02:00"
+}
