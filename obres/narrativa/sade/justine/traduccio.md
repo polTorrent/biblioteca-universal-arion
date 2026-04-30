@@ -87,6 +87,9 @@ El que menys afavoreix els homes, el que menys valoren, el que més sobiranament
 Em vaig afanyar a explicar a la meva hostalera la recepció que m'havia fet la persona a casa de qui m'havia enviat; però quina va ser la meva sorpresa en veure aquella miserable cobrir-me de retrets en lloc de compartir el meu dolor. —Criatura enclenxa —em va dir amb còlera—, et penses que els homes són prou ximples per fer caritat a nenes com tu sense exigir res a canvi? El senyor Dubourg ha estat massa bo actuant com ho ha fet; al seu lloc, no t'hauria deixat sortir de casa seva sense haver-me complaït. Però ja que no vols aprofitar l'ajuda que t'ofereixo, arregla-te-les com vulguis; demà em deus diners, o és la presó. —Senyora, tingueu pietat… —Sí, sí, pietat; amb la pietat hom es mor de fam. —Però com voleu que ho faci? —Has de tornar a casa de Dubourg; l'has de satisfer, m'has de portar diners; el veuré, l'avisaré; arreglaré si puc les teves ximpleries; li faré les teves excuses, però pensa a comportar-te millor.
 Avergonyida i desesperada, sense saber què fer, veient-me durament rebutjada per tothom, gairebé sense recursos, vaig dir a madame Desroches (aquest era el nom de la meva hostalera) que estava decidida a tot per satisfer-la. Va anar a casa del financer, i em va dir en tornar que l'havia trobat molt irritat; que amb prou feines havia aconseguit doblegar-lo en el meu favor; que a força de súpliques, tanmateix, havia aconseguit persuadir-lo que em tornés a rebre l'endemà al matí; però que anés amb compte amb la meva conducta, perquè si se m.
 
+'`'json
+'`'
+
 Dubourg només es tornava més insolent; m'acusà dels errors de la seva pròpia debilitat... volgué reparar-los amb nous ultratges i invectives encara més mortificants. No hi hagué res que no em digués, res que no intentés. La seva pèrfida imaginació, la duresa del seu caràcter i la depravació dels costums l'empenyien a tot. La meva falta de destresa l'impacientà; estava lluny de voler actuar, ja era molt que m'hi prestés, els meus remordiments no s'han esvaït... Tanmateix, res no reeixí, la meva submissió deixà d'inflamar-lo. Malgrat que passés successivament de la tendresa al rigor... de l'esclavitud a la tirania... de l'aire de la decència als excessos de la grolleria, ens trobàrem esgotats l'un i l'altre, sense que pogués recobrar, per fortuna, el que calia per portar-me atacs més perillosos. Hi renuncià, em féu prometre de venir a trobar-lo l'endemà, i per assegurar-se que hi aniria, només em volgué donar la suma que devia a la Desroches. Vaig tornar, doncs, a casa d'aquesta dona, ben humiliada d'una tal aventura i ben resolta, passés el que passés, a no exposar-m'hi una tercera vegada. L'hi advertí en pagar-la, i llançant malediccions contra el bergant capaç d'abusar tan cruelment de la meva misèria. Però les meves imprecacions, lluny d'atreure sobre ell la còlera de Déu, només li van portar sort; vuit dies després vaig saber que aquest famós llibertí acabava d'obtenir del Govern una regència general que augmentava els seus ingressos en més de
 
 Des-roches vingué a dir-me un dia que havia trobat finalment una casa on em rebrien de bon grat, sempre que m'hi comportés bé. Oh! Cel, senyora, li vaig dir llançant-me emocionada als seus braços, aquesta condició és la mateixa que jo hi posaria, jutgeu si l'accepto amb plaer. L'home a qui havia de servir era un famós usurer de París, que s'havia enriquit no solament prestant sobre penyores, sinó fins i tot robant impunement el públic cada vegada que havia cregut poder fer-ho amb seguretat. Vivia al carrer Quincampoix, a un segon pis, amb una criatura de cinquanta anys, que anomenava la seva dona, i com a mínim tan dolenta com ell. Theresa, em digué aquest avar (tal era el nom que havia pres per amagar el meu...) Theresa, la primera virtut de casa meva és la probitat; si mai desvieu d'aquí ni la desena part d'un diner, us faré penjar, veus, filla meva. El poc de benestar de què gaudim la meva dona i jo, és el fruit dels nostres treballs immensos, i de la nostra perfecta sobrietat... — Mengeu molt, petita? — Algunes unces de pa al dia, senyor, li vaig respondre, aigua i una mica de sopa quan tinc la sort de tenir-ne. — Sopa!, cordons, sopa! Mireu, estimada, digué l'usurer a la seva dona, gemegueu dels progressos del luxe, aquesta busca feina, es mor de fam des de fa un any, i vol menjar sopa; a penes en fem una vegada tots els diumenges, nosaltres que treballem com a forçats; tindreu tres unces de pa al dia, filla meva, mitja ampolla d'aigua de riu, un vestit vell de la meva dona.
@@ -94,6 +97,8 @@ Des-roches vingué a dir-me un dia que havia trobat finalment una casa on em reb
 Us podeu imaginar fàcilment, senyora, que només en l'estat tan espantós en què em trobava podia acceptar un lloc així. No només hi havia molt més feina de la que les meves forces em permetien fer, sinó que com podia viure amb el que m'oferien? Tot i així, em vaig abstenir de fer la melindrosa i vaig començar a treballar aquell mateix vespre.
 Si la meva cruel situació permetés entretenir-vos un instant, senyora, quan només hauria de pensar a commoure-us, m'atreviria a explicar-vos alguns trets d'avarícia que vaig presenciar en aquella casa. Però una catàstrofe tan terrible per a mi m'hi esperava ja el segon any, que em resulta molt difícil entretenir-vos amb detalls divertits abans de parlar-vos de les meves desgràcies.
 Sabreu, tanmateix, senyora, que mai no tenien cap més llum a l'apartament del senyor du Harpin que la que robava del fanalet que, per sort, estava davant de la seva cambra. Mai cap dels dos no feia servir roba interior; emmagatzemaven la que jo feia, però no la tocaven mai. A les mànigues de l'armilla del senyor, així com a les de la bata de la senyora, hi havia unes punyetes velles cosides a la tela, que jo rentava cada dissabte al vespre. Ni llençols ni tovalloles, i tot això per evitar el blanqueig. Mai no bevien vi a casa seva, ja que l'aigua clara era, deia la senyora du Harpin, la beguda natural de l'home, la més sana i la menys perillosa. Cada vegada que tallaven el pa, col·locaven una cistella sota el ganivet per
+
+[ERROR: Claude CLI ha fallat (exit code 1): {"type":"result","subtype":"success","is_error":true,"api_error_status":null,"duration_ms":115,"duration_api_ms":0,"num_turns":1,"result":"Not logged in · Please run /login","stop_reason":"stop_sequence","session_id":"cba093a4-d885-4142-aa7a-bd17c3162e95","total_cost_usd":0,"usage":{"input_tokens":0,"cache_creation_input_tokens":0,"cache_read_input_tokens":0,"output_tokens":0,"server_tool_use":{"web_search_requests":0,"web_fetch_requests":0},"service_tier":"standard","cache_creation":{"ephemeral_1h_input_tokens":0,"ephemeral_5m_input_tokens":0},"inference_geo":"","iterations":[],"speed":"standard"},"modelUsage":,"permission_denials":[],"terminal_reason":"completed","fast_mode_state":"off","uuid":"0168d534-f4cc-4b2d-83b3-51b42469c3bf"}
 
 El senyor du Harpin va deixar passar gairebé un mes sense dir ni una paraula i sense mostrar el menor ressentiment pel refús que li havia fet. Va ser fins aproximadament el final del segon any de la meva estada a casa seva. Però una nit, quan acabava de retirar-me a la meva cambra per gaudir d'unes hores de repòs, vaig sentir de sobte com forçaven la meva porta cap endins. I vaig veure, amb espant, el senyor du Harpin conduint un comissari i quatre soldats de la guàrdia cap al meu llit.
 —Feu el vostre deure, senyor —va dir a l'oficial—. Aquesta desgracida m'ha robat un diamant de mil escuts. El trobareu a la seva cambra o damunt seu, el fet és cert.
@@ -109,14 +114,589 @@ Un vespre, potser només dos dies abans d'aquell en què havíem de perdre totes
 Ja us ho he dit, senyora: la mà del Cel que acabava de castigar la meva innocència, va afavorir el crim de la meva protectora. Es va declarar un incendi, va ser horrible, hi va haver vint-i-una persones que van morir cremades, però nosaltres ens en vam escapar. El mateix dia vam arribar a la cabana d'un caçador furtiu del bosc de Bondy, amic íntim de la nostra banda.
 —Aquí tens la llibertat, Thérèse —em va dir llavors la Dubois—, ara pots triar el tipus de vida que et plagui, però si he de donar-te un consell, és que renunciïs als actes virtuosos que, com veus, mai no t'han reeixit. Una delicadesa fora de lloc t'ha portat als peus del cadafal, un crim espantós m'en salva; mira per a què serveixen les bones accions al món, i si val la pena immolar-se per elles! Ets jove i bonica, Thérèse, en dos anys et faré rica; però no t'imaginis que et conduiré al seu temple pels senders de la virtut: cal, quan una vol fer camí, noia meva, emprendre més d'un ofici i servir més d'una intriga. Decideix-te, doncs, no tenim cap seguretat en aquesta cabana, cal que en marxem d'aquí a poques hores.
 
+[ERROR: [Errno 32] Broken pipe]
+
 Vols que sempre estiguem sotmesos i degradats, mentre aquesta classe que ens domina gaudeix de tots els favors de la fortuna? Vols que nosaltres només tinguem la pena, l'abatiment, el dolor, la necessitat, les llàgrimes, les humiliacions i el cadafal! No, no, Teresa, no. O aquesta Providència que veneres només mereix el nostre menyspreu, o aquestes no són pas les seves voluntats. Coneix-la millor, filla meva, i convence't d'això: des que ens situa en una circumstància on el mal ens esdevé necessari i ens deixa la possibilitat d'exercir-lo, és que aquest malserveix les seves lleis com el bé. Ella guanya tant amb l'un com amb l'altre. L'estat en què ens ha creats és la igualtat. Aquell qui l'altera no és més culpable que aquell qui cerca de restablir-la. Tots dos actuen segons impulsos rebuts, tots dos han de seguir aquests impulsos i gaudir-los.
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+'`'json
+'`'
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
 
 Cor de Ferro s'exaltava exposant les seves pèrfides màximes, i aviat el vaig veure en l'estat que tant m'havia espantat la vespra; volia, per donar més imperi a la lliçó, unir de seguida la pràctica al precepte; i les seves mans, malgrat les meves resistències, s'extraviaven cap a l'altar on el traïdor volia penetrar… Us ho he de confessar, senyora? Cegada per les seduccions d'aquest home vil; contenta, cedint una mica, de salvar allò que semblava més essencial; sense reflexionar sobre les inconseqüències dels seus sofismes ni sobre el que jo mateixa anava a arriscar, ja que aquest home deshonest, amb proporcions gegantines, no podia ni tan sols veure una dona pel lloc més permès, i que conduït per la seva maldat natural, no tenia assegurament cap altra finalitat que esguerrar-me; cegada per tot això, dic, estava a punt d'abandonar-me i, per virtut, tornar-me criminal; les meves resistències s'afeblien; ja senyor del tron, aquest insolent vencedor ja no s'ocupava més que de fixar-s'hi, quan es va sentir un soroll de carruatge al gran camí. Cor de Ferro deixa a l'instant els seus plaers pels seus deures; reuneix la seva gent i vola cap a nous crims. Poc després sentim crits, i aquests escelerats ensangonats tornen triomfants i carregats de botí. Marxem de pressa, diu Cor de Ferro, hem matat tres homes, els cadàvers són al camí, ja no hi ha seguretat per a nosaltres. El botí es reparteix, Cor de Ferro vol que jo tingui la meva part
 
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
 I si les lleis el retornen a la classe de la qual ha volgut sortir, el pitjor que pot passar és que perdi la vida, la qual cosa és una desgràcia infinitament menor que la d'existir en l'oprobre i en la misèria. Tenim doncs dues posicions: o bé el crim que ens fa feliços, o bé el patíbul que ens evita ser desgraciats. Pregunto, es pot dubtar, bella Teresa? I trobarà el vostre esperit un raonament que pugui combatre aquest raonament?
+
+[ERROR: [Errno 32] Broken pipe]
 
 Els primers homes, espantats dels fenòmens que els impressionaven, van creure necessàriament que un ésser sublim i desconegut n'havia dirigit el curs i la influència; és propi de la feblesa suposar o témer la força; l'esperit de l'home, encara massa infantil per cercar i trobar en el si de la Naturalesa les lleis del moviment —únic motor de tot el mecanisme que l'sorprenia—, va trobar més senzill suposar un motor a aquesta Naturalesa que veure-la motriu per si mateixa. I sense reflexionar que encara li costaria més edificar i definir aquest amo gegantesc que trobar en l'estudi de la Naturalesa la causa d'allò que l'sorprenia, va admetre aquest ésser sobirà i li va erigir cultes. Des d'aquest moment cada nació en va crear de similars als seus costums, als seus coneixements i al seu clima; aviat hi va haver a la terra tantes religions com pobles, aviat tants déus com famílies. Sota tots aquests ídols, tanmateix, era fàcil reconèixer aquest fantasma absurd, primer fruit de l'encegament humà. El vestien diferentment, però sempre era la mateixa cosa.
 Digueu-me, doncs, Therese: si uns imbècils desbarren sobre la creació d'una indigna quimera i sobre la manera de servir-la, se'n segueix que l'home savi hagi de renunciar a la felicitat certa i present de la seva vida? Ha de, com el gos d'Isop, deixar l'os per l'ombra i renunciar a gaudis reals per il·lusions? No, Therese, no, no és
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
+
+[ERROR: [Errno 32] Broken pipe]
 
 ---
 
