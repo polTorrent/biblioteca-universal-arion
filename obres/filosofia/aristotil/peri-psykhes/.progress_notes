@@ -1,0 +1,21 @@
+# Progrés de traducció - 2026-04-30
+
+## Estat actual
+- **Capítols 1-2:** ✅ Complets (936 paraules)
+- **Capítol 3:** 🔄 Iniciat
+
+## Primera frase traduïda (Capítol 3):
+> Cal examinar primer el moviment; perquè potser no només és fals que la substància de l'ànima sigui tal com diuen els qui afirmen que l'ànima és allò que es mou a si mateix o que és capaç de moure's, sinó que és una de les coses impossibles que li pertanyi el moviment.
+
+## Notes tècniques
+- Text grec amb Unicode causa problemes de codificació amb Venice API
+- Recomanat: utilitzar chunks més petits amb codificació UTF-8 explícita
+- Glossari disponible a glossari.yml (17 termes clau)
+
+## Següent pas
+- Continuar des de: "Ὅτι μὲν οὖν οὐκ ἀναγκαῖον..." (línia 2 del Capítol 3)
+- Model recomanat: claude-opus-4-7
+- Cost estimat: 2-3 DIEM per completar el Llibre I
+
+---
+Processat manualment el 2026-04-30, deixat pel Worker nocturn.
