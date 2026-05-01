@@ -67,8 +67,8 @@ plan_optimizations() {
     log "📊 Estat del pressupost:"
     echo "$budget_report" | grep -E "Saldo|Disponible|Recomanacions" >> "$LOG"
     
-    # Balance alt (>8 DIEM) → Tasques amb models superiors
-    if (( $(echo "$balance > 8.0" | bc -l) )); then
+    # Balance alt (>3 DIEM) → Tasques amb models superiors
+    if (( $(echo "$balance > 3.0" | bc -l) )); then
         log "💰 Saldo alt ($balance DIEM) - Utilitzant models superiors per tareas importants"
         tasks="PREMIUM"
     # Balance mitjà (5-8 DIEM) → Tasques amb models equilibrats
