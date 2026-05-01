@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-05-01T02:00:00+02:00",
+  "last_updated": "2026-05-01T04:16:06.429515",
   "status": "ACTIVE",
-  "reason": "Saldo DIEM restablert (13.40 DIEM). Tasques recuperades de failed/ a pending/.",
-  "pending_tasks": 3,
+  "reason": "Heartbeat executat. 7 tasques recuperades de failed/ a pending/.",
+  "pending_tasks": 7,
   "active_translations": [
     {
       "obra": "aristotil/peri-psykhes",

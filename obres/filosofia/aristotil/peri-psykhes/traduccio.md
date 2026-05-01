@@ -35,17 +35,29 @@ Sembla que també el que diuen els pitagòrics tendeix al mateix; car diuen uns 
 
 En el mateix sentit es dirigeixen tots els que diuen que l'ànima és el que es mou a si mateix; car tots semblen suposar que el moviment és el més propi de l'ànima, que les altres coses es mouen per l'ànima, i ella per ella mateixa, perquè no veuen res que mogui sense ser mogut.
 
+### Capítol 3
+
+Cal examinar primerament el que fa referència al moviment; car potser no només és fals que la seva essència sigui tal com diuen aquells que afirmen que l'ànima és allò que es mou a si mateix o que té la capacitat de moure's, sinó que és quelcom impossible que li pertanyi el moviment. Que no és necessari, doncs, que allò que mou es mogui també a si mateix, ja s'ha dit anteriorment. Tot allò que es mou, ho fa de dues maneres: o bé per accident o bé per si mateixa; i diem «per accident» tot allò que es mou pel fet d'estar en quelcom que es mou, com ara els navegants, ja que no es mouen de la mateixa manera que la nau: aquesta es mou per si mateixa, mentre que ells es mouen pel fet d'estar en allò que es mou. Això resulta evident en el cas de les parts [del cos]: el moviment propi dels peus és el caminar, i aquest és també [el moviment propi] dels homes; però no es dóna en els navegants en aquell moment.
+
+Atès que «moure's» es diu de dues maneres, ara examinem, pel que fa a l'ànima, si es mou per ella mateixa i participa del moviment. Havent-hi quatre menes de moviment —translació, alteració, disminució i creixement—, o bé es mouria amb un d'aquests, o amb diversos, o amb tots. I si es mou no per accident, el moviment li pertanyeria per naturalesa; i si això és així, també un lloc, car tots els moviments esmentats es donen en un lloc.
+
+Si l'essència de l'ànima consisteix a moure's a si mateixa, el moviment no li pertanyerà per accident, com li pertany al blanc o al de tres colzades; perquè aquests també es mouen, però per accident, ja que es mou el cos al qual pertanyen. Per això tampoc no tenen un lloc; en canvi, l'ànima en tindrà, si realment participa per naturalesa del moviment.
+
+A més, si es mou per naturalesa, també podria moure's per força; i si per força, també per naturalesa. De la mateixa manera s'esdevé també respecte al repòs: car allà cap on es mou per naturalesa, també hi reposa per naturalesa; i igualment, allà cap on es mou per força, també hi reposa per força. Però quins moviments i quins reposos violents serien els de l'ànima, no és fàcil d'explicar ni tan sols per a aquells que ho volguessin imaginar.
+
+A més, si es mou cap amunt, serà foc; i si cap avall, terra, ja que aquests són els moviments propis d'aquests cossos. I el mateix raonament val també per als elements intermedis. A més, com que és evident que ella mou el cos, és raonable que li imprimeixi els mateixos moviments amb què ella mateixa es mou. I si és així, també és veritat dir, invertint la proposició, que el moviment amb què el cos es mou és també el seu propi. Ara bé, el cos es mou amb moviment de translació; per tant, també l'ànima canviaria segons el lloc.
+
 ---
 
-*Traducció en progrés. Llibre I, Capítols 1-2 de 5 completats.*
+*Traducció en progrés. Llibre I, Capítols 1-3 (parcial) completats.*
 
 <!-- VERIFICACIÓ ANTI-AL·LUCINACIÓ
 Gènere: filosofia
 Unitat de verificació: paràgraf
-Original: Capítols 1-2 (Κεφάλαιον 1-2), Llibre I
-Traducció: Unitats corresponents traduïdes
+Original: Capítols 1-3 (Κεφάλαιον 1-3), Llibre I (parcial)
+Traducció: Capítols 1-2 complets, Capítol 3 iniciat (6 primers fragments)
 Coincideix: SÍ
-Elements de risc tractats: terminologia filosòfica (ψυχή→ànima, οὐσία→substància, ἐντελέχεια→entelèquia)
-Primers mots última unitat original: "Ἐπισκοποῦντας δὲ περὶ ψυχῆς..."
-Primers mots última unitat traducció: "En ocupar-nos de la investigació..."
+Elements de risc tractats: terminologia filosòfica (ψυχή→ànima, οὐσία→substància, κίνησις→moviment)
+Primers mots última unitat original: "Ἔτι δ' εἰ μὲν ἄνω..."
+Primers mots última unitat traducció: "A més, si es mou cap amunt..."
 -->
