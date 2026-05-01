@@ -7,7 +7,7 @@ obra:
   any_original: 1813
   any_revisio: 1847
   any_edicio_base: 1864
-  llengua_original: "anglès"
+llengua_original: "alemany"
   traduccio_indirecta: true
   nota_font: >
     Traducció catalana feta a partir de la traducció anglesa de Karl Hillebrand (1907).
@@ -15,20 +15,20 @@ obra:
     Edicions impreses: Meiner Verlag, Philosophische Bibliothek.
   categoria: "filosofia"
   tipus: "tractat filosòfic"
-  descripcio: >
+  descripció: >
     Tesi doctoral de Schopenhauer que estableix les bases del seu sistema
     filosòfic. Demostra que el principi de raó suficient ("res no existeix
-    sense raó") té quatre formes irreductibles: raó del devenir (causalitat),
+sense raó") té quatre formes irreductibles: raó del devenir (causalitat),
     raó del conèixer (lògica), raó del ser (matemàtiques) i raó de l'actuar
     (motivació). L'obra critica les confusions dels filòsofs anteriors
     (Descartes, Spinoza, Leibniz, Wolff, Kant) i posa els fonaments per a
     "El món com a voluntat i representació".
 
-edicio:
+edició:
   tipus: "crítica bilingüe"
   base: "Tercera edició (1864), editada per Julius Frauenstädt"
   font: "Internet Archive (domini públic)"
-  font_original: "Project Gutenberg (ebook 50966) - Traducció anglesa de Karl Hillebrand (1907)"
+  font_original: "https://www.gutenberg.org/ebooks/50966 - Traducció anglesa de Karl Hillebrand (1907)"
   notes_tipus:
     - "T: Nota del traductor"
     - "F: Nota filosòfica"
