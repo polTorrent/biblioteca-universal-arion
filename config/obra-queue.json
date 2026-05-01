@@ -1,16 +1,19 @@
 {
-  "last_updated": "2026-05-01T04:16:06.429515",
+  "last_updated": "2026-05-01T06:07:30Z",
   "status": "ACTIVE",
-  "reason": "Heartbeat executat. 7 tasques recuperades de failed/ a pending/.",
-  "pending_tasks": 7,
+  "reason": "Heartbeat executat. 4 tasques recuperades de failed/ a pending/. Worker inactiu.",
+  "pending_tasks": 4,
   "active_translations": [
     {
       "obra": "aristotil/peri-psykhes",
       "status": "pending",
-      "progres": "4.5%",
+      "progres": "7%",
       "model_recomanat": "claude-opus-4-7",
       "cost_estimat": 3.5,
-      "prioritat": 2
+      "prioritat": 2,
+      "retries": 2,
+      "can_execute": false,
+      "motivacio": "Saldo insuficient (6.48 <8.0 DIEM necessaris)"
     },
     {
       "obra": "petroni/cena-trimalchionis",
@@ -18,7 +21,8 @@
       "progres": "26%",
       "model_recomanat": "claude-sonnet-4-6",
       "cost_estimat": 0.8,
-      "prioritat": 3
+      "prioritat": 3,
+      "retries": 1
     },
     {
       "obra": "rumi/masnavi-seleccio-10-contes",
@@ -26,46 +30,42 @@
       "progres": "8%",
       "model_recomanat": "claude-sonnet-4-6",
       "cost_estimat": 0.8,
-      "prioritat": 4
+      "prioritat": 4,
+      "retries": 1
     }
   ],
-  "needs_fix_works": [
-    {
-      "obra": "teocrit/idillis",
-      "status": "waiting_original",
-      "issue": "Original grec mancantic",
-      "action_needed": "Trobar text grec complet"
-    },
-    {
-      "obra": "sade/justine",
-      "status": "waiting_config",
-      "issue": "Pipeline V2 requereix Claude API",
-      "action_needed": "Configurar API Anthropic o adaptar pipeline per Venice AI"
-    }
-  ],
-  "fixing_works": [
-    {
-      "obra": "cicero/laelius-de-amicitia",
-      "status": "fixing"
-    },
-    {
-      "obra": "nietzsche/die-philosophie-im-tragischen-zeitalter-der-griechen",
-      "status": "fixing"
-    },
-    {
-      "obra": "txekhov/sala-numero-6",
-      "status": "fixing"
-    },
-    {
-      "obra": "herman-melville/bartleby-lescrivent",
-      "status": "fixing"
-    }
-  ],
+  "needs_fix_works": [],
+  "fixing_works": [],
   "catalog_health": {
-    "total_works": 100,
-    "correct": 94,
-    "with_issues": 6,
-    "completion_rate": "94%"
+    "total_works": 103,
+    "validated": 45,
+    "without_validation": 58,
+    "needs_fix": 0,
+    "completion_rate": "44%",
+    "health_score": "94%"
   },
-  "next_heartbeat": "2026-05-01T04:00:00+02:00"
+  "diem_status": {
+    "balance": 6.479366086138224,
+    "remaining_requests": 149,
+    "remaining_tokens": 3000000,
+    "activity_level": "BALANCED"
+  },
+  "task_recovery": {
+    "recovered_from_failed": 4,
+    "max_retries_reached": 3,
+    "retries_remaining": {
+      "aristotil_psykhes": 2,
+      "petroni_cena": 1,
+      "rumi_masnavi": 1,
+      "fix_petroni": 2
+    }
+  },
+  "worker_status": "INACTIVE",
+  "web_status": "NEEDS_UPDATE",
+  "critical_issues": [
+    "fix-translate-aristotil-peri-psykhes: max retries reached -manual intervention required",
+    "fix-translate-rumi-masnavi: max retries reached - manual intervention required",
+    "fix-translate-sade-justine: max retries reached - manual intervention required"
+  ],
+  "next_heartbeat": "2026-05-01T08:00:00Z"
 }
