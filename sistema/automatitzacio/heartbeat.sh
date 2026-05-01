@@ -74,11 +74,11 @@ add_task() {
     if [ "$(count_pending)" -ge "$MAX_PENDING" ]; then
         return 1
     fi
-    # Deduplicació via brain (si disponible)
-    if [ "$BRAIN_LOADED" = true ]; then
+# Deduplicació via brain (si disponible)
+    if [ "$BRAIN_LOADED" = true ] && type brain_check_duplicate &>/dev/null; then
         # Extreure objecte de la instrucció (primer argument significatiu)
         local object
-        object=$(echo "$instruction" | grep -oP "(?<='|')[^'\"]+(?='|')" | head -1)
+        object=$(echo "$instruction" | grep -oP "(?<='|')[^'\"]+(?='|\")" | head -1)
         [ -z "$object" ] && object=$(echo "$instruction" | head -c 60 | tr ' ' '-')
         if ! brain_check_duplicate "$type" "$object"; then
             return 1
