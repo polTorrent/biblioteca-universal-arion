@@ -42,14 +42,52 @@ fi
 # Si brain està carregat, reutilitzem les seves funcions.
 # Si no, en tenim de pròpies.
 OPENCLAW_SERVICE="openclaw-gateway.service"
+HEARTBEAT_STOPPED_OPENCLAW=false
 
-# Funcions buides (el servei OpenClaw ja no és necessari per al worker)
 _heartbeat_stop_openclaw() {
-    : # No-op: el worker de Venice funciona independentment d'OpenClaw
+    # Si el brain ja l'ha parat, no repetir
+    if [ "$BRAIN_LOADED" = true ] && [ "$BRAIN_STOPPED_OPENCLAW" = true ]; then
+        return
+    fi
+    if [ "$HEARTBEAT_STOPPED_OPENCLAW" = true ]; then
+        return
+    fi
+    if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+        log "🛑 Parant OpenClaw abans de tocar ~/.openclaw/..."
+        systemctl --user stop "$OPENCLAW_SERVICE" 2>/dev/null
+        local tries=0
+        while systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
+            sleep 1
+            tries=$((tries + 1))
+        done
+        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+            log "   ⚠️ Servei encara actiu després de 10s. Forçant kill..."
+            systemctl --user kill "$OPENCLAW_SERVICE" 2>/dev/null
+            sleep 2
+        fi
+        HEARTBEAT_STOPPED_OPENCLAW=true
+        log "   ✅ OpenClaw aturat"
+    else
+        log "   ℹ️ OpenClaw ja estava aturat"
+    fi
 }
 
 _heartbeat_start_openclaw() {
-    : # No-op: el worker de Venice funciona independentment d'OpenClaw
+    if [ "$HEARTBEAT_STOPPED_OPENCLAW" = true ]; then
+        log "🚀 Reiniciant OpenClaw..."
+        systemctl --user start "$OPENCLAW_SERVICE" 2>/dev/null
+        local tries=0
+        while ! systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
+            sleep 1
+            tries=$((tries + 1))
+        done
+        if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
+            log "   ✅ OpenClaw reiniciat correctament"
+        else
+            log "   ❌ ERROR: OpenClaw no ha arrencat! Comprova amb: systemctl --user status $OPENCLAW_SERVICE"
+        fi
+        HEARTBEAT_STOPPED_OPENCLAW=false
+    fi
 }
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
