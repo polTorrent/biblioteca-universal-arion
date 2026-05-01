@@ -1,13 +1,9 @@
 #!/bin/bash
 # =============================================================================
-# claude-worker-mini.sh v3 — Worker autònom amb validació post-execució
+# venice-worker.sh — Worker autònom amb Venice AI (DeepSeek V4 Pro)
 # =============================================================================
-# Millores sobre v2:
-#   - VALIDACIÓ POST-EXECUCIÓ: comprova que Claude ha creat/modificat fitxers
-#   - DETECCIÓ DE PLANS: detecta quan Claude només genera un pla sense executar
-#   - INSTRUCCIONS REFORÇADES: prefix anti-pla a totes les instruccions
-#   - VALIDACIÓ TRADUCCIONS: comprova que el directori de l'obra existeix
-#   - Tot el que ja tenia v2 (retry, safety limits, rotació, etc.)
+# Reemplaça claude-worker-mini.sh per funcionar amb Venice AI
+# Model per defecte: deepseek-v4-pro (el més potent disponible)
 # =============================================================================
 
 set -uo pipefail
@@ -15,11 +11,11 @@ set -uo pipefail
 # ── Configuració ──────────────────────────────────────────────────────────────
 TASKS_DIR="$HOME/.openclaw/workspace/tasks"
 PROJECT_DIR="$HOME/biblioteca-universal-arion"
-LOG="$HOME/claude-worker.log"
+LOG="$HOME/venice-worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
 
 MAX_RETRIES=3                # Intents per tasca abans de marcar com failed
-MAX_CONSECUTIVE_FAILS=3      # Pausa llarga si N tasques seguides fallen (era 5, reduït a 3)
+MAX_CONSECUTIVE_FAILS=3      # Pausa llarga si N tasques seguides fallen
 COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60             # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
@@ -28,13 +24,16 @@ TASK_TIMEOUT=1800            # 30 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 
+# Model de Venice AI a utilitzar
+VENICE_MODEL="deepseek-v4-pro"
+VENICE_CLI="$HOME/.openclaw/workspace/skills/venice-ai/scripts/venice.py"
+
 # ── Prefix anti-pla (s'afegeix a TOTES les instruccions) ─────────────────────
 EXEC_PREFIX="IMPORTANT: Executa les accions directament. NO generis plans, llistes de passos, ni propostes. Crea els fitxers, escriu el contingut, i fes els canvis DIRECTAMENT. Si necessites crear un directori, crea'l. Si necessites escriure un fitxer, escriu-lo. MAI responguis amb 'El pla és...' o 'Els passos serien...'. ACTUA.
 
 "
 
 # ── Comptador persistent d'errors consecutius ────────────────────────────────
-# DEFINIT ABANS D'USAR-SE (línia 47 original estava DESPRÉS de la crida)
 load_consecutive_errors() {
     if [ -f "$CONSECUTIVE_ERRORS_FILE" ]; then
         CONSECUTIVE_FAILS=$(cat "$CONSECUTIVE_ERRORS_FILE" 2>/dev/null || echo 0)
@@ -110,7 +109,7 @@ rotate_done() {
     [ $count -gt 0 ] && log "🧹 Rotació: $count tasques antigues eliminades de done/"
 }
 
-# ── Resum diari ───────────────────────────────────────────────────────────────
+# ── Resum diari ───────────────────────────────────────────────
 daily_summary() {
     local new_day=$(date '+%Y-%m-%d')
     if [ "$new_day" != "$TODAY" ]; then
@@ -128,7 +127,7 @@ json_field() {
     python3 -c "import json,sys; d=json.load(open(sys.argv[1])); print(d.get(sys.argv[2],''))" "$1" "$2" 2>/dev/null
 }
 
-# ── NOVA: Comprovar si hi ha canvis reals al repositori ───────────────────────
+# ── Comprovar si hi ha canvis reals al repositori ─────────────────────────────
 check_real_changes() {
     cd "$PROJECT_DIR"
     # Comprovar fitxers nous o modificats (tracked + untracked)
@@ -139,11 +138,11 @@ check_real_changes() {
     echo "$total"
 }
 
-# ── NOVA: Detectar si l'output és només un pla sense execució ─────────────────
+# ── Detectar si l'output és només un pla sense execució ─────────────────────────
 is_plan_only() {
     local output="$1"
     
-    # Patrons que indiquen que Claude ha generat un pla en lloc d'executar
+    # Patrons que indiquen que s'ha generat un pla en lloc d'executar
     local plan_patterns=(
         "El pla és"
         "El pla proposa"
@@ -175,7 +174,7 @@ is_plan_only() {
     return 1  # No és un pla
 }
 
-# ── NOVA: Validació específica per tipus de tasca ─────────────────────────────
+# ── Validació específica per tipus de tasca ─────────────────────────────────────
 validate_task_result() {
     local task_type="$1"
     local task_id="$2"
@@ -223,50 +222,46 @@ validate_task_result() {
     return 0
 }
 
-# ── Executar tasca amb timeout ────────────────────────────────────────────────
+# ── Executar tasca amb Venice AI ────────────────────────────────────────────────
 run_task() {
     local instruction="$1"
     local result=""
     local exit_code=1
 
-    echo "[$(date '+%Y-%m-%d %H:%M:%S')] 🔧 DEBUG: Llançant claude (timeout=$TASK_TIMEOUT)" >> "$LOG"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S')] 🔧 DEBUG: Llançant Venice AI (model=$VENICE_MODEL, timeout=$TASK_TIMEOUT)" >> "$LOG"
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] 🔧 DEBUG: Instrucció: ${instruction:0:120}..." >> "$LOG"
 
     # IMPORTANT: Afegir prefix anti-pla a la instrucció
     local full_instruction="${EXEC_PREFIX}${instruction}"
 
-    # Crida DIRECTA a claude amb setsid per evitar el problema del PTY
-    # Escriu output en temps real a /tmp/claude-live.txt per al dashboard
-    local LIVE_LOG="/tmp/claude-live.txt"
+    # Fitxer per a l'output en temps real
+    local LIVE_LOG="/tmp/venice-live.txt"
     echo "[$(date '+%H:%M:%S')] ── Tasca: ${instruction:0:80}..." > "$LIVE_LOG"
-    (cd "$PROJECT_DIR" && unset CLAUDECODE && timeout "$TASK_TIMEOUT" setsid -w claude -p "$full_instruction" \
-        --max-turns 25 \
-        --add-dir "$PROJECT_DIR" \
-        --allowedTools "Read" "Glob" "Grep" "Edit" "Write" \
-        "Bash(cat:*)" "Bash(grep:*)" "Bash(ls:*)" "Bash(find:*)" \
-        "Bash(python3:*)" "Bash(python:*)" "Bash(pip:*)" "Bash(pip3:*)" \
-        "Bash(git add:*)" "Bash(git commit:*)" "Bash(git push:*)" \
-        "Bash(head:*)" "Bash(tail:*)" "Bash(wc:*)" "Bash(mkdir:*)" \
-        "Bash(sed:*)" "Bash(cp:*)" "Bash(mv:*)" "Bash(rm:*)" \
-        "Bash(touch:*)" "Bash(echo:*)" "Bash(date:*)" "Bash(tee:*)" \
-        "Bash(curl:*)" "Bash(wget:*)" "Bash(cd:*)" \
-        --output-format text 2>&1) | tee -a "$LIVE_LOG" > /tmp/claude-code-result.txt && exit_code=0 || exit_code=$?
-    result=$(cat /tmp/claude-code-result.txt)
+
+    # Crida a Venice AI amb DeepSeek V4 Pro
+    # Utilitzem el CLI de Venice amb el model més potent
+    result=$(cd "$PROJECT_DIR" && timeout "$TASK_TIMEOUT" python3 "$VENICE_CLI" chat \
+        --model "$VENICE_MODEL" \
+        --max-tokens 16000 \
+        --temperature 0.7 \
+        --stream \
+        "$full_instruction" 2>&1 | tee -a "$LIVE_LOG")
+    exit_code=$?
 
     # 124 = timeout va matar el procés
     if [ $exit_code -eq 124 ]; then
         log "⏰ TIMEOUT després de ${TASK_TIMEOUT}s"
     fi
 
-    # Detectar auth error
-    if echo "$result" | grep -qi "authentication_error\|OAuth token has expired\|Failed to authenticate"; then
-        log "🔑 AUTH ERROR: Token caducat! Executa 'claude auth login'"
+    # Detectar errors d'API
+    if echo "$result" | grep -qi "authentication_error\|API key\|invalid.*key\|unauthorized"; then
+        log "🔑 AUTH ERROR: Clau API Venice invàlida o expirada!"
         echo "AUTH_ERROR"
         return 98
     fi
 
     # Detectar rate limit
-    if echo "$result" | grep -qi "rate.limit\|too many requests\|usage.limit\|please wait\|capacity\|try again in\|exceeded.*limit\|limit.*exceeded"; then
+    if echo "$result" | grep -qi "rate.limit\|too many requests\|please wait\|try again\|capacity"; then
         log "⚠️ RATE LIMIT detectat!"
         echo "RATE_LIMIT_HIT"
         return 99
@@ -302,7 +297,7 @@ print(d['retries'])
 " "$task_file" 2>/dev/null
 }
 
-# ── NOVA: Reforçar instrucció quan es detecta un pla ─────────────────────────
+# ── Reforçar instrucció quan es detecta un pla ─────────────────────────
 reinforce_instruction() {
     local original="$1"
     local attempt="$2"
@@ -314,7 +309,7 @@ REGLES ESTRICTES:
 - NO escriguis plans, llistes de passos, ni propostes
 - CREA els fitxers directament amb la tool Write
 - ESCRIU el contingut complet dins dels fitxers  
-- FESA mkdir per crear directoris
+- FES mkdir per crear directoris
 - CADA acció s'ha de FER, no descriure
 
 TASCA ORIGINAL (EXECUTA-LA ARA):
@@ -326,9 +321,9 @@ EOF
 # MAIN LOOP
 # =============================================================================
 acquire_lock
-log "🚀 Worker mini v3 iniciat (PID $$)"
+log "🚀 Venice Worker iniciat (PID $$) — Model: $VENICE_MODEL"
 log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, timeout=${TASK_TIMEOUT}s"
-log "   NOU v3: Validació post-execució + detecció plans + instruccions reforçades"
+log "   Validació post-execució + detecció plans + instruccions reforçades"
 
 while true; do
     daily_summary
@@ -389,7 +384,7 @@ if tasks:
         log "⚠️ No s'ha pogut moure la tasca a running/ (race condition). Saltant."
         continue
     fi
-    # Verificar que el mv ha funcionat (mv -n no sobreescriu però pot fallar silenciosament)
+    # Verificar que el mv ha funcionat
     if [ ! -f "$TASKS_DIR/running/$TASK_BASENAME" ]; then
         log "⚠️ Fitxer no trobat a running/ després de mv. Saltant."
         continue
@@ -431,21 +426,21 @@ if tasks:
 
     # ── Auth error → parar ───────────────────────────────────────────
     if [ $EXIT -eq 98 ]; then
-        log "🔑 AUTH ERROR — Worker aturat. Executa 'claude auth login' i reinicia."
+        log "🔑 AUTH ERROR — Worker aturat. Comprova VENICE_API_KEY."
         mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/" 2>/dev/null
         exit 1
     fi
 
-    # ── Max turns → validar abans de completar ───────────────────────
-    if echo "$RESULT" | grep -q "Reached max turns"; then
+    # ── Max tokens (output truncat) → validar abans de completar ─────
+    if echo "$RESULT" | grep -q "max.*token\|truncated\|cut off"; then
         CHANGES=$(check_real_changes)
         if [ "$CHANGES" -gt 0 ]; then
-            log "🔄 Max turns per $TASK_ID (${DURATION}s) — $CHANGES fitxers canviats → completant"
+            log "🔄 Output truncat per $TASK_ID (${DURATION}s) — $CHANGES fitxers canviats → completant"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
             reset_consecutive_errors
         else
-            log "🔄 Max turns per $TASK_ID (${DURATION}s) — SENSE canvis reals → failed"
+            log "🔄 Output truncat per $TASK_ID (${DURATION}s) — SENSE canvis reals → failed"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
             CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1))
             save_consecutive_errors
@@ -465,10 +460,10 @@ if tasks:
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
             reset_consecutive_errors
-                sleep $COOLDOWN_OK
+            sleep $COOLDOWN_OK
         else
             # ── PLA SENSE ACCIÓ: retry amb instrucció reforçada ───────
-            log "⚠️ $TASK_ID: Claude va generar output però NO va executar res (${DURATION}s)"
+            log "⚠️ $TASK_ID: Venice va generar output però NO va executar res (${DURATION}s)"
             log "   Output (primeres 200 chars): $(echo "$RESULT" | head -5 | tr '\n' ' ' | cut -c1-200)"
             
             # Marcar al JSON que l'últim intent va ser un pla
@@ -496,7 +491,7 @@ print(d['retries'])
                 save_consecutive_errors
                 sleep $COOLDOWN_FAIL
             fi
-            fi
+        fi
 
     else
         # ── FAIL: decidir retry o failed ──────────────────────────────

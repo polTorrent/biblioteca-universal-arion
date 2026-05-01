@@ -1,18 +1,19 @@
 #!/bin/bash
-# Iniciar worker amb nohup (tmux no funciona amb claude)
+# Iniciar worker Venice AI amb nohup
+# El worker usa DeepSeek V4 Pro per totes les tasques
+
 cd ~/biblioteca-universal-arion
 
-# Matar worker anterior si existeix
-if [ -f /tmp/worker.pid ]; then
-    OLD_PID=$(cat /tmp/worker.pid)
-    kill $OLD_PID 2>/dev/null
-    sleep 2
-fi
+# Matem qualsevol worker antic de claude (si existeix)
+pkill -f "claude-worker" 2>/dev/null || true
+sleep 1
 
-# Moure tasques running a pending
-mv ~/.openclaw/workspace/tasks/running/*.json ~/.openclaw/workspace/tasks/pending/ 2>/dev/null
+# Netegem el lockfile si existeix
+rm -f ~/.openclaw/workspace/tasks/worker.lock 2>/dev/null
 
-# Iniciar
-nohup bash sistema/automatitzacio/claude-worker-mini.sh > /dev/null 2>&1 &
-echo $! > /tmp/worker.pid
-echo "✅ Worker iniciat (PID $!)"
+# Iniciem el worker nou
+nohup bash sistema/automatitzacio/venice-worker.sh > /dev/null 2>&1 &
+
+echo "✅ Venice Worker iniciat (PID $!)"
+echo "   Logs: tail -f ~/venice-worker.log"
+echo "   Status: bash sistema/automatitzacio/worker-status.sh"

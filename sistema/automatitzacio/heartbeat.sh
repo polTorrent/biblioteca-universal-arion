@@ -147,11 +147,11 @@ check_diem() {
 
 # ── Comprovació Worker ────────────────────────────────────────────────────────
 check_worker() {
-    if pgrep -f "claude-worker-mini" > /dev/null 2>&1; then
-        log "✅ Worker actiu"
+    if pgrep -f "venice-worker" > /dev/null 2>&1; then
+        log "✅ Venice Worker actiu"
         return
     fi
-    log "⚠️ Worker NO actiu. Reiniciant (lleuger)..."
+    log "⚠️ Worker NO actiu. Reiniciant (Venice AI / DeepSeek V4 Pro)..."
     # Netejar lockfile orfe
     if [ -f "$TASKS_DIR/worker.lock" ]; then
         local old_pid
@@ -165,9 +165,9 @@ check_worker() {
         [ -f "$f" ] && mv "$f" "$TASKS_DIR/pending/"
     done
     # Reiniciar amb nohup (independent de tmux)
-    nohup bash "$PROJECT/sistema/automatitzacio/claude-worker-mini.sh" >> "$LOG" 2>&1 &
+    nohup bash "$PROJECT/sistema/automatitzacio/venice-worker.sh" >> "$LOG" 2>&1 &
     disown
-    log "✅ Worker reiniciat (PID $!)"
+    log "✅ Venice Worker reiniciat (PID $!)"
 }
 
 # =============================================================================
