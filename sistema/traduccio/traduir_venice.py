@@ -28,7 +28,7 @@ VENICE_SCRIPT = Path.home() / ".openclaw" / "workspace" / "skills" / "venice-ai"
 DEFAULT_MODEL = "claude-sonnet-4-6"
 CHUNK_SIZE = 1000  # Caràcters per chunk (reduït per evitar timeouts)
 MAX_RETRIES = 3
-VENICE_TIMEOUT = 900  # 15 minuts per models grans (Opus)
+VENICE_TIMEOUT = 1200  # 20 minuts per models grans (Opus/DeepSeek)
 
 # Model segons gènere
 GENRE_MODELS = {
