@@ -1,43 +1,14 @@
 {
-  "traduccions": {
-    "πολιτεια": {
-      "original": "πολιτεία",
-      "traduccio": "constitució, govern, sistema polític",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+  "ultim_context": "viat, potser, infinits en nombre, els que se'n deriven. Sigui, doncs, que l'ànima conegui i percebi allò de què cadascun d'aquests està compost; però el conjunt, amb què el coneixerà o el percebrà? Per exemple, què és un déu o un home o la carn o l'os? I igualment qualsevol altra cosa composta: car no és pel fet que els elements estiguin disposats de qualsevol manera que esdevé cadascuna d'aquestes coses, sinó segons una certa proporció i composició, tal com diu també Empèdocles parlant de l'os.",
+  "timestamp": 1777600723.4916177,
+  "historial": [
+    {
+      "context": "s en els principis, també constitueixen l'ànima a partir dels contraris; els qui posen un dels contraris, per exemple el calent o el fred o alguna cosa semblant, posen també l'ànima com una d'aquestes coses. Per això segueixen els noms: els uns diuen el calent, perquè per això s'anomena també «viure» (*zēn*); els altres, el fred, perquè per la respiració i el refredament se'n diu «ànima» (*psychē*).\n\nAquestes són, doncs, les coses transmeses sobre l'ànima, i les causes per les quals parlen així.",
+      "timestamp": 1777600539.5593004
     },
-    "βασιλεια": {
-      "original": "βασιλεία",
-      "traduccio": "reialesa, monarquia",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "αθηναιοι": {
-      "original": "Ἀθηναῖοι",
-      "traduccio": "atenesos",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "ιωνες": {
-      "original": "Ἴωνες",
-      "traduccio": "jonis",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "απολλων πατρωος": {
-      "original": "Ἀπόλλων Πατρῷος",
-      "traduccio": "Apol·lo Paternal",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "viat, potser, infinits en nombre, els que se'n deriven. Sigui, doncs, que l'ànima conegui i percebi allò de què cadascun d'aquests està compost; però el conjunt, amb què el coneixerà o el percebrà? Per exemple, què és un déu o un home o la carn o l'os? I igualment qualsevol altra cosa composta: car no és pel fet que els elements estiguin disposats de qualsevol manera que esdevé cadascuna d'aquestes coses, sinó segons una certa proporció i composició, tal com diu també Empèdocles parlant de l'os.",
+      "timestamp": 1777600723.4917848
     }
-  },
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  ]
 }
