@@ -1,0 +1,75 @@
+CRÍTIC
+
+## Estat: CRÍTIC 🔴
+
+## Descripció del problema
+
+**Original inexistent:** El fitxer `original.md` conté només 12 línies amb metadades i notes, però NO conté el text grec original.
+
+**Dades:**
+- original.md: 12 línies (527 bytes)
+- traduccio.md: 1323 línies (40,701 bytes)
+- Inflació: 7723%
+
+## Evidència
+
+### Contingut de original.md:
+```
+# Εἰδύλλια (Idil·lis) — Selecció
+**Autor:** Θεόκριτος (Teòcrit)
+**Llengua:** grec antic (dialecte dòric literari)
+**Data:** c. 270 aC
+
+## Fonts
+
+Text grec basat en l'edició crítica de A.S.F. Gow, *Theocritus* (Cambridge, 1952).
+Selecció de 7 idil·lis: I (Θύρσις ἢ ᾠδά), II (Φαρμακεύτριαι), III (Κῶμος),
+VI (Βουκολιασταί), VII (Θαλύσια), XI (Κύκλωψ), XV (Συρακόσιαι ἢ Ἀδωνιάζουσαι).
+
+*Text original de domini públic.*
+```
+
+### Contingut de traduccio.md:
+- Idil·li I complet (Tirsis o el Cant)
+- Idil·li II, III, VI, VII, XI, XV (traducció completa)
+
+## Problemàtica
+
+1. **Violació del protocol anti-al·lucinació**: La traducció existeix però no hi ha text original per verificar-la.
+2. **Font no verificable**: La URL al Perseus NO conté el text complet seleccionat.
+3. **Risc d'al·lucinació**: Sense original, no es pot verificar la fidelitat de la traducció.
+
+## Accions possibles
+
+### Opció A: Obtenir el text grec original
+- Font: Edició de Gow (1952) - Perseus o First1KGreek
+- URL proposada: `https://www.perseus.tufts.edu/hopper/collection?collection=Perseus:collection:Greco-Roman`
+- Alternativa: First1KGreek (github.com/OpenGreekAndLatin/First1KGreek)
+
+### Opció B: Verificar la traducció
+- Comparar amb edició imposa de Teòcrit
+- Verificar que els idil·lis traduits coincideixen amb els que afirma haver traduït
+- Comprovar cites i referències
+
+### Opció C: Marcar com a traducció indirecta
+- Si es demostra que es va traduir des d'una altra llengua (anglès, francès)
+- Documentar-ho al metadata.yml
+
+## Recomanació
+
+**Prioritat: ALTA - CRÍTICA**
+
+Aquesta obra viola el principi fonamental del projecte: les traduccions han de partir de l'original. Sense text original, la traducció és sospitosa d'al·lucinació o font secundària.
+
+### Passos immediats:
+1. Verificar la URL de Perseus per obtenir el text grec real
+2. Si no és disponible, buscar a First1KGreek
+3. Si s'obté l'original, comparar amb la traducció existent
+4. Si la traducció és correcta, afegir l'original i actualitzar estadístiques
+5. Si la traducció és incorrecta o al·lucinada, marcar per retraducció
+
+## Data de creació
+2026-05-01
+
+## Detecció
+Auditoria automàtica: TRADUCCIO_INFLADA_7723pct
