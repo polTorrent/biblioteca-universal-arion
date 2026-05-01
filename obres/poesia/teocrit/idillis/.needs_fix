@@ -55,6 +55,30 @@ VI (Βουκολιασταί), VII (Θαλύσια), XI (Κύκλωψ), XV (Συ
 - Si es demostra que es va traduir des d'una altra llengua (anglès, francès)
 - Documentar-ho al metadata.yml
 
+---
+
+## Investigació parcial (2026-05-01)
+
+### Comprovacions realitzades:
+1. ✅ Verificat que la URL de Perseus és INCORRECTA
+   - `Perseus:text:1999.01.0066` correspon a Demades, no a Teòcrit
+   
+2. ✅ Cercat a First1KGreek
+   - No s'ha trobat amb identificadors TLG típics (tlg0013, tlg0550, etc.)
+   - Necessita identificador TLG exacte o cerca per nom grec
+
+3. ⏳ Pendent: Cercar URL correcte a Perseus o fonts alternatives
+
+### Motiu de la interrupció:
+- Saldo DIEM CRITIC (0.499 DIEM)
+- Necessita web search amb model adequat (deepseek-v3.2 o glm-5 amb web search)
+
+### Següent pas (quan hi hagi saldo):
+1. Utilitzar Venice AI amb `--web-search on` per trobar la URL correcte de Teòcrit
+2. Cercar: "Theocritus Idylls Greek text Perseus" o "Θεόκριτος Εἰδύλλια"
+3. Validar que l'URL porta al text grec real
+4. Descarregar i guardar com a original.md
+
 ## Recomanació
 
 **Prioritat: ALTA - CRÍTICA**
