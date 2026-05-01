@@ -559,7 +559,7 @@ def executar_build() -> bool:
             cwd=str(root),
             capture_output=True,
             text=True,
-            timeout=300,
+            timeout=600,  # 10 minuts per builds grans
         )
 
         if result.returncode == 0:
@@ -570,7 +570,7 @@ def executar_build() -> bool:
             return False
 
     except subprocess.TimeoutExpired:
-        print("   ❌ Build ha excedit el temps límit (5 min)")
+        print("   ❌ Build ha excedit el temps límit (10 min)")
         return False
     except Exception as e:
         print(f"   ❌ Error executant build: {e}")

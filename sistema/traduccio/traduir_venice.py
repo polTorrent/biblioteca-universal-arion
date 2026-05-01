@@ -26,8 +26,9 @@ from pathlib import Path
 # Constants
 VENICE_SCRIPT = Path.home() / ".hermes" / "skills" / "openclaw-imports" / "venice-ai" / "scripts" / "venice.py"
 DEFAULT_MODEL = "claude-sonnet-4-6"
-CHUNK_SIZE = 2500  # Caràcters per chunk
+CHUNK_SIZE = 1000  # Caràcters per chunk (reduït per evitar timeouts)
 MAX_RETRIES = 3
+VENICE_TIMEOUT = 900  # 15 minuts per models grans (Opus)
 
 # Model segons gènere
 GENRE_MODELS = {
@@ -51,7 +52,7 @@ def run_venice(prompt: str, model: str, max_tokens: int = 4096) -> tuple[str, di
         prompt
     ]
     
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=300)
+    result = subprocess.run(cmd, capture_output=True, text=True, timeout=VENICE_TIMEOUT)
     
     if result.returncode != 0:
         raise RuntimeError(f"Venice error: {result.stderr}")
@@ -246,6 +247,16 @@ def translate_chunk(
         try:
             result, _ = run_venice(prompt, model, max_tokens=4096)
             return result
+        except subprocess.TimeoutExpired:
+            # Timeout: reduir chunk i reintentar
+            if len(chunk) > 500:
+                print(f"⏱️ Timeout ({VENICE_TIMEOUT}s), dividint chunk de {len(chunk)} chars...")
+                half = len(chunk) // 2
+                first_half = translate_chunk(chunk[:half], metadata, glossari, context_anterior, model)
+                second_half = translate_chunk(chunk[half:], metadata, glossari, first_half[-500:], model)
+                return first_half + "\n\n" + second_half
+            else:
+                raise RuntimeError(f"Timeout en chunk petit ({len(chunk)} chars) després de {VENICE_TIMEOUT}s")
         except RuntimeError as e:
             if "rate limit" in str(e).lower():
                 print(f"Rate limit, esperant 30s...")
