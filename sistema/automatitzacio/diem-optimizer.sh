@@ -71,15 +71,15 @@ plan_optimizations() {
     if (( $(echo "$balance > 3.0" | bc -l) )); then
         log "💰 Saldo alt ($balance DIEM) - Utilitzant models superiors per tareas importants"
         tasks="PREMIUM"
-    # Balance mitjà (5-8 DIEM) → Tasques amb models equilibrats
-    elif (( $(echo "$balance >= 5.0" | bc -l) )); then
+    # Balance mitjà (2-3 DIEM) → Tasques amb models equilibrats
+    elif (( $(echo "$balance >= 2.0" | bc -l) )); then
         log "📊 Saldo mitjà ($balance DIEM) - Utilitzant models equilibrats"
         tasks="BALANCED"
-    # Balance baix (3-5 DIEM) → Tasques rutinàries amb models econòmics
-    elif (( $(echo "$balance >= 3.0" | bc -l) )); then
+    # Balance baix (1-2 DIEM) → Tasques rutinàries amb models econòmics
+    elif (( $(echo "$balance >= 1.0" | bc -l) )); then
         log "⚠️ Saldo baix ($balance DIEM) - Només tasques rutinàries"
         tasks="ECONOMIC"
-    # Balance crític (<3 DIEM) → Preservar
+    # Balance crític (<1 DIEM) → Preservar
     else
         log "🚨 Saldo crític ($balance DIEM) - Preservant per emergències"
         tasks="SKIP"
