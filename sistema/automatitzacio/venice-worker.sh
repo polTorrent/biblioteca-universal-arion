@@ -37,7 +37,7 @@ select_model() {
     local model_recomanat="$3"
     
     # Si la tasca té un model recomanat, usar-lo
-    if[ -n "$model_recomanat" ] && [ "$model_recomanat" != "null" ]; then
+    if [ -n "$model_recomanat" ] && [ "$model_recomanat" != "null" ]; then
         echo "$model_recomanat"
         return 0
     fi
@@ -90,6 +90,33 @@ run_translate_task() {
     
     local result
     result=$(eval "timeout $TASK_TIMEOUT $cmd" 2>&1)
+    local exit_code=$?
+    
+    echo "$result"
+    return $exit_code
+}
+
+# ── Executar tasca de fetch (descarregar URL) ─────────────────────────────────
+run_fetch_task() {
+    local url="$1"
+    local output="$2"
+    local source_type="${3:-auto}"
+    
+    log "   📥 Executant fetch_url.py per a: $url"
+    
+    cd "$PROJECT_DIR"
+    
+    # Si output és relatiu, fer-ho absolut respecte PROJECT_DIR
+    if [[ "$output" != /* ]]; then
+        output="$PROJECT_DIR/$output"
+    fi
+    
+    local cmd="python3 sistema/traduccio/fetch_url.py --url \"$url\" --output \"$output\" --source $source_type --timeout 120"
+    
+    log "   🔧 Comanda: $cmd"
+    
+    local result
+    result=$(eval "timeout 180 $cmd" 2>&1)
     local exit_code=$?
     
     echo "$result"
@@ -519,6 +546,35 @@ if tasks:
             EXIT=$?
         else
             log "   ❌ Error: No s'ha pogut determinar la ruta de l'obra. Cridant Venice directament..."
+            RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
+            EXIT=$?
+        fi
+    elif echo "$TASK_TYPE" | grep -qiE "fetch|fix-fetch"; then
+        # ── Tasca de fetch: descarregar URL ──────────────────────────────
+        log "   📥 Tasca de fetch detectada. Buscant URL..."
+        
+        # Extreure URL del JSON o de la instrucció
+        FETCH_URL=$(json_field "$TASKS_DIR/running/$TASK_BASENAME" "url")
+        FETCH_OUTPUT=$(json_field "$TASKS_DIR/running/$TASK_BASENAME" "output")
+        
+        # Si no hi ha URL al JSON, cercar a la instrucció
+        if [ -z "$FETCH_URL" ]; then
+            FETCH_URL=$(echo "$INSTRUCTION" | grep -oE 'https?://[^[:space:]"'"'"']+' | head -1)
+        fi
+        
+        # Si no hi ha output, usar obrap.path/original.md
+        if [ -z "$FETCH_OUTPUT" ] && [ -n "$OBRA" ]; then
+            FETCH_OUTPUT="$OBRA/original.md"
+        fi
+        
+        if [ -n "$FETCH_URL" ]; then
+            log "   ✓ URL trobada: $FETCH_URL"
+            log "   ✓ Output: $FETCH_OUTPUT"
+            RESULT=$(run_fetch_task "$FETCH_URL" "$FETCH_OUTPUT")
+            EXIT=$?
+        else
+            log "   ⚠️ No s'ha trobat URL a la tasca. Intentant amb Venice..."
+            log "   ⚠️NOTA: Venice no pot descarregar URLs. La tasca probablement fallarà."
             RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
             EXIT=$?
         fi
