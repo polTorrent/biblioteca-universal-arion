@@ -358,8 +358,16 @@ if tasks:
 
     # ── Llegir tasca ──────────────────────────────────────────────────────
     TASK_ID=$(json_field "$TASK" "id")
+    # Acceptar ambdós formats: instruction (anglès) o instruccio (català)
     INSTRUCTION=$(json_field "$TASK" "instruction")
+    if [ -z "$INSTRUCTION" ]; then
+        INSTRUCTION=$(json_field "$TASK" "instruccio")
+    fi
+    # Acceptar ambdós formats: type (anglès) o tipus (català)
     TASK_TYPE=$(json_field "$TASK" "type")
+    if [ -z "$TASK_TYPE" ]; then
+        TASK_TYPE=$(json_field "$TASK" "tipus")
+    fi
     RETRIES=$(json_field "$TASK" "retries")
     RETRIES=${RETRIES:-0}
     TASK_TYPE=${TASK_TYPE:-unknown}
