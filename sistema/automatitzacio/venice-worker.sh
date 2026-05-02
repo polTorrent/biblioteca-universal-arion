@@ -1,9 +1,9 @@
 #!/bin/bash
 # =============================================================================
-# venice-worker.sh — Worker autònom amb Venice AI (DeepSeek V4 Pro)
+# venice-worker.sh — Worker autònom amb Venice AI (Selectorde Models Intel·ligent)
 # =============================================================================
 # Reemplaça claude-worker-mini.sh per funcionar amb Venice AI
-# Model per defecte: deepseek-v4-pro (el més potent disponible)
+# Selector de models segons tipus de tasca i gènere de l'obra
 # =============================================================================
 
 set -uo pipefail
@@ -14,19 +14,62 @@ PROJECT_DIR="$HOME/biblioteca-universal-arion"
 LOG="$HOME/venice-worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
 
-MAX_RETRIES=3                # Intents per tasca abans de marcar com failed
+MAX_RETRIES=3                # Intents per tasca abans de marcar com a failed
 MAX_CONSECUTIVE_FAILS=3      # Pausa llarga si N tasques seguides fallen
 COOLDOWN_OK=30               # Segons entre tasques OK
-COOLDOWN_FAIL=60             # Segons després d'un fail
+COOLDOWN_FAIL=60            # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
 CONSECUTIVE_ERRORS_FILE="/tmp/worker-consecutive-errors.txt"
 TASK_TIMEOUT=1800            # 30 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 
-# Model de Venice AI a utilitzar
-VENICE_MODEL="deepseek-v4-pro"
+# Model de Venice AI per defecte (per a tasques administratives)
+DEFAULT_MODEL="glm-5"
 VENICE_CLI="$HOME/.openclaw/workspace/skills/venice-ai/scripts/venice.py"
+
+# ── Selector de models segons tipus de tasca ───────────────────────────────────
+# MAI utilitzar deepseek per a traduccions! Només per a fetch.
+# MAI utilitzar glm-5 per a traduccions! Només per a metadata/glossaris.
+select_model() {
+    local task_type="$1"
+    local task_instruction="$2"
+    local model_recomanat="$3"
+    
+    # Si la tasca té un model recomanat, usar-lo
+    if[ -n "$model_recomanat" ] && [ "$model_recomanat" != "null" ]; then
+        echo "$model_recomanat"
+        return 0
+    fi
+    
+    # Seleccionar segons tipus de tasca
+    case "$task_type" in
+        translate|retranslate|fix-translate)
+            # Detectar gènere per paraules clau
+            if echo "$task_instruction" | grep -qiE "filosof[ií]a|poes[ií]a|teatre|cl[àa]ssic|grec|llat[ií]|plato|aristot|socrates|epicte|marc aureli|seneca"; then
+                echo "claude-opus-4-7"
+            elif echo "$task_instruction" | grep -qiE "novel·la|narrativa|assaig|contes|relat"; then
+                echo "claude-sonnet-4-6"
+            else
+                # Per defecte per a traduccions: Opus per seguretat
+                echo "claude-opus-4-7"
+            fi
+            ;;
+        fetch|investigar)
+            echo "deepseek-v3.2"
+            ;;
+        review|supervisio|validacio)
+            echo "gemini-3-1-pro-preview"
+            ;;
+        glossari|metadata|web|test)
+            echo "glm-5"
+            ;;
+        *)
+            # Per defecte per a tasques desconegudes
+            echo "$DEFAULT_MODEL"
+            ;;
+    esac
+}
 
 # ── Prefix anti-pla (s'afegeix a TOTES les instruccions) ─────────────────────
 EXEC_PREFIX="IMPORTANT: Executa les accions directament. NO generis plans, llistes de passos, ni propostes. Crea els fitxers, escriu el contingut, i fes els canvis DIRECTAMENT. Si necessites crear un directori, crea'l. Si necessites escriure un fitxer, escriu-lo. MAI responguis amb 'El pla és...' o 'Els passos serien...'. ACTUA.
@@ -238,8 +281,8 @@ run_task() {
     local LIVE_LOG="/tmp/venice-live.txt"
     echo "[$(date '+%H:%M:%S')] ── Tasca: ${instruction:0:80}..." > "$LIVE_LOG"
 
-    # Crida a Venice AI amb DeepSeek V4 Pro
-    # Utilitzem el CLI de Venice amb el model més potent
+    # Crida a Venice AI amb el model seleccionat dinàmicament
+    # Utilitzem el model adequat per a cada tipus de tasca
     result=$(cd "$PROJECT_DIR" && timeout "$TASK_TIMEOUT" python3 "$VENICE_CLI" chat \
         --model "$VENICE_MODEL" \
         --max-tokens 16000 \
@@ -321,8 +364,9 @@ EOF
 # MAIN LOOP
 # =============================================================================
 acquire_lock
-log "🚀 Venice Worker iniciat (PID $$) — Model: $VENICE_MODEL"
+log "🚀 Venice Worker iniciat (PID $$) — Selectorde Models Intel·ligent"
 log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, timeout=${TASK_TIMEOUT}s"
+log "   Models: traduccions→claude-opus/sonnet, fetch→deepseek-v3.2, metadata→glm-5"
 log "   Validació post-execució + detecció plans + instruccions reforçades"
 
 while true; do
@@ -358,7 +402,7 @@ if tasks:
         continue
     fi
 
-    # ── Llegir tasca ──────────────────────────────────────────────────────
+# ── Llegir tasca ──────────────────────────────────────────────────────
     TASK_ID=$(json_field "$TASK" "id")
     # Acceptar ambdós formats: instruction (anglès) o instruccio (català)
     INSTRUCTION=$(json_field "$TASK" "instruction")
@@ -370,6 +414,8 @@ if tasks:
     if [ -z "$TASK_TYPE" ]; then
         TASK_TYPE=$(json_field "$TASK" "tipus")
     fi
+    # Llegir model recomanat (si existeix)
+    MODEL_RECOMANAT=$(json_field "$TASK" "model_recomanat")
     RETRIES=$(json_field "$TASK" "retries")
     RETRIES=${RETRIES:-0}
     TASK_TYPE=${TASK_TYPE:-unknown}
@@ -380,9 +426,13 @@ if tasks:
         continue
     fi
 
+    # ── Seleccionar model segons tipus de tasca ──────────────────────────────
+    VENICE_MODEL=$(select_model "$TASK_TYPE" "$INSTRUCTION" "$MODEL_RECOMANAT")
+    log "📊 Model seleccionat: $VENICE_MODEL (tipus=$TASK_TYPE, recomanat=$MODEL_RECOMANAT)"
+
     TASK_BASENAME=$(basename "$TASK")
-    log "═══════════════════════════════════════════════════"
-    log "▶ Executant: $TASK_ID (tipus=$TASK_TYPE, intent $((RETRIES + 1))/$MAX_RETRIES)"
+    log "═══════════════════════════════════════════════════════════════════════════"
+    log "▶ Executant: $TASK_ID (tipus=$TASK_TYPE, model=$VENICE_MODEL, intent $((RETRIES + 1))/$MAX_RETRIES)"
 
     # Moviment atòmic: verificar que el fitxer encara existeix abans de moure
     # (evita race condition amb heartbeat que pot moure fitxers simultàniament)
