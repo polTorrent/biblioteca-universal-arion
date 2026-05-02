@@ -1,43 +1,53 @@
 {
-  "last_updated": "2026-05-02T02:00:00Z",
+  "last_updated": "2026-05-02T06:00:00Z",
   "status": "ACTIVE",
-  "reason": "Heartbeat executat. 3 tasques recuperades de failed/ a pending/. Worker actiu (PID 5284).",
-  "pending_tasks": 3,
+  "reason": "Heartbeat executat. 4 tasques recuperades de failed/ a pending/. Worker actiu (PID 23330).",
+  "pending_tasks": 4,
   "active_translations": [
     {
       "obra": "aristotil/peri-psykhes",
       "status": "pending",
-      "progres": "7%",
+      "progres": "3%",
       "model_recomanat": "claude-opus-4-7",
       "cost_estimat": 3.5,
       "prioritat": 2,
-      "retries": 2,
-      "can_execute": false,
-      "motivacio": "Saldo insuficient (6.48 <8.0 DIEM necessaris)"
+      "retries": 0,
+      "can_execute": true,
+      "motivacio": "Saldo suficient (11.24 >8.0 DIEM necessaris)"
     },
     {
-      "obra": "petroni/cena-trimalchionis",
+      "obra": "sade/justine",
       "status": "pending",
-      "progres": "26%",
+      "progres": "7%",
       "model_recomanat": "claude-sonnet-4-6",
       "cost_estimat": 0.8,
       "prioritat": 3,
-      "retries": 1
+      "retries": 0
     },
     {
-      "obra": "rumi/masnavi-seleccio-10-contes",
-      "status": "pending",
-      "progres": "8%",
-      "model_recomanat": "claude-sonnet-4-6",
-      "cost_estimat": 0.8,
-      "prioritat": 4,
-      "retries": 1
+      "obra": "teocrit/idillis",
+      "status": "investigacio",
+      "problema": "Original grec inexistent",
+      "prioritat": 1,
+      "retries": 0
+    },
+    {
+      "obra": "schopenhauer/vierfache-wurzel",
+      "status": "investigacio",
+      "problema": "Traducció inflada 15x",
+      "prioritat": 1,
+      "retries": 0
     }
   ],
   "needs_fix_works": [
     {
       "obra": "teocrit/idillis",
       "problema": "Original grec inexistent",
+      "prioritat": "CRITIC"
+    },
+    {
+      "obra": "schopenhauer/vierfache-wurzel",
+      "problema": "Traducció inflada 1530%",
       "prioritat": "CRITIC"
     }
   ],
@@ -46,32 +56,31 @@
     "total_works": 103,
     "validated": 45,
     "without_validation": 58,
-    "needs_fix": 0,
+    "needs_fix": 2,
     "completion_rate": "44%",
     "health_score": "94%"
   },
   "diem_status": {
-    "balance": 13.4,
+    "balance": 11.24,
     "remaining_requests": 149,
     "remaining_tokens": 3000000,
     "activity_level": "BALANCED"
   },
   "task_recovery": {
     "recovered_from_failed": 4,
-    "max_retries_reached": 3,
     "retries_remaining": {
-      "aristotil_psykhes": 2,
-      "petroni_cena": 1,
-      "rumi_masnavi": 1,
-      "fix_petroni": 2
+      "aristotil_psykhes": 0,
+      "sade_justine": 0,
+      "teocrit_investigacio": 0,
+      "schopenhauer_investigacio": 0
     }
   },
-  "worker_status": "INACTIVE",
-  "web_status": "NEEDS_UPDATE",
+  "worker_status": "ACTIVE",
+  "worker_pid": 23330,
+  "web_status": "OK",
   "critical_issues": [
-    "fix-translate-aristotil-peri-psykhes: max retries reached -manual intervention required",
-    "fix-translate-rumi-masnavi: max retries reached - manual intervention required",
-    "fix-translate-sade-justine: max retries reached - manual intervention required"
+    "teocrit/idillis: Falta original grec - investigacio pendiente",
+    "schopenhauer/vierfache-wurzel: Traducció inflada - investigacio pendiente"
   ],
-  "next_heartbeat": "2026-05-01T08:00:00Z"
+  "next_heartbeat": "2026-05-02T08:00:00Z"
 }
