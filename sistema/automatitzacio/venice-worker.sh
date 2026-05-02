@@ -344,7 +344,9 @@ tasks = []
 for f in glob.glob(sys.argv[1] + '/pending/*.json'):
     try:
         with open(f) as fh: d = json.load(fh)
-        tasks.append((d.get('priority', 5), f))
+        # Acceptar ambdós formats: priority (anglès) o prioritat (català)
+        priority = d.get('priority') or d.get('prioritat', 5)
+        tasks.append((priority, f))
     except: pass
 if tasks:
     tasks.sort(key=lambda x: x[0])
