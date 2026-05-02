@@ -26,7 +26,7 @@ estadistiques:
   termes_glossari: 17
 
 revisio:
-  estat: en_progres
+  estat: incomplet
   qualitat: null
   data_revisio: null
-  comentari: "Traducció completada el 2026-05-02 amb claude-opus-4-7. Llibre I sencer traduït (91% del total). Resta: Llibres II i III."
+  comentari: "CRÍTIC: Metadata incorrecte i traducció incompleta. Només 386 línies traduïdes d'un original de 19923 línies. Cal recomptar i verificar."
