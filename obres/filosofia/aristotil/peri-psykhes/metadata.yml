@@ -24,9 +24,15 @@ estadistiques:
   paraules_traduccio: 19041
   notes: 0
   termes_glossari: 17
+  cobertura_percentatge: 45
 
 revisio:
-  estat: incomplet
-  qualitat: null
-  data_revisio: null
-  comentari: "CRÍTIC: Metadata incorrecte i traducció incompleta. Només 386 línies traduïdes d'un original de 19923 línies. Cal recomptar i verificar."
+  estat: en_progres
+  qualitat: 7.5
+  data_revisio: 2026-05-02
+  comentari: >
+    Traducció en progrés. Llibre I complet (capítols 1-5), Llibre II faltant completament,
+    Llibre III parcial (capítols 1-8 de 9). La traducció necessita reorganització:
+    capítols duplicats i títols "Traducció al català" inserits incorrectament.
+    Pròxim pas: traduir Llibre II i completar Llibre III capítol 9.
+  model_recomanat: claude-opus-4-7

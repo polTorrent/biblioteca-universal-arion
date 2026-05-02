@@ -1,28 +1,14 @@
-estat: CRÍTIC
-problema: Traducció incompleta amb metadata incorrecte
+estat: en_progres
+problema: Traducció incompleta -falta Llibre II complet
 descripcio: |
-  El fitxer de traducció té només 386 línies mentre que l'original en té 19923.
-  El metadata indica "paraules_traduccio: 19041" i "cobertura_percentatge: 100",
-  però això és impossible amb només 386 línies.
+  L'obra té 3 llibres:
+  - Llibre I (capítols 1-5): COMPLET
+  - Llibre II (capítols 1-12): FALTANT COMPLETAMENT
+  - Llibre III (capítols 1-9): PARCIAL (falta capítol 9)
   
-  La verificació anti-al·lucinació detecta:
-  - Original: 20909 paraules
-  - Traducció: 19030 paraules (93%)
+  Cobertura estimada: 45%
+  Model recomanat: claude-opus-4-7 (filosofia clàssica)
   
-  Però la realitat és:
-  - Original: 19923 línies
-  - Traducció: 386 línies (incumpleta)
-  
-  DESCALCORDÀNCIA CRÍTICA:
-  - El comptador de paraules del metadata és incorrecte
-  - La traducció està incompleta (només part del Llibre I)
-  - Cal verificar quant s'ha traduït realment
-  
-  ACCIONS NECESSÀRIES:
-  1. Recomptar línies i paraules reals de la traducció
-  2. Verificar quin percentatge de l'obra està traduït
-  3. Actualitzar metadata amb dades reals
-  4. Marcar estat com a "incomplet" no "en_progres"
-  5. Reintentar la traducció dels llibres II i III
+  Tasca creada: 2026-05-02_continuar_aristotil_psykhes_l2.json
 data_deteccio: 2026-05-02
 prioritat: 1
