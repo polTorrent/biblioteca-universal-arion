@@ -6,7 +6,7 @@ set -uo pipefail
 REPO="$HOME/biblioteca-universal-arion"
 OBRES_DIR="$REPO/obres"
 INFORME="$REPO/config/auditoria.json"
-TASQUES_DIR="$HOME/.openclaw/workspace/tasks/pending"
+TASQUES_DIR="$PROJECT/sistema/tasks/pending"
 
 # Comptadors
 total=0; ok=0; problemes=0

@@ -27,7 +27,6 @@ IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 
 # Model de Venice AI per defecte (per a tasques administratives)
 DEFAULT_MODEL="glm-5"
-VENICE_CLI="$HOME/.openclaw/workspace/skills/venice-ai/scripts/venice.py"
 
 # ── Selector de models segons tipus de tasca ───────────────────────────────────
 # MAI utilitzar deepseek per a traduccions! Només per a fetch.
@@ -161,7 +160,7 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG"; }
 notify_discord_pause() {
     local errors="$1"
     local pause_secs="$2"
-    local heartbeat_md="$HOME/.openclaw/workspace/HEARTBEAT.md"
+    local heartbeat_md="$PROJECT/sistema/state/HEARTBEAT.md"
     if [ -f "$heartbeat_md" ]; then
         local msg="⚠️ WORKER PAUSA: $errors errors consecutius detectats. Pausa de ${pause_secs}s activada a $(date '+%H:%M:%S')"
         echo -e "\n## Worker Alert ($(date '+%Y-%m-%d %H:%M:%S'))\n$msg" >> "$heartbeat_md"

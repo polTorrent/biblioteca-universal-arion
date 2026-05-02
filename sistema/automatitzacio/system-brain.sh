@@ -22,7 +22,7 @@ return 0  # 🛑 CONSOLIDACIÓ: pausat per estalviar DIEM (return, no exit, perq
 
 # ── Configuració ────────────────────────────────────────────────────────────
 PROJECT="${PROJECT:-$HOME/biblioteca-universal-arion}"
-TASKS_DIR="${TASKS_DIR:-$HOME/.openclaw/workspace/tasks}"
+TASKS_DIR="${TASKS_DIR:-$PROJECT/sistema/tasks}"
 TASK_MANAGER="${TASK_MANAGER:-$PROJECT/sistema/automatitzacio/task-manager.sh}"
 QUEUE="${QUEUE:-$PROJECT/config/obra-queue.json}"
 ROADMAP="$PROJECT/config/roadmap.json"
@@ -528,7 +528,7 @@ from pathlib import Path
 
 project = os.environ.get('PROJECT', os.path.expanduser('~/biblioteca-universal-arion'))
 evolution_path = os.path.join(project, 'metrics', 'evolution.json')
-tasks_dir = os.path.expanduser('~/.openclaw/workspace/tasks')
+tasks_dir = os.path.expanduser('$PROJECT/sistema/tasks')
 
 # Carregar evolució
 try:
@@ -659,7 +659,7 @@ PYEOF
             ALERT)
                 brain_log "   🚨 $msg"
                 brain_add_task "maintenance" "analisi-profunda" \
-                    "ANÀLISI PROFUNDA: El sistema porta 3 dies empitjorant. Revisa: 1) Errors recents a ~/.openclaw/workspace/tasks/failed/. 2) Qualitat de les últimes traduccions. 3) Logs del worker. 4) Genera un informe amb causes i solucions proposades a metrics/analisi-profunda.md."
+                    "ANÀLISI PROFUNDA: El sistema porta 3 dies empitjorant. Revisa: 1) Errors recents a $PROJECT/sistema/tasks/failed/. 2) Qualitat de les últimes traduccions. 3) Logs del worker. 4) Genera un informe amb causes i solucions proposades a metrics/analisi-profunda.md."
                 ;;
             WEEKLY)
                 brain_log "   📅 Report setmanal: $msg"

@@ -5,7 +5,7 @@
 set -e
 
 CANAL_PROPOSTES="1479599316380291276"
-PROPOSTES_FILE="$HOME/.openclaw/workspace/propostes-processades.txt"
+PROPOSTES_FILE="$PROJECT/sistema/state/propostes-processades.txt"
 TASK_QUEUE="$HOME/biblioteca-universal-arion/task-queue.json"
 
 # Crear fitxer de propostes processades si no existeix

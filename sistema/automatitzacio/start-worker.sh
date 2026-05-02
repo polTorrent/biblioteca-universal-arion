@@ -9,7 +9,7 @@ pkill -f "claude-worker" 2>/dev/null || true
 sleep 1
 
 # Netegem el lockfile si existeix
-rm -f ~/.openclaw/workspace/tasks/worker.lock 2>/dev/null
+rm -f $PROJECT/sistema/tasks/worker.lock 2>/dev/null
 
 # Iniciem el worker nou
 nohup bash sistema/automatitzacio/venice-worker.sh > /dev/null 2>&1 &

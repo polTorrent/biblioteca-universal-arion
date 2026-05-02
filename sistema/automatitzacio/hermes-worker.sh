@@ -10,7 +10,7 @@
 set -uo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
+TASKS_DIR="$PROJECT/sistema/tasks"
 PROJECT_DIR="$HOME/biblioteca-universal-arion"
 LOG="$HOME/hermes-worker.log"
 LOCKFILE="/tmp/hermes-worker.lock"

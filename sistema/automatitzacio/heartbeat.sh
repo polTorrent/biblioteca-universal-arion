@@ -17,10 +17,11 @@ set -uo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
 PROJECT="$HOME/biblioteca-universal-arion"
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
+TASKS_DIR="$PROJECT/sistema/tasks"
 TASK_MANAGER="$PROJECT/sistema/automatitzacio/task-manager.sh"
 QUEUE="$PROJECT/estat/obra-queue.json"
-LOG="$HOME/claude-worker.log"
+LOG="$PROJECT/sistema/logs/heartbeat.log"
+STATE_DIR="$PROJECT/sistema/state"
 MAX_PENDING=5
 MIN_DIEM_RESERVE=2
 
@@ -95,7 +96,7 @@ add_task() {
 # ── Comprovació DIEM ──────────────────────────────────────────────────────────
 check_diem() {
     local balance
-    balance=$(python3 ~/.openclaw/workspace/skills/venice-ai/scripts/venice.py balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
+    balance=$(python3 $HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
     if [ -n "$balance" ]; then
         local ok=$(python3 -c "print('yes' if float('$balance') >= $MIN_DIEM_RESERVE else 'no')" 2>/dev/null)
         if [ "$ok" = "no" ]; then
@@ -667,7 +668,7 @@ rotate_done() {
 
 # ── 10b. Processar notificacions pendents d'usuaris ──────────────────────────
 process_pending_notifications() {
-    local NOTIF_FILE="$HOME/.openclaw/workspace/pending_notification.txt"
+    local NOTIF_FILE="$PROJECT/sistema/state/pending_notification.txt"
     
     if [ ! -f "$NOTIF_FILE" ]; then
         return
@@ -683,7 +684,7 @@ process_pending_notifications() {
     timestamp=$(grep "^timestamp:" "$NOTIF_FILE" | cut -d: -f2-)
     
     # Enviar via OpenClaw (scriure a fitxer que el gateway llegirà)
-    local NOTIF_OUT="$HOME/.openclaw/workspace/outgoing_notification.json"
+    local NOTIF_OUT="$PROJECT/sistema/state/outgoing_notification.json"
     cat > "$NOTIF_OUT" << EOF
 {
   "action": "send",
@@ -708,7 +709,7 @@ regenerate_proposals_button() {
 
 # ── 10. Generar report per Discord ────────────────────────────────────────────
 generate_report() {
-    local REPORT_FILE="$HOME/.openclaw/workspace/last_heartbeat_report.md"
+    local REPORT_FILE="$PROJECT/sistema/state/last_heartbeat_report.md"
     
     # Generar informe detallat amb el script Python
     if [ -f "$PROJECT/sistema/traduccio/informe_detallat.py" ]; then
