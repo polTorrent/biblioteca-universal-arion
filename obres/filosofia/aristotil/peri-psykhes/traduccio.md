@@ -12,6 +12,13 @@ Traduït del grec per Biblioteca Arion
 
 ---
 
+# Sobre l'Ànima
+*Aristòtil*
+
+Traduït del grec per Biblioteca Arion
+
+---
+
 ## Llibre I (Βιβλίον Α)
 
 ### Capítol 1
@@ -380,6 +387,13 @@ Que el cos de l'animal no pot ser simple, és evident; vull dir, per exemple, fe
 És evident, doncs, que necessàriament els animals moren quan són privats únicament d'aquesta sensació; perquè ni és possible que la tingui qui no és animal, ni, essent animal, en tingui necessàriament cap altra que aquesta. I per aquesta raó, els altres sensibles no destrueixen l'animal pels seus excessos —com ara el color, el so o l'olor—, sinó només els òrgans sensorials, llevat que sigui per accident, com quan, juntament amb el so, es produeix un impuls o un cop, i per visions i olors es desplacen altres coses que destrueixen pel tacte. També el sabor, en la mesura que s'esdevé que és tàctil, en aquesta mesura destrueix. En canvi, l'excés dels tangibles, com ara coses calentes, fredes o dures, aniquila l'animal; perquè l'excés de qualsevol sensible aniquila l'òrgan sensorial, i així també el tangible aniquila el tacte, i per aquest es defineix el viure: car sense tacte s'ha demostrat que és impossible que existeixi un animal. Per això l'excés dels tangibles no només destrueix l'òrgan sensorial, sinó també l'animal, perquè necessàriament només té aquest sentit.
 
 Les altres sensacions, en canvi, l'animal les té, com s'ha dit, no en vista de l'ésser, sinó del benestar: així la vista, perquè, com que viu en l'aire i en l'aigua, hi vegi, i en general perquè viu en allò diàfan; el gust, a causa del plaer i del dolor, perquè percebi allò que hi ha en l'aliment i ho desitgi i es mogui; l'oïda, perquè se li signifiqui alguna cosa; i la llengua, perquè ell signifiqui alguna cosa a un altre.
+
+---
+
+*Traducció de domini públic.*
+
+
+
 
 ---
 
