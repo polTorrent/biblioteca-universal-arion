@@ -1,0 +1,28 @@
+qualitat: 7.5
+data_validacio: 2026-05-02
+model_revisor: glm-5
+criteris:
+  fidelitat: 7.5
+  fluidesa: 7.5
+  veu_autor: 8.0
+  format: 8.0
+  glossari: 9.0
+observacions: |
+  Traducció correcta d'una obra de teatre clàssica.
+  
+  PUNTS FORTS:
+  - Format teatral ben respectat (diàlegs amb noms en negreta, didàscalia en cursiva)
+  - Fidelitat a l'original noruec, mantenint la tensió dramàtica
+  - Català natural i fluid, sons bé en veu alta
+  - Glossari excel·lent amb 14 termes clau documentats
+  - Final poderós ben traduït
+  
+  PUNTS A MILLORAR:
+  - Algunes eleccions de vocabulari podrien ser més colloquials ("esposa" vs "muller")
+  - Metadata amb avaluació_final a 0.0 cal actualitzar-lo
+  
+  VERIFICACIÓ ANTI-AL·LUCINACIÓ:
+  - Ratio de paraules: 93.2%
+  - Cap omissió detectada
+  - Cap invenció detectada
+  - Estructura completa (inici, mig, final verificados)
