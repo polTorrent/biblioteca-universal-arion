@@ -1,97 +1,124 @@
 {
-  "timestamp": "2026-05-02T06:00:00Z",
-  "diem_balance": 11.24,
+  "timestamp": "2026-05-02T10:05:00Z",
+  "diem_balance": 3.67,
   "diem_remaining_requests": 149,
   "diem_remaining_tokens": 3000000,
-  "diem_status": "BALANCED",
+  "diem_status": "ECONOMIC",
   "worker_status": {
     "active": true,
-    "pid": 23330,
+    "pid": 19500,
     "lockfile": true
   },
   "tasks": {
-    "pending": 4,
+    "pending": 0,
     "running": 0,
-    "done_today": 0,
-    "failed": 0
+    "done_today": 16,
+    "failed": 0,
+    "done_total": 44
   },
-  "recovered_tasks": [
-    {
-      "id": "2026-05-01_investigar_teocrit_original",
-      "tipus": "investigacio",
-      "prioritat": 1,
-      "obra": "obres/poesia/teocrit/idillis"
-    },
-    {
-      "id": "2026-05-02_continuar_aristotil_psykhes",
-      "tipus": "translate",
-      "prioritat": 2,
-      "obra": "obres/filosofia/aristotil/peri-psykhes"
-    },
-    {
-      "id": "2026-05-02_continuar_sade_justine",
-      "tipus": "translate",
-      "prioritat": 3,
-      "obra": "obres/narrativa/sade/justine"
-    },
-    {
-      "id": "2026-05-02_investigar_schopenhauer_vierfache",
-      "tipus": "investigacio",
-      "prioritat": 1,
-      "obra": "obres/filosofia/schopenhauer/vierfache-wurzel"
-    }
-  ],
+  "recovered_tasks": [],
   "catalog_health": {
     "total_works": 103,
-    "validated": 46,
-    "without_validation": 57,
+    "validated": 48,
+    "without_validation": 55,
     "needs_fix": 1,
-    "completion_rate": "44.6%",
+    "fixing": 8,
+    "completion_rate": "46.6%",
     "health_score": "94%"
   },
   "web_status": {
     "needs_rebuild": false,
-    "obres_timestamp": 1772211624,
-    "docs_timestamp": 1777692080
+    "last_rebuild": "2026-05-02T10:04:59Z",
+    "works_published": 103
   },
   "critical_issues": [
+    {
+      "obra": "peri-psykhes",
+      "problema": "Traducció incompleta (386/19923 línies)",
+      "prioritat": 1,
+      "status": "fixing"
+    },
     {
       "obra": "teocrit/idillis",
       "problema": "Original grec inexistent",
       "prioritat": 1,
-      "status": "pendent_investigacio"
+      "status": "fixing"
     },
     {
-      "obra": "schopenhauer/vierfache-wurzel",
-      "problema": "Traduccio inflada 1530%",
+      "obra": "de-rerum-natura-llibre-i",
+      "problema": "34 errors de processament",
       "prioritat": 1,
-      "status": "pendent_investigacio"
+      "status": "fixing"
+    },
+    {
+      "obra": "vierfache-wurzel",
+      "problema": "Traducció inflada 1530%",
+      "prioritat": 1,
+      "status": "fixing"
+    },
+    {
+      "obra": "die-philosophie-im-tragischen-zeitalter-der-griechen",
+      "problema": "AL·LUCINACIÓ - traducció no fidel",
+      "prioritat": 1,
+      "status": "fixing"
+    },
+    {
+      "obra": "laelius-de-amicitia",
+      "problema": "Puntuació 5.5/10",
+      "prioritat": 2,
+      "status": "fixing"
+    },
+    {
+      "obra": "sala-numero-6",
+      "problema": "Puntuació 4.0/10",
+      "prioritat": 2,
+      "status": "fixing"
+    },
+    {
+      "obra": "bartleby-lescrivent",
+      "problema": "Necessita investigació",
+      "prioritat": 3,
+      "status": "fixing"
     }
   ],
+  "needs_fix_works": [
+    {
+      "obra": "teocrit/idillis",
+      "problema": "Original grec inexistent",
+      "prioritat": "CRITIC"
+    }
+  ],
+  "fixing_works": [
+    "laelius-de-amicitia",
+    "die-philosophie-im-tragischen-zeitalter-der-griechen",
+    "de-rerum-natura-llibre-i",
+    "vierfache-wurzel",
+    "peri-psykhes",
+    "teocrit/idillis",
+    "sala-numero-6",
+    "bartleby-lescrivent"
+  ],
+  "pending_tasks_list": [],
   "next_actions": [
     {
       "prioritat": 1,
-      "accio": "Investigar teocrit/idillis - obtenir original grec",
-      "model": "deepseek-v3.2",
-      "cost": 0.2
-    },
-    {
-      "prioritat": 1,
-      "accio": "Investigar schopenhauer/vierfache-wurzel - verificar original",
-      "model": "deepseek-v3.2",
-      "cost": 0.2
+      "accio": "Esperar reset DIEM (00:00 UTC) - saldo insuficient",
+      "model": "N/A",
+      "cost": 0,
+      "nota": "Saldo actual 3.67 DIEM, mínim necessari per traduccions: 8 DIEM"
     },
     {
       "prioritat": 2,
-      "accio": "Continuar traduccio aristotil/peri-psykhes",
-      "model": "claude-opus-4-7",
-      "cost": 3.5
-    },
-    {
-      "prioritat": 3,
-      "accio": "Continuar traduccio sade/justine",
-      "model": "claude-sonnet-4-6",
-      "cost": 0.8
+      "accio": "Investigar bartleby-lescrivent",
+      "model": "deepseek-v3.2",
+      "cost": 0.2
     }
+  ],
+  "heartbeat_notes": [
+    "Web regenerada amb 103 obres i 48 EPUBs",
+    "DIEM en nivell ECONOMIC (3.67) -Només tasques administratives",
+    "8 obres en estat .fixing detectades",
+    "Cap tasca pendent al directori",
+    "Worker actiu però idle"
   ]
 }
