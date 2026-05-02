@@ -1,0 +1,37 @@
+ESTAT: CRÍTIC
+DATA: 2026-05-02
+TIPUS: ORIGINAL_INCORRECTE_TRADUCCIÓ_INDIRECTA
+
+PROBLEMA:
+- original.md conté la TRADUCCIÓ ANGLESA de Benjamin Jowett (Project Gutenberg #1657)
+- NO és el text GREC original
+- traduccio.md és una traducció de l'ANGLÈS, no del GREC
+- Metadata indica source_language: grec, però l'original és anglès
+
+DADES:
+- Línees original: 684 (anglès, amb introducció)
+- Línies traducció: 251 (català)
+- Seccions Stephanus: 50 (correctes, 43a-54e)
+- Qualitat: 8.0/10 (revisat, però des de l'anglès)
+
+FONT ORIGINAL REAL (GREC):
+- Perseus Digital Library: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0169%3Atext%3DCrito
+- El metadata ja té la URL correcta!
+
+ACCIONS NECESSÀRIES:
+A. Descarregar el text GREC de Perseus amb fetch_url.py
+B. Actualitzar original.md amb el text grec (eliminar la versió anglesa)
+C. Retraduir des del GREC (claude-opus-4-7)
+D. Actualitzar metadata.yml:
+   - font_original: (mantenir URL Perseus)
+   - nota: "Original grec descarregat de Perseus Digital Library"
+   - traduccio_indirecta: false
+
+RECOMANACIÓ:
+- Prioritat: ALTA (obra clàssica, diàleg fonamental de Plató)
+- Cost estimat: ~2.5 DIEM (claude-opus-4-7, diàleg curt)
+- Temps estimat: 1-2 hores per retraducció
+
+NOTA:
+El Critó és un diàleg curt però fonamental sobre l'ètica del deure i l'obediència a la llei.
+Una biblioteca de clàssics grecs ha de traduir des de l'original grec, no des de traduccions angleses.
