@@ -39,7 +39,7 @@ fi
 
 # ── Control del bot OpenClaw ─────────────────────────────────────────────────
 # El gateway corre com a systemd user service.
-# Parem abans de tocar ~/.openclaw/, reiniciem després.
+# Parem abans de tocar el directori del projecte, reiniciem després.
 # Si brain està carregat, reutilitzem les seves funcions.
 # Si no, en tenim de pròpies.
 OPENCLAW_SERVICE="openclaw-gateway.service"
@@ -848,11 +848,11 @@ FAILED=$(ls -1 "$TASKS_DIR/failed/"*.json 2>/dev/null | wc -l)
 
 log "📊 Estat: $PENDING pendents, $RUNNING running, $DONE_TODAY done avui, $FAILED fallides"
 
-# ── Fase 0: Lectura (no toca ~/.openclaw/) ──────────────────────────────────
+# ── Fase 0: Lectura (no toca el directori del projecte) ──────────────────────────────────
 update_queue_status          # 0. Actualitzar obra-queue.json (dins $PROJECT)
 bash "$PROJECT/sistema/automatitzacio/fix-structure.sh"  # 0.5 Auto-correcció estructura (dins $PROJECT)
 
-# ── Fase 1: Escriptura a ~/.openclaw/ — parar bot ──────────────────────────
+# ── Fase 1: Escriptura a el directori del projecte — parar bot ──────────────────────────
 _heartbeat_stop_openclaw
 trap '_heartbeat_start_openclaw' EXIT
 
@@ -902,7 +902,7 @@ else
 fi
 
 PENDING_FINAL=$(count_pending)
-generate_report              # Escriu last_heartbeat_report.md a ~/.openclaw/
+generate_report              # Escriu last_heartbeat_report.md a el directori del projecte
 
 # ── Fase 2.5: Processar propostes Discord ───────────────────────────────────
 if [ -f "$PROJECT/sistema/automatitzacio/processar-propostes.sh" ]; then
