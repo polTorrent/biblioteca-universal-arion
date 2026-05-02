@@ -1,0 +1,97 @@
+{
+  "timestamp": "2026-05-02T06:00:00Z",
+  "diem_balance": 11.24,
+  "diem_remaining_requests": 149,
+  "diem_remaining_tokens": 3000000,
+  "diem_status": "BALANCED",
+  "worker_status": {
+    "active": true,
+    "pid": 23330,
+    "lockfile": true
+  },
+  "tasks": {
+    "pending": 4,
+    "running": 0,
+    "done_today": 0,
+    "failed": 0
+  },
+  "recovered_tasks": [
+    {
+      "id": "2026-05-01_investigar_teocrit_original",
+      "tipus": "investigacio",
+      "prioritat": 1,
+      "obra": "obres/poesia/teocrit/idillis"
+    },
+    {
+      "id": "2026-05-02_continuar_aristotil_psykhes",
+      "tipus": "translate",
+      "prioritat": 2,
+      "obra": "obres/filosofia/aristotil/peri-psykhes"
+    },
+    {
+      "id": "2026-05-02_continuar_sade_justine",
+      "tipus": "translate",
+      "prioritat": 3,
+      "obra": "obres/narrativa/sade/justine"
+    },
+    {
+      "id": "2026-05-02_investigar_schopenhauer_vierfache",
+      "tipus": "investigacio",
+      "prioritat": 1,
+      "obra": "obres/filosofia/schopenhauer/vierfache-wurzel"
+    }
+  ],
+  "catalog_health": {
+    "total_works": 103,
+    "validated": 46,
+    "without_validation": 57,
+    "needs_fix": 1,
+    "completion_rate": "44.6%",
+    "health_score": "94%"
+  },
+  "web_status": {
+    "needs_rebuild": false,
+    "obres_timestamp": 1772211624,
+    "docs_timestamp": 1777692080
+  },
+  "critical_issues": [
+    {
+      "obra": "teocrit/idillis",
+      "problema": "Original grec inexistent",
+      "prioritat": 1,
+      "status": "pendent_investigacio"
+    },
+    {
+      "obra": "schopenhauer/vierfache-wurzel",
+      "problema": "Traduccio inflada 1530%",
+      "prioritat": 1,
+      "status": "pendent_investigacio"
+    }
+  ],
+  "next_actions": [
+    {
+      "prioritat": 1,
+      "accio": "Investigar teocrit/idillis - obtenir original grec",
+      "model": "deepseek-v3.2",
+      "cost": 0.2
+    },
+    {
+      "prioritat": 1,
+      "accio": "Investigar schopenhauer/vierfache-wurzel - verificar original",
+      "model": "deepseek-v3.2",
+      "cost": 0.2
+    },
+    {
+      "prioritat": 2,
+      "accio": "Continuar traduccio aristotil/peri-psykhes",
+      "model": "claude-opus-4-7",
+      "cost": 3.5
+    },
+    {
+      "prioritat": 3,
+      "accio": "Continuar traduccio sade/justine",
+      "model": "claude-sonnet-4-6",
+      "cost": 0.8
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+    "id": "fix-fetch-august-strindberg-froken-julie-la-senyoreta-julia-1774764712",
+    "type": "fix-fetch",
+    "priority": 1,
+    "max_minutes": 60,
+    "obra_path": "obres/*/august-strindberg/froken-julie-la-senyoreta-julia",
+    "instruction": "Treballa en l'obra a 'obres/*/august-strindberg/froken-julie-la-senyoreta-julia'. Busca i descarrega l'original des de fonts fiables (Internet Archive, Wikisource, Project Gutenberg). Guarda'l a 'original.md' dins el directori de l'obra. Després fes commit i push dels canvis.",
+    "created_at": "2026-04-28T08:07:24+02:00",
+    "claude_ready": true
+}

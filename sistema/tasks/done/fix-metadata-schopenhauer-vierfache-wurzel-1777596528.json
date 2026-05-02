@@ -1,0 +1,8 @@
+{
+  "id": "fix-metadata-schopenhauer-vierfache-wurzel-1777596528",
+  "type": "fix-metadata",
+  "priority": 3,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && Revisa i completa el fitxer obres/*/schopenhauer/vierfache-wurzel/metadata.yml. Ha de tenir TOTS els camps obligatoris: titol, autor, llengua_original, categoria, any_original. Si hi ha original.md, afegeix font_original amb la URL real d'on s'ha obtingut (Gutenberg, Wikisource, Perseus, etc). Si no saps la font, cerca-la. Valida que el YAML sigui correcte amb: python3 -c \"import yaml; yaml.safe_load(open('obres/*/schopenhauer/vierfache-wurzel/metadata.yml'))\" && git add obres/*/schopenhauer/vierfache-wurzel/metadata.yml && git commit -m 'fix: completar metadata schopenhauer/vierfache-wurzel' && git push",
+  "created": "2026-05-01T02:48:48+02:00"
+}

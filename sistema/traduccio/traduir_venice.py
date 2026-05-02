@@ -24,7 +24,7 @@ import time
 from pathlib import Path
 
 # Constants
-VENICE_SCRIPT = Path.home() / ".openclaw" / "workspace" / "skills" / "venice-ai" / "scripts" / "venice.py"
+VENICE_SCRIPT = Path.home() / ".hermes" / "skills" / "openclaw-imports" / "venice-ai" / "scripts" / "venice.py"
 DEFAULT_MODEL = "claude-sonnet-4-6"
 CHUNK_SIZE = 500  # Caràcters per chunk (molt reduït per evitar timeouts en traduccions llargues)
 MAX_RETRIES = 3

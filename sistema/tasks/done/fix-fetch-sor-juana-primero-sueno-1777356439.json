@@ -1,0 +1,9 @@
+{
+  "id": "fix-fetch-sor-juana-primero-sueno-1777356439",
+  "type": "fix-fetch",
+  "priority": 1,
+  "max_duration": 900,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor 'sor-juana' --obra 'primero-sueno' --output obres/*/sor-juana/primero-sueno/original.md && echo DONE",
+  "created": "2026-04-28T08:07:19+02:00",
+  "retries": 1
+}
