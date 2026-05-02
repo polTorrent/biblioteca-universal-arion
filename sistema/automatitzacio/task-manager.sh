@@ -4,7 +4,7 @@
 # Ús: bash task-manager.sh [add|list|cancel|status|clear]
 # ═══════════════════════════════════════════════════════════════
 
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
+TASKS_DIR="$PROJECT/sistema/tasks"
 mkdir -p "$TASKS_DIR"/{pending,running,done,failed}
 
 # ── Colors ─────────────────────────────────────────────────

@@ -13,11 +13,11 @@ set -uo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
 PROJECT="$HOME/biblioteca-universal-arion"
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
+TASKS_DIR="$PROJECT/sistema/tasks"
 LOG="$HOME/diem-optimizer.log"
 DISCORD_CHANNEL="1469504522614476953"  # Canal Biblioteca Universal Arion
 MIN_BALANCE_FOR_OPTIMIZATION=5.0  # Mínim DIEM per activar optimitzacions
-VENICE_BIN="$HOME/.openclaw/workspace/skills/venice-ai/scripts/venice.py"
+VENICE_BIN="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [DIEM-OPT] $1" | tee -a "$LOG"; }

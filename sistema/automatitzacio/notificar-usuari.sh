@@ -10,7 +10,7 @@ set -euo pipefail
 
 DISCORD_TOKEN="${DISCORD_BOT_TOKEN:-}"
 CHANNEL_NOTIFICACIONS="1479504522614476953"
-PENDING_FILE="$HOME/.openclaw/workspace/pending_notification.txt"
+PENDING_FILE="$PROJECT/sistema/state/pending_notification.txt"
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S')] [NOTIFICACIÓ] $1"

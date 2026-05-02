@@ -11,7 +11,7 @@ set -eo pipefail
 PROJECT="$HOME/biblioteca-universal-arion"
 CONFIG="$PROJECT/config/propostes-discord.json"
 PROPOSTES_DIR="$PROJECT/propostes"
-PROPOSTES_PROCESSADES="$HOME/.openclaw/workspace/propostes-processades.txt"
+PROPOSTES_PROCESSADES="$PROJECT/sistema/state/propostes-processades.txt"
 LOG="$HOME/claude-worker.log"
 
 # Crear directoris si no existeixen
@@ -123,7 +123,7 @@ notificar_usuari() {
     esac
     
     # Guardar per al heartbeat
-    cat > "$HOME/.openclaw/workspace/pending_notification.txt" << EOF
+    cat > "$PROJECT/sistema/state/pending_notification.txt" << EOF
 channel:${canal_notificacions}
 user:${usuari_id}
 message:${missatge}
@@ -141,7 +141,8 @@ processar_propostes_noves() {
     # Les propostes arriben via el formulari de Discord
     
     # Comprovar fitxers de proposta temporals creats pel formulari
-    for proposta_file in "$PROPOSTES_DIR"/tmp_*.json 2>/dev/null; do
+    shopt -s nullglob
+    for proposta_file in "$PROPOSTES_DIR"/tmp_*.json; do
         if [ -f "$proposta_file" ]; then
             log "📋 Processant: $proposta_file"
             

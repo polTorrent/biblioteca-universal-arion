@@ -5,7 +5,7 @@
 # Ús: bash sistema/automatitzacio/worker-status.sh
 # =============================================================================
 
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
+TASKS_DIR="$PROJECT/sistema/tasks"
 LOG="$HOME/claude-worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
 

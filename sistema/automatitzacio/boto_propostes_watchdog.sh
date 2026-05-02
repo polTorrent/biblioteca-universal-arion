@@ -2,7 +2,7 @@
 # Regenera el botó de propostes - FIX PERMANENT
 # S'executa al heartbeat i també via cron cada 10 minuts
 
-LAST_MESSAGE_FILE="/home/jo/.openclaw/workspace/propostes-button-message.txt"
+LAST_MESSAGE_FILE="$PROJECT/sistema/state/propostes-button-message.txt"
 CHANNEL_ID="1479599316380291276"
 TOKEN="${DISCORD_BOT_TOKEN:-}"
 

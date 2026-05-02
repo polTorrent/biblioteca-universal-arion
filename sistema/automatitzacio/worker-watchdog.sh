@@ -8,8 +8,8 @@
 #   - Detecta locks orfes
 #   - Detecta tasques a running/ sense procés Venice actiu
 
-LOCK_FILE="$HOME/.openclaw/workspace/tasks/worker.lock"
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
+LOCK_FILE="$PROJECT/sistema/tasks/worker.lock"
+TASKS_DIR="$PROJECT/sistema/tasks"
 LOG="$HOME/venice-worker.log"
 WORKER_SCRIPT="$HOME/biblioteca-universal-arion/sistema/automatitzacio/venice-worker.sh"
 STALE_MINUTES=30

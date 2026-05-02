@@ -15,7 +15,7 @@ set -uo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
 PROJECT="${PROJECT:-$HOME/biblioteca-universal-arion}"
-TASKS_DIR="${TASKS_DIR:-$HOME/.openclaw/workspace/tasks}"
+TASKS_DIR="${TASKS_DIR:-$PROJECT/sistema/tasks}"
 TASK_MANAGER="${TASK_MANAGER:-$PROJECT/sistema/automatitzacio/task-manager.sh}"
 METRICS_DIR="$PROJECT/metrics"
 REPORT_FILE="$METRICS_DIR/millora-continua-report.md"
