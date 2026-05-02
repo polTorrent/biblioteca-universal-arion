@@ -685,7 +685,7 @@ class BuildSystem:
         print("📑 Construint índex...")
 
         # Ordenar obres per data de revisió (més recent primer)
-        self.obres.sort(key=lambda o: o.get('data_revisio', '1900-01-01'), reverse=True)
+        self.obres.sort(key=lambda o: str(o.get('data_revisio', '1900-01-01')), reverse=True)
 
         # Estadístiques
         stats = {
@@ -1035,7 +1035,7 @@ class BuildSystem:
         # Ordenar obres per data de revisió (més recent primer)
         obres_ordenades = sorted(
             self.obres,
-            key=lambda o: o.get("data_revisio") or "1900-01-01",
+            key=lambda o: str(o.get("data_revisio") or "1900-01-01"),
             reverse=True,
         )
 
