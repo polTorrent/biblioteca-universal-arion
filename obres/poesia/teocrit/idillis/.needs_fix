@@ -57,40 +57,97 @@ VI (Βουκολιασταί), VII (Θαλύσια), XI (Κύκλωψ), XV (Συ
 
 ---
 
-## Investigació parcial (2026-05-01)
+## Investigació actualitzada (2026-05-02)
 
 ### Comprovacions realitzades:
 1. ✅ Verificat que la URL de Perseus és INCORRECTA
    - `Perseus:text:1999.01.0066` correspon a Demades, no a Teòcrit
-   
-2. ✅ Cercat a First1KGreek
-   - No s'ha trobat amb identificadors TLG típics (tlg0013, tlg0550, etc.)
-   - Necessita identificador TLG exacte o cerca per nom grec
 
-3. ⏳ Pendent: Cercar URL correcte a Perseus o fonts alternatives
+2. ✅ Cercat a First1KGreek
+   - Repositori: https://github.com/OpenGreekAndLatin/First1KGreek
+   - Identificador TLG: tlg0015 (Teòcrit)
+   - Ruta esperada: data/tlg0015/tlg001/tlg0015.tlg001.opp-grc1.xml
+   - Format: TEI XML
+   - **NOTA**: El fitxer no està disponible a la ruta esperada (404)
+
+3. ✅ Trobades URLs correctes de Perseus (2026-05-02)
+   - Idil·li I: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D1
+   - Idil·li II: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D2
+   - Idil·li III: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D3
+   - Idil·li VI: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D6
+   - Idil·li VII: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D7
+   - Idil·li XI: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D11
+   - Idil·li XV: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D15
+
+4. ✅ Verificat contingut de Perseus
+   - La pàgina mostra el text grec (Εἰδύλλια, Θύρσις ἢ ᾠδή, Φαρμακεύτριαι, etc.)
+   - Edició: A.S.F. Gow, Theocritus (Cambridge, 1952)
+   - Format: HTML amb classes greek
 
 ### Motiu de la interrupció:
-- Saldo DIEM CRITIC (0.499 DIEM)
-- Necessita web search amb model adequat (deepseek-v3.2 o glm-5 amb web search)
+- Restriccions de seguretat del sistema (no permet pipedownloads ni certs URLs)
+- Necessita descarrega manual o script Python dedicat
 
-### Següent pas (quan hi hagi saldo):
-1. Utilitzar Venice AI amb `--web-search on` per trobar la URL correcte de Teòcrit
-2. Cercar: "Theocritus Idylls Greek text Perseus" o "Θεόκριτος Εἰδύλλια"
-3. Validar que l'URL porta al text grec real
-4. Descarregar i guardar com a original.md
+### Següent pas:
+1. Descarregar manualment cada idil·li des de Perseus (HTTPS)
+2. Extreure el text grec net (sense HTML)
+3. Guardar a original.md amb format:
+   ```
+   # Εἰδύλλια — Selecció
 
-## Recomanació
+   ## Idil·li I — Θύρσις ἢ ᾠδή
+   [text grec]
 
-**Prioritat: ALTA - CRÍTICA**
+   ## Idil·li II — Φαρμακεύτριαι
+   [text grec]
+   ...
+   ```
+4. Actualitzar font_original al metadata.yml amb la URL base:
+   `https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228`
 
-Aquesta obra viola el principi fonamental del projecte: les traduccions han de partir de l'original. Sense text original, la traducció és sospitosa d'al·lucinació o font secundària.
+### Recursos identificats:
+- Perseus Digital Library: text grec complet amb navegació per poemes
+- First1KGreek: TEI XML (disponibilitat pendent de verificació)
+- Edició de referència: Gow (1952), disponible a Perseus
 
-### Passos immediats:
-1. Verificar la URL de Perseus per obtenir el text grec real
-2. Si no és disponible, buscar a First1KGreek
-3. Si s'obté l'original, comparar amb la traducció existent
-4. Si la traducció és correcta, afegir l'original i actualitzar estadístiques
-5. Si la traducció és incorrecta o al·lucinada, marcar per retraducció
+## Resultat de la investigació (2026-05-02)
+
+### Estat: URL CORRECTES IDENTIFICADES ✅
+
+### Conclusió:
+Les URLs correctes per descarregar el text grec dels Idil·lis de Teòcrit han estat identificades. No obstant això, l'extracció automàtica del text des de l'HTML de Perseus requereix un script especialitzat que pugui parsejar correctament l'estructura del lloc web.
+
+### URLs verificades:
+- **Col·lecció completa**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228
+- **Idil·li I**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D1
+- **Idil·li II**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D2
+- **Idil·li III**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D3
+- **Idil·li VI**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D6
+- **Idil·li VII**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D7
+- **Idil·li XI**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D11
+- **Idil·li XV**: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0228%3Atext%3DId.%3Apoem%3D15
+
+### Edició:
+A.S.F. Gow, *Theocritus* (Cambridge University Press, 1952)
+
+### Acció recomanada:
+**Descàrrega MANUAL**: 
+1. Visitar cada URL manualment amb un navegador
+2. Copiar el text grec de cada idil·li
+3. Enganxar a `original.md` amb el format adequat
+4. Actualitzar `font_original` al `metadata.yml`
+
+### Alternativa First1KGreek:
+- Repositori: https://github.com/OpenGreekAndLatin/First1KGreek
+- Identificador TLG: tlg0015
+- Format: TEI XML
+- Nota: El fitxer específic no està disponible a la ruta esperada, pot requerir cerca manual
+
+### Quant a la traducció existent:
+La traducció catalana (1323 línies, 40KB) sembla completa i ben estructurada. Un cop es tingui l'original grec, caldrà verificar:
+1. Que els idil·lis traduits coincideixen amb els que afirma haver traduït (I, II, III, VI, VII, XI, XV)
+2. Que el contingut és fidel a l'original
+3. Actualitzar les estadístiques de `metadata.yml`
 
 ## Data de creació
 2026-05-01
