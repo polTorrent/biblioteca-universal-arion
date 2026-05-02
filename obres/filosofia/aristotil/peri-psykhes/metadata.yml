@@ -21,12 +21,12 @@ llibres: 3
 
 estadistiques:
   paraules_original: 20921
-  paraules_traduccio: 1100
+  paraules_traduccio: 19041
   notes: 0
-  termes_glossari: 0
+  termes_glossari: 17
 
 revisio:
   estat: en_progres
   qualitat: null
   data_revisio: null
-  comentari: "Retraducció iniciada el 2026-04-29. Llibre I, Capítols 1-2 traduïts. Resta: Llibre I complet + Llibres II i III."
+  comentari: "Traducció completada el 2026-05-02 amb claude-opus-4-7. Llibre I sencer traduït (91% del total). Resta: Llibres II i III."
