@@ -39,7 +39,7 @@ brain_log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [BRAIN] $1" | tee -a "$LOG"; 
 
 # ── Control del bot OpenClaw ────────────────────────────────────────────────
 # El gateway corre com a systemd user service: openclaw-gateway.service
-# Parem abans de tocar fitxers a ~/.openclaw/, reiniciem després.
+# Parem abans de tocar fitxers a el directori del projecte, reiniciem després.
 # Guard global per evitar doble stop/start si ja s'ha parat des d'un altre script.
 OPENCLAW_SERVICE="openclaw-gateway.service"
 BRAIN_STOPPED_OPENCLAW=false
@@ -50,7 +50,7 @@ _brain_stop_openclaw() {
         return
     fi
     if systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null; then
-        brain_log "🛑 Parant OpenClaw abans de tocar ~/.openclaw/..."
+        brain_log "🛑 Parant worker abans de tocar el directori del projecte..."
         systemctl --user stop "$OPENCLAW_SERVICE" 2>/dev/null
         local tries=0
         while systemctl --user is-active --quiet "$OPENCLAW_SERVICE" 2>/dev/null && [ "$tries" -lt 10 ]; do
@@ -903,7 +903,7 @@ run_daily() {
 # =============================================================================
 # Si s'executa directament (no sourced), processar arguments
 if [ "${BASH_SOURCE[0]}" = "$0" ]; then
-    # Funcions que escriuen a ~/.openclaw/ → necessiten stop/start
+    # Funcions que escriuen a el directori del projecte → necessiten stop/start
     _with_openclaw_guard() {
         _brain_stop_openclaw
         trap '_brain_start_openclaw' EXIT
@@ -950,7 +950,7 @@ if [ "${BASH_SOURCE[0]}" = "$0" ]; then
             fi
             ;;
         record-task)
-            # Escriu a metrics/, no a ~/.openclaw/
+            # Escriu a metrics/, no a el directori del projecte
             _init_files
             _record_task "$2" "$3"
             ;;
