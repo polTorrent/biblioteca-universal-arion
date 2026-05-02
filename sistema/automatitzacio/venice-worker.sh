@@ -71,6 +71,31 @@ select_model() {
     esac
 }
 
+# ── Executar tasca de traducció amb script dedicat ─────────────────────────────
+run_translate_task() {
+    local obra="$1"
+    local model="$2"
+    local continuar="$3"
+    
+    log "   📖 Executant traduir_venice.py per a: $obra"
+    
+    cd "$PROJECT_DIR"
+    local cmd="python3 sistema/traduccio/traduir_venice.py --ruta \"$obra\" --model \"$model\""
+    
+    if [ "$continuar" = "true" ]; then
+        cmd="$cmd --continuar"
+    fi
+    
+    log "   🔧 Comanda: $cmd"
+    
+    local result
+    result=$(eval "timeout $TASK_TIMEOUT $cmd" 2>&1)
+    local exit_code=$?
+    
+    echo "$result"
+    return $exit_code
+}
+
 # ── Prefix anti-pla (s'afegeix a TOTES les instruccions) ─────────────────────
 EXEC_PREFIX="IMPORTANT: Executa les accions directament. NO generis plans, llistes de passos, ni propostes. Crea els fitxers, escriu el contingut, i fes els canvis DIRECTAMENT. Si necessites crear un directori, crea'l. Si necessites escriure un fitxer, escriu-lo. MAI responguis amb 'El pla és...' o 'Els passos serien...'. ACTUA.
 
@@ -416,6 +441,8 @@ if tasks:
     fi
     # Llegir model recomanat (si existeix)
     MODEL_RECOMANAT=$(json_field "$TASK" "model_recomanat")
+    # Llegir ruta de l'obra (per a tasques de traducció)
+    OBRA=$(json_field "$TASK" "obra")
     RETRIES=$(json_field "$TASK" "retries")
     RETRIES=${RETRIES:-0}
     TASK_TYPE=${TASK_TYPE:-unknown}
@@ -470,8 +497,36 @@ if tasks:
     fi
 
     # ── Executar ──────────────────────────────────────────────────────────
-    RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
-    EXIT=$?
+    # Detectar si és tasca de traducció per executar amb script dedicat
+    if echo "$TASK_TYPE" | grep -qiE "translate|retranslate|fix-translate"; then
+        log "   📖 Tasca de traducció detectada. Usant traduir_venice.py"
+        
+        # Determinar si és "continuar"
+        IS_CONTINUAR="false"
+        if echo "$INSTRUCTION" | grep -qi "continuar\|reprendre\|reanudar"; then
+            IS_CONTINUAR="true"
+        fi
+        
+        # Verificar que tenim la ruta de l'obra
+        if [ -z "$OBRA" ]; then
+            log "   ⚠️ Error: Tasca de traducció sense camp 'obra'. Intentant extraure de la instrucció..."
+            # Intentar extraure la ruta de la instrucció
+            OBRA=$(echo "$INSTRUCTION" | grep -oE "obres/[^ ]+" | head -1)
+        fi
+        
+        if [ -n "$OBRA" ]; then
+            RESULT=$(run_translate_task "$OBRA" "$VENICE_MODEL" "$IS_CONTINUAR")
+            EXIT=$?
+        else
+            log "   ❌ Error: No s'ha pogut determinar la ruta de l'obra. Cridant Venice directament..."
+            RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
+            EXIT=$?
+        fi
+    else
+        # Tasca normal: cridar Venice directament
+        RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
+        EXIT=$?
+    fi
     END_TIME=$(date +%s)
     DURATION=$(( END_TIME - START_TIME ))
 
