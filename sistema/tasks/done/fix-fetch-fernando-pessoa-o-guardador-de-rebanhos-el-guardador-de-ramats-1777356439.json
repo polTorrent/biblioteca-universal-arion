@@ -1,0 +1,8 @@
+{
+  "id": "fix-fetch-fernando-pessoa-o-guardador-de-rebanhos-el-guardador-de-ramats-1777356439",
+  "type": "fix-fetch",
+  "priority": 1,
+  "max_duration": 900,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor 'fernando-pessoa' --obra 'o-guardador-de-rebanhos-el-guardador-de-ramats' --output obres/*/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats/original.md && echo DONE",
+  "created": "2026-04-28T08:07:19+02:00"
+}

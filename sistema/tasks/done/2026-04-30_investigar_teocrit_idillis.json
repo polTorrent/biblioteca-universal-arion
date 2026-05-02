@@ -1,0 +1,24 @@
+{
+  "id": "2026-04-30_investigar_teocrit_idillis",
+  "tipus": "investigacio",
+  "prioritat": 1,
+  "obra": "obres/poesia/teocrit/idillis",
+  "problema": "TRADUCCIO_INFLADA_7723pct",
+  "instruccio": "Investigar el desajust entre original.md (12 línies, només metadades) i traduccio.md (1323 línies). L'original només conté capçalera sense text. La traducció conté idil·lis complets. Accions: 1) Verificar si el text grec original està disponible en domini públic (Gow edition); 2) Si existeix, descarregar-lo i substituir original.md; 3) Si no existeix accessible, marcar l'obra com a estimat original mancant.",
+  "model_recomanat": "glm-5",
+  "cost_estimat": 0.15,
+  "data_creacio": "2026-04-30T12:06:00+02:00",
+  "data_limit": "2026-05-02T23:59:59+02:00",
+  "resultat_investigacio": {
+    "estat": "ORIGINAL_MANCANT",
+    "problema": "El text grec original no existeix al directori. L'original.md només conté metadades (12 línies), mentre la traduccio.md té 1323 línies.",
+    "url_incorrecte": "El metadata.yml conté un URL incorrecte que apunta a Demades, no a Teòcrites.",
+    "fonts_consultades": [
+      "Perseus Digital Library - URL incorrecte",
+      "First1KGreek - TLG0553 és Artemidorus, no Teòcrites",
+      "TLG0135 - No existeix al repositori"
+    ],
+    "accio_recomanada": "Buscar el text grec de Teòcrites (Idylls) a fonts alternatives: Internet Archive, Wikisource, o edicions acadèmiques digitalitzades. Es necessita l'edició Gow (1952) o qualsevol edició de domini públic.",
+    "data_investigacio": "2026-04-30T14:50:22.504822"
+  }
+}

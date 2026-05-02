@@ -1,0 +1,13 @@
+{
+  "id": "fix-translate-sade-justine-1777596529",
+  "type": "fix-translate",
+  "priority": 2,
+  "max_duration": 3600,
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/*/sade/justine/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'sade' --obra 'justine'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/sade/justine/ && git commit -m 'fix: traduir/completar sade/justine' && git push",
+  "created": "2026-05-01T02:48:49+02:00",
+  "retries": 0,
+  "total_failures": 6,
+  "retry_count": 0,
+  "recovered": true,
+  "regen_count": 1
+}

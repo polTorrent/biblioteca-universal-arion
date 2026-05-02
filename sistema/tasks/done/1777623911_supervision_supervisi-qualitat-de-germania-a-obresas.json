@@ -1,0 +1,18 @@
+{
+  "id": "1777623911_supervision_supervisi-qualitat-de-germania-a-obresas",
+  "type": "supervision",
+  "priority": 2,
+  "created_at": "2026-05-01T08:25:11Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "SUPERVISI\u00d3 QUALITAT de 'germania' a obres/assaig/tacit/germania. PAS 0 \u2014 VERIFICACI\u00d3 ANTI-AL\u00b7LUCINACI\u00d3 (FER PRIMER): 1) Executa: python3 scripts/verificar_traduccio.py obres/assaig/tacit/germania/original.md obres/assaig/tacit/germania/traduccio.md 2) Si falla \u2192 crea .needs_fix amb motiu 'AL\u00b7LUCINACI\u00d3' i NO continues. 3) Compara 5-10 unitats aleat\u00f2ries (inici, mig, final) entre original i traducci\u00f3. 4) ATENCI\u00d3 ESPECIAL a zones post-cita/di\u00e0leg i l'\u00faltim 20% del text. PAS 1 \u2014 Si integritat OK, comprova: 1) Qualitat del catal\u00e0 (gram\u00e0tica, naturalitat, estil). 2) Fidelitat al original (no omissions ni invencions). 3) Glossari consistent. 4) Format correcte (cap\u00edtols, notes). 5) metadata.yml complet. PUNTUACI\u00d3: Si qualitat >= 7/10, crea fitxer .validated amb data i puntuaci\u00f3. Si < 7/10, crea fitxer .needs_fix amb llista de problemes concrets.",
+  "max_duration_minutes": 30,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null,
+  "retries": 1
+}

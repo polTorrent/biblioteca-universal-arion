@@ -9,10 +9,11 @@
 set -uo pipefail
 
 # ── Configuració ──────────────────────────────────────────────────────────────
-TASKS_DIR="$HOME/.openclaw/workspace/tasks"
 PROJECT_DIR="$HOME/biblioteca-universal-arion"
-LOG="$HOME/venice-worker.log"
+TASKS_DIR="$PROJECT_DIR/sistema/tasks"
+LOG="$PROJECT_DIR/sistema/logs/worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
+VENICE_CLI="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
 
 MAX_RETRIES=3                # Intents per tasca abans de marcar com a failed
 MAX_CONSECUTIVE_FAILS=3      # Pausa llarga si N tasques seguides fallen

@@ -1,0 +1,9 @@
+{
+  "id": "test-venice-2",
+  "type": "test",
+  "priority": 10,
+  "instruction": "Crea un fitxer /tmp/test-venice-2.txt amb el contingut 'Worker funcionant sense OpenClaw service!'",
+  "created_at": "2026-05-01T10:30:00Z",
+  "retries": 0,
+  "max_retries": 1
+}
