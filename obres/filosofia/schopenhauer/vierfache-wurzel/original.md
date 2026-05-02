@@ -1,56 +1,6756 @@
 # Über die vierfache Wurzel des Satzes vom zureichenden Grunde
+# Autor: Arthur Schopenhauer
+# Font: https://upload.wikimedia.org/wikipedia/commons/8/80/Ueber_die_vierfache_Wurzel_des_Satzes_vom_zureichenden_Grunde.pdf
+# Edició: Segona edició (1847)
 
+Arthur Schopenhauer
+Ueber die vierfache Wurzel
+des Satzes vom zureichenden
+Grunde
 Eine philosophische Abhandlung
+Ναι μα τον ηαμετερα πσψςηα παραδοντα τετρακτψν,
+Παγαν αεναου πηψτεˆος, ριζˆοματ΄ εςηουσαν.
+Vorrede
+Diese elementarphilosophische Abhandlung, welche zuerst
+im Jahr 1813 erschien, als ich mir die Doktorw¨urde damit
+erworben hatte, ist nachmals der Unterbau meines gan-
+zen Systems geworden. Dieserhalb darf sie im Buchhandel
+nicht fehlen; wie Dies, ohne daß ich es wußte, seit vier
+Jahren der Fall gewesen ist.
+Nun aber eine solche Jugendarbeit nochmals mit allen
+ihren Flecken und Fehlern in die Welt zu schicken schien
+mir unverantwortlich. Denn ich bedenke, daß die Zeit, da
+ich nichts mehr werde emendiren k¨onnen, nicht mehr sehr
+ferne seyn kann, mit ihr aber erst die Periode meiner ei-
+gentlichen Wirksamkeit eintritt, von der ich mich getr¨oste,
+daß sie eine lange seyn wird, im festen Vertrauen auf die
+Verheißung des Seneka: etiamsi omnibus tecum viventibus
+silentium livor indixerit; venient qui sine oﬀensa, sine gra-
+tia judicent (ep. 79). Ich habe daher, so weit es angieng,
+der vorliegenden Jugendarbeit nachgeholfen und muß so-
+gar, bei der K¨urze und Ungewißheit des Lebens, es als ein
+besonderes Gl¨uck ansehn, daß mir verg¨onnt gewesen ist,
+im sechszigsten Jahre noch zu berichtigen was ich im sechs
+und zwanzigsten geschrieben hatte.
+Dabei nun aber ist es mein Vorsatz gewesen, mit mei-
+nem jungen Menschen glimpﬂich zu verfahren und ihn,
+so viel als immer m¨oglich, zum Worte kommen und auch
+ausreden zu lassen. Allein wo er Unrichtiges, oder Ueber-
+ﬂ¨ussiges vorbrachte, oder auch das Beste zur Seite liegen
+ließ, habe ich ihm denn doch ins Wort fallen m¨ussen; und
+Dies ist oft genug der Fall gewesen; so daß vielleicht Man-
+cher den Eindruck davon erhalten wird, wie wenn ein Alter
+das Buch eines jungen Mannes vorliest, jedoch es ¨ofter sin-
+ken l¨aßt, um sich in eigenen Exkursen ¨uber das Thema zu
+ergehn.
+Es ist leicht abzusehn, daß ein in dieser Art und nach
+so langer Zeit nachgebessertes Werk nimmermehr die Ein-
+heit und Abr¨undung erlangen konnte, welche nur denen
+zukommt, die aus einem Gusse sind. Sogar schon im Stil
+und Vortrag wird eine so unverkennbare Verschiedenheit
+sich f¨uhlbar machen, daß der taktbegabte Leser wohl nie
+im Zweifel seyn wird, ob er den Alten oder den Jungen
+h¨ort. Denn freilich ist ein weiter Abstand zwischen dem
+sanften, bescheidenen Ton des jungen Mannes, der seine
+Sache vertrauensvoll vortr¨agt, indem er noch einf¨altig ge-
+nug ist, ganz ernstlich zu glauben, daß es Allen, die sich
+mit Philosophie besch¨aftigen, um nichts Anderes, als die
+Wahrheit, zu thun seyn k¨onne und daß folglich wer die-
+se f¨ordert ihnen willkommen seyn werde; — und der fe-
+sten, mitunter aber etwas rauhen Stimme des Alten, der
+denn doch endlich hat dahinterkommen m¨ussen, in welche
+noble Gesellschaft von Gewerbsleuten und unterth¨anigen
+Augendienern er da gerathen ist, und worauf es bei ihnen
+eigentlich abgesehn sei. Ja, wenn jetzt mitunter ihm die
+Indignation aus allen Poren quillt; so wird der billige Le-
+ser ihm auch Das nicht verdenken; hat es doch nachgerade
+der Erfolg gelehrt, was dabei herauskommt, wenn man, das
+Streben nach Wahrheit im Munde, die Augen immer nur
+auf die Intentionen h¨ochster Vorgesetzten gerichtet h¨alt;
+und wenn dabei, von der andern Seite, das e quovis ligno
+ﬁt Mercurius auch auf die großen Philosophen ausgedehnt
+und demnach ein plumper Scharlatan, wie Hegel, getrost
+zu einem solchen gest¨ampelt wird. Die Deutsche Philoso-
+phie steht n¨amlich da, mit Verachtung beladen, vom Aus-
+lande verspottet, von den redlichen Wissenschaften ausge-
+stoßen, — gleich einer Metze, die, f¨ur schn¨oden Lohn, sich
+gestern Jenem, heute Diesem Preis gegeben hat; und die
+K¨opfe der jetzigen Gelehrtengeneration sind desorganisirt
+durch Hegel’schen Unsinn: zum Denken unf¨ahig, roh und
+bet¨aubt werden sie die Beute des platten Materialismus,
+der aus dem Basiliskenei hervorgekrochen ist. Gl¨uck zu!
+Ich kehre zu meiner Sache zur¨uck.
+Ueber die Disparit¨at des Tones also wird man sich zu
+tr¨osten haben: denn ich konnte hier nicht, wie ich bei
+meinem Hauptwerke gethan, die sp¨atern Zus¨atze abgeson-
+dert beif¨ugen; kommt es doch auch nicht darauf an, daß
+man wisse, was ich im sechs und zwanzigsten und was im
+sechzigsten Jahre geschrieben habe; vielmehr nur darauf,
+daß Die, welche in den Grundbegriﬀen alles Philosophi-
+rens sich orientiren, sich festsetzen und klar werden wol-
+len, auch an diesen wenigen Bogen ein B¨uchelchen erhal-
+ten, woraus sie etwas T¨uchtiges, Solides und Wahres ler-
+nen k¨onnen: und Dies, hoﬀe ich, wird der Fall seyn. Sogar
+ist, bei der Ausf¨uhrung, die manche Theile jetzt erhalten
+haben, eine kompendiose Theorie des gesammten Erkennt-
+nißverm¨ogens daraus geworden, welche, indem sie immer
+nur dem Satz vom Grunde nachgeht, die Sache von einer
+neuen und eigenth¨umlichen Seite vorf¨uhrt, ihre Erg¨anzung
+dann aber durch das erste Buch der “Welt als Wille und
+Vorstellung”, nebst dazu geh¨origen Kapiteln des zweiten
+Bandes, und durch die Kritik der Kantischen Philosophie
+erh¨alt.
+Frankfurt a. M. im September 1847.
 
-*Ναὶ μὰ τὸν ἁμετέρᾳ ψυχᾷ παραδόντα τετρακτύν,*
-*Παγὰν ἀενάου φύσεως ῥιζώματ' ἔχουσαν.*
 
----
+Kapitel 1
+Einleitung
+§1
+Die Methode
+Plato der g¨ottliche und der erstaunliche Kant vereinigen
+ihre nachdrucksvollen Stimmen in der Anempfehlung einer
+Regel zur Methode alles Philosophirens, ja alles Wissens
+¨uberhaupt.1 Man soll, sagen sie, zweien Gesetzen, dem
+der Homogeneit¨at und dem der Speciﬁkation, auf gleiche
+Weise, nicht aber dem einen, zum Nachtheil des andern,
+Gen¨uge leisten. Das Gesetz der Homogeneit¨at heißt uns,
+durch Aufmerken auf die Aehnlichkeiten und Ueberein-
+stimmungen der Dinge, Arten erfassen, diese eben so zu
+Gattungen, und diese zu Geschlechtern vereinigen, bis wir
+zuletzt zum obersten, Alles umfassenden Begriﬀgelangen.
+Da dieses Gesetz ein transscendentales, unserer Vernunft
+wesentliches ist, setzt es Uebereinstimmung der Natur mit
+sich voraus, welche Voraussetzung ausgedr¨uckt ist in der
+alten Regel: entia praeter necessitatem non esse multipli-
+canda. — Das Gesetz der Speciﬁkation dr¨uckt Kant da-
+gegen so aus: entium varietates non temere esse minuen-
+das. Es heischt n¨amlich, daß wir die unter einem vielum-
+fassenden Geschlechtsbegriﬀvereinigten Gattungen und
+wiederum die unter diesen begriﬀenen, hohem und niede-
+rem Arten wohl unterscheiden, uns h¨utend, irgend einen
+Sprung zu machen und wohl gar die niedern Arten, oder
+vollends Individuen, unmittelbar unter den Geschlechts-
+begriﬀzu subsumiren; indem jeder Begriﬀnoch einer Ein-
+theilung in niedrigere f¨ahig ist und sogar keiner auf die
+bloße Anschauung herabgeht. Kant lehrt, daß beide Ge-
+setze transscendentale, Uebereinstimmung der Dinge mit
+sich a priori postulirende Grunds¨atze der Vernunft seien,
+und Plato scheint das Selbe auf seine Weise auszudr¨ucken,
+indem er sagt, diese Regeln, denen alle Wissenschaft ih-
+re Entstehung verdanke, seien zugleich mit dem Feuer des
+Prometheus vom G¨ottersitze zu uns herabgeworfen.
+§2
+Ihre Anwendung in gegenw¨ar-
+tigem Fall
+Das letztere dieser Gesetze ﬁnde ich, so m¨achtiger Emp-
+fehlung ungeachtet, zu wenig angewendet auf einen Haupt-
+grundsatz in aller Erkenntniß, den Satz vom zureichenden
+1 Platon. Phileb. pp. 219-223. Politic. 62, 63. Phaedr. 361-363.
+ed. Bip. Kant, Krit. d. reinen Vern., Anhang zur transsc. Dialektik.
+Grunde. Obgleich man n¨amlich l¨angst und oft ihn allge-
+mein aufgestellt hat, so hat man dennoch seine h¨ochst
+verschiedenen Anwendungen, in deren jeder er eine ande-
+re Bedeutung erh¨alt, und welche daher seinen Ursprung
+aus verschiedenen Erkenntnißkr¨aften verrathen, geh¨orig
+zu sondern vernachl¨assigt. Daß aber gerade bei Betrach-
+tung unserer Geisteskr¨afte die Anwendung des Princips
+der Homogeneit¨at, mit Vernachl¨assigung des ihm entge-
+gengesetzten, viele und langdauernde Irrth¨umer erzeugt
+und dagegen die Anwendung des Gesetzes der Speciﬁkati-
+on die gr¨oßten und wichtigsten Fortschritte bewirkt hat,
+— dies lehrt die Vergleichung der Kantischen Philosophie
+mit allen fr¨uheren. Es sei mir deshalb verg¨onnt, eine Stelle
+herzusetzen, in der Kant die Anwendung des Gesetzes der
+Speciﬁkation auf die Quellen unserer Erkenntnisse emp-
+ﬁehlt, indem solche meinem gegenw¨artigen Bestreben sei-
+ne W¨urdigung giebt. “Es ist von der ¨außersten Erheblich-
+keit, Erkenntnisse, die ihrer Gattung und Ursprunge nach
+von andern unterschieden sind, zu isoliren und sorgf¨altig
+zu verh¨uten, daß sie nicht mit andern, mit welchen sie
+im Gebrauche gew¨ohnlich verbunden sind, in ein Gemi-
+sche zusammenﬂießen. Was Chemiker beim Scheiden der
+Materien, was Mathematiker in ihrer reinen Gr¨oßenlehre
+thun, das liegt noch weit mehr dem Philosophen ob, da-
+mit er den Antheil, den eine besondere Art der Erkenntniß
+am herumschweifenden Verstandesgebrauch hat, ihren ei-
+genen Werth und Einﬂuß, sicher bestimmen k¨onne.” (Kri-
+tik d. rein. Vern., der Methodenlehre 3. Hauptst.)
+§3
+Nutzen dieser Untersuchung
+Sollte mir zu zeigen gelingen, daß der zum Gegenstand die-
+ser Untersuchung gemachte Grundsatz nicht unmittelbar
+aus einer, sondern zun¨achst aus verschiedenen Grunder-
+kenntnissen unsers Geistes ﬂießt; so wird daraus folgen,
+daß die Nothwendigkeit, welche er als ein a priori festste-
+hender Satz bei sich f¨uhrt, ebenfalls nicht eine und ¨uberall
+die selbe, sondern eine eben so vielfache, wie die Quellen
+des Satzes selbst ist. Dann aber wird Jeder, der auf den
+Satz einen Schluß gr¨undet, die Verbindlichkeit haben, ge-
+nau zu bestimmen, auf welche der verschiedenen, dem Sat-
+ze vom Grunde liegenden Nothwendigkeiten er sich st¨utze,
+und solche durch einen eigenen Namen (wie ich welche
+vorschlagen werde) zu bezeichnen. Ich hoﬀe, daß dadurch
+2
 
-## Vorrede zur zweiten Ausgabe (1847)
 
-Diese elementarphilosophische Abhandlung, welche zuerst im Jahre 1813 erschien, als ich mir die Doktorwürde damit erworben hatte, ist nachmals der Unterbau meines ganzen Systems geworden. Dieserhalb darf sie im Buchhandel nicht fehlen; wie Dies, ohne daß ich es wußte, seit vier Jahren der Fall gewesen ist.
+§5 Der Satz selbst
+3
+f¨ur die Deutlichkeit und Bestimmtheit im Philosophiren
+Einiges gewonnen seyn wird, und halte die, durch genaue
+Bestimmung der Bedeutung jedes Ausdrucks zu bewirken-
+de, gr¨oßtm¨ogliche Verst¨andlichkeit f¨ur ein zur Philosophie
+unumg¨anglich n¨othiges Erforderniß, um uns vor Irrthum
+und absichtlicher T¨auschung zu sichern und jede im Gebiet
+der Philosophie gewonnene Erkenntniß zu einem sicheren
+und nicht, durch sp¨ater aufgedeckten Mißverstand oder
+Zweideutigkeit, uns wieder zu entreißenden Eigenthum zu
+machen. Ueberhaupt wird der ¨achte Philosoph ¨uberall Hel-
+le und Deutlichkeit suchen, und stets bestrebt seyn, nicht
+einem tr¨uben, reißenden Regenbach zu gleichen, sondern
+vielmehr einem Schweizer See, der, durch seine Ruhe, bei
+großer Tiefe große Klarheit hat, welche eben erst die Tiefe
+sichtbar macht. La clart´e est la bonne foi des philosophes
+hat Vauvenargues gesagt. Der un¨achte hingegen wird zwar
+keineswegs nach Talleyrand’s Maxime, durch die Worte
+seine Gedanken, vielmehr nur seinen Mangel daran zu ver-
+bergen suchen, und wird die aus eigener Unklarheit des
+Denkens erwachsende Unverst¨andlichkeit seiner Philoso-
+pheme dem Leser ins Gewissen schieben. Hieraus erkl¨art
+sich, warum in einigen Schriften, z.B. den Schelling’schen,
+der didaktische Ton so h¨auﬁg in den scheltenden ¨ubergeht,
+ja oft die Leser schon zum voraus, durch Anticipation ihrer
+Unf¨ahigkeit, gescholten werden.
+§4
+Wichtigkeit des Satzes vom zu-
+reichenden Grunde
+Sie ist ¨uberaus groß, da man ihn die Grundlage aller
+Wissenschaft nennen darf. Wissenschaft n¨amlich bedeu-
+tet ein System von Erkenntnissen, d.h. ein Ganzes von
+verkn¨upften Erkenntnissen, im Gegensatz des bloßen Ag-
+gregats derselben. Was aber Anderes, als der Satz vom zu-
+reichenden Grunde, verbindet die Glieder eines Systems?
+Das eben zeichnet jede Wissenschaft vor dem bloßen Ag-
+gregat aus, daß ihre Erkenntnisse eine aus der andern, als
+ihrem Grunde, folgen. Darum sagt schon Plato: και γαρ
+ηαι δοξαι ηαι αλˆετηεις ου πολλου αξιαι εισιν, ηεˆος αν τις αυ-
+τας δˆεςˆε αιτιας λογισμˆο. (etiam opiniones verae non multi
+pretii sunt, donec quis illas ratiocinatione a causis ducta
+liget.) Meno, p. 385. Bip. — Zudem enthalten fast alle
+Wissenschaften Kenntnisse von Ursachen, aus denen die
+Wirkungen sich bestimmen lassen, und eben so andere Er-
+kenntnisse von Nothwendigkeiten der Folgen aus Gr¨unden,
+wie sie in unserer ferneren Betrachtung vorkommen wer-
+den; welches bereits Aristoteles ausdr¨uckt in den Worten:
+πασα επιστˆεμˆε διανοˆετικˆε, ˆε και μετεςηουσα τι διανοιας, περι
+αιτιας και αρςηας εστι. (omnis intellectualis scientia, sive
+aliquo modo intellectu participans, circa causas et princi-
+pia est) Metaph. V, 1. — Da es nun die, von uns stets
+a priori gemachte Voraussetzung, daß Alles einen Grund
+habe, ist, die uns berechtigt, ¨uberall Warum zu fragen;
+so darf man das Warum die Mutter aller Wissenschaften
+nennen.
+§5
+Der Satz selbst
+Weiterhin soll gezeigt werden, daß der Satz vom zureichen-
+den Grunde ein gemeinschaftlicher Ausdruck mehrerer a
+priori gegebener Erkenntnisse ist. Vorl¨auﬁg muß er indes-
+sen in irgend einer Formel aufgestellt werden. Ich w¨ahle
+die Wolﬁsche als die allgemeinste: Nihil est sine ratione
+cur potius sit, quam non sit. Nichts ist ohne Grund warum
+es sei.
 
-Nun aber eine solche Jugendarbeit nochmals mit allen ihren Fehlern und Mängeln in die Welt zu schicken schien mir unverantwortlich. Denn ich bedenke, daß die Zeit, da ich nichts mehr werde emendiren können, nicht mehr sehr ferne seyn kann, mit ihr aber erst die Periode meiner eigentlichen Wirksamkeit eintritt, von der ich mir tröste, daß sie eine lange seyn wird, im festen Vertrauen auf die Verheißung des Seneca: *etiamsi omnibus tecum viventibus silentium livor indixerit; venient qui sine offensa, sine gratia judicent* (ep. 79).
 
-Ich habe daher, so weit es angieng, der vorliegenden Jugendarbeit nachgeholfen und muß sogar, bei der Kürze und Ungewißheit des Lebens, es als ein besonderes Glück ansehn, daß mir vergönnt gewesen ist, im sechzigsten Jahre noch zu berichtigen was ich im sechs und zwanzigsten geschrieben hatte.
+Kapitel 2
+Uebersicht des Haupts¨achlichsten, so
+bisher ¨uber den Satz vom zureichenden
+Grunde gelehrt worden.
+§6
+Erste Aufstellung des Satzes
+und Unterscheidung zweier Be-
+deutungen desselben
+F¨ur einen solchen Ur-Grundsatz aller Erkenntniß mußte
+auch der, mehr oder weniger genau bestimmte, abstrakte
+Ausdruck sehr fr¨uh gefunden werden; daher es schwer und
+dabei nicht von großem Interesse seyn m¨ochte, nachzuwei-
+sen, wo zuerst ein solcher vorkommt. Plato und Aristoteles
+stellen ihn noch nicht f¨ormlich als einen Hauptgrundsatz
+auf, sprechen ihn jedoch ¨ofter als eine durch sich selbst
+gewisse Wahrheit aus. So sagt Plato, mit einer Naivet¨at,
+welche gegen die kritischen Untersuchungen der neuen Zeit
+wie der Stand der Unschuld gegen den der Erkenntniß des
+Guten und B¨osen erscheint: ανανκαιον, παντα τα γιγνομενα
+δια τινα αιτιαν γιγνεστηαι· πˆος γαρ αν ςηˆορις τουτˆον γιγνοιτο;
+(necesse est, quaecunque ﬁunt, per aliquam causam ﬁeri:
+quomodo enim absque ea ﬁerent?) Phileb. p. 240 Bip. und
+wieder im Tim¨aos (p. 302) παν δε το γιγνομενον ηψπ΄ αι-
+τιου τινος εξ ανανκˆες γιγνεστηαι· παντι γαρ αδψνατον ςηˆορις
+αιτιου γενεσιν σςηειν. (quidquid gignitur, ex aliqua causa
+necessario gignitur: sine causa enim oriri quidquam, im-
+possibile est.) — Plutarch, am Schlusse seines Buches de
+fato, f¨uhrt unter den Haupts¨atzen der Stoiker an: μαλιστα
+μεν και πρˆοτον δοξειε, το μˆεδεν αναιτιˆος γιγνεστηαι, αλλα
+κατα προˆεγουμενας αιτιας. (maxime id primum esse vide-
+bitur, nihil ﬁeri sine causa, sed omnia causis antegressis).
+Aristoteles stellt in den Analyt. post. 1, 2 den Satz vom
+Grunde gewissermaaßen auf, durch die Worte: επισταστ-
+ηαι δε οιομετηα ηεκαστον ηαπλˆος, ηοταν τˆεν τ΄ αιτιαν οιο-
+μετηα γινˆοσκειν, δι ηˆεν το πραγμα εστιν, ηοτι εκεινου αιτια
+εστιν, και μˆε ενδεςηεστηαι τουτο αλλˆος ειναι. (Scire autem
+putamus unamquamque rem simpliciter, quum putamus
+causam cognoscere, propter quam res est, ejusque rei cau-
+sam esse, nec posse eam aliter se habere). Auch giebt er
+in der Metaphysik, Lib. IV. c. 1, schon eine Eintheilung
+der verschiedenen Arten der Gr¨unde, oder vielmehr der
+Principien, αρςηαι, deren er acht Arten annimmt; welche
+Eintheilung aber weder gr¨undlich, noch scharf genug ist.
+Jedoch sagt er hier vollkommen richtig:
+παςˆον μεν ουν
+κοινον τˆον αρςηˆον, το πρˆοτον ειναι, ηοτηεν ˆε εστιν, ˆε γι-
+νεται, ˆε γιγνˆοσκεται. (omnibus igitur’principiis commune
+est, esse primum, unde aut est, aut ﬁt, aut cognoscitur).
+Im folgenden Kapitel unterscheidet er verschiedene Arten
+der Ursachen; wiewohl mit einiger Seichtigkeit und Ver-
+worrenheit zugleich. Besser jedoch, als hier, stellt er vier
+Arten der Gr¨unde auf in den Analyt. post. II, 11.
+αιτιαι
+δε τεσσαρες μια μεν το τι ˆεν ειναι· μια δε το τινˆον οντˆον,
+ανανκˆε τουτο ειναι· ηετερα δε, ηˆε τι πρˆοτον εκινˆεσε· τεταρτˆε
+δε, το τινος ηενεκα. (causae autem quatuor sunt: una quae
+explicat quid res sit; altera, quam, si quaedam sint, necesse
+est esse; tertia, quae quid primum movit; quarta id, cujus
+gratia). Dieses ist nun der Ursprung der von den Schola-
+stikern durchg¨angig angenommenen Eintheilung der caus-
+arum in causas materiales, formales, eﬃcientes et ﬁnales;
+wie dies denn auch zu ersehn aus Suarii disputationibus
+metaphysicis, diesem wahren Kompendio der Scholastik,
+disp. 12, sect. 2 et 3. Aber sogar noch Hobbes (de cor-
+pore, P. II. C.10, § 7.) f¨uhrt sie an und erkl¨art sie. —
+Jene Eintheilung ist im Aristoteles nochmals, und zwar
+etwas ausf¨uhrlicher und deutlicher, zu ﬁnden: n¨amlich Me-
+taph. I, 3. Auch im Buche de somno et vigilia, c. 2, ist sie
+kurz angef¨uhrt. — Was jedoch die so h¨ochst wichtige Un-
+terscheidung zwischen Erkenntnißgrund und Ursache be-
+triﬀt, so verr¨ath zwar Aristoteles gewissermaaßen einen
+Begriﬀvon der Sache, sofern er in den Analyt. post. I, 13,
+ausf¨uhrlich darthut, daß das Wissen und Beweisen, daß
+etwas sei, sich sehr unterscheide von dem Wissen und Be-
+weisen, warum es sei: was er nun als Letzteres darstellt, ist
+die Erkenntniß der Ursache, was als Ersteres, der Erkennt-
+nißgrund. Aber zu einem ganz deutlichen Bewußtseyn des
+Unterschiedes bringt er es doch nicht; sonst er ihn auch
+in seinen ¨ubrigen Schriften festgehalten und beobachtet
+haben w¨urde. Dies aber ist durchaus nicht der Fall: denn
+sogar wo er, wie in den oben beigebrachten Stellen, dar-
+auf ausgeht, die verschiedenen Arten der Gr¨unde zu un-
+terscheiden, kommt ihm der in dem hier in Betracht ge-
+nommenen Kapitel angeregte, so wesentliche Unterschied
+nicht mehr in den Sinn; und ¨uberdies gebraucht er das
+4
 
-[...]
 
----
+§7 Cartesius
+5
+Wort αιτιον durchg¨angig f¨ur jeden Grund, welcher Art er
+auch sei, nennt sogar sehr h¨auﬁg den Erkenntnißgrund, ja,
+die Pr¨amissen eines Schlusses, αιτιας: so z.B. Metaph. IV,
+18. Rhet. II, 21. de plantis I. p. 816. (ed. Berol.) beson-
+ders Analyt. post. I, 2, wo geradezu die Pr¨amissen eines
+Schlusses αιτιαι του σψμπερασματος heißen. Wenn man aber
+zwei verwandte Begriﬀe durch das selbe Wort bezeichnet;
+so ist dies ein Zeichen, daß man ihren Unterschied nicht
+kennt, oder doch nicht festh¨alt: denn zuf¨allige Homony-
+mie weit verschiedener Dinge ist etwas ganz Anderes. Am
+auﬀallendesten kommt aber dieser Fehler zu Tage in sei-
+ner Darstellung des Sophisma’s non causae ut causa, πα-
+ρα το μˆε αιτιον ηˆος αιτιον im Buche de sophisticis elenchis,
+c.5. Unter αιτιον versteht er hier durchaus nur den Beweis-
+grund, die Pr¨amissen, also einen Erkenntnißgrund, indem
+das Sophisma darin besteht, daß man ganz richtig etwas
+als unm¨oglich darthut, dasselbe jedoch auf den damit be-
+strittenen Satz gar nicht einﬂießt, welchen man dennoch
+dadurch umgestoßen zu haben vorgiebt. Von physischen
+Ursachen ist also dabei gar nicht die Rede. Allein der Ge-
+brauch des Wortes αιτιον hat bei den Logikern neuerer Zeit
+so viel Gewicht gehabt, daß sie, bloß daran sich haltend,
+in ihren Darstellungen der fallaciarum extra dictionem die
+fallacia non causae ut causa durchg¨angig erkl¨aren als die
+Angabe einer physischen Ursache, die es nicht ist: so z.B.
+Reimarus, G. E. Schulze, Fries und Alle, die mir vorge-
+kommen: erst in Twesten’s Logik ﬁnde ich dies Sophisma
+richtig dargestellt. Auch in sonstigen wissenschaftlichen
+Werken und Disputationen wird, in der Regel, durch die
+Anschuldigung einer fallacia non causae ut causa die Ein-
+schiebung einer falschen Ursache bezeichnet.
+Von dieser, bei den Alten durchg¨angig vorhandenen Ver-
+mengung und Verwechselung des logischen Gesetzes vom
+Erkenntnißgrunde mit dem transscendentalen Naturgesetz
+der Ursache und Wirkung liefert uns noch Sextus Empi-
+rikus ein starkes Beispiel. N¨amlich im 9. Buche adversus
+Mathematicos, also dem Buche adv. physicos, § 204, un-
+ternimmt er, das Gesetz der Kausalit¨at zu beweisen, und
+sagt: Einer, der behauptet, daß es keine Ursache (αιτια) ge-
+be, hat entweder keine Ursache (αιτια), aus der er dies be-
+hauptet, oder er hat eine. Im ersten Falle ist seine Behaup-
+tung nicht wahrer, als ihr Gegentheil: im andern stellt er
+eben durch seine Behauptung fest, daß es Ursachen giebt.
+Wir sehn also, daß die Alten es noch nicht zur deutlichen
+Unterscheidung zwischen der Forderung eines Erkenntniß-
+grundes zur Begr¨undung eines Urtheils und der einer Ur-
+sache zum Eintritt eines realen Vorganges gebracht ha-
+ben. — Was nun sp¨aterhin die Scholastiker betriﬀt, so war
+das Gesetz der Kausalit¨at ihnen eben ein ¨uber alle Unter-
+suchung erhabenes Axiom: non inquirimus an causa sit,
+quia nihil est per se notius, sagt Suarez, Disp. 12, sect.
+1. Dabei hielten sie die oben beigebrachte Aristotelische
+Eintheilung der Ursachen fest: hingegen die hier in Rede
+stehende nothwendige Unterscheidung haben, so viel mir
+bekannt, auch sie sich nicht zum Bewußtseyn gebracht.
+§7
+Cartesius
+Denn sogar unsern vortreﬄichen Cartesius, den Anreger
+der subjektiven Betrachtung und dadurch den Vater der
+neueren Philosophie, ﬁnden wir, in dieser Hinsicht, noch
+in kaum erkl¨arlichen Verwechselungen begriﬀen, und wer-
+den sogleich sehn, zu welchen ernstlichen und beklagens-
+werthen Folgen diese in der Metaphysik gef¨uhrt haben. Er
+sagt in der responsio ad secundas objectiones in medita-
+tiones de prima philosophia, axioma I: Nulla res existit,
+de qua non possit quaeri, quaenam sit causa, cur existat.
+Hoc enim de ipso Deo quaeri potest, non quod indigeat
+ulla causa ut existat, sed quia ipsa ejus naturae immensi-
+tas est causa sive ratio, propter quam nulla causa indiget
+ad existendum. Er h¨atte sagen m¨ussen: die Unermeßlich-
+keit Gottes ist ein Erkenntnißgrund, aus welchem folgt,
+daß Gott keiner Ursache bedarf. Er vermengt jedoch Bei-
+des, und man sieht, daß er sich des großen Unterschiedes
+zwischen Ursache und Erkenntnißgrund nicht deutlich be-
+wußt ist. Eigentlich aber ist es die Absicht, welche bei ihm
+die Einsicht verf¨alscht. Er schiebt n¨amlich hier, wo das
+Kausalit¨atsgesetz eine Ursache fordert, statt dieser einen
+Erkenntnißgrund ein, weil ein solcher nicht gleich wieder
+weiter f¨uhrt, wie jene; und bahnt sich so, durch eben dieses
+Axiom, den Weg zum ontologischen Beweise des Daseyns
+Gottes, dessen Erﬁnder er ward, nachdem Anselmus nur
+die Anleitung dazu im Allgemeinen geliefert hatte. Denn
+gleich nach den Axiomen, von denen das angef¨uhrte das
+erste ist, wird nun dieser ontologische Beweis f¨ormlich und
+ganz ernsthaft aufgestellt: ist er ja doch in jenem Axiom
+eigentlich schon ausgesprochen, oder liegt wenigstens so
+fertig darin, wie das H¨uhnchen im lange bebr¨uteten Eie.
+Also, w¨ahrend alle andern Dinge zu ihrem Daseyn einer
+Ursache bed¨urfen, gen¨ugt dem auf der Leiter des kosmolo-
+gischen Beweises herangebrachten Gotte, statt derselben,
+die in seinem eigenen Begriﬀe liegende immensitas: oder,
+wie der Beweis selbst sich ausdr¨uckt: in conceptu entis
+summe perfecti existentia necessaria continetur. Dies al-
+so ist der tour de passe-passe, zu welchem man die schon
+dem Aristoteles gel¨auﬁge Verwechselung der beiden Haupt-
+bedeutungen des Satzes vom Grunde, sogleich in majorem
+Dei gloriam, gebrauchte.
+Beim Lichte und unbefangen betrachtet ist nun die-
+ser ber¨uhmte ontologische Beweis wirklich eine allerlieb-
+ste Schnurre. Da denkt n¨amlich Einer, bei irgend einer
+Gelegenheit, sich einen Begriﬀaus, den er aus allerlei
+Pr¨adikaten zusammengesetzt, dabei jedoch Sorge tr¨agt,
+daß unter diesen, entweder blank und baar, oder aber,
+welches anst¨andiger ist, in ein anderes Pr¨adikat, z.B. per-
+fectio, immensitas, oder so etwas, eingewickelt, auch das
+Pr¨adikat der Realit¨at oder Existenz sei. Bekanntlich kann
+man aus einem gegebenen Begriﬀe alle seine wesentlichen,
+d.h. in ihm mit gedachten, Pr¨adikate, und eben so auch
+die wesentlichen Pr¨adikate dieser Pr¨adikate, mittelst lau-
+ter analytischer Urtheile, herausziehn, welche demnach lo-
+gische Wahrheit, d.h. an dem gegebenen Begriﬀihren Er-
+kenntnißgrund haben. Demgem¨aß holt nun Jener aus sei-
+nem beliebig erdachten Begriﬀauch das Pr¨adikat der Rea-
 
-## Erstes Kapitel: Einleitung
 
-### § 1. Die Methode
+§8 Spinoza
+6
+lit¨at, oder Existenz, heraus: und darum nun soll ein dem
+Begriﬀentsprechender Gegenstand, unabh¨angig von dem-
+selben, in der Wirklichkeit existiren!
+“W¨ar’ der Gedank’ nicht so verw¨unscht gescheut,
+Man w¨ar’ versucht ihn herzlich dumm zu nennen.”
+Uebrigens ist die einfache Antwort auf eine solche on-
+tologische Demonstration: “Es kommt Alles darauf an,
+wo du deinen Begriﬀher hast: ist er aus der Erfahrung
+gesch¨opft; `a la bonne heure, da existirt sein Gegenstand
+und bedarf keines weitem Beweises: ist er hingegen in dei-
+nem eigenen sinciput ausgeheckt; da helfen ihm alle sei-
+ne Pr¨adikate nichts: er ist eben ein Hirngespinst.” Daß
+aber die Theologie, um in dem ihr ganz fremden Gebiet
+der Philosophie, als wo sie gar zu gerne w¨are, Fuß zu fas-
+sen, zu dergleichen Beweisen hat ihre Zuﬂucht nehmen
+m¨ussen, erregt ein sehr ung¨unstiges Vorurtheil gegen ih-
+re Anspr¨uche. — Aber o! ¨uber die prophetische Weisheit
+des Aristoteles! Er hatte nie etwas vernommen vom onto-
+logischen Beweise; aber, als s¨ahe er vor sich in die Nacht
+der kommenden ﬁnstern Zeiten, erblickte darin jene scho-
+lastische Flause und wollte ihr den Weg verrennen, de-
+monstrirt er sorgf¨altig, im 7. Kapitel des 2. Buchs Analy-
+ticorum posteriorum, daß die Deﬁnition einer Sache und
+der Beweis ihrer Existenz zwei verschiedene und ewig ge-
+schiedene Dinge sind, indem wir durch das eine erfahren,
+was gemeint sei, durch das andere aber, daß so etwas exi-
+stire: und wie ein Orakel der Zukunft spricht er die Sentenz
+aus: το δ΄ ειναι ουκ ουσια ουδενι· ου γαρ γενος το ον: esse
+autem nullius rei essentia est, quandoquidem ens non est
+genus. Das besagt: “Die Existenz kann nie zur Essenz, das
+Daseyn nie zum Wesen des Dinges geh¨oren.” — Wie sehr
+hingegen Herr v. Schelling den ontologischen Beweis vener-
+irt, ist zu ersehn aus einer langen Note S. 152 des ersten
+Bandes seiner philosophischen Schriften von 1809. Aber et-
+was noch Lehrreicheres ist daraus zu ersehn, n¨amlich, wie
+dreistes, vornehmthuendes Schwadroniren hinreicht, den
+Deutschen Sand in die Augen zu streuen. Daß aber gar
+ein so durchweg erb¨armlicher Patron, wie Hegel, dessen
+ganze Philosophasterei eigentlich eine monstr¨ose Ampliﬁ-
+kation des ontologischen Beweises war, diesen gegen Kants
+Kritik hat vertheidigen wollen, ist eine Allianz, deren der
+ontologische Beweis selbst sich sch¨amen w¨urde, so wenig
+sonst das Sch¨amen seine Sache ist. — Man erwarte nur
+nicht, daß ich mit Achtung von Leuten spreche, welche die
+Philosophie in Verachtung gebracht haben.
+§8
+Spinoza
+Obgleich Spinoza’s Philosophie haupts¨achlich im Negiren
+des von seinem Lehrer Cartesius aufgestellten zwiefachen
+Dualismus, n¨amlich zwischen Gott und Welt, und zwi-
+schen Seele und Leib, besteht; so blieb er ihm doch v¨ollig
+getreu in der oben nachgewiesenen Verwechselung und
+Vermischung des Verh¨altnisses zwischen Erkenntnißgrund
+und Folge mit dem zwischen Ursache und Wirkung; ja,
+er suchte aus derselben, f¨ur seine Metaphysik, wo m¨oglich
+noch gr¨oßere Vortheile zu ziehn, als sein Lehrer f¨ur die
+seinige daraus gezogen hatte: denn die besagte Verwech-
+selung ist die Grundlage seines ganzen Pantheismus ge-
+worden.
+In einem Begriﬀe n¨amlich sind alle seine wesentlichen
+Pr¨adikate enthalten, implicite; daher sie, durch bloß ana-
+lytische Urtheile, sich explicite aus ihm entwickeln lassen:
+die Summe dieser ist seine Deﬁnition. Diese ist daher von
+ihm selbst, nicht dem Inhalt, sondern nur der Form nach,
+verschieden; indem sie aus Urtheilen besteht, die alle in
+ihm mitgedacht sind, und daher in ihm ihren Erkenntniß-
+grund haben, sofern sie sein Wesen darlegen. Diese k¨onnen
+demnach angesehn werden als die Folgen jenes Begriﬀs, als
+ihres Grundes. Dieses Verh¨altniß eines Begriﬀs zu den in
+ihm gegr¨undeten und aus ihm entwickelbaren analytischen
+Urtheilen ist nun ganz und gar das Verh¨altniß, welches
+Spinoza’s sogenannter Gott zur Welt, oder richtiger, wel-
+ches die einzige und alleinige Substanz zu ihren zahllosen
+Accidenzien hat. (Deus, sive substantia constans inﬁnitis
+attributis. Eth. I. pr. 11. — Deus, sive omnia Dei attri-
+buta.) Es ist also das Verh¨altniß des Erkenntnißgrundes
+zu seiner Folge; statt daß der wirkliche Theismus (der des
+Spinoza ist bloß ein nomineller) das Verh¨altniß der Ursa-
+che zur Wirkung annimmt, in welchem der Grund von der
+Folge, nicht, wie in jenem, bloß der Betrachtungsart nach,
+sondern wesentlich und wirklich, also an sich selbst und
+immer, verschieden und getrennt bleibt. Denn eine solche
+Ursache der Welt, mit Hinzuf¨ugung der Pers¨onlichkeit, ist
+es, die das Wort Gott, ehrlicherweise gebraucht, bezeich-
+net. Hingegen ist ein unpers¨onlicher Gott eine contradictio
+in adjecto. Indem nun aber Spinoza auch in dem von ihm
+aufgestellten Verh¨altnisse das Wort Gott f¨ur die Substanz
+beibehalten wollte und solche sogar ausdr¨ucklich die Ur-
+sache der Welt benannte, konnte er dies nur dadurch zu
+Stande bringen, daß er jene beiden Verh¨altnisse, folglich
+auch den Satz vom Erkenntnißgrund mit dem der Kausa-
+lit¨at, ganz und gar vermischte. Dies zu belegen bringe ich,
+von unz¨ahligen, nur folgende Stelle in Erinnerung. Notan-
+dum, dari necessario uniuscujusque rei existentis certam
+aliquam causam, propter quam existit. Et notandum, hanc
+causam, propter quam aliqua res existit, vel debere conti-
+neri in ipsa natura et deﬁnitione rei existentis (nimirum
+quod ad ipsius naturam pertinet existere), vel debere ex-
+tra ipsam dari. (Eth. P. I, prop. 8, schol. 2). Im letztern
+Fall meint er eine wirkende Ursache, wie sich dies aus dem
+Folgenden ergiebt; im erstern hingegen einen bloßen Er-
+kenntnißgrund: er identiﬁcirt jedoch Beides und arbeitet
+dadurch seiner Absicht, Gott mit der Welt zu identiﬁciren,
+vor. Einen im Innern eines gegebenen Begriﬀes liegenden
+Erkenntnißgrund mit einer von außen wirkenden Ursache
+zu verwechseln und dieser gleichzustellen, ist ¨uberall sein
+Kunstgriﬀ; und vom Cartesius hat er ihn gelernt. Als Be-
+lege dieser Verwechselung f¨uhre ich noch folgende Stellen
+an. Ex necessitate divinae naturae omnia, quae sub intel-
+lectum inﬁnitum cadere possunt, sequi debent. (Eth. P. I,
+prop. 16.) Zugleich aber nennt er Gott ¨uberall die Ursa-
+che der Welt. Quidquid existit Dei potentiam, quae omni-
+um rerum causa est, exprimit. ibid. prop. 36. demonstr. —
 
-Plato der göttliche und der erstaunliche Kant vereinigen ihre nachdrucksvollen Stimmen in der Anempfehlung einer Regel zur Methode alles Philosophirens, ja alles Wissens überhaupt. Man soll, sagen sie, zweien Gesetzen, dem der Homogeneität und dem der Specifikation, auf gleiche Weise, nicht aber dem einen, zum Nachtheil des andern, Genüge leisten.
 
-Das Gesetz der Homogeneität heißt uns, durch Aufmerken auf die Aehnlichkeiten und Uebereinstimmungen der Dinge, Arten erfassen, diese eben so zu Gattungen, und diese zu Geschlechtern vereinigen, bis wir zuletzt zum obersten, Alles umfassenden Begriff gelangen. Da dieses Gesetz ein transcendentales, unsrer Vernunft wesentliches ist, setzt es Uebereinstimmung der Natur mit sich voraus, welche Voraussetzung ausgedrückt ist in der alten Regel: *entia praeter necessitatem non esse multiplicanda*.
+§8 Spinoza
+7
+Deus est omnium rerum causa immanens, non vero transi-
+ens. ibid. prop. 18. — Deus non tantum est causa eﬃciens
+rerum existentiae, sed etiam essentiae. ibid. prop. 25. —
+Eth. P. III, prop. 1. demonstr. heißt es: ex data quacunque
+idea aliquis eﬀectus necessario sequi debet. Und’ibid. prop.
+4. Nulla res nisi a causa externa potest destrui. — De-
+monstr. Deﬁnitio cujuscunque rei, ipsius essentiam (We-
+sen, Beschaﬀenheit zum Unterschied von existentia, Da-
+seyn) aﬃrmat, sed non negat; sive rei essentiam ponit,
+sed non tollit. Dum itaque ad rem ipsam tantum, non au-
+tem ad causas externas attendimus, nihil in eadem poteri-
+mus invenire, quod ipsam possit destruere. Dies heißt: weil
+ein Begriﬀnichts enthalten kann, was seiner Deﬁnition,
+d.i. der Summe seiner Pr¨adikate, widerspricht; kann auch
+ein Ding nichts enthalten, was Ursache seiner Zerst¨orung
+werden k¨onnte. Diese Ansicht wird aber auf ihren Gipfel
+gef¨uhrt in der etwas langen, zweiten Demonstration der
+elften Proposition, woselbst die Ursache, welche ein Wesen
+zerst¨oren oder aufheben k¨onnte, vermischt wird mit einem
+Widerspruch, den die Deﬁnition desselben enthielte, und
+der sie deshalb aufh¨obe. Die Nothwendigkeit, Ursache und
+Erkenntnißgrund zu konfundiren, wird hiebei so dringend,
+daß Spinoza nie causa, oder auch ratio, allein sagen darf,
+sondern jedesmal ratio seu causa zu setzen gen¨othigt ist,
+welches daher hier, auf Einer Seite, acht Mal geschieht, um
+den Unterschleif zu decken. Das Selbe hatte schon Carte-
+sius in dem oben angef¨uhrten Axiom gethan.
+So ist denn Spinoza’s Pantheismus eigentlich nur die
+Realisation des ontologischen Beweises des Cartesius. Zu-
+n¨achst adoptirt er den oben angef¨uhrten ontotheologischen
+Satz des Cartesius: ipsa naturae Dei immensitas est cau-
+sa sive ratio, propter quam nulla causa indiget ad exi-
+stendum: statt Deus sagt er (im Anfang) stets substantia,
+und nun schließt er: substantiae essentia necessario invol-
+vit existentiam, ergo erit substantia causa sui. (Eth. P. I,
+prop. 7.) Also durch das selbe Argument, womit Cartesius
+das Daseyn Gottes bewiesen hatte, beweist er das absolut
+nothwendige Daseyn der Welt, — die also keines Gottes
+bedarf. Dies leistet er noch deutlicher im 2. Scholio zur
+8. Proposition: Quoniam ad naturam substantiae pertinet
+existere, debet ejus deﬁnitio necessariam existentiam in-
+volvere, et consequenter ex sola ejus deﬁnitione debet ipsi-
+us existentia concludi. Diese Substanz aber ist bekanntlich
+die Welt. — Im selben Sinne sagt die Demonstration zur
+Prop. 24: Id, cujus natura in se considerata (d.i. Deﬁniti-
+on) involvit existentiam, est causa sui.
+Was n¨amlich Cartesius nur ideal, nur subjektiv, d.h. nur
+f¨ur uns, nur zum Behuf der Erkenntniß, n¨amlich des Be-
+weises des Daseyns Gottes, aufgestellt hatte. Das nahm
+Spinoza real und objektiv, als das wirkliche Verh¨altniß
+Gottes zur Welt. Beim Cartesius liegt im Begriﬀe Got-
+tes die Existenz und wird also zum Argument f¨ur sein
+wirkliches Daseyn: beim Spinoza steckt Gott selbst in der
+Welt. Was demnach beim Cartesius bloßer Erkenntniß-
+grund war, macht Spinoza zum Realgrund: hatte jener im
+ontologischen Beweise gelehrt, daß aus der essentia Gottes
+seine existentia folgt, so macht dieser daraus die causa sui
+und er¨oﬀnet dreist seine Ethik mit: per causam sui intelli-
+go id, cujus essentia (Begriﬀ) involvit existentiam; — taub
+gegen den Aristoteles, der ihm zuruft το δ΄ ειναι ουκ ουσια
+ουδενι. Hier haben wir nun die handgreiﬂichste Verwech-
+selung des Erkenntnißgrundes mit der Ursache. Und wenn
+die Neospinozisten (Schellingianer, Hegelianer u.s.w.), ge-
+wohnt, Worte f¨ur Gedanken zu halten, sich oft in vornehm
+and¨achtiger Bewunderung ¨uber dieses causa sui ergehn; so
+sehe ich meinerseits in causa sui nur eine contradictio in
+adjecto, ein Vorher was nachher ist, ein freches Macht-
+wort, die unendliche Kausalkette abzuschneiden, ja, ein
+Analogen zu jenem Oesterreicher, der, als er, die Agraﬀe
+auf seinem festgeschnallten Schacko zu befestigen, nicht
+hoch genug hinaufreichen konnte, auf den Stuhl stieg. Das
+rechte Emblem der causa sui ist Baron M¨unchhausen, sein
+im Wasser sinkendes Pferd mit den Beinen umklammernd
+und an seinem ¨uber den Kopf nach vorn geschlagenen Zopf
+sich mit sammt dem Pferde in die H¨ohe ziehend; und dar-
+unter gesetzt: Causa sui.
+Zum Schluß werfe man noch einen Blick auf die propos.
+16. des ersten Buchs der Ethik, wo aus dem Grunde, daß ex
+data cujuscunque rei deﬁnitione plures proprietates intel-
+lectus concludit, quae re vera ex eadem necessario sequun-
+tur gefolgert wird: ex necessitate divinae naturae (d.h. real
+genommen) inﬁnita inﬁnitis modis sequi debent; unstreitig
+also hat dieser Gott zur Welt das Verh¨altniß eines Begriﬀes
+zu seiner Deﬁnition. Nichtsdestoweniger kn¨upft sich gleich
+daran das Korollarium: Deum omnium rerum esse causam
+eﬃcientem. Weiter kann die Verwechselung des Erkennt-
+nißgrundes mit der Ursache nicht getrieben werden, und
+bedeutendere Folgen, als hier, konnte sie nicht haben. Dies
+aber zeugt f¨ur die Wichtigkeit des Themas gegenw¨artiger
+Abhandlung.
+Zu diesen, aus Mangel an Deutlichkeit im Denken ent-
+sprungenen Verirrungen jener beiden großen Geister der
+Vergangenheit hat in unsern Tagen Hr. v. Schelling noch
+ein kleines Nachspiel geliefert, indem er dem vorliegen-
+den Klimax noch die dritte Stufe aufzusetzen sich bem¨uht
+hat. War n¨amlich Cartesius der Forderung des unerbittli-
+chen Kausalit¨atsgesetzes, welches seinen Gott in die Enge
+trieb, dadurch begegnet, daß er der verlangten Ursache
+einen Erkenntnißgrund substituirte, um die Sache zur Ru-
+he zu bringen; und hatte Spinoza aus diesem eine wirkli-
+che Ursache und also causa sui gemacht, wobei ihm der
+Gott zur Welt ward; so ließ Hr. v. Schelling (in seiner Ab-
+handlung von der menschlichen Freiheit) in Gott selbst
+den Grund und die Folge auseinandertreten, konsolidir-
+te also die Sache noch viel besser dadurch, daß er sie zu
+einer realen und leibhaften Hypostase des Grundes und
+seiner Folge erhob, indem er uns mit etwas bekannt mach-
+te, “das in Gott nicht Er selbst sei, sondern sein Grund,
+als ein Urgrund, oder vielmehr Ungrund.” Hoc quidem ve-
+re palmarium est. — Daß er ¨ubrigens die ganze Fabel aus
+Jakob B¨ohme’s “Gr¨undlichem Bericht vom irdischen und
+himmlischen Mysterio” genommen hat, ist heut zu Tage
+bekannt genug: woher aber Jakob B¨ohme selbst die Sa-
+che habe und wo also eigentlich der Ungrund zu Hause
+sei, scheint man nicht zu wissen; daher ich mir erlaube, es
 
-Das Gesetz der Specification drückt Kant dagegen so aus: *entium varietates non temere esse minuendas*. Es heischt nämlich, daß wir die unter einem vielumfassenden Geschlechtsbegriff vereinigten Gattungen und wiederum die unter diesen begriffenen, höhern und niedern Arten wohl unterscheiden, uns hütend, irgend einen Sprung zu machen und wohl gar die niedern Arten, oder vollends Individuen, unmittelbar unter den Geschlechtsbegriff zu subsumiren; indem jeder Begriff noch einer Eintheilung in niedere fähig ist und sogar keiner auf die bloße Anschauung herabgeht.
 
-Kant lehrt, daß beide Gesetze transcendentale, Uebereinstimmung der Dinge mit sich a priori postulirende Grundsätze der Vernunft seyen, und Plato scheint das Selbe auf seine Weise auszudrücken, indem er sagt, diese Regeln, denen alle Wissenschaft ihre Entstehung verdanke, seyen zugleich mit dem Feuer des Prometheus vom Göttersitze zu uns herabgeworfen.
+§10 Wolf
+8
+herzusetzen. Es ist der βψτηος, d.i. abyssus, vorago, also
+bodenlose Tiefe, Ungrund, der Valentinianer (einer Ket-
+zersekte des zweiten Jahrhunderts), welcher das ihm kon-
+substantiale Schweigen befruchtete, das nun den Verstand
+und die Welt gebar: wie es Iren¨aus contr. haeres. lib. I.
+c. 1, in folgenden Worten berichtet: Λεγουσι γαρ τινα ει-
+να εν αορατοις και ακατονομαστοις ηψπςˆομασι τελειον Αιˆονα
+προοντα· τουτον δε και προαρςηˆεν, και προπατοπρα, και βψ-
+τηον καλουσιν. — — Ηψπαρςηοντα δε αυτον αςηˆορˆετον και
+αορατον, αιδιον τε και αγεννˆετον, εν ηˆεσψςηια και ˆερεμια
+πολλˆε γεγονεναι εν απειροις αιˆοσι ςηρονˆον. Σψνψπαρςηειν
+δε αυτˆο και Εννοιαν, ηˆεν δε και ἣαριν, και Σιγˆεν ονομα-
+ζουσι· και εννοˆετηˆεναι ποτε απη΄ ηεαυτου προβαλεστηαι τον
+βψτηον τουτον αρςηˆεν τˆον παντˆον, και κατηαπερ σπερμα τˆεν
+προβολˆεν ταυτˆεν (ηˆεν προβαλεστηαι ενενοˆετηˆε) κατηεστηαι,
+ηˆος εν μˆετρα, τˆε σψνψπαρςηουςˆε ηεαυτˆο Σιγˆε. Ταυτˆεν δε,
+ηψποδεξαμενˆεν το σπερμα τουτο, και ενκψμονα γενομενˆεν,
+αποκψˆεσαι Νουν, ηομοιον τε και ισον τˆο προβαλοντι, και μο-
+νον ςηˆορουντα το μεγετηος του Πατρος. Τον δε νουν τουτον
+και μονογενˆε καλουσι, και αρςηˆεν τˆον παντˆον. (Dicunt enim
+esse quendam in sublimitatibus illis, quae nec oculis cer-
+ni, nec nominari possunt, perfectum Aeonem praeexisten-
+tem, quem et proarchen, et propatorem, et Bythum vocant.
+Eum autem, quum incomprehensibilis et invisibilis, sempi-
+ternus idem et ingenitus esset, inﬁnitis temporum seculis
+in summa quiete ac tranquillitate fuisse. Unˆa etiam cum
+eo Cogitationem exstitisse, quam et Gratiam et Silentium
+(Sigen) nuncupant. Hunc porro Bythum in animum ali-
+quando induxisse, rerum omnium initium proferre, atque
+hanc, quam in animum induxerat, productionem, in Sigen
+(silentium) quae unˆa cum eo erat, non secus atque in vul-
+vam demisisse. Hanc vero, suscepto hoc semine, praegnan-
+tem eﬀectam peperisse Intellectum, parenti suo parem et
+aequalem, atque ita comparatum, ut solus paternae magni-
+tudinis capax esset. Atque hunc Intellectum et Monogenem
+et Patrem et principium omnium rerum appellant.) Dem
+Jak. B¨ohme muß Das irgendwie aus der Ketzergeschichte
+zu Ohren gekommen seyn, und aus dessen H¨anden hat Hr.
+v. Schelling es gl¨aubig entgegengenommen.
+§9
+Leibnitz
+Leibnitz hat zuerst den Satz vom Grunde als einen Haupt-
+grundsatz aller Erkenntniß und Wissenschaft f¨ormlich auf-
+gestellt. Er proklamirt ihn an vielen Stellen seiner Werke
+sehr pomphaft, thut gar wichtig damit, und stellt sich, als
+ob er ihn erst erfunden h¨atte; jedoch weiß er von demsel-
+ben nichts weiter zu sagen, als nur immer, daß Alles und
+Jedes einen zureichenden Grund haben m¨usse, warum es
+so und nicht anders sei; was die Welt denn doch wohl auch
+vor ihm gewußt haben wird. Die Unterscheidung der zwei
+Hauptbedeutungen desselben deutet er dabei gelegentlich
+zwar an, hat sie jedoch nicht ausdr¨ucklich hervorgehoben,
+noch auch sonst sie irgendwo deutlich er¨ortert. Die Haupt-
+stelle ist in seinen philosophiae § 32, und ein wenig besser
+in der franz¨osischen Bearbeitung derselben, ¨uberschrieben
+Monadologie: en vertu du principe de la raison suﬃsante
+nous consid´erons qu’aucun fait ne sauroit se trouver vrai
+ou existant, aucune ´enonciation v´eritable, sans qu’il y ait
+une raison suﬃsante, pourquoi il en soit ainsi et non pas
+autrement; — womit zu vergleichen Theodicee § 44, und
+der 5. Brief an Clarke, § 125.
+§10
+Wolf
+Wolf ist also der Erste, welcher die beiden Hauptbedeu-
+tungen unsers Grundsatzes ausdr¨ucklich gesondert und ih-
+ren Unterschied auseinandergesetzt hat. Er stellt jedoch
+den Satz vom zureichenden Grunde noch nicht, wie es
+jetzt geschieht, in der Logik auf, sondern in der Onto-
+logie. Daselbst dringt er zwar schon § 71 darauf, daß man
+den Satz vom zureichenden Grund der Erkenntniß nicht
+mit dem der Ursache und Wirkung verwechseln solle, be-
+stimmt hier aber doch nicht deutlich den Unterschied und
+begeht selbst Verwechselungen, indem er eben hier im Ka-
+pitel de ratione suﬃciente §§ 70, 74, 75, 77, zum Beleg f¨ur
+das principium rationis suﬃcientis Beispiele von Ursache
+und Wirkung und Motiv und Handlung anf¨uhrt, die, wenn
+er jene Unterscheidung machen will, im Kapitel de causis
+des selben Werks angef¨uhrt werden m¨ußten. In diesem nun
+f¨uhrt er wieder ganz ¨ahnliche Beispiele an und stellt auch
+hier wieder das principium cognoscendi auf (§ 876), das
+zwar, als oben bereits abgehandelt, nicht hieher geh¨ort,
+jedoch dient, die bestimmte und deutliche Unterscheidung
+desselben vom Gesetz der Kausalit¨at einzuf¨uhren, welche
+sodann §§ 881-884 folgt. Principium, sagt er hier ferner,
+dicitur id, quod in se continet rationem alterius, und er
+unterscheidet drei Arten desselben, n¨amlich: 1) principium
+ﬁendi (causa), das er deﬁnirt als ratio actualitatis alterius;
+e. gr. si lapis calescit, ignis aut radii solares sunt rationes,
+cur calor lapidi insit. 2) principium essendi, das er deﬁ-
+nirt: ratio possibilitatis alterius; in eodem exemplo, ratio
+possibilitatis, cur lapis calorem recipere possit, est in es-
+sentia seu modo compositionis lapidis. Dies letztere scheint
+mir ein unstatthafter Begriﬀ. M¨oglichkeit ¨uberhaupt ist,
+wie Kant zur Gen¨uge gezeigt hat, Uebereinstimmung mit
+den uns a priori bewußten Bedingungen aller Erfahrung.
+Aus diesen wissen wir, in Beziehung auf Wolf’s Beispiel
+vom Stein, daß Ver¨anderungen als Wirkungen von Ur-
+sachen m¨oglich sind, d.h. daß ein Zustand auf einen an-
+dern folgen kann, wenn dieser die Bedingungen zu jenem
+enth¨alt: hier ﬁnden wir, als Wirkung, den Zustand des
+Warmseyns des Steins, und, als Ursache, den ihm vorher-
+gehenden der endlichen W¨armekapacit¨at des Steins und
+seiner Ber¨uhrung mit freier W¨arme. Daß nun Wolf die zu-
+erst genannte Beschaﬀenheit dieses Zustandes principium
+essendi und die zweite principium ﬁendi nennen will, be-
+ruht auf einer T¨auschung, die ihm daraus entsteht, daß die
+auf der Seite des Steins liegenden Bedingungen bleiben-
+der sind und daher auf die ¨ubrigen l¨anger warten k¨onnen.
+Daß n¨amlich der Stein ein solcher ist, wie er ist, von sol-
+cher chemischen Beschaﬀenheit, die so und so viel spe-
+ciﬁsche W¨arme, folglich eine im umgekehrten Verh¨altniß
+derselben stehende W¨armekapacit¨at mit sich bringt, ist,
 
----
 
-### § 2. Ihre Anwendung im gegenwärtigen Fall
+§12 Hume
+9
+eben wie andererseits sein in Ber¨uhrung mit freier W¨arme
+kommen, Folge einer Kette fr¨uherer Ursachen, s¨ammtlich
+principiorum ﬁendi: das Zusammentreﬀen beiderseitiger
+Umst¨ande aber macht allererst den Zustand aus, der, als
+Ursache, die Erw¨armung, als Wirkung, bedingt. Nirgends
+bleibt dabei Raum f¨ur Wolf’s principium essendi, das ich
+daher nicht anerkenne und ¨uber welches ich hier theils des-
+halb etwas ausf¨uhrlich gewesen bin, weil ich den Namen
+in einer ganz andern Bedeutung unten gebrauchen werde,
+und theils weil die Er¨orterung beitr¨agt, den wahren Sinn
+des Kausalit¨atsgesetzes faßlich zu machen. 3) unterschei-
+det Wolf, wie gesagt, principium cognoscendi, und unter
+causa f¨uhrt er noch an causa impulsiva, sive ratio volun-
+tatem detereminans.
+§11
+Philosophen
+zwischen
+Wolf
+und Kant
+Baumgarten, in seiner Metaphysica, §§ 20-24 und §§ 306-
+313, wiederholt die Wolﬁschen Unterscheidungen.
+Reimarus, in der Vernunftlehre § 81, unterscheidet
+1. innern Grund, wovon seine Erkl¨arung mit Wolfs ra-
+tio essendi ¨ubereinstimmt, indessen von der ratio
+cognoscendi gelten w¨urde, wenn er nicht auf Dinge
+¨ubertr¨uge, was nur von Begriﬀen gilt: und
+2. ¨außern Grund, d.i. causa. § 120 seq. bestimmt er
+die ratio cognoscendi richtig, als eine Bedingung der
+Aussage: allein § 125 verwechselt er doch, in einem
+Beispiel, Ursache damit.
+Lambert, im neuen Organen, erw¨ahnt die Wolﬁschen
+Unterscheidungen nicht mehr, zeigt aber in einem Bei-
+spiel, daß er Erkenntnißgrund von Ursache unterscheide,
+n¨amlich Bd. I, § 572, wo er sagt, Gott sei principium es-
+sendi der Wahrheiten und die Wahrheiten principia co-
+gnoscendi Gottes.
+Platner, in den Aphorismen, § 868, sagt: “Was innerhalb
+der Vorstellung Grund und Folge (principium cognoscen-
+di, ratio — rationatum) heißt, das ist in der Wirklichkeit
+Ursache und Wirkung (causa eﬃciens — eﬀectus). Jede
+Ursache ist Erkenntnißgrund, jede Wirkung Erkenntniß-
+folge.” Er meint also, daß Ursache und Wirkung Dasjenige
+seien, was, in der Wirklichkeit, den Begriﬀen von Grund
+und Folge im Denken entspricht, daß jene zu diesen sich
+verhielten etwan wie Substanz und Accidenz zu Subjekt
+und Pr¨adikat, oder wie Qualit¨at des Objekts zur Empﬁn-
+dung derselben in uns u.s.f. Ich halte es f¨ur ¨uberﬂ¨ussig,
+diese Meinung zu widerlegen, da jeder leicht einsehn wird,
+daß das Verh¨altniß von Grund und Folge in Urtheilen et-
+was ganz anderes ist, als eine Erkenntniß von Wirkung
+und Ursache; obwohl in einzelnen F¨allen auch Erkenntniß
+einer Ursache, als solcher, Grund eines Urtheils seyn kann,
+das die Wirkung aussagt. (Vergl. §36.)
+§12
+Hume
+Bis auf diesen ernstlichen Denker hatte noch Niemand ge-
+zweifelt an Folgendem. Zuerst und vor allen Dingen im
+Himmel und auf Erden ist der Satz vom zureichenden
+Grunde, n¨amlich als Gesetz der Kausalit¨at. Denn er ist
+eine veritas aeterna: d.h. er selbst ist an und f¨ur sich,
+erhaben ¨uber G¨otter und Schicksal: alles Uebrige hinge-
+gen, z.B. der Verstand, der den Satz vom Grunde denkt,
+nicht weniger die ganze Welt und auch was etwan die Ur-
+sache dieser Welt seyn mag, wie Atome, Bewegung, ein
+Sch¨opfer u.s.w., ist Dies erst in Gem¨aßheit und verm¨oge
+desselben. Hume war der Erste, dem es einﬁel, zu fragen,
+woher denn dieses Gesetz der Kausalit¨at seine Auktorit¨at
+habe, und die Kreditive derselben zu verlangen. Sein Er-
+gebniß, daß die Kausalit¨at nichts weiter, als die empirisch
+wahrgenommene und uns gew¨ohnlich gewordene Zeitfol-
+ge der Dinge und Zust¨ande sei, ist bekannt: Jeder f¨uhlt
+sogleich das Falsche desselben, und es zu widerlegen ist
+auch nicht schwer. Allein das Verdienst lag in der Frage
+selbst: sie wurde die Anregung und der Ankn¨upfungspunkt
+zu Kants tiefsinnigen Untersuchungen und dadurch zu ei-
+nem ungleich tiefer gefaßten und gr¨undlicheren Idealismus,
+als der bisherige, der haupts¨achlich der Berkeley’sche ist,
+gewesen war, zum transscendentalen Idealismus, aus wel-
+chem uns die Ueberzeugung hervorgeht, daß die Welt so
+abh¨angig von uns im Ganzen ist, wie wir es von ihr im Ein-
+zelnen sind. Denn indem er die transscendentalen Princi-
+pien nachwies als solche, verm¨oge deren wir ¨uber die Ob-
+jekte und ihre M¨oglichkeit Einiges a priori, d.h. vor aller
+Erfahrung, bestimmen k¨onnen, bewies er daraus, daß diese
+Dinge nicht unabh¨angig von unserer Erkenntniß so daseyn
+k¨onnen, wie sie sich uns darstellen. Die Verwandtschaft ei-
+ner solchen Welt mit dem Traume tritt hervor.
+§13
+Kant und seine Schule
+Kants Hauptstelle ¨uber den Satz vom zureichenden Grun-
+de steht in der kleinen Schrift “¨uber eine Entdeckung, nach
+der alle Kritik der reinen Vernunft entbehrlich gemacht
+werden soll” und zwar im ersten Abschnitt derselben, un-
+ter A. Daselbst dringt Kant auf die Unterscheidung des
+logischen (formalen) Princips der Erkenntniß “ein jeder
+Satz muß seinen Grund haben” von dem transscendenta-
+len (materialen) Princip “ein jedes Ding muß seinen Grund
+haben”, indem er gegen Eberhard polemisirt, der Beides
+hatte identiﬁciren wollen. — Seinen Beweis der Apriorit¨at
+und dadurch Transcendentalit¨at des Kausalit¨atsgesetzes
+werde ich weiterhin in einem eigenen Paragraphen kritisi-
+ren, nachdem ich den allein richtigen zuvor werde geliefert
+haben.
+Nach diesen Vorg¨angern bestimmen denn die mancher-
+lei Lehrb¨ucher der Logik, welche die Kantische Schule ge-
+liefert hat, z.B. die von Hofbauer, Maaß, Jakob, Kiese-
+wetter u. A. den Unterschied zwischen Erkenntnißgrund
+und Ursache ziemlich genau. Kiesewetter besonders giebt
 
-Das letztere dieser Gesetze finde ich, so mächtiger Empfehlung ungeachtet, zu wenig angewendet auf einen Hauptgrundsatz in aller Erkenntniß, den Satz vom zureichenden Grunde. Obgleich man nämlich längst und oft ihn allgemein aufgestellt hat, so hat man dennoch seine höchst verschiedenen Anwendungen, in deren jeder er eine andre Bedeutung erhält, und welche daher seinen Ursprung aus verschiedenen Erkenntnißkräften verrathen, gehörig zu sondern vernachlässigt.
 
-Daß aber gerade bei Betrachtung unsrer Geisteskräfte die Anwendung des Princips der Homogeneität, mit Vernachlässigung des ihm entgegengesetzten, viele und langdauernde Irrthümer erzeugt und dagegen die Anwendung des Gesetzes der Specification die größten und wichtigsten Fortschritte bewirkt hat, — dies lehrt die Vergleichung der Kantischen Philosophie mit allen früheren.
+§14 Ueber die Beweise des Satzes
+10
+ihn in seiner Logik (Bd. I. S. 16) v¨ollig gen¨ugend also an:
+“Logischer Grund (Erkenntnißgrund) ist nicht zu verwech-
+seln mit dem realen (Ursache). Der Satz des zureichenden
+Grundes geh¨ort in die Logik, der Satz der Kausalit¨at in
+die Metaphysik. (S. 60.) Jener ist Grundsatz des Denkens,
+dieser der Erfahrung. Ursache betriﬀt wirkliche Dinge, lo-
+gischer Grund nur Vorstellungen.”
+Die Gegner Kants dringen noch mehr auf diese Unter-
+scheidung. G. E. Schulze, in seiner Logik § 19. Anmerk,
+1 und § 63, klagt ¨uber Verwechselung des Satzes vom zu-
+reichenden Grund mit dem der Kausalit¨at. Salomon Mai-
+mon, in seiner Logik S. 20, 21, klagt, daß man viel vom
+zureichenden Grunde gesprochen habe, ohne zu erkl¨aren,
+was man darunter verstehe, und in der Vorrede S. XXIV
+tadelt er, daß Kant das Princip der Kausalit¨at von der
+logischen Form der hypothetischen Urtheile ableite.
+F. H. Jacobi, in seinen “Briefen ¨uber die Lehre des
+Spinoza”, Beilage 7, S. 414, sagt, daß aus der Vermi-
+schung des Begriﬀes des Grundes mit dem der Ursache
+eine T¨auschung entstehe, welche die Quelle verschiedener
+falscher Spekulationen geworden sei: auch giebt er den
+Unterschied derselben auf seine Weise an. Indessen ﬁndet
+man hier, wie gew¨ohnlich bei ihm, mehr ein selbstgef¨alliges
+Spiel mit Phrasen, als ernstliches Philosophiren.
+Wie endlich Hr. v. Schelling Grund und Ursache un-
+terscheide, kann man ersehn aus seinen “Aphorismen zur
+Einleitung in die Naturphilosophie”, § 184, welche das er-
+ste Heft des ersten Bandes der Jahrb¨ucher der Medicin von
+Marcus und Schelling er¨oﬀnen. Daselbst wird man belehrt,
+daß die Schwere der Grund und das Licht die Ursache der
+Dinge sei; — welches ich bloß als ein Curiosum anf¨uhre,
+da außerdem ein solches leichtfertiges In-den-Tag-hinein-
+Schw¨atzen keine Stelle unter den Meinungen ernster und
+redlicher Forscher verdient.
+§14
+Ueber die Beweise des Satzes
+Noch ist zu erw¨ahnen, daß man mehrmals vergeblich ver-
+sucht hat, den Satz vom zureichenden Grund ¨uberhaupt
+zu beweisen, meistens ohne genau zu bestimmen, in wel-
+cher Bedeutung man ihn nahm. Z.B. Wolf in der Ontologie
+§ 70, welchen Beweis Baumgarten in der Metaphysik § 20
+wiederholt. Es w¨are ¨uberﬂ¨ussig, ihn auch hier zu wiederho-
+len und zu widerlegen, da es in die Augen f¨allt, daß er auf
+einem Wortspiel beruht. Platner in den Aphorismen § 828,
+Jakob in der Logik und Metaphysik (S. 38. 1794), haben
+andere Beweise versucht, in denen der Cirkel sehr leicht zu
+erkennen ist. Von Kants Beweise soll, wie gesagt, weiter
+unten geredet werden. Da ich durch diese Abhandlung die
+verschiedenen Gesetze unsers Erkenntnißverm¨ogens, deren
+gemeinschaftlicher Ausdruck der Satz vom zureichenden
+Grunde ist, aufzuweisen hoﬀe; so wird sich von selbst er-
+geben, daß der Satz ¨uberhaupt nicht zu beweisen ist, son-
+dern von allen jenen Beweisen (mit Ausnahme des Kan-
+tischen, als welcher nicht auf die G¨ultigkeit, sondern auf
+die Apriorit¨at des Kausalit¨atsgesetzes gerichtet ist) gilt
+was Aristoteles sagt: λογον ζˆετουσι ηˆον ουκ εστι λογος·
+αποδειξεˆος γαρ αρςηˆε ουκ αποδειξις εστι[ν] Metaph III, 6.
+(rationem eorum quaerunt, quorum non est ratio: demon-
+strationis enim principium non est demonstratio), womit
+zu vergleichen Analyt. post. I, 3. Denn jeder Beweis ist
+die Zur¨uckf¨uhrung des Zweifelhaften auf ein Anerkanntes,
+und wenn wir von diesem, was es auch sei, immer wieder
+einen Beweis fordern, so werden wir zuletzt auf gewisse
+S¨atze gerathen, welche die Formen und Gesetze, und da-
+her die Bedingungen alles Denkens und Erkennens aus-
+dr¨ucken, aus deren Anwendung mithin alles Denken und
+Erkennen besteht; so daß Gewißheit nichts weiter ist, als
+Uebereinstimmung mit ihnen, folglich ihre eigene Gewiß-
+heit nicht wieder aus andern S¨atzen erhellen kann. Wir
+werden im 5. Kapitel die Art der Wahrheit solcher S¨atze
+er¨ortern.
+Einen Beweis f¨ur den Satz vom Grunde insbesondere
+zu suchen, ist ¨uberdies eine specielle Verkehrtheit, welche
+von Mangel an Besonnenheit zeugt. Jeder Beweis n¨amlich
+ist die Darlegung des Grundes zu einem ausgesprochenen
+Urtheil, welches eben dadurch das Pr¨adikat wahr erh¨alt.
+Eben von diesem Erforderniß eines Grundes f¨ur jedes Urt-
+heil ist der Satz vom Grunde der Ausdruck. Wer nun einen
+Beweis, d.i. die Darlegung eines Grundes, f¨ur ihn fordert,
+setzt ihn eben hiedurch schon als wahr voraus, ja, st¨utzt
+seine Forderung eben auf diese Voraussetzung. Er ger¨ath
+also in diesen Cirkel, daß er einen Beweis der Berechti-
+gung, einen Beweis zu fordern, fordert.
 
-Es sey mir deshalb vergönnt, eine Stelle herzusetzen, in der Kant die Anwendung des Gesetzes der Specification auf die Quellen unsrer Erkenntnisse empfiehlt, indem solche meinem gegenwärtigen Bestreben seine Würdigung giebt:
 
-> „Es ist von der äußersten Erheblichkeit, Erkenntnisse, die ihrer Gattung und Ursprung nach von andern unterschieden sind, zu isoliren und sorgfältig zu verhüten, daß sie nicht mit andern, mit welchen sie im Gebrauch gewöhnlich verbunden sind, in ein Gemische zusammenfließen. Was Chemiker beim Scheiden der Materien, was Mathematiker in ihrer reinen Größenlehre thun, das liegt noch weit mehr dem Philosophen ob, damit er den Antheil, den eine besondre Art der Erkenntniß am herumschweifenden Verstandesgebrauch hat, ihren eignen Werth und Einfluß, sicher bestimmen könne." (Krit. d. rein. Vern., der Methodenlehre 3. Hauptst.)
+Kapitel 3
+Unzul¨anglichkeit der bisherigen
+Darstellung und Entwurf zu einer neuen
+§15
+F¨alle,
+die
+unter
+den
+bis-
+her
+aufgestellten
+Bedeutun-
+gen des Satzes nicht begriﬀen
+sind
+Aus der im vorigen Kapitel gegebenen Uebersicht er-
+giebt sich als allgemeines Resultat, daß man, obwohl erst
+allm¨alig und auﬀallend sp¨at, auch nicht ohne ¨ofter von
+Neuem in Verwechselungen und Fehlgriﬀe zu gerathen,
+zwei Anwendungen des Satzes vom zureichenden Grun-
+de unterschieden hat: die eine auf Urtheile, die, um wahr
+zu seyn, immer einen Grund, die andere auf Ver¨anderung
+realer Objekte, die immer eine Ursache haben m¨ussen.
+Wir sehn, daß in beiden F¨allen der Satz vom zureichen-
+den Grund zur Frage Warum berechtigt, welche Eigen-
+schaft ihm wesentlich ist. Allein sind unter jenen beiden
+Verh¨altnissen alle F¨alle begriﬀen, in denen wir Warum zu
+fragen berechtigt sind? Wenn ich frage: Warum sind in
+diesem Triangel die drei Seiten gleich? So ist die Antwort:
+weil die drei Winkel gleich sind. Ist nun die Gleichheit
+der Winkel Ursache der Gleichheit der Seiten? Nein, denn
+hier ist von keiner Ver¨anderung, also von keiner Wirkung,
+die eine Ursache haben m¨ußte, die Rede. — Ist sie bloß
+Erkenntnißgrund? Nein, denn die Gleichheit der Winkel
+ist nicht bloß Beweis der Gleichheit der Seiten, nicht bloß
+Grund eines Urtheils: aus bloßen Begriﬀen ist ja nimmer-
+mehr einzusehn, daß, weil die Winkel gleich sind, auch die
+Seiten gleich seyn m¨ussen: denn im Begriﬀvon Gleich-
+heit der Winkel liegt nicht der von Gleichheit der Sei-
+ten. Es ist hier also keine Verbindung zwischen Begriﬀen,
+oder Urtheilen, sondern zwischen Seiten und Winkeln. Die
+Gleichheit der Winkel ist nicht unmittelbar Grund zur Er-
+kenntniß der Gleichheit der Seiten, sondern nur mittelbar,
+indem sie Grund des So-seyns, hier des Gleichseyns der
+Seiten ist: darum daß die Winkel gleich sind, m¨ussen die
+Seiten gleich seyn. Es ﬁndet sich hier eine nothwendige
+Verbindung zwischen Winkeln und Seiten, nicht unmit-
+telbar eine nothwendige Verbindung zweier Urtheile. —
+Oder wiederum, wenn ich frage, warum zwar infecta facta,
+aber nimmermehr facta infecta ﬁeri possunt; also warum
+denn eigentlich die Vergangenheit schlechthin unwieder-
+bringlich, die Zukunft unausbleiblich sei; so l¨aßt sich Dies
+auch nicht rein logisch, mittelst bloßer Begriﬀe, darthun.
+Und eben so wenig ist es Sache der Kausalit¨at; da diese nur
+die Begebenheiten in der Zeit, nicht diese selbst beherrscht.
+Aber nicht durch Kausalit¨at, sondern unmittelbar durch
+ihr bloßes Daseyn selbst, dessen Eintritt jedoch unaus-
+bleiblich war, hat die jetzige Stunde die verﬂossene in den
+bodenlosen Abgrund der Vergangenheit gest¨urzt und auf
+ewig zu nichts gemacht. Dies l¨aßt sich aus bloßen Begrif-
+fen nicht verstehn, noch durch sie verdeutlichen; sondern
+wir erkennen es ganz unmittelbar und intuitiv, eben wie
+den Unterschied zwischen Rechts und Links und was von
+diesem abh¨angt, z.B. daß der linke Handschuh nicht zur
+rechten Hand paßt.
+Da nun also nicht alle F¨alle, in denen der Satz vom zu-
+reichenden Grunde Anwendung ﬁndet, sich zur¨uckf¨uhren
+lassen auf logischen Grund und Folge und Ursache und
+Wirkung; so muß bei dieser Eintheilung dem Gesetz der
+Speciﬁkation kein Gen¨uge geschehn seyn. Das Gesetz der
+Homogeneit¨at n¨othigt uns jedoch vorauszusetzen, daß jene
+F¨alle nicht ins Unendliche verschieden seyn, sondern auf
+gewisse Gattungen m¨ussen zur¨uckgef¨uhrt werden k¨onnen.
+Ehe ich nun diese Eintheilung versuche, ist es n¨othig zu
+bestimmen, was dem Satz vom zureichenden Grunde, als
+sein eigenth¨umlicher Charakter, in allen F¨allen eigen sei;
+weil der Geschlechtsbegriﬀvor den Gattungsbegriﬀen fest-
+gestellt werden muß.
+§16
+Die Wurzel des Satzes vom zu-
+reichenden Grund
+Unser erkennendes Bewußtsein, als ¨außere und innere
+Sinnlichkeit ( Receptivit¨at ), Verstand und Vernunft auf-
+tretend, zerf¨allt in Subjekt und Objekt, und enth¨alt nichts
+außerdem. Objekt f¨ur das Subjekt seyn, und unsere Vor-
+stellung seyn, ist das Selbe. Alle unsere Vorstellungen sind
+Objekte des Subjekts, und alle Objekte des Subjekts sind
+unsere Vorstellungen. Nun aber ﬁndet sich, daß alle un-
+sere Vorstellungen unter einander in einer gesetzm¨aßigen
+und der Form nach a priori bestimmbaren Verbindung
+11
 
----
 
-### § 3. Nutzen dieser Untersuchung
+§16 Die Wurzel des Satzes vom zureichenden Grund
+12
+stehn, verm¨oge welcher nichts f¨ur sich Bestehendes und
+Unabh¨angiges, auch nichts Einzelnes und Abgerissenes,
+Objekt f¨ur uns werden kann. Diese Verbindung ist es, wel-
+che der Satz vom zureichenden Grund, in seiner Allge-
+meinheit, ausdr¨uckt. Obgleich dieselbe nun, wie wir schon
+aus dem Bisherigen entnehmen k¨onnen, je nach Verschie-
+denheit der Art der Objekte, verschiedene Gestalten an-
+nimmt, welche zu bezeichnen der Satz vom Grunde dann
+auch wieder seinen Ausdruck modiﬁcirt; so bleibt ihr doch
+immer das allen jenen Gestalten Gemeinsame, welches un-
+ser Satz, allgemein und abstrakt gefaßt, besagt. Die dem-
+selben zum Grunde liegenden, im Folgenden n¨aher nachzu-
+weisenden Verh¨altnisse sind es daher, welche ich die Wur-
+zel des Satzes vom zureichenden Grunde genannt habe.
+Diese nun sondern sich, bei n¨aherer, den Gesetzen der Ho-
+mogeneit¨at und der Speciﬁkation gem¨aß angestellter Be-
+trachtung, in bestimmte, von einander sehr verschiedene
+Gattungen, deren Anzahl sich auf vier zur¨uckf¨uhren l¨aßt,
+indem sie sich richtet nach den vier Klassen, in welche
+Alles, was f¨ur uns Objekt werden kann, also alle unse-
+re Vorstellungen, zerfallen. Diese Klassen werden in den
+n¨achsten vier Kapiteln aufgestellt und abgehandelt.
+In jeder derselben werden wir den Satz vom zureichen-
+den Grund in einer andern Gestalt auftreten, sich aber
+¨uberall dadurch, daß er den oben angegebenen Ausdruck
+zul¨aßt, als den selben und als aus der hier angegebenen
+Wurzel entsprossen zu erkennen geben sehn.
 
-Wenn dem Verfasser der Nachweis gelingen sollte, daß der uns beschäftigende Grundsatz nicht unmittelbar aus einer einzigen Grunderkenntniß unsers Geistes fließt, sondern zunächst aus verschiedenen; so wird daraus folgen, daß auch die Nothwendigkeit, die er als Grundsatz bei sich führt, nicht eine einzige und überall gleiche, sondern eine so mannigfaltige, wie die Quellen des Grundsatzes selbst ist.
 
-Wer daher einen Schluß auf diesen Grundsatz gründet, wird verbunden seyn, genau zu bestimmen, auf welche der im Grundsatze liegenden Nothwendigkeiten sein Schluß sich stütze, und solche durch einen eigenen Namen (wie ich deren vorschlagen werde) zu bezeichnen. Ich hoffe, daß dies zu größerer Klarheit und Bestimmtheit im Philosophiren beitragen wird.
+Kapitel 4
+Ueber die erste Klasse der Objekte f¨ur
+das Subjekt und die in ihr herrschende
+Gestaltung des Satzes vom zureichenden
+Grunde
+§17
+Allgemeine Erkl¨arung dieser
+Klasse von Objekten
+Die erste Klasse der m¨oglichen Gegenst¨ande unsers Vor-
+stellungsverm¨ogens ist die der anschaulichen, vollst¨andi-
+gen, empirischen Vorstellungen. Sie sind anschauliche, im
+Gegensatz der bloß gedachten, also der abstrakten Begrif-
+fe; vollst¨andige, sofern sie, nach Kants Unterscheidung,
+nicht bloß das Formale, sondern auch das Materiale der Er-
+scheinungen enthalten; empirische, theils sofern sie nicht
+aus bloßer Gedankenverkn¨upfung hervorgehn, sondern in
+einer Anregung der Empﬁndung unsers sensitiven Leibes
+ihren Ursprung haben, auf welchen sie, zur Beglaubigung
+ihrer Realit¨at, stets zur¨uckweisen; theils weil sie, gem¨aß
+den Gesetzen des Raumes, der Zeit und der Kausalit¨at
+im Verein, zu demjenigen end- und anfangslosen Komplex
+verkn¨upft sind, der unsere empirische Realit¨at ausmacht.
+Da jedoch diese nach dem Ergebniß der Kantischen Beleh-
+rung, die transscendentale Idealit¨at derselben nicht auf-
+hebt; so kommen sie hier, wo es sich um die formellen
+Elemente der Erkenntniß handelt, bloß als Vorstellung in
+Betracht.
+§18
+Umriß einer transscendenta-
+len Analysis der empirischen
+Realit¨at
+Die Formen dieser Vorstellungen sind die des innern und
+¨außern Sinnes, Zeit und Raum. Aber nur als erf¨ullt sind
+diese wahrnehmbar. Ihre Wahrnehmbarkeit ist die Mate-
+rie, auf welche ich weiterhin, wie auch §21, zur¨uckkommen
+werde.
+W¨are die Zeit die alleinige Form dieser Vorstellungen;
+so g¨abe es kein Zugleichseyn und deshalb nichts Beharrli-
+ches und keine Dauer. Denn die Zeit wird nur wahrgenom-
+men, sofern sie erf¨ullt ist, und ihr Fortgang nur durch den
+Wechsel des sie Erf¨ullenden. Das Beharren eines Objekts
+wird daher nur erkannt durch den Gegensatz des Wechsels
+anderer, die mit ihm zugleich sind. Die Vorstellung des
+Zugleichseyns aber ist in der bloßen Zeit nicht m¨oglich;
+sondern, zur andern H¨alfte, bedingt durch die Vorstellung
+vom Raum; weil in der bloßen Zeit alles nach einander, im
+Raum aber neben einander ist: dieselbe entsteht also erst
+durch den Verein von Zeit und Raum.
+W¨are andererseits der Raum die alleinige Form der Vor-
+stellungen dieser Klasse; so g¨abe es keinen Wechsel: denn
+Wechsel, oder Ver¨anderung, ist Succession der Zust¨ande,
+und Succession ist nur in der Zeit m¨oglich. Daher kann
+man die Zeit auch deﬁniren als die M¨oglichkeit entgegen-
+gesetzter Bestimmungen am selben Dinge.
+Wir sehn also, daß die beiden Formen der empirischen
+Vorstellungen, obwohl sie bekanntlich unendliche Theil-
+barkeit und unendliche Ausdehnung gemein haben, doch
+grundverschieden sind, darin, daß was der einen wesentlich
+ist, in der andern gar keine Bedeutung hat: das Nebenein-
+ander keine in der Zeit, das Nacheinander keine im Raum.
+Die empirischen, zum gesetzm¨aßigen Komplex der Rea-
+lit¨at geh¨origen Vorstellungen erscheinen dennoch in bei-
+den Formen zugleich, und sogar ist eine innige Vereini-
+gung beider die Bedingung der Realit¨at, welche aus ih-
+nen gewissermaaßen wie ein Produkt aus seinen Faktoren
+erw¨achst. Was diese Vereinigung schaﬀt ist der Verstand,
+der, mittelst seiner, ihm eigenth¨umlichen Funktion, jene
+heterogenen Formen der Sinnlichkeit verbindet, so daß aus
+ihrer wechselseitigen Durchdringung, wiewohl eben auch
+nur f¨ur ihn selbst, die empirische Realit¨at hervorgeht, als
+eine Gesammtvorstellung, welche einen, durch die Formen
+des Satzes vom Grunde zusammengehaltenen Komplex,
+jedoch mit problematischen Gr¨anzen, bildet, von dem alle
+13
 
----
 
-*[Nota editorial: El text alemany complet (§4-§52) no està disponible en domini públic en format digital accessible. La traducció al català es va realitzar a partir de la versió anglesa de Hillebrand (1907), disponible a Project Gutenberg (ID 50966). L'original alemany complet es pot consultar en edicions impreses: Meiner Verlag, Philosophische Bibliothek.]*
+§19 Unmittelbare Gegenwart der Vorstellungen
+14
+einzelnen, dieser Klasse angeh¨origen Vorstellungen Theile
+sind und in ihm, bestimmten, uns a priori bewußten Ge-
+setzen gem¨aß, ihre Stellen einnehmen, in welchem daher
+unz¨ahlige Objekte zugleich existiren, weil in ihm, unge-
+achtet der Unaufhaltsamkeit der Zeit, die Substanz, d.i.
+die Materie, beharrt, und ungeachtet der starren Unbe-
+weglichkeit des Raums ihre Zust¨ande wechseln, in wel-
+chem also, mit Einem Wort, diese ganze objektive reale
+Welt f¨ur uns daist. Die Ausf¨uhrung der hier nur im Umriß
+gegebenen Analysis der empirischen Realit¨at, durch eine
+n¨ahere Auseinandersetzung der Art und Weise, wie durch
+die Funktion des Verstandes jene Vereinigung und mit ihr
+die Erfahrungswelt f¨ur ihn zu Stande kommt, ﬁndet der
+theilnehmende Leser in der “Welt als Wille und Vorstel-
+lung,” Bd. I § 4 (oder erste Auﬂ. S. 12 fg.), wozu ihm die
+dem 4. Kapitel des 2. Bandes beigegebene und seiner auf-
+merksamen Beachtung empfohlene Tafel der “Pr¨adikabilia
+a priori der Zeit, des Raumes und der Materie” eine we-
+sentliche Beih¨ulfe seyn wird; da aus ihr besonders erhellt,
+wie die Gegens¨atze des Raumes und der Zeit sich in der
+Materie, als ihrem in der Form der Kausalit¨at sich dar-
+stellenden Produkt, ausgleichen.
+Die Funktion des Verstandes, welche die Basis der em-
+pirischen Realit¨at ausmacht, soll sogleich ihre ausf¨uhrli-
+che Darstellung erhalten: nur m¨ussen zuvor, durch ein
+Paar beil¨auﬁge Er¨orterungen, die n¨achsten Anst¨oße, wel-
+che die hier befolgte idealistische Grund-Auffassung ﬁnden
+k¨onnte, beseitigt werden.
+§19
+Unmittelbare Gegenwart der
+Vorstellungen
+Weil nun aber, ungeachtet dieser Vereinigung der Formen
+des innern und ¨außern Sinnes, durch den Verstand, zur
+Vorstellung der Materie und damit zu der einer behar-
+renden Außenwelt, das Subjekt unmittelbar nur durch den
+innern Sinn erkennt, indem der ¨außere Sinn wieder Objekt
+des innern ist und dieser die Wahrnehmungen jenes wieder
+wahrnimmt, das Subjekt also in Hinsicht auf die unmittel-
+bare Gegenwart der Vorstellungen in seinem Bewußtsein,
+den Bedingungen der Zeit allein, als der Form des innern
+Sinnes, unterworfen bleibt;1 so kann ihm nur eine deutli-
+che Vorstellung, wiewohl diese sehr zusammengesetzt seyn
+kann, auf Ein Mal gegenw¨artig seyn. Vorstellungen sind
+unmittelbar gegenw¨artig heißt: sie werden nicht nur in der
+vom Verstande (der, wie wir sogleich sehn werden, ein in-
+tuitives Verm¨ogen ist) vollzogenen Vereinigung der Zeit
+und des Raums zur Gesammtvorstellung der empirischen
+Realit¨at, sondern sie werden als Vorstellungen des innern
+Sinnes in der bloßen Zeit erkannt und zwar auf dem In-
+diﬀerenzpunkt zwischen den beiden auseinandergehenden
+Richtungen dieser, welcher Gegenwart heißt. Die im vori-
+gen Paragraphen ber¨uhrte Bedingung zur unmittelbaren
+1 Vergl. Krit. d. rein. Vern., Elementarlehre Abschn. II, Schl¨usse
+a. d. Begr., b und c. Der ersten Auﬂ. S. 33; der 5. S. 49.
+Gegenwart einer Vorstellung dieser Klasse ist ihre kausale
+Einwirkung auf unsere Sinne, mithin auf unsern Leib, wel-
+cher selbst zu den Objekten dieser Klasse geh¨ort, mithin
+dem in ihr herrschenden, sogleich zu er¨orternden Gesetze
+der Kausalit¨at unterworfen ist. Weil dieserhalb das Sub-
+jekt, nach den Gesetzen sowohl der innern, wie der ¨außern
+Welt, bei jener einen Vorstellung nicht bleiben kann, in
+der bloßen Zeit aber kein Zugleichseyn ist; so wird jene
+Vorstellung stets wieder verschwinden, von andern ver-
+dr¨angt, nach einer nicht a priori bestimmbaren, sondern
+von bald zu erw¨ahnenden Umst¨anden abh¨angigen Ord-
+nung. Daß außerdem Phantasie und Traum die unmittel-
+bare Gegenwart der Vorstellungen reproduciren, ist eine
+bekannte Thatsache, deren Er¨orterung jedoch nicht hie-
+her, sondern in die empirische Psychologie geh¨ort. Da nun
+aber, ungeachtet dieser Fl¨uchtigkeit und dieser Vereinze-
+lung der Vorstellungen, in Hinsicht auf ihre unmittelbare
+Gegenwart im Bewußtsein des Subjekts, diesem dennoch
+die Vorstellung von einem Alles begreifenden Komplex der
+Realit¨at, wie ich diesen oben beschrieben, durch die Funk-
+tion des Verstandes, bleibt; so hat man, in Hinsicht auf
+diesen Gegensatz, die Vorstellungen, sofern sie zu jenem
+Komplex geh¨oren, f¨ur etwas ganz anderes gehalten, als so-
+fern sie dem Bewußtseyn unmittelbar gegenw¨artig sind,
+und in jener Eigenschaft sie reale Dinge, in dieser aber al-
+lein Vorstellungen κατ΄ εξοςηˆεν genannt. Diese Auﬀassung
+der Sache, welche die gemeine ist, heißt bekanntlich Rea-
+lismus. Ihr hat sich, mit dem Eintritte der neueren Phi-
+losophie, der Idealismus entgegengestellt und immer mehr
+Feld gewonnen. Zuerst durch Malebranche und Berkeley
+vertreten, wurde er durch Kant zum transscendentalen
+Idealismus potenzirt, welcher das Zusammenbestehn der
+empirischen Realit¨at der Dinge mit der transscendenta-
+len Idealit¨at derselben begreiﬂich macht, und dem gem¨aß
+Kant, in der Krit. d. rein. Vern., sich unter Anderm so aus-
+spricht: “Ich verstehe unter dem transscendentalen Idea-
+lismus aller Erscheinungen den Lehrbegriﬀ, nach welchem
+wir sie insgesammt als bloße Vorstellungen, und nicht als
+Dinge an sich selbst ansehn.” Weiterhin in der Anmer-
+kung: “Der Raum ist selbst nichts Anderes, als Vorstel-
+lung; folglich, was in ihm ist, muß in der Vorstellung ent-
+halten seyn, und im Raum ist gar nichts, außer sofern es
+in ihm wirklich vorgestellt wird.” (Kritik des 4. Paralogis-
+mus der transsc. Psychol. S. 369 und 375 der ersten Auﬂ.)
+Endlich in der diesem Kapitel angeh¨angten “Betrachtung”
+heißt es: “Wenn ich das denkende Subjekt wegnehme, muß
+die ganze K¨orperwelt wegfallen, als die nichts ist, als die
+Erscheinung in der Sinnlichkeit unsers Subjekts, und ei-
+ne Art Vorstellungen desselben.” In Indien ist, sowohl im
+Brahmanismus, als im Buddhaismus, der Idealismus sogar
+Lehre der Volksreligion: bloß in Europa ist er, in Folge
+der wesentlich und unumg¨anglich realistischen j¨udischen
+Grundansicht, paradox. Der Realismus ¨ubersieht aber, daß
+das sogenannte Seyn dieser realen Dinge doch durchaus
+nichts Anderes ist, als ein Vorgestelltwerden, oder, wenn
+man darauf besteht, nur die unmittelbare Gegenwart im
+Bewußtseyn des Subjekts ein Vorgestelltwerden κατ΄ εντε-
+λεςηειαν zu nennen, gar nur ein Vorgestelltwerdenk¨onnen
+κατα δψναμιν: er ¨ubersieht, daß das Objekt außerhalb sei-
+
+
+§20 Satz vom zureichenden Grunde des Werdens
+15
+ner Beziehung auf das Subjekt nicht mehr Objekt bleibt,
+und daß, wenn man ihm diese nimmt oder davon abstra-
+hirt, sofort auch alle objektive Existenz aufgehoben ist.
+Leibnitz, der das Bedingtseyn des Objekts durch das Sub-
+jekt wohl f¨uhlte, jedoch sich von dem Gedanken eines
+Seyns an sich der Objekte, unabh¨angig von ihrer Bezie-
+hung auf das Subjekt, d.h. vom Vorgestelltwerden, nicht
+frei machen konnte, nahm zuv¨orderst eine der Welt der
+Vorstellung genau gleiche und ihr parallel laufende Welt
+der Objekte an sich an, die aber mit jener nicht direkt,
+sondern nur ¨außerlich, mittelst einer harmonia praestabi-
+lita, verbunden war;- augenscheinlich das Ueberﬂ¨ussigste
+auf der Welt, da sie selbst nie in die Wahrnehmung f¨allt
+und die ihr ganz gleiche Welt in der Vorstellung auch ohne
+sie ihren Gang geht. Als er nun aber wieder das Wesen der
+an sich selbst objektiv existirenden Dinge n¨aher bestim-
+men wollte, gerieth er in die Nothwendigkeit, die Objekte
+an sich selbst f¨ur Subjekte (monades) zu erkl¨aren, und gab
+eben dadurch den sprechendesten Beweis davon, daß unser
+Bewußtsein, soweit es ein bloß erkennendes ist, also inner-
+halb der Schranken des Intellekts, d.h. des Apparats zur
+Welt der Vorstellung, eben nichts weiter ﬁnden kann, als
+Subjekt und Objekt, Vorstellendes und Vorstellung, und
+wir daher, wenn wir vom Objektseyn (Vorgestelltwerden)
+eines Objekts abstrahirt, d.h. als solches es aufgehoben
+haben, und dennoch etwas setzen wollen, auf gar nichts
+gerathen k¨onnen, als das Subjekt. Wollen wir aber umge-
+kehrt vom Subjektseyn des Subjekts abstrahiren und den-
+noch nicht nichts ¨ubrig behalten, so tritt der umgekehrte
+Fall ein, der sich zum Materialismus entwickelt.
+Spinoza, der mit der Sache nicht aufs Reine und da-
+her nicht zu deutlichen Begriﬀen gekommen war, hatte
+dennoch die nothwendige Beziehung zwischen Objekt und
+Subjekt, als eine ihnen so wesentliche, daß sie durchaus Be-
+dingung ihrer Denkbarkeit ist, sehr wohl verstanden und
+sie deshalb als eine Identit¨at des Erkennenden und Aus-
+gedehnten in der allein existirenden Substanz dargestellt.
+Anmerk. Ich bemerke bei Gelegenheit der Haupter¨or-
+terung dieses Paragraphen, daß, wenn ich, im Fortgange
+der Abhandlung, mich, der K¨urze und leichtern Faßlich-
+keit halber, des Ausdrucks reale Objekte bedienen werde,
+darunter nichts Anderes zu verstehen ist, als eben die an-
+schaulichen, zum Komplex der an sich selbst stets ideal
+bleibenden empirischen Realit¨at verkn¨upften Vorstellun-
+gen
+§20
+Satz vom zureichenden Grun-
+de des Werdens
+In der nunmehr dargestellten Klasse der Objekte f¨ur das
+Subjekt, tritt der Satz vom zureichenden Grunde auf als
+Gesetz der Kausalit¨at, und ich nenne ihn als solches den
+Satz vom zureichenden Grunde des Werdens, principium
+rationis suﬃcientis ﬁendi. Alle in der Gesammtvorstel-
+lung, welche den Komplex der erfahrungsm¨aßigen Realit¨at
+ausmacht, sich darstellenden Objekte sind, hinsichtlich des
+Ein- und Austritts ihrer Zust¨ande, mithin in der Richtung
+des Laufes der Zeit, durch ihn mit einander verkn¨upft. Er
+ist folgender. Wenn ein neuer Zustand eines oder mehre-
+rer realer Objekte eintritt; so muß ihm ein anderer vor-
+hergegangen seyn, auf welchen der neue regelm¨aßig, d.h.
+allemal, so oft der erstere daist, folgt. Ein solches Folgen
+heißt ein Erfolgen und der erstere Zustand die Ursache, der
+zweite die Wirkung. Wenn sich z.B. ein K¨orper entz¨undet;
+so muß diesem Zustand des Brennens vorhergegangen seyn
+ein Zustand 1) der Verwandtschaft zum Oxygen, 2) der
+Ber¨uhrung mit dem Oxygen, 3) einer bestimmten Tem-
+peratur. Da, sobald dieser Zustand vorhanden war, die
+Entz¨undung unmittelbar erfolgen mußte, diese aber erst
+jetzt erfolgt ist; so kann auch jener Zustand nicht im-
+mer dagewesen, sondern muß erst jetzt eingetreten seyn.
+Dieser Eintritt heißt eine Ver¨anderung. Daher steht das
+Gesetz der Kausalit¨at in ausschließlicher Beziehung auf
+Ver¨anderungen und hat es stets nur mit diesen zu thun.
+Jede Wirkung ist, bei ihrem Eintritt, eine Ver¨anderung
+und giebt, eben weil sie nicht schon fr¨uher eingetreten,
+unfehlbare Anweisung auf eine andere, ihr vorhergegan-
+gene Ver¨anderung, welche, in Beziehung auf sie, Ursache,
+in Beziehung auf eine dritte, ihr selbst wieder nothwendig
+vorhergegangene Ver¨anderung aber Wirkung heißt. Dies
+ist die Kette der Kausalit¨at: sie ist notwendig anfangslos.
+Demnach also muß jeder eintretende Zustand aus einer
+ihm vorhergegangenen Ver¨anderung erfolgt seyn, z.B. in
+unserm obigen Fall, aus dem Hinzutreten freier W¨arme
+an den K¨orper, aus welchem die Temperaturerh¨ohung er-
+folgen mußte: dieses Hinzutreten der W¨arme ist wieder
+durch eine vorhergehende Ver¨anderung, z.B. das Auﬀallen
+der Sonnenstrahlen auf einen Brennspiegel, bedingt; die-
+ses etwan durch das Wegziehn einer Wolke von der Rich-
+tung der Sonne; dieses durch Wind; dieser durch ungleiche
+Dichtigkeit der Luft; diese durch andere Zust¨ande, und
+so in inﬁnitum. Daß, wenn ein Zustand, um Bedingung
+zum Eintritt eines neuen zu seyn, alle Bestimmungen bis
+auf eine enth¨alt, man diese eine, wenn sie jetzt noch, also
+zuletzt, hinzutritt, die Ursache κατ΄ εξοςηˆεν nennen will,
+ist zwar insofern richtig, als man sich dabei an die letz-
+te, hier allerdings entscheidende Ver¨anderung h¨alt: davon
+abgesehn aber hat, f¨ur die Feststellung der urs¨achlichen
+Verbindung der Dinge im Allgemeinen, eine Bestimmung
+des kausalen Zustandes, dadurch daß sie die letzte ist, die
+hinzutritt, vor den ¨ubrigen nichts voraus. So ist, im an-
+gef¨uhrten Beispiel, das Wegziehn der Wolke zwar insofern
+die Ursache der Entz¨undung zu nennen, als es sp¨ater ein-
+tritt, als das Richten des Brennspiegels auf das Objekt:
+Dieses h¨atte jedoch sp¨ater geschehn k¨onnen, als das Weg-
+ziehn der Wolke, und das Zulassen des Oxygens wieder
+sp¨ater als dieses: solche zuf¨allige Zeitbestimmungen ha-
+ben denn in jener Hinsicht zu entscheiden, welches die Ur-
+sache sei. Bei genauerer Betrachtung hingegen ﬁnden wir,
+daß der ganze Zustand die Ursache des folgenden ist, wobei
+es im Wesentlichen einerlei ist, in welcher Zeitfolge seine
+Bestimmungen zusammengekommen seien. Demnach mag
+man, in Hinsicht auf einen gegebenen einzelnen Fall, die
+zuletzt eingetretene Bestimmung eines Zustandes, weil sie
+
+
+§20 Satz vom zureichenden Grunde des Werdens
+16
+die Zahl der hier erforderlichen Bedingungen voll macht,
+also ihr Eintritt die hier entscheidende Ver¨anderung wird,
+die Ursache κατ΄ εξοςηˆεν nennen: jedoch f¨ur die allgemei-
+ne Betrachtung darf nur der ganze, den Eintritt des fol-
+genden herbeif¨uhrende Zustand als Ursache gelten. Die
+verschiedenen einzelnen Bestimmungen aber, welche erst
+zusammengenommen die Ursache kompletiren und ausma-
+chen, kann man die urs¨achlichen Momente, oder auch die
+Bedingungen nennen, und demnach die Ursache in solche
+zerlegen. Ganz falsch hingegen ist es, wenn man nicht den
+Zustand, sondern die Objekte Ursache nennt, z.B. im an-
+gef¨uhrten Fall w¨urden Einige den Brennspiegel Ursache
+der Entz¨undung nennen, Andere die Wolke, Andere die
+Sonne, Andere das Oxygen und so regellos nach Belie-
+ben. Es hat aber gar keinen Sinn zu sagen, ein Objekt
+sei Ursache eines andern; zun¨achst, weil die Objekte nicht
+bloß die Form und Qualit¨at, sondern auch die Materie
+enthalten, diese aber weder entsteht, noch vergeht; und
+sodann, weil das Gesetz der Kausalit¨at sich ausschließ-
+lich auf Ver¨anderungen, d.h. auf den Ein- und Austritt
+der Zust¨ande in der Zeit bezieht, als woselbst es dasjenige
+Verh¨altniß regulirt, in Beziehung auf welches der fr¨uhere
+Ursache, der sp¨atere Wirkung heißt und ihre nothwendige
+Verbindung das Erfolgen.
+Den nachdenkenden Leser verweise ich hier auf die
+Erl¨auterungen, welche ich in der “Welt als Wille und
+Vorst.” Bd. 2, Kap. 4, besonders S. 42 und fg. geliefert
+habe. Denn es ist von der h¨ochsten Wichtigkeit, daß man
+von der wahren und eigentlichen Bedeutung des Kausa-
+lit¨atsgesetzes, wie auch vom Bereich seiner Geltung, voll-
+kommen deutliche und feste Begriﬀe habe, also vor allen
+Dingen klar erkenne, daß dasselbe allein und ausschließ-
+lich auf Ver¨anderungen materieller Zust¨ande sich bezieht
+und schlechterdings auf nichts Anderes; folglich nicht her-
+beigezogen werden darf, wo nicht davon die Rede ist. Es
+ist n¨amlich der Regulator der in der Zeit eintretenden
+Ver¨anderungen der Gegenst¨ande der ¨außern Erfahrung:
+diese aber sind s¨ammtlich materiell. Jede Ver¨anderung
+kann nur eintreten dadurch, daß eine andere, nach ei-
+ner Regel bestimmte, ihr vorhergegangen ist, durch welche
+sie aber dann als nothwendig herbeigef¨uhrt eintritt: diese
+Nothwendigkeit ist der Kausalnexus.
+So einfach demnach das Gesetz der Kausalit¨at ist; so
+ﬁnden wir in den philosophischen Lehrb¨uchern, von den
+¨altesten Zeiten an, bis auf die neuesten, in der Regel, es
+ganz anders ausgedr¨uckt, n¨amlich abstrakter, mithin wei-
+ter und unbestimmter gefaßt. Da heißt es denn etwan,
+Ursache sei, wodurch ein Anderes zum Daseyn gelangt,
+oder was ein Anderes hervorbringt, es wirklich macht u.
+dgl. m.; wie denn schon Wolf sagt: causa est principi-
+um, a quo existentia, sive actualitas, entis alterius de-
+pendet, w¨ahrend doch, bei der Kausalit¨at, es sich oﬀen-
+bar nur um Formver¨anderungen der unentstandenen und
+unzerst¨orbaren Materie handelt und ein eigentliches Ent-
+stehn, eine Ins-Daseyn-treten des vorher gar nicht Ge-
+wesenen, eine Unm¨oglichkeit ist. An jenen hergebrach-
+ten, zu weiten, schiefen, falschen Fassungen des Kausa-
+lit¨atsverh¨altnisses mag nun zwar gr¨oßtentheils Unklarheit
+des Denkens Schuld seyn; aber zuverl¨assig steckt mitun-
+ter auch Absicht dahinter, n¨amlich theologische, schon von
+ferne mit dem kosmologischen Beweise lieb¨augelnde, wel-
+che bereit ist, diesem zu gefallen, selbst transscendentale
+Wahrheiten a priori (diese Muttermilch des menschlichen
+Verstandes) zu verf¨alschen. Am deutlichsten hat man Dies
+vor Augen im Buche des Thomas Brown, On the relation
+of cause and eﬀect, welches, 460 Seiten z¨ahlend, schon 1835
+seine vierte Auﬂage, und seitdem wohl mehrere, erlebt hat
+und, abgesehn von seiner erm¨udenden, kathederm¨aßigen
+Weitschweiﬁgkeit, seinen Gegenstand nicht ¨ubel behan-
+delt. Dieser Engl¨ander nun hat ganz richtig erkannt, daß es
+allemal Ver¨anderungen sind, welche das Gesetz der Kausa-
+lit¨at betriﬀt, daß also jede Wirkung eine Ver¨anderung sei,
+woraus folgt, daß die ganze Sache bloß der ununterbroche-
+ne Nexus der in der Zeit sich succedirenden Ver¨anderungen
+sei, — damit will er nicht heraus, obwohl es ihm unm¨oglich
+entgangen seyn kann; sondern er nennt jedesmal, h¨ochst
+ungeschickt, die Ursache ein der Ver¨anderung vorherge-
+hendes Objekt, oder auch Substanz, und mit diesem ganz
+falschen Ausdruck, der ihm seine Auseinandersetzungen
+¨uberall verdirbt, dreht und qu¨alt er sich, sein ganzes, lan-
+ges Buch hindurch, erb¨armlich herum, gegen sein besseres
+Wissen und Gewissen; einzig und allein, damit seine Dar-
+stellung dem etwan anderweitig und von Andern dereinst
+aufzustellenden kosmologischen Beweise nur ja nicht im
+Wege stehe. — Wie muß es doch mit einer Wahrheit be-
+stellt seyn, der man durch solche Schliche schon von ferne
+den Weg zu bahnen hat.
+Aber was haben denn unsere guten, redlichen, Geist und
+Wahrheit h¨oher als Alles sch¨atzenden deutschen Philoso-
+phieprofessoren ihrerseits f¨ur den so theuern kosmologi-
+schen Beweis gethan, nachdem n¨amlich Kant, in der Ver-
+nunftkritik, ihm die t¨odtliche Wunde beigebracht hatte?
+Da war freilich guter Rath theuer: denn (sie wissen es,
+die W¨urdigen, wenn sie es auch nicht sagen) causa prima
+ist, eben so gut wie causa sui, eine contradictio in adjec-
+to, obschon der erstere Ausdruck viel h¨auﬁger gebraucht
+wird, als der letztere, und auch mit ganz ernsthafter, sogar
+feierlicher Miene ausgesprochen zu werden pﬂegt, ja Man-
+che, insonderheit Englische Reverends, recht erbaulich die
+Augen verdrehn, wenn sie, mit Emphase und R¨uhrung,
+the ﬁrst cause, — diese contradictio in adjecto, —
+aus-
+sprechen. Sie wissen es: eine erste Ursache ist gerade und
+genau so undenkbar, wie die Stelle, wo der Raum ein Ende
+hat, oder der Augenblick, da die Zeit einen Anfang nahm.
+Denn jede Ursache ist eine Ver¨anderung, bei der man nach
+der ihr vorhergegangenen Ver¨anderung, durch die sie her-
+beigef¨uhrt worden, nothwendig fragen muß, und so in in-
+ﬁnitum, in inﬁnitum! Nicht ein Mal ein erster Zustand der
+Materie ist denkbar, aus dem, da er nicht noch immer ist,
+alle folgenden hervorgegangen w¨aren. Denn, w¨are er an
+sich ihre Ursache gewesen; so h¨atten auch sie schon von
+jeher seyn m¨ussen, also der jetzige nicht erst jetzt. Fieng
+er aber erst zu einer gewissen Zeit an, kausal zu werden;
+so muß ihn, zu der Zeit, etwas ver¨andert haben, damit
+er aufh¨orte zu ruhen: dann aber ist etwas hinzugetreten,
+eine Ver¨anderung vorgegangen, nach deren Ursache, d.h.
+
+
+§20 Satz vom zureichenden Grunde des Werdens
+17
+einer ihr vorhergegangenen Ver¨anderung, wir sogleich fra-
+gen m¨ussen, und wir sind wieder auf der Leiter der Ur-
+sachen und werden h¨oher und h¨oher hinaufgepeitscht von
+dem unerbittlichen Gesetze der Kausalit¨at, — in inﬁni-
+tum, in inﬁnitum. (Die Herren werden sich doch nicht et-
+wan entbl¨oden, mir von einem Entstehn der Materie selbst
+aus nichts zu reden? weiter unten stehn Korollarien, ihnen
+aufzuwarten.) Das Gesetz der Kausalit¨at ist also nicht so
+gef¨allig, sich brauchen zu lassen, wie ein Fiaker, den man,
+angekommen wo man hingewollt, nach Hause schickt. Viel-
+mehr gleicht es dem, von Goethes Zauberlehrlinge beleb-
+ten Besen, der, ein Mal in Aktivit¨at gesetzt, gar nicht wie-
+der aufh¨ort zu laufen und zu sch¨opfen; so daß nur der alte
+Hexenmeister selbst ihn zur Ruhe zu bringen vermag. Aber
+die Herren sind sammt und sonders keine Hexenmeister.
+Was haben sie also gethan, die edelen und aufrichtigen
+Freunde der Wahrheit, sie, die allezeit nur auf das Ver-
+dienst in ihrem Fache warten, um, sobald es sich zeigt,
+es der Welt zu verk¨unden, und die, wenn Einer kommt,
+der wirklich ist, was sie denn doch nur vorstellen, weit
+entfernt durch t¨uckisches Schweigen und feiges Sekretiren
+seine Werke ersticken zu wollen, vielmehr alsbald die He-
+rolde seines Verdienstes seyn werden, — gewiß, so gewiß ja
+bekanntlich der Unverstand den Verstand ¨uber Alles liebt.
+Was also haben sie gethan f¨ur ihren alten Freund, den hart
+bedr¨angten, ja, schon auf dem R¨ucken liegenden kosmolo-
+gischen Beweis? — O, sie haben einen feinen Pﬁﬀerdacht:
+“Freund”, haben sie zu ihm gesagt, “es sieht schlecht mit
+dir, recht schlecht, seit deiner fatalen Rencontre mit dem
+alten K¨onigsberger Starrkopf; so schlecht, — wie mit dei-
+nen Br¨udern, dem ontologischen und dem physikotheolo-
+gischen. Aber getrost, wir verlassen dich darum nicht (du
+weißt, wir sind daf¨ur bezahlt): jedoch, — es ist nicht an-
+ders, — du mußt Namen und Kleidung wechseln: denn
+nennen wir dich bei deinem Namen, so l¨auft uns Alles da-
+von. Inkognito aber fassen wir dich untern Arm und brin-
+gen dich wieder unter Leute; nur, wie gesagt, inkognito: es
+geht! Zun¨achst also: dein Gegenstand f¨uhrt von jetzt an
+den Namen ‘das Absolutum’: das klingt fremd, anst¨andig
+und vornehm, — und wie viel man mit Vornehmthun bei
+den Deutschen ausrichten kann, wissen wir am besten: was
+gemeint sei, versteht doch Jeder und d¨unkt sich noch wei-
+se dabei. Du selbst aber trittst verkleidet, in Gestalt eines
+Enthymems auf. Alle deine Prosyllogismen und Pr¨amissen
+n¨amlich, mit denen du uns den langen Klimax hinaufzu-
+schleppen pﬂegtest, laß nur h¨ubsch zu Hause: man weiß ja
+doch, daß es nichts damit ist. Aber als ein Mann von we-
+nig Worten, stolz, dreist und vornehm auftretend, bist du
+mit Einem Sprunge am Ziele: ‘Das Absolutum’, schreist
+du (und wir mit), ‘das muß denn doch, zum Teufel, seyn ;
+sonst w¨are ja gar nichts! (hiebei schl¨agst du auf den Tisch.)
+Woher aber Das sei? ‘Dumme Frage! habe ich nicht gesagt,
+es w¨are das Absolutum? — Es geht, bei unserer Treu, es
+geht! Die Deutschen sind gewohnt, Worte statt der Begrif-
+fe hinzunehmen: dazu werden sie, von Jugend auf, durch
+uns dressirt, — sieh nur die Hegelei, was ist sie Anderes,
+als leerer, hohler, dazu ekelhafter Wortkram? Und doch,
+wie gl¨anzend war die Carriere dieser philosophischen Mi-
+nisterkreatur! Dazu bedurfte es nichts weiter, als einiger
+feilen Gesellen, den Ruhm des Schlechten zu intoniren,
+und ihre Stimme fand an der leeren H¨ohlung von tau-
+send Dummk¨opfen ein noch jetzt nachhallendes und sich
+fortpﬂanzendes Echo: sieh, so war bald aus einem gemei-
+nen Kopf, ja einem gemeinen Scharlatan, ein großer Philo-
+soph gemacht. Also Muth gefaßt! Ueberdies, Freund und
+G¨onner, sekundiren wir dich noch anderweitig; k¨onnen wir
+doch ohne dich nicht leben! — Hat der alte K¨onigsberger
+Krittler die Vernunft kritisirt und ihr den Fl¨ugel beschnit-
+ten; — gut! so erﬁnden wir eine neue Vernunft, von der
+bis dahin noch kein Mensch etwas geh¨ort hatte, eine Ver-
+nunft, welche nicht denkt, sondern unmittelbar anschaut,
+Ideen (ein vornehmes Wort, zum Mystiﬁciren geschaﬀen)
+anschaut, leibhaftig; oder auch sie vernimmt, unmittelbar
+vernimmt was du und die Andern erst beweisen wollten;
+oder, — bei Denen n¨amlich, welche nur wenig zugestehn,
+aber auch mit wenig vorlieb nehmen, — es ahndet. Fr¨uh
+eingeimpfte Volksbegriﬀe geben wir so f¨ur unmittelbare
+Eingebungen dieser unserer neuen Vernunft, d.h. eigent-
+lich f¨ur Eingebungen von oben, aus. Die alte, auskritisirte
+Vernunft aber, die degradiren wir, nennen sie Verstand,
+und schicken sie promeniren. Und den wahren, eigentlichen
+Verstand? — was, in aller Welt, geht uns der wahre, ei-
+gentliche Verstand an? — Du l¨achelst ungl¨aubig; aber wir
+kennen unser Publikum und die harum, horum, die wir da
+auf den B¨anken vor uns haben. Hat doch schon Bako von
+Verulam gesagt: ‘Auf Universit¨aten lernen die jungen Leu-
+te glauben.’Da k¨onnen sie von uns etwas Rechtschaﬀenes
+lernen! wir haben einen guten Vorrath von Glaubensar-
+tikeln. — Will dich Verzagtheit anwandeln, so denke nur
+immer daran, daß wir in Deutschland sind, wo man ge-
+konnt hat was nirgend anderswo m¨oglich gewesen w¨are,
+n¨amlich einen geistlosen, unwissenden, Unsinn schmieren-
+den, die K¨opfe, durch beispiellos hohlen Wortkram, von
+Grund aus und auf immer desorganisirenden Philosopha-
+ster, ich meine unsern theuern Hegel, als einen großen
+Geist und tiefen Denker ausschreien: und nicht nur un-
+gestraft und unverh¨ohnt hat man das gekonnt; sondern
+wahrhaftig, sie glauben es, glauben es seit 30 Jahren, bis
+auf den heutigen Tag! — Haben wir also, trotz Kant und
+Kritik, mit deiner Beih¨ulfe, nur erst das Absolutum; so
+sind wir geborgen. — Dann philosophiren wir von oben
+herab, lassen aus demselben, mittelst der verschiedenartig-
+sten und nur durch ihre marternde Langweiligkeit einan-
+der ¨ahnlichen Deduktionen, die Welt hervorgehn, nennen
+diese auch wohl das Endliche, jenes das Unendliche, — was
+wieder eine angenehme Variation im Wortkram giebt, —
+und reden ¨uberhaupt immer nur von Gott, expliciren, wie,
+warum, wozu, weshalb, durch welchen willk¨urlichen oder
+unwillk¨urlichen Proceß, er die Welt gemacht, oder geboren
+habe; ob er draußen, ob er drinne sei u.s.f.; als w¨are die
+Philosophie Theologie und suchte nicht Aufkl¨arung ¨uber
+die Welt, sondern ¨uber Gott.”
+Der kosmologische Beweis also, dem jene Apostrophe
+galt und mit dem wir es hier vorhaben, besteht eigent-
+lich in der Behauptung, daß der Satz vom Grunde des
+Werdens, oder das Gesetz der Kausalit¨at, nothwendig auf
+einen Gedanken f¨uhre, von dem es selbst aufgehoben und
+
+
+§20 Satz vom zureichenden Grunde des Werdens
+18
+f¨ur null und nichtig erkl¨art wird. Denn zur causa prima
+(Absolutum) gelangt man nur durch Aufsteigen von der
+Folge zum Grunde, eine beliebig lange Reihe hindurch:
+bei ihr stehn bleiben aber kann man nicht, ohne den Satz
+vom Grunde zu annulliren.
+Nachdem ich nun hier die Nichtigkeit des kosmologi-
+schen, wie, im zweiten Kapitel, die des ontologischen Be-
+weises kurz und klar dargelegt habe, wird der theilnehmen-
+de Leser vielleicht w¨unschen, auch ¨uber den physikotheolo-
+gischen, der viel mehr Scheinbarkeit hat, das N¨othige bei-
+gebracht zu sehn. Allein der ist durchaus nicht dieses Orts;
+da sein Stoﬀeinem ganz andern Theil der Philosophie an-
+geh¨ort. Ich verweise also hinsichtlich seiner zun¨achst auf
+Kant, sowohl in der Krit. der rein. Vernunft, als, ex pro-
+fesso, in der Krit. der Urtheilskraft, und, zur Erg¨anzung
+seines rein negativen Verfahrens, auf mein positives, im
+“Willen in der Natur”, dieser an Umfang geringen, an In-
+halt reichen und gewichtigen Schrift. Der nicht theilneh-
+mende Leser hingegen mag diese und alle meine Schriften
+intakt auf seine Enkel ¨ubergehn lassen. Mich k¨ummerts
+wenig: denn ich bin nicht f¨ur Ein Geschlecht da, sondern
+f¨ur viele.
+Da, wie im n¨achsten § nachgewiesen wird, das Gesetz
+der Kausalit¨at uns a priori bewußt und daher ein trans-
+scendentales, f¨ur alle irgend m¨ogliche Erfahrung g¨ultiges,
+mithin ausnahmsloses ist; da ferner dasselbe feststellt, daß
+auf einen bestimmt gegebenen, relativ ersten Zustand ein
+zweiter, ebenfalls bestimmter, nach einer Regel, d.h. je-
+derzeit, folgen muß; so ist das Verh¨altniß der Ursache zur
+Wirkung ein nothwendiges: daher berechtigt das Gesetz
+der Kausalit¨at zu hypothetischen Urtheilen und bew¨ahrt
+sich hiedurch als eine Gestaltung des Satzes vom zurei-
+chenden Grunde, auf welchen alle hypothetischen Urtheile
+sich st¨utzen m¨ussen, und auf welchem, wie weiterhin ge-
+zeigt werden soll, alle Nothwendigkeit beruht.
+Ich nenne diese Gestaltung unsers Satzes den Satz vom
+zureichenden Grunde des Werdens, deswegen, weil seine
+Anwendung ¨uberall eine Ver¨anderung, den Eintritt eines
+neuen Zustandes, also ein Werden, voraussetzt. Zu seinem
+wesentlichen Charakter geh¨ort ferner, daß die Ursache al-
+lemal der Wirkung, der Zeit nach, vorhergehe (vergl. §47).
+und nur daran wird urspr¨unglich erkannt, welcher von zwei
+durch den Kausalnexus verbundenen Zust¨anden Ursache
+und welcher Wirkung sei. Umgekehrt giebt es F¨alle, wo
+uns, aus fr¨uherer Erfahrung, der Kausalnexus bekannt ist,
+die Succession der Zust¨ande aber so schnell erfolgt, daß sie
+sich unserer Wahrnehmung entzieht: dann schließen wir,
+mit v¨olliger Sicherheit, von der Kausalit¨at auf die Succes-
+sion, z.B. daß die Entz¨undung des Pulvers der Explosion
+vorhergeht. Ich verweise hier¨uber auf die “Welt als Wille
+u. Vorst.” Bd. 2, Kap. 4. S. 41.
+Aus dieser wesentlichen Verkn¨upfung der Kausalit¨at mit
+der Succession folgt wieder, daß der Begriﬀder Wechsel-
+wirkung, strenge genommen, nichtig ist. Er setzt n¨amlich
+voraus, daß die Wirkung wieder die Ursache ihrer Ursache
+sei, also daß das Nachfolgende zugleich das Vorhergehende
+gewesen. Ich habe die Unstatthaftigkeit dieses so beliebten
+Begriﬀes ausf¨uhrlich dargethan in meiner, der “Welt als
+Wille und Vorstellung,” angeh¨angten “Kritik der Kanti-
+schen Philosophie”, S. 517-521 der zweiten Auﬂage, wohin
+ich demnach verweise. Man wird bemerken, daß Schrift-
+steller sich jenes Begriﬀes, in der Regel, da bedienen, wo
+ihre Einsicht anf¨angt unklar zu werden; daher eben sein
+Gebrauch so h¨auﬁg ist. Ja, wo einem Schreiber die Begriﬀe
+ganz ausgehn, ist kein Wort bereitwilliger sich einzustel-
+len, wie “Wechselwirkung”; daher der Leser es sogar als
+eine Art Allarmkanone betrachten kann, welche anzeigt,
+daß man in’s Bodenlose gerathen sei. Auch verdient an-
+gemerkt zu werden, daß das Wort Wechselwirkung sich
+allein im Deutschen ﬁndet und keine andere Sprache ein
+gebr¨auchliches Aequivalent desselben besitzt.
+Aus dem Gesetze der Kausalit¨at ergeben sich zwei wich-
+tige Korollarien, welche eben dadurch ihre Beglaubigung
+als Erkenntnisse a priori, mithin als ¨uber allen Zweifel er-
+haben und keiner Ausnahme f¨ahig, erhalten: n¨amlich das
+Gesetz der Tr¨agheit und das der Beharrlichkeit der Sub-
+stanz. Das erstere besagt, daß jeder Zustand, mithin so-
+wohl die Ruhe eines K¨orpers, als auch seine Bewegung je-
+der Art, unver¨andert, unvermindert, unvermehrt, fortdau-
+ern und selbst die endlose Zeit hindurch anhalten m¨usse,
+wenn nicht eine Ursache hinzutritt, welche sie ver¨andert
+oder aufhebt. — Das andere aber, welches die Sempiter-
+nit¨at der Materie ausspricht, folgt daraus, daß das Gesetz
+der Kausalit¨at sich nur auf die Zust¨ande der K¨orper, al-
+so auf ihre Ruhe, Bewegung, Form und Qualit¨at bezieht,
+indem es dem zeitlichen Entstehn und Vergehn derselben
+vorsteht; keineswegs aber auf das Daseyn des Tr¨agers die-
+ser Zust¨ande, als welchem man, eben um seine Exemtion
+von allem Entstehn und Vergehn auszudr¨ucken, den Na-
+men Substanz ertheilt hat. Die Substanz beharrt: d.i. sie
+kann nicht entstehn, noch vergehn, mithin das in der Welt
+vorhandene Quantum derselben nie vermehrt, noch ver-
+mindert werden. Daß wir dieses a priori wissen, bezeugt
+das Bewußtsein der unersch¨utterlichen Gewißheit, mit wel-
+cher Jeder, der einen gegebenen K¨orper, sei es durch
+Taschenspielerstreiche, oder durch Zertheilung, oder Ver-
+brennung, oder Verﬂ¨uchtigung, oder sonst welchen Proceß,
+hat verschwinden sehn, dennoch fest voraussetzt, daß, was
+auch aus der Form des K¨orpers geworden seyn m¨oge, die
+Substanz, d.i. die Materie desselben, unvermindert vor-
+handen und irgendwo anzutreﬀen seyn m¨usse; imgleichen,
+daß, wo ein vorher nicht dagewesener K¨orper sich vor-
+ﬁndet, er hingebracht, oder aus unsichtbaren Theilchen,
+etwan durch Pr¨acipitation, konkrescirt seyn m¨usse, nim-
+mermehr aber, seiner Substanz (Materie) nach, entstan-
+den seyn k¨onne, als welches eine v¨ollige Unm¨oglichkeit
+implicirt und schlechthin undenkbar ist. Die Gewißheit,
+mit der wir Das zum voraus (a priori) feststellen, ent-
+springt daraus, daß es unserm Verstande an einer Form,
+das Entstehn oder Vergehn der Materie zu denken, durch-
+aus fehlt; indem das Gesetz der Kausalit¨at, welche die al-
+leinige Form ist, unter der wir ¨uberhaupt Ver¨anderungen
+denken k¨onnen, doch immer nur auf die Zust¨ande der
+K¨orper geht, keineswegs auf das Daseyn des Tr¨agers aller
+
+
+§20 Satz vom zureichenden Grunde des Werdens
+19
+Zust¨ande, die Materie. Darum stelle ich den Grundsatz der
+Beharrlichkeit der Substanz als ein Korollarium des Kau-
+salit¨atsgesetzes auf. Auch k¨onnen wir die Ueberzeugung
+von der Beharrlichkeit der Substanz gar nicht a posteriori
+erlangt haben; theils weil, in den meisten F¨allen, der That-
+bestand empirisch zu konstatiren unm¨oglich ist, theils weil
+jede empirische, bloß durch Induktion gewonnene Erkennt-
+niß immer nur approximative, folglich prek¨are, nie unbe-
+dingte Gewißheit hat: daher eben auch ist die Sicherheit
+unserer Ueberzeugung von jenem Grundsatz ganz ande-
+rer Art und Natur, als die von der Richtigkeit irgend eines
+empirisch herausgefundenen Naturgesetzes, indem sie eine
+ganz andere, v¨ollig unersch¨utterliche, nie wankende Festig-
+keit hat. Das kommt eben daher, daß jener Grundsatz ei-
+ne transscendentale Erkenntniß ausdr¨uckt, d.h. eine solche,
+welche das in aller Erfahrung irgend M¨ogliche vor aller Er-
+fahrung bestimmt und feststellt, eben dadurch aber die Er-
+fahrungswelt ¨uberhaupt zu einem bloßen Gehirnph¨anomen
+herabsetzt. Sogar das allgemeinste und ausnahmsloseste
+aller anderartigen Naturgesetze, das der Gravitation, ist
+schon empirischen Ursprungs, daher ohne Garantie f¨ur
+seine Allgemeinheit; weshalb auch es bisweilen noch an-
+gefochten wird, imgleichen mitunter Zweifel entstehn, ob
+es auch ¨uber unser Sonnensystem hinaus gelte, ja, die
+Astronomen nicht ermangeln, die gelegentlich gefundenen
+Anzeichen und Best¨atigungen hievon hervorzuheben, hie-
+durch an den Tag legend, daß sie es als bloß empirisch
+betrachten. Man kann allerdings die Frage aufwerfen, ob
+auch zwischen K¨orpern, welche durch eine absolute Lee-
+re getrennt w¨aren, Gravitation stattf¨ande; oder ob die-
+selbe innerhalb eines Sonnensystems, etwan durch einen
+Aether, vermittelt w¨urde und daher zwischen Fixsternen
+nicht wirken k¨onnte; welches dann nur empirisch zu ent-
+scheiden ist. Dies beweist, daß wir es hier mit keiner Er-
+kenntniß a priori zu thun haben. Wenn wir hingegen, der
+Wahrscheinlichkeit zufolge, annehmen, daß jedes Sonnen-
+system sich durch allm¨alige Kondensation eines Urweltne-
+bels und darauf gem¨aß der Kant-Laplace’schen Hypothese
+gebildet habe; so k¨onnen wir doch keinen Augenblick den-
+ken, daß jener Urstoﬀaus nichts entstanden w¨are, son-
+dern sind gen¨othigt, seine Partikeln als vorher irgendwo
+vorhanden gewesen und nur zusammengekommen voraus-
+zusetzen; eben weil der Grundsatz der Beharrlichkeit der
+Substanz ein transscendentaler ist. Daß ¨ubrigens Substanz
+ein bloßes Synonym von Materie sei, weil der Begriﬀder-
+selben nur an der Materie sich realisiren l¨aßt und daher aus
+ihr seinen Ursprung hat, habe ich ausf¨uhrlich dargethan
+und wie jener Begriﬀbloß zum Behuf einer Erschleichung
+gebildet worden speciell nachgewiesen in meiner Kritik der
+Kantischen Philosophie, S. 550 fg. der 2. Auﬂ. Diese a prio-
+ri gewisse Sempiternit¨at der Materie (genannt Beharrlich-
+keit der Substanz) ist, gleich vielen ¨andern, eben so sichern
+Wahrheiten, f¨ur die Philosophieprofessoren eine verbote-
+ne Frucht; daher sie mit einem scheuen Seitenblick daran
+vor¨uberschleichen.
+Von der endlosen Kette der Ursachen und Wirkungen,
+welche alle Ver¨anderungen leitet, aber nimmer sich ¨uber
+diese hinaus erstreckt, bleiben, eben dieserhalb, zwei We-
+sen unber¨uhrt: einerseits n¨amlich, wie so eben gezeigt,
+die Materie, und andererseits die urspr¨unglichen Natur-
+kr¨afte; jene, weil sie der Tr¨ager aller Ver¨anderungen, oder
+dasjenige ist, woran solche vorgehn; diese, weil sie Das
+sind, verm¨oge dessen die Ver¨anderungen, oder Wirkun-
+gen, ¨uberhaupt m¨oglich sind, Das, was den Ursachen die
+Kausalit¨at, d.i. die F¨ahigkeit zu wirken, allererst ertheilt,
+von welchen sie also diese bloß zur Lehn haben. Ursache
+und Wirkung sind die zu nothwendiger Succession in der
+Zeit verkn¨upften Ver¨anderungen: die Naturkr¨afte hinge-
+gen, verm¨oge welcher alle Ursachen wirken, sind von al-
+lem Wechsel ausgenommen, daher in diesem Sinne au-
+ßer aller Zeit, eben deshalb aber stets und ¨uberall vor-
+handen, allgegenw¨artig und unersch¨opﬂich, immer bereit
+sich zu ¨außern, sobald nur, am Leitfaden der Kausa-
+lit¨at, die Gelegenheit dazu eintritt. Die Ursache ist alle-
+mal, wie auch ihre Wirkung, ein Einzelnes, eine einzelne
+Ver¨anderung: die Naturkraft hingegen ist ein Allgemeines,
+Unver¨anderliches, zu aller Zeit und ¨uberall Vorhandenes.
+Z.B. daß der Bernstein jetzt die Flocke anzieht, ist die
+Wirkung: ihre Ursache ist die vorhergegangene Reibung
+und jetzige Ann¨aherung des Bernsteins; und die in diesem
+Proceß th¨atige, ihm vorstehende Naturkraft ist die Elektri-
+cit¨at. Die Erl¨auterung der Sache durch ein ausf¨uhrliches
+Beispiel ﬁndet man in der “Welt als Wille und Vorstel-
+lung” Bd. I § 26. S. 153 fg., woselbst ich an einer langen
+Kette von Ursachen und Wirkungen gezeigt habe, wie dar-
+in die verschiedenartigsten Naturkr¨afte successive hervor-
+treten und ins Spiel kommen; wodurch denn der Unter-
+schied zwischen Ursache und Naturkraft, dem ﬂ¨uchtigen
+Ph¨anomen und der ewigen Th¨atigkeitsform, ¨uberaus faß-
+lich wird: und da ¨uberhaupt daselbst jener ganze lange § 26
+dieser Untersuchung gewidmet ist, war es hier hinreichend,
+die Sache kurz anzugeben. Die Norm, welche eine Natur-
+kraft, hinsichtlich ihrer Erscheinung an der Kette der Ur-
+sachen und Wirkungen, befolgt, also das Band, welches sie
+mit dieser verkn¨upft, ist das Naturgesetz. Die Verwechse-
+lung der Naturkraft mit der Ursache ist aber so h¨auﬁg, wie
+f¨ur die Klarheit des Denkens verderblich. Es scheint sogar,
+daß vor mir diese Begriﬀe nie rein gesondert worden sind,
+so h¨ochst n¨othig es doch ist. Nicht nur werden die Natur-
+kr¨afte selbst zu Ursachen gemacht, indem man sagt: Die
+Elektricit¨at, die Schwere u.s.f. ist Ursache; sondern sogar
+zu Wirkungen machen sie Manche, indem sie nach einer
+Ursache der Elektricit¨at, der Schwere u.s.w. fragen; wel-
+ches absurd ist. Etwas ganz Anderes ist es jedoch, wenn
+man die Zahl der Naturkr¨afte dadurch vermindert, daß
+man eine derselben auf eine andere zur¨uckf¨uhrt, wie, in
+unsern Tagen, den Magnetismus auf die Elektricit¨at. Je-
+de ¨achte, also wirklich urspr¨ungliche Naturkraft aber, wo-
+zu auch jede chemische Grund-Eigenschaft geh¨ort, ist we-
+sentlich qualitas occulta, d.h. keiner physischen Erkl¨arung
+weiter f¨ahig, sondern nur noch einer metaphysischen, d.h.
+¨uber die Erscheinung hinausgehenden. Jene Verwechse-
+lung, oder vielmehr Identiﬁkation, der Naturkraft mit der
+Ursache hat nun aber Keiner so weit getrieben, wie Maine
+de Biran, in seinen Nouvelles consid´erations des rapports
+du physique au moral; weil dieselbe seiner Philosophie we-
+sentlich ist. Merkw¨urdig ist dabei, daß wenn er von Ursa-
+
+
+§20 Satz vom zureichenden Grunde des Werdens
+20
+chen redet, er fast nie cause allein setzt, sondern jedesmal
+sagt cause ou force; gerade so, wie wir oben §8 den Spino-
+za acht Mal auf einer Seite ratio sive causa setzen sahen.
+Beide n¨amlich sind sich bewußt, zwei disparate Begriﬀe zu
+identiﬁciren, um, nach Umst¨anden, bald den einen, bald
+den andern geltend machen zu k¨onnen: zu diesem Zweck
+nun sind sie gen¨othigt, die Identiﬁkation dem Leser stets
+gegenw¨artig zu erhalten. —
+Die Kausalit¨at also, dieser Lenker aller und jeder Ver-
+¨anderung, tritt nun in der Natur unter drei verschiedenen
+Formen auf: als Ursache im engsten Sinn, als Reiz, und als
+Motiv. Eben auf dieser Verschiedenheit beruht der wah-
+re und wesentliche Unterschied zwischen unorganischem
+K¨orper, Pﬂanze und Thier; nicht auf den ¨außern anatomi-
+schen, oder gar chemischen Merkmalen.
+Die Ursache im engsten Sinne ist die, nach welcher aus-
+schließlich die Ver¨anderungen im unorganischen Reiche er-
+folgen, also diejenigen Wirkungen, welche das Thema der
+Mechanik, der Physik und der Chemie sind. Von ihr allein
+gilt das dritte Neutonische Grundgesetz “Wirkung und
+Gegenwirkung sind einander gleich”: es besagt, daß der
+vorhergehende Zustand (die Ursache) eine Ver¨anderung
+erf¨ahrt, die an Gr¨oße der gleichkommt, die er hervorge-
+rufen hat (der Wirkung). Ferner ist nur bei dieser Form
+der Kausalit¨at der Grad der Wirkung dem Grade der Ur-
+sache stets genau angemessen, so daß aus dieser jene sich
+berechnen l¨aßt, und umgekehrt.
+Die zweite Form der Kausalit¨at ist der Reiz: sie be-
+herrscht das organische Leben als solches, also das der
+Pﬂanzen, und den vegetativen, daher bewußtlosen Theil
+des thierischen Lebens, der ja eben ein Pﬂanzenleben ist.
+Sie charakterisirt sich durch Abwesenheit der Merkmale
+der ersten Form. Also sind hier Wirkung und Gegenwir-
+kung einander nicht gleich, und keineswegs folgt die In-
+tensit¨at der Wirkung, durch alle Grade, der Intensit¨at der
+Ursache: vielmehr kann, durch Verst¨arkung der Ursache,
+die Wirkung sogar in ihr Gegentheil umschlagen.
+Die dritte Form der Kausalit¨at ist das Motiv: unter die-
+ser leitet sie das eigentlich animalische Leben, also das
+Thun, d.h. die ¨außern, mit Bewußtseyn geschehenden Ak-
+tionen, aller thierischen Wesen. Das Medium der Motive
+ist die Erkenntniß: die Empf¨anglichkeit f¨ur sie erfordert
+folglich einen Intellekt. Daher ist das wahre Charakteri-
+stiken des Thiers das Erkennen, das Vorstellen. Das Thier
+bewegt sich, als Thier, allemal nach einem Ziel und Zweck:
+diesen muß es demnach erkannt haben: d.h. derselbe muß
+ihm als ein von ihm selbst Verschiedenes, dessen es sich
+dennoch bewußt wird, sich darstellen. Demzufolge ist das
+Thier zu deﬁniren “was erkennt”: keine andere Deﬁnition
+triﬀt das Wesentliche; ja, vielleicht ist auch keine andere
+stichhaltend. Mit der Erkenntniß fehlt nothwendig auch
+die Bewegung auf Motive: dann bleibt also nur die auf Rei-
+ze, das Pﬂanzenleben: daher sind Irritabilit¨at und Sensi-
+bilit¨at unzertrennlich. Die Wirkungsart eines Motivs aber
+ist von der eines Reizes augenf¨allig verschieden: die Ein-
+wirkung desselben n¨amlich kann sehr kurz, ja sie braucht
+nur momentan zu seyn: denn ihre Wirksamkeit hat nicht,
+wie die des Reizes, irgend ein Verh¨altniß zu ihrer Dauer,
+zur N¨ahe des Gegenstandes und dergleichen mehr; son-
+dern das Motiv braucht nur wahrgenommen zu seyn, um
+zu wirken; w¨ahrend der Reiz stets des Kontakts, oft gar
+der Intussusception, allemal aber einer gewissen Dauer,
+bedarf.
+Diese kurze Angabe der drei Formen der Kausalit¨at
+ist hier hinreichend. Die ausf¨uhrliche Darstellung dersel-
+ben ﬁndet man in meiner Preisschrift ¨uber die Freiheit
+(S, 30-34 der “beiden Grundprobleme der Ethik”). Nur
+eins ist hier zu urgiren. Der Unterschied zwischen Ursa-
+che, Reiz und Motiv ist oﬀenbar bloß die Folge des Gra-
+des der Empf¨anglichkeit der Wesen: je gr¨oßer diese, desto
+leichterer Art kann die Einwirkung seyn: der Stein muß
+gestoßen werden; der Mensch gehorcht einem Blick. Beide
+aber werden durch eine zureichende Ursache, also mit glei-
+cher Nothwendigkeit, bewegt. Denn die Motivation ist bloß
+die durch das Erkennen hindurchgehende Kausalit¨at: der
+Intellekt ist das Medium der Motive, weil er die h¨ochste
+Steigerung der Empf¨anglichkeit ist. Allein hiedurch ver-
+liert das Gesetz der Kausalit¨at schlechterdings nichts an
+seiner Sicherheit und Strenge, Das Motiv ist eine Ursa-
+che und wirkt mit der Nothwendigkeit, die alle Ursachen
+herbeif¨uhren. Beim Thier, dessen Intellekt ein einfacher,
+daher nur die Erkenntniß der Gegenwart liefernder ist,
+f¨allt jene Nothwendigkeit leicht in die Augen. Der Intellekt
+des Menschen ist doppelt: er hat, zur anschaulichen, auch
+noch die abstrakte Erkenntniß, welche nicht an die Gegen-
+wart gebunden ist: d.h. er hat Vernunft. Daher hat er eine
+Wahlentscheidung, mit deutlichem Bewußtsein: n¨amlich
+er kann die einander ausschließenden Motive als solche
+gegen einander abw¨agen, d.h. sie ihre Macht auf seinen
+Willen versuchen lassen, wonach sodann das st¨arkere ihn
+bestimmt und sein Thun mit eben der Nothwendigkeit er-
+folgt, wie das Rollen der gestoßenen Kugel. Freiheit des
+Willens bedeutet (nicht Philosophieprofessorenwortkram,
+sondern) “daß einem gegebenen Menschen, in einer ge-
+gebenen Lage, zwei verschiedene Handlungen m¨oglich sei-
+en.” Daß aber Dies zu behaupten vollkommen absurd sei,
+ist eine so sicher und klar bewiesene Wahrheit, wie ir-
+gend eine ¨uber das Gebiet der reinen Mathematik hinaus-
+gehende es seyn kann. Am deutlichsten, methodischesten,
+gr¨undlichsten und dazu mit besonderer R¨ucksicht auf die
+Tatsachen des Selbstbewußtseyns, durch welche unwissen-
+de Leute obige Absurdit¨at zu beglaubigen vermeinen, ﬁn-
+det man die besagte Wahrheit dargelegt in meiner von der
+K¨oniglich Norwegischen Societ¨at der Wissenschaften ge-
+kr¨onten Preisschrift ¨uber die Freiheit des Willens. In der
+Hauptsache haben jedoch schon Hobbes, Spinoza, Priest-
+ley, Voltaire, auch Kant2 das Selbe gelehrt. Das h¨alt nun
+2 “Was man sich auch, in metaphysischer Absicht, f¨ur einen Be-
+griﬀvon der Freiheit des Willens machen m¨oge; so sind doch die Er-
+scheinungen desselben, die menschlichen Handlungen, eben so wohl,
+als jede andere Naturbegebenheit, nach allgemeinen Naturgesetzen
+bestimmt.” Ideen zu einer allgemeinen Geschichte. Der Anfang. —
+“Alle Handlungen des Menschen, in der Erscheinung, sind aus sei-
+nem empirischen Charakter und den mitwirkenden andern Ursachen
+nach der Ordnung der Natur bestimmt: und wenn wir alle Erschei-
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+21
+freilich unsere w¨urdigen Philosophieprofessoren nicht ab,
+ganz unbefangen und als w¨are nichts vorgefallen, von der
+Freiheit des Willens als einer ausgemachten Sache zu re-
+den. Wozu glauben denn die Herren, daß, von Gnaden
+der Natur, die genannten großen M¨anner dagewesen seien?
+— damit sie von der Philosophie leben k¨onnen; — nicht
+wahr? — Nachdem nun aber ich, in meiner Preisschrift,
+die Sache klarer, als jemals geschehn, dargelegt hatte, und
+noch dazu unter der Sanktion einer K¨oniglichen Societ¨at,
+die auch meine Abhandlung in ihre Denkschriften aufge-
+nommen hat; da war es, bei obiger Gesinnung, doch wohl
+die Pﬂicht der Herren, einer solchen verderblichen Irrleh-
+re und abscheulichen Ketzerei entgegenzutreten und sie
+auf das Gr¨undlichste zu widerlegen; ja, es war dies um so
+mehr, als ich in dem selben Bande mit jener (“Grundpro-
+bleme der Ethik”), in der Preisschrift ¨uber das Fundament
+der Moral, Kants praktische Vernunft, mit ihrem katego-
+rischen Imperativ, den die Herren unter dem Namen “Sit-
+tengesetz” noch immer zum Grundstein ihrer platten Mo-
+ralsysteme gebrauchen, als eine v¨ollig unbegr¨undete und
+nichtige Annahme so unwiderleglich und deutlich nachge-
+wiesen habe, daß kein Mensch, der nur ein F¨unkchen Urt-
+heilskraft hat, wenn er es gelesen, an jene Fiktion noch
+l¨anger glauben kann. — “Nun, Das werden sie doch wohl
+gethan haben!” — Werden sich h¨uten, aufs Glatteis zu
+gehn! Schweigen, das Maul halten, Das ist ihr ganzes Ta-
+lent und ihr einziges Mittel gegen Geist, Verstand, Ernst
+und Wahrheit. In keinem der seit 1841 erschienenen Pro-
+dukte ihrer unn¨utzen Vielschreiberei ist meiner Ethik mit
+einem Worte erw¨ahnt, obwohl sie unstreitig das Wichtigste
+ist, was seit 60 Jahren in der Moral geschehn: ja, so groß
+ist ihre Angst vor mir und meiner Wahrheit, daß in keiner
+der von Universit¨aten oder Akademien ausgehenden Lit-
+teraturzeitungen das Buch auch nur angezeigt worden ist.
+Zitto, zitto, daß nur das Publikum nichts merke: Dies ist
+und bleibt ihre ganze Politik. Freilich mag diesem pﬁﬃgen
+Benehmen der Selbsterhaltungstrieb zum Grunde liegen.
+Denn, muß nicht eine r¨ucksichtslos auf Wahrheit gerichte-
+te Philosophie zwischen den unter tausend R¨ucksichten
+und von ihrer guten Gesinnung halber dazu berufenen
+Leuten verfaßten Systemchen die Rolle des eisernen Top-
+fes zwischen den irdenen spielen? Ihre erb¨armliche Angst
+vor meinen Schriften ist Angst vor der Wahrheit. Und al-
+lerdings steht z.B. schon eben diese Lehre von der voll-
+nungen seiner Willk¨ur bis auf den Grund erforschen k¨onnten; so
+w¨urde es keine einzige menschliche Handlung geben, die wir nicht mit
+Gewißheit vorhersagen und aus ihren vorhergehenden Bedingungen
+als nothwendig erkennen k¨onnten. In Ansehung dieses empirischen
+Charakters giebt es also keine Freiheit, und nach diesem k¨onnen wir
+doch allein den Menschen betrachten, wenn wir lediglich beobachten
+und, wie es in der Anthropologie geschieht, von seinen Handlungen
+die bewegenden Ursachen physiologisch erforschen wollen.” Krit. der
+rein. Vern. S.548 der I., und S. 577 der 5. Auﬂ. —
+“Man kann also einr¨aumen, daß, wenn es f¨ur uns m¨oglich w¨are,
+in eines Menschen Denkungsart, so wie sie sich durch innere sowohl
+als ¨außere Handlungen zeigt, so tiefe Einsicht zu haben, daß jede,
+auch die mindeste Triebfeder dazu uns bekannt w¨urde, imgleichen
+alle auf diese wirkenden ¨außern Veranlassungen, man eines Menschen
+Verhalten auf die Zukunft, mit Gewißheit, so wie eine Mond- oder
+Sonnenﬁnsterniß ausrechnen k¨onnte.”
+Krit. d. prakt. Vern. S. 230 der Rosenkranzischen, u. S. 177 der 4.
+Auﬂ.
+kommenen Nothwendigkeit aller Willensakte in schreien-
+dem Widerspruch mit s¨ammtlichen Annahmen der belieb-
+ten, nach dem Judenthume zugeschnittenen Rockenphilo-
+sophie; aber, weit gefehlt, daß jene streng bewiesene Wahr-
+heit davon angefochten w¨urde, beweist vielmehr sie, als ein
+sicheres Datum und Richtepunkt, als ein wahres δος μοι
+που στˆο, die Nichtigkeit jener ganzen Rockenphilosophie
+und die Nothwendigkeit einer von Grund aus andern, un-
+gleich tiefer gefaßten Ansicht vom Wesen der Welt und
+des Menschen; — gleichviel, ob eine solche mit den Be-
+fugnissen der Philosophieprofessoren bestehn k¨onne, oder
+nicht.
+§21
+Apriorit¨at des Kausalit¨atsbe-
+griffes — Intellektualit¨at der
+empirischen
+Anschauung
+—
+Der Verstand
+In der Professorenphilosophie der Philosophieprofessoren
+wird man noch immer ﬁnden, daß die Anschauung der Au-
+ßenwelt Sache der Sinne sei; worauf dann ein Langes und
+Breites ¨uber jeden der f¨unf Sinne folgt. Hingegen die Intel-
+lektualit¨at der Anschauung, n¨amlich daß sie in der Haupt-
+sache das Werk des Verstandes sei, welcher mittelst der
+ihm eigenth¨umlichen Form der Kausalit¨at und der dieser
+untergelegten der reinen Sinnlichkeit, also Zeit und Raum,
+aus dem rohen Stoﬀeiniger Empﬁndungen in den Sinnes-
+organen diese objektive Außenwelt allererst schaﬀt und
+hervorbringt, davon ist keine Rede. Und doch habe ich die
+Sache, in ihren Hauptz¨ugen, bereits in der ersten Auﬂage
+gegenw¨artiger Abhandlung, vom J. 1813, S. 53-55 aufge-
+stellt und bald darauf, im J. 1816, in meiner Abhandlung
+¨uber das Sehn und die Farben sie v¨ollig ausgef¨uhrt, welcher
+Darstellung der Prof. Rosas in Wien seinen Beifall dadurch
+bezeugt hat, daß er sich durch sie zum Plagiat verleiten
+ließ; wor¨uber das N¨ahere zu ersehn im “Willen in der Na-
+tur” S. 19. Hingegen haben die Philosophieprofessoren so
+wenig von dieser, wie von andern großen und wichtigen
+Wahrheiten, welche darzulegen, um sie dem menschlichen
+Geschlechte auf immer anzueignen, die Aufgabe und Ar-
+beit meines ganzen Lebens gewesen ist, — irgend Notiz
+genommen: ihnen mundet das nicht; es paßt alles nicht
+in ihren Kram; es f¨uhrt zu keiner Theologie; es ist ja auf
+geh¨orige Studentenabrichtung zu h¨ochsten Staatszwecken
+gar nicht ein Mal angelegt; kurzum, sie wollen von mir
+nichts lernen, und sehn nicht, wie sehr viel sie von mir zu
+lernen h¨atten: alles Das n¨amlich, was ihre Kinder, Enkel
+und Urenkel von mir lernen werden. Statt Dessen setzt Je-
+der von ihnen sich hin, um in einer lang ausgesponnenen
+Metaphysik das Publikum mit seinen Originalgedanken zu
+bereichern. Wenn Finger dazu berechtigen, so ist er be-
+rechtigt. Aber wahrlich, Machiavelli hat Recht, wenn er,
+— wie schon vor ihm Hesiodus (εργα, 293) — , sagt: “Es
+giebt dreierlei K¨opfe: erstlich solche, welche aus eigenen
+Mitteln Einsicht und Verstand von den Sachen erlangen;
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+22
+dann solche, die das Rechte erkennen, wenn Andere es ih-
+nen darlegen; endlich solche, welche weder zum Einen noch
+zum Andern f¨ahig sind.” (il principe, c. 22.) —
+Man muß von allen G¨ottern verlassen seyn, um zu
+w¨ahnen, daß die anschauliche Welt da draußen, wie sie
+den Raum in seinen drei Dimensionen f¨ullt, im unerbittlich
+strengen Gange der Zeit sich fortbewegt, bei jedem Schrit-
+te durch das ausnahmslose Gesetz der Kausalit¨at geregelt
+wird, in allen diesen St¨ucken aber nur die Gesetze befolgt,
+welche wir, vor aller Erfahrung davon, angeben k¨onnen,
+— daß eine solche Welt da draußen ganz objektiv-real und
+ohne unser Zuthun vorhanden w¨are, dann aber, durch die
+bloße Sinnesempﬁndung, in unsern Kopf hineingelangte,
+woselbst sie nun, wie da draußen, noch ein Mal dast¨ande.
+Denn was f¨ur ein ¨armliches Ding ist doch die bloße Sin-
+nesempﬁndung! Selbst in den edelsten Sinnesorganen ist
+sie nichts mehr, als ein lokales, speciﬁsches, innerhalb sei-
+ner Art einiger Abwechselung f¨ahiges, jedoch an sich selbst
+stets subjektives Gef¨uhl, welches als solches gar nichts Ob-
+jektives, also nichts einer Anschauung Aehnliches enthal-
+ten kann. Denn die Empﬁndung jeder Art ist und bleibt
+ein Vorgang im Organismus selbst, als solcher aber auf
+das Gebiet unterhalb der Haut beschr¨ankt, kann daher,
+an sich selbst, nie etwas enthalten, das jenseit dieser Haut,
+also außer uns l¨age. Sie kann angenehm oder unangenehm
+seyn, — welches eine Beziehung auf unsern Willen besagt,
+— aber etwas Objektives liegt in keiner Empﬁndung. Die
+Empﬁndung in den Sinnesorganen ist eine durch den Zu-
+sammenﬂuß der Nervenenden erh¨ohte, wegen der Ausbrei-
+tung und der d¨unnen Bedeckung derselben leicht von au-
+ßen erregbare und zudem irgend einem speciellen Einﬂuß,
+— Licht, Schall, Duft, — besonders oﬀen stehende; aber
+sie bleibt bloße Empﬁndung, so gut wie jede andere im In-
+nern unsers Leibes, mithin etwas wesentlich Subjektives,
+dessen Ver¨anderungen unmittelbar bloß in der Form des
+innern Sinnes, also der Zeit allein, d.h. successiv, zum Be-
+wußtsein gelangen. Erst wenn der Verstand,- eine Funk-
+tion, nicht einzelner zarter Nervenenden, sondern des so
+k¨unstlich und r¨athselhaft gebauten, drei, ausnahmsweise
+aber bis f¨unf Pfund wiegenden Gehirns, — in Th¨atigkeit
+ger¨ath und seine einzige und alleinige Form, das Gesetz
+der Kausalit¨at, in Anwendung bringt, geht eine m¨achtige
+Verwandlung vor, indem aus der subjektiven Empﬁndung
+die objektive Anschauung wird. Er n¨amlich faßt, verm¨oge
+seiner selbsteigenen Form, also a priori, d.i. vor aller Er-
+fahrung (denn diese ist bis dahin noch nicht m¨oglich), die
+gegebene Empﬁndung des Leibes als eine Wirkung auf (ein
+Wort, welches er allein versteht), die als solche nothwendig
+eine Ursache haben muß. Zugleich nimmt er die ebenfalls
+im Intellekt, d.i. im Gehirn, pr¨adisponirt liegende Form
+des ¨außern Sinnes zu H¨ulfe, den Raum, um jene Ursa-
+che außerhalb des Organismus zu verlegen: denn dadurch
+erst entsteht ihm das Außerhalb, dessen M¨oglichkeit eben
+der Raum ist; so daß die reine Anschauung a priori die
+Grundlage der empirischen abgeben muß. Bei diesem Pro-
+ceß nimmt nun der Verstand, wie ich bald n¨aher zeigen
+werde, alle, selbst die minuti¨osesten Data der gegebenen
+Empﬁndung zu H¨ulfe, um, ihnen entsprechend, die Ursa-
+che derselben im Raume zu konstruiren. Diese (¨ubrigens
+von Schelling, im I. Band seiner philos. Schriften, v. 1809,
+S. 237, 38, desgleichen von Fries, in seiner Kritik d. Ver-
+nunft, Bd. I. S. 52-56 und 290 d. ersten Auﬂ. ausdr¨ucklich
+geleugnete) Verstandesoperation ist jedoch keine diskursi-
+ve, reﬂektive, in abstracto, mittelst Begriﬀen und Worten,
+vor sich gehende; sondern eine intuitive und ganz unmit-
+telbare. Denn durch sie allein, mithin im Verstande und
+f¨ur den Verstand, stellt sich die objektive, reale, den Raum
+in drei Dimensionen f¨ullende K¨orperwelt dar, die alsdann,
+in der Zeit, dem selben Kausalit¨atsgesetze gem¨aß, sich fer-
+ner ver¨andert und im Raume bewegt. — Demnach hat der
+Verstand die objektive Welt erst selbst zu schaﬀen: nicht
+aber kann sie, schon vorher fertig, durch die Sinne und die
+Oeﬀnungen ihrer Organe, bloß in den Kopf hineinspazie-
+ren. Die Sinne n¨amlich liefern nichts weiter, als den rohen
+Stoﬀ, welchen allererst der Verstand, mittelst der ange-
+gebenen einfachen Formen, Raum, Zeit und Kausalit¨at,
+in die objektive Auﬀassung einer gesetzm¨aßig geregelten
+K¨orperwelt umarbeitet. Demnach ist unsere allt¨agliche,
+empirische Anschauung eine intellektuale, und ihr geb¨uhrt
+dieses Pr¨adikat, welches die philosophischen Windbeutel
+in Deutschland einer vorgeblichen Anschauung ertr¨aumter
+Welten, in welchen ihr beliebtes Absolutum seine Evo-
+lutionen vorn¨ahme, beigelegt haben. Ich aber will jetzt
+zun¨achst die große Kluft zwischen Empﬁndung und An-
+schauung n¨aher nachweisen, indem ich darlege, wie roh der
+Stoﬀist, aus dem das sch¨one Werk erw¨achst.
+Der objektiven Anschauung dienen eigentlich nur zwei
+Sinne: das Getast und das Gesicht. Sie allein liefern die
+Data, auf deren Grundlage der Verstand, durch den ange-
+gebenen Proceß, die objektive Welt entstehn l¨aßt. Die an-
+dern drei Sinne bleiben in der Hauptsache subjektiv: denn
+ihre Empﬁndungen deuten zwar auf eine ¨außere Ursache,
+aber enthalten keine Data zur Bestimmung r¨aumlicher
+Verh¨altnisse derselben. Nun ist aber der Raum die Form
+aller Anschauung, d.i. der Apprehension, in welcher allein
+Objekte sich eigentlich darstellen k¨onnen. Daher k¨onnen
+jene drei Sinne zwar dienen, uns die Gegenwart der uns
+schon anderweitig bekannten Objekte anzuk¨undigen; aber
+auf Grundlage ihrer Data kommt keine r¨aumliche Kon-
+struktion, also keine objektive Anschauung zu Stande. Aus
+dem Geruch k¨onnen wir nie die Rose konstruiren; und ein
+Blinder kann sein Leben lang Musik h¨oren, ohne von den
+Musikern, oder den Instrumenten, oder den Luftvibratio-
+nen, die mindeste objektive Vorstellung zu erhalten. Das
+Geh¨or hat dagegen seinen hohen Werth als Medium der
+Sprache, wodurch es der Sinn der Vernunft ist, deren Na-
+me sogar von ihm stammt; sodann als Medium der Musik,
+des einzigen Weges komplicirte Zahlenverh¨altnisse, nicht
+bloß in abstracto, sondern unmittelbar, also in concre-
+to, aufzufassen. Aber der Ton deutet nie auf r¨aumliche
+Verh¨altnisse, f¨uhrt also nie auf die Beschaﬀenheit seiner
+Ursache; sondern wir bleiben bei ihm selbst stehn: mit-
+hin ist er kein Datum f¨ur den die objektive Welt kon-
+struirenden Verstand. Dies sind allein die Empﬁndungen
+des Getasts und Gesichts: daher w¨urde ein Blinder ohne
+H¨ande und F¨uße zwar den Raum in seiner ganzen Ge-
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+23
+setzm¨aßigkeit a priori sich konstruiren k¨onnen, aber von
+der objektiven Welt nur eine sehr unklare Vorstellung er-
+halten. Dennoch aber ist was Getast und Gesicht liefern
+noch keineswegs die Anschauung, sondern bloß der rohe
+Stoﬀdazu: denn in den Empﬁndungen dieser Sinne liegt
+so wenig die Anschauung, daß dieselben vielmehr noch gar
+keine Aehnlichkeit haben mit den Eigenschaften der Din-
+ge, die mittelst ihrer sich uns darstellen; wie ich sogleich
+zeigen werde. Nur muß man hiebei Das, was wirklich der
+Empﬁndung angeh¨ort, deutlich aussondern von Dem, was
+in der Anschauung der Intellekt hinzugethan hat. Dies ist
+Anfangs schwer; weil wir so sehr gewohnt sind, von der
+Empﬁndung sogleich zu ihrer Ursache ¨uberzugehen, daß
+diese sich uns darstellt, ohne daß wir die Empﬁndung,
+welche hier gleichsam die Pr¨amissen zu jenem Schlusse
+des Verstandes liefert, an und f¨ur sich beachten.
+Getast und Gesicht nun also haben zuv¨orderst jedes
+seine eigenen Vortheile; daher sie sich wechselseitig un-
+terst¨utzen. Das Gesicht bedarf keiner Ber¨uhrung, ja keiner
+N¨ahe: sein Feld ist unermeßlich, geht bis zu den Sternen.
+Sodann empﬁndet es die feinsten Nuancen des Lichts, des
+Schattens, der Farbe, der Durchsichtigkeit: es liefert al-
+so dem Verstande eine Menge fein bestimmter Data, aus
+welchen er, nach erlangter Uebung, die Gestalt, Gr¨oße,
+Entfernung und Beschaﬀenheit der K¨orper konstruirt und
+sogleich anschaulich darstellt. Hingegen ist das Getast
+zwar an den Kontakt gebunden, giebt aber so untr¨ugliche
+und vielseitige Data, daß es der gr¨undlichste Sinn ist. Die
+Wahrnehmungen des Gesichts beziehn sich zuletzt doch
+auf das Getast; ja, das Sehn ist als ein unvollkommenes,
+aber in die Ferne gehendes Tasten zu betrachten, welches
+sich der Lichtstrahlen als langer Taststangen bedient: da-
+her eben ist es vielen T¨auschungen ausgesetzt, weil es
+ganz auf die durch das Licht vermittelten Eigenschaften
+beschr¨ankt, also einseitig ist; w¨ahrend das Getast ganz
+unmittelbar die Data zur Erkenntniß der Gr¨oße, Gestalt,
+H¨arte, Weiche, Trockenheit, N¨asse, Gl¨atte, Temperatur,
+u, s. w. liefert und dabei unterst¨utzt wird theils durch die
+Gestalt und Beweglichkeit der Arme, H¨ande und Finger,
+aus deren Stellung beim Tasten der Verstand die Data
+zur r¨aumlichen Konstruktion der K¨orper entnimmt; theils
+durch die Muskelkraft, mittelst welcher er die Schwere, Fe-
+stigkeit, Z¨ahigkeit oder Spr¨ode der K¨orper erkennt: Alles
+mit geringster M¨oglichkeit der T¨auschung.
+Bei allen Dem geben diese Data durchaus noch keine
+Anschauung; sondern diese bleibt das Werk des Verstan-
+des. Dr¨ucke ich mit der Hand gegen den Tisch, so liegt in
+der Empﬁndung, die ich davon erhalte, durchaus nicht die
+Vorstellung des festen Zusammenhangs der Theile dieser
+Masse, ja gar nichts dem Aehnliches; sondern erst indem
+mein Verstand von der Empﬁndung zur Ursache derselben
+¨ubergeht, konstruirt er sich einen K¨orper, der die Eigen-
+schaft der Solidit¨at, Undurchdringlichkeit und H¨arte hat.
+Wenn ich im Finstern meine Hand auf eine Fl¨ache lege,
+oder aber eine Kugel von etwan drei Zoll Durchmesser er-
+greife: so sind es, in beiden F¨allen, die selben Theile der
+Hand, welche den Druck empﬁnden: bloß aus der verschie-
+denen Stellung, die, im einen, oder im andern Fall, meine
+Hand annimmt, konstruirt mein Verstand die Gestalt des
+K¨orpers, mit welchem in Ber¨uhrung gekommen zu seyn
+die Ursache der Empﬁndung ist, und er best¨atigt sie sich
+dadurch, daß ich die Ber¨uhrungsstellen wechseln lasse. Be-
+tastet ein Blindgeborener einen kubischen K¨orper, so sind
+die Empﬁndungen der Hand dabei ganz einf¨ormig und
+bei allen Seiten und Richtungen die selben: die Kanten
+dr¨ucken zwar einen kleinern Theil der Hand: doch liegt in
+diesen Empﬁndungen durchaus nichts einem Kubus Aehn-
+liches. Aber von dem gef¨uhlten Widerstande macht sein
+Verstand den unmittelbaren und intuitiven Schluß auf ei-
+ne Ursache desselben, die jetzt, eben dadurch, sich als fe-
+ster K¨orper darstellt; und aus den Bewegungen, die, beim
+Tasten, seine Arme machen, w¨ahrend die Empﬁndung der
+H¨ande die selbe bleibt, konstruirt er, in dem ihm a prio-
+ri bewußten Raum, die kubische Gestalt des K¨orpers.
+Br¨achte er die Vorstellung einer Ursache und eines Raum-
+es, nebst den Gesetzen desselben, nicht schon mit; so
+k¨onnte nimmermehr aus jener successiven Empﬁndung in
+seiner Hand das Bild eines Kubus hervorgehn. L¨aßt man
+durch seine geschlossene Hand einen Strick laufen; so wird
+er als Ursache der Reibung und ihrer Dauer, bei solcher
+Lage seiner Hand, einen langen, cylinderf¨ormigen, sich in
+Einer Richtung gleichf¨ormig bewegenden K¨orper konstrui-
+ren. Nimmermehr aber k¨onnte ihm aus jener bloßen Emp-
+ﬁndung in seiner Hand die Vorstellung der Bewegung, d.i.
+der Ver¨anderung des Ortes im Raum, mittelst der Zeit,
+entstehn: denn so etwas kann in ihr nicht liegen, noch
+kann sie allein es jemals erzeugen. Sondern sein Intellekt
+muß, vor aller Erfahrung, die Anschauungen des Raum-
+es, der Zeit, und damit der M¨oglichkeit der Bewegung, in
+sich tragen, und nicht weniger die Vorstellung der Kau-
+salit¨at, um nun von der allein empirisch gegebenen Emp-
+ﬁndung ¨uberzugehn auf eine Ursache derselben und sol-
+che dann als einen sich also bewegenden K¨orper, von der
+bezeichneten Gestalt, zu konstruiren. Denn, wie groß ist
+doch der Abstand zwischen der bloßen Empﬁndung in der
+Hand und den Vorstellungen der Urs¨achlichkeit, Materia-
+lit¨at und der durch die Zeit vermittelten Bewegung im
+Raum! Die Empﬁndung in der Hand, auch bei verschie-
+dener Ber¨uhrung und Lage, ist etwas viel zu Einf¨ormiges
+und an Datis Aermliches, als daß es m¨oglich w¨are, dar-
+aus die Vorstellung des Raumes, mit seinen drei Dimensio-
+nen, und der Einwirkung von K¨orpern auf einander, nebst
+den Eigenschaften der Ausdehnung, Undurchdringlichkeit,
+Koh¨asion, Gestalt, H¨arte, Weiche, Ruhe und Bewegung,
+kurz, die Grundlage der objektiven Welt, zu konstruiren:
+sondern Dies ist nur dadurch m¨oglich, daß im Intellekt
+selbst der Raum als Form der Anschauung, die Zeit als
+Form der Ver¨anderung, und das Gesetz der Kausalit¨at als
+Regulator des Eintritts der Ver¨anderungen pr¨aformirt sei-
+en. Das bereits fertige und aller Erfahrung vorherg¨angige
+Daseyn dieser Formen macht eben den Intellekt aus. Phy-
+siologisch ist er eine Funktion des Gehirns, welche dieses
+so wenig erst aus der Erfahrung erlernt, wie der Magen
+das Verdauen, oder die Leber die Gallenabsonderung. Nur
+hieraus ist es erkl¨arlich, daß manche Blindgeborene eine so
+vollst¨andige Kenntniß der r¨aumlichen Verh¨altnisse erlan-
+gen, daß sie dadurch den Mangel des Gesichts in hohem
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+24
+Grade ersetzen und erstaunliche Leistungen vollbringen;
+wie denn vor hundert Jahren der von Kindheit auf blinde
+Saunderson zu Cambridge Mathematik, Optik und Astro-
+nomie gelehrt hat. (Ausf¨uhrlichen Bericht ¨uber Saunder-
+son giebt Diderot: Lettre sur les aveugles.) Und eben so
+nur ist der umgekehrte Fall der Eva Lauk erkl¨arlich, wel-
+che, ohne Arme und Beine geboren, durch das Gesicht
+allein, eben so bald wie andere Kinder, eine richtige An-
+schauung der Außenwelt erlangt hat. (Den Bericht ¨uber sie
+ﬁndet man in der “Welt als Wille und Vorstellung” Bd. 2,
+Kap. 4.) Alles Dieses also beweist, daß Zeit, Raum und
+Kausalit¨at weder durch das Gesicht, noch durch das Ge-
+tast, sondern ¨uberhaupt nicht von außen in uns kommen,
+vielmehr einen innern, daher nicht empirischen, sondern
+intellektuellen Ursprung haben; woraus wieder folgt, daß
+die Anschauung der K¨orperwelt im Wesentlichen ein intel-
+lektueller Proceß, ein Werk des Verstandes ist, zu welchem
+die Sinnesempﬁndung bloß den Anlaß und die Data, zur
+Anwendung im einzelnen Falle, liefert.
+Jetzt will ich das Selbe am Sinne des Gesichts nachwei-
+sen. Das unmittelbar Gegebene ist hier beschr¨ankt auf die
+Empﬁndung der Retina, welche zwar viele Mannigfaltig-
+keit zul¨aßt, jedoch zur¨uckl¨auft auf den Eindruck des Hel-
+len und Dunkeln, nebst ihren Zwischenstufen, und den der
+eigentlichen Farben. Diese Empﬁndung ist durchaus sub-
+jektiv, d.h. nur innerhalb des Organismus und unter der
+Haut vorhanden. Auch w¨urden wir, ohne den Verstand,
+uns jener nur bewußt werden als besonderer und man-
+nigfaltiger Modiﬁkationen unserer Empﬁndung im Auge,
+die nichts der Gestalt, Lage, N¨ahe oder Ferne von Dingen
+außer uns Aehnliches w¨aren. Denn, was beim Sehn die
+Empﬁndung liefert ist nichts weiter, als eine mannigfaltige
+Aﬀektion der Retina, ganz ¨ahnlich dem Anblick einer Pa-
+lette, mit vielerlei bunten Farbenklexen: und nicht mehr
+als Dies ist es, was im Bewußtseyn ¨ubrig bleiben w¨urde,
+wenn man Dem, der vor einer ausgebreiteten, reichen Aus-
+sicht steht, etwan durch L¨ahmung des Gehirns, pl¨otzlich
+den Verstand ganz entziehn, jedoch die Empﬁndung ¨ubrig
+lassen k¨onnte: denn Dies war der rohe Stoﬀ, aus welchem
+vorhin sein Verstand jene Anschauung schuf.
+Daß nun aus einem so beschr¨ankten Stoﬀ, wie Hell,
+Dunkel und Farbe, der Verstand, durch seine so einfa-
+che Funktion des Beziehns der Wirkung auf eine Ursache,
+unter Beih¨ulfe der ihm beigegebenen Anschauungsform
+des Raums, die so unersch¨opﬂich reiche und vielgestaltete
+sichtbare Welt hervorbringen kann, beruht zun¨achst auf
+der Beih¨ulfe, die hier die Empﬁndung selbst liefert. Die-
+se besteht darin, daß, erstlich, die Retina, als Fl¨ache, ein
+Nebeneinander des Eindrucks zul¨aßt; zweitens, daß das
+Licht stets in geraden Linien wirkt, auch im Auge selbst
+geradlinigt gebrochen wird, und endlich, daß die Retina
+die F¨ahigkeit besitzt, auch die Richtung, in der sie vom
+Lichte getroﬀen wird, unmittelbar mit zu empﬁnden, wel-
+ches wohl nur dadurch zu erkl¨aren ist, daß der Lichtstrahl
+in die Dicke der Retina eindringt. Hiedurch aber wird ge-
+wonnen, daß der bloße Eindruck auch schon die Richtung
+Fig. 1
+seiner Ursache anzeigt, also auf den Ort des das Licht aus-
+sendenden, oder reﬂektirenden, Objekts geradezu hindeu-
+tet. Allerdings setzt der Uebergang zu diesem Objekt als
+Ursache schon die Erkenntniß des Kausalverh¨altnisses, wie
+auch der Gesetze des Raums voraus: diese Beiden aber sind
+eben die Ausstattung des Intellekts, der auch hier wieder
+aus der bloßen Empﬁndung die Anschauung zu schaﬀen
+hat. Sein Verfahren hiebei wollen wir jetzt n¨aher betrach-
+ten.
+Das Erste, was er thut, ist, daß er den Eindruck des Ob-
+jekts, welcher verkehrt, das Unterste oben, auf der Retina
+eintriﬀt, wieder aufrecht stellt. Jene urspr¨ungliche Um-
+kehrung entsteht bekanntlich dadurch, daß, indem jeder
+Punkt des sichtbaren Objekts seine Strahlen geradlinigt
+nach allen Seiten aussendet, die von dessen oberm En-
+de kommenden Strahlen sich, in der engen Oeﬀnung der
+Pupille, mit den vom untern Ende kommenden kreuzen,
+wodurch diese oben, jene unten, und eben so die von der
+rechten Seite kommenden auf der linken, eintreﬀen. Der
+dahinter liegende Brechungsapparat im Auge, also humor
+aqueus, lens et corpus vitreum, dient bloß, die vom Objekt
+ausgehenden Lichtstrahlen so zu koncentriren, daß sie auf
+dem kleinen Raum der Retina Platz ﬁnden. Best¨ande nun
+das Sehn im bloßen Empﬁnden; so w¨urden wir den Ein-
+druck des Gegenstandes verkehrt wahrnehmen; weil wir
+ihn so empfangen: sodann aber w¨urden wir ihn auch als et-
+was im Innern des Auges Beﬁndliches wahrnehmen, indem
+wir eben stehn bleiben bei der Empﬁndung. Wirklich hin-
+gegen tritt sogleich der Verstand mit seinem Kausalgeset-
+ze ein, bezieht die empfundene Wirkung auf ihre Ursache,
+hat von der Empﬁndung das Datum der Richtung, in wel-
+cher der Lichtstrahl eintraf, verfolgt also diese r¨uckw¨arts
+zur Ursache hin, auf beiden Linien: die Kreuzung wird da-
+her jetzt auf umgekehrtem Wege wieder zur¨uckgelegt, wo-
+durch die Ursache sich draußen, als Objekt im Raum, auf-
+recht darstellt, n¨amlich in der Stellung wie sie die Strah-
+len aussendet, nicht in der wie sie eintrafen (siehe Fig.
+1).- Die reine Intellektualit¨at der Sache, mit Ausschlie-
+ßung aller anderweitigen, namentlich physiologischen, Er-
+kl¨arungsgr¨unde, l¨aßt sich auch noch dadurch best¨atigen,
+daß, wenn man den Kopf zwischen die Beine steckt, oder
+am Abhange, den Kopf nach unten, liegt, man dennoch
+die Dinge nicht verkehrt, sondern ganz richtig erblickt,
+obgleich den Theil der Retina, welchen gew¨ohnlich das
+Untere der Dinge traf, jetzt das Obere triﬀt, und Alles
+umgekehrt ist, nur der Verstand nicht.
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+25
+Das Zweite, was der Verstand bei seiner Umarbeitung
+der Empﬁndung in Anschauung leistet, ist, daß er das zwei
+Mal Empfundene zu einem einfach Angeschauten macht;
+da jedes Auge f¨ur sich, und sogar in einer etwas verschie-
+denen Richtung, den Eindruck: vom Gegenstand erh¨alt,
+dieser aber doch als nur Einer sich darstellt; welches nur
+im Verstande geschehn kann. Der Proceß, durch den Dies
+zu Stande kommt, ist folgender. Unsere Augen stehn nur
+dann parallel, wenn wir in die Ferne, d.h. ¨uber 200 Fuß
+weit, sehn: außerdem aber richten wir sie beide auf den zu
+betrachtenden Gegenstand, wodurch sie konvergiren und
+die beiden, von jedem Auge bis zum genau ﬁxirten Punk-
+te des Objekts gezogenen Linien daselbst einen Winkel
+schließen, den man den optischen, sie selbst aber die Au-
+genaxen nennt. Diese treﬀen, bei gerade vor uns liegen-
+dem Objekt, genau in die Mitte jeder Retina, mithin auf
+zwei in jedem Auge einander genau entsprechende Punkte.
+Alsbald erkennt der Verstand, als welcher zu Allem im-
+mer nur die Ursache sucht, daß, obwohl hier der Eindruck
+doppelt ist, derselbe dennoch von nur einem ¨außern Punk-
+te ausgeht, also nur eine Ursache ihm zum Grunde liegt:
+demnach stellt nunmehr diese Ursache sich als Objekt und
+nur einfach dar. Denn Alles, was wir anschauen, schauen
+wir als Ursache an, als Ursache empfundener Wirkung,
+mithin im Verstande. Da wir indessen nicht bloß Einen
+Punkt, sondern eine ansehnliche Fl¨ache des Gegenstandes
+mit beiden Augen und doch nur einfach auﬀassen; so ist
+die gegebene Erkl¨arung noch etwas weiter fortzuf¨uhren.
+Was im Objekt seitw¨arts von jenem Scheitelpunkte des
+optischen Winkels liegt, wirft seine Strahlen nicht mehr
+gerade in den Mittelpunkt jeder Retina, sondern eben so
+seitw¨arts von demselben, jedoch, in beiden Augen, auf die
+n¨amliche, z.B. die linke, Seite der Retina: daher sind die
+Stellen, welche die Strahlen daselbst treﬀen, eben so gut
+wie die Mittelpunkte, einander symmetrisch entsprechen-
+de, oder gleichnamige Stellen. Der Verstand lernt diese
+bald kennen und dehnt demnach die obige Regel seiner
+kausalen Auﬀassung auch auf sie aus, bezieht folglich nicht
+bloß die auf den Mittelpunkt jeder Retina fallenden Licht-
+strahlen, sondern auch die, welche die ¨ubrigen einander
+symmetrisch entsprechenden Stellen beider Retinen tref-
+fen, auf einen und den selben solche aussendenden Punkt
+im Objekt, schaut also auch alle diese Punkte, mithin das
+ganze Objekt, nur einfach an. Hiebei nun ist wohl zu mer-
+ken, daß nicht etwan die ¨außere Seite der einen Retina
+der ¨außern Seite der andern und die innere der Innern,
+sondern die Seite der rechten Retina der rechten Seite der
+andern entspricht u.s.f., die Sache also nicht im physiolo-
+gischen, sondern im geometrischen Sinne zu verstehn ist.
+Deutliche und mannigfaltige, diesen Vorgang und alle da-
+mit zusammenh¨angenden Ph¨anomene erl¨auternde Figuren
+ﬁndet man in Robert Smith’s Optics, auch zum Theil in
+K¨astner’s Deutscher Uebersetzung, von 1755. Ich habe,
+Fig. 2, nur eine gegeben, welche eigentlich einen weiterhin
+beizubringenden speciellen Fall darstellt, jedoch auch die-
+nen kann, das Ganze zu erl¨autern, wenn man vom Punkte
+R ganz absieht. Wir richten dem gem¨aß beide Augen al-
+lezeit gleichm¨aßig auf das Objekt, um die von den selben
+Punkten ausgehenden Strahlen mit den einander symme-
+Fig. 2
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+26
+trisch entsprechenden Stellen beider Retinen aufzufangen.
+Bei der Bewegung der Augen seitw¨arts, aufw¨arts, abw¨arts
+und nach allen Richtungen, triﬀt nun der Punkt des Ob-
+jekts, welcher vorhin den Mittelpunkt jeder Retina traf,
+jedesmal eine andere, aber stets, in beiden Augen, eine
+gleichnamige, der im andern entsprechende, Stelle. Wenn
+wir einen Gegenstand mustern (perlustrare), lassen wir die
+Augen hin und her darauf gleiten, um jeden Punkt des-
+selben successive mit dem Centro der Retina, welches am
+deutlichsten sieht, in Kontakt zu bringen, betasten also
+das Objekt mit den Augen. Hieraus wird deutlich, daß
+das Einfachsehn mit zwei Augen sich im Grunde eben
+so verh¨alt, wie das Betasten eines K¨orpers mit 10 Fin-
+gern, deren jeder einen andern Eindruck und auch in an-
+derer Richtung erh¨alt, welche s¨ammtlichen Eindr¨ucke je-
+doch der Verstand als von Einem K¨orper herr¨uhrend er-
+kennt, dessen Gestalt und Gr¨oße er danach apprehendirt
+und r¨aumlich konstruirt. Hierauf beruht es, daß ein Blin-
+der ein Bildhauer seyn kann: ein solcher war seit seinem
+f¨unften Jahre der im J.1853 in Tyrol gestorbene, r¨uhmlich
+bekannte Joseph Kleinhanns 3. Denn die Anschauung ge-
+schieht immer durch den Verstand; gleichviel, von welchem
+Sinn er die Data erh¨alt.
+Wie nun aber, wenn ich eine Kugel mit gekreuzten Fin-
+gern betaste, ich sofort zwei Kugeln zu f¨uhlen glaube, weil
+mein auf die Ursache zur¨uckgehender und diese den Ge-
+setzen des Raumes gem¨aß konstruirender Verstand, die
+nat¨urliche Lage der Finger voraussetzend, zwei Kugel-
+ﬂ¨achen, welche die ¨außeren Seiten des Mittel- und des
+Zeigeﬁngers zugleich ber¨uhren, durchaus zweien verschie-
+denen Kugeln zuschreiben muß; eben so nun wird mir ein
+gesehenes Objekt doppelt erscheinen, wenn meine Augen
+nicht mehr, gleichm¨aßig konvergirend, den optischen Win-
+kel an einem Punkte desselben schließen, sondern jedes in
+einem andern Winkel nach demselben schaut, d.h. wenn
+ich schiele. Denn jetzt werden nicht mehr von den aus ei-
+nem Punkte des Objekts ausgehenden Strahlen auf den
+beiden Retinen die einander symmetrisch entsprechenden
+Stellen getroﬀen, welche mein Verstand, durch fortgesetzte
+Erfahrung, kennen gelernt hat; sondern ganz verschiede-
+ne Stellen, welche, bei gleichm¨aßiger Lage der Augen, nur
+von verschiedenen K¨orpern also aﬃcirt werden k¨onnen:
+daher sehe ich jetzt zwei Objekte; weil eben die Anschau-
+ung durch den Verstand und im Verstande geschieht. —
+Das Selbe tritt auch ohne Schielen ein, wenn n¨amlich zwei
+Gegenst¨ande in ungleicher Entfernung vor mir stehn und
+3 Ueber diesen berichtet das Frankfurter Konversationsblatt vom
+22. Juli 1853: In Nauders (Tyrol) starb am 10. Juli der blinde Bild-
+hauer Joseph Kleinhanns. In seinem f¨unften Jahre in Folge der Kuh-
+pocken erblindet, t¨andelte und schnitzte der Knabe f¨ur die Lange-
+weile. Prugg gab ihm Anleitung und Figuren zum Nachbilden, und
+in seinem zw¨olften Jahre verfertigte der Knabe einen Christus in Le-
+bensgr¨oße. In der Werkst¨atte des Bildhauers Nißl in F¨ugen proﬁtirte
+er in der kurzen Zeit sehr viel und wurde verm¨oge seiner guten An-
+lage und seines Talents der weithin bekannte blinde Bildhauer. Seine
+verschiedenartigen Arbeiten sind sehr zahlreich. Bloß seine Christus-
+bilder belaufen sich auf vierhundert, und in diesen tritt auch in An-
+betracht seiner Blindheit seine Meisterschaft zu Tage. Er verfertigte
+auch andere anerkennungswerthe St¨ucke, und vor zwei Monaten noch
+die B¨uste des Kaisers Franz Joseph, welche nach Wien ¨ubersendet
+wurde.
+ich den entfernteren fest ansehe, also an ihm den opti-
+schen Winkel schließe: denn jetzt werden die vom n¨aher
+stehenden Gegenstande ausgehenden Strahlen auf einan-
+der nicht symmetrisch entsprechende Stellen in beiden Re-
+tinen treﬀen, mein Verstand wird daher sie zweien Ge-
+genst¨anden zuschreiben, d.h. ich werde das n¨aher stehende
+Objekt doppelt sehn. (Hiezu Fig. 2) Schließe ich hingegen
+an diesem letzteren den optischen Winkel, indem ich es
+fest ansehe; so wird, aus dem n¨amlichen Grunde, das ent-
+ferntere Objekt mir doppelt erscheinen. Man darf, um dies
+zu erproben, nur etwan einen Bleistift zwei Fuß vom Auge
+halten und abwechselnd bald ihn, bald ein weit dahinter
+liegendes Objekt ansehn.
+Aber das Sch¨onste ist, daß man auch das umgekehr-
+te Experiment machen kann; so daß man, zwei wirkliche
+Gegenst¨ande gerade und nahe vor beiden, oﬀenen Augen
+habend, doch nur einen sieht; welches am schlagendesten
+beweist, daß die Anschauung keineswegs in der Sinnes-
+empﬁndung liegt, sondern durch einen Akt des Verstan-
+des geschieht. Man lasse zwei pappene R¨ohren, von et-
+wan 8 Zoll L¨ange und 1 1/2 Zoll Durchmesser, vollkom-
+men parallel, nach Art des Binokularteleskops, zusam-
+menf¨ugen, und befestige vor der Oeﬀnung eines jeden der-
+selben ein Achtgroschenst¨uck. Wenn man jetzt, das an-
+dere Ende an die Augen legend, durchschaut, wird man
+nur ein Achtgroschenst¨uck, von einer R¨ohre umschlossen,
+wahrnehmen. Denn, durch die R¨ohren, zur g¨anzlich par-
+allelen Lage gen¨othigt, werden beide Augen von beiden
+M¨unzen gerade im Centro der Retina und den dieses um-
+gebenden, einander folglich symmetrisch entsprechenden
+Stellen ganz gleichm¨aßig getroﬀen; daher der Verstand,
+die, bei nahen Objekten sonst gew¨ohnliche, ja nothwendi-
+ge, konvergirende Stellung der Augenaxen voraussetzend,
+ein einziges Objekt als Ursache des also zur¨uckgestrahlten
+Lichtes annimmt, d.h. wir nur Eines sehn: so unmittelbar
+ist die kausale Apprehension des Verstandes.
+Die versuchten physiologischen Erkl¨arungen des Ein-
+fachsehns einzeln zu widerlegen ist hier kein Raum. Ihre
+Falschheit geht aber schon aus folgenden Betrachtungen
+hervor, 1) Wenn die Sache auf einem organischen Zusam-
+menhange beruhte, m¨ußten die auf beiden Retinen ein-
+ander entsprechenden Stellen, von denen nachweislich das
+Einfachsehn abh¨angt, die im organischen Sinne gleichna-
+migen seyn: allein sie sind es, wie schon erw¨ahnt, bloß im
+geometrischen. Denn organisch entsprechen einander die
+beiden innern und die beiden ¨außern Augenwinkel und
+Alles demgem¨aß: hingegen zum Behuf des Einfachsehns
+entspricht umgekehrt die rechte Seite der rechten Reti-
+na der rechten Seite der linken Retina u.s.w.; wie Dies
+aus den angef¨uhrten Ph¨anomenen unwiderleglich erhellt.
+Eben weil die Sache intellektual ist, haben auch nur die
+verst¨andigsten Thiere, n¨amlich die obern S¨augethiere, so-
+dann die Raubv¨ogel, vorz¨uglich die Eulen, u.a.m., so ge-
+stellte Augen, daß sie beide Axen derselben auf Einen
+Punkt richten k¨onnen, 2) Die zuerst von Neuton (Optics,
+querry 15th) aufgestellte Hypothese aus dem Zusammen-
+ﬂuß oder partieller Kreuzung der Sehnerven, vor ihrem
+Eintritt ins Gehirn, ist schon darum falsch, weil alsdann
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+27
+das Doppeltsehn durch Schielen unm¨oglich w¨are: zudem
+haben bereits Vesalius und Caesalpinus anatomische F¨alle
+angef¨uhrt, in denen gar keine Vermischung, ja, kein Kon-
+takt der Sehnerven daselbst Statt fand, die Subjekte aber
+nichtsdestoweniger einfach gesehn hatten. Endlich spricht
+gegen jene Vermischung des Eindrucks Dieses, daß, wenn
+man, das rechte Auge fest zuhaltend, mit dem linken in
+die Sonne sieht, man das, nachher lange anhaltende Blen-
+dungsbild nur im linken, nie im rechten Auge haben wird,
+oder vice versa.
+Das Dritte, wodurch der Verstand die Empﬁndung in
+Anschauung umarbeitet, ist, daß er aus den bis hieher
+gewonnenen bloßen Fl¨achen K¨orper konstruirt, also die
+dritte Dimension hinzuf¨ugt, indem er die Ausdehnung
+der K¨orper in derselben, in dem ihm a priori bewußten
+Raume, nach Maaßgabe der Art ihrer Einwirkung auf das
+Auge und der Gradationen des Lichtes und Schattens, kau-
+sal beurtheilt. W¨ahrend n¨amlich die Objekte den Raum
+in allen dreien Dimensionen f¨ullen, k¨onnen sie auf das
+Auge nur mit zweien wirken: die Empﬁndung beim Sehn
+ist, in Folge der Natur des Organes, bloß planimetrisch,
+nicht stereometrisch. Alles Stereometrische der Anschau-
+ung wird vom Verstande allererst hinzugethan: seine al-
+leinigen Data hiezu sind die Richtung, in der das Auge
+den Eindruck erh¨alt, die Gr¨anzen desselben und die ver-
+schiedenen Abstufungen des Hellen und Dunkeln, welche
+unmittelbar auf ihre Ursachen deuten und wonach wir
+erkennen, ob wir z.B. eine Scheibe, oder eine Kugel vor
+uns haben. Auch diese Verstandesoperation wird, gleich
+den vorhergehenden, so unmittelbar und schnell vollzo-
+gen, daß von ihr nichts, als bloß das Resultat, ins Bewußt-
+seyn kommt. Daher eben ist die Projektionszeichnung ei-
+ne so schwierige, nur nach mathematischen Principien zu
+l¨osende Aufgabe und muß erst erlernt werden, obgleich
+sie nichts weiter zu leisten hat, als die Darstellung der
+Empﬁndung des Sehns, wie solche dieser dritten Verstan-
+desoperation als Datum vorliegt, also des Sehns in seiner
+bloß planimetrischen Ausdehnung, zu deren allein gegebe-
+nen zwei Dimensionen, nebst den besagten Datis in ihnen,
+der Verstand alsbald die dritte hinzuthut, sowohl beim
+Anblick der Zeichnung, wie bei dem der Realit¨at. Eine
+solche Zeichnung ist n¨amlich eine Schrift, welche, gleich
+der gedruckten, Jeder lesen, hingegen Wenige schreiben
+k¨onnen; weil eben unser anschauender Verstand die Wir-
+kung bloß auﬀaßt, um aus ihr die Ursache zu konstruiren,
+sie selbst aber, ¨uber dieser, alsbald ganz außer Acht l¨aßt.
+Daher erkennen wir z.B. einen Stuhl augenblicklich, in je-
+der ihm m¨oglichen Stellung und Lage; aber ihn in irgend
+einer zu zeichnen ist Sache derjenigen Kunst, die von die-
+ser dritten Verstandesoperation abstrahirt, um bloß die
+Data zu derselben dem Beschauer, zu eigener Vollziehung,
+vorzulegen. Dies ist, wie gesagt, zun¨achst die Projektions-
+Zeichnenkunst, dann aber, im Alles umfassenden Sinn, die
+Malerkunst. Das Bild liefert Linien, nach perspektivischen
+Regeln gezogen, helle und dunkle Stellen, nach Maaßgabe
+der Wirkung des Lichtes und Schattens, endliche Farben-
+ﬂecke, in Qualit¨at und Intension der Erfahrung abgelernt.
+Der Beschauer liest Dies ab, indem er zu gleichen Wirkun-
+gen die gewohnten Ursachen setzt. Die Kunst des Malers
+besteht darin, daß er die Data der Empﬁndung beim Sehn,
+wie sie vor dieser dritten Verstandesoperation sind, mit
+Besonnenheit festzuhalten weiß; w¨ahrend wir Andern, so-
+bald wir von ihnen den besagten Gebrauch gemacht haben,
+sie wegwerfen, ohne sie in unser Ged¨achtniß aufzunehmen.
+Wir werden die hier betrachtete dritte Verstandesoperati-
+on noch genauer kennen lernen, indem wir jetzt zu einer
+vierten ¨ubergehn, welche, als ihr sehr nahe verwandt, sie
+mit erl¨autert.
+Diese vierte Verstandesoperation besteht n¨amlich im
+Erkennen der Entfernung der Objekte von uns: diese aber
+ist eben die dritte Dimension, von der oben die Rede war.
+Die Empﬁndung beim Sehn liefert uns zwar, wie schon
+gesagt, die Richtung, in welcher die Objekte liegen, aber
+nicht die Entfernung, also nicht ihren Ort. Die Entfernung
+muß also erst durch den Verstand herausgebracht werden,
+folglich aus lauter kausalen Bestimmungen sich ergeben.
+Von diesen nun ist die vornehmste der Sehewinkel, unter
+dem das Objekt sich darstellt: dennoch ist dieser durchaus
+zweideutig und kann f¨ur sich allein nichts entscheiden. Er
+ist wie ein Wort von zwei Bedeutungen: man muß erst aus
+dem Zusammenhang abnehmen, welche gemeint sei. Denn,
+bei gleichem Sehewinkel, kann ein Objekt klein und nahe,
+oder groß und fern seyn. Nur wenn uns seine Gr¨oße an-
+derweitig schon bekannt ist, k¨onnen wir aus dem Sehewin-
+kel seine Entfernung erkennen, wie auch umgekehrt, wenn
+uns diese anderweitig gegeben ist, seine Gr¨oße. Auf der
+Abnahme des Sehewinkels in Folge der Entfernung beruht
+die Linearperspektive, deren Grunds¨atze sich hier leicht
+ableiten lassen. Weil n¨amlich unsere Sehkraft nach allen
+Seiten gleich weit reicht, sehn wir eigentlich Alles wie eine
+Hohlkugel, in deren Centro das Auge st¨ande. Diese Kugel
+nun hat erstlich unendlich viele Durchschnittskreise nach
+allen Richtungen, und die Winkel, deren Maaß die Thei-
+le dieser Kreise abgeben, sind die m¨oglichen Sehewinkel.
+Zweitens wird diese Kugel, je nachdem wir ihren Radi-
+us l¨anger oder k¨urzer annehmen, gr¨oßer oder kleiner: wir
+k¨onnen sie daher auch als aus unendlich vielen koncen-
+trischen und durchsichtigen Hohlkugeln bestehend den-
+ken. Da alle Radien divergiren, so sind die koncentrischen
+Hohlkugeln, in dem Maaße, als sie ferner von uns stehn,
+gr¨oßer, und mit ihnen wachsen die Grade ihrer Durch-
+schnittskreise, also auch die wahre Gr¨oße der diese Grade
+einnehmenden Objekte. Diese sind daher, je nachdem sie
+von einer gr¨oßern, oder kleinern Hohlkugel den gleichen
+Theil, z.B. 10◦, einnehmen, gr¨oßer oder kleiner, w¨ahrend
+ihr Sehewinkel, in beiden F¨allen, der selbe bleibt, also un-
+entschieden l¨aßt, ob es 10◦einer Kugel von 2 Meilen, oder
+von 10 Fuß Durchmesser sind, die sein Objekt einnimmt.
+Steht umgekehrt die Gr¨oße dieses Objekts fest; so wird
+die Zahl der Grade, die es einnimmt, abnehmen, in dem
+Maaße, als die Hohlkugel, auf die wir es versetzen, ent-
+fernter und daher gr¨oßer ist: in gleichem Maaße werden
+mithin alle seine Gr¨anzen zusammenr¨ucken. Hieraus folgt
+die Grundregel aller Perspektive: denn da demnach, in ste-
+tiger Proportion mit der Entfernung, die Objekte und ihre
+Zwischenr¨aume abnehmen m¨ussen, wodurch alle Gr¨anzen
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+28
+zusammenr¨ucken; so wird der Erfolg seyn, daß, mit der
+wachsenden Entfernung, alles ¨uber uns Liegende herab,
+alles unter uns Liegende herauf, alles zu den Seiten Lie-
+gende zusammenr¨uckt. So weit wir eine ununterbrochene
+Folge sichtbarlich zusammenh¨angender Gegenst¨ande vor
+uns haben, k¨onnen wir aus diesem allm¨aligen Zusammen-
+laufen aller Linien, also aus der Linearperspektive, aller-
+dings die Entfernung erkennen. Hingegen aus dem bloßen
+Sehewinkel, f¨ur sich allein, k¨onnen wir es nicht; sondern
+alsdann muß der Verstand immer noch ein anderes Da-
+tum zu H¨ulfe nehmen, welches gleichsam als Kommentar
+des Sehewinkels dient, indem es den Antheil, den die Ent-
+fernung an ihm hat, bestimmter bezeichnet. Solcher Data
+sind haupts¨achlich vier, die ich jetzt n¨aher angeben werde.
+Verm¨oge ihrer geschieht es, selbst wo mir die Linearper-
+spektive fehlt, daß, obwohl ein Mensch, der 100 Fuß von
+mir steht, mir in einem 24 Mal kleinern Sehewinkel, als
+wenn er 2 Fuß von mir st¨ande, erscheint, ich dennoch, in
+den meisten F¨allen, seine Gr¨oße sogleich richtig auﬀasse;
+welches Alles abermals beweist, daß die Anschauung in-
+tellektual und nicht bloß sensual ist. — Ein specieller und
+interessanter Beleg zu dem hier dargelegten Fundament
+der Linearperspektive, wie auch der Intellektualit¨at der
+Anschauung ¨uberhaupt, ist folgender. Wenn ich, in Folge
+des langem Ansehns eines gef¨arbten Gegenstandes von be-
+stimmtem Umriß, z.B. eines rothen Kreuzes, dessen phy-
+siologisches Farbenspektrum, also ein gr¨unes Kreuz, im
+Auge habe; so wird mir dieses um so gr¨oßer erscheinen,
+je entfernter die Fl¨ache ist, auf die ich es fallen lasse, und
+um so kleiner, je n¨aher diese. Denn das Spektrum selbst
+nimmt einen bestimmten und unver¨anderlichen Theil mei-
+ner Retina, die zuerst vom rothen Kreuz erregte Stelle,
+ein, schaﬀt also, indem sie nach außen geworfen, d. h. als
+Wirkung eines ¨außern Gegenstandes aufgefaßt wird, einen
+ein f¨ur alle Mal gegebenen Sehewinkel desselben, nehmen
+wir an 2◦: verlege ich nun diesen (hier, wo aller Kommen-
+tar zum Sehewinkel fehlt) auf eine entfernte Fl¨ache, mit
+der ich ihn unvermeidlich, als zu ihrer Wirkung geh¨orig,
+identiﬁcire; so sind es 2◦einer entfernten, also sehr großen
+Kugel, die es einnimmt, mithin ist das Kreuz groß: werfe
+ich hingegen das Spektrum auf einen nahen Gegenstand;
+so f¨ullt es 2◦einer kleinen Kugel, ist mithin klein. In bei-
+den F¨allen f¨allt die Anschauung vollkommen objektiv aus,
+ganz gleich der eines ¨außern Gegenstandes, und belegt da-
+durch, indem sie ja von einem v¨ollig subjektiven Grunde
+(das ganz anderweitig erregte Spektrum) ausgeht, die In-
+tellektualit¨at aller objektiven Anschauung. — Ueber diese
+Thatsache (welche im Jahre 1815 zuerst bemerkt zu ha-
+ben ich mich lebhaft und umst¨andlich erinnere) ﬁndet sich
+in den Comptes rendus vom 2. August 1858 ein Aufsatz
+von Mr. S´eguin, der die Sache als eine neue Entdeckung
+auftischt und allerlei schiefe und alberne Erkl¨arungen der-
+selben giebt. Die Herrn illustres confr`eres h¨aufen bei je-
+dem Anlaß Experimente auf Experimente, und je kom-
+plicirter, desto besser. Nur exp´erience! ist ihre Losung;
+aber ein wenig richtiges und aufrichtiges Nachdenken ¨uber
+die beobachteten Ph¨anomene ist h¨ochst selten anzutreﬀen:
+exp´erience, exp´erience! und albernes Zeug dazu.
+Zu den erw¨ahnten subsidiarischen Datis also, die den
+Kommentar zum gegebenen Sehewinkel liefern, geh¨oren
+erstlich die mutationes oculi internae, verm¨oge welcher
+das Auge seinen optischen Brechungsapparat, durch Ver-
+mehrung oder Verminderung der Brechung, verschiede-
+nen Entfernungen anpaßt. Worin nun aber diese Ver¨an-
+derungen physiologisch bestehn, ist noch immer unausge-
+macht. Man hat sie in der Vermehrung der Konvexit¨at
+bald der Cornea, bald der Lens gesucht; aber die neueste,
+in der Hauptsache jedoch schon von Kepler ausgesproche-
+ne Theorie, wonach die Linse beim Fernesehn zur¨ucktritt,
+beim Nahesehn aber vorgeschoben, und dabei durch Sei-
+tendruck st¨arker gew¨olbt wird, ist mir die wahrscheinli-
+chere: denn danach w¨are der Hergang dem Mechanismus
+des Opernkukers ganz analog. Diese Theorie ﬁndet man
+ausf¨uhrlich dargelegt in A. Hueck’s Abhandlung “Die Be-
+wegung der Krystallinse”, 1841. Jedenfalls haben wir von
+diesen innern Ver¨anderungen des Auges, wenn auch keine
+deutliche Wahrnehmung, doch eine gewisse Empﬁndung,
+und diese benutzen wir unmittelbar zur Sch¨atzung der
+Entfernung. Da aber jene Ver¨anderungen nur dienen, von
+etwan 7 Zoll bis auf 16 Fuß weit, das vollkommen deut-
+liche Sehn m¨oglich zu machen; so ist auch das besagte
+Datum f¨ur den Verstand nur innerhalb dieser Entfernung
+anwendbar.
+Dar¨uber hinaus ﬁndet dagegen das zweite Datum An-
+wendung, n¨amlich der bereits oben, beim Einfachsehn, er-
+kl¨arte, von den beiden Augenaxen gebildete, optische Win-
+kel. Oﬀenbar wird er kleiner, je ferner, und gr¨oßer, je n¨aher
+das Objekt liegt. Dieses verschiedene Richten der Augen
+gegen einander ist nicht ohne eine gewisse, leise Emp-
+ﬁndung davon, die aber auch nur sofern ins Bewußtsein
+kommt, als der Verstand sie, bei seiner intuitiven Beurt-
+heilung der Entfernung, als Datum gebraucht. Dieses Da-
+tum l¨aßt zudem nicht bloß die Entfernung, sondern auch
+genau den Ort des Objekts erkennen, verm¨oge der Paral-
+laxe der Augen, die darin besteht, daß jedes derselben das
+Objekt in einer etwas andern Richtung sieht, weshalb es zu
+r¨ucken scheint, wenn man ein Auge schließt. Daher wird
+man, mit einem geschlossenen Auge, nicht leicht das Licht
+putzen k¨onnen; weil dann dies Datum wegf¨allt. Da aber,
+sobald der Gegenstand 200 Fuß, oder weiter, abliegt, die
+Augen sich parallel richten, also der optische Winkel ganz
+wegf¨allt; so gilt dieses Datum nur innerhalb der besagten
+Entfernung.
+Ueber diese hinaus kommt dem Verstande die Luft-
+perspektive zu H¨ulfe, als welche durch das zunehmende
+Dumpfwerden aller Farben, das Erscheinen des physischen
+Blau vor allen dunkeln Gegenst¨anden (Goethes vollkom-
+men wahrer und richtiger Farbenlehre gem¨aß) und das
+Verschwimmen der Kontoure, ihm eine gr¨oßere Entfer-
+nung ank¨undigt. Dieses Datum ist in Italien, wegen der
+großen Durchsichtigkeit der Luft, ¨außerst schwach; daher
+es uns daselbst leicht irre f¨uhrt: z.B. von Fraskati aus ge-
+sehn scheint Tivoli sehr nahe. Hingegen erscheinen uns im
+Nebel, welcher eine abnorme Vermehrung dieses Datums
+ist, alle Gegenst¨ande gr¨oßer, weil der Verstand sie entfern-
+ter annimmt.
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+29
+Endlich bleibt uns noch die Sch¨atzung der Entfer-
+nung mittelst der uns intuitiv bekannten Gr¨oßen der da-
+zwischen liegenden Gegenst¨ande, wie Felder, Str¨ohme,
+W¨alder u.s.w. Sie ist nur bei ununterbrochenem Zusam-
+menhang, also nur auf irdische, nicht auf himmlische Ob-
+jekte anwendbar. Ueberhaupt sind wir mehr einge¨ubt, sie
+in horizontaler, als perpendikularer Richtung zu gebrau-
+chen; daher die Kugel auf einem Thurm von 200 Fuß H¨ohe
+uns viel kleiner erscheint, als wenn sie auf der Erde 200
+Fuß von uns liegt; weil wir hier die Entfernung richtiger
+in Anschlag bringen. So oft Menschen irgendwie uns so
+zu Gesicht kommen, daß das zwischen ihnen und uns Lie-
+gende großen Theils verborgen bleibt, erscheinen sie uns
+auﬀallend klein.
+Theils dieser letztern Sch¨atzungsart, sofern sie, g¨ultig,
+nur auf irdische Objekte und in horizontaler Richtung an-
+wendbar ist, theils der nach der Luftperspektive, die sich
+im selben Fall beﬁndet, ist es zuzuschreiben, daß unser
+anschauender Verstand, nach dem Horizont hin, Alles f¨ur
+entfernter, mithin f¨ur gr¨oßer h¨alt, als in der senkrech-
+ten Richtung. Daher kommt es, daß der Mond am Ho-
+rizont so viel gr¨oßer erscheint, als im Kulminationspunkt,
+w¨ahrend doch sein wohlgemessener Sehewinkel, also das
+Bild, welches er ins Auge wirft, alsdann durchaus nicht
+gr¨oßer ist; wie auch, daß das Himmelsgew¨olbe sich abge-
+plattet darstellt, d.h. horizontal weiter, als perpendiku-
+lar, ausgedehnt. Beides ist also rein intellektual, oder ce-
+rebral; nicht optisch oder sensual. Die Einwendung, daß
+der Mond, auch wenn kulminirend, bisweilen getr¨ubt und
+doch nicht gr¨oßer erscheine, ist dadurch zu widerlegen,
+daß er daselbst auch nicht roth erscheint, weil die Tr¨ubung
+durch gr¨obere D¨unste geschieht und daher anderer Art, als
+die durch die Luftperspektive ist; wie auch dadurch, daß
+wir, wie gesagt, diese Sch¨atzung nur in der horizontalen,
+nicht in der perpendikularen Richtung anwenden, auch in
+dieser Stellung andere Korrektive eintreten. Sauss¨ure soll,
+vom Montblanc aus, den aufgehenden Mond so groß ge-
+sehn haben, daß er ihn nicht erkannte und vor Schreck
+ohnm¨achtig ward.
+Hingegen beruht auf der isolirten Sch¨atzung nach dem
+Sehewinkel allein, also der Gr¨oße durch die Entfernung,
+und der Entfernung durch die Gr¨oße, die Wirkung des Te-
+leskops und der Loupe; weil hier die vier andern, supple-
+mentarischen Sch¨atzungsmittel ausgeschlossen sind. Das
+Teleskop vergr¨oßert wirklich, scheint aber bloß n¨aher zu
+bringen; weil die Gr¨oße der Objekte uns empirisch bekannt
+ist und wir nun ihre vermehrte scheinbare Gr¨oße aus der
+geringern Entfernung erkl¨aren: so erscheint z.B. ein Haus,
+durch das Teleskop gesehn, nicht 10 Mal gr¨oßer, sondern
+10 Mal n¨aher. Die Loupe hingegen vergr¨oßert nicht wirk-
+lich, sondern macht es uns nur m¨oglich, das Objekt dem
+Auge so nahe zu bringen, wie wir dies außerdem nicht
+k¨onnten, und dasselbe erscheint nur so groß, wie es, in sol-
+cher N¨ahe, auch ohne Loupe erscheinen w¨urde. N¨amlich
+die zu geringe Konvexit¨at der Lens und Cornea gestat-
+tet uns kein deutliches Sehn in gr¨oßerer N¨ahe, als 8 —
+10 Zoll vom Auge: vermehrt nun aber die Konvexit¨at der
+Loupe, statt jener, die Brechung; so erhalten wir, selbst
+bei 1/2 Zoll Entfernung vom Auge, noch ein deutlicheres
+Bild. Das in solcher N¨ahe und ihr entsprechender Gr¨oße
+gesehene Objekt versetzt unser Verstand in die nat¨urliche
+Entfernung des deutlichen Sehns, also 8 — 10 Zoll vom
+Auge, und sch¨atzt nun nach dieser Distanz, unter dem ge-
+gebenen Sehewinkel, seine Gr¨oße.
+Ich habe alle diese das Sehn betreﬀenden Vorg¨ange so
+ausf¨uhrlich dargelegt, um deutlich und unwiderleglich dar-
+zuthun, daß in ihnen vorwaltend der Verstand th¨atig ist,
+welcher dadurch, daß er jede Ver¨anderung als Wirkung
+auﬀaßt und sie auf ihre Ursache bezieht, auf der Unterlage
+der apriorischen Grundanschauungen des Raums und der
+Zeit, das Gehirnph¨anomen der gegenst¨andlichen Welt zu
+Stande bringt, wozu ihm die Sinnesempﬁndung bloß einige
+Data liefert. Und zwar vollzieht er dieses Gesch¨aft allein
+durch seine eigene Form, welche das Kausalit¨atsgesetz ist,
+und daher ganz unmittelbar und intuitiv, ohne Beih¨ulfe
+der Reﬂexion, d.i. der abstrakten Erkenntniß, mittelst Be-
+griﬀen und Worten, als welche das Material der sekund¨aren
+Erkenntniß, d.i. des Denkens, also der Vernunft, sind.
+Diese Unabh¨angigkeit der Verstandeserkenntniß von der
+Vernunft und ihrer Beih¨ulfe erhellt auch daraus, daß,
+wenn ein Mal der Verstand zu gegebenen Wirkungen eine
+unrichtige Ursache setzt, und mithin diese geradezu an-
+schaut, wodurch der falsche Schein entsteht; die Vernunft
+immerhin den wahren Thatbestand in abstracto richtig er-
+kennen mag, ihm damit jedoch nicht zu H¨ulfe kommen
+kann; sondern, ihrer bessern Erkenntniß ungeachtet, der
+falsche Schein unverr¨uckt stehn bleibt. Dergleichen Schein
+ist z.B. das oben er¨orterte Doppeltsehn und Doppeltta-
+sten, in Folge der Verr¨uckung der Sinneswerkzeuge aus ih-
+rer normalen Lage; imgleichen der erw¨ahnte, am Horizont
+gr¨oßer erscheinende Mond; ferner das sich ganz als schwe-
+bender, solider K¨orper darstellende Bild im Brennpunkt
+eines Hohlspiegels; das gemalte Rilievo, welches wir f¨ur
+ein wirkliches ansehn; die Bewegung des Ufers, oder der
+Br¨ucke, worauf wir stehn, w¨ahrend ein Schiﬀdurchf¨ahrt;
+hohe Berge, die viel n¨aher erscheinen, als sie sind, wegen
+des Mangels der Luftperspektive, welcher eine Folge der
+Reinheit der Atmosph¨are, in der ihre hohen Gipfel liegen,
+ist; und hundert ¨ahnliche Dinge, bei welchen allen der Ver-
+stand die gew¨ohnliche, ihm gel¨auﬁge Ursache voraussetzt,
+diese also sofort anschaut, obgleich die Vernunft den rich-
+tigen Thatbestand auf andern Wegen ermittelt hat, damit
+aber jenem, als welcher ihrer Belehrung unzug¨anglich, weil
+in seinem Erkennen ihr vorherg¨angig, ist, nicht beikommen
+kann; wodurch der falsche Schein, d.i. der Trug des Ver-
+standes, unverr¨uckbar stehn bleibt, wenn gleich der Irr-
+thum, d.i. der Trug der Vernunft, verhindert wird. — Das
+vom Verstande richtig Erkannte ist die Realit¨at; das von
+der Vernunft richtig Erkannte die Wahrheit, d.i. ein Urt-
+heil, welches Grund hat: jener ist der Schein (das f¨alschlich
+Angeschaute), dieser der Irrthum (das f¨alschlich Gedach-
+te) entgegengesetzt.
+Obgleich der rein formale Theil der empirischen An-
+schauung, also das Gesetz der Kausalit¨at, nebst Raum
+und Zeit, a priori im Intellekt liegt; so ist ihm doch nicht
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+30
+die Anwendung desselben auf empirische Data zugleich
+mitgegeben: sondern diese erlangt er erst durch Uebung
+und Erfahrung. Daher kommt es, daß neugeborene Kin-
+der zwar den Licht- und Farbeneindruck empfangen, al-
+lein noch nicht die Objekte apprehendiren und eigentlich
+sehn; sondern sie sind, die ersten Wochen hindurch, in ei-
+nem Stupor befangen, der sich alsdann verliert, wann ihr
+Verstand anf¨angt, seine Funktion an den Datis der Sin-
+ne, zumal des Getasts und Gesichts, zu ¨uben, wodurch
+die objektive Welt allm¨alig in ihr Bewußtsein tritt. Die-
+ser Eintritt ist am Intelligentwerden ihres Blicks und eini-
+ger Absichtlichkeit in ihren Bewegungen deutlich zu erken-
+nen, besonders wenn sie zum ersten Mal durch freundliches
+Anl¨acheln an den Tag legen, daß sie ihre Pﬂeger erkennen.
+Man kann auch beobachten, daß sie noch lange mit dem
+Sehn und Tasten experimentiren, um ihre Apprehension
+der Gegenst¨ande unter verschiedener Beleuchtung, Rich-
+tung und Entfernung derselben, zu vervollkommnen, und
+so ein stilles, aber ernstes Studium treiben, bis sie alle
+die oben beschriebenen Verstandesoperationen des Sehns
+erlernt haben. Viel deutlicher jedoch ist diese Schule an
+sp¨at operirten Blindgeborenen zu konstatiren; da diese
+von ihren Wahrnehmungen Bericht erstatten. Seit Chesel-
+den’s ber¨uhmt gewordenem Blinden (¨uber welchen der ur-
+spr¨ungliche Bericht in den Philosophical transactions Vol.
+35 steht) hat der Fall sich oft wiederholt und es sich je-
+desmal best¨atigt, daß diese sp¨at den Gebrauch der Augen
+erlangenden Leute zwar gleich nach der Operation Licht,
+Farben und Umrisse sehn, aber noch keine objektive An-
+schauung der Gegenst¨ande haben: denn ihr Verstand muß
+erst die Anwendung seines Kausalgesetzes auf die ihm neu-
+en Data und ihre Ver¨anderungen lernen. Als Cheselden’s
+Blinder zum ersten Mal sein Zimmer mit den verschiede-
+nen Gegenst¨anden darin erblickte, unterschied er nichts
+daran, sondern hatte nur einen Totaleindruck, wie von ei-
+nem, aus einem einzigen St¨ucke bestehenden Ganzen: er
+hielt es f¨ur eine glatte, verschieden gef¨arbte Oberﬂ¨ache.
+Es ﬁel ihm nicht ein, gesonderte, verschieden entfernte,
+hinter einander geschobene Dinge zu erkennen. Bei sol-
+chen hergestellten Blinden muß das Getast, als welchem
+die Dinge schon bekannt sind, diese dem Gesicht erst be-
+kannt machen, gleichsam sie pr¨asentiren und einf¨uhren.
+Ueber Entfernungen haben sie Anfangs gar kein Urtheil,
+sondern greifen nach Allem. Einer konnte, als er sein Haus
+von außen sah, nicht glauben, daß alle die großen Zimmer
+in dem kleinen Dinge da seyn sollten. Ein Anderer war
+hocherfreut, als er, mehrere Wochen nach der Operation,
+die Entdeckung machte, daß die Kupferstiche an der Wand
+allerlei Gegenst¨ande vorstellten. Im Morgenblatt vom 23.
+October 1817 steht Nachricht von einem Blindgeborenen,
+der im 17. Lebensjahre das Gesicht erhielt. Er mußte das
+verst¨andige Anschauen erst lernen, erkannte keinen ihm
+vorher durch das Getast bekannten Gegenstand sehend
+wieder, hielt daher Ziegen f¨ur Menschen u.s.w. Der Tast-
+sinn mußte dem Gesichtssinn erst jeden einzelnen Gegen-
+stand bekannt machen. So auch hatte er gar kein Urtheil
+¨uber die Entfernungen der gesehenen Objekte, sondern
+griﬀnach Allem. — Franz, in seinem Buche: The eye:
+a treatise on the art of preserving this organ in healthy
+condition, and of improving the sight (London, Churchill
+1839) sagt pag. 34-36: “A deﬁnite idea of distance, as well
+as of form and size, is only obtained by sight and touch,
+and by reﬂecting on the impressions made on both senses;
+but for this purpose we must take into account the mus-
+cular motion and voluntary locomotion of the individual.
+— Caspar Hauser4, in a detailed account of his own expe-
+rience in this respect states, that upon his ﬁrst liberation
+from conﬁnement, whenever he looked through the window
+upon external objects, such as the street, garden etc., it
+appeared to him as if there were a shutter quite close to
+his eye, and covered with confused colours of all kinds, in
+which he could recognise or distinguish nothing singly. He
+says farther, that he did not convince himself till after so-
+me time during his walks out of doors, that what had at
+ﬁrst appeared to him as a shutter of various colours, as
+well as many other objects, were in reality very diﬀerent
+things; and that at length the shutter disappeared, and he
+saw and recognised all things in their just proportions. Per-
+sons born blind who obtain their sight by an operation in
+later years only, sometimes imagine that all objects touch
+their eyes, and lie so near to them that they are afraid of
+stumbling against them; sometimes they leap towards the
+moon, supposing that they can lay hold of it; at other times
+they run after the clouds moving along the sky, in order to
+catch them, or commit other such extravagancies.... Since
+ideas are gained by reﬂection upon sensation, it is further
+necessary in all cases, in order that an accurate idea of
+objects may be formed from the sense of sight, that the po-
+wers of the mind should be unimpaired, and undisturbed in
+their exercise. A proof of this is aﬀorded in the instance
+related by Haslam5, of a boy who had no defect of sight, but
+was weak in understanding, and who in his seventh year
+was unable to estimate the distances of objects, especially
+as to height; he would extend his hand frequently towards
+a nail on the ceiling, or towards the moon, to catch it. It
+ist therefore the judgment which corrects and makes clear
+this idea, or perception of visible objects.”
+Physiologische Best¨atigung erh¨alt die hier dargelegte In-
+tellektualit¨at der Anschauung durch Flourens: De la vie et
+de l’intelligence (Deuxi`eme ´edition, Paris, Garnier Fr`eres,
+1858). Pag. 49, unter der Ueberschrift: Opposition entre
+les tubercules et les lobes c´er´ebraux, sagt Flourens: “Il faut
+faire une grande distinction entre les sens et l’intelligence.
+L’ablation d’un tubercule d´etermine la perte de la sensa-
+tion, du sens de la vue; la r´etine devient insensible, l’iris
+devient immobile. L’ablation d’un lobe c´er´ebral laisse la
+sensation, le sens, la sensibilit´e de la r´etine, la mobilit´e de
+l’iris; elle ne d´etruit que la perception seule. Dans un cas,
+c’est un fait sensorial;’et, dans l’autre, un fait c´er´ebral;
+dans un cas, c’est la perte du sens; dans l’autre, c’est la
+perte de la perception. La distinction des perceptions et des
+sensations est encore un grand r´esultat; et il est d´emontr´e
+aux yeux. Il y a deux moyens de faire perdre la vision par
+4 Feuerbach’s Caspar Hauser — Beispiel eines Verbrechens am
+Seelenleben eines Menschen, Anspach, 1832. pag 79, etc.
+5 Haslam’s Observations on Madness and Melancholy, 2. Ed. p.
+192.
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+31
+l’enc´ephale: 1◦par les tubercules, c’est la perte du sens, de
+la sensation; 2◦par les lobes, c’est la perte de la perception,
+de l’intelligence. La sensibilit´e n’est donc pas l’intelligence,
+penser n’est donc pas sentir; et voil`a toute une Philoso-
+phie renvers´ee. L’id´ee n’est donc pas la Sensation; et voil`a
+encore une autre preuve du vice radical de cette Philoso-
+phie.” Ferner sagt Flourens pag. 77 unter der Ueberschrift:
+S´eparation de la Sensibilit´e et de la Perception: “Il y a une
+de mes exp´eriences qui s´epare nettement la sensibilit´e de
+la perception. Quand on enl`eve le cerveau proprement dit
+(lobes ou h´emisph`eres c´er´ebraux) `a un animal, l’animal
+perd la vue. Mais, par rapport a l’oeil, rien n’est chang´e:
+les objets continuent a se peindre sur la r´etine; l’iris reste
+contractile, le nerf optique sensible, parfaitement sensible.
+Et cependant l’animal ne voit plus; il n’y a plus vision,
+quoique tout ce qui est Sensation subsiste; il n’y a plus vi-
+sion, parce qu’il n’y a plus perception. Le percevoir, et non
+le sentir, est donc le premier ´el´ement de l’ intelligence. La
+perception est partie de l’ intelligence, car elle se perd avec
+l’ intelligence, et par l’ablation du mˆeme organe, les lobes
+ou h´emisph`eres c´er´ebraux; et la sensibilit´e rien est point
+partie, puisqu’elle subsiste apr`es la perte de’l’ intelligence
+et l’ablation des lobes ou h´emisph`eres.”
+Daß die Intellektualit¨at der Anschauung im Allgemei-
+nen schon von den Alten eingesehn wurde, bezeugt der
+ber¨uhmte Vers des alten Philosophen Epicharmus: Νους
+ηορˆε και νους ακουει τ΄ αλλα κˆοπηα και τψπηλα. Plutarch,
+der ihn (de sollert. animal: c.3) anf¨uhrt, setzt hinzu: ηˆος
+του περι τα ομματα και ˆοτα πατηους, αν μˆε παρˆε το πηρονουν,
+αιστηˆεσιν ου ποιουντος (quia aﬀectio oculorum et aurium
+nullum aﬀert sensum, intelligentia absente), und sagt kurz
+zuvor: Στρατˆονος του πηψσικου λογος εστιν, αποδεικνψˆον
+ηˆος ουδ΄ αιστηανεστηαι τοπαραπαν ανευ του νοειν ηψπαρςηει
+(Stratonis physici exstat ratiocinatio, qua ‘sine intelligen-
+tia sentiri omnino nihil posse demonstrat). Bald darauf
+aber sagt er:
+ηοτηεν ανανκˆε, πασιν, ηοις το αιστηανεστ-
+ηαι, και το νοειν ηψπαρςηειν, ει τˆο νοειν αιστηανεστηαι πε-
+πηψκαμεν (quare necesse est, omnia, quae sentiunt, eti-
+am intelligere, siquidem intelligendo demum sentiamus).
+Hiemit w¨are denn wieder ein Vers des selben Epicharmus
+in Verbindung zu setzen, den Diogenes Laertius (III, 16)
+anf¨uhrt:
+Ευμαιε, το σοπηον εστιν ου κατη΄ ηεν μονον,
+αλλ΄ ηοσα περ ζˆε, παντα και γνˆομαν εςηει.
+(Eumaee, sapientia non uni tantum competit, sed’ quae-
+cunque vivunt etiam intellectum habent.) Auch Porphyrius
+(de abstinentia, III, 21) ist bem¨uht, ausf¨uhrlich darzut-
+hun, daß alle Thiere Verstand haben.
+Daß nun Diesem so sei, folgt aus der Intellektualit¨at
+der Anschauung nothwendig. Alle Thiere, bis zum nied-
+rigsten herab, m¨ussen Verstand, d.h. Erkenntniß des Kau-
+salit¨atsgesetzes, haben, wenn auch in sehr verschiedenem
+Grade der Feinheit und Deutlichkeit; aber stets wenig-
+stens so viel, wie zur Anschauung mit ihren Sinnen er-
+fordert ist: denn Empﬁndung ohne Verstand w¨are nicht
+nur ein unn¨utzes, sondern ein grausames Geschenk der
+Natur. Den Verstand der obern Thiere wird Keiner, dem
+es nicht selbst daran gebricht, in Zweifel ziehn. Aber auch
+daß ihre Erkenntniß der Kausalit¨at wirklich a priori und
+nicht bloß aus der Gewohnheit, Dies auf Jenes folgen zu
+sehn, entsprungen ist, tritt bisweilen unleugbar hervor. Ein
+ganz junger Hund springt nicht vom Tisch herab, weil er
+die Wirkung anticipirt. Vor Kurzem hatte ich in meinem
+Schlafzimmer große, bis zur Erde herabreichende Fenster-
+gardinen anbringen lassen, von der Art, die in der Mitte
+auseinanderf¨ahrt, wenn man eine Schnur zieht: als ich nun
+Dies zum ersten Mal, Morgens beim Aufstehn, ausf¨uhrte,
+bemerkte ich, zu meiner Ueberraschung, daß mein sehr
+kluger Pudel ganz verwundert dastand und sich, aufw¨arts
+und seitw¨arts, nach der Ursache des Ph¨anomens umsah,
+also die Ver¨anderung suchte, von der er a priori wußte,
+daß sie vorhergegangen seyn m¨usse: das Selbe wiederholte
+sich noch am folgenden Morgen. — Aber auch die unter-
+sten Thiere, sogar noch der Wasserpolyp, ohne gesonderte
+Sinneswerkzeuge, wann er, auf seiner Wasserpﬂanze, um in
+helleres Licht zu kommen, mit seinen Armen sich anklam-
+mernd, von Blatt zu Blatt wandert, hat Wahrnehmung,
+folglich Verstand.
+Und von diesem untersten Verstande ist der des Men-
+schen, den wir jedoch von dessen Vernunft deutlich son-
+dern, nur dem Grade nach verschieden; w¨ahrend alle
+dazwischen liegenden Stufen von der Reihe der Thie-
+re ausgef¨ullt werden, deren oberste Glieder, also Aﬀe,
+Elephant, Hund, uns durch ihren Verstand in Erstau-
+nen setzen. Aber immer und immer besteht die Leistung
+des Verstandes in unmittelbarem Auﬀassen der kausalen
+Verh¨altnisse, zuerst, wie gezeigt, zwischen dem eigenen
+Leib und den andern K¨orpern, woraus die objektive An-
+schauung hervorgeht; dann zwischen diesen objektiv an-
+geschauten K¨orpern unter einander, wo nun, wie wir im
+vorigen § gesehn haben, das Kausalit¨atsverh¨altniß unter
+drei verschiedenen Formen auftritt, n¨amlich als Ursache,
+als Reiz und als Motiv, nach welchen Dreien sodann alle
+Bewegung auf der Welt vorgeht und vom Verstande al-
+lein verstanden wird. Sind es nun, von jenen Dreien, die
+Ursachen, im engsten Sinne, denen er nachsp¨urt; dann
+schaﬀt er Mechanik, Astronomie, Physik, Chemie, und er-
+ﬁndet Maschinen, zum Heil und zum Verderben: stets aber
+liegt allen seinen Entdeckungen, in letzter Instanz, ein un-
+mittelbares intuitives Auﬀassen der urs¨achlichen Verbin-
+dung zum Grunde. Denn dieses ist die alleinige Form und
+Funktion des Verstandes, keineswegs aber das komplicirte
+R¨aderwerk der zw¨olf Kantischen Kategorien, deren Nich-
+tigkeit ich nachgewiesen habe. — Alles Verstehn ist ein un-
+mittelbares und daher intuitives Auﬀassen des Kausalzu-
+sammenhangs, obwohl es sogleich in abstrakte Begriﬀe ab-
+gesetzt werden muß, um ﬁxirt zu werden. Daher ist Rech-
+nen nicht Verstehn und liefert an sich kein Verst¨andniß
+der Sachen. Dies erh¨alt man nur auf dem Wege der An-
+schauung, durch richtige Erkenntniß der Kausalit¨at und
+geometrische Konstruktion des Hergangs; wie solche Eu-
+ler besser als irgend jemand gegeben hat; weil er die Sa-
+chen von Grund aus verstand. Das Rechnen hingegen hat
+es mit lauter abstrakten Gr¨oßenbegriﬀen zu thun, deren
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+32
+Verh¨altniß zu einander es feststellt. Dadurch erlangt man
+nie das mindeste Verst¨andniß eines physischen Vorgangs.
+Denn zu einem solchen ist erfordert anschauliche Auﬀas-
+sung der r¨aumlichen Verh¨altnisse, mittelst welcher die Ur-
+sachen wirken. Das Rechnen bestimmt das Wieviel und
+Wiegroß, ist daher zur Praxis unentbehrlich. Sogar kann
+man sagen: wo das Rechnen anf¨angt, h¨ort das Verstehn
+auf: denn der mit Zahlen besch¨aftigte Kopf ist, w¨ahrend
+er rechnet, dem kausalen Zusammenhang und der geome-
+trischen Konstruktion des physischen Hergangs g¨anzlich
+entfremdet: er steckt in lauter abstrakten Zahlenbegrif-
+fen. Das Resultat aber besagt nie mehr, als Wieviel; nie
+Was. Mit l’experience et le calcul, diesem Waidspruch der
+franz¨osischen Physiker, reicht man also keineswegs aus. —
+Sind hingegen die Reize der Leitfaden des Verstandes; so
+wird er Physiologie der Pﬂanzen und Thiere, Therapie und
+Toxikologie zu Stande bringen. Hat er endlich sich auf die
+Motivation geworfen; dann wird er entweder sie bloß theo-
+retisch zum Leitfaden gebrauchen, um Moral, Rechtslehre,
+Geschichte, Politik, auch dramatische und epische Poesie,
+zu Tage zu f¨ordern; oder aber sich ihrer praktisch bedie-
+nen, entweder bloß um Thiere abzurichten, oder sogar um
+das Menschengeschlecht nach seiner Pfeife tanzen zu las-
+sen, nachdem er gl¨ucklich an jeder Puppe das F¨adchen
+herausgefunden hat, an welchem gezogen sie sich beliebig
+bewegt. Ob er nun die Schwere der K¨orper, mittelst der
+Mechanik, zu Maschinen so klug benutzt, daß ihre Wir-
+kung, gerade zu rechter Zeit eintretend, seiner Absicht in
+die H¨ande spielt; oder ob er eben so die gemeinsamen,
+oder die individuellen Neigungen der Menschen zu sei-
+nen Zwecken ins Spiel versetzt, ist, hinsichtlich der dabei
+th¨atigen Funktion, das Selbe. In dieser praktischen An-
+wendung nun wird der Verstand Klugheit, und, wenn sie
+mit Ueberlistung Anderer geschieht, Schlauheit genannt,
+auch wohl, wenn seine Zwecke sehr geringf¨ugig sind, Pﬁf-
+ﬁgkeit, auch, wenn sie mit dem Nachtheil Anderer ver-
+kn¨upft sind, Verschmitztheit. Hingegen heißt er im bloß
+theoretischen Gebrauch Verstand schlechtweg, in den ho-
+hem Graden aber alsdann Scharfsinn, Einsicht, Sagacit¨at,
+Penetration; sein Mangel hingegen Stumpfheit, Dumm-
+heit, Pinselhaftigkeit u.s.w. Diese h¨ochst verschiedenen
+Grade seiner Sch¨arfe sind angeboren und nicht zu erler-
+nen; wiewohl Uebung und Kenntniß des Stoﬀs ¨uberall zur
+richtigen Handhabung erfordert sind; wie wir dies ja selbst
+an seiner ersten Anwendung, also an der empirischen An-
+schauung, gesehn haben, Vernunft hat jeder Tropf: giebt
+man ihm die Pr¨amissen, so vollzieht er den Schluß. Aber
+der Verstand liefert die prim¨are Erkenntniß, folglich die
+intuitive, und da liegen die Unterschiede. Demgem¨aß ist
+auch der Kern jeder großen Entdeckung, wie auch jedes
+welthistorischen Plans, das Erzeugniß eines gl¨ucklichen
+Augenblicks, in welchem, durch Gunst ¨außerer und innerer
+Umst¨ande, dem Verstande komplicirte Kausalreihen, oder
+verborgene Ursachen tausend Mal gesehener Ph¨anomene,
+oder nie betretene, dunkle Wege, sich pl¨otzlich erhellen.
+—
+Durch die obigen Auseinandersetzungen der Vorg¨ange
+beim Tasten und Sehn ist unwidersprechlich dargethan,
+daß die empirische Anschauung im Wesentlichen das Werk
+des Verstandes ist, dem dazu die Sinne nur den, im Gan-
+zen ¨armlichen Stoﬀ, in ihren Empﬁndungen, liefern; so daß
+er der werkbildende K¨unstler ist, sie nur die das Material
+darreichenden Handlanger. Durchweg aber besteht dabei
+sein Verfahren im Uebergehn von gegebenen Wirkungen
+zu ihren Ursachen, welche, eben erst dadurch, sich als Ob-
+jekte im Raume darstellen. Die Voraussetzung dazu ist
+das Gesetz der Kausalit¨at, welches eben deshalb vom Ver-
+stande selbst hinzugebracht seyn muß; da es nimmermehr
+ihm von außen hat kommen k¨onnen. Ist es doch die erste
+Bedingung aller empirischen Anschauung, diese aber die
+Form in der alle ¨außere Erfahrung auftritt: wie also sollte
+es erst aus der Erfahrung gesch¨opft seyn, deren wesentliche
+Voraussetzung es selbst ist? — Eben weil es Dies schlech-
+terdings nicht kann, Locke’s Philosophie aber alle Aprio-
+rit¨at aufgehoben hatte, leugnete Hume die ganze Realit¨at
+des Kausalit¨atsbegriﬀes. Dabei erw¨ahnte schon er (im 7ten
+seiner essays on human understanding) zwei falsche Hypo-
+thesen, die man in unsern Tagen wieder vorgebracht hat:
+die eine, daß die Wirkung des Willens auf die Glieder des
+Leibes; die andere, daß der Widerstand, den die K¨orper
+unserm Druck gegen sie entgegensetzen, der Ursprung und
+Prototyp des Kausalit¨atsbegriﬀes sei. Hume widerlegt Bei-
+des in seiner Weise und seinem Zusammenhang. Ich aber
+so: zwischen dem Willensakt und der Leibesaktion ist gar
+kein Kausalzusammenhang; sondern Beide sind unmittel-
+bar Eins und das Selbe, welches doppelt wahrgenommen
+wird: ein Mal im Selbstbewußtseyn, oder innern Sinn, als
+Willensakt; und zugleich in der ¨außern, r¨aumlichen Ge-
+hirnanschauung, als Leibesaktion. (Vergl. Welt als Wille
+und Vorstellung.) — Die zweite Hypothese ist falsch, erst-
+lich weil, wie oben ausf¨uhrlich gezeigt, eine bloße Empﬁn-
+dung des Tastsinnes noch gar keine objektive Anschau-
+ung, geschweige den Kausalit¨atsbegriﬀliefert: nie kann
+dieser bloß aus dem Gef¨uhl einer verhinderten Leibesan-
+strengung hervorgehn, die ja auch oft ohne ¨außere Ursa-
+che eintritt; und zweitens, weil unser Dr¨angen gegen einen
+¨außern Gegenstand, da es ein Motiv haben muß, schon die
+Wahrnehmung desselben, diese aber die Erkenntniß der
+Kausalit¨at, voraussetzt. — Die Unabh¨angigkeit des Kau-
+salit¨atsbegriﬀes von aller Erfahrung konnte aber gr¨undlich
+nur dadurch dargethan werden, daß die Abh¨angigkeit al-
+ler Erfahrung, ihrer ganzen M¨oglichkeit nach, von ihm,
+nachgewiesen wurde; wie ich Dies im Obigen geleistet ha-
+be. Daß Kants in der selben Absicht aufgestellter Beweis
+falsch ist, werde ich §23 darthun.
+Hier ist auch der Ort darauf aufmerksam zu machen,
+daß Kant die Vermittelung der empirischen Anschau-
+ung durch das uns vor aller Erfahrung bewußte Kausa-
+lit¨atsgesetz entweder nicht eingesehn, oder, weil es zu sei-
+nen Absichten nicht paßte, geﬂissentlich umgangen hat. In
+der Kritik d. rein. Vern. kommt das Verh¨altniß der Kau-
+salit¨at zur Anschauung nicht in der Elementarlehre, son-
+dern an einem Orte, wo man es nicht suchen w¨urde, zur
+Sprache, n¨amlich im Kapitel von den Paralogismen der
+reinen Vernunft, und zwar in der Kritik des vierten Para-
+logismus der transscendentalen Psychologie, in der ersten
+
+
+§21 Apriorit¨at des Kausalit¨atsbegriﬀes. . .
+33
+Auﬂage allein, S. 367 ﬀ. Schon daß er jener Er¨orterung
+diese Stelle angewiesen, zeigt an, daß er, bei Betrachtung
+jenes Verh¨altnisses, immer nur den Uebergang von der Er-
+scheinung zum Dinge an sich, nicht aber das Entstehn der
+Anschauung selbst im Auge gehabt hat. Demgem¨aß sagt er
+hier, daß das Daseyn eines wirklichen Gegenstandes außer
+uns nicht geradezu in der Wahrnehmung gegeben sei, son-
+dern als ¨außere Ursache derselben hinzugedacht und also
+geschlossen werden k¨onne. Allein wer Dies thut, ist ihm ein
+transscendentaler Realist, mithin auf dem Irrwege begrif-
+fen. Denn unter dem “¨außern Gegenstande” versteht Kant
+hier schon das Ding an sich. Der transscendentale Idea-
+list hingegen bleibt bei der Wahrnehmung eines empirisch
+Realen, d.h. im Raume außer uns Vorhandenen, stehn, oh-
+ne, um ihr Realit¨at zu geben, erst auf eine Ursache dersel-
+ben schließen zu m¨ussen. Die Wahrnehmung ist n¨amlich,
+bei Kant, etwas ganz Unmittelbares, welches ohne alle
+Beih¨ulfe des Kausalnexus, und mithin des Verstandes, zu
+Stande kommt: er identiﬁcirt sie geradezu mit der Emp-
+ﬁndung. Dies belegt a.a.O. die Stelle S. 371: “Ich habe, in
+Absicht auf die Wirklichkeit ¨außerer Gegenst¨ande, eben so
+wenig n¨othig” u.s.w., wie auch, S. 372, diese: “Man kann
+zwar einr¨aumen, daß”, u.s.w., Aus diesen Stellen geht voll-
+kommen deutlich hervor, daß bei ihm die Wahrnehmung
+¨außerer Dinge im Raum aller Anwendung des Kausalgeset-
+zes vorherg¨angig ist, dieses also nicht in jene, als Element
+und Bedingung derselben, eingeht: die bloße Sinnesemp-
+ﬁndung ist ihm sofort Wahrnehmung. Bloß sofern man
+nach Dem, was, im transscendentalen Sinne verstanden,
+außer uns seyn mag, also nach dem Dinge an sich selbst
+fr¨agt, kommt bei der Anschauung die Kausalit¨at zur Spra-
+che. Kant nimmt ferner das Kausalgesetz als allein in der
+Reﬂexion, also in abstrakter, deutlicher Begriﬀserkennt-
+niß vorhanden und m¨oglich an, hat daher keine Ahndung
+davon, daß die Anwendung desselben aller Reﬂexion vor-
+hergeht, was doch oﬀenbar der Fall ist, namentlich bei der
+empirischen Sinnesanschauung, als welche außerdem nim-
+mermehr zu Stande k¨ame; wie Dies meine obige Analyse
+derselben unwiderleglich beweist. Daher muß denn Kant
+das Entstehn der empirischen Anschauung ganz unerkl¨art
+lassen: sie ist, bei ihm, wie durch ein Wunder gegeben,
+bloß Sache der Sinne, f¨allt also mit der Empﬁndung zu-
+sammen. Ich w¨unsche sehr, daß der denkende Leser die
+angef¨uhrte Stelle Kants nachsehe, damit ihm einleuchte,
+wie sehr viel richtiger meine Auﬀassung des ganzen Zu-
+sammenhanges und Herganges ist. Jene ¨außerst fehlerhaf-
+te Kantische Ansicht hat seitdem in der philosophischen
+Litteratur immer fortbestanden, weil Keiner sich getrau-
+te, sie anzutasten, und ich habe hier zuerst aufzur¨aumen
+gehabt, welches n¨othig war, um Licht in den Mechanismus
+unsers Erkennens zu bringen.
+Uebrigens hat, durch meine Berichtigung der Sache, die
+von Kant aufgestellte idealistische Grundansicht durchaus
+nichts verloren; ja, sie hat vielmehr gewonnen; sofern bei
+mir die Forderung des Kausalgesetzes in der empirischen
+Anschauung, als ihrem Produkt, aufgeht und erlischt, mit-
+hin nicht ferner geltend gemacht werden kann zu einer
+v¨ollig transscendenten Frage nach dem Ding an sich. Sehn
+wir n¨amlich auf meine obige Theorie der empirischen An-
+schauung zur¨uck; so ﬁnden wir, daß das erste Datum zu
+derselben, die Sinnesempﬁndung, ein durchaus Subjekti-
+ves, ein Vorgang innerhalb des Organismus, weil unter der
+Haut, ist. Daß diese Empﬁndungen der Sinnesorgane, auch
+angenommen, daß ¨außere Ursachen sie anregen, dennoch
+mit der Beschaﬀenheit dieser durchaus keine Aehnlichkeit
+haben k¨onnen, — der Zucker nicht mit der S¨uße, die Rose
+nicht mit der R¨othe, — hat schon Locke ausf¨uhrlich und
+gr¨undlich dargethan. Allein auch daß sie nur ¨uberhaupt
+eine ¨außere Ursache haben m¨ussen, beruht auf einem Ge-
+setze, dessen Ursprung nachweislich in uns, in unserm Ge-
+hirn liegt, ist folglich zuletzt nicht weniger subjektiv, als
+die Empﬁndung selbst. Ja, die Zeit, diese erste Bedingung
+der M¨oglichkeit jeder Ver¨anderung, also auch der, auf de-
+ren Anlaß die Anwendung des Kausalit¨atsbegriﬀs erst ein-
+treten kann; nicht weniger der Raum, welcher das Nach-
+Außen-verlegen einer Ursache, die sich darauf als Objekt
+darstellt, allererst m¨oglich macht, ist, wie Kant sicher dar-
+gethan hat, eine subjektive Form des Intellekts. Wir ﬁnden
+demnach s¨ammtliche Elemente der empirischen Anschau-
+ung in uns liegend und nichts darin enthalten, was auf
+etwas schlechthin von uns Verschiedenes, ein Ding an sich
+selbst, sichere Anweisung g¨abe. — Aber noch mehr: un-
+ter dem Begriﬀder Materie denken wir Das, was von den
+K¨orpern noch ¨ubrig bleibt, wenn wir sie von ihrer Form
+und allen ihren speciﬁschen Qualit¨aten entkleiden, welches
+eben deshalb in allen K¨orpern ganz gleich, Eins und das
+Selbe seyn muß. Jene von uns aufgehobenen Formen und
+Qualit¨aten nun aber sind nichts Anderes, als die besonde-
+re und speciell bestimmte Wirkungsart der K¨orper, welche
+eben die Verschiedenheit derselben ausmacht. Daher ist,
+wenn wir davon absehn, das dann noch Uebrigbleibende
+die bloße Wirksamkeit ¨uberhaupt, das reine Wirken als sol-
+ches, die Kausalit¨at selbst, objektiv gedacht, — also der
+Widerschein unsers eigenen Verstandes, das nach außen
+projicirte Bild seiner alleinigen Funktion, und die Mate-
+rie ist durch und durch lautere Kausalit¨at: ihr Wesen ist
+das Wirken ¨uberhaupt. (Vergl. Welt als W. und V. Bd.
+I § 4, S. 9; u. Bd. 2 S. 48, 49) Daher eben l¨aßt die rei-
+ne Materie sich nicht anschauen, sondern bloß denken: sie
+ist ein zu jeder Realit¨at als ihre Grundlage Hinzugedach-
+tes. Denn reine Kausalit¨at, bloßes Wirken, ohne bestimm-
+te Wirkungsart, kann nicht anschaulich gegeben werden,
+daher in keiner Erfahrung vorkommen. — Die Materie ist
+also nur das objektive Korrelat des reinen Verstandes, ist
+n¨amlich Kausalit¨at ¨uberhaupt und sonst nichts; so wie die-
+ser das unmittelbare Erkennen von Ursache und Wirkung
+¨uberhaupt und sonst nichts ist. Eben dieserhalb nun wie-
+der kann auf die Materie selbst das Gesetz der Kausa-
+lit¨at keine Anwendung ﬁnden: d.h. sie kann weder ent-
+stehn, noch vergehn, sondern ist und beharrt. Denn da al-
+ler Wechsel der Accidenzien (Formen und Qualit¨aten), d.i.
+alles Entstehn und Vergehn, nur verm¨oge der Kausalit¨at
+eintritt, die Materie aber die reine Kausalit¨at als solche,
+objektiv aufgefaßt, selbst ist; so kann sie ihre Macht nicht
+an sich selbst aus¨uben; wie das Auge Alles, nur nicht sich
+selbst sehn kann. Da ferner “Substanz” identisch ist mit
+Materie; so kann man sagen: Substanz ist das Wirken in
+
+
+§23 Bestreitung des von Kant aufgestellten Beweises. . .
+34
+abstracto aufgefaßt; Accidenz die besondere Art des Wir-
+kens, das Wirken in concreto. — Dies sind nun also die
+Resultate, zu denen der wahre, d.i. der transscendentale
+Idealismus leitet. Daß wir zum Dinge an sich selbst, d.i.
+dem ¨uberhaupt auch außer der Vorstellung Existirenden,
+nicht auf dem Wege der Vorstellung gelangen k¨onnen, son-
+dern dazu einen ganz andern, durch das Innere der Din-
+ge f¨uhrenden Weg, der uns gleichsam durch Verrath die
+Festung ¨oﬀnet, einschlagen m¨ussen, habe ich durch mein
+Hauptwerk dargethan. —
+Wenn man aber etwan die hier gegebene, ehrliche und
+tief gr¨undliche Auﬂ¨osung der empirischen Anschauung in
+ihre Elemente, welche sich s¨ammtlich als subjektiv erge-
+ben, vergleichen, oder gar identiﬁciren wollte mit Fich-
+tes algebraischen Gleichungen zwischen Ich und Nicht-Ich,
+mit seinen sophistischen Scheindemonstrationen, die der
+H¨ulle der Unverst¨andlichkeit, ja des Unsinns bedurften,
+um den Leser zu t¨auschen, mit den Darlegungen, wie das
+Ich das Nicht-Ich aus sich selbst herausspinnt, kurz, mit
+s¨ammtlichen Possen der Wissenschaftsleere; so w¨urde Dies
+eine oﬀenbare Schikane und nichts weiter seyn. Gegen alle
+Gemeinschaft mit diesem Fichte protestire ich, so gut wie
+Kant ¨oﬀentlich und ausdr¨ucklich in einer Anzeige ad hoc
+in der Jena’schen Litteratur-Zeitung dagegen protestirt
+hat. (Kant: “Erkl¨arung ¨uber Fichtes Wissenschaftsleh-
+re”, im Intelligenzblatt der Jena’schen Litteratur-Zeitung,
+1799, Nr. 109.) M¨ogen immerhin Hegelianer und ¨ahnliche
+Ignoranten von einer Kant-Fichte’schen Philosophie reden:
+es giebt eine Kantische Philosophie und eine Fichte’sche
+Windbeutelei, — das ist das wahre Sachverh¨altniß und
+wird es bleiben, trotz allen Pr¨akonen des Schlechten und
+Ver¨achtern des Guten, an denen das Deutsche Vaterland
+reicher ist, als irgend ein anderes.
+§22
+Vom unmittelbaren Objekt
+Die Sinnesempﬁndungen des Leibes also sind es, welche
+die Data zur allerersten Anwendung des Kausalgesetzes
+abgeben, aus welcher eben dadurch die Anschauung die-
+ser Klasse von Objekten entsteht, die folglich ihr Wesen
+und Daseyn nur verm¨oge und in der Aus¨ubung der also
+eingetretenen Verstandesfunktion hat.
+Insofern nun der organische Leib der Ausgangspunkt
+f¨ur die Anschauung aller andern Objekte, also das diese
+Vermittelnde ist, hatte ich ihn, in der ersten Auﬂage die-
+ser Abhandlung, das unmittelbare Objekt genannt; welcher
+Ausdruck jedoch nur in sehr uneigentlichem Verstande gel-
+ten kann. Denn, obwohl die Wahrnehmung seiner Empﬁn-
+dungen eine schlechthin unmittelbare ist; so stellt doch er
+selbst sich dadurch noch gar nicht als Objekt dar; sondern
+soweit bleibt Alles noch subjektiv, n¨amlich Empﬁndung.
+Von dieser geht die Anschauung der ¨ubrigen Objekte, als
+Ursachen solcher Empﬁndungen, allerdings aus, worauf je-
+ne sich als Objekte darstellen; nicht aber er selbst: denn er
+liefert hiebei dem Bewußtsein bloße Empﬁndungen. Ob-
+jektiv, also als Objekt, wird auch er allein mittelbar er-
+kannt, indem er, gleich allen andern Objekten, sich im
+Verstande, oder Gehirn (welches Eins ist), als erkannte
+Ursache subjektiv gegebener Wirkung und eben dadurch
+objektiv darstellt; welches nur dadurch geschehn kann, daß
+seine Theile auf seine eigenen Sinne wirken, also das Au-
+ge den Leib sieht, die Hand ihn betastet, u.s.f., als auf
+welche Data das Gehirn, oder Verstand, auch ihn, gleich
+andern Objekten, seiner Gestalt und Beschaﬀenheit nach,
+r¨aumlich konstruirt. — Die unmittelbare Gegenwart der
+Vorstellungen dieser Klasse im Bewußtseyn h¨angt dem-
+nach ab von der Stellung, welche sie, in der Alles verbin-
+denden Verkettung der Ursachen und Wirkungen, zu dem
+jedesmaligen Leibe des Alles erkennenden Subjekts erhal-
+ten.
+§23
+Bestreitung des von Kant auf-
+gestellten Beweises der Aprio-
+rit¨at des Kausalit¨atsbegriffes
+Die Darlegung der Allgemeing¨ultigkeit des Gesetzes der
+Kausalit¨at f¨ur alle Erfahrung, seiner Apriorit¨at und sei-
+ner eben aus dieser folgenden Beschr¨ankung auf die
+M¨oglichkeit der Erfahrung ist ein Hauptgegenstand der
+Kritik der reinen Vernunft. Jedoch kann ich dem daselbst
+gegebenen Beweis der Apriorit¨at des Satzes nicht bei-
+stimmen. Er ist im Wesentlichen folgender: “Die zu al-
+ler empirischen Kenntniß n¨othige Synthesis des Mannig-
+faltigen durch die Einbildungskraft giebt Succession, aber
+noch keine bestimmte: d.h. sie l¨aßt unbestimmt, welcher
+von zwei wahrgenommenen Zust¨anden, nicht nur in mei-
+ner Einbildungskraft, sondern im Objekt, vorausgehe. Be-
+stimmte Ordnung aber dieser Succession, durch welche al-
+lein das Wahrgenommene Erfahrung wird, d.h. zu objek-
+tiv g¨ultigen Urtheilen berechtigt, kommt erst hinein durch
+den reinen Verstandesbegriﬀvon Ursache und Wirkung.
+Also ist der Grundsatz des Kausalverh¨altnisses Bedingung
+der M¨oglichkeit der Erfahrung, und als solche uns a priori
+gegeben.” (Siehe Krit. d. rein. Vern., 1. Auﬂ., S. 201; 5.
+Auﬂ., S. 246.)
+Danach also soll die Ordnung der Succession der Ver-
+¨anderungen realer Objekte allererst vermittelst der Kau-
+salit¨at derselben f¨ur eine objektive erkannt werden. Kant
+wiederholt und erl¨autert diese Behauptung, in der Kritik
+der reinen Vernunft, besonders in seiner “zweiten Analo-
+gie der Erfahrung” (1. Auﬂ., S. 189; vollst¨andiger in der 5.
+Auﬂ., S. 232), sodann am Schlusse seiner “dritten Analo-
+gie”, welche Stellen ich Jeden, der das Folgende verstehn
+will, nachzulesen bitte. Er behauptet hier ¨uberall, daß die
+Objektivit¨at der Succession der Vorstellungen, welche er
+als ihre Uebereinstimmung mit der Succession realer Ob-
+jekte erkl¨art, lediglich erkannt werde durch die Regel, nach
+
+
+§23 Bestreitung des von Kant aufgestellten Beweises. . .
+35
+der sie einander folgen, d.h. durch das Gesetz der Kausa-
+lit¨at; daß also durch meine bloße Wahrnehmung das ob-
+jektive Verh¨altniß auf einander folgender Erscheinungen
+v¨ollig unbestimmt bleibe, indem ich alsdann bloß die Folge
+meiner Vorstellungen wahrnehme, die Folge in meiner Ap-
+prehension aber zu keinem Urtheil ¨uber die Folge im Ob-
+jekt berechtigt, wenn mein Urtheil sich nicht auf das Ge-
+setz der Kausalit¨at st¨utzt; indem ich außerdem, in meiner
+Apprehension, die Succession der Wahrnehmungen auch in
+ganz umgekehrter Ordnung k¨onnte gehn lassen, da nichts
+ist, was sie als objektiv bestimmt. Zur Erl¨auterung dieser
+Behauptung f¨uhrt er das Beispiel eines Hauses an, des-
+sen Theile er in jeder beliebigen Succession, z.B. von oben
+nach unten, und von unten nach oben betrachten kann,
+wo also die Bestimmung der Succession bloß subjektiv
+w¨are und in keinem Objekt begr¨undet, weil sie von seiner
+Willk¨ur abh¨angt. Und als Gegensatz stellt er die Wahr-
+nehmung eines den Strohm herabfahrenden Schiﬀes auf,
+das er zuerst oberhalb und successive immer mehr unter-
+halb des Laufs des Strohms wahrnimmt, welche Wahrneh-
+mung der Succession der Stellen des Schiﬀs er nicht ¨andern
+kann: daher er hier die subjektive Folge seiner Apprehen-
+sion ableitet von der objektiven Folge in der Erscheinung,
+die er deshalb eine Begebenheit nennt. Ich behaupte da-
+gegen, daß beide F¨alle gar nicht unterschieden sind, daß
+beides Begebenheiten sind, deren Erkenntniß objektiv ist,
+d.h. eine Erkenntniß von Ver¨anderungen realer Objekte,
+die als solche vom Subjekt erkannt werden. Beides sind
+Ver¨anderungen der Lage zweier K¨orper gegen einander.
+Im ersten Fall ist einer dieser K¨orper der eigene Leib des
+Betrachters und zwar nur ein Theil desselben, n¨amlich das
+Auge, und der andere ist das Haus, gegen dessen Theile
+die Lage des Auges successive ge¨andert wird. Im zweiten
+Fall ¨andert das Schiﬀseine Lage gegen den Strohm, also
+ist die Ver¨anderung zwischen zwei K¨orpern. Beides sind
+Begebenheiten: der einzige Unterschied ist, daß im ersten
+Fall die Ver¨anderung ausgeht vom eigenen Leibe des Be-
+obachters, dessen Empﬁndungen zwar der Ausgangspunkt
+aller Wahrnehmungen desselben sind, der jedoch nichts-
+destoweniger ein Objekt unter Objekten, mithin den Ge-
+setzen dieser objektiven K¨orperwelt unterworfen ist. Die
+Bewegung seines Leibes nach seinem Willen ist f¨ur ihn,
+sofern er sich rein erkennend verh¨alt, bloß eine empirisch
+wahrgenommene Thatsache. Die Ordnung der Succession
+der Ver¨anderung k¨onnte so gut im zweiten, wie im ersten
+Fall, umgekehrt werden, sobald nur der Betrachter eben so
+wohl die Kraft h¨atte, das Schiﬀstrohmaufw¨arts zu ziehn,
+wie die, sein Auge in einer der ersten entgegengesetzten
+Richtung zu bewegen. Denn daraus, daß die Succession der
+Wahrnehmungen der Theile des Hauses von seiner Willk¨ur
+abh¨angt, will Kant abnehmen, daß sie keine objektive und
+keine Begebenheit sei. Aber das Bewegen seines Auges in
+der Richtung vom Dach zum Keller ist eine Begebenheit
+und die entgegengesetzte vom Keller zum Dach eine zwei-
+te, so gut wie das Fahren des Schiﬀs. Es ist hier gar kein
+Unterschied; so wie, in Hinsicht auf das Begebenheitseyn
+oder nicht, kein Unterschied ist, ob ich an einer Reihe Sol-
+daten vorbeigehe, oder diese an mir: beides sind Begeben-
+heiten. Fixire ich, vom Ufer aus, den Blick auf ein diesem
+nahe vorbeifahrendes Schiﬀ; so wird es mir bald scheinen,
+daß das Ufer mit mir sich bewege und das Schiﬀstilleste-
+he: hiebei bin ich nun zwar in der Ursache der relativen
+Ortsver¨anderung irre, da ich die Bewegung einem falschen
+Objekte zuschreibe; aber die reale Succession der relativen
+Stellungen meines Leibes zum Schiﬀerkenne ich dennoch
+objektiv und richtig. Kant w¨urde auch, in dem von ihm
+aufgestellten Fall, nicht geglaubt haben, einen Unterschied
+zu ﬁnden, h¨atte er bedacht, daß sein Leib ein Objekt un-
+ter Objekten ist und daß die Succession seiner empirischen
+Anschauungen abh¨angt von der Succession der Einwirkun-
+gen anderer Objekte auf seinen Leib, folglich eine objekti-
+ve ist, d.h. unter Objekten, unmittelbar (wenn auch nicht
+mittelbar) unabh¨angig von der Willk¨ur des Subjekts, Statt
+hat, folglich sehr wohl erkannt werden kann, ohne daß die
+successive auf seinen Leib einwirkenden Objekte in einer
+Kausalverbindung unter einander stehn.
+Kant sagt: die Zeit kann nicht wahrgenommen werden:
+also empirisch l¨aßt sich keine Succession von Vorstellun-
+gen als objektiv wahrnehmen, d.h. als Ver¨anderungen der
+Erscheinungen unterscheiden von den Ver¨anderungen bloß
+subjektiver Vorstellungen. Nur durch das Gesetz der Kau-
+salit¨at, welches eine Regel ist, nach der Zust¨ande einander
+folgen, l¨aßt sich die Objektivit¨at einer Ver¨anderung er-
+kennen. Und das Resultat seiner Behauptung w¨urde seyn,
+daß wir gar keine Folge in der Zeit als objektiv wahrneh-
+men, ausgenommen die von Ursache und Wirkung, und
+daß jede andere von uns wahrgenommene Folge von Er-
+scheinungen bloß durch unsere Willk¨ur so und nicht an-
+ders bestimmt sei. Ich muß gegen alles Dieses anf¨uhren,
+daß Erscheinungen sehr wohl auf einander folgen k¨onnen,
+ohne aus einander zu erfolgen. Und Dies thut dem Ge-
+setz der Kausalit¨at keinen Abbruch. Denn es bleibt gewiß,
+daß jede Ver¨anderung Wirkung einer andern ist, da Dies
+a priori fest steht: nur folgt sie nicht bloß auf die einzige,
+die ihre Ursache ist, sondern auf alle andern, die mit jener
+Ursache zugleich sind und mit denen sie in keiner Kau-
+salverbindung steht. Sie wird nicht gerade in der Folge
+der Reihe der Ursachen von mir wahrgenommen; sondern
+in einer ganz andern, die aber deshalb nicht minder ob-
+jektiv ist und von einer subjektiven, von meiner Willk¨ur
+abh¨angigen, dergleichen z.B. die meiner Phantasmen ist,
+sich sehr unterscheidet. Das Aufeinanderfolgen in der Zeit
+von Begebenheiten, die nicht in Kausalverbindung stehn,
+ist eben was man Zufall nennt, welches Wort vom Zusam-
+mentreﬀen, Zusammenfallen, des nicht Verkn¨upften her-
+kommt: eben so το σψμβεβˆεκος von σψμβαινειν. (Vergl.
+Arist. Anal. post. I. 4.) Ich trete vor die Hausth¨ur, und
+darauf f¨allt ein Ziegel vom Dach, der mich triﬀt; so ist
+zwischen dem Fallen des Ziegels und meinem Heraustreten
+keine Kausalverbindung, aber dennoch die Succession, daß
+mein Heraustreten dem Fallen des Ziegels vorhergieng, in
+meiner Apprehension objektiv bestimmt und nicht subjek-
+tiv durch meine Willk¨ur, die sonst wohl die Succession um-
+gekehrt haben w¨urde. Eben so ist die Succession der T¨one
+einer Musik objektiv bestimmt und nicht subjektiv durch
+mich, den Zuh¨orer; aber wer wird sagen, daß die T¨one der
+Musik nach dem Gesetz von Ursache und Wirkung auf ein-
+
+
+§23 Bestreitung des von Kant aufgestellten Beweises. . .
+36
+ander folgen? Ja sogar die Succession von Tag und Nacht
+wird ohne Zweifel objektiv von uns erkannt, aber gewiß
+werden sie nicht als Ursache und Wirkung von einander
+aufgefaßt, und ¨uber ihre gemeinschaftliche Ursache war die
+Welt bis auf Kopernikus im Irrthum, ohne daß die richti-
+ge Erkenntniß ihrer Succession darunter zu leiden gehabt
+h¨atte. Hiedurch wird, beil¨auﬁg gesagt, auch Hume’s Hypo-
+these widerlegt; da die ¨alteste und ausnahmsloseste Folge
+von Tag und Nacht doch nicht, verm¨oge der Gewohnheit,
+irgend Einen verleitet hat, sie f¨ur Ursache und Wirkung
+von einander zu halten.
+Kant sagt a. a. O., daß eine Vorstellung nur dadurch
+objektive Realit¨at zeige (das heißt doch wohl von blo-
+ßen Phantasmen unterschieden werde), daß wir ihre noth-
+wendige und einer Regel (dem Kausalgesetz) unterworfe-
+ne Verbindung mit andern Vorstellungen und ihre Stelle
+in einer bestimmten Ordnung des Zeitverh¨altnisses unse-
+rer Vorstellungen erkennen. Aber von wie wenigen Vor-
+stellungen erkennen wir die Stelle, die ihnen das Kausal-
+gesetz in der Reihe der Ursachen und Wirkungen giebt!
+und doch wissen wir immer die objektiven von den sub-
+jektiven, reale Objekte von Phantasmen zu unterscheiden.
+Im Schlafe, als in welchem das Gehirn vom peripherischen
+Nervensystem und dadurch von ¨außern Eindr¨ucken isolirt
+ist, k¨onnen wir jene Unterscheidung nicht machen, daher
+wir, w¨ahrend wir tr¨aumen, Phantasmen f¨ur reale Objekte
+halten und erst beim Erwachen, d.h. dem Wiedereintritt
+der sensibeln Nerven und dadurch der Außenwelt ins Be-
+wußtseyn, den Irrthum erkennen, obgleich auch im Traum,
+so lange er nicht abbricht, das Gesetz der Kausalit¨at sein
+Recht behauptet, nur daß ihm oft ein unm¨oglicher Stoﬀ
+untergeschoben wird. Fast m¨ochte man glauben, daß Kant,
+bei obiger Stelle, unter Leibnitzens Einﬂuß gestanden hat,
+so sehr er auch sonst diesem, in seiner ganzen Philosophie,
+entgegengesetzt ist; wenn man n¨amlich beachtet, daß ganz
+¨ahnliche Aeußerungen sich in Leibnitzens Nouveaux essais
+sur l’entendement (Liv. IV, ch. 2, § 14) ﬁnden, z.B. la
+v´erit´e des choses sensibles ne consiste que dans la liaison
+des ph´enom`enes, qui doit avoir sa raison, et c’est ce qui
+les distingue des songes. — — — — Le vrai Crit´erion, en
+mati`ere des objets des sens, est la liaison des ph´enom`enes,
+qui garantit les v´erit´es de fait, a l’´egard des choses sensi-
+bles hors de nous.
+Bei diesem ganzen Beweise der Apriorit¨at und Noth-
+wendigkeit des Kausalit¨atsgesetzes, daraus, daß wir nur
+durch dessen Vermittelung die objektive Succession der
+Ver¨anderungen erkennten und es insofern Bedingung der
+Erfahrung w¨are, ist Kant oﬀenbar in einen h¨ochst wun-
+derlichen und so palpabeln Irrthum gerathen, daß der-
+selbe nur zu erkl¨aren ist als eine Folge seiner Vertiefung
+in den apriorischen Theil unserer Erkenntniß, welche ihn
+aus den Augen verlieren ließ was sonst Jeder h¨atte sehn
+m¨ussen. Den allein richtigen Beweis der Apriorit¨at des
+Kausalit¨atsgesetzes habe ich §21 gegeben. Best¨atigt wird
+dieselbe jeden Augenblick durch die unersch¨utterliche Ge-
+wißheit, mit der Jeder in allen F¨allen von der Erfahrung er-
+wartet, daß sie diesem Gesetze gem¨aß ausfalle, d.h. durch
+die Apodikticit¨at, die wir selbigem beilegen, die sich von
+jeder andern auf Induktion gegr¨undeten Gewißheit, z.B.
+der empirisch erkannter Naturgesetze, dadurch unterschei-
+det, daß es uns sogar zu denken unm¨oglich ist, daß dieses
+Gesetz irgendwo in der Erfahrungswelt eine Ausnahme lei-
+de. Wir k¨onnen uns z.B. denken , daß das Gesetz der Gra-
+vitation ein Mal aufh¨orte zu wirken, nicht aber daß dieses
+ohne eine Ursache gesch¨ahe.
+Kant in seinem Beweise ist in den, dem des Hume ent-
+gegengesetzten Fehler gerathen. Dieser n¨amlich erkl¨arte
+alles Erfolgen f¨ur bloßes Folgen: Kant hingegen will, daß
+es kein anderes Folgen gebe, als das Erfolgen. Der reine
+Verstand freilich kann allein das Erfolgen begreifen, das
+bloße Folgen aber so wenig wie den Unterschied zwischen
+rechts und links, welcher n¨amlich, eben wie das Folgen,
+bloß durch die reine Sinnlichkeit zu erfassen ist. Die Fol-
+ge der Begebenheiten in der Zeit kann allerdings (was
+Kant a. a. O. leugnet) empirisch erkannt werden, so gut
+wie das Nebeneinanderseyn der Dinge im Raum. Die Art
+aber,
+wie etwas auf ein Anderes in der Zeit ¨uberhaupt
+folge, ist so wenig zu erkl¨aren, als die Art, wie etwas aus
+einem Andern erfolge: jene Erkenntniß ist durch die rei-
+ne Sinnlichkeit, diese durch den reinen Verstand gegeben
+und bedingt. Kant aber, indem er objektive Folge der Er-
+scheinungen f¨ur bloß durch den Leitfaden der Kausalit¨at
+erkennbar erkl¨art, verf¨allt in den selben Fehler, den er (Kr.
+d. r. V., I. Auﬂ., S. 275; 5. Auﬂ., S. 331) dem Leibnitz vor-
+wirft, “daß er die Formen der Sinnlichkeit intellektuire.”
+— Ueber die Succession ist meine Ansicht diese. Aus der
+zur reinen Sinnlichkeit geh¨origen Form der Zeit sch¨opfen
+wir die Kenntniß der bloßen M¨oglichkeit der Succession.
+Die Succession der realen Objekte, deren Form eben die
+Zeit ist, erkennen wir empirisch und folglich als wirklich.
+Die Nothwendigkeit aber einer Succession zweier Zust¨ande,
+d.h. einer Ver¨anderung, erkennen wir bloß durch den Ver-
+stand, mittelst der Kausalit¨at: und daß wir den Begriﬀvon
+Nothwendigkeit einer Succession haben, ist sogar schon
+ein Beweis davon, daß das Gesetz der Kausalit¨at kein em-
+pirisch erkanntes, sondern ein uns a priori gegebenes ist.
+Der Satz vom zureichenden Grund ¨uberhaupt ist Ausdruck
+der im Innersten unsers Erkenntnißverm¨ogens liegenden
+Grundform einer nothwendigen Verbindung aller unserer
+Objekte, d.h. Vorstellungen: er ist die gemeinsame Form
+aller Vorstellungen und der alleinige Ursprung des Begrif-
+fes der Nothwendigkeit , als welcher schlechterdings keinen
+andern wahren Inhalt, noch Beleg, hat, als den des Ein-
+tritts der Folge, wenn ihr Grund gesetzt ist. Daß in der
+Klasse von Vorstellungen, die wir jetzt betrachten, wo je-
+ner Satz als Gesetz der Kausalit¨at auftritt, derselbe die
+Zeitfolge bestimmt, kommt daher, daß die Zeit die Form
+dieser Vorstellungen ist, daher denn die nothwendige Ver-
+bindung hier als Regel der Succession erscheint. In an-
+dern Gestalten des Satzes vom zureichenden Grunde wird
+uns die nothwendige Verbindung, die er ¨uberall heischt,
+in ganz andern Formen, als die Zeit, und folglich nicht
+als Succession erscheinen, aber immer den Charakter ei-
+ner nothwendigen Verbindung beibehalten, wodurch sich
+die Identit¨at des Satzes vom zureichenden Grunde in al-
+len seinen Gestalten, oder vielmehr die Einheit der Wurzel
+
+
+§24 Vom Mißbrauch des Gesetzes der Kausalit¨at
+37
+aller Gesetze, deren Ausdruck jener Satz ist, oﬀenbart.
+W¨are die angefochtene Behauptung Kants richtig, so
+w¨urden wir die Wirklichkeit der Succession bloß aus ihrer
+Nothwendigkeit erkennen: dieses w¨urde aber einen alle Rei-
+hen von Ursachen und Wirkungen zugleich umfassenden,
+folglich allwissenden Verstand voraussetzen. Kant hat dem
+Verstand das Unm¨ogliche aufgelegt, bloß um der Sinnlich-
+keit weniger zu bed¨urfen.
+Wie l¨aßt sich Kants Behauptung, daß Objektivit¨at der
+Succession allein erkannt werde aus der Nothwendigkeit
+der Folge von Wirkung auf Ursache, vereinigen mit jener
+(Kr. d. rein. V., 1. Auﬂ., S. 203; 5. Auﬂ., S. 249), daß das
+empirische Kriterium, welcher von zwei Zust¨anden Ursa-
+che und welcher Wirkung sei, bloß die Succession sei? Wer
+sieht hier nicht den oﬀenbarsten Cirkel?
+W¨urde Objektivit¨at der Succession bloß erkannt aus der
+Kausalit¨at, so w¨are sie nur als solche denkbar und w¨are
+eben nichts als diese. Denn w¨are sie noch etwas Ande-
+res, so h¨atte sie auch andere unterscheidende Merkmale,
+an denen sie erkannt werden k¨onnte, was eben Kant leug-
+net. Folglich k¨onnte man, wenn Kant Recht h¨atte, nicht
+sagen: “Dieser Zustand ist Wirkung jenes, daher folgt er
+ihm.” Sondern Folgen und Wirkungseyn w¨are Eins und
+das Selbe und jener Satz tautologisch. Auch erhielte nach
+also aufgehobenem Unterschied von Folgen und Erfolgen
+Hume wieder Recht, der alles Erfolgen f¨ur bloßes Folgen
+erkl¨arte, also ebenfalls jenen Unterschied leugnete.
+Kants Beweis w¨are also dahin einzuschr¨anken, daß wir
+empirisch bloß Wirklichkeit der Succession erkennen: da
+wir aber außerdem auch Nothwendigkeit der Succession
+in gewissen Reihen der Begebenheiten erkennen und sogar
+vor aller Erfahrung wissen, daß jede m¨ogliche Begebenheit
+in irgend einer dieser Reihen eine bestimmte Stelle haben
+m¨usse; so folgt schon hieraus die Realit¨at und Apriorit¨at
+des Gesetzes der Kausalit¨at, f¨ur welche Letztere der oben
+§21 gegebene Beweis der allein richtige ist.
+Mit Kants Lehre, daß objektive Succession nur m¨og-
+lich und erkennbar sei durch Kausalverkn¨upfung, geht eine
+andere parallel, daß n¨amlich Zugleichseyn nur m¨oglich und
+erkennbar sei durch Wechselwirkung; dargelegt in der Krit.
+d. r. V. unter dem Titel “Dritte Analogie der Erfahrung.”
+Kant geht hierin so weit, zu sagen: “daß das Zugleichseyn
+von Erscheinungen, die nicht wechselseitig auf einander
+wirkten, sondern etwan durch einen leeren Raum getrennt
+w¨urden, kein Gegenstand einer m¨oglichen Wahrnehmung
+seyn w¨urde” (Das w¨are ein Beweis a priori , daß zwischen
+den Fixsternen kein leerer Raum sei): und “daß das Licht,
+das
+zwischen unserm Auge und den Weltk¨orpern spiele
+” (welcher Ausdruck den Begriﬀunterschiebt, als wirke
+nicht nur das Licht der Sterne auf unser Auge, sondern
+auch dieses auf jene), “eine Gemeinschaft zwischen uns
+und diesen bewirke und so das Zugleichseyn der letztern
+beweise.” Dies Letztere ist sogar empirisch falsch; da der
+Anblick eines Fixsterns keineswegs beweist, daß er jetzt
+mit dem Beschauer zugleich sei; sondern h¨ochstens, daß
+er vor einigen Jahren, oft nur, daß er vor Jahrtausenden
+dagewesen. Uebrigens steht und f¨allt diese Lehre Kants
+mit jener ersteren, nur ist sie viel leichter zu durchschauen:
+zudem ist von der Nichtigkeit des ganzen Begriﬀes der
+Wechselwirkung schon oben §20 geredet worden.
+Mit dieser Bestreitung des in Rede stehenden Kanti-
+schen Beweises kann man beliebig zwei fr¨uhere Angriﬀe
+auf denselben vergleichen, n¨amlich den von Feder , in sei-
+nem Buche “¨uber Raum und Kausalit¨at”, § 29 und den
+von G. E. Schulze , in seiner Kritik der theoretischen Phi-
+losophie, Bd. 2, S. 422 fg.
+Nicht ohne große Scheu habe ich es (1813) gewagt, Ein-
+wendungen vorzubringen gegen eine haupts¨achliche, als er-
+wiesen geltende und noch in den neuesten Schriften (z.B.
+Fries, Krit. der Vernunft, Bd. 2, S. 85) wiederholte Leh-
+re jenes Mannes, dessen Tiefsinn ich bewundernd verehre
+und dem ich so Vieles und Großes verdanke, daß sein Geist
+in Homer’s Worten zu mir sagen kann:
+Αςηλψν δάυ τοι απ΄ οπητηαλμˆον ηελον, ηˆε πριν επˆεεν.
+§24
+Vom Mißbrauch des Gesetzes
+der Kausalit¨at
+Unserer bisherigen Auseinandersetzung zufolge begeht
+man einen solchen, so oft man das Gesetz der Kausalit¨at
+auf etwas Anderes, als auf Ver¨anderungen , in der uns
+empirisch gegebenen, materiellen Welt anwendet, z.B. auf
+die Naturkr¨afte, verm¨oge welcher solche Ver¨anderungen
+¨uberhaupt erst m¨oglich sind; oder auf die Materie, an der
+sie vorgehn; oder auf das Weltganze, als welchem dazu ein
+absolut objektives, nicht durch unsern Intellekt bedingtes
+Daseyn beigelegt werden muß; auch noch sonst auf man-
+cherlei Weise. Ich verweise hier auf das in der “Welt als W.
+u. V.” Bd. 2, Kap. 4, S. 42 fg. dar¨uber Gesagte. Der Ur-
+sprung solches Mißbrauchs ist allemal, theils, daß man den
+Begriﬀder Ursache, wie unz¨ahlige andere in der Metaphy-
+sik und Moral, viel zu weit faßt; theils, daß man vergißt,
+daß das Gesetz der Kausalit¨at zwar eine Voraussetzung ist,
+die wir mit auf die Welt bringen, und welche die Anschau-
+ung der Dinge außer uns m¨oglich macht, daß wir jedoch
+eben deshalb nicht berechtigt sind, einen solchen, aus der
+Vorrichtung unsers Erkenntnißverm¨ogens entspringenden
+Grundsatz auch außerdem und unabh¨angig von Letzterem
+als die f¨ur sich bestehende ewige Ordnung der Welt und
+alles Existirenden geltend zu machen.
+§25
+Die Zeit der Ver¨anderung
+Da der Satz vom zureichenden Grunde des Werdens nur
+bei Ver¨anderungen Anwendung ﬁndet, darf hier nicht un-
+erw¨ahnt bleiben, daß schon die alten Philosophen die Fra-
+ge aufgeworfen haben, in welcher Zeit die Ver¨anderung
+
+
+§25 Die Zeit der Ver¨anderung
+38
+vorgehe? sie k¨onne n¨amlich nicht Statt haben, w¨ahrend
+der fr¨uhere Zustand noch dasei, und auch nicht nach-
+dem schon der neue eingetreten: geben wir ihr aber eine
+eigene Zeit zwischen beiden; so m¨ußte, w¨ahrend dieser,
+der K¨orper weder im ersten, noch im zweiten Zustande,
+z.B. ein Sterbender weder todt, noch lebendig, ein K¨orper
+weder ruhend, noch bewegt seyn; welches absurd w¨are.
+Die Bedenklichkeiten und Spitzﬁndigkeiten hier¨uber ﬁn-
+det man zusammengestellt im Sextus Empirikus, adv. Ma-
+them. lib. IX, 267-271, et Hypot. III, c. 14 , auch etwas
+davon im Gellius, L. VI, c. 13. —
+Plato hatte diesen
+schwierigen Punkt ziemlich cavali`erement abgefertigt, in-
+dem er, im Parmenides (S. 138 Bip. ), eben behauptet, die
+Ver¨anderung geschehe pl¨otzlich und f¨ulle gar keine Zeit ;
+sie sei im εξαιπηνˆες (in repentino) , welches er eine ατο-
+πος πηψσις, εν ςηρονˆο ουδενι ουσα, also ein wunderliches,
+zeitloses Wesen (das denn doch in der Zeit eintritt) nennt.
+Dem Scharfsinn des Aristoteles ist es demnach vorbe-
+halten geblieben, diese schwierige Sache ins Reine zu brin-
+gen; welches er gr¨undlich und ausf¨uhrlich geleistet hat, im
+6. Buch der Physik, Kap. 1 — 8. Sein Beweis, daß kei-
+ne Ver¨anderung pl¨otzlich (dem εξαιπηνˆες des Plato), son-
+dern jede nur allm¨alig geschehe, mithin eine gewisse Zeit
+ausf¨ulle, ist g¨anzlich auf Grundlage der reinen Anschau-
+ung a priori der Zeit und des Raums gef¨uhrt, aber auch
+sehr subtil ausgefallen. Das Wesentliche dieser sehr lan-
+gen Beweisf¨uhrung ließe sich allenfalls auf folgende S¨atze
+zur¨uckf¨uhren. An einander gr¨anzen heißt die gegenseitigen
+¨außersten Enden gemeinschaftlich haben: folglich k¨onnen
+nur zwei Ausgedehnte, nicht zwei Untheilbare, (da sie
+sonst Eins w¨aren) an einander gr¨anzen; folglich nur Li-
+nien, nicht bloße Punkte. Dies wird nun vom Raum auf
+die Zeit ¨ubertragen. Wie zwischen zwei Punkten immer
+noch eine Linie, so ist zwischen zwei Jetzt immer noch
+eine Zeit. Diese nun ist die Zeit der Ver¨anderung; wenn
+n¨amlich im ersten Jetzt ein Zustand und im zweiten ein
+anderer ist. Sie ist, wie jede Zeit, ins Unendliche theilbar:
+folglich durchgeht in ihr das sich Ver¨andernde unendlich
+viele Grade, durch die aus jenem ersten Zustande der zwei-
+te allm¨alig erw¨achst. — Gemeinverst¨andlich ließe sich die
+Sache so erl¨autern: Zwischen zwei successiven Zust¨anden,
+deren Verschiedenheit in unsere Sinne f¨allt, liegen immer
+noch mehrere, deren Verschiedenheit uns nicht wahrnehm-
+bar ist; weil der neu eintretende Zustand einen gewissen
+Grad, oder Gr¨oße, erlangt haben muß, um sinnlich wahr-
+nehmbar zu seyn. Daher gehn demselben schw¨achere Gra-
+de, oder geringere Ausdehnungen, vorher, welche durch-
+laufend er allm¨alig erw¨achst. Diese zusammengenommen
+begreift man unter dem Namen der Ver¨anderung, und die
+Zeit, welche sie ausf¨ullen, ist die Zeit der Ver¨anderung.
+Wenden wir dies an auf einen K¨orper, der gestoßen wird;
+so ist die n¨achste Wirkung eine gewisse Schwingung seiner
+innern Theile, welche, nachdem durch sie der Impuls sich
+fortgepﬂanzt hat, in ¨außere Bewegung ausbricht. — Ari-
+stoteles schließt ganz richtig, aus der unendlichen Theil-
+barkeit der Zeit, daß alles diese Ausf¨ullende, folglich auch
+jede Ver¨anderung, d.i. Uebergang aus einem Zustand in
+den andern, ebenfalls unendlich theilbar seyn muß, daß
+also Alles, was entsteht, in der That aus unendlichen Thei-
+len zusammenkommt, mithin stets allm¨alig, nie pl¨otzlich
+wird. Aus den obigen Grunds¨atzen und aus dem daraus
+folgenden allm¨aligen Entstehn jeder Bewegung zieht er im
+letzten Kapitel dieses Buches die wichtige Folgerung, daß
+nichts Untheilbares, folglich kein bloßer Punkt , sich bewe-
+gen k¨onne. Dazu stimmt sehr sch¨on Kants Erkl¨arung der
+Materie, daß sie sei “das Bewegliche im Raum.”
+Dieses also zuerst vom Aristoteles aufgestellte und be-
+wiesene Gesetz der Kontinuit¨at und Allm¨aligkeit aller
+Ver¨anderungen ﬁnden wir von Kant drei Mal dargelegt:
+n¨amlich in seiner Dissertatio de mundi sensibilis et in-
+telligibilis forma §14 ; in der Kritik der reinen Vernunft,
+1. Auﬂ., S. 207 und 5. Auﬂ., S, 253; endlich in den Me-
+taphysischen Anfangsgr¨unden der Naturwissenschaft, am
+Schluß der “Allgemeinen Anmerkung zur Mechanik.” An
+allen drei Stellen ist seine Darstellung der Sache kurz, aber
+auch nicht so gr¨undlich, wie die des Aristoteles, mit der
+sie dennoch im Wesentlichen ganz ¨ubereinstimmt; daher
+nicht wohl zu zweifeln ist, daß Kant diese Gedanken di-
+rekt, oder indirekt, vom Aristoteles ¨uberkommen habe;
+obwohl er ihn nirgends nennt. Der Satz des Aristoteles ουκ
+εστι[ν] αλλˆελˆον εςηομενα τα νψν ﬁndet sich darin wieder-
+gegeben mit “zwischen zwei Augenblicken ist immer eine
+Zeit”; gegen welchen Ausdruck sich einwenden l¨aßt: “Sogar
+zwischen zwei Jahrhunderten ist keine; weil es in der Zeit,
+wie im Raum, eine reine Gr¨anze geben muß.” — Statt also
+des Aristoteles zu erw¨ahnen, will Kant, in der ersten und
+¨altesten der angef¨uhrten Darstellungen, jene von ihm vor-
+getragene Lehre identiﬁciren mit der lex continuitatis des
+Leibnitz. W¨are diese mit jener wirklich das Selbe, so h¨atte
+Leibnitz die Sache vom Aristoteles. Nun hat Leibnitz diese
+loi de la continuit´e (nach seiner eigenen Aussage, S. 189
+der opera philos. ed. Erdmann) zuerst aufgestellt in einem
+Briefe an Bayle ( ibid. S. 104), wo er es jedoch principe
+de l’ordre g´en´eral nennt und unter diesem Namen ein sehr
+allgemeines und unbestimmtes, vorz¨uglich geometrisches
+R¨asonnement giebt, welches auf die Zeit der Ver¨anderung,
+die er gar nicht erw¨ahnt, keine direkte Beziehung hat.
+
+
+Kapitel 5
+Ueber die zweite Klasse der Objekte f¨ur
+das Subjekt und die in ihr herrschende
+Gestaltung des Satzes vom zureichenden
+Grunde
+§26
+Erkl¨arung dieser Klasse von
+Objekten
+Der allein wesentliche Unterschied zwischen Mensch und
+Thier, den man von jeher einem, Jenem ausschließlich ei-
+genen und ganz besonderen Erkenntnißverm¨ogen, der Ver-
+nunft , zugeschrieben hat, beruht darauf, daß der Mensch
+eine Klasse von Vorstellungen hat, deren kein Thier theil-
+haft ist: es sind die Begriﬀe , also die abstrakten Vorstellun-
+gen; im Gegensatz der anschaulichen, aus welchen jedoch
+jene abgezogen sind. Die n¨achste Folge hievon ist, daß das
+Thier weder spricht, noch lacht; mittelbare Folge aber alles
+das Viele und Große, was das menschliche Leben vor dem
+thierischen auszeichnet. Denn durch den Hinzutritt der
+abstrakten Vorstellung ist nunmehr auch die Motivation
+eine anderartige geworden. Wenn gleich die Handlungen
+des Menschen mit nicht minder strenger Nothwendigkeit,
+als die der Thiere, erfolgen; so ist doch durch die Art der
+Motivation, sofern sie hier aus Gedanken besteht, welche
+die Wahlentscheidung (d.i. den bewußten Konﬂikt der Mo-
+tive) m¨oglich machen, das Handeln mit Vorsatz, mit Ue-
+berlegung, nach Pl¨anen, Maximen, in Uebereinstimmung
+mit Andern u.s.w., an die Stelle des bloßen Impulses durch
+vorliegende, anschauliche Gegenst¨ande getreten, dadurch
+aber alles Das herbeigef¨uhrt, was des Menschen Leben so
+reich, so k¨unstlich und so schrecklich macht, daß er, in
+diesem Occident, der ihn weiß gebleicht hat und wohin
+ihm die alten, wahren, tiefen Ur-Religionen seiner Heimath
+nicht haben folgen k¨onnen, seine Br¨uder nicht mehr kennt,
+sondern w¨ahnt, die Thiere seien etwas von Grund aus An-
+deres, als er, und, um sich in diesem Wahne zu befestigen,
+sie Bestien nennt, alle ihre ihm gemeinsamen Lebensver-
+richtungen an ihnen mit Schimpfnamen belegt und sie f¨ur
+rechtlos ausgiebt, indem er gegen die sich aufdr¨angende
+Identit¨at des Wesens in ihm und ihnen sich gewaltsam
+verstockt.
+Dennoch besteht, wie eben gesagt, der ganze Unter-
+schied darin, daß, außer den anschaulichen Vorstellun-
+gen, die wir im vorigen Kapitel betrachtet haben und de-
+ren die Thiere ebenfalls theilhaft sind, der Mensch auch
+noch abstrakte, d.h. aus jenen abgezogene Vorstellungen
+in seinem, haupts¨achlich hiezu so viel volumin¨oserem Ge-
+hirn beherbergt. Man hat solche Vorstellungen Begriﬀe ge-
+nannt, weil jede derselben unz¨ahlige Einzeldinge in, oder
+vielmehr unter sich begreift, also ein Inbegriﬀderselben
+ist. Man kann sie auch deﬁniren als Vorstellungen aus
+Vorstellungen. Denn bei ihrer Bildung zerlegt das Ab-
+straktionsverm¨ogen die, im vorigen Kapitel behandelten,
+vollst¨andigen, also anschaulichen Vorstellungen in ihre Be-
+standtheile, um diese abgesondert, jeden f¨ur sich, den-
+ken zu k¨onnen als die verschiedenen Eigenschaften, oder
+Beziehungen, der Dinge. Bei diesem Processe nun aber
+b¨ußen die Vorstellungen nothwendig die Anschaulichkeit
+ein, wie Wasser, wenn in seine Bestandtheile zerlegt, die
+Fl¨ussigkeit und Sichtbarkeit. Denn jede also ausgesonder-
+te (abstrahirte) Eigenschaft l¨aßt sich f¨ur sich allein wohl
+denken , jedoch darum nicht f¨ur sich allein auch anschau-
+en . Die Bildung eines Begriﬀs geschieht ¨uberhaupt da-
+durch, daß von dem anschaulich Gegebenen Vieles fallen
+gelassen wird, um dann das Uebrige f¨ur sich allein den-
+ken zu k¨onnen: derselbe ist also ein Wenigerdenken, als
+angeschaut wird. Hat man, verschiedene anschauliche Ge-
+genst¨ande betrachtend, von jedem etwas Anderes fallen
+lassen und doch bei Allen das Selbe ¨ubrig behalten; so ist
+dies das genus jener Species. Demnach ist der Begriﬀeines
+jeden genus der Begriﬀeiner jeden darunter begriﬀenen
+Species, nach Abzug alles Dessen, was nicht allen Specie-
+bus zukommt. Nun kann aber jeder m¨ogliche Begriﬀals
+ein genus gedacht werden: daher ist er stets ein Allgemei-
+nes und als solches ein nicht Anschauliches. Darum auch
+hat er eine Sph¨are , als welche der Inbegriﬀalles durch
+ihn Denkbaren ist. Je h¨oher man nun in der Abstraktion
+aufsteigt, desto mehr l¨aßt man fallen, also desto weniger
+denkt man noch. Die h¨ochsten, d.i. die allgemeinsten Be-
+griﬀe sind die ausgeleertesten und ¨armsten, zuletzt nur
+noch leichte H¨ulsen, wie z.B. Seyn, Wesen, Ding, Werden
+39
+
+
+§27 Nutzen der Begriﬀe
+40
+u. dgl. m. — Was k¨onnen, beil¨auﬁg gesagt, philosophische
+Systeme leisten, die bloß aus dergleichen Begriﬀen her-
+ausgesponnen sind und zu ihrem Stoﬀnur solche leichte
+H¨ulsen von Gedanken haben? Sie m¨ussen unendlich leer,
+arm und daher eben auch suﬀokirend langweilig ausfallen.
+Da nun, wie gesagt, die, zu abstrakten Begriﬀen subli-
+mirten und dabei zersetzten Vorstellungen alle Anschau-
+lichkeit eingeb¨ußt haben; so w¨urden sie dem Bewußtseyn
+ganz entschl¨upfen und ihm zu den damit beabsichtigten
+Denkoperationen gar nicht Stand halten; wenn sie nicht
+durch willk¨urliche Zeichen sinnlich ﬁxirt und festgehalten
+w¨urden: dies sind die Worte. Daher bezeichnen diese, so
+weit sie den Inhalt des Lexikons, also die Sprache, aus-
+machen, stets allgemeine Vorstellungen, Begriﬀe, nie an-
+schauliche Dinge: ein Lexikon, welches hingegen Einzeldin-
+ge aufz¨ahlt, enth¨alt nicht Worte, sondern lauter Eigenna-
+men und ist entweder ein geographisches, oder ein histori-
+sches, d.h. entweder das durch den Raum, oder das durch
+die Zeit Vereinzelte aufz¨ahlend, indem, wie
+meine Le-
+ser wissen, Zeit und Raum das principium individuationis
+sind. Bloß weil die Thiere auf anschauliche Vorstellungen
+beschr¨ankt und keiner Abstraktion, mithin keines Begrif-
+fes, f¨ahig sind, haben sie keine Sprache; selbst wenn sie
+Worte auszusprechen verm¨ogen: hingegen verstehn sie Ei-
+gennamen. Daß der selbe Mangel es ist, der sie vom Lachen
+ausschließt, erhellt aus meiner Theorie des L¨acherlichen,
+im ersten Buche der “Welt als W. u. V.” § 13, und Bd. 2,
+Kap. 8.
+Wenn man die l¨angere und zusammenh¨angende Rede
+eines ganz rohen Menschen analysirt; so ﬁndet man darin
+einen solchen Reichthum an logischen Formen, Gliederun-
+gen, Wendungen, Distinktionen und Feinheiten jeder Art,
+richtig ausgedr¨uckt mittelst grammatischer Formen und
+deren Flexionen und Konstruktionen, auch mit h¨auﬁger
+Anwendung des sermo obliquus , der verschiedenen Mo-
+di des Verbums, u. s. w., Alles regelrecht; so daß es zum
+Erstaunen ist und man eine sehr ausgedehnte und wohlzu-
+sammenh¨angende Wissenschaft darin erkennen muß. Die
+Erwerbung dieser ist aber geschehn auf Grundlage der
+Auﬀassung der anschaulichen Welt, deren ganzes Wesen
+in die abstrakten Begriﬀe abzusetzen das fundamentale
+Gesch¨aft der Vernunft ist, welches sie nur mittelst der
+Sprache ausf¨uhren kann. Mit der Erlernung dieser daher
+wird der ganze Mechanismus der Vernunft, also das We-
+sentliche der Logik, zum Bewußtseyn gebracht. Oﬀenbar
+kann Dieses nicht ohne große Geistesarbeit und gespannte
+Aufmerksamkeit geschehn, die Kraft zu welcher den Kin-
+dern ihre Lernbegierde verleiht, als welche stark ist, wenn
+sie das wahrhaft Brauchbare und Nothwendige vor sich
+sieht, und nur dann schwach erscheint, wann wir dem Kin-
+de das ihm Unangemessene aufdringen wollen. Also bei
+der Erlernung der Sprache, sammt aller ihrer Wendungen
+und Feinheiten, sowohl mittelst Zuh¨oren der Reden Er-
+wachsener, als mittelst Selbstreden, vollbringt das Kind,
+sogar auch das roh aufgezogene, jene Entwickelung sei-
+ner Vernunft und erwirbt sich jene wahrhaft konkrete Lo-
+gik, als welche nicht in den logischen Regeln, sondern un-
+mittelbar in der richtigen Anwendung derselben besteht;
+wie ein Mensch von musikalischer Anlage die Regeln der
+Harmonie, ohne Notenlesen und Generalbaß, durch blo-
+ßes Klavierspielen nach dem Geh¨or, erlernt. — Die besag-
+te logische Schule, mittelst Erlernung der Sprache, macht
+nur der Taubstumme nicht durch: deshalb ist er fast so
+unvern¨unftig wie das Thier, wenn er nicht die ihm ange-
+messene, sehr k¨unstliche Ausbildung, durch Lesenlernen,
+erh¨alt, die ihm das Surrogat jener naturgem¨aßen Schule
+der Vernunft wird.
+§27
+Nutzen der Begriﬀe
+Unsere Vernunft, oder das Denkverm¨ogen, hat, wie in Obi-
+gem gezeigt worden, zu ihrem Grundwesen das Abstrak-
+tionsverm¨ogen, oder die F¨ahigkeit, Begriﬀe zu bilden: die
+Gegenwart dieser im Bewußtseyn ist es also, welche so
+erstaunliche Resultate herbeif¨uhrt. Daß sie Dieses leisten
+k¨onne, beruht, im Wesentlichen, auf Folgendem.
+Eben dadurch, daß Begriﬀe weniger in sich enthalten,
+als die Vorstellungen daraus sie abstrahirt worden, sind
+sie leichter zu handhaben, als diese, und verhalten sich zu
+ihnen ungef¨ahr wie die Formeln in der h¨oheren Arithmetik
+zu den Denkoperationen, aus denen solche hervorgegan-
+gen sind und die sie vertreten, oder wie der Logarithmus
+zu seiner Zahl. Sie enthalten von den vielen Vorstellungen,
+aus denen sie abgezogen sind, gerade nur den Theil, den
+man eben braucht; statt daß, wenn man jene Vorstellun-
+gen selbst, durch die Phantasie, vergegenw¨artigen wollte,
+man gleichsam eine Last von Unwesentlichem mitschlep-
+pen m¨ußte und dadurch verwirrt w¨urde: jetzt aber, durch
+Anwendung von Begriﬀen, denkt man nur die Theile und
+Beziehungen aller dieser Vorstellungen, die der jedesma-
+lige Zweck erfordert. Ihr Gebrauch ist demnach dem Ab-
+werfen unn¨utzen Gep¨ackes, oder auch dem Operiren mit
+Quintessenzen, statt mit den Pﬂanzenspecies selbst, mit
+der Chinine statt der China, zu vergleichen. Ueberhaupt
+ist es die Besch¨aftigung des Intellekts mit Begriﬀen , also
+die Gegenwart der jetzt von uns in Betrachtung genom-
+menen Klasse von Vorstellungen im Bewußtsein, welche
+eigentlich und im engern Sinne Denken heißt. Sie auch
+wird durch das Wort Reﬂexion bezeichnet, welches, als ein
+optischer Tropus, zugleich das Abgeleitete und Sekund¨are
+dieser Erkenntnißart ausdr¨uckt. Dieses Denken, diese Re-
+ﬂexion ertheilt nun dem Menschen jene Besonnenheit ,
+die dem Thiere abgeht. Denn, indem sie ihn bef¨ahigt, tau-
+send Dinge durch Einen Begriﬀ, in jedem aber immer nur
+das Wesentliche zu denken, kann er Unterschiede jeder
+Art, also auch die des Raumes und der Zeit, beliebig fal-
+len lassen, wodurch er, in Gedanken, die Uebersicht der
+Vergangenheit und Zukunft, wie auch des Abwesenden,
+erh¨alt; w¨ahrend das Thier in jeder Hinsicht an die Gegen-
+wart gebunden ist. Diese Besonnenheit nun wieder, also
+die F¨ahigkeit sich zu besinnen , zu sich zu kommen, ist
+eigentlich die Wurzel aller seiner theoretischen und prak-
+tischen Leistungen, durch welche der Mensch das Thier
+
+
+§28 Repr¨asentanten der Begriﬀe. Die Urtheilskraft
+41
+so sehr ¨ubertriﬀt; zun¨achst n¨amlich der Sorge f¨ur die Zu-
+kunft, unter Ber¨ucksichtigung der Vergangenheit, sodann
+des absichtlichen, planm¨aßigen, methodischen Verfahrens
+bei jedem Vorhaben, daher des Zusammenwirkens Vieler
+zu Einem Zweck, mithin der Ordnung, des Gesetzes, des
+Staats, u.s.w. — Ganz besonders aber sind die Begriﬀe das
+eigentliche Material der Wissenschaften, deren Zwecke sich
+zuletzt zur¨uckf¨uhren lassen auf Erkenntniß des Besonde-
+ren durch das Allgemeine, welche nur mittelst des dictum
+de omni et nullo und dieses wieder nur durch das Vor-
+handenseyn der Begriﬀe m¨oglich ist. Daher sagt Aristote-
+les: ανευ μεν γαρ του κατηολου ουκ εστιν επιστˆεμˆεν λαβειν
+(absque universalibus enim non datur scientia). (Metaph.
+XII, c.9.) Die Begriﬀe sind eben jene Universalia , um de-
+ren Daseynsweise sich, im Mittelalter, der lange Streit der
+Realisten und Nominalisten drehte.
+§28
+Repr¨asentanten der Begriﬀe.
+Die Urtheilskraft
+Mit dem Begriﬀist, wie schon gesagt, das Phantasma
+¨uberhaupt nicht zu verwechseln, als welches eine anschau-
+liche und vollst¨andige, also einzelne, jedoch nicht unmit-
+telbar durch Eindruck auf die Sinne hervorgerufene, daher
+auch nicht zum Komplex der Erfahrung geh¨orige Vorstel-
+lung ist. Auch dann aber ist das Phantasma vom Begriﬀ
+zu unterscheiden, wann es als Repr¨asentant eines Begriﬀs
+gebraucht wird. Dies geschieht wenn man die anschauli-
+che Vorstellung, aus welcher der Begriﬀentsprungen ist,
+selbst, und zwar diesem entsprechend, haben will; was al-
+lemal unm¨oglich ist: denn z.B. von Hund ¨uberhaupt, Far-
+be ¨uberhaupt, Triangel ¨uberhaupt, Zahl ¨uberhaupt giebt
+es keine Vorstellung, kein diesen Begriﬀen entsprechen-
+des Phantasma. Alsdann ruft man das Phantasma z.B.
+irgend eines Hundes hervor, der, als Vorstellung, durch-
+weg bestimmt, d.h. von irgend einer Gr¨oße, bestimmter
+Form, Farbe u.s.w. seyn muß, da doch der Begriﬀ, des-
+sen Repr¨asentant er ist, alle solche Bestimmungen nicht
+hat. Beim Gebrauch aber eines solchen Repr¨asentanten
+eines Begriﬀs ist man sich immer bewußt, daß er dem
+Begriﬀ, den er repr¨asentirt, nicht ad¨aquat, sondern voll
+willk¨urlicher Bestimmungen ist. In Uebereinstimmung mit
+dem hier Gesagten ¨außert sich Hume in seinen essays on
+human understanding, ess. 12. pars 1 gegen das Ende;
+und ebenfalls Rousseau, sur l’origine de l’in´egalit´e, pars 1
+in der Mitte. Etwas ganz Anderes hingegen lehrt dar¨uber
+Kant, im Kapitel vom Schematismus der reinen Verstan-
+desbegriﬀe. Nur innere Beobachtung und deutliches Be-
+sinnen kann die Sache entscheiden. Jeder untersuche dem-
+nach, ob er sich bei seinen Begriﬀen eines “Monogramms
+der reinen Einbildungskraft a priori ”, z.B. wenn er Hund
+denkt, so etwas entre chien et loup , bewußt ist, oder ob er,
+den hier aufgestellten Erkl¨arungen gem¨aß, entweder einen
+Begriﬀdurch die Vernunft denkt, oder irgend einen Re-
+pr¨asentanten des Begriﬀs, als vollendetes Bild, durch die
+Phantasie vorstellt.
+Alles Denken, im weitem Sinne des Worts, also alle inne-
+re Geistesth¨atigkeit ¨uberhaupt, bedarf entweder der Wor-
+te, oder der Phantasiebilder: ohne Eines von Beiden hat
+es keinen Anhalt. Aber Beide zugleich sind nicht erfor-
+dert; obwohl sie, zu gegenseitiger Unterst¨utzung, ineinan-
+dergreifen k¨onnen. Das Denken im engern Sinne, also das
+abstrakte, mit H¨ulfe der Worte vollzogene, ist nun entwe-
+der rein logisches R¨asonnement, wo es dann g¨anzlich auf
+seinem eigenen Gebiete bleibt; oder es streift an die Gr¨anze
+der anschaulichen Vorstellungen, um sich mit diesen aus-
+einanderzusetzen, in der Absicht, das empirisch Gegebene
+und anschaulich Erfaßte mit deutlich gedachten abstrak-
+ten Begriﬀen in Verbindung zu bringen, um es so ganz zu
+besitzen. Es sucht also entweder zum gegebenen anschau-
+lichen Fall den Begriﬀ, oder die Regel, unter die er geh¨ort;
+oder aber zum gegebenen Begriﬀ, oder Regel, den Fall, der
+sie belegt. In dieser Eigenschaft ist es Th¨atigkeit der Urt-
+heilskraft , und zwar (nach Kants Eintheilung) im erstern
+Falle reﬂektirende, im andern subsumirende. Die Urtheils-
+kraft ist demnach die Vermittlerin zwischen der anschau-
+enden und der abstrakten Erkenntnißart, oder zwischen
+Verstand und Vernunft. Bei den meisten Menschen ist sie
+nur rudimentarisch, oft sogar nur nominell, vorhanden:1
+sie sind bestimmt, von Andern geleitet zu werden. Man
+soll mit ihnen nicht mehr reden, als n¨othig ist.
+Das mit H¨ulfe anschaulicher Vorstellungen operirende
+Denken ist der eigentliche Kern aller Erkenntniß, indem es
+zur¨uckgeht auf die Urquelle, auf die Grundlage aller Be-
+griﬀe. Daher ist es der Erzeuger aller wahrhaft originellen
+Gedanken, aller urspr¨unglichen Grundansichten und aller
+Erﬁndungen, so fern bei diesen nicht der Zufall das Beste
+gethan hat. Bei demselben ist der Verstand vorwaltend
+th¨atig, wie bei jenem ersteren, rein abstrakten, die Ver-
+nunft . Ihm geh¨oren gewisse Gedanken an, die lange im
+Kopfe herumziehn, gehn und kommen, sich bald in die-
+se, bald in jene Anschauung kleiden, bis sie endlich, zur
+Deutlichkeit gelangend, sich in Begriﬀen ﬁxiren und Worte
+ﬁnden. Ja, es giebt deren, welche sie nie ﬁnden; und leider
+sind dies die besten: quae voce meliora sunt , wie Apulejus
+sagt.
+Aber Aristoteles ist zu weit gegangen, indem er mein-
+te, daß kein Denken ohne Phantasiebilder vor sich gehn
+k¨onne. Seine Aeußerungen hier¨uber, in den B¨uchern de
+anima III, c. c. 3, 7, 8 wie ουδεποτε νοει΄ ανευ πηαντασμα-
+τος ηˆε πσψςηˆε (anima sine phantasmate nunquam intelli-
+git) , und ηοταν τηεˆορˆε, ανανκˆε ηαμα πηαντασμα τι τηεˆορειν
+(qui contemplatur, necesse est, una cum phantasmate con-
+templetur) , desgleichen de memoria c. I, νοειν ουκ εστιν
+ανευ πηαντασματος (ﬁeri non potest, ut sine phantasmate
+quidquam intelligatur) , — haben jedoch viel Eindruck ge-
+macht auf die Denker des 15. und 16. Jahrhunderts, von
+welchen sie daher ¨ofter und mit Nachdruck wiederholt wer-
+den: so z.B. sagt Picus de Mirandula, de imaginatione c.
+5: Necesse est, eum, qui ratiocinatur et intelligit, phantas-
+mata speculari ; — Melanchthon, de anima, p. 130 , sagt:
+1 Wer dies f¨ur hyperbolisch h¨alt, betrachte das Schicksal der Goe-
+the’schen Farbenlehre: und wundert er sich, daß ich daran einen Be-
+leg ﬁnde; so hat er selbst einen zweiten dazu gegeben.
+
+
+§30 Logische Wahrheit
+42
+oportet intelligentem phantasmata speculari ; — und Jord.
+Brunus, de compositione imaginum, p. 10 , sagt: dicit Ari-
+stoteles: oportet scire volentem, phantasmata speculari .
+Auch Pomponatius, de immortalitate, p. 54 et 70 , ¨außert
+sich in diesem Sinn. — Nur so viel l¨aßt sich behaupten, daß
+jede wahre und urspr¨ungliche Erkenntniß, auch jedes ¨achte
+Philosophem, zu ihrem innersten Kern, oder ihrer Wurzel,
+irgend eine anschauliche Auﬀassung haben muß. Diese,
+obgleich ein Momentanes und Einheitliches, theilt nach-
+mals der ganzen Auseinandersetzung, sei sie auch noch so
+ausf¨uhrlich, Geist und Leben mit, — wie ein Tropfen des
+rechten Reagens der ganzen Auﬂ¨osung die Farbe des be-
+wirkten Niederschlags. Hat die Auseinandersetzung einen
+solchen Kern; so gleicht sie der Note einer Bank, die Kon-
+tanten in Kasse hat: jede andere, aus bloßen Begriﬀskom-
+binationen entsprungene hingegen ist wie die Note einer
+Bank, die zur Sicherheit wieder nur andere, verpﬂichtende
+Papiere hinterlegt hat. Jedes bloß rein vern¨unftige Gerede
+ist so eine Verdeutlichung Dessen, was aus gegebenen Be-
+griﬀen folgt, f¨ordert daher eigentlich nichts Neues zu Tage,
+k¨onnte also Jedem selbst zu machen ¨uberlassen bleiben,
+statt daß man t¨aglich ganze B¨ucher damit f¨ullt.
+§29
+Satz vom zureichenden Grun-
+de des Erkennens
+Aber auch das Denken im engern Sinne besteht nicht in
+der bloßen Gegenwart abstrakter Begriﬀe im Bewußtseyn,
+sondern in einem Verbinden, oder Trennen zweier, oder
+mehrerer derselben, unter mancherlei Restriktionen und
+Modiﬁkationen, welche die Logik, in der Lehre von den
+Urtheilen, angiebt. Ein solches deutlich gedachtes und aus-
+gesprochenes Begriﬀsverh¨altniß heißt n¨amlich ein Urtheil.
+In Beziehung auf diese Urtheile nun macht sich hier der
+Satz vom Grunde abermals geltend, jedoch in einer von der
+im vorigen Kapitel dargelegten sehr verschiedenen Gestalt,
+n¨amlich als Satz vom Grunde des Erkennens, principium
+rationis suﬃcientis cognoscendi. Als solcher besagt er, daß
+wenn ein Urtheil eine Erkenntniß ausdr¨ucken soll, es einen
+zureichenden Grund haben muß: wegen dieser Eigenschaft
+erh¨alt es sodann das Pr¨adikat wahr. Die Wahrheit ist also
+die Beziehung eines Urtheils auf etwas von ihm Verschie-
+denes, das sein Grund genannt wird und, wie wir sogleich
+sehn werden, selbst eine bedeutende Variet¨at der Arten
+zul¨aßt. Da es jedoch immer etwas ist, darauf das Urtheil
+sich st¨utzt, oder beruht; so ist der deutsche Name Grund
+passend gew¨ahlt. Im Lateinischen und allen von ihm abzu-
+leitenden Sprachen f¨allt der Name des Erkenntnißgrundes
+mit dem der Vernunft selbst zusammen: also heißen Bei-
+de ratio, la ragione, la razon, la raison, the reason. Dies
+zeugt davon, daß man im Erkennen der Gr¨unde der Urt-
+heile die vornehmste Funktion der Vernunft, ihr Gesch¨aft
+κατ΄ εξοςηˆεν, erkannte. Diese Gr¨unde nun, worauf ein Urt-
+heil beruhen kann, lassen sich in vier Arten abtheilen, nach
+jeder von welchen dann auch die Wahrheit, die es erh¨alt,
+eine verschiedene ist. Diese sind in den n¨achsten vier Pa-
+ragraphen aufgestellt.
+§30
+Logische Wahrheit
+Ein Urtheil kann ein anderes Urtheil zum Grunde haben.
+Dann ist seine Wahrheit eine logische , oder formale. Ob es
+auch materiale Wahrheit habe, bleibt unentschieden und
+h¨angt davon ab, ob das Urtheil, darauf es sich st¨utzt, ma-
+teriale Wahrheit habe, oder auch die Reihe von Urtheilen,
+darauf dieses sich gr¨undet, auf ein Urtheil von materia-
+ler Wahrheit zur¨uckf¨uhre. — Eine solche Begr¨undung ei-
+nes Urtheils durch ein anderes entsteht immer durch eine
+Vergleichung mit ihm: diese geschieht nun entweder un-
+mittelbar, in der bloßen Konversion, oder Kontrapositi-
+on desselben; oder aber durch Hinzuziehung eines dritten
+Urtheils, wo denn aus dem Verh¨altnisse der beiden letzte-
+ren zu einander die Wahrheit des zu begr¨undenden Urt-
+heils erhellt. Diese Operation ist der vollst¨andige Schluß.
+Er kommt sowohl durch Opposition als Subsumtion der
+Begriﬀe zu Stande. Da der Schluß, als Begr¨undung eines
+Urtheils durch ein anderes, mittelst eines dritten, es im-
+mer nur mit Urtheilen zu thun hat und diese nur Ver-
+kn¨upfungen der Begriﬀe sind, welche letztere eben der
+ausschließliche Gegenstand der Vernunft sind; so ist das
+Schließen mit Recht f¨ur das eigenth¨umliche Gesch¨aft der
+Vernunft erkl¨art worden. Die ganze Syllogistik ist nichts
+weiter, als der Inbegriﬀder Regeln zur Anwendung des
+Satzes vom Grunde auf Urtheile unter einander; also der
+Kanon der logischen Wahrheit .
+Als durch ein anderes Urtheil begr¨undet sind auch die-
+jenigen anzusehn, deren Wahrheit aus den vier bekannten
+Denkgesetzen erhellt: denn eben diese sind Urtheile, aus
+denen die Wahrheit jener folgt. Z.B. das Urtheil: “Ein Tri-
+angel ist ein von drei Linien eingeschlossener Raum”, hat
+zum letzten Grunde den Satz der Identit¨at, d.h. den durch
+diesen ausgedr¨uckten Gedanken. Dieses: “Kein K¨orper ist
+ohne Ausdehnung”, hat zum letzten Grunde den Satz vom
+Widerspruch. Dieses: “Jedes Urtheil ist entweder wahr,
+oder nicht wahr”, hat zum letzten Grunde den Satz vom
+ausgeschlossenen Dritten. Endlich dieses: “Keiner kann et-
+was als wahr annehmen, ohne zu wissen warum”, hat zum
+letzten Grunde den Satz vom zureichenden Grunde des
+Erkennens. Daß man, im gew¨ohnlichen Gebrauch der Ver-
+nunft, die aus den vier Gesetzen des Denkens folgenden
+Urtheile als wahr annimmt, ohne sie erst auf jene, als ihre
+Pr¨amissen, zur¨uckzuf¨uhren, da sogar der gr¨oßte Theil der
+Menschen jene abstrakten Gesetze nie geh¨ort hat, macht
+jene Urtheile so wenig von diesen als ihren Pr¨amissen un-
+abh¨angig, als, wenn Jemand sagt: “Nimmt man jenem
+K¨orper da seine St¨utze, so wird er fallen”, dieses Urtheil,
+weil es m¨oglich ist ohne daß der Satz “Alle K¨orper stre-
+ben zum Mittelpunkt der Erde” jemals seinem Bewußtsein
+gegenw¨artig gewesen sei, dadurch von diesem als seiner
+Pr¨amisse unabh¨angig wird. Daß man bisher in der Logik
+
+
+§33 Metalogische Wahrheit
+43
+allen auf nichts außer den Denkgesetzen gegr¨undeten Urt-
+heilen eine innere Wahrheit beilegte, d.h. sie f¨ur unmit-
+telbar wahr erkl¨arte, und diese innere logische Wahrheit
+unterschied von der ¨außern logischen Wahrheit , welche
+das Beruhen auf einem andern Urtheil als Grund w¨are,
+kann ich daher nicht billigen. Jede Wahrheit ist die Be-
+ziehung eines Urtheils auf etwas außer ihm, und innere
+Wahrheit ein Widerspruch.
+§31
+Empirische Wahrheit
+Eine Vorstellung der ersten Klasse, also eine durch die
+Sinne vermittelte Anschauung, mithin Erfahrung, kann
+Grund eines Urtheils seyn: dann hat das Urtheil materiale
+Wahrheit, und zwar ist diese, sofern das Urtheil sich un-
+mittelbar auf die Erfahrung gr¨undet, empirische Wahrheit
+.
+Ein Urtheil hat materiale Wahrheit , heißt ¨uberhaupt:
+seine Begriﬀe sind so mit einander verbunden, getrennt,
+eingeschr¨ankt, wie es die anschaulichen Vorstellungen,
+durch die es begr¨undet wird, mit sich bringen und er-
+fordern. Dies zu erkennen ist unmittelbar Sache der Urt-
+heilskraft , als welche, wie gesagt, das Vermittelnde zwi-
+schen dem anschauenden und dem abstrakten, oder dis-
+kursiven Erkenntnißverm¨ogen, also zwischen Verstand und
+Vernunft, ist.
+§32
+Transscendentale Wahrheit
+Die im Verstande und der reinen Sinnlichkeit liegen-
+den Formen der anschauenden, empirischen Erkenntniß
+k¨onnen, als Bedingungen der M¨oglichkeit aller Erfahrung,
+Grund eines Urtheils seyn, das alsdann ein synthetisches a
+priori ist. Da ein solches Urtheil dennoch materiale Wahr-
+heit hat; so ist diese eine transscendentale; weil das Urt-
+heil nicht bloß auf der Erfahrung, sondern auf den in uns
+gelegenen Bedingungen der ganzen M¨oglichkeit derselben
+beruht. Denn es ist durch eben Das bestimmt, wodurch die
+Erfahrung selbst bestimmt wird: n¨amlich entweder durch
+die a priori von uns angeschauten Formen des Raumes
+und der Zeit, oder durch das a priori uns bewußte Gesetz
+der Kausalit¨at. Beispiele solcher Urtheile sind S¨atze wie:
+Zwei gerade Linien schließen keinen Raum ein. — Nichts
+geschieht ohne Ursache. — 3 x 7 = 21. — Materie kann we-
+der entstehn noch vergehn. Eigentlich kann die ganze reine
+Mathematik, nicht weniger meine Tafel der Pr¨adikabilia a
+priori , im 2. Bande der Welt a. W. und V., wie auch die
+meisten S¨atze in Kants metaphys. Anfangsgr. d. Natur-
+wissenschaft, als Beleg dieser Art der Wahrheit angef¨uhrt
+werden.
+§33
+Metalogische Wahrheit
+Endlich k¨onnen auch die in der Vernunft gelegenen for-
+malen Bedingungen alles Denkens der Grund eines Urt-
+heils seyn, dessen Wahrheit alsdann eine solche ist, die
+ich am besten zu bezeichnen glaube, wenn ich sie metalo-
+gische Wahrheit nenne; welcher Ausdruck ¨ubrigens nichts
+zu schaﬀen hat mit dem Metalogicus , den Johannes Saris-
+berriensis im 12. Jahrhundert geschrieben hat; da dieser,
+in seinem prologus , erkl¨art: quia Logicae suscepi patrocini-
+um, Metalogicus inscriptus est liber , und von dem Worte
+weiter keinen Gebrauch macht. Solcher Urtheile von meta-
+logischer Wahrheit giebt es aber nur vier, die man l¨angst
+durch Induktion gefunden und Gesetze alles Denkens ge-
+nannt hat, obgleich man sowohl ¨uber ihre Ausdr¨ucke, als
+ihre Anzahl, noch immer nicht ganz einig, wohl aber ¨uber
+das, was sie ¨uberhaupt bezeichnen sollen, vollkommen ein-
+verstanden ist. Sie sind folgende: 1) Ein Subjekt ist gleich
+der Summe seiner Pr¨adikate, oder a = a. 2) Einem Subjekt
+kann ein Pr¨adikat nicht zugleich beigelegt und abgespro-
+chen werden, oder a = -a = 0. 3) Von jeden zwei kontradik-
+torisch entgegengesetzten Pr¨adikaten muß jedem Subjekt
+eines zukommen. 4) Die Wahrheit ist die Beziehung ei-
+nes Urtheils auf etwas außer ihm, als seinen zureichenden
+Grund.
+Daß diese Urtheile der Ausdruck der Bedingungen alles
+Denkens sind und daher diese zum Grunde haben, erken-
+nen wir durch eine Reﬂexion, die ich eine Selbstuntersu-
+chung der Vernunft nennen m¨ochte. Indem sie n¨amlich ver-
+gebliche Versuche macht, diesen Gesetzen zuwider zu den-
+ken, erkennt sie solche als Bedingungen der M¨oglichkeit
+alles Denkens: wir ﬁnden alsdann, daß ihnen zuwider zu
+denken, so wenig angeht, wie unsere Glieder der Richtung
+ihrer Gelenke entgegen zu bewegen. K¨onnte das Subjekt
+sich selbst erkennen, so w¨urden wir auch unmittelbar und
+nicht erst durch Versuche an Objekten, d.i. Vorstellun-
+gen, jene Gesetze erkennen. Mit den Gr¨unden der Urthei-
+le von transscendentaler Wahrheit ist es in dieser Hinsicht
+eben so: auch sie kommen ins Bewußtseyn nicht unmittel-
+bar, sondern zuerst in concreto , mittelst Objekten, d.h.
+Vorstellungen. Versuchen wir z.B. eine Ver¨anderung oh-
+ne vorherg¨angige Ursache, oder auch ein Entstehn, oder
+Vergehn von Materie zu denken; so werden wir uns der
+Unm¨oglichkeit der Sache bewußt, und zwar als einer ob-
+jektiven; obwohl sie ihre Wurzel in unserm Intellekt hat;
+sonst wir sie ja nicht auf subjektivem Wege zum Bewußt-
+seyn bringen k¨onnten. Ueberhaupt ist zwischen den trans-
+scendentalen und metalogischen Wahrheiten eine große
+Aehnlichkeit und Beziehung bemerkbar, die auf eine ge-
+meinschaftliche Wurzel beider deutet. Den Satz vom zurei-
+chenden Grunde vorz¨uglich sehn wir hier als metalogische
+Wahrheit, nachdem er im vorigen Kapitel als transscen-
+dentale Wahrheit aufgetreten war und im folgenden noch
+in einer andern Gestalt als transscendentale Wahrheit er-
+scheinen wird. Daher eben bin ich in dieser Abhandlung
+bem¨uht, den Satz vom zureichenden Grunde als ein Urt-
+heil aufzustellen, das einen vierfachen Grund hat, nicht
+
+
+§34 Die Vernunft
+44
+etwan vier verschiedene Gr¨unde, die zuf¨allig auf das sel-
+be Urtheil leiteten, sondern einen sich vierfach darstel-
+lenden Grund, den ich bildlich vierfache Wurzel nenne.
+Die drei andern metalogischen Wahrheiten haben eine so
+große Aehnlichkeit mit einander, daß man bei ihrer Be-
+trachtung beinah nothwendig auf das Bestreben ger¨ath,
+einen gemeinschaftlichen Ausdruck f¨ur sie zu suchen; wie
+auch ich Dies im 9. Kapitel des 2. Bandes meines Haupt-
+werks gethan habe. Dagegen sind sie vom Satze des zu-
+reichenden Grundes sehr unterschieden. Wollte man f¨ur
+jene drei andern metalogischen Wahrheiten ein Analogen
+unter den transscendentalen suchen, so w¨urde wohl die-
+se, daß die Substanz, will sagen die Materie, beharrt, zu
+w¨ahlen seyn.
+§34
+Die Vernunft
+Da die in diesem Kapitel in Betrachtung genommene Klas-
+se von Vorstellungen dem Menschen allein zukommt, und
+da alles Das, was sein Leben von dem der Thiere so
+m¨achtig unterscheidet und ihn so sehr in Vortheil gegen
+sie stellt, nachgewiesenermaaßen auf seiner F¨ahigkeit zu
+diesen Vorstellungen beruht; so macht diese, oﬀenbar und
+unstreitig, jene Vernunft aus, welche von jeher als das Vor-
+recht des Menschen ger¨uhmt worden ist; wie denn auch
+alles Das, was zu allen Zeiten und von allen V¨olkern aus-
+dr¨ucklich als Aeußerung oder Leistung der Vernunft, des
+λογος, λογιμον, λογιστικον, ratio, la ragione, la razon, la
+raison, reason , betrachtet worden, augenf¨allig zur¨uckl¨auft
+auf das nur der abstrakten, diskursiven, reﬂektiven, an
+Worte gebundenen und mittelbaren Erkenntniß, nicht aber
+der bloß intuitiven, unmittelbaren, sinnlichen, deren auch
+die Thiere theilhaft sind, M¨ogliche. Ratio et oratio stellt
+Cicero, de oﬃc. I, 16 , ganz richtig zusammen und be-
+schreibt sie als quae docendo, discendo, communicando,
+disceptando, judicando, conciliat inter se homines u.s.w.
+Eben so de nat. deor. II, 7: rationem dico, et, si placet,
+pluribus verbis, mentem, consilium, cogitationem, pruden-
+tiam. Auch de legib. I, 10: ratio, qua una praestamus be-
+luis, per quam conjectura valemus, argumentamur, refelli-
+mus, disserimus, conﬁcimus aliquid, concludimus . In die-
+sem Sinne aber haben alle Philosophen ¨uberall und je-
+derzeit von der Vernunft geredet, bis auf Kant , welcher
+¨ubrigens selbst sie noch als das Verm¨ogen der Principien
+und des Schließens bestimmt; wiewohl nicht zu leugnen
+ist, daß er Anlaß gegeben hat zu den nachherigen Verdre-
+hungen. Ueber jene Uebereinstimmung aller Philosophen
+in diesem Punkt, und ¨uber die wahre Natur der Vernunft,
+im Gegensatz der Verf¨alschung ihres Begriﬀs durch die
+Philosophieprofessoren in diesem Jahrhundert, habe ich
+schon ausf¨uhrlich geredet in der Welt a. W. und V. Bd. I,
+§ 8, wie auch im Anhange S. 577-585, und abermals Bd. 2,
+Kap. 6; endlich auch in den Grundprobl. d. Ethik S. 148-
+154, brauche also nicht alles dort Gesagte zu wiederholen;
+sondern kn¨upfe daran folgende Betrachtungen.
+Die Philosophieprofessoren haben gerathen gefunden,
+jenem den Menschen vom Thier unterscheidenden Verm¨o-
+gen des Denkens und Ueberlegens, mittelst der Reﬂexi-
+on und der Begriﬀe, welches der Sprache bedarf und zu
+ihr bef¨ahigt, an dem die menschliche Besonnenheit h¨angt
+und mit ihr alle menschlichen Leistungen, welches daher
+in solcher Weise und in solchem Sinn von allen V¨olkern
+und auch von allen Philosophen stets aufgefaßt worden ist,
+seinen bisherigen Namen zu entziehn und es nicht mehr
+Vernunft , sondern, wider allen Sprachgebrauch und al-
+len gesunden Takt, Verstand , und eben so alles aus dem-
+selben Fließende verst¨andig , statt vern¨unftig zu nennen;
+welches dann allemal queer und ungeschickt, ja wie ein
+falscher Ton herauskommen mußte. Denn jederzeit und
+¨uberall hat man als Verstand, intellectus, acumen, perspi-
+cacia, sagacitas u.s.w. das im vorigen Kapitel dargestell-
+te, unmittelbare und mehr intuitive Verm¨ogen bezeich-
+net und die aus ihm entspringenden, von den hier in Re-
+de stehenden, vern¨unftigen speciﬁsch verschiedenen Lei-
+stungen verst¨andig, klug, fein u.s.w. genannt, demnach
+verst¨andig und vern¨unftig stets vollkommen unterschie-
+den, als Aeußerungen zweier g¨anzlich und weitverschiede-
+ner Geistesf¨ahigkeiten. Allein die Philosophieprofessoren
+durften sich hieran nicht kehren: denn ihre Politik ver-
+langte dieses Opfer, und in solchen F¨allen heißt es: “Platz
+da, Wahrheit! wir haben h¨ohere, wohlverstandene Zwecke:
+Platz, Wahrheit! in majorem Dei gloriam , wie du es l¨angst
+gewohnt bist! Bezahlst du etwan Honorar und Gehalt?
+Platz, Wahrheit, Platz! geh zum Verdienst, und kauere in
+der Ecke.” Sie hatten n¨amlich die Stelle und den Namen
+der Vernunft n¨othig f¨ur ein erfundenes und erdichtetes,
+richtiger und aufrichtiger ein v¨ollig erlogenes Verm¨ogen,
+das ihnen in den N¨othen, darin Kant sie versetzt hatte,
+aushelfen sollte, ein Verm¨ogen unmittelbarer, metaphysi-
+scher, d.h. ¨uber alle M¨oglichkeit der Erfahrung hinausge-
+hender, die Welt der Dinge an sich und ihre Verh¨altnisse
+erfassender Erkenntnisse, welches demnach vor Allem ein
+“Gottesbewußtseyn” ist, d.h. Gott den Herrn unmittel-
+bar erkennt, auch die Art und Weise a priori konstruirt,
+wie er die Welt geschaﬀen, oder, wenn das zu trivial seyn
+sollte, wie er sie, durch einen mehr oder minder nothwen-
+digen Lebensproceß, aus sich herausgetrieben und gewis-
+sermaaßen erzeugt, oder auch, was das Bequemste, wenn
+gleich hochkomisch ist, sie, nach Sitte und Brauch vor-
+nehmer Herren am Ende der Audienz, bloß “entlassen”
+habe, da sie dann selbst sich auf die Beine machen und
+marschiren m¨oge, wohin es ihr gef¨allt. Zu diesem Letzte-
+ren war freilich nur die Stirn eines frechen Unsinnschmie-
+rers, wie Hegel, dreist genug. Dergleichen Narrenspossen
+also sind es, welche seit f¨unfzig Jahren, unter dem Namen
+von Vernunfterkenntnissen, breit ausgesponnen, Hunder-
+te sich philosophisch nennender B¨ucher f¨ullen und, man
+sollte meinen ironischer Weise, Wissenschaft und wissen-
+schaftlich genannt werden, sogar mit bis zum Ekel ge-
+triebener Wiederholung dieses Ausdrucks. Die Vernunft
+, der man so frech alle solche Weisheit anl¨ugt, wird er-
+kl¨art als ein “Verm¨ogen des Uebersinnlichen”, auch wohl
+“der Ideen”, kurz, als ein in uns liegendes, unmittelbar
+auf Metaphysik angelegtes, orakelartiges Verm¨ogen. Ue-
+
+
+§34 Die Vernunft
+45
+ber die Art ihrer Perception aller jener Herrlichkeiten und
+¨ubersinnlicher Wahrnehmungen herrscht jedoch, seit 50
+Jahren, große Verschiedenheit der Ansichten unter den
+Adepten. Nach den Dreistesten hat sie eine unmittelbare
+Vernunftanschauung des Absolutums, oder auch ad libi-
+tum des Unendlichen, und seiner Evolutionen zum Endli-
+chen. Nach Andern, etwas bescheideneren, verh¨alt sie sich
+nicht sowohl sehend, als h¨orend, indem sie nicht gerade
+anschaut, sondern bloß vernimmt was in solchem Wolken-
+kukuksheim (νεπηελοκοκκψγια) vorgeht, und dann dieses
+dem sogenannten Verstande treulich wiedererz¨ahlt, der da-
+nach philosophische Kompendien schreibt. Und von die-
+sem angeblichen Vernehmen soll nun gar, nach einem Ja-
+cobischen Witz, die Vernunft ihren Namen haben; — als
+ob es nicht am Tage l¨age, daß er von der durch sie beding-
+ten Sprache und dem Vernehmen der Worte, im Gegensatz
+des bloßen H¨orens, welches auch den Thieren zukommt, ge-
+nommen ist. Aber jener arms¨alige Witz ﬂorirt seit einem
+halben Jahrhundert, gilt f¨ur einen ernsthaften Gedanken,
+ja einen Beweis, und ist tausend Mal wiederholt worden.
+Nach den Bescheidensten endlich kann die Vernunft we-
+der sehn, noch h¨oren, empf¨angt also von allen besagten
+Herrlichkeiten weder den Anblick, noch den Bericht, son-
+dern hat davon nichts weiter, als eine bloße Ahndung, aus
+welchem Worte nun aber das d ausgemerzt wird, wodurch
+dasselbe einen ganz eigenen Anstrich von Niaiserie erh¨alt,
+welcher, durch die Schaafsphysiognomie des jedesmaligen
+Apostels solcher Weisheit unterst¨utzt, ihr nothwendig Ein-
+gang verschaﬀen muß.
+Meine Leser wissen, daß ich das Wort Idee nur in sei-
+nem urspr¨unglichen, dem Platonischen, Sinne gelten lasse,
+und diesen, besonders im 3. Buche meines Hauptwerks,
+gr¨undlich ausgef¨uhrt habe. Der Franzose und Engl¨ander
+andererseits verbindet mit dem Worte id´ee , oder idea ,
+einen sehr allt¨aglichen, aber doch ganz bestimmten und
+deutlichen Sinn. Hingegen dem Deutschen, wenn man
+ihm von Ideen redet (zumal wenn man Ued¨ahen aus-
+spricht), f¨angt an, der Kopf zu schwindeln, alle Besonnen-
+heit verl¨aßt ihn, ihm wird, als solle er mit dem Luftballon
+aufsteigen. Da war also etwas zu machen f¨ur unsere Adep-
+ten der Vernunftanschauung; daher auch der frechste von
+allen, der bekannte Scharlatan Hegel, sein Princip der Welt
+und aller Dinge ohne Weiteres die Idee genannt hat, —
+woran dann richtig Alle meinten etwas zu haben. — Wenn
+man jedoch sich nicht verdutzen l¨aßt, sondern fr¨agt, was
+denn eigentlich die Ideen seien, als deren Verm¨ogen die
+Vernunft bestimmt wird; so erh¨alt man gew¨ohnlich, als
+Erkl¨arung derselben, einen hochtrabenden, hohlen, konfu-
+sen Wortkram, in eingeschachtelten Perioden von solcher
+L¨ange, daß der Leser, wenn er nicht schon in der Mitte der-
+selben eingeschlafen ist, sich am Ende mehr im Zustande
+der Bet¨aubung, als in dem der erhaltenen Belehrung be-
+ﬁndet, oder auch wohl gar auf den Verdacht ger¨ath, es
+m¨ochten ungef¨ahr so etwas wie Chim¨aren gemeint seyn.
+Verlangt er inzwischen, dergleichen Ideen speciell kennen
+zu lernen; so wird ihm allerlei aufgetischt: bald n¨amlich die
+Hauptthemata der Scholastik, welche leider Kant selbst,
+unberechtigter und fehlerhafter Weise, wie ich in meiner
+Kritik seiner Philosophie dargethan habe, Ideen der Ver-
+nunft genannt hat, jedoch nur, um sie als etwas schlecht-
+hin Unbeweisbares und theoretisch Unberechtigtes nach-
+zuweisen: n¨amlich die Vorstellungen von Gott, einer un-
+sterblichen Seele und einer realen, objektiv vorhandenen
+Welt und ihrer Ordnung; — auch wird wohl, als Varia-
+tion, bloß Gott, Freiheit und Unsterblichkeit angef¨uhrt:
+bald wieder soll es seyn das Absolutum, welches wir oben
+§20 als den nothgedrungen inkognito reisenden kosmolo-
+gischen Beweis kennen gelernt haben; bisweilen aber auch
+das Unendliche, im Gegensatz des Endlichen, da an diesem
+Wortkram der deutsche Leser, in der Regel, sein Gen¨ugen
+hat und nicht merkt, daß er am Ende nichts Deutliches
+dabei denken kann, als nur “was ein Ende hat”, und “was
+keines hat.” Sehr beliebt sind ferner, als angebliche Ide-
+en, vorz¨uglich bei den Sentimentalen und Gem¨uthlichen,
+“das Gute, das Wahre und das Sch¨one”; obwohl dies eben
+nur drei sehr weite und abstrakte, weil aus einer Unzahl
+von Dingen und Verh¨altnissen abgezogene, mithin auch
+sehr inhaltsarme Begriﬀe sind, wie tausend andere der-
+gleichen Abstrakta mehr. Ihren Inhalt anlangend, habe
+ich oben, §29, die Wahrheit nachgewiesen als eine aus-
+schließlich den Urtheilen zukommende, also logische Ei-
+genschaft; und ¨uber die beiden andern hier in Rede ste-
+henden Abstrakta verweise ich theils auf die “Welt als W.
+und V.” Bd. I, § 65, und theils auf das ganze dritte Buch
+des selben Werks. Allein wenn bei jenen drei magern Ab-
+straktis nur recht mysteri¨os und wichtig gethan und die
+Augenbrauen bis in die Per¨ucke hinauf gezogen werden;
+so k¨onnen junge Leute leicht sich einbilden, daß Wunder
+was dahinter stecke, n¨amlich etwas ganz Apartes und Un-
+aussprechliches, weshalb sie den Namen Ideen verdienen
+und somit vor den Triumphwagen jener vorgeblichen, me-
+taphysischen Vernunft gespannt werden.
+Wenn nun also gelehrt wird, wir bes¨aßen ein Verm¨ogen
+unmittelbarer, materieller (d.h. den Stoﬀ, nicht bloß die
+Form liefernder) ¨ubersinnlicher (d.h. ¨uber alle M¨oglichkeit
+der Erfahrung hinausf¨uhrender) Erkenntnisse, ein aus-
+dr¨ucklich auf metaphysische Einsichten angelegtes und zu
+solchem Behuf uns einwohnendes Verm¨ogen, und hierin
+best¨ande unsere Vernunft ; — so muß ich so unh¨oﬂich
+seyn, dies eine baare L¨uge zu nennen. Denn die leichteste,
+aber ehrliche Selbstpr¨ufung muß Jeden ¨uberzeugen, daß in
+uns ein solches Verm¨ogen schlechterdings nicht vorhanden
+ist. Diesem entspricht eben auch was im Laufe der Zeit aus
+den Forschungen der berufenen, bef¨ahigten und redlichen
+Denker sich als Resultat ergeben hat, daß n¨amlich das An-
+geborene, daher Apriorische und von der Erfahrung Un-
+abh¨angige unsers gesammten Erkenntnißverm¨ogens durch-
+aus beschr¨ankt ist auf den formellen Theil der Erkennt-
+niß, d.h. auf das Bewußtseyn der selbsteigenen Funktio-
+nen des Intellekts und der Weise ihrer allein m¨oglichen
+Th¨atigkeit, welche Funktionen jedoch sammt und sonders
+des Stoﬀs von außen bed¨urfen, um materielle Erkenntnisse
+zu liefern. So liegen in uns die Formen der ¨außern, objek-
+tiven Anschauung, als Zeit und Raum, sodann das Gesetz
+der Kausalit¨at, als bloße Form des Verstandes, mittelst
+welcher dieser die objektive K¨orperwelt aufbaut, endlich
+
+
+§34 Die Vernunft
+46
+auch der formelle Theil der abstrakten Erkenntniß: dieser
+ist niedergelegt und dargestellt in der Logik , die deshalb
+von unsern V¨atern ganz richtig
+Vernunftlehre benannt
+worden ist. Eben sie lehrt jedoch auch, daß die Begriﬀe ,
+aus denen die Urtheile und Schl¨usse bestehn, auf welche
+alle logischen Gesetze sich beziehn, ihren Stoﬀund Inhalt
+von der anschaulichen Erkenntniß zu erwarten haben; —
+eben wie der diese schaﬀende Verstand den Stoﬀ, welcher
+seinen apriorischen Formen Inhalt giebt, aus der Sinnes-
+empﬁndung nimmt.
+Also alles Materielle in unserer Erkenntniß, d.h. Alles,
+was sich nicht auf subjektive Form , selbsteigene Th¨a-
+tigkeitsweise, Funktion des Intellekts zur¨uckf¨uhren l¨aßt,
+mithin der gesammte Stoﬀderselben, kommt von außen,
+n¨amlich zuletzt aus der, von der Sinnesempﬁndung aus-
+gehenden, objektiven Anschauung der K¨orperwelt. Diese
+anschauliche und, dem Stoﬀe nach, empirische Erkenntniß
+ist es, welche sodann die Vernunft , die wirkliche Vernunft,
+zu Begriﬀen verarbeitet, die sie durch Worte sinnlich ﬁ-
+xirt und dann an ihnen den Stoﬀhat zu ihren endlosen
+Kombinationen, mittelst Urtheilen und Schl¨ussen, welche
+das Gewebe unserer Gedankenwelt ausmachen. Die Ver-
+nunft hat also durchaus keinen materiellen , sondern bloß
+einen formellen Inhalt, und dieser ist der Stoﬀder Lo-
+gik, welche daher bloße Formen und Regeln zu Gedanken-
+operationen enth¨alt. Den materiellen Inhalt muß die Ver-
+nunft, bei ihrem Denken, schlechterdings von außen neh-
+men, aus den anschaulichen Vorstellungen, die der Ver-
+stand geschaﬀen hat. An diesen ¨ubt sie ihre Funktionen
+aus, indem sie, zun¨achst Begriﬀe bildend, von den ver-
+schiedenen Eigenschaften der Dinge Einiges fallen l¨aßt und
+Anderes beh¨alt und es nun verbindet zu einem Begriﬀ.
+Dadurch aber b¨ußen die Vorstellungen ihre Anschaulich-
+keit ein, gewinnen daf¨ur jedoch an Uebersichtlichkeit und
+Leichtigkeit der Handhabung; wie im Obigen gezeigt wor-
+den. — Dies also, und Dies allein, ist die Th¨atigkeit der
+Vernunft: hingegen Stoﬀaus eigenen Mitteln liefern kann
+sie nimmermehr. — Sie hat nichts, als Formen: sie ist weib-
+lich, sie empf¨angt bloß, erzeugt nicht. Es ist nicht zuf¨allig,
+daß sie, sowohl in den Lateinischen, wie den Germanischen
+Sprachen, als weiblich auftritt, der Verstand hingegen als
+m¨annlich.
+Wenn nun etwan gesagt wird: “Dies lehrt die gesun-
+de Vernunft”, oder auch: “Die Vernunft soll die Leiden-
+schaften z¨ugeln” und dergl. mehr; so ist damit keines-
+wegs gemeint, daß die Vernunft aus eigenen Mitteln ma-
+terielle Erkenntnisse liefere; sondern man weist dadurch
+hin auf die Ergebnisse des vern¨unftigen Nachdenkens, also
+auf die logische Folgerung aus den S¨atzen, welche die aus
+der Erfahrung bereicherte, abstrakte Erkenntniß allm¨alig
+gewonnen hat, und verm¨oge welcher wir sowohl das em-
+pirisch Nothwendige, also vorkommenden Falls Vorauszu-
+sehende, als auch die Gr¨unde und Folgen unsers eigenen
+Thuns deutlich und leicht ¨uberblicken k¨onnen. Ueberall ist
+“vern¨unftig” oder “vernunftgem¨aß” gleichbedeutend mit
+“folgerecht” oder “logisch”; wie auch umgekehrt; da ja die
+Logik eben nur das als ein System von Regeln ausgespro-
+chene nat¨urliche Verfahren der Vernunft selbst ist: jene
+Ausdr¨ucke (vern¨unftig und logisch) verhalten sich also zu
+einander wie Praxis und Theorie. In eben diesem Sinne
+versteht man unter einer vern¨unftigen Handlungsweise ei-
+ne ganz konsequente, also von allgemeinen Begriﬀen ausge-
+hende und von abstrakten Gedanken, als Vors¨atzen, gelei-
+tete, nicht aber durch den ﬂ¨uchtigen Eindruck der Gegen-
+wart bestimmte; wodurch inzwischen ¨uber die Moralit¨at
+einer solchen Handlungsweise nichts entschieden wird, son-
+dern diese sowohl schlecht, als gut seyn kann. Hier¨uber
+ﬁndet man ausf¨uhrliche Erl¨auterungen in meiner “Kritik
+der Kantischen Philosophie”, S. 576 fg., wie auch in den
+“Grundproblemen der Ethik”, S. 152. Erkenntnisse aus
+reiner Vernunft endlich sind solche, deren Ursprung im
+formellen Theil unsers Erkenntnißverm¨ogens, sei es des
+denkenden oder des anschauenden, liegt, die wir also a
+priori , d.h. ohne H¨ulfe der Erfahrung, uns zum Bewußt-
+seyn bringen k¨onnen: sie beruhen allemal auf S¨atzen von
+transscendentaler, oder auch von metalogischer Wahrheit.
+Hingegen eine, materielle Erkenntnisse urspr¨unglich und
+aus eigenen Mitteln liefernde, uns daher ¨uber alle M¨oglich-
+keit der Erfahrung hinaus, positiv belehrende Vernunft,
+als welche dazu angeborene Ideen enthalten m¨ußte, ist ei-
+ne reine Fiktion der Philosophieprofessoren und ein Er-
+zeugniß der durch die Kritik der reinen Vernunft in ih-
+nen hervorgerufenen Angst. — Kennen die Herren wohl
+einen gewissen Locke , und haben sie ihn gelesen? Viel-
+leicht ein Mal, vor langer Zeit, obenhin, stellenweise, dabei
+mit wohlbewußter Superiorit¨at auf den großen Mann her-
+absehend, zudem in schlechter, deutscher Tagel¨ohner¨uber-
+setzung: — denn daß die Kenntniß der neuern Sprachen in
+dem Maaße zun¨ahme, wie, dem Himmel sei’s geklagt, die
+der alten abnimmt, merke ich noch nicht. Freilich haben
+sie auch keine Zeit auf solche alte Knasterb¨arte zu verwen-
+den gehabt; ist doch sogar eine wirkliche und gr¨undliche
+Kenntniß der Kantischen Philosophie h¨ochstens nur noch
+in einigen, sehr wenigen, alten K¨opfen zu ﬁnden. Denn die
+Jugendzeit der jetzt im Mannesalter stehenden Generati-
+on hat verwendet werden m¨ussen auf die Werke des “Rie-
+sengeistes Hegel”, des “großen Schleiermacher” und des
+“scharfsinnigen Herbart”. Leider, leider, leider! Denn Das
+eben ist das Verderbliche solcher Universit¨atscelebrit¨aten
+und jenes aus dem Munde ehrsamer Kollegen im Amte
+und hoﬀnungsvoller Aspiranten zu solchem emporsteigen-
+den Kathederheldenruhmes, daß der guten, gl¨aubigen, urt-
+heilslosen Jugend mittelm¨aßige K¨opfe, bloße Fabrikwaare
+der Natur, als große Geister, als Ausnahmen und Zierden
+der Menschheit angepriesen werden; wonach dann dieselbe
+sich mit aller ihrer Jugendkraft auf das sterile Studium der
+endlosen und geistlosen Schreibereien solcher Leute wirft
+und die wenige, kostbare Zeit, die ihr zu h¨oherer Bildung
+verg¨onnt worden, vergeudet, statt solche der wirklichen
+Belehrung zu widmen, welche die Werke der so seltenen,
+¨achten Denker darbieten, dieser wahren Ausnahmen unter
+den Menschen, welche, rari nantes in gurgite vasto , im
+Laufe der Jahrhunderte nur hin und wieder ein Mal auf-
+getaucht sind, weil eben die Natur jeden ihrer Art nur Ein
+Mal machte und dann “die Form zerbrach”. Auch f¨ur sie
+w¨urden diese gelebt haben, wenn sie nicht um ihren Ant-
+
+
+§34 Die Vernunft
+47
+heil an ihnen w¨aren betrogen worden durch die so ¨uberaus
+verderblichen Pr¨akonen des Schlechten, diese Mitglieder
+der großen Kamerad- und Gevatterschaft der Alltagsk¨opfe,
+die allezeit ﬂorirt und ihr Panier hoch ﬂattern l¨aßt, als ste-
+hender Feind des sie dem¨uthigenden Großen und Aechten.
+Durch eben Diese und ihr Treiben ist die Zeit so herunter-
+gebracht, daß die, von unsern V¨atern nur nach jahrelan-
+gem ernstlichen Studium und unter großer Anstrengung
+verstandene Kantische Philosophie der jetzigen Generati-
+on wieder fremd geworden ist, die nun davorsteht wie ονος
+προς λψραν, und etwan rohe, plumpe, t¨olpelhafte Angriﬀe
+darauf versucht, — wie Barbaren Steine werfen gegen ein
+ihnen fremdartiges, griechisches G¨otterbild. Weil es denn
+nun so steht, liegt auch mir heute ob, den Verfechtern der
+unmittelbar erkennenden, vernehmenden, anschauenden,
+kurz materielle Kenntnisse aus eigenen Mitteln liefernden
+Vernunft, als etwas ihnen Neues, in dem seit 150 Jah-
+ren weltber¨uhmten Werke Locke’s das erste , ausdr¨ucklich
+gegen alle angeborenen Erkenntnisse gerichtete Buch zu
+empfehlen, und noch speciell im 3. Kapitel desselben die
+§§ 21-26. Denn obwohl Locke in seinem Leugnen aller an-
+geborenen Wahrheiten insofern zu weit geht, als er es auch
+auf die formalen Erkenntnisse ausdehnt, worin er sp¨ater
+von Kant auf das Gl¨anzendeste berichtigt worden ist; so
+hat er doch hinsichtlich aller materialen. d.i. Stoﬀgeben-
+den Erkenntnisse vollkommen und unleugbar Recht.
+Ich habe es schon in meiner Ethik gesagt, muß es
+jedoch wiederholen, weil, wie das Spanische Sprichwort
+lehrt, es keinen ¨argern Tauben giebt, als den, der nicht
+h¨oren will (no hay peor sordo, que el que no quiere oir):
+wenn die Vernunft ein auf Metaphysik angelegtes, Er-
+kenntnisse, ihrem Stoﬀnach, lieferndes und demnach al-
+le M¨oglichkeit der Erfahrung ¨uberschreitende Aufschl¨usse
+gebendes Verm¨ogen w¨are; so m¨ußte ja nothwendig ¨uber
+die Gegenst¨ande der Metaphysik, mithin auch der Religi-
+on, da sie die selben sind, eine eben so große Uebereinstim-
+mung unter dem Menschengeschlechte herrschen, wie ¨uber
+die Gegenst¨ande der Mathematik; so daß, wenn etwan Ei-
+ner in seinen Ansichten ¨uber Dergleichen von den Andern
+abwiche, er sofort als nicht recht bei Tr¨oste angesehn wer-
+den m¨ußte. Aber gerade das Umgekehrte ﬁndet Statt: ¨uber
+kein Thema ist das Menschengeschlecht so durchaus un-
+einig, wie ¨uber das besagte. Seitdem Menschen denken,
+liegen ¨uberall die s¨ammtlichen philosophischen Systeme
+im Streit und sind einander zum Theil diametral entge-
+gengesetzt; und seitdem Menschen glauben (welches noch
+l¨anger her ist), bek¨ampfen einander die Religionen mit
+Feuer und Schwerdt, mit Exkommunikationen und Ka-
+nonen. F¨ur sporadische Heterodoxe aber gab es, zur Zeit
+des recht lebendigen Glaubens, nicht etwan Narrenh¨auser,
+sondern Inquisitionsgef¨angnisse, nebst Zubeh¨or. Also auch
+hier spricht die Erfahrung laut und unabweisbar gegen das
+l¨ugenhafte Vorgeben einer Vernunft, die ein Verm¨ogen un-
+mittelbarer, metaphysischer Erkenntnisse, oder, deutlicher
+geredet, Eingebungen von oben w¨are, und ¨uber welche ein
+Mal strenges Gericht zu halten, es wahrlich an der Zeit ist;
+da, horribile dictu , eine so lahme, so palpable L¨uge seit
+einem halben Jahrhundert in Deutschland ¨uberall kolpor-
+tirt wird, jahraus jahrein vom Katheder auf die B¨anke und
+dann wieder von den B¨anken aufs Katheder wandert, ja
+sogar unter den Franzosen ein Paar Pinsel gefunden hat,
+die sich das M¨ahrchen haben aufbinden lassen und nun
+damit in Frankreich hausiren gehn; woselbst jedoch der
+bon sens der Franzosen der raison transcendentale bald
+die Th¨ure weisen wird.
+Aber wo ist denn die L¨uge ausgeheckt, und wie ist
+das M¨ahrchen in die Welt gekommen? — Ich muß es
+gestehn: den n¨achsten Anlaß hat leider Kants prakti-
+sche Vernunft gegeben, mit ihrem kategorischen Impera-
+tiv. Diese n¨amlich ein Mal angenommen, hatte man wei-
+ter nichts n¨othig, als derselben eine eben so reichsunmit-
+telbare, folglich ex tripode die metaphysischen Wahrhei-
+ten verk¨undende theoretische Vernunft, als ihren Pendant,
+oder ihre Zwillingsschwester, beizugeben. Den gl¨anzenden
+Erfolg der Sache habe ich geschildert in den Grundproble-
+men der Ethik S. 148 fg., wohin ich verweise. Indem ich
+also einr¨aume, daß
+Kant zu dieser erlogenen Annahme
+den Anlaß gegeben, muß ich jedoch hinzuf¨ugen: wer gerne
+tanzt, dem ist leicht gepﬁﬀen. Ist es doch wie ein Fluch,
+der auf dem bipedischen Geschlechte lastet, daß, verm¨oge
+seiner Wahlverwandtschaft zum Verkehrten und Schlech-
+ten, ihm sogar an den Werken großer Geister gerade das
+Schlechteste, ja geradezu die Fehler, am besten gefallen;
+so daß es diese lobt und bewundert, hingegen das wirklich
+Bewunderungsw¨urdige ihnen nur so mit hingehn l¨aßt. Das
+wahrhaft Große, das eigentlich Tiefe in Kants Philosophie
+ist jetzt ¨außerst Wenigen bekannt: denn mit dem ernstli-
+chen Studio seiner Werke mußte auch das Verst¨andniß der-
+selben aufh¨oren. Sie werden nur noch kursorisch, zum Be-
+huf historischer Kenntnißnahme, gelesen von Jenen, wel-
+che w¨ahnen, nach ihm sei auch etwas gekommen, ja, erst
+das Rechte: daher man allem Gerede Dieser von Kanti-
+scher Philosophie anmerkt, daß sie nur die Schaale, die Au-
+ßenseite derselben kennen, einen rohen Umriß davon nach
+Hause getragen, hie und da ein Wort aufgeschnappt haben,
+aber nie in den tiefen Sinn und Geist derselben eingedrun-
+gen sind. Was nun allen Solchen von jeher am besten im
+Kant gefallen hat, sind zuv¨orderst die Antinomien, als ein
+gar vertracktes Ding, noch mehr aber die praktische Ver-
+nunft, mit ihrem kategorischen Imperativ, und wohl gar
+noch die darauf gesetzte Moraltheologie, mit der es jedoch
+Kanten nie Ernst gewesen ist; da ein theoretisches Dog-
+ma von ausschließlich praktischer Geltung der h¨olzernen
+Flinte gleicht, die man ohne Gefahr den Kindern geben
+kann, auch ganz eigentlich zum “Wasch’ mir den Pelz, aber
+mach’ ihn mir nicht naß” geh¨ort. Was nun aber den ka-
+tegorischen Imperativ selbst betriﬀt, so hat Kant ihn nie
+als Thatsache behauptet, hiegegen vielmehr wiederholent-
+lich protestirt und denselben bloß als das Resultat einer
+h¨ochst wunderlichen Begriﬀskombination aufgetischt; weil
+er eben einen Nothanker f¨ur die Moral brauchte. Die Philo-
+sophieprofessoren aber haben niemals das Fundament der
+Sache untersucht, so daß, wie es scheint, vor mir dassel-
+be nicht ein Mal erkannt worden ist: statt Dessen haben
+sie sich beeilt, unter dem puristischen Namen “das Sit-
+tengesetz”, der mich jedesmal an B¨urger’s Mamsell La-
+
+
+§34 Die Vernunft
+48
+regle erinnert, den kategorischen Imperativ als felsenfest
+begr¨undete Thatsache in Kredit zu bringen, ja, haben et-
+was so Massives daraus gemacht, wie die steinernen Ge-
+setztafeln des Moses, welche er ganz und gar bei ihnen
+vertreten muß. Nun habe ich zwar, in meiner Abhandlung
+¨uber das Fundament der Moral, die praktische Vernunft,
+mit ihrem Imperativ, unter das anatomische Messer ge-
+nommen und daß nie Leben und Wahrheit in ihnen gewe-
+sen ist so deutlich und sicher nachgewiesen, daß ich Den
+sehn will, der mich mit Gr¨unden widerlegen und ehrli-
+cher Weise dem kategorischen Imperativ wieder auf die
+Beine helfen kann. Das macht jedoch die Philosophiepro-
+fessoren nicht irre. Sie k¨onnen ihr “Sittengesetz der prak-
+tischen Vernunft” als einen bequemen Deus ex machina
+zur Begr¨undung ihrer Moral, so wenig wie die Freiheit des
+Willens, entbehren: denn dies sind zwei h¨ochst wesentliche
+St¨ucke ihrer Alteweiber- und Rocken-Philosophie. Daß ich
+nun beide todtgeschlagen habe thut nichts: bei ihnen le-
+ben sie noch immer, — wie man bisweilen einen bereits
+gestorbenen Monarchen, aus politischen Gr¨unden, noch
+einige Tage fortregieren l¨aßt. Gegen meine unerbittliche
+Demolition jener beiden alten Fabeln gebrauchen die Tap-
+fern eben nur ihre alte Taktik: schweigen, schweigen, fein
+leise vor¨uber schleichen, thun als ob nichts geschehn w¨are,
+damit das Publikum glaube, daß was so Einer wie ich sagt
+nicht werth sei, daß man auch nur hinh¨ore: nun freilich;
+sind sie doch vom Ministerio zur Philosophie berufen, und
+ich bloß von der Natur. Zwar wird sich wohl am Ende er-
+geben, daß diese Helden es machen, wie der idealistisch
+gesinnte Vogel Strauß, welcher meint, daß wenn nur er die
+Augen verh¨ullt, der J¨ager nicht mehr dasei. Je nun, kommt
+Zeit, kommt Rath: wenn nur noch einstweilen, etwan bis
+ich todt bin und man sich meine Sachen nach eigenem
+Gusto appretiren kann, das Publikum sich an dem un-
+fruchtbaren Gesaalbader, dem unertr¨aglich langweiligen
+Gekaue, den arbitr¨aren Konstruktionen des Absolutums
+und der Kinderschulenmoral der Herren gen¨ugen lassen
+will, da wird man sp¨ater weiter sehn.
+Morgen habe denn das Rechte
+Seine Freunde wohlgesinnet,
+Wenn nur heute noch das Schlechte
+Vollen Platz und Gunst gewinnet.
+W. O. Divan p. 97.
+Aber wissen die Herren auch, was es an der Zelt ist? —
+Eine l¨angst prophezeite Epoche ist eingetreten: die Kirche
+wankt, wankt so stark, daß es sich fr¨agt, ob sie den Schwer-
+punkt wiederﬁnden werde: denn der Glaube ist abhanden
+gekommen. Ist es doch mit dem Licht der Oﬀenbarung wie
+mit andern Lichtern: einige Dunkelheit ist die Bedingung.
+Die Zahl Derer, welche ein gewisser Grad und Umfang von
+Kenntnissen zum Glauben unf¨ahig macht, ist bedenklich
+groß geworden. Dies bezeugt die allgemeine Verbreitung
+des platten Rationalismus, der sein Bulldogsgesicht immer
+breiter auslegt. Die tiefen Mysterien des Christenthums,
+¨uber welche die Jahrhunderte gebr¨utet und gestritten ha-
+ben, schickt er sich ganz gelassen an, mit seiner Schnei-
+derelle auszumessen und d¨unkt sich wunderklug dabei.
+Vor Allem ist das Christliche Kerndogma, die Lehre von
+der Erbs¨unde, bei den rationalistischen Plattk¨opfen zum
+Kinderspott geworden; weil eben ihnen nichts klarer und
+gewisser d¨unkt, als daß das Daseyn eines Jeden mit sei-
+ner Geburt angefangen habe, daher er unm¨oglich verschul-
+det auf die Welt gekommen seyn k¨onne. Wie scharfsin-
+nig! — Und wie, wenn Verarmung und Vernachl¨assigung
+¨uberhand nehmen, dann die W¨olfe anfangen sich im Dorfe
+zu zeigen; so erhebt, unter diesen Umst¨anden, der stets
+bereit liegende Materialismus das Haupt und kommt, mit
+seinem Begleiter, dem Bestialismus (von gewissen Leuten
+Humanismus genannt), an der Hand, heran. — Mit der
+Unf¨ahigkeit zum Glauben w¨achst das Bed¨urfniß der Er-
+kenntniß. Es giebt einen Siedepunkt auf der Skala der
+Kultur, wo aller Glaube, alle Oﬀenbarung, alle Aukto-
+rit¨aten sich verﬂ¨uchtigen, der Mensch nach eigener Ein-
+sicht verlangt, belehrt, aber auch ¨uberzeugt seyn will. Das
+G¨angelband der Kindheit ist von ihm gefallen: er will auf
+eigenen Beinen stehn. Dabei aber ist sein metaphysisches
+Bed¨urfniß (Welt als W. und V., B. 2, Kap. 17) so un-
+vertilgbar, wie irgend ein physisches. Dann wird es Ernst
+mit dem Verlangen nach Philosophie, und die bed¨urftige
+Menschheit ruft alle denkenden Geister, die sie jemals aus
+ihrem Schooß erzeugt hat, an. Mit hohlem Wortkram und
+impotenten Bem¨uhungen geistiger Kastraten ist da nicht
+mehr auszureichen; sondern es bedarf dann einer ernstlich
+gemeinten, d.h. einer auf Wahrheit, nicht auf Gehalte und
+Honorare gerichteten Philosophie, die daher nicht fr¨agt, ob
+sie Ministern oder R¨athen gefalle, oder dieser oder jener
+Kirchenpartei der Zeit in ihren Kram passe; sondern an
+den Tag legt, daß der Beruf der Philosophie ein ganz an-
+derer sei, als eine Erwerbsquelle f¨ur die Armen am Geiste
+abzugeben.
+Doch ich kehre zu meinem Thema zur¨uck. Dem prak-
+tischen Orakel, welches Kant der Vernunft f¨alschlich zu-
+geschrieben hatte, wurde, mittelst einer, bloß einiger
+K¨uhnheit bed¨urfenden Ampliﬁkation, ein
+theoretisches
+Orakel zugesellt. Die Ehre der Erﬁndung wird wohl auf
+F. H. Jacobi zur¨uckzuf¨uhren seyn, von welchem theue-
+ren Manne die Philosophieprofessoren das werthvolle Ge-
+schenk freudig und dankbar entgegennahmen. Denn da-
+durch war ihnen geholfen aus der Noth, in die Kant
+sie versetzt hatte. Die kalte, n¨uchterne, ¨uberlegende Ver-
+nunft, welche Kant so grausam kritisirt hatte, wurde
+zum Verstande degradirt und mußte fortan diesen Na-
+men f¨uhren: der Name der Vernunft aber wurde einem
+g¨anzlich imagin¨aren, zu Deutsch, erlogenen Verm¨ogen bei-
+gelegt, an dem man gleichsam ein in die supralunarische,
+ja ¨ubernat¨urliche Welt sich ¨oﬀnendes Fensterlein hatte,
+durch welches man daher alle die Wahrheiten ganz fer-
+tig und zugerichtet in Empfang nehmen konnte, um wel-
+che die bisherige, altmodische, ehrliche, reﬂektirende und
+besonnene Vernunft sich Jahrhunderte lang vergeblich ab-
+gem¨uht und gestritten hatte. Und auf einem solchen, v¨ollig
+aus der Luft gegriﬀenen, v¨ollig erlogenen Verm¨ogen basirt
+
+
+§34 Die Vernunft
+49
+sich seit f¨unfzig Jahren die Deutsche sogenannte Philoso-
+phie, erst als freie Konstruktion und Projektion des abso-
+luten Ich und seiner Emanationen zum Nicht-Ich, dann als
+intellektuale Anschauung der absoluten Identit¨at, oder In-
+diﬀerenz, und ihrer Evolutionen zur Natur, oder auch des
+Entstehns Gottes aus seinem ﬁnstern Grunde, oder Un-
+grunde, `a la Jakob B¨ohme, endlich als reines Sichselbst-
+denken der absoluten Idee und Schauplatz des Ballets der
+Selbstbewegung der Begriﬀe, daneben aber stets noch als
+unmittelbares Vernehmen des G¨ottlichen, des Uebersinn-
+lichen, der Gottheit, der Sch¨onheit, Wahrheit, Gutheit,
+und was sonst noch f¨ur Heiten gef¨allig seyn m¨ogen, oder
+auch als bloßes Ahnen (ohne d) aller dieser Herrlichkei-
+ten. — Das also w¨are Vernunft? o nein, das sind Possen,
+welche den durch die ernsthaften Kantischen Kritiken in
+Verlegenheit gesetzten Philosophieprofessoren zum Noth-
+behelfe dienen sollen, um irgend wie, per fas aut nefas
+, die Gegenst¨ande der Landesreligion f¨ur Ergebnisse der
+Philosophie auszugeben.
+N¨amlich die erste Obliegenheit aller Professorenphilo-
+sophie ist, die Lehre von Gott, dem Sch¨opfer und Re-
+gierer der Welt, als einem pers¨onlichen, folglich indivi-
+duellen, mit Verstand und Willen begabten Wesen, wel-
+ches die Welt aus nichts hervorgebracht hat und sie mit
+h¨ochster Weisheit, Macht und G¨ute lenkt, philosophisch
+zu begr¨unden und ¨uber allen Zweifel hinaus festzustellen.
+Dadurch aber gerathen die Philosophieprofessoren in ei-
+ne mißliche Stellung zur ernstlichen Philosophie. N¨amlich
+Kant ist gekommen, die Kritik der reinen Vernunft ist ge-
+schrieben, schon vor mehr als 60 Jahren, und das Resul-
+tat derselben ist gewesen, daß alle Beweise, die man im
+Lauf der christlichen Jahrhunderte f¨ur das Daseyn Gottes
+aufgestellt hatte und die auf drei allein m¨ogliche Beweis-
+arten zur¨uckzuf¨uhren sind, durchaus nicht verm¨ogen das
+Verlangte zu leisten, ja, die Unm¨oglichkeit jeden solchen
+Beweises, und damit die Unm¨oglichkeit aller spekulativen
+Theologie, wird ausf¨uhrlich a priori dargethan, und zwar,
+wohlverstanden, nicht etwan, wie es in unsern Tagen Mode
+geworden, mit hohlem Wortkram, Hegel’schem Wischiwa-
+schi, woraus Jeder machen kann was er will; nein, ganz
+ernstlich und ehrlich, nach alter guter Sitte, folglich so,
+daß seit 60 Jahren, so h¨ochst ungelegen die Sache auch
+Vielen gekommen, Keiner etwas Erhebliches dagegen hat
+einwenden k¨onnen, vielmehr in Folge davon die Beweise
+des Daseyns Gottes ganz außer Kredit und Gebrauch ge-
+kommen sind. Ja, gegen dieselben haben, von Dem an, die
+Philosophieprofessoren ¨außerst vornehm gethan, sogar ei-
+ne entschiedene Verachtung dagegen an den Tag gelegt;
+weil n¨amlich die Sache sich so ganz von selbst verst¨ande,
+daß es l¨acherlich sei, sie erst beweisen zu wollen. Ei, ei,
+ei! h¨atte man doch Das fr¨uher gewußt! Dann w¨urde man
+sich nicht Jahrhunderte lang um solche Beweise abgem¨uht
+haben, und Kant h¨atte nicht n¨othig gehabt, dieselben mit
+dem ganzen Gewicht der Vernunftkritik zu zermalmen. Da
+wird denn wohl, bei besagter Verachtung, Manchem der
+Fuchs mit den s¨auern Trauben einfallen. Wer ¨ubrigens ei-
+ne kleine Probe derselben sehn m¨ochte, ﬁndet eine recht
+charakteristische in Schelling’s philosophischen Schriften,
+Bd. I, 1809, S. 152. — W¨ahrend nun Andere sich damit
+tr¨osteten, daß Kant gesagt habe, das Gegentheil ließe sich
+auch nicht beweisen, — als ob dem alten Schalk das af-
+ﬁrmanti incumbit probatio unbekannt gewesen w¨are, — so
+kam, als ein Retter in der Noth, f¨ur die Philosophiepro-
+fessoren, die bewundernsw¨urdige Jacobische Erﬁndung,
+welche den deutschen Gelehrten dieses Jahrhunderts ei-
+ne ganz aparte Vernunft verlieh, von der bis dahin kein
+Mensch etwas geh¨ort, noch gewußt hatte.
+Und doch waren alle diese Schliche keineswegs n¨othig.
+Denn durch jene Unbeweisbarkeit wird das Daseyn Got-
+tes selbst nicht im Mindesten angefochten; da es auf viel
+sichererm Boden und unersch¨utterlich fest steht. Es ist
+ja Sache der Oﬀenbarung, und zwar ist es Dies um so
+gewisser, als solche Oﬀenbarung allein und ausschließlich
+demjenigen Volke, welches deshalb das auserw¨ahlte heißt,
+zu Theil geworden ist. Dies ist daraus ersichtlich, daß
+die Erkenntniß Gottes, als des pers¨onlichen Regierers und
+Sch¨opfers der Welt, der Alles wohlgemacht, sich ganz al-
+lein in der J¨udischen und den beiden aus ihr hervorge-
+gangenen Glaubenslehren, die man, im weitem Sinne, ihre
+Sekten nennen k¨onnte, ﬁndet, nicht aber in der Religion
+irgend eines andern Volkes, alter oder neuer Zeit. Denn es
+wird doch wohl Keinem in den Sinn kommen, etwan das
+Brahm der Hindu, welches in mir, in dir, in meinem Pferde,
+deinem Hunde lebt und leidet, — oder auch den Brahma,
+welcher geboren ist und stirbt, andern Brahmas Platz zu
+machen, und dem ¨uberdies sein Hervorbringen der Welt
+zur Schuld und S¨unde angerechnet wird2, — geschweige
+den ¨uppigen Sohn des betrogenen Saturns, dem Prome-
+theus trotzt und seinen Fall verk¨undet, — mit Gott dem
+Herrn zu verwechseln. Sehn wir aber gar die Religion an,
+welche auf Erden die gr¨oßte Anzahl von Bekennern, folg-
+lich die Majorit¨at der Menschheit f¨ur sich hat und in dieser
+Beziehung die vornehmste heißen kann, also den Buddha-
+ismus; so l¨aßt es heut zu Tage sich nicht mehr verhehlen,
+daß dieser, so wie streng idealistisch und asketisch, auch
+entschieden und ausdr¨ucklich atheistisch ist; so sehr, daß
+die Priester, wenn ihnen die Lehre des reinen Theismus
+vorgetragen wird, solche ausdr¨ucklich perhorresciren. Da-
+her (wie uns in den Asiatic researches Vol. 6, p. 268 , des-
+gleichen von Sangermano in seiner Description of the Bur-
+mese empire, p. 81 , berichtet wird) der Oberpriester der
+Buddhaisten in Ava, in einem Aufsatze, den er einem ka-
+tholischen Bisch¨ofe ¨ubergab, zu den sechs verdammlichen
+Ketzereien auch die Lehre z¨ahlte, “daß ein Wesen dasei,
+welches die Welt und alle Dinge geschaﬀen habe und allein
+w¨urdig sei, angebetet zu werden”. (Siehe I. J. Schmidt’s
+“Forschungen im Gebiete der altern Bildungsgeschichte
+Mittelasiens”, Petersburg 1824, S. 276.) Eben deswegen
+sagt auch I. J. Schmidt in Petersburg, welchen treﬄichen
+Gelehrten ich entschieden f¨ur den gr¨undlichsten Kenner
+des Buddhaismus in Europa halte, in seiner Schrift “¨uber
+2
+If Brimha be unceasingly employed in the creation of worlds,
+— — — — — — how can tranquillity be obtained by inferior orders
+of being? Prabodh Chandro Daya, tr. by J. Taylor, p. 23 . — Auch
+ist Brahma Theil des Trimurti, dieser aber die Personiﬁkation der
+Natur, als Zeugung, Erhaltung und Tod: er vertritt also die erstere.
+
+
+§34 Die Vernunft
+50
+die Verwandtschaft der gnostischen Lehren mit dem Bud-
+dhaismus” S. 9: “In den Schriften der Buddhaisten fehlt
+jede positive Andeutung eines h¨ochsten Wesens, als Prin-
+cips der Sch¨opfung, und scheint sogar dieser Gegenstand,
+wo er sich, der Konsequenz gem¨aß, von selbst darbietet,
+mit Fleiß umgangen zu werden.” In seinen “Forschungen
+im Gebiete der altern Bildungsgeschichte Mittelasiens” S.
+180 sagt derselbe: “Das System des Buddhaismus kennt
+kein ewiges, unerschaﬀenes, einiges g¨ottliches Wesen, das
+vor allen Zeiten war und alles Sichtbare und Unsichtbare
+erschaﬀen hat. Diese Idee ist ihm ganz fremd, und man
+ﬁndet in den buddhaistischen B¨uchern nicht die geringste
+Spur davon. Eben so wenig giebt es eine Sch¨opfung; zwar
+ist das sichtbare Weltall nicht ohne Anfang, es ist aber aus
+dem leeren Raume nach folgerechten, unab¨anderlichen Na-
+turgesetzen entstanden. Man w¨urde sich indeß irren, wenn
+man ann¨ahme, daß Etwas, man nenne es nun Schicksal
+oder Natur, von den Buddhaisten als g¨ottliches Princip
+angesehn oder verehrt w¨urde: vielmehr das Gegentheil;
+denn gerade diese Entwickelung des leeren Raumes, dieser
+Niederschlag aus demselben oder dessen Zerst¨uckelung in
+unz¨ahlige Theile, diese nun entstandene Materie, ist das
+Uebel des Jirtintsch¨u, oder des Weltalls in seinen innern
+und ¨außern Beziehungen, aus welchem der Ortschilang ,
+oder der best¨andige Wechsel nach unab¨anderlichen Ge-
+setzen entstanden ist, nachdem diese durch jenes Uebel
+begr¨undet waren.” Eben so sagt derselbe in seiner, am 15.
+September 1830 in der Petersburger Akademie gehaltenen
+Vorlesung S. 26: “Der Ausdruck Sch¨opfung ist dem Bud-
+dhaismus fremd, indem derselbe nur von Weltentstehun-
+gen weiß”; und S. 27: “Man muß einsehn, daß, bei ihrem
+System, keine Idee irgend einer urg¨ottlichen Sch¨opfung
+Statt ﬁnden kann.” Es ließen sich hundert dergleichen Be-
+lege anf¨uhren. Nur auf einen jedoch will ich noch aufmerk-
+sam machen; weil er ganz popul¨ar und zudem oﬃziell ist.
+N¨amlich der 3. Band des sehr belehrenden Buddhaisti-
+schen Werkes Mahavansi, Raja-ratnacari and Raja-vali,
+from the Singhalese, by E. Upham, Lond. 1833 , enth¨alt
+die aus den holl¨andischen Protokollen ¨ubersetzten oﬃzi-
+ellen Interrogatorien, welche, um 1766, der holl¨andische
+Gouverneur von Ceylon mit den Oberpriestern der f¨unf
+vornehmsten Pagoden einzeln und successive abgehalten
+hat. Der Kontrast zwischen den Interlokutoren, welche
+sich nicht wohl verst¨andigen k¨onnen, ist h¨ochst erg¨otzlich.
+Die Priester, den Lehren ihrer Religion gem¨aß, von Lie-
+be und Mitleid gegen alle lebenden Wesen, selbst wenn es
+holl¨andische Gouverneure seyn sollten, erf¨ullt, sind auf das
+Bereitwilligste bem¨uht, allen seinen Fragen zu gen¨ugen.
+Aber der naive und arglose Atheismus dieser frommen und
+sogar enkratistischen Oberpriester ger¨ath in Konﬂikt mit
+der innigen Herzens¨uberzeugung des schon in der Wiege
+judaisirten Gouverneurs. Sein Glaube ist ihm zur zweiten
+Natur geworden, er kann sich gar nicht darin ﬁnden, daß
+diese Geistlichen keine Theisten sind, fr¨agt daher immer
+von Neuem nach dem h¨ochsten Wesen, und wer denn die
+Welt geschaﬀen habe und dergl. mehr. — Jene meinen
+dann, es k¨onne doch kein h¨oheres Wesen geben, als den
+Siegreich-Vollendeten, den Buddha Schakia Muni, der, ein
+geborener K¨onigssohn, freiwillig als Bettler gelebt und bis
+ans Ende seine hohe Lehre gepredigt hat, zum Heil der
+Menschheit, um uns Alle vom Elend der steten Wieder-
+geburt zu erl¨osen; die Welt nun aber sei von Niemanden
+gemacht3, sie sei selbstgeschaﬀen (selfcreated) , die Natur
+breite sie aus und ziehe sie wieder ein: allein sie sei Das,
+was existirend nicht existirt; sie sei die nothwendige Be-
+gleitung der Wiedergeburten, diese aber seien die Folgen
+unsers s¨undlichen Wandels u.s.w. So gehn denn diese Ge-
+spr¨ache gegen hundert Seiten fort. — Ich erw¨ahne solche
+Thatsachen haupts¨achlich darum, weil es wirklich skan-
+dal¨os ist, wie noch heut zu Tage, in den Schriften deut-
+scher Gelehrten, durchg¨angig Religion und Theismus oh-
+ne Weiteres als identisch und synonym genommen werden;
+w¨ahrend Religion sich zum Theismus verh¨alt, wie das Ge-
+nus zu einer einzigen Species, und in der That bloß Ju-
+denthum und Theismus identisch sind; daher eben auch
+alle V¨olker, die nicht Juden, Christen, oder Mohammeda-
+ner sind, von uns durch den gemeinsamen Namen Heiden
+stigmatisirt werden. Sogar werfen Mohammedaner und Ju-
+den den Christen vor, daß sie nicht reine Theisten w¨aren,
+wegen der Lehre von der Trinit¨at. Denn das Christent-
+hum, was man auch sagen m¨oge, hat Indisches Blut im
+Leibe und daher einen best¨andigen Hang, vom Judenthu-
+me los zu kommen. — W¨are Kants Vernunftkritik, wel-
+che der ernsthafteste Angriﬀauf den Theismus ist, der
+je gewagt worden, weshalb die Philosophieprofessoren sich
+beeilt haben, ihn zu beseitigen, in Buddhaistischen Lan-
+den erschienen; so h¨atte man, obigen Anf¨uhrungen gem¨aß,
+darin nichts weiter gesehn, als einen erbaulichen Traktat,
+zu gr¨undlicherer Widerlegung derer Ketzer und heilsamer
+Befestigung der orthodoxen Lehre des Idealismus, also der
+Lehre von der bloß scheinbaren Existenz dieser unsern Sin-
+nen sich darstellenden Welt. Eben so atheistisch, wie der
+Buddhaismus, sind auch die beiden andern, neben ihm
+in China sich behauptenden Religionen: die der Taossee
+und die des Konfuzius; daher eben die Missionare den
+ersten Vers des Pentateuchs nicht ins Chinesische ¨uber-
+setzen konnten; weil diese Sprache f¨ur Gott und Schaﬀen
+gar keine Ausdr¨ucke hat. Sogar der Mission¨ar G¨utzlaﬀ, in
+seiner soeben erschienenen “Geschichte des Chinesischen
+Reichs”, ist so ehrlich, S. 18, zu sagen: “Es ist außeror-
+dentlich, daß keiner der Philosophen (in China), welche
+jedoch das Naturlicht in vollem Maaße besaßen, sich zur
+Erkenntniß eines Sch¨opfers und Herrn des Universums em-
+porgeschwungen hat.” Ganz ¨ubereinstimmend hiemit ist
+was J. F. Davis (The Chinese, chap. 15, p. 156) anf¨uhrt,
+daß Milne, der Uebersetzer des Shing-yu , im Vorbericht
+¨uber dieses Werk sagt, man k¨onne daraus ersehn: “that
+the bare light of nature, as it is called, even when aided
+by all the light of pagan philosophy, is totally incapable
+of leading men to the knowledge and worship of the true
+God”. Alles dieses best¨atigt, daß das alleinige Fundament
+des Theismus die Oﬀenbarung ist; wie es auch seyn muß,
+wenn nicht die Oﬀenbarung eine ¨uberﬂ¨ussige seyn soll. Bei
+dieser Gelegenheit sei bemerkt, daß das Wort Atheismus
+eine Erschleichung enth¨alt; weil es vorweg den Theismus
+3 Kosmon tonde, phˆesin Hˆerakleitoc, oute tic theˆon oute anthrˆopˆon
+epoiˆesen.
+Plut., de animae procreatione, c. 5.‘
+
+
+§34 Die Vernunft
+51
+als sich von selbst verstehend annimmt. Man sollte statt
+Dessen sagen: Nichtjudenthum, und, statt Atheist, Nicht-
+Jude: so w¨are es ehrlich geredet.
+Da nun, wie oben gesagt, das Daseyn Gottes Sache der
+Oﬀenbarung und dadurch unersch¨utterlich festgestellt ist,
+bedarf es keiner menschlichen Beglaubigung. Die Philo-
+sophie nun aber ist bloß der, eigentlich zum Ueberﬂuß
+und m¨ußiger Weise angestellte Versuch, ein Mal die Ver-
+nunft, also das Verm¨ogen des Menschen, zu denken, zu
+¨uberlegen, zu reﬂektiren, ganz allein ihren eigenen Kr¨aften
+zu ¨uberlassen, — etwan wie man einem Kinde, auf einem
+Rasenplatz, ein Mal das G¨angelband abnimmt, damit es
+seine Kr¨afte versuche, — um zu sehn, was dabei heraus-
+kommt. Man nennt solche Proben und Versuche die Spe-
+kulation; wobei es in der Natur der Sache liegt, daß sie
+von aller Auktorit¨at, g¨ottlicher wie menschlicher, ein Mal
+absehe, solche ignorire und ihren eigenen Weg gehe, um
+auf ihre Weise die h¨ochsten und wichtigsten Wahrheiten
+aufzusuchen. Wenn nun, auf diesem Grund und Boden,
+ihr Resultat kein anderes, als das oben angef¨uhrte unsers
+großen Kant ist; so hat sie deshalb nicht sofort aller Ehr-
+lichkeit und Gewissenhaftigkeit zu entsagen und, wie ein
+Schelm, Schleichwege zu gehn, um nur irgendwie auf den
+j¨udischen Grund und Boden, als ihre conditio sine qua
+non , zur¨uckzugelangen: vielmehr hat sie, ganz redlich und
+einfach, nunmehr der Wahrheit auf anderweitigen Wegen
+nachzusp¨uren, wie solche sich etwan vor ihr aufthun, nie
+aber irgend einem andern Lichte, als dem der Vernunft,
+zu folgen, sondern unbek¨ummert, wohin sie gelange, ih-
+ren Weg zu gehn, getrost und beruhigt, wie Einer, der in
+seinem Berufe arbeitet.
+Wenn unsere Philosophieprofessoren die Sache anders
+verstehn und vermeinen, ihr Brod nicht mit Ehren essen
+zu k¨onnen, so lange sie nicht Gott den Herrn (als ob er
+ihrer bed¨urfte) auf den Thron gesetzt haben; so ist schon
+hieraus erkl¨arlich, warum sie an meinen Sachen keinen Ge-
+schmack haben ﬁnden k¨onnen und ich durchaus nicht ihr
+Mann bin: denn freilich kann ich mit Dergleichen nicht
+dienen und habe nicht, wie sie, jede Messe die neuesten
+Berichte ¨uber den lieben Gott mitzutheilen.
+
+
+Kapitel 6
+Ueber die dritte Klasse der Objekte f¨ur
+das Subjekt und die in ihr herrschende
+Gestaltung des Satzes vom zureichenden
+Grunde
+§35
+Erkl¨arung dieser Klasse von
+Objekten
+Die dritte Klasse der Gegenst¨ande f¨ur das Vorstellungs-
+verm¨ogen bildet der formale Theil der vollst¨andigen Vor-
+stellungen, n¨amlich die a priori gegebenen Anschauungen
+der Formen des ¨außern und innern Sinnes, des Raums und
+der Zeit.
+Als reine Anschauungen sind sie f¨ur sich abgeson-
+dert von den vollst¨andigen Vorstellungen und den erst
+durch diese hinzukommenden Bestimmungen des Voll-
+oder Leerseyns, Gegenst¨ande des Vorstellungsverm¨ogens,
+da sogar reine Punkte und Linien gar nicht dargestellt,
+sondern nur a priori angeschaut werden k¨onnen, wie auch
+die unendliche Ausdehnung und unendliche Theilbarkeit
+des Raumes und der Zeit allein Gegenst¨ande der reinen
+Anschauung und der empirischen fremd sind. Was die-
+se Klasse von Vorstellungen, in welcher Zeit und Raum
+rein angeschaut werden, von der ersten Klasse, in der sie
+(und zwar im Verein) wahrgenommen werden, unterschei-
+det, das ist die Materie, welche ich daher einerseits als die
+Wahrnehmbarkeit von Zeit und Raum, und andererseits
+als die objektiv gewordene Kausalit¨at erkl¨art habe.
+Hingegen ist die Verstandesform der Kausalit¨at nicht
+f¨ur sich und abgesondert ein Gegenstand des Vorstellungs-
+verm¨ogens, sondern kommt erst mit und an dem Materi-
+ellen der Erkenntniß ins Bewußtseyn.
+§36
+Satz vom Grunde des Seyns
+Raum und Zeit haben die Beschaﬀenheit, daß alle ihre
+Theile in einem Verh¨altniß zu einander stehn, in Hinsicht
+auf welches jeder derselben durch einen andern bestimmt
+und bedingt ist. Im Raum heißt dies Verh¨altniß Lage,
+in der Zeit Folge. Diese Verh¨altnisse sind eigenth¨umliche,
+von allen andern m¨oglichen Verh¨altnissen unserer Vorstel-
+lungen durchaus verschiedene, daher weder der Verstand,
+noch die Vernunft, mittelst bloßer Begriﬀe, sie zu fassen
+vermag; sondern einzig und allein verm¨oge der reinen An-
+schauung a priori sind sie uns verst¨andlich: denn was oben
+und unten, rechts und links, hinten und vorn, was vor und
+nach sei, ist aus bloßen Begriﬀen nicht deutlich zu ma-
+chen. Kant belegt Dies sehr richtig damit, daß der Unter-
+schied zwischen dem rechten und linken Handschuh durch-
+aus nicht anders, als mittelst der Anschauung verst¨andlich
+zu machen ist. Das Gesetz nun, nach welchem die Theile
+des Raums und der Zeit, in Absicht auf jene Verh¨altnisse,
+einander bestimmen, nenne ich den Satz vom zureichenden
+Grunde des Seyns, principium rationis suﬃcientis essen-
+di. Ein Beispiel von diesem Verh¨altniß ist schon im 15. Pa-
+ragraph gegeben, an der Verbindung zwischen den Seiten
+und den Winkeln eines Dreiecks, und daselbst gezeigt, daß
+dieses Verh¨altniß sowohl von dem zwischen Ursache und
+Wirkung, als dem zwischen Erkenntnißgrund und Folge,
+ganz und gar verschieden sei, weshalb hier die Bedingung
+Grund des Seyns, ratio essendi genannt werden mag. Es
+versteht sich von selbst, daß die Einsicht in einen solchen
+Seynsgrund Erkenntnißgrund werden kann, eben wie auch
+die Einsicht in das Gesetz der Kausalit¨at und seine An-
+wendung auf einen bestimmten Fall Erkenntnißgrund der
+Wirkung ist, wodurch aber keineswegs die g¨anzliche Ver-
+schiedenheit zwischen Grund des Seyns, des Werdens und
+des Erkennens aufgehoben wird. In vielen F¨allen ist Das,
+was nach einer Gestaltung unsers Satzes Folge ist, nach
+der andern Grund: so ist sehr oft die Wirkung Erkenntniß-
+grund der Ursache. Z.B. das Steigen des Thermometers ist,
+nach dem Gesetze der Kausalit¨at, Folge der vermehrten
+W¨arme; nach dem Satze vom Grunde des Erkennens aber
+ist es Grund, Erkenntnißgrund der vermehrten W¨arme,
+wie auch des Urtheils, welches diese aussagt.
+52
+
+
+§39 Geometrie
+53
+§37
+Seynsgrund im Raume
+Im Raum ist durch die Lage jedes Theils desselben, wir
+wollen sagen einer gegebenen Linie (von Fl¨achen, K¨orpern,
+Punkten, gilt das Selbe), gegen irgend eine andere Linie,
+auch ihre von der ersten ganz verschiedene Lage gegen
+jede m¨ogliche andere durchaus bestimmt, so daß die letz-
+tere Lage zur ersteren im Verh¨altniß der Folge zum Grun-
+de steht. Da die Lage der Linie gegen irgend eine der
+m¨oglichen andern eben so ihre Lage gegen alle andern be-
+stimmt, also auch die vorhin als bestimmt angenommene
+Lage gegen die erste; so ist es einerlei, welche man zuerst
+als bestimmt und die andern bestimmend, d.h. als ratio
+und die andern als rationata betrachten will. Dies daher,
+weil im Raume keine Succession ist, da ja eben durch Ver-
+einigung des Raumes mit der Zeit, zur Gesammtvorstel-
+lung des Komplexes der Erfahrung, die Vorstellung des Zu-
+gleichseyns entsteht. Bei dem Grunde des Seyns im Raum
+herrscht also ¨uberall ein Analogen der sogenannten Wech-
+selwirkung: wovon das Ausf¨uhrlichere bei Betrachtung der
+Reciprokation der Gr¨unde §48. Weil nun jede Linie in Hin-
+sicht auf ihre Lage sowohl bestimmt durch alle andern, als
+sie bestimmend ist; so ist es nur Willk¨ur, wenn man irgend
+eine Linie bloß als die andern bestimmend und nicht als
+bestimmt betrachtet, und die Lage jeder gegen irgend eine
+andere l¨aßt die Frage zu nach ihrer Lage gegen irgend eine
+dritte, verm¨oge welcher zweiten Lage die erste nothwen-
+dig so ist, wie sie ist. Daher ist auch in der Verkettung
+der Gr¨unde des Seyns, wie in der der Gr¨unde des Wer-
+dens, gar kein Ende a parte ante zu ﬁnden, und, wegen
+der Unendlichkeit des Raums und der in ihm m¨oglichen
+Linien, auch keines a parte post . Alle m¨oglichen relativen
+R¨aume sind Figuren, weil sie begr¨anzt sind, und alle die-
+se Figuren haben, wegen der gemeinschaftlichen Gr¨anzen,
+ihren Seynsgrund eine in der andern. Die series rationum
+essendi im Raum geht also, wie die series rationum ﬁn-
+di, in inﬁnitum, und zwar nicht nur, wie jene, nach einer,
+sondern nach allen Richtungen.
+Ein Beweis von allem Diesen ist unm¨oglich: denn es sind
+S¨atze, deren Wahrheit transscendental ist, indem sie ihren
+Grund unmittelbar in der a priori gegebenen Anschauung
+des Raumes haben.
+§38
+Seynsgrund in der Zeit. Arith-
+metik
+In der Zeit ist jeder Augenblick bedingt durch den vori-
+gen. So einfach ist hier der Grund des Seyns, als Gesetz
+der Folge; weil die Zeit nur Eine Dimension hat, daher
+keine Mannigfaltigkeit der Beziehungen in ihr seyn kann.
+Jeder Augenblick ist bedingt durch den vorigen; nur durch
+jenen kann man zu diesem gelangen; nur sofern jener war
+, verﬂossen ist, ist dieser. Auf diesem Nexus der Theile
+der Zeit beruht alles Z¨ahlen, dessen Worte nur dienen,
+die einzelnen Schritte der Succession zu markiren; folglich
+auch die ganze Arithmetik, die durchweg nichts Anderes,
+als methodische Abk¨urzungen des Z¨ahlens lehrt. Jede Zahl
+setzt die vorhergehenden als Gr¨unde ihres Seyns voraus:
+zur Zehn kann ich nur gelangen durch alle vorhergehen-
+den, und bloß verm¨oge dieser Einsicht in den Seynsgrund
+weiß ich, daß wo Zehn sind, auch Acht, Sechs, Vier sind.
+§39
+Geometrie
+Eben so beruht auf dem Nexus der Lage der Theile des
+Raums die ganze Geometrie. Sie w¨are demnach eine Ein-
+sicht in jenen Nexus: da solche aber, wie oben gesagt,
+nicht durch bloße Begriﬀe m¨oglich ist, sondern nur durch
+Anschauung; so m¨ußte jeder geometrische Satz auf die-
+se zur¨uckgef¨uhrt werden, und der Beweis best¨ande bloß
+darin, daß man den Nexus, auf dessen Anschauung es an-
+kommt, deutlich heraush¨obe; weiter k¨onnte man nichts
+thun. Wir ﬁnden indessen die Behandlung der Geometrie
+ganz anders. Nur die zw¨olf Axiome Euklids l¨aßt man auf
+bloßer Anschauung beruhen, und sogar beruhen von die-
+sen eigentlich nur das neunte, elfte und zw¨olfte auf ein-
+zelnen verschiedenen Anschauungen, alle die andern aber
+auf der Einsicht, daß man in der Wissenschaft nicht, wie
+in der Erfahrung, es mit realen Dingen, die f¨ur sich ne-
+ben einander bestehn und ins Unendliche verschieden seyn
+k¨onnen, zu thun habe; sondern mit Begriﬀen, und in der
+Mathematik mit Normalanschauungen , d.h. Figuren und
+Zahlen, die f¨ur alle Erfahrung gesetzgebend sind und da-
+her das Vielumfassende des Begriﬀs mit der durchg¨angigen
+Bestimmtheit der einzelnen Vorstellung vereinigen. Denn
+obgleich sie, als anschauliche Vorstellung, durchweg ge-
+nau bestimmt sind und auf diese Weise f¨ur Allgemeinheit
+durch das Unbestimmtgelassene keinen Raum geben; so
+sind sie doch allgemein: weil sie die bloßen Formen aller
+Erscheinungen sind, und als solche von allen realen Ob-
+jekten, denen eine solche Form zukommt, gelten. Daher
+von diesen Normalanschauungen, selbst in der Geometrie,
+so gut als von den Begriﬀen, Das gelten w¨urde, was Plato
+von seinen Ideen sagt, daß n¨amlich gar nicht zwei glei-
+che existiren k¨onnen, weil solche nur Eine w¨aren1. Dies
+w¨urde, sage ich, auch von den Normalanschauungen in
+der Geometrie gelten, w¨aren sie nicht, als allein r¨aumliche
+Objekte, durch das bloße Nebeneinanderseyn , den Ort ,
+unterschieden. Diese Bemerkung hat, nach dem Aristote-
+les, schon Plato selbst gemacht: ετι δε, παρα τα αιστηˆετα
+και τα ειδˆε, τα ματηˆεματικα τˆον πραγματˆον ειναι πηˆεσι με-
+ταξψ, διαπηεροντα τˆον μεν αιστηˆετˆον τˆο αιδια και ακινˆετα
+ειναι, τˆον δε ειδˆον τˆο τα μεν πολλ΄ αττα ηομοια ειναι, το δε
+ειδος αυτο ηεν ηεκαστον μονον (item praeter sensibilia et
+species, mathematica rerum ait media esse, a sensibilibus
+1 Die Platonischen Ideen lassen sich allenfalls beschreiben als
+Normalanschauungen, die nicht nur, wie die mathematischen, f¨ur
+das Formale, sondern auch f¨ur das Materiale der vollst¨andigen Vor-
+stellungen g¨ultig w¨aren: also vollst¨andige Vorstellungen, die, als sol-
+che, durchg¨angig bestimmt w¨aren, und doch zugleich, wie die Begrif-
+fe, Vieles unter sich befaßten; d.h. nach meiner §28 gegebenen Er-
+kl¨arung, Repr¨asentanten der Begriﬀe, die ihnen aber v¨ollig ad¨aquat
+w¨aren.
+
+
+§39 Geometrie
+54
+quidem diﬀerentia eo, quod perpetua et immobilia sunt, a
+speciebus vero eo, quod illorum quidem multa quaedam si-
+milia sunt, species vero ipsa unaquaeque sola). Metaph.
+I, 6 , womit X, 1 zu vergleichen. Die bloße Einsicht nun,
+daß ein solcher Unterschied des Orts die ¨ubrige Identit¨at
+nicht aufhebt, scheint mir jene neun Axiome ersetzen zu
+k¨onnen und dem Wesen der Wissenschaft, deren Zweck es
+ist, das Einzelne aus dem Allgemeinen zu erkennen, ange-
+messener zu seyn, als die Aufstellung neun verschiedener
+Axiome, die auf Einer Einsicht beruhen. Alsdann n¨amlich
+wird von den geometrischen Figuren gelten, was Aristote-
+les, Metaph. X, 3 sagt:
+εν τουτοις ηˆε ισοτˆες ηενοτˆες (in
+illis aequalitas unitas est) .
+Von den Normalanschauungen in der Zeit aber, den Zah-
+len, gilt sogar kein solcher Unterschied des Nebeneinan-
+derseyns, sondern schlechthin, wie von den Begriﬀen, die
+identitas indiscernibilium , und es giebt nur Eine F¨unf und
+nur Eine Sieben. Auch hier ließe sich ein Grund daf¨ur ﬁn-
+den, daß 7 + 5 = 12 nicht, wie Herder in der Metakritik
+meint, ein identischer, sondern wie Kant so tiefsinnig ent-
+deckt hat, ein synthetischer Satz a priori ist, der auf reiner
+Anschauung beruht. 12 = 12 ist ein identischer Satz.
+Auf die Anschauung beruft man also in der Geome-
+trie sich eigentlich nur bei den Axiomen. Alle ¨ubrigen
+Lehrs¨atze werden demonstrirt, d.h. man giebt einen Er-
+kenntnißgrund des Lehrsatzes an, welcher Jeden zwingt
+denselben als wahr anzunehmen: also man weist die logi-
+sche, nicht die transscendentale Wahrheit des Lehrsatzes
+nach. (§§ 30 und 32.) Diese aber, welche im Grund des
+Seyns und nicht in dem des Erkennens liegt, leuchtet nie
+ein, als nur mittelst der Anschauung. Daher kommt es,
+daß man nach so einer geometrischen Demonstration zwar
+die Ueberzeugung hat, daß der demonstrirte Satz wahr sei,
+aber keineswegs einsieht, warum was er behauptet so ist,
+wie es ist: d.h. man hat den Seynsgrund nicht, sondern
+gew¨ohnlich ist vielmehr erst jetzt ein Verlangen nach die-
+sem entstanden. Denn der Beweis durch Aufweisung des
+Erkenntnißgrundes wirkt bloß Ueberf¨uhrung (convictio) ,
+nicht Einsicht (cognitio): er w¨are deswegen vielleicht rich-
+tiger elenchus , als demonstratio zu nennen. Daher kommt
+es, daß er gew¨ohnlich ein unangenehmes Gef¨uhl hinterl¨aßt,
+wie es der bemerkte Mangel an Einsicht ¨uberall giebt, und
+hier wird der Mangel der Erkenntniß, warum etwas so sei,
+erst f¨uhlbar durch die gegebene Gewißheit, daß es so sei.
+Die Empﬁndung dabei hat Aehnlichkeit mit der, die es
+uns giebt, wenn man uns etwas aus der Tasche, oder in die
+Tasche, gespielt hat, und wir nicht begreifen wie. Der, wie
+es in solchen Demonstrationen geschieht, ohne den Grund
+des Seyns gegebene Erkenntnißgrund ist manchen Lehren
+der Physik analog, die das Ph¨anomen darlegen, ohne die
+Ursache angeben zu k¨onnen, wie z.B. der Leidenfrostische
+Versuch, sofern er auch im Platinatiegel gelingt. Hinge-
+gen gew¨ahrt der durch Anschauung erkannte Seynsgrund
+eines geometrischen Satzes Befriedigung, wie jede gewon-
+nene Erkenntniß. Hat man diesen, so st¨utzt sich die Ue-
+berzeugung von der Wahrheit des Satzes allein auf ihn,
+keineswegs mehr auf den durch Demonstration gegebenen
+Fig. 3
+Erkenntnißgrund. Z.B. den 6. Satz des ersten Buchs Eu-
+klids: “Wenn in einem Dreieck zwei Winkel gleich sind,
+sind auch die ihnen gegen¨uberliegenden Seiten gleich” be-
+weist Euklid so: (siehe Fig. 3) Das Dreieck sei a b c , worin
+der Winkel a b c dem Winkel a c b gleich ist; so behaupte
+ich, daß auch die Seite a c der Seite a b gleich ist.
+Denn ist die Seite a c der Seite a b ungleich, so ist eine
+davon gr¨oßer, a b sei gr¨oßer. Man schneide von der gr¨oßern
+a b das St¨uck d b ab, das der kleinern a c gleich ist, und
+ziehe d c. Weil nun (in den Dreiecken d b c, a b c) d
+b gleich a c und b c beiden gemeinschaftlich ist, so sind
+die zwei Seiten d b und b c den zwei Seiten a c und c
+b gleich, jede einzeln genommen, der Winkel d b c dem
+Winkel a c b , und die Grundlinie d c der Grundlinie a b
+, und das Dreieck a b c dem Dreieck d c b , das gr¨oßere
+dem kleineren, welches ungereimt ist. a b ist also a c nicht
+ungleich, folglich gleich.
+In diesem Beweis haben wir nun einen Erkenntnißgrund
+der Wahrheit des Lehrsatzes. Wer gr¨undet aber seine Ue-
+berzeugung von jener geometrischen Wahrheit auf die-
+sen Beweis? und nicht vielmehr auf den durch Anschau-
+ung erkannten Seynsgrund, verm¨oge welches, (durch eine
+Nothwendigkeit die sich weiter nicht demonstriren, son-
+dern nur anschauen l¨aßt,) wenn von den beiden Endpunk-
+ten einer Linie sich zwei andere gleich tief gegen einander
+neigen, sie nur in einem Punkt, der von beiden jenen End-
+punkten gleich weit entfernt ist, zusammentreﬀen k¨onnen,
+indem die entstehenden zwei Winkel eigentlich nur Einer
+sind, der bloß durch die entgegengesetzte Lage als zwei er-
+scheint, weshalb kein Grund vorhanden ist, aus dem die
+Linien n¨aher dem Einen als dem andern Punkte sich be-
+gegnen sollten.
+Durch Erkenntniß des Seynsgrundes sieht man die
+nothwendige Folge des Bedingten aus seiner Bedingung,
+hier der Gleichheit der Seiten aus der Gleichheit der Win-
+kel, ein, ihre Verbindung: durch den Erkenntnißgrund aber
+bloß das Zusammendaseyn Beider. Ja, es ließe sich so-
+gar behaupten, daß man durch die gew¨ohnliche Methode
+der Beweise eigentlich nur ¨uberf¨uhrt werde, daß Beides
+in gegenw¨artiger, zum Beispiel aufgestellter Figur zusam-
+men dasei, keineswegs aber daß es immer zusammen dasei,
+von welcher Wahrheit (da die nothwendige Verkn¨upfung
+ja nicht gezeigt wird) man hier eine bloß auf Induktion ge-
+gr¨undete Ueberzeugung erhalte, die darauf beruht, daß bei
+jeder Figur, die man macht, es sich so ﬁndet. Freilich ist
+nur bei so einfachen Lehrs¨atzen, wie jener sechste Euklids,
+
+
+§39 Geometrie
+55
+Fig. 4
+der Seynsgrund so leicht in die Augen fallend: doch bin ich
+¨uberzeugt, daß bei jedem, auch dem verwickeltesten Lehr-
+satze, derselbe aufzuweisen und die Gewißheit des Satzes
+auf eine solche einfache Anschauung zur¨uckzuf¨uhren seyn
+muß. Auch ist sich Jeder der Nothwendigkeit eines solchen
+Seynsgrundes f¨ur jedes r¨aumliche Verh¨altniß, so gut wie
+der Nothwendigkeit der Ursache f¨ur jede Ver¨anderung, a
+priori bewußt. Allerdings muß derselbe, bei komplicirten
+Lehrs¨atzen, sehr schwer anzugeben seyn, und zu schwieri-
+gen geometrischen Untersuchungen ist hier nicht der Ort.
+Ich will daher, bloß um noch deutlicher zu machen was
+ich meine, einen nur wenig komplicirteren Satz, dessen
+Seynsgrund jedoch wenigstens nicht sogleich in die Augen
+f¨allt, auf selbigen zur¨uckzuf¨uhren suchen. Ich gehe zehn
+Lehrs¨atze weiter, zum sechszehnten, “In jedem Dreieck,
+dessen eine Seite verl¨angert worden, ist der ¨außere Winkel
+gr¨oßer, als jeder der beiden gegen¨uberstehenden innern.”
+Euklids Beweis ist folgender: (siehe Fig. 4).
+Das Dreieck sei a b c: man verl¨angere die Seite b c nach
+d , und ich behaupte, daß der ¨außere Winkel a c d gr¨oßer
+sei, als jeder der beiden innern gegen¨uberstehenden. —
+Man halbire die Seite a c bei e , ziehe b e , verl¨angere sie
+bis f und mache e f gleich e b , verbinde f c und verl¨angere
+a c bis g. — Da nun a e gleich e c und b e gleich e f ist,
+so sind die zwei Seiten a e und e b gleich den zwei Seiten
+c e und e f , jede einzeln genommen, und der Winkel a e
+b gleich dem Winkel
+f e c: denn es sind Scheitelwinkel.
+Mithin ist die Grundlinie a b gleich der Grundlinie f c und
+das Dreieck a b e ist gleich dem Dreieck f e c und die
+¨ubrigen Winkel den ¨ubrigen Winkeln, folglich auch der
+Winkel b a e dem Winkel e c f. Es ist aber e c d gr¨oßer
+als e c f , folglich ist auch der Winkel a c d gr¨oßer als
+der Winkel b a e. — Halbiret man auch b c , so wird auf
+¨ahnliche Art bewiesen, daß auch der Winkel b c g , d.i.
+sein Scheitelwinkel a c d gr¨oßer sei als a b c .
+Ich w¨urde den selben Satz folgendermaaßen beweisen:
+(siehe Fig. 5)
+Fig. 5
+Damit Winkel b a c nur gleich komme, geschweige
+¨ubertreﬀe, Winkel a c d , m¨ußte (denn das eben heißt
+Gleichheit der Winkel) die Linie b a auf c a in der selben
+Richtung liegen wie b d , d.h. mit b d parallel seyn, d.h. nie
+mit b d zusammentreﬀen: sie muß aber (Seynsgrund), um
+ein Dreieck zu bilden, auf b d treﬀen, also das Gegentheil
+dessen thun, was erfordert w¨are, damit Winkel b a c nur
+die Gr¨oße von a c d erreichte.
+Damit Winkel a b c nur gleich komme, geschweige
+¨ubertreﬀe, Winkel a c d , m¨ußte (denn das eben heißt
+Gleichheit der Winkel) die Linie b a in der selben Rich-
+tung auf b d liegen wie a c , d.h. mit a c parallel seyn, d.h.
+nie mit a c zusammentreﬀen: sie muß aber, um ein Drei-
+eck zu bilden, auf a c treﬀen, also das Gegentheil thun
+von dem, was erfordert w¨are, damit Winkel a b c nur die
+Gr¨oße von a c d erreichte.
+Durch alles Dieses habe ich keineswegs eine neue Metho-
+de mathematischer Demonstrationen vorschlagen, auch
+eben so wenig meinen Beweis an die Stelle des Euklidi-
+schen setzen wollen, als wohin er, seiner ganzen Natur
+nach und auch schon weil er den Begriﬀvon Parallellini-
+en voraussetzt, der im Euklid erst sp¨ater vorkommt, nicht
+paßt; sondern ich habe nur zeigen wollen, was Seynsgrund
+sei und wie er sich vom Erkenntnißgrunde unterscheide,
+indem dieser bloß convictio wirkt, welche etwas ganz An-
+deres ist, als Einsicht in den Seynsgrund. Daß man aber
+in der Geometrie nur strebt convictio zu wirken, welche,
+wie gesagt, einen unangenehmen Eindruck macht, nicht
+aber Einsicht in den Grund des Seyns, die, wie jede Ein-
+sicht, befriedigt und erfreut; Dies m¨ochte nebst Anderm
+ein Grund seyn, warum manche sonst vortreﬄiche K¨opfe
+Abneigung gegen die Mathematik haben.
+Ich kann mich nicht entbrechen, nochmals die, schon an
+einem andern Orte gegebene Figur herzusetzen Fig. 6, de-
+ren bloßer Anblick, ohne alles Gerede, von der Wahrheit
+des Pythagorischen Lehrsatzes zwanzig Mal mehr Ueber-
+zeugung giebt, als der Euklidische Mausefallenbeweis. Der
+f¨ur dieses Kapitel sich interessirende Leser ﬁndet den Ge-
+genstand desselben weiter ausgef¨uhrt in der “Welt als Wil-
+le und Vorstellung”, Bd. I, § 15, und Bd. 2, Kap. 13.
+
+
+§39 Geometrie
+56
+Fig. 6
+
+
+Kapitel 7
+Ueber die vierte Klasse der Objekte f¨ur
+das Subjekt und die in ihr herrschende
+Gestaltung des Satzes vom zureichenden
+Grunde
+§40
+Allgemeine Erkl¨arung
+Die letzte unserer Betrachtung noch ¨ubrige Klasse der Ge-
+genst¨ande des Vorstellungsverm¨ogens ist eine gar eigene,
+aber sehr wichtige: sie begreift f¨ur Jeden nur ein Objekt,
+n¨amlich das unmittelbare Objekt des innern Sinnes, das
+Subjekt des Wollens , welches f¨ur das erkennende Subjekt
+Objekt ist und zwar nur dem innern Sinn gegeben, daher
+es allein in der Zeit, nicht im Raum, erscheint, und auch
+da noch, wie wir sehn werden, mit einer bedeutenden Ein-
+schr¨ankung.
+§41
+Subjekt des Erkennens und
+Objekt
+Jede Erkenntniß setzt unumg¨anglich Subjekt und Ob-
+jekt voraus. Daher ist auch das Selbstbewußtseyn nicht
+schlechthin einfach; sondern zerf¨allt, eben wie das Bewußt-
+sein von andern Dingen (d.i. das Anschauungsverm¨ogen),
+in ein Erkanntes und ein Erkennendes. Hier tritt nun das
+Erkannte durchaus und ausschließlich als Wille auf.
+Demnach erkennt das Subjekt sich nur als ein Wollendes
+, nicht aber als ein Erkennendes . Denn das vorstellende
+Ich, das Subjekt des Erkennens, kann, da es, als nothwen-
+diges Korrelat aller Vorstellungen, Bedingung derselben
+ist, nie selbst Vorstellung oder Objekt werden; sondern von
+ihm gilt der sch¨one Ausspruch des heiligen Upanischad: Id
+videndum non est: omnia videt; et id audiendum non est:
+omnia audit; sciendum non est: omnia scit; et intelligen-
+dum non est: omnia intelligit. Praeter id, videns, et sciens,
+et audiens, et intelligens ens aliud non est. — Oupnekhat.
+Vol. I, p. 202. —
+Daher also giebt es kein Erkennen des Erkennens ; weil
+dazu erfordert w¨urde, daß das Subjekt sich vom Erken-
+nen trennte und nun doch das Erkennen erkennte, was
+unm¨oglich ist.
+Auf den Einwand: “Ich erkenne nicht nur, sondern ich
+weiß doch auch, daß ich erkenne”, w¨urde ich antworten:
+Dein Wissen von deinem Erkennen ist von deinem Erken-
+nen nur im Ausdruck unterschieden, “Ich weiß, daß ich
+erkenne”, sagt nicht mehr, als “Ich erkenne”, und dieses,
+so ohne weitere Bestimmung, sagt nicht mehr, als “Ich.”
+Wenn dein Erkennen und dein Wissen von diesem Erken-
+nen zweierlei sind, so versuche nur ein Mal jedes f¨ur sich
+allein zu haben, jetzt zu erkennen, ohne darum zu wis-
+sen, und jetzt wieder bloß vom Erkennen zu wissen, ohne
+daß dies Wissen zugleich das Erkennen sei. Freilich l¨aßt
+sich von allem besonderen Erkennen abstrahiren und so
+zu dem Satz “Ich erkenne” gelangen, welches die letzte
+uns m¨ogliche Abstraktion ist, aber identisch mit dem Satz
+“F¨ur mich sind Objekte” und dieser identisch mit dem
+“Ich bin Subjekt”, welcher nicht mehr enth¨alt als das blo-
+ße “Ich.”
+Nun k¨onnte man aber fragen, woher uns, wenn das Sub-
+jekt nicht erkannt wird, seine verschiedenen Erkenntniß-
+kr¨afte, Sinnlichkeit, Verstand, Vernunft, bekannt seien. —
+Diese sind uns nicht dadurch bekannt, daß das Erkennen
+Objekt f¨ur uns geworden ist, sonst w¨urden ¨uber selbige
+nicht so viele widersprechende Urtheile vorhanden seyn;
+vielmehr sind sie erschlossen, oder richtiger: sie sind allge-
+meine Ausdr¨ucke f¨ur die aufgestellten Klassen der Vorstel-
+lungen, die man zu jeder Zeit, eben in jenen Erkenntniß-
+kr¨aften, mehr oder weniger bestimmt unterschied. Aber
+sie sind mit R¨ucksicht auf das als Bedingung nothwendige
+Korrelat jener Vorstellungen, das Subjekt, von ihnen ab-
+strahirt, verhalten sich folglich zu den Klassen der Vorstel-
+lungen gerade so, wie das Subjekt ¨uberhaupt zum Objekt
+¨uberhaupt. Wie mit dem Subjekt sofort auch das Objekt
+gesetzt ist (da sogar das Wort sonst ohne Bedeutung ist)
+57
+
+
+§43 Das Wollen. Gesetz der Motivation
+58
+und auf gleiche Weise mit dem Objekt das Subjekt, und
+also Subjektseyn gerade so viel bedeutet, als ein Objekt
+haben, und Objektseyn so viel, als vom Subjekt erkannt
+werden: genau eben so nun ist auch mit einem auf irgend
+eine Weise bestimmten Objekt sofort auch das Subjekt
+als auf eben solche Weise erkennend gesetzt. Insofern ist
+es einerlei, ob ich sage: Die Objekte haben solche und sol-
+che ihnen anh¨angende und eigenth¨umliche Bestimmungen;
+oder: das Subjekt erkennt auf solche und solche Weisen;
+einerlei, ob ich sage: die Objekte sind in solche Klassen zu
+theilen; oder: dem Subjekt sind solche unterschiedne Er-
+kenntnißkr¨afte eigen. Auch von dieser Einsicht ﬁndet sich
+die Spur bei jenem wundersamen Gemisch von Tiefsinn
+und Oberﬂ¨achlichkeit, dem Aristoteles, wie ¨uberhaupt bei
+ihm schon der Keim zur kritischen Philosophie liegt. De
+anima III, 8 sagt er:
+ηˆε πσψςηˆε τα οντα πˆος εστι παντα·
+(anima quodammodo est universa, quae sunt) sodann: ηο
+νους εστι ειδος ειδˆον, d.h. der Verstand ist die Form der
+Formen, και ηˆε αιστηˆεσις ειδος αιστηˆετˆον, und die Sinnlich-
+keit die Form der Sinnesobjekte. Demnach nun, ob man
+sagt: Sinnlichkeit und Verstand sind nicht mehr; oder: die
+Welt hat ein Ende, — ist Eins. Ob man sagt: es giebt keine
+Begriﬀe; oder: die Vernunft ist weg und es giebt nur noch
+Thiere, — ist Eins.
+Das Verkennen dieses Verh¨altnisses ist der Anlaß des
+Streites zwischen Realismus und Idealismus, zuletzt auf-
+tretend als Streit des alten Dogmatismus mit den Kantia-
+nern, oder der Ontologie und Metaphysik mit der trans-
+scendentalen Aesthetik und transscendentalen Logik, wel-
+cher auf dem Verkennen jenes Verh¨altnisses bei Betrach-
+tung der ersten und dritten der von mir aufgestellten Klas-
+sen der Vorstellungen beruht; wie der Streit der Realisten
+und Nominalisten, im Mittelalter, auf dem Verkennen je-
+nes Verh¨altnisses in Beziehung auf die zweite unserer Klas-
+sen der Vorstellungen.
+§42
+Subjekt des Wollens
+Das Subjekt des Erkennens kann, laut Obigem, nie er-
+kannt, nie Objekt, Vorstellung, werden. Da wir dennoch
+nicht nur eine ¨außere (in der Sinnesanschauung), sondern
+auch eine innere Selbsterkenntniß haben, jede Erkenntniß
+aber, ihrem Wesen zufolge, ein Erkanntes und ein Erken-
+nendes voraussetzt; so ist das Erkannte in uns, als sol-
+ches, nicht das Erkennende, sondern das Wollende, das
+Subjekt des Wollens, der Wille. Von der Erkenntniß aus-
+gehend kann man sagen “Ich erkenne” sei ein analytischer
+Satz, dagegen “Ich will” ein synthetischer und zwar a po-
+steriori , n¨amlich durch Erfahrung, hier durch innere (d.h.
+allein in der Zeit) gegeben. Insofern w¨are also das Subjekt
+des Wollens f¨ur uns ein Objekt. Wenn wir in unser Inneres
+blicken, ﬁnden wir uns immer als wollend . Jedoch hat das
+Wollen viele Grade, vom leisesten Wunsche bis zur Lei-
+denschaft, und daß nicht nur alle Aﬀekte, sondern auch
+alle die Bewegungen unsers Innern, welche man dem wei-
+ten Begriﬀe Gef¨uhl subsumirt, Zust¨ande des Willens sind,
+habe ich ¨ofter auseinandergesetzt, z.B. in den “Grundpro-
+blemen der Ethik”, S. 11, und auch sonst.
+Die Identit¨at nun aber des Subjekts des Wollens mit
+dem erkennenden Subjekt, verm¨oge welcher (und zwar
+nothwendig) das Wort “Ich” beide einschließt und bezeich-
+net, ist der Weltknoten und daher unerkl¨arlich. Denn nur
+die Verh¨altnisse der Objekte sind uns begreiﬂich: unter
+diesen aber k¨onnen zwei nur insofern Eins seyn, als sie
+Theile eines Ganzen sind. Hier hingegen, wo vom Subjekt
+die Rede ist, gelten die Regeln f¨ur das Erkennen der Ob-
+jekte nicht mehr, und eine wirkliche Identit¨at des Erken-
+nenden mit dem als wollend Erkannten, also des Subjekts
+mit dem Objekte, ist unmittelbar gegeben . Wer aber das
+Unerkl¨arliche dieser Identit¨at sich recht vergegenw¨artigt,
+wird sie mit mir das Wunder κατ΄ εξοςηˆεν nennen.
+Wie nun das subjektive Korrelat der ersten Klasse der
+Vorstellungen der Verstand ist, das der zweiten die Ver-
+nunft, das der dritten die reine Sinnlichkeit; so ﬁnden wir
+als das dieser vierten den innern Sinn, oder ¨uberhaupt das
+Selbstbewußtseyn.
+§43
+Das Wollen. Gesetz der Moti-
+vation
+Eben weil das Subjekt des Wollens dem Selbstbewußtseyn
+unmittelbar gegeben ist, l¨aßt sich nicht weiter deﬁniren,
+oder beschreiben, was Wollen sei: vielmehr ist es die un-
+mittelbarste aller unserer Erkenntnisse, ja die, deren Un-
+mittelbarkeit auf alle ¨ubrigen, als welche sehr mittelbar
+sind, zuletzt Licht werfen muß.
+Bei jedem wahrgenommenen Entschluß sowohl Ande-
+rer, als unserer selbst, halten wir uns berechtigt, zu fragen
+Warum? d.h. wir setzen als nothwendig voraus, es sei ihm
+etwas vorhergegangen, daraus er erfolgt ist, und welches
+wir den Grund, genauer, das Motiv der jetzt erfolgenden
+Handlung nennen. Ohne ein solches ist dieselbe uns so un-
+denkbar, wie die Bewegung eines leblosen K¨orpers ohne
+Stoß, oder Zug. Demnach geh¨ort das Motiv zu den Ursa-
+chen und ist auch bereits unter diesen als die dritte Form
+der Kausalit¨at, §20, aufgez¨ahlt und charakterisirt worden.
+Allein die ganze Kausalit¨at ist nur die Gestalt des Sat-
+zes vom Grunde in der ersten Klasse der Objekte, also in
+der in ¨außerer Anschauung gegebenen K¨orperwelt. Dort
+ist sie das Band der Ver¨anderungen unter einander, indem
+die Ursache die von außen hinzutretende Bedingung jedes
+Vorgangs ist. Das Innere solcher Vorg¨ange hingegen bleibt
+uns dort ein Geheimniß: denn wir stehn daselbst immer
+draußen. Da sehn wir wohl diese Ursache jene Wirkung
+mit Nothwendigkeit hervorbringen; aber wie sie eigentlich
+Das k¨onne, was n¨amlich dabei im Innern vorgehe, erfahren
+wir nicht. So sehn wir die mechanischen, physikalischen,
+chemischen Wirkungen, und auch die der Reize, auf ih-
+re respektiven Ursachen jedesmal erfolgen; ohne deswegen
+
+
+§45 Ged¨achtniß
+59
+jemals den Vorgang durch und durch zu verstehn; son-
+dern die Hauptsache dabei bleibt uns ein Mysterium: wir
+schreiben sie alsdann den Eigenschaften der K¨orper, den
+Naturkr¨aften, auch der Lebenskraft, zu, welches jedoch
+lauter qualitates occultae sind. Nicht besser nun w¨urde es
+mit unserm Verst¨andniß der Bewegungen und Handlungen
+der Thiere und Menschen stehn, und wir w¨urden auch die-
+se auf unerkl¨arliche Weise durch ihre Ursachen (Motive)
+hervorgerufen sehn; wenn uns nicht hier die Einsicht in das
+Innere des Vorgangs er¨oﬀnet w¨are: wir wissen n¨amlich, aus
+der an uns selbst gemachten innern Erfahrung, daß das-
+selbe ein Willensakt ist, welcher durch das Motiv, das in
+einer bloßen Vorstellung besteht, hervorgerufen wird. Die
+Einwirkung des Motivs also wird von uns nicht bloß, wie
+die aller andern Ursachen, von außen und daher nur mit-
+telbar, sondern zugleich von innen, ganz unmittelbar und
+daher ihrer ganzen Wirkungsart nach, erkannt. Hier stehn
+wir gleichsam hinter den Koulissen und erfahren das Ge-
+heimniß, wie, dem innersten Wesen nach, die Ursache die
+Wirkung herbeif¨uhrt: denn hier erkennen wir auf einem
+ganz andern Wege, daher in ganz anderer Art. Hieraus
+ergiebt sich der wichtige Satz: die Motivation ist die Kau-
+salit¨at von innen gesehn . Diese stellt sich demnach hier
+in ganz anderer Weise, in einem ganz andern Medio, f¨ur
+eine ganz andere Art des Erkennens dar: daher nun ist
+sie als eine besondere und eigenth¨umliche Gestalt unsers
+Satzes aufzuf¨uhren, welcher sonach hier auftritt als Satz
+vom zureichenden Grunde des Handelns, principium ra-
+tionis suﬃcientis agendi , k¨urzer, Gesetz der Motivation
+.
+Zu anderweitiger Orientirung, in Bezug auf meine Philo-
+sophie ¨uberhaupt, f¨uge ich hier hinzu, daß, wie das Gesetz
+der Motivation sich zu dem oben, §20, aufgestellten Gesetz
+der Kausalit¨at verh¨alt; so diese vierte Klasse von Objek-
+ten f¨ur das Subjekt, also der in uns selbst wahrgenommene
+Wille, zur ersten Klasse. Diese Einsicht ist der Grundstein
+meiner ganzen Metaphysik.
+Ueber die Art und die Nothwendigkeit der Wirkung
+der Motive, das Bedingtseyn derselben durch den empi-
+rischen, individuellen Charakter, wie auch durch die Er-
+kenntnißf¨ahigkeit der Individuen u.s.w. verweise ich auf
+meine Preisschrift ¨uber die Freiheit des Willens, woselbst
+dies Alles ausf¨uhrlich abgehandelt ist.
+§44
+Einﬂuß des Willens auf das
+Erkennen
+Nicht auf eigentlicher Kausalit¨at, sondern auf der §42
+er¨orterten Identit¨at des erkennenden mit dem wollenden
+Subjekt beruht der Einﬂuß, den der Wille auf das Er-
+kennen aus¨ubt, indem er es n¨othigt, Vorstellungen, die
+demselben ein Mal gegenw¨artig gewesen, zu wiederholen,
+¨uberhaupt die Aufmerksamkeit auf dieses oder jenes zu
+richten und eine beliebige Gedankenreihe hervorzurufen.
+Auch hierin wird er bestimmt durch das Gesetz der Moti-
+vation, welchem gem¨aß er auch der heimliche Lenker der
+sogenannten Ideenassociation ist, der ich im 2. Bande der
+Welt als W. und V. ein eigenes Kapitel (das 14.) gewid-
+met habe, und welche selbst nichts Anderes ist, als die
+Anwendung des Satzes vom Grunde, in seinen vier Ge-
+stalten, auf den subjektiven Gedankenlauf, also auf die
+Gegenwart der Vorstellungen im Bewußtseyn. Der Wille
+des Individuums aber ist es, der das ganze Getriebe in
+Th¨atigkeit versetzt, indem er dem Interesse, d.h. den in-
+dividuellen Zwecken der Person gem¨aß, den Intellekt an-
+treibt, zu seinen gegenw¨artigen Vorstellungen die mit ih-
+nen logisch, oder analogisch, oder durch r¨aumliche, oder
+zeitliche Nachbarschaft verschwisterten herbeizuschaﬀen.
+Die Th¨atigkeit des Willens hiebei ist jedoch so unmit-
+telbar, daß sie meistens nicht ins deutliche Bewußtseyn
+f¨allt; und so schnell, daß wir uns bisweilen nicht ein Mal
+des Anlasses zu einer also hervorgerufenen Vorstellung be-
+wußt werden, wo es uns dann scheint, als sei Etwas ohne
+allen Zusammenhang mit einem Andern in unser Bewußt-
+seyn gekommen: daß aber dies nicht geschehn k¨onne, ist
+eben, wie oben gesagt, die Wurzel des Satzes vom zurei-
+chenden Grunde, und hat in dem erw¨ahnten Kapitel seine
+n¨ahere Er¨orterung gefunden. Jedes unserer Phantasie sich
+pl¨otzlich darstellende Bild, auch jedes Urtheil, das nicht
+auf seinen vorher gegenw¨artig gewesenen Grund folgt, muß
+durch einen Willensakt hervorgerufen seyn, der ein Motiv
+hat, obwohl das Motiv, weil es geringf¨ugig, und der Wil-
+lensakt, weil seine Erf¨ullung so leicht ist, daß sie mit ihm
+zugleich daist, oft nicht wahrgenommen werden.
+§45
+Ged¨achtniß
+Die Eigenth¨umlichkeit des erkennenden Subjekts, daß es
+in Vergegenw¨artigung von Vorstellungen dem Willen desto
+leichter gehorcht, je ¨ofter solche Vorstellungen ihm schon
+gegenw¨artig gewesen sind, d.h. seine Uebungsf¨ahigkeit , ist
+das Ged¨achtniß. Der gew¨ohnlichen Darstellung desselben,
+als eines Beh¨altnisses, in welchem wir einen Vorrath fer-
+tiger Vorstellungen aufbewahrten, die wir folglich immer
+h¨atten, nur ohne uns derselben immer bewußt zu seyn,
+— kann ich nicht beistimmen. Die willk¨urliche Wieder-
+holung gegenw¨artig gewesener Vorstellungen wird durch
+Uebung so leicht, daß, sobald ein Glied einer Reihe von
+Vorstellungen uns gegenw¨artig geworden ist, wir alsbald
+die ¨ubrigen, selbst oft scheinbar gegen unsern Willen, hin-
+zurufen. Will man von dieser Eigenth¨umlichkeit unsers
+Vorstellungsverm¨ogens ein Bild (wie Plato eines giebt, in-
+dem er das Ged¨achtniß mit einer weichen Masse vergleicht,
+welche Eindr¨ucke annimmt und bewahrt), so scheint mir
+das richtigste das eines Tuchs, welches die Falten, in die
+es oft gelegt ist, nachher gleichsam von selbst wieder
+schl¨agt. Wie der Leib dem Willen durch Uebung gehor-
+chen lernt, eben so das Vorstellungsverm¨ogen. Keineswegs
+ist, wie die gew¨ohnliche Darstellung es annimmt, eine Er-
+innerung immer die selbe Vorstellung, die gleichsam aus
+
+
+§45 Ged¨achtniß
+60
+ihrem Beh¨altniß wieder hervorgeholt wird, sondern jedes-
+mal entsteht wirklich eine neue, nur mit besonderer Leich-
+tigkeit durch die Uebung: daher kommt es, daß Phantas-
+men, welche wir im Ged¨achtniß aufzubewahren glauben,
+eigentlich aber nur durch ¨oftere Wiederholung ¨uben, un-
+vermerkt sich ¨andern, was wir inne werden, wenn wir einen
+alten bekannten Gegenstand nach langer Zeit wiedersehn
+und er dem Bilde, das wir von ihm mitbringen, nicht voll-
+kommen entspricht. Dies k¨onnte nicht seyn, wenn wir ganz
+fertige Vorstellungen aufbewahrten. Eben daher kommt
+es, daß alle erworbenen Kenntnisse, wenn wir sie nicht
+¨uben, allm¨alig aus unserm Ged¨achtniß verschwinden; weil
+sie eben nur aus der Gewohnheit und dem Griﬀe kom-
+mende Uebungsst¨ucke sind: so z.B. vergessen die meisten
+Gelehrten ihr Griechisch, und die heimgekehrten K¨unstler
+ihr Itali¨anisch. Ebenfalls erkl¨art sich daraus, daß, wenn wir
+einen Namen, einen Vers oder dergleichen ehemals wohl
+gewußt, aber in vielen Jahren nicht gedacht haben, wir
+ihn mit M¨uhe zur¨uckbringen, aber, wenn dieses gelungen
+ist, ihn abermals auf einige Jahre zur Disposition haben;
+weil jetzt die Uebung erneuert ist. Daher soll wer mehre-
+re Sprachen versteht in jeder derselben von Zeit zu Zeit
+etwas lesen; wodurch er seinen Besitz sich erh¨alt.
+Hieraus erkl¨art sich auch, warum die Umgebungen
+und Begebenheiten unserer Kindheit sich so tief dem
+Ged¨achtniß einpr¨agen; weil wir n¨amlich als Kinder nur
+wenige und haupts¨achlich anschauliche Vorstellungen ha-
+ben und wir diese daher, um besch¨aftigt zu seyn, una-
+bl¨assig wiederholen. Bei Menschen, die zum Selbstdenken
+wenig F¨ahigkeit haben, ist dieses ihr ganzes Leben hin-
+durch (und zwar nicht nur mit anschaulichen Vorstellun-
+gen, sondern auch mit Begriﬀen und Worten) der Fall, da-
+her solche bisweilen, wenn n¨amlich nicht Stumpfheit und
+Geistestr¨agheit es verhindert, ein sehr gutes Ged¨achtniß
+haben. Dagegen hat das Genie bisweilen kein vorz¨ugliches
+Ged¨achtniß, wie Rousseau Dies von sich selbst angiebt: es
+w¨are daraus zu erkl¨aren, daß dem Genie die große Men-
+ge neuer Gedanken und Kombinationen zu vielen Wie-
+derholungen keine Zeit l¨aßt; wiewohl dasselbe sich wohl
+nicht leicht mit einem ganz schlechten Ged¨achtniß ﬁndet,
+weil die gr¨oßere Energie und Beweglichkeit der gesamm-
+ten Denkkraft hier die anhaltende Uebung ersetzt. Auch
+wollen wir nicht vergessen, daß die Mnemosyne die Mutter
+der Musen ist. Man kann demnach sagen: das Ged¨achtniß
+steht unter zwei einander antagonistischen Einﬂ¨ussen: dem
+der Energie des Vorstellungsverm¨ogens einerseits und dem
+der Menge der dieses besch¨aftigenden Vorstellungen an-
+dererseits. Je kleiner der erste Faktor, desto kleiner muß
+auch der andere seyn, um ein gutes Ged¨achtniß zu liefern;
+und je gr¨oßer der zweite, desto gr¨oßer muß auch der an-
+dere seyn. Hieraus erkl¨art sich auch, warum Menschen,
+die unabl¨assig Romane lesen, dadurch ihr Ged¨achtniß ver-
+lieren; weil n¨amlich auch bei ihnen, eben wie beim Ge-
+nie, die Menge von Vorstellungen, die hier aber nicht eig-
+ne Gedanken und Kombinationen, sondern fremde, rasch
+vor¨uberziehende Zusammenstellungen sind, zur Wieder-
+holung und Uebung keine Zeit noch Geduld l¨aßt: und was
+beim Genie die Uebung kompensirt geht ihnen ab. Uebri-
+gens unterliegt die ganze Sache noch der Korrektion, daß
+Jeder das meiste Ged¨achtniß hat f¨ur Das, was ihn interes-
+sirt, das wenigste f¨ur das Uebrige. Daher vergißt mancher
+große Geist die kleinen Angelegenheiten und Vorf¨alle des
+t¨aglichen Lebens, imgleichen die ihm bekannt gewordenen
+unbedeutenden Menschen, unglaublich schnell; w¨ahrend
+beschr¨ankte K¨opfe das Alles treﬄich behalten: nichtsde-
+stoweniger wird Jener f¨ur die ihm wichtigen Dinge und
+f¨ur das an sich selbst Bedeutende ein gutes, wohl gar ein
+stupendes Ged¨achtniß haben.
+Ueberhaupt aber ist leicht einzusehn, daß wir am besten
+solche Reihen von Vorstellungen behalten, welche unter
+sich am Bande einer oder mehrerer der angegebenen Ar-
+ten von Gr¨unden und Folgen zusammenh¨angen; schwerer
+aber die, welche nicht unter sich, sondern nur mit unserm
+Willen nach dem Gesetze der Motivation verkn¨upft, d.h.
+willk¨urlich zusammengestellt sind. Bei jenen n¨amlich ist in
+dem uns a priori bewußten Formalen die H¨alfte der M¨uhe
+uns erlassen: Dieses, wie ¨uberhaupt alle Kenntniß a priori
+, hat auch wohl Plato’s Lehre, daß alles Lernen nur ein
+Erinnern sei, veranlaßt. —
+
+
+Kapitel 8
+Allgemeine Bemerkungen und Resultate
+§46
+Die systematische Ordnung
+Die Reihenfolge, in welcher ich die verschiedenen Gestal-
+tungen unsers Satzes aufgestellt habe, ist nicht die syste-
+matische, sondern bloß der Deutlichkeit wegen gew¨ahlt,
+um das Bekannte und Das, welches das Uebrige am we-
+nigsten voraussetzt, voranzuschicken; gem¨aß der Regel des
+Aristoteles: και ματηˆεσεˆος ουκ απο του πρˆοτου, και τˆες του
+πραγματος αρςηˆες ενιοτε αρκτεον, αλλ΄ ηοτηεν ραστ΄ αν μα-
+τηοι. (et doctrina non a primo, ac rei principio aliquan-
+do inchoanda est, sed unde quis facilius discat.) Metaph.
+IV, I. Die systematische Ordnung, in der die Klassen der
+Gr¨unde folgen m¨ußten, ist aber diese. Zuerst m¨ußte der
+Satz vom Seynsgrund angef¨uhrt werden und zwar von die-
+sem wieder zuerst seine Anwendung auf die Zeit , als wel-
+che das einfache, nur das Wesentliche enthaltende Schema
+aller ¨ubrigen Gestaltungen des Satzes vom zureichenden
+Grunde, ja, der Urtypus aller Endlichkeit ist. Dann m¨ußte,
+nach Aufstellung des Seynsgrundes auch im Raum, das
+Gesetz der Kausalit¨at, diesem das der Motivation folgen
+und der Satz vom zureichenden Grunde des Erkennens
+zuletzt aufgestellt werden; da die andern auf unmittelbare
+Vorstellungen, dieser aber auf Vorstellungen aus Vorstel-
+lungen geht.
+Die hier ausgesprochene Wahrheit, daß die Zeit das ein-
+fache, nur das Wesentliche enthaltende Schema aller Ge-
+staltungen des Satzes vom Grunde ist, erkl¨art uns die ab-
+solut vollkommene Klarheit und Genauigkeit der Arith-
+metik, worin keine andere Wissenschaft ihr gleichkommen
+kann. Alle Wissenschaften n¨amlich beruhen auf dem Sat-
+ze vom Grunde, indem sie durchweg Verkn¨upfungen von
+Gr¨unden und Folgen sind. Die Zahlenreihe nun aber ist
+die einfache und alleinige Reihe der Seynsgr¨unde und Fol-
+gen in der Zeit: wegen dieser vollkommenen Einfachheit,
+indem nichts ihr zur Seite liegen bleibt, noch irgendwo
+unbestimmte Beziehungen sind, l¨aßt sie an Genauigkeit,
+Apodikticit¨at und Deutlichkeit nichts zu w¨unschen ¨ubrig.
+Hierin stehn alle andern Wissenschaften ihr nach; sogar die
+Geometrie: weil aus den drei Dimensionen des Raums so
+viele Beziehungen hervorgehn, daß die Uebersicht dersel-
+ben sowohl der reinen, wie der empirischen Anschauung zu
+schwer f¨allt; daher die komplicirteren Aufgaben der Geo-
+metrie nur durch Rechnung gel¨ost werden, die Geometrie
+also eilt, sich in Arithmetik aufzul¨osen. Daß die ¨ubrigen
+Wissenschaften mancherlei verdunkelnde Elemente enthal-
+ten, brauche ich nicht darzuthun.
+§47
+Zeitverh¨altniß
+zwischen
+Grund und Folge
+Nach den Gesetzen der Kausalit¨at und der Motivation muß
+der Grund der Folge, der Zeit nach, vorhergehn. Dies ist
+durchaus wesentlich, wie ich ausf¨uhrlich dargethan habe
+im 2. Bande meines Hauptwerks, Kap. 4, S. 41, 42 worauf
+ich hier verweise, um mich nicht zu wiederholen. Danach
+wird man sich nicht irre machen lassen durch Beispiele, wie
+Kant (Krit. d. rein. Vern., 1. Auﬂ., S. 202; 5. Auﬂ., S. 248)
+eines anf¨uhrt, n¨amlich daß die Ursache der Stubenw¨arme,
+der Ofen, mit dieser seiner Wirkung zugleich sei, — so-
+bald man nur bedenkt, daß nicht ein Ding Ursache des
+andern, sondern ein Zustand Ursache des andern ist. Der
+Zustand des Ofens, daß er eine h¨ohere Temperatur, als
+das ihn umgebende Medium hat, muß der Mittheilung des
+Ueberschusses seiner W¨arme an dieses vorhergehn; und
+da nun jede erw¨armte Luftschicht einer hinzustr¨omenden
+k¨alteren Platz macht, erneuert sich der erste Zustand, die
+Ursache, und folglich auch der zweite, die Wirkung, so lan-
+ge, als Ofen und Stube nicht die selbe Temperatur haben.
+Es ist hier also nicht eine dauernde Ursache, Ofen, und ei-
+ne dauernde Wirkung, Stubenw¨arme, die zugleich w¨aren,
+sondern eine Kette von Ver¨anderungen, n¨amlich eine ste-
+te Erneuerung zweier Zust¨ande, deren einer Wirkung des
+andern ist. Wohl aber ist aus diesem Beispiel zu ersehn,
+welchen unklaren Begriﬀvon der Kausalit¨at sogar noch
+Kant hatte.
+Hingegen der Satz vom zureichenden Grunde des Erken-
+nens bringt kein Zeitverh¨altniß mit sich, sondern allein ein
+Verh¨altniß f¨ur die Vernunft: also sind vor und nach hier
+ohne Bedeutung.
+Beim Satz vom Grunde des Seyns ist, sofern er in der
+Geometrie gilt, ebenfalls kein Zeitverh¨altniß, sondern al-
+lein ein r¨aumliches, von dem sich sagen ließe, alles w¨are zu-
+gleich, wenn nicht das Zugleich hier, sowohl als das Nach-
+einander, ohne Bedeutung w¨are. In der Arithmetik dage-
+gen ist der Seynsgrund nichts anderes, als eben das Zeit-
+verh¨altniß selbst.
+61
+
+
+§49 Die Nothwendigkeit
+62
+§48
+Reciprokation der Gr¨unde
+Der Satz vom zureichenden Grunde kann in jeder seiner
+Bedeutungen ein hypothetisches Urtheil begr¨unden, wie
+denn auch jedes hypothetische Urtheil zuletzt auf ihm be-
+ruht, und immer bleiben dabei die Gesetze der hypotheti-
+schen Schl¨usse g¨ultig, n¨amlich: vom Daseyn des Grundes
+auf das Daseyn der Folge, und vom Nichtseyn der Folge
+auf das Nichtseyn des Grundes, ist der Schluß richtig: aber
+vom Nichtseyn des Grundes auf das Nichtseyn der Folge,
+und vom Daseyn der Folge auf das Daseyn des Grundes
+ist der Schluß unrichtig. Nun ist es merkw¨urdig, daß den-
+noch in der Geometrie fast ¨uberall auch vom Daseyn der
+Folge auf das Daseyn des Grundes und vom Nichtseyn des
+Grundes auf das Nichtseyn der Folge geschlossen werden
+kann. Dies kommt daher, daß, wie §37 gezeigt ist, jede
+Linie die Lage der andern bestimmt und es dabei einer-
+lei ist, von welcher man anfangen, d.h. welche man als
+Grund und welche als Folge betrachten will. Man kann hie-
+von sich ¨uberzeugen, indem man s¨ammtliche geometrische
+Lehrs¨atze durchgeht. Nur da, wo nicht bloß von Figur, d.h.
+von Lage der Linien, sondern von Fl¨acheninhalt, abgesehn
+von der Figur, die Rede ist, kann man meistens nicht vom
+Daseyn der Folge auf das Daseyn des Grundes schließen,
+oder vielmehr die S¨atze reciprociren und das Bedingte zur
+Bedingung machen. Ein Beispiel hievon giebt der Satz:
+Wenn Dreiecke gleiche Grundlinien und gleiche H¨ohen ha-
+ben, sind sie an Fl¨acheninhalt gleich. Er l¨aßt sich nicht also
+umkehren: Wenn Dreiecke gleichen Fl¨acheninhalt haben,
+sind auch ihre Grundlinien und H¨ohen gleich. Denn die
+H¨ohen k¨onnen sich auch umgekehrt wie die Grundlinien
+verhalten.
+Daß das Gesetz der Kausalit¨at keine Reciprokation zu-
+lasse, indem die Wirkung nie die Ursache ihrer Ursache
+seyn k¨onne, und daher der Begriﬀder Wechselwirkung,
+seinem eigentlichen Sinne nach, nicht zul¨assig sei, ist schon
+oben, §20, zur Sprache gekommen. — Eine Reciprokation
+nach dem Satz vom Grunde des Erkennens k¨onnte nur
+bei Wechselbegriﬀen Statt ﬁnden; indem nur die Sph¨aren
+dieser sich gegenseitig decken. Außerdem giebt sie den cir-
+culus vitiosus.
+§49
+Die Nothwendigkeit
+Der Satz vom zureichenden Grunde, in allen seinen Ge-
+stalten, ist das alleinige Princip und der alleinige Tr¨ager
+aller und jeder Nothwendigkeit. Denn Nothwendigkeit hat
+keinen andern wahren und deutlichen Sinn, als den der
+Unausbleiblichkeit der Folge, wenn der Grund gesetzt ist.
+Demnach ist jede Nothwendigkeit bedingt ; absolute, d.h.
+unbedingte, Nothwendigkeit also eine contradictio in ad-
+jecto. Denn Nothwendig-seyn kann nie etwas Anderes be-
+sagen, als aus einem gegebenen Grunde folgen. Will man
+es hingegen deﬁniren “was nicht nichtseyn kann”; so giebt
+man eine bloße Worterkl¨arung und ﬂ¨uchtet sich, um die
+Sacherkl¨arung zu vermeiden, hinter einen h¨ochst abstrak-
+ten Begriﬀ; von wo man jedoch sogleich herauszutreiben
+ist durch die Frage, wie es denn m¨oglich, oder nur denk-
+bar, sei, daß irgend etwas nicht nichtseyn k¨onne; da ja doch
+alles Daseyn bloß empirisch gegeben ist? Da ergiebt sich
+denn, daß es nur insofern m¨oglich sei, als irgend ein Grund
+gesetzt oder vorhanden ist, aus dem es folgt. Nothwendig-
+seyn und Aus einem gegebenen Grund folgen sind mithin
+Wechselbegriﬀe, welche als solche ¨uberall einer an die Stel-
+le des andern gesetzt werden k¨onnen. Der bei den Philoso-
+phastern beliebte Begriﬀvom “absolut nothwendigen We-
+sen ” enth¨alt also einen Widerspruch: durch das Pr¨adikat “
+absolut ” (d.h. “von nichts Anderm abh¨angig”) hebt er die
+Bestimmung auf, durch welche allein das “ Nothwendige ”
+denkbar ist und einen Sinn hat. Wir haben daran wieder
+ein Beispiel vom Mißbrauch abstrakter Begriﬀe zum Behuf
+metaphysischer Erschleichung, wie ich ¨ahnliche nachgewie-
+sen habe am Begriﬀ“ Immaterielle Substanz ”, “ Grund
+schlechthin ”, “ Ursache ¨uberhaupt ” u.s.w.1 Ich kann es
+nicht genug wiederholen, daß alle abstrakte Begriﬀe durch
+die Anschauung zu kontrolliren sind.
+Demnach giebt es, den vier Gestalten des Satzes vom
+Grunde gem¨aß, eine vierfache Nothwendigkeit. 1) Die lo-
+gische, nach dem Satz vom Erkenntnißgrunde, verm¨oge
+welcher, wenn man die Pr¨amissen hat gelten lassen, die
+Konklusion unweigerlich zuzugeben ist. 2) Die physische,
+nach dem Gesetz der Kausalit¨at, verm¨oge welcher, sobald
+die Ursache eingetreten ist, die Wirkung nicht ausbleiben
+kann. 3) Die mathematische, nach dem Satz vom Grun-
+de des Seyns, verm¨oge welcher jedes von einem wahren
+geometrischen Lehrsatze ausgesagte Verh¨altniß so ist, wie
+er es besagt, und jede richtige Rechnung unwiderleglich
+bleibt. 4) Die moralische, verm¨oge welcher jeder Mensch,
+auch jedes Thier, nach eingetretenem Motiv, die Hand-
+lung vollziehn muß, welche seinem angeborenen und un-
+ver¨anderlichen Charakter allein gem¨aß ist und demnach
+jetzt so unausbleiblich, wie jede andere Wirkung einer
+Ursache, erfolgt; wenn sie gleich nicht so leicht, wie je-
+de andere, vorherzusagen ist, wegen der Schwierigkeit der
+Ergr¨undung und vollst¨andigen Kenntniß des individuel-
+len empirischen Charakters und der ihm beigegebenen Er-
+kenntnißsph¨are; als welche zu erforschen ein ander Ding
+ist, als die Eigenschaften eines Mittelsalzes kennen zu ler-
+nen und danach seine Reaktion vorherzusagen. Ich darf
+nicht m¨ude werden, dies zu wiederholen, wegen der Igno-
+ranten und Dummk¨opfe, welche die einhellige Belehrung
+so vieler großen Geister f¨ur nichts achtend, noch immer,
+zu Gunsten ihrer Rockenphilosophie, das Gegentheil zu
+behaupten dreist genug sind. Bin ich doch kein Philoso-
+phieprofessor, der n¨othig h¨atte, vor dem Unverstande des
+andern B¨ucklinge zu machen.
+1 Vergl. ¨uber “immatrielle Substanz” die Welt als Wille und Vor-
+stellung, I. 582 fg., und ¨uber “Grund schlechthin” den §52 des vor-
+liegenden Werkes. Der [erste] Herausgeber [Julius Frauenst¨adt].‘
+
+
+§51 Jede Wissenschaft hat eine der Gestaltungen. . .
+63
+§50
+Reihen der Gr¨unde und Fol-
+gen
+Nach dem Gesetz der Kausalit¨at ist die Bedingung immer
+wieder bedingt und zwar auf gleiche Art: daher entsteht
+a parte ante eine series in inﬁnitum . Eben so ist es mit
+dem Seynsgrund im Raum: jeder relative Raum ist eine
+Figur, hat Gr¨anzen, die ihn mit einem andern in Verbin-
+dung setzen und wieder die Figur dieses andern bedingen,
+und so nach allen Dimensionen, in inﬁnitum. Betrachtet
+man aber eine einzelne Figur in sich, so hat die Reihe
+der Seynsgr¨unde ein Ende; weil man von einem gegebenen
+Verh¨altniß anhub: wie auch die Reihe der Ursachen ein En-
+de hat, wenn man bei irgend einer Ursache beliebig stehn
+bleibt. In der Zeit hat die Reihe der Seynsgr¨unde sowohl a
+parte ante , wie a parte post eine unendliche Ausdehnung,
+indem jeder Augenblick durch einen fr¨uheren bedingt ist
+und den folgenden nothwendig herbeif¨uhrt, die Zeit also
+weder Anfang noch Ende haben kann. Die Reihe der Er-
+kenntnißgr¨unde dagegen, d.h. eine Reihe von Urtheilen,
+deren jedes dem andern logische Wahrheit ertheilt, endigt
+immer irgendwo, n¨amlich entweder in einer empirischen,
+oder transscendentalen, oder metalogischen Wahrheit. Ist
+das erstere, also eine empirische Wahrheit der Grund des
+obersten Satzes, darauf man gef¨uhrt worden, und man
+f¨ahrt fort zu fragen Warum; so ist was man jetzt verlangt
+kein Erkenntnißgrund mehr, sondern eine Ursache: d.h. die
+Reihe der Gr¨unde des Erkennens geht ¨uber in die Reihe der
+Gr¨unde des Werdens. Macht man nun aber es ein Mal um-
+gekehrt, l¨aßt n¨amlich die Reihe der Gr¨unde des Werdens,
+damit sie ein Ende ﬁnden k¨onne, ¨ubergehn in die Reihe
+der Gr¨unde des Erkennens; so ist Dies nie durch die Na-
+tur der Sache herbeigef¨uhrt, sondern durch specielle Ab-
+sicht, also ein Kniﬀ, und zwar ist es das unter dem Namen
+des ontologischen Beweises bekannte Sophisma. N¨amlich
+nachdem man, durch den kosmologischen Beweis, zu ei-
+ner Ursache gelangt ist, bei welcher man stehn zu bleiben
+Belieben tr¨agt, um sie zur ersten zu machen, das Gesetz
+der Kausalit¨at jedoch sich nicht so zur Ruhe bringen l¨aßt,
+sondern fortfahren will, Warum zu fragen; so schaﬀt man
+es heimlich bei Seite und schiebt ihm den ihm von Weitem
+¨ahnlich sehenden Satz vom Erkenntnißgrunde unter, giebt
+also, statt der hier verlangten Ursache, einen Erkenntniß-
+grund, der aus dem zu beweisenden, seiner Realit¨at nach
+also noch problematischen, Begriﬀselbst gesch¨opft wird
+und der nun, weil er doch ein Grund ist, als Ursache ﬁ-
+guriren muß. Nat¨urlich hat man jenen Begriﬀschon zum
+voraus darauf eingerichtet, indem man die Realit¨at, allen-
+falls, des Anstandes halber, noch in ein Paar H¨ullen ge-
+wickelt, hineinlegte und sich also die nunmehrige, freudige
+Ueberraschung, sie darin zu ﬁnden, vorbereitete, — wie
+wir Dies schon oben, §7, n¨aher beleuchtet haben. — Be-
+ruht hingegen eine Kette von Urtheilen zuletzt auf einem
+Satz von transscendentaler, oder metalogischer Wahrheit,
+und man f¨ahrt fort zu fragen Warum; so giebt es darauf
+keine Antwort, weil die Frage keinen Sinn hat, n¨amlich
+nicht weiß, was f¨ur einen Grund sie fordert. Denn der Satz
+vom Grunde ist das Princip aller Erkl¨arung: eine Sache
+erkl¨aren heißt ihren gegebenen Bestand, oder Zusammen-
+hang, zur¨uckf¨uhren auf irgend eine Gestaltung des Satzes
+vom Grunde, der gem¨aß er seyn muß, wie er ist. Diesem
+gem¨aß ist der Satz vom Grunde selbst, d.h. der Zusam-
+menhang, den er, in irgend einer Gestalt, ausdr¨uckt, nicht
+weiter erkl¨arbar; weil es kein Princip giebt, das Princip
+aller Erkl¨arung zu erkl¨aren, — oder wie das Auge Alles
+sieht, nur sich selbst nicht. — Von den Motiven giebt es
+zwar Reihen, indem der Entschluß zur Erreichung eines
+Zwecks, Motiv wird des Entschlusses zu einer ganzen Rei-
+he von Mitteln: doch endigt diese Reihe immer a parte
+priori in einer Vorstellung aus den zwei ersten Klassen,
+woselbst das Motiv liegt, welches urspr¨unglich vermochte,
+diesen individuellen Willen in Bewegung zu setzen. Daß es
+nun Dieses konnte, ist ein Datum zur Erkenntniß des hier
+gegebenen empirischen Charakters: warum dieser aber da-
+durch bewegt werde, kann nicht beantwortet werden, weil
+der intelligible Charakter außer der Zeit liegt und nie Ob-
+jekt wird. Die Reihe der Motive als solcher ﬁndet also in
+einem solchen letzten Motiv ihr Ende und geht, jenach-
+dem ihr letztes Glied ein reales Objekt, oder ein bloßer
+Begriﬀwar, ¨uber in die Reihe der Ursachen, oder in die
+der Erkenntnißgr¨unde.
+§51
+Jede
+Wissenschaft
+hat
+eine
+der Gestaltungen des Satzes
+vom Grunde vor den andern
+zum Leitfaden
+Weil die Frage Warum immer einen zureichenden Grund
+will und die Verbindung der Erkenntnisse nach dem Satz
+vom zureichenden Grunde die Wissenschaft vom bloßen
+Aggregat von Erkenntnissen unterscheidet, ist §4 gesagt
+worden, daß das Warum die Mutter der Wissenschaften
+sei. Auch ﬁndet sich, daß in jeder derselben Eine der Ge-
+staltungen unsers Satzes, vor den ¨ubrigen, der Leitfaden
+ist; obgleich in derselben auch die andern, nur mehr unter-
+geordnet, Anwendung ﬁnden. So ist in der reinen Mathe-
+matik der Seynsgrund Hauptleitfaden (obgleich die Dar-
+stellung in den Beweisen nur am Erkenntnißgrunde fort-
+schreitet); in der angewandten tritt zugleich das Gesetz
+der Kausalit¨at auf; und dieses gewinnt ganz die Oberherr-
+schaft in der Physik, Chemie, Geologie u.a.m. Der Satz
+vom Grunde des Erkennens ﬁndet durchaus in allen Wis-
+senschaften starke Anwendung, da in allen das Besondere
+aus dem Allgemeinen erkannt wird. Hauptleitfaden und
+fast allein herrschend aber ist er in der Botanik, Zoologie,
+Mineralogie und andern klassiﬁcirenden Wissenschaften.
+Das Gesetz der Motivation ist, wenn man alle Motive und
+Maximen, welche sie auch seien, als Gegebenes betrachtet,
+aus dem man das Handeln erkl¨art, Hauptleitfaden der Ge-
+schichte, Politik, pragmatischen Psychologie u. a. — wenn
+man aber die Motive und Maximen selbst, ihrem Werth
+und Ursprung nach, zum Gegenstand der Untersuchung
+
+
+§52 Zwei Hauptresultate
+64
+macht, Leitfaden der Ethik. Im 2. Bande meines Haupt-
+werks ﬁndet man, Kap. 12, S. 126, die oberste Eintheilung
+der Wissenschaften nach diesem Princip ausgef¨uhrt.
+§52
+Zwei Hauptresultate
+Ich habe mich bestrebt, in dieser Abhandlung zu zeigen,
+daß der Satz vom zureichenden Grund ein gemeinschaftli-
+cher Ausdruck sei f¨ur vier ganz verschiedene Verh¨altnisse,
+deren jedes auf einem besonderen und (da der Satz vom
+zureichenden Grund ein synthetischer a priori ist) a prio-
+ri gegebenen Gesetze beruht, von welchen vier, nach dem
+Grundsatz der Speciﬁkation gefunden, Gesetzen nach dem
+Grundsatz der Homogeneit¨at angenommen werden muß,
+daß, so wie sie in einem gemeinschaftlichen Ausdruck zu-
+sammentreﬀen, sie auch aus einer und der selben Urbe-
+schaﬀenheit unsers ganzen Erkenntnißverm¨ogens, als ihrer
+gemeinschaftlichen Wurzel, entspringen, welche demnach
+anzusehn w¨are als der innerste Keim aller Dependenz, Re-
+lativit¨at, Instabilit¨at und Endlichkeit der Objekte unsers
+in Sinnlichkeit, Verstand und Vernunft, Subjekt und Ob-
+jekt befangenen Bewußtseyns, oder derjenigen Welt, wel-
+che der hohe Plato wiederholentlich als das αει γιγνομενον
+μεν και απολλψμενον, οντˆος δε ουδεποτε ον, deren Erkennt-
+niß nur eine δοξα μετ΄ αιστηˆεσεˆος αλογου w¨are, herabsetzt,
+und welche das Christenthum, mit richtigem Sinn, nach
+derjenigen Gestaltung unsers Satzes, welche ich §46 als
+sein einfachstes Schema und den Urtypus aller Endlich-
+keit bezeichnet habe, die Zeitlichkeit nennt. Der allgemei-
+ne Sinn des Satzes vom Grunde ¨uberhaupt l¨auft darauf
+zur¨uck, daß immer und ¨uberall Jegliches nur verm¨oge ei-
+nes Andern ist. Nun ist aber der Satz vom Grunde in
+allen seinen Gestalten a priori , wurzelt also in unserm
+Intellekt: daher darf er nicht auf das Ganze aller dasei-
+enden Dinge, die Welt, mit Einschluß dieses Intellekts, in
+welchem sie dasteht, angewandt werden. Denn eine sol-
+che, verm¨oge apriorischer Formen sich darstellende Welt
+ist eben deshalb bloße Erscheinung: was daher nur in Folge
+eben dieser Formen von ihr gilt, ﬁndet keine Anwendung
+auf sie selbst, d.h. auf das in ihr sich darstellende Ding
+an sich. Daher kann man nicht sagen: “Die Welt und alle
+Dinge in ihr existiren verm¨oge eines Andern”; — welcher
+Satz eben der kosmologische Beweis ist.
+Ist mir die Ableitung des so eben ausgesprochenen
+Resultats durch gegenw¨artige Abhandlung gelungen; so
+w¨are, d¨achte ich, an jeden Philosophen, der, bei seinen
+Spekulationen, auf den Satz vom zureichenden Grunde
+einen Schluß baut, oder ¨uberhaupt nur von einem Grun-
+de spricht, die Forderung zu machen, daß er bestimme,
+welche Art von Grund er meine. Man k¨onnte glauben,
+daß, so oft von einem Grunde die Rede ist, Jenes sich
+von selbst ergebe und keine Verwechselung m¨oglich sei.
+Allein es ﬁnden sich nur gar zu viele Beispiele, theils daß
+die Ausdr¨ucke Grund und Ursache verwechselt und oh-
+ne Unterscheidung gebraucht werden, theils daß im Allge-
+meinen von einem Grund und Begr¨undeten, Princip und
+Principiat, Bedingung und Bedingten geredet wird, ohne
+n¨ahere Bestimmung; vielleicht eben weil man sich im Stil-
+len eines unberechtigten Gebrauchs dieser Begriﬀe bewußt
+ist. So spricht selbst Kant von dem Ding an sich als dem
+Grunde der Erscheinung. So spricht er (Krit. d. r. V., 5.
+Auﬂ., S. 590) von einem Grunde der M¨oglichkeit aller Er-
+scheinung; von einem intelligiblen Grund der Erscheinun-
+gen; von einer intelligiblen Ursache , einem unbekannten
+Grund der M¨oglichkeit der sinnlichen Reihe ¨uberhaupt (S.
+592); von einem den Erscheinungen zum Grunde liegenden
+transscendentalen Objekt und dem Grunde warum unse-
+re Sinnlichkeit diese viel mehr als alle andern obersten
+Bedingungen habe (S. 641); und so an mehreren Stellen.
+Welches alles mir schlecht zu passen scheint zu jenen ge-
+wichtigen, tiefsinnigen, ja unsterblichen Worten (S. 591):
+“daß die Zuf¨alligkeit2 der Dinge selbst nur Ph¨anomen sei
+und auf keinen andern Regressus f¨uhren k¨onne, als den
+empirischen, der die Ph¨anomene bestimmt.”
+Daß, seit Kant, die Begriﬀe Grund und Folge, Princip
+und Principiat u.s.w. noch viel unbestimmter und ganz
+und gar transscendent gebraucht sind, weiß Jeder dem die
+neueren philosophischen Schriften bekannt sind.
+Gegen diesen unbestimmten Gebrauch des Wortes
+Grund und mit ihm des Satzes vom zureichenden Grunde
+¨uberhaupt ist Folgendes meine Einwendung und zugleich
+das zweite, mit dem ersten genau verbundene Resultat,
+welches diese Abhandlung ¨uber ihren eigentlichen Gegen-
+stand giebt. Obgleich die vier Gesetze unsers Erkenntniß-
+verm¨ogens, deren gemeinschaftlicher Ausdruck der Satz
+vom zureichenden Grunde ist, durch ihren gemeinsamen
+Charakter, und dadurch, daß alle Objekte des Subjekts
+unter sie vertheilt sind, sich ank¨undigen als durch Eine und
+die selbe Urbeschaﬀenheit und innere Eigenth¨umlichkeit
+des als Sinnlichkeit, Verstand und Vernunft erscheinen-
+den Erkenntnißverm¨ogens gesetzt, so daß sogar, wenn man
+sich einbildete, es k¨onnte eine neue, f¨unfte Klasse von
+Objekten entstehn, dann ebenfalls vorauszusetzen w¨are,
+daß in ihr auch der Satz vom zureichenden Grund in ei-
+ner neuen Gestalt auftreten w¨urde; so d¨urfen wir den-
+noch nicht von einem Grunde schlechthin sprechen, und
+es giebt so wenig einen Grund ¨uberhaupt, wie einen Tri-
+angel ¨uberhaupt, anders, als in einem abstrakten, durch
+diskursives Denken gewonnenen Begriﬀ, der als Vorstel-
+lung aus Vorstellungen, nichts weiter ist, als ein Mittel
+Vieles durch Eines zu denken. Wie jeder Triangel spitz-
+, recht- oder stumpf-winklicht, gleichseitig, gleichschenk-
+licht oder ungleichseitig seyn muß; so muß auch (da wir
+nur vier und zwar bestimmt gesonderte Klassen von Ob-
+jekten haben) jeder Grund zu einer der angegebenen vier
+m¨oglichen Arten der Gr¨unde geh¨oren und demnach inner-
+halb einer der vier angegebenen m¨oglichen Klassen von
+Objekten unsers Vorstellungsverm¨ogens, — die folglich,
+mit sammt diesem Verm¨ogen, d.h. der ganzen Welt, sein
+Gebrauch schon als gegeben voraussetzt und sich diesseit
+2 Die empirische Zuf¨alligkeit ist gemeint, welche bei Kant so viel
+bedeutet, wie Abh¨angigkeit von andern Dingen; wor¨uber ich auf mei-
+ne R¨uge, S. 524 meiner “Kritik an der Kantischen Philosophie” ver-
+weise.
+
+
+§52 Zwei Hauptresultate
+65
+h¨alt, — gelten, nicht aber außerhalb derselben, oder gar
+außerhalb aller Objekte. Sollte dennoch Jemand hier¨uber
+anders denken, und meinen, Grund ¨uberhaupt sei etwas
+Anderes, als der aus den vier Arten der Gr¨unde abgezoge-
+ne, ihr Gemeinschaftliches ausdr¨uckende Begriﬀ; so k¨onn-
+ten wir den Streit der Realisten und Nominalisten erneuen,
+wobei ich in gegenw¨artigem Fall auf der Seite der letztern
+stehn m¨ußte.
+
+

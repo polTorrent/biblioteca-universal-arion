@@ -28,7 +28,7 @@ edició:
   tipus: "crítica bilingüe"
   base: "Tercera edició (1864), editada per Julius Frauenstädt"
   font: "Internet Archive (domini públic)"
-  font_original: "https://www.gutenberg.org/ebooks/50966 - Traducció anglesa de Karl Hillebrand (1907)"
+  font_original: "https://upload.wikimedia.org/wikipedia/commons/8/80/Ueber_die_vierfache_Wurzel_des_Satzes_vom_zureichenden_Grunde.pdf - Edició alemanya (1847)"
   notes_tipus:
     - "T: Nota del traductor"
     - "F: Nota filosòfica"
@@ -85,7 +85,7 @@ context:
     - "Sobre la llibertat de la voluntat (1839)"
 
 estadistiques:
-  paraules_original: 56000
+  paraules_original: 54436
   seccions: 52
   capitols: 8
 
