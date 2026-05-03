@@ -401,7 +401,7 @@ Per tant, és perniciós l'error d'aquells qui creuen que l'amistat permet tots 
 
 Aquesta és, dic, la unió en què hi ha tot allò que els homes consideren desitjable: honradesa, glòria, pau interior i plaer. Quan aquests béns hi són presents, la vida és feliç; sense ells no pot ser-ho. Com que això és el millor i el més gran, si volem aconseguir-ho, hem de dedicar els nostres esforços a la virtut. Sense ella no podem obtenir ni l'amistat ni cap altra cosa desitjable. Però aquells qui, havent negligit la virtut, creuen que tenen amics, llavors s'adonen que s'han equivocat quan un infortuni greu els obliga a posar a prova els seus amics.
 
-Per això — cal dir-ho sovint —, cal estimar després d'haver jutjat, no jutjar després d'haver estimat. Però si en moltes coses som castigats per la negligència, especialment ho som en l'elecció i el cultiu dels amics. Fem servir consells equivocats i actuem contra el que ens prohibeix un antic proverbi. Perquè, lligats mútuament ja sigui per un tracte llarg o fins i tot per serveis mutus, de sobte trenquem les amistats enmig del seu curs quan sorgeix alguna ofensa.
+Per això — cal dir-ho sovint —, cal estimar després d'haver jutjat, no jutjar després d'haver estimat. Però si en moltes coses som castigats per la negligència, especialment ho som en l'elecció i el cultiu dels amics. Fem servir consells equivocats i actuem contra el que ens prohibeix un antic proverbi. Perquè, lligats mútuament ja sigui per un tracte llarg o fins i tot per serveis recíprocs, de sobte trenquem les amistats enmig del seu curs quan sorgeix alguna ofensa.
 
 ## LXIX
 
