@@ -29,7 +29,7 @@ IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 MIN_DIEM=1.0                 # Mínim DIEM per operar (per sota = stop)
 
 # Model de Venice AI per defecte (per a tasques administratives)
-DEFAULT_MODEL="glm-5"
+DEFAULT_MODEL="zai-org-glm-5"
 
 # ── Selector de models segons tipus de tasca ───────────────────────────────────
 # MAI utilitzar deepseek per a traduccions! Només per a fetch.
