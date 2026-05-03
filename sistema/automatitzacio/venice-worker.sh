@@ -26,7 +26,7 @@ CONSECUTIVE_ERRORS_FILE="/tmp/worker-consecutive-errors.txt"
 TASK_TIMEOUT=1800            # 30 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
-MIN_DIEM=1.0                 # Mínim DIEM per operar (per sota = stop)
+MIN_DIEM=2.0                 # Mínim DIEM per operar (per sota = stop) - deixa marge per comunicació
 
 # Model de Venice AI per defecte (per a tasques administratives)
 DEFAULT_MODEL="zai-org-glm-5"
