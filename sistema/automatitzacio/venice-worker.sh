@@ -47,7 +47,7 @@ select_model() {
     
     # Seleccionar segons tipus de tasca
     case "$task_type" in
-        translate|retranslate|fix-translate)
+        translate|translation|retranslate|fix-translate|fix-translation)
             # Detectar gènere per paraules clau
             if echo "$task_instruction" | grep -qiE "filosof[ií]a|poes[ií]a|teatre|cl[àa]ssic|grec|llat[ií]|plato|aristot|socrates|epicte|marc aureli|seneca"; then
                 echo "claude-opus-4-7"
@@ -581,7 +581,7 @@ if tasks:
 
     # ── Executar ──────────────────────────────────────────────────────────
     # Detectar si és tasca de traducció per executar amb script dedicat
-    if echo "$TASK_TYPE" | grep -qiE "translate|retranslate|fix-translate"; then
+    if echo "$TASK_TYPE" | grep -qiE "translate|translation|retranslate|fix-translate|fix-translation"; then
         log "   📖 Tasca de traducció detectada. Usant traduir_venice.py"
         
         # Determinar si és "continuar"
