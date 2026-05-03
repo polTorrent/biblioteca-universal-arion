@@ -28,9 +28,12 @@ estadistiques:
   termes_glossari: 16
 revisio:
   estat: needs_fix
-  qualitat: 5.44
-  data_revisio: '2026-05-02'
-  comentari: "CRÍTIC: 34 errors de CLI intercalats al text. Traducció fragmentada amb buits. Necessita retraducció parcial."
+  qualitat: 3.5
+  data_revisio: '2026-05-03'
+  comentari: >
+    CRÍTIC: Traducció fragmentada amb 34 errors de CLI intercalats.
+    Cobertura 65.8% amb buits significatius. Qualitat 3.5/10 (massa baixa).
+    Necesita retraducció completa amb claude-opus-4-7.
 avaluacio_final:
   data: '2026-03-17T07:43:15.083824'
   puntuacions:
