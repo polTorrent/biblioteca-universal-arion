@@ -1,46 +1,76 @@
-📚 **INFORME BIBLIOTECA ARION** — 07:41 03/05/2026
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 **Biblioteca Universal Arion - Heartbeat Report**
+📅 Data: 2026-05-03 16:05 CET
+⏰ Període: Check rutinari
 
-## ⚙️ ESTAT DEL WORKER
-❌ INACTIU | 2 tasques avui | 0 pendents | 2 fallides
+---
 
-## 🔄 TASCA ACTUAL
-⚠️ Cap tasca en execució
+## 💰 Estat DIEM
 
-## 📖 OBRES EN PROGRÉS
-📝 **sobre-la-tranquillitat-de-lanima** (traducció)
-📝 **germania** (traducció)
-📝 **del-sublim** (traducció)
-📝 **els-caracters** (traducció)
-📝 **makura-no-soshi-el-llibre-del-coixi** (traducció)
-📝 **cartes-a-un-jove-poeta** (traducció)
-📝 **menschliches-allzumenschliches** (traducció)
-📝 **capitols-interiors** (traducció)
+- **Saldo actual**: 0.686 DIEM
+- **Estat**: 🔴 CRÍTIC (per sota de 3.0 DIEM mínim)
+- **Reset**: 00:00 UTC (~8 hores)
 
-## ⏱️ ESTIMACIONS
-| Categoria | Hores |
-|-----------|-------|
-| Traduccions pendents | 0.0h |
-| Correccions pendents | 0.0h |
-| Validacions | 12.2h |
-| **TOTAL** | **12.2h** (2.0 dies) |
+⚠️ **No es generen tasques noves fins reset DIEM**
 
-## ❌ TASQUES FALLIDES
-• **desconegut**: 
-  Error: Scripts de traducció (traduir_venice.py i traduir_ (1 reintents)
-• **desconegut**: 
-  Error: Traducció incompleta detectada. Falten 6 dels 19 c (1 reintents)
+---
 
-## 📊 RESUM
+## 📊 Estat del Catàleg
+
 | Mètrica | Valor |
 |---------|-------|
-| Total traduccions | 100 |
-| ✅ Validades | 49 |
-| 🔧 Pendents correcció | 0 |
-| 📖 En progres | 51 |
-| ⏳ Pendents traducció | 0 |
+| Total obres | 100 |
+| Correctes | 96 (96%) |
+| Amb errors | 4 |
+| Validades | 49 |
+| Amb .needs_fix | 2 |
+| Total traduccions | 103 |
 
-## ⚠️ PROBLEMES QUE NECESSITEN SUPERVISIÓ
-🔴 **Worker aturat** - Requerim reinici manual
-🟡 **2 tasques fallides** - Requereixen revisió
+---
 
+## 📋 Estat de Tasques
+
+| Estat | Quantitat |
+|-------|-----------|
+| ✅ Completades (total) | 53 |
+| 🔄 En progrés | 0 |
+| 📋 Pendents | 0 |
+| ❌ Fallides | 4 |
+
+---
+
+## ⚙️ Estat del Worker
+
+- **Estat**: ❌ INACTIU
+- **Lockfile**: No detectat
+- **Acció requerida**: Cap (heartbeat no l'ha reiniciat per DIEM baix)
+
+---
+
+## 🔴 Problemes Detectats
+
+1. **[CRÍTIC]** Saldo DIEM insuficient (0.686 < 3.0 mínim)
+2. **[MITJÀ]** Worker inactiu (normal amb DIEM baix)
+3. **[BAIX]** 4 tasques fallides pendents de revisió
+
+---
+
+## 💡 Recomanacions
+
+1. Esperar reset DIEM a les 00:00 UTC
+2. Revisar les 4 tasques fallides manualment
+3. No processar traduccions fins tenir > 5 DIEM
+4. Verificar que el worker es reactivi automàticament després del reset
+
+---
+
+## 📝 Tasques del Proper Heartbeat
+
+- [ ] Verificar saldo DIEM (després de reset)
+- [ ] Reiniciar worker si cal
+- [ ] Processar tasques fallides
+- [ ] Supervisar obres amb .needs_fix
+- [ ] Actualitzar web si cal
+
+---
+
+*Report generat automàticament pel heartbeat. No enviat a Discord (Optimizer ho farà a les 21:00 UTC).*

@@ -1,57 +1,65 @@
 {
-  "last_updated": "2026-05-03T04:00:00Z",
-  "status": "ACTIVE",
-  "reason": "Saldo DIEM suficient (12.51). Worker aturat manualment per清理. 4 tasques recuperades de failed/ a pending/. Pendents: 4 (2 retraduccions prioritat 2, 2 fixes prioritat 3).",
-  "pending_tasks": 4,
+  "last_updated": "2026-05-03T18:00:00Z",
+  "status": "SKIP",
+  "reason": "Saldo DIEM insuficient (0.435). Reset programat a les 00:00 UTC. Worker zombie matat i netejat.",
+  "pending_tasks": 0,
   "active_translations": [],
   "needs_fix_works": [
-    "obres/filosofia/plato/criton",
     "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
-    "obres/filosofia/schopenhauer/vierfache-wurzel"
+    "obres/narrativa/txekhov/sala-numero-6"
   ],
   "fixing_works": [],
   "catalog_health": {
     "total_works": 103,
     "validated": 49,
     "without_validation": 54,
-    "needs_fix": 3,
+    "needs_fix": 2,
     "completion_rate": "48%",
     "health_score": "95%"
   },
   "diem_status": {
-    "balance": 12.51,
+    "balance": 0.435,
     "remaining_requests": 149,
     "remaining_tokens": 3000000,
-    "activity_level": "BALANCED"
+    "activity_level": "SKIP"
   },
   "task_recovery": {
-    "recovered_from_failed": 4,
-    "tasks_pending": [
-      "2026-05-02_corregir_txekhov.json",
-      "2026-05-02_millorar_cicero.json",
-      "2026-05-02_retraduir_lucreci.json",
-      "2026-05-02_retraduir_nietzsche.json"
+    "recovered_from_failed": 0,
+    "tasks_pending": [],
+    "failed_tasks": [
+      {
+        "id": "2026-05-02_corregir_txekhov_failed",
+        "retries": 1,
+        "max_retries": 2,
+        "cost_needed": 2.5
+      },
+      {
+        "id": "2026-05-02_retraduir_lucreci",
+        "retries": 1,
+        "max_retries": 2,
+        "cost_needed": 3.5
+      }
     ]
   },
   "worker_status": "STOPPED",
-  "worker_note": "Worker orfe aturat. Sense lockfile detectat. Pend reinici manual.",
+  "worker_note": "Worker zombie matat manualment. Lockfile netejat. Worker disponible per reiniciar després del reset DIEM.",
   "web_status": "OK",
   "critical_issues": [
     {
+      "severity": "CRÍTIC",
+      "issue": "Saldo DIEM insuficient (0.435 < 3.0 mínim)",
+      "action": "Esperar reset 00:00 UTC (6 hores)"
+    },
+    {
       "severity": "MITJANA",
-      "work": "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
-      "issue": "CRÍTIC: 34 errors CLI intercalats, necessita retraducció completa"
+      "issue": "Worker zombie matat (procés orfe des de 08:05)",
+      "action": "Worker netejat. Reiniciar després del reset."
     },
     {
       "severity": "BAIXA",
-      "work": "obres/filosofia/plato/criton",
-      "issue": "Obra amb .needs_fix pendent"
-    },
-    {
-      "severity": "BAIXA",
-      "work": "obres/filosofia/schopenhauer/vierfache-wurzel",
-      "issue": "Obra amb .needs_fix pendent"
+      "issue": "2 tasques fallides pendents de retry",
+      "action": "Recuperar quan el saldo DIEM ho permeti"
     }
   ],
-  "next_heartbeat": "2026-05-03T06:00:00Z"
+  "next_heartbeat": "2026-05-03T20:00:00Z"
 }
