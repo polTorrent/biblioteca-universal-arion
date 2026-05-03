@@ -1,24 +1,28 @@
 {
-  "last_updated": "2026-05-02T18:00:00Z",
-  "status": "PAUSED",
-  "reason": "Saldo DIEM insuficient (0.39). Workers aturats. 4 tasques recuperades de failed/ a pending/. Esperant reset 00:00 UTC.",
+  "last_updated": "2026-05-03T04:00:00Z",
+  "status": "ACTIVE",
+  "reason": "Saldo DIEM suficient (12.51). Worker aturat manualment per清理. 4 tasques recuperades de failed/ a pending/. Pendents: 4 (2 retraduccions prioritat 2, 2 fixes prioritat 3).",
   "pending_tasks": 4,
   "active_translations": [],
-  "needs_fix_works": [],
+  "needs_fix_works": [
+    "obres/filosofia/plato/criton",
+    "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
+    "obres/filosofia/schopenhauer/vierfache-wurzel"
+  ],
   "fixing_works": [],
   "catalog_health": {
     "total_works": 103,
-    "validated": 45,
-    "without_validation": 58,
-    "needs_fix": 0,
-    "completion_rate": "44%",
-    "health_score": "94%"
+    "validated": 49,
+    "without_validation": 54,
+    "needs_fix": 3,
+    "completion_rate": "48%",
+    "health_score": "95%"
   },
   "diem_status": {
-    "balance": 0.39,
+    "balance": 12.51,
     "remaining_requests": 149,
     "remaining_tokens": 3000000,
-    "activity_level": "SKIP"
+    "activity_level": "BALANCED"
   },
   "task_recovery": {
     "recovered_from_failed": 4,
@@ -30,8 +34,24 @@
     ]
   },
   "worker_status": "STOPPED",
-  "worker_note": "Workers duplicats aturats manualment",
+  "worker_note": "Worker orfe aturat. Sense lockfile detectat. Pend reinici manual.",
   "web_status": "OK",
-  "critical_issues": [],
-  "next_heartbeat": "2026-05-02T20:00:00Z"
+  "critical_issues": [
+    {
+      "severity": "MITJANA",
+      "work": "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
+      "issue": "CRÍTIC: 34 errors CLI intercalats, necessita retraducció completa"
+    },
+    {
+      "severity": "BAIXA",
+      "work": "obres/filosofia/plato/criton",
+      "issue": "Obra amb .needs_fix pendent"
+    },
+    {
+      "severity": "BAIXA",
+      "work": "obres/filosofia/schopenhauer/vierfache-wurzel",
+      "issue": "Obra amb .needs_fix pendent"
+    }
+  ],
+  "next_heartbeat": "2026-05-03T06:00:00Z"
 }
