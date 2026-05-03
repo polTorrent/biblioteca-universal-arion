@@ -1,12 +1,11 @@
-📚 **INFORME BIBLIOTECA ARION** — 06:00 03/05/2026
+📚 **INFORME BIBLIOTECA ARION** — 07:41 03/05/2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## ⚙️ ESTAT DEL WORKER
-❌ INACTIU | 2 tasques avui | 0 pendents | 1 fallides
+❌ INACTIU | 2 tasques avui | 0 pendents | 2 fallides
 
 ## 🔄 TASCA ACTUAL
-**Tipus:** desconegut
-**Instrucció:** ...
+⚠️ Cap tasca en execució
 
 ## 📖 OBRES EN PROGRÉS
 📝 **sobre-la-tranquillitat-de-lanima** (traducció)
@@ -29,6 +28,8 @@
 ## ❌ TASQUES FALLIDES
 • **desconegut**: 
   Error: Scripts de traducció (traduir_venice.py i traduir_ (1 reintents)
+• **desconegut**: 
+  Error: Traducció incompleta detectada. Falten 6 dels 19 c (1 reintents)
 
 ## 📊 RESUM
 | Mètrica | Valor |
@@ -41,5 +42,5 @@
 
 ## ⚠️ PROBLEMES QUE NECESSITEN SUPERVISIÓ
 🔴 **Worker aturat** - Requerim reinici manual
-🟡 **1 tasques fallides** - Requereixen revisió
+🟡 **2 tasques fallides** - Requereixen revisió
 
