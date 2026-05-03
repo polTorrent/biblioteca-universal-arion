@@ -5,5 +5,9 @@
   "max_duration": 3600,
   "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/*/schopenhauer/vierfache-wurzel/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'schopenhauer' --obra 'vierfache-wurzel'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/schopenhauer/vierfache-wurzel/ && git commit -m 'fix: traduir/completar schopenhauer/vierfache-wurzel' && git push",
   "created": "2026-05-03T06:00:28+02:00",
-  "retries": 3
+  "retries": 3,
+  "total_failures": 6,
+  "retry_count": 0,
+  "recovered": true,
+  "regen_count": 1
 }
