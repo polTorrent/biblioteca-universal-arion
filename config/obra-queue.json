@@ -1,86 +1,37 @@
 {
-  "last_updated": "2026-05-02T06:00:00Z",
-  "status": "ACTIVE",
-  "reason": "Heartbeat executat. 4 tasques recuperades de failed/ a pending/. Worker actiu (PID 23330).",
+  "last_updated": "2026-05-02T18:00:00Z",
+  "status": "PAUSED",
+  "reason": "Saldo DIEM insuficient (0.39). Workers aturats. 4 tasques recuperades de failed/ a pending/. Esperant reset 00:00 UTC.",
   "pending_tasks": 4,
-  "active_translations": [
-    {
-      "obra": "aristotil/peri-psykhes",
-      "status": "pending",
-      "progres": "3%",
-      "model_recomanat": "claude-opus-4-7",
-      "cost_estimat": 3.5,
-      "prioritat": 2,
-      "retries": 0,
-      "can_execute": true,
-      "motivacio": "Saldo suficient (11.24 >8.0 DIEM necessaris)"
-    },
-    {
-      "obra": "sade/justine",
-      "status": "pending",
-      "progres": "7%",
-      "model_recomanat": "claude-sonnet-4-6",
-      "cost_estimat": 0.8,
-      "prioritat": 3,
-      "retries": 0
-    },
-    {
-      "obra": "teocrit/idillis",
-      "status": "investigacio",
-      "problema": "Original grec inexistent",
-      "prioritat": 1,
-      "retries": 0
-    },
-    {
-      "obra": "schopenhauer/vierfache-wurzel",
-      "status": "investigacio",
-      "problema": "Traducció inflada 15x",
-      "prioritat": 1,
-      "retries": 0
-    }
-  ],
-  "needs_fix_works": [
-    {
-      "obra": "teocrit/idillis",
-      "problema": "Original grec inexistent",
-      "prioritat": "CRITIC"
-    },
-    {
-      "obra": "schopenhauer/vierfache-wurzel",
-      "problema": "Traducció inflada 1530%",
-      "prioritat": "CRITIC"
-    }
-  ],
+  "active_translations": [],
+  "needs_fix_works": [],
   "fixing_works": [],
   "catalog_health": {
     "total_works": 103,
     "validated": 45,
     "without_validation": 58,
-    "needs_fix": 2,
+    "needs_fix": 0,
     "completion_rate": "44%",
     "health_score": "94%"
   },
   "diem_status": {
-    "balance": 11.24,
+    "balance": 0.39,
     "remaining_requests": 149,
     "remaining_tokens": 3000000,
-    "activity_level": "BALANCED"
+    "activity_level": "SKIP"
   },
   "task_recovery": {
     "recovered_from_failed": 4,
-    "retries_remaining": {
-      "aristotil_psykhes": 0,
-      "sade_justine": 0,
-      "teocrit_investigacio": 0,
-      "schopenhauer_investigacio": 0
-    }
+    "tasks_pending": [
+      "2026-05-02_corregir_txekhov.json",
+      "2026-05-02_millorar_cicero.json",
+      "2026-05-02_retraduir_lucreci.json",
+      "2026-05-02_retraduir_nietzsche.json"
+    ]
   },
-  "worker_status": "ACTIVE",
-  "worker_pid": 23330,
+  "worker_status": "STOPPED",
+  "worker_note": "Workers duplicats aturats manualment",
   "web_status": "OK",
-  "critical_issues": [
-    "teocrit/idillis: Falta original grec - investigacio pendiente",
-    "schopenhauer/vierfache-wurzel: Traducció inflada - investigacio pendiente"
-  ],
-  "next_heartbeat": "2026-05-02T08:00:00Z"
+  "critical_issues": [],
+  "next_heartbeat": "2026-05-02T20:00:00Z"
 }
