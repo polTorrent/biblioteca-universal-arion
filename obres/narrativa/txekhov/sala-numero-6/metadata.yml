@@ -14,15 +14,23 @@ obra:
   font_original: "https://www.gutenberg.org/ebooks/13409"
   nota_font: "Dins 'The Horse-Stealers and Other Stories', traducció anglesa de Constance Garnett (domini públic)"
   seccions: 19
+  problemes_critics:
+    - "TRADUCCIÓ INCOMPLETA: Falten 6 capítols (X, XII, XIII, XVI, XVII, XVIII)"
+    - "Estructura de capítols incorrecta: saltos de IX a XI, de XI a XIV, de XV a XIX"
+    - "Necessita retraducció parcial dels capítols que falten"
   estadistiques:
     paraules_original: 18000
     paraules_traduccio: 16463
+    capítols_original: 19
+    capítols_traduccio: 13
+    capítols_falten: ["X", "XII", "XIII", "XVI", "XVII", "XVIII"]
 revisio:
-  estat: "necessita_correccio"
-  data_revisio: "2026-03-15"
+  estat: "incomplet"
+  data_revisio: "2026-05-03"
   qualitat: 4.0
+  notes: "Traducció incompleta. Falten 6 capítols sencers. Requereix retraducció."
 avaluacio_final:
-  data: "2026-03-07T14:41:52.316657"
+  data: "2026-05-03T06:45:00Z"
   puntuacions:
     fidelitat: 0.0
     veu_autor: 0.0
@@ -31,9 +39,10 @@ avaluacio_final:
     coherencia: 0.0
     global: 0.0
   total_errors: 140
-  errors_critics: 0
-  errors_alts: 0
+  errors_critics: 6
+  errors_alts: 15
   aprovat: false
   requereix_revisio_humana: true
+  requereix_retraduccio: true
   correccions_aplicades: 0
   correccions_pendents: 104
