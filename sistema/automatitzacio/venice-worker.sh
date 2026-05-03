@@ -11,8 +11,10 @@ set -uo pipefail
 # ── Configuració ──────────────────────────────────────────────────────────────
 PROJECT_DIR="$HOME/biblioteca-universal-arion"
 TASKS_DIR="$PROJECT_DIR/sistema/tasks"
+STATE_DIR="$PROJECT_DIR/sistema/state"
 LOG="$PROJECT_DIR/sistema/logs/worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
+DIEM_STOP="$STATE_DIR/diem_stop"
 VENICE_CLI="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
 
 MAX_RETRIES=3                # Intents per tasca abans de marcar com a failed
@@ -24,6 +26,7 @@ CONSECUTIVE_ERRORS_FILE="/tmp/worker-consecutive-errors.txt"
 TASK_TIMEOUT=1800            # 30 min timeout per tasca
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
+MIN_DIEM=1.0                 # Mínim DIEM per operar (per sota = stop)
 
 # Model de Venice AI per defecte (per a tasques administratives)
 DEFAULT_MODEL="glm-5"
@@ -69,6 +72,58 @@ select_model() {
             echo "$DEFAULT_MODEL"
             ;;
     esac
+}
+
+# ── Comprovació DIEM i stop global ────────────────────────────────────────────
+check_diem_and_maybe_stop() {
+    # Si ja existeix el fitxer de stop, sortir
+    if [ -f "$DIEM_STOP" ]; then
+        log "🛑 DIEM STOP actiu. Sortint..."
+        exit 0
+    fi
+    
+    # Consultar saldo DIEM
+    local balance
+    balance=$(python3 "$VENICE_CLI" balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
+    
+    if [ -z "$balance" ]; then
+        log "⚠️ No s'ha pogut consultar el saldo DIEM"
+        return 0  # Continuar si no podem verificar
+    fi
+    
+    # Comprovar si estem per sota del mínim
+    local is_low
+    is_low=$(python3 -c "print('yes' if float('$balance') < $MIN_DIEM else 'no')" 2>/dev/null)
+    
+    if [ "$is_low" = "yes" ]; then
+        log "🚨 DIEM CRÍTIC ($balance < $MIN_DIEM). Creant stop global..."
+        
+        # Crear fitxer de stop
+        mkdir -p "$(dirname "$DIEM_STOP")"
+        echo "{\"timestamp\": \"$(date -Iseconds)\", \"balance\": $balance, \"reason\": \"DIEM below minimum\"}" > "$DIEM_STOP"
+        
+        # Notificar per Discord
+        notify_discord_diem_stop "$balance"
+        
+        exit 0
+    fi
+    
+    log "💰 DIEM: $balance (OK, mínim: $MIN_DIEM)"
+    return 0
+}
+
+notify_discord_diem_stop() {
+    local balance="$1"
+    local message="🛑 **STOP GLOBAL ACTIVAT**
+
+💰 Saldo DIEM: **$balance** (mínim: $MIN_DIEM)
+⏰ Aturat: $(date '+%Y-%m-%d %H:%M:%S %Z')
+
+El sistema romandrà aturat fins al reset de crèdits a les 00:00 UTC.
+El worker es reactivarà automàticament."
+    
+    # Intentar enviar per Discord
+    hermes chat --platform discord --chat-id "1469504522614476953" "$message" 2>/dev/null || true
 }
 
 # ── Executar tasca de traducció amb script dedicat ─────────────────────────────
@@ -416,6 +471,7 @@ EOF
 # MAIN LOOP
 # =============================================================================
 acquire_lock
+check_diem_and_maybe_stop  # Comprovar DIEM abans de processar
 log "🚀 Venice Worker iniciat (PID $$) — Selectorde Models Intel·ligent"
 log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, timeout=${TASK_TIMEOUT}s"
 log "   Models: traduccions→claude-opus/sonnet, fetch→deepseek-v3.2, metadata→glm-5"
