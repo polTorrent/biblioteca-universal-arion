@@ -18,7 +18,7 @@ from pathlib import Path
 TOKEN = os.environ.get("DISCORD_BOT_TOKEN", "")
 CHANNEL_ID = os.environ.get("DISCORD_CHANNEL_ID", "1479599316380291276")
 BOT_USER_ID = os.environ.get("DISCORD_BOT_USER_ID", "1469345148138946752")
-LAST_MESSAGE_FILE = Path.home() / ".openclaw" / "workspace" / "propostes_last_message.txt"
+LAST_MESSAGE_FILE = Path.home() / "biblioteca-universal-arion" / "sistema" / "state" / "propostes_last_message.txt"
 PROPOSTES_DIR = Path.home() / "biblioteca-universal-arion" / "propostes"
 TASK_QUEUE = Path.home() / "biblioteca-universal-arion" / "task-queue.json"
 

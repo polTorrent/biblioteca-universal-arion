@@ -15,7 +15,7 @@ from pathlib import Path
 
 PROJECT = Path.home() / "biblioteca-universal-arion"
 PROPOSTES_DIR = PROJECT / "propostes"
-PROPOSTES_PROCESSADES = Path.home() / ".openclaw" / "workspace" / "propostes-processades.txt"
+PROPOSTES_PROCESSADES = Path.home() / "biblioteca-universal-arion" / "sistema" / "state" / "propostes-processades.txt"
 TASK_QUEUE = PROJECT / "task-queue.json"
 
 # Crear directoris

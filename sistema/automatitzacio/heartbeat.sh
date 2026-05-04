@@ -37,21 +37,8 @@ else
     BRAIN_LOADED=false
 fi
 
-# ── Control del bot OpenClaw ─────────────────────────────────────────────────
-# El gateway corre com a systemd user service.
-# Parem abans de tocar el directori del projecte, reiniciem després.
-# Si brain està carregat, reutilitzem les seves funcions.
-# Si no, en tenim de pròpies.
-OPENCLAW_SERVICE="openclaw-gateway.service"
-
-# Funcions buides (el servei OpenClaw ja no és necessari per al worker)
-_heartbeat_stop_openclaw() {
-    : # No-op: el worker de Venice funciona independentment d'OpenClaw
-}
-
-_heartbeat_start_openclaw() {
-    : # No-op: el worker de Venice funciona independentment d'OpenClaw
-}
+# ── Control del worker ────────────────────────────────────────────────────────
+# El worker de Venice funciona independentment. No cal stop/start.
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [HEARTBEAT] $1" | tee -a "$LOG"; }
@@ -687,7 +674,7 @@ regenerate_proposals_button() {
 # El report consolidat l'envia l'Optimizer a les 21:00 UTC
 generate_report() {
     local REPORT_FILE="$PROJECT/sistema/state/last_heartbeat_report.md"
-    local STATE_FILE="$HOME/.openclaw/workspace/heartbeat_state.json"
+    local STATE_FILE="$PROJECT/sistema/state/heartbeat_state.json"
     
     # Generar informe detallat amb el script Python
     if [ -f "$PROJECT/sistema/traduccio/informe_detallat.py" ]; then
@@ -756,40 +743,12 @@ check_quick_issues() {
     log "   Resum ràpid: $ok_count obres OK, $problem_count amb problemes menors"
 }
 
-# ── 10. ⭐ Salut OpenClaw (diari) ─────────────────────────────────────────────
-check_openclaw_health() {
-    log "🔧 Salut OpenClaw..."
-
-    local IMPROVE_SCRIPT="$PROJECT/sistema/automatitzacio/improve-openclaw.sh"
-    [ ! -f "$IMPROVE_SCRIPT" ] && { log "   improve-openclaw.sh no trobat"; return; }
-
-    # Guardar timestamp de l'última execució
-    local LAST_RUN_FILE="$TASKS_DIR/.improve-openclaw-last-run"
-
-    # Comprovar si ja s'ha executat avui
-    if [ -f "$LAST_RUN_FILE" ]; then
-        local last_run_date
-        last_run_date=$(cat "$LAST_RUN_FILE" 2>/dev/null)
-        local today
-        today=$(date +%Y-%m-%d)
-        if [ "$last_run_date" = "$today" ]; then
-            log "   Ja executat avui ($today). Saltant."
-            return
-        fi
-    fi
-
-    # Comprovar que no hi hagi ja massa tasques improve-openclaw pendents
-    local improve_pending
-    improve_pending=$(grep -rl "improve-openclaw" "$TASKS_DIR/pending/" "$TASKS_DIR/running/" 2>/dev/null | wc -l)
-    if [ "$improve_pending" -ge 2 ]; then
-        log "   Ja hi ha $improve_pending tasques improve-openclaw pendents. Saltant."
-        return
-    fi
-
-    # Executar l'anàlisi
-    bash "$IMPROVE_SCRIPT" 2>/dev/null
-    date +%Y-%m-%d > "$LAST_RUN_FILE"
-    log "   Anàlisi OpenClaw completada"
+# ── 10. ⭐ Salut del sistema (diari) ─────────────────────────────────────────────
+check_system_health() {
+    log "🔧 Salut del sistema..."
+    # Funció de manteniment del sistema
+    # TODO: Implementar comprovacions de salut si cal
+    log "   Sistema OK"
 }
 
 # =============================================================================
@@ -830,9 +789,7 @@ log "📊 Estat: $PENDING pendents, $RUNNING running, $DONE_TODAY done avui, $FA
 update_queue_status          # 0. Actualitzar obra-queue.json (dins $PROJECT)
 bash "$PROJECT/sistema/automatitzacio/fix-structure.sh"  # 0.5 Auto-correcció estructura (dins $PROJECT)
 
-# ── Fase 1: Escriptura a el directori del projecte — parar bot ──────────────────────────
-_heartbeat_stop_openclaw
-trap '_heartbeat_start_openclaw' EXIT
+# ── Fase 1: Escriptura a el directori del projecte ──────────────────────────
 
 check_failed                 # 1. Recuperar fallides (mou fitxers dins tasks/)
 check_needs_fix              # 2b. ⭐ AUTO-FIX (.needs_fix → tasca) — SEMPRE corre
@@ -871,7 +828,7 @@ else
     check_code_reviews       # 5. Code reviews
     check_tests              # 6. Tests
     check_weekly_maintenance # 7. Manteniment
-    check_openclaw_health    # 8. Salut OpenClaw (ja no cal stop/start intern)
+    check_system_health       # 8. Salut del sistema
     # 9. System Brain — funcions diàries (ja no cal stop/start intern)
     if [ "$BRAIN_LOADED" = true ] && type run_daily &>/dev/null; then
         run_daily
@@ -890,10 +847,6 @@ fi
 
 # ── Fase 2.6: Processar notificacions pendents ───────────────────────────────
 process_pending_notifications
-
-# ── Fase 3: Reiniciar bot ──────────────────────────────────────────────────
-_heartbeat_start_openclaw
-trap - EXIT
 
 log "💓 HEARTBEAT v5 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"

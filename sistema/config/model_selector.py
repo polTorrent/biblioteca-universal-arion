@@ -158,7 +158,7 @@ class ModelSelector:
             import subprocess
             result = subprocess.run(
                 ["python3", os.path.expanduser(
-                    "~/.openclaw/workspace/skills/venice-ai/scripts/venice.py"
+                    "~/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
                 ), "balance"],
                 capture_output=True,
                 text=True,

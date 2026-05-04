@@ -25,7 +25,7 @@ CHANNEL_ID = "1479599316380291276"
 PROJECT = Path.home() / "biblioteca-universal-arion"
 PROPOSTES_DIR = PROJECT / "propostes"
 TASK_QUEUE = PROJECT / "task-queue.json"
-LAST_MESSAGE_FILE = Path.home() / ".openclaw" / "workspace" / "propostes_bot_last.txt"
+LAST_MESSAGE_FILE = Path.home() / "biblioteca-universal-arion" / "sistema" / "state" / "propostes_bot_last.txt"
 
 def log(msg):
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")

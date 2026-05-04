@@ -10,7 +10,7 @@ from datetime import datetime
 import subprocess
 
 PROJECT = Path.home() / "biblioteca-universal-arion"
-TASKS_DIR = Path.home() / ".openclaw" / "workspace" / "tasks"
+TASKS_DIR = Path.home() / "biblioteca-universal-arion" / "sistema" / "tasks"
 OBRES_DIR = PROJECT / "obres"
 QUEUE_FILE = PROJECT / "config" / "obra-queue.json"
 

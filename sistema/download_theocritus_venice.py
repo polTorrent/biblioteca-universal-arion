@@ -24,7 +24,7 @@ def extract_greek_with_venice(url, idyll_num):
     
     cmd = [
         'python3',
-        '/home/jo/.openclaw/workspace/skills/venice-ai/scripts/venice.py',
+        '/home/jo/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py',
         'chat', prompt,
         '--model', 'deepseek-v3.2',
         '--max-tokens', '3000',

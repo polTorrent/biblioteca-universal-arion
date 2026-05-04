@@ -13,7 +13,7 @@ from pathlib import Path
 import requests
 
 CHANNEL_ID = "1479599316380291276"
-LAST_MESSAGE_FILE = Path.home() / ".openclaw" / "workspace" / "propostes-button-message.txt"
+LAST_MESSAGE_FILE = Path.home() / "biblioteca-universal-arion" / "sistema" / "state" / "propostes-button-message.txt"
 
 
 def get_last_message_id() -> str | None:
