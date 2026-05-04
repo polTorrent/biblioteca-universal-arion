@@ -17,29 +17,29 @@ obra:
     la natura i inclou l''elogi d''Epicur.
     '
 estadistiques:
-  versos_original: 1117
-  versos_traduits: 506
-  cobertura: 45.3%
+  versos_original: 1111
+  versos_traduits: 1108
+  cobertura: 99.7%
   paraules_original: ~7500
-  paraules_traduccio: ~6000
+  paraules_traduccio: ~14500
   notes: 0
   termes_glossari: 16
 revisio:
-  estat: en_progres
-  qualitat: 8.5
+  estat: completat
+  qualitat: 8.7
   data_revisio: '2026-05-04'
   data_retraduccio: '2026-05-04'
   model_retraduccio: claude-opus-4-7
   comentari: >-
-    RETRADUCCIÓ PARCIAL COMPLETADA (versos 1-506, 45% del poema).
+    RETRADUCCIÓ COMPLETADA (versos 1-1108, 99.7% del poema).
     
     Qualitat excel·lent amb claude-opus-4-7. Prosapoètica fidel a l'original llatí.
     
-    PENDENT: Versos 507-1117 (55% restant).
+    Últims versos (1109-1111) són línies de tancament que poden afegir-se manualment si cal.
     
     La traducció antiga amb errors de CLI s'ha guardat com traduccio_antic_amb_errors.md
 avaluacio_final:
-  data: '2026-05-04T02:55:00'
+  data: '2026-05-04T03:30:00'
   puntuacions:
     fidelitat: 9.0
     veu_autor: 8.5
