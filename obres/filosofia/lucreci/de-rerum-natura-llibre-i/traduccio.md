@@ -210,3 +210,414 @@ A més encara: si no existís res que poguéssim anomenar buit, tot seria sòlid
 A més, si la matèria no hagués estat eterna, totes les coses ja s'haurien reduït abans completament al no-res, i del no-res hauria renascut tot allò que veiem. Però com que més amunt t'he ensenyat que res no pot crear-se del no-res ni allò que ha estat engendrat reduir-se al no-res, els primordis han de tenir un cos immortal, en el qual cadascuna de les coses, en l'hora suprema, pugui dissoldre's, perquè la matèria proveeixi a la reparació de les coses. Són, doncs, els primordis sòlids per la seva simplicitat, i de cap altra manera no haurien pogut, conservats al llarg dels segles, des d'un temps infinit, reparar les coses.
 
 Finalment, si la natura no hagués posat cap límit al trencament de les coses, ja els cossos de la matèria, esmicolats al llarg de l'edat anterior, haurien quedat reduïts a tal punt que res del que en sortís, concebut a partir d'un moment determinat, no podria assolir el terme suprem de la seva edat.
+
+
+## Versos 556-605
+
+Veiem, en efecte, que qualsevol cosa pot desfer-se més de pressa que no pas refer-se de nou; per això, la llarga, la infinita edat dels dies del temps ja transcorregut, allò que hagués trencat, pertorbant-ho i dissolent-ho, mai no podria reparar-se en el temps que resta. Però ara, sens dubte, hi ha establert un límit cert al trencament, perquè veiem que cada cosa es refà i que, alhora, hi ha temps finits fixats per a cada espècie, durant els quals poden assolir la flor de l'edat.
+
+A això s'hi afegeix que, tot i constar els cossos de la matèria d'una solidesa absoluta, igualment es pot explicar com es generen totes les coses toves —l'aire, l'aigua, la terra, els vapors— i amb quina força cada cosa s'esdevé, ja que una vegada hi ha el buit barrejat dins les coses. Però, al contrari, si fossin tous els principis de les coses, no es podria donar raó d'on poguessin crear-se els forts sílexs i el ferro; perquè, des de l'arrel, tota la naturalesa estaria mancada de fonament originari. Existeixen, doncs, cossos sòlids per la seva simplicitat poderosa, els quals, per una unió més atapeïda, poden estrènyer-ho tot i mostrar forces robustes.
+
+A més, si no s'hagués fixat cap límit al trencament dels cossos, caldria tanmateix que des de l'eternitat del temps haguessin sobreviscut fins ara alguns cossos de les coses, els quals encara no haurien estat sotmesos a cap perill. Però, ja que consten d'una naturalesa fràgil, és contradictori que haguessin pogut perdurar un temps etern, vexats al llarg dels segles per cops innumerables.
+
+Finalment, ja que per a cada espècie hi ha establert un límit fix al créixer i al mantenir la vida, i ja que està sancionat què pot cadascuna per les lleis de la natura i què, per contra, no pot, i res no es modifica, sinó que tot perdura tan constantment que totes les aus de plomatge variat mostren, segons el seu ordre, les taques pròpies de l'espècie inscrites en el cos, també han de tenir, sens dubte, un cos de matèria immutable; perquè, si els principis de les coses poguessin, vençuts per alguna raó, transformar-se, restaria també incert què pot néixer i què no, i de quina manera cada cosa té un poder finit i un terme profundament fixat, ni tantes vegades les generacions podrien reproduir, espècie per espècie, la naturalesa, els costums, l'aliment i els moviments dels seus progenitors.
+
+A més encara, com que existeix un punt extrem, un cim últim de cada cos, que els nostres sentits ja no són capaços de percebre, aquest existeix, sens dubte, sense parts i consta d'una naturalesa mínima, i mai no ha estat per si mateix separat ni d'ara endavant podrà ser-ho, ja que ell mateix és part —i la primera i única— d'un altre, i a partir d'aquest, altres i altres parts semblants per ordre...
+
+
+## Versos 507-556
+
+Car allà on hi ha espai buit, això que anomenem el buit, no hi ha cos; i allà on, en canvi, un cos es manté, en cap manera no hi ha buit ni vacuïtat. Són, doncs, sòlids i sense buit els cossos primers.
+
+A més, com que en les coses engendrades hi ha buit, cal que al voltant s'aixequi una matèria sòlida; i cap cosa no es pot demostrar amb raó verídica que amagui el buit dins el seu cos i el contingui a dins, si no admets que allò que el reté sigui sòlid. I això no pot ser altra cosa que un agrupament de matèria, capaç de retenir el buit de les coses. La matèria, doncs, que consta de cos sòlid, pot ésser eterna, mentre les altres coses es dissolen.
+
+A més, si no existís res que en diguéssim buit, tot seria sòlid; i, al revés, si no hi haguessin certs cossos que omplissin els llocs i els ocupessin, tot l'espai que existeix no seria sinó buit i vacuïtat. Així doncs, sens dubte, alternativament cos i buit es distingeixen, ja que ni tot és ple del tot ni tot és buit; existeixen, per tant, certs cossos capaços de distingir l'espai ple del buit. Aquests cossos no poden ser dissolts pels colps rebuts de fora, ni descosits per penetració profunda, ni desfets per cap altre mitjà que els assagi; cosa que ja una mica més amunt t'he demostrat. Car sembla que res no pot ser xafat sense buit, ni trencat, ni esberlat partint-lo en dos, ni admetre la humitat, ni tampoc el fred penetrant ni el foc que tot ho traspassa, agents que ho destrueixen tot. I com més una cosa reté buit a dins, tant més fàcilment, assajada en les seves entranyes, vacil·la sota aquests embats. Per tant, si els cossos primers són sòlids i sense buit, com t'he ensenyat, cal que aquests siguin eterns.
+
+A més, si la matèria no hagués estat eterna, tot ja s'hauria reduït abans del tot al no-res, i del no-res hauria renascut tot allò que veiem. Però com que més amunt ja he ensenyat que res no pot ser creat del no-res ni allò que ha estat engendrat ser retornat al no-res, els elements primordials han de tenir cos immortal, en el qual cada cosa pugui dissoldre's a la seva hora suprema, a fi que la matèria proveeixi de què refer les coses. Són, per tant, els primordis sòlids en llur simplicitat, i no poden d'altra manera, conservats a través dels segles, refer les coses des d'un temps ja infinit.
+
+Finalment, si la natura no hagués posat cap límit al trencament de les coses, els cossos de la matèria ja haurien estat reduïts pel temps que abans els trencava, fins al punt que cap cosa, a partir d'un moment cert, no podria, un cop concebuda, arribar al límit suprem de la seva edat. Car veiem que qualsevol cosa pot dissoldre's més de pressa...
+
+
+## Versos 606-655
+
+En atapeïda corrua omplen la natura del cos; i com que aquests no poden subsistir per si sols, cal que s'aferrin allà d'on de cap manera no puguin ser arrencats. Són, per tant, els elements primordials de sòlida simplicitat, que, comprimits en parts mínimes, cohereixen estretament. No són ajuntats per la unió d'aquelles parts, sinó més aviat poderosos per una eterna simplicitat, d'on la natura no permet ja que res els sigui arrencat ni disminuït, tot reservant les llavors de les coses.
+
+A més, si no existís el mínim, els cossos més petits constarien de parts infinites, ja que sempre la meitat d'una meitat tindria una altra meitat, i res no posaria fi al procés. Així doncs, entre la suma total de les coses i la més petita, ¿quina diferència hi hauria? Cap, perquè per molt que la suma de tot sigui del tot infinita, tanmateix les coses més petites constarien igualment de parts infinites. I com que la recta raó protesta contra això i nega que la ment ho pugui creure, vençut hauràs de confessar que existeixen coses que ja no tenen cap part i que són per natura mínimes. I com que existeixen, també has de reconèixer que aquelles són sòlides i eternes.
+
+Finalment, si la natura creadora de les coses tingués el costum de forçar que tot es dissolgués en parts mínimes, ja no podria ella mateixa refer res a partir d'elles, perquè allò que no està dotat de cap part no pot tenir el que la matèria genitora ha de posseir: diversos enllaços, pesos, cops, encontres, moviments, mitjançant els quals tota cosa es duu a terme.
+
+Per això, els qui van pensar que la matèria de les coses era el foc i que del foc tot sol es constitueix la totalitat, semblen haver-se desviat enormement de la veritable raó. D'entre ells, Heràclit entra primer al combat com a capdavanter, cèlebre per la seva llengua obscura més entre els frívols que entre els greus dels grecs, els qui cerquen la veritat; car els necis admiren i estimen més allò que veuen amagat sota paraules tortuoses, i tenen per veritable el que pot afalagar bellament les orelles i el que va pintat amb un so agradable.
+
+Perquè, demano, ¿com podrien ser les coses tan diverses si haguessin estat creades a partir d'un sol foc i pur? De res no serviria que el foc ardent es condensés o es fes ral, si les parts del foc tinguessin la mateixa naturalesa que té tot el foc en conjunt. Més intens seria l'ardor amb les parts comprimides, més lànguid amb elles dispersades i escampades. Res més que això pots pensar que pugui esdevenir-se en aitals causes, i menys encara que pugui sorgir tanta varietat de coses dels focs densos i rals.
+
+Això també: si admetessin barrejat a les coses el buit,
+
+
+## Versos 557-606
+
+...que es refessin de nou; per això, la llarga edat infinita del temps ja transcorregut, que les hauria trencat fins ara, destorbant-les i dissolent-les, mai més no podria reparar-les en el temps que resta. Però ara, sens dubte, hi ha establert un límit cert al seu trencament, ja que veiem que cada cosa es refà i que alhora hi ha temps finits, segons les espècies, en què les coses poden assolir la flor de la seva edat.
+
+A això s'hi afegeix encara que, tot i ser els cossos de la matèria sòlids al màxim, es pot tanmateix donar raó de totes les coses toves que es fan —aire, aigua, terra, vapors—, de com es fan i amb quina força cadascuna obra, perquè un cop per sempre hi ha el buit barrejat dins de les coses. En canvi, si fossin tous els primers principis de les coses, no es podria explicar d'on poguessin néixer els sílexs robustos i el ferro; car des del fonament mateix mancaria a tota la natura el seu principi. Hi ha, doncs, cossos sòlids i poderosos en la seva simplicitat, mitjançant la unió més densa dels quals totes les coses poden estrènyer-se i mostrar les seves vigoroses forces.
+
+Encara més: si no s'hagués posat cap límit al trencament dels cossos, caldria tanmateix que, des del temps etern, hi sobrevisquessin ara mateix alguns cossos a les coses, que cap perill no hagués encara assajat. Però com que estan dotats de natura fràgil, és contradictori que hagin pogut romandre temps etern, vexats per cops innombrables al llarg dels segles.
+
+Finalment, ja que segons les espècies s'ha establert un límit fix al créixer de les coses i a mantenir la vida, i ja que està sancionat què pot fer cadascuna pels pactes de la natura i què, en canvi, no pot, ni res no es muda, ans tot resta tan ferm que els ocells de variades menes mostren totes, en ordre, les taques pròpies del seu llinatge inscrites al cos —cal sens dubte que també tinguin un cos de matèria immutable. Car si els primers principis de les coses, vençuts d'alguna manera, poguessin canviar, restaria també incert què pot néixer i què no, de quina manera, en fi, hi hauria per a cadascun una potència finita i un terme fondament arrelat, ni tantes vegades les generacions podrien retornar segons l'espècie la natura, els costums, l'aliment i els moviments dels progenitors.
+
+Després, com que hi ha un punt extrem, una cima última de cada cos, que els nostres sentits ja no poden percebre, aquest punt existeix sens dubte sense parts i consta d'una natura mínima, i mai no ha estat per si mateix separat, ni d'ara endavant ho podrà ser, perquè és ell mateix part primera i única d'un altre; i d'aquí, en ordre, altres i altres parts semblants amb formació atapeïda omplen la natura del cos.
+
+
+## Versos 656-705
+
+Els focs podran condensar-se i quedar enrarits; però com que veuen moltes coses contràries que existeixen i defugen deixar en les coses un buit pur, mentre temen els passatges costeruts, perden el camí veritable, i no s'adonen, al seu torn, que si es treu el buit de les coses, totes es condensarien i de totes es formaria un sol cos, que res no podria llançar de si amb rapidesa, com el foc abrasador escampa llum i calor, perquè veuries que no és fet de parts atapeïdes.
+
+Que si potser creuen que per una altra raó els focs es poden extingir en la seva trobada i mudar de cos, és clar que, si no s'estalvien de fer-ho en cap mesura, perirà del tot fins al no-res, sens dubte, tot l'ardor, i del no-res naixeran totes les coses que es creen; car tot allò que, mudat, surt dels seus límits, immediatament és la mort d'allò que abans era. Per tant, cal que alguna cosa resti incòlume en aquells, perquè no se't redueixin totes les coses al no-res del tot, i del no-res, renascuda, no rebroti l'abundància de les coses.
+
+Ara, doncs, ja que existeixen certs cossos del tot indubtables, que conserven sempre la mateixa naturalesa, i amb la sortida, l'entrada o el canvi d'ordre dels quals les coses muden de naturalesa i els cossos es transformen, és lícit saber que aquests cossos primordials de les coses no són ígnis. Car de res no serviria que alguns es retiressin i marxessin, i d'altres s'hi afegissin, i alguns es mudessin canviant d'ordre, si tots ells, malgrat tot, conservessin la naturalesa de l'ardor; perquè seria foc, en tots els modes, el que creessin.
+
+La veritat, tanmateix, al meu entendre, és aquesta: hi ha certs cossos els xocs, moviments, ordre, posició i figures dels quals produeixen els focs i, mudat l'ordre, en muden la naturalesa; i no són semblants al foc ni a cap altra cosa que pugui enviar cossos als sentits i tocar amb el seu contacte el nostre tacte.
+
+I a més, dir que totes les coses són foc i que cap cosa veritable no es compta entre les coses si no és el foc, com fa aquest mateix, sembla un total deliri. Car ell mateix, partint dels sentits, combat contra els sentits i els fa trontollar, ells, dels quals depenen totes les creences, ells, pels quals ha estat conegut allò mateix que ell anomena foc; car creu que els sentits coneixen veritablement el foc, però no creu en les altres coses, que no són pas menys clares. Això em sembla a mi vanitós i deliri alhora; car a què ens referirem? Què pot ser-nos més cert que els sentits mateixos, amb què marquem el ver i el fals?
+
+A més, per què qualsevol hauria d'eliminar més aviat totes les coses i voler deixar només la naturalesa de l'ardor, en lloc de negar que existeix el foc i deixar, tanmateix, que existeixi una altra cosa? Igual demència sembla, en efecte, dir l'una cosa i l'altra. Per això, els qui van pensar que la matèria de les coses
+
+
+## Versos 607-656
+
+Com que aquestes coses no poden subsistir per si mateixes, cal necessàriament que s'aferrin a quelcom d'on per cap raó no puguin ésser arrencades. Existeixen, doncs, principis primordials de sòlida simplicitat, que, atapeïts en parts mínimes, es mantenen estretament cohesionats; no formats per la unió d'aquelles altres parts, sinó més aviat poderosos per una eterna simplicitat, d'on la natura, que reserva les llavors per a les coses, no permet ja que res en sigui arrencat ni disminuït.
+
+A més, si no existís un mínim, cadascun dels cossos més petits constaria de parts infinites, ja que la meitat d'una meitat tindria sempre la seva pròpia meitat, i res no posaria un límit. Aleshores, entre la suma total de les coses i la més diminuta, ¿quina diferència hi hauria? Cap, certament; car, per molt que la suma total sigui infinita en la seva totalitat, tanmateix, també les coses més menudes constarien igualment de parts infinites. I com que la raó vertadera s'oposa a això i nega que l'ànim ho pugui creure, vençut, has de confessar per força que existeixen coses que no estan dotades ja de cap part i que constitueixen el mínim per natura. I com que aquestes existeixen, has d'admetre també que són sòlides i eternes.
+
+Finalment, si la natura creadora de les coses tingués per costum d'obligar tot a dissoldre's en les parts mínimes, ja no podria refer res a partir d'elles, perquè allò que no està enriquit amb cap part no pot tenir el que la matèria genitiva ha de posseir: els diversos enllaços, els pesos, els xocs, les concurrències, els moviments, mitjançant els quals es produeix cada cosa.
+
+Per això, aquells qui van pensar que la matèria de les coses era el foc, i que solament del foc es constitueix la suma total, sembla que han caigut grandiosament lluny de la veritable raó. D'entre ells, Heràclit, el primer, entra en combat com a cabdill, il·lustre per la seva llengua obscura més entre els frívols que entre els greus dels grecs, els qui cerquen la veritat; car els necis admiren i estimen més allò que entreveuen amagat sota paraules capgirades, i tenen per veritable allò que pot afalagar bellament les orelles i ve pintat amb sonoritat agradable.
+
+Em pregunto, en efecte, com podrien existir coses tan variades si han estat creades a partir d'un sol foc i pur. De res no serviria que el foc càlid es condensés o es rarifiqués, si les parts del foc tinguessin la mateixa natura que té el foc sencer en conjunt. Més intensa seria la cremor amb les parts apinyades, i més lànguida, en canvi, amb elles disperses i escampades. Res més enllà d'això pots pensar que pugui esdevenir-se en tals causes, i molt menys que tanta varietat de coses pugui sorgir de focs densos i rars.
+
+I encara això: si admetessin barrejat amb les coses el buit, llavors els focs podrien condensar-se i quedar rarificats;
+
+
+## Versos 706-755
+
+Aquells que pensaren que el foc i del foc pot constituir-se la totalitat, i els qui establiren l'aire com a principi en l'engendrament de les coses, o tots aquells que cregueren que l'aigua per si mateixa modela les coses o que la terra crea totes les coses i es transmuda en totes les natures, sembla que s'han apartat moltíssim de la veritat.
+
+Afegeix-hi encara aquells qui dupliquen els primordis de les coses, ajuntant l'aire amb el foc i la terra amb el líquid, i els qui pensen que de quatre coses pot tot brotar: del foc, de la terra, de l'aire i de la pluja.
+
+D'entre aquests, el primer és Empèdocles d'Acragant, a qui engendrà una illa de costes triangulars, al voltant de la qual flueix amb grans revolts el mar Jònic, esquitxant-la amb la salabror de les seves ones glauques, i amb un estret estricte el mar impetuós separa amb les seves ones les costes de la terra eòlia dels seus confins.
+
+Aquí hi ha la vasta Caribdis, i aquí els bramuls de les flames de l'Etna amenacen de tornar a aplegar les seves ires, perquè la força vomiti novament els focs irromputs de les seves goles i porti de nou cap al cel els llampecs de la flama.
+
+Encara que aquesta gran regió sembli admirable de moltes maneres als pobles humans i sigui anomenada digna de ser visitada, opulenta en bons béns, fortificada amb gran força d'homes, tanmateix sembla que res ha tingut en si més preclar que aquest home, ni més sant, ni més admirable, ni més estimat.
+
+Així mateix, els cants del seu pit diví clamen i exposen els seus preclars descobriments, de manera que amb prou feines sembla creat de llinatge humà.
+
+Aquest, però, i aquells que hem esmentat com a inferiors —en moltes parts egrègiament i en molt menors—, encara que descobrint moltes coses bé i divinament, donaren respostes des del santuari del seu cor més santament i amb molt més certa raó que la Pítia, que profereix des del trípode i del llorer de Febus, tanmateix s'estimbaren en els principis de les coses, i, sent grans, caigueren greument allí amb gran caiguda.
+
+Primer, perquè estableixen el moviment havent llevat el buit de les coses, i deixen les coses toves i rares —l'aire, el sol, el foc, les terres, els animals, els fruits—, i no obstant això no admeten el buit dins del cos d'elles; després, perquè faran que no hi hagi en absolut un terme en el dividir els cossos, ni que s'aturi el trencament, ni que en les coses subsisteixi cap mínim, quan veiem que és el cim extrem de cadascuna allò que als nostres sentits sembla mínim, de manera que pots conjecturar a partir d'això que, en aquelles coses que no pots discernir, allò que tenen com a extrem és el mínim que subsisteix de les coses.
+
+A això s'afegeix també que, com que estableixen que els primordis de les coses són tous —els quals nosaltres veiem que són nascuts i amb cos mortal—, totalment hauria de...
+
+
+## Versos 657-706
+
+Però com que veuen moltes coses que els són contràries, i defugen de deixar el buit pur dins les coses, tement els camins escarpats, perden la veritable senda i no s'adonen, en canvi, que si traguéssim el buit de les coses, totes es condensarien i de totes en sortiria un sol cos, que res no podria emetre ràpidament de si mateix, com el foc abrasador llança llum i calor, perquè veuràs que no està fet de parts atapeïdes.
+
+Que si potser creuen, per una altra raó, que el foc pot extingir-se en l'aglomeració i mudar el seu cos —és clar que, si no s'estalvien de fer-ho per cap banda—, tota la seva ardor caurà del tot en el no-res, sens dubte, i del no-res naixeran les coses que es creen; car tot allò que, mudat, surt dels seus límits, això mateix és, tot d'una, la mort d'allò que abans era. Per tant, cal que alguna cosa romangui incòlume en aquells elements, perquè no se't tornin totes les coses del tot al no-res i del no-res no reneixi i no recobri vigor l'abundància de les coses.
+
+Ara, doncs, ja que existeixen certs cossos certíssims que conserven sempre la mateixa natura, i amb la sortida o entrada dels quals, o canviat-ne l'ordre, les coses canvien de natura i els cossos es transformen, és lícit saber que aquests cossos primordials de les coses no són ígnis. Car de res no serviria que alguns en marxessin, partissin, i d'altres se'ls afegissin, i alguns canviessin d'ordre, si tots, tanmateix, mantinguessin la natura del foc; perquè, fos com fos, allò que creessin seria foc.
+
+La veritat, però, és aquesta, segons crec: hi ha certs cossos els xocs, moviment, ordre, posició i figures dels quals produeixen els focs, i mudant-ne l'ordre muden la natura, i no s'assemblen al foc ni a cap altra cosa que pugui enviar cossos als sentits i tocar el nostre tacte amb el seu contacte.
+
+A més, dir que totes les coses són foc, i que cap cosa veritable subsisteix en el nombre de les coses fora del foc, com fa aquest mateix Heràclit, sembla del tot deliri. Car ell mateix combat els sentits des dels sentits i els fa trontollar, ells dels quals depèn tot el que es creu, ells pels quals ha conegut això que ell anomena foc; creu que els sentits coneixen veritablement el foc, però no creu en la resta, que no és pas menys clara. Cosa que em sembla tan vana com delirant; cap a on ens hem de girar, en efecte? Què pot ser-nos més cert que els mateixos sentits, amb els quals distingim el ver del fals?
+
+A més, per què algú hauria de suprimir totes les coses i voler deixar només la natura de l'ardor, més aviat que negar l'existència del foc i deixar tanmateix l'existència d'una altra cosa? Igual demència sembla, en efecte, dir l'una cosa o l'altra.
+
+Per això, els qui han pensat que la matèria de les coses és el foc, i que del foc pot constituir-se el conjunt,
+
+
+## Versos 707-756
+
+I aquells qui van establir l'aire com a principi engendrador de les coses, o els qui van pensar que era la humitat la que conforma les coses per ella mateixa, o que la terra crea totes les coses i es transmuta en totes les natures, sembla que s'han allunyat moltíssim de la veritat. Afegeix-hi també els qui dupliquen els principis de les coses, ajuntant l'aire amb el foc i la terra amb l'aigua, i aquells qui creuen que de quatre elements pot brollar tot: del foc, de la terra, de l'aire i de la pluja. Entre aquests, el primer és Empèdocles d'Acragant, que va portar l'illa de costes triangulars de les terres, al voltant de la qual el mar Jònic, fluint amb grans revolts, esquitxa la salabror de les seves ones glauques, i amb un estret canal separa amb les onades el mar impetuós de les costes d'Eòlia, dels seus límits.
+
+Aquí hi ha la vasta Caribdis, i aquí els bramuls de l'Etna amenacen tornar a aplegar les ires de les flames, perquè una altra vegada la força vomiti pels seus avencs els focs irromputs i porti de nou cap al cel els llampecs de les flames. I encara que aquesta gran regió sembli admirable de moltes maneres a les gents humanes, i sigui anomenada digna de ser visitada, opulenta de béns, fortificada amb gran força d'homes, no sembla, tanmateix, que hagi tingut res en si més il·lustre que aquest home, ni res més sagrat, ni més admirable, ni més estimat. Encara més: els cants del seu pit diví clamen i exposen tan il·lustres descobriments, que amb prou feines sembla nascut d'estirp humana.
+
+Ell, però, i aquells que hem dit més inferiors a ell, molt més petits en moltíssims aspectes, encara que descobrint moltes coses bé i divinament, donant respostes des del santuari del seu cor amb més santedat i amb molta més certa raó que la Pítia, que profereix sentències des del trípode de Febus i del llorer, tanmateix van caure en ruïnes pel que fa als principis de les coses, i grans com eren, van caure greument allà amb una gran caiguda.
+
+Primer, perquè estableixen el moviment havent suprimit el buit de les coses, i deixen les coses toves i poroses —l'aire, el sol, el foc, les terres, els animals, els fruits—, sense barrejar-hi tanmateix el buit dins el seu cos; després, perquè faran que no hi hagi cap fi per a la divisió dels cossos, ni que s'aturi mai el trencament, ni que en les coses subsisteixi cap mínim absolut, quan veiem que aquell extrem cim de cada cosa és el que als nostres sentits sembla ser el mínim, de manera que pots conjecturar a partir d'això que allò que no pots discernir té el seu extrem que constitueix el mínim de les coses.
+
+S'hi afegeix també que, com que estableixen els principis de les coses tous —els quals nosaltres veiem que són nascuts i de cos mortal—, caldria de soca-rel que ja la suma de les coses tornés a no-res.
+
+
+## Versos 756-805
+
+...caldria que la suma de les coses ja retornés al no-res i que del no-res renasqués i prengués vigor l'abundància de les coses; ambdues coses, ja veuràs com s'aparten de la veritat.
+
+A més, aquests elements són enemics entre si de moltes maneres i verí els uns per als altres; per això, en trobar-se, o bé pereixeran o bé es dispersaran tal com veiem, quan esclata la tempesta, dispersar-se els llamps, les pluges i els vents.
+
+A més, si totes les coses són creades a partir de quatre elements i en aquests mateixos es dissolen de nou, ¿com poden ser anomenats principis primers de les coses, més que pensar a l'inrevés que les coses són principis d'ells? Car alternativament s'engendren els uns als altres i muden de color i de tota llur naturalesa entre si des de sempre. [Veiem dispersar-se els llamps, les pluges i els vents.]
+
+Però si per ventura penses que el cos del foc i de la terra s'uneixen amb les aurores aèries i amb la rosada del líquid, sense que en l'aplec cap d'ells canviï la seva naturalesa, cap cosa et podrà ser creada a partir d'ells: ni un ésser animat ni, amb cos inanimat, com és l'arbre; ja que cadascun, en l'aplec del munt variat, mostrarà la seva pròpia naturalesa, i es veurà l'aire mesclat alhora amb la terra i restant amb una certa rosada.
+
+Però els principis primers, en engendrar les coses, han d'aportar una naturalesa amagada i cega, perquè res no sobresurti que lluiti en contra i s'oposi al fet que cada cosa creada pugui ser pròpiament el que és.
+
+Encara més: remunten l'origen al cel i als seus focs, i primer fan que el foc es transformi en aurores de l'aire, d'aquí s'engendri la pluja i de la pluja es creï la terra, i a l'inrevés que tot retorni de la terra: primer la humitat, després l'aire, després la calor, i que aquests no cessin de mudar entre si, transitant del cel a la terra, de la terra als astres del firmament. Cosa que els principis primers de cap manera no han de fer.
+
+Car quelcom immutable cal que perduri, perquè totes les coses no quedin reduïdes radicalment al no-res; ja que tot allò que, mudat, surt dels seus límits, això és immediatament la mort d'allò que abans era. Per això, com que les coses que fa poc hem dit entren en mutació, és necessari que estiguin constituïdes per d'altres que no puguin de cap manera transformar-se, perquè no se't tornin totalment al no-res totes les coses; o més aviat, suposa cossos dotats d'una naturalesa tal que, si per ventura han creat el foc, els mateixos puguin —llevats uns pocs i afegits uns pocs, alterat l'ordre i el moviment— fer les aurores de l'aire, i així mudar-se totes les coses unes en altres.
+
+«Però l'evidència manifesta —dius— mostra clarament que totes les coses creixen i s'alimenten de la terra cap a les aurores de l'aire; i si la tempesta no és benigna en el moment propici...
+
+
+## Versos 806-855
+
+...amb pluges, de manera que pel verí dels núvols els arbres vacil·lin, i el sol per la seva banda no els escalfés ni els donés caliu, no podrien créixer els fruits, ni els arbres, ni els éssers vius.
+
+Certament, si no ens ajudés l'aliment sòlid i el tendre humor, perdut ja el cos, també tota la vida es deslligaria de tots els nervis i de tots els ossos; perquè, sens dubte, som auxiliats i ens nodrim de coses determinades, i altres i altres coses ho són per altres coses determinades. Sens dubte, perquè molts principis comuns de moltes maneres es troben barrejats en moltes coses de moltes maneres, per això coses diverses s'alimenten de coses diverses.
+
+I sovint importa molt amb quins altres principis es mantenen units aquests mateixos principis, i en quina disposició, i quins moviments es donen i es reben entre ells; car els mateixos principis constitueixen el cel, el mar, les terres, els rius, el sol, i els mateixos els fruits, els arbres, els éssers vius, però barrejats amb altres i d'una altra manera es mouen.
+
+I encara més: arreu, en aquests mateixos versos nostres, veus moltes lletres comunes a moltes paraules, i tanmateix cal que reconeguis que els versos i les paraules es distingeixen entre si tant per la cosa com pel so que ressona. Tant poden les lletres només canviant-ne l'ordre; però els principis de les coses poden aportar més combinacions encara, d'on puguin néixer totes les coses diverses.
+
+Examinem ara també l'homeomeria d'Anaxàgoras, com l'anomenen els grecs, i que la pobresa de la nostra llengua pàtria no ens permet d'expressar amb un mot propi, però que tanmateix és fàcil d'exposar amb paraules. En primer lloc, quan parla de l'homeomeria de les coses, vol dir que els ossos neixen de petits i diminuts ossos, i les vísceres de petites i diminutes vísceres, i la sang es crea de moltes gotes de sang que s'uneixen entre si; i pensa que l'or pot estar format de partícules d'or, i que la terra es condensa a partir de petites terres, que el foc neix de focs, l'humor d'humors, i imagina i creu la resta de manera semblant.
+
+I tanmateix no concedeix que hi hagi cap buit enlloc en les coses, ni que hi hagi un límit en la divisió dels cossos. Per això em sembla que s'erra igualment en ambdós aspectes, com aquells dels quals hem parlat abans.
+
+Afegeix-hi que imagina uns principis massa febles; si són principis, dotats d'una naturalesa semblant a les mateixes coses, igualment pateixen i pereixen, i res no els reté de la destrucció. Car quin d'ells resistirà sota una pressió violenta, per escapar de la mort, sota les mateixes dents del traspàs? El foc, l'humor, l'aire? Quin d'aquests? La sang o els ossos? Cap, em penso, quan tota cosa serà de soca-rel tan mortal com aquelles que veiem manifestament...
+
+
+## Versos 757-806
+
+i del no-res renaixent reprengui força la munió de les coses;
+de tot això podràs ja jutjar com s'allunya de la veritat.
+
+A més, aquests elements són enemics entre ells de moltes maneres, i mútuament verí; per això, en trobar-se, o pereixeran, o així es dispersaran com veiem fugir, sota l'embat de la tempesta, els llamps, les pluges i els vents.
+
+Finalment, si de quatre coses tot és creat, i en aquestes mateixes coses tot novament es dissol, ¿per quina raó poden anomenar-se aquelles principis primordials de les coses, i no, al contrari, considerar-se les altres coses principis d'aquelles? Car alternativament s'engendren i muden el color i tota la seva natura entre si des de tot temps.
+[i veiem dispersar-se els llamps, les pluges i els vents.]
+
+Però si potser penses així, que el cos del foc i de la terra s'uneixen amb les aures de l'aire i la rosada del líquid, sense que en l'aliança cap d'ells canviï la seva natura, llavors no podrà crear-se per a tu cap cosa d'ells, ni vivent ni amb cos inanimat, com un arbre; ja que cadascú, en l'agregat de la barreja diversa, mostrarà la seva pròpia natura, i es veurà l'aire mesclat romandre alhora amb la terra i amb una certa rosada.
+
+Convé, però, que els primordis aportin a l'engendrament de les coses una natura amagada i cega, perquè res no sobresurti que pugui combatre i fer obstacle al fet que cada cosa creada pugui ser pròpiament allò que és.
+
+Encara més: fan venir-ho del cel i dels seus focs, i primer fan que el foc es transformi en aures d'aire; d'aquí, diuen, neix la pluja, i de la pluja és creada la terra, i de la terra al revés tornen totes les coses: primer la humitat, després l'aire, després la calor, i no cessen de mudar-se les unes en les altres, viatjant del cel a la terra, de la terra als astres del món. Tal cosa no han de fer de cap manera els primordis. Cal, en efecte, que quelcom d'immutable subsisteixi, perquè totes les coses no quedin reduïdes del tot al no-res; car tot allò que, mudat, surt dels seus límits, immediatament és la mort d'allò que abans era.
+
+Per això, atès que les coses que poc abans hem dit pateixen mutació, és necessari que estiguin compostes d'altres que no puguin transformar-se enlloc, perquè no et tornin totes les coses del tot al no-res. ¿Per què, més aviat, no estableixes uns cossos dotats de tal natura que, si per ventura han creat el foc, puguin ells mateixos —llevats uns pocs i afegits uns pocs, mudats l'ordre i el moviment— fer les aures de l'aire, i així mudar totes les coses unes en altres?
+
+«Però la realitat manifesta —dius— mostra a les clares que totes les coses creixen i es nodreixen pujant de la terra a les aures de l'aire; i si la tempesta no concedeix en temps propici les pluges, fins al punt que els arbusts vacil·len sota la dissolució dels núvols,
+
+
+## Versos 856-905
+
+Dels nostres ulls vençuda per alguna força, perir. Però que res no pot recaure en el no-res, ni tampoc créixer del no-res, ho testimonien les coses ja abans provades.
+
+A més, com que l'aliment fa créixer el cos i el nodreix, és lícit saber que les nostres venes, la sang i els ossos
+* * *
+si diran que tots els aliments són de cos mesclat i que tenen en si petits cossos de nervis i ossos i, en general, venes i parts de sang, en resultarà que tot aliment, tant el sec com el líquid mateix, es pensarà que consta de coses d'origen aliè, mesclat amb ossos i nervis i serositat i sang.
+
+A més, si tots els cossos que creixen de la terra són dins la terra, cal que la terra consti de coses d'origen aliè, que de les terres broten. Transporta-ho igualment, podràs servir-te de les mateixes paraules: si en la llenya s'amaguen flama i fum i cendra, cal que la llenya consti de coses d'origen aliè, [a més, qualssevol cossos que la terra nodreix i fa créixer] de coses d'origen aliè, que de les llenyes broten.
+
+Queda aquí encara un tènue marge per amagar-s'hi, el que Anaxàgores pren per a si: que pensa que totes les coses estan amagades mesclades en totes, però que sols apareix aquella de la qual hi ha més parts mesclades i situada més al davant i en primera línia. Això, però, està molt lluny de la veritable raó; car convindria llavors que també els grans, sovint, quan són esclafats sota la força amenaçadora de la pedra, fessin sortir alguna senyal de sang, o bé alguna cosa de les que es nodreixen en el nostre cos. Quan triturem pedra contra pedra, convindria que en raigés sang; i, per la mateixa raó, sovint també de les herbes hauria de degotar líquid dolç en gotes de sabor semblant al de la llet en els braguers de les ovelles llanudes; i, naturalment, en les glebes de terra sovint esmicolades es veurien menudament repartits, amagats entre la terra, gèneres d'herbes i grans i fullatges; i, finalment, en la llenya es veuria cendra i fum, quan fos trencada, i s'hi amagarien menuts focs.
+
+Com que cap d'aquestes coses no s'esdevé, com ho ensenya l'evidència, és lícit saber que les coses no estan mesclades així en les coses, sinó que cal que llavors comuns de moltes coses, mesclats de moltes maneres, s'amaguin en les coses.
+
+«Però sovint s'esdevé en les grans muntanyes», dius, «que els alts cims veïns dels arbres es freguen entre si, forçats a fer-ho pels violents austres, fins que esclata la flor de la flama i resplendeix.» Cert, i tanmateix el foc no és inserit en la llenya, sinó que hi ha moltes llavors d'ardor, que, quan amb el fregar conflueixen, creen incendis als boscos. I si la flama hagués estat amagada feta dins els boscos,
+
+
+## Versos 807-856
+
+...i el sol, per la seva part, no els escalfés i no els donés calor, no podrien créixer ni les messes ni els arbustos ni els éssers vius.» Certament, també si a nosaltres no ens ajudessin l'aliment sec i la humitat tendra, un cop perdut el cos, tota la vida es deslligaria de tots els nervis i de tots els ossos; perquè, sens dubte, som ajudats i ens nodrim de coses determinades, i d'altres i altres coses, altres éssers diversos. Sens dubte, perquè molts elements primers, comuns de moltes maneres, es troben barrejats en moltes coses de molts modes, per això coses diverses s'alimenten de coses diverses.
+
+I sovint importa molt amb quins altres principis aquests mateixos elements primers s'uneixen, i en quina posició es mantenen, i quins moviments es donen i reben entre ells; perquè els mateixos elements constitueixen el cel, el mar, les terres, els rius i el sol, i els mateixos formen les messes, els arbustos i els éssers vius, però barrejats amb d'altres i d'altra manera es mouen.
+
+Més encara: arreu, en els nostres mateixos versos, veus moltes lletres comunes a moltes paraules, i tanmateix has de reconèixer que els versos i les paraules difereixen entre si tant en el sentit com en el so que ressona. Tant poden les lletres canviant només l'ordre; però els elements primers de les coses poden aportar-ne més encara, d'on puguin crear-se totes les coses diverses.
+
+Examinem ara també la homeomeria d'Anaxàgores, que els grecs anomenen així i que la pobresa de la llengua pàtria no ens permet dir en la nostra parla, però la cosa mateixa és fàcil d'exposar amb paraules. En primer lloc, allò que ell anomena homeomeria de les coses: ell pensa que els ossos es generen, vet aquí, de petits i menuts ossets, i que de petites i menudes vísceres neix la víscera, i que la sang es crea de moltes gotes de sang reunides entre si, i creu que l'or pot consistir en miques d'or, i que la terra s'ageguma de petites terres, i que dels focs en surt el foc, i la humitat de les humitats, i tota la resta s'ho imagina i ho pensa amb un raonament semblant.
+
+I tanmateix no admet que hi hagi cap buit en cap part de les coses, ni que hi hagi un límit en la divisió dels cossos. Per això em sembla que en una i altra raó s'erra igualment com aquells dels quals hem parlat abans.
+
+Afegeix encara que els elements primers que imagina són massa febles; si són elements primers que estan dotats d'una naturalesa semblant a les coses mateixes, igualment pateixen i moren, i res no els reté de la destrucció. Perquè, quin d'ells, sota una pressió violenta, resistiria per fugir de la mort, sota les dents mateixes de la fi? El foc, o la humitat, o l'aire? Quin d'aquests? La sang o els ossos? Cap, segons crec, quan tota cosa serà tan totalment mortal com aquelles que veiem manifestament desaparèixer davant dels nostres ulls, vençudes per alguna força.
+
+
+## Versos 906-955
+
+No podrien els focs amagar-se cap moment, sinó que devastarien arreu les selves i cremarien els arbredes. ¿No veus, doncs, ara, allò que poc abans deia, com importa molt que els mateixos primordis sovint estiguin units amb quins altres i en quina disposició, i quins moviments es donin i rebin entre si, i com els mateixos, lleugerament canviats entre ells, creïn focs i fusta? Així com també les paraules mateixes, amb les lletres una mica canviades entre elles, designem amb veu distinta «llenya» i «focs» (*ligna* i *ignes*).
+
+Finalment, si penses que res del que veus en les coses manifestes no pot esdevenir-se sense que imaginis els cossos de la matèria dotats d'una natura semblant a la del fenomen, per aquest camí se't desfan els primordis de les coses: s'esdevindrà que, sacsejats per un riure tremolós, esclatin a riallades i amb llàgrimes salades humitegin rostres i galtes.
+
+Ara escolta, atén el que resta i para bé l'oïda. No se m'amaga com és d'obscur tot això; però una gran esperança de lloança ha colpit el meu cor amb tirs agut, i alhora ha infós dins el meu pit el dolç amor de les Muses, pel qual ara, esperonat amb ment vigorosa, recorro els indrets sense camí de les Pièrides, no trepitjats abans pel peu de ningú. M'agrada acostar-me a fonts intactes i abeurar-m'hi, i m'agrada collir flors noves i cercar-hi una corona insigne per al meu cap, amb què abans cap Musa no hagi velat les temples de ningú; primer, perquè ensenyo coses grans i procuro alliberar l'ànim dels nusos estrets de les religions; després, perquè sobre matèria fosca componc versos tan lluminosos, tot tocant-ho tot amb la gràcia de les Muses.
+
+Car això tampoc no sembla mancat de raó; sinó que, tal com els metges, quan miren de donar als nens l'amarg absenti, primer unten les vores de la copa amb el dolç i ros licor de la mel, perquè l'edat imprevisora dels infants es deixi enganyar fins als llavis i, mentrestant, beguin del tot el suc amarg de l'absenti i, així ensarronats, no en restin malmesos, ans, més aviat, refets per aquest art, recobrin la salut, així jo ara, ja que aquesta doctrina sol semblar massa trista a aquells que no l'han treballada, i el vulgar n'aparta el rostre amb horror, he volgut exposar-te la nostra raó amb cant Pierí de dolça parla i, per dir-ho així, untar-la amb la dolça mel de les Muses, per si d'aquesta manera podia retenir-te l'ànim en els meus versos mentre penetres tota la natura de les coses i la figura amb què està composta.
+
+Però, ja que he ensenyat que els cossos solidíssims de la matèria volen perpètuament invictes a través dels segles, ara escolta: desentranyem si hi ha o no algun límit de la seva suma; igualment, allò que s'ha trobat com a buit...
+
+
+## Versos 857-906
+
+Però que les coses no poden recaure en el no-res ni tampoc créixer del no-res, ho testimonien les coses ja abans demostrades. A més, com que l'aliment fa créixer el cos i el nodreix, ens és lícit saber que les venes, la sang i els ossos...
+
+* * *
+
+O bé diran que tots els aliments són de cos mixt i tenen en si petits cossos de nervis i ossos i, ben bé, venes i parts de sang barrejades. Si fos així, caldria pensar que tot aliment, tant el sec com el líquid mateix, està constituït de coses d'altra naturalesa: una barreja d'ossos, nervis, serositat i sang.
+
+A més, tots els cossos que creixen de la terra, si són dins la terra, és forçós que la terra estigui composta d'elements d'altra naturalesa, els quals brollen de les terres. Aplica-ho semblantment, podràs servir-te de les mateixes paraules: si en la llenya s'amaguen la flama, el fum i la cendra, és forçós que la llenya consti d'elements d'altra naturalesa, [a més, tots els cossos que la terra nodreix i fa créixer] d'elements d'altra naturalesa, els quals sorgeixen de la llenya.
+
+Resta aquí una certa tènue possibilitat d'amagar-se, la que Anaxàgores pren per a si mateix: pensar que totes les coses estan barrejades i amagades en totes les coses, però que es manifesta només aquella de la qual hi ha més elements barrejats, i que es troba més a la vista i col·locada al primer pla. Tanmateix, això està lluny de la veritable raó; car convindria llavors que també els grans, quan amb amenaçadora força són esclafats entre les pedres, deixessin sovint anar un senyal de sang, o alguna de les coses que es nodreixen del nostre cos. Quan triturem pedra contra pedra, hauria de rajar-ne sang per raó semblant; també les herbes haurien sovint, de la mateixa manera, de deixar anar gotes dolces de líquids, d'un sabor semblant al de la llet en els braguers de les ovelles llanudes; igualment, en esmicolar sovint els terrossos de la terra, s'hi haurien de veure menudament repartits, amagats entre la terra, els llinatges d'herbes, els grans i les fulles; i, per fi, en la llenya s'hi haurien de veure cendra i fum, quan fos partida, i hi haurien d'estar amagats foquets diminuts.
+
+Com que la realitat manifesta ensenya que res d'això no s'esdevé, és lícit saber que les coses no estan així barrejades dins les coses, sinó que han d'estar amagades, comunes, llavors de moltes coses, barrejades de mil maneres dins les coses.
+
+«Però sovint s'esdevé en les grans muntanyes», dius, «que els alts cims veïns dels arbres es freguen entre si, forçats a fer-ho pels poderosos austres, fins que resplendeixen amb la flor de la flama brotada». És clar; i tanmateix el foc no està implantat dins la llenya, sinó que hi ha moltes llavors d'ardor que, en confluir per la fricció, creen incendis als boscos. Que si la flama estigués feta i amagada dins els boscos, els focs no podrien restar ocults cap moment,
+
+
+## Versos 956-1005
+
+O bé el lloc i l'espai, allò en què totes les coses s'esdevenen,
+considerem si està limitat fins al fons en la seva totalitat
+o bé s'estén immens i pregonament vast.
+Tot allò que existeix, doncs, en cap regió de les seves vies
+no és finit; car altrament hauria de tenir un extrem.
+I un extrem, per altra banda, no sembla que pugui existir
+de cap cosa, si més enllà no hi ha quelcom que el limiti, de manera
+que es vegi fins on la natura del nostre sentit ja no pot seguir-lo.
+Ara bé, com que cal admetre que fora de la suma total no hi ha res,
+no té extrem, i per tant manca de fi i de mesura.
+I no importa en quines regions d'aquell tu et trobis;
+fins a tal punt que, qualsevol que sigui el lloc que un ocupa, deixa
+en totes direccions, per igual, el tot infinit a l'entorn.
+
+A més, si ja se suposés finit
+tot l'espai existent, i algú corregués fins a les vores
+extremes i des d'allí llancés un dard volador,
+¿prefereixes pensar que aquell, impulsat amb forces vigoroses,
+anés on hagués estat tramès i volés ben lluny,
+o creus que alguna cosa el podria impedir i obstruir?
+Cal, en efecte, que confessis i acceptis l'una o l'altra cosa.
+Totes dues, però, et tanquen l'escapatòria i et forcen
+a concedir que el tot s'estén sense límit.
+Car tant si hi ha quelcom que l'impedeixi i faci
+que no arribi allà on fou tramès i s'hi fixi al terme,
+com si surt cap enfora, és que no ha partit d'una fi.
+D'aquesta manera et seguiré, i per onsevulla que situïs les vores
+extremes, et preguntaré: què s'esdevindrà finalment del dard?
+S'esdevindrà que enlloc no podrà establir-se cap fi,
+i sempre l'espai obert allargarà l'evasió de la fugida.
+
+A més, si l'espai sencer de l'univers tot
+estigués clos pertot per riberes determinades
+i fos finit, ja l'abundància de matèria
+hauria confluït de tot arreu, pel pes dels seus cossos sòlids, fins al fons,
+i cap cosa no podria esdevenir-se sota la volta del cel,
+ni hi hauria en absolut cel ni llums del sol,
+puix que tota la matèria jauria amuntegada,
+des d'un temps ja infinit, havent-se anat enfonsant.
+Mes ara, certament, cap repòs no és donat
+als cossos primordials, perquè no hi ha res en absolut al fons,
+on poguessin com confluir i establir-hi llur seu.
+Sempre, en moviment incessant, totes les coses s'esdevenen
+en totes les parts, i des de baix són subministrats,
+de l'infinit, els ràpids cossos de la matèria.
+
+Finalment, davant dels ulls veiem que una cosa limita una altra:
+l'aire separa els turons i les muntanyes l'aire,
+la terra limita el mar i, al seu torn, el mar limita totes les terres;
+però el tot, en veritat, no hi ha res que el limiti per fora.
+És, doncs, la natura del lloc i l'espai del pregon
+tal que ni els llampecs lluents no podrien recórrer-lo en llur curs,
+lliscant pel decurs perpetu dels segles.
+
+
+## Versos 907-956
+
+...consumirien arreu les selves, cremarien els arbustos. ¿No veus, doncs, allò que fa poc dèiem, que importa moltíssim amb quins altres elements primordials es combinen els mateixos àtoms, en quina posició es mantenen units i quins moviments es donen i reben mútuament? I que aquests mateixos àtoms, només una mica alterats entre ells, creen tant el foc com la llenya? De la mateixa manera que les paraules mateixes, amb només uns elements lleument canviats entre si, distingim amb veu diferent quan anomenem llenya i foc.
+
+I encara: si penses que res del que veus a les coses manifestes no pot existir sense que imaginis els cossos de la matèria dotats d'una naturalesa semblant a la cosa visible, per aquest camí et destrueixes els elements primordials de les coses: arribarà que sacsejats per un riure tremolós esclatin a riallades, i que amb llàgrimes salades humitegin rostres i galtes.
+
+Vinga ara: aprèn el que resta i escolta amb major claredat. No se m'amaga a l'esperit com d'obscures són aquestes matèries; però l'esperança gran de la lloança ha colpit el meu cor amb tirs aguts i alhora m'ha infós al pit el dolç amor de les Muses, per qui ara, esperonat amb ment vigorosa, recórrec els indrets sense camins de les Pièrides, mai abans trepitjats per cap peu. M'agrada acostar-me a fonts intactes i beure-hi, i m'agrada collir flors noves i cercar-hi una corona insigne per al meu cap, allà on les Muses no han velat encara les temples a ningú: primerament, perquè ensenyo coses grans i m'esforço a alliberar l'ànim dels nusos estrets de les religions; després, perquè sobre matèria obscura componc cants tan lluminosos, tocant-ho tot amb la gràcia de les Muses.
+
+Tampoc això sembla mancat de raó; sinó que, així com els metges, quan intenten donar als infants l'amarg donzell, primer untegen les vores de la copa amb el dolç i daurat licor de la mel, perquè l'edat incauta dels nens es deixi enganyar fins als llavis, i mentrestant beguin del tot el suc amarg del donzell i, enganyats, no en siguin víctimes, sinó que més aviat, amb aquest fet reconfortats, recobrin la salut: així jo ara, ja que aquesta doctrina sol semblar massa trista a aquells que no l'han tractada, i el vulgar vulgus se n'aparta amb horror, he volgut exposar-te la nostra raó amb cant pierí de dolça veu, i tocar-la com amb la dolça mel de les Muses, per si potser així pogués retenir-te l'ànim en els nostres versos, mentre contemples tota la naturalesa de les coses i la figura amb què està composta.
+
+Però com que ja he ensenyat que els cossos més sòlids de la matèria volen perpètuament invictes a través dels segles, vinga ara, desenrotllem si hi ha o no algun límit del seu nombre total; i també allò que s'ha trobat com a buit, o lloc i espai, en què cada cosa s'esdevé...
+
+
+## Versos 957-1006
+
+Vegem, doncs, si el tot és finit fins al fons o si s'estén immens i vastament profund.
+
+Tot allò que existeix, en cap regió del seu camí no és finit; perquè altrament hauria de tenir un extrem. I un extrem, ben mirat, sembla que de res no pot existir, llevat que més enllà hi hagi quelcom que el limiti, perquè es vegi fins on la natura del sentit ja no pot prosseguir més lluny. Ara bé, com que cal admetre que fora de la suma de les coses no hi ha res, no té extrem, i per tant manca de fi i de mesura. I tant se val en quina regió d'aquesta et situïs; fins a tal punt, que qualsevol lloc que hom ocupi, deixa l'infinit estenent-se igualment per totes les bandes.
+
+A més, si ja se suposés finit tot l'espai existent, si algú corregués fins a les vores extremes i llancés des del confí una sageta volandera, ¿prefereixes que aquella, impulsada amb forces potents, se'n vagi cap on fou tramesa i voli ben lluny, o creus que alguna cosa la podria deturar i obstaculitzar? Perquè una de les dues coses, forçosament, has de confessar i acceptar. I ambdues et tanquen tota fugida i et constrenyen a concedir que el tot s'estén sense fi. Car, sigui que hi hagi quelcom que ho impedeixi i faci que no arribi allà on fou tramesa ni s'hi pugui assentar, sigui que prossegueixi cap enfora, en tot cas no ha partit d'una fi. D'aquesta manera et seguiré, i onsevulla que situïs les vores extremes, et preguntaré: ¿què s'esdevindrà, finalment, de la sageta? S'esdevindrà que enlloc no podrà aturar-se el límit, i la possibilitat de fugida sempre prolongarà la fugida.
+
+A més a més, si tot l'espai del conjunt total estigués clos pertot per vores certes i fos finit, ja la massa de matèria, per la seva sòlida pesantor, hauria fluït de pertot cap al fons, ni podria fer-se cosa alguna sota la cobertura del cel, ni hi hauria en absolut cel ni llums del sol, ja que tota la matèria jauria amuntegada, havent-se anat dipositant des d'un temps infinit. Però ara, sens dubte, no és atorgat cap repòs als cossos primordials, perquè no hi ha en absolut cap fons darrer on puguin, per dir-ho així, confluir i establir-hi llur seu. Sempre, en moviment incessant, totes les coses s'esdevenen per totes bandes, i des de baix se subministren, vinguts de l'infinit, ràpids cossos de matèria.
+
+Finalment, davant dels ulls es veu que una cosa limita una altra: l'aire separa els turons, i les muntanyes l'aire; la terra posa terme al mar, i el mar, en canvi, a totes les terres; però al tot certament no hi ha res que el limiti per fora. És, doncs, la natura del lloc i l'espai del profund tal, que ni els clars llampecs en llur curs podrien recórrer-lo lliscant per la durada perpètua del temps, ni aconseguir, ans al contrari, que romangui menys per recórrer en llur anar.
+
+
+## Versos 1006-1055
+
+Ni tampoc no fa pas que resti menys camí per recórrer en el seu moviment; fins a tal punt, arreu, s'estén immensa l'abundància per a les coses, llevats tots els confins, en totes les direccions.
+
+I encara més: que la pròpia totalitat de les coses no es pugui fixar a si mateixa una mesura, ho impedeix la natura, la qual obliga el cos a limitar el buit i el buit a limitar al seu torn el cos, de manera que, alternant-se, fa infinit el tot; o bé, si l'un dels dos no posés terme a l'altre, almenys un d'ells, per la seva sola naturalesa, s'estendria sens mesura.
+
+[Mancaria un vers en l'edició: ni el mar, ni la terra, ni els lluminosos temples del cel, ni el llinatge mortal, ni els cossos sagrats dels déus podrien sostenir-se ni un breu instant d'una hora;] car, dispersada de la seva aglomeració, l'abundància de matèria s'esvaniria solta pel gran buit, o més aviat mai no hauria, un cop unida, creat cap cosa, perquè, dispersa, no s'hauria pogut reunir.
+
+Ben cert que no fou amb designi que els primordis de les coses es disposaren cadascun en el seu ordre amb ment sagaç, ni pas concertaren quins moviments havien de donar-se els uns als altres; sinó que, com que molts d'ells, alterats de moltes maneres a través del tot, des de la infinitud són sotraguejats i empesos pels xocs, tot assajant tota mena de moviments i unions, finalment arriben a aquelles disposicions en les quals subsisteix aquesta totalitat de les coses creades; i, conservada al llarg de molts i grans anys, des que una vegada s'engegà en moviments concordants, fa que els rius restitueixin amb generoses ones el mar àvid del seu corrent, i que la terra, escalfada per la calor del sol, renovi els seus fruits, i que floreixi la nissaga dels animals que ella envia, i que visquin els focs lliscadissos de l'èter.
+
+Res d'això no podrien fer de cap manera, si no fos que des de la infinitud pogués sorgir abundància de matèria, d'on, en el moment oportú, sol cada cosa reparar el que ha perdut. Car així com la naturalesa dels animants, privada d'aliment, es desfà perdent el seu cos, igualment totes les coses han de dissoldre's tan bon punt la matèria, desviada per qualsevol motiu del seu camí, deixa d'aprovisionar-les.
+
+I els xocs vinguts de fora no poden, per si sols, conservar pertot la totalitat sencera, sigui quina sigui la que s'ha aplegat. Poden, sí, percudir sovint i retenir una part, fins que en venen d'altres i la totalitat pot ser completada; però de vegades es veuen forçats a rebotar, i alhora a concedir als principis de les coses espai i temps de fugida, de manera que puguin ésser portats lliures de l'aglomeració. Per això cal una vegada i una altra que en sorgeixin de nous; i, perquè els xocs mateixos puguin també bastar-se, és menester una força infinita de matèria, vinguda de pertot.
+
+Guarda't molt, en aquestes matèries, Memmi, de creure el que diuen: que totes les coses tendeixen al centre del tot, i que per això la natura del món es manté sense necessitat de cap...
+
+
+## Versos 1056-1105
+
+...ni pels embats de fora pugui res desfer-se, ni dalt ni baix, perquè totes les coses s'apuntalen vers el centre —si és que creus que alguna cosa pugui sostenir-se per si mateixa—, i que tots els pesos que hi ha sota la terra pugen cap amunt i reposen a l'inrevés damunt la terra, com els simulacres de les coses que ara veiem reflectits a les aigües. I amb semblant raonament sostenen que els animals caminen cap per avall i que no poden caure de la terra als espais inferiors del cel, així com els nostres cossos no poden volar espontàniament cap als temples celestes; i que, quan ells veuen el sol, nosaltres contemplem els astres de la nit, i que comparteixen alternadament amb nosaltres els temps del cel i passen nits iguals als nostres dies.
+
+Però una vana il·lusió ha abraçat aquests insensats *** , perquè han admès *** errades. Car no pot existir cap centre quan l'univers és infinit; i, encara que existís un centre, res no podria aturar-s'hi més que per qualsevol altra raó ben diversa. Perquè tot lloc i espai, que anomenem buit, ha de cedir igualment als pesos, tant pel mig com pel no-mig, per onsevol que els moviments els portin. Ni hi ha cap lloc on els cossos, en haver-hi arribat, puguin perdre la força del seu pes i romandre quiets en el buit; ni el que és buit ha de servir de suport a res, sinó que, fidel a la seva natura, ha de continuar cedint el pas. No poden, doncs, mantenir-se les coses unides en un conjunt vençudes per la cobejança del centre, segons aquesta raó.
+
+A més, com que ells no pretenen que tots els cossos s'apuntalin vers el mig, sinó únicament els de la terra i de l'humor líquid, l'aigua del mar i les grans ones que baixen de les muntanyes, i tot allò que està contingut, per dir-ho així, dins un cos terrós; en canvi exposen que les aures lleugeres de l'aire i alhora els focs càlids són empesos lluny del centre, i que per això tot l'èter al voltant tremola d'estrelles i la flama del sol es nodreix a través del blau del cel, perquè la calor, fugint del centre, allí es congrega tota; i que les branques més altes dels arbres no podrien fer fullatge si la terra no proporcionés gradualment a cadascuna el seu aliment ***
+
+...perquè no s'esdevingui que, a la manera dels ocells veloços, les muralles del món es dispersin de sobte, dissoltes a través del gran buit, i que les altres coses no segueixin de manera semblant, i no s'esfondrin des de dalt els temples tronadors del cel, ni la terra es retiri precipitadament sota els nostres peus, i tot, entre les ruïnes barrejades de les coses i del cel, els cossos dissolent-se, s'allunyi pel buit profund, de manera que en un instant de temps no resti res, llevat de l'espai abandonat i els principis invisibles. Car de qualsevol part on primer manquin els cossos...
+
+
+## Versos 1007-1056
+
+Fins a tal punt s'estén pertot arreu, ampla, la còpia immensa de les coses, sense límits, en totes direccions. La natura mateixa, a més, fa que la suma total no es pugui posar mesura: ella obliga el cos a limitar el buit i el buit, al seu torn, a limitar el cos, de manera que, alternant-se, els fa tots dos infinits; o bé, si l'un dels dos no acotés l'altre, almenys un, per la seva sola naturalesa, s'estendria sense mesura.
+
+Ni la mar, ni la terra, ni les llumineses regions del cel, ni el llinatge mortal, ni els cossos sagrats dels déus podrien sostenir-se l'espai exigu d'una hora; car, dispersada del seu aplec, la munió de la matèria s'escamparia, dissolta, pel gran buit; o més aviat mai no hauria, en concertar-se, creat cap cosa, ja que, escampada, no hauria pogut ajuntar-se.
+
+Que no per cert els primordis de les coses, amb propòsit deliberat, es col·locaren cadascun amb ment sagaç en el seu ordre, ni pactaren tampoc quins moviments havien de donar-se; sinó que, perquè molts, mudats de moltes maneres a través del tot, des de la infinitud són sacsejats i empesos pels xocs, provant tota mena de moviments i d'aplecs, finalment arriben a tals disposicions, com aquelles per les quals subsisteix creada aquesta suma de les coses, i fins i tot, conservada al llarg de molts i grans anys, un cop que ha estat llançada en moviments convenients, fa que els rius, amb amples ones de corrent, refacin la mar àvida, i que la terra, escalfada per la vapor del sol, renovi els seus parts, i que floreixi la nissaga dels vivents engendrats, i que visquin els focs lliscants de l'èter.
+
+Cosa que de cap manera no farien si no pogués sorgir, des de la infinitud, una còpia de matèria, d'on solen reparar, a temps, allò que han perdut. Car, així com privada d'aliment es desfà la natura dels animants, perdent el cos, així totes les coses han de dissoldre's tan bon punt manqui d'abastar-les la matèria, desviada per alguna via.
+
+Ni els xocs, des de fora, poden, de tots cantons, conservar tota la suma que s'ha aplegat. Poden, sí, batre sovint i retenir una part, mentre arriben d'altres i la suma pot completar-se; però de tant en tant es veuen forçats a rebotar i, alhora, atorgar als principis de les coses espai i temps per a la fuga, perquè puguin, lliures de l'aplec, ser endutes. Per això, una vegada i una altra, és necessari que en sorgeixin molts, i, encara, perquè els mateixos xocs també puguin abastar, cal una força infinita de matèria de pertot.
+
+En aquestes coses, Memmi, fuig de creure de cap manera allò que diuen: que totes les coses tendeixen al centre de la suma, i que per això la naturalesa del món s'aguanta sense cap impuls exterior, ni pot enlloc dissoldre's.
+
+
+## Versos 1057-1106
+
+...el més alt i el més baix, perquè totes les coses pesen vers el centre, si és que creus que res pot sostenir-se per si mateix, i que tots els pesos que hi ha sota la terra pugen amunt i reposen damunt la terra al revés, com ara veiem les imatges de les coses reflectides en les aigües; i amb un raonament semblant sostenen que els animals vaguen capgirats i que no poden caure de la terra cap als espais inferiors del cel, no més del que els nostres cossos podrien volar espontàniament cap als temples del cel; i que, mentre ells veuen el sol, nosaltres contemplem els astres de la nit, i alternativament compartim amb ells els temps del cel i passem nits iguals als dies.
+
+Però aquesta vana * * * els necis han abraçat * * * perquè tenen * * *. Car cap centre no pot existir essent l'espai infinit; ni, encara que hi hagués un centre, res no s'hi podria aturar més que per qualsevol altra raó molt diferent; perquè tot lloc i espai, que anomenem buit, ha de cedir igualment als pesos pel centre o pel no-centre, en qualsevol direcció que els moviments els portin. I no hi ha cap lloc on els cossos, en arribar-hi, puguin perdre la força del seu pes i restar immòbils en el buit; ni el que és buit ha de servir de suport a res, sinó que ha de continuar cedint, tal com ho exigeix la seva naturalesa. Per tant, no poden mantenir-se les coses unides en assemblea, vençudes pel desig del centre, segons aquesta raó.
+
+A més, com que no pretenen que tots els cossos pesin vers el centre, sinó només els de la terra i de l'aigua, l'humor del mar i les grans aigües que davallen de les muntanyes, i tot allò que d'alguna manera està contingut dins un cos terrós; mentre que, al contrari, exposen que els tènues bufs de l'aire i els focs càlids alhora són empesos lluny del centre, i que per això tot l'èter al voltant tremola d'estrelles, i la flama del sol es nodreix pels blaus del cel, perquè la calor, fugint del centre, s'aplega tota allà; ni podrien les branques més altes dels arbres treure fullam si la terra no proveís a cadascuna gradualment l'aliment * * *
+
+...perquè les muralles del món, a manera d'ales flamejants, no es dispersin de sobte dissoltes pel gran buit, ni les altres coses no segueixin per raó semblant, ni s'esfondrin des de dalt els temples tronadors del cel, ni la terra no es retiri ràpidament sota els nostres peus, i tota ella, entre les ruïnes confoses de les coses i del cel, dissolent-ne els cossos, se'n vagi pel buit profund, de manera que en un punt de temps no en quedi cap resta sinó l'espai desert i els elements primers, invisibles. Car en qualsevol part on primer estableixis que falten cossos, aquesta part serà per a les coses la porta de la mort,
+
+
+## Versos 1058-1107
+
+Si creus que alguna cosa pot per si mateixa sostenir-se en si, i que tots els pesos que hi ha sota la terra pugen cap amunt i reposen invertits damunt la terra, com les imatges de les coses que ara veiem reflectides per les aigües; i amb semblant raonament sostenen que els animals vaguen capgirats i que no poden caure de la terra cap a les regions inferiors del cel, més del que els nostres cossos poden volar espontàniament cap a les voltes celestes; i que, quan ells veuen el sol, nosaltres contemplem els estels de la nit, i alternativament comparteixen amb nosaltres les estacions del cel i fan transcórrer nits iguals als nostres dies. Però aquest error vanitós ha persuadit els insensats, perquè han abraçat una doctrina capgirada * * *. Car no pot existir cap centre, essent l'univers infinit; ni encara, si el centre existís, podria allí cap cosa romandre quieta més que per qualsevol altra raó molt diferent; perquè tot lloc i espai, que anomenem buit, ha de cedir igualment als pesos a través del centre o fora del centre, allà on els moviments siguin portats. I no hi ha cap indret on els cossos, quan hi arriben, puguin restar immòbils dins el buit, havent perdut la força del seu pes; ni el que és buit ha pas de servir de suport a res, sinó que ha de continuar cedint, tal com la seva naturalesa exigeix. No poden, doncs, mantenir-se les coses unides en assemblea, vençudes pel desig d'un centre, segons aquesta manera de raonar.
+
+A més, com que sostenen que no tots els cossos s'inclinen cap al centre, sinó només els de la terra i la humitat líquida del mar i les grans aigües que baixen de les muntanyes, i quasi totes les coses que es contenen dins un cos terrós; mentre que, al contrari, exposen que les tènues aures de l'aire i els focs càlids alhora s'allunyen del centre, i que per això tot l'èter al voltant tremola d'astres, i la flama del sol es nodreix per l'atzur del cel, perquè la calor, fugint del centre, allà tota es congrega; ni poden els branquillons més alts dels arbres revestir-se de fullatge si la terra no els proporciona l'aliment * * * — que les muralles del món, semblants a flames alades, no fugin sobtadament dissoltes pel gran buit, i que la resta no segueixi de manera similar, i que les volts tronadores del cel no s'esfondrin per damunt, i la terra no es retiri ràpidament sota els nostres peus, i tota cosa, enmig de les ruïnes barrejades del món i del cel, dissolent els seus cossos, no se'n vagi pel buit profund, de tal manera que en un instant de temps no quedés cap resta, llevat de l'espai desert i els primordis invisibles. Perquè, en qualsevol part on primer estableixis que falten els cossos, aquesta serà per a les coses la porta de la mort, per allí es llançarà enfora tota la multitud de la matèria.
+
+
+## Versos 1059-1108
+
+I tots els pesos que hi ha sota la terra pugen amunt, diuen, i reposen damunt la terra cap per avall, com ara veiem les imatges de les coses a través de les aigües; i amb semblant raonament sostenen que els animals vaguen capgirats i que no poden caure de la terra cap als espais inferiors del cel més que no pas els nostres cossos puguin volar espontàniament als temples celestes; i quan ells veuen el sol, nosaltres contemplem els astres de la nit, i compartim alternativament amb ells les hores del cel i passem nits iguals als seus dies.
+
+Però una raó vana ha persuadit aquests insensats, perquè han abraçat un error retorçat. Car no pot existir un mig en l'infinit; ni tan sols, encara que hi hagués un mig, podria res aturar-s'hi per aquesta raó més que per qualsevol altra; perquè tot lloc i espai, que anomenem buit, ha de cedir igualment als pesos pel mig com pel no mig, en qualsevol direcció que els moviments els portin. I no hi ha cap lloc on els cossos, en arribar-hi, perduda la força del seu pes, puguin restar quiets en el buit; ni el que és buit pot sostenir res, sinó que ha de continuar cedint, segons demana la seva naturalesa. Així doncs, no poden ésser retingudes les coses en aquest aplec, vençudes pel deler d'un centre.
+
+A més, com que no pretenen que tots els cossos tendeixin al mig, sinó els de les terres i el líquid humit del mar i les grans aigües que baixen de les muntanyes, i tot allò que, per dir-ho així, és contingut en cos terrenal; i en canvi exposen que les aures tènues de l'aire i alhora els focs càlids s'allunyen del mig, i que per això tot l'èter al voltant tremola d'estrelles i la flama del sol es nodreix pels blaus del cel, perquè la calor, fugint del mig, allí es recull tota; i que les branques més altes dels arbres no poden brotar fullatge si no és que de la terra a poc a poc reben aliment cadascuna...
+
+[per tal] que les muralles del món no fugin de sobte, a la manera de les flames veloces, dissoltes pel gran buit, i que les altres coses no segueixin amb semblant raonament, ni s'esfondrin de dalt els temples tonants del cel, i la terra es retiri sobtadament sota els nostres peus, i tot, entre la confusió de les ruïnes de les coses i del cel, dissolent els cossos, se'n vagi pel buit profund, de manera que en un instant del temps no en quedi res, llevat de l'espai desert i els elements primordials invisibles. Car per qualsevol part on primer establiràs que manquen els cossos, aquesta serà la porta de la mort per a les coses, per allí s'escolarà tota la munió de la matèria.
+
+Tot això comprendràs a fons amb un esforç petit, conduït per mi.
