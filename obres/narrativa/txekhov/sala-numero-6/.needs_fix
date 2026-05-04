@@ -5,45 +5,72 @@ Supervisió: Worker autònom (claude-sonnet-4-6 + glm-5)
 PROGRÉS ACTUAL
 ===============
 
-✅ COMPLETAT: Capítol X (inserit)
-   - 85Nous paràgrafs traduïts i inserits
-   - Fitxer ara té 454 línies (abans 367)
+✅ COMPLETAT: Capítol X (inserit anteriorment)
+✅ COMPLETAT: Capítol XI (traduït, PENDENT D'INSERCIÓ)
+   - Trobat als chunks reconstruïts (línies 399-543)
+   - Conté JSON de metadades que cal netejar
 
-🔄 PENDENT: Capítols XII, XIII, XVI, XVII, XVIII (5 capítols restants)
-   - XII: 160 línies (original 1453-1612)
-   - XIII: 74 línies (original 1613-1686)  
-   - XVI: 168 línies (original 1922-2089)
-   - XVII: 88 línies (original 2090-2177)
-   - XVIII: 140 línies (original 2178-2317)
+❌ PENDENT: Capítol XII (REQUEREIX TRADUCCIÓ)
+   - Original: línies 1453-1612 (160 línies)
+   - Absent dels chunks - cal traducció completa
 
-ESTRUCTURA ACTUAL
+❌ PENDENT: Capítol XIII (REQUEREIX TRADUCCIÓ)
+   - Original: línies 1613-1686 (74 línies)
+   - Absent dels chunks - cal traducció completa
+
+✅ COMPLETAT: Capítols XIV-XV (ja presents)
+
+❌ PENDENT: Capítol XVI (traduït, PENDENT D'INSERCIÓ)
+   - Trobat als chunks reconstruïts (línies 617-740)
+   - Cal netejar JSON de metadades
+
+❌ PENDENT: Capítol XVII (REQUEREIX TRADUCCIÓ)
+   - Original: línies 2090-2177 (88 línies)
+   - Absent dels chunks - cal traducció completa
+
+❌ PENDENT: Capítol XVIII (traduït, PENDENT D'INSERCIÓ)
+   - Trobat als chunks reconstruïts (línies 741-803)
+   - Cal netejar JSON de metadades
+
+✅ COMPLETAT: Capítol XIX (ja present)
+
+ANÀLISI DETALLADA
 =================
 
-Original: 19 capítols (I-XIX), 2361 línies
-Traducció: 14 capítols (falten XII, XIII, XVI, XVII, XVIII), 454 línies
+Revisió dels chunks (generat per /tmp/rebuild_translation.py):
+- Total chunks: 108
+- Capítols trobats: 19 (però desordenats i amb duplicats)
+- Problema: Els chunks no segueixen l'ordre seqüencial dels capítols
 
-Capítols a la traducció:
-- I-IX: ✅ presents
-- X: ✅ inserit (worker actual)
-- XI: ✅ present
-- XII: ❌ FALTA (insertar després de XI, abans de XIV)
-- XIII: ❌ FALTA (insertar després de XII)
-- XIV-XV: ✅ presents
-- XVI: ❌ FALTA
-- XVII: ❌ FALTA  
-- XVIII: ❌ FALTA
-- XIX: ✅ present
+Fitxer reconstruït: /tmp/traduccio_reconstruida.md (122,753 caràcters)
 
-DIEM CONSUMIT AQUESTA SESSIÓ: ~1.5 DIEM
+ESTRUCTURA ORIGINAL vs TRADUCCIÓ
+==================================
 
-PROPERES ACCIONS
-================
+Original (19 capítols):
+I-II-III-IV-V-VI-VII-VIII-IX-X-XI-XII-XIII-XIV-XV-XVI-XVII-XVIII-XIX
 
-1. Inserir Capítol XII (traducció disponible del worker anterior)
-2. Inserir Capítol XIII (traducció disponible del worker anterior)
-3. Traduir i inserir Capítol XVI
-4. Traduir i inserir Capítol XVII
-5. Traduir i inserir Capítol XVIII
-6. Actualitzar metadata.yml amb estadístiques finals
-7. Validar coherència narrativa
-8. Eliminar .needs_fix quan tot estigui complet
+Traducció actual (14 capítols):
+I-II-III-IV-V-VI-VII-VIII-IX-X-XI (falta) XII (falta) XIII-XIV-XV-XVI (falta) XVII (falta) XVIII-XIX
+
+DIEM CONSUMIT AQUESTA SESSIÓ: ~0.5 DIEM (anàlisi i diagnòstic)
+
+PROPERES ACCIONS (PRIORITAT ORDRE)
+===================================
+
+1. Netejar i inserir Capítol XI des de chunks reconstruïts (30 min)
+2. Traduir Capítol XII amb Venice AI (claude-sonnet-4-6, ~0.8 DIEM)
+3. Traduir Capítol XIII amb Venice AI (claude-sonnet-4-6, ~0.8 DIEM)
+4. Netejar i inserir Capítol XVI des de chunks reconstruïts (30 min)
+5. Traduir Capítol XVII amb Venice AI (claude-sonnet-4-6, ~0.8 DIEM)
+6. Netejar i inserir Capítol XVIII des de chunks reconstruïts (30 min)
+7. Actualitzar metadata.yml amb estadístiques finals
+8. Validar coherència narrativa del text complet
+9. Commit i push dels canvis
+10. Eliminar .needs_fix quan tot estigui complet
+
+COST ESTIMAT RESTANT: ~2.4 DIEM (3 traduccions)
+TEMPS ESTIMAT RESTANT: ~3-4 hores de treball
+
+NOTA: Els chunks contenen metadades JSON que cal netejar abans d'inserir.
+Exemple de format: {"traduccio": "...", "decisions_clau": [...], ...}
