@@ -667,36 +667,12 @@ rotate_done() {
 
 
 # ── 10b. Processar notificacions pendents d'usuaris ──────────────────────────
+# DESACTIVAT: El heartbeat NO envia notificacions a Discord
+# Les notificacions les gestiona l'Optimizer a les 21:00 UTC
 process_pending_notifications() {
-    local NOTIF_FILE="$PROJECT/sistema/state/pending_notification.txt"
-    
-    if [ ! -f "$NOTIF_FILE" ]; then
-        return
-    fi
-    
-    log "📨 Processant notificacions pendents..."
-    
-    # Llegir dades de la notificació
-    local channel user message timestamp
-    channel=$(grep "^channel:" "$NOTIF_FILE" | cut -d: -f2-)
-    user=$(grep "^user:" "$NOTIF_FILE" | cut -d: -f2-)
-    message=$(grep "^message:" "$NOTIF_FILE" | cut -d: -f2-)
-    timestamp=$(grep "^timestamp:" "$NOTIF_FILE" | cut -d: -f2-)
-    
-    # Enviar via OpenClaw (scriure a fitxer que el gateway llegirà)
-    local NOTIF_OUT="$PROJECT/sistema/state/outgoing_notification.json"
-    cat > "$NOTIF_OUT" << EOF
-{
-  "action": "send",
-  "channel": "discord",
-  "channelId": "${channel:-1479504522614476953}",
-  "message": "${message}",
-  "timestamp": "$(date -Iseconds)"
-}
-EOF
-    
-    log "   ✅ Notificació preparada per a ${user}"
-    rm -f "$NOTIF_FILE"
+    # No-op: Les notificacions es gestionen via heartbeat_state.json
+    # L'Optimizer llegeix aquest fitxer i envia el report consolidat
+    return 0
 }
 
 # ── 10b. Regenerar botó de propostes ──────────────────────────────────────────
@@ -707,9 +683,11 @@ regenerate_proposals_button() {
     fi
 }
 
-# ── 10. Generar report per Discord ────────────────────────────────────────────
+# ── 10. Generar report (NOMÉS a fitxer, sense Discord) ───────────────────────────────
+# El report consolidat l'envia l'Optimizer a les 21:00 UTC
 generate_report() {
     local REPORT_FILE="$PROJECT/sistema/state/last_heartbeat_report.md"
+    local STATE_FILE="$HOME/.openclaw/workspace/heartbeat_state.json"
     
     # Generar informe detallat amb el script Python
     if [ -f "$PROJECT/sistema/traduccio/informe_detallat.py" ]; then

@@ -1,8 +1,8 @@
 {
-  "last_updated": "2026-05-03T18:00:00Z",
-  "status": "SKIP",
-  "reason": "Saldo DIEM insuficient (0.435). Reset programat a les 00:00 UTC. Worker zombie matat i netejat.",
-  "pending_tasks": 0,
+  "last_updated": "2026-05-04T02:00:00Z",
+  "status": "PREMIUM",
+  "reason": "Saldo DIEM recuperat (15.25). 2 tasques pendents recuperades. Worker llest per reiniciar.",
+  "pending_tasks": 2,
   "active_translations": [],
   "needs_fix_works": [
     "obres/filosofia/lucreci/de-rerum-natura-llibre-i",
@@ -18,48 +18,32 @@
     "health_score": "95%"
   },
   "diem_status": {
-    "balance": 0.435,
+    "balance": 15.25,
     "remaining_requests": 149,
     "remaining_tokens": 3000000,
-    "activity_level": "SKIP"
+    "activity_level": "PREMIUM"
   },
   "task_recovery": {
-    "recovered_from_failed": 0,
-    "tasks_pending": [],
-    "failed_tasks": [
+    "recovered_from_failed": 2,
+    "tasks_pending": [
       {
         "id": "2026-05-02_corregir_txekhov_failed",
-        "retries": 1,
-        "max_retries": 2,
+        "prioritat": 3,
+        "model_recomanat": "claude-sonnet-4-6",
         "cost_needed": 2.5
       },
       {
         "id": "2026-05-02_retraduir_lucreci",
-        "retries": 1,
-        "max_retries": 2,
+        "prioritat": 2,
+        "model_recomanat": "claude-opus-4-7",
         "cost_needed": 3.5
       }
-    ]
+    ],
+    "failed_tasks": []
   },
   "worker_status": "STOPPED",
-  "worker_note": "Worker zombie matat manualment. Lockfile netejat. Worker disponible per reiniciar després del reset DIEM.",
+  "worker_note": "Worker disponible per reiniciar. Saldo DIEM suficient (15.25 > 3.0 mínim). 2 tasques pendents esperant processament.",
   "web_status": "OK",
-  "critical_issues": [
-    {
-      "severity": "CRÍTIC",
-      "issue": "Saldo DIEM insuficient (0.435 < 3.0 mínim)",
-      "action": "Esperar reset 00:00 UTC (6 hores)"
-    },
-    {
-      "severity": "MITJANA",
-      "issue": "Worker zombie matat (procés orfe des de 08:05)",
-      "action": "Worker netejat. Reiniciar després del reset."
-    },
-    {
-      "severity": "BAIXA",
-      "issue": "2 tasques fallides pendents de retry",
-      "action": "Recuperar quan el saldo DIEM ho permeti"
-    }
-  ],
-  "next_heartbeat": "2026-05-03T20:00:00Z"
+  "critical_issues": [],
+  "next_heartbeat": "2026-05-04T04:00:00Z"
 }

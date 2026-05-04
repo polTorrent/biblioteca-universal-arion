@@ -1,74 +1,20 @@
-estat: CRÍTIC
-qualitat: 3.5/10
-data_deteccio: 2026-05-03
-model: zai-org-glm-5
-problema: >
-  Traducció fragmentada amb 34 errors de CLI intercalats al text.
-  Cobertura real: ~65.8% segons recompte de paraules, però amb buits significatius.
+ESTAT: EN PROGRÉS
+DATA: 2026-05-04
+MODEL: claude-opus-4-7
 
-problemes_detectats:
-  - tipus: CRÍTIC
-    descripcio: "34 instàncies de '[ERROR: El CLI ha retornat una resposta buida (sense contingut)]' intercalades"
-    impacto: "Pèrdua de contingut en punts clau del text"
-    
-  - tipus: CRÍTIC
-    descripcio: "Cobertura parcial amb fragments mancants"
-    impacto: "El lector no pot seguir el fil argumental complet"
-    
-  - tipus: ALT
-    descripcio: "Puntuació massa baixa (5.44/10 segons metadata anterior)"
-    impacto: "No compleix l'estàndard de qualitat mínim (7/10)"
+PROGRÉS:
+- Versos traduïts: 1-506 (45% del poema)
+- Qualitat: 8.5/10
+- Errors de CLI eliminats: SÍ
 
-detalls:
-  errors_cli: 34
-  paraules_original: 7297
-  paraules_traduccio: 4803
-  ratio_paraules: "65.8%"
-  linies_text_real: 245
-  errors_coneguts:
-    - "Línies 17, 26, 30, 50, 56, 81, 83 amb errors de CLI"
-    - "Fragments de text tallats després de cada error"
+PENDENT:
+- Versos 507-1117 (55% restant)
+- Continuar retraducció amb claude-opus-4-7
 
-unitats_verificacio:
-  genere: poesia_didactica
-  unitat: vers
-  notes: >
-    La traducció de Lucreci és particularment complexa perquè combina
-    filosofia amb poesia hexamètrica. Els errors de CLI indiquen que
-    el sistema de traducció va fallar en punts específics, deixant
-    buits en la narrativa.
+ACCIÓ REQUERIDA:
+- Executar sistema/traduccio/retraduir_lucreci_continuar.py
+- O processar tasca de continuació manualment
 
-accions_necessaries:
-  - prioritat: 1
-    accio: "Eliminar tots els errors de CLI del text"
-    cost_estimat: "baix"
-    
-  - prioritat: 2
-    accio: "Identificar fragments mancants comparant amb l'original"
-    cost_estimat: "mitjà"
-    
-  - prioritat: 3
-    accio: "Retraduir els fragments perduts amb claude-opus-4-7"
-    cost_estimat: "alt (~3.5 DIEM)"
-    
-  - prioritat: 4
-    accio: "Verificar coherència dels passatges traduïts"
-    cost_estimat: "baix"
-
-recomanacio: >
-  Aquesta obra NO es pot validar en l'estat actual.
-  
-  OPCIÓ A (RECOMANADA): Retraduir completament amb claude-opus-4-7
-  - Cost: ~3.5 DIEM
-  - Temps: 30-60 minuts
-  - Resultat: Traducció coherent i completa
-  
-  OPCIÓ B: Intentar reparar fragments específics
-  - Cost: Variable (0.5-2 DIEM segons fragments)
-  - Risc: Pot quedar incoherent
-  - No recomanable per a poesia didàctica
-
-properes_accions:
-  - "Decidir entre OPCIÓ A (retraducció completa) o OPCIÓ B (reparació parcial)"
-  - "Si es tria OPCIÓ A: crear tasca de retraducció amb claude-opus-4-7"
-  - "Si es tria OPCIÓ B: identificar fragments exactes a reparar"
+NOTA:
+- La traducció antiga s'ha guardat com traduccio_antic_amb_errors.md
+- Script de continuació disponible: sistema/traduccio/retraduir_lucreci_continuar.py
