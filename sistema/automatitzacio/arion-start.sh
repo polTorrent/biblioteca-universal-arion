@@ -45,7 +45,7 @@ if [ -f "$LOCKFILE" ]; then
     PID=$(cat "$LOCKFILE")
     if kill -0 "$PID" 2>/dev/null; then
         log "✅ Sistema Arion actiu (PID $PID)"
-        log "   Horari: 19:00 - 00:00 UTC"
+        log "   Horari: 16:00 - 00:00 UTC"
     else
         log "❌ Error: Worker no ha arrencat correctament"
         exit 1
@@ -56,5 +56,5 @@ fi
 
 # 4. Notificar per Discord (si existeix el canal)
 if command -v hermes &> /dev/null; then
-    hermes send discord:biblioteca-arion "🚀 **Sistema Arion iniciat**\nHorari actiu: 19:00 - 00:00 UTC\nWorker: Actiu (PID $PID)" 2>/dev/null || true
+    hermes send discord:biblioteca-arion "🚀 **Sistema Arion iniciat**\nHorari actiu: 16:00 - 00:00 UTC\nWorker: Actiu (PID $PID)" 2>/dev/null || true
 fi
