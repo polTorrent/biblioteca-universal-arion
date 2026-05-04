@@ -5,37 +5,45 @@ Supervisió: Worker autònom (claude-sonnet-4-6 + glm-5)
 PROGRÉS ACTUAL
 ===============
 
-✅ COMPLETAT: Capítol X (243 línies) - traduït i inserit
-   - Utilitzat model glm-5 per la traducció
-   - Inserits 85 nous paràgrafs entre Capítol IX i XI
-   - Nova línia total: 453 (abans 367)
+✅ COMPLETAT: Capítol X (inserit)
+   - 85Nous paràgrafs traduïts i inserits
+   - Fitxer ara té 454 línies (abans 367)
 
 🔄 PENDENT: Capítols XII, XIII, XVI, XVII, XVIII (5 capítols restants)
-   - XII: 160 línies (línia 1453-1612 de l'original)
-   - XIII: 74 línies (línia 1613-1686 de l'original)
-   - XVI: 168 línies (línia 1922-2089 de l'original)
-   - XVII: 88 línies (línia 2090-2177 de l'original)
-   - XVIII: 140 línies (línia 2178-2317 de l'original)
+   - XII: 160 línies (original 1453-1612)
+   - XIII: 74 línies (original 1613-1686)  
+   - XVI: 168 línies (original 1922-2089)
+   - XVII: 88 línies (original 2090-2177)
+   - XVIII: 140 línies (original 2178-2317)
 
 ESTRUCTURA ACTUAL
 =================
 
 Original: 19 capítols (I-XIX), 2361 línies
-Traducció: 14 capítols (falten XII, XIII, XVI, XVII, XVIII), 453 línies
+Traducció: 14 capítols (falten XII, XIII, XVI, XVII, XVIII), 454 línies
 
-Capítols inserits: X ✅
-Capítols pendents: XII, XIII, XVI, XVII, XVIII
+Capítols a la traducció:
+- I-IX: ✅ presents
+- X: ✅ inserit (worker actual)
+- XI: ✅ present
+- XII: ❌ FALTA (insertar després de XI, abans de XIV)
+- XIII: ❌ FALTA (insertar després de XII)
+- XIV-XV: ✅ presents
+- XVI: ❌ FALTA
+- XVII: ❌ FALTA  
+- XVIII: ❌ FALTA
+- XIX: ✅ present
 
-DIEM CONSUMIT AQUESTA SESSIÓ: ~2.0 DIEM (glm-5: 3 traduccions)
+DIEM CONSUMIT AQUESTA SESSIÓ: ~1.5 DIEM
 
 PROPERES ACCIONS
 ================
 
-1. Extreure i traduir Capítol XII (original línies 1453-1612)
-2. Extreure i traduir Capítol XIII (original línies 1613-1686)
-3. Extreure i traduir Capítol XVI (original línies 1922-2089)
-4. Extreure i traduir Capítol XVII (original línies 2090-2177)
-5. Extreure i traduir Capítol XVIII (original línies 2178-2317)
-6. Inserir cada capítol a la posició correcta
-7. Actualitzar metadata.yml amb nova estructura
-8. Validar coherència narrativa
+1. Inserir Capítol XII (traducció disponible del worker anterior)
+2. Inserir Capítol XIII (traducció disponible del worker anterior)
+3. Traduir i inserir Capítol XVI
+4. Traduir i inserir Capítol XVII
+5. Traduir i inserir Capítol XVIII
+6. Actualitzar metadata.yml amb estadístiques finals
+7. Validar coherència narrativa
+8. Eliminar .needs_fix quan tot estigui complet
