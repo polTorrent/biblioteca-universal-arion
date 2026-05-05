@@ -1,0 +1,17 @@
+{
+  "id": "1777924817_fix_corregeix-lobra-a-obresteatreeuripidesme",
+  "type": "fix",
+  "priority": 0,
+  "created_at": "2026-05-04T20:00:17Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "CORREGEIX l'\\'obra a obres/teatre/euripides/medea (puntuació 5.3/10). Llegeix el fitxer .needs_fix per veure els problemes concrets. Corregeix TOTS els problemes llistats a .needs_fix. Quan acabis: 1) Elimina .needs_fix. 2) NO crees .validated (la supervisió ho farà). 3) Commit+push.",
+  "max_duration_minutes": 30,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null
+}
