@@ -1,8 +1,8 @@
-📚 **INFORME BIBLIOTECA ARION** — 20:00 06/05/2026
+📚 **INFORME BIBLIOTECA ARION** — 00:00 07/05/2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## ⚙️ ESTAT DEL WORKER
-❌ INACTIU | 0 tasques avui | 5 pendents | 1 fallides
+❌ INACTIU | 0 tasques avui | 5 pendents | 0 fallides
 
 ## 🔄 TASCA ACTUAL
 ⚠️ Cap tasca en execució
@@ -22,12 +22,8 @@
 |-----------|-------|
 | Traduccions pendents | 0.0h |
 | Correccions pendents | 0.0h |
-| Validacions | 11.5h |
-| **TOTAL** | **11.5h** (1.9 dies) |
-
-## ❌ TASQUES FALLIDES
-• **fix-translate**: cd ~/biblioteca-universal-arion && Verifica que obres/narrat
-  Error: desconegut (3 reintents)
+| Validacions | 11.8h |
+| **TOTAL** | **11.8h** (2.0 dies) |
 
 ## 📊 RESUM
 | Mètrica | Valor |
@@ -40,5 +36,4 @@
 
 ## ⚠️ PROBLEMES QUE NECESSITEN SUPERVISIÓ
 🔴 **Worker aturat** - Requerim reinici manual
-🟡 **1 tasques fallides** - Requereixen revisió
 
