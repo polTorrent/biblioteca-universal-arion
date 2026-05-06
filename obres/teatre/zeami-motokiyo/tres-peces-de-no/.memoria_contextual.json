@@ -1,7 +1,10 @@
 {
-  "traduccions": {},
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  "ultim_context": "é han ressonat fins arribar a fer-se famosos.\n\n### Cor (final)\n\nAl principi resplendeix per tot el firmament i escampa la seva llum sobre la terra. Il·lumina els camps de tardor del Japó. El mantell de plomes, al vent de la cala, oneja i s'estén sobre el Pinar de Miho, sobre la plana d'Ukishima, sobre el mont Ashitaka, i, com un núvol prim, s'eleva fins al cim altíssim del Fuji, endinsant-se entre els núvols, confonent-se amb els núvols, dins de la calitja del cel diví, s'ha esvaït, s'ha esvaït.",
+  "timestamp": 1778093613.1141906,
+  "historial": [
+    {
+      "context": "é han ressonat fins arribar a fer-se famosos.\n\n### Cor (final)\n\nAl principi resplendeix per tot el firmament i escampa la seva llum sobre la terra. Il·lumina els camps de tardor del Japó. El mantell de plomes, al vent de la cala, oneja i s'estén sobre el Pinar de Miho, sobre la plana d'Ukishima, sobre el mont Ashitaka, i, com un núvol prim, s'eleva fins al cim altíssim del Fuji, endinsant-se entre els núvols, confonent-se amb els núvols, dins de la calitja del cel diví, s'ha esvaït, s'ha esvaït.",
+      "timestamp": 1778093613.1143293
+    }
+  ]
 }
