@@ -23,7 +23,7 @@ COOLDOWN_OK=30               # Segons entre tasques OK
 COOLDOWN_FAIL=60            # Segons després d'un fail
 COOLDOWN_EMERGENCY=600       # 10 min pausa si massa errors
 CONSECUTIVE_ERRORS_FILE="/tmp/worker-consecutive-errors.txt"
-TASK_TIMEOUT=1800            # 30 min timeout per tasca
+TASK_TIMEOUT=300             # 5 min timeout per tasca (evita gastar DIEM en penjades)
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 MIN_DIEM=2.0                 # Mínim DIEM per operar (per sota = stop) - deixa marge per comunicació
