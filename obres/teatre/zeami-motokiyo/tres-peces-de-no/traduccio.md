@@ -1,206 +1,208 @@
 # Tres peces de nō: Matsukaze, Atsumori, Hagoromo
 *Zeami Motokiyo*
 
-Traduït del japonès clàssic per Biblioteca Arion
+Traduït del japonès per Biblioteca Arion
 
 ---
 
-## I. Matsukaze (松風)
+## I. Matsukaze (Vent entre els pins)
 
-### Entrada del waki
+### Entrada del waki (deuteragonista)
 
-Sóc un monjo viatger. Com a monjo pelegrí que he recorregut totes les terres, encara no he vist la platja de Suma, a la província de Tsu, i per això he decidit emprendre el camí per contemplar-la.
+Sóc un monjo errant. Recorro les diverses províncies del país. Com que encara no he vist la cala de Suma, a la província de Tsu, he pres la determinació de fer-hi camí i contemplar-la.
 
-### Viatge del waki
+### Camí del waki
 
-La lluna sense vel sobre la platja de Suma, la lluna sense vel sobre la platja de Suma. Al pas de la barrera, els corrents[^1] emmudeixen, i amb el so de les ones i el vent entre els pins, faig sol aquest viatge. He arribat a la platja de Suma.
+La cala de Suma sota la lluna sense ombres, la cala de Suma sota la lluna sense ombres. Pel pas, els xebel·lins refilen, el so de les ones, el vent entre els pins; sol vaig fent camí, viatger solitari. Heus aquí que arribo a la cala de Suma.
 
 ### Paraules del waki
 
-Tot fent camí, ja he arribat a la platja de Suma. Que estrany! A la vora de l'aigua hi ha un vell pi al qual han lligat una tira de paper de colors. M'hi acosto i llegeixo: «Quan me'n vagi, si sents parlar del pi que creix al cim del mont Inaba, torna-hi aviat».[^2] Quina pena! Aquest pi deu ser la relíquia d'aquelles dues pescadores que el conseller mitjà Yukihira va estimar amb els noms de Matsukaze i Murasame. En efecte, ha de ser aquí. Voldria preguntar-ho a algú d'aquests paratges.
+He caminat amb pressa, i ja sóc a la cala de Suma. Quina cosa més estranya: a la riba hi ha un vell pi, i hi veig penjada una tira de paper acolorida. M'hi acosto i llegeixo: «Si me n'he d'anar, com el pi que creix al cim del mont Inaba, en saber que m'esperes, tornaré de seguida.» Quina llàstima! He sentit a dir que aquest pi és el vestigi d'aquelles dues bussejadores que el conseller mitjà Yukihira va estimar, anomenades Matsukaze i Murasame. Sens dubte deu ser aquest mateix. Provaré de preguntar-ho a algú del lloc.
 
-### Entrada del shite i el tsure
+### Entrada del shite (protagonista) i la tsure (acompanyant)
 
-Recollint sal, recollint sal. La lluna també deu reposar a les meves mànigues.
+Anem a recollir aigua salada, anem a recollir aigua salada. ¿Potser la lluna també s'allotjarà a les nostres mànigues?
 
-### Cant del shite
+### Cant elevat del shite
 
-En sentir els noms Matsukaze i Murasame,[^3] el passat ens torna a la memòria. El conseller mitjà Yukihira va prometre'ns tantes coses, i d'elles només perdura el nom: només queda el vent entre els pins i la pluja de la muntanya, només queda el vent entre els pins i la pluja de la muntanya.
+En sentir només els noms de Matsukaze i Murasame, el passat se'ns fa present amb enyor. Tantes i tantes promeses fetes al conseller mitjà Yukihira! Avui no en queda sinó el nom que no s'esborra, i del que fou només resten el vent entre els pins i la pluja del vespre, només resten el vent entre els pins i la pluja del vespre.
 
-### Cor
+### Cor (jiutai)
 
-Ah, des del principi no som més que humils pescadores sense nom, però tot i així la vida ens és preuada. Com les vestidures gastades de les bussejadores de Suma, les llàgrimes s'hi acumulen com perles, i al capvespre en què comencem a cremar sal, del llogarret d'Onosato només s'alça el fum, però ningú no ve, el fum s'alça però ningú no ve.
+Ah, des de sempre no som sinó humils bussejadores sense nom; i, tanmateix, ens dol perdre la vida. Vestits gastats de les pescadores de Suma, en què s'afegeixen els grans de les llàgrimes; quan al capvespre comencem a cremar la sal, només cap als pobles llunyans de Tōrikōno s'aixeca el fum, però no ve ningú; s'aixeca el fum, però no ve ningú.
 
-### Paraules del tsure
+### Paraules de la tsure
 
-Aquest pi és el del conseller mitjà Yukihira, aquell a qui va estimar les dues pescadores Matsukaze i Murasame. Doncs deu ser aquest pi! Oh, com m'enyora el so del vent entre els pins!
+He sentit a dir que aquest pi és el que va estimar el conseller mitjà Yukihira, en record de les dues bussejadores Matsukaze i Murasame. ¿De manera que era aquest, doncs? Que entranyable, el so del vent entre els pins!
 
 ### Paraules del shite
 
-Per vergonyós que sigui, nosaltres som les pescadores que vam prometre'ns al conseller mitjà Yukihira: jo sóc Matsukaze. Vivint en la humilitat, amagàvem la nostra condició, però ara, inesperadament, el monjo viatger ens ho ha preguntat, i en contar la nostra trista sort, les llàgrimes augmenten encara més, les llàgrimes augmenten encara més.
+Per gran vergonya que em sigui, aquella bussejadora Matsukaze que es va prometre al conseller mitjà Yukihira sóc jo mateixa. M'amagava avergonyida d'aquesta efímera existència, però vet aquí que ara, sense esperar-ho, un monjo viatger m'ho pregunta, i en contar aquesta amargor les llàgrimes encara em creixen amb l'enyor, les llàgrimes encara em creixen amb l'enyor.
 
-### Cor (kuse)
+### Cor (kuse, clímax narratiu)
 
-Suma és el lloc on el conseller mitjà Ariwara no Yukihira, allunyat de la capital de la lluna,[^4] va viure el seu desterrament. A la platja de Suma, entre les ones i la cabana de joncs, el seu únic company era el vent entre els pins, i pel so coneixia les hores de la nit.
+Suma fou per al conseller mitjà Ariwara no Yukihira el lloc del seu desterrament, lluny de la capital de la lluna; allà, només les ones que s'alcen a la cala de Suma i la cabana de canyes on jeia i es llevava, i com a única companyia el so del vent entre els pins, que li feia saber el pas de la nit.
 
-I fou així que Yukihira, celebrant un banquet de lluna en aquesta platja, ens va trobar per atzar, i ens va donar els noms de Matsukaze i Murasame, i el nostre vincle es va fer pregon. El nostre vincle es va fer pregon.
+Així, mentre Yukihira celebrava en aquesta cala una festa sota la lluna, per atzar nosaltres hi vam arribar; i ell ens va posar els noms de Matsukaze i Murasame, i la nostra unió esdevingué profunda. La nostra unió esdevingué profunda.
 
-Però al cap d'un temps, Yukihira va tornar a la capital, i nosaltres vam quedar a Suma. Com les cloïsses de l'escull, vivíem submergides en la marea, sense lamentar la nostra feina de pescadores. Ell va deixar al pi, com a record, la seva corona i la seva túnica de caça, i ens va consolar dient: «Quan me'n vagi, si sents parlar del pi que creix al cim del mont Inaba, torna-hi aviat». Però fins i tot sobre aquelles paraules posades al pi va bufar el vent de la tardor, i tota notícia va cessar. Quina tristesa!
+Així, doncs, Yukihira tornà a la capital, i nosaltres restàrem a Suma, vivint de les cloïsses de la costa amarades en la sal, sense atendre les feines pròpies de les bussejadores, mentre el seu barret i el seu vestit de caça quedaven penjats al pi com a recordança. «Si me'n vaig i et separes de mi, com el pi que creix al cim de la muntanya d'Inaba, en saber que m'esperes, tot seguit tornaré»: aquestes paraules de consol ens deixà, però sobre el pi també s'aixecà el vent de tardor, i quina tristor que les notícies se'ns esgotaren!
 
-I mentre el temps passava consumit de pena, ens va arribar la nova que Yukihira havia mort a la capital. I per això, ja que fins la vida té un límit, Matsukaze i Murasame, juntes, com el fum efímer de les bussejadores que cremen sal, ens vam extingir com la rosada, ens vam extingir com la rosada.
+Mentre passàvem els dies enyorant-lo, ens arribà la nova que Yukihira havia mort a la capital. I com que tota vida té el seu límit, Matsukaze i Murasame, juntes, com la fugacitat de les bussejadores que cremen sal, també les nostres vides de rosada s'apagaren, també les nostres vides de rosada s'apagaren.
 
 ### Shite (després de la dansa introductòria)
 
-Amb el vent entre els pins,[^5] el cor s'aclareix com les aigües de la badia, i porto la lluna recollida amb l'aigua, vestida amb la meva túnica de marea: un camí de pensaments que mai no s'acaba.
+Amb el vent entre els pins el cor s'aclareix com l'aigua de la badia de Sumi; recollint la llum de la lluna, el vestit de la marea m'arrossega, i els camins de la sal són pensaments inesgotables.
 
-Vestida amb la corona i la túnica de caça que ens va deixar com a record, la meva forma sembla la d'Yukihira, però no hi ha manera d'intercanviar paraules. Només puc dir que l'estimo, que l'estimo, i entre sanglots la veu se'm trenca.
+Vestida amb el barret i el vestit de caça que ell deixà com a recordança, en la meva figura es veu encara Yukihira; però no hi ha manera de bescanviar-hi paraules, i només puc dir «com l'estimo, com l'estimo», i no faig sinó plorar.
 
-### Cor (kiri)
+### Cor (final)
 
-El vent que bufa entre els pins — si el vent entre els pins és el meu nom, Matsukaze, com n'és de nostàlgic! Si penso que és el meu nom, com n'és de nostàlgic!
+El vent que bufa entre els pins, si el sento com a vent dels pins, m'és tan dolç; i si penso que és el meu propi nom, m'és encara més dolç. Si penso que és el meu nom, m'és tan dolç.
 
-Tota la nit jugant amb el vent entre els pins, quan el dia ja despunta, ni rastre de Matsukaze ni de Murasame, ni rastre de Matsukaze ni de Murasame: només queda el vent que bufa entre els pins, només queda el vent que bufa entre els pins.
+Tota la nit jugant amb el vent dels pins, fins que el dia es féu clar, i de Matsukaze i Murasame ja no en restà cap rastre, de Matsukaze i Murasame ja no en restà cap rastre, només el vent que bufa entre els pins, només el vent que bufa entre els pins.
 
 ---
 
-## II. Atsumori (敦盛)
+## II. Atsumori
 
 ### Entrada del waki
 
-Sóc Kumagai no Jirō Naozane, natural de la província de Musashi. A la batalla d'Ichi-no-Tani vaig abatir el jove noble Atsumori, del clan Taira, i des d'aleshores, commòs per la impermanència de totes les coses, m'he fet monjo sota el nom de Renshō[^6] i he baixat fins a Ichi-no-Tani per pregar pel repòs de la seva ànima.
+Sóc Kumagai no Jirō Naozane, habitant de la província de Musashi. Després d'haver donat mort, a la batalla d'Ichi-no-tani, al jove noble dels Heike Atsumori, vaig sentir tan profundament la impermanència de les coses que em vaig fer monjo i he canviat el meu nom pel de Renshō; i ara baixo cap a Ichi-no-tani per pregar pel repòs de l'ànima d'Atsumori.
 
-### Viatge del waki
+### El viatge del waki
 
-El món és un somni, i saber-lo somni és despertar. El món és un somni, i saber-lo somni és despertar.[^7] Pel camí efímer, seguint la petja dels homes cap al camp de batalla, on ni els rastres no perduren entre l'herba, he arribat a Ichi-no-Tani, he arribat a Ichi-no-Tani.
+Saber que aquest món de somni és un somni és el que ens desperta del somni. Saber que aquest món de somni és un somni és el que ens desperta del somni. Pels camins fugissers de la nostra ruta, pel rastre dels homes pel camp de batalla, per la prada d'herbes que no en guarda cap petjada, hem arribat a Ichi-no-tani, hem arribat a Ichi-no-tani.
 
 ### Paraules del waki
 
-Tot fent camí, ja he arribat a Ichi-no-Tani. Eh, hi ha algú? Voldria preguntar alguna cosa a la gent d'aquí.
+He caminat de pressa, i ja sóc a Ichi-no-tani. Hola, hi ha algú? Voldria preguntar una cosa a la gent d'aquests verals.
 
-### Entrada del shite i la flauta dels segadors
+### Entrada del shite primer i la flauta del segador
 
-Com és propi de les bussejadores de Suma, a través del fum de la sal, se sent una flauta de fulles verdes.[^8] Deu ser la flauta que Atsumori va deixar com a record: quin so, el de la flauta de fulles verdes!
+De la feina dels pescadors de Suma, entre les pauses del fum de la sal que cremen, s'alça un so: és la flauta de les Fulles Verdes. Aquella flauta que fou recordança d'Atsumori, el so de la flauta de les Fulles Verdes que ha deixat el seu nom per a la posteritat.
 
 ### Paraules del shite
 
-En efecte, Atsumori era un mestre de la flauta. A la batalla d'Ichi-no-Tani, va portar aquesta flauta al campament, i que enmig de la fúria del combat no oblidés una distracció tan refinada, és especialment commovedor.
+Així és. Aquell Atsumori era un mestre de la flauta. A la batalla d'Ichi-no-tani, dugué aquesta flauta enmig del campament; i que enmig del coratge bel·licós no oblidés un esbargiment tan refinat, és cosa, certament, ben commovedora.
 
 ### Cor
 
-Penseu-hi: aquest món no és estatge definitiu. Com la rosada sobre la fulla d'herba, com la lluna reflectida a l'aigua, encara més fugaç.[^9] A Kinkoku es cantaven les flors, però la glòria es precipita davant el vent de la impermanència. Els qui gaudien de la lluna al Pavelló del Sud també s'amaguen, abans que la lluna, rere els núvols de la caducitat. Cinquanta anys de vida humana, comparats amb el regne celestial, són com un somni, com una il·lusió. Qui, havent rebut la vida, no haurà de perir?
+### Cor
 
-### Intermedi
+Pensant-hi bé, aquest món no és estatge perdurable. Més fugaç encara que la rosada blanca damunt les fulles d'herba, més incert que la lluna que s'allotja a l'aigua. A Jinkoku es cantaven les flors, però l'esplendor s'avançà i fou arrossegada pel vent de la impermanència. Els qui jugaven amb la lluna de la Torre del Sud, també abans que la lluna s'amagaren rere els núvols del món efímer. Cinquanta anys de vida humana, comparats amb els cels inferiors, són com un somni, una il·lusió. Un cop rebuda la vida, ¿hi ha res que no s'extingeixi?
 
-Amb això, em comiat.
+### Interludi (nakairi)
 
-### Entrada del shite posterior
+Amb això em comiat de vós.
 
-Ah, quina vergonya! Mostrar aquesta forma davant l'enemic: quina vergonya! Però si sou un autèntic monjo viatger, us prego, pregueu pel meu repòs.
+### Entrada del shite tornat
+
+Ah, quina vergonya! Quina vergonya, mostrar-me en aquesta figura davant l'enemic! Però si sou veritablement un monjo pelegrí, pregueu, us ho prec, per la meva ànima.
 
 ### Paraules del waki
 
-Que estrany! Un guerrer amb armadura que apareix en aquest erm: què significa?
+Estrany és això: ¿què hi fa, en aquest erm, un guerrer cobert d'armadura?
 
-### Paraules del shite posterior
+### Paraules del shite tornat
 
-Per vergonyós que sigui, sóc l'esperit d'Atsumori, jove noble del clan Taira. Que hagi de mostrar-me amb aquesta aparença davant l'enemic que em va abatir: quina amargor!
+Per vergonya que sigui, jo sóc l'esperit d'Atsumori, fill noble de la casa Taira. I quina amargor, mostrar-me amb aquesta figura davant l'enemic que em donà mort!
 
 ### Cor (kuse)
 
-Doncs bé, els membres del clan Taira, des que van abandonar la capital florida i van quedar a mercè de les ones del mar occidental, no tenien ni una nit d'estatge segur dins les naus: quina sort tan lamentable!
+Heus aquí: des que el llinatge dels Taira hagué d'abandonar la capital florida i esdevingué cos errant entre les ones del mar de ponent, ni tan sols un sol vespre de recer no tingué a la lluna; vivia dins les naus, en condició certament digna de pietat.
 
-Van establir la fortalesa a Ichi-no-Tani, i en secret vigilaven la capital. A la primavera, enmig del campament, mentre es delien amb la música, l'enemic ataca.
+Fortificàrem Ichi-no-tani com a baluard, espiant d'amagat la capital, i en el campament que rebia la primavera, just en l'hora dels esbargiments musicals, l'enemic se'ns va llançar damunt.
 
-Les ones s'aboquen sobre el litoral, i cavall rere cavall, es llancen a l'assalt. Sorpresos pel crit de guerra, sense temps de prendre res, els qui no van poder embarcar llancen els cavalls per la platja.
+Fins al límit on les ones rompen contra la riba, vingueren a l'atac amb els cavalls arrenglerats. Sorpresos pel crit de guerra, sense temps d'aplegar res, perdérem el moment d'embarcar i llançàrem els cavalls a galop per la sorra.
 
-### Després de la dansa dels asura
+### Després de la dansa de l'asura
 
-Caigut per la mà de Kumagai, aquell enemic d'antany és ara, tanmateix, company d'oracions. Company d'oracions! Pregueu per mi, pregueu per mi!
+Aquell enemic a les mans del qual, les de Kumagai, vaig caure i em vaig esvair, ara és el company de les pregàries. Ara és el company de les pregàries. Pregueu per mi, pregueu per mi.
 
 ### Cor (kiri)
 
-I amb tot, era l'enemic, i veure'l com a enemic és karma. No, al capdavall no era cap enemic.[^10] Quan se senten les pregàries, ni Buda ni els éssers no es distingeixen: puguem renéixer en un mateix lotus. Pel vincle d'un mateix lotus, pregueu per mi, Renshō, pregueu per mi, Renshō.
+I tanmateix, essent enemic, tenir-lo per enemic és també retribució del karma. No, no era pas enemic. Quan se sent la veu de la pregària, ni el Buda ni els éssers vius no tenen separació. Esdevindrem un mateix cos sobre el mateix lotus. Ja que ens uneix el lligam d'un sol lotus, pregueu per mi, monjo Renshō, pregueu per mi, monjo Renshō.
 
 ---
 
-## III. Hagoromo (羽衣)
+## III. Hagoromo (El mantell de plomes)
 
 ### Entrada del waki
 
-Sóc Hakuryō, pescador de la platja de Miho. Cada dia surto a la costa a llançar l'ham.
+Sóc Hakuryō, pescador del Pinar de Miho. Cada dia surto a la cala i hi llanço la canya.
 
-### Viatge del waki
+### Camí del waki (michiyuki)
 
-Mirant la platja de Miho, la neu cau sobre el cim del Fuji, la boira s'estén sobre les ones de la costa, i entre els pins s'albira el paisatge: he arribat a la platja de Miho.
+Quan contemplo el Pinar de Miho, sobre el cim altíssim del Fuji ha caigut neu, i entre les ones de la cala on s'estén la calitja, a través dels intersticis dels pins, es deixa veure: heus aquí, he arribat al Pinar de Miho.
 
 ### Paraules del waki
 
-Que estrany! Sobre una branca de pi penja un vestit bellíssim. M'hi acosto i veig que el color i la fragància no són d'aquest món. Doncs me l'emportaré a casa com a tresor.
+Estrany! Em sembla veure, penjat d'una branca de pi, un vestit de gran bellesa. M'hi acosto, l'examino: el color i la flaire no són d'aquest món. Doncs bé, penso emportar-me'l a casa i fer-ne el tresor de la família.
 
 ### Entrada del shite
 
-Ei! Aquell vestit és meu. Torneu-me'l, si us plau.
+Ei, espereu! Aquest mantell és meu. Torneu-me'l, us ho prego.
 
 ### Paraules del waki
 
-M'han dit que és el mantell de plomes d'un ésser celestial. En tal cas, el guardaré com a tresor del país i no el tornaré pas.
+He sentit dir que aquest és el mantell de plomes d'un ésser celestial. Per tant, com que el faré tresor del país, no us el puc tornar.
 
 ### Paraules del shite
 
-Oh, que despietat sou! Sense aquell mantell no puc tornar al cel. Us ho prego, torneu-me'l.
+Ai, no parleu amb tanta crueltat! Sense aquest vestit no puc tornar al cel. Us prego, sigui com sigui, que me'l torneu.
 
 ### Cor
 
-L'ésser celestial, amb la seva forma etèria, les mànigues florals humides de rosada, el fil de la vida de la donzella celestial no és sinó un llarg plany de llàgrimes. El fil de la vida de la donzella celestial no és sinó un llarg plany de llàgrimes.
+Fràgil és la figura de l'ésser celestial: les seves mànigues florides es cobreixen de rosada, i de la doncella del cel, fil preciós de la vida, només brollen llàgrimes d'una llarga aflicció. De la doncella del cel, fil preciós de la vida, només brollen llàgrimes d'una llarga aflicció.
 
 ### Paraules del waki
 
-En efecte, veig que sou un ésser celestial i em feu compassió. Us tornaré el vestit, però danseu per a mi. Us el tornaré després de la dansa.
+En veritat, en contemplar-vos com a ésser celestial, em moveu a compassió. Així doncs, us tornaré el vestit. Però balleu primer la dansa dels éssers celestials i feu-me-la veure. Després us tornaré el mantell.
 
 ### Paraules del shite
 
-Oh, quina alegria! Paraules plenes de gentilesa! Doncs bé, si em torneu el vestit, dansaré per a vós.
+Quina alegria! Quines paraules tan tendres i delicades! Si em torneu el vestit, executaré la dansa i us la mostraré.
 
 ### Paraules del waki
 
-Primer danseu. Després us tornaré el mantell.
+Balleu primer la dansa. Després us tornaré el mantell.
 
 ### Paraules del shite
 
-No, sense el mantell no puc dansar. Primer torneu-me'l, si us plau.
+No, sense el vestit no puc dansar. Primer torneu-me'l, us ho prego.
 
 ### Paraules del waki
 
-Si us el torno, no fugireu al cel sense dansar?
+I si us lliuro el vestit, no fugireu cap al cel sense ballar?
 
 ### Paraules del shite
 
-No. El dubte és cosa dels humans. Al cel no hi ha engany.[^11]
+No: la sospita és cosa dels humans. Al cel no hi ha falsedat.
 
 ### Paraules del waki
 
-Oh, quina vergonya em fan les vostres paraules! Doncs us torno el mantell.
+Ai, quines paraules em fan vergonya! Doncs bé, us tornaré el mantell.
 
 ### Cor
 
-En rebre el mantell, amb joia dansa, en rebre el mantell, amb joia dansa: vestida amb el mantell celestial, l'espectacle de la dansa és un prodigi.
+Tornat el vestit, les mànigues dansen de joia; tornat el vestit, les mànigues dansen de joia. Vestida amb el mantell de plomes celestial, quina figura més admirable la de la dansa!
 
 ### Dansa i paraules del shite
 
-A la primavera, l'alba amb la boira s'estén, i des de la platja de Miho, mirant cap a l'horitzó, a la llunyania, el cim del Fuji cobert de neu.
+A la primavera, l'alba s'estén entre boirines; sortint del Pinar de Miho, contemplo a la llunyania la plana d'Ukishima: sobre el cim altíssim del Fuji, hi cau la neu.
 
-Pel camí oriental,[^12] els dies llargs i plaents, el so de les ones al pas de Kiyomi, la platja de Miho seguint la costa, el verd dels pins que s'intensifica.
+El sol és plàcid pels camins de l'est; remor d'ones del pas de Kiyomi, vorera del Pinar de Miho seguint la costa, el verd dels pins encara realça el color.
 
-La donzella celestial jugant amb la primavera, dansant amb les mànigues florals, fins la lluna del llorer torna al cel.
+Joc primaveral de la doncella celestial: flors com a ornament al cabell, mànigues que dansen, fins l'arbre del llorer de la lluna sembla retornar.
 
 ### Cor (després de la dansa introductòria)
 
-El mantell celestial perfumat de flors, el mantell celestial perfumat de flors, les mànigues de la dansa es confonen amb la boira. La dansa de Suruga dels jocs orientals,[^13] fins quan durarà a la platja de Kiyomi? La lluna s'aclareix sobre la platja de Miho, i la donzella celestial dansa i en deixa la imatge; fins el vent entre els pins i les fulles de jonc se'n senten l'eco.
+El mantell de plomes amb la flaire de les flors, el mantell de plomes amb la flaire de les flors, mànigues de dansa que es confonen amb la calitja. Dansa de l'est, dansa de Suruga: ¿fins quan, així, a la cala de Kiyomi, sobre el Pinar de Miho on la lluna brilla nítida, romandrà la figura dansant de la doncella celestial? El vent dels pins que ella hi deixa, i les fulles de l'herba d'ogi, també han ressonat fins arribar a fer-se famosos.
 
-### Cor (kiri)
+### Cor (final)
 
-Primer resplendeix per tot el cel i escampa la seva llum sobre el país. Sobre els arrossars del Japó a la tardor, il·luminant-los. El mantell celestial, amb la brisa de la costa, flota i s'allarga sobre la platja de Miho, sobre Ukishimagahara, i per sobre el mont Ashitaka, enfilant-se entre els núvols prims, fins al cim del Fuji s'eleva i, entrant als núvols, es confon amb els núvols, es perd en la boira del cel, es perd en la boira del cel.
+Al principi resplendeix per tot el firmament i escampa la seva llum sobre la terra. Il·lumina els camps de tardor del Japó. El mantell de plomes, al vent de la cala, oneja i s'estén sobre el Pinar de Miho, sobre la plana d'Ukishima, sobre el mont Ashitaka, i, com un núvol prim, s'eleva fins al cim altíssim del Fuji, endinsant-se entre els núvols, confonent-se amb els núvols, dins de la calitja del cel diví, s'ha esvaït, s'ha esvaït.
 
 ---
 
-*Traducció de domini públic — CC BY-SA 4.0*
+*Traducció de domini públic.*
