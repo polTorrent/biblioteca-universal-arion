@@ -119,11 +119,14 @@ if [ -z "$DISCORD_TOKEN" ]; then
 fi
 
 escaped_message=$(escape_json "$message")
+
+# Enviar i capturar NOMÉS el codi HTTP (descartar resposta JSON)
 http_code=$(curl -s -X POST \
     "https://discord.com/api/v10/channels/$CHANNEL_ID/messages" \
     -H "Authorization: Bot $DISCORD_TOKEN" \
     -H "Content-Type: application/json" \
     -d "{\"content\": $escaped_message}" \
+    -o /dev/null \
     -w "%{http_code}" 2>/dev/null || echo "000")
 
 if [ "$http_code" = "200" ] || [ "$http_code" = "201" ]; then
