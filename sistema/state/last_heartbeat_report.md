@@ -1,12 +1,11 @@
-📚 **INFORME BIBLIOTECA ARION** — 20:00 05/05/2026
+📚 **INFORME BIBLIOTECA ARION** — 23:00 05/05/2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## ⚙️ ESTAT DEL WORKER
-❌ INACTIU | 0 tasques avui | 5 pendents | 0 fallides
+❌ INACTIU | 3 tasques avui | 5 pendents | 1 fallides
 
 ## 🔄 TASCA ACTUAL
-**Tipus:** fix-translate
-**Instrucció:** cd ~/biblioteca-universal-arion && Verifica que obres/narrativa/petroni/cena-trimalchionis-el-banque...
+⚠️ Cap tasca en execució
 
 ## 📖 OBRES EN PROGRÉS
 📝 **sobre-la-tranquillitat-de-lanima** (traducció)
@@ -26,6 +25,10 @@
 | Validacions | 11.5h |
 | **TOTAL** | **11.5h** (1.9 dies) |
 
+## ❌ TASQUES FALLIDES
+• **fix-translate**: cd ~/biblioteca-universal-arion && Verifica que obres/orient
+  Error: desconegut (3 reintents)
+
 ## 📊 RESUM
 | Mètrica | Valor |
 |---------|-------|
@@ -37,4 +40,5 @@
 
 ## ⚠️ PROBLEMES QUE NECESSITEN SUPERVISIÓ
 🔴 **Worker aturat** - Requerim reinici manual
+🟡 **1 tasques fallides** - Requereixen revisió
 
