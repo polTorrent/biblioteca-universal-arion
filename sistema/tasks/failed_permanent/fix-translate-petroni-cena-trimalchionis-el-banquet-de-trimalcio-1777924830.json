@@ -7,8 +7,8 @@
   "created": "2026-05-04T22:00:30+02:00",
   "retries": 3,
   "obra": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
-  "total_failures": 6,
+  "total_failures": 9,
   "retry_count": 0,
   "recovered": true,
-  "regen_count": 1
+  "regen_count": 2
 }
