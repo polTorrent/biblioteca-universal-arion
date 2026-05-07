@@ -866,6 +866,11 @@ fi
 # ── Fase 2.6: Processar notificacions pendents ───────────────────────────────
 process_pending_notifications
 
+# ── Enviar informe a Discord ─────────────────────────────
+    if [ -f "$PROJECT/sistema/automatitzacio/send-heartbeat-report.sh" ]; then
+        bash "$PROJECT/sistema/automatitzacio/send-heartbeat-report.sh" 2>/dev/null || true
+    fi
+
 log "💓 HEARTBEAT v5 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"
 log_to_dashboard "worker" "=== HEARTBEAT COMPLETAT ==="
