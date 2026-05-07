@@ -9,7 +9,7 @@ set -uo pipefail
 
 PROJECT="$HOME/biblioteca-universal-arion"
 TASKS_DIR="$PROJECT/sistema/tasks"
-MIN_RATIO=0.3  # Mínim 30% de l'original
+MIN_RATIO=0.4  # Mínim 30% de l'original
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] [INCOMPLETES-V2] $1"; }
 
