@@ -1,0 +1,16 @@
+{
+  "id": "17446905_translate_cena-trimalchionis-el-banquet-de-trimalcio",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducció de 'cena-trimalchionis-el-banquet-de-trimalcio' (narrativa/petroni). Original: 30907 paraules, traduït: 8062 paraules. Continua des d'on s'ha quedat mantenint l'estil existent.",
+  "obra": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
+  "model": "claude-opus-4-7",
+  "metadata": {
+    "slug": "cena-trimalchionis-el-banquet-de-trimalcio",
+    "author": "petroni",
+    "category": "narrativa",
+    "original_words": 30907,
+    "traduccio_words": 8062
+  }
+}
