@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arion Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <h1><i class="fas fa-book"></i> Arion Dashboard</h1>
+            <span class="subtitle">Biblioteca Universal - Sistema de Traducció Autònom</span>
+        </div>
+        <div class="header-right">
+            <div class="status-indicator" id="connection-status">
+                <i class="fas fa-circle"></i>
+                <span>Desconnectat</span>
+            </div>
+            <div class="clock" id="clock">--:--:--</div>
+        </div>
+    </header>
+
+    <!-- Status Bar -->
+    <div class="status-bar">
+        <div class="status-item">
+            <i class="fas fa-server"></i>
+            <div class="status-info">
+                <span class="label">Worker</span>
+                <span class="value" id="worker-status">--</span>
+            </div>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-coins"></i>
+            <div class="status-info">
+                <span class="label">DIEM</span>
+                <span class="value" id="diem-balance">--</span>
+            </div>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-tasks"></i>
+            <div class="status-info">
+                <span class="label">Cua</span>
+                <span class="value" id="queue-count">--</span>
+            </div>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-chart-line"></i>
+            <div class="status-info">
+                <span class="label">Requests</span>
+                <span class="value" id="requests-remaining">--</span>
+            </div>
+        </div>
+        <div class="status-item">
+            <i class="fas fa-memory"></i>
+            <div class="status-info">
+                <span class="label">Tokens</span>
+                <span class="value" id="tokens-remaining">--</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hermes Thought Stream -->
+        <section class="panel panel-hermes">
+            <div class="panel-header">
+                <i class="fas fa-brain"></i>
+                <h2>Pensament Hermes</h2>
+                <button class="clear-btn" onclick="clearPanel('hermes')">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            <div class="panel-content" id="hermes-stream">
+                <div class="empty-state">
+                    <i class="fas fa-hourglass-start"></i>
+                    <p>Esperant activitat d'Hermes...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- LLM Thinking Stream -->
+        <section class="panel panel-llm">
+            <div class="panel-header">
+                <i class="fas fa-robot"></i>
+                <h2>Pensament LLM (Venice)</h2>
+                <button class="clear-btn" onclick="clearPanel('llm')">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            <div class="panel-content" id="llm-stream">
+                <div class="empty-state">
+                    <i class="fas fa-hourglass-start"></i>
+                    <p>Esperant thinking dels models...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tool Calls -->
+        <section class="panel panel-tools">
+            <div class="panel-header">
+                <i class="fas fa-tools"></i>
+                <h2>Tool Calls</h2>
+                <button class="clear-btn" onclick="clearPanel('tools')">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            <div class="panel-content" id="tools-stream">
+                <div class="empty-state">
+                    <i class="fas fa-hourglass-start"></i>
+                    <p>Esperant tool calls...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Worker Log -->
+        <section class="panel panel-worker">
+            <div class="panel-header">
+                <i class="fas fa-terminal"></i>
+                <h2>Worker Log</h2>
+                <button class="clear-btn" onclick="clearPanel('worker')">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            <div class="panel-content" id="worker-stream">
+                <div class="empty-state">
+                    <i class="fas fa-hourglass-start"></i>
+                    <p>Esperant logs del worker...</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Errors -->
+        <section class="panel panel-errors">
+            <div class="panel-header">
+                <i class="fas fa-exclamation-triangle"></i>
+                <h2>Errors</h2>
+                <button class="clear-btn" onclick="clearPanel('errors')">
+                    <i class="fas fa-trash"></i>
+                </button>
+            </div>
+            <div class="panel-content" id="errors-stream">
+                <div class="empty-state">
+                    <i class="fas fa-check-circle"></i>
+                    <p>Cap error detectat</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="/static/app.js"></script>
+</body>
+</html>
