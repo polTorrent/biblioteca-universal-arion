@@ -1,0 +1,14 @@
+{
+  "id": "1778174520_translate_completar-justine",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducció de 'justine'. L'original té 113766 paraules però la traducció només en té 8169 (7.2% completat). Continua des d'on s'ha quedat seguint EXACTAMENT l'estil existent. IMPORTANT: Verifica amb 'python3 scripts/verificar_traduccio.py' abans de finalitzar.",
+  "metadata": {
+    "obra_path": "/home/jo/biblioteca-universal-arion/obres/narrativa/sade/justine",
+    "original_words": 113766,
+    "traduccio_words": 8169,
+    "ratio": 7.2,
+    "slug": "justine"
+  }
+}
