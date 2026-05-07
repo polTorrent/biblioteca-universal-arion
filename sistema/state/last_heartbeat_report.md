@@ -1,11 +1,17 @@
-📚 **INFORME BIBLIOTECA ARION** — 16:00 07/05/2026
+📚 **INFORME BIBLIOTECA ARION** — 18:00 07/05/2026
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 ## ⚙️ ESTAT DEL WORKER
-❌ INACTIU | 20 tasques avui | 5 pendents | 0 fallides
+❌ INACTIU | 37 tasques avui | 6 pendents | 0 fallides
 
 ## 🔄 TASCA ACTUAL
-⚠️ Cap tasca en execució
+**Tipus:** translate
+**Instrucció:** COMPLETA la traducció de 'panchatantra-llibre-i'. L'original té 40254 paraules però la traducció nom...
+
+## 🔧 OBRES PENDENTS DE CORRECCIÓ
+| Obra | Puntuació | Motiu |
+|------|-----------|-------|
+| vierfache-wurzel | N/A | Revisar: traduït 14200/54414 paraules (2 |
 
 ## 📖 OBRES EN PROGRÉS
 📝 **sobre-la-tranquillitat-de-lanima** (traducció)
@@ -21,17 +27,17 @@
 | Categoria | Hores |
 |-----------|-------|
 | Traduccions pendents | 0.0h |
-| Correccions pendents | 0.0h |
+| Correccions pendents | 0.5h |
 | Validacions | 11.8h |
-| **TOTAL** | **11.8h** (2.0 dies) |
+| **TOTAL** | **12.2h** (2.0 dies) |
 
 ## 📊 RESUM
 | Mètrica | Valor |
 |---------|-------|
 | Total traduccions | 100 |
-| ✅ Validades | 51 |
-| 🔧 Pendents correcció | 0 |
-| 📖 En progres | 49 |
+| ✅ Validades | 47 |
+| 🔧 Pendents correcció | 1 |
+| 📖 En progres | 52 |
 | ⏳ Pendents traducció | 0 |
 
 ## ⚠️ PROBLEMES QUE NECESSITEN SUPERVISIÓ
