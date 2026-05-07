@@ -1,0 +1,16 @@
+{
+  "id": "1778165974_translate_completar-amor-universal",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 60,
+  "instruction": "COMPLETA la traducci\u00f3 de 'amor-universal' (filosofia/mozi). Actualment t\u00e9 nom\u00e9s 58 l\u00ednies (m\u00ednim esperat: 100). Continua la traducci\u00f3 des d'on s'ha quedat seguint exactament l'estil i format existents. Si necessites l'original, revisa original.md a la mateixa carpeta.",
+  "metadata": {
+    "obra_path": "/home/jo/biblioteca-universal-arion/obres/filosofia/mozi/amor-universal",
+    "lines": 58,
+    "category": "filosofia",
+    "author": "mozi",
+    "slug": "amor-universal"
+  },
+  "last_was_plan": true,
+  "retries": 1
+}
