@@ -683,6 +683,10 @@ if tasks:
         if validate_task_result "$TASK_TYPE" "$TASK_ID" "$RESULT" "$CHANGES"; then
             # ── ÈXIT CONFIRMAT ────────────────────────────────────────
             log "✅ $TASK_ID completat (${DURATION}s, $CHANGES fitxers canviats)"
+    # Enviar notificació cada 10 tasques completes
+    if [ $((DONE_TODAY % 10)) -eq 0 ]; then
+        bash "$PROJECT/sistema/automatitzacio/enviar-informe-discord.sh"
+    fi
             log "   Resultat: $(echo "$RESULT" | head -3 | tr '\n' ' ')"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
