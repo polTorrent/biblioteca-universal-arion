@@ -324,18 +324,3 @@ Quedi així, doncs, esbossada i delineada en termes generals la qüestió de l'�
 [ERROR: Venice error: Error (402): {"error":"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit."}
 ]
 
-[ERROR: Venice error: Error (402): {"error":"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit."}
-]
-
-[ERROR: Venice error: Error (402): {"error":"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit."}
-]
-
-[ERROR: Venice error: Error (402): {"error":"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit."}
-]
-
-[ERROR: Venice error: Error (402): {"error":"API key USD spend limit exceeded. Your account may still have USD balance, but this API key has reached its configured USD spending limit."}
-]
-
----
-
-*Traducció de domini públic.*

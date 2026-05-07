@@ -25,6 +25,20 @@ STATE_DIR="$PROJECT/sistema/state"
 MAX_PENDING=5
 MIN_DIEM_RESERVE=2
 
+# ── Dashboard Integration ─────────────────────────────────────────────────────
+DASHBOARD_DIR="$PROJECT/sistema/dashboard"
+LOG_TO_DASHBOARD="$DASHBOARD_DIR/log-to-dashboard.sh"
+
+# Funció per enviar logs al dashboard
+log_to_dashboard() {
+    local tipus="$1"
+    local missatge="$2"
+    
+    if [ -x "$LOG_TO_DASHBOARD" ]; then
+        "$LOG_TO_DASHBOARD" "$tipus" "$missatge"
+    fi
+}
+
 # ── Carregar System Brain (deduplicació + funcions intel·ligents) ────────────
 BRAIN_SCRIPT="$PROJECT/sistema/automatitzacio/system-brain.sh"
 BRAIN_STOPPED_OPENCLAW=false  # Valor per defecte (el brain pot sobreescriure'l)
@@ -756,6 +770,8 @@ check_system_health() {
 # =============================================================================
 log "═══════════════════════════════════════════════════"
 log "💓 HEARTBEAT v5 iniciat (amb supervisió + brain)"
+log_to_dashboard "worker" "=== HEARTBEAT INICIAT ==="
+log_to_dashboard "worker" "Estat: Iniciant supervisió del sistema"
 [ "$BRAIN_LOADED" = true ] && log "🧠 System Brain carregat" || log "⚠️ System Brain NO disponible"
 
 # ── Comprovació de pausa ───────────────────────────────────────────────────
@@ -850,3 +866,6 @@ process_pending_notifications
 
 log "💓 HEARTBEAT v5 completat. Cua: $PENDING → $PENDING_FINAL pendents"
 log "═══════════════════════════════════════════════════"
+log_to_dashboard "worker" "=== HEARTBEAT COMPLETAT ==="
+log_to_dashboard "worker" "Tasques processades: $((PENDING - PENDING_FINAL))"
+log_to_dashboard "worker" "Cua final: $PENDING_FINAL pendents"

@@ -1,0 +1,314 @@
+/* Arion Dashboard - Professional Dark Theme */
+
+:root {
+    --bg-primary: #0f0f23;
+    --bg-secondary: #1a1a2e;
+    --bg-tertiary: #252541;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --accent-blue: #4a9eff;
+    --accent-green: #00d26a;
+    --accent-yellow: #ffc107;
+    --accent-red: #ff4757;
+    --accent-purple: #9b59b6;
+    --accent-orange: #ff7f50;
+    --border-color: #2d2d4a;
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-tertiary) 100%);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--border-color);
+    box-shadow: var(--shadow);
+}
+
+.header-left h1 {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.header-left .subtitle {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--bg-tertiary);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+}
+
+.status-indicator.disconnected {
+    color: var(--accent-red);
+}
+
+.status-indicator.connected {
+    color: var(--accent-green);
+}
+
+.status-indicator i {
+    font-size: 0.8rem;
+}
+
+.clock {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--accent-blue);
+    font-family: 'Courier New', monospace;
+}
+
+/* Status Bar */
+.status-bar {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    background: var(--bg-secondary);
+    border-bottom: 1px solid var(--border-color);
+    overflow-x: auto;
+}
+
+.status-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    background: var(--bg-tertiary);
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    min-width: fit-content;
+}
+
+.status-item i {
+    font-size: 1.5rem;
+    color: var(--accent-blue);
+}
+
+.status-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.status-info .label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+}
+
+.status-info .value {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* Main Content */
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    min-height: calc(100vh - 180px);
+}
+
+@media (max-width: 1200px) {
+    .main-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Panel Common Styles */
+.panel {
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    max-height: 500px;
+}
+
+.panel-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-tertiary);
+    border-radius: 12px 12px 0 0;
+}
+
+.panel-header i {
+    font-size: 1.25rem;
+}
+
+.panel-header h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    flex: 1;
+}
+
+.clear-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    padding: 0.25rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.clear-btn:hover {
+    background: var(--bg-primary);
+    color: var(--accent-red);
+}
+
+.panel-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 0.85rem;
+}
+
+.panel-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.panel-content::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+.panel-content::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+}
+
+.panel-content::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-blue);
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--text-secondary);
+}
+
+.empty-state i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* Panel Specific Colors */
+.panel-hermes .panel-header {
+    color: var(--accent-purple);
+    border-left: 3px solid var(--accent-purple);
+}
+
+.panel-llm .panel-header {
+    color: var(--accent-blue);
+    border-left: 3px solid var(--accent-blue);
+}
+
+.panel-tools .panel-header {
+    color: var(--accent-orange);
+    border-left: 3px solid var(--accent-orange);
+}
+
+.panel-worker .panel-header {
+    color: var(--accent-green);
+    border-left: 3px solid var(--accent-green);
+}
+
+.panel-errors .panel-header {
+    color: var(--accent-red);
+    border-left: 3px solid var(--accent-red);
+}
+
+/* Event Cards */
+.event-card {
+    margin-bottom: 0.75rem;
+    padding: 0.75rem;
+    background: var(--bg-primary);
+    border-radius: 6px;
+    border-left: 3px solid var(--accent-blue);
+}
+
+.event-timestamp {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.event-content {
+    color: var(--text-primary);
+    word-wrap: break-word;
+}
+
+.event-content.thinking {
+    color: var(--accent-yellow);
+}
+
+.event-content.tool-call {
+    color: var(--accent-orange);
+}
+
+.event-content.error {
+    color: var(--accent-red);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.event-card {
+    animation: fadeIn 0.3s ease-out;
+}
