@@ -1,0 +1,14 @@
+{
+  "id": "1778165974_translate_completar-epistola_1",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 60,
+  "instruction": "COMPLETA la traducció de 'epistola_1' (seneca/epistola-1). Actualment té només 24 línies (mínim esperat: 100). Continua la traducció des d'on s'ha quedat seguint exactament l'estil i format existents. Si necessites l'original, revisa original.md a la mateixa carpeta.",
+  "metadata": {
+    "obra_path": "/home/jo/biblioteca-universal-arion/obres/filosofia/seneca/epistola-1/epistola_1",
+    "lines": 24,
+    "category": "seneca",
+    "author": "epistola-1",
+    "slug": "epistola_1"
+  }
+}
