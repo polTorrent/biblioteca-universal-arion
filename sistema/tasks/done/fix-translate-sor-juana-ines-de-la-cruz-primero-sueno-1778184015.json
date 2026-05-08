@@ -1,0 +1,9 @@
+{
+  "id": "fix-translate-sor-juana-ines-de-la-cruz-primero-sueno-1778184015",
+  "type": "fix-translate",
+  "priority": 1,
+  "max_duration": 3600,
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/poesia/sor-juana-ines-de-la-cruz/primero-sueno/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'sor-juana-ines-de-la-cruz' --obra 'primero-sueno'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/sor-juana-ines-de-la-cruz/primero-sueno/ && git commit -m 'fix: traduir/completar sor-juana-ines-de-la-cruz/primero-sueno' && git push",
+  "created": "2026-05-07T22:00:15+02:00",
+  "obra": "obres/poesia/sor-juana-ines-de-la-cruz/primero-sueno"
+}

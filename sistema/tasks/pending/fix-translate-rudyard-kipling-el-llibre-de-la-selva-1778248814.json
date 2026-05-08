@@ -1,0 +1,9 @@
+{
+  "id": "fix-translate-rudyard-kipling-el-llibre-de-la-selva-1778248814",
+  "type": "fix-translate",
+  "priority": 1,
+  "max_duration": 3600,
+  "obra": "obres/narrativa/rudyard-kipling/el-llibre-de-la-selva",
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'rudyard-kipling' --obra 'el-llibre-de-la-selva'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/ && git commit -m 'fix: traduir/completar rudyard-kipling/el-llibre-de-la-selva' && git push",
+  "created": "2026-05-08T16:00:14+02:00"
+}

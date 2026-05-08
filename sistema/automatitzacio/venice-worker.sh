@@ -26,18 +26,71 @@ CONSECUTIVE_ERRORS_FILE="/tmp/worker-consecutive-errors.txt"
 TASK_TIMEOUT=300             # 5 min timeout per tasca (evita gastar DIEM en penjades)
 DONE_RETENTION_DAYS=7        # Dies que es guarden les tasques completades
 IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
-MIN_DIEM=2.0                 # Mínim DIEM per operar (per sota = stop) - deixa marge per comunicació
+MIN_DIEM=3.0                 # Mínim DIEM per operar (per sota = stop) - deixa marge per comunicació
 
 # Model de Venice AI per defecte (per a tasques administratives)
 DEFAULT_MODEL="zai-org-glm-5"
+MODELS_CONF="$PROJECT_DIR/sistema/config/models.conf"
 
-# ── Selector de models segons tipus de tasca ───────────────────────────────────
-# MAI utilitzar deepseek per a traduccions! Només per a fetch.
-# MAI utilitzar glm-5 per a traduccions! Només per a metadata/glossaris.
+# ── Selector de models (llegeix de models.conf amb fallback hardcoded) ──────
+# Format models.conf: <grup>:<tipus> = <model> timeout=<segons>
+lookup_model() {
+    local group="$1"
+    local subtype="${2:-default}"
+    local conf_file="$3"
+    
+    if [ -f "$conf_file" ]; then
+        # Buscar <group>:<subtype> o <group>:default
+        local model
+        model=$(grep -E "^${group}:${subtype}[[:space:]]*=" "$conf_file" 2>/dev/null | head -1 | sed 's/^[^=]*=[[:space:]]*\([^[:space:]]*\).*/\1/')
+        if [ -z "$model" ] && [ "$subtype" != "default" ]; then
+            model=$(grep -E "^${group}:default[[:space:]]*=" "$conf_file" 2>/dev/null | head -1 | sed 's/^[^=]*=[[:space:]]*\([^[:space:]]*\).*/\1/')
+        fi
+        [ -n "$model" ] && echo "$model" && return 0
+    fi
+    return 1  # No trobat → usar fallback
+}
+
+lookup_timeout() {
+    local group="$1"
+    local subtype="${2:-default}"
+    local conf_file="$3"
+    
+    if [ -f "$conf_file" ]; then
+        local timeout
+        timeout=$(grep -E "^${group}:${subtype}[[:space:]]*=" "$conf_file" 2>/dev/null | head -1 | grep -oP 'timeout=\K\d+')
+        if [ -z "$timeout" ] && [ "$subtype" != "default" ]; then
+            timeout=$(grep -E "^${group}:default[[:space:]]*=" "$conf_file" 2>/dev/null | head -1 | grep -oP 'timeout=\K\d+')
+        fi
+        [ -n "$timeout" ] && echo "$timeout" && return 0
+    fi
+    return 1
+}
+
+detect_genre() {
+    local text="$1"
+    local genre="default"
+
+    if echo "$text" | grep -qiE "obres/poesia|poes[ií]a|sonets?|poema|versos"; then
+        genre="poesia"
+    elif echo "$text" | grep -qiE "obres/teatre|teatre|drama|acte|escena|strindberg|ibsen|shakespeare"; then
+        genre="teatre"
+    elif echo "$text" | grep -qiE "obres/filosofia|filosof[ií]a|cl[àa]ssic|grec|llat[ií]|plato|aristot|socrates|epicte|marc aureli|seneca|nietzsche|schopenhauer"; then
+        genre="filosofia"
+    elif echo "$text" | grep -qiE "obres/oriental|oriental|s[àa]nscrit|persa|xin[eè]s|japon[eè]s|rumi|panchatantra|vishnu-sharma"; then
+        genre="oriental"
+    elif echo "$text" | grep -qiE "obres/narrativa|novel·la|narrativa|assaig|contes|relat|sade|kipling|petroni"; then
+        genre="narrativa"
+    fi
+
+    echo "$genre"
+}
+
 select_model() {
     local task_type="$1"
     local task_instruction="$2"
     local model_recomanat="$3"
+    local result
     
     # Si la tasca té un model recomanat, usar-lo
     if [ -n "$model_recomanat" ] && [ "$model_recomanat" != "null" ]; then
@@ -45,31 +98,71 @@ select_model() {
         return 0
     fi
     
-    # Seleccionar segons tipus de tasca
     case "$task_type" in
         translate|translation|retranslate|fix-translate|fix-translation)
-            # Detectar gènere per paraules clau
-            if echo "$task_instruction" | grep -qiE "filosof[ií]a|poes[ií]a|teatre|cl[àa]ssic|grec|llat[ií]|plato|aristot|socrates|epicte|marc aureli|seneca"; then
-                echo "claude-opus-4-7"
-            elif echo "$task_instruction" | grep -qiE "novel·la|narrativa|assaig|contes|relat"; then
-                echo "claude-sonnet-4-6"
-            else
-                # Per defecte per a traduccions: Opus per seguretat
-                echo "claude-opus-4-7"
+            local genre
+            if [ "$task_type" = "fix-translate" ] && echo "$task_instruction" | grep -qiE "NO_ORIGINAL|ORIGINAL_MASSA_CURT|ORIGINAL_PLACEHOLDER|original.md" && ! echo "$task_instruction" | grep -qiE "NO_TRADUCCIO|TRADUCCIO_INCOMPLETA|TRADUCCIO_PLACEHOLDER|traduccio.md"; then
+                result=$(lookup_model "fetch" "default" "$MODELS_CONF")
+                echo "${result:-deepseek-v3.2}"
+                return 0
             fi
+            genre=$(detect_genre "$task_instruction")
+            
+            result=$(lookup_model "translate" "$genre" "$MODELS_CONF")
+            [ -n "$result" ] && echo "$result" && return 0
+            
+            # Fallback hardcoded
+            case "$genre" in
+                filosofia|poesia|teatre) echo "claude-opus-4-7" ;;
+                narrativa|assaig|oriental) echo "claude-sonnet-4-6" ;;
+                *) echo "claude-opus-4-7" ;;
+            esac
             ;;
-        fetch|investigar)
-            echo "deepseek-v3.2"
+        fetch|fix-fetch|investigar)
+            result=$(lookup_model "fetch" "default" "$MODELS_CONF")
+            echo "${result:-deepseek-v3.2}"
             ;;
-        review|supervisio|validacio)
-            echo "gemini-3-1-pro-preview"
+        review|supervision|supervisio|validacio)
+            result=$(lookup_model "review" "default" "$MODELS_CONF")
+            echo "${result:-gemini-3-1-pro-preview}"
             ;;
-        glossari|metadata|web|test)
-            echo "glm-5"
+        glossari|metadata|web|test|fix-metadata|fix-glossari|fix-portada|fix-llengua|fix-notes|fix-web|publish|maintenance|code-review)
+            result=$(lookup_model "admin" "default" "$MODELS_CONF")
+            echo "${result:-zai-org-glm-5}"
             ;;
         *)
-            # Per defecte per a tasques desconegudes
             echo "$DEFAULT_MODEL"
+            ;;
+    esac
+}
+
+# Obtenir timeout segons tipus de tasca i gènere
+get_task_timeout() {
+    local task_type="$1"
+    local task_instruction="$2"
+    local timeout
+    
+    case "$task_type" in
+        translate|translation|retranslate|fix-translate|fix-translation)
+            local genre
+            genre=$(detect_genre "$task_instruction")
+            timeout=$(lookup_timeout "translate" "$genre" "$MODELS_CONF")
+            echo "${timeout:-300}"
+            ;;
+        fetch|fix-fetch|investigar)
+            timeout=$(lookup_timeout "fetch" "default" "$MODELS_CONF")
+            echo "${timeout:-180}"
+            ;;
+        review|supervision|supervisio|validacio)
+            timeout=$(lookup_timeout "review" "default" "$MODELS_CONF")
+            echo "${timeout:-300}"
+            ;;
+        glossari|metadata|web|test|fix-metadata|fix-glossari|fix-portada|fix-llengua|fix-notes|fix-web|publish|maintenance|code-review)
+            timeout=$(lookup_timeout "admin" "default" "$MODELS_CONF")
+            echo "${timeout:-120}"
+            ;;
+        *)
+            echo "$TASK_TIMEOUT"
             ;;
     esac
 }
@@ -114,16 +207,10 @@ check_diem_and_maybe_stop() {
 
 notify_discord_diem_stop() {
     local balance="$1"
-    local message="🛑 **STOP GLOBAL ACTIVAT**
-
-💰 Saldo DIEM: **$balance** (mínim: $MIN_DIEM)
-⏰ Aturat: $(date '+%Y-%m-%d %H:%M:%S %Z')
-
-El sistema romandrà aturat fins al reset de crèdits a les 00:00 UTC.
-El worker es reactivarà automàticament."
-    
-    # Intentar enviar per Discord
-    hermes chat --platform discord --chat-id "1469504522614476953" "$message" 2>/dev/null || true
+    local notificar="$PROJECT_DIR/sistema/automatitzacio/notificar.sh"
+    if [ -x "$notificar" ]; then
+        bash "$notificar" critical "DIEM CRÍTIC: $balance (mínim: $MIN_DIEM). Sistema aturat fins al reset (00:00 UTC)."
+    fi
 }
 
 # ── Executar tasca de traducció amb script dedicat ─────────────────────────────
@@ -215,7 +302,7 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $1" | tee -a "$LOG"; }
 notify_discord_pause() {
     local errors="$1"
     local pause_secs="$2"
-    local heartbeat_md="$PROJECT/sistema/state/HEARTBEAT.md"
+    local heartbeat_md="$PROJECT_DIR/sistema/state/HEARTBEAT.md"
     if [ -f "$heartbeat_md" ]; then
         local msg="⚠️ WORKER PAUSA: $errors errors consecutius detectats. Pausa de ${pause_secs}s activada a $(date '+%H:%M:%S')"
         echo -e "\n## Worker Alert ($(date '+%Y-%m-%d %H:%M:%S'))\n$msg" >> "$heartbeat_md"
@@ -246,8 +333,6 @@ release_lock() {
     done
     log "🛑 Worker aturat (PID $$)"
 }
-
-trap release_lock EXIT INT TERM
 
 # ── Rotació de done/ ──────────────────────────────────────────────────────────
 rotate_done() {
@@ -280,7 +365,37 @@ json_field() {
 # ── Comprovar si hi ha canvis reals al repositori ─────────────────────────────
 check_real_changes() {
     cd "$PROJECT_DIR"
-    # Comprovar fitxers nous o modificats (tracked + untracked)
+
+    if [ -n "${GIT_BEFORE:-}" ] && [ "$GIT_BEFORE" != "none" ]; then
+        local git_now
+        git_now=$(git rev-parse HEAD 2>/dev/null || echo "none")
+        if [ "$git_now" != "$GIT_BEFORE" ]; then
+            echo 1
+            return 0
+        fi
+    fi
+
+    # Si el repo ja estava brut abans de la tasca, només compta canvis nous
+    # respecte al snapshot pre-execució. Això evita validar tasques només perquè
+    # hi havia centenars de canvis pendents d'abans.
+    if [ -n "${WORKER_BASELINE_DIFF:-}" ] && [ -f "$WORKER_BASELINE_DIFF" ]; then
+        local current_diff current_untracked
+        current_diff=$(mktemp)
+        current_untracked=$(mktemp)
+        git diff --binary 2>/dev/null > "$current_diff"
+        git ls-files --others --exclude-standard 2>/dev/null | sort > "$current_untracked"
+
+        if ! cmp -s "$WORKER_BASELINE_DIFF" "$current_diff" || ! cmp -s "$WORKER_BASELINE_UNTRACKED" "$current_untracked"; then
+            rm -f "$current_diff" "$current_untracked"
+            echo 1
+            return 0
+        fi
+        rm -f "$current_diff" "$current_untracked"
+        echo 0
+        return 0
+    fi
+
+    # Fallback: comprovar fitxers nous o modificats (tracked + untracked)
     local changes=$(git diff --name-only 2>/dev/null | wc -l)
     local new_files=$(git ls-files --others --exclude-standard 2>/dev/null | wc -l)
     local staged=$(git diff --cached --name-only 2>/dev/null | wc -l)
@@ -344,19 +459,19 @@ validate_task_result() {
     fi
     
     # Tasques de traducció: comprovar que el directori de l'obra existeix
-    if [ "$task_type" = "translate" ] || [ "$task_type" = "retranslation" ]; then
+    if echo "$task_type" | grep -qiE "^(translate|translation|retranslate|fix-translate|fix-translation)$"; then
         log "   ✗ Validació: Traducció sense fitxers nous creats"
         return 1
     fi
 
     # Tasques de fetch: comprovar que s'ha creat original.md
-    if [ "$task_type" = "fetch" ]; then
+    if echo "$task_type" | grep -qiE "^(fetch|fix-fetch)$"; then
         log "   ✗ Validació: Fetch sense fitxers nous creats (original.md no generat)"
         return 1
     fi
 
     # Tasques de fix: comprovar canvis
-    if [ "$task_type" = "fix" ]; then
+    if echo "$task_type" | grep -qiE "^(fix|fix-metadata|fix-glossari|fix-portada|fix-llengua|fix-notes|fix-web)$"; then
         log "   ✗ Validació: Fix sense canvis detectats"
         return 1
     fi
@@ -467,9 +582,17 @@ $original
 EOF
 }
 
+
+# Si ARION_WORKER_TEST_MODE=1, només carrega funcions i surt. Útil per a proves
+# sense arrencar el bucle infinit del worker.
+if [ "${ARION_WORKER_TEST_MODE:-0}" = "1" ]; then
+    return 0 2>/dev/null || exit 0
+fi
+
 # =============================================================================
 # MAIN LOOP
 # =============================================================================
+trap release_lock EXIT INT TERM
 acquire_lock
 check_diem_and_maybe_stop  # Comprovar DIEM abans de processar
 log "🚀 Venice Worker iniciat (PID $$) — Selectorde Models Intel·ligent"
@@ -477,8 +600,20 @@ log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, timeout=
 log "   Models: traduccions→claude-opus/sonnet, fetch→deepseek-v3.2, metadata→glm-5"
 log "   Validació post-execució + detecció plans + instruccions reforçades"
 
+# ── Healthcheck ──────────────────────────────────────────────────────────────
+HEALTH_ITER=0
+
 while true; do
     daily_summary
+    
+    # ── Healthcheck periòdic (cada ~10 iteracions) ────────────────────────
+    HEALTH_ITER=$((HEALTH_ITER + 1))
+    if [ "$HEALTH_ITER" -ge 10 ]; then
+        HEALTH_ITER=0
+        if python3 -c "import sys; sys.exit(0)" 2>/dev/null; then
+            log "💚 Healthcheck OK (iteració $(($HEALTH_ITER + 10)))"
+        fi
+    fi
 
     # ── Safety: massa errors consecutius (≥3) ─────────────────────────────
     if [ $CONSECUTIVE_FAILS -ge $MAX_CONSECUTIVE_FAILS ]; then
@@ -526,6 +661,21 @@ if tasks:
     MODEL_RECOMANAT=$(json_field "$TASK" "model_recomanat")
     # Llegir ruta de l'obra (per a tasques de traducció)
     OBRA=$(json_field "$TASK" "obra")
+    if [ -z "$OBRA" ]; then
+        OBRA=$(json_field "$TASK" "output")
+        OBRA="${OBRA%/original.md}"
+    fi
+    if [ -z "$OBRA" ]; then
+        OBRA=$(python3 -c "
+import json, sys
+try:
+    d=json.load(open(sys.argv[1]))
+    p=d.get('params') or {}
+    print(p.get('obra') or p.get('obra_dir') or p.get('path') or '')
+except Exception:
+    print('')
+" "$TASK")
+    fi
     RETRIES=$(json_field "$TASK" "retries")
     RETRIES=${RETRIES:-0}
     TASK_TYPE=${TASK_TYPE:-unknown}
@@ -536,9 +686,15 @@ if tasks:
         continue
     fi
 
+    MODEL_CONTEXT="$INSTRUCTION $OBRA"
+
     # ── Seleccionar model segons tipus de tasca ──────────────────────────────
-    VENICE_MODEL=$(select_model "$TASK_TYPE" "$INSTRUCTION" "$MODEL_RECOMANAT")
+    VENICE_MODEL=$(select_model "$TASK_TYPE" "$MODEL_CONTEXT" "$MODEL_RECOMANAT")
     log "📊 Model seleccionat: $VENICE_MODEL (tipus=$TASK_TYPE, recomanat=$MODEL_RECOMANAT)"
+    
+    # ── Timeout progressiu segons tipus de tasca ────────────────────────────
+    TASK_TIMEOUT=$(get_task_timeout "$TASK_TYPE" "$MODEL_CONTEXT")
+    log "⏱️ Timeout: ${TASK_TIMEOUT}s"
 
     TASK_BASENAME=$(basename "$TASK")
     log "═══════════════════════════════════════════════════════════════════════════"
@@ -564,6 +720,11 @@ if tasks:
     # Snapshot de l'estat git ABANS d'executar
     cd "$PROJECT_DIR"
     GIT_BEFORE=$(git rev-parse HEAD 2>/dev/null || echo "none")
+    WORKER_BASELINE_DIFF=$(mktemp)
+    WORKER_BASELINE_UNTRACKED=$(mktemp)
+    export WORKER_BASELINE_DIFF WORKER_BASELINE_UNTRACKED
+    git diff --binary 2>/dev/null > "$WORKER_BASELINE_DIFF"
+    git ls-files --others --exclude-standard 2>/dev/null | sort > "$WORKER_BASELINE_UNTRACKED"
 
     # ── Determinar instrucció (reforçada si és retry per pla) ─────────
     if [ "$RETRIES" -gt 0 ]; then
@@ -590,20 +751,37 @@ if tasks:
             IS_CONTINUAR="true"
         fi
         
+        # Si és una reparació d'original sense traducció a fer, no cridis el traductor.
+        if [ "$TASK_TYPE" = "fix-translate" ] && echo "$INSTRUCTION" | grep -qiE "NO_ORIGINAL|ORIGINAL_MASSA_CURT|ORIGINAL_PLACEHOLDER|original.md" && ! echo "$INSTRUCTION" | grep -qiE "NO_TRADUCCIO|TRADUCCIO_INCOMPLETA|TRADUCCIO_PLACEHOLDER|traduccio.md"; then
+            log "   📥 fix-translate només requereix original. Executant instrucció local amb deepseek/fetch si cal."
+            local_fix_instruction=$(printf '%s' "$INSTRUCTION" | sed 's#^cd ~/biblioteca-universal-arion && ##')
+            RESULT=$(cd "$PROJECT_DIR" && timeout "$TASK_TIMEOUT" bash -lc "$local_fix_instruction" 2>&1)
+            EXIT=$?
+        else
         # Verificar que tenim la ruta de l'obra
         if [ -z "$OBRA" ]; then
             log "   ⚠️ Error: Tasca de traducció sense camp 'obra'. Intentant extraure de la instrucció..."
             # Intentar extraure la ruta de la instrucció
-            OBRA=$(echo "$INSTRUCTION" | grep -oE "obres/[^ ]+" | head -1)
+            OBRA=$(echo "$INSTRUCTION" | grep -oE "obres/[^[:space:]'\"]+" | head -1)
+        fi
+
+        # Si la ruta conté wildcards, expandir-la aquí (no ho farà traduir_venice.py)
+        if [ -n "$OBRA" ] && [[ "$OBRA" == *"*"* ]]; then
+            expanded=$(compgen -G "$PROJECT_DIR/$OBRA" | head -1)
+            if [ -n "$expanded" ]; then
+                OBRA="${expanded#$PROJECT_DIR/}"
+                log "   🔎 Ruta expandida: $OBRA"
+            fi
         fi
         
         if [ -n "$OBRA" ]; then
             RESULT=$(run_translate_task "$OBRA" "$VENICE_MODEL" "$IS_CONTINUAR")
             EXIT=$?
         else
-            log "   ❌ Error: No s'ha pogut determinar la ruta de l'obra. Cridant Venice directament..."
-            RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
-            EXIT=$?
+            log "   ❌ Error: no s'ha pogut determinar la ruta de l'obra. Fallant sense cridar Venice directament (evita gastar DIEM en text pur)."
+            RESULT="ERROR: tasca de traducció sense camp obra ni ruta detectable"
+            EXIT=2
+        fi
         fi
     elif echo "$TASK_TYPE" | grep -qiE "fetch|fix-fetch"; then
         # ── Tasca de fetch: descarregar URL ──────────────────────────────
@@ -618,9 +796,19 @@ if tasks:
             FETCH_URL=$(echo "$INSTRUCTION" | grep -oE 'https?://[^[:space:]"'"'"']+' | head -1)
         fi
         
-        # Si no hi ha output, usar obrap.path/original.md
+        # Si no hi ha output, usar obra/original.md
         if [ -z "$FETCH_OUTPUT" ] && [ -n "$OBRA" ]; then
             FETCH_OUTPUT="$OBRA/original.md"
+        fi
+
+        # Expandir wildcards d'output abans de passar a scripts Python
+        if [ -n "$FETCH_OUTPUT" ] && [[ "$FETCH_OUTPUT" == *"*"* ]]; then
+            fetch_dir_pattern="${FETCH_OUTPUT%/original.md}"
+            expanded=$(compgen -G "$PROJECT_DIR/$fetch_dir_pattern" | head -1)
+            if [ -n "$expanded" ]; then
+                FETCH_OUTPUT="${expanded#$PROJECT_DIR/}/original.md"
+                log "   🔎 Output expandit: $FETCH_OUTPUT"
+            fi
         fi
         
         if [ -n "$FETCH_URL" ]; then
@@ -629,9 +817,12 @@ if tasks:
             RESULT=$(run_fetch_task "$FETCH_URL" "$FETCH_OUTPUT")
             EXIT=$?
         else
-            log "   ⚠️ No s'ha trobat URL a la tasca. Intentant amb Venice..."
-            log "   ⚠️NOTA: Venice no pot descarregar URLs. La tasca probablement fallarà."
-            RESULT=$(run_task "$EFFECTIVE_INSTRUCTION")
+            # Les tasques fix-fetch generades per l'auditoria són comandes locals
+            # amb cercador_fonts_v2.py, no prompts per a Venice. Executa-les localment
+            # i evita gastar DIEM en un model de text que no pot descarregar URLs.
+            log "   ⚙️ Sense URL directa. Executant instrucció local de fetch amb timeout ${TASK_TIMEOUT}s..."
+            local_fetch_instruction=$(printf '%s' "$INSTRUCTION" | sed 's#^cd ~/biblioteca-universal-arion && ##')
+            RESULT=$(cd "$PROJECT_DIR" && timeout "$TASK_TIMEOUT" bash -lc "$local_fetch_instruction" 2>&1)
             EXIT=$?
         fi
     else
@@ -641,6 +832,11 @@ if tasks:
     fi
     END_TIME=$(date +%s)
     DURATION=$(( END_TIME - START_TIME ))
+
+    cleanup_baseline() {
+        rm -f "${WORKER_BASELINE_DIFF:-}" "${WORKER_BASELINE_UNTRACKED:-}" 2>/dev/null || true
+        unset WORKER_BASELINE_DIFF WORKER_BASELINE_UNTRACKED
+    }
 
     # ── Rate limit → pausar, tornar tasca a pending ──────────────────
     if [ $EXIT -eq 99 ] || echo "$RESULT" | grep -q "RATE_LIMIT_HIT"; then
@@ -683,14 +879,14 @@ if tasks:
         if validate_task_result "$TASK_TYPE" "$TASK_ID" "$RESULT" "$CHANGES"; then
             # ── ÈXIT CONFIRMAT ────────────────────────────────────────
             log "✅ $TASK_ID completat (${DURATION}s, $CHANGES fitxers canviats)"
-    # Enviar notificació cada 10 tasques completes
-    if [ $((DONE_TODAY % 10)) -eq 0 ]; then
-        bash "$PROJECT/sistema/automatitzacio/enviar-informe-discord.sh"
-    fi
             log "   Resultat: $(echo "$RESULT" | head -3 | tr '\n' ' ')"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
             reset_consecutive_errors
+            DONE_TODAY_COUNT=$(find "$TASKS_DIR/done/" -name "*.json" -newermt "$(date '+%Y-%m-%d')" -type f 2>/dev/null | wc -l)
+            if [ "$DONE_TODAY_COUNT" -gt 0 ] && [ $((DONE_TODAY_COUNT % 10)) -eq 0 ] && [ -x "$PROJECT_DIR/sistema/automatitzacio/enviar-informe-discord.sh" ]; then
+                bash "$PROJECT_DIR/sistema/automatitzacio/enviar-informe-discord.sh" || true
+            fi
             sleep $COOLDOWN_OK
         else
             # ── PLA SENSE ACCIÓ: retry amb instrucció reforçada ───────

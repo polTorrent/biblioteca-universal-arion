@@ -1,0 +1,2970 @@
+{
+  "translate_epistola-1": {
+    "events": [
+      {
+        "timestamp": 1772106888.5957232,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772110480.6614275,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772117570.0033453,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772122811.0167499,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772131831.1390955,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772135412.33517,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139012.2004368,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_crito": {
+    "events": [
+      {
+        "timestamp": 1772106888.7068615,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772110480.770643,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772117570.116647,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772122811.1274612,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772130013.015486,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772137212.8293147,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139012.351276,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_meditacions": {
+    "events": [
+      {
+        "timestamp": 1772106888.8156838,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772110480.8825102,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772117570.2248018,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772122811.2351806,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772130013.126479,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772135412.4542446,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139012.4930992,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772142614.3911874,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772149812.827574,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_la-metamorfosi": {
+    "events": [
+      {
+        "timestamp": 1772106888.925932,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772108679.84757,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772110480.990644,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772122811.3431444,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772125203.1788101,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772126411.6355853,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772130013.2479408,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772131831.2602842,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772133614.2490427,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772135412.562961,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772137212.9442832,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139012.6651149,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772140813.9139066,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_tao-te-king": {
+    "events": [
+      {
+        "timestamp": 1772106889.0363164,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772108679.9948525,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772122811.4528465,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772124611.7766116,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772126411.7459388,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772130013.3738956,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772131831.3702457,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772132403.0816712,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772135412.6729817,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772137213.0532846,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139012.825259,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139603.1448727,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772140814.067268,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772149812.9457922,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "publish_web-health": {
+    "events": [
+      {
+        "timestamp": 1772106889.9136355,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "implement-feature_portades": {
+    "events": [
+      {
+        "timestamp": 1772106890.1134598,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_aurora": {
+    "events": [
+      {
+        "timestamp": 1772124611.5552092,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fix_": {
+    "events": [
+      {
+        "timestamp": 1772558127.1071496,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772558127.2625062,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772731291.3706353,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772858407.718021,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772860410.1644506,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772860552.7151065,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772869854.4512234,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772879467.106669,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772924386.8357224,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773001261.8460457,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773054002.782892,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773061202.3815362,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773154802.5395813,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773200175.070851,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773387611.473562,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773424434.9810624,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773512605.9207852,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773571281.2967784,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773590277.7583537,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773622802.644767,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_10-sonets": {
+    "events": [
+      {
+        "timestamp": 1772130013.4851809,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772132403.1973717,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772133614.3686197,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772135412.7854373,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772139603.2957616,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772140814.233895,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "implement-feature_epub": {
+    "events": [
+      {
+        "timestamp": 1772149813.9642375,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_notes-del-subsol": {
+    "events": [
+      {
+        "timestamp": 1772151613.5926964,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772153412.5934823,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772157013.544398,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_20-poemes-les-flors-del-mal": {
+    "events": [
+      {
+        "timestamp": 1772151613.7078419,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772153412.7059147,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsv2refinador_iteratiupy-imports-bugs-typin": {
+    "events": [
+      {
+        "timestamp": 1772151613.8766086,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsv2traductor_enriquitpy-imports-bugs-typin": {
+    "events": [
+      {
+        "timestamp": 1772151613.9988925,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "publish_python3-scriptsbuildpy": {
+    "events": [
+      {
+        "timestamp": 1773518129.2687085,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773523814.4166908,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773532902.8242214,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773538388.4624743,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773543603.1771533,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773543883.107559,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773545722.794558,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773550804.003655,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773556564.8137887,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773562051.2055666,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773563885.5393507,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773569433.1717327,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773571282.1461008,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773572402.8303623,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773574946.4757514,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773579602.9951527,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773590278.3344545,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773615603.6175008,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773622803.5399272,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773627284.6393952,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsv2pipeline_v2py-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1772153413.0338593,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsdebugdebug_orchestratorpy-imports-bugs-ty": {
+    "events": [
+      {
+        "timestamp": 1772153413.1677938,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsdebugbug_reproducerpy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772154003.3020952,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsdebugbug_fixerpy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1772154003.42348,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsdebug__main__py-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1772154003.5421114,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsvenice_clientpy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772155217.626762,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772760026.2723591,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772887198.4445012,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentstraductor_classicpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772155217.749656,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772760026.3991003,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsportadistapy-imports-bugs-typing-error-ha": {
+    "events": [
+      {
+        "timestamp": 1772155217.9032083,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsutilsjson_parserpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772155218.0469034,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentscercador_fontspy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1772155218.2018795,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772760026.5485625,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772887355.8004358,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptspost_traducciopy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1772157014.0235932,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772761887.356267,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772887539.0735154,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_enchiridion_finalpy-imports-bugs-ty": {
+    "events": [
+      {
+        "timestamp": 1772157014.144543,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772617549.5358922,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772887777.9975746,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_montaigne_amistatpy-imports-bugs-": {
+    "events": [
+      {
+        "timestamp": 1772157014.264336,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772761887.516006,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772895614.4540863,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsgenerar_notes_txekhovpy-imports-bugs-typi": {
+    "events": [
+      {
+        "timestamp": 1772157014.395565,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772761887.6814218,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772902815.1147213,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsdashboard_serverpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772158816.564975,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772763688.358176,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772908542.289774,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_crito_perseuspy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772158816.686454,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772617549.705683,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_meditacionspy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772158816.8087792,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772763688.4968581,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsdiagnosticar_pipelinepy-imports-bugs-typi": {
+    "events": [
+      {
+        "timestamp": 1772158816.9337106,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772763688.6239505,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772924399.1135354,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_notes-del-subsol": {
+    "events": [
+      {
+        "timestamp": 1772160614.14979,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772877168.6860368,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773578627.2658505,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptscercador_fonts_v2py-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772160614.781816,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_crito_wikisourcepy-imports-bugs-typ": {
+    "events": [
+      {
+        "timestamp": 1772160614.9074728,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772617549.853907,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772926243.6248257,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptscompile_taopy-imports-bugs-typing-error-": {
+    "events": [
+      {
+        "timestamp": 1772160615.0271986,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772765486.6149015,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772928137.2894354,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_sade_justinepy-imports-bugs-typin": {
+    "events": [
+      {
+        "timestamp": 1772160615.1482782,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772765486.7417789,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_ma_all_bookspy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772161203.7585633,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772617549.9948175,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772928137.6147602,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_templatepy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772161203.8802254,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_ma_greekpy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1772161204.0007865,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772619326.1575904,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772928231.5828457,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_marcus_aureliuspy-imports-bugs-typi": {
+    "events": [
+      {
+        "timestamp": 1772161204.1236248,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772619326.2738554,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772928231.7853105,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptspublicar_webpy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772162412.7600312,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772767273.5934834,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_enchiridionpy-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772162412.88224,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772619326.4024835,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772934085.8429053,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_apologiapy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772162413.004829,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772767273.7331555,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_bartleby_melvillepy-imports-bugs-": {
+    "events": [
+      {
+        "timestamp": 1772162413.1272793,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772767273.943832,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_sala_numero_6py-imports-bugs-typi": {
+    "events": [
+      {
+        "timestamp": 1772164211.086786,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772769073.2620273,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsutilsmetadata_utilspy-imports-bugs-typin": {
+    "events": [
+      {
+        "timestamp": 1772164211.2142472,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772769073.3903406,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsgenerar_portadespy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772164211.3713546,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772769073.5503633,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_jigokuhenpy-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772164211.4947429,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772769073.6768987,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstest_pipeline_completpy-imports-bugs-typi": {
+    "events": [
+      {
+        "timestamp": 1772164211.6171162,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772769073.806519,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptstraduir_retrat_oval_poepy-imports-bugs-ty": {
+    "events": [
+      {
+        "timestamp": 1772166012.563189,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772770877.0064435,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscorrector_linguisticpy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772166012.7026944,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772770877.1462247,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilsmetricspy-imports-bugs-typing-error-handli": {
+    "events": [
+      {
+        "timestamp": 1772166012.8256989,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772770877.2752223,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilsdashboardpy-imports-bugs-typing-error-hand": {
+    "events": [
+      {
+        "timestamp": 1772166012.9506662,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772770877.4026365,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilsdetector_calcspy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772166013.0728087,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772770877.533204,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilsvalidatorspy-imports-bugs-typing-error-han": {
+    "events": [
+      {
+        "timestamp": 1772167812.0013928,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772772673.4633725,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_llatipy-imports-bugs-t": {
+    "events": [
+      {
+        "timestamp": 1772167812.1270027,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_anglespy-imports-bugs-": {
+    "events": [
+      {
+        "timestamp": 1772167812.2507405,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772772673.6280339,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_alemanypy-imports-bugs": {
+    "events": [
+      {
+        "timestamp": 1772167812.3733044,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772772673.75866,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_xinespy-imports-bugs-t": {
+    "events": [
+      {
+        "timestamp": 1772167812.4975083,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772772673.8896773,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_grecpy-imports-bugs-ty": {
+    "events": [
+      {
+        "timestamp": 1772168403.528609,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsbasepy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772168403.6547856,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_francespy-imports-bugs": {
+    "events": [
+      {
+        "timestamp": 1772168403.7902284,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_ruspy-imports-bugs-typ": {
+    "events": [
+      {
+        "timestamp": 1772168403.9135897,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_japonespy-imports-bugs": {
+    "events": [
+      {
+        "timestamp": 1772168404.0353482,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscalcs_pluginsplugin_arabpy-imports-bugs-ty": {
+    "events": [
+      {
+        "timestamp": 1772169610.9433575,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772774473.0618556,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilscheckpointerpy-imports-bugs-typing-error-h": {
+    "events": [
+      {
+        "timestamp": 1772169611.0674167,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772774473.1918147,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilstranslation_loggerpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772169611.1907918,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772774473.3179822,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilsdebug_helperpy-imports-bugs-typing-error-h": {
+    "events": [
+      {
+        "timestamp": 1772169611.312871,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772774473.4431522,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_error-no-sha-pogut-obtenir-originalmd": {
+    "events": [
+      {
+        "timestamp": 1773476001.7731354,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773485228.789997,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773486002.6435158,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773492564.0542965,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773499802.9808707,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773505238.357619,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773508905.3226817,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773510763.720505,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773512606.5487075,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773514455.9045463,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773518128.788231,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773523813.8823183,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773532902.3288503,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773538388.0422013,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773543602.7546713,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773543882.7175543,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773545722.408059,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773550803.573489,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773556564.3959248,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773573076.659938,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_seneca_epistola_1": {
+    "events": [
+      {
+        "timestamp": 1772185298.5675466,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772185811.757695,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_cd-biblioteca-universal-arion--python3-scriptstraduir_p": {
+    "events": [
+      {
+        "timestamp": 1772950560.777576,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772957805.573213,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772966801.7939968,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772967602.7431629,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772968656.2861555,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772979551.1950572,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773001262.4617126,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773001355.3851326,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773001417.0061684,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773018508.5971437,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773018558.9517596,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773018607.8643622,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773046802.8230739,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773061202.8402104,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773133203.5708303,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773140402.9490168,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773154802.985843,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773160021.5060618,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773183603.2702608,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773200175.5348203,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_baudelairepy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772185811.2148035,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772619326.5853975,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_20-poemes-les-flors-del-mal": {
+    "events": [
+      {
+        "timestamp": 1772210726.6685033,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772212527.9055204,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772214321.4076583,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772866147.603714,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_cicero_laelius_de_amicitia": {
+    "events": [
+      {
+        "timestamp": 1772655337.1459146,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772664270.544951,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772671541.4818542,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772678904.6055026,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772694018.065181,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772702403.5124636,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772709605.9986227,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772718607.58457,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772725816.4960377,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772733070.8587534,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772744404.107265,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772751604.278315,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772760027.3657494,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772767274.550766,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772776276.5368087,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772785277.1445777,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772794294.4801853,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772802003.491164,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772810481.600294,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772817683.046502,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_laelius-de-amicitia": {
+    "events": [
+      {
+        "timestamp": 1772228750.783158,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772859602.988458,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773560203.5493574,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_froken-julie-la-senyoreta-julia": {
+    "events": [
+      {
+        "timestamp": 1772255721.9005082,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_canti-seleccio-20-poemes": {
+    "events": [
+      {
+        "timestamp": 1772262002.1987698,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_descarregar_froken_juliepy-imports-bugs-": {
+    "events": [
+      {
+        "timestamp": 1772267940.1311166,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_rubaiyat-seleccio-75-quartetes": {
+    "events": [
+      {
+        "timestamp": 1772273337.4555671,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_oku-no-hosomichi-el-cami-estret-cap-al-nord-profund": {
+    "events": [
+      {
+        "timestamp": 1772278738.3882482,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772877250.3803587,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "maintenance_manteniment-setmanal-1-neteja-zoneidentifier-2-verifica": {
+    "events": [
+      {
+        "timestamp": 1772319603.4738543,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773008737.760806,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "implement-feature_search": {
+    "events": [
+      {
+        "timestamp": 1772410533.963645,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "implement-feature_retrats": {
+    "events": [
+      {
+        "timestamp": 1772419534.750675,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsgenerar_retratspy-imports-bugs-typing-er": {
+    "events": [
+      {
+        "timestamp": 1772420403.1268837,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772938814.2138858,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773543618.6562393,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "implement-feature_rss": {
+    "events": [
+      {
+        "timestamp": 1772427604.4797711,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-utilsepub_generatorpy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772430326.166471,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773003285.3188884,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773608420.6627674,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsagents_retratistapy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772437524.9563792,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772887355.6348512,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsbase_agentpy-imports-bugs-typing-error-ha": {
+    "events": [
+      {
+        "timestamp": 1772439326.7128916,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772887198.2838988,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_biombo-infern": {
+    "events": [
+      {
+        "timestamp": 1772534726.072341,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_quatre-dies": {
+    "events": [
+      {
+        "timestamp": 1772536525.288706,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_sala-numero-6": {
+    "events": [
+      {
+        "timestamp": 1772557203.3043253,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772869855.029548,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773569432.9662614,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_justine": {
+    "events": [
+      {
+        "timestamp": 1772557203.4381385,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772877037.995273,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_antigona": {
+    "events": [
+      {
+        "timestamp": 1772622002.557253,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_cumbres-borrascosas": {
+    "events": [
+      {
+        "timestamp": 1772730002.571609,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772869854.8765585,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translation_executa-el-pipeline-v2-per-retraduir-cd-biblioteca-univer": {
+    "events": [
+      {
+        "timestamp": 1772734814.5087473,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772877037.5179424,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772877037.6996996,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772908529.928836,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773008722.428798,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773075603.009326,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_ibsenpy-imports-bugs-typing-error-": {
+    "events": [
+      {
+        "timestamp": 1772828702.4653575,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_pessoapy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772845211.3539753,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsformulari_handlerpy-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772845211.5250542,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_fragments-postums": {
+    "events": [
+      {
+        "timestamp": 1772859603.1616743,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773578663.8159313,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_apologia": {
+    "events": [
+      {
+        "timestamp": 1772860410.4203806,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_de-brevitate-vitae": {
+    "events": [
+      {
+        "timestamp": 1772866147.2569911,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773569432.5531409,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_the-tempest-la-tempesta": {
+    "events": [
+      {
+        "timestamp": 1772866147.4414635,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_horaci_odes-seleccio-20-odes": {
+    "events": [
+      {
+        "timestamp": 1772866157.8759253,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_o-guardador-de-rebanhos-el-guardador-de-ramats": {
+    "events": [
+      {
+        "timestamp": 1772869854.7162287,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773569432.711707,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_demian": {
+    "events": [
+      {
+        "timestamp": 1772869855.1765156,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_virgili_bucoliques": {
+    "events": [
+      {
+        "timestamp": 1772875377.7408268,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsregenerar_boto_propostespy-imports-bugs-t": {
+    "events": [
+      {
+        "timestamp": 1772887539.2305892,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_einleitung-in-die-philosophie": {
+    "events": [
+      {
+        "timestamp": 1772895602.3953965,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773588420.1041305,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_hayy-ibn-yaqzan-el-filosof-autodidacte": {
+    "events": [
+      {
+        "timestamp": 1772902803.0534256,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773615603.3489208,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptspropostes_listenerpy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772902814.951328,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_narrativa_voltaire_micromegas": {
+    "events": [
+      {
+        "timestamp": 1772902815.4425259,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_search_wikisourcepy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1772910014.4736624,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773518145.3188312,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_micromegas": {
+    "events": [
+      {
+        "timestamp": 1772916902.5030828,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773622803.2572129,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsformat_teatrepy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1772916913.933308,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773523829.2360933,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsproposta_commandpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772922450.4431393,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_clean_originalpy-imports-bugs-typing-er": {
+    "events": [
+      {
+        "timestamp": 1772922450.6037152,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsclean_pessoapy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772922450.7647731,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsinforme_detallatpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772924398.9525967,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773529217.7148583,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_li-bai_seleccio-de-30-poemes": {
+    "events": [
+      {
+        "timestamp": 1772924399.4420443,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_micromegaspy-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772926243.7914622,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_plutarc2py-imports-bugs-typing-er": {
+    "events": [
+      {
+        "timestamp": 1772926243.9546337,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsdescarrega_horacipy-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1772928137.4563968,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsapi_propostapy-imports-bugs-typing-error": {
+    "events": [
+      {
+        "timestamp": 1772930231.675611,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772931615.604612,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptspropostes_botpy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1772931615.7637894,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsproposta_slash_handlerpy-imports-bugs-typ": {
+    "events": [
+      {
+        "timestamp": 1772932124.148911,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsextract_ecloguespy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772941488.3650942,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_decameronpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1772945122.7182245,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_plutarcpy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1772950574.093069,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsparse_eclogaepy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1772957817.1994562,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772966815.3452742,
+        "result": "created"
+      },
+      {
+        "timestamp": 1772981404.740755,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_bucoliques": {
+    "events": [
+      {
+        "timestamp": 1772966801.611512,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_meghaduta-el-missatger-del-nuvol": {
+    "events": [
+      {
+        "timestamp": 1773001262.2578483,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_list_novellaspy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773001278.0057638,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_mickiewicz_sonets-de-crimea": {
+    "events": [
+      {
+        "timestamp": 1773008738.091482,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773017009.5428224,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_analectespy-imports-bugs-typing-er": {
+    "events": [
+      {
+        "timestamp": 1773009144.3970377,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_shir_hashirimpy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1773018620.7617645,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_vita_nuovapy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1773020485.528596,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773627303.1724753,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsclean_html_entitiespy-imports-bugs-typing": {
+    "events": [
+      {
+        "timestamp": 1773020485.9961767,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773627303.3558238,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_vita-nuova-vida-nova": {
+    "events": [
+      {
+        "timestamp": 1773046802.6261542,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_maj-maig": {
+    "events": [
+      {
+        "timestamp": 1773054003.1863635,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_rabindranath-tagore_gitanjali-seleccio-30-poemes": {
+    "events": [
+      {
+        "timestamp": 1773054018.9174352,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsextract_gitanjalipy-imports-bugs-typing-": {
+    "events": [
+      {
+        "timestamp": 1773061218.4346988,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773666021.2149062,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_cena-trimalchionis-el-banquet-de-trimalcio": {
+    "events": [
+      {
+        "timestamp": 1773068403.1372151,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_debug_pipelinepy-imports-bugs-typing-er": {
+    "events": [
+      {
+        "timestamp": 1773068419.7669294,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_extract_cenapy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773068420.4551404,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_catul_carmina-seleccio-25-poemes": {
+    "events": [
+      {
+        "timestamp": 1773068420.9246354,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_oriental_thiruvalluvar_tirukkural-seleccio-100-kural": {
+    "events": [
+      {
+        "timestamp": 1773082818.994545,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsgen_tirukkuralpy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773090016.5249648,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_teatre_aristofanes_els-nuvols": {
+    "events": [
+      {
+        "timestamp": 1773097218.88914,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsprocess_nuvolspy-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773104418.2516885,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_anonim-nordic_voluspa-la-profecia-de-la-sibilla": {
+    "events": [
+      {
+        "timestamp": 1773111619.329496,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_aleksandr-pushkin_el-genet-de-bronze": {
+    "events": [
+      {
+        "timestamp": 1773126019.038202,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_liaozhai-zhiyi-seleccio-10-contes": {
+    "events": [
+      {
+        "timestamp": 1773147602.7683141,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_et-dukkehjem-casa-de-nines": {
+    "events": [
+      {
+        "timestamp": 1773198003.219088,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_narrativa_lev-tolstoi_quanta-terra-necessita-un-home-i-altres-contes": {
+    "events": [
+      {
+        "timestamp": 1773198019.4918942,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_masnavi-seleccio-10-contes": {
+    "events": [
+      {
+        "timestamp": 1773203890.5536313,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773205203.2787015,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773207747.1310747,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773218731.2346716,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773228332.5433538,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773385768.9468865,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_oriental_kamo-no-chomei_hojoki": {
+    "events": [
+      {
+        "timestamp": 1773205220.7848399,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773220600.524909,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "test_python3--m-pytest-tests--v": {
+    "events": [
+      {
+        "timestamp": 1773385785.249978,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresorientalkamo-no-c": {
+    "events": [
+      {
+        "timestamp": 1773391232.6226115,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773391270.5731566,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773392402.9957654,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsfetch_tolstoipy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773391249.016579,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_hojoki": {
+    "events": [
+      {
+        "timestamp": 1773404108.880872,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translation_executa-el-pipeline-v2-per-retraduir-python3-scriptstradui": {
+    "events": [
+      {
+        "timestamp": 1773405957.170569,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773413354.6075172,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773426276.6300478,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773466418.6055503,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773485228.2676456,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773492563.2740138,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773532901.7168398,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresfilosofiaboecide": {
+    "events": [
+      {
+        "timestamp": 1773405957.63786,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_filosofia_mozi_amor-universal": {
+    "events": [
+      {
+        "timestamp": 1773405973.2968647,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_de-consolatione-philosophiae-llibre-i": {
+    "events": [
+      {
+        "timestamp": 1773411517.2878351,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_sandor-petofi_seleccio-20-poemes": {
+    "events": [
+      {
+        "timestamp": 1773413371.5223684,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_parse_hesiodpy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773414016.617735,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obrespoesiahesiodeels": {
+    "events": [
+      {
+        "timestamp": 1773415203.683765,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_petrarca_seleccio-20-sonets": {
+    "events": [
+      {
+        "timestamp": 1773420753.1952844,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_els-treballs-i-els-dies": {
+    "events": [
+      {
+        "timestamp": 1773422594.3050408,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obrespoesiapetrarcase": {
+    "events": [
+      {
+        "timestamp": 1773422594.5667353,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_seleccio-20-sonets": {
+    "events": [
+      {
+        "timestamp": 1773424435.4680796,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-agentsglossaristapy-imports-bugs-typing-error-h": {
+    "events": [
+      {
+        "timestamp": 1773424451.3502057,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_petofi4py-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773426290.3354304,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_petofi5py-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773426290.6558275,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_petofi2py-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773428133.7557504,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_petofipy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773428133.9228575,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_petofi3py-imports-bugs-typing-err": {
+    "events": [
+      {
+        "timestamp": 1773428134.3033428,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_narrativa_lucia-de-samosata_dialegs-dels-morts": {
+    "events": [
+      {
+        "timestamp": 1773428134.7376325,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_lucianpy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773429980.8865871,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresteatreterenciand": {
+    "events": [
+      {
+        "timestamp": 1773431805.9625285,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773439100.2289336,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773450005.3917751,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_filosofia_epicur_carta-meneceu-maximes": {
+    "events": [
+      {
+        "timestamp": 1773442819.581683,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_oriental_yoshida-kenko_tsurezuregusa": {
+    "events": [
+      {
+        "timestamp": 1773450021.8256886,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_andria": {
+    "events": [
+      {
+        "timestamp": 1773457203.4440382,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_oriental_vyasa_bhagavad-gita": {
+    "events": [
+      {
+        "timestamp": 1773458956.199234,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresteatrechikamatsu-": {
+    "events": [
+      {
+        "timestamp": 1773462654.7198339,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_sonezaki-shinju": {
+    "events": [
+      {
+        "timestamp": 1773464403.517788,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_assaig_pseudo-longi_del-sublim": {
+    "events": [
+      {
+        "timestamp": 1773466438.6890147,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_assaig_tacit_germania": {
+    "events": [
+      {
+        "timestamp": 1773474104.5863967,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresassaigtacitgerma": {
+    "events": [
+      {
+        "timestamp": 1773476001.9623017,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_teocrit_idillis": {
+    "events": [
+      {
+        "timestamp": 1773481569.1104214,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_germania": {
+    "events": [
+      {
+        "timestamp": 1773483397.600918,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obrespoesiateocritidi": {
+    "events": [
+      {
+        "timestamp": 1773485228.9788766,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_idillis": {
+    "events": [
+      {
+        "timestamp": 1773486002.462365,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_poesia_sor-juana_primero-sueno": {
+    "events": [
+      {
+        "timestamp": 1773488931.4707026,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresorientalyoshida-k": {
+    "events": [
+      {
+        "timestamp": 1773492563.8938577,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773499802.817906,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773505238.1949713,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obrespoesiasor-juanap": {
+    "events": [
+      {
+        "timestamp": 1773492564.3613572,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773508905.6052814,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773512606.8301623,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_tsurezuregusapy-imports-bugs-typin": {
+    "events": [
+      {
+        "timestamp": 1773492580.8680036,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_tsurezuregusa": {
+    "events": [
+      {
+        "timestamp": 1773510763.5398715,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresnarrativavishnu-s": {
+    "events": [
+      {
+        "timestamp": 1773514455.7475634,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_assemble_tsurezuregusapy-imports-bugs-ty": {
+    "events": [
+      {
+        "timestamp": 1773523829.4528031,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_panchatantra-llibre-i": {
+    "events": [
+      {
+        "timestamp": 1773529202.3515086,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "fetch_obres_teatre_esquil_prometeu-encadenat": {
+    "events": [
+      {
+        "timestamp": 1773529218.364713,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_shahnamehpy-imports-bugs-typing-e": {
+    "events": [
+      {
+        "timestamp": 1773538404.1561012,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "translate_python3-scriptstraduir_pipelinepy-obresfilosofiaspinoza": {
+    "events": [
+      {
+        "timestamp": 1773543882.5624197,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773545722.2466557,
+        "result": "created"
+      },
+      {
+        "timestamp": 1773550803.4136243,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_bartleby-lescrivent": {
+    "events": [
+      {
+        "timestamp": 1773556564.2161245,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_tractat-reforma-enteniment": {
+    "events": [
+      {
+        "timestamp": 1773562050.980339,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scripts_fetch_mengzipy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773562066.4404657,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "code-review_revisa-scriptsconvert_milespy-imports-bugs-typing-erro": {
+    "events": [
+      {
+        "timestamp": 1773563901.1080425,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  },
+  "supervision_primero-sueno": {
+    "events": [
+      {
+        "timestamp": 1773571281.8427317,
+        "result": "created"
+      }
+    ],
+    "fail_count": 0
+  }
+}

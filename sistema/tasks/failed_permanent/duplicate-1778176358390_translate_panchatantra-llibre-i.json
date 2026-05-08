@@ -1,0 +1,16 @@
+{
+  "id": "1778176358390_translate_panchatantra-llibre-i",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducció de 'panchatantra-llibre-i' (narrativa/vishnu-sharma). Original: 40254 paraules, traduït: 12658 paraules. Continua des d'on s'ha quedat mantenint l'estil existent.",
+  "obra": "obres/narrativa/vishnu-sharma/panchatantra-llibre-i",
+  "model": "claude-sonnet-4-6",
+  "metadata": {
+    "slug": "panchatantra-llibre-i",
+    "author": "vishnu-sharma",
+    "category": "narrativa",
+    "original_words": 40254,
+    "traduccio_words": 12658
+  }
+}

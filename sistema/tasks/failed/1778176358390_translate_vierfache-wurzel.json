@@ -1,0 +1,17 @@
+{
+  "id": "1778176358390_translate_vierfache-wurzel",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducci\u00f3 de 'vierfache-wurzel' (filosofia/schopenhauer). Original: 54414 paraules, tradu\u00eft: 14200 paraules. Continua des d'on s'ha quedat mantenint l'estil existent.",
+  "obra": "obres/filosofia/schopenhauer/vierfache-wurzel",
+  "model": "claude-opus-4-7",
+  "metadata": {
+    "slug": "vierfache-wurzel",
+    "author": "schopenhauer",
+    "category": "filosofia",
+    "original_words": 54414,
+    "traduccio_words": 14200
+  },
+  "retries": 4
+}

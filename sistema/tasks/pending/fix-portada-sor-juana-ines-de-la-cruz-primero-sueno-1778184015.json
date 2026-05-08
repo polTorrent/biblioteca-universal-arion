@@ -1,0 +1,8 @@
+{
+  "id": "fix-portada-sor-juana-ines-de-la-cruz-primero-sueno-1778184015",
+  "type": "fix-portada",
+  "priority": 4,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'sor-juana-ines-de-la-cruz/primero-sueno' && git add obres/*/sor-juana-ines-de-la-cruz/primero-sueno/portada.* && git commit -m 'fix: portada sor-juana-ines-de-la-cruz/primero-sueno' && git push",
+  "created": "2026-05-07T22:00:15+02:00"
+}
