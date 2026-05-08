@@ -58,7 +58,8 @@ else
     log "✅ Sistema Arion aturat completament"
 fi
 
-# 5. Notificar per Discord (si existeix el canal)
-if command -v hermes &> /dev/null; then
-    hermes send discord:biblioteca-arion "🛑 **Sistema Arion aturat**\nHorari actiu finalitzat: 00:00 UTC\nWorker: Aturat" 2>/dev/null || true
+# 5. Notificar per Discord (si existeix el script)
+NOTIFICAR="$PROJECT/sistema/automatitzacio/notificar.sh"
+if [ -x "$NOTIFICAR" ]; then
+    bash "$NOTIFICAR" info "Sistema Arion aturat — Worker: Aturat"
 fi

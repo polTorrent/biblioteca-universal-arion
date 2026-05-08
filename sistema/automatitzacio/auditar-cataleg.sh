@@ -3,10 +3,10 @@
 # Ús: bash sistema/automatitzacio/auditar-cataleg.sh [--fix]
 
 set -uo pipefail
-REPO="$HOME/biblioteca-universal-arion"
+REPO="${PROJECT:-$HOME/biblioteca-universal-arion}"
 OBRES_DIR="$REPO/obres"
 INFORME="$REPO/config/auditoria.json"
-TASQUES_DIR="$PROJECT/sistema/tasks/pending"
+TASQUES_DIR="$REPO/sistema/tasks/pending"
 
 # Comptadors
 total=0; ok=0; problemes=0
@@ -20,6 +20,8 @@ for obra_dir in "$OBRES_DIR"/*/*/*/; do
 
     autor=$(basename "$(dirname "$obra_dir")")
     obra=$(basename "$obra_dir")
+    obra_rel="${obra_dir#$REPO/}"
+    obra_rel="${obra_rel%/}"
     errors=()
 
     # 1. METADATA: existeix i és YAML vàlid?
@@ -145,7 +147,7 @@ for obra_dir in "$OBRES_DIR"/*/*/*/; do
 
     # Guardar resultat (format JSON-like per processar després)
     error_list=$(IFS=','; echo "${errors[*]}")
-    RESULTATS+=("{\"autor\":\"$autor\",\"obra\":\"$obra\",\"errors\":[\"${error_list//,/\",\"}\"],\"n_errors\":${#errors[@]}}")
+    RESULTATS+=("{\"autor\":\"$autor\",\"obra\":\"$obra\",\"obra_rel\":\"$obra_rel\",\"errors\":[\"${error_list//,/\",\"}\"],\"n_errors\":${#errors[@]}}")
 
     echo "$status $autor/$obra — ${#errors[@]} errors: ${error_list:-cap}"
 done
@@ -194,6 +196,7 @@ if [[ "${1:-}" == "--fix" ]]; then
 
         autor=$(echo "$r" | grep -oP '"autor":"\K[^"]+')
         obra=$(echo "$r" | grep -oP '"obra":"\K[^"]+')
+        obra_rel=$(echo "$r" | grep -oP '"obra_rel":"\K[^"]+')
         errs=$(echo "$r" | grep -oP '"errors":\[\K[^\]]+')
 
         # Prioritzar per gravetat
@@ -211,7 +214,9 @@ if [[ "${1:-}" == "--fix" ]]; then
   "type": "fix-fetch",
   "priority": $priority,
   "max_duration": 900,
-  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor '$autor' --obra '$obra' --output obres/*/$autor/$obra/original.md && echo DONE",
+  "obra": "$obra_rel",
+  "output": "$obra_rel/original.md",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor '$autor' --obra '$obra' --output $obra_rel/original.md && echo DONE",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -228,7 +233,7 @@ EOF
   "type": "fix-metadata",
   "priority": $priority,
   "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && Revisa i completa el fitxer obres/*/$autor/$obra/metadata.yml. Ha de tenir TOTS els camps obligatoris: titol, autor, llengua_original, categoria, any_original. Si hi ha original.md, afegeix font_original amb la URL real d'on s'ha obtingut (Gutenberg, Wikisource, Perseus, etc). Si no saps la font, cerca-la. Valida que el YAML sigui correcte amb: python3 -c \"import yaml; yaml.safe_load(open('obres/*/$autor/$obra/metadata.yml'))\" && git add obres/*/$autor/$obra/metadata.yml && git commit -m 'fix: completar metadata $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && Revisa i completa el fitxer $obra_rel/metadata.yml. Ha de tenir TOTS els camps obligatoris: titol, autor, llengua_original, categoria, any_original. Si hi ha original.md, afegeix font_original amb la URL real d'on s'ha obtingut (Gutenberg, Wikisource, Perseus, etc). Si no saps la font, cerca-la. Valida que el YAML sigui correcte amb: python3 -c \"import yaml; yaml.safe_load(open('$obra_rel/metadata.yml'))\" && git add $obra_rel/metadata.yml && git commit -m 'fix: completar metadata $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -245,7 +250,8 @@ EOF
   "type": "fix-translate",
   "priority": $priority,
   "max_duration": 3600,
-  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/*/$autor/$obra/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor '$autor' --obra '$obra'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/$autor/$obra/ && git commit -m 'fix: traduir/completar $autor/$obra' && git push",
+  "obra": "$obra_rel",
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que $obra_rel/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor '$autor' --obra '$obra'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A $obra_rel/ && git commit -m 'fix: traduir/completar $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -262,7 +268,7 @@ EOF
   "type": "fix-glossari",
   "priority": 3,
   "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && Revisa obres/*/$autor/$obra/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('obres/*/$autor/$obra/glossari.yml'))\" && git add obres/*/$autor/$obra/glossari.yml && git commit -m 'fix: glossari $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && Revisa $obra_rel/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('$obra_rel/glossari.yml'))\" && git add $obra_rel/glossari.yml && git commit -m 'fix: glossari $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -279,7 +285,7 @@ EOF
   "type": "fix-portada",
   "priority": 4,
   "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra '$autor/$obra' && git add obres/*/$autor/$obra/portada.* && git commit -m 'fix: portada $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra '$autor/$obra' && git add $obra_rel/portada.* && git commit -m 'fix: portada $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -296,7 +302,7 @@ EOF
   "type": "fix-llengua",
   "priority": 2,
   "max_duration": 1800,
-  "instruction": "cd ~/biblioteca-universal-arion && Obre obres/*/$autor/$obra/traduccio.md i corregeix tots els castellanismes i anglicismes. Revisa especialment: entonces->aleshores/llavors, pues->doncs, sin embargo->tanmateix/no obstant, mientras->mentre, ademas->a mes, tambien->tambe, pero->pero, aunque->tot i que/malgrat que, desde->des de, hasta->fins a, hacia->cap a, segun->segons. Revisa tambe la normativa IEC. git add obres/*/$autor/$obra/traduccio.md && git commit -m 'fix: corregir castellanismes $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && Obre $obra_rel/traduccio.md i corregeix tots els castellanismes i anglicismes. Revisa especialment: entonces->aleshores/llavors, pues->doncs, sin embargo->tanmateix/no obstant, mientras->mentre, ademas->a mes, tambien->tambe, pero->pero, aunque->tot i que/malgrat que, desde->des de, hasta->fins a, hacia->cap a, segun->segons. Revisa tambe la normativa IEC. git add $obra_rel/traduccio.md && git commit -m 'fix: corregir castellanismes $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
@@ -313,7 +319,7 @@ EOF
   "type": "fix-notes",
   "priority": 3,
   "max_duration": 1200,
-  "instruction": "cd ~/biblioteca-universal-arion && Obre obres/*/$autor/$obra/traduccio.md i obres/*/$autor/$obra/notes.md. Verifica que cada referencia [^N] a la traduccio te la nota corresponent ## [N] a notes.md. Si falten notes, genera-les amb context adequat. Si les referencies son incorrectes, arregla la numeracio. git add obres/*/$autor/$obra/{traduccio.md,notes.md} && git commit -m 'fix: notes $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && Obre $obra_rel/traduccio.md i $obra_rel/notes.md. Verifica que cada referencia [^N] a la traduccio te la nota corresponent ## [N] a notes.md. Si falten notes, genera-les amb context adequat. Si les referencies son incorrectes, arregla la numeracio. git add $obra_rel/{traduccio.md,notes.md} && git commit -m 'fix: notes $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF

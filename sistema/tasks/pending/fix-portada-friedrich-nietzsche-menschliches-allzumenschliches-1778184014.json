@@ -1,0 +1,8 @@
+{
+  "id": "fix-portada-friedrich-nietzsche-menschliches-allzumenschliches-1778184014",
+  "type": "fix-portada",
+  "priority": 4,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'friedrich-nietzsche/menschliches-allzumenschliches' && git add obres/*/friedrich-nietzsche/menschliches-allzumenschliches/portada.* && git commit -m 'fix: portada friedrich-nietzsche/menschliches-allzumenschliches' && git push",
+  "created": "2026-05-07T22:00:14+02:00"
+}

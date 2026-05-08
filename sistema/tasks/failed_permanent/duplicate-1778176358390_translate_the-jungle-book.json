@@ -1,0 +1,16 @@
+{
+  "id": "1778176358390_translate_the-jungle-book",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducció de 'the-jungle-book' (narrativa/rudyard-kipling). Original: 50846 paraules, traduït: 6438 paraules. Continua des d'on s'ha quedat mantenint l'estil existent.",
+  "obra": "obres/narrativa/rudyard-kipling/el-llibre-de-la-selva",
+  "model": "claude-sonnet-4-6",
+  "metadata": {
+    "slug": "the-jungle-book",
+    "author": "rudyard-kipling",
+    "category": "narrativa",
+    "original_words": 50846,
+    "traduccio_words": 6438
+  }
+}

@@ -15,6 +15,7 @@ Arquitectura de 3 capes:
     resultat = cercador.obtenir_text("Sèneca", "De Brevitate Vitae", "llatí")
 """
 
+import argparse
 import json
 import re
 import subprocess
@@ -1074,15 +1075,36 @@ class CercadorFontsV2:
 
 def main():
     """Execució directa des de terminal."""
-    if len(sys.argv) < 3:
-        print("Ús: python3 cercador_fonts_v2.py <autor> <títol> [llengua] [obra_dir]")
-        print('Ex:  python3 cercador_fonts_v2.py "Sèneca" "De Brevitate Vitae" "llatí"')
+    parser = argparse.ArgumentParser(
+        description="Cerca i desa textos originals de domini públic.",
+        usage="python3 cercador_fonts_v2.py <autor> <títol> [llengua] [obra_dir] | --autor A --obra O [--llengua L] [--output P]",
+    )
+    parser.add_argument("autor_pos", nargs="?", help="Autor (format posicional legacy)")
+    parser.add_argument("titol_pos", nargs="?", help="Títol/obra (format posicional legacy)")
+    parser.add_argument("llengua_pos", nargs="?", help="Llengua original (format posicional legacy)")
+    parser.add_argument("obra_dir_pos", nargs="?", help="Directori d'obra (format posicional legacy)")
+    parser.add_argument("--autor", dest="autor_opt", help="Autor")
+    parser.add_argument("--obra", dest="obra_opt", help="Títol/slug de l'obra")
+    parser.add_argument("--titol", dest="titol_opt", help="Títol de l'obra")
+    parser.add_argument("--llengua", dest="llengua_opt", default=None, help="Llengua original")
+    parser.add_argument("--output", dest="output", help="Ruta de sortida: original.md o directori d'obra")
+    args = parser.parse_args()
+
+    autor = args.autor_opt or args.autor_pos
+    titol = args.titol_opt or args.obra_opt or args.titol_pos
+    llengua = args.llengua_opt or args.llengua_pos or "llatí"
+
+    if not autor or not titol:
+        parser.print_help()
         sys.exit(1)
 
-    autor = sys.argv[1]
-    titol = sys.argv[2]
-    llengua = sys.argv[3] if len(sys.argv) > 3 else "llatí"
-    obra_dir = Path(sys.argv[4]) if len(sys.argv) > 4 else None
+    obra_dir = None
+    if args.output:
+        output_path = Path(args.output)
+        # L'auditoria passa --output .../original.md; el cercador espera directori.
+        obra_dir = output_path.parent if output_path.name == "original.md" else output_path
+    elif args.obra_dir_pos:
+        obra_dir = Path(args.obra_dir_pos)
 
     cercador = CercadorFontsV2(verbose=True)
     resultat = cercador.obtenir_text(autor, titol, llengua, obra_dir)
@@ -1097,9 +1119,10 @@ def main():
         print("-" * 40)
         print(resultat.text[:500])
     else:
-        print(f"❌ No trobat")
+        print("❌ No trobat")
         print(f"   Fonts provades: {', '.join(resultat.fonts_provades)}")
         print(f"   Errors: {'; '.join(resultat.errors)}")
+        sys.exit(2)
     print("=" * 60)
 
 

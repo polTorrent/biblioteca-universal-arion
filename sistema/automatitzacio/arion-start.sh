@@ -13,7 +13,7 @@ STATE_DIR="$PROJECT/sistema/state"
 LOCKFILE="$TASKS_DIR/worker.lock"
 DIEM_STOP="$STATE_DIR/diem_stop"
 VENICE_CLI="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
-MIN_DIEM=2.0
+MIN_DIEM=3.0
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S UTC')] [START] $1" | tee -a "$LOG"
@@ -66,10 +66,10 @@ cd "$PROJECT"
 nohup bash sistema/automatitzacio/venice-worker.sh > /dev/null 2>&1 &
 log "   ✅ Venice Worker iniciat"
 
-# 2. Afegir cron del heartbeat (cada 2 hores)
-(crontab -l 2>/dev/null | grep -v "heartbeat.sh"; echo "0 */2 * * * /bin/bash $PROJECT/sistema/automatitzacio/heartbeat.sh >> $HOME/heartbeat.log 2>&1") | crontab -
+# 2. Afegir cron del heartbeat (cada 2 hores, només dins horari actiu)
+(crontab -l 2>/dev/null | grep -v "heartbeat.sh"; echo "0 16-23/2 * * * /bin/bash $PROJECT/sistema/automatitzacio/heartbeat.sh >> $HOME/heartbeat.log 2>&1") | crontab -
 
-log "   ✅ Heartbeat programat (cada 2h)"
+log "   ✅ Heartbeat programat (16:00-23:59 UTC, cada 2h)"
 
 # 3. Verificar que el worker està corrent
 sleep 3
@@ -86,7 +86,8 @@ else
     log "⚠️ Worker iniciat però sense lockfile"
 fi
 
-# 4. Notificar per Discord (si existeix el canal)
-if command -v hermes &> /dev/null; then
-    hermes send discord:biblioteca-arion "🚀 **Sistema Arion iniciat**\nHorari actiu: 16:00 - 00:00 UTC\nWorker: Actiu (PID $PID)" 2>/dev/null || true
+# 4. Notificar per Discord (si existeix el script)
+NOTIFICAR="$PROJECT/sistema/automatitzacio/notificar.sh"
+if [ -x "$NOTIFICAR" ]; then
+    bash "$NOTIFICAR" success "Sistema Arion iniciat — Worker: Actiu (PID $PID)"
 fi

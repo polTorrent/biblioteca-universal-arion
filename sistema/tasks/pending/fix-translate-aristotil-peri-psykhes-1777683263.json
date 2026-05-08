@@ -1,9 +1,0 @@
-{
-  "id": "fix-translate-aristotil-peri-psykhes-1777683263",
-  "type": "fix-translate",
-  "priority": 2,
-  "max_duration": 3600,
-  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/*/aristotil/peri-psykhes/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'aristotil' --obra 'peri-psykhes'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/*/aristotil/peri-psykhes/ && git commit -m 'fix: traduir/completar aristotil/peri-psykhes' && git push",
-  "created": "2026-05-02T02:54:23+02:00",
-  "retries": 2
-}

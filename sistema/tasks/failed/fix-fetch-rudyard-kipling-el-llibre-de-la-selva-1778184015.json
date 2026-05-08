@@ -1,0 +1,10 @@
+{
+  "id": "fix-fetch-rudyard-kipling-el-llibre-de-la-selva-1778184015",
+  "type": "fix-fetch",
+  "priority": 1,
+  "max_duration": 900,
+  "instruction": "python3 sistema/traduccio/cercador_fonts_v2.py --autor 'rudyard-kipling' --obra 'el-llibre-de-la-selva' --output obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/original.md && echo DONE",
+  "created": "2026-05-07T22:00:15+02:00",
+  "output": "obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/original.md",
+  "retries": 3
+}

@@ -1,294 +1,342 @@
 #!/usr/bin/env python3
-"""
-Arion Dashboard Server - Real-time monitoring
-WebSocket server that streams: Hermes thoughts, LLM thinking, tool calls, worker status, errors
+"""Dashboard web per monitoritzar traduccions en temps real.
+
+Obre automàticament al navegador i mostra:
+- Progrés del pipeline
+- Logs detallats
+- Mètriques i gràfiques
 """
 
-from flask import Flask, render_template, jsonify, request
-from flask_socketio import SocketIO, emit
-from flask_cors import CORS
-from flask_limiter import Limiter
-from flask_limiter.util import get_remote_address
-import os
 import json
-import time
+import queue
 import threading
-import subprocess
+import webbrowser
+from dataclasses import dataclass, field, asdict
 from datetime import datetime
+from enum import Enum
 from pathlib import Path
-from collections import deque
-import tailer  # pip install tailer
-import html
+from typing import Callable, Optional
 
-# FIX: Try to import psutil for secure process handling (DeepSeek V4 issue #4)
-try:
-    import psutil
-    HAS_PSUTIL = True
-except ImportError:
-    HAS_PSUTIL = False
+from flask import Flask, render_template, Response, jsonify
 
-app = Flask(__name__,
-            static_folder='static',
-            template_folder='static')
 
-# FIX: Secret key from environment variable (DeepSeek V4 security issue #1)
-import secrets
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', secrets.token_hex(32))
+# =============================================================================
+# MODELS
+# =============================================================================
 
-# FIX: CORS restricted to specific origins (DeepSeek V4 security issue #2)
-CORS(app, origins=['http://localhost:9120', 'http://100.93.26.104:9120', 'http://127.0.0.1:9120'])
+class LogLevel(str, Enum):
+    DEBUG = "debug"
+    INFO = "info"
+    WARNING = "warning"
+    ERROR = "error"
+    SUCCESS = "success"
 
-# FIX: Better async mode and cors settings (DeepSeek V4 issues #2, #3)
-socketio = SocketIO(app, cors_allowed_origins=['http://localhost:9120', 'http://100.93.26.104:9120'], async_mode='threading')
 
-# FIX: Log files in absolute path (DeepSeek V4 security issue #7)
-# Use environment variable or default to absolute path
-LOGS_DIR = Path(os.environ.get('ARION_LOGS_DIR', '/home/jo/biblioteca-universal-arion/sistema/dashboard/logs'))
-LOGS_DIR.mkdir(parents=True, exist_ok=True)
+@dataclass
+class LogEntry:
+    timestamp: str
+    level: LogLevel
+    agent: str
+    message: str
+    details: Optional[dict] = None
 
-HERMES_LOG = LOGS_DIR / 'hermes.log'
-LLM_LOG = LOGS_DIR / 'llm.log'
-WORKER_LOG = LOGS_DIR / 'worker.log'
-TOOL_LOG = LOGS_DIR / 'tools.log'
-ERRORS_LOG = LOGS_DIR / 'errors.log'
 
-# Create log files if they don't exist
-for log_file in [HERMES_LOG, LLM_LOG, WORKER_LOG, TOOL_LOG]:
-    log_file.touch(exist_ok=True)
+@dataclass
+class ChunkProgress:
+    chunk_id: int
+    total_chunks: int
+    stage: str  # analitzant, traduint, avaluant, refinant, completat
+    quality: Optional[float] = None
+    iterations: int = 0
 
-# FIX: Use deque with maxlen to prevent memory exhaustion (DeepSeek V4 issue #8)
-from collections import deque
 
-MAX_EVENTS = 100  # Maximum events per type
-recent_events = {
-    'hermes': deque(maxlen=MAX_EVENTS),
-    'llm': deque(maxlen=MAX_EVENTS),
-    'worker': deque(maxlen=MAX_EVENTS),
-    'tools': deque(maxlen=MAX_EVENTS),
-    'errors': deque(maxlen=MAX_EVENTS)
-}
+@dataclass
+class PipelineMetrics:
+    start_time: str
+    elapsed_seconds: float = 0
+    tokens_input: int = 0
+    tokens_output: int = 0
+    chunks_completed: int = 0
+    chunks_total: int = 0
+    avg_quality: float = 0
+    current_stage: str = "iniciant"
+    quality_history: list = field(default_factory=list)
 
-def add_event(event_type, data):
-    """Add event to recent events and emit to all clients"""
-    event = {
-        'timestamp': datetime.now().isoformat(),
-        'type': event_type,
-        'data': data
-    }
-    recent_events[event_type].append(event)
-    # Keep only last 100 events
-    if len(recent_events[event_type]) > 100:
-        recent_events[event_type] = recent_events[event_type][-100:]
-    # Emit to all connected clients
-    socketio.emit(f'{event_type}_event', event, namespace='/')
 
-# FIX: Improved log tailer with daemon thread and error recovery (DeepSeek V4 issue #9)
-def log_tailer(log_file, event_type):
-    """Tail a log file and emit new lines as events"""
+@dataclass
+class DashboardState:
+    """Estat complet del dashboard."""
+    obra: str = ""
+    autor: str = ""
+    llengua: str = ""
+    metrics: PipelineMetrics = field(default_factory=lambda: PipelineMetrics(
+        start_time=datetime.now().isoformat()
+    ))
+    chunks: list[ChunkProgress] = field(default_factory=list)
+    logs: list[LogEntry] = field(default_factory=list)
+    status: str = "pendent"  # pendent, executant, completat, error
+
+
+# =============================================================================
+# DASHBOARD SINGLETON
+# =============================================================================
+
+class TranslationDashboard:
+    """Singleton per gestionar el dashboard de traducció."""
+
+    _instance = None
+    _lock = threading.Lock()
+
+    def __new__(cls):
+        if cls._instance is None:
+            with cls._lock:
+                if cls._instance is None:
+                    cls._instance = super().__new__(cls)
+                    cls._instance._initialized = False
+        return cls._instance
+
+    def __init__(self):
+        if self._initialized:
+            return
+        self._initialized = True
+
+        self.state = DashboardState()
+        self.event_queue: queue.Queue = queue.Queue()
+        self.app = self._create_app()
+        self.server_thread: Optional[threading.Thread] = None
+        self.port = 5050
+        self._running = False
+
+    def _create_app(self) -> Flask:
+        """Crea l'aplicació Flask."""
+        template_dir = Path(__file__).parent / "templates"
+        static_dir = Path(__file__).parent / "static"
+
+        app = Flask(
+            __name__,
+            template_folder=str(template_dir),
+            static_folder=str(static_dir)
+        )
+
+        @app.route("/")
+        def index():
+            return render_template("dashboard.html")
+
+        @app.route("/api/state")
+        def get_state():
+            return jsonify(self._state_to_dict())
+
+        @app.route("/api/events")
+        def events():
+            def generate():
+                while self._running:
+                    try:
+                        event = self.event_queue.get(timeout=1)
+                        yield f"data: {json.dumps(event)}\n\n"
+                    except queue.Empty:
+                        # Heartbeat
+                        yield f"data: {json.dumps({'type': 'heartbeat'})}\n\n"
+
+            return Response(
+                generate(),
+                mimetype="text/event-stream",
+                headers={
+                    "Cache-Control": "no-cache",
+                    "Connection": "keep-alive",
+                }
+            )
+
+        return app
+
+    def _state_to_dict(self) -> dict:
+        """Converteix l'estat a diccionari."""
+        return {
+            "obra": self.state.obra,
+            "autor": self.state.autor,
+            "llengua": self.state.llengua,
+            "status": self.state.status,
+            "metrics": asdict(self.state.metrics),
+            "chunks": [asdict(c) for c in self.state.chunks],
+            "logs": [asdict(l) for l in self.state.logs[-100:]],  # Últims 100 logs
+        }
+
+    def start(self, obra: str = "", autor: str = "", llengua: str = "", open_browser: bool = True):
+        """Inicia el servidor del dashboard."""
+        if self._running:
+            return
+
+        self.state = DashboardState(
+            obra=obra,
+            autor=autor,
+            llengua=llengua,
+            metrics=PipelineMetrics(start_time=datetime.now().isoformat()),
+            status="executant"
+        )
+        self._running = True
+
+        def run_server():
+            self.app.run(
+                host="127.0.0.1",
+                port=self.port,
+                debug=False,
+                use_reloader=False,
+                threaded=True
+            )
+
+        self.server_thread = threading.Thread(target=run_server, daemon=True)
+        self.server_thread.start()
+
+        if open_browser:
+            # Esperar que el servidor estigui llest
+            import time
+            time.sleep(0.5)
+            webbrowser.open(f"http://127.0.0.1:{self.port}")
+
+    def stop(self):
+        """Atura el dashboard."""
+        self._running = False
+        self.state.status = "completat"
+        self._send_event("status", {"status": "completat"})
+
+    def _send_event(self, event_type: str, data: dict):
+        """Envia un event al client."""
+        self.event_queue.put({"type": event_type, **data})
+
+    # =========================================================================
+    # API PÚBLICA PER AL PIPELINE
+    # =========================================================================
+
+    def log(self, level: LogLevel, agent: str, message: str, details: dict = None):
+        """Afegeix una entrada al log."""
+        entry = LogEntry(
+            timestamp=datetime.now().strftime("%H:%M:%S"),
+            level=level,
+            agent=agent,
+            message=message,
+            details=details
+        )
+        self.state.logs.append(entry)
+        self._send_event("log", asdict(entry))
+
+    def log_info(self, agent: str, message: str, details: dict = None):
+        self.log(LogLevel.INFO, agent, message, details)
+
+    def log_success(self, agent: str, message: str, details: dict = None):
+        self.log(LogLevel.SUCCESS, agent, message, details)
+
+    def log_warning(self, agent: str, message: str, details: dict = None):
+        self.log(LogLevel.WARNING, agent, message, details)
+
+    def log_error(self, agent: str, message: str, details: dict = None):
+        self.log(LogLevel.ERROR, agent, message, details)
+
+    def set_stage(self, stage: str):
+        """Actualitza l'etapa actual."""
+        self.state.metrics.current_stage = stage
+        self._send_event("stage", {"stage": stage})
+
+        # Aturar automàticament quan es completa o hi ha error
+        if stage in ("completat", "error"):
+            self.state.status = stage
+            self._send_event("status", {"status": stage})
+
+    def set_chunks(self, total: int):
+        """Inicialitza els chunks."""
+        self.state.metrics.chunks_total = total
+        self.state.chunks = [
+            ChunkProgress(chunk_id=i, total_chunks=total, stage="pendent")
+            for i in range(total)
+        ]
+        self._send_event("chunks_init", {"total": total})
+
+    def update_chunk(self, chunk_id: int, stage: str, quality: float = None, iterations: int = 0):
+        """Actualitza l'estat d'un chunk."""
+        if 0 <= chunk_id < len(self.state.chunks):
+            chunk = self.state.chunks[chunk_id]
+            chunk.stage = stage
+            chunk.quality = quality
+            chunk.iterations = iterations
+
+            if stage == "completat":
+                self.state.metrics.chunks_completed += 1
+                if quality:
+                    self.state.metrics.quality_history.append(quality)
+                    self.state.metrics.avg_quality = sum(self.state.metrics.quality_history) / len(self.state.metrics.quality_history)
+
+            self._send_event("chunk_update", {
+                "chunk_id": chunk_id,
+                "stage": stage,
+                "quality": quality,
+                "iterations": iterations,
+                "completed": self.state.metrics.chunks_completed,
+                "total": self.state.metrics.chunks_total,
+                "avg_quality": self.state.metrics.avg_quality,
+            })
+
+    def update_tokens(self, input_tokens: int = 0, output_tokens: int = 0):
+        """Actualitza el comptador de tokens."""
+        self.state.metrics.tokens_input += input_tokens
+        self.state.metrics.tokens_output += output_tokens
+        self._send_event("tokens", {
+            "input": self.state.metrics.tokens_input,
+            "output": self.state.metrics.tokens_output,
+        })
+
+    def update_elapsed(self, seconds: float):
+        """Actualitza el temps transcorregut."""
+        self.state.metrics.elapsed_seconds = seconds
+        self._send_event("elapsed", {"seconds": seconds})
+
+
+# Instància global
+dashboard = TranslationDashboard()
+
+
+# =============================================================================
+# FUNCIONS D'ÚS RÀPID
+# =============================================================================
+
+def start_dashboard(obra: str = "", autor: str = "", llengua: str = "", open_browser: bool = True):
+    """Inicia el dashboard."""
+    dashboard.start(obra, autor, llengua, open_browser)
+    return dashboard
+
+
+def stop_dashboard():
+    """Atura el dashboard."""
+    dashboard.stop()
+
+
+if __name__ == "__main__":
+    # Test
     import time
-    while True:
-        try:
-            for line in tailer.follow(open(log_file)):
-                if line.strip():
-                    # FIX: Escape potential XSS (DeepSeek V4 issue #10)
-                    import html
-                    add_event(event_type, {'content': html.escape(line.strip())})
-        except FileNotFoundError:
-            # Wait for file to be created
-            time.sleep(1)
-        except Exception as e:
-            print(f"Error tailing {log_file}: {e}")
-            time.sleep(1)  # Wait before retrying
 
-@app.route('/')
-def index():
-    """Serve main dashboard page"""
-    return render_template('index.html')
+    dash = start_dashboard(
+        obra="El biombo de l'infern",
+        autor="Akutagawa",
+        llengua="japonès"
+    )
 
-# FIX: Rate limiting setup (DeepSeek V4 issue - missing)
-limiter = Limiter(
-    app=app,
-    key_func=get_remote_address,
-    default_limits=["200 per day", "50 per hour"]
-)
+    dash.set_stage("glossari")
+    dash.log_info("Glossarista", "Creant glossari terminològic...")
+    time.sleep(2)
 
-# FIX: Secure worker status check (DeepSeek V4 issue #4)
-def get_worker_status():
-    """Get worker status using psutil or subprocess"""
-    worker_running = False
-    worker_pid = None
-    
-    if HAS_PSUTIL:
-        # Use psutil for secure process iteration
-        for proc in psutil.process_iter(['pid', 'name', 'cmdline']):
-            try:
-                cmdline = proc.info.get('cmdline', [])
-                if cmdline and any('venice-worker' in str(c) for c in cmdline):
-                    worker_running = True
-                    worker_pid = proc.info['pid']
-                    break
-            except (psutil.NoSuchProcess, psutil.AccessDenied):
-                pass
-    else:
-        # Fallback to subprocess with security fixes
-        try:
-            result = subprocess.run(['pgrep', '-f', 'venice-worker'],
-                                    capture_output=True, text=True,
-                                    timeout=2,
-                                    shell=False)  # FIX: Never use shell=True
-            worker_running = bool(result.stdout.strip())
-            worker_pid = result.stdout.strip().split('\n')[0] if worker_running else None
-        except:
-            worker_running = False
-            worker_pid = None
-    
-    return worker_running, worker_pid
+    dash.set_chunks(5)
 
-@app.route('/api/status')
-@limiter.limit("10 per minute")
-def api_status():
-    """Get current system status"""
-    # Use secure worker status check
-    worker_running, worker_pid = get_worker_status()
-    
-    # Get Venice balance with timeout (DeepSeek V4 issue #5)
-    try:
-        venice_script = Path.home() / '.hermes' / 'skills' / 'openclaw-imports' / 'venice-ai' / 'scripts' / 'venice.py'
-        
-        # FIX: Validate path exists before execution
-        if not venice_script.exists():
-            raise FileNotFoundError(f"Venice script not found: {venice_script}")
-        
-        result = subprocess.run(['python3', str(venice_script), 'balance'],
-                                capture_output=True, text=True, 
-                                timeout=5,
-                                shell=False)  # FIX: Never use shell=True
-        balance_output = result.stdout
-        
-        # Parse DIEM balance
-        import re
-        diem_match = re.search(r'DIEM:\s*([\d.]+)', balance_output)
-        requests_match = re.search(r'Remaining requests:\s*(\d+)', balance_output)
-        tokens_match = re.search(r'Remaining tokens:\s*(\d+)', balance_output)
-        
-        diem_balance = float(diem_match.group(1)) if diem_match else 0.0
-        requests = int(requests_match.group(1)) if requests_match else 0
-        tokens = int(tokens_match.group(1)) if tokens_match else 0
-    except Exception as e:
-        diem_balance = 0.0
-        requests = 0
-        tokens = 0
-    
-    # Get queue status
-    queue_file = os.path.expanduser('~/biblioteca-universal-arion/sistema/queue/pending.json')
-    try:
-        with open(queue_file, 'r') as f:
-            queue_data = json.load(f)
-            queue_count = len(queue_data.get('pending', []))
-    except:
-        queue_count = 0
-    
-    return jsonify({
-        'worker': {
-            'running': worker_running,
-            'pid': worker_pid,
-            'uptime': None  # TODO: calculate uptime
-        },
-        'venice': {
-            'diem': diem_balance,
-            'requests': requests,
-            'tokens': tokens
-        },
-        'queue': {
-            'count': queue_count
-        },
-        'timestamp': datetime.now().isoformat()
-    })
+    for i in range(5):
+        dash.update_chunk(i, "traduint")
+        dash.log_info("Traductor", f"Traduint chunk {i+1}/5...")
+        time.sleep(1)
 
-@app.route('/api/events/<event_type>')
-def api_events(event_type):
-    """Get recent events of a specific type"""
-    if event_type in recent_events:
-        return jsonify(recent_events[event_type][-50:])
-    return jsonify([])
+        dash.update_chunk(i, "avaluant")
+        time.sleep(0.5)
 
-@app.route('/api/events/all')
-def api_all_events():
-    """Get all recent events"""
-    return jsonify(recent_events)
+        quality = 7.5 + (i * 0.3)
+        dash.update_chunk(i, "completat", quality=quality, iterations=1)
+        dash.log_success("Avaluador", f"Chunk {i+1} completat amb qualitat {quality:.1f}")
 
-# FIX: Add WebSocket authentication (DeepSeek V4 issue #3)
-socket_connections = set()
+    dash.set_stage("completat")
+    dash.log_success("Pipeline", "Traducció completada!")
 
-@socketio.on('connect')
-def handle_connect():
-    """Handle new client connection with basic auth"""
-    # FIX: Simple token-based auth (can be enhanced)
-    # For now, accept all connections from localhost/TailScale
-    client_ip = request.remote_addr
-    
-    # Allow connections from localhost and TailScale network
-    if client_ip in ['127.0.0.1', '::1'] or client_ip.startswith('100.'):
-        socket_connections.add(request.sid)
-        print(f"Client connected: {client_ip}")
-        emit('connected', {'message': 'Connected to Arion Dashboard'})
-    else:
-        # Reject other connections
-        print(f"Rejected connection from: {client_ip}")
-        return False  # Reject connection
-
-@socketio.on('disconnect')
-def handle_disconnect():
-    """Handle client disconnect"""
-    socket_connections.discard(request.sid)
-    print(f"Client disconnected")
-
-# FIX: Daemon threads with proper cleanup (DeepSeek V4 issue #9)
-def start_log_tailers():
-    """Start background threads to tail log files"""
-    threads = []
-    
-    # FIX: All threads are daemon=True for proper shutdown
-    for log_file, event_type in [(HERMES_LOG, 'hermes'), (LLM_LOG, 'llm'), 
-                                    (WORKER_LOG, 'worker'), (TOOL_LOG, 'tools'), 
-                                    (ERRORS_LOG, 'errors')]:
-        t = threading.Thread(target=log_tailer, args=(log_file, event_type), daemon=True)
-        t.start()
-        threads.append(t)
-    
-    # Tail LLM log
-    t = threading.Thread(target=log_tailer, args=(LLM_LOG, 'llm'))
-    t.daemon = True
-    t.start()
-    threads.append(t)
-    
-    # Tail worker log
-    t = threading.Thread(target=log_tailer, args=(WORKER_LOG, 'worker'))
-    t.daemon = True
-    t.start()
-    threads.append(t)
-    
-    # Tail tool log
-    t = threading.Thread(target=log_tailer, args=(TOOL_LOG, 'tools'))
-    t.daemon = True
-    t.start()
-    threads.append(t)
-    
-    return threads
-
-if __name__ == '__main__':
-    print("=" * 60)
-    print("ARION DASHBOARD SERVER")
-    print("=" * 60)
-    print(f"Logs directory: {LOGS_DIR}")
-    print(f"Starting log tailers...")
-    
-    # Start log tailers
-    threads = start_log_tailers()
-    
-    print(f"Starting web server on http://0.0.0.0:9120")
-    print("Press Ctrl+C to stop")
-    print("=" * 60)
-    
-    # Run Flask app with SocketIO
-    socketio.run(app, host='0.0.0.0', port=9120, debug=False, allow_unsafe_werkzeug=True)
+    input("Prem Enter per tancar...")
+    stop_dashboard()

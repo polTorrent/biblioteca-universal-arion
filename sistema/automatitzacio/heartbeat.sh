@@ -19,11 +19,11 @@ set -uo pipefail
 PROJECT="$HOME/biblioteca-universal-arion"
 TASKS_DIR="$PROJECT/sistema/tasks"
 TASK_MANAGER="$PROJECT/sistema/automatitzacio/task-manager.sh"
-QUEUE="$PROJECT/estat/obra-queue.json"
+QUEUE="$PROJECT/sistema/state/obra-queue.json"
 LOG="$PROJECT/sistema/logs/heartbeat.log"
 STATE_DIR="$PROJECT/sistema/state"
 MAX_PENDING=5
-MIN_DIEM_RESERVE=2
+MIN_DIEM_RESERVE=3
 
 # ── Dashboard Integration ─────────────────────────────────────────────────────
 DASHBOARD_DIR="$PROJECT/sistema/dashboard"
