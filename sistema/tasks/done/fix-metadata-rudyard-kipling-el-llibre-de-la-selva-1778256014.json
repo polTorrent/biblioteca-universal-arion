@@ -1,0 +1,8 @@
+{
+  "id": "fix-metadata-rudyard-kipling-el-llibre-de-la-selva-1778256014",
+  "type": "fix-metadata",
+  "priority": 1,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && Revisa i completa el fitxer obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/metadata.yml. Ha de tenir TOTS els camps obligatoris: titol, autor, llengua_original, categoria, any_original. Si hi ha original.md, afegeix font_original amb la URL real d'on s'ha obtingut (Gutenberg, Wikisource, Perseus, etc). Si no saps la font, cerca-la. Valida que el YAML sigui correcte amb: python3 -c \"import yaml; yaml.safe_load(open('obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/metadata.yml'))\" && git add obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/metadata.yml && git commit -m 'fix: completar metadata rudyard-kipling/el-llibre-de-la-selva' && git push",
+  "created": "2026-05-08T18:00:14+02:00"
+}
