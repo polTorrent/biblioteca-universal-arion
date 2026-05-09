@@ -199,7 +199,13 @@ run_task() {
     
     case "$task_type" in
         translate|translation)
-            timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$(echo "$instruction" | grep -oP 'obres/[a-z0-9/_-]+' | head -1)" --model "$model" 2>&1
+            # --continuar: reprendre des de l'últim chunk si ja existeix traducció
+            local obra_ruta="$(echo "$instruction" | grep -oP 'obres/[a-z0-9/_-]+' | head -1)"
+            local continuar_flag=""
+            if [ -f "$PROJECT_DIR/$obra_ruta/traduccio.md" ] && [ -s "$PROJECT_DIR/$obra_ruta/traduccio.md" ]; then
+                continuar_flag="--continuar"
+            fi
+            timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$obra_ruta" --model "$model" $continuar_flag 2>&1
             ;;
         fetch)
             eval timeout "$timeout" "$instruction" 2>&1
@@ -264,8 +270,8 @@ LAST_WATCHDOG=$(date +%s)
 
 while true; do
     # Timeout global
-    local now=$(date +%s)
-    local elapsed=$((now - START_TIME))
+    now=$(date +%s)
+    elapsed=$((now - START_TIME))
     if [ $elapsed -ge $MAX_RUNTIME ]; then
         log "⏰ Runtime màxim ($(($MAX_RUNTIME/3600))h) completat."
         break
