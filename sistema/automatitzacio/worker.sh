@@ -202,8 +202,43 @@ run_task() {
     
     case "$task_type" in
         translate|translation)
-            # --continuar: reprendre des de l'últim chunk si ja existeix traducció
+            # Pre-supervisió: analitzar estat de l'obra ABANS de traduir
             local obra_ruta="$(echo "$instruction" | grep -oP 'obres/[a-z0-9/_-]+' | head -1)"
+            if [ -n "$obra_ruta" ]; then
+                local pre_result=$(python3 "$PROJECT_DIR/sistema/scripts/pre_supervisio.py" "$obra_ruta" --json 2>/dev/null)
+                if [ -n "$pre_result" ]; then
+                    local decisio=$(echo "$pre_result" | python3 -c "import sys,json; print(json.load(sys.stdin).get('decisio',{}).get('accio','TRADUIR_COMPLET'))" 2>/dev/null)
+                    local motiu=$(echo "$pre_result" | python3 -c "import sys,json; print(json.load(sys.stdin).get('decisio',{}).get('motiu',''))" 2>/dev/null)
+                    log "   📋 Pre-supervisió: $decisio — $motiu"
+                    
+                    case "$decisio" in
+                        BLOQUEJAR)
+                            log "   🛑 Obra bloquejada: $motiu"
+                            echo "BLOQUEJAT: $motiu"
+                            return 1
+                            ;;
+                        SUPERVISAR)
+                            log "   ✅ Traducció completa — només supervisió necessària"
+                            echo "JA_COMPLETAT: $motiu"
+                            return 0
+                            ;;
+                        RETRADUIR)
+                            # Eliminar traducció existent per recomençar net
+                            log "   🔄 Retraducció: esborrant traduccio.md anterior"
+                            rm -f "$PROJECT_DIR/$obra_ruta/traduccio.md"
+                            rm -f "$PROJECT_DIR/$obra_ruta/.chunks_traduïts.json"
+                            ;;
+                        CONTINUAR)
+                            # Continuar des de l'últim chunk
+                            ;;
+                        TRADUIR_COMPLET)
+                            # Traducció nova des de zero
+                            ;;
+                    esac
+                fi
+            fi
+            
+            # --continuar: reprendre des de l'últim chunk si ja existeix traducció
             local continuar_flag=""
             if [ -f "$PROJECT_DIR/$obra_ruta/traduccio.md" ] && [ -s "$PROJECT_DIR/$obra_ruta/traduccio.md" ]; then
                 continuar_flag="--continuar"
