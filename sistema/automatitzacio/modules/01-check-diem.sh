@@ -25,7 +25,7 @@ if [[ "${BASH_SOURCE[0]}" == "${0}" ]]; then
     TASKS_DIR="$PROJECT/sistema/tasks"
     LOG="$PROJECT/sistema/logs/heartbeat.log"
     MAX_PENDING=5
-    MIN_DIEM_RESERVE=3
+    MIN_DIEM_RESERVE=0
     TASK_MANAGER="$PROJECT/sistema/automatitzacio/task-manager.sh"
     check_diem
 fi
