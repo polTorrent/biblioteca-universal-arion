@@ -46,14 +46,12 @@ else
     log "   ℹ️ Worker ja aturat (sense lockfile)"
 fi
 
-# 3. Aturar qualsevol procés venice-worker residual
-pkill -f "venice-worker" 2>/dev/null || true
-pkill -f "hermes-worker" 2>/dev/null || true
+# 3. Aturar qualsevol procés worker residual
+pkill -f "worker.sh" 2>/dev/null || true
 log "   ✅ Processos workers netejats"
 
-# 4. Verificar estat final
-if pgrep -f "venice-worker" > /dev/null 2>&1; then
-    log "⚠️ Alerta: encara hi ha processos venice-worker corrent"
+if pgrep -f "worker" > /dev/null 2>&1; then
+    log "⚠️ Alerta: encara hi ha processos worker corrent"
 else
     log "✅ Sistema Arion aturat completament"
 fi

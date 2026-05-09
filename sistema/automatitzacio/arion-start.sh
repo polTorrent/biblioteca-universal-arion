@@ -63,7 +63,7 @@ log "🚀 Iniciant sistema Arion..."
 
 # 1. Iniciar worker
 cd "$PROJECT"
-nohup bash sistema/automatitzacio/venice-worker.sh > /dev/null 2>&1 &
+nohup bash sistema/automatitzacio/worker.sh --mode=hybrid > /dev/null 2>&1 &
 log "   ✅ Venice Worker iniciat"
 
 # 2. Afegir cron del heartbeat (cada 2 hores, només dins horari actiu)
