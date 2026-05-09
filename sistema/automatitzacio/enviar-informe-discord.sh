@@ -33,7 +33,7 @@ running_real=$(ls -1 "$PROJECT/sistema/tasks/running/"*.json 2>/dev/null | wc -l
 # Comptar obres per estat
 validated=$(find "$PROJECT/obres" -name ".validated" 2>/dev/null | wc -l)
 needs_fix=$(find "$PROJECT/obres" -name ".needs_fix" 2>/dev/null | wc -l)
-incomplete=$($PROJECT/sistema/automatitzacio/detectar-incompletes-v2.sh 2>/dev/null | grep "Total tasques creades" | awk '{print $4}')
+incomplete=$($PROJECT/sistema/automatitzacio/detectar-incompletes.sh 2>/dev/null | grep "Total tasques creades" | awk '{print $4}')
 
 # Data
 now=$(date -u '+%d/%m/%Y %H:%M')
