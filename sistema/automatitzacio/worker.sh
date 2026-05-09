@@ -31,6 +31,7 @@ MAX_RUNTIME=32400    # 9 hores
 MIN_DIEM=3.0
 WATCHDOG_INTERVAL=300  # 5 minuts
 TASK_TIMEOUT_VENICE=300
+TASK_TIMEOUT_VENICE_OPUS=600
 TASK_TIMEOUT_HERMES=1800
 
 # ── Parsejar arguments ──────────────────────────────────────────────────────
@@ -186,6 +187,8 @@ run_task() {
     local genre=$(detect_genre "$instruction")
     local timeout=$(lookup_timeout "translate" "$genre" 2>/dev/null)
     [ -z "$timeout" ] && timeout=$TASK_TIMEOUT_VENICE
+    # Opus és més lent: doblar timeout
+    [[ "$model" == *opus* ]] && [ "$timeout" -le "$TASK_TIMEOUT_VENICE" ] && timeout=$TASK_TIMEOUT_VENICE_OPUS
     
     # Circuit breaker: si aquest model ha fallat 3 vegades seguides, canvia
     local model_errors=$(model_error_count "$model")
