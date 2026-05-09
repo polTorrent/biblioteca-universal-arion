@@ -104,10 +104,16 @@ def check_existing_translation(obra_dir: Path) -> dict:
     # Detectar problemes de qualitat
     issues = []
 
-    # 1. Blocs ERROR
-    error_count = text.count("[ERROR:")
-    if error_count > 0:
-        issues.append(f"{error_count} blocs [ERROR] — cal retraduir aquests chunks")
+    # 1. Blocs ERROR — distingir errors de pagament vs errors reals
+    error_lines_raw = [l for l in text.split("\n") if "[ERROR:" in l]
+    payment_errors = sum(1 for l in error_lines_raw if "spend limit" in l or "402" in l or "billing" in l.lower() or "quota" in l.lower())
+    real_errors = len(error_lines_raw) - payment_errors
+    result["payment_errors"] = payment_errors
+    result["real_errors"] = real_errors
+    if payment_errors > 0:
+        issues.append(f"{payment_errors} blocs [ERROR] de pagament — es poden ignorar,Continuar després")
+    if real_errors > 0:
+        issues.append(f"{real_errors} blocs [ERROR] reals — cal retraduir aquests chunks")
 
     # 2. Text en anglès (signe d'al·lucinació del model)
     english_patterns = [
@@ -143,12 +149,13 @@ def check_existing_translation(obra_dir: Path) -> dict:
 
     result["quality_issues"] = issues
 
-    # Determinar si es pot continuar
+    # Determinar si es pot continuar — només errors REALS bloquegen
+    has_real_errors = any("reals" in i for i in issues)
     if result["completion_pct"] < 5:
         result["can_continue"] = False
         result["resume_from_chunk"] = 0
-    elif issues and any("[ERROR]" in i for i in issues):
-        # Hi ha errors — millor recomençar si la traducció és curta
+    elif has_real_errors:
+        # Errors reals — millor recomençar si la traducció és curta
         if result["completion_pct"] < 30:
             result["can_continue"] = False
             result["resume_from_chunk"] = 0
@@ -269,15 +276,16 @@ def run_supervisio(obra_path: str, output_json: bool = False) -> dict:
             accio = "BLOQUEJAR"
             motiu = "; ".join(web_warnings)
     elif trad["exists"]:
-        if trad["completion_pct"] >= 95 and not trad["quality_issues"]:
+        has_real_errors = any("reals" in i for i in trad["quality_issues"])
+        if trad["completion_pct"] >= 95 and not has_real_errors:
             accio = "SUPERVISAR"
             motiu = f"Traducció {trad['completion_pct']}% completada — només supervisió"
-        elif trad["can_continue"] and not any("[ERROR]" in i for i in trad["quality_issues"]):
+        elif trad["can_continue"] and not has_real_errors:
             accio = "CONTINUAR"
             motiu = f"Traducció al {trad['completion_pct']}% — continuar des chunk {trad['resume_from_chunk']}"
-        elif trad["completion_pct"] < 30 and trad["quality_issues"]:
+        elif trad["completion_pct"] < 30 and has_real_errors:
             accio = "RETRADUIR"
-            motiu = f"Traducció {trad['completion_pct']}% amb errors — millor recomençar"
+            motiu = f"Traducció {trad['completion_pct']}% amb errors reals — millor recomençar"
         else:
             accio = "CONTINUAR"
             motiu = f"Traducció al {trad['completion_pct']}% — continuar des chunk {trad['resume_from_chunk']}"
