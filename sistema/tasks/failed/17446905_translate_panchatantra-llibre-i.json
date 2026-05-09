@@ -3,7 +3,7 @@
   "type": "translate",
   "priority": 1,
   "max_time": 90,
-  "instruction": "COMPLETA la traducció de 'panchatantra-llibre-i' (narrativa/vishnu-sharma). Original: 40254 paraules, traduït: 12658 paraules. Continua des d'on s'ha quedat mantenint l'estil existent.",
+  "instruction": "COMPLETA la traducci\u00f3 de 'panchatantra-llibre-i' (narrativa/vishnu-sharma). Original: 40254 paraules, tradu\u00eft: 12658 paraules. Continua des d'on s'ha quedat mantenint l'estil existent.",
   "obra": "obres/narrativa/vishnu-sharma/panchatantra-llibre-i",
   "model": "claude-opus-4-7",
   "metadata": {
@@ -12,5 +12,6 @@
     "category": "narrativa",
     "original_words": 40254,
     "traduccio_words": 12658
-  }
+  },
+  "retries": 3
 }
