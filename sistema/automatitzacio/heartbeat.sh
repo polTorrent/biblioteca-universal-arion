@@ -142,7 +142,7 @@ check_worker() {
 check_translations() {
     log "📚 Analitzant obres pendents..."
 # Detectar obres incompletes i generar tasques
-    bash "$PROJECT/sistema/automatitzacio/detectar-incompletes-v2.sh" 2>/dev/null || true
+    bash "$PROJECT/sistema/automatitzacio/detectar-incompletes.sh" 2>/dev/null || true
 
     [ ! -f "$QUEUE" ] && return 0
 
