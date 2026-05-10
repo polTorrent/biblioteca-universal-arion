@@ -1,0 +1,7 @@
+{
+  "id": "test-fetch-prova-20260510",
+  "type": "fetch",
+  "priority": 1,
+  "max_duration": 30,
+  "instruction": "echo 'Worker actiu - fetch test OK' && date -u >> /tmp/worker-test-arion.log && cat /tmp/worker-test-arion.log"
+}

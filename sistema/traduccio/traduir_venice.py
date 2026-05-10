@@ -28,9 +28,9 @@ VENICE_SCRIPT = Path.home() / ".hermes" / "skills" / "openclaw-imports" / "venic
 DEFAULT_MODEL = "claude-sonnet-4-6"
 CHUNK_SIZE = 1000  # Caràcters per chunk
 MAX_RETRIES = 3
-VENICE_TIMEOUT = 300  # 5 minuts per chunk (suficient per 1000 chars)
+VENICE_TIMEOUT = 3600  # 60 minuts per obra completa (chunks x 45s cadascun)
 
-# Model segons gènere
+# Model segons gènere (amb fallback barat per defecte)
 GENRE_MODELS = {
     "filosofia": "claude-opus-4-7",
     "poesia": "claude-opus-4-7",
@@ -38,6 +38,12 @@ GENRE_MODELS = {
     "narrativa": "claude-sonnet-4-6",
     "assaig": "claude-sonnet-4-6",
     "oriental": "claude-sonnet-4-6",
+}
+
+# Mapeig de models antics a noms actuals de Venice
+MODEL_ALIASES = {
+    "glm-5": "zai-org-glm-5",
+    "glm-5-1": "zai-org-glm-5-1",
 }
 
 
@@ -49,15 +55,40 @@ def run_venice(prompt: str, model: str, max_tokens: int = 4096) -> tuple[str, di
         "--model", model,
         "--max-tokens", str(max_tokens),
         "--temperature", "0.3",
-        prompt
+        "--no-venice-system-prompt",
+        "--timeout", "120",
+        # NOTA: No posar "--" aquí. Amb stdin (PIPE), argparse
+        # interpretaria "--" com a prompt text i ignoraria stdin.
+        # input=prompt ja és suficient per enviar el prompt.
     ]
     
-    result = subprocess.run(cmd, capture_output=True, text=True, timeout=VENICE_TIMEOUT)
+    result = subprocess.run(
+        cmd, capture_output=True, text=True, timeout=VENICE_TIMEOUT,
+        input=prompt  # Enviar prompt via stdin per evitar problemes amb accents
+    )
     
     if result.returncode != 0:
-        raise RuntimeError(f"Venice error: {result.stderr}")
+        # Venice retorna l'error a stdout amb format "Error (XXX): {json}"
+        err_text = result.stdout.strip() if result.stdout.strip() else result.stderr.strip()
+        raise RuntimeError(f"Venice error: {err_text}")
     
-    return result.stdout.strip(), {}
+    if not result.stdout.strip():
+        raise RuntimeError("Venice va retornar resposta buida (timeout silenciós)")
+    
+    # Netejar qualsevol residu de thinking tags (protecció extra)
+    content = result.stdout
+    # Treure blocs <thinking>...</thinking> (tags simples)
+    content = re.sub(r'<thinking>.*?</thinking>\s*', '', content, flags=re.DOTALL)
+    # Treure tags Unicode ＜thinking＞...＜/thinking＞
+    content = re.sub(r'＜thinking＞.*?＜/thinking＞\s*', '', content, flags=re.DOTALL)
+    # Treure línees residuals <thinking> o </thinking> soltes
+    content = re.sub(r'^\s*[＜<]/?thinking[＞>]\s*$', '', content, flags=re.MULTILINE)
+    content = content.strip()
+    
+    if not content:
+        raise RuntimeError("Venice va retornar només thinking, sense contingut traduït")
+    
+    return content, {}
 
 
 def load_metadata(obra_dir: Path) -> dict:
@@ -231,8 +262,16 @@ def translate_chunk(
     glossari: str,
     context_anterior: str,
     model: str,
+    recursion_depth: int = 0,
+    max_depth: int = 3,
 ) -> str:
-    """Tradueix un chunk amb Venice."""
+    """Tradueix un chunk amb Venice. Suporta divisió recursiva controlada."""
+    if recursion_depth >= max_depth:
+        raise RuntimeError(
+            f"Màxima profunditat de recursió assolida ({max_depth}) "
+            f"per chunk de {len(chunk)} chars"
+        )
+    
     prompt = build_translation_prompt(
         text=chunk,
         titol=metadata["titol"],
@@ -248,26 +287,62 @@ def translate_chunk(
             result, _ = run_venice(prompt, model, max_tokens=4096)
             return result
         except subprocess.TimeoutExpired:
-            # Timeout: reduir chunk i reintentar
-            if len(chunk) > 500:
-                print(f"⏱️ Timeout ({VENICE_TIMEOUT}s), dividint chunk de {len(chunk)} chars...")
+            # Timeout del subprocess: dividir chunk i reintentar
+            if len(chunk) > 500 and recursion_depth < max_depth:
+                print(f"⏱️ Timeout ({VENICE_TIMEOUT}s), dividint chunk de {len(chunk)} chars "
+                      f"(nivell {recursion_depth+1}/{max_depth})...")
                 half = len(chunk) // 2
-                first_half = translate_chunk(chunk[:half], metadata, glossari, context_anterior, model)
-                second_half = translate_chunk(chunk[half:], metadata, glossari, first_half[-500:], model)
+                first_half = translate_chunk(
+                    chunk[:half], metadata, glossari, context_anterior, model,
+                    recursion_depth=recursion_depth + 1, max_depth=max_depth
+                )
+                second_half = translate_chunk(
+                    chunk[half:], metadata, glossari, first_half[-500:], model,
+                    recursion_depth=recursion_depth + 1, max_depth=max_depth
+                )
                 return first_half + "\n\n" + second_half
             else:
-                raise RuntimeError(f"Timeout en chunk petit ({len(chunk)} chars) després de {VENICE_TIMEOUT}s")
+                raise RuntimeError(
+                    f"Timeout en chunk petit ({len(chunk)} chars) "
+                    f"després de {VENICE_TIMEOUT}s"
+                )
         except RuntimeError as e:
-            if "rate limit" in str(e).lower():
+            err_msg = str(e).lower()
+            if "rate limit" in err_msg:
                 print(f"Rate limit, esperant 30s...")
                 time.sleep(30)
-            elif "unicode" in str(e).lower() or "encoding" in str(e).lower():
+            elif "timeout silenciós" in err_msg or "empty" in err_msg:
+                # Timeout silenciós de Venice: mateixa lògica de divisió
+                if len(chunk) > 500 and recursion_depth < max_depth:
+                    print(f"⏱️ Venice buit (timeout silenciós), dividint chunk de {len(chunk)} chars "
+                          f"(nivell {recursion_depth+1}/{max_depth})...")
+                    half = len(chunk) // 2
+                    first_half = translate_chunk(
+                        chunk[:half], metadata, glossari, context_anterior, model,
+                        recursion_depth=recursion_depth + 1, max_depth=max_depth
+                    )
+                    second_half = translate_chunk(
+                        chunk[half:], metadata, glossari, first_half[-500:], model,
+                        recursion_depth=recursion_depth + 1, max_depth=max_depth
+                    )
+                    return first_half + "\n\n" + second_half
+                else:
+                    raise
+            elif "unicode" in err_msg or "encoding" in err_msg:
                 print(f"Error d'encoding, dividint chunk...")
-                # Dividir chunk encara més
-                half = len(chunk) // 2
-                first_half = translate_chunk(chunk[:half], metadata, glossari, context_anterior, model)
-                second_half = translate_chunk(chunk[half:], metadata, glossari, first_half[-500:], model)
-                return first_half + "\n\n" + second_half
+                if recursion_depth < max_depth:
+                    half = len(chunk) // 2
+                    first_half = translate_chunk(
+                        chunk[:half], metadata, glossari, context_anterior, model,
+                        recursion_depth=recursion_depth + 1, max_depth=max_depth
+                    )
+                    second_half = translate_chunk(
+                        chunk[half:], metadata, glossari, first_half[-500:], model,
+                        recursion_depth=recursion_depth + 1, max_depth=max_depth
+                    )
+                    return first_half + "\n\n" + second_half
+                else:
+                    raise
             elif attempt < MAX_RETRIES - 1:
                 print(f"Error (intento {attempt+1}/{MAX_RETRIES}): {e}")
                 time.sleep(10)
@@ -311,8 +386,9 @@ def main():
     print(f"📖 {metadata['titol']} de {metadata['autor']}")
     print(f"🌐 {metadata['llengua']} → català | Gènere: {metadata['genere']}")
     
-    # Seleccionar model
+    # Seleccionar model i resoldre àlies antics
     model = args.model or GENRE_MODELS.get(metadata["genere"], DEFAULT_MODEL)
+    model = MODEL_ALIASES.get(model, model)
     print(f"🤖 Model: {model}")
     
     # Carregar original

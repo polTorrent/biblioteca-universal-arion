@@ -1,185 +1,217 @@
 #!/usr/bin/env python3
 """
-hermes_task_executor.py — Executor de tasques per Biblioteca Arion amb eines Hermes
-Utilitza: terminal, file operations, git commands
+Executor automàtic per a tasques de fix-* de Biblioteca Arion.
+Processa prompts en natural generant scripts bash i executant-los.
+Requereix VENICE_API_KEY a l'entorn.
 """
+import json, os, sys, re, subprocess, yaml
 
-import json
-import sys
-import os
-import subprocess
-from pathlib import Path
+VENICE_API_KEY = os.getenv("VENICE_API_KEY", "")
+VENICE_URL = "https://api.venice.ai/api/v1/chat/completions"
 
-PROJECT_DIR = Path.home() / "biblioteca-universal-arion"
+def venice_chat(prompt, model="zai-org-glm-5", system="Ets un assistent per Biblioteca Arion.", max_tokens=2000):
+    import urllib.request, json as json_mod
+    body = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": system},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.2,
+        "max_tokens": max_tokens,
+        "venice_parameters": {"disable_system_prompt": True}
+    }
+    req = urllib.request.Request(
+        VENICE_URL,
+        data=json_mod.dumps(body).encode("utf-8"),
+        headers={"Authorization": f"Bearer {VENICE_API_KEY}", "Content-Type": "application/json"},
+        method="POST"
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=120) as resp:
+            data = json_mod.loads(resp.read().decode("utf-8"))
+            return data["choices"][0]["message"]["content"]
+    except Exception as e:
+        print(f"Error Venice: {e}", file=sys.stderr)
+        return None
 
-def execute_task(task_file: str) -> dict:
-    """Executa una tascautilitzant les eines disponibles."""
-    
+def extract_bash_from_instruction(instruction):
+    """
+    Extreure blocs de codi bash de prompts complexos.
+    Si no hi ha blocs de codi, intenta trobar la part executable.
+    """
+    # Buscar blocs ```bash ... ``` o ``` ... ```
+    bash_blocks = re.findall(r'```(?:bash)?\s*\n(.*?)\n```', instruction, re.DOTALL)
+    if bash_blocks:
+        return '\n'.join(bash_blocks)
+
+    # Buscar línies que comencin amb comandes típiques
+    lines = instruction.split('\n')
+    bash_lines = []
+    for line in lines:
+        stripped = line.strip()
+        if stripped.startswith('cd ') or stripped.startswith('python3 ') or stripped.startswith('git ') or stripped.startswith('echo ') or stripped.startswith('cat ') or stripped.startswith('cp ') or stripped.startswith('mv ') or stripped.startswith('mkdir ') or stripped.startswith('rm '):
+            bash_lines.append(stripped)
+
+    if bash_lines:
+        return '\n'.join(bash_lines)
+
+    return None
+
+def generate_bash_from_prompt(task_type, instruction, obra_path):
+    """
+    Per a prompts en natural (fix-metadata, fix-glossari, fix-portada),
+    generar un script bash executable via Venice LLM.
+    """
+    system = """Ets un assistent tècnic de Biblioteca Arion.
+Respon EXCLUSIVAMENT amb un script bash executable, sense explicacions.
+El script ha de:
+1. Treballar dins del directori del projecte
+2. No fer push a git automàticament (deixa-ho comentat)
+3. Validar resultats abans de continuar
+4. Retornar exit 0 si tot OK, exit 1 si hi ha errors
+"""
+    prompt = f"""Genera un script bash executable per a aquesta tasca de Biblioteca Arion:
+
+TIPUS: {task_type}
+OBRA: {obra_path}
+INSTRUCCIONS:
+{instruction}
+
+Respon NOMÉS amb el script bash, sense markdown, sense explicacions.
+Comença amb #!/bin/bash i acaba amb exit 0 o exit 1.
+"""
+    response = venice_chat(prompt, system=system, max_tokens=2000)
+    if not response:
+        return None
+
+    # Netejar markdown del voltant
+    response = response.strip()
+    if response.startswith("```"):
+        response = re.sub(r'^```(?:bash)?\s*\n', '', response)
+        response = re.sub(r'\n```\s*$', '', response)
+
+    return response.strip()
+
+def auto_fix_metadata(obra_path):
+    """
+    Versió automàtica sense LLM per fix-metadata.
+    Completa camps bàsics si falten.
+    """
+    import yaml, os
+    metadata_path = os.path.join(obra_path, "metadata.yml")
+    if not os.path.exists(metadata_path):
+        return False, "metadata.yml no existeix"
+
+    try:
+        with open(metadata_path) as f:
+            data = yaml.safe_load(f) or {}
+    except Exception as e:
+        return False, f"Error llegint YAML: {e}"
+
+    modified = False
+    # Camps obligatoris per defecte
+    defaults = {
+        "titol": os.path.basename(obra_path).replace("-", " ").title(),
+        "autor": "Desconegut",
+        "llengua_original": "llatí",
+        "categoria": os.path.basename(os.path.dirname(obra_path)) if os.path.dirname(obra_path) else "desconeguda",
+        "any_original": "Desconegut"
+    }
+
+    for key, val in defaults.items():
+        if key not in data or not data.get(key):
+            data[key] = val
+            modified = True
+
+    # Intentar extreure font_original de l'original.md si existeix
+    original_path = os.path.join(obra_path, "original.md")
+    if os.path.exists(original_path) and ("font_original" not in data or not data.get("font_original")):
+        with open(original_path) as f:
+            first_lines = ''.join(f.readline() for _ in range(10))
+        # Buscar URL als primers comentaris
+        urls = re.findall(r'(https?://[^\s\)]+)', first_lines)
+        if urls:
+            data["font_original"] = urls[0]
+            modified = True
+        else:
+            data["font_original"] = "No especificada"
+            modified = True
+
+    if modified:
+        with open(metadata_path, 'w') as f:
+            yaml.dump(data, f, allow_unicode=True, sort_keys=False)
+        return True, "Metadata completada automàticament"
+    return True, "Metadata ja completa"
+
+def run_task(task_file):
     with open(task_file) as f:
         task = json.load(f)
-    
-    task_id = task.get("id", "unknown")
-    task_type = task.get("type", "unknown")
-    obra_path = task.get("obra_path", "")
+
+    task_type = task.get("type", "")
     instruction = task.get("instruction", "")
-    
-    print(f"[TASK] {task_id}")
-    print(f"[TYPE] {task_type}")
-    print(f"[OBRA] {obra_path}")
-    
-    # Canviar al directori del projecte
-    os.chdir(PROJECT_DIR)
-    
-    result = {"success": False, "changes": 0, "message": ""}
-    
-    try:
-        if task_type in ["fetch", "fix-fetch"]:
-            result = execute_fetch_task(task)
-        elif task_type in ["translate", "fix-translate"]:
-            result = execute_translate_task(task)
+    obra = task.get("obra", "")
+    project_dir = os.path.expanduser("~/biblioteca-universal-arion")
+
+    # Determinar ruta de l'obra
+    obra_path = obra if obra else os.path.join(project_dir, re.search(r'obres/[a-z0-9/_/-]+', instruction).group(0) if re.search(r'obres/[a-z0-9/_/-]+', instruction) else "")
+
+    print(f"[EXECUTOR] Tasca: {task_type} -> {obra_path}")
+
+    # === fix-translate o fix-fetch: extreure bash del prompt ===
+    if task_type in ("fix-translate", "fix-fetch"):
+        bash_script = extract_bash_from_instruction(instruction)
+        if bash_script:
+            print(f"[EXECUTOR] Bash extret ({len(bash_script)} chars)")
+            result = subprocess.run(["bash", "-c", f"cd {project_dir} && {bash_script}"], capture_output=True, text=True, timeout=1800)
+            print(result.stdout)
+            if result.stderr:
+                print(result.stderr, file=sys.stderr)
+            return result.returncode
         else:
-            result = execute_generic_task(task)
-    except Exception as e:
-        result["message"] = f"Error: {str(e)}"
-        return result
-    
-    return result
+            print("[EXECUTOR] No s'ha pogut extreure bash del prompt")
+            return 1
 
-def execute_fetch_task(task: dict) -> dict:
-    """Executa tasca de tipus fetch - buscar i descarregar originals."""
-    obra_path = task.get("obra_path", "")
-    
-    # Extreu autor i obra del path
-    parts = obra_path.split("/")
-    if len(parts) >= 3:
-        # obres/categoria/autor/obra
-        if parts[0] == "obres" and parts[1] == "*":
-            # Buscar el directori real
-            for cat in ["filosofia", "narrativa", "poesia", "teatre", "oriental"]:
-                test_path = PROJECT_DIR / "obres" / cat / parts[2] / parts[3]
-                if test_path.exists():
-                    obra_path = str(test_path)
-                    break
-        elif len(parts) >= 4:
-            obra_path = str(PROJECT_DIR / "/".join(parts[:4]))
-    
-    obra_dir = Path(obra_path)
-    original_file = obra_dir / "original.md"
-    
-    print(f"[FETCH] Buscant original per: {obra_dir}")
-    
-    # Verificar si ja existeix
-    if original_file.exists() and original_file.stat().st_size > 100:
-        print(f"[FETCH] Original ja existeix ({original_file.stat().st_size} bytes)")
-        return {"success": True, "changes": 0, "message": "Original ja existeix"}
-    
-    # Crear directori si no existeix
-    obra_dir.mkdir(parents=True, exist_ok=True)
-    
-    # Intentar descarregar amb cercador_fonts_v2.py
-    cercador_script = PROJECT_DIR / "sistema/traduccio/cercador_fonts_v2.py"
-    
-    if cercador_script.exists():
-        print(f"[FETCH] Executant cercador de fonts...")
-        result = subprocess.run(
-            ["python3", str(cercador_script), "--obra", obra_dir.name],
-            capture_output=True,
-            text=True,
-            timeout=300
-        )
-        
-        if result.returncode == 0:
-            print(f"[FETCH] Cerca completada")
-            if original_file.exists():
-                return {"success": True, "changes": 1, "message": "Original descarregat"}
-        else:
-            print(f"[FETCH] Error cercador: {result.stderr[:200]}")
-    
-    # Si no troba el script o falla, crear placeholder
-    placeholder = f"# Original pendiente\n\nFont original no trobada.\nCal buscar manualment.\n"
-    original_file.write_text(placeholder)
-    
-    return {"success": False, "changes": 0, "message": "No s'ha pogut descarregar l'original"}
+    # === fix-metadata: intentar automàtic primer ===
+    if task_type == "fix-metadata":
+        ok, msg = auto_fix_metadata(obra_path)
+        if ok:
+            print(f"[EXECUTOR] {msg}")
+            # Intentar git add si hi ha canvis
+            subprocess.run(["git", "add", os.path.join(obra_path, "metadata.yml")], cwd=project_dir, capture_output=True)
+            return 0
+        print(f"[EXECUTOR] Auto-fix metadata fallit: {msg}")
+        # Fallback a LLM
 
-def execute_translate_task(task: dict) -> dict:
-    """Executa tasca de tipus translate - traduir o corregir traduccions."""
-    obra_path = task.get("obra_path", "")
-    task_type = task.get("type", "fix-translate")
-    
-    # Extreu path real
-    parts = obra_path.split("/")
-    if len(parts) >= 3 and parts[1] == "*":
-        for cat in ["filosofia", "narrativa", "poesia", "teatre", "oriental"]:
-            test_path = PROJECT_DIR / "obres" / cat / parts[2] / parts[3]
-            if test_path.exists():
-                obra_path = str(test_path)
-                break
-    elif len(parts) >= 4:
-        obra_path = str(PROJECT_DIR / "/".join(parts[:4]))
-    
-    obra_dir = Path(obra_path)
-    original_file = obra_dir / "original.md"
-    traduccio_file = obra_dir / "traduccio.md"
-    
-    print(f"[TRANSLATE] Processant: {obra_dir}")
-    
-    # Verificar que existeix l'original
-    if not original_file.exists():
-        print(f"[TRANSLATE] Error: No existeix original.md")
-        return {"success": False, "changes": 0, "message": "Falta original.md"}
-    
-    original_size = original_file.stat().st_size
-    
-    # Verificar traducció existent
-    if traduccio_file.exists():
-        traduccio_size = traduccio_file.stat().st_size
-        print(f"[TRANSLATE] Traducció existent: {traduccio_size} bytes (original: {original_size} bytes)")
-        
-        # Verificar si és placeholder
-        content = traduccio_file.read_text()[:1000]
-        if "placeholder" in content.lower() or "pendiente" in content.lower() or len(content.strip()) < 100:
-            print(f"[TRANSLATE] Traducció és placeholder o massa curta, necessita treball")
-            return {"success": False, "changes": 0, "message": "Traducció placeholder/incompleta requereix intervenció"}
-        
-        # Verificar proporció (traducció hauria de ser almenys 50% de l'original)
-        ratio = traduccio_size / original_size if original_size > 0 else 0
-        if ratio < 0.3:
-            print(f"[TRANSLATE] Traducció massa curta ({ratio:.1%} de l'original)")
-            return {"success": False, "changes": 0, "message": f"Traducció incompleta ({ratio:.1%})"}
-        
-        # Si la traducció existeix i té mida raonable, considerar-la completa
-        print(f"[TRANSLATE] Traducció vàlida ({ratio:.1%} de l'original)")
-        return {"success": True, "changes": 0, "message": f"Traducció completa ({traduccio_size} bytes)"}
-    else:
-        print(f"[TRANSLATE] No existeix traducció")
-        return {"success": False, "changes": 0, "message": "Falta traduccio.md"}
+    # === fix-metadata, fix-glossari, fix-portada: generar bash via LLM ===
+    if task_type in ("fix-metadata", "fix-glossari", "fix-portada"):
+        print("[EXECUTOR] Generant script via Venice LLM...")
+        bash_script = generate_bash_from_prompt(task_type, instruction, obra_path)
+        if not bash_script:
+            print("[EXECUTOR] No s'ha pogut generar script")
+            return 1
 
-def execute_generic_task(task: dict) -> dict:
-    """Executa tasca genèrica."""
-    instruction = task.get("instruction", "")
-    print(f"[GENERIC] Instrucció: {instruction[:100]}...")
-    
-    # Per a tasques genèriques, retornem que necessiten intervenció manual
-    return {"success": False, "changes": 0, "message": "Tasca genèrica requereix intervenció"}
+        print(f"[EXECUTOR] Script generat ({len(bash_script)} chars)")
+        print("---SCRIPT---")
+        print(bash_script)
+        print("---FI SCRIPT---")
 
-def main():
-    if len(sys.argv) < 2:
-        print("Ús: hermes_task_executor.py <task_file.json>")
-        sys.exit(1)
-    
-    task_file = sys.argv[1]
-    
-    if not os.path.exists(task_file):
-        print(f"Error: No existeix {task_file}")
-        sys.exit(1)
-    
-    result = execute_task(task_file)
-    
-    print(f"\n[RESULT] Success: {result['success']}")
-    print(f"[RESULT] Changes: {result['changes']}")
-    print(f"[RESULT] Message: {result['message']}")
-    
-    sys.exit(0 if result["success"] else 1)
+        result = subprocess.run(["bash", "-c", f"cd {project_dir} && {bash_script}"], capture_output=True, text=True, timeout=600)
+        print(result.stdout)
+        if result.stderr:
+            print(result.stderr, file=sys.stderr)
+        return result.returncode
+
+    # === Default: intentar bash directe ===
+    print("[EXECUTOR] Executant com a bash directe...")
+    result = subprocess.run(["bash", "-c", f"cd {project_dir} && {instruction}"], capture_output=True, text=True, timeout=600)
+    print(result.stdout)
+    if result.stderr:
+        print(result.stderr, file=sys.stderr)
+    return result.returncode
 
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) < 2:
+        print("Ús: python3 hermes_task_executor.py <tasca.json>", file=sys.stderr)
+        sys.exit(1)
+    sys.exit(run_task(sys.argv[1]))

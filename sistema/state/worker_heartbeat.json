@@ -1,10 +1,10 @@
 {
-    "pid": 25690,
-    "mode": "venice",
-    "current_task": "shutdown",
-    "diem_balance": "0.017513422485615493",
-    "uptime_seconds": 1028,
+    "pid": 31213,
+    "mode": "hybrid",
+    "current_task": "translate-strindberg-test-20260510",
+    "diem_balance": "5.883457772485615",
+    "uptime_seconds": 3,
     "tasks_completed": 0,
-    "tasks_failed": 0,
-    "last_heartbeat": "2026-05-09T09:17:44Z"
+    "tasks_failed": 2,
+    "last_heartbeat": "2026-05-10T06:51:37Z"
 }
