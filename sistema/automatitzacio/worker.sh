@@ -19,6 +19,12 @@ DIEM_STOP="$STATE_DIR/diem_stop"
 VENICE_CLI="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
 MODELS_CONF="$PROJECT_DIR/sistema/config/models.conf"
 
+# Carregar variables d'entorn del .env (VENICE_API_KEY, etc.)
+if [ -f "$PROJECT_DIR/.env" ]; then
+    # shellcheck disable=SC1090
+    set -a; source "$PROJECT_DIR/.env"; set +a
+fi
+
 # ── Paràmetres per defecte ────────────────────────────────────────────────────
 MODE="hybrid"
 MAX_RETRIES=3
@@ -28,10 +34,10 @@ COOLDOWN_FAIL=60
 COOLDOWN_EMERGENCY=600
 CONSECUTIVE_ERRORS_FILE="/tmp/arion-worker-errors.txt"
 MAX_RUNTIME=32400    # 9 hores
-MIN_DIEM=3.0
+MIN_DIEM=2.0
 WATCHDOG_INTERVAL=300  # 5 minuts
-TASK_TIMEOUT_VENICE=300
-TASK_TIMEOUT_VENICE_OPUS=600
+TASK_TIMEOUT_VENICE=900
+TASK_TIMEOUT_VENICE_OPUS=1200
 TASK_TIMEOUT_HERMES=1800
 
 # ── Parsejar arguments ──────────────────────────────────────────────────────
@@ -162,8 +168,7 @@ run_task() {
         hermes) use_hermes=true ;;
         hybrid)
             case "$task_type" in
-                fix|supervision|code-review|maintenance) use_hermes=true ;;
-                translate|fetch|translation|publish) use_hermes=false ;;
+                fix-metadata|fix-glossari|fix-portada|fix-translate|fix-fetch|supervision|code-review|maintenance) use_hermes=true ;;
                 *) use_hermes=false ;;
             esac
             ;;
@@ -245,12 +250,12 @@ run_task() {
             fi
             timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$obra_ruta" --model "$model" $continuar_flag 2>&1
             ;;
-        fetch)
-            eval timeout "$timeout" "$instruction" 2>&1
+        fetch|fix-translate|fix-fetch)
+            eval timeout "$timeout" bash -c "$instruction" 2>&1
             ;;
         *)
-            # Per tasques administratives, usar Venice chat directe
-            timeout "$timeout" python3 "$VENICE_CLI" chat --model "$model" --system "Ets un assistent per Biblioteca Arion. Executa la tasca demanada." --message "$instruction" 2>&1
+            # Per tasques administratives (fix-metadata, fix-glossari, etc.), usar Venice chat
+            timeout "$timeout" python3 "$VENICE_CLI" chat --model "$model" --system "Ets un assistent per Biblioteca Arion. Executa la tasca demanada." "$instruction" 2>&1
             ;;
     esac
     return $?

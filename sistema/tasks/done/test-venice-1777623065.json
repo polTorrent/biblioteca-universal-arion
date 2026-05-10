@@ -1,9 +1,0 @@
-{
-  "id": "test-venice-task",
-  "type": "test",
-  "priority": 10,
-  "instruction": "Aquesta és una tasca de prova. Simplement escriu 'Hola, sóc Venice AI!' al fitxer /tmp/test-venice-output.txt",
-  "created_at": "2026-05-01T10:30:00Z",
-  "retries": 0,
-  "max_retries": 1
-}

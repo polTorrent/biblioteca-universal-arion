@@ -1,0 +1,7 @@
+{
+  "id": "translate-petrarca-sonets-20260510",
+  "type": "translate",
+  "priority": 1,
+  "max_duration": 1800,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/traduir_venice.py --ruta obres/poesia/francesco-petrarca/seleccio-20-sonets --model zai-org-glm-5"
+}

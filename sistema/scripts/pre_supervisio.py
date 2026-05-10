@@ -14,8 +14,10 @@ Analitza una obra ABANS de traduir-la per:
 """
 import argparse
 import json
+import os
 import re
 import sys
+import urllib.request
 from pathlib import Path
 
 PROJECT = Path.home() / "biblioteca-universal-arion"
@@ -137,15 +139,47 @@ def check_existing_translation(obra_dir: Path) -> dict:
     if long_lines > 0:
         issues.append(f"{long_lines} línies >2000 chars — possible error de chunking")
 
-    # 5. Verificar coherència de capítols
+    # 5. Verificar estructura — índex, llibres, capítols
     original = obra_dir / "original.md"
     if original.exists():
         orig_text = original.read_text(encoding="utf-8", errors="replace")
-        orig_headers = set(re.findall(r'^#{1,3}\s+.+', orig_text, re.M))
-        trad_headers = set(re.findall(r'^#{1,3}\s+.+', text, re.M))
-        missing = len(orig_headers) - len(orig_headers & trad_headers)
-        if missing > 2 and len(orig_headers) > 0:
-            issues.append(f"Possible manca de {missing} seccions vs original")
+
+        # 5a. Headers duplicats (mateix nivell, mateix text)
+        trad_headers = re.findall(r'^(#{1,4})\s+(.+)', text, re.M)
+        seen = {}
+        for level, title in trad_headers:
+            key = f"{level} {title.strip()}"
+            seen[key] = seen.get(key, 0) + 1
+        dupes = {k: v for k, v in seen.items() if v > 1}
+        if dupes:
+            for k, v in dupes.items():
+                issues.append(f"Header duplicat ({v}x): '{k}' — estructura corrompuda,errors estructurals")
+
+        # 5b. Nombre de llibres/parts — comparar amb original
+        orig_books = re.findall(r'^##\s+.+', orig_text, re.M)
+        trad_books = re.findall(r'^##\s+.+', text, re.M)
+        if len(orig_books) > 0 and len(trad_books) > len(orig_books) * 1.5:
+            issues.append(f"Massa headers H2: original={len(orig_books)}, traducció={len(trad_books)} — possible duplicació de chunks,errors estructurals")
+
+        # 5c. Ordre de capítols — detectar desordenació
+        trad_h3_nums = re.findall(r'^###\s+(?:Capítol|Chapter|Κεφάλαιον)\s+(\d+)', text, re.M)
+        if len(trad_h3_nums) > 3:
+            nums = [int(n) for n in trad_h3_nums]
+            for i in range(1, len(nums)):
+                if nums[i] < nums[i-1] and nums[i] != 1:
+                    issues.append(f"Capítols desordenats: #{nums[i-1]} seguit de #{nums[i]} — possible chunk desordenat,errors estructurals")
+                    break
+
+        # 5d. Detectar línees d'índex (TOC) que haurien d'estar al principi
+        toc_lines = [l for l in text.split("\n") if re.match(r'^\s*[-*]\s+.*\.\.\.+', l) or re.match(r'^\s*\d+\.\s+\[', l)]
+        if toc_lines and not text.strip().startswith("#"):
+            issues.append(f"{len(toc_lines)} línies d'índex (TOC) trobades però no al principi — possible chunk erroni,errors estructurals")
+
+        # 5e. Text no traduït — fragments en idioma original al mig
+        orig_lang_markers = ["Κεφάλαιον", "Βιβλίον", "Chapter", "Buch"]
+        orig_lang_in_trad = sum(1 for l in text.split("\n") if any(m in l for m in orig_lang_markers))
+        if orig_lang_in_trad > 3:
+            issues.append(f"{orig_lang_in_trad} línies amb headers en idioma original — possible fragment no traduït,errors estructurals")
 
     result["quality_issues"] = issues
 
@@ -240,9 +274,176 @@ def check_metadata(obra_dir: Path) -> dict:
     return result
 
 
+# ── Revisió amb model lleuger ───────────────────────────────────────────────
+
+VENICE_API_BASE = "https://api.venice.ai/api/v1"
+
+
+def _venice_api_key() -> str | None:
+    """Obté la clau API de Venice."""
+    key = os.environ.get("VENICE_API_KEY", "").strip()
+    if key:
+        return key
+    # Provar .env al projecte
+    env_file = PROJECT / ".env"
+    if env_file.exists():
+        for line in env_file.read_text().split("\n"):
+            if line.startswith("VENICE_API_KEY="):
+                return line.split("=", 1)[1].strip().strip('"').strip("'")
+    return None
+
+
+def check_with_llm(obra_dir: Path, _sample_chars: int = 6000) -> dict:
+    """
+    Revisa l'estructura de la traducció amb un model lleuger (~0.15 DIEM).
+    En lloc d'enviar contingut tallat (que confon el model), envia:
+    - Tota la jerarquia de headers (H1-H4)
+    - Enllaços interns trobats
+    - Índex (TOC) si existeix
+    - Mides del document per context
+
+    Detecta: headers desordenats, duplicats, capítols que falten,
+    enllaços trencats, índex mal format.
+    """
+    traduccio = obra_dir / "traduccio.md"
+    original = obra_dir / "original.md"
+    result = {"llm_checked": False, "llm_available": False, "issues": [], "cost_diems": 0.0}
+
+    if not traduccio.exists():
+        return result
+
+    api_key = _venice_api_key()
+    if not api_key:
+        result["issues"].append("LLM: VENICE_API_KEY no trobada — check estructura manual")
+        return result
+
+    # Extreure estructura del document
+    text = traduccio.read_text(encoding="utf-8", errors="replace")
+    orig_text = original.read_text(encoding="utf-8", errors="replace") if original.exists() else ""
+
+    # Headers del text traduït
+    trad_headers = re.findall(r'^(#{1,4})\s+(.+)', text, re.M)
+    headers_list = "\n".join(f"{level} {title}" for level, title in trad_headers)
+
+    # Headers de l'original (per comparar)
+    orig_headers = re.findall(r'^(#{1,4})\s+(.+)', orig_text, re.M) if orig_text else []
+    orig_headers_list = "\n".join(f"{level} {title}" for level, title in orig_headers)
+
+    # Enllaços interns
+    links = re.findall(r'\[([^\]]+)\]\(([^)]+)\)', text)
+    links_broken = []
+    for label, target in links:
+        if target.startswith("#"):
+            anchor = target[1:]
+            # Normalitzar: treure accents i minúscules per comparar amb headers
+            anchor_norm = re.sub(r'[^\w\s-]', '', anchor).lower().replace(" ", "-")
+            header_texts = [re.sub(r'[^\w\s-]', '', t).lower().replace(" ", "-") for _, t in trad_headers]
+            if anchor_norm not in header_texts:
+                links_broken.append(f"[{label}](#{anchor})")
+    links_text = "\n".join(links_broken) if links_broken else "Cap enllaç intern trencat detectat"
+
+    # Índex (TOC) — línies amb puntets o numeració
+    toc_lines = [l for l in text.split("\n") if re.match(r'^\s*[-*\d]\s+', l) and ("..." in l or "[#" in l)]
+    toc_text = "\n".join(toc_lines[:30]) if toc_lines else "No s'ha detectat índex formal"
+
+    prompt = f"""Ets un editor expert en estructura de textos acadèmics. Revisa aquesta estructura de document.
+
+DADES DEL DOCUMENT:
+- Mida total: {len(text)} caràcters, {text.count(chr(10))} línies
+- Mida original: {len(orig_text)} caràcters
+
+JERARQUIA DE HEADERS (tots els # del document traduït):
+{headers_list}
+
+HEADERS DE L'ORIGINAL (per comparar):
+{orig_headers_list}
+
+ENLLAÇOS INTERNES TRENCATS (si n'hi ha):
+{links_text}
+
+TAULA DE CONTINGUTS (si existeix):
+{toc_text}
+
+INSTRUCCIONS:
+1. Compara els headers de la traducció amb els de l'original. Detecta si falten capítols, hi ha duplicats, o l'ordre és incorrecte.
+2. Revisa els enllaços interns: si hi ha enllaços que apunten a headers inexistents, són trencats.
+3. Revisa l'índex: si existeix, comprova que coincideixi amb els headers reals del document.
+4. NOMÉS reporta problemes OBJECTIVAMENT demostrables. NO imaginin problemes.
+5. IMPORTANT: La presència/absència del nom de l'autor com a header NO és un error. Els traductors sovint canvien els nivells de headers.
+6. IMPORTANT: NOMÉS reporta MISSING_SECTION si falten MÚLTIPLES capítols/seccions (3 o més), NO per un sol header que falta.
+7. IMPORTANT: Una traducció incompleta (menys headers que l'original) és NORMAL si encara està en curs. NO la reportis com a defecte llevat que faltin molts capítols clau.
+
+Respon EXACTAMENT en aquest format JSON (sense markdown, sense explicacions):
+
+{{"problemes": [{{"tipus": "MISSING_SECTION|BROKEN_TOC|LINK_BROKEN|DUPLICATE|WRONG_ORDER|STRUCTURE", "descripcio": "...", "gravetat": "ALTA|MITJA|BAIXA"}}], "verdict": "OK|AMBIGU|DEFECTUOS"}}
+
+On:
+- MISSING_SECTION = capítol/secció falta (comparant traducció vs original, només si n'hi ha molts de diferència)
+- BROKEN_TOC = índex incomplet o no coincideix amb headers
+- LINK_BROKEN = enllaç intern apunta a header inexistent
+- DUPLICATE = header exacte duplicat
+- WRONG_ORDER = ordre numèric de capítols incorrecte (ex: 1, 3, 2)
+- STRUCTURE = altre problema objectiu (NO incloguis diferències de nivell de headers, que són normals en traduccions)"""
+
+    payload = {
+        "model": "zai-org-glm-5",
+        "messages": [{"role": "user", "content": prompt}],
+        "temperature": 0.1,
+        "max_tokens": 600,
+        "venice_parameters": {"disable_thinking": True, "strip_thinking_response": True}
+    }
+
+    try:
+        req = urllib.request.Request(
+            f"{VENICE_API_BASE}/chat/completions",
+            method="POST",
+            headers={"Authorization": f"Bearer {api_key}", "Content-Type": "application/json"},
+            data=json.dumps(payload).encode()
+        )
+        resp = urllib.request.urlopen(req, timeout=45)
+        data = json.loads(resp.read())
+
+        content = data.get("choices", [{}])[0].get("message", {}).get("content", "")
+        usage = data.get("usage", {})
+        result["cost_diems"] = round(usage.get("total_tokens", 3000) / 1000 * 0.15, 3)
+
+        # Parsejar JSON
+        content_clean = content.strip()
+        if content_clean.startswith("```"):
+            lines = content_clean.split("\n")
+            content_clean = "\n".join(lines[1:-1] if lines[-1].strip() == "```" else lines[1:])
+        start = content_clean.find("{")
+        end = content_clean.rfind("}")
+        if start != -1 and end != -1 and end > start:
+            llm_result = json.loads(content_clean[start:end+1])
+        else:
+            llm_result = {"problemes": [], "verdict": "OK"}
+
+        result["llm_checked"] = True
+        result["llm_available"] = True
+        result["llm_verdict"] = llm_result.get("verdict", "AMBIGU")
+
+        for p in llm_result.get("problemes", []):
+            grav = p.get("gravetat", "BAIXA")
+            desc = p.get("descripcio", "")
+            tipus = p.get("tipus", "STRUCTURE")
+            if grav in ("ALTA", "MITJA") and desc:
+                result["issues"].append(f"[LLM-{tipus}] {desc} (gravetat: {grav})")
+
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode("utf-8", errors="replace")[:200]
+        result["issues"].append(f"LLM: Error HTTP {e.code} — {err_body}")
+    except json.JSONDecodeError as e:
+        result["issues"].append(f"LLM: Error parsejant resposta del model — {e}")
+    except Exception as e:
+        result["issues"].append(f"LLM: Error de connexió — {e}")
+
+    return result
+
+
 # ── Main ────────────────────────────────────────────────────────────────────
 
-def run_supervisio(obra_path: str, output_json: bool = False) -> dict:
+def run_supervisio(obra_path: str, output_json: bool = False, use_llm: bool = True) -> dict:
     """Executa totes les comprovacions i retorna informe."""
     obra_dir = PROJECT / obra_path if not Path(obra_path).is_absolute() else Path(obra_path)
 
@@ -257,6 +458,7 @@ def run_supervisio(obra_path: str, output_json: bool = False) -> dict:
         "pipeline": check_pipeline_state(obra_dir),
         "glossari": check_glossary(obra_dir),
         "metadata": check_metadata(obra_dir),
+        "llm_review": check_with_llm(obra_dir) if use_llm else {"llm_checked": True, "llm_available": False, "issues": ["Omitit per --no-llm"], "cost_diems": 0.0},
     }
 
     # Decisions automàtiques
@@ -265,6 +467,17 @@ def run_supervisio(obra_path: str, output_json: bool = False) -> dict:
 
     trad = informe["traduccio"]
     orig = informe["original"]
+    llm = informe["llm_review"]
+
+    # Problemes estructurals del LLM poden canviar la decisió
+    llm_high = any("(gravetat: ALTA)" in i for i in llm.get("issues", []))
+    llm_med = any("(gravetat: MITJA)" in i for i in llm.get("issues", []))
+    llm_defectuos = llm.get("llm_verdict") == "DEFECTUOS"
+    # Estructura trencada: NO retraduir, només notificar. L'usuari decideix.
+    llm_struct_critical = False  # Desactivat: mai esborrar traducció automàticament
+    # MISSING_SECTION mai és crític — sempre és més intel·ligent completar que recomençar
+    llm_missing_critical = False
+    llm_missing_completar = any("MISSING_SECTION" in i for i in llm.get("issues", []))
 
     if not orig["exists"]:
         accio = "BLOQUEJAR"
@@ -277,24 +490,30 @@ def run_supervisio(obra_path: str, output_json: bool = False) -> dict:
             motiu = "; ".join(web_warnings)
     elif trad["exists"]:
         has_real_errors = any("reals" in i for i in trad["quality_issues"])
-        if trad["completion_pct"] >= 95 and not has_real_errors:
-            accio = "SUPERVISAR"
-            motiu = f"Traducció {trad['completion_pct']}% completada — només supervisió"
-        elif trad["can_continue"] and not has_real_errors:
-            accio = "CONTINUAR"
-            motiu = f"Traducció al {trad['completion_pct']}% — continuar des chunk {trad['resume_from_chunk']}"
-        elif trad["completion_pct"] < 30 and has_real_errors:
+        has_struct_errors = any("errors estructurals" in i for i in trad["quality_issues"])
+
+        # OVERRIDE: qualitat anterior desastrosa (encara és l'únic que pot activar RETRADUIR)
+        if trad["completion_pct"] < 30 and has_real_errors:
             accio = "RETRADUIR"
             motiu = f"Traducció {trad['completion_pct']}% amb errors reals — millor recomençar"
+        elif trad["completion_pct"] >= 95 and not has_real_errors and not has_struct_errors and not llm_high:
+            accio = "SUPERVISAR"
+            motiu = f"Traducció {trad['completion_pct']}% completada — només supervisió"
+        elif trad["can_continue"] and not has_real_errors and not llm_high:
+            accio = "CONTINUAR"
+            motiu = f"Traducció al {trad['completion_pct']}% — continuar des chunk {trad['resume_from_chunk']}"
         else:
             accio = "CONTINUAR"
             motiu = f"Traducció al {trad['completion_pct']}% — continuar des chunk {trad['resume_from_chunk']}"
-
     # Afegir warning si qualitat pipeline anterior era baixa
     if informe["pipeline"]["quality_avg"] is not None and informe["pipeline"]["quality_avg"] < 5:
         if accio == "CONTINUAR":
             accio = "RETRADUIR"
             motiu += " [OVERRIDE: qualitat anterior <5/10, recomanat retraduir]"
+
+    # Si LLM troba problemes mitjans, afegir com a nota però no canviar acció
+    if llm_med and accio in ("CONTINUAR", "SUPERVISAR"):
+        motiu += f" [LLM: {len(llm['issues'])} problemes estructurals detectats]"
 
     informe["decisio"] = {"accio": accio, "motiu": motiu}
 
@@ -343,6 +562,19 @@ def print_supervisio(informe: dict):
     for w in m["warnings"]:
         print(f"   ⚠️  {w}")
 
+    # Resultats del LLM
+    llm = informe.get("llm_review", {})
+    if llm.get("llm_checked"):
+        print(f"\n🤖 Revisió LLM ({llm.get('cost_diems', 0)} DIEM):")
+        print(f"   Verdict: {llm.get('llm_verdict', '—')}")
+        if llm.get("issues"):
+            for i in llm["issues"]:
+                print(f"   🔴 {i}")
+        else:
+            print(f"   ✅ Sense problemes estructurals detectats")
+    elif llm.get("llm_available") is False and llm.get("issues"):
+        print(f"\n🤖 Revisió LLM: ⚠️  {llm['issues'][0]}")
+
     print(f"\n{'='*60}")
     emoji = {"TRADUIR_COMPLET": "🆕", "CONTINUAR": "▶️", "RETRADUIR": "🔄",
              "SUPERVISAR": "✅", "BLOQUEJAR": "🛑"}
@@ -354,5 +586,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Pre-supervisió d'una obra")
     parser.add_argument("obra_path", help="Ruta de l'obra (ex: obres/filosofia/aristotil/peri-psykhes)")
     parser.add_argument("--json", action="store_true", help="Sortida JSON")
+    parser.add_argument("--no-llm", action="store_true", help="Ometre revisió amb model lleuger (estalvia DIEM)")
     args = parser.parse_args()
-    run_supervisio(args.obra_path, output_json=args.json)
+
+    run_supervisio(args.obra_path, output_json=args.json, use_llm=not args.no_llm)
