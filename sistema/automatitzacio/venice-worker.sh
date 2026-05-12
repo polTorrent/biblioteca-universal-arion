@@ -29,11 +29,11 @@ IDLE_POLL=60                 # Segons entre polls quan no hi ha tasques
 MIN_DIEM=3.0                 # Mínim DIEM per operar (per sota = stop) - deixa marge per comunicació
 
 # Model de Venice AI per defecte (per a tasques administratives)
-DEFAULT_MODEL="zai-org-glm-5"
+DEFAULT_MODEL="claude-opus-4-7"
 MODELS_CONF="$PROJECT_DIR/sistema/config/models.conf"
 
 # ── Selector de models (llegeix de models.conf amb fallback hardcoded) ──────
-# Format models.conf: <grup>:<tipus> = <model> timeout=<segons>
+# Format models.conf: <grup>:<tipus> = <model> timeout=<segons> [thinking=on|off]
 lookup_model() {
     local group="$1"
     local subtype="${2:-default}"
@@ -65,6 +65,24 @@ lookup_timeout() {
         [ -n "$timeout" ] && echo "$timeout" && return 0
     fi
     return 1
+}
+
+# Llegeix flag thinking= del models.conf (on/off, default=off)
+lookup_thinking() {
+    local group="$1"
+    local subtype="${2:-default}"
+    local conf_file="$3"
+    
+    if [ -f "$conf_file" ]; then
+        local thinking
+        thinking=$(grep -E "^${group}:${subtype}[[:space:]]*=" "$conf_file" 2>/dev/null | head -1 | grep -ioP 'thinking=\K(on|off)')
+        if [ -z "$thinking" ] && [ "$subtype" != "default" ]; then
+            thinking=$(grep -E "^${group}:default[[:space:]]*=" "$conf_file" 2>/dev/null | head -1 | grep -ioP 'thinking=\K(on|off)')
+        fi
+        [ -n "$thinking" ] && echo "$thinking" && return 0
+    fi
+    echo "off"  # Default: no thinking (ràpid i barat)
+    return 0
 }
 
 detect_genre() {
@@ -103,7 +121,7 @@ select_model() {
             local genre
             if [ "$task_type" = "fix-translate" ] && echo "$task_instruction" | grep -qiE "NO_ORIGINAL|ORIGINAL_MASSA_CURT|ORIGINAL_PLACEHOLDER|original.md" && ! echo "$task_instruction" | grep -qiE "NO_TRADUCCIO|TRADUCCIO_INCOMPLETA|TRADUCCIO_PLACEHOLDER|traduccio.md"; then
                 result=$(lookup_model "fetch" "default" "$MODELS_CONF")
-                echo "${result:-deepseek-v3.2}"
+                echo "${result:-deepseek-v4-flash}"
                 return 0
             fi
             genre=$(detect_genre "$task_instruction")
@@ -114,21 +132,22 @@ select_model() {
             # Fallback hardcoded
             case "$genre" in
                 filosofia|poesia|teatre) echo "claude-opus-4-7" ;;
-                narrativa|assaig|oriental) echo "claude-sonnet-4-6" ;;
+                narrativa|assaig) echo "claude-sonnet-4-6" ;;
+                oriental) echo "qwen3-235b-a22b-instruct-2507" ;;
                 *) echo "claude-opus-4-7" ;;
             esac
             ;;
         fetch|fix-fetch|investigar)
             result=$(lookup_model "fetch" "default" "$MODELS_CONF")
-            echo "${result:-deepseek-v3.2}"
+            echo "${result:-deepseek-v4-flash}"
             ;;
         review|supervision|supervisio|validacio)
             result=$(lookup_model "review" "default" "$MODELS_CONF")
-            echo "${result:-gemini-3-1-pro-preview}"
+            echo "${result:-claude-opus-4-7}"
             ;;
         glossari|metadata|web|test|fix-metadata|fix-glossari|fix-portada|fix-llengua|fix-notes|fix-web|publish|maintenance|code-review)
             result=$(lookup_model "admin" "default" "$MODELS_CONF")
-            echo "${result:-zai-org-glm-5}"
+            echo "${result:-claude-opus-4-7}"
             ;;
         *)
             echo "$DEFAULT_MODEL"
@@ -597,7 +616,7 @@ acquire_lock
 check_diem_and_maybe_stop  # Comprovar DIEM abans de processar
 log "🚀 Venice Worker iniciat (PID $$) — Selectorde Models Intel·ligent"
 log "   Config: retries=$MAX_RETRIES, max_fails=$MAX_CONSECUTIVE_FAILS, timeout=${TASK_TIMEOUT}s"
-log "   Models: traduccions→claude-opus/sonnet, fetch→deepseek-v3.2, metadata→glm-5"
+    log "   Models: traduccions→opus-4-7/sonnet-4-6/qwen3, fetch→deepseek-v4-flash, revisió→glm-5"
 log "   Validació post-execució + detecció plans + instruccions reforçades"
 
 # ── Healthcheck ──────────────────────────────────────────────────────────────

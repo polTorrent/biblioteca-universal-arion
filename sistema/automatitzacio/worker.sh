@@ -34,7 +34,7 @@ COOLDOWN_FAIL=60
 COOLDOWN_EMERGENCY=600
 CONSECUTIVE_ERRORS_FILE="/tmp/arion-worker-errors.txt"
 MAX_RUNTIME=32400    # 9 hores
-MIN_DIEM=2.0
+MIN_DIEM=0.5
 WATCHDOG_INTERVAL=300  # 5 minuts
 TASK_TIMEOUT_VENICE=900
 TASK_TIMEOUT_VENICE_OPUS=1200
@@ -110,7 +110,7 @@ select_model() {
     esac
     
     # Fallbacks
-    [ -z "$model" ] && model="zai-org-glm-5"
+    [ -z "$model" ] && model="claude-opus-4-7"
     echo "$model"
 }
 
@@ -209,6 +209,15 @@ run_task() {
         translate|translation)
             # Pre-supervisió: analitzar estat de l'obra ABANS de traduir
             local obra_ruta="$(echo "$instruction" | grep -oP 'obres/[a-z0-9/_-]+' | head -1)"
+            # Fallback: si no hi ha ruta a l'instruction, mirar metadata
+            if [ -z "$obra_ruta" ]; then
+                obra_ruta=$(python3 -c "import json,sys; print(json.load(open('$task_file')).get('metadata',{}).get('obra_path','').replace('/home/jo/biblioteca-universal-arion/',''))" 2>/dev/null)
+            fi
+            if [ -z "$obra_ruta" ]; then
+                log "   ❌ No s'ha trobat ruta de l'obra a la tasca"
+                echo "ERROR: Falta ruta de l'obra"
+                return 1
+            fi
             if [ -n "$obra_ruta" ]; then
                 local pre_result=$(python3 "$PROJECT_DIR/sistema/scripts/pre_supervisio.py" "$obra_ruta" --json 2>/dev/null)
                 if [ -n "$pre_result" ]; then

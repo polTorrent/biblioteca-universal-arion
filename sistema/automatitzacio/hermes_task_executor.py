@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
-"""
-Executor automàtic per a tasques de fix-* de Biblioteca Arion.
-Processa prompts en natural generant scripts bash i executant-los.
-Requereix VENICE_API_KEY a l'entorn.
-"""
-import json, os, sys, re, subprocess, yaml
+import json, os, sys, re, subprocess
 
-VENICE_API_KEY = os.getenv("VENICE_API_KEY", "")
-VENICE_URL = "https://api.venice.ai/api/v1/chat/completions"
+V = os.environ.get("VENICE_API_KEY", "")
+U = "https://api.venice.ai/api/v1/chat/completions"
 
-def venice_chat(prompt, model="zai-org-glm-5", system="Ets un assistent per Biblioteca Arion.", max_tokens=2000):
-    import urllib.request, json as json_mod
-    body = {
+# Comandes bash vàlides (no incloem paraules que poden aparèixer en text descriptiu)
+VALID_BASH_CMDS = {'python3', 'git', 'echo', 'cat', 'cp', 'mv', 'mkdir', 'rm', 'find',
+                   'grep', 'sed', 'awk', 'head', 'tail', 'jq', 'ls', 'touch', 'chmod',
+                   'ln', 'date', 'wc', 'sort', 'uniq', 'diff', 'patch', 'tar', 'curl'}
+
+def vc(prompt, model="claude-opus-4-7", system="Ets un assistent per Biblioteca Arion.", max_tokens=2000):
+    import urllib.request, json as j
+    body = j.dumps({
         "model": model,
         "messages": [
             {"role": "system", "content": system},
@@ -20,198 +20,96 @@ def venice_chat(prompt, model="zai-org-glm-5", system="Ets un assistent per Bibl
         "temperature": 0.2,
         "max_tokens": max_tokens,
         "venice_parameters": {"disable_system_prompt": True}
-    }
-    req = urllib.request.Request(
-        VENICE_URL,
-        data=json_mod.dumps(body).encode("utf-8"),
-        headers={"Authorization": f"Bearer {VENICE_API_KEY}", "Content-Type": "application/json"},
-        method="POST"
-    )
+    }).encode("utf-8")
+    req = urllib.request.Request(U, data=body, headers={
+        "Authorization": f"Bearer {V}",
+        "Content-Type": "application/json"
+    }, method="POST")
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
-            data = json_mod.loads(resp.read().decode("utf-8"))
-            return data["choices"][0]["message"]["content"]
+            return j.loads(resp.read().decode("utf-8"))["choices"][0]["message"]["content"]
     except Exception as e:
         print(f"Error Venice: {e}", file=sys.stderr)
         return None
 
-def extract_bash_from_instruction(instruction):
-    """
-    Extreure blocs de codi bash de prompts complexos.
-    Si no hi ha blocs de codi, intenta trobar la part executable.
-    """
-    # Buscar blocs ```bash ... ``` o ``` ... ```
-    bash_blocks = re.findall(r'```(?:bash)?\s*\n(.*?)\n```', instruction, re.DOTALL)
-    if bash_blocks:
-        return '\n'.join(bash_blocks)
+def is_valid_bash_line(line):
+    '''Comprova si una línia és realment bash executable'''
+    stripped = line.strip()
+    if not stripped:
+        return False
+    # Extreure nom de comanda (ignorant variables env, cd al principi)
+    cleaned = re.sub(r'^[A-Z_][A-Z0-9_]*=\S+\s+', '', stripped)  # VAR=value cmd
+    cleaned = re.sub(r'^cd\s+\S+\s*&&\s*', '', cleaned)  # cd X &&
+    cleaned = re.sub(r'^cd\s+\S+\s*;\s*', '', cleaned)   # cd X ;
+    cmd = cleaned.split()[0] if cleaned.split() else ""
+    # Si la comanda és una paraula catalana/descriptiva, no és bash
+    if cmd and (cmd[0].isupper() or cmd in {'revisa', 'completa', 'afegeix', 'verifica',
+                                             'cerca', 'busca', 'mira', 'revisa'}):
+        return False
+    return cmd in VALID_BASH_CMDS or any(stripped.startswith(x) for x in VALID_BASH_CMDS)
 
-    # Buscar línies que comencin amb comandes típiques
-    lines = instruction.split('\n')
+def extract_bash_from_instruction(inst):
+    # Buscar blocs ```bash ... ``` primer (això té prioritat)
+    blocks = re.findall(r'```(?:bash)?\s*\n(.*?)\n```', inst, re.DOTALL)
+    if blocks:
+        return '\n'.join(blocks)
+    # Buscar línies executable bash
+    lines = inst.split('\n')
     bash_lines = []
     for line in lines:
         stripped = line.strip()
-        if stripped.startswith('cd ') or stripped.startswith('python3 ') or stripped.startswith('git ') or stripped.startswith('echo ') or stripped.startswith('cat ') or stripped.startswith('cp ') or stripped.startswith('mv ') or stripped.startswith('mkdir ') or stripped.startswith('rm '):
+        if is_valid_bash_line(stripped):
             bash_lines.append(stripped)
-
     if bash_lines:
         return '\n'.join(bash_lines)
-
     return None
 
-def generate_bash_from_prompt(task_type, instruction, obra_path):
-    """
-    Per a prompts en natural (fix-metadata, fix-glossari, fix-portada),
-    generar un script bash executable via Venice LLM.
-    """
-    system = """Ets un assistent tècnic de Biblioteca Arion.
-Respon EXCLUSIVAMENT amb un script bash executable, sense explicacions.
-El script ha de:
-1. Treballar dins del directori del projecte
-2. No fer push a git automàticament (deixa-ho comentat)
-3. Validar resultats abans de continuar
-4. Retornar exit 0 si tot OK, exit 1 si hi ha errors
-"""
-    prompt = f"""Genera un script bash executable per a aquesta tasca de Biblioteca Arion:
-
-TIPUS: {task_type}
-OBRA: {obra_path}
-INSTRUCCIONS:
-{instruction}
-
-Respon NOMÉS amb el script bash, sense markdown, sense explicacions.
-Comença amb #!/bin/bash i acaba amb exit 0 o exit 1.
-"""
-    response = venice_chat(prompt, system=system, max_tokens=2000)
-    if not response:
-        return None
-
-    # Netejar markdown del voltant
-    response = response.strip()
-    if response.startswith("```"):
-        response = re.sub(r'^```(?:bash)?\s*\n', '', response)
-        response = re.sub(r'\n```\s*$', '', response)
-
-    return response.strip()
-
-def auto_fix_metadata(obra_path):
-    """
-    Versió automàtica sense LLM per fix-metadata.
-    Completa camps bàsics si falten.
-    """
-    import yaml, os
-    metadata_path = os.path.join(obra_path, "metadata.yml")
-    if not os.path.exists(metadata_path):
-        return False, "metadata.yml no existeix"
-
-    try:
-        with open(metadata_path) as f:
-            data = yaml.safe_load(f) or {}
-    except Exception as e:
-        return False, f"Error llegint YAML: {e}"
-
-    modified = False
-    # Camps obligatoris per defecte
-    defaults = {
-        "titol": os.path.basename(obra_path).replace("-", " ").title(),
-        "autor": "Desconegut",
-        "llengua_original": "llatí",
-        "categoria": os.path.basename(os.path.dirname(obra_path)) if os.path.dirname(obra_path) else "desconeguda",
-        "any_original": "Desconegut"
-    }
-
-    for key, val in defaults.items():
-        if key not in data or not data.get(key):
-            data[key] = val
-            modified = True
-
-    # Intentar extreure font_original de l'original.md si existeix
-    original_path = os.path.join(obra_path, "original.md")
-    if os.path.exists(original_path) and ("font_original" not in data or not data.get("font_original")):
-        with open(original_path) as f:
-            first_lines = ''.join(f.readline() for _ in range(10))
-        # Buscar URL als primers comentaris
-        urls = re.findall(r'(https?://[^\s\)]+)', first_lines)
-        if urls:
-            data["font_original"] = urls[0]
-            modified = True
-        else:
-            data["font_original"] = "No especificada"
-            modified = True
-
-    if modified:
-        with open(metadata_path, 'w') as f:
-            yaml.dump(data, f, allow_unicode=True, sort_keys=False)
-        return True, "Metadata completada automàticament"
-    return True, "Metadata ja completa"
-
-def run_task(task_file):
-    with open(task_file) as f:
+def main():
+    if len(sys.argv) < 2:
+        print("Us: python3 hermes_task_executor.py <fitxer>")
+        sys.exit(1)
+    with open(sys.argv[1], "r", encoding="utf-8") as f:
         task = json.load(f)
-
-    task_type = task.get("type", "")
-    instruction = task.get("instruction", "")
-    obra = task.get("obra", "")
-    project_dir = os.path.expanduser("~/biblioteca-universal-arion")
-
-    # Determinar ruta de l'obra
-    obra_path = obra if obra else os.path.join(project_dir, re.search(r'obres/[a-z0-9/_/-]+', instruction).group(0) if re.search(r'obres/[a-z0-9/_/-]+', instruction) else "")
-
-    print(f"[EXECUTOR] Tasca: {task_type} -> {obra_path}")
-
-    # === fix-translate o fix-fetch: extreure bash del prompt ===
-    if task_type in ("fix-translate", "fix-fetch"):
-        bash_script = extract_bash_from_instruction(instruction)
-        if bash_script:
-            print(f"[EXECUTOR] Bash extret ({len(bash_script)} chars)")
-            result = subprocess.run(["bash", "-c", f"cd {project_dir} && {bash_script}"], capture_output=True, text=True, timeout=1800)
-            print(result.stdout)
-            if result.stderr:
-                print(result.stderr, file=sys.stderr)
-            return result.returncode
+    ttype = task.get("type", "unknown")
+    inst = task.get("instruction", "")
+    model = task.get("model", "claude-opus-4-7")
+    print(f"Tasca: {ttype}")
+    print(f"Model: {model}")
+    bc = extract_bash_from_instruction(inst)
+    if bc:
+        print(f"Executant bash:")
+        print(f"  {bc[:200]}...")
+        r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=1800,
+                           cwd=os.environ.get("HOME", "") + "/biblioteca-universal-arion")
+        if r.returncode == 0:
+            print("Completat")
+            if r.stdout:
+                print(r.stdout[:500])
+            sys.exit(0)
         else:
-            print("[EXECUTOR] No s'ha pogut extreure bash del prompt")
-            return 1
-
-    # === fix-metadata: intentar automàtic primer ===
-    if task_type == "fix-metadata":
-        ok, msg = auto_fix_metadata(obra_path)
-        if ok:
-            print(f"[EXECUTOR] {msg}")
-            # Intentar git add si hi ha canvis
-            subprocess.run(["git", "add", os.path.join(obra_path, "metadata.yml")], cwd=project_dir, capture_output=True)
-            return 0
-        print(f"[EXECUTOR] Auto-fix metadata fallit: {msg}")
-        # Fallback a LLM
-
-    # === fix-metadata, fix-glossari, fix-portada: generar bash via LLM ===
-    if task_type in ("fix-metadata", "fix-glossari", "fix-portada"):
-        print("[EXECUTOR] Generant script via Venice LLM...")
-        bash_script = generate_bash_from_prompt(task_type, instruction, obra_path)
-        if not bash_script:
-            print("[EXECUTOR] No s'ha pogut generar script")
-            return 1
-
-        print(f"[EXECUTOR] Script generat ({len(bash_script)} chars)")
-        print("---SCRIPT---")
-        print(bash_script)
-        print("---FI SCRIPT---")
-
-        result = subprocess.run(["bash", "-c", f"cd {project_dir} && {bash_script}"], capture_output=True, text=True, timeout=600)
-        print(result.stdout)
-        if result.stderr:
-            print(result.stderr, file=sys.stderr)
-        return result.returncode
-
-    # === Default: intentar bash directe ===
-    print("[EXECUTOR] Executant com a bash directe...")
-    result = subprocess.run(["bash", "-c", f"cd {project_dir} && {instruction}"], capture_output=True, text=True, timeout=600)
-    print(result.stdout)
-    if result.stderr:
-        print(result.stderr, file=sys.stderr)
-    return result.returncode
+            print(f"Error: {r.stderr[:500]}")
+            sys.exit(1)
+    print("Generant accions amb Venice AI...")
+    resp = vc(inst, model=model, system="Ets un executor automatic per a Biblioteca Arion. Respon UNICAMENT amb blocs de codi bash executables. No afegeixis explicacions.")
+    if not resp:
+        print("Error: no resposta de Venice")
+        sys.exit(1)
+    bc = extract_bash_from_instruction(resp)
+    if not bc:
+        print("Error: no comandes bash a la resposta")
+        print(resp[:500])
+        sys.exit(1)
+    print("Executant bash generat")
+    r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=1800,
+                       cwd=os.environ.get("HOME", "") + "/biblioteca-universal-arion")
+    if r.returncode == 0:
+        print("Completat")
+        if r.stdout:
+            print(r.stdout[:500])
+        sys.exit(0)
+    else:
+        print(f"Error: {r.stderr[:500]}")
+        sys.exit(1)
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Ús: python3 hermes_task_executor.py <tasca.json>", file=sys.stderr)
-        sys.exit(1)
-    sys.exit(run_task(sys.argv[1]))
+    main()
