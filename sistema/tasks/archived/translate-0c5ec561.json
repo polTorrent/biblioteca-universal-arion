@@ -1,0 +1,14 @@
+{
+  "id": "translate-0c5ec561",
+  "type": "translate",
+  "instruction": "python3 sistema/traduccio/traduir_venice.py --ruta obres/filosofia/aristotil/peri-psykhes --continuar",
+  "priority": 1,
+  "retries": 0,
+  "total_failures": 0,
+  "regen_count": 2,
+  "created_at": "2026-05-09T08:59:51.898283Z",
+  "updated_at": "2026-05-09T08:59:51.898324Z",
+  "_hash": "77b57db405ced6f3",
+  "retry_count": 0,
+  "recovered": true
+}

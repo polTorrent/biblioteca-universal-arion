@@ -1,0 +1,8 @@
+{
+  "id": "fix-glossari-sor-juana-ines-de-la-cruz-primero-sueno-1778529614",
+  "type": "fix-glossari",
+  "priority": 3,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && Revisa obres/poesia/sor-juana-ines-de-la-cruz/primero-sueno/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('obres/poesia/sor-juana-ines-de-la-cruz/primero-sueno/glossari.yml'))\" && git add obres/poesia/sor-juana-ines-de-la-cruz/primero-sueno/glossari.yml && git commit -m 'fix: glossari sor-juana-ines-de-la-cruz/primero-sueno' && git push",
+  "created": "2026-05-11T22:00:14+02:00"
+}

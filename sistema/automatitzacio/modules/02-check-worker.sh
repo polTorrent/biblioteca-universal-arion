@@ -18,9 +18,13 @@ check_worker() {
     # Retornar running a pending
     for f in "$TASKS_DIR/running/"*.json; do [ -f "$f" ] && mv "$f" "$TASKS_DIR/pending/"; done
     
-    # Reiniciar worker (unificat o venice com a fallback)
+    # Reiniciar worker unificat
     local worker_script="$PROJECT/sistema/automatitzacio/worker.sh"
-    [ ! -f "$worker_script" ] && worker_script="$PROJECT/sistema/automatitzacio/venice-worker.sh"
+    
+    if [ ! -f "$worker_script" ]; then
+        log "❌ Worker script no trobat: $worker_script"
+        return 1
+    fi
     
     nohup bash "$worker_script" >> "$LOG" 2>&1 &
     disown

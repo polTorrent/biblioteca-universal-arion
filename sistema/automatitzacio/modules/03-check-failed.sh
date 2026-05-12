@@ -36,7 +36,7 @@ print(f'{retries}|{len(instruction)}|{task_type}|{regen_count}|{total_failures}'
         
         local inst_len=${inst_len:-0}
         if [ "$inst_len" -gt 200 ] && [ "$retries" -lt 2 ]; then
-            # Regenerar instrucció simplificada
+            # Regenerar instrucció simplificada amb ruta correcta
             python3 -c "
 import json, re, os
 with open('$failed') as fh: d = json.load(fh)
@@ -48,7 +48,7 @@ if obra_path and d.get('type') in ('translate','fetch','translation'):
     full = os.path.expanduser('~/biblioteca-universal-arion')
     has_original = os.path.isfile(os.path.join(full, obra_path, 'original.md'))
     if has_original:
-        d['instruction'] = f'python3 sistema/traduccio/traduir_pipeline.py {obra_path}/'
+        d['instruction'] = f'Tradueix al català literari. Ruta: {obra_path}'
         d['type'] = 'translate'
 d['total_failures'] = d.get('total_failures',0) + d.get('retries',0)
 d['retries'] = 0; d['retry_count'] = 0; d['recovered'] = True

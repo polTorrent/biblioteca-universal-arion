@@ -1,7 +1,0 @@
-{
-  "id": "test-verificacio-bash-20260510",
-  "type": "fetch",
-  "priority": 1,
-  "max_duration": 30,
-  "instruction": "echo '✅ Worker Bash OK' && date -u >> /tmp/arion-worker-test.log && wc -l /tmp/arion-worker-test.log"
-}

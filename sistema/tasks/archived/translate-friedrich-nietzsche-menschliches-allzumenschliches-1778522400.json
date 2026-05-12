@@ -1,0 +1,10 @@
+{
+  "task_id": "translate-friedrich-nietzsche-menschliches-allzumenschliches-1778522400",
+  "type": "translate",
+  "obra_ruta": "obres/filosofia/friedrich-nietzsche/menschliches-allzumenschliches",
+  "model_recommended": "claude-opus-4-7",
+  "instruction": "Tradueix menschliches-allzumenschliches de friedrich-nietzsche al catal\u00e0 literari.",
+  "genere": "filosofia",
+  "status": "pending",
+  "created": 1778522400
+}

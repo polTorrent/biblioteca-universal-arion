@@ -1,0 +1,10 @@
+{
+  "task_id": "translate-francesco-petrarca-seleccio-20-sonets-1778522400",
+  "type": "translate",
+  "obra_ruta": "obres/poesia/francesco-petrarca/seleccio-20-sonets",
+  "model_recommended": "claude-opus-4-7",
+  "instruction": "Tradueix seleccio-20-sonets de francesco-petrarca al catal\u00e0 literari.",
+  "genere": "poesia",
+  "status": "pending",
+  "created": 1778522400
+}

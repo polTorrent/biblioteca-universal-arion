@@ -7,6 +7,14 @@
 set -uo pipefail
 
 PROJECT="$HOME/biblioteca-universal-arion"
+
+# Carregar Discord token
+DISCORD_BOT_TOKEN=""
+DISCORD_CHANNEL=""
+[ -f "$PROJECT/.env" ] && { DISCORD_BOT_TOKEN=$(grep "^DISCORD_BOT_TOKEN=" "$PROJECT/.env" | head -1 | cut -d'"' -f2); }
+[ -z "$DISCORD_BOT_TOKEN" ] && DISCORD_BOT_TOKEN=$(grep "^DISCORD_BOT_TOKEN=" "$HOME/.hermes/.env" 2>/dev/null | head -1 | cut -d'"' -f2)
+DISCORD_CHANNEL="1469504522614476953"  # Canal Biblioteca Arion
+
 DISCORD_WEBHOOK=$(cat "$PROJECT/sistema/config/discord_webhook.txt" 2>/dev/null)
 LAST_NOTIF_FILE="/tmp/arion-last-notif"
 RATE_LIMIT_SECONDS=60
@@ -51,11 +59,25 @@ severity_emoji() {
 # ── Enviar a Discord ─────────────────────────────────────────────────────────
 send_discord() {
     local message="$1"
-    [ -z "$DISCORD_WEBHOOK" ] && return 1
-    curl -s -X POST "$DISCORD_WEBHOOK" \
-        -H "Content-Type: application/json" \
-        -d "{\"content\":\"$message\"}" > /dev/null 2>&1
-    return $?
+    # Intentar amb webhook primer
+    if [ -n "$DISCORD_WEBHOOK" ]; then
+        curl -s -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "{\"content\":\"$message\"}" > /dev/null 2>&1
+        return $?
+    fi
+    # Fallback: usar Discord Bot API
+    if [ -n "$DISCORD_BOT_TOKEN" ] && [ -n "$DISCORD_CHANNEL" ]; then
+        local escaped=$(python3 -c "import json; print(json.dumps('''$message'''))" 2>/dev/null)
+        [ -z "$escaped" ] && escaped="$message"
+        curl -s -X POST \
+            "https://discord.com/api/v10/channels/$DISCORD_CHANNEL/messages" \
+            -H "Authorization: Bot $DISCORD_BOT_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "{\"content\":$escaped}" > /dev/null 2>&1
+        return $?
+    fi
+    return 1
 }
 
 # ── Enviar a Hermes (reenvia a totes les plataformes) ────────────────────────

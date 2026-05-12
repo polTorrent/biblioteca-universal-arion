@@ -1,13 +1,14 @@
 {
-  "traduccions": {},
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": {
-    "autor_bio": "Cicero. ",
-    "context_historic": "",
-    "context_obra": "Laelius De Amicitia. ",
-    "influencies": [],
-    "temes_principals": []
-  },
-  "notes_pendents": []
+  "ultim_context": "il de pronunciar-se; ja veieu el que la gent sospita. Però sí que és lícit afirmar amb veritat que, de tots els dies esplèndids i joiosos que Publi Escipió havia vist en la seva vida, aquell fou el més resplendent: quan, dissolt el senat, fou acompanyat a casa al vespre pels senadors, pel poble romà, pels aliats i els llatins, la vigília del dia en què abandonà la vida; de manera que sembla que, des d'un graó tan alt de dignitat, pujà a trobar els déus del cel més que no pas davallà als de sota.",
+  "timestamp": 1778521666.4813135,
+  "historial": [
+    {
+      "context": "vi i et tenen per tal. Això s'atribuïa, en el seu temps, a Marc Cató; sabem que Luci Acili fou anomenat savi entre els nostres pares; però tots dos ho eren d'una manera ben diferent: Acili, perquè es creia que era expert en dret civil; Cató, perquè tenia experiència en moltes coses. Moltes de les seves previsions prudents, de les seves actuacions fermes i de les seves respostes agudes eren recordades, tant al senat com al fòrum; i per això, en la vellesa, portava gairebé com a cognom el de savi.",
+      "timestamp": 1778521611.6319556
+    },
+    {
+      "context": "il de pronunciar-se; ja veieu el que la gent sospita. Però sí que és lícit afirmar amb veritat que, de tots els dies esplèndids i joiosos que Publi Escipió havia vist en la seva vida, aquell fou el més resplendent: quan, dissolt el senat, fou acompanyat a casa al vespre pels senadors, pel poble romà, pels aliats i els llatins, la vigília del dia en què abandonà la vida; de manera que sembla que, des d'un graó tan alt de dignitat, pujà a trobar els déus del cel més que no pas davallà als de sota.",
+      "timestamp": 1778521666.4814208
+    }
+  ]
 }
