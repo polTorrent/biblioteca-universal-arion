@@ -390,9 +390,17 @@ if tasks:
     
     if [ $EXIT -eq 0 ]; then
         # Verificar canvis
-        CHANGES=$(cd "$PROJECT_DIR" && git diff --name-only 2>/dev/null | wc -l; git ls-files --others --exclude-standard 2>/dev/null | wc -l)
+        local diff_count=$(cd "$PROJECT_DIR" && git diff --name-only 2>/dev/null | wc -l)
+        local untracked_count=$(cd "$PROJECT_DIR" && git ls-files --others --exclude-standard 2>/dev/null | wc -l)
+        CHANGES=$((diff_count + untracked_count))
         
-        if [ "$CHANGES" -gt 0 ]; then
+        # Per tasques fix-* i supervision, exit=0 ja és èxit encara que no hi hagi canvis
+        local is_fix=0
+        case "$TASK_TYPE" in
+            fix-*|supervision|review|validacio) is_fix=1 ;;
+        esac
+        
+        if [ "$CHANGES" -gt 0 ] || [ "$is_fix" -eq 1 ]; then
             log "✅ $TASK_ID completat (${DURATION}s, $CHANGES canvis)"
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/done/"
             auto_commit "$TASK_ID"
