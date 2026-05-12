@@ -199,8 +199,15 @@ run_task() {
     local model_errors=$(model_error_count "$model")
     if [ "$model_errors" -ge 3 ]; then
         log "   🔄 Circuit breaker: $model ha fallat $model_errors vegades. Buscant fallback..."
-        local fallback=$(lookup_model "admin" "default")
-        [ "$fallback" != "$model" ] && model="$fallback" && timeout=$TASK_TIMEOUT_VENICE
+        # Fallback intel·ligent: no usar el mateix model
+        if [[ "$model" == *"opus"* ]]; then
+            fallback="claude-sonnet-4-6"
+        elif [[ "$model" == *"sonnet"* ]]; then
+            fallback="claude-opus-4-7"
+        else
+            fallback=$(lookup_model "admin" "default")
+        fi
+        [ "$fallback" != "$model" ] && { model="$fallback"; timeout=$TASK_TIMEOUT_VENICE; log "   ↔️ Fallback a: $model"; }
     fi
     
     log "   🔧 Venice AI (model=$model, timeout=${timeout}s)"
@@ -260,7 +267,7 @@ run_task() {
             timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$obra_ruta" --model "$model" $continuar_flag 2>&1
             ;;
         fetch|fix-translate|fix-fetch)
-            eval timeout "$timeout" bash -c "$instruction" 2>&1
+            timeout "$timeout" bash -c "$instruction" 2>&1
             ;;
         *)
             # Per tasques administratives (fix-metadata, fix-glossari, etc.), usar Venice chat
@@ -390,8 +397,8 @@ if tasks:
     
     if [ $EXIT -eq 0 ]; then
         # Verificar canvis
-        local diff_count=$(cd "$PROJECT_DIR" && git diff --name-only 2>/dev/null | wc -l)
-        local untracked_count=$(cd "$PROJECT_DIR" && git ls-files --others --exclude-standard 2>/dev/null | wc -l)
+        diff_count=$(cd "$PROJECT_DIR" && git diff --name-only 2>/dev/null | wc -l)
+        untracked_count=$(cd "$PROJECT_DIR" && git ls-files --others --exclude-standard 2>/dev/null | wc -l)
         CHANGES=$((diff_count + untracked_count))
         
         # Per tasques fix-* i supervision, exit=0 ja és èxit encara que no hi hagi canvis

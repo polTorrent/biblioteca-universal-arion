@@ -1,0 +1,10 @@
+{
+  "timestamp": "2026-05-11T19:45:13Z",
+  "status": "CRITICAL",
+  "severity": "critical",
+  "alerts": [
+    "Worker ATURAT \u2014 cap proc\u00e9s actiu",
+    "DIEM CR\u00cdTIC: 0.14807194248561473 (m\u00ednim: 3.0)",
+    "193 errors acumulats al log"
+  ]
+}

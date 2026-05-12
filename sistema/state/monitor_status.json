@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-05-11T19:45:13Z",
+  "status": "CRITICAL",
+  "severity": "critical",
+  "worker_pids": "",
+  "diem": "0.14807194248561473",
+  "done_today": 0,
+  "pending": 2,
+  "orphaned": 0,
+  "alerts": []
+}

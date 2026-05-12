@@ -1,0 +1,10 @@
+{
+  "task_id": "translate-august-strindberg-froken-julie-1778522400",
+  "type": "translate",
+  "obra_ruta": "obres/teatre/august-strindberg/froken-julie",
+  "model_recommended": "claude-opus-4-7",
+  "instruction": "Tradueix froken-julie de august-strindberg al catal\u00e0 literari.",
+  "genere": "teatre",
+  "status": "pending",
+  "created": 1778522400
+}

@@ -1,0 +1,10 @@
+{
+  "id": "1778615138_translate_petarca-sonets",
+  "type": "translate",
+  "instruction": "Continua la traducció al català literari. Ruta: obres/poesia/francesco-petrarca/seleccio-20-sonets",
+  "model": "claude-opus-4-7",
+  "priority": 2,
+  "retries": 0,
+  "max_retries": 3,
+  "created_at": "2026-05-12T19:45:38Z"
+}

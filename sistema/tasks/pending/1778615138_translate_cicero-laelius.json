@@ -1,0 +1,10 @@
+{
+  "id": "1778615138_translate_cicero-laelius",
+  "type": "translate",
+  "instruction": "Continua la traducció al català literari. Ruta: obres/assaig/cicero/laelius-de-amicitia/laelius_de_amicitia",
+  "model": "claude-sonnet-4-6",
+  "priority": 3,
+  "retries": 0,
+  "max_retries": 3,
+  "created_at": "2026-05-12T19:45:38Z"
+}

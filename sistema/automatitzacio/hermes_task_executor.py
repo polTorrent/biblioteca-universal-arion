@@ -19,7 +19,7 @@ def vc(prompt, model="claude-opus-4-7", system="Ets un assistent per Biblioteca 
         ],
         "temperature": 0.2,
         "max_tokens": max_tokens,
-        "venice_parameters": {"disable_system_prompt": True}
+        "venice_parameters": {"disable_thinking": True, "strip_thinking_response": True}
     }).encode("utf-8")
     req = urllib.request.Request(U, data=body, headers={
         "Authorization": f"Bearer {V}",
@@ -27,7 +27,12 @@ def vc(prompt, model="claude-opus-4-7", system="Ets un assistent per Biblioteca 
     }, method="POST")
     try:
         with urllib.request.urlopen(req, timeout=120) as resp:
-            return j.loads(resp.read().decode("utf-8"))["choices"][0]["message"]["content"]
+            data = j.loads(resp.read().decode("utf-8"))
+            content = data["choices"][0]["message"].get("content", "") or ""
+            # Fallback: si thinking ha menjat el content, usar reasoning
+            if not content.strip():
+                content = data["choices"][0]["message"].get("reasoning_content", "") or ""
+            return content
     except Exception as e:
         print(f"Error Venice: {e}", file=sys.stderr)
         return None

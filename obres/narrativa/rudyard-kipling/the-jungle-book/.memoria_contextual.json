@@ -1,92 +1,270 @@
 {
-  "traduccions": {
-    "jungle law": {
-      "original": "Jungle Law",
-      "traduccio": "Llei de la Jungla",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+  "ultim_context": "egó.\n     Mireu la nostra línia a través de la plana,\n     Com un cordó de peu tornat a corbar,\n     Estenent-se, retorçant-se, rodant lluny,\n     Escombrant-ho tot cap a la guerra!\n     Mentre els homes que caminen al costat,\n     Polsosos, silenciosos, d'ulls feixucs,\n     No saben dir per què nosaltres o ells\n     Marquem i sofram dia rere dia.\n        _Som fills del Campament,\n        Servint cadascú en el seu grau;\n        Fills del jou i l'agulló,\n        Sella i arnès, farcell i carregó!_",
+  "timestamp": 1778575933.8044567,
+  "historial": [
+    {
+      "context": "ateix lloc, i van dir: «Salutacions, Kotick! Aquest any tots som holluschickie, i podem ballar la Dansa del Foc entre les onades de Lukannon i jugar sobre l'herba nova. Però on has aconseguit aquell pelatge?»\n\nEl pèl de Kotick era gairebé blanc del tot, ara, i tot i que se sentia molt orgullós, només va dir: «Nedeu de pressa! Els meus ossos demanen la terra.» I així van arribar tots a les platges on havien nascut, i van sentir les foques velles, els seus pares, barallant-se en la boira rodolant.",
+      "timestamp": 1778574147.5657196
     },
-    "dewanee": {
-      "original": "dewanee",
-      "traduccio": "bogeria",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "otava de l'ala de la seva gorra. Després pujaren deu o dotze homes, cadascun amb una porra ferrada de tres o quatre peus de llargària, i en Kerick assenyalà una o dues del ramat que havien estat mossegades per les seves companyes o que estaven massa calentes, i els homes les apartaren d'una coça amb les seves botes pesades fetes amb la pell del coll d'una morsa, i llavors en Kerick digué: «Deixeu anar!», i els homes començaren a clavar cops de porra al cap de les foques tan de pressa com podien.",
+      "timestamp": 1778574167.4390264
     },
-    "hydrophobia": {
-      "original": "hydrophobia",
-      "traduccio": "hidrofòbia",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": " el crit, i—segons m'explicà en Limmershin—durant gairebé cinc minuts no hauríeu pogut sentir un tret a l'Illa de la Morsa. Tota la població cridava i xisclava \"Menja-clòtxines! Stareek [vell]!\", mentre en Sea Vitch es gronxava d'un costat a l'altre grunyint i estossegant.\n\n—Ara m'ho diràs?—va dir en Kotick, sense alè.\n\n—Vés a preguntar-ho a la Vaca Marina—va dir en Sea Vitch.—Si encara és viu, et podrà respondre.\n\n—Com reconeixeré la Vaca Marina quan me la trobi?—va dir en Kotick, allunyant-se.",
+      "timestamp": 1778574185.36479
     },
-    "chief of the wolves": {
-      "original": "Chief of the Wolves",
-      "traduccio": "Cap dels Llops",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": " l'illa de Gough, l'illa Bouvet, les Crossets, i fins i tot a un petit punt d'illa al sud del Cap de Bona Esperança. Però arreu el Poble del Mar li deia el mateix. Les foques havien anat a aquelles illes una vegada, però els homes les havien mortes totes. Fins i tot quan nedà milers de milles fora del Pacífic i arribà a un lloc anomenat Cap Corrientes (això fou quan tornava de l'illa de Gough), trobà uns quants centenars de foques sarnoses en una roca i li digueren que els homes també hi anaven.",
+      "timestamp": 1778574198.5640934
     },
-    "due warning": {
-      "original": "due warning",
-      "traduccio": "avís degut",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "dir Kotick.\n\nVan tornar a inclinar-se, i Kotick va començar a perdre la paciència.\n\n—Molt bé —va dir—. Si resulta que teniu una articulació extra a l'aleta anterior, no cal que ho ensenyeu tant. Veig que us inclineu amb gràcia, però m'agradaria saber els vostres noms.\n\nEls llavis separats es van moure i van tremolar; els ulls verds vitris es van quedar fixos, però no van parlar.\n\n—Bé! —va fer Kotick—. Sou les úniques persones que he conegut mai més lletges que Sea Vitch... i amb pitjors maneres.",
+      "timestamp": 1778574210.340954
     },
-    "quarters": {
-      "original": "quarters",
-      "traduccio": "territori de caça",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "\n\n—És Novastoshnah una altra vegada, però deu vegades millor —va dir Kotick—. La Vaca Marina deu ser més sàvia del que jo pensava. Els homes no poden baixar pels penya-segats, encara que n'hi hagués cap; i els baixos cap a la mar farien miques qualsevol vaixell. Si cap lloc de la mar és segur, és aquest.\n\nVa començar a pensar en la foca que s'havia deixat enrere, però tot i que tenia pressa per tornar a Novastoshnah, va explorar a fons el nou país, per tal de poder respondre totes les preguntes.",
+      "timestamp": 1778574222.321749
     },
-    "gidur-log": {
-      "original": "Gidur-log",
-      "traduccio": "poble dels xacals",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": " Boreals parpellejaven i centellejaven a través de la boira, Kotick s'enfilà en una roca nua i mirà avall cap als vivers dispersos i cap a les foques esquinçades i sagnants. «Ara», digué, «ja us he donat la lliçó.»\n\n—La meva perruca! —digué el vell Sea Catch, aixecant-se amb rigidesa, car havia estat esbatussat de valent—. Ni la mateixa Orca Assassina els hauria pogut esbatussar pitjor. Fill, estic orgullós de tu, i el que és més, vindré amb tu a la teva illa... si és que existeix, un lloc així.",
+      "timestamp": 1778574234.4062133
     },
-    "children of kings": {
-      "original": "children of kings",
-      "traduccio": "fills de reis",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "  (_Al teu gust, Nag._)\n     Torn per torn i tort per tort—\n    (_Corre i amaga't, Nag._)\n     Ah! La Mort em caputxa ha fallat!\n    (_Ai de tu, Nag!_)\n\nAquesta és la història de la gran guerra que Rikki-Tikki-Tavi va lliurar tot sol, pels banys del gran bungalou del cantonament de Segowlee. Darzee, l'ocell sastre, l'ajudà, i Chuchundra, la rata almizclera, que mai no surt al mig del terra, sinó que sempre s'arrossega arran de paret, li donà consells; però Rikki-Tikki va fer la veritable lluita.",
+      "timestamp": 1778574246.4905531
     },
-    "byre": {
-      "original": "byre",
-      "traduccio": "establia",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": " en Rikki-tikki va sortir al jardí a veure què hi havia per veure. Era un jardí gran, només mig conreat, amb arbustos tan grans com casetes d'estiu, de roses Marshal Niel, llimoners i tarongers, claps de bambús i matolls d'herba alta. En Rikki-tikki es va llepar els llavis. «Aquest és un terreny de caça esplèndid», va dir, i la cua se li va posar com un raspall d'ampolles només de pensar-hi, i va córrer amunt i avall pel jardí, ensumant aquí i allà fins que va sentir veus molt tristes en un arç.",
+      "timestamp": 1778574265.3338933
     },
-    "rubbish-heaps": {
-      "original": "rubbish-heaps",
-      "traduccio": "abocadors",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "tà enfadada), i s'assegué sobre la cua i les potes del darrere com un petit cangur, mirant al seu voltant i xerricant de ràbia. Però en Nag i la Nagaina havien desaparegut entre l'herba. Quan una serp falla la seva picada, mai no diu res ni dona cap senyal del que pensa fer després. En Rikki-tikki no es va arriscar a seguir-los, perquè no estava segur de poder amb dues serps alhora. Així doncs, trotà fins al caminet de grava prop de la casa, i s'assegué per pensar. Era un afer seriós, per a ell.",
+      "timestamp": 1778574279.26134
     },
-    "dish-licker": {
-      "original": "Dish-licker",
-      "traduccio": "Llepa-plats",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "ent en Teddy per jugar a la pols. En Rikki s'ho passava d'allò més bé.\n\nAquella nit, a l'hora de sopar, passejant amunt i avall entre les copes de vi de la taula, s'hauria pogut atipar tres vegades de coses bones. Però es recordava d'en Nag i la Nagaina, i tot i que era molt agradable que la mare d'en Teddy l'acariciés i li fes moixaines, i que seure a l'espatlla d'en Teddy, els ulls se li tornaven vermells de tant en tant, i es llançava al seu llarg crit de guerra: «Rikk-tikk-tikki-tikki-txik!»",
+      "timestamp": 1778574293.0863879
     },
-    "head of game": {
-      "original": "head of game",
-      "traduccio": "cap de caça",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
+    {
+      "context": "descoberta, el avantatge és seu. Què he de fer? —va dir en Rikki-tikki-tavi.\n\nEn Nag va oscil·lar d'un costat a l'altra, i després en Rikki-tikki el va sentir beure de la gran gerra d'aigua que s'usava per omplir el bany. —Això està bé —va dir la serp—. Ara, quan van matar en Karait, l'home gran duia un bastó. Potser encara té aquell bastó, però quan vingui a banyar-se al matí no durà cap bastó. L'esperaré aquí fins que vingui. Nagaina... m'escoltes?... L'esperaré aquí, a la fresca, fins al dia.",
+      "timestamp": 1778574314.1830688
+    },
+    {
+      "context": "ous?\n\n—Al camp de melons, a l'extrem més proper al mur, on el sol hi pega gairebé tot el dia. Els hi va amagar fa setmanes.\n\n—I no has pensat que valia la pena dir-m'ho? L'extrem més proper al mur, has dit?\n\n—Rikki-tikki, no te'ls menjaràs pas, els ous?\n\n—No pas menjar-los; no. Darzee, si tens un bri de seny, volaràs cap a les quadres i faràs veure que tens l'ala trencada, i deixaràs que la Nagaina et persegueixi fins a aquest matoll. He d'arribar al camp de melons, i si hi anava ara, em veuria.",
+      "timestamp": 1778574335.8729348
+    },
+    {
+      "context": " ulls vermells com la sang. —Quin preu per un ou de serp? Per una jove cobra? Per una jove cobra reial? Per l'últim... el molt últim de la niuada? Les formigues se'ls estan menjant tots els altres, allà baix, al parterre de melons.\n\nNagaina va girar completament, oblidant-ho tot per aquell únic ou. Rikki-tikki va veure com el pare d'en Teddy estirava la mà, agafava Teddy per l'espatlla i l'arrossegava a l'altra banda de la tauleta de les tasses de te, fora de perill i fora de l'abast de Nagaina.",
+      "timestamp": 1778574355.7614822
+    },
+    {
+      "context": " olla de coure; i la raó per la qual sempre el fa és perquè és el pregoner de tots els jardins de l'Índia, i explica totes les notícies a tothom que vulgui escoltar. Quan Rikki-tikki pujava pel camí, va sentir les seves notes d'«atenció» com un petit gong de sopar, i després el constant «Ding-dong-tock! Nag és mort—dong! Nagaina és morta! Ding-dong-tock!» Això va fer que tots els ocells del jardí cantessin, i les granotes rauclessin, perquè Nag i Nagaina solien menjar granotes així com ocellets.",
+      "timestamp": 1778574370.6089864
+    },
+    {
+      "context": "r mort a Magdala, i havia tornat de nou en el vaixell de vapor amb dret, segons deien els soldats, a la medalla de la Guerra d'Abissínia. Havia vist morir els seus companys elefants de fred, d'epilèpsia, de fam i de cops de sol en un lloc anomenat Ali Musjid, deu anys més tard; i després l'havien enviat milers de milles cap al sud per arrossegar i apilar grans bigues de teka als patis de fusta de Moulmein. Allà havia mig matat un jove elefant insubordinat que defugia la seva part justa de feina.",
+      "timestamp": 1778574382.499837
+    },
+    {
+      "context": "n rajà ric, i et comprarà al Govern, pel teu tamany i els teus modals, i llavors no hauràs de fer res més que portar arracades d'or a les orelles, i un howdah daurat al llom, i una tela vermella coberta d'or als costats, i caminar al capdavant de les processons del Rei. Llavors jo seuré al teu coll, oh Kala Nag, amb un ankus de plata, i els homes correran davant nostre amb bastons daurats, cridant: «Pas a l'elefant del Rei!» Això serà bo, Kala Nag, però no tan bo com aquesta cacera a les selves.",
+      "timestamp": 1778574393.9673839
+    },
+    {
+      "context": "caçar elefants pel teu compte, petit desgraciat? Ara aquests caçadors ximples, que cobren menys que jo, n'han parlat a Petersen Sahib.» El Petit Toomai es va espantar. No sabia gaire cosa dels homes blancs, però per a ell Petersen Sahib era el home blanc més gran del món. Era el cap de totes les operacions de keddah—l'home que capturava tots els elefants per al Govern de l'Índia, i que sabia més sobre els costums dels elefants que cap altre home viu.\n\n—Què... què passarà? —digué el Petit Toomai.",
+      "timestamp": 1778574409.1241305
+    },
+    {
+      "context": "rient sota el bigoti—, i per què vas ensenyar aquest truc al teu elefant? Era per ajudar-te a robar blat verd dels terrats de les cases quan les espigues es posen a assecar?\n\n—No pas blat verd, Protector dels Pobres, melons —va dir en Petit Toomai, i tots els homes asseguts al voltant van esclatar en una riallada. La majoria havien ensenyat aquell truc als seus elefants quan eren nois. En Petit Toomai estava penjat a vuit peus d'alçada, i hauria donat qualsevol cosa per ser vuit peus sota terra.",
+      "timestamp": 1778574424.1791325
+    },
+    {
+      "context": "oneix les quatre parets de la seva barraca. Bé, deixa els teus elefants sense cadenes aquesta nit i mira què passa. Pel que fa al seu ball, he vist el lloc on... Bapree-bap! Quantes voltes fa el riu Dihang? Aquí hi ha un altre gual, i hem de fer nadar els cadells. Atura't, tu del darrere allà.\n\nI d'aquesta manera, xerrant i discutint i esquitxant pels rius, van fer la primera marxa cap a una mena de campament de recepció per als elefants nous. Però van perdre els estreps molt abans d'arribar-hi.",
+      "timestamp": 1778574437.582743
+    },
+    {
+      "context": "nar aquell elefant de la pota del davant a la del darrere, però va passar una baga de corda d'herba per la pota de Kala Nag i li va dir que recordés que estava ben lligat. Sabia que ell i el seu pare i el seu avi havien fet exactament el mateix centenars de vegades abans. Kala Nag no va respondre a l'ordre amb aquell gloc-gloc de costum. Es va estar quiet, mirant a través de la claror de la lluna, amb el cap una mica alçat i les orelles esteses com ventalls, cap als grans plecs dels turons Garo.",
+      "timestamp": 1778574451.9198132
+    },
+    {
+      "context": " corrent, i Kala Nag travessava el llit d'un riu a grans gambades, palpant el camí a cada pas. Per sobre del brogit de l'aigua, mentre remolïnava al voltant de les potes de l'elefant, el petit Toomai podia sentir més esquitxades i alguns barrits tant aigües amunt com avall—grans grunys i esbufecs irats, i tota la boira al seu volt semblava plena d'ombres rodants i ondulants.\n\n—Ai!—va dir, mig en veu alta, mentre les dents li petaven.—Aquesta nit la gent dels elefants és fora. És la dansa, doncs!",
+      "timestamp": 1778574469.3273592
+    },
+    {
+      "context": "i van tirar les orelles endavant en sentir el dring d'una cadena de ferro al bosc, però era la Pudmini, l'elefanta preferida de Petersen Sahib, amb la cadena trencada de cop, grunyint i furgant muntanya amunt. Havia d'haver trencat els estaques i haver vingut de dret del campament de Petersen Sahib; i el petit Toomai va veure un altre elefant, un que no coneixia, amb profundes nafres de corda a l'esquena i al pit. Aquest també devia haver escapat d'algun campament dels voltants, a les muntanyes.",
+      "timestamp": 1778574485.0422833
+    },
+    {
+      "context": "efants, que aquella nit havien estat lligats amb cadenes dobles, començaren a bramar, i Pudmini, enfangada fins a les espatlles, amb Kala Nag, amb els peus molt adolorits, arrossegà els peus cap al campament. La cara del Petit Toomai era grisa i demacrada, i duia els cabells plens de fulles i xops de rosada, però intentà saludar Petersen Sahib i exclamà amb veu feble: «La dansa... la dansa dels elefants! L'he vista i... em moro!» Quan Kala Nag s'assegué, lliscà del seu coll en un desmai profund.",
+      "timestamp": 1778574500.1556747
+    },
+    {
+      "context": "s meus senyors de les cadenes», —girà per la filera d'estaques—, «aquí teniu el petit que ha vist les vostres danses en els vostres amagatalls, —l'espectacle que cap home no ha vist mai! Doneu-li honor, els meus senyors! Salaam karo, fills meus. Feu la vostra salutació a Toomai dels Elefants! Gunga Pershad, ahaa! Hira Guj, Birchi Guj, Kuttar Guj, ahaa! Pudmini, —tu l'has vist a la dansa, i tu també, Kala Nag, la meva perla entre els elefants!— ahaa! Tots junts! Per Toomai dels Elefants. Barrao!»",
+      "timestamp": 1778574513.0603068
+    },
+    {
+      "context": "amí pel fang.\n\nFinalment vaig ensopegar amb la cua d'un canó, i per això vaig saber que era en algun lloc prop de les línies d'artilleria, on els canons es guardaven apilats a la nit. Com que no tenia ganes de seguir xipollejant més per la pluja i la foscor, vaig estendre l'impermeable sobre la boca d'un canó, i vaig fer una mena de tenda amb dues o tres escombres que vaig trobar, i em vaig estirar al llarg de la cua d'un altre canó, preguntant-me on devia haver anat la Vixen, i on devia ser jo.",
+      "timestamp": 1778574527.395815
+    },
+    {
+      "context": "m crida a mi. Ei, noi, deixa de xisclar. La foscura no ha fet mal a ningú encara.\n\nEls bous dels canons es van estirar junts i van començar a rumiar, però la mula jove es va arraulir al costat d'en Billy.\n\n—Coses! —va dir—. Terribles i horribles, Billy! Van entrar a les nostres línies mentre dormíem. Creus que ens mataran?\n\n—Tinc moltes ganes de clavar-te una coça de primera —va dir en Billy—. La idea d'una mula de catorze pams amb el teu entrenament deshonrant la bateria davant d'aquest senyor!",
+      "timestamp": 1778574542.5573015
+    },
+    {
+      "context": "nivets del ferrador— i he de vigilar que la bota de Dick tot just toqui la bota del següent home sense aixafar-la. Puc veure la llança de Dick a la dreta del meu ull dret, i sé que estic segur. No m'agradaria ser l'home o el cavall que s'enfrontés amb Dick i amb mi quan anem de pressa.\n\n—I els ganivets no fan mal? —va preguntar la mula jove.\n\n—Bé, un cop em van fer un tall al pit, però no va ser culpa de Dick...\n\n—Gaire me n'importaria a mi de qui fos la culpa, si feia mal! —va dir la mula jove.",
+      "timestamp": 1778574557.8104484
+    },
+    {
+      "context": "fum de l'altra banda. Dos Cues és un gran covard. Llavors estirem el canó gran tots junts—Heia—Hul·là! Heiià! Hul·là! No grim com gats ni correm com vedells. Travessem la plana, vint jouets nosaltres, fins que ens desjunyem una altra vegada, i pasturem mentre els canons grans parlen a través de la plana amb alguna ciutat de parets de fang, i trossos de la paret cauen, i la pols s'aixeca com si molts caps de bestiar tornessin a casa.\n\n—Oh! I trieu aquell moment per pasturar? —va dir la mula jove.",
+      "timestamp": 1778574572.8640597
+    },
+    {
+      "context": "ar-me quan em poso malalt. L'únic que poden fer és aturar el sou del meu conductor fins que em posi bé, i no em puc refiar del meu conductor.\n\n— Ah! —va fer el cavall de tropa—. Això ho explica. Jo em puc refiar d'en Dick.\n\n— Podries posar tot un regiment de Dicks a la meva esquena sense fer-me sentir millor. Sé prou per estar incòmode, però no prou per continuar endavant malgrat tot.\n\n— No ho entenem —van dir els bous.\n\n— Ja sé que no ho enteneu. No parlo amb vosaltres. No sabeu què és la sang.",
+      "timestamp": 1778574589.7614453
+    },
+    {
+      "context": "Tails i els bous van repetir:— Hukm hai!\n\n—Sí, però qui dóna les ordres? —va preguntar la mula recluta.\n\n—L'home que et camina al davant... O seu a la teva esquena... O t'agafa la corda del nas... O et gira la cua —van dir Billy i el cavall de tropa i el camell i els bous, l'un rere l'altre.\n\n—Però qui els dóna les ordres, a ells?\n\n—Ara vols saber massa, jove —va dir Billy—, i aquesta és una manera de fer-te clavar una guitza. L'únic que has de fer és obeir l'home que et guia i no preguntar res.",
+      "timestamp": 1778574608.0004375
+    },
+    {
+      "context": "n passar els canons grossos, i vaig veure Dues Cues i dos altres elefants junyits en línia a un canó de setge de quaranta lliures, mentre vint joues de bous caminaven darrere. La setena parella tenia un jou nou, i semblaven una mica encarcarats i cansats. Al final van venir els canons de cargol, i la mula Billy caminava com si manés tota la tropa, i el seu arnès estava greixat i polit fins que brillava. Vaig donar una veva tot sol per la mula Billy, però ell no va mirar ni a dreta ni a esquerra.",
+      "timestamp": 1778574841.4867156
+    },
+    {
+      "context": " i li van dir: «Salutacions, Kotick! Aquest any tots som holluschickie, i podem ballar la Dansa del Foc entre les onades de Lukannon i jugar sobre l'herba nova. Però d'on has tret aquest pelatge?»\n\nEl pèl de Kotick era gairebé blanc pur aleshores, i tot i que se'n sentia molt orgullós, només va dir: «Nedeu de pressa! Els meus ossos couen per la terra ferma.» I així van arribar tots a les platges on havien nascut, i van sentir les foques velles, els seus pares, barallant-se entre la boira rodant.",
+      "timestamp": 1778575254.3910348
+    },
+    {
+      "context": "a de la boira degotant de l'ala de la seva gorra. Després pujaren deu o dotze homes, cadascun amb una maça folrada de ferro de tres o quatre peus de llargària, i en Kerick assenyalà una o dues del ramat que havien estat mossegades pels seus companys o estaven massa calentes, i els homes les apartaven d'una puntada de peu amb les seves botes pesades fetes amb la pell del coll d'una morsa, i llavors en Kerick digué: «Deixeu anar!», i els homes colpejaren les foques al cap tan de pressa com podien.",
+      "timestamp": 1778575399.7039244
+    },
+    {
+      "context": "'ho va explicar en Limmershin— durant gairebé cinc minuts no hauríeu pogut sentir un tret a l'Illot de la Morsa. Tota la població cridava i xisclava «Menja-clotilles! Stareek [vell]!», mentre en Vitch Marí es gronxava d'un costat a l'altre grunyint i estossegant.\n\n—Ara m'ho diràs? —va dir en Kotick, sense alè.\n\n—Vés a preguntar-ho a la Vaca Marina —va dir en Vitch Marí—. Si encara és viu, et podrà respondre.\n\n—Com el reconeixeré, la Vaca Marina, quan me la trobi? —va dir en Kotick, allunyant-se.",
+      "timestamp": 1778575444.6614099
+    },
+    {
+      "context": "'illa Bouvet, les Crossets, i fins i tot a una petita taca d'illa al sud del Cap de Bona Esperança. Però a tot arreu el Poble del Mar li deien el mateix. Les foques havien anat a aquelles illes una vegada, però els homes les havien matat a totes. Fins i tot quan va nedar milers de milles fora del Pacífic i va arribar a un lloc anomenat Cap Corrientes (va ser quan tornava de l'illa de Gough), va trobar uns quants centenars de foques sarnoses en una roca i li van dir que els homes també hi anaven.",
+      "timestamp": 1778575460.7400577
+    },
+    {
+      "context": "esordre, això —digué Kotick. Tornaren a inclinar-se, i Kotick començà a perdre la paciència. —Molt bé —digué—. Si resulta que teniu una articulació de més a l'aleta anterior, no cal que us ho feu pagar tant. Veig que us inclineu amb gràcia, però m'agradaria saber els vostres noms. Els llavis fendits es movien i es contreien; i els ulls verds vitris els miraven fixament, però no parlaven.\n\n—Doncs! —féu Kotick—. Sou l'únic poble que he conegut mai, més lleig que Sea Vitch... i amb pitjors maneres.",
+      "timestamp": 1778575480.472033
+    },
+    {
+      "context": "\n\n—És Novastoshnah una altra vegada, però deu vegades millor —va dir Kotick—. La Vaca Marina ha de ser més sàvia del que jo pensava. Els homes no poden baixar pels penya-segats, encara que n'hi hagués cap; i els baixos cap a la mar farien miques un vaixell. Si hi ha cap lloc segur al mar, és aquest.\n\nVa començar a pensar en la foca que s'havia deixat enrere, però tot i que tenia pressa per tornar a Novastoshnah, va explorar a fons el nou territori, per tal de poder respondre totes les preguntes.",
+      "timestamp": 1778575492.7929974
+    },
+    {
+      "context": "la nit, just quan les Aurores Boreals parpellejaven i flamejaven a través de la boira, Kotick escalà una roca nua i mirà avall cap als vivers dispersos i les foques esgarrinxades i sagnants. «Ara», digué, «us he donat la lliçó».\n\n«Carat!», digué el vell Sea Catch, aixecant-se amb rigidesa, perquè estava terriblement masegat. «L'Orca assassina mateixa no els hauria pogut fer miques pitjor. Fill, estic orgullós de tu, i el que és més, vindré amb tu a la teva illa, si és que existeix, aquest lloc».",
+      "timestamp": 1778575508.8583093
+    },
+    {
+      "context": "rà quan un sigui mort;\n(_Al teu gust, Nag._)\nTorn per torn i tort per tort—\n(_Corre i amaga't, Nag._)\nAh! La Mort em caputxa ha fallat!\n(_Ai de tu, Nag!_)\n\nAquesta és la història de la gran guerra que Rikki-tikki-tavi va lliurar tot sol, pels banys del gran bungalou del cantonment de Segowlee. Darzee, l'ocell sastre, l'ajudà, i Chuchundra, la rata mesquera, que mai no surt al mig del terra, sinó que sempre s'arrossega arran de paret, li donà consells; però Rikki-tikki va fer la veritable lluita.",
+      "timestamp": 1778575523.1568143
+    },
+    {
+      "context": "kki va sortir al jardí a veure què hi havia per veure. Era un jardí gran, només mig conreat, amb arbustos, grans com cabanes d'estiu, de roses Marshal Niel, arbres de llimona i de taronja, clapes de bambú i bardisses d'herba alta. Rikki-tikki es va llepar els llavis. —Aquest és un terreny de caça esplèndid —va dir, i la cua se li va eriçar com un raspall d'ampolles de pensar-hi, i va córrer amunt i avall pel jardí, ensumant aquí i allà fins que va sentir veus molt tristes en un arbust d'espines.",
+      "timestamp": 1778575538.1601717
+    },
+    {
+      "context": "ue està enfadada), i es recolzà sobre la cua i les potes del darrere com un petit cangur, mirant al seu voltant i xerricant de ràbia. Però en Nag i la Nagaina havien desaparegut entre l'herba. Quan una serp falla el cop, mai no diu res ni dona cap senyal del que pensa fer després. En Rikki-Tikki no es va voler arriscar a seguir-los, perquè no estava segur de poder amb dues serps alhora. Així doncs, trotà fins al caminet de grava prop de la casa i s'assegué a pensar. Per a ell era un afer seriós.",
+      "timestamp": 1778575557.615931
+    },
+    {
+      "context": " en Teddy igualment per haver jugat a la pols. En Rikki s'ho estava passant de primera.\n\nAquella nit, a l'hora de sopar, passejant amunt i avall entre les copes de vi de la taula, s'hauria pogut atipar tres vegades amb bones coses. Però es recordava d'en Nag i la Nagaina, i tot i que era molt agradable que la mare d'en Teddy l'acariciés i seu a l'espatlla d'en Teddy, els ulls se li posaven vermells de tant en tant, i es posava a llançar el seu llarg crit de guerra: «Rikk-tikk-tikki-tikki-txik!».",
+      "timestamp": 1778575571.7212067
+    },
+    {
+      "context": "estan al seu favor. Què he de fer? —va dir en Rikki-tikki-tavi.\n\nEn Nag va oscil·lar d'una banda a l'altra, i després en Rikki-tikki el va sentir beure de la gran gerra d'aigua que s'usava per omplir el bany. —Això està bé —va dir la serp—. Ara, quan van matar en Karait, l'home gran duia un bastó. Potser encara té aquell bastó, però quan vingui a banyar-se pel matí no durà cap bastó. L'esperaré aquí fins que vingui. Nagaina... m'escoltes?... L'esperaré aquí, a la fresca, fins que es faci de dia.",
+      "timestamp": 1778575588.0319617
+    },
+    {
+      "context": "ous?\n\n—Al melonar, a l'extrem més proper al mur, on el sol pica gairebé tot el dia. Els hi va amagar fa setmanes.\n\n—I no t'ha semblat valdre la pena dir-m'ho? L'extrem més proper al mur, has dit?\n\n—Rikki-tikki, no et pensaràs menjar-te els ous?\n\n—Menjar-me'ls, no exactament; no. Darzee, si tens un bri de seny, volaràs cap a les cavallerisses i faràs veure que tens l'ala trencada, i deixaràs que la Nagaina et persegueixi fins a aquest matoll. He d'arribar al melonar, i si hi anava ara, em veuria.",
+      "timestamp": 1778575603.3943
+    },
+    {
+      "context": "s ulls eren vermells de sang. —Quin preu per un ou de serp? Per una jove cobra? Per una jove cobra reial? Per l'últim... el ben últim de la niuada? Les formigues se'ls estan menjant tots els altres allà baix, al parterre de melons.\n\nNagaina va girar completament, oblidant-ho tot per aquell únic ou. Rikki-tikki va veure com el pare d'en Teddy estirava una mà grossa, agafava en Teddy per l'espatlla i l'arrossegava a l'altra banda de la tauleta amb les tasses de te, sa i fora de l'abast de Nagaina.",
+      "timestamp": 1778575617.012738
+    },
+    {
+      "context": " de coure; i la raó per la qual sempre el fa és perquè és el pregoner de cada jardí indi, i explica totes les notícies a tothom qui vulgui escoltar. Quan en Rikki-tikki va pujar pel camí, va sentir les seves notes d'«atenció» com un petit gong de sopar, i després el constant «Ding-dong-tock! En Nag és mort—dong! La Nagaina és morta! Ding-dong-tock!» Això va fer que tots els ocells del jardi cantessin, i les granotes rauclessin, perquè en Nag i la Nagaina solien menjar granotes així com ocellets.",
+      "timestamp": 1778575635.3438132
+    },
+    {
+      "context": "Teodor jeient mort a Magdala, i havia tornat de nou en el vapor amb dret, segons deien els soldats, a la medalla de la Guerra d'Abissínia. Havia vist morir els seus companys elefants de fred, d'epilèpsia, de fam i de cop de sol en un lloc anomenat Ali Musjid, deu anys més tard; i després l'havien enviat milers de milles cap al sud per arrossegar i apilar grans bigues de teca als patis de fusta de Moulmein. Allà havia mig matat un elefant jove insubordinat que defugia la seva part justa de feina.",
+      "timestamp": 1778575649.4655147
+    },
+    {
+      "context": " ric, i et comprarà al Govern, per la teva mida i els teus modals, i llavors no hauràs de fer res més que portar arracades d'or a les orelles, i un howdah daurat al llom, i una tela vermella coberta d'or als costats, i caminar al capdavant de les processons del Rei. Llavors jo seuré al teu coll, oh Kala Nag, amb un ankus de plata, i els homes correran davant nostre amb bastons daurats, cridant: «Pas per a l'elefant del Rei!» Això serà bo, Kala Nag, però no tan bo com aquesta cacera a les selves.",
+      "timestamp": 1778575661.1621711
+    },
+    {
+      "context": " elefants pel teu compte, petit desgraciat? Ara aquests caçadors ximples, que cobren menys que jo, han parlat a Petersen Sahib de l'assumpte.» El petit Toomai es va espantar. No sabia gaire cosa dels homes blancs, però per a ell Petersen Sahib era el més gran de tots. Era el cap de totes les operacions dels keddah —l'home que capturava tots els elefants per al Govern de l'Índia, i que en sabia més, dels costums dels elefants, que cap altre home viu.\n\n«Què... què passarà?», digué el petit Toomai.",
+      "timestamp": 1778575675.447341
+    },
+    {
+      "context": " per què vas ensenyar aquest truc al teu elefant? Era per ajudar-te a robar melons verds de les teulades de les cases quan es posen a assecar les panotxes?\n\n—No pas melons verds, Protector dels Pobres —va dir el Petit Toomai—, sinó melons.\n\nI tots els homes que seien al voltant esclataren en una riallada. La majoria d'ells havien ensenyat aquell truc als seus elefants quan eren nois. El Petit Toomai estava penjat a vuit peus d'alçada, i hauria donat qualsevol cosa per ser a vuit peus sota terra.",
+      "timestamp": 1778575689.5041792
+    },
+    {
+      "context": "oneix les quatre parets de la seva cabana. Bé, deixa els teus elefants sense cadenes aquesta nit i mira què passa. Pel que fa al seu ball, he vist el lloc on... Bapree-bap! Quants revolts té el riu Dihang? Aquí hi ha un altre gual, i hem de fer nadar els vedells. Pareu, vosaltres del darrere.\n\nI d'aquesta manera, xerrant i discutint i esquitxant pels rius, van fer la primera marxa cap a una mena de campament de recepció per als nous elefants. Però van perdre la paciència molt abans d'arribar-hi.",
+      "timestamp": 1778575709.4878943
+    },
+    {
+      "context": " va lligar aquell elefant de la pota del davant a la del darrere, però va passar una baga de corda d'herba per la pota de Kala Nag, i li va dir que recordés que estava ben lligat. Sabia que ell i el seu pare i el seu avi havien fet el mateix centenars de vegades abans. Kala Nag no va respondre a l'ordre amb aquell gloc-gloc, com solia fer. Es va estar quiet, mirant a través de la llum de la lluna, amb el cap una mica alçat i les orelles esteses com ventalls, cap als grans plecs dels turons Garo.",
+      "timestamp": 1778575726.0779018
+    },
+    {
+      "context": "i l'esclafit de l'aigua corrent, i Kala Nag travessà el llit d'un riu, palpejant el camí a cada passa. Per damunt del brogit de l'aigua, que remolïnava al voltant de les potes de l'elefant, el Petit Toomai podia sentir més esquitxades i alguns barrits tant riu amunt com riu avall—grans grunys i roncs irats, i tota la boira del seu voltant semblava plena d'ombres ondulants i rodolants.\n\n—Ai!—digué, mig en veu alta, mentre les dents li petaven.—Aquesta nit els elefants són fora. Doncs és la dansa!",
+      "timestamp": 1778575741.7521162
+    },
+    {
+      "context": "vegada van sobresaltar-se i van tirar les orelles endavant en sentir el dring d'una cadena al bosc, però era la Pudmini, l'elefanta preferida de Petersen Sahib, amb la cadena trencada de cop, grunyint i furgant pujol amunt. Havia d'haver trencat les estaques i haver vingut de dret des del campament de Petersen Sahib; i el Petit Toomai va veure un altre elefant, un que no coneixia, amb profundes nafres de corda a l'esquena i al pit. També ell havia d'haver escapat d'algun campament dels voltants.",
+      "timestamp": 1778575755.1638224
+    },
+    {
+      "context": "lligats amb cadenes dobles aquella nit, van començar a baruitar, i Pudmini, enfangada fins a les espatlles, amb Kala Nag, molt adolorit de les potes, va entrar arrossegant-se al campament. La cara del Petit Toomai era grisa i demacrada, i duia els cabells plens de fulles i xops de rosada, però va intentar saludar Petersen Sahib i va exclamar amb un fil de veu:\n—La dansa... la dansa dels elefants! L'he vista, i... em moro!\nMentre Kala Nag seia, ell va lliscar-se del seu coll en un desmai profund.",
+      "timestamp": 1778575770.933713
+    },
+    {
+      "context": "enyors de les cadenes»,—girà la vista cap a la filera d'estaques—, «aquí teniu el petit que ha vist les vostres danses en els vostres amagatalls,—l'espectacle que cap home no ha vist mai! Rendeu-li honor, els meus senyors! Salaam karo, fills meus. Feu la vostra salutació a Toomai dels Elefants! Gunga Pershad, ahaa! Hira Guj, Birchi Guj, Kuttar Guj, ahaa! Pudmini,—tu l'has vist a la dansa, i tu també, Kala Nag, la meva perla entre els elefants!—ahaa! Tots junts! Per Toomai dels Elefants. Barrao!»",
+      "timestamp": 1778575786.5000894
+    },
+    {
+      "context": "l campament, obrint-me camí pel fang.\n\nFinalment vaig ensopegar amb la cua d'un canó, i per això vaig saber que era en algun lloc prop de les línies d'artilleria, on els canons s'apilaven de nit. Com que no volia continuar xipollejant més per la pluja i la foscor, vaig posar el meu impermeable sobre la boca d'un canó, i vaig fer una mena de tenda amb dos o tres escombres que vaig trobar, i em vaig estirar al llarg de la cua d'un altre canó, preguntant-me on devia ser la Vixen, i on podia ser jo.",
+      "timestamp": 1778575801.05635
+    },
+    {
+      "context": "vall de tropa—. Em crida a mi. Ei, noi, deixa de xisclar. La foscor no ha fet mai mal a ningú.\n\nEls bous dels canons es van estirar junts i van començar a rumiar, però la mula jove es va arraulir contra en Billy.\n\n—Coses! —va dir—. Terribles i horribles, Billy! Van entrar a les nostres files mentre dormíem. Creus que ens mataran?\n\n—Tinc moltes ganes de clavar-te una bona puntada de peu —va dir en Billy—. Un mula de catorze pams amb la teva instrucció deshonrant la bateria davant d'aquest senyor!",
+      "timestamp": 1778575814.8648033
+    },
+    {
+      "context": "s ganivets del ferrador—, i he de vigilar que la bota d'en Dick tot just toqui la bota del següent home sense aixafar-la. Puc veure la llança d'en Dick a la dreta del meu ull dret, i sé que estic segur. No m'agradaria ser l'home o el cavall que s'enfrontés amb en Dick i amb mi quan tenim pressa.\n\n—I els ganivets no fan mal? —va dir la mula jove.\n\n—Bé, una vegada em van fer un tall al pit, però no va ser culpa d'en Dick...\n\n—Poc m'importaria de qui era la culpa, si feia mal! —va dir la mula jove.",
+      "timestamp": 1778575830.5337389
+    },
+    {
+      "context": "Dos Cues és un gran covard. Llavors estirem el canó gran tots junts... Heia! Hul·là! Heià! Hul·là! No pugem com els gats ni correm com els vedells. Travessem la plana nivellada, vint jou de nosaltres, fins que ens desjunyem una altra vegada, i pasturem mentre els canons grans parlen a través de la plana amb alguna ciutat de parets de fang, i trossos de la paret cauen, i la pols s'aixeca com si molts caps de bestiar tornessin a casa.\n\n—Oh! I trieu aquell moment per pasturar? —va dir la mula jove.",
+      "timestamp": 1778575854.8040044
+    },
+    {
+      "context": "ue ningú no sap com curar-me quan em poso malalt. L'únic que poden fer és aturar la paga del meu conductor fins que em posi bé, i no em puc fiar del meu conductor.\n\n—Ah! —digué el cavall de tropa—. Això ho explica. Jo em puc fiar d'en Dick.\n\n—Podríeu posar tot un regiment de Dicks sobre la meva esquena sense fer-me sentir millor. Sé prou per estar incòmode, però no prou per continuar malgrat tot.\n\n—No ho entenem —digueren els bous.\n\n—Ja sé que no. No parlo amb vosaltres. No sabeu què és la sang.",
+      "timestamp": 1778575869.7671726
+    },
+    {
+      "context": " Cues i els bous repetiren: «Hukm hai!»\n\n—Sí, però qui dóna les ordres? —preguntà la mula recluta.\n\n—L'home que et camina al davant... O seu a la teva esquena... O t'aguanta la corda del nas... O et gira la cua —digueren en Billy i el cavall de tropa i el camell i els bous, l'un rere l'altre.\n\n—Però qui els dóna les ordres a ells?\n\n—Ara vols saber massa, jove —digué en Billy—, i aquesta és una manera de guanyar-se una guitza. L'únic que has de fer és obeir l'home que et porta i no preguntar res.",
+      "timestamp": 1778575888.3934479
+    },
+    {
+      "context": "ns grossos, i vaig veure en Two Tails i dos altres elefants junyits en línia a un canó de setge de quaranta lliures, mentre vint parelles de bous caminaven darrere. La setena parella tenia un jou nou, i semblaven una mica encarcarats i cansats. Al final van venir els canons de cargol, i en Billy la mula caminava com si manés tota la tropa, i el seu arnès estava untat i polit fins que brillava. Jo tot sol vaig fer un crit d'ànim per en Billy la mula, però ell no va mirar ni a dreta ni a esquerra.",
+      "timestamp": 1778575909.285067
+    },
+    {
+      "context": "s maneres;\n     Perquè podem esmunyir-nos i enfilar-nos, nois, i aparèixer a tot arreu,\n     Oh, és el nostre goig en un cim alt, amb una cama o dues de\n        sobra!\n\n     Sort a tots els sergents, doncs, que ens deixen triar el nostre camí;\n     Mala sort a tots els conductors que no saben carregar un fardell:\n     Perquè podem esmunyir-nos i enfilar-nos, nois, i aparèixer a tot arreu,\n     Oh, és el nostre goig en un cim alt, amb una cama o dues de\n        sobra!\n\n     CAMELS DEL COMISSARIAT",
+      "timestamp": 1778575928.480939
+    },
+    {
+      "context": "egó.\n     Mireu la nostra línia a través de la plana,\n     Com un cordó de peu tornat a corbar,\n     Estenent-se, retorçant-se, rodant lluny,\n     Escombrant-ho tot cap a la guerra!\n     Mentre els homes que caminen al costat,\n     Polsosos, silenciosos, d'ulls feixucs,\n     No saben dir per què nosaltres o ells\n     Marquem i sofram dia rere dia.\n        _Som fills del Campament,\n        Servint cadascú en el seu grau;\n        Fills del jou i l'agulló,\n        Sella i arnès, farcell i carregó!_",
+      "timestamp": 1778575933.8052073
     }
-  },
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  ]
 }

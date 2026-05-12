@@ -1,0 +1,14 @@
+{
+  "id": "1778522419_translate_completar-the-jungle-book",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducció de 'the-jungle-book'. L'original té 50846 paraules però la traducció només en té 6438 (12.7% completat). Continua des d'on s'ha quedat seguint EXACTAMENT l'estil existent. IMPORTANT: Verifica amb 'python3 scripts/verificar_traduccio.py' abans de finalitzar.",
+  "metadata": {
+    "obra_path": "/home/jo/biblioteca-universal-arion/obres/narrativa/rudyard-kipling/the-jungle-book",
+    "original_words": 50846,
+    "traduccio_words": 6438,
+    "ratio": 12.7,
+    "slug": "the-jungle-book"
+  }
+}

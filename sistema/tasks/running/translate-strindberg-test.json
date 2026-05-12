@@ -1,7 +1,0 @@
-{
-  "id": "translate-strindberg-test-20260510",
-  "type": "translate",
-  "priority": 1,
-  "max_duration": 1800,
-  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/traduir_venice.py --ruta obres/teatre/august-strindberg/froken-julie --model zai-org-glm-5"
-}

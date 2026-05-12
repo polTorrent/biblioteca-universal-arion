@@ -1,0 +1,9 @@
+{
+  "id": "fix-translate-rumi-masnavi-seleccio-10-contes-1778522415",
+  "type": "fix-translate",
+  "priority": 2,
+  "max_duration": 3600,
+  "obra": "obres/oriental/rumi/masnavi-seleccio-10-contes",
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/oriental/rumi/masnavi-seleccio-10-contes/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'rumi' --obra 'masnavi-seleccio-10-contes'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/oriental/rumi/masnavi-seleccio-10-contes/ && git commit -m 'fix: traduir/completar rumi/masnavi-seleccio-10-contes' && git push",
+  "created": "2026-05-11T20:00:15+02:00"
+}
