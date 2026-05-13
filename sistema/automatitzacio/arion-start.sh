@@ -13,7 +13,7 @@ STATE_DIR="$PROJECT/sistema/state"
 LOCKFILE="$TASKS_DIR/worker.lock"
 DIEM_STOP="$STATE_DIR/diem_stop"
 VENICE_CLI="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
-MIN_DIEM=0.5
+MIN_DIEM=1.0
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S UTC')] [START] $1" | tee -a "$LOG"

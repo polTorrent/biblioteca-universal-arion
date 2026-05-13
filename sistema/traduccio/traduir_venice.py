@@ -744,84 +744,138 @@ def main():
     # Carregar glossari
     glossari = load_glossari(obra_dir)
 
-    # Carregar traducció existent si --continuar
+    # === ESCRIPTURA INCREMENTAL ===
+    # Cada chunk exitós s'afegeix immediatament a traduccio.md.
+    # Si el procés mor, --continuar reprèn des de l'últim chunk completat.
+
     traduccio_path = obra_dir / "traduccio.md"
-    traduccio_exist = ""
-    start_chunk = args.start
 
-    if args.continuar and traduccio_path.exists():
-        with open(traduccio_path, "r", encoding="utf-8") as f:
-            traduccio_exist = f.read()
-        chars_exist = len(traduccio_exist)
-        start_chunk = chars_exist // CHUNK_SIZE
-        print(f"↩️ Continuant des del chunk {start_chunk}")
+    def count_completed_chunks(path: Path) -> int:
+        """Compta quants chunks ja estan traduïts al traduccio.md."""
+        if not path.exists():
+            return 0
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+        # Els chunks estan separats per \n\n dins la secció de body
+        # Format: header\n---\n\nbody\n---\n\nfooter
+        # Extreure el body (entre el primer --- i l'últim ---)
+        parts = content.split("\n---\n")
+        if len(parts) < 3:
+            return 0  # No hi ha body encara
+        body = "---\n".join(parts[1:-1]).strip()
+        if not body:
+            return 0
+        # Cada chunk traduït és un bloc separador per \n\n
+        blocks = [b.strip() for b in body.split("\n\n") if b.strip()]
+        return len(blocks)
 
-    # Context anterior
-    context_anterior = ""
-    if traduccio_exist:
-        context_anterior = traduccio_exist[-500:] if len(traduccio_exist) > 500 else traduccio_exist
-    context_anterior = load_memoria_contextual(obra_dir) or context_anterior
-
-    # Traduir chunks
-    traduccions = []
-    errors = []
-    total_metrics = []
-
-    for i, chunk in enumerate(chunks[start_chunk:], start=start_chunk):
-        print(f"\n[{i+1}/{len(chunks)}] Traduint {len(chunk)} caràcters...")
-
-        try:
-            traduccio, metrics = translate_chunk(
-                chunk=chunk,
-                metadata=metadata,
-                glossari=glossari,
-                context_anterior=context_anterior,
-                model=model,
-                disable_thinking=disable_thinking,
-            )
-            traduccions.append(traduccio)
-            context_anterior = traduccio[-500:] if len(traduccio) > 500 else traduccio
-            total_metrics.append(metrics)
-
-            if (i + 1) % 5 == 0:
-                save_memoria_contextual(obra_dir, context_anterior)
-
-            print(f"✅ Chunk {i+1} completat (ratio={metrics.get('ratio_longitud', 'N/A')}, "
-                  f"tokens={metrics.get('tokens_output', 'N/A')})")
-
-        except Exception as e:
-            print(f"❌ Error en chunk {i+1}: {e}")
-            errors.append((i, str(e)))
-            traduccions.append(f"[ERROR: {e}]")
-
-    # Combinar traduccions
-    traduccio_final = "\n\n".join(traduccions)
-
-    # Si continuem, afegir a l'existent
-    if traduccio_exist:
-        if "*Traducció de domini públic*" in traduccio_exist:
-            traduccio_exist = traduccio_exist.split("*Traducció de domini públic*")[0].strip()
-        traduccio_final = traduccio_exist + "\n\n" + traduccio_final
-
-    # Aplicar format final
-    output = f"""# {metadata['titol']}
+    def write_header(path: Path, metadata: dict) -> None:
+        """Escriu la capçalera inicial si no existeix."""
+        header = f"""# {metadata['titol']}
 *{metadata['autor']}*
 
 Traduït del {metadata['llengua']} per Biblioteca Arion
 
 ---
 
-{traduccio_final}
-
----
-
-*Traducció de domini públic.*
 """
+        with open(path, "w", encoding="utf-8") as f:
+            f.write(header)
 
-    # Guardar
-    with open(traduccio_path, "w", encoding="utf-8") as f:
-        f.write(output)
+    def append_chunk(path: Path, text: str) -> None:
+        """Afegeix un chunk de manera atòmica via fitxer temporal."""
+        tmp = path.parent / ".chunk_pending.tmp"
+        with open(tmp, "w", encoding="utf-8") as f:
+            f.write("\n\n" + text)
+        # Atomic: read existing + append
+        with open(path, "a", encoding="utf-8") as f:
+            f.write("\n\n" + text)
+        tmp.unlink(missing_ok=True)
 
+    def write_footer(path: Path) -> None:
+        """Afegeix el peu de pàgina final."""
+        with open(path, "a", encoding="utf-8") as f:
+            f.write("\n\n---\n\n*Traducció de domini públic.*\n")
+
+    def clean_footer_for_continue(path: Path) -> None:
+        """Treu el footer si existeix (per poder continuar afegint chunks)."""
+        with open(path, "r", encoding="utf-8") as f:
+            content = f.read()
+        if "*Traducció de domini públic*" in content:
+            content = content.split("\n---\n\n*Traducció de domini públic*")[0].strip()
+            with open(path, "w", encoding="utf-8") as f:
+                f.write(content)
+
+    # Determinar start_chunk
+    start_chunk = args.start
+    if args.continuar:
+        start_chunk = count_completed_chunks(traduccio_path)
+        # Netejar footer per poder afegir
+        clean_footer_for_continue(traduccio_path)
+        # Assegurar que el fitxer existeix amb header
+        if not traduccio_path.exists():
+            write_header(traduccio_path, metadata)
+        print(f"↩️ Continuant des del chunk {start_chunk} ({count_completed_chunks(traduccio_path)} blocs al fitxer)")
+    else:
+        # Traducció nova: escriure header
+        write_header(traduccio_path, metadata)
+
+    # Context anterior
+    context_anterior = ""
+    if traduccio_path.exists():
+        with open(traduccio_path, "r", encoding="utf-8") as f:
+            existing = f.read()
+        context_anterior = existing[-500:] if len(existing) > 500 else existing
+    context_anterior = load_memoria_contextual(obra_dir) or context_anterior
+
+    # Traduir chunks amb escriptura incremental
+    errors = []
+    total_metrics = []
+    MAX_CHUNK_RETRIES = 3
+    chunks_written = 0
+
+    for i, chunk in enumerate(chunks[start_chunk:], start=start_chunk):
+        print(f"\n[{i+1}/{len(chunks)}] Traduint {len(chunk)} caràcters...")
+
+        traduccio = None
+        last_error = None
+
+        for attempt in range(1, MAX_CHUNK_RETRIES + 1):
+            try:
+                traduccio, metrics = translate_chunk(
+                    chunk=chunk,
+                    metadata=metadata,
+                    glossari=glossari,
+                    context_anterior=context_anterior,
+                    model=model,
+                    disable_thinking=disable_thinking,
+                )
+                total_metrics.append(metrics)
+                print(f"✅ Chunk {i+1} completat (ratio={metrics.get('ratio_longitud', 'N/A')}, "
+                      f"tokens={metrics.get('tokens_output', 'N/A')})")
+                break
+            except Exception as e:
+                last_error = str(e)
+                print(f"⚠️ Intent {attempt}/{MAX_CHUNK_RETRIES} fallat per chunk {i+1}: {e}")
+                if attempt < MAX_CHUNK_RETRIES:
+                    time.sleep(5 * attempt)  # Backoff: 5s, 10s
+
+        if traduccio is None:
+            print(f"❌ Chunk {i+1} fallat després de {MAX_CHUNK_RETRIES} intents: {last_error}")
+            errors.append((i, last_error))
+            continue  # Saltar aquest chunk, no escriure res
+
+        # Actualitzar context i memòria
+        context_anterior = traduccio[-500:] if len(traduccio) > 500 else traduccio
+        save_memoria_contextual(obra_dir, context_anterior)
+
+        # ESCRIURE INCREMENTALMENT
+        append_chunk(traduccio_path, traduccio)
+        chunks_written += 1
+        print(f"💾 Chunk {i+1} escrit a disc ({chunks_written} nous aquesta sessió)")
+
+    # Escriure footer final
+    write_footer(traduccio_path)
     print(f"\n✅ Traducció guardada a: {traduccio_path}")
 
     # Guardar memòria final
@@ -841,7 +895,7 @@ Traduït del {metadata['llengua']} per Biblioteca Arion
             print(f"   Chunk {idx}: {err}")
 
     print(f"\n📊 Estadístiques:")
-    print(f"   Chunks traduïts: {len(traduccions)}")
+    print(f"   Chunks escrits: {chunks_written}")
     print(f"   Errors: {len(errors)}")
     print(f"   Model utilitzat: {model}")
     if total_metrics:

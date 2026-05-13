@@ -1,51 +1,374 @@
 {
-  "traduccions": {},
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": {
-    "autor_bio": "Lucius Apuleius Madaurensis (c. 124 - c. 170 d.C.), Madaura, Numídia (actual Algèria). Escriptor, orador i filòsof romà d'origen africà, educat a Cartago i Atenes. Va ser iniciat als misteris d'Isis i va desenvolupar una carrera com a advocat i filòsof platònic. És considerat l'últim gran prosista de la literatura llatina clàssica.",
-    "context_historic": "Segle II d.C., època dels emperadors Antonins, període de pau i prosperitat romana. Renaixement cultural amb síntesi entre tradicions gregues, romanes i orientals. Expansió dels cultes mistèrics i del neoplatonisme.",
-    "context_obra": "Metamorphoses (Cupido et Psyche, Libri IV-VI) (c. 160-170 d.C.) - Novel·la al·legòrica intercalada / conte màgic. Història narrada com a relat intercalat dins de 'L'ase d'or', explicada per una vella a una jove segrestada. Serveix com a al·legoria de l'ànima humana i el seu camí vers la divinitat.",
-    "influencies": [
-      "Platonisme",
-      "Cultes mistèrics d'Isis",
-      "Retòrica asiàtica",
-      "Literatura milèsia",
-      "Filosofia estoica"
-    ],
-    "temes_principals": [
-      "Amor diví vs amor terrenal",
-      "Proves iniciàtiques de l'ànima",
-      "Bellesa i gelosia",
-      "Curiositat i transgressió",
-      "Redempció i purificació"
-    ]
-  },
-  "notes_pendents": [
-    "[H] Personatge històric: Venus",
-    "[H] Personatge històric: Cupido/Amor",
-    "[H] Personatge històric: Psique",
-    "[H] Personatge històric: Júpiter",
-    "[H] Personatge històric: Zèfir",
-    "[H] Personatge històric: Pan",
-    "[H] Personatge històric: Ceres",
-    "[H] Personatge històric: Juno",
-    "[H] Personatge històric: Prosèrpina",
-    "[H] Personatge històric: Plutó",
-    "[C] Referència cultural: Culte a Venus",
-    "[C] Referència cultural: Misteris d'Isis",
-    "[C] Referència cultural: Geografia de l'Hades",
-    "[C] Referència cultural: Rituals de bellesa romana",
-    "[C] Referència cultural: Oracles i profecies",
-    "[C] Referència cultural: Banquets divins",
-    "[C] Referència cultural: Metamorfosis ovidiana",
-    "[T] Terme tècnic: pulchritudo",
-    "[T] Terme tècnic: forma",
-    "[T] Terme tècnic: numen",
-    "[T] Terme tècnic: sacrarium",
-    "[T] Terme tècnic: mysteria",
-    "[T] Terme tècnic: apotheosis",
-    "[T] Terme tècnic: pietas",
-    "[T] Terme tècnic: religio"
+  "ultim_context": "tó a mi i al cavall, que havíem de ser les bèsties de càrrega, i ens porten, esgotats per molts turons i revolts, gairebé a la caiguda de la tarda fins a una certa cova, d'on ens fan tornar de pressa carregats de moltes coses, sense deixar-nos reposar ni un breu moment. I tanta era la pressa i el neguit que, a cops i empentes, em feren caure sobre una pedra que hi havia vora el camí, i d'allí, a força de nous colps, m'obligaren a alçar-me com pogué, tot coix de la cama dreta i del casc esquerre.",
+  "timestamp": 1778654788.550309,
+  "historial": [
+    {
+      "context": " sovint, no veuràs si el veus. Doncs bé: si d'ara endavant aquelles lames malèfiques vénen armades d'ànims nocius —i vindran, ho sé—, no entaules cap conversa amb elles; i si no pots suportar-ho, per la teva bondat innata i per la tendresa del teu cor, almenys no escoltis ni responguis res que tingui a veure amb el teu marit. Perquè ja farem créixer la nostra família, i aquest ventre encara infantil porta en si un infant: diví, si guardes els nostres secrets en silenci; mortal, si els profanes.»",
+      "timestamp": 1778650860.005714
+    },
+    {
+      "context": "bé desconeix el rostre del seu propi marit; i sigui quina sigui la veritat, cal desposseir-la d'aquestes riqueses com més aviat millor. I si desconeix el rostre del seu marit, és que s'ha casat amb un déu, i és un déu el que ens porta en el ventre amb aquest embaràs. Si la mare d'un infant diví —que no ho permeti el cel— arriba a saber-ho, de seguida em penjaré d'un nus corredís. Anem, doncs, de moment a casa dels nostres pares, i al fil d'aquesta conversa anem teixint enganys del mateix color.»",
+      "timestamp": 1778650931.2829187
+    },
+    {
+      "context": " vacil·la encara incerta de propòsit i és esquinçada per molts sentiments contradictoris de la seva desgràcia. S'afanya, s'atura; s'atreveix, tremola; desconfia, s'irrita; i, el que és el cim de tot, en un mateix cos odia la bèstia i estima el marit. Tanmateix, quan el vespre ja arrossegava la nit, amb precipitada pressa va preparar els estris del crim nefand. Va arribar la nit, i va arribar el marit, i, après d'haver esgrimit les primeres escaramusses de Venus, havia davallat en un son profund.",
+      "timestamp": 1778651002.8669457
+    },
+    {
+      "context": "i et vaig prendre per esposa, de manera que, és clar, t'havia de semblar una bèstia i havies de tallar-me el cap amb el ferro —aquest cap que porta els ulls que t'estimen. Això és el que t'aconsellava que evitessis sempre, una i altra vegada; això és el que et recordava amb benvolença. Però aquelles excel·lents conselleres teves pagaran de seguida el preu d'un magisteri tan perniciós; a tu, en canvi, tan sols et castigaré amb la meva fugida.» I en acabar de parlar, s'enlairà en vol amb les ales.",
+      "timestamp": 1778651066.4618225
+    },
+    {
+      "context": " no veuràs si el veus. Així doncs, si d'ara endavant aquelles malvades làmies vénen armades d'ànims nocius —i vindran, ho sé—, no entaules cap conversa amb elles; i si no pots suportar-ho per la teva natural senzillesa i per la tendresa del teu cor, almenys no escoltis ni responguis res de res sobre el teu marit. Perquè ja farem créixer la nostra família: aquest ventre encara infantil porta en si un altre infant, que serà diví si guardes els nostres secrets en silenci, i mortal si els profanes.»",
+      "timestamp": 1778651230.9273164
+    },
+    {
+      "context": "ura del seu propi marit; i sigui quina sigui la veritat, cal foragitar-la com més aviat millor d'aquelles riqueses. I si és que ignora el rostre del seu marit, és que s'ha casat amb un déu, i és un déu el que ens porta en el ventre amb aquell embaràs. Si la mare d'un fill diví —cosa que no vulgui el cel— arriba a saber-ho, de seguida em penjaré d'un nus corredís. Anem, doncs, de moment a casa dels nostres pares, i a l'inici d'aquesta conversa anem teixint enganys tan ben assortits com els seus.»",
+      "timestamp": 1778651302.5103943
+    },
+    {
+      "context": "mans al crim vacil·lava encara incerta de resolució, i era esquinçada per molts sentiments contradictoris davant la seva desgràcia. S'afanyava, s'aturava; gosava, tremolava; desconfiava, s'enrabiava; i, allò que és el cim de tot, en un mateix cos odiava la bèstia i estimava el marit. Tanmateix, quan el vespre ja estirava la nit, amb precipitada pressa preparà els estris del crim nefand. Arribà la nit, i amb ella el marit; i després dels primers combats de Venus, havia davallat en un son profund.",
+      "timestamp": 1778651375.8339455
+    },
+    {
+      "context": "xa i et vaig prendre per esposa, de manera que, és clar, t'havia de semblar una bèstia i havies de tallar-me el cap amb el ferro —aquest cap que porta els ulls que t'estimen. Això és el que sempre t'havia aconsellat de guardar-te'n, això és el que et recordava amb bona voluntat. Però aquelles excel·lents conselleres teves pagaran de seguida el preu d'un magisteri tan funest; a tu, en canvi, no et castigaré sinó amb la meva fugida.» I en acabar de parlar, s'enlairà amb les ales cap a les altures.",
+      "timestamp": 1778651437.1767986
+    },
+    {
+      "context": "e dit sovint, no veuràs si el veus. Per tant, si d'ara endavant aquelles bruixes malèfiques vénen armades d'ànims nocius —i vindran, ho sé—, no entaules cap conversa amb elles; i si no pots suportar-ho per la teva natural senzillesa i per la tendresa del teu cor, almenys no escoltis ni responguis res sobre el teu marit. Perquè ja engrandim la nostra família, i aquest ventre encara infantil porta en si un fill nostre: si guardes els nostres secrets en silenci, serà diví; si els profanes, mortal.»",
+      "timestamp": 1778651596.2766447
+    },
+    {
+      "context": " mentides, o bé no coneix la figura del seu marit; i tant si l'una cosa és certa com si ho és l'altra, cal expulsar-la com més aviat millor d'aquelles riqueses. I si és que ha pres per marit un déu —cosa que ben bé podria ser— i ens porta un déu en aquell ventre, quan ho sàpiga la mare d'aquell infant diví —que no ho vulgui el cel!—, de seguida em penjaré d'un nus corredís. Anem, doncs, de moment a casa dels nostres pares i teixim al voltant d'aquest inici de conversa mentides que hi concordin.»",
+      "timestamp": 1778651665.0333803
+    },
+    {
+      "context": "ar les mans al crim vacil·la encara incerta de propòsit i es debat entre molts sentiments contradictoris davant la seva desgràcia. S'afanya, s'atura; s'atreveix, tremola; desconfia, s'irrita; i, el que és el colmo, en un mateix cos odia la bèstia i estima el marit. Tanmateix, quan el vespre ja arrossegava la nit, amb precipitada pressa disposa els preparatius del seu crim nefand. Vingué la nit, i vingué el marit; i, havent lliurat els primers combats de Venus, s'havia enfonsat en un son profund.",
+      "timestamp": 1778651736.0012906
+    },
+    {
+      "context": "vaig ferir amb la meva pròpia fletxa i et vaig prendre per esposa, de manera que et semblés, és clar, una bèstia, i em tallessis el cap amb el ferro —aquest cap que porta els ulls que t'estimen. Això és el que sempre et recomanava que guardesses, això és el que t'advertia amb bona voluntat. Però aquelles egregies conselleres teves pagaran ben aviat el preu d'un magisteri tan perniciós; a tu, en canvi, no et castigaré sinó amb la meva fugida.» I en acabar de parlar, s'enlairà en vol amb les ales.",
+      "timestamp": 1778651790.68643
+    },
+    {
+      "context": " fill, cremat, jeu afligit per un dolor de ferida greu, en perill de vida, i que ja per boca de tots els pobles, entre rumors i retrets de tota mena, tota la família de Venus és mal vista: perquè ell s'ha retirat a folgar per les muntanyes i tu a nedar per la mar, i per això no hi ha cap plaer, cap gràcia, cap encant, sinó que tot és descurat, rústec i aspre; no hi ha noces conjugals, ni amistats socials, ni tendresa de fills, sinó un desordre enorme i un fàstic desagradable de pactes embrutits.",
+      "timestamp": 1778651857.0953977
+    },
+    {
+      "context": "dit, no veuràs si el veus. Doncs bé, si d'ara endavant aquelles làmies malèfiques venen armades d'ànims danyosos —i vindran, ho sé—, no entaulis cap conversa amb elles, i si no pots suportar-ho per la teva natural senzillesa i per la tendresa del teu cor, almenys no escoltis ni responguis res de res sobre el teu marit. Perquè ja engrandim la nostra família, i aquest ventre encara infantil porta en si un altre infant: si guardes els nostres secrets en silenci, serà diví; si els profanes, mortal.»",
+      "timestamp": 1778652315.0117505
+    },
+    {
+      "context": "versa s'inventa mentides, o bé desconeix la figura del seu propi marit; i sigui quina sigui la veritat, cal treure-la d'aquelles riqueses com més aviat millor. I si desconeix el rostre del seu marit, és que s'ha casat amb un déu, i és un déu el que porta en el ventre. Si la mare d'un fill diví —cosa que no vulgui el cel— arriba a saber-ho, de seguida em penjaré d'un nus corredís. Anem, doncs, de moment a casa dels nostres pares, i al fil d'aquesta conversa anem teixint enganys que s'hi adiguin.»",
+      "timestamp": 1778652383.7278116
+    },
+    {
+      "context": " mà per dur a terme el crim, vacil·lava encara incerta i es debatia entre molts sentiments contradictoris davant la seva desgràcia. S'afanyava, s'aturava; gosava, tremolava; desconfiava, s'enrabiava; i, el que és el cúlmul de tot, en un mateix cos odiava la bèstia i estimava el marit. Tanmateix, quan la tarda ja estirava la nit, amb precipitada pressa preparà els estris del seu crim abominable. Arribà la nit, i arribà el marit, i després dels primers combats de Venus s'enfonsà en un son profund.",
+      "timestamp": 1778652455.1182494
+    },
+    {
+      "context": "b la meva pròpia fletxa i et vaig prendre per muller, de manera que et semblés, és clar, una bèstia, i que em tallessis el cap amb el ferro —aquest cap que porta els ulls que t'estimen. Això és el que et recomanava que guardesses sempre, això és el que et recordava amb bona voluntat. Però aquelles excel·lents conselleres teves pagaran de seguida el preu d'un magisteri tan perniciós; a tu, en canvi, no et castigaré sinó amb la meva fugida.» I en acabar de parlar, s'enlairà cap amunt amb les ales.",
+      "timestamp": 1778652510.7120204
+    },
+    {
+      "context": "d'una ferida, incert de la seva salvació; i que ja per boca de tots els pobles, a causa de rumors i retrets de tota mena, tota la família de Venus n'ha quedat malparada: que ell s'ha retirat a folgar per les muntanyes i tu a nedar per la mar, i que per això no hi ha plaer ni gràcia ni encant en res, sinó que tot és descurat, rústec i aspre; que no hi ha noces conjugals, ni amistats entre companys, ni tendresa entre fills, sinó un desordre immens i un fàstic amarg per uns pactes plens de misèria.",
+      "timestamp": 1778652579.4282053
+    },
+    {
+      "context": "un fill tan bell? Quin déu, quin home suportarà que tu escampis arreu entre els pobles els desigs dels mortals, mentre tanques amb mà severa els amors de la teva pròpia casa i clausures la fàbrica pública de les febleses femenines?» Així, per por de les sagetes, li feien la cort a Cupido, absent com estava, amb aquell patrocini tan complaent. Però Venus, indignada de veure les seves ofenses tractades de manera tan ridícula, els girà l'esquena a totes dues i, a pas viu, prengué el camí de la mar.",
+      "timestamp": 1778652645.8900578
+    },
+    {
+      "context": "ssar cap via, ni tan sols dubtosa, que pogués dur-la a una esperança millor, s'acosta a les portes sagrades per demanar la gràcia de qualsevol déu que allí residís. Veu ofrenes precioses i tires de roba brodades amb lletres d'or, penjades de les branques dels arbres i dels muntants de les portes, que testimoniaven, amb la gràcia del gest, el nom de la deessa a qui havien estat consagrades. Llavors, agenollada i abraçant amb les mans l'ara encara tèbia, s'eixuga primer les llàgrimes i prega així:",
+      "timestamp": 1778652699.3466194
+    },
+    {
+      "context": " sovint, no veuràs si el veus. Així doncs, si d'ara endavant aquelles miserables làmies de cor malèvol vénen a trobar-te —i vindran, ho sé—, no entaules cap conversa amb elles, i si no pots suportar-ho per la teva natural senzillesa i per la tendresa del teu cor, almenys no escoltis ni responguis res sobre el teu marit. Perquè ja farem créixer la nostra família, i aquest ventre encara infantil porta en si un altre infant: diví, si guardes els nostres secrets en silenci; mortal, si els profanes.»",
+      "timestamp": 1778652842.3147824
+    },
+    {
+      "context": " d'ací d'allà per boca de tots els pobles, complia d'aquesta manera el deure de la proclamació que li havia estat encomanada: «Si algú pot fer tornar de la seva fugida o indicar l'amagatall d'una esclava fugitiva de Venus, filla de rei, de nom Psique, que es presenti darrere les fites de Múrcia davant Mercuri, el pregoner, i rebrà com a recompensa per la delació, de la mà de la mateixa Venus, set dolços petons i un de llarg, molt més mel·lós, donat amb la caricia de la seva llengua afalagadora.»",
+      "timestamp": 1778652902.592721
+    },
+    {
+      "context": "bé desconeix l'aspecte del seu propi marit; i sigui quina sigui la veritat, cal expulsar-la com més aviat millor d'aquelles riqueses. I si és que desconeix el rostre del seu marit, és que s'ha casat amb un déu, i és un déu el que porta al ventre amb aquest embaràs. Si la mare d'un infant diví —que no ho permeti el cel— arriba a saber-ho, de seguida em penjaré amb un nus corredís. Anem, doncs, de moment a casa dels nostres pares, i al fil d'aquesta conversa anem teixint enganys que s'hi adiguin.»",
+      "timestamp": 1778652914.3731165
+    },
+    {
+      "context": " esmolada, el front dur com la pedra i, de vegades, amb mossegades verinoses. Però quan el migdia hagi apaivagat la xafogor del sol i el ramat s'hagi assossegat en la serenitat de la brisa fluvial, podràs amagar-te discretament sota aquell plàtan altíssim que beu del mateix corrent que jo. I tan bon punt les ovelles, calmada la seva fúria, hagin relaxat l'ànim, sacsejant les branques del bosc proper trobaràs l'or llanós que s'ha anat enganxant ací i allà als troncs i les branques entrellaçades.»",
+      "timestamp": 1778652976.8707151
+    },
+    {
+      "context": "dre la mà vers el crim, vacil·la encara incerta de propòsit i és esquinçada per molts i contraris sentiments de la seva desgràcia. S'afanya, s'atura; s'atreveix, s'acovardeix; desconfia, s'enrabia; i, el que és el cim de tot, en un mateix cos odia la bèstia i estima el marit. Tanmateix, quan el vespre ja estirava la nit, amb precipitada urgència prepara els estris del seu crim abominable. Arribà la nit i arribà el marit, i després dels primers combats de Venus s'havia enfonsat en un son profund.",
+      "timestamp": 1778652986.5991883
+    },
+    {
+      "context": "ap servent els portés, sinó empesos tan sols per un cert esperit invisible. Però ella no podia veure ningú, sinó que només sentia paraules que li queien als oïts, i no tenia més serventes que aquelles veus soles. Acabat el ric àpat, algú entrà i cantà sense deixar-se veure, i un altre tocà la cítara, que tampoc no es veia ella mateixa. Llavors li arribà als oïdes la veu entreteixida d'una multitud harmoniosa, de manera que, tot i que cap home no es feia present, era ben clar que hi havia un cor.",
+      "timestamp": 1778653201.1427178
+    },
+    {
+      "context": "rant molt de temps. I com és propi de la natura, la novetat, per la força de l'hàbit constant, li havia fet agradable aquella vida, i el so d'aquella veu incerta era el consol de la seva solitud.\n\nMentrestant, els seus pares s'anaven consumint en un dol i una tristesa sense treva, i les germanes grans, assabentades de tot per la fama que s'havia escampat ben lluny, s'havien posat en camí de pressa, afligides i enlutades, abandonant les seves llars, per anar a veure i a parlar amb els seus pares.",
+      "timestamp": 1778653213.739409
+    },
+    {
+      "context": "m el marit li manava; però, en desaparèixer ell juntament amb la nit, la pobra passà el dia sencer entre llàgrimes i laments, repetint-se que ara sí que estava del tot perduda: ella, que, tancada entre les parets d'aquella presó beneïda i privada del tracte i la conversa dels humans, ni tan sols podia portar cap consol salvador a les seves germanes, que la ploraven, ni veure-les de cap manera. Sense refrescar-se amb cap bany, sense menjar ni cap altra mena de reparació, plorant a doll, s'adormí.",
+      "timestamp": 1778653227.3591135
+    },
+    {
+      "context": "gaire que el marit s'estengué al llit una mica abans que de costum i, abraçant-la mentre ella encara plorava, li retreié així: «Eren aquestes les promeses que em feies, Psique meva? Què puc esperar ara del teu marit, què puc esperar? Ni de dia ni de nit, ni tan sols entre les abraçades conjugals, no deixes de turmentar-te. Fes, doncs, el que vulguis, i cedeix a allò que el teu cor t'exigeix, per més que et perjudiqui. Però recorda't bé del meu advers avís quan sigui massa tard per penedir-te'n.»",
+      "timestamp": 1778653233.9137006
+    },
+    {
+      "context": "ico, que concedeixis això als meus precs: mana al teu servidor Zèfir que em porti aquí les germanes amb el mateix transport.» I tot imprimint-li petons persuasius, i abocant-li paraules afalagadores, i entrellaçant-hi els membres per retenir-lo, hi afegia encara aquestes carícies: «Mel meva, marit meu, dolça ànima de la teva Psique.» El marit, vençut a contracor per la força i el poder dels murmuris venusins, ho prometé tot i, en acostar-se la llum del dia, s'esvaí de les mans de la seva esposa.",
+      "timestamp": 1778653251.22018
+    },
+    {
+      "context": "deu abraçar aquella que ploràveu.»\n\nLlavors cridà Zèfir i li recordà el manament del marit. Sense tardança, obedient a l'ordre, ell les transportà de seguida amb les seves brises suavíssimes en un viatge sense perill. Ja es delien mútuament en abraçades i en petons precipitats, i aquelles llàgrimes assossegades tornaven al seu lloc, arrossegades per l'alegria que les seduïa. «Però entreu alegres», digué, «sota el nostre sostre i la nostra llar, i refeu les ànimes afligides amb la vostra Psique.»",
+      "timestamp": 1778653265.9673254
+    },
+    {
+      "context": "iolà de cap manera aquell precepte conjugal ni el tragué dels secrets del pit, sinó que, improvisant segons les circumstàncies, fingí que era un jove d'aspecte agradable, que tot just ombrejava les galtes amb una barba llanuginosa, ocupat la major part del temps en caceres pels camps i les muntanyes; i perquè cap lliscada de la conversa que s'allargava no traís el secret que guardava, les carregà de joies d'or i collarets de gemmes i de seguida les lliurà a Zèfir, que les havia de tornar a casa.",
+      "timestamp": 1778653277.9485624
+    },
+    {
+      "context": "liç que ella. Potser, però, a mesura que avanci la convivència i s'enforteixi l'afecte, el marit déu la farà déessa a ella també. Així és, per Hèrcules, així s'ho portava i s'ho duia. Ja mira cap amunt i aspira a ser deessa, la dona que té veus com a serventes i mana fins als vents. I jo, pobra de mi, primer em tocà en sort un marit més vell que el meu pare, després més calb que una carbassa i més curt que qualsevol criatura, que es passa tot el dia guardant la casa tancada amb panys i cadenes.»",
+      "timestamp": 1778653295.869781
+    },
+    {
+      "context": "e hem vist amb els nostres propis ulls —i que ens pesa haver vist—, sense anar a escampar arreu, entre els pares i tots els pobles, la bona nova de la seva felicitat. Perquè no és feliç de debò aquell les riqueses del qual ningú no coneix. Que sàpiga que no té serventes, sinó germanes grans. I ara, tornem als nostres marits, revisitem les nostres llars pobres però ben sòbries, i, després d'haver-nos preparat llargament amb reflexions més madures, tornem més resoltes a castigar la seva supèrbia.»",
+      "timestamp": 1778653316.5796328
+    },
+    {
+      "context": "Les dues malvades aproven de bon grat el mal consell. Amaguen tots aquells regals tan preciosos, s'estiren els cabells i s'esgarrapen la cara tal com es mereixien, i reprenen els plors fingits. Així, havent tornat a enverinar del tot el dolor dels pares i havent-se'n desfet precipitadament, s'afanyen cap a les seves cases, inflades de bogeria, tramant un engany criminal —o millor dit, un parricidi— contra la seva germana innocent.",
+      "timestamp": 1778653322.9055831
+    },
+    {
+      "context": " veuràs si el veus. Per tant, si d'ara endavant aquelles malvades làmies, armades d'ànims nocius, vénen —i vindran, ho sé—, no entaules cap conversa amb elles; i si no pots suportar-ho per la teva natural senzillesa i per la tendresa del teu cor, almenys no escoltis ni responguis res de res sobre el teu marit. Perquè ja farem créixer la nostra família, i aquest ventre encara infantil porta en si un infant per a nosaltres: diví, si guardes els nostres secrets en silenci; mortal, si els profanes.»",
+      "timestamp": 1778653333.1461763
+    },
+    {
+      "context": "que dolcíssima, quantes desgràcies ens aclaparen! Tu i jo, amb una pietat misericordiosa i una continència religiosa, allibera la llar, el marit, tu mateixa i aquest petit nostre de la desgràcia de la ruïna que s'acosta. I aquelles dones criminals, a les quals, després d'un odi mortal i d'haver trepitjat els vincles de la sang, no et és lícit anomenar germanes, ni les vegis ni les escoltis, quan, prominents sobre el penyal a la manera de les Sirenes, faran ressonar les roques amb veus funestes.»",
+      "timestamp": 1778653350.7596622
+    },
+    {
+      "context": "regàries d'una suplicant angoixada, concedeix-me el fruit d'abraçar els meus germans, i alegra l'ànima de la teva Psique, que t'és devota i consagrada, amb aquesta joia. No et demano res més en el teu rostre; ja no m'hi fan nosa ni les mateixes tenebres de la nit: et tinc a tu, que ets la meva llum.»\n\nEncantat per aquestes paraules i per les seves suaus abraçades, el marit li eixugà les llàgrimes amb els seus cabells, li prometé que ho faria, i s'avançà tot seguit a la claror del dia que naixia.",
+      "timestamp": 1778653364.2272635
+    },
+    {
+      "context": "da a la casa a pas ferm, i abraçant la seva presa, mentint-li el nom de germanes i cobrint amb rostre alegre el tresor d'una frau profundament amagada, l'adulen així: «Psique, no ets ja la nena petita que eres fa poc: ara tu mateixa ets mare. Quant de bé, creus tu, ens portes en aquell ventre! De quantes alegries ompliràs tota la nostra casa! Oh, quant de venturoses nosaltres, que ens alegrarem de criar un infant d'or! I si respon, com cal, a la bellesa dels pares, sens dubte naixerà un Cupido.»",
+      "timestamp": 1778653376.4648945
+    },
+    {
+      "context": " per a la seva frau, comencen a preguntar dissimulant quin era el seu marit, d'on venia i de quina nissaga era. Aleshores ella, amb una ingenuïtat excessiva, oblidant el que havia dit abans, va inventar una nova versió i digué que el seu marit era un mercader d'una província veïna, que ja anava a mig camí de la vida i que tenia els cabells esquitxats d'algunes canes. I sense entretenir-se ni un moment més en aquella conversa, les tornà a enviar carregades de rics presents en el vehicle del vent.",
+      "timestamp": 1778653395.615915
+    },
+    {
+      "context": "inventa mentides, o bé desconeix la figura del seu marit; i sigui l'una o l'altra la veritat, cal treure-la d'aquelles riqueses com més aviat millor. Que si ignora el rostre del seu marit, és que s'ha casat amb un déu, i és un déu el que ens porta en aquell ventre. Si la mare d'un fill diví —cosa que no vulgui el cel— ho arriba a saber, de seguida em penjaré d'un nus corredís. Anem, doncs, de moment a casa dels nostres pares, i a l'inici d'aquesta conversa anem teixint enganys del mateix color.»",
+      "timestamp": 1778653407.9037745
+    },
+    {
+      "context": "i de la nostra desgràcia, que una serp monstruosa, que s'arrossega en nusos i revolts múltiples, que taca de sang el coll amb el seu verí pestilent i que badalla amb una gorja sense fons, s'ajeu secretament amb tu durant les nits. Recorda ara l'oracle de Delfos, que va proclamar que estaves destinada a les noces d'una bèstia ferotge. I molts dels pagesos d'aquí al voltant, i els caçadors, i els veïns de la contrada l'han vist tornar al vespre de pasturar i nedar per les aigüeres del riu proper.»",
+      "timestamp": 1778653421.831088
+    },
+    {
+      "context": "nosaltres, germanes pietoses, haurem complert amb el nostre deure.»\n\nLlavors la pobra Psique, senzilla com era i de cor tendre, és arrabassada pel terror d'unes paraules tan funestes: traspassada dels límits del seu propi seny, abocà de cop tota la memòria de les advertències del seu marit i de les seves pròpies promeses, i es precipità en l'abisme de la desgràcia; i tremolant, lívida d'un color exsangüe, repetint les paraules per tercera vegada amb la veu mig apagada als llavis, els digué així:",
+      "timestamp": 1778653434.8357034
+    },
+    {
+      "context": "s contemplar el seu rostre. Ara, si podeu portar algun remei salvador a la vostra germana que es troba en perill, feu-ho ara mateix; que si no, la negligència que ve darrera malmetrà els beneficis de la previsió anterior.» Llavors aquelles dones criminals, havent trobat ja l'ànima de la germana oberta i desguarnida com una porta batent, abandonaren els amagatalls de la seva maquinació encoberta i, amb les espases de la frau desembeinades, assaltaren els pensaments tremolosos de la noia senzilla.",
+      "timestamp": 1778653447.6372783
+    },
+    {
+      "context": "e la foscor cega, i aprofita l'ocasió per al teu gloriós acte gràcies al consell de la llum; i amb aquella arma de doble tall, audaçment, amb la dreta alçada primer enlaire, amb un cop tan fort com puguis, talla el nus del coll i el cap de la serp malfactora. I no et faltarà el nostre auxili; ans en el moment que amb la mort d'ell t'hagis assegurat la salvació, acudirem volant plenes d'angoixa i, havent recollit tot allò amb la major celeritat, t'unirem a un home com cal, en unes noces votives.»",
+      "timestamp": 1778653463.9204717
+    },
+    {
+      "context": " al crim vacil·la encara incerta en el seu propòsit i és esquinçada per molts sentiments contradictoris de la seva desgràcia. S'afanya, s'atura; s'atreveix, tremola; desconfia, s'enrabia; i, el que és el cim de tot, en un mateix cos odia la bèstia i estima el marit. Tanmateix, quan el vespre ja arrossegava la nit, amb precipitada pressa prepara els estris del seu crim nefand. Arribà la nit i arribà el marit, i havent combatut en les primeres batalles de Venus, s'havia enfonsat en un son profund.",
+      "timestamp": 1778653477.95033
+    },
+    {
+      "context": "Aleshores Psique, feble de cos i d'esperit com era, es veu enfortida i cobrada de forces per la crueltat mateixa del seu fat, i, treta la llàntia i empunyada la navalla, canvia de sexe per l'audàcia.",
+      "timestamp": 1778653482.2509575
+    },
+    {
+      "context": "s, uns penjant endavant, altres endarrere, amb una resplendor tan excessiva que fins la mateixa llum de la llàntia vacil·lava; per les espatlles del déu alat les plomes rosades brillen amb flor lluminosa, i tot i que les ales reposen, les plometes més externes, tendres i delicades, tremolen i s'agiten inquietes i juganeres; la resta del cos, llis i resplendent, tal que Venus no s'hauria penedit d'haver-lo parit. Als peus del llit jeia l'arc, el buirac i les sagetes, armes propícies del gran déu.",
+      "timestamp": 1778653498.8410826
+    },
+    {
+      "context": " i quasi besar aquell cos— vomità des del cim de la seva flama una gota d'oli bullent sobre l'espatlla dreta del déu. Ai, llàntia audaç i temerària, vil servidora de l'amor! Tu, que sens dubte un amant inventà per gaudir més llargament de nit dels seus desitjos, tu cremes el déu que és tot el foc! Així, cremat, el déu saltà enlaire i, en veure la prova de la fe trencada i el naufragi que tot ho enfonsa, s'alçà en vol silenciós dels llavis i les mans de la seva infelicíssima esposa i desaparegué.",
+      "timestamp": 1778653515.841536
+    },
+    {
+      "context": "Però Psique, de seguida que ell s'alçava, s'aferrà amb totes dues mans a la seva cama dreta i fou un apèndix miserable de l'enlairament sublim, una companya penjant que s'arrossegava per les regions ennuvolades fins als confins del seguici, fins que, finalment extenuada, caigué a terra. I el déu enamorat no l'abandonà allà on jeia, sinó que volà fins al xiprer més proper i, des de l'alt del seu cim, li adreçà aquestes paraules amb el cor profundament commogut:",
+      "timestamp": 1778653522.5997155
+    },
+    {
+      "context": "ir amb la meva pròpia fletxa i et vaig prendre com a esposa, de manera que, és clar, et semblés una bèstia i em tallesses el cap amb el ferro —aquest cap que porta els ulls que t'estimen. Això és el que sempre t'havia aconsellat que guardesses, això és el que et recordava amb bona voluntat. Però aquelles excel·lents conselleres teves pagaran ben aviat el preu d'un magisteri tan funest; a tu, en canvi, no et castigaré sinó amb la meva fugida.» I en acabar de parlar, s'enlairà en alt amb les ales.",
+      "timestamp": 1778653532.944315
+    },
+    {
+      "context": "udents anomenen endevinació allò que jo faig—, per aquell pas vacil·lant i trontollant, per la palidesa de cendra del teu cos, pels sospirs continus i pels teus ulls mateixos, apagats, patiu d'amor fins al moll dels ossos. Escolta'm, doncs, i no et llancis de nou al precipici ni et procuris cap altra mena de mort. Deixa el dol, abandona el plany, i més aviat venera amb pregàries Cupido, el més gran dels déus, i, com que és un jove delicat i voluptuós, guanya't el seu favor amb dolces atencions.»",
+      "timestamp": 1778653551.7861543
+    },
+    {
+      "context": "esència salvadora, continuà el seu camí. Però quan hagué errat llargament per la ruta amb el pas fatigat, sense saber-ho, per un sender desconegut, ja declinant el dia, s'acostà a una certa ciutat on el marit d'una de les seves germanes exercia el poder reial. Sabedora d'això, Psique desitjà que anunciessin la seva presència a la germana; aviat fou introduïda, i, esgotades les abraçades mútues i les salutacions recíproques, la germana li preguntà la causa de la seva vinguda, i ella així començà:",
+      "timestamp": 1778653559.56934
+    },
+    {
+      "context": "s per gaudir-ne, per la pitjor de les desgràcies, la llàntia ardent va fer vessar una gota d'oli bullent sobre la seva espatlla. Desvetllat a l'instant pel dolor, en veure'm armada de ferro i de foc, em digué: \"Tu, per tan nefanda acció, aparta't de seguida del meu llit i emporta't les teves coses; jo, en canvi, me casaré amb la teva germana\" —i deia el nom amb el qual tu ets coneguda— \"en solemnes noces\", i tot seguit ordenà al Zèfir que m'expulsés bufant més enllà dels límits de la seva casa.»",
+      "timestamp": 1778653573.8029785
+    },
+    {
+      "context": "els espadats, i les entranyes lacerades tal com es mereixia, morí oferint-se com a pastura als ocells i a les feres que hi passaven.\n\nI el càstig de la venjança que havia de seguir no es féu esperar. Perquè Psique, de nou amb pas errant, arribà a una altra ciutat, on de la mateixa manera residia l'altra germana. Aquesta tampoc no trigà a deixar-se seduir per l'engany de la germandat i, rival en les noces criminals de la seva germana, s'apressà cap al penyal i caigué en un final de mort semblant.",
+      "timestamp": 1778653586.7493384
+    },
+    {
+      "context": "fligit pel dolor greu d'una ferida, incert de si guarirà; i que ja per boca de tots els pobles, amb rumors i retrets de tota mena, tota la família de Venus n'ha quedat malparada: que ell s'ha retirat a fornicar per les muntanyes i tu a nedar per la mar, i que per això no hi ha plaer ni gràcia ni encant en res, sinó que tot és descurat, rústec i aspre; que no hi ha noces conjugals, ni amistats entre companys, ni tendresa de fills, sinó una immensa confusió i un tedi repugnant d'aliances sòrdides.",
+      "timestamp": 1778653598.391776
+    },
+    {
+      "context": "igui del poble de les Nimfes, del nombre de les Hores, del cor de les Muses o del seguici de les meves Gràcies.»\n\nI aquell ocell xerraire no callà, sinó que digué: «No ho sé, senyora; crec, si no m'erro, que la noia es diu Psique: d'ella es diu que n'està bojament enamorat.»\n\nLlavors Venus exclamà amb la màxima indignació: «De debò estima Psique, la rival de la meva bellesa, l'émula del meu nom? Sens dubte, aquell cregué que jo li feia de proxeneta, que li presentava la noia perquè la conegués.»",
+      "timestamp": 1778653608.7242918
+    },
+    {
+      "context": " Però és clar, tu et creus, inútil, corruptor i sense gràcia, que ets l'únic de bona nissaga i que jo, per la meva edat, ja no puc concebre. Doncs vull que sàpigues que engendraré un fill molt millor que tu; o, perquè ho sentis com l'afront que és, adoptaré algun dels meus esclaus de casa i li donaré aquestes ales, les flames, l'arc, les mateixes fletxes i tots els meus estris, que no t'havia donat per a aquests usos; perquè res d'aquest equipament no t'ha estat concedit dels béns del teu pare.»",
+      "timestamp": 1778653622.0425785
+    },
+    {
+      "context": " que castigui severament aquest bergant, que li desplegi el buirac i el desarmi de les fletxes, que li desnuï l'arc, que li apagui la torxa, i que fins i tot el seu propi cos el sotmeti als remeis més enèrgics. Aleshores creuré que la meva ofensa haurà estat reparada quan ella li hagi afaitat els cabells que jo mateixa, amb aquestes mans meves, he acaronat tantes vegades fins a fer-los brillar com l'or, i li hagi retallat les ales que jo vaig impregnar al meu si amb l'aigua de la font nectàrea.»",
+      "timestamp": 1778653641.2907584
+    },
+    {
+      "context": "Ceres i Juno la intercepten, i en veure-la amb el rostre inflat li pregunten per quin motiu contenia tanta bellesa sota el cec d'unes celles tan feroces. I ella: «Molt oportunes veniu», digué, «disposades, és clar, a complaure aquest pit meu que crema d'ira. Però us demano que empreu totes les vostres forces a cercar-me aquella Psique fugissera i errant. Perquè no us han pas pogut passar per alt ni la famosa història de la meva casa ni les accions del meu fill, de les quals millor no parlar-ne.»",
+      "timestamp": 1778653649.3887503
+    },
+    {
+      "context": "l les teves pròpies arts i els teus propis delits? Quin déu, quin home suportarà que tu escampes arreu entre els pobles els desigs dels mortals, mentre tanques amb mà de ferro els amors de la teva pròpia casa i clausures la fàbrica pública de les febleses femenines?» Així elles, per por de les sagetes, adulaven amb afectuós patrocini Cupido, tot i absent. Però Venus, indignada que les seves ofenses fossin tractades de manera tan ridícula, els girà l'esquena i emprengué el camí del mar a pas viu.",
+      "timestamp": 1778653663.615299
+    },
+    {
+      "context": "Sembla que el text original llatí del Llibre VI no s'ha inclòs en el missatge —només hi apareix l'índex numèric dels capítols, però no el contingut dels paràgrafs. Per poder fer la traducció, necessito el text llatí complet dels capítols VI.1–VI.24.\n\nPodries enganxar el text llatí que vols que tradueixi?",
+      "timestamp": 1778653671.844471
+    },
+    {
+      "context": "llocs sagrats. Veu espigues de blat apilades en un munt, i d'altres doblegades en corona, i veu espigues d'ordi. Hi havia també falçs i tots els estris propis de la sega, però tot jeia escampat ací i allà, confós per la deixadesa i, com sol passar en la calor, llençat de les mans dels qui treballen. Psique ho separà tot amb cura, ho posà a part peça per peça i ho ordenà com calia, pensant que no devia negligir els santuaris ni els ritus de cap déu, sinó guanyar-se la benvolent compassió de tots.",
+      "timestamp": 1778653685.157162
+    },
+    {
+      "context": "Mentre ella s'afanyava en aquesta feina amb tanta cura i diligència, la benigna Ceres la sorprengué i cridà de seguida en veu alta: «Com, Psique desventurada? Venus, amb l'ànima encesa de furor, et cerca per tot el món amb una recerca angoixosa, i reclama per a tu el càstig suprem i exigeix venjança amb totes les forces de la seva divinitat: i tu, ara, et dediques a guardar les meves coses i penses en qualsevol altra cosa que no sigui la teva salvació?»",
+      "timestamp": 1778653691.6750302
+    },
+    {
+      "context": "ns a les noces sense llum de Prosèrpina, per la claror del retorn quan la filla fou retrobada, i per tot allò que el santuari eleusí de l'Àtica cobreix amb el vel del silenci: tingues compassió de l'ànima de la pobra Psique, la teva suplicant. Deixa'm amagar-me entre aquest munt d'espigues tan sols uns quants dies, fins que la ira furiosa d'una deessa tan poderosa s'apaivagui amb el pas del temps, o almenys fins que les meves forces, esgotades per un llarg treball, es refacin amb un breu repòs.»",
+      "timestamp": 1778653704.5798254
+    },
+    {
+      "context": "r passar cap via, ni tan sols dubtosa, que pogués dur-li una esperança millor, s'acosta a les portes sagrades per implorar la gràcia de qualsevol déu que allí residís. Veu ofrenes precioses i tires de roba brodades amb lletres d'or, penjades de les branques dels arbres i dels muntants de la porta, les quals, amb el testimoni del favor rebut, proclamaven el nom de la deessa a qui havien estat consagrades. Llavors s'agenolla, abraça l'altar encara tebi, s'eixuga primer les llàgrimes, i prega així:",
+      "timestamp": 1778653717.2466445
+    },
+    {
+      "context": "t de les dones embarassades en perill.»\n\nMentre suplicava d'aquesta manera, Juno se li presentà de sobte amb tota la majestuosa dignitat de la seva divinitat, i tot seguit digué: «Com voldria, per la meva lleialtat, inclinar la meva voluntat a les teves pregàries! Però el pudor no em permet actuar contra la voluntat de Venus, la meva nora, a qui sempre he estimat com una filla. A més, les lleis que prohibeixen acollir esclaus fugitius aliens sense el consentiment dels seus amos m'ho impedeixen.»",
+      "timestamp": 1778653731.260765
+    },
+    {
+      "context": "s de la gran Venus? Per què no prens d'una vegada un ànim varonil i renúncies coratjosament a les vanes esperances, i et lliures voluntàriament a la teva senyora, i apaivagues amb una modèstia tardana, si més no, els seus impulsos furiosos? Qui sap si potser trobaràs allà, a casa de la seva mare, aquell que fa tant de temps que cerques.» Així, preparada per a una submissió incerta —o millor dit, per a una mort segura—, anava meditant en el seu interior el principi de la súplica que havia de fer.",
+      "timestamp": 1778653743.463501
+    },
+    {
+      "context": "s passos vius, s'alien sota el jou de gemmes i, havent pres la senyora, remunten el vol joioses. El carro de la deessa l'escorten els pardals, que s'esbargen amb un piuladís sorollós, i les altres aus que canten dolçament, ressonant suaument amb melodies de mel, anuncien l'arribada de la deessa. Els núvols s'aparten, el Cel s'obre a la seva filla, i l'èter suprem rep la deessa amb joia; ni les àguiles que li surten al pas ni els falcons rapinyaires no espanten la sonora família de la gran Venus.",
+      "timestamp": 1778653756.0898123
+    },
+    {
+      "context": " que s'amaga. No hi ha doncs altra cosa a fer que proclamar públicament, per la teva crida, un premi per a qui la descobreixi. Fes, doncs, que compleixis el meu encàrrec sense tardança i descriu clarament els senyals pels quals pugui ser reconeguda, no fos cas que, si algú incorre en el crim d'amagar-la il·lícitament, pugui defensar-se amb l'excusa de la ignorància»; i tot dient-ho li allargà un full on hi havia el nom de Psique i tot allò que calia saber. Fet això, se'n tornà a casa de seguida.",
+      "timestamp": 1778653768.1128309
+    },
+    {
+      "context": ", corrent d'ací d'allà per boca de tots els pobles, exercia així l'encàrrec de la proclamació que li havia estat encarregada: «Si algú pot retenir en la seva fugida o indicar l'amagatall d'una esclava fugitiva, filla de rei, servidora de Venus, de nom Psique, que es presenti darrere les fites de Múrcia davant Mercuri, el pregoner, i rebrà com a recompensa de la delació, de mans de la mateixa Venus, set dolços petons i un de llarg, molt més mel·lós, donat amb l'empenta acaronadora de la llengua.»",
+      "timestamp": 1778653775.6482372
+    },
+    {
+      "context": "tí a l'encontre una de les serventes de Venus, de nom Costum, i tot seguit cridà tan fort com pogué: «Finalment, esclava malvada, has après que tens una senyora? O és que, amb la mateixa temeritat que caracteritza tots els teus actes, et fas la desentesa i ignores quants treballs hem hagut de suportar per anar-te a buscar? Però bé, que has caigut precisament a les meves mans i t'has enredat ja entre les urpes del mateix Orci: de ben segur que pagaràs de seguida el càstig d'una gosadia tan gran»,",
+      "timestamp": 1778653784.9668758
+    },
+    {
+      "context": "retén fer-me l'honor d'una gloriosa descendència i convertir-me en àvia feliç! Afortunada jo, que en la flor de la meva joventut seré anomenada àvia, i el fill d'una vil esclava haurà de ser tingut per nét de Venus! Però quina nècia soc jo en dir-li fill, perquè les noces desiguals, celebrades a més en un lloc apartat, sense testimonis i sense el consentiment del pare, no poden ser considerades legítimes, i per tant aquest infant naixerà bastard, si és que et permetem de portar el part a terme.»",
+      "timestamp": 1778653802.7857025
+    },
+    {
+      "context": "va companya de casa, corre diligentment i convoca i aplega tot l'exèrcit de les formigues veïnes: «Apiadeu-vos, àgils criatures de la terra mare de tot, apiadeu-vos, i acudiu amb prompte celeritat a socórrer la jove esposa d'Amor, una noia encantadora que es troba en perill.» Acudeixen unes rere les altres, onades i més onades d'aquell poble de sis peus, i amb el màxim zel cadascuna va separant gra a gra tot el munt, i havent distribuït i apartat els gèneres, s'esvaneixen ràpidament de la vista.",
+      "timestamp": 1778653821.0150304
+    },
+    {
+      "context": "haurir aquella nit fosca i tenebrosa.\n\nPerò tan bon punt Aurora va muntar al seu carro, Venus cridà Psique i li adreçà aquestes paraules: «Veus aquell bosc que s'estén al llarg del riu que hi passa a la vora i de les seves ribes extenses, i als peus del qual uns matolls miren cap a una font propera? Hi vaguen unes ovelles de llana daurada, resplendents amb la vera bellesa de l'or, sense ningú que les guardi. Vull que em portis immediatament, com sigui, un floc de llana preciosa del seu pelatge.»",
+      "timestamp": 1778653835.4541798
+    },
+    {
+      "context": "es banyes esmolades, el front dur com la pedra i, de vegades, amb mossegades verinoses. Però quan el migdia hagi apaivagat la calor del sol i els ramats s'hagin assossegat en la serenor de la brisa del riu, podràs amagar-te discretament sota aquell plàtan altíssim que beu del mateix corrent que jo. I tan bon punt les ovelles, calmada la seva fúria, hagin relaxat l'esperit, sacsejant les fulles del bosc proper trobaràs l'or llanós que s'ha anat enganxant ací i allà als branquillons entrellaçats.»",
+      "timestamp": 1778653849.8933883
+    },
+    {
+      "context": "a singular. Veus aquell cim que corona la roca altíssima d'aquella muntanya escarpada, d'on davallen les aigües fosques d'una font negra que, recollides en la conca de la vall propera, reguen els pantans estigis i alimenten els corrents roncs del Còcit? Doncs ves-me a buscar allà mateix, de la deu més pregona de la font del cim, una mica d'aquella aigua gelada, i porta-me-la de seguida en aquesta ampolleta.» I dient-ho, li lliurà un vaset tallat en cristall, afegint-hi amenaces encara més greus.",
+      "timestamp": 1778653864.332956
+    },
+    {
+      "context": "sable, amb els ulls fixos i les pupil·les en guàrdia permanent sota una llum que mai no s'apagava. I fins les mateixes aigües es defensaven amb la veu. Car cridaven sense parar: «Fora d'aquí!», «Què fas? Mira't!», «Què pretens? Alerta!», «Fuig!», «Moriràs!». Així, davant d'aquella impossibilitat que la convertia en pedra, Psique, tot i ser present en cos, havia perdut els sentits, i, aclaparada del tot pel pes d'un perill sense sortida, es trobava privada fins del darrer consol de les llàgrimes.",
+      "timestamp": 1778653879.4974594
+    },
+    {
+      "context": "tat de l'Estígia? Però dóna'm aquí l'urna», i tot seguit se l'agafà i se la posà sota l'ala, i, llançant-se a volar amb el batec equilibrat de les seves ales ondulants, passà entre les mandíbules furioses i els dards vibrants de les serps de triple llengua, estenent els rems a dreta i esquerra, i recollí les aigües que es resistien i amenaçaven de fer-lo marxar il·lès, tot inventant-se que les anava a buscar per ordre de Venus i que ell era el seu servidor, cosa que li facilità una mica l'accés.",
+      "timestamp": 1778653895.8756127
+    },
+    {
+      "context": "er-me aquest altre servei, nineta meva. Pren aquesta capseta», i li'n donà una; «i dirigeix-te de seguida als inferns, fins a la llar fúnebre del mateix Orco. Aleshores, presentant la capseta a Prosèrpina, digues-li: \"Venus et demana que li enviïs una mica de la teva bellesa, la que basti almenys per a un sol dia. Perquè la que tenia se li ha consumit i esgotat tota mentre curava el seu fill malalt.\" Però torna sense trigar massa, perquè m'és necessari adornar-me'n per anar al teatre dels déus.»",
+      "timestamp": 1778653941.0361881
+    },
+    {
+      "context": "ls inferns. Però la torre irrompé de sobte en veu i digué: «Per què, pobreta, et vols matar precipitant-te al buit? Per què sucumbeixes temeràriament a aquest darrer perill i a aquesta prova? Perquè si el teu esperit es veu separat del teu cos ni que sigui un sol instant, sí que aniràs al fons del Tàrtar, però d'allà no podràs tornar de cap manera. Escolta'm.\n\nLacedemònia, noble ciutat de l'Acaia, no és gaire lluny d'aquí: busca el Tènar, que hi és contigu, amagat en llocs apartats i solitaris.»",
+      "timestamp": 1778653953.8373
+    },
+    {
+      "context": " moribund ha de procurar-se el viàtic, i si no té cap moneda a mà, ningú no el deixarà exhalar l'últim sospir. A aquest vell escuàlid li donaràs, en concepte de noli, una de les monedes que portaràs, però de tal manera que ell mateix la prengui amb la seva mà de la teva boca. I no és tot: mentre travesses el corrent peresós, un vell mort i podrit que sura a la superfície alçarà les mans i et suplicarà que el pugis a la barca; però tu no et deixis commoure per cap pietat, per il·lustre que sigui.",
+      "timestamp": 1778653993.7762463
+    },
+    {
+      "context": "ut allò que t'oferiran, torna enrere i amansa la ferocitat del gos amb la coca que et resta; després, donant al navegant avariciós la moneda que hauràs reservat i havent travessat el seu riu, refent les passes anteriors, tornaràs al cor d'aquells estels celestials. Però entre totes les coses, el que et recomano que observis per damunt de tot és que no vulguis obrir ni examinar aquella capseta que portaràs, ni de cap manera gosar temptar amb massa curiositat el tresor ocult de la bellesa divina.»",
+      "timestamp": 1778654012.2091312
+    },
+    {
+      "context": "blocat els lladrucs del gos amb l'engany de la coca restant, i havent retornat al barquer la moneda reservada, tornà dels inferns molt més llesta que no hi havia anat. I havent retrobat i adorat aquella llum clara, tot i que s'afanyava a acabar el seu encàrrec, fou presa per una curiositat temerària, i digué: «Vet aquí que jo, nècia, sóc la portadora de la bellesa divina, i no me'n prenc ni una engruna per a mi mateixa, ni tan sols per plaure així al meu bell amant.» I dit això, obrí la capseta.",
+      "timestamp": 1778654027.0576928
+    },
+    {
+      "context": "a seva Psique; i havent esborrat el son amb cura i havent-lo tornat a tancar en la seva antiga capseta, despertà Psique amb un punxet innocu de la seva sageta i digué: «Vet aquí que has estat a punt de perdre't de nou, pobreta, per una curiositat semblant. Però ara, de moment, compleix diligentment l'encàrrec que t'ha estat confiat per ordre de la meva mare; de la resta ja me n'ocuparé jo.» Dit això, l'amant lleuger es lliurà a les ales, i Psique, sense trigar, portà a Venus el do de Prosèrpina.",
+      "timestamp": 1778654040.678336
+    },
+    {
+      "context": "lina Júlia i l'ordre públic has danyat la meva reputació i la meva fama amb vergonyosos adulteris, transformant el meu rostre serè de manera indecorosa en serps, en focs, en feres, en ocells i en ramats de bestiar, amb tot, recordant la meva moderació i que has crescut entre aquestes mans meves, ho faré tot tal com demanes, sempre que sàpigues guardar-te dels teus rivals, i que si ara hi ha alguna noia a la terra que excel·leixi en bellesa, has de compensar-me amb ella el favor que ara et faig.»",
+      "timestamp": 1778654053.5819728
+    },
+    {
+      "context": "Dit això, ordena a Mercuri que convoqui de seguida tots els déus a assemblea, i que proclami que qui faltés a la reunió dels celestials seria multat amb deu mil sestercis. Amb aquesta amenaça, el teatre celestial s'omplí immediatament, i Júpiter, alt i majestuós, assegut al seu tron elevat, proclamà així:",
+      "timestamp": 1778654057.882735
+    },
+    {
+      "context": "t el rostre cap a Venus: «I tu, filla,» digué, «no et contristis gens ni temis per la nissaga tan il·lustre que tens ni pel rang, a causa d'un matrimoni amb una mortal. Ja faré jo que les noces no siguin desiguals, sinó legítimes i conformes al dret civil.» I de seguida ordena que Mercuri agafi Psique i la condueixi al cel. Aleshores, tendint-li una copa d'ambròsia: «Pren-la,» digué, «Psique, i sigues immortal; mai no s'apartarà del teu costat Cupido, sinó que aquestes noces us seran perpètues.»",
+      "timestamp": 1778654069.045362
+    },
+    {
+      "context": "rejaven tot amb roses i altres flors; les Gràcies escampaven bàlsams; les Muses també ressonaven amb els seus cants melodiosos. Aleshores Apol·lo cantà acompanyat de la cítara, Venus, entrant amb gràcia sobre la dolça música, ballà formosa, amb l'escena disposada de tal manera que les Muses entonaven el cor, un Sàtir inflava les flautes i el Paniscus recitava al so del flabiol. Així, seguint el ritu, Psique passà a les mans de Cupido, i d'ells nasqué, a terme, una filla, a qui anomenem Voluptat.",
+      "timestamp": 1778654080.5152228
+    },
+    {
+      "context": "tó a mi i al cavall, que havíem de ser les bèsties de càrrega, i ens porten, esgotats per molts turons i revolts, gairebé a la caiguda de la tarda fins a una certa cova, d'on ens fan tornar de pressa carregats de moltes coses, sense deixar-nos reposar ni un breu moment. I tanta era la pressa i el neguit que, a cops i empentes, em feren caure sobre una pedra que hi havia vora el camí, i d'allí, a força de nous colps, m'obligaren a alçar-me com pogué, tot coix de la cama dreta i del casc esquerre.",
+      "timestamp": 1778654094.4420476
+    },
+    {
+      "context": "tó a mi i al cavall, que havíem de ser les bèsties de càrrega, i ens porten, esgotats per molts turons i revolts, gairebé a la caiguda de la tarda fins a una certa cova, d'on ens fan tornar de pressa carregats de moltes coses, sense deixar-nos reposar ni un breu moment. I tanta era la pressa i el neguit que, a cops i empentes, em feren caure sobre una pedra que hi havia vora el camí, i d'allí, a força de nous colps, m'obligaren a alçar-me com pogué, tot coix de la cama dreta i del casc esquerre.",
+      "timestamp": 1778654094.4445393
+    },
+    {
+      "context": "tó a mi i al cavall, que havíem de ser les bèsties de càrrega, i ens porten, esgotats per molts turons i revolts, gairebé a la caiguda de la tarda fins a una certa cova, d'on ens fan tornar de pressa carregats de moltes coses, sense deixar-nos reposar ni un breu moment. I tanta era la pressa i el neguit que, a cops i empentes, em feren caure sobre una pedra que hi havia vora el camí, i d'allí, a força de nous colps, m'obligaren a alçar-me com pogué, tot coix de la cama dreta i del casc esquerre.",
+      "timestamp": 1778654788.5504966
+    }
   ]
 }
