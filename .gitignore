@@ -92,3 +92,5 @@ obres/*/output/
 # Data files (generated)
 data/propostes.json
 data/usuaris.json
+corpus_estil/
+*.corpus.json
