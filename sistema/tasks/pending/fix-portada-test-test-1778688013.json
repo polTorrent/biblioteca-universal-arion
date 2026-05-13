@@ -1,0 +1,8 @@
+{
+  "id": "fix-portada-test-test-1778688013",
+  "type": "fix-portada",
+  "priority": 4,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'test/test' && git add obres/filosofia/test/test/portada.* && git commit -m 'fix: portada test/test' && git push",
+  "created": "2026-05-13T18:00:13+02:00"
+}
