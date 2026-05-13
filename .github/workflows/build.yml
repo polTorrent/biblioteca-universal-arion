@@ -22,7 +22,7 @@ jobs:
 
     - name: Installar dependencies
       run: |
-        pip install jinja2 pyyaml markdown
+        pip install jinja2 pyyaml markdown rich pydantic
 
     - name: Generar HTML
       run: python scripts/build.py
