@@ -1,10 +1,10 @@
 {
-    "pid": 22832,
+    "pid": 12954,
     "mode": "hybrid",
-    "current_task": "shutdown",
-    "diem_balance": "3.4370062024856143",
-    "uptime_seconds": 1836,
+    "current_task": "1778615138_translate_apuleu-cupido",
+    "diem_balance": "5.865526522485615",
+    "uptime_seconds": 2,
     "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-12T19:27:41Z"
+    "last_heartbeat": "2026-05-13T06:46:26Z"
 }
