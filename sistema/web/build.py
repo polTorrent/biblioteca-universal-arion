@@ -42,7 +42,7 @@ except ImportError:
     exit(1)
 
 # Afegir directori arrel al path per importar utils
-sys.path.insert(0, str(Path(__file__).parent.parent.parent))
+sys.path.insert(0, str(Path(__file__).parent.parent))
 from utils.epub_generator import GeneradorEPUB
 
 
