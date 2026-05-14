@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-metadata-francesco-petrarca-seleccio-20-sonets-1778739840",
-    "diem_balance": "11.015141802485616",
-    "uptime_seconds": 611,
-    "tasks_completed": 8,
+    "current_task": "fix-glossari-friedrich-nietzsche-menschliches-allzumenschliches-1778739840",
+    "diem_balance": "10.877035632485615",
+    "uptime_seconds": 654,
+    "tasks_completed": 9,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:36:04Z"
+    "last_heartbeat": "2026-05-14T06:36:47Z"
 }
