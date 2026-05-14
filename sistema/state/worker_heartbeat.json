@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-glossari-rudyard-kipling-el-llibre-de-la-selva-1778739840",
-    "diem_balance": "11.246576862485615",
-    "uptime_seconds": 487,
-    "tasks_completed": 6,
+    "current_task": "fix-glossari-francesco-petrarca-seleccio-20-sonets-1778739840",
+    "diem_balance": "11.159253092485615",
+    "uptime_seconds": 548,
+    "tasks_completed": 7,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:34:00Z"
+    "last_heartbeat": "2026-05-14T06:35:01Z"
 }
