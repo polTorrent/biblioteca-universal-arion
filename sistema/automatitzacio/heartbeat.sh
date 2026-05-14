@@ -59,9 +59,52 @@ else
     bash "$MODULES_DIR/05-check-supervision.sh"
     bash "$MODULES_DIR/06-check-translations.sh"
     bash "$MODULES_DIR/07-check-web-sync.sh"
+    check_audiobooks
 fi
 
 # ── Fase 3: Manteniment i report ─────────────────────────────────────────────
+# ── Funció: detectar obres validades sense audiollibre ────────────────────────
+check_audiobooks() {
+    local obres_validades=""
+    local obres_sense_audio=""
+
+    # Trobar obres validades sense audiollibre
+    while IFS= read -r -d '' validated; do
+        obra_dir=$(dirname "$validated")
+        audio_complet="$obra_dir/audio/audiollibre_complet.mp3"
+        if [ ! -f "$audio_complet" ]; then
+            obres_sense_audio="$obra_dir"$'\n'"$obres_sense_audio"
+        fi
+    done < <(find "$PROJECT/obres" -name ".validated" -print0 2>/dev/null)
+
+    [ -z "$obres_sense_audio" ] && return 0
+
+    # Prioritzar obres curtes (<5000 paraules a traduccio.md)
+    local millor_obra=""
+    local millor_paraules=999999
+
+    while IFS= read -r obra; do
+        [ -z "$obra" ] && continue
+        [ ! -f "$obra/traduccio.md" ] && continue
+        paraules=$(wc -w < "$obra/traduccio.md" 2>/dev/null || echo 999999)
+        if [ "$paraules" -lt "$millor_paraules" ]; then
+            millor_paraules=$paraules
+            millor_obra=$obra
+        fi
+    done <<< "$obres_sense_audio"
+
+    [ -z "$millor_obra" ] && return 0
+
+    # Crear tasca audiobook (màxim 1 per heartbeat)
+    local obra_rel=${millor_obra#$PROJECT/}
+    log "🎧 Obra sense audiollibre: $obra_rel ($millor_paraules paraules)"
+    bash "$PROJECT/sistema/automatitzacio/task-manager.sh" add \
+        audiobook \
+        "Genera l'audiollibre de $obra_rel" \
+        "{\"obra\": \"$obra_rel\"}" \
+        2>/dev/null || true
+}
+
 bash "$MODULES_DIR/08-check-maintenance.sh"
 bash "$MODULES_DIR/10-generate-report.sh"
 

@@ -28,6 +28,11 @@ class VeniceRequestError(VeniceError):
     pass
 
 
+class VeniceTTSError(VeniceError):
+    """Error en la generació d'àudio TTS."""
+    pass
+
+
 class ImageGenerationRequest(BaseModel):
     """Petició de generació d'imatge."""
 
@@ -266,6 +271,181 @@ class VeniceClient:
 
             except httpx.RequestError as e:
                 raise VeniceRequestError(f"Error de connexió: {e}") from e
+
+    # ══════════════════════════════════════════════════════════════════════════════
+    # Mètodes TTS (Text-to-Speech)
+    # ══════════════════════════════════════════════════════════════════════════════
+
+    # Model TTS per defecte
+    MODEL_TTS = "tts-elevenlabs-turbo-v2-5"
+
+    async def generar_audio(
+        self,
+        text: str,
+        voice: str = "George",
+        model: str = MODEL_TTS,
+        language: str | None = None,
+        response_format: str = "mp3",
+        speed: float = 1.0,
+    ) -> bytes:
+        """Genera àudio a partir de text mitjançant TTS.
+
+        Args:
+            text: Text a convertir en àudio.
+            voice: Nom de la veu (ElevenLabs).
+            model: Model TTS a utilitzar.
+            language: Codi d'idioma (ca, es, en...). No sempre suportat.
+            response_format: Format d'àudio (mp3, opus, pcm...).
+            speed: Velocitat de parla (0.25 a 4.0).
+
+        Returns:
+            bytes: Àudio generat en el format sol·licitat.
+
+        Raises:
+            VeniceTTSError: Si la generació d'àudio falla.
+            VeniceAPIKeyError: Si la clau API és invàlida.
+        """
+        if len(text) > 4096:
+            raise VeniceTTSError(
+                f"Text massa llarg: {len(text)} caràcters (màxim 4096). "
+                f"Utilitza chunking per dividir el text."
+            )
+
+        payload = {
+            "model": model,
+            "input": text,
+            "voice": voice,
+            "response_format": response_format,
+        }
+
+        # Afegir camps opcionals només si tenen valors no per defecte
+        if language:
+            payload["language"] = language
+        if speed != 1.0:
+            payload["speed"] = speed
+
+        async with httpx.AsyncClient(timeout=120.0) as client:
+            try:
+                response = await client.post(
+                    f"{self.BASE_URL}/audio/speech",
+                    headers=self._headers,
+                    json=payload,
+                )
+
+                if response.status_code == 401:
+                    raise VeniceAPIKeyError("Clau API invàlida o expirada.")
+
+                if response.status_code == 429:
+                    raise VeniceTTSError(
+                        "Límit de peticions excedit. Espera uns segons."
+                    )
+
+                if response.status_code != 200:
+                    error_detail = response.text[:500] if response.text else "Sense detalls"
+                    raise VeniceTTSError(
+                        f"Error {response.status_code} de TTS Venice: {error_detail}"
+                    )
+
+                content_type = response.headers.get("content-type", "")
+                if "audio" not in content_type and "octet-stream" not in content_type:
+                    if "application/json" in content_type:
+                        error_data = response.json() if response.text else {}
+                        raise VeniceTTSError(
+                            f"Resposta inesperada de TTS: {error_data}"
+                        )
+                    raise VeniceTTSError(
+                        f"Content-Type inesperat: {content_type}"
+                    )
+
+                return response.content
+
+            except httpx.TimeoutException as e:
+                raise VeniceTTSError(
+                    "Temps d'espera excedit en generació TTS."
+                ) from e
+            except httpx.RequestError as e:
+                raise VeniceTTSError(f"Error de connexió TTS: {e}") from e
+
+    def generar_audio_sync(
+        self,
+        text: str,
+        voice: str = "George",
+        model: str = MODEL_TTS,
+        language: str | None = None,
+        response_format: str = "mp3",
+        speed: float = 1.0,
+    ) -> bytes:
+        """Versió síncrona de generar_audio.
+
+        Útil per a scripts que no utilitzen asyncio.
+
+        Args:
+            Mateixos paràmetres que generar_audio().
+
+        Returns:
+            bytes: Àudio generat.
+        """
+        return self._run_sync(
+            self.generar_audio(
+                text=text,
+                voice=voice,
+                model=model,
+                language=language,
+                response_format=response_format,
+                speed=speed,
+            )
+        )
+
+    async def llistar_veus_tts(self) -> list[str]:
+        """Llista les veus TTS disponibles.
+
+        Returns:
+            list[str]: Llista de noms de veus disponibles.
+
+        Raises:
+            VeniceTTSError: Si no es poden obtenir les veus.
+        """
+        async with httpx.AsyncClient(timeout=30.0) as client:
+            try:
+                response = await client.get(
+                    f"{self.BASE_URL}/audio/voices",
+                    headers=self._headers,
+                )
+
+                if response.status_code != 200:
+                    return [
+                        "Rachel", "Charlotte", "Daniel", "Sarah",
+                        "Laura", "Aria", "Charlie", "Liam",
+                        "Adam", "George", "Lewis", "Michael", "Eric",
+                    ]
+
+                try:
+                    data = response.json()
+                except ValueError as exc:
+                    raise VeniceTTSError(
+                        "Resposta JSON invàlida obtenint veus TTS"
+                    ) from exc
+
+                voices = []
+                voice_list = data.get("data", data.get("voices", []))
+                for voice_data in voice_list:
+                    voice_id = voice_data.get("voice_id", voice_data.get("name", ""))
+                    voice_name = voice_data.get("name", voice_id)
+                    if voice_name:
+                        voices.append(voice_name)
+
+                return voices if voices else [
+                    "Rachel", "Charlotte", "Daniel", "Sarah",
+                    "Laura", "Aria", "Charlie", "Liam",
+                    "Adam", "George", "Lewis", "Michael", "Eric",
+                ]
+
+            except httpx.RequestError as e:
+                raise VeniceTTSError(f"Error de connexió: {e}") from e
+
+    def llistar_veus_tts_sync(self) -> list[str]:
+        """Versió síncrona de llistar_veus_tts."""
+        return self._run_sync(self.llistar_veus_tts())
 
     @staticmethod
     def _run_sync(coro: object) -> object:

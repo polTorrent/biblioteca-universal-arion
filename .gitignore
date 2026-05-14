@@ -89,6 +89,10 @@ portada_*_final.png
 obres/*/logs/
 obres/*/output/
 
+# Audiollibres (fitxers MP3 generats)
+obres/*/audio/*.mp3
+audio/*.mp3
+
 # Data files (generated)
 data/propostes.json
 data/usuaris.json
