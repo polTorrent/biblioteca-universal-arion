@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778739840",
-    "diem_balance": "11.623885422485614",
-    "uptime_seconds": 141,
-    "tasks_completed": 3,
-    "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:28:14Z"
+    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1778739840",
+    "diem_balance": "11.323616802485615",
+    "uptime_seconds": 393,
+    "tasks_completed": 4,
+    "tasks_failed": 1,
+    "last_heartbeat": "2026-05-14T06:32:26Z"
 }
