@@ -17,7 +17,6 @@ def vc(prompt, model="claude-opus-4-7", system="Ets un assistent per Biblioteca 
             {"role": "system", "content": system},
             {"role": "user", "content": prompt}
         ],
-        "temperature": 0.2,
         "max_tokens": max_tokens,
         "venice_parameters": {"disable_thinking": True, "strip_thinking_response": True}
     }).encode("utf-8")

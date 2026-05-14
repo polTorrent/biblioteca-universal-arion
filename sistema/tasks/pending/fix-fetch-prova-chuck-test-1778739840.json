@@ -1,0 +1,10 @@
+{
+  "id": "fix-fetch-prova-chuck-test-1778739840",
+  "type": "fix-fetch",
+  "priority": 3,
+  "max_duration": 900,
+  "obra": "obres/assaig/prova/chuck-test",
+  "output": "obres/assaig/prova/chuck-test/original.md",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor 'prova' --obra 'chuck-test' --output obres/assaig/prova/chuck-test/original.md && echo DONE",
+  "created": "2026-05-14T08:24:00+02:00"
+}
