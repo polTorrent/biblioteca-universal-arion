@@ -22,7 +22,7 @@ cmd_add() {
     
     if [ -z "$type" ] || [ -z "$instruction" ]; then
         echo "Ús: task-manager.sh add <type> <instruction> [params_json]"
-        echo "Tipus: fix | test | code-review | translate | refactor | maintain | consell-editorial"
+        echo "Tipus: fix | test | code-review | translate | refactor | maintain | consell-editorial | audiobook"
         echo ""
         echo "Exemples:"
         echo "  task-manager.sh add test 'Executa tots els tests del projecte'"
@@ -51,6 +51,7 @@ cmd_add() {
         supervision)        priority=2; max_duration=30 ;;
         consell-editorial)  priority=2; max_duration=30 ;;
         design)             priority=4; max_duration=15 ;;
+        audiobook)          priority=4; max_duration=90 ;;
         fix-fetch|fix-translate|fix-metadata|fix-glossari|fix-portada|fix-llengua|fix-notes|fix-web)
                             priority=${priority:-2}; max_duration=${max_duration:-1800} ;;
     esac
