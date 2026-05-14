@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-metadata-rudyard-kipling-el-llibre-de-la-selva-1778695214",
-    "diem_balance": "10.507887742485615",
-    "uptime_seconds": 993,
-    "tasks_completed": 12,
+    "current_task": "fix-glossari-sor-juana-ines-de-la-cruz-primero-sueno-1778702414",
+    "diem_balance": "10.478432342485615",
+    "uptime_seconds": 1038,
+    "tasks_completed": 13,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:42:26Z"
+    "last_heartbeat": "2026-05-14T06:43:11Z"
 }
