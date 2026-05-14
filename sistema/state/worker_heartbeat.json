@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-glossari-friedrich-nietzsche-menschliches-allzumenschliches-1778739840",
-    "diem_balance": "10.877035632485615",
-    "uptime_seconds": 654,
-    "tasks_completed": 9,
+    "current_task": "fix-glossari-august-strindberg-froken-julie-1778739840",
+    "diem_balance": "10.566678322485615",
+    "uptime_seconds": 913,
+    "tasks_completed": 10,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:36:47Z"
+    "last_heartbeat": "2026-05-14T06:41:06Z"
 }
