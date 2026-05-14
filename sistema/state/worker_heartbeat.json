@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-glossari-august-strindberg-froken-julie-1778739840",
-    "diem_balance": "10.566678322485615",
-    "uptime_seconds": 913,
-    "tasks_completed": 10,
+    "current_task": "fix-metadata-sor-juana-ines-de-la-cruz-primero-sueno-1778739840",
+    "diem_balance": "10.536628792485615",
+    "uptime_seconds": 950,
+    "tasks_completed": 11,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:41:06Z"
+    "last_heartbeat": "2026-05-14T06:41:43Z"
 }
