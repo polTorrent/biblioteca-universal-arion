@@ -83,8 +83,11 @@ def main():
     if bc:
         print(f"Executant bash:")
         print(f"  {bc[:200]}...")
+        env = os.environ.copy()
+        project_dir = os.environ.get("HOME", "") + "/biblioteca-universal-arion"
+        env["PYTHONPATH"] = project_dir + ":" + env.get("PYTHONPATH", "")
         r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=1800,
-                           cwd=os.environ.get("HOME", "") + "/biblioteca-universal-arion")
+                           cwd=project_dir, env=env)
         if r.returncode == 0:
             print("Completat")
             if r.stdout:
@@ -104,8 +107,11 @@ def main():
         print(resp[:500])
         sys.exit(1)
     print("Executant bash generat")
+    env2 = os.environ.copy()
+    project_dir2 = os.environ.get("HOME", "") + "/biblioteca-universal-arion"
+    env2["PYTHONPATH"] = project_dir2 + ":" + env2.get("PYTHONPATH", "")
     r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=1800,
-                       cwd=os.environ.get("HOME", "") + "/biblioteca-universal-arion")
+                       cwd=project_dir2, env=env2)
     if r.returncode == 0:
         print("Completat")
         if r.stdout:
