@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-glossari-francesco-petrarca-seleccio-20-sonets-1778739840",
-    "diem_balance": "11.159253092485615",
-    "uptime_seconds": 548,
-    "tasks_completed": 7,
+    "current_task": "fix-metadata-francesco-petrarca-seleccio-20-sonets-1778739840",
+    "diem_balance": "11.015141802485616",
+    "uptime_seconds": 611,
+    "tasks_completed": 8,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:35:01Z"
+    "last_heartbeat": "2026-05-14T06:36:04Z"
 }
