@@ -1,8 +1,0 @@
-{
-  "id": "fix-glossari-test-test-1778739840",
-  "type": "fix-glossari",
-  "priority": 3,
-  "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && Revisa obres/filosofia/test/test/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('obres/filosofia/test/test/glossari.yml'))\" && git add obres/filosofia/test/test/glossari.yml && git commit -m 'fix: glossari test/test' && git push",
-  "created": "2026-05-14T08:24:00+02:00"
-}

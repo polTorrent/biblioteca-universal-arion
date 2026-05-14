@@ -1,10 +1,10 @@
 {
     "pid": 30237,
     "mode": "hybrid",
-    "current_task": "fix-translate-august-strindberg-froken-julie-1778739840",
-    "diem_balance": "11.750833452485615",
-    "uptime_seconds": 2,
-    "tasks_completed": 1,
+    "current_task": "fix-translate-sade-justine-1778739840",
+    "diem_balance": "11.651890632485614",
+    "uptime_seconds": 104,
+    "tasks_completed": 2,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-14T06:25:55Z"
+    "last_heartbeat": "2026-05-14T06:27:37Z"
 }
