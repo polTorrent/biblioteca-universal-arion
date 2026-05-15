@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-translate-friedrich-nietzsche-menschliches-allzumenschliches-1778875216",
-    "diem_balance": "5.3155567024856145",
-    "uptime_seconds": 24647,
-    "tasks_completed": 25,
+    "current_task": "fix-translate-august-strindberg-froken-julie-1778702414",
+    "diem_balance": "5.192874372485615",
+    "uptime_seconds": 24687,
+    "tasks_completed": 26,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T20:50:50Z"
+    "last_heartbeat": "2026-05-15T20:51:30Z"
 }
