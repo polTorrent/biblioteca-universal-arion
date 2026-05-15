@@ -1,0 +1,8 @@
+{
+  "id": "fix-portada-rudyard-kipling-el-llibre-de-la-selva-1778860815",
+  "type": "fix-portada",
+  "priority": 4,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'rudyard-kipling/el-llibre-de-la-selva' && git add obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/portada.* && git commit -m 'fix: portada rudyard-kipling/el-llibre-de-la-selva' && git push",
+  "created": "2026-05-15T18:00:15+02:00"
+}
