@@ -417,6 +417,7 @@ if tasks:
             sleep $COOLDOWN_OK
         else
             log "⚠️ $TASK_ID sense canvis (${DURATION}s)"
+            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['last_error']='No changes detected'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
             CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1)); save_errors
             sleep $COOLDOWN_FAIL
@@ -430,9 +431,10 @@ if tasks:
         log "❌ $TASK_ID fallit (exit=$EXIT, ${DURATION}s)"
         RETRIES_NOW=$((RETRIES + 1))
         if [ $RETRIES_NOW -lt $MAX_RETRIES ]; then
-            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['retries']=$RETRIES_NOW; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
+            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['retries']=$RETRIES_NOW; d['last_error']='exit code $EXIT'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/"
         else
+            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['last_error']='exit code $EXIT after $RETRIES_NOW retries'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
             mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
             CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1)); save_errors
         fi

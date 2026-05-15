@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1778875216",
-    "diem_balance": "unknown",
-    "uptime_seconds": 22034,
-    "tasks_completed": 24,
+    "current_task": "fix-translate-friedrich-nietzsche-menschliches-allzumenschliches-1778875216",
+    "diem_balance": "5.3155567024856145",
+    "uptime_seconds": 24647,
+    "tasks_completed": 25,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T20:07:17Z"
+    "last_heartbeat": "2026-05-15T20:50:50Z"
 }
