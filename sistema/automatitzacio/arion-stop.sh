@@ -12,7 +12,7 @@ TASKS_DIR="$PROJECT/sistema/tasks"
 LOCKFILE="$TASKS_DIR/worker.lock"
 
 log() {
-    echo "[$(date '+%Y-%m-%d %H:%M:%S UTC')] [STOP] $1" | tee -a "$LOG"
+    echo "[$(date '+%Y-%m-%d %H:%M:%S UTC')] [STOP] $1"
 }
 
 log "🛑 Aturant sistema Arion..."
