@@ -1,0 +1,9 @@
+{
+  "id": "fix-translate-friedrich-nietzsche-menschliches-allzumenschliches-1778860814",
+  "type": "fix-translate",
+  "priority": 1,
+  "max_duration": 3600,
+  "obra": "obres/filosofia/friedrich-nietzsche/menschliches-allzumenschliches",
+  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/filosofia/friedrich-nietzsche/menschliches-allzumenschliches/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'friedrich-nietzsche' --obra 'menschliches-allzumenschliches'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/filosofia/friedrich-nietzsche/menschliches-allzumenschliches/ && git commit -m 'fix: traduir/completar friedrich-nietzsche/menschliches-allzumenschliches' && git push",
+  "created": "2026-05-15T18:00:14+02:00"
+}
