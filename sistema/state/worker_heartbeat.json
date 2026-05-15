@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-portada-friedrich-nietzsche-menschliches-allzumenschliches-1778860814",
-    "diem_balance": "7.0862736024856146",
-    "uptime_seconds": 7917,
-    "tasks_completed": 10,
+    "current_task": "fix-portada-sor-juana-ines-de-la-cruz-primero-sueno-1778860815",
+    "diem_balance": "7.075750552485615",
+    "uptime_seconds": 7957,
+    "tasks_completed": 11,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T16:12:00Z"
+    "last_heartbeat": "2026-05-15T16:12:40Z"
 }
