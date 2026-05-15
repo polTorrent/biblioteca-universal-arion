@@ -1,0 +1,68 @@
+{
+  "obra": {
+    "titol": "Epístola I — Sobre la recuperació del temps",
+    "autor": "Sèneca",
+    "genere": "filosofia"
+  },
+  "audiollibre": {
+    "fitxer_complet": "audiollibre_complet.mp3",
+    "durada_segons": 139.781224,
+    "durada_format": "2m 19s",
+    "mida_bytes": 2236958,
+    "mida_mb": 2.13,
+    "num_capitols": 7,
+    "total_chunks": 7,
+    "veu": "George",
+    "model": "tts-elevenlabs-turbo-v2-5",
+    "idioma": "ca"
+  },
+  "capitols": [
+    {
+      "fitxer": "capitol_01.mp3",
+      "titol": "I",
+      "mida_bytes": 50618,
+      "durada_segons": 3.160813
+    },
+    {
+      "fitxer": "capitol_02.mp3",
+      "titol": "II",
+      "mida_bytes": 176841,
+      "durada_segons": 11.04975
+    },
+    {
+      "fitxer": "capitol_03.mp3",
+      "titol": "III",
+      "mida_bytes": 300139,
+      "durada_segons": 18.755875
+    },
+    {
+      "fitxer": "capitol_04.mp3",
+      "titol": "IV",
+      "mida_bytes": 220727,
+      "durada_segons": 13.792625
+    },
+    {
+      "fitxer": "capitol_05.mp3",
+      "titol": "V",
+      "mida_bytes": 569723,
+      "durada_segons": 35.604875
+    },
+    {
+      "fitxer": "capitol_06.mp3",
+      "titol": "VI",
+      "mida_bytes": 513298,
+      "durada_segons": 32.078313
+    },
+    {
+      "fitxer": "capitol_07.mp3",
+      "titol": "VII",
+      "mida_bytes": 405465,
+      "durada_segons": 25.33875
+    }
+  ],
+  "generacio": {
+    "timestamp": "2026-05-14T07:26:35.643591+00:00",
+    "durada_generacio_segons": 22.5,
+    "cost_estimat_usd": 0.0588
+  }
+}

@@ -4,5 +4,6 @@
   "priority": 4,
   "max_duration": 600,
   "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'august-strindberg/froken-julie' && git add obres/teatre/august-strindberg/froken-julie/portada.* && git commit -m 'fix: portada august-strindberg/froken-julie' && git push",
-  "created": "2026-05-13T18:00:14+02:00"
+  "created": "2026-05-13T18:00:14+02:00",
+  "retries": 2
 }
