@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-translate-sade-justine-1778868015",
-    "diem_balance": "6.761656562485615",
-    "uptime_seconds": 14725,
-    "tasks_completed": 18,
+    "current_task": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1778868015",
+    "diem_balance": "6.6684017624856144",
+    "uptime_seconds": 14907,
+    "tasks_completed": 19,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T18:05:28Z"
+    "last_heartbeat": "2026-05-15T18:08:30Z"
 }
