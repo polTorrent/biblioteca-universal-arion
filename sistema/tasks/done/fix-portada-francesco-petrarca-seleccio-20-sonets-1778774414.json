@@ -4,5 +4,6 @@
   "priority": 4,
   "max_duration": 600,
   "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'francesco-petrarca/seleccio-20-sonets' && git add obres/poesia/francesco-petrarca/seleccio-20-sonets/portada.* && git commit -m 'fix: portada francesco-petrarca/seleccio-20-sonets' && git push",
-  "created": "2026-05-14T18:00:14+02:00"
+  "created": "2026-05-14T18:00:14+02:00",
+  "retries": 1
 }

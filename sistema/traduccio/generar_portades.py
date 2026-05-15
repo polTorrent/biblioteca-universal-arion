@@ -30,7 +30,7 @@ from pathlib import Path
 # CLAUDECODE=1 per usar subscripció (cost €0)
 os.environ["CLAUDECODE"] = "1"
 
-ROOT = Path(__file__).parent.parent
+ROOT = Path(__file__).parent.parent.parent
 sys.path.insert(0, str(ROOT))
 
 try:
