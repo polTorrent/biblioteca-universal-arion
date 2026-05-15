@@ -116,10 +116,10 @@ notify() {
 }
 
 # ── Shortcuts ─────────────────────────────────────────────────────────────────
-notify_info()     { notify 0 "$1" "$2"; }
-notify_warning()  { notify 1 "$1" "$2"; }
-notify_error()    { notify 2 "$1" "$2"; }
-notify_critical() { notify 3 "$1" "$2"; }
+notify_info()     { notify 0 "${1:-}" "${2:-}"; }
+notify_warning()  { notify 1 "${1:-}" "${2:-}"; }
+notify_error()    { notify 2 "${1:-}" "${2:-}"; }
+notify_critical() { notify 3 "${1:-}" "${2:-}"; }
 
 # ── Report del heartbeat ─────────────────────────────────────────────────────
 send_heartbeat_report() {
