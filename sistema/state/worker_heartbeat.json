@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1778774414",
-    "diem_balance": "7.765483392485614",
-    "uptime_seconds": 312,
+    "current_task": "fix-glossari-august-strindberg-froken-julie-1778774414",
+    "diem_balance": "7.750583992485614",
+    "uptime_seconds": 349,
     "tasks_completed": 1,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T14:05:15Z"
+    "last_heartbeat": "2026-05-15T14:05:52Z"
 }
