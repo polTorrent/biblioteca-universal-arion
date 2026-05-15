@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-translate-friedrich-nietzsche-menschliches-allzumenschliches-1778868015",
-    "diem_balance": "6.835827062485615",
-    "uptime_seconds": 14562,
-    "tasks_completed": 14,
+    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778868015",
+    "diem_balance": "6.815264012485614",
+    "uptime_seconds": 14602,
+    "tasks_completed": 15,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T18:02:45Z"
+    "last_heartbeat": "2026-05-15T18:03:25Z"
 }
