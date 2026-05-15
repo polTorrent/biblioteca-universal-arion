@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-portada-sor-juana-ines-de-la-cruz-primero-sueno-1778860815",
-    "diem_balance": "7.075750552485615",
-    "uptime_seconds": 7957,
-    "tasks_completed": 11,
+    "current_task": "fix-metadata-test-test-1778868015",
+    "diem_balance": "6.9427940024856145",
+    "uptime_seconds": 14416,
+    "tasks_completed": 12,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T16:12:40Z"
+    "last_heartbeat": "2026-05-15T18:00:19Z"
 }
