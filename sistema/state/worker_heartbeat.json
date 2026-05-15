@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-translate-august-strindberg-froken-julie-1778875216",
-    "diem_balance": "5.669967882485615",
-    "uptime_seconds": 21833,
-    "tasks_completed": 19,
-    "tasks_failed": 2,
-    "last_heartbeat": "2026-05-15T20:03:56Z"
+    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1778875216",
+    "diem_balance": "5.6528308324856145",
+    "uptime_seconds": 21873,
+    "tasks_completed": 20,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-05-15T20:04:36Z"
 }
