@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-translate-sade-justine-1778860815",
-    "diem_balance": "7.114458152485614",
-    "uptime_seconds": 7622,
-    "tasks_completed": 8,
-    "tasks_failed": 0,
-    "last_heartbeat": "2026-05-15T16:07:05Z"
+    "current_task": "fix-portada-rudyard-kipling-el-llibre-de-la-selva-1778860815",
+    "diem_balance": "7.096796652485614",
+    "uptime_seconds": 7874,
+    "tasks_completed": 9,
+    "tasks_failed": 1,
+    "last_heartbeat": "2026-05-15T16:11:17Z"
 }
