@@ -1,10 +1,10 @@
 {
     "pid": 30476,
     "mode": "hybrid",
-    "current_task": "fix-portada-rudyard-kipling-el-llibre-de-la-selva-1778860815",
-    "diem_balance": "7.096796652485614",
-    "uptime_seconds": 7874,
-    "tasks_completed": 9,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-05-15T16:11:17Z"
+    "current_task": "fix-portada-friedrich-nietzsche-menschliches-allzumenschliches-1778860814",
+    "diem_balance": "7.0862736024856146",
+    "uptime_seconds": 7917,
+    "tasks_completed": 10,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-05-15T16:12:00Z"
 }
