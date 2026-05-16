@@ -1,10 +1,10 @@
 {
     "pid": 20713,
     "mode": "hybrid",
-    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1778954415",
-    "diem_balance": "6.256043822485615",
-    "uptime_seconds": 15169,
-    "tasks_completed": 11,
+    "current_task": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1778954415",
+    "diem_balance": "6.241318772485615",
+    "uptime_seconds": 15206,
+    "tasks_completed": 12,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T18:12:50Z"
+    "last_heartbeat": "2026-05-16T18:13:27Z"
 }
