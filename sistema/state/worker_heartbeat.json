@@ -1,10 +1,10 @@
 {
     "pid": 20713,
     "mode": "hybrid",
-    "current_task": "fix-translate-friedrich-nietzsche-menschliches-allzumenschliches-1778947214",
-    "diem_balance": "6.727226212485615",
-    "uptime_seconds": 7264,
-    "tasks_completed": 0,
+    "current_task": "fix-translate-test-test-1778947214",
+    "diem_balance": "6.703698652485615",
+    "uptime_seconds": 7301,
+    "tasks_completed": 1,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T16:01:05Z"
+    "last_heartbeat": "2026-05-16T16:01:42Z"
 }
