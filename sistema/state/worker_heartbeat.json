@@ -1,10 +1,10 @@
 {
     "pid": 20713,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1778947214",
-    "diem_balance": "6.5769979324856145",
-    "uptime_seconds": 7512,
-    "tasks_completed": 6,
+    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778947214",
+    "diem_balance": "6.560484582485615",
+    "uptime_seconds": 7557,
+    "tasks_completed": 7,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T16:05:14Z"
+    "last_heartbeat": "2026-05-16T16:05:58Z"
 }
