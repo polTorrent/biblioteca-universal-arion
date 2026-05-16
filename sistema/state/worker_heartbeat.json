@@ -1,10 +1,10 @@
 {
     "pid": 1315,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1778961614",
-    "diem_balance": "5.9600807924856145",
-    "uptime_seconds": 116,
-    "tasks_completed": 15,
+    "current_task": "fix-translate-sade-justine-1778961614",
+    "diem_balance": "5.9422354424856145",
+    "uptime_seconds": 163,
+    "tasks_completed": 16,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T20:03:32Z"
+    "last_heartbeat": "2026-05-16T20:04:19Z"
 }
