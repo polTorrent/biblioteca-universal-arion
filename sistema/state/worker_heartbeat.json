@@ -1,10 +1,10 @@
 {
     "pid": 1315,
     "mode": "hybrid",
-    "current_task": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1778961614",
-    "diem_balance": "5.910829342485615",
-    "uptime_seconds": 235,
-    "tasks_completed": 18,
+    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778961614",
+    "diem_balance": "5.893830292485615",
+    "uptime_seconds": 274,
+    "tasks_completed": 19,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T20:05:31Z"
+    "last_heartbeat": "2026-05-16T20:06:10Z"
 }
