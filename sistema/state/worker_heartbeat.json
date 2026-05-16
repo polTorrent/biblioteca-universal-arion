@@ -1,10 +1,10 @@
 {
     "pid": 20713,
     "mode": "hybrid",
-    "current_task": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1778947214",
-    "diem_balance": "6.545543532485615",
-    "uptime_seconds": 7593,
-    "tasks_completed": 8,
+    "current_task": "fix-metadata-test-test-1778954415",
+    "diem_balance": "6.387165242485615",
+    "uptime_seconds": 14432,
+    "tasks_completed": 7,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T16:06:34Z"
+    "last_heartbeat": "2026-05-16T18:00:33Z"
 }
