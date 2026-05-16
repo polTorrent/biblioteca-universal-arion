@@ -1,10 +1,10 @@
 {
     "pid": 20713,
     "mode": "hybrid",
-    "current_task": "fix-translate-sade-justine-1778954415",
-    "diem_balance": "6.287009422485615",
-    "uptime_seconds": 14764,
-    "tasks_completed": 9,
-    "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T18:06:05Z"
+    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778954415",
+    "diem_balance": "unknown",
+    "uptime_seconds": 15109,
+    "tasks_completed": 10,
+    "tasks_failed": 1,
+    "last_heartbeat": "2026-05-16T18:11:50Z"
 }
