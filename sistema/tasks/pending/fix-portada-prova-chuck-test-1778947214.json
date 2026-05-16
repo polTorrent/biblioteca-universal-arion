@@ -1,0 +1,8 @@
+{
+  "id": "fix-portada-prova-chuck-test-1778947214",
+  "type": "fix-portada",
+  "priority": 4,
+  "max_duration": 600,
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/generar_portades.py --obra 'prova/chuck-test' && git add obres/assaig/prova/chuck-test/portada.* && git commit -m 'fix: portada prova/chuck-test' && git push",
+  "created": "2026-05-16T18:00:14+02:00"
+}
