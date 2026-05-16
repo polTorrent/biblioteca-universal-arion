@@ -1,10 +1,10 @@
 {
     "pid": 20713,
     "mode": "hybrid",
-    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778947214",
-    "diem_balance": "6.560484582485615",
-    "uptime_seconds": 7557,
-    "tasks_completed": 7,
+    "current_task": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1778947214",
+    "diem_balance": "6.545543532485615",
+    "uptime_seconds": 7593,
+    "tasks_completed": 8,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T16:05:58Z"
+    "last_heartbeat": "2026-05-16T16:06:34Z"
 }
