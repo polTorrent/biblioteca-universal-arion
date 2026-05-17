@@ -1,9 +1,0 @@
-{
-  "id": "fix-glossari-francesco-petrarca-seleccio-20-sonets-1778688014",
-  "type": "fix-glossari",
-  "priority": 3,
-  "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && Revisa obres/poesia/francesco-petrarca/seleccio-20-sonets/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('obres/poesia/francesco-petrarca/seleccio-20-sonets/glossari.yml'))\" && git add obres/poesia/francesco-petrarca/seleccio-20-sonets/glossari.yml && git commit -m 'fix: glossari francesco-petrarca/seleccio-20-sonets' && git push",
-  "created": "2026-05-13T18:00:14+02:00",
-  "retries": 2
-}
