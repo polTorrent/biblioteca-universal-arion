@@ -1,10 +1,10 @@
 {
     "pid": 16811,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1779033614",
-    "diem_balance": "11.658921372485615",
-    "uptime_seconds": 7527,
-    "tasks_completed": 4,
+    "current_task": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1779033614",
+    "diem_balance": "11.642588022485615",
+    "uptime_seconds": 7572,
+    "tasks_completed": 5,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-17T16:05:28Z"
+    "last_heartbeat": "2026-05-17T16:06:13Z"
 }
