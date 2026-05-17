@@ -5,5 +5,11 @@
   "max_duration": 3600,
   "obra": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
   "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor 'petroni' --obra 'cena-trimalchionis-el-banquet-de-trimalcio' --output \"obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio/original.md\" 2>&1; fi && if [ -s \"obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio/original.md\" ]; then python3 sistema/traduccio/traduir_pipeline.py \"$(pwd)/obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio\" 2>&1; fi && git add -A \"obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio/\" && git commit -m 'fix: traduir/completar petroni/cena-trimalchionis-el-banquet-de-trimalcio' && git push",
-  "created": "2026-05-17T20:16:50+02:00"
+  "created": "2026-05-17T20:16:50+02:00",
+  "last_error": "No changes detected",
+  "total_failures": 0,
+  "retries": 0,
+  "retry_count": 0,
+  "recovered": true,
+  "regen_count": 1
 }
