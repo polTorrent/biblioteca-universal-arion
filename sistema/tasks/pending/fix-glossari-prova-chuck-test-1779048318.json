@@ -1,8 +1,8 @@
 {
-  "id": "fix-glossari-prova-chuck-test-1779041810",
+  "id": "fix-glossari-prova-chuck-test-1779048318",
   "type": "fix-glossari",
   "priority": 3,
   "max_duration": 600,
   "instruction": "cd ~/biblioteca-universal-arion && Revisa obres/assaig/prova/chuck-test/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('obres/assaig/prova/chuck-test/glossari.yml'))\" && git add obres/assaig/prova/chuck-test/glossari.yml && git commit -m 'fix: glossari prova/chuck-test' && git push",
-  "created": "2026-05-17T20:16:50+02:00"
+  "created": "2026-05-17T22:05:18+02:00"
 }
