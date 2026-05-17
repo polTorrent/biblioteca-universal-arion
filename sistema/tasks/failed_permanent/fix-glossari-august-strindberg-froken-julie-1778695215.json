@@ -1,9 +1,0 @@
-{
-  "id": "fix-glossari-august-strindberg-froken-julie-1778695215",
-  "type": "fix-glossari",
-  "priority": 3,
-  "max_duration": 600,
-  "instruction": "cd ~/biblioteca-universal-arion && Revisa obres/teatre/august-strindberg/froken-julie/glossari.yml. Si no existeix, crea'l a partir de original.md i traduccio.md amb els termes clau. Si existeix pero es invalid, corregeix el YAML. Valida amb: python3 -c \"import yaml; yaml.safe_load(open('obres/teatre/august-strindberg/froken-julie/glossari.yml'))\" && git add obres/teatre/august-strindberg/froken-julie/glossari.yml && git commit -m 'fix: glossari august-strindberg/froken-julie' && git push",
-  "created": "2026-05-13T20:00:15+02:00",
-  "retries": 2
-}
