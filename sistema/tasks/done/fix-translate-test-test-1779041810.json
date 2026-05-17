@@ -1,0 +1,9 @@
+{
+  "id": "fix-translate-test-test-1779041810",
+  "type": "fix-translate",
+  "priority": 1,
+  "max_duration": 3600,
+  "obra": "obres/filosofia/test/test",
+  "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"obres/filosofia/test/test/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor 'test' --obra 'test' --output \"obres/filosofia/test/test/original.md\" 2>&1; fi && if [ -s \"obres/filosofia/test/test/original.md\" ]; then python3 sistema/traduccio/traduir_pipeline.py \"$(pwd)/obres/filosofia/test/test\" 2>&1; fi && git add -A \"obres/filosofia/test/test/\" && git commit -m 'fix: traduir/completar test/test' && git push",
+  "created": "2026-05-17T20:16:50+02:00"
+}
