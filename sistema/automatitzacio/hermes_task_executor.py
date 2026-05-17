@@ -53,6 +53,11 @@ def is_valid_bash_line(line):
     return cmd in VALID_BASH_CMDS or any(stripped.startswith(x) for x in VALID_BASH_CMDS)
 
 def extract_bash_from_instruction(inst):
+    # Si la instrucció comença amb una comanda bash coneguda o keyword, executar directament
+    first_word = inst.strip().split()[0] if inst.strip() else ""
+    bash_keywords = {'if', 'for', 'while', 'case', 'until', 'select', 'function'}
+    if first_word in VALID_BASH_CMDS or first_word in bash_keywords:
+        return inst.strip()
     # Buscar blocs ```bash ... ``` primer (això té prioritat)
     blocks = re.findall(r'```(?:bash)?\s*\n(.*?)\n```', inst, re.DOTALL)
     if blocks:
