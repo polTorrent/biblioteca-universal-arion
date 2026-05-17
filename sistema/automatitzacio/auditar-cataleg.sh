@@ -5,7 +5,7 @@
 set -uo pipefail
 REPO="${PROJECT:-$HOME/biblioteca-universal-arion}"
 OBRES_DIR="$REPO/obres"
-INFORME="$REPO/config/auditoria.json"
+INFORME="$REPO/sistema/state/auditoria.json"
 TASQUES_DIR="$REPO/sistema/tasks/pending"
 
 # Comptadors

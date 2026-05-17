@@ -71,7 +71,7 @@ nohup bash sistema/automatitzacio/worker.sh --mode=hybrid > /dev/null 2>&1 &
 log "   ✅ Venice Worker iniciat"
 
 # 2. Afegir cron del heartbeat (cada 2 hores, només dins horari actiu)
-(crontab -l 2>/dev/null | grep -v "heartbeat.sh"; echo "0 16-23/2 * * * /bin/bash $PROJECT/sistema/automatitzacio/heartbeat.sh >> $HOME/heartbeat.log 2>&1") | crontab -
+(crontab -l 2>/dev/null | grep -v "heartbeat.sh"; echo "5 16-23/2 * * * /bin/bash $PROJECT/sistema/automatitzacio/heartbeat.sh >> $HOME/heartbeat.log 2>&1") | crontab -
 
 log "   ✅ Heartbeat programat (16:00-23:59 UTC, cada 2h)"
 
