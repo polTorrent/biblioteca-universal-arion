@@ -1,10 +1,10 @@
 {
-    "pid": 1315,
+    "pid": 16811,
     "mode": "hybrid",
-    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1778961614",
-    "diem_balance": "5.893830292485615",
-    "uptime_seconds": 274,
-    "tasks_completed": 19,
+    "current_task": "fix-translate-test-test-1779033614",
+    "diem_balance": "11.833718312485615",
+    "uptime_seconds": 7222,
+    "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-16T20:06:10Z"
+    "last_heartbeat": "2026-05-17T16:00:23Z"
 }
