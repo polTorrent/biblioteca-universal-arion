@@ -59,7 +59,8 @@ else
     bash "$MODULES_DIR/05-check-supervision.sh"
     bash "$MODULES_DIR/06-check-translations.sh"
     bash "$MODULES_DIR/07-check-web-sync.sh"
-    check_audiobooks
+    # check_audiobooks — STAND-BY (mòdul desactivat temporalment)
+    # check_audiobooks
 fi
 
 # ── Fase 3: Manteniment i report ─────────────────────────────────────────────

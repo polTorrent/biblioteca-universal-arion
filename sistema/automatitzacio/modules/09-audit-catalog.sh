@@ -7,7 +7,7 @@ audit_catalog() {
     log "🔧 Mode consolidació: auditant catàleg..."
     log_json "info" "auditing_catalog"
     
-    local AUDIT_LAST="$PROJECT/config/.last_audit"
+    local AUDIT_LAST="$PROJECT/sistema/state/.last_audit"
     local AUDIT_INTERVAL=43200  # 12 hores
     
     local should_audit=false
