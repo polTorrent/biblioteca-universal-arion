@@ -1,0 +1,40 @@
+{
+  "sessio_id": "test-test-2026-05-17",
+  "obra": {
+    "autor": "Test",
+    "titol": "Test",
+    "llengua": "en"
+  },
+  "timestamps": {
+    "inici": "2026-05-17T20:17:41.197015",
+    "ultima_activitat": "2026-05-17T20:17:44.588162"
+  },
+  "fase_actual": "anotacio",
+  "fases_completades": [
+    "investigacio",
+    "glossari",
+    "chunking",
+    "traduccio",
+    "anotacio",
+    "fusio"
+  ],
+  "chunks": {
+    "total": 1,
+    "completats": [
+      "chunk_1"
+    ],
+    "en_curs": null,
+    "pendents": []
+  },
+  "metriques": {
+    "qualitat_mitjana": 0.0,
+    "temps_total_min": 0.06
+  },
+  "errors": [
+    "[20:17:43] Error chunk 1: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"api_error_status\":null,\"duration_ms\":103,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Not logged in · Please run /login\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"56d112cd-066a-439b-94a5-108b8f62ae88\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"4b916a88-e644-4736-b0fd-e849888106ff\"}\n"
+  ],
+  "warnings": [
+    "[20:17:42] Error glossari: 1 validation error for GlossaryRequest\nllengua_original\n  Input should be 'llatí', 'grec', 'anglès', 'alemany', 'francès', 'japonès', 'xinès', 'italià', 'rus' or 'portuguès' [type=literal_error, input_value='en', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.12/v/literal_error",
+    "[20:17:44] Error anotació: Claude CLI ha fallat (exit code 1): {\"type\":\"result\",\"subtype\":\"success\",\"is_error\":true,\"api_error_status\":null,\"duration_ms\":85,\"duration_api_ms\":0,\"num_turns\":1,\"result\":\"Not logged in · Please run /login\",\"stop_reason\":\"stop_sequence\",\"session_id\":\"4316ba19-18f3-42c1-9f77-f58dbf9523e6\",\"total_cost_usd\":0,\"usage\":{\"input_tokens\":0,\"cache_creation_input_tokens\":0,\"cache_read_input_tokens\":0,\"output_tokens\":0,\"server_tool_use\":{\"web_search_requests\":0,\"web_fetch_requests\":0},\"service_tier\":\"standard\",\"cache_creation\":{\"ephemeral_1h_input_tokens\":0,\"ephemeral_5m_input_tokens\":0},\"inference_geo\":\"\",\"iterations\":[],\"speed\":\"standard\"},\"modelUsage\":{},\"permission_denials\":[],\"terminal_reason\":\"completed\",\"fast_mode_state\":\"off\",\"uuid\":\"3b4699d3-781c-476b-9ced-f7c326e24672\"}\n"
+  ]
+}
