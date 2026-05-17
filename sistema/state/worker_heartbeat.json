@@ -1,10 +1,10 @@
 {
     "pid": 16811,
     "mode": "hybrid",
-    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1779033614",
-    "diem_balance": "11.621808972485615",
-    "uptime_seconds": 7610,
-    "tasks_completed": 6,
+    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1779033614",
+    "diem_balance": "11.607083922485614",
+    "uptime_seconds": 7647,
+    "tasks_completed": 7,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-17T16:06:51Z"
+    "last_heartbeat": "2026-05-17T16:07:28Z"
 }
