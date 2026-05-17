@@ -396,15 +396,15 @@ if tasks:
     DURATION=$((TASK_END - TASK_START))
     
     if [ $EXIT -eq 0 ]; then
-        # Verificar canvis
-        diff_count=$(cd "$PROJECT_DIR" && git diff --name-only 2>/dev/null | wc -l)
-        untracked_count=$(cd "$PROJECT_DIR" && git ls-files --others --exclude-standard 2>/dev/null | wc -l)
+        # Verificar canvis reals (exclou fitxers d'infraestructura: tasques i heartbeat)
+        diff_count=$(cd "$PROJECT_DIR" && git diff --name-only 2>/dev/null | grep -vE '^sistema/(tasks|state)' | wc -l)
+        untracked_count=$(cd "$PROJECT_DIR" && git ls-files --others --exclude-standard 2>/dev/null | grep -vE '^sistema/(tasks|state)' | wc -l)
         CHANGES=$((diff_count + untracked_count))
         
-        # Per tasques fix-* i supervision, exit=0 ja és èxit encara que no hi hagi canvis
-        local is_fix=0
+        # Només supervision/review/validacio poden completar-se sense canvis al repo
+        is_fix=0
         case "$TASK_TYPE" in
-            fix-*|supervision|review|validacio) is_fix=1 ;;
+            supervision|review|validacio) is_fix=1 ;;
         esac
         
         if [ "$CHANGES" -gt 0 ] || [ "$is_fix" -eq 1 ]; then
