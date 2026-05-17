@@ -1,10 +1,10 @@
 {
-  "id": "fix-fetch-rudyard-kipling-el-llibre-de-la-selva-1779041626",
+  "id": "fix-fetch-rudyard-kipling-el-llibre-de-la-selva-1779041810",
   "type": "fix-fetch",
   "priority": 3,
   "max_duration": 900,
   "obra": "obres/narrativa/rudyard-kipling/el-llibre-de-la-selva",
   "output": "obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/original.md",
   "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/cercador_fonts_v2.py --autor 'rudyard-kipling' --obra 'el-llibre-de-la-selva' --output obres/narrativa/rudyard-kipling/el-llibre-de-la-selva/original.md && echo DONE",
-  "created": "2026-05-17T20:13:46+02:00"
+  "created": "2026-05-17T20:16:50+02:00"
 }

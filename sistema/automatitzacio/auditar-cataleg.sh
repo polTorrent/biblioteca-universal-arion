@@ -251,7 +251,7 @@ EOF
   "priority": $priority,
   "max_duration": 3600,
   "obra": "$obra_rel",
-  "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"$obra_rel/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor '$autor' --obra '$obra' --output \"$obra_rel/original.md\" 2>&1; fi && if [ -s \"$obra_rel/original.md\" ]; then python3 sistema/traduccio/traduir_pipeline.py \"$obra_rel\" 2>&1; fi && git add -A \"$obra_rel/\" && git commit -m 'fix: traduir/completar $autor/$obra' && git push",
+  "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"$obra_rel/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor '$autor' --obra '$obra' --output \"$obra_rel/original.md\" 2>&1; fi && if [ -s \"$obra_rel/original.md\" ]; then python3 sistema/traduccio/traduir_pipeline.py \"\$(pwd)/$obra_rel\" 2>&1; fi && git add -A \"$obra_rel/\" && git commit -m 'fix: traduir/completar $autor/$obra' && git push",
   "created": "$(date -Iseconds)"
 }
 EOF
