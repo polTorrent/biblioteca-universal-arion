@@ -44,14 +44,16 @@ REPORT
     # Guardar estat JSON
     local validated=$(find "$PROJECT/obres" -name ".validated" 2>/dev/null | wc -l)
     local needs_fix=$(find "$PROJECT/obres" -name ".needs_fix" 2>/dev/null | wc -l)
+    local worker_bool="False"
+    pgrep -f 'worker' > /dev/null 2>&1 && worker_bool="True"
     python3 -c "
 import json, datetime
 state = {
-    'timestamp': datetime.datetime.utcnow().isoformat()+'Z',
+    'timestamp': datetime.datetime.now(datetime.UTC).isoformat()+'Z',
     'validated_works': $validated,
     'needs_fix_works': $needs_fix,
     'pending_tasks': $(count_pending),
-    'worker_active': $(pgrep -f 'worker' > /dev/null 2>&1 && echo 'true' || echo 'false')
+    'worker_active': $worker_bool
 }
 with open('$PROJECT/sistema/state/heartbeat_state.json', 'w') as f:
     json.dump(state, f, indent=2)
