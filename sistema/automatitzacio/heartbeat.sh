@@ -52,13 +52,17 @@ bash "$MODULES_DIR/03-check-failed.sh"
 bash "$MODULES_DIR/04-check-needs-fix.sh"
 bash "$MODULES_DIR/09-audit-catalog.sh"
 
+# ── Fase 1.5: Web sync (sempre, independentment de la cua) ──────────────────
+bash "$MODULES_DIR/07-check-web-sync.sh"
+
 # ── Fase 2: Generació de tasques (si hi ha espai) ────────────────────────────
+# Recalcular pending (pot haver canviat després de l'auditoria)
+PENDING=$(ls -1 "$TASKS_DIR/pending/"*.json 2>/dev/null | wc -l)
 if [ "$PENDING" -ge "$MAX_PENDING" ]; then
     log "✅ Cua plena ($PENDING). Saltant generació."
 else
     bash "$MODULES_DIR/05-check-supervision.sh"
     bash "$MODULES_DIR/06-check-translations.sh"
-    bash "$MODULES_DIR/07-check-web-sync.sh"
     # check_audiobooks — STAND-BY (mòdul desactivat temporalment)
     # check_audiobooks
 fi
