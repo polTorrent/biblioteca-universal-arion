@@ -13,8 +13,9 @@ check_web_sync() {
     docs_time=${docs_time:-0}; obres_time=${obres_time:-0}
     
     if [ "$obres_time" -gt "$docs_time" ] 2>/dev/null; then
-        if ! task_exists "build.py\|regenera.*web\|actualitza.*web" > /dev/null 2>&1; then
-            add_task "publish" "Web desactualitzada. Executa 'python3 sistema/web/build.py'. Commit i push."
+        if ! task_exists "build.py|regenera.*web|actualitza.*web" > /dev/null 2>&1; then
+            # Tasca de publicació: crear directament, sense comptar contra MAX_PENDING
+            bash "$TASK_MANAGER" add "publish" "Web desactualitzada. Executa 'python3 sistema/web/build.py'. Commit i push." 2>/dev/null
             log "   🌐 Publicació web afegida"
             log_json "warning" "web_outdated"
         fi
