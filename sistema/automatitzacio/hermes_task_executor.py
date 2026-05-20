@@ -93,7 +93,7 @@ def main():
         env = os.environ.copy()
         project_dir = os.environ.get("HOME", "") + "/biblioteca-universal-arion"
         env["PYTHONPATH"] = project_dir + ":" + env.get("PYTHONPATH", "")
-        r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=1800,
+        r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=3600,
                            cwd=project_dir, env=env)
         if r.returncode == 0:
             print("Completat")
@@ -117,7 +117,7 @@ def main():
     env2 = os.environ.copy()
     project_dir2 = os.environ.get("HOME", "") + "/biblioteca-universal-arion"
     env2["PYTHONPATH"] = project_dir2 + ":" + env2.get("PYTHONPATH", "")
-    r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=1800,
+    r = subprocess.run(bc, shell=True, capture_output=True, text=True, timeout=3600,
                        cwd=project_dir2, env=env2)
     if r.returncode == 0:
         print("Completat")

@@ -35,6 +35,8 @@ COOLDOWN_EMERGENCY=600
 CONSECUTIVE_ERRORS_FILE="/tmp/arion-worker-errors.txt"
 MAX_RUNTIME=32400    # 9 hores
 MIN_DIEM=1.0
+DIEM_RESERVE=0.5    # Marge de seguretat: sempre es reserva mig DIEM
+DIEM_COSTS_CONF="$PROJECT_DIR/sistema/config/diem_costs.conf"
 WATCHDOG_INTERVAL=300  # 5 minuts
 TASK_TIMEOUT_VENICE=2400
 TASK_TIMEOUT_VENICE_OPUS=3600
@@ -102,7 +104,7 @@ select_model() {
     local model
     
     case "$task_type" in
-        translate|translation) model=$(lookup_model "translate" "$genre") || model=$(lookup_model "translate" "default") ;;
+        translate|translation|fix-translate) model=$(lookup_model "translate" "$genre") || model=$(lookup_model "translate" "default") ;;
         fetch) model=$(lookup_model "fetch" "default") ;;
         supervision|review|validacio) model=$(lookup_model "supervisio" "default") || model=$(lookup_model "review" "default") ;;
         fix|code-review) model=$(lookup_model "admin" "default") ;;
@@ -114,15 +116,77 @@ select_model() {
     echo "$model"
 }
 
-# ── Comprovació DIEM ─────────────────────────────────────────────────────────
+# ── Estimació de cost per tasca ───────────────────────────────────────────────
+estimate_task_cost() {
+    local task_type="$1"
+    local instruction="$2"
+    local cost=0
+
+    # 1. Mirar si tenim cost directe al config
+    if [ -f "$DIEM_COSTS_CONF" ]; then
+        cost=$(grep -E "^${task_type}[[:space:]]*=" "$DIEM_COSTS_CONF" 2>/dev/null | head -1 | awk -F'= *' '{print $2}' | tr -d ' ')
+    fi
+
+    # 2. Fallback per tipus genèric
+    if [ -z "$cost" ] || [ "$cost" = "0" ]; then
+        case "$task_type" in
+            translate*)  cost=1.5 ;;
+            fix-translate|fix-complex) cost=1.5 ;;
+            fix-*) cost=0.5 ;;
+            review|supervisio|validacio) cost=0.4 ;;
+            fetch|audit|publish) cost=0.2 ;;
+            *) cost=0.3 ;;
+        esac
+    fi
+
+    # 3. Ajustar segons mida de la instrucció (indicador de complexitat)
+    local instr_len=${#instruction}
+    if [ "$instr_len" -gt 500 ]; then
+        cost=$(python3 -c "print(round(float('$cost') * 1.3, 2))" 2>/dev/null || echo "$cost")
+    elif [ "$instr_len" -gt 1000 ]; then
+        cost=$(python3 -c "print(round(float('$cost') * 1.5, 2))" 2>/dev/null || echo "$cost")
+    fi
+
+    echo "$cost"
+}
+
+# ── Comprovació DIEM amb estimació de cost ────────────────────────────────────
+# check_diem [cost_estimat]
+# Sense argument: comprova DIEM >= MIN_DIEM (check bàsic)
+# Amb argument: comprova que DIEM - DIEM_RESERVE >= cost_estimat
 check_diem() {
+    local estimated_cost="${1:-}"
     local balance
     balance=$(python3 "$VENICE_CLI" balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
-    if [ -n "$balance" ]; then
+    
+    if [ -z "$balance" ]; then
+        log "⚠️ No s'ha pogut obtenir el saldo DIEM. Continuant amb precaució."
+        return 0
+    fi
+
+    if [ -n "$estimated_cost" ]; then
+        # Check amb cost estimat: DIEM - RESERVE >= cost
+        local available
+        available=$(python3 -c "print(round(float('$balance') - $DIEM_RESERVE, 4))" 2>/dev/null)
+        local can_afford=$(python3 -c "print('yes' if float('$available') >= float('$estimated_cost') else 'no')" 2>/dev/null)
+        
+        if [ "$can_afford" = "no" ]; then
+            log "💰 DIEM: $balance | Disponible (sense marge): $available | Cost estimat: $estimated_cost"
+            log "🛑 Aturant worker: cost de la tasca excedeix el pressupost disponible."
+            touch "$DIEM_STOP"
+            # Generar informe d'aturada
+            bash "$PROJECT_DIR/sistema/automatitzacio/modules/11-shutdown-report.sh" "$balance" "$available" "$estimated_cost" 2>/dev/null || true
+            return 1
+        fi
+        
+        log "💰 DIEM: $balance (disponible: $available, cost: $estimated_cost) ✓"
+    else
+        # Check bàsic sense estimació
         local ok=$(python3 -c "print('yes' if float('$balance') >= $MIN_DIEM else 'no')" 2>/dev/null)
         if [ "$ok" = "no" ]; then
             log "⚠️ DIEM baix ($balance < $MIN_DIEM). Aturant worker."
             touch "$DIEM_STOP"
+            bash "$PROJECT_DIR/sistema/automatitzacio/modules/11-shutdown-report.sh" "$balance" "0" "0" 2>/dev/null || true
             return 1
         fi
         rm -f "$DIEM_STOP"
@@ -168,7 +232,7 @@ run_task() {
         hermes) use_hermes=true ;;
         hybrid)
             case "$task_type" in
-                fix-metadata|fix-glossari|fix-portada|fix-translate|fix-fetch|supervision|code-review|maintenance) use_hermes=true ;;
+                fix-metadata|fix-glossari|fix-portada|fix-fetch|supervision|code-review|maintenance) use_hermes=true ;;
                 *) use_hermes=false ;;
             esac
             ;;
@@ -353,6 +417,9 @@ while true; do
         LAST_WATCHDOG=$now
     fi
     
+    # DIEM check bàsic (sense estimació de cost)
+    check_diem || break
+    
     # Agafar tasca amb prioritat més alta
     TASK=$(python3 -c "
 import json, glob, sys
@@ -377,6 +444,13 @@ if tasks:
     TASK_TYPE=$(python3 -c "import json; print(json.load(open('$TASK')).get('type','unknown'))" 2>/dev/null)
     RETRIES=$(python3 -c "import json; print(json.load(open('$TASK')).get('retries',0))" 2>/dev/null)
     INSTRUCTION=$(python3 -c "import json; print(json.load(open('$TASK')).get('instruction',''))" 2>/dev/null)
+    
+    # Estimar cost d'aquesta tasca i comprovar DIEM
+    TASK_COST=$(estimate_task_cost "$TASK_TYPE" "$INSTRUCTION")
+    if ! check_diem "$TASK_COST"; then
+        log "🛑 Tasca $TASK_ID ($TASK_TYPE) requeriria ~${TASK_COST} DIEM. Aturant cicle."
+        break
+    fi
     
     TASK_BASENAME=$(basename "$TASK")
     log "═══════════════════════════════════════════"
