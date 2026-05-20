@@ -536,3 +536,246 @@ Després d'aquest llamp, Habines va començar a demanar-li que deixés d'estar e
 ## LXXVI.
 
 «Per altra banda, com volen els déus, vaig fer-me l'amo de la casa, i vet aquí que vaig captivar el cervell de l'amo mateix. Què us he de dir? Em va fer cohereu del Cèsar, i vaig rebre un patrimoni de rang senatorial. Però a ningú no li basta mai res. Em va entrar la dèria dels negocis. Per no entretenir-vos gaire, vaig fer construir cinc vaixells, els vaig carregar de vi —que aleshores valia com l'or— i els vaig enviar a Roma. Hauríeu dit que ho havia ordenat jo expressament: tots els vaixells van naufragar. Fet real, no cap faula. En un sol dia, Neptú em va engolir trenta milions de sestercis. Creieu que em vaig enfonsar? Per Hèrcules, aquella pèrdua no em va saber ni a res, com si no hagués passat. En vaig fer construir d'altres, més grans, millors i amb més sort, de manera que tothom em digués home de coratge. Ja se sap: vaixell gran, gran valentia. Els vaig tornar a carregar de vi, llard, faves, perfums i esclaus. Aquí Fortunata va fer una cosa ben noble: va vendre tot l'or que tenia, tota la roba, i em va posar a la mà cent monedes d'or. Aquell va ser el llevat de la meva fortuna. De pressa s'acompleix allò que volen els déus. En un sol viatge vaig arrodonir deu milions de sestercis. De seguida vaig rescatar totes les finques que havien estat del meu patró. Vaig construir una casa, vaig comprar esclaus per vendre, animals de càrrega; tot allò que tocava creixia com un bresc de mel. Quan vaig començar a tenir més del que té tot el meu país, vaig aixecar la mà del taulell: em vaig retirar dels negocis i vaig començar a prestar diners als lliberts. I a dir veritat, quan ja no volia continuar amb els negocis, em va encoratjar un astròleg que havia vingut per casualitat a la nostra colònia, un grecàs de nom Serapa, conseller dels déus. Em va dir fins i tot coses que jo havia oblidat; me les va desgranar totes fil per randa; coneixia les meves entranyes; gairebé l'únic que no em va dir era què havia sopat el dia abans. Hauríeu pensat que havia viscut sempre amb mi.»
+
+Ella, encantada, va riure amb una dolçor tal que em va semblar veure la lluna plena traient el rostre per damunt dels núvols. Tot seguit, modulant la veu amb els dits: «Si no et fa fàstic, va dir, una dona ben endreçada que enguany ha conegut home per primera vegada, et presento, oh jove, una germana. Tens un germà, és cert —car no em va saber greu d'informar-me'n—, però, qui t'impedeix d'adoptar també una germana? Vinc pel mateix camí. Tan sols digna't de reconèixer el meu petó quan et plagui.» «Al contrari, vaig dir jo, et prego per la teva bellesa que no et faci fàstic d'admetre un foraster entre els teus adoradors. Trobaràs en mi un devot, si et deixes adorar. I perquè no em jutgis d'arribar de franc a aquest temple d'Amor, et regalo el meu germà.» «Com? va dir ella. Em regales aquell sense qui no pots viure, dels petons del qual depens, que tu estimes de la mateixa manera que jo et vull a tu?» Mentre deia aquestes mateixes paraules, amb tanta gràcia conciliava la veu de qui parlava, un so tan dolç acaronava l'aire que havia penetrat, que hauries cregut sentir cantar entre les brises la concòrdia de les Sirenes. Així doncs, mentre jo romania meravellat, i una llum no sé quina resplendia per a mi més clara que tot el cel, em va plaure preguntar el nom de la deessa. «Doncs bé, va dir, no et va dir la meva serventa que em dic Circe? No soc pas filla del Sol, ni la meva mare, quan li va plaure, va aturar el curs del món que s'escolava. Tanmateix, tindré de què agrair al cel, si els destins ens uneixen. Més encara: ja no sé quin déu actua en els meus pensaments silenciosos. I no és sense motiu que Circe estima Polieni: entre aquests noms sempre s'alça una gran flama. Pren, doncs, el meu abraç, si et plau. I no hi ha cap motiu per témer algun curiós: el germà és lluny d'aquest lloc.» Digué això Circe, i, estrenyent-me entre uns braços més tous que les plomes, em va conduir a terra, coberta d'herba variada.
+
+Com les flors que la terra mare va escampar des del cim de l'Ida, quan Júpiter s'uní a l'amor consentit i concebé les flames en tot el pit: van esclatar les roses i les violes i el suau ciperus, i els blancs lliris van somriure des del prat verd: així la terra va cridar Venus entre les herbes tendres, i un dia més lluminós va afavorir l'amor secret. En aquella gespa, ajaguts l'un al costat de l'altre, vam jugar amb mil petons cercant un plaer robust. <. . .>
+
+## CXXVIIII.
+
+CIRCE A POLIENI: «Què passa?», digué. «Et molesta potser el meu petó? Potser el meu alè fa pudor de dejuni? Potser la suor de les aixelles per negligència? Penso que, si no és res d'això, potser és que tens por de Gitó?» Banyat en un rubor evident, vaig perdre fins i tot les poques forces que havia tingut, i tot el cos se'm va relaxar del tot:
+
+«Us ho prego», vaig dir, «reina, no us burleu de les meves misèries. He estat tocat per un encanteri.» <. . .>
+
+«Digues, Chrysis, però la veritat: sóc potser poc agraciada? Potser mal endreçada? Potser algun defecte natural m'afea la figura? No enganyis la teva mestressa. No sé en què hem fallat.» Arrabassà llavors el mirall a la que callava, i després d'haver assajat tots els gestos que solen fingir els amants en el riure, sacsejà la roba irritada contra el sòl i entrà de pressa al temple de Venus. Jo, en canvi, condemnat i com arrossegat per aquella visió a un estat d'horror, vaig començar a interrogar el meu esperit sobre si m'havia estat robat un plaer veritable.
+
+Com quan en la nit soporífera els somnis juguen
+amb els ulls errants i la terra ha tret a la llum
+l'or que amagava en les seves entranyes: la mà impúdica
+gira el robatori i arrabassa els tresors, la suor
+banya el rostre i una por profunda posseeix la ment,
+no fos que el pit carregat sacseges l'or secret
+que el coneix: però quan la joia ha fugit de la ment
+enganyada i torna la forma veritable, l'ànima
+desitja allò que ha perdut i es gira tota cap a la imatge passada. <. . .>
+
+GITÓ A ENCÒLPION: «Per això et dono gràcies, perquè m'estimes amb la fidelitat d'un Sòcrates. No va jeure tan intacte Alcibíades al llit del seu mestre».
+
+## CXXIX.
+
+ENCÒLPION A GITÓ: «Creu-me, germà, no em reconec com a home, no ho sento. Ha mort aquella part del cos amb la qual era un Aquil·les en altre temps». <. . .>
+
+El noi, tement que, sorprès en la intimitat, donés peu als rumors, s'escapà corrents i fugí cap a les estances interiors de la casa. <. . .>
+
+La Crisís va entrar a la meva cambra i em lliurà les tauletes de la seva mestressa, en les quals hi havia escrit el següent: «CIRCE SALUDA POLIÈ. Si fos una dona libidinosa, em queixaria d'haver estat enganyada; ara, en canvi, fins et dono gràcies per la teva feblesa. He jugat massa estona a l'ombra del plaer. Tanmateix, et pregunto com et trobes, i si has pogut arribar a casa amb els teus propis peus; perquè els metges diuen que els homes sense nervis no poden caminar. T'ho dic, jove: vigila la paràlisi. Mai no he vist un malalt en perill tan gran; ja ets mig mort. I si el mateix fred t'envaís els genolls i les mans, pots enviar a buscar els trompetes. Però, és clar, tot i que he rebut una ofensa greu, no li nego la medicina a un home miserable. Si vols curar-te, demana-ho a Gitó. Recuperaràs, et dic, els teus nervis, si dorms tres dies sense el teu germà. Pel que fa a mi, no tinc por que es trobi algú a qui agradi menys. Ni el mirall ni la fama em menteixen. Adéu, si pots.» Quan la Crisís s'adonà que havia llegit fins al final tot aquell retret, digué: «Aquestes coses solen passar, i sobretot en aquesta ciutat, on les dones fins i tot fan baixar la lluna. <. . .> Així doncs, també d'això se n'ocuparà. Escriu-li, però, a la mestressa amb més tendresa, i restitueix-li l'ànim amb una sincera amabilitat. Perquè, a dir veritat: des de l'hora en què va rebre l'ofensa, no és ella mateixa.» Vaig obeir de bon grat la serventa, i vaig posar a les tauletes les paraules següents:
+
+## CXXX.
+
+## CXXX.
+
+«POLIENOS A CIRCE, SALUT. Confesso, senyora, que he pecat moltes vegades; car sóc home i encara jove. Però mai fins avui no havia delinquit fins a la mort. Tens davant teu un reu que s'admet culpable: qualsevol cosa que ordenis, m'ho he merescut. He comès traïció, he mort un home, he profanat un temple: per aquests crims, busca el càstig. Si et plau matar-me, vinc amb la meva espasa; si et satisfan els assots, corro nu davant la meva senyora. Recorda tan sols una cosa: no he pecat jo, sinó els instruments. Soldat preparat, no tenia armes. Qui ho hagi pertorbat, no ho sé. Potser l'ànim s'avançà a la lentitud del cos; potser, mentre ho desitjava tot alhora, vaig consumir el plaer en el temps. No trobo allò que vaig fer. Em manes, però, que em guardi de la paràlisi: com si pogués fer-se encara més gran la que ja m'ha pres allò amb què fins i tot a tu podia posseir. El resum de la meva disculpa és aquest: et satisfaré, si em permets esmenar la culpa.»
+
+Acomiadada Crísida amb semblant promesa, em vaig ocupar amb tota diligència d'aquell cos tan perjudicial: vaig renunciar al bany i em vaig untar amb una mica d'oli; tot seguit em vaig alimentar amb viandes més consistents —és a dir, bulbs i caragols sense brou— i vaig beure el vi amb parsimònia. Després, abans de dormir, em vaig serenar amb un passeig molt lleuger i vaig entrar a la cambra sense Gitó. Tan gran era la meva preocupació per refer-me, que temia que el meu germà em sacsegés el costat.
+
+## CXXXI.
+
+L'endemà, com que m'havia llevat sense cap molèstia de cos ni d'esperit, vaig baixar al mateix platanar —tot i que temia aquell lloc de mal averany— i vaig començar a esperar entre els arbres que Crísida em guiés el camí. No feia gaire que passejava quan em vaig asseure al mateix lloc on havia estat el dia anterior, i ella va aparèixer arrossegant una velleta de companya. I en saludar-me, digué: «Què passa, orgullós? Has tornat a tenir seny?» Aleshores va treure del si un cordill fet de fils de colors entortolligats i em va lligar el coll. Tot seguit va agafar amb el dit del mig una mica de pols barrejada amb saliva i, malgrat la meva resistència, me la va marcar al front. <. . .>
+
+Acabat aquest encantament, em va manar que escopís tres vegades i que llancés tres vegades al seu si unes pedretes que ella mateixa havia embolcallat en porpra després d'encantar-les; i, posant-hi les mans, va començar a temptar les forces de l'engonal. Més de pressa que no es diu, els nervis van obeir el comandament, i les mans de la velleta es van omplir amb un gran moviment. I ella, exultant de goig, va dir: «Veus, Crísida meva, veus com als altres els he despertat la llebre?»
+
+El plàtan mòbil havia escampat les seves ombres estiuenques,
+i el llorer coronat de baies i els xiprers tremolosos
+i els pins retallats amb el cim agitat al voltant.
+Entremig d'ells jugava un rierol escumós
+amb aigües errants, i molestava les pedretes amb un raig murmurant.
+Lloc digne d'amor: testimoni, el rossinyol silvestre
+i la Procne urbana, que, escampades per les herbes
+i les violes tendres, conreaven els seus camps amb el cant.
+
+<. . .> Ella hi jeia, relaxada, amb el coll de marbre sobre el llit daurat, i colpejava l'aire tranquil amb una branca de murta florida. Així que em va veure, es va ruboritzar una mica, recordant sens dubte l'ofensa del dia anterior; després, quan tothom es va retirar i em vaig asseure al seu costat seguint el seu gest d'invitació, va posar una branca davant dels meus ulls i, com si hi hagués una paret entremig, va agafar més atreviment: «Què passa, paralític? Avui has vingut sencer del tot?» — «Pregunta'm», vaig dir jo, «en lloc de posar-ho a prova.» I, llançant-me amb tot el cos a la seva abraçada, m'aboco als seus petons sense encanteris fins a la sacietat. <. . .>
+
+## CXXXII.
+
+## CXXXII.
+
+[ENCÒLPIUS SOBRE EL NOI ENDIMIÓ: La bellesa mateixa del seu cos m'atreia cap a ell i em portava al desig. Ja els llavis crepitaven en nombrosos petons, ja les mans entrellaçades havien descobert tota mena de plaers, ja els cossos lligats en un abraç mutu havien fet que també les ànimes es barregessin.]
+La matrona, ferida per insults tan evidents, recorre finalment a la venjança: crida els cambrers i ordena que m'empapin d'aigua freda. I no satisfeta la dona amb una ofensa tan greu contra mi, convoca totes les filadores i la part més baixa de la servitud, i mana que m'escopin. Jo m'emparo els ulls amb les mans, i sense vessar cap prec —perquè sabia prou bé allò que m'havia guanyat—, sóc llançat a fora de la porta enmig de cops i escopinades. Expulsen també la Prosel·lenos, la Crisi rep una pallissa, i tota la servitud murmura tristament entre ella, preguntant-se qui ha espatllat l'alegria de la mestressa. <. . .> Així doncs, ponderades les circumstàncies amb més serenitat, vaig cobrir amb cura les marques dels cops, per tal que ni Eumolp s'alegrés de la meva humiliació ni Gitó s'entristís. L'únic recurs que em quedava, doncs, sense perdre la dignitat, fou fingir malaltia; i, recolzat al llit, vaig abocar tot el foc de la meva ira contra aquella que havia estat la causa de tots els meus mals:
+
+Tres vegades vaig agafar amb la mà el terrible destral de doble fulla,
+tres vegades, més flàccid de sobte que la tija d'una col,
+vaig témer el ferro que, tremolós, no em donava cap ús.
+Ja no podia fer allò que poc abans m'havia plagut;
+car aquella, més freda que el gel de l'hivern rígid per la por,
+s'havia refugiat en les entranyes cobertes de mil arrugues.
+Així no vaig poder descobrir el cap per al càstig,
+sinó que, burlat per la por mortal d'aquella berganta,
+vaig fugir cap a les paraules, que podien fer més mal.
+
+Alçat, doncs, sobre el colze, la vaig fustigar amb una arenga més o menys d'aquest tenor: «Què em dius, vergonya de tots els homes i de tots els déus? Car ni tan sols és lícit esmentar-te en converses serioses. Heus aquí el que m'has merescut: arrossegar-me als inferns quan em trobava al cel; malbaratar-me els anys en la primera florida del vigor, i carregar-me amb el cansament de la vellesa més extrema. Et prego que em retornis el certificat de defunció.» Quan vaig abocar totes aquestes paraules en la meva ira, Ella mantenia els ulls clavats a terra, girada d'esquena, i no es commogué gens de rostre davant el discurs que havia iniciat, com els salzes lents o les roselles de coll lànguid. I jo, no menys, en acabar aquella tan vergonyosa invectiva, vaig començar a penedir-me de les meves paraules i a ruboritzar-me en secret, perquè, oblidant el meu pudor, havia entaulat disputa verbal amb aquella part del cos que els homes de caràcter més sever ni tan sols solen admetre al coneixement. Però aviat, refregant-me la cara una bona estona: «I bé, jo, digues, quin mal he fet si he alleugerit el meu dolor amb una invectiva natural? O per ventura no acostumem a maleir en el cos humà l'estómac, i la gola, i fins el cap, quan ens fa mal amb massa freqüència? Què? ¿No és que Ulisses disputa amb el seu propi cor, i alguns tràgics retreuen als seus ulls com si els escoltessin? Els gotosos maleeixen els seus peus, els qui pateixen de mans maleeixen les mans, els llegallossos els ulls, i els qui es colpegen sovint els dits, tot el dolor que senten el fan recaure sobre els peus:
+
+Per què m'esguardeu amb el front arrufat, oh Cató,
+i condemneu una obra de sinceritat nova?
+La gràcia d'un parlar pur, no trist, somriu,
+i el que fa el poble, una llengua franca ho conta.
+Car qui ignora els amors, qui ignora els goigs de Venus?
+Qui prohibeix que els membres s'escalfin al llit tebi?
+El mateix pare Epicur, docte en l'art de la veritat,
+ho manà, i digué que en això consistia el telos de la vida.
+
+No hi ha res més fals que la nècia persuasió dels homes, ni res més inepte que la severitat fingida."
+
+## CXXXIII.
+
+Acabada aquesta declamació, vaig cridar Gitó i li vaig dir: «Explica'm, germà, però amb la teva paraula: aquella nit que Ascilt te'm va sostreure, va vetllar fins a cometre una injúria, o es va acontentar amb una nit casta i sense res?» El noi es va tocar els ulls i va jurar amb les paraules més solemnes que Ascilt no li havia fet cap violència.
+
+<. . .> i posant el genoll al llindar, vaig suplicar així la divinitat que m'era adversa:
+
+## CXXXIII.
+
+Companya de les nimfes i de Bacus, a qui la bella Dione atorgà el seu poder en els boscos opulents, a qui obeeix la cèlebre Lesbos i la verdejant Tasos, a qui adora el Lidus de set corrents i li erigeix temple a les seves Hipepis: vine aquí, tutora de Bacus i delit de les Dríades, i acull les meves pregàries tímides. No vinc banyat en sang funesta, no he estès la mà impietosa contra els temples com un enemic sacríleg, sinó que, pobre i esgotat per la misèria, vaig cometre la falta sense posar-hi tot el cos. Qui peca en la indigença, menys culpable és. Amb aquesta súplica, t'ho demano, alleugereix la meva ànima i perdona la falta menor, i quan algun dia l'hora de la fortuna em somrigui, no deixaré que la teva glòria resti sense honor. Anirà als teus altars, oh Sagrada, el boc, pare del ramat; anirà als teus altars el cornúpeta i la cria de la truja queixosa, i la víctima de llet. L'humor d'enguany escumarà a les pàteres, i la joventut embriagada farà tres vegades el tomb exultant al voltant del santuari."
+
+Mentre feia tot això i, amb solícita cura, vigilava el que havia deixat, va entrar al santuari una vella de cabells esparracats i deforme amb la seva roba negra, i agafant-me per la mà fora del vestíbul, em va arrossegar. <. . .>
+
+## CXXXIV.
+
+«Quines bruixes t'han rosegat els nervis, o quin immundícia has trepitjat de nit a una cruïlla, o algun cadàver? Ni tan sols t'has pogut valer amb el noi, sinó que, tou, feble, esgotat, com un rossí en un pujol, has malbaratat l'esforç i la suor. I no content de pecar tu sol, m'has encès damunt la còlera dels déus.»
+
+I ella em tornà a conduir, sense que jo hi posés cap resistència, a la cambra de la sacerdotessa, m'empenyé sobre el llit, agafà una canya de la porta i em colpejà de nou, sense que jo digués res. I si al primer cop la canya no s'hagués trencat i hagués afeblat l'ímpetu de qui em pegava, potser m'hauria trencat els braços i el cap. Vaig gemegar, és clar, a causa del dolor, i amb les llàgrimes que em queien a raig, em vaig inclinar sobre el coixí amb el cap amagat sota la mà dreta. Ella tampoc no estava menys aclaparada pel plor i s'assegué a l'altra banda del llit, i amb veu tremolosa es posà a maleir la llarga espera de la vellesa, fins que intervingué la sacerdotessa: «Què és això —digué—, de venir a la meva cambra com si fóssiu davant d'una tomba recent? I precisament en dia de festa, quan fins els qui estan de dol somriuen.»
+
+PROSEL·LENOS A ENÒTEA, SACERDOTESSA DE PRIAP:
+
+«Oh, Enòtea —digué—, aquest jove que veus ha nascut sota un astre maligne; car no pot vendre els seus béns ni a un noi ni a una noia. Mai no has vist home tan desgraciat: té una corretja en remull, no pas els engonals. En resum, què et sembla un home que s'ha aixecat del llit de Circe sense cap plaer?»
+
+En sentir això, Enòtea s'assegué entre tots dos i, tot sacsejant el cap llargament, digué: «Soc l'única que sap guarir aquesta malaltia. I perquè no penseu que ho faig amb embuts, us demano que el vostre jove dormi amb mi aquesta nit; si no li torno allò tan rígid com una banya...»
+
+Quant hi ha al món, a mi m'obeix. La terra florida
+s'asseca i es marceix quan vull, espessint-se els seus sucs;
+quan vull, aboca riqueses, i els espadats i les roques aspres
+llancen les aigües del Nil. El mar em sotmet les ones
+quietes, i els zèfirs posen als meus peus els seus vents en calma.
+Els rius m'obeeixen, i les tigres hircànies, i els dracs
+que s'aturen quan els mano.
+Per què parlo de coses menors? La imatge de la lluna
+davalla atreta pels meus encantaments, i Febo, tremolós,
+es veu forçat a girar el curs i doblegar els seus cavalls furiosos.
+Tant poden les meves paraules. La flama dels braus s'apaga
+extingida pels ritus de la verge; la Circe de Febus
+transformà els companys d'Ulisses amb màgics encantaments;
+Proteu sol ser allò que li plau. Jo, experta en aquests arts,
+aturé els arbres de l'Ida enmig del torrent,
+i de nou posaré els rius al cim de la muntanya.»
+
+## CXXXV.
+
+Em vaig estremir, aterrit per una promesa tan fabulosa, i vaig començar a mirar l'anciana amb més atenció.
+
+«Doncs bé —exclamà Enòtea—, obeïu les meves ordres!» I, havent-se netejat les mans amb cura, s'inclinà sobre el llit i em besà una vegada i una altra. <. . .>
+
+Enòtea posà una taula vella al mig de l'altar, l'omplí de brases vives i apedaçà amb pega temperada una escudella que la vellesa havia esquerdat. Després clavà de nou a la paret fumosa un clau que, en arrencar-lo, havia arrossegat amb ell l'escudella de fusta. Tot seguit, cenyida amb un mantell quadrat, col·locà una olla enorme al foc i, al mateix temps, baixà amb una forqueta del rebost un drap on hi havia faves guardades per a l'ús diari i un tros antiquíssim de cap de porc, tot ell picat per mil cops de ganivet. Quan desfeu el nus del drap, n'abocà una part de les llegums sobre la taula i m'ordenà que les netegés amb cura. Jo obeïa la seva ordre i, amb mà diligent, anava separant els grans revestits de les closques més brutes. Però ella, retreient-me la meva lentitud, la molt descarada els prenia ella mateixa, i amb les dents els treia les pellofes alhora, escupint-les a terra com si fossin cossos de mosques.
+
+M'admirava, en veritat, del talent que dóna la pobresa i de les habilitats particulars que cadascuna de les coses comporta:
+
+No brillava l'ivori indi encastat en or,
+ni la terra irradiava sota el marbre trepitjat,
+enganyada pels seus propis dons; sinó que sobre un engraellat de vímets
+reposava el bosc buit de Ceres, i les noves copes de terra
+que la roda humil havia modelat amb fàcil gir.
+D'aquí, un llac de gotes suaus i, d'un tronc flexible,
+cistelles de vímet i una gerra tacada per Leu.
+I la paret del voltant, farta de palla buida
+i de fang casual, comptava claus rústics,
+i una canya prima penjava de jonc verd.
+A més, allò que la casa humil conservava penjat
+d'una biga enfumada, els seus tresors: serbes madures
+penjaven entre corones oloroses entreteixides,
+i farigola vella i raïms de panses ressecs:
+tal com fou en altre temps la hostatgera a la terra àtica,
+digna dels ritus d'Hècale, aquella que la Musa, en anys parladors,
+lliurà a l'admiració d'una època que venerava els antics de Bàccides.
+
+Mentre ella tastava encara una mica de carn i tornava a penjar amb una forquilla al rebost el cap de porc, company de la seva mateixa edat, es trencà la cadira podrida que li havia afegit alçada a l'estatura, i el seu propi pes la precipità sobre el fogó. Li fracturà el coll de l'olla i apagà el foc que tot just s'anava refent. Ella mateixa es féu mal al colze amb un tió encès i es cobrí tota la cara de cendra remoguda. M'alçà, doncs, tot neguitós, i la vaig ajudar a posar-se dreta sense poder reprimir el riure; i de seguida, perquè res no retardés el sacrifici, sortí corrents al veïnat a refer el foc. Així que m'acostí a la porteta de la cabana quan heus aquí que tres oques sagrades, que, segons crec, tenien per costum d'exigir a la vella la seva ració diària a migdia, s'atansen cap a mi i m'envolten tremolós amb un estrident i quasi rabiós grunyi. Un em esquinçava la túnica, un altre em desllorigava i estirava les corretges del calçat; i un altre, cap i mestre de tota aquella crueltat, no dubtà a turmentar-me la cama amb una mossegada serrada. Oblidant, doncs, les meves bajanades, vaig arrencar el peu d'una tauleta i vaig començar a abatre aquella bèstia tan combativa amb el puny armat. I no content amb un cop de compromís, em vaig venjar de l'oca amb la seva mort:
+
+Així, crec jo, les Estinfàlides, domades per l'art d'Hèrcules,
+fugiren cap al cel, i les Harpies de bec gotejant,
+quan les pèrfides viandes s'impregnaren del verí de Fineu.
+Tremolà l'èter, espantat pels planys insòlits,
+i el palau del cel quedà en confusió <. . .>
+
+Els altres havien recollit els pèsols escampats arreu del paviment i, privats del seu cap, com em sembla, havien tornat al temple; jo, alegre alhora per la presa i per la venjança, vaig enviar l'oca morta darrere del llit i em vaig netejar la ferida poc fonda de la cama amb vinagre. Després, tement les recriminacions, vaig prendre la decisió de marxar, i havent recollit les meves coses vaig començar a sortir de la cabana. Però encara no havia franquejat el llindar de la cambreta quan vaig veure Enotea que s'acostava amb un test ple de brases. Vaig recular, doncs, i, llençant la roba, vaig quedar-me dret a l'entrada com si esperés la que s'endarreria. Ella va col·locar el foc recollit en canyes seques, i havent-hi afegit a sobre uns quants troncs, va començar a excusar el retard, dient que l'amiga no l'havia deixada marxar sense apurar tres copes com mana la llei. «I tu, mentre jo no hi era, què has fet? I on són els pèsols?» Jo, que havia cregut haver fet una cosa fins i tot digna d'elogi, li vaig explicar de cap a cap tota la batalla, i perquè no estigués trista més estona, li vaig oferir l'oca com a compensació per la pèrdua. Quan la vella la va veure, va armar un crit tan gran que hauries dit que les oques havien tornat a entrar al llindar. Confós, doncs, i atònit per la novetat del fet, jo em preguntava per quin motiu s'havia encès de còlera, o per quin motiu li feia més llàstima l'oca que no pas jo.
+
+Però ella, picant-se les mans: «Miserable, digué, i encara gosses parlar? No saps quin crim enorme has comès: has matat la delícia de Priap, l'oca estimada per totes les matrones. Així que no et pensis que no has fet res; si els magistrats s'assabenten d'això, acabaràs a la creu. Has profanat amb sang el meu domicili, fins avui inviolat, i has fet que qualsevol enemic que vulgui pugui expulsar-me del sacerdoci.»
+
+—Us prego, li dic, no crideu: us donaré un estruç a canvi de l'oca.
+
+Mentre jo, estupefacte, seia al llit i ella plorava el destí de l'oca, va arribar entretant Proselenos amb els estris del sacrifici, i en veure l'oca morta, preguntà la causa de la tristesa, i ella també es posà a plorar amb més força i a compadir-se de mi, com si hagués matat el meu propi pare i no una oca de tothom. Així que, esgotat per l'avorriment: —Us prego, li dic, és possible expiar la falta amb diners? Si us hagués provocat, fins i tot si hagués comès un homicidi... Vet aquí que poso dos aureus, amb els quals podreu comprar tant déus com oques.
+
+En veure'ls, Enòtea digué: —Perdona'm, noi, estic preocupada per tu. Això és prova d'amor, no de malícia. Així que farem el possible perquè ningú no ho sàpiga. Tu només prega als déus que et perdonin el que has fet.
+
+*Qui té diners, navegui amb brisa segura*
+*i governi la fortuna al seu albir.*
+*Que prengui per muller la mateixa Dànae*
+*i faci creure a Acrisi el que vulgui.*
+*Que compongui poemes, declami, ho ompli tot de soroll*
+
+i guanyi causes i superi el mateix Cató.
+
+Que el jurisconsult tingui el seu «procedeix, no procedeix»,
+  i sigui tot el que foren Servi i Labeó.
+
+Prou paraules: demana el que vulguis amb els diners a la mà,
+  i vindrà. L'arca tancada posseeix el mateix Júpiter.
+
+. . . [10] Em posà sota les mans una tassa de vi i, després d'haver purificat els meus dits estesos amb porros i api, submergí avellanes en el vi tot recitant una pregària. I tant si pujaven a la superfície com si s'enfonsaven, d'aquí en treia els seus presagis. No m'enganyava pas: les avellanes buides, sense moll, plenes de vent, es quedaven a flor de líquid; les pesades i plenes, amb el fruit sencer, anaven al fons. [11] Obert el pit de l'oca, n'extragué el fetge ben robust i d'allí em predí el futur. [12] I encara, perquè no en quedés cap rastre del crim, esquarterà tota l'oca i la clavà als asts, i preparà un àpat ben sumptuós per a qui, com ella mateixa deia, poc abans havia d'haver mort. [13] Mentrestant, les copes de vi pur volaven d'una mà a l'altra.
+
+## CXXXVIII.
+
+## CXXXVIII.
+
+Enòtea treu un fal·lus de cuir que, un cop untat d'oli, pebre mòlt i llavor d'ortiga triturada, comença a introduir-me a poc a poc per l'anus. Aquella vella crudelíssima m'esquitxa tot seguit les parts amb suc de dona. Barreja suc de morritort amb abrònec i, havent-me ruixat els engonals, agafa un manat d'ortiga verda i es posa a colpejar-me tot el que hi ha per sota del melic amb mà pausada. <. . .>
+
+Malgrat que les velletes estaven dissoltes pel vi pur i la luxúria, intenten el mateix camí i, havent-me perseguit fugitiu uns quants carrers, criden: «Atureu el lladre!» Me'n vaig escapar, però amb tots els dits ensagnats en la precipitada fugida. <. . .>
+
+«Crisi, que odiava la teva fortuna d'abans, ha decidit perseguir aquesta fins i tot amb perill de la seva vida.» <. . .>
+
+«Què tenia Ariadna de semblant a aquesta bellesa, o Leda? Què podria Helena contra ella, o Venus? El mateix Paris, jutge de les deesses lascives, si l'hagués vista en la comparació amb aquells ulls tan atrevits, hauria donat Helena a ella i hauria renunciat a les deesses. Almenys si em fos permès prendre-li un petó, si abraçar aquell pit celestial i diví, potser aquest cos tornaria a les forces i es despertarien les parts adormides, crec, per encanteri. Ni els insults m'esgoten: que m'hagin colpejat, no ho sé; que m'hagin expulsat, ho prenc com un joc. Que em sigui permès, només, tornar a les gràcies.»
+
+## CXXXIX.
+
+Vaig turmentar el llit amb freqüents revolcades, com si fos una mena d'imatge del meu amor <. . .>
+
+No sols la divinitat i el fat implacable
+em persegueixen. Primer el Tirinti, agitat per la ira d'Inàquia,
+va suportar el pes del cel; abans que ell, Pelias
+va sentir la Juno profana; Laomedont va portar armes
+sense saber-ho; Tèlef va saciar la ira
+d'una doble divinitat, i Ulisses va témer el regne de Neptú.
+A mi també, per terres i per la mar del cànid Nereu,
+em persegueix la pesant ira del Priap hel·lespòntic.
+
+Vaig començar a preguntar al meu Gitó si algú m'havia buscat. «Ningú, avui», va dir. «Però ahir va entrar per la porta una dona no gens vulgar, i després d'haver parlat llargament amb mi i d'haver-me cansat amb una conversa interminable, al final va començar a dir que tu t'havies guanyat un càstig i que patiríes penes d'esclau, si el qui havia estat ofès persistia en la seva queixa.» <. . .>
+
+Encara no havia acabat el meu lament quan va irrompre Crisi i es va llançar sobre mi amb una abraçada efusivíssima: «Et tinc», va dir, «tal com esperava: tu ets el meu anhel, tu el meu plaer; mai no apagaran aquest foc, si no l'extingiu amb sang.» <. . .>
+
+Un dels esclaus més novells d'Eumolp va arribar de cop i va assegurar-me que el seu amo estava furiós amb mi perquè ja feia dos dies que faltava al meu deure. Faria bé, doncs, de preparar alguna excusa adequada: difícilment podia ser que la ràbia d'un home irat s'assossegués sense cops. <. . .>
+
+## CXL.
+
+## CXL.
+
+[1] Una matrona de les més respectables, de nom Filomela, que sovint havia arrencat moltes herències als vells sense fills gràcies als serveis de la seva joventut, ara que era vella i el seu esclat s'havia apagat, els encomanava el fill i la filla, i per aquesta via continuava estenent el seu art. [2] Aquesta, doncs, va venir a trobar Eumolp i li va recomanar els seus fills, confiant-los a la seva prudència i bondat <. . .> i els seus desitjos. Que ell era l'únic en tot el món capaç d'instruir els joves cada dia amb ensenyaments profitosos. [3] En resum, que deixava els nois a casa d'Eumolp perquè l'escoltessin parlar: que aquella era l'única herència que es podia donar als joves. [4] I va fer exactament el que havia dit: va deixar la filla, bellíssima, amb el seu germà adolescent a la cambra, i va fingir que anava al temple a complir els seus vots. [5] Eumolp, que era tan virtuós que fins i tot jo li semblava un noi, no va trigar a convidar la noia als ritus de les natges. [6] Però havia dit a tothom que patia de gota i que tenia els lloms fluixos, i si no mantenia íntegra la simulació, corria el risc de fer trontollar tota la farsa. [7] Així doncs, per tal que la mentida semblés creïble, va suplicar a la noia que s'assegués sobre la seva reconeguda bondat, i va manar a Còrax que s'amagués sota el llit on ell jeia i, amb les mans posades a terra, el mogués amb els seus lloms. [8] Aquell obeïa l'ordre lentament, i amb un moviment igual recompensava l'habilitat de la noia. [9] Quan, doncs, la cosa s'encaminava cap al seu fi, Eumolp exhortava en veu alta Còrax perquè espessís el servei. Així el vell, col·locat entre el mercenari i l'amiga, jugava com si fos un gronxador. [10] Eumolp ho havia fet una vegada i una altra, amb gran rialla, fins i tot la seva pròpia. [11] Així doncs, jo també, per no perdre el costum per la inèrcia, mentre el germà contemplava els mecanismes de la seva germana per l'escletxa, m'hi vaig acostar per provar si toleraria la meva gosadia. El noi, molt experimentat, no es rebutjava a les carícies, però allà també em va trobar una divinitat adversa. <. . .>
+
+[12] «Els déus majors m'han restituït sencer. Mercuri, que acostuma a conduir i a tornar les ànimes, m'ha retornat amb els seus beneficis allò que una mà irada havia tallat, de manera que sàpigues que soc més afavorit que Protesilau o qualsevol altre dels antics.» [13] Dit això, em vaig alçar la túnica i em vaig mostrar tot sencer a Eumolp. Ell, primer, es va estremir; després, per creure-ho del tot, va palpar amb les dues mans els beneficis dels déus. <. . .>
+
+<Eumolp>: [14] «Sòcrates, glòria dels déus i dels homes, solia vanagloriar-se d'haver mirat mai cap a una taverna ni d'haver confiat els ulls a cap assemblea de multitud massa nombrosa. Tant és cert que res no és més profitós que parlar sempre amb la saviesa. — [15] Tot això que dius és veritat, vaig dir jo; car ningú no hauria de caure en la mala fortuna més de pressa que aquells qui cobegen allò d'altri. D'on viurien, si no, els estafadors i els lladregots, si no llançaven entre la multitud, com a hams, bossetes o saquetons que ressonen amb monedes? Tal com els animals muts s'enganyen amb el menjar, els homes no es deixarien caçar si no esperessin mossegar alguna cosa.» <. . .>
+
+## CXLI.
+
+«El vaixell de l'Àfrica, tal com havies promès, no ha arribat amb els teus diners ni amb la teva gent. Els caçadors d'herències, ja esgotats, han anat reduint la seva generositat. Així doncs, o m'equivoco, o la fortuna compartida ha començat a penedir-se'n.» <. . .> «Tots aquells que tinguin llegats en el meu testament, llevat dels meus lliberts, els rebran amb aquesta condició: que tallin el meu cos a trossos i se'l mengin davant del poble congregat. Sabem que entre alguns pobles encara es conserva la llei que els difunts siguin consumits pels seus parents, fins al punt que sovint es retreia als malalts que feien malbé la pròpia carn. Amb això adverteixo els meus amics que no rebutgin allò que els ordeno, sinó que amb el mateix ànim amb què han desitjat la meva mort, consumeixin també el meu cos.» <. . .>
+
+La immensa fama dels diners encegava els ulls i l'enteniment d'aquells miserables. Gòrgies estava disposat a dur-ho a terme.
+
+«Pel que fa a la repugnància del teu estómac, no tinc res a témer. Obeirà les ordres, si li promets que a canvi d'un moment de fàstic rebrà la compensació de molts béns. Tanca els ulls, i imagina't que no estàs menjant carn humana, sinó deu milions de sestercis. A més, trobarem algunes salses amb les quals en dissimularem el gust. Perquè cap carn no agrada per ella mateixa, sinó que es prepara amb certa art, i s'adiu fins i tot amb un estómac reticent. I si vols que el consell es confirmi també amb exemples: els saguntins, assetjats per Anníbal, menjaren carn humana, i no esperaven cap herència. Els petel·lins feren el mateix en una fam extrema, i no cercaven res més en aquell àpat sinó simplement no morir de gana. Quan Numància fou presa per Escipió, es trobaren mares que estrenyien contra el pit els cossos mig rosegats dels seus fills.»
+
+---
+
+*Traducció de domini públic.*

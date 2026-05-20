@@ -1,10 +1,10 @@
 {
     "pid": 13838,
     "mode": "hybrid",
-    "current_task": "idle",
-    "diem_balance": "3.6963440924856155",
-    "uptime_seconds": 4383,
+    "current_task": "1779290209_translate_petroni_continuar",
+    "diem_balance": "2.6176050124856154",
+    "uptime_seconds": 4633,
     "tasks_completed": 0,
     "tasks_failed": 1,
-    "last_heartbeat": "2026-05-20T15:13:06Z"
+    "last_heartbeat": "2026-05-20T15:17:16Z"
 }
