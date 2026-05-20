@@ -30,7 +30,7 @@ VENICE_SCRIPT = Path.home() / ".hermes" / "skills" / "openclaw-imports" / "venic
 DEFAULT_MODEL = "claude-sonnet-4-6"
 CHUNK_SIZE = 1000  # Caràcters per chunk
 MAX_RETRIES = 3
-VENICE_TIMEOUT = 3600
+VENICE_TIMEOUT = 300
 API_BASE = "https://api.venice.ai/api/v1"
 USER_AGENT = "BibliotecaArion/2.2"
 
