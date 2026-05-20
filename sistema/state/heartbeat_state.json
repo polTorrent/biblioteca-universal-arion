@@ -1,26 +1,7 @@
 {
-  "timestamp": "2026-05-04T09:30:00Z",
-  "diem_balance": 5.35,
-  "diem_status": "SUFFICIENT",
-  "diem_minimum": 3.0,
-  "pending_tasks": 0,
-  "running_tasks": 0,
-  "done_tasks_today": 4,
-  "failed_tasks": 0,
-  "validated_works": 50,
-  "needs_fix_works": 2,
-  "fixing_works": 6,
-  "total_translations": 103,
-  "total_originals": 104,
-  "worker_status": "IDLE",
-  "worker_pid": null,
-  "critical_issues": [],
-  "catalog_health": "98%",
-  "notes": [
-    "4 supervisions completades:",
-    "  - maj-maig (Mácha): VALIDADA 9/10",
-    "  - medea (Eurípides): NEEDS_FIX - qualitat 5.3/10",
-    "  - seleccio-20-poemes (Petőfi): VALIDADA 8/10",
-    "  - tres-peces-de-no (Zeami): NEEDS_FIX - incompleta"
-  ]
+  "timestamp": "2026-05-20T14:05:16.214250+00:00Z",
+  "validated_works": 47,
+  "needs_fix_works": 0,
+  "pending_tasks": 14,
+  "worker_active": true
 }

@@ -1,7 +1,1442 @@
 {
-  "traduccions": {},
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  "ultim_context": ": em vaig retirar dels negocis i vaig començar a prestar diners als lliberts. I a dir veritat, quan ja no volia continuar amb els negocis, em va encoratjar un astròleg que havia vingut per casualitat a la nostra colònia, un grecàs de nom Serapa, conseller dels déus. Em va dir fins i tot coses que jo havia oblidat; me les va desgranar totes fil per randa; coneixia les meves entranyes; gairebé l'únic que no em va dir era què havia sopat el dia abans. Hauríeu pensat que havia viscut sempre amb mi.»",
+  "timestamp": 1779289235.6822286,
+  "historial": [
+    {
+      "context": "## II.",
+      "timestamp": 1779199208.305022
+    },
+    {
+      "context": "p a Atenes i, com un astre pestilent, bufà sobre els ànims dels joves que s'alçaven vers les grans coses, i un cop corrompuda la norma, l'eloqüència s'aturà i emmudí. En resum, qui aconseguí després la fama de Tucídides, qui la d'Hipèrides? I ni tan sols cap poema brillà amb un color sa, sinó que tot, com si s'hagués nodrit del mateix aliment, no pogué emblanquir fins a la vellesa. La pintura tampoc no tingué un altre final, des que l'audàcia dels egipcis inventà el camí curt d'un art tan gran.»",
+      "timestamp": 1779199224.0376396
+    },
+    {
+      "context": "ovenets aproven, com diu Ciceró, \"sols quedaran a les escoles\". Igual que els aduladors de professió, quan van a la caça dels sopars dels rics, no mediten res amb tanta cura com allò que creuen que serà més grat als oients —car d'altra manera no obtindran el que busquen si no tendeixen alguna parany a les orelles—, de la mateixa manera el mestre d'eloqüència, si no posa a l'ham, com fa el pescador, aquell esquer que sap que els peixets aniran a picar, s'estarà a la roca sense esperança de pesca.",
+      "timestamp": 1779199234.593444
+    },
+    {
+      "context": "volguessin imitar, que es convencessin que no hi ha res de magnífic en allò que agrada als nens: aleshores aquella gran oratòria tindria el pes de la seva pròpia majestat. Ara, els nens juguen a les escoles, els joves fan el ridícul al fòrum, i el que és més vergonyós que totes dues coses: allò que cadascú ha après malament de petit, no vol confessar-ho en la vellesa. Però perquè no penseu que he menyspreat la improvisació de l'estil humil de Lucili, jo mateix expressaré en vers allò que sento:»",
+      "timestamp": 1779199246.4209538
+    },
+    {
+      "context": "c, deixi anar lliure les regnes,\ni brandeixi les armes poderoses de Demòstenes.\nQue l'envoli aleshores la mà romana, i, alleugerida\ndel so grec, tenyida, en canviï el sabor.\nQue de tant en tant la ploma, apartada del fòrum, prengui el vol,\ni ressoni la fortuna marcada per un curs veloç.\nQue donin festins i guerres cantades amb veu ferotge,\ni amenacin les paraules grandioses de l'indomable Ciceró.\nCenyeix l'ànim amb aquests béns: així, amb un riu abundant,\nple, vestiràs paraules del pit pieríac.»",
+      "timestamp": 1779199262.3287156
+    },
+    {
+      "context": " d'una declamació improvisada d'algú que havia agafat la suasòria d'Agamèmnon. Mentre els joves es reien de les sentències i posaven en ridícul l'ordre de tota la dicció, vaig aprofitar l'avinentesa per escolar-me'n i vaig començar a perseguir Ascilt a la carrera. Però no recordava bé el camí, perquè... ni sabia on era l'hostal. Així que, per on anava, per allà mateix tornava, fins que, esgotat de córrer i ja xop de suor, m'acosté a una velleta que venia verdures del camp i li vaig dir:\n\n## VII.",
+      "timestamp": 1779199272.0597174
+    },
+    {
+      "context": "rtivament entre rètols i meretrius nues. Tard, o més aviat massa tard, vaig comprendre que m'havien conduït a un bordell. Maleïdes les trampes de l'anciana, em vaig cobrir el cap i vaig començar a fugir a través del mig del lupanari cap a l'altra banda, quan vet aquí que a la mateixa entrada em va sortir a l'encontre Ascilt, igualment esgotat i mig mort: hauries dit que la mateixa velleta l'havia conduït allà. Em vaig riure i el vaig saludar, i li vaig preguntar què feia en un lloc tan indecent.",
+      "timestamp": 1779199284.0429046
+    },
+    {
+      "context": "costà a mi un pare de família i em prometé, molt amablement, de guiar-me. Llavors, havent-me fet travessar uns carrerons obscuríssims, em conduí fins a aquest lloc i, traient els diners, em demanà que me li lliurés. Ja la meretriu havia cobrat un as per la cambra, ja ell m'havia posat la mà a sobre, i si no hagués estat el més fort, n'hauria pagat les conseqüències. [...] fins al punt que arreu tothom em semblava que havia begut vi de sàtir [...] i unint les forces, menyspream l'importú.\n\n## IX.",
+      "timestamp": 1779199293.891082
+    },
+    {
+      "context": "que ni tan sols l'alè te'l tens net?» Ascilte va fingir que se li posava la pell de gallina, i tot seguit, aixecant les mans amb més força, va cridar amb un esforç molt més gran: «No calles, gladiador obscè, que l'arena va acomiadar de la ruïna? No calles, assassí nocturn, que ni aleshores, quan feies de valent, vas lluitar amb una dona honesta, de qui vaig ser germà al jardí de la mateixa manera que ara ets tu el noi a la fonda?» —«Tu et vas escapolir de la conversa amb el mestre», vaig dir jo.",
+      "timestamp": 1779199309.0274386
+    },
+    {
+      "context": "la seva banda de foragitar la pobresa. Tu saps de lletres i jo també. Per no ser un obstacle als teus negocis, em buscaré una altra cosa; altrament, mil raons ens enfrontaran cada dia i ens escamparan per tota la ciutat en forma de rumors.»\n\nAscilte no s'hi va negar i digué: «Avui, com que hem promès anar a sopar com a estudiants, no malbaratem la nit. Demà, però, ja que és el que em plau, em buscaré un allotjament i algun company.» —«És massa tard», vaig dir, «ajornar allò que ja s'ha decidit.»",
+      "timestamp": 1779199321.9402242
+    },
+    {
+      "context": " no havia acabat tot plegat quan Ascilte s'acostà furtivament a la porta i, havent forçat el forrellat amb tota la seva força, em trobà jugant amb el meu germà. Omplí la cambreta de rialles i aplaudiments, em destapà de la roba que em cobria i digué: «Què feies, germà santíssim? Què? Fas vida de caserna?» I no es va acontentar amb les paraules, sinó que desllorigà la corretja de la bossa i es posà a fuetejar-me de valent, afegint-hi també dites insolents: «Així no s'ha de repartir amb el germà.»",
+      "timestamp": 1779199334.8332672
+    },
+    {
+      "context": "s posà a examinar el mantell amb força deteniment. Ascilte, al seu torn, llançà una mirada als muscles del pagès comprador i, de sobte, s'immobilitzà i emmudí. I jo tampoc no vaig veure l'home sense cert neguit, perquè em semblava que era aquell que havia trobat la túnica en el descampat. Era ell, exactament. Però com que Ascilte no es fiava dels seus propis ulls i no volia fer res a la lleugera, s'acostà primer com si fos un comprador, li tragué la roba de les espatlles i la palpà amb més cura.",
+      "timestamp": 1779199348.7605784
+    },
+    {
+      "context": "calia anar amb rodeos sinó que s'havia de lluitar obertament per la via del dret civil, de manera que, si no volia tornar al propietari allò que era d'altri, hagués de comparèixer davant l'interdicte.\n\n## XIV.\n\nAscilte, en canvi, temia les lleis i deia: «Qui ens coneix en aquest lloc, o qui donarà crèdit al que diguem? A mi, francament, em sembla millor comprar-ho, per bé que sigui nostre i que ho reconeguem, i recuperar el tresor per uns quants diners, abans que endinsar-nos en un plet incert:»",
+      "timestamp": 1779199362.2186284
+    },
+    {
+      "context": "Què fan les lleis, allà on regna només el diner,\no allà on cap pobresa no pot vèncer?\nFins i tot els qui passen la vida amb la bossa cínica,\nde vegades acostumen a vendre la veritat per monedes.\nAixí doncs, el judici no és res més que una mercaderia pública,\ni el cavaller que seu en la causa, aprova allò que ha comprat.",
+      "timestamp": 1779199367.50143
+    },
+    {
+      "context": " agafàrem la túnica esquinçada i bruta i proclamàrem amb la mateixa indignació que allò que ells posseïen eren els nostres despulles. Però la causa no era de cap manera equivalent, i els marxants que havien acudit a l'enrenou es reien, com és costum, de la nostra indignació, atès que en defensa d'aquella part reivindicaven una peça de roba riquíssima, i en defensa de la nostra, un pedaç que no hauria valgut ni per a draps vells. Llavors Ascilte dissipà bé el riure, i, fent-se el silenci:\n\n## XV.",
+      "timestamp": 1779199381.269886
+    },
+    {
+      "context": "ltres volíem. I així l'atzar afavorí el desig de tots dos bàndols. Indignat el pagès perquè li exigíem que presentés el pedaç, el llançà a la cara d'Ascilte, i, alliberats de la disputa, ens ordenà que dipositéssim el mantell, que era l'única cosa que feia el plet, i, recuperat el tresor, com crèiem, ens precipitàrem cap a l'hostal, i, tancades les portes, començàrem a riure'ns de l'enginy no menys dels marxants que dels calumniadors, perquè amb una astúcia enorme ens havien retornat els diners.",
+      "timestamp": 1779199398.4999876
+    },
+    {
+      "context": "ol per terra, i les portes, obertes de sobte, deixaren passar qui entrava. Era una dona amb el cap cobert, i digué: «Creieu que us heu rigut de mi? Jo soc la serventa de Quartil·la, aquella el culte de la qual vosaltres heu profanat davant la cripta. Vet aquí que ella mateixa ve a la fonda i demana que li sigui permès parlar amb vosaltres. No us pertorbeu. No acusa el vostre error ni el castiga; ans al contrari, s'admira de quin déu ha portat uns joves tan refinats a la seva contrada.»\n\n## XVII.",
+      "timestamp": 1779199409.2944467
+    },
+    {
+      "context": "ò no em preocupo tant pel remei; car un dolor més gran em crema en les entranyes, que m'aboca fins a la necessitat de la mort: que vosaltres, arrossegats per la llicència juvenil, no divulgueu el que heu vist al santuari de Príap, i no traieu a la llum del poble els designis dels déus. Estenc, doncs, cap als vostres genolls les mans obertes, i us demano i us suplico que no feu befa ni riota dels ritus nocturns, i que no vulgueu trair els secrets de tants anys, que a penes coneixen mil persones.»",
+      "timestamp": 1779199429.5607495
+    },
+    {
+      "context": "au em recollí els cabells que em queien per les orelles i digué: «Faig les paus amb vosaltres, i us allibero del plet que tenia preparat. Però si no haguéssiu consentit en la medicina que us demano, ja tenia a punt per a demà una colla de gent que hauria venjat el meu greuge i defensat la meva dignitat:\n\nÉs vergonya ser menyspreat; és arrogància dictar la llei;\nestimo allò que puc: anar per on em plagui.\nCar fins el savi menyspreat teixeix querelles,\ni qui no degolla, sol marxar com a vencedor.»",
+      "timestamp": 1779199442.7705114
+    },
+    {
+      "context": "Llavors, tot batent les mans, esclatà de sobte en un riure tan fort que ens féu por. El mateix féu, a l'altra banda, la serventa que havia arribat primer, i el mateix la noieta que havia entrat amb ella.\n\n## XIX.\n\nTot havia ressonat amb un riure de farsa, mentre nosaltres, ignorants del que havia causat un canvi tan sobtat d'ànim, ens miràvem ara a nosaltres mateixos, ara les dones. <. . .>",
+      "timestamp": 1779199448.6069136
+    },
+    {
+      "context": "e gran cosa si volien intentar alguna cosa, enfront de nosaltres, que teníem, si no res més, el sexe masculí. I a més anàvem certament amb les túniques ben arromangades. Fins i tot jo ja havia disposat les parelles de tal manera que, si calia lluitar a fons, jo m'enfrontés amb Quartilla, Ascíltos amb la serventa, i Gitó amb la noieta. <. . .> Però aleshores tota la serenitat ens abandonà, atordits com estàvem, i la mort, sense cap dubte, començà a cobrir els ulls dels miserables. <. . .>\n\n## XX.",
+      "timestamp": 1779199458.950937
+    },
+    {
+      "context": "tava el fil de les bromes: —I jo, digué, no sóc digne de beure?\n\nL'esclava, delatada pel meu riure, es picà les mans i digué:\n\n—Sí que n'he posat: però tu, noi, t'has begut tot sol tanta medicina.\n\n—Ah, sí? —digué Quartilla—. Encolpi s'ha begut tot el que hi havia de sajolida?\n\nI es commogué de riure d'una manera no gens indecent. Fins i tot Gitó, al capdavall, no pogué aguantar el riure, sobretot quan la noieta li saltà al coll i li donà, sense que el noi s'hi resistís, una infinitat de petons.",
+      "timestamp": 1779199472.4689124
+    },
+    {
+      "context": " amb una agulla de pentinar mentre jo intentava invocar la protecció dels Quirits, i per l'altre la noieta oprimia Ascilte amb un pinzell que havia mullat també en sajolida. <. . .>\n\nFinalment aparegué un cinaede cobert amb una capa de llana peluda de murta i cenyit amb un cinturó... que ara ens colpejava amb les anques retorçades, ara ens embruttava amb petons pestilentíssims, fins que Quartilla, brandant una vara de balena i ben arromangada, ordenà que es donés llibertat als infeliços. <. . .>",
+      "timestamp": 1779199480.9682283
+    },
+    {
+      "context": "ables, ens inundàrem també de vi Falern. Servits encara amb nombrosos plats, quan ja ens lliscàvem cap al son: «¿Així és?», digué Quartilla. «¿Teniu intenció de dormir, sabent que es deu una vetlla al geni de Priap?» <. . .>\n\n## XXII.\n\nCom que Ascilte, aclaparat per tants mals, s'eslleneguia cap al son, aquella serventa que havia estat apartada amb un ultratge li fregà tota la cara amb un llarg tros de sutge, i li pintà els llavis i les espatlles amb petons adormidors, sense que ell se n'adonés.",
+      "timestamp": 1779199502.0639713
+    },
+    {
+      "context": "ar-la. Caigué també la taula amb tota la plata, i una copa que havia sortit disparada d'un cop de sort des del llit on jeia mig adormida una serventa li esclafà quasi el cap.\n\nAl cop d'aquell impacte, ella cridà, i d'un sol traç delatà els lladres i despertà una part dels borratxos. Aquells siris que havien vingut a fer el botí, en adonar-se que els havien enxampat, s'esfondraren de cop al costat del llit, com si s'hagués convingut d'antuvi, i es posaren a roncar com si fessin hores que dormien.",
+      "timestamp": 1779199515.4784377
+    },
+    {
+      "context": " afegiu-hi cursa, voleu de planta,\namb la cuixa fàcil, el maluc àgil i la mà atrevida,\ntous, vells, deliacs tallats per mà.\n\nAcabats els seus versos, m'embrutà amb un petó immundíssim. Aviat pujà també al llit i, fent ús de tota la seva força, em descobrí tot i que jo m'hi resistia. Sobre els meus engonals molí llarg temps i en va. Rajols de suc d'acàcia li queien per la front suada, i entre les arrugues de les galtes hi havia tanta creta que hauries dit que una paret pelada patia sota la pluja.",
+      "timestamp": 1779199530.2264123
+    },
+    {
+      "context": "rossà a gropes i a petons. Entretant, Gitó estava dret i es desfeien les seves entranyes de riure. Quartil·la, en veure'l, preguntà amb molt d'interès de qui era aquell noi. Com que jo li hagués dit que era el meu germà, digué: «Per què, doncs, no m'ha besat?» I, havent-lo cridat, l'estretà en un petó. Aviat li baixà la mà al si i, havent-li palpalat el membre tan tendre, digué: «Demà, aquest farà bon servei com a entremès de la nostra luxúria; que avui, després de l'ase, no prenc ració diària.»",
+      "timestamp": 1779199545.5878785
+    },
+    {
+      "context": "El capítol XXV del text llatí original no conté cap text addicional més enllà del títol de secció. No hi ha res a traduir.",
+      "timestamp": 1779199579.730127
+    },
+    {
+      "context": " conèixer el primer home? Que la meva Juno em sigui adversa si mai no recordo haver estat verge. Perquè ja de petita em vaig embrutar amb els meus iguals, i a mesura que anaven passant els anys m'anava aplicant a nois cada vegada més grans, fins que he arribat a l'edat que tinc. D'aquí crec que ha nascut aquell proverbi que diu que pot aixecar el bou qui ha portat el vedell.» Així doncs, perquè el meu germà no rebés una ofensa més gran en secret, em vaig aixecar per complir amb el deure nupcial.",
+      "timestamp": 1779199594.0682
+    },
+    {
+      "context": "cambra nupcial, i la Quartil·la, en primer lloc, havia acostat l'ull curiós per una escletxa descaradament eixamplada, i amb diligència libidinosa espiava el joc infantil. Amb mà suau m'arrossegà també a mi cap al mateix espectacle, i com que els rostres dels qui miraven s'havien ajuntat, tot allò que li quedava lliure de l'espectacle ho emprava a moure els llavis de passada, i m'anava colpejant de tant en tant amb petons furtius.\n\nLlançats als llits sense cap temor, passàrem la resta de la nit.",
+      "timestamp": 1779199607.1333947
+    },
+    {
+      "context": "a manera podríem esquivar la tempesta present, un esclau d'Agamèmnon interrompé els nostres neguits i digué: «Com? ¿No sabeu vosaltres a casa de qui és avui el sopar? Trimalció, un home d'allò més refinat. Té un rellotge al triclini i un trompeta preparat expressament, perquè sàpiga en tot moment quant de vida ha malbaratat!»\n\nEns vestim, doncs, amb cura, oblidats de tots els nostres mals, i ordenem al Gitó, que amb molt de gust exercia les funcions d'esclau, que ens seguís als banys.\n\n## XXVII.",
+      "timestamp": 1779199615.427746
+    },
+    {
+      "context": "i ens havien atret a l'espectacle, sinó el mateix pare de família, que jugava descalç de sandàlies amb una pilota de color verd. I no anava a recollir les que tocaven a terra, sinó que un esclau tenia un sac ple i n'anava proveint els jugadors. Observàrem també dues coses que ens cridaren l'atenció: dos eunucs estaven plantats a banda i banda del cercle; l'un sostenia un orinal de plata, l'altre comptava les pilotes —no pas les que voleiaven entre les mans en el joc, sinó les que queien a terra.",
+      "timestamp": 1779199625.7723653
+    },
+    {
+      "context": "Mentre admiràvem, doncs, aquells luxes, s'acostà corrents Menelau: «Aquest és», digué, «l'amfitrió a casa del qual sopareu, i de fet ja esteu veient el principi del sopar.» I encara no havia acabat de parlar Menelau quan Trimalció va fer petar els dits, senyal amb el qual un eunuc li posà l'orinal a sota mentre jugava. Alleugerida la bufeta, demanà aigua per a les mans, i els dits, tot just humitejats, se'ls eixugà al cap d'un noi.",
+      "timestamp": 1779199632.8389673
+    },
+    {
+      "context": "tge de mà on anava el seu capritx: un noi ja vell, lleganós, més lleig que el seu amo Trimalció. Mentre l'emportaven, doncs, un músic s'acostà al seu cap amb unes flautes molt petites i, com si li digués alguna cosa a cau d'orella, li anà cantant durant tot el trajecte.\n\nEl seguírem nosaltres, ja tips d'admiració, i amb Agamèmnon arribàrem a la porta, a un dels muntants de la qual hi havia fixat un cartell amb aquesta inscripció:\n\nTOT ESCLAU QUE SURTI FORA SENSE ORDRE DE L'AMO REBRÀ CENT ASSOTS.",
+      "timestamp": 1779199648.8132503
+    },
+    {
+      "context": "A l'entrada mateixa hi havia el porter, vestit de verd, cenyit amb un cinturó color cirera, que pelava pèsols en una safata de plata. Per damunt del llindar penjava una gàbia daurada on una garsa de colors saludava els qui entraven.\n\n## XXIX.",
+      "timestamp": 1779199654.0359004
+    },
+    {
+      "context": "es tres Parques filant els seus fils d'or. Vaig notar també al pòrtic un grup de corredors que s'entrenaven amb el seu mestre. A més, vaig veure en un racó un gran armari, dins la capelleta del qual hi havia els Lares de plata, una figura de Venus en marbre i una capseta d'or de bon tamany, on deien que es guardava la barba del mateix Trimalció. Vaig començar, doncs, a preguntar a l'atriense quines eren les pintures del mig. «La Ilíada i l'Odissea», va dir, «i el combat de gladiadors de Làinat.»",
+      "timestamp": 1779199669.8073616
+    },
+    {
+      "context": "L DIA 3 I L'ENDEMÀ DE LES CALENDES DE GENER, EL NOSTRE C. SOPA FORA DE CASA*; l'altra, el curs de la lluna i les imatges pintades dels set astres; i els dies favorables i els desfavorables s'hi distingien marcats amb una boleta.\n\nSadollats d'aquests plaers, quan intentàvem entrar al triclini, un dels esclaus que estava destinat a aquell servei va cridar: «Amb el peu dret!» Sens dubte ens vam quedar una mica perplexos, no fos cas que algun de nosaltres traspassés el llindar contra la prescripció.",
+      "timestamp": 1779199681.8934264
+    },
+    {
+      "context": "un client m'havia regalat per al meu aniversari —de porpra de Tir, sens dubte, però ja rentada una vegada—. Bé, doncs, us el regalo.»\n\n## XXXI.\n\nObligats per tan gran favor, quan vam entrar al triclini, ens va sortir a l'encontre aquell mateix esclau pel qual havíem intercedut, i, mentre nosaltres quedàvem bocabadats, ens va cobrir de petons molt seguits donant-nos les gràcies per la nostra bondat. «En fi», va dir, «aviat sabreu a qui heu fet el favor. El vi del senyor és la gràcia del cambrer.»",
+      "timestamp": 1779199694.7952392
+    },
+    {
+      "context": " gelada a les mans i d'altres s'afanyaven als nostres peus a treure'ns les durícies amb una habilitat extraordinària. I ni tan sols en aquella tasca tan feixuga no callaven, sinó que cantaven de passada. Vaig voler comprovar si tota la servitud cantava, i vaig demanar una beguda. Un esclau molt diligent em va rebre amb un càntic no menys estrident, i el mateix feia qualsevol altre a qui se li demanava alguna cosa. Hauries dit que eres en el cor d'un pantomim, no al triclini d'un pare de família.",
+      "timestamp": 1779199702.5757995
+    },
+    {
+      "context": "es reservava el lloc d'honor. A la safata dels entremesos hi havia un ase de bronze de Corint amb una doble alforja, que duia olives blanques a un costat i negres a l'altre. Cobrien l'ase dues safates, a les vores de les quals hi havia inscrit el nom de Trimalció i el pes de la plata. Hi havia també uns ponts soldats que sostenien llirins de bosc ruixats de mel i rosella. I encara salsitxes fumejants posades sobre una graella de plata, i a sota de la graella prunes de Síria amb grans de magrana.",
+      "timestamp": 1779199710.5650105
+    },
+    {
+      "context": " al voltant del coll carregat de roba havia llençat una tovallola de franja ampla amb borles que li penjaven d'un costat i de l'altre. Duia també al dit petit de la mà esquerra un anell gran daurat per fora, i a l'última falange del dit següent un altre de més petit que, segons em semblava, era tot d'or, però sembrat d'estreletes de ferro soldades. I per no exhibir tan sols aquestes riqueses, descobrí el braç dret, adornat amb una polsera d'or i un cercle d'ivori unit per una làmina resplendent.",
+      "timestamp": 1779199721.0286818
+    },
+    {
+      "context": "Mentre es treia les restes de menjar de les dents amb un escuradents de plata, digué: «Amics, encara no em venia de gust venir al triclini, però per no fer-vos esperar més amb la meva absència, m'he privat de tot plaer. Permeteu-me, però, que acabi la partida.» El seguia un noi amb un tauler de fusta de terebint i fitxes de cristall, i vaig reparar en quelcom d'una refinada elegància: en lloc de fitxes blanques i negres, feia servir denaris d'or i de plata.",
+      "timestamp": 1779199730.9439957
+    },
+    {
+      "context": "iguin fecundats. Provem-ho, però, a veure si encara es poden xuclar.» Agafàrem unes culleres que pesaven no menys de mitja lliura i foradàrem uns ous modelats amb pasta de farina greixosa. Jo, de fet, gairebé vaig llençar el meu, perquè em semblava que ja s'havia format un pollet. Però en sentir un comensal experimentat que deia: «Aquí hi ha d'haver alguna cosa bona», vaig continuar trencant la closca amb la mà i hi vaig trobar una grassíssima becfiga envoltada de rovell de ou pebrat.\n\n## XXXIV.",
+      "timestamp": 1779199744.461033
+    },
+    {
+      "context": "ajordom i començà a escombrar la plata juntament amb la resta de les deixalles. Aleshores entraren dos etíops de cabells llargs amb uns odrets petits, com els que solen portar els qui escampen sorra a l'amfiteatre, i serviren vi a les mans; car ningú no oferia aigua.\n\nEl senyor, lloat per la seva elegància, digué: «Mart estima la igualtat. Per això he manat que s'assigni a cadascú la seva pròpia taula. A més, els esclaus més pestilents, amb la seva presència, ens faran suportar millor la calor.»",
+      "timestamp": 1779199757.9798286
+    },
+    {
+      "context": " admiràvem amb tot detall aquelles magnificències, un esclau portà un esquelet d'argent, construït de tal manera que les articulacions i les vèrtebres, totes soltes, es podien doblegar en qualsevol direcció. Com que l'hagué llançat sobre la taula una vegada i una altra, i la cadena mòbil adoptava diverses postures, Trimalció afegí:\n\nAi, pobres de nosaltres, com no és res de res el pobre home!\nAixí serem tots, quan l'Orco ens haurà endut.\nVisquem, doncs, mentre ens és donat de viure bé.\n\n## XXXV.",
+      "timestamp": 1779199769.448822
+    },
+    {
+      "context": " sobre l'Escorpí, un peixet de mar; sobre el Sagitari, un lluç; sobre el Capricorn, una llagosta de mar; sobre l'Aquari, un ànec; sobre els Peixos, dos molls. Al mig, un tros de gespa amb herbes sostenia un rusc. Un noi egipci portava pa en un forn d'argent. I el mateix Trimalció, amb una veu horrorosa, s'arrencà a cantar una cançoneta del mim del Làser. Com que ens acostàrem als menjars tan vulgars amb una certa tristesa, ell digué: «Us aconsello que mengem; això és el que fa un sopar com cal.»",
+      "timestamp": 1779199782.5580592
+    },
+    {
+      "context": " hauries dit que era un gladiador de carro combatent al so d'un orgue hidràulic. Trimalció, tanmateix, no parava de repetir amb veu molt pausada: «Carpe! Carpe!» Jo, sospitant que aquella paraula tan repetida amagava algun acudit, no em vaig avergonyir de preguntar-ho al qui jeia al costat meu. I ell, que havia presenciat aquella mena de jocs moltes vegades, em digué: «Veus aquell que trinxa el menjar? Es diu Carpus. Així, cada vegada que diu *carpe*, amb la mateixa paraula l'anomena i li mana.»",
+      "timestamp": 1779199796.4844267
+    },
+    {
+      "context": "No hi ha text llatí per traduir al capítol XXXVII: el bloc de codi només conté l'encapçalament `## XXXVII.` sense cap contingut. Proporciona el text llatí i el traduiré de seguida.",
+      "timestamp": 1779199834.0686214
+    },
+    {
+      "context": ", sobria, de bon consell: ja veus quant d'or. Ara bé, té mala llengua, és una garsa de coixí. A qui estima, l'estima; a qui no estima, no l'estima. El mateix Trimalció té finques fins allà on volen els milans, i diners a caramulls. La plata que jau al rebost del seu porter és més del que qualsevol té en tota la seva fortuna. La servitud, en canvi —vaja, vaja!— no crec, per Hèrcules, que ni la desena part conegui el seu amo. En resum, a qualsevol d'aquests babaus el ficaria en una fulla de ruda.»",
+      "timestamp": 1779199848.5814524
+    },
+    {
+      "context": "Retorna el text buit — el segment **XXXVIII** del llatí que has inclòs no conté cap text, només l'encapçalament del capítol.\n\nProporciona el cos del text llatí del capítol XXXVIII i el traduiré de seguida.",
+      "timestamp": 1779199915.093391
+    },
+    {
+      "context": "pareixen. I quin negoci tan honorable exercia, per veure'l com el veus ara! Era empresari de pompes fúnebres. Solia sopar com un rei: senglars coberts amb capa de llana peluda, pastisseria fina, ocells, cuiners, forners. Sota la taula s'abocava més vi del que alguns en tenen al celler. Una fantasia, no un home. Quan les seves coses ja s'inclinaven, com que temia que els creditors el creguessin en fallida, va penjar aquest anunci per a la subhasta: C. JULI PRÒCUL FARÀ SUBHASTA DE BÉNS SUPERFLUS.»",
+      "timestamp": 1779199941.0837753
+    },
+    {
+      "context": "## XXXIX.\n\nTrimalció va interrompre aquelles converses tan agradables; car ja s'havia retirat el plat, i els comensals, alegres, s'havien posat a gaudir del vi i dels parlaments que s'anaven fent públics. Ell, doncs, recolzat sobre el colze, digué: «Aquest vi, heu de fer-lo vostre amb gust: els peixos han de nedar. Us demano, creieu que em conformo amb aquell sopar que havíeu vist a la coberta de la safata de servei?\n\n*Així es coneix Ulisses?*",
+      "timestamp": 1779199947.6371708
+    },
+    {
+      "context": "iren les verdures i s'emporten el llard; sota Capricorn, els desgraciats, als quals els neixen banyes a causa dels seus mals; sota Aquari, els taverners i les carabasses; sota Peixos, els cuiners i els rètors. Així gira el món com una mola, i sempre fa algun mal, de manera que els homes o neixen o moren. I allò que veieu al mig, el terròs, i sobre el terròs el bresc, no ho faig pas sense raó. La terra és la mare, rodona com un ou al mig de tot, i conté en si mateixa tots els béns, com un bresc.»",
+      "timestamp": 1779199968.8391726
+    },
+    {
+      "context": "us aquí que uns gossos laconis es posaren a córrer al voltant de la taula. Els seguí una safata de servei sobre la qual hi havia un senglar de primera magnitud, i ben cofat amb un barret, dels ullals del qual penjaven dues cistelletes teixides de palma, una plena de dàtils de Caria i l'altra de dàtils de Tebes. Al voltant, uns porcells petits fets de pasta de mel, com si s'enfilassin a les mamelles, indicaven que allò que hi havia era una truja. I aquests, en efecte, eren per emportar-se a casa.",
+      "timestamp": 1779199979.9943464
+    },
+    {
+      "context": "senglar, i del tall en sortiren volant uns tords. Uns caçadors preparats amb les seves canyes eren a punt, i en un tres i no res els agafaren mentre voltaven pel triclini. Aleshores, havent ordenat que a cadascú li fossin servits els seus, Trimalció afegí: «Fixeu-vos també en quina aglà tan neta s'ha menjat aquell porc senglar.» De seguida els minyons s'acostaren a les cistelletes que penjaven dels ullals, i repartiren entre els comensals, en la mesura justa, dàtils de Tebes i de Caria.\n\n## XLI.",
+      "timestamp": 1779199989.9314647
+    },
+    {
+      "context": " conjectures, em vaig armar de valor per preguntar al meu intèrpret allò que em turmentava. I ell: «Fins i tot això, el vostre servent ho pot explicar perfectament: no és cap endevinalla, sinó una cosa ben clara. Aquest porc senglar, com que ahir al final del sopar els comensals l'havien deixat anar, va ser acomiadat del banquet; i per això avui hi torna, com un llibert.» Vaig condemnar la meva pròpia estupidesa i no vaig preguntar res més, per no semblar que mai no havia sopat entre gent de bé.",
+      "timestamp": 1779199998.0275967
+    },
+    {
+      "context": "ixecà per anar al lavabo. Nosaltres, que ens havíem vist lliures del tirà, comencem a animar la conversa entre els comensals.\n\nDama, doncs, fou el primer a demanar una copa gran i digué: «El dia no és res. Quan et gires, ja és de nit. Així que no hi ha res millor que anar directament de la cambra al triclini. I hem tingut un fred de debò. Amb prou feines m'ha escalfat el bany. Però una beguda calenta és com un abric. He apurat unes copes ben plenes i estic ben begut. El vi se m'ha pujat al cap.»",
+      "timestamp": 1779200011.035253
+    },
+    {
+      "context": " fer companyia als morts. Els metges l'han perdut, o millor dit, la mala sort; perquè el metge no és altra cosa que un consol per a l'ànima. De tota manera, bon enterrament va tenir: llit de gala, draps bons. El plany va ser de primera — va alliberar uns quants esclaus — tot i que la dona el va plorar de mala gana. I si no l'hagués tractada tan bé! Però la dona que és dona, és de la raça dels milans. No cal fer cap bé a ningú; és com si ho tiressis a un pou. Però un amor antic és com un càncer.»",
+      "timestamp": 1779200026.0502124
+    },
+    {
+      "context": "El text original del capítol XLIII és buit — no conté cap frase llatina per traduir, només l'encapçalament del capítol.\n\nSi vols, proporciona el text llatí del capítol XLIII i el traduiré de seguida.",
+      "timestamp": 1779200060.8569632
+    },
+    {
+      "context": "és donat, és donat, no a qui és destinat. Un fill de la Fortuna, sens dubte. En les seves mans el plom es tornava or. Però és fàcil quan tot roda rodó. I quants anys creus que s'ha emportat? Setanta i escaig. Però era dur com el corn, portava bé l'edat, negre com un corb. Jo el coneixia d'antic, i encara era salat. Per Hèrcules, no crec que deixés cap gos a casa. I és que era aficionat a les noies, un home de totes les Minerves. No me'n faig retret, perquè això és l'únic que s'ha endut amb ell.»",
+      "timestamp": 1779200079.8453407
+    },
+    {
+      "context": "El text original del capítol XLIV és buit (només conté el títol de secció sense cos de text). No hi ha res a traduir.",
+      "timestamp": 1779200113.7410762
+    },
+    {
+      "context": "onsidera el cel com a cel, ningú no guarda el dejuni, ningú no fa ni un pèl de cas de Júpiter, sinó que tothom, amb els ulls tancats, compta el que té. En altre temps, les dones amb estola anaven descalces pel turó, amb els cabells esparsos, el cor pur, i demanaven l'aigua a Júpiter. I aleshores plovia a bots i barrals, tot seguit: o llavors o mai, i tothom reia xop com rates. I ara els déus tenen els peus embolcallats en llana, perquè nosaltres no som religiosos. Els camps resten abandonats...»",
+      "timestamp": 1779200144.2030098
+    },
+    {
+      "context": "El text original del capítol XLV és buit (només conté l'encapçalament `## XLV.` sense cos de text). No hi ha res a traduir en aquest fragment.",
+      "timestamp": 1779200182.3679416
+    },
+    {
+      "context": "ts de llum d'oli; els hauries pres per galls de corral: l'un un burdubasta, l'altre coix, el tercer mort per mort, que tenia els tendons tallats. [12] Un sol hi havia de certa empenta, el traci, i aquell mateix va lluitar a la lletra. En resum, tots van ser esquarterats després; tant havien rebut crits d'«Atureu-los!» de la gran gentada: pura fugida, tot plegat. [13] «Tanmateix, diu, t'he donat un espectacle — i jo t'aplaudeixo.» Fes comptes, i et dono més del que he rebut. Una mà renta l'altra.",
+      "timestamp": 1779200213.075913
+    },
+    {
+      "context": "## XLVI.",
+      "timestamp": 1779200214.5831397
+    },
+    {
+      "context": "etres ja n'ha tastat prou. I si s'hi resisteix, tinc pensat fer-lo aprendre un ofici: o barber, o pregoner, o si més no advocat, que és el que ni l'Orco li pot prendre. [8] Per això cada dia li crido: «Primigeni, creu-me, tot el que aprens, ho aprens per a tu. Mira Fileron l'advocat: si no hagués estudiat, avui no podria allunyar la fam dels llavis. Fa ben poc, fa ben poc, portava al coll mercaderies per vendre; ara fins i tot s'enfronta a Norbà.» Les lletres són un tresor, i l'ofici no mor mai.",
+      "timestamp": 1779200236.477939
+    },
+    {
+      "context": "El text original del capítol XLVII és buit (només conté el títol de secció). No hi ha res a traduir.",
+      "timestamp": 1779200270.348436
+    },
+    {
+      "context": "tens el costum de privar-me del son a la nit! Però jo, en el triclini, no prohibeixo a ningú de fer allò que li convé; i els metges desaconsellen de retenir-se. O si ve alguna cosa de més, tot és a punt a fora: aigua, orinals i altres estris. Cregueu-me, si la flatulència puja al cervell, fa onades per tot el cos. Sé de molts que han mort per no voler dir-se la veritat a si mateixos.» Li agraïm la seva generositat i indulgència, i entre tant, a força de brindis repetits, anem reprimint el riure.",
+      "timestamp": 1779200284.6593115
+    },
+    {
+      "context": "uit manà cridar el cuiner, i sense esperar la nostra elecció, ordenà que matessin el més vell, i amb veu forta li preguntà: «De quina decúria ets?» Com el cuiner respongués que era de la quarantena: «Ets comprat o nascut a casa?» «Cap de les dues coses», digué el cuiner, «em deixà per a tu el testament de Pansa.» «Mira, doncs», li digué, «de servir-lo amb cura; si no, et faré llençar a la decúria dels missatgers.» I el cuiner, recordat del poder del seu amo, se n'anà a la cuina amb la seva peça.",
+      "timestamp": 1779200300.3272133
+    },
+    {
+      "context": " és veïna dels de Tarracina i dels de Tàrent. Ara vull unir-hi uns quants trossets de Sicília, de manera que quan em vingui de gust anar a l'Àfrica, pugui navegar per terres meves. Però explica'm tu, Agamèmnon, quina controvèrsia has declamat avui? Jo, tot i que no porto causes, he après les lletres per a ús domèstic. I perquè no creguis que tinc les lletres en menyspreu, tinc tres biblioteques: una de grega, una altra de llatina. Digues, doncs, si m'estimes, la peristasi de la teva declamació.»",
+      "timestamp": 1779200309.850919
+    },
+    {
+      "context": " passat, no és res.» Mentre l'acompanyàvem amb els elogis més efusius, ell i tot allò, digué: «Et prego, Agamèmnon estimadíssim, recordes les dotze fatigues d'Hèrcules, o la història d'Ulisses, com el Cíclop li va arrencar el polze amb una pinça de porc? De petit jo solia llegir aquestes coses al camp. I la Sibil·la de Cumes, jo mateix la vaig veure amb els meus propis ulls, penjada dins d'una ampolla; i quan els nois li deien: \"Sibil·la, ti thelis?\", ella responia: \"apothanin thelo\"».\n\n## XLIX.",
+      "timestamp": 1779200320.6201432
+    },
+    {
+      "context": "ent: qui s'oblidaria d'esbuidar un porc? Per Hèrcules que no li perdonaria, si hagués passat per alt un peix.» Però Trimalció no era del mateix parer, i amb el rostre relaxat en un somriure: «Doncs», digué, «ja que tens tan mala memòria, esbuda'l aquí davant nostre.» El cuiner, recobrada la túnica, va agafar el ganivet i va obrir el ventre del porc d'una banda i de l'altra amb mà tremolosa. I de seguida, de les incisions que s'anaven eixamplant pel pes, en van relliscar botifarra i llonganisses.",
+      "timestamp": 1779200337.6133237
+    },
+    {
+      "context": "nt. Quan Troia fou presa, Anníbal, home astut i gran bergant, va aplegar totes les estàtues de bronze, d'or i de plata en una sola pira i hi va calar foc; i van fondre's en un sol metall barrejat. Així, d'aquesta massa, els artesans en van treure i van fer plats, safates i figuretes. Així va néixer el bronze de Corint: de tot barrejat en un, ni una cosa ni l'altra. Perdoneu-me si ho dic: jo prefereixo el vidre, que almenys no fa olor. I si no es trenqués, el preferiria a l'or; ara bé, és barat.»",
+      "timestamp": 1779200351.5319293
+    },
+    {
+      "context": "l cap: perquè, si s'hagués sabut, hauríem tingut l'or per fang.\n\n## LII.\n\n«En plata, és clar, sóc un gran aficionat. Tinc copes de la mida d'una urna, cent, poc més o menys... es veu com la Cassandra mata els seus fills, i els nois morts hi jauen de tal manera que els creuríeu vius. Tinc una tassa que em va deixar un dels meus patrons, on Dèdal tanca la Níobe dins del cavall de Troia. I les baralles d'Hermeros i de Petraites les tinc en copes, tot de pes; el meu gust, no el venc per cap diners.»",
+      "timestamp": 1779200364.6013358
+    },
+    {
+      "context": "pregàries, li va concedir la gràcia. El noi, alliberat, va córrer al voltant de la taula. I Trimalció va cridar: «L'aigua fora, el vi a dins!» Vam acollir la gràcia del seu acudit, i sobretot Agamèmnon, que sabia ben bé amb quins mèrits se'l tornava a convidar a sopar. Per la seva banda, Trimalció, encoratjat pels elogis, va beure amb més alegria i, ja a punt de ser borratxo, digué: «Ningú de vosaltres no li demana a la meva Fortunata que balli? Creieu-me: ningú no fa el còrdax millor que ella.»",
+      "timestamp": 1779200376.0062382
+    },
+    {
+      "context": "I ell mateix, amb les mans alçades per sobre del front, imitava l'histrió Siri mentre tota la família entonava el cor: «madeia perimadeia.» I hauria sortit al mig de la sala, si la Fortunata no s'hi hagués acostat a cau d'orella; i crec que li devia dir que no escaïa a la seva dignitat fer aquelles bajocades tan vulgars. Però no hi havia res tan inconstant com ell: ara temia la seva Fortunata, ara tornava a la seva natura.",
+      "timestamp": 1779200382.4578757
+    },
+    {
+      "context": "finca que em sigui comprada, si no en tinc notícia abans de sis mesos, ordeno que no s'inscrigui en els meus comptes.» Ja es llegien també els edictes dels edils i els testaments dels guardaboscos, en els quals Trimalció era desheretat amb tot de considerands; ja els noms dels majordoms, i el d'una lliberta repudiada per un inspector, sorpresa al llit amb un banyista, i el de l'atriense desterrat a Baies; ja el de l'administrador processat, i la sentència dictada en un litigi entre els cambrers.",
+      "timestamp": 1779200397.4082263
+    },
+    {
+      "context": "capdamunt, que travessés uns cercles encesos i que sostingués una àmfora amb les dents. Trimalció era l'únic que s'admirava d'aquelles coses, i deia que era un art ingrat: que, per la seva banda, dues eren les coses en la vida humana que veia amb més plaer, els acròbates i els tocadors de corn; la resta, animals, músics, bajanades de cap a cap. «Perquè jo», digué, «també havia comprat còmics, però vaig preferir que fessin atel·lana, i al meu flautista li vaig manar que cantés en llatí.»\n\n## LIV.",
+      "timestamp": 1779200405.7051172
+    },
+    {
+      "context": " que s'havia oblidat de buidar el porc. Així que vaig començar a escrutar tot el triclini, no fos cas que per la paret sortís algun mecanisme automàtic, sobretot quan van començar a assotar l'esclau que havia embolcallat el braç contusionat del seu amo amb llana blanca en lloc de porpra. I la meva sospita no va errar gaire: en lloc del càstig, va arribar el decret de Trimalció, pel qual manava que el noi fos lliure, perquè ningú no pogués dir que un home tan gran havia estat ferit per un esclau.",
+      "timestamp": 1779200421.885092
+    },
+    {
+      "context": "ar el següent:\n\n«Allò que no esperes, arriba de través,\ni la Fortuna gestiona els nostres afers des de dalt:\nper això, noi, dóna'ns vi del Falern.»\n\nA partir d'aquest epigrama va sorgir el tema dels poetes, i durant una bona estona la palma de la poesia va romandre en mans de Mopsos el Traci, fins que Trimalció digué: «Us ho demano, mestre, quin creis que és la diferència entre Ciceró i Publilius? Jo penso que l'un era més eloqüent, i l'altre, més honrat. Perquè, què es pot dir millor que això?»",
+      "timestamp": 1779200434.788468
+    },
+    {
+      "context": ", senyal de l'estació tèbia,\ntot just ha fet el niu de la seva maldat dins l'olla.\nPer a què et serveixen les perles cares, la baia de l'Índia?\nPotser perquè la matrona, enjoiada amb joies marines,\nalcés els peus, indòmita, sobre un llit estranger?\nPer a què la maragda verda, el vidre preciós?\nPer a què desitges les pedres de foc de Cartago?\nSi no és perquè la probitat brilli com els carboncles?\nÉs just que la núvia es vesteixi de vent teixit,\nque s'exhibeixi nua en públic dins una boira de lli?",
+      "timestamp": 1779200446.1550853
+    },
+    {
+      "context": "rar carn d'ànec; el canvista, que veu el coure a través de la plata. Les bèsties mudes més laborioses són els bous i les ovelles: els bous, gràcies als quals mengem pa; les ovelles, perquè la seva llana ens fa anar galants. I és una vergonya indigne que algú mengi carn de moltó i tingui una túnica. Les abelles, en canvi, les tinc per bèsties divines, perquè vomiten mel, encara que es digui que la porten de part de Júpiter. Per això piquen, perquè allà on hi ha dolçor, hi trobaràs també amargor.»",
+      "timestamp": 1779200456.72358
+    },
+    {
+      "context": "a de fòrum»: rebé un tros de carn i unes tauletes. «Canal i peu»: portaren una llebre i una sandàlia. «Morena i carta»: rebé un ratolí lligat a una granota i un manat de bledes. Riem molt estona. N'hi hagué sis-centes de semblants, que ja se m'han esborrat de la memòria.\n\n## LVII.\n\nPerò Ascilt, d'una llicència desmesurada, com que es burlava de tot alçant les mans i reia fins a les llàgrimes, un dels conllibertats de Trimalció s'encengué de ràbia —aquell mateix que estava reclinat damunt meu— i:",
+      "timestamp": 1779200469.8598437
+    },
+    {
+      "context": ". I vaig arribar a aquesta colònia de nen, amb els cabells llargs; la basílica encara no estava construïda. Però vaig posar-me a treballar per satisfer el meu senyor, un home majestuós i digne, la ungla del qual valia més que tu sencer. I tenia a casa qui em posava la cama a tot arreu; però —gràcies al seu geni!— vaig saber nedar i sortir-me'n. Aquests sí que són veritables mèrits; perquè néixer lliure és tan fàcil com dir \"vine aquí\". I ara, per què et quedes parat com un boc enmig dels veces?»",
+      "timestamp": 1779200498.6462862
+    },
+    {
+      "context": "El text original del capítol LVIII és buit (només conté el títol de secció «## LVIII.» sense cos de text). No hi ha res a traduir.\n\nSi tens el text llatí del capítol LVIII, envia'l i el traduiré de seguida.",
+      "timestamp": 1779200534.2257795
+    },
+    {
+      "context": " encara que tinguis una barba d'or. Ja me n'encarregaré que Atena s'enfadi amb tu, i amb qui et va fer primer la seva joguina. Jo no he après geometria, ni crítica, ni cançonetes sense cap ni peus, però sé les lletres dels picapedrers, sé dividir en cent parts, a pes, a mesura, a moneda. En resum, si vols alguna cosa, tu i jo fem una petita aposta: surt, que poso la plata sobre la taula. Ja veuràs que el teu pare ha malbaratat els diners en el teu ensenyament, tot i que saps retòrica. Vet aquí:»",
+      "timestamp": 1779200555.709218
+    },
+    {
+      "context": "fit faci i tan bona mort tingui com el poble jura per la meva mort, si no t'he perseguit per tot arreu amb la toga del revés. Bonica cosa és també aquell que t'ensenya això: un babau, no un mestre. Nosaltres ho vam aprendre d'una altra manera. Perquè el mestre deia: «Estan les vostres coses a bon recapte? Dret a casa. Compte de mirar enrere, compte de maleir el qui és més gran.» Però ara tot és un garbuix: ningú no en surt per dos asos. Jo, que em veus així, dono gràcies als déus pel meu ofici.»",
+      "timestamp": 1779200568.7238443
+    },
+    {
+      "context": " muller a Aquil·les. Per aquesta raó Àiax s'entorna boig, i de seguida explicarà l'argument.» Tan bon punt digué això Trimalció, els acròbates llançaren un gran crit, i enmig dels esclaus que corrien d'un costat a l'altre fou portat en una safata de dos-cents un vedell bullit amb casc. El seguí Àiax, que amb l'espasa desembeinada, com si estigués boig, el trinxà, i gesticulant ara d'un costat ara de l'altre, recollí els trossos amb la punta de la fulla i els repartí entre els comensals admirats.",
+      "timestamp": 1779200586.7465835
+    },
+    {
+      "context": "ar d'un bot, i vaig témer que algun acròbata baixés a través del sostre. No menys que jo, els altres comensals, plens d'estupor, alçaren els ulls esperant quin prodigi nou els seria anunciat des del cel. I vet aquí que, oberts els panells del sostre, de cop i volta és abaixat un enorme cercle —arrencat, és clar, d'una gran bóta—, al voltant del qual penjaven corones d'or amb ampolles d'alabastre plenes de perfum. Mentre ens manaven de prendre aquells regals, em vaig girar cap a la taula <. . .>.",
+      "timestamp": 1779200595.8781526
+    },
+    {
+      "context": "t, pare de la pàtria, salut i prosperitat!». Tanmateix, com que alguns, fins i tot després d'aquesta veneració, s'apoderaven de les fruites, nosaltres també n'omplírem les tovalloles, jo sobretot, que no creia poder carregar prou la falda de Gitó amb cap regal massa generós.\n\nEntretant, entraren tres nois cenyits amb túniques blanques, dos dels quals posaren sobre la taula els Lares amb les seves bulles, mentre l'altre, fent circular una pátera de vi, cridava: «Que els déus ens siguin propicis!»",
+      "timestamp": 1779200609.59694
+    },
+    {
+      "context": "n cert com que vull veure'm feliç, explica allò que et va passar.» Niceros, encantat per l'afabilitat de l'amic, digué: «Que em passi per alt tot guany si no estic a punt d'esclatar de goig des de fa estona, veient-te tal com ets. Que sigui tot alegria, doncs, encara que em fa por que aquests saberuts es riguin de mi. Que s'ho mirin: ho explicaré igualment, perquè, al cap i a la fi, què em treu qui es riu? Més val ser objecte de riure que de burla.»\n\nDit això,\ns'engegà a contar aquesta història:",
+      "timestamp": 1779200621.47555
+    },
+    {
+      "context": "mer ordre. Però jo, per Hèrcules, no me'n vaig preocupar per la carn ni per les coses de Venus, sinó més aviat perquè era una bona persona. Si li demanava alguna cosa, mai no me la negava; feia un as, jo en tenia la meitat; el que li confiava al seu si, mai no em va decebre. El company de casa seva va morir a la vil·la el darrer dia de la seva vida. Així que vaig fer mans i mànigues per trobar la manera d'arribar fins a ella: perquè, com diuen, en els moments difícils és quan es veuen els amics.",
+      "timestamp": 1779200630.0060983
+    },
+    {
+      "context": "a llum del dia vaig fugir cap a casa del nostre Gai com un hostaler que li han robat el local; i quan vaig arribar al lloc on s'havia tornat de pedra la roba, no hi vaig trobar res més que sang. Quan vaig arribar a casa, el meu soldat jeia al llit com un bou, i el metge li curava el coll. Vaig entendre que era un home-llop, i des d'aleshores no vaig poder menjar pa amb ell, ni que m'haguessin matat. Que cadascú en pensi el que vulgui; jo, si menteixo, que els vostres genis se m'emportin la ira.»",
+      "timestamp": 1779200654.4512649
+    },
+    {
+      "context": "Quan tothom va quedar parat d'admiració, Trimalció digué: «Amb el permís del teu relat, Niceros, si hi ha alguna credibilitat en el que dius, se m'han posat els cabells de punta, perquè sé que Niceros no explica mai bajanades: és un home de paraula i gens xerraire. I jo mateix us explicaré una cosa horrible. Un ase damunt les teules.»",
+      "timestamp": 1779200659.7240624
+    },
+    {
+      "context": " al nostre deure, però mentre la mare abraçava el cos del seu fill, el toca i veu un ninot de palla. No tenia cor, no tenia entranyes, no tenia res de res: és clar, les estriges ja s'havien endut el noi i n'havien posat un substitut de palla. Us ho demano, heu de creure-ho: hi ha dones que saben massa, hi ha les Nocturnes, i el que és a dalt ho giren cap avall. Per la resta, aquell home alt, després d'aquest fet, mai més va recuperar el seu color, i fins i tot al cap de pocs dies va morir boig.»",
+      "timestamp": 1779200680.7899487
+    },
+    {
+      "context": "que tot el triclini havia canviat, quan Trimalció digué: «Et parlo a tu, Plocam: no expliques res? No ens dones cap alegria? I abans eres més agradable, cantussejar bé les rèpliques, afegir-hi una cançoneta. Ai, ai, s'han acabat les figues dolces!» — «Ja fa temps», digué aquell, «que el meu carro ha acabat la cursa, des que em va agafar la gota. D'altra banda, quan era jove, cantant gairebé em vaig tornar tísic. Ballar? Rèpliques? La barberia? Quan vaig tenir un igual, si no és un sol Apel·les?»",
+      "timestamp": 1779200690.293243
+    },
+    {
+      "context": "el noi i li va manar que li pujés a sobre l'esquena. Sense fer-se pregar, el noi es va servir del cavall, i amb la mà plena li anava colpejant les espatlles sense parar, i enmig del riure va cridar: «Boc, boc, quants n'hi ha aquí?» Refrenat, doncs, una estona, Trimalció va manar que es barregés una gran copa i que es repartissin begudes a tots els esclaus que seien als peus, afegint-hi aquesta condició: «Si algú», digué, «no en vol acceptar, aboca-li-ho pel cap. De dia, severitat; ara, alegria.»",
+      "timestamp": 1779200712.0041125
+    },
+    {
+      "context": "les gallines eren sense os. Enmig d'això, un lictor va colpejar les portes del triclini, i un comissari, vestit de blanc i envoltat d'una gran multitud, va fer la seva entrada. Jo, aclaparat per tanta majestat, vaig creure que havia arribat el pretor. Vaig intentar, doncs, aixecar-me i posar els peus descalços a terra. Agamèmnon es va riure d'aquell ensurt meu i va dir: «Queda't quiet, home estúpid. Habines és sevir augustal i a més lapidari, i sembla que fa uns monuments funeraris excel·lents.»",
+      "timestamp": 1779200721.6303544
+    },
+    {
+      "context": ", i li preguntà com havia anat el convit. «Ho teníem tot», digué, «excepte tu; perquè els meus ulls eren aquí. I per Hèrcules que va anar bé. Escissa feia un novendial sumptuós per al seu pobret esclau, a qui havia alliberat per manumissió en morir-li. I em sembla que té un bon marge de guany amb els recaptadors del vintè; perquè valoren el mort en cinquanta mil sestercis. Però de totes maneres va ser agradable, tot i que ens van obligar a abocar la meitat de les copes sobre els seus ossaments.»",
+      "timestamp": 1779200733.6123712
+    },
+    {
+      "context": "anvi, en vaig menjar més d'una lliura, perquè sabia a senglar. I si, dic jo, un ós es menja un homenet, quant més ha de menjar-se l'homenet l'ós! De postre vam tenir formatge tendre i vi de most cuit i un cargol cadascú i trossos de tripa i fetgetes en plats i ous amb barret i nap i mostassa i un plat brut de merda —pau a Palamedes!— També van fer la ronda en una safata unes olives en vinagre, d'on alguns descarats se'n van emportar fins a tres grapes. Perquè al pernil li vam donar la llibertat.",
+      "timestamp": 1779200752.2512004
+    },
+    {
+      "context": " havia començat a aixecar-se, quan, feta la senyal, la Fortunata fou cridada quatre vegades i més per tota la servitud. Va venir, doncs, cenyida amb un cinturó de color verd groguenc, de manera que per sota li apareixia una túnica de color cirera, amb braçalets retorçats als turmells i sandàlies daurades. Aleshores, eixugant-se les mans amb el mocador que duia al coll, s'acostà al llit on seia la Escintil·la, muller d'Habinnes, i, besant-la mentre aquesta aplaudia, digué: —Quin plaer és veure't!",
+      "timestamp": 1779200763.2114785
+    },
+    {
+      "context": "o de mà en mà. No es quedà enrere l'Escintil·la, que es tragué del coll una capseta d'or que anomenava la Feliciona. En tragué dos cròtals i els donà a la Fortunata perquè els mirés al seu torn, i digué: —Per la gràcia del meu senyor, ningú no en té de millors. —Com? —digué Habinnes—. M'has buidat la bossa per comprar-te una perla de vidre. Francament, si tingués una filla, li tallaria les orelletes. Les dones, si no existissin, tot ens semblaria fang; però ara és com orinar calent i beure fred.",
+      "timestamp": 1779200778.1675262
+    },
+    {
+      "context": "ecència, darrere d'un mocador.\n\n## LXVIII.\n\nPassat un cert temps, com que Trimalció hagués manat que portessin el segon servei, els esclaus s'endugueren totes les taules i n'hi posaren d'altres, i escamparen per terra serradures tenyides de safrà i mini i, cosa que mai no havia vist fins aleshores, pols mòlta de pedra d'espill. Tot seguit, Trimalció digué: —Podria, és clar, donar-me per satisfet amb aquest plat; al cap i a la fi, ja teniu el segon servei. Però si tens alguna cosa bona, porta-la.",
+      "timestamp": 1779200791.573963
+    },
+    {
+      "context": "e debò, però jo l'anava formant enviant-lo a veure els saltimbanquis. Per això no té parió, tant si vol imitar mulaters com saltimbanquis. És increïblement enginyós, per perdut que sembli: és alhora sabater, cuiner i forner, esclau de totes les Muses. Té, però, dos defectes, que si no els tingués seria un home rodó: és retallat i ronca. Que sigui guerxo, no m'importa; com Venus, mira de costat. Per això no para mai la boca, i amb prou feines tanca l'ull. El vaig comprar per tres-cents denaris...",
+      "timestamp": 1779200806.3462346
+    },
+    {
+      "context": "t, aquell esclau tan dolent va treure's del si una llantia de terrissa i durant més de mitja hora va imitar els trompetes, mentre l'Habinna li feia el contrapunt i li abaixava el llavi inferior amb la mà. Al capdavall va avançar fins al mig de la sala i ara imitava els flautistes amb unes canyes trencades, ara, embolcallat en una capa i amb un fuet, representava la vida dels mulaters, fins que l'Habinna el cridà a ell, el besà, li allargà una copa i digué: «Molt bé, Massa; et regalo unes botes.»",
+      "timestamp": 1779200822.09083
+    },
+    {
+      "context": "s no ens hagués fet desitjar morir de gana. Perquè quan fou servit allò que nosaltres crèiem un ànec engreixat, envoltat de peixos i de tota mena d'ocells, Trimalció digué: «Amics, tot el que veieu aquí és fet d'una sola matèria.» Jo, home d'allò més perspicaç, vaig comprendre de seguida de què es tractava, i girant-me cap a l'Agamèmnon: «M'estranyaria», vaig dir, «que tot això no fos fet de fang o, si més no, d'argila. A Roma, per les Saturnals, he vist fer imitacions d'aquest tipus de sopars.»",
+      "timestamp": 1779200832.8440664
+    },
+    {
+      "context": "moni, no el meu cos, si el meu cuiner no ha fet tot això de porc. No hi ha home de més vàlua. Si vols, de la matriu et farà un peix, del llard un colom, del pernil una tórtora, de la cotna una gallina. I per això li he posat jo mateix el nom més escaient; perquè es diu Dèdal. I com que té bon cap, li he portat de Roma un regal: uns ganivets d'acer de Nòric.» De seguida manà que els portessin, i en examinar-los els admirà. Fins i tot ens donà permís a nosaltres de provar la punta contra la galta.",
+      "timestamp": 1779200840.8317878
+    },
+    {
+      "context": "recollí i féu circular en una safata. A aquestes delícies les igualà l'enginyós cuiner: portà cargols en una graella de plata i cantà amb una veu tremolosa i horripilant.\n\nEm fa vergonya referir el que segueix: car d'una manera mai no vista, uns nois de cabells llargs portaren ungüent en un gibrell de plata i ungiren els peus dels comensals reclinats, havent-los lligat abans les cames i els turmells amb garlandes de flors. D'aquell mateix ungüent, a més, n'abocaren una mica al vi i a la llàntia.",
+      "timestamp": 1779200852.4038563
+    },
+    {
+      "context": "a Menòfila, la teva companya, que s'estengui.» Què us he de dir? Gairebé ens van tirar dels llits, de tal manera la servitud havia envaït tot el triclini. Certament, jo vaig notar que al damunt meu s'havia col·locat el cuiner que havia fet l'oca de porc, pudent de salmorra i condiments. I no li bastà amb reclinarse, sinó que de seguida es posà a imitar el tràgic Efes i, de tant en tant, desafiava el seu amo a una aposta sobre si els verds guanyarien la primera palma en els propers jocs del circ.",
+      "timestamp": 1779200862.6452577
+    },
+    {
+      "context": "mat la mateixa llet que nosaltres, encara que la mala sort els hagi aclaparat. Tanmateix, mentre jo visqui, aviat tastaran l'aigua de la llibertat. En resum, els allibero a tots en el meu testament. A Filargiró, a més, li llego una finca i la seva companya, i a Carió, una insula, la vintena part i un llit amb el seu parament. A la meva Fortunata la faig hereva universal, i la recomano a tots els meus amics. I tot això ho faig públic perquè la meva servitud m'estimi ja des d'ara com si fos mort.»",
+      "timestamp": 1779200871.0428138
+    },
+    {
+      "context": "i et sembla bé, un triclini. Faràs també tot el poble passant-s'ho d'allò més bé. A la meva dreta posaràs l'estàtua de la meva Fortunata sostenint una coloma, i que dugui la gosseta lligada amb una corretja, i el meu xicot, i àmfores segellades amb guix perquè no s'escoli el vi. I pots esculpir una urna trencada, i damunt un nen que plora. Un rellotge al mig, perquè qualsevol que miri les hores, vulgui o no, llegeixi el meu nom. Mira també amb cura si aquesta inscripció et sembla prou adequada:»",
+      "timestamp": 1779200892.2490149
+    },
+    {
+      "context": "r què no vivim? [3] Que així em vegin feliç: tirem-nos al bany, que corro jo amb el risc, no us en penedireu. [4] Escalfa com un forn.» — «Cert, cert», digué l'Habinnes, «de un dia en fer-ne dos, res no m'agrada més»; i s'aixecà descalç i seguí Trimalció, que se n'anava content.\n\n[5] Jo em girà cap a l'Ascilte: «Què en penses?», li vaig dir, «que jo, si veig el bany, caig mort a l'acte.» — [6] «Fem-los la viu-viu», digué ell, «i mentre ells van cap al bany, nosaltres escapecem entre la gentada.»",
+      "timestamp": 1779200908.3601098
+    },
+    {
+      "context": "ja s'havia redimit del gos feia estona amb una astúcia ben aguda: tot allò que havia rebut de nosaltres de la sopar ho havia escampat davant del gos que bordava, i aquest, distret pel menjar, havia apaivagat la seva fúria. [10] Ara bé, com que, tots dos gelats, havíem demanat al majordom que ens deixés sortir per la porta, ell digué: «T'equivoques si creus que pots sortir per on has entrat. Mai cap convidat ha estat deixat sortir per la mateixa porta; s'entra per unes i se surt per unes altres.»",
+      "timestamp": 1779200919.7878687
+    },
+    {
+      "context": "ançons de Menècrates, tal com deien els qui entenien la seva llengua. La resta dels comensals corrien al voltant de la pica amb les mans entrellaçades i omplien l'aire d'un enorme clamor de rialles. Altres, en canvi, intentaven recollir anells del terra amb les mans lligades a l'esquena, o bé, posant-se de genolls, es doblaven cap enrere i tractaven de tocar-se els polzes dels peus. Nosaltres, mentre els altres es feien les seves gràcies, vam baixar a la banyera que es preparava per a Trimalció.",
+      "timestamp": 1779200934.7412243
+    },
+    {
+      "context": "n conduir a un altre triclini on Fortunata havia disposat les seves magnificències, de manera que, a la llum de les llànties, vaig poder distingir uns petits pescadors de bronze i unes taules completament de plata, i al voltant, copes de terrissa daurada, i el vi que davallava a la vista a través d'un filtre. Llavors Trimalció digué: «Amics, avui el meu esclau s'ha fet la barba —un home de profit, que no li manqui sort, i de confiança. Així que fem-ne una festa i sopem fins a l'alba.»\n\n## LXXIV.",
+      "timestamp": 1779200941.7027314
+    },
+    {
+      "context": "at el senyal; perquè o bé ha d'esclatar un incendi, o bé algú del veïnat ha de llençar l'ànima. Lluny de nosaltres! Així que qui ens porti aquest delator rebrà una propina.» Dit i fet, del veïnat van portar un gall, que Trimalció va manar que es cougués en una olla de bronze. El va esquarterar, doncs, aquell cuiner eruditíssim que poc abans havia fet aus i peixos d'un porc, i el va llençar a la cassola. I mentre Dèdal apurava una beguda ardentíssima, Fortunata molia pebre amb un molinet de boix.",
+      "timestamp": 1779200951.7378523
+    },
+    {
+      "context": "fumista ahir mateix em va prendre apart i em digué: \"Et consello que no deixis extingir el teu llinatge.\" Però jo, fent el bonàs i no volent semblar lleuger, m'he clavat jo mateix la destral a la cama. Bé, ja m'encarregaré que m'hagis de buscar amb les ungles. I perquè entenguis de seguida el que t'has fet a tu mateixa: Habinna, no vull que li posis cap estàtua al meu monument, per no tenir baralles ni de mort. I més encara, perquè sàpiga que li puc fer mal, no vull que em besi quan sigui mort.»",
+      "timestamp": 1779200997.5656738
+    },
+    {
+      "context": "## II.",
+      "timestamp": 1779285609.9327703
+    },
+    {
+      "context": "s i, com un astre pestilent, bufà sobre els ànims dels joves que s'enfilaven vers les grans altures; i, corrompuda d'una vegada la norma, l'eloqüència s'aturà i emmudí. Resumint: qui assolí després la fama de Tucídides, qui la d'Hiperides? Ni tan sols cap poema brillà amb un color sa, sinó que tot, com si s'hagués nodrit del mateix aliment, no pogué emblanquir fins a la vellesa. La pintura tampoc no tingué un altre destí, des que l'audàcia dels egipcis inventà una drecera per a un art tan gran.»",
+      "timestamp": 1779285624.6952026
+    },
+    {
+      "context": " com diu Ciceró, \"es quedaran sols a les escoles\". Igual que els aduladors de professió, quan van a la caça dels sopars dels rics, no mediten res amb tanta cura com allò que creuen que serà més del grat dels oients —car d'altra manera no obtindran el que cerquen si no han tendit algunes trampes a les orelles—, de la mateixa manera el mestre d'eloqüència, si no ha posat a l'ham, com fa el pescador, aquell esquer que sap que els peixets han de picar, es quedarà a l'escull sense esperança de pesca.",
+      "timestamp": 1779285635.1837287
+    },
+    {
+      "context": ", que es convencessin que res no és admirable pel simple fet que agradi als nens: aleshores aquella gran oratòria tindria el pes de la seva pròpia majestat. Ara, en canvi, els nens juguen a les escoles, els joves fan el ridícul al fòrum, i el que és més vergonyós que totes dues coses: allò que cadascú va aprendre malament de petit, no vol confessar-ho en la vellesa. Però perquè no penseu que he rebutjat l'espontaneïtat d'aquell estil humil de Lucili, jo mateix expressaré en vers allò que sento:»",
+      "timestamp": 1779285646.930392
+    },
+    {
+      "context": "e, i que brandeixi les armes del gran Demòstenes.\nD'aquí que l'escola romana l'envolti, i alleugerida\ndel so grec, canviï de gust impregnada del seu saber.\nDe tant en tant, que la pàgina apartada del fòrum prengui el vol,\ni que la fortuna ressoni marcada per un curs àgil.\nQue donin festins i guerres recordades amb cant ferotge,\ni que les paraules grandioses del Ciceró indomable amenacin.\nArma't l'ànima amb aquests béns: així, amb un riu abundant,\nple de Pieris, vesaràs les paraules del teu cor.»",
+      "timestamp": 1779285660.6669135
+    },
+    {
+      "context": "clamació improvisada d'algú que havia agafat la suasòria d'Agamèmnon. Mentre els joves es reien de les sentències i posaven en ridícul l'ordre de tota la dissertació, vaig aprofitar l'ocasió per escolar-me'n i vaig començar a perseguir Ascilt a la carrera. Però no seguia el camí amb gaire cura, perquè... ni sabia on era l'hostal. Així que per on anava, per allà mateix tornava, fins que, esgotat de córrer i ja xop de suor, m'acosté a una velleta que venia verdures del camp i li vaig dir:\n\n## VII.",
+      "timestamp": 1779285669.4591486
+    },
+    {
+      "context": "aven furtivament entre rètols i meretrices nues. Tard, i ja massa tard, vaig comprendre que m'havien conduït a un bordell. Així que, maleint les trampes de l'anciana, em vaig cobrir el cap i vaig començar a fugir a través del mig del lupanari cap a l'altra banda, quan vet aquí que al mateix portal em vaig topar amb Ascilt, igualment esgotat i mig mort; hauries dit que la mateixa velleta l'havia conduït allà. Així que el vaig saludar rient-me'n i li vaig preguntar què feia en un lloc tan indigne.",
+      "timestamp": 1779285681.3373716
+    },
+    {
+      "context": "em prometé, amb tota la cortesia del món, que em guiaria. Llavors, havent-me fet travessar uns carrerons obscurísims, em conduí fins a aquest lloc, i traient-se els diners em començà a demanar que m'hi deixés. Ja la meretriu havia cobrat un as per la cambra, ja ell m'havia posat la mà al damunt, i si no hagués estat el més fort, n'hauria pagat les conseqüències. [...] fins al punt que arreu tothom em semblava que havia begut vi de sàtir [...] però unint les forces, menyspream l'importú.»\n\n## IX.",
+      "timestamp": 1779285690.8637145
+    },
+    {
+      "context": " sols tens l'alè pur?» Ascilt va fingir que se li posava la pell de gallina, i tot seguit, aixecant les mans amb més força, va cridar amb un esforç molt més gran: «No et calles, gladiador obscè, que l'arena va acomiadar de la ruïna? No et calles, assassí nocturn, que ni tan sols llavors, quan feies el valent, vas lluitar amb una dona honesta, i de qui vaig ser germà al jardí de la mateixa manera que ara ets tu el noi a la fonda?» — «Tu et vas escapolir de la conversa amb el mestre», vaig dir jo.",
+      "timestamp": 1779285705.81391
+    },
+    {
+      "context": "a amb les seves pròpies lamentacions. Tu saps de lletres i jo també. Per no ser un obstacle als teus guanys, em buscaré alguna altra cosa; altrament, mil motius ens enfrontaran cada dia i ens escamparan per tota la ciutat amb els seus rumors.»\n\nAscilt no s'hi va negar i digué: «Avui, com que hem promès d'anar a sopar com a estudiants, no malbaratemla nit. Demà, però, ja que és el que em plau, em buscaré un allotjament i algun germà.» — «És massa esperar», vaig dir jo, «allò que ja s'ha decidit.»",
+      "timestamp": 1779285720.76433
+    },
+    {
+      "context": "havia acabat tot plegat quan Ascilt s'acostà furtivament a la porta i, havent forçat el forrellat amb tota la seva força, em trobà jugant amb el meu germà. Va omplir la cambreta de riures i aplaudiments, em va descobrir de sota la capa i digué: «Què feies, germà santíssim? Què? Fas vida de caserna?» I no es va limitar a les paraules, sinó que va treure una corretja de la bossa i es posà a fuetejar-me ben de debò, afegint-hi també dites insolents: «Així no s'ha de repartir amb el germà.»\n\n## XII.",
+      "timestamp": 1779285731.7220924
+    },
+    {
+      "context": "capa amb força atenció. Al seu torn, Ascilt posà els ulls sobre les espatlles d'aquell comprador rústic i, de sobte, es quedà pàl·lid i mut. Tampoc jo no el vaig veure sense cert neguit, perquè em semblava que era aquell mateix que havia trobat la túnica en el descampat. I, en efecte, era ell en persona. Però com que Ascilt temia no fiar-se dels seus propis ulls, per no fer res de precipitat, s'hi acostà primer com si fos un comprador, li llevà la roba de les espatlles i la palpà amb deteniment.",
+      "timestamp": 1779285744.2154825
+    },
+    {
+      "context": "ir que no calia anar amb rodeos, sinó que s'havia de lluitar obertament per la via del dret civil, de manera que, si no volia tornar al seu amo una cosa aliena, que s'atengués a l'interdicte.\n\n## XIV.\n\nAscilt, al contrari, temia les lleis i deia: «Qui ens coneix en aquest lloc, o qui donarà crèdit al que diguem? A mi, francament, em sembla millor comprar-ho, per bé que sigui nostre allò que reconeixem, i recuperar el tresor per uns pocs diners de coure, abans que endinsar-nos en un plet incert.»",
+      "timestamp": 1779285756.6070812
+    },
+    {
+      "context": "Què valen les lleis, allà on regna tan sols el diner,\no allà on cap pobresa no pot vèncer?\nFins i tot els qui passen la vida amb la bossa cínica a l'espatlla\nde vegades acostumen a vendre la veritat per monedes.\nAixí doncs, la justícia no és res més que una mercaderia pública,\ni el cavaller que seu al tribunal aprova allò que ha comprat.»",
+      "timestamp": 1779285761.4345226
+    },
+    {
+      "context": "no fèiem res, vam agafar també la túnica esquinçada i bruta i vam proclamar amb la mateixa indignació que allò que ells posseïen era el nostre botí. Però de cap manera la causa era equilibrada, i els marxants que havien acudit al crit es reien, com és costum, de la nostra indignació, perquè en defensa d'aquella part reclamaven una peça de roba riquíssima, i en defensa de la nostra, un pedaç que no valia ni per a bons parracs. Aleshores Asciltos va dissipar bé el riure, i, fet el silenci:\n\n## XV.",
+      "timestamp": 1779285773.503349
+    },
+    {
+      "context": "g d'ambdues parts. El pagès, indignat perquè nosaltres exigíem que es presentés el pedaç, va llançar la túnica a la cara d'Asciltos i, alliberats de la querella, ens va ordenar que dipositéssim el mantell, que era l'única cosa que feia el litigi; i havent recuperat, com crèiem, el tresor, vam córrer precipitadament cap a la fonda, i, tancades les portes, vam començar a riure'ns de l'enginy no menys dels marxants que dels calumniadors, perquè amb una astúcia enorme ens havien retornat els diners.",
+      "timestamp": 1779285789.274797
+    },
+    {
+      "context": "aure tot sol i les portes, obertes de sobte, van deixar passar qui entrava. Era una dona amb el cap cobert, i va dir: «Creieu que m'heu enganyat? Jo soc la serventa de Quartil·la, aquella a qui vosaltres vau interrompre el ritu davant la cripta. Vet aquí que ella mateixa ve a la fonda i demana que li sigui permès parlar amb vosaltres. No us pertorbeu. No acusa el vostre error ni el castiga; ans al contrari, s'admira de quin déu ha portat uns joves tan refinats fins a la seva contrada.»\n\n## XVII.",
+      "timestamp": 1779285799.619575
+    },
+    {
+      "context": "ltia. Però no em preocupa tant el remei; car un dolor més gran em crema al pit i m'aboca fins a la necessitat de la mort: que vosaltres, empesos per la llicència juvenil, no divulgueu el que heu vist al santuari de Príap, i no traieu a la llum del poble els designis dels déus. Per això estenc cap als vostres genolls les mans obertes, i us demano i us suplico que no feu befa ni riota dels ritus nocturns, i que no vulgueu trair els secrets de tants anys, que amb prou feines coneixen mil persones.»",
+      "timestamp": 1779285818.3587127
+    },
+    {
+      "context": "ueien per les orelles, i digué: «Faig les paus amb vosaltres, i us allibero del plet que tenia preparat. Però si no haguéssiu acceptat el remei que us demanava, ja tenia a punt per a l'endemà una colla de gent que hauria venjat el meu greuge i defensat la meva dignitat:\n\nSer menyspreat és una vergonya; imposar la llei, una arrogància;\nestimo allò que puc: anar pel camí que em plagui.\nCar fins i tot el savi, quan és menyspreat, teixeix querelles,\ni qui no degolla l'enemic sol sortir-ne vencedor.»",
+      "timestamp": 1779285831.8757384
+    },
+    {
+      "context": "Aleshores, tot batent les mans, va esclatar en una rialla tan sobtada i tan forta que ens va fer por. El mateix va fer, a l'altra banda, la serventa que havia entrat primer, i el mateix la noieta que havia entrat amb ella.\n\n## XIX.\n\nTot havia ressonat amb una rialla de farsa, mentre nosaltres ignoràvem quin canvi tan sobtat s'havia produït en els seus ànims, i ens miràvem ara a nosaltres mateixos, ara les dones. <. . .>",
+      "timestamp": 1779285838.0329354
+    },
+    {
+      "context": ". Eren tres donetes, en efecte, molt febles si volien intentar res, davant nosaltres, que si no res més, érem del sexe masculí. I a més, certament anàvem amb la roba ben cenyida. Fins i tot jo ja havia disposat les parelles de tal manera que, si calia lluitar, jo m'enfrontaria amb Quartil·la, Ascilt amb la serventa, i Gíton amb la noieta. <. . .> Però aleshores tota la nostra fermesa va abandonar-nos, atordits com estàvem, i una mort segura va començar a cobrir els ulls dels desgraciats. <. . .>",
+      "timestamp": 1779285847.7494366
+    },
+    {
+      "context": " «I jo, va dir, no sóc digne de beure?» L'esclava, delatada pel meu riure, va fer petar les mans i digué: «T'ho he servit, sí; però tu sol, noi, t'has begut tanta medicina.» —«Ah, és així?», va dir Quartil·la, «Encòlpius s'ha begut tot el que hi havia de sajolida?» Va sacsejar els costats amb un riure no gens indecorós. I fins i tot Gíton no va poder contenir el riure al final, sobretot quan la noieta li va envoltar el coll i va donar al noi, que no es resistia, una infinitat de petons.\n\n## XXI.",
+      "timestamp": 1779285860.6536293
+    },
+    {
+      "context": "quan jo intentava invocar la protecció dels Quirites, i per l'altre una noieta oprimia Ascilte amb un pinzell que havia mullat en sajolida. <. . .>\n\nFinalment va aparèixer un cinaede cobert amb una capa de llana peluda de murta i cenyit amb un cinturó . . . que ara ens colpejava amb les anques retorçades, ara ens embruttava amb petons pestilentíssims, fins que Quartil·la, brandant una vara de balena i amb les faldilles ben arromangades, va ordenar que es donés la llibertat als infeliços. <. . .>",
+      "timestamp": 1779285868.53782
+    },
+    {
+      "context": "s inundaren també de vi Falern. Quan, servits encara de molts plats més, ens anàvem lliscant cap al son, Quartil·la digué: «Com és això? Teniu al cap de dormir, sabent com sabeu que es deu una vetlla en honor del geni de Priap?» <. . .>\n\n## XXII.\n\nCom que Ascilte, aclaparat per tants mals, s'anava lliscant cap al son, aquella serventa que havia estat apartada amb una injúria li va fregar tota la cara amb una llarga capa de sutge, i als llavis i les espatlles de l'adormit li va pintar uns petons.",
+      "timestamp": 1779285880.5192246
+    },
+    {
+      "context": "tirar-la. Caigué també la taula amb la plata, i una copa que havia sortit disparada d'un cop de la taula colpí al cap, amb força, una serventa que dormia mig adormida sobre el llit.\n\nAl cop d'aquell cop, ella pegà un crit, i alhora delatà els lladres i despertà una part dels ebris. Aquells siris que havien vingut a fer el botí, en adonar-se que els havien descobert, s'estirraren tots dos al costat del llit, com si s'haguessin posat d'acord, i es posaren a roncar com si fessin estona que dormien.",
+      "timestamp": 1779285892.3981986
+    },
+    {
+      "context": "geu el pas, afegiu-hi carrera, voleu de planta,*\n*de cuixa fàcil, de natges àgils i de mà procaç,*\n*tous, vells, deliacs tallats per mà.*\n\nAcabats els seus versos, m'escopí amb un petó immundíssim. Aviat pujà també al llit i, fent tota la força, em descobrí tot i que jo m'hi resistia. Molí llargament i debades sobre els meus engonals. Li regalimaven pel front rierols d'acàcia suant, i entre les arrugues de les galtes hi havia tanta cerusa que hauries dit que una paret pelada patia sota la pluja.",
+      "timestamp": 1779285907.2475827
+    },
+    {
+      "context": "e a natges i a petons. Entretant, Gitó estava dret allà i es trencava els flancs de riure. Quartil·la, en veure'l, preguntà amb molt d'interès de qui era aquell noi. Com que jo li vaig dir que era el meu germà, ella digué: «Per què, doncs, no m'ha besat?» I cridant-lo cap a ella, l'estretà en un petó. Aviat li passà la mà al si i, tot palpant-li aquell vas encara tan tendre, digué: «Això farà bon servei demà com a entremès de la nostra luxúria; que avui, després de l'ase, no prenc ració diària.»",
+      "timestamp": 1779285922.6230989
+    },
+    {
+      "context": "El text llatí del capítol XXV que cal traduir apareix buit al teu missatge —només hi ha l'encapçalament `## XXV.` sense contingut. Podries proporcionar el text llatí original d'aquest capítol perquè pugui fer-ne la traducció?",
+      "timestamp": 1779285957.6770387
+    },
+    {
+      "context": "er el primer home? Que Juno m'agafi la ira si mai no em recordo d'haver estat verge. De ben petita ja em vaig embrutar amb els meus iguals, i a mesura que anaven passant els anys m'anava aplicant a nois cada vegada més grans, fins que he arribat a l'edat que tinc. D'aquí crec que ha nascut aquell proverbi que diu que pot aixecar el bou qui ha sabut aixecar el vedell.» Així doncs, per tal que el meu germà no rebés un greuge més gran en secret, em vaig aixecar per complir amb el meu deure nupcial.",
+      "timestamp": 1779285972.2164643
+    },
+    {
+      "context": " el llindar de la cambra nupcial, i la Quartil·la, sobretot, havia acostat l'ull curiós per una escletxa descaradament eixamplada, i amb libidinosa atenció espiava el joc infantil. Amb mà suau m'arrossegà també a mi cap al mateix espectacle, i com que els rostres dels qui miraven s'havien ajuntat, tot allò que li quedava lliure de l'espectacle ho aprofitava per moure els llavis, i de tant en tant m'abatia amb petons com a furtius.\n\nLlençats als llits sense cap temor, passàrem la resta de la nit.",
+      "timestamp": 1779285984.871809
+    },
+    {
+      "context": "ment de quina manera podríem esquivar la tempesta present, un esclau d'Agamèmnon interrompé els nostres neguits i digué: «Com? ¿No sabeu vosaltres a casa de qui és avui el sopar? Trimalció, un home d'allò més refinat. Té un rellotge al triclini i un trompeter de guàrdia, perquè sàpiga en tot moment quant de vida ha perdut!»\n\nEns vestim, doncs, amb cura, oblidats de tots els nostres mals, i ordenem al Gitó, que amb molt de gust exercia les funcions d'esclau, que ens segueixi als banys.\n\n## XXVII.",
+      "timestamp": 1779285993.1674788
+    },
+    {
+      "context": " els qui ens havien atret cap a l'espectacle, sinó el pare de família en persona, que jugava amb sandàlies i una pilota de color verd. Tampoc no anava a recollir les que tocaven a terra: un esclau tenia un sac ple de pilotes i n'anava proveint els jugadors. Observàrem també dues coses insòlites: dos eunucs estaven drets en costats oposats del cercle; l'un sostenia un orinal de plata, l'altre comptava les pilotes —no pas les que voleiaven d'una mà a l'altra en el joc, sinó les que queien a terra.",
+      "timestamp": 1779286002.9988534
+    },
+    {
+      "context": "Mentre admiràvem, doncs, aquells luxes, s'acostà Menelaos corrents: «Aquest és», digué, «l'amfitrió a casa del qual anireu a sopar, i de fet ja esteu veient el principi del sopar.» I encara no havia acabat de parlar Menelaos quan Trimalció va fer petar els dits, senyal a la qual l'eunuc li posà l'orinal a sota mentre jugava. Alleugerida la bufeta, demanà aigua per a les mans, i s'eixugà els dits, que havia mullat lleugerament, al cap d'un noi.\n\n## XXVIII.",
+      "timestamp": 1779286010.0639083
+    },
+    {
+      "context": " mà en el qual duien el seu favorit: un noi vell, llagrimós, més lleig que el seu amo Trimalció. Mentre se l'emportaven, doncs, un músic s'acostà al seu cap amb unes flautes petitíssimes i, com si li digués alguna cosa a cau d'orella, li anà cantant durant tot el trajecte.\n\nEl seguírem nosaltres, ja farts d'admiració, i amb Agamèmnon arribàrem a la porta, a un dels pilars de la qual hi havia fixat un rètol amb aquesta inscripció:\n\nTOT ESCLAU QUE SURTI FORA SENSE ORDRE DE L'AMO REBRÀ CENT ASSOTS.",
+      "timestamp": 1779286023.0699909
+    },
+    {
+      "context": "A l'entrada mateixa hi havia el porter, vestit de verd, cenyit amb un cinturó color cirera, que mondava pèsols en una safata de plata. Per damunt del llindar penjava una gàbia daurada on una garsa de colors saludava els qui entraven.\n\n## XXIX.",
+      "timestamp": 1779286026.8598177
+    },
+    {
+      "context": "eus fils d'or. Vaig notar també, al pòrtic, un grup de corredors que s'entrenaven amb el seu mestre. A més, vaig veure en un racó un gran armari, en el sagrari del qual hi havia col·locats els Lares de plata, una figura de Venus en marbre i una capseta d'or de mida considerable, on deien que es guardava la barba del propi Trimalció. Vaig començar, doncs, a preguntar a l'atriense quines eren les pintures del mig. «La Ilíada i l'Odissea», em va dir, «i el combat de gladiadors del difunt Laenates.»",
+      "timestamp": 1779286042.0720685
+    },
+    {
+      "context": "a memòria, duia aquesta inscripció: *EL NOSTRE GAI SOPA FORA EL 30 I EL 31 DE DESEMBRE*; l'altra, el curs de la lluna i les imatges pintades dels set astres; i els dies favorables i els desfavorables s'hi distingien marcats amb un puntet.\n\nPlens d'aquests plaers, quan intentàvem entrar al triclini, un dels esclaus destinats a aquell servei va cridar: «Amb el peu dret!» Sens dubte ens vam quedar una mica desconcertats, no fos cas que algun de nosaltres traspassés el llindar contra la prescripció.",
+      "timestamp": 1779286057.1711264
+    },
+    {
+      "context": "lient m'havia regalat per al meu aniversari —de porpra de Tir, sens dubte, però ja rentada una vegada. Bé, doncs, us el regalo.»\n\n## XXXI.\n\nObligats per tan gran favor, quan vam entrar al triclini, ens va sortir a l'encontre aquell mateix esclau per qui havíem intercedut, i, mentre nosaltres quedàvem estupefactes, ens va plantar uns petons ben sonors donant-nos les gràcies per la nostra bondat. «En resum», va dir, «aviat sabreu a qui heu fet el favor. El vi del senyor és la propina del cambrer.»",
+      "timestamp": 1779286069.768097
+    },
+    {
+      "context": "mans, i d'altres els seguien als peus i ens treien les cutícules amb una destresa extraordinària. I ni tan sols en aquella tasca tan feixuga no callaven, sinó que cantaven de passada. Vaig voler comprovar si tota la servitud cantava, i per això vaig demanar una beguda. Un noi ben diligent em va rebre amb un cantarellat no menys estrident, i el mateix feia qualsevol altre a qui demanaves alguna cosa. Hauries dit que eres en el cor d'un espectacle de pantomima, no al triclini d'un pare de família.",
+      "timestamp": 1779286076.8419256
+    },
+    {
+      "context": "el lloc d'honor. A la safata dels entremesos hi havia un ase de bronze de Corint amb una doble alforja, que duia olives blanques a un costat i negres a l'altre. Cobrien l'ase dues safates als marges de les quals hi havia inscrit el nom de Trimalció i el pes de la plata. Hi havia també uns pontons soldats que sostenien llircs ruixats de mel i rosella. I encara llonganisses fumejants posades damunt d'una graelleta de plata, i a sota de la graelleta, prunes de Síria amb grans de magrana.\n\n## XXXII.",
+      "timestamp": 1779286085.2313757
+    },
+    {
+      "context": "scarlata i, al voltant del coll carregat de roba, havia deixat caure una tovallola de franja ampla amb flocs penjant d'un costat i de l'altre. Duia també al dit petit de la mà esquerra un anell gran daurat per fora, i a l'última falange del dit següent un altre de més petit, que em semblava d'or pur, però tot soldat amb unes com estrelles de ferro. I per no mostrar tan sols aquestes riqueses, descobrí el braç dret, adornat amb una polsera d'or i un cercle d'ivori unit per una làmina resplendent.",
+      "timestamp": 1779286094.4475946
+    },
+    {
+      "context": "Mentre s'escurava les dents amb un escuradents de plata, digué: «Amics, encara no em venia de gust venir al triclini, però per no fer-vos esperar més amb la meva absència, m'he negat tot plaer. Permeteu-me, però, acabar la partida.» El seguia un noi amb un tauler de fusta de terebint i fitxes de cristall, i vaig notar una cosa de les més refinades que havia vist mai: en comptes de peces blanques i negres, feia servir denaris d'or i de plata.",
+      "timestamp": 1779286100.1825793
+    },
+    {
+      "context": "o que ja estiguin covats. Provem, però, si encara es poden xuclar.» Agafàrem unes culleres que pesaven no menys de mig lliure, i foradàrem uns ous fets de pasta de farina greixosa. Jo gairebé vaig llençar la meva part, perquè em semblava que ja s'havia format un pollet. Però llavors vaig sentir un comensal veterà: «Aquí hi ha d'haver alguna cosa bona», i, seguint el seu exemple, vaig obrir la closca amb la mà i hi vaig trobar una becada grassíssima, envoltada de rovell de ou pebronat.\n\n## XXXIV.",
+      "timestamp": 1779286113.188373
+    },
+    {
+      "context": "eguida el majordom i començà a escombrar la plata juntament amb la resta de les deixalles. Tot seguit entraren dos etíops de cabells llargs amb uns odrets petits, com els que solen tenir els qui escampen sorra a l'amfiteatre, i serviren vi a les mans; car ningú no oferí aigua.\n\nL'amo, lloat per tan refinada elegància, digué: «Mart estima la igualtat. Per això he manat que s'assigni a cadascú la seva pròpia taula. A més, aquests esclaus tan pestilents ens faran menys calor amb la seva presència.»",
+      "timestamp": 1779286125.3754008
+    },
+    {
+      "context": "evíem, doncs, i admiràvem amb tot detall aquells refinaments, un esclau portà un esquelet de plata construït de tal manera que les articulacions i les vèrtebres, totes soltes, es podien doblegar en qualsevol direcció. Com que l'hagué llançat un parell de vegades sobre la taula, i la cadena mòbil en formava diverses figures, Trimalció afegí:\n\nAi, pobres de nosaltres, com l'home no és res de res!\nAixí serem tots, quan l'Orco ens haurà endut.\nVisquem, doncs, mentre ens és dat de viure bé.\n\n## XXXV.",
+      "timestamp": 1779286136.1757984
+    },
+    {
+      "context": "re l'Escorpí, un peixet de mar; sobre el Sagitari, un lluç; sobre el Capricorn, una llagosta de mar; sobre l'Aquari, un ànec; sobre els Peixos, dos molls. Al mig, un tros de gespa amb herbes sostenia un rusc. Un noi egipci portava pa en un fornet de plata. ⟨…⟩ I el mateix Trimalció, amb una veu horripilant, s'arrencà a cantar una cançoneta del mim del Làser. Com que ens acostàrem als menjars tan humils amb una certa tristesa, digué Trimalció: «Us aconsello que mengem; això és la llei del sopar.»",
+      "timestamp": 1779286148.7242327
+    },
+    {
+      "context": "t que era un gladiador de carro de guerra lluitant al so d'un orgue hidràulic. Trimalció, tanmateix, no parava de repetir amb veu molt pausada: «Trinxa! Trinxa!» Jo, sospitant que aquella paraula tan repetida amagava algun joc d'enginy, no em vaig avergonyir de preguntar-ho al qui jeia al meu costat. I ell, que havia presenciat aquella mena de bromes més d'una vegada: «Veus aquell que trinxa el menjar? Es diu Carpus. Així, cada vegada que diu \"trinxa\", amb la mateixa paraula el crida i li mana.»",
+      "timestamp": 1779286161.7290986
+    },
+    {
+      "context": "El text original del capítol XXXVII no ha estat inclòs en el missatge —només apareix l'encapçalament `## XXXVII.` sense contingut llatí a continuació. Podries proporcionar el text llatí del capítol XXXVII perquè pugui traduir-lo?",
+      "timestamp": 1779286197.3679385
+    },
+    {
+      "context": " És austera, sobria, de bon consell: ja veus quant d'or. Ara bé, té mala llengua, és una garsa de coixí. A qui estima, l'estima; a qui no estima, no l'estima. El mateix Trimalció té finques fins on volen els milans, i diners a caramulls. La plata que jeu al rebost del seu porter és més del que qualsevol té en tot el seu patrimoni. I la servitud —ai, ai!— per Hèrcules que no crec que ni la desena part conegui el seu amo. En resum, a qualsevol d'aquests babaus el tiraria dins d'una fulla de ruda.»",
+      "timestamp": 1779286211.193273
+    },
+    {
+      "context": "## XXXVIII.",
+      "timestamp": 1779286216.0384052
+    },
+    {
+      "context": "sapareixen. I quin negoci tan honorable exercia, per veure'l ara com el veus! Era empresari de pompes fúnebres. Solia sopar com un rei: senglars embolcallats en capa de llana peluda, pastisseria fina, aus, cuiners, forners. Sota la taula s'hi abocava més vi del que alguns en tenen al celler. Una fantasia, no un home. Quan els seus afers ja s'inclinaven, i temia que els creditors el creguessin en fallida, va anunciar una subhasta amb aquest títol: GAI JULI PRÒCUL FARÀ SUBHASTA DE BÉNS SUPERFLUS.»",
+      "timestamp": 1779286239.973341
+    },
+    {
+      "context": "Trimalció va interrompre aquelles converses tan agradables; car ja s'havia retirat el plat, i els comensals, alegres, s'havien posat a dedicar-se al vi i als xafarderies compartides. Ell, doncs, recolzat sobre el colze, digué: «Heu de fer que aquest vi us sàpiga bé: els peixos han de nedar. Us demano, creieu que jo em conformo amb aquell sopar que heu vist a la tapa de la safata de servei?\n\n*Tan poc em coneixeu, a Ulisses?*»",
+      "timestamp": 1779286246.4257302
+    },
+    {
+      "context": "es verdures i s'emporten el llard; sota Capricorn, els desgraciadets, a qui les seves misèries els fan créixer banyes; sota Aquari, els taverners i els carbassots; sota Peixos, els cuiners i els retòrics. Així gira el món com una mola, i sempre fa algun mal, de manera que els homes o neixen o moren. Quant al que veieu al mig —aquell tros de gespa amb un rusc a sobre—, no faig res sense raó. La terra és la mare, al mig, rodona com un ou, i conté en ella mateixa tots els béns, com un rusc de mel.»",
+      "timestamp": 1779286267.0038788
+    },
+    {
+      "context": "í que uns gossos laconis es posaren a córrer al voltant de la taula. Els seguí una safata de servei, sobre la qual hi havia un senglar de primera magnitud, i ben cofat amb un barret de llibertat, del qual penjaven dues cistelles teixides de palma, una plena de dàtils de Caria i l'altra de dàtils de Tebes. Al voltant, uns porcellets petits fets de pasta de mel, com si estiguessin a punt de mamar, indicaven que allò que hi havia era una truja. I aquests, de fet, eren regals per emportar-se a casa.",
+      "timestamp": 1779286277.8593144
+    },
+    {
+      "context": "ejà amb força el flanc del senglar, i del tall en sortiren volant uns tords. Uns caçadors preparats amb les seves canyes estaven a punt, i els agafaren en un instant mentre voleiaven pel triclini. Aleshores, havent manat que cadascú se'n portés el seu, Trimalció afegí: «Fixeu-vos també en quina glans tan neta s'ha menjat aquell porc senglar.» Tot seguit uns nois s'acostaren a les cistelles que penjaven dels ullals, i repartiren als comensals, un per un, dàtils de Tebes i de Càries.\n\n---\n\n## XLI.",
+      "timestamp": 1779286287.4330714
+    },
+    {
+      "context": " esgotat totes les meves conjectures sense resultat, em vaig decidir a preguntar al meu intèrpret allò que em turmentava. I ell: «Fins i tot això, el teu servent ho pot explicar perfectament: no és cap endevinalla, sinó una cosa ben clara. Aquest senglar, com que ahir el van reclamar al final del sopar, va ser acomiadat del convit; i avui, doncs, hi torna com un llibert.» Vaig condemnar la meva pròpia estupidesa i no vaig preguntar res més, per no semblar que mai no havia sopat entre gent de bé.",
+      "timestamp": 1779286295.2689488
+    },
+    {
+      "context": "cabat aquest plat, Trimalció s'aixecà per anar al comú. Nosaltres, lliures del tirà, comencem a animar la conversa entre els comensals.\n\nDama, doncs, el primer, en demanar una copa gran, digué: «El dia no és res. En un girar-se, ja és de nit. Així que no hi ha res millor que anar directament de l'alcova al triclini. I hem tingut un fred de debò. A penes el bany m'ha escalfat. Però una beguda calenta és com un abric. He apurat unes copes ben plenes, i estic ben begut. El vi se m'ha pujat al cap.»",
+      "timestamp": 1779286307.8643773
+    },
+    {
+      "context": "e n'ha anat a l'altre barri. Els metges l'han perdut, o més aviat la mala sort; perquè el metge no és altra cosa que un consol per a l'ànima. De totes maneres, bon enterrament va tenir: llit de gala, bons draps. El plany va ser de primera — va alliberar alguns esclaus — tot i que la dona el va plorar amb poc cor. I si no l'hagués tractada tan bé! Però la dona que és dona, és de la raça dels milans. No cal fer cap bé a ningú; és com si ho llencéssiu a un pou. Però un amor antic és com un càncer.»",
+      "timestamp": 1779286322.3578243
+    },
+    {
+      "context": "M'ha semblat que el text original en llatí del capítol XLIII és buit o no s'ha inclòs. Només apareix l'encapçalament `## XLIII.` sense contingut llatí a traduir.\n\nPodeu proporcionar el text llatí del capítol XLIII perquè pugui fer-ne la traducció?",
+      "timestamp": 1779286359.5805151
+    },
+    {
+      "context": "e li dóna, se li dóna, no a qui se li destina. Clarament era un fill de la Fortuna. En les seves mans el plom es tornava or. I és fàcil, quan tot roda rodó. I quants anys creus que va dur a sobre? Setanta i escaig. Però era dur com el corn, portava bé l'edat, negre com un corb. El coneixia d'antic, i encara era un home de ganes. Per Hèrcules, no crec que deixés ni un gos a casa. I és que era aficionat a les noies, home de totes les arts. No el censuro pas: això és l'únic que s'ha endut amb ell.»",
+      "timestamp": 1779286378.212451
+    },
+    {
+      "context": "El text original del capítol XLIV no ha estat inclòs en el camp de text llatí —el bloc de codi només conté l'encapçalament `## XLIV.` però cap contingut llatí a traduir.\n\nPodries proporcionar el text llatí del capítol XLIV? Un cop el tingui, el traduiré al català seguint totes les instruccions i el glossari indicats.",
+      "timestamp": 1779286417.0301185
+    },
+    {
+      "context": "considera el cel com a cel, ningú no guarda el dejuni, ningú no fa ni un pèl de cas de Júpiter, sinó que tothom, amb els ulls tancats, compta els seus béns. Abans, les dones amb estola anaven descalces pel turó, amb els cabells esparsos, l'ànima pura, i demanaven l'aigua a Júpiter. I aleshores de seguida plovia a bots i barrals: o llavors o mai, i tothom reia xop com rates. I per això els déus tenen els peus embolcallats de llana, perquè nosaltres no som religiosos. Els camps juen abandonats...»",
+      "timestamp": 1779286445.192495
+    },
+    {
+      "context": "El text llatí del capítol XLV que has proporcionat apareix buit —només conté l'encapçalament `## XLV.` sense cos textual. Si vols que tradueixi el contingut d'aquest capítol, caldrà que l'incloguis.",
+      "timestamp": 1779286482.0586658
+    },
+    {
+      "context": " hauries pres per galls de corral: un era un bast, l'altre coixejava, el tercer era mort per mort, amb els tendons tallats. [12] Un sol hi havia de certa vàlua, el traci, i aquell també va lluitar a la veu de comandament. Al capdavall, tots van ser retallats després; tant és, de la gran gentada havien rebut crits d'«Atureu-los»: una fugida en tota regla. [13] «Tanmateix, et vaig donar un espectacle», diu, «i jo t'aplaudeixo.» Fes els comptes, i et dono més del que he rebut. Una mà renta l'altra.",
+      "timestamp": 1779286511.6530719
+    },
+    {
+      "context": "## XLVI.",
+      "timestamp": 1779286529.86182
+    },
+    {
+      "context": "s'hi resisteix, tinc pensat posar-lo a aprendre un ofici: o barber, o pregoner, o si més no advocat, que això no li ho pot prendre ningú tret de l'Orco. [8] Per això li crido cada dia: \"Primigeni, creu-me, tot el que aprens, ho aprens per a tu. Mira Filerò l'advocat: si no hagués estudiat, avui no podria allunyar la fam dels llavis. Fa poc, fa ben poc, portava a les espatlles fardells de mercaderies per vendre; ara fins i tot s'enfronta a Norbà.\" Les lletres són un tresor, i l'ofici no mor mai.»",
+      "timestamp": 1779286551.2860236
+    },
+    {
+      "context": "El text llatí del capítol XLVII no ha estat inclòs en el missatge —només apareix l'encapçalament `## XLVII.` sense contingut. Podries proporcionar el text llatí original que cal traduir?",
+      "timestamp": 1779286587.1653688
+    },
+    {
+      "context": "tu que tens el costum de llevar-me la son de nit! I tanmateix, al triclini no veto a ningú que faci allò que li convé: els metges mateixos desaconsellen retenir-se. I si ve alguna cosa de més, tot és a punt a fora: aigua, orinals i altres atuells. Cregueu-me, si els vapors pugen al cervell, fan malbé tot el cos. Molts n'he conegut que han mort per no voler dir-se la veritat a si mateixos.» Li agraïm la seva generositat i condescendència, i tot seguit ofeguem el riure a força de brindis repetits.",
+      "timestamp": 1779286604.4959266
+    },
+    {
+      "context": "ra.» I tot seguit manà cridar el cuiner, i sense esperar la nostra elecció, ordenà que matessin el més vell, i li preguntà en veu alta: «De quina decúria ets?» Com que aquell respongué que era de la quarantena: «Ets comprat o nascut a casa?» «Cap de les dues coses —digué el cuiner—; em deixà a tu el testament de Pansa.» «Mira, doncs —digué—, de posar-hi cura; si no, et faré llençar a la decúria dels missatgers.» I el cuiner, recordat del poder del seu amo, se n'anà a la cuina amb les provisions.",
+      "timestamp": 1779286617.7574854
+    },
+    {
+      "context": "limita amb els territoris de Tarracina i Tàrent. Ara vull unir Sicília als meus petits camps, de manera que quan em vingui de gust anar a l'Àfrica, pugui navegar per les meves terres. Però explica'm tu, Agamèmnon, quina controvèrsia has declamat avui? Jo, si bé no porto causes, he après les lletres per a ús domèstic. I perquè no creguis que tinc les estudis en menyspreu, tinc tres biblioteques, una de grega i una altra de llatina. Digues, doncs, si m'estimes, la peristasi de la teva declamació.»",
+      "timestamp": 1779286628.5009606
+    },
+    {
+      "context": " cap controvèrsia; si no ha passat, no és res.» Mentre l'acompanyàvem amb els elogis més efusius, digué: «Et prego, Agamèmnon estimadíssim, recordes les dotze penalitats d'Hèrcules, o la faula d'Ulisses, com el Ciclop li va arrencar el polze amb unes tenalles de porc? De petit solia llegir aquestes coses a casa. I la Sibil·la de Cumes, jo mateix la vaig veure amb els meus propis ulls, penjada dins d'una ampolla; i quan els nois li deien: \"Sibil·la, ti thelis?\", ella responia: \"apothanin thelo\".»",
+      "timestamp": 1779286637.6152596
+    },
+    {
+      "context": "ui s'oblidaria d'esbuellar un porc? Per Hèrcules, jo no li perdonaria ni que hagués passat per alt un peix.» Però Trimalció no era del mateix parer; amb el rostre relaxat en una expressió jovial: «Doncs bé», digué, «ja que tens tan mala memòria, esbulla'l aquí davant nostre.» El cuiner, recobrada la túnica, va agafar el ganivet i va obrir el ventre del porc d'un costat i de l'altre amb mà tremolosa. I de seguida, de les incisions que s'anaven eixamplant pel pes, van vessar embotits i botifarres.",
+      "timestamp": 1779286654.5688794
+    },
+    {
+      "context": "Anníbal, home astut i gran bergant, va aplegar totes les estàtues de bronze, d'or i de plata en una sola pira i hi va calar foc; van fondre's totes en un bronze barrejat. Així, els artesans van agafar d'aquella massa i en van fer plats, safates i figuretes. D'aquesta manera va néixer el bronze de Corint: de tot barrejat en un, ni una cosa ni l'altra.» «Perdoneu-me si ho dic: jo prefereixo el vidre, que almenys no fa olor. I si no es trenqués, el preferiria a l'or; ara, però, és una cosa barata.»",
+      "timestamp": 1779286668.4396145
+    },
+    {
+      "context": "uè, si s'hagués sabut, l'or el tindríem per fang.\n\n## LII.\n\n«Pel que fa a la plata, sóc un gran aficionat. Tinc copes d'una urna de capacitat, unes cent, més o menys... on es veu com Cassandra mata els seus fills, i els nens morts hi jauen de tal manera que els creuríeu vius. Tinc una copa que em va deixar un dels meus patrons, on Dèdal tanca Níobe dins el cavall de Troia. I les baralles d'Hermeros i Petraites les tinc en gots, tot peces de pes; perquè el meu bon gust no el venc per cap diners.»",
+      "timestamp": 1779286681.5911293
+    },
+    {
+      "context": ", de no ser un inútil.» Al capdavall, mogut per les nostres súpliques, li concedí la gràcia. El noi, un cop alliberat, corregué al voltant de la taula i cridà: «Fora l'aigua, que entri el vi!» Acollírem amb gràcia la broma, i sobretot Agamèmnon, que sabia ben bé amb quins mèrits se'l tornava a convidar a sopar. Trimalció, encoratjat pels elogis, begué amb més alegria i, ja quasi begut, digué: «¿Cap de vosaltres no demana a la meva Fortunata que balli? Creieu-me: ningú no balla millor el còrdax.»",
+      "timestamp": 1779286692.3006718
+    },
+    {
+      "context": "I ell mateix, amb les mans alçades per damunt del front, imitava l'histrió Siri mentre tota la família entonava el cor: «madeia perimadeia.» I hauria sortit al mig de la sala, si la Fortunata no s'hi hagués acostat a l'orella; i crec que li degué dir que no escaïa a la seva dignitat fer aquelles bajocades tan vulgars. Però no hi havia res tan inconstant com ell: ara temia la seva Fortunata, ara tornava a la seva natura.\n\n## LIII.",
+      "timestamp": 1779286698.343501
+    },
+    {
+      "context": "é: «Qualsevol finca que em sigui comprada, si no en tinc notícia abans de sis mesos, prohibeixo que s'inscrigui en els meus comptes.» Ja es llegien també els edictes dels edils i els testaments dels guardaboscos, en els quals Trimalció era desheretat amb tot de considerands; ja els noms dels majordoms, i la d'una lliberta repudiada per un inspector, sorpresa al llit d'un banyista, i el majordom de l'atri desterrat a Baies; ja l'administrador processat, i un judici substanciat entre els cambrers.",
+      "timestamp": 1779286713.1912825
+    },
+    {
+      "context": "s, que travessés uns cercles de foc i que sostingués una àmfora amb les dents. Trimalció era l'únic que s'admirava d'aquelles coses, i deia que era un art ingrat: que, per altra banda, hi havia dues coses en la vida humana que contemplaria amb el major dels plaers: els acròbates i els tocadors de corn; la resta, animals, músics, bajanades pures. «Perquè jo també havia comprat còmics —va dir—, però vaig preferir que fessin atel·lana, i al meu flautista li vaig manar que cantés en llatí.»\n\n## LIV.",
+      "timestamp": 1779286721.282488
+    },
+    {
+      "context": "idat de buidar el porc. Així que vaig començar a mirar arreu el triclini, no fos que per la paret sortís algun mecanisme automàtic, sobretot després que van començar a assotar l'esclau que havia embolcallat el braç contusionat del seu senyor amb llana blanca en comptes de porpra. I la meva sospita no va anar gaire errada: en lloc del càstig, va arribar el decret de Trimalció, pel qual va manar que el noi fos lliure, perquè ningú no pogués dir que un home tan gran havia estat ferit per un esclau.",
+      "timestamp": 1779286736.0278192
+    },
+    {
+      "context": "l següent:\n\n«El que no esperes, ve de través,\ni la Fortuna governa els nostres afers des de dalt:\nper això, noi, dóna'ns vi de Falern.»\n\nA partir d'aquest epigrama va sorgir el tema dels poetes, i durant una bona estona la palma de la poesia va restar en mans de Mopsos el Traci, fins que Trimalció va dir: «Us ho demano, mestre, quin creis que és la diferència entre Ciceró i Publilius? Jo penso que l'un era més eloqüent, i l'altre, més honest. Perquè, ¿hi ha res millor que dir el que ells deien?»",
+      "timestamp": 1779286745.245282
+    },
+    {
+      "context": "ern, títol de l'estació tèbia,\ntot just ha fet el niu de la disbauxa dins l'olla.\nPer a què et serveix la perla cara, la baia de l'Índia?\n¿Potser perquè una matrona, guarnida amb joies marines,\nalcés els peus, indòmita, sobre un llit estranger?\nPer a què la maragda verda, el vidre preciós?\nPer a què desitges les pedres de foc de Cartago?\n¿Potser perquè la virtut brilli entre els carboncles?\n¿És just que una núvia es vesteixi de vent teixit,\ni es mostri nua en públic embolcallada en boira de lli?",
+      "timestamp": 1779286756.1005046
+    },
+    {
+      "context": "rar carn d'ànec; el canvista, que veu el coure a través de la plata. Perquè les bèsties mudes més laborioses són els bous i les ovelles: els bous, gràcies als quals mengem pa; les ovelles, perquè la llana ens fa anar amb garbo. I és una vergonya indigne que algú mengi carn de moltó i tingui una túnica. Les abelles, en canvi, les tinc per bèsties divines, perquè vomiten mel, encara que es digui que la porten de part de Júpiter. Però piquen, perquè allà on hi ha dolçor, hi trobaràs també amargor.»",
+      "timestamp": 1779286765.1127255
+    },
+    {
+      "context": "re un tall de carn i unes tauletes. «Canal i peu»: van portar una llebre i una sandàlia. «Murena i lletra»: va rebre un ratolí lligat a una granota i un manat de bledes. Vam riure una bona estona. N'hi va haver sis-cents d'aquests, que ja se m'han esborrat de la memòria.\n\n## LVII.\n\nPerò Ascilte, d'una llicència desmesurada, com que es burlava de tot aixecant les mans i reia fins a les llàgrimes, un dels conlliberts de Trimalció s'encengué de ràbia —aquell mateix que seia al meu costat—, i digué:",
+      "timestamp": 1779286777.7083745
+    },
+    {
+      "context": "a aquesta colònia essent un noi de cabells llargs; encara no s'havia construït la basílica. Però vaig posar-me a treballar per satisfer el meu senyor, un home de gran majestat i dignitat, la ungla del qual valia més que tot el que tu ets. I tenia a casa qui em posava la cama aquí i allà; però —gràcies al seu geni!— vaig saber nedar fins a la riba. Aquests sí que són veritables mèrits; perquè néixer lliure és tan fàcil com dir \"vine aquí\". Per què t'has quedat parat com un boc en un camp d'erbs?»",
+      "timestamp": 1779286806.5865276
+    },
+    {
+      "context": "El text original del capítol LVIII no ha estat inclòs en el camp «Text original (llatí)». Només apareix l'encapçalament `## LVIII.` però sense contingut llatí a traduir.\n\nPodries proporcionar el text llatí del capítol LVIII? Un cop el tingui, en faré la traducció al català seguint totes les instruccions i el glossari indicats.",
+      "timestamp": 1779286848.2125413
+    },
+    {
+      "context": "nec gens, o no te'n riuràs, per molt que tinguis la barba daurada. Ja m'encarregaré que Atena t'agafi ràbia, i aquell que primer et va fer de mestre. Jo no he après geometria, ni crítica, ni cançonetes sense cap ni peus, però sé les lletres dels picapedrers, sé dividir en cent parts, a pes, a mesura, a moneda. En fi, si vols alguna cosa, fem una petita aposta: surt, que porto la balança. Ja veuràs que el teu pare ha malbaratat els diners de les lliçons, per molt que sàpigues retòrica. Vet aquí:»",
+      "timestamp": 1779286868.7313445
+    },
+    {
+      "context": " vull guanyar diners i morir bé, que el poble juri per la meva mort, si no et persegueixo arreu amb la toga al revés. Bona cosa és també aquell que t'ensenya això: un babau, no un mestre. Nosaltres ho vam aprendre d'una altra manera. Perquè el mestre deia: «Estan les vostres coses a bon recapte? Dret a casa. Compte de mirar enrere, compte de maleir el qui és més gran que tu.» Però ara tot és una misèria: ningú no en surt per dos diners. Jo, que em veus així, dono gràcies als déus pel meu ofici.»",
+      "timestamp": 1779286880.7369099
+    },
+    {
+      "context": "osa a Aquil·les. Per aquesta raó Àiax s'entorna boig, i de seguida explicarà l'argument.» Quan Trimalció hagué dit això, els acròbates llançaren una gran cridòria, i enmig de la família que corria d'un costat a l'altre, fou portat en una safata de dos-cents un vedell bullit amb elm. El seguí Àiax, i amb l'espasa desembeinada, com si estigués boig, el tallà a trossos, i gesticulant ara cap amunt ara cap avall, recollí els bocins amb la punta de l'espasa i els repartí entre els comensals admirats.",
+      "timestamp": 1779286897.3731596
+    },
+    {
+      "context": "que algun acròbata davallés a través del sostre. No menys que jo, els altres comensals, plens d'estupor, alçaren els ulls esperant quina nova meravella els seria anunciada des del cel. I vet aquí que, oberts els panells del sostre, de sobte és abaixat un cercle immens, llançat sens dubte d'una gran bóta, del qual penjaven, al llarg de tot el seu perímetre, corones d'or amb ampolles d'alabastre d'ungüent. Mentre ens manen de prendre aquests regals de taula, girant els ulls cap a la taula <. . .>.",
+      "timestamp": 1779286906.3449867
+    },
+    {
+      "context": "çàrem i diguérem: «Feliç August, pare de la pàtria!». Tanmateix, com que alguns, fins i tot després d'aquesta veneració, s'apoderaven de les fruites, nosaltres també omplírem les tovalloles, jo sobretot, que no creia poder carregar prou el si de Gitó amb cap regal massa generós.\n\nEntretant entraren tres minyons cenyits amb túniques blanques, dos dels quals posaren sobre la taula els Lares amb les seves bulles, mentre un tercer, passant una copa de vi, cridava: «Que els déus ens siguin propicis!»",
+      "timestamp": 1779286918.825765
+    },
+    {
+      "context": ". T'ho demano, tan cert com que et vull veure feliç, explica allò que et va passar.» Niceros, encantat per l'afabilitat de l'amic, digué: «Que tots els guanys em fugin, si no fa estona que rebento de goig de veure't tan bé. Que sigui, doncs, tot alegria, encara que em fa por que aquells saberuts se'n riguin de mi. Que hi facin el que vulguin: ho explicaré igualment, perquè, ¿què em treu el qui se'n riu? Més val ser objecte de riure que de burla.»\n\nDit això,\ns'engegà a contar la història següent:",
+      "timestamp": 1779286930.5003154
+    },
+    {
+      "context": " ben feta. Però jo, per Hèrcules, no me'n preocupava pas per la carn ni per les coses de Venus, sinó més aviat perquè era una bona ànima. Si li demanava qualsevol cosa, mai no me la negava; feia un as, jo en tenia la meitat; li confiava allò que tenia al pit, i mai no em va decebre. El seu company de casa va morir a la finca. Així que vaig fer mans i mànigues, me les vaig enginyar com vaig poder per arribar fins a ella: perquè, com es diu, els amics es coneixen en els moments difícils.\n\n## LXII.",
+      "timestamp": 1779286941.0145068
+    },
+    {
+      "context": "car els ulls, sinó que de bon matí vaig fugir cap a casa del nostre Gai com una taverna saquejada; i quan vaig arribar al lloc on s'havia tornat de pedra la roba, no hi vaig trobar res més que sang. I quan vaig arribar a casa, el meu soldat jeia al llit com un bou, i el metge li curava el coll. Vaig comprendre que era un versàtil, i des d'aleshores no vaig poder menjar pa amb ell, ni que m'haguessin matat. Que cadascú en pensi el que vulgui; jo, si menteixo, que els vostres genis se m'emportin.»",
+      "timestamp": 1779286964.703683
+    },
+    {
+      "context": "## LXIII.\n\nQuan tots quedaren bocabadats d'admiració, Trimalció digué: «Amb el teu permís, i si és que hi ha alguna fe en aquest món, se m'han posat els cabells de punta, perquè sé que en Niceros no explica mai bajanades: al contrari, és un home de paraula i gens xerraire. I jo mateix us explicaré una cosa horrible. Un ase a les teules.»",
+      "timestamp": 1779286969.6191883
+    },
+    {
+      "context": "m tornar al nostre deure; però mentre la mare abraçava el cos del seu fill, el toca i veu un ninot de palla. No tenia cor, no tenia entranyes, no tenia res de res: és que les bruixes ja s'havien endut el noi i n'havien posat un substitut de pallús. Us ho demano, heu de creure-ho: hi ha dones que saben massa, hi ha les Nocturnes, i allò que és a dalt ho posen a baix. Per la resta, aquell home alt, després d'aquest succés, mai més no va recuperar el seu color, i al cap de pocs dies va morir boig.»",
+      "timestamp": 1779286986.2091947
+    },
+    {
+      "context": "l triclini havia canviat, quan Trimalció digué: «Et parlo a tu, Plocam: no expliques res? No ens dones cap alegria? I abans eres tan agradable, cantussejar tan bé les rèpliques, afegir-hi la cançoneta. Ai, ai, s'han acabat les figues dolces!» — «Ja fa temps», digué aquell, «que el meu carro ha acabat la cursa, des que em va agafar la gota. D'altra banda, quan era jove, de tant cantar gairebé em vaig tornar tísic. Ballar? Rèpliques? La barberia? Quan he tingut un igual, si no és un sol Apel·les?»",
+      "timestamp": 1779286996.046263
+    },
+    {
+      "context": " la pèrdua, besà el noi i li manà que li pujés a sobre l'esquena. Sense fer-se pregar, el noi s'aprofità del cavall, i amb la mà plena li anava colpejant les espatlles, i entre rialles cridava: «Boca, boca, quants n'hi ha aquí?» Reprimit, doncs, durant una estona, Trimalció manà que es preparés una gran copa i que es repartissin begudes a tots els esclaus que seien als peus, afegint-hi aquesta condició: «Si algú», digué, «no en vol acceptar, aboca-li-ho pel cap. De dia, severitat; ara, alegria.»",
+      "timestamp": 1779287016.6244895
+    },
+    {
+      "context": "cia que mengéssim, dient que les gallines eren sense os. Enmig d'això, un lictor colpejà les portes del triclini, i un comissari vestit de blanc entrà amb una gran comitiva. Jo, aclaparat per tanta majestuositat, vaig creure que havia arribat el pretor. Vaig intentar, doncs, aixecar-me i posar els peus descalços a terra. Agamèmnon es rigué d'aquell ensurt meu i digué: «Queda't quiet, home estúpid. Habines és sevir augustal i a més lapidari, que sembla que fa monuments funeraris d'allò més bons.»",
+      "timestamp": 1779287025.32833
+    },
+    {
+      "context": " ell també una copa més gran, i li preguntà com l'havien tractat. «Ho vam tenir tot», digué, «menys tu; però els meus ulls eren aquí. I per Hèrcules que va anar bé. Escissa feia el banquet dels nou dies per un pobret esclau seu, a qui havia alliberat en morir. I crec que tindrà una bona disputa amb els recaptadors del vintè; perquè valoren el mort en cinquanta mil sestercis. Però de totes maneres va ser agradable, encara que ens van obligar a abocar la meitat de les copes sobre els seus ossets.»",
+      "timestamp": 1779287035.876377
+    },
+    {
+      "context": "; jo, en canvi, en vaig menjar més d'una lliura, perquè sabia a senglar. I si, dic jo, un ós es menja un homenet, quant més ha de menjar-se l'homenet l'ós! Per acabar vam tenir formatge tendre i vi cuit i cargols d'un en un i trossos de tripa i fetgetes en plats i ous amb barret i nap i mostassa i un platet brut de merda —pau, Palamedes!— També van fer la volta en una palangana olives en vinagre, d'on alguns descarats en van agafar fins a tres grapes. Perquè al pernil li vam donar la llibertat.»",
+      "timestamp": 1779287053.7980034
+    },
+    {
+      "context": "mençat a aixecar-se, quan, feta la senyal, Fortunata fou cridada per tota la servitud quatre vegades i més. Vingué, doncs, cenyida amb un cinturó de color verd groguenc, de manera que per sota s'entreveia una túnica de color cirera, amb braçalets retorçats als turmells i sandàlies daurades. Aleshores, eixugant-se les mans amb el mocador que duia al coll, s'acostà al llit on estava reclinada Escintil·la, l'esposa d'Habinnes, i, besant-la mentre aquesta aplaudia, digué: «Quina alegria és veure't!»",
+      "timestamp": 1779287064.0701292
+    },
+    {
+      "context": "edà enrere Escintil·la, que es tragué del coll una capseta d'or que anomenava la seva Feliciona. D'allà en tragué dos cascavells i els donà a Fortunata perquè els mirés al seu torn, i digué: «Per la gràcia del meu senyor, ningú no en té de millors.» «Què dius?», intervingué Habinnes. «M'has buidat la bossa perquè et comprés uns vidres de colors. Francament, si tingués una filla, li tallaria les orelles. Si no fos per les dones, tot ens semblaria fang; però ara és com orinar calent i beure fred.»",
+      "timestamp": 1779287077.8629835
+    },
+    {
+      "context": "agà la cara, vermella d'indecència, amb un mocador.\n\n## LXVIII.\n\nPassat un cert temps, com que Trimalció havia manat que portessin el segon servei, els esclaus s'endugueren totes les taules i n'hi portaren d'altres, i escamparen serradures tenyides de safrà i de mini i, cosa que mai no havia vist abans, pols mòlta de pedra especular. Tot seguit, Trimalció digué: «Podria, és clar, acontentar-me amb aquest plat; al cap i a la fi, ja teniu el segon servei. Però si tens alguna cosa de bo, porta-la.»",
+      "timestamp": 1779287089.3396816
+    },
+    {
+      "context": "erò jo l'anava formant enviant-lo als saltimbanquis. Per això no té parió, tant si vol imitar mulaters com saltimbanquis. És d'allò més enginyós, malgrat que no hi ha res a fer amb ell: és sabater, és cuiner, és forner, esclau de totes les Muses. Té, però, dos defectes que, si no els tingués, seria un home complet: és retallat i ronca. Que sigui guerxo, no m'importa; com Venus, mira de costat. Per això no para mai la boca, amb prou feines tanca l'ull mai. El vaig comprar per tres-cents denaris…»",
+      "timestamp": 1779287103.4650307
+    },
+    {
+      "context": "uessin elogiat, aquell esclau sense vergonya tragué de la faldilla una llantia de terrissa i durant més de mitja hora imità els trompetistes, mentre l'Habinna li feia el contrapunt abaixant-se el llavi inferior amb la mà. Al capdavall sortí fins al mig de la sala i ara imitava els flautistes amb canyes trencades, ara, amb la capa i el fuet, representava els destins dels mulaters, fins que l'Habinna el cridà a prop seu, el besà, li allargà una copa i digué: «Molt bé, Massa; et regalo unes botes.»",
+      "timestamp": 1779287117.9037702
+    },
+    {
+      "context": "e ens hauria fet preferir morir de gana. Perquè quan fou servit allò que nosaltres crèiem que era un oca cebada, envoltada de peixos i de tota mena d'ocells, Trimalció digué: «Amics, tot el que veieu aquí servit és fet d'un sol cos.» Jo, que sóc home de molt bon seny, vaig entendre de seguida de què es tractava, i girant-me cap a l'Agamèmnon li vaig dir: «M'estranyaria que tot això no fos fet de fems, o si més no de fang. A Roma, per les Saturnals, he vist fer imitacions d'àpats d'aquesta mena.»",
+      "timestamp": 1779287128.6564593
+    },
+    {
+      "context": "i, no el meu cos, si no és que el meu cuiner ho ha fet tot de porc. No hi ha home de més talent. Si vols, et farà un peix de ventre de truja, un colom de llard, una tórtora de pernil, una gallina de costella. I per això li he posat jo mateix el nom més escaient; perquè es diu Dèdal. I com que té bon cap, li he portat de Roma un regal: uns ganivets d'acer nòric.» Va manar de seguida que els portessin, i en veure'ls els admirà. Fins i tot ens donà permís a nosaltres de provar la punta amb la boca.",
+      "timestamp": 1779287137.262539
+    },
+    {
+      "context": " recollí i els féu circular en una safata. A aquestes delícies les igualà el cuiner enginyós: portà cargols en una graella de plata i cantà amb una veu tremolosa i horripilant.\n\nEm fa vergonya referir el que segueix: car d'una manera inaudita, uns nois de cabells llargs portaren ungüent en una palangana de plata i ungiren els peus dels comensals reclinats, havent-los lligat abans les cames i els turmells amb garlandes de flors. D'aquell mateix ungüent, una mica fou abocat al vi i a les llànties.",
+      "timestamp": 1779287148.13345
+    },
+    {
+      "context": ", la teva companya, que s'hi posi.» Què us he de dir? Quasi ens van llençar dels llits, de tal manera que tota la servitud havia envaït el triclini. Jo, en tot cas, vaig notar que sobre meu s'havia col·locat el cuiner que havia fet l'oca de porc, que feia pudor de salmorra i condiments. I no li bastà amb reclinarse, sinó que de seguida es posà a imitar el tràgic Efes i, a cada moment, desafiava el seu amo a una aposta sobre si els verds guanyarien la primera palma a les properes curses del circ.",
+      "timestamp": 1779287158.0480201
+    },
+    {
+      "context": "teixa llet que nosaltres, encara que la mala sort els hagi aclaparat. Tanmateix, mentre jo visqui, aviat tastaran l'aigua de la llibertat. En resum, els allibero a tots en el meu testament. A Filargir, a més, li llego una finca i la seva companya; a Carió, també, un bloc de pisos, la vintena part i un llit amb el seu parament. A la meva Fortunata la faig hereva universal, i la encoman a tots els meus amics. I tot això ho faig públic perquè la meva servitud m'estimi ja des d'ara com si fos mort.»",
+      "timestamp": 1779287165.6264305
+    },
+    {
+      "context": "et sembla bé, també triclinis. Faràs tot el poble gaudint de bona vida. A la meva dreta hi posaràs l'estàtua de la meva Fortunata sostenint un colom, i que porti una gosseta lligada amb una corretja, i el meu minyonet, i àmfores ben segellades amb guix perquè el vi no s'escoli. I pots esculpir una urna trencada, i a sobre un nen que plora. Un rellotge al mig, perquè qualsevol que miri les hores, vulgui o no, llegeixi el meu nom. Mira també amb cura si aquesta inscripció et sembla prou adequada:»",
+      "timestamp": 1779287186.3222532
+    },
+    {
+      "context": "vivim? [3] Que així em veieu feliç: tirem-nos al bany, que corro jo amb el risc, no us en penedireu. [4] Escalfa que crema, com un forn.» — «Cert, cert», digué l'Habinnes, «de un dia en fer-ne dos, res no m'agrada més»; i s'aixecà descalç i seguí Trimalció, que n'estava encantant.\n\n[5] Jo, girant-me cap a l'Ascilt, li vaig dir: «Què en penses? Perquè jo, si veig el bany, de seguida em moro.» — [6] «Fem-los la viu-viu», digué ell, «i mentre ells van al bany, nosaltres escapecem entre la gentada.»",
+      "timestamp": 1779287201.2081733
+    },
+    {
+      "context": "ja s'havia redimit del gos feia una estona amb una astúcia ben aguda: tot allò que havia rebut de nosaltres del sopar ho havia escampat davant del qui bordava, i aquest, distret pel menjar, havia apaivagat la seva fúria. [10] Ara bé, com que, tots dos gelats, havíem demanat al majordom que ens deixés sortir per la porta, ell digué: «T'equivoques si creus que pots sortir per on has entrat. Mai no s'ha deixat sortir cap convidat per la mateixa porta; n'hi ha una per entrar i una altra per sortir.»",
+      "timestamp": 1779287211.9127433
+    },
+    {
+      "context": "cançons de Menècrates, tal com deien els qui entenien la seva llengua. La resta dels comensals corrien al voltant de la piscina amb les mans entrellaçades i omplien l'aire d'un enorme clamor de riallades. Altres, en canvi, intentaven recollir anells del terra amb les mans lligades a l'esquena, o bé, posant-se de genolls, es doblaven cap enrere i tractaven de tocar-se els polzes dels peus. Nosaltres, mentre els altres es feien els seus jocs, baixàrem a la banyera que es preparava per a Trimalció.",
+      "timestamp": 1779287225.5345101
+    },
+    {
+      "context": "re triclini on Fortunata havia disposat les seves elegàncies, de manera que, a la llum de les llànties, vaig poder fixar-me en uns petits pescadors de bronze i en unes taules completament de plata, i al voltant, copes de terrissa daurades, i el vi que davallava a la vista a través d'un filtre de tela. Aleshores Trimalció digué: «Amics, avui el meu esclau s'ha fet la barba —un home de profit, que no li faig cap mal dir-ho, i de confiança. Així que fem un brindis i sopem fins a l'alba.»\n\n## LXXIV.",
+      "timestamp": 1779287232.9151208
+    },
+    {
+      "context": "què o bé ha d'esclatar un incendi, o bé algú dels voltants ha de llençar l'ànima. Que sigui lluny de nosaltres! Així doncs, qui ens porti aquest delator rebrà una propina.» Dit i fet, d'un veí van portar un gall, que Trimalció va manar que es cougués en una olla de bronze. Així doncs, el va esquarterar aquell cuiner eruditíssim que poc abans havia fet aus i peixos d'un porc, i el va llençar a la cassola. I mentre Dèdal apurava una beguda ben calenta, Fortunata molia pebre amb un molinet de boix.",
+      "timestamp": 1779287242.9437962
+    },
+    {
+      "context": " ahir mateix em va prendre apart i em va dir: \"T'aconsello que no deixis extingir el teu llinatge.\" Però jo, fent el bonàs i no volent semblar lleuger, m'he clavat jo mateix la destral a la cama. Molt bé: ja m'encarregaré que m'hagis de buscar amb les ungles. I perquè entenguis de seguida el que t'has fet a tu mateixa: Habinna, no vull que li posis cap estàtua al meu monument, per no tenir baralles ni de mort. Més encara: perquè sàpiga que li puc fer el mal, no vull que em besi quan sigui mort.»",
+      "timestamp": 1779287267.0094416
+    },
+    {
+      "context": "El text original del capítol LXXV que has proporcionat és buit (només conté l'encapçalament `## LXXV.` sense contingut llatí). No hi ha res a traduir.\n\nSi vols, proporciona el text llatí del capítol LXXV i el traduiré amb molt de gust.",
+      "timestamp": 1779287304.0806372
+    },
+    {
+      "context": "llò que he decidit una vegada, clavat amb clau de taula queda. Però recordem els vius. Us demano, amics, que us ho passeu bé. Perquè jo també he estat com vosaltres sou ara, però amb el meu esforç he arribat fins aquí. El seny és el que fa els homes; tot l'altre és deixalla. Compro bé, venc bé; un altre us dirà altres coses. Rebento de bona sort. I tu, ploranera, encara plores? Ja me n'encarregaré que ploris el teu destí. Però, com estava dient, la meva parsimònia m'ha portat a aquesta fortuna.»",
+      "timestamp": 1779287321.1828644
+    },
+    {
+      "context": "«De l'Àsia vaig venir tan petit com és aquest canelobre. En resum, cada dia em mesurava amb ell, i per tenir el morrió pelut més aviat, m'untava els llavis amb la suor de la llàntia. Tanmateix, vaig estar catorze anys al servei dels plaers de l'amo. I no és cap vergonya allò que mana el senyor. Jo, però, també satisfeia prou la mestressa. Ja sabeu el que vull dir: callo, perquè no soc dels que es vanten.\n\n## LXXVI.",
+      "timestamp": 1779287331.6279418
+    },
+    {
+      "context": "irar dels negocis i vaig començar a prestar diners als lliberts. I a dir veritat, quan ja no volia continuar amb els negocis, un astròleg em va encoratjar a seguir: un grecàs que havia arribat per casualitat a la nostra colònia, de nom Serapa, conseller dels déus. Aquest em va dir fins i tot coses que jo havia oblidat; m'ho va desgranar tot fil per randa; coneixia les meves entranyes; gairebé fins i tot m'hauria pogut dir què havia sopat el dia abans. Hauríeu dit que havia viscut sempre amb mi.»",
+      "timestamp": 1779287352.525412
+    },
+    {
+      "context": "«Recordes, Gai —em va dir—, que tu vas fer tal i tal cosa? Recordes que en tal dia vas tenir tal i tal problema? Recordes que et vas casar en tal data?» Jo, que ho anava confirmant tot, em vaig quedar parat: semblava que havia viscut sempre amb mi.",
+      "timestamp": 1779287540.8558476
+    },
+    {
+      "context": "oves que s'aixecaven cap a les grans coses, com si fos un astre pestilent; i, corrompuda d'una vegada la norma, l'eloqüència es va aturar i va emmudir. En resum, qui va assolir després la fama de Tucídides, qui la d'Hipèrides? Ni tan sols la poesia va brillar amb un color sa, sinó que tot, com si s'hagués nodrit del mateix aliment, no va poder emblanquir fins a la vellesa. La pintura tampoc no va tenir un altre destí, des que l'audàcia dels egipcis va inventar una drecera per a un art tan gran.»",
+      "timestamp": 1779287555.6818135
+    },
+    {
+      "context": "aproven, com diu Ciceró, \"quedaran sols a les escoles\". De la mateixa manera que els aduladors de professió, quan van a la caça dels sopars dels rics, no mediten res amb tanta cura com allò que creuen que serà més grat als oients —car d'altra manera no obtindran el que cerquen si no han tendit algunes paranys a les orelles—, així el mestre d'eloqüència, si no ha posat a l'ham, com fa el pescador, aquell esquer que sap que els peixets aniran a picar, romandrà a la roca sense esperança de captura.",
+      "timestamp": 1779287566.243299
+    },
+    {
+      "context": "essin imitar, que es convencessin que no hi ha res de magnífic en allò que agrada als nens: aleshores aquella gran oratòria tindria el pes de la seva pròpia majestat. Ara, en canvi, els nens juguen a les escoles, els joves fan el ridícul al fòrum, i el que és més vergonyós que totes dues coses: allò que cadascú ha après malament de petit, no vol confessar-ho en la vellesa. Però perquè no penseu que he menyspreat la improvisació d'humilitat luciliana, jo mateix expressaré en vers allò que sento:»",
+      "timestamp": 1779287577.7186391
+    },
+    {
+      "context": "r lliure les regnes,\ni brandeixi les armes poderoses de Demòstenes.\nQue l'envoli aleshores la mà romana, i, alleugerida\ndel so grec, tenyida, canviï de sabor.\nQue de tant en tant la ploma, apartada del fòrum, emprengui el vol,\ni ressoni la fortuna marcada per un curs veloç.\nQue donin festins i guerres cantades amb veu ferotge,\ni amenacin les paraules grandioses del indomable Ciceró.\nCenyeix-te l'ànima amb aquests béns: així, amb un riu abundant,\nple de Pieris, abocaràs les paraules del teu pit.»",
+      "timestamp": 1779287591.2306347
+    },
+    {
+      "context": "emblava, d'una declamació improvisada d'algú que havia pres la suasòria d'Agamèmnon. Mentre els joves es reien de les sentències i posaven en ridícul l'estructura de tot el discurs, vaig aprofitar l'ocasió per escolar-me'n i vaig començar a córrer darrere d'Ascilt. Però no recordava bé el camí, perquè... ni sabia on era l'hostal. Així que per on anava, per allà mateix tornava, fins que, esgotat de córrer i ja xop de suor, m'acosté a una velleta que venia verdures del camp i li vaig dir:\n\n## VII.",
+      "timestamp": 1779287599.8334446
+    },
+    {
+      "context": "javen furtivament entre rètols i meretrius nues. Tard, o millor dit, ja massa tard, vaig comprendre que m'havien portat a un bordell. Maleïdes les trampes de l'anciana, em vaig cobrir el cap i vaig començar a fugir a través del mig del lupanari cap a l'altra banda, quan vet aquí que a la mateixa entrada em vaig topar amb Ascilt, igualment esgotat i mig mort: hauries dit que la mateixa velleta l'havia portat allà. Així que el vaig saludar rient i li vaig preguntar què feia en un lloc tan indigne.",
+      "timestamp": 1779287610.6081543
+    },
+    {
+      "context": "em prometé, amb tota la cortesia del món, que em guiaria. Llavors, havent-me fet passar per uns carrerons obscuríssims, em portà fins a aquest lloc, i traient els diners em començà a demanar que me li lliurés. Ja la meretriu havia cobrat un as per la cambra, ja ell m'havia posat la mà a sobre, i si no hagués estat el més fort, n'hauria pagat les conseqüències. <. . .> fins al punt que arreu tothom em semblava que havia begut vi de sàtir <. . .> i unint les forces menysprejàrem l'importú.\n\n## IX.",
+      "timestamp": 1779287620.0629907
+    },
+    {
+      "context": "a femenina, que ni tan sols l'alè te'l tens net?» Ascilt fingí horroritzar-se, i tot seguit, aixecant les mans amb més energia, cridà amb un esforç molt més gran: «No calles, gladiador obscè, que l'arena va acomiadar de la seva ruïna? No calles, assassí nocturn, que ni tan sols aleshores, quan feies el valent, vas lluitar amb una dona honesta, i que de la mateixa manera que ara ets el noi en un hostal, jo vaig ser el germà en un jardí?» —«Tu», vaig dir, «t'has escapat de la conversa del mestre.»",
+      "timestamp": 1779287634.9608889
+    },
+    {
+      "context": " banda de foragitar la pobresa. Tu saps de lletres, i jo també. Per no ser un obstacle als teus guanys, em comprometré a buscar una altra cosa; altrament, mil motius ens enfrontaran cada dia i ens escamparan per tota la ciutat amb murmuracions.»\n\nAscilt no s'hi negà i digué: «Avui, com que hem promès anar a sopar com a estudiants, no malbaratem la nit. Demà, però, ja que és el que em plau, em buscaré un allotjament i algun company.» —«És massa tard», vaig dir, «ajornar allò que ja s'ha decidit.»",
+      "timestamp": 1779287646.734941
+    },
+    {
+      "context": "o havia acabat tot, quan Ascilt s'acostà furtivament a la porta, i havent-ne forçat el forrellat amb tota la seva força, em trobà jugant amb el meu germà. Omplí la cambreta de riures i aplaudiments, em descobrí de sota la capa i digué: «Què feies, germà santíssim? Què? Fas vida de caserna?» I no es limità a les paraules, sinó que desllorigà la corretja del sarró i es posà a fuetejar-me sense contemplacions, afegint-hi encara dites insolents: «Així no s'ha de repartir amb el germà.»\n\n---\n\n## XII.",
+      "timestamp": 1779287656.9759789
+    },
+    {
+      "context": "a examinar el mantell amb força atenció. Al seu torn, Ascilt llançà una mirada als muscles del pagès comprador i, de sobte, s'immobilitzà sense dir res. Tampoc jo no el vaig veure sense cert neguit, perquè em semblava que era aquell mateix que havia trobat la túnica en el descampat. Era ell, sens dubte. Però com que Ascilt no s'acabava de fiar dels seus ulls i no volia fer res a la lleugera, s'acostà primer com si fos un comprador, li tragué el mantell de les espatlles i el palpà amb deteniment.",
+      "timestamp": 1779287668.8319483
+    },
+    {
+      "context": " li vaig dir que no calia anar amb rodeos, sinó que havíem de lluitar obertament per la via del dret civil, de manera que, si no volia tornar la cosa aliena al seu amo, que comparegués davant l'interdicte.\n\n## XIV.\n\nAscilt, en canvi, temia les lleis i deia: «Qui ens coneix en aquest lloc, o qui donarà crèdit a les nostres paraules? Jo, francament, prefereixo comprar-ho, tot i que és nostre i que ho reconeixem, i recuperar el tresor per uns quants diners, abans que endinsar-nos en un plet incert:",
+      "timestamp": 1779287681.4511027
+    },
+    {
+      "context": "Què fan les lleis, allà on regna tan sols el diner,\no allà on cap pobresa no pot vèncer?\nEls mateixos que passen la vida amb la bossa cínica a l'espatlla\nde vegades acostumen a vendre la veritat per monedes.\nAixí doncs, el judici no és res més que una mercaderia pública,\ni el cavaller que seu al tribunal aprova allò que ha comprat.»",
+      "timestamp": 1779287686.673999
+    },
+    {
+      "context": "omençar a agafar també nosaltres la túnica esquinçada i bruta, i a proclamar amb la mateixa indignació que allò que ells posseïen eren els nostres despulles. Però de cap manera la causa era igual, i els marxants que s'havien aplegat al crit es reien, com és costum, de la nostra indignació, perquè per aquella banda defensaven una vestidura riquíssima, i per la nostra, un pedaç que no hauria estat digne ni dels millors retalls. Aleshores Asciltos va dissipar bé el riure, i, fet el silenci:\n\n## XV.",
+      "timestamp": 1779287699.5780036
+    },
+    {
+      "context": "I així el cas va afavorir el desig de les dues parts. El pagès, indignat perquè li exigíem que exhibís el pedaç, va llançar la túnica a la cara d'Asciltos i, alliberats de la querella, ens ordenà que dipositéssim el mantell, que era l'únic que causava el litigi; i havent recuperat, com crèiem, el tresor, ens precipitàrem cap a l'hostal, i tancades les portes, comencem a riure'ns de l'astúcia no menys dels marxants que dels calumniadors, perquè amb enorme habilitat ens havien retornat els diners.",
+      "timestamp": 1779287715.9639618
+    },
+    {
+      "context": "re sol i les portes, obertes de sobte, van deixar passar qui entrava. Era una dona amb el cap cobert, i digué: «Pensàveu que us havíeu rigut de mi? Soc la serventa de Quartil·la, la qual vosaltres vàreu pertorbar en el seu ritu davant la cripta. Vet aquí que ella mateixa ve a l'hostal i demana que li sigui permès parlar amb vosaltres. No us pertorbeu. No acusa el vostre error ni el castiga; ans al contrari, s'admira de quin déu ha portat uns joves tan refinats fins a la seva contrada.»\n\n## XVII.",
+      "timestamp": 1779287726.4075997
+    },
+    {
+      "context": "rò no em preocupa tant el remei; car un dolor més gran bull al fons del pit, que m'aboca fins a la necessitat de la mort: que vosaltres, empesos per la llicència juvenil, no divulgueu el que heu vist al santuari de Priap, i no traieu a la llum del poble els designis dels déus. Estenc, doncs, les mans obertes vers els vostres genolls, i us demano i us suplico que no feu befa ni riota dels ritus nocturns, i que no vulgueu trair els secrets de tants anys, que amb prou feines coneixen mil persones.»",
+      "timestamp": 1779287746.0715108
+    },
+    {
+      "context": "í els cabells que queien per les orelles i digué: «Faig les paus amb vosaltres i us allibero del plet que tenia preparat. Que si no haguéssiu consentit en la medicina que us demano, ja estava a punt per a demà una colla de gent que hauria venjat el meu greuge i defensat la meva dignitat:\n\nSer menyspreat és una vergonya; imposar la llei, una arrogància;\nestimo allò que puc: anar per on em plagui.\nCar fins el savi, si el menystenen, teixeix querelles,\ni qui no degolla l'enemic, sol marxar vençut.»",
+      "timestamp": 1779287761.0941458
+    },
+    {
+      "context": "Llavors, tot batent les mans, esclatà de sobte en un riure tan fort que ens féu por. El mateix féu, a l'altra banda, la serventa que havia arribat primer; el mateix, la noieta que havia entrat amb ella.\n\n## XIX.\n\nTot havia ressonat amb un riure de farsa, mentre nosaltres ignoràvem quin canvi tan sobtat s'havia produït en els seus ànims, i ens miràvem ara a nosaltres mateixos, ara les dones. <. . .>",
+      "timestamp": 1779287766.5586596
+    },
+    {
+      "context": "en les més febles del món, és clar, davant nosaltres, que si no res més, érem del sexe masculí. A més, anàvem certament amb les túniques ben arromangades. Fins i tot jo ja havia distribuït les parelles de tal manera que, si calgués lluitar a fons, jo m'enfrontés amb Quartil·la, Ascilte amb la serventa, i Gitó amb la noieta. <. . .> Però llavors tota la nostra fermesa s'esfondrava en nosaltres, atordits com estàvem, i la mort, sense cap dubte, començava a cobrir els ulls dels desgraciats. <. . .>",
+      "timestamp": 1779287777.1008506
+    },
+    {
+      "context": "fil de les seves facècies: «I jo, digué, no sóc digne de beure?» L'esclava, delatada pel meu riure, picà de mans i digué: «T'ho he servit, sí: però tu sol, noi, t'has begut tanta medicina.» — «Ah, és així?», digué Quartil·la, «Encòlpius s'ha begut tot el que hi havia de sajolida?» I es commogué de costat amb un riure no gens indecent. Ni tan sols Gitó no pogué reprimir el riure al final, sobretot quan la noieta li envaí el coll i donà al noi, que no es resistia, una infinitat de petons.\n\n## XXI.",
+      "timestamp": 1779287789.6957717
+    },
+    {
+      "context": "a invocar la protecció dels Quirites, i per l'altre una noieta oprimia l'Ascilte amb un pinzell que havia impregnat igualment de sajolida. ⟨…⟩\n\nPer acabar-ho d'adobar, va aparèixer un cinaede cobert d'una capa de llana peluda de color murtrera i cenyit amb un cinturó… ara ens colpejava amb les anques retorçades, ara ens embruria amb petons pestilentíssims, fins que Quartil·la, brandant una vara de balena i amb les faldilles ben arromangades, ordenà que es concedís la llibertat als infeliços. ⟨…⟩",
+      "timestamp": 1779287798.1954298
+    },
+    {
+      "context": "ens inundaren també de Falern. Acollits a més amb nombrosos plats, quan ja ens lliscàvem cap al son: «¿Com és això?», digué Quartil·la, «¿teniu intenció de dormir, sabent com sabeu que es deu una vetlla al geni de Priap?» ⟨…⟩\n\n## XXII.\n\nCom que l'Ascilte, aclaparat per tants mals, s'esllenegués cap al son, aquella serventa que havia estat apartada amb violència li escampà per tota la cara una llarga capa de sutge, i li pintà els llavis i les espatlles amb besos furtius sense que ell se n'adonés.",
+      "timestamp": 1779287810.4837842
+    },
+    {
+      "context": "irar-la. Caigué també la taula amb la vaixella, i una copa que havia sortit disparada d'un cop de sort des del llit on dormia mig adormida una serventa li esclafà quasi el cap.\n\nAl cop d'aquell xoc, ella pegà un crit, i alhora delatà els lladres i despertà una part dels borratxos. Aquells siris que havien vingut a fer el saqueig, en adonar-se que els havien enxampat, s'estiraren tots dos al costat del llit, com si s'haguessin posat d'acord, i es posaren a roncar com si fessin estona que dormien.",
+      "timestamp": 1779287822.5680428
+    },
+    {
+      "context": "el pas, afegiu-hi carrera, voleu de planta,\namb la cuixa fàcil, el maluc àgil i la mà procaç,\ntous, vells, deliacs tallats a mà.*\n\nAcabats els seus versos, m'embrutà amb un petó immundíssim. Aviat pujà també al llit i, fent tota la força, em descobrí mentre jo m'hi resistia. Sobre els meus engonals molí llarg temps i molt, però en va. Li regalimaven pel front rierols d'acàcia suant, i entre les arrugues de les galtes hi havia tanta cerusa que hauries dit que una paret pelada patia sota la pluja.",
+      "timestamp": 1779287836.1898503
+    },
+    {
+      "context": "any, el destrossà a culetades i petons. Mentrestant Gitó estava dret i es tronxava de riure. Quartil·la, en veure'l, preguntà amb molt d'interès de qui era aquell noi. Com jo hagués dit que era el meu germà, ella digué: «Per què, doncs, no m'ha besat?» i, cridant-lo prop seu, l'estretà en un petó. Aviat li baixà també la mà al si i, havent-li palpalat el membre tan tendre: «Això», digué, «farà bona feina demà com a entrant de la nostra luxúria; que avui, després de l'ase, no prenc ració petita.»",
+      "timestamp": 1779287850.3205233
+    },
+    {
+      "context": "El text original del capítol XXV és buit —no conté cap contingut llatí a traduir, només l'encapçalament «## XXV.»\n\nSi vols, proporciona el text llatí del capítol XXV i el traduiré de seguida.",
+      "timestamp": 1779287886.0602562
+    },
+    {
+      "context": "ella més petita que jo quan vaig conèixer el primer home? Que Juno m'agafi la ira si mai recordo haver estat verge. De ben petita ja em vaig embrutar amb els meus iguals, i a mesura que anaven passant els anys m'anava aplicant a nois més grans, fins que he arribat a l'edat que tinc. D'aquí crec que ve aquell proverbi que diu que pot aixecar el bou qui ha aixecat el vedell.» Així doncs, per tal que el meu germà no rebés un greuge més gran en secret, em vaig alçar per complir amb el deure nupcial.",
+      "timestamp": 1779287899.3733823
+    },
+    {
+      "context": "a nupcial, i la Quartil·la, sobretot, havia aplicat l'ull curiós per una escletxa descaradament eixamplada, i amb diligència lasciva espiava el joc infantil. Amb mà suau m'arrossegà a mi també cap al mateix espectacle, i com que els nostres rostres s'havien ajuntat en contemplar-ho, en els moments que li quedaven lliures de l'espectacle, movia els llavis de passada i m'anava colpejant, per dir-ho així, amb furtius petons continus.\n\nLlençats als llits sense cap temor, passàrem la resta de la nit.",
+      "timestamp": 1779287911.8676567
+    },
+    {
+      "context": "ent de quina manera podríem esquivar la tempesta present, un esclau d'Agamèmnon interrompé els nostres neguits i digué: «Com? ¿No sabeu vosaltres a casa de qui és avui? A casa de Trimalció, un home d'allò més refinat. Al triclini té un rellotge i un trompeter de guàrdia, perquè sàpiga en tot moment quant de vida ha perdut!»\n\nEns vestim, doncs, amb cura, oblidats de tots els nostres mals, i ordenem al Gitó, que amb molt de gust exercia les funcions d'esclau, que ens segueixi als banys.\n\n## XXVII.",
+      "timestamp": 1779287920.7771595
+    },
+    {
+      "context": " qui ens havien atret cap a l'espectacle, sinó el pare de família en persona, que jugava descalç de peu amb una pilota de color verd. I no s'abaixava a recollir les que tocaven a terra: un esclau tenia un sac ple de pilotes i n'anava proveint els jugadors. Observàrem també dues coses insòlites: dos eunucs estaven plantats en costats oposats del cercle; l'un sostenia un orinal de plata, l'altre comptava les pilotes —no pas les que volaven d'una mà a l'altra en el joc, sinó les que queien a terra.",
+      "timestamp": 1779287930.7103944
+    },
+    {
+      "context": "Mentre admiràvem, doncs, aquells luxes, s'acostà corrents Menelau: «Aquí és», digué, «on us reclineu a sopar, i de fet ja esteu veient el principi del banquet.» I encara no havia acabat de parlar Menelau quan Trimalció va fer petar els dits, senyal a la qual un eunuc li posà l'orinal a sota mentre jugava. Alleugerida la bufeta, demanà aigua per a les mans, i els dits, tot just humitejats, se'ls eixugà al cap d'un noi.\n\n## XXVIII.",
+      "timestamp": 1779287936.936588
+    },
+    {
+      "context": "n anava el seu preferit: un noi vell, llaganyós, més lleig que el seu amo Trimalció. Mentre, doncs, se l'emportaven, un músic s'acostà al seu cap amb unes flautes molt petites i, com si li digués alguna cosa a cau d'orella en secret, li anà cantant durant tot el trajecte.\n\nEl seguírem nosaltres, ja farts de meravelles, i amb Agamèmnon arribàrem a la porta, al muntant de la qual hi havia enganxat un cartell amb aquesta inscripció:\n\nTOT ESCLAU QUE SURTI FORA SENSE ORDRE DE L'AMO REBRÀ CENT ASSOTS.",
+      "timestamp": 1779287949.9623575
+    },
+    {
+      "context": "A l'entrada mateixa hi havia el porter, vestit de verd, cenyit amb un cinturó color cirera, que pelava pèsols en una safata de plata. Per damunt del llindar penjava una gàbia daurada on una garsa de colors saludava els qui entraven.\n\n## XXIX.",
+      "timestamp": 1779287953.6485445
+    },
+    {
+      "context": "i les tres Parques filant els fils d'or. Vaig notar també al pòrtic un grup de corredors que s'exercitaven amb el seu mestre. A més, vaig veure en un racó un gran armari, en la capelleta del qual hi havia col·locats els Lares de plata, una figura de Venus en marbre i una capseta d'or no gens petita, on deien que hi guardava la seva pròpia barba. Vaig començar, doncs, a preguntar a l'atriense quines eren les pintures del mig. «La Ilíada i l'Odissea», va dir, «i el combat de gladiadors de Làenas.»",
+      "timestamp": 1779287968.9079468
+    },
+    {
+      "context": "uia aquesta inscripció: *EL 30 I EL 31 DE DESEMBRE, EL NOSTRE GAII SOPA FORA*; l'altra, el curs de la lluna i les imatges pintades dels set astres; i els dies favorables i els desfavorables s'assenyalaven amb una boleta de diferent color.\n\nSadollats d'aquests plaers, quan intentàvem entrar al triclini, un dels esclaus destinats a aquell servei va cridar: «Amb el peu dret!» Sens dubte ens vam quedar una mica perplexos, no fos cas que algun de nosaltres traspassés el llindar contra la prescripció.",
+      "timestamp": 1779287980.2957928
+    },
+    {
+      "context": "a regalat el dia del meu aniversari —de porpra de Tir, sens dubte, però ja rentada una vegada—. Bé, doncs, us el cedeixo.»\n\n## XXXI.\n\nObligats per tan gran favor, quan vam entrar al triclini, ens va sortir a l'encontre aquell mateix esclau per qui havíem intercedut, i, mentre nosaltres quedàvem bocabadats, ens va plantar uns petons molt espessos donant-nos les gràcies per la nostra bondat. «En definitiva», va dir, «aviat sabreu a qui heu fet el favor. El vi del senyor és la gràcia del majordom.»",
+      "timestamp": 1779287992.972469
+    },
+    {
+      "context": "ans, i d'altres venien darrere a ocupar-se dels peus i a treure'ns les durícies amb una destresa extraordinària. I ni tan sols en aquella tasca tan feixuga no callaven, sinó que cantaven de passada. Vaig voler comprovar si tota la família cantava, i per això vaig demanar una beguda. Un noi molt diligent me la va servir amb un cantarellat no menys agre, i el mateix feia qualsevol altre a qui se li demanava alguna cosa. Hauries dit que era el cor d'un pantomim, no el triclini d'un pare de família.",
+      "timestamp": 1779288000.1773424
+    },
+    {
+      "context": ". A la safata dels entremesos hi havia un ase de bronze de Corint amb una doble alforja, que duia olives blanques a un costat i negres a l'altre. Cobrien l'ase dues safates, a les vores de les quals hi havia gravat el nom de Trimalció i el pes de la plata. Hi havia també unes passarel·les soldades que sostenien llirots escampats de mel i rosella. I encara hi havia embotits fumejants posats damunt d'una graelleta de plata, i a sota de la graelleta, prunes de Síria amb grans de magrana.\n\n## XXXII.",
+      "timestamp": 1779288007.7272527
+    },
+    {
+      "context": "ant del coll, carregat de roba, havia deixat caure una tovallola de franja ampla amb borles penjant d'un costat i de l'altre. Duia també al dit petit de la mà esquerra un anell gran dauradís, i a l'última falange del dit següent, un altre de més petit que, al meu parer, era d'or pur, però tot ell sembrat d'estreletes de ferro soldades. I per no limitar-se a exhibir tan sols aquestes riqueses, descobrí el braç dret, adornat amb una polsera d'or i un cercle d'ivori unit per una làmina resplendent.",
+      "timestamp": 1779288017.2433598
+    },
+    {
+      "context": "Mentre s'escurava les dents amb un escuradents de plata, digué: «Amics, encara no em venia de gust venir al triclini, però per no fer-vos esperar més amb la meva absència, m'he privat de tot plaer. Permeteu-me, però, que acabi la partida.» El seguia un noi amb un tauler de fusta de terebint i fitxes de cristall, i vaig reparar en el detall més refinat de tots: en lloc de peces blanques i negres, feia servir denaris d'or i de plata.",
+      "timestamp": 1779288023.1833427
+    },
+    {
+      "context": "cules, temo que ja estiguin fecundats. Provem, però, si encara es poden xuclar.» Agafàrem unes culleres que pesaven no menys de mig lliure, i trencàrem uns ous fets de pasta de farina gruixuda. Jo gairebé vaig llençar la meva part, perquè em semblava que ja s'havia format un pollet. Però en sentir un comensal veterà dir: «Aquí hi ha d'haver alguna cosa bona», vaig continuar escorcollant la closca amb la mà i hi vaig trobar una becada molt grassa envoltada d'un rovell amanit amb pebre.\n\n## XXXIV.",
+      "timestamp": 1779288035.4751534
+    },
+    {
+      "context": "ombrar la plata juntament amb la resta de les escombraries. Tot seguit entraren dos etíops de cabells llargs amb uns odres petits, com els que solen tenir els qui escampen sorra a l'amfiteatre, i serviren vi a les mans; aigua, en canvi, no en va oferir ningú.\n\nL'amo fou lloat per tan refinada elegància. «Mart», digué, «estima la igualtat. Per això he manat que a cadascú li sigui assignada la seva pròpia taula. A més, aquests esclaus tan pestilents ens causaran menys calor amb la seva presència.»",
+      "timestamp": 1779288047.710117
+    },
+    {
+      "context": "doncs, i admiràvem amb tot detall aquells refinaments, un esclau portà un esqueleton de plata construït de tal manera que les articulacions i les vèrtebres, totes soltes, es podien doblegar en qualsevol direcció. Quan l'hagué llançat un parell de vegades sobre la taula, i la cadena mòbil n'hagué expressat diverses postures, Trimalció afegí:\n\nAi, pobres de nosaltres, com l'home és res de res!\nAixí serem tots, quan l'Orcus ens haurà endut.\nVisquem, doncs, mentre ens és donat de viure bé.\n\n## XXXV.",
+      "timestamp": 1779288058.5150664
+    },
+    {
+      "context": "el Sagitari, un ocell de dos ulls; damunt el Capricorn, una llagosta de mar; damunt l'Aquari, un oca; damunt els Peixos, dos molls. Al mig, un tros de gespa amb herbes retallades sostenia un rusc de mel. Un noi egipci feia la volta amb pa en un forn de plata. &lt;...&gt; I ell mateix, amb una veu horripilant, arrencà un cantarellat de la mímica del Làser. Com que ens acostàrem als menjars tan vulgars amb una certa tristesa, Trimalció digué: «Us aconsello que sopem; això és el que mana el sopar.»",
+      "timestamp": 1779288071.9435298
+    },
+    {
+      "context": " dit que era un gladiador de carro lluitant al so d'un orgue hidràulic. Trimalció, tanmateix, no parava de repetir amb veu molt pausada: «Trinxa! Trinxa!» Jo, sospitant que aquella paraula tan repetida amagava algun joc d'enginy, no em vaig avergonyir de preguntar-ho al qui jeia al meu costat. I ell, que havia presenciat aquella mena de jocs més d'una vegada, em digué: «Veus aquell que trinxa el menjar? Es diu Carpi. Així, cada vegada que diu \"trinxa\", amb la mateixa paraula el crida i li mana.»",
+      "timestamp": 1779288084.627002
+    },
+    {
+      "context": "No hi ha text llatí per traduir en el fragment marcat com `## XXXVII.` —el bloc de codi és buit. Proporciona el text llatí del capítol XXXVII i el traduiré de seguida.",
+      "timestamp": 1779288120.573972
+    },
+    {
+      "context": " de bon consell: ja veus quant d'or porta a sobre. Ara bé, té mala llengua, és una garsa de coixí. A qui estima, l'estima; a qui no estima, no l'estima. El mateix Trimalció té finques fins on volen els milans, diners a caramulls. A la cambra del seu porter hi ha més plata acumulada que la que qualsevol altre té en tota la seva fortuna. I la servitud — ai, ai! — per Hèrcules que no crec que ni la desena part conegui el seu amo. En resum, a qualsevol d'aquests babaus el posarà en un full de ruda.»",
+      "timestamp": 1779288134.5597298
+    },
+    {
+      "context": "## XXXVIII.",
+      "timestamp": 1779288135.9340434
+    },
+    {
+      "context": "desapareixen. I quin negoci tan honorable exercia, per veure'l com el veus ara! Era empresari de pompes fúnebres. Solia sopar com un rei: senglars coberts amb capa de llana peluda, pastisseria fina, aus, cuiners, forners. Més vi s'abocava sota la taula que el que alguns tenen al celler. Una fantasia, no un home. Quan les seves coses ja s'inclinaven, i temia que els creditors el creguessin en fallida, va anunciar una subhasta amb aquest títol: *GAI JULI PRÒCUL FARÀ SUBHASTA DE COSES SUPÈRFLUES.*»",
+      "timestamp": 1779288160.1023746
+    },
+    {
+      "context": "## XXXIX.\n\nTrimalció va interrompre aquelles converses tan agradables; ja s'havia retirat el plat, i els comensals, alegres, havien començat a dedicar-se al vi i a les xerrades generals. Ell, doncs, recolzat sobre el colze, digué: «Heu de fer que aquest vi us sàpiga bé: els peixos han de nedar. Us demano, creieu que jo estic content amb aquell sopar que havíeu vist a la safata de servei?\n\n*Així es coneix Ulisses?*»",
+      "timestamp": 1779288165.8872533
+    },
+    {
+      "context": "e miren les verdures i agafen el llard; sota Capricorn, els desgraciats, als quals els surten banyes a causa dels seus mals; sota Aquari, els taverners i les carabasses; sota Peixos, els cuiners i els retòrics. Així gira el món com una mola, i sempre fa algun mal, de manera que els homes o neixen o moren. I quant a allò que veieu al mig, el terròs, i sobre el terròs, el bresc, no faig res sense raó. La terra és la mare, rodona al mig com un ou, i conté en si mateixa tots els béns, com un bresc.»",
+      "timestamp": 1779288185.410387
+    },
+    {
+      "context": "conis es posaren a córrer al voltant de la taula. Els seguí una safata de servei sobre la qual hi havia un senglar de primera magnitud, i ben bé amb un barret de llibertat al cap, dels ullals del qual penjaven dues cistelletes teixides de palma, l'una plena de dàtils de Caria, l'altra de dàtils de Tebes. Al voltant, uns porcells petits fets de pasta de mel, com si s'enfilassin a les mamelles, indicaven que allò que hi havia era una truja. I aquests, en efecte, eren regals per emportar-se a casa.",
+      "timestamp": 1779288195.876726
+    },
+    {
+      "context": "nglar, i de la ferida en sortiren volant uns tords. Uns caçadors preparats amb les seves canyes estaven a punt, i els agafaren en un tres i no res mentre voltaven pel triclini. Aleshores, havent manat que cadascú se'n portés el seu, Trimalció afegí: «Fixeu-vos també amb quina glà rentada ha menjat aquell senglar de bosc.» Tot seguit uns nois s'acostaren a les cistelletes que penjaven dels ullals, i repartiren entre els comensals, en la mesura que corresponia, dàtils de Tebes i de Caria.\n\n## XLI.",
+      "timestamp": 1779288205.1602273
+    },
+    {
+      "context": ", totes les meves conjectures, em vaig armar de valor per preguntar al meu intèrpret allò que em turmentava. I ell: «Fins i tot això, el teu servent ho pot explicar perfectament: no és cap endevinalla, sinó una cosa ben clara. Aquest senglar, com que ahir al final del sopar els comensals l'havien reclamat i l'havien deixat anar, avui torna al banquet com si fos un llibert.» Vaig condemnar la meva pròpia estupidesa i no vaig preguntar res més, per no semblar que mai hagués sopat entre gent de bé.",
+      "timestamp": 1779288212.561478
+    },
+    {
+      "context": " Trimalció s'aixecà per anar al comú. Nosaltres, lliures del tirà, ens posàrem a animar la conversa entre els comensals.\n\nDama, doncs, va ser el primer a demanar una copa gran i digué: «El dia no és res. En un girar-se, ja és de nit. Així que no hi ha res millor que anar directament de l'alcova al triclini. I hem tingut un fred de debò. A penes m'ha escalfat el bany. Però una beguda calenta és com un abric. He apurat unes copes ben plenes i estic ben begut. El vi se m'ha pujat al cap.»\n\n## XLII.",
+      "timestamp": 1779288224.6881063
+    },
+    {
+      "context": "mpanyia als morts. Els metges l'han perdut, o millor dit, el destí advers; perquè el metge no és altra cosa que un consol per a l'ànima. Però el van enterrar com cal, en un bon llit de mort, amb bones estovalles. El plany va ser magnífic —va alliberar uns quants esclaus— tot i que la dona el va plorar de mala gana. I si no l'hagués tractada tan bé! Però la dona que és dona, és de la raça dels milans. No cal fer cap bé a ningú; és com si ho tiressis a un pou. Però un amor antic és com un càncer.»",
+      "timestamp": 1779288239.003454
+    },
+    {
+      "context": "El text original del capítol XLIII és buit —només conté l'encapçalament sense cos de text. No hi ha res a traduir.",
+      "timestamp": 1779288277.9245706
+    },
+    {
+      "context": "t, és donat, no a qui és destinat. Clarament era un fill de la Fortuna. En les seves mans el plom es tornava or. Però és fàcil quan tot roda quadrat. I quants anys creus que se'n va dur? Setanta i escaig. Però era dur com el corn, portava bé l'edat, negre com un corb. Jo el coneixia d'antic, i encara era un home calent. Per Hèrcules, no crec que deixés ni un gos a casa. I és que era aficionat a les noies, home de totes les Minerves. I no ho censuro, perquè això és l'únic que s'ha endut amb ell.»",
+      "timestamp": 1779288295.9110453
+    },
+    {
+      "context": "El text original del capítol XLIV és buit (només conté l'encapçalament `## XLIV.` sense cos de text). No hi ha res a traduir.",
+      "timestamp": 1779288331.5338504
+    },
+    {
+      "context": "ú no considera el cel com a cel, ningú no guarda el dejuni, ningú no fa ni un pèl de cas de Júpiter, sinó que tothom, amb els ulls tancats, fa comptes dels seus béns. Abans les dones amb estola pujaven descalces pel turó, amb els cabells esparsos, el cor pur, i demanaven l'aigua a Júpiter. I aleshores tot seguit plovia a bots i barrals: o en aquell moment o mai, i tothom reia xop com a rates. Ara els déus tenen els peus embolcallats de llana perquè nosaltres no som religiosos. Els camps juen...»",
+      "timestamp": 1779288359.6796467
+    },
+    {
+      "context": "El text original del capítol XLV no ha estat inclòs en el missatge —només apareix l'encapçalament `## XLV.` sense contingut llatí a continuació.\n\nPodries enganxar el text llatí del capítol XLV que vols que tradueixi?",
+      "timestamp": 1779288396.9583297
+    },
+    {
+      "context": "es dit que eren galls de corral: un era un garanyó, l'altre coixejava, el tercer era mort per mort, amb els tendons tallats. [12] Un sol hi havia de certa vàlua, el traci, i aquell mateix va lluitar a la veu de comandament. Al cap i a la fi, tots van ser esquarterats després; tant és, de la gran multitud havien rebut el «Que els portin»: pura fugida, tot plegat. [13] «Tanmateix, diu, t'he donat un espectacle — i jo t'aplaudeixo.» Fes comptes, i et dono més del que he rebut. Una mà renta l'altra.",
+      "timestamp": 1779288426.0251312
+    },
+    {
+      "context": "## XLVI.",
+      "timestamp": 1779288428.5103374
+    },
+    {
+      "context": "lletres ja n'ha embrutat prou. I si s'hi resisteix, tinc pensat fer-lo aprendre un ofici: o barber, o pregoner, o si més no advocat, que és el que ni l'Orco li pot prendre. [8] Per això li crido cada dia: \"Primigeni, creu-me, tot el que aprens, ho aprens per a tu. Mira Filerò l'advocat: si no hagués estudiat, avui no podria allunyar la fam dels llavis. Fa poc, fa ben poc, portava al coll mercaderies per vendre; ara fins i tot s'enfronta a Norbà.\" Les lletres són un tresor, i l'ofici no mor mai.»",
+      "timestamp": 1779288448.9197366
+    },
+    {
+      "context": "El text original del capítol XLVII és buit (només conté l'encapçalament `## XLVII.` sense contingut llatí). No hi ha res a traduir.\n\nSi vols, proporciona el text llatí del capítol XLVII i el traduiré de seguida.",
+      "timestamp": 1779288483.4008586
+    },
+    {
+      "context": "tunata, tu que tens el costum de privar-me del son a la nit! I tanmateix, al triclini no veto a ningú que faci allò que li convé, i els metges desaconsellen de retenir-se. O si ve alguna cosa de més, tot és a punt a fora: aigua, orinals i altres atuells. Cregueu-me, si els vapors pugen al cervell, fan onada per tot el cos. Conec molts que han mort per no voler-se dir la veritat a si mateixos.» Li agraïm la seva generositat i condescendència, i entre tant ofeguem el riure a força de petits glops.",
+      "timestamp": 1779288496.4064388
+    },
+    {
+      "context": "essen el cuiner, i sense esperar la nostra elecció ordenà que matessen el més vell, i amb veu forta li preguntà: «De quina decúria ets?» Com que ell respongué que era de la quarantena, Trimalció digué: «Comprat o nascut a casa?» —«Cap de les dues coses», respongué el cuiner; «em deixà a vós el testament de Pansa.» —«Mira, doncs», digué, «de posar-hi cura; si no, et faré llençar a la decúria dels missatgers.» I el cuiner, recordat del poder del seu amo, se l'endugué a la cuina amb les provisions.",
+      "timestamp": 1779288510.1297078
+    },
+    {
+      "context": "iu que és contigua als termes de Tarracina i Tàrent. Ara vull unir Sicília als meus petits camps, de manera que quan em vingui de gana d'anar a l'Àfrica, pugui navegar per les meves terres. Però explica'm tu, Agamèmnon, quina controvèrsia has declamat avui? Jo, si bé no porto causes, he après les lletres per a ús domèstic. I perquè no creguis que tinc en poc els estudis, tinc tres biblioteques, una de grega i una altra de llatina. Digues, doncs, si m'estimes, la peristasi de la teva declamació.»",
+      "timestamp": 1779288519.1931918
+    },
+    {
+      "context": " res.» Mentre l'acompanyàvem en tot això i en moltes altres coses amb elogis desmesurats, digué: «Et prego, Agamèmnon estimadíssim, ¿no recordes les dotze fatigues d'Hèrcules, o la història d'Ulisses, com el Ciclop li va arrencar el polze amb unes tenalles de porc? De petit jo solia llegir aquestes coses a casa. Perquè la Sibil·la de Cumes, jo mateix la vaig veure amb els meus propis ulls penjada en una ampolla, i quan els nois li deien: \"Sibil·la, ti thelis?\", ella responia: \"apothanin thelo\".»",
+      "timestamp": 1779288528.8694758
+    },
+    {
+      "context": "¿qui s'oblidaria de buidar un porc? Per Hèrcules, jo no li perdonaria ni que hagués passat per alt un peix.» Però Trimalció no era del mateix parer, i amb el rostre relaxat en una expressió jovial: «Doncs bé —digué—, ja que tens tan mala memòria, buida'l aquí davant nostre.» El cuiner, recuperada la túnica, va agafar el ganivet i va obrir el ventre del porc d'una banda i de l'altra amb mà tremolosa. I de seguida, de les incisions que s'anaven eixamplant pel pes, van vessar embotits i botifarres.",
+      "timestamp": 1779288546.034138
+    },
+    {
+      "context": " presa Ílion, Anníbal, home astut i gran bergant, va aplegar totes les estàtues de bronze, d'or i de plata en una sola pira i hi va calar foc; van fondre's en un sol bronze barrejat. Així, d'aquesta massa, els artesans en van treure i van fer plats, safates i figuretes. Així van néixer els bronzes de Corint: de tot barrejat en un, ni una cosa ni l'altra. Perdoneu-me si us dic la veritat: jo prefereixo el vidre, que almenys no fa olor. I si no es trenqués, el preferiria a l'or; ara bé, és barat.»",
+      "timestamp": 1779288559.9342542
+    },
+    {
+      "context": " s'hagués sabut, hauríem tingut l'or per fang.\n\n## LII.\n\n«En plata, en canvi, sóc un vertader entès. Tinc copes de la mida d'una urna, un centenar llarg... es veu com la Cassandra mata els seus fills, i els nens morts hi jauen de tal manera que els creuríeu vius. Tinc una copa que em va deixar un dels meus patrons, on Dèdal tanca la Níobe dins el cavall de Troia. I les baralles d'Hermeros i Petraites les tinc gravades en els gots, tot ben pesat; perquè el meu bon gust no el venc per cap diners.»",
+      "timestamp": 1779288573.2581336
+    },
+    {
+      "context": "er les nostres súpliques, li va concedir la remissió al noi. Un cop alliberat, el xicot va fer una volta al voltant de la taula i va cridar: «Fora l'aigua, que entri el vi!» Vam acollir la gràcia de la broma, i el primer de tots Agamèmnon, que sabia ben bé amb quins mèrits se'l tornava a convidar a sopar. Trimalció, encoratjat pels elogis, va beure amb més alegria i, ja quasi begut, digué: «¿Cap de vosaltres no li demana a la meva Fortunata que balli? Creieu-me: ningú no balla millor el còrdax.»",
+      "timestamp": 1779288584.5794346
+    },
+    {
+      "context": "I ell mateix, amb les mans alçades per damunt del front, imitava l'histrió Siri mentre tota la família entonava el cor: «madeia perimadeia.» I hauria sortit al mig de la sala, si la Fortunata no s'hi hagués acostat a cau d'orella; i crec que li va dir que no escaïa a la seva dignitat fer aquelles bajocades tan vulgars. Però no hi havia res tan desigual com ell: de vegades temia la seva Fortunata, de vegades tornava a la seva naturalesa.",
+      "timestamp": 1779288590.4690402
+    },
+    {
+      "context": "lsevol finca que em sigui venuda, si no en tinc notícia abans de sis mesos, prohibeixo que s'inscrigui en els meus comptes.» Ja es llegien també els edictes dels edils i els testaments dels guardes forestals, en els quals Trimalció era desheretat amb tot un elogi; ja els noms dels majordoms, i el d'una lliberta repudiada sorpresa en el llit d'un banyista per l'inspector; ja l'administrador del vestíbul relegat a Baies; ja l'administrador posat en judici, i una causa instruïda entre els cambrers.",
+      "timestamp": 1779288604.958012
+    },
+    {
+      "context": "capdamunt fes números, que travessés cercles de foc i sostingués una àmfora amb les dents. Trimalció era l'únic que s'admirava d'aquelles coses, i deia que era un art ingrat; que, per la seva banda, dues eren les coses en la vida humana que veia amb més gust: els acròbates i els tocadors de corn; la resta, animals, músics, bajanades pures. «Perquè fins i tot comediants havia comprat», digué, «però vaig preferir que fessin atel·lana, i al meu flautista li vaig manar que cantés en llatí.»\n\n## LIV.",
+      "timestamp": 1779288612.6389077
+    },
+    {
+      "context": " cuiner que s'havia oblidat de buidar el porc. Així que vaig posar-me a escrutar tot el triclini, no fos que per la paret sortís algun mecanisme automàtic, sobretot quan van començar a assotar l'esclau que havia embolcallat el braç contús del seu senyor amb llana blanca en lloc de porpra. I la meva sospita no va errar gaire: en lloc del càstig, va arribar el decret de Trimalció, pel qual manava que el noi fos lliure, a fi que ningú pogués dir que un home tan gran havia estat ferit per un esclau.",
+      "timestamp": 1779288626.976544
+    },
+    {
+      "context": "recitar el següent:\n\n«Allò que no esperes, ve de través,\ni la Fortuna gestiona els nostres afers des de dalt:\nper això, noi, dóna'ns vi del Falern.»\n\nA partir d'aquest epigrama va sorgir el tema dels poetes, i durant una bona estona la palma de la poesia va romandre en mans de Mops el Traci, fins que Trimalció va dir: «Us demano, mestre, què creieu que hi ha de diferència entre Ciceró i Publilius? Jo penso que l'un era més eloqüent, i l'altre, més honest. Perquè, què es pot dir millor que això?»",
+      "timestamp": 1779288636.0917737
+    },
+    {
+      "context": "l'hivern, emblema de la temporada càlida,\ntot just ha fet el niu de la disbauxa en una olla.\nPer a què et serveix la perla cara, la baia de l'Índia?\nPotser perquè una matrona, enjoiada amb pedres del mar,\nalcés els peus, indòmita, en un llit aliè?\nPer a què la maragda verda, el vidre preciós?\nPer a què desitges les pedres de foc de Cartago?\nSi no és perquè la virtut llampegui en els carboncles?\nÉs just que una núvia es vesteixi de vent teixit,\ni s'exhibeixi nua en públic dins una boirina de lli?",
+      "timestamp": 1779288646.945426
+    },
+    {
+      "context": "arar carn d'ànec; el canvista, que veu el coure a través de la plata. Perquè les bèsties mudes que més treballen són els bous i les ovelles: els bous, gràcies als quals mengem pa; les ovelles, perquè la seva llana ens fa anar galants. I és una vergonya que algú mengi carn de moltó i tingui una túnica. Les abelles, en canvi, les tinc per bèsties divines, perquè vomiten mel, tot i que es diu que la porten de part de Júpiter. Per això piquen, perquè allà on hi ha dolçor, hi trobaràs també amargor.»",
+      "timestamp": 1779288656.146782
+    },
+    {
+      "context": "re un tall de carn i unes tauletes. «Canal i peu»: van portar una llebre i una sandàlia. «Murena i lletra»: va rebre un ratolí lligat a una granota i un manat de bleda. Vam riure una bona estona. N'hi va haver sis-centes de semblants, que ja se m'han esborrat de la memòria.\n\n## LVII.\n\nPerò Ascilte, d'una llicència desenfrenada, com que es burlava de tot aixecant les mans i reia fins a les llàgrimes, un dels conlliberts de Trimalció s'encengué d'ira —aquell mateix que seia al meu costat— i digué:",
+      "timestamp": 1779288668.3491855
+    },
+    {
+      "context": "re. I vaig arribar a aquesta colònia essent un noi de cabells llargs; encara no s'havia construït la basílica. Vaig posar, tanmateix, tota la cura a satisfer el meu senyor, un home majestuós i digne, la ungla del qual valia més que tot tu. I tenia a casa qui em posava la cama aquí i allà; però —gràcies al seu geni!— vaig nedar fins a la riba. Aquests sí que són veritables triomfs; perquè néixer lliure és tan fàcil com dir \"vine aquí\". Ara per què t'has quedat parat com un boc en un camp d'erbs?»",
+      "timestamp": 1779288694.2583816
+    },
+    {
+      "context": "El text llatí del capítol LVIII no ha estat inclòs en el missatge —només n'apareix l'encapçalament. Si em proporcioneu el text llatí complet del capítol LVIII, el traduiré al català seguint totes les instruccions i el glossari indicats.",
+      "timestamp": 1779288730.7137885
+    },
+    {
+      "context": "m conec, o no te'n riuràs, per molt que tinguis la barba daurada. Ja m'encarregaré que Atenea s'enfadi amb tu, i amb aquell que primer et va fer el que ets. Jo no he après geometria, ni crítica, ni cançonetes absurdes, però sé les lletres de les pedres, dic les parts de cent en bronze, en pes, en moneda. En resum, si vols alguna cosa, tu i jo fem una petita aposta: surt, porto la balança. Ja veuràs que el teu pare ha malgastat els diners de les lliçons, per molt que sàpigues retòrica. Vet aquí:»",
+      "timestamp": 1779288750.5917804
+    },
+    {
+      "context": " i tant de bo mori feliç com el poble jura per la meva mort, si no t'he perseguit arreu amb la toga girada del revés. Bona cosa és també aquell que t'ensenya tot això: un babau, no pas un mestre. Nosaltres ho vam aprendre d'una altra manera. Perquè el mestre deia: «Teniu les vostres coses a bon recapte? Dret a casa. Compte de mirar enrere, compte de maleir el qui és més gran.» Però ara tot és un garbuix: ningú no val dos duros. Jo, que em veus així, dono gràcies als déus pel meu ofici.»\n\n## LIX.",
+      "timestamp": 1779288762.9221215
+    },
+    {
+      "context": "es. Per aquest motiu Àiax s'entorna boig, i de seguida explicarà l'argument.» Tan bon punt digué això Trimalció, els acròbates llançaren un gran crit, i enmig dels esclaus que corrien d'un costat a l'altre, fou portat en una safata de dos-cents un vedell bullit amb casc al cap. El seguí Àiax, que amb l'espasa desembeinada, com si estigués boig, el tallà a bocins, i gesticulant ara d'una banda ara de l'altra, recollí els trossos amb la punta de l'espasa i els repartí entre els comensals admirats.",
+      "timestamp": 1779288779.869087
+    },
+    {
+      "context": " bot, i vaig témer que algun acròbata davallés a través del terrat. No menys que jo, els altres comensals, plens d'estupor, alçaren els ulls esperant quina nova meravella els anunciaria el cel. I heus aquí que, oberts els panells del sostre, de cop i volta és abaixat un enorme cercle —arrencat, és clar, d'una gran bóta—, al llarg de tota la circumferència del qual penjaven corones d'or amb ampolles d'alabastre d'ungüent. Mentre ens manen que agafem aquests regals, em giro cap a la taula <. . .>.",
+      "timestamp": 1779288788.7794619
+    },
+    {
+      "context": " i diguérem: «Feliç August, pare de la pàtria!». Tanmateix, com que alguns, fins i tot després d'aquella veneració, s'apoderaven de les fruites, nosaltres també omplírem els mocadors; jo, sobretot, que no creia poder carregar prou el si de Gitó amb cap regal massa generós.\n\nEntretant entraren tres minyons cenyits amb túniques blanques, dos dels quals posaren sobre la taula els Lares amb les seves bulles, mentre l'altre, fent circular una pátera de vi, cridava: «Que els déus ens siguin propicis!»",
+      "timestamp": 1779288801.9911137
+    },
+    {
+      "context": "an cert com que vull veure'm feliç, explica allò que et va passar.» Niceros, encantat per l'afabilitat de l'amic, respongué: «Que tot el guany em passi de llarg si no fa estona que em rebento de goig en veure't tal com ets. Que sigui tot alegria, doncs, encara que em fa por que aquests saberuts se'n riguin de mi. Que s'ho mirin: ho explicaré igualment, perquè, al capdavall, què em lleva el qui se'n riu? Més val ser objecte de riure que de burla.»\n\nDit això,\ns'engegà a contar la història següent:",
+      "timestamp": 1779288812.9575737
+    },
+    {
+      "context": "Hèrcules, no em preocupava per ella per raons carnals ni per assumptes de Venus, sinó sobretot perquè era una bona persona. Si li demanava alguna cosa, mai no me la negava; feia un as, jo en tenia la meitat; li confiava els meus estalvis al si, i mai no em va decebre. El seu company de vida va morir a la vil·la, al final dels seus dies. Així que vaig fer mans i mànigues, me les vaig enginyar com vaig poder per arribar fins a ella: perquè, com diuen, els amics es coneixen en els moments difícils.",
+      "timestamp": 1779288821.549488
+    },
+    {
+      "context": "l dia vaig fugir cap a casa del nostre Gai com un taverner que li han saquejat el local; i quan vaig arribar al lloc on la roba s'havia tornat de pedra, no hi vaig trobar res més que sang. Però quan vaig arribar a casa, el meu soldat jeia al llit com un bou, i el metge li curava el coll. Vaig comprendre que era un versàtil, i des d'aleshores no vaig poder menjar pa amb ell, ni que m'haguessin matat. Que cadascú en pensi el que vulgui; jo, si menteixo, que els vostres genis se m'emportin la ira.»",
+      "timestamp": 1779288844.7604942
+    },
+    {
+      "context": "Quan tothom estava parat d'admiració, Trimalció digué: «Amb el permís del teu relat, Niceros, si hi ha alguna fe en el món, se m'han posat els cabells de punta, perquè sé que Niceros no explica mai bajanades: al contrari, és un home de paraula i gens xerraire. I jo mateix us explicaré una cosa horrible. Un ase a les teulades.»",
+      "timestamp": 1779288849.6089578
+    },
+    {
+      "context": "rnar al nostre deure, però mentre la mare abraçava el cos del seu fill, el toca i veu un ninot de palla. No tenia cor, no tenia entranyes, no tenia res de res: és que les estriges ja havien raptat el noi i n'havien posat un ninot de palla al seu lloc. Us ho demano, heu de creure-ho: hi ha dones que saben massa, hi ha les Nocturnes, i el que és a dalt ho posen a baix. Però aquell home alt, després d'allò, mai més no va recuperar el seu color, i fins i tot, al cap de pocs dies, va morir delirant.»",
+      "timestamp": 1779288865.891335
+    },
+    {
+      "context": "i que tot el triclini havia canviat, quan Trimalció digué: «Et dic, Plocam, que no expliques res? Que no ens dones cap alegria? I abans eres tan amè, cantussejar tan bé les rèpliques, afegir-hi la melodia. Ai, ai, s'han anat les dolces figues seques.» — «Ja fa temps», digué ell, «que el meu carro ha acabat la cursa, des que em va agafar la gota. D'altra banda, quan era jove, cantant gairebé em vaig tornar tísic. Ballar? Rèpliques? La barberia? Quan vaig tenir un igual, si no és un sol Apel·les?»",
+      "timestamp": 1779288874.6224136
+    },
+    {
+      "context": "va besar el noi i li va manar que li pujés a l'esquena. Sense fer-se pregar, el noi es va servir del cavall i, amb la mà plena, li anava colpejant les espatlles, i entre rialles va cridar: «Boca, boca, quants n'hi ha aquí?» Reprimit, doncs, durant una estona, Trimalció va manar que es barregés una gran gerra i que es repartissin begudes a tots els esclaus que seien als peus, afegint-hi aquesta condició: «Si algú», digué, «no en vol acceptar, aboca-li-ho pel cap. De dia, severitat; ara, alegria.»",
+      "timestamp": 1779288895.1793904
+    },
+    {
+      "context": "nes eren sense os. Enmig de tot plegat, un lictor va colpejar les portes del triclini, i un comissari, vestit de blanc i acompanyat d'una gran multitud, va fer entrada. Jo, aclaparat per aquella majestuositat, vaig creure que havia arribat el pretor. Vaig intentar, doncs, aixecar-me i posar els peus descalços a terra. Agamèmnon es va riure d'aquell neguit meu i digué: «Queda't quiet, home estúpid. Habines és sevir augustal i, a més, picapedrer; sembla que fa monuments funeraris d'allò més bons.»",
+      "timestamp": 1779288904.8068025
+    },
+    {
+      "context": " cabuda, i li preguntà com havia anat el convit. «Ho teníem tot», digué, «excepte tu; perquè els meus ulls eren aquí. I, per Hèrcules, va anar bé. Escissa feia un banquet dels nou dies per al seu pobret esclau, aquell que havia alliberat en morir. I, em sembla, té un bon embolic amb els recaptadors del vintè; perquè valoren el mort en cinquanta mil sestercis. Però tot i així va ser agradable, encara que ens haguéssim vist obligats a abocar la meitat de les copes sobre els seus ossets.»\n\n## LXVI.",
+      "timestamp": 1779288915.752225
+    },
+    {
+      "context": "vi, en vaig menjar més d'una lliura, perquè sabia a senglar. I si, dic jo, un ós es menja un homenet, amb quanta més raó un homenet s'ha de menjar un ós! [7] De postres teníem formatge tendre i most cuit, i un cargol cadascú, i trossos de tripa, i fetge en plats, i ous amb barret, i nap, i mostassa, i un platet de merda — pau a Palamedes! — També van fer la volta en una safata olives en vinagre, d'on alguns descarats en van agafar fins a tres grapes. Perquè al pernil li vàrem donar la llibertat.",
+      "timestamp": 1779288932.5594192
+    },
+    {
+      "context": "ecar-se, quan, feta la senyal, la Fortunata va ser cridada per tota la servitud fins a quatre vegades i més. Va venir, doncs, cenyida amb un cinturó de color verd groguenc, de manera que per sota s'entreveia una túnica de color cirera, amb braçalets retorçats als turmells i sandàlies daurades. Aleshores, eixugant-se les mans amb el mocador que duia al coll, s'acostà al llit on estava reclinada la Scintil·la, muller d'Habinnes, i, besant-la mentre aquesta aplaudia, digué: «Quin plaer és veure't!»",
+      "timestamp": 1779288943.5193481
+    },
+    {
+      "context": "quedà enrere la Scintil·la, que es tragué del coll una capseta d'or que anomenava la seva Feliciona. D'allà en tragué dos cròtals i els donà a la Fortunata perquè els mirés al seu torn, i digué: «Gràcies a la generositat del meu senyor, ningú no en té de millors.» — «Com?», digué Habinnes. «M'has buidat la bossa per comprar-te una perla de vidre. Francament, si tingués una filla, li tallaria les orelles. Si no fossin les dones, tot ens semblaria fang; però ara és com orinar calent i beure fred.»",
+      "timestamp": 1779288957.3463335
+    },
+    {
+      "context": "gonya del tot indecorosa.\n\n## LXVIII.\n\nPassat un cert temps, com Trimalció hagués manat que portessin el segon servei, els esclaus s'endugueren totes les taules i n'hi posaren d'altres de noves, i escamparen per terra serradures tenyides de safrà i de mini; i, cosa que mai no havia vist fins aleshores, pols de pedra de mirall mòlta. De seguida digué Trimalció: «Bé, podria donar-me per satisfet amb aquest plat; al cap i a la fi, ja teniu el segon servei. Però si tens alguna cosa de bo, porta-la.»",
+      "timestamp": 1779288969.7344756
+    },
+    {
+      "context": "mant enviant-lo a veure saltimbanquis. Per això no té parió, tant si vol imitar mulaters com saltimbanquis. És extraordinàriament enginyós, per bé que sembli un cas perdut: és sabater, és cuiner, és forner, esclau de totes les Muses. Té, però, dos defectes que, si no els tingués, seria un home complet: és retallat i ronca. Que sigui guerxo, no m'importa; com Venus, mira de costat. Per això no para mai la boca, i amb prou feines tanca l'ull ni quan dorm. El vaig comprar per tres-cents denaris...»",
+      "timestamp": 1779288987.0448942
+    },
+    {
+      "context": "perdut va treure's del pit una llantia de terrissa i durant més de mitja hora va imitar els trompetistes, mentre l'Habinna li feia el contrapunt i li abaixava el llavi inferior amb la mà. Al capdavall va avançar fins al mig de la sala i ara imitava els flautistes amb canyes trencades, ara, embolcallat en una capa amb un fuet a la mà, representava el destí dels mulaters, fins que l'Habinna el va cridar a prop seu, el va besar, li va oferir una copa i digué: «Molt bé, Massa; et regalo unes botes.»",
+      "timestamp": 1779289000.616971
+    },
+    {
+      "context": "s que ens hauria fet preferir morir de gana. Perquè quan va ser servit allò que nosaltres crèiem un oca cebada, envoltada de peixos i tota mena d'aus, Trimalció digué: «Amics, tot el que veieu aquí servit és fet d'un sol cos.» Jo, home perspicaç com soc, de seguida vaig comprendre de què es tractava, i girant-me cap a l'Agamèmnon: «Em sorprendria», vaig dir, «si tot això no és fet de fems o, si més no, de fang. A Roma, per les Saturnals, he vist fer imitacions d'aquest tipus de sopars.»\n\n## LXX.",
+      "timestamp": 1779289010.698153
+    },
+    {
+      "context": "i, no el meu cos, si el meu cuiner no ha fet tot això de porc. No hi ha home de més vàlua. Si vols, de la matriu et farà un peix, del llard un colom, del pernil una tórtora, de la cotna una gallina. I per això, amb el meu bon criteri, li he posat un nom bellíssim; es diu Dèdal. I com que té bon seny, li he portat de Roma un regal: uns ganivets d'acer nòric.» De seguida manà que els portessin, i en examinar-los els admirà. Fins i tot ens donà permís a nosaltres de provar la punta contra la galta.",
+      "timestamp": 1779289018.116417
+    },
+    {
+      "context": "ecollí i les féu circular en una safata. A aquestes delícies les igualà l'enginyós cuiner; car portà cargols en una graella de plata i cantà amb una veu tremolosa i horripilant.\n\nEm fa vergonya referir el que segueix: car, d'una manera insòlita, uns nois de cabells llargs portaren ungüent en una palangana de plata i ungiren els peus dels comensals reclinats, havent-los lligat abans les cames i els turmells amb garlandes de flors. D'aquest mateix ungüent, una mica fou abocat al vi i a la llàntia.",
+      "timestamp": 1779289028.9239297
+    },
+    {
+      "context": " la teva companya, que s'estengui.» Què us en diré? Gairebé ens tiraren dels llits, de tal manera la servitud havia envaït tot el triclini. Certament jo vaig notar que al meu damunt s'havia col·locat el cuiner, aquell que havia fet un ànec de porc, que fedia a salmorra i condiments. I no li bastà amb reclinarse, sinó que de seguida es posà a imitar l'actor tràgic Efes i, a cada moment, desafiava el seu amo a una aposta sobre si els verds guanyarien la primera palma a les properes curses de circ.",
+      "timestamp": 1779289041.6024797
+    },
+    {
+      "context": "eixa llet que nosaltres, encara que la mala sort els hagi aclaparat. Tanmateix, mentre jo visqui, aviat tastaran l'aigua de la llibertat. En resum, els allibero a tots en el meu testament. A Filargiró, a més, li llego una finca i la seva companya; a Carió, també, un bloc de pisos, la vintena part i un llit amb el seu parament. A la meva Fortunata la faig hereva universal, i la encoman a tots els meus amics. I tot això ho faig públic perquè la meva servitud m'estimi ja des d'ara com si fos mort.»",
+      "timestamp": 1779289054.2184098
+    },
+    {
+      "context": " faci, si et sembla bé, també un triclini. Faràs tot el poble passant-s'ho bé. A la meva dreta posaràs l'estàtua de la meva Fortunata sostenint una coloma, i que porti una gosseta lligada amb una corretja, i el meu noi, i àmfores ben segellades amb guix perquè no s'escoli el vi. I pots esculpir una urna trencada, i damunt un nen que plora. Un rellotge al mig, perquè qualsevol que miri les hores, vulgui o no, llegeixi el meu nom. Mira també amb cura si aquesta inscripció et sembla prou adequada:»",
+      "timestamp": 1779289076.9530282
+    },
+    {
+      "context": "quan Trimalció digué: «Bé, si sabem que hem de morir, per què no vivim? Que em veig feliç: tirem-nos al bany, a risc meu, no us en penedireu. Fa calor com un forn.» «Cert, cert», digué l'Habinnes, «de un dia fer-ne dos, res no vull més»; i s'aixecà descalç i seguí Trimalció, que anava content.\n\nJo em girà cap a l'Ascilt: «Què en penses?», li vaig dir, «jo, si veig el bany, em moro a l'acte.» «Fem-los la viu-viu», digué ell, «i mentre ells van al bany, nosaltres escorrem el bec entre la gentada.»",
+      "timestamp": 1779289090.9061747
+    },
+    {
+      "context": "l Gitó, però, ja s'havia rescatat del gos amb una astúcia ben aguda: tot allò que havia rebut de nosaltres de la cena ho havia escampat davant el gos que bordava, i aquell, distret pel menjar, havia ofegat la seva fúria. Per la resta, com que, tots dos gelats, demanàrem a l'atriense que ens deixés sortir per la porta, ell digué: «T'equivoques si creus que pots sortir per on has entrat. Mai cap convidat no ha estat deixat sortir per la mateixa porta; uns entren per una banda, surten per l'altra.»",
+      "timestamp": 1779289101.8395224
+    },
+    {
+      "context": "nçons de Menècrates, tal com deien els qui entenien la seva llengua. Els altres comensals corrien al voltant de la pica amb les mans entrellaçades i omplien l'aire d'un enorme clamor de riallades. D'altres, o bé intentaven recollir anells del paviment amb les mans lligades a l'esquena, o bé, posats de genolls, tractaven de doblegar el coll cap enrere i tocar-se els polzes dels peus. Nosaltres, mentre els altres es feien els seus jocs, baixàrem a la banyera que s'estava preparant per a Trimalció.",
+      "timestamp": 1779289114.9481266
+    },
+    {
+      "context": "m conduïts a un altre triclini on Fortunata havia disposat les seves magnificències, de manera que, a la llum dels llums, vaig poder fixar-me en uns petits pescadors de bronze i en taules totes d'argent i copes de terrissa daurada al voltant, i vi que davant nostre regalimava a través d'un filtre. Aleshores Trimalció digué: «Amics, avui el meu esclau s'ha fet la primera afaitada: és un home de profit, que no li faci d'ull, i estalviador. Així que fem un brindis i sopem fins a l'alba.»\n\n## LXXIV.",
+      "timestamp": 1779289121.9347453
+    },
+    {
+      "context": "è o bé ha d'haver-hi un incendi, o bé algú del veïnat ha d'estar llençant l'ànima. Que sigui lluny de nosaltres! Així que qui ens porti aquest delator rebrà una propina.» Dit i fet, del veïnat van portar un gall, que Trimalció va manar que es cougués en una olla de bronze. El va esquarterar, doncs, aquell cuiner eruditíssim que poc abans havia fet ocells i peixos d'un porc, i el va llençar a la cassola. I mentre Dèdal apurava una beguda ardentíssima, Fortunata molia pebre amb un molinet de boix.",
+      "timestamp": 1779289131.5452487
+    },
+    {
+      "context": "ton el perfumista em va prendre apart i em va dir: \"T'aconsello que no deixis extingir el teu llinatge.\" Però jo, fent el bonàs i no volent semblar lleuger, m'he clavat jo mateix una destral a la cama. Bé, ja m'encarregaré que m'hagis de buscar amb les ungles. I perquè entenguis de seguida el que t'has fet a tu mateixa: Habinna, no vull que li posis cap estàtua al meu monument, per no tenir baralles ni de mort. I més encara, perquè sàpiga que li puc fer mal, no vull que em besi quan sigui mort.»",
+      "timestamp": 1779289155.7956684
+    },
+    {
+      "context": "El text original del fragment LXXV és buit (només conté l'encapçalament de secció sense cos de text). No hi ha res a traduir.",
+      "timestamp": 1779289190.2148457
+    },
+    {
+      "context": "m un clau en una taula. Però recordem els vius. Us demano, amics, que us ho passeu bé. Perquè jo també vaig ser com vosaltres sou ara, però amb el meu esforç he arribat fins aquí. El seny és el que fa els homes; tot allò altre no és més que deixalles. Compro bé, venc bé; d'altres us en diran d'altres coses. Rebento de bona sort. I tu, plora-misèries, encara plores? Ja me n'encarregaré que tinguis motius de debò per plorar. Però, com anava dient, la meva parsimònia m'ha portat a aquesta fortuna.»",
+      "timestamp": 1779289208.4436853
+    },
+    {
+      "context": "«Vaig venir d'Àsia tan petit com és aquest canelobre. En fi, cada dia em mesurava al seu costat, i per tenir aviat barba al morro, m'untava els llavis amb oli de llàntia. Tot i així, vaig ser el favorit de l'amo durant catorze anys. I no és cap deshonra allò que mana el senyor. Jo, però, també satisfeia prou la mestressa. Ja sabeu el que vull dir: me'n callo, perquè no soc dels que es vanten.\n\n## LXXVI.",
+      "timestamp": 1779289214.3838387
+    },
+    {
+      "context": ": em vaig retirar dels negocis i vaig començar a prestar diners als lliberts. I a dir veritat, quan ja no volia continuar amb els negocis, em va encoratjar un astròleg que havia vingut per casualitat a la nostra colònia, un grecàs de nom Serapa, conseller dels déus. Em va dir fins i tot coses que jo havia oblidat; me les va desgranar totes fil per randa; coneixia les meves entranyes; gairebé l'únic que no em va dir era què havia sopat el dia abans. Hauríeu pensat que havia viscut sempre amb mi.»",
+      "timestamp": 1779289235.685724
+    }
+  ]
 }

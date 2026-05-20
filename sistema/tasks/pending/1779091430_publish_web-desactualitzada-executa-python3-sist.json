@@ -1,0 +1,17 @@
+{
+  "id": "1779091430_publish_web-desactualitzada-executa-python3-sist",
+  "type": "publish",
+  "priority": 3,
+  "created_at": "2026-05-18T08:03:50Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "Web desactualitzada. Executa 'python3 sistema/web/build.py'. Commit i push.",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null
+}

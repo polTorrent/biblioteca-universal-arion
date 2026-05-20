@@ -14,6 +14,7 @@ LOCKFILE="$TASKS_DIR/worker.lock"
 DIEM_STOP="$STATE_DIR/diem_stop"
 VENICE_CLI="$HOME/.hermes/skills/openclaw-imports/venice-ai/scripts/venice.py"
 MIN_DIEM=1.0
+DIEM_RESERVE=0.5
 
 log() {
     echo "[$(date '+%Y-%m-%d %H:%M:%S UTC')] [START] $1"
@@ -31,6 +32,15 @@ if [ -f "$LOCKFILE" ]; then
     fi
 fi
 
+# ── Registrar DIEM inicial del cicle ──────────────────────────────────────────
+if [ -f "$VENICE_CLI" ]; then
+    INITIAL_DIEM=$(python3 "$VENICE_CLI" balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
+    if [ -n "$INITIAL_DIEM" ]; then
+        echo "$INITIAL_DIEM" > "$STATE_DIR/cycle_diem_start"
+        log "💰 DIEM inicial del cicle: $INITIAL_DIEM (marge reservat: $DIEM_RESERVE)"
+    fi
+fi
+
 # Comprovar DIEM_STOP i netejar si el DIEM és suficient
 if [ -f "$DIEM_STOP" ]; then
     log "⚠️ Fitxer diem_stop detectat. Comprovant saldo DIEM..."
@@ -39,13 +49,15 @@ if [ -f "$DIEM_STOP" ]; then
         BALANCE=$(python3 "$VENICE_CLI" balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
         
         if [ -n "$BALANCE" ]; then
-            IS_LOW=$(python3 -c "print('yes' if float('$BALANCE') < $MIN_DIEM else 'no')" 2>/dev/null)
+            # Amb marge: DIEM - RESERVE >= MIN_DIEM
+            AVAILABLE=$(python3 -c "print(round(float('$BALANCE') - $DIEM_RESERVE, 4))" 2>/dev/null)
+            IS_LOW=$(python3 -c "print('yes' if float('$AVAILABLE') < $MIN_DIEM else 'no')" 2>/dev/null)
             
             if [ "$IS_LOW" = "no" ]; then
-                log "✅ DIEM suficient ($BALANCE >= $MIN_DIEM). Esborrant diem_stop..."
+                log "✅ DIEM suficient ($BALANCE, disponible amb marge: $AVAILABLE >= $MIN_DIEM). Esborrant diem_stop..."
                 rm -f "$DIEM_STOP"
             else
-                log "🛑 DIEM insuficient ($BALANCE < $MIN_DIEM). No s'iniciarà el worker."
+                log "🛑 DIEM insuficient ($BALANCE, disponible amb marge: $AVAILABLE < $MIN_DIEM). No s'iniciarà el worker."
                 log "   Executa manualment: bash sistema/automatitzacio/reset-diem.sh"
                 exit 1
             fi

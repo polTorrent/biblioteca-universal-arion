@@ -1,7 +1,314 @@
 {
-  "traduccions": {},
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  "ultim_context": "de les austeritats religioses, ni cap coneixement dels misteris divins, vaig imaginar-me d'ordir exhortacions en vers i oficis musicals, com a coses captivadores per a la ment dels homes, i especialment per als romans, que són naturalment d'humor jovial i amants de les exposicions incisives. Així com a un infant malalt se l'afalaga perquè prengui una medecina saludable, encara que repugnant, de la mateixa manera els romans van ser conduïts per l'art a adquirir el gust per la veritat espiritual.»",
+  "timestamp": 1779115532.8679628,
+  "historial": [
+    {
+      "context": "                               TRÜBNER\n\n                          SÈRIE ORIENTAL.\n\n\n\n\n                       EDIMBURG: IMPRÈS PER\n                BALLANTYNE, HANSON AND CO., PAUL'S WORK\n                     I CHANDOS STREET, LONDRES\n\n\n\n\n                              EL MASNAVI\n\n       (CONEGUT HABITUALMENT COM EL MASNAVI-YI XARIF, O SANT MASNAVI)\n\n                                  DE\n\n         MAWLANA (EL NOSTRE SENYOR) JALAL AL-DIN, MUHÀMMAD, AR-RUMÍ.\n\n                            LLIBRE PRIMER.",
+      "timestamp": 1779114769.0131586
+    },
+    {
+      "context": ",\n\n                                  PER\n\n                   JAMES W. REDHOUSE, M.R.A.S., ETC.\n\n                                LONDRES:\n                     TRÜBNER & CO., LUDGATE HILL.\n                                 1881.\n\n                       [_Tots els drets reservats._]\n\n\n\n\n«Mathnaoui o Methnevi (en persa i turc: _Masnavi_). És el\nnom d'un dels Llibres més famosos de l'Orient, compost en vers persa\nsobre un gran nombre de matèries diverses de Religió, d'Història, de\nMoral i de Política.",
+      "timestamp": 1779114778.6088977
+    },
+    {
+      "context": "Dervixos més espirituals que els altres, anomenats ordinàriament Mevlevís, els quals fan llur Llibre cabdal de l'obra del seu Mestre, a la qual no porten gairebé menys respecte que a l'Alcorà. És per això que sovint hom dóna també al Masnavi el sobrenom de Mevleví.\n\n«Hi ha un gran nombre de Comentaris Perses i Turcs sobre aquest Llibre, la poesia del qual és estimada tan excel·lent que tots els seus versos s'hi citen com altres tantes sentències.»—_D'Herbelot_, Bibliothèque Orientale.\n\n\n\n\nÍNDEX.",
+      "timestamp": 1779114788.138291
+    },
+    {
+      "context": "             99\n\n     V.  Xeic Salāh al-Din, Faridun                                  110\n\n    VI.  Çelebi Husam al-Din, Hasan                                  113\n\n   VII.  Bahā al-Din, Sultan Veled                                   122\n\n  VIII.  Çelebi Emir Àrif                                            126\n\n    IX.  Genealògic                                                  132\n\n\n                        _EL MASNAVI—LLIBRE I._\n\n  PREFACI                                                      i",
+      "timestamp": 1779114794.8181822
+    },
+    {
+      "context": " Guerra Major (Espiritual)                                 101\n\n  VII. El Mercader i el Lloro                                       114\n\n VIII. L'Arpista                                                    139\n\n   IX. El Pobre Àrab Beduí i la seva Dona                           165\n\n    X. Paciència i Perseverança                                     212\n\n   XI. La Cacera del Lleó                                           218\n\n  XII. Josep i el Mirall                                            228",
+      "timestamp": 1779114802.7032642
+    },
+    {
+      "context": "XIII. L'amanuense del Profeta                                       234\n\n   XIV. Els artistes xinesos i romans d'Orient                       248\n\n    XV. La inspiració de Zayd                                        254\n\n   XVI. La indulgència d'Alí                                         270\n\n  CONCLUSIÓ                                                          289\n\n\n\n\nPREFACI DEL TRADUCTOR.[1]",
+      "timestamp": 1779114815.093477
+    },
+    {
+      "context": "degué sobreviure aquesta darrera data. Com a deixeble de l'Emīr ‘Ārif, era un dervix de l'orde anomenat Mevleví, és a dir, seguidor de la regla i les pràctiques de Mawlana Jalal al-Din, er-Rūmī, coneguts habitualment en la literatura anglesa com a «dervixos dansaires», expressat pels nord-americans com a «dervixos giravoltants». Els dervixos de l'orde no dansen ni «giravolten» pas tots. Alguns són músics, i d'altres cantors o salmistes, els quals poden, tanmateix, ser també dansaires ocasionals.",
+      "timestamp": 1779114824.3177986
+    },
+    {
+      "context": "ades per a finalitats generals que no siguin de naturalesa cronològicament crítica. Comencen amb l'any 605 de l'Hègira (1208 dC), i abasten així un període de 145 anys datats, a més d'uns altres 30 anys de la vida de l'avi de Jalal sense datar, el qual fou un noble de tan alt rang i de tan gran reputació de saviesa i santedat a Balkh, que el rei li donà la seva única filla en matrimoni, sense que ell la demanés. La mare de Jalal era també una princesa de la mateixa casa reial que la seva esposa.",
+      "timestamp": 1779114832.715175
+    },
+    {
+      "context": "ipte, Síria i l'Àsia Menor.\n\nLa família de Jalal pretenia descendir d'Abu-Bakr, sogre i primer successor de Mahoma, el legislador de l'islam. Un dels descendents d'Abu-Bakr es comptava entre els conqueridors de l'antiga Bactriana, quan aquesta fou sotmesa per primera vegada al domini musulmà, vers l'any 650 dC, sota el califa Uthman; i els seus fills havien mantingut una posició preeminent en aquell país, posseïdors de grans riqueses, fins al temps immediatament anterior a la irrupció de Gengis.",
+      "timestamp": 1779114842.489484
+    },
+    {
+      "context": "anys; i fou casat, a Larenda, amb una dama anomenada Gevher (Perla), filla d'un cert Lala Xerefuddín de Samarcanda, l'any 1226 dC. Ella li infantà allí dos fills, Alauddín (mort més tard en un avalot a Konya) i Bahauddín Sultan Veled, per qui es va perpetuar la successió de la casa. Sembla que morí força jove, car Jalal es casà després amb una altra dama de Konya, que el va sobreviure, i amb la qual tingué dos fills més, un noi i una noia. (Vegeu Anècdotes, Cap. iii, núm. 69, per a una variant.)",
+      "timestamp": 1779114855.2197654
+    },
+    {
+      "context": " l'any 1236 dC.\n\nA la mort del seu pare, Jalal anà a Alep i a Damasc durant uns quants anys per estudiar, i tornà després a Konya, on fou nomenat professor de quatre col·legis distints. La seva reputació de saviesa i santedat esdevingué immensa.\n\nPerò abans d'aquest viatge a Damasc, sembla que féu una estada a Larenda. Car un antic deixeble del seu pare a Balkh, que havia esdevingut un gran sant i anacoreta, vingué a Konya a cercar Jalal, i fou la causa que aquest tornés de Larenda a la capital.",
+      "timestamp": 1779114863.6251333
+    },
+    {
+      "context": "Aquest era el xeic i sayyid Burhan al-Din, que esdevingué durant un cert temps el mestre espiritual de Jalal. Les dates que se'ns donen no concorden en les diverses branques de la compilació d'Aflaki; car aquí ens parla d'un període de nou anys d'estudi espiritual a Konya sota Burhan.",
+      "timestamp": 1779114867.7854636
+    },
+    {
+      "context": "ll, que finalment esclatà en un avalot. El fill primogènit de Jalal, Alà al-Din, hi morí o hi quedà ferit de mort. La policia local arrestà Shams al-Din en conseqüència, i els seus amics ja no el tornaren a veure viu mai més. El mateix Jalal anà a Damasc, amb l'esperança que potser l'haguessin foragitat, o que hagués pogut fugir, d'amagat. Però l'esforç fou và. Tradicions posteriors fan que el seu cadàver fos recuperat i enterrat a Konya, divergint, tanmateix, pel que fa al lloc de la sepultura.",
+      "timestamp": 1779114878.4970326
+    },
+    {
+      "context": "Quan Jalal s'adonà que necessitava ajuda per dur a terme els diversos deures que requeien sobre ell, escollí primer per a aquest càrrec el seu antic company d'estudis, el xeic Salah al-Din Faridun, anomenat Zarkub (el Batedor d'Or) per raó del seu ofici. Aquest assistí Jalal durant prop de deu anys, i morí l'any 1258 de l'era cristiana.",
+      "timestamp": 1779114883.8101885
+    },
+    {
+      "context": "en a Konya i altres ciutats de l'Àsia Menor, tots ells anomenant-se Akhi, i distingits com Akhi Ahmed, Akhi Eshref, etc. La paraula «Akhi» és àrab i significa «el meu germà». També pot voler dir «emparentat amb un germà», com ara servent, esclau, client, etc., d'algun príncep o semblant; o bé «germà» dervix d'algun orde religiós. Tanmateix, aquests nombrosíssims individus anomenats Akhi bé podrien haver estat cadascun «germà» d'alguna d'aquestes confraries, o fins i tot d'algun gremi industrial.",
+      "timestamp": 1779114892.8220448
+    },
+    {
+      "context": " El segon volum es començà l'any 1263. Hi havia hagut un interval de dos anys entre l'acabament del primer i el d'aquest, causat pel dol de Husām per la mort de la seva esposa. Es diu que l'obra sencera conté vint-i-sis mil sis-cents seixanta dístics. També s'ha atribuït al Masnavi un setè volum o llibre, per completar el nombre fins al dels «set planetes»; alguns diuen que fou compost o recopilat pel Sultan Veled. Les anècdotes d'Eflākī esmenten també molts centenars d'odes compostes per Jalāl.",
+      "timestamp": 1779114901.9431841
+    },
+    {
+      "context": "ment amb el cant o la salmòdia, com a acompanyament de la dansa sagrada, a causa de la naturalesa apàtica dels «romans». Tal com s'incita un infant a prendre una medecina saludable oferint-li una mica de melmelada o de mel, així Jalāl va jutjar que els «romans» podien ser temptats a un amor devot envers Déu mitjançant l'ham dels sons dolços adreçats als sentits externs. La dansa o el giravoltar dels dervixos era de data molt més antiga, com es recordarà en un dels contes de les *Mil i una nits*.",
+      "timestamp": 1779114912.2915711
+    },
+    {
+      "context": "Husām morí l'any 1284 dC, just deu anys després del seu mestre Jalāl; el fill d'aquest, Bahā'u-'d-Dīn, Sultān Veled, succeí Husām com a cap de l'orde, i morí l'any 1312 dC. El seu fill, Chelebī Emīr 'Ārif, el succeí, i traspassà l'any 1320 dC; dos dels seus germanastres esdevingueren caps de l'orde després d'ell, l'un rere l'altre.",
+      "timestamp": 1779114917.032366
+    },
+    {
+      "context": "teca de l'India Office, amb la signatura núm. 1670. És un volum en quart de 291 folis numerats, de dues pàgines cada foli, i vint-i-tres línies a cada pàgina. Es divideix en un prefaci, de dos folis, i deu capítols de llargada ben diversa, així:\n\n1. Actes de Bahā'u-'d-Dīn Veled, Sultānu-'l-'Ulemā     14 folis.\n\n2. Actes de Seyyid Sirr-Dān, Burhānu-'d-Dīn, Termizī    5   \"\n\n3. Actes de Mevlānā Jelālu-'d-Dīn, Muhammed           155   \"\n\n4. Actes de Shemsu-'d-Dīn, Tebrīzī                     23   \"",
+      "timestamp": 1779114926.1081827
+    },
+    {
+      "context": "5. Actes del Xeic Salāhu-'d-Dīn, Zer-Kūb              11   \"\n\n6. Actes de Husāmu-'d-Dīn, Califa de Déu              14   \"\n\n7. Actes de Mevlānā Bahā'u-l'Alcoran-Dīn, Sultān Veled 13   \"\n\n8. Actes de Chelebī Emīr 'Ārif                         45   \"\n\n9. Actes de Chelebī Emīr 'Ābīd, etc.                    6   \"\n\n10. Genealògic                                          2   \"\n                                                       —-\nTotal                                                 288",
+      "timestamp": 1779114930.5066273
+    },
+    {
+      "context": "s dervixos per successors i hereus espirituals dels profetes, des d'Adam fins a Mahoma; que, en virtut d'aquesta comunió espiritual amb Déu, coneixen tots els secrets i misteris del cel i de la terra, i no només suspenen o anul·len les lleis de la natura a voluntat seva, sinó que també reparteixen mort o malaltia amb la seva ira, salut o prosperitat amb la seva benedicció; tot això, però, en estricta concordança amb la voluntat eterna i la presciència d'Aquell pel qual són fetes totes les coses.",
+      "timestamp": 1779114943.2328825
+    },
+    {
+      "context": "rmacions dels dervixos. La majoria inculquen alguna veritat moral o algun precepte de saviesa pràctica. Algunes, però, es trobaran que van molt més enllà del creïble; i una o dues, llevat que el traductor les hagi malentès del tot, són pura i descaradament blasfemes. Aquestes darreres es presenten aquí com a mostres de les doctrines exagerades dels dervixos que fan que els ortodoxos entre els 'ulamà de l'Islam considerin totes aquestes associacions quasi religioses com a més o menys heterodoxes.",
+      "timestamp": 1779114950.5794225
+    },
+    {
+      "context": "Els dervixos de l'Islam semblen ser una mena de gnòstics. S'anomenen a si mateixos Pobres, Apassionats, Adeptes i Perfectes. En molts aspectes les seves doctrines coincideixen amb les de Buda, Pitàgores i Plató, en fer que totes les ànimes destinades a la salvació siguin emanacions de la Llum divina o Glòria de Déu, en la qual seran de nou congregades; i totes aquelles condemnades a la perdició hagin estat formades del Foc de la seva ira, al qual també seran finalment lliurades.",
+      "timestamp": 1779114955.6986067
+    },
+    {
+      "context": "s en els escrits dels grans poetes de l'Islam, i conscient de l'estat d'ossos secs al qual la traducció literal en prosa redueix gairebé sempre els versos d'un cantaire, ha preferit revestir el seu autor amb un abillament presentable, encara que sigui un mantell rebregat, abans que exhibir-lo davant lectors de bon gust com una massa esquarterada, despullada de tota bellesa i en gran mesura desproveïda fins i tot de forma reconeixible, a causa del conflicte de diccions i de la diversitat d'idees.",
+      "timestamp": 1779114964.8282309
+    },
+    {
+      "context": "jo res?\n  En presència de l'oceà, ben cert, no sóc res més.\"\n  Així, amb menyspreu profund mirant-se a si mateixa,\n  dins el si d'una ostra trobà cor que l'abriga.\n  La roda dels temps obrà mil mudances diverses;\n  perla preciosa d'alt preu la gota fou anomenada.\n  La humil modèstia rebé així el seu guardó;\n  entrant per la porta del no-res, conquerí el seu valor.»\n\n  PRIORAT DE KILBURN, LONDRES. 1880.\n\n\n\n\n                          ANÈCDOTES ESCOLLIDES\n\n                        DE L'OBRA TITULADA",
+      "timestamp": 1779114978.7442105
+    },
+    {
+      "context": "uhammad Khwarazm-Xah, l'home més altiu i alhora el més\nben plantat del seu temps, donà la seva filla, Malika-i Jihān (Reina\ndel Món), com a l'únic home digne d'ella, a Jalal al-Din Husayn,\nal-Khatibi, del llinatge d'Abu-Bakr.\n\nUn dels seus avantpassats havia estat un dels primers conqueridors\nmusulmans del Khorasan. Ell mateix era home de gran virtut i saber,\nenvoltat de nombrosos deixebles. Fins aleshores no s'havia casat; cosa\nque li causava més d'un pensament angoixós i de retret a si mateix.",
+      "timestamp": 1779114990.0070925
+    },
+    {
+      "context": "nom Baha al-Din Muhammad. Comunament se l'anomena Baha al-Din Walad.\n\nJa adolescent, aquest darrer era tan prodigiosament savi que la família materna volia elevar-lo al tron com a rei; però ell ho rebutjà rotundament.\n\nPer ordre divina, comunicada en una mateixa nit i en un somni idèntic a tres-cents dels homes més doctes de la ciutat de Balkh, capital del regne on residia, aquells savis doctors li conferiren unànimement el títol honorífic de Sultan al-Ulama, i tots esdevingueren deixebles seus.",
+      "timestamp": 1779114998.9141538
+    },
+    {
+      "context": "s, mentre exhortava tots els seus oients a estudiar i practicar els preceptes de l'islam. Aquells cortesans el calumniaren davant del rei, titllant-lo d'intrigant que tenia designis sobre el tron. El rei envià missatgers i li oferí la sobirania, prometent retirar-se ell mateix a un altre indret. Baha respongué que no tenia cap interès en les grandeses terrenals, essent un pobre reclús; i que abandonaria de bon grat el país, per tal de dissipar de la ment del rei tot recel envers la seva persona.",
+      "timestamp": 1779115010.1919193
+    },
+    {
+      "context": " mort.\n\nAixí deixà Balkh, tal com el Profeta (Muhàmmad) havia fugit de la Meca a Medina. El seu fill Jalal al-Din tenia llavors cinc anys, i el germà gran, Alà al-Din, set.\n\nPer tot el camí, la gent, en saber de la seva arribada o avisada en somnis de la seva venuda, acudia en massa a rebre'l i a honorar-lo. Així s'apropà a Bagdad. Allí l'eixí a rebre el gran xeic Xihab al-Din Úmar Suhrawardí, l'home més eminent del lloc, delegat pel califa Mustàssim per fer-li honors. Esdevingué hoste del xeic.",
+      "timestamp": 1779115026.1541433
+    },
+    {
+      "context": "ins, però ell refusà el donatiu per ser diner adquirit il·lícitament. Refusà també de visitar el califa; consentí, però, a predicar a la gran mesquita després de l'ofici del migdia el divendres següent, en presència del califa. En el seu sermó retragué al califa, cara a cara, la seva mala vida, i l'advertí de la seva imminent matança a mans dels mongols, amb gran crueltat i ignomínia. El califa li envià novament rics presents en diners, cavalls i objectes preuats, però ell refusà d'acceptar-los.",
+      "timestamp": 1779115033.528522
+    },
+    {
+      "context": " Bahā al-Din no abandonés Bagdad, hi arribà la notícia del setge de Balkh, de la seva captura i de la seva destrucció total, amb les seves dotze mil mesquites, per l'exèrcit mongol de cinc-cents mil homes comandat pel mateix Genguis (l'any 608 de l'Hègira, 1211 de la nostra era). Hi foren destruïts catorze mil exemplars de l'Alcorà, quinze mil estudiants i mestres de la llei foren occits, i dos-cents mil habitants adults del sexe masculí foren conduïts fora de la ciutat i morts a cops de fletxa.",
+      "timestamp": 1779115040.3957891
+    },
+    {
+      "context": "t de Genguis. El soldà seljúcida, 'Alā al-Din Kayqubad, era llavors sobirà de la terra de Rum (és a dir, l'Àsia Menor), i residia a Sivas (Sebaste). L'any 620 de l'Hègira (1223 de la nostra era), el soldà Jalal al-Din, el monarca desposseït de Khwarizm (Coràsmia), morí en una batalla que lliurà a l'Azerbaidjan (Atropatene) contra els soldans de Rum, Síria i Egipte, quan les seves forces foren derrotades completament. I així s'acabà aquella gran dinastia, després de regnar uns cent quaranta anys.",
+      "timestamp": 1779115048.4674194
+    },
+    {
+      "context": "n passà a Larenda (a Cataònia), a l'Àsia Menor, i hi romangué uns set anys al capdavant d'un col·legi, tenint encara amb ell la princesa Melika-i-Jihan, sa mare.\n\nFou aquí on el seu fill petit, Jalal al-Din Muhammad, futur autor del Masnavi, arribà a l'edat viril, tenint llavors divuit anys; quan, l'any 623 de l'Hègira (1226 de la nostra era), es casà amb una jove anomenada Gevher Khatun, filla del Lala Sheref al-Din, de Samarcanda. Ella infantà, al seu temps, el fill gran de Jalal, 'Alā al-Din.",
+      "timestamp": 1779115058.480483
+    },
+    {
+      "context": " convidà a la capital, on l'instal·là en un col·legi, i ben aviat es declarà deixeble seu. Es relaten molts miracles obrats a Konya per Bahā al-Din, el qual hi morí finalment el divendres 18 de Rabī al-àkhir de l'any 628 de l'Hègira (febrer del 1231 de la nostra era). El soldà féu erigir un mausoleu de marbre sobre la seva tomba, on consta aquesta data. Continuaren produint-se molts miracles en aquest santuari. El soldà també morí pocs anys després, l'any 634 de l'Hègira (1236 de la nostra era).",
+      "timestamp": 1779115066.09343
+    },
+    {
+      "context": "adicions recollides per Eflākī, relatives a aquest període, varien considerablement entre elles en punts menors de data i d'ordre de successió, tot i que els fets principals en surten prou clars.)\n\n\n3.\n\nEl fill de Jalal, el soldà Veled, contà a Eflākī que el seu pare Jalal solia dir sovint: «Jo i tots els meus deixebles serem sota la protecció del *Gran Mestre*, el meu pare, el dia de la resurrecció; i sota la seva guia entrarem a la presència divina; Déu ens perdonarà tots per amor d'Ell.»\n\n\n4.",
+      "timestamp": 1779115075.0061238
+    },
+    {
+      "context": "r aquesta vida, el seu fill, Jalal al-Din, tenia catorze anys. (Sembla tractar-se d'un error de copista per «vint-i-quatre». Es diu que Jalal va néixer l'any 604 de l'Hègira —1207 dC.) Es va casar als disset (o divuit) anys; i sovint deia en presència de la congregació dels seus amics: «El *Gran Mestre* romandrà amb mi uns quants anys. Després necessitaré Shams al-Din de Tabriz (la capital de l'Azerbaidjan); car tot profeta ha tingut el seu Abu-Bakr, així com Jesús tenia els seus apòstols.»\n\n\n5.",
+      "timestamp": 1779115082.6867652
+    },
+    {
+      "context": "l-Din de Konya va rebre notícia de l'arribada del sultà Jalal al-Din Khwarezm-Xah a les fronteres de l'Àsia Menor. El sultà va anar a pregar a la tomba del sant difunt, i tot seguit es va preparar per fer front als khwarezmians, que es trobaven als voltants d'Erzen-rum (Erzen dels Romans, l'antiga Arzes, avui Erzurum). Els escoltes van portar notícia que els khwarezmians eren molt nombrosos; i una gran ansietat va escampar-se entre les tropes del sultà. Va decidir anar a comprovar-ho ell mateix.",
+      "timestamp": 1779115089.3398283
+    },
+    {
+      "context": "l rei Jalal al-Din, el qual els va fer cridar i els va rebre amb amabilitat, donant-los tendes i assignant-los racions.\n\nDurant la nit, el rei Jalal al-Din es va posar a reflexionar que fins aleshores tothom havia parlat bé del sultà Ala al-Din, i en va sorgir un dubte en la seva ment quant a la història d'aquests nouvinguts, sobretot quan va saber que el sultà avançava per fer-li front. Després de consultar-ho amb el príncep d'Erzen-rum, es va ajornar fins l'endemà una investigació més acurada.",
+      "timestamp": 1779115098.966597
+    },
+    {
+      "context": "eu tron, i el sant que se li acostava, copejant-li el pit amb el bastó i dient-li amb ira: «Per què dorms? Aixeca't!»\n\nAquesta vegada el sultà s'alçà, cridà discretament la seva gent, féu ensellar els cavalls i s'escapolí del campament. Cap al matí, el rei Jalal al-Din féu posar guàrdies al voltant de les tendes dels forasters per vigilar-los. Però després, quan es donà l'ordre de portar-los davant el rei per interrogar-los, les tendes es trobaren buides. S'intentà la persecució, però fou en va.",
+      "timestamp": 1779115110.128642
+    },
+    {
+      "context": "regàries.\n\n(Com que ja s'ha dit que el sultà Jalal al-Din Khwarazm-Xah morí en batalla a l'Azerbaidjan l'any 1223, mentre que el sant de Konya no morí fins al 1231, vuit anys després, la discrepància d'aquesta data amb la present anècdota és irreconciliable.)\n\n\n6.\n\nEl Gran Mestre, Bahā Veled, solia dir que mentre ell visqués cap altre mestre no se li podria igualar, però que quan el seu fill, Jalal al-Din, el succeís a la seva mort, aquell fill seu se li igualaria i fins i tot el superaria.\n\n\n7.",
+      "timestamp": 1779115118.3213062
+    },
+    {
+      "context": "n Tirmidhí[8] va dir que una nit la porta del mausoleu de Bahā Veled s'obrí per si sola, i que en va sortir una gran glòria, la qual omplí gradualment la seva casa, de tal manera que cap ombra no queia de res. Aleshores la glòria omplí la ciutat de la mateixa manera, escampant-se d'allí per tota la faç de la natura. En contemplar aquest prodigi, el Sàyyid caigué desmaiat.\n\nAquesta visió és un indici cert que tot el llinatge humà un dia es reconeixerà deixeble dels descendents del gran sant.\n\n\n8.",
+      "timestamp": 1779115125.2846675
+    },
+    {
+      "context": "a les seves devocions a la gran mesquita en mànigues de camisa, amb l'abric a l'esquena. Bahā el reprengué i li digué que es posés l'abric com cal, amb decència, i que aleshores continués pregant. «¿I si no ho faig?», preguntà l'home amb to desdenyós. «La teva ànima, morta com és, obeirà la meva ordre, abandonarà el teu cos, i moriràs!», respongué Bahā. A l'instant l'home caigué mort; i les multituds acudiren en tropell a fer-se deixebles del sant que parlava amb tan gran poder i autoritat.\n\n\n9.",
+      "timestamp": 1779115133.0899196
+    },
+    {
+      "context": "abada la inspecció, Bahā digué al sultà: «Contra les torrentades i contra la cavalleria de l'enemic, has alçat una bona defensa. Però, ¿quina protecció has bastit contra aquelles fletxes invisibles, els sospirs i els gemecs dels oprimits, que travessen mil murs i escombren mons sencers fins a la destrucció? Vinga, doncs! Esforça't a guanyar-te les benediccions dels teus súbdits. Aquestes són una fortalesa al costat de la qual les muralles i les torres dels castells més robustos no són res.»\n\n10.",
+      "timestamp": 1779115142.089182
+    },
+    {
+      "context": "En una ocasió, el sultà Alā al-Din va anar a visitar Bahā Veled. En comptes de la mà, aquest oferí al sultà la punta del seu bastó perquè la besés, i el sultà pensà dins seu: «Quin erudit més orgullós!» Bahā, com a vident, llegí els pensaments del sultà, i li respongué amb aquestes paraules: «Els estudiants captaires han de ser humils i submisos. No així un sultà de la Fe que ha assolit la circumferència més extrema de la seva òrbita i hi gira al seu si.»\n\n11.",
+      "timestamp": 1779115152.2182474
+    },
+    {
+      "context": "sprés de la mort del seu mestre i tornà al seu antic ofici de teixidor, per guanyar-se la vida honradament. Solia comprar el pa bru més bast, fet de farina sense garbellar, l'estovava amb aigua i amb aquesta sopa sola trencava el dejuni. Tots els altres guanys se'ls estalviava fins que arribaven a dos-cents o tres-cents piastres. Llavors duia aquesta suma a la madrassa i la deixava dins les sabates del fill del seu mestre, Jalal al-Din, el nou rector. Aquesta pràctica la mantingué mentre visqué.",
+      "timestamp": 1779115162.5618274
+    },
+    {
+      "context": " de dolor i d'esglai. Els amics acudiren a alliberar-lo, però no aconseguiren deslliurar la mà presonera. Enviaren, doncs, avís a Jalal al-Din del que havia succeït. Ell vingué, ho veié, en sabé la raó, i xiuxiuejà a l'orella del mort: «El pobre infeliç ignorava l'alta dignitat de la teva santedat. Perdona la seva transgressió involuntària per amor a mi.» A l'instant la mà del pobre rentador quedà alliberada; però tres dies després ell mateix fou rentat i portat sense vida a la seva tomba.\n\n\n12.",
+      "timestamp": 1779115171.8954656
+    },
+    {
+      "context": "Dizdar, amb el permís del sultà, anà al peu de la trona i es declarà deixeble de Baha. «Doncs bé —digué el predicador—, com a ofrena d'acció de gràcies per aquest feliç esdeveniment, edifica i dota un col·legi on els meus descendents puguin ensenyar els seus deixebles després de mi.» El Dizdar així ho féu, i el dotà amb generositat. Aquest és el col·legi on visqué més tard Jalal al-Din. Quan el Dizdar morí, deixà totes les seves possessions per enriquir la fundació. (Vegeu capítol III, núm. 69.)",
+      "timestamp": 1779115185.5723033
+    },
+    {
+      "context": "tà el somni així: «Tot anirà bé al regne mentre tu visquis. Serà com plata en els dies del teu fill; com bronze en la generació següent, quan la xusma s'imposarà. Els maldecaps s'espessiran durant el regnat següent; i després d'això, el regne de Rum anirà a la ruïna, la casa dels Seljúcides arribarà a la fi, i uns arribistes desconeguts s'apoderaran de les regnes del govern.»\n\n\n\n\nCAPÍTOL II.\n\n _Sàyyid Burhan al-Din, Sirr-Dan, el Muhaqqiq, el Husayní, de la\n posteritat de Ya-Sin_ (_Muhàmmad_).[9]",
+      "timestamp": 1779115195.130039
+    },
+    {
+      "context": "rets, d'un misteri o de diversos misteris. Muhaqqiq és aquell qui verifica, qui sondeja la veritat; i Husayní indica que el Sàyyid era de la branca de Husayn, el més jove dels dos fills de Fàtima, l'única filla de Muhàmmad que va deixar descendència.)\n\n\n1.\n\nSàyyid Burhan al-Din era conegut popularment amb el nom de Sirr-Dan a Balkh, Bukharà (Alexandria Oxiana?) i Tirmidh. El seu discurs versava contínuament sobre els temes dels fenòmens espirituals i mentals, dels misteris de la terra i del cel.",
+      "timestamp": 1779115204.549788
+    },
+    {
+      "context": "ertinents, després de la seva arribada a Konya, es va comprovar que coincidien exactament amb el moment del traspàs de Bahà Walad.\n\n\n2.\n\nDurant quaranta dies, els deixebles de Tirmidh van plorar la mort del gran mestre. Al cap d'aquest període, el Sàyyid va dir: «El fill del meu mestre, el seu successor, Jalal al-Din Muhàmmad, ha quedat sol i desitja veure'm. Cal que me'n vagi a la terra de Rum i em posi al seu servei, lliurant-li el dipòsit que el meu mestre va confiar a la meva custòdia.»\n\n\n3.",
+      "timestamp": 1779115217.4512928
+    },
+    {
+      "context": "bà a Konya, ja feia prop d'un any que Bahà Walad havia mort, i Jalal se n'havia anat a Larenda. El Sàyyid es lliurà durant uns quants mesos al recolliment devocional en una de les mesquites de Konya; després envià una carta a Jalal per mitjà de dos captaires, dient-li: «Vine a trobar aquest foraster que t'espera al lloc on reposa el teu pare, car Larenda no és per a tu indret de permanença. D'aquell turó (on s'havia bastit el mausoleu de Bahà) baixarà una pluja de foc damunt la ciutat de Konya.»",
+      "timestamp": 1779115224.5171378
+    },
+    {
+      "context": "itat muda i de l'èxtasi. D'aquest dia ençà, el meu desig és que tu adquireixis igualment aquell coneixement —el saber que posseïen els profetes i els sants, que duu per nom *la Ciència de la Intuïció Divina*—, la ciència de la qual parlà Déu (a l'Alcorà XVIII, 64): \"Li hem ensenyat una ciència vinguda de Nosaltres.\" Aquest saber l'obtinguí del meu mestre; rep-lo tu de mi, perquè així siguis l'hereu del teu pare tant en les coses espirituals com en les temporals. Aleshores seràs el seu segon jo.»",
+      "timestamp": 1779115237.0105433
+    },
+    {
+      "context": "ndugué el Seyyid al seu col·legi i, durant nou anys, en rebé la instrucció. Algunes versions fan creure que Jalal esdevingué deixeble del Seyyid en aquest moment; d'altres, en canvi, indiquen que Baha Veled havia donat Jalal com a deixeble al Seyyid ja a Balkh, i que el Seyyid solia, de tant en tant, dur Jalal a coll, com fan els preceptors-mainaders —*lala*— dels infants. (Compareu amb el capítol III, núms. 6 i 8.)\n\n\n4.\n\nHusam al-Din ens contà que Jalal li havia referit l'esdeveniment següent:—",
+      "timestamp": 1779115244.4440477
+    },
+    {
+      "context": "ls seus respectes al funcionari legal. Aquest baixà descalç fins a la porta de la casa per rebre el Seyyid, li besà la mà i li oferí excuses per la seva aparent manca de cortesia.\n\nEn resposta, el Seyyid li digué: «He vingut a informar-vos que, el desè dia del mes vinent, el de Ramadà, tindreu ocasió de sortir cap a un bany calent. De camí cap allà, sereu assassinat pels emissaris del *Vell de la Muntanya*. Us ho comunico perquè poseu els vostres afers en ordre i us penediu dels vostres pecats».",
+      "timestamp": 1779115253.931874
+    },
+    {
+      "context": " fortalesa d'Alamut, del *Vell de la Muntanya*, fou presa a l'assalt per les forces que hi envià Hulagu, nét de Genguis, vers l'any 654 de l'Hègira (1256 dC). El darrer príncep de la dinastia fou enviat a la Xina, i allà mort pel emperador; i així aquestes execrables xacres de la humanitat foren finalment suprimides.)\n\n\n5.\n\nPassat un cert temps, el Seyyid demanà permís a Jalal per anar una temporada a Qaysariyya (Cesarea), però Jalal no podia estar-se sense ell. Així doncs, restà encara a Konya.",
+      "timestamp": 1779115265.5833561
+    },
+    {
+      "context": " i el van conduir a una casa de camp veïna on Jalal també havia anat.\n\nEn veure Jalal, el Seyyid li exclamà: «¿És aquesta la manera adient de recompensar el teu mestre: trencant-li la cama?» Jalal manà a l'instant que li traguessin la bota al Seyyid, i veié que tenia el peu i els dits esclafats. Llavors passà les mans al llarg del membre malmès i hi bufà al damunt. El membre quedà restablert a l'acte. Jalal li concedí ara el permís, i el Seyyid emprengué tot seguit el camí cap a Qaysariyya.\n\n\n6.",
+      "timestamp": 1779115276.746765
+    },
+    {
+      "context": "assà el forrellat de la porta, perquè ningú no entrés a veure'l.\n\nEl servent, però, sentí la curiositat encesa per aquelles paraules, i tornà cap a la porta per escoltar i veure què hi pogués succeir. Per una escletxa veié el seu mestre fer una ablució, agençar-se els vestits, ajeure's al llit i exclamar: «Vosaltres tots, àngels, sants i cels, que en algun moment m'heu confiat un secret, veniu a mi ara i recolliu allò que us pertany. Sou tots aquí presents.»\n\nTot seguit recità el següent himne:—",
+      "timestamp": 1779115286.928685
+    },
+    {
+      "context": "erò el sant traspassat no permeté que s'hi alcés cap cúpula. Dues vegades la volta fou enderrocada per terratrèmols, i en somnis el mateix Seyyid prohibí que s'aixequés per tercera vegada.\n\nPassats els quaranta dies de dol acostumats, fou tramesa una carta a Jalal, que tot seguit emprengué el viatge de Konya a Qaysariyya, pregà davant la tomba del seu mestre difunt, i després se'n tornà a casa.\n\n\n\n\nCAPÍTOL III.\n\n_Mawlana Jalal al-Din Muhàmmad, el Venerat Misteri de Déu damunt la Terra._[10]\n\n\n1.",
+      "timestamp": 1779115300.924965
+    },
+    {
+      "context": "igures espirituals del món absent (invisible), és a dir, missatgers angèlics, genis virtuosos i homes sants —els ocults dels jardins de l'U Veritable (esposos espirituals de Déu)— que se li manifestaven en forma corpòria, exactament com els querubins i serafins es mostraven al sant apòstol de Déu, Muhàmmad, en els primers temps, abans de la seva crida a l'ofici profètic; com Gabriel s'aparegué a Maria, i com els quatre àngels foren vistos per Abraham i Lot; i d'altres encara a d'altres profetes.",
+      "timestamp": 1779115311.5920384
+    },
+    {
+      "context": "ítol afectuosament honorífic de Khudāvendgār, amb què tantes vegades és anomenat, li fou conferit en aquell temps pel seu pare, que solia adreçar-s'hi i parlar d'ell amb aquest títol, com a «Senyor meu».\n\n\n2.\n\nEl seu fill, el sultà Walad, relatà que hi havia un paper de la mà del seu pare, Bahā Walad, on s'exposava que a Balkh, quan Jalāl tenia sis anys, un divendres prenia la fresca al terrat de la casa i recitava l'Alcorà, quan vingueren altres infants de bona família i se li uniren allà dalt.",
+      "timestamp": 1779115322.2150877
+    },
+    {
+      "context": "airem-nos fins al firmament i visitem les regions del regne de Déu.» I tot just dient això, s'esvaní de la seva vista.\n\nEsfereïts per la sobtada desaparició de Jalāl, els altres infants alçaren un crit de consternació, demanant que algú vingués a auxiliar-los; quan, vet aquí, en un instant, ja tornava a ser enmig d'ells; però amb una expressió de rostre alterada i les galtes esblaimades. Tots es descobriren davant d'ell, es prosternaren a terra amb humilitat, i tots es declararen deixebles seus.",
+      "timestamp": 1779115333.6848688
+    },
+    {
+      "context": " del Zodíac, mostrant-li les meravelles del món dels esperits, i tornant-lo amb ells tan bon punt els seus crits havien arribat a les seves oïdes.\n\nEn aquella edat, no acostumava a trencar el dejuni més sovint que un cop cada tres o quatre dies, i de vegades, fins i tot, cada set.\n\n\n3.\n\nUn altre testimoni, deixeble del pare de Jalāl, contava que Bahā Veled afirmava sovint en públic que el seu Senyor, Jalāl, era de llinatge enaltit, descendent d'un rei, i també d'una nissaga hereditària de sants.",
+      "timestamp": 1779115343.2213268
+    },
+    {
+      "context": "de Jalāl era filla del rei de Khwarazm, que residia a Balkh.\n\nLa rebesàvia paterna de Jalāl, també, la mare d'Ahmed El-Khatībī, avi del pare de Jalāl, era filla d'un rei de Balkh. Aquests detalls demostren que Jalāl era de bon llinatge per banda i banda, tant en sentit mundà com espiritual. El conegut proverbi —\n\n«La disposició hereditària sempre s'insinua»\n\nes va complir plenament en el seu il·lustríssim cas.\n\n\n4.\n\nQuan Jalāl tenia set anys, cada matí recitava el breu capítol cviii de l'Alcorà—",
+      "timestamp": 1779115371.6398916
+    },
+    {
+      "context": " ell es va desmaiar. En recobrar el sentit, va sentir una veu del cel que deia:\n\n«Oh Jalāl al-Dīn! Per la majestat (*jalāl*) de la Nostra glòria, deixa des d'ara de combatre amb tu mateix; perquè t'hem elevat a l'estació de la visió ocular.»\n\nJalāl, doncs, en agraïment per aquesta mostra de gràcia, va fer vot de servir el Senyor fins al darrer dels seus dies, amb totes les seves forces, amb la ferma esperança que els qui el seguissin assolirien també aquell alt grau de favor i excel·lència.\n\n\n5.",
+      "timestamp": 1779115382.4355662
+    },
+    {
+      "context": " de sortir de la seva cel·la a mitjanit amb algun propòsit desconegut. El governador va resoldre veure-ho i jutjar-ho amb els seus propis ulls. Així doncs, s'amagà a la cambra del porter.\n\nA mitjanit, Jalāl sortí de la seva cambra i anà de dret a la porta tancada del col·legi, vigilat pel governador. La porta s'obrí de bat a bat; i Jalāl, seguit a distància pel governador, travessà els carrers fins a la porta tancada de la ciutat. Aquesta també s'obrí per si sola; i, novament, tots dos sortiren.",
+      "timestamp": 1779115393.8952296
+    },
+    {
+      "context": " sense camins durant tres dies i tres nits, afamat, assedegat i amb els peus nafrats. A la fi, s'esfondrà sota els seus patiments.\n\nMentrestant, el porter del col·legi havia donat avís de la persecució del governador darrere Jalāl. Quan els seus oficials veieren que no tornava, enviaren una nombrosa partida de guàrdies a cercar-lo. Aquests, el segon dia, es trobaren amb Jalāl. Ell els digué on trobarien el seu senyor. L'endemà, ja tard, l'atraparen, el trobaren mig mort i se l'endugueren a casa.",
+      "timestamp": 1779115405.6751652
+    },
+    {
+      "context": "afegir—, Jalāl ha assolit tan alt estament que és ell qui em porta a mi enlaire.» Aquestes paraules del seyyid foren repetides a Jalāl, el qual les confirmà amb aquest comentari: «És ben veritat; i cent vegades més encara; els serveis que aquell home m'ha fet són infinits.»\n\n\n7.\n\nQuan Jalāl anà a Damasc per estudiar, passà per Sīs, a l'Alta Cilícia. Allí, en una cova, habitaven quaranta monjos cristians que tenien gran fama de santedat, però que en realitat no eren sinó simples prestidigitadors.",
+      "timestamp": 1779115416.9560504
+    },
+    {
+      "context": "arem. S'aplegaren al voltant de Jalāl i el suplicaren que alliberés la criatura. Al cap d'una estona, semblà que els sentia i els entenia. La seva resposta fou: «Només si abraceu l'Islam tots vosaltres, així com l'infant, podrà ésser salvat.»\n\nA la fi, tots ells abraçaren l'Islam i volgueren seguir Jalāl com a deixebles. Ell, però, els recomanà de romandre a la cova, com abans, de deixar de practicar la prestidigitació i de servir Déu en esperit i en veritat. I així prosseguí el seu viatge.\n\n\n8.",
+      "timestamp": 1779115429.4836388
+    },
+    {
+      "context": " per Qaysariyya. En aquesta darrera ciutat, sota la guia atenta del seu mestre espiritual, el Sayyid Burhān al-Din, Jalāl dejunà tres períodes consecutius de quaranta dies cadascun, amb només un càntir d'aigua i dos o tres pans d'ordi. No mostrà cap senyal de defalliment. Burhān el proclamà aleshores perfecte en tota ciència, manifesta i oculta, humana i espiritual. (Compareu amb el capítol II, núm. 3.)\n\n\n9.\n\nL'any 642 de l'Hègira (1244 de l'era cristiana), Shams al-Din de Tabriz arribà a Konya.",
+      "timestamp": 1779115439.4692907
+    },
+    {
+      "context": "ill de Bahā al-Din Walad, de Balkh, com l'home més afavorit per Déu. Shams partí, doncs, cap a Konya, on arribà el dissabte 26 de jumada-l-àkhir de l'any 642 de l'Hègira (desembre de 1244 de l'era cristiana). Llogà allotjament en un hostal i es féu passar per un gran mercader. A la seva cambra, però, no hi havia altra cosa que un càntir trencat, una vella estora i un coixí de fang sense coure. Trencava el dejuni una sola vegada cada deu o dotze dies, amb una llesca sucada en brou de peus de xai.",
+      "timestamp": 1779115451.3084571
+    },
+    {
+      "context": "stam?»\n\nJalal li respongué: «Muhàmmad fou incomparablement el més gran: el més gran de tots els profetes i de tots els sants.»\n\n«Aleshores —replicà Shams al-Din—, com s'explica que Muhàmmad digués: \"No t'hem conegut, oh Déu, com cal que siguis conegut\", mentre que Bayazid digué: \"Glòria a mi! Que gran és la meva glòria!\"?»\n\nEn sentir aquesta pregunta, Jalal caigué desmaiat. En recobrar el sentit, s'endugué el nou conegut a casa seva. Restaren tancats junts, setmanes o mesos, en santes converses.",
+      "timestamp": 1779115462.4163628
+    },
+    {
+      "context": "rvixos del seu orde.\n\nFou més o menys per aquesta època, també, que instaurà per primera vegada els oficis musicals que practica aquell orde, en executar el seu peculiar gir dansaire. Tothom es lliurà, per aquest motiu, a la música i a la dansa. Els fanàtics hi posaren objeccions, moguts per l'enveja. Deien que Jalal s'havia tornat boig, tal com els cabdills de la Meca havien dit antany del Profeta. La seva suposada malaltia fou atribuïda a la influència malèfica de Shams al-Din de Tabriz.\n\n\n10.",
+      "timestamp": 1779115472.7772627
+    },
+    {
+      "context": " que es trobaven aleshores en plena estació hivernal. S'hi estigueren fins prop de l'hora de la pregària de l'alba, moment en què feren senyal a Shams al-Din que dirigís l'ofici. Ell s'excusà, i fou Jalal qui l'oficià. Acabada la pregària, els sis forasters s'acomiadaren i sortiren per la mateixa clivella de la paret.\n\nLlavors Jalal eixí de la cambra, duent el ram a la mà. En veure la seva esposa al passadís, li donà el ram, tot dient-li que els forasters l'havien portat com a ofrena per a ella.",
+      "timestamp": 1779115484.2272966
+    },
+    {
+      "context": "al sud de l'Índia, als voltants de Ceilan.\n\nL'admirable, ara, era això: com havien arribat aquelles flors índies a Konya, i en ple cor de l'hivern, encara?\n\nEl servent tornà les fulles a casa i contà a la seva senyora el que havia après. Això li acreixé l'astorament cent vegades més. Just llavors aparegué Jalal, i li encomanà que tingués la major cura del ram, car li havia estat tramès pels floristes del perdut paradís terrenal, per mediació d'aquells sants de l'Índia, com a ofrena ben singular.",
+      "timestamp": 1779115497.0506744
+    },
+    {
+      "context": "'una munió de metges i filòsofs, es féu obrir les venes dels dos braços, i deixà que sagnessin fins que la sang s'estroncà. Llavors ordenà que se li practiquessin incisions en diverses parts del cos; però no se'n pogué obtenir enlloc ni una sola gota d'humor. Després anà a un bany calent, es rentà, féu les ablucions, i tot seguit començà l'exercici de la dansa sagrada.\n\n12.\n\nUn dels deixebles de Jalal morí, i hi hagué deliberació entre els amics sobre si calia enterrar-lo dins d'un taüt o sense.",
+      "timestamp": 1779115508.8114054
+    },
+    {
+      "context": "a un taüt, sinó a la mare terra, la seva progenitora amorosa i tendra.»\n\nJalal expressà la seva admiració per aquesta doctrina tan justa i sublim, que, digué, no es trobava escrita en cap llibre aleshores existent.\n\nEl nom del deixeble que féu aquesta bella reflexió era Karim al-Din, fill de Begh-Timur.\n\n\n13.\n\nMolts dels principals deixebles de Jalal han contat que ell mateix els explicà, com a motius per a haver instituït l'ofici musical del seu orde, amb llurs danses, les reflexions següents:—",
+      "timestamp": 1779115519.2481434
+    },
+    {
+      "context": "de les austeritats religioses, ni cap coneixement dels misteris divins, vaig imaginar-me d'ordir exhortacions en vers i oficis musicals, com a coses captivadores per a la ment dels homes, i especialment per als romans, que són naturalment d'humor jovial i amants de les exposicions incisives. Així com a un infant malalt se l'afalaga perquè prengui una medecina saludable, encara que repugnant, de la mateixa manera els romans van ser conduïts per l'art a adquirir el gust per la veritat espiritual.»",
+      "timestamp": 1779115532.868381
+    }
+  ]
 }
