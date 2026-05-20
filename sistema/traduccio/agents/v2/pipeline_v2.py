@@ -22,7 +22,9 @@ Flux:
 """
 
 import json
+import os
 import re
+import sys
 import time
 import unicodedata
 from pathlib import Path
@@ -32,6 +34,10 @@ from typing import TYPE_CHECKING, Callable, Literal
 from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, ContentFilterError
+
+# Importar resolució canònica d'autors
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), 'config'))
+from author_resolver import resolve_author as _resolve_author_canonical
 
 # Validadors
 from utils.validators import validar_text_entrada, netejar_text, SeverityLevel
@@ -360,8 +366,8 @@ class PipelineV2:
         if self.config.directori_obra:
             obra_dir = Path(self.config.directori_obra)
         else:
-            # Crear slug i deduir path
-            slug_autor = self._crear_slug(autor or "desconegut")
+            # Crear slug via author_resolver per evitar duplicats
+            slug_autor = _resolve_author_canonical(autor or "desconegut")
             slug_titol = self._crear_slug(titol or "sense-titol")
             obra_dir = Path("obres") / slug_autor / slug_titol
 

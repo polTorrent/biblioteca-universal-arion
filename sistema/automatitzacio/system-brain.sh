@@ -320,12 +320,13 @@ for obra in pendents:
     if obra_dir_json:
         obra_dir = Path(project) / obra_dir_json
     else:
-        import unicodedata, re as _re
-        def _slug(t):
-            t = unicodedata.normalize('NFKD', t.lower())
-            t = ''.join(c for c in t if not unicodedata.combining(c))
-            return _re.sub(r'[^a-z0-9]+', '-', t).strip('-')
-        obra_dir = obres_dir / categoria / _slug(autor) / _slug(titol)
+        # Usar author_resolver per evitar duplicats
+        import sys as _sys
+        _sys.path.insert(0, str(Path(project) / 'sistema/config'))
+        from author_resolver import resolve_author as _resolve, slugify as _slug
+        slug_autor = _resolve(autor, categoria)
+        slug_titol = _slug(titol)
+        obra_dir = obres_dir / categoria / slug_autor / slug_titol
         obra_dir_json = str(obra_dir.relative_to(Path(project)))
     obra['has_original'] = (obra_dir / 'original.md').exists()
     obra['has_dir'] = obra_dir.is_dir()

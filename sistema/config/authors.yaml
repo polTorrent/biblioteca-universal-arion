@@ -1,0 +1,375 @@
+# authors.yaml — Mapa canònic d'autors de la Biblioteca Universal Arion
+# Cada entrada: slug → nom canònic + àlies (noms alternatius que l'IA pot generar)
+# Tots els scripts han d'usar author_resolver.resolve() per obtenir el slug correcte.
+#
+# Regles:
+#   - slug: nom de directori sota obres/<categoria>/<slug>/
+#   - nom: nom preferit per mostrar
+#   - aliases: llista de variants que es resolguen a aquest slug
+#   - Si un autor no està aquí, author_resolver farà fallback al slugify automàtic
+#     però WARNearà perquè s'afegeixi al mapa.
+
+akutagawa:
+  nom: Ryūnosuke Akutagawa
+  aliases: [Akutagawa, Ryūnosuke Akutagawa, Akutagawa Ryunosuke]
+
+al-mutanabbi:
+  nom: Al-Mutanabbī
+  aliases: [Al-Mutanabbi, Al-Mutanabbī, Mutanabbi]
+
+aleksandr-pushkin:
+  nom: Aleksandr Puixkin
+  aliases: [Aleksandr Pushkin, Alexander Pushkin, Pushkin, Puixkin, Aleksandr Serguéievitx Puixkin]
+
+anonim-anglosaxo:
+  nom: Anònim anglosaxó
+  aliases: [Anònim anglosaxó, Anonymous Anglo-Saxon, Beowulf Poet]
+
+anonim-hebreu:
+  nom: Anònim (tradició hebrea)
+  aliases: [Anònim hebreu, Anònim (tradició hebrea), Anonymous Hebrew]
+
+anonim-nordic:
+  nom: Anònim nòrdic
+  aliases: [Anònim nòrdic, Anonymous Norse, Anonymous Nordic]
+
+apuleu:
+  nom: Apuleu
+  aliases: [Apuleu, Apuleius, Luci Apuleu]
+
+aristofanes:
+  nom: Aristòfanes
+  aliases: [Aristòfanes, Aristophanes, Aristofanes]
+
+aristotil:
+  nom: Aristòtil
+  aliases: [Aristòtil, Aristotle, Aristóteles]
+
+august-strindberg:
+  nom: August Strindberg
+  aliases: [August Strindberg, Strindberg, Johan August Strindberg]
+
+baudelaire:
+  nom: Charles Baudelaire
+  aliases: [Baudelaire, Charles Baudelaire, Charles Pierre Baudelaire]
+
+boccaccio:
+  nom: Giovanni Boccaccio
+  aliases: [Boccaccio, Giovanni Boccaccio]
+
+boeci:
+  nom: Boeci
+  aliases: [Boeci, Boethius, Anicius Manlius Severinus Boethius]
+
+catul:
+  nom: Catul
+  aliases: [Catul, Catullus, Gai Valeri Catul]
+
+chikamatsu-monzaemon:
+  nom: Chikamatsu Monzaemon
+  aliases: [Chikamatsu Monzaemon, Chikamatsu, Monzaemon, Sugimori Nobumori]
+
+cicero:
+  nom: Ciceró
+  aliases: [Ciceró, Cicero, Marcus Tullius Cicero, Marc Tul·li Ciceró]
+
+confuci:
+  nom: Confuci
+  aliases: [Confuci, Confucius, Kong Fuzi, Kongzi, Kǒng Fūzǐ]
+
+dante-alighieri:
+  nom: Dante Alighieri
+  aliases: [Dante, Dante Alighieri, Dante Alighieri, Durante degli Alighieri]
+
+dostoievski:
+  nom: Dostoievski
+  aliases: [Dostoievski, Dostoevski, Dostoyevsky, Fiódor Dostoievski, Fyodor Dostoevsky, Fedor Dostoievski]
+
+edgar-allan-poe:
+  nom: Edgar Allan Poe
+  aliases: [Edgar Allan Poe, Poe, Edgar Poe, E.A. Poe]
+
+emily-bronte:
+  nom: Emily Brontë
+  aliases: [Emily Brontë, Emily Bronte, Brontë]
+
+epictetus:
+  nom: Epictet
+  aliases: [Epictetus, Epictet]
+
+epicur:
+  nom: Epicur
+  aliases: [Epicur, Epicurus]
+
+esquil:
+  nom: Esquil
+  aliases: [Esquil, Aeschylus, Èsquil, Esquilo]
+
+euripides:
+  nom: Eurípides
+  aliases: [Eurípides, Euripides, Euripide]
+
+fernando-pessoa:
+  nom: Fernando Pessoa
+  aliases: [Fernando Pessoa, Pessoa]
+
+firdawsi:
+  nom: Firdawsí
+  aliases: [Firdawsí, Ferdowsi, Firdawsi, Hakim Abul-Qasim Ferdowsi Tusi]
+
+garxin:
+  nom: Ivan Garxin
+  aliases: [Garxin, Garshin, Ivan Garxin, Txejov]
+
+giacomo-leopardi:
+  nom: Giacomo Leopardi
+  aliases: [Giacomo Leopardi, Leopardi, Conte Giacomo Leopardi]
+
+goethe:
+  nom: Johann Wolfgang von Goethe
+  aliases: [Goethe, Johann Wolfgang von Goethe, Goethe]
+
+henrik-ibsen:
+  nom: Henrik Ibsen
+  aliases: [Henrik Ibsen, Ibsen]
+
+heraclit:
+  nom: Heràclit
+  aliases: [Heràclit, Heraclitus, Heracleitos]
+
+herman-melville:
+  nom: Herman Melville
+  aliases: [Herman Melville, Melville]
+
+hermann-hesse:
+  nom: Hermann Hesse
+  aliases: [Hermann Hesse, Hesse]
+
+hesiode:
+  nom: Hesíode
+  aliases: [Hesíode, Hesiod, Hesiodo]
+
+horaci:
+  nom: Horaci
+  aliases: [Horaci, Horace, Quintus Horatius Flaccus]
+
+husserl:
+  nom: Edmund Husserl
+  aliases: [Husserl, Edmund Husserl]
+
+ibn-tufayl:
+  nom: Ibn Tufayl
+  aliases: [Ibn Tufayl, Ibn Tufail, Abu Bakr Muhammad ibn Tufayl]
+
+kafka:
+  nom: Franz Kafka
+  aliases: [Kafka, Franz Kafka]
+
+kalidasa:
+  nom: Kālidāsa
+  aliases: [Kalidasa, Kālidāsa, Kalidas]
+
+kamo-no-chomei:
+  nom: Kamo no Chōmei
+  aliases: [Kamo no Chōmei, Kamo no Chomei, Chomei, Kamo no Tōn]
+
+karel-hynek-macha:
+  nom: Karel Hynek Mácha
+  aliases: [Karel Hynek Mácha, Macha, Karel Macha]
+
+laozi:
+  nom: Laozi
+  aliases: [Laozi, Lao Tzu, Lao Tse, Lao Zi, 老子]
+
+lev-tolstoi:
+  nom: Lev Tolstoi
+  aliases: [Lev Tolstoi, Tolstoi, Tolstoy, Leo Tolstoy, Lev Nikolàievitx Tolstoi]
+
+li-bai:
+  nom: Li Bai
+  aliases: [Li Bai, Li Po, Li Bo, 李白]
+
+lu-yu:
+  nom: Lu Yu
+  aliases: [Lu Yu, Lu You, 陆游]
+
+lucia-de-samosata:
+  nom: Lucià de Samòsata
+  aliases: [Lucià de Samòsata, Lucian de Samosata, Luci de Samosata, Lukianos, Lucianus, Lucien de Samosate]
+
+lucreci:
+  nom: Lucreci
+  aliases: [Lucreci, Lucretius, Titus Lucretius Carus]
+
+marc-aureli:
+  nom: Marc Aureli
+  aliases: [Marc Aureli, Marcus Aurelius, Marco Aurelio]
+
+matsuo-basho:
+  nom: Matsuo Bashō
+  aliases: [Matsuo Bashō, Matsuo Basho, Basho, Bashō]
+
+mickiewicz:
+  nom: Adam Mickiewicz
+  aliases: [Adam Mickiewicz, Mickiewicz]
+
+montaigne:
+  nom: Michel de Montaigne
+  aliases: [Montaigne, Michel de Montaigne, Michel Eyquem de Montaigne]
+
+mozi:
+  nom: Mozi
+  aliases: [Mozi, Mo Tzu, Mo Di, 墨子]
+
+nietzsche:
+  nom: Friedrich Nietzsche
+  aliases: [Nietzsche, Friedrich Nietzsche, Friedrich Wilhelm Nietzsche]
+
+omar-khayyam:
+  nom: Omar Khayyam
+  aliases: [Omar Khayyam, Khayyam, Ghiyath al-Din Abu'l-Fath Umar ibn Ibrahim]
+
+ovidi:
+  nom: Ovidi
+  aliases: [Ovidi, Ovid, Publius Ovidius Naso]
+
+petrarca:
+  nom: Francesco Petrarca
+  aliases: [Petrarca, Francesco Petrarca, Petrarca]
+
+petroni:
+  nom: Petroni
+  aliases: [Petroni, Petronius, Gaius Petronius Arbiter]
+
+plato:
+  nom: Plató
+  aliases: [Plató, Plato, Platon]
+
+plaut:
+  nom: Plaut
+  aliases: [Plaut, Plautus, Titus Maccius Plautus]
+
+plutarc:
+  nom: Plutarc
+  aliases: [Plutarc, Plutarch, Plutarque]
+
+pseudo-longi:
+  nom: Pseudo-Longí
+  aliases: [Pseudo-Longí, Pseudo-Longinus, Longinus]
+
+pu-songling:
+  nom: Pu Songling
+  aliases: [Pu Songling, Pu Song-ling, 蒲松龄]
+
+rabindranath-tagore:
+  nom: Rabindranath Tagore
+  aliases: [Rabindranath Tagore, Tagore]
+
+rilke:
+  nom: Rainer Maria Rilke
+  aliases: [Rainer Maria Rilke, Rilke]
+
+rudyard-kipling:
+  nom: Rudyard Kipling
+  aliases: [Rudyard Kipling, Kipling, Joseph Rudyard Kipling]
+
+rumi:
+  nom: Rumi
+  aliases: [Rumi, Jalal al-Din Rumi, Jalaluddin Rumi, Mevlana, Rūmī, Molana]
+
+sade:
+  nom: Marquès de Sade
+  aliases: [Sade, Marquès de Sade, Donatien Alphonse François de Sade]
+
+safo:
+  nom: Safo
+  aliases: [Safo, Sappho, Sapfo]
+
+sandor-petofi:
+  nom: Sándor Petőfi
+  aliases: [Sándor Petőfi, Petőfi, Sandor Petofi, Alexander Petőfi]
+
+sanscrit:
+  nom: Antologia sànscrita
+  aliases: [Sànscrit, Sanscrit, Anthologia Sanscrite]
+  notes: "Col·lecció, no un autor individual"
+
+schopenhauer:
+  nom: Arthur Schopenhauer
+  aliases: [Schopenhauer, Arthur Schopenhauer]
+
+sei-shonagon:
+  nom: Sei Shōnagon
+  aliases: [Sei Shōnagon, Sei Shonagon]
+
+seneca:
+  nom: Sèneca
+  aliases: [Sèneca, Seneca, Luci Annaeu Sèneca, Lucius Annaeus Seneca]
+
+shakespeare:
+  nom: William Shakespeare
+  aliases: [Shakespeare, William Shakespeare, The Bard]
+
+sofocles:
+  nom: Sòfocles
+  aliases: [Sòfocles, Sofocles, Sophocles]
+
+sor-juana:
+  nom: Sor Juana Inés de la Cruz
+  aliases: [Sor Juana Inés de la Cruz, Sor Juana, Juana Inés de la Cruz, Sor Juana]
+
+tacit:
+  nom: Tàcit
+  aliases: [Tàcit, Tacitus, Gaius Cornelius Tacitus]
+
+teocrit:
+  nom: Teocrit
+  aliases: [Teocrit, Theocritus]
+
+teofrast:
+  nom: Teofrast
+  aliases: [Teofrast, Theophrastus]
+
+terenci:
+  nom: Terenci
+  aliases: [Terenci, Terence, Publius Terentius Afer]
+
+thiruvalluvar:
+  nom: Tiruvalluvan
+  aliases: [Thiruvalluvar, Tiruvalluvar, Thiruvalluvar]
+
+txekhov:
+  nom: Anton Txékhov
+  aliases: [Anton Txékhov, Txékhov, Chekhov, Anton Chekhov, Txekhov]
+
+virgili:
+  nom: Virgili
+  aliases: [Virgili, Virgil, Publius Vergilius Maro]
+
+vishnu-sharma:
+  nom: Viixnu Xarma
+  aliases: [Vishnu Sharma, Vishnusharma, Viixnu Xarma]
+
+voltaire:
+  nom: Voltaire
+  aliases: [Voltaire, François-Marie Arouet]
+
+vyasa:
+  nom: Vyasa
+  aliases: [Vyasa, Veda Vyasa, Krishna Dvaipayana]
+
+yoshida-kenko:
+  nom: Yoshida Kenkō
+  aliases: [Yoshida Kenkō, Kenko, Yoshida Kenko, Urabe Kenko]
+
+yunus-emre:
+  nom: Yunus Emre
+  aliases: [Yunus Emre, Yunus Emre]
+
+zeami-motokiyo:
+  nom: Zeami Motokiyo
+  aliases: [Zeami Motokiyo, Zeami, Kan'ami Motokiyo]
+
+zhuangzi:
+  nom: Zhuangzi
+  aliases: [Zhuangzi, Chuang Tzu, Chuang Tse, Zhuang Zhou, 莊子]
