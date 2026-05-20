@@ -229,3 +229,54 @@
 {"ts":"2026-05-17T20:05:19Z","module":"check-translations","type":"info","msg":"checking_translations"}
 {"ts":"2026-05-17T20:05:19Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
 {"ts":"2026-05-17T20:05:19Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-18T06:27:12Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-18T06:28:32Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-18T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=9.227371422485614"}
+{"ts":"2026-05-18T14:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-18T14:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-18T14:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-18T14:05:16Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-05-18T14:05:16Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-18T14:05:16Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-18T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-18T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-18T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-18T16:05:02Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-18T16:05:02Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-18T18:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-18T18:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-18T18:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-18T18:05:02Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-18T18:05:02Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-18T20:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-18T20:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-18T20:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-18T20:05:02Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-18T20:05:02Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-19T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=4.038752422485615 available=3.5388"}
+{"ts":"2026-05-19T14:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-19T14:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-19T14:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-19T14:05:15Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-05-19T14:05:15Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-19T14:05:15Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-19T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=0.7045334824856155 available=0.2045"}
+{"ts":"2026-05-19T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-19T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-19T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-19T16:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-19T16:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-19T18:05:02Z","module":"check-diem","type":"info","msg":"DIEM=0.5526047724856156 available=0.0526"}
+{"ts":"2026-05-19T18:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-19T18:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-19T18:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-19T18:05:02Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-19T18:05:02Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-19T20:05:02Z","module":"check-diem","type":"warning","msg":"DIEM=0.3983015824856153 available=-0.1017 below minimum 0"}
+{"ts":"2026-05-20T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=11.384703462485614 available=10.8847"}
+{"ts":"2026-05-20T14:05:03Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-20T14:05:03Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-20T14:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-20T14:05:16Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-05-20T14:05:16Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-20T14:05:16Z","module":"generate-report","type":"info","msg":"generating_report"}
