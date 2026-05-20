@@ -1,10 +1,10 @@
 {
     "pid": 13838,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1779113115",
-    "diem_balance": "4.577250342485615",
-    "uptime_seconds": 3733,
+    "current_task": "fix-fetch-rudyard-kipling-el-llibre-de-la-selva-1779113115",
+    "diem_balance": "4.434709062485616",
+    "uptime_seconds": 3784,
     "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-20T15:02:16Z"
+    "last_heartbeat": "2026-05-20T15:03:07Z"
 }
