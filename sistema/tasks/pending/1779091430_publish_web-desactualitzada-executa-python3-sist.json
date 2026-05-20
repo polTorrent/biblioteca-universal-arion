@@ -13,5 +13,7 @@
   "result": null,
   "error": null,
   "started_at": null,
-  "completed_at": null
+  "completed_at": null,
+  "retries": 1,
+  "last_error": "exit code 1"
 }
