@@ -1,10 +1,10 @@
 {
     "pid": 13838,
     "mode": "hybrid",
-    "current_task": "fix-fetch-rudyard-kipling-el-llibre-de-la-selva-1779113115",
-    "diem_balance": "4.434709062485616",
-    "uptime_seconds": 3784,
+    "current_task": "1779091430_publish_web-desactualitzada-executa-python3-sist",
+    "diem_balance": "4.235402462485615",
+    "uptime_seconds": 3865,
     "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-20T15:03:07Z"
+    "last_heartbeat": "2026-05-20T15:04:28Z"
 }
