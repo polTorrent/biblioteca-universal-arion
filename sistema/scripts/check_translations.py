@@ -1,11 +1,10 @@
 #!/usr/bin/env python3
 """check_translations.py — Analitza obra-queue.json i genera tasques FETCH/TRANSLATE"""
-import json, os, sys, unicodedata, re
+import json, os, sys
 
-def slugify(text):
-    text = unicodedata.normalize('NFKD', text.lower())
-    text = ''.join(c for c in text if not unicodedata.combining(c))
-    return re.sub(r'[^a-z0-9]+', '-', text).strip('-')
+# Importar resolució canònica d'autors
+sys.path.insert(0, os.path.join(os.path.expanduser('~/biblioteca-universal-arion'), 'sistema/config'))
+from author_resolver import resolve_author, slugify
 
 def task_exists_in_dir(titol, directory):
     if not os.path.isdir(directory): return False
@@ -41,7 +40,9 @@ def main():
         if obra_dir_rel:
             obra_dir = os.path.join(project, obra_dir_rel)
         else:
-            obra_dir = os.path.join(project, 'obres', categoria, slugify(autor), slugify(titol))
+            slug_autor = resolve_author(autor, categoria)
+            slug_titol = slugify(titol)
+            obra_dir = os.path.join(project, 'obres', categoria, slug_autor, slug_titol)
         
         has_original = os.path.isfile(os.path.join(obra_dir, 'original.md'))
         has_translation = False
