@@ -38,9 +38,9 @@ MIN_DIEM=1.0
 DIEM_RESERVE=0.5    # Marge de seguretat: sempre es reserva mig DIEM
 DIEM_COSTS_CONF="$PROJECT_DIR/sistema/config/diem_costs.conf"
 WATCHDOG_INTERVAL=300  # 5 minuts
-TASK_TIMEOUT_VENICE=2400
-TASK_TIMEOUT_VENICE_OPUS=3600
-TASK_TIMEOUT_HERMES=1800
+TASK_TIMEOUT_VENICE=600
+TASK_TIMEOUT_VENICE_OPUS=900
+TASK_TIMEOUT_HERMES=300
 
 # ── Parsejar arguments ──────────────────────────────────────────────────────
 for arg in "$@"; do
@@ -498,7 +498,16 @@ if tasks:
         fi
     elif [ $EXIT -eq 124 ]; then
         log "⏱️ Timeout per $TASK_ID (${DURATION}s)"
-        mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/"
+        RETRIES_NOW=$((RETRIES + 1))
+        if [ $RETRIES_NOW -lt $MAX_RETRIES ]; then
+            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['retries']=$RETRIES_NOW; d['last_error']='timeout after ${DURATION}s'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
+            mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/"
+        else
+            log "⏱️ $TASK_ID: $MAX_RETRIES timeouts consecutius. Marcant com failed."
+            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['last_error']='timeout after $MAX_RETRIES retries (${DURATION}s each)'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
+            mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
+            CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1)); save_errors
+        fi
         model_error_incr "$(select_model "$TASK_TYPE" "$INSTRUCTION" "")"
         sleep $COOLDOWN_FAIL
     else
