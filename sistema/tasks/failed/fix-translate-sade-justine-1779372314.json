@@ -1,0 +1,11 @@
+{
+  "id": "fix-translate-sade-justine-1779372314",
+  "type": "fix-translate",
+  "priority": 1,
+  "max_duration": 3600,
+  "obra": "obres/narrativa/sade/justine",
+  "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"obres/narrativa/sade/justine/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor 'sade' --obra 'justine' --output \"obres/narrativa/sade/justine/original.md\" 2>&1; fi && if [ -s \"obres/narrativa/sade/justine/original.md\" ]; then python3 sistema/traduccio/traduir_venice.py --ruta \"obres/narrativa/sade/justine\" 2>&1; fi && git add -A \"obres/narrativa/sade/justine/\" && git commit -m 'fix: traduir/completar sade/justine' && git push",
+  "created": "2026-05-21T16:05:14+02:00",
+  "retries": 2,
+  "last_error": "timeout after 3 retries (600s each)"
+}

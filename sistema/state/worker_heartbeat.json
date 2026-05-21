@@ -1,10 +1,10 @@
 {
-    "pid": 13838,
+    "pid": 20739,
     "mode": "hybrid",
-    "current_task": "1779290209_translate_petroni_continuar",
-    "diem_balance": "2.6176050124856154",
-    "uptime_seconds": 4633,
+    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1779372314",
+    "diem_balance": "3.072682852485615",
+    "uptime_seconds": 5203,
     "tasks_completed": 0,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-05-20T15:17:16Z"
+    "tasks_failed": 2,
+    "last_heartbeat": "2026-05-21T15:26:46Z"
 }

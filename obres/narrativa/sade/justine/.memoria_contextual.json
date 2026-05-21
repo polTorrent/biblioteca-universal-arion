@@ -1,7 +1,434 @@
 {
-  "traduccions": {},
-  "personatges": {},
-  "decisions_estil": [],
-  "context_investigacio": null,
-  "notes_pendents": []
+  "ultim_context": "posseïdor d'unes joies prou boniques, els efectes del qual, sigui per la proximitat, sigui per haver passat per les mans del meu amo, li eren a aquest molt coneguts; sovint el sentia lamentar-se amb la seva muller d'una certa capsa d'or de trenta o quaranta lluïsos, que infal·liblement li hauria quedat, deia, si hagués sabut emprendre-ho amb més traça. Per consolar-se, doncs, d'haver tornat aquella capsa, l'honest senyor du Harpin projectà de robar-la, i fou a mi a qui s'encarregà la negociació.",
+  "timestamp": 1779377136.5398927,
+  "historial": [
+    {
+      "context": "Qui sap, quan el Cel ens / colpeja amb els seus cops, / si la més gran dissort / no és un bé per a nosaltres? / *Èdip a casa d'Admet.*\n\n\nJUSTINE,\n\n\nO\n\n\nELS INFORTUNIS\n\n\nDE LA VIRTUT.\n\n\n* * *\n\n\nOh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyosos del qual només embelleixen un instant l'atmosfera per precipitar als abismes de la mort el dissortat que han enlluernat.\n\n\n* * *\n\n\nA HOLANDA,\n\nAls Llibreters Associats.\n\n\n1791.\n\n\nA LA MEVA BONA AMIGA.",
+      "timestamp": 1779375277.9404917
+    },
+    {
+      "context": " presenten; el cinisme de certs traços (suavitzats, però, tant com s'ha pogut) tampoc no t'esveràs; és el Vici el qui, planyent-se de ser desvelat, crida a l'escàndol així que se l'ataca. El procés del Tartuf fou cosa de beates; el de Justine serà obra dels llibertins: poc els temo. Els meus motius, desvelats per tu, no seran pas desautoritzats; la teva opinió em basta per a glòria, i, després d'haver-te plagut, o bé hauré de plaure universalment, o bé hauré de consolar-me de totes les censures.",
+      "timestamp": 1779375294.458543
+    },
+    {
+      "context": "El designi d'aquesta Novel·la (no tan novel·la com hom podria creure) és nou sens dubte; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauríem d'estar tips ja!",
+      "timestamp": 1779375300.8067977
+    },
+    {
+      "context": "e tenir per oposar a tants de revessos, a tants d'assots, per rebutjar tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més atrevides, les situacions més extraordinàries, les màximes més esgarrifoses, les pinzellades més enèrgiques, amb l'única mira d'obtenir de tot això una de les lliçons de moral més sublimes que l'home hagi rebut mai; això era, hom ho convindrà, arribar a la meta per un camí ben poc fressat fins al present.",
+      "timestamp": 1779375312.3214457
+    },
+    {
+      "context": "A VIRTUT.\n\nL'obra mestra de la filosofia seria desenvolupar els mitjans de què se serveix la Providència per assolir les finalitats que es proposa damunt l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest desventurat individu bípede la manera com ha de caminar per l'espinosa carrera de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual hom dóna vint noms diferents, sense haver arribat encara ni a conèixer-la ni a definir-la.",
+      "timestamp": 1779375323.985365
+    },
+    {
+      "context": "quells qui esclafen o martiritzen aquesta mateixa dona. Però si tanmateix neix un bé del quadre d'aquestes fatalitats, ¿se'n tindran remordiments d'haver-les exposades? ¿Hom podrà entristir-se d'haver establert un fet del qual resultarà, per al savi que llegeix amb profit, la lliçó tan útil de la submissió als ordres de la Providència, i l'advertiment fatal que sovint és per retornar-nos als nostres deures que el Cel colpeix al nostre costat l'ésser que ens sembla haver complert millor els seus?",
+      "timestamp": 1779375346.1761172
+    },
+    {
+      "context": "Tals són els sentiments que guiaran els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència envers els sistemes erronis que posem en boca de diversos dels nostres personatges, i envers les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant els seus ulls.",
+      "timestamp": 1779375350.7822108
+    },
+    {
+      "context": "tera, forjats per la impertinència que se'ls atorga i sostinguts per la ximple credulitat que els concedeix; bruna, ben plantada, amb uns ulls d'una expressió singular; aquella incredulitat de moda que, prestant un nou condiment a les passions, fa que es cerquin amb més afany les dones en qui es sospita; una mica dolenta, sense cap principi, no veient mal en res, i tanmateix sense prou depravació al cor per haver-ne extingit la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,",
+      "timestamp": 1779375360.1128
+    },
+    {
+      "context": "n sol dia: una bancarrota terrible va precipitar el seu pare en una situació tan cruel que en va morir de pena. La seva esposa el va seguir un mes després a la tomba. Dos parents freds i llunyans van deliberar sobre què farien de les joves òrfenes; la seva part d'una herència absorbida pels deutes pujava a cent escuts per a cadascuna. Com que ningú no es preocupava d'encarregar-se'n, els van obrir la porta del convent, els van lliurar el seu dot i les van deixar lliures de fer el que volguessin.",
+      "timestamp": 1779375370.6487744
+    },
+    {
+      "context": " natura havia embellit Juliette; tant com es veia d'artifici, de manyes i de coqueteria en els trets de l'una, tant s'admirava de pudor, de decència i de timidesa en l'altra; un aire de Verge, uns grans ulls blaus plens d'ànima i d'interès, una pell enlluernadora, un cos àgil i flexible, una veu commovedora, unes dents d'ivori i els més bells cabells rossos: heus aquí l'esbós d'aquesta cabaleta encisadora, les gràcies ingènues i els trets delicats de la qual són per damunt dels nostres pinzells.",
+      "timestamp": 1779375386.7260196
+    },
+    {
+      "context": "com que la veritable saviesa consistia infinitament més a doblar la suma dels propis plaers que no pas a multiplicar la de les pròpies penes; que no hi havia res, en una paraula, que no calgués fer per a esmussar dins nostre aquesta pèrfida sensibilitat, de la qual només els altres treien profit, mentre que a nosaltres no ens aportava sinó penes. Però difícilment s'endureix un bon cor: resisteix els raonaments d'un mal cap, i els seus goigs el consolen de les falses brillantors del bell esperit.",
+      "timestamp": 1779375401.7841194
+    },
+    {
+      "context": "veïnes, la qual, havent fugit de la casa paterna, era avui dia ricament mantinguda i sens dubte molt més feliç que no pas si hagués romàs a la llar familiar; que calia guardar-se bé de creure que fos el matrimoni allò que feia feliç una noia jove; que, captiva sota les lleis de l'himen, tenia, amb molts mals humors a suportar, una dosi ben minsa de plaers a esperar; mentre que, lliurades al llibertinatge, sempre es podrien guardar dels mals humors dels amants, o bé consolar-se'n per llur nombre.",
+      "timestamp": 1779375411.919399
+    },
+    {
+      "context": "etrobar-se, ja que llurs intencions es trobaven tan divergents. ¿Consentiria Juliette, que pretenia esdevenir una gran dama, a rebre una noieta les inclinacions de la qual, virtuoses però baixes, serien capaces de deshonrar-la? I, per la seva banda, ¿voldria Justine arriscar els seus costums en la companyia d'una criatura perversa que aviat seria víctima de la crapuleria i del llibertinatge públic? Totes dues, doncs, es digueren un adéu etern, i totes dues abandonaren el convent l'endemà mateix.",
+      "timestamp": 1779375421.8526418
+    },
+    {
+      "context": "va joventut i les meves desgràcies necessiten, i vós voleu fer-me'ls comprar massa cars». El Pastor, avergonyit de veure's descobert, fou raudo en fer fora aquella criatureta, i la dissortada Justine, dues vegades rebutjada el primer dia en què és condemnada a l'aïllament, entra en una casa on veu un rètol, lloga un petit gabinet moblat al cinquè pis, el paga per endavant i s'hi lliura a unes llàgrimes tant més amargues que és sensible i que el seu petit orgull acaba d'ésser cruelment compromès.",
+      "timestamp": 1779375460.1136024
+    },
+    {
+      "context": ", del cor, de la fortuna i de la confiança del senyor de Corville, Conseller d'Estat, home del més gran crèdit, i a punt d'entrar en el ministeri. La carrera fou espinosa, no se'n pot dubtar pas: és per mitjà del més vergonyós i dur dels aprenentatges que aquestes senyoretes es fan camí; i tal jeu avui en el llit d'un Príncep, que potser encara duu damunt seu les marques humiliants de la brutalitat dels llibertins entre les mans dels quals la seva joventut i la seva inexperiència la van llançar.",
+      "timestamp": 1779375472.4421418
+    },
+    {
+      "context": "ccionat amb escrúpol les coses per totes bandes, va dir a la noia—: Apa, no us cal sinó quedar-vos aquí, molt de respecte pels meus consells, un gran fons de complaença i submissió per als meus clients, netedat, economia, candor davant meu, política envers les vostres companyes, i murrieria amb els homes; abans de deu anys, us posaré en estat de retirar-vos a un tercer pis, amb una calaixera, un mirall i una criada; i l'art que haureu adquirit a casa meva us donarà amb què procurar-vos la resta.",
+      "timestamp": 1779375491.3089383
+    },
+    {
+      "context": "ria per a ella, però que no convé que una noia jove tingui diners. És, li diu, un mitjà per fer el mal, i en un segle tan corromput, una noia assenyada i ben nascuda ha d'evitar amb cura tot allò que pugui arrossegar-la a paranys. És pel vostre bé que us parlo, petita meva —afegí la dueña—, i m'heu d'agrair el que faig.\n\nAcabat aquest sermó, la nouvinguda és presentada a les seves companyes, se li indica la seva cambra a la casa, i des de l'endemà mateix les seves primícies són posades en venda.",
+      "timestamp": 1779375501.734766
+    },
+    {
+      "context": "de Citera; la miren, la citen, l'envegen, i la fina criatura sap dur-s'ho tan bé que en menys de quatre anys arruïna sis homes, el més pobre dels quals tenia cent mil escuts de renda. No calia res més per fer-li la reputació; la ceguesa de la gent de món és tal, que com més una d'aquestes criatures ha provat la seva deshonestedat, més s'enveja figurar a la seva llista; sembla que el grau del seu enviliment i de la seva corrupció esdevingui la mesura dels sentiments que hom gosa exhibir per ella.",
+      "timestamp": 1779375528.2552228
+    },
+    {
+      "context": "Juliette tot just havia complert els vint anys, quan un cert comte de Lorsange, gentilhome angeví d'uns quaranta anys, se'n va enamorar de tal manera que va resoldre de donar-li el seu nom; li va reconèixer dotze mil lliures de renda, li va assegurar la resta de la seva fortuna si moria abans que ella; li va donar una casa, criats, una lliurea, i una mena de consideració en el món, que va arribar al cap de dos o tres anys a fer oblidar els seus inicis.",
+      "timestamp": 1779375533.9882677
+    },
+    {
+      "context": "en què la voluptat rebuda només és viva en raó de la multitud de frens que es trenquen, o de llur santedat. Esvaït el somni, si hom tornés a la seny, l'inconvenient seria mediocre: és la història de les errades de l'esperit; prou se sap que no ofenen ningú, però malauradament hom va més enllà. Què serà, gosa hom dir-se, la realització d'aquesta idea, puix que la seva sola contemplació acaba d'exaltar, acaba d'esmoure tan vivament? Hom vivifica la maleïda quimera, i la seva existència és un crim.",
+      "timestamp": 1779375546.7897787
+    },
+    {
+      "context": "espantós crim que el precipitava a la tomba.\n\nTornada a ser lliure i comtessa, la senyora de Lorsange reprengué els antics costums; però, creient-se algú dins la societat, posà en la seva conducta una mica menys d'indecència. Ja no era una dona mantinguda, era una rica vídua que oferia sopars exquisits, a casa de la qual la Cort i la vila eren ben felices de ser admeses; una dona decent, en una paraula, i que tanmateix es ficava al llit per dos-cents lluïsos, i es lliurava per cinc-cents al mes.",
+      "timestamp": 1779375556.5354276
+    },
+    {
+      "context": "aviat un llegat de cent mil francs que un dels seus adoradors li feia a nom d'un tercer, encarregat de lliurar-li la suma després del decés. A aquests horrors la senyora de Lorsange afegia tres o quatre infanticidis. La por de fer malbé la seva bonica figura, el desig d'amagar una doble intriga, tot la portà a la resolució d'ofegar en el seu si la prova de les seves disbauxes; i aquests crims, ignorats com els altres, no impediren que aquesta dona destra i ambiciosa trobés cada dia nous incauts.",
+      "timestamp": 1779375569.4062335
+    },
+    {
+      "context": "stig que la Providència reserva certament als qui els seus èxits han seduït, ¿no nodreixen al fons de la seva ànima un cuc que, rosegant-los sense treva, els impedeix de gaudir d'aquestes falses lluïssors, i no deixa en el seu esperit, en lloc de delícies, sinó el record esquinçador dels crims que els han portat on són? Quant a l'infortunat que la sort persegueix, té el seu cor com a consol, i els goigs íntims que li procuren les seves virtuts el rescabalen ben aviat de la injustícia dels homes.",
+      "timestamp": 1779375581.4151313
+    },
+    {
+      "context": "e, de cinquanta anys, gaudint del crèdit i de la consideració que hem descrit més amunt, va resoldre sacrificar-se enterament per aquesta dona i lligar-la a ell per sempre. Fos per atenció, fos pels seus procediments, fos per la política de la senyora de Lorsange, ho havia aconseguit, i feia quatre anys que vivia amb ella absolutament com amb una esposa legítima, quan l'adquisició d'una bellíssima propietat a prop de Montargis els obligà tots dos a anar a passar algun temps en aquella província.",
+      "timestamp": 1779375588.2117686
+    },
+    {
+      "context": "Un vespre, en què la bellesa del temps els havia fet allargar el passeig, des de la propietat que habitaven fins a Montargis, massa cansats tots dos per emprendre el retorn tal com havien vingut, es van aturar a l'hostal on para la diligència de Lió, amb la intenció d'enviar des d'allà un home a cavall a buscar-los un cotxe. Reposaven en una sala baixa i fresca d'aquella casa, que donava al pati, quan la diligència de què acabem de parlar entrà a l'hostatgeria.",
+      "timestamp": 1779375596.9688258
+    },
+    {
+      "context": "ligada com una criminal i d'una flaquesa tal que de ben segur hauria caigut si els guardes no l'haguessin sostinguda. A un crit de sorpresa i d'horror que escapa a la senyora de Lorsange, la jove es gira, i deixa veure, juntament amb el talle més bell del món, la figura més noble, la més agradable, la més interessant, tots els atractius, en fi, més capaços de plaure, fets mil vegades més punyents encara per aquella tendra i corprenedora aflicció que la innocència afegeix als trets de la bellesa.",
+      "timestamp": 1779375617.7277133
+    },
+    {
+      "context": "ndi; però us confesso que el meu company i jo mai no havíem conduït cap criminal amb tanta repugnància; és la criatura més dolça, i la que sembla més honesta. —Ah, ah —diu el senyor de Corville—, no podria ser que hi hagués aquí alguna d'aquelles errades habituals dels tribunals subalterns?... I on s'ha comès el delicte? —En una hostaleria a algunes llegües de Lió; és Lió qui l'ha jutjada; va, segons el costum, a París per a la confirmació de la seva sentència, i tornarà per ser executada a Lió.",
+      "timestamp": 1779375628.4164457
+    },
+    {
+      "context": "iu interès, i que sens dubte es deia a si mateixa: «aquesta criatura, potser innocent, és tractada nogensmenys com una criminal, mentre que tot prospera al meu voltant... al meu voltant... al meu, que m'he tacat de crims i d'horrors»; la senyora de Lorsange, dic, així que va veure aquella pobra noia una mica refeta, una mica consolada per les carícies que s'apressaven a prodigar-li, la pregà que digués per quin esdeveniment, amb una fesomia tan dolça, es trobava en una circumstància tan funesta.",
+      "timestamp": 1779375640.3077855
+    },
+    {
+      "context": "ontar-vos la història de la meva vida, senyora —digué aquella bella infortunada, adreçant-se a la comtessa—, és oferir-vos l'exemple més colpidor dels infortunis de la innocència, és acusar la mà del Cel, és queixar-se de les voluntats de l'Ésser suprem, és una mena de revolta contra les seves intencions sagrades... no goso fer-ho... —Llavors les llàgrimes brollaren a doll dels ulls d'aquella interessant noia, i, després d'haver-los donat curs un instant, començà el seu relat amb aquests termes.",
+      "timestamp": 1779375649.4026322
+    },
+    {
+      "context": "ué amb brutalitat que em faria fer per força allò que no volia concedir-li de bon grat. En aquell instant cruel, la meva dissort em presta coratge; em deslliuro de les seves mans i, llançant-me cap a la porta: «Home odiós —li diguí escapolint-me—, que el Cel, tan greument ofès per tu, et castigui un dia, com t'ho mereixes, del teu execrable enduriment. No ets digne ni d'aquestes riqueses de les quals fas un ús tan vil, ni de l'aire mateix que respires en un món embrutat per les teves barbàries.»",
+      "timestamp": 1779375735.9363198
+    },
+    {
+      "context": " t'hauria deixat sortir de casa meva sense haver-me satisfet. Però com que no vols aprofitar els auxilis que t'ofereixo, espavila't com vulguis; demà em deus diners, o la presó. —Senyora, tingueu pietat… —Sí, sí, pietat; un es mor de gana amb la pietat. —Però com voleu que ho faci? —Cal que tornis a casa de Dubourg; cal que el satisfacis, cal que em portis diners; jo el veuré, el previndré; arreglaré, si puc, les teves bestieses; li presentaré les teves excuses, però mira de comportar-te millor.",
+      "timestamp": 1779375749.3561132
+    },
+    {
+      "context": " dir a Madame Desroches (que tal era el nom de la meva hostalera) que estava decidida a tot per satisfer-la. Va anar a casa del financer i, en tornar, em digué que l'havia trobat molt irritat; que no sense feines havia aconseguit doblegar-lo en favor meu; que, a força de súpliques, havia reeixit, tanmateix, a persuadir-lo de tornar-me a veure l'endemà al matí; però que em guardés bé de la meva conducta, perquè, si gosava desobeir-lo de nou, ell mateix s'encarregaria de fer-me tancar de per vida.",
+      "timestamp": 1779375758.672921
+    },
+    {
+      "context": " la vetlla. La brutalitat, el llibertinatge, tots els trets de la disbauxa esclataven en les seves mirades sorneguers. —Doneu gràcies a la Desroches —em digué amb duresa— que, per complaure-la, vulgui tornar-vos un instant les meves bondats; bé heu de sentir com us en feu indigna després de la vostra conducta d'ahir. Despulleu-vos i, si encara oposeu la més lleugera resistència als meus desigs, dos homes us esperen a la meva avantcambra per conduir-vos a un lloc d'on no sortireu en tota la vida.",
+      "timestamp": 1779375767.2721288
+    },
+    {
+      "context": "ia de sentir per un gènere de crim del qual havia de néixer l'afluència dels mals que m'amenaçaven! Però calia que me'n planyés llavors? No, certament; als seus excessos vaig deure la meva salvació; amb menys disbauxa, hauria estat una noia desflorada; els focs de Dubourg s'extingiren en l'efervescència de les seves empreses, el Cel em va venjar de les ofenses a què el monstre estava a punt de lliurar-se, i la pèrdua de les seves forces, abans del sacrifici, em va preservar de ser-ne la víctima.",
+      "timestamp": 1779375792.8307614
+    },
+    {
+      "context": "Qui sap, quan el Cel ens / fereix amb els seus colps, / si la dissort més gran / no és un bé per a nosaltres? / Èd. a casa d'Admet.\n\n\nJUSTINE,\n\n\nO\n\n\nELS INFORTUNIS\n\n\nDE LA VIRTUT.\n\n\n* * *\n\n\nOh amic meu! La prosperitat del Crim és com el llamp, els focs enganyosos del qual només embelleixen un instant l'atmosfera per precipitar en els abismes de la mort el desgraciat que han enlluernat.\n\n\n* * *\n\n\nA HOLANDA,\n\nA casa dels Llibreters Associats.\n\n\n1791.\n\n\nA LA MEVA BONA AMIGA.",
+      "timestamp": 1779375900.196376
+    },
+    {
+      "context": "senten; el cinisme de certs traços (suavitzats, tanmateix, tant com s'ha pogut) no t'esfereirà tampoc: és el Vici qui, gemegant de veure's despullat, crida a l'escàndol així que se l'ataca. El procés del Tartuf fou obra dels bigots; el de Justine ho serà dels llibertins, i ben poc els temo: els meus motius, desvelats per tu, no seran pas desautoritzats; la teva opinió em basta per a glòria meva, i havent-te plagut, només em resta o bé plaure universalment, o bé consolar-me de totes les censures.",
+      "timestamp": 1779375913.728998
+    },
+    {
+      "context": "El designi d'aquesta Novel·la (no tan novel·lesca com hom creuria) és sens dubte nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal: vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauríem d'estar ja tips!",
+      "timestamp": 1779375919.14614
+    },
+    {
+      "context": "sistibles; sense tenir per oposar a tants de revessos, a tantes plagues, per rebutjar tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més atrevides, les situacions més extraordinàries, les màximes més esfereïdores, les pinzellades més enèrgiques, amb l'única intenció d'obtenir de tot plegat una de les lliçons morals més sublimes que l'home hagi rebut mai; era, cal admetre-ho, atènyer la meta per una via fins ara poc fressada.",
+      "timestamp": 1779375931.5330987
+    },
+    {
+      "context": "UNIS\n\nDE LA VIRTUT.\n\nL'obra mestra de la filosofia seria desenvolupar els mitjans de què se serveix la Providència per atènyer els fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest infeliç individu bípede la manera com ha de caminar per la senda espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual hom dóna vint noms diferents, sense haver arribat encara, ni a conèixer-la, ni a definir-la.",
+      "timestamp": 1779375941.9795163
+    },
+    {
+      "context": "quells que esclafen o turmenten aquesta mateixa dona. Però si, malgrat tot, neix un bé del quadre d'aquestes fatalitats, ¿s'haurà de tenir remordiment d'haver-les ofertes? ¿Hom podrà doldre's d'haver establert un fet del qual resultarà, per al savi que llegeix amb profit, la lliçó tan útil de la submissió als designis de la Providència, i l'advertiment fatal que és sovint per retornar-nos als nostres deures que el Cel fereix al nostre costat l'ésser que ens sembla haver complert millor els seus?",
+      "timestamp": 1779375970.447481
+    },
+    {
+      "context": "Tals són els sentiments que guiaran els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència per als sistemes erronis que són posats en boca de diversos dels nostres personatges, i per a les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.",
+      "timestamp": 1779375975.4656851
+    },
+    {
+      "context": "a, forjats per la impertinència que els pren i sostinguts per la sòtia credulitat que els atorga; bruna, de bella figura, amb uns ulls d'una expressió singular; aquella incredulitat de moda que, prestant un al·licient més a les passions, fa cercar amb major sol·licitud les dones en qui se sospita; una mica malèvola, sense cap principi, no creient que res fos dolent i, tanmateix, no prou depravada de cor per haver-ne extingit la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,",
+      "timestamp": 1779375985.0167582
+    },
+    {
+      "context": "a precipità el seu pare en una situació tan cruel que en va morir de pena. La seva muller el va seguir un mes després a la tomba. Dos parents freds i llunyans van deliberar sobre què en farien, de les joves òrfenes; la part que els pertocava de l'herència, absorbida pels deutes, ascendia a cent escuts per a cadascuna. Com que ningú no es preocupava de fer-se'n càrrec, els van obrir la porta del convent, els van lliurar el seu dot i les van deixar lliures de fer el que volguessin de la seva vida.",
+      "timestamp": 1779375998.818634
+    },
+    {
+      "context": "llir-la; tant com es veia d'artifici, de manyagueria i de coqueteria en els trets de l'una, tant s'admirava de pudor, de decència i de timidesa en els de l'altra; un aire de Verge, uns ulls grossos i blaus, plens d'ànima i d'interès, una pell enlluernadora, una cintura flexible i lleugera, una veu corprenedora, unes dents d'ivori i els més bells cabells rossos: vet aquí l'esbós d'aquesta cadeta encisadora, les gràcies ingènues i els trets delicats de la qual són per damunt dels nostres pinzells.",
+      "timestamp": 1779376081.9703987
+    },
+    {
+      "context": "com que la veritable saviesa consistia infinitament més a doblar la suma dels nostres plaers que a multiplicar la de les nostres penes; que no hi havia res, en una paraula, que no s'hagués de fer per esmussar dins de si aquesta pèrfida sensibilitat, de la qual només els altres en treien profit, mentre que a nosaltres no ens portava sinó disgustos. Però difícilment s'endureix un bon cor; resisteix als raonaments d'un cap malvat, i els seus delits el consolen dels falsos llampecs del bell esperit.",
+      "timestamp": 1779376096.6122305
+    },
+    {
+      "context": "as de la filla d'una veïna que, havent fugit de la casa paterna, vivia ara ricament mantinguda i sens dubte molt més feliç que si hagués romàs al si de la seva família; que calia guardar-se prou de creure que fos el matrimoni allò que fes feliç una noia; que, captiva sota les lleis de l'himen, havia de suportar molts mals humors a canvi d'una dosi ben minsa de plaers; mentre que, lliurades al llibertinatge, sempre podrien preservar-se del mal humor dels amants, o consolar-se'n amb el seu nombre.",
+      "timestamp": 1779376106.2398915
+    },
+    {
+      "context": "que les seves intencions resultaven tan diferents. Juliette, que pretenia convertir-se en una gran dama, consentiria a rebre una noieta les inclinacions de la qual, virtuoses però baixes, podrien deshonrar-la? I, per la seva banda, voldria Justine arriscar els seus costums en companyia d'una criatura perversa que estava a punt de convertir-se en víctima de la crapuleria i del llibertinatge públic? Totes dues, doncs, es van dir un adéu etern, i totes dues van abandonar el convent l'endemà mateix.",
+      "timestamp": 1779376115.4667957
+    },
+    {
+      "context": "oventut i les meves desgràcies necessiten, i voleu fer-me'ls pagar massa cars.\n\nEl pastor, avergonyit de veure's desemmascarat, féu fora ràpidament aquella criatureta, i la dissortada Justine, rebutjada dues vegades el primer dia que es veu condemnada a la soledat, entra en una casa on veu un cartell, lloga un petit gabinet moblat al cinquè pis, el paga a la bestreta, i es lliura a unes llàgrimes tant més amargues quan ella és sensible i quan el seu petit orgull acaba de ser cruelment compromès.",
+      "timestamp": 1779376149.0469794
+    },
+    {
+      "context": ", del cor, de la fortuna i de la confiança del senyor de Corville, Conseller d'Estat, home del més gran crèdit i a punt d'entrar al ministeri. La carrera fou espinosa, ningú no n'ha pas de dubtar: és pel més vergonyós i dur dels aprenentatges que aquestes damisel·les es fan el seu camí; i tal n'hi ha que avui jau al llit d'un Príncep que potser encara duu damunt seu les marques humiliants de la brutalitat dels llibertins en mans dels quals la seva joventut i la seva inexperiència la van llançar.",
+      "timestamp": 1779376159.1967294
+    },
+    {
+      "context": "speccionat amb escrúpol les coses per totes bandes: —Bé —digué a la noia—, només heu de quedar-vos aquí, molt respecte pels meus consells, un gran fons de complaença i submissió per a les meves clientes, netedat, economia, candor envers mi, política amb les vostres companyes, i murrieria amb els homes; abans de deu anys, us posaré en condicions de retirar-vos a un tercer pis amb una còmoda, un mirall i una serventa; i l'art que haureu adquirit a casa meva us donarà amb què procurar-vos la resta.",
+      "timestamp": 1779376176.7068787
+    },
+    {
+      "context": "ò que no convé que una noia jove tingui diners. «És —li digué— un mitjà per a fer el mal, i en un segle tan corromput com aquest, una noia assenyada i ben nascuda ha d'evitar amb cura tot allò que pugui arrossegar-la a algun parany. És pel teu bé que et parlo, petita —afegí la dueña—, i m'has d'agrair el que faig.»\n\nAcabat aquest sermó, la nouvinguda és presentada a les seves companyes, se li indica la seva cambra dins la casa, i des de l'endemà mateix les seves primícies són posades a la venda.",
+      "timestamp": 1779376187.142649
+    },
+    {
+      "context": "ra; la miren, la citen, l'envegen, i la fina criatura sap manegar-s'ho tan bé que en menys de quatre anys arruïna sis homes, el més pobre dels quals tenia cent mil escuts de renda. No calia res més per a fer-li la reputació; la ceguesa de la gent de món és tal, que com més una d'aquestes criatures ha provat la seva deshonestedat, més s'enveja de figurar a la seva llista; sembla que el grau del seu enviliment i de la seva corrupció esdevingui la mesura dels sentiments que s'gosa exhibir per ella.",
+      "timestamp": 1779376207.0507057
+    },
+    {
+      "context": "La Juliette tot just havia complert els vint anys, quan un cert comte de Lorsange, gentilhome angeví d'uns quaranta anys, en quedà tan corprès que resolgué donar-li el seu nom; li reconegué dotze mil lliures de renda, li assegurà la resta de la seva fortuna si esdevenia que ell morís abans que ella; li donà una casa, servents, lliurea, i una mena de consideració en el món, que arribà en dos o tres anys a fer oblidar els seus començaments.",
+      "timestamp": 1779376213.5638936
+    },
+    {
+      "context": " i que la voluptat rebuda només és viva en raó de la multitud de frens que es trenquen, o de la santedat d'aquests. Esvaït el somni, si hom tornés a la seny, l'inconvenient seria mediocre: és la història dels desencerts de l'esperit; bé se sap que no ofenen ningú; però malauradament hom va més lluny. Què serà, gosa hom dir-se, la realització d'aquesta idea, ja que el seu sol aspecte acaba d'exaltar, acaba de commoure tan vivament? Hom vivifica la maleïda quimera, i la seva existència és un crim.",
+      "timestamp": 1779376226.8752766
+    },
+    {
+      "context": " espantós que el precipitava a la tomba.\n\nTornada lliure i comtessa, la senyora de Lorsange reprengué els seus antics costums; però, creient-se quelcom en el món, posà en la seva conducta una mica menys d'indecència. Ja no era una dona mantinguda, era una rica vídua que oferia sopars exquisits, a casa de la qual la Cort i la ciutat es tenien per massa felices de ser admeses; dona decent, en una paraula, i que tanmateix es ficava al llit per dos-cents lluïsos, i es lliurava per cinc-cents al mes.",
+      "timestamp": 1779376236.551887
+    },
+    {
+      "context": "egat de cent mil francs que un dels seus adoradors li feia en nom d'un tercer, encarregat de lliurar-li la suma després del traspàs. A aquests horrors la senyora de Lorsange n'hi afegí tres o quatre infanticidis. La por de fer malbé la seva bella figura, el desig d'amagar una doble intriga, tot la induí a prendre la resolució d'ofegar al seu si la prova de les seves disbauxes; i aquests crims, ignorats com els altres, no impediren que aquesta dona astuta i ambiciosa trobés cada dia nous incauts.",
+      "timestamp": 1779376248.5317297
+    },
+    {
+      "context": " reserva ben certament a aquells que els seus èxits han seduït, no nodreixen acaso en el fons de la seva ànima un cuc que, rosegant-los sense treva, els impedeix de gaudir d'aquestes falses llambregades, i no deixa en la seva ànima, en lloc de delícies, sinó el record esquinçador dels crims que els han dut on són? Pel que fa al dissortat que la sort persegueix, té el seu cor com a consol, i els goigs interiors que li procuren les seves virtuts el rescabalen ben aviat de la injustícia dels homes.",
+      "timestamp": 1779376261.284149
+    },
+    {
+      "context": "e, de cinquanta anys d'edat, gaudint del crèdit i la consideració que abans hem descrit, resolgué de sacrificar-se enterament per aquesta dona i de lligar-la a ell per sempre. Fos per atencions, fos per delicadeses, fos per habilitat de part de la senyora de Lorsange, ho havia aconseguit, i feia quatre anys que vivia amb ella absolutament com amb una esposa legítima, quan l'adquisició d'una bellíssima finca a prop de Montargis els obligà tots dos a anar a passar algun temps en aquella província.",
+      "timestamp": 1779376268.115753
+    },
+    {
+      "context": "Un vespre, com que la bellesa del temps els havia fet allargar el passeig, des de la finca on residien fins a Montargis, massa fatigats tots dos per emprendre el retorn tal com havien vingut, es deturaren a l'hostal on para la diligència de Lió, amb la intenció d'enviar des d'allí un home a cavall a cercar-los un carruatge. Reposaven en una sala baixa i fresca d'aquella casa, que donava al pati, quan el cotxe del qual acabem de parlar entrà a l'hostatgeria.",
+      "timestamp": 1779376277.1279933
+    },
+    {
+      "context": "tafetà negre. Anava lligada com una criminal i d’una feblesa tal que segurament hauria caigut si els seus guardians no l’haguessin sostinguda. A un crit de sorpresa i d’horror que escapa a Madame de Lorsange, la jove es gira i deixa veure, amb el talle més bell del món, la figura més noble, més agradable, més corprenedora, tots els encants en fi més capaços d’encisar, fets mil vegades més punyents encara per aquella tendra i commovedora aflicció que la innocència afegeix als trets de la bellesa.",
+      "timestamp": 1779376291.801334
+    },
+    {
+      "context": "nfesso que ni el meu company ni jo no havíem conduït mai cap criminal amb tanta repugnància com aquesta vegada; és la criatura més dolça i la que sembla més honesta.» «Ah, ah! —diu el senyor de Corville—, ¿no podria ser que es tractés d'alguna d'aquestes errades habituals dels tribunals subalterns?… I on s'ha comès el delicte?» «En un hostal a algunes llegües de Lió; és Lió qui l'ha jutjada; va, segons el costum, a París per a la confirmació de la sentència, i tornarà per a ser executada a Lió.»",
+      "timestamp": 1779376302.554358
+    },
+    {
+      "context": "el més viu interès, i que sens dubte es deia a si mateixa: «aquesta criatura, potser innocent, és tractada però com una criminal, mentre que tot prospera al meu voltant… al meu voltant, jo que m'he tacat de crims i d'horrors»; la senyora de Lorsange, dic, tan bon punt va veure aquella pobra noia una mica refeta, una mica consolada per les manyagues que s'afanyaven a prodigar-li, la va instar a explicar per quin esdeveniment, amb una fesomia tan dolça, es trobava en una circumstància tan funesta.",
+      "timestamp": 1779376318.2081792
+    },
+    {
+      "context": "—Explicar-vos la història de la meva vida, senyora —digué aquella bella desventurada adreçant-se a la comtessa—, és oferir-vos l'exemple més colpidor dels infortunis de la innocència, és acusar la mà del Cel, és queixar-se de les voluntats de l'Ésser suprem, és una mena de revolta contra les seves intencions sagrades… no goso fer-ho…\n\nLlàgrimes abundoses li brollaren llavors dels ulls a aquella interessant noia, i, després d'haver-hi donat curs un instant, començà el seu relat en aquests termes.",
+      "timestamp": 1779376325.3904564
+    },
+    {
+      "context": " amb brutalitat que em farà fer per força allò que no li vull concedir de bon grat. En aquell instant cruel la meva dissort em presta coratge; em desempallego de les seves mans i, llançant-me cap a la porta:\n\n—Home odiós —li vaig dir tot escapant-me—, que el Cel, tan greument ofès per tu, et castigui un dia, com et mereixes, de la teva execrable cruesa. No ets digne ni d'aquestes riqueses de les quals fas un ús tan vil, ni de l'aire mateix que respires en un món embrutat per les teves barbàries.",
+      "timestamp": 1779376403.0158165
+    },
+    {
+      "context": " no t'hauria deixat sortir de casa meva sense haver-me satisfet. Però, ja que no vols aprofitar els ajuts que t'ofereixo, arregla-t'ho com vulguis; demà em deus diners, o la presó.\n\n—Senyora, tingueu pietat...\n\n—Sí, sí, pietat; hom es mor de fam amb la pietat.\n\n—Però, com voleu que ho faci?\n\n—Cal tornar a casa de Dubourg; cal satisfer-lo, cal portar-me diners; jo el veuré, el previndré; adobaré, si puc, les vostres bestieses; li presentaré les vostres excuses, però penseu a comportar-vos millor.",
+      "timestamp": 1779376415.1019049
+    },
+    {
+      "context": "a la senyora Desroches (era el nom de la meva hostalera) que estava decidida a tot per satisfer-lo. Va anar a casa del financer i, en tornar, em digué que l'havia trobat molt irritat; que no sense esforç havia aconseguit aplacar-lo a favor meu; que, a còpia de súpliques, havia reeixit tanmateix a persuadir-lo perquè em rebés l'endemà al matí; però que prengués cura del meu comportament, perquè, si gosava desobeir-lo encara una altra vegada, ell mateix s'encarregaria de fer-me tancar de per vida.",
+      "timestamp": 1779376423.4973974
+    },
+    {
+      "context": ". La brutalitat, el llibertinatge, tots els trets de la disbauxa esclataven en les seves mirades sornegueres. —Doneu gràcies a la Desroches —em digué amb duresa— que, per consideració a ella, vull tornar-vos un instant les meves bondats; ja heu de sentir prou com en sou d'indigna després de la vostra conducta d'ahir. Despulleu-vos, i si oposeu encara la més lleugera resistència als meus desigs, dos homes us esperen a la meva avantcambra per conduir-vos a un lloc d'on no sortireu en tota la vida.",
+      "timestamp": 1779376434.7644684
+    },
+    {
+      "context": "tot l'horror que havia de tenir vers una mena de crim del qual havia de néixer l'afluència de mals que m'amenaçaven. Però, ¿calia que me'n planyés llavors? No, sens dubte; als seus excessos vaig deure la meva salvació; amb menys disbauxa hauria estat una noia desflorada; els focs de Dubourg s'apagaren en l'efervescència de les seves empreses, el Cel em vengà de les ofenses a què el monstre anava a lliurar-se, i la pèrdua de les seves forces, abans del sacrifici, em preservà de ser-ne la víctima.",
+      "timestamp": 1779376459.4587033
+    },
+    {
+      "context": "Qui sap, quan el Cel ens fereix / amb els seus cops, / si la més gran desgràcia no és / un bé per a nosaltres?\nÈd. a casa d'Admet.\n\n\nJUSTINE,\n\n\nO\n\n\nELS INFORTUNIS\n\n\nDE LA VIRTUT.\n\n\n* * *\n\n\nOh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyosos del qual només embelleixen un instant l'atmosfera per a precipitar als abismes de la mort el desgraciat que han enlluernat.\n\n\n* * *\n\n\nA HOLANDA,\n\nA casa dels Llibreters Associats.\n\n\n1791.\n\n\nA LA MEVA BONA AMIGA.",
+      "timestamp": 1779376553.1441884
+    },
+    {
+      "context": "cinisme d'alguns traços (suavitzats, tanmateix, tant com s'ha pogut) tampoc no t'esglaiarà: és el Vici qui, gemegant de veure's desemmascarat, crida a l'escàndol tan bon punt se l'ataca. El procés del Tartuf el van fer els beats; el de Justine serà obra dels llibertins, i poc els temo: els meus motius, desvelats per tu, no seran pas desautoritzats; la teva opinió em basta per a la meva glòria, i, després d'haver-te plagut, em cal o bé plaure universalment, o bé consolar-me de totes les censures.",
+      "timestamp": 1779376565.8436003
+    },
+    {
+      "context": "El designi d'aquesta Novel·la (no tan novel·la com hom creuria) és nou, sens dubte: l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; ¿no n'hauríem d'estar tips?",
+      "timestamp": 1779376570.6570277
+    },
+    {
+      "context": "les; sense tenir per oposar a tants de revessos, a tantes de calamitats, per rebutjar tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més agosarades, les situacions més extraordinàries, les màximes més esfereïdores, les pinzellades més enèrgiques, amb la sola intenció d'obtenir de tot això una de les lliçons morals més sublimes que l'home hagi rebut mai; era, hom ho convindrà, atènyer la fita per un camí fins ara poc fressat.",
+      "timestamp": 1779376583.5344565
+    },
+    {
+      "context": " LA VIRTUT.\n\nL'obra mestra de la filosofia seria desenvolupar els mitjans de què se serveix la Providència per assolir els fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest desgraciat individu bípede la manera com cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estrambòtics d'aquesta fatalitat a la qual es donen vint noms diferents, sense haver arribat encara ni a conèixer-la ni a definir-la.",
+      "timestamp": 1779376593.3901727
+    },
+    {
+      "context": "sobre aquells que esclafen o mortifiquen aquesta mateixa dona. Però si tanmateix neix un bé del quadre d'aquestes fatalitats, tindrem remordiments d'haver-les ofertes? Es podrà lamentar el fet d'haver establert un fet del qual resultarà, per al savi que llegeix amb profit, la lliçó tan útil de la submissió als ordres de la Providència, i l'advertiment fatal que sovint és per retornar-nos als nostres deures que el Cel colpeix al nostre costat l'ésser que ens sembla haver complert millor els seus?",
+      "timestamp": 1779376616.1243393
+    },
+    {
+      "context": "Tals són els sentiments que guiaran els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència pels sistemes erronis que posem en boca de diversos dels nostres personatges, i per les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de presentar davant els seus ulls.",
+      "timestamp": 1779376620.2214136
+    },
+    {
+      "context": "er la impertinència que se'ls atribueix i sostinguts per la babau credulitat que els concedeix; bruna, ben plantada, amb uns ulls d'una expressió singular; aquella incredulitat de moda que, prestant una sal de més a les passions, fa que es cerquin amb més afany les dones en qui se sospita; una mica dolenta, sense cap principi, sense creure que res sigui mal fet i, tanmateix, no pas prou depravada de cor per haver-ne extingit la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,",
+      "timestamp": 1779376630.564002
+    },
+    {
+      "context": "un sol dia: una fallida espantosa va precipitar el seu pare en una situació tan cruel que en va morir de pena. La seva esposa el va seguir al sepulcre un mes després. Dos parents freds i llunyans van deliberar sobre què farien de les joves òrfenes; la seva part d'una herència absorbida pels creditors pujava a cent escuts per a cadascuna. Com que ningú no es preocupava de fer-se'n càrrec, els van obrir la porta del convent, els van lliurar el dot i les van deixar lliures de fer el que volguessin.",
+      "timestamp": 1779376642.5459747
+    },
+    {
+      "context": "havia embellit Juliette; tant d'artifici, de manegament i de coqueteria com es veia en els trets de l'una, tanta de pudor, de decència i de timidesa s'admirava en l'altra; un aire de Verge, uns grans ulls blaus, plens d'ànima i d'interès, una pell enlluernadora, un tall flexible i àgil, una veu corprenedora, unes dents d'ivori i els més bells cabells rossos: heus aquí l'esbós d'aquesta cadeta encisadora, les gràcies ingènues i els trets delicats de la qual estan per damunt dels nostres pinzells.",
+      "timestamp": 1779376658.6241324
+    },
+    {
+      "context": "car com que la veritable saviesa consistia infinitament més a doblar la suma dels propis plaers que no pas a multiplicar la de les penes; que no hi havia res, en una paraula, que no s'hagués de fer per esmussar en un mateix aquesta pèrfida sensibilitat, de la qual només els altres en treien profit, mentre que a nosaltres no ens reportava sinó pesars. Però difícilment s'endureix un bon cor, resisteix els raonaments d'un mal cap, i els seus goigs el consolen dels falsos brillants del bell-esperit.",
+      "timestamp": 1779376671.6433065
+    },
+    {
+      "context": "les seves veïnes, la qual, havent fugit de la casa paterna, era avui ricament mantinguda i sens dubte molt més feliç que si s'hagués quedat en el si de la família; que calia guardar-se prou de creure que fos el matrimoni allò que fes feliç una noia jove; que, captiva sota les lleis de l'himen, tenia, amb molts disgustos a suportar, una dosi ben minsa de plaers a esperar; mentre que, lliurades al llibertinatge, sempre podrien preservar-se del mal humor dels amants, o consolar-se'n pel seu nombre.",
+      "timestamp": 1779376680.2315884
+    },
+    {
+      "context": "de retrobar-se, ja que llurs intencions eren tan diferents. Juliette, que anava, segons pretenia, a esdevenir una gran dama, consentiria a rebre una noieta les inclinacions virtuoses però baixes de la qual podrien deshonrar-la? I per la seva banda, Justine voldria arriscar els seus costums en la companyia d'una criatura perversa que esdevindria víctima de la crapulositat i del llibertinatge públic? Es digueren, doncs, totes dues un etern adéu, i totes dues abandonaren el convent l'endemà mateix.",
+      "timestamp": 1779376689.6539526
+    },
+    {
+      "context": "ves desgràcies necessiten, i vós voleu fer-me'ls comprar a un preu massa alt.» El Pastor, avergonyit de ser desemmascarat, fora-gità promptament aquella petita criatura, i la dissortada Justine, dues vegades rebutjada el primer dia mateix en què és condemnada a la solitud, entra en una casa on veu un cartell, lloga un petit cambril moblat al cinquè pis, el paga per endavant, i s'hi lliura a unes llàgrimes tant més amargues com que és sensible i el seu petit orgull acaba de ser cruelment comprès.",
+      "timestamp": 1779376726.5199282
+    },
+    {
+      "context": "sent, del cor, de la fortuna i de la confiança del senyor de Corville, Conseller d'Estat, home del més gran crèdit, i a punt d'entrar al ministeri. La carrera fou espinosa, no se'n pot dubtar pas: és per l'aprenentatge més vergonyós i més dur que aquestes damisel·les obren el seu camí; i tal hi ha avui al llit d'un Príncep que potser encara duu damunt seu les marques humiliants de la brutalitat dels llibertins, entre les mans dels quals la seva joventut i la seva inexperiència l'havien llançada.",
+      "timestamp": 1779376736.864178
+    },
+    {
+      "context": "at escrupolosament les coses de tots costats, va dir a la noia: —Au, no us cal sinó quedar-vos aquí; molta consideració pels meus consells, un gran fons de complaença i de submissió per als meus clients, netedat, economia, sinceritat amb mi, política envers les vostres companyes, i múrria amb els homes; abans de deu anys us posaré en disposició de retirar-vos a un tercer pis, amb una còmoda, un trumeau, una serventa; i l'art que haureu adquirit a casa meva us donarà de què procurar-vos la resta.",
+      "timestamp": 1779376753.6582444
+    },
+    {
+      "context": "a la loteria per a ella, però que no convé que una noia jove tingui diners. «És, li diu, un mitjà de fer el mal, i en un segle tan corromput, una noia assenyada i ben nascuda ha d'evitar amb cura tot allò que pot arrossegar-la a algun parany. És pel vostre bé que us parlo, petita —afegí la dueña—, i m'heu d'agrair el que faig.»\n\nAcabat aquest sermó, la nouvinguda és presentada a les seves companyes; li indiquen la seva cambra a la casa, i l'endemà mateix les seves primícies són posades en venda.",
+      "timestamp": 1779376763.591314
+    },
+    {
+      "context": "a miren, la citen, l'envegen, i la fina criatura sap arreglar-s'ho tan bé que en menys de quatre anys arruïna sis homes, el més pobre dels quals tenia cent mil escuts de renda. No calia res més per fer la seva reputació; la ceguesa de la gent de món és tal, que com més una d'aquestes criatures ha provat la seva deshonestedat, més envejós es té d'ésser a la seva llista; sembla que el grau del seu enviliment i de la seva corrupció esdevingui la mesura dels sentiments que hom gosa exhibir per ella.",
+      "timestamp": 1779376783.2977312
+    },
+    {
+      "context": "Juliette tot just havia complert els vint anys, quan un cert comte de Lorsange, gentilhome angeví, d'uns quaranta anys, en quedà tan enamorat que resolgué donar-li el seu nom; li reconegué dotze mil lliures de renda, li assegurà la resta de la seva fortuna si arribava a morir abans que ella, li donà una casa, criats, una lliurea i una mena de consideració al món, que en dos o tres anys arribà a fer oblidar els seus inicis.",
+      "timestamp": 1779376789.6019902
+    },
+    {
+      "context": "s, i en què la voluptat rebuda només és viva en raó de la multitud de frens que se's trenquen, o de la seva santedat. Esvaït el somni, si un tornés a ser assenyat, l'inconvenient seria mediocre: és la història dels errors de l'esperit; bé se sap que no ofenen ningú, però es va més lluny, malauradament. Què serà, gosa hom dir-se, la realització d'aquesta idea, ja que el seu sol aspecte acaba d'exaltar, acaba d'esmoure tan vivament? Hom vivifica la maleïda quimera, i la seva existència és un crim.",
+      "timestamp": 1779376803.9510164
+    },
+    {
+      "context": "pòs les traces de la malifeta espantosa que el precipitava a la tomba.\n\nTornada lliure i comtessa, la senyora de Lorsange reprengué els seus antics costums; però, creient-se algú al món, posà en la seva conducta una mica menys d'indecència. Ja no era una dona mantinguda, era una rica vídua que oferia sopars exquisits, a casa de la qual la Cort i la vila eren massa felices de ser admeses; dona decent, en una paraula, i que tanmateix s'ajeia per dos-cents lluïsos i es donava per cinc-cents al mes.",
+      "timestamp": 1779376814.404694
+    },
+    {
+      "context": "a un llegat de cent mil francs que un dels seus adoradors li feia en nom d'un tercer, encarregat de lliurar la suma després del decés. A aquests horrors la senyora de Lorsange afegia tres o quatre infanticidis. La por de fer-se malbé la bonica figura, el desig d'amagar una doble intriga, tot la dugué a la resolució d'ofegar al seu si la prova de les seves disbauxes; i aquestes malifetes, ignorades com les altres, no impediren a aquesta dona astuta i ambiciosa de trobar diàriament noves víctimes.",
+      "timestamp": 1779376827.1881087
+    },
+    {
+      "context": " reservat la Providència a aquells que els seus èxits han seduït, ¿no nodreixen, al fons de la seva ànima, un cuc que, rosegant-los sense treva, els impedeix d'alegrar-se d'aquestes falses llumenades, i no deixa a la seva ànima, en comptes de delícies, sinó el record esquinçador dels crims que els han portat allà on són? Pel que fa al dissortat que la sort persegueix, té el seu cor com a consol, i els gaudis íntims que li procuren les seves virtuts aviat el compensen de la injustícia dels homes.",
+      "timestamp": 1779376839.2699747
+    },
+    {
+      "context": "de Corville, de cinquanta anys, gaudint del crèdit i de la consideració que hem descrit més amunt, resolgué sacrificar-se enterament per aquesta dona i lligar-la per sempre a ell. Fos per atenció, fos pels seus procediments, fos per política de Madame de Lorsange, ho havia aconseguit, i feia quatre anys que vivia amb ella absolutament com amb una esposa legítima, quan l'adquisició d'una bellíssima propietat a prop de Montargis els obligà tots dos a anar a passar algun temps en aquella província.",
+      "timestamp": 1779376846.0296655
+    },
+    {
+      "context": "Un vespre, en què la bellesa del temps els havia fet allargar el passeig, des de la finca on vivien fins a Montargis, massa fatigats tots dos per emprendre el retorn tal com havien vingut, s'aturaren a l'hostal on s'atura la diligència de Lió, amb la intenció d'enviar des d'allí un home a cavall a cercar-los un carruatge. Reposaven en una sala baixa i fresca d'aquella casa, que donava al pati, quan la diligència de què acabem de parlar entrà en aquella hostatgeria.",
+      "timestamp": 1779376853.196034
+    },
+    {
+      "context": ". Anava lligada com una criminal i amb tal feblesa que de ben segur hauria caigut si els seus guardians no l'haguessin sostinguda. A un crit de sorpresa i d'horror que se li escapa a la senyora de Lorsange, la jove es gira, i deixa veure, amb el tall més bell del món, la figura més noble, més agradable, més captivadora, tots els encants, en fi, més capaços d'agradar, fets mil vegades més punyents encara per aquella tendra i corprenedora aflicció que la innocència afegeix als trets de la bellesa.",
+      "timestamp": 1779376868.3531296
+    },
+    {
+      "context": "rò us confesso que el meu company i jo mai no havíem conduït cap criminal amb tanta repugnància; és la criatura més dolça i la que sembla més honesta.» «Ah, ah», digué el senyor de Corville, «no podria ser que es tractés d'algun d'aquells errors tan habituals als tribunals subalterns?… I on s'ha comès el delicte?» «En una hostatgeria a unes quantes llegües de Lió; ha estat Lió qui l'ha jutjada; ara va, segons l'ús, a París per a la confirmació de la sentència, i tornarà per ser executada a Lió.»",
+      "timestamp": 1779376878.2160637
+    },
+    {
+      "context": "dre per ella el més viu interès, i que sens dubte es deia a si mateixa: «aquesta criatura, potser innocent, és tractada però com una criminal, mentre que tot prospera al meu voltant… al meu voltant, que m'he tacat de crims i d'horrors»; la senyora de Lorsange, dic, tan bon punt veié aquella pobra noia una mica refeta, una mica consolada per les carícies que s'afanyaven a prodigar-li, l'instà a explicar per quin esdeveniment, amb una fesomia tan dolça, es trobava en una circumstància tan funesta.",
+      "timestamp": 1779376891.706987
+    },
+    {
+      "context": "«Contar-vos la història de la meva vida, senyora —digué aquella bella infortunada, adreçant-se a la comtessa—, és oferir-vos l'exemple més colpidor dels infortunis de la innocència, és acusar la mà del Cel, és queixar-se de les voluntats de l'Ésser suprem, és una mena de revolta contra els seus designis sagrats… No goso fer-ho…» Aleshores les llàgrimes brollaren a doll dels ulls d'aquella interessant noia, i, després d'haver-los deixat curs un instant, començà el seu relat amb aquests termes.",
+      "timestamp": 1779376898.3586357
+    },
+    {
+      "context": " brutalitat que em farà fer per la força allò que no li vull concedir de bon grat. En aquell instant cruel la meva dissort em presta coratge; em deslliuro de les seves mans, i, llançant-me cap a la porta: «Home odiós —li vaig dir tot escapant-me—, que el Cel, tan greument ofès per tu, et castigui un dia, com t'ho mereixes, de la teva execrable enduriment. No ets digne ni d'aquestes riqueses de les quals fas un ús tan vil, ni de l'aire mateix que respires en un món tacat per les teves barbàries.»",
+      "timestamp": 1779376984.6902318
+    },
+    {
+      "context": "c, jo no t'hauria deixat sortir de casa meva sense haver-me satisfet. Però ja que no vols aprofitar els ajuts que t'ofereixo, arregla-t'ho com et plagui; demà em deus diners, o la presó.» —«Senyora, tingueu pietat…» —«Sí, sí, pietat; hom es mor de fam amb la pietat.» —«Però què voleu que faci?» —«Cal tornar a casa de Dubourg; cal satisfer-lo, cal portar-me diners; jo el veuré, el preveniré; adobaré, si puc, les vostres ximpleries; li faré les vostres excuses, però penseu a comportar-vos millor.»",
+      "timestamp": 1779376998.9224558
+    },
+    {
+      "context": "rsos, vaig dir a la senyora Desroches (era el nom de la meva hostessa) que estava decidida a tot per satisfer-la. Va anar a casa del financer, i en tornar em digué que l'havia trobat molt irritat; que no sense esforç havia aconseguit aplacar-lo en favor meu; que a força de súpliques havia, tanmateix, reeixit a persuadir-lo de tornar-me a veure l'endemà al matí; però que parés compte amb la meva conducta, perquè si gosava desobeir-lo de nou, ell mateix s'encarregaria de fer-me tancar de per vida.",
+      "timestamp": 1779377006.0655055
+    },
+    {
+      "context": ". La brutalitat, el llibertinatge, tots els caràcters de la disbauxa esclataven en les seves mirades sorneguers. —Doneu gràcies a la Desroches —em digué amb duresa— que, per consideració a ella, vulgui tornar-vos un instant les meves bondats; ja heu de sentir com en sou d'indigna després de la vostra conducta d'ahir. Despulleu-vos, i si oposeu encara la més lleugera resistència als meus desigs, dos homes us esperen a la meva avantcambra per conduir-vos a un lloc d'on no sortireu en tota la vida.",
+      "timestamp": 1779377015.7702985
+    },
+    {
+      "context": "ror que havia de tenir per una mena de crim del qual havia de néixer l'afluència de mals que m'amenaçaven! Però havia de plànyer-me'n llavors? Segurament no; als seus excessos vaig deure la meva salvació; amb menys disbauxa, hauria estat una noia desflorada; els focs de Dubourg s'extingiren en l'efervescència de les seves temptatives, el Cel em va venjar de les ofenses a què el monstre anava a lliurar-se, i la pèrdua de les seves forces, abans del sacrifici, em va preservar de ser-ne la víctima.",
+      "timestamp": 1779377040.7050173
+    },
+    {
+      "context": "sar tan cruelment de la meva misèria. Però les meves imprecacions, lluny d'atreure sobre ell la còlera de Déu, no feren sinó portar-li bona fortuna; vuit dies després vaig saber que aquell insigne llibertí acabava d'obtenir del Govern una regidoria general que li augmentava les rendes en més de quatre-centes mil lliures l'any; estava absorta en les reflexions que fan néixer inevitablement semblants incoherències de la sort, quan un raig d'esperança semblà brillar un instant davant els meus ulls.",
+      "timestamp": 1779377061.9029386
+    },
+    {
+      "context": "la perruca, de pentinar la meva muller, de tenir cura del gos i del lloro, de vetllar per la cuina, de netejar-ne els estris, d'ajudar la meva muller quan ens prepara un mos per menjar, i de dedicar quatre o cinc hores al dia a fer roba blanca, mitges, gorres i altres petits objectes per a la llar. Ja veieu que no és res, Thérèse; us quedarà força temps, i us permetrem aprofitar-lo per compte vostre, sempre que sigueu assenyada, filla meva, discreta i, sobretot, estalviadora, que és l'essencial.",
+      "timestamp": 1779377092.5224197
+    },
+    {
+      "context": "l que se m'oferia? Em vaig guardar prou, tanmateix, de fer la difícil, i aquell mateix vespre vaig quedar-hi instal·lada.\n\nSi la meva cruel situació permetés que us divertís un instant, senyora, quan només he de pensar a entendrir-vos, gosaria contar-vos alguns trets d'avarícia dels quals vaig ser testimoni en aquella casa; però una catàstrofe tan terrible per a mi m'hi esperava ja al segon any, que em resulta ben difícil aturar-vos en detalls divertits abans de parlar-vos de les meves dissorts.",
+      "timestamp": 1779377103.4801967
+    },
+    {
+      "context": "sprés passava per un sedàs fi; el que en resultava esdevenia la pólvora de tocador amb què jo guarnia cada matí tant la perruca del senyor com el monyo de la senyora. Ah! Tant de bo a Déu que aquestes vileses haguessin estat les úniques a què es lliuraven aquella gent menyspreable! Res no és més natural que el desig de conservar el propi bé; però el que no ho és tant és el desig d'augmentar-lo amb el dels altres. I no vaig trigar gaire a adonar-me que només d'aquesta manera s'enriquia du Harpin.",
+      "timestamp": 1779377127.8125381
+    },
+    {
+      "context": "posseïdor d'unes joies prou boniques, els efectes del qual, sigui per la proximitat, sigui per haver passat per les mans del meu amo, li eren a aquest molt coneguts; sovint el sentia lamentar-se amb la seva muller d'una certa capsa d'or de trenta o quaranta lluïsos, que infal·liblement li hauria quedat, deia, si hagués sabut emprendre-ho amb més traça. Per consolar-se, doncs, d'haver tornat aquella capsa, l'honest senyor du Harpin projectà de robar-la, i fou a mi a qui s'encarregà la negociació.",
+      "timestamp": 1779377136.540328
+    }
+  ]
 }
