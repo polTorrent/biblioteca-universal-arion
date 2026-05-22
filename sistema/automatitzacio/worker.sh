@@ -317,80 +317,25 @@ run_task() {
     log "   🔧 Venice AI (model=$model, timeout=${timeout}s)"
     
     case "$task_type" in
-        translate|translation)
-            # Pre-supervisió: analitzar estat de l'obra ABANS de traduir
-            local obra_ruta="$(echo "$instruction" | grep -oP 'obres/[a-z0-9/_-]+' | head -1)"
-            # Fallback: si no hi ha ruta a l'instruction, mirar metadata
-            if [ -z "$obra_ruta" ]; then
-                obra_ruta=$(python3 -c "import json,sys; print(json.load(open('$task_file')).get('metadata',{}).get('obra_path','').replace('/home/jo/biblioteca-universal-arion/',''))" 2>/dev/null)
-            fi
-            if [ -z "$obra_ruta" ]; then
-                log "   ❌ No s'ha trobat ruta de l'obra a la tasca"
-                echo "ERROR: Falta ruta de l'obra"
-                return 1
-            fi
-            if [ -n "$obra_ruta" ]; then
-                local pre_result=$(python3 "$PROJECT_DIR/sistema/scripts/pre_supervisio.py" "$obra_ruta" --json 2>/dev/null)
-                if [ -n "$pre_result" ]; then
-                    local decisio=$(echo "$pre_result" | python3 -c "import sys,json; print(json.load(sys.stdin).get('decisio',{}).get('accio','TRADUIR_COMPLET'))" 2>/dev/null)
-                    local motiu=$(echo "$pre_result" | python3 -c "import sys,json; print(json.load(sys.stdin).get('decisio',{}).get('motiu',''))" 2>/dev/null)
-                    log "   📋 Pre-supervisió: $decisio — $motiu"
-                    
-                    case "$decisio" in
-                        BLOQUEJAR)
-                            log "   🛑 Obra bloquejada: $motiu"
-                            echo "BLOQUEJAT: $motiu"
-                            return 1
-                            ;;
-                        SUPERVISAR)
-                            log "   ✅ Traducció completa — només supervisió necessària"
-                            echo "JA_COMPLETAT: $motiu"
-                            return 0
-                            ;;
-                        RETRADUIR)
-                            # Eliminar traducció existent per recomençar net
-                            log "   🔄 Retraducció: esborrant traduccio.md anterior"
-                            rm -f "$PROJECT_DIR/$obra_ruta/traduccio.md"
-                            rm -f "$PROJECT_DIR/$obra_ruta/.chunks_traduïts.json"
-                            ;;
-                        CONTINUAR)
-                            # Continuar des de l'últim chunk
-                            ;;
-                        TRADUIR_COMPLET)
-                            # Traducció nova des de zero
-                            ;;
-                    esac
-                fi
-            fi
-            
-            # --continuar: reprendre des de l'últim chunk si ja existeix traducció
-            local continuar_flag=""
-            if [ -f "$PROJECT_DIR/$obra_ruta/traduccio.md" ] && [ -s "$PROJECT_DIR/$obra_ruta/traduccio.md" ]; then
-                continuar_flag="--continuar"
-            fi
-            timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$obra_ruta" --model "$model" $continuar_flag 2>&1
-            ;;
-        fetch|fix-fetch)
-            timeout "$timeout" bash -c "$instruction" 2>&1
-            ;;
-        fix-translate)
+        fix-translate|translate)
             # ── FIX: Obres grans → mode sessió amb --continuar ──
             local fix_obra_ruta=$(extract_obra_path "$instruction")
+            
+            # Assegurar que original.md existeix (la instrucció original pot fer fetch)
+            local fix_original="$PROJECT_DIR/$fix_obra_ruta/original.md"
+            if [ -n "$fix_obra_ruta" ] && [ ! -s "$fix_original" ]; then
+                log "   ⬇️ Executant fetch de l'original..."
+                timeout 180 bash -c "
+                    cd $PROJECT_DIR
+                    $(echo "$instruction" | grep -oP 'python3 sistema/traduccio/cercador_fonts_v2\.py[^;]*')
+                " 2>&1
+            fi
+
             local fix_obra_chars=$(is_large_obra "$fix_obra_ruta")
 
             if [ -n "$fix_obra_chars" ] && [ -n "$fix_obra_ruta" ]; then
                 local fix_chunks=$(count_obra_chunks "$fix_obra_ruta")
                 log "   📏 Obra gran detectada: ${fix_obra_chars} chars (~${fix_chunks} chunks) → mode sessió"
-
-                # Assegurar que original.md existeix (la instrucció original pot fer fetch)
-                local fix_original="$PROJECT_DIR/$fix_obra_ruta/original.md"
-                if [ ! -s "$fix_original" ]; then
-                    log "   ⬇️ Executant fetch de l'original..."
-                    timeout 180 bash -c "
-                        cd $PROJECT_DIR
-                        $(echo "$instruction" | grep -oP 'python3 sistema/traduccio/cercador_fonts_v2\.py[^;]*')
-                    " 2>&1
-                fi
 
                 if [ -s "$fix_original" ]; then
                     # Sempre usar --continuar per reprendre des de l'últim chunk
@@ -401,9 +346,18 @@ run_task() {
                     return 1
                 fi
             else
-                # Obra petita: executar instrucció normal (cabeix dins el timeout)
-                log "   📏 Obra petita ($(is_large_obra "$fix_obra_ruta" || echo "${#instruction} chars instrucció")) → execució directa"
-                timeout "$timeout" bash -c "$instruction" 2>&1
+                # Obra petita: executar instrucció normal o traducció estàndard directa
+                if [ "$task_type" = "translate" ]; then
+                    # Si és translate estàndard (obra petita), respectar la lògica original:
+                    local continuar_flag=""
+                    if [ -f "$PROJECT_DIR/$fix_obra_ruta/traduccio.md" ] && [ -s "$PROJECT_DIR/$fix_obra_ruta/traduccio.md" ]; then
+                        continuar_flag="--continuar"
+                    fi
+                    timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$fix_obra_ruta" --model "$model" $continuar_flag 2>&1
+                else
+                    log "   📏 Obra petita ($(is_large_obra "$fix_obra_ruta" || echo "${#instruction} chars instrucció")) → execució directa"
+                    timeout "$timeout" bash -c "$instruction" 2>&1
+                fi
             fi
             ;;
         *)
@@ -575,7 +529,7 @@ if tasks:
         # ── FIX: Obres grans — mode sessió: si hi ha progrés, tornar a pending amb retries=0 ──
         local is_session=false
         local obra_for_check=$(extract_obra_path "$INSTRUCTION")
-        if [ -n "$obra_for_check" ] && [ "$TASK_TYPE" = "fix-translate" ]; then
+        if [ -n "$obra_for_check" ] && { [ "$TASK_TYPE" = "fix-translate" ] || [ "$TASK_TYPE" = "translate" ]; }; then
             local traduccio_file="$PROJECT_DIR/$obra_for_check/traduccio.md"
             if [ -f "$traduccio_file" ] && [ -s "$traduccio_file" ]; then
                 is_session=true
