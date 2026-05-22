@@ -41,6 +41,7 @@ WATCHDOG_INTERVAL=300  # 5 minuts
 TASK_TIMEOUT_VENICE=600
 TASK_TIMEOUT_VENICE_OPUS=900
 TASK_TIMEOUT_HERMES=300
+LARGE_OBRA_THRESHOLD=100000  # Obres > 100K chars es tracten per sessions
 
 # ── Parsejar arguments ──────────────────────────────────────────────────────
 for arg in "$@"; do
@@ -117,6 +118,45 @@ select_model() {
 }
 
 # ── Estimació de cost per tasca ───────────────────────────────────────────────
+# Detecta si una obra és "gran" (> LARGE_OBRA_THRESHOLD caràcters)
+# Retorna la mida en caràcters si és gran, buit si no
+is_large_obra() {
+    local obra_path="$1"
+    local original="$PROJECT_DIR/$obra_path/original.md"
+    if [ -f "$original" ]; then
+        local chars
+        chars=$(wc -c < "$original")
+        if [ "$chars" -gt "$LARGE_OBRA_THRESHOLD" ]; then
+            echo "$chars"
+            return 0
+        fi
+    fi
+    return 1
+}
+
+# Extreu la ruta de l'obra d'una instrucció de tasca
+# Busca el patró obres/{cat}/{autor}/{obra} (evita /original.md al final)
+extract_obra_path() {
+    local instruction="$1"
+    local path
+    path=$(echo "$instruction" | grep -oP 'obres/[a-z0-9_-]+/[a-z0-9_-]+/[a-z0-9_-]+' | head -1)
+    [ -z "$path" ] && path=$(echo "$instruction" | grep -oP '--ruta\s+"?\Kobres/[a-z0-9/_-]+' | head -1)
+    echo "$path"
+}
+
+# Compta chunks d'una obra (original.md / 1000)
+count_obra_chunks() {
+    local obra_path="$1"
+    local original="$PROJECT_DIR/$obra_path/original.md"
+    if [ -f "$original" ]; then
+        local chars
+        chars=$(wc -c < "$original")
+        echo $(( (chars / 1000) + 1 ))
+    else
+        echo "0"
+    fi
+}
+
 estimate_task_cost() {
     local task_type="$1"
     local instruction="$2"
@@ -330,8 +370,41 @@ run_task() {
             fi
             timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" --ruta "$obra_ruta" --model "$model" $continuar_flag 2>&1
             ;;
-        fetch|fix-translate|fix-fetch)
+        fetch|fix-fetch)
             timeout "$timeout" bash -c "$instruction" 2>&1
+            ;;
+        fix-translate)
+            # ── FIX: Obres grans → mode sessió amb --continuar ──
+            local fix_obra_ruta=$(extract_obra_path "$instruction")
+            local fix_obra_chars=$(is_large_obra "$fix_obra_ruta")
+
+            if [ -n "$fix_obra_chars" ] && [ -n "$fix_obra_ruta" ]; then
+                local fix_chunks=$(count_obra_chunks "$fix_obra_ruta")
+                log "   📏 Obra gran detectada: ${fix_obra_chars} chars (~${fix_chunks} chunks) → mode sessió"
+
+                # Assegurar que original.md existeix (la instrucció original pot fer fetch)
+                local fix_original="$PROJECT_DIR/$fix_obra_ruta/original.md"
+                if [ ! -s "$fix_original" ]; then
+                    log "   ⬇️ Executant fetch de l'original..."
+                    timeout 180 bash -c "
+                        cd $PROJECT_DIR
+                        $(echo "$instruction" | grep -oP 'python3 sistema/traduccio/cercador_fonts_v2\.py[^;]*')
+                    " 2>&1
+                fi
+
+                if [ -s "$fix_original" ]; then
+                    # Sempre usar --continuar per reprendre des de l'últim chunk
+                    timeout "$timeout" python3 "$PROJECT_DIR/sistema/traduccio/traduir_venice.py" \
+                        --ruta "$fix_obra_ruta" --model "$model" --continuar 2>&1
+                else
+                    log "   ❌ No s'ha pogut obtenir original.md per $fix_obra_ruta"
+                    return 1
+                fi
+            else
+                # Obra petita: executar instrucció normal (cabeix dins el timeout)
+                log "   📏 Obra petita ($(is_large_obra "$fix_obra_ruta" || echo "${#instruction} chars instrucció")) → execució directa"
+                timeout "$timeout" bash -c "$instruction" 2>&1
+            fi
             ;;
         *)
             # Per tasques administratives (fix-metadata, fix-glossari, etc.), usar Venice chat
@@ -498,18 +571,52 @@ if tasks:
         fi
     elif [ $EXIT -eq 124 ]; then
         log "⏱️ Timeout per $TASK_ID (${DURATION}s)"
-        RETRIES_NOW=$((RETRIES + 1))
-        if [ $RETRIES_NOW -lt $MAX_RETRIES ]; then
-            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['retries']=$RETRIES_NOW; d['last_error']='timeout after ${DURATION}s'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
-            mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/"
-        else
-            log "⏱️ $TASK_ID: $MAX_RETRIES timeouts consecutius. Marcant com failed."
-            python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['last_error']='timeout after $MAX_RETRIES retries (${DURATION}s each)'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
-            mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
-            CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1)); save_errors
+
+        # ── FIX: Obres grans — mode sessió: si hi ha progrés, tornar a pending amb retries=0 ──
+        local is_session=false
+        local obra_for_check=$(extract_obra_path "$INSTRUCTION")
+        if [ -n "$obra_for_check" ] && [ "$TASK_TYPE" = "fix-translate" ]; then
+            local traduccio_file="$PROJECT_DIR/$obra_for_check/traduccio.md"
+            if [ -f "$traduccio_file" ] && [ -s "$traduccio_file" ]; then
+                is_session=true
+            fi
         fi
-        model_error_incr "$(select_model "$TASK_TYPE" "$INSTRUCTION" "")"
-        sleep $COOLDOWN_FAIL
+
+        if [ "$is_session" = true ]; then
+            # Obra gran amb progrés: commit parcial, resetejar retries, tornar a pending
+            log "   📝 Progrés parcial detectat → commit i reprèn propera sessió"
+            cd "$PROJECT_DIR"
+            git add -A "$obra_for_check/" 2>/dev/null
+            git commit -m "[worker] sessió parcial: $TASK_ID" 2>/dev/null
+            git push origin main 2>/dev/null && log "   📤 Push parcial OK" || log "   ⚠️ Push parcial fallit"
+
+            # Resetear retries a 0 perquè la propera sessió tingui 3 oportunitats
+            python3 -c "
+import json
+f='$TASKS_DIR/running/$TASK_BASENAME'
+d=json.load(open(f))
+d['retries']=0
+d['last_error']='timeout after ${DURATION}s (sessió parcial, progrés guardat)'
+json.dump(d,open(f,'w'),indent=2)
+" 2>/dev/null
+            mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/"
+            # No incrementar consecutive_errors — és progrés, no fallada
+            log "   ↩️ $TASK_ID tornada a pending (retries=0) per continuar sessió"
+            sleep 10  # Pausa curta, no COOLDOWN_FAIL
+        else
+            RETRIES_NOW=$((RETRIES + 1))
+            if [ $RETRIES_NOW -lt $MAX_RETRIES ]; then
+                python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['retries']=$RETRIES_NOW; d['last_error']='timeout after ${DURATION}s'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
+                mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/pending/"
+            else
+                log "⏱️ $TASK_ID: $MAX_RETRIES timeouts consecutius. Marcant com failed."
+                python3 -c "import json; f='$TASKS_DIR/running/$TASK_BASENAME'; d=json.load(open(f)); d['last_error']='timeout after $MAX_RETRIES retries (${DURATION}s each)'; json.dump(d,open(f,'w'),indent=2)" 2>/dev/null
+                mv "$TASKS_DIR/running/$TASK_BASENAME" "$TASKS_DIR/failed/"
+                CONSECUTIVE_FAILS=$((CONSECUTIVE_FAILS + 1)); save_errors
+            fi
+            model_error_incr "$(select_model "$TASK_TYPE" "$INSTRUCTION" "")"
+            sleep $COOLDOWN_FAIL
+        fi
     else
         log "❌ $TASK_ID fallit (exit=$EXIT, ${DURATION}s)"
         RETRIES_NOW=$((RETRIES + 1))
