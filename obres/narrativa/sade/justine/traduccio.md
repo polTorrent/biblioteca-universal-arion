@@ -187,3 +187,93 @@ La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la for
 Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un opulent banquer de París, havia estat educada amb una germana de nom Justine, tres anys menor que ella, en una de les abadies més cèlebres de la capital, on fins a l'edat de dotze i de quinze anys, cap consell, cap mestre, cap llibre, cap talent no havia estat negat ni a l'una ni a l'altra de les dues germanes.
 
 En aquella època funesta per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que en morí de pena. La seva muller el seguí al sepulcre un mes més tard. Dos parents freds i distants deliberaren sobre el que farien de les joves òrfenes; la seva part d'una herència absorbida pels deutes s'elevava a cent escuts per a cadascuna. Ningú no volent fer-se'n càrrec, hom els obrí la porta del convent, hom els lliurà la seva dot, deixant-les lliures de fer-se el que volguessin.
+
+Qui sap, quan el Cel ens colpeja amb sos cops,
+si la desgràcia més gran no és un bé per a nosaltres?
+*Èdip a casa d'Admete.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, les flames enganyoses del qual no embelleixen l'atmosfera sinó un instant, per precipitar en els abismes de la mort el dissortit que han encegat.
+
+
+* * *
+
+
+A HOLANDA,
+A casa dels Llibreters Associats.
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constance, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i millor il·lustrat, només a tu pertoca conèixer la dolçor de les llàgrimes que arrabassa la Virtut malaurada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense treva amb les teves accions i amb els teus discursos, no temo gens per tu els que ha fet necessaris en aquestes Memòries la índole dels personatges establerts; el cinisme d'alguns traços (suavitzats nogensmenys tant com ha estat possible) tampoc no t'esglaiarà; és el Vici qui, gemegant d'ésser desemmascarat, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf fou obra de beates; el de Justine serà obra dels llibertins, i poc me'ls temo: els meus motius, revelats per tu, no en seran pas desautoritzats; la teva opinió em basta per a la meva glòria, i, havent-te plaüt, dec o plaure universalment, o consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la [no tan Novel·la com hom creuria] és nou, sens dubte; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí el curs ordinari de totes les Obres d'aquesta mena; no n'hauria hom d'estar tip!
+
+Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; mostrar una infortunada errant de desgràcia en desgràcia; joguina de la maldat; blanc de totes les dissolucions; exposada als gustos més bàrbars i monstruosos; atordida pels sofismes més audaços i especiosos; presa de les seduccions més hàbils, de les subornacions més irresistibles; sense tenir per oposar a tants revessos, a tants flagells, per repel·lir tanta corrupció, sinó una ànima sensible, un enginy natural i molt de coratge: arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més esgarrifoses, les pinzellades més enèrgiques, en l'única mira d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, s'ha de convenir, assolir el fi per un camí ben poc batut fins ara.
+
+Ho hauré aconseguit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim m'enorgulleixen d'estimar la Virtut! Com és de sublim entre les llàgrimes! Com els infortunis l'embelleixen!»
+
+Oh, Constance! Que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'OBRA mestra de la filosofia seria desenvolupar els mitjans dels quals se serveix la Providència per assolir els fins que es proposa respecte de l'home, i traçar, d'acord amb això, alguns plans de conducta que poguessin fer conèixer a aquest malaurat individu bípede la manera com ha de caminar per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual se li donen vint noms diferents, sense haver aconseguit fins ara ni conèixer-la ni definir-la.
+
+The user wants me to translate a passage from Sade's "Justine ou les Malheurs de la Vertu" into literary Catalan. Let me carefully translate this passage, preserving the philosophical tone, the rhythm of the original, and the narrator's voice.
+
+Let me analyze the text:
+
+This is a philosophical introduction/preface discussing the paradox of virtue being punished while vice is rewarded, and arguing that it's important to present examples of unhappy virtue to corrupt souls to bring them back to good.
+
+Key philosophical concepts:
+- Providence (Providència) - already established in glossary
+
+
+- Vertu (Virtut) - already established
+- Nature (Natura) - already established
+- The angel Jesrad from Voltaire's Zadig - already established
+
+Now I'm working through the French text carefully, translating the passage about how despite respecting social conventions and staying within their bounds, virtue encounters only thorns while the wicked gather roses. Continuing with the philosophical argument about virtue and vice, exploring how the corrupted might rationalize abandoning moral principles by claiming that evil itself produces good, just as the angel Jesrad suggests in Zadig. Finishing that thought about how it's indifferent to nature's plan whether one is virtuous or wicked, and that prosperity favors the criminal while misfortune pursues the virtuous, so it's far better to side with the thriving wicked than the failing righteous. Now I'm considering how important it is to counter these dangerous sophisms of false philosophy—showing that examples of unfortunate virtue, presented to a corrupted soul that still retains some good principles, can redirect that soul toward goodness just as effectively as displaying the brightest rewards and most flattering honors of the virtuous path.
+
+It's undeniably cruel to have to depict an avalanche of misfortunes crushing the gentle, sensitive woman who respects virtue most, while simultaneously showing prosperity flowing to those who oppress or mortify her.
+
+But if some good does emerge from portraying these cruel fates, would one have regrets about presenting them? Could one be troubled by establishing a fact from which the wise reader might draw such a valuable lesson—submission to Providence's will and the sobering reminder that Heaven often strikes near us to call us back to our duties, having judged that the one suffering has fulfilled theirs better than we have. que tal persona prosperi o decaigui, ja que tot contribueix igualment al bé universal? Aquestes són les conclusions perilloses que els homes, fins i tot els més il·lustrats, extreuen quan la virtut no té prou força per resistir les temptacions del vici en una societat completament corrompuda.
+
+Per això és crucial desmentir aquests sofismes filosòfics enganyosos i demostrar que els exemples de virtut sofrint adversitat poden reconduir una ànima parcialment corrompuda cap al bé amb la mateixa eficàcia que si se li mostressin els triomfs més brillants de la virtut recompensada. Però és dolorós haver de presentar una cascada de desventures que abruma la dona sensible i virtuosa que respecta els principis morals, mentre que la prosperitat s'aboca sobre els que la mortifiquen. Tanmateix, si d'aquest quadre de fatalitats en sorgeix algun bé—la lliçó de la submissió a la Providència i l'advertiment que el Cel ens colpeja per recordar-nos els nostres deures—no hauríem de lamentar-nos d'haver-les presentat?
+
+Ara estic refinant les frases més delicades de la traducció, buscant equivalents més precisos en català per als matisos del text original. I'm working through more French-to-Catalan translations, considering alternative phrasings like "un caramull de desgràcies" for the abundance of misfortunes, and refining terms like "esclafan o mortifiquen" for the crushing or mortifying effects. Now I'm assembling a polished version of the passage that flows naturally in Catalan while preserving the philosophical argument about virtue and social conventions.
+
+Continuing with the translation, I'm rendering the next section where the argument deepens—exploring whether people lacking sufficient virtue would rationally abandon themselves to vice rather than resist it, questioning whether virtue becomes worthless when too weak to fight corruption, and considering whether the enlightened might justify wrongdoing by claiming all evil produces some good or that morality is indifferent to the universal plan. persegueix la virtut i la prosperitat acompanya el crim, essent les coses iguals als ulls de la Natura, val infinitament més prendre partit entre els malvats que prosperen que entre els virtuosos que fracassen?
+
+És doncs important prevenir aquests sofismes perillosos d'una falsa filosofia; essencial de fer veure que els exemples de virtut infortunada, presentats a una ànima corrompuda en la qual resten tanmateix alguns bons principis, poden reconduir aquesta ànima al bé amb tanta seguretat com si se li hagués mostrat en aquest camí de la virtut les palmes més brillants i les recompenses més afalagadores. Però si mostrem una allau de desgràcies que aclapara la dona sensible que més respecta la virtut, mentre que la prosperitat abunda per als que la mortifiquen, pot sorgir algun bé d'aquest quadre de fatalitats. Si és així, no hauríem de lamentar-nos d'haver-les presentat, ja que el lector savi en trauria una lliçó valuosa sobre la submissió a la Providència i la comprensió que sovint el Cel ens colpeja al costat de qui millor ha complert els seus deures per recordar-nos els nostres. I'm working through the nuances of the Catalan phrasing, particularly with "no pas" to capture the French negation structure in the rhetorical question about resisting the torrent.
+
+Tals són els sentiments que han de guiar els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència pels sistemes erronis que posem en boca de diversos personatges nostres, i per les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.
+
+La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la fortuna de les quals és obra d'una bonica figura i de molta inconducta, i els títols de les quals, per pomposos que siguin, no es troben sinó als arxius de Citera, forjats per la impertinència de qui se'ls pren i sostinguts per la nècia credulitat de qui els atorga; morena, de bella talla, amb uns ulls d'una expressió singular; aquella incredulitat de moda que, prestant una sal de més a les passions, fa cercar amb més cura les dones en qui se la sospita; una mica malèvola, sense cap principi, sense creure que res fos dolent, i tanmateix no prou depravació en el cor per haver-hi apagat la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,
+
+Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un banquer molt opulent de París, havia estat criada amb una germana anomenada Justine, tres anys més jove que ella, en una de les abadies més cèlebres d'aquella capital, on fins a l'edat de dotze i de quinze anys, cap consell, cap mestre, cap llibre ni cap talent no havia estat refusat a cap de les dues germanes.
+
+En aquella època fatal per a la virtut de dues noies joves, tot els mancà en un sol dia: una fallida espantosa precipità el seu pare en una situació tan cruel que en morí de pena. La seva dona el seguí al sepulcre un mes després. Dos parents freds i llunyans deliberaren sobre el que farien de les joves òrfenes; la part que els corresponia d'una herència absorbida pels creditors pujava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del convent, els lliuraren la seva dot i les deixaren lliures de fer-se el que volguessin.
