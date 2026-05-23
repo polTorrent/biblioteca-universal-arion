@@ -485,3 +485,306 @@ Al cap d'una estona, un d'aquells infants proposà que provessin de saltar des d
 Jalal somrigué davant aquesta proposta infantil, i digué: «Germans meus, saltar de terrassa en terrassa és un acte ben adequat per a gats, gossos i bèsties semblants; però, no és cosa indigna de l'home, l'estació del qual és tan superior? Vejam, si us ve de gust, enlairem-nos fins al firmament i visitem les regions del regne de Déu.» I tot just havia acabat de parlar, que s'esvaí davant els seus ulls.
 
 Espantats per la sobtada desaparició de Jalal, els altres infants alçaren un crit d'angoixa, demanant que algú vingués a auxiliar-los; quan, vet aquí, en un instant, ja era altre cop enmig d'ells; però amb el semblant alterat i les galtes empal·lidides. Tots es descobriren davant seu, es prosternaren a terra amb humilitat, i tots es declararen deixebles seus.
+
+**Autor:** desconegut  
+**Font:** [gutenberg](https://www.gutenberg.org/ebooks/61724)  
+**Llengua:** desconeguda  
+
+---
+
+Notes del transcriptor
+
+Els errors tipogràfics evidents s’han corregit en silenci. Les variacions en la guionització s’han estandarditzat, però tota l’ortografia i la puntuació restants romanen sense canvis.  
+
+Les notes a peu de pàgina es troben al final del llibre.  
+
+Els itàlics es representen així _itèlic_.  
+
+
+
+
+                               TRÜBNER’S
+
+                           COLECCIÓ ORIENTAL.
+
+
+
+
+                         EDIMBURG: IMPRÈS PER
+                BALLANTYNE, HANSON I C., OBRA DE PAUL I CARRER DE CHANDOS, LONDRES
+
+
+
+
+                              EL MASNAVI
+
+       (NORMALMENT CONEGUT COM A MASNAVIYI XERIF, O MASNAVI SAGRAT)
+
+                                  DE
+
+         MEVLĀNĀ (EL NOSTRE SENYOR) JELĀLU-'D-DĪN, MUHAMMAD, ER-RŪMĪ.
+
+                            LLIBRE PRIMER.
+
+JUNTS AMB UN CERT RELAT DE LA VIDA I FETS  
+DE L’AUTOR, DELS SEUS ANCESTRES I  
+DEL SEU PROGENITORS_;  
+
+Il·lustrat per una selecció d’anècdotes característiques,  
+
+recopilades pel seu historiador,  
+
+Mevlānā Shemsu-'d-Dīn Ahmed, el Eflākī, el ‘Ārifī.  
+
+_TRADUÏT, I LA POESIA POSADA EN VERS_,  
+
+per  
+
+JAMES W. REDHOUSE, M.R.A.S., ETC.  
+
+LLIBRE PRIMER.  
+
+LONDRES:  
+TRÜBNER & CO., LUDGATE HILL.  
+1881.  
+
+[Tots els drets reservats.]  
+
+„Mathnaoui o Methnevi (en persa i turc: _Mesnevī_). És el nom d’un dels llibres més famosos de l’Orient, compost en versos perses sobre una gran varietat de temes religiosos, històrics, morals i polítics.“
+
+«Va ser compost per Gelaleddin Moḥammed, fill de Moḥammed, Al Baḷẖī, Al Qonyūī, cap a l’any 600 de l’Hègira.
+
+Els sobrenoms de Baḷẖī i Qonyūī són atorgats a aquest autor perquè era nadiu de la ciutat de Baḷẖ, a Khoràssan, i perquè després va anar a establir-se a la ciutat de Qonya, a Natòlia.
+
+Va ser en aquesta mateixa ciutat que va instituir un orde de dervixos més espirituals que els altres, que sovint s’anomenen Mevlevins, els quals prenen com a centre l’obra del seu Mestre, a qui no guarden gairebé menys respecte que al Corà. Per això, sovint també s’acostuma a donar al Masnavi el sobrenom de Mevlevi.
+
+Hi ha un gran nombre de comentaris perses i turcs sobre aquest Llibre, la poesia del qual és tan excel·lent que tots els seus versos són citats com si fossin sentències.» — D’Herbelot, Bibliothèque Orientale.
+
+
+
+
+CONTINGUTS.
+
+PÀGINA  
+PREFACI DEL TRADUCTOR                                               vii
+
+                         _ANÈCDOTES TRIADES._
+
+  CAP.
+     I.  Bahā’u-’d-Dīn, Veled, Sultānu-’l-‘Ulemā                       3
+
+    II. Seyyid Burhānu-’d-Dīn, Sirr-Dān                               13
+
+   III. Mevlānā Jelālu-’d-Dīn, Muhammed                               18
+
+    IV. Shemsu-’d-Dīn, Tebrīzī                                        99
+
+     V. Sheykh Salāhu-’d-Dīn, Ferīdūn                                110
+
+    VI. Chelebī Husāmu-’d-Dīn, Hasan                                 113
+
+   VII. Bahā’u-’d-Din, Sultān Veled                                  122
+
+  VIII. Chelebī Emīr ‘Ārif                                           126
+
+    IX. Genealogia                                                  132
+
+
+                        _EL MASNAVI — LLIBRE I._
+
+  PROEMI                                                    i
+
+INTRODUCCIÓ. — PLOR DE LA FLAUTA DE CANYA                              1
+
+  CONTE
+    I. El príncep i la serventa                                       4
+
+   II. L’oleaire i el lloro                                          19
+
+  III. El rei jueu, perseguidor de cristians                          25
+
+    IV. Un altre rei jueu, perseguidor de cristians                   55
+
+     V. El lleó i les bèsties                                        67
+
+    VI. La Gran Guerra (espiritual)                                 101
+
+   VII. El mercader i el lloro                                      114
+
+  VIII. L’arpista                                                   139
+
+    IX. L’àrab pobre del desert i la seva muller                     165
+
+     X. Paciència i perseverança                                     212
+
+    XI. La caça del lleó                                            218
+
+   XII. Josep i el mirall                                           228
+
+XIII. L’amanuès de l’Profeta                                      234
+
+   XIV. Els artistes xinesos i romans                                248
+
+    XV. L’inspiració de Zeyd                                          254
+
+   XVI. L’indulgència d’‘Ali                                           270
+
+  CONCLUSIÓ                                                          289
+
+
+
+
+PRÒLEG DEL TRADUCTOR[1]
+
+El historiador El Eflākī fou deixeble de Chelebī Emīr ‘Ārif, nét del compositor del Masnavi. ‘Ārif morí l’any 1320 de l’era cristiana; però com les dates dels seus successors arriben fins a l’any 754 de l’Hègira (1353 de l’era cristiana), quan Eflākī acabà la seva recopilació d’anècdotes, cal concloure que el historiador visqué més enllà d’aquesta darrera data. Com a deixeble de l’Emīr ‘Ārif, era dervix de l’orde anomenat Mevleví, seguidors de la regla i pràctiques de Mevlānā Jelālu-’d-Dīn er-Rūmī, conegut habitualment en la literatura anglesa com a «dervixos ballarins», expressió que els nord-americans tradueixen per «dervixos giravoltants». No tots els dervixos d’aquest orde ballen o «giren». Alguns són músics, i d’altres cantaires o cantors, que poden també, ocasionalment, ballar.
+
+L’obra d’Eflākī ofereix una quantitat suficient de dates per situar-ne els esdeveniments principals que commemora. Les seves dates no coincideixen exactament amb les d’altres historiadors, però són prou aproximades per a finalitats generals, sense pretensions cronològiques rigoroses. Les dates comencen l’any 605 de l’Hègira (1208 de l’era cristiana), cobrint així un període de 145 anys documentats, a banda d’uns altres 30 anys de la vida del avi de Jelāl, que romanen sense datar. Aquest avi era un noble d’una alçada tan elevada i d’una reputació tan gran en saviesa i santedat a Balkh, que el rei li donà en matrimoni la seva única filla, sense que ell ho hagués demanat. La seva mare també era una princesa de la mateixa casa reial que la seva muller.
+
+Aquesta casa reial era la que es coneix en la història com la del Kh’ārezm-shāh o els kharezmians. Foren derrotats, i Balkh (l’antiga Bactra o Zariaspa), la seva capital, destruïda per Jengīz Khān l’any 1211 de l’era cristiana. Un darrer briquet del seu regne es va mantenir durant dotze anys més sota l’últim representant de la dinastia, que va morir altxat i invasor al mateix temps, en una batalla lliurada a Azerbaitjan contra les forces combinades d’Egipte, Síria i l’Anatòlia.
+
+La família de Jelāl reivindicava la seva descendència d’Abū-Bekr, gendre i primer successor de Muhàmmad, el legislador de l’islam. Un dels descendents d’Abū-Bekr havia estat entre els conqueridors de l’antiga Bactània quan aquesta fou sotmesa per primera vegada al domini musulmà, cap a l’any 650 de l’era cristiana, sota el califa ‘Ūthmān; i els seus descendents havien conservat una posició destacada en aquell país, posseïdors d’una gran riquesa, fins a l’època immediatament anterior a la irrupció de Jengīz.
+
+Jelāl era el més jove dels tres fills, dos dels quals eren nois, nascuts de la princesa, la seva mare, a Balkh. La més gran, una filla, ja era casada i va romandre al seu costat quan el seu pare i germans van abandonar la ciutat natal entre els anys 1208 i 1211 de l’era cristiana, arribant a Bagdād l’any 1211. No hi ha cap menció posterior del germà gran de Jelāl. Jelāl tenia cinc anys quan van deixar Balkh. Després de passar per Bagdād, van anar a la Meca, d’allà a Damasc, després a Erzinjān, a Armènia, i d’allí a Larenda, a l’Àsia Menor. La mare de Jelāl encara acompanyava el grup. Ara tenia divuit anys i es va casar a Larenda amb una dama anomenada Gevher (Perla), filla d’un tal Lala Sherefu-’d-Dīn de Samarqand, l’any 1226 de l’era cristiana. Ella li va donar dos fills allà: ‘Alā’u-’d-Dīn (que més tard moriria en un aldarull a Konya) i Bahā’u-’d-Dīn Sultān Veled, per mitjà del qual es va continuar la successió de la casa. Sembla que va morir jove; més tard, Jelāl es va casar amb una altra dama de Konya, que li va sobreviure, i amb qui va tenir dos fills més, un noi i una noia. (Vegeu Anècdotes, cap. iii., n. 69, per a una variant.)
+
+Després del naixement de Sultān Veled a Larenda, el pare de Jelāl fou convidat a Konya pel rei seljúcida ‘Alā’u-’d-Dīn Kayqubād, on fundà un col·legi i on morí l’any 1231 de l’era cristiana. El rei li alçà un mausoleu de marbre sobre la seva tomba, amb la data inscrita. El mateix rei morí cinc anys més tard, l’any 1236.
+
+A la mort del seu pare, Jelāl anà a Alep i a Damasc durant diversos anys per estudiar, i després tornà a Konya, on fou nomenat professor de quatre col·legis diferents. La seva reputació d’erudit i de sant creixé notablement.
+
+Però abans d’aquest viatge a Damasc, sembla que havia fet una visita a Larenda. Car un antic deixeble del seu pare a Balkh, que s’havia convertit en un gran sant i eremita, arribà a Konya a cercar Jelāl, i fou la causa que aquest tornés de Larenda a la capital.
+
+Aquest fou el xeic i seyyid Burhān al-Dīn, que esdevingué durant algun temps mestre espiritual de Jelāl. Les dates indicades no concorden en les diferents branques de la compilació d’Eflākī; aquí dóna un període de nou anys d’estudi espiritual a Konya sota la direcció de Burhān.
+
+Després de les instruccions de Burhān i la seva marxa de Konya cap a Qaysariyya, on morí, i després que Jelāl hagués estudiat a Alep i Damasc i tornés posteriorment a Konya, on fou nomenat a les quatre col·legiats, un altre gran sant anà a visitar Jelāl en aquesta darrera ciutat. Era Shemsu-'d-Dīn de Tabriz, per qui Jelāl concepé una amistat immensa. En el Masnavi és esmentat diverses vegades amb expressions d’alta estima. Sembla que el seu comportament era extremadament agressiu i dominant. Això despertà una forta animadversió contra ell, que finalment esclatà en un tumult. En aquell enfrontament, el fill gran de Jelāl, ‘Alā’u-’d-Dīn, fou mort o ferit de mort. La policia local detingué Shemsu-'d-Dīn com a conseqüència, i els seus amics mai més el van tornar a veure viu. Jelāl anà personalment a Damasc, amb l’esperança que hagués estat enviat lluny o que hagués fugit en secret. Però la recerca fou infructuosa. Segons tradicions posteriors, el seu cos fou recuperat i enterrat a Konya, encara que difereixen pel que fa al lloc exacte de la sepultura.
+
+Quan Jelāl es va adonar que necessitava ajuda per portar a terme les diverses tasques que li havien caigut a sobre, va escollir primer per a aquest càrrec el seu antic company d’estudis, el xeic Salāhu-’d-Dīn Ferīdūn, anomenat Zer-Kūb (el Batidor d’Or), pel seu ofici. Aquest va ajudar Jelāl durant uns deu anys i va morir l’any de l’Hègira 656 (1258 de l’era cristiana).
+
+Llavors Jelāl va prendre com a ajudant el seu deixeble predilecte, Hasan Husāmu-'d-Dīn, anomenat fill d'Akhī-Turc, perquè descendia d'algun home il·lustre anomenat o conegut com a Akhī-Turc. Sembla que hi havia una gran família d'homes molt influents que residien a Konya i altres pobles de l'Anatòlia, tots anomenant-se Akhī, i distingits com Akhī Ahmed, Akhī Eshref, etc. La paraula «Akhī» és àrab i significa «el meu germà». També pot voler dir «algú relacionat amb un germà», com un servidor, esclau, client, etc., d'algun príncep, o d'algun dervix «germà» d'alguna ordre religiosa. De fet, aquests nombrosos individus anomenats Akhī podrien haver estat cadascun «germà» d'alguna fraternitat o fraternitats, o fins i tot d'alguna gremial industrial.
+
+Deu anys després que Husam fos nomenat ajudant de Jelal, aquest va ser cridat al seu descans en desembre del 1273; i fou enterrat al mausoleu del seu pare, deixant a Husam com a seu successor. Però entretant, a suggeriment d’Husam i amb ell com a primer amanuensi, Jelal havia compost el Masnavi, en sis volums, llibres o parts. El segon volum fou iniciat l’any 1263. Hi hagué un interval de dos anys entre la conclusió del primer i l’inici d’aquest, causat pel dol d’Husam per la mort de la seva muller. S’afirma que tota l’obra conté vint-i-sis mil sis-cents seixanta dístics. També s’ha atribuït al Masnavi un setè volum o llibre, per arrodonir el nombre als de “set planetes”; alguns diuen que fou compost o recopilat per Sultan Veled. Les anècdotes d’Eflaki esmenten centenars d’odes més compostes també per Jelal.
+
+Es diu que va instituir el seu ordre particular de dervixos, amb el seu vestit especial, la indumentària índia de dol, en memòria del seu amic assassinat, Shams al-Din de Tabriz; i que va adoptar l’ús de la música instrumental —la flauta, el rebec, el tambor i la pandereta— acompanyada de cant o de cantiplès, com a suport per a la dansa sagrada, a causa de la naturalesa entumida dels «romans». Com es tempta un infant a prendre una medicina saludable oferint-li una mica de melmelada o de mel, així Jelal va jutjar que els «romans» podrien ser temptats a una amor devota cap a Déu mitjançant l’esquer de sons dolços adreçats als seus sentits exteriors. La dansa o el gir dels dervixos era ja d’una data molt més antiga, tal com es recordarà en un dels contes de les Mil i una nits.
+
+Husam morí l’any 1284 de l’era cristiana, només deu anys després del seu mestre Jelal; el fill d’aquest, Bahau-ddin, Sultà Veled, succeí a Husam com a cap de l’orde i morí l’any 1312. El seu fill, Chelebi Emir Arif, el succeí i passà a millor vida l’any 1320; dos dels seus germans bessons esdevingueren caps de l’orde després d’ell, un rere l’altre.
+
+Eflakí ens informa que va emprendre la compilació de la seva obra per desig expressat del seu mestre espiritual, Chelebí Emir Àrif. El pròleg indica l’any 710 de l’Hègira (1310 de l’era cristiana) com a data d’inici, i la colofó del final menciona l’any 754 de l’Hègira (1353) com a data de finalització. Així, dedicà quaranta-tres anys a aquest treball d’amor. La còpia utilitzada per a la present traducció fou escrita l’any 1027 de l’Hègira (1617), i pertany a la biblioteca de l’Oficina de l’Índia, sent el número 1670. Es tracta d’un volum en format quart de 291 fulles numerades, cadascuna amb dues pàgines i vint-i-tres línies per pàgina. Està dividit en un pròleg de dues fulles i deu capítols de longitud molt desigual, així:
+
+  1.  Fets de Bahau-ddin Veled, Sultà dels Savis            14 fulles.
+
+  2.  Fets de Seyyid Sirr-Dan, Burhanu-ddin, Termizi        5   ”
+
+  3.  Fets de Mevlàna Jelaluddin, Muhammad                 155   ”
+
+  4.  Fets de Shamsu-ddin, Tebrizi                          23   ”
+
+5.  Fets de Scheic Salau-ddin, Zer-Kub                    11   ”
+
+  6.  Fets de Husamuddin, Califa de Déu                   14   ”
+
+  7.  Fets de Mevlana Bahau-l-Alcoran-Din, Sultan Veled   13   ”
+
+  8.  Fets de Xeletxi Emir Aref                          45   ”
+
+  9.  Fets de Xeletxi Emir Abid, etc.                      6   ”
+
+  10. Genealògic                                           2   ”
+                                                         —-
+  Total                                                 288
+
+L’obra conté centenars d’anècdotes, referides a Eflākī per testimonis dignes de fe, els noms dels quals són gairebé sempre mencionats, i algunes poques que ells mateixos asseguren haver presenciat. Cada anècdota relata un miracle operat per vius o per morts, o bé el succés estrany o sorprenent. És, en realitat, una mena d’Actes dels Apòstols dels pares dervixos mevlevíes, i constitueix un exemplar raríssim del que pot inventar o exagerar una fervorosa entusiasme religiós, creure una piadosa credulitat i acceptar una ignorància confiada. En aquests dies d’«espiritualisme» cristià, que el lector no es sorprengui massa en saber que els «sants» musulmans, amants del seu Creador i per ell estimats en retorn, es consideren a si mateixos i són considerats pels seus germans dervixos com a successors i hereus espirituals dels profetes, d’Adam fins a Muhàmmad; que, gràcies a aquesta comunió espiritual amb Déu, coneixen tots els secrets i misteris del cel i de la terra, i no sols suspendeixen o imposen les lleis de la natura segons la seva voluntat, sinó que també infligeixen la mort o la malaltia amb la seva ira, o concedeixen salut i prosperitat amb la seva benedicció; tot això, però, d’acord estrictament amb la voluntat eterna i la previsió d’aquell per qui únicament totes les coses són fetes.
+
+Els contes traduïts s’han triat perquè són característics de diverses conviccions o afirmacions dels dervixos. La majoria inculquen alguna veritat moral o algun ensenyament de saviesa pràctica. N’hi ha, però, alguns que aniran molt més enllà del que és creïble; i un o dos, llevat que el traductor els hagi entesos completament malament, són simplement i clarament blasfems. Aquests darrers es presenten aquí com a mostres de les doctrines exagerades dels dervixos, que fan que els ortodoxos entre els ‘Ulemā[3] de l’Islam considerin totes aquestes associacions quasi religioses com a més o menys heterodoxes.
+
+Els dervixos de l’islam apareixen com una mena de gnòstics. Es titulen a si mateixos Pobres, Apassionats, Iniciats i Perfectes. En molts aspectes, les seves doctrines corresponen a les de Buda, Pitàgores i Plató, considerant que totes les ànimes destinades a la salvació són emanacions de la Llum divina o de la Glòria de Déu, on seran de nou congregades; i que totes aquelles condemnades a la perdició van ser formades del Foc de la seva ira, al qual també seran finalment entregades.
+
+És massa evident per al traductor que ha de suplicar la benigna indulgència del públic culte en oferir-los aquest volum en vers. No pot presumir de ser poeta; mai havia practicat l’art de la composició mètrica fins fa ben poc. Conscient ell mateix de la serietat del pensament i de la bellesa del llenguatge que encernen els escrits dels grans poetes de l’islam, i plenament adonat de l’estat d’ossos secs al qual una traducció literal en prosa redueix gairebé sempre les cançons del poeta, ha preferit vestir el seu autor amb un toc decent, encara que sigui una roba arrugada, abans que exposar-lo als lectors de gust com un cos malmès, despullat de tota bellesa i, en gran mesura, fins i tot de forma recognizable, per culpa del xoc de llenguatges i de la diversitat d’idees.
+
+Es troba en la situació de la gota de pluja cantada per Sa’dī (vegeu Cap. iii., n.º 14, dels Aproximaments), esmentada antigament per Chardin, Addison i Sir William Jones. Que els pensaments del Masnavi siguin les joies que faran acceptable el seu esforç al públic britànic. En el millor dels casos, no és més que el bussejador que arrisca la seva extinció amb l’esperança d’oferir una perla de gran valor a aquells per qui ha treballat:
+
+  «Una gota, distil·lada del núvol,
+  davant l’immens mar ple de tremolor,
+  va dir-se: “On el mar es desplega, sóc res?
+  Davant l’oceà, certament, no sóc res”.
+  Així mirant-se amb profund desdeny,
+  al si d’una ostra trobà refugi.
+  La roda del temps obrà canvis innombrables;
+  la gota esdevingué perla de gran valor.
+  La humil modestia n’obtingué el premi;
+  entrant per la porta del no-res, assolí el mèrit».
+
+  KILBURN PRIORY, LONDRES. 1880.
+
+
+
+
+                        ANÈCDOTES TRIADES
+
+                      DE L’OBRA ENTITULADA
+
+ELS FETS DELS INICIATS
+
+                        (MENĀQIBU ’L ‘ĀRIFĪN),
+
+                                  PER
+
+                    SHEMSU-’D-DĪN AHMED, EL EFLĀKĪ.
+
+
+
+
+                      ELS FETS DELS INICIATS.[4]
+
+
+
+
+CAPÍTOL I.
+
+ _Bahā’u-’d-Dīn, Veled, Sultānu-’l-‘Ulemā_ (La Bellesa de la Religió de l’Islam, Fill, Sultan dels Dots de la Llei).
+
+
+1.
+
+El rei de Khoràssan,[5] ‘Alā’u-’d-Dīn Muhammad, Khurrem-Xah, oncle de Jelālu-’d-Dīn Muhammad Kh’ārezm-Xah, i el més orgullós, com també el més bell home del seu temps, donà la seva filla, Melika’i-Jihān (Reina del Món), com a esposa a l’únic home digne d’ella, Jelālu-’d-Dīn Huseyn, el Khatībī, de la raça d’Abū-Bekr.
+
+Un avantpassat seu havia estat un dels primers conqueridors musulmans de Khoràssan. Ell mateix era molt virtuós i erudit, envoltat d’un gran nombre de deixebles. Encara no s’havia casat; fet que li provocava moltes inquietuds i pensaments autoculpabilitzadors.
+
+Ell mateix, el rei, la filla del rei i el visir del rei foren tots quatre advertits en somni pel Príncep dels Apòstols de Déu (Mohammed) que havia de casar-se amb la princesa; cosa que es féu. Tenia llavors trenta anys. Al cap de nou mesos, li va néixer un fill, al qual posaren el nom de Bahā’u-’d-Dīn Muhammad. És freqüentment esmentat com Bahā’u-’d-Dīn Veled.
+
+Quan arribà a l’adolescència, era tan extraordinàriament erudit que la família de la seva mare volgué proclamar-lo rei; però això ho rebutjà del tot.
+
+Per ordre divina, transmesa la mateixa nit i en un somni idèntic a tres-cents dels homes més savis de la ciutat de Balkh,[6] la capital del regne, on residia, aquells doctes sages li atorgaren per unanimitat el títol honorífic de Sultānu-’l-‘Ulemā, i tots es convertiren en els seus deixebles.
+
+Aquests són els noms i títols pels quals és més habitualment conegut; però també se’l designa com a Mevlānāyi Buzurg (el Mestre Major o Més Vell). Li foren atribuïdes moltes meravelles i prodigis; i hi hagué homes que van concebre enveja per la seva creixent reputació i influència.
+
+2.
+
+L’any 605 de l’Hègira (1208 de l’era cristiana), ell, Bahā’u-’d-Dīn Veled, començà a predicar contra les innovacions del rei i d’alguns dels seus cortesans, denunciant els filòsofs i racionalistes, mentre exhortava tots els seus oients a estudiar i practicar els preceptes de l’islam. Aquests cortesans el calumniaren davant el rei, anomenant-lo intrigant que aspirava al tron. El rei l’envità a fer-li una oferta de sobirania, prometent retirar-se ell mateix a un altre lloc. Bahā respongué que no tenia cap interès en la grandesa terrenal, perquè era un pobre eremita; i que de bon grat deixaria el país, amb la fi de llevar del pensament del rei tota mena de recels a propòsit seu.
+
+Per tant, va abandonar Balkh acompanyat d’un seguici d’uns quaranta ànimes, després d’haver pronunciat un discurs públic a la gran mesquita davant el rei i el poble. En aquest discurs va predir l’arribada dels mogols, que destruirien el regne, s’apoderarien del país, arrasarien Balkh i expulsarien el rei, el qual fugiria cap a la terra dels romans i allà, finalment, seria mort.
+
+Així va deixar Balkh, tal com el profeta (Mohammed) havia fugit de la Meca a Medina. El seu fill Jelālu-’d-Dīn tenia llavors cinc anys, i el germà gran, ‘Alā’u-’d-Dīn, set.
+
+La gent de tots els llocs, sentint parlar de la seva arribada o previnguda en somnis de la seva vinguda, anava al seu encontre per honrar-lo. D’aquesta manera s’acostà a Bagdād. Allí fou rebut pel gran xeic Xehābu-’d-Dīn, ‘Úmar, Suherverdí, l’home més eminent del lloc, enviat pel califa Musta’zim per honrar-lo. Esdevingué hoste del xeic.
+
+El califa li envià un present de tres mil sequins, però ell refusà el regal perquè provenia de diners il·lícits. També es negà a visitar el califa; tanmateix, acceptà predicar a la gran mesquita després de la pregària de migdia del proper divendres, amb la presència del califa. En el seu discurs, reprengué el califa a la cara pel seu mal camí de vida i l’advertí que seria assassinat pels mogols amb gran crueltat i ignomínia. El califa li tornà a enviar rics presents en diners, cavalls i objectes de valor, però ell es negà a acceptar-los.
+
+Abans que Bahā’u-’d-Dīn abandonés Bagdad, hi arribà la notícia de l’assetjament de Balkh, de la seva conquesta i de la seva completa destrucció, juntament amb les seves dotze mil mesquites, per part de l’exèrcit mogol de cinc-cents mil homes comandat pel mateix Jengīz (l’any 608 de l’Hègira, 1211 de l’era cristiana). Catorze mil exemplars del Qur’ān foren destruïts, quinze mil estudiants i professors de la llei foren assassinats, i dos-cents mil habitants masculins adults foren conduïts fora i afusellats amb fletxes.
+
+Bahā’u-’d-Dīn marxà de Bagdad a la Meca,[7] hi feu la gran pelegrinació, d’on passà a Damasc i després a Malatia (Melitene, a l’alt Eúfrates), on, l’any 614 de l’Hègira (1217 de l’era cristiana), rebé la notícia de la mort de Jengīz. En aquell temps, el sultà seljúcida ‘Alā’u-’d-Dīn Keyqubād regnava sobre la terra de Roma (Rūm, és a dir, Anatòlia), i residia a Sīwās (Sebaste). L’any 620 de l’Hègira (1223 de l’era cristiana), el sultà Jelālu-’d-Dīn, el monarca desposseït de Kh’ārezm (Coràsmia), fou mort en una batalla que havia lliurat a Azerbaitjan (Atropatene) contra els sultans de Roma, Síria i Egipte, quan les seves forces foren totalment derrotades. Així s’acabà aquella gran dinastia, després de regnar uns cent quaranta anys.
+
+Bahā’u-’d-Dīn marxà de Malatia i romangué quatre anys a prop d’Erzinjān (l’antiga Aziris, a la riba occidental de l’Eufrates), a Armènia, en un col·legi construït per ell per una dama santa, ‘Ismet Khātūn. Era ella l’esposa del sobirà local, Melik Fakhru-’d-Dīn. Tots dos, ella i el seu marit, moriren, i llavors Bahā’u-’d-Dīn passà a Larenda (a Cataònia), a l’Àsia Menor, on romangué uns set anys al capdavant d’un col·legi, amb la princesa Melika’i-Jihān, la seva mare, encara al seu costat.
+
+Fou allí on el seu fill petit, Jelālu-’d-Dīn Muhammed, futur autor del Poema en dístics rimats, assolí l’edat d’home, tenint divuit anys; i quan, l’any 623 de l’Hègira (1226 de l’era cristiana), es casà amb una jove anomenada Gevher Khātūn, filla del Lala Sherefu-’d-Dīn, de Samarcanda. Ella va donar a llum, en el moment oportú, el fill gran de Jelāl, ‘Alā’u-’d-Dīn.
+
+El rei havia tornat ara a la seva capital, Konya (l’antiga Iconi). En saber de la gran saviesa i santedat de Bahā’u-’d-Dīn, el rei l’hi envià a cridar i el convidà a la capital, on el col·locà a un col·legi, i aviat es declarà discípul seu. Es relaten moltes meravelles que tingueren lloc a Konya per intercessió de Bahā’u-’d-Dīn, que finalment hi morí el divendres 18 de Rebī’u-’l-ākhir de l’any 628 de l’Hègira (febrer de 1231 de l’era cristiana). El sultà alçà un mausoleu de marbre sobre la seva tomba, on s’hi gravà aquesta data. Moltes meravelles continuaren succeint-se en aquest santuari. El sultà també morí uns quants anys després, l’any 634 de l’Hègira (1236 de l’era cristiana).
+
+(Després de la mort de Bahā’u-’d-Dīn Veled, i quan el seu fill Jelālu-’d-Dīn assolí encara més fama, rebent el títol honorífic de Khudāvendgār — Senyor —, el pare fou distingit del fill, entre els deixebles, pel títol consuetudinari de Mevlānā Buzurg — el Gran o Venerable Mestre. Les tradicions recollides per Eflākī, relatives a aquest període, varien força entre si en qüestions menors de data i ordre de successió, encara que els fets principals resultin prou clars.)
+
+3.
+
+Sultān Veled, el fill de Jelāl, contà a Eflākī que el seu pare solia dir sovint: «Jo i tots els meus deixebles estarem sota la protecció del Gran Mestre, el meu pare, al dia de la resurrecció; i sota la seva guia entrarem en la presència divina; Déu ens perdonarà a tots per consideració a ell.»
+
+4.
+
+Es conta que quan el Gran Mestre va deixar aquesta vida, el seu fill, Jelālu-'d-Dīn, tenia catorze anys. (Aquesta edat sembla ser un error del copista per «vint-i-quatre»; es diu que Jalāl va néixer l’any 604 de l’Hègira, és a dir, el 1207 de l’era cristiana.) Es va casar als disset (o divuit) anys; i sovint deia en presència de la congregació dels seus amics: «El Gran Mestre romandrà amb mi encara uns quants anys. Però jo tindré necessitat de Shemsu-'d-Dīn de Tabriz (la capital de l’Azerbaitjan); perquè tot profeta ha tingut el seu Abū-Bekr, com Jesús va tenir els seus apòstols.»
+
+Poc després de la mort del Gran Mestre Bahā’u-’d-Dīn Veled, el sultà ‘Alā’u-’d-Dīn de Konya rebé la notícia de l’arribada del sultà Jelālu-’d-Dīn Khārezm-Xah a les fronteres de l’Anatòlia. El sultà anà a pregar a la tomba del sant difunt i després es preparà per enfrontar-se als khārezmians, que es trobaven a la rodalia d’Erzenu-’r-Rūm (Erzen dels Romans, l’antiga Arzes, l’actual Erzerum). Els exploradors portaren la informació que els khārezmians eren molt nombrosos; i es va apoderar de les tropes del sultà una gran inquietud. Ell va decidir veure-ho de primeres mans.

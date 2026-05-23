@@ -1,9 +1,0 @@
-{
-  "id": "fix-translate-petroni-cena-trimalchionis-el-banquet-de-trimalcio-1778774414",
-  "type": "fix-translate",
-  "priority": 2,
-  "max_duration": 3600,
-  "obra": "obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio",
-  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'petroni' --obra 'cena-trimalchionis-el-banquet-de-trimalcio'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/narrativa/petroni/cena-trimalchionis-el-banquet-de-trimalcio/ && git commit -m 'fix: traduir/completar petroni/cena-trimalchionis-el-banquet-de-trimalcio' && git push",
-  "created": "2026-05-14T18:00:14+02:00"
-}
