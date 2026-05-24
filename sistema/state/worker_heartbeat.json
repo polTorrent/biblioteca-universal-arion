@@ -1,10 +1,10 @@
 {
-    "pid": 10851,
+    "pid": 10691,
     "mode": "hybrid",
-    "current_task": "fix-translate-rumi-masnavi-seleccio-10-contes-1779372314",
-    "diem_balance": "4.235122412485615",
+    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1779631514",
+    "diem_balance": "10.720040682485616",
     "uptime_seconds": 4,
-    "tasks_completed": 2,
+    "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-23T16:03:27Z"
+    "last_heartbeat": "2026-05-24T14:32:26Z"
 }
