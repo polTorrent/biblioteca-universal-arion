@@ -1,10 +1,10 @@
 {
-    "pid": 32398,
+    "pid": 28086,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1779717914",
-    "diem_balance": "9.576977302485615",
+    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1779804314",
+    "diem_balance": "5.081996532485615",
     "uptime_seconds": 4,
-    "tasks_completed": 1,
+    "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-25T15:01:48Z"
+    "last_heartbeat": "2026-05-26T14:32:07Z"
 }

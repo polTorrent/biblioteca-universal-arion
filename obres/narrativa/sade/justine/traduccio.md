@@ -526,3 +526,100 @@ Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un riquíssim 
 En aquella època funesta per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa precipità el seu pare en una situació tan cruel, que en morí de pena. La seva muller el seguí al sepulcre un mes després. Dos parents freds i llunyans deliberaren sobre què farien de les joves òrfenes; la seva part d'una successió absorbida pels creditors s'elevava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del convent, els lliuraren la seva dot i les deixaren lliures de convertir-se en el que volguessin.
 
 Madame de Lorsange, que s'anomenava aleshores Juliette, i el caràcter i l'esperit de la qual eren, gairebé del tot, tan formats com als trenta anys —edat que assolia en el moment de la història que anirem a narrar—, no semblà sensible sinó al plaer d'ésser lliure, sense reflexionar un instant sobre els cruels revessos que trencaven les seves cadenes. Quant a Justine, de dotze anys com hem dit, era d'un caràcter fosc i melancòlic, que li féu sentir amb molt més intensitat tota la horror de la seva situació. Dotada d'una tendresa, d'una sensibilitat sorprenent, en lloc de l'art i la finesa de la seva germana, no posseïa sinó una ingenuïtat, una candor que l'havien de fer caure en moltes trampes. A tantes qualitats, aquesta jove hi afegia una fesomia dolça, absolutament diferent d'aquella amb la qual la natura havia ornada Juliette; tant com s'hi veia d'artifici, de maneig i de coqueteria en els trets de l'una, tant s'hi admirava de pudor, de decència i de timidesa en l'altra; un aire de Verge, uns grans ulls blaus plens d'ànima i d'interès, una pell enlluernadora, una cintura àgil i flexible, una veu commovadora, unes dents d'ivori i els cabells rossos més bells: tal és l'esbós d'aquesta encisadora germana petita, les gràcies ingènues i els trets delicats de la qual estan per damunt dels nostres pinzells.
+
+Qui sap, quan el Cel ens colpeja amb els seus cops,
+si el major infortuni no és un bé per a nosaltres?
+*Èd. a casa d'Admete.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyadors del qual no embelleixen un instant l'atmosfera sinó per precipitar als abismes de la mort el malhaurat que han enlluernit.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, que reuneixes en l'ànima més sensible l'esperit més just i millor il·lustrat, és només a tu que pertoca conèixer la dolçor de les llàgrimes que arrenca la Virtut malaurada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sens parar amb les teves accions i els teus discursos, no temo pas per a tu els que ha imposat en aquestes Memòries la naturalesa dels personatges descrits; el cinisme de certs traços (suavitzats tanmateix tant com s'ha pogut) tampoc no t'espantarà gens; és el Vici que, gemegant d'ésser posat al descobert, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf el feren els bigots; el de Justine serà obra dels libertins, i poc me'ls temo: els meus motius, revelats per tu, no seran pas desautoritzats; la teva opinió em basta per a la meva glòria, i havent-te plagut, haig, o de plaure universalment, o de consolar-me de totes les censures.
+
+El propòsit d'aquesta Novel·la [no tan Novel·la com hom creuria] és nou, sens dubte; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria hom d'estar tip!
+
+Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; mostrar una infortunada errant de desgràcia en desgràcia, joguina de la malvadesa, blanc de totes les dibauxes, exposada als gustos més bàrbars i monstruosos, atordiada pels sofismes més audaços i especiosos, presa de les seducions més hàbils i de les subornacions més irresistibles; sense tenir per oposar a tants revessos, a tantes calamitats, per rebutjar tanta corrupció, res més que una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més esgarrifoses, els tocs de pinzell més enèrgics, amb l'únic propòsit d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, s'ha de convenir, assolir la fita per un camí ben poc transitat fins ara.
+
+Hauré reeixit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim em fan sentir orgullosa d'estimar la Virtut! Com és sublim entre les llàgrimes! Com les desgràcies l'embelleixen!»
+
+Oh, Constance! Que t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria desenvolupar els mitjans dels quals la Providència es val per assolir els fins que es proposa quant a l'home, i traçar, d'acord amb això, alguns plans de conducta que poguessin fer conèixer a aquest desgraciat individu bípede la manera com cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual hom dóna vint noms diferents, sense haver aconseguit encara ni conèixer-la ni definir-la.
+
+The user wants me to translate a passage from Sade's "Justine ou les Malheurs de la Vertu" into literary Catalan. Let me analyze the text carefully and produce a faithful translation that preserves the narrator's voice, the philosophical register, and the rhythm of the original.
+
+Let me parse the French text first:
+
+"Si, plein de respect pour nos conventions sociales, & ne s'écartant jamais des digues qu'elles nous imposent, il arrive malgré cela, que nous n'ayions rencontré que des ronces, quand les méchans ne cueillaient que des roses, des gens privés d'un fonds de vertus assez constaté pour se mettre au-dessus de ces remarques, ne calculeront-ils pas alors qu'il vaut mieux s'abandonner au torrent que d'y résister ?"
+
+
+Now I'm working through the English rendering to clarify the meaning before moving into Catalan—the passage presents Sade's cynical argument that virtue becomes a losing proposition when the virtuous suffer while the wicked prosper, leading the weak-willed to abandon moral resistance. The text cuts off mid-sentence, but I can see it's building toward a conclusion about virtue's weakness in a corrupt age. The passage continues with more philosophical arguments about moral relativism—suggesting that if misfortune follows virtue while prosperity accompanies vice, it becomes rational to align with the wicked who succeed rather than the virtuous who fail.
+
+Then it shifts to addressing how to counter these dangerous sophisms: by demonstrating that examples of virtuous suffering, when presented to a corrupted soul that still retains some good principles, can restore that soul to goodness just as effectively as showing the brightest rewards of virtue would.
+
+Now I'm grappling with the tension at the heart of this—the cruelty of depicting a virtuous, sensitive woman overwhelmed by misfortunes while those who wrong her flourish instead. Yet there's a redemptive purpose here: if such a tableau of injustice yields some good for the wise reader, then presenting these harsh truths becomes justified, offering the valuable lesson of submission to divine providence. Now I'm drafting the Catalan translation, working through the philosophical rhetoric and maintaining that ironic tone—capturing how the passage questions whether virtue is even worth pursuing in a corrupted society where vice seems to triumph regardless of one's moral efforts. Una mica més instruïts, si es vol, i abusant dels llums que han adquirit, ¿no diran amb l'àngel Jesrad de Zadig que no hi ha cap mal del qual no neixi un bé, i que en conseqüència poden lliurar-se al mal, ja que no és de fet sinó una de les maneres de produir el bé? ¿No hi afegiran que és indiferent per al pla general que tal o tal altre sigui bo o malvat de preferència, que si la desgràcia persegueix la virtut i la prosperitat acompanya el crim, essent les coses iguals als ulls de la Natura, és infinitament millor prendre partit entre els malvats que prosperen que entre els virtuosos que fracassen?
+
+És doncs important de prevenir aquests sofismes perillosos d'una falsa filosofia. Cal demostrar que els exemples de virtut sofrint, presentats a una ànima encara corrompuda però amb alguns bons principis restants, poden reconduir-la al bé tan efectivament com si li mostréssim els triomfs més brillants de la virtut. Certament és dur pintar les desgràcies que aclaparen la dona sensible que respecta la virtut, mentre els malvats prosperen i la mortifiquen, però si d'aquest quadre de fatalitats en sorgeix algun bé, ¿per què tenir-ne remordiment?
+
+Finishing the thought about whether one can regret presenting such a picture when it yields useful lessons for the wise reader about submission to Providence and the warning that Heaven often strikes those near us to return us to our duties.
+
+Estoy considerando la traducción de "ronces" al catalán. En francés significa zarzas o espinas, y en el contexto de la metáfora que contrasta las espinas con las rosas, "espines" sería la opción más idiomática y literaria en catalán, manteniendo el contraste efectivo entre lo espinoso y lo hermoso.
+
+Ahora necesito verificar la concordancia verbal en "els malvats no collien roses" para asegurarme de que el sujeto plural concuerda correctamente con el verbo. También estoy trabajando en la traducción de la frase sobre las personas carentes de virtudes consolidadas, y luego necesito completar la traducción de la última expresión sobre situarse por encima de estas observaciones. Continuing with the remaining translations—I need to verify "lisonjeres" for the flattering rewards phrase, as the standard Catalan term might be different. Let me check the other expressions to ensure accuracy across all thirteen items. I'm getting tangled up on whether to use the indicative or subjunctive mood in Catalan for this relative clause—the French uses indicative, so I should probably stick with that in Catalan too, making it "aquells que esclafin o mortifiquen" in the indicative form.
+
+Now I'm moving on to translating the next phrase about remorse. I'm reconsidering the word choice for "avertissement" - "advertiment" feels more natural in Catalan and works well with "fatal" to convey that sense of grave warning. Now I need to parse the longer sentence more carefully: the phrase about Heaven striking down the being who seems to have best fulfilled their duties is the key clause I'm working through.
+
+Tals són els sentiments que guiaran els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència pels sistemes erronis posats en boca de diversos dels nostres personatges, i per a les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.
+
+La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la fortuna de les quals és obra d'una figura agradable i de molta inconducta, i els títols de les quals, per pomposos que siguin, no es troben sinó als arxius de Citera, forjats per la impertinència de qui els pren i sostinguts per la nècia credulitat de qui els atorga; bruna, de bona talla, amb uns ulls d'expressió singular; aquella incredulitat de moda que, afegint una gràcia de més a les passions, fa cercar amb més cura les dones en qui se la sospita; una mica maliciosa, sense cap principi, sense veure mal en res, i tanmateix no prou depravació en el cor per haver-ne extingit la sensibilitat; orgullosa, libertina; tal era la senyora de Lorsange,
+
+Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un banquer molt ric de París, havia estat criada amb una germana anomenada Justine, tres anys més jove que ella, en una de les abadies més cèlebres d'aquella capital, on fins a l'edat de dotze i de quinze anys, cap consell, cap mestre, cap llibre, cap talent no havia estat refusat ni a l'una ni a l'altra d'aquelles dues germanes.
+
+En aquella època fatídica per a la virtut de dues joves, tot els va mancar en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que n'hi morí de pena. La seva muller el seguí al sepulcre un mes després. Dos parents freds i distants van deliberar sobre el que farien de les joves òrfenes; llur part d'una successió absorbida pels creditors pujava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del Convent, els lliuraren llur dot i les deixaren lliures de fer-se el que volguessin.
+
+Madame de Lorsange, que s'anomenava aleshores Juliette, i el caràcter i l'esperit de la qual estaven, amb ben poques diferències, tan formats com als trenta anys —edat que atenyia en el moment de la història que ens disposem a referir—, no semblà sensible sinó al plaer d'ésser lliure, sense reflexionar ni un instant sobre els cruels revessos que li havien trencat les cadenes. Quant a Justine, de dotze anys com hem dit, era d'un caràcter fosc i melancòlic, que li féu sentir molt més vívament tot l'horror de la seva situació. Dotada d'una tendresa i d'una sensibilitat sorprenents, en lloc de l'art i la finesa de la seva germana, ella no tenia sinó una ingenuïtat, una candidesa que l'havien de fer caure en molts paranys. A tantes qualitats, aquesta jove afegia una fisonomia dolça, absolutament diferent d'aquella amb la qual la Natura havia embellida Juliette; tant com s'hi veia d'artifici, de maneig, de coqueteria en els trets de l'una, tant s'admirava de pudor, de decència i de timidesa en l'altra; un aire de Verge, uns grans ulls blaus, plens d'ànima i d'interès, una pell enlluernadora, una talla àgil i flexible, un orgue commovedor, unes dents d'ivori i els cabells rossos més bells: tal és l'esbós d'aquesta encantadora germana petita, les gràcies ingènues i els trets delicats de la qual estan per damunt dels nostres pinzells.
+
+Els donaren vint-i-quatre hores a l'una i a l'altra per abandonar el Convent, deixant-les que s'espabilessin, amb els seus cent escuts, on bé els semblés. Juliette, encantada de ser mestressa d'ella mateixa, volgué un moment eixugar les llàgrimes de Justine; però veient que no hi reeixiria, es posà a renyar-la en lloc de consolar-la: li retreia la seva sensibilitat; li digué amb una filosofia molt per sobre de la seva edat, que en aquest món no calia afligir-se sinó pel que ens afectava personalment; que era possible trobar en un mateix sensacions físiques d'una voluptat prou picant per extingir tots els afectes morals el xoc dels quals podria resultar dolorós; que aquest procediment es tornava tant més essencial de posar en pràctica, com que la veritable saviesa consistia infinitament més a doblar la suma dels propis plaers que a multiplicar la dels propis patiments; que no hi havia res, en una paraula, que no calgués fer per esmussar en un mateix aquella pèrfida sensibilitat, de la qual tan sols els altres en treien profit, mentre que a nosaltres no ens aportava sinó tristeses. Però és difícil d'endurir un bon cor; resisteix als raonaments d'un mal enteniment, i les seves joies el consolen de les falses lluentors del bell esperit.
+
+Juliette, valent-se d'altres recursos, digué llavors a la seva germana que, amb l'edat i la figura que totes dues tenien, era impossible que morrissin de fam. Li cità la filla d'una de les seves veïnes, que, havent-se escapat de la casa paterna, avui era ricament mantinguda i sens dubte molt més feliç que si hagués romàs al si de la seva família; que calia guardar-se molt bé de creure que fos el matrimoni allò que fes feliç una noia jove; que, captiva sota les lleis de l'himen, tenia, amb molt de mal humor que suportar, una dosi molt minsa de plaers que esperar; en canvi, lliurades al llibertinatje, sempre podrien guardar-se del mal humor dels amants, o consolar-se'n per llur nombre.
+
+Justine va sentir horror davant d'aquells discursos; digué que preferia la mort a la ignomínia, i, per moltes noves instàncies que li adreçà la seva germana, es negà constantment a allotjar-se amb ella tan bon punt la veié decidida a una conducta que la feia estremir.
+
+Les dues noies es separaren, doncs, sense cap promesa de tornar-se a veure, ja que llurs intencions eren tan divergents. Juliette, que anava a —pretenia ella— esdevenir una gran dama, ¿hauria de consentir a acollir una noieta les inclinacions virtuoses però baixes de la qual serien capaces de deshonrar-la? I per la seva banda, ¿voldria Justine arriscar les seves costums en la companyia d'una criatura perversa que estava destinada a convertir-se en víctima de la crapula i de la debauxa pública? Totes dues es digueren, doncs, un adéu etern, i totes dues abandonaren el Convent l'endemà.
