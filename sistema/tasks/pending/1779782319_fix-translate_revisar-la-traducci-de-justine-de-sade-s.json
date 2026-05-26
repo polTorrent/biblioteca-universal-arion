@@ -1,0 +1,17 @@
+{
+  "id": "1779782319_fix-translate_revisar-la-traducci-de-justine-de-sade-s",
+  "type": "fix-translate",
+  "priority": 3,
+  "created_at": "2026-05-26T07:58:39Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "Revisar la traducció de Justine de Sade: s'hi han colat fragments de raonament del model (pensament de l'LLM, prompts o notes internes de traducció en anglès) a la traducció catalana. Netejar i de deixar exclusivament el text català de l'obra literària literària.",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null
+}
