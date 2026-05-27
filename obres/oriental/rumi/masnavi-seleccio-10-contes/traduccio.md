@@ -2125,3 +2125,189 @@ em va fer senyal i em digué: ‘Per aquí! Agafa’m el fil.’»
 Diuen que, després de la seva mort, quan el van dipositar sobre el llit fúnebre i un deixeble estimat i amat s’encarregava de rentar el cos de Jelāl, mentre uns altres abocaven l’aigua per la purificació del cos, cap gota no va caure a la terra. Totes les gotes van ser recollides pels seus afeccionats que l’envoltaven, com havia passat amb el Profeta en la seva mort. Cada gota va ser beguda per ells com si fos l’aigua més santa i pura.
 
 Quan el qui el rentava li va doblegar els braços sobre el pit, un estremiment semblà recórrer el cadàver, i el rentador va caure de cara sobre el pit sense vida, plorant. Sentí que una mà morta li estirava l’orella, com una reprimenda. Aleshores, va desmaiar-se, i en el seu desmai va sentir un crit del cel que li deia: «Au, escolta! Certament, els sants del Senyor no tindran cap por ni sentiran cap tristesa. Els creients no moren; només passen d’una llar a una altra llar!».
+
+«Erais visitant d’aquell lloc? Digues, doncs, què vas veure ahir a la nit.  
+Entre el meu cor i el meu adorat inspirador, què va passar segons el teu parer?  
+I si en somni vas veure amb els ulls el meu bell amat,  
+digues-nos, als penjolls que portava, quines joies hi havia teixides.  
+Si amb mi compartes túnica, així com pensaments i creences,  
+digues-nos llavors com era la vella roba remendada d’aquell mendicant.  
+Si ets fill de la pobresa i saps els misteris no pronunciats,  
+explica les paraules que va pensar el meu silenciós company.  
+Si has après d’on provenen l’espècie humana i les ànimes,  
+ja que la font fou una sola, què vol dir aquesta recerca, aquesta avidesa?  
+I si no has vist cap lloc lliure de la seva forma i rostre,  
+digues, doncs, què és aquest rostre i forma als pensaments dels seus amants.  
+I si jo capgiregués la llista dels amants, com sembla que dius,  
+digues-nos: quines són aquestes llistes? Quins missatges, paraules, respostes? Si us plau!»
+
+S’organitzà llavors un servei musical, durant el qual es cantà aquesta oda. El Perwāna quedà tan completament desconcertat per l’esdeveniment, que no pogué dir res. Es llevà, doncs, féu una inclinació i se’n anà.
+
+79.
+
+Es diu que un dia el Profeta (Muhàmmad) revelà en privat a ‘Alī els secrets i misteris dels «Germanes de la Sinceritat» (que semblen ésser els «maçons lliures» del món dervix musulmà), encarregant-li que no els revelés a cap dels no iniciats, perquè no fossin traïts; i també que obeís la regla de la submissió implícita.
+
+Durant quaranta dies, ‘Alī guardà el secret únicament al seu pit, i el portà fins que el cor se li féu malalt. Com una dona embarassada, l’abdomen se li inflà sota el pes de la càrrega, fins al punt que ja no podia respirar lliurement.
+
+Per això fugí cap al desert obert i, allà, per atzar, trobà un pou. Es va inclinar i allargà el cap tant avall dins el pou com va poder; i llavors, un per un, confià aquells misteris a les entranyes de la terra. Per l’excés de l’excitació, la boca se li omplí d’escuma i borboll. Aquesta escuma la va escopir a l’aigua del pou, fins que es va alliberar del tot i es va sentir alleujat.
+
+Al cap de certs dies, es va observar que creixia una única canya dins aquell pou. Va anar creixent i estirant-se, fins que al capdavall un jove, el cor del qual era milagrosament esclarit en aquest punt, va adonar-se d’aquella planta que creixia, la va tallar, hi va fer forats i començà a tocar-hi melodies semblants a les que fan els dervixos amants de Déu mentre apeden les ovelles a prop.
+
+Poc a poc, les diverses tribus d’àrabs del desert van sentir parlar d’aquell pastor que tocava la flauta, i la seva fama es va estendre arreu. Els camells i les ovelles de tota la regió s’ajuntaven al seu voltant quan ell començava a tocar, deixant de pasturar per escoltar-lo. Des de tots els indrets, del nord i del sud, els nòmades acudien a sentir-ne les melodies, entraven en èxtasi de delícia, ploraven d’alegria i de plaer, i irrompien en transports d’inefable complaença.
+
+Finalment, la notícia va arribar als oïds del Profeta, que va ordenar que portessin el flautista a la seva presència. Quan començà a tocar en aquella presència sagrada, tots els sants deixebles del missatger de Déu es van omplir de llàgrimes i d’èxtasis, exclamant crits i paraules d’absoluta felicitat, fins a perdre tota consciència. El Profeta declarà que les notes de la flauta del pastor eren la interpretació dels sants misteris que ell mateix havia confiat en secret a ‘Alī.[21]
+
+Així és com, fins que un home no adquireixi la devoció sincera de la canya de flauta de veu de lluïssera, no podrà sentir els misteris dels Germans de la Sinceritat en els seus tons dolços, ni comprendre’n les delícies; car «la fe és tota ella un anhel del cor, i una satisfacció del sentit espiritual».
+
+    «Ai de mi! A qui confiaré els mals que em causa el meu amor per tu?
+    Als meus sospirs, com feia ‘Alī, a alguna vora d’un pou profond els deixaré.
+    Potser d’aquells sospirs neixaran canyes que en cobriran la vora;
+    aquelles canyes podrien esdevenir flautas gemegants, i així trairien el meu dolor.
+    Qui les senti dirà: ‘Callin, flautas! No som els confidents de l’Amor;
+    feu excuses per nosaltres i per aquestes plantes davant aquell dolç tirà!’»
+
+
+80.
+
+Un dels deixebles de Jelālu-'d-Dīn posseïa una noia esclava d'origen romà, a qui Jelālu-'d-Dīn havia posat el nom de Siddīqa (en record d’‘Ā’isha, l’esposa verge de Muhàmmad). De tant en tant, tenia visions milagroses. Veia aurèoles de llum celestial, verdes, vermelles i negres. Diversos àngels solien visitar-la, així com les ànimes dels difunts.
+
+El seu amo s’irritava perquè ella fos tant afavorida per damunt d’ell. Un dia, Jelālu-'d-Dīn el va anar a visitar, i l’home li va manifestar el seu desassosseg. Jelālu-'d-Dīn li va respondre: «És cert! Una llum celestial resideix a les pupil·les d’alguns ulls. De tant en tant, aquesta llum enganya alguns amb visions de formes bellíssimes, amb les quals s’enamoren. A d’altres, en canvi, els preserva en la castedat i els condueix fins al seu Creador adorat. I a d’altres, pot arribar a fer-los gaudir d’objectes exteriors, de manera que posin els seus ulls en cada rostre agradable que troben, mentre que la seva muller, a casa, roman apartada darrere el vel. Així, quan Déu obre un camí a algú, apareixent-li i mostrant-li trets del món ocult, aquest sol acostuma a quedar-ne embadalit i a perdre tot poder d’avançar més endavant, dient-se a si mateix: “Com deu ser gran el favor que em fa!” D’altres, en canvi, es prodiguen en tots els esforços; però no se’ls concedeix cap visió fins que no mereixin la gràcia de veure Déu mateix i siguin admesos a la seva immediació».
+
+El mestre de la noia quedà consolat, i s’inclinà davant el seu professor, els discípols del qual llavors començaren una santa cerimònia de salmòdia i dansa.
+
+
+81.
+
+Hi havia una vegada un monjo savi al monestir de Plató, que tenia relacions molt estretes amb ‘Ārif, el nét de Jelāl. Era molt vell, i sovint rebia la visita dels dervixos dels voltants, als quals tractava amb gran cortesia i als quals mostrava una confiança immensa; tant, que un dia alguns d’ells li preguntaren com havia conegut Jelāl i quina opinió s’havia format d’ell.
+
+El monjo els respongué: «Què en sabeu, vosaltres, d’ell, de qui o què era? He vist signes i miracles innombrables que ell havia realitzat. Em vaig convertir en el seu servent devot. Havia llegit en l’Evangeli i en els profetes les vides i obres dels sants antics, i vaig veure que ell les abraçava totes. Per això vaig tenir fe en la veritat de la seva realitat».
+
+Un dia va venir aquí, concedint-me l’honor de la seva visita. Durant quaranta dies es va tancar en una retirada extàtica. Quan finalment va sortir de la seva intimitat, vaig agafar la vora del seu mantell i li vaig dir: «Déu, en la seva sàcra escriptura, ha dit (Qur’ān xix. 72): “I no hi ha cap de vosaltres que no hagi de venir a aquest foc (l’infern)”. Ara bé, ja que és indubtable que tots havem de passar pel foc de l’infern, quina preferència hi ha en l’islam respecte a la nostra fe?».
+
+Durant una estona no em va respondre. Finalment, però, va fer un senyal cap a la ciutat i se’n va anar en aquella direcció. Jo el vaig seguir a poc a poc. A prop de la ciutat, vam arribar a una fornació on s’estava escalfant el forn. Llavors va prendre el meu vestit negre, el va embolicar amb la seva pròpia capa i va llançar el farcell al foc. Després es va retirar una estona a un racó, submergit en meditació.
+
+«Vaig veure una gran fumarola que sortia del forn, tal que ningú no tenia força per parlar. Després d’això, em digué: “Mira!”. Llavors l’oficial va treure el farcell del forn i ajudà el sant a posar-se la capa, que havia quedat exquisidament neta; mentre que el meu sotana, com si fos, havia quedat marcada i socarrada fins a esfondrar-se en trossos. Llavors digué: “Així entrarem nosaltres, i així entrareu vós!”.
+
+En aquell mateix instant vaig fer reverència davant seu i em vaig convertir en el seu deixeble.»
+
+
+82.
+
+La raó per la qual fou escrit el Masnavi es diu que va ser la següent:—
+
+Husam al-Din sabia que diversos dels seguidors de Jelāl eren aficionats a estudiar l’Ilāhī-nāma de Sanā’ī, el Hakīm, i també el Mantiqu-t-Tayr d’‘Attār, així com el Nasīb-nāma d’aquest últim.
+
+Per això, va buscar i va trobar l’oportunitat d’oferir a Jelāl que composés alguna cosa en l’estil de l’Ilāhī-nāma, però en la mètrica del Mantiqu-t-Tayr; i li digué que aleshores el cercle d’amics abandonaria de bon grat tota altra poesia i només estudiaría aquella.
+
+Jelāl produí immediatament una part del Masnavi, dient que Déu l’havia previngut dels desitjos dels germans, i que, per aquest motiu, ja havia començat a compondre l’obra. Aquell fragment consistia en els primers divuit dístics dels versos introductoris:
+
+    «De la flauta de canya escolteu quina història explica,
+    Quin plany fa dels mals de l’absència», etc.
+
+És en el metre _Remel_, hexàmetre contragut:
+
+- ‿ - - │ - ‿ - - │ - ‿ - ║ - ‿ - - │ - ‿ - - │ - ‿ - ║
+
+Jelāl menciona sovint Husam com la causa per la qual l’obra fou començada i continuada. Al quart llibre s’adreça a ell en el dístic inaugural:—
+
+«De la Veritat, la llum; de la Fe, l’espasa; sigui Husāmu-’d-Dīn eternament;
+per tu ha pujat al damunt de l’orbe lunar el meu Masnavi».
+
+I un altre cop, el sisè llibre té com a vers inicial la següent apostrofe:
+
+«Oh tu, Husāmu-’d-Dīn, vida veritable del meu cor! Per tu sent que em brolla l’entusiasme
+per emprendre ara aquest sisè llibre».
+
+Moltes nits s’entregaven a la tasca, Jelāl dictant i Husām escrivint les seves inspiracions, cantant-les en veu alta, amb la seva veu bellíssima, mentre escrivia. Just quan es va acabar el primer llibre, va morir l’esposa de Husām, i va haver un interludi.
+
+Així van passar dos anys sense cap avenç. Husām es va tornar a casar; i aquell any, de l’Hègira 662 (1263 de l’era comuna), es va començar el segon llibre. No va haver cap altre interrompiment fins que l’obra va arribar al seu final. El tercer dístic del segon llibre esmenta Husām amb aquestes paraules:
+
+«Quan tu, llum de la Veritat, Husāmu-’d-Dīn, vas girar la brida del teu cavall
+descendent cap a la terra des de l’estelada plana del zenit».
+
+Els llibres tercer, cinquè i setè contenen adreces semblants a Husām en els seus versos inicials. El seu nom també esmenta de passada al tercer conte del primer llibre.
+
+83.
+
+Amb la mort de Jelāl, un grup de zelots va anar tot junts a trobar el Perwāna, i li va explicar que les noves pràctiques de música i dansa introduïdes per Jelāl eren innovacions contràries del tot a les institucions canòniques, i li demanaven que fes tot el possible per suprimir-les.
+
+El Perwāna va cridar el mudtzà de Qonya, el xeic Sadru-'d-Dīn, i li va consultar sobre el tema. La resposta del mudtzà va ser: «No feu res d’això. No escolteu aquestes suggerències partidistes. Hi ha un dit dels apòstols que diu així: “Una innovació lloable, introduïda per un seguidor perfecte dels profetes, és de la mateixa natura que les pràctiques habituals dels propis profetes”». Per tant, el Perwāna va decidir no fer res per suprimir les institucions de Jelāl.
+
+84.
+
+Un gran home, que tenia en alta estima a Jelāl, quedà no obstant sorprès que aquest, malgrat la seva saviesa i pietat, permetés l’ús de la música i de la dansa.
+
+Un dia tingué ocasió de visitar Jelāl, qui immediatament li digué: —És un axioma en els cànonics sagrats que un musulmà, si es troba en una situació desesperada i en perill de mort, pot menjar carn morta i altres aliments prohibits, per tal que la vida d’un home no sigui sacrificada. Aquesta norma és acceptada i aprovada per totes les autoritats de la llei. Ara bé, nosaltres, _els homes de Déu_, ens trobem precisament en aquesta situació extrema de perill per a les nostres vides; i d’aquest perill no hi ha cap altra escapada sinó la cançó, la música i la dansa. Altrament, per la terrible majestat de les manifestacions divines, els cossos dels sants es fondrien com la cera i desapareixerien com la neu sota els raigs del sol de juliol.
+
+La persona a qui es va adreçar aquest discurs quedà tan impressionada per la vehemència del to de Jelālu-'d-Dīn i per la força del seu raonament, que es va convèncer completament i, des d’aleshores, esdevingué defensora i sostenedora de les institucions de Jelāl, de manera que aquestes es convertiren, per dir-ho així, en l’aliment mateix del seu cor. Molts dels savis van seguir el seu exemple i s’uniren als seguidors i deixebles de Jelāl.
+
+85.
+
+Kālūmān i ‘Aynu-’d-Devla eren dos pintors romans. No tenien rival en l’art de pintar retrats i imatges. Tots dos eren deixebles de Jelāl.
+
+Un dia, Kālūmān explicà que a Constantinoble, en una certa làpida, estaven pintats els retrats de la Mare de Déu i de Jesús, amb una perfecció inigualable. Des de tots els racons del món venien artistes i feien tots els possibles, però cap d’ells podia igualar aquells dos retrats.
+
+‘Aynu-’d-Devla emprengué, doncs, un viatge cap a Constantinoble per veure aquella pintura. Es feu acòlit de la gran església de Constantinoble durant un any sencer i serví els sacerdots d’una miríada de maneres.
+
+Una nit, aprofità l’ocasió, agafà la làpida sota el braç i fugí amb ella.
+
+En arribar a Konya, feu els seus honors a Jelāl, qui li preguntà on havia estat. Ell, llavors, li relatà tot el que havia passat amb la làpida, que li mostrà.
+
+Jelāl trobà la pintura d’una bellesa esgarrifosa i hi fixà la mirada llargament, amb el més gran plaer. Després, digué així:—
+
+—Aquestes dues belles pintures et reclamen, dient que no ets un admirador fidel, sinó un amant fals. L’artista preguntà:  
+—Com això?  
+Jelāl replicà:  
+—Diquen que no se’ls dóna menjar ni repòs. Al contrari, se’ls té desperts cada nit i en dejú cada dia. Es queixen: «Aynu-’d-Devla ens abandona, dorm tota la nit i menja de dia, sense quedar-se amb nosaltres per fer el que fem nosaltres!».
+
+L’artista objectà:  
+—Menjar i dormir són impossibles per a elles. Ni tan sols tenen paraula per dir res. Són meres figures sense vida.
+
+Jelāl replicà llavors:  
+—Tu ets una figura viva. Has adquirit coneixement d’arts diverses. Ets l’obra d’un pintor la mà del qual ha modelat l’univers, la raça humana i totes les coses de la terra i del cel. És just que l’abandonis i t’enamoris d’una insignificant figura sense vida? Quin profit et reporten aquestes pintures? Quin avantatge pots treure d’elles?
+
+Tocat per aquestes retrets, l’artista va prometre fer penediment del seu pecat  
+i es va fer musulmà.
+
+86.
+
+Quan s’acostava l’hora de la mort de Jelāl, va advertir els seus deixebles  
+que no tinguessin cap por ni ansietat per aquest motiu; «car», va dir, «igual com l’esperit de Mansūr[22] va aparèixer, cent cinquanta anys després de la seva mort, al xeic Ferīdu-’d-Dīn ‘Attār, i esdevingué el seu guia espiritual i mestre, així també vosaltres esteu sempre amb mi, sigués el que fos el que passés, i recordeu-me, perquè jo pugui mostrar-me a vosaltres, en qualsevol forma que sigui; perquè sempre pertanyi a vosaltres, i continuï derramant en el vostre pit la llum de la inspiració celest. Només us recordo ara que el nostre estimat Senyor, Moḥammed, l’Apòstol de Déu, va dir als seus deixebles: “La meva vida és una benedicció per a vosaltres, i la meva mort serà una benedicció per a vosaltres. En la meva vida us he guiat, i després de la meva mort us enviaré benediccions.”»
+
+Els amics de Jelāl van plorar tots, i van esclatar en sospirs i lamentacions; però van inclinar el cap amb reverència.
+
+Es diu que va donar ordres per preparar les seves robes funeràries, i que la seva muller, Kirā Khātūn, va començar a plorar, esquinçant-se les vestidures i exclamant: «Oh tu, llum del món, vida de la raça humana; a qui ens deixaràs? On aniràs?»
+
+Ell li va respondre: «On aniré? En veritat, no abandonaré el vostre cercle.» Aleshores ella li va preguntar: «Hi haurà un altre com tu, el nostre Senyor? En sortirà un altre a la llum?» I ell va respondre: «Si n’hi ha, seré jo.» Al cap d’una estona va afegir: «Mentre estigui en el cos, tinc dues atadures; una, cap a vosaltres; l’altra, cap a la carn. Quan, per la gràcia de l’Estat Únic, em despulli del cos, quan el món dels esperits sense cos, la unitat i la singularitat es revelin, la meva atadura a la carn es convertirà en atadura a vosaltres, i aleshores només tindré una sola atadura.»
+
+Amb el seu darrer alè, Jelālu-'d-Dīn va recomanar a Husāmu-'d-Dīn que el col·loqués a la part més alta del seu sepulcre, perquè fos el primer a ressuscitar en el darrer dia.
+
+Mentre jeia en la seva extrema malaltia, van haver-hi terratrèmols durant set dies i set nits, molt forts, de manera que murs i cases van anar a terra. En la setena ocasió, tots els seus deixebles van quedar espantats. Ell, però, va dir tranquil·lament: «Pobra terra! Anhela una molla grassa! I en tindrà una!»
+
+Aleshores va donar les seves últimes instruccions als seus deixebles, així: «Us recomano el temor de Déu, en públic i en privat; la moderació en menjar i en dormir, així com en parlar; l’evitació de la rebel·lió i del pecat; la constància en el dejuni, l’adoració contínua i l’abstinència perpetua dels desigs carnals; la paciència davant el maltractament de tota la humanitat; evitar la companyia dels lleugers d’esperit i de la multitud vulgar; i acompanyar-vos amb els justos i els homes d’enteniment. Car certament “_el millor dels homes és aquell que beneficia els homes_”,[23] i “_el millor dels parlaments és el breu i assenyat_.»[24]
+
+88.
+
+El següent és un oració que Jelāl va ensenyar, des del seu llit de mort, a un dels seus amics, perquè la fes servir cada vegada que l’aflicció o la inquietud li pesessin al cor:—
+
+«Oh, Senyor nostre, Déu meu, només emc per tu, i estenc el meu esperit vers teu per tal de proclamar abundantment les teves lloances, commemorant-te sovint. Oh, Senyor nostre, Déu meu, no em posis una malaltia que em faci oblidar de commemorar-te, o que minvi el meu anhel cap a tu, o que talli la delícia que sento en recitar les letanies de la teva alabança. No em concedeixis una salut que em generi o augmenti la presumpció o la insolència ingrate. Per la teva misericòrdia, oh Tu, el Més Misericordiós dels misericordiosos. Amén.»
+
+89.
+
+Un amic seia al costat del llit de Jelāl, i Jelāl recolzava el cap sobre el seu pit. De sobte, un jove d’una bellesa esplèndida aparegué a la porta de l’habitació, causant el màxim estupor a l’amic.
+
+Jelāl es va aixecar i va anar a rebre l’estranger. Però l’amiga va ser més ràpida i li va preguntar suaument què desitjava. L’estranger va respondre: «Sóc ‘Azrā’īl, l’àngel de la partida i la separació. He vingut, per ordre divina, a preguntar quina missió pot tenir el Mestre per encarregar-me».
+
+Beneïts siguin els ulls que poden veure semblants visions!
+
+L’amiga gairebé va desmaiar-se en sentir aquella resposta. Però va sentir com Jelāl cridava: «Entra, entra, oh missatger del meu Rei. Fes el que t’han manat; i, si Déu vol, em trobaràs entre els resignats».
+
+Llavors va ordenar als seus servents que portessin un recipient d’aigua, hi va posar els seus dos peus i de tant en tant s’escampava una mica d’aigua al pit i al front, dient: «El meu amat (Déu) m’ha oferit una copa de verí (amargor). De la seva mà bec aquest verí amb delícia».
+
+Aleshores van entrar els cantaires i els músics, i van entonar un himne, mentre tota la colla d’amics plorava i sanglotava fort.
+
+Jelālu-'d-Dīn va observar: «És tal com diuen els meus amics. Però, encara que enderroquessin la casa, quin profit en traurien? Mireu el meu cor anhelant; contempleu la meva delícia. El sol vessa una llum grata sobre la teia. Els meus amics em criden en una direcció; el meu mestre Shemsu-'d-Dīn em crida cap a l’altra. Obeïu la crida del Senyor i tingueu fe en Ell. El part és inevitable. Tot ésser ha sortit del no-res, i de nou serà tancat a la presó de la nul·litat. Aquest és el decret de Déu des de tota l’eternitat; i a decretar pertany a Déu, el Molt Alt, el Tot Gran!».
+
+El seu fill Sultan Veled no havia deixat de cuidar-lo ni un moment. Plorava i sanglotava. S’havia reduït a una ombra. Per això Jelālu-'d-Dīn li digué: «Bahā’u-'d-Dīn, fill meu, estic millor. Vés i estira’t una mica. Descansa’t i dorm una estona!».
+
+Quan se n’hagué anat, Jelālu-'d-Dīn va compondre la seva darrera oda; així:—
