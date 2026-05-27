@@ -413,3 +413,22 @@
 {"ts":"2026-05-26T14:05:14Z","module":"check-translations","type":"info","msg":"checking_translations"}
 {"ts":"2026-05-26T14:05:15Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
 {"ts":"2026-05-26T14:05:15Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-26T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=2.497654902485616 available=1.9977"}
+{"ts":"2026-05-26T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-26T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-26T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-26T16:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-05-26T16:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-05-26T16:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-26T16:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-26T18:05:03Z","module":"check-diem","type":"warning","msg":"DIEM=0.19903911248561457 available=-0.301 below minimum 0"}
+{"ts":"2026-05-26T20:05:02Z","module":"check-diem","type":"warning","msg":"DIEM=0.19886476248561458 available=-0.3011 below minimum 0"}
+{"ts":"2026-05-27T14:05:01Z","module":"check-diem","type":"info","msg":"DIEM=11.511835172485615 available=11.0118"}
+{"ts":"2026-05-27T14:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-27T14:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-27T14:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-27T14:05:13Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-05-27T14:05:13Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-05-27T14:05:14Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-05-27T14:05:15Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-27T14:05:15Z","module":"generate-report","type":"info","msg":"generating_report"}
