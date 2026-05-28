@@ -1,10 +1,10 @@
 {
-    "pid": 19235,
+    "pid": 2717,
     "mode": "hybrid",
-    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1779890713",
-    "diem_balance": "3.125459532485616",
-    "uptime_seconds": 5513,
-    "tasks_completed": 2,
+    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1779977113",
+    "diem_balance": "9.186481582485616",
+    "uptime_seconds": 4,
+    "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-27T18:05:29Z"
+    "last_heartbeat": "2026-05-28T14:32:35Z"
 }
