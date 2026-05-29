@@ -1,10 +1,10 @@
 {
-    "pid": 24948,
+    "pid": 32596,
     "mode": "hybrid",
-    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1780063513",
-    "diem_balance": "11.774295172485616",
-    "uptime_seconds": 361,
-    "tasks_completed": 0,
+    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1780063513",
+    "diem_balance": "6.214406422485615",
+    "uptime_seconds": 3618,
+    "tasks_completed": 1,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-29T14:06:03Z"
+    "last_heartbeat": "2026-05-29T16:33:08Z"
 }
