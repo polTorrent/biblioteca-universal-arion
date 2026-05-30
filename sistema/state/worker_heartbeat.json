@@ -1,10 +1,10 @@
 {
-    "pid": 13071,
+    "pid": 6885,
     "mode": "hybrid",
-    "current_task": "fix-llengua-sade-justine-1780149914",
-    "diem_balance": "11.180441212485615",
-    "uptime_seconds": 374,
-    "tasks_completed": 0,
+    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1780149914",
+    "diem_balance": "9.837513022485615",
+    "uptime_seconds": 3,
+    "tasks_completed": 1,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-05-30T14:06:17Z"
+    "last_heartbeat": "2026-05-30T15:01:24Z"
 }
