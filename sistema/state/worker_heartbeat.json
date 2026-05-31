@@ -1,10 +1,10 @@
 {
-    "pid": 18897,
+    "pid": 16726,
     "mode": "hybrid",
-    "current_task": "1780241517_improve_millora-contnua-de-hayy-ibn-yaqzan-el-fi",
-    "diem_balance": "6.084950072485615",
-    "uptime_seconds": 3622,
-    "tasks_completed": 6,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-05-31T15:32:36Z"
+    "current_task": "1780237930_improve_millora-contnua-de-fragments-postums-a-o",
+    "diem_balance": "4.765672552485615",
+    "uptime_seconds": 1790,
+    "tasks_completed": 7,
+    "tasks_failed": 2,
+    "last_heartbeat": "2026-05-31T16:02:06Z"
 }
