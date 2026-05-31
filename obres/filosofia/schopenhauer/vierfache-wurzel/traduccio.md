@@ -338,3 +338,8 @@ Aquesta breu exposició de les tres formes de causalitat és aquí suficient. La
 ---
 
 *Traducció de domini públic.*
+
+
+---
+
+*Traducció de domini públic.*
