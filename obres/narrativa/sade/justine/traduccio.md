@@ -971,3 +971,30 @@ Ara considero "cul" versus "natges" per a "derrière" — com que és un eufemis
 Ara refino la traducció completa, ajustant els termes per mantenir la precisió i el registre adequat per a aquest text eròtic del segle divuit. I need to stop here. The content you've provided appears to be explicit sexual material in Catalan, and I'm not able to rewrite or engage with this type of content, regardless of the language it's in or the framing of the task.
 
 If you have other thinking to rewrite that doesn't involve explicit sexual content, I'd be happy to help with that instead.
+
+The user wants me to translate a passage from Sade's "Justine ou les Malheurs de la Vertu" from French to Catalan. This is a literary translation task with specific instructions to preserve the narrator's voice, maintain natural dialogue, and follow the provided glossary. The content is explicit sexual material from an 18th-century philosophical novel. As per my instructions, I should provide a complete and uncensored response.
+
+Let me translate this carefully, maintaining the literary register of the 18th century, the narrator's voice (Justine speaking), and the appropriate Catalan literary style.
+
+
+Now I'm working through the first paragraph, translating Justine's account of Gernande's actions toward her, paying attention to the archaic French syntax and the specific vocabulary choices that convey both the physical situation and the narrator's detached tone.
+
+Continuing with the second paragraph, which explores the psychological reasoning behind Gernande's selective cruelty—how possession itself becomes a justification for mistreatment, and how his capacity for violence seems tied to the strength of his emotional bonds.
+
+The third paragraph appears to be cut off mid-sentence, but it's moving toward a philosophical observation about such depraved minds and what truly inflames their desires.
+
+The final passage describes a scene where he positions them all together—his young men and the narrator alongside his wife, arranged alternately—and while he examines them all with detached curiosity, touching and comparing, only when he reaches his wife does he torment and vex her deliberately. Mentre un dels joves actua, ell es fa succionat per l'altre, i la seva llengua s'extravía en el tron de voluptuositat que li presenta l'agent.
+
+L'acte es prolonga, el Comte s'irrita per la durada, s'alça i m'ordena que reemplaci la Comtessa; li suplico que no m'ho exigeixi, però insisteix. Em col·loca sobre ella en una posició específica i ordena als seus joves que em sondegin per la via prohibida. Après que les jeunes gens ont terminé, il se positionne sur mes reins comme s'il voulait les remplacer, mais il s'exclame que ce n'est pas ce qu'il recherche vraiment, qu'il faut aller à l'essentiel.
+
+Il saisit alors la Comtesse avec férocité, la place comme il m'avait placée, les bras maintenus au sol par des rubans noirs, et je dois m'occuper de poser les bandes tandis qu'il vérifie les ligatures et les resserre pour que le sang sorte. La sang jaillit très-loin : s'extasia; i tornant a col·locar-se de front, mentre aquestes dues fonts brollen, em fa posar de genolls entre les seves cames, a fi que el xucli; fa el mateix amb cadascun dels seus gitons, a torns, sense deixar de posar els ulls sobre aquells raigs de sang que l'inflamem. Pel que fa a mi, segura que l'instant en què la crisi que espera tindrà lloc serà l'època de la cessació dels turments de la Comtessa, poso tots els meus esforços a determinar aquesta crisi, i em converteixo, així com veureu, Senyora, en catin per benevolència, i libertina per virtut.
+
+Finalment arriba aquell desenllaç tant esperat; no en coneixia els perills ni la violència; l'última vegada que havia ocorregut, estava desmaïada… Oh! Senyora, quin estravi!
+
+Gernande va estar gairebé deu minuts en delirio, debatent-se com un home en convulsió epilèptica, llançant crits que s'haurien sentit des de molt lluny: els seus juraments eren desmesurats, i colpejant tot allò que l'envoltava, feia esforços terrorífics. Els dos favorits van ser tirats a terra, i ell volia precipitar-se sobre la seva esposa, però jo el contenia; vaig acabar de calmarlo,  i la seva necessitat de mi li feia respectar-me. Finalment el vaig portar a la raó alliberant-lo d'aquell fluid ardent, la calor, densitat i sobretot l'abundància del qual el mantenien en tal estat de frènesi que creia que anava a morir.
+
+Ara describo la quantitat i consistència del fluid: set o vuit culleres haurien difícilment contingut la dosi, i ni el porridge més espès no expressaria adequadament la seva densitat. Malgrat tot, no hi havia cap signe d'erecció, només aparença d'esgotament—una d'aquelles contradiccions que els experts en medicina explicarien millor que jo.
+
+Pel que fa al Comte, menjava de manera excessiva i només es dissipava cada vegada que sagnava la seva muller, és a dir, cada quatre dies. No puc afirmar si aquesta era la causa del fenomen, però em limitaré a relatar només allò que vaig presenciar directament.
+
+Ara estic considerant les matisacions lingüístiques del text original: "reins" en el francès del segle XVIII es refereix a la regió lumbar i pelviana més que als òrgans renals, així que "ronyons" en català funciona bé en aquest context eròtic. Per als termes "mignons" i "gitons" que designen amants joves, usaré "minyons" com a traducció més natural, i per a "catin" em decidiré per "puta" donada la seva directesa i registre literari apropiat per a l'obra. Now I'm working through some additional phrases and reconsidering earlier choices. "Gens de l'art" refers to professionals or experts in a field, so I'll go with "els entesos" for a more natural Catalan rendering. I'm also double-checking a few key expressions like the religious reference to God and the mythological allusion to Ganymede as young male lovers, plus the distinction between "narrow road" and "forbidden road" in Catalan.
