@@ -1,10 +1,10 @@
 {
-    "pid": 25663,
+    "pid": 2425,
     "mode": "hybrid",
-    "current_task": "1780156894_improve_millora-contnua-de-fragments-postums-a-o",
-    "diem_balance": "4.832013272485615",
-    "uptime_seconds": 1140,
-    "tasks_completed": 6,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-05-30T16:01:55Z"
+    "current_task": "fix-llengua-rudyard-kipling-the-jungle-book-1780236117",
+    "diem_balance": "10.880557532485614",
+    "uptime_seconds": 3,
+    "tasks_completed": 0,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-05-31T14:04:05Z"
 }

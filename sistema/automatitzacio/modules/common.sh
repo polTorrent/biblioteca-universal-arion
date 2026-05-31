@@ -15,7 +15,13 @@ count_running() { ls -1 "$TASKS_DIR/running/"*.json 2>/dev/null | wc -l; }
 
 task_exists() {
     local keyword="$1"
-    grep -rl "$keyword" "$TASKS_DIR/pending/" "$TASKS_DIR/running/" 2>/dev/null | head -1
+    # Escapem les barres verticals i forcem que només busqui sobre fitxers existents reals a pending o running d'una forma completament compatible sense dependre del comportament d'error de xargs que faria saltar el grep cap al seu codi modificat
+    local files=$(find "$TASKS_DIR/pending/" "$TASKS_DIR/running/" -type f 2>/dev/null)
+    if [ -n "$files" ]; then
+        grep -lE "$keyword" $files 2>/dev/null | head -1
+    else
+        echo ""
+    fi
 }
 
 add_task() {
