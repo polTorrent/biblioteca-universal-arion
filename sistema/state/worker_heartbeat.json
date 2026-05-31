@@ -1,10 +1,10 @@
 {
-    "pid": 16726,
+    "pid": 18433,
     "mode": "hybrid",
-    "current_task": "1780237930_improve_millora-contnua-de-fragments-postums-a-o",
-    "diem_balance": "4.765672552485615",
-    "uptime_seconds": 1790,
-    "tasks_completed": 7,
-    "tasks_failed": 2,
-    "last_heartbeat": "2026-05-31T16:02:06Z"
+    "current_task": "1780245123_improve_millora-contnua-de-fragments-postums-a-o",
+    "diem_balance": "1.5107936824856143",
+    "uptime_seconds": 3504,
+    "tasks_completed": 9,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-05-31T16:32:23Z"
 }
