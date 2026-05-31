@@ -1,4 +1,4 @@
-# Millora Contínua — Report 2026-05-31 17:01
+# Millora Contínua — Report 2026-05-31 18:02
 
 Total obres validades analitzades: 42
 
@@ -22,7 +22,7 @@ Total obres validades analitzades: 42
 | rubaiyat-seleccio-75-quartetes | 7.5/10 | 91 | 65 | Puntuació millorable (7.5/10); Validació antiga (91 dies); Glossari pobre (1 entrades) |
 | cumbres-borrascosas | 7.0/10 | 85 | 60 | Puntuació millorable (7.0/10); Validació envellint (85 dies); traduccio.md sense capçalera # |
 | laelius-de-amicitia | 7.0/10 | 77 | 55 | Puntuació millorable (7.0/10); Validació envellint (77 dies); Glossari pobre (1 entrades) |
-| de-consolatione-philosophiae-llibre-i | 7.0/10 | 78 | 55 | Puntuació millorable (7.0/10); Validació envellint (78 dies); Glossari pobre (1 entrades) |
+| de-consolatione-philosophiae-llibre-i | 7.0/10 | 79 | 55 | Puntuació millorable (7.0/10); Validació envellint (79 dies); Glossari pobre (1 entrades) |
 | der-wille-zur-macht | 7.0/10 | 85 | 55 | Puntuació millorable (7.0/10); Validació envellint (85 dies); Glossari pobre (1 entrades) |
 | apologia | 7.0/10 | 85 | 55 | Puntuació millorable (7.0/10); Validació envellint (85 dies); Glossari pobre (1 entrades) |
 | de-brevitate-vitae | 7.0/10 | 77 | 55 | Puntuació millorable (7.0/10); Validació envellint (77 dies); Glossari pobre (1 entrades) |
