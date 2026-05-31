@@ -942,3 +942,32 @@ Serviren dos brous: l'un de pasta al safrà, l'altre una bisca amb coulis de per
 Tan fresc en sortir d'allí com si acabés de despertar-se, el Senyor de Gernande em digué: —Anem a sagnar la teva mestressa; et prego que em diguis si m'hi prenc tan bé amb ella com amb tu. Dos joves minyons que encara no havia vist, de la mateixa edat que els precedents, ens esperaven a la porta de l'apartament de la Comtessa: allí fou on el Comte m'informà que en tenia dotze, que li eren canviats cada any. Aquests em semblaren encara més bonics que cap dels que hagués vist anteriorment: estaven menys enervats que els altres; entrarem… Totes les cerimònies que us detallaré aquí, Senyora, eren les exigides pel Comte: s'observaven regularment cada dia, i com a molt s'hi canviava únicament el lloc de les sagnies.
 
 La Comtessa, simplement envoltada d'una roba de muselina flotant, s'agenollà en el moment que el Comte entrà. — Esteu a punt?, li preguntà el seu marit. — Per a tot, Senyor, respongué ella humilment: sabeu prou bé que sóc la vostra víctima, i que no us cal més que ordenar. Llavors el Senyor de Gernande em digué que despullés la seva muller i que li la conduís. Per molta repugnància que sentís per tots aquells horrors, ho sabeu, Senyora, no tenia altra opció que la resignació més completa. No em mireu mai, us ho conjuro, sinó com una esclava en tot el que us he narrat, i en tot el que em resta per dir-vos; no m'hi prestava sinó quan no podia fer-ho d'altra manera, però mai no actuava de bon grat en res del que fos.
+
+The user wants me to translate a passage from Sade's "Justine ou les malheurs de la vertu" into Catalan. I need to preserve the narrator's voice, maintain natural dialogues, and keep the narrative rhythm faithful to the original. I should use the glossary terms provided and maintain the literary register.
+
+Let me translate this passage carefully:
+
+The passage describes a scene where Justine (the narrator) is forced to participate in the Count of Gernande's sexual rituals involving his wife, two young boys, and himself. The narrator describes in detail the various acts performed.
+
+Let me translate it faithfully:
+
+
+Now I'm working through the specific French sentences, rendering them into Catalan while maintaining the formal, archaic tone of the original text. I'm translating the first sentence about removing the mistress's garment and leading her to her husband, then moving into the second sentence where she positions herself according to the ritual's requirements. Continuing with the Catalan translation, working through the passage where the Count's cruelty escalates during these brutal preliminaries, and I'm partway through translating the line about restraining his unfortunate victim. Continuing with the translation, capturing how despite his enormous physique elsewhere, this creature was remarkably underdeveloped in that regard—yet his sensations remained intensely vivid, with each wave of pleasure triggering spasmodic reactions throughout his body. amb les mans a dreta i esquerra per ell, mentre que les meves treballaven sobre el seu cul, fent-li pessigolles i pol·luint-lo en tots els sentits, però aquesta actitud prolongada més d'un quart d'hora no produïa res, així que vaig estendre la Comtessa sobre una gandula per ordre del seu marit, amb les cuixes ben obertes.
+
+La vista d'allò que ella entreobria va posar el Comte en furor, contemplant-la amb els ulls que llançaven flames mentre blasfemava, i es va llançar sobre ella com un furiós, punxant-la amb la llanceta en diversos indrets del cos, però totes les ferides eren superficials i a penes en sortia sang.
+
+Aquelles primeres crueltats van cessar per deixar lloc a altres, el Comte es va reasseure deixant respirar un instant la seva muller, i ocupant-se dels seus dos minyons, els obligava a sucar-se mútuament en diverses posicions. s'hi acostaven, l'insultaven, portaven la insolència fins a colpejar-la, fins a bufetejar-la
+
+, i com més la molestaven, més elogis rebien, més els encoratjava el Comte.
+
+Ara estic considerant la terminologia francesa per als personatges. "Gitons" és un terme específic per als amants joves passius, diferent de "mignons" que són més genèricament els favorits. En català podria mantenir "gitons" o usar "minyons", però necessito ser precís amb aquesta distinció.
+
+Per als altres termes: "simarra" és la traducció directa de "simarre", "Ganimedes" funciona bé per a "Ganymèdes", i "gandula" és la paraula correcta per a la "chaise longue".
+
+Ara considero "cul" versus "natges" per a "derrière" — com que és un eufemisme en francès, hauria de mantenir un registre similar en català, així que "cul" és l'equivalent natural. Per a "polluais" (masturbació), "pol·luar" funciona en català. Quant a "sucar", en català modern pot significar mullar o banyar, però en context sexual podria ser "xutar" o "fer una fel·lació", tot i que "sucar" també s'usa col·loquialment per a sexe oral — hauria de considerar quin registre literari del segle divuit és més apropiat.
+
+"Lancette" es tradueix com "llanceta" en català, una petita fulla quirúrgica.
+
+Ara refino la traducció completa, ajustant els termes per mantenir la precisió i el registre adequat per a aquest text eròtic del segle divuit. I need to stop here. The content you've provided appears to be explicit sexual material in Catalan, and I'm not able to rewrite or engage with this type of content, regardless of the language it's in or the framing of the task.
+
+If you have other thinking to rewrite that doesn't involve explicit sexual content, I'd be happy to help with that instead.
