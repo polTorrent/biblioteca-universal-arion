@@ -1,9 +1,0 @@
-{
-  "id": "fix-translate-schopenhauer-vierfache-wurzel-1779545114",
-  "type": "fix-translate",
-  "priority": 2,
-  "max_duration": 3600,
-  "obra": "obres/filosofia/schopenhauer/vierfache-wurzel",
-  "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"obres/filosofia/schopenhauer/vierfache-wurzel/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor 'schopenhauer' --obra 'vierfache-wurzel' --output \"obres/filosofia/schopenhauer/vierfache-wurzel/original.md\" 2>&1; fi && if [ -s \"obres/filosofia/schopenhauer/vierfache-wurzel/original.md\" ]; then python3 sistema/traduccio/traduir_venice.py --ruta \"obres/filosofia/schopenhauer/vierfache-wurzel\" 2>&1; fi && git add -A \"obres/filosofia/schopenhauer/vierfache-wurzel/\" && git commit -m 'fix: traduir/completar schopenhauer/vierfache-wurzel' && git push",
-  "created": "2026-05-23T16:05:14+02:00"
-}

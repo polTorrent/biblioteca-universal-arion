@@ -1,4 +1,4 @@
-# Millora Contínua — Report 2026-05-31 16:03
+# Millora Contínua — Report 2026-05-31 16:32
 
 Total obres validades analitzades: 42
 
@@ -30,7 +30,7 @@ Total obres validades analitzades: 42
 | bartleby-lescrivent | 7.0/10 | 77 | 55 | Puntuació millorable (7.0/10); Validació envellint (77 dies); Glossari pobre (1 entrades) |
 | demian | 7.0/10 | 85 | 55 | Puntuació millorable (7.0/10); Validació envellint (85 dies); Glossari pobre (1 entrades) |
 | metamorfosis-seleccio-5-mites | 7.0/10 | 81 | 55 | Puntuació millorable (7.0/10); Validació envellint (81 dies); Glossari pobre (1 entrades) |
-| hojoki | 7.0/10 | 78 | 55 | Puntuació millorable (7.0/10); Validació envellint (78 dies); Glossari pobre (1 entrades) |
+| hojoki | 7.0/10 | 79 | 55 | Puntuació millorable (7.0/10); Validació envellint (79 dies); Glossari pobre (1 entrades) |
 | 20-poemes-les-flors-del-mal | 7.0/10 | 85 | 55 | Puntuació millorable (7.0/10); Validació envellint (85 dies); Glossari pobre (1 entrades) |
 | o-guardador-de-rebanhos-el-guardador-de-ramats | 7.0/10 | 75 | 55 | Puntuació millorable (7.0/10); Validació envellint (75 dies); Glossari pobre (1 entrades) |
 | primero-sueno | 7.0/10 | 77 | 55 | Puntuació millorable (7.0/10); Validació envellint (77 dies); Glossari pobre (1 entrades) |
