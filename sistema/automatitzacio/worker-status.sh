@@ -6,7 +6,7 @@
 # =============================================================================
 
 TASKS_DIR="$PROJECT/sistema/tasks"
-LOG="$HOME/claude-worker.log"
+LOG="$PROJECT/sistema/logs/worker.log"
 LOCKFILE="$TASKS_DIR/worker.lock"
 
 # Colors
