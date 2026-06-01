@@ -627,3 +627,13 @@
 {"ts":"2026-05-31T16:31:17Z","module":"check-translations","type":"info","msg":"checking_translations"}
 {"ts":"2026-05-31T16:31:18Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
 {"ts":"2026-05-31T16:31:18Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-31T18:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-31T18:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-31T18:05:01Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-31T18:05:01Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-31T18:05:01Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-05-31T20:05:03Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-05-31T20:05:03Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-05-31T20:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-05-31T20:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-05-31T20:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
