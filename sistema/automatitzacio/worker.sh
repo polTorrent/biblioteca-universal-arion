@@ -527,10 +527,10 @@ if tasks:
         log "⏱️ Timeout per $TASK_ID (${DURATION}s)"
 
         # ── FIX: Obres grans — mode sessió: si hi ha progrés, tornar a pending amb retries=0 ──
-        local is_session=false
-        local obra_for_check=$(extract_obra_path "$INSTRUCTION")
+        is_session=false
+        obra_for_check=$(extract_obra_path "$INSTRUCTION")
         if [ -n "$obra_for_check" ] && { [ "$TASK_TYPE" = "fix-translate" ] || [ "$TASK_TYPE" = "translate" ]; }; then
-            local traduccio_file="$PROJECT_DIR/$obra_for_check/traduccio.md"
+            traduccio_file="$PROJECT_DIR/$obra_for_check/traduccio.md"
             if [ -f "$traduccio_file" ] && [ -s "$traduccio_file" ]; then
                 is_session=true
             fi
