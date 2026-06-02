@@ -429,3 +429,72 @@ Juliette, recorrent a altres recursos, digué llavors a la seva germana que, amb
 Justine tingué horror d'aquests discursos; digué que preferia la mort a la ignomínia, i malgrat les noves instàncies que li féu la seva germana, refusà constantment d'allotjar-se amb ella, des que la veié determinada a una conducta que la feia estremir.
 
 Les dues noies es separaren, doncs, sense cap promesa de tornar-se a veure, ja que les seves intencions es trobaven tan divergents. Juliette, que anava, pretenia ella, a esdevenir una gran dama, hauria de consentir a rebre una noieta les inclinacions virtuoses però baixes de la qual serien capaces de deshonrar-la? I de la seva banda, voldria Justine arriscar els seus costums en la companyia d'una criatura perversa que estava a punt de convertir-se en víctima de la crapulença i la disbauxa públiques? Totes dues es digueren, doncs, un adeu etern, i totes dues abandonaren el Convent l'endemà mateix.
+
+Qui sap, quan el Cel ens
+colpeja amb els seus cops,
+Si la més gran desgràcia no és
+un bé per a nosaltres?
+*Èd. a casa d'Admete.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyosos del qual no embelleixen un instant l'atmosfera sinó per precipitar en els abismes de la mort el desgraciat que han enlluernат.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i millor il·lustrat, només a tu pertoca conèixer la dolçor de les llàgrimes que arrenca la Virtut dissortada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sens parar amb les teves accions i els teus discursos, no temo gens per tu allò que el gènere dels personatges d'aquestes Memòries ha hagut d'exigir; el cinisme d'alguns esbossos (suavitzats, tanmateix, tant com ha estat possible) no t'espantarà pas tampoc; és el Vici qui, gemegant d'ésser descobert, clama l'escàndol tot seguit que hom l'ataca. El procés del Tartuf fou obra de bigots; el de Justine serà obra dels llibertins, i poc me'ls temo: els meus motius, revelats per tu, no en seran pas desavoats; la teva opinió em basta per a la glòria, i havent-te complaçut, m'és forçós o complaure universalment, o consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la [no tan Novel·la com hom creuría] és sens dubte nou; l'ascendència de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal: vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria hom d'estar ja tip!
+
+Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; mostrar una desgràciada que erra de desgràcia en desgràcia, joguina de la malvadesa, blanc de totes les debauixes, exposada als gustos més bàrbars i monstruosos, atabalada pels sofismes més audaços i especiosos, presa de les seduccions més hàbils i dels suborns més irresistibles; sense tenir per oposar a tants revessos, a tants flagells, per repel·lir tanta corrupció, més que una ànima sensible, un enginy natural i molt de coratge: aventurar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més aterridores, les pinzellades més enèrgiques, amb la sola mira d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, hom ho convendrà, assolir el fi per una ruta poc trepitjada fins al present.
+
+Hauré reeixit, Constança? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim em fan sentir orgullosa d'estimar la Virtut! Com n'és de sublime entre les llàgrimes! Com l'embelleixen els infortunis!»
+
+Oh, Constança! Que aquestes paraules se t'escapin, i els meus treballs seran coronats.
+
+JUSTINE,
+O
+ELS INFORTUNIS
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria la de desenvolupar els mitjans dels quals es val la Providència per arribar als fins que es proposa sobre l'home, i traçar, d'acord amb això, alguns plans de conducta que poguessin fer conèixer a aquest malhaurat individu bípede la manera en la qual cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis insòlits d'aquesta fatalitat a la qual hom dóna vint noms diferents, sense haver pogut arribar encara ni a conèixer-la ni a definir-la.
+
+Si, ple de respecte per les nostres convencions socials, i sense apartar-nos mai dels límits que ens imposen, s'escau que, malgrat tot, no hem trobat sinó esbarzers mentre els malvats no collien sinó roses, les persones mancades d'un fons de virtuts prou sòlid per situar-se per damunt d'aquestes consideracions no calcularan llavors que val més abandonar-se al torrent que resistir-s'hi? No diran que la Virtut, per bella que sigui, esdevé tanmateix el pitjor partit que hom pugui prendre, quan es troba massa feble per lluitar contra el vici, i que en un segle enterament corromput, el més segur és fer com els altres? Una mica més il·lustrats, si es vol, i abusant dels llums que han adquirit, no diran, amb l'àngel Jesrad de Zadig, que no hi ha cap mal del qual no neixi un bé, i que, d'acord amb això, poden lliurar-se al mal, atès que no és en el fons sinó una de les maneres de produir el bé? No hi afegiran que és indiferent al pla general que tal o tal altre sigui bo o dolent per preferència; que si la desgràcia persegueix la virtut i la prosperitat acompanya el crim, essent les coses iguals als ulls de la Natura, val infinitament més prendre partit entre els malvats que prosperen que entre els virtuosos que fracassen? Cal, doncs, prevenir aquests sofismes perillosos d'una filosofia falsa; és essencial fer veure que els exemples de virtut malaurada, presentats a una ànima corrompuda en la qual resten tanmateix alguns bons principis, poden reconduir aquesta ànima cap al bé tan segurament com si li haguéssim mostrat, en aquest camí de la virtut, les palmes més brillants i les recompenses més afalagadores. És cruel, sens dubte, haver de pintar un nombre de desgràcies aclaparadores sobre la dona dolça i sensible que millor respecta la virtut, i de l'altra banda l'abundor de les prosperitats damunt d'aquells que esclafaen o mortifiquen aquesta mateixa dona. Però si d'aquest quadre de fatalitats neix tanmateix un bé, haurem de tenir remordiments d'haver-les ofert? Podrem estar dolguts d'haver establ
+
+Aquests són els sentiments que guiaran el nostre treball, i és per consideració d'aquests motius que demanem al lector indulgència per als sistemes erronis posats en boca d'alguns dels nostres personatges, i per a les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.
+
+La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la fortuna de les quals és obra d'una bella figura i de molta lleugeresa, i els títols de les quals, per pomposos que siguin, no es troben sinó als arxius de Citera, forjats per la impertinència de qui els pren i sostinguts per la nècia credulitat de qui els atorga; morena, de bella talla, amb uns ulls d'una expressió singular; aquella incredulitat de moda que, prestant una sal de més a les passions, fa que hom cerqui amb més cura les dones en qui hom la sospita; una mica maliciosa, sense cap principi, no veient res de dolent en res, i tanmateix no prou depravació al cor per haver-hi apagat la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,
+
+Tanmateix, aquesta dona havia rebut la millor educació; filla d'un riquíssim banquer de París, havia estat educada amb una germana anomenada Justine, tres anys més jove que ella, en una de les abadies més cèlebres de la capital, on fins a l'edat de dotze i quinze anys respectivament, cap consell, cap mestre, cap llibre, cap talent no havia estat negat ni a l'una ni a l'altra de les dues germanes.
+
+En aquella època fatídica per a la virtut de dues noies joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que en morí de dolor. La seva esposa el seguí al sepulcre un mes després. Dos parents freds i distants deliberaren sobre el que caldria fer de les joves òrfenes; la seva part d'una herència absorbida pels creditors ascendia a cent escuts per a cada una. Com que ningú no volia encarregar-se'n, els obriren la porta del Convent, els lliuraren la seva dot i les deixaren lliures de ser el que els plagués.
+
+Madame de Lorsange, que llavors s'anomenava Juliette, i el caràcter i l'esperit de la qual eren, amb ben poca diferència, tan formats com als trenta anys —edat que tenia en el moment de la història que anem a narrar—, no semblà sensible sinó al plaer de ser lliure, sense reflexionar ni un instant sobre els cruels revessos que havien trencat les seves cadenes. Pel que fa a Justine, que tenia, com hem dit, dotze anys, era d'un caràcter fosc i melancòlic, que li feia sentir amb molta més agudesa tota l'horror de la seva situació. Dotada d'una tendresa i d'una sensibilitat sorprenents, en lloc de l'art i la finesa de la seva germana, no tenia sinó una ingenuïtat, una candor que l'havien de fer caure en moltes trampes. A tantes qualitats, aquesta noia hi afegia una fesomia dolça, absolutament diferent d'aquella amb la qual la natura havia embellida Juliette; tanta astúcia, manyeria i coqueteria com hom veia en els trets de l'una, tanta pudicícia, decència i timidesa s'admiraven en els de l'altra; un aire de Verge, uns grans ulls blaus, plens d'ànima i d'interès, una pell enlluernadora, una cintura àgil i flexible, una veu commovadora, unes dents d'ivori i els cabells rossos més bells: tal és l'esbós d'aquesta encantadora cadeta, les gràcies ingènues i els trets delicats de la qual estan per damunt dels nostres pinzells.
+
+Hom els donà vint-i-quatre hores a l'una i a l'altra per abandonar el Convent, deixant-les al seu càrrec de cercar-se la vida, amb els seus cent escuts, allà on els semblés bo. Juliette, encantada de ser la seva pròpia mestressa, volgué un moment eixugar les llàgrimes de Justine, però en veure que no ho aconseguiria, es posà a renyar-la en lloc de consolar-la: li retragué la seva sensibilitat; li digué, amb una filosofia molt per damunt de la seva edat, que en aquest món no calia afligir-se sinó per allò que ens afectés personalment; que era possible trobar en un mateix sensacions físiques d'una voluptat prou picant per extingir totes les afeccions morals el xoc de les quals pogués resultar dolorós; que aquest procediment es tornava tant més essencial de posar en pràctica, com que la veritable saviesa consistia infinitament més a doblar la suma dels propis plaers que a multiplicar la de les penes; que no hi havia res, en una paraula, que no calgués fer per embossar en un mateix aquella pèrfida sensibilitat de la qual només els altres en treien profit, mentre que a nosaltres no ens reportava sinó angoixes. Però és difícil endurir un bon cor: resisteix als raonaments d'un cap mal fet, i les seves joies el consolen dels falsos llampecs del bell enginy.
