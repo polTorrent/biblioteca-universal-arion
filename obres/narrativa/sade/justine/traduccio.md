@@ -253,3 +253,90 @@ Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un riquíssim 
 En aquella època fatídica per a la virtut de dues noies joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que en morí de pena. La seva muller el seguí al sepulcre un mes després. Dos parents freds i llunyans deliberaren sobre el que farien de les joves òrfenes; llur part d'una herència absorbida pels creditors pujava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del convent, els lliuraren llur dot, i les deixaren lliures de fer-se el que volguessin.
 
 Madame de Lorsange, que aleshores s'anomenava Juliette, i el caràcter i l'esperit de la qual eren, a molt poca cosa, tan formats com als trenta anys —edat que assoleia en el moment de la història que anem a relatar—, no semblà sensible sinó al plaer de ser lliure, sense reflexionar ni un instant sobre els cruels revessos que havien trencat les seves cadenes. Quant a Justine, de dotze anys com hem dit, era d'un caràcter fosc i melancòlic que li féu sentir molt més agudament tota l'horror de la seva situació. Dotada d'una tendresa i d'una sensibilitat sorprenents, en lloc de l'art i la finesa de la seva germana, no tenia sinó una ingenuïtat, una candidesa que l'havien de fer caure en moltes trampes. A tantes qualitats, aquesta jove hi afegia una fesomia dolça, absolutament diferent d'aquella amb la qual la Natura havia embellert Juliette; tant com hom veia d'artifici, d'astúcia i de coqueteria en els trets de l'una, tant hom admirava de pudor, de decència i de timidesa en l'altra; un aire de Verge, uns grans ulls blaus plens d'ànima i d'encant, una pell enlluernadora, una talla àgil i flexible, una veu commovadora, unes dents d'ivori i els cabells rossos més bells: tal és l'esbós d'aquesta encantadora germana petita, les gràcies ingènues i els trets delicats de la qual estan per damunt del nostre pinzell.
+
+Qui sap, quan el Cel ens
+colpeja amb els seus cops,
+si la desgràcia més gran
+no és un bé per a nosaltres?
+*Èd. a casa d'Admet.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyadors del qual no embelleixen un instant l'atmosfera sinó per precipitar en els abismes de la mort el desgraciat que han enlluernit.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i més il·luminat, només a tu pertoca conèixer la dolçor de les llàgrimes que arrenca la Virtut infeliç. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense treva amb les teves accions i amb els teus discursos, no em temo gens per a tu els que ha necessitat en aquestes Memòries el gènere dels personatges establerts; el cinisme d'alguns traços (suavitzats, no obstant, tant com s'ha pogut) no t'espantarà pas tampoc; és el Vici qui, gemegant per ser desvelat, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf fou obra de bigots; el de Justine serà obra dels libertins, i ben poc me'ls temo: els meus motius, revelats per tu, no seran pas desaprovats; la teva opinió em basta per a la glòria, i, havent-te plagut, o bé he de plaure universalment, o bé consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la [no tan Novel·la com hom creuria] és nou, sens dubte; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria hom d'estar ja fart!
+
+Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; mostrar una infortunada errant de dissort en dissort; joguina de l'esceleratesa; diana de totes les dissolucions; exposada als gustos més bàrbars i monstruosos; atordida pels sofismes més audaços i especiosos; presa de les seduccions més hàbils i de les subornacions més irresistibles; sense tenir per oposar a tants contratemps, a tants flagells, per repel·lir tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més espantoses, les pinzellades més enèrgiques, amb l'únic propòsit d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, s'haurà de convenir, assolir la fita per una via fins ara poc trescada.
+
+Ho hauré aconseguit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després de llegir Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim m'enorgulleixen d'estimar la Virtut! Com és sublim entre les llàgrimes! Com l'embelleixen els infortunis!»
+
+Oh, Constance! Que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria desenvolupar els mitjans de què la Providència es serveix per assolir les finalitats que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest malhaurat individu bípede la manera com ha de caminar en la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquella fatalitat a la qual hom dóna vint noms diferents, sense que s'hagi aconseguit encara ni conèixer-la ni definir-la.
+
+The user wants me to translate a passage from Sade's "Justine ou les Malheurs de la Vertu" from French to Catalan. Let me carefully translate this while preserving the philosophical voice, the rhythm, and the narrator's tone. I need to use the glossary terms provided and maintain the literary register.
+
+Let me analyze the text and translate it carefully:
+
+"Si, plein de respect pour nos conventions sociales, & ne s'écartant jamais des digues qu'elles nous imposent, il arrive malgré cela, que nous n'ayions rencontré que des ronces, quand les méchans ne cueillaient que des roses..."
+
+
+This is a complex philosophical sentence that argues virtue leads to suffering while vice brings rewards. I'm working through the translation paragraph by paragraph, rendering Sade's argument about how virtuous people encounter only thorns while the wicked gather roses, which might tempt those lacking strong moral foundations to abandon virtue altogether.
+
+The next section continues this line of reasoning—exploring how the insufficiently virtuous might rationalize that virtue becomes the worst choice when too weak to combat vice, especially in a corrupt society. It then introduces a more sophisticated argument borrowed from Voltaire's Zadig, suggesting that since every evil produces some good, one might as well surrender to vice. The passage appears to be building toward additional justifications for moral compromise.
+
+I need to continue naturally from where the current thinking ends, capturing how the argument escalates to suggest that indifference to morality is justified when virtue brings misfortune while crime brings prosperity. The key insight is that these dangerous sophisms must be countered—showing that examples of virtuous suffering can actually reform a corrupted soul just as effectively as tales of virtue rewarded, making it crucial to prevent such false philosophy from taking root.
+
+The next thinking extends this by acknowledging the cruelty of depicting misfortunes befalling the virtuous woman while prosperity flows to the wicked, yet arguing that if some good emerges from this tragic tableau, there's no reason for remorse. The author suggests that a wise reader will extract a valuable lesson about submission to Providence and recognize that Heaven often strikes those we love to redirect us toward our duties.
+
+Així doncs, tot i que és cruel mostrar la virtut sofrint mentre el vici prospera, si d'aquest quadre tràgic en sorgeix algun bé—la lliçó de la submissió als designis de la Providència i la comprensió que el Cel ens fereix sovint per reconduir-nos als nostres deures—no hi ha raó per a tenir remordiment d'haver presentat aquestes fatalitats. I'm continuing to work through the Catalan translation, refining some of the more challenging phrases—particularly "écrasent" which means to crush or overwhelm, and "mortifient" which carries the sense of mortifying or humbling, so I need to find the right Catalan equivalents that capture both the physical and emotional weight of those terms. I'm weighing the best Catalan equivalent for "ronces" in this metaphorical context about hardship versus wickedness—"esbarzers" (brambles) captures both the literal plant and the poetic contrast with roses, making it the stronger choice over more regional or abstract alternatives. I'm working through the rest of this passage where people lacking strong moral foundations might rationalize abandoning virtue altogether—reasoning that if wickedness flourishes while goodness struggles, why not surrender to vice like everyone else? Even those with some education might invoke philosophical arguments like Zadig's angel to justify their corruption, claiming that evil produces good outcomes anyway. Even if depicting misfortune befalling the virtuous and prosperity rewarding the wicked seems cruel, there's value in showing readers that suffering can teach submission to Providence and remind us that hardship often redirects us toward our duties—so presenting these tragic scenarios serves a greater moral purpose. d'altra banda l'afluència de prosperitats sobre aquells que esclafan o mortifiquen aquesta mateixa dona" completes the sentence well. Now I'm working through "les palmes les plus brillantes, & les plus flatteuses récompenses" — keeping "palmes" as the symbol of victory works, and "recompenses més afalagadores" captures the flattering nature. For the final phrase about Heaven's warning, I need to render "l'avertissement fatal que c'est souvent pour nous ramener à nos devoirs, que le Ciel frappe à côté de nous l'être qui nous paraît mieux avoir rempli les siens" — essentially that divine punishment of those near us serves to remind us of our duties.
+
+Now checking the rhetorical questions: "Ne calculeront-ils pas alors" translates cleanly to the future tense, and "Ne diront-ils pas" works similarly. For "N'ajouteront-ils pas que," I'm deciding between the future and conditional forms — the French future tense suggests I should maintain that in Catalan rather than shifting to conditional.
+
+Looking at consistency across all three questions, I should use the future tense throughout: "¿No calcularan llavors...?", "¿No diran que la Virtut...?", "¿No diran amb l'àngel Jesrad...?", and "¿No hi afegiran que...?" This keeps the rhetorical force aligned with the original French structure. I'm continuing with the future tense throughout the passage, working through the rhetorical questions about virtue's weakness against vice in a corrupted age, and then moving into the argument about how evil itself produces good—referencing the angel Jesrad from Zadig to justify moral compromise.
+
+Tals són els sentiments que guiaran el nostre treball, i és en consideració d'aquests motius que demanem al lector indulgència pels sistemes erronis posats en boca d'alguns dels nostres personatges, i per les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.
+
+La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la fortuna de les quals és obra d'una bella figura i de molta inconducta, i els títols de les quals, per pomposos que siguin, no es troben sinó als arxius de Citera, forjats per la impertinència de qui els pren i sostinguts per la ximple credulitat de qui els atorga; bruna, de bella talla, amb ulls d'una expressió singular; aquella incredulitat de moda que, prestant un alicient de més a les passions, fa cercar amb més cura les dones en qui hom la sospita; una mica malèvola, sense cap principi, sense creure mal de res, i tanmateix no prou depravada de cor com per haver-ne apagat la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,
+
+Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un banquer molt poderós de París, havia estat educada amb una germana anomenada Justine, tres anys menor que ella, en una de les abadies més cèlebres de la capital, on fins als dotze i als quinze anys, cap consell, cap mestre, cap llibre, cap talent no havia estat refusat ni a l'una ni a l'altra de les dues germanes.
+
+En aquella època funesta per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel, que en morí de pena. La seva esposa el seguí al sepulcre un mes després. Dos parents freds i distants deliberaren sobre el que en farien de les joves òrfenes; la seva part d'una herència absorbida pels deutes s'elevava a cent escuts per a cadascuna. Com que ningú no volia encarregar-se'n, els obriren la porta del convent, els tornaren la dot i les deixaren lliures de fer-se el que volguessin.
