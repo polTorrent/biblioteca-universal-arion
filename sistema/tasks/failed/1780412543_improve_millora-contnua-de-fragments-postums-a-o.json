@@ -1,0 +1,18 @@
+{
+  "id": "1780412543_improve_millora-contnua-de-fragments-postums-a-o",
+  "type": "improve",
+  "priority": 3,
+  "created_at": "2026-06-02T15:02:23Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "MILLORA CONT\u00cdNUA de 'fragments-postums' a obres/filosofia/nietzsche/fragments-postums (puntuaci\u00f3 actual: 7.0/10, improvement_score: 245). Problemes detectats: Puntuaci\u00f3 millorable (7.0/10); Validaci\u00f3 envellint (79 dies); Notes trencades: [13], [14], [15], [21], [32]; Glossari pobre (1 entrades); No apareix a la web (docs/index.html). Accions: Millorar estil/qualitat: python3 sistema/traduccio/traduir_pipeline.py obres/filosofia/nietzsche/fragments-postums/ --mode millora | Crear entrades ## [N] a notes.md per les refer\u00e8ncies trencades | Ampliar glossari.yml (m\u00ednim 5 entrades significatives) | Regenerar web: python3 sistema/web/build.py. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuaci\u00f3 i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: fragments-postums\" && git push",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null,
+  "last_error": "No changes detected"
+}
