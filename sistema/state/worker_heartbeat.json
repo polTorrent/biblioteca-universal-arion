@@ -1,10 +1,10 @@
 {
     "pid": 29539,
     "mode": "hybrid",
-    "current_task": "1780502471_improve_millora-contnua-de-de-consolatione-philo",
-    "diem_balance": "2.244886792485616",
-    "uptime_seconds": 5720,
-    "tasks_completed": 28,
-    "tasks_failed": 0,
-    "last_heartbeat": "2026-06-03T16:38:19Z"
+    "current_task": "idle",
+    "diem_balance": "1.760206792485615",
+    "uptime_seconds": 5825,
+    "tasks_completed": 29,
+    "tasks_failed": 1,
+    "last_heartbeat": "2026-06-03T16:40:04Z"
 }
