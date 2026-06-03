@@ -1,37 +1,45 @@
+audiobook:
+  duration_seconds: 592.4
+  generated: true
+  generated_at: '2026-06-03T16:41:16.937341+00:00'
+  model: tts-elevenlabs-turbo-v2-5
+  size_mb: 9.04
+  voice: Charlie
+avaluacio_final:
+  aprovat: true
+  correccions_aplicades: 0
+  correccions_pendents: 6
+  data: '2026-02-02T20:08:53.298189'
+  errors_alts: 1
+  errors_critics: 0
+  puntuacions:
+    coherencia: 8.0
+    correccio_linguistica: 7.0
+    fidelitat: 9.0
+    fluidesa: 8.0
+    global: 8.1
+    veu_autor: 8.0
+  requereix_revisio_humana: false
+  total_errors: 16
 obra:
-  titol: "El retrat oval"
-  titol_original: "The Oval Portrait"
-  autor: "Edgar Allan Poe"
-  traductor: "Biblioteca Arion (IA + comunitat)"
   any_original: 1842
   any_traduccio: 2026
-  llengua_original: "anglès"
-  categoria: "narrativa"
-  genere: "narrativa"
-  font_original: "https://www.gutenberg.org/files/2147/2147-h/2147-h.htm"
-  descripcio: >
-    Conte curt de terror gòtic sobre un pintor obsessionat que absorbeix
+  autor: Edgar Allan Poe
+  categoria: narrativa
+  descripcio: 'Conte curt de terror gòtic sobre un pintor obsessionat que absorbeix
     la vida de la seva esposa mentre pinta el seu retrat.
+
+    '
   estadistiques:
     paraules_original: 1095
     paraules_traduccio: 1450
+  font_original: https://www.gutenberg.org/files/2147/2147-h/2147-h.htm
+  genere: narrativa
+  llengua_original: anglès
+  titol: El retrat oval
+  titol_original: The Oval Portrait
+  traductor: Biblioteca Arion (IA + comunitat)
 revisio:
-  estat: publicat
   data_revisio: '2026-02-02'
+  estat: publicat
   qualitat: 8.5
-avaluacio_final:
-  data: '2026-02-02T20:08:53.298189'
-  puntuacions:
-    fidelitat: 9.0
-    veu_autor: 8.0
-    fluidesa: 8.0
-    correccio_linguistica: 7.0
-    coherencia: 8.0
-    global: 8.1
-  total_errors: 16
-  errors_critics: 0
-  errors_alts: 1
-  aprovat: true
-  requereix_revisio_humana: false
-  correccions_aplicades: 0
-  correccions_pendents: 6
