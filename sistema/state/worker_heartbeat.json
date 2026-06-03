@@ -1,10 +1,10 @@
 {
-    "pid": 29539,
+    "pid": 27825,
     "mode": "hybrid",
-    "current_task": "1780502471_improve_millora-contnua-de-epistola-1-a-obresfil",
-    "diem_balance": "6.289024792485615",
-    "uptime_seconds": 3554,
-    "tasks_completed": 8,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-06-03T16:02:13Z"
+    "current_task": "1780502471_improve_millora-contnua-de-cumbres-borrascosas-a",
+    "diem_balance": "4.978737332485615",
+    "uptime_seconds": 8141,
+    "tasks_completed": 10,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-06-03T16:15:58Z"
 }
