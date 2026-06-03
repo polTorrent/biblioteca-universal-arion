@@ -1,0 +1,17 @@
+{
+  "id": "1780502472_improve_millora-contnua-de-o-guardador-de-rebanh",
+  "type": "improve",
+  "priority": 3,
+  "created_at": "2026-06-03T16:01:12Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "MILLORA CONTÍNUA de 'o-guardador-de-rebanhos-el-guardador-de-ramats' a obres/poesia/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats (puntuació actual: 7.0/10, improvement_score: 55). Problemes detectats: Puntuació millorable (7.0/10); Validació envellint (78 dies); Glossari pobre (1 entrades); No apareix a la web (docs/index.html). Accions: Millorar estil/qualitat: python3 sistema/traduccio/traduir_pipeline.py obres/poesia/fernando-pessoa/o-guardador-de-rebanhos-el-guardador-de-ramats/ --mode millora | Ampliar glossari.yml (mínim 5 entrades significatives) | Regenerar web: python3 sistema/web/build.py. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: o-guardador-de-rebanhos-el-guardador-de-ramats\" && git push",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null
+}
