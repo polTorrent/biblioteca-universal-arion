@@ -1,10 +1,10 @@
 {
-    "pid": 29539,
+    "pid": 27825,
     "mode": "hybrid",
-    "current_task": "1780502470_improve_millora-contnua-de-aurora-a-obresfilosof",
-    "diem_balance": "4.311901522485615",
-    "uptime_seconds": 4802,
-    "tasks_completed": 17,
-    "tasks_failed": 3,
-    "last_heartbeat": "2026-06-03T16:23:01Z"
+    "current_task": "1780502471_improve_millora-contnua-de-metamorfosis-seleccio",
+    "diem_balance": "3.4788895224856144",
+    "uptime_seconds": 9200,
+    "tasks_completed": 20,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-06-03T16:33:37Z"
 }
