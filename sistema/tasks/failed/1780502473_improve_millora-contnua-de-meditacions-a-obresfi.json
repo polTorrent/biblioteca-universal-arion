@@ -1,0 +1,18 @@
+{
+  "id": "1780502473_improve_millora-contnua-de-meditacions-a-obresfi",
+  "type": "improve",
+  "priority": 3,
+  "created_at": "2026-06-03T16:01:13Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "MILLORA CONT\u00cdNUA de 'meditacions' a obres/filosofia/marc-aureli/meditacions (puntuaci\u00f3 actual: 8.0/10, improvement_score: 25). Problemes detectats: Validaci\u00f3 antiga (96 dies); Glossari pobre (1 entrades). Accions: Ampliar glossari.yml (m\u00ednim 5 entrades significatives). Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuaci\u00f3 i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: meditacions\" && git push",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null,
+  "last_error": "No changes detected"
+}
