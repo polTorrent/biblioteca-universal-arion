@@ -1,0 +1,32 @@
+{
+  "obra": {
+    "titol": "El retrat oval",
+    "autor": "Edgar Allan Poe",
+    "genere": "narrativa"
+  },
+  "audiollibre": {
+    "fitxer_complet": "audiollibre_complet.mp3",
+    "durada_segons": 592.352653,
+    "durada_format": "9m 52s",
+    "mida_bytes": 9478103,
+    "mida_mb": 9.04,
+    "num_capitols": 1,
+    "total_chunks": 3,
+    "veu": "Charlie",
+    "model": "tts-elevenlabs-turbo-v2-5",
+    "idioma": "ca"
+  },
+  "capitols": [
+    {
+      "fitxer": "audiollibre_complet.mp3",
+      "titol": "Obra completa",
+      "mida_bytes": 9478103,
+      "durada_segons": 592.352653
+    }
+  ],
+  "generacio": {
+    "timestamp": "2026-06-03T16:41:16.931429+00:00",
+    "durada_generacio_segons": 24.3,
+    "cost_estimat_usd": 0.0036
+  }
+}
