@@ -1,0 +1,17 @@
+{
+  "id": "1780502472_improve_millora-contnua-de-de-l-amistat-a-obresf",
+  "type": "improve",
+  "priority": 3,
+  "created_at": "2026-06-03T16:01:12Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "MILLORA CONTÍNUA de 'de-l-amistat' a obres/filosofia/montaigne/de-l-amistat (puntuació actual: 8.2/10, improvement_score: 50). Problemes detectats: Validació antiga (94 dies); traduccio.md sense capçalera #; Glossari pobre (1 entrades); No apareix a la web (docs/index.html). Accions: Afegir capçalera # al traduccio.md | Ampliar glossari.yml (mínim 5 entrades significatives) | Regenerar web: python3 sistema/web/build.py. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: de-l-amistat\" && git push",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null
+}
