@@ -1,10 +1,10 @@
 {
-    "pid": 27825,
+    "pid": 30961,
     "mode": "hybrid",
-    "current_task": "1780502470_improve_millora-contnua-de-criton-a-obresfilosof",
-    "diem_balance": "3.1550908824856148",
-    "uptime_seconds": 9284,
-    "tasks_completed": 22,
+    "current_task": "1780502473_improve_millora-contnua-de-einleitung-in-die-phi",
+    "diem_balance": "3.0280967924856146",
+    "uptime_seconds": 2023,
+    "tasks_completed": 23,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-06-03T16:35:01Z"
+    "last_heartbeat": "2026-06-03T16:35:34Z"
 }

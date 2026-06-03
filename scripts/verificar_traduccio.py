@@ -255,7 +255,7 @@ def _verificar_per_ids(
     if falten_ids:
         falten = sorted(
             falten_ids,
-            key=lambda x: int(x) if x.isdigit() else x
+            key=lambda x: (0, int(x)) if str(x).isdigit() else (1, str(x))
         )
         if strict:
             print("\n❌ UNITATS QUE FALTEN a la traducció:")
@@ -283,7 +283,7 @@ def _verificar_per_ids(
     if sobren_ids:
         sobren = sorted(
             sobren_ids,
-            key=lambda x: int(x) if x.isdigit() else x
+            key=lambda x: (0, int(x)) if str(x).isdigit() else (1, str(x))
         )
         if strict:
             print("\n🚨 UNITATS POSSIBLEMENT INVENTADES a la traducció:")
