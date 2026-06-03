@@ -1,49 +1,64 @@
+audiobook:
+  duration_seconds: 216.1
+  generated: true
+  generated_at: '2026-06-03T16:40:08.231749+00:00'
+  model: tts-elevenlabs-turbo-v2-5
+  size_mb: 3.3
+  voice: George
 obra:
-  titol: "Fragments"
-  titol_original: "Περὶ φύσεως (fragments)"
-  autor: "Heràclit d'Efes"
-  autor_original: "Ἡράκλειτος ὁ Ἐφέσιος"
-  traductor: "Claude (Anthropic) amb supervisió editorial"
-  any_original: "-500"
-  any_traduccio: "2026"
-  llengua_original: "grec antic"
-  categoria: "filosofia"
-  font_original: "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0478"
-  descripcio: |
-    Heràclit d'Efes (c. 535-475 aC) fou un filòsof presocràtic conegut com
-    "l'Obscur" per l'estil enigmàtic dels seus aforismes. De la seva obra
+  any_original: '-500'
+  any_traduccio: '2026'
+  autor: Heràclit d'Efes
+  autor_original: Ἡράκλειτος ὁ Ἐφέσιος
+  categoria: filosofia
+  context:
+    influencies:
+    - Tales de Milet
+    - Anaximandre
+    obres_relacionades:
+    - Metafísica d'Aristòtil
+    - Vides dels filòsofs de Diògenes Laerci
+    tradicio: filosofia presocràtica
+  descripcio: 'Heràclit d''Efes (c. 535-475 aC) fou un filòsof presocràtic conegut
+    com
+
+    "l''Obscur" per l''estil enigmàtic dels seus aforismes. De la seva obra
+
     "Sobre la natura" (Περὶ φύσεως) només ens han arribat uns 130 fragments
-    preservats en citacions d'autors posteriors.
+
+    preservats en citacions d''autors posteriors.
+
 
     El seu pensament gira al voltant del canvi perpetu (πάντα ῥεῖ, "tot flueix"),
-    la unitat dels contraris, i el Logos com a principi ordenador de l'univers.
-    La seva influència s'estén des d'Aristòtil fins a Hegel i Nietzsche.
-  temes:
-    - canvi i flux
-    - unitat dels contraris
-    - logos
-    - foc com a principi
-    - filosofia presocràtica
-    - cosmologia
-  seccions: 25
+
+    la unitat dels contraris, i el Logos com a principi ordenador de l''univers.
+
+    La seva influència s''estén des d''Aristòtil fins a Hegel i Nietzsche.
+
+    '
   estadistiques:
+    notes: 15
     paraules_original: 450
     paraules_traduccio: 520
-    notes: 15
     termes_glossari: 11
+  font_original: https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A2008.01.0478
+  llengua_original: grec antic
   revisio:
-    estat: "validat"
-    qualitat: 8.6
-    data_revisio: "2026-03-01"
+    data_revisio: '2026-03-01'
     dimensions:
       fidelitat: 8.5
-      veu_autor: 8.5
       fluidesa: 8.8
-  context:
-    tradicio: "filosofia presocràtica"
-    influencies:
-      - "Tales de Milet"
-      - "Anaximandre"
-    obres_relacionades:
-      - "Metafísica d'Aristòtil"
-      - "Vides dels filòsofs de Diògenes Laerci"
+      veu_autor: 8.5
+    estat: validat
+    qualitat: 8.6
+  seccions: 25
+  temes:
+  - canvi i flux
+  - unitat dels contraris
+  - logos
+  - foc com a principi
+  - filosofia presocràtica
+  - cosmologia
+  titol: Fragments
+  titol_original: Περὶ φύσεως (fragments)
+  traductor: Claude (Anthropic) amb supervisió editorial

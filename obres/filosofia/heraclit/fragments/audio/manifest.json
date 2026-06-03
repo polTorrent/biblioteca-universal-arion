@@ -1,0 +1,182 @@
+{
+  "obra": {
+    "titol": "Fragments",
+    "autor": "Heràclit d'Efes",
+    "genere": ""
+  },
+  "audiollibre": {
+    "fitxer_complet": "audiollibre_complet.mp3",
+    "durada_segons": 216.137143,
+    "durada_format": "3m 36s",
+    "mida_bytes": 3458645,
+    "mida_mb": 3.3,
+    "num_capitols": 26,
+    "total_chunks": 26,
+    "veu": "George",
+    "model": "tts-elevenlabs-turbo-v2-5",
+    "idioma": "ca"
+  },
+  "capitols": [
+    {
+      "fitxer": "capitol_01.mp3",
+      "titol": "Περὶ φύσεως (Sobre la natura)",
+      "mida_bytes": 474846,
+      "durada_segons": 29.675063
+    },
+    {
+      "fitxer": "capitol_02.mp3",
+      "titol": "DK 1",
+      "mida_bytes": 364087,
+      "durada_segons": 22.752625
+    },
+    {
+      "fitxer": "capitol_03.mp3",
+      "titol": "DK 2",
+      "mida_bytes": 156779,
+      "durada_segons": 9.795875
+    },
+    {
+      "fitxer": "capitol_04.mp3",
+      "titol": "DK 12",
+      "mida_bytes": 86980,
+      "durada_segons": 5.433438
+    },
+    {
+      "fitxer": "capitol_05.mp3",
+      "titol": "DK 30",
+      "mida_bytes": 212368,
+      "durada_segons": 13.270188
+    },
+    {
+      "fitxer": "capitol_06.mp3",
+      "titol": "DK 36",
+      "mida_bytes": 186454,
+      "durada_segons": 11.650563
+    },
+    {
+      "fitxer": "capitol_07.mp3",
+      "titol": "DK 49a",
+      "mida_bytes": 70680,
+      "durada_segons": 4.414688
+    },
+    {
+      "fitxer": "capitol_08.mp3",
+      "titol": "DK 50",
+      "mida_bytes": 99519,
+      "durada_segons": 6.217125
+    },
+    {
+      "fitxer": "capitol_09.mp3",
+      "titol": "DK 51",
+      "mida_bytes": 139643,
+      "durada_segons": 8.724875
+    },
+    {
+      "fitxer": "capitol_10.mp3",
+      "titol": "DK 53",
+      "mida_bytes": 162631,
+      "durada_segons": 10.161625
+    },
+    {
+      "fitxer": "capitol_11.mp3",
+      "titol": "DK 60",
+      "mida_bytes": 59395,
+      "durada_segons": 3.709375
+    },
+    {
+      "fitxer": "capitol_12.mp3",
+      "titol": "DK 62",
+      "mida_bytes": 107042,
+      "durada_segons": 6.687313
+    },
+    {
+      "fitxer": "capitol_13.mp3",
+      "titol": "DK 67",
+      "mida_bytes": 88234,
+      "durada_segons": 5.511813
+    },
+    {
+      "fitxer": "capitol_14.mp3",
+      "titol": "DK 80",
+      "mida_bytes": 135881,
+      "durada_segons": 8.48975
+    },
+    {
+      "fitxer": "capitol_15.mp3",
+      "titol": "DK 88",
+      "mida_bytes": 208606,
+      "durada_segons": 13.035063
+    },
+    {
+      "fitxer": "capitol_16.mp3",
+      "titol": "DK 90",
+      "mida_bytes": 128358,
+      "durada_segons": 8.019563
+    },
+    {
+      "fitxer": "capitol_17.mp3",
+      "titol": "DK 91",
+      "mida_bytes": 57305,
+      "durada_segons": 3.57875
+    },
+    {
+      "fitxer": "capitol_18.mp3",
+      "titol": "DK 101",
+      "mida_bytes": 31809,
+      "durada_segons": 1.98525
+    },
+    {
+      "fitxer": "capitol_19.mp3",
+      "titol": "DK 112",
+      "mida_bytes": 127104,
+      "durada_segons": 7.941188
+    },
+    {
+      "fitxer": "capitol_20.mp3",
+      "titol": "DK 114",
+      "mida_bytes": 141733,
+      "durada_segons": 8.8555
+    },
+    {
+      "fitxer": "capitol_21.mp3",
+      "titol": "DK 118",
+      "mida_bytes": 67336,
+      "durada_segons": 4.205688
+    },
+    {
+      "fitxer": "capitol_22.mp3",
+      "titol": "DK 119",
+      "mida_bytes": 52707,
+      "durada_segons": 3.291375
+    },
+    {
+      "fitxer": "capitol_23.mp3",
+      "titol": "DK 121",
+      "mida_bytes": 112894,
+      "durada_segons": 7.053063
+    },
+    {
+      "fitxer": "capitol_24.mp3",
+      "titol": "DK 123",
+      "mida_bytes": 40587,
+      "durada_segons": 2.533875
+    },
+    {
+      "fitxer": "capitol_25.mp3",
+      "titol": "DK 125a",
+      "mida_bytes": 43930,
+      "durada_segons": 2.742813
+    },
+    {
+      "fitxer": "capitol_26.mp3",
+      "titol": "DK 126",
+      "mida_bytes": 102445,
+      "durada_segons": 6.4
+    }
+  ],
+  "generacio": {
+    "timestamp": "2026-06-03T16:40:08.228968+00:00",
+    "durada_generacio_segons": 67.6,
+    "cost_estimat_usd": 0.8112
+  }
+}
