@@ -1,9 +1,0 @@
-{
-  "id": "fix-translate-august-strindberg-froken-julie-1779033614",
-  "type": "fix-translate",
-  "priority": 1,
-  "max_duration": 3600,
-  "obra": "obres/teatre/august-strindberg/froken-julie",
-  "instruction": "cd ~/biblioteca-universal-arion && Verifica que obres/teatre/august-strindberg/froken-julie/original.md existeix i te contingut real. Si existeix, executa: python3 sistema/traduccio/traduir_pipeline.py --autor 'august-strindberg' --obra 'froken-julie'. Si l'original no existeix, primer executa cercador_fonts_v2.py. Despres del pipeline, verifica que traduccio.md te contingut i fa sentit. git add -A obres/teatre/august-strindberg/froken-julie/ && git commit -m 'fix: traduir/completar august-strindberg/froken-julie' && git push",
-  "created": "2026-05-17T18:00:14+02:00"
-}
