@@ -1,0 +1,38 @@
+{
+  "obra": {
+    "titol": "El Sutra del Cor de la Perfecció de la Saviesa",
+    "autor": "Anònim (tradició budista)",
+    "genere": "filosòfic-espiritual"
+  },
+  "audiollibre": {
+    "fitxer_complet": "audiollibre_complet.mp3",
+    "durada_segons": 124.734694,
+    "durada_format": "2m 04s",
+    "mida_bytes": 1996216,
+    "mida_mb": 1.9,
+    "num_capitols": 2,
+    "total_chunks": 2,
+    "veu": "George",
+    "model": "tts-elevenlabs-turbo-v2-5",
+    "idioma": "ca"
+  },
+  "capitols": [
+    {
+      "fitxer": "capitol_01.mp3",
+      "titol": "Notes del traductor",
+      "mida_bytes": 367013,
+      "durada_segons": 22.9355
+    },
+    {
+      "fitxer": "capitol_02.mp3",
+      "titol": "Sobre la traducció",
+      "mida_bytes": 1628831,
+      "durada_segons": 101.799125
+    }
+  ],
+  "generacio": {
+    "timestamp": "2026-06-03T16:40:48.793641+00:00",
+    "durada_generacio_segons": 8.7,
+    "cost_estimat_usd": 0.0048
+  }
+}
