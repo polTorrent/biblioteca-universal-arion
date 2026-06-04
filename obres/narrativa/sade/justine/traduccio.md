@@ -604,3 +604,17 @@ Sí, Constança, és a tu que adreço aquesta Obra; a la vegada exemple i honor 
 El designi d'aquesta Novel·la [no tan Novel·la com hom pensaria] és, sens dubte, nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria d'estar hom tip!
 
 Però mostrar arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; presentar una desventurada que erra d'infortuni en infortuni, joguina de la malvadesa, blanc de totes les dissolucions, exposada als gustos més bàrbars i més monstruosos, atabalada pels sofismes més agosarats i especiosos, a mercè de les seducci­ons més hàbils i dels suborns més irresistibles; sense tenir per oposar a tants revessos, a tants flagells, per repel·lir tanta corrupció, altra cosa que una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més agosarades, les situacions més extraordinàries, les màximes més aterradores, les pinzellades més enèrgiques, amb l'únic propòsit d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, s'ha de convenir, assolir la fita per un camí ben poc fressat fins ara.
+
+Hauré reeixit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després de llegir Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim em fan orgullosa d'estimar la Virtut! Com és sublime entre les llàgrimes! Com els infortunis l'embelleixen!»
+
+Oh, Constance! Que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria desenvolupar els mitjans dels quals la Providència se serveix per assolir les fites que es proposa sobre l'home, i traçar, d'acord amb això, alguns plans de conducta que poguessin fer conèixer a aquest desventurat individu bípede la manera en què cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual se li donen vint noms diferents, sense haver aconseguit encara ni conèixer-la ni definir-la.
