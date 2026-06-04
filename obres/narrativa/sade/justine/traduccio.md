@@ -731,3 +731,5 @@ A casa dels Llibreters Associats.
 
 
 A LA MEVA BONA AMIGA.
+
+Sí, Constance, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i millor il·lustrat, només a tu pertoca conèixer la dolçor de les llàgrimes que arrenca la Virtut malaurada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense parar amb les teves accions i els teus discursos, no temo gens per a tu els que ha fet necessaris en aquestes Memòries el gènere dels personatges establerts; el cinisme d'alguns trets (suavitzats, no obstant, tant com s'ha pogut) tampoc no t'espantarà; és el Vici qui, gemegant d'ésser descobert, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf fou obra de bigots; el de Justine serà obra dels llibertins, poc me'ls temo: els meus motius, un cop desvelats per tu, no seran pas repudiats; la teva opinió em basta per a la meva glòria, i havent-te plagut, hauré de plaure universalment, o consolar-me de totes les censures.
