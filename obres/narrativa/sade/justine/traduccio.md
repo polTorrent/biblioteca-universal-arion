@@ -737,3 +737,17 @@ Sí, Constance, és a tu que adreço aquesta Obra; alhora exemple i honor del te
 El designi d'aquesta Novel·la [no tan Novel·la com hom creuria] és, sens dubte, nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal: heus aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria hom d'estar fart!
 
 Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; mostrar una dissortada que erra de desgràcia en desgràcia, joguina de la malvestat, blanc de totes les disbauixes, exposada als gustos més bàrbars i més monstruosos, atordida pels sofismes més atrevits i més especiosos, presa de les seduccions més hàbils i de les subornacions més irresistibles; sense tenir per oposar a tants d'infortuns, a tantes plagues, per repel·lir tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge: arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més aterridores, les pinzellades més enèrgiques, amb l'únic propòsit d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut encara; era, s'ha de convenir, assolir la fita per una via fins ara poc transitada.
+
+Ho hauré aconseguit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després de llegir Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim m'enorgulleixen d'estimar la Virtut! Com n'és de sublim enmig de les llàgrimes! Com l'embelleixen els infortuns!»
+
+Oh, Constance! que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria la de desenvolupar els mitjans dels quals se serveix la Providència per a assolir les finalitats que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest miserable individu bípede la manera en què cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual es donen vint noms diferents, sense haver aconseguit encara ni conèixer-la ni definir-la.
