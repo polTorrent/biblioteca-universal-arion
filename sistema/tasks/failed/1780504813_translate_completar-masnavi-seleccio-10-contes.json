@@ -1,0 +1,16 @@
+{
+  "id": "1780504813_translate_completar-masnavi-seleccio-10-contes",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducci\u00f3 de 'masnavi-seleccio-10-contes'. L'original t\u00e9 127052 paraules per\u00f2 la traducci\u00f3 nom\u00e9s en t\u00e9 39861 (31.4% completat). Continua des d'on s'ha quedat seguint EXACTAMENT l'estil existent. IMPORTANT: Verifica amb 'python3 scripts/verificar_traduccio.py' abans de finalitzar.",
+  "metadata": {
+    "obra_path": "/home/jo/biblioteca-universal-arion/obres/oriental/rumi/masnavi-seleccio-10-contes",
+    "original_words": 127052,
+    "traduccio_words": 39861,
+    "ratio": 31.4,
+    "slug": "masnavi-seleccio-10-contes"
+  },
+  "retries": 2,
+  "last_error": "exit code 1 after 3 retries"
+}
