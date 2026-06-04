@@ -1,10 +1,10 @@
 {
     "pid": 10022,
     "mode": "hybrid",
-    "current_task": "1780502472_improve_millora-contnua-de-the-tempest-la-tempes",
-    "diem_balance": "3.5569733224856144",
-    "uptime_seconds": 2052,
-    "tasks_completed": 7,
-    "tasks_failed": 0,
-    "last_heartbeat": "2026-06-04T14:34:14Z"
+    "current_task": "1780502470_improve_millora-contnua-de-el-retrat-oval-a-obre",
+    "diem_balance": "2.3134663024856152",
+    "uptime_seconds": 2202,
+    "tasks_completed": 9,
+    "tasks_failed": 1,
+    "last_heartbeat": "2026-06-04T14:36:44Z"
 }
