@@ -498,3 +498,61 @@ En aquella època fatídica per a la virtut de dues noies joves, tot els mancà 
 Madame de Lorsange, que llavors s'anomenava Juliette, i el caràcter i l'esperit de la qual eren, amb ben poca diferència, tan formats com als trenta anys —edat que tenia en el moment de la història que anem a narrar—, no semblà sensible sinó al plaer de ser lliure, sense reflexionar ni un instant sobre els cruels revessos que havien trencat les seves cadenes. Pel que fa a Justine, que tenia, com hem dit, dotze anys, era d'un caràcter fosc i melancòlic, que li feia sentir amb molta més agudesa tota l'horror de la seva situació. Dotada d'una tendresa i d'una sensibilitat sorprenents, en lloc de l'art i la finesa de la seva germana, no tenia sinó una ingenuïtat, una candor que l'havien de fer caure en moltes trampes. A tantes qualitats, aquesta noia hi afegia una fesomia dolça, absolutament diferent d'aquella amb la qual la natura havia embellida Juliette; tanta astúcia, manyeria i coqueteria com hom veia en els trets de l'una, tanta pudicícia, decència i timidesa s'admiraven en els de l'altra; un aire de Verge, uns grans ulls blaus, plens d'ànima i d'interès, una pell enlluernadora, una cintura àgil i flexible, una veu commovadora, unes dents d'ivori i els cabells rossos més bells: tal és l'esbós d'aquesta encantadora cadeta, les gràcies ingènues i els trets delicats de la qual estan per damunt dels nostres pinzells.
 
 Hom els donà vint-i-quatre hores a l'una i a l'altra per abandonar el Convent, deixant-les al seu càrrec de cercar-se la vida, amb els seus cent escuts, allà on els semblés bo. Juliette, encantada de ser la seva pròpia mestressa, volgué un moment eixugar les llàgrimes de Justine, però en veure que no ho aconseguiria, es posà a renyar-la en lloc de consolar-la: li retragué la seva sensibilitat; li digué, amb una filosofia molt per damunt de la seva edat, que en aquest món no calia afligir-se sinó per allò que ens afectés personalment; que era possible trobar en un mateix sensacions físiques d'una voluptat prou picant per extingir totes les afeccions morals el xoc de les quals pogués resultar dolorós; que aquest procediment es tornava tant més essencial de posar en pràctica, com que la veritable saviesa consistia infinitament més a doblar la suma dels propis plaers que a multiplicar la de les penes; que no hi havia res, en una paraula, que no calgués fer per embossar en un mateix aquella pèrfida sensibilitat de la qual només els altres en treien profit, mentre que a nosaltres no ens reportava sinó angoixes. Però és difícil endurir un bon cor: resisteix als raonaments d'un cap mal fet, i les seves joies el consolen dels falsos llampecs del bell enginy.
+
+Qui sap, quan el Cel ens
+colpeja amb els seus cops,
+Si la major desgràcia no és
+un bé per a nosaltres?
+*Èdip a casa d'Admet.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! la prosperitat del Crim és com el llamp, els focs enganyosos del qual no embelleixen l'atmosfera sinó un instant, per precipitar tot seguit als abismes de la mort el desventurat que han enlluernant.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i millor il·lustrat, només a tu pertoca conèixer la dolçor de les llàgrimes que arrenca la Virtut malaurada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense treva amb les teves accions i els teus discursos, no temo gens per a tu els que ha fet necessaris en aquestes Memòries el gènere dels personatges establerts; el cinisme d'alguns traços (suavitzats tanmateix tant com s'ha pogut) tampoc no t'espantarà; és el Vici qui, gemegant d'ésser descobert, crida escàndol tan aviat com hom l'ataca. El procés del Tartuf va ser obra de fanàtics; el de Justine serà obra dels llibertins, i poc els temo: els meus motius, revelats per tu, no seran pas desautoritzats; la teva opinió em basta per a la meva glòria, i havent-te complagut, haig o de plaure universalment, o de consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la [no tan Novel·la com hom podria creure] és sens dubte nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal: vet aquí el curs ordinari de totes les Obres d'aquesta mena; no n'hauríem d'estar tips!
+
+Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis, mostrar una infortunada que vaga d'infortuni en infortuni; joguina de la vilania; blanc de totes les depravacions; exposada als gustos més bàrbars i més monstruosos; atabalada pels sofismes més atrevits i especiosos; presa de les seduccions més hàbils, dels suborns més irresistibles; no tenint per oposar a tants revessos, a tants flagells, per rebutjar tanta corrupció, sinó una ànima sensible, un enginy natural i molt de coratge: arriscar, en una paraula, les pintures més audacioses, les situacions més extraordinàries, les màximes més esgarrifoses, les pinzellades més enèrgiques, amb l'únic propòsit d'extreure de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, hem de convenir-ho, assolir el fi per una via poc trescada fins ara.
+
+Hauré reeixit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim m'enorgulleixen d'estimar la Virtut! Com és sublime entre les llàgrimes! Com els infortunis l'embelleixen!»
+
+Oh, Constance! Que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'OBRA mestra de la filosofia seria desenvolupar els mitjans de què la Providència se serveix per assolir els fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest infeliç individu bípede la manera com cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquella fatalitat a la qual hom dóna vint noms diferents, sense haver arribat encara, ni a conèixer-la, ni a definir-la.

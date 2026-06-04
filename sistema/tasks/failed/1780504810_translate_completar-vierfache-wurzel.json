@@ -1,0 +1,16 @@
+{
+  "id": "1780504810_translate_completar-vierfache-wurzel",
+  "type": "translate",
+  "priority": 1,
+  "max_time": 90,
+  "instruction": "COMPLETA la traducci\u00f3 de 'vierfache-wurzel'. L'original t\u00e9 54414 paraules per\u00f2 la traducci\u00f3 nom\u00e9s en t\u00e9 16893 (31.0% completat). Continua des d'on s'ha quedat seguint EXACTAMENT l'estil existent. IMPORTANT: Verifica amb 'python3 scripts/verificar_traduccio.py' abans de finalitzar.",
+  "metadata": {
+    "obra_path": "/home/jo/biblioteca-universal-arion/obres/filosofia/schopenhauer/vierfache-wurzel",
+    "original_words": 54414,
+    "traduccio_words": 16893,
+    "ratio": 31.0,
+    "slug": "vierfache-wurzel"
+  },
+  "retries": 2,
+  "last_error": "exit code 1 after 3 retries"
+}
