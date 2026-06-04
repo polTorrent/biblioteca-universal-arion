@@ -695,3 +695,39 @@ La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la for
 Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un riquíssim banquer de París, havia estat educada juntament amb una germana de nom Justine, tres anys més jove que ella, en una de les abadies més cèlebres d'aquella capital, on fins a les edats de dotze i quinze anys, cap consell, cap mestre, cap llibre, cap talent no havia estat refusat ni a l'una ni a l'altra de les dues germanes.
 
 En aquella època fatal per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa va precipitar llur pare en una situació tan cruel que en morí de pena. La seva muller el seguí al sepulcre un mes després. Dos parents freds i distants deliberaren sobre el que farien de les joves òrfenes; la part que els corresponia d'una successió absorbida pels deutes pujava a cent escuts per a cadascuna. Com que ningú no es volia fer-ne càrrec, els obriren la porta del convent, els lliuraren la dot i les deixaren lliures de convertir-se en allò que volguessin.
+
+Qui sap, quan el Cel ens colpeja amb els seus cops,
+Si la desgràcia major no és un bé per a nosaltres?
+*Èd. a casa d'Admet.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyosos del qual no embelleixen sinó un instant l'atmosfera, per precipitar en els abismes de la mort el desgraciat que han enlluernit.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
