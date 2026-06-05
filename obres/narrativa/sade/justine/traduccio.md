@@ -259,3 +259,78 @@ La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la for
 Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un molt poderós banquer de París, havia estat educada amb una germana anomenada Justine, tres anys més jove que ella, en una de les abadies més cèlebres d'aquella capital, on fins a l'edat de dotze i quinze anys, cap consell, cap mestre, cap llibre, cap talent no havia estat negat ni a l'una ni a l'altra d'aquelles dues germanes.
 
 En aquella època fatal per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que en morí de pena. La seva muller el seguí al sepulcre un mes després. Dos parents freds i allunyats deliberaren sobre el que farien de les joves òrfenes; la seva part d'una successió absorbida pels creditors s'elevava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del convent, els lliuraren la seva dot i les deixaren lliures de fer-se el que volguessin.
+
+Qui sap, quan el Cel ens colpeja amb els seus cops,
+Si la desgràcia més gran no és un bé per a nosaltres?
+Èd. a casa d'Admet.
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyadors del qual no embelleixen sinó un instant l'atmosfera, per precipitar als abismes de la mort el desgraciat que han enluernat.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i millor il·lustrat, només a tu pertoca conèixer la dolçor de les llàgrimes que arrenca la Virtut desgraciada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense pausa amb les teves accions i els teus discursos, no temo pas per a tu els que la mena dels personatges d'aquestes Memòries ha fet necessaris; el cinisme d'alguns traços (suavitzats tanmateix tant com ha estat possible) tampoc no t'espantarà; és el Vici qui, gemegant de veure's descobert, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf fou obra de beatos; el de Justine serà obra de llibertins, i poc me'ls temo: els meus motius, posats en llum per tu, no seran pas refusats; la teva opinió em basta per a la meva glòria, i havent-te complacut, hauré d'agradar universalment, o consolar-me de totes les censures.
+
+El propòsit d'aquesta Novel·la [no tan de novel·la com hom creuría] és sens dubte nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria hom d'estar ja fart!
+
+Però oferir pertot el Vici triomfant i la Virtut víctima dels seus sacrificis, mostrar una infortunada que erra de desgràcia en desgràcia; joguina de la malvadesa; plastró de totes les desbauixes; blanc dels gustos més bàrbars i més monstruosos; atordida pels sofismes més audaços i més especiosos; presa de les seduccions més hàbils, dels suborns més irresistibles; sense tenir res per oposar a tants revessos, a tants flagells, per rebutjar tanta corrupció, sinó una ànima sensible, un enginy natural i molt de coratge: arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més esgarrifoses, les pinzellades més enèrgiques, amb l'únic propòsit d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era —cal convenir-ho— assolir el fi per un camí fins ara poc transitat.
+
+Hauré reeixit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, com em fan sentir orgullosa d'estimar la Virtut, aquests quadres del Crim! Com n'és de sublim entre les llàgrimes! Com l'embelleixen els infortunis!»
+
+Oh, Constance! Que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'OBRA mestra de la filosofia seria desenvolupar els mitjans dels quals se serveix la Providència per arribar als fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest malhaurat individu bípede la manera en què cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estrambòtics d'aquella fatalitat a la qual se li donen vint noms diferents, sense haver-se arribat encara ni a conèixer-la ni a definir-la.
+
+The user wants me to translate a passage from Sade's "Justine ou les Malheurs de la Vertu" into Catalan. Let me analyze the text carefully and translate it following the instructions: preserve the narrator's voice, natural dialogues, faithful narrative rhythm, and use the provided glossary terms.
+
+Let me translate this carefully:
+
+"Si, plein de respect pour nos conventions sociales, & ne s'écartant jamais des digues qu'elles nous imposent, il arrive malgré cela, que nous n'ayions rencontré que des ronces, quand les méchans ne cueillaient que des roses, des gens privés d'un fonds de vertus assez constaté pour se mettre au-dessus de ces remarques, ne calculeront-ils pas alors qu'il vaut mieux s'abandonner au torrent que d'y résister?"
+ 
+Now I'm working through the Catalan translation, refining each phrase to capture Sade's philosophical tone and the moral paradox he's presenting about virtue and vice. Continuant avec la traduction, je vois que le passage explore comment les gens corrompus rationalisent l'abandon de la vertu en arguant qu'elle est trop faible face au vice dans une société entièrement dégradée. Puis le texte commence à introduire une référence à l'ange Jesrad de Zadig, suggérant une perspective plus sophistiquée sur cette question morale. The argument continues with the dangerous sophism that virtue suffering misfortune while vice prospers means it's better to align with the wicked who succeed rather than the virtuous who fail. I'm recognizing that it's crucial to counter these false philosophical arguments by showing how examples of unfortunate virtue, when presented to a corrupted soul that still retains some good principles, can redirect that soul back toward goodness just as effectively as demonstrating the rewards of virtue. drà tenir-se remordiments d'haver establert un fet del qual resultarà per al savi que llegeix amb profit la lliçó tan útil de la submissió als ordres de la Providència, i l'advertiment fatal que sovint és per a nosaltres reconduir-nos als nostres deures que el Cel colpeja al costat nostre l'ésser que ens sembla millor haver complert els seus.
+
+Ara estic revisant l'estructura retòrica més atentament - Sade utilitza una sèrie de preguntes retòriques que necessiten preservar-se en català, i he de tenir cura amb paraules com "ronces" per mantenir la veu elaborada i periòdica del text original. I'm settling on "espines" for consistency with the earlier translation of "camí espinós," then moving into the full translated passage where the virtuous person questions whether it's worth resisting vice when virtue seems powerless against it in a corrupt age. els nostres deures. Així doncs, fins i tot quan la virtut pateix i el vici prospera, aquesta aparent injustícia serveix un propòsit més elevat: ensenya al lector savi la importància de la submissió a la Providència i el recordatori que les adversitats sovint ens recondueixen al camí correcte. Checking the feminine agreement on "palmes" and making sure the Enlightenment reference comes through clearly with "els llums" — the metaphorical rewards and the knowledge being abused both need to land properly in Catalan. I'm working through the phrasing of "tel ou tel" - it should be "tal o qual" in Catalan - and reconsidering how "de préférence" functions in this context, since it's not about preference but rather about whether someone is good or bad as it relates to the general plan. I need to settle on consistent terminology for the translation—"malvat" works better than "dolent" for "méchant" here. Now I'm working through "abusant dels llums que han adquirit," where "llums" refers to Enlightenment knowledge, and I need to determine whether it should be "els llums" or "les llums" in Catalan, since "llum" is feminine.
+
+Tals són els sentiments que dirigiran els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència per als sistemes erronis posats en boca de diversos dels nostres personatges, i per a les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.
+
+La comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la fortuna de les quals és obra d'una figura agradable i de molta inconducta, i els títols de les quals, per pomposos que siguin, no es troben sinó als arxius de Citera, forjats per la impertinència que se'ls atribueix i sostinguts per la credulitat estúpida que els atorga; morena, de bella talla, amb uns ulls d'una expressió singular; dotada d'aquella incredulitat de moda que, prestant un atractiu de més a les passions, fa cercar amb més afany les dones en qui se la pressuposa; una mica maliciosa, sense cap principi, sense veure mal en res, i amb tot no prou depravació en el cor per haver-n'hi apagat la sensibilitat; orgullosa, llibertina: tal era la senyora de Lorsange,
+
+Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un riquíssim banquer de París, havia estat criada juntament amb una germana de nom Justine, tres anys menor que ella, en una de les abadies més cèlebres d'aquella capital, on fins als dotze i als quinze anys, ni consells, ni mestres, ni llibres, ni talents no havien estat negats a cap de les dues germanes.
+
+En aquella època funesta per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que en morí de pesar. La seva muller el seguí al sepulcre un mes després. Dos parents freds i allunyats deliberaren sobre el que farien de les joves òrfenes; la part que els corresponia d'una successió absorbida pels creditors s'elevava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del convent, els tornaren llur dot i les deixaren lliures de convertir-se en el que volguessin.
+
+La senyora de Lorsange, que s'anomenava aleshores Juliette, i el caràcter i l'esperit de la qual estaven, amb ben poca diferència, tan formats com als trenta anys —edat que atenyia en el moment de la història que ara anem a relatar—, no semblà sensible sinó al plaer d'ésser lliure, sense reflexionar un sol instant sobre els cruels revessos que trencaven les seves cadenes. Pel que fa a Justine, de dotze anys com hem dit, era d'un caràcter fosc i melancòlic que li féu sentir molt més vívament tot l'horror de la seva situació. Dotada d'una tendresa, d'una sensibilitat sorprenent, en lloc de l'art i la finesa de la seva germana no tenia sinó una ingenuïtat, una candidesa que l'havien de fer caure en ben molts paranys. A tantes qualitats, aquesta noia n'afegia una fesomia dolça, absolutament diferent d'aquella de la qual la Natura havia embellit Juliette; tant com s'hi veia d'artifici, de maneig i de coqueteria en els trets de l'una, tant s'hi admirava de pudor, de decència i de timidesa en l'altra; un aire de Verge, uns grans ulls blaus plens d'ànima i d'interès, una pell enlluernadora, una talla àgil i flexible, una veu commovadora, unes dents d'ivori i els cabells rossos més bells: heus aquí l'esbós d'aquesta encantadora petita, les gràcies ingènues i els trets delicats de la qual estan molt per damunt dels nostres pinzells.
