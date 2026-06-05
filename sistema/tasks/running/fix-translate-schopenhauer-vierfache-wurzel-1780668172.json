@@ -7,5 +7,5 @@
   "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"obres/filosofia/schopenhauer/vierfache-wurzel/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor 'schopenhauer' --obra 'vierfache-wurzel' --output \"obres/filosofia/schopenhauer/vierfache-wurzel/original.md\" 2>&1; fi && if [ -s \"obres/filosofia/schopenhauer/vierfache-wurzel/original.md\" ]; then python3 sistema/traduccio/traduir_venice.py --ruta \"obres/filosofia/schopenhauer/vierfache-wurzel\" 2>&1; fi && git add -A \"obres/filosofia/schopenhauer/vierfache-wurzel/\" && git commit -m 'fix: traduir/completar schopenhauer/vierfache-wurzel' && git push",
   "created": "2026-06-05T16:02:52+02:00",
   "retries": 0,
-  "last_error": "timeout after 901s (sessi\u00f3 parcial, progr\u00e9s guardat)"
+  "last_error": "timeout after 900s (sessi\u00f3 parcial, progr\u00e9s guardat)"
 }
