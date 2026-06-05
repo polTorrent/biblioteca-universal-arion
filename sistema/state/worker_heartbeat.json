@@ -1,10 +1,10 @@
 {
-    "pid": 19811,
+    "pid": 25367,
     "mode": "hybrid",
-    "current_task": "1780502472_improve_millora-contnua-de-the-tempest-la-tempes",
-    "diem_balance": "11.533704022485615",
-    "uptime_seconds": 6,
+    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1780668172",
+    "diem_balance": "11.320908332485615",
+    "uptime_seconds": 5,
     "tasks_completed": 0,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-06-05T14:00:09Z"
+    "last_heartbeat": "2026-06-05T14:03:10Z"
 }
