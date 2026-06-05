@@ -1,0 +1,22 @@
+{
+  "id": "1780502472_improve_millora-contnua-de-froken-julie-la-senyo",
+  "type": "improve",
+  "priority": 3,
+  "created_at": "2026-06-03T16:01:13Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "MILLORA CONTÍNUA de 'froken-julie-la-senyoreta-julia' a obres/teatre/august-strindberg/froken-julie-la-senyoreta-julia (puntuació actual: 8.1/10, improvement_score: 45). Problemes detectats: Validació antiga (94 dies); Glossari pobre (1 entrades); No apareix a la web (docs/index.html). Accions: Ampliar glossari.yml (mínim 5 entrades significatives) | Regenerar web: python3 sistema/web/build.py. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: froken-julie-la-senyoreta-julia\" && git push",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null,
+  "last_error": "No changes detected",
+  "retries": 0,
+  "regen_count": 1,
+  "recovered": true,
+  "updated_at": "2026-06-05T15:07:34.688459Z"
+}

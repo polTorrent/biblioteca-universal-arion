@@ -468,3 +468,80 @@ Juliette, recorrent a altres recursos, digué llavors a la seva germana que, amb
 Justine va sentir horror davant d'aquells discursos; digué que preferia la mort a la ignomínia, i, per més instàncies que li féu la seva germana, es negà constantment a allotjar-s'hi des del moment en què la veié resolta a una conducta que la feia estremir.
 
 Les dues noies es separaren, doncs, sense cap promesa de retrobament, atès que llurs intencions resultaven tan dissemblants. Juliette, que anava a convertir-se —pretenia ella— en una gran dama, ¿hauria de consentir a rebre una noieta les inclinacions virtuoses però baixes de la qual serien capaces de deshonrar-la? I, de la seva banda, ¿hauria Justine d'arriscar els seus costums en la companyia d'una criatura perversa que estava a punt de convertir-se en víctima de la cràpula i de la disbauxa pública? Totes dues es digueren, doncs, un adeu etern, i totes dues abandonaren el Convent l'endemà.
+
+Qui sap, quan el Cel ens
+colpeja amb els seus cops,
+si el major infortuni
+no és un bé per a nosaltres?
+*Èd. a casa d'Admete.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyadors del qual no embelleixen per un instant l'atmosfera sinó per a precipitar als abismes de la mort el desgraciat que han enlluernant.
+
+
+* * *
+
+
+A HOLANDA,
+
+Als Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constance, és a tu que adreço aquesta Obra; exemple i honor alhora del teu sexe, reunint en l'ànima més sensible l'esperit més just i més il·lustrat, només a tu pertany de conèixer la dolçor de les llàgrimes que arrenca la Virtut malaurada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense treva amb les teves accions i amb els teus discursos, no temo pas per a tu allò que el gènere dels personatges establerts ha fet necessari en aquestes Memòries; el cinisme d'alguns traços (suavitzats, amb tot, tant com ha estat possible) no t'atemorirà tampoc; és el Vici qui, gemegant d'ésser desvelat, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf fou obra dels beatos; el de Justine serà obra dels libertins, i ben poc els temo: els meus motius, desvelats per tu, no en seran pas desautoritzats; la teva opinió em basta per a la glòria, i havent-te complagut, dec o complaure universalment, o consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la [no tan Novel·la com hom podria creure] és sens dubte nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; ¿no n'hauria hom d'estar ben fart!
+
+Però mostrar arreu el Vici triomfant i la Virtut víctima dels seus sacrificis; presentar una infortunada que erra de desgràcia en desgràcia, joguina de la malvestat, blanc de totes les llibertinades, objecte dels gustos més bàrbars i més monstruosos, atordida pels sofismes més audaços i especiosos, presa de les seduccions més hàbils i dels suborns més irresistibles; sense tenir per oposar a tants revessos, a tants flagells, per repel·lir tanta corrupció, sinó una ànima sensible, un enginy natural i molt de coratge: arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més esgarrifoses, les pinzellades més enèrgiques, amb la sola mira d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai; era, en convindrem, arribar a la meta per un camí poc trescat fins ara.
+
+Ho hauré aconseguit, Constance? Una llàgrima dels teus ulls determinarà el meu triomf? Després de llegir Justine, en una paraula, diràs: «Oh, com em fan orgullosa d'estimar la Virtut, aquests quadres del Crim! Com és sublim en les llàgrimes! Com l'embelleixen els infortunis!»
+
+Oh, Constance! Que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria desenvolupar els mitjans dels quals la Providència es val per arribar als fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest malhaurat individu bípede la manera com cal que camini en la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual es donen vint noms diferents, sense haver aconseguit encara ni conèixer-la ni definir-la.
+
+The user wants me to translate this passage from Sade's "Justine ou les Malheurs de la Vertu" into Catalan. Let me carefully translate it, preserving the narrator's voice, the philosophical tone, the rhythm, and using the glossary terms provided.
+
+Let me analyze the text carefully:
+
+The passage is a philosophical argument about virtue and vice, asking whether people who follow social conventions but only encounter thorns while the wicked gather roses might not calculate that it's better to abandon themselves to the current than to resist it. It uses the reference to Voltaire's angel Jesrad from Zadig, and argues that it's important to prevent these dangerous sophisms of false philosophy.
+
+
+Now I'm working through the translation line by line, rendering the French conditional structure and the contrast between virtue and vice into Catalan while maintaining Sade's rhetorical force and the philosophical weight of the argument. They're also suggesting that those with more education might abuse their knowledge, citing Zadig's angel Jesrad to argue that since all evil produces some good, they can justify surrendering to vice as just another means of creating good. I'm working through the philosophical argument that examples of virtuous suffering, when presented to a corrupted soul that still retains some good principles, can redirect it toward goodness just as effectively as displaying the brightest rewards of virtue would.
+
+Now I'm grappling with the tension between depicting the cruel accumulation of misfortunes befalling the virtuous woman while the vicious prosper, and questioning whether the moral good that emerges from showing these injustices justifies presenting such a bleak tableau. Continuant amb la reflexió sobre com les persones virtuoses que no veuen recompensa pels seus esforços podrien arribar a qüestionar si val la pena mantenir la virtut quan són massa febles per resistir el vici en una societat completament corrompuda. The key insight is that showing virtuous people suffering can actually guide corrupted souls back toward goodness just as effectively as displaying virtue rewarded. Yes, it's painful to depict misfortune befalling the virtuous woman while the wicked prosper, but if this tragic tableau ultimately teaches the reader submission to Providence and reminds them of their duties, then presenting these harsh realities serves a greater moral purpose. Estoy revisando la concordancia verbal en la cláusula relativa—el sujeto plural "aquells que" requiere que el verbo esté en plural, así que debería ser "esclafin o mortifiquin". Aunque en catalán las cláusulas relativas normalmente usan indicativo, aquí el antecedente es específico, no indefinido, así que el indicativo es lo correcto. Necesito asegurarme de que la construcción final sea clara y mantenga el tono elaborado de Sade. I'm settling on "aquells que esclafin o mortifiquen" for the relative clause, then working through "aura-t-on des remords" — "hom en tindrà remordiment?" feels more natural than the alternatives. For "l'avertissement fatal," I'm weighing "advertència" against "admonició," both valid but "advertència" being more commonly used. I'm continuing to work through the rhetorical arguments, exploring how the morally weak might rationalize their corruption—whether by claiming virtue is futile against vice in a depraved age, or by invoking philosophical arguments about the equivalence of good and evil, suggesting that since misfortune follows virtue and prosperity follows crime, it's ultimately indifferent to nature which path one takes. Wondering if it's justified to present these tragic circumstances—whether the reader might be indignant about establishing such a scenario. But if wisdom emerges from it, if the lesson teaches submission to Providence and shows how suffering can redirect us toward our duties, then perhaps the cost is worth bearing. Let me verify the translation choices are holding up well throughout.
+
+Tals són els sentiments que han de guiar els nostres treballs, i és en consideració d'aquests motius que demanem al lector indulgència per als sistemes erronis que posem en boca d'alguns dels nostres personatges, i per a les situacions de vegades una mica fortes que, per amor a la veritat, hem hagut de posar davant dels seus ulls.
+
+La senyora comtessa de Lorsange era una d'aquelles sacerdotesses de Venus la fortuna de les quals és obra d'un bonic rostre i de molta dissolució, i els títols de les quals, per pomposos que siguin, no es troben sinó en els arxius de Citera, forjats per la impertinència de qui els pren i sostinguts per la beneita credulitat de qui els atorga; morena, de bella figura, amb uns ulls d'expressió singular; aquella incredulitat de moda que, prestant un atractiu de més a les passions, fa que hom cerqui amb major zel les dones en qui se la sospita; una mica maliciosa, sense cap principi, sense trobar mal en res, i amb tot sense prou depravació al cor per haver-ne apagat la sensibilitat; orgullosa, llibertina; tal era la senyora de Lorsange,
+
+Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un opulentíssim Banquer de París, havia estat criada amb una germana de nom Justine, tres anys més jove que ella, en una de les més cèlebres Abadies d'aquella capital, on fins a l'edat de dotze i quinze anys, cap consell, cap mestre, cap llibre, cap talent no havia estat negat ni a l'una ni a l'altra d'aquelles dues germanes.
+
+En aquella època funesta per a la virtut de dues joves noies, tot els faltà en un sol dia: una fallida espantosa precipità el seu pare en una situació tan cruel que en morí de pena. La seva muller el seguí al sepulcre un mes després. Dos parents freds i llunyans deliberaren sobre el que farien de les joves òrfenes; la seva part d'una successió absorbida pels deutes pujava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del Convent, els retornaren la seva dot i les deixaren lliures de ser allò que volguessin.
