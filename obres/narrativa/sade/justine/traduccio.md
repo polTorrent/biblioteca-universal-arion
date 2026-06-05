@@ -334,3 +334,61 @@ Aquesta dona havia rebut, tanmateix, la millor educació; filla d'un riquíssim 
 En aquella època funesta per a la virtut de dues joves, tot els mancà en un sol dia: una fallida espantosa precipità llur pare en una situació tan cruel que en morí de pesar. La seva muller el seguí al sepulcre un mes després. Dos parents freds i allunyats deliberaren sobre el que farien de les joves òrfenes; la part que els corresponia d'una successió absorbida pels creditors s'elevava a cent escuts per a cadascuna. Com que ningú no volia fer-se'n càrrec, els obriren la porta del convent, els tornaren llur dot i les deixaren lliures de convertir-se en el que volguessin.
 
 La senyora de Lorsange, que s'anomenava aleshores Juliette, i el caràcter i l'esperit de la qual estaven, amb ben poca diferència, tan formats com als trenta anys —edat que atenyia en el moment de la història que ara anem a relatar—, no semblà sensible sinó al plaer d'ésser lliure, sense reflexionar un sol instant sobre els cruels revessos que trencaven les seves cadenes. Pel que fa a Justine, de dotze anys com hem dit, era d'un caràcter fosc i melancòlic que li féu sentir molt més vívament tot l'horror de la seva situació. Dotada d'una tendresa, d'una sensibilitat sorprenent, en lloc de l'art i la finesa de la seva germana no tenia sinó una ingenuïtat, una candidesa que l'havien de fer caure en ben molts paranys. A tantes qualitats, aquesta noia n'afegia una fesomia dolça, absolutament diferent d'aquella de la qual la Natura havia embellit Juliette; tant com s'hi veia d'artifici, de maneig i de coqueteria en els trets de l'una, tant s'hi admirava de pudor, de decència i de timidesa en l'altra; un aire de Verge, uns grans ulls blaus plens d'ànima i d'interès, una pell enlluernadora, una talla àgil i flexible, una veu commovadora, unes dents d'ivori i els cabells rossos més bells: heus aquí l'esbós d'aquesta encantadora petita, les gràcies ingènues i els trets delicats de la qual estan molt per damunt dels nostres pinzells.
+
+Qui sap, quan el Cel ens
+colpeja amb els seus cops,
+si el més gran infortuni no és
+pas un bé per a nosaltres?
+*Èd. a casa d'Admet.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! la prosperitat del Crim és com el llamp, els focs enganyadors del qual no fan sinó embellir un instant l'atmosfera per precipitar als abismes de la mort el desgraciat que han enlluernats.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constance, és a tu que adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint en l'ànima més sensible l'esperit més just i millor il·lustrat, només a tu t'escau de conèixer la dolçor de les llàgrimes que arrenca la Virtut dissortada. Detestant els sofismes del llibertinatje i de la irreligió, combatent-los sense treva amb les teves accions i els teus discursos, no temo gens per a tu allò que ha exigit en aquestes Memòries el gènere dels personatges establerts; el cinisme d'alguns traços (suavitzats nogensmenys tant com ha estat possible) no t'atemorirà pas tampoc; és el Vici qui, gemegant d'ésser descobert, crida a l'escàndol tan aviat com hom l'ataca. El procés del Tartuf fou fet per bigots; el de Justine serà obra dels llibertins, i poc els temo: els meus motius, revelats per tu, no seran pas desaprovats; la teva opinió em basta per a la meva glòria, i havent-te complaçut, dec o complaure universalment, o consolar-me de totes les censures.
+
+El propòsit d'aquesta Novel·la [no tan Novel·la com hom creuria] és, sens dubte, nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquest gènere; no n'hauria hom d'estar ja tip!
+
+Però oferir arreu el Vici triomfant i la Virtut víctima dels seus sacrificis, mostrar una infortunada errant de desgràcia en desgràcia ; joguina de la maldat ; blanc de totes les llibertinades ; exposada als gustos més bàrbars i més monstruosos ; atabalada pels sofismes més audaços, els més especiosos ; presa de les seduccions més hàbils, dels suborns més irresistibles ; sense tenir per oposar a tants revesos, a tants flagells, per rebutjar tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge : arriscar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més aterridores, les pinzellades més enèrgiques, amb el sol propòsit d'obtenir de tot plegat una de les lliçons de moral més sublims que l'home hagi rebut mai ; era, s'ha de convenir, assolir la meta per un camí poc trepitjat fins ara.
+
+Ho hauré aconseguit, Constança? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, com aquests quadres del Crim em fan orgullosa d'estimar la Virtut! Com és sublim entre les llàgrimes! Com els infortunis l'embelleixen!»
+
+Oh, Constança! Que t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria desenvolupar els mitjans de què la Providència se serveix per arribar als fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest desgraciat individu bípede la manera en la qual cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual hom ha donat vint noms diferents, sense haver aconseguit encara ni conèixer-la ni definir-la.
