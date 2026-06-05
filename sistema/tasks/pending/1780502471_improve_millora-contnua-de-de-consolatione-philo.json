@@ -1,0 +1,22 @@
+{
+  "id": "1780502471_improve_millora-contnua-de-de-consolatione-philo",
+  "type": "improve",
+  "priority": 3,
+  "created_at": "2026-06-03T16:01:11Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "MILLORA CONTÍNUA de 'de-consolatione-philosophiae-llibre-i' a obres/filosofia/boeci/de-consolatione-philosophiae-llibre-i (puntuació actual: 7.0/10, improvement_score: 55). Problemes detectats: Puntuació millorable (7.0/10); Validació envellint (82 dies); Glossari pobre (1 entrades); No apareix a la web (docs/index.html). Accions: Millorar estil/qualitat: python3 sistema/traduccio/traduir_pipeline.py obres/filosofia/boeci/de-consolatione-philosophiae-llibre-i/ --mode millora | Ampliar glossari.yml (mínim 5 entrades significatives) | Regenerar web: python3 sistema/web/build.py. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: de-consolatione-philosophiae-llibre-i\" && git push",
+  "max_duration_minutes": 60,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null,
+  "last_error": "No changes detected",
+  "retries": 0,
+  "regen_count": 1,
+  "recovered": true,
+  "updated_at": "2026-06-05T15:07:34.697898Z"
+}
