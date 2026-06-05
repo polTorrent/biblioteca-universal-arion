@@ -392,3 +392,59 @@ ELS INFORTUNIS
 DE LA VIRTUT.
 
 L'obra mestra de la filosofia seria desenvolupar els mitjans de què la Providència se serveix per arribar als fins que es proposa sobre l'home, i traçar, a partir d'això, alguns plans de conducta que poguessin fer conèixer a aquest desgraciat individu bípede la manera en la qual cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual hom ha donat vint noms diferents, sense haver aconseguit encara ni conèixer-la ni definir-la.
+
+Qui sap, quan el Cel ens
+colpeja amb els seus cops,
+si la desgràcia més gran no és
+un bé per a nosaltres?
+*Èd. a casa d'Admet.*
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! la prosperitat del Crim és com el llamp, els focs traïdors del qual no embelleixen un instant l'atmosfera sinó per precipitar als abismes de la mort el desgraciat que han enlluernат.
+
+
+* * *
+
+
+A HOLANDA,
+A casa dels Llibreters Associats.
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu que adreço aquesta Obra; alhora l'exemple i l'honor del teu sexe, tu que reuneixes a l'ànima més sensible l'esperit més just i més il·lustrat, només a tu pertany de conèixer la dolçor de les llàgrimes que arrenca la Virtut malaurada. Detestant els sofismes del llibertinatje i de la irreligió, i combatent-los sense pausa amb les teves accions i els teus discursos, no temo per a tu allò que el gènere dels personatges establerts ha fet necessari en aquestes Memòries; el cinisme d'alguns esbossos (suavitzats tanmateix tant com s'ha pogut) no t'espantarà pas més; és el Vici qui, gemegant d'ésser desemmascarat, crida a l'escàndol tan bon punt se l'ataca. El procés del Tartuf el feren els bígots; el de Justine serà obra dels llibertins, i poc els temo: els meus motius, revelats per tu, no en seran pas desautoritzats; la teva opinió em basta per a la meva glòria, i, havent-te plagut, hauré o de plaure universalment, o de consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la [no tan Novel·la com hom creuria] és sens dubte nou; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí la marxa ordinària de totes les Obres d'aquesta mena; no n'hauria hom d'estar ja tip!
+
+Però mostrar arreu el Vici triomfant i la Virtut víctima dels seus sacrificis, presentar una infortunada que vaga de desgràcia en desgràcia; joguina de la maldat; blanc de totes les llibertinades; exposada als gusts més bàrbars i monstruosos; atordida pels sofismes més audaços i especiosos; presa de les seduccions més hàbils, de les subornacions més irresistibles; sense tenir res per oposar a tants revessos, a tants flagells, per rebutjar tanta corrupció, sinó una ànima sensible, un esperit natural i molt de coratge: aventurar, en una paraula, les pintures més audaces, les situacions més extraordinàries, les màximes més aterridores, les pinzellades més enèrgiques, amb l'única finalitat d'extreure de tot això una de les lliçons de moral més sublims que l'home hagi rebut fins ara; era, s'ha de convenir, assolir la fita per una via fins llavors ben poc transitada.
+
+Hauré reeixit, Constança? Una llàgrima dels teus ulls determinarà el meu triomf? Després d'haver llegit Justine, en una paraula, diràs: «Oh, fins a quin punt aquests quadres del Crim em fan orgullosa d'estimar la Virtut! Com és sublim entre les llàgrimes! Com l'embelleixen els infortunis!»
+
+Oh Constança! que se t'escapin aquestes paraules, i els meus treballs seran coronats.
+
+JUSTINE,
+
+O
+
+ELS INFORTUNIS
+
+DE LA VIRTUT.
+
+L'obra mestra de la filosofia seria la de desenvolupar els mitjans dels quals la Providència se serveix per arribar als fins que es proposa sobre l'home, i de traçar, d'acord amb això, alguns plans de conducta que poguessin fer conèixer a aquest dissortit individu bípede la manera en què cal que camini per la carrera espinosa de la vida, a fi de prevenir els capricis estranys d'aquesta fatalitat a la qual hom dóna vint noms diferents, sense haver pogut encara ni conèixer-la, ni definir-la.
