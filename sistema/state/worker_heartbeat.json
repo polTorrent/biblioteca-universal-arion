@@ -1,10 +1,10 @@
 {
-    "pid": 25239,
+    "pid": 19562,
     "mode": "hybrid",
-    "current_task": "stopped",
-    "diem_balance": "1.0132192024856153",
-    "uptime_seconds": 4,
-    "tasks_completed": 4,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-06-05T15:14:28Z"
+    "current_task": "fix-translate-sade-justine-1780668172",
+    "diem_balance": "3.7454968824856145",
+    "uptime_seconds": 2227,
+    "tasks_completed": 1,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-06-08T18:09:39Z"
 }

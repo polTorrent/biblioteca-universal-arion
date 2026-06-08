@@ -840,3 +840,41 @@ Després de fer-me un llarg discurs sobre la indiferència del robatori, sobre l
 El senyor du Harpin deixà passar prop d'un mes, és a dir, fins poc abans del final del segon any de la meva estada a casa seva, sense dir-ne ni un mot i sense manifestar el més lleu ressentiment per la negativa que li havia donat, quan un vespre, havent-me retirat a la meva cambra per gaudir-hi d'unes hores de repòs, vaig sentir tot d'una com m'esbotzaven la porta cap endins i vaig veure, no sense esglai, el senyor du Harpin acompanyant un Comissari i quatre Soldats del Guaita fins a la vora del meu llit. «Compliu el vostre deure, Senyor», digué a l'home de justícia, «aquesta dissortada m'ha robat un diamant de mil escuts, el trobareu a la seva cambra o a sobre d'ella, el fet és segur.» «Que jo us he robat, Senyor», vaig dir llançant-me, tota torbada, fora del llit; «jo, just Cel! Ah! Qui sap millor que vós el contrari? Qui ha d'estar més convençut que vós de fins a quin punt aquesta acció em repugna, i de la impossibilitat que l'hagi comesa?» Però du Harpin, fent molt d'enrenou perquè les meves paraules no fossin escoltades, continuà ordenant els escorcolls, i la dissortada anella fou trobada dins del meu matalàs. Amb proves d'aquesta contundència, no hi havia rèplica possible; a l'instant fui agafada, lligada i conduïda a la presó, sense que em fos tan sols possible fer entendre un mot a favor meu.
 
 El procés d'una desgraciada que no té crèdit ni protecció es resol ràpidament en un país on hom creu la virtut incompatible amb la misèria... on l'infortuni és una prova completa contra l'acusat; allí, una prevenció injusta fa creure que aquell que ha pogut cometre el crim, l'ha comès; els sentiments es mesuren segons l'estat en què hom troba el culpable; i tan bon punt l'or o els títols no estableixen la seva innocència, la impossibilitat que pugui ser innocent esdevé llavors demostrada[1].
+
+Qui sap, quan el Cel ens / fereix amb els seus colps, / si la més gran desgràcia / no és per a nosaltres un bé? / Èdip a casa d'Admet.
+
+
+JUSTINE,
+
+
+O
+
+
+ELS INFORTUNIS
+
+
+DE LA VIRTUT.
+
+
+* * *
+
+
+Oh, amic meu! La prosperitat del Crim és com el llamp, els focs enganyosos del qual no embelleixen un instant l'atmosfera sinó per precipitar als abismes de la mort el desgraciat que han enlluernat.
+
+
+* * *
+
+
+A HOLANDA,
+
+A casa dels Llibreters Associats.
+
+
+1791.
+
+
+A LA MEVA BONA AMIGA.
+
+Sí, Constança, és a tu a qui adreço aquesta Obra; alhora exemple i honor del teu sexe, reunint a l'ànima més sensible l'esperit més just i més il·lustrat, només a tu pertoca de conèixer la dolçor de les llàgrimes que arrenca la Virtut dissortada. Detestant els sofismes del llibertinatge i de la irreligió, combatent-los sens treva amb els teus actes i amb els teus discursos, no temo gens per a tu els que han fet necessaris en aquestes Memòries el caràcter dels personatges establerts; el cinisme d'alguns traços (suavitzats, tanmateix, tant com s'ha pogut) no t'esfereirà tampoc; és el Vici el qui, gemegant de ser desvelat, crida a l'escàndol tan bon punt se l'ataca. El procés del Tartuf el van fer els beats; el de Justine serà obra dels llibertins, els temo poc: els meus motius, desvelats per tu, no seran pas desautoritzats; la teva opinió basta a la meva glòria, i, després d'haver-te plagut, em cal o bé plaure universalment, o bé consolar-me de totes les censures.
+
+El designi d'aquesta Novel·la (no tan novel·la com es podria creure) és nou sens dubte; l'ascendent de la Virtut sobre el Vici, la recompensa del bé, el càstig del mal, vet aquí el curs ordinari de totes les Obres d'aquesta mena; ¿no n'hauríem d'estar ja tips!
