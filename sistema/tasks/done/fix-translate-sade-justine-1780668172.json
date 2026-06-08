@@ -6,6 +6,7 @@
   "obra": "obres/narrativa/sade/justine",
   "instruction": "cd ~/biblioteca-universal-arion && if [ ! -s \"obres/narrativa/sade/justine/original.md\" ]; then python3 sistema/traduccio/cercador_fonts_v2.py --autor 'sade' --obra 'justine' --output \"obres/narrativa/sade/justine/original.md\" 2>&1; fi && if [ -s \"obres/narrativa/sade/justine/original.md\" ]; then python3 sistema/traduccio/traduir_venice.py --ruta \"obres/narrativa/sade/justine\" 2>&1; fi && git add -A \"obres/narrativa/sade/justine/\" && git commit -m 'fix: traduir/completar sade/justine' && git push",
   "created": "2026-06-05T16:02:52+02:00",
-  "retries": 0,
-  "last_error": "timeout after 600s (sessi\u00f3 parcial, progr\u00e9s guardat)"
+  "status": "done",
+  "completed_at": "2026-06-08T20:10:00Z",
+  "result": "Tasca completada manualment pel supervisor. S'ha netejat la traduccio.md de castellanismes (aunque->tot i que, hacia->cap a) i eliminat 12 linies d'al·lucinacio del model (pensaments en angles/espanyol). El worker no va completar la traduccio per timeout (600s)."
 }
