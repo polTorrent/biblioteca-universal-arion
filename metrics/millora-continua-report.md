@@ -1,4 +1,4 @@
-# Millora Contínua — Report 2026-06-09 17:01
+# Millora Contínua — Report 2026-06-09 17:31
 
 Total obres validades analitzades: 47
 
@@ -29,7 +29,7 @@ Total obres validades analitzades: 47
 | the-tempest-la-tempesta | 7.0/10 | 94 | 65 | Puntuació millorable (7.0/10); Validació antiga (94 dies); Glossari pobre (1 entrades) |
 | antigona | 7.0/10 | 95 | 65 | Puntuació millorable (7.0/10); Validació antiga (95 dies); Glossari pobre (1 entrades) |
 | laelius-de-amicitia | 7.0/10 | 86 | 55 | Puntuació millorable (7.0/10); Validació envellint (86 dies); Glossari pobre (1 entrades) |
-| de-consolatione-philosophiae-llibre-i | 7.0/10 | 87 | 55 | Puntuació millorable (7.0/10); Validació envellint (87 dies); Glossari pobre (1 entrades) |
+| de-consolatione-philosophiae-llibre-i | 7.0/10 | 88 | 55 | Puntuació millorable (7.0/10); Validació envellint (88 dies); Glossari pobre (1 entrades) |
 | de-brevitate-vitae | 7.0/10 | 86 | 55 | Puntuació millorable (7.0/10); Validació envellint (86 dies); Glossari pobre (1 entrades) |
 | epistola-1 | 8.0/10 | 106 | 55 | Validació antiga (106 dies); Traducció massa curta (436 paraules); Glossari pobre (1 entrades) |
 | bartleby-lescrivent | 7.0/10 | 86 | 55 | Puntuació millorable (7.0/10); Validació envellint (86 dies); Glossari pobre (1 entrades) |
