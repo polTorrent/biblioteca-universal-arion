@@ -1,10 +1,10 @@
 {
-    "pid": 12444,
+    "pid": 13320,
     "mode": "hybrid",
     "current_task": "idle",
-    "diem_balance": "1.977150772485615",
-    "uptime_seconds": 316,
+    "diem_balance": "1.6303102524856143",
+    "uptime_seconds": 12658,
     "tasks_completed": 11,
     "tasks_failed": 0,
-    "last_heartbeat": "2026-06-09T17:10:16Z"
+    "last_heartbeat": "2026-06-09T17:31:02Z"
 }
