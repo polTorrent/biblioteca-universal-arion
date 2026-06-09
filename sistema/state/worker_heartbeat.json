@@ -1,10 +1,10 @@
 {
-    "pid": 13320,
+    "pid": 14396,
     "mode": "hybrid",
-    "current_task": "fix-translate-schopenhauer-vierfache-wurzel-1780938838",
-    "diem_balance": "7.861572642485615",
-    "uptime_seconds": 2086,
+    "current_task": "1781017287_improve_millora-contnua-de-fragments-postums-a-o",
+    "diem_balance": "5.200437222485615",
+    "uptime_seconds": 4,
     "tasks_completed": 1,
     "tasks_failed": 1,
-    "last_heartbeat": "2026-06-09T14:34:50Z"
+    "last_heartbeat": "2026-06-09T15:03:42Z"
 }
