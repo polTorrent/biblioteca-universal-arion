@@ -238,8 +238,8 @@ for cat_dir in sorted(obres_dir.iterdir()):
             glossari_file = obra_dir / 'glossari.yml'
             if glossari_file.exists():
                 glossari_text = glossari_file.read_text(errors='ignore').strip()
-                # Comptar entrades (línies amb - al principi o claus YAML)
-                entries = len(re.findall(r'^-\s', glossari_text, re.MULTILINE))
+                # Comptar entrades (línies amb - al principi amb o sense indentació YAML)
+                entries = len(re.findall(r'^\s+-\s', glossari_text, re.MULTILINE))
                 if entries == 0:
                     entries = len(re.findall(r'^\w.*:', glossari_text, re.MULTILINE))
                 if entries < 3:
