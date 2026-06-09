@@ -1,4 +1,4 @@
-# Millora Contínua — Report 2026-06-09 16:02
+# Millora Contínua — Report 2026-06-09 16:33
 
 Total obres validades analitzades: 47
 
@@ -34,7 +34,7 @@ Total obres validades analitzades: 47
 | epistola-1 | 8.0/10 | 106 | 55 | Validació antiga (106 dies); Traducció massa curta (436 paraules); Glossari pobre (1 entrades) |
 | bartleby-lescrivent | 7.0/10 | 86 | 55 | Puntuació millorable (7.0/10); Validació envellint (86 dies); Glossari pobre (1 entrades) |
 | metamorfosis-seleccio-5-mites | 7.0/10 | 90 | 55 | Puntuació millorable (7.0/10); Validació envellint (90 dies); Glossari pobre (1 entrades) |
-| hojoki | 7.0/10 | 87 | 55 | Puntuació millorable (7.0/10); Validació envellint (87 dies); Glossari pobre (1 entrades) |
+| hojoki | 7.0/10 | 88 | 55 | Puntuació millorable (7.0/10); Validació envellint (88 dies); Glossari pobre (1 entrades) |
 | o-guardador-de-rebanhos-el-guardador-de-ramats | 7.0/10 | 84 | 55 | Puntuació millorable (7.0/10); Validació envellint (84 dies); Glossari pobre (1 entrades) |
 | primero-sueno | 7.0/10 | 86 | 55 | Puntuació millorable (7.0/10); Validació envellint (86 dies); Glossari pobre (1 entrades) |
 | idillis | 7.0/10 | 86 | 55 | Puntuació millorable (7.0/10); Validació envellint (86 dies); Glossari pobre (1 entrades) |

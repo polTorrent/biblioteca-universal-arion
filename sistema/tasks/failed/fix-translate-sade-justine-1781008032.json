@@ -10,5 +10,5 @@
   "retries": 2,
   "total_failures": 0,
   "regen_count": 0,
-  "last_error": "exit code 2"
+  "last_error": "exit code 2 after 3 retries"
 }
