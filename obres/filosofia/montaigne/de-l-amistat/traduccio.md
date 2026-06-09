@@ -1,3 +1,5 @@
+# De l'amistat
+
 Considerant la manera de fer d'un pintor que tinc, m'ha vingut el desig de seguir-lo. Ell tria el lloc més bell i el centre de cada paret per col·locar-hi un quadre elaborat amb tota la seva mestria; i el buit del voltant, l'omple de grotescos[T]: que són pintures fantàstiques, que només tenen gràcia en la varietat i l'estranyesa. Què són aquí també, en veritat, sinó grotescos i cossos monstruosos, apedaçats de membres diversos, sense figura certa, sense ordre, continuïtat ni proporció, llevat de la fortuïta?
 
 *Desinit in piscem mulier formosa supernè.*[^1]
