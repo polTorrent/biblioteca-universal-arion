@@ -1,4 +1,4 @@
-# Millora Contínua — Report 2026-06-09 20:01
+# Millora Contínua — Report 2026-06-09 20:32
 
 Total obres validades analitzades: 47
 
@@ -21,7 +21,7 @@ Total obres validades analitzades: 47
 | der-wille-zur-macht | 7.0/10 | 94 | 60 | Puntuació millorable (7.0/10); Validació antiga (94 dies); No apareix a la web (docs/index.html) |
 | apologia | 7.0/10 | 94 | 60 | Puntuació millorable (7.0/10); Validació antiga (94 dies); No apareix a la web (docs/index.html) |
 | criton | 7.5/10 | 103 | 60 | Puntuació millorable (7.5/10); Validació antiga (103 dies); No apareix a la web (docs/index.html) |
-| el-retrat-oval | 7.5/10 | 105 | 60 | Puntuació millorable (7.5/10); Validació antiga (105 dies); No apareix a la web (docs/index.html) |
+| el-retrat-oval | 7.5/10 | 106 | 60 | Puntuació millorable (7.5/10); Validació antiga (106 dies); No apareix a la web (docs/index.html) |
 | demian | 7.0/10 | 94 | 60 | Puntuació millorable (7.0/10); Validació antiga (94 dies); No apareix a la web (docs/index.html) |
 | la-transformacio | 7.98/10 | 103 | 60 | Puntuació millorable (7.98/10); Validació antiga (103 dies); No apareix a la web (docs/index.html) |
 | 20-poemes-les-flors-del-mal | 7.0/10 | 94 | 60 | Puntuació millorable (7.0/10); Validació antiga (94 dies); No apareix a la web (docs/index.html) |

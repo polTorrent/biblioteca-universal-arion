@@ -1,8 +1,8 @@
 {
-  "id": "1781028093_improve_millora-contnua-de-hayy-ibn-yaqzan-el-fi",
+  "id": "1781029950_improve_millora-contnua-de-hayy-ibn-yaqzan-el-fi",
   "type": "improve",
   "priority": 3,
-  "created_at": "2026-06-09T18:01:34Z",
+  "created_at": "2026-06-09T18:32:30Z",
   "status": "pending",
   "params": {},
   "instruction": "MILLORA CONTÍNUA de 'hayy-ibn-yaqzan-el-filosof-autodidacte' a obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte (puntuació actual: 7.0/10, improvement_score: 300). Problemes detectats: Puntuació millorable (7.0/10); Validació envellint (80 dies); Notes trencades: [8], [9], [10], [11], [12]; No apareix a la web (docs/index.html). Accions: Millorar estil/qualitat: python3 sistema/traduccio/traduir_pipeline.py obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte/ --mode millora | Crear entrades ## [N] a notes.md per les referències trencades | Regenerar web: python3 sistema/web/build.py. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: hayy-ibn-yaqzan-el-filosof-autodidacte\" && git push",
