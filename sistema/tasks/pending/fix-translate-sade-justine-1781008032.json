@@ -1,0 +1,13 @@
+{
+  "id": "fix-translate-sade-justine-1781008032",
+  "type": "fix-translate",
+  "priority": 2,
+  "max_duration": 3600,
+  "obra": "obres/narrativa/sade/justine",
+  "instruction": "Regenerar la traducció completa de 'Justine o els Infortunis de la Virtut' de Sade des de original.md. Els fitxers .chunks_traduïts.json i traduccio.md han estat esborrats per contaminació greu (20 repeticions del pròleg intercalades, 4 bloc de 'thinking' del model en anglès incrustats dins del text, metadades JSON d'auto-revisió incrustades). Cal: 1) Dividir original.md en chunks de ~1200 caràcters amb tall lògic, 2) Traduir cada chunk amb el model de narrativa (claude-sonnet-4-6 o superior), 3) Reconstruir traduccio.md des dels chunks nets, 4) Assegurar coherència narrativa i continuïtat, 5) Validar que no hi ha text en anglès ni repetició del pròleg, 6) Commit i push. ATENCIÓ CRÍTICA: mai afegir text del prompt del model (pensaments, raonament, línies 'The user wants...', 'Let me...', etc.) al fitxer final. El prompt és intern al model, NO és part de la traducció. Usar prompt engineering per evitar que el model inclogui el seu propi raonament en l'output.",
+  "created": "2026-06-09T14:27:12.898138",
+  "_hash": "b01e38feb33ddf66",
+  "retries": 0,
+  "total_failures": 0,
+  "regen_count": 0
+}
