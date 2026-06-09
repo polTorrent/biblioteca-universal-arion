@@ -1,4 +1,4 @@
-# Millora Contínua — Report 2026-06-09 18:32
+# Millora Contínua — Report 2026-06-09 19:04
 
 Total obres validades analitzades: 47
 
@@ -17,7 +17,7 @@ Total obres validades analitzades: 47
 | cumbres-borrascosas | 7.0/10 | 94 | 65 | Puntuació millorable (7.0/10); Validació antiga (94 dies); traduccio.md sense capçalera # |
 | enchiridion | 7.3/10 | 100 | 60 | Puntuació millorable (7.3/10); Validació antiga (100 dies); No apareix a la web (docs/index.html) |
 | fragments | 7.0/10 | 100 | 60 | Puntuació millorable (7.0/10); Validació antiga (100 dies); No apareix a la web (docs/index.html) |
-| aurora | 7.0/10 | 101 | 60 | Puntuació millorable (7.0/10); Validació antiga (101 dies); No apareix a la web (docs/index.html) |
+| aurora | 7.0/10 | 102 | 60 | Puntuació millorable (7.0/10); Validació antiga (102 dies); No apareix a la web (docs/index.html) |
 | der-wille-zur-macht | 7.0/10 | 94 | 60 | Puntuació millorable (7.0/10); Validació antiga (94 dies); No apareix a la web (docs/index.html) |
 | apologia | 7.0/10 | 94 | 60 | Puntuació millorable (7.0/10); Validació antiga (94 dies); No apareix a la web (docs/index.html) |
 | criton | 7.5/10 | 103 | 60 | Puntuació millorable (7.5/10); Validació antiga (103 dies); No apareix a la web (docs/index.html) |

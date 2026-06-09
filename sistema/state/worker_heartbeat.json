@@ -1,10 +1,10 @@
 {
     "pid": 13320,
     "mode": "hybrid",
-    "current_task": "1781022747_improve_millora-contnua-de-fragments-postums-a-o",
-    "diem_balance": "2.6791110424856157",
-    "uptime_seconds": 9375,
-    "tasks_completed": 8,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-06-09T16:36:19Z"
+    "current_task": "idle",
+    "diem_balance": "2.243567312485615",
+    "uptime_seconds": 11103,
+    "tasks_completed": 9,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-06-09T17:05:07Z"
 }

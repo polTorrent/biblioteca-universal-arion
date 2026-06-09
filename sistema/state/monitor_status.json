@@ -1,11 +1,11 @@
 {
-  "timestamp": "2026-05-11T19:45:13Z",
-  "status": "CRITICAL",
-  "severity": "critical",
-  "worker_pids": "",
-  "diem": "0.14807194248561473",
-  "done_today": 0,
-  "pending": 2,
+  "timestamp": "2026-06-09T16:39:03Z",
+  "status": "WARNING",
+  "severity": "warning",
+  "worker_pids": "13320 14396 19354 32522",
+  "diem": "2.4128977224856154",
+  "done_today": 9,
+  "pending": 0,
   "orphaned": 0,
   "alerts": []
 }
