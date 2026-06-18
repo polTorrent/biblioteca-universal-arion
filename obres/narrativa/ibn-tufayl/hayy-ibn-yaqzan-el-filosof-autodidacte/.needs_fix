@@ -1,0 +1,22 @@
+Puntuació actual: 8.0/10
+Obra: hayy-ibn-yaqzan-el-filosof-autodidacte (Ibn Tufayl, Hayy ibn Yaqzan)
+Ruta: obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte
+
+PROBLEMA (audit millora-continua 2026-06-18):
+Notes erudites trencades. traduccio.md referencia [1]..[32] pero notes.md nomes
+defineix ## [1] .. ## [7]. FALTEN les notes [8]..[32] (25 entrades).
+
+CORRECCIÓ REQUERIDA:
+- Per cada referencia [N] amb N entre 8 i 32, localitzar el context a traduccio.md
+  (i consultar original.md/font si cal) i escriure la nota erudita corresponent.
+- Afegir a notes.md les entrades ## [8] .. ## [32] seguint el MATEIX estil que
+  ## [1]..## [7]: context filosofic/historic, termes arabs originals amb
+  transliteracio entre parentesis, referencia a la tradicio andalusina d'Ibn Tufayl.
+- Mantenir coherencia terminologica amb glossari.yml (no duplicar).
+- TASCA DE COMPLEMENT DE NOTES: NO retraduir el text.
+- En acabar: re-validar (actualitzar .validated amb data i puntuacio >=8.0),
+  ELIMINAR aquest .needs_fix, commit+push.
+
+Context: novel.la filosofica del s. XII sobre Hayy, nen autodidacte en una illa
+que descobreix la filosofia per observacio racional; tradicio d'Avicena (Ibn Sina),
+neoplatonisme islamic i mistica sufi.

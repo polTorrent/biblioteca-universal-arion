@@ -89,6 +89,10 @@ for cat_dir in sorted(obres_dir.iterdir()):
             if not validated_file.exists():
                 continue
 
+            # ── Saltar obres ja encaminades al pipeline de correccio (.needs_fix/.fixing) ──
+            if (obra_dir / '.needs_fix').exists() or (obra_dir / '.fixing').exists():
+                continue
+
             obra_name = obra_dir.name
             relpath = str(obra_dir.relative_to(Path(project)))
             problems = []
@@ -97,16 +101,14 @@ for cat_dir in sorted(obres_dir.iterdir()):
             # ── 1. Puntuació del .validated ──
             validated_text = validated_file.read_text(errors='ignore')
             score = 7.0  # default
-            m = re.search(r'(?:puntuacio_global|qualitat|score|puntuació)\s*[:=]\s*(\d+\.?\d*)', validated_text)
+            m = re.search(r'(?:puntuacio_global|qualitat|score|puntuació)\s*[:=]\s*(\d+\.?\d*)', validated_text, re.IGNORECASE)
             if m:
                 score = float(m.group(1))
 
+            # Mode CONSOLIDACIÓ: només <7/10 és un problema real; 7.0-7.99 és acceptable (>=7)
             if score < 7.0:
                 improvement_score += 50
-                problems.append(f"Puntuació molt baixa ({score}/10)")
-            elif score < 8.0:
-                improvement_score += 20
-                problems.append(f"Puntuació millorable ({score}/10)")
+                problems.append(f"Puntuació insuficient ({score}/10) - sota el mínim de consolidació")
 
             # ── 1b. CHECK AL·LUCINACIÓ (PRIORITAT MÀXIMA) ──
             original_file = obra_dir / 'original.md'
@@ -116,13 +118,21 @@ for cat_dir in sorted(obres_dir.iterdir()):
                 verificador = Path(project) / 'scripts' / 'verificar_traduccio.py'
                 if verificador.exists():
                     try:
+                        orig_words = len(original_file.read_text(errors='ignore').split())
                         result = subprocess.run(
                             ['python3', str(verificador), str(original_file), str(traduccio_file)],
                             capture_output=True, text=True, timeout=30
                         )
                         if result.returncode != 0:
-                            improvement_score += 50
-                            problems.append("🚨 POSSIBLE AL·LUCINACIÓ — Recompte d'unitats no coincideix")
+                            # Si l'original és un STUB molt curt (<500 mots), el ràtio 'molt llarga'
+                            # no és fiable: marquem font reduïda +5 (no crema DIEM re-traduint un
+                            # stub d'obra cèlebre); per originals substancials mantinguem +50.
+                            if orig_words < 500:
+                                improvement_score += 5
+                                problems.append(f"Original reduït ({orig_words} mots, possible stub) - revisar amb font completa")
+                            else:
+                                improvement_score += 50
+                                problems.append("🚨 POSSIBLE AL·LUCINACIÓ — Recompte d'unitats no coincideix")
                     except Exception:
                         pass
 
@@ -218,8 +228,8 @@ for cat_dir in sorted(obres_dir.iterdir()):
                     improvement_score += 25
                     problems.append(f"Línies problemàtiques: {', '.join(unique_bad[:5])}")
 
-                # Extreure referències [N] per comprovar notes
-                note_refs = set(re.findall(r'\[(\d+)\]', trad_text))
+                # Extreure referències [N] per comprovar notes (exclou footnotes pandoc ^[N] inline)
+                note_refs = set(re.findall(r'(?<!\^)\[(\d+)\]', trad_text))
             else:
                 improvement_score += 30
                 problems.append("Falta traduccio.md")
@@ -254,10 +264,12 @@ for cat_dir in sorted(obres_dir.iterdir()):
                 improvement_score += 5
                 problems.append("Falta EPUB")
 
-            # ── 9. Web (presència a docs/index.html) ──
-            if web_content and obra_name not in web_content:
+            # ── 9. Web (presencia: pagina detall docs/<autor>-<obra>.html o index.html) ──
+            web_detail = (docs_dir / f"{slug}.html").exists()
+            web_on_home = bool(web_content) and (obra_name in web_content)
+            if not (web_detail or web_on_home):
                 improvement_score += 20
-                problems.append("No apareix a la web (docs/index.html)")
+                problems.append("No apareix a la web")
 
             results.append({
                 'obra_name': obra_name,
@@ -299,7 +311,11 @@ with open(report_file, 'w') as f:
     f.write(report_text)
 
 # ── Seleccionar obres ──
-selected = [r for r in results if r['improvement_score'] > 0]
+# Saltem les obres que NOMES tenen el problema d'antiguitat de la validacio:
+# re-traduir una obra correcta pero vella malbarata DIEM; la staleness es informativa.
+def _age_only(probs):
+    return bool(probs) and all(('antig' in p.lower() or 'envellint' in p.lower()) for p in probs)
+selected = [r for r in results if r['improvement_score'] > 0 and not _age_only(r['problems'])]
 if not select_all:
     selected = selected[:max_obres]
 

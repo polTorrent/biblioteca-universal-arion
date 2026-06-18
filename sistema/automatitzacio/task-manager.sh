@@ -58,6 +58,37 @@ cmd_add() {
 
     local task_file="$TASKS_DIR/pending/${task_id}.json"
 
+    # ── Deduplicacio: saltar si ja existeix una tasca equivalent en cua ─
+    local _dup=""
+    _dup=$(python3 - "$TASKS_DIR" "$type" "$instruction" 2>/dev/null <<'PYEOF'
+import os, sys, json
+tasks_dir, ttype, instr = sys.argv[1], sys.argv[2], sys.argv[3]
+norm = lambda x: ' '.join((x or '').lower().split())
+target = norm(instr)
+for sub in ('pending', 'running', 'failed'):
+    try:
+        files = os.listdir(os.path.join(tasks_dir, sub))
+    except OSError:
+        continue
+    for fn in files:
+        if not fn.endswith('.json'):
+            continue
+        try:
+            with open(os.path.join(tasks_dir, sub, fn)) as fh:
+                d = json.load(fh)
+        except Exception:
+            continue
+        if d.get('type') == ttype and norm(d.get('instruction', '')) == target:
+            print(fn)
+            sys.exit(0)
+sys.exit(1)
+PYEOF
+    )
+    if [ -n "$_dup" ]; then
+        echo -e "${YELLOW}[SKIP] Tasca duplicada (ja en cua): $_dup${NC}"
+        return 0
+    fi
+
     # Escapar instrucció i params de forma segura via json.dumps
     local escaped_instruction
     escaped_instruction=$(python3 -c "import json,sys; print(json.dumps(sys.stdin.read().strip()))" <<< "$instruction")
