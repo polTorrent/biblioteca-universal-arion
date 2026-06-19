@@ -1,0 +1,17 @@
+{
+  "id": "1781800276_fix_corregeix-obra-a-obresnarrativaibn-tufay",
+  "type": "fix",
+  "priority": 0,
+  "created_at": "2026-06-18T16:31:17Z",
+  "status": "pending",
+  "params": {},
+  "instruction": "CORREGEIX obra a obres/narrativa/ibn-tufayl/hayy-ibn-yaqzan-el-filosof-autodidacte (puntuació 8.0/10). Llegeix .needs_fix per problemes concrets. Corregeix TOTS. Elimina .needs_fix. Commit+push.",
+  "max_duration_minutes": 30,
+  "retry_count": 0,
+  "max_retries": 2,
+  "depends_on": null,
+  "result": null,
+  "error": null,
+  "started_at": null,
+  "completed_at": null
+}

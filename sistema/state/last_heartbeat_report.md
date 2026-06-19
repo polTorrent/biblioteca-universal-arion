@@ -1,4 +1,4 @@
-💓 **Heartbeat Arion** — 22:05 10/06
+💓 **Heartbeat Arion** — 22:05 18/06
 
 📊 **Traduccions:** 96 total | 47 validades | 0 pendents fix
-⚙️ **Worker:** ❌ INACTIU | 0 tasques avui | 10 cua
+⚙️ **Worker:** ❌ INACTIU | 76 tasques avui | 6 cua

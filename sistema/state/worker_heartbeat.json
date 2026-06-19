@@ -1,10 +1,10 @@
 {
-    "pid": 14957,
+    "pid": 8356,
     "mode": "hybrid",
-    "current_task": "shutdown",
-    "diem_balance": "11.479596122485615",
-    "uptime_seconds": 131,
+    "current_task": "1781800276_fix_corregeix-obra-a-obresnarrativaibn-tufay",
+    "diem_balance": "11.962814422485614",
+    "uptime_seconds": 3,
     "tasks_completed": 0,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-06-10T20:12:50Z"
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-06-19T14:00:08Z"
 }
