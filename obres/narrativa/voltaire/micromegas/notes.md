@@ -20,7 +20,7 @@ La traducció segueix l'edició de les *Œuvres complètes de Voltaire* publicad
 ### Capítol II
 
 - **Fontenelle**: el secretari de l'Acadèmia de Saturn és un retrat transparent de Bernard de Fontenelle, secretari perpetu de l'Acadèmia de Ciències de París, autor de la *Pluralitat dels mons* (1686). Voltaire parodia el seu estil preciós.
-- **Seixanta-dos sentits**: les edicions varien entre seixanta-dos i seixanta-dotze sentits per als saturnians. Hem seguit el text de Garnier que porta «soixante et douze».
+- **Setanta-dos sentits**: l'edició de Garnier porta «soixante et douze» (72), lectura que hem seguit. Algunes edicions modernes lectegen «soixante-deux» (62); la xifra apareix tres vegades al capítol II i hem mantingut la coherència amb el text de Garnier (72 = setanta-dos).
 
 ### Capítol III
 
