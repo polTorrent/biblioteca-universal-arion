@@ -250,7 +250,7 @@ for cat_dir in sorted(obres_dir.iterdir()):
             if glossari_file.exists():
                 glossari_text = glossari_file.read_text(errors='ignore').strip()
                 # Comptar entrades (línies amb - al principi amb o sense indentació YAML)
-                entries = len(re.findall(r'^\s+-\s', glossari_text, re.MULTILINE))
+                entries = len(re.findall(r'^\s*-\s', glossari_text, re.MULTILINE))
                 if entries == 0:
                     entries = len(re.findall(r'^\w.*:', glossari_text, re.MULTILINE))
                 if entries < 3:
@@ -347,6 +347,8 @@ if not dry_run:
                 actions.append(f"Generar EPUB amb EpubGenerator")
             elif 'web' in p.lower():
                 actions.append(f"Regenerar web: python3 sistema/web/build.py")
+            elif 'stub' in p.lower() or 'Original reduït' in p:
+                actions.append(f"Revisar original.md: si és un stub, descarregar la font completa indicada a metadata.yml (font_original) i substituir original.md; si l'obra és genuïnament breu (p.ex. Sutra del Cor), documentar-ho al .validated amb nota 'obra breu per naturalesa' per silenciar el fals positiu")
             elif 'Glossari' in p:
                 actions.append(f"Ampliar glossari.yml (mínim 5 entrades significatives)")
             elif 'curta' in p:

@@ -1,16 +1,16 @@
-# Millora Contínua — Report 2026-06-19 16:42
+# Millora Contínua — Report 2026-06-19 17:22
 
 Total obres validades analitzades: 42
 
 | Obra | Puntuació | Edat (dies) | Improvement | Problemes |
 |------|-----------|-------------|-------------|-----------|
 | epistola-1 | 8.0/10 | 116 | 30 | Validació antiga (116 dies); Traducció massa curta (436 paraules) |
-| tao-te-king | 7.7/10 | 113 | 30 | Original reduït (271 mots, possible stub) - revisar amb font completa; Validació antiga (113 dies); Glossari pobre (1 entrades) |
-| sutra-cor | 7.0/10 | 116 | 30 | Original reduït (171 mots, possible stub) - revisar amb font completa; Validació antiga (116 dies); Metadata incompleta: date |
 | biombo-infern | 7.0/10 | 108 | 25 | Original reduït (205 mots, possible stub) - revisar amb font completa; Validació antiga (108 dies) |
+| tao-te-king | 7.7/10 | 113 | 25 | Original reduït (271 mots, possible stub) - revisar amb font completa; Validació antiga (113 dies) |
 | oku-no-hosomichi-el-cami-estret-cap-al-nord-profund | 7.0/10 | 104 | 25 | Original reduït (197 mots, possible stub) - revisar amb font completa; Validació antiga (104 dies) |
+| sutra-cor | 7.0/10 | 116 | 25 | Original reduït (171 mots, possible stub) - revisar amb font completa; Validació antiga (116 dies) |
 | laelius-de-amicitia | 7.0/10 | 96 | 20 | Validació antiga (96 dies) |
-| de-consolatione-philosophiae-llibre-i | 8.0/10 | 97 | 20 | Validació antiga (97 dies) |
+| de-consolatione-philosophiae-llibre-i | 8.0/10 | 98 | 20 | Validació antiga (98 dies) |
 | enchiridion | 7.3/10 | 110 | 20 | Validació antiga (110 dies) |
 | fragments | 7.0/10 | 110 | 20 | Validació antiga (110 dies) |
 | meditacions | 8.0/10 | 112 | 20 | Validació antiga (112 dies) |
