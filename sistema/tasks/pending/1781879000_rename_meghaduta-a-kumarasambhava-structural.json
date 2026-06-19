@@ -1,0 +1,11 @@
+{
+  "id": "1781879000_rename_meghaduta-a-kumarasambhava-structural",
+  "type": "fix",
+  "priority": 1,
+  "max_duration_minutes": 30,
+  "obra": "obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol",
+  "instruction": "cd ~/biblioteca-universal-arion && TASK ESTRUCTURAL: el directori obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol conte en realitat la traduccio de Kumārasambhava (El Naixement del Deu de la Guerra), no de Meghadūta. Les metadades i .validated ja estan corregides. Cal reanomenar el directori per coherencia: git mv obres/oriental/kalidasa/meghaduta-el-missatger-del-nuvol obres/oriental/kalidasa/kumarasambhava-el-naixement-del-deu-de-la-guerra. Despres: python3 sistema/web/build.py per regenerar la web. Verifica que no quedin referencies trencades al nom antic (grep -r meghaduta-el-missatger-del-nuvol obres/ sistema/ docs/). git add -A && git commit -m 'fix: reanomenar directori meghaduta->kumarasambhava (identitat obra corregida)' && git push. IMPORTANT: fes abans una copia de seguretat si cal; no tocis el contingut de traduccio.md/original.md.",
+  "created_at": "2026-06-19T14:10:00Z",
+  "status": "pending",
+  "priority_reason": "Structural polish; metadata identity already corrected. Lower priority than translation fixes."
+}

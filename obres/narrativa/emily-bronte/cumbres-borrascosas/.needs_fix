@@ -1,0 +1,10 @@
+Puntuació: 7.5/10
+Problemes pendents (veure .validated per al detall complet):
+
+- Inconsistència toponímica "Cims de Torment" (2x) -> unificar a "Cims Borrascosos".
+- "Parc de Thrushcross" (2x) -> "Granja dels Tords".
+- "Penistone Crags" apareix amb 3 variants ("Espadats" 7x, "Penyals" 1x, "Penascos" 1x) -> unificar a "Espadats de Penistone".
+- "bestiar" (cap. I) com a traducció de "cattle" -> preferible "ramat".
+
+Nota: la capçalera H1 ("# Cims Borrascosos") ja ha estat afegida pel supervisor (2026-06-19).
+Unificar aquestes inconsistències per pujar la qualitat a 8+/10. Re-avaluar, actualitzar .validated, commit+push.

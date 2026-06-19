@@ -1,6 +1,6 @@
-**Autor:** desconegut
-**Font:** [gutenberg](https://www.gutenberg.org/ebooks/31968)
-**Llengua:** núvol
+**Autor:** Kālidāsa
+**Font:** [gutenberg](https://www.gutenberg.org/ebooks/31968) — Ralph T. H. Griffith, *The Birth of the War-God* (1879)
+**Llengua:** sànscrit
 
 ---
 

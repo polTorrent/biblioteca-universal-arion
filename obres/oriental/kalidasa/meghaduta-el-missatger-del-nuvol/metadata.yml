@@ -1,27 +1,41 @@
 obra:
-  titol: "Meghadūta — El Missatger del Núvol"
-  titol_original: "मेघदूतम् (Meghadūtam)"
+  titol: "Kumārasambhava — El Naixement del Déu de la Guerra"
+  titol_original: "कुमारसम्भवम् (Kumārasambhavam)"
+  titol_romanitzat: "Kumārasambhava"
   autor: "Kālidāsa"
   autor_original: "कालिदास"
-  traductor: "Editorial Clàssica"
+  traductor: "Biblioteca Universal Arion (IA + revisió)"
   any_original: "c. s. IV-V dC"
   any_traduccio: 2026
   llengua_original: "sànscrit"
   categoria: "oriental"
-  genere: "poesia"
+  genere: "poesia èpica"
   descripcio: >
-    Poema líric en sànscrit on un yakṣa exiliat demana a un núvol
-    que porti un missatge a la seva estimada a la ciutat d'Alakā.
-    Obra mestra de la poesia sànscrita clàssica, considerada un dels
-    millors poemes lírics de la literatura universal.
-  font_original: "https://en.wikisource.org/wiki/The_Megha_Duta"
-seccions: 2
+    Poema èpic (kāvya) en sànscrit de Kālidāsa que narra el naixement de
+    Kārttikeya (Skanda), déu de la guerra, fruit de la unió de Śiva i Pārvatī.
+    Els set primers cantos —els autènticament atribuïts a Kālidāsa— descriuen
+    el penediment ascètic de Śiva, la devoció d'Uma (Pārvatī) i les seves
+    núpcies. Obra mestra de la poesia èpica sànscrita clàssica. Traduït de la
+    versió anglesa de Ralph T. H. Griffith (1879).
+  font_original: "https://www.gutenberg.org/ebooks/31968"
+  font_traduccio_base: "Ralph T. H. Griffith, The Birth of the War-God (1879)"
+seccions: 7
 estadistiques:
-  paraules_original: 22000
-  paraules_traduccio: 16500
+  paraules_original: 21520
+  paraules_traduccio: 16645
   notes: 25
   termes_glossari: 24
 revisio:
   estat: "revisat"
   qualitat: 7.5
-  data_revisio: "2026-03-09"
+  data_revisio: "2026-06-19"
+  notes_revisio: >
+    Identitat de l'obra corregida (2026-06-19): el directori i les metadades
+    antigues la identificaven erròniament com a Meghadūta (El Missatger del
+    Núvol), però el contingut real —original.md, traduccio.md i glossari—
+    correspon a Kumārasambhava (El Naixement del Déu de la Guerra), mateix
+    autor (Kālidāsa). La traducció és fidel als 7 cantos de la font de Griffith
+    (Gutenberg #31968); no hi ha al·lucinació: l'alerta de 'recompte
+    d'unitats no coincideix' provenia del camp seccions=2 (propi de Meghadūta)
+    en comptes de 7 cantos. Pendent: reanomenar el directori a
+    'kumarasambhava-el-naixement-del-deu-de-la-guerra' (tasca estructural).

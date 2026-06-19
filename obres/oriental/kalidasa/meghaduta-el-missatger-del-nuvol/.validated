@@ -1,1 +1,12 @@
-7.5
+data: 2026-06-19
+puntuacio: 7.5
+supervisor: Supervisió Arion (millora contínua)
+notes: |
+  Identitat de l'obra corregida: el directori i les metadades antigues la
+  identificaven erròniament com a Meghadūta (El Missatger del Núvol), però el
+  contingut real (original.md, traduccio.md, glossari) correspon a
+  Kumārasambhava (El Naixement del Déu de la Guerra), de Kālidāsa.
+  La traducció és fidel als 7 cantos de la font de Griffith (Gutenberg #31968).
+  NO hi ha al·lucinació: l'alerta anterior de "recompte d'unitats no coincideix"
+  provenia del camp seccions=2 (propi de Meghadūta) en lloc de 7 cantos.
+  Acció pendent: reanomenar el directori a kumarasambhava-... (tasca separada).
