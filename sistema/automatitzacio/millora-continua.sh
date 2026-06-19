@@ -228,8 +228,9 @@ for cat_dir in sorted(obres_dir.iterdir()):
                     improvement_score += 25
                     problems.append(f"Línies problemàtiques: {', '.join(unique_bad[:5])}")
 
-                # Extreure referències [N] per comprovar notes (exclou footnotes pandoc ^[N] inline)
-                note_refs = set(re.findall(r'(?<!\^)\[(\d+)\]', trad_text))
+                # Extreure referències [N] per comprovar notes (exclou footnotes pandoc ^[N] inline
+                # i citations tipus KSA "7[21]" on un dígit precedeix el claudàtor)
+                note_refs = set(re.findall(r'(?<!\^)(?<!\d)\[(\d+)\]', trad_text))
             else:
                 improvement_score += 30
                 problems.append("Falta traduccio.md")
