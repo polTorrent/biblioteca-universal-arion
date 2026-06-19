@@ -1,4 +1,4 @@
-data: 2026-03-07
+data: 2026-06-19
 puntuacio: 7.5
 revisor: supervisio-automatica
 notes: |
@@ -9,3 +9,4 @@ notes: |
   - Espai trencat al link Wikisource (línia 9 traduccio.md)
   - Haiku d'Obanazawa (línies 182-192) sense format cursiva per línia
   - metadata.yml: notes=0 (hauria de ser 10), termes_glossari=15 (hauria de ser 22), seccions=1 (incorrecte)
+revalidacio: 2026-06-19 (supervisor GLM 5.2). Obra breu per naturalesa (haibun de viatge, ~45 haikus). original.md en japonès (197 'mots' segons wc -w, subestimat per escriptura no llatina) → fals positiu 'possible stub' (+5). traduccio.md 7936 mots, completa. Puntuació 7.5 ≥ 7.0. Silenciat 30 dies. PENDENT: corregir metadata.yml (notes, termes_glossari, seccions) quan el detector torni a avaluar.

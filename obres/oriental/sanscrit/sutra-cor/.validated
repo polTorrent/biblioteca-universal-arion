@@ -1,4 +1,4 @@
-data: 2026-02-23
+data: 2026-06-19
 puntuacio: 8.5/10
 supervisor: Claude Code (supervisió automàtica)
 
@@ -23,3 +23,5 @@ observacions:
   - Glossari complet amb 14 termes ben definits
   - Metadata excepcionalment complet (tradició textual, context històric)
   - Secció "Sobre la traducció" amb context valuós per al lector
+
+revalidacio: 2026-06-19 (supervisor GLM 5.2). Obra breu per naturalesa (Sutra del Cor, text sagrat molt curt). original.md 171 'mots' → wc -w subestima escriptura no llatina/sànscrit, dispara el fals positiu 'possible stub' (+5). traduccio.md 661 mots, completa i fidel. Puntuació 8.5 ≥ 7.0. Silenciat 30 dies.
