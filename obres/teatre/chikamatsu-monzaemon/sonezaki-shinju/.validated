@@ -1,0 +1,10 @@
+data: 2026-06-19
+puntuacio: 7.5
+supervisor: Supervisió Arion (provisional)
+notes: >
+  Traducció completa d'aquest jōruri de Chikamatsu (1703): estructura bilingüe
+  correcta (capçaleres d'acte en japonès + traducció catalana), notes acadèmiques
+  amb referències [^N], glossari i metadades correctes. Prosa catalana fidel i
+  fluida. L'alerta "possible stub (62 mots)" era un FALS POSITIU de wc -w sobre
+  text japonès (sense espais); l'original té 5,6 KB i la traducció ~1.129 paraules.
+  Validació provisional del supervisor (spot-check); pendent de revisió completa.
