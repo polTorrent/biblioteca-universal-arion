@@ -123,8 +123,11 @@ for obra_dir in "$OBRES_DIR"/*/*/*/; do
     fi
 
     # 7. TRADUCCIO QUALITAT: castellanismes evidents
+    # Nota: "pues" és un fals positiu freqüent en català (substantiu, plural de "pua" = pues/espines,
+    # ex. "les pues d'un porc espí"). Per evitar bucles perpetus de tasques fix-llengua sense canvis,
+    # només es detecta "pues" quan apareix com a conjunció castellana (precedida de puntuació o a inici de línia).
     if [ -f "$obra_dir/traduccio.md" ]; then
-        if grep -qiP '\b(entonces|pues|sin embargo|mientras|además|también|pero|aunque|desde|hasta|hacia|según)\b' "$obra_dir/traduccio.md" 2>/dev/null; then
+        if grep -qiP '\b(entonces|sin embargo|mientras|además|también|pero|aunque|desde|hasta|hacia|según)\b|(?:[,;.]\s+|^)pues\b' "$obra_dir/traduccio.md" 2>/dev/null; then
             errors+=("CASTELLANISMES_DETECTATS")
         fi
     fi

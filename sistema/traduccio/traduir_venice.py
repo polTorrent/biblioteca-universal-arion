@@ -799,6 +799,8 @@ Traduït del {metadata['llengua']} per Biblioteca Arion
 
     def clean_footer_for_continue(path: Path) -> None:
         """Treu el footer si existeix (per poder continuar afegint chunks)."""
+        if not path.exists():
+            return  # No hi ha traduccio.md encara: res a netejar (--continuar des de zero)
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
         if "*Traducció de domini públic*" in content:

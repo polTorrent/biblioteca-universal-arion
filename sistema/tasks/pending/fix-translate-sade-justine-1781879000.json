@@ -1,0 +1,15 @@
+{
+  "id": "fix-translate-sade-justine-1781879000",
+  "type": "fix-translate",
+  "priority": 2,
+  "max_duration": 3600,
+  "obra": "obres/narrativa/sade/justine",
+  "instruction": "cd ~/biblioteca-universal-arion && python3 sistema/traduccio/traduir_venice.py --ruta 'obres/narrativa/sade/justine' --continuar 2>&1; rc=$?; if [ -s 'obres/narrativa/sade/justine/traduccio.md' ]; then git add -A 'obres/narrativa/sade/justine/' && git commit -m 'fix: traduir/completar sade/justine (incremental)' && git push; echo \"PROGRES OK (rc=$rc)\"; else echo \"ERROR: traduccio.md buit o inexistent (rc=$rc)\"; exit 1; fi",
+  "created": "2026-06-19T16:30:00+02:00",
+  "retries": 0,
+  "retry_count": 0,
+  "total_failures": 0,
+  "regen_count": 0,
+  "recovered": true,
+  "note": "Re-encuat pel supervisor: afegit --continuar per acumular progrés incremental entre runs (arrel: cada restart esborrava el progres previ). Bug clean_footer_for_continue corregit."
+}
