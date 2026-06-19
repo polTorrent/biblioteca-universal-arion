@@ -50,6 +50,12 @@ MODEL_ALIASES = {
     "glm-5-1": "zai-org-glm-5-1",
 }
 
+# Models de Venice que rebutgen el paràmetre `temperature` (HTTP 400:
+# "temperature is deprecated for this model"). Només claude-opus-4-7 el
+# rebutja avui; la llista és defensiva. A més, run_venice_api té un
+# autoretry que elimina `temperature` si Venice hi insisteix en el futur.
+NO_TEMPERATURE_MODELS = {"claude-opus-4-7"}
+
 # System prompts per gènere (especialitzats)
 SYSTEM_PROMPTS = {
     "filosofia": (
@@ -201,8 +207,12 @@ def run_venice_api(
         "model": model,
         "messages": messages,
         "max_tokens": max_tokens,
-        "temperature": temperature,
     }
+    # Algunts models (p.ex. claude-opus-4-7) rebutgen `temperature` (HTTP 400).
+    # Només l'enviem si el model l'accepta; l'autoretry d'aquí sota és la xarxa
+    # de seguretat per a futures deprecacions.
+    if model not in NO_TEMPERATURE_MODELS:
+        payload["temperature"] = temperature
 
     venice_params = {}
     if disable_thinking:
@@ -211,12 +221,14 @@ def run_venice_api(
     if venice_params:
         payload["venice_parameters"] = venice_params
 
-    data = json.dumps(payload).encode()
-    req = urllib.request.Request(url, method="POST", headers={
-        "Content-Type": "application/json",
-        "Authorization": f"Bearer {key}",
-        "User-Agent": USER_AGENT,
-    }, data=data)
+    def _build_request(pl: dict) -> urllib.request.Request:
+        return urllib.request.Request(url, method="POST", headers={
+            "Content-Type": "application/json",
+            "Authorization": f"Bearer {key}",
+            "User-Agent": USER_AGENT,
+        }, data=json.dumps(pl).encode())
+
+    req = _build_request(payload)
 
     start_time = time.time()
     try:
@@ -224,7 +236,20 @@ def run_venice_api(
         body = json.loads(resp.read().decode())
     except urllib.error.HTTPError as e:
         err_body = e.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"HTTP {e.code}: {err_body}")
+        # Autoreparació: si Venice rebutja `temperature` per aquest model,
+        # reintentem sense el paràmetre (una sola vegada).
+        if "temperature" in err_body.lower() and "temperature" in payload:
+            payload.pop("temperature", None)
+            req = _build_request(payload)
+            try:
+                resp = urllib.request.urlopen(req, timeout=120)
+                body = json.loads(resp.read().decode())
+            except urllib.error.HTTPError as e2:
+                raise RuntimeError(f"HTTP {e2.code}: {e2.read().decode('utf-8', errors='replace')}")
+            except Exception as e2:
+                raise RuntimeError(f"Error de connexió: {e2}")
+        else:
+            raise RuntimeError(f"HTTP {e.code}: {err_body}")
     except Exception as e:
         raise RuntimeError(f"Error de connexió: {e}")
     latency_ms = int((time.time() - start_time) * 1000)
