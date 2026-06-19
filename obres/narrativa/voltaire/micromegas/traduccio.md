@@ -28,7 +28,7 @@ No es va entristeir gaire per ser bandejat d'una cort plena d'intrigues i mesqui
 [6] L'edició que crec l'original porta: *temeràries, que feien olor d'heretgia*. El text actual existeix des de 1756. (B.)
 [7] Voltaire havia estat perseguit pel teàtin Boyer, per haver dit a les seves *Lletres filosòfiques* que les facultats de la nostra ànima es desenvolupen alhora que els nostres òrgans, de la mateixa manera que les facultats de l'ànima dels animals. (K.)
 [8] Vegeu la nota 2 de la pàgina 69.
-[9] Savi anglès, autor de la *Teologia astronòmica* i d'algunes altres obres que tenen per objecte provar l'existència de Déu a través del detall de les meravelles de la natura. (K.)
+[9] Savi anglès, autor de la *Teologia astronòmica* i d'algunes altres obres que tenen per objecte provar l'existència de Déu a través del detall de les meravelles de la natura; malauradament, ell i els seus imitadors s'equivoquen sovint en l'exposició d'aquestes meravelles: s'extasien davant la saviesa que es mostra en l'ordre d'un fenomen, i es descobreix que aquest fenomen és ben diferent del que havien suposat; llavors és aquest nou ordre el que els sembla una obra mestra de saviesa. Aquest defecte, comú a totes les obres d'aquesta mena, les ha desacreditades. Se sap massa per endavant que, d'una manera o una altra, l'autor acabarà sempre admirant-les. (K.)
 [10] Fontenelle.
 
 ---

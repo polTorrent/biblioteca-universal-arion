@@ -3,15 +3,15 @@
   "type": "improve",
   "priority": 3,
   "created_at": "2026-06-18T16:23:14Z",
-  "status": "pending",
+  "status": "done",
   "params": {},
   "instruction": "MILLORA CONTÍNUA de 'micromegas' a obres/narrativa/voltaire/micromegas (puntuació actual: 7.0/10, improvement_score: 150). Problemes detectats: Validació antiga (94 dies); Notes trencades: [1], [2], [3], [4], [5]. Accions: Crear entrades ## [N] a notes.md per les referències trencades. Finalment: re-avaluar qualitat, actualitzar .validated amb nova puntuació i data. python3 sistema/web/build.py && git add -A && git commit -m \"improve: micromegas\" && git push",
   "max_duration_minutes": 60,
   "retry_count": 0,
   "max_retries": 2,
   "depends_on": null,
-  "result": null,
+  "result": "Millora executada pel supervisor. El detector de 'notes trencades [1]-[5]' era un FALS POSITIU: són notes al peu per capítol correctament definides (ex. 'Micromègas[1]' amb definició '[1] De micros...'). S'han corregit en canvi els errors reals flaggats a .validated: (1) 'seixanta-dos'->'setanta-dos' x3 al cap.II (font FR 'soixante et douze'=72); (2) 'estremír-se'->'estremir-se' (accent d'infinitiu); (3) nota [9] cap.I truncada completada amb la crítica de K. sobre Derham; (4) notes.md: nota contradictòria 'Seixanta-dos' corregida. .validated actualitzat a 8.0 (de 7.5). Sense tocar obres validades indegudament.",
   "error": null,
   "started_at": null,
-  "completed_at": null
+  "completed_at": "2026-06-19T14:05:39Z"
 }
