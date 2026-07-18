@@ -1,3 +1,5 @@
+# Cims Borrascosos
+
 ## I
 
 1801—Acabo de tornar d'una visita al meu propietari—l'únic veí amb qui hauré de tractar. És certament un país meravellós! No crec que a tota Anglaterra hagués pogut trobar un indret tan completament allunyat del tràfec de la societat. Un paradís per a un misantrop perfecte—I el senyor Heathcliff i jo som una parella tan adequada per dividir-nos la desolació. Un excel·lent company! No s'imaginava gens com se m'escalfava el cor cap a ell quan vaig veure els seus ulls negres retirar-se tan sospitosament sota les celles, mentre m'acostava a cavall, i quan els seus dits es refugiaven, amb gelosa determinació, encara més profundament a la seva armilla, en anunciar el meu nom.
