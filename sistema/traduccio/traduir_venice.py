@@ -751,26 +751,56 @@ def main():
     traduccio_path = obra_dir / "traduccio.md"
 
     def count_completed_chunks(path: Path) -> int:
-        """Compta quants chunks ja estan traduïts al traduccio.md."""
+        """Compta quants blocs (\n\n) ja estan al body de traduccio.md.
+
+        Robust contre les variants de format:
+          - Header + body sense footer (traducció en curs)
+          - Header + body + footer (traducció completa)
+          - Body amb separadors --- interiors (cites poètiques, footnotes)
+        """
         if not path.exists():
             return 0
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
-        # Els chunks estan separats per \n\n dins la secció de body
-        # Format: header\n---\n\nbody\n---\n\nfooter
-        # Extreure el body (entre el primer --- i l'últim ---)
+        if len(content) < 50:
+            return 0  # Només header placeholder
+        # Format: header\n---\n\nbody[\n---\n\nbody_2 ...] [\n---\n\nfooter]
         parts = content.split("\n---\n")
-        if len(parts) < 3:
-            return 0  # No hi ha body encara
-        body = "---\n".join(parts[1:-1]).strip()
+        if len(parts) < 2:
+            return 0  # No hi ha separador header/body
+        if len(parts) >= 3:
+            # Hi pot haver footer: utilitzem parts[1:-1] però descartant
+            # l'última part NOMÉS si conté el footer marker. Si l'última
+            # part NO conté el footer marker, és contingut real -> conservem.
+            last = parts[-1].strip()
+            if "*Traducció de domini públic*" in last and len(last) < 100:
+                body = "---\n".join(parts[1:-1]).strip()
+            else:
+                body = "---\n".join(parts[1:]).strip()
+        else:
+            # Només header + body (traducció en curs, sense footer)
+            body = parts[1].strip()
         if not body:
             return 0
-        # Cada chunk traduït és un bloc separador per \n\n
+        # Cada chunk traduït és un bloc separat per \n\n
         blocks = [b.strip() for b in body.split("\n\n") if b.strip()]
         return len(blocks)
 
-    def write_header(path: Path, metadata: dict) -> None:
-        """Escriu la capçalera inicial si no existeix."""
+    def write_header(path: Path, metadata: dict, force: bool = False) -> None:
+        """Escriu la capçalera inicial només si el fitxer NO existeix o és
+        gairebé buit. Si ja existeix amb contingut significatiu, ABORTA
+        en lloc de truncar (prevenim pèrdua de dades per cicles erronis)."""
+        if path.exists() and not force:
+            existing = path.read_text(encoding="utf-8")
+            # Si té contingut real (més enllà d'un header placeholder), NO truncar
+            if len(existing) > 200 and ("---" in existing):
+                print(
+                    f"⚠️ write_header ABORTAT: {path} ja té {len(existing)} bytes. "
+                    f"Useu --force si realment voleu truncar. "
+                    f"Comproveu --continuar.",
+                    file=sys.stderr,
+                )
+                return
         header = f"""# {metadata['titol']}
 *{metadata['autor']}*
 
@@ -798,13 +828,23 @@ Traduït del {metadata['llengua']} per Biblioteca Arion
             f.write("\n\n---\n\n*Traducció de domini públic.*\n")
 
     def clean_footer_for_continue(path: Path) -> None:
-        """Treu el footer si existeix (per poder continuar afegint chunks)."""
+        """Treu el footer SI I NOMÉS SI és l'últim bloc del fitxer.
+
+        Abans aquesta funció podia truncar el cos si qualsevol chunk del
+        mig contenia la cadena '\\n---\\n\\n*Traducció de domini públic*'
+        com a part de la traducció. Ara només actua sobre el footer final
+        real (comprovant que apareix just al final del fitxer).
+        """
         with open(path, "r", encoding="utf-8") as f:
             content = f.read()
-        if "*Traducció de domini públic*" in content:
-            content = content.split("\n---\n\n*Traducció de domini públic*")[0].strip()
-            with open(path, "w", encoding="utf-8") as f:
-                f.write(content)
+        marker = "\n---\n\n*Traducció de domini públic*"
+        # Només treiem si el marker apareix just al final del fitxer
+        if content.rstrip().endswith("*Traducció de domini públic*"):
+            idx = content.rfind(marker)
+            if idx >= 0:
+                content = content[:idx].rstrip() + "\n"
+                with open(path, "w", encoding="utf-8") as f:
+                    f.write(content)
 
     # Determinar start_chunk
     start_chunk = args.start
