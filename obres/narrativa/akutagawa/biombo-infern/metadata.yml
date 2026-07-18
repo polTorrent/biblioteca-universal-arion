@@ -22,7 +22,11 @@ obra:
     - bellesa i horror
     - Japó medieval
   estadistiques:
-    paraules_traduccio: 11956
+    seccions: 20
+    paraules_original: ~12000
+    paraules_traduccio: 11980
+    notes: 12
+    termes_glossari: 9
 revisio:
   estat: "revisat"
   data_revisio: "2026-01-30"

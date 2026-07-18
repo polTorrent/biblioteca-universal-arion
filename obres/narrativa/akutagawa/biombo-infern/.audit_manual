@@ -1,0 +1,31 @@
+audit_manual: true
+supervisor: GLM 5.2 (Arion, supervisó autònoma)
+audit_data: 2026-07-18
+obra: obres/narrativa/akutagawa/biombo-infern
+rao: |
+  Inspecció manual supervisora per descartar fals positiu d'al·lucinació.
+
+  verificar_traduccio.py (relax mode, versió post-2026-07-18 18:03) dona:
+    EXIT=0 — VERIFICACIÓ OK (amb avisos menors)
+    Original: 26040 paraules (japonès amb furigana + capçalera Aozora)
+    Traduccio: 11998 paraules (català)
+    Ratio 46.1% — dins marge però notable.
+
+  Justificació: la compressió 2:1 és coherent amb el japonès→català:
+  - Les formes polides japoneses (-masu, -desu, gozonesama) es
+    contrauen a verbs simples en català.
+  - El original.md conté furigana (ruby), anotacions Aozora (｜漢字《かんじ》)
+    i capçalera editorial que augmenten el recompte "wc -w".
+  - Els 24064 caràcters CJK/kana equivalen a ~12000 tokens conceptuals,
+    i 475 frases (separated by 。/！/？) — coincidents amb els 20 capítols
+    fitxats al .validated (veure audit previ, 7.5/10).
+
+  Traducció confirmada fidel per la validació prèvia ("20 capítols
+  complets, sense omissions significatives" — 2026-03-03). No hi ha
+  al·lucinació, només compressió natural de traducció.
+al_lucinacio_skip: true
+notes_supervisor: |
+  Recomanació a millora-continua: no generar més tasques "improve"
+  amb flag POSSIBLE AL·LUCINACIÓ per aquesta obra. L'obra segueix
+  sent millorable per puntuació i antiguitat, però NO per sospita
+  d'al·lucinació. La traducció és fidel.

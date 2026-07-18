@@ -1,10 +1,10 @@
-# Millora Contínua — Report 2026-07-18 19:43
+# Millora Contínua — Report 2026-07-18 20:17
 
 Total obres validades analitzades: 47
 
 | Obra | Puntuació | Edat (dies) | Improvement | Problemes |
 |------|-----------|-------------|-------------|-----------|
-| kumarasambhava-el-naixement-del-deu-de-la-guerra | 7.0/10 | 131 | 65 | Puntuació millorable (7.0/10); Validació antiga (131 dies); Falta EPUB |
+| kumarasambhava-el-naixement-del-deu-de-la-guerra | 7.0/10 | 131 | 60 | Puntuació millorable (7.0/10); Validació antiga (131 dies); No apareix a la web (falta docs/kalidasa-kumarasambhava-el-naixement-del-deu-de-la-guerra.html) |
 | laelius-de-amicitia | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | de-consolatione-philosophiae-llibre-i | 7.0/10 | 127 | 40 | Puntuació millorable (7.0/10); Validació antiga (127 dies) |
 | enchiridion | 7.3/10 | 139 | 40 | Puntuació millorable (7.3/10); Validació antiga (139 dies) |
@@ -16,7 +16,7 @@ Total obres validades analitzades: 47
 | criton | 7.5/10 | 142 | 40 | Puntuació millorable (7.5/10); Validació antiga (142 dies) |
 | de-brevitate-vitae | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | biombo-infern | 7.0/10 | 137 | 40 | Puntuació millorable (7.0/10); Validació antiga (137 dies) |
-| el-retrat-oval | 7.5/10 | 144 | 40 | Puntuació millorable (7.5/10); Validació antiga (144 dies) |
+| el-retrat-oval | 7.5/10 | 145 | 40 | Puntuació millorable (7.5/10); Validació antiga (145 dies) |
 | cumbres-borrascosas | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
 | bartleby-lescrivent | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | demian | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
@@ -42,7 +42,7 @@ Total obres validades analitzades: 47
 | maj-maig | 7.0/10 | 75 | 30 | Puntuació millorable (7.0/10); Validació envellint (75 dies) |
 | seleccio-20-poemes | 7.0/10 | 75 | 30 | Puntuació millorable (7.0/10); Validació envellint (75 dies) |
 | et-dukkehjem-casa-de-nines | 7.5/10 | 77 | 30 | Puntuació millorable (7.5/10); Validació envellint (77 dies) |
-| meditacions | 8.0/10 | 141 | 20 | Validació antiga (141 dies) |
+| meditacions | 8.0/10 | 142 | 20 | Validació antiga (142 dies) |
 | de-l-amistat | 8.2/10 | 139 | 20 | Validació antiga (139 dies) |
 | die-philosophie-im-tragischen-zeitalter-der-griechen | 8.5/10 | 133 | 20 | Validació antiga (133 dies) |
 | homer-i-la-filologia-classica | 8.5/10 | 133 | 20 | Validació antiga (133 dies) |

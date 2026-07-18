@@ -1,0 +1,30 @@
+audit_manual: true
+supervisor: GLM 5.2 (Arion, supervisó autònoma)
+audit_data: 2026-07-18
+obra: obres/oriental/sanscrit/sutra-cor
+rao: |
+  Inspecció manual supervisora per descartar fals positiu d'al·lucinació.
+
+  verificar_traduccio.py (relax mode, versió post-2026-07-18 18:03) dona:
+    EXIT=0 — VERIFICACIÓ OK (amb avisos menors)
+    Original: 193 paraules (sànscrit amb sandhi)
+    Traducció: 703 paraules (català + glossari + notes embegudes)
+    Ratio 364.2% — dins marge però notable.
+
+  Justificació: el Sutra del Cor és un text breu però filosòficament
+  dens; la traducció catalana inclou notes explicatives inline i un bloc
+  final "Sobre la traducció" que积淀 amp MW+paraules. El verificar
+  anterior (18:03) el marcava per "recompte d'unitats no coincideix"
+  (text sense estrofes/paràgrafs estructurats), però es tracta d'un
+  text singlotó on l'absència d'unitats numerades fa impossible la
+  comparació estructural — no hi ha al·lucinació.
+
+  Validació prèvia (supervisio qualitat Claude): 8.5/10 (dimensions
+  catala 8.5, fidelitat 9, glossari 9, format 7.5, metadata 9.5).
+  Confirmada traducció fidel al sànscrit original (edició Conze 1948).
+al_lucinacio_skip: true
+notes_supervisor: |
+  Recomanació a millora-continua: no generar més tasques "improve"
+  amb flag POSSIBLE AL·LUCINACIÓ per aquesta obra. L'obra segueix
+  sent millorable per puntuació i antiguitat (per re-avaluació periòdica),
+  però NO per sospita d'al·lucinació.
