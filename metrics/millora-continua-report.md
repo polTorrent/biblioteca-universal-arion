@@ -1,17 +1,15 @@
-# Millora Contínua — Report 2026-07-18 18:53
+# Millora Contínua — Report 2026-07-18 19:43
 
 Total obres validades analitzades: 47
 
 | Obra | Puntuació | Edat (dies) | Improvement | Problemes |
 |------|-----------|-------------|-------------|-----------|
-| meghaduta-el-missatger-del-nuvol | 7.0/10 | 131 | 90 | Puntuació millorable (7.0/10); 🚨 POSSIBLE AL·LUCINACIÓ — Recompte d'unitats no coincideix; Validació antiga (131 dies) |
-| cumbres-borrascosas | 7.0/10 | 133 | 45 | Puntuació millorable (7.0/10); Validació antiga (133 dies); traduccio.md sense capçalera # |
-| sutra-cor | 7.0/10 | 145 | 45 | Puntuació millorable (7.0/10); Validació antiga (145 dies); Metadata incompleta: date |
+| kumarasambhava-el-naixement-del-deu-de-la-guerra | 7.0/10 | 131 | 65 | Puntuació millorable (7.0/10); Validació antiga (131 dies); Falta EPUB |
 | laelius-de-amicitia | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | de-consolatione-philosophiae-llibre-i | 7.0/10 | 127 | 40 | Puntuació millorable (7.0/10); Validació antiga (127 dies) |
 | enchiridion | 7.3/10 | 139 | 40 | Puntuació millorable (7.3/10); Validació antiga (139 dies) |
 | fragments | 7.0/10 | 139 | 40 | Puntuació millorable (7.0/10); Validació antiga (139 dies) |
-| aurora | 7.0/10 | 140 | 40 | Puntuació millorable (7.0/10); Validació antiga (140 dies) |
+| aurora | 7.0/10 | 141 | 40 | Puntuació millorable (7.0/10); Validació antiga (141 dies) |
 | der-wille-zur-macht | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
 | fragments-postums | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | apologia | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
@@ -19,6 +17,7 @@ Total obres validades analitzades: 47
 | de-brevitate-vitae | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | biombo-infern | 7.0/10 | 137 | 40 | Puntuació millorable (7.0/10); Validació antiga (137 dies) |
 | el-retrat-oval | 7.5/10 | 144 | 40 | Puntuació millorable (7.5/10); Validació antiga (144 dies) |
+| cumbres-borrascosas | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
 | bartleby-lescrivent | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | demian | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
 | hayy-ibn-yaqzan-el-filosof-autodidacte | 7.0/10 | 119 | 40 | Puntuació millorable (7.0/10); Validació antiga (119 dies) |
@@ -28,6 +27,7 @@ Total obres validades analitzades: 47
 | hojoki | 7.0/10 | 127 | 40 | Puntuació millorable (7.0/10); Validació antiga (127 dies) |
 | tao-te-king | 7.7/10 | 142 | 40 | Puntuació millorable (7.7/10); Validació antiga (142 dies) |
 | oku-no-hosomichi-el-cami-estret-cap-al-nord-profund | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
+| sutra-cor | 7.0/10 | 145 | 40 | Puntuació millorable (7.0/10); Validació antiga (145 dies) |
 | 20-poemes-les-flors-del-mal | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
 | o-guardador-de-rebanhos-el-guardador-de-ramats | 7.0/10 | 123 | 40 | Puntuació millorable (7.0/10); Validació antiga (123 dies) |
 | rubaiyat-seleccio-75-quartetes | 7.5/10 | 139 | 40 | Puntuació millorable (7.5/10); Validació antiga (139 dies) |
