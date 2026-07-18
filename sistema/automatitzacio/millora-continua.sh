@@ -110,8 +110,15 @@ for cat_dir in sorted(obres_dir.iterdir()):
                 improvement_score += 50
                 problems.append(f"Puntuació molt baixa ({score}/10)")
             elif score < 8.0:
-                improvement_score += 20
-                problems.append(f"Puntuació millorable ({score}/10)")
+                # Puntuació dins el llindar acceptable (>=7/10) en mode
+                # CONSOLIDACIÓ: no és un problema real, només informatiu.
+                # Pondera amb 5 (no 20) per evitar que "envelliment + puntuació
+                # generi una riuada de tasques improve sense valor real.
+                # Les obres a 7.0 es milloraran quan es detecti un problema
+                # estructural real (auditor 09 cada 12h, al·lucinació, falta
+                # de portada, notes trencades, etc.).
+                improvement_score += 5
+                problems.append(f"Puntuació dins llindar ({score}/10)")
 
             # ── 1b. CHECK AL·LUCINACIÓ (PRIORITAT MÀXIMA) ──
             original_file = obra_dir / 'original.md'
@@ -145,10 +152,13 @@ for cat_dir in sorted(obres_dir.iterdir()):
                 continue
 
             if age_days > 90:
-                improvement_score += 20
+                # Envelliment informatiu, no problema real per se. Pondera
+                # amb 5 (no 20) per evitar la riuada de tasques improve
+                # cosmètiques (vegeu nota del bloc de puntuació).
+                improvement_score += 5
                 problems.append(f"Validació antiga ({age_days} dies)")
             elif age_days > 60:
-                improvement_score += 10
+                improvement_score += 2
                 problems.append(f"Validació envellint ({age_days} dies)")
 
             # ── 3. Portada ──
@@ -339,7 +349,20 @@ with open(report_file, 'w') as f:
     f.write(report_text)
 
 # ── Seleccionar obres ──
-selected = [r for r in results if r['improvement_score'] > 0]
+# Llindar REAL_PROBLEM_THRESHOLD = 30: només es generen tasques improve quan
+# l'improvement_score és prou alt (problemàtica REAL acumulada). Per sota
+# del llindar hi queden només flags cosmètics (envelliment +5/+2, puntuació
+# 7-8 +5) que, combinats, sumen com a molt 12 — i per tant no generen tasques.
+# Així s'evita la riuada de tasques improve sense valor real que saturaven
+# la cua i feien caure el worker en un bucle de fracàs 0s (Venice chat
+# rebutja executar shell).
+# Real catch confirmat: al·lucinació (+50), score<7.0 (+50), manca de
+# traduccio.md (+30), manca total de metadata (+30), "no web.html" + altre
+# structural, notes trencades múltiples, etc. Els problemes estructurals
+# individuals (portada sola, glossari pobre sol) els continua cobrint el
+# mòdul 09-audit-catalog.sh cada 12h, independentment d'aquest script.
+REAL_PROBLEM_THRESHOLD = 30
+selected = [r for r in results if r['improvement_score'] >= REAL_PROBLEM_THRESHOLD]
 if not select_all:
     selected = selected[:max_obres]
 
@@ -425,18 +448,27 @@ echo "$output" | while IFS='|' read -r action rest; do
             ;;
         TASK)
             IFS='|' read -r obra_name relpath instruction <<< "$rest"
-            # Dedup: si ja existeix una tasca pending/running amb el mateix
-            # patró (obra + millora-contínua), no en creem una de nova.
-            # Això evita la cua omplint-se de tasques improve duplicades que
-            # es feien cada heartbeat.
+            # Dedup: si ja existeix una tasca per aquesta obra (patró
+            # "MILLORA CONTÍNUA de '<obra>'") en qualsevol estat de la cua,
+            # no en creem una de nova. Abans el dedup només mirava pending/
+            # i running/, amb la qual cosa les tasques fallides a failed/ i
+            # failed_permanent/ quedaven invisibles i millora-continua les
+            # recreava una i altra vegada -> bucle infinit sense progrés
+            # (vegeu sade-justine i la retirada supervisora de 6 improve_*
+            # el 2026-07-18). Ara també es comprova failed/ i
+            # failed_permanent/. Per reintentar una obra, esborra el fitxer
+            # corresponent a failed_permanent/ i la pròxima execució la
+            # tornarà a encuar si encara té improvement_score > 0.
             dedup_pattern="MILLORA CONTÍNUA de '${obra_name}'"
             existing=""
-            if [ -d "$TASKS_DIR/pending" ]; then
-                existing=$(grep -lF "$dedup_pattern" "$TASKS_DIR/pending/"*.json 2>/dev/null | head -1)
-                [ -z "$existing" ] && [ -d "$TASKS_DIR/running" ] && existing=$(grep -lF "$dedup_pattern" "$TASKS_DIR/running/"*.json 2>/dev/null | head -1)
-            fi
+            for sub in pending running failed failed_permanent; do
+                if [ -z "$existing" ] && [ -d "$TASKS_DIR/$sub" ]; then
+                    existing=$(grep -lF "$dedup_pattern" "$TASKS_DIR/$sub/"*.json 2>/dev/null | head -1)
+                    [ -n "$existing" ] && dedup_state="$sub"
+                fi
+            done
             if [ -n "$existing" ]; then
-                log "  ⏭️ Tasca improve per '$obra_name' ja existeix: $(basename "$existing"). No se'n crea una de nova."
+                log "  ⏭️ Tasca improve per '$obra_name' ja existeix ($dedup_state/): $(basename "$existing"). No se'n crea una de nova."
             else
                 log "  Creant tasca improve per: $obra_name"
                 bash "$TASK_MANAGER" add improve "$instruction" 2>/dev/null
