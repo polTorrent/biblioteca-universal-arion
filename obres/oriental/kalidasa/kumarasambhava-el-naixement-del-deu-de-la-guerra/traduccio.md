@@ -1095,14 +1095,6 @@ Llavors respongué així el Senyor de la Glòria, mentre
   després trobeu-me on aquest torrent poderós bramula
   pel canal escarpat amb les ones precipitades."
 
-Hi ha una contradicció important en la teva sol·licitud que cal aclarir:
-**Problema detectat**: Indiques que el text està en **llatí**, però el text proporcionat està clarament escrit en **anglès**. Es tracta d'un passatge poètic en anglès que sembla ser una traducció de l'obra sànscrita "Meghaduta" de Kalidasa.
-**Opcions per procedir: **
-1. **Si vols que tradueixi l'anglès al català**: Puc traduir aquest passatge poètic de l'anglès al català literari, respectant el to elevat i la temàtica oriental.
-2. **Si realment tens un text en llatí**: Hauries de proporcionar-me el text real en llatí que vols traduir.
-3. **Si busques l'original sànscrit**: "Meghaduta" va ser escrit originalment en sànscrit per Kalidasa, no en llatí.
-Pots aclarir quin és l'idioma font real que vols que tradueixi? Així podré oferir-te una traducció precisa amb el format JSON sol·licitat.
-
 Ah! Per què haurien els mortals de lluitar amb tan cruel afany
 per guanyar el cel i els seus goigs amb dolor i pena?
 Fins i tot els Sants els envejaren quan s'aproparen,

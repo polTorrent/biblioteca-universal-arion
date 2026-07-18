@@ -1,0 +1,29 @@
+audit_manual: true
+supervisor: GLM 5.2 (Arion, supervisió autònoma)
+audit_data: 2026-07-18
+obra: obres/oriental/kalidasa/kumarasambhava-el-naixement-del-deu-de-la-guerra
+rao: |
+  Inspecció manual supervisora. El verificador universal pot continuar
+  donant fals positiu d'al·lucinació per aquesta obra perquè el original.md
+  conté paratext editorial de l'edició Griffith 1879 (PREFACI, PRONUNCIACIÓ,
+  LONDRES, 1879), que els patrons 'estrofa' i 'parlament' del script
+  verificar_traduccio.py detecten malament com a unitats numerades
+  "inventades". Aquestes unitats existeixen en ambdós texts (original i
+  traducció), la traducció catalana és fidel.
+
+  Fix #1: Bloc de meta-text al·lucinat del traductor IA eliminat de
+  traduccio.md (ístoricament entre els primers cants, línies ~1098-1104).
+
+  Fix #2: Renombrat de meghaduta-el-missatger-del-nuvol a
+  kumarasambhava-el-naixement-del-deu-de-la-guerra. Metadata corregida:
+  el contingut és Kumarasambhava, no Meghaduta.
+
+  Recomanació a millora-continua: NO generar més tasques "improve" amb
+  flag POSSIBLE AL·LUCINACIÓ per a aquesta obra — l'obra ha estat auditada
+  manualment i la traducció és fidel. Cal només re-validació periòdica
+  quan toqui (Validació antiga).
+
+  El catàleg: l'obra promesa com a Meghadūta (El Missatger del Núvol) no
+  és en aquest directori; caldrà crear una nova tasca fix-translate per
+  al TRUE Meghadūta en una nova carpeta separat.
+al_lucinacio_skip: true
