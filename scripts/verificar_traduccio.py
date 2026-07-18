@@ -156,9 +156,27 @@ def detectar_genere_dominant(text: str) -> str:
 
 
 def comptar_paraules(text: str) -> int:
-    """Compta paraules d'un text (ignorant markdown)."""
+    """Compta unitats significatives d'un text (ignorant markdown).
+
+    Per a texts escrits en escriptura sense espais entre paraules
+    (japonès hiragana/katakana, kanji, xinès Han, coreà Hangul,
+    sànscrit devanagari) `split()` no és vàlid: només comptaria els
+    fragments llatins intercalats (romanitzacions, signes) i donaria
+    valors minúsculs que produirien falsos positius d'"al·lucinació"
+    a la verificació perquè la traducció catalana sí que té
+    separadors d'espai.
+
+    Estratègia híbrida: comptar els caràcters CJK + els tokens llatins
+    restants. Així el recompte d'unitats queda comparable entre
+    original i traducció, independentment de l'escriptura.
+    """
     net = re.sub(r'[#*_`\[\]()>|]', ' ', text)
-    return len(net.split())
+    # Caràcters CJK + japonés hiragana/katakana + coreà Hangul + sànscrit devanagari
+    cjk = len(re.findall(r'[\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af\u0900-\u097f]', net))
+    # Treure aquests caràcters i comptar tokens llatins restants per espais
+    net_latin = re.sub(r'[\u3040-\u30ff\u4e00-\u9fff\uac00-\ud7af\u0900-\u097f]', ' ', net)
+    tokens_latin = len(net_latin.split())
+    return cjk + tokens_latin
 
 
 def verificar(original_path: str, traduccio_path: str,

@@ -159,3 +159,7 @@ Fins a aquest pensador seriós, ningú no havia dubtat del següent. En primer l
 El passatge principal de Kant sobre el principi de raó suficient es troba en l'opuscle *Sobre un descobriment segons el qual tota la Crítica de la raó pura hauria de ser superfluïtzada*, concretament en la primera secció, sota A. Allà Kant insisteix en la distinció entre el principi lògic (formal) del coneixement «tot judici ha de tenir el seu fonament» i el principi transcendental (material) «tota cosa ha de tenir el seu fonament», en polèmica contra Eberhard, que havia volgut identificar-los. — La seva prova de l'aprioritat i, per tant, de la transcendentalitat de la llei de causalitat la criticaré més endavant en un paràgraf propi, un cop hauré ofert prèviament la que és l'única correcta.
 
 Després d'aquests predecessors, els nombrosos manuals de lògica que ha produït l'escola kantiana, com els de Hofbauer, Maaß, Jakob, Kiesewetter i d'altres, determinen la distinció entre fonament del coneixement i causa amb força precisió. Kiesewetter en particular dóna
+
+---
+
+*Traducció de domini públic.*

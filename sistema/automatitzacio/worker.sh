@@ -196,11 +196,37 @@ estimate_task_cost() {
 # Amb argument: comprova que DIEM - DIEM_RESERVE >= cost_estimat
 check_diem() {
     local estimated_cost="${1:-}"
+
+    # ── DIEM STOP file check (ràpid, sense cridar Venice) ──
+    # Si hi ha fitxer diem_stop, sortim immediatament. Serà eliminat
+    # per reset-diem.sh (00:00 UTC) quan el crèdit/limitkey es restableixi.
+    if [ -f "$DIEM_STOP" ]; then
+        log "🛑 DIEM STOP actiu ([ -f $DIEM_STOP ]). Worker pausat fins al reset."
+        return 1
+    fi
+
+    # ── Detectar 402 explícitament abans de parsejar balance ──
+    # Venice CLI escriu "Error (402): ..." a stderr quan l'API key ha
+    # superat el límit de despesa USD. Capturem-ho per evitar falses
+    # lecturas (la sortida buida s'interpretava com "continuar amb
+    # precaució" i el worker es pensava que tenia pressupost infinit).
+    local raw_err
+    raw_err=$(python3 "$VENICE_CLI" balance 2>&1 >/dev/null | grep -iE "USD spend limit|API key.*spend" | head -1)
+    if [ -n "$raw_err" ]; then
+        log "⛔ API key USD spend limit exceeded. Pausant worker fins al reset."
+        touch "$DIEM_STOP"
+        bash "$PROJECT_DIR/sistema/automatitzacio/modules/11-shutdown-report.sh" "blocked" "0" "${estimated_cost:-0}" 2>/dev/null || true
+        return 1
+    fi
+
     local balance
     balance=$(python3 "$VENICE_CLI" balance 2>/dev/null | grep -oP '[\d.]+' | head -1)
-    
+
     if [ -z "$balance" ]; then
-        log "⚠️ No s'ha pogut obtenir el saldo DIEM. Continuant amb precaució."
+        # ── Balance sense resposta: error transitoris o API down ──
+        # No parem el worker directament; així pot continuar tasques que
+        # no requiresquen Venice (admin/tasques locals). Però ho avisem.
+        log "⚠️ No s'ha pogut obtenir el saldo DIEM (API sense resposta o block). Continuant amb precaució."
         return 0
     fi
 

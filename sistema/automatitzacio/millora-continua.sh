@@ -63,11 +63,16 @@ day30 = 30 * 86400
 day60 = 60 * 86400
 day90 = 90 * 86400
 
-# Llegir docs/index.html per verificar presència web
-web_content = ''
-index_html = docs_dir / 'index.html'
-if index_html.exists():
-    web_content = index_html.read_text(errors='ignore')
+# Llegir docs/data/*.json i docs/index.html per verificar presència web.
+# La web de Biblioteca Arion carrega el catàleg via JSON (docs/data/cataleg-traduccions.json
+# i docs/data/search-index.json); el slug de cada obra apareix com a href o filename "slug.html".
+# Per això cal comprovar el SLUG (no obra_name) en aquests fitxers de dades, i també que
+# existeixi docs/{slug}.html.
+web_data_content = ''
+for jf in ['data/cataleg-traduccions.json', 'data/search-index.json', 'index.html']:
+    p = docs_dir / jf
+    if p.exists():
+        web_data_content += p.read_text(errors='ignore') + '\n'
 
 results = []
 
@@ -219,7 +224,21 @@ for cat_dir in sorted(obres_dir.iterdir()):
                     problems.append(f"Línies problemàtiques: {', '.join(unique_bad[:5])}")
 
                 # Extreure referències [N] per comprovar notes
-                note_refs = set(re.findall(r'\[(\d+)\]', trad_text))
+                # S'exclouen els [N] que estan enganxats a un caràcter alfanumèric
+                # (com els "Fragment 7[21]" de KSA-Nietzsche, que són referències
+                # editorials i no pas notes del traductor). Sense això, fragments-postums
+                # i altres obres amb notació "Fragment N[M]" es marcaven falsament.
+                note_refs = set(re.findall(r'(?<![A-Za-z0-9À-ÿ])\[(\d+)\](?![A-Za-z0-9À-ÿ])', trad_text))
+                # Notes definides INLINE al final del propi traduccio.md
+                # (format clàssic "^[1] Text..." o "[1] Text..." a inici de línia)
+                # Aquestes no són "rocades": són les definicions reals del peu.
+                # Sense aquest filtre, obres com hayy-ibn-yaqzan o micromegas
+                # es marcaven falsament com a "notes trencades" quan de fet les
+                # notes hi estan embedides correctament.
+                inline_defined = set(re.findall(r'^\s*[\^]?\[(\d+)\][\s\.\,\;\:\u2014\u2026\)]', trad_text, re.MULTILINE))
+                # Notes Markdown footnotes [^N]: definicions a peu de pàgina clàssic
+                inline_defined |= set(re.findall(r'^\[\^(\d+)\]:', trad_text, re.MULTILINE))
+                note_refs = note_refs - inline_defined
             else:
                 improvement_score += 30
                 problems.append("Falta traduccio.md")
@@ -238,9 +257,16 @@ for cat_dir in sorted(obres_dir.iterdir()):
             glossari_file = obra_dir / 'glossari.yml'
             if glossari_file.exists():
                 glossari_text = glossari_file.read_text(errors='ignore').strip()
-                # Comptar entrades (línies amb - al principi o claus YAML)
-                entries = len(re.findall(r'^-\s', glossari_text, re.MULTILINE))
+                # Comptar entrades: normalment cada entrada és una línia YAML
+                # amb `  - original: ...`. Per això cal un patró que permeti
+                # espais inicials (indentació YAML) abans del ` - `. El patró
+                # `^-\s` (anterior) no coincideix amb línies indentades i donava
+                # fals positius: es queia al fallback `^\w.*:` que només comptava
+                # el nom de la clau arrel (p.ex "termes:"), marcant gairebé tots
+                # els glossaris com a "pobres (1 entrada)".
+                entries = len(re.findall(r'^\s*-\s', glossari_text, re.MULTILINE))
                 if entries == 0:
+                    # Fallback: comptar claus al primer nivell (format pla)
                     entries = len(re.findall(r'^\w.*:', glossari_text, re.MULTILINE))
                 if entries < 3:
                     improvement_score += 5
@@ -254,10 +280,19 @@ for cat_dir in sorted(obres_dir.iterdir()):
                 improvement_score += 5
                 problems.append("Falta EPUB")
 
-            # ── 9. Web (presència a docs/index.html) ──
-            if web_content and obra_name not in web_content:
+            # ── 9. Web (presència a docs/{slug}.html + dades JSON) ──
+            # El bug anterior cercava `obra_name` literal dins docs/index.html,
+            # però l'index.html carrega els continguts via JS/JSON, o sigui que
+            # mai trobava el nom i marcava totes les obres com "no apareix a la web".
+            # Ara fem la comprovació correcta amb el SLUG real.
+            obra_html_file = docs_dir / f"{slug}.html"
+            slug_in_web_data = (f"{slug}.html" in web_data_content) or (slug in web_data_content)
+            if not obra_html_file.exists():
                 improvement_score += 20
-                problems.append("No apareix a la web (docs/index.html)")
+                problems.append(f"No apareix a la web (falta docs/{slug}.html)")
+            elif not slug_in_web_data:
+                improvement_score += 15
+                problems.append(f"Slug '{slug}' no indexat al catàleg web (data/*.json)")
 
             results.append({
                 'obra_name': obra_name,
@@ -385,8 +420,22 @@ echo "$output" | while IFS='|' read -r action rest; do
             ;;
         TASK)
             IFS='|' read -r obra_name relpath instruction <<< "$rest"
-            log "  Creant tasca improve per: $obra_name"
-            bash "$TASK_MANAGER" add improve "$instruction" 2>/dev/null
+            # Dedup: si ja existeix una tasca pending/running amb el mateix
+            # patró (obra + millora-contínua), no en creem una de nova.
+            # Això evita la cua omplint-se de tasques improve duplicades que
+            # es feien cada heartbeat.
+            dedup_pattern="MILLORA CONTÍNUA de '${obra_name}'"
+            existing=""
+            if [ -d "$TASKS_DIR/pending" ]; then
+                existing=$(grep -lF "$dedup_pattern" "$TASKS_DIR/pending/"*.json 2>/dev/null | head -1)
+                [ -z "$existing" ] && [ -d "$TASKS_DIR/running" ] && existing=$(grep -lF "$dedup_pattern" "$TASKS_DIR/running/"*.json 2>/dev/null | head -1)
+            fi
+            if [ -n "$existing" ]; then
+                log "  ⏭️ Tasca improve per '$obra_name' ja existeix: $(basename "$existing"). No se'n crea una de nova."
+            else
+                log "  Creant tasca improve per: $obra_name"
+                bash "$TASK_MANAGER" add improve "$instruction" 2>/dev/null
+            fi
             ;;
         SUMMARY)
             IFS='|' read -r total ok prob selected <<< "$rest"

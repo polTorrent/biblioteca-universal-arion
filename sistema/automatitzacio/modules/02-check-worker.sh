@@ -4,9 +4,17 @@ MODULE_NAME="check-worker"
 source "${BASH_SOURCE[0]%/*}/common.sh"
 
 check_worker() {
-    if pgrep -f "worker\.sh" > /dev/null 2>&1; then
+    if pgrep -f "worker\\.sh" > /dev/null 2>&1; then
         log "✅ Worker actiu"
         log_json "info" "worker_active=true"
+        return 0
+    fi
+    # ── No reiniciar si hi ha diem_stop actiu ──
+    # El worker.sh ja respecta aquest fitxer (mateix torna a sortir);
+    # tornar-lo a engegar seria un cicle de restart inútil.
+    if [ -f "$PROJECT/sistema/state/diem_stop" ]; then
+        log "⏸️ Worker NO actiu però diem_stop actiu — no es reinicia fins al reset (00:00 UTC)"
+        log_json "warning" "worker_active=false, diem_stop=true, no restart"
         return 0
     fi
     log "⚠️ Worker NO actiu. Reiniciant..."
