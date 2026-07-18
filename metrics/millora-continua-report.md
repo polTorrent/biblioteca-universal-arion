@@ -1,10 +1,9 @@
-# Millora Contínua — Report 2026-07-18 20:17
+# Millora Contínua — Report 2026-07-18 20:36
 
 Total obres validades analitzades: 47
 
 | Obra | Puntuació | Edat (dies) | Improvement | Problemes |
 |------|-----------|-------------|-------------|-----------|
-| kumarasambhava-el-naixement-del-deu-de-la-guerra | 7.0/10 | 131 | 60 | Puntuació millorable (7.0/10); Validació antiga (131 dies); No apareix a la web (falta docs/kalidasa-kumarasambhava-el-naixement-del-deu-de-la-guerra.html) |
 | laelius-de-amicitia | 7.0/10 | 125 | 40 | Puntuació millorable (7.0/10); Validació antiga (125 dies) |
 | de-consolatione-philosophiae-llibre-i | 7.0/10 | 127 | 40 | Puntuació millorable (7.0/10); Validació antiga (127 dies) |
 | enchiridion | 7.3/10 | 139 | 40 | Puntuació millorable (7.3/10); Validació antiga (139 dies) |
@@ -24,6 +23,7 @@ Total obres validades analitzades: 47
 | la-transformacio | 7.98/10 | 142 | 40 | Puntuació millorable (7.98/10); Validació antiga (142 dies) |
 | metamorfosis-seleccio-5-mites | 7.0/10 | 129 | 40 | Puntuació millorable (7.0/10); Validació antiga (129 dies) |
 | micromegas | 7.0/10 | 124 | 40 | Puntuació millorable (7.0/10); Validació antiga (124 dies) |
+| kumarasambhava-el-naixement-del-deu-de-la-guerra | 7.0/10 | 131 | 40 | Puntuació millorable (7.0/10); Validació antiga (131 dies) |
 | hojoki | 7.0/10 | 127 | 40 | Puntuació millorable (7.0/10); Validació antiga (127 dies) |
 | tao-te-king | 7.7/10 | 142 | 40 | Puntuació millorable (7.7/10); Validació antiga (142 dies) |
 | oku-no-hosomichi-el-cami-estret-cap-al-nord-profund | 7.0/10 | 133 | 40 | Puntuació millorable (7.0/10); Validació antiga (133 dies) |
