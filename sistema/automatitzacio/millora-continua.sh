@@ -116,7 +116,12 @@ for cat_dir in sorted(obres_dir.iterdir()):
             # ── 1b. CHECK AL·LUCINACIÓ (PRIORITAT MÀXIMA) ──
             original_file = obra_dir / 'original.md'
             traduccio_file = obra_dir / 'traduccio.md'
-            if original_file.exists() and traduccio_file.exists():
+            audit_manual_file = obra_dir / '.audit_manual'
+            audit_skip_allucinacio = (
+                audit_manual_file.exists()
+                and 'al_lucinacio_skip' in audit_manual_file.read_text(errors='ignore')
+            )
+            if (not audit_skip_allucinacio) and original_file.exists() and traduccio_file.exists():
                 import subprocess
                 verificador = Path(project) / 'scripts' / 'verificar_traduccio.py'
                 if verificador.exists():
