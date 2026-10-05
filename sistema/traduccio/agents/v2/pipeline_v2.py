@@ -33,7 +33,7 @@ from typing import TYPE_CHECKING, Callable, Literal
 
 from pydantic import BaseModel, Field
 
-from agents.base_agent import AgentConfig, ContentFilterError
+from agents.base_agent import AgentConfig, ContentFilterError, model_subscripcio_per_genere
 
 # Importar resolució canònica d'autors
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))), 'config'))
@@ -289,6 +289,7 @@ class PipelineV2:
         corpus_path: str | None = None,
         logger: "AgentLogger | None" = None,
         on_progress: Callable[[str, float], None] | None = None,
+        genere: str | None = None,
     ) -> None:
         """Inicialitza el pipeline.
 
@@ -298,7 +299,11 @@ class PipelineV2:
             corpus_path: Ruta al corpus d'exemples few-shot.
             logger: Logger per al seguiment.
             on_progress: Callback per reportar progrés (fase, percentatge).
+            genere: Gènere literari. Si no es passa `agent_config`, tria el
+                model de subscripció segons `subscription:<genere>` (models.conf).
         """
+        if agent_config is None and genere:
+            agent_config = AgentConfig(model=model_subscripcio_per_genere(genere))
         self.config = config or ConfiguracioPipelineV2()
         self.agent_config = agent_config
         self.logger = logger
