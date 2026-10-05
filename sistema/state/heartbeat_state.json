@@ -1,7 +1,7 @@
 {
-  "timestamp": "2026-07-18T19:13:03.722560+00:00Z",
+  "timestamp": "2026-07-24T20:05:03.753976+00:00Z",
   "validated_works": 47,
   "needs_fix_works": 0,
-  "pending_tasks": 0,
-  "worker_active": true
+  "pending_tasks": 4,
+  "worker_active": false
 }

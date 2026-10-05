@@ -1019,3 +1019,175 @@
 {"ts":"2026-07-18T19:13:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
 {"ts":"2026-07-18T19:13:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
 {"ts":"2026-07-18T19:13:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-18T20:05:02Z","module":"check-diem","type":"info","msg":"DIEM=7.07848835 available=6.5785"}
+{"ts":"2026-07-18T20:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-18T20:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-18T20:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-18T20:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-18T20:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-18T20:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-18T20:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-19T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=4.256437625341121 available=3.7564"}
+{"ts":"2026-07-19T14:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-19T14:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-19T14:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-19T14:05:12Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-07-19T14:05:12Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-19T14:05:13Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-19T14:05:13Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-19T14:05:13Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-19T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=4.256263275341121 available=3.7563"}
+{"ts":"2026-07-19T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-19T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-19T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-19T16:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-19T16:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-19T16:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-19T16:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-19T18:05:02Z","module":"check-diem","type":"info","msg":"DIEM=0.834688325341121 available=0.3347"}
+{"ts":"2026-07-19T18:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-19T18:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-19T18:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-19T18:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-19T18:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-19T18:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-19T18:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-19T20:05:03Z","module":"check-diem","type":"info","msg":"DIEM=0.834513975341121 available=0.3345"}
+{"ts":"2026-07-19T20:05:03Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-19T20:05:03Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-19T20:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-19T20:05:03Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-19T20:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-19T20:05:04Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-19T20:05:04Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-21T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=2.6832579053411205 available=2.1833"}
+{"ts":"2026-07-21T14:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-21T14:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-21T14:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-21T14:05:13Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-07-21T14:05:13Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-21T14:05:14Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-21T14:05:14Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-21T14:05:14Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-21T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=2.5899928053411205 available=2.09"}
+{"ts":"2026-07-21T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-21T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-21T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-21T16:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-21T16:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-21T16:05:04Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-21T16:05:04Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-21T18:05:01Z","module":"check-diem","type":"info","msg":"DIEM=2.5333191053411213 available=2.0333"}
+{"ts":"2026-07-21T18:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-21T18:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-21T18:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-21T18:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-21T18:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-21T18:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-21T18:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-21T20:05:02Z","module":"check-diem","type":"info","msg":"DIEM=2.4329507353411213 available=1.933"}
+{"ts":"2026-07-21T20:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-21T20:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-21T20:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-21T20:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-21T20:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-21T20:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-21T20:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-22T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=4.159405335341122 available=3.6594"}
+{"ts":"2026-07-22T14:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-22T14:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-22T14:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-22T14:05:15Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-07-22T14:05:15Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-22T14:05:15Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-22T14:05:16Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-22T14:05:16Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-22T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=3.896103985341121 available=3.3961"}
+{"ts":"2026-07-22T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-22T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-22T16:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-22T16:05:03Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-22T16:05:04Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-22T16:05:05Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-22T16:05:05Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-22T18:05:03Z","module":"check-diem","type":"info","msg":"DIEM=3.895929635341121 available=3.3959"}
+{"ts":"2026-07-22T18:05:03Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-22T18:05:03Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-22T18:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-22T18:05:03Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-22T18:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-22T18:05:04Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-22T18:05:04Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-22T20:05:01Z","module":"check-diem","type":"info","msg":"DIEM=3.7571912853411202 available=3.2572"}
+{"ts":"2026-07-22T20:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-22T20:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-22T20:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-22T20:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-22T20:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-22T20:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-22T20:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-23T14:05:02Z","module":"check-diem","type":"info","msg":"DIEM=7.553337765341121 available=7.0533"}
+{"ts":"2026-07-23T14:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-23T14:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-23T14:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-23T14:05:13Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-07-23T14:05:13Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-23T14:05:14Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-23T14:05:14Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-23T14:05:14Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-23T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=4.163033665341121 available=3.663"}
+{"ts":"2026-07-23T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-23T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-23T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-23T16:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-23T16:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-23T16:05:04Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-23T16:05:04Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-23T18:05:01Z","module":"check-diem","type":"info","msg":"DIEM=3.5253810653411204 available=3.0254"}
+{"ts":"2026-07-23T18:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-23T18:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-23T18:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-23T18:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-23T18:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-23T18:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-23T18:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-23T20:05:02Z","module":"check-diem","type":"info","msg":"DIEM=3.3468679653411204 available=2.8469"}
+{"ts":"2026-07-23T20:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-23T20:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-23T20:05:03Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-23T20:05:03Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-23T20:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-23T20:05:05Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-23T20:05:05Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-24T14:05:01Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-24T14:05:01Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-24T14:05:01Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-24T14:05:12Z","module":"audit-catalog","type":"info","msg":"audit_completed"}
+{"ts":"2026-07-24T14:05:12Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-24T14:05:12Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-24T14:05:13Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-24T14:05:13Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-24T16:05:02Z","module":"check-diem","type":"info","msg":"DIEM=10.79950126534112 available=10.2995"}
+{"ts":"2026-07-24T16:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-24T16:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-24T16:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-24T16:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-24T16:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-24T16:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-24T16:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-24T18:05:02Z","module":"check-diem","type":"info","msg":"DIEM=10.38402845534112 available=9.884"}
+{"ts":"2026-07-24T18:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-24T18:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-24T18:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-24T18:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-24T18:05:03Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-24T18:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-24T18:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
+{"ts":"2026-07-24T20:05:02Z","module":"check-diem","type":"info","msg":"DIEM=9.79163425534112 available=9.2916"}
+{"ts":"2026-07-24T20:05:02Z","module":"check-worker","type":"info","msg":"worker_active=true"}
+{"ts":"2026-07-24T20:05:02Z","module":"check-failed","type":"info","msg":"checking_failed_tasks"}
+{"ts":"2026-07-24T20:05:02Z","module":"audit-catalog","type":"info","msg":"auditing_catalog"}
+{"ts":"2026-07-24T20:05:02Z","module":"check-supervision","type":"info","msg":"checking_supervision"}
+{"ts":"2026-07-24T20:05:02Z","module":"check-translations","type":"info","msg":"checking_translations"}
+{"ts":"2026-07-24T20:05:03Z","module":"check-maintenance","type":"info","msg":"checking_maintenance"}
+{"ts":"2026-07-24T20:05:03Z","module":"generate-report","type":"info","msg":"generating_report"}
