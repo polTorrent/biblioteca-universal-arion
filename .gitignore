@@ -98,3 +98,14 @@ data/propostes.json
 data/usuaris.json
 corpus_estil/
 *.corpus.json
+
+# Arion runtime & temporals
+_tmp_*
+*.bak
+*.bak.*
+*.orig
+*:Zone.Identifier
+sistema/state/quota_raw.txt
+sistema/desenvolupament/state/
+sistema/desenvolupament/dev-worker.log
+sistema/desenvolupament/backlog/running/
