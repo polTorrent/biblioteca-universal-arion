@@ -2,7 +2,6 @@
 títol: Migrar el heartbeat a cron de Hermes
 prioritat: 2
 estat: pending
-requereix_vistiplau: true
 ---
 # Migrar el heartbeat a cron de Hermes
 

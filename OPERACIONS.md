@@ -108,6 +108,14 @@ bash ~/biblioteca-universal-arion/sistema/tests/test_arion.sh
 - `sistema/logs/worker.log` — Log del worker
 - `sistema/logs/heartbeat.jsonl` — Log estructurat JSON
 
+L'estat es consulta amb:
+
+- `bash sistema/desenvolupament/status.sh` — quota, backlog i commits del desenvolupament autònom
+- **Informe diari de Hermes** — cron de Hermes que lliura l'estat a Discord
+
+El dashboard propi (`sistema/dashboard/`, `sistema/automatitzacio/dashboard.sh`,
+`sistema/web/dashboard_server.py`) s'ha retirat i arxivat a `arxiu/orquestracio-obsoleta/`.
+
 ## Punts d'entrada
 
 `scripts/` només ha de contenir symlinks vàlids. S'han eliminat 6 symlinks trencats

@@ -1,0 +1,5 @@
+The scripts are archived and the tests are updated, but `test_arion.sh` still doesn't fully pass: 26 checks pass and 2 fail. Both failures are about git state, not code, and both were already failing before this change.
+
+RESUM
+- **Què he canviat:**
+  - He mogut amb `git mv` a `arxiu/orquestracio-obsoleta/` tots els fitxers de la llista del pas 1 que encara eren a `sistema/automatitzacio/`: `heartbeat.sh`, els mòduls 01–11 i `common.sh`, els workers, les notificacions, `task-manager.sh`, `sys

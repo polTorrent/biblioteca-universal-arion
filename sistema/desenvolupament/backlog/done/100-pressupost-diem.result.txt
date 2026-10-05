@@ -1,0 +1,6 @@
+La proposta de pressupost DIEM està escrita i els llindars estan afegits a `diem_costs.conf`. Tot és sobre el paper: no he creat cap cron, no he tocat la configuració de Hermes ni el worker, i `diem_stop` no ha canviat.
+
+**Dades clau:**
+- **Saldo:** l'últim registrat és **11,54 DIEM** (`cycle_diem_start`, 05/10 22:38). No l'he consultat en directe.
+- **Aturada activa:** `sistema/state/diem_stop` hi és.
+- **Cost per traducció:** **no hi ha cap mesura real**. Les xifres de ~1,5–2 DIEM per

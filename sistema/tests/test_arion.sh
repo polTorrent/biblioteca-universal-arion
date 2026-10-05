@@ -7,7 +7,8 @@ PASS=0; FAIL=0; SKIP=0
 
 PROJECT="$HOME/biblioteca-universal-arion"
 TASKS_DIR="$PROJECT/sistema/tasks"
-MODULES_DIR="$PROJECT/sistema/automatitzacio/modules"
+AUTO_DIR="$PROJECT/sistema/automatitzacio"
+MODULES_DIR="$AUTO_DIR/modules"   # arxivat (tasca 120); opcional
 
 green() { echo -e "\033[32m$1\033[0m"; }
 red()   { echo -e "\033[31m$1\033[0m"; }
@@ -54,39 +55,26 @@ echo "════════════════════════�
 echo ""
 echo "📁 Estructura de fitxers"
 assert_dir "Directori projecte" "$PROJECT"
-assert_dir "Mòduls" "$MODULES_DIR"
+assert_dir "Automatització" "$AUTO_DIR"
 assert_dir "Tasques pending" "$TASKS_DIR/pending"
 assert_dir "Tasques running" "$TASKS_DIR/running"
 assert_dir "Tasques done" "$TASKS_DIR/done"
 assert_dir "Tasques failed" "$TASKS_DIR/failed"
 assert_dir "Logs" "$PROJECT/sistema/logs"
 
-# ── Scripts principal ────────────────────────────────────────────────────────
+# ── Orquestració arxivada ───────────────────────────────────────────────────
+# L'orquestració pròpia (heartbeat, worker, notificacions, mòduls) s'ha mogut a
+# arxiu/orquestracio-obsoleta/ (Hermes la substitueix). Només en comprovem l'arxiu.
 echo ""
-echo "📜 Scripts principals"
-assert_file "Heartbeat.sh" "$PROJECT/sistema/automatitzacio/heartbeat.sh"
-assert_file "Worker.sh" "$PROJECT/sistema/automatitzacio/worker.sh"
-assert_file "Notificar.sh" "$PROJECT/sistema/automatitzacio/notificar.sh"
-
-# ── Mòduls ──────────────────────────────────────────────────────────────────
-echo ""
-echo "📦 Mòduls del heartbeat"
-for i in $(seq -w 1 10); do
-    module=$(ls "$MODULES_DIR/${i}"-*.sh 2>/dev/null | head -1)
-    if [ -n "$module" ]; then
-        name=$(basename "$module")
-        assert_file "$name" "$module"
-    fi
-done
-assert_file "common.sh" "$MODULES_DIR/common.sh"
+echo "🗄️  Orquestració arxivada"
+assert_file "Inventari de l'arxiu" "$PROJECT/arxiu/orquestracio-obsoleta/INVENTARI.md"
 
 # ── Sintaxi bash ─────────────────────────────────────────────────────────────
+# Itera només sobre els scripts que existeixen (no falla si modules/ ja no hi és).
 echo ""
 echo "🔤 Validació de sintaxi"
-for script in "$PROJECT/sistema/automatitzacio/heartbeat.sh" \
-             "$PROJECT/sistema/automatitzacio/worker.sh" \
-             "$PROJECT/sistema/automatitzacio/notificar.sh" \
-             "$MODULES_DIR"/*.sh; do
+shopt -s nullglob
+for script in "$AUTO_DIR"/*.sh "$MODULES_DIR"/*.sh; do
     [ -f "$script" ] || continue
     name=$(basename "$script")
     if bash -n "$script" 2>/dev/null; then
@@ -97,6 +85,7 @@ for script in "$PROJECT/sistema/automatitzacio/heartbeat.sh" \
         FAIL=$((FAIL + 1))
     fi
 done
+shopt -u nullglob
 
 # ── Sintaxi Python ──────────────────────────────────────────────────────────
 echo ""
