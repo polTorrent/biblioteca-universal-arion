@@ -25,6 +25,23 @@ Gracies pel teu interes en contribuir a Editorial Classica!
 - Fes els canvis i testa
 - Envia Pull Request
 
+### Pre-commit local
+
+El repositori inclou `.pre-commit-config.yaml` amb `ruff` (lint + format),
+`shellcheck`, `gitleaks` (detecció de secrets) i comprovacions bàsiques
+(`check-yaml`, `end-of-file-fixer`, `trailing-whitespace`). Les obres
+(`obres/`) i les dades generades queden excloses.
+
+```bash
+pip install pre-commit
+pre-commit install            # activa el hook només en aquest repositori
+pre-commit run                # revisa els fitxers preparats (staged)
+pre-commit run --files f.py   # revisa fitxers concrets
+```
+
+Evita `pre-commit run --all-files` sense revisar-ne abans l'abast: el codi
+existent encara té avisos de ruff i shellcheck pendents.
+
 ## Estil de Traduccio
 
 Seguim aquests principis:
