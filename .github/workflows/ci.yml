@@ -85,13 +85,13 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Build web en directori temporal
-        # S'invoca sistema/web/build.py (destí del symlink scripts/build.py) amb
-        # PYTHONPATH a l'arrel: via el symlink, el script calcula malament
-        # l'arrel del projecte i no troba les plantilles.
+        # build.py calcula l'arrel del projecte amb Path.resolve(), per tant
+        # funciona igual invocat directament o via l'enllaç scripts/build.py.
         run: |
           BUILD_DIR="$RUNNER_TEMP/arion-build"
           mkdir -p "$BUILD_DIR"
           git archive HEAD | tar -x -C "$BUILD_DIR"
           cd "$BUILD_DIR"
-          PYTHONPATH="$BUILD_DIR" python3 sistema/web/build.py --clean
+          python3 sistema/web/build.py --clean
           test -f docs/index.html
+          python3 sistema/web/check_links.py
