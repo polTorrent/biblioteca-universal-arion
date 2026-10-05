@@ -1,0 +1,8 @@
+He reescrit el skill `biblioteca-arion-worker` al model Hermes-natiu. La validació passa: les mencions de `heartbeat` han baixat de 53 a 1. No hi ha cap commit perquè `~/.hermes` no és un repositori git i al repositori d'Arion no he tocat res.
+
+```
+RESUM
+- Què he canviat: He reescrit SKILL.md (de 2.280 a 362 línies).
+  · Nova secció «OPERATIVA», en 7 parts:
+    0. comprovacions prèvies: git net, saldo DIEM ≥ 3.0, `diem_stop`;
+    1. tria de l'obra mirant el disc (`.needs_fix` > tradu
