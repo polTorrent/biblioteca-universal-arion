@@ -59,6 +59,9 @@ Jobs de Hermes pausats que encara referencien scripts: *Arion Supervisor*
 | `reset-diem.sh` | 41 | Reinici després del reset de DIEM | Cron de Hermes | **Sí**: `arion-start.sh`, `worker.sh` | Es queda |
 | `boto_propostes_watchdog.sh` | 44 | Regenera el botó de propostes | Cron de Hermes | **No** (la capçalera diu «heartbeat + cron cada 10 min», però ja no hi és a cap dels dos) | **Mogut** |
 | `consell-editorial.sh` | 140 | Agent del Consell Editorial | Agent Hermes | **Sí**: `system-brain.sh` | Es queda |
+| `dashboard/` | — | Dashboard web de traducció (servidor, logger, estàtics) | Informe diari de Hermes a Discord | **Només opcional**: `pipeline_v2.py` l'importa dins `try/except ImportError` | **Mogut** (tasca 110) |
+| `dashboard.sh` | — | Arrenca `dashboard_server.py` en tmux | Informe diari de Hermes | **No** | **Mogut** (tasca 110) |
+| `dashboard_server.py` (de `sistema/web/`) | — | Servidor web del dashboard | Informe diari de Hermes | **No** | **Mogut** (tasca 110) |
 
 \* Cridador que també s'ha arxivat (o és candidat), però que comptava en el moment de l'anàlisi.
 
