@@ -2,7 +2,6 @@
 títol: Guardrails de cost DIEM a la configuració de Hermes
 prioritat: 4
 estat: pending
-requereix_vistiplau: true
 ---
 # Guardrails de cost DIEM
 

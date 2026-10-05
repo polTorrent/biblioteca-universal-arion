@@ -2,7 +2,6 @@
 títol: Substituir les notificacions pròpies pel lliurament de Hermes
 prioritat: 3
 estat: pending
-requereix_vistiplau: true
 ---
 # Substituir les notificacions pròpies
 
