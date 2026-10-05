@@ -78,3 +78,21 @@ Jobs de Hermes pausats que encara referencien scripts: *Arion Supervisor*
 2. Substituir `arion-start/stop.sh` a `OPERACIONS.md` per l'equivalent Hermes.
 3. Adaptar `sistema/tests/test_arion.sh` perquè no exigeixi `heartbeat.sh`/`worker.sh`/`notificar.sh`.
 4. Llavors arxivar en bloc l'arbre arrelat a `heartbeat.sh` i `worker.sh`.
+
+## Actualització — tasca 120 (2026-10-05)
+
+Amb els cron jobs de Hermes (015) i les notificacions natives (025) en marxa, s'han
+mogut aquí (amb `git mv`) **tots** els fitxers marcats «Es queda» a la taula anterior:
+`heartbeat.sh`, `modules/` (01–11 i `common.sh`), `worker.sh`, `venice-worker.sh`,
+`launch-worker.sh`, `start-worker.sh`, `worker-status.sh`, `arion-start.sh`,
+`arion-stop.sh`, `notificar.sh`, `notificar-usuari.sh`, `enviar-informe-discord.sh`,
+`system-brain.sh`, `millora-continua.sh`, `task-manager.sh`, `reset-diem.sh` i
+`hermes_task_executor.py`. A `sistema/automatitzacio/` només hi queden utilitats de
+domini (`auditar-cataleg.sh`, `fix-structure.sh`, `detectar-incompletes.sh`,
+`processar-propostes.sh`, `propostes-discord.sh`, `consell-editorial.sh`).
+
+Cridadors residuals coneguts (no modificats en aquesta tasca):
+- `consell-editorial.sh` crida `task-manager.sh` (ara arxivat).
+- `sistema/desenvolupament/dev-worker.sh` fa `source` de `notificar.sh` amb guarda `[ -f ]`
+  (no falla; simplement no notifica).
+- `OPERACIONS.md` i `README.md` encara documenten les ordres antigues.
