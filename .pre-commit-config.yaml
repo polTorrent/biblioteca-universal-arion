@@ -1,0 +1,33 @@
+# Pre-commit local: atura canvis defectuosos o amb secrets abans del commit.
+# Instal·lació (només en aquest repo): pip install pre-commit && pre-commit install
+# Per defecte els hooks només revisen els fitxers preparats (staged), no tot el repo.
+
+# Mai tocar el contingut de les obres ni dades generades.
+exclude: ^(obres|docs|data|output|arxiu|corpus_estil|sources)/
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+        # En Markdown, dos espais al final de línia són un salt de línia.
+        args: [--markdown-linebreak-ext=md]
+
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.8.6
+    hooks:
+      - id: ruff
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.21.2
+    hooks:
+      - id: gitleaks

@@ -1,1 +1,0 @@
-../sistema/traduccio/informe_detallat.py

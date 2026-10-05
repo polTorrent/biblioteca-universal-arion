@@ -1,0 +1,9 @@
+He creat 22 tests amb pytest per a `task_manager.py`, i tots passen. Els tests no han tocat la cua real `sistema/tasks/`.
+
+```
+RESUM
+- Què he canviat: He creat sistema/tests/test_task_manager.py amb 22 tests. Cobreixen:
+  hash (normalització de majúscules i espais, i que depèn del tipus), afegir (camps
+  obligatoris i opcionals), deduplicació (pending/running sí; done i tipus diferent no;
+  JSON corrupte ignorat), prioritat i dependències a next_task, move_task, stats,
+  retry_task (torna

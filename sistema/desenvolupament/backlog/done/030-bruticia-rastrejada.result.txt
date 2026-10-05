@@ -1,0 +1,5 @@
+Git ja no rastreja els tres fitxers, però continuen al disc. Ho he desat en un sol commit amb només aquests canvis.
+
+RESUM
+- **Què he canviat:** he tret de l'índex de git `_tmp_hicks.txt` (3 MB) i els dos `.bak.20260226` de `scripts/` amb `git rm --cached`. Abans he comprovat que el `.gitignore` ja els cobreix: `_tmp_*` a la línia 103 i `*.bak.*` a la línia 105. No he mogut els `.bak` a `arxiu/` (el pas era opcional), per ser conservador: es queden on són.
+- **Fitxers tocats:** `_tmp_hick

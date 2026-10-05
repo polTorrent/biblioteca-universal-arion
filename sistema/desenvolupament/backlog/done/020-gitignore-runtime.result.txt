@@ -1,0 +1,4 @@
+He afegit les regles al `.gitignore`. Les dues ordres de validació de la tasca, però, no retornen cap coincidència (codi de sortida 1). Els fitxers que comproven (`_tmp_hicks.txt` i els 5 de `sistema/desenvolupament/state/`) ja són dins el repo, i Git no aplica el `.gitignore` als fitxers que ja segueix. Els patrons en si funcionen bé.
+
+RESUM
+- **Què he canviat:** he afegit la secció `# Arion runtime & temporals` al final del `.gitignore` amb els 9 patrons que demana la tasca. No he tret 

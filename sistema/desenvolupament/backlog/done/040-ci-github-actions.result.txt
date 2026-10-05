@@ -1,0 +1,5 @@
+He creat el workflow de CI a `.github/workflows/ci.yml`, però de moment només el build atura la CI quan falla. El lint i els tests ja fallen al codi actual, així que els he marcat `continue-on-error: true` amb un `# TODO` que explica el motiu. No s'ha executat mai a GitHub Actions perquè no he fet push.
+
+**Què fa el workflow:**
+- S'executa en cada push i PR a `main` i `auto/dev`, amb Python 3.11 i sense cap secret.
+- **lint:** passa `ruff check .` i `shellcheck` sobre `sistema/**/*.sh` i `s

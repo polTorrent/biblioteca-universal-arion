@@ -1,0 +1,97 @@
+name: CI
+
+# Xarxa de seguretat automàtica: lint (Python + shell), tests i build de la web.
+# No fa cap deploy ni fa servir cap secret (el deploy és a build.yml).
+
+on:
+  push:
+    branches: [ main, auto/dev ]
+  pull_request:
+    branches: [ main, auto/dev ]
+
+permissions:
+  contents: read
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instal·lar ruff i shellcheck
+        run: |
+          pip install ruff
+          sudo apt-get update && sudo apt-get install -y shellcheck
+
+      - name: ruff check
+        # TODO: preexistent — `ruff check .` dona ~1500 errors al codi actual.
+        # Treure continue-on-error quan el codi estigui net.
+        continue-on-error: true
+        run: ruff check .
+
+      - name: shellcheck
+        # TODO: preexistent — els scripts actuals tenen avisos de shellcheck.
+        # Treure continue-on-error quan estiguin corregits.
+        continue-on-error: true
+        run: |
+          # -xtype f: fitxers regulars i symlinks vàlids (ignora symlinks trencats)
+          {
+            find sistema -name '*.sh' -xtype f -print0
+            find scripts -maxdepth 1 -name '*.sh' -xtype f -print0
+          } | xargs -0 -r shellcheck
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instal·lar dependències (editable)
+        # TODO: preexistent — `pip install -e ".[dev]"` falla perquè hatchling no
+        # troba cap paquet a pyproject.toml. El pas següent instal·la les deps igualment.
+        continue-on-error: true
+        run: pip install -e ".[dev]"
+
+      - name: Instal·lar dependències (requirements)
+        run: pip install -r requirements.txt pytest pytest-asyncio
+
+      - name: pytest
+        # TODO: preexistent — 5 mòduls de tests/ fallen en la recol·lecció
+        # (p. ex. test_generar_portades, test_generar_retrats, test_traductor).
+        # No s'usa sistema/tests/test_arion.sh perquè té el camí $HOME/... fixat.
+        continue-on-error: true
+        run: pytest -q
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Instal·lar dependències
+        run: pip install -r requirements.txt
+
+      - name: Build web en directori temporal
+        # S'invoca sistema/web/build.py (destí del symlink scripts/build.py) amb
+        # PYTHONPATH a l'arrel: via el symlink, el script calcula malament
+        # l'arrel del projecte i no troba les plantilles.
+        run: |
+          BUILD_DIR="$RUNNER_TEMP/arion-build"
+          mkdir -p "$BUILD_DIR"
+          git archive HEAD | tar -x -C "$BUILD_DIR"
+          cd "$BUILD_DIR"
+          PYTHONPATH="$BUILD_DIR" python3 sistema/web/build.py --clean
+          test -f docs/index.html

@@ -1,10 +1,10 @@
 {
-    "pid": 50700,
+    "pid": 2529254,
     "mode": "hybrid",
-    "current_task": "idle",
+    "current_task": "stopped",
     "diem_balance": "unknown",
-    "uptime_seconds": 18781,
-    "tasks_completed": 1,
-    "tasks_failed": 1,
-    "last_heartbeat": "2026-07-18T19:13:03Z"
+    "uptime_seconds": 1,
+    "tasks_completed": 0,
+    "tasks_failed": 0,
+    "last_heartbeat": "2026-07-24T14:00:05Z"
 }

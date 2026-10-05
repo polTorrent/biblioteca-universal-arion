@@ -108,6 +108,15 @@ bash ~/biblioteca-universal-arion/sistema/tests/test_arion.sh
 - `sistema/logs/worker.log` — Log del worker
 - `sistema/logs/heartbeat.jsonl` — Log estructurat JSON
 
+## Punts d'entrada
+
+`scripts/` només ha de contenir symlinks vàlids. S'han eliminat 6 symlinks trencats
+(`deploy.sh`, `serve.sh`, `worker-watchdog.sh`, `claude-worker-mini.sh`,
+`improve-openclaw.sh`, `informe_detallat.py`): les destinacions ja no existeixen a
+`sistema/`. Tres només sobreviuen a `arxiu/scripts_obsolets/` i `informe_detallat.py` a
+`arxiu/scripts-adhoc/`; són arxivats/obsolets, per tant no s'han reapuntat.
+Nota: `modules/10-generate-report.sh` ja comprova `-f` abans d'usar `informe_detallat.py`.
+
 ## Troubleshooting
 
 ### Worker no arrenca
@@ -124,3 +133,13 @@ bash ~/biblioteca-universal-arion/sistema/tests/test_arion.sh
 1. El worker fa pausa d'emergència de 10 min automàticament
 2. Si persisteix, comprova models.conf i saldo DIEM
 3. Forçar reinici: `pkill -f worker.sh && bash sistema/automatitzacio/worker.sh --mode=hybrid`
+
+## Desenvolupament autònom
+
+El codi del projecte també avança de manera autònoma amb un worker de
+desenvolupament (Claude Code) que resol tasques d'un backlog a la branca `auto/dev`.
+Documentació completa: [`sistema/desenvolupament/README.md`](sistema/desenvolupament/README.md).
+
+```bash
+bash ~/biblioteca-universal-arion/sistema/desenvolupament/status.sh   # Estat: quota, backlog, commits
+```

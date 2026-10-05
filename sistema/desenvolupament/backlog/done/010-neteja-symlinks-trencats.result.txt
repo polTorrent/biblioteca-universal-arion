@@ -1,0 +1,3 @@
+RESUM
+- Què he canviat: he eliminat els 6 symlinks trencats de `scripts/`. Cap destinació existia a `sistema/`. `deploy.sh`, `serve.sh` i `worker-watchdog.sh` només existeixen a `arxiu/scripts_obsolets/`, i `informe_detallat.py` només a `arxiu/scripts-adhoc/`. Com que són arxivats, no els he reapuntat. `claude-worker-mini.sh` i `improve-openclaw.sh` no existeixen enlloc més. He afegit la secció «Punts d'entrada» a `OPERACIONS.md` amb la decisió.
+- Fitxers tocats: els 6 symlinks de `scr

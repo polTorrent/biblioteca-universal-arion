@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(./.env)",
+      "Read(./.env.*)",
+      "Read(./**/.env)",
+      "Read(./**/.env.*)",
+      "Read(./**/*.token)",
+      "Read(./**/*.pem)",
+      "Read(./**/*.key)",
+      "Bash(git push:*)"
+    ]
+  },
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash /home/jo/biblioteca-universal-arion/sistema/desenvolupament/claude-dev-guard.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
