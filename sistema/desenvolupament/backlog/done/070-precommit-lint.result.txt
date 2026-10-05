@@ -1,0 +1,8 @@
+He afegit una configuració de pre-commit amb ruff, shellcheck, gitleaks i les comprovacions bàsiques, i l'he documentada a `CONTRIBUTING.md`. El YAML és vàlid, però els hooks no s'han executat mai: `pre-commit`, `shellcheck` i `gitleaks` no estan instal·lats en aquesta màquina.
+
+```
+RESUM
+- Què he canviat:
+  · `.pre-commit-config.yaml` nou amb check-yaml, end-of-file-fixer, trailing-whitespace
+    (respecta els salts de línia de Markdown), ruff (--fix) + ruff-format, shellcheck
+    (sh
