@@ -1,0 +1,5 @@
+He escrit el mapa de migració a `sistema/desenvolupament/MIGRACIO-NOTIFICACIONS.md` i l'he desat en un commit local (`188481b7`, sense push). No he modificat cap script ni he creat cap job de Hermes.
+
+**Troballes principals**
+- **Els tres scripts amb prou feines funcionen.** `hermes notify` no existeix: l'ordre de Hermes per enviar és `hermes send`. Tampoc no hi ha el webhook de Discord, i l'última notificació registrada és del 2026-07-25.
+- **Dues crides no envien res.** `arion-start.sh` c
