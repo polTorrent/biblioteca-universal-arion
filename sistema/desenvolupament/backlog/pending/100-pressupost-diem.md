@@ -1,37 +1,37 @@
 ---
-títol: Formalitzar el pressupost DIEM i el tall automàtic
+títol: Guardrails de cost DIEM a la configuració de Hermes
 prioritat: 4
 estat: pending
+requereix_vistiplau: true
 ---
-# Formalitzar el pressupost DIEM
+# Guardrails de cost DIEM
 
 ## Objectiu
-Definir un pressupost DIEM explícit i un tall automàtic documentat i verificable.
+Definir el pressupost DIEM i els guardrails **a la configuració de Hermes**, no en bash.
 
 ## Context
 Existeix `sistema/state/diem_stop` (el worker s'atura si hi és) però el llindar no està
-formalitzat ni documentat. Cal evitar despeses fora de control.
+formalitzat. Amb Hermes com a orquestrador, el control de cost ha de viure a la config
+de Hermes i al routing de models, no en mòduls bash.
 
 ## Passos
-1. Llegeix com es calcula el saldo DIEM (`sistema/automatitzacio/modules/01-check-diem.sh`,
-   `sistema/config/diem_costs.conf`).
-2. Crea `sistema/config/pressupost.conf` amb paràmetres explícits:
-   `DIEM_MINIM_RESERVA`, `DIEM_MAX_DIARI`, `DIEM_MAX_MENSUAL`.
-3. Fes que el mòdul de comprovació de DIEM els llegeixi (o documenta com s'hi enllaça)
-   i que, en superar el màxim, creï `diem_stop` i notifiqui.
-4. Documenta-ho a `OPERACIONS.md`.
+1. Documenta el saldo DIEM actual i el cost mitjà per traducció.
+2. Defineix llindars: reserva mínima, màxim diari, màxim mensual.
+3. Proposa com aplicar-los a Hermes (config del provider, skills de routing, un cron
+   de comprovació de saldo que aturi la producció si cal).
+4. Escriu la proposta a `sistema/desenvolupament/PRESSUPOST-DIEM.md` i afegeix els
+   valors a `sistema/config/diem_costs.conf` (o un fitxer nou `pressupost.conf`).
 
 ## Fitxers
-- Create: `sistema/config/pressupost.conf`
-- Modify: `sistema/automatitzacio/modules/01-check-diem.sh`
-- Modify: `OPERACIONS.md`
+- Create: `sistema/desenvolupament/PRESSUPOST-DIEM.md`
+- Modify: `sistema/config/diem_costs.conf`
 
 ## Validació
 ```bash
 cd ~/biblioteca-universal-arion
-cat sistema/config/pressupost.conf
-bash -n sistema/automatitzacio/modules/01-check-diem.sh && echo "sintaxi OK"
+cat sistema/desenvolupament/PRESSUPOST-DIEM.md | head
 ```
 
 ## Restriccions
-- No activis ni desactivis el worker real; només configura i documenta.
+- No activis ni desactivis el worker real.
+- No posis claus ni credencials a cap fitxer.

@@ -1,176 +1,178 @@
 # PLA DE REFACTOR INTEGRAL — Biblioteca Universal Arion
 
-> **Estat:** proposta · **Data:** 2026-10-05 · **Autor:** Hermes (amb reconeixement del repo)
-> **Objectiu:** passar d'un projecte viu però abandonat i acumulatiu a un projecte net,
-> modular, testejat, autònom i sostingut que avanci sol aprofitant la quota lliure de
-> la subscripció Claude.
+> **Estat:** proposta v2 (revisada amb l'òptica "Hermes com a orquestrador") · **Data:** 2026-10-05
+> **Objectiu:** eliminar l'orquestració pròpia que ha quedat obsoleta, quedar-nos
+> només amb el **domini** (traducció, qualitat, web, contingut) i deixar que Hermes
+> + el model orquestrador facin la resta.
 
 ---
 
-## 1. Diagnòstic (estat real, 2026-10-05)
+## 1. Canvi de paradigma: Hermes substitueix la infraestructura pròpia
 
-### 1.1 El projecte funciona, però està aturat i desordenat
-- **Contingut:** 97 obres amb `metadata.yml`, 107 obres / 86 autors al catàleg, 6 categories.
-- **Codi:** 226 fitxers `.py` + 72 fitxers `.sh`, 2.539 fitxers rastrejats per git.
-- **Pes:** `sistema/` 204M · `docs/` 173M · `obres/` 149M · `web/` 96M · `.git/` **802M**.
-- **Abandonament:** últim push reixit a `origin/main` el **2026-06-05**. Des del **2026-07-18**
-  hi ha **16 commits locals** sense pujar. El worker està aturat, el heartbeat no corre,
-  `sistema/state/diem_stop` existeix (DIEM aturat). Cua: 4 tasques a `pending/`, 1 a `done/`.
+El projecte va construir la seva pròpia maquinària d'orquestració (heartbeat, workers,
+cua de tasques, notificacions, supervisor, "brain") **perquè no hi havia un agent
+general que ho fes**. Ara hi és: **Hermes + un model orquestrador econòmic** (DeepSeek
+V4.1 Flash) cobreixen de sèrie tot això. Per tant, bona part de `sistema/automatitzacio/`
+ja no cal — **no s'ha d'unificar, s'ha d'esborrar i delegar**.
 
-### 1.2 Problemes detectats (ordenats per impacte)
+### 1.1 Mapa d'obsolescència
 
-| # | Problema | Evidència | Impacte |
-|---|----------|-----------|---------|
-| P1 | **Push a GitHub trencat** | `remote: Permission ... denied to jordivinyalsferre-wq` | La web pública no s'actualitza des de juny; 16 commits orfes |
-| P2 | **Historial git inflat** | `.git` = 802M; artefactes generats rastrejats (`docs/` 402 fitxers, `web/` 108) | Clons lents, difícil de mantenir |
-| P3 | **Symlinks trencats** | `scripts/{deploy,serve,worker-watchdog,claude-worker-mini,improve-openclaw}.sh` i `informe_detallat.py` → destinacions inexistents | Errors silenciosos, confusió |
-| P4 | **Serveis zombis** | `systemd` `claude-worker.service` apunta a un script inexistent; cron jobs Arion desactivats | Falsa sensació d'autonomia |
-| P5 | **Automatització dispersa** | `heartbeat.sh` + `worker.sh` (venice/hermes/hybrid) + `task_manager.py` + `claude-worker.sh` (a `.openclaw/workspace`, còpia divergent) | Duplicació de lògica, difícil de raonar |
-| P6 | **Cost descontrolat** | DIEM aturat; models `thinking=on`; sense pressupost explícit | Risc de despesa |
-| P7 | **Qualitat sense xarxa de seguretat** | `test_arion.sh` (46/48), sense CI, sense pre-commit | Regressions invisibles |
-| P8 | **Brutícia al repo** | `_tmp_hicks.txt` (3M), `*.bak.20260226` rastrejats, `Zone.Identifier`, còpia `.openclaw/workspace/` | Soroll |
-| P9 | **Documentació desincronitzada** | `README.md` diu "models claude-opus-4-7 / deepseek-v3.2"; `models.conf` ja usa `kimi-k2-5`, `llama-3.3-70b`, `qwen3` | Agents confosos |
-| P10 | **Sense autodesenvolupament** | Cap sistema aprofita la quota lliure de Claude Pro | El codi no millora sol |
+| Peça pròpia | Línies | Què fa | Substitut Hermes |
+|-------------|-------:|--------|------------------|
+| `heartbeat.sh` + `modules/00–11` | ~840 | Planificar, comprovar salut, omplir cua, informes | **Cron de Hermes** (un job per comprovació) |
+| `worker.sh` / `venice-worker.sh` / `hermes-worker.sh` | ~1.830 | Executar tasques de traducció/revisió | **Skill `biblioteca-arion-worker`** + agent Hermes |
+| `task-manager.sh` + `task_manager.py` | ~520 | Cua amb dedup, prioritats, retry | **Cua nativa de Hermes** (cron jobs) o cua mínima de domini |
+| `notificar.sh` + `notificar-usuari.sh` + `enviar-informe-discord.sh` | ~335 | Notificacions, rate limiting, fallbacks | **Lliurament natiu** Discord/Telegram |
+| `system-brain.sh` + `millora-continua.sh` | ~1.450 | Bucles d'auto-millora i decisió | **Raonament de l'agent** + skills |
+| `monitor-arion.sh` + `worker-status.sh` + `arion-start/stop.sh` | ~370 | Monitoratge i arrencada/aturada | Cron + `status.sh` |
+| `model_selector.py` + `diem-optimizer` | — | Triar model i optimitzar cost | **Routing de Hermes** (skill `venice-model-routing`) |
+| `hermes_task_executor.py` | — | Pont cap a Hermes | **Natiu** (ja no cal pont) |
+| `supervisor-retire-tasks.py` + `consell-editorial.sh` | ~200 | Supervisió / consell | Agent Hermes |
+| `reset-diem.sh`, `boto_propostes_watchdog.sh` | ~85 | Tasques periòdiques | Cron de Hermes |
 
-### 1.3 El que JA està bé (conservar)
-- Arquitectura v6 del heartbeat (orquestrador + 10 mòduls) i `worker.sh` unificat amb
-  circuit breaker per model i *graceful shutdown*.
-- `task_manager.py` amb dedup per hash i prioritats.
-- `models.conf` **ja actualitzat** a models privats moderns (`kimi-k2-5`, `llama-3.3-70b`, `qwen3`).
-- Autenticació Claude correcta: subscripció Pro (`poltorrentayala@gmail.com`), token a
-  `~/.hermes/anthropic_pol.token`. Model dual subscripció/API ja documentat.
-- Pipeline de traducció per agents (investigació → glossari → traducció → avaluació → refinament).
+**Total aproximat: ~5.300 línies** d'orquestració pròpia candidata a desaparèixer.
+
+### 1.2 Què SÍ que es conserva (és el valor del projecte)
+
+| Peça | Per què es conserva |
+|------|---------------------|
+| `sistema/traduccio/**` (agents: investigador, glossarista, traductor, chunker, anotador, avaluador, corrector, portadista, narrador, venice_client…) | És el **pipeline de domini**; Hermes l'invoca com a eina |
+| `sistema/web/build.py` + `templates/` | Construcció de la web |
+| `utils/calcs_plugins/**` | Càlculs per llengua (grec, llatí, xinès…) |
+| `core/**` (`validador_final`, `memoria_contextual`, `estat_pipeline`) | Lògica de qualitat i estat |
+| `sistema/config/**` (`models.conf`, `authors.yaml`, `diem_costs.conf`) | Configuració de domini |
+| `obres/**`, `corpus_estil/**`, `fonts/**` | Contingut i corpus |
+| Bot de propostes (`propostes_*.py`, `formulari_handler.py`) | Funcionalitat pública |
+
+### 1.3 A revisar (ni blanc ni negre)
+- `task_manager.py` — pot quedar com a **cua de domini** mínima, o desaparèixer si el
+  volum de tasques no ho justifica.
+- `pre_supervisio.py` (592) + `check_supervision.py` / `check_translations.py` — lògica
+  de domini útil; cal decidir si passa a skill o es manté com a script.
+- `sistema/dashboard/` — ¿es conserva com a UI o es substitueix per un informe de Hermes?
+
+### 1.4 Patró objectiu
+
+```
+Hermes cron  ──►  agent (orquestrador DeepSeek V4.1 Flash)
+                    ├── skill biblioteca-arion-worker   (què fer i com)
+                    ├── skill venice-ai / venice-model-routing  (models i cost)
+                    ├── tools: terminal, file, web
+                    ├── invoca DOMINI: traduir_pipeline.py, build.py, …
+                    └── lliura resultats a Discord/Telegram (natiu)
+```
+
+Hermes és el **sistema operatiu**; el projecte només aporta el **domini**.
 
 ---
 
-## 2. Objectiu i principis
+## 2. Diagnòstic de l'estat real (2026-10-05)
 
-**Objectiu:** un projecte on (a) el repositori sigui net i llegible, (b) el sistema
-d'automatització sigui **un** i comprensible, (c) hi hagi tests + CI que protegeixin els
-canvis, i (d) un worker aprofiti automàticament la quota lliure de Claude per fer avançar
-el codi sense intervenció humana.
-
-**Principis (segons preferències de Pol):**
-1. **Fixes sistèmics, no pedaços.**
-2. **No destructiu per defecte:** els canvis autònoms van a una branca (`auto/dev`), mai a `main`.
-3. **Res de secrets ni credencials en text pla ni al repo.**
-4. **Tot en català** (codi, logs, commits, docs).
-5. **Canvis petits i freqüents**, cada un verificable.
+- **Contingut:** 97 obres amb `metadata.yml`; catàleg de 107 obres / 86 autors.
+- **Codi:** 226 `.py` + 72 `.sh`; 2.539 fitxers rastrejats; `.git` = **802 MB**.
+- **Abandonament:** últim push a `origin/main` el **2026-06-05**; **16 commits orfes**;
+  worker aturat; DIEM aturat (`sistema/state/diem_stop`).
+- **Problemes:** push trencat (403, credencial d'un altre compte) · historial inflat
+  (artefactes generats rastrejats) · 6 symlinks trencats · serveis zombis
+  (`claude-worker.service`, cron jobs morts) · automatització duplicada
+  (`sistema/` vs `.openclaw/workspace/`) · README desincronitzat.
 
 ---
 
-## 3. Fases
+## 3. Objectiu i principis
+
+**Objectiu:** un projecte **petit i net** on (a) el repo sigui llegible, (b) l'agent
+Hermes faci tota l'orquestració, (c) el domini quedi testejat i aïllat, i (d) un worker
+aprofiti la quota lliure de Claude per fer avançar el codi.
+
+**Principis:**
+1. **Esborrar abans que construir.** Cada línia d'orquestració pròpia que Hermes ja fa, fora.
+2. **Fixes sistèmics, no pedaços.**
+3. **No destructiu per defecte:** els canvis autònoms van a `auto/dev`, mai a `main`.
+4. **Res de secrets ni credencials en text pla.**
+5. **Tot en català.**
+
+---
+
+## 4. Fases (revisades)
 
 ### Fase 0 — Estabilització (immediata, poc risc)
-- **T0.1** Arreglar el push: usar un PAT de `polTorrent` (a `~/.hermes/gh_pol.token`) via
-  `credential.helper` **scopat al repo** o `insteadOf`. Verificar amb `git push --dry-run`.
-- **T0.2** Eliminar els 6 symlinks trencats de `scripts/`.
-- **T0.3** Desactivar/eliminar `~/.config/systemd/user/claude-worker.service` (apunta a un
-  script inexistent) i arxivar els cron jobs Arion morts.
-- **T0.4** Afegir al `.gitignore`: `_tmp_*`, `*.bak*`, `*:Zone.Identifier`, `sistema/state/*` runtime.
-- **T0.5** Treure del control de versions `_tmp_hicks.txt` i els `*.bak.20260226`.
+- **T0.1** Arreglar el push (PAT de `polTorrent`) — **vistiplau humà**.
+- **T0.2** Eliminar els 6 symlinks trencats de `scripts/`. ✔ *(fet)*
+- **T0.3** Desactivar/eliminar `claude-worker.service` i arxivar els cron jobs Arion morts.
+- **T0.4/T0.5** `.gitignore` (runtime, temporals, `Zone.Identifier`) i treure brutícia rastrejada.
 
 ### Fase 1 — Higiene del repositori
-- **T1.1** Decidir destí dels artefactes generats (`docs/`, `web/`): publicar via GitHub Pages
-  des d'una branca `gh-pages` o un directori `dist/` **no rastrejat a `main`**.
-- **T1.2** Reescrivir l'historial per treure artefactes pesats (opcions: `git filter-repo` o
-  migrar a un repo nou net). **Requereix finestra de manteniment i vistiplau de Pol.**
-- **T1.3** Unificar la còpia divergent de `.openclaw/workspace/biblioteca-universal-arion/`.
+- **T1.1** Treure els artefactes generats (`docs/`, `web/`) de `main` → publicar des de
+  `gh-pages` o un `dist/` no rastrejat.
+- **T1.2** Reescriure l'historial per aprimar `.git` (o migrar a repo net) — **vistiplau**.
+- **T1.3** Unificar/eliminar la còpia divergent `.openclaw/workspace/biblioteca-universal-arion/`.
 
-### Fase 2 — Refactor del sistema d'automatització
-- **T2.1** Un sol orquestrador `arion` (o mantenir `heartbeat.sh`) que cobreixi:
-  quota DIEM, worker, recuperació de fallides, supervisió, web sync, manteniment, auditoria.
-- **T2.2** Extreure la lògica comuna a `sistema/lib/` (logging, notificació, git, models).
-- **T2.3** Substituir els symlinks fràgils `scripts/ → sistema/` per un `Makefile` o
-  un únic punt d'entrada `./arion <comanda>`.
-- **T2.4** Definir **pressupost DIEM** explícit i tall automàtic (ja existeix `diem_stop`, formalitzar-lo).
+### Fase 2 — **Eliminar l'orquestració pròpia i delegar-la a Hermes**  ← reescrita
+- **T2.1** **Inventari i arxiu**: moure a `arxiu/orquestracio-obsoleta/` tot el de §1.1
+  (no esborrar encara; primer arxivar i verificar que res no ho crida).
+- **T2.2** **Migrar el heartbeat a cron de Hermes**: un job per comprovació
+  (DIEM, salut del worker, fallides, `needs_fix`, supervisió, traduccions, web-sync,
+  manteniment, auditoria, informe).
+- **T2.3** **Substituir les notificacions** (`notificar*.sh`) pel lliurament natiu de Hermes.
+- **T2.4** **Retirar els workers bash** un cop el skill `biblioteca-arion-worker` cobreixi
+  les mateixes tasques via agent.
+- **T2.5** **Routing de models i cost** via Hermes (`venice-model-routing`) + guardrails
+  de pressupost DIEM en config, no en bash.
+- **T2.6** Esborrar `system-brain.sh` i `millora-continua.sh` (substituïts pel raonament
+  de l'agent).
 
 ### Fase 3 — Qualitat: tests + CI
-- **T3.1** Ampliar `sistema/tests/` (unitat per a `task_manager.py`, parser de metadata,
-  `build.py`) fins a cobrir els camins crítics.
-- **T3.2** GitHub Actions: `lint` (ruff/shellcheck) + `test` (pytest) + `build` (web) a cada push/PR.
+- **T3.1** Tests per al **domini** (`traduir_pipeline.py`, parser de metadata, `build.py`).
+- **T3.2** GitHub Actions: lint + tests + build a cada push/PR.
 - **T3.3** Pre-commit local (ruff, shellcheck, detecció de secrets).
 
-### Fase 4 — Autodesenvolupament (quota Claude)  ← **ja implementat, vegeu §4**
-- **T4.1** `quota-probe.py` — detector de quota lliure.
-- **T4.2** `dev-worker.sh` — bucle autònom que resol tasques del backlog quan hi ha quota.
-- **T4.3** Backlog viu + encuament de tasques.
-- **T4.4** Programació via Hermes cron (cada 20–30 min).
-- **T4.5** (Opcional) Fallback a `claude --cloud` quan la quota Pro s'esgota.
+### Fase 4 — Autodesenvolupament (quota Claude)  ← **ja implementat** (vegeu §6)
+- `quota-probe.py` + `dev-worker.sh` + backlog + cron Hermes cada 30 min.
 
 ### Fase 5 — Observabilitat i documentació
-- **T5.1** Actualitzar `README.md` i `OPERACIONS.md` a l'estat real (models, arquitectura).
-- **T5.2** Dashboard d'estat: quota, backlog, últimes tasques, cost DIEM.
-- **T5.3** Report diari a Discord amb els canvis del dia.
+- **T5.1** Actualitzar `README.md` / `OPERACIONS.md` / `CLAUDE.md` a l'estat real
+  (Hermes com a orquestrador, domini aïllat).
+- **T5.2** Informe d'estat via Hermes (quota, backlog, últimes tasques, cost DIEM).
 
 ### Fase 6 — Represa de la producció
-- **T6.1** Reprendre traduccions amb `models.conf` actual (kimi-k2-5 per a literatura).
-- **T6.2** Revisar les 4 tasques pendents i les 16 commits orfes.
-- **T6.3** Reactivar la publicació web un cop el push funcioni.
+- Reprendre traduccions amb `models.conf` actual; revisar les 16 commits orfes; reactivar la web.
 
 ---
 
-## 4. Sistema d'autodesenvolupament (implementat)
+## 5. Impacte esperat
 
-Ubicació: `sistema/desenvolupament/`
-
-```
-sistema/desenvolupament/
-├── quota-probe.py            # detecta FREE / LIMIT / ERROR de la subscripció
-├── dev-worker.sh             # bucle autònom (branca auto/dev, sense push)
-├── status.sh                 # estat: quota + backlog + commits
-├── enqueue.sh                # afegir tasques al backlog
-├── claude-dev-guard.sh       # hook PreToolUse: bloqueja ordres destructives
-├── claude-dev-settings.json  # settings del Claude Code autònom
-├── PROMPT.md                 # instruccions permanents de cada tasca
-├── state/quota.json          # últim resultat de la sonda
-└── backlog/{pending,running,done,failed}/
-```
-
-**Com funciona:**
-1. `quota-probe.py` fa una prova mínima amb `claude` (Haiku, 1 torn, sense eines) i
-   classifica: `FREE` / `LIMIT` / `ERROR`. És el **detector d'ús lliure de la subscripció**.
-2. `dev-worker.sh` fa una passada: per cada tasca pendent, comprova la quota; si és `FREE`,
-   executa Claude Code amb la tasca; commit a la branca `auto/dev`; passa a la següent.
-3. S'atura sol quan: s'esgota la quota, s'acaba el backlog, o hi ha 3 errors seguits.
-4. **Mai fa push i mai toca `main`.** La fusió la decideix una persona (`git merge auto/dev`).
-5. Un guard PreToolUse bloqueja `git push`, `--force`, `reset --hard`, `rm -rf /`, `sudo`,
-   escriptura a `.env` i claus.
-
-**Posada en marxa:**
-```bash
-cd ~/biblioteca-universal-arion/sistema/desenvolupament
-python3 quota-probe.py          # comprova quota ara
-bash status.sh                  # estat del sistema
-bash dev-worker.sh --dry-run    # veure què faria
-bash dev-worker.sh              # una passada real (fins a 6 tasques)
-```
-
-**Programació (Hermes cron, cada 20 min):** un job que executa `dev-worker.sh` (que ja
-s'autolimita). Vegeu `sistema/desenvolupament/README.md`.
+| Mètrica | Abans | Objectiu |
+|---------|------:|---------:|
+| Línies d'orquestració pròpia | ~5.300 | ~0 |
+| Fitxers `.sh` | 72 | < 15 |
+| `.git` | 802 MB | < 50 MB |
+| Punt d'entrada | 20+ scripts | cron Hermes + skill |
+| Superfície de fallada | alta | baixa |
 
 ---
 
-## 5. Riscos i obertures
+## 6. Sistema d'autodesenvolupament (implementat)
+
+Vegeu `sistema/desenvolupament/README.md`. Resum: `quota-probe.py` detecta quota lliure
+de la subscripció; `dev-worker.sh` resol tasques del backlog amb Claude Code en una branca
+`auto/dev` (mai push, mai `main`); cron Hermes cada 30 min; guard PreToolUse contra ordres
+destructives.
+
+---
+
+## 7. Riscos i obertures
 
 | Risc | Mitigació |
 |------|-----------|
-| Canvis autònoms trenquen `main` | Branca `auto/dev` + revisió humana abans de fusionar |
-| Claude executa ordres destructives | Guard PreToolUse + `--dangerously-skip-permissions` acotat per settings |
-| Reescriure l'historial espatlla el remuntador | Fase 1.2 requereix **vistiplau explícit** i còpia de seguretat prèvia |
-| Cost DIEM fora de control | Pressupost explícit + `diem_stop` formalitzat (Fase 2.4) |
-| Quota Pro compartida amb altres projectes | La sonda detecta `LIMIT` i el worker s'atura net |
+| Esborrar orquestració encara en ús | Fase 2.1 **arxiva** primer; esborrar només després de verificar |
+| Reescriure l'historial espatlla el remot | Vistiplau explícit + còpia de seguretat |
+| Cost DIEM descontrolat | Guardrails a la config de Hermes, no a bash |
+| Dependència total de Hermes | El domini (`sistema/traduccio/`) és autònom i invocable a mà |
 
-**Obertures per a Pol:**
-- ¿Publicar la web des de `gh-pages` o des d'un `dist/` no rastrejat?
-- ¿Reescriure l'historial (Fase 1.2) o acceptar el `.git` de 802M?
-- ¿Pressupost DIEM mensual objectiu?
-- ¿Model per defecte del dev-worker: `opus` (millor) o `sonnet` (més quota disponible)?
-
----
-
-## 6. Primeres tasques encuades al backlog
-
-Vegeu `sistema/desenvolupament/backlog/pending/`. Les 10 primeres cobreixen les
-Fases 0–1 i són de baix risc. Les que requereixen decisió humana estan marcades
-`REQUEREIX VISTIPLAU` a la capçalera i el worker les salta.
+**Decisions que calen de Pol:**
+1. Web pública: `gh-pages` o `dist/` no rastrejat?
+2. Reescriure l'historial (802 MB) o acceptar-lo?
+3. Pressupost DIEM mensual objectiu?
+4. Model per defecte del dev-worker: `opus` o `sonnet`?
+5. Dashboard: conservar la UI o substituir-la per un informe de Hermes?
