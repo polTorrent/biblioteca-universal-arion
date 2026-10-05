@@ -148,7 +148,7 @@ def copiar_a_web(portada_path: Path, obra_dir: Path) -> Path | None:
     Returns:
         Camí de destí o None si falla.
     """
-    web_portades = ROOT / "web" / "assets" / "portades"
+    web_portades = ROOT / "sistema" / "web" / "assets" / "portades"
     web_portades.mkdir(parents=True, exist_ok=True)
     slug = f"{obra_dir.parent.name}-{obra_dir.name}"
     web_path = web_portades / f"{slug}-portada.png"

@@ -41,8 +41,11 @@ except ImportError:
     print("❌ Error: python-markdown no instal·lat. Executa: pip install markdown")
     exit(1)
 
-# Afegir directori arrel al path per importar utils
-sys.path.insert(0, str(Path(__file__).parent.parent))
+# Arrel del projecte: robusta tant si s'invoca com a `scripts/build.py`
+# (enllaç simbòlic) com directament `sistema/web/build.py`. `.resolve()`
+# segueix l'enllaç, així que l'arrel és sempre la mateixa.
+PROJECT_ROOT = Path(__file__).resolve().parents[2]  # sistema/web/build.py → arrel del repo
+sys.path.insert(0, str(PROJECT_ROOT))
 from utils.epub_generator import GeneradorEPUB
 
 
@@ -490,7 +493,7 @@ class BuildSystem:
             print("   ✅ Assets copiats")
 
         # Copiar portades des de múltiples fonts
-        portades_src = self.root / 'web' / 'assets' / 'portades'
+        portades_src = self.web_assets_dir / 'portades'
         portades_dest = self.docs_dir / 'assets' / 'portades'
         portades_dest.mkdir(parents=True, exist_ok=True)
 
@@ -515,12 +518,12 @@ class BuildSystem:
                     portades_processades.add(dest_name)
                     count += 1
 
-                    # Sincronitzar a web/assets/portades/ per futures builds
+                    # Sincronitzar a sistema/web/assets/portades/ per futures builds
                     portades_src.mkdir(parents=True, exist_ok=True)
                     shutil.copy(portada_obra, web_path)
                     break
 
-        # 2. Copiar des de web/assets/portades/ NOMÉS les que no existeixen a obres/
+        # 2. Copiar des de sistema/web/assets/portades/ NOMÉS les que no existeixen a obres/
         if portades_src.exists():
             for portada in portades_src.glob('*.png'):
                 if portada.name not in portades_processades:
@@ -1088,8 +1091,8 @@ def main():
     parser.add_argument('--watch', action='store_true', help='Mode observació')
     args = parser.parse_args()
 
-    # Directori del projecte
-    project_root = Path(__file__).parent.parent.parent  # sistema/web/build.py -> biblioteca-universal-arion/
+    # Directori del projecte (constant robusta definida més amunt)
+    project_root = PROJECT_ROOT
 
     # Construir
     builder = BuildSystem(project_root)
