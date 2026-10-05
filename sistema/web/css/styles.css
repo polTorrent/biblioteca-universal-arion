@@ -103,7 +103,6 @@
     --color-highlight-strong: #4a4030;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    2. RESET I BASE
    ───────────────────────────────────────────────────────────────────── */
@@ -159,7 +158,6 @@ a:hover {
     background-color: var(--color-accent);
     color: white;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    3. TIPOGRAFIA
@@ -222,7 +220,6 @@ small {
     line-height: var(--line-height-loose);
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    4. LAYOUT I CONTENIDORS
    ───────────────────────────────────────────────────────────────────── */
@@ -241,7 +238,6 @@ small {
 .page-content {
     padding: var(--spacing-2xl) 0;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    5. CAPÇALERA (HEADER)
@@ -327,7 +323,6 @@ small {
     border-color: var(--color-accent);
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    6. PEU DE PÀGINA (FOOTER)
    ───────────────────────────────────────────────────────────────────── */
@@ -385,7 +380,6 @@ small {
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    7. PÀGINA D'ÍNDEX (CATÀLEG)
@@ -493,7 +487,6 @@ small {
     color: #856404;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    8. PÀGINA D'OBRA - CAPÇALERA
    ───────────────────────────────────────────────────────────────────── */
@@ -553,7 +546,6 @@ small {
     color: var(--color-text-secondary);
     max-width: 700px;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    9. MODE BILINGÜE - CONTROLS
@@ -661,7 +653,6 @@ small {
     font-size: 0.9em;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    10. MODE BILINGÜE - GRID
    ───────────────────────────────────────────────────────────────────── */
@@ -718,7 +709,6 @@ small {
     margin: 0 auto;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    11. SECCIONS DE TEXT
    ───────────────────────────────────────────────────────────────────── */
@@ -763,7 +753,6 @@ small {
     margin-left: calc(-1 * var(--spacing-md));
     margin-right: calc(-1 * var(--spacing-md));
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    12. TERMES DEL GLOSSARI (INLINE)
@@ -827,7 +816,6 @@ small {
     font-style: italic;
     opacity: 0.9;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    13. NOTES (INLINE I SECCIÓ)
@@ -927,7 +915,6 @@ small {
     text-decoration: underline;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    14. GLOSSARI (SECCIÓ)
    ───────────────────────────────────────────────────────────────────── */
@@ -1002,7 +989,6 @@ small {
 .term-usage a {
     font-weight: 500;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    14b. SECCIONS COL·LAPSABLES (NOTES I GLOSSARI)
@@ -1127,7 +1113,6 @@ small {
     transition: background-color 0.3s ease;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    15. BLOCKQUOTES I CITES
    ───────────────────────────────────────────────────────────────────── */
@@ -1157,7 +1142,6 @@ blockquote cite::before {
     content: '— ';
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    16. DIÀLEGS (PERSONATGES)
    ───────────────────────────────────────────────────────────────────── */
@@ -1185,7 +1169,6 @@ blockquote cite::before {
 .speaker::after {
     content: ' —';
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    17. RESPONSIVE
@@ -1273,7 +1256,6 @@ blockquote cite::before {
     }
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    18. UTILITATS
    ───────────────────────────────────────────────────────────────────── */
@@ -1306,7 +1288,6 @@ blockquote cite::before {
 .mb-xl { margin-bottom: var(--spacing-xl); }
 .mb-2xl { margin-bottom: var(--spacing-2xl); }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    19. ANIMACIONS
    ───────────────────────────────────────────────────────────────────── */
@@ -1319,7 +1300,6 @@ blockquote cite::before {
 .fade-in {
     animation: fadeIn var(--transition-normal) ease forwards;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    20. IMPRESSIÓ
@@ -1441,24 +1421,6 @@ blockquote cite::before {
 
 .theme-toggle .theme-icon {
     font-size: 1.1rem;
-}
-
-.btn-auth {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: var(--radius-md);
-    font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.btn-auth:hover {
-    background: var(--color-accent-hover);
 }
 
 /* Panel de cerca desplegable */
@@ -1725,89 +1687,6 @@ blockquote cite::before {
     top: var(--spacing-sm);
     right: var(--spacing-sm);
     font-size: var(--font-size-xs);
-}
-
-/* Botons d'acció a les portades */
-.work-cover .btn-action {
-    position: absolute;
-    bottom: var(--spacing-sm);
-    right: var(--spacing-sm);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 0.2s ease;
-    z-index: 10;
-}
-
-.work-card-link:hover .btn-action,
-.work-card-carousel:hover .btn-action {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.btn-action:hover {
-    transform: scale(1.15) !important;
-}
-
-/* Botó favorit (cor) */
-.btn-favorit,
-.btn-favorite {
-    background: rgba(255, 255, 255, 0.95);
-    color: #333;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    font-size: 1.1rem;
-}
-
-.btn-favorit:hover,
-.btn-favorite:hover {
-    background: #fff0f0;
-    transform: scale(1.15);
-}
-
-.btn-favorit.active,
-.btn-favorite.is-favorite {
-    background: #fff0f0;
-    color: #e74c3c;
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Botó favorit centrat sota la portada */
-.btn-favorit-below,
-.btn-favorite-below {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: var(--spacing-sm) auto 0;
-    background: var(--color-surface, #f8f8f8);
-    border: 1px solid var(--color-border, #ddd);
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: var(--color-text, #333);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    padding: 0.5rem 1rem;
-}
-
-.btn-favorit-below:hover,
-.btn-favorite-below:hover {
-    background: #fff0f0;
-    border-color: #e74c3c;
-}
-
-.btn-favorit-below.active,
-.btn-favorite-below.is-favorite {
-    background: #fff0f0;
-    border-color: #e74c3c;
-    color: #e74c3c;
 }
 
 /* Botó carret (micromecenatge) */
@@ -2568,11 +2447,6 @@ blockquote cite::before {
     .social-links {
         justify-content: center;
     }
-
-    .btn-auth {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: var(--font-size-xs);
-    }
 }
 
 @media (max-width: 480px) {
@@ -2593,36 +2467,12 @@ blockquote cite::before {
         display: none;
     }
 }
-    border: none;
-    padding: var(--spacing-sm);
-    cursor: pointer;
-    font-size: 1.2rem;
-}
 
 .theme-icon-dark { display: inline; }
 .theme-icon-light { display: none; }
 
 [data-theme="dark"] .theme-icon-dark { display: none; }
 [data-theme="dark"] .theme-icon-light { display: inline; }
-
-.btn-auth {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: var(--radius-md);
-    font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.btn-auth:hover {
-    background: var(--color-accent-hover);
-    transform: translateY(-1px);
-}
 
 /* ─────────────────────────────────────────────────────────────────────
    HERO COMPACTE
@@ -2701,10 +2551,6 @@ blockquote cite::before {
     margin-top: var(--spacing-sm);
     color: var(--color-accent) !important;
     font-weight: 500;
-}
-
-.footer-email {
-    font-family: var(--font-ui);
 }
 
 .footer-license {
@@ -2808,11 +2654,6 @@ blockquote cite::before {
 @media (max-width: 480px) {
     .header-actions {
         gap: var(--spacing-sm);
-    }
-
-    .btn-auth {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: var(--font-size-xs);
     }
 
     .carousel-nav {

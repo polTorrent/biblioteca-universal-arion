@@ -42,40 +42,6 @@
         height: 40px;
     }
 }
-
-/* Botó favorit */
-.btn-favorit-below {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin-top: 1rem;
-    padding: 0.5rem 1rem;
-    background: var(--color-surface, #f8f8f8);
-    border: 1px solid var(--color-border, #ddd);
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 0.9rem;
-    color: var(--color-text, #333);
-    transition: all 0.2s ease;
-}
-.btn-favorit-below:hover {
-    background: #fff0f0;
-    border-color: #e74c3c;
-}
-.btn-favorit-below.active {
-    background: #fff0f0;
-    border-color: #e74c3c;
-    color: #e74c3c;
-}
-.btn-favorit-below.active .favorit-text {
-    display: none;
-}
-.btn-favorit-below.active::after {
-    content: 'Als teus favorits';
-}
-.favorit-icon {
-    font-size: 1.2rem;
-}
 /* Botó descarregar EPUB */
 .btn-epub-download {
     display: inline-flex;
