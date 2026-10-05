@@ -7,6 +7,7 @@ import re
 import subprocess
 import time
 from abc import ABC, abstractmethod
+from pathlib import Path
 from typing import Any, ClassVar
 
 import anthropic
@@ -117,10 +118,62 @@ DEFAULT_OUTPUT_PRICE_PER_MILLION = 15.0  # USD
 USD_TO_EUR = 0.92  # Conversió aproximada
 
 
+# ════════════════════════════════════════════════════════════════════════════════
+# MODEL PER SUBSCRIPCIÓ (Claude CLI)
+# ════════════════════════════════════════════════════════════════════════════════
+# La traducció de text usa la subscripció Claude (cost €0), no Venice/DIEM.
+# El model per gènere es llegeix de `subscription:<genere>` a models.conf.
+# ════════════════════════════════════════════════════════════════════════════════
+
+MODEL_SUBSCRIPCIO_PER_DEFECTE = "sonnet"  # Àlies del CLI → sempre el Sonnet actual
+MODELS_CONF_PATH = Path(__file__).resolve().parents[2] / "config" / "models.conf"
+
+
+def _model_per_defecte() -> str:
+    """Model per defecte dels agents (sobreescrivible amb ARION_CLAUDE_MODEL)."""
+    return os.getenv("ARION_CLAUDE_MODEL") or MODEL_SUBSCRIPCIO_PER_DEFECTE
+
+
+def model_subscripcio_per_genere(
+    genere: str | None,
+    conf_path: Path = MODELS_CONF_PATH,
+) -> str:
+    """Retorna el model de Claude (subscripció) per a un gènere.
+
+    Prioritat: ARION_CLAUDE_MODEL > `subscription:<genere>` >
+    `subscription:default` > MODEL_SUBSCRIPCIO_PER_DEFECTE.
+
+    Args:
+        genere: Gènere literari (filosofia, poesia, narrativa...).
+        conf_path: Ruta a models.conf.
+
+    Returns:
+        Nom o àlies del model per passar a `claude --model`.
+    """
+    if os.getenv("ARION_CLAUDE_MODEL"):
+        return os.environ["ARION_CLAUDE_MODEL"]
+
+    models: dict[str, str] = {}
+    try:
+        for linia in conf_path.read_text(encoding="utf-8").splitlines():
+            linia = linia.split("#", 1)[0].strip()
+            if not linia.startswith("subscription:") or "=" not in linia:
+                continue
+            clau, valor = linia.split("=", 1)
+            parts = valor.split()
+            if parts:
+                models[clau.split(":", 1)[1].strip()] = parts[0]
+    except OSError:
+        return MODEL_SUBSCRIPCIO_PER_DEFECTE
+
+    clau_genere = (genere or "").strip().lower()
+    return models.get(clau_genere) or models.get("default") or MODEL_SUBSCRIPCIO_PER_DEFECTE
+
+
 class AgentConfig(BaseModel):
     """Configuració base per als agents."""
 
-    model: str = Field(default="claude-sonnet-4-20250514")
+    model: str = Field(default_factory=_model_per_defecte)
     max_tokens: int = Field(default=4096)
     temperature: float = Field(default=0.3)
     use_api: bool = Field(default=False)  # False = subscripció, True = API
@@ -248,6 +301,7 @@ class BaseAgent(ABC):
             "--output-format", "json",  # Resposta en JSON
             "--max-turns", "1",  # Una sola resposta (sense eines no cal més)
             "--tools", "",  # Desactivar eines per evitar web search, etc.
+            "--strict-mcp-config",  # No carregar servidors MCP (evita soroll a la resposta)
             "--system-prompt", system_prompt,
             "--model", self.config.model,
             "--no-session-persistence",  # No desar sessió

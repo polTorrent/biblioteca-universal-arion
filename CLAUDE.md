@@ -41,6 +41,11 @@ Hermes cron ──► agent orquestrador (model econòmic)
   Verifica amb `claude auth status`.
 - **Usuaris web (on-demand):** crèdits API només quan paguen per traducció.
 - Els agents detecten el context: `CLAUDECODE=1` → subscripció; context web → API.
+- **Traducció de text = subscripció Claude** (Claude CLI, cost €0) via
+  `sistema/traduccio/traduir_pipeline.py`. El camí Venice/DIEM per a text
+  (`traduir_venice.py`) està arxivat a `arxiu/orquestracio-obsoleta/`.
+- **DIEM (Venice) només per a imatge (portades) i TTS (audiollibres)** via
+  `agents/venice_client.py`.
 
 ## Convenis
 - Idioma: **català** (codi, comentaris, commits, docs, logs).
@@ -50,8 +55,10 @@ Hermes cron ──► agent orquestrador (model econòmic)
 - No generar obres noves en mode consolidació.
 
 ## Models (`sistema/config/models.conf`)
-- Traducció literatura: `kimi-k2-5` (filosofia/poesia/teatre), `llama-3.3-70b`
-  (narrativa/assaig), `qwen3-235b-a22b-thinking-2507` (oriental).
+- Traducció (subscripció, secció `subscription:<genere>`): `opus`
+  (filosofia/poesia/teatre/oriental), `sonnet` (narrativa/assaig, per defecte).
+  Àlies del CLI de Claude; sobreescrivible amb `ARION_CLAUDE_MODEL`.
+- Les entrades Venice (`translate:`, `genre:`) són obsoletes per a text.
 - **MAI** models econòmics (`deepseek`, `glm`) per a traducció literària.
 
 ## Desenvolupament autònom (quota Claude)

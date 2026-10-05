@@ -176,7 +176,8 @@ def main():
     )
 
     # Executar pipeline
-    pipeline = PipelineV2(config=config)
+    # Model de subscripció per gènere (models.conf → subscription:<genere>)
+    pipeline = PipelineV2(config=config, genere=genere)
     resultat = pipeline.traduir(
         text=text_narratiu,
         llengua_origen=llengua,

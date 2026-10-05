@@ -1,0 +1,4 @@
+Translation now runs on the Claude subscription (Claude CLI, €0), and `traduir_venice.py` has been archived. A test call through the real `_call_claude_cli` returned "Rosa" from `claude-sonnet-5-5` at €0. The work is committed on `auto/dev` as `50c308de` and has not been pushed.
+
+**Problems I found and fixed:**
+- **The old model name was broken.** The CLI rejects `claude-sonnet-4-20250514` (exit code 1). The default is now the `sonnet` alias, and it can be overridden with the `ARION_CLAUDE_M

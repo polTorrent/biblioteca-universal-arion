@@ -96,3 +96,13 @@ Cridadors residuals coneguts (no modificats en aquesta tasca):
 - `sistema/desenvolupament/dev-worker.sh` fa `source` de `notificar.sh` amb guarda `[ -f ]`
   (no falla; simplement no notifica).
 - `OPERACIONS.md` i `README.md` encara documenten les ordres antigues.
+
+## Actualització — tasca 130 (2026-10-05): retirada del camí DIEM de text
+
+- `traduir_venice.py` (de `sistema/traduccio/`) → **Mogut** aquí. Traduïa text amb
+  Venice (DIEM). Substitut: `sistema/traduccio/traduir_pipeline.py` (Pipeline V2 per
+  subscripció Claude, model per gènere a `models.conf` → `subscription:<genere>`).
+- Cridadors actualitzats: `sistema/automatitzacio/auditar-cataleg.sh` ara genera tasques
+  amb `traduir_pipeline.py`. Les tasques JSON antigues de `sistema/tasks/` (cua obsoleta)
+  no s'han modificat i encara el referencien.
+- `venice_client.py` es manté: DIEM continua servint imatge (portades) i TTS (audiollibres).
