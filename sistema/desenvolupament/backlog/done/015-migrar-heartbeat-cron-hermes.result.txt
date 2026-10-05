@@ -1,0 +1,5 @@
+He escrit el document de disseny per migrar el heartbeat a cron jobs de Hermes. No he creat ni modificat cap job.
+
+**Què hi ha al document:**
+- **Mapa dels mòduls:** una taula amb tots els mòduls (01–10, més el 11 per context): què comproven, cada quant s'executen, quina acció fan i quina notificació envien.
+- **Proposta de jobs:** 9 jobs de Hermes, J1–J9, amb schedule, tipus (script o agent), prompt, skills i canal de lliurament. Proposo que J1, J2, J6 i J7 siguin scripts silenciosos
