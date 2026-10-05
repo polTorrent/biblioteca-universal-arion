@@ -119,7 +119,15 @@ echo "📋 Task Manager"
 TM="$PROJECT/sistema/scripts/task_manager.py"
 if [ -f "$TM" ]; then
     stats=$(python3 "$TM" stats 2>/dev/null)
-    assert "Task manager funciona" "0" "$(echo "$stats" | grep -c 'pending\|running\|done\|failed' | head -1)"
+    tm_rc=$?
+    assert "Task manager funciona" "0" "$tm_rc"
+    if echo "$stats" | grep -q 'pending\|running\|done\|failed'; then
+        green "  ✅ Task manager llista estats"
+        PASS=$((PASS + 1))
+    else
+        red "  ❌ Task manager no llista estats"
+        FAIL=$((FAIL + 1))
+    fi
     
     # Test dedup
     hash1=$(python3 -c "import sys; sys.path.insert(0, '$PROJECT/sistema/scripts'); from task_manager import task_hash; print(task_hash('test', 'instrucció de prova'))" 2>/dev/null)
