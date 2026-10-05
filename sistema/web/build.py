@@ -401,8 +401,8 @@ class BuildSystem:
         # Construir catàleg complet
         self.build_cataleg()
 
-        # Construir pàgines de mecenatge
-        self.build_mecenatge()
+        # Construir pàgines de contingut estàtic (sobre, faq, legal…)
+        self.build_pagines_estatiques()
 
         # Construir pàgina de cerca i índex
         self.build_cerca()
@@ -755,32 +755,37 @@ class BuildSystem:
         output_file.write_text(html, encoding='utf-8')
         print(f"   ✅ Catàleg generat ({len(self.obres)} obres)")
 
-    def build_mecenatge(self):
-        """Construeix les pàgines de mecenatge."""
+    def build_pagines_estatiques(self):
+        """Construeix les pàgines de contingut estàtic (sobre, faq, legal…).
+
+        Són plantilles autònomes amb el seu propi contingut en català, sense
+        cap backend. Si una plantilla no existeix, se salta sense error.
+        """
         print()
-        print("💝 Construint pàgines de mecenatge...")
+        print("📄 Construint pàgines de contingut...")
 
-        # Pàgines simples
-        simple_pages = ['mecenatge', 'login', 'registre', 'pagament', 'proposta-traduccio', 'perfil', 'usuari']
+        pagines = ['sobre', 'faq', 'contribuir', 'termes', 'privacitat', 'llicencies']
 
-        for page in simple_pages:
+        count = 0
+        for page in pagines:
             template_file = f"{page}.html"
             if not (self.templates_dir / template_file).exists():
-                print(f"   ⚠️  Template {template_file} no trobat")
+                print(f"   ⚠️  Plantilla {template_file} no trobada")
                 continue
 
             template = self.env.get_template(template_file)
             html = template.render(
                 base_url='',
                 site_url='https://biblioteca-arion.cat',
+                active_page=page,
             )
 
             output_file = self.docs_dir / f"{page}.html"
             output_file.write_text(html, encoding='utf-8')
             print(f"   ✅ {page}.html generat")
+            count += 1
 
-        # Generar fitxes de micromecenatge per obres en crowdfunding
-        self.build_micromecenatge_pages()
+        print(f"   📄 {count} pàgines de contingut generades")
 
     def build_epubs(self):
         """Genera EPUBs per a totes les obres validades."""
@@ -863,60 +868,6 @@ class BuildSystem:
         output_file = self.docs_dir / 'cerca.html'
         output_file.write_text(html, encoding='utf-8')
         print("   ✅ cerca.html generat")
-
-    def build_micromecenatge_pages(self):
-        """Genera pàgines individuals per cada projecte de micromecenatge."""
-        import json
-
-        cataleg_file = self.root / 'data' / 'cataleg-traduccions.json'
-        mecenatges_file = self.root / 'data' / 'mecenatges.json'
-
-        if not cataleg_file.exists():
-            print("   ⚠️  cataleg-traduccions.json no trobat")
-            return
-
-        with open(cataleg_file, 'r', encoding='utf-8') as f:
-            cataleg = json.load(f)
-
-        mecenatges = {}
-        if mecenatges_file.exists():
-            with open(mecenatges_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                for m in data.get('mecenatges', []):
-                    mecenatges[m['obra_id']] = m
-
-        # Template de detall
-        template_file = 'micromecenatge-detall.html'
-        if not (self.templates_dir / template_file).exists():
-            print(f"   ⚠️  Template {template_file} no trobat")
-            return
-
-        template = self.env.get_template(template_file)
-
-        count = 0
-        for obra in cataleg.get('obres', []):
-            if obra.get('estat') == 'crowdfunding':
-                mecenatge = mecenatges.get(obra['id'])
-                recaptat = mecenatge.get('total', 0) if mecenatge else obra.get('recaptat', 0)
-                objectiu = obra.get('cost_traduccio', 100)
-                percentatge = min(round((recaptat / objectiu) * 100), 100)
-
-                # Actualitzar obra amb valors de recaptat
-                obra['recaptat'] = recaptat
-
-                html = template.render(
-                    base_url='',
-                    site_url='https://biblioteca-arion.cat',
-                    obra=obra,
-                    mecenatge=mecenatge,
-                    percentatge=percentatge,
-                )
-
-                output_file = self.docs_dir / f"micromecenatge-{obra['id']}.html"
-                output_file.write_text(html, encoding='utf-8')
-                count += 1
-
-        print(f"   ✅ {count} fitxes de micromecenatge generades")
 
     def _autor_slug(self, nom: str) -> str:
         """Genera un slug consistent per un nom d'autor.

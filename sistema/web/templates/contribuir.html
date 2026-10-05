@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Com contribuir — Biblioteca Universal Arion{% endblock %}
+{% block description %}Maneres de col·laborar amb la Biblioteca Universal Arion: revisar traduccions, proposar obres, reportar errors i millorar el codi.{% endblock %}
+
+{% block content %}
+<div class="container page-content">
+    <h1>Com contribuir</h1>
+
+    <p>
+        La Biblioteca Universal Arion és un projecte col·laboratiu. Qualsevol persona hi pot ajudar,
+        tant si sap idiomes com si no. Tota la coordinació passa pel
+        <a href="https://github.com/polTorrent/biblioteca-universal-arion">repositori de GitHub</a>.
+    </p>
+
+    <h2>1. Revisar traduccions</h2>
+    <p>
+        Llegeix les traduccions publicades i, si hi trobes errors o millores, obre una incidència o
+        proposa un canvi directament.
+    </p>
+
+    <h2>2. Proposar obres noves</h2>
+    <p>
+        Obre una incidència amb l'etiqueta <code>nova-obra</code> i indica el títol, l'autor, la
+        llengua original i per què creus que val la pena traduir-la. Cal que el text original sigui
+        de domini públic.
+    </p>
+
+    <h2>3. Reportar errors</h2>
+    <p>
+        Descriu el problema amb claredat i, si és visual, acompanya'l d'una captura de pantalla.
+        Indica l'obra i el passatge concret sempre que puguis.
+    </p>
+
+    <h2>4. Millorar el codi</h2>
+    <p>
+        Fes un <em>fork</em> del repositori, crea una branca descriptiva, fes-hi els canvis i els
+        tests, i envia una <em>pull request</em>. El repositori inclou una configuració de
+        <code>pre-commit</code> amb lint de Python i shell i detecció de secrets.
+    </p>
+
+    <h2>Comunicació</h2>
+    <p>
+        <strong>Incidències</strong> per a errors i propostes concretes,
+        <strong>discussions</strong> per a converses generals i
+        <strong>pull requests</strong> per a canvis de codi o de contingut.
+    </p>
+</div>
+{% endblock %}
