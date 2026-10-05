@@ -75,14 +75,19 @@ Un **worker autònom** processa tasques contínuament amb:
 
 #### Models i costos
 
-| Tasca | Model | Cost DIEM |
-|-------|-------|-----------|
-| Filosofia clàssica/poesia | `claude-opus-4-7` | ~3.5 |
-| Narrativa/assaig | `claude-sonnet-4-6` | ~0.8 |
-| Fetch textos originals | `deepseek-v3.2` | ~0.2 |
-| Metadata/glossaris | `glm-5` | ~0.1 |
+Configuració real a [`sistema/config/models.conf`](sistema/config/models.conf):
 
-> **Regla crítica**: MAI utilitzar `deepseek` o `glm-5` per a traduccions.
+| Tasca | Model | Thinking | Cost DIEM |
+|-------|-------|:--------:|-----------|
+| Traducció filosofia/poesia/teatre | `kimi-k2-5` | on | n/d |
+| Traducció narrativa/assaig | `llama-3.3-70b` | off | n/d |
+| Traducció oriental | `qwen3-235b-a22b-thinking-2507` | on | n/d |
+| Traducció (per defecte) | `llama-3.3-70b` | on | n/d |
+| Fetch textos originals | `mistral-small-3-2-24b-instruct` | off | n/d |
+| Revisió/supervisió/validació | `llama-3.3-70b` | off | n/d |
+| Administració (metadata, glossaris, web, tests) | `llama-3.3-70b` | — | n/d |
+
+> **Regla crítica**: MAI utilitzar models econòmics (`deepseek`, `glm`) per a traducció literària.
 
 ---
 
@@ -98,22 +103,33 @@ biblioteca-universal-arion/
 │   ├── oriental/
 │   └── assaig/
 ├── sistema/
-│   ├── automatitzacio/       # Scripts del worker
-│   │   ├── venice-worker.sh  # Worker principal
-│   │   ├── heartbeat.sh      # Generador de tasques
-│   │   └── diem-optimizer.sh # Optimitzador de crèdits
-│   ├── tasks/                # Tasques del worker
+│   ├── automatitzacio/       # Heartbeat, worker i notificacions
+│   │   ├── heartbeat.sh      # Orquestrador (heartbeat modular)
+│   │   ├── modules/          # Mòduls del heartbeat (01-check-diem … 11-shutdown-report)
+│   │   ├── worker.sh         # Worker unificat (venice/hermes/hybrid)
+│   │   └── notificar.sh      # Notificacions unificades
+│   ├── config/
+│   │   └── models.conf       # Configuració de models per tipus de tasca
+│   ├── desenvolupament/      # Desenvolupament autònom (dev-worker, backlog)
+│   ├── scripts/              # task_manager.py i scripts check_*.py
+│   ├── tasks/                # Cua de tasques del worker
 │   │   ├── pending/
 │   │   ├── running/
 │   │   ├── done/
 │   │   └── failed/
-│   ├── traduccio/            # Scripts de traducció
+│   ├── traduccio/            # Scripts i agents de traducció
+│   │   ├── agents/           # Agents (narrador, client Venice…)
 │   │   ├── traduir_venice.py # Executa traduccions
 │   │   └── fetch_url.py      # Descarrega fonts externes
+│   ├── tests/                # Tests (test_arion.sh, pytest)
 │   ├── logs/                 # Logs del sistema
 │   └── state/                # Estat del heartbeat
+├── scripts/                  # Punts d'entrada (build.py, audiollibres…)
 ├── docs/                     # Web (GitHub Pages)
-└── community/                # Guies de contribució
+├── community/                # Guies de contribució
+├── CLAUDE.md                 # Convencions per a agents
+├── OPERACIONS.md             # Manual operatiu del sistema
+└── PLA-REFACTOR.md           # Pla de refactorització
 ```
 
 ### Estructura d'una obra
