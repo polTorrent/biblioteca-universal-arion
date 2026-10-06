@@ -289,7 +289,8 @@ class BaseAgent(ABC):
             Dict amb la resposta parseada del CLI.
 
         Raises:
-            RuntimeError: Si el CLI falla (codi de sortida no-zero).
+            RuntimeError: Si el CLI falla (codi de sortida no-zero, o el JSON
+                indica `is_error` / `api_error_status`).
             json.JSONDecodeError: Si la resposta no és JSON vàlid.
         """
         # Construir comanda
@@ -331,7 +332,6 @@ class BaseAgent(ABC):
         # Parsejar JSON
         try:
             response_data = json.loads(result.stdout)
-            return response_data
         except json.JSONDecodeError as e:
             # Si falla el parsing, mostrar sortida per debug
             self.logger.log_warning(
@@ -339,6 +339,20 @@ class BaseAgent(ABC):
                 f"No s'ha pogut parsejar resposta JSON del CLI. Sortida: {result.stdout[:500]}"
             )
             raise
+
+        # El CLI pot sortir amb codi 0 però retornar un error dins el JSON
+        # (p.ex. 429 "You've hit your session limit"). Mai tractar-ho com a contingut.
+        if isinstance(response_data, dict) and (
+            response_data.get("is_error") is True
+            or response_data.get("api_error_status") is not None
+        ):
+            status = response_data.get("api_error_status")
+            detall = str(response_data.get("result") or "")[:300]
+            raise RuntimeError(
+                f"Claude CLI ha retornat un error (api_error_status={status}): {detall}"
+            )
+
+        return response_data
 
     def _call_claude_cli_with_retry(
         self,

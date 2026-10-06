@@ -72,6 +72,49 @@ def carregar_metadata(obra_dir: Path) -> dict:
     }
 
 
+# Marques que indiquen que la "traducció" és en realitat un error del CLI/pipeline
+_MARQUES_ERROR = (
+    "[ERROR:",
+    '"is_error": true',
+    '"is_error":true',
+    '"api_error_status"',
+)
+
+_MARQUES_LIMIT = ("429", "session limit", "rate limit", "usage limit")
+
+
+def validar_resultat_pipeline(resultat) -> str | None:
+    """Comprova que el resultat del pipeline és una traducció vàlida.
+
+    Returns:
+        None si és vàlid; altrament un missatge d'error explicatiu.
+    """
+    fase = getattr(getattr(resultat, "fase", None), "value", None)
+    errors = list(getattr(resultat, "errors", None) or [])
+    text = getattr(resultat, "traduccio_final", None) or ""
+
+    motiu = None
+    if fase == "error":
+        motiu = "el pipeline ha acabat en fase d'error"
+    elif not text.strip():
+        motiu = "la traducció és buida"
+    else:
+        for marca in _MARQUES_ERROR:
+            if marca in text:
+                motiu = f"la traducció conté un missatge d'error ({marca!r})"
+                break
+
+    if motiu is None:
+        return None
+
+    contingut = (" ".join(errors) + " " + text).lower()
+    if any(m in contingut for m in _MARQUES_LIMIT):
+        motiu += " — límit de subscripció; reintenta després del reset"
+    if errors:
+        motiu += f"\n   Errors: {errors[:3]}"
+    return motiu
+
+
 def main():
     if len(sys.argv) < 2:
         print("Ús: python3 sistema/traduccio/traduir_pipeline.py <ruta_obra>")
@@ -185,6 +228,13 @@ def main():
         obra=titol,
         genere=genere,
     )
+
+    # No escriure mai un error com si fos la traducció
+    error_resultat = validar_resultat_pipeline(resultat)
+    if error_resultat:
+        print(f"\n❌ TRADUCCIÓ NO GUARDADA: {error_resultat}")
+        print("   traduccio.md no s'ha modificat.")
+        sys.exit(2)
 
     # Guardar traducció
     traduccio_path = obra_dir / "traduccio.md"
