@@ -1,1 +1,0 @@
-../sistema/automatitzacio/system-brain.sh

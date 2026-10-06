@@ -1,1 +1,0 @@
-../sistema/traduccio/generar_portades.py

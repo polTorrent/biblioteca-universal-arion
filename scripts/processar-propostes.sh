@@ -1,1 +1,0 @@
-../sistema/automatitzacio/processar-propostes.sh

@@ -1,1 +1,0 @@
-../sistema/automatitzacio/notificar-usuari.sh

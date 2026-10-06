@@ -1,1 +1,0 @@
-../sistema/traduccio/publicar_web.py

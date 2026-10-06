@@ -1,1 +1,0 @@
-../sistema/traduccio/traduir_pipeline.py

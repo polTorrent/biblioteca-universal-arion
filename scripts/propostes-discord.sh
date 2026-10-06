@@ -1,1 +1,0 @@
-../sistema/automatitzacio/propostes-discord.sh

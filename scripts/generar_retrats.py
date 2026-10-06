@@ -1,1 +1,0 @@
-../sistema/traduccio/generar_retrats.py

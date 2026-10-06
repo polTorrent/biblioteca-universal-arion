@@ -1,8 +1,0 @@
-{
-  "id": "fix-tacitus-metadata-458924",
-  "type": "fix",
-  "priority": 2,
-  "max_duration": 300,
-  "instruction": "Actualizar metadata.yml de Tacitus Germania con estadísticas correctas. El glossari.yml tiene 20 términos pero el metadata.yml dice 0. Actualitzar el campo terme_glossari de 0 a 20 y recalcular estadistiques.paraules_traduccio després d'afegir les seccions I i II.",
-  "created": "2026-04-29T22:00:00+02:00"
-}

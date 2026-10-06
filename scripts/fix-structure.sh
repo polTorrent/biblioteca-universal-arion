@@ -1,1 +1,0 @@
-../sistema/automatitzacio/fix-structure.sh
