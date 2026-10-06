@@ -240,7 +240,7 @@ class TestCopiarAWeb:
     """Tests per a copiar_a_web."""
 
     def test_copia_correctament(self, obra_dir: Path, tmp_path: Path) -> None:
-        """Copia la portada a web/assets/portades/."""
+        """Copia la portada a sistema/web/assets/portades/."""
         portada = obra_dir / "portada.png"
         portada.write_bytes(b"fake-png-data")
 
@@ -253,11 +253,11 @@ class TestCopiarAWeb:
         assert "portades" in str(result)
 
     def test_crea_directori_si_no_existeix(self, obra_dir: Path, tmp_path: Path) -> None:
-        """Crea el directori web/assets/portades/ si no existeix."""
+        """Crea el directori sistema/web/assets/portades/ si no existeix."""
         portada = obra_dir / "portada.png"
         portada.write_bytes(b"data")
 
-        web_dir = tmp_path / "web" / "assets" / "portades"
+        web_dir = tmp_path / "sistema" / "web" / "assets" / "portades"
         assert not web_dir.exists()
 
         with patch("scripts.generar_portades.ROOT", tmp_path):

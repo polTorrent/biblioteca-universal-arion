@@ -25,7 +25,9 @@ Hermes cron ──► agent orquestrador (model econòmic)
 ### Domini (això SÍ que es manté)
 - `sistema/traduccio/` — pipeline i agents (investigador, glossarista, traductor,
   chunker, anotador, avaluador, corrector, portadista, narrador, `venice_client`…)
-- `sistema/web/build.py` + `templates/` — construcció de la web
+- `sistema/web/` — web estàtica: `build.py` (entrada) + `generador/` (mòduls) +
+  `templates/`, `css/`, `js/`, `assets/`. La sortida `docs/` no es rastreja: la
+  publica el CI a `gh-pages`. Vegeu `sistema/web/README.md`.
 - `core/` — `validador_final`, `memoria_contextual`, `estat_pipeline`
 - `utils/calcs_plugins/` — càlculs per llengua (grec, llatí, xinès…)
 - `obres/`, `corpus_estil/`, `fonts/` — contingut i corpus

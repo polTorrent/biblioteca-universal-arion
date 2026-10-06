@@ -103,7 +103,6 @@
     --color-highlight-strong: #4a4030;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    2. RESET I BASE
    ───────────────────────────────────────────────────────────────────── */
@@ -159,7 +158,6 @@ a:hover {
     background-color: var(--color-accent);
     color: white;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    3. TIPOGRAFIA
@@ -222,7 +220,6 @@ small {
     line-height: var(--line-height-loose);
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    4. LAYOUT I CONTENIDORS
    ───────────────────────────────────────────────────────────────────── */
@@ -241,7 +238,6 @@ small {
 .page-content {
     padding: var(--spacing-2xl) 0;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    5. CAPÇALERA (HEADER)
@@ -327,7 +323,6 @@ small {
     border-color: var(--color-accent);
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    6. PEU DE PÀGINA (FOOTER)
    ───────────────────────────────────────────────────────────────────── */
@@ -385,7 +380,6 @@ small {
     font-size: var(--font-size-sm);
     color: var(--color-text-muted);
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    7. PÀGINA D'ÍNDEX (CATÀLEG)
@@ -493,7 +487,6 @@ small {
     color: #856404;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    8. PÀGINA D'OBRA - CAPÇALERA
    ───────────────────────────────────────────────────────────────────── */
@@ -553,7 +546,6 @@ small {
     color: var(--color-text-secondary);
     max-width: 700px;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    9. MODE BILINGÜE - CONTROLS
@@ -661,7 +653,6 @@ small {
     font-size: 0.9em;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    10. MODE BILINGÜE - GRID
    ───────────────────────────────────────────────────────────────────── */
@@ -718,7 +709,6 @@ small {
     margin: 0 auto;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    11. SECCIONS DE TEXT
    ───────────────────────────────────────────────────────────────────── */
@@ -763,7 +753,6 @@ small {
     margin-left: calc(-1 * var(--spacing-md));
     margin-right: calc(-1 * var(--spacing-md));
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    12. TERMES DEL GLOSSARI (INLINE)
@@ -827,7 +816,6 @@ small {
     font-style: italic;
     opacity: 0.9;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    13. NOTES (INLINE I SECCIÓ)
@@ -927,7 +915,6 @@ small {
     text-decoration: underline;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    14. GLOSSARI (SECCIÓ)
    ───────────────────────────────────────────────────────────────────── */
@@ -1002,7 +989,6 @@ small {
 .term-usage a {
     font-weight: 500;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    14b. SECCIONS COL·LAPSABLES (NOTES I GLOSSARI)
@@ -1127,7 +1113,6 @@ small {
     transition: background-color 0.3s ease;
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    15. BLOCKQUOTES I CITES
    ───────────────────────────────────────────────────────────────────── */
@@ -1157,7 +1142,6 @@ blockquote cite::before {
     content: '— ';
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    16. DIÀLEGS (PERSONATGES)
    ───────────────────────────────────────────────────────────────────── */
@@ -1185,7 +1169,6 @@ blockquote cite::before {
 .speaker::after {
     content: ' —';
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    17. RESPONSIVE
@@ -1273,7 +1256,6 @@ blockquote cite::before {
     }
 }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    18. UTILITATS
    ───────────────────────────────────────────────────────────────────── */
@@ -1306,7 +1288,6 @@ blockquote cite::before {
 .mb-xl { margin-bottom: var(--spacing-xl); }
 .mb-2xl { margin-bottom: var(--spacing-2xl); }
 
-
 /* ─────────────────────────────────────────────────────────────────────
    19. ANIMACIONS
    ───────────────────────────────────────────────────────────────────── */
@@ -1319,7 +1300,6 @@ blockquote cite::before {
 .fade-in {
     animation: fadeIn var(--transition-normal) ease forwards;
 }
-
 
 /* ─────────────────────────────────────────────────────────────────────
    20. IMPRESSIÓ
@@ -1441,24 +1421,6 @@ blockquote cite::before {
 
 .theme-toggle .theme-icon {
     font-size: 1.1rem;
-}
-
-.btn-auth {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: var(--radius-md);
-    font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.btn-auth:hover {
-    background: var(--color-accent-hover);
 }
 
 /* Panel de cerca desplegable */
@@ -1727,100 +1689,6 @@ blockquote cite::before {
     font-size: var(--font-size-xs);
 }
 
-/* Botons d'acció a les portades */
-.work-cover .btn-action {
-    position: absolute;
-    bottom: var(--spacing-sm);
-    right: var(--spacing-sm);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: all 0.2s ease;
-    z-index: 10;
-}
-
-.work-card-link:hover .btn-action,
-.work-card-carousel:hover .btn-action {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.btn-action:hover {
-    transform: scale(1.15) !important;
-}
-
-/* Botó favorit (cor) */
-.btn-favorit,
-.btn-favorite {
-    background: rgba(255, 255, 255, 0.95);
-    color: #333;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    font-size: 1.1rem;
-}
-
-.btn-favorit:hover,
-.btn-favorite:hover {
-    background: #fff0f0;
-    transform: scale(1.15);
-}
-
-.btn-favorit.active,
-.btn-favorite.is-favorite {
-    background: #fff0f0;
-    color: #e74c3c;
-    opacity: 1;
-    transform: scale(1);
-}
-
-/* Botó favorit centrat sota la portada */
-.btn-favorit-below,
-.btn-favorite-below {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    margin: var(--spacing-sm) auto 0;
-    background: var(--color-surface, #f8f8f8);
-    border: 1px solid var(--color-border, #ddd);
-    border-radius: 20px;
-    font-size: 0.9rem;
-    color: var(--color-text, #333);
-    cursor: pointer;
-    transition: all 0.2s ease;
-    padding: 0.5rem 1rem;
-}
-
-.btn-favorit-below:hover,
-.btn-favorite-below:hover {
-    background: #fff0f0;
-    border-color: #e74c3c;
-}
-
-.btn-favorit-below.active,
-.btn-favorite-below.is-favorite {
-    background: #fff0f0;
-    border-color: #e74c3c;
-    color: #e74c3c;
-}
-
-/* Botó carret (micromecenatge) */
-.btn-cart {
-    background: linear-gradient(135deg, #D4AF37 0%, #B8960C 100%);
-    color: white;
-    box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
-}
-
-.btn-cart:hover {
-    box-shadow: 0 4px 12px rgba(212, 175, 55, 0.5);
-}
-
 .work-info {
     text-align: center;
 }
@@ -1867,393 +1735,9 @@ blockquote cite::before {
     color: white;
 }
 
-/* ─────────────────────────────────────────────────────────────────────
-   COM FUNCIONA - NOU DISSENY NET
-   ───────────────────────────────────────────────────────────────────── */
-
-.how-section {
-    padding: 3rem 0;
-    background: var(--color-bg-secondary);
-    border-top: 1px solid var(--color-border-light);
-}
-
-.how-title {
-    font-family: var(--font-titles);
-    font-size: 1.75rem;
-    font-weight: 500;
-    color: var(--color-text-primary);
-    text-align: center;
-    margin: 0 0 0.25rem;
-}
-
-.how-intro {
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: var(--color-text-muted);
-    text-align: center;
-    font-style: italic;
-    margin: 0 0 2rem;
-}
-
-/* Contenidor dels passos */
-.how-steps {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-/* Cada pas individual */
-.how-step {
-    background: var(--color-bg-primary);
-    border-radius: 8px;
-    border: 1px solid var(--color-border-light);
-}
-
-.how-step.is-open {
-    border-color: var(--color-accent);
-}
-
-/* Capçalera clicable */
-.how-step-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-    text-align: left;
-    font-family: inherit;
-}
-
-.how-step-header:hover {
-    background: rgba(0,0,0,0.02);
-}
-
-/* Número rodó */
-.how-step-num {
-    width: 40px;
-    height: 40px;
-    min-width: 40px;
-    background: var(--color-bg-secondary);
-    border: 2px solid var(--color-border);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: var(--font-ui);
-    font-size: 1rem;
-    font-weight: 700;
-    color: var(--color-text-secondary);
-}
-
-.how-step.is-open .how-step-num,
-.how-step-final .how-step-num {
-    background: var(--color-accent);
-    border-color: var(--color-accent);
-    color: white;
-}
-
-/* Text del pas */
-.how-step-text {
-    flex: 1;
-}
-
-.how-step-name {
-    display: block;
-    font-family: var(--font-ui);
-    font-size: 1rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
-}
-
-.how-step-sub {
-    display: block;
-    font-family: var(--font-ui);
-    font-size: 0.8rem;
-    color: var(--color-text-muted);
-    margin-top: 2px;
-}
-
-/* Icona fletxa */
-.how-step-icon {
-    font-size: 0.75rem;
-    color: var(--color-text-muted);
-    transition: transform 0.2s ease;
-}
-
-.how-step.is-open .how-step-icon {
-    transform: rotate(180deg);
-    color: var(--color-accent);
-}
-
-/* Contingut desplegable */
-.how-step-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-}
-
-.how-step.is-open .how-step-content {
-    max-height: 150px;
-}
-
-.how-step-body {
-    padding: 0 1rem 1rem;
-    padding-left: calc(40px + 2rem);
-}
-
-.how-step-body p {
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    color: var(--color-text-secondary);
-    line-height: 1.5;
-    margin: 0 0 0.5rem;
-}
-
-.how-step-body a {
-    font-family: var(--font-ui);
-    font-size: 0.85rem;
-    color: var(--color-accent);
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.how-step-body a:hover {
-    text-decoration: underline;
-}
-
-/* Línia connector (amagat en mòbil) */
-.how-step-line {
-    display: none;
-}
-
-/* Botó Mecenatge destacat */
-.btn-mecenatge {
-    display: inline-block;
-    padding: 1rem 2.5rem;
-    font-family: var(--font-ui);
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(135deg, #D4AF37 0%, #B8960C 100%);
-    border-radius: 50px;
-    text-decoration: none;
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
-    transition: all 0.3s ease;
-}
-
-.btn-mecenatge:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
-}
-
 /* ─── DESKTOP: Timeline horitzontal ─── */
-@media (min-width: 768px) {
-    .how-section {
-        padding: 4rem 0;
-    }
-
-    .how-title {
-        font-size: 2rem;
-    }
-
-    .how-intro {
-        margin-bottom: 3rem;
-    }
-
-    .how-steps {
-        flex-direction: row;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 0;
-        max-width: 900px;
-        padding-bottom: 80px; /* Espai pel tooltip */
-    }
-
-    .how-step {
-        flex: 1;
-        max-width: 200px;
-        background: transparent;
-        border: none;
-        border-radius: 0;
-        position: relative;
-        overflow: visible; /* IMPORTANT: permet veure el tooltip */
-    }
-
-    .how-step.is-open {
-        border: none;
-    }
-
-    .how-step-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0.5rem;
-        gap: 0.5rem;
-    }
-
-    .how-step-header:hover {
-        background: transparent;
-    }
-
-    .how-step-header:hover .how-step-num {
-        transform: scale(1.1);
-        box-shadow: 0 4px 12px rgba(139,69,19,0.2);
-    }
-
-    .how-step-num {
-        width: 56px;
-        height: 56px;
-        min-width: 56px;
-        font-size: 1.2rem;
-        transition: transform 0.2s, box-shadow 0.2s;
-    }
-
-    .how-step-text {
-        text-align: center;
-    }
-
-    .how-step-name {
-        font-size: 1rem;
-    }
-
-    .how-step-sub {
-        font-size: 0.8rem;
-    }
-
-    /* Amagar fletxa en desktop */
-    .how-step-icon {
-        display: none;
-    }
-
-    /* Línia connector entre passos */
-    .how-step-line {
-        display: block;
-        position: absolute;
-        top: 28px;
-        left: calc(50% + 28px);
-        width: calc(100% - 56px);
-        height: 2px;
-        background: var(--color-border);
-    }
-
-    .how-step-final .how-step-line,
-    .how-step:last-child .how-step-line {
-        display: none;
-    }
-
-    /* Tooltip flotant */
-    .how-step-content {
-        position: absolute;
-        top: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 260px;
-        max-height: none;
-        overflow: visible;
-        opacity: 0;
-        visibility: hidden;
-        pointer-events: none;
-        transition: opacity 0.25s ease, visibility 0.25s ease;
-        padding-top: 12px;
-        z-index: 100;
-    }
-
-    .how-step:hover .how-step-content,
-    .how-step.is-open .how-step-content {
-        opacity: 1;
-        visibility: visible;
-        pointer-events: auto;
-    }
-
-    .how-step-body {
-        position: relative;
-        background: #fff;
-        border: 1px solid var(--color-border-light);
-        border-radius: 10px;
-        padding: 1.25rem;
-        box-shadow: 0 10px 40px rgba(0,0,0,0.15);
-    }
-
-    /* Fletxa del tooltip */
-    .how-step-body::before {
-        content: '';
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 10px solid transparent;
-        border-bottom-color: var(--color-border-light);
-    }
-
-    .how-step-body::after {
-        content: '';
-        position: absolute;
-        bottom: 100%;
-        left: 50%;
-        transform: translateX(-50%);
-        border: 9px solid transparent;
-        border-bottom-color: #fff;
-    }
-
-    .how-step-body p {
-        margin: 0 0 0.75rem;
-    }
-}
 
 /* ─── DESKTOP GRAN ─── */
-@media (min-width: 1024px) {
-    .how-steps {
-        max-width: 1000px;
-    }
-
-    .how-step {
-        max-width: 220px;
-    }
-
-    .how-step-content {
-        width: 280px;
-    }
-}
-
-/* ─── Dark Mode ─── */
-[data-theme="dark"] .how-step {
-    background: var(--color-bg-tertiary);
-    border-color: var(--color-border);
-}
-
-[data-theme="dark"] .how-step.is-open {
-    border-color: var(--color-accent);
-}
-
-@media (min-width: 768px) {
-    [data-theme="dark"] .how-step {
-        background: transparent;
-        border: none;
-    }
-
-    [data-theme="dark"] .how-step-body {
-        background: var(--color-bg-tertiary);
-        border-color: var(--color-border);
-    }
-
-    [data-theme="dark"] .how-step-body::after {
-        border-bottom-color: var(--color-bg-tertiary);
-    }
-}
-
-/* ─────────────────────────────────────────────────────────────────────
-   SECCIÓ MICROMECENATGE
-   ───────────────────────────────────────────────────────────────────── */
-
-.crowdfunding-section {
-    padding: var(--spacing-3xl) 0;
-    background: var(--color-bg-secondary);
-}
 
 .work-cover-gray,
 .work-cover-placeholder.gray {
@@ -2263,36 +1747,6 @@ blockquote cite::before {
 .work-cover-placeholder.gray {
     color: #d1d5db;
     font-size: var(--font-size-2xl);
-}
-
-.funding-progress {
-    margin-top: var(--spacing-sm);
-}
-
-.progress-bar {
-    height: 6px;
-    background: var(--color-border-light);
-    border-radius: 3px;
-    overflow: hidden;
-    margin-bottom: var(--spacing-xs);
-}
-
-.progress-fill {
-    height: 100%;
-    background: linear-gradient(90deg, var(--color-accent) 0%, #d97706 100%);
-    border-radius: 3px;
-    transition: width 0.3s ease;
-}
-
-.progress-text {
-    font-family: var(--font-ui);
-    font-size: var(--font-size-xs);
-    color: var(--color-text-muted);
-    font-weight: 500;
-}
-
-.crowdfunding-card .work-card-link:hover .progress-fill {
-    background: linear-gradient(90deg, #d97706 0%, var(--color-accent) 100%);
 }
 
 /* ─────────────────────────────────────────────────────────────────────
@@ -2568,11 +2022,6 @@ blockquote cite::before {
     .social-links {
         justify-content: center;
     }
-
-    .btn-auth {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: var(--font-size-xs);
-    }
 }
 
 @media (max-width: 480px) {
@@ -2593,36 +2042,12 @@ blockquote cite::before {
         display: none;
     }
 }
-    border: none;
-    padding: var(--spacing-sm);
-    cursor: pointer;
-    font-size: 1.2rem;
-}
 
 .theme-icon-dark { display: inline; }
 .theme-icon-light { display: none; }
 
 [data-theme="dark"] .theme-icon-dark { display: none; }
 [data-theme="dark"] .theme-icon-light { display: inline; }
-
-.btn-auth {
-    padding: var(--spacing-sm) var(--spacing-lg);
-    background: var(--color-accent);
-    color: white;
-    border: none;
-    border-radius: var(--radius-md);
-    font-family: var(--font-ui);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    text-decoration: none;
-    cursor: pointer;
-    transition: all var(--transition-fast);
-}
-
-.btn-auth:hover {
-    background: var(--color-accent-hover);
-    transform: translateY(-1px);
-}
 
 /* ─────────────────────────────────────────────────────────────────────
    HERO COMPACTE
@@ -2701,10 +2126,6 @@ blockquote cite::before {
     margin-top: var(--spacing-sm);
     color: var(--color-accent) !important;
     font-weight: 500;
-}
-
-.footer-email {
-    font-family: var(--font-ui);
 }
 
 .footer-license {
@@ -2808,11 +2229,6 @@ blockquote cite::before {
 @media (max-width: 480px) {
     .header-actions {
         gap: var(--spacing-sm);
-    }
-
-    .btn-auth {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: var(--font-size-xs);
     }
 
     .carousel-nav {

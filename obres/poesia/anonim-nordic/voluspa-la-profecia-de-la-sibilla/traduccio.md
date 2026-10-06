@@ -1,6 +1,6 @@
 # Völuspá — La profecia de la sibil·la
 
-**Traductor**: Editorial Clàssica
+**Traductor**: Biblioteca Arion
 **Font**: Codex Regius (GKS 2365 4to), c. 1270
 **Llengua original**: islandès antic (nòrdic antic)
 

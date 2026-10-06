@@ -120,7 +120,7 @@ def copiar_a_web(retrat_file: Path, autor_slug: str) -> Path | None:
     Returns:
         Path de destí o None si falla.
     """
-    web_autors = ROOT / "web" / "assets" / "autors"
+    web_autors = ROOT / "sistema" / "web" / "assets" / "autors"
     web_autors.mkdir(parents=True, exist_ok=True)
     dest = web_autors / f"retrat_{autor_slug}.png"
     try:

@@ -103,10 +103,12 @@ aprofiti la quota lliure de Claude per fer avançar el codi.
 - **T0.4/T0.5** `.gitignore` (runtime, temporals, `Zone.Identifier`) i treure brutícia rastrejada.
 
 ### Fase 1 — Higiene del repositori
-- **T1.1** Treure els artefactes generats (`docs/`, `web/`) de `main` → publicar des de
-  `gh-pages` o un `dist/` no rastrejat.
-- **T1.2** Reescriure l'historial per aprimar `.git` (o migrar a repo net) — **vistiplau**.
-- **T1.3** Unificar/eliminar la còpia divergent `.openclaw/workspace/biblioteca-universal-arion/`.
+- **T1.1** ✔ *(fet 2026-10-05)* Trets els artefactes generats del git: `docs/`,
+  `web/` i `sistema/docs/` (abans 649 fitxers rastrejats, ~367 MB). `docs/` queda
+  a `.gitignore` i es publica des de CI a `gh-pages`.
+- **T1.2** Reescriure l'historial per aprimar `.git` (904 MB) — **pendent de vistiplau**.
+- **T1.3** ✔ *(fet 2026-10-05)* Eliminada la còpia divergent `web/`; les portades
+  s'han consolidat a `sistema/web/assets/portades/`.
 
 ### Fase 2 — **Eliminar l'orquestració pròpia i delegar-la a Hermes**  ← reescrita
 - **T2.1** **Inventari i arxiu**: moure a `arxiu/orquestracio-obsoleta/` tot el de §1.1
@@ -137,6 +139,18 @@ aprofiti la quota lliure de Claude per fer avançar el codi.
 
 ### Fase 6 — Represa de la producció
 - Reprendre traduccions amb `models.conf` actual; revisar les 16 commits orfes; reactivar la web.
+
+### Fase 7 — Refactor de la web ✔ *(fet 2026-10-05)*
+- **T7.1** Capa interactiva retirada i arxivada (`arxiu/web-interactiva/`): Supabase,
+  autenticació, perfils, favorits, gamificació i micromecenatge. La web queda com a
+  biblioteca estàtica (catàleg, lectura, cerca).
+- **T7.2** `build.py` (1.065 línies) partit en el paquet `sistema/web/generador/`
+  (`markdown.py`, `loader.py`, `builder.py`); `build.py` és l'entrada CLI.
+- **T7.3** Arreglada l'URL pública del lloc (era incorrecta a 7 punts) amb la
+  constant `SITE_URL`.
+- **T7.4** Creades 6 pàgines de contingut (sobre, faq, contribuir, termes,
+  privacitat, llicències) que resolien 6 enllaços trencats a totes les pàgines.
+- **T7.5** Nou `check_links.py` i verificació d'enllaços afegida al CI.
 
 ---
 

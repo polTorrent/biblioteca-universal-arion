@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ obra.titol }} - {{ obra.autor }} | Editorial Clàssica{% endblock %}
+{% block title %}{{ obra.titol }} - {{ obra.autor }} | Biblioteca Arion{% endblock %}
 {% block description %}{{ obra.descripcio|default('Traducció al català de ' ~ obra.titol ~ ' de ' ~ obra.autor) }}{% endblock %}
 
 {% block og_title %}{{ obra.titol }} - {{ obra.autor }}{% endblock %}
@@ -9,7 +9,7 @@
 {% block og_url %}/{{ obra.slug }}.html{% endblock %}
 
 {% block head_extra %}
-<!-- Estils per índex, navegació i favorits -->
+<!-- Estils per índex i navegació -->
 <link rel="stylesheet" href="{{ base_url }}css/obra.css">
 
 <!-- Schema.org -->
@@ -24,7 +24,7 @@
     },
     "translator": {
         "@type": "Organization",
-        "name": "{{ obra.traductor|default('Editorial Clàssica') }}"
+        "name": "{{ obra.traductor|default('Biblioteca Arion') }}"
     },
     "inLanguage": "ca",
     "workTranslation": {
@@ -55,14 +55,6 @@
                     <img src="{{ base_url }}{{ obra.portada_url }}"
                          alt="Portada de {{ obra.titol }}"
                          style="max-width: 200px; height: auto; border-radius: 4px; box-shadow: 0 4px 12px rgba(0,0,0,0.15);">
-                    <button class="btn-favorit btn-favorit-below"
-                            data-obra-id="{{ obra.slug }}"
-                            data-obra-titol="{{ obra.titol }}"
-                            data-obra-autor="{{ obra.autor }}"
-                            title="Afegir a favorits">
-                        <span class="favorit-icon">🤍</span>
-                        <span class="favorit-text">Afegir a favorits</span>
-                    </button>
                     {% if obra.epub_url %}
                     <a href="{{ base_url }}{{ obra.epub_url }}"
                        class="btn-epub-download"
@@ -730,23 +722,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 100);
         });
     });
-});
-
-// Inicialitzar estat del botó de favorits
-document.addEventListener('DOMContentLoaded', async function() {
-    const favBtn = document.querySelector('.btn-favorit-below');
-    if (!favBtn || !window.ArionFavorits) return;
-
-    // Esperar que l'auth estigui llest
-    await new Promise(resolve => setTimeout(resolve, 300));
-
-    const obraId = favBtn.dataset.obraId;
-    const isFavorit = await window.ArionFavorits.isFavorit(obraId);
-
-    if (isFavorit) {
-        favBtn.classList.add('active');
-        favBtn.querySelector('.favorit-icon').textContent = '❤️';
-    }
 });
 
 // Botó tornar a dalt

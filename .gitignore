@@ -109,3 +109,6 @@ sistema/state/quota_raw.txt
 sistema/desenvolupament/state/
 sistema/desenvolupament/dev-worker.log
 sistema/desenvolupament/backlog/running/
+
+# Sortida generada del build web (es publica des de CI)
+docs/

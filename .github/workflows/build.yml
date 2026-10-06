@@ -25,7 +25,7 @@ jobs:
         pip install jinja2 pyyaml markdown rich pydantic
 
     - name: Generar HTML
-      run: python scripts/build.py
+      run: python3 sistema/web/build.py --clean
 
     - name: Deploy a GitHub Pages
       if: github.ref == 'refs/heads/main'

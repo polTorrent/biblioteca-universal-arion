@@ -2,7 +2,7 @@
 ## Traducció al català
 
 **Autor:** Abolqasem Firdawsí (ابوالقاسم فردوسی)
-**Traductor:** Editorial Clàssica
+**Traductor:** Biblioteca Arion
 **Llengua original:** persa (فارسی)
 **Font:** Edició de Jules Mohl (تصحیح ژول مل)
 

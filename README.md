@@ -124,8 +124,8 @@ biblioteca-universal-arion/
 │   ├── tests/                # Tests (test_arion.sh, pytest)
 │   ├── logs/                 # Logs del sistema
 │   └── state/                # Estat del heartbeat
-├── scripts/                  # Punts d'entrada (build.py, audiollibres…)
-├── docs/                     # Web (GitHub Pages)
+├── scripts/                  # Punts d'entrada i enllaços simbòlics
+├── docs/                     # Web GENERADA (no rastrejada; la publica el CI)
 ├── community/                # Guies de contribució
 ├── CLAUDE.md                 # Convencions per a agents
 ├── OPERACIONS.md             # Manual operatiu del sistema
@@ -192,9 +192,13 @@ bash sistema/automatitzacio/task-manager.sh status
 ### Build de la web
 
 ```bash
-python3 scripts/build.py          # Genera HTML a docs/
-python3 scripts/build.py --clean # Rebuild complet
+python3 sistema/web/build.py          # Genera HTML a docs/ (incremental)
+python3 sistema/web/build.py --clean  # Neteja i reconstrueix
+python3 sistema/web/check_links.py    # Verifica els enllaços interns
 ```
+
+`docs/` és generat i **no es rastreja al git**: el publica el workflow
+`build.yml` a `gh-pages` a cada push a `main`. Vegeu `sistema/web/README.md`.
 
 ---
 

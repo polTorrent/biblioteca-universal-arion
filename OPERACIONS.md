@@ -116,14 +116,27 @@ L'estat es consulta amb:
 El dashboard propi (`sistema/dashboard/`, `sistema/automatitzacio/dashboard.sh`,
 `sistema/web/dashboard_server.py`) s'ha retirat i arxivat a `arxiu/orquestracio-obsoleta/`.
 
+## Web
+
+Web **estàtica** generada a `docs/` (no rastrejada al git). La publica
+`.github/workflows/build.yml` a la branca `gh-pages` a cada push a `main`.
+
+- Construcció: `python3 sistema/web/build.py --clean`
+- Verificació d'enllaços interns: `python3 sistema/web/check_links.py`
+- Lògica: `sistema/web/generador/` (`markdown.py`, `loader.py`, `builder.py`)
+- Sense backend: l'autenticació (Supabase), els favorits, la gamificació i el
+  micromecenatge es van retirar el 2026-10-05 i són a `arxiu/web-interactiva/`.
+
+Detall complet: `sistema/web/README.md`.
+
 ## Punts d'entrada
 
-`scripts/` només ha de contenir symlinks vàlids. S'han eliminat 6 symlinks trencats
-(`deploy.sh`, `serve.sh`, `worker-watchdog.sh`, `claude-worker-mini.sh`,
-`improve-openclaw.sh`, `informe_detallat.py`): les destinacions ja no existeixen a
-`sistema/`. Tres només sobreviuen a `arxiu/scripts_obsolets/` i `informe_detallat.py` a
-`arxiu/scripts-adhoc/`; són arxivats/obsolets, per tant no s'han reapuntat.
-Nota: `modules/10-generate-report.sh` ja comprova `-f` abans d'usar `informe_detallat.py`.
+`scripts/` només ha de contenir symlinks vàlids. S'han eliminat 14 symlinks trencats
+en total: `deploy.sh`, `serve.sh`, `worker-watchdog.sh`, `claude-worker-mini.sh`,
+`improve-openclaw.sh`, `informe_detallat.py`, `dashboard_server.py`, `heartbeat.sh`,
+`millora-continua.sh`, `notificar-usuari.sh`, `start-worker.sh`, `system-brain.sh`,
+`task-manager.sh` i `worker-status.sh`: les destinacions ja no existeixen a
+`sistema/` (són a `arxiu/`).
 
 ## Troubleshooting
 
