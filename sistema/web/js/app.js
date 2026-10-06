@@ -326,7 +326,7 @@ class EditorialClassica {
         if (navigator.share) {
             navigator.share({
                 title: title,
-                text: `Llegeix "${title}" a Editorial Clàssica`,
+                text: `Llegeix "${title}" a Biblioteca Arion`,
                 url: url
             }).catch(console.error);
         } else {

@@ -179,16 +179,11 @@ class BuildSystem:
                 if portada_obra.exists():
                     dest_name = f"{slug}-portada.{ext}"
                     dest_path = portades_dest / dest_name
-                    web_path = portades_src / dest_name
 
-                    # Sempre copiar des d'obres/ (font principal)
+                    # Sempre copiar des d'obres/ (font principal de les portades)
                     shutil.copy(portada_obra, dest_path)
                     portades_processades.add(dest_name)
                     count += 1
-
-                    # Sincronitzar a sistema/web/assets/portades/ per futures builds
-                    portades_src.mkdir(parents=True, exist_ok=True)
-                    shutil.copy(portada_obra, web_path)
                     break
 
         # 2. Copiar des de sistema/web/assets/portades/ NOMÉS les que no existeixen a obres/
@@ -285,7 +280,7 @@ class BuildSystem:
             'titol_original': obra_data.get('titol_original'),
             'autor': obra_data.get('autor', obra_path.parent.name.title()),
             'autor_original': obra_data.get('autor_original'),
-            'traductor': obra_data.get('traductor', 'Editorial Clàssica'),
+            'traductor': obra_data.get('traductor', 'Biblioteca Arion'),
             'llengua_original': obra_data.get('llengua_original') or obra_data.get('llengua_origen', 'grec'),
             'any_original': obra_data.get('any_original'),
             'any_traduccio': obra_data.get('any_traduccio', datetime.now().year),
@@ -682,7 +677,7 @@ class BuildSystem:
                 except (ValueError, TypeError):
                     pass
 
-            SubElement(item, "author").text = obra.get("traductor", "Editorial Clàssica")
+            SubElement(item, "author").text = obra.get("traductor", "Biblioteca Arion")
 
             # Categoria basada en el path
             obra_path = obra.get("_obra_path")
