@@ -1,7 +1,7 @@
 # Rubaiyat (selecció: 75 quartetes)
 *Omar Khayyam*
 
-Traduït de l'anglès per Editorial Clàssica
+Traduït de l'anglès per Biblioteca Arion
 
 ---
 

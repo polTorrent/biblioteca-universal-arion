@@ -4,7 +4,7 @@
 **Edmund Husserl**
 *Lliçons 1916–1920 (Husserliana Materialien IX)*
 
-Traducció al català: Editorial Clàssica (Biblioteca Universal Arion)
+Traducció al català: Biblioteca Arion
 
 ---
 
