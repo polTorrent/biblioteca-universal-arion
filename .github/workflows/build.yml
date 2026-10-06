@@ -6,12 +6,20 @@ on:
   pull_request:
     branches: [ main ]
 
+# Permisos per publicar a GitHub Pages amb el flux modern (artefacte + deploy).
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Un sol desplegament alhora; no cancel·lis un deploy en curs.
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
     - uses: actions/checkout@v4
 
@@ -20,16 +28,36 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Installar dependencies
+    - name: Instal·lar dependències
       run: |
         pip install jinja2 pyyaml markdown rich pydantic
 
     - name: Generar HTML
       run: python3 sistema/web/build.py --clean
 
-    - name: Deploy a GitHub Pages
+    - name: Verificar enllaços interns
+      run: python3 sistema/web/check_links.py
+
+    - name: Configurar GitHub Pages
       if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
+      uses: actions/configure-pages@v4
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./docs
+        enablement: true
+
+    - name: Pujar l'artefacte del lloc
+      if: github.ref == 'refs/heads/main'
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./docs
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+    - name: Deploy a GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
