@@ -1,0 +1,27 @@
+Validat: 2026-10-11
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Selecció de 25 poemes» del Divan-ı Yunus Emre, de Yunus Emre
+    (c. 1238–1320), un dels pares de la poesia turca en llengua vernacla i gran
+    poeta místic sufi. Els 25 poemes (I–XXV) de traduccio.md coincideixen 1:1
+    amb els encapçalaments d'original.md (Aşk, Gel gör beni aşk neyledi, Ben bir
+    aceb ile geldim, Şol cennetin ırmakları, Dolap niçin inilersin, … fins a
+    Yürü bre yalan dünya).
+  - Cap bloc [ERROR], cap placeholder pendent («...»), cap text en anglès o
+    turc per traduir. La traducció és fidel al text turc anatolià d'original.md
+    (mostreig dels poemes I, XXIV i XXV verificat frase per frase).
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud 121.8%,
+    0 errors reals i cap avís de qualitat (sense placeholders, sense línies
+    >2000 chars, sense encapçalaments duplicats).
+  - Glossari: 25 termes documentats (glossari.yml). Notes crítiques: 0.
+  - Font: tr.wikisource.org (Divan-ı Yunus Emre, text de domini públic).
+  - Qualitat de referència: metadata.yml -> avaluacio_final.puntuacions.global
+    = 7.5 (2026-03-16), aprovat: true, 0 errors crítics.
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
