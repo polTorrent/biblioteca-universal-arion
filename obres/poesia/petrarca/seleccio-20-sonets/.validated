@@ -1,0 +1,30 @@
+Validat: 2026-10-11
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Selecció de Sonets del Canzoniere» de Francesco Petrarca (1304–1374),
+    setze sonets del Rerum vulgarium fragmenta, entre els quals peces centrals com
+    el Sonet I (RVF 1, pròleg del Canzoniere), el Sonet XXXV (RVF 35, «Solo et
+    pensoso»), el Sonet CXXXIV (RVF 134) i el Sonet CCCLXV (RVF 365, cloenda).
+  - Estructura: 16 sonets; els 16 encapçalaments de traduccio.md coincideixen 1:1
+    amb els d'original.md (Sonet I, III, XXXV, LXI, XC, CXXXIV, CLXIV, CLXXXIX,
+    CCXXVII, CCLXVII, CCLXXII, CCLXXIX, CCXCII, CCCX, CCCXII, CCCLXV).
+  - Cap bloc [ERROR], cap placeholder pendent, cap text en anglès o italià per
+    traduir. La traducció és fidel al text italià (volgare toscà) de original.md
+    — no prové d'un intermediari.
+  - Verificació anti-al·lucinació present al final de traduccio.md (16/16 sonets,
+    coincidència SÍ; tractament de llatinismes i noms mitològics: Procne, Filomela,
+    Júpiter, Escil·la, Caribdis).
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud 108.2%, 0 errors
+    reals i cap avís de qualitat (sense línies >2000 chars, sense encapçalaments
+    duplicats, sense placeholders).
+  - Glossari: 15 termes documentats (glossari.yml). Notes crítiques: 0.
+  - Font: it.wikisource.org (Canzoniere, text de domini públic).
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 7.5 (2026-03-27).
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
