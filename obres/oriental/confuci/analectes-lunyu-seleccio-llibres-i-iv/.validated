@@ -1,0 +1,21 @@
+Validat: 2026-10-10
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Estructura: 4 llibres (Llibre I–IV); la traducció conté 92 aforismes
+    (**1.1** … **4.26**) i els encapçalaments de traduccio.md coincideixen amb
+    els de original.md (論語, Wikisource en xinès clàssic). La numeració segueix
+    l'ordre canònic de l'obra.
+  - Cap bloc [ERROR], cap placeholder («...»), cap text pendent de traduir.
+  - pre_supervisio.py --no-llm: completitud ~176% (inflació normal del català
+    respecte del xinès clàssic, molt compacte), 0 errors reals; decisió SUPERVISAR.
+  - Glossari: 22 termes documentats. Notes crítiques: 12 (notes.md).
+  - Font: Wikisource en xinès (論語), domini públic; selecció dels quatre primers llibres.
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 8.0 (2026-03-16).
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
