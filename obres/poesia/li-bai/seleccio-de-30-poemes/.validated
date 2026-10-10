@@ -1,0 +1,27 @@
+Validat: 2026-10-10
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Selecció de 30 poemes» de Li Bai (李白, 701–762), el poeta més
+    celebrat de la dinastia Tang. Inclou peces cèlebres com 靜夜思 (Pensaments
+    en una nit tranquil·la), 將進酒 (Que vingui el vi!), 蜀道難 (El camí difícil
+    de Shu) i 夢遊天姥吟留別 (Somiant una excursió al mont Tianmu).
+  - Estructura: 30 poemes; els 31 encapçalaments de traduccio.md coincideixen
+    1:1 amb els d'original.md (títol + 30 poemes). Inclou el poema 30
+    (下終南山過斛斯山人宿置酒) i la nota final del traductor.
+  - Cap bloc [ERROR], cap placeholder pendent, cap text en anglès/castellà per
+    traduir. La traducció és fidel al text xinès clàssic (文言文) de
+    original.md — no prové d'un intermediari.
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud estructural
+    correcta, 0 errors reals i cap avís de qualitat (sense línies >2000 chars
+    ni encapçalaments duplicats).
+  - Glossari: 25 termes documentats. Notes crítiques: 12 (notes.md).
+  - Font: Wikisource xinès (zh.wikisource.org), text de domini públic.
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 7.5 (2026-03-16).
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
