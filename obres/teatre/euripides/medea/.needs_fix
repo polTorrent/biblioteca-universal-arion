@@ -1,0 +1,45 @@
+CRÍTIC — Traducció corrupta per bug del refinador (JSON intern filtrat al text)
+
+## Estat
+- La traducció vigent (HEAD) és la de 2026-03-25: qualitat 5.3/10 (pendent de millora).
+- L'execució del pipeline del 2026-10-10 15:04 va PRODUIR una traducció CORRUPTA:
+  14 blocs de metadades internes del refinador («canvis aplicats» en JSON) filtrats
+  dins el text, i ~6.700 caràcters de traducció perduts. S'ha revertit `traduccio.md`
+  a la versió de HEAD (no s'ha publicat res corrupte).
+
+## Evidència
+- `.chunks_traduïts.json`: 14/51 chunks contenen un bloc amb aquest format:
+      '`'json
+          "«original» → «traducció», ...",
+      '`'
+  (chunks 4, 5, 6, 7, 8, 16, 18, 20, 25, 26, 30, 33, 42, 44). Alguns d'aquests
+  (18, 20, 26, 30) són NOMÉS el JSON, sense cap text traduït.
+- `traduccio.md` generat en l'execució: 47.936 caràcters vs. 54.673 de HEAD; 14 blocs filtrats.
+- Comprovació: `python3 -c "print(open('obres/teatre/euripides/medea/traduccio.md').read().count(chr(39)+chr(96)+chr(39)+'json'))"` → 0 a HEAD.
+
+## Causa arrel
+- El refinador (`sistema/traduccio/agents/v2/refinador_iteratiu.py`) retorna, en alguns
+  casos, un JSON d'«canvis aplicats» en lloc del text refinat.
+- La neteja `PipelineV2._netejar_json_traduccio` (`agents/v2/pipeline_v2.py:403`) NO
+  cobreix aquest format: el patró d'obertura `'`'json` seguit d'un ARRAY de strings
+  (sense clau `"traduccio"`) no coincideix amb cap regex → el bloc passa intacte, tant
+  a `_guardar_traduccio_chunk` (línia 531) com a `_carregar_traduccio_chunk` (línia 551).
+
+## Abast (sistèmic — 2026-10-10)
+- 11 obres amb chunks filtrats a `.chunks_traduïts.json`:
+  medea (14), sala-numero-6 (8), bartleby (5), criton (3), justine (3), werther (2),
+  leopardi (2), del-sublim (1), lucreci (1), husserl (1), safo (1).
+- 2 traduccions PUBLICADES amb el bloc filtrat dins `traduccio.md`:
+  `obres/assaig/pseudo-longi/del-sublim` (1 bloc) i `obres/teatre/euripides/medea` (14, ja revertit).
+
+## Accions / Recomanació
+1. NO tornar a executar el pipeline sobre medea fins que es corregeixi la neteja:
+   reproduiria la corrupció.
+2. Corregir `_netejar_json_traduccio` perquè elimini el bloc `'`'json … '`'` amb un
+   array de strings; si el chunk queda buit, marcar-lo per retraduir.
+3. Revisar `refinador_iteratiu.py` perquè no retorni mai el JSON de canvis com a text.
+4. Netejar el bloc filtrat a `del-sublim/traduccio.md` (1 ocurrència).
+5. Un cop corregit: retraduir medea (qualitat prèvia 5.3 < 7.0).
+
+## Data de supervisió: 2026-10-10
+## Model: deepseek-v4-flash
