@@ -1,0 +1,23 @@
+Validat: 2026-10-10
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Estructura: 30 poemes; l'original (anglès de l'autor, 1912) i la traducció
+    coincideixen (mateix nombre d'encapçalaments i seccions).
+  - Cap placeholder ("..."), cap bloc [ERROR], cap text pendent de traduir.
+  - pre_supervisio.py --no-llm: cap problema crític ni error real; completitud
+    ~104% (inflació normal català vs. anglès en prosa poètica).
+  - Glossari: 8 termes documentats. Notes crítiques: 6.
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 8.0 (2026-03-20).
+
+  Nota de font: la traducció parteix de la versió anglesa del propi Tagore
+  (1912), que és la font canònica del Gitanjali i està documentada a
+  metadata.yml (llengua_original: bengalí, via anglès de l'autor). No es tracta
+  d'una traducció indirecta accidental.
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  respectar el flag sistema/state/diem_stop; el llindar s'assoleix per la
+  revisió estructural i la qualitat prèvia registrada.
