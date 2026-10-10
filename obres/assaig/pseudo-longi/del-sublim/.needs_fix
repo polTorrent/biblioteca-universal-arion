@@ -1,0 +1,28 @@
+CRÍTIC — Pèrdua de contingut per bug del refinador (bloc JSON filtrat)
+
+## Estat
+- `traduccio.md` contenia 1 bloc de metadades internes del refinador («canvis aplicats»
+  en JSON, format `'`'json … '`'`) entre [8.4] i [9.6]; ELIMINAT el 2026-10-10.
+- El bloc va SUBSTITUIR la traducció de les seccions **[9.1]–[9.4] i el cap de [9.5]**,
+  que ara FALTEN. La traducció salta de [8.4] al final de [9.5] («els mocs li gotegen
+  del nas…») i després a [9.6].
+- Verificat: cap versió històrica al git ha contingut mai [9.1] (mai s'ha publicat res
+  recuperable). Puntuació prèvia de l'obra: 5.25/10 (aprovat: false).
+
+## Evidència
+- Original grec present a `original.md` (línies 118–126 = [9.1]–[9.5] cap).
+- `.chunks_traduïts.json` → `chunk_12` era NOMÉS `'`'json\n'`'` (buit); netejat.
+
+## Causa arrel (sistèmica)
+- `sistema/traduccio/agents/v2/refinador_iteratiu.py` retorna, en alguns casos, un JSON
+  d'«canvis aplicats» (array de strings) en lloc del text refinat.
+- `PipelineV2._netejar_json_traduccio` (`pipeline_v2.py:403`) no cobreix aquest format.
+- Vegeu el diagnòstic complet (11 obres afectades) a `obres/teatre/euripides/medea/.needs_fix`.
+
+## Accions
+1. NO re-executar el pipeline sobre del-sublim fins que es corregeixi `_netejar_json_traduccio`:
+   reproduiria la corrupció.
+2. Un cop corregit: retraduir del-sublim (puntuació prèvia < 7.0) i restaurar [9.1]–[9.5].
+
+## Data de supervisió: 2026-10-10
+## Model: deepseek-v4-flash

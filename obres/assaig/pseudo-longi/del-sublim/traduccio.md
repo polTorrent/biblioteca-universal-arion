@@ -61,9 +61,6 @@ i el vers encara més grandiós que s'hi afegeix:
 **[8.3]** Pel que fa als rètors, els encomiàstics, els discursos pomposos i els ceremonials contenen grandesa i sublim, però la majoria de vegades manquen d'emoció. Per això, entre els rètors, els més emotius rarament sobresurten en l'encomi, i a l'inrevés, els que destaquen en l'elogi rarament són emotius.
 **[8.4]** Ara bé, si Cecili va pensar que la dimensió emocional no contribueix mai al sublim, i per això va considerar que no era digne d'esment, es confon completament. Gosaré dir que no hi ha res tan grandiloqüent com la passió noble, quan cal, que inspira els discursos com sota l'efecte d'una bogeria sagrada i els fa, per dir-ho així, profetitzar.
 
-'`'json
-'`'
-
 els mocs li gotegen del nas.
 No va fer terrible la imatge, sinó repugnant.
 Però ell, com magnifica les divinitats?
