@@ -1,0 +1,18 @@
+Validat: 2026-10-10
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Estructura: 18 sonets (I–XVIII); els encapçalaments de traduccio.md
+    coincideixen 1:1 amb els de original.md (Sonety krymskie, 1826).
+  - Cap bloc [ERROR], cap placeholder («...»), cap text pendent de traduir.
+  - pre_supervisio.py --no-llm: completitud ~112%, 0 errors reals, 0 errors de pagament.
+  - Glossari: 19 termes documentats.
+  - Font: pl.wikisource.org (Sonety krymskie), domini públic.
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 7.5 (2026-03-16).
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
