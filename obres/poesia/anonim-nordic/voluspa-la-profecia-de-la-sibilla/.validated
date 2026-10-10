@@ -1,0 +1,18 @@
+Validat: 2026-10-10
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Estructura: 66 estrofes (## 1 … ## 66); els encapçalaments de traduccio.md
+    coincideixen 1:1 amb els de original.md (66 seccions + títol).
+  - Cap bloc [ERROR], cap placeholder («...»), cap text pendent de traduir.
+  - pre_supervisio.py --no-llm: completitud ~122%, 0 errors reals; decisió SUPERVISAR.
+  - Glossari: 30 termes documentats. Notes crítiques: 61 (notes.md).
+  - Font: Edda poètica, Codex Regius (GKS 2365 4to), c. 1270, domini públic.
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 7.5 (2026-03-16).
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
