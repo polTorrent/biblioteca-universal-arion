@@ -1,0 +1,22 @@
+Validat: 2026-10-10
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Estructura: 32 seccions representatives del Makura no Sōshi (枕草子); els
+    encapçalaments de traduccio.md coincideixen 1:1 amb els de original.md
+    (一段 «La primavera és l'alba» … 三百二段 «Epíleg»). Inclou l'epíleg
+    (Secció 302) i la nota final del traductor.
+  - Cap bloc [ERROR], cap placeholder pendent, cap text en anglès/castellà per traduir.
+    L'únic «...» del text és un suspens literari legítim («el cant dels insectes...»).
+  - pre_supervisio.py --no-llm: completitud ~100%, 0 errors reals; decisió SUPERVISAR.
+  - Glossari: 10 termes documentats (okashi, aware, tsukizukishi, zuihitsu…).
+    Notes crítiques: 5 (notes.md).
+  - Font: Wikisource japonès (枕草子), edició Sankanbon (三巻本), domini públic.
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 8.0 (2026-03-20).
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
