@@ -1,0 +1,40 @@
+Validat: 2026-10-11
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Decameron — Selecció de 10 contes» de Giovanni Boccaccio
+    (1313–1375), obra mestra de la narrativa europea medieval. Selecció d'una
+    novella representativa de nou de les deu Giornate: I,1 (Ser Ciappelletto),
+    I,3 (Melquisedec i els tres anells), II,5 (Andreuccio de Perusa), III,1
+    (Masetto de Lamporecchio), IV,5 (Elisabet de Messina), V,9 (Federigo degli
+    Alberighi), VI,10 (Fra Cipolla), VII,2 (Peronella), VIII,3 (Calandrino i
+    l'elitropia) i X,10 (Griselda).
+  - Estructura: 10 novelles; els 10 encapçalaments de traduccio.md coincideixen
+    1:1 amb els d'original.md (text italià de Wikisource) en el mateix ordre
+    (Giornata I, I, II, III, IV, V, VI, VII, VIII, X).
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap text italià pendent
+    de traduir. La traducció prové directament del text italià d'original.md.
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud 97.5%, 0 errors
+    reals i 0 errors de pagament; glossari amb 28 termes, sense avisos.
+    Avisos no crítics verificats manualment:
+      · placeholder «...» (línia 133): el·lisió estilística legítima (el
+        familiar que calla: «i que jo... —i no digué més»), no error de chunking.
+      · 10 línies >2000 caràcters: paràgrafs llargs legítims (cada novella és
+        un bloc de prosa contínua), no errors de chunking.
+  - Glossari: 28 termes (glossari.yml). Notes del traductor: notes.md.
+  - Font: Wikisource italià (Decameron, domini públic).
+  - Qualitat de referència: metadata.yml → revisio.qualitat = 7.5 (2026-03-24).
+  - Spot check anti-al·lucinació:
+      · I,3 «Melchisedech giudeo con una novella di tre anella cessa un gran
+        pericol...» → «Melquisedec, jueu, amb una novel·la de tres anells
+        esquiva un gran perill que el Saladí li havia preparat.»
+      · X,10 «con fermo viso» → «amb ferm rostre es disposà a sostenir aquesta.»
+      · X,10 (final) «s'avesse sí ad uno altro fatto scuotere il pilliccione,
+        che riuscito ne fosse una bella roba.» → «s'hagués fet espolsar el
+        pellicó per un altre de tal manera que n'hagués eixit un bell vestit.»
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar s'assoleix per la revisió estructural i la qualitat prèvia registrada.
