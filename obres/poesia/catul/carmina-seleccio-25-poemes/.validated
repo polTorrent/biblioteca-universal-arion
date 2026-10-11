@@ -1,0 +1,36 @@
+Validat: 2026-10-11
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Carmina (selecció: 25 poemes)» de Catul (Gaius Valerius Catullus,
+    c. 84–54 aC), el màxim representant de la poesia neotèrica llatina. Selecció
+    que inclou els poemes d'amor a Lèsbia, l'himne a Diana (XXXIV), el dístic
+    «Odi et amo» (LXXXV) i l'elegia al germà (CI).
+  - Estructura: 25 poemes; els 25 encapçalaments de traduccio.md coincideixen 1:1
+    amb els d'original.md (text llatí de The Latin Library), en el mateix ordre
+    (I, II, III, V, VII, VIII, XI, XIII, XXXI, XXXIV, XLIII, XLVI, XLIX, LI,
+    LVIII, LXX, LXXII, LXXV, LXXVI, LXXXIII, LXXXV, LXXXVII, XCII, CI, CIX).
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap text en llatí pendent
+    de traduir. La traducció prové directament del text llatí d'original.md.
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud 115.2%, 0 errors
+    reals. Únic avís: placeholder «...» (línia 15) verificat manualment i és una
+    el·lisió estilística legítima («en tres volums...»), no un error de chunking.
+  - Glossari: 25 termes documentats (glossari.yml) amb categoria i nota contextual
+    (basium, Lesbia, passer, nugae…). Notes del traductor: 12 seccions (notes.md).
+  - Font: The Latin Library (domini públic).
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 8.0 (2026-03-16).
+  - Spot check anti-al·lucinació:
+      · LXXXV «Odi et amo. quare id faciam, fortasse requiris. / nescio, sed fieri
+        sentio et excrucior.» → «Odio i estimo. Per què ho faig, potser em demanes.
+        / No ho sé, però sento que passa i em torturo.»
+      · CI «Multas per gentes et multa per aequora vectus / advenio has miseras,
+        frater, ad inferias…» → «Portat per molts pobles i per moltes mars, /
+        arribo, germà, a aquestes tristes ofrenes…» (final: «per sempre, germà,
+        salut i adéu.» ↔ «atque in perpetuum, frater, ave atque vale.»)
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
