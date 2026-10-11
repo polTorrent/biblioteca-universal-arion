@@ -1,0 +1,38 @@
+Validat: 2026-10-11
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Amor universal» (兼愛, Jiān Ài) de Mozi (墨子). Els tres capítols
+    centrals del mohisme: 兼愛上 (capítol catorzè), 兼愛中 (capítol quinzè) i
+    兼愛下 (capítol setzè). Text fonamental de la filosofia política xinesa:
+    Mozi hi defensa que tots els mals del món neixen de l'amor parcial (別, bié)
+    i que l'únic remei és l'amor universal i indiscriminat (兼, jiān).
+  - Estructura: 3 seccions; els 3 encapçalaments de traduccio.md coincideixen
+    1:1 amb els d'original.md (text xinès clàssic de Wikisource) en el mateix
+    ordre (capítols catorzè, quinzè i setzè).
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap text xinès pendent
+    de traduir. La traducció prové directament del text xinès d'original.md.
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud 171.3% (la
+    inflació és deguda a l'expansió natural del xinès clàssic, molt dens, cap
+    al català), 0 errors reals i 0 errors de pagament; glossari amb 23 termes.
+    Avis no crític verificat manualment:
+      · 4 línies >2000 caràcters (línies 32, 46, 50 i 52): paràgrafs llargs
+        legítims —cada capítol és un bloc de prosa contínua—, no error de
+        chunking.
+  - Glossari: 23 termes (glossari.yml), amb original xinès, romanització i
+    traducció (兼愛, 別, 兼, 仁, etc.).
+  - Font: Wikisource xinès (墨子/兼愛, domini públic).
+  - Qualitat de referència: metadata.yml → revisio.qualitat = 7.5 (2026-03-17).
+  - Spot check anti-al·lucinació:
+      · 聖人以治天下爲事者也，必知亂之所自起，焉能治之 → «Els savis que es
+        dediquen a governar el món han de conèixer necessàriament l'origen del
+        desordre per poder-hi posar remei.»
+      · 子墨子言曰：仁人之所以爲事者，必興天下之利，除去天下之害 → «El mestre
+        Mozi digué: Els homes benevolents, en tot el que fan, han de promoure
+        el benefici del món i eliminar-ne els mals.»
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar s'assoleix per la revisió estructural i la qualitat prèvia registrada.
