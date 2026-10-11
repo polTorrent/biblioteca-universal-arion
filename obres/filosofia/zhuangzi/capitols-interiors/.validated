@@ -1,0 +1,32 @@
+Validat: 2026-10-11
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Capítols interiors (selecció)» de Zhuangzi (莊周, c. 300 aC), els set
+    capítols interiors (內篇: 逍遙遊, 齊物論, 養生主, 人間世, 德充符, 大宗師,
+    應帝王), considerats el nucli autèntic de l'obra i el fonament del taoisme
+    filosòfic.
+  - Estructura: 7 capítols; els 7 encapçalaments de traduccio.md coincideixen 1:1
+    amb els d'original.md (text xinès clàssic de ctext.org). El final de la
+    traducció (paràbola de Hundun, el Caos: «Al setè dia, Hundun va morir»)
+    correspon al final de l'original (七日而渾沌死).
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap text en anglès o xinès
+    pendent de traduir. La traducció prové directament del text xinès d'original.md
+    (no d'un intermediari).
+  - pre_supervisio.py --no-llm: decisió SUPERVISAR, completitud 135.7%,
+    0 errors reals i cap placeholder. Avís de qualitat: 6 línies >2000 chars,
+    verificades manualment i són paràgrafs llargs legítims (no error de chunking).
+  - Glossari: 24 termes documentats (glossari.yml), amb transliteració i notes
+    (道 dào, 天 tiān, 無為 wú wéi, 逍遙 xiāo yáo…).
+  - Font: ctext.org (莊子·內篇, text de domini públic).
+  - Qualitat de referència: metadata.yml -> revisio.qualitat = 8.0 (2026-03-17).
+  - Spot check anti-al·lucinació: Capítol 1 verificat frase per frase
+    («北冥有魚，其名爲鯤» → «Al mar del Nord hi ha un peix que es diu Kun…»);
+    Capítol 7 (Hundun) verificat contra l'original.
+
+  No s'ha executat la revisió dimensional amb LLM (pre_supervisio --no-llm) per
+  estalviar DIEM; el llindar s'assoleix per la revisió estructural i la qualitat
+  prèvia registrada.
