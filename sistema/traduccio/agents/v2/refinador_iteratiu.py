@@ -10,6 +10,8 @@ El flux és:
 4. Retornar millor versió + historial
 """
 
+import json
+import re
 from typing import TYPE_CHECKING
 
 from pydantic import BaseModel, Field
@@ -173,13 +175,16 @@ FORMAT JSON:
 
         # Parsejar resposta (robust)
         data = extract_json_from_text(response.content)
-        if data and data.get("traduccio_refinada"):
-            traduccio_refinada = data.get("traduccio_refinada", traduccio_actual)
-            canvis = data.get("canvis_aplicats", [])
-            return traduccio_refinada, canvis
+        if isinstance(data, dict):
+            traduccio_refinada = data.get("traduccio_refinada")
+            if isinstance(traduccio_refinada, str) and traduccio_refinada.strip():
+                canvis = data.get("canvis_aplicats", [])
+                if not isinstance(canvis, list):
+                    canvis = []
+                return traduccio_refinada, canvis
 
-        # Intentar extreure traducció del text
-        self.log_warning("No s'ha pogut parsejar JSON, extraient text")
+        # No hi ha "traduccio_refinada" vàlida: intentar extreure text pla.
+        self.log_warning("No s'ha pogut parsejar 'traduccio_refinada', extraient text")
         return self._extreure_traduccio(response.content, traduccio_actual), []
 
     def _construir_prompt(
@@ -235,23 +240,64 @@ FORMAT JSON:
 
         return "\n".join(seccions)
 
+    @staticmethod
+    def _sembla_json(text: str) -> bool:
+        """True si el text és (o comença com) un JSON o un bloc de codi.
+
+        El model de vegades retorna el JSON de «canvis aplicats» (un array de
+        strings) en lloc del text refinat; això no és mai una traducció vàlida.
+        """
+        t = (text or "").strip()
+        if not t:
+            return False
+        if t.startswith("```") or t.startswith("{"):
+            return True
+        if t.startswith("["):
+            # Array JSON si el text sencer ho és, o si obre amb [ " / [ { / [ [.
+            try:
+                return isinstance(json.loads(t), (list, dict))
+            except Exception:
+                return bool(re.match(r'^\[\s*["\{\[]', t))
+        return False
+
     def _extreure_traduccio(self, text: str, fallback: str) -> str:
-        """Intenta extreure la traducció d'una resposta no estructurada."""
-        import re
+        """Intenta extreure la traducció d'una resposta no estructurada.
+
+        Retorna `fallback` si la resposta sembla JSON o un bloc de codi, per
+        evitar filtrar metadades internes (JSON de «canvis aplicats») dins la
+        traducció.
+        """
+        text = (text or "").strip()
+
+        if self._sembla_json(text):
+            self.log_warning(
+                "Resposta del refinador sembla JSON/bloc de codi; es descarta "
+                "i es manté la traducció prèvia."
+            )
+            return fallback
+
+        # Treure qualsevol bloc de codi JSON residual (```json … ``` o ``` [ / { … ```)
+        # abans de res. NO toquem tanques amb altres llenguatges (p. ex. ```català).
+        text = re.sub(r'```json\s*[\s\S]*?```', '', text, flags=re.IGNORECASE).strip()
+        text = re.sub(r'```\s*[\[\{][\s\S]*?```', '', text).strip()
+        if not text:
+            return fallback
 
         patterns = [
-            r'"traduccio_refinada":\s*"([^"]+)"',
+            r'"traduccio_refinada":\s*"((?:[^"\\]|\\.)+)"',
             r'TRADUCCIÓ REFINADA:?\s*\n(.+?)(?:\n\n|\Z)',
         ]
 
         for pattern in patterns:
             match = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
             if match:
-                return match.group(1).strip()
+                candidat = match.group(1).replace("\\n", "\n").replace('\\"', '"').strip()
+                if candidat and not self._sembla_json(candidat):
+                    return candidat
 
-        # Si la resposta sembla ser la traducció directa
-        if len(text) > 50 and not text.startswith("{"):
-            return text.strip()
+        # Si la resposta sembla ser la traducció directa (text pla prou llarg)
+        if len(text) > 50 and not self._sembla_json(text):
+            return text
 
         return fallback
 

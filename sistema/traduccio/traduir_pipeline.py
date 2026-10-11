@@ -122,14 +122,21 @@ def main():
         sys.exit(1)
 
     # Ruta de l'obra
-    base_dir = Path(__file__).parent.parent
+    # ⚠️ L'arrel del repo és 3 nivells amunt: <arrel>/sistema/traduccio/traduir_pipeline.py.
+    # Les rutes documentades (obres/<cat>/<autor>/<obra>) són relatives a l'ARREL.
+    _this = Path(__file__).resolve()
+    project_root = _this.parents[2]      # arrel del repo
+    sistema_dir = _this.parents[1]       # <arrel>/sistema
     obra_rel = sys.argv[1].rstrip("/")
-    
+
     # Suportar tant ruta absoluta com relativa
     if os.path.isabs(obra_rel):
         obra_dir = Path(obra_rel)
     else:
-        obra_dir = base_dir / obra_rel
+        obra_dir = project_root / obra_rel
+        # Compatibilitat enrere: acceptar també rutes relatives a sistema/
+        if not obra_dir.exists() and (sistema_dir / obra_rel).exists():
+            obra_dir = sistema_dir / obra_rel
 
     if not obra_dir.exists():
         print(f"❌ No existeix: {obra_dir}")

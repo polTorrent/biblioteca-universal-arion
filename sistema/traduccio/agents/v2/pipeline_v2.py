@@ -431,8 +431,13 @@ class PipelineV2:
         # 2. Eliminar blocs JSON incrustats (patró: { "traduccio": "...", ... })
         # Patró per trobar JSON amb camp "traduccio"
         json_patterns = [
-            # '`'json { ... } '`'
-            r"'`'json\s*\{[^}]*\"traduccio\"[^}]*(?:\{[^}]*\}[^}]*)*\}\s*'`'",
+            # Bloc de codi ```json { ... "traduccio": ... } ```
+            r"```(?:json|JSON)?\s*\{[^}]*\"traduccio\"[^}]*(?:\{[^}]*\}[^}]*)*\}\s*```",
+            # Bloc de codi ```json … ``` (p. ex. l'array de «canvis aplicats»
+            # que el refinador pot retornar en lloc del text traduït)
+            r"```json\s*[\s\S]*?```",
+            # Tanca anònima ``` amb contingut JSON (comença per [ o {)
+            r"```\s*[\[\{][\s\S]*?```",
             # { "traduccio": "...", "decisions_clau": [...], ... }
             r'\{\s*"traduccio":\s*"(?:[^"\\]|\\.)*"[^}]*(?:"decisions_clau"[^}]*)?(?:"termes_preservats"[^}]*)?(?:"confianca"[^}]*)?(?:"avisos"[^}]*)*\}\.?',
             # Camp "traduccio" sol (sense claus envolvents) - IMPORTANT per casos parcials
@@ -463,8 +468,9 @@ class PipelineV2:
                     # Intentar extreure la traducció del match si és JSON complet
                     match_text = match.group()
                     try:
-                        # Netejar el match
-                        clean_match = match_text.replace("'`'json", "").replace("'`'", "").strip()
+                        # Netejar la tanca de codi del match, si n'hi ha (```json … ```)
+                        clean_match = re.sub(r'^\s*```(?:json|JSON)?\s*', '', match_text)
+                        clean_match = re.sub(r'\s*```\s*$', '', clean_match).strip()
                         if clean_match.endswith("."):
                             clean_match = clean_match[:-1]
                         if clean_match.startswith("{") and clean_match.endswith("}"):

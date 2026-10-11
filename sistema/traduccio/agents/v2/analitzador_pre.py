@@ -25,6 +25,25 @@ if TYPE_CHECKING:
     from utils.logger import AgentLogger
 
 
+def _llista_de_dicts(valor, clau_text: str) -> list[dict]:
+    """Normalitza una llista que pot contenir dicts o strings.
+
+    El model de vegades retorna una llista de strings en lloc d'una llista
+    d'objectes (p. ex. `"recursos_literaris": ["anàfora...", ...]`). Els
+    convertim a dict amb el text sota `clau_text` per no perdre informació ni
+    omplir els logs d'errors de parseig.
+    """
+    if not isinstance(valor, list):
+        return []
+    out: list[dict] = []
+    for item in valor:
+        if isinstance(item, dict):
+            out.append(item)
+        elif isinstance(item, str) and item.strip():
+            out.append({clau_text: item.strip()})
+    return out
+
+
 class AnalitzadorPreTraduccio(BaseAgent):
     """Analitza el text original per preparar una traducció de qualitat.
 
@@ -141,7 +160,7 @@ IMPORTANT: Sigues BREU. Màxim 2-3 reptes, 2-3 prioritats."""
 
         # Parsejar paraules clau
         paraules_clau = []
-        for p in data.get("paraules_clau", []):
+        for p in _llista_de_dicts(data.get("paraules_clau"), "terme"):
             try:
                 paraules_clau.append(ParaulaClau(
                     terme=p.get("terme", ""),
@@ -157,7 +176,7 @@ IMPORTANT: Sigues BREU. Màxim 2-3 reptes, 2-3 prioritats."""
 
         # Parsejar recursos literaris
         recursos = []
-        for r in data.get("recursos_literaris", []):
+        for r in _llista_de_dicts(data.get("recursos_literaris"), "descripcio"):
             try:
                 recursos.append(RecursLiterari(
                     tipus=r.get("tipus", "altre"),
@@ -171,7 +190,7 @@ IMPORTANT: Sigues BREU. Màxim 2-3 reptes, 2-3 prioritats."""
 
         # Parsejar reptes
         reptes = []
-        for r in data.get("reptes_traduccio", []):
+        for r in _llista_de_dicts(data.get("reptes_traduccio"), "descripcio"):
             try:
                 reptes.append(RepteTraduccio(
                     tipus=r.get("tipus", "lexic"),
