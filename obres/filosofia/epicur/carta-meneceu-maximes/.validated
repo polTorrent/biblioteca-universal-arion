@@ -1,0 +1,41 @@
+Validat: 2026-10-11
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Carta a Meneceu i Màximes capitals» d'Epicur (Ἐπίκουρος, 341–270 aC),
+    fundador de l'escola epicúria. Reuneix la Carta a Meneceu (§§122–135) i les
+    quaranta Màximes capitals (Κύριαι Δόξαι), conservades per Diògenes Laerci,
+    «Vides i opinions dels filòsofs il·lustres», Llibre X.
+  - Estructura: 2 seccions (Carta / Màximes) amb encapçalaments coincidents 1:1
+    amb l'original grec. La Carta cobreix íntegrament els paràgrafs [122]–[135]
+    (numeració de Diògenes Laerci) i les Màximes van de la 1 a la 40 (40/40).
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap text grec pendent de
+    traduir. Traducció feta directament del text grec d'original.md (Wikisource,
+    Diògenes Laerci X).
+  - pre_supervisio.py --no-llm: 0 errors reals i 0 errors de pagament; glossari
+    amb 24 termes, sense avisos. (La completitud mesurada en bytes és del 56.5%
+    perquè el grec ocupa 2 bytes per caràcter; en paraules, la traducció —3.320—
+    supera l'original —2.767—, senyal de traducció completa i no abreujada.)
+  - Glossari: 24 termes documentats (hēdonḗ, ataraxía, aponía, eudaimonía,
+    phrónēsis, epithymía, thánatos, prólēpsis, heimarménē, philía, dikaiosýnē…),
+    amb transliteració, traducció i nota contextual.
+  - Notes del traductor: 10 seccions (notes.md), incloent la font (Diògenes
+    Laerci), el destinatari, la classificació dels desigs i l'argument sobre la mort.
+  - Qualitat de referència: metadata.yml → revisio.qualitat = 8.0 (2026-03-17).
+  - Spot check anti-al·lucinació:
+      · [125] «ὅταν μὲν ἡμεῖς ὦμεν, ὁ θάνατος οὐ πάρεστιν…» → «quan nosaltres som,
+        la mort no hi és, i quan la mort hi és, nosaltres ja no som.»
+      · Màxima 2 «Ὁ θάνατος οὐδὲν πρὸς ἡμᾶς· τὸ γὰρ διαλυθὲν ἀναισθητεῖ…» → «La
+        mort no és res per a nosaltres; perquè allò que s'ha dissolt no sent, i el
+        que no sent no és res per a nosaltres.»
+      · Màxima 27 «Ὧν ἡ σοφία παρασκευάζεται… ἡ τῆς φιλίας κτῆσις.» → «De totes
+        les coses que la saviesa procura per a la felicitat de tota la vida, de
+        molt la més gran és la possessió de l'amistat.»
+      · Final: Màxima 40 «Ὅσοι τὴν δύναμιν ἔσχον…» → «Tots els qui han tingut la
+        capacitat de procurar-se la màxima seguretat dels seus veïns…»
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar s'assoleix per la revisió estructural i la qualitat prèvia registrada.
