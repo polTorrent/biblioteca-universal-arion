@@ -1,0 +1,41 @@
+Validat: 2026-10-11
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Bhagavad Gītā» (selecció de 6 capítols) de Vyāsa (Vedavyāsa),
+    traduïda del sànscrit (devanāgarī). Diàleg entre el príncep Arjuna i
+    Kṛṣṇa al camp de batalla de Kurukṣetra, part del Mahābhārata
+    (Bhīṣma Parva, capítols 25-42).
+  - Estructura verificada: 6 capítols (1, 2, 3, 6, 11 i 12), amb els
+    encapçalaments de traduccio.md coincidint 1:1 amb els d'original.md.
+  - Completitud verificada vers a vers: 284/284 versos presents i contigus
+    (Capítol 1: 47, Capítol 2: 72, Capítol 3: 43, Capítol 6: 47,
+    Capítol 11: 55, Capítol 12: 20), d'acord amb el cànon del Gītā.
+  - Cap bloc [ERROR], cap JSON residual del refinador (ni «``json» ni claus
+    internes com "traduccio"/"decisions_clau"), cap text en devanāgarī
+    pendent de traduir. La traducció prové directament del sànscrit.
+  - pre_supervisio.py --no-llm: decisió CONTINUAR amb completitud 58.3%
+    (mètrica de bytes traducció/original); la baixa ràtio és un artefacte
+    del devanāgarī, molt dens en bytes per caràcter —no pas una traducció
+    incompleta. La verificació manual de versos confirma la completitud
+    total. 0 errors reals i 0 errors de pagament; cap avís estructural.
+  - Glossari: 20 termes (glossari.yml), amb original en devanāgarī,
+    transliteració (IAST) i traducció (dharma, yoga, karma, ātman, etc.).
+  - Font: Sanskrit Wikisource (sa.wikisource.org), domini públic.
+  - Qualitat de referència: metadata.yml → revisio.qualitat = 8.0 (2026-03-16).
+  - Spot check anti-al·lucinació (contrast amb l'original sànscrit):
+      · 2.47: कर्मण्येवाधिकारस्ते मा फलेषु कदाचन → «El teu dret és només a
+        l'acció, mai als seus fruits. Que el fruit de l'acció no sigui mai el
+        teu mòbil; però tampoc no t'aferris a la inacció.»
+      · 2.20: न जायते म्रियते वा कदाचित् → «No neix mai ni mor; no és que
+        havent existit deixi d'existir. No nascuda, eterna, perpètua i
+        primordial, no és morta quan el cos és mort.»
+      · 11.32: कालोऽस्मि लोकक्षयकृत् → «Jo sóc el Temps, el destructor dels
+        mons, crescut, dedicat aquí a anihilar els mons.»
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar
+  DIEM; el llindar s'assoleix per la verificació estructural, la completitud
+  vers a vers i la qualitat prèvia registrada.
