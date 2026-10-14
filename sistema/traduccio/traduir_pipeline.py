@@ -28,6 +28,7 @@ import yaml
 
 from agents.v2 import PipelineV2, ConfiguracioPipelineV2
 from agents.v2.models import LlindarsAvaluacio
+from agents.v2.sanititzacio import sembla_metadades, te_bloc_metadades
 
 try:
     from scripts.post_traduccio import post_processar_traduccio, netejar_metadades_font
@@ -103,6 +104,14 @@ def validar_resultat_pipeline(resultat) -> str | None:
             if marca in text:
                 motiu = f"la traducció conté un missatge d'error ({marca!r})"
                 break
+
+        # Metadades internes del refinador (JSON de «canvis aplicats») filtrades
+        # dins la traducció: mai s'ha de publicar.
+        if motiu is None and (te_bloc_metadades(text) or sembla_metadades(text)):
+            motiu = (
+                "la traducció conté metadades internes del refinador "
+                "(bloc JSON de «canvis aplicats» filtrat)"
+            )
 
     if motiu is None:
         return None

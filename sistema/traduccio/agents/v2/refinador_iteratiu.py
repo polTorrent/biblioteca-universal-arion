@@ -18,6 +18,7 @@ from pydantic import BaseModel, Field
 
 from agents.base_agent import AgentConfig, BaseAgent, extract_json_from_text
 from agents.v2.avaluador_dimensional import AvaluadorDimensional
+from agents.v2.sanititzacio import netejar_i_validar, sembla_metadades
 from agents.v2.models import (
     LLINDARS_DEFAULT,
     ContextAvaluacio,
@@ -178,10 +179,18 @@ FORMAT JSON:
         if isinstance(data, dict):
             traduccio_refinada = data.get("traduccio_refinada")
             if isinstance(traduccio_refinada, str) and traduccio_refinada.strip():
-                canvis = data.get("canvis_aplicats", [])
-                if not isinstance(canvis, list):
-                    canvis = []
-                return traduccio_refinada, canvis
+                # El model de vegades posa el JSON de «canvis aplicats» al camp de
+                # text; si no és text de debò, no s'accepta.
+                traduccio_neta, motiu = netejar_i_validar(traduccio_refinada)
+                if motiu is None:
+                    canvis = data.get("canvis_aplicats", [])
+                    if not isinstance(canvis, list):
+                        canvis = []
+                    return traduccio_neta, canvis
+                self.log_warning(
+                    "El camp 'traduccio_refinada' no és text de traducció "
+                    f"({motiu}); es descarta i es manté la traducció prèvia."
+                )
 
         # No hi ha "traduccio_refinada" vàlida: intentar extreure text pla.
         self.log_warning("No s'ha pogut parsejar 'traduccio_refinada', extraient text")
@@ -246,19 +255,9 @@ FORMAT JSON:
 
         El model de vegades retorna el JSON de «canvis aplicats» (un array de
         strings) en lloc del text refinat; això no és mai una traducció vàlida.
+        La detecció és tolerant amb les tanques mutilades (``'`'json``).
         """
-        t = (text or "").strip()
-        if not t:
-            return False
-        if t.startswith("```") or t.startswith("{"):
-            return True
-        if t.startswith("["):
-            # Array JSON si el text sencer ho és, o si obre amb [ " / [ { / [ [.
-            try:
-                return isinstance(json.loads(t), (list, dict))
-            except Exception:
-                return bool(re.match(r'^\[\s*["\{\[]', t))
-        return False
+        return sembla_metadades(text)
 
     def _extreure_traduccio(self, text: str, fallback: str) -> str:
         """Intenta extreure la traducció d'una resposta no estructurada.
@@ -268,6 +267,8 @@ FORMAT JSON:
         traducció.
         """
         text = (text or "").strip()
+        if not text:
+            return fallback
 
         if self._sembla_json(text):
             self.log_warning(
@@ -276,12 +277,20 @@ FORMAT JSON:
             )
             return fallback
 
-        # Treure qualsevol bloc de codi JSON residual (```json … ``` o ``` [ / { … ```)
-        # abans de res. NO toquem tanques amb altres llenguatges (p. ex. ```català).
-        text = re.sub(r'```json\s*[\s\S]*?```', '', text, flags=re.IGNORECASE).strip()
-        text = re.sub(r'```\s*[\[\{][\s\S]*?```', '', text).strip()
-        if not text:
-            return fallback
+        # Treure qualsevol bloc de metadades residual (tanques de qualsevol mena,
+        # també les mutilades ``'`'json … '`'``). NO toquem blocs de codi legítims
+        # ni tanques amb altres llenguatges (p. ex. ```català).
+        text_net, motiu = netejar_i_validar(text)
+        if motiu is not None:
+            if not text_net.strip():
+                self.log_warning(
+                    f"Resposta del refinador descartada ({motiu}); "
+                    "es manté la traducció prèvia."
+                )
+                return fallback
+            text = text_net.strip()
+        elif text_net.strip():
+            text = text_net.strip()
 
         patterns = [
             r'"traduccio_refinada":\s*"((?:[^"\\]|\\.)+)"',

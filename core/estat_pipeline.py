@@ -25,6 +25,11 @@ class InfoChunks(BaseModel):
     completats: list[str] = Field(default_factory=list)
     en_curs: str | None = None
     pendents: list[str] = Field(default_factory=list)
+    # Empremtes (sha1) dels textos dels chunks: permeten detectar si la
+    # fragmentació d'aquesta execució és la mateixa que la de la sessió desada.
+    # Sense això, reprendre amb una fragmentació diferent barreja traduccions
+    # de fragments diferents (text duplicat i desordenat).
+    empremtes: list[str] = Field(default_factory=list)
 
 
 class Metriques(BaseModel):
@@ -171,18 +176,34 @@ class EstatPipeline:
         print(f"[EstatPipeline] Fase completada: {fase}")
         self.guardar()
 
-    def registrar_chunks(self, chunks: list[str]) -> None:
+    def registrar_chunks(self, chunks: list[str], empremtes: list[str] | None = None) -> None:
         """Registra la llista de chunks a processar.
 
         Args:
             chunks: Llista d'identificadors de chunks.
+            empremtes: Empremtes (sha1) dels textos dels chunks, per poder
+                verificar que una represa fa servir la mateixa fragmentació.
         """
         self._data.chunks.total = len(chunks)
         self._data.chunks.pendents = chunks.copy()
         self._data.chunks.completats = []
         self._data.chunks.en_curs = None
+        self._data.chunks.empremtes = list(empremtes) if empremtes else []
         print(f"[EstatPipeline] Registrats {len(chunks)} chunks")
         self.guardar()
+
+    def reiniciar_chunks(self, chunks: list[str], empremtes: list[str] | None = None) -> None:
+        """Descarta la caché de chunks i deixa tots els chunks pendents.
+
+        S'usa quan la fragmentació d'aquesta execució no coincideix amb la de la
+        sessió desada: reutilitzar per índex les traduccions antigues barrejaria
+        fragments diferents.
+        """
+        self.registrar_chunks(chunks, empremtes)
+
+    def empremtes_chunks(self) -> list[str]:
+        """Retorna les empremtes dels chunks de la sessió desada (buit si no n'hi ha)."""
+        return list(self._data.chunks.empremtes)
 
     def iniciar_chunk(self, chunk_id: str) -> None:
         """Marca un chunk com a en curs.

@@ -27,6 +27,7 @@ import re
 import sys
 import time
 import unicodedata
+import hashlib
 from pathlib import Path
 from enum import Enum
 from typing import TYPE_CHECKING, Callable, Literal
@@ -50,6 +51,11 @@ from agents.v2.analitzador_pre import AnalitzadorPreTraduccio, SelectorExemplesF
 from agents.v2.traductor_enriquit import TraductorEnriquit
 from agents.v2.avaluador_dimensional import AvaluadorDimensional, AvaluadorSimple
 from agents.v2.refinador_iteratiu import RefinadorIteratiu
+from agents.v2.sanititzacio import (
+    netejar_i_validar,
+    netejar_metadades,
+    te_bloc_metadades,
+)
 from agents.v2.models import (
     AnalisiPreTraduccio,
     ContextTraduccioEnriquit,
@@ -415,7 +421,9 @@ class PipelineV2:
         if not text or not isinstance(text, str):
             return text or ""
 
-        text_net = text
+        # 0. Blocs de metadades amb qualsevol tipus de tanca (```json, '`'json…):
+        #    els patrons de sota només reconeixen les tanques ben formades.
+        text_net = netejar_metadades(text)
 
         # 1. Si el text sencer és JSON vàlid amb camp "traduccio", extreure'l
         try:
@@ -521,29 +529,57 @@ class PipelineV2:
 
         return text_net.strip()
 
-    def _guardar_traduccio_chunk(self, chunk_id: str, traduccio: str) -> None:
-        """Guarda la traducció d'un chunk per poder reprendre sessions."""
+    def _guardar_traduccio_chunk(self, chunk_id: str, traduccio: str) -> bool:
+        """Guarda la traducció d'un chunk per poder reprendre sessions.
+
+        IMPORTANT: Neteja qualsevol metadada residual abans de guardar i **no
+        guarda mai** contingut buit o que sigui només metadades (JSON intern del
+        refinador): si el contingut no serveix, s'esborra la clau perquè el chunk
+        es torni a traduir en una execució posterior.
+
+        Returns:
+            True si s'ha desat una traducció utilitzable; False altrament.
+        """
         if not self.estat:
-            return
+            return False
+
+        text_a_guardar, motiu = netejar_i_validar(traduccio)
+
         chunks_path = self.estat.obra_dir / ".chunks_traduïts.json"
-        chunks_data = {}
+        chunks_data: dict = {}
         if chunks_path.exists():
             try:
                 chunks_data = json.loads(chunks_path.read_text(encoding="utf-8"))
             except Exception:
                 pass
 
-        # IMPORTANT: Netejar qualsevol JSON residual abans de guardar
-        text_a_guardar = self._netejar_json_traduccio(traduccio)
+        if motiu is not None or not text_a_guardar.strip():
+            if chunk_id in chunks_data:
+                del chunks_data[chunk_id]
+                chunks_path.write_text(
+                    json.dumps(chunks_data, indent=2, ensure_ascii=False),
+                    encoding="utf-8",
+                )
+            if self.logger:
+                self.logger.log_warning(
+                    "Pipeline", f"Chunk {chunk_id} NO s'ha desat: {motiu or 'contingut buit'}"
+                )
+            print(f"[Pipeline] Chunk {chunk_id} no s'ha desat: {motiu or 'contingut buit'}")
+            return False
 
         chunks_data[chunk_id] = text_a_guardar
         chunks_path.write_text(
             json.dumps(chunks_data, indent=2, ensure_ascii=False),
-            encoding="utf-8"
+            encoding="utf-8",
         )
+        return True
 
     def _carregar_traduccio_chunk(self, chunk_id: str) -> str | None:
-        """Carrega la traducció d'un chunk guardat prèviament."""
+        """Carrega la traducció d'un chunk guardat prèviament.
+
+        Neteja el contingut i el descarta si no és text de traducció (metadades
+        internes, marques d'error o buit).
+        """
         if not self.estat:
             return None
         chunks_path = self.estat.obra_dir / ".chunks_traduïts.json"
@@ -552,10 +588,23 @@ class PipelineV2:
         try:
             chunks_data = json.loads(chunks_path.read_text(encoding="utf-8"))
             traduccio = chunks_data.get(chunk_id)
-            # IMPORTANT: Netejar per si és un chunk antic amb JSON residual
-            if traduccio:
-                traduccio = self._netejar_json_traduccio(traduccio)
-            return traduccio
+            if not isinstance(traduccio, str):
+                return None
+            neta, motiu = netejar_i_validar(traduccio)
+            if motiu is not None or not neta.strip():
+                if self.logger:
+                    self.logger.log_warning(
+                        "Pipeline",
+                        f"Chunk {chunk_id} descartat de la represa: {motiu or 'contingut buit'}",
+                    )
+                print(f"[Pipeline] Chunk {chunk_id} descartat de la represa: {motiu or 'contingut buit'}")
+                return None
+            if neta != traduccio and self.logger:
+                self.logger.log_warning(
+                    "Pipeline",
+                    f"Chunk {chunk_id}: tretes metadades filtrades de la traducció desada",
+                )
+            return neta
         except Exception:
             return None
 
@@ -874,6 +923,36 @@ class PipelineV2:
                 self.dashboard.set_chunks(len(chunks))
 
             # ═══════════════════════════════════════════════════════════════
+            # GUARDA: la fragmentació ha de coincidir amb la de la represa
+            # ═══════════════════════════════════════════════════════════════
+            # El chunker és un agent LLM: dues execucions poden fragmentar el
+            # mateix text de maneres diferents. Si els chunks no coincideixen,
+            # reutilitzar les traduccions desades per índex barreja fragments
+            # (text duplicat i desordenat). En aquest cas es descarta la caché.
+            empremtes_chunks = [
+                hashlib.sha1(c.encode("utf-8")).hexdigest()[:12] for c in chunks
+            ]
+            if self.estat:
+                ids_chunks = [f"chunk_{k + 1}" for k in range(len(chunks))]
+                if self.estat.chunks_completats > 0:
+                    empremtes_desades = self.estat.empremtes_chunks()
+                    if empremtes_desades != empremtes_chunks:
+                        avis = (
+                            "La fragmentació d'aquesta execució no coincideix amb la de "
+                            f"la sessió desada ({len(empremtes_desades)} → "
+                            f"{len(empremtes_chunks)} chunks): es descarta la caché de "
+                            "traduccions per índex per evitar barrejar fragments."
+                        )
+                        print(f"[Pipeline] {avis}")
+                        avisos.append(avis)
+                        self.estat.registrar_warning(avis)
+                        self.estat.reiniciar_chunks(ids_chunks, empremtes_chunks)
+                        chunks_pendents = set()
+                else:
+                    # Fragmentació nova: deixar-ne constància per a futures represes.
+                    self.estat.registrar_chunks(ids_chunks, empremtes_chunks)
+
+            # ═══════════════════════════════════════════════════════════════
             # FASE 3: TRADUCCIÓ DE CHUNKS
             # ═══════════════════════════════════════════════════════════════
             if self.estat:
@@ -933,10 +1012,26 @@ class PipelineV2:
                         chunk_index=i,  # Per actualitzar dashboard
                     )
                     resultat_chunk.temps_processament = time.time() - temps_chunk
+
+                    # Control del contingut: mai donar per bona una traducció buida
+                    # o amb metadades internes (JSON del refinador) filtrades.
+                    traduccio_neta, motiu = netejar_i_validar(resultat_chunk.traduccio_final)
+                    resultat_chunk.traduccio_final = traduccio_neta
+                    if motiu is not None:
+                        resultat_chunk.aprovat = False
+                        error_msg = f"Chunk {i+1} amb contingut no utilitzable: {motiu}"
+                        errors.append(error_msg)
+                        if self.logger:
+                            self.logger.log_warning("Pipeline", error_msg)
+                        if self.dashboard:
+                            self.dashboard.log_error("Pipeline", error_msg)
+
                     resultats_chunks.append(resultat_chunk)
 
                     # Guardar traducció del chunk per poder reprendre sessions
-                    self._guardar_traduccio_chunk(chunk_id, resultat_chunk.traduccio_final)
+                    # (retorna False si el contingut no és utilitzable: aleshores
+                    # el chunk NO es marca com a completat i es repetirà).
+                    desat = self._guardar_traduccio_chunk(chunk_id, resultat_chunk.traduccio_final)
 
                     if resultat_chunk.avaluacio_final:
                         puntuacio = resultat_chunk.avaluacio_final.puntuacio_global
@@ -954,17 +1049,18 @@ class PipelineV2:
                             )
 
                         # Guardar estat després de cada chunk
-                        if self.estat:
+                        if self.estat and desat:
                             self.estat.completar_chunk(chunk_id, qualitat=puntuacio)
                             self._guardar_estat_amb_memoria()
 
-                    elif self.dashboard:
+                    else:
                         # Chunk sense avaluació
-                        self.dashboard.update_chunk(i, "completat", quality=7.5, iterations=0)
-                        self.dashboard.log_success("Pipeline", f"Chunk {i+1} completat")
+                        if self.dashboard:
+                            self.dashboard.update_chunk(i, "completat", quality=7.5, iterations=0)
+                            self.dashboard.log_success("Pipeline", f"Chunk {i+1} completat")
 
                         # Guardar estat sense puntuació
-                        if self.estat:
+                        if self.estat and desat:
                             self.estat.completar_chunk(chunk_id, qualitat=7.5)
                             self._guardar_estat_amb_memoria()
 
@@ -1611,24 +1707,40 @@ Retorna NOMÉS la traducció millorada. Ha de sonar natural en català."""
             if traduccio_refinada.startswith("Traducció millorada:"):
                 traduccio_refinada = traduccio_refinada[20:].strip()
 
-            return traduccio_refinada if traduccio_refinada else traduccio
+            # Mai acceptar metadades (JSON intern) com a traducció refinada
+            neta, motiu = netejar_i_validar(traduccio_refinada)
+            if motiu is not None or not neta.strip():
+                if self.logger:
+                    self.logger.log_warning(
+                        "Pipeline",
+                        f"Refinament simple descartat ({motiu or 'contingut buit'}); "
+                        "es manté la traducció prèvia.",
+                    )
+                return traduccio
+
+            return neta
         except Exception as e:
             if self.logger:
-                self.logger.warning(f"Error en refinament simple: {e}")
+                self.logger.log_warning("Pipeline", f"Error en refinament simple: {e}")
             return traduccio
 
     def _fusionar_chunks(self, resultats: list[ResultatChunk]) -> str:
         """Fusiona les traduccions dels chunks.
 
-        IMPORTANT: Aplica neteja de JSON a cada chunk per evitar
-        que JSON residual acabi a la traducció final.
+        IMPORTANT: Aplica neteja de metadades a cada chunk i descarta els que no
+        són text de traducció (JSON intern, marques d'error o buit).
         """
         traduccions_netes = []
         for r in resultats:
-            # Netejar cada traducció abans de fusionar
-            traduccio_neta = self._netejar_json_traduccio(r.traduccio_final)
-            if traduccio_neta:
-                traduccions_netes.append(traduccio_neta)
+            traduccio_neta, motiu = netejar_i_validar(r.traduccio_final)
+            if motiu is not None or not traduccio_neta.strip():
+                if self.logger:
+                    self.logger.log_warning(
+                        "Pipeline",
+                        f"Chunk {r.chunk_id} descartat de la fusió: {motiu or 'contingut buit'}",
+                    )
+                continue
+            traduccions_netes.append(traduccio_neta)
 
         return "\n\n".join(traduccions_netes)
 

@@ -1,12 +1,13 @@
 """Tests per al bug del refinador que filtrava JSON intern dins la traducció.
 
 Context (2026-10-10): el refinador retornava, en alguns casos, el JSON de
-«canvis aplicats» (un array de strings) en lloc del text refinat. Com que
-`PipelineV2._netejar_json_traduccio` tenia els patrons de tanca de codi
-corruptes (``'`'`` en lloc de ```), el bloc passava intacte fins a
-`traduccio.md`. Van quedar afectades 11 obres.
+«canvis aplicats» (un array de strings) en lloc del text refinat.
 
-Aquests tests fixen les dues bandes:
+Atenció: el fix de 2026-10-11 va suposar que el bloc sortia amb tanques ```json,
+però el format REAL als fitxers porta les tanques mutilades (``'`'json``). Aquí
+es fixen les dues bandes amb tots dos formats (vegeu també
+`test_sanititzacio_metadades.py`):
+
   1. `AgentRefinador._extreure_traduccio` no ha de retornar mai JSON/blocs.
   2. `PipelineV2._netejar_json_traduccio` ha d'eliminar el bloc filtrat.
 """
@@ -120,3 +121,37 @@ def test_neteja_chunks_reals_medea():
                 continue
             net = PipelineV2._netejar_json_traduccio(None, txt)
             assert BT not in net, f"{path.name}:{cid} encara conté un bloc de codi"
+            assert "'`'json" not in net, f"{path.name}:{cid} encara conté el bloc mutilat"
+
+
+# ── 4. FORMAT REAL: TANQUES MUTILADES ``'`'json`` ─────────��─────────────────
+
+TANCA_MUTILADA = "'`'json"
+BLOC_MUTILAT = TANCA_MUTILADA + "\n'`'"
+BLOC_MUTILAT_FRAGMENT = (
+    TANCA_MUTILADA
+    + "\n"
+    + '        "v. 23: «de quina manera li paga Jàson» recupera el to irònic"\n'
+    + "'`'"
+)
+
+
+def test_neteja_bloc_mutilat():
+    """El bloc amb tanques mutilades (format real) també s'elimina."""
+    assert PipelineV2._netejar_json_traduccio(None, BLOC_MUTILAT).strip() == ""
+    assert PipelineV2._netejar_json_traduccio(None, BLOC_MUTILAT_FRAGMENT).strip() == ""
+
+    mixt = f"Traducció real del fragment.\n\n{BLOC_MUTILAT_FRAGMENT}\n\nMés text."
+    net = PipelineV2._netejar_json_traduccio(None, mixt)
+    assert TANCA_MUTILADA not in net
+    assert "Traducció real del fragment." in net
+    assert "Més text." in net
+
+
+def test_sembla_json_detecta_tanques_mutilades(refinador):
+    assert refinador._sembla_json(BLOC_MUTILAT) is True
+    assert refinador._sembla_json(BLOC_MUTILAT_FRAGMENT) is True
+
+
+def test_extreure_descarta_bloc_mutilat(refinador):
+    assert refinador._extreure_traduccio(BLOC_MUTILAT_FRAGMENT, "PRÈVIA") == "PRÈVIA"
