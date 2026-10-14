@@ -1,0 +1,33 @@
+CRÍTIC — Bloc de metadades filtrat dins la traducció publicada (kumarasambhava)
+
+## Estat
+- `traduccio.md` (97.057 caràcters) conté, a la secció de notes del Cant III
+  (~pos. 91.323), un **array JSON de metadades del refinador** filtrat dins el
+  text: `["No dubto que les flors d'aquell jardí dolç / es van alegrar del so
+  dels seus peus gentils."]`.
+- L'obra té `.validated` i es va publicar així: la web mostra el fragment JSON
+  com si fos text.
+
+## Evidència
+- Detecció amb `sistema/traduccio/agents/v2/sanititzacio.py`:
+  `sembla_metadades(traduccio.md)` → True (regla «`["`» i final de línia amb
+  `",`).
+- Informe: `reports/neteja-blocs-metadades-2026-10-14.md`.
+
+## Causa
+El bug dels blocs de metadades del refinador (vegeu
+`references/bug-blocs-metadades-2026-10-14.md`): la neteja no reconeixia el
+format real de les tanques i el bloc arribava a `traduccio.md`. El pipeline ja
+no ho pot tornar a publicar (`validar_resultat_pipeline` ho rebutja).
+
+## Accions
+1. Treure l'array filtrat de `traduccio.md` i comprovar la coherència del
+   passatge (traducció del fragment de Shelley i de la nota).
+2. Repassar la resta del fitxer amb
+   `python3 sistema/scripts/netejar_blocs_metadades.py` (informa de tot el
+   catàleg) abans de tornar a validar.
+3. Tornar a generar la web (`python3 sistema/web/build.py --clean`) i refer
+   `.validated` amb la data i la puntuació noves.
+
+## Data de supervisió: 2026-10-14
+## Model: deepseek-v4-1-flash

@@ -43,3 +43,19 @@ CRÍTIC — Traducció corrupta per bug del refinador (JSON intern filtrat al te
 
 ## Data de supervisió: 2026-10-10
 ## Model: deepseek-v4-flash
+
+## ACTUALITZACIÓ 2026-10-14 — la neteja ja reconeix el format real
+- El bug de neteja està corregit: `sistema/traduccio/agents/v2/sanititzacio.py`
+  reconeix les tanques mutilades (``'`'json``), els objectes `{ "traduccio": … }`
+  i els fragments d'array. `_guardar_traduccio_chunk` no desa mai contingut no
+  utilitzable, `_carregar_traduccio_chunk` descarta la caché corrupta i
+  `validar_resultat_pipeline` impedeix publicar-ne. Detalls a
+  `references/bug-blocs-metadades-2026-10-14.md`.
+- Caché netejada amb `sistema/scripts/neteja_blocs_metadades.py --aplica`:
+  11 chunks afectats → es retraduiran (el text no era recuperable).
+- L'estat `.pipeline_state.json` ve d'una execució amb **51 chunks** mentre la
+  caché en té 17: la guarda d'empremtes descarta la caché i es retradueix tot
+  (abans això barrejava fragments). També s'ha corregit que els chunks no es
+  marquessin com a completats sense dashboard.
+- **Pendent:** retraduir l'obra (qualitat prèvia 5,3 < 7,0). Es pot llançar ja:
+  `python3 sistema/traduccio/traduir_pipeline.py /home/jo/biblioteca-universal-arion/obres/teatre/euripides/medea`.

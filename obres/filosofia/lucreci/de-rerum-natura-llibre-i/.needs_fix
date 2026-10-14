@@ -66,3 +66,22 @@ llatí→català), cosa que amaga que els rangs estan desordenats: el global qua
 
 ## Data de supervisió: 2026-10-14 (v3 — corregeix la v2 del mateix dia)
 ## Model: deepseek-v4-1-flash
+
+## ACTUALITZACIÓ 2026-10-14 (v4, vespre) — eines corregides
+- **Neteja de metadades corregida** (mòdul `agents/v2/sanititzacio.py`): el bloc
+  filtrat ja es reconeix i, sobretot, no es pot tornar a publicar
+  (`validar_resultat_pipeline`). Detalls a `references/bug-blocs-metadades-2026-10-14.md`.
+- **Causa de la duplicació, identificada i tapada:** el pipeline reaprofita les
+  traduccions de la represa **per índex** (`chunk_N`), però el chunker és un
+  agent LLM i una execució posterior fragmenta el text diferent. Barrejar
+  traduccions de fragmentacions distintes produeix exactament el patró vist aquí
+  (dues sèries de seccions intercalades, rangs desordenats). L'estat del
+  pipeline ara desa el sha1 de cada chunk (`chunks.empremtes`) i, si la
+  fragmentació no coincideix, **descarta la caché** i retradueix tot. Una
+  re-execució ja no pot reproduir la barreja.
+- Caché netejada: 3 chunks descartats (`neteja_blocs_metadades.py --aplica`).
+- **Continua pendent la reconstrucció del text** (alinear vers a vers amb
+  l'original llatí i triar UNA redacció per rang, o retraduir l'obra sencera).
+  Ara ja es pot llançar el pipeline sense que reprodueixi la corrupció: l'opció
+  neta és **retraduir de zero** (esborrar `.pipeline_state.json` i
+  `.chunks_traduïts.json` abans de llançar-lo).

@@ -51,3 +51,19 @@ CRÍTIC — El bug del refinador PERSISTEIX: la retraducció del 2026-10-14 va r
 
 ## Data de supervisió: 2026-10-14
 ## Model: deepseek-v4-flash
+
+## ACTUALITZACIÓ 2026-10-14 (vespre) — neteja corregida i cacera feta
+- El bug està corregit de debò: mòdul nou `sistema/traduccio/agents/v2/sanititzacio.py`
+  (reconeix les tanques mutilades ``'`'json``, els `{ "traduccio": … }` amb escapes
+  trencats i els fragments d'array). `_guardar_traduccio_chunk` no desa mai
+  contingut no utilitzable, `_carregar_traduccio_chunk` descarta la caché corrupta
+  i `validar_resultat_pipeline` impedeix publicar metadades. Detalls a
+  `references/bug-blocs-metadades-2026-10-14.md`.
+- Caché netejada (`sistema/scripts/neteja_blocs_metadades.py --aplica`): 6 chunks
+  afectats → descartats perquè es retraduiran.
+- **Aquesta traducció publicada encara conté el filtrat**: a `traduccio.md`
+  (~pos. 31.238, capítol 15) hi ha un tros de l'array de «canvis aplicats»
+  (6 línies `"…",`). Cal retraduir o corregir el fitxer a mà.
+- **Pendent:** retraduir l'obra (puntuació prèvia 6,8 < 7,0) amb
+  `python3 sistema/traduccio/traduir_pipeline.py /home/jo/biblioteca-universal-arion/obres/assaig/pseudo-longi/del-sublim`
+  i després `python3 sistema/web/build.py --clean`.
