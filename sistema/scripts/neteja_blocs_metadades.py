@@ -87,12 +87,18 @@ def netejar_chunks(aplica: bool) -> dict:
 
 
 def informar_traduccions() -> list[str]:
-    """Detecta traduccions publicades amb blocs filtrats (només informa)."""
+    """Detecta traduccions publicades amb blocs filtrats o marques d'error."""
     trobades = []
     for path in sorted(OBRES.glob("**/traduccio*.md")):
         text = path.read_text(encoding="utf-8", errors="ignore")
-        if te_bloc_metadades(text) or sembla_metadades(text):
-            trobades.append(str(path.relative_to(OBRES)))
+        marques = text.count("[ERROR:")
+        if te_bloc_metadades(text) or sembla_metadades(text) or marques:
+            detall = []
+            if te_bloc_metadades(text) or sembla_metadades(text):
+                detall.append("bloc de metadades filtrat")
+            if marques:
+                detall.append(f"{marques} marques [ERROR:]")
+            trobades.append(f"{path.relative_to(OBRES)} ({', '.join(detall)})")
     return trobades
 
 

@@ -1,0 +1,28 @@
+ALT — Marques d'error del CLI filtrades dins la traducció publicada (El llibre de la selva)
+
+## Estat
+- `traduccio.md` (297,000 caràcters) conté **191** marques
+  `[ERROR: El CLI ha retornat una resposta buida (sense contingut)]` en lloc dels
+  passatges traduïts. La web les mostra tal qual.
+- L'obra no té `.validated` ni cap altra marca.
+
+## Evidència (primera marca)
+re de la selva ⏎ *Rudyard Kipling* ⏎  ⏎ Traduït del anglès per Biblioteca Arion ⏎  ⏎ --- ⏎  ⏎ [ERROR: El CLI ha retornat una resposta buida (sense contingut)] ⏎  ⏎ [ERROR: El CLI ha retornat una resposta buida (sense c
+
+## Causa
+Execucions antigues: quan el CLI de Claude retornava una resposta buida, el
+pipeline desava `[ERROR: …]` com a traducció del chunk i el fusionava. Ara no pot
+tornar a passar: `_fusionar_chunks` descarta els chunks no utilitzables,
+`_guardar_traduccio_chunk` no els desa i `validar_resultat_pipeline` impedeix
+publicar una traducció amb marques d'error
+(vegeu `references/bug-blocs-metadades-2026-10-14.md`).
+
+## Accions
+1. Retraduir l'obra (o els fragments afectats) amb
+   `python3 sistema/traduccio/traduir_pipeline.py /home/jo/biblioteca-universal-arion/obres/narrativa/rudyard-kipling/the-jungle-book` i còpia prèvia de
+   `traduccio.md`.
+2. Comprovar que no queda cap `[ERROR:` ni cap bloc de metadades.
+3. `python3 sistema/web/build.py --clean` i validar amb `.validated`.
+
+## Data de supervisió: 2026-10-14
+## Model: deepseek-v4-1-flash
