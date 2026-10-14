@@ -1,0 +1,41 @@
+Validat: 2026-10-14
+Puntuació: 8.2/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Diàlegs dels Morts (selecció de 10 diàlegs)» (Νεκρικοὶ Διάλογοι) de
+    Lucià de Samòsata (Λουκιανός ὁ Σαμοσατεύς). Selecció de 10 diàlegs satírics
+    ambientats a l'Hades, on personatges mitològics, filòsofs i conqueridors
+    debaten sobre la vanitat de la vida terrenal.
+  - Estructura: 10 seccions; els 10 encapçalaments «## Diàleg N» de traduccio.md
+    coincideixen 1:1 amb els «## Διάλογος N» d'original.md (text grec de
+    Wikisource) en el mateix ordre: Diògenes i Alexandre, Caront i Menip,
+    Menip i Hermes, Diògenes i Mausol, Menip i Tàntal, Aquil·les i Antíloc,
+    Alexandre/Anníbal/Minós/Escipió, Diògenes i Pòl·lux, Nireu/Tersites/Menip
+    i Menip i Tirèsias.
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap tanca de codi i cap
+    text grec pendent de traduir. La traducció prové directament del text grec
+    d'original.md.
+  - pre_supervisio.py --no-llm: decisió CONTINUAR per «completitud 55.9%» en
+    BYTES, però 0 errors reals i 0 errors de pagament; glossari amb 20 termes.
+    La completitud baixa és un FALS NEGATIU: el grec politònic ocupa molts més
+    bytes per paraula (original: 4.006 paraules / 47.521 bytes ≈ 11,9 B/paraula)
+    que el català (traducció: 4.514 paraules / 26.562 bytes ≈ 5,9 B/paraula).
+    Per recompte de paraules la traducció (4.514) SUPERA l'original (4.006)
+    → obra completa.
+  - Glossari: 20 termes (glossari.yml); notes.md amb 12 notes erudites.
+  - Font: Wikisource grec (Νεκρικοί Διάλογοι, domini públic); colofó que cita
+    l'edició de M.D. Macleod (Oxford Classical Texts).
+  - Qualitat de referència: metadata.yml → avaluacio_final.global = 8.2/10
+    (2026-03-20), aprovat = true, 0 errors.
+  - Spot check anti-al·lucinació:
+      · τί τοῦτο, ὦ Ἀλέξανδρε; καὶ συ τέθνηκας ὥσπερ καὶ ἡμεῖς ἅπαντες; → «Què
+        és això, Alexandre? Tu també has mort, com tots nosaltres?»
+      · οὐκοῦν ὁ Ἄμμων ἐψεύδετο λέγων ἑαυτοῦ σε εἶναι, σὺ δὲ Φιλίππου ἄρα ἦσθα;
+        → «Així doncs, Ammon mentia quan deia que eres fill seu, i resulta que
+        eres de Filip?»
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar s'assoleix per la revisió estructural i la qualitat prèvia registrada.
