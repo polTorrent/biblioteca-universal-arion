@@ -1,0 +1,55 @@
+Validat: 2026-10-14
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural i contrast amb l'original)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Selecció de 20 poemes» (مختارات من ديوان المتنبي) d'al-Mutanabbī
+    (أبو الطيب المتنبي, 915–965 dC), el poeta àrab clàssic per excel·lència.
+    Vint qasides antològiques sobre l'ambició, el coratge, la sàtira (contra
+    Kāfūr d'Egipte) i la condició humana.
+  - Font original: ar.wikisource («المتنبي») — text en escriptura àrab directa,
+    NO una traducció intermèdia. Cada poema encapçalat pel seu matlaʿ (vers
+    d'obertura) i la seva transliteració.
+  - Estructura: 20 seccions; els 20 encapçalaments «## N. <títol català>» de
+    traduccio.md coincideixen 1:1 i en el mateix ordre amb els 20 «## N. <matlaʿ
+    àrab>» d'original.md (poema 1 «Segons la grandesa dels homes vénen les grans
+    empreses» … poema 20 «Ens hi vam estar un dia, i un altre, i un tercer»).
+    El títol català de cada poema és la traducció del seu matlaʿ.
+  - Completitud: la traducció arriba fins al darrer vers de l'original
+    («وَما مِن شَديدٍ يَبتَغي الذَّمَّ أَن يُرى / لِأَنَّ حَبيبَ النَفسِ يُؤلِمُ صائِدُ» →
+    «I cap home fort no busca el blasme de ser vist, / perquè l'estimat de
+    l'ànima és dolorós de caçar.»). Cap poema per sota del 60% de línies de
+    l'original (cobertura verificada poema a poema). 3.200 paraules de traducció
+    per a 2.850 de l'original (112%), proporció normal en un pas àrab → català.
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap tanca de codi. No hi
+    ha restes d'àrab al cos del text (només el nom de l'autor a la capçalera) ni
+    text anglès o d'una altra llengua pendent de traduir.
+  - pre_supervisio.py --no-llm: 118,2% de completitud en bytes, 0 errors reals,
+    0 errors de pagament, cap problema de qualitat detectat; decisió SUPERVISAR.
+    Glossari amb 15 termes i notes.md amb 10 notes erudites.
+  - Spot check anti-al·lucinació (contrast directe amb l'original):
+      · «أَنا الَّذي نَظَرَ الأَعمى إِلى أَدَبي / وَأَسمَعَت كَلِماتي مَن بِهِ صَمَمُ» →
+        «Jo soc aquell la poesia del qual l'ha vista el cec, / i les meves
+        paraules les ha sentides el sord.»
+      · «صَحِبَ الناسُ قَبلَنا ذا الزَمانا / وَعَناهُم مِن شَأنِهِ ما عَنانا» →
+        «Els homes abans de nosaltres ja van conviure amb aquest temps, / i els
+        va preocupar del seu afer allò que ens preocupa.»
+      · «وَأَقبَلَ يَمشي في البِساطِ فَما دَرى / أَلِلبِساطِ عَلَيهِ أَم عَلَيهِ بِساطُ» →
+        «I va avançar caminant sobre la catifa sense saber / si la catifa era
+        sobre ell o ell sobre la catifa.»
+  - Materials: glossari.yml (15 termes: qaṣīda, bayt, dīwān, madḥ, fakhr, hijāʾ…),
+    notes.md (10 notes: l'autor, Sayf al-Dawla, estructura de la qaṣīda, criteris
+    de traducció, la ḍād, Kāfūr d'Egipte…), metadata.yml complet amb font.
+  - Qualitat de referència: metadata.yml → revisio.qualitat = 7.5 (2026-03-16).
+    Punts febles coneguts i no crítics: la traducció prioritza sentit i imatge
+    per damunt del metre i la rima (decisió declarada a notes.md [4]), atès que
+    la prosòdia àrab quantitativa no té equivalent directe en català; pèrdua del
+    monorima en alguns poemes.
+  - Dimensions: fidelitat 8.5 · veu de l'autor 7.5 · fluïdesa 7.5 · correcció
+    lingüística 7.5 · coherència 8.0 · completesa 9.0 → global 7.5/10.
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar s'assoleix per la revisió estructural, el contrast amb l'original i
+  la qualitat prèvia registrada.
