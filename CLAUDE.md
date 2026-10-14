@@ -52,7 +52,8 @@ Hermes cron ──► agent orquestrador (model econòmic)
 ## Convenis
 - Idioma: **català** (codi, comentaris, commits, docs, logs).
 - Mode **CONSOLIDACIÓ**: qualitat > quantitat; mai < 7/10.
-- Mínim DIEM: 3.0 (aturar si menys).
+- **Sense límit DIEM** (retirat 2026-10-11): no s'atura la feina per saldo baix;
+  hi ha fallback (subscripció Claude per a text; Gondola com a provider alternatiu).
 - Commit per tasca (no batch).
 - No generar obres noves en mode consolidació.
 

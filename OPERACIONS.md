@@ -94,7 +94,7 @@ bash ~/biblioteca-universal-arion/sistema/tests/test_arion.sh
 | Variable | Valor | Fitxer |
 |----------|-------|--------|
 | MAX_PENDING | 5 | heartbeat.sh |
-| MIN_DIEM_RESERVE | 3 | heartbeat.sh, worker.sh |
+| MIN_DIEM_RESERVE | (sense límit) | retirat 2026-10-11 |
 | MAX_CONSECUTIVE_FAILS | 3 | worker.sh |
 | MAX_RUNTIME | 32400s (9h) | worker.sh |
 | TASK_TIMEOUT_VENICE | 300s | worker.sh |

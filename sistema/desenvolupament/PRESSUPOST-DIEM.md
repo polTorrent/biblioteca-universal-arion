@@ -1,8 +1,9 @@
-# Pressupost DIEM i guardrails de cost (proposta)
+# Pressupost DIEM i guardrails de cost — RETIRAT
 
-> Tasca 100 del backlog · Fase 2, T2.5 de `PLA-REFACTOR.md`.
-> **Estat:** proposta. No s'ha activat cap cron ni s'ha tocat la config de Hermes.
-> Valors a `sistema/config/diem_costs.conf` (secció «Pressupost i guardrails»).
+> ⚠️ **SUPERSEDED (2026-10-11).** Decisió de Pol: **fora el límit DIEM**. Els guardrails
+> d'aquest document s'han retirat de `sistema/config/diem_costs.conf` i `worker.conf`;
+> no s'atura cap feina per saldo DIEM baix. Hi ha fallback (subscripció Claude per a
+> text; Gondola com a provider alternatiu). Es conserva com a document històric.
 
 ## 1. Situació actual
 
