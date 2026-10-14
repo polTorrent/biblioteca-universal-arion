@@ -1,28 +1,53 @@
-CRÍTIC — Pèrdua de contingut per bug del refinador (bloc JSON filtrat)
+CRÍTIC — El bug del refinador PERSISTEIX: la retraducció del 2026-10-14 va reproduir la corrupció
 
 ## Estat
-- `traduccio.md` contenia 1 bloc de metadades internes del refinador («canvis aplicats»
-  en JSON, format `'`'json … '`'`) entre [8.4] i [9.6]; ELIMINAT el 2026-10-10.
-- El bloc va SUBSTITUIR la traducció de les seccions **[9.1]–[9.4] i el cap de [9.5]**,
-  que ara FALTEN. La traducció salta de [8.4] al final de [9.5] («els mocs li gotegen
-  del nas…») i després a [9.6].
-- Verificat: cap versió històrica al git ha contingut mai [9.1] (mai s'ha publicat res
-  recuperable). Puntuació prèvia de l'obra: 5.25/10 (aprovat: false).
+- El commit 981641e5 («fix: el refinador no filtra el JSON de canvis + neteja de
+  tanques de codi», 2026-10-11) NO cobreix el format REAL del bloc filtrat.
+- Retraducció completa del 2026-10-14 (Pipeline V2, model sonnet, 37 chunks):
+  35/37 chunks de `.chunks_traduïts.json` contenen blocs de «canvis aplicats»
+  filtrats; `traduccio.md` va quedar truncat a 3.350 caràcters (6,9% de l'original)
+  enfront dels 46.012 de HEAD. Puntuació mitjana del pipeline: 6,8/10 (< 7,0).
+- S'ha REVERTIT `traduccio.md` i l'estat intern a HEAD (no s'ha publicat res
+  corrupte). Evidència desada a /tmp/delsublim.CORRUPT.traduccio.md i
+  /tmp/delsublim.CORRUPT.chunks.json.
 
-## Evidència
-- Original grec present a `original.md` (línies 118–126 = [9.1]–[9.5] cap).
-- `.chunks_traduïts.json` → `chunk_12` era NOMÉS `'`'json\n'`'` (buit); netejat.
+## Format REAL del bloc (NO el que mira el fix)
+- El bloc filtrat comença per la seqüència `` '`'json `` (apòstrof + accent greu +
+  apòstrof + «json»), NO per tres accents greus (```` ``` ````).
+- Exemple (chunk_1, íntegre, 11 caràcters): `` '`'json `` + salt de línia + `` '`' ``.
+- El fix i el seu test (`sistema/tests/test_refinador_json_leak.py`, `BT = "`"*3`)
+  només reconeixen ```` ```json … ``` ````; per tant el bloc `` '`'json `` passa
+  intacte i el test passa vacuament.
 
-## Causa arrel (sistèmica)
-- `sistema/traduccio/agents/v2/refinador_iteratiu.py` retorna, en alguns casos, un JSON
-  d'«canvis aplicats» (array de strings) en lloc del text refinat.
-- `PipelineV2._netejar_json_traduccio` (`pipeline_v2.py:403`) no cobreix aquest format.
-- Vegeu el diagnòstic complet (11 obres afectades) a `obres/teatre/euripides/medea/.needs_fix`.
+## Causa arrel (per què el fix no n'hi ha prou)
+- `PipelineV2._netejar_json_traduccio` (pipeline_v2.py:433-462): tots els patrons de
+  tanca de codi són ```` ```json ```` → no coincideixen amb `` '`'json ``.
+- `AgentRefinador._sembla_json` (refinador_iteratiu.py:244): només detecta
+  `t.startswith("```")` o `{`/`[`; una resposta que comença per `` '`' `` no es
+  detecta → `_extreure_traduccio` (línia 299) retorna el bloc com si fos traducció.
+- `AgentRefinador._extreure_traduccio` (línies 281-282): els `re.sub` de neteja també
+  busquen només ```` ``` ````.
+- Verificació: una crida directa al CLI amb el system prompt real del refinador
+  retorna JSON cru correcte (sense tanca). El format `` '`'json `` apareix en
+  execucions reals; cal capturar una resposta crua del model en context de fallada
+  per determinar-ne l'origen exacte (possible bucle de retroalimentació si un chunk
+  ja corromput s'inclou al prompt de refinament).
 
-## Accions
-1. NO re-executar el pipeline sobre del-sublim fins que es corregeixi `_netejar_json_traduccio`:
-   reproduiria la corrupció.
-2. Un cop corregit: retraduir del-sublim (puntuació prèvia < 7.0) i restaurar [9.1]–[9.5].
+## Abast (sistèmic — 2026-10-14)
+- 11 `.chunks_traduïts.json` contenen encara el format `` '`'json ``:
+  del-sublim (35), medea (11), sala-numero-6 (8), bartleby (5), criton (3),
+  justine (3), werther (2), leopardi (2), lucreci (1), husserl (1), safo (1).
+- Detecció: cercar la seqüència `` '`'json `` dins els `.chunks_traduïts.json`
+  d'aquestes obres.
 
-## Data de supervisió: 2026-10-10
+## Accions / Recomanació
+1. NO re-executar el pipeline sobre cap de les 11 obres fins que la neteja reconegui
+   el format `` '`'json `` (es reproduiria la corrupció).
+2. Ampliar `_netejar_json_traduccio`, `_sembla_json` i `_extreure_traduccio` perquè
+   detectin i eliminin el bloc `` '`'json … '`' `` (buidar el chunk si en queda buit).
+3. Reforçar `test_refinador_json_leak.py` amb el format real `` '`'json ``.
+4. Un cop corregit: retraduir del-sublim (puntuació prèvia 5,25 < 7,0) i restaurar
+   les seccions [9.1]–[9.5].
+
+## Data de supervisió: 2026-10-14
 ## Model: deepseek-v4-flash
