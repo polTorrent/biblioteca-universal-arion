@@ -59,3 +59,29 @@ CRÍTIC — Traducció corrupta per bug del refinador (JSON intern filtrat al te
   marquessin com a completats sense dashboard.
 - **Pendent:** retraduir l'obra (qualitat prèvia 5,3 < 7,0). Es pot llançar ja:
   `python3 sistema/traduccio/traduir_pipeline.py /home/jo/biblioteca-universal-arion/obres/teatre/euripides/medea`.
+
+## ACTUALITZACIÓ 2026-10-15 — retraducció engegada i interrompuda pel límit de sessió
+- Execució llançada 2026-10-14 23:04 (jorn de millora contínua). Investigació,
+  glossari i chunking OK (51 chunks, mateixa fragmentació); chunks 1-36 traduïts
+  i desats a la caché.
+- A les 00:26 la subscripció Claude va tocar **límit de sessió**
+  (`429 usage_limit_reached`, «resets 4am (Europe/Madrid)») i els chunks 37-51
+  van fallar.
+- **Bug nou detectat (greu, no documentat):** en aquest cas el pipeline
+  - marca els chunks fallits com a *completats* amb qualitat 0
+    (`pipeline_v2.py`, camí `except Exception` → `completar_chunk`),
+  - imprimeix «✅ TRADUCCIÓ PIPELINE V2 COMPLETADA»,
+  - escriu un `traduccio.md` **truncat** (48.360 caràcters vs. 56.057 de HEAD;
+    falta el final de l'obra, a partir del pedagog),
+  - i **esborra `.needs_fix` i `.fixing`** com si hagués acabat bé.
+  La guarda `validar_resultat_pipeline` no ho atura (el text no té blocs de
+  metadades, simplement li falten 15 chunks).
+- S'ha revertit `traduccio.md` a HEAD, s'han restaurat `.needs_fix`/`.fixing` i
+  s'ha deixat l'estat a punt per reprendre: 36/51 completats, 15 pendents
+  (37-51), fase «traduccio», anotació i fusió per refer.
+- **Pendent:** reprendre la traducció quan es restableixi la quota (a partir de
+  les 4am). La sonda `quota-probe.py` ja retorna LIMIT, així que els jobs
+  horaris no tocaran res fins aleshores.
+- **Recomanació:** que el pipeline no escrigui `traduccio.md` ni esborri les
+  marques d'estat quan hi ha chunks fallits (o que ho faci només amb
+  `--forcar`); caldrà una prova d'extrem a extrem abans d'aplicar-ho.

@@ -16,7 +16,7 @@
     },
     "δεσποινα / δεσποτης": {
       "original": "δέσποινα / δεσπότης",
-      "traduccio": "senyora / senyor (amo)",
+      "traduccio": "mestressa / amo",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -28,37 +28,16 @@
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "παγχρυσον δερας": {
-      "original": "πάγχρυσον δέρας",
+    "δερας παγχρυσον": {
+      "original": "δέρας πάγχρυσον",
       "traduccio": "velló d'or",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "ερως": {
-      "original": "ἔρως",
-      "traduccio": "amor (passió amorosa)",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "θυμος": {
-      "original": "θυμός",
-      "traduccio": "cor, ànim",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "φρην": {
-      "original": "φρήν",
-      "traduccio": "ànim, enteniment",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "φυγη": {
-      "original": "φυγή",
-      "traduccio": "exili, fugida",
+    "ερετμοω": {
+      "original": "ἐρετμόω",
+      "traduccio": "proveir de rems, fer remar",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -70,37 +49,30 @@
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
+    "φυγη": {
+      "original": "φυγή",
+      "traduccio": "exili",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
     "σωτηρια": {
       "original": "σωτηρία",
-      "traduccio": "salvació, seguretat",
+      "traduccio": "salvaguarda, salvació",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "διχοστατεω": {
-      "original": "διχοστατέω",
-      "traduccio": "estar en desavinença",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "γαμος / κηδευμα": {
-      "original": "γάμος / κήδευμα",
-      "traduccio": "noces, matrimoni / aliança per matrimoni",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "λεχος / ευνη": {
-      "original": "λέχος / εὐνή",
-      "traduccio": "llit (nupcial)",
+    "γαμος (γαμοι βασιλικοι)": {
+      "original": "γάμος (γάμοι βασιλικοί)",
+      "traduccio": "boda, matrimoni (noces reials)",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
     "αισυμναω": {
       "original": "αἰσυμνάω",
-      "traduccio": "regnar, governar",
+      "traduccio": "regir, governar",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -114,14 +86,7 @@
     },
     "κοιρανος": {
       "original": "κοίρανος",
-      "traduccio": "senyor, sobirà",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "ατιμαζω / τιμη": {
-      "original": "ἀτιμάζω / τιμή",
-      "traduccio": "ultratjar, deshonrar / honor",
+      "traduccio": "senyor, amo",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -135,20 +100,20 @@
     },
     "δεξια": {
       "original": "δεξιά",
-      "traduccio": "mà dreta (encaixada)",
+      "traduccio": "mà dreta, encaixada",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
     "πιστις": {
       "original": "πίστις",
-      "traduccio": "penyora de fidelitat, garantia",
+      "traduccio": "fe, penyora de confiança",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "θεους μαρτυρεσθαι": {
-      "original": "θεοὺς μαρτύρεσθαι",
+    "θεους μαρτυρομαι": {
+      "original": "θεοὺς μαρτύρομαι",
       "traduccio": "prendre els déus per testimonis",
       "context": null,
       "justificacio": "Glossari inicial",
@@ -161,23 +126,9 @@
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "φιλος / φιλια": {
-      "original": "φίλος / φιλία",
-      "traduccio": "els seus, els estimats / vincle afectiu",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "εχθρος / εχθρα": {
-      "original": "ἐχθρός / ἔχθρα",
-      "traduccio": "enemic / enemistat",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "χολος": {
-      "original": "χόλος",
-      "traduccio": "còlera, ira",
+    "ατιμαζω (τιμη)": {
+      "original": "ἀτιμάζω (τιμή)",
+      "traduccio": "deshonrar, ultratjar (honor)",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -189,37 +140,51 @@
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "κερδος / δικαιως": {
-      "original": "κέρδος / δικαίως",
-      "traduccio": "profit / amb justícia",
+    "θυμος": {
+      "original": "θυμός",
+      "traduccio": "cor, ànim",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "φθονος (μη φθονει)": {
-      "original": "φθόνος (μὴ φθόνει)",
+    "φρην": {
+      "original": "φρήν",
+      "traduccio": "ànima, esperit",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ερως": {
+      "original": "ἔρως",
+      "traduccio": "amor, passió",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "χολος": {
+      "original": "χόλος",
+      "traduccio": "còlera, ràbia",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "φιλος / φιλτατα": {
+      "original": "φίλος / φίλτατα",
+      "traduccio": "els seus, els éssers estimats",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "φθονος (φθονεω)": {
+      "original": "φθόνος (φθονέω)",
       "traduccio": "recança, gelosia",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
-    "δεινος": {
-      "original": "δεινός",
-      "traduccio": "temible, terrible",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "πεσσοι": {
-      "original": "πεσσοί",
-      "traduccio": "lloc on es juga als daus / joc de taula",
-      "context": null,
-      "justificacio": "Glossari inicial",
-      "primera_aparicio": "glossari"
-    },
-    "τροχοι": {
-      "original": "τροχοί",
-      "traduccio": "curses, jocs de córrer",
+    "δικαιως / κερδος": {
+      "original": "δικαίως / κέρδος",
+      "traduccio": "amb justícia / profit",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -233,14 +198,49 @@
     },
     "καλλινικος": {
       "original": "καλλίνικος",
-      "traduccio": "victoriós, cant de victòria",
+      "traduccio": "victoriós, de bella victòria",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
     },
     "πυργοι": {
       "original": "πύργοι",
-      "traduccio": "torres, muralles (la ciutat)",
+      "traduccio": "torres, muralles",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "λεχος / ευνη": {
+      "original": "λέχος / εὐνή",
+      "traduccio": "llit (nupcial)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "κηδευμα": {
+      "original": "κήδευμα",
+      "traduccio": "lligam de parentiu (per matrimoni)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "οικος / δομοι / δωματα": {
+      "original": "οἶκος / δόμοι / δώματα",
+      "traduccio": "casa, llar",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "πεσσοι": {
+      "original": "πεσσοί",
+      "traduccio": "lloc on es juga a les fitxes",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "τροχος": {
+      "original": "τρόχος",
+      "traduccio": "cursa, joc de córrer",
       "context": null,
       "justificacio": "Glossari inicial",
       "primera_aparicio": "glossari"
@@ -249,78 +249,74 @@
   "personatges": {},
   "decisions_estil": [],
   "context_investigacio": {
-    "autor_bio": "Eurípides (Εὐριπίδης), fill de Mnesàrquides (o Mnesarc) (c. 480 a.C. - 406 a.C. (la tradició antiga situa el naixement el 480 a.C., any de la batalla de Salamina; el Marbre de Paros dona el 485/484 a.C.)), Atenes (dem de Flia, segons la tradició); la tradició biogràfica antiga, d'escassa fiabilitat, el relaciona amb l'illa de Salamina. Darrer dels tres grans tràgics atenesos, va debutar als concursos dramàtics de les Grans Dionísies el 455 a.C. i només hi va obtenir quatre victòries en vida (una cinquena, pòstuma). Se li atribueixen unes 90 obres, de les quals se'n conserven 18 tragèdies i un drama satíric (el Cíclop), a més del discutit Resos. Cap al 408 a.C. es va traslladar a la cort del rei Arquelau de Macedònia, on va morir el 406 a.C.",
-    "context_historic": "Va viure l'apogeu de l'Atenes democràtica del segle V a.C.: l'època de Pèricles, l'expansió de l'imperi atenès (Lliga de Delos), l'esplendor cultural i el moviment sofístic. La seva maduresa coincideix amb la Guerra del Peloponès (431-404 a.C.) entre Atenes i Esparta, amb la pesta d'Atenes (430-426 a.C.), l'expedició a Sicília (415-413 a.C.) i la crisi política i moral de la ciutat. La tragèdia era una institució cívica i religiosa representada en concursos públics durant les festes de Dionís.",
-    "context_obra": "Μήδεια (Mḗdeia) (Representada el 431 a.C. a les Grans Dionísies d'Atenes, sota l'arcontat de Pitodor, poc abans de l'esclat de la Guerra del Peloponès (data transmesa per la hipòtesi d'Aristòfanes de Bizanci)) - Tragèdia àtica (drama en vers: trímetres iàmbics en les parts dialogades i metres lírics en les parts corals i els cants). Es va presentar a concurs dins d'una tetralogia formada per Medea, Filoctetes, Dictis i el drama satíric Els segadors (Theristai), dels quals només es conserva Medea. Eurípides hi va obtenir el tercer premi, el darrer lloc: el primer va ser per a Euforió (fill d'Èsquil) i el segon per a Sòfocles. La tragèdia no anava dedicada a ningú, perquè era una peça de concurs cívic. Segons una tradició antiga, de fiabilitat incerta, el filicidi conscient de Medea seria una innovació d'Eurípides, ja que en versions anteriors els fills morien a mans dels corintis. També es discuteix la relació de l'obra amb una Medea de Neofró, que alguns antics consideraven model d'Eurípides, una qüestió encara debatuda.",
+    "autor_bio": "Eurípides (Εὐριπίδης), fill de Mnesàrquides (o Mnesarc) (c. 480 a.C. - 406 a.C.), Atenes (la tradició el fa néixer a Salamina, demus de Flia segons algunes fonts); morí a la cort del rei Arquelau de Macedònia. Darrer dels tres grans tràgics atenencs, després d'Èsquil i Sòfocles. Va competir a les Grans Dionísies des del 455 a.C., però només hi va obtenir quatre victòries en vida (una cinquena pòstuma). Se li atribueixen unes 90 peces, de les quals se'n conserven 18 tragèdies (19 si s'hi compta el Res, d'autoria discutida) i el drama satíric El Ciclop.",
+    "context_historic": "Segle V a.C., època de l'Atenes democràtica i imperial (Lliga de Delos) sota Pèricles, seguida de la Guerra del Peloponès (431-404 a.C.) contra Esparta. Període de gran efervescència intel·lectual: moviment sofístic, crítica racionalista dels mites, debat sobre la natura (physis) i la convenció (nomos), i transformació del paper del teatre com a espai de reflexió cívica.",
+    "context_obra": "Μήδεια (Mḗdeia) (Representada a les Grans Dionísies d'Atenes el 431 a.C. (arcontat de Pitòdor), poc abans de l'esclat de la Guerra del Peloponès) - Tragèdia àtica. Presentada en tetralogia amb Filoctetes, Dictis i el drama satíric Els segadors (Theristai), tots perduts. Segons la hipòtesi antiga (argument d'Aristòfanes de Bizanci), Eurípides va obtenir el tercer premi, darrere d'Euforió (fill d'Èsquil) i Sòfocles. La Medea de Neofró, que alguns testimonis antics consideren model d'Eurípides, planteja un problema d'autoria i cronologia encara debatut. L'infanticidi deliberat per part de Medea podria ser una innovació d'Eurípides sobre el mite (en versions anteriors els fills morien a mans dels corintis), tot i que aquest punt és discutit.",
     "influencies": [
-      "Èsquil i Sòfocles (tradició tràgica precedent; Sòfocles en va ser contemporani i rival)",
-      "Homer i el cicle èpic com a font de mites",
-      "Moviment sofístic (Protàgores, Pròdic, Gòrgias): retòrica, relativisme, debat antilògic",
-      "Anaxàgores (la tradició antiga el considera deixeble seu)",
-      "Pensament ètic de l'època, sovint associat a Sòcrates (relació esmentada per fonts antigues i per la comèdia, d'abast incert)",
-      "Lírica arcaica (influència en la composició de les parts corals)"
+      "Èsquil i Sòfocles (tradició tràgica precedent)",
+      "Homer i el cicle èpic",
+      "Els sofistes (Protàgores, Pròdic)",
+      "Anaxàgores (segons la tradició antiga, el seu mestre; incert)",
+      "Retòrica judicial i debats de l'assemblea atenenca",
+      "Possible relació amb Sòcrates (testimoni antic, no verificable)"
     ],
     "temes_principals": [
-      "La venjança i el conflicte entre la passió (thymos) i la raó (bouleumata), expressats en el monòleg de Medea (vv. 1021-1080, amb problemes d'autenticitat als vv. 1056-1080)",
-      "La condició de la dona a la societat grega: matrimoni, dot, submissió i manca de drets (discurs a les dones de Corint, vv. 214-266)",
-      "L'estranger i el bàrbar enfront del grec; l'exili i la manca de pàtria",
-      "La traïció dels juraments i la fidelitat; la justícia divina (Zeus Horkios, Temis)",
-      "L'amor convertit en odi i la destrucció de la pròpia descendència"
+      "La venjança i el conflicte entre passió (thymos) i raó (bouleumata), vers 1078-1080",
+      "La condició de la dona a la societat grega (discurs a les dones de Corint, vv. 214-266)",
+      "L'estranger i el bàrbar enfront del grec; l'exili i el desarrelament",
+      "La traïció dels juraments i la violació de la fe conjugal i de l'hospitalitat",
+      "L'infanticidi i els límits de la naturalesa humana",
+      "La saviesa (sophia) i la seva ambivalència"
     ]
   },
   "notes_pendents": [
-    "[H] Personatge històric: Medea (Μήδεια): princesa de la Còlquida, filla d'Eetes i néta d'Hèlios, el Sol; maga",
-    "[H] Personatge històric: Jàson (Ἰάσων): heroi tessali, cap de l'expedició dels Argonautes",
-    "[H] Personatge històric: Nodrissa (Τροφός) i Pedagog (Παιδαγωγός) dels fills",
-    "[H] Personatge històric: Creont (Κρέων): rei de Corint",
-    "[H] Personatge històric: La filla de Creont (anònima a Eurípides; Glauce o Creüsa en altres fonts)",
-    "[H] Personatge històric: Egeu (Αἰγεύς): rei d'Atenes, pare de Teseu",
-    "[H] Personatge històric: Missatger (Ἄγγελος)",
+    "[H] Personatge històric: Medea (filla d'Eetes, rei de la Còlquida, i neta d'Hèlios)",
+    "[H] Personatge històric: Jàson (cap dels Argonautes, fill d'Èson)",
+    "[H] Personatge històric: Creont (rei de Corint)",
+    "[H] Personatge històric: Glauce o Creüsa (filla de Creont; a l'obra només 'la princesa', sense nom)",
+    "[H] Personatge històric: Egeu (rei d'Atenes, pare de Teseu)",
+    "[H] Personatge històric: La Nodrissa (Trophos)",
+    "[H] Personatge històric: El Pedagog (Paidagogos)",
     "[H] Personatge històric: Els dos fills de Medea i Jàson",
+    "[H] Personatge històric: El Missatger",
     "[H] Personatge històric: Cor de dones de Corint",
-    "[H] Personatge històric: Pèlias (Πελίας): usurpador del tron de Iolcos, oncle de Jàson, mort per les seves filles enganyades per Medea",
-    "[H] Personatge històric: Eetes (Αἰήτης): rei de la Còlquida, pare de Medea",
-    "[H] Personatge històric: Absirt (Ἄψυρτος): germà de Medea, mort per ella (v. 167, 1334)",
-    "[H] Personatge històric: Hèlios (Ἥλιος): el Sol, avi de Medea",
-    "[H] Personatge històric: Hècate: deessa invocada per Medea (v. 397)",
-    "[H] Personatge històric: Temis, Zeus, Àrtemis, Hera Acraia, Afrodita, Eros, les Muses",
-    "[H] Personatge històric: Ino (Ἰνώ): exemple mític de mare filicida (vv. 1282-1289)",
-    "[H] Personatge històric: Escil·la: monstre marí al qual Jàson compara Medea (v. 1343)",
-    "[H] Personatge històric: Orfeu (v. 543)",
-    "[H] Personatge històric: Pitteu (Πιτθεύς): rei de Trezè, savi a qui Egeu va a consultar",
-    "[H] Personatge històric: Harmonia (vv. 834-835)",
-    "[H] Personatge històric: Erecteu (descendents d'Erecteu = atenesos, v. 824)",
-    "[C] Referència cultural: Expedició dels Argonautes i la nau Argo, construïda amb pins del mont Pelió",
-    "[C] Referència cultural: El velló d'or (τὸ πάγχρυσον δέρας)",
-    "[C] Referència cultural: Les roques Simplègades (Κυανέαι Συμπληγάδες), roques xocadores a l'entrada del mar Negre",
-    "[C] Referència cultural: La Còlquida (Κολχίς), a l'extrem oriental del mar Negre (l'actual Geòrgia occidental)",
-    "[C] Referència cultural: Iolcos (Ἰωλκός), a Tessàlia, pàtria de Jàson",
-    "[C] Referència cultural: Corint i l'istme; Atenes i el mite de l'autoctonia",
-    "[C] Referència cultural: L'oracle de Delfos (Febus) i la consulta d'Egeu sobre la seva descendència, 'no deslliguis el peu de l'odre' (v. 679)",
-    "[C] Referència cultural: Institucions matrimonials gregues: dot (φερνή), el kyrios, la figura de la dona com a propietat",
-    "[C] Referència cultural: Estatut de l'estranger (meteco) i de l'exiliat a la polis",
-    "[C] Referència cultural: La súplica (ἱκετεία) i el jurament, amb els seus aspectes rituals",
-    "[C] Referència cultural: Xenia (hospitalitat) i lleis sagrades",
-    "[C] Referència cultural: Les Grans Dionísies i el concurs tràgic; el deus ex machina i la mechane",
-    "[C] Referència cultural: El culte a l'Hera Acraia a Corint i el ritual expiatori pels fills de Medea",
-    "[C] Referència cultural: La contraposició grec-bàrbar (Ἕλλην / βάρβαρος)",
-    "[C] Referència cultural: Elogi d'Atenes en el tercer estàsim (vv. 824-845), en el context bèl·lic del 431 a.C.",
-    "[T] Terme tècnic: θυμός (thymós): passió, cor, impuls colèric (v. 1079)",
-    "[T] Terme tècnic: βουλεύματα (bouleúmata): designis, decisions racionals",
-    "[T] Terme tècnic: σοφία / σοφός (sophía/sophós): saviesa, habilitat (ambivalent: Medea com a 'sàvia' temuda)",
-    "[T] Terme tècnic: ὅρκος (hórkos): jurament",
-    "[T] Terme tècnic: δίκη (díkē): justícia, càstig",
-    "[T] Terme tècnic: ἀλάστωρ (alástōr): esperit venjador",
-    "[T] Terme tècnic: ἱκέτης / ἱκετεία (hikétēs/hiketeía): suplicant, súplica",
-    "[T] Terme tècnic: φίλος / ἐχθρός (phílos/ekhthrós): amic o parent / enemic (ètica tradicional: fer bé als amics i mal als enemics)",
-    "[T] Terme tècnic: λέχος / εὐνή (lékhos/eunḗ): llit conjugal (metonímia del matrimoni)",
-    "[T] Terme tècnic: ξένος / ξενία (xénos/xenía): estranger, hoste, hospitalitat",
-    "[T] Terme tècnic: βάρβαρος (bárbaros): no grec",
-    "[T] Terme tècnic: φυγή / φυγάς (phygḗ/phygás): exili, exiliat",
-    "[T] Terme tècnic: μίασμα (míasma): contaminació ritual per homicidi",
-    "[T] Terme tècnic: κλέος (kléos): fama, renom",
-    "[T] Terme tècnic: γέλως (gélōs): la burla dels enemics que Medea vol evitar",
-    "[T] Terme tècnic: Termes teatrals: pròleg, pàrodos, episodi, estàsim, èxode, agon, rhesis, stichomythia (esticomítia), kommos, deus ex machina (ἀπὸ μηχανῆς θεός)",
-    "[T] Terme tècnic: Metres: trímetre iàmbic, anapest, dàctil-epítrit"
+    "[H] Personatge històric: Pèlias (rei de Iolcos, oncle de Jàson, mort per enganys de Medea)",
+    "[H] Personatge històric: Eetes (pare de Medea)",
+    "[H] Personatge històric: Absirt (germà de Medea, assassinat en la fugida)",
+    "[H] Personatge històric: Hèlios (el Sol, avi de Medea)",
+    "[H] Personatge històric: Hècate (deessa associada a la màgia)",
+    "[H] Personatge històric: Temis i Zeus Horkios (garants dels juraments)",
+    "[H] Personatge històric: Ino (infanticida mítica, vv. 1282-1289)",
+    "[H] Personatge històric: Orfeu (comparació amb el seu cant)",
+    "[H] Personatge històric: Les Muses i les Pièrides; Harmonia (estàsim sobre Atenes)",
+    "[H] Personatge històric: Pitteu (rei de Trezè, a qui Egeu va a consultar)",
+    "[C] Referència cultural: El mite dels Argonautes i el velló d'or (ποττὸ πάγχρυσον δέρας)",
+    "[C] Referència cultural: Les Simplègades (roques xocants del Bòsfor)",
+    "[C] Referència cultural: El Pèlion (muntanya de Tessàlia d'on es va tallar la fusta de l'Argo)",
+    "[C] Referència cultural: Iolcos (Tessàlia) i la Còlquida (costa oriental del mar Negre)",
+    "[C] Referència cultural: Corint, l'Istme i el seu culte a Hera Acraia (aition final dels vv. 1378-1383)",
+    "[C] Referència cultural: L'oracle de Delfos i la consulta d'Egeu sobre la seva descendència ('no deslliguis el peu de l'odre')",
+    "[C] Referència cultural: Atenes com a terra d'asil i saviesa (estàsim vv. 824-865)",
+    "[C] Referència cultural: La dot, el matrimoni i la manca de drets de la dona atenenca",
+    "[C] Referència cultural: El costum de la súplica (hikesia) i el contacte amb barba i genolls",
+    "[C] Referència cultural: Els juraments i la seva sanció divina",
+    "[C] Referència cultural: La distinció grec/bàrbar en el pensament del segle V",
+    "[C] Referència cultural: Convencions escèniques: ekkyklema, mechane/theologeion, deus ex machina",
+    "[C] Referència cultural: Les lleis i el lloc dels metecs i estrangers a la polis",
+    "[T] Terme tècnic: θυμός (thymos): cor, ànim, passió, còlera",
+    "[T] Terme tècnic: βουλεύματα (bouleumata): designis, plans racionals",
+    "[T] Terme tècnic: σοφία / σοφός (sophia / sophos): saviesa, astúcia, habilitat (sentit ambivalent)",
+    "[T] Terme tècnic: ὅρκος (horkos): jurament",
+    "[T] Terme tècnic: ξένος / ξενία (xenos / xenia): estranger, hoste, hospitalitat",
+    "[T] Terme tècnic: βάρβαρος (barbaros): no grec",
+    "[T] Terme tècnic: λέχος / εὐνή (lechos / eune): llit nupcial, matrimoni",
+    "[T] Terme tècnic: ἔρως (eros): amor-passió",
+    "[T] Terme tècnic: δίκη (dike): justícia, venjança justa",
+    "[T] Terme tècnic: αἰδώς (aidos): vergonya, respecte",
+    "[T] Terme tècnic: ἱκέτης (hiketes): suplicant",
+    "[T] Terme tècnic: φίλος / ἐχθρός (philos / echthros): amic/parent vs enemic (ètica de 'fer bé als amics i mal als enemics')",
+    "[T] Terme tècnic: γέλως ἐχθρῶν: la burla dels enemics (motiu heroic de Medea)",
+    "[T] Terme tècnic: μίασμα (miasma): contaminació ritual",
+    "[T] Terme tècnic: Termes estructurals: pròleg, pàrode, episodi, estàsim, èxode, agon, rhesis, stichomythia, monòdia"
   ]
 }
