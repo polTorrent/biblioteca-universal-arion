@@ -1,50 +1,68 @@
-CRÍTIC — traducció amb seccions duplicades i intercalades (dues traduccions del mateix poema)
+CRÍTIC — `traduccio.md` és la fusió de DUES retraduccions intercalades i els retolats de secció NO són fiables
 
 ## Estat
-- `traduccio.md` (= `traduccio_nova.md`, fitxers idèntics, 114.225 bytes) conté DUES
-  traduccions del mateix poema intercalades. La segona part del poema (versos ~356–1108)
-  hi apareix traduïda DUES vegades, amb redacció diferent, sota encapçalaments que es
-  desplacen una unitat (p. ex. «Versos 406-455» seguit de «Versos 407-456»).
-- `metadata.yml` afirma «RETRADUCCIÓ COMPLETADA (versos 1-1108, 99.7 %)… qualitat 8.7»
-  i no detecta el problema. No hi ha `.validated`.
-- Efecte visible a la web pública: els versos ~356–1105 es mostren repetits.
+- `traduccio.md` (114.225 B, idèntic a `traduccio_nova.md`) conté 40 seccions `##`:
+  22 de la sèrie contínua 1–1105 (família A: «Invocació a Venus (1-54)», «Versos 55-104», …,
+  «Versos 1056-1105») i 18 de la sèrie desplaçada 356–1108 (família B: «Versos 5-54»,
+  «Versos 356-405», «Versos 407-456», …, «Versos 1057-1106», «Versos 1058-1107»,
+  «Versos 1059-1108»). B no cobreix 55–355.
+- Efecte visible a la web pública: la major part del poema (versos ~225–1105) es mostra
+  DUES vegades amb redacció diferent, i el final tres cops (1057-1106 / 1058-1107 / 1059-1108).
+- No hi ha `.validated`. `metadata.yml` afirma «RETRADUCCIÓ COMPLETADA (versos 1-1108, 99,7 %)…
+  qualitat 8.7» i no detecta el problema.
 
-## Evidència
-- 40 encapçalaments `##` a `traduccio.md`, agrupats en dues famílies de rangs solapades:
-  · Família A (contínua 1–1105): 1-54, 55-104, 105-154, …, 355-404, 406-455, 456-505,
-    506-555, 556-605, …, 1056-1105.
-  · Família B (desplaçada +1, 356–1108): 5-54, 356-405, 407-456, 457-506, 507-556,
-    557-606, …, 1059-1108.
-- Duplicació textual (mateix passatge traduït dues vegades, redacció diferent):
-  · «Versos 406-455»: «Perquè tot allò que té nom, o bé ho trobaràs lligat a aquestes
-    dues realitats, o bé veuràs que en són esdeveniments…»
-  · «Versos 407-456»: «Car tot allò que té nom, o bé ho trobaràs unit a aquestes dues
-    coses, o bé ho veuràs com a esdeveniment d'aquestes…»
-  · «Versos 456-505»: «Llibertat, guerra, concòrdia i tot allò…» i «Versos 457-506»:
-    «Si amb la seva arribada o partida la natura roman incòlume…» — ambdós tradueixen
-    «tempus item per se non est…» (Lucreci I.459 i ss.).
-  · «Versos 706-755» (A) i «Versos 707-756» (B) tradueixen el mateix passatge sobre
-    els qui prenen el foc com a principi únic.
-- Mètrica: traducció 20.057 paraules vs. original 7.310 (≈2,7×). L'expansió esperada
-  llatí→català és ~1,5×; l'excés encaixa amb la duplicació de ~70 % del poema.
-- `traduccio_antic_amb_errors.md` (= `traduccio_backup_20260503_040848.md`, 27.765
-  bytes, un sol encapçalament) no conté la duplicació.
+## EVIDÈNCIA 1 — parells duplicats (similitud de paraules ≥ 6 lletres, conjunts)
+Mesura reproducible: `len(tokens_i ∩ tokens_j)/len(tokens_i ∪ tokens_j)` sobre paraules de
+≥ 6 caràcters, per a les 40 seccions. Parells clarament duplicats (0,39–0,54):
+  Invocació (1-54) ≈ 5-54 (0,41)
+  406-455 ≈ 407-456 (0,46) · 456-505 ≈ 457-506 (0,48) · 506-555 ≈ 507-556 (0,39)
+  556-605 ≈ 557-606 (0,52) · 606-655 ≈ 607-656 (0,49) · 656-705 ≈ 657-706 (0,44)
+  706-755 ≈ 707-756 (0,52) · 756-805 ≈ 757-806 (0,40) · 806-855 ≈ 807-856 (0,53)
+  856-905 ≈ 857-906 (0,40) · 906-955 ≈ 907-956 (0,51) · 956-1005 ≈ 957-1006 (0,44)
+  1006-1055 ≈ 1007-1056 (0,45)
+  1056-1105 ≈ 1057-1106 (0,49) / 1058-1107 (0,41) / 1059-1108 (0,46)   → final triplicat
+Les seccions 55-104, 105-154, 155-204, 205-254, 255-304 i 305-354 no tenen parella a B
+(és el tram 55–355 que B no conté).
 
-## Causa probable
-- El chunking del pipeline va generar dues sèries de chunks per als versos 356–1108
-  (una amb inici a 355+50k i una altra desplaçada +1: 356+50k) i la fase de fusió les
-  va INTERCALAR en lloc de deduplicar-les. Mateix patró d'origen que els blocs de
-  «canvis aplicats» filtrats (bug del refinador, vegeu `.needs_fix` de del-sublim i medea).
+## EVIDÈNCIA 2 — la família A TAMBÉ duplica internament (el retolat és fals)
+- Text de «Versos 355-404» (família A) ≈ text de «Versos 205-254» (família A), similitud 0,28:
+  paràgrafs equivalents amb redacció diferent:
+    A 205-254: «Encara més: tot allò que el temps amb la vellesa s'emporta, si en consumís…»
+    A 355-404: «A més, tot allò que el temps, amb la vellesa, s'enduu, si destruís pregonament…»
+    A 205-254: «Finalment, una sola força i causa destruiria indistintament totes les coses…»
+    A 355-404: «A més, una mateixa força i causa destruiria indistintament totes les coses…»
+    A 205-254: «Per fi, les pluges es perden quan el pare èter les ha precipitades…»
+    A 355-404: «Finalment, perixen les pluges quan el pare èter les ha precipitades…»
+- Ancoratges contra l'original llatí (`original.md`, v. N = línia no buida N):
+    · «unde animale genus» = I.227 → apareix a «205-254» I a «355-404»
+    · «namque canes» = I.404 (símil dels gossos) → NOMÉS a «356-405» (família B)
+    · «Versos 305-354» acaba a I.354 («Les veus travessen els tancats…») ✓ retolat correcte
+    · «Versos 406-455» comença a I.406 («cum semel institerunt vestigia certa viai») ✓
+  Conclusió: la secció retolada «355-404» NO conté I.355-404 sinó ~I.225-274. Els retolats
+  provenen d'una llista de chunks d'una altra execució i no descriuen el contingut.
 
-## Accions / Recomanació
-1. Reconstruir `traduccio.md` conservant UNA sola família —la Família A, contínua
-   1–1105— i descartant les seccions de la Família B (incloent-hi «Versos 5-54», duplicat
-   de l'obertura «Invocació a Venus (versos 1-54)»).
-2. Verificar la continuïtat vers a vers i el contrast amb l'original llatí (The Latin
-   Library) abans de validar; comprovar que cap secció conservada estigui truncada
-   (alguns inicis comencen amb «…» perquè continuen la secció anterior).
-3. Alternativament, retraduir un cop corregit el bug del refinador/fusió.
-4. NO validar ni publicar l'obra tal com està.
+## CONSEQÜÈNCIA — la recomanació anterior («conservar la família A») és ERRÒNIA
+Descartar les 18 seccions de B (proposta de `.needs_fix` del 2026-10-14) implicaria:
+1. PERDRE la traducció de I.356–405 (~50 versos: buit i pes, làmina de llana/plom, aigua i
+   peixos, xocs, símil dels gossos): només existeix a «356-405» (B).
+2. MANTENIR la duplicació interna de A (I.225–254 dues vegades: «205-254» i «355-404»).
+3. PERDRE els versos 1106–1111: només a la cua de B («1057-1106»/«1058-1107»/«1059-1108»;
+   aquesta última acaba amb la línia de cloenda «Tot això comprendràs a fons amb un esforç
+   petit, conduït per mi.» = I.1114).
+Prova: la suma de paraules d'A (11.452) / llatí 1–1105 (7.247) = 1,58 (ràtio correcta
+llatí→català), cosa que amaga que els rangs estan desordenats: el global quadra, el detall no.
 
-## Data de supervisió: 2026-10-14
-## Model: deepseek-v4-flash
+## ACCIONS / RECOMANACIÓ
+1. NO validar ni publicar l'obra tal com està (`docs/` la mostra amb el text duplicat).
+2. NO re-executar el pipeline sobre AQUESTA obra ni sobre les altres 10 afectades pel bug del
+   refinador/fusió fins que la neteja i la fusió estiguin corregides (vegeu `.needs_fix` de
+   del-sublim i medea: el format `` '`'json `` eludeix el fix 981641e5, i la fusió intercala
+   fluxos de chunks).
+3. Reconstrucció correcta = alinear vers a vers amb l'original llatí (The Latin Library) i
+   triar, per a cada rang, UNA sola redacció; requereix eina d'alineació o revisió humana.
+   Alternativa neta: retraduir l'obra sencera un cop corregida la fusió.
+4. Després de reconstruir: contrastar vers a vers amb l'original, comprovar cobertura
+   1–1111 i ràtio ~1,5×, i només llavors valorar la validació.
+
+## Data de supervisió: 2026-10-14 (v3 — corregeix la v2 del mateix dia)
+## Model: deepseek-v4-1-flash
