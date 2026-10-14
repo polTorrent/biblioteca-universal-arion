@@ -1,0 +1,76 @@
+Validat: 2026-10-14
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural i contrast amb l'original)
+
+Dimensions:
+  fidelitat: 8.0/10
+  veu_autor: 8.0/10
+  fluidesa: 8.0/10
+  correccio_linguistica: 7.5/10
+  coherencia: 8.0/10
+  completesa: 9.0/10
+  global: 7.5/10
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Fragments (selecció de 34 poemes i fragments)» (Ἀποσπάσματα) de Safo
+    de Lesbos (Σαπφώ, c. 630–570 aC), la poeta lírica grega per excel·lència.
+    Inclou l'Himne a Afrodita (fr. 1), el cèlebre fr. 31 (Φαίνεταί μοι), poemes
+    nupcials (epitalamis), fragments amorosos i el poema de la mitjanit
+    (fr. 168B). Text grec segons l'edició Lobel-Page (LP, 1955) / Voigt (V,
+    1971), font Perseus Digital Library (Tufts University) — l'original.md és
+    el text grec, no una traducció intermèdia.
+  - Estructura: PARITAT EXACTA 34/34 fragments. Els 34 encapçalaments
+    «## Fragment N (…)» de traduccio.md coincideixen 1:1, amb el mateix conjunt
+    de números i en el mateix ordre, amb els 34 d'original.md (fr. 1, 2, 16,
+    31, 34, 44, 44A, 47, 48, 49, 55, 58, 81, 94, 96, 98, 102, 104a, 104b,
+    105a, 105b, 111, 112, 114, 115, 118, 120, 126, 130, 131, 132, 137, 147,
+    168B). Verificat programàticament: cap fragment present només en un dels
+    dos fitxers i cap cos de text buit.
+  - Completitud (recompte de paraules per fragment, original → traducció):
+    total 1.096 → 1.463 paraules (1,335×). Cap fragment amb desviació anòmala
+    (el rang va de 0,86× a 1,80×, propi del pas del grec eòlic compacte al vers
+    català). La traducció arriba fins al darrer fragment (168B: «Δέδυκε μὲν ἀ
+    σελάννα / καὶ Πληΐαδες…» → «S'ha post la lluna / i les Plèiades, és
+    mitjanit, / l'hora passa, / i jo dormo sola.»).
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap tanca de codi i cap
+    text grec pendent de traduir dins traduccio.md. (El .chunks_traduïts.json
+    intern conserva 1 resta del format corromput '`'json del refinador, però NO
+    ha passat a traduccio.md: la traducció publicada és neta.)
+  - pre_supervisio.py --no-llm (executat amb /usr/bin/python3): 0 errors reals,
+    0 errors de pagament, glossari llegit (15 termes). La decisió «CONTINUAR —
+    completitud 63,3 %» és un FALS NEGATIU del càlcul per BYTES: el grec
+    politònic ocupa molts més bytes per paraula que el català, i per recompte de
+    paraules la traducció (1.463) SUPERA l'original (1.096) → obra completa.
+    L'avís «Placeholder trobat: '...'» és un altre FALS POSITIU: els «...» i
+    «[...]» són les llacunes del papir, presents també a l'original (67 marques
+    de llacuna a la traducció vs. les del text grec), no marcadors de traducció
+    inacabada.
+  - Spot check anti-al·lucinació (contrast directe amb el grec):
+      · Fr. 1: «Ποικιλόθρον᾽ ἀθανάτ᾽ Ἀφρόδιτα, / παῖ Δίος δολόπλοκε» → «Afrodita
+        immortal del tron iridescent, / filla de Zeus teixidora d'enganys».
+      · Fr. 31: «Φαίνεταί μοι κῆνος ἴσος θέοισιν / ἔμμεν᾽ ὤνηρ» → «Em sembla
+        igual als déus / aquell home»; conserva l'estructura d'estrofa sàfica
+        (4 versos per estrofa) i el «χλωροτέρα δὲ ποίας» → «estic més verda que
+        l'herba».
+      · Fr. 147: «Ὀ μὲν γὰρ κάλος ὄσσον ἴδην πέλεται [κάλος], / ὀ δὲ κἄγαθος
+        αὔτικα καὶ κάλος ἔσσεται» → «El que és bell, és bell només mentre es
+        mira, / però el que és bo, de seguida també serà bell».
+      · Fr. 120: «Ἆ τὸν Ἄδωνιν.» → «Ai, Adonis!»; fr. 126: «Κατ᾽ ἔμον
+        στάλαγμον.» → «Gota a gota regalimo.».
+  - Apparat: glossari.yml amb 15 termes grecs (Ἀφροδίτα, Ἔρος, Ψάπφω, θῦμος,
+    φιλότης…), tots amb transliteració, traducció catalana i nota de domini;
+    notes.md amb 15 notes erudites (edició i numeració LP/Voigt, el dialecte
+    eòlic de Lesbos, cada fragment rellevant, criteris de traducció).
+  - Qualitat de referència: metadata.yml → revisio.estat = «revisat»,
+    revisio.qualitat = 7.5 (data_revisio 2026-03-20). Punts febles coneguts i no
+    crítics: la numeració de la metadata diu «selecció: 30 poemes» mentre que el
+    fitxer conté 34 fragments (la capçalera i el títol parlen de 30; és una
+    etiqueta de selecció, no una mancança de text); la traducció prioritza el
+    sentit i la imatge per damunt de la mètrica quantitativa grega, tal com es
+    declara a notes.md.
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar de 7/10 s'assoleix per la paritat estructural fragment a fragment,
+  el contrast directe amb el grec i l'absència d'errors reals.
