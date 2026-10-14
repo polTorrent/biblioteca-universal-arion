@@ -1,0 +1,50 @@
+CRÍTIC — traducció amb seccions duplicades i intercalades (dues traduccions del mateix poema)
+
+## Estat
+- `traduccio.md` (= `traduccio_nova.md`, fitxers idèntics, 114.225 bytes) conté DUES
+  traduccions del mateix poema intercalades. La segona part del poema (versos ~356–1108)
+  hi apareix traduïda DUES vegades, amb redacció diferent, sota encapçalaments que es
+  desplacen una unitat (p. ex. «Versos 406-455» seguit de «Versos 407-456»).
+- `metadata.yml` afirma «RETRADUCCIÓ COMPLETADA (versos 1-1108, 99.7 %)… qualitat 8.7»
+  i no detecta el problema. No hi ha `.validated`.
+- Efecte visible a la web pública: els versos ~356–1105 es mostren repetits.
+
+## Evidència
+- 40 encapçalaments `##` a `traduccio.md`, agrupats en dues famílies de rangs solapades:
+  · Família A (contínua 1–1105): 1-54, 55-104, 105-154, …, 355-404, 406-455, 456-505,
+    506-555, 556-605, …, 1056-1105.
+  · Família B (desplaçada +1, 356–1108): 5-54, 356-405, 407-456, 457-506, 507-556,
+    557-606, …, 1059-1108.
+- Duplicació textual (mateix passatge traduït dues vegades, redacció diferent):
+  · «Versos 406-455»: «Perquè tot allò que té nom, o bé ho trobaràs lligat a aquestes
+    dues realitats, o bé veuràs que en són esdeveniments…»
+  · «Versos 407-456»: «Car tot allò que té nom, o bé ho trobaràs unit a aquestes dues
+    coses, o bé ho veuràs com a esdeveniment d'aquestes…»
+  · «Versos 456-505»: «Llibertat, guerra, concòrdia i tot allò…» i «Versos 457-506»:
+    «Si amb la seva arribada o partida la natura roman incòlume…» — ambdós tradueixen
+    «tempus item per se non est…» (Lucreci I.459 i ss.).
+  · «Versos 706-755» (A) i «Versos 707-756» (B) tradueixen el mateix passatge sobre
+    els qui prenen el foc com a principi únic.
+- Mètrica: traducció 20.057 paraules vs. original 7.310 (≈2,7×). L'expansió esperada
+  llatí→català és ~1,5×; l'excés encaixa amb la duplicació de ~70 % del poema.
+- `traduccio_antic_amb_errors.md` (= `traduccio_backup_20260503_040848.md`, 27.765
+  bytes, un sol encapçalament) no conté la duplicació.
+
+## Causa probable
+- El chunking del pipeline va generar dues sèries de chunks per als versos 356–1108
+  (una amb inici a 355+50k i una altra desplaçada +1: 356+50k) i la fase de fusió les
+  va INTERCALAR en lloc de deduplicar-les. Mateix patró d'origen que els blocs de
+  «canvis aplicats» filtrats (bug del refinador, vegeu `.needs_fix` de del-sublim i medea).
+
+## Accions / Recomanació
+1. Reconstruir `traduccio.md` conservant UNA sola família —la Família A, contínua
+   1–1105— i descartant les seccions de la Família B (incloent-hi «Versos 5-54», duplicat
+   de l'obertura «Invocació a Venus (versos 1-54)»).
+2. Verificar la continuïtat vers a vers i el contrast amb l'original llatí (The Latin
+   Library) abans de validar; comprovar que cap secció conservada estigui truncada
+   (alguns inicis comencen amb «…» perquè continuen la secció anterior).
+3. Alternativament, retraduir un cop corregit el bug del refinador/fusió.
+4. NO validar ni publicar l'obra tal com està.
+
+## Data de supervisió: 2026-10-14
+## Model: deepseek-v4-flash
