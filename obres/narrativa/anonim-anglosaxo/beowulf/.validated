@@ -1,0 +1,52 @@
+Validat: 2026-10-14
+Puntuació: 7.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural i contrast amb l'original)
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated.
+
+  - Obra: «Beowulf» (Bēowulf), poema èpic anglosaxó anònim (c. 700-1000 dC), uns
+    3.182 versos en anglès antic (Old English). Font: Project Gutenberg #9701,
+    edició Harrison & Sharp, 4a edició (original.md és el text anglosaxó, no una
+    traducció intermèdia).
+  - Estructura: 43 seccions; els 43 encapçalaments «## N. TÍTOL» de traduccio.md
+    coincideixen 1:1 i en el mateix ordre amb les 43 rúbriques romanes d'original.md
+    (I. La mort de Scyld … XLIII. La pira funerària de Beowulf).
+  - Completitud: la traducció arriba fins al darrer vers de l'original
+    («mannum mildust and mon-þwǣrust, lēodum līðost and lof-geornost» → «era el més
+    amorós i el de tracte més amable, el més amistós amb el seu poble i el més àvid
+    de glòria»). 25.541 paraules de traducció per a 18.408 de l'original (1,39×),
+    proporció coherent amb el pas d'un poema al·literatiu a la prosa catalana.
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap tanca de codi i cap text
+    en anglès antic pendent de traduir.
+  - Les el·lipsis del text (secció IX, línia 152; secció XLIII, línia 544) corresponen
+    exactament a les llacunes del manuscrit tal com les imprimeix l'edició base
+    (original.md, línies 631-632: «fāgum sweordum . . . . . . . / . . . . . . . nō ic
+    þæs gylpe;», i 3330-3333). No són omissions del traductor.
+  - Spot check anti-al·lucinació (contrast directe amb l'original):
+      · «Hwæt! wē Gār-Dena in geār-dagum / þēod-cyninga þrym gefrūnon» →
+        «Escolteu! La glòria dels reis dels Gars-Danesos en els dies antics l'hem
+        sentit cantar».
+      · «Unferð maðelode, Ecglāfes bearn … Eart þū sē Bēowulf, sē þe wið Brecan
+        wunne» → «Hunferth parlà, fill d'Ecglaf … Ets tu aquell Beowulf que va
+        combatre amb Breca».
+      · «Swā begnornodon Gēata lēode / hlāfordes hryre» → «Així el poble dels Geates
+        planyé la mort del seu senyor».
+  - Correcció aplicada en aquesta revisió (commit b4542389): secció XLIII, «els
+    guerrers que plovien» → «els guerrers que planyien» (hīofende = planyent, del
+    verb hīofan). Error lèxic aïllat, no estructural.
+  - pre_supervisio.py --no-llm: 0 errors reals, 0 errors de pagament; glossari amb
+    30 termes. Les 4 línies de més de 2.000 caràcters són paràgrafs llargs legítims,
+    no errors de chunking.
+  - Materials: glossari.yml (30 termes, antropònims i realia anglosaxons),
+    metadata.yml complet (43 seccions, 30 termes, font Gutenberg #9701).
+  - Qualitat de referència: metadata.yml → revisio.qualitat = 7.0 (2026-03-24).
+    Punts febles coneguts i no crítics: sintaxi de vegades massa calcada de
+    l'anglès antic («hagué que el pare havia marxat a altres llocs», secció II) i
+    algun realia transliterat sense nota («nixeros», secció IX).
+  - Dimensions: fidelitat 8.0 · veu de l'autor 7.0 · fluïdesa 6.5 · correcció
+    lingüística 7.0 · coherència 7.5 · completesa 10/10 → global 7.0/10.
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM; el
+  llindar s'assoleix per la revisió estructural, el contrast amb l'original i la
+  qualitat prèvia registrada.
