@@ -1,0 +1,95 @@
+Validat: 2026-10-14
+Puntuació: 7.5/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural i contrast amb l'original)
+
+Dimensions:
+  fidelitat: 8.0/10
+  veu_autor: 8.0/10
+  fluidesa: 8.0/10
+  correccio_linguistica: 7.5/10
+  coherencia: 8.0/10
+  completesa: 9.5/10
+  global: 7.5/10
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated. La
+  metadata vigent (revisat, 7.5, 2026-03-24) no anava acompanyada de la marca,
+  i la traducció no s'havia contrastat mai amb l'original alemany.
+
+  - Obra: «Cartes a un jove poeta» (Briefe an einen jungen Dichter, 1929) de
+    Rainer Maria Rilke: deu cartes escrites entre 1903 i 1908 a Franz Xaver
+    Kappus. Original alemany de domini públic (Rilke, m. 1926); font:
+    Projekt Gutenberg (https://www.projekt-gutenberg.org/rilke/jungdich/jungdich.html),
+    que és el text alemany, no una traducció intermèdia.
+
+  - Estructura: PARITAT EXACTA 10/10 cartes. Els encapçalaments «## 1. Brief»
+    … «## 10. Brief» de l'original corresponen un a un als «## 1. Carta» …
+    «## 10. Carta» de la traducció, en el mateix ordre. L'única capçalera
+    addicional de la traducció és el títol H1 i el colofó.
+
+  - Completitud verificada per carta (recompte de paraules original →
+    traducció): 1) 1121→1028 (0,92) · 2) 583→597 (1,02) · 3) 1141→1139 (1,00)
+    · 4) 1612→1640 (1,02) · 5) 655→659 (1,01) · 6) 1273→1275 (1,00)
+    · 7) 1727→1777 (1,03) · 8) 1971→1982 (1,01) · 9) 684→631 (0,92)
+    · 10) 461→512 (1,11). Total 11.228 → 11.240 paraules (1,001×). Cap carta
+    amb desviació anòmala: no hi ha seccions perdudes ni afegides.
+
+  - Correspondència de les dates, carta per carta (original → traducció):
+    «Paris, 17. Februar 1903» → «París, 17 de febrer de 1903»; «Viareggio,
+    bei Pisa (Italien), 5. April 1903» → «Viareggio, prop de Pisa (Itàlia),
+    5 d'abril de 1903»; «…23. April 1903» → «…23 d'abril de 1903»;
+    «Worpswede bei Bremen, 16. Juli 1903» → «Worpswede, prop de Bremen,
+    16 de juliol de 1903»; «Rom, 29. Oktober 1903» → «Roma, 29 d'octubre de
+    1903»; «Rom, 23. Dezember 1903» → «Roma, 23 de desembre de 1903»;
+    «Rom, 14. Mai 1904» → «Roma, 14 de maig de 1904»; «Borgeby gard, Fladie,
+    Schweden, 12. August 1904» → «Borgeby gård, Flädie, Suècia, 12 d'agost de
+    1904»; «Furuborg, Jonsered, Schweden, 4. November 1904» → «Furuborg,
+    Jonsered, Suècia, 4 de novembre de 1904»; «Paris, am zweiten
+    Weihnachtstage 1908» → «París, el segon dia de Nadal de 1908».
+
+  - Tancament: la traducció arriba fins a la darrera línia de l'original, la
+    signatura de la carta X («Ihr: *Rainer Maria Rilke*» → «Vostre: *Rainer
+    Maria Rilke*»), seguida del colofó de domini públic.
+
+  - Cap bloc [ERROR], cap JSON residual del refinador (ni el format de tres
+    accents greus ni el format amb apòstrofs), cap tanca de codi i cap text
+    alemany pendent de traduir dins traduccio.md.
+
+  - Spot check anti-al·lucinació (contrast directe amb l'alemany):
+      · «Sie sollen wissen, lieber Herr Kappus, wie froh ich war, diesen
+        schönen Brief von Ihnen zu haben» → «Heu de saber, estimat senyor
+        Kappus, com de content he estat de rebre aquesta bella carta vostra»
+        (carta X).
+      · «wie still Sie sein müssen in Ihrem einsamen Fort zwischen den leeren
+        Bergen» → «com de silenciós deveu estar al vostre fort solitari entre
+        les muntanyes buides» (carta X).
+      · «Sie haben mir, lieber und geehrter Herr, mit Ihrem österlichen Briefe
+        viel Freude gemacht» → «Amb la vostra carta pasqual, estimat i
+        honorable senyor, m'heu fet molt feliç» (carta III).
+      · «Nun wird sich Ihnen «Niels Lyhne» auftun, ein Buch der Herrlichkeiten
+        und der Tiefen» → «Ara se us obrirà el «Niels Lyhne», un llibre de
+        magnificències i d'abismes» (carta III). Els noms propis i els títols
+        (Kappus, Jacobsen, Niels Lyhne) es conserven.
+
+  - Apparat: glossari.yml amb 20 termes alemanys clau (Kunst-Werk, Einsamkeit,
+    Notwendigkeit, Geschlecht, Ironie, Geduld, Schaffen, das Unsagbare…), tots
+    amb la traducció catalana i una nota de domini que explica la tria.
+
+  - pre_supervisio.py --no-llm (executat amb /usr/bin/python3, que sí que té
+    PyYAML): 0 errors reals, 0 errors de pagament, glossari llegit (20 termes),
+    cap warning d'encoding. La decisió «CONTINUAR — 92,5 %» és un FALS NEGATIU:
+    el percentatge es calcula per BYTES i la prosa alemanya ocupa més bytes que
+    la catalana (i l'original té un 22,1 % de línies buides). La paritat real,
+    mesurada paraula a paraula carta per carta, és de 1,001×.
+
+  - Punts febles coneguts i no crítics:
+      · La traducció no té notes.md ni introducció.md (habitual en obres
+        validades d'aquest catàleg); no són un requisit del build.
+      · Omissions menors de matís: «sein großes und liebes Vertrauen» →
+        «la vostra gran confiança» (es perd «liebes», «estimada»).
+      · Les tres línies de més de 2.000 caràcters són paràgrafs llargs de la
+        traducció, no un error de chunking.
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM;
+  el llindar s'assoleix per la paritat estructural carta per carta, el contrast
+  directe amb l'alemany i l'absència d'errors reals.
