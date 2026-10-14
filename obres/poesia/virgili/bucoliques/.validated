@@ -1,0 +1,59 @@
+Validat: 2026-10-14
+Puntuació: 8.0/10
+Supervisor: consolidació Hermes (pre_supervisio --no-llm + revisió estructural i contrast amb l'original)
+
+Dimensions:
+  fidelitat: 8.5/10
+  veu_autor: 8.0/10
+  fluidesa: 8.5/10
+  correccio_linguistica: 7.5/10
+  coherencia: 8.5/10
+  completesa: 10/10
+  global: 8.0/10
+
+Notes: |
+  Consolidació d'una obra completa que encara no tenia marca .validated. La
+  metadata vigent era obsoleta (2026-03-08: «necessita_correccions», 6.5/10,
+  «falten glossari, notes i metadata») i no reflectia l'estat real del directori.
+
+  - Obra: «Bucòliques» (Eclogae / Bucolica) de Publi Virgili Maró (c. 42-39 aC),
+    10 èglogues en hexàmetres dactílics. Font: The Latin Library (original.md és
+    el text llatí, no una traducció intermèdia).
+  - Estructura: paritat exacta 10/10 èglogues, amb els mateixos 10 encapçalaments
+    «## Ègloga I…X» en el mateix ordre que els «## Ecloga I…X» de l'original.
+  - Completitud vers a vers (recompte de línies no buides per ègloga, original →
+    traducció): I 95→95 · II 73→73 · III 151→151 · IV 63→63 · V 104→104 ·
+    VI 86→86 · VII 84→84 · VIII 111→110 · IX 79→79 · X 77→78. La traducció arriba
+    fins al darrer vers de l'original («Ite domum saturae, uenit Hesperus, ite,
+    capellae» → «Aneu a casa, sadolles; ve l'Estel del Vespre; aneu, cabres»).
+  - Ràtio: 5.755 paraules d'original per 7.947 de traducció (1,38×), proporció
+    normal en el pas d'un hexàmetre llatí compacte a vers català.
+  - Cap bloc [ERROR], cap JSON residual del refinador, cap tanca de codi i cap
+    text en anglès o castellà pendent de traduir.
+  - Spot check anti-al·lucinació (contrast directe amb l'original):
+      · «Tityre, tu patulae recubans sub tegmine fagi / silvestrem tenui Musam
+        meditaris avena» → «Títir, tu, ajagut sota l'ombra d'un faig estès, /
+        medites la Musa silvestre amb una prima avena».
+      · «Ultima Cumaei venit iam carminis aetas; / magnus ab integro saeclorum
+        nascitur ordo» → «Ja ha arribat l'última era del cant de la Sibil·la de
+        Cumes; / neix de bell nou el gran ordre dels segles» (Ègl. IV).
+      · «Haec mea sunt; ueteres migrate coloni» → «Això és meu; marxeu, vells
+        colons» (Ègl. IX).
+      · «concedite, Aretusa… non Parnasi… nec Pindi» → «Concedeix-me, Aretusa,
+        aquest darrer esforç… ni les carenes del Parnàs, ni les del Pind» (Ègl. X).
+  - Les dues línies llargues repetides 9 cops («Comença amb mi, flauta meva, els
+    versos del Mènal», «Porteu Dafnis de la ciutat a casa, cants meus, porteu
+    Dafnis») són el refrany de l'Ègloga VIII, no una duplicació de chunks.
+  - Apparat: glossari.yml (20 termes), notes.md (10 notes erudites), introducció
+    editorial completa (Virgili, el gènere pastoral, Teòcrit, context de les
+    confiscacions, l'Ègloga IV «messiànica»).
+  - pre_supervisio.py --no-llm: 0 errors reals, 0 errors de pagament, cap problema
+    estructural (decisió SUPERVISAR, 118,2 % de ràtio de bytes). La ràtio < 100 %
+    que donava el càlcul per bytes no és indicativa: la paritat real és vers a vers.
+  - Punts febles coneguts i no crítics: «rapidum cretae… Oaxen» traduït «el ràpid
+    Oaxes de Creta» (lectura de cretae com a Cretae, defensable per Servi);
+    «ni les del Pind» sense desinència llatina completa.
+
+  No s'ha executat la revisió dimensional amb LLM (--no-llm) per estalviar DIEM; el
+  llindar s'assoleix per la paritat estructural vers a vers, el contrast directe amb
+  l'original llatí i l'absència d'errors reals.
