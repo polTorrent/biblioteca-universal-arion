@@ -14,6 +14,31 @@ from pydantic import BaseModel, Field
 if TYPE_CHECKING:
     from core.memoria_contextual import MemoriaContextual
 
+# Detecció de metadades filtrades (mateixa font de veritat que el pipeline).
+# Import opcional: `core` també s'usa des d'scripts que no tenen
+# `sistema/traduccio` al sys.path.
+try:
+    from agents.v2.sanititzacio import sembla_metadades, te_bloc_metadades
+except ImportError:  # pragma: no cover
+    sembla_metadades = None  # type: ignore[assignment]
+    te_bloc_metadades = None  # type: ignore[assignment]
+
+# Valors acceptats al camp d'estat (esquema vigent: `revisio.estat`).
+# Els valors que indiquen feina en curs (`incomplet`, `pendent_*`, `en-procés`)
+# NO són publicables.
+ESTATS_PUBLICABLES = {
+    "publicat",
+    "revisat",
+    "published",
+    "reviewed",
+    "validat",
+    "consolidat",
+    "completat",
+    "corregit",
+    "traduit",
+    "traduït",
+}
+
 
 # =============================================================================
 # MODELS PYDANTIC
@@ -64,12 +89,14 @@ class ValidadorFinal:
             print(validador.generar_informe())
     """
 
-    # Patrons problemàtics al contingut
+    # Patrons problemàtics al contingut. Han de ser marques inequívoques: `XXX`
+    # sol xoca amb els numerals romans dels encapçalaments («## XXX»), així que
+    # només es considera marca si va entre claudàtors.
     PATRONS_PENDENTS = [
         (r"\[TODO\]", "Marca TODO pendent"),
         (r"\[PENDENT\]", "Marca PENDENT"),
         (r"\?\?\?", "Interrogants de dubte"),
-        (r"XXX", "Marca XXX pendent"),
+        (r"\[XXX\]", "Marca XXX pendent"),
         (r"FIXME", "Marca FIXME"),
     ]
 
@@ -109,6 +136,66 @@ class ValidadorFinal:
         except Exception as e:
             print(f"[ValidadorFinal] Error llegint metadata: {e}")
             return None
+
+    # =========================================================================
+    # LECTURA DE METADADES (esquema vigent + esquema antic)
+    # =========================================================================
+
+    def _camp_metadata(self, *claus: str) -> str:
+        """Llegeix un camp de metadata.yml tolerant amb els dos esquemes.
+
+        El catàleg fa servir l'esquema niuat en català (`obra.titol`,
+        `obra.autor`, `obra.llengua_original`…, i `revisio.estat`,
+        `revisio.qualitat`, `revisio.data_revisio`); els primers fitxers
+        portaven els camps plans anglesos (`title`, `author`…). Es proven tots
+        dos, en l'ordre indicat.
+
+        Args:
+            *claus: Noms de camp per ordre de prioritat.
+
+        Returns:
+            El valor com a text, o cadena buida si no hi és.
+        """
+        metadata = self._carregar_metadata() or {}
+        obres = metadata.get("obra") if isinstance(metadata.get("obra"), dict) else {}
+        revisio = metadata.get("revisio") if isinstance(metadata.get("revisio"), dict) else {}
+        fonts = (obres, revisio, metadata)
+        for clau in claus:
+            for font in fonts:
+                valor = font.get(clau) if isinstance(font, dict) else None
+                if valor not in (None, "", [], {}):
+                    return str(valor)
+        return ""
+
+    def _qualitat_metadata(self) -> float | None:
+        """Retorna la puntuació de qualitat declarada (metadata o `.validated`)."""
+        text = self._camp_metadata("qualitat", "quality_score", "puntuacio", "puntuació")
+        if text:
+            coincidencia = re.search(r"\d+(?:[.,]\d+)?", text)
+            if coincidencia:
+                try:
+                    return float(coincidencia.group(0).replace(",", "."))
+                except ValueError:
+                    pass
+
+        # Marcador `.validated` (format: «Puntuació: 7.5/10»)
+        fitxer = self.obra_dir / ".validated"
+        if fitxer.exists():
+            try:
+                contingut = fitxer.read_text(encoding="utf-8")
+            except Exception:
+                return None
+            coincidencia = re.search(r"[Pp]untuaci[oó]\s*:?\s*(\d+(?:[.,]\d+)?)", contingut)
+            if coincidencia:
+                try:
+                    return float(coincidencia.group(1).replace(",", "."))
+                except ValueError:
+                    return None
+        return None
+
+    def _te_marcador_validat(self) -> bool:
+        """True si l'obra té el marcador `.validated`."""
+        return (self.obra_dir / ".validated").exists()
 
     def _carregar_traduccio(self) -> str | None:
         """Carrega traduccio.md."""
@@ -269,35 +356,55 @@ class ValidadorFinal:
                     parts.append(f"Unitats omeses: {sorted(falten)[:10]}")
                 error_msg = ". ".join(parts)
 
+            # Només és crític si l'original té una numeració consolidada: amb
+            # poques unitats al costat original, les diferències solen ser
+            # maneres distintes de numerar (encapçalaments afegits pel pipeline).
             items.append(ItemValidacio(
                 categoria="integritat",
                 item="recompte_unitats",
                 descripcio="Totes les unitats de l'original existeixen a la traducció",
-                obligatori=True,
+                obligatori=len(nums_orig) >= 5 and bool(inventats or falten),
                 ok=len(inventats) == 0 and len(falten) == 0,
                 error=error_msg,
-                suggeriment="🚨 POSSIBLE AL·LUCINACIÓ. Revisar traducció manualment.",
+                suggeriment="🚨 POSSIBLE AL·LUCINACIÓ. Revisar traducció manualment."
+                if len(nums_orig) >= 5 else "Revisar si la numeració de la traducció és intencionada.",
             ))
 
         # --- Check 3: Paràgrafs (per textos sense numeració) ---
         if not nums_orig:
-            par_orig = len([p for p in original.split('\n\n') if len(p.strip()) > 30])
-            par_trad = len([p for p in traduccio.split('\n\n') if len(p.strip()) > 30])
+            par_orig = self._comptar_paragrafs_contingut(original)
+            par_trad = self._comptar_paragrafs_contingut(traduccio)
 
             diferencia = abs(par_orig - par_trad)
             llindar = max(5, int(par_orig * 0.40))
 
+            # AVÍS, no porta de publicació: en vers (una línia per vers a
+            # l'original) i en originals CJK el recompte de paràgrafs no és
+            # comparable. Per a omissions massives ja hi ha `ratio_longitud`.
             items.append(ItemValidacio(
                 categoria="integritat",
                 item="recompte_paragrafs",
                 descripcio=f"Nombre de paràgrafs similar (orig={par_orig}, trad={par_trad})",
-                obligatori=diferencia > llindar * 2,
+                obligatori=False,
                 ok=diferencia <= llindar,
                 error=f"Diferència de {diferencia} paràgrafs (orig={par_orig}, trad={par_trad})",
-                suggeriment="Revisar si falten paràgrafs o n'hi ha d'inventats.",
+                suggeriment="Revisar si falten paràgrafs (en vers i en textos CJK el recompte sol desquadrar)",
             ))
 
         return items
+
+    def _comptar_paragrafs_contingut(self, text: str) -> int:
+        """Compta paràgrafs de contingut, sense encapçalaments ni capçalera.
+
+        Els encapçalaments markdown (`## Capítol XX`), el bloc de capçalera que
+        afegeix el pipeline (títol, autor, «Traduït del…», separador) i les notes
+        numerades no són paràgrafs de text i desquadraven el recompte.
+        """
+        net = re.sub(r"^#{1,6}\s.*$", "", text, flags=re.MULTILINE)
+        net = re.sub(r"^\s*[-*]{3,}\s*$", "", net, flags=re.MULTILINE)
+        net = re.sub(r"^\s*\*[^*]{0,120}\*\s*$", "", net, flags=re.MULTILINE)
+        net = re.sub(r"^\s*Traduït del .*$", "", net, flags=re.MULTILINE | re.IGNORECASE)
+        return len([p for p in net.split("\n\n") if len(p.strip()) > 30])
 
     def validar_fitxers(self) -> list[ItemValidacio]:
         """Valida l'existència dels fitxers obligatoris."""
@@ -312,7 +419,7 @@ class ValidadorFinal:
             obligatori=True,
             ok=fitxer.exists(),
             error=None if fitxer.exists() else "Fitxer metadata.yml no trobat",
-            suggeriment="Crear metadata.yml amb title, author, source_language, status, date",
+            suggeriment="Crear metadata.yml amb el bloc 'obra:' (titol, autor, llengua_original) i 'revisio:'",
         ))
 
         # original.md
@@ -371,7 +478,8 @@ class ValidadorFinal:
             suggeriment="Afegir portada.png (preferit) o portada.jpg al directori de l'obra",
         ))
 
-        # introduccio.md (OBLIGATORI)
+        # introduccio.md (recomanat, NO obligatori: només 14 de 97 obres en tenen
+        # i el catàleg publica notes.md com a estudi crític)
         intro = self._carregar_introduccio()
         paraules_intro = self._comptar_paraules(intro) if intro else 0
         te_intro = paraules_intro >= 200
@@ -379,7 +487,7 @@ class ValidadorFinal:
             categoria="fitxer",
             item="introduccio.md",
             descripcio="Estudi introductori (mínim 200 paraules)",
-            obligatori=True,
+            obligatori=False,
             ok=te_intro,
             error=None if te_intro else f"introduccio.md no existeix o és massa breu ({paraules_intro} paraules)",
             suggeriment="Crear introduccio.md amb context sobre l'autor, l'obra i la traducció (mínim 200 paraules)",
@@ -404,82 +512,86 @@ class ValidadorFinal:
             ))
             return items
 
-        # title
-        title = metadata.get("title", "")
+        # title (esquema vigent: obra.titol)
+        title = self._camp_metadata("titol", "title")
         items.append(ItemValidacio(
             categoria="metadata",
             item="title",
             descripcio="Títol de l'obra",
             obligatori=True,
             ok=bool(title),
-            error=None if title else "Camp 'title' buit o absent",
-            suggeriment="Afegir 'title: Títol de l'Obra' a metadata.yml",
+            error=None if title else "Camp 'obra.titol' (o 'title') buit o absent",
+            suggeriment="Afegir 'titol: Títol de l'Obra' dins 'obra:' a metadata.yml",
         ))
 
-        # author
-        author = metadata.get("author", "")
+        # author (esquema vigent: obra.autor)
+        author = self._camp_metadata("autor", "author")
         items.append(ItemValidacio(
             categoria="metadata",
             item="author",
             descripcio="Autor de l'obra",
             obligatori=True,
             ok=bool(author),
-            error=None if author else "Camp 'author' buit o absent",
-            suggeriment="Afegir 'author: Nom de l'Autor' a metadata.yml",
+            error=None if author else "Camp 'obra.autor' (o 'author') buit o absent",
+            suggeriment="Afegir 'autor: Nom de l'Autor' dins 'obra:' a metadata.yml",
         ))
 
-        # source_language
-        lang = metadata.get("source_language", "")
+        # source_language (esquema vigent: obra.llengua_original)
+        lang = self._camp_metadata("llengua_original", "source_language", "llengua")
         items.append(ItemValidacio(
             categoria="metadata",
             item="source_language",
             descripcio="Llengua original",
             obligatori=True,
             ok=bool(lang),
-            error=None if lang else "Camp 'source_language' buit o absent",
-            suggeriment="Afegir 'source_language: grec/llatí/japonès/etc.' a metadata.yml",
+            error=None if lang else "Camp 'obra.llengua_original' (o 'source_language') buit o absent",
+            suggeriment="Afegir 'llengua_original: grec/llatí/japonès/etc.' dins 'obra:' a metadata.yml",
         ))
 
-        # status
-        status = metadata.get("status", "")
-        status_valid = status in ["publicat", "revisat", "published", "reviewed"]
+        # status (esquema vigent: revisio.estat, o el marcador .validated)
+        status = self._camp_metadata("estat", "status").strip().lower()
+        te_validated = self._te_marcador_validat()
+        status_valid = status in ESTATS_PUBLICABLES or te_validated
         items.append(ItemValidacio(
             categoria="metadata",
             item="status",
-            descripcio="Estat de la traducció (publicat/revisat)",
+            descripcio="Estat de la traducció (revisat/publicat o marcador .validated)",
             obligatori=True,
             ok=status_valid,
-            error=None if status_valid else f"Status '{status}' no és vàlid per publicar",
-            suggeriment="Canviar 'status' a 'publicat' o 'revisat' a metadata.yml",
+            error=None if status_valid else (
+                f"Estat '{status or '(buit)'}' no és publicable i no hi ha marcador .validated"
+            ),
+            suggeriment="Posar 'estat: revisat' dins 'revisio:' a metadata.yml o crear el fitxer .validated",
         ))
 
-        # quality_score
-        quality = metadata.get("quality_score", 0)
-        try:
-            quality = float(quality)
-        except (ValueError, TypeError):
-            quality = 0
-        quality_ok = quality >= 7.0
+        # quality_score (esquema vigent: revisio.qualitat o .validated)
+        quality = self._qualitat_metadata()
+        quality_ok = quality is not None and quality >= 7.0
         items.append(ItemValidacio(
             categoria="metadata",
             item="quality_score",
             descripcio="Puntuació de qualitat (mínim 7.0)",
             obligatori=True,
             ok=quality_ok,
-            error=None if quality_ok else f"quality_score ({quality}) és inferior a 7.0",
-            suggeriment="Millorar la traducció fins assolir quality_score >= 7.0",
+            error=None if quality_ok else (
+                "No hi ha puntuació de qualitat a metadata.yml (revisio.qualitat) "
+                "ni al marcador .validated"
+                if quality is None
+                else f"qualitat ({quality}) és inferior a 7.0"
+            ),
+            suggeriment="Posar 'qualitat: X.X' dins 'revisio:' a metadata.yml o validar l'obra (mínim 7.0)",
         ))
 
-        # date
-        date = metadata.get("date", "")
+        # date (esquema vigent: revisio.data_revisio / obra.any_traduccio)
+        date = self._camp_metadata("data_revisio", "date", "any_traduccio", "any")
         items.append(ItemValidacio(
             categoria="metadata",
             item="date",
-            descripcio="Data de la traducció",
+            descripcio="Data de la traducció o de la revisió",
             obligatori=True,
             ok=bool(date),
-            error=None if date else "Camp 'date' buit o absent",
-            suggeriment="Afegir 'date: YYYY-MM-DD' a metadata.yml",
+            error=None if date else "Camp 'revisio.data_revisio' (o 'date'/'obra.any_traduccio') buit o absent",
+            suggeriment="Afegir 'data_revisio: YYYY-MM-DD' dins 'revisio:' a metadata.yml",
         ))
 
         return items
@@ -514,16 +626,38 @@ class ValidadorFinal:
                 suggeriment=f"Eliminar o resoldre totes les marques '{desc}'",
             ))
 
-        # No conté blocs de codi sense processar
+        # No conté metadades internes del refinador (JSON filtrat) ni marques
+        # d'error: això sí que bloqueja la publicació.
+        te_metadades = bool(
+            (te_bloc_metadades and te_bloc_metadades(traduccio))
+            or (sembla_metadades and sembla_metadades(traduccio))
+        )
+        te_errors = "[ERROR:" in traduccio
+        items.append(ItemValidacio(
+            categoria="contingut",
+            item="sense_metadades_filtrades",
+            descripcio="No conté metadades internes del refinador ni marques d'error",
+            obligatori=True,
+            ok=not (te_metadades or te_errors),
+            error=(
+                "Hi ha un bloc de metadades del refinador (JSON filtrat) dins la traducció"
+                if te_metadades
+                else ("Hi ha marques [ERROR:] d'execucions fallides" if te_errors else None)
+            ),
+            suggeriment="Netejar amb sistema/scripts/neteja_blocs_metadades.py i retraduir els fragments afectats",
+        ))
+
+        # Blocs de codi: avís (els índexs de ```català són legítims; les
+        # metadades filtrades ja es detecten a l'item anterior).
         blocs_codi = re.findall(r"```", traduccio)
         items.append(ItemValidacio(
             categoria="contingut",
             item="sense_blocs_codi",
             descripcio="No conté blocs de codi sense processar",
-            obligatori=True,
+            obligatori=False,
             ok=len(blocs_codi) == 0,
             error=f"Trobats {len(blocs_codi)//2} blocs de codi" if blocs_codi else None,
-            suggeriment="Eliminar o processar els blocs de codi (```)",
+            suggeriment="Revisar si els blocs de codi (```) són contingut legítim (índexs) o restes del model",
         ))
 
         # Mínim de paraules
@@ -553,7 +687,7 @@ class ValidadorFinal:
         return items
 
     def validar_introduccio(self) -> list[ItemValidacio]:
-        """Valida l'estudi introductori."""
+        """Valida l'estudi introductori (recomanat, no obligatori)."""
         items: list[ItemValidacio] = []
         intro = self._carregar_introduccio()
 
@@ -562,7 +696,7 @@ class ValidadorFinal:
                 categoria="introduccio",
                 item="introduccio.md",
                 descripcio="Existència de l'estudi introductori",
-                obligatori=True,
+                obligatori=False,
                 ok=False,
                 error="No existeix introduccio.md",
                 suggeriment="Crear introduccio.md amb estudi introductori",
@@ -575,7 +709,7 @@ class ValidadorFinal:
             categoria="introduccio",
             item="minim_paraules",
             descripcio="Mínim 200 paraules",
-            obligatori=True,
+            obligatori=False,
             ok=paraules >= 200,
             error=f"Només {paraules} paraules (mínim 200)" if paraules < 200 else None,
             suggeriment="Ampliar l'estudi introductori a mínim 200 paraules",
@@ -724,16 +858,61 @@ class ValidadorFinal:
             suggeriment="Afegir almenys 3 termes al glossari",
         ))
 
-        # Verificar estructura de cada terme
+        # Verificar estructura de cada terme. El glossari del catàleg fa servir
+        # claus de llengua variables (`italia`, `grec`, `llati`, `angles`…), a més
+        # de `original`/`terme`; per tant es considera que un terme té l'original
+        # si té alguna clau de text que no sigui la traducció ni camps auxiliars.
         termes_incomplets = []
+        claus_auxiliars = {
+            "traduccio",
+            "traducció",
+            "catala",
+            "català",
+            "definicio",
+            "definició",
+            "significat",
+            "significado",
+            "explicacio",
+            "explicació",
+            "gloss",
+            "translation",
+            "transliteracio",
+            "transliteració",
+            "nota",
+            "notes",
+            "comentari",
+            "comentaris",
+            "categoria",
+            "tipus",
+            "font",
+            "referencia",
+        }
         for i, terme in enumerate(glossari):
             if not isinstance(terme, dict):
                 termes_incomplets.append(f"#{i+1} (no és dict)")
                 continue
 
-            # Acceptar diferents noms de camps
-            te_original = any(k in terme for k in ["original", "terme", "grec", "llati", "japones"])
-            te_traduccio = any(k in terme for k in ["traduccio", "catala", "definicio"])
+            te_traduccio = any(
+                k in terme
+                for k in [
+                    "traduccio",
+                    "traducció",
+                    "catala",
+                    "català",
+                    "definicio",
+                    "definició",
+                    "significat",
+                    "significado",
+                    "explicacio",
+                    "explicació",
+                    "gloss",
+                    "translation",
+                ]
+            )
+            te_original = any(
+                clau not in claus_auxiliars and isinstance(valor, str) and valor.strip()
+                for clau, valor in terme.items()
+            )
 
             if not te_original or not te_traduccio:
                 termes_incomplets.append(f"#{i+1}")
@@ -824,8 +1003,11 @@ class ValidadorFinal:
         """Valida la generació web."""
         items: list[ItemValidacio] = []
 
-        # Directori docs/
-        docs_dir = self.obra_dir.parent.parent.parent / "docs"
+        # Directori docs/ (a l'arrel del repositori: <arrel>/obres/<cat>/<autor>/<obra>)
+        try:
+            docs_dir = self.obra_dir.resolve().parents[3] / "docs"
+        except IndexError:  # estructura inesperada (p. ex. una prova temporal)
+            docs_dir = self.obra_dir / "docs"
         if not docs_dir.exists():
             items.append(ItemValidacio(
                 categoria="web",
