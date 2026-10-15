@@ -1,50 +1,260 @@
 {
-  "traduccions": {},
+  "traduccions": {
+    "υψος": {
+      "original": "ὕψος",
+      "traduccio": "sublim (lit. «altura»)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "φυσις": {
+      "original": "φύσις",
+      "traduccio": "naturalesa",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "τεχνη": {
+      "original": "τέχνη",
+      "traduccio": "art (en el sentit de tècnica)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "τεχνολογια": {
+      "original": "τεχνολογία",
+      "traduccio": "tractat tècnic / preceptiva",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "εκστασις": {
+      "original": "ἔκστασις",
+      "traduccio": "èxtasi (lit. «sortida de si»)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "εκπληξις": {
+      "original": "ἔκπληξις",
+      "traduccio": "estupefacció",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "πειθω / το πιθανον": {
+      "original": "πειθώ / τὸ πιθανόν",
+      "traduccio": "persuasió / allò persuasiu",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "το θαυμασιον": {
+      "original": "τὸ θαυμάσιον",
+      "traduccio": "el meravellós",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "παιδεια": {
+      "original": "παιδεία",
+      "traduccio": "cultura (formació)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ευτυχια": {
+      "original": "εὐτυχία",
+      "traduccio": "bona fortuna",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ευβουλια": {
+      "original": "εὐβουλία",
+      "traduccio": "bona deliberació",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ευεργεσια / αληθεια": {
+      "original": "εὐεργεσία / ἀλήθεια",
+      "traduccio": "benefici / veritat",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "θεοι": {
+      "original": "θεοί",
+      "traduccio": "els déus",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "σκηπτος": {
+      "original": "σκηπτός",
+      "traduccio": "llamp",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ανηρ πολιτικος": {
+      "original": "ἀνὴρ πολιτικός",
+      "traduccio": "home polític (ciutadà dedicat als afers públics)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "δυναστεια": {
+      "original": "δυναστεία",
+      "traduccio": "poder (domini)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ρητωρ": {
+      "original": "ῥήτωρ",
+      "traduccio": "orador",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "εταιρος": {
+      "original": "ἑταῖρος",
+      "traduccio": "company / amic",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "κεντρον / χαλινος": {
+      "original": "κέντρον / χαλινός",
+      "traduccio": "agulló / brida",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "εστιουχος": {
+      "original": "ἑστιοῦχος",
+      "traduccio": "qui guarda la llar",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "καμινος": {
+      "original": "κάμινος",
+      "traduccio": "forn",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "μεθοδος": {
+      "original": "μέθοδος",
+      "traduccio": "mètode",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ασκησις": {
+      "original": "ἄσκησις",
+      "traduccio": "exercitació",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "καιρος": {
+      "original": "καιρός",
+      "traduccio": "moment oportú",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "μεγαλοφυης": {
+      "original": "μεγαλοφυής",
+      "traduccio": "de naturalesa gran (genial)",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    },
+    "ευρεσις / ταξις / οικονομια": {
+      "original": "εὕρεσις / τάξις / οἰκονομία",
+      "traduccio": "invenció / disposició / distribució",
+      "context": null,
+      "justificacio": "Glossari inicial",
+      "primera_aparicio": "glossari"
+    }
+  },
   "personatges": {},
   "decisions_estil": [],
   "context_investigacio": {
-    "autor_bio": "Pseudo-Longí (autor anònim) (incert (probablement segle I-III d.C.)), incert (probablement zona grega oriental de l'Imperi Romà). Autor anònim d'identitat desconeguda, tradicionalment identificat erròniament amb Cassi Longí. Era probablement un retòric i crític literari grec d'època imperial romana. La seva obra revela un profund coneixement de la literatura grega clàssica i de les tècniques retòriques.",
-    "context_historic": "Imperi Romà d'època altoimperial (segle I-III d.C.), període de la Segona Sofística, quan la cultura grega clàssica va experimentar un renaixement sota el domini romà. Època de gran activitat retòrica i literària.",
-    "context_obra": "Περὶ ὕψους (Peri hypsous) (incert (segle I-III d.C.)) - tractat de crítica literària i retòrica. Escrit com a resposta crítica al tractat sobre el sublim de Cecili de Calacte, dirigit a Postumi Terencià. Busca definir i explicar com assolir l'excel·lència literària o 'sublim'.",
+    "autor_bio": "Pseudo-Longí (autor anònim del tractat Περὶ ὕψους; tradicionalment atribuït a «Dionisi Longí» o «Cassi Longí») (incert; probablement segle I d.C. (possiblement mitjan o finals del segle I, o ja inicis del segle III segons l'atribució tradicional a Cassi Longí, c. 213-273 d.C.)), incert; probablement món grec de l'Imperi Romà (possible vinculació amb Àsia Menor o Alexandria, sense proves). L'autor és desconegut: els manuscrits (Parisinus gr. 2036, s. X) atribueixen l'obra a «Dionisi o Longí» («Διονυσίου Λογγίνου» / «Διονυσίου ἢ Λογγίνου»), però la tradició filològica moderna, des del segle XIX, considera l'atribució a Cassi Longí (s. III) cronològicament insostenible, ja que el tractat cita autors fins a Ciceró i sembla pertànyer al segle I d.C. És un retòric i crític literari grec culte, familiaritzat amb Plató, Homer, Demòstenes i la tradició retòrica, que escriu per a un jove romà, Postumi Terenciano.",
+    "context_historic": "Si es data al segle I d.C., l'obra pertany a l'època imperial primerenca (dinasties julio-clàudia o flàvia), amb la pau romana, el debat sobre la decadència de l'oratòria (present a Tàcit, Diàleg dels oradors, i Quintilià) i el moviment atticista contra l'asianisme, en el qual s'inscriuen Cecili de Cal·leacte i Dionís d'Halicarnàs. L'autor reflexiona al capítol 44 sobre les causes de la manca de grans talents en la seva època (la pèrdua de llibertat política o bé la corrupció moral i l'afany de lucre).",
+    "context_obra": "Περὶ ὕψους (Peri hýpsous); en llatí De sublimitate; en català Del sublim (incert; generalment datada al segle I d.C. (entre l'època d'August i la d'inicis del segle II); l'opinió majoritària tendeix a la segona meitat del segle I d.C.) - Tractat de crítica literària i retòrica (epístola-tractat dirigida a un destinatari). Escrita en forma de carta-tractat a Postumi Terenciano (Ποστούμιος Τερεντιανός), un jove romà de classe culta, amb funcions públiques, de qui no coneixem res més. L'autor la compon com a resposta crítica al tractat homònim de Cecili de Cal·leacte (retòric sicilià de l'època d'August), que considera insuficient: massa humil per al tema, centrat en exemples més que en el com assolir el sublim i poc útil per als lectors.",
     "influencies": [
-      "retòrica clàssica grega",
-      "tradició crítica aristotèlica",
-      "escola peripatètica",
-      "Cecili de Calacte (com a oponent)",
-      "Homer i els grans poetes arcaics"
+      "Plató (model de sublimitat estilística i filosòfica; imitació citada explícitament)",
+      "Homer (principal font d'exemples de sublimitat)",
+      "Demòstenes (paradigma de l'oratòria sublim)",
+      "Tradició retòrica hel·lenística i atticisme (Cecili de Cal·leacte, Dionís d'Halicarnàs, Teodor de Gàdara)",
+      "Teoria de la imitació (mimesis) de la tradició retòrica",
+      "Possible diàleg amb Ciceró i la retòrica llatina; influència estoica i platònica en la noció d'elevació de l'ànima"
     ],
     "temes_principals": [
-      "definició del sublim literari",
-      "les cinc fonts del sublim",
-      "crítica dels defectes estilístics",
-      "anàlisi d'exemples d'autors clàssics",
-      "relació entre geni natural i tècnica"
+      "Definició i naturalesa del sublim (ὕψος) com a excel·lència i distinció del discurs que produeix èxtasi (ἔκστασις) en lloc de persuasió",
+      "Les cinc fonts del sublim: capacitat de concebre grans pensaments, emoció intensa i inspirada (πάθος), figures de pensament i dicció, noble expressió (elecció de mots i metàfora) i composició digna i elevada",
+      "Imitació (μίμησις) i emulació dels grans autors del passat",
+      "Distinció entre natura (φύσις) i art (τέχνη) en la creació literària",
+      "Vicis oposats al sublim: l'estil inflat, el pueril, el parentirs fals i la fredor afectada",
+      "Decadència de la literatura i causes morals i polítiques de la manca de grans genis (cap. 44)"
     ]
   },
   "notes_pendents": [
-    "[H] Personatge històric: Cecili de Calacte",
-    "[H] Personatge històric: Postumi Terencià",
-    "[H] Personatge històric: Homer",
-    "[H] Personatge històric: Safo",
-    "[H] Personatge històric: Píndar",
-    "[H] Personatge històric: Èsquil",
-    "[H] Personatge històric: Sòfocles",
-    "[H] Personatge històric: Eurípides",
-    "[H] Personatge històric: Herodot",
-    "[H] Personatge històric: Tucídides",
-    "[H] Personatge històric: Demòstenes",
-    "[H] Personatge històric: Ciceró",
+    "[H] Personatge històric: Postumi Terenciano (destinatari)",
+    "[H] Personatge històric: Cecili de Cal·leacte (retòric criticat, tractat homònim perdut)",
+    "[H] Personatge històric: Homer (Ilíada i Odissea)",
     "[H] Personatge històric: Plató",
-    "[C] Referència cultural: mitologia grega",
-    "[C] Referència cultural: història d'Atenes clàssica",
-    "[C] Referència cultural: retòrica àtica",
-    "[C] Referència cultural: poesia lírica arcaica",
-    "[C] Referència cultural: tragèdia grega",
-    "[C] Referència cultural: historiografia clàssica",
-    "[T] Terme tècnic: ὕψος (hypsos - sublim)",
-    "[T] Terme tècnic: μεγαλοφροσύνη (megalophrosyne - grandesa d'esperit)",
-    "[T] Terme tècnic: σχήματα (schemata - figures retòriques)",
-    "[T] Terme tècnic: λέξις (lexis - dicció)",
-    "[T] Terme tècnic: σύνθεσις (synthesis - composició)"
+    "[H] Personatge històric: Demòstenes",
+    "[H] Personatge històric: Ciceró (comparat amb Demòstenes, cap. 12)",
+    "[H] Personatge històric: Safo (fr. 31)",
+    "[H] Personatge històric: Hesíode",
+    "[H] Personatge històric: Eurípides i Sòfocles",
+    "[H] Personatge històric: Píndar i Baquílides",
+    "[H] Personatge històric: Tucídides, Heròdot i Xenofont",
+    "[H] Personatge històric: Hiperides i Lisias",
+    "[H] Personatge històric: Arquíloc",
+    "[H] Personatge històric: Timeu de Tauromenion (criticat pel seu estil fred)",
+    "[H] Personatge històric: Teodor de Gàdara",
+    "[H] Personatge històric: Àiax, Aquil·les, Zeus i altres figures homèriques",
+    "[H] Personatge històric: Alexandre el Gran (anècdota amb Parmenió)",
+    "[H] Personatge històric: Moisès (referència al Gènesi, cap. 9.9)",
+    "[H] Personatge històric: Aristòtil i Teofrast (mencions esporàdiques)",
+    "[H] Personatge històric: Gorgies de Leontins i Cal·lístenes (exemples d'estil inflat)",
+    "[H] Personatge històric: Amoni, Anacreont, Estesícor (possibles mencions)",
+    "[C] Referència cultural: Debat atticisme-asianisme en la retòrica de l'època imperial",
+    "[C] Referència cultural: Tradició de la retòrica escolar grega i les seves categories (inventio, dispositio, elocutio)",
+    "[C] Referència cultural: Cultura escolar de la lectura dels clàssics (Homer, Plató, Demòstenes) com a base de la paideia",
+    "[C] Referència cultural: Gran quantitat de passatges citats de poesia lírica, èpica i tragèdia, alguns només conservats per aquest tractat (Safo fr. 31)",
+    "[C] Referència cultural: La referència al Gènesi (cap. 9.9) com a possible testimoni de coneixement de textos jueus",
+    "[C] Referència cultural: Batalla de Maratò i el jurament dels morts de Demòstenes (De corona)",
+    "[C] Referència cultural: Colós de Rodes i altres imatges de grandesa natural (Nil, Danubi, Etna)",
+    "[C] Referència cultural: Reflexió sobre la pèrdua de la llibertat política com a causa de la decadència",
+    "[C] Referència cultural: Context de l'Imperi Romà i el paper dels hel·lenòfons cultes",
+    "[T] Terme tècnic: ὕψος (hýpsos): alçada, elevació, sublim",
+    "[T] Terme tècnic: ἔκστασις (ékstasis): èxtasi, transport",
+    "[T] Terme tècnic: πάθος (páthos): passió, emoció",
+    "[T] Terme tècnic: τέχνη (téchne): art, tècnica",
+    "[T] Terme tècnic: φύσις (phýsis): natura, talent innat",
+    "[T] Terme tècnic: μίμησις (mímesis): imitació",
+    "[T] Terme tècnic: ζῆλος (zêlos): emulació",
+    "[T] Terme tècnic: φαντασία (phantasía): imatge mental, visualització",
+    "[T] Terme tècnic: μεγαλοφροσύνη / μεγαλοφυΐα (megalophrosýne / megalophyía): grandesa d'esperit, noblesa de pensament",
+    "[T] Terme tècnic: σύνθεσις (sýnthesis): composició, ordenació de les paraules",
+    "[T] Terme tècnic: σχῆμα (schêma): figura retòrica",
+    "[T] Terme tècnic: μεταφορά (metaphorá): metàfora",
+    "[T] Terme tècnic: τὸ οἰδοῦν / τὸ φλεγμαῖνον: l'inflat, la tumefacció estilística",
+    "[T] Terme tècnic: παρένθυρσος (parénthyrsos): fals entusiasme, pathos fora de lloc",
+    "[T] Terme tècnic: ψυχρότης (psychrótes): fredor estilística",
+    "[T] Terme tècnic: ὑπερβατόν (hyperbatón): hipèrbaton",
+    "[T] Terme tècnic: ἀσύνδετον (asýndeton): asíndeton",
+    "[T] Terme tècnic: ἀποστροφή (apostrophé): apòstrofe",
+    "[T] Terme tècnic: ἀμπλιφικació / αὔξησις (aúxesis): amplificació"
   ]
 }
