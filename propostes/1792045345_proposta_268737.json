@@ -1,0 +1,21 @@
+{
+  "id": "1792045345_proposta_268737",
+  "type": "proposta",
+  "description": "Tradueix: Els perses - Èsquil",
+  "titol": "Els perses",
+  "autor": "Èsquil",
+  "idioma_original": "grec antic",
+  "categoria": "teatre",
+  "paraules_aprox": 5432,
+  "dificultat": 4,
+  "fonts": [
+    "Wikisource (grec): Πέρσαι, ed. Herbert Weir Smyth, Loeb Classical Library 1922",
+    "Perseus Digital Library: Aeschylus, Persians, ed. H. W. Smyth 1926"
+  ],
+  "status": "pending",
+  "created_at": "2026-10-15T08:22:25.183977",
+  "source": "agent_hermes",
+  "proposat_per": "Hermes (agent): tria pròpia seguint els criteris de selecció — test del flux de propostes",
+  "issue_github": "https://github.com/polTorrent/biblioteca-universal-arion/issues/1",
+  "resolucio": "Proposta vàlida: domini públic (472 aC), cànon universal, 1.076 versos (5.432 paraules), original disponible en línia i cap traducció catalana recent (només la de Carles Riba, 1932). En mode consolidació no es tradueix ara: queda registrada i publicada com a incidència #1 amb l'etiqueta nova-obra. Data: 2026-10-15."
+}
