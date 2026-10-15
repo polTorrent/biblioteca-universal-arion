@@ -1,87 +1,55 @@
-CRÍTIC — Traducció corrupta per bug del refinador (JSON intern filtrat al text)
+REVISIÓ PENDENT — retraducció completa (7,8/10) bloquejada pel validador
 
-## Estat
-- La traducció vigent (HEAD) és la de 2026-03-25: qualitat 5.3/10 (pendent de millora).
-- L'execució del pipeline del 2026-10-10 15:04 va PRODUIR una traducció CORRUPTA:
-  14 blocs de metadades internes del refinador («canvis aplicats» en JSON) filtrats
-  dins el text, i ~6.700 caràcters de traducció perduts. S'ha revertit `traduccio.md`
-  a la versió de HEAD (no s'ha publicat res corrupte).
+## Estat (2026-10-15)
+- Represa del pipeline acabada: 36/51 chunks de la sessió del 14/10 + 15 chunks nous
+  = **51/51 chunks traduïts**. Obra COMPLETA. `notes.md` generat (66 notes crítiques).
+- Puntuació mitjana d'aquesta execució: **7,8/10** (15 chunks, 14 amb ≥ 7).
+  «Chunks: 48/51 aprovats» al resum final.
+- `traduccio.md`: 68.572 caràcters (HEAD: 56.057). Text català real, sense `[ERROR`,
+  sense anglès/castellà pendent, sense placeholders `[^N]` (0 ocurrències).
+- Estructura verificada manualment: **1.420 línies de text a la traducció = 1.420 a
+  l'original** (alineació vers a vers) i el final coincideix (exodos: «Així ha acabat
+  aquesta història» = «τοιόνδ' ἀπέβη τόδε πρᾶγμα»). Ratio de longitud 1,23x.
 
-## Evidència
-- `.chunks_traduïts.json`: 14/51 chunks contenen un bloc amb aquest format:
-      '`'json
-          "«original» → «traducció», ...",
-      '`'
-  (chunks 4, 5, 6, 7, 8, 16, 18, 20, 25, 26, 30, 33, 42, 44). Alguns d'aquests
-  (18, 20, 26, 30) són NOMÉS el JSON, sense cap text traduït.
-- `traduccio.md` generat en l'execució: 47.936 caràcters vs. 54.673 de HEAD; 14 blocs filtrats.
-- Comprovació: `python3 -c "print(open('obres/teatre/euripides/medea/traduccio.md').read().count(chr(39)+chr(96)+chr(39)+'json'))"` → 0 a HEAD.
+## BLOCADOR 1 — FALS POSITIU del validador (NO és un error real)
+- `validador_final` → `recompte_paragrafs`: «orig=1199, trad=46», marcat com a error
+  CRÍTIC obligatori → «Publicació bloquejada» / «POSSIBLE AL·LUCINACIÓ».
+- És un artefacte de format: `original.md` ve de Wikisource amb cada vers separat per
+  una línia buida (1.418 blocs) mentre que `traduccio.md` agrupa els versos per
+  parlaments (612 blocs). El check compta blocs separats per línia buida de > 30
+  caràcters (`core/validador_final.py`, línies 282-298).
+- **No és específic de medea**: 18 de les 69 obres `.validated` FALLEN el mateix check,
+  amb el mateix patró (Antígona: orig=1098/trad=45; Sor Juana: 556/44; Baudelaire:
+  398/117; Teòcrit: 13/174; Beowulf: 74/229…).
+- Recomanació: per a obres en vers, comparar el nombre de LÍNIES NO BUIDES (aquí
+  1.420 = 1.420) en lloc de blocs de paràgraf, o fer el check insensible al format
+  de vers. Cal auditar-ho sobre tot el catàleg abans d'aplicar-ho.
 
-## Causa arrel
-- El refinador (`sistema/traduccio/agents/v2/refinador_iteratiu.py`) retorna, en alguns
-  casos, un JSON d'«canvis aplicats» en lloc del text refinat.
-- La neteja `PipelineV2._netejar_json_traduccio` (`agents/v2/pipeline_v2.py:403`) NO
-  cobreix aquest format: el patró d'obertura `'`'json` seguit d'un ARRAY de strings
-  (sense clau `"traduccio"`) no coincideix amb cap regex → el bloc passa intacte, tant
-  a `_guardar_traduccio_chunk` (línia 531) com a `_carregar_traduccio_chunk` (línia 551).
+## BLOCADOR 2 — Artefactes de fusió (REALS, menors: 2 ocurrències)
+- Línia 738: «…i aquells a qui no havia de fer cap mal…» + «[...] fer mal, ara els
+  tinc per enemics…» → **duplicació** del fragment «fer mal» a la unió
+  chunk_18/chunk_19 (la caché ho confirma: chunk_18 acaba «…cap mal…» i chunk_19
+  comença «[...] fer mal, …»).
+- Línia 765: «…a canvi de la meva salvació, més [...]» + «has rebut més del que has
+  donat» → mateixa duplicació a la unió chunk_19/chunk_20.
+- Causa: el chunker talla a mig sintagma, cada chunk es tradueix aïlladament i el
+  traductor marca l'inici amb «[...]»; la fusió conserva els dos extrems.
+- Correcció proposada: eliminar el fragment duplicat i el «[...]» (2 línies).
+  **NO cal retraduir l'obra.**
 
-## Abast (sistèmic — 2026-10-10)
-- 11 obres amb chunks filtrats a `.chunks_traduïts.json`:
-  medea (14), sala-numero-6 (8), bartleby (5), criton (3), justine (3), werther (2),
-  leopardi (2), del-sublim (1), lucreci (1), husserl (1), safo (1).
-- 2 traduccions PUBLICADES amb el bloc filtrat dins `traduccio.md`:
-  `obres/assaig/pseudo-longi/del-sublim` (1 bloc) i `obres/teatre/euripides/medea` (14, ja revertit).
+## ALTRES (menors)
+- Etiquetes de personatge inconsistents: «**MEDEA.**» (en negreta) en unes escenes i
+  «MEDEA.» / «MEDEA:» en d'altres (24 línies amb «**»).
+- 3/51 chunks per sota de 7 (el pitjor, chunk_51: 6,0).
+- `.pipeline_state.json` arrossega `errors`/`warnings` de la interrupció del 14/10
+  (429 usage_limit_reached) i `metriques.qualitat_mitjana` = 6,17, que és INCORRECTE:
+  l'acumulador va heretar el 5,49 contaminat pels 15 zeros de la interrupció. La
+  mitjana real dels 51 chunks és ≈ 7,8.
 
-## Accions / Recomanació
-1. NO tornar a executar el pipeline sobre medea fins que es corregeixi la neteja:
-   reproduiria la corrupció.
-2. Corregir `_netejar_json_traduccio` perquè elimini el bloc `'`'json … '`'` amb un
-   array de strings; si el chunk queda buit, marcar-lo per retraduir.
-3. Revisar `refinador_iteratiu.py` perquè no retorni mai el JSON de canvis com a text.
-4. Netejar el bloc filtrat a `del-sublim/traduccio.md` (1 ocurrència).
-5. Un cop corregit: retraduir medea (qualitat prèvia 5.3 < 7.0).
+## Acció recomanada
+1. Corregir les 2 duplicacions (línies 738 i 765) i unificar les etiquetes.
+2. Decidir sobre el check de paràgrafs del validador (afecta 18 obres ja publicades).
+3. Llavors validar/publicar o marcar `.validated`.
 
-## Data de supervisió: 2026-10-10
-## Model: deepseek-v4-flash
-
-## ACTUALITZACIÓ 2026-10-14 — la neteja ja reconeix el format real
-- El bug de neteja està corregit: `sistema/traduccio/agents/v2/sanititzacio.py`
-  reconeix les tanques mutilades (``'`'json``), els objectes `{ "traduccio": … }`
-  i els fragments d'array. `_guardar_traduccio_chunk` no desa mai contingut no
-  utilitzable, `_carregar_traduccio_chunk` descarta la caché corrupta i
-  `validar_resultat_pipeline` impedeix publicar-ne. Detalls a
-  `references/bug-blocs-metadades-2026-10-14.md`.
-- Caché netejada amb `sistema/scripts/neteja_blocs_metadades.py --aplica`:
-  11 chunks afectats → es retraduiran (el text no era recuperable).
-- L'estat `.pipeline_state.json` ve d'una execució amb **51 chunks** mentre la
-  caché en té 17: la guarda d'empremtes descarta la caché i es retradueix tot
-  (abans això barrejava fragments). També s'ha corregit que els chunks no es
-  marquessin com a completats sense dashboard.
-- **Pendent:** retraduir l'obra (qualitat prèvia 5,3 < 7,0). Es pot llançar ja:
-  `python3 sistema/traduccio/traduir_pipeline.py /home/jo/biblioteca-universal-arion/obres/teatre/euripides/medea`.
-
-## ACTUALITZACIÓ 2026-10-15 — retraducció engegada i interrompuda pel límit de sessió
-- Execució llançada 2026-10-14 23:04 (jorn de millora contínua). Investigació,
-  glossari i chunking OK (51 chunks, mateixa fragmentació); chunks 1-36 traduïts
-  i desats a la caché.
-- A les 00:26 la subscripció Claude va tocar **límit de sessió**
-  (`429 usage_limit_reached`, «resets 4am (Europe/Madrid)») i els chunks 37-51
-  van fallar.
-- **Bug nou detectat (greu, no documentat):** en aquest cas el pipeline
-  - marca els chunks fallits com a *completats* amb qualitat 0
-    (`pipeline_v2.py`, camí `except Exception` → `completar_chunk`),
-  - imprimeix «✅ TRADUCCIÓ PIPELINE V2 COMPLETADA»,
-  - escriu un `traduccio.md` **truncat** (48.360 caràcters vs. 56.057 de HEAD;
-    falta el final de l'obra, a partir del pedagog),
-  - i **esborra `.needs_fix` i `.fixing`** com si hagués acabat bé.
-  La guarda `validar_resultat_pipeline` no ho atura (el text no té blocs de
-  metadades, simplement li falten 15 chunks).
-- S'ha revertit `traduccio.md` a HEAD, s'han restaurat `.needs_fix`/`.fixing` i
-  s'ha deixat l'estat a punt per reprendre: 36/51 completats, 15 pendents
-  (37-51), fase «traduccio», anotació i fusió per refer.
-- **Pendent:** reprendre la traducció quan es restableixi la quota (a partir de
-  les 4am). La sonda `quota-probe.py` ja retorna LIMIT, així que els jobs
-  horaris no tocaran res fins aleshores.
-- **Recomanació:** que el pipeline no escrigui `traduccio.md` ni esborri les
-  marques d'estat quan hi ha chunks fallits (o que ho faci només amb
-  `--forcar`); caldrà una prova d'extrem a extrem abans d'aplicar-ho.
+## Data de supervisió: 2026-10-15
+## Model: claude-opus-4-7 (pipeline, subscripció) / deepseek-v4-flash (supervisió)
