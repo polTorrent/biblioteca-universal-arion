@@ -6,7 +6,9 @@
   "idioma_original": "desconegut",
   "usuari_discord_id": "",
   "canal_discord_id": "",
-  "status": "pending",
+  "status": "descartada",
   "created_at": "2026-03-07T13:44:13.317036",
-  "source": "discord_command"
+  "source": "discord_command",
+  "resolucio": "Proposta sense obra ni llengua identificables («snoopy»); no és una obra de domini públic traduïble.",
+  "resolt_el": "2026-10-15"
 }

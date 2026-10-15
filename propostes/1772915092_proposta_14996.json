@@ -6,7 +6,9 @@
   "idioma_original": "desconegut",
   "usuari_discord_id": "743437884782149693",
   "usuari_discord_nom": "enigmaridworld",
-  "status": "pending",
+  "status": "descartada",
   "created_at": "2026-03-07T21:24:52.733510",
-  "source": "discord_bot"
+  "source": "discord_bot",
+  "resolucio": "L'original no és de domini públic: Sein und Zeit és de 1927 i Heidegger va morir el 1976, així que no compleix la regla del projecte.",
+  "resolt_el": "2026-10-15"
 }

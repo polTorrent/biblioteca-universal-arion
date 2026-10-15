@@ -3,10 +3,12 @@
   "type": "proposta",
   "description": "Tradueix: La Tempesta - Shakespeare",
   "titol": "La Tempesta - Shakespeare",
-  "idioma_original": "angl\u00e8s",
+  "idioma_original": "anglès",
   "usuari_discord_id": "936702587623833630",
   "canal_discord_id": "1479599316380291276",
-  "status": "pending",
+  "status": "resolta",
   "created_at": "2026-03-07T00:08:09.744521",
-  "source": "discord_form"
+  "source": "discord_form",
+  "resolucio": "Obra ja traduïda, validada i publicada: obres/teatre/shakespeare/the-tempest-la-tempesta (marcada .validated).",
+  "resolt_el": "2026-10-15"
 }
